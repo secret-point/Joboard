@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./App.css";
 import { ConsentPage } from "./pages/page-list";
 import { StencilProvider } from '@stencil-react/components/context';
 
