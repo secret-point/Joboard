@@ -9,8 +9,8 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@stencil-react/components": "0.7.2",
-    "@stencil-react/theme-default": "0.7.2",
+    "@stencil-react/components": "*",
+    "@stencil-react/theme-default": "*",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
