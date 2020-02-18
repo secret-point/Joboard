@@ -23,6 +23,7 @@
     "katal-jsdoc2md": "1.0.0",
     "prettier": "1.19.1",
     "react": "^16.12.0",
+    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-loadable": "^5.5.0",
     "react-scripts": "3.3.0",
@@ -30,15 +31,13 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.tsx'",
     "clean": "rm -rf build node_modules lib",
-    "prepublishOnly": "CI=false npm run build",
-    "copy-src": "(mkdir -p lib) && cp -r build/* lib",
-    "postpublish": "npm run copy-src"
+    "prepublishOnly": "CI=false npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
