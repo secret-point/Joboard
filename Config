@@ -15,7 +15,6 @@ package.HVHCandidateApplicationUI = {
     # be exported to other packages that build against you.
     dependencies = {
         1.0 = {
-            NodeJS-Brazil = 1.0;
             StencilReactComponents = 0.7.2;
             StencilReactThemeDefault = 0.7.2;
             KatalMetrics = 2.0;

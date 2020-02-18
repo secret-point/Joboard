@@ -9,7 +9,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@amzn/brazil": "*",
     "@stencil-react/components": "0.7.2",
     "@stencil-react/theme-default": "0.7.2",
     "@testing-library/jest-dom": "^4.2.4",
