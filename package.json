@@ -19,14 +19,15 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-loadable": "^5.3.4",
+    "create-emotion-styled": "^9.2.8",
     "katal-jsdoc2md": "1.0.0",
+    "prettier": "1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-loadable": "^5.5.0",
     "react-scripts": "3.3.0",
     "sushi-client": "1.0.0",
-    "typescript": "~3.7.2",
-    "react-loadable": "^5.5.0",
-    "prettier": "1.19.1"
+    "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,10 +35,10 @@
     "test": "react-scripts test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.tsx'",
-    "clean": "rm -rf build node_modules dist",
-    "prepublishOnly": "CI=false npm run build && npm run copy-src",
-    "copy-src": "(mkdir -p lib) && cp -r build/* lib && npm run clean-build",
-    "clean-build": "rm -rf build/*"
+    "clean": "rm -rf build node_modules lib",
+    "prepublishOnly": "CI=false npm run build",
+    "copy-src": "(mkdir -p lib) && cp -r build/* lib",
+    "postpublish": "npm run copy-src"
   },
   "eslintConfig": {
     "extends": "react-app"
