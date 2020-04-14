@@ -1,13 +1,12 @@
 import React from "react";
-import "./App.css";
-import { ConsentPage } from "./pages/page-list";
-import { StencilProvider } from '@stencil-react/components/context';
-
+import Routes from "./pages/routes";
+import { StencilProvider } from "@stencil-react/components/context";
+import "./styles/login.css";
 
 const App: React.FC = () => {
   return (
     <StencilProvider>
-      <ConsentPage />
+      <Routes />
     </StencilProvider>
   );
 };

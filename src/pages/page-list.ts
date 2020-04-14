@@ -3,5 +3,5 @@ import Loader from "../components/Loader";
 
 export const ConsentPage = Loadable({
   loading: Loader,
-  loader: () => import("./consent-page")
+  loader: () => import("./app")
 });
