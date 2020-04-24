@@ -15,8 +15,8 @@ package.HVHCandidateApplicationUI = {
     # be exported to other packages that build against you.
     dependencies = {
         1.0 = {
-            StencilReactComponents = 0.7.2;
-            StencilReactThemeDefault = 0.7.2;
+            StencilReactComponents = 0.7.4;
+            StencilReactThemeDefault = 0.7.4;
             KatalMetrics = 2.0;
             KatalMetricsDriverSushi = 1.0;
             KatalLocalization = 1.0;

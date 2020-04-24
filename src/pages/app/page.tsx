@@ -1,35 +1,45 @@
 import React, { useEffect } from "react";
-import Layout from "../../components/Layout";
-import { History } from "history";
-import { match } from "react-router";
+import {
+  VIEWPORT_SIZES,
+  StencilResponsiveConsumer
+} from "@stencil-react/components/responsive";
+import HeaderContainer from "../../containers/header/header-container";
+import { Col } from "@stencil-react/components/layout";
+import ContentContainer from "../../containers/content/content-container";
+import FooterContainer from "../../containers/footer/footer-container";
 
 type IConsentPageProps = {
-  header: any;
-  history: History;
-  match?: match;
   currentPageId?: string;
   urlPageId?: string;
-  onUpdatePageId: Function
+  onUpdatePageId: Function;
+  pageOrder: any[];
 };
 
-const ConsentPage: React.FC<IConsentPageProps> = ({
-  header,
-  match,
-  history,
+const Page: React.FC<IConsentPageProps> = ({
   currentPageId,
   urlPageId,
-  onUpdatePageId
+  onUpdatePageId,
+  pageOrder
 }) => {
   useEffect(() => {
-    if(urlPageId !== currentPageId) {
-      onUpdatePageId({ updatedPageId: urlPageId });
+    if (urlPageId !== currentPageId) {
+      onUpdatePageId({ updatedPageId: urlPageId, pageOrder });
     }
-  }, [urlPageId, currentPageId, onUpdatePageId])
+  }, [urlPageId, currentPageId, onUpdatePageId, pageOrder]);
+
   return (
-    <div>
-      <Layout headerData={header} match={match} history={history} />
-    </div>
+    <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
+      {({ matches }) => (
+        <div data-testid="page">
+          <HeaderContainer />
+          <Col gridGap="m" padding="1.5rem">
+            <ContentContainer />
+            <FooterContainer />
+          </Col>
+        </div>
+      )}
+    </StencilResponsiveConsumer>
   );
 };
 
-export default ConsentPage;
+export default Page;

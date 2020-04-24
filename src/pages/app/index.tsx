@@ -1,27 +1,21 @@
 import { connect } from "react-redux";
-import ConsentPage from "./page";
+import Page from "./page";
 import find from "lodash/find";
-import {
-  onUpdatePageId
-} from "../../actions/actions";
+import { onUpdatePageId } from "../../actions/actions";
+import { withRouter } from "react-router-dom";
 
 const actions = {
   onUpdatePageId
 };
 
 const mapStateToProps = (state: any, ownProps: any) => {
-  const { page, jobId } = ownProps.match.params;
-  const pageConfig = find(state.app.pages, { id: page });
-  if (pageConfig) {
-    return {
-      header: pageConfig.header,
-      urlPageId: pageConfig.id,
-      match: ownProps.match,
-      history: ownProps.history,
-      currentPageId: state.app.currentPage?.id,
-      jobId
-    };
-  }
+  const { page } = ownProps.match.params;
+  const pageOrder = find(state.app.pageOrder, { id: page });
+  return {
+    urlPageId: pageOrder?.id,
+    currentPageId: state.app.currentPage?.id,
+    pageOrder: state.app.pageOrder
+  };
 };
 
-export default connect(mapStateToProps, actions)(ConsentPage);
+export default withRouter(connect(mapStateToProps, actions)(Page));

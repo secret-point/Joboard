@@ -2,16 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 import store from "./store";
 import { Provider } from "react-redux";
+import { getInitialData } from "./services";
 
-const Main = () => (
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+getInitialData()
+  .then(data => {
+    store.dispatch({
+      type: "LOAD_INIT_DATA",
+      payload: { ...data }
+    });
 
-ReactDOM.render(<Main />, document.getElementById("root"));
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get("token");
+    if (token) {
+      window.localStorage.setItem("accessToken", token);
+    }
 
-serviceWorker.unregister();
+    const Main = () => (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+    ReactDOM.render(<Main />, document.getElementById("root"));
+  })
+  .catch(ex => {
+    ReactDOM.render(
+      <div>Error loading config</div>,
+      document.getElementById("root")
+    );
+  });

@@ -1,7 +1,4 @@
-.app {
-  width: 100%;
-}
-
-.app .hello {
-  text-align: center;
+.navbar-logo img {
+  height: 1.7em;
+  padding-top: 5px;
 }

@@ -1,17 +1,32 @@
 import React from "react";
-import { HashRouter as Router, Route, Redirect } from "react-router-dom";
-import { ConsentPage } from "./page-list";
-import Configuration from "../components/configuration";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from "react-router-dom";
+import { ApplicationPage } from "./page-list";
 
 const Routes: React.FC = () => {
   return (
     <Router>
-      <Redirect exact from="/" to="/app/consent" />
-      <Route
-        exact
-        path="/app/:page/:stepNumber?/:jobId?"
-        component={Configuration(ConsentPage)}
-      />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const requisitionId = urlParams.get("requisitionId");
+            const page = urlParams.get("page");
+            return <Redirect to={`/app/${page}/${requisitionId}`} />;
+          }}
+        />
+        <Route
+          exact
+          path="/app/:page/:requisitionId?"
+          component={ApplicationPage}
+        />
+      </Switch>
     </Router>
   );
 };

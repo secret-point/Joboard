@@ -1,7 +1,7 @@
 import Loadable from "react-loadable";
-import Loader from "../components/Loader";
+import Loader from "../components/loader";
 
-export const ConsentPage = Loadable({
+export const ApplicationPage = Loadable({
   loading: Loader,
   loader: () => import("./app")
 });
