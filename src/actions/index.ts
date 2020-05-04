@@ -7,6 +7,7 @@ export const onAction = (actionName: string, payload: any) => async (
 ) => {
   const action = actionMap[actionName];
   if (action) {
+    console.log(`${actionName} is executed`);
     action(payload)(dispatch);
   } else {
     console.log(`${actionName} is missing`);

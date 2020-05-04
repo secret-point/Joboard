@@ -6,7 +6,10 @@ export default class PageService {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "/api/page-config"
+      baseURL: "/api/page-config",
+      headers: {
+        "Cache-Control": "no-cache"
+      }
     });
   }
 

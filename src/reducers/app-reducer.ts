@@ -8,6 +8,11 @@ import find from "lodash/find";
 import { IAction } from "../@types/IActionType";
 import updateSate from "immutability-helper";
 import { GET_REQUISITION_HEADER_INFO } from "../actions/requisition-actions";
+import {
+  GET_APPLICATION,
+  SET_APPLICATION_DATA
+} from "../actions/application-actions";
+import cloneDeep from "lodash/cloneDeep";
 
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
@@ -20,10 +25,12 @@ const getOutputDataObject = (pageOrder: any[]) => {
 const initialState: any = {
   data: {
     requisition: {},
-    application: {}
+    application: {},
+    output: {}
   },
   applicationData: {},
-  outputData: {},
+  output: {},
+  currentPageOutput: {},
   currentPage: {},
   nextPage: {},
   currentStep: 0,
@@ -47,16 +54,27 @@ const AppReducer = (state = initialState, action: IAction) => {
         appConfig: {
           $set: payload[0]
         },
-        outputData: {
+        output: {
           $set: outputDataObject
+        },
+        data: {
+          output: {
+            $set: outputDataObject
+          }
         }
       });
     }
     case UPDATE_VALUE_CHANGE: {
-      const newState = { ...state };
+      const output = cloneDeep(state.data.output);
       const { keyName, value, pageId } = payload;
-      set(newState["outputData"][pageId], keyName, value);
-      return newState;
+      set(output[pageId], keyName, value);
+      return updateSate(state, {
+        data: {
+          output: {
+            $set: output
+          }
+        }
+      });
     }
     case ON_UPDATE_PAGE_ID: {
       const newState = { ...state };
@@ -90,6 +108,27 @@ const AppReducer = (state = initialState, action: IAction) => {
               consentInfo: payload
             }
           }
+        }
+      });
+    }
+    case GET_APPLICATION: {
+      return updateSate(state, {
+        data: {
+          requisition: {
+            $merge: {
+              consentInfo: payload.requisition
+            }
+          },
+          application: {
+            $set: payload.application
+          }
+        }
+      });
+    }
+    case SET_APPLICATION_DATA: {
+      return updateSate(state, {
+        applicationData: {
+          $merge: payload.application
         }
       });
     }

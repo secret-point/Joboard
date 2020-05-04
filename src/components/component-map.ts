@@ -9,7 +9,15 @@ import {
   DisqualifiedQuestions,
   Text,
   PageHeader,
-  Steps
+  Steps,
+  DetailedCheckbox,
+  LaunchFRCALink,
+  Link,
+  DetailedRadioButton,
+  DetailedRadioButtonList,
+  Action,
+  Markdown,
+  UL
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 
 const ComponentMap: any = {
@@ -23,7 +31,15 @@ const ComponentMap: any = {
   DisqualifiedQuestions,
   Text,
   PageHeader,
-  Steps
+  Steps,
+  DetailedCheckbox,
+  LaunchFRCALink,
+  Link,
+  DetailedRadioButton,
+  DetailedRadioButtonList,
+  Action,
+  Markdown,
+  UL
 };
 
 export default ComponentMap;

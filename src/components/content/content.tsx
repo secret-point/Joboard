@@ -5,15 +5,24 @@ import {
   MessageBannerType
 } from "@stencil-react/components/message-banner";
 import RendererContainer from "../../containers/renderer";
+import StepsContentRendererContainer from "../../containers/steps-content-renderer";
+import PanelContainer from "../../containers/panel/panel-container";
+import ModalContainer from "../../containers/modal/modal-container";
 
 export type IContentProps = {
   hasResponseError: boolean;
   errorMessage?: string;
+  isContentContainsSteps: boolean;
+  isContentContainsPanels: boolean;
+  isContentContainsModals: boolean;
 };
 
 const Content: React.FC<IContentProps> = ({
   hasResponseError,
-  errorMessage
+  errorMessage,
+  isContentContainsSteps,
+  isContentContainsPanels,
+  isContentContainsModals
 }) => {
   return (
     <div>
@@ -25,7 +34,13 @@ const Content: React.FC<IContentProps> = ({
             </MessageBanner>
           </Col>
         )}
-        <RendererContainer type="content" />
+        {isContentContainsSteps ? (
+          <StepsContentRendererContainer />
+        ) : (
+          <RendererContainer type="content" />
+        )}
+        {isContentContainsPanels && <PanelContainer />}
+        {isContentContainsModals && <ModalContainer />}
       </Col>
     </div>
   );

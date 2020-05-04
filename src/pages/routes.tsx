@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Redirect,
   Switch
@@ -23,7 +23,7 @@ const Routes: React.FC = () => {
         />
         <Route
           exact
-          path="/app/:page/:requisitionId?"
+          path="/app/:page/:requisitionId"
           component={ApplicationPage}
         />
       </Switch>

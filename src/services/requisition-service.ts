@@ -5,7 +5,10 @@ export default class RequisitionService {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "/api/requisition"
+      baseURL: "/api/requisition",
+      headers: {
+        "Cache-Control": "no-cache"
+      }
     });
   }
 

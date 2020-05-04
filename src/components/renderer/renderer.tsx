@@ -67,7 +67,7 @@ const Renderer: React.FC<IRendererProps> = ({
   const onValueChange = (actionName: string, keyName: string, value: any) => {
     const formData = Object.assign({}, form);
     if (keyName && value) {
-      set(formData, keyName, value);
+      set(formData.output[pageId], keyName, value);
       setForm(formData);
     }
     if (onAction && actionName) {
@@ -75,7 +75,7 @@ const Renderer: React.FC<IRendererProps> = ({
         keyName,
         value,
         pageId,
-        applicationData: data,
+        data,
         urlParams
       });
     }
@@ -84,8 +84,7 @@ const Renderer: React.FC<IRendererProps> = ({
   const onButtonClick = (actionName: string, options: any) => {
     const id = data?.application.id;
     onAction(actionName, {
-      outputData: outputData,
-      applicationData: data,
+      data: data,
       pageId: id,
       currentPage,
       nextPage,
@@ -104,7 +103,10 @@ const Renderer: React.FC<IRendererProps> = ({
           {...component.properties}
           onValueChange={onValueChange}
           enableOnValidation={isDataValid}
-          value={get(form, component.properties.dataKey)}
+          value={
+            component.properties.value ||
+            get(form, component.properties.dataKey)
+          }
           onButtonClick={onButtonClick}
         />
       ))}

@@ -8,9 +8,22 @@ const actions = {
   onAction
 };
 
+const getConfig = (config: any, ownProps: any) => {
+  if (ownProps.isContentContainsPanel) {
+    return config[ownProps.type]?.panels[ownProps.panelIndex];
+  } else if (ownProps.isContentContainsSteps) {
+    return config[ownProps.type]?.steps[ownProps.activeStepIndex];
+  } else if (ownProps.isContentContainsModals) {
+    return config[ownProps.type]?.modals[ownProps.modalIndex];
+  } else {
+    return config[ownProps.type]; //type is Header, Content or Footer
+  }
+};
+
 const mapStateToProps = (state: any, ownProps: any) => {
   const { page } = ownProps.match?.params as any;
-  const config = state.app.pageConfig[ownProps.type];
+  let config = getConfig(state.app.pageConfig, ownProps);
+
   const isDataValid = validateRequiredData(config, state.app.outputData, page);
   return {
     ...config,

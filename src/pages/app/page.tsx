@@ -7,7 +7,8 @@ import HeaderContainer from "../../containers/header/header-container";
 import { Col } from "@stencil-react/components/layout";
 import ContentContainer from "../../containers/content/content-container";
 import FooterContainer from "../../containers/footer/footer-container";
-
+import ModalContainer from "../../containers/modal/modal-container";
+import { ModalProvider } from "@stencil-react/components/modal";
 type IConsentPageProps = {
   currentPageId?: string;
   urlPageId?: string;
@@ -31,11 +32,13 @@ const Page: React.FC<IConsentPageProps> = ({
     <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
       {({ matches }) => (
         <div data-testid="page">
-          <HeaderContainer />
-          <Col gridGap="m" padding="1.5rem">
-            <ContentContainer />
-            <FooterContainer />
-          </Col>
+          <ModalProvider>
+            <HeaderContainer />
+            <Col gridGap="m" padding="1.5rem">
+              <ContentContainer />
+              <FooterContainer />
+            </Col>
+          </ModalProvider>
         </div>
       )}
     </StencilResponsiveConsumer>

@@ -29,6 +29,10 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
   dispatch(push(`/app${payload.redirectPath}`));
 };
 
+export const onSubmit = (payload: any) => async (dispatch: Function) => {
+  console.log(payload);
+};
+
 export const onUpdatePageId = (payload: any) => async (dispatch: Function) => {
   const pageOrder = find(payload.pageOrder || [], {
     id: payload.updatedPageId
@@ -46,4 +50,21 @@ export const onUpdatePageId = (payload: any) => async (dispatch: Function) => {
       }
     });
   }
+};
+
+export const hideNavbar = () => (dispatch: Function) => {
+  const header = document.querySelector("header");
+  if (header) {
+    header.style.display = "none";
+  }
+};
+
+export const onDismissModal = (dataKey: string) => (dispatch: Function) => {
+  dispatch({
+    type: UPDATE_VALUE_CHANGE,
+    payload: {
+      keyName: dataKey,
+      value: undefined
+    }
+  });
 };
