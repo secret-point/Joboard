@@ -3,6 +3,7 @@ import ComponentMap from "../component-map";
 import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
 import get from "lodash/get";
+import propertyOf from "lodash/propertyOf";
 
 type IComponent = {
   component: string;
@@ -23,6 +24,16 @@ export type IRendererProps = {
   appConfig: any;
   pageOrder: any;
 };
+
+interface conditionShowComponentProps {
+  dataKey: string;
+  filter: Filter;
+}
+
+interface Filter {
+  type: string;
+  value: string;
+}
 
 const Renderer: React.FC<IRendererProps> = ({
   components,
@@ -95,21 +106,38 @@ const Renderer: React.FC<IRendererProps> = ({
     });
   };
 
+  const showComponent = (
+    showComponentProperties: conditionShowComponentProps
+  ) => {
+    if (showComponentProperties) {
+      const { dataKey, filter } = showComponentProperties;
+      const value = propertyOf(data.output[pageId])(dataKey);
+      return value === filter.value;
+    } else {
+      // show component if show component properties are empty.
+      return true;
+    }
+  };
+
   return (
     <Col data-testid={`renderer`} gridGap="s">
-      {componentList.map((component: any, index: number) => (
-        <component.Element
-          key={`component-${index}`}
-          {...component.properties}
-          onValueChange={onValueChange}
-          enableOnValidation={isDataValid}
-          value={
-            component.properties.value ||
-            get(form, component.properties.dataKey)
-          }
-          onButtonClick={onButtonClick}
-        />
-      ))}
+      {componentList.map((component: any, index: number) => {
+        if (showComponent(component.showComponentProperties)) {
+          return (
+            <component.Element
+              key={`component-${index}`}
+              {...component.properties}
+              onValueChange={onValueChange}
+              enableOnValidation={isDataValid}
+              value={
+                component.properties.value ||
+                get(form, component.properties.dataKey)
+              }
+              onButtonClick={onButtonClick}
+            />
+          );
+        }
+      })}
     </Col>
   );
 };

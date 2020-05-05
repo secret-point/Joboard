@@ -2,7 +2,6 @@ import React from "react";
 import RendererContainer from "../../containers/renderer";
 import { Col } from "@stencil-react/components/layout";
 import propertyOf from "lodash/propertyOf";
-import ICandidateApplication from "../../@types/ICandidateApplication";
 
 interface IPanelComponent {
   panels: any[];
