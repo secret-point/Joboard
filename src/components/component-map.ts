@@ -17,7 +17,8 @@ import {
   Action,
   Markdown,
   UL,
-  StatusLink
+  StatusLink,
+  DatePicker
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 
 const ComponentMap: any = {
@@ -39,7 +40,8 @@ const ComponentMap: any = {
   DetailedRadioButtonList,
   Action,
   Markdown,
-  UL
+  UL,
+  DatePicker
 };
 
 export default ComponentMap;
