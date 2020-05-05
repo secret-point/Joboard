@@ -8,6 +8,7 @@ import set from "lodash/set";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
+export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, nextPage, urlParams } = data;
@@ -66,4 +67,30 @@ export const updatePreHireStepsStatus = (payload: IPayload) => (
   dispatch: Function
 ) => {
   console.log(payload);
+};
+
+export const createApplication = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const candidateApplicationService = new CandidateApplicationService();
+  const response = await candidateApplicationService.createApplication({
+    candidateId: payload.candidateId,
+    parentRequisitionId: payload.urlParams.requisitionId,
+    language: "English"
+  });
+
+  dispatch({
+    type: UPDATE_APPLICATION,
+    payload: {
+      application: response.data
+    }
+  });
+};
+
+export const updateApplication = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const { data, currentPage } = payload;
+  const updateData = data.output[currentPage.id];
+  console.log({ type: currentPage.id, payload: updateData });
 };

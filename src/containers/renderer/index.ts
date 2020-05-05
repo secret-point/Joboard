@@ -35,7 +35,8 @@ const mapStateToProps = (state: any, ownProps: any) => {
     nextPage: state.app.nextPage,
     urlParams: ownProps.match?.params,
     appConfig: state.app.appConfig,
-    pageOrder: state.app.pageOrder
+    pageOrder: state.app.pageOrder,
+    candidateId: state.app.candidateId
   };
 };
 

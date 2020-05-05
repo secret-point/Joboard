@@ -23,6 +23,7 @@ export type IRendererProps = {
   urlParams: any;
   appConfig: any;
   pageOrder: any;
+  candidateId: string;
 };
 
 interface conditionShowComponentProps {
@@ -46,7 +47,8 @@ const Renderer: React.FC<IRendererProps> = ({
   currentPage,
   urlParams,
   appConfig,
-  pageOrder
+  pageOrder,
+  candidateId
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
@@ -87,7 +89,8 @@ const Renderer: React.FC<IRendererProps> = ({
         value,
         pageId,
         data,
-        urlParams
+        urlParams,
+        candidateId
       });
     }
   };
@@ -102,6 +105,7 @@ const Renderer: React.FC<IRendererProps> = ({
       urlParams,
       appConfig,
       pageOrder,
+      candidateId,
       ...options
     });
   };

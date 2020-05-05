@@ -4,7 +4,9 @@ import {
   onGetApplication,
   onLaunchFRCA,
   continueWithFRCADecline,
-  updatePreHireStepsStatus
+  updatePreHireStepsStatus,
+  createApplication,
+  updateApplication
 } from "./application-actions";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
 
@@ -18,7 +20,9 @@ const actionMap: any = {
   LAUNCH_FRCA: onLaunchFRCA,
   HIDE_NAVBAR: hideNavbar,
   CONTINUE_WITH_FRCA_DECLINE: continueWithFRCADecline,
-  UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus
+  UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus,
+  CREATE_APPLICATION: createApplication,
+  UPDATE_APPLICATION: updateApplication
 };
 
 export default actionMap;

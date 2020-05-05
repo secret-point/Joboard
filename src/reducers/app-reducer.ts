@@ -10,7 +10,8 @@ import updateSate from "immutability-helper";
 import { GET_REQUISITION_HEADER_INFO } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
-  SET_APPLICATION_DATA
+  SET_APPLICATION_DATA,
+  UPDATE_APPLICATION
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -38,7 +39,8 @@ const initialState: any = {
   errorMessage: null,
   pageConfig: {},
   pageOrder: [],
-  appConfig: {}
+  appConfig: {},
+  candidateId: "098d6c95-268f-4d68-8cfd-269686ebe01a"
 };
 
 const AppReducer = (state = initialState, action: IAction) => {
@@ -129,6 +131,15 @@ const AppReducer = (state = initialState, action: IAction) => {
       return updateSate(state, {
         applicationData: {
           $merge: payload.application
+        }
+      });
+    }
+    case UPDATE_APPLICATION: {
+      return updateSate(state, {
+        data: {
+          application: {
+            $set: payload.application
+          }
         }
       });
     }

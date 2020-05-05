@@ -25,6 +25,7 @@ export interface ContingentOffer {
 export interface ApplicationData {
   requisition: Requisition;
   application: ICandidateApplication;
+  output: any;
 }
 
 export interface Page {
@@ -58,4 +59,5 @@ export default interface Payload {
   appConfig: AppConfig;
   pageOrder: PageOrder[];
   keyName: string;
+  candidateId: string;
 }
