@@ -1,6 +1,7 @@
 import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import find from "lodash/find";
+import IPayload from "../@types/IPayload";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const ON_REDIRECT = "ON_REDIRECT";
@@ -27,6 +28,10 @@ export const onUpdateChange = ({ keyName, value, pageId }: IOnChangeProps) => (
 
 export const onRedirect = (payload: any) => async (dispatch: Function) => {
   dispatch(push(`/app${payload.redirectPath}`));
+};
+
+export const goTo = (path: string) => (dispatch: Function) => {
+  dispatch(push(path));
 };
 
 export const onSubmit = (payload: any) => async (dispatch: Function) => {

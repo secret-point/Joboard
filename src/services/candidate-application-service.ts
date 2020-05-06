@@ -45,4 +45,9 @@ export default class CandidateApplicationService {
     );
     return response.data;
   }
+
+  async getCandidate() {
+    const response = await this.axiosInstance.get(`/candidate`);
+    return response.data;
+  }
 }

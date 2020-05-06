@@ -26,6 +26,7 @@ export interface ApplicationData {
   requisition: Requisition;
   application: ICandidateApplication;
   output: any;
+  candidate: any;
 }
 
 export interface Page {

@@ -13,7 +13,11 @@ describe("Test for Actions", () => {
     routerMiddleware(createHashHistory())
   ]);
   const getStore = () => {
-    const initState = {};
+    const initState = {
+      data: {
+        requisition: {}
+      }
+    };
 
     return mockStore(initState);
   };
@@ -26,6 +30,9 @@ describe("Test for Actions", () => {
     await requisitionActions.onGetRequisitionHeaderInfo({
       urlParams: {
         requisitionId: "123123"
+      },
+      data: {
+        requisition: {}
       }
     })(store.dispatch);
     expect(store.getActions()[0].type).toBe(

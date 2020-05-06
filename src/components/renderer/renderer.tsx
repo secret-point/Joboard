@@ -24,6 +24,8 @@ export type IRendererProps = {
   appConfig: any;
   pageOrder: any;
   candidateId: string;
+  hasResponseError: boolean;
+  errorMessage: string;
 };
 
 interface conditionShowComponentProps {
@@ -48,7 +50,9 @@ const Renderer: React.FC<IRendererProps> = ({
   urlParams,
   appConfig,
   pageOrder,
-  candidateId
+  candidateId,
+  hasResponseError,
+  errorMessage
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
@@ -77,6 +81,17 @@ const Renderer: React.FC<IRendererProps> = ({
     setForm({ ...data });
   }, [components, outputData, data]);
 
+  const commonProps = {
+    data,
+    pageId,
+    currentPage,
+    nextPage,
+    urlParams,
+    appConfig,
+    pageOrder,
+    candidateId
+  };
+
   const onValueChange = (actionName: string, keyName: string, value: any) => {
     const formData = Object.assign({}, form);
     if (keyName && value) {
@@ -87,10 +102,7 @@ const Renderer: React.FC<IRendererProps> = ({
       onAction(actionName, {
         keyName,
         value,
-        pageId,
-        data,
-        urlParams,
-        candidateId
+        ...commonProps
       });
     }
   };
@@ -98,14 +110,7 @@ const Renderer: React.FC<IRendererProps> = ({
   const onButtonClick = (actionName: string, options: any) => {
     const id = data?.application.id;
     onAction(actionName, {
-      data: data,
-      pageId: id,
-      currentPage,
-      nextPage,
-      urlParams,
-      appConfig,
-      pageOrder,
-      candidateId,
+      ...commonProps,
       ...options
     });
   };
@@ -137,6 +142,8 @@ const Renderer: React.FC<IRendererProps> = ({
                 component.properties.value ||
                 get(form, component.properties.dataKey)
               }
+              hasError={hasResponseError}
+              errorMessage={component.properties.errorMessage || errorMessage}
               onButtonClick={onButtonClick}
             />
           );

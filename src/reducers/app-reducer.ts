@@ -12,7 +12,8 @@ import {
   GET_APPLICATION,
   SET_APPLICATION_DATA,
   UPDATE_APPLICATION,
-  UPDATE_NON_FCRA_QUESTIONS
+  UPDATE_NON_FCRA_QUESTIONS,
+  ON_GET_CANDIDATE
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -28,6 +29,7 @@ const initialState: any = {
   data: {
     requisition: {},
     application: {},
+    candidate: {},
     output: {}
   },
   applicationData: {},
@@ -117,11 +119,6 @@ const AppReducer = (state = initialState, action: IAction) => {
     case GET_APPLICATION: {
       return updateSate(state, {
         data: {
-          requisition: {
-            $merge: {
-              consentInfo: payload.requisition
-            }
-          },
           application: {
             $set: payload.application
           }
@@ -150,6 +147,16 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           application: {
             $set: payload.application
+          }
+        }
+      });
+    }
+
+    case ON_GET_CANDIDATE: {
+      return updateSate(state, {
+        data: {
+          candidate: {
+            $set: payload
           }
         }
       });

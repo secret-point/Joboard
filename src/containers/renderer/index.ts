@@ -36,7 +36,9 @@ const mapStateToProps = (state: any, ownProps: any) => {
     urlParams: ownProps.match?.params,
     appConfig: state.app.appConfig,
     pageOrder: state.app.pageOrder,
-    candidateId: state.app.candidateId
+    candidateId: state.app.candidateId,
+    hasResponseError: state.app.hasResponseError,
+    errorMessage: state.app.errorMessage
   };
 };
 
