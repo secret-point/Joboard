@@ -11,13 +11,13 @@ import {
   PageHeader,
   Steps,
   DetailedCheckbox,
-  LaunchFRCALink,
   Link,
   DetailedRadioButton,
   DetailedRadioButtonList,
   Action,
   Markdown,
-  UL
+  UL,
+  StatusLink
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 
 const ComponentMap: any = {
@@ -33,7 +33,7 @@ const ComponentMap: any = {
   PageHeader,
   Steps,
   DetailedCheckbox,
-  LaunchFRCALink,
+  StatusLink,
   Link,
   DetailedRadioButton,
   DetailedRadioButtonList,

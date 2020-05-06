@@ -44,7 +44,7 @@ describe("Test App Reducer", () => {
       }
     });
 
-    expect(state.outputData.consent.sample).toBe("value");
+    expect(state.data.output.consent.sample).toBe("value");
   });
 
   test("tests for ON_UPDATE_PAGE_ID", () => {

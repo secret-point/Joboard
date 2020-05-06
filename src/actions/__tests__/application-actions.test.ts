@@ -18,7 +18,7 @@ describe("Test for Application Actions", () => {
   test("Test on start application", async () => {
     jest.spyOn(window.location, "assign").mockImplementation(l => {
       expect(l).toEqual(
-        `http://auth-url/?redirectUrl=http%3A%2F%2Flocalhost%3Fpage%3Dconsent%26requisitionId%3D123123`
+        `http://auth-url/?redirectUrl=http%3A%2F%2Flocalhost%23%2Fconsent%2F123123`
       );
     });
     const store = getStore();
