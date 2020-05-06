@@ -3,11 +3,14 @@ import RequisitionService from "../services/requisition-service";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
 import { push } from "react-router-redux";
+import set from "lodash/set";
+import { UpdateNonFcraRequest } from "../@types/candidate-application-service-requests";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
+export const UPDATE_NON_FCRA_QUESTIONS = "UPDATE_NON_FCRA_QUESTIONS";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, nextPage, urlParams } = data;
@@ -25,13 +28,13 @@ export const onGetApplication = (data: IPayload) => async (
   const requisitionService = new RequisitionService();
   const candidateApplicationService = new CandidateApplicationService();
   const requisitionId = data.urlParams?.requisitionId;
-  if (requisitionId) {
+  const applicationId = data.urlParams?.applicationId;
+  if (requisitionId && applicationId) {
     const requisitionResponse = await requisitionService.getRequisitionHeaderInfo(
       requisitionId
     );
-
     const applicationResponse = await candidateApplicationService.getApplication(
-      requisitionId
+      applicationId
     );
 
     dispatch({
@@ -92,4 +95,24 @@ export const updateApplication = (payload: IPayload) => async (
   const { data, currentPage } = payload;
   const updateData = data.output[currentPage.id];
   console.log({ type: currentPage.id, payload: updateData });
+};
+
+export const updateNonFcraQuestions = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const applicationId = payload.urlParams?.applicationId;
+  const candidateApplicationService = new CandidateApplicationService();
+  const { data, currentPage } = payload;
+  const updateData = data.output[currentPage.id] as UpdateNonFcraRequest;
+  console.log(payload);
+  const response = await candidateApplicationService.updateNonFcraQuestions(
+    applicationId,
+    updateData
+  );
+  dispatch({
+    type: UPDATE_NON_FCRA_QUESTIONS,
+    payload: {
+      application: response
+    }
+  });
 };

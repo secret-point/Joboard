@@ -37,6 +37,7 @@ export interface Page {
 export interface UrlParam {
   page: string;
   requisitionId: string;
+  applicationId: string;
 }
 
 export interface AppConfig {

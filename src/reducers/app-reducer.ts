@@ -11,7 +11,8 @@ import { GET_REQUISITION_HEADER_INFO } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
   SET_APPLICATION_DATA,
-  UPDATE_APPLICATION
+  UPDATE_APPLICATION,
+  UPDATE_NON_FCRA_QUESTIONS
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -135,6 +136,16 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case UPDATE_APPLICATION: {
+      return updateSate(state, {
+        data: {
+          application: {
+            $set: payload.application
+          }
+        }
+      });
+    }
+
+    case UPDATE_NON_FCRA_QUESTIONS: {
       return updateSate(state, {
         data: {
           application: {
