@@ -5,6 +5,16 @@ import App from "./App.container";
 import store from "./store";
 import { Provider } from "react-redux";
 import { getInitialData } from "./services";
+import isEmpty from "lodash/isEmpty";
+import { convertPramsToJson } from "./helpers/utils";
+import { Store } from "redux";
+
+declare global {
+  interface Window {
+    reduxStore: Store;
+    Stage: string;
+  }
+}
 
 getInitialData()
   .then(data => {
@@ -12,13 +22,12 @@ getInitialData()
       type: "LOAD_INIT_DATA",
       payload: { ...data }
     });
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get("token");
-    if (token) {
-      window.localStorage.setItem("accessToken", token);
+    if (window.location.hash.includes("?token=")) {
+      const tokenString = window.location.hash.split("?token=");
+      window.localStorage.setItem("accessToken", tokenString[1]);
     }
 
+    window.reduxStore = store;
     const Main = () => (
       <Provider store={store}>
         <App />

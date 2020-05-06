@@ -13,18 +13,22 @@ const Routes: React.FC = () => {
       <Switch>
         <Route
           exact
-          path="/"
-          render={() => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const requisitionId = urlParams.get("requisitionId");
-            const page = urlParams.get("page");
-            return <Redirect to={`/app/${page}/${requisitionId}`} />;
-          }}
+          path="/app/:page/:requisitionId/:applicationId?"
+          component={ApplicationPage}
         />
         <Route
           exact
-          path="/app/:page/:requisitionId"
-          component={ApplicationPage}
+          path="/:pageId?/:requisitionId?/:applicationId?"
+          render={routerProps => {
+            const { pageId, requisitionId, applicationId } = routerProps.match
+              .params as any;
+            let path = `/app/${pageId}/${requisitionId}`;
+
+            if (applicationId) {
+              path = path + `/${applicationId}`;
+            }
+            return <Redirect to={path} />;
+          }}
         />
       </Switch>
     </Router>

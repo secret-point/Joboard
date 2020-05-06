@@ -1,10 +1,11 @@
+import { axiosHelper } from "./../helpers/axios-helper";
 import { AxiosInstance } from "axios";
-import { ajaxHelper } from "../helpers/utils";
 import { CreateApplicationRequest } from "../@types/candidate-application-service-requests";
+
 export default class CandidateApplicationService {
   private readonly axiosInstance: AxiosInstance;
   constructor() {
-    this.axiosInstance = ajaxHelper("/api/candidate-application");
+    this.axiosInstance = axiosHelper("/api/candidate-application");
   }
 
   async getApplication(applicationId: string) {

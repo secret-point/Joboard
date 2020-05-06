@@ -1,14 +1,12 @@
-import axios, { AxiosInstance } from "axios";
+import { AxiosInstance } from "axios";
+import { axiosHelper } from "../helpers/axios-helper";
 
 export default class RequisitionService {
   private readonly axiosInstance: AxiosInstance;
 
   constructor() {
-    this.axiosInstance = axios.create({
-      baseURL: "/api/requisition",
-      headers: {
-        "Cache-Control": "no-cache"
-      }
+    this.axiosInstance = axiosHelper("/api/requisition", {
+      "Cache-Control": "no-cache"
     });
   }
 

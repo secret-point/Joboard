@@ -3,7 +3,6 @@ import RequisitionService from "../services/requisition-service";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
 import { push } from "react-router-redux";
-import set from "lodash/set";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -13,7 +12,7 @@ export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, nextPage, urlParams } = data;
   const origin = window.location.origin;
-  const redirectUrl = `${origin}?page=${nextPage.id}&requisitionId=${urlParams.requisitionId}`;
+  const redirectUrl = `${origin}#/${nextPage.id}/${urlParams.requisitionId}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;

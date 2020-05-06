@@ -1,23 +1,30 @@
-import axios from "axios";
-import isNull from "lodash/isNull";
+import isEmpty from "lodash/isEmpty";
 
-export const getAccessToken = () => {
-  const accessToken = window.localStorage.getItem("accessToken");
-  return accessToken;
+export const convertPramsToJson = (params: string) => {
+  if (!isEmpty(params)) {
+    return JSON.parse(
+      '{"' +
+        decodeURI(params.substring(1))
+          .replace(/"/g, '\\"')
+          .replace(/&/g, '","')
+          .replace(/=/g, '":"') +
+        '"}'
+    );
+  } else {
+    return {};
+  }
 };
 
-export const ajaxHelper = (baseUrl: string = "/api") => {
-  const accessToken = getAccessToken();
-  const authorizationObject: any = {};
+export const launchAuthentication = () => {
+  let hash = window.location.hash.substr(1);
+  hash = hash.replace("/app", "");
 
-  if (!isNull(accessToken)) {
-    authorizationObject.Authorization = accessToken;
-  }
+  const origin = window.location.origin;
+  const redirectUrl = `${origin}#${hash}`;
 
-  return axios.create({
-    baseURL: baseUrl,
-    headers: {
-      ...authorizationObject
-    }
-  });
+  const state = window.reduxStore.getState();
+  let url = `${
+    state.app.appConfig.authenticationURL
+  }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+  window.location.assign(url);
 };
