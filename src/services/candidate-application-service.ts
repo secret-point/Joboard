@@ -4,7 +4,8 @@ import {
   CreateApplicationRequest,
   UpdateNonFcraRequest,
   UpdateAdditionalBackgroundInfoRequest,
-  UpdateApplicationRequest
+  UpdateApplicationRequest,
+  UpdateContingentOffer
 } from "../@types/candidate-application-service-requests";
 export default class CandidateApplicationService {
   private readonly axiosInstance: AxiosInstance;
@@ -73,6 +74,17 @@ export default class CandidateApplicationService {
           "Cache-Control": "no-cache"
         }
       }
+    );
+    return response.data;
+  }
+
+  async updateContingentOffer(
+    applicationId: string,
+    payload: UpdateContingentOffer
+  ) {
+    const response = await this.axiosInstance.put(
+      `/updateContingentOffer/${applicationId}`,
+      payload
     );
     return response.data;
   }

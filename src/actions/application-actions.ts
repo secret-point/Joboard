@@ -7,7 +7,8 @@ import isEmpty from "lodash/isEmpty";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
 import {
   UpdateNonFcraRequest,
-  UpdateAdditionalBackgroundInfoRequest
+  UpdateAdditionalBackgroundInfoRequest,
+  UpdateContingentOffer
 } from "../@types/candidate-application-service-requests";
 
 export const START_APPLICATION = "START_APPLICATION";
@@ -17,6 +18,7 @@ export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 export const UPDATE_NON_FCRA_QUESTIONS = "UPDATE_NON_FCRA_QUESTIONS";
 export const ON_GET_CANDIDATE = "ON_GET_CANDIDATE";
 export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
+export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 
 const candidateApplicationService = new CandidateApplicationService();
 
@@ -201,4 +203,34 @@ export const updateAdditionalBackgroundInfo = (payload: IPayload) => async (
       //application: response
     }
   });
+};
+
+export const updateContingentOffer = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const applicationId = payload.urlParams?.applicationId;
+  const candidateApplicationService = new CandidateApplicationService();
+  const { data, currentPage } = payload;
+  const updateData = data.output[currentPage.id] as UpdateContingentOffer;
+  updateData.offerAccepted = true;
+  updateData.offerAcceptedTime = new Date().toISOString();
+  try {
+    const response = await candidateApplicationService.updateContingentOffer(
+      applicationId,
+      updateData
+    );
+    dispatch({
+      type: UPDATE_CONTINGENT_OFFER,
+      payload: {
+        application: response
+      }
+    });
+
+    const { nextPage, urlParams } = payload;
+    dispatch(
+      push(`/app/bgc/${urlParams?.requisitionId}/${response?.applicationId}`)
+    );
+  } catch (error) {
+    onUpdateError(error.response.data)(dispatch);
+  }
 };

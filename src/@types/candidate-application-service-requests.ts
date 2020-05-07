@@ -36,3 +36,8 @@ export interface UpdateApplicationRequest {
   payload: any;
   type: string;
 }
+
+export interface UpdateContingentOffer {
+  offerAcceptedTime: string;
+  offerAccepted: boolean;
+}

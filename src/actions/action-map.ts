@@ -8,7 +8,8 @@ import {
   createApplication,
   updateApplication,
   updateNonFcraQuestions,
-  updateAdditionalBackgroundInfo
+  updateAdditionalBackgroundInfo,
+  updateContingentOffer
 } from "./application-actions";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
 
@@ -26,7 +27,8 @@ const actionMap: any = {
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
   UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions,
-  UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo
+  UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo,
+  UPDATE_CONTINGENT_OFFER: updateContingentOffer
 };
 
 export default actionMap;
