@@ -13,7 +13,8 @@ import {
   SET_APPLICATION_DATA,
   UPDATE_APPLICATION,
   UPDATE_NON_FCRA_QUESTIONS,
-  ON_GET_CANDIDATE
+  ON_GET_CANDIDATE,
+  UPDATE_ADDITIONAL_BG_INFO
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 
@@ -161,6 +162,16 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       });
     }
+    //TODO: once api is moved to application add this back
+    /*case UPDATE_ADDITIONAL_BG_INFO: {
+      return updateSate(state, {
+        data: {
+          application: {
+            $set: payload.application
+          }
+        }
+      })
+    }*/
     default:
       return state;
   }

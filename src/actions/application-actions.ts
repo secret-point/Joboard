@@ -4,8 +4,11 @@ import CandidateApplicationService from "../services/candidate-application-servi
 import IPayload from "../@types/IPayload";
 import { push } from "react-router-redux";
 import isEmpty from "lodash/isEmpty";
-import { UpdateNonFcraRequest } from "../@types/candidate-application-service-requests";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
+import {
+  UpdateNonFcraRequest,
+  UpdateAdditionalBackgroundInfoRequest
+} from "../@types/candidate-application-service-requests";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -13,6 +16,7 @@ export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 export const UPDATE_NON_FCRA_QUESTIONS = "UPDATE_NON_FCRA_QUESTIONS";
 export const ON_GET_CANDIDATE = "ON_GET_CANDIDATE";
+export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
 
 const candidateApplicationService = new CandidateApplicationService();
 
@@ -128,7 +132,6 @@ export const updateNonFcraQuestions = (payload: IPayload) => async (
   const candidateApplicationService = new CandidateApplicationService();
   const { data, currentPage } = payload;
   const updateData = data.output[currentPage.id] as UpdateNonFcraRequest;
-  console.log(payload);
   const response = await candidateApplicationService.updateNonFcraQuestions(
     applicationId,
     updateData
@@ -137,6 +140,24 @@ export const updateNonFcraQuestions = (payload: IPayload) => async (
     type: UPDATE_NON_FCRA_QUESTIONS,
     payload: {
       application: response
+    }
+  });
+};
+export const updateAdditionalBackgroundInfo = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const candidateApplicationService = new CandidateApplicationService();
+  const { data, currentPage } = payload;
+  const updateData = data.output[
+    currentPage.id
+  ] as UpdateAdditionalBackgroundInfoRequest;
+  const response = await candidateApplicationService.updateAdditionalBackgroundInfo(
+    updateData
+  );
+  dispatch({
+    type: UPDATE_ADDITIONAL_BG_INFO,
+    payload: {
+      //application: response
     }
   });
 };

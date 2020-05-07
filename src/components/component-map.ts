@@ -18,6 +18,7 @@ import {
   Markdown,
   UL,
   StatusLink,
+  Dropdown,
   DatePicker
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 
@@ -41,6 +42,7 @@ const ComponentMap: any = {
   Action,
   Markdown,
   UL,
+  Dropdown,
   DatePicker
 };
 

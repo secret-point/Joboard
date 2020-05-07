@@ -7,7 +7,8 @@ import {
   updatePreHireStepsStatus,
   createApplication,
   updateApplication,
-  updateNonFcraQuestions
+  updateNonFcraQuestions,
+  updateAdditionalBackgroundInfo
 } from "./application-actions";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
 
@@ -24,7 +25,8 @@ const actionMap: any = {
   UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus,
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
-  UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions
+  UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions,
+  UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo
 };
 
 export default actionMap;

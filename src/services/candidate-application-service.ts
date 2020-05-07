@@ -2,7 +2,8 @@ import { axiosHelper } from "./../helpers/axios-helper";
 import { AxiosInstance } from "axios";
 import {
   CreateApplicationRequest,
-  UpdateNonFcraRequest
+  UpdateNonFcraRequest,
+  UpdateAdditionalBackgroundInfoRequest
 } from "../@types/candidate-application-service-requests";
 export default class CandidateApplicationService {
   private readonly axiosInstance: AxiosInstance;
@@ -48,6 +49,22 @@ export default class CandidateApplicationService {
 
   async getCandidate() {
     const response = await this.axiosInstance.get(`/candidate`);
+    return response.data;
+  }
+
+  async updateAdditionalBackgroundInfo(
+    //applicationId: string,
+    payload: UpdateAdditionalBackgroundInfoRequest
+  ) {
+    const response = await this.axiosInstance.put(
+      `/updateAdditionalBackgroundInfo`,
+      payload,
+      {
+        headers: {
+          "Cache-Control": "no-cache"
+        }
+      }
+    );
     return response.data;
   }
 }

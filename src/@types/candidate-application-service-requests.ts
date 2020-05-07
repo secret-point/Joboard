@@ -15,7 +15,7 @@ export interface UpdateNonFcraRequest {
   };
 }
 
-export interface UpdateAdditionalBackgroundInfo {
+export interface UpdateAdditionalBackgroundInfoRequest {
   hasCriminalRecordWithinSevenYears: boolean;
   hasPreviouslyWorkedAtAmazon: boolean;
   mostRecentBuildingWorkedAtAmazon: string;
