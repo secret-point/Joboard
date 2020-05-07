@@ -1,11 +1,12 @@
+import { UrlParam } from "./../@types/IPayload";
 import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import find from "lodash/find";
-import IPayload from "../@types/IPayload";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const ON_REDIRECT = "ON_REDIRECT";
 export const ON_UPDATE_PAGE_ID = "ON_UPDATE_PAGE_ID";
+export const ON_SET_LOADING = "ON_SET_LOADING";
 
 type IOnChangeProps = {
   keyName: string;
@@ -30,8 +31,16 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
   dispatch(push(`/app${payload.redirectPath}`));
 };
 
-export const goTo = (path: string) => (dispatch: Function) => {
-  dispatch(push(path));
+export const goTo = (path: string, urlParams?: UrlParam) => (
+  dispatch: Function
+) => {
+  if (urlParams) {
+    const { requisitionId, applicationId } = urlParams;
+    path = `/app/${path}/${requisitionId}/${applicationId}`;
+    dispatch(push(path));
+  } else {
+    dispatch(push(path));
+  }
 };
 
 export const onSubmit = (payload: any) => async (dispatch: Function) => {
@@ -71,5 +80,16 @@ export const onDismissModal = (dataKey: string) => (dispatch: Function) => {
       keyName: dataKey,
       value: undefined
     }
+  });
+};
+
+/**
+ * toggle the loading on the screen.
+ * @param dispatch Function action dispatch
+ */
+export const setLoading = (value: boolean) => (dispatch: Function) => {
+  dispatch({
+    type: ON_SET_LOADING,
+    payload: value
   });
 };

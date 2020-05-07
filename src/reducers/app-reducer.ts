@@ -1,12 +1,16 @@
 import { LOAD_INIT_DATA } from "../actions";
-import { UPDATE_VALUE_CHANGE, ON_UPDATE_PAGE_ID } from "../actions/actions";
+import {
+  UPDATE_VALUE_CHANGE,
+  ON_UPDATE_PAGE_ID,
+  ON_SET_LOADING
+} from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
 import map from "lodash/map";
 import findIndex from "lodash/findIndex";
 import find from "lodash/find";
 import { IAction } from "../@types/IActionType";
-import updateSate from "immutability-helper";
+import updateState from "immutability-helper";
 import { GET_REQUISITION_HEADER_INFO } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -44,6 +48,7 @@ const initialState: any = {
   pageConfig: {},
   pageOrder: [],
   appConfig: {},
+  loading: false,
   candidateId: "098d6c95-268f-4d68-8cfd-269686ebe01a"
 };
 
@@ -53,7 +58,7 @@ const AppReducer = (state = initialState, action: IAction) => {
   switch (type) {
     case LOAD_INIT_DATA: {
       const outputDataObject = getOutputDataObject(payload[1].pageOrder);
-      return updateSate(state, {
+      return updateState(state, {
         pageOrder: {
           $set: payload[1].pageOrder
         },
@@ -73,8 +78,8 @@ const AppReducer = (state = initialState, action: IAction) => {
     case UPDATE_VALUE_CHANGE: {
       const output = cloneDeep(state.data.output);
       const { keyName, value, pageId } = payload;
-      set(output[pageId], keyName, value);
-      return updateSate(state, {
+      set(output[pageId || state.currentPage.id], keyName, value);
+      return updateState(state, {
         data: {
           output: {
             $set: output
@@ -84,6 +89,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
     case ON_UPDATE_PAGE_ID: {
       const newState = { ...state };
+      newState.loading = false;
       newState.currentPage = find(state.pageOrder, {
         id: payload.updatedPageId
       });
@@ -107,7 +113,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       return newState;
     }
     case GET_REQUISITION_HEADER_INFO: {
-      return updateSate(state, {
+      return updateState(state, {
         data: {
           requisition: {
             $merge: {
@@ -118,7 +124,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case GET_APPLICATION: {
-      return updateSate(state, {
+      return updateState(state, {
         data: {
           application: {
             $set: payload.application
@@ -127,14 +133,14 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case SET_APPLICATION_DATA: {
-      return updateSate(state, {
+      return updateState(state, {
         applicationData: {
           $merge: payload.application
         }
       });
     }
     case UPDATE_APPLICATION: {
-      return updateSate(state, {
+      return updateState(state, {
         data: {
           application: {
             $set: payload.application
@@ -144,7 +150,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case UPDATE_NON_FCRA_QUESTIONS: {
-      return updateSate(state, {
+      return updateState(state, {
         data: {
           application: {
             $set: payload.application
@@ -154,7 +160,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case ON_GET_CANDIDATE: {
-      return updateSate(state, {
+      return updateState(state, {
         data: {
           candidate: {
             $set: payload
@@ -172,6 +178,13 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       })
     }*/
+    case ON_SET_LOADING: {
+      return updateState(state, {
+        loading: {
+          $set: payload
+        }
+      });
+    }
     default:
       return state;
   }

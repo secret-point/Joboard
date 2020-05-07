@@ -3,7 +3,8 @@ import { AxiosInstance } from "axios";
 import {
   CreateApplicationRequest,
   UpdateNonFcraRequest,
-  UpdateAdditionalBackgroundInfoRequest
+  UpdateAdditionalBackgroundInfoRequest,
+  UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
 export default class CandidateApplicationService {
   private readonly axiosInstance: AxiosInstance;
@@ -26,6 +27,14 @@ export default class CandidateApplicationService {
   async createApplication(payload: CreateApplicationRequest) {
     const response = await this.axiosInstance.post(
       "/createApplication",
+      payload
+    );
+    return response.data;
+  }
+
+  async updateApplication(payload: UpdateApplicationRequest) {
+    const response = await this.axiosInstance.put(
+      "/update-application",
       payload
     );
     return response.data;

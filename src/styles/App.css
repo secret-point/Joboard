@@ -2,3 +2,26 @@
   height: 1.7em;
   padding-top: 5px;
 }
+
+.loading-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+  z-index: 10000;
+}
+
+.loading-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .loading-wrapper {
+    margin-left: -2rem;
+  }
+}

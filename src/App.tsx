@@ -10,6 +10,7 @@ import "./styles/App.css";
 import { StencilProvider } from "@stencil-react/components/dist/submodules/context";
 import { MainWithSkipLink } from "@stencil-react/components/a11y";
 import Routes from "./pages/routes";
+import LoaderContainer from "./containers/loader/loader-container";
 import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 
 interface IApp {
@@ -19,6 +20,7 @@ interface IApp {
 const App: React.FC<IApp> = ({ showNavbar }) => {
   return (
     <StencilProvider>
+      <LoaderContainer />
       {showNavbar && (
         <PageHeader hasShadow dataTestId="page">
           <PageHeaderButton

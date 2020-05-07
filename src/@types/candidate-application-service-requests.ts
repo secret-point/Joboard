@@ -30,3 +30,9 @@ export enum GovernmentIdType {
   DRIVERS_LICENSE = "DRIVERS_LICENSE",
   PASSPORT = "PASSPORT"
 }
+
+export interface UpdateApplicationRequest {
+  applicationId: string;
+  payload: any;
+  type: string;
+}

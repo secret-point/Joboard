@@ -9,7 +9,6 @@ import {
   IconPencil
 } from "@stencil-react/components/icons";
 import ICandidateApplication from "../../@types/ICandidateApplication";
-import { ApplicationState } from "../../constants/ApplicationState";
 import RendererContainer from "../../containers/renderer";
 import { getStatusForSteps } from "./../../helpers/steps-helper";
 import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";

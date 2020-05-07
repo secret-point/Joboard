@@ -1,4 +1,4 @@
-import { goTo } from "./actions";
+import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
@@ -34,6 +34,7 @@ export const onGetApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   try {
+    setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
     onGetRequisitionHeaderInfo(payload)(dispatch);
     onGetCandidate(payload)(dispatch);
@@ -50,7 +51,9 @@ export const onGetApplication = (payload: IPayload) => async (
         }
       });
     }
+    setLoading(false)(dispatch);
   } catch (ex) {
+    setLoading(false)(dispatch);
     onUpdateError(
       ex?.response?.data?.errorMessage || "unable to get application"
     )(dispatch);
@@ -70,7 +73,9 @@ export const onGetCandidate = (payload: IPayload) => async (
 };
 
 export const onLaunchFRCA = (payload: IPayload) => (dispatch: Function) => {
-  dispatch(push("/app/frca/" + payload.urlParams.requisitionId));
+  const { urlParams } = payload;
+  const url = `/app/frca/${urlParams.requisitionId}/${urlParams.applicationId}`;
+  dispatch(push(url));
 };
 
 export const continueWithFRCADecline = (payload: IPayload) => (
@@ -96,33 +101,69 @@ export const createApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   if (isEmpty(payload.data.application)) {
-    const candidateResponse = await candidateApplicationService.getCandidate();
-    const response = await candidateApplicationService.createApplication({
-      candidateId: candidateResponse.candidateId,
-      parentRequisitionId: payload.urlParams.requisitionId,
-      language: "English"
-    });
+    try {
+      setLoading(true)(dispatch);
+      const candidateResponse = await candidateApplicationService.getCandidate();
+      const response = await candidateApplicationService.createApplication({
+        candidateId: candidateResponse.candidateId,
+        parentRequisitionId: payload.urlParams.requisitionId,
+        language: "English"
+      });
 
-    dispatch({
-      type: UPDATE_APPLICATION,
-      payload: {
-        application: response
-      }
-    });
+      dispatch({
+        type: UPDATE_APPLICATION,
+        payload: {
+          application: response
+        }
+      });
 
-    const { nextPage, urlParams } = payload;
-    goTo(
-      `/${nextPage.id}/${urlParams?.requisitionId}/${response?.applicationId}`
-    )(dispatch);
+      setLoading(false)(dispatch);
+      const { nextPage, urlParams } = payload;
+      goTo(
+        `/${nextPage.id}/${urlParams?.requisitionId}/${response?.applicationId}`
+      )(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get application"
+      )(dispatch);
+    }
   }
 };
 
 export const updateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  const { data, currentPage } = payload;
+  setLoading(true)(dispatch);
+  const { data, currentPage, options, urlParams } = payload;
   const updateData = data.output[currentPage.id];
-  console.log({ type: currentPage.id, payload: updateData });
+  const applicationId = data.application.applicationId;
+
+  if (!isEmpty(updateData)) {
+    try {
+      const response = await candidateApplicationService.updateApplication({
+        type: currentPage.id,
+        applicationId,
+        payload: updateData
+      });
+      dispatch({
+        type: UPDATE_APPLICATION,
+        payload: {
+          application: response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to update application"
+      )(dispatch);
+    }
+  }
+
+  if (options?.goTo) {
+    goTo(options?.goTo, urlParams)(dispatch);
+  }
 };
 
 export const updateNonFcraQuestions = (payload: IPayload) => async (

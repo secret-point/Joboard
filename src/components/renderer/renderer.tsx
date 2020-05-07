@@ -3,7 +3,7 @@ import ComponentMap from "../component-map";
 import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
 import get from "lodash/get";
-import propertyOf from "lodash/propertyOf";
+import isEmpty from "lodash/isEmpty";
 
 type IComponent = {
   component: string;
@@ -26,6 +26,8 @@ export type IRendererProps = {
   candidateId: string;
   hasResponseError: boolean;
   errorMessage: string;
+  isContentContainsSteps?: boolean;
+  activeStepIndex?: number;
 };
 
 interface conditionShowComponentProps {
@@ -52,7 +54,9 @@ const Renderer: React.FC<IRendererProps> = ({
   pageOrder,
   candidateId,
   hasResponseError,
-  errorMessage
+  errorMessage,
+  isContentContainsSteps,
+  activeStepIndex
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
@@ -89,7 +93,9 @@ const Renderer: React.FC<IRendererProps> = ({
     urlParams,
     appConfig,
     pageOrder,
-    candidateId
+    candidateId,
+    isContentContainsSteps,
+    activeStepIndex
   };
 
   const onValueChange = (actionName: string, keyName: string, value: any) => {
@@ -108,7 +114,6 @@ const Renderer: React.FC<IRendererProps> = ({
   };
 
   const onButtonClick = (actionName: string, options: any) => {
-    const id = data?.application.id;
     onAction(actionName, {
       ...commonProps,
       ...options
@@ -120,7 +125,7 @@ const Renderer: React.FC<IRendererProps> = ({
   ) => {
     if (showComponentProperties) {
       const { dataKey, filter } = showComponentProperties;
-      const value = propertyOf(data.output[pageId])(dataKey);
+      const value = getValue(dataKey);
       return value === filter.value;
     } else {
       // show component if show component properties are empty.
@@ -128,9 +133,18 @@ const Renderer: React.FC<IRendererProps> = ({
     }
   };
 
+  const getValue = (dataKey: string) => {
+    let value = get(form, dataKey);
+    value = isEmpty(value) ? get(form.output[pageId], dataKey) : value;
+    value = isEmpty(value) ? get(form.application, dataKey) : value;
+    return value;
+  };
+
   return (
     <Col data-testid={`renderer`} gridGap="s">
       {componentList.map((component: any, index: number) => {
+        const value =
+          component.properties.value || getValue(component.properties.dataKey);
         if (showComponent(component.showComponentProperties)) {
           return (
             <component.Element
@@ -138,15 +152,15 @@ const Renderer: React.FC<IRendererProps> = ({
               {...component.properties}
               onValueChange={onValueChange}
               enableOnValidation={isDataValid}
-              value={
-                component.properties.value ||
-                get(form, component.properties.dataKey)
-              }
+              value={value}
               hasError={hasResponseError}
               errorMessage={component.properties.errorMessage || errorMessage}
               onButtonClick={onButtonClick}
+              defaultValue={value}
             />
           );
+        } else {
+          return <span />;
         }
       })}
     </Col>

@@ -62,4 +62,8 @@ export default interface Payload {
   pageOrder: PageOrder[];
   keyName: string;
   candidateId: string;
+  isContentContainsSteps?: boolean;
+  activeStepIndex?: number;
+  updatedPageId: string;
+  options: any;
 }

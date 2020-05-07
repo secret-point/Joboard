@@ -38,7 +38,9 @@ const mapStateToProps = (state: any, ownProps: any) => {
     pageOrder: state.app.pageOrder,
     candidateId: state.app.candidateId,
     hasResponseError: state.app.hasResponseError,
-    errorMessage: state.app.errorMessage
+    errorMessage: state.app.errorMessage,
+    isContentContainsSteps: ownProps.isContentContainsSteps,
+    activeStepIndex: ownProps.activeStepIndex
   };
 };
 

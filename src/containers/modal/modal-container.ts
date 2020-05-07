@@ -10,7 +10,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
   const modals = state.app.pageConfig.content?.modals || [];
   return {
     modals,
-    data: state.app.currentPageOutput
+    data: state.app.data.output[state.app.currentPage.id]
   };
 };
 

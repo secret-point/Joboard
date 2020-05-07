@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import RendererContainer from "../../containers/renderer";
 import {
-  ModalButtonBar,
   ModalContainer,
   ModalContent,
   ModalRendererFunction,
@@ -34,7 +33,7 @@ const Modal: React.FC<IModal> = ({ show, modalIndex, onModalClose }) => {
     if (show) {
       pushModal(myModal);
     }
-  }, [show]);
+  }, [show, pushModal]);
 
   const onDismiss = (e: React.MouseEvent, resolve: any) => {
     resolve(e);

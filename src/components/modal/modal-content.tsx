@@ -1,7 +1,6 @@
 import React from "react";
 import { Col } from "@stencil-react/components/layout";
 import propertyOf from "lodash/propertyOf";
-import ICandidateApplication from "../../@types/ICandidateApplication";
 import Modal from "./modal";
 
 interface IModalContentComponent {
