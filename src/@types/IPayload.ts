@@ -66,4 +66,7 @@ export default interface Payload {
   activeStepIndex?: number;
   updatedPageId: string;
   options: any;
+  value: any;
+  pageId: string;
+  stepId: string;
 }

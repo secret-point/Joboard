@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ComponentMap from "../component-map";
 import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
-import get from "lodash/get";
+import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
 
 type IComponent = {
@@ -28,6 +28,7 @@ export type IRendererProps = {
   errorMessage: string;
   isContentContainsSteps?: boolean;
   activeStepIndex?: number;
+  stepId?: string;
 };
 
 interface conditionShowComponentProps {
@@ -56,7 +57,8 @@ const Renderer: React.FC<IRendererProps> = ({
   hasResponseError,
   errorMessage,
   isContentContainsSteps,
-  activeStepIndex
+  activeStepIndex,
+  stepId
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
@@ -95,7 +97,8 @@ const Renderer: React.FC<IRendererProps> = ({
     pageOrder,
     candidateId,
     isContentContainsSteps,
-    activeStepIndex
+    activeStepIndex,
+    stepId
   };
 
   const onValueChange = (actionName: string, keyName: string, value: any) => {
@@ -134,9 +137,9 @@ const Renderer: React.FC<IRendererProps> = ({
   };
 
   const getValue = (dataKey: string) => {
-    let value = get(form, dataKey);
-    value = isEmpty(value) ? get(form.output[pageId], dataKey) : value;
-    value = isEmpty(value) ? get(form.application, dataKey) : value;
+    let value = propertyOf(data)(dataKey);
+    value = isEmpty(value) ? propertyOf(form.output[pageId])(dataKey) : value;
+    value = isEmpty(value) ? propertyOf(form.application)(dataKey) : value;
     return value;
   };
 

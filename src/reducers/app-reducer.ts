@@ -78,8 +78,21 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
     case UPDATE_VALUE_CHANGE: {
       const output = cloneDeep(state.data.output);
-      const { keyName, value, pageId } = payload;
-      set(output[pageId || state.currentPage.id], keyName, value);
+      const {
+        keyName,
+        value,
+        pageId,
+        isContentContainsSteps,
+        activeStepIndex
+      } = payload;
+
+      const id = pageId || state.currentPage.id;
+      let key = keyName;
+      if (isContentContainsSteps) {
+        key = `${id}.${activeStepIndex}.${keyName}`;
+      }
+
+      set(output, key, value);
       return updateState(state, {
         data: {
           output: {

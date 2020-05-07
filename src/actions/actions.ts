@@ -1,4 +1,4 @@
-import { UrlParam } from "./../@types/IPayload";
+import IPayload, { UrlParam } from "./../@types/IPayload";
 import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import find from "lodash/find";
@@ -14,15 +14,22 @@ type IOnChangeProps = {
   pageId: string;
 };
 
-export const onUpdateChange = ({ keyName, value, pageId }: IOnChangeProps) => (
-  dispatch: Function
-) => {
+export const onUpdateChange = (payload: IPayload) => (dispatch: Function) => {
+  const {
+    keyName,
+    value,
+    pageId,
+    isContentContainsSteps,
+    activeStepIndex
+  } = payload;
   dispatch({
     type: UPDATE_VALUE_CHANGE,
     payload: {
       keyName,
       value,
-      pageId
+      pageId,
+      isContentContainsSteps,
+      activeStepIndex
     }
   });
 };

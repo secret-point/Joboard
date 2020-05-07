@@ -137,30 +137,41 @@ export const updateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
-  const { data, currentPage, options, urlParams } = payload;
-  const updateData = data.output[currentPage.id];
+  const {
+    data,
+    currentPage,
+    options,
+    urlParams,
+    isContentContainsSteps,
+    activeStepIndex,
+    stepId
+  } = payload;
+  let updateData = data.output[currentPage.id];
+  let type = currentPage.id;
+  if (isContentContainsSteps && activeStepIndex) {
+    updateData = data.output[currentPage.id][activeStepIndex];
+    type = stepId;
+  }
   const applicationId = data.application.applicationId;
 
-  if (!isEmpty(updateData)) {
-    try {
-      const response = await candidateApplicationService.updateApplication({
-        type: currentPage.id,
-        applicationId,
-        payload: updateData
-      });
-      dispatch({
-        type: UPDATE_APPLICATION,
-        payload: {
-          application: response
-        }
-      });
-      setLoading(false)(dispatch);
-    } catch (ex) {
-      setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to update application"
-      )(dispatch);
-    }
+  try {
+    const response = await candidateApplicationService.updateApplication({
+      type: type,
+      applicationId,
+      payload: updateData
+    });
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    onUpdateError(
+      ex?.response?.data?.errorMessage || "Unable to update application"
+    )(dispatch);
   }
 
   if (options?.goTo) {
