@@ -27,7 +27,7 @@ export default class CandidateApplicationService {
 
   async createApplication(payload: CreateApplicationRequest) {
     const response = await this.axiosInstance.post(
-      "/createApplication",
+      "/create-application",
       payload
     );
     return response.data;

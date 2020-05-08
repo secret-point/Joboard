@@ -74,13 +74,13 @@ export const onGetCandidate = (payload: IPayload) => async (
   }
 };
 
-export const onLaunchFRCA = (payload: IPayload) => (dispatch: Function) => {
+export const onLaunchFCRA = (payload: IPayload) => (dispatch: Function) => {
   const { urlParams } = payload;
-  const url = `/app/frca/${urlParams.requisitionId}/${urlParams.applicationId}`;
+  const url = `/app/fcra/${urlParams.requisitionId}/${urlParams.applicationId}`;
   dispatch(push(url));
 };
 
-export const continueWithFRCADecline = (payload: IPayload) => (
+export const continueWithFCRADecline = (payload: IPayload) => (
   dispatch: Function
 ) => {
   dispatch({
@@ -154,24 +154,26 @@ export const updateApplication = (payload: IPayload) => async (
   }
   const applicationId = data.application.applicationId;
 
-  try {
-    const response = await candidateApplicationService.updateApplication({
-      type: type,
-      applicationId,
-      payload: updateData
-    });
-    dispatch({
-      type: UPDATE_APPLICATION,
-      payload: {
-        application: response
-      }
-    });
-    setLoading(false)(dispatch);
-  } catch (ex) {
-    setLoading(false)(dispatch);
-    onUpdateError(
-      ex?.response?.data?.errorMessage || "Unable to update application"
-    )(dispatch);
+  if (!isEmpty(updateData)) {
+    try {
+      const response = await candidateApplicationService.updateApplication({
+        type: type,
+        applicationId,
+        payload: updateData
+      });
+      dispatch({
+        type: UPDATE_APPLICATION,
+        payload: {
+          application: response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to update application"
+      )(dispatch);
+    }
   }
 
   if (options?.goTo) {

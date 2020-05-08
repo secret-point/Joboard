@@ -182,16 +182,6 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       });
     }
-    //TODO: once api is moved to application add this back
-    /*case UPDATE_ADDITIONAL_BG_INFO: {
-      return updateSate(state, {
-        data: {
-          application: {
-            $set: payload.application
-          }
-        }
-      })
-    }*/
     case ON_SET_LOADING: {
       return updateState(state, {
         loading: {
