@@ -19,7 +19,9 @@ import {
   UL,
   StatusLink,
   Dropdown,
-  DatePicker
+  DatePicker,
+  MessageBannerComponent,
+  Card
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 
 const ComponentMap: any = {
@@ -43,7 +45,9 @@ const ComponentMap: any = {
   Markdown,
   UL,
   Dropdown,
-  DatePicker
+  DatePicker,
+  MessageBannerComponent,
+  Card
 };
 
 export default ComponentMap;
