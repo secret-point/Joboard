@@ -11,7 +11,10 @@ import {
   updateAdditionalBackgroundInfo,
   updateContingentOffer
 } from "./application-actions";
-import { onGetRequisitionHeaderInfo } from "./requisition-actions";
+import {
+  onGetRequisitionHeaderInfo,
+  onGetNHETimeSlots
+} from "./requisition-actions";
 
 const actionMap: any = {
   ON_VALUE_CHANGE: onUpdateChange,
@@ -28,7 +31,8 @@ const actionMap: any = {
   UPDATE_APPLICATION: updateApplication,
   UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions,
   UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo,
-  UPDATE_CONTINGENT_OFFER: updateContingentOffer
+  UPDATE_CONTINGENT_OFFER: updateContingentOffer,
+  GET_NHE_TIME_SLOTS: onGetNHETimeSlots
 };
 
 export default actionMap;

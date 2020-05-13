@@ -11,7 +11,10 @@ import findIndex from "lodash/findIndex";
 import find from "lodash/find";
 import { IAction } from "../@types/IActionType";
 import updateState from "immutability-helper";
-import { GET_REQUISITION_HEADER_INFO } from "../actions/requisition-actions";
+import {
+  GET_REQUISITION_HEADER_INFO,
+  UPDATE_REQUISITION
+} from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
   SET_APPLICATION_DATA,
@@ -137,6 +140,17 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       });
     }
+
+    case UPDATE_REQUISITION: {
+      return updateState(state, {
+        data: {
+          requisition: {
+            $merge: payload
+          }
+        }
+      });
+    }
+
     case GET_APPLICATION: {
       return updateState(state, {
         data: {

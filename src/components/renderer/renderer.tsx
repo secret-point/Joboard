@@ -38,7 +38,8 @@ interface conditionShowComponentProps {
 
 interface Filter {
   type: string;
-  value: string;
+  value: any;
+  operator: string;
 }
 
 const Renderer: React.FC<IRendererProps> = ({
@@ -129,7 +130,11 @@ const Renderer: React.FC<IRendererProps> = ({
     if (showComponentProperties) {
       const { dataKey, filter } = showComponentProperties;
       const value = getValue(dataKey);
-      return value === filter.value;
+      if (filter.type === "object") {
+        return !isEmpty(value);
+      } else {
+        return value === filter.value;
+      }
     } else {
       // show component if show component properties are empty.
       return true;
@@ -148,6 +153,11 @@ const Renderer: React.FC<IRendererProps> = ({
       {componentList.map((component: any, index: number) => {
         const value =
           component.properties.value || getValue(component.properties.dataKey);
+        const dataObject: any = {};
+        if (component.componentValueProp) {
+          dataObject[component.componentValueProp] =
+            getValue(component.valueKey) || component.defaultValue;
+        }
         if (showComponent(component.showComponentProperties)) {
           return (
             <component.Element
@@ -160,10 +170,11 @@ const Renderer: React.FC<IRendererProps> = ({
               errorMessage={component.properties.errorMessage || errorMessage}
               onButtonClick={onButtonClick}
               defaultValue={value}
+              {...dataObject}
             />
           );
         } else {
-          return <span />;
+          return <span key={`component-${index}`} />;
         }
       })}
     </Col>

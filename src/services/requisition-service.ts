@@ -25,4 +25,12 @@ export default class RequisitionService {
 
     return response.data;
   }
+
+  async getTimeSlots(childRequisitionId: string) {
+    const response = await this.axiosInstance.get(
+      `/get-time-slots/${childRequisitionId}`
+    );
+
+    return response.data;
+  }
 }
