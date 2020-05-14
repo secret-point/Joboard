@@ -23,6 +23,7 @@ import {
   MessageBanner,
   Card
 } from "@amzn/hvh-candidate-application-ui-components/lib";
+import PanelContainer from "../containers/panel/panel-container";
 
 const ComponentMap: any = {
   loader: Loader,
@@ -47,7 +48,8 @@ const ComponentMap: any = {
   Dropdown,
   DatePicker,
   MessageBanner,
-  Card
+  Card,
+  Panel: PanelContainer
 };
 
 export default ComponentMap;

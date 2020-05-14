@@ -1,4 +1,4 @@
-import { onUpdateChange, onRedirect, onSubmit, hideNavbar } from "./actions";
+import { onUpdateChange, onRedirect, onSubmit, onGoToAction } from "./actions";
 import {
   onStartApplication,
   onGetApplication,
@@ -24,7 +24,6 @@ const actionMap: any = {
   SUBMIT_DATA: onSubmit,
   GET_APPLICATION: onGetApplication,
   LAUNCH_FCRA: onLaunchFCRA,
-  HIDE_NAVBAR: hideNavbar,
   CONTINUE_WITH_FCRA_DECLINE: continueWithFCRADecline,
   UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus,
   CREATE_APPLICATION: createApplication,
@@ -32,7 +31,8 @@ const actionMap: any = {
   UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions,
   UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo,
   UPDATE_CONTINGENT_OFFER: updateContingentOffer,
-  GET_NHE_TIME_SLOTS: onGetNHETimeSlots
+  GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
+  ON_GO_TO: onGoToAction
 };
 
 export default actionMap;

@@ -1,14 +1,18 @@
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Panel from "../../components/panel";
+import find from "lodash/find";
 
 const actions = {};
 
 const mapStateToProps = (state: any, ownProps: any) => {
-  const panels = state.app.pageConfig.content?.panels;
+  let panel =
+    find(state.app.pageConfig.content?.panels || [], {
+      id: ownProps.panelId
+    }) || {};
   return {
-    panels,
-    data: state.app.data.output[state.app.currentPage.id]
+    panel
   };
 };
 
-export default connect(mapStateToProps, actions)(Panel);
+export default withRouter(connect(mapStateToProps, actions)(Panel));

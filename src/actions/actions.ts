@@ -50,6 +50,13 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
   }
 };
 
+export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
+  const { requisitionId, applicationId } = payload.urlParams;
+  const { goTo } = payload.options;
+  const path = `/app/${goTo}/${requisitionId}/${applicationId}`;
+  dispatch(push(path));
+};
+
 export const onSubmit = (payload: any) => async (dispatch: Function) => {
   console.log(payload);
 };
@@ -70,13 +77,6 @@ export const onUpdatePageId = (payload: any) => async (dispatch: Function) => {
         page: pageConfig
       }
     });
-  }
-};
-
-export const hideNavbar = () => (dispatch: Function) => {
-  const header = document.querySelector("header");
-  if (header) {
-    header.style.display = "none";
   }
 };
 

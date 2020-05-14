@@ -37,7 +37,12 @@ const App: React.FC<IApp> = ({ showNavbar }) => {
           </PageHeaderButton>
         </PageHeader>
       )}
-      <PageContainer data-testid="layout" paddingTop="0" paddingHorizontal="0">
+      <PageContainer
+        data-testid="layout"
+        paddingTop="0"
+        paddingBottom="0"
+        paddingHorizontal="0"
+      >
         <MainWithSkipLink>
           <Col gridGap="m">
             <Routes />

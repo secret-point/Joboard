@@ -27,7 +27,7 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
     } catch (ex) {
       setLoading(false)(dispatch);
       onUpdateError(
-        ex?.response?.data?.errorMessage || "unable to get application"
+        ex?.response?.data?.errorMessage || "Unable to get requisition"
       )(dispatch);
     }
   }
@@ -64,7 +64,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
     } catch (ex) {
       setLoading(false)(dispatch);
       onUpdateError(
-        ex?.response?.data?.errorMessage || "unable to get application"
+        ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
       )(dispatch);
     }
   }

@@ -3,6 +3,7 @@ import Renderer from "../../components/renderer";
 import { onAction } from "../../actions";
 import { validateRequiredData } from "../../helpers/validate";
 import { withRouter } from "react-router-dom";
+import find from "lodash/find";
 
 const actions = {
   onAction
@@ -10,7 +11,11 @@ const actions = {
 
 const getConfig = (config: any, ownProps: any) => {
   if (ownProps.isContentContainsPanel) {
-    return config[ownProps.type]?.panels[ownProps.panelIndex];
+    let panel =
+      find(config[ownProps.type]?.panels || [], {
+        id: ownProps.panelId
+      }) || {};
+    return panel;
   } else if (ownProps.isContentContainsSteps) {
     return config[ownProps.type]?.steps[ownProps.activeStepIndex];
   } else if (ownProps.isContentContainsModals) {
