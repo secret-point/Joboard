@@ -40,7 +40,7 @@ const Page: React.FC<IConsentPageProps> = ({
             <Col gridGap="m" padding="1.5rem">
               <ContentContainer />
             </Col>
-            {!isEmpty(pageConfig?.footer) && (
+            {!isEmpty(pageConfig?.footer?.components) && (
               <Col backgroundColor="#EEF5F6" gridGap="m" padding="1.5rem">
                 <FooterContainer />
               </Col>
