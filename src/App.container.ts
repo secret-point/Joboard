@@ -5,7 +5,9 @@ const actions = {};
 
 const mapStateToProps = (state: any, ownProps: any) => {
   return {
-    showNavbar: state.app.pageConfig?.showNavbar
+    showNavbar: state.app.pageConfig?.showNavbar,
+    showShiftHoldingMessageBanner:
+      state.app.pageConfig?.showShiftHoldingMessageBanner
   };
 };
 
