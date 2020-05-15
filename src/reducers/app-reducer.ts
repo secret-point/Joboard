@@ -52,8 +52,7 @@ const initialState: any = {
   pageConfig: {},
   pageOrder: [],
   appConfig: {},
-  loading: false,
-  candidateId: "098d6c95-268f-4d68-8cfd-269686ebe01a"
+  loading: false
 };
 
 const AppReducer = (state = initialState, action: IAction) => {
@@ -90,7 +89,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       } = payload;
 
       const id = pageId || state.currentPage.id;
-      let key = keyName;
+      let key = `${id}.${keyName}`;
       if (isContentContainsSteps) {
         key = `${id}.${activeStepIndex}.${keyName}`;
       }

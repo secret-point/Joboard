@@ -37,9 +37,7 @@ const Page: React.FC<IConsentPageProps> = ({
         <div data-testid="page">
           <ModalProvider>
             <HeaderContainer />
-            <Col gridGap="m" padding="1.5rem">
-              <ContentContainer />
-            </Col>
+            <ContentContainer />
             {!isEmpty(pageConfig?.footer?.components) && (
               <Col backgroundColor="#EEF5F6" gridGap="m" padding="1.5rem">
                 <FooterContainer />

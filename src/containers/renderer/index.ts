@@ -16,6 +16,18 @@ const getConfig = (config: any, ownProps: any) => {
         id: ownProps.panelId
       }) || {};
     return panel;
+  } else if (ownProps.isContentContainsImageContainer) {
+    let imageContainer =
+      find(config[ownProps.type]?.imageContainers || [], {
+        id: ownProps.imageContainerId
+      }) || {};
+    return imageContainer;
+  } else if (ownProps.isConfigContainsFlyouts) {
+    let flyOut =
+      find(config[ownProps.type]?.imageContainers || [], {
+        id: ownProps.flyOutId
+      }) || {};
+    return flyOut;
   } else if (ownProps.isContentContainsSteps) {
     return config[ownProps.type]?.steps[ownProps.activeStepIndex];
   } else if (ownProps.isContentContainsModals) {

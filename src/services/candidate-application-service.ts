@@ -78,13 +78,9 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async updateContingentOffer(
-    applicationId: string,
-    payload: UpdateContingentOffer
-  ) {
+  async updateContingentOffer(applicationId: string) {
     const response = await this.axiosInstance.put(
-      `/updateContingentOffer/${applicationId}`,
-      payload
+      `/updateContingentOffer/${applicationId}`
     );
     return response.data;
   }

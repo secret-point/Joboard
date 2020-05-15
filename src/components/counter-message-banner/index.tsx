@@ -5,8 +5,12 @@ import {
 } from "@stencil-react/components/message-banner";
 
 function CounterMessageBanner() {
-  const [minutes, setMinutes] = useState(59);
-  const [hours, setHours] = useState(2);
+  const countDownMinutes: any =
+    window.localStorage.getItem("countDownMinutes") || 59;
+  const countDownHours: any =
+    window.localStorage.getItem("countDownHours") || 2;
+  const [minutes, setMinutes] = useState(parseInt(countDownMinutes));
+  const [hours, setHours] = useState(parseInt(countDownHours));
   let myInterval: any = null;
 
   useEffect(() => {
@@ -14,20 +18,20 @@ function CounterMessageBanner() {
   }, [minutes, hours]);
 
   const tick = () => {
-    myInterval = setInterval(() => {
-      console.log(minutes);
-      console.log(hours);
+    myInterval = setTimeout(() => {
       if (minutes > 0) {
         setMinutes(minutes - 1);
       }
       if (minutes === 0) {
         if (hours === 0) {
-          clearInterval(myInterval);
+          clearTimeout(myInterval);
         } else {
           setHours(hours - 1);
           setMinutes(59);
         }
       }
+      window.localStorage.setItem("countDownMinutes", minutes.toString());
+      window.localStorage.setItem("countDownHours", hours.toString());
     }, 60000);
   };
 

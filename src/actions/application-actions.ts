@@ -153,8 +153,7 @@ export const updateApplication = (payload: IPayload) => async (
     type = stepId;
   }
   const applicationId = data.application.applicationId;
-
-  if (!isEmpty(updateData)) {
+  if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
       const response = await candidateApplicationService.updateApplication({
         type: type,
@@ -207,9 +206,7 @@ export const updateAdditionalBackgroundInfo = (payload: IPayload) => async (
   const updateData = data.output[
     currentPage.id
   ] as UpdateAdditionalBackgroundInfoRequest;
-  const response = await candidateApplicationService.updateAdditionalBackgroundInfo(
-    updateData
-  );
+  await candidateApplicationService.updateAdditionalBackgroundInfo(updateData);
   dispatch({
     type: UPDATE_ADDITIONAL_BG_INFO,
     payload: {
@@ -229,8 +226,7 @@ export const updateContingentOffer = (payload: IPayload) => async (
   updateData.offerAcceptedTime = new Date().toISOString();
   try {
     const response = await candidateApplicationService.updateContingentOffer(
-      applicationId,
-      updateData
+      applicationId
     );
     dispatch({
       type: UPDATE_CONTINGENT_OFFER,
@@ -239,7 +235,7 @@ export const updateContingentOffer = (payload: IPayload) => async (
       }
     });
 
-    const { nextPage, urlParams } = payload;
+    const { urlParams } = payload;
     dispatch(
       push(`/app/bgc/${urlParams?.requisitionId}/${response?.applicationId}`)
     );

@@ -11,6 +11,9 @@
   "dependencies": {
     "@amzn/hvh-candidate-application-ui-components": "1.0.0",
     "@amzn/hvh-common-ui-library": "*",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@stencil-react/components": "*",
     "@stencil-react/theme-default": "*",
     "@testing-library/jest-dom": "^4.2.4",

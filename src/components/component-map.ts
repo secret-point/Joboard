@@ -21,9 +21,14 @@ import {
   Dropdown,
   DatePicker,
   MessageBanner,
-  Card
+  Card,
+  Image
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
+import FlyoutContainer from "../containers/flyout";
+import ImageContainer from "./image";
+import { Col, Row, Spacer, View } from "@stencil-react/components/layout";
+import { Card as StencilCard } from "@stencil-react/components/card";
 
 const ComponentMap: any = {
   loader: Loader,
@@ -49,7 +54,15 @@ const ComponentMap: any = {
   DatePicker,
   MessageBanner,
   Card,
-  Panel: PanelContainer
+  Panel: PanelContainer,
+  Flyout: FlyoutContainer,
+  Image,
+  ImageContainer,
+  Col,
+  Row,
+  Spacer,
+  View,
+  StencilCard
 };
 
 export default ComponentMap;

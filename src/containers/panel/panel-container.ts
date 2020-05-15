@@ -7,7 +7,7 @@ const actions = {};
 
 const mapStateToProps = (state: any, ownProps: any) => {
   let panel =
-    find(state.app.pageConfig.content?.panels || [], {
+    find(state.app.pageConfig[ownProps.placeholder || "content"].panels || [], {
       id: ownProps.panelId
     }) || {};
   return {

@@ -12,6 +12,7 @@ type IComponent = {
 };
 
 export type IRendererProps = {
+  gridGap?: string;
   components?: IComponent[];
   pageId: string;
   outputData: any;
@@ -29,6 +30,8 @@ export type IRendererProps = {
   isContentContainsSteps?: boolean;
   activeStepIndex?: number;
   stepId?: string;
+  Render?: any;
+  renderProps: any;
 };
 
 interface conditionShowComponentProps {
@@ -59,7 +62,10 @@ const Renderer: React.FC<IRendererProps> = ({
   errorMessage,
   isContentContainsSteps,
   activeStepIndex,
-  stepId
+  stepId,
+  renderProps,
+  gridGap = "s",
+  Render = Col
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
@@ -149,7 +155,7 @@ const Renderer: React.FC<IRendererProps> = ({
   };
 
   return (
-    <Col data-testid={`renderer`} gridGap="s">
+    <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
       {componentList.map((component: any, index: number) => {
         const value =
           component.properties.value || getValue(component.properties.dataKey);
@@ -177,7 +183,7 @@ const Renderer: React.FC<IRendererProps> = ({
           return <span key={`component-${index}`} />;
         }
       })}
-    </Col>
+    </Render>
   );
 };
 

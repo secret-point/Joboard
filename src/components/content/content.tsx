@@ -22,7 +22,7 @@ const Content: React.FC<IContentProps> = ({
   isContentContainsModals
 }) => {
   return (
-    <div>
+    <Col gridGap="m" padding="1.5rem">
       <Col gridGap={5}>
         {hasResponseError && (
           <Col gridGap={10}>
@@ -38,7 +38,7 @@ const Content: React.FC<IContentProps> = ({
         )}
         {isContentContainsModals && <ModalContainer />}
       </Col>
-    </div>
+    </Col>
   );
 };
 

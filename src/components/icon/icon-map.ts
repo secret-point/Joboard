@@ -82,6 +82,9 @@ import {
   IconTickSmall
 } from "@stencil-react/components/icons";
 
+import withFontAwesomeIcon from "./font-awesome-icons";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
+
 const icons: any = {
   IconAnchorLink,
   IconArrowLeft,
@@ -163,7 +166,8 @@ const icons: any = {
   IconPlusSmall,
   IconQuestionCircleSmall,
   IconSearchSmall,
-  IconTickSmall
+  IconTickSmall,
+  IconFilter: withFontAwesomeIcon(faFilter)
 };
 
 export default icons;
