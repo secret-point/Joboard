@@ -9,9 +9,6 @@ export interface UpdateApplicationRequest {
   payload: any;
   type: string;
 }
-<<<<<<< HEAD
-=======
-
 export interface UpdateContingentOffer {
   offerAcceptedTime: string;
   offerAccepted: boolean;
@@ -35,4 +32,3 @@ export interface SelfIdentificationInfo {
   otherReligion: string;
   sexualOrientation: string;
 }
->>>>>>> add self ID API Integration
