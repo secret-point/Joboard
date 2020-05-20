@@ -69,4 +69,5 @@ export default interface Payload {
   value: any;
   pageId: string;
   stepId: string;
+  selectedShift: any;
 }

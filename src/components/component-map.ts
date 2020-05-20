@@ -21,8 +21,9 @@ import {
   Dropdown,
   DatePicker,
   MessageBanner,
-  Card,
-  Image
+  Image,
+  ShiftCard,
+  ShiftCardsList
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import FlyoutContainer from "../containers/flyout";
@@ -53,7 +54,6 @@ const ComponentMap: any = {
   Dropdown,
   DatePicker,
   MessageBanner,
-  Card,
   Panel: PanelContainer,
   Flyout: FlyoutContainer,
   Image,
@@ -62,7 +62,9 @@ const ComponentMap: any = {
   Row,
   Spacer,
   View,
-  StencilCard
+  StencilCard,
+  ShiftCard,
+  ShiftCardsList
 };
 
 export default ComponentMap;

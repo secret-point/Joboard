@@ -5,11 +5,7 @@ import IPayload from "../@types/IPayload";
 import { push } from "react-router-redux";
 import isEmpty from "lodash/isEmpty";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
-import {
-  UpdateNonFcraRequest,
-  UpdateAdditionalBackgroundInfoRequest,
-  UpdateContingentOffer
-} from "../@types/candidate-application-service-requests";
+import updateObject from "immutability-helper";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -180,66 +176,19 @@ export const updateApplication = (payload: IPayload) => async (
   }
 };
 
-export const updateNonFcraQuestions = (payload: IPayload) => async (
-  dispatch: Function
-) => {
-  const applicationId = payload.urlParams?.applicationId;
-  const candidateApplicationService = new CandidateApplicationService();
-  const { data, currentPage } = payload;
-  const updateData = data.output[currentPage.id] as UpdateNonFcraRequest;
-  const response = await candidateApplicationService.updateNonFcraQuestions(
-    applicationId,
-    updateData
-  );
-  dispatch({
-    type: UPDATE_NON_FCRA_QUESTIONS,
-    payload: {
-      application: response
+export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
+  const { application } = payload.data;
+  const updatedApplication = updateObject(application, {
+    shift: {
+      $set: payload.selectedShift
     }
   });
-};
-export const updateAdditionalBackgroundInfo = (payload: IPayload) => async (
-  dispatch: Function
-) => {
-  const candidateApplicationService = new CandidateApplicationService();
-  const { data, currentPage } = payload;
-  const updateData = data.output[
-    currentPage.id
-  ] as UpdateAdditionalBackgroundInfoRequest;
-  await candidateApplicationService.updateAdditionalBackgroundInfo(updateData);
   dispatch({
-    type: UPDATE_ADDITIONAL_BG_INFO,
+    type: UPDATE_APPLICATION,
     payload: {
-      //application: response
+      application: updatedApplication
     }
   });
-};
-
-export const updateContingentOffer = (payload: IPayload) => async (
-  dispatch: Function
-) => {
-  const applicationId = payload.urlParams?.applicationId;
-  const candidateApplicationService = new CandidateApplicationService();
-  const { data, currentPage } = payload;
-  const updateData = data.output[currentPage.id] as UpdateContingentOffer;
-  updateData.offerAccepted = true;
-  updateData.offerAcceptedTime = new Date().toISOString();
-  try {
-    const response = await candidateApplicationService.updateContingentOffer(
-      applicationId
-    );
-    dispatch({
-      type: UPDATE_CONTINGENT_OFFER,
-      payload: {
-        application: response
-      }
-    });
-
-    const { urlParams } = payload;
-    dispatch(
-      push(`/app/bgc/${urlParams?.requisitionId}/${response?.applicationId}`)
-    );
-  } catch (error) {
-    onUpdateError(error.response.data)(dispatch);
-  }
+  //got next screen
+  //goTo(options?.goTo, urlParams)(dispatch);
 };

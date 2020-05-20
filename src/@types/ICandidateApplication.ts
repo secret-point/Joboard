@@ -31,4 +31,5 @@ export default interface ICandidateApplication {
   lastModificationDate?: any;
   submitted: boolean;
   active: boolean;
+  shift: any;
 }

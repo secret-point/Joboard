@@ -33,4 +33,12 @@ export default class RequisitionService {
 
     return response.data;
   }
+
+  async getAllAvailableShifts(requisitionId: string) {
+    const response = await this.axiosInstance.get(
+      `/get-all-available-shifts/${requisitionId}`
+    );
+
+    return response.data;
+  }
 }

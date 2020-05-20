@@ -69,3 +69,29 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
     }
   }
 };
+
+export const onGetAllAvailableShifts = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  const requisitionId = payload.urlParams?.requisitionId;
+  if (requisitionId) {
+    try {
+      const response = await requisitionService.getAllAvailableShifts(
+        requisitionId
+      );
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          ...response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get available shifts"
+      )(dispatch);
+    }
+  }
+};

@@ -7,13 +7,12 @@ import {
   updatePreHireStepsStatus,
   createApplication,
   updateApplication,
-  updateNonFcraQuestions,
-  updateAdditionalBackgroundInfo,
-  updateContingentOffer
+  onSelectedShifts
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
-  onGetNHETimeSlots
+  onGetNHETimeSlots,
+  onGetAllAvailableShifts
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -28,11 +27,10 @@ const actionMap: any = {
   UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus,
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
-  UPDATE_NON_FCRA_QUESTIONS: updateNonFcraQuestions,
-  UPDATE_ADDITIONAL_BG_INFO: updateAdditionalBackgroundInfo,
-  UPDATE_CONTINGENT_OFFER: updateContingentOffer,
   GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
-  ON_GO_TO: onGoToAction
+  GET_ALL_AVAILABLE_SHIFTS: onGetAllAvailableShifts,
+  ON_GO_TO: onGoToAction,
+  ON_SHIFT_SELECTION: onSelectedShifts
 };
 
 export default actionMap;

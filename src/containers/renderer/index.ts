@@ -11,11 +11,7 @@ const actions = {
 
 const getConfig = (config: any, ownProps: any) => {
   if (ownProps.isContentContainsPanel) {
-    let panel =
-      find(config[ownProps.type]?.panels || [], {
-        id: ownProps.panelId
-      }) || {};
-    return panel;
+    return ownProps.panelConfig;
   } else if (ownProps.isContentContainsImageContainer) {
     let imageContainer =
       find(config[ownProps.type]?.imageContainers || [], {
