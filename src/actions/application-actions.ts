@@ -58,10 +58,11 @@ export const onGetApplication = (payload: IPayload) => async (
   }
 };
 
-export const onGetCandidate = (payload: IPayload) => async (
-  dispatch: Function
-) => {
-  if (isEmpty(payload.data.candidate)) {
+export const onGetCandidate = (
+  payload: IPayload,
+  ignoreCandidateData?: boolean
+) => async (dispatch: Function) => {
+  if (isEmpty(payload.data.candidate) || ignoreCandidateData) {
     const response = await candidateApplicationService.getCandidate();
     dispatch({
       type: ON_GET_CANDIDATE,
@@ -162,6 +163,9 @@ export const updateApplication = (payload: IPayload) => async (
           application: response
         }
       });
+      if (options?.updateCandidate) {
+        onGetCandidate(payload, true)(dispatch);
+      }
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);

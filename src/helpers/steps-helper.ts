@@ -1,11 +1,13 @@
 import { IN_PROGRESS, PENDING, COMPLETED } from "../constants";
 import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
+import isNull from "lodash/isNull";
 
 export const getStatusForSteps = (data: any, steps: any[]) => {
   const statuses: string[] = [];
   for (var step of steps) {
-    const isComplete = !isEmpty(propertyOf(data)(step.completedDataKey));
+    const value = propertyOf(data)(step.completedDataKey);
+    const isComplete = !isEmpty(value) && !isNull(value);
     if (isComplete) {
       statuses.push(COMPLETED);
     } else {
