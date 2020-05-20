@@ -41,6 +41,11 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
         return (
           <Card key={index}>
             <Col width="100%" gridGap="s">
+              <Col>
+                <Text fontSize="14px" color="#5C7274">
+                  Step {index + 1} of {steps.length}
+                </Text>
+              </Col>
               <Row
                 alignItems="center"
                 gridGap="m"

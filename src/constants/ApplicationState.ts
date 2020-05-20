@@ -34,5 +34,15 @@ export enum ApplicationState {
   /**
    * Application reviewed and submitted by candidate
    */
-  APPLICATION_SUBMITTED = "APPLICATION_SUBMITTED"
+  APPLICATION_SUBMITTED = "APPLICATION_SUBMITTED",
+  /**
+   * Candidate completed WOTC form
+   */
+  WOTC_COMPLETED = "WOTC_COMPLETED",
+  /**
+   * SelfID steps
+   */
+  EQUAL_OPPORTUNITY_FORM_SAVED = "EQUAL_OPPORTUNITY_FORM_SAVED",
+  VETERAN_STATUS_SAVED = "VETERAN_STATUS_SAVED",
+  SELF_IDENTIFICATION_COMPLETED = "SELF_IDENTIFICATION_COMPLETED"
 }

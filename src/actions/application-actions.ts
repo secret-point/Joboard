@@ -144,7 +144,7 @@ export const updateApplication = (payload: IPayload) => async (
   } = payload;
   let updateData = data.output[currentPage.id];
   let type = currentPage.id;
-  if (isContentContainsSteps && activeStepIndex) {
+  if (isContentContainsSteps && activeStepIndex !== undefined) {
     updateData = data.output[currentPage.id][activeStepIndex];
     type = stepId;
   }

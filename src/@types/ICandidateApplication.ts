@@ -4,32 +4,34 @@ export interface ContingentOffer {
 }
 
 export default interface ICandidateApplication {
+  active: boolean;
+  submitted: boolean;
   applicationId: string;
-  sfApplicationId?: any;
+  sfApplicationId: string;
   language: string;
   candidateId: string;
-  sfCandidateId?: any;
-  candidateName?: any;
+  sfCandidateId: string;
+  candidateName: string;
   parentRequisitionId: string;
   currentState: string;
-  assessmentUrl?: any;
-  assessmentScore: number;
+  assessment: any;
+  jobSelected: any;
   contingentOffer: ContingentOffer;
-  fcraQuestions?: any;
-  nonFcraQuestions?: any;
-  applicationSignature?: any;
-  firstAvailableStartDate?: any;
+  fcraQuestions: any;
+  nonFcraQuestions: any;
+  nheAppointment: any;
+  applicationSignature: any;
+  firstAvailableStartDate: number;
   appointmentCompleted: boolean;
-  rehireEligibilityAudit?: any;
-  step?: any;
-  subStep?: any;
+  wotcScreening: any;
+  rehireEligibilityAudit: string;
+  step: string;
+  subStep: string;
   bgcDisclosureFCRA: string;
-  metadata?: any;
+  metadata: any;
   createdBy: string;
   lastModifiedBy?: any;
   creationDate: string;
   lastModificationDate?: any;
-  submitted: boolean;
-  active: boolean;
   shift: any;
 }
