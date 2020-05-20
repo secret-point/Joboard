@@ -12,7 +12,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
   const steps = contentConfig.steps || [];
   return {
     steps,
-    candidateApplication: state.app.data?.application
+    data: state.app.data
   };
 };
 

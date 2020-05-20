@@ -15,22 +15,19 @@ import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";
 
 interface IStepContentRenderer {
   steps: any[];
-  candidateApplication: ICandidateApplication;
+  data: any;
 }
 
 const StepContentRenderer: React.FC<IStepContentRenderer> = ({
   steps,
-  candidateApplication
+  data
 }) => {
   const [statuses, setStatuses] = useState<string[]>([]);
 
   useEffect(() => {
-    const _statuses = getStatusForSteps(
-      candidateApplication.currentState,
-      steps
-    );
+    const _statuses = getStatusForSteps(data, steps);
     setStatuses(_statuses);
-  }, [candidateApplication, steps]);
+  }, [data, steps]);
 
   const onEdit = (index: number) => {
     const _statuses = [...statuses];
