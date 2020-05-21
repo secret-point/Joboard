@@ -1,4 +1,10 @@
-import { onUpdateChange, onRedirect, onSubmit, onGoToAction } from "./actions";
+import {
+  onUpdateChange,
+  onRedirect,
+  onSubmit,
+  onGoToAction,
+  onGoToDescription
+} from "./actions";
 import {
   onStartApplication,
   onGetApplication,
@@ -12,7 +18,8 @@ import {
 import {
   onGetRequisitionHeaderInfo,
   onGetNHETimeSlots,
-  onGetAllAvailableShifts
+  onGetAllAvailableShifts,
+  onGetChildRequisitions
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -28,8 +35,10 @@ const actionMap: any = {
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
   GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
+  GET_CHILD_REQUISITIONS: onGetChildRequisitions,
   GET_ALL_AVAILABLE_SHIFTS: onGetAllAvailableShifts,
   ON_GO_TO: onGoToAction,
+  GO_TO_JOB_DESCRIPTION: onGoToDescription,
   ON_SHIFT_SELECTION: onSelectedShifts
 };
 

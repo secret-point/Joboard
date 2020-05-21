@@ -39,6 +39,7 @@ export interface UrlParam {
   page: string;
   requisitionId: string;
   applicationId: string;
+  childRequisitionId: string;
 }
 
 export interface AppConfig {
@@ -70,4 +71,5 @@ export default interface Payload {
   pageId: string;
   stepId: string;
   selectedShift: any;
+  selectedRequisitionId: string;
 }

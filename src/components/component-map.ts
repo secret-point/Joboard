@@ -23,7 +23,9 @@ import {
   MessageBanner,
   Image,
   ShiftCard,
-  ShiftCardsList
+  ShiftCardsList,
+  JobRoleCard,
+  JobRoleCardsList
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import FlyoutContainer from "../containers/flyout";
@@ -64,7 +66,9 @@ const ComponentMap: any = {
   View,
   StencilCard,
   ShiftCard,
-  ShiftCardsList
+  ShiftCardsList,
+  JobRoleCard,
+  JobRoleCardsList
 };
 
 export default ComponentMap;

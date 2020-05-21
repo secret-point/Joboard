@@ -13,7 +13,7 @@ const Routes: React.FC = () => {
       <Switch>
         <Route
           exact
-          path="/app/:page/:requisitionId/:applicationId?"
+          path="/app/:page/:requisitionId/:applicationId?/:childRequisition?"
           component={ApplicationPage}
         />
         <Route

@@ -33,12 +33,38 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   }
 };
 
+export const onGetChildRequisitions = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  const requisitionId = payload.urlParams?.requisitionId;
+  if (requisitionId) {
+    try {
+      const response = await requisitionService.getChildRequisitions(
+        requisitionId
+      );
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          childRequisitions: response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get requisition"
+      )(dispatch);
+    }
+  }
+};
+
 export const onGetNHETimeSlots = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
-  if (requisitionId && isEmpty(payload.data.requisition)) {
+  if (requisitionId) {
     try {
       const response = await requisitionService.getTimeSlots(
         "childRequisition1"
