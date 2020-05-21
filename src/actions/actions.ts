@@ -7,6 +7,8 @@ export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const ON_REDIRECT = "ON_REDIRECT";
 export const ON_UPDATE_PAGE_ID = "ON_UPDATE_PAGE_ID";
 export const ON_SET_LOADING = "ON_SET_LOADING";
+export const RESET_IS_UPDATE_ACTION_EXECUTED =
+  "RESET_IS_UPDATE_ACTION_EXECUTED";
 
 type IOnChangeProps = {
   keyName: string;
@@ -107,5 +109,11 @@ export const setLoading = (value: boolean) => (dispatch: Function) => {
   dispatch({
     type: ON_SET_LOADING,
     payload: value
+  });
+};
+
+export const onResetIsUpdateActionExecuted = () => (dispatch: Function) => {
+  dispatch({
+    type: RESET_IS_UPDATE_ACTION_EXECUTED
   });
 };

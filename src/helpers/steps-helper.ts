@@ -3,17 +3,28 @@ import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
 import isNull from "lodash/isNull";
 
-export const getStatusForSteps = (data: any, steps: any[]) => {
+export const getStatusForSteps = (
+  data: any,
+  steps: any[],
+  editStatusIndex: number,
+  isUpdateActionExecuted: boolean
+) => {
   const statuses: string[] = [];
-  for (var step of steps) {
+  if (isUpdateActionExecuted) {
+    editStatusIndex = -1;
+  }
+  steps.forEach((step, index) => {
+    console.log(editStatusIndex);
     const value = propertyOf(data)(step.completedDataKey);
     const isComplete = !isEmpty(value) && !isNull(value);
-    if (isComplete) {
+    if (editStatusIndex === index) {
+      statuses.push(IN_PROGRESS);
+    } else if (isComplete) {
       statuses.push(COMPLETED);
     } else {
       statuses.push(PENDING);
     }
-  }
+  });
 
   for (let i = 0; i < statuses.length; i++) {
     if (statuses[i] === PENDING) {

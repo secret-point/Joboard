@@ -3,7 +3,8 @@ import {
   onRedirect,
   onSubmit,
   onGoToAction,
-  onGoToDescription
+  onGoToDescription,
+  onResetIsUpdateActionExecuted
 } from "./actions";
 import {
   onStartApplication,
@@ -39,7 +40,8 @@ const actionMap: any = {
   GET_ALL_AVAILABLE_SHIFTS: onGetAllAvailableShifts,
   ON_GO_TO: onGoToAction,
   GO_TO_JOB_DESCRIPTION: onGoToDescription,
-  ON_SHIFT_SELECTION: onSelectedShifts
+  ON_SHIFT_SELECTION: onSelectedShifts,
+  RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted
 };
 
 export default actionMap;

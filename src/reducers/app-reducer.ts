@@ -2,7 +2,8 @@ import { LOAD_INIT_DATA } from "../actions";
 import {
   UPDATE_VALUE_CHANGE,
   ON_UPDATE_PAGE_ID,
-  ON_SET_LOADING
+  ON_SET_LOADING,
+  RESET_IS_UPDATE_ACTION_EXECUTED
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -52,7 +53,8 @@ const initialState: any = {
   pageConfig: {},
   pageOrder: [],
   appConfig: {},
-  loading: false
+  loading: false,
+  isUpdateActionExecuted: false
 };
 
 const AppReducer = (state = initialState, action: IAction) => {
@@ -114,6 +116,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
       newState.nextPage = state.pageOrder[nextPageIndex + 1];
       newState.pageConfig = payload.page.pageConfig;
+      newState.isUpdateActionExecuted = false;
       return newState;
     }
     case ON_RESPONSE_ERROR: {
@@ -172,6 +175,9 @@ const AppReducer = (state = initialState, action: IAction) => {
           application: {
             $set: payload.application
           }
+        },
+        isUpdateActionExecuted: {
+          $set: true
         }
       });
     }
@@ -209,6 +215,14 @@ const AppReducer = (state = initialState, action: IAction) => {
           application: {
             $set: payload.application
           }
+        }
+      });
+    }
+
+    case RESET_IS_UPDATE_ACTION_EXECUTED: {
+      return updateState(state, {
+        isUpdateActionExecuted: {
+          $set: false
         }
       });
     }

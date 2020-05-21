@@ -46,6 +46,7 @@ const FlyOut: React.FC<IFlyOut> = ({ flyOut, onButtonClick }) => {
             isConfigContainsFlyouts={true}
             flyOutId={flyOut.id}
             type={flyOut.placeholder || "content"}
+            flyOutConfig={flyOut}
           />
         </FlyoutContent>
         <FlyoutButtonBar justifyContent="flex-end">

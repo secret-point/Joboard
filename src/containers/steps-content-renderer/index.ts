@@ -12,7 +12,8 @@ const mapStateToProps = (state: any, ownProps: any) => {
   const steps = contentConfig.steps || [];
   return {
     steps,
-    data: state.app.data
+    data: state.app.data,
+    isUpdateActionExecuted: state.app.isUpdateActionExecuted
   };
 };
 

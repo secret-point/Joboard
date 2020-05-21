@@ -8,30 +8,50 @@ import {
   IconCheckCircle,
   IconPencil
 } from "@stencil-react/components/icons";
-import ICandidateApplication from "../../@types/ICandidateApplication";
 import RendererContainer from "../../containers/renderer";
 import { getStatusForSteps } from "./../../helpers/steps-helper";
 import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";
+import { RESET_IS_UPDATE_ACTION_EXECUTED } from "../../actions/actions";
 
 interface IStepContentRenderer {
   steps: any[];
   data: any;
+  isUpdateActionExecuted: boolean;
+  onAction: any;
 }
 
 const StepContentRenderer: React.FC<IStepContentRenderer> = ({
   steps,
-  data
+  data,
+  isUpdateActionExecuted,
+  onAction
 }) => {
   const [statuses, setStatuses] = useState<string[]>([]);
+  const [editStatusIndex, SetEditStatusIndex] = useState<number>(-1);
 
   useEffect(() => {
-    const _statuses = getStatusForSteps(data, steps);
+    const _statuses = getStatusForSteps(
+      data,
+      steps,
+      editStatusIndex,
+      isUpdateActionExecuted
+    );
     setStatuses(_statuses);
-  }, [data, steps]);
+  }, [data, steps, editStatusIndex, isUpdateActionExecuted]);
 
   const onEdit = (index: number) => {
+    onAction(RESET_IS_UPDATE_ACTION_EXECUTED, {
+      data
+    });
     const _statuses = [...statuses];
     _statuses[index] = IN_PROGRESS;
+    let _editStatusIndex = editStatusIndex;
+    if (index > -1) {
+      _editStatusIndex = index;
+    } else {
+      _editStatusIndex = -1;
+    }
+    SetEditStatusIndex(_editStatusIndex);
     setStatuses(_statuses);
   };
 

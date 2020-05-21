@@ -19,11 +19,7 @@ const getConfig = (config: any, ownProps: any) => {
       }) || {};
     return imageContainer;
   } else if (ownProps.isConfigContainsFlyouts) {
-    let flyOut =
-      find(config[ownProps.type]?.imageContainers || [], {
-        id: ownProps.flyOutId
-      }) || {};
-    return flyOut;
+    return ownProps.flyOutConfig;
   } else if (ownProps.isContentContainsSteps) {
     return config[ownProps.type]?.steps[ownProps.activeStepIndex];
   } else if (ownProps.isContentContainsModals) {
