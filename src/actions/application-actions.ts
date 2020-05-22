@@ -193,6 +193,7 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
       application: updatedApplication
     }
   });
-  //got next screen
-  //goTo(options?.goTo, urlParams)(dispatch);
+  if (payload.options?.goTo) {
+    goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+  }
 };

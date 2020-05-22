@@ -3,7 +3,6 @@ import {
   onRedirect,
   onSubmit,
   onGoToAction,
-  onGoToDescription,
   onResetIsUpdateActionExecuted
 } from "./actions";
 import {
@@ -20,7 +19,9 @@ import {
   onGetRequisitionHeaderInfo,
   onGetNHETimeSlots,
   onGetAllAvailableShifts,
-  onGetChildRequisitions
+  onGetChildRequisitions,
+  onGetJobDescription,
+  onGoToDescription
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -41,7 +42,8 @@ const actionMap: any = {
   ON_GO_TO: onGoToAction,
   GO_TO_JOB_DESCRIPTION: onGoToDescription,
   ON_SHIFT_SELECTION: onSelectedShifts,
-  RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted
+  RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted,
+  GET_JOB_DESCRIPTION: onGetJobDescription
 };
 
 export default actionMap;

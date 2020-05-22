@@ -59,15 +59,6 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   dispatch(push(path));
 };
 
-export const onGoToDescription = (payload: IPayload) => (
-  dispatch: Function
-) => {
-  const { requisitionId, applicationId } = payload.urlParams;
-  const { goTo } = payload.options;
-  const path = `/app/${goTo}/${requisitionId}/${applicationId}/${payload.selectedRequisitionId}`;
-  dispatch(push(path));
-};
-
 export const onSubmit = (payload: any) => async (dispatch: Function) => {
   console.log(payload);
 };

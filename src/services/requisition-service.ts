@@ -34,6 +34,20 @@ export default class RequisitionService {
     return response.data;
   }
 
+  async getRequisition(requisitionId: string) {
+    const response = await this.axiosInstance.get(`/${requisitionId}`);
+
+    return response.data;
+  }
+
+  async getJobDescription(childRequisitionId: string) {
+    const response = await this.axiosInstance.get(
+      `/job-description/${childRequisitionId}`
+    );
+
+    return response.data;
+  }
+
   async getTimeSlots(childRequisitionId: string) {
     const response = await this.axiosInstance.get(
       `/get-time-slots/${childRequisitionId}`

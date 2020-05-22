@@ -3,6 +3,8 @@ import isEmpty from "lodash/isEmpty";
 import IPayload from "../@types/IPayload";
 import { setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
+import { push } from "react-router-redux";
+import find from "lodash/find";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -57,6 +59,93 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
       )(dispatch);
     }
   }
+};
+
+export const onGetRequisition = (
+  payload: IPayload,
+  childRequisitionId?: string
+) => async (dispatch: Function) => {
+  setLoading(true)(dispatch);
+  const id = childRequisitionId || payload.urlParams?.requisitionId;
+  if (id) {
+    try {
+      const response = await requisitionService.getRequisition(id);
+      let requisition = response;
+      if (childRequisitionId) {
+        requisition = {
+          selectedChildRequisition: response
+        };
+      }
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          ...requisition
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get requisition"
+      )(dispatch);
+    }
+  }
+};
+
+export const onGetJobDescription = (
+  payload: IPayload,
+  requisitionId?: string
+) => async (dispatch: Function) => {
+  setLoading(true)(dispatch);
+  const childRequisitionId = requisitionId
+    ? requisitionId
+    : payload.urlParams?.misc;
+  if (childRequisitionId) {
+    try {
+      if (!payload.data.requisition.selectedChildRequisition) {
+        onGetRequisition(payload, childRequisitionId)(dispatch);
+      }
+      const response = await requisitionService.getJobDescription(
+        childRequisitionId
+      );
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          jobDescription: response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get requisition"
+      )(dispatch);
+    }
+  }
+};
+
+export const onGoToDescription = (payload: IPayload) => (
+  dispatch: Function
+) => {
+  const { requisitionId, applicationId } = payload.urlParams;
+  const { goTo } = payload.options;
+  const path = `/app/${goTo}/${requisitionId}/${applicationId}/${payload.selectedRequisitionId}`;
+
+  const { requisition } = payload.data;
+
+  if (requisition.childRequisitions) {
+    const childRequisition = find(requisition.childRequisitions, {
+      requisitionId: payload.selectedRequisitionId
+    });
+    onGetJobDescription(payload, payload.selectedRequisitionId)(dispatch);
+    dispatch({
+      type: UPDATE_REQUISITION,
+      payload: {
+        selectedChildRequisition: childRequisition
+      }
+    });
+  }
+  dispatch(push(path));
 };
 
 export const onGetNHETimeSlots = (payload: IPayload) => async (

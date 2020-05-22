@@ -15,6 +15,9 @@ export interface ConsentInfo {
 
 export interface Requisition {
   consentInfo: ConsentInfo;
+  childRequisitions: any[];
+  selectedChildRequisition: any;
+  jobDescription: any;
 }
 
 export interface ContingentOffer {
@@ -39,7 +42,7 @@ export interface UrlParam {
   page: string;
   requisitionId: string;
   applicationId: string;
-  childRequisitionId: string;
+  misc: string;
 }
 
 export interface AppConfig {
