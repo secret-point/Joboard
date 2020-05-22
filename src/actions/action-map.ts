@@ -13,7 +13,8 @@ import {
   updatePreHireStepsStatus,
   createApplication,
   updateApplication,
-  onSelectedShifts
+  onSelectedShifts,
+  onUpdateShiftSelection
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -43,7 +44,8 @@ const actionMap: any = {
   GO_TO_JOB_DESCRIPTION: onGoToDescription,
   ON_SHIFT_SELECTION: onSelectedShifts,
   RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted,
-  GET_JOB_DESCRIPTION: onGetJobDescription
+  GET_JOB_DESCRIPTION: onGetJobDescription,
+  UPDATE_SHIFT_SELECTION: onUpdateShiftSelection
 };
 
 export default actionMap;

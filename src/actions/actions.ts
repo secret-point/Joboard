@@ -44,8 +44,11 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
   dispatch: Function
 ) => {
   if (urlParams) {
-    const { requisitionId, applicationId } = urlParams;
+    const { requisitionId, applicationId, misc } = urlParams;
     path = `/app/${path}/${requisitionId}/${applicationId}`;
+    if (misc) {
+      path = `${path}/${misc}`;
+    }
     dispatch(push(path));
   } else {
     dispatch(push(path));

@@ -6,6 +6,7 @@ import { push } from "react-router-redux";
 import isEmpty from "lodash/isEmpty";
 import { onGetRequisitionHeaderInfo } from "./requisition-actions";
 import updateObject from "immutability-helper";
+import RequisitionService from "../services/requisition-service";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -34,12 +35,21 @@ export const onGetApplication = (payload: IPayload) => async (
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
+    const hcrId = payload.urlParams?.misc;
     onGetRequisitionHeaderInfo(payload)(dispatch);
     onGetCandidate(payload)(dispatch);
     if (applicationId && isEmpty(payload.data.application)) {
       const applicationResponse = await candidateApplicationService.getApplication(
         applicationId
       );
+
+      if (!applicationResponse.shift && hcrId) {
+        const requisitionService = new RequisitionService();
+        const headCountResponse = await requisitionService.getHeadCountRequest(
+          hcrId
+        );
+        applicationResponse.shift = headCountResponse;
+      }
 
       dispatch({
         type: GET_APPLICATION,
@@ -194,6 +204,43 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
     }
   });
   if (payload.options?.goTo) {
+    payload.urlParams.misc = payload.selectedShift.headCountRequestId;
     goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+  }
+};
+
+export const onUpdateShiftSelection = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  try {
+    const { application } = payload.data;
+    const { urlParams } = payload;
+    const response = await candidateApplicationService.updateApplication({
+      type: "job-confirm",
+      applicationId: urlParams.applicationId,
+      payload: {
+        headCountRequestId: application.shift.headCountRequestId,
+        childRequisitionId: application.shift.requisitionId
+      }
+    });
+    response.shift = application.shift;
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+    if (payload.options?.goTo) {
+      delete payload.urlParams?.misc;
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    console.log(ex);
+    onUpdateError(
+      ex?.response?.data?.errorMessage || "Unable to update application"
+    )(dispatch);
   }
 };

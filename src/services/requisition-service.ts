@@ -63,4 +63,12 @@ export default class RequisitionService {
 
     return response.data;
   }
+
+  async getHeadCountRequest(hcrId: string) {
+    const response = await this.axiosInstance.get(
+      `/get-head-count-request/${hcrId}`
+    );
+
+    return response.data;
+  }
 }

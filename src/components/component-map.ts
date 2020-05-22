@@ -24,9 +24,11 @@ import {
   Image,
   ShiftCard,
   ShiftCardsList,
+  ShiftDetails,
   JobRoleCard,
   JobRoleCardsList,
-  Html
+  Html,
+  Popover
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import FlyoutContainer from "../containers/flyout";
@@ -68,9 +70,11 @@ const ComponentMap: any = {
   StencilCard,
   ShiftCard,
   ShiftCardsList,
+  ShiftDetails,
   JobRoleCard,
   JobRoleCardsList,
-  Html
+  Html,
+  Popover
 };
 
 export default ComponentMap;
