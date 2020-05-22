@@ -31,6 +31,7 @@ import {
   Popover
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
+import StepsContainer from "../containers/steps-content-renderer/index";
 import FlyoutContainer from "../containers/flyout";
 import ImageContainer from "./image";
 import { Col, Row, Spacer, View } from "@stencil-react/components/layout";
@@ -74,7 +75,8 @@ const ComponentMap: any = {
   JobRoleCard,
   JobRoleCardsList,
   Html,
-  Popover
+  Popover,
+  StepsContainer
 };
 
 export default ComponentMap;

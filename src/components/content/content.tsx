@@ -31,11 +31,7 @@ const Content: React.FC<IContentProps> = ({
             </MessageBanner>
           </Col>
         )}
-        {isContentContainsSteps ? (
-          <StepsContentRendererContainer />
-        ) : (
-          <RendererContainer type="content" />
-        )}
+        <RendererContainer type="content" />
         {isContentContainsModals && <ModalContainer />}
       </Col>
     </Col>
