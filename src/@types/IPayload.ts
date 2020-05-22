@@ -1,4 +1,5 @@
 import ICandidateApplication from "./ICandidateApplication";
+import { History } from "history";
 export interface Consent {}
 
 export interface Bgc {}
@@ -75,4 +76,5 @@ export default interface Payload {
   stepId: string;
   selectedShift: any;
   selectedRequisitionId: string;
+  history: History;
 }

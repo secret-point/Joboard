@@ -4,7 +4,10 @@ import CandidateApplicationService from "../services/candidate-application-servi
 import IPayload from "../@types/IPayload";
 import { push } from "react-router-redux";
 import isEmpty from "lodash/isEmpty";
-import { onGetRequisitionHeaderInfo } from "./requisition-actions";
+import {
+  onGetRequisitionHeaderInfo,
+  onGetRequisition
+} from "./requisition-actions";
 import updateObject from "immutability-helper";
 import RequisitionService from "../services/requisition-service";
 
@@ -48,6 +51,9 @@ export const onGetApplication = (payload: IPayload) => async (
         const headCountResponse = await requisitionService.getHeadCountRequest(
           hcrId
         );
+        if (!payload.data.requisition.selectedChildRequisition) {
+          onGetRequisition(payload, headCountResponse.requisitionId)(dispatch);
+        }
         applicationResponse.shift = headCountResponse;
       }
 
@@ -197,6 +203,8 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
       $set: payload.selectedShift
     }
   });
+
+  onGetRequisition(payload, payload.selectedShift.requisitionId)(dispatch);
   dispatch({
     type: UPDATE_APPLICATION,
     payload: {

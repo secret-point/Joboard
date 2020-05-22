@@ -62,6 +62,10 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   dispatch(push(path));
 };
 
+export const onGoBack = (payload: IPayload) => (dispatch: Function) => {
+  payload.history.goBack();
+};
+
 export const onSubmit = (payload: any) => async (dispatch: Function) => {
   console.log(payload);
 };

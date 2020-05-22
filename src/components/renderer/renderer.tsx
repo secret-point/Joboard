@@ -4,6 +4,7 @@ import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
 import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
+import { History } from "history";
 
 type IComponent = {
   component: string;
@@ -32,6 +33,7 @@ export type IRendererProps = {
   stepId?: string;
   Render?: any;
   renderProps: any;
+  history: History;
 };
 
 interface conditionShowComponentProps {
@@ -64,6 +66,7 @@ const Renderer: React.FC<IRendererProps> = ({
   activeStepIndex,
   stepId,
   renderProps,
+  history,
   gridGap = "s",
   Render = Col
 }) => {
@@ -105,7 +108,8 @@ const Renderer: React.FC<IRendererProps> = ({
     candidateId,
     isContentContainsSteps,
     activeStepIndex,
-    stepId
+    stepId,
+    history
   };
 
   const onValueChange = (actionName: string, keyName: string, value: any) => {

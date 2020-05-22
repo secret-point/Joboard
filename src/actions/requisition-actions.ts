@@ -124,27 +124,36 @@ export const onGetJobDescription = (
   }
 };
 
-export const onGoToDescription = (payload: IPayload) => (
+export const onGoToDescription = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   const { requisitionId, applicationId } = payload.urlParams;
   const { goTo } = payload.options;
-  const path = `/app/${goTo}/${requisitionId}/${applicationId}/${payload.selectedRequisitionId}`;
+  const childRequisitionId =
+    payload.selectedRequisitionId ||
+    payload.data.requisition.selectedChildRequisition.requisitionId;
+  const path = `/app/${goTo}/${requisitionId}/${applicationId}/${childRequisitionId}`;
 
   const { requisition } = payload.data;
 
+  let childRequisition;
   if (requisition.childRequisitions) {
-    const childRequisition = find(requisition.childRequisitions, {
+    childRequisition = find(requisition.childRequisitions, {
       requisitionId: payload.selectedRequisitionId
     });
-    onGetJobDescription(payload, payload.selectedRequisitionId)(dispatch);
-    dispatch({
-      type: UPDATE_REQUISITION,
-      payload: {
-        selectedChildRequisition: childRequisition
-      }
-    });
+  } else {
+    childRequisition = await requisitionService.getRequisition(
+      childRequisitionId
+    );
   }
+
+  onGetJobDescription(payload, childRequisitionId)(dispatch);
+  dispatch({
+    type: UPDATE_REQUISITION,
+    payload: {
+      selectedChildRequisition: childRequisition
+    }
+  });
   dispatch(push(path));
 };
 
