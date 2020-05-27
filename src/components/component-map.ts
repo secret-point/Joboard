@@ -28,7 +28,8 @@ import {
   JobRoleCard,
   JobRoleCardsList,
   Html,
-  Popover
+  Popover,
+  IFrame
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
@@ -76,7 +77,8 @@ const ComponentMap: any = {
   JobRoleCardsList,
   Html,
   Popover,
-  StepsContainer
+  StepsContainer,
+  IFrame
 };
 
 export default ComponentMap;
