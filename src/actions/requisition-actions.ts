@@ -1,3 +1,4 @@
+import { Application } from "./../../../HVHCandidateApplicationWebsiteLambda/src/@types/candidate-application-requests";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload from "../@types/IPayload";
@@ -5,6 +6,7 @@ import { setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
 import find from "lodash/find";
+import CandidateApplicationService from "../services/candidate-application-service";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -199,10 +201,29 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
 ) => {
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
+  let seasonalOnly = payload.data.application.onlySeasonalShifts;
+  //if application is not ready yet
+  if (seasonalOnly === null || seasonalOnly === undefined) {
+    const applicationService = new CandidateApplicationService();
+    const applicationId = payload.urlParams.applicationId;
+    const application = (await applicationService.getApplication(
+      applicationId
+    )) as Application;
+    if (
+      application.onlySeasonalShifts === undefined ||
+      application.onlySeasonalShifts === null
+    ) {
+      seasonalOnly = false;
+    } else {
+      seasonalOnly = application.onlySeasonalShifts;
+    }
+  }
+
   if (requisitionId) {
     try {
       const response = await requisitionService.getAllAvailableShifts(
-        requisitionId
+        requisitionId,
+        seasonalOnly
       );
       dispatch({
         type: UPDATE_REQUISITION,

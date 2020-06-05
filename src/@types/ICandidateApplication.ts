@@ -34,4 +34,5 @@ export default interface ICandidateApplication {
   creationDate: string;
   lastModificationDate?: any;
   shift: any;
+  onlySeasonalShifts: boolean;
 }

@@ -56,9 +56,9 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async getAllAvailableShifts(requisitionId: string) {
+  async getAllAvailableShifts(requisitionId: string, seasonalOnly: boolean) {
     const response = await this.axiosInstance.get(
-      `/get-all-available-shifts/${requisitionId}`
+      `/get-all-available-shifts/${requisitionId}/${seasonalOnly}`
     );
 
     return response.data;
