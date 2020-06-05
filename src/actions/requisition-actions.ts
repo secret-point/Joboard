@@ -201,29 +201,12 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
 ) => {
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
-  let seasonalOnly = payload.data.application.onlySeasonalShifts;
-  //if application is not ready yet
-  if (seasonalOnly === null || seasonalOnly === undefined) {
-    const applicationService = new CandidateApplicationService();
-    const applicationId = payload.urlParams.applicationId;
-    const application = (await applicationService.getApplication(
-      applicationId
-    )) as ICandidateApplication;
-    if (
-      application.onlySeasonalShifts === undefined ||
-      application.onlySeasonalShifts === null
-    ) {
-      seasonalOnly = false;
-    } else {
-      seasonalOnly = application.onlySeasonalShifts;
-    }
-  }
-
+  const applicationId = payload.urlParams?.applicationId;
   if (requisitionId) {
     try {
       const response = await requisitionService.getAllAvailableShifts(
         requisitionId,
-        seasonalOnly
+        applicationId
       );
       dispatch({
         type: UPDATE_REQUISITION,
