@@ -5,8 +5,6 @@ import { setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
 import find from "lodash/find";
-import CandidateApplicationService from "../services/candidate-application-service";
-import ICandidateApplication from "../@types/ICandidateApplication";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
