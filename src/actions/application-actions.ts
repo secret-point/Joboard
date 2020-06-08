@@ -1,3 +1,4 @@
+import { UrlParam } from "./../@types/IPayload";
 import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
@@ -10,6 +11,7 @@ import {
 } from "./requisition-actions";
 import updateObject from "immutability-helper";
 import RequisitionService from "../services/requisition-service";
+import HTTPStatusCodes from "../constants/http-status-codes";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -138,10 +140,15 @@ export const createApplication = (payload: IPayload) => async (
         `/${nextPage.id}/${urlParams?.requisitionId}/${response?.applicationId}`
       )(dispatch);
     } catch (ex) {
+      const { urlParams } = payload;
       setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to get application"
-      )(dispatch);
+      if (ex.response.status === HTTPStatusCodes.BAD_REQUEST) {
+        goTo(`/already-applied/${urlParams?.requisitionId}/`)(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Unable to get application"
+        )(dispatch);
+      }
     }
   }
 };

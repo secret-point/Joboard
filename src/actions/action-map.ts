@@ -15,7 +15,8 @@ import {
   createApplication,
   updateApplication,
   onSelectedShifts,
-  onUpdateShiftSelection
+  onUpdateShiftSelection,
+  onGetCandidate
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -47,7 +48,8 @@ const actionMap: any = {
   ON_SHIFT_SELECTION: onSelectedShifts,
   RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted,
   GET_JOB_DESCRIPTION: onGetJobDescription,
-  UPDATE_SHIFT_SELECTION: onUpdateShiftSelection
+  UPDATE_SHIFT_SELECTION: onUpdateShiftSelection,
+  ON_GET_CANDIDATE: onGetCandidate
 };
 
 export default actionMap;
