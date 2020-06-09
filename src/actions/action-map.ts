@@ -24,7 +24,8 @@ import {
   onGetAllAvailableShifts,
   onGetChildRequisitions,
   onGetJobDescription,
-  onGoToDescription
+  onGoToDescription,
+  onApplySortSelection
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -49,7 +50,9 @@ const actionMap: any = {
   RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted,
   GET_JOB_DESCRIPTION: onGetJobDescription,
   UPDATE_SHIFT_SELECTION: onUpdateShiftSelection,
-  ON_GET_CANDIDATE: onGetCandidate
+  ON_GET_CANDIDATE: onGetCandidate,
+  ON_APPLY_SORTING:onApplySortSelection
+
 };
 
 export default actionMap;

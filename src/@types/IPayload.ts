@@ -19,6 +19,7 @@ export interface Requisition {
   childRequisitions: any[];
   selectedChildRequisition: any;
   jobDescription: any;
+  availableShifts:requistionAvailableShifts;
 }
 
 export interface ContingentOffer {
@@ -77,4 +78,29 @@ export default interface Payload {
   selectedShift: any;
   selectedRequisitionId: string;
   history: History;
+}
+export interface requistionAvailableShifts {
+  shifts:requistionShifts[];
+}
+export interface requistionShifts {
+  basePayRate: string;
+  currency: string;
+  day1Date: string;
+  days: string;
+  daysOfWeek: [];
+  endTime: string;
+  fillRate: number;
+  headCountRequestId: string;
+  hireStartDate: string;
+  hoursPerWeek: number;
+  iconUrl: string;
+  isTemporaryReq: boolean;
+  jobTitle: string;
+  locationDescription: string;
+  openCount: number;
+  phoneToolTitle: string;
+  requisitionId:string;
+  shortDescription: string;
+  startTime:string;
+  time: string;
 }

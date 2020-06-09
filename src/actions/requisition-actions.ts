@@ -1,10 +1,13 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload from "../@types/IPayload";
-import { setLoading } from "./actions";
+import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
 import find from "lodash/find";
+import HTTPStatusCodes from "../constants/http-status-codes";
+import propertyOf from "lodash/propertyOf";
+import orderBy from "lodash/orderBy"
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -214,10 +217,71 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
       });
       setLoading(false)(dispatch);
     } catch (ex) {
+      const { urlParams } = payload;
       setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to get available shifts"
-      )(dispatch);
+      if (ex.response.status === HTTPStatusCodes.NOT_FOUND) {
+        goTo(
+          `/no-available-shift/${urlParams.requisitionId}/${urlParams.applicationId}`
+        )(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Unable to get shifts"
+        )(dispatch);
+      }
     }
   }
 };
+
+export const onApplySortSelection = (payload: IPayload) => async (
+  dispatch: Function) => {  
+  let { availableShifts } = payload.data.requisition;
+  let shifts = availableShifts.shifts;
+  const selectedSortKey = propertyOf(payload.data.output)("job-opportunities.sortKey");
+  let pageConfig= window.reduxStore.getState().app.pageConfig.content.flyOuts[1].components[0].properties;
+  let sortOptionsList=propertyOf(pageConfig)("list");
+  let  sortKey:any;
+   sortOptionsList.map(function(item:any){
+    if(selectedSortKey == item.value && item.title =="Featured"){
+     return sortKey="FEATURED";
+   }else if(selectedSortKey== item.value && item.title == "Pay rate - highest to lowest"){
+    return sortKey="PAYRATE";
+   }
+   else if(selectedSortKey== item.value && item.title=="Hours - Most to least"){
+    return sortKey="HOURS-MOST";
+   }
+   else if(selectedSortKey== item.value && item.title=="Hours - Least to most"){
+    return sortKey="HOURS-LEAST";
+   }
+  });
+switch(sortKey) {
+  case "FEATURED": {
+    shifts = orderBy(availableShifts.shifts, ["fillRate"],["asc"])
+    break;
+  }
+  case "PAYRATE": {
+    shifts = orderBy(availableShifts.shifts, ["basePayRate"],["desc"])
+    break;
+  }
+  case "HOURS-MOST": {
+    shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"],["desc"])
+    break;
+  }
+  case "HOURS-LEAST": {
+    shifts =  orderBy(availableShifts.shifts, ["hoursPerWeek"],["asc"])
+    break;
+  }
+  default: {
+    console.log("Sort key is not availble")
+    break;
+  }
+}
+availableShifts.shifts = shifts;
+const { requisition } = payload.data;
+requisition.availableShifts = availableShifts;
+dispatch({
+  type: UPDATE_REQUISITION,
+  payload: {
+    ...requisition
+  }
+})
+}

@@ -26,6 +26,8 @@ import {
   UPDATE_CONTINGENT_OFFER
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
+import merge from "lodash/merge";
+
 
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
@@ -144,10 +146,12 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case UPDATE_REQUISITION: {
+      const requisition=cloneDeep(state.data.requisition);
+      const updatedRequisition=merge(payload, requisition);
       return updateState(state, {
         data: {
           requisition: {
-            $merge: payload
+            $set: updatedRequisition
           }
         }
       });
