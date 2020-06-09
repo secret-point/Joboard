@@ -1,10 +1,11 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload from "../@types/IPayload";
-import { setLoading } from "./actions";
+import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
 import find from "lodash/find";
+import HTTPStatusCodes from "../constants/http-status-codes";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -214,10 +215,17 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
       });
       setLoading(false)(dispatch);
     } catch (ex) {
+      const { urlParams } = payload;
       setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to get available shifts"
-      )(dispatch);
+      if (ex.response.status === HTTPStatusCodes.NOT_FOUND) {
+        goTo(
+          `/no-available-shift/${urlParams.requisitionId}/${urlParams.applicationId}`
+        )(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Unable to get shifts"
+        )(dispatch);
+      }
     }
   }
 };
