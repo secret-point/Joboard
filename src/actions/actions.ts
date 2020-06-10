@@ -115,3 +115,8 @@ export const onResetIsUpdateActionExecuted = () => (dispatch: Function) => {
     type: RESET_IS_UPDATE_ACTION_EXECUTED
   });
 };
+
+export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
+  const { appConfig } = payload;
+  window.location.assign(appConfig.dashboardUrl);
+};

@@ -4,7 +4,8 @@ import {
   onSubmit,
   onGoToAction,
   onResetIsUpdateActionExecuted,
-  onGoBack
+  onGoBack,
+  onGoToDashboard
 } from "./actions";
 import {
   onStartApplication,
@@ -49,7 +50,8 @@ const actionMap: any = {
   RESET_IS_UPDATE_ACTION_EXECUTED: onResetIsUpdateActionExecuted,
   GET_JOB_DESCRIPTION: onGetJobDescription,
   UPDATE_SHIFT_SELECTION: onUpdateShiftSelection,
-  ON_GET_CANDIDATE: onGetCandidate
+  ON_GET_CANDIDATE: onGetCandidate,
+  GO_TO_DASHBOARD: onGoToDashboard
 };
 
 export default actionMap;
