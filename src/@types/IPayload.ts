@@ -50,6 +50,7 @@ export interface UrlParam {
 export interface AppConfig {
   stage: string;
   authenticationURL: string;
+  dashboardUrl: string;
 }
 
 export interface PageOrder {
