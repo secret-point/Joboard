@@ -30,6 +30,8 @@ function CounterMessageBanner() {
           setMinutes(59);
         }
       }
+
+      //localStorage -- > reserved API
       window.localStorage.setItem("countDownMinutes", minutes.toString());
       window.localStorage.setItem("countDownHours", hours.toString());
     }, 60000);
@@ -37,8 +39,7 @@ function CounterMessageBanner() {
 
   return (
     <MessageBanner type={MessageBannerType.Warning}>
-      {`We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to
-      complete the remaining steps.`}
+      {`Spot reserved for ${hours} hours and ${minutes} minutes`}
     </MessageBanner>
   );
 }
