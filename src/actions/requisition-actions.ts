@@ -237,36 +237,20 @@ export const onApplySortSelection = (payload: IPayload) => async (
   let { availableShifts } = payload.data.requisition;
   let shifts = availableShifts.shifts;
   const selectedSortKey = propertyOf(payload.data.output)("job-opportunities.sortKey");
-  let pageConfig= window.reduxStore.getState().app.pageConfig.content.flyOuts[1].components[0].properties;
-  let sortOptionsList=propertyOf(pageConfig)("list");
-  let  sortKey:any;
-   sortOptionsList.map(function(item:any){
-    if(selectedSortKey == item.value && item.title =="Featured"){
-     return sortKey="FEATURED";
-   }else if(selectedSortKey== item.value && item.title == "Pay rate - highest to lowest"){
-    return sortKey="PAYRATE";
-   }
-   else if(selectedSortKey== item.value && item.title=="Hours - Most to least"){
-    return sortKey="HOURS-MOST";
-   }
-   else if(selectedSortKey== item.value && item.title=="Hours - Least to most"){
-    return sortKey="HOURS-LEAST";
-   }
-  });
-switch(sortKey) {
+switch(selectedSortKey) {
   case "FEATURED": {
     shifts = orderBy(availableShifts.shifts, ["fillRate"],["asc"])
     break;
   }
-  case "PAYRATE": {
+  case "PAY_RATE": {
     shifts = orderBy(availableShifts.shifts, ["basePayRate"],["desc"])
     break;
   }
-  case "HOURS-MOST": {
+  case "HOURS_MOST": {
     shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"],["desc"])
     break;
   }
-  case "HOURS-LEAST": {
+  case "HOURS_LEAST": {
     shifts =  orderBy(availableShifts.shifts, ["hoursPerWeek"],["asc"])
     break;
   }
