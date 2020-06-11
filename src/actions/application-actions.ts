@@ -21,6 +21,7 @@ export const UPDATE_NON_FCRA_QUESTIONS = "UPDATE_NON_FCRA_QUESTIONS";
 export const ON_GET_CANDIDATE = "ON_GET_CANDIDATE";
 export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
 export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
+export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 
 const candidateApplicationService = new CandidateApplicationService();
 
@@ -251,6 +252,34 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
     setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    console.log(ex);
+    onUpdateError(
+      ex?.response?.data?.errorMessage || "Unable to update application"
+    )(dispatch);
+  }
+};
+
+export const onTerminateApplication = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  try {
+    const { options, urlParams } = payload;
+    const state = options.state;
+    const applicationId = urlParams.applicationId;
+    const response = await candidateApplicationService.terminateApplication(
+      applicationId,
+      state
+    );
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+    setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);

@@ -42,4 +42,11 @@ export default class CandidateApplicationService {
     const response = await this.axiosInstance.get(`/candidate`);
     return response.data;
   }
+
+  async terminateApplication(applicationId: string, state: string) {
+    const response = await this.axiosInstance.put(
+      `/terminate-application/${applicationId}/${state}`
+    );
+    return response.data;
+  }
 }

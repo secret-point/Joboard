@@ -112,7 +112,12 @@ const Renderer: React.FC<IRendererProps> = ({
     history
   };
 
-  const onValueChange = (actionName: string, keyName: string, value: any) => {
+  const onValueChange = (
+    actionName: string,
+    keyName: string,
+    value: any,
+    options?: any
+  ) => {
     const formData = Object.assign({}, form);
     if (keyName && value) {
       set(formData.output[pageId], keyName, value);
@@ -122,6 +127,7 @@ const Renderer: React.FC<IRendererProps> = ({
       onAction(actionName, {
         keyName,
         value,
+        options,
         ...commonProps
       });
     }
