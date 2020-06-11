@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { ApplicationPage } from "./page-list";
+import RedirectPage from "./redirect-page";
 
 const Routes: React.FC = () => {
   return (
@@ -18,17 +14,8 @@ const Routes: React.FC = () => {
         />
         <Route
           exact
-          path="/:pageId?/:requisitionId?/:applicationId?"
-          render={routerProps => {
-            const { pageId, requisitionId, applicationId } = routerProps.match
-              .params as any;
-            let path = `/app/${pageId}/${requisitionId}`;
-
-            if (applicationId) {
-              path = path + `/${applicationId}`;
-            }
-            return <Redirect to={path} />;
-          }}
+          path="/:page/:requisitionId/:applicationId?"
+          component={RedirectPage}
         />
       </Switch>
     </Router>

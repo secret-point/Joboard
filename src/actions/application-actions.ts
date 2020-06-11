@@ -1,4 +1,3 @@
-import { UrlParam } from "./../@types/IPayload";
 import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
@@ -12,6 +11,7 @@ import {
 import updateObject from "immutability-helper";
 import RequisitionService from "../services/requisition-service";
 import HTTPStatusCodes from "../constants/http-status-codes";
+import { completeTask, loadWorkflow } from "./workflow-actions";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -23,12 +23,10 @@ export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
 export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 
-const candidateApplicationService = new CandidateApplicationService();
-
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, nextPage, urlParams } = data;
   const origin = window.location.origin;
-  const redirectUrl = `${origin}#/${nextPage.id}/${urlParams.requisitionId}`;
+  const redirectUrl = `${origin}#/application/${urlParams.requisitionId}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;
@@ -43,9 +41,13 @@ export const onGetApplication = (payload: IPayload) => async (
     const applicationId = payload.urlParams?.applicationId;
     const hcrId = payload.urlParams?.misc;
     onGetRequisitionHeaderInfo(payload)(dispatch);
-    onGetCandidate(payload)(dispatch);
-    if (applicationId && isEmpty(payload.data.application)) {
-      const applicationResponse = await candidateApplicationService.getApplication(
+    const candidateResponse = await onGetCandidate(payload)(dispatch);
+    const { options } = payload;
+    if (
+      applicationId &&
+      (isEmpty(payload.data.application) || options?.ignoreApplicationData)
+    ) {
+      const applicationResponse = await new CandidateApplicationService().getApplication(
         applicationId
       );
 
@@ -67,9 +69,17 @@ export const onGetApplication = (payload: IPayload) => async (
           currentState: applicationResponse.currentState
         }
       });
+
+      loadWorkflow(
+        applicationId,
+        candidateResponse.candidateId,
+        payload.appConfig,
+        dispatch
+      );
     }
     setLoading(false)(dispatch);
   } catch (ex) {
+    console.log(ex);
     setLoading(false)(dispatch);
     onUpdateError(
       ex?.response?.data?.errorMessage || "unable to get application"
@@ -82,11 +92,12 @@ export const onGetCandidate = (
   ignoreCandidateData?: boolean
 ) => async (dispatch: Function) => {
   if (isEmpty(payload.data.candidate) || ignoreCandidateData) {
-    const response = await candidateApplicationService.getCandidate();
+    const response = await new CandidateApplicationService().getCandidate();
     dispatch({
       type: ON_GET_CANDIDATE,
       payload: response
     });
+    return response;
   }
 };
 
@@ -109,18 +120,13 @@ export const continueWithFCRADecline = (payload: IPayload) => (
   });
 };
 
-export const updatePreHireStepsStatus = (payload: IPayload) => (
-  dispatch: Function
-) => {
-  console.log(payload);
-};
-
 export const createApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   if (isEmpty(payload.data.application)) {
     try {
       setLoading(true)(dispatch);
+      const candidateApplicationService = new CandidateApplicationService();
       const candidateResponse = await candidateApplicationService.getCandidate();
       const response = await candidateApplicationService.createApplication({
         candidateId: candidateResponse.candidateId,
@@ -135,15 +141,24 @@ export const createApplication = (payload: IPayload) => async (
         }
       });
 
-      setLoading(false)(dispatch);
-      const { nextPage, urlParams } = payload;
-      goTo(
-        `/${nextPage.id}/${urlParams?.requisitionId}/${response?.applicationId}`
-      )(dispatch);
+      dispatch({
+        type: ON_GET_CANDIDATE,
+        payload: candidateResponse
+      });
+
+      loadWorkflow(
+        response.applicationId,
+        candidateResponse.candidateId,
+        payload.appConfig,
+        dispatch
+      );
+
+      //setLoading(false)(dispatch);
     } catch (ex) {
+      console.log(ex);
       const { urlParams } = payload;
       setLoading(false)(dispatch);
-      if (ex.response.status === HTTPStatusCodes.BAD_REQUEST) {
+      if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
         goTo(`/already-applied/${urlParams?.requisitionId}/`)(dispatch);
       } else {
         onUpdateError(
@@ -165,7 +180,8 @@ export const updateApplication = (payload: IPayload) => async (
     urlParams,
     isContentContainsSteps,
     activeStepIndex,
-    stepId
+    stepId,
+    stepsLength
   } = payload;
   let updateData = data.output[currentPage.id];
   let type = currentPage.id;
@@ -176,11 +192,13 @@ export const updateApplication = (payload: IPayload) => async (
   const applicationId = data.application.applicationId;
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
-      const response = await candidateApplicationService.updateApplication({
-        type: type,
-        applicationId,
-        payload: updateData
-      });
+      const response = await new CandidateApplicationService().updateApplication(
+        {
+          type: type,
+          applicationId,
+          payload: updateData
+        }
+      );
       dispatch({
         type: UPDATE_APPLICATION,
         payload: {
@@ -190,6 +208,13 @@ export const updateApplication = (payload: IPayload) => async (
       if (options?.updateCandidate) {
         onGetCandidate(payload, true)(dispatch);
       }
+
+      if (isContentContainsSteps && activeStepIndex !== undefined) {
+        stepsLength - 1 === activeStepIndex && completeTask(stepId);
+      } else {
+        completeTask(type);
+      }
+
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
@@ -199,9 +224,10 @@ export const updateApplication = (payload: IPayload) => async (
     }
   }
 
-  if (options?.goTo) {
-    goTo(options?.goTo, urlParams)(dispatch);
-  }
+  // if (options?.goTo) {
+  //   //goTo(options?.goTo, urlParams)(dispatch);
+  //   //completeTask();
+  // }
 };
 
 export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
@@ -232,7 +258,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
   try {
     const { application } = payload.data;
     const { urlParams } = payload;
-    const response = await candidateApplicationService.updateApplication({
+    const response = await new CandidateApplicationService().updateApplication({
       type: "job-confirm",
       applicationId: urlParams.applicationId,
       payload: {
@@ -251,6 +277,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       delete payload.urlParams?.misc;
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
+    completeTask();
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -269,7 +296,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
     const { options, urlParams } = payload;
     const state = options.state;
     const applicationId = urlParams.applicationId;
-    const response = await candidateApplicationService.terminateApplication(
+    const response = await new CandidateApplicationService().terminateApplication(
       applicationId,
       state
     );

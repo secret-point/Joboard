@@ -2,6 +2,7 @@ import IPayload, { UrlParam } from "./../@types/IPayload";
 import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import find from "lodash/find";
+import { completeTask } from "./workflow-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const ON_REDIRECT = "ON_REDIRECT";
@@ -119,4 +120,8 @@ export const onResetIsUpdateActionExecuted = () => (dispatch: Function) => {
 export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
   const { appConfig } = payload;
   window.location.assign(appConfig.dashboardUrl);
+};
+
+export const onCompleteTask = () => (dispatch: Function) => {
+  completeTask();
 };

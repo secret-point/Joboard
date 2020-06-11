@@ -14,7 +14,6 @@ export const getStatusForSteps = (
     editStatusIndex = -1;
   }
   steps.forEach((step, index) => {
-    console.log(editStatusIndex);
     const value = propertyOf(data)(step.completedDataKey);
     const isComplete = !isEmpty(value) && !isNull(value);
     if (editStatusIndex === index) {

@@ -5,14 +5,14 @@ import {
   onGoToAction,
   onResetIsUpdateActionExecuted,
   onGoBack,
-  onGoToDashboard
+  onGoToDashboard,
+  onCompleteTask
 } from "./actions";
 import {
   onStartApplication,
   onGetApplication,
   onLaunchFCRA,
   continueWithFCRADecline,
-  updatePreHireStepsStatus,
   createApplication,
   updateApplication,
   onSelectedShifts,
@@ -39,7 +39,6 @@ const actionMap: any = {
   GET_APPLICATION: onGetApplication,
   LAUNCH_FCRA: onLaunchFCRA,
   CONTINUE_WITH_FCRA_DECLINE: continueWithFCRADecline,
-  UPDATE_PRE_HIRE_STEPS_STATUS: updatePreHireStepsStatus,
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
   GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
@@ -55,7 +54,8 @@ const actionMap: any = {
   ON_GET_CANDIDATE: onGetCandidate,
   ON_APPLY_SORTING: onApplySortSelection,
   GO_TO_DASHBOARD: onGoToDashboard,
-  TERMINATE_APPLICATION: onTerminateApplication
+  TERMINATE_APPLICATION: onTerminateApplication,
+  COMPLETE_TASK: onCompleteTask
 };
 
 export default actionMap;

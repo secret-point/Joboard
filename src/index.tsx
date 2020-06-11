@@ -6,11 +6,13 @@ import store from "./store";
 import { Provider } from "react-redux";
 import { getInitialData } from "./services";
 import { Store } from "redux";
+import StepFunctionService from "./services/step-function-service";
 
 declare global {
   interface Window {
     reduxStore: Store;
     Stage: string;
+    stepFunctionService: StepFunctionService;
   }
 }
 

@@ -31,6 +31,7 @@ export type IRendererProps = {
   isContentContainsSteps?: boolean;
   activeStepIndex?: number;
   stepId?: string;
+  stepsLength: number;
   Render?: any;
   renderProps: any;
   history: History;
@@ -65,6 +66,7 @@ const Renderer: React.FC<IRendererProps> = ({
   isContentContainsSteps,
   activeStepIndex,
   stepId,
+  stepsLength,
   renderProps,
   history,
   gridGap = "s",
@@ -109,6 +111,7 @@ const Renderer: React.FC<IRendererProps> = ({
     isContentContainsSteps,
     activeStepIndex,
     stepId,
+    stepsLength,
     history
   };
 

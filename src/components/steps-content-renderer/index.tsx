@@ -93,6 +93,7 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
                   isContentContainsSteps={true}
                   activeStepIndex={index}
                   stepId={step.id}
+                  stepsLength={steps.length}
                   type="content"
                 />
               )}

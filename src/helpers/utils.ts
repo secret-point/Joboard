@@ -20,11 +20,20 @@ export const launchAuthentication = () => {
   hash = hash.replace("/app", "");
 
   const origin = window.location.origin;
-  const redirectUrl = `${origin}#${hash}`;
+  const redirectUrl = `${origin}/#${hash}`;
 
   const state = window.reduxStore.getState();
   let url = `${
     state.app.appConfig.authenticationURL
   }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
+};
+
+export const isJson = (obj: string) => {
+  try {
+    JSON.parse(obj);
+  } catch (e) {
+    return false;
+  }
+  return true;
 };

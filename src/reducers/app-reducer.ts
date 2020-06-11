@@ -22,7 +22,6 @@ import {
   UPDATE_APPLICATION,
   UPDATE_NON_FCRA_QUESTIONS,
   ON_GET_CANDIDATE,
-  UPDATE_ADDITIONAL_BG_INFO,
   UPDATE_CONTINGENT_OFFER
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
@@ -71,9 +70,6 @@ const AppReducer = (state = initialState, action: IAction) => {
         },
         appConfig: {
           $set: payload[0]
-        },
-        output: {
-          $set: outputDataObject
         },
         data: {
           output: {

@@ -2,6 +2,10 @@ import ICandidateApplication from "./ICandidateApplication";
 import { History } from "history";
 export interface Consent {}
 
+export interface WorkflowData {
+  stepName: string;
+}
+
 export interface Bgc {}
 
 export interface OutputData {
@@ -51,6 +55,7 @@ export interface AppConfig {
   stage: string;
   authenticationURL: string;
   dashboardUrl: string;
+  stepFunctionEndpoint: string;
 }
 
 export interface PageOrder {
@@ -76,6 +81,7 @@ export default interface Payload {
   value: any;
   pageId: string;
   stepId: string;
+  stepsLength: number;
   selectedShift: any;
   selectedRequisitionId: string;
   history: History;
