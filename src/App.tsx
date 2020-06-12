@@ -11,7 +11,7 @@ import { StencilProvider } from "@stencil-react/components/dist/submodules/conte
 import { MainWithSkipLink } from "@stencil-react/components/a11y";
 import Routes from "./pages/routes";
 import LoaderContainer from "./containers/loader/loader-container";
-import ContentMessageBanner from "./components/counter-message-banner";
+import ContentMessageBanner from "./containers/counter-message-banner";
 import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 
 interface IApp {

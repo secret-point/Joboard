@@ -3,42 +3,48 @@ import {
   MessageBanner,
   MessageBannerType
 } from "@stencil-react/components/message-banner";
+import ICandidateApplication from "../../@types/ICandidateApplication";
+import isEmpty from "lodash/isEmpty";
+import moment from "moment";
 
-function CounterMessageBanner() {
-  const countDownMinutes: any =
-    window.localStorage.getItem("countDownMinutes") || 59;
-  const countDownHours: any =
-    window.localStorage.getItem("countDownHours") || 2;
-  const [minutes, setMinutes] = useState(parseInt(countDownMinutes));
-  const [hours, setHours] = useState(parseInt(countDownHours));
+const HOUR_IN_SECONDS = 3600;
+const MIN_IN_SECONDS = 60;
+const RESERVED_TIME_IN_HOURS = 3;
+
+interface CounterMessageBannerProps{
+  application : ICandidateApplication
+} 
+
+const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
+  application
+}) => {
+  
+  const [minutes, setMinutes] = useState(0);
+  const [hours, setHours] = useState(0);
   let myInterval: any = null;
+  let reserveTime : number;
 
   useEffect(() => {
-    tick();
-  }, [minutes, hours]);
+    if(!isEmpty(application)){
+      const startCountTime : string = application.jobSelected.jobSelectedOn;
+      reserveTime = (moment(startCountTime).unix() + HOUR_IN_SECONDS * RESERVED_TIME_IN_HOURS) - moment().unix();
+      setHours(Math.floor(reserveTime/HOUR_IN_SECONDS));
+      setMinutes(Math.floor((reserveTime - (hours * HOUR_IN_SECONDS))/MIN_IN_SECONDS));
+    }
 
-  const tick = () => {
-    myInterval = setTimeout(() => {
-      if (minutes > 0) {
-        setMinutes(minutes - 1);
-      }
-      if (minutes === 0) {
-        if (hours === 0) {
-          clearTimeout(myInterval);
-        } else {
-          setHours(hours - 1);
-          setMinutes(59);
-        }
-      }
-      window.localStorage.setItem("countDownMinutes", minutes.toString());
-      window.localStorage.setItem("countDownHours", hours.toString());
-    }, 60000);
-  };
+    myInterval = setInterval( () =>{
+        setHours(Math.floor(reserveTime/HOUR_IN_SECONDS));
+        setMinutes(Math.floor((reserveTime - (hours * HOUR_IN_SECONDS))/MIN_IN_SECONDS));  
+        if(reserveTime < MIN_IN_SECONDS){
+          console.log("timeout");
+          clearInterval(myInterval);
+        }   
+    }, MIN_IN_SECONDS * 1000);
+  }, [hours, application, minutes]);
 
   return (
     <MessageBanner type={MessageBannerType.Warning}>
-      {`We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to
-      complete the remaining steps.`}
+      {`Spot reserved for ${hours} hours and ${minutes} minutes`}
     </MessageBanner>
   );
 }
