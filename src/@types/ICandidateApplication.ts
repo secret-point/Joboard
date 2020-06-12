@@ -3,6 +3,12 @@ export interface ContingentOffer {
   offerAccepted: boolean;
 }
 
+export interface JobSelected{
+  childRequisitionId: string;
+  headCountRequestId: string;
+  jobSelectedOn: string;
+}
+
 export default interface ICandidateApplication {
   active: boolean;
   submitted: boolean;
@@ -15,7 +21,7 @@ export default interface ICandidateApplication {
   parentRequisitionId: string;
   currentState: string;
   assessment: any;
-  jobSelected: any;
+  jobSelected: JobSelected;
   contingentOffer: ContingentOffer;
   fcraQuestions: any;
   nonFcraQuestions: any;
