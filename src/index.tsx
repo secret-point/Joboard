@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { getInitialData } from "./services";
 import { Store } from "redux";
 import StepFunctionService from "./services/step-function-service";
+import isNull from "lodash/isNull";
 
 declare global {
   interface Window {
@@ -25,6 +26,19 @@ getInitialData()
     if (window.location.hash.includes("?token=")) {
       const tokenString = window.location.hash.split("?token=");
       window.localStorage.setItem("accessToken", tokenString[1]);
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const requisitionId = urlParams.get("requisitionId");
+    const agency: any = urlParams.get("agency");
+    const page = urlParams.get("page");
+    console.log(requisitionId, agency);
+    if (!isNull(requisitionId) && !isNull(page)) {
+      window.location.assign(`/#/${page}/${requisitionId}`);
+    }
+
+    if (!isNull(agency)) {
+      window.sessionStorage.setItem("agency", (agency === 1).toString());
     }
 
     window.reduxStore = store;
