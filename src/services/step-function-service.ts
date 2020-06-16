@@ -1,8 +1,6 @@
 import { AppConfig } from "../@types/IPayload";
 import isString from "lodash/isString";
 import { isJson } from "../helpers/utils";
-import { ON_UPDATE_PAGE_ID } from "../actions/actions";
-import PageService from "./page-service";
 import { startOrResumeWorkflow, goToStep } from "../actions/workflow-actions";
 
 export default class StepFunctionService {

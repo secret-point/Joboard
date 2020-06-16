@@ -59,7 +59,10 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
 export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   const { requisitionId, applicationId } = payload.urlParams;
   const { goTo } = payload.options;
-  const path = `/app/${goTo}/${requisitionId}/${applicationId}`;
+  let path = `/app/${goTo}/${requisitionId}`;
+  if (applicationId) {
+    path = `${path}/${applicationId}`;
+  }
   dispatch(push(path));
 };
 
