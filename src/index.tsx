@@ -14,6 +14,7 @@ declare global {
     reduxStore: Store;
     Stage: string;
     stepFunctionService: StepFunctionService;
+    isCompleteTaskOnLoad: boolean | undefined;
   }
 }
 
@@ -32,7 +33,6 @@ getInitialData()
     const requisitionId = urlParams.get("requisitionId");
     const agency: any = urlParams.get("agency");
     const page = urlParams.get("page");
-    console.log(requisitionId, agency);
     if (!isNull(requisitionId) && !isNull(page)) {
       window.location.assign(`/#/${page}/${requisitionId}`);
     }

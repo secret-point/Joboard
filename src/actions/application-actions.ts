@@ -25,7 +25,7 @@ export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
-  const { appConfig, nextPage, urlParams } = data;
+  const { appConfig, urlParams } = data;
   const origin = window.location.origin;
   const redirectUrl = `${origin}#/application/${urlParams.requisitionId}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
@@ -53,7 +53,7 @@ export const onGetApplication = (payload: IPayload) => async (
     const { options } = payload;
     if (
       applicationId &&
-      (isEmpty(payload.data.application) || options?.ignoreApplicationData)
+      (options?.ignoreApplicationData || isEmpty(payload.data.application))
     ) {
       const applicationResponse = await new CandidateApplicationService().getApplication(
         applicationId
@@ -85,10 +85,13 @@ export const onGetApplication = (payload: IPayload) => async (
         applicationId,
         candidateId,
         payload.appConfig,
-        dispatch
+        options?.isCompleteTaskOnLoad
       );
     }
-    setLoading(false)(dispatch);
+
+    if (!options?.isCompleteTaskOnLoad) {
+      setLoading(false)(dispatch);
+    }
   } catch (ex) {
     console.log(ex);
     setLoading(false)(dispatch);
@@ -161,8 +164,7 @@ export const createApplication = (payload: IPayload) => async (
         payload.urlParams.requisitionId,
         response.applicationId,
         candidateResponse.candidateId,
-        payload.appConfig,
-        dispatch
+        payload.appConfig
       );
 
       //setLoading(false)(dispatch);

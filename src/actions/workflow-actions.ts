@@ -6,15 +6,15 @@ export const loadWorkflow = (
   applicationId: string,
   candidateId: string,
   appConfig: AppConfig,
-  dispatch: Function
+  isCompleteTaskOnLoad?: boolean
 ) => {
   if (!window?.stepFunctionService?.websocket) {
+    window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
     window.stepFunctionService = StepFunctionService.load(
       requisitionId,
       applicationId,
       candidateId,
-      appConfig,
-      dispatch
+      appConfig
     );
   }
 };

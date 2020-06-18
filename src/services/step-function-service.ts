@@ -1,7 +1,11 @@
 import { AppConfig } from "../@types/IPayload";
 import isString from "lodash/isString";
 import { isJson } from "../helpers/utils";
-import { startOrResumeWorkflow, goToStep } from "../actions/workflow-actions";
+import {
+  startOrResumeWorkflow,
+  goToStep,
+  completeTask
+} from "../actions/workflow-actions";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -10,20 +14,18 @@ export default class StepFunctionService {
   candidateId: string | undefined;
   appConfig: any;
   stepFunctionEndpoint: string | undefined;
-  dispatch: Function | undefined;
+  isCompleteTaskOnLoad: boolean | undefined;
 
   constructor(
     requisitionId: string,
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig,
-    dispatch: Function
+    appConfig: AppConfig
   ) {
     this.applicationId = applicationId;
     this.candidateId = candidateId;
     this.appConfig = appConfig;
     if (applicationId && candidateId) {
-      this.dispatch = dispatch;
       this.applicationId = applicationId;
       this.candidateId = candidateId;
       this.appConfig = appConfig;
@@ -45,21 +47,18 @@ export default class StepFunctionService {
     requisitionId: string,
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig,
-    dispatch: Function
+    appConfig: AppConfig
   ) {
-    return new this(
-      requisitionId,
-      applicationId,
-      candidateId,
-      appConfig,
-      dispatch
-    );
+    return new this(requisitionId, applicationId, candidateId, appConfig);
   }
 
   connect(event: any) {
     console.log("Connected");
-    startOrResumeWorkflow();
+    if (window.isCompleteTaskOnLoad) {
+      completeTask("Complete Task On Load");
+    } else {
+      startOrResumeWorkflow();
+    }
   }
 
   close(event: any) {
