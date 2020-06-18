@@ -27,7 +27,6 @@ import {
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
 
-
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
   map(pageOrder, (data: any) => {
@@ -142,8 +141,8 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case UPDATE_REQUISITION: {
-      const requisition=cloneDeep(state.data.requisition);
-      const updatedRequisition=merge(payload, requisition);
+      const requisition = cloneDeep(state.data.requisition);
+      const updatedRequisition = merge(payload, requisition);
       return updateState(state, {
         data: {
           requisition: {

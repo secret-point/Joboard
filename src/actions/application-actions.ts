@@ -12,6 +12,7 @@ import updateObject from "immutability-helper";
 import RequisitionService from "../services/requisition-service";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
+import isNull from "lodash/isNull";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -30,6 +31,12 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;
+
+  const agency = window.sessionStorage.getItem("agency");
+  if (!isNull(agency)) {
+    url = `${url}&agency=${agency}`;
+  }
+
   window.location.assign(url);
 };
 
@@ -39,6 +46,7 @@ export const onGetApplication = (payload: IPayload) => async (
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
+    const requisitionId = payload.urlParams?.requisitionId;
     const hcrId = payload.urlParams?.misc;
     onGetRequisitionHeaderInfo(payload)(dispatch);
     const candidateResponse = await onGetCandidate(payload)(dispatch);
@@ -70,9 +78,12 @@ export const onGetApplication = (payload: IPayload) => async (
         }
       });
 
+      const candidateId =
+        candidateResponse?.candidateId || payload.data.candidate.candidateId;
       loadWorkflow(
+        requisitionId,
         applicationId,
-        candidateResponse.candidateId,
+        candidateId,
         payload.appConfig,
         dispatch
       );
@@ -147,6 +158,7 @@ export const createApplication = (payload: IPayload) => async (
       });
 
       loadWorkflow(
+        payload.urlParams.requisitionId,
         response.applicationId,
         candidateResponse.candidateId,
         payload.appConfig,
@@ -209,10 +221,12 @@ export const updateApplication = (payload: IPayload) => async (
         onGetCandidate(payload, true)(dispatch);
       }
 
-      if (isContentContainsSteps && activeStepIndex !== undefined) {
-        stepsLength - 1 === activeStepIndex && completeTask(stepId);
-      } else {
-        completeTask(type);
+      if (options?.executeCompleteStep) {
+        completeTask();
+      }
+
+      if (options?.goTo) {
+        goTo(options?.goTo, urlParams)(dispatch);
       }
 
       setLoading(false)(dispatch);
@@ -222,12 +236,11 @@ export const updateApplication = (payload: IPayload) => async (
         ex?.response?.data?.errorMessage || "Unable to update application"
       )(dispatch);
     }
+  } else {
+    if (options?.goTo) {
+      goTo(options?.goTo, urlParams)(dispatch);
+    }
   }
-
-  // if (options?.goTo) {
-  //   //goTo(options?.goTo, urlParams)(dispatch);
-  //   //completeTask();
-  // }
 };
 
 export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {

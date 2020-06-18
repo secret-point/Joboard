@@ -7,12 +7,10 @@ import { push } from "react-router-redux";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
-import orderBy from "lodash/orderBy"
+import orderBy from "lodash/orderBy";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
-
-const requisitionService = new RequisitionService();
 
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -21,7 +19,7 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId && isEmpty(payload.data.requisition)) {
     try {
-      const response = await requisitionService.getRequisitionHeaderInfo(
+      const response = await new RequisitionService().getRequisitionHeaderInfo(
         requisitionId
       );
       dispatch({
@@ -45,7 +43,7 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId) {
     try {
-      const response = await requisitionService.getChildRequisitions(
+      const response = await new RequisitionService().getChildRequisitions(
         requisitionId
       );
       dispatch({
@@ -72,7 +70,7 @@ export const onGetRequisition = (
   const id = childRequisitionId || payload.urlParams?.requisitionId;
   if (id) {
     try {
-      const response = await requisitionService.getRequisition(id);
+      const response = await new RequisitionService().getRequisition(id);
       let requisition = response;
       if (childRequisitionId) {
         requisition = {
@@ -108,7 +106,7 @@ export const onGetJobDescription = (
       if (!payload.data.requisition.selectedChildRequisition) {
         onGetRequisition(payload, childRequisitionId)(dispatch);
       }
-      const response = await requisitionService.getJobDescription(
+      const response = await new RequisitionService().getJobDescription(
         childRequisitionId
       );
       dispatch({
@@ -145,7 +143,7 @@ export const onGoToDescription = (payload: IPayload) => async (
       requisitionId: payload.selectedRequisitionId
     });
   } else {
-    childRequisition = await requisitionService.getRequisition(
+    childRequisition = await new RequisitionService().getRequisition(
       childRequisitionId
     );
   }
@@ -167,7 +165,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId) {
     try {
-      const response = await requisitionService.getTimeSlots(
+      const response = await new RequisitionService().getTimeSlots(
         "childRequisition1"
       );
 
@@ -177,8 +175,15 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
           nheSlot.title = slot.date;
-          const nheSlotLocation: string = slot.location.streetAddress +", "+ slot.location.city +", "+ slot.location.state +", "+ slot.location.postalCode;
-          nheSlot.details = slot.timeRange+ `${'\n'}` + nheSlotLocation;
+          const nheSlotLocation: string =
+            slot.location.streetAddress +
+            ", " +
+            slot.location.city +
+            ", " +
+            slot.location.state +
+            ", " +
+            slot.location.postalCode;
+          nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
           nheSlot.recruitingEventId = slot.recruitingEventId;
           nheSlots.push(nheSlot);
         });
@@ -207,7 +212,7 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
   if (requisitionId) {
     try {
-      const response = await requisitionService.getAllAvailableShifts(
+      const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,
         applicationId
       );
@@ -219,9 +224,10 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
       });
       setLoading(false)(dispatch);
     } catch (ex) {
+      console.log(ex);
       const { urlParams } = payload;
       setLoading(false)(dispatch);
-      if (ex.response.status === HTTPStatusCodes.NOT_FOUND) {
+      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
         goTo(
           `/no-available-shift/${urlParams.requisitionId}/${urlParams.applicationId}`
         )(dispatch);
@@ -235,39 +241,42 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
 };
 
 export const onApplySortSelection = (payload: IPayload) => async (
-  dispatch: Function) => {  
+  dispatch: Function
+) => {
   let { availableShifts } = payload.data.requisition;
   let shifts = availableShifts.shifts;
-  const selectedSortKey = propertyOf(payload.data.output)("job-opportunities.sortKey");
-switch(selectedSortKey) {
-  case "FEATURED": {
-    shifts = orderBy(availableShifts.shifts, ["fillRate"],["asc"])
-    break;
+  const selectedSortKey = propertyOf(payload.data.output)(
+    "job-opportunities.sortKey"
+  );
+  switch (selectedSortKey) {
+    case "FEATURED": {
+      shifts = orderBy(availableShifts.shifts, ["fillRate"], ["asc"]);
+      break;
+    }
+    case "PAY_RATE": {
+      shifts = orderBy(availableShifts.shifts, ["basePayRate"], ["desc"]);
+      break;
+    }
+    case "HOURS_MOST": {
+      shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"], ["desc"]);
+      break;
+    }
+    case "HOURS_LEAST": {
+      shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"], ["asc"]);
+      break;
+    }
+    default: {
+      console.log("Sort key is not availble");
+      break;
+    }
   }
-  case "PAY_RATE": {
-    shifts = orderBy(availableShifts.shifts, ["basePayRate"],["desc"])
-    break;
-  }
-  case "HOURS_MOST": {
-    shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"],["desc"])
-    break;
-  }
-  case "HOURS_LEAST": {
-    shifts =  orderBy(availableShifts.shifts, ["hoursPerWeek"],["asc"])
-    break;
-  }
-  default: {
-    console.log("Sort key is not availble")
-    break;
-  }
-}
-availableShifts.shifts = shifts;
-const { requisition } = payload.data;
-requisition.availableShifts = availableShifts;
-dispatch({
-  type: UPDATE_REQUISITION,
-  payload: {
-    ...requisition
-  }
-})
-}
+  availableShifts.shifts = shifts;
+  const { requisition } = payload.data;
+  requisition.availableShifts = availableShifts;
+  dispatch({
+    type: UPDATE_REQUISITION,
+    payload: {
+      ...requisition
+    }
+  });
+};

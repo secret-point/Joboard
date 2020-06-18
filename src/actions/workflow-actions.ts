@@ -2,6 +2,7 @@ import { WorkflowData, AppConfig } from "../@types/IPayload";
 import StepFunctionService from "../services/step-function-service";
 
 export const loadWorkflow = (
+  requisitionId: string,
   applicationId: string,
   candidateId: string,
   appConfig: AppConfig,
@@ -9,6 +10,7 @@ export const loadWorkflow = (
 ) => {
   if (!window?.stepFunctionService?.websocket) {
     window.stepFunctionService = StepFunctionService.load(
+      requisitionId,
       applicationId,
       candidateId,
       appConfig,
@@ -22,7 +24,8 @@ export const startOrResumeWorkflow = () => {
     JSON.stringify({
       action: "startWorkflow",
       applicationId: window.stepFunctionService.applicationId,
-      candidateId: window.stepFunctionService.candidateId
+      candidateId: window.stepFunctionService.candidateId,
+      requisitionId: window.stepFunctionService.requisitionId
     })
   );
 };
@@ -44,7 +47,8 @@ export const completeTask = (stepName?: string) => {
       JSON.stringify({
         action: "completeTask",
         applicationId: window.stepFunctionService.applicationId,
-        candidateId: window.stepFunctionService.candidateId
+        candidateId: window.stepFunctionService.candidateId,
+        requisitionId: window.stepFunctionService.requisitionId
       })
     );
   }

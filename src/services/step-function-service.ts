@@ -5,6 +5,7 @@ import { startOrResumeWorkflow, goToStep } from "../actions/workflow-actions";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
+  requisitionId: string | undefined;
   applicationId: string | undefined;
   candidateId: string | undefined;
   appConfig: any;
@@ -12,6 +13,7 @@ export default class StepFunctionService {
   dispatch: Function | undefined;
 
   constructor(
+    requisitionId: string,
     applicationId: string,
     candidateId: string,
     appConfig: AppConfig,
@@ -25,6 +27,7 @@ export default class StepFunctionService {
       this.applicationId = applicationId;
       this.candidateId = candidateId;
       this.appConfig = appConfig;
+      this.requisitionId = requisitionId;
       let websocketURL = appConfig.stepFunctionEndpoint as string;
       websocketURL = websocketURL
         .replace("{applicationId}", this.applicationId)
@@ -39,12 +42,19 @@ export default class StepFunctionService {
   }
 
   static load(
+    requisitionId: string,
     applicationId: string,
     candidateId: string,
     appConfig: AppConfig,
     dispatch: Function
   ) {
-    return new this(applicationId, candidateId, appConfig, dispatch);
+    return new this(
+      requisitionId,
+      applicationId,
+      candidateId,
+      appConfig,
+      dispatch
+    );
   }
 
   connect(event: any) {
