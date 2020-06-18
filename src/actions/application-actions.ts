@@ -330,3 +330,45 @@ export const onTerminateApplication = (payload: IPayload) => async (
     )(dispatch);
   }
 };
+
+export const onUpdateWotcStatus = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  try {
+    const { options, urlParams } = payload;
+    const applicationId = urlParams.applicationId;
+    const { status, isCompleteTaskOnLoad } = options;
+    const candidateResponse = await onGetCandidate(payload, true)(dispatch);
+    const response = await new CandidateApplicationService().updateWOTCStatus(
+      applicationId,
+      candidateResponse.candidateId,
+      status
+    );
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+
+    if (!window?.stepFunctionService?.websocket) {
+      loadWorkflow(
+        urlParams.requisitionId,
+        applicationId,
+        candidateResponse.candidateId,
+        payload.appConfig,
+        isCompleteTaskOnLoad
+      );
+    } else {
+      completeTask();
+    }
+    setLoading(true)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    console.log(ex);
+    onUpdateError(
+      ex?.response?.data?.errorMessage || "Unable to update application"
+    )(dispatch);
+  }
+};

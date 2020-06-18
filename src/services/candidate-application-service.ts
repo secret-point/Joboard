@@ -49,4 +49,17 @@ export default class CandidateApplicationService {
     );
     return response.data;
   }
+
+  async updateWOTCStatus(
+    applicationId: string,
+    candidateId: string,
+    status: string
+  ) {
+    await this.axiosInstance.put(`/update-wotc-status`, {
+      applicationId,
+      candidateId,
+      status
+    });
+    return await this.getApplication(applicationId);
+  }
 }

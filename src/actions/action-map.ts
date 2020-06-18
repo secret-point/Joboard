@@ -18,7 +18,8 @@ import {
   onSelectedShifts,
   onUpdateShiftSelection,
   onGetCandidate,
-  onTerminateApplication
+  onTerminateApplication,
+  onUpdateWotcStatus
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -55,7 +56,8 @@ const actionMap: any = {
   ON_APPLY_SORTING: onApplySortSelection,
   GO_TO_DASHBOARD: onGoToDashboard,
   TERMINATE_APPLICATION: onTerminateApplication,
-  COMPLETE_TASK: onCompleteTask
+  COMPLETE_TASK: onCompleteTask,
+  UPDATE_WOTC_STATUS: onUpdateWotcStatus
 };
 
 export default actionMap;
