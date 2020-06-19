@@ -125,6 +125,7 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
   window.location.assign(appConfig.dashboardUrl);
 };
 
-export const onCompleteTask = () => (dispatch: Function) => {
-  completeTask();
+export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
+  const { application } = payload.data;
+  completeTask(application, "on-complete-task");
 };

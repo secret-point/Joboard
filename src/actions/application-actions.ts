@@ -194,8 +194,7 @@ export const updateApplication = (payload: IPayload) => async (
     urlParams,
     isContentContainsSteps,
     activeStepIndex,
-    stepId,
-    stepsLength
+    stepId
   } = payload;
   let updateData = data.output[currentPage.id];
   let type = currentPage.id;
@@ -224,7 +223,7 @@ export const updateApplication = (payload: IPayload) => async (
       }
 
       if (options?.executeCompleteStep) {
-        completeTask();
+        completeTask(data.application, type);
       }
 
       if (options?.goTo) {
@@ -292,7 +291,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       delete payload.urlParams?.misc;
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
-    completeTask();
+    completeTask(application, "job-selection");
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -321,6 +320,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
         application: response
       }
     });
+    completeTask(payload.data.application, payload.urlParams.page);
     setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -361,7 +361,7 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
         isCompleteTaskOnLoad
       );
     } else {
-      completeTask();
+      completeTask(payload.data.application, payload.urlParams.page);
     }
     setLoading(true)(dispatch);
   } catch (ex) {

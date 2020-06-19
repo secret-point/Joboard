@@ -8,6 +8,7 @@ import { getInitialData } from "./services";
 import { Store } from "redux";
 import StepFunctionService from "./services/step-function-service";
 import isNull from "lodash/isNull";
+import ICandidateApplication from "./@types/ICandidateApplication";
 
 declare global {
   interface Window {
@@ -15,6 +16,7 @@ declare global {
     Stage: string;
     stepFunctionService: StepFunctionService;
     isCompleteTaskOnLoad: boolean | undefined;
+    applicationData: ICandidateApplication | undefined;
   }
 }
 

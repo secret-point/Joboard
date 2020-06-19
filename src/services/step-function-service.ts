@@ -55,7 +55,7 @@ export default class StepFunctionService {
   connect(event: any) {
     console.log("Connected");
     if (window.isCompleteTaskOnLoad) {
-      completeTask("Complete Task On Load");
+      completeTask(window.applicationData, "Complete Task On Load");
     } else {
       startOrResumeWorkflow();
     }

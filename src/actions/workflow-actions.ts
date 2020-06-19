@@ -1,15 +1,20 @@
 import { WorkflowData, AppConfig } from "../@types/IPayload";
 import StepFunctionService from "../services/step-function-service";
+import ICandidateApplication from "../@types/ICandidateApplication";
 
 export const loadWorkflow = (
   requisitionId: string,
   applicationId: string,
   candidateId: string,
   appConfig: AppConfig,
-  isCompleteTaskOnLoad?: boolean
+  isCompleteTaskOnLoad?: boolean,
+  applicationData?: ICandidateApplication
 ) => {
   if (!window?.stepFunctionService?.websocket) {
-    window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
+    if (isCompleteTaskOnLoad) {
+      window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
+      window.applicationData = applicationData;
+    }
     window.stepFunctionService = StepFunctionService.load(
       requisitionId,
       applicationId,
@@ -40,15 +45,20 @@ export const goToStep = (workflowData: WorkflowData) => {
   }
 };
 
-export const completeTask = (stepName?: string) => {
-  console.log(`${stepName} completed`);
+export const completeTask = (
+  application?: ICandidateApplication,
+  step?: string
+) => {
+  console.log(`${step} completed`);
   if (window.stepFunctionService?.websocket) {
+    const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
     window.stepFunctionService.websocket?.send(
       JSON.stringify({
         action: "completeTask",
         applicationId: window.stepFunctionService.applicationId,
         candidateId: window.stepFunctionService.candidateId,
-        requisitionId: window.stepFunctionService.requisitionId
+        requisitionId: window.stepFunctionService.requisitionId,
+        jobSelectedOn
       })
     );
   }
