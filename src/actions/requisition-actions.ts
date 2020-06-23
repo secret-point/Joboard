@@ -8,6 +8,7 @@ import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
 import orderBy from "lodash/orderBy";
+import CandidateApplicationService from "../services/candidate-application-service";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -165,10 +166,17 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
 ) => {
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
   if (requisitionId) {
     try {
+      let application = payload.data.application;
+      if (application) {
+        application = await new CandidateApplicationService().getApplication(
+          applicationId
+        );
+      }
       const response = await new RequisitionService().getTimeSlots(
-        "childRequisition1"
+        application.jobSelected.childRequisitionId
       );
 
       if (response) {
