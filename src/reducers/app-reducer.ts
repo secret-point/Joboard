@@ -14,7 +14,9 @@ import { IAction } from "../@types/IActionType";
 import updateState from "immutability-helper";
 import {
   GET_REQUISITION_HEADER_INFO,
-  UPDATE_REQUISITION
+  UPDATE_REQUISITION,
+  UPDATE_SHIFTS,
+  RESET_FILTERS
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -222,6 +224,32 @@ const AppReducer = (state = initialState, action: IAction) => {
       return updateState(state, {
         isUpdateActionExecuted: {
           $set: false
+        }
+      });
+    }
+
+    case UPDATE_SHIFTS: {
+      const requisition = cloneDeep(state.data.requisition);
+      requisition.availableShifts = { ...payload.availableShifts };
+      return updateState(state, {
+        data: {
+          requisition: {
+            $set: requisition
+          }
+        }
+      });
+    }
+
+    case RESET_FILTERS: {
+      let jobOpportunities = cloneDeep(state.data.output["job-opportunities"]);
+      jobOpportunities = { ...payload };
+      return updateState(state, {
+        data: {
+          output: {
+            "job-opportunities": {
+              $set: jobOpportunities
+            }
+          }
         }
       });
     }

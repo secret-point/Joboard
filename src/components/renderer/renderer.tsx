@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Component } from "react";
 import ComponentMap from "../component-map";
 import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
@@ -171,7 +171,7 @@ const Renderer: React.FC<IRendererProps> = ({
     <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
       {componentList.map((component: any, index: number) => {
         const value =
-          component.properties.value || getValue(component.properties.dataKey);
+          getValue(component.properties.dataKey) || component.properties.value;
         const dataObject: any = {};
         if (component.componentValueProp) {
           dataObject[component.componentValueProp] =

@@ -1,5 +1,6 @@
 import { AxiosInstance } from "axios";
 import { axiosHelper } from "../helpers/axios-helper";
+import { AvailableFilter } from "../@types/IPayload";
 
 export default class RequisitionService {
   private readonly axiosInstance: AxiosInstance;
@@ -56,9 +57,18 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async getAllAvailableShifts(requisitionId: string, applicationId?: string) {
-    const response = await this.axiosInstance.get(
-      `/get-all-available-shifts/${requisitionId}/${applicationId}`
+  async getAllAvailableShifts(
+    requisitionId: string,
+    applicationId?: string,
+    payload?: AvailableFilter
+  ) {
+    const response = await this.axiosInstance.post(
+      `/get-all-available-shifts`,
+      {
+        requisitionId,
+        applicationId,
+        payload
+      }
     );
 
     return response.data;

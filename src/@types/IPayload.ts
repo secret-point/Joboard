@@ -23,7 +23,7 @@ export interface Requisition {
   childRequisitions: any[];
   selectedChildRequisition: any;
   jobDescription: any;
-  availableShifts:requistionAvailableShifts;
+  availableShifts: requistionAvailableShifts;
 }
 
 export interface ContingentOffer {
@@ -51,11 +51,61 @@ export interface UrlParam {
   misc: string;
 }
 
+export interface DaysHoursFilter {
+  day: string;
+  isActive: boolean;
+  startTime: string;
+  endTime: string;
+}
+
+export interface HOURS_PER_WEEK {
+  maximumValue: number;
+  minimumValue: number;
+}
+
+export interface Range {
+  HOURS_PER_WEEK: HOURS_PER_WEEK;
+}
+export interface day {
+  startTime: string;
+  endTime: string;
+}
+
+export interface SchedulePreference {
+  MONDAY: day;
+  TUESDAY: day;
+  WEDNESDAY: day;
+  THURSDAY: day;
+  FRIDAY: day;
+  SATURDAY: day;
+  SUNDAY: day;
+}
+
+export interface In {}
+
+export interface Eq {}
+
+export interface Filter {
+  range: Range;
+  schedulePreferences: SchedulePreference;
+  in: In;
+  eq: Eq;
+}
+
+export interface AvailableFilter {
+  sortBy: string;
+  filter: Filter;
+  seasonalOnly: boolean;
+  locale: string;
+}
+
 export interface AppConfig {
   stage: string;
   authenticationURL: string;
   dashboardUrl: string;
   stepFunctionEndpoint: string;
+  defaultDaysHoursFilter: DaysHoursFilter[];
+  defaultAvailableFilter: AvailableFilter;
 }
 
 export interface PageOrder {
@@ -87,7 +137,7 @@ export default interface Payload {
   history: History;
 }
 export interface requistionAvailableShifts {
-  shifts:requistionShifts[];
+  shifts: requistionShifts[];
 }
 export interface requistionShifts {
   basePayRate: string;
@@ -106,8 +156,8 @@ export interface requistionShifts {
   locationDescription: string;
   openCount: number;
   phoneToolTitle: string;
-  requisitionId:string;
+  requisitionId: string;
   shortDescription: string;
-  startTime:string;
+  startTime: string;
   time: string;
 }

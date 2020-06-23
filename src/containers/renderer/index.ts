@@ -4,6 +4,7 @@ import { onAction } from "../../actions";
 import { validateRequiredData } from "../../helpers/validate";
 import { withRouter } from "react-router-dom";
 import find from "lodash/find";
+import cloneDeep from "lodash/cloneDeep";
 
 const actions = {
   onAction
@@ -37,7 +38,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
   return {
     ...config,
     outputData: state.app.outputData,
-    data: state.app.data,
+    data: cloneDeep(state.app.data),
     pageId: page,
     isDataValid,
     currentPage: state.app.currentPage,

@@ -28,7 +28,9 @@ import {
   onGetChildRequisitions,
   onGetJobDescription,
   onGoToDescription,
-  onApplySortSelection
+  onApplySortSelection,
+  onApplyFilter,
+  onResetFilters
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -57,7 +59,9 @@ const actionMap: any = {
   GO_TO_DASHBOARD: onGoToDashboard,
   TERMINATE_APPLICATION: onTerminateApplication,
   COMPLETE_TASK: onCompleteTask,
-  UPDATE_WOTC_STATUS: onUpdateWotcStatus
+  UPDATE_WOTC_STATUS: onUpdateWotcStatus,
+  ON_APPLY_FILTER: onApplyFilter,
+  RESET_FILTERS: onResetFilters
 };
 
 export default actionMap;

@@ -1,6 +1,6 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload from "../@types/IPayload";
+import IPayload, { DaysHoursFilter } from "../@types/IPayload";
 import { goTo, setLoading } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
@@ -11,6 +11,8 @@ import orderBy from "lodash/orderBy";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
+export const UPDATE_SHIFTS = "UPDATE_SHIFTS";
+export const RESET_FILTERS = "RESET_FILTERS";
 
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -279,4 +281,104 @@ export const onApplySortSelection = (payload: IPayload) => async (
       ...requisition
     }
   });
+};
+
+const constructFilterPayload = (payload: IPayload) => {
+  const selectedSortKey =
+    propertyOf(payload.data.output)("job-opportunities.sortKey") || "FEATURED";
+
+  const maxHoursPerWeek = propertyOf(payload.data.output)(
+    "job-opportunities.maxHoursPerWeek"
+  );
+
+  let daysHoursFilter = (propertyOf(payload.data.output)(
+    "job-opportunities.daysHoursFilter"
+  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
+
+  const defaultFilter = payload.appConfig.defaultAvailableFilter;
+
+  const scheduleReference: any = {};
+  daysHoursFilter.forEach(filter => {
+    if (filter.isActive) {
+      scheduleReference[filter.day.toUpperCase()] = {
+        startTime: filter.startTime,
+        endTime: filter.endTime
+      };
+    }
+  });
+
+  defaultFilter.filter.schedulePreferences = scheduleReference;
+  defaultFilter.sortBy = selectedSortKey;
+  if (maxHoursPerWeek) {
+    defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
+      maxHoursPerWeek
+    );
+  }
+  return defaultFilter;
+};
+
+export const onApplyFilter = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const filter = constructFilterPayload(payload);
+  setLoading(true)(dispatch);
+  const requisitionId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
+  if (requisitionId) {
+    try {
+      const response = await new RequisitionService().getAllAvailableShifts(
+        requisitionId,
+        applicationId,
+        filter
+      );
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          ...response
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      console.log(ex);
+      setLoading(false)(dispatch);
+      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
+        dispatch({
+          type: UPDATE_SHIFTS,
+          payload: {
+            availableShifts: {
+              shifts: [],
+              total: 0
+            }
+          }
+        });
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Unable to get shifts"
+        )(dispatch);
+      }
+    }
+  }
+};
+
+export const onResetFilters = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  const sortKey = "FEATURED";
+  const maxHoursPerWeek = "40";
+  const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
+
+  const filterData = {
+    sortKey,
+    maxHoursPerWeek,
+    daysHoursFilter
+  };
+  dispatch({
+    type: RESET_FILTERS,
+    payload: {
+      ...filterData
+    }
+  });
+  payload.data.output["job-opportunities"] = filterData;
+
+  onApplyFilter(payload)(dispatch);
 };
