@@ -35,8 +35,11 @@ getInitialData()
     const requisitionId = urlParams.get("requisitionId");
     const agency: any = urlParams.get("agency");
     const page = urlParams.get("page");
+    const applicationId = urlParams.get("applicationId");
     if (!isNull(requisitionId) && !isNull(page)) {
-      window.location.assign(`/#/${page}/${requisitionId}`);
+      let url = `/#/${page}/${requisitionId}`;
+      url = !isNull(applicationId) ? `${url}/${applicationId}` : url;
+      window.location.assign(url);
     }
 
     if (!isNull(agency)) {

@@ -1,4 +1,4 @@
-import { goTo, setLoading } from "./actions";
+import { goTo, setLoading, onUpdateOutput } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
@@ -51,6 +51,7 @@ export const onGetApplication = (payload: IPayload) => async (
     onGetRequisitionHeaderInfo(payload)(dispatch);
     const candidateResponse = await onGetCandidate(payload)(dispatch);
     const { options } = payload;
+    console.log(options, candidateResponse);
     if (
       applicationId &&
       (options?.ignoreApplicationData || isEmpty(payload.data.application))
@@ -194,12 +195,13 @@ export const updateApplication = (payload: IPayload) => async (
     urlParams,
     isContentContainsSteps,
     activeStepIndex,
-    stepId
+    stepId,
+    output
   } = payload;
-  let updateData = data.output[currentPage.id];
+  let updateData = output[currentPage.id];
   let type = currentPage.id;
   if (isContentContainsSteps && activeStepIndex !== undefined) {
-    updateData = data.output[currentPage.id][activeStepIndex];
+    updateData = output[currentPage.id][activeStepIndex];
     type = stepId;
   }
   const applicationId = data.application.applicationId;
@@ -212,6 +214,7 @@ export const updateApplication = (payload: IPayload) => async (
           payload: updateData
         }
       );
+      onUpdateOutput(payload)(dispatch);
       dispatch({
         type: UPDATE_APPLICATION,
         payload: {

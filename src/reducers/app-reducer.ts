@@ -3,7 +3,8 @@ import {
   UPDATE_VALUE_CHANGE,
   ON_UPDATE_PAGE_ID,
   ON_SET_LOADING,
-  RESET_IS_UPDATE_ACTION_EXECUTED
+  RESET_IS_UPDATE_ACTION_EXECUTED,
+  UPDATE_OUTPUT
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -101,6 +102,16 @@ const AppReducer = (state = initialState, action: IAction) => {
           output: {
             $set: output
           }
+        }
+      });
+    }
+    case UPDATE_OUTPUT: {
+      const outputObject = cloneDeep(state.output);
+      const { output } = payload;
+      const newOutput = merge(output, outputObject);
+      return updateState(state, {
+        output: {
+          $set: newOutput
         }
       });
     }

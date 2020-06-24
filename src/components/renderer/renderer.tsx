@@ -1,10 +1,11 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import ComponentMap from "../component-map";
 import { Col } from "@stencil-react/components/layout";
 import set from "lodash/set";
 import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
 import { History } from "history";
+import { covertValueTo } from "../../helpers/render-helper";
 
 type IComponent = {
   component: string;
@@ -52,7 +53,6 @@ const Renderer: React.FC<IRendererProps> = ({
   components,
   pageId,
   onAction,
-  outputData,
   isDataValid,
   data,
   nextPage,
@@ -75,6 +75,17 @@ const Renderer: React.FC<IRendererProps> = ({
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
 
+  const getValueFromServiceData = useCallback(
+    (serviceData: any, valueKey: string, type: string) => {
+      let value = propertyOf(serviceData)(valueKey);
+      if (type) {
+        value = covertValueTo(type, value);
+      }
+      return value;
+    },
+    []
+  );
+
   useEffect(() => {
     const _components: any[] = [];
     let _component: IComponent = {
@@ -83,21 +94,31 @@ const Renderer: React.FC<IRendererProps> = ({
       Element: <span />
     };
 
+    const formData: any = {};
     if (components) {
       components.forEach((componentDetails: any) => {
         _component = componentDetails;
         _component.Element = ComponentMap[componentDetails.component];
         if (_component.Element) {
+          if (componentDetails.properties.valueKey) {
+            const value = getValueFromServiceData(
+              data,
+              componentDetails.properties.valueKey,
+              componentDetails.properties.covertValueTo
+            );
+            set(formData, componentDetails.properties.dataKey, value);
+          }
           _components.push(_component);
         } else {
           console.error(`${componentDetails.component} is missing`);
         }
       });
     }
+    if (!isEmpty(formData)) {
+      setForm(formData);
+    }
     setComponentsList(_components);
-
-    setForm({ ...data });
-  }, [components, outputData, data]);
+  }, [components, data, getValueFromServiceData]);
 
   const commonProps = {
     data,
@@ -115,29 +136,38 @@ const Renderer: React.FC<IRendererProps> = ({
     history
   };
 
-  const onValueChange = (
-    actionName: string,
-    keyName: string,
-    value: any,
-    options?: any
-  ) => {
-    const formData = Object.assign({}, form);
-    if (keyName && value) {
-      set(formData.output[pageId], keyName, value);
-      setForm(formData);
-    }
-    if (onAction && actionName) {
-      onAction(actionName, {
-        keyName,
-        value,
-        options,
-        ...commonProps
-      });
-    }
-  };
+  const onValueChange = useCallback(
+    (actionName: string, keyName: string, value: any, options?: any) => {
+      const formData = Object.assign({}, form);
+      console.log(actionName, keyName, value);
+      if (keyName && value) {
+        set(formData, keyName, value);
+        setForm(formData);
+      }
+      if (onAction && actionName !== "ON_VALUE_CHANGE") {
+        onAction(actionName, {
+          keyName,
+          value,
+          options,
+          ...commonProps
+        });
+      }
+    },
+    [form, onAction, commonProps]
+  );
 
   const onButtonClick = (actionName: string, options: any) => {
+    let output = {
+      [pageId]: form
+    };
+    if (isContentContainsSteps && activeStepIndex) {
+      output = {};
+      output[pageId] = {
+        [activeStepIndex]: form
+      };
+    }
     onAction(actionName, {
+      output,
       ...commonProps,
       ...options
     });
@@ -162,23 +192,25 @@ const Renderer: React.FC<IRendererProps> = ({
 
   const getValue = (dataKey: string) => {
     let value = propertyOf(data)(dataKey);
-    value = isEmpty(value) ? propertyOf(form.output[pageId])(dataKey) : value;
-    value = isEmpty(value) ? propertyOf(form.application)(dataKey) : value;
+    value = isEmpty(value) ? propertyOf(form)(dataKey) : value;
+    value = isEmpty(value) ? propertyOf(data.output[pageId])(dataKey) : value;
+    value = isEmpty(value) ? propertyOf(data.application)(dataKey) : value;
     return value;
   };
 
   return (
     <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
       {componentList.map((component: any, index: number) => {
-        const value =
+        let value =
           getValue(component.properties.dataKey) || component.properties.value;
         const dataObject: any = {};
         if (component.componentValueProp) {
           dataObject[component.componentValueProp] =
             getValue(component.valueKey) || component.defaultValue;
         }
-        if (showComponent(component.showComponentProperties)) {
-          return (
+
+        return (
+          showComponent(component.showComponentProperties) && (
             <component.Element
               key={`component-${index}`}
               {...component.properties}
@@ -191,10 +223,8 @@ const Renderer: React.FC<IRendererProps> = ({
               defaultValue={value}
               {...dataObject}
             />
-          );
-        } else {
-          return <span key={`component-${index}`} />;
-        }
+          )
+        );
       })}
     </Render>
   );

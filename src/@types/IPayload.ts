@@ -115,7 +115,7 @@ export interface PageOrder {
 }
 
 export default interface Payload {
-  outputData: OutputData;
+  output: any;
   data: ApplicationData;
   currentPage: Page;
   nextPage: Page;

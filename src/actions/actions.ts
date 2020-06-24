@@ -5,6 +5,7 @@ import find from "lodash/find";
 import { completeTask } from "./workflow-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
+export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
 export const ON_REDIRECT = "ON_REDIRECT";
 export const ON_UPDATE_PAGE_ID = "ON_UPDATE_PAGE_ID";
 export const ON_SET_LOADING = "ON_SET_LOADING";
@@ -18,6 +19,36 @@ type IOnChangeProps = {
 };
 
 export const onUpdateChange = (payload: IPayload) => (dispatch: Function) => {
+  const {
+    keyName,
+    value,
+    pageId,
+    isContentContainsSteps,
+    activeStepIndex
+  } = payload;
+  dispatch({
+    type: UPDATE_VALUE_CHANGE,
+    payload: {
+      keyName,
+      value,
+      pageId,
+      isContentContainsSteps,
+      activeStepIndex
+    }
+  });
+};
+
+export const onUpdateOutput = (payload: IPayload) => (dispatch: Function) => {
+  const { output } = payload;
+  dispatch({
+    type: UPDATE_OUTPUT,
+    payload: {
+      output: output
+    }
+  });
+};
+
+export const onFilterChange = (payload: IPayload) => (dispatch: Function) => {
   const {
     keyName,
     value,
