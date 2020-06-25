@@ -34,7 +34,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
   const { page } = ownProps.match?.params as any;
   let config = getConfig(state.app.pageConfig, ownProps);
 
-  const isDataValid = validateRequiredData(config, state.app.outputData, page);
+  const isDataValid = validateRequiredData(config, state.app.output, page);
   return {
     ...config,
     data: cloneDeep(state.app.data),
