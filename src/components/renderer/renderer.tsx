@@ -6,6 +6,7 @@ import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
 import { History } from "history";
 import { covertValueTo } from "../../helpers/render-helper";
+import { validateRequiredData } from "../../helpers/validate";
 
 type IComponent = {
   component: string;
@@ -36,6 +37,7 @@ export type IRendererProps = {
   Render?: any;
   renderProps: any;
   history: History;
+  output: any;
 };
 
 interface conditionShowComponentProps {
@@ -53,7 +55,6 @@ const Renderer: React.FC<IRendererProps> = ({
   components,
   pageId,
   onAction,
-  isDataValid,
   data,
   nextPage,
   currentPage,
@@ -61,19 +62,19 @@ const Renderer: React.FC<IRendererProps> = ({
   appConfig,
   pageOrder,
   candidateId,
-  hasResponseError,
-  errorMessage,
   isContentContainsSteps,
   activeStepIndex,
   stepId,
   stepsLength,
   renderProps,
   history,
+  output,
   gridGap = "s",
   Render = Col
 }) => {
   const [form, setForm] = useState<any>({});
   const [componentList, setComponentsList] = useState<IComponent[]>([]);
+  const [validations, setValidations] = useState<any>({});
 
   const getValueFromServiceData = useCallback(
     (serviceData: any, valueKey: string, type: string) => {
@@ -86,6 +87,19 @@ const Renderer: React.FC<IRendererProps> = ({
     []
   );
 
+  const getInitialValidations = useCallback((component: any) => {
+    const required = propertyOf(component)("properties.required");
+    const requiredErrorMessage = propertyOf(component)(
+      "properties.requiredErrorMessage"
+    );
+    if (required) {
+      return {
+        hasError: false,
+        errorMessage: requiredErrorMessage
+      };
+    }
+  }, []);
+
   useEffect(() => {
     const _components: any[] = [];
     let _component: IComponent = {
@@ -95,6 +109,7 @@ const Renderer: React.FC<IRendererProps> = ({
     };
 
     const formData: any = {};
+    const formValidations: any = {};
     if (components) {
       components.forEach((componentDetails: any) => {
         _component = componentDetails;
@@ -107,6 +122,14 @@ const Renderer: React.FC<IRendererProps> = ({
               componentDetails.properties.covertValueTo
             );
             set(formData, componentDetails.properties.dataKey, value);
+            const componentValidation = getInitialValidations(componentDetails);
+            if (componentValidation) {
+              set(
+                formValidations,
+                componentDetails.properties.dataKey,
+                componentValidation
+              );
+            }
           }
           _components.push(_component);
         } else {
@@ -118,7 +141,14 @@ const Renderer: React.FC<IRendererProps> = ({
       setForm(formData);
     }
     setComponentsList(_components);
-  }, [components, data, getValueFromServiceData]);
+    setValidations(formValidations);
+  }, [
+    components,
+    data,
+    output,
+    getValueFromServiceData,
+    getInitialValidations
+  ]);
 
   const commonProps = {
     data,
@@ -139,9 +169,10 @@ const Renderer: React.FC<IRendererProps> = ({
   const onValueChange = useCallback(
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
-      if (keyName && value) {
+      if (keyName && !isEmpty(value)) {
         set(formData, keyName, value);
         setForm(formData);
+        set(validations, `${keyName}.hasError`, false);
       }
       if (onAction && actionName !== "ON_VALUE_CHANGE") {
         onAction(actionName, {
@@ -152,7 +183,7 @@ const Renderer: React.FC<IRendererProps> = ({
         });
       }
     },
-    [form, onAction, commonProps]
+    [form, onAction, commonProps, validations]
   );
 
   const onButtonClick = (actionName: string, options: any) => {
@@ -165,11 +196,24 @@ const Renderer: React.FC<IRendererProps> = ({
         [activeStepIndex]: form
       };
     }
-    onAction(actionName, {
+
+    const validationData = validateRequiredData(
+      componentList,
+      pageId,
       output,
-      ...commonProps,
-      ...options
-    });
+      isContentContainsSteps,
+      activeStepIndex
+    );
+
+    if (validationData.valid) {
+      onAction(actionName, {
+        output,
+        ...commonProps,
+        ...options
+      });
+    } else {
+      setValidations(validationData.validComponents);
+    }
   };
 
   const showComponent = (
@@ -188,15 +232,28 @@ const Renderer: React.FC<IRendererProps> = ({
       return true;
     }
   };
-
   const getValue = (dataKey: string) => {
     let value = propertyOf(data)(dataKey);
     value = isEmpty(value) ? propertyOf(form)(dataKey) : value;
+    value = isEmpty(value) ? propertyOf(output[pageId])(dataKey) : value;
+    if (
+      isContentContainsSteps &&
+      activeStepIndex !== undefined &&
+      output[pageId]
+    ) {
+      value = isEmpty(value)
+        ? propertyOf(output[pageId][activeStepIndex])(dataKey)
+        : value;
+    }
     value = isEmpty(value) ? propertyOf(data.output[pageId])(dataKey) : value;
     value = isEmpty(value) ? propertyOf(data.application)(dataKey) : value;
     return value;
   };
 
+  const getValidationValue = (dataKey: string) => {
+    let value = propertyOf(validations)(dataKey);
+    return value;
+  };
   return (
     <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
       {componentList.map((component: any, index: number) => {
@@ -207,17 +264,20 @@ const Renderer: React.FC<IRendererProps> = ({
           dataObject[component.componentValueProp] =
             getValue(component.valueKey) || component.defaultValue;
         }
-
+        const componentValidation = getValidationValue(
+          component.properties.dataKey
+        );
         return (
           showComponent(component.showComponentProperties) && (
             <component.Element
               key={`component-${index}`}
               {...component.properties}
               onValueChange={onValueChange}
-              enableOnValidation={isDataValid}
+              enableOnValidation={true}
               value={value}
-              hasError={hasResponseError}
-              errorMessage={component.properties.errorMessage || errorMessage}
+              hasError={componentValidation?.hasError}
+              errorMessage={componentValidation?.errorMessage}
+              errorText={componentValidation?.errorMessage}
               onButtonClick={onButtonClick}
               defaultValue={value}
               {...dataObject}

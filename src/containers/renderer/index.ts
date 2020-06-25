@@ -34,12 +34,10 @@ const mapStateToProps = (state: any, ownProps: any) => {
   const { page } = ownProps.match?.params as any;
   let config = getConfig(state.app.pageConfig, ownProps);
 
-  const isDataValid = validateRequiredData(config, state.app.output, page);
   return {
     ...config,
     data: cloneDeep(state.app.data),
     pageId: page,
-    isDataValid,
     currentPage: state.app.currentPage,
     nextPage: state.app.nextPage,
     urlParams: ownProps.match?.params,
@@ -49,7 +47,8 @@ const mapStateToProps = (state: any, ownProps: any) => {
     hasResponseError: state.app.hasResponseError,
     errorMessage: state.app.errorMessage,
     isContentContainsSteps: ownProps.isContentContainsSteps,
-    activeStepIndex: ownProps.activeStepIndex
+    activeStepIndex: ownProps.activeStepIndex,
+    output: state.app.output
   };
 };
 

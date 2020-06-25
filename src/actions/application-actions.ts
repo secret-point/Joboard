@@ -205,6 +205,7 @@ export const updateApplication = (payload: IPayload) => async (
     type = stepId;
   }
   const applicationId = data.application.applicationId;
+  onUpdateOutput(payload)(dispatch);
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
       const response = await new CandidateApplicationService().updateApplication(
@@ -214,7 +215,6 @@ export const updateApplication = (payload: IPayload) => async (
           payload: updateData
         }
       );
-      onUpdateOutput(payload)(dispatch);
       dispatch({
         type: UPDATE_APPLICATION,
         payload: {
@@ -224,15 +224,12 @@ export const updateApplication = (payload: IPayload) => async (
       if (options?.updateCandidate) {
         onGetCandidate(payload, true)(dispatch);
       }
-
       if (options?.executeCompleteStep) {
         completeTask(data.application, type);
       }
-
       if (options?.goTo) {
         goTo(options?.goTo, urlParams)(dispatch);
       }
-
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
