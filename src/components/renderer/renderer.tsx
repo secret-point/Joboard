@@ -139,7 +139,6 @@ const Renderer: React.FC<IRendererProps> = ({
   const onValueChange = useCallback(
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
-      console.log(actionName, keyName, value);
       if (keyName && value) {
         set(formData, keyName, value);
         setForm(formData);
@@ -160,7 +159,7 @@ const Renderer: React.FC<IRendererProps> = ({
     let output = {
       [pageId]: form
     };
-    if (isContentContainsSteps && activeStepIndex) {
+    if (isContentContainsSteps && activeStepIndex !== undefined) {
       output = {};
       output[pageId] = {
         [activeStepIndex]: form
