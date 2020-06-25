@@ -43,7 +43,8 @@ const initialState: any = {
     requisition: {},
     application: {},
     candidate: {},
-    output: {}
+    output: {},
+    config: {}
   },
   applicationData: {},
   output: {},
@@ -66,6 +67,20 @@ const AppReducer = (state = initialState, action: IAction) => {
   switch (type) {
     case LOAD_INIT_DATA: {
       const outputDataObject = getOutputDataObject(payload[1].pageOrder);
+      const countries = payload[2];
+      let countryList: any[] = [];
+      let usa = {
+        value: "USA",
+        text: "United State"
+      };
+      countryList.push(usa);
+      countries.forEach((country: any) => {
+        const theCountry: any = {};
+        theCountry.value = country.code3;
+        theCountry.text = country.name;
+        countryList.push(theCountry);
+      });
+
       return updateState(state, {
         pageOrder: {
           $set: payload[1].pageOrder
@@ -76,6 +91,9 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           output: {
             $set: outputDataObject
+          },
+          config: {
+            $set: countryList
           }
         }
       });

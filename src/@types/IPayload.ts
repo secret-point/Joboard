@@ -1,4 +1,4 @@
-import ICandidateApplication from "./ICandidateApplication";
+import ICandidateApplication, { Candidate } from "./ICandidateApplication";
 import { History } from "history";
 export interface Consent {}
 
@@ -35,7 +35,7 @@ export interface ApplicationData {
   requisition: Requisition;
   application: ICandidateApplication;
   output: any;
-  candidate: any;
+  candidate: Candidate;
 }
 
 export interface Page {

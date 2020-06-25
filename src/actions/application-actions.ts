@@ -272,6 +272,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
   try {
     const { application } = payload.data;
     const { urlParams } = payload;
+
     const response = await new CandidateApplicationService().updateApplication({
       type: "job-confirm",
       applicationId: urlParams.applicationId,

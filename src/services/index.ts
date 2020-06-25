@@ -7,7 +7,8 @@ export const getInitialData = async () => {
   const configService = new ConfigService();
   const response = await axios.all([
     configService.getConfig(),
-    pageService.getPageOrder()
+    pageService.getPageOrder(),
+    configService.getCountryStateList()
   ]);
 
   return response;

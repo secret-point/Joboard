@@ -31,7 +31,9 @@ import {
   Popover,
   IFrame,
   Expander,
-  DaysHoursFilter
+  DaysHoursFilter,
+  AddressComponent,
+  TextAreaWithLength
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
@@ -82,7 +84,9 @@ const ComponentMap: any = {
   StepsContainer,
   IFrame,
   Expander,
-  DaysHoursFilter
+  DaysHoursFilter,
+  AddressComponent,
+  TextAreaWithLength
 };
 
 export default ComponentMap;

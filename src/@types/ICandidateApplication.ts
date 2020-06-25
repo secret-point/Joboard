@@ -1,9 +1,11 @@
+import { SelfIdentificationInfo } from "./candidate-application-service-requests";
+
 export interface ContingentOffer {
   offerAcceptedTime: string;
   offerAccepted: boolean;
 }
 
-export interface JobSelected{
+export interface JobSelected {
   childRequisitionId: string;
   headCountRequestId: string;
   jobSelectedOn: string;
@@ -41,4 +43,71 @@ export default interface ICandidateApplication {
   lastModificationDate?: any;
   shift: any;
   onlySeasonalShifts: boolean;
+}
+export interface Candidate {
+  candidateId: string;
+  candidateSFId: string;
+  firstName: string;
+  middleName: string;
+  lastName: string;
+  nameSuffix: string;
+  address: Address;
+  timezone: string;
+  mailId: string;
+  language: string;
+  preferredPhoneType: string;
+  phoneNumber: string;
+  phoneCountryCode: string;
+  homePhoneNumber: string;
+  homePhoneCountryCode: string;
+  alternatePhoneNumber: string;
+  alternatePhoneCountryCode: string;
+  selfIdentificationInfo: SelfIdentificationInfo;
+  employmentInfo: EmploymentInfo;
+  additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
+  metadata: any;
+  locale: string;
+  isAgencyUser: boolean;
+  isEmailVerified: boolean;
+  isPhoneVerified: boolean;
+  isSFUser: boolean;
+  isAgreeToCommunication: boolean;
+}
+export interface Address {
+  addressLine1: string;
+  addressLine2: string;
+  city: string;
+  state: string;
+  country: string;
+  zipcode: string;
+  countryCode: string;
+}
+
+export interface EmploymentInfo {
+  employeeId: string;
+  employeeType: string;
+  rehireEligibilityStatus: string;
+  rehireLocation: string;
+  rehireOverride: string;
+  startDate: string;
+  managerLogin: string;
+  department: string;
+  shiftCode: string;
+  agencyName: string;
+}
+
+export interface AdditionalBackgroundInfoRequest {
+  hasCriminalRecordWithinSevenYears: boolean | string;
+  hasPreviouslyWorkedAtAmazon: boolean | string;
+  mostRecentBuildingWorkedAtAmazon: string;
+  mostRecentTimePeriodWorkedAtAmazon: string;
+  previousLegalNames: string[];
+  governmentIdType: GovernmentIdType;
+  idNumber: string;
+  dateOfBirth: string;
+  address: Address;
+}
+export enum GovernmentIdType {
+  DRIVERS_LICENSE = "DRIVERS_LICENSE",
+  PASSPORT = "PASSPORT"
 }

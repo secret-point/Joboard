@@ -172,6 +172,7 @@ const Renderer: React.FC<IRendererProps> = ({
       if (keyName && !isEmpty(value)) {
         set(formData, keyName, value);
         setForm(formData);
+        console.log("formData", formData);
         set(validations, `${keyName}.hasError`, false);
       }
       if (onAction && actionName !== "ON_VALUE_CHANGE") {
