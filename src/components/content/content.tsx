@@ -5,7 +5,6 @@ import {
   MessageBannerType
 } from "@stencil-react/components/message-banner";
 import RendererContainer from "../../containers/renderer";
-import StepsContentRendererContainer from "../../containers/steps-content-renderer";
 import ModalContainer from "../../containers/modal/modal-container";
 
 export type IContentProps = {
@@ -18,7 +17,6 @@ export type IContentProps = {
 const Content: React.FC<IContentProps> = ({
   hasResponseError,
   errorMessage,
-  isContentContainsSteps,
   isContentContainsModals
 }) => {
   return (

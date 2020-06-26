@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 import Renderer from "../../components/renderer";
 import { onAction } from "../../actions";
-import { validateRequiredData } from "../../helpers/validate";
 import { withRouter } from "react-router-dom";
 import find from "lodash/find";
 import cloneDeep from "lodash/cloneDeep";
