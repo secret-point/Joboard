@@ -23,7 +23,7 @@ const getConfig = (config: any, ownProps: any) => {
   } else if (ownProps.isContentContainsSteps) {
     return config[ownProps.type]?.steps[ownProps.activeStepIndex];
   } else if (ownProps.isContentContainsModals) {
-    return config[ownProps.type]?.modals[ownProps.modalIndex];
+    return ownProps.modalConfig;
   } else {
     return config[ownProps.type]; //type is Header, Content or Footer
   }

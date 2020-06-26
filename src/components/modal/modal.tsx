@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Col } from "@stencil-react/components/layout";
+import propertyOf from "lodash/propertyOf";
 import RendererContainer from "../../containers/renderer";
 import {
   ModalContainer,
@@ -10,10 +12,11 @@ import { Button } from "@stencil-react/components/button";
 import { IconCross } from "@stencil-react/components/icons";
 import { Row } from "@stencil-react/components/layout";
 
-interface IModal {
-  modalIndex: number;
-  show: boolean;
-  onModalClose: Function;
+interface IModalContentComponent {
+  modal: any;
+  data: any;
+  onDismissModal: Function;
+  onButtonClick: Function;
 }
 
 export interface Filter {
@@ -26,21 +29,30 @@ export interface showOnProps {
   filter: Filter;
 }
 
-const Modal: React.FC<IModal> = ({ show, modalIndex, onModalClose }) => {
+const ModalContentComponent: React.FC<IModalContentComponent> = ({
+  modal,
+  onButtonClick
+}) => {
   const { pushModal } = React.useContext(ModalContext);
-
-  useEffect(() => {
-    if (show) {
-      pushModal(myModal);
-    }
-  }, [show, pushModal]);
 
   const onDismiss = (e: React.MouseEvent, resolve: any) => {
     resolve(e);
-    onModalClose();
   };
 
-  const myModal: ModalRendererFunction<any, any> = ({ resolve }) => (
+  const showModal = () => {
+    pushModal(modalRender);
+  };
+
+  const onAction = (e: React.MouseEvent, resolve: Function) => {
+    if (modal.actionProps.action) {
+      onButtonClick(modal.actionProps.action, {
+        options: modal.actionProps.options
+      });
+    }
+    resolve(e);
+  };
+
+  const modalRender: ModalRendererFunction<any, any> = ({ resolve }) => (
     <ModalContainer
       labelledBy="modal-labelling-example-title"
       describedBy="modal-labelling-example-description"
@@ -53,18 +65,30 @@ const Modal: React.FC<IModal> = ({ show, modalIndex, onModalClose }) => {
         </Row>
         <RendererContainer
           isContentContainsModals={true}
-          modalIndex={modalIndex}
+          modalConfig={modal}
           type="content"
         />
       </ModalContent>
-      {/* TODO: We will think how to get this right */}
-      {/* <ModalButtonBar>
-        <Button onClick={resolve}>Close modal</Button>
-      </ModalButtonBar> */}
+      {modal.actionProps && (
+        <Col padding="s">
+          <Button
+            {...modal.actionProps.buttonProperties}
+            onClick={(e: any) => onAction(e, resolve)}
+          >
+            {modal.actionProps.label}
+          </Button>
+        </Col>
+      )}
     </ModalContainer>
   );
 
-  return <span />;
+  return (
+    <Col gridGap="s">
+      <Button {...modal.buttonProperties} onClick={showModal}>
+        {modal.label}
+      </Button>
+    </Col>
+  );
 };
 
-export default Modal;
+export default ModalContentComponent;

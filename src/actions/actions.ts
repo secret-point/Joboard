@@ -11,6 +11,7 @@ export const ON_UPDATE_PAGE_ID = "ON_UPDATE_PAGE_ID";
 export const ON_SET_LOADING = "ON_SET_LOADING";
 export const RESET_IS_UPDATE_ACTION_EXECUTED =
   "RESET_IS_UPDATE_ACTION_EXECUTED";
+export const RESET_PAGE_OUTPUT = "RESET_PAGE_OUTPUT";
 
 type IOnChangeProps = {
   keyName: string;
@@ -124,12 +125,15 @@ export const onUpdatePageId = (payload: any) => async (dispatch: Function) => {
   }
 };
 
-export const onDismissModal = (dataKey: string) => (dispatch: Function) => {
+export const onDismissModal = (dataKey: string, pageId: string) => (
+  dispatch: Function
+) => {
   dispatch({
     type: UPDATE_VALUE_CHANGE,
     payload: {
       keyName: dataKey,
-      value: undefined
+      value: undefined,
+      pageId
     }
   });
 };
@@ -159,4 +163,10 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
 export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const { application } = payload.data;
   completeTask(application, "on-complete-task");
+};
+
+export const onResetPageOutput = () => (dispatch: Function) => {
+  dispatch({
+    type: RESET_PAGE_OUTPUT
+  });
 };

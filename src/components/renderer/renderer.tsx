@@ -166,6 +166,19 @@ const Renderer: React.FC<IRendererProps> = ({
     history
   };
 
+  const constructOutput = () => {
+    let output = {
+      [pageId]: form
+    };
+    if (isContentContainsSteps && activeStepIndex !== undefined) {
+      output = {};
+      output[pageId] = {
+        [activeStepIndex]: form
+      };
+    }
+    return output;
+  };
+
   const onValueChange = useCallback(
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
@@ -176,10 +189,12 @@ const Renderer: React.FC<IRendererProps> = ({
         set(validations, `${keyName}.hasError`, false);
       }
       if (onAction && actionName !== "ON_VALUE_CHANGE") {
+        let output = constructOutput();
         onAction(actionName, {
           keyName,
           value,
           options,
+          output: output,
           ...commonProps
         });
       }
@@ -188,16 +203,7 @@ const Renderer: React.FC<IRendererProps> = ({
   );
 
   const onButtonClick = (actionName: string, options: any) => {
-    let output = {
-      [pageId]: form
-    };
-    if (isContentContainsSteps && activeStepIndex !== undefined) {
-      output = {};
-      output[pageId] = {
-        [activeStepIndex]: form
-      };
-    }
-
+    let output = constructOutput();
     const validationData = validateRequiredData(
       componentList,
       pageId,

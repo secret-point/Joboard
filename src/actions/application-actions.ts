@@ -1,4 +1,4 @@
-import { goTo, setLoading, onUpdateOutput } from "./actions";
+import { goTo, setLoading, onUpdateOutput, onDismissModal } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
@@ -51,7 +51,6 @@ export const onGetApplication = (payload: IPayload) => async (
     onGetRequisitionHeaderInfo(payload)(dispatch);
     const candidateResponse = await onGetCandidate(payload)(dispatch);
     const { options } = payload;
-    console.log(options, candidateResponse);
     if (
       applicationId &&
       (options?.ignoreApplicationData || isEmpty(payload.data.application))
@@ -206,6 +205,9 @@ export const updateApplication = (payload: IPayload) => async (
   }
   const applicationId = data.application.applicationId;
   onUpdateOutput(payload)(dispatch);
+  if (options?.valueExitsInData) {
+    updateData = data.output[currentPage.id];
+  }
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
       const response = await new CandidateApplicationService().updateApplication(

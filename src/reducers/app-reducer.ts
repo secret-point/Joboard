@@ -4,7 +4,8 @@ import {
   ON_UPDATE_PAGE_ID,
   ON_SET_LOADING,
   RESET_IS_UPDATE_ACTION_EXECUTED,
-  UPDATE_OUTPUT
+  UPDATE_OUTPUT,
+  RESET_PAGE_OUTPUT
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -134,18 +135,28 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case ON_UPDATE_PAGE_ID: {
-      const newState = { ...state };
-      newState.loading = false;
-      newState.currentPage = find(state.pageOrder, {
+      const newState = cloneDeep(state);
+      const currentPage = find(state.pageOrder, {
         id: payload.updatedPageId
       });
       const nextPageIndex = findIndex(state.pageOrder, {
         id: newState.currentPage.id
       });
-      newState.nextPage = state.pageOrder[nextPageIndex + 1];
-      newState.pageConfig = payload.page.pageConfig;
-      newState.isUpdateActionExecuted = false;
-      return newState;
+      return updateState(state, {
+        loading: { $set: false },
+        currentPage: {
+          $set: currentPage
+        },
+        nextPage: {
+          $set: state.pageOrder[nextPageIndex + 1]
+        },
+        pageConfig: {
+          $set: payload.page.pageConfig
+        },
+        isUpdateActionExecuted: {
+          $set: false
+        }
+      });
     }
     case ON_RESPONSE_ERROR: {
       const newState = { ...state };
@@ -279,6 +290,19 @@ const AppReducer = (state = initialState, action: IAction) => {
               $set: jobOpportunities
             }
           }
+        }
+      });
+    }
+
+    case RESET_PAGE_OUTPUT: {
+      let data = cloneDeep(state.data);
+      data.output = {};
+      return updateState(state, {
+        data: {
+          $set: data
+        },
+        output: {
+          $set: {}
         }
       });
     }

@@ -38,6 +38,7 @@ import {
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
 import FlyoutContainer from "../containers/flyout";
+import ModalContainer from "../containers/modal/modal-container";
 import ImageContainer from "./image";
 import { Col, Row, Spacer, View } from "@stencil-react/components/layout";
 import { Card as StencilCard } from "@stencil-react/components/card";
@@ -86,7 +87,8 @@ const ComponentMap: any = {
   Expander,
   DaysHoursFilter,
   AddressComponent,
-  TextAreaWithLength
+  TextAreaWithLength,
+  Modal: ModalContainer
 };
 
 export default ComponentMap;

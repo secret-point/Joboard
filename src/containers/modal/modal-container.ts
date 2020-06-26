@@ -1,17 +1,20 @@
 import { connect } from "react-redux";
-import ModalContent from "../../components/modal";
+import Modal from "../../components/modal";
 import { onDismissModal } from "../../actions/actions";
+import find from "lodash/find";
 
 const actions = {
   onDismissModal
 };
 
 const mapStateToProps = (state: any, ownProps: any) => {
-  const modals = state.app.pageConfig.content?.modals || [];
+  let modal =
+    find(state.app.pageConfig[ownProps.placeholder || "content"].modals || [], {
+      id: ownProps.modalId
+    }) || {};
   return {
-    modals,
-    data: state.app.data.output[state.app.currentPage.id]
+    modal
   };
 };
 
-export default connect(mapStateToProps, actions)(ModalContent);
+export default connect(mapStateToProps, actions)(Modal);

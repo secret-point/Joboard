@@ -30,7 +30,6 @@ const Content: React.FC<IContentProps> = ({
           </Col>
         )}
         <RendererContainer type="content" />
-        {isContentContainsModals && <ModalContainer />}
       </Col>
     </Col>
   );

@@ -7,7 +7,9 @@ import {
   onGoBack,
   onGoToDashboard,
   onCompleteTask,
-  onFilterChange
+  onFilterChange,
+  onResetPageOutput,
+  onUpdateOutput
 } from "./actions";
 import {
   onStartApplication,
@@ -63,7 +65,9 @@ const actionMap: any = {
   UPDATE_WOTC_STATUS: onUpdateWotcStatus,
   ON_APPLY_FILTER: onApplyFilter,
   RESET_FILTERS: onResetFilters,
-  ON_FILTER_CHANGE: onFilterChange
+  ON_FILTER_CHANGE: onFilterChange,
+  ON_VALUE_UPDATE: onUpdateChange,
+  ON_RESET_OUTPUT_STATE: onResetPageOutput
 };
 
 export default actionMap;
