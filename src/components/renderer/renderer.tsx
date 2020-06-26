@@ -208,6 +208,7 @@ const Renderer: React.FC<IRendererProps> = ({
       componentList,
       pageId,
       output,
+      data,
       isContentContainsSteps,
       activeStepIndex
     );

@@ -1,20 +1,34 @@
 import { propertyOf, filter, set, isEmpty } from "lodash";
+import { ApplicationData } from "../@types/IPayload";
 
 const getValue = (
   output: any,
   dataKey: string,
   pageId: string,
+  data: ApplicationData,
   isContentContainsSteps?: boolean,
   activeStepIndex?: number
 ) => {
-  return isContentContainsSteps && activeStepIndex !== undefined
-    ? propertyOf(output[pageId][activeStepIndex])(dataKey)
-    : propertyOf(output[pageId])(dataKey);
+  let value = propertyOf(data)(dataKey);
+  value = isEmpty(value) ? propertyOf(output)(dataKey) : value;
+  value = isEmpty(value) ? propertyOf(output[pageId])(dataKey) : value;
+  if (
+    isContentContainsSteps &&
+    activeStepIndex !== undefined &&
+    output[pageId]
+  ) {
+    value = isEmpty(value)
+      ? propertyOf(output[pageId][activeStepIndex])(dataKey)
+      : value;
+  }
+  value = isEmpty(value) ? propertyOf(data.output[pageId])(dataKey) : value;
+  return value;
 };
 
 const isComponentRendered = (
   output: any,
   pageId: string,
+  data: ApplicationData,
   showComponentProperties?: any,
   isContentContainsSteps?: boolean,
   activeStepIndex?: number
@@ -25,6 +39,7 @@ const isComponentRendered = (
       output,
       dataKey,
       pageId,
+      data,
       isContentContainsSteps,
       activeStepIndex
     );
@@ -43,6 +58,7 @@ export const validateRequiredData = (
   components: any,
   pageId: string,
   output: any,
+  data: ApplicationData,
   isContentContainsSteps?: boolean,
   activeStepIndex?: number
 ) => {
@@ -65,16 +81,15 @@ export const validateRequiredData = (
         output,
         dataKey,
         pageId,
+        data,
         isContentContainsSteps,
         activeStepIndex
       );
-      isContentContainsSteps && activeStepIndex !== undefined
-        ? propertyOf(output[pageId][activeStepIndex])(dataKey)
-        : propertyOf(output[pageId])(dataKey);
       if (component.showComponentProperties) {
         componentRendered = isComponentRendered(
           output,
           pageId,
+          data,
           component.showComponentProperties,
           isContentContainsSteps,
           activeStepIndex
