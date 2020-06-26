@@ -155,6 +155,9 @@ const AppReducer = (state = initialState, action: IAction) => {
         },
         isUpdateActionExecuted: {
           $set: false
+        },
+        output: {
+          $set: {}
         }
       });
     }

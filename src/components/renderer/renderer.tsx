@@ -7,6 +7,7 @@ import isEmpty from "lodash/isEmpty";
 import { History } from "history";
 import { covertValueTo } from "../../helpers/render-helper";
 import { validateRequiredData } from "../../helpers/validate";
+import merge from "lodash/merge";
 
 type IComponent = {
   component: string;
@@ -203,11 +204,13 @@ const Renderer: React.FC<IRendererProps> = ({
   );
 
   const onButtonClick = (actionName: string, options: any) => {
-    let output = constructOutput();
+    let formData = constructOutput();
+    let _output = merge(output, formData);
+    console.log(formData, _output);
     const validationData = validateRequiredData(
       componentList,
       pageId,
-      output,
+      _output,
       data,
       isContentContainsSteps,
       activeStepIndex
@@ -215,7 +218,7 @@ const Renderer: React.FC<IRendererProps> = ({
 
     if (validationData.valid) {
       onAction(actionName, {
-        output,
+        output: _output,
         ...commonProps,
         ...options
       });
