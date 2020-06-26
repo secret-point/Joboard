@@ -1,4 +1,4 @@
-import { goTo, setLoading, onUpdateOutput, onDismissModal } from "./actions";
+import { goTo, setLoading, onUpdateOutput } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";

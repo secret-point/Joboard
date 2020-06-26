@@ -166,7 +166,7 @@ const Renderer: React.FC<IRendererProps> = ({
     history
   };
 
-  const constructOutput = () => {
+  const constructOutput = useCallback(() => {
     let output = {
       [pageId]: form
     };
@@ -177,7 +177,7 @@ const Renderer: React.FC<IRendererProps> = ({
       };
     }
     return output;
-  };
+  }, [isContentContainsSteps, activeStepIndex, pageId, form]);
 
   const onValueChange = useCallback(
     (actionName: string, keyName: string, value: any, options?: any) => {
@@ -199,7 +199,7 @@ const Renderer: React.FC<IRendererProps> = ({
         });
       }
     },
-    [form, onAction, commonProps, validations]
+    [form, onAction, commonProps, validations, constructOutput]
   );
 
   const onButtonClick = (actionName: string, options: any) => {

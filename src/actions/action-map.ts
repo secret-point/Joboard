@@ -8,8 +8,7 @@ import {
   onGoToDashboard,
   onCompleteTask,
   onFilterChange,
-  onResetPageOutput,
-  onUpdateOutput
+  onResetPageOutput
 } from "./actions";
 import {
   onStartApplication,

@@ -5,7 +5,6 @@ import {
   MessageBannerType
 } from "@stencil-react/components/message-banner";
 import RendererContainer from "../../containers/renderer";
-import ModalContainer from "../../containers/modal/modal-container";
 
 export type IContentProps = {
   hasResponseError: boolean;
@@ -16,8 +15,7 @@ export type IContentProps = {
 
 const Content: React.FC<IContentProps> = ({
   hasResponseError,
-  errorMessage,
-  isContentContainsModals
+  errorMessage
 }) => {
   return (
     <Col gridGap="m" padding="1.5rem">

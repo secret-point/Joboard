@@ -16,13 +16,14 @@ interface CounterMessageBannerProps {
   application: ICandidateApplication;
 }
 
+let myInterval: any = null;
+let reserveTime: number;
+
 const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
   application
 }) => {
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
-  let myInterval: any = null;
-  let reserveTime: number;
 
   useEffect(() => {
     if (!isEmpty(application)) {

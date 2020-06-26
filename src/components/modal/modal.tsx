@@ -1,6 +1,5 @@
 import React from "react";
 import { Col } from "@stencil-react/components/layout";
-import propertyOf from "lodash/propertyOf";
 import RendererContainer from "../../containers/renderer";
 import {
   ModalContainer,
