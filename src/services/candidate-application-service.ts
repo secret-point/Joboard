@@ -62,4 +62,18 @@ export default class CandidateApplicationService {
     });
     return await this.getApplication(applicationId);
   }
+
+  async updateWorkflowStepName(
+    applicationId: string,
+    workflowStepName: string
+  ) {
+    const response = await this.axiosInstance.post(
+      `/update-workflow-step-name`,
+      {
+        applicationId,
+        workflowStepName
+      }
+    );
+    return response.data;
+  }
 }
