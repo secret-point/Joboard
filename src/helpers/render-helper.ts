@@ -11,7 +11,11 @@ export const covertValueTo = (type: string, value: any) => {
       }
     }
     case "DATE_TO_STRING": {
-      return isEmpty(value) ? value : moment(value).format("YYYY-MM-DD");
+      return isEmpty(value)
+        ? value
+        : moment(value)
+            .utc()
+            .format("YYYY-MM-DD");
     }
     default:
       return value;
