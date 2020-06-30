@@ -5,7 +5,8 @@ import {
   ON_SET_LOADING,
   RESET_IS_UPDATE_ACTION_EXECUTED,
   UPDATE_OUTPUT,
-  RESET_PAGE_OUTPUT
+  RESET_PAGE_OUTPUT,
+  SHOW_NAVBAR
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -306,6 +307,14 @@ const AppReducer = (state = initialState, action: IAction) => {
         },
         output: {
           $set: {}
+        }
+      });
+    }
+
+    case SHOW_NAVBAR: {
+      return updateState(state, {
+        pageConfig: {
+          $set: payload.pageConfig
         }
       });
     }

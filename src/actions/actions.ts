@@ -12,6 +12,7 @@ export const ON_SET_LOADING = "ON_SET_LOADING";
 export const RESET_IS_UPDATE_ACTION_EXECUTED =
   "RESET_IS_UPDATE_ACTION_EXECUTED";
 export const RESET_PAGE_OUTPUT = "RESET_PAGE_OUTPUT";
+export const SHOW_NAVBAR = "SHOW_NAVBAR";
 
 type IOnChangeProps = {
   keyName: string;
@@ -168,5 +169,16 @@ export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
 export const onResetPageOutput = () => (dispatch: Function) => {
   dispatch({
     type: RESET_PAGE_OUTPUT
+  });
+};
+
+export const onShowNavbar = () => (dispatch: Function) => {
+  dispatch({
+    type: SHOW_NAVBAR,
+    payload: {
+      pageConfig: {
+        showNavbar: true
+      }
+    }
   });
 };

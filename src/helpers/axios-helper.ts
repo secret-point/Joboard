@@ -30,6 +30,8 @@ const errorHandler = (error: any) => {
 
   if (error.response && error.response.status === 401) {
     launchAuthentication();
+  } else if (error.response && error.response.status === 403) {
+    window.location.assign("/#/403");
   }
   return Promise.reject({ ...error });
 };
