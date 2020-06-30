@@ -72,7 +72,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       let countryList: any[] = [];
       let usa = {
         value: "USA",
-        text: "United State"
+        text: "United States"
       };
       countryList.push(usa);
       countries.forEach((country: any) => {
