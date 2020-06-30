@@ -67,7 +67,7 @@ export default class CandidateApplicationService {
     applicationId: string,
     workflowStepName: string
   ) {
-    const response = await this.axiosInstance.post(
+    const response = await this.axiosInstance.put(
       `/update-workflow-step-name`,
       {
         applicationId,
