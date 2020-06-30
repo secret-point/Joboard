@@ -7,7 +7,7 @@ import { Col, Row } from "@stencil-react/components/layout";
 import { Text } from "@stencil-react/components/text";
 import { connect } from "react-redux";
 import { onShowNavbar } from "../../actions/actions";
-import { IconCrossCircle } from "@stencil-react/components/icons";
+import { IconCrossCircle, IconClock } from "@stencil-react/components/icons";
 import { Button } from "@stencil-react/components/button";
 
 interface Error403PageProps {
@@ -15,7 +15,7 @@ interface Error403PageProps {
   appConfig: any;
 }
 
-const Error403Page: React.FC<Error403PageProps> = ({
+const TimeoutPage: React.FC<Error403PageProps> = ({
   onShowNavbar,
   appConfig
 }) => {
@@ -34,12 +34,13 @@ const Error403Page: React.FC<Error403PageProps> = ({
           <Col gridGap="m" padding="l">
             <Text fontSize="m">
               <Row gridGap={4} alignItems="center">
-                <IconCrossCircle color="negative" title="Access Denied" />
-                <Col>Access Denied</Col>
+                <IconClock color="warning" title="Session Expired" />
+                <Col>Session Expired</Col>
               </Row>
             </Text>
             <Text fontSize="xs">
-              You are not authorized to view the information you requested.
+              Due to inactivity, you are session is expired, Please return to
+              dashboard and resume the application.
             </Text>
             <Button primary onClick={onClick}>
               Return to dashboard
@@ -61,4 +62,4 @@ const mapStateToProps = (state: any, ownProps: any) => {
   };
 };
 
-export default connect(mapStateToProps, actions)(Error403Page);
+export default connect(mapStateToProps, actions)(TimeoutPage);

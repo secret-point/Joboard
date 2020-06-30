@@ -226,17 +226,17 @@ export const updateApplication = (payload: IPayload) => async (
       if (options?.updateCandidate) {
         onGetCandidate(payload, true)(dispatch);
       }
+      setLoading(false)(dispatch);
       if (options?.executeCompleteStep) {
         completeTask(data.application, type);
       }
       if (options?.goTo) {
         goTo(options?.goTo, urlParams)(dispatch);
       }
-      setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
       onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to update application"
+        ex?.response?.data?.errorMessage || "Failed to update application"
       )(dispatch);
     }
   } else {
@@ -300,7 +300,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
     setLoading(false)(dispatch);
     console.log(ex);
     onUpdateError(
-      ex?.response?.data?.errorMessage || "Unable to update application"
+      ex?.response?.data?.errorMessage || "Failed to update application"
     )(dispatch);
   }
 };
@@ -323,13 +323,13 @@ export const onTerminateApplication = (payload: IPayload) => async (
         application: response
       }
     });
+    setLoading(false)(dispatch);
     completeTask(payload.data.application, payload.urlParams.page);
-    setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);
     onUpdateError(
-      ex?.response?.data?.errorMessage || "Unable to update application"
+      ex?.response?.data?.errorMessage || "Failed to update application"
     )(dispatch);
   }
 };
@@ -371,7 +371,7 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
     setLoading(false)(dispatch);
     console.log(ex);
     onUpdateError(
-      ex?.response?.data?.errorMessage || "Unable to update application"
+      ex?.response?.data?.errorMessage || "Failed to update application"
     )(dispatch);
   }
 };

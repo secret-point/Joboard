@@ -63,6 +63,7 @@ export default class StepFunctionService {
 
   close(event: any) {
     console.log(event);
+    window.location.assign("/#/timeout");
   }
 
   message(event: MessageEvent) {

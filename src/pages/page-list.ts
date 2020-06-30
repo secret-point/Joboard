@@ -10,3 +10,8 @@ export const Error403Page = Loadable({
   loading: Loader,
   loader: () => import("./app/error-403")
 });
+
+export const TimeoutPage = Loadable({
+  loading: Loader,
+  loader: () => import("./app/timeout")
+});

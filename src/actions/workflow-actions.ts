@@ -72,6 +72,7 @@ export const completeTask = (
   console.log(`${step} completed`);
   if (window.stepFunctionService?.websocket) {
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
+    setLoading(true)(window.reduxStore.dispatch);
     window.stepFunctionService.websocket?.send(
       JSON.stringify({
         action: "completeTask",
