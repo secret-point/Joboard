@@ -67,20 +67,27 @@ export const goToStep = (workflowData: WorkflowData) => {
 
 export const completeTask = (
   application?: ICandidateApplication,
-  step?: string
+  step?: string,
+  isBackButton?: boolean
 ) => {
   console.log(`${step} completed`);
   if (window.stepFunctionService?.websocket) {
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
     setLoading(true)(window.reduxStore.dispatch);
-    window.stepFunctionService.websocket?.send(
-      JSON.stringify({
-        action: "completeTask",
-        applicationId: window.stepFunctionService.applicationId,
-        candidateId: window.stepFunctionService.candidateId,
-        requisitionId: window.stepFunctionService.requisitionId,
-        jobSelectedOn
-      })
-    );
+    const data: any = {
+      action: "completeTask",
+      applicationId: window.stepFunctionService.applicationId,
+      candidateId: window.stepFunctionService.candidateId,
+      requisitionId: window.stepFunctionService.requisitionId,
+      jobSelectedOn
+    };
+
+    if (isBackButton) {
+      data.workflowStepName = step;
+    } else {
+      data.workflowStepName = "";
+    }
+
+    window.stepFunctionService.websocket?.send(JSON.stringify(data));
   }
 };

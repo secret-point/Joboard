@@ -8,7 +8,8 @@ import {
   onGoToDashboard,
   onCompleteTask,
   onFilterChange,
-  onResetPageOutput
+  onResetPageOutput,
+  onBackButtonCompleteTask
 } from "./actions";
 import {
   onStartApplication,
@@ -66,7 +67,8 @@ const actionMap: any = {
   RESET_FILTERS: onResetFilters,
   ON_FILTER_CHANGE: onFilterChange,
   ON_VALUE_UPDATE: onUpdateChange,
-  ON_RESET_OUTPUT_STATE: onResetPageOutput
+  ON_RESET_OUTPUT_STATE: onResetPageOutput,
+  ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask
 };
 
 export default actionMap;

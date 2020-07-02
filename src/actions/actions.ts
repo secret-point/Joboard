@@ -3,6 +3,7 @@ import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import find from "lodash/find";
 import { completeTask } from "./workflow-actions";
+import isEmpty from "lodash/isEmpty";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -164,6 +165,16 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
 export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const { application } = payload.data;
   completeTask(application, "on-complete-task");
+};
+
+export const onBackButtonCompleteTask = (payload: IPayload) => (
+  dispatch: Function
+) => {
+  const { application } = payload.data;
+  const options = payload.options;
+  if (!isEmpty(options?.stepName)) {
+    completeTask(application, options?.stepName, true);
+  }
 };
 
 export const onResetPageOutput = () => (dispatch: Function) => {
