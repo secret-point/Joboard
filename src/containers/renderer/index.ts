@@ -30,15 +30,13 @@ const getConfig = (config: any, ownProps: any) => {
 };
 
 const mapStateToProps = (state: any, ownProps: any) => {
-  const { page } = ownProps.match?.params as any;
   let config = getConfig(state.app.pageConfig, ownProps);
 
   return {
     ...config,
     data: cloneDeep(state.app.data),
-    pageId: page,
+    pageId: state.app?.currentPage?.id,
     currentPage: state.app.currentPage,
-    nextPage: state.app.nextPage,
     urlParams: ownProps.match?.params,
     appConfig: state.app.appConfig,
     pageOrder: state.app.pageOrder,

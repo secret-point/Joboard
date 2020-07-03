@@ -1,4 +1,4 @@
-import { goTo, setLoading, onUpdateOutput } from "./actions";
+import { goTo, setLoading, onUpdateOutput, onUpdatePageId } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
@@ -116,9 +116,10 @@ export const onGetCandidate = (
 };
 
 export const onLaunchFCRA = (payload: IPayload) => (dispatch: Function) => {
-  const { urlParams } = payload;
-  const url = `/app/fcra/${urlParams.requisitionId}/${urlParams.applicationId}`;
-  dispatch(push(url));
+  // const { urlParams } = payload;
+  // const url = `/app/${urlParams.requisitionId}/${urlParams.applicationId}`;
+  onUpdatePageId("fcra")(dispatch);
+  //dispatch(push(url));
 };
 
 export const continueWithFCRADecline = (payload: IPayload) => (

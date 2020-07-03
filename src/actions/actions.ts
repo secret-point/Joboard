@@ -1,7 +1,6 @@
 import IPayload, { UrlParam } from "./../@types/IPayload";
 import { push } from "react-router-redux";
 import PageService from "../services/page-service";
-import find from "lodash/find";
 import { completeTask } from "./workflow-actions";
 import isEmpty from "lodash/isEmpty";
 
@@ -80,10 +79,12 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
 ) => {
   if (urlParams) {
     const { requisitionId, applicationId, misc } = urlParams;
-    path = `/app/${path}/${requisitionId}/${applicationId}`;
+    const page = path;
+    path = `/app/${requisitionId}/${applicationId}`;
     if (misc) {
       path = `${path}/${misc}`;
     }
+    onUpdatePageId(page)(dispatch);
     dispatch(push(path));
   } else {
     dispatch(push(path));
@@ -93,14 +94,21 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
 export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   const { requisitionId, applicationId } = payload.urlParams;
   const { goTo } = payload.options;
-  let path = `/app/${goTo}/${requisitionId}`;
+  let path = `/app/${requisitionId}`;
   if (applicationId) {
     path = `${path}/${applicationId}`;
   }
+  onUpdatePageId(goTo)(dispatch);
   dispatch(push(path));
 };
 
 export const onGoBack = (payload: IPayload) => (dispatch: Function) => {
+  const page = window.sessionStorage.getItem("back-page");
+  console.log(page);
+  if (page) {
+    window.sessionStorage.removeItem("back-page");
+    onUpdatePageId(page)(dispatch);
+  }
   payload.history.goBack();
 };
 
@@ -108,23 +116,16 @@ export const onSubmit = (payload: any) => async (dispatch: Function) => {
   console.log(payload);
 };
 
-export const onUpdatePageId = (payload: any) => async (dispatch: Function) => {
-  const pageOrder = find(payload.pageOrder || [], {
-    id: payload.updatedPageId
-  });
-  if (pageOrder) {
-    const pageConfig = await new PageService().getPageConfig(
-      pageOrder.configPath
-    );
+export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
+  const pageConfig = await new PageService().getPageConfig(`${page}.json`);
 
-    dispatch({
-      type: ON_UPDATE_PAGE_ID,
-      payload: {
-        updatedPageId: payload.updatedPageId,
-        page: pageConfig
-      }
-    });
-  }
+  dispatch({
+    type: ON_UPDATE_PAGE_ID,
+    payload: {
+      updatedPageId: page,
+      page: pageConfig
+    }
+  });
 };
 
 export const onDismissModal = (dataKey: string, pageId: string) => (

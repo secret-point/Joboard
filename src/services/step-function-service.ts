@@ -4,8 +4,10 @@ import { isJson } from "../helpers/utils";
 import {
   startOrResumeWorkflow,
   goToStep,
-  completeTask
+  completeTask,
+  sendHeartBeatWorkflow
 } from "../actions/workflow-actions";
+import { setInterval } from "timers";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -15,6 +17,9 @@ export default class StepFunctionService {
   appConfig: any;
   stepFunctionEndpoint: string | undefined;
   isCompleteTaskOnLoad: boolean | undefined;
+  interval: any;
+  SECONDS: number = 60000;
+  MINUTES: number = 9;
 
   constructor(
     requisitionId: string,
@@ -40,6 +45,10 @@ export default class StepFunctionService {
       this.websocket.onclose = this.close;
       this.websocket.onmessage = this.message;
       this.websocket.onerror = this.error;
+
+      this.interval = setInterval(() => {
+        sendHeartBeatWorkflow();
+      }, this.SECONDS * this.MINUTES);
     }
   }
 

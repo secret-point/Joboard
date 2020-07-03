@@ -1,9 +1,10 @@
 import { WorkflowData, AppConfig } from "../@types/IPayload";
 import StepFunctionService from "../services/step-function-service";
 import ICandidateApplication from "../@types/ICandidateApplication";
-import { setLoading } from "./actions";
+import { setLoading, onUpdatePageId } from "./actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import { UPDATE_APPLICATION } from "./application-actions";
+import { push } from "react-router-redux";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -38,6 +39,14 @@ export const startOrResumeWorkflow = () => {
   );
 };
 
+export const sendHeartBeatWorkflow = () => {
+  window.stepFunctionService.websocket?.send(
+    JSON.stringify({
+      action: "heartbeat"
+    })
+  );
+};
+
 export const goToStep = (workflowData: WorkflowData) => {
   const { app } = window.reduxStore.getState();
   const application = app.data.application;
@@ -59,8 +68,12 @@ export const goToStep = (workflowData: WorkflowData) => {
         console.log(ex);
         setLoading(false)(window.reduxStore.dispatch);
       });
-    window.location.assign(
-      `/#/app/${workflowData.stepName}/${application.parentRequisitionId}/${application.applicationId}`
+    onUpdatePageId(workflowData.stepName)(window.reduxStore.dispatch);
+    window.localStorage.setItem("page", workflowData.stepName);
+    window.reduxStore.dispatch(
+      push(
+        `/app/${application.parentRequisitionId}/${application.applicationId}`
+      )
     );
   }
 };

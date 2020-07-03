@@ -1,10 +1,11 @@
 import moment from "moment";
 import isEmpty from "lodash/isEmpty";
+import isBoolean from "lodash/isBoolean";
 
 export const covertValueTo = (type: string, value: any) => {
   switch (type) {
     case "BOOL_TO_STRING": {
-      if (!isEmpty(value)) {
+      if (isBoolean(value)) {
         return value ? "yes" : "no";
       } else {
         return value;

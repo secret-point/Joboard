@@ -52,7 +52,6 @@ const initialState: any = {
   output: {},
   currentPageOutput: {},
   currentPage: {},
-  nextPage: {},
   currentStep: 0,
   hasResponseError: false,
   errorMessage: null,
@@ -136,20 +135,12 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case ON_UPDATE_PAGE_ID: {
-      const newState = cloneDeep(state);
-      const currentPage = find(state.pageOrder, {
-        id: payload.updatedPageId
-      });
-      const nextPageIndex = findIndex(state.pageOrder, {
-        id: newState.currentPage.id
-      });
+      const currentPage: any = {};
+      currentPage.id = payload.updatedPageId;
       return updateState(state, {
         loading: { $set: false },
         currentPage: {
           $set: currentPage
-        },
-        nextPage: {
-          $set: state.pageOrder[nextPageIndex + 1]
         },
         pageConfig: {
           $set: payload.page.pageConfig

@@ -17,7 +17,6 @@ export const convertPramsToJson = (params: string) => {
 
 export const launchAuthentication = () => {
   let hash = window.location.hash.substr(1);
-  hash = hash.replace("/app", "");
 
   const origin = window.location.origin;
   const redirectUrl = `${origin}/#${hash}`;

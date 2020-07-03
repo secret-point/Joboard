@@ -1,7 +1,7 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { DaysHoursFilter } from "../@types/IPayload";
-import { goTo, setLoading } from "./actions";
+import { goTo, setLoading, onUpdatePageId } from "./actions";
 import { onUpdateError } from "./error-actions";
 import { push } from "react-router-redux";
 import find from "lodash/find";
@@ -136,7 +136,7 @@ export const onGoToDescription = (payload: IPayload) => async (
   const childRequisitionId =
     payload.selectedRequisitionId ||
     payload.data.requisition.selectedChildRequisition.requisitionId;
-  const path = `/app/${goTo}/${requisitionId}/${applicationId}/${childRequisitionId}`;
+  const path = `/app/${requisitionId}/${applicationId}/${childRequisitionId}`;
 
   const { requisition } = payload.data;
 
@@ -158,6 +158,9 @@ export const onGoToDescription = (payload: IPayload) => async (
       selectedChildRequisition: childRequisition
     }
   });
+
+  window.sessionStorage.setItem("back-page", payload.currentPage.id);
+  onUpdatePageId(goTo)(dispatch);
   dispatch(push(path));
 };
 

@@ -26,8 +26,9 @@ const Page: React.FC<IConsentPageProps> = ({
   pageConfig
 }) => {
   useEffect(() => {
-    if (urlPageId !== currentPageId) {
-      onUpdatePageId({ updatedPageId: urlPageId, pageOrder });
+    if (isEmpty(currentPageId)) {
+      const page = window.localStorage.getItem("page");
+      onUpdatePageId(page);
     }
   }, [urlPageId, currentPageId, onUpdatePageId, pageOrder]);
 

@@ -24,7 +24,6 @@ export type IRendererProps = {
   isDataValid: boolean;
   data?: any;
   currentPage: any;
-  nextPage: any;
   urlParams: any;
   appConfig: any;
   pageOrder: any;
@@ -57,7 +56,6 @@ const Renderer: React.FC<IRendererProps> = ({
   pageId,
   onAction,
   data,
-  nextPage,
   currentPage,
   urlParams,
   appConfig,
@@ -101,6 +99,17 @@ const Renderer: React.FC<IRendererProps> = ({
     }
   }, []);
 
+  const getValueFromStoreOutput = useCallback(
+    (outputData: any, dataKey: string, type: string) => {
+      let value = propertyOf(outputData[pageId])(dataKey);
+      if (type) {
+        value = covertValueTo(type, value);
+      }
+      return value;
+    },
+    [pageId]
+  );
+
   useEffect(() => {
     const _components: any[] = [];
     let _component: IComponent = {
@@ -117,12 +126,20 @@ const Renderer: React.FC<IRendererProps> = ({
         _component.Element = ComponentMap[componentDetails.component];
         if (_component.Element) {
           if (componentDetails.properties.valueKey) {
-            const value = getValueFromServiceData(
-              data,
-              componentDetails.properties.valueKey,
-              componentDetails.properties.covertValueTo
+            const {
+              valueKey,
+              covertValueTo,
+              dataKey
+            } = componentDetails.properties;
+            let value = getValueFromStoreOutput(
+              data.output,
+              dataKey,
+              covertValueTo
             );
-            set(formData, componentDetails.properties.dataKey, value);
+            if (!value) {
+              value = getValueFromServiceData(data, valueKey, covertValueTo);
+            }
+            set(formData, dataKey, value);
             const componentValidation = getInitialValidations(componentDetails);
             if (componentValidation) {
               set(
@@ -148,14 +165,14 @@ const Renderer: React.FC<IRendererProps> = ({
     data,
     output,
     getValueFromServiceData,
-    getInitialValidations
+    getInitialValidations,
+    getValueFromStoreOutput
   ]);
 
   const commonProps = {
     data,
     pageId,
     currentPage,
-    nextPage,
     urlParams,
     appConfig,
     pageOrder,

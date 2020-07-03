@@ -11,7 +11,7 @@ const Routes: React.FC = () => {
         <Route exact path="/timeout" component={TimeoutPage} />
         <Route
           exact
-          path="/app/:page/:requisitionId/:applicationId?/:misc?"
+          path="/app/:requisitionId/:applicationId?/:misc?"
           component={ApplicationPage}
         />
         <Route
