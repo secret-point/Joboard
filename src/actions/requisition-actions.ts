@@ -185,14 +185,15 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
           nheSlot.title = slot.date;
-          const nheSlotLocation: string =
-            slot.location.streetAddress +
-            ", " +
-            slot.location.city +
-            ", " +
-            slot.location.state +
-            ", " +
-            slot.location.postalCode;
+          const nheSlotLocation: string = !slot.location
+            ? ""
+            : slot.location.streetAddress +
+              ", " +
+              slot.location.city +
+              ", " +
+              slot.location.state +
+              ", " +
+              slot.location.postalCode;
           nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
           nheSlot.recruitingEventId = slot.recruitingEventId;
           nheSlots.push(nheSlot);
