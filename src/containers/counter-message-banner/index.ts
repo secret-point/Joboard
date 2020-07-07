@@ -1,5 +1,10 @@
+import { onUpdatePageId } from "./../../actions/actions";
 import { connect } from "react-redux";
 import CounterMessageBanner from "../../components/counter-message-banner";
+
+const actions = {
+  onUpdatePageId
+};
 
 const mapStateToProps = (state: any, ownProps: any) => {
   return {
@@ -7,4 +12,4 @@ const mapStateToProps = (state: any, ownProps: any) => {
   };
 };
 
-export default connect(mapStateToProps, {})(CounterMessageBanner);
+export default connect(mapStateToProps, actions)(CounterMessageBanner);

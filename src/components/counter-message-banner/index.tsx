@@ -14,13 +14,15 @@ const RESERVED_TIME_IN_HOURS = 3;
 
 interface CounterMessageBannerProps {
   application: ICandidateApplication;
+  onUpdatePageId: Function;
 }
 
 let myInterval: any = null;
 let reserveTime: number;
 
 const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
-  application
+  application,
+  onUpdatePageId
 }) => {
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
@@ -44,9 +46,9 @@ const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
         Math.floor((reserveTime - hours * HOUR_IN_SECONDS) / MIN_IN_SECONDS)
       );
       if (reserveTime < MIN_IN_SECONDS) {
-        completeTask(application);
         console.log("timeout");
         clearInterval(myInterval);
+        onUpdatePageId("session-timeout");
       }
     }, MIN_IN_SECONDS * 1000);
   }, [hours, application, minutes]);
