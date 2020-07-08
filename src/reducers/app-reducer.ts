@@ -11,8 +11,6 @@ import {
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
 import map from "lodash/map";
-import findIndex from "lodash/findIndex";
-import find from "lodash/find";
 import { IAction } from "../@types/IActionType";
 import updateState from "immutability-helper";
 import {

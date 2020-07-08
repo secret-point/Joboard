@@ -7,7 +7,7 @@ import { Col, Row } from "@stencil-react/components/layout";
 import { Text } from "@stencil-react/components/text";
 import { connect } from "react-redux";
 import { onShowNavbar } from "../../actions/actions";
-import { IconCrossCircle, IconClock } from "@stencil-react/components/icons";
+import { IconClock } from "@stencil-react/components/icons";
 import { Button } from "@stencil-react/components/button";
 
 interface Error403PageProps {

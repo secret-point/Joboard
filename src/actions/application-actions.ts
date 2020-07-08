@@ -2,7 +2,6 @@ import { goTo, setLoading, onUpdateOutput, onUpdatePageId } from "./actions";
 import { onUpdateError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
-import { push } from "react-router-redux";
 import isEmpty from "lodash/isEmpty";
 import {
   onGetRequisitionHeaderInfo,
@@ -174,7 +173,7 @@ export const createApplication = (payload: IPayload) => async (
       const { urlParams } = payload;
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
-        goTo(`/already-applied/${urlParams?.requisitionId}/`)(dispatch);
+        goTo("already-applied", urlParams)(dispatch);
       } else {
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get application"
