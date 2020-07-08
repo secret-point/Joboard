@@ -29,6 +29,7 @@ import {
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
+import find from "lodash/find";
 
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
@@ -66,18 +67,17 @@ const AppReducer = (state = initialState, action: IAction) => {
   switch (type) {
     case LOAD_INIT_DATA: {
       const outputDataObject = getOutputDataObject(payload[1].pageOrder);
+
       const countries = payload[2];
-      let countryList: any[] = [];
-      let usa = {
-        value: "USA",
-        text: "United States"
-      };
-      countryList.push(usa);
-      countries.forEach((country: any) => {
-        const theCountry: any = {};
-        theCountry.value = country.code3;
-        theCountry.text = country.name;
-        countryList.push(theCountry);
+      let stateList: any[] = [];
+      let theCountry: any = {};
+      theCountry = find(countries, { code3: "USA" });
+
+      theCountry.states.forEach((state: any) => {
+        const theState: any = {};
+        theState.value = state.name;
+        theState.text = state.code + " -- " + state.name;
+        stateList.push(theState);
       });
 
       return updateState(state, {
@@ -92,7 +92,9 @@ const AppReducer = (state = initialState, action: IAction) => {
             $set: outputDataObject
           },
           config: {
-            $set: countryList
+            states: {
+              $set: stateList
+            }
           }
         }
       });

@@ -109,5 +109,6 @@ export interface AdditionalBackgroundInfoRequest {
 }
 export enum GovernmentIdType {
   DRIVERS_LICENSE = "DRIVERS_LICENSE",
-  PASSPORT = "PASSPORT"
+  PASSPORT = "PASSPORT",
+  SSN = "SSN"
 }

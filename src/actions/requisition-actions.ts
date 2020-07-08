@@ -9,6 +9,7 @@ import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
 import orderBy from "lodash/orderBy";
 import CandidateApplicationService from "../services/candidate-application-service";
+import isNil from "lodash/isNil";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -188,7 +189,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
           nheSlot.title = slot.date;
-          const nheSlotLocation: string = !slot.location
+          const nheSlotLocation: string = isNil(slot.location)
             ? ""
             : slot.location.streetAddress +
               ", " +
