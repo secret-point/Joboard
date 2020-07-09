@@ -6,7 +6,6 @@ import {
 import ICandidateApplication from "../../@types/ICandidateApplication";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";
-import { completeTask } from "../../actions/workflow-actions";
 
 const HOUR_IN_SECONDS = 3600;
 const MIN_IN_SECONDS = 60;
@@ -38,20 +37,24 @@ const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
       setMinutes(
         Math.floor((reserveTime - hours * HOUR_IN_SECONDS) / MIN_IN_SECONDS)
       );
-    }
-
-    myInterval = setInterval(() => {
-      setHours(Math.floor(reserveTime / HOUR_IN_SECONDS));
-      setMinutes(
-        Math.floor((reserveTime - hours * HOUR_IN_SECONDS) / MIN_IN_SECONDS)
-      );
       if (reserveTime < MIN_IN_SECONDS) {
-        console.log("timeout");
-        clearInterval(myInterval);
         onUpdatePageId("session-timeout");
       }
-    }, MIN_IN_SECONDS * 1000);
-  }, [hours, application, minutes]);
+    }
+
+    if (reserveTime > MIN_IN_SECONDS) {
+      myInterval = setInterval(() => {
+        setHours(Math.floor(reserveTime / HOUR_IN_SECONDS));
+        setMinutes(
+          Math.floor((reserveTime - hours * HOUR_IN_SECONDS) / MIN_IN_SECONDS)
+        );
+        if (reserveTime < MIN_IN_SECONDS) {
+          console.log("timeout");
+          clearInterval(myInterval);
+        }
+      }, MIN_IN_SECONDS * 1000);
+    }
+  }, [hours, application, minutes, onUpdatePageId]);
 
   return (
     <MessageBanner type={MessageBannerType.Warning}>

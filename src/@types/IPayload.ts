@@ -140,24 +140,31 @@ export interface requistionAvailableShifts {
   shifts: requistionShifts[];
 }
 export interface requistionShifts {
-  basePayRate: string;
-  currency: string;
-  day1Date: string;
-  days: string;
-  daysOfWeek: [];
-  endTime: string;
-  fillRate: number;
   headCountRequestId: string;
-  hireStartDate: string;
-  hoursPerWeek: number;
-  iconUrl: string;
-  isTemporaryReq: boolean;
   jobTitle: string;
-  locationDescription: string;
-  openCount: number;
-  phoneToolTitle: string;
+  isTemporaryReq: boolean;
   requisitionId: string;
-  shortDescription: string;
+  jobType: string;
+  locationDescription: string;
+  fillRate: number;
+  openCount: number;
+  daysOfWeek: string[];
   startTime: string;
+  endTime: string;
+  hoursPerWeek: HoursPerWeek;
+  haveMedicalBenefits: boolean;
+  day1Date: string;
+  hireStartDate: string;
+  basePayRate: number;
+  shiftDifferential: number;
+  shortDescription: string;
+  days: string;
   time: string;
+  iconUrl: string;
+  currency: string;
+}
+
+export interface HoursPerWeek {
+  maximumValue: number;
+  minimumValue: number;
 }
