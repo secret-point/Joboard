@@ -345,7 +345,7 @@ export const onApplyFilter = (payload: IPayload) => async (
         filter
       );
       dispatch({
-        type: UPDATE_REQUISITION,
+        type: UPDATE_SHIFTS,
         payload: {
           ...response
         }

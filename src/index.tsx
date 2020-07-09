@@ -17,6 +17,7 @@ declare global {
     stepFunctionService: StepFunctionService;
     isCompleteTaskOnLoad: boolean | undefined;
     applicationData: ICandidateApplication | undefined;
+    hearBeatTime: string;
   }
 }
 

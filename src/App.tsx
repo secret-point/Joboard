@@ -11,6 +11,7 @@ import { StencilProvider } from "@stencil-react/components/dist/submodules/conte
 import { MainWithSkipLink } from "@stencil-react/components/a11y";
 import Routes from "./pages/routes";
 import LoaderContainer from "./containers/loader/loader-container";
+import CompleteTaskLoaderContainer from "./containers/loader/complete-task-loading-container";
 import ContentMessageBanner from "./containers/counter-message-banner";
 import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 
@@ -23,6 +24,7 @@ const App: React.FC<IApp> = ({ showNavbar, showShiftHoldingMessageBanner }) => {
   return (
     <StencilProvider>
       <LoaderContainer />
+      <CompleteTaskLoaderContainer />
       {showNavbar && (
         <PageHeader hasShadow dataTestId="page">
           <PageHeaderButton

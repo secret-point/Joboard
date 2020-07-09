@@ -13,6 +13,7 @@ export const RESET_IS_UPDATE_ACTION_EXECUTED =
   "RESET_IS_UPDATE_ACTION_EXECUTED";
 export const RESET_PAGE_OUTPUT = "RESET_PAGE_OUTPUT";
 export const SHOW_NAVBAR = "SHOW_NAVBAR";
+export const ON_SET_WORKFLOW_LOADING = "ON_SET_WORKFLOW_LOADING";
 
 type IOnChangeProps = {
   keyName: string;
@@ -148,6 +149,13 @@ export const onDismissModal = (dataKey: string, pageId: string) => (
 export const setLoading = (value: boolean) => (dispatch: Function) => {
   dispatch({
     type: ON_SET_LOADING,
+    payload: value
+  });
+};
+
+export const setWorkflowLoading = (value: boolean) => (dispatch: Function) => {
+  dispatch({
+    type: ON_SET_WORKFLOW_LOADING,
     payload: value
   });
 };

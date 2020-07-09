@@ -6,7 +6,8 @@ import {
   RESET_IS_UPDATE_ACTION_EXECUTED,
   UPDATE_OUTPUT,
   RESET_PAGE_OUTPUT,
-  SHOW_NAVBAR
+  SHOW_NAVBAR,
+  ON_SET_WORKFLOW_LOADING
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -58,7 +59,8 @@ const initialState: any = {
   pageOrder: [],
   appConfig: {},
   loading: false,
-  isUpdateActionExecuted: false
+  isUpdateActionExecuted: false,
+  workflowLoading: false
 };
 
 const AppReducer = (state = initialState, action: IAction) => {
@@ -240,6 +242,14 @@ const AppReducer = (state = initialState, action: IAction) => {
     case ON_SET_LOADING: {
       return updateState(state, {
         loading: {
+          $set: payload
+        }
+      });
+    }
+
+    case ON_SET_WORKFLOW_LOADING: {
+      return updateState(state, {
+        workflowLoading: {
           $set: payload
         }
       });

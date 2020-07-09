@@ -19,7 +19,7 @@ export default class StepFunctionService {
   isCompleteTaskOnLoad: boolean | undefined;
   interval: any;
   SECONDS: number = 60000;
-  MINUTES: number = 9;
+  MINUTES: number = 5;
 
   constructor(
     requisitionId: string,
@@ -46,9 +46,10 @@ export default class StepFunctionService {
       this.websocket.onmessage = this.message;
       this.websocket.onerror = this.error;
 
-      this.interval = setInterval(() => {
-        sendHeartBeatWorkflow();
-      }, this.SECONDS * this.MINUTES);
+      this.interval = setInterval(
+        sendHeartBeatWorkflow,
+        this.SECONDS * this.MINUTES
+      );
     }
   }
 
@@ -75,12 +76,12 @@ export default class StepFunctionService {
     window.location.assign("/#/timeout");
   }
 
-  message(event: MessageEvent) {
+  async message(event: MessageEvent) {
     console.log("Message Received");
     const { data } = event;
     const message = isJson(data) ? JSON.parse(data) : data;
     if (!isString(message)) {
-      goToStep(message);
+      await goToStep(message);
     }
   }
 
