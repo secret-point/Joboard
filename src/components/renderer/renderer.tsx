@@ -200,7 +200,7 @@ const Renderer: React.FC<IRendererProps> = ({
   const onValueChange = useCallback(
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
-      if (keyName && !isEmpty(value)) {
+      if (keyName) {
         set(formData, keyName, value);
         setForm(formData);
         console.log("formData", formData);

@@ -31,6 +31,7 @@ import {
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
 import find from "lodash/find";
+import { sortBy } from "lodash";
 
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
@@ -74,6 +75,11 @@ const AppReducer = (state = initialState, action: IAction) => {
       let stateList: any[] = [];
       let theCountry: any = {};
       theCountry = find(countries, { code3: "USA" });
+      let emptyState: any = {
+        value: "",
+        text: "Select a state"
+      };
+      stateList.push(emptyState);
 
       theCountry.states.forEach((state: any) => {
         const theState: any = {};
@@ -81,6 +87,8 @@ const AppReducer = (state = initialState, action: IAction) => {
         theState.text = state.code + " -- " + state.name;
         stateList.push(theState);
       });
+
+      stateList = sortBy(stateList, ["value"], ["asc"]);
 
       return updateState(state, {
         pageOrder: {
