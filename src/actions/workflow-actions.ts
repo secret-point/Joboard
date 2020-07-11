@@ -120,3 +120,8 @@ export const completeTask = (
     window.stepFunctionService.websocket?.send(JSON.stringify(data));
   }
 };
+
+export const onTimeOut = () => {
+  setWorkflowLoading(false)(window.reduxStore.dispatch);
+  window.location.assign("/#/timeout");
+};

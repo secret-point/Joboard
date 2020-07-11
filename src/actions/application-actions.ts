@@ -355,17 +355,6 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
       }
     });
 
-    if (!window?.stepFunctionService?.websocket) {
-      loadWorkflow(
-        urlParams.requisitionId,
-        applicationId,
-        candidateResponse.candidateId,
-        payload.appConfig,
-        isCompleteTaskOnLoad
-      );
-    } else {
-      completeTask(payload.data.application, payload.urlParams.page);
-    }
     setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);

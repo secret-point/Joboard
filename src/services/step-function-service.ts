@@ -5,7 +5,8 @@ import {
   startOrResumeWorkflow,
   goToStep,
   completeTask,
-  sendHeartBeatWorkflow
+  sendHeartBeatWorkflow,
+  onTimeOut
 } from "../actions/workflow-actions";
 import { setInterval } from "timers";
 
@@ -73,7 +74,7 @@ export default class StepFunctionService {
 
   close(event: any) {
     console.log(event);
-    window.location.assign("/#/timeout");
+    onTimeOut();
   }
 
   async message(event: MessageEvent) {
