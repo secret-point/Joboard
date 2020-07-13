@@ -1,5 +1,6 @@
 import { propertyOf, filter, set, isEmpty } from "lodash";
 import { ApplicationData } from "../@types/IPayload";
+import { validation } from "../helpers/render-helper";
 
 const getValue = (
   output: any,
@@ -64,7 +65,9 @@ export const validateRequiredData = (
 ) => {
   if (pageId) {
     const requiredDataForComponents = filter(components || [], obj => {
-      const data = propertyOf(obj)("properties.required");
+      const data =
+        propertyOf(obj)("properties.required") ||
+        propertyOf(obj)("properties.validation");
       if (data) {
         return obj;
       }
@@ -85,6 +88,13 @@ export const validateRequiredData = (
         isContentContainsSteps,
         activeStepIndex
       );
+      const validationErrorMessage = propertyOf(component)(
+        "properties.validationErrorMessage"
+      );
+      const validationType = propertyOf(component)("properties.validationType");
+      const isValidation = propertyOf(component)("properties.validation");
+      let dataKeyValidate = validation(dataKeyOutputValue, validationType);
+
       if (component.showComponentProperties) {
         componentRendered = isComponentRendered(
           output,
@@ -99,6 +109,13 @@ export const validateRequiredData = (
         set(validComponents, dataKey, {
           hasError: true,
           errorMessage: requiredErrorMessage
+        });
+        result = false;
+      } else if (isValidation && !dataKeyValidate && componentRendered) {
+        //if the component need value validation and validation failed
+        set(validComponents, dataKey, {
+          hasError: true,
+          errorMessage: validationErrorMessage
         });
         result = false;
       } else {

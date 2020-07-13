@@ -22,3 +22,20 @@ export const covertValueTo = (type: string, value: any) => {
       return value;
   }
 };
+
+export const validation = (value: any, type: string) => {
+  switch (type) {
+    case "SSN": {
+      //9 digit number, in format xxx-xx-xxxx
+      const regex = new RegExp(
+        /^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$/
+      );
+      return regex.test(value);
+    }
+    case "ZIPCODE": {
+      //5 digit number, eg 20171 or 20171-4567
+      const regex = new RegExp(/^[0-9]{5}(?:-[0-9]{4})?$/);
+      return regex.test(value);
+    }
+  }
+};
