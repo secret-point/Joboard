@@ -8,6 +8,7 @@ import { History } from "history";
 import { covertValueTo } from "../../helpers/render-helper";
 import { validateRequiredData } from "../../helpers/validate";
 import merge from "lodash/merge";
+import { isArray } from "lodash";
 
 type IComponent = {
   component: string;
@@ -41,7 +42,7 @@ export type IRendererProps = {
 };
 
 interface conditionShowComponentProps {
-  dataKey: string;
+  dataKey: any;
   filter: Filter;
 }
 
@@ -249,7 +250,18 @@ const Renderer: React.FC<IRendererProps> = ({
   ) => {
     if (showComponentProperties) {
       const { dataKey, filter } = showComponentProperties;
-      const value = getValue(dataKey);
+      const dataKeyIsArray = isArray(dataKey);
+      let value = !dataKeyIsArray ? getValue(dataKey) : "";
+      if (dataKeyIsArray) {
+        for (let i = 0; i < dataKey.length; i++) {
+          value = getValue(dataKey[i]);
+          console.log(dataKey[i], value);
+          if (isEmpty(value)) {
+            break;
+          }
+        }
+      }
+
       if (filter.type === "object") {
         return !isEmpty(value);
       } else {

@@ -341,7 +341,7 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
   try {
     const { options, urlParams } = payload;
     const applicationId = urlParams.applicationId;
-    const { status, isCompleteTaskOnLoad } = options;
+    const { status } = options;
     const candidateResponse = await onGetCandidate(payload, true)(dispatch);
     const response = await new CandidateApplicationService().updateWOTCStatus(
       applicationId,
