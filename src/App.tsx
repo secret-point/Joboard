@@ -18,24 +18,30 @@ import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 interface IApp {
   showNavbar: boolean;
   showShiftHoldingMessageBanner: boolean;
+  dashboardUrl: any;
 }
 
-const App: React.FC<IApp> = ({ showNavbar, showShiftHoldingMessageBanner }) => {
+const App: React.FC<IApp> = ({
+  showNavbar,
+  showShiftHoldingMessageBanner,
+  dashboardUrl
+}) => {
+  const onClick = () => {
+    window.location.assign(dashboardUrl);
+  };
+
   return (
     <StencilProvider>
       <LoaderContainer />
       <CompleteTaskLoaderContainer />
       {showNavbar && (
         <PageHeader hasShadow dataTestId="page">
-          <PageHeaderButton
-            title="Placeholder of logo"
-            hasHover={false}
-            paddingHorizontal={0}
-          >
+          <PageHeaderButton title="Home" hasHover={false} paddingHorizontal={0}>
             <span className="navbar-logo">
               <img
                 src="https://static.amazon.jobs/assets/icons/jobs_logo-5f4dd79a8e72aeaabe6aa3acae80962cd16317cff83e3a29c2f5dd5f30d33b31.svg"
                 alt="Amazon Jobs"
+                onClick={onClick}
               />
             </span>
           </PageHeaderButton>
@@ -52,7 +58,7 @@ const App: React.FC<IApp> = ({ showNavbar, showShiftHoldingMessageBanner }) => {
           <Col gridGap="m">
             <Routes />
           </Col>
-          <BackToTopButton />
+          <BackToTopButton bottom="75px" right="5vw" />
         </MainWithSkipLink>
       </PageContainer>
     </StencilProvider>
