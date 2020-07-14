@@ -40,8 +40,8 @@ import StepsContainer from "../containers/steps-content-renderer/index";
 import FlyoutContainer from "../containers/flyout";
 import ModalContainer from "../containers/modal/modal-container";
 import ImageContainer from "./image";
-import { Col, Row, Spacer, View } from "@stencil-react/components/layout";
-import { Card as StencilCard } from "@stencil-react/components/card";
+import { Col, Row, Spacer, View } from "@amzn/stencil-react-components/layout";
+import { Card as StencilCard } from "@amzn/stencil-react-components/card";
 
 const ComponentMap: any = {
   loader: Loader,

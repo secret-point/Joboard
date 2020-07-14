@@ -3,7 +3,7 @@ import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router-dom";
-import { StencilProvider } from "@stencil-react/components/dist/submodules/context";
+import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { createHashHistory } from "history";

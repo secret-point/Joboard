@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import ComponentMap from "../component-map";
-import { Col } from "@stencil-react/components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import set from "lodash/set";
 import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";

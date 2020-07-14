@@ -1,9 +1,9 @@
 import React from "react";
-import { Col } from "@stencil-react/components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import {
   MessageBanner,
   MessageBannerType
-} from "@stencil-react/components/message-banner";
+} from "@amzn/stencil-react-components/message-banner";
 import RendererContainer from "../../containers/renderer";
 
 export type IContentProps = {

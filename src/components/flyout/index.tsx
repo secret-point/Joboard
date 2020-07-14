@@ -7,10 +7,10 @@ import {
   FlyoutTitle,
   FlyoutCloseButton,
   WithFlyout
-} from "@stencil-react/components/flyout";
-import { Row } from "@stencil-react/components/layout";
-import { Text } from "@stencil-react/components/text";
-import { Button } from "@stencil-react/components/button";
+} from "@amzn/stencil-react-components/flyout";
+import { Row } from "@amzn/stencil-react-components/layout";
+import { Text } from "@amzn/stencil-react-components/text";
+import { Button } from "@amzn/stencil-react-components/button";
 import RendererContainer from "../../containers/renderer";
 import Icon from "../icon";
 

@@ -80,7 +80,7 @@ import {
   IconQuestionCircleSmall,
   IconSearchSmall,
   IconTickSmall
-} from "@stencil-react/components/icons";
+} from "@amzn/stencil-react-components/icons";
 
 import withFontAwesomeIcon from "./font-awesome-icons";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";

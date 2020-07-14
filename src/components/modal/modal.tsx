@@ -1,15 +1,10 @@
-import React from "react";
-import { Col } from "@stencil-react/components/layout";
+import React, { useState } from "react";
+import { Col } from "@amzn/stencil-react-components/layout";
 import RendererContainer from "../../containers/renderer";
-import {
-  ModalContainer,
-  ModalContent,
-  ModalRendererFunction,
-  ModalContext
-} from "@stencil-react/components/modal";
-import { Button } from "@stencil-react/components/button";
-import { IconCross } from "@stencil-react/components/icons";
-import { Row } from "@stencil-react/components/layout";
+import { Modal, ModalContent } from "@amzn/stencil-react-components/modal";
+import { Button } from "@amzn/stencil-react-components/button";
+import { IconCross } from "@amzn/stencil-react-components/icons";
+import { Row } from "@amzn/stencil-react-components/layout";
 
 interface IModalContentComponent {
   modal: any;
@@ -32,14 +27,12 @@ const ModalContentComponent: React.FC<IModalContentComponent> = ({
   modal,
   onButtonClick
 }) => {
-  const { pushModal } = React.useContext(ModalContext);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const close = () => setIsOpen(false);
 
   const onDismiss = (e: React.MouseEvent, resolve: any) => {
     resolve(e);
-  };
-
-  const showModal = () => {
-    pushModal(modalRender);
   };
 
   const onAction = (e: React.MouseEvent, resolve: Function) => {
@@ -51,41 +44,39 @@ const ModalContentComponent: React.FC<IModalContentComponent> = ({
     resolve(e);
   };
 
-  const modalRender: ModalRendererFunction<any, any> = ({ resolve }) => (
-    <ModalContainer
-      labelledBy="modal-labelling-example-title"
-      describedBy="modal-labelling-example-description"
-    >
-      <ModalContent>
-        <Row justifyContent="flex-end">
-          <Button onClick={e => onDismiss(e, resolve)} tertiary>
-            <IconCross />
-          </Button>
-        </Row>
-        <RendererContainer
-          isContentContainsModals={true}
-          modalConfig={modal}
-          type="content"
-        />
-      </ModalContent>
-      {modal.actionProps && (
-        <Col padding="s">
-          <Button
-            {...modal.actionProps.buttonProperties}
-            onClick={(e: any) => onAction(e, resolve)}
-          >
-            {modal.actionProps.label}
-          </Button>
-        </Col>
-      )}
-    </ModalContainer>
-  );
+  const showModal = () => {
+    setIsOpen(true);
+  };
 
   return (
     <Col gridGap="s">
       <Button {...modal.buttonProperties} onClick={showModal}>
         {modal.label}
       </Button>
+      <Modal aria-labelledby="custom-modal-title" isOpen={isOpen} close={close}>
+        <ModalContent>
+          <Row justifyContent="flex-end">
+            <Button onClick={e => onDismiss(e, close)} tertiary>
+              <IconCross />
+            </Button>
+          </Row>
+          <RendererContainer
+            isContentContainsModals={true}
+            modalConfig={modal}
+            type="content"
+          />
+          {modal.actionProps && (
+            <Col padding="s">
+              <Button
+                {...modal.actionProps.buttonProperties}
+                onClick={(e: any) => onAction(e, close)}
+              >
+                {modal.actionProps.label}
+              </Button>
+            </Col>
+          )}
+        </ModalContent>
+      </Modal>
     </Col>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import RendererContainer from "../../containers/renderer";
-import { Col } from "@stencil-react/components/layout";
-import { Card } from "@stencil-react/components/card";
+import { Col } from "@amzn/stencil-react-components/layout";
+import { Card } from "@amzn/stencil-react-components/card";
 import ComponentMap from "../component-map";
 
 interface IPanelComponent {

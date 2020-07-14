@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Card } from "@stencil-react/components/card";
-import { Col, Row } from "@stencil-react/components/layout";
-import { Text } from "@stencil-react/components/text";
-import { Button } from "@stencil-react/components/button";
+import { Card } from "@amzn/stencil-react-components/card";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Text } from "@amzn/stencil-react-components/text";
+import { Button } from "@amzn/stencil-react-components/button";
 import {
   IconPadlock,
   IconCheckCircle,
   IconPencil
-} from "@stencil-react/components/icons";
+} from "@amzn/stencil-react-components/icons";
 import RendererContainer from "../../containers/renderer";
 import { getStatusForSteps } from "./../../helpers/steps-helper";
 import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";

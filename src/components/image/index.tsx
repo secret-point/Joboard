@@ -3,7 +3,7 @@ import RendererContainer from "../../containers/renderer";
 import {
   VIEWPORT_SIZES,
   StencilResponsiveConsumer
-} from "@stencil-react/components/responsive";
+} from "@amzn/stencil-react-components/responsive";
 
 type ImageContainerProps = {
   src: string;

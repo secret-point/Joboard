@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "@stencil-react/components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import "./footer.css";
 import RendererContainer from "../../containers/renderer";
 

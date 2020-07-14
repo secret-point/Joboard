@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   MessageBanner,
   MessageBannerType
-} from "@stencil-react/components/message-banner";
+} from "@amzn/stencil-react-components/message-banner";
 import ICandidateApplication from "../../@types/ICandidateApplication";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";

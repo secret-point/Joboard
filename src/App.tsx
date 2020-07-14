@@ -2,13 +2,13 @@ import React from "react";
 import {
   PageContainer,
   PageHeader,
-  PageHeaderButton,
-  BackToTopButton
-} from "@stencil-react/components/page";
-import { Col } from "@stencil-react/components/layout";
+  PageHeaderButton
+} from "@amzn/stencil-react-components/page";
+import { BackToTopButton } from "@amzn/stencil-react-components/back-to-top-button";
+import { Col } from "@amzn/stencil-react-components/layout";
 import "./styles/App.css";
-import { StencilProvider } from "@stencil-react/components/dist/submodules/context";
-import { MainWithSkipLink } from "@stencil-react/components/a11y";
+import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
+import { MainWithSkipLink } from "@amzn/stencil-react-components/a11y";
 import Routes from "./pages/routes";
 import LoaderContainer from "./containers/loader/loader-container";
 import CompleteTaskLoaderContainer from "./containers/loader/complete-task-loading-container";

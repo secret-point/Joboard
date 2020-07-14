@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import {
   VIEWPORT_SIZES,
   StencilResponsiveConsumer
-} from "@stencil-react/components/responsive";
-import { Col, Row } from "@stencil-react/components/layout";
-import { Text } from "@stencil-react/components/text";
+} from "@amzn/stencil-react-components/responsive";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Text } from "@amzn/stencil-react-components/text";
 import { connect } from "react-redux";
 import { onShowNavbar } from "../../actions/actions";
-import { IconCrossCircle } from "@stencil-react/components/icons";
-import { Button } from "@stencil-react/components/button";
+import { IconCrossCircle } from "@amzn/stencil-react-components/icons";
+import { Button } from "@amzn/stencil-react-components/button";
 
 interface Error403PageProps {
   onShowNavbar: Function;

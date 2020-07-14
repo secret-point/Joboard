@@ -1,5 +1,5 @@
 import React from "react";
-import { Spinner, SpinnerSize } from "@stencil-react/components/spinners";
+import { Spinner, SpinnerSize } from "@amzn/stencil-react-components/spinner";
 
 interface ILoaderPlaceholderProps {
   loading: boolean;
