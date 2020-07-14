@@ -37,10 +37,17 @@ getInitialData()
     const agency: any = urlParams.get("agency");
     const page = urlParams.get("page");
     const applicationId = urlParams.get("applicationId");
+    const misc = urlParams.get("misc");
+    const token = urlParams.get("token");
     if (!isNull(requisitionId) && !isNull(page)) {
       let url = `/#/${page}/${requisitionId}`;
       url = !isNull(applicationId) ? `${url}/${applicationId}` : url;
+      url = !isNull(misc) ? `${url}/${applicationId}/${misc}` : url;
       window.location.assign(url);
+    }
+
+    if (!isNull(token)) {
+      window.localStorage.setItem("accessToken", token);
     }
 
     if (!isNull(agency)) {
@@ -56,6 +63,7 @@ getInitialData()
     ReactDOM.render(<Main />, document.getElementById("root"));
   })
   .catch(ex => {
+    console.log(ex);
     ReactDOM.render(
       <div>Error loading config</div>,
       document.getElementById("root")

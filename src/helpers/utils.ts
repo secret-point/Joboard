@@ -16,12 +16,15 @@ export const convertPramsToJson = (params: string) => {
 };
 
 export const launchAuthentication = () => {
-  let hash = window.location.hash.substr(1);
-
+  let hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
-  const redirectUrl = `${origin}/#${hash}`;
-
   const state = window.reduxStore.getState();
+  let redirectUrl = origin;
+  redirectUrl = `${redirectUrl}/?page=${state.app.currentPage.id}&requisitionId=${hash[1]}&applicationId=${hash[2]}`;
+  if (hash.length === 4) {
+    redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
+  }
+
   let url = `${
     state.app.appConfig.authenticationURL
   }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;

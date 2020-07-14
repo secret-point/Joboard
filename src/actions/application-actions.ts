@@ -26,7 +26,7 @@ export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, urlParams } = data;
   const origin = window.location.origin;
-  const redirectUrl = `${origin}#/application/${urlParams.requisitionId}`;
+  const redirectUrl = `${origin}/?page=application&requisitionId=${urlParams.requisitionId}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;
