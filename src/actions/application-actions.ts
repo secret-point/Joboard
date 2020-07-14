@@ -324,7 +324,6 @@ export const onTerminateApplication = (payload: IPayload) => async (
       }
     });
     setLoading(false)(dispatch);
-    completeTask(payload.data.application, payload.urlParams.page);
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);
