@@ -272,7 +272,7 @@ export const onApplySortSelection = (payload: IPayload) => async (
       break;
     }
     case "PAY_RATE": {
-      shifts = orderBy(availableShifts.shifts, ["basePayRate"], ["desc"]);
+      shifts = orderBy(availableShifts.shifts, ["totalPayRate"], ["desc"]);
       break;
     }
     case "HOURS_MOST": {
