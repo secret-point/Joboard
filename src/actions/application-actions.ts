@@ -22,6 +22,7 @@ export const ON_GET_CANDIDATE = "ON_GET_CANDIDATE";
 export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
 export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
+export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, urlParams } = data;
@@ -362,4 +363,13 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
       ex?.response?.data?.errorMessage || "Failed to update application"
     )(dispatch);
   }
+};
+
+export const onShowPreviousName = (payload: IPayload) => (
+  dispatch: Function
+) => {
+  dispatch({
+    type: SHOW_PREVIOUS_NAMES,
+    payload: payload.data.showPreviousNames === "NO" ? "YES" : "NO"
+  });
 };

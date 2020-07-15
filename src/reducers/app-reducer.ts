@@ -26,7 +26,8 @@ import {
   UPDATE_APPLICATION,
   UPDATE_NON_FCRA_QUESTIONS,
   ON_GET_CANDIDATE,
-  UPDATE_CONTINGENT_OFFER
+  UPDATE_CONTINGENT_OFFER,
+  SHOW_PREVIOUS_NAMES
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
@@ -47,7 +48,8 @@ const initialState: any = {
     application: {},
     candidate: {},
     output: {},
-    config: {}
+    config: {},
+    showPreviousNames: "NO"
   },
   applicationData: {},
   output: {},
@@ -324,6 +326,16 @@ const AppReducer = (state = initialState, action: IAction) => {
       return updateState(state, {
         pageConfig: {
           $set: payload.pageConfig
+        }
+      });
+    }
+
+    case SHOW_PREVIOUS_NAMES: {
+      return updateState(state, {
+        data: {
+          showPreviousNames: {
+            $set: payload
+          }
         }
       });
     }

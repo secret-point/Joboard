@@ -36,6 +36,7 @@ export interface ApplicationData {
   application: ICandidateApplication;
   output: any;
   candidate: Candidate;
+  showPreviousNames: string;
 }
 
 export interface Page {

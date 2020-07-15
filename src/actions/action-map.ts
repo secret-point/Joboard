@@ -22,7 +22,8 @@ import {
   onUpdateShiftSelection,
   onGetCandidate,
   onTerminateApplication,
-  onUpdateWotcStatus
+  onUpdateWotcStatus,
+  onShowPreviousName
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -68,7 +69,8 @@ const actionMap: any = {
   ON_FILTER_CHANGE: onFilterChange,
   ON_VALUE_UPDATE: onUpdateChange,
   ON_RESET_OUTPUT_STATE: onResetPageOutput,
-  ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask
+  ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask,
+  SHOW_PREVIOUS_NAMES: onShowPreviousName
 };
 
 export default actionMap;
