@@ -37,5 +37,21 @@ export const validation = (value: any, type: string) => {
       const regex = new RegExp(/^[0-9]{5}(?:-[0-9]{4})?$/);
       return regex.test(value);
     }
+    case "DATE_OF_BIRTH": {
+      //According to SF rule: DoB should not be within 10 yrs: today - 10 years.
+      let tenYearsFromNow = moment()
+        .utc()
+        .subtract(10, "years")
+        .format("YYYY-MM-DD");
+      if (
+        moment(value)
+          .utc()
+          .format("YYYY-MM-DD") <= tenYearsFromNow
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
