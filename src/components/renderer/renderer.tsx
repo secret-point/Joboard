@@ -224,24 +224,32 @@ const Renderer: React.FC<IRendererProps> = ({
   const onButtonClick = (actionName: string, options: any) => {
     let formData = constructOutput();
     let _output = merge(output, formData);
-    console.log(formData, _output);
-    const validationData = validateRequiredData(
-      componentList,
-      pageId,
-      _output,
-      data,
-      isContentContainsSteps,
-      activeStepIndex
-    );
+    const { ignoreValidation } = options;
+    if (!ignoreValidation) {
+      const validationData = validateRequiredData(
+        componentList,
+        pageId,
+        _output,
+        data,
+        isContentContainsSteps,
+        activeStepIndex
+      );
 
-    if (validationData.valid) {
+      if (validationData.valid) {
+        onAction(actionName, {
+          output: _output,
+          ...commonProps,
+          ...options
+        });
+      } else {
+        setValidations(validationData.validComponents);
+      }
+    } else {
       onAction(actionName, {
         output: _output,
         ...commonProps,
         ...options
       });
-    } else {
-      setValidations(validationData.validComponents);
     }
   };
 
