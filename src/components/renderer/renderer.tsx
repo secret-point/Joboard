@@ -224,8 +224,7 @@ const Renderer: React.FC<IRendererProps> = ({
   const onButtonClick = (actionName: string, options: any) => {
     let formData = constructOutput();
     let _output = merge(output, formData);
-    const { ignoreValidation } = options;
-    if (!ignoreValidation) {
+    if (!options?.options?.ignoreValidation) {
       const validationData = validateRequiredData(
         componentList,
         pageId,
