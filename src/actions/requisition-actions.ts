@@ -194,13 +194,13 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
             : slot.location.streetAddress;
           nheSlotLocation = isNil(slot.location.city)
             ? nheSlotLocation
-            : " ," + slot.location.city;
+            : nheSlotLocation + ", " + slot.location.city;
           nheSlotLocation = isNil(slot.location.state)
             ? nheSlotLocation
-            : " ," + slot.location.state;
+            : nheSlotLocation + ", " + slot.location.state;
           nheSlotLocation = isNil(slot.location.postalCode)
             ? nheSlotLocation
-            : " ," + slot.location.postalCode;
+            : nheSlotLocation + ", " + slot.location.postalCode;
           nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
           nheSlot.recruitingEventId = slot.recruitingEventId;
           nheSlots.push(nheSlot);
