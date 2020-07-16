@@ -370,6 +370,6 @@ export const onShowPreviousName = (payload: IPayload) => (
 ) => {
   dispatch({
     type: SHOW_PREVIOUS_NAMES,
-    payload: payload.data.showPreviousNames === "NO" ? "YES" : "NO"
+    payload: "YES"
   });
 };
