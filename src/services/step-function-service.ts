@@ -1,3 +1,4 @@
+import { getAccessToken } from "./../helpers/axios-helper";
 import { AppConfig } from "../@types/IPayload";
 import isString from "lodash/isString";
 import { isJson } from "../helpers/utils";
@@ -37,9 +38,13 @@ export default class StepFunctionService {
       this.appConfig = appConfig;
       this.requisitionId = requisitionId;
       let websocketURL = appConfig.stepFunctionEndpoint as string;
+      const token = getAccessToken();
       websocketURL = websocketURL
         .replace("{applicationId}", this.applicationId)
         .replace("{candidateId}", this.candidateId);
+      if (token) {
+        websocketURL = `${websocketURL}&authToken=${token}`;
+      }
       this.stepFunctionEndpoint = websocketURL;
       this.websocket = new WebSocket(this.stepFunctionEndpoint);
       this.websocket.onopen = this.connect;
