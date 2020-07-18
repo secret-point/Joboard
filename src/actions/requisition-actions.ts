@@ -2,7 +2,7 @@ import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { DaysHoursFilter } from "../@types/IPayload";
 import { goTo, setLoading, onUpdatePageId } from "./actions";
-import { onUpdateError } from "./error-actions";
+import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
@@ -20,6 +20,7 @@ export const RESET_FILTERS = "RESET_FILTERS";
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId && isEmpty(payload.data.requisition)) {
@@ -44,6 +45,7 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
 export const onGetChildRequisitions = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId) {
@@ -70,6 +72,7 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
 export const onGetRequisition = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const id = payload.urlParams?.requisitionId;
   if (id) {
@@ -104,6 +107,7 @@ export const onSelectedRequisition = (requisitionId: string) => async (
 export const onGetJobDescription = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const childRequisitionId = payload.selectedRequisitionId;
   if (childRequisitionId) {
@@ -133,6 +137,7 @@ export const onGetJobDescription = (payload: IPayload) => async (
 export const onGoToDescription = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   const { goTo } = payload.options;
   const childRequisitionId =
     payload.selectedRequisitionId ||
@@ -164,6 +169,7 @@ export const onGoToDescription = (payload: IPayload) => async (
 export const onGetNHETimeSlots = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
@@ -221,6 +227,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
 export const onGetAllAvailableShifts = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
@@ -332,6 +339,7 @@ const constructFilterPayload = (payload: IPayload) => {
 export const onApplyFilter = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   const filter = constructFilterPayload(payload);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;

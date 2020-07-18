@@ -179,10 +179,14 @@ const AppReducer = (state = initialState, action: IAction) => {
       return newState;
     }
     case ON_REMOVE_ERROR: {
-      const newState = { ...state };
-      newState.hasResponseError = false;
-      newState.errorMessage = null;
-      return newState;
+      return updateState(state, {
+        hasResponseError: {
+          $set: false
+        },
+        errorMessage: {
+          $set: null
+        }
+      });
     }
     case GET_REQUISITION_HEADER_INFO: {
       return updateState(state, {

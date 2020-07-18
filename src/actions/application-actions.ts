@@ -1,5 +1,5 @@
 import { goTo, setLoading, onUpdateOutput, onUpdatePageId } from "./actions";
-import { onUpdateError } from "./error-actions";
+import { onUpdateError, onRemoveError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
 import isEmpty from "lodash/isEmpty";
@@ -134,6 +134,7 @@ export const createApplication = (payload: IPayload) => async (
 ) => {
   if (isEmpty(payload.data.application)) {
     try {
+      onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       const candidateApplicationService = new CandidateApplicationService();
       const candidateResponse = await candidateApplicationService.getCandidate();
@@ -182,6 +183,7 @@ export const updateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
   const {
     data,
     currentPage,
@@ -256,6 +258,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
   try {
     const { application } = payload.data;
     const { urlParams } = payload;
@@ -293,6 +296,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
   try {
     const { options, urlParams } = payload;
     const state = options.state;
@@ -320,6 +324,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
 export const onUpdateWotcStatus = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   try {
     const { options, urlParams } = payload;
