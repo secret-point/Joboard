@@ -41,7 +41,7 @@ const FlyOut: React.FC<IFlyOut> = ({ flyOut, onButtonClick }) => {
           <FlyoutTitle>{flyOut.title}</FlyoutTitle>
           <FlyoutCloseButton onClick={close} />
         </FlyoutHeader>
-        <FlyoutContent>
+        <FlyoutContent style={{ display: "block" }}>
           <RendererContainer
             isConfigContainsFlyouts={true}
             flyOutId={flyOut.id}
