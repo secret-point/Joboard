@@ -88,7 +88,7 @@ export const goToStep = async (workflowData: WorkflowData) => {
     window.localStorage.setItem("page", workflowData.stepName);
     window.reduxStore.dispatch(
       push(
-        `/app/${application.parentRequisitionId}/${application.applicationId}`
+        `/${workflowData.stepName}/${application.parentRequisitionId}/${application.applicationId}`
       )
     );
   }
