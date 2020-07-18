@@ -104,13 +104,7 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
 };
 
 export const onGoBack = (payload: IPayload) => (dispatch: Function) => {
-  const page = window.sessionStorage.getItem("back-page");
-  console.log(page);
-  if (page) {
-    window.sessionStorage.removeItem("back-page");
-    onUpdatePageId(page)(dispatch);
-  }
-  payload.history.goBack();
+  onUpdatePageId(payload.previousPage.id)(dispatch);
 };
 
 export const onSubmit = (payload: any) => async (dispatch: Function) => {

@@ -37,6 +37,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
     data: cloneDeep(state.app.data),
     pageId: state.app?.currentPage?.id,
     currentPage: state.app.currentPage,
+    previousPage: state.app.previousPage,
     urlParams: ownProps.match?.params,
     appConfig: state.app.appConfig,
     pageOrder: state.app.pageOrder,

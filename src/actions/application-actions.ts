@@ -5,10 +5,8 @@ import IPayload from "../@types/IPayload";
 import isEmpty from "lodash/isEmpty";
 import {
   onGetRequisitionHeaderInfo,
-  onGetRequisition
+  onSelectedRequisition
 } from "./requisition-actions";
-import updateObject from "immutability-helper";
-import RequisitionService from "../services/requisition-service";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
 import isNull from "lodash/isNull";
@@ -23,6 +21,7 @@ export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
 export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
+export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig, urlParams } = data;
@@ -47,10 +46,9 @@ export const onGetApplication = (payload: IPayload) => async (
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
     const requisitionId = payload.urlParams?.requisitionId;
-    const hcrId = payload.urlParams?.misc;
     onGetRequisitionHeaderInfo(payload)(dispatch);
     const candidateResponse = await onGetCandidate(payload)(dispatch);
-    const { options } = payload;
+    const { options, data } = payload;
     if (
       applicationId &&
       (options?.ignoreApplicationData || isEmpty(payload.data.application))
@@ -59,15 +57,11 @@ export const onGetApplication = (payload: IPayload) => async (
         applicationId
       );
 
-      if (!applicationResponse.shift && hcrId) {
-        const requisitionService = new RequisitionService();
-        const headCountResponse = await requisitionService.getHeadCountRequest(
-          hcrId
-        );
+      if (!applicationResponse.shift && !isEmpty(data.selectedShift)) {
         if (!payload.data.requisition.selectedChildRequisition) {
-          onGetRequisition(payload, headCountResponse.requisitionId)(dispatch);
+          onSelectedRequisition(data.selectedShift.requisitionId)(dispatch);
         }
-        applicationResponse.shift = headCountResponse;
+        applicationResponse.shift = data.selectedShift;
       }
 
       dispatch({
@@ -248,24 +242,14 @@ export const updateApplication = (payload: IPayload) => async (
 };
 
 export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
-  const { application } = payload.data;
-  const updatedApplication = updateObject(application, {
-    shift: {
-      $set: payload.selectedShift
-    }
-  });
-
-  onGetRequisition(payload, payload.selectedShift.requisitionId)(dispatch);
-  dispatch({
-    type: UPDATE_APPLICATION,
-    payload: {
-      application: updatedApplication
-    }
-  });
+  onSelectedRequisition(payload.selectedShift.requisitionId)(dispatch);
   if (payload.options?.goTo) {
-    payload.urlParams.misc = payload.selectedShift.headCountRequestId;
     goTo(payload.options?.goTo, payload.urlParams)(dispatch);
   }
+  dispatch({
+    type: SET_SELECTED_SHIFT,
+    payload: payload.selectedShift
+  });
 };
 
 export const onUpdateShiftSelection = (payload: IPayload) => async (
@@ -292,7 +276,6 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       }
     });
     if (payload.options?.goTo) {
-      delete payload.urlParams?.misc;
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
     completeTask(application, "job-selection");

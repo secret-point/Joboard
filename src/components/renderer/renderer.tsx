@@ -25,6 +25,7 @@ export type IRendererProps = {
   isDataValid: boolean;
   data?: any;
   currentPage: any;
+  previousPage: any;
   urlParams: any;
   appConfig: any;
   pageOrder: any;
@@ -58,6 +59,7 @@ const Renderer: React.FC<IRendererProps> = ({
   onAction,
   data,
   currentPage,
+  previousPage,
   urlParams,
   appConfig,
   pageOrder,
@@ -174,6 +176,7 @@ const Renderer: React.FC<IRendererProps> = ({
     data,
     pageId,
     currentPage,
+    previousPage,
     urlParams,
     appConfig,
     pageOrder,

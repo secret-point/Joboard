@@ -3,7 +3,6 @@ import isEmpty from "lodash/isEmpty";
 import IPayload, { DaysHoursFilter } from "../@types/IPayload";
 import { goTo, setLoading, onUpdatePageId } from "./actions";
 import { onUpdateError } from "./error-actions";
-import { push } from "react-router-redux";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
@@ -13,6 +12,8 @@ import isNil from "lodash/isNil";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
+export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
+export const UPDATE_JOB_DESCRIPTION = "UPDATE_JOB_DESCRIPTION";
 export const UPDATE_SHIFTS = "UPDATE_SHIFTS";
 export const RESET_FILTERS = "RESET_FILTERS";
 
@@ -66,25 +67,18 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
   }
 };
 
-export const onGetRequisition = (
-  payload: IPayload,
-  childRequisitionId?: string
-) => async (dispatch: Function) => {
+export const onGetRequisition = (payload: IPayload) => async (
+  dispatch: Function
+) => {
   setLoading(true)(dispatch);
-  const id = childRequisitionId || payload.urlParams?.requisitionId;
+  const id = payload.urlParams?.requisitionId;
   if (id) {
     try {
       const response = await new RequisitionService().getRequisition(id);
-      let requisition = response;
-      if (childRequisitionId) {
-        requisition = {
-          selectedChildRequisition: response
-        };
-      }
       dispatch({
         type: UPDATE_REQUISITION,
         payload: {
-          ...requisition
+          ...response
         }
       });
       setLoading(false)(dispatch);
@@ -97,24 +91,31 @@ export const onGetRequisition = (
   }
 };
 
-export const onGetJobDescription = (
-  payload: IPayload,
-  requisitionId?: string
-) => async (dispatch: Function) => {
+export const onSelectedRequisition = (requisitionId: string) => async (
+  dispatch: Function
+) => {
+  const response = await new RequisitionService().getRequisition(requisitionId);
+  dispatch({
+    type: SELECTED_REQUISITION,
+    payload: response
+  });
+};
+
+export const onGetJobDescription = (payload: IPayload) => async (
+  dispatch: Function
+) => {
   setLoading(true)(dispatch);
-  const childRequisitionId = requisitionId
-    ? requisitionId
-    : payload.urlParams?.misc;
+  const childRequisitionId = payload.selectedRequisitionId;
   if (childRequisitionId) {
     try {
       if (!payload.data.requisition.selectedChildRequisition) {
-        onGetRequisition(payload, childRequisitionId)(dispatch);
+        onSelectedRequisition(childRequisitionId)(dispatch);
       }
       const response = await new RequisitionService().getJobDescription(
         childRequisitionId
       );
       dispatch({
-        type: UPDATE_REQUISITION,
+        type: UPDATE_JOB_DESCRIPTION,
         payload: {
           jobDescription: response
         }
@@ -132,12 +133,10 @@ export const onGetJobDescription = (
 export const onGoToDescription = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  const { requisitionId, applicationId } = payload.urlParams;
   const { goTo } = payload.options;
   const childRequisitionId =
     payload.selectedRequisitionId ||
     payload.data.requisition.selectedChildRequisition.requisitionId;
-  const path = `/app/${requisitionId}/${applicationId}/${childRequisitionId}`;
 
   const { requisition } = payload.data;
 
@@ -152,17 +151,14 @@ export const onGoToDescription = (payload: IPayload) => async (
     );
   }
 
-  onGetJobDescription(payload, childRequisitionId)(dispatch);
+  onGetJobDescription(payload)(dispatch);
   dispatch({
     type: UPDATE_REQUISITION,
     payload: {
       selectedChildRequisition: childRequisition
     }
   });
-
-  window.sessionStorage.setItem("back-page", payload.currentPage.id);
   onUpdatePageId(goTo)(dispatch);
-  dispatch(push(path));
 };
 
 export const onGetNHETimeSlots = (payload: IPayload) => async (
@@ -228,7 +224,7 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
-  if (requisitionId) {
+  if (requisitionId && isEmpty(payload.data.requisition.availableShifts)) {
     try {
       const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,

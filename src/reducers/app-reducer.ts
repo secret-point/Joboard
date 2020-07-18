@@ -18,7 +18,9 @@ import {
   GET_REQUISITION_HEADER_INFO,
   UPDATE_REQUISITION,
   UPDATE_SHIFTS,
-  RESET_FILTERS
+  RESET_FILTERS,
+  UPDATE_JOB_DESCRIPTION,
+  SELECTED_REQUISITION
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -27,7 +29,8 @@ import {
   UPDATE_NON_FCRA_QUESTIONS,
   ON_GET_CANDIDATE,
   UPDATE_CONTINGENT_OFFER,
-  SHOW_PREVIOUS_NAMES
+  SHOW_PREVIOUS_NAMES,
+  SET_SELECTED_SHIFT
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
@@ -55,6 +58,7 @@ const initialState: any = {
   output: {},
   currentPageOutput: {},
   currentPage: {},
+  previousPage: {},
   currentStep: 0,
   hasResponseError: false,
   errorMessage: null,
@@ -154,6 +158,9 @@ const AppReducer = (state = initialState, action: IAction) => {
         currentPage: {
           $set: currentPage
         },
+        previousPage: {
+          $set: state.currentPage
+        },
         pageConfig: {
           $set: payload.page.pageConfig
         },
@@ -196,6 +203,28 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           requisition: {
             $set: updatedRequisition
+          }
+        }
+      });
+    }
+
+    case SELECTED_REQUISITION: {
+      return updateState(state, {
+        data: {
+          requisition: {
+            selectedChildRequisition: {
+              $set: payload
+            }
+          }
+        }
+      });
+    }
+
+    case SET_SELECTED_SHIFT: {
+      return updateState(state, {
+        data: {
+          selectedShift: {
+            $set: payload
           }
         }
       });
@@ -286,6 +315,18 @@ const AppReducer = (state = initialState, action: IAction) => {
     case UPDATE_SHIFTS: {
       const requisition = cloneDeep(state.data.requisition);
       requisition.availableShifts = { ...payload.availableShifts };
+      return updateState(state, {
+        data: {
+          requisition: {
+            $set: requisition
+          }
+        }
+      });
+    }
+
+    case UPDATE_JOB_DESCRIPTION: {
+      const requisition = cloneDeep(state.data.requisition);
+      requisition.jobDescription = { ...payload.jobDescription };
       return updateState(state, {
         data: {
           requisition: {

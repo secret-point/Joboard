@@ -37,6 +37,7 @@ export interface ApplicationData {
   output: any;
   candidate: Candidate;
   showPreviousNames: string;
+  selectedShift: any;
 }
 
 export interface Page {
@@ -120,6 +121,7 @@ export default interface Payload {
   data: ApplicationData;
   currentPage: Page;
   nextPage: Page;
+  previousPage: Page;
   urlParams: UrlParam;
   appConfig: AppConfig;
   pageOrder: PageOrder[];
