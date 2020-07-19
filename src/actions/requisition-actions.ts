@@ -109,7 +109,9 @@ export const onGetJobDescription = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
-  const childRequisitionId = payload.selectedRequisitionId;
+  const childRequisitionId =
+    payload.selectedRequisitionId ||
+    payload.data.requisition.selectedChildRequisition.requisitionId;
   if (childRequisitionId) {
     try {
       if (!payload.data.requisition.selectedChildRequisition) {
