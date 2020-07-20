@@ -28,8 +28,8 @@ const RedirectPage: React.FC<RedirectPageProps> = ({
     const previousPage = window.localStorage.getItem("page");
     if (!previousPage) {
       onUpdatePageId(page);
-      window.localStorage.setItem("page", page);
     }
+    window.localStorage.setItem("page", page);
     setRedirectPath(path);
   }, [match, onUpdatePageId]);
   return isEmpty(redirectPath) ? <Loader /> : <Redirect to={redirectPath} />;
