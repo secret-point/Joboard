@@ -122,6 +122,16 @@ export const completeTask = (
 };
 
 export const onTimeOut = () => {
-  setWorkflowLoading(false)(window.reduxStore.dispatch);
-  window.location.assign("/#/timeout");
+  if (window.hearBeatTime) {
+    const endTime = moment();
+    const startTime = moment(window.hearBeatTime);
+    const duration = moment.duration(endTime.diff(startTime));
+    if (duration.asMinutes() > MAX_MINUTES_FOR_HEARTBEAT) {
+      setWorkflowLoading(false)(window.reduxStore.dispatch);
+      window.location.assign("/#/timeout");
+    }
+  } else {
+    setWorkflowLoading(false)(window.reduxStore.dispatch);
+    window.location.assign("/#/timeout");
+  }
 };

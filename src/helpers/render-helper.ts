@@ -41,13 +41,8 @@ export const validation = (value: any, type: string) => {
       //According to SF rule: DoB should not be within 10 yrs: today - 10 years.
       let tenYearsFromNow = moment()
         .utc()
-        .subtract(10, "years")
-        .format("YYYY-MM-DD");
-      if (
-        moment(value)
-          .utc()
-          .format("YYYY-MM-DD") <= tenYearsFromNow
-      ) {
+        .subtract(18, "years");
+      if (moment(value).utc() <= tenYearsFromNow) {
         return true;
       } else {
         return false;

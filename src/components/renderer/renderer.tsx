@@ -207,7 +207,6 @@ const Renderer: React.FC<IRendererProps> = ({
       if (keyName) {
         set(formData, keyName, value);
         setForm(formData);
-        console.log("formData", formData);
         set(validations, `${keyName}.hasError`, false);
       }
       if (onAction && actionName !== "ON_VALUE_CHANGE") {
@@ -265,7 +264,6 @@ const Renderer: React.FC<IRendererProps> = ({
       if (dataKeyIsArray) {
         for (let i = 0; i < dataKey.length; i++) {
           value = getValue(dataKey[i]);
-          console.log(dataKey[i], value);
           if (isEmpty(value)) {
             break;
           }

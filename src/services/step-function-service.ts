@@ -78,8 +78,10 @@ export default class StepFunctionService {
   }
 
   close(event: any) {
-    console.log(event);
-    onTimeOut();
+    window.setTimeout(() => {
+      console.log(event);
+      onTimeOut();
+    }, 10000);
   }
 
   async message(event: MessageEvent) {

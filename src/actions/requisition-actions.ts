@@ -248,12 +248,9 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
       setLoading(false)(dispatch);
     } catch (ex) {
       console.log(ex);
-      const { urlParams } = payload;
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
-        goTo(
-          `/no-available-shift/${urlParams.requisitionId}/${urlParams.applicationId}`
-        )(dispatch);
+        onUpdatePageId("no-available-shift")(dispatch);
       } else {
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get shifts"
