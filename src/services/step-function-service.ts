@@ -43,7 +43,7 @@ export default class StepFunctionService {
         .replace("{applicationId}", this.applicationId)
         .replace("{candidateId}", this.candidateId);
       if (token) {
-        websocketURL = `${websocketURL}&authToken=${token}`;
+        websocketURL = `${websocketURL}&authToken=${encodeURIComponent(token)}`;
       }
       this.stepFunctionEndpoint = websocketURL;
       this.websocket = new WebSocket(this.stepFunctionEndpoint);
