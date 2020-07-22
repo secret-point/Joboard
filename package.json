@@ -38,6 +38,7 @@
     "amazon-cognito-identity-js": "^3.3.3",
     "aws-amplify": "^2.3.0",
     "axios": "^0.19.2",
+    "caniuse-lite": "^1.0.30001090",
     "core-js": "^3.6.5",
     "create-emotion-styled": "^9.2.8",
     "history": "^4.10.1",
@@ -64,7 +65,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
     "test:disabled": "react-app-rewired test --coverage --watchAll=false",
     "test": "echo 'ignored for now'",
     "test:watch": "react-app-rewired test --coverage --watchAll=true",

@@ -9,7 +9,8 @@ import { Store } from "redux";
 import StepFunctionService from "./services/step-function-service";
 import isNull from "lodash/isNull";
 import ICandidateApplication from "./@types/ICandidateApplication";
-import "@babel/polyfill";
+import "regenerator-runtime/runtime";
+import "core-js";
 
 declare global {
   interface Window {

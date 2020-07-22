@@ -1,7 +1,7 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { DaysHoursFilter } from "../@types/IPayload";
-import { goTo, setLoading, onUpdatePageId } from "./actions";
+import { setLoading, onUpdatePageId } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
@@ -9,6 +9,7 @@ import propertyOf from "lodash/propertyOf";
 import orderBy from "lodash/orderBy";
 import CandidateApplicationService from "../services/candidate-application-service";
 import isNil from "lodash/isNil";
+import { push } from "react-router-redux";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -236,7 +237,15 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
-  if (requisitionId && isEmpty(payload.data.requisition.availableShifts)) {
+  const storedApplicationId = window.sessionStorage.getItem("applicationId");
+  if (!applicationId && storedApplicationId) {
+    dispatch(
+      push(`/job-opportunities/${requisitionId}/${storedApplicationId}`)
+    );
+  } else if (
+    requisitionId &&
+    isEmpty(payload.data.requisition.availableShifts)
+  ) {
     try {
       const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,

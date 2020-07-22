@@ -144,6 +144,7 @@ export const createApplication = (payload: IPayload) => async (
         language: "English"
       });
 
+      window.sessionStorage.setItem("applicationId", response.applicationId);
       dispatch({
         type: UPDATE_APPLICATION,
         payload: {
