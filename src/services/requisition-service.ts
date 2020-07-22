@@ -49,10 +49,10 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async getTimeSlots(childRequisitionId: string) {
-    const response = await this.axiosInstance.get(
-      `/get-time-slots/${childRequisitionId}`
-    );
+  async availableTimeSlots(payload: any) {
+    const response = await this.axiosInstance.post(`/available-time-slots`, {
+      ...payload
+    });
 
     return response.data;
   }

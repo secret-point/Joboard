@@ -183,9 +183,12 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           applicationId
         );
       }
-      const response = await new RequisitionService().getTimeSlots(
-        application.jobSelected.childRequisitionId
-      );
+      const { jobSelected } = application;
+      const response = await new RequisitionService().availableTimeSlots({
+        childRequisitionId: jobSelected.childRequisitionId,
+        headCountRequestId: jobSelected.headCountRequestId,
+        parentRequisitionId: requisitionId
+      });
 
       if (response) {
         const nheSlots: any[] = [];
