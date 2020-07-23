@@ -10,6 +10,7 @@ const actions = {
 
 const mapStateToProps = (state: any, ownProps: any) => {
   const { page } = ownProps.match.params;
+  window.urlParams = ownProps.match.params;
   const pageOrder = find(state.app.pageOrder, { id: page });
   const pageConfig = state.app.pageConfig;
   return {

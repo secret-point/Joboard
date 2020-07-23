@@ -3,6 +3,7 @@ import { push } from "react-router-redux";
 import PageService from "../services/page-service";
 import { completeTask } from "./workflow-actions";
 import isEmpty from "lodash/isEmpty";
+import { addMetricForPageLoad } from "./adobe-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -113,6 +114,13 @@ export const onSubmit = (payload: any) => async (dispatch: Function) => {
 
 export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
   const pageConfig = await new PageService().getPageConfig(`${page}.json`);
+
+  window.isPageMetricsUpdated = false;
+  if (!window.pageLoadMetricsInterval) {
+    window.pageLoadMetricsInterval = setInterval(() => {
+      addMetricForPageLoad();
+    }, 5000);
+  }
 
   dispatch({
     type: ON_UPDATE_PAGE_ID,

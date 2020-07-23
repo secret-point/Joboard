@@ -20,6 +20,10 @@ declare global {
     isCompleteTaskOnLoad: boolean | undefined;
     applicationData: ICandidateApplication | undefined;
     hearBeatTime: string;
+    dataLayerArray: any[];
+    isPageMetricsUpdated: boolean;
+    pageLoadMetricsInterval: any;
+    urlParams: any;
   }
 }
 
@@ -57,6 +61,7 @@ getInitialData()
     }
 
     window.reduxStore = store;
+    window.dataLayerArray = [];
     const Main = () => (
       <Provider store={store}>
         <App />

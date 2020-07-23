@@ -6,7 +6,6 @@ export const LOAD_INIT_DATA = "LOAD_INIT_DATA";
 export const onAction = (actionName: string, payload: any) => async (
   dispatch: Function
 ) => {
-  console.log(actionMap);
   const action =
     actionName === "EXECUTE_ACTIONS"
       ? onExecuteMultipleActions
