@@ -10,6 +10,7 @@ import {
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
 import isNull from "lodash/isNull";
+import propertyOf from "lodash/propertyOf";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -205,6 +206,11 @@ export const updateApplication = (payload: IPayload) => async (
   onUpdateOutput(payload)(dispatch);
   if (options?.valueExitsInData) {
     updateData = data.output[currentPage.id];
+  }
+
+  if (isEmpty(updateData) && options?.checkDataInPayload) {
+    updateData = {};
+    updateData[options.outputKey] = propertyOf(payload.data)(options?.dataKey);
   }
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
