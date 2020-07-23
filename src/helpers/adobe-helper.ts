@@ -9,17 +9,19 @@ export const getDataForMetrics = () => {
 
   const metricObject: any = ADOBE_PAGE_LOAD_METRICS[currentPage];
 
-  let metricData: any = {};
+  let metricData: any;
 
-  metricData = metricObject.eventPayload;
-  metricData.page.name = PAGE_NAME[currentPage];
+  if (metricObject) {
+    metricData = metricObject.eventPayload;
+    metricData.page.name = PAGE_NAME[currentPage];
 
-  metricObject.dataPayload?.forEach((d: any) => {
-    metricData[d.key] = {};
-    d.values?.forEach((v: any) => {
-      metricData[d.key][v.key] = propertyOf(app.data)(v.value);
+    metricObject.dataPayload?.forEach((d: any) => {
+      metricData[d.key] = {};
+      d.values?.forEach((v: any) => {
+        metricData[d.key][v.key] = propertyOf(app.data)(v.value);
+      });
     });
-  });
+  }
 
   return metricData;
 };

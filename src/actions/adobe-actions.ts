@@ -14,7 +14,9 @@ export const addMetricForPageLoad = () => {
     if (!isEmpty(app.data.requisition) && !window.isPageMetricsUpdated) {
       const dataLayer = getDataForMetrics();
       window.isPageMetricsUpdated = true;
-      sendDataLayerAdobeAnalytics(dataLayer);
+      if (!isEmpty(dataLayer)) {
+        sendDataLayerAdobeAnalytics(dataLayer);
+      }
     }
   } catch (ex) {
     console.log(ex);
