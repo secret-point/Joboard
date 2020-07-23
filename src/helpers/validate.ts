@@ -93,6 +93,7 @@ export const validateRequiredData = (
       );
       const validationType = propertyOf(component)("properties.validationType");
       const isValidation = propertyOf(component)("properties.validation");
+      const isOptional = propertyOf(component)("properties.optional");
       let dataKeyValidate = validation(dataKeyOutputValue, validationType);
 
       if (component.showComponentProperties) {
@@ -105,7 +106,7 @@ export const validateRequiredData = (
           activeStepIndex
         );
       }
-      if (!dataKeyOutputValue && componentRendered) {
+      if (!dataKeyOutputValue && !isOptional && componentRendered) {
         set(validComponents, dataKey, {
           hasError: true,
           errorMessage: requiredErrorMessage

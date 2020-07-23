@@ -48,5 +48,17 @@ export const validation = (value: any, type: string) => {
         return false;
       }
     }
+    case "LEGAL_NAME": {
+      if (!value) {
+        return true;
+      } else {
+        const stringArray = value.split(" ");
+        if (stringArray.length === 2) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    }
   }
 };
