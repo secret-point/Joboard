@@ -43,6 +43,7 @@ export default interface ICandidateApplication {
   lastModificationDate?: any;
   shift: any;
   onlySeasonalShifts: boolean;
+  workflowStepName: string;
 }
 export interface Candidate {
   candidateId: string;

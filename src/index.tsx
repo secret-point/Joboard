@@ -37,7 +37,7 @@ getInitialData()
       const tokenString = window.location.hash.split("?token=");
       window.localStorage.setItem("accessToken", tokenString[1]);
     }
-
+    window.dataLayerArray = [];
     const urlParams = new URLSearchParams(window.location.search);
     const requisitionId = urlParams.get("requisitionId");
     const agency: any = urlParams.get("agency");
@@ -61,7 +61,6 @@ getInitialData()
     }
 
     window.reduxStore = store;
-    window.dataLayerArray = [];
     const Main = () => (
       <Provider store={store}>
         <App />

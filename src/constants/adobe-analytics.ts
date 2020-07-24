@@ -12,5 +12,18 @@ export enum PAGE_TYPE {
 }
 
 export const PAGE_NAME: any = {
-  consent: "job landing"
+  consent: "job landing",
+  "assessment-consent": "assessment start",
+  "job-opportunities": "view jobs",
+  "job-description": "job description",
+  "contingent-offer": "BB-contingent offer",
+  bgc: "background check",
+  fcra: "FCRA disclosure",
+  nhe: "pre-hire appointment",
+  "review-submit": "review and submit",
+  "thank-you": "thank you / prehire activities",
+  "self-identification": "voluntary self-identification",
+  wotc: "BB - WOTC",
+  "supplementary-success": "supplementary forms thank you",
+  rejection: "BB - ineligible" //ineligible: "BB - ineligible"
 };

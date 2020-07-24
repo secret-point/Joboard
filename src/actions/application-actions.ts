@@ -11,6 +11,8 @@ import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
 import isNull from "lodash/isNull";
 import propertyOf from "lodash/propertyOf";
+import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
+import { getDataForEventMetrics } from "../helpers/adobe-helper";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -37,6 +39,8 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
     url = `${url}&agency=${agency}`;
   }
 
+  const adobeDataMetric = getDataForEventMetrics("start-application");
+  sendDataLayerAdobeAnalytics(adobeDataMetric);
   window.location.assign(url);
 };
 
@@ -111,10 +115,7 @@ export const onGetCandidate = (
 };
 
 export const onLaunchFCRA = (payload: IPayload) => (dispatch: Function) => {
-  // const { urlParams } = payload;
-  // const url = `/app/${urlParams.requisitionId}/${urlParams.applicationId}`;
   onUpdatePageId("fcra")(dispatch);
-  //dispatch(push(url));
 };
 
 export const continueWithFCRADecline = (payload: IPayload) => (
@@ -259,6 +260,8 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
     type: SET_SELECTED_SHIFT,
     payload: payload.selectedShift
   });
+  const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
+  sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
 };
 
 export const onUpdateShiftSelection = (payload: IPayload) => async (

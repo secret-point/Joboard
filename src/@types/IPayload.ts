@@ -141,6 +141,7 @@ export default interface Payload {
 }
 export interface requistionAvailableShifts {
   shifts: requistionShifts[];
+  total: any;
 }
 export interface requistionShifts {
   headCountRequestId: string;
