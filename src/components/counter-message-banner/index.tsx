@@ -58,7 +58,7 @@ const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
 
   return (
     <MessageBanner type={MessageBannerType.Warning}>
-      {`Spot reserved for ${hours} hours and ${minutes} minutes`}
+      {`We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to complete the remaining steps.`}
     </MessageBanner>
   );
 };
