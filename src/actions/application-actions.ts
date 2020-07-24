@@ -292,7 +292,9 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       applicationId: urlParams.applicationId,
       payload: {
         headCountRequestId: application.shift.headCountRequestId,
-        childRequisitionId: application.shift.requisitionId
+        childRequisitionId: application.shift.requisitionId,
+        shiftType: application.shift.shiftType,
+        shift: application.shift
       }
     });
     response.shift = application.shift;
