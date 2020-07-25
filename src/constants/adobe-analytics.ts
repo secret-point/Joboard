@@ -12,10 +12,13 @@ export enum PAGE_TYPE {
 }
 
 export const PAGE_NAME: any = {
+  "pre-consent": "BB - welcome",
   consent: "job landing",
-  "assessment-consent": "assessment start",
+  "assessment-consent": "pre-assessment",
+  assessment: "assessment start",
   "job-opportunities": "view jobs",
   "job-description": "job description",
+  "job-roles": "job roles",
   "contingent-offer": "BB-contingent offer",
   bgc: "background check",
   fcra: "FCRA disclosure",
@@ -25,5 +28,16 @@ export const PAGE_NAME: any = {
   "self-identification": "voluntary self-identification",
   wotc: "BB - WOTC",
   "supplementary-success": "supplementary forms thank you",
-  rejection: "BB - ineligible" //ineligible: "BB - ineligible"
+
+  "amazon-withdraws": "amazon-withdraws", //ineligible: "BB - ineligible",
+  "amazon-rejects": "amazon-rejects",
+  "assessment-not-eligible": "assessment-not-eligible", //ineligible: "BB - ineligible",
+  "can-not-offer-job": "candidate-decline-FCRA",
+  "candidate-withdraws": "candidate-withdraws", //ineligible: "BB - ineligible",
+  "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only",
+  "rehire-not-eligible": "rehire-not-eligible", //ineligible: "BB - ineligible",
+
+  "equal-opportunity-form": "self ID: equal opportunity",
+  "veteran-status-form": "self ID: veteran status",
+  "disability-form": "self ID: disability disclosure"
 };

@@ -94,12 +94,18 @@ describe("Test App Reducer", () => {
       payload: {
         requisitionId: "123123",
         jobTitle: "Sample Title",
-        questions: ["Sample Questions"]
+        questions: ["Sample Questions"],
+        locationCode: "1198",
+        requisitionStatus: "XX",
+        requisitionType: "YY"
       }
     });
 
     expect(state.data.requisition.consentInfo.requisitionId).toBe("123123");
     expect(state.data.requisition.consentInfo.jobTitle).toBe("Sample Title");
+    expect(state.data.requisition.consentInfo.locationCode).toBe("1198");
+    expect(state.data.requisition.consentInfo.requisitionStatus).toBe("XX");
+    expect(state.data.requisition.consentInfo.requisitionType).toBe("YY");
 
     expect(state.data.requisition.consentInfo.questions.length).toBe(1);
     expect(state.data.requisition.consentInfo.questions[0]).toBe(

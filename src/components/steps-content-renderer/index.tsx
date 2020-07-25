@@ -12,6 +12,9 @@ import RendererContainer from "../../containers/renderer";
 import { getStatusForSteps } from "./../../helpers/steps-helper";
 import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";
 import { RESET_IS_UPDATE_ACTION_EXECUTED } from "../../actions/actions";
+import { sendDataLayerAdobeAnalytics } from "../../actions/adobe-actions";
+import { getDataForEventMetrics } from "../../helpers/adobe-helper";
+import { isEmpty } from "lodash";
 
 interface IStepContentRenderer {
   steps: any[];
@@ -43,6 +46,12 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
     onAction(RESET_IS_UPDATE_ACTION_EXECUTED, {
       data
     });
+    //send adobe metrics for step
+    const dataLayer: any = getDataForEventMetrics(steps[index].id);
+    if (!isEmpty(dataLayer)) {
+      sendDataLayerAdobeAnalytics(dataLayer);
+    }
+
     const _statuses = [...statuses];
     _statuses[index] = IN_PROGRESS;
     let _editStatusIndex = editStatusIndex;

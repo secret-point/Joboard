@@ -10,6 +10,18 @@ const jobPayloadDefault = {
     {
       key: "title",
       value: "requisition.consentInfo.jobTitle"
+    },
+    {
+      key: "location",
+      value: "requisition.consentInfo.locationCode"
+    },
+    {
+      key: "reqStatus",
+      value: "requisition.consentInfo.requisitionStatus"
+    },
+    {
+      key: "reqType",
+      value: "requisition.consentInfo.requisitionType"
     }
   ]
 };
@@ -38,6 +50,16 @@ const applicationIneligibleDefault = {
     {
       key: "workflow",
       value: "application.workflowStepName"
+    }
+  ]
+};
+
+const jobRolesPayloadDefault = {
+  key: "roles",
+  values: [
+    {
+      key: "list",
+      value: "requisition.childRequisitions"
     }
   ]
 };
@@ -233,6 +255,15 @@ const sortPayloadDefault = {
 };
 
 export const ADOBE_PAGE_LOAD_METRICS: any = {
+  "pre-consent": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["pre-consent"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    }
+  },
   consent: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -253,6 +284,16 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [jobPayloadDefault, applicationPayloadDefault]
   },
+  assessment: {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["assessment"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+  },
   "job-opportunities": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -267,6 +308,20 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftsPayloadDefault
     ]
   },
+  "job-roles": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["job-roles"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      jobRolesPayloadDefault
+    ]
+  },
   "job-description": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -278,7 +333,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       eventShiftPayload
     ]
   },
@@ -293,7 +347,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -308,7 +361,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -323,7 +375,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -338,7 +389,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault,
       nhePayloadDefault
     ]
@@ -354,7 +404,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -369,7 +418,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -384,7 +432,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -399,7 +446,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
@@ -414,31 +460,117 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
-  rejection: {
+  "amazon-withdraws": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       page: {
-        name: PAGE_NAME["rejection"],
+        name: PAGE_NAME["amazon-withdraws"],
         type: PAGE_TYPE.APPLICATION
       }
     },
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftsPayloadDefault,
       shiftPayloadDefault
     ]
   },
+  "amazon-rejects": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["amazon-rejects"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "assessment-not-eligible": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["assessment-not-eligible"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "candidate-withdraws": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["candidate-withdraws"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "rehire-not-eligible-seasonal-only": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["rehire-not-eligible-seasonal-only"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "rehire-not-eligible": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["rehire-not-eligible"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "can-not-offer-job": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["can-not-offer-job"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+  },
+
   "apply-filter": {
     eventPayload: {
       event: EVENT.JOBS_FILTER
     },
-    dataPayload: [jobPayloadDefault, applicationIneligibleDefault],
-    appConfigPayload: [filterPayloadDefault, sortPayloadDefault]
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    appConfigPayload: [filterPayloadDefault]
+  },
+  "apply-sorting": {
+    eventPayload: {
+      event: EVENT.JOBS_SORT
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    appConfigPayload: [sortPayloadDefault]
   },
   "start-application": {
     eventPayload: {
@@ -452,8 +584,50 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [
       jobPayloadDefault,
-      applicationIneligibleDefault,
+      applicationPayloadDefault,
       eventShiftPayload
+    ]
+  },
+  "equal-opportunity-form": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["equal-opportunity-form"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "veteran-status-form": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["veteran-status-form"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "disability-form": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["disability-form"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
     ]
   }
 };

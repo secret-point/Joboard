@@ -16,6 +16,9 @@ export interface OutputData {
 export interface ConsentInfo {
   jobTitle: string;
   questions: string[];
+  locationCode: string;
+  requisitionStatus: string;
+  requisitionType: string;
 }
 
 export interface Requisition {

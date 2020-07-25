@@ -5,6 +5,7 @@ export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
 
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
+  window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
 };
 

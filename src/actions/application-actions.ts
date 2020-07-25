@@ -13,6 +13,7 @@ import isNull from "lodash/isNull";
 import propertyOf from "lodash/propertyOf";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
+import findIndex from "lodash/findIndex";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -260,7 +261,14 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
     type: SET_SELECTED_SHIFT,
     payload: payload.selectedShift
   });
+
+  let allShifts: any[] = payload.data.requisition.availableShifts.shifts;
+  let selectedShiftPositionInOrder: number = findIndex(allShifts, {
+    headCountRequestId: payload.selectedShift.headCountRequestId
+  });
   const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
+  //position
+  dataLayerShiftSelected.shift.position = selectedShiftPositionInOrder + 1;
   sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
 };
 
