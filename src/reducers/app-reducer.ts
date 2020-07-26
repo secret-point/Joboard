@@ -357,6 +357,8 @@ const AppReducer = (state = initialState, action: IAction) => {
     case RESET_PAGE_OUTPUT: {
       let data = cloneDeep(state.data);
       data.output = {};
+      delete data.requisition.nheTimeSlots;
+      delete data.requisition.shifts;
       return updateState(state, {
         data: {
           $set: data

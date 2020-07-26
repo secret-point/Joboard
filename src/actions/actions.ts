@@ -183,6 +183,7 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
 ) => {
   const { application } = payload.data;
   const options = payload.options;
+  onResetPageOutput()(dispatch);
   if (!isEmpty(options?.stepName)) {
     completeTask(application, options?.stepName, true);
   }

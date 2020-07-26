@@ -181,7 +181,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   if (requisitionId) {
     try {
       let application = payload.data.application;
-      if (application) {
+      if (!application) {
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
@@ -244,10 +244,7 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
     dispatch(
       push(`/job-opportunities/${requisitionId}/${storedApplicationId}`)
     );
-  } else if (
-    requisitionId &&
-    isEmpty(payload.data.requisition.availableShifts)
-  ) {
+  } else if (requisitionId) {
     try {
       const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,
