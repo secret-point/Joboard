@@ -104,12 +104,24 @@ const eventShiftPayload = {
         {
           key: "type",
           value: "selectedShift.jobType"
+        },
+        {
+          key: "class",
+          value: "selectedShift.jobClass"
         }
       ]
     },
     {
       key: "day1Date",
       value: "selectedShift.day1Date"
+    },
+    {
+      key: "altCode",
+      value: "selectedShift.altShiftCode"
+    },
+    {
+      key: "code",
+      value: "selectedShift.shiftCode"
     }
   ]
 };

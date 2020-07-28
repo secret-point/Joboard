@@ -169,6 +169,9 @@ export interface requistionShifts {
   time: string;
   iconUrl: string;
   currency: string;
+  jobClass: string;
+  shiftCode: string;
+  altShiftCode: string;
 }
 
 export interface HoursPerWeek {

@@ -355,6 +355,26 @@ export const onApplyFilter = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
+
+  const activeDays: any[] = [];
+  let daysHoursFilter = (propertyOf(payload.data.output)(
+    "job-opportunities.daysHoursFilter"
+  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
+  daysHoursFilter.forEach(filter => {
+    if (filter.isActive) {
+      activeDays.push(filter.day);
+    }
+  });
+
+  let dataLayer: any = {};
+  if (options?.hasSortAction) {
+    dataLayer = getDataForEventMetrics("apply-sorting");
+  } else {
+    dataLayer = getDataForEventMetrics("apply-filter");
+    dataLayer.filter.daysOfWeek = activeDays;
+  }
+  sendDataLayerAdobeAnalytics(dataLayer);
+
   if (requisitionId) {
     try {
       const response = await new RequisitionService().getAllAvailableShifts(
@@ -368,25 +388,6 @@ export const onApplyFilter = (payload: IPayload) => async (
           ...response
         }
       });
-
-      const activeDays: any[] = [];
-      let daysHoursFilter = (propertyOf(payload.data.output)(
-        "job-opportunities.daysHoursFilter"
-      ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
-      daysHoursFilter.forEach(filter => {
-        if (filter.isActive) {
-          activeDays.push(filter.day);
-        }
-      });
-
-      let dataLayer: any = {};
-      if (options?.hasSortAction) {
-        dataLayer = getDataForEventMetrics("apply-sorting");
-      } else {
-        dataLayer = getDataForEventMetrics("apply-filter");
-        dataLayer.filter.daysOfWeek = activeDays;
-      }
-      sendDataLayerAdobeAnalytics(dataLayer);
       setLoading(false)(dispatch);
     } catch (ex) {
       console.log(ex);
