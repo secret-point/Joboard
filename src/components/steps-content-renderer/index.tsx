@@ -31,6 +31,15 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
 }) => {
   const [statuses, setStatuses] = useState<string[]>([]);
   const [editStatusIndex, SetEditStatusIndex] = useState<number>(-1);
+  const [adobeMetricRecords, setAdobeMetricRecords] = useState<any>({});
+
+  useEffect(() => {
+    const adobeRecords: any = {};
+    steps?.forEach(step => {
+      adobeRecords[step.id] = false;
+    });
+    setAdobeMetricRecords(adobeRecords);
+  }, []);
 
   useEffect(() => {
     const _statuses = getStatusForSteps(
@@ -42,15 +51,29 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
     setStatuses(_statuses);
   }, [data, steps, editStatusIndex, isUpdateActionExecuted]);
 
+  useEffect(() => {
+    if (!isEmpty(steps)) {
+      statuses.forEach((status: any, index: number) => {
+        if (
+          status === IN_PROGRESS &&
+          steps[index].id !== "fcra" &&
+          !adobeMetricRecords[steps[index].id]
+        ) {
+          const dataLayer: any = getDataForEventMetrics(steps[index].id);
+          if (!isEmpty(dataLayer)) {
+            sendDataLayerAdobeAnalytics(dataLayer);
+            adobeMetricRecords[steps[index].id] = true;
+            setAdobeMetricRecords(adobeMetricRecords);
+          }
+        }
+      });
+    }
+  }, [statuses, steps, adobeMetricRecords]);
+
   const onEdit = (index: number) => {
     onAction(RESET_IS_UPDATE_ACTION_EXECUTED, {
       data
     });
-    //send adobe metrics for step
-    const dataLayer: any = getDataForEventMetrics(steps[index].id);
-    if (!isEmpty(dataLayer)) {
-      sendDataLayerAdobeAnalytics(dataLayer);
-    }
 
     const _statuses = [...statuses];
     _statuses[index] = IN_PROGRESS;

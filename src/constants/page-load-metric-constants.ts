@@ -629,5 +629,33 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       shiftPayloadDefault
     ]
+  },
+  "additional-bgc-info": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["additional-bgc-info"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "non-fcra": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["non-fcra"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
   }
 };

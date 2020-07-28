@@ -4,7 +4,7 @@ export enum EVENT {
   START_ASSESSMENT = "assessment start",
   JOBS_FILTER = "jobs filter",
   JOBS_SORT = "jobs sort",
-  SHIFT_SELECTED = "shift selected"
+  SHIFT_SELECTED = "selected shift"
 }
 
 export enum PAGE_TYPE {
@@ -14,14 +14,14 @@ export enum PAGE_TYPE {
 export const PAGE_NAME: any = {
   "pre-consent": "BB - welcome",
   consent: "job landing",
-  "assessment-consent": "pre-assessment",
-  assessment: "assessment start",
+  "assessment-consent": "BB - pre-assessment",
+  assessment: "BB - assessment",
   "job-opportunities": "view jobs",
   "job-description": "job description",
   "job-roles": "job roles",
   "contingent-offer": "BB-contingent offer",
   bgc: "background check",
-  fcra: "FCRA disclosure",
+  fcra: "BGC: FCRA disclosure",
   nhe: "pre-hire appointment",
   "review-submit": "review and submit",
   "thank-you": "thank you / prehire activities",
@@ -39,5 +39,8 @@ export const PAGE_NAME: any = {
 
   "equal-opportunity-form": "self ID: equal opportunity",
   "veteran-status-form": "self ID: veteran status",
-  "disability-form": "self ID: disability disclosure"
+  "disability-form": "self ID: disability disclosure",
+
+  "additional-bgc-info": "BGC: additional bgc info",
+  "non-fcra": "BGC: non-fcra"
 };
