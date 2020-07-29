@@ -210,6 +210,10 @@ export const updateApplication = (payload: IPayload) => async (
     updateData = data.output[currentPage.id];
   }
 
+  if (isEmpty(updateData) && options?.isActionFromModal) {
+    updateData = options?.output[type];
+  }
+
   if (isEmpty(updateData) && options?.checkDataInPayload) {
     updateData = {};
     updateData[options.outputKey] = propertyOf(payload.data)(options?.dataKey);

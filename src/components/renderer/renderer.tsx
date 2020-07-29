@@ -9,6 +9,7 @@ import { covertValueTo } from "../../helpers/render-helper";
 import { validateRequiredData } from "../../helpers/validate";
 import merge from "lodash/merge";
 import { isArray } from "lodash";
+import RenderOutputContext from "./render-context";
 
 type IComponent = {
   component: string;
@@ -303,37 +304,40 @@ const Renderer: React.FC<IRendererProps> = ({
     return value;
   };
   return (
-    <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
-      {componentList.map((component: any, index: number) => {
-        let value =
-          getValue(component.properties.dataKey) || component.properties.value;
-        const dataObject: any = {};
-        if (component.componentValueProp) {
-          dataObject[component.componentValueProp] =
-            getValue(component.valueKey) || component.defaultValue;
-        }
-        const componentValidation = getValidationValue(
-          component.properties.dataKey
-        );
-        return (
-          showComponent(component.showComponentProperties) && (
-            <component.Element
-              key={`component-${index}`}
-              {...component.properties}
-              onValueChange={onValueChange}
-              enableOnValidation={true}
-              value={value}
-              hasError={componentValidation?.hasError}
-              errorMessage={componentValidation?.errorMessage}
-              errorText={componentValidation?.errorMessage}
-              onButtonClick={onButtonClick}
-              defaultValue={value}
-              {...dataObject}
-            />
-          )
-        );
-      })}
-    </Render>
+    <RenderOutputContext.Provider value={{ form }}>
+      <Render data-testid={`renderer`} gridGap={gridGap} {...renderProps}>
+        {componentList.map((component: any, index: number) => {
+          let value =
+            getValue(component.properties.dataKey) ||
+            component.properties.value;
+          const dataObject: any = {};
+          if (component.componentValueProp) {
+            dataObject[component.componentValueProp] =
+              getValue(component.valueKey) || component.defaultValue;
+          }
+          const componentValidation = getValidationValue(
+            component.properties.dataKey
+          );
+          return (
+            showComponent(component.showComponentProperties) && (
+              <component.Element
+                key={`component-${index}`}
+                {...component.properties}
+                onValueChange={onValueChange}
+                enableOnValidation={true}
+                value={value}
+                hasError={componentValidation?.hasError}
+                errorMessage={componentValidation?.errorMessage}
+                errorText={componentValidation?.errorMessage}
+                onButtonClick={onButtonClick}
+                defaultValue={value}
+                {...dataObject}
+              />
+            )
+          );
+        })}
+      </Render>
+    </RenderOutputContext.Provider>
   );
 };
 

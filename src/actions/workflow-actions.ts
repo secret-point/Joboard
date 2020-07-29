@@ -85,6 +85,20 @@ export const goToStep = async (workflowData: WorkflowData) => {
         setWorkflowLoading(false)(window.reduxStore.dispatch);
       });
     onUpdatePageId(workflowData.stepName)(window.reduxStore.dispatch);
+    if (
+      workflowData.stepName === "supplementary-success" ||
+      workflowData.stepName === "thank-you"
+    ) {
+      const metric = window.MetricsPublisher.newChildActionPublisherForMethod(
+        "ApplicationCompleteTime"
+      );
+
+      const metricName =
+        workflowData.stepName === "supplementary-success"
+          ? "Completed"
+          : "PreHireStepsCompleted";
+      metric.publishTimer(metricName, Date.now() - window.applicationStartTime);
+    }
     window.localStorage.setItem("page", workflowData.stepName);
     window.reduxStore.dispatch(
       push(

@@ -33,6 +33,10 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
   const [editStatusIndex, SetEditStatusIndex] = useState<number>(-1);
   const [adobeMetricRecords, setAdobeMetricRecords] = useState<any>({});
 
+  const metric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+    "StepsLoad"
+  );
+
   useEffect(() => {
     const adobeRecords: any = {};
     steps?.forEach(step => {
@@ -64,11 +68,12 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
             sendDataLayerAdobeAnalytics(dataLayer);
             adobeMetricRecords[steps[index].id] = true;
             setAdobeMetricRecords(adobeMetricRecords);
+            metric.publishCounter(steps[index].id, 1);
           }
         }
       });
     }
-  }, [statuses, steps, adobeMetricRecords]);
+  }, [statuses, steps, adobeMetricRecords, metric]);
 
   const onEdit = (index: number) => {
     onAction(RESET_IS_UPDATE_ACTION_EXECUTED, {

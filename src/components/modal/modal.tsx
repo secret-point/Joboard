@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import RendererContainer from "../../containers/renderer";
 import { Modal, ModalContent } from "@amzn/stencil-react-components/modal";
 import { Button } from "@amzn/stencil-react-components/button";
 import { IconCross } from "@amzn/stencil-react-components/icons";
 import { Row } from "@amzn/stencil-react-components/layout";
+import RenderOutputContext from "../renderer/render-context";
 
 interface IModalContentComponent {
   modal: any;
@@ -28,6 +29,7 @@ const ModalContentComponent: React.FC<IModalContentComponent> = ({
   onButtonClick
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const renderContext = useContext(RenderOutputContext);
 
   const close = () => setIsOpen(false);
 
@@ -38,7 +40,10 @@ const ModalContentComponent: React.FC<IModalContentComponent> = ({
   const onAction = (e: React.MouseEvent, resolve: Function) => {
     if (modal.actionProps.action) {
       onButtonClick(modal.actionProps.action, {
-        options: modal.actionProps.options
+        options: {
+          ...modal.actionProps.options,
+          output: renderContext.form
+        }
       });
     }
     resolve(e);

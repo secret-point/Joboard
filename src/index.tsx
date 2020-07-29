@@ -11,6 +11,10 @@ import isNull from "lodash/isNull";
 import ICandidateApplication from "./@types/ICandidateApplication";
 import "regenerator-runtime/runtime";
 import "core-js";
+import * as KatalMetrics from "@katal/metrics";
+import initialMetricsPublisher from "@amzn/hvh-common-ui-library/lib/metrics";
+import DeviceMetrics from "@amzn/hvh-common-ui-library/lib/metrics/device-metrics";
+import domLoaded from "dom-loaded";
 
 declare global {
   interface Window {
@@ -24,11 +28,13 @@ declare global {
     isPageMetricsUpdated: boolean;
     pageLoadMetricsInterval: any;
     urlParams: any;
+    MetricsPublisher: KatalMetrics.Publisher;
+    applicationStartTime: number;
   }
 }
 
 getInitialData()
-  .then(data => {
+  .then((data: any) => {
     store.dispatch({
       type: "LOAD_INIT_DATA",
       payload: { ...data }
@@ -60,6 +66,19 @@ getInitialData()
     }
 
     window.reduxStore = store;
+    if (data[0]) {
+      domLoaded.then(() => {
+        const initializationMetric = new KatalMetrics.Metric.Initialization().withMonitor();
+        const initializationMetricsPublisher = initialMetricsPublisher(
+          data[0].stage,
+          "HVHCandidateApplication"
+        ).newChildActionPublisherForInitialization();
+        initializationMetricsPublisher.publish(initializationMetric);
+        window.MetricsPublisher = initializationMetricsPublisher;
+        new DeviceMetrics(initializationMetricsPublisher).publish();
+        window.applicationStartTime = Date.now();
+      });
+    }
     const Main = () => (
       <Provider store={store}>
         <App />

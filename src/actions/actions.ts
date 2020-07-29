@@ -19,12 +19,6 @@ export const RESET_PAGE_OUTPUT = "RESET_PAGE_OUTPUT";
 export const SHOW_NAVBAR = "SHOW_NAVBAR";
 export const ON_SET_WORKFLOW_LOADING = "ON_SET_WORKFLOW_LOADING";
 
-type IOnChangeProps = {
-  keyName: string;
-  value: string;
-  pageId: string;
-};
-
 export const onUpdateChange = (payload: IPayload) => (dispatch: Function) => {
   const {
     keyName,
@@ -116,32 +110,50 @@ export const onSubmit = (payload: any) => async (dispatch: Function) => {
 };
 
 export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
-  const pageConfig = await new PageService().getPageConfig(`${page}.json`);
+  const metric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+    "PageConfigLoad"
+  );
 
-  if (page === "pre-consent") {
-    const dataLayer = {
-      event: "page load",
-      page: {
-        name: "BB - welcome",
-        type: "application"
-      }
-    };
-    sendDataLayerAdobeAnalytics(dataLayer);
-  } else {
-    window.isPageMetricsUpdated = false;
-    if (!window.pageLoadMetricsInterval) {
-      window.pageLoadMetricsInterval = setInterval(() => {
+  const responseTime = Date.now();
+  try {
+    const pageConfig = await new PageService().getPageConfig(`${page}.json`);
+    (window as any).isPageMetricsUpdated = false;
+    if (!(window as any).pageLoadMetricsInterval) {
+      metric.publishCounter(page, 1);
+      (window as any).pageLoadMetricsInterval = setInterval(() => {
         addMetricForPageLoad();
       }, 5000);
     }
-  }
-  dispatch({
-    type: ON_UPDATE_PAGE_ID,
-    payload: {
-      updatedPageId: page,
-      page: pageConfig
+
+    if (page === "pre-consent") {
+      const dataLayer = {
+        event: "page load",
+        page: {
+          name: "BB - welcome",
+          type: "application"
+        }
+      };
+      sendDataLayerAdobeAnalytics(dataLayer);
+    } else {
+      (window as any).isPageMetricsUpdated = false;
+      if (!(window as any).pageLoadMetricsInterval) {
+        (window as any).pageLoadMetricsInterval = setInterval(() => {
+          addMetricForPageLoad();
+        }, 5000);
+      }
     }
-  });
+    dispatch({
+      type: ON_UPDATE_PAGE_ID,
+      payload: {
+        updatedPageId: page,
+        page: pageConfig
+      }
+    });
+    metric.publishTimer(`${page}-load-time`, Date.now() - responseTime);
+  } catch (ex) {
+    metric.publishTimer(`${page}-load-time`, Date.now() - responseTime);
+    metric.publishCounter(`${page}-load-failed`, 1);
+  }
 };
 
 export const onDismissModal = (dataKey: string, pageId: string) => (
