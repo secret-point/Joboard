@@ -96,12 +96,7 @@ export const getDataForEventMetrics = (eventName: any) => {
       metricData[d.key] = {};
       if (isArray(d.values)) {
         d.values?.forEach((v: any) => {
-          if (d.key === "filter" && v.key !== "hoursPerWeek") {
-            let formatTime = propertyOf(app.appConfig)(v.value).substring(0, 2);
-            metricData[d.key][v.key] = parseInt(formatTime);
-          } else {
-            metricData[d.key][v.key] = propertyOf(app.appConfig)(v.value);
-          }
+          metricData[d.key][v.key] = propertyOf(app.appConfig)(v.value);
         });
       } else {
         metricData[d.key] = propertyOf(app.appConfig)(d.value);
