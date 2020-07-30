@@ -359,12 +359,13 @@ const AppReducer = (state = initialState, action: IAction) => {
       data.output = {};
       delete data.requisition.nheTimeSlots;
       delete data.requisition.shifts;
+      const output = {};
       return updateState(state, {
         data: {
           $set: data
         },
         output: {
-          $set: {}
+          $set: output
         }
       });
     }

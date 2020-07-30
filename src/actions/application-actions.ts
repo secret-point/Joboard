@@ -198,7 +198,9 @@ export const updateApplication = (payload: IPayload) => async (
     stepId,
     output
   } = payload;
-  let updateData = output[currentPage.id];
+  let updateData = options?.takeOutputFromOptions
+    ? undefined
+    : output[currentPage.id];
   let type = currentPage.id;
   if (isContentContainsSteps && activeStepIndex !== undefined) {
     updateData = output[currentPage.id][activeStepIndex];
@@ -210,7 +212,7 @@ export const updateApplication = (payload: IPayload) => async (
     updateData = data.output[currentPage.id];
   }
 
-  if (isEmpty(updateData) && options?.isActionFromModal) {
+  if (isEmpty(updateData) && options?.takeOutputFromOptions) {
     updateData = options?.output[type];
   }
 
