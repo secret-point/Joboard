@@ -37,7 +37,10 @@ export const getDataForMetrics = () => {
             metricData[d.key].day1Week = day1Week;
           } else if (d.key === "NHE" && v.key === "count") {
             // NHE sent the count of NHE, not the list
-            metricData[d.key][v.key] = propertyOf(app.data)(v.value).length;
+            metricData[d.key][v.key] =
+              propertyOf(app.data)(v.value).length === 0
+                ? "zero"
+                : propertyOf(app.data)(v.value).length;
           } else if (d.key === "shifts" && v.key === "list") {
             //filter shifts list
             let filteredShifts: any[] = [];

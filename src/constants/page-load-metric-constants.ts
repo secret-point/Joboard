@@ -511,11 +511,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [
-      jobPayloadDefault,
-      applicationIneligibleDefault,
-      shiftPayloadDefault
-    ]
+    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
   },
   "candidate-withdraws": {
     eventPayload: {
@@ -564,6 +560,31 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       event: EVENT.PAGE_LOAD,
       page: {
         name: PAGE_NAME["can-not-offer-job"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault
+    ]
+  },
+
+  "no-available-shift": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["no-available-shift"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+  },
+  "session-timeout": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["session-timeout"],
         type: PAGE_TYPE.APPLICATION
       }
     },

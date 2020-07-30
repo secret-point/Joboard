@@ -29,13 +29,16 @@ export const PAGE_NAME: any = {
   wotc: "BB - WOTC",
   "supplementary-success": "supplementary forms thank you",
 
-  "amazon-withdraws": "amazon-withdraws", //ineligible: "BB - ineligible",
+  "amazon-withdraws": "amazon-withdraws",
   "amazon-rejects": "amazon-rejects",
-  "assessment-not-eligible": "assessment-not-eligible", //ineligible: "BB - ineligible",
+  "assessment-not-eligible": "assessment-not-eligible",
   "can-not-offer-job": "candidate-decline-FCRA",
-  "candidate-withdraws": "candidate-withdraws", //ineligible: "BB - ineligible",
+  "candidate-withdraws": "candidate-withdraws",
   "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only",
-  "rehire-not-eligible": "rehire-not-eligible", //ineligible: "BB - ineligible",
+  "rehire-not-eligible": "rehire-not-eligible",
+
+  "no-available-shift": "no-shifts-available",
+  "session-timeout": "session-timeout",
 
   "equal-opportunity-form": "self ID: equal opportunity",
   "veteran-status-form": "self ID: veteran status",
