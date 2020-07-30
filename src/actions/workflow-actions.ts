@@ -7,6 +7,8 @@ import { UPDATE_APPLICATION } from "./application-actions";
 import { push } from "react-router-redux";
 import moment from "moment";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../constants";
+import { getDataForEventMetrics } from "../helpers/adobe-helper";
+import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -142,10 +144,14 @@ export const onTimeOut = () => {
     const duration = moment.duration(endTime.diff(startTime));
     if (duration.asMinutes() > MAX_MINUTES_FOR_HEARTBEAT) {
       setWorkflowLoading(false)(window.reduxStore.dispatch);
+      const adobeDataLayer = getDataForEventMetrics("session-timeout");
+      sendDataLayerAdobeAnalytics(adobeDataLayer);
       window.location.assign("/#/timeout");
     }
   } else {
     setWorkflowLoading(false)(window.reduxStore.dispatch);
+    const adobeDataLayer = getDataForEventMetrics("session-timeout");
+    sendDataLayerAdobeAnalytics(adobeDataLayer);
     window.location.assign("/#/timeout");
   }
 };
