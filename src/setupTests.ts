@@ -4,6 +4,8 @@
 // learn more: https://github.com/testing-library/jest-dom
 import "@testing-library/jest-dom/extend-expect";
 import "@testing-library/jest-dom";
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
 window.matchMedia =
   window.matchMedia ||
@@ -14,3 +16,17 @@ window.matchMedia =
       removeListener: function() {}
     };
   };
+
+window.MetricsPublisher = {
+  newChildActionPublisherForMethod: (
+    method: string,
+    additionalContext?: any
+  ) => {
+    return {
+      publishCounter: (name: string, value: number) => {},
+      publishTimer: (name: string, value: number) => {}
+    };
+  }
+};
+
+configure({ adapter: new Adapter() });

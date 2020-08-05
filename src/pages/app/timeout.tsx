@@ -42,7 +42,7 @@ const TimeoutPage: React.FC<Error403PageProps> = ({
               Due to inactivity, you are session is expired, Please return to
               dashboard and resume the application.
             </Text>
-            <Button primary onClick={onClick}>
+            <Button data-testid="dashboard-button" primary onClick={onClick}>
               Return to dashboard
             </Button>
           </Col>

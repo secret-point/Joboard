@@ -41,7 +41,7 @@ const Error403Page: React.FC<Error403PageProps> = ({
             <Text fontSize="xs">
               You are not authorized to view the information you requested.
             </Text>
-            <Button primary onClick={onClick}>
+            <Button data-testid="dashboard-button" primary onClick={onClick}>
               Return to dashboard
             </Button>
           </Col>

@@ -14,7 +14,8 @@ module.exports = {
     newConfig.collectCoverageFrom = [
       ...newConfig.collectCoverageFrom,
       "!src/index.tsx",
-      "!src/serviceWorker.ts"
+      "!src/serviceWorker.ts",
+      "!src/@types/**.ts"
     ];
     newConfig.coverageThreshold = {
       global: {
