@@ -17,7 +17,7 @@ export default class ConfigService {
 
   async getCountryStateList(): Promise<any> {
     const response = await Axios.get(
-      "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/countries-and-states.json"
+      "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/state-country-list.json"
     );
     return response.data;
   }
