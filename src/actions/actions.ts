@@ -119,7 +119,10 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
     const pageConfig = await new PageService().getPageConfig(`${page}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
-      metric.publishCounterMonitor(page, 1);
+      const pageLoadMetric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+        "PageLoad"
+      );
+      pageLoadMetric.publishCounterMonitor(page, 1);
       (window as any).pageLoadMetricsInterval = setInterval(() => {
         addMetricForPageLoad();
       }, 5000);
