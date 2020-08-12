@@ -99,7 +99,10 @@ export const goToStep = async (workflowData: WorkflowData) => {
         workflowData.stepName === "supplementary-success"
           ? "Completed"
           : "PreHireStepsCompleted";
-      metric.publishTimer(metricName, Date.now() - window.applicationStartTime);
+      metric.publishTimerMonitor(
+        metricName,
+        Date.now() - window.applicationStartTime
+      );
     }
     window.localStorage.setItem("page", workflowData.stepName);
     window.reduxStore.dispatch(

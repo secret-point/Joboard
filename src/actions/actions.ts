@@ -119,7 +119,7 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
     const pageConfig = await new PageService().getPageConfig(`${page}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
-      metric.publishCounter(page, 1);
+      metric.publishCounterMonitor(page, 1);
       (window as any).pageLoadMetricsInterval = setInterval(() => {
         addMetricForPageLoad();
       }, 5000);
@@ -149,10 +149,10 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
         page: pageConfig
       }
     });
-    metric.publishTimer(`${page}-load-time`, Date.now() - responseTime);
+    metric.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
   } catch (ex) {
-    metric.publishTimer(`${page}-load-time`, Date.now() - responseTime);
-    metric.publishCounter(`${page}-load-failed`, 1);
+    metric.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
+    metric.publishCounterMonitor(`${page}-load-failed`, 1);
   }
 };
 

@@ -15,7 +15,7 @@ export const onAction = (actionName: string, payload: IPayload) => async (
       : actionMap[actionName];
   if (action) {
     console.log(`${actionName} is executed`);
-    UIExecutedActionsMetrics.publishCounter(actionName, 1);
+    UIExecutedActionsMetrics.publishCounterMonitor(actionName, 1);
     if (payload.currentPage) {
       logPageAndActionMetric(payload.currentPage, actionName);
     }
@@ -24,7 +24,7 @@ export const onAction = (actionName: string, payload: IPayload) => async (
     if (payload.currentPage) {
       logPageAndActionMetric(payload.currentPage, actionName);
     }
-    UIExecutedActionsMetrics.publishCounter(`${actionName}-missing`, 1);
+    UIExecutedActionsMetrics.publishCounterMonitor(`${actionName}-missing`, 1);
     console.log(`${actionName} is missing`);
   }
 };
@@ -33,7 +33,7 @@ const logPageAndActionMetric = (currentPage: Page, actionName: string) => {
   const metric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
     currentPage.id
   );
-  metric.publishCounter(actionName, 1);
+  metric.publishCounterMonitor(actionName, 1);
 };
 
 export const onExecuteMultipleActions = (payload: IPayload) => async (
@@ -45,7 +45,7 @@ export const onExecuteMultipleActions = (payload: IPayload) => async (
   const { options } = payload;
   if (!options.async) {
     for (const actionObject of options.actions) {
-      UIExecutedActionsMetrics.publishCounter(actionObject.action, 1);
+      UIExecutedActionsMetrics.publishCounterMonitor(actionObject.action, 1);
       await actionMap[actionObject.action]({
         ...payload,
         options: actionObject.options
@@ -53,7 +53,7 @@ export const onExecuteMultipleActions = (payload: IPayload) => async (
     }
   } else {
     for (const actionObject of options.actions) {
-      UIExecutedActionsMetrics.publishCounter(actionObject.action, 1);
+      UIExecutedActionsMetrics.publishCounterMonitor(actionObject.action, 1);
       actionMap[actionObject.action]({
         ...payload,
         options: actionObject.options

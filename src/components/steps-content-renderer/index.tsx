@@ -68,7 +68,7 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
             sendDataLayerAdobeAnalytics(dataLayer);
             adobeMetricRecords[steps[index].id] = true;
             setAdobeMetricRecords(adobeMetricRecords);
-            metric.publishCounter(steps[index].id, 1);
+            metric.publishCounterMonitor(steps[index].id, 1);
           }
         }
       });
