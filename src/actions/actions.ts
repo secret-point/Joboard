@@ -110,7 +110,7 @@ export const onSubmit = (payload: any) => async (dispatch: Function) => {
 };
 
 export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
-  const metric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+  const metric = (window as any).MetricsPublisher?.newChildActionPublisherForMethod(
     "PageConfigLoad"
   );
 
@@ -119,10 +119,10 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
     const pageConfig = await new PageService().getPageConfig(`${page}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
-      const pageLoadMetric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+      const pageLoadMetric = (window as any).MetricsPublisher?.newChildActionPublisherForMethod(
         "PageLoad"
       );
-      pageLoadMetric.publishCounterMonitor(page, 1);
+      pageLoadMetric?.publishCounterMonitor(page, 1);
       (window as any).pageLoadMetricsInterval = setInterval(() => {
         addMetricForPageLoad();
       }, 5000);
@@ -152,10 +152,11 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
         page: pageConfig
       }
     });
-    metric.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
+    metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
   } catch (ex) {
-    metric.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
-    metric.publishCounterMonitor(`${page}-load-failed`, 1);
+    console.log(ex);
+    metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
+    metric?.publishCounterMonitor(`${page}-load-failed`, 1);
   }
 };
 
