@@ -12,6 +12,7 @@ import isNil from "lodash/isNil";
 import { push } from "react-router-redux";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
+import moment from "moment";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -198,7 +199,10 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         response.forEach((slot: any) => {
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
-          nheSlot.title = slot.date;
+          //format the date with
+          nheSlot.title = moment(slot.dateWithoutFormat, "DD/MM/yyyy").format(
+            "dddd, MMM Do YYYY"
+          );
           let nheSlotLocation: string = isNil(slot.location.streetAddress)
             ? ""
             : slot.location.streetAddress;

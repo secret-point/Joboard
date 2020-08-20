@@ -44,7 +44,7 @@ export const getDataForMetrics = () => {
           } else if (d.key === "shifts" && v.key === "list") {
             //filter shifts list
             let filteredShifts: any[] = [];
-            propertyOf(app.data)(v.value).forEach((element: any) => {
+            propertyOf(app.data)(v.value)?.forEach((element: any) => {
               filteredShifts.push(element.headCountRequestId);
             });
             metricData[d.key][v.key] = filteredShifts;
