@@ -1,6 +1,7 @@
 import moment from "moment";
 import isEmpty from "lodash/isEmpty";
 import isBoolean from "lodash/isBoolean";
+import includes from "lodash/includes";
 
 export const covertValueTo = (type: string, value: any) => {
   switch (type) {
@@ -23,7 +24,12 @@ export const covertValueTo = (type: string, value: any) => {
   }
 };
 
-export const validation = (value: any, type: string) => {
+export const validation = (
+  value: any,
+  type: string,
+  isOptional?: boolean,
+  validationProps?: any
+) => {
   switch (type) {
     case "SSN": {
       //9 digit number, in format xxx-xx-xxxx
@@ -53,12 +59,31 @@ export const validation = (value: any, type: string) => {
         return true;
       } else {
         const stringArray = value.split(" ");
-        if (stringArray.length === 2) {
+        const hasEmptyString = includes(stringArray, "");
+        if (stringArray.length === 2 && !hasEmptyString) {
           return true;
         } else {
           return false;
         }
       }
+    }
+    case "REGEX": {
+      if (isOptional && !value) {
+        return true;
+      } else {
+        const { regex } = validationProps;
+        if (regex) {
+          const decodeRegex = decodeURI(regex);
+          const regExp = new RegExp(decodeRegex);
+          return regExp.test(value);
+        } else {
+          return true;
+        }
+      }
+    }
+    default: {
+      console.log("Missing validation type");
+      return true;
     }
   }
 };
