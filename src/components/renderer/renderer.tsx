@@ -114,6 +114,17 @@ const Renderer: React.FC<IRendererProps> = ({
     [pageId]
   );
 
+  const getValueFromDefaultValue = useCallback(
+    (defaultValue: any, type: string) => {
+      let value = defaultValue;
+      if (type) {
+        value = covertValueTo(type, value);
+      }
+      return value;
+    },
+    []
+  );
+
   useEffect(() => {
     const _components: any[] = [];
     let _component: IComponent = {
@@ -142,6 +153,12 @@ const Renderer: React.FC<IRendererProps> = ({
             );
             if (!value) {
               value = getValueFromServiceData(data, valueKey, covertValueTo);
+            }
+            if (!value) {
+              value = getValueFromDefaultValue(
+                componentDetails.properties.defaultValue,
+                covertValueTo
+              );
             }
             set(formData, dataKey, value);
             const componentValidation = getInitialValidations(componentDetails);
