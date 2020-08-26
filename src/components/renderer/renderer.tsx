@@ -10,6 +10,7 @@ import { validateRequiredData } from "../../helpers/validate";
 import merge from "lodash/merge";
 import { isArray } from "lodash";
 import RenderOutputContext from "./render-context";
+import isString from "lodash/isString";
 
 type IComponent = {
   component: string;
@@ -223,7 +224,8 @@ const Renderer: React.FC<IRendererProps> = ({
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
       if (keyName) {
-        set(formData, keyName, value);
+        let trimValue = isString(value) ? value.trim() : value;
+        set(formData, keyName, trimValue);
         setForm(formData);
         set(validations, `${keyName}.hasError`, false);
       }
