@@ -224,7 +224,10 @@ const Renderer: React.FC<IRendererProps> = ({
     (actionName: string, keyName: string, value: any, options?: any) => {
       const formData = Object.assign({}, form);
       if (keyName) {
-        let trimValue = isString(value) ? value.trim() : value;
+        //remove newlines: \r\n - on a windows computer ; \r - on an Apple computer
+        let trimValue = isString(value)
+          ? value.replace(/\r?\n|\r/g, " ").trim()
+          : value;
         set(formData, keyName, trimValue);
         setForm(formData);
         set(validations, `${keyName}.hasError`, false);
