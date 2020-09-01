@@ -13,7 +13,7 @@ const jobPayloadDefault = {
     },
     {
       key: "location",
-      value: "requisition.consentInfo.locationCode"
+      value: "requisition.consentInfo.locationDescription"
     },
     {
       key: "reqStatus",
