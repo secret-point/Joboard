@@ -1,3 +1,4 @@
+import queryString from "query-string";
 import isEmpty from "lodash/isEmpty";
 
 export const convertPramsToJson = (params: string) => {
@@ -16,11 +17,19 @@ export const convertPramsToJson = (params: string) => {
 };
 
 export const launchAuthentication = () => {
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession
+    ? JSON.parse(queryParamsInSession)
+    : {};
+  delete queryParams.page;
+  delete queryParams.requisitionId;
+  delete queryParams.applicationId;
+  const queryStr = queryString.stringify(queryParams);
   let hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
   const state = window.reduxStore.getState();
   let redirectUrl = origin;
-  redirectUrl = `${redirectUrl}/?page=${state.app.currentPage.id}&requisitionId=${hash[1]}&applicationId=${hash[2]}`;
+  redirectUrl = `${redirectUrl}/?page=${state.app.currentPage.id}&requisitionId=${hash[1]}&applicationId=${hash[2]}&${queryStr}`;
   if (hash.length === 4) {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }

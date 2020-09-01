@@ -7,7 +7,6 @@ import { Provider } from "react-redux";
 import { getInitialData } from "./services";
 import { Store } from "redux";
 import StepFunctionService from "./services/step-function-service";
-import isNull from "lodash/isNull";
 import ICandidateApplication from "./@types/ICandidateApplication";
 import "regenerator-runtime/runtime";
 import "core-js";
@@ -15,6 +14,9 @@ import * as KatalMetrics from "@katal/metrics";
 import initialMetricsPublisher from "@amzn/hvh-common-ui-library/lib/metrics";
 import DeviceMetrics from "@amzn/hvh-common-ui-library/lib/metrics/device-metrics";
 import domLoaded from "dom-loaded";
+import queryString from "query-string";
+import isNil from "lodash/isNil";
+import { isEmpty } from "lodash";
 
 declare global {
   interface Window {
@@ -43,26 +45,38 @@ getInitialData()
       const tokenString = window.location.hash.split("?token=");
       window.localStorage.setItem("accessToken", tokenString[1]);
     }
-    const urlParams = new URLSearchParams(window.location.search);
-    const requisitionId = urlParams.get("requisitionId");
-    const agency: any = urlParams.get("agency");
-    const page = urlParams.get("page");
-    const applicationId = urlParams.get("applicationId");
-    const misc = urlParams.get("misc");
-    const token = urlParams.get("token");
-    if (!isNull(requisitionId) && !isNull(page)) {
+    const queryParams = queryString.parse(window.location.search);
+    const requisitionId = queryParams["requisitionId"];
+    const agency: any = queryParams["agency"];
+    const page = queryParams["page"];
+    const applicationId = queryParams["applicationId"];
+    const misc = queryParams["misc"];
+    const token = queryParams["token"] as any;
+    if (!isNil(requisitionId) && !isNil(page)) {
       let url = `/#/${page}/${requisitionId}`;
-      url = !isNull(applicationId) ? `${url}/${applicationId}` : url;
-      url = !isNull(misc) ? `${url}/${applicationId}/${misc}` : url;
+      url = !isNil(applicationId) ? `${url}/${applicationId}` : url;
+      url = !isNil(misc) ? `${url}/${applicationId}/${misc}` : url;
       window.location.assign(url);
     }
 
-    if (!isNull(token)) {
+    if (!isNil(token)) {
       window.localStorage.setItem("accessToken", token);
     }
 
-    if (!isNull(agency)) {
+    if (!isNil(agency)) {
       window.sessionStorage.setItem("agency", (agency === 1).toString());
+    }
+
+    if (!isEmpty(queryParams)) {
+      delete queryParams.token;
+      const keys = Object.keys(queryParams);
+      window.sessionStorage.setItem(
+        "query-params",
+        JSON.stringify(queryParams)
+      );
+      keys.forEach(key => {
+        window.sessionStorage.setItem(key, queryParams[key] as any);
+      });
     }
 
     window.reduxStore = store;

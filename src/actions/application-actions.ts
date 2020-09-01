@@ -1,3 +1,4 @@
+import queryString from "query-string";
 import { goTo, setLoading, onUpdateOutput, onUpdatePageId } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
@@ -28,17 +29,18 @@ export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
-  const { appConfig, urlParams } = data;
+  const { appConfig } = data;
   const origin = window.location.origin;
-  const redirectUrl = `${origin}/?page=application&requisitionId=${urlParams.requisitionId}`;
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession
+    ? JSON.parse(queryParamsInSession)
+    : {};
+  delete queryParams.page;
+  const queryStr = queryString.stringify(queryParams);
+  const redirectUrl = `${origin}/?page=application&${queryStr}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;
-
-  const agency = window.sessionStorage.getItem("agency");
-  if (!isNull(agency)) {
-    url = `${url}&agency=${agency}`;
-  }
 
   const adobeDataMetric = getDataForEventMetrics("start-application");
   sendDataLayerAdobeAnalytics(adobeDataMetric);
