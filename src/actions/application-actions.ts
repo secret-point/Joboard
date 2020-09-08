@@ -286,20 +286,20 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
   try {
-    const { application } = payload.data;
+    const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
 
     const response = await new CandidateApplicationService().updateApplication({
       type: "job-confirm",
       applicationId: urlParams.applicationId,
       payload: {
-        headCountRequestId: application.shift.headCountRequestId,
-        childRequisitionId: application.shift.requisitionId,
-        shiftType: application.shift.shiftType,
-        shift: application.shift
+        headCountRequestId: selectedShift.headCountRequestId,
+        childRequisitionId: selectedShift.requisitionId,
+        shiftType: selectedShift.shiftType,
+        shift: selectedShift
       }
     });
-    response.shift = application.shift;
+    response.shift = selectedShift;
     dispatch({
       type: UPDATE_APPLICATION,
       payload: {
