@@ -28,6 +28,10 @@ export enum ApplicationState {
    */
   ADDITIONAL_BACKGROUND_INFO_SAVED = "ADDITIONAL_BACKGROUND_INFO_SAVED",
   /**
+   * Candidate completed additional background check step
+   */
+  CALIFORNIA_DISCLOSURE_SAVED = "CALIFORNIA_DISCLOSURE_SAVED",
+  /**
    * Candidate scheduled pre-hire appointment
    */
   PRE_HIRE_APPOINTMENT_SCHEDULED = "PRE_HIRE_APPOINTMENT_SCHEDULED",

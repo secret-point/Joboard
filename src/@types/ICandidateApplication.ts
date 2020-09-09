@@ -44,6 +44,7 @@ export default interface ICandidateApplication {
   shift: any;
   onlySeasonalShifts: boolean;
   workflowStepName: string;
+  hasBGCCaliforniaDisclosureAcknowledged: boolean;
 }
 export interface Candidate {
   candidateId: string;

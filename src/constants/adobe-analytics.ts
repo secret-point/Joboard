@@ -45,5 +45,6 @@ export const PAGE_NAME: any = {
   "disability-form": "self ID: disability disclosure",
 
   "additional-bgc-info": "BGC: additional bgc info",
-  "non-fcra": "BGC: non-fcra"
+  "non-fcra": "BGC: non-fcra",
+  "cali-disclosure": "BGC: california disclosure"
 };

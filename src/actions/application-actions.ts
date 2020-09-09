@@ -10,7 +10,6 @@ import {
 } from "./requisition-actions";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
-import isNull from "lodash/isNull";
 import propertyOf from "lodash/propertyOf";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";

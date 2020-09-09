@@ -8,7 +8,7 @@ import { History } from "history";
 import { covertValueTo } from "../../helpers/render-helper";
 import { validateRequiredData } from "../../helpers/validate";
 import merge from "lodash/merge";
-import { isArray } from "lodash";
+import { isArray, isNil } from "lodash";
 import RenderOutputContext from "./render-context";
 import isString from "lodash/isString";
 
@@ -305,8 +305,8 @@ const Renderer: React.FC<IRendererProps> = ({
   };
   const getValue = (dataKey: string) => {
     let value = propertyOf(data)(dataKey);
-    value = isEmpty(value) ? propertyOf(form)(dataKey) : value;
-    value = isEmpty(value) ? propertyOf(output[pageId])(dataKey) : value;
+    value = isNil(value) ? propertyOf(form)(dataKey) : value;
+    value = isNil(value) ? propertyOf(output[pageId])(dataKey) : value;
     if (
       isContentContainsSteps &&
       activeStepIndex !== undefined &&
@@ -316,8 +316,8 @@ const Renderer: React.FC<IRendererProps> = ({
         ? propertyOf(output[pageId][activeStepIndex])(dataKey)
         : value;
     }
-    value = isEmpty(value) ? propertyOf(data.output[pageId])(dataKey) : value;
-    value = isEmpty(value) ? propertyOf(data.application)(dataKey) : value;
+    value = isNil(value) ? propertyOf(data.output[pageId])(dataKey) : value;
+    value = isNil(value) ? propertyOf(data.application)(dataKey) : value;
     return value;
   };
 
