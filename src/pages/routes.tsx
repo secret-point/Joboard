@@ -1,6 +1,12 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { ApplicationPage, Error403Page, TimeoutPage } from "./page-list";
+import {
+  ApplicationPage,
+  Error403Page,
+  TimeoutPage,
+  CreateApplicationPage,
+  ResumeApplicationPage
+} from "./page-list";
 import RedirectPage from "./redirect-page";
 
 const Routes: React.FC = () => {
@@ -9,6 +15,16 @@ const Routes: React.FC = () => {
       <Switch>
         <Route exact path="/403" component={Error403Page} />
         <Route exact path="/timeout" component={TimeoutPage} />
+        <Route
+          exact
+          path="/create-application/:requisitionId"
+          component={CreateApplicationPage}
+        />
+        <Route
+          exact
+          path="/resume-application/:requisitionId/:applicationId"
+          component={ResumeApplicationPage}
+        />
         <Route
           exact
           path="/app/:requisitionId/:applicationId?/:misc?"

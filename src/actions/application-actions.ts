@@ -36,7 +36,7 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
     : {};
   delete queryParams.page;
   const queryStr = queryString.stringify(queryParams);
-  const redirectUrl = `${origin}/?page=application&${queryStr}`;
+  const redirectUrl = `${origin}/?page=create-application&${queryStr}`;
   let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;

@@ -6,6 +6,16 @@ export const ApplicationPage = Loadable({
   loader: () => import("./app")
 });
 
+export const ResumeApplicationPage = Loadable({
+  loading: Loader,
+  loader: () => import("./app/resume-application")
+});
+
+export const CreateApplicationPage = Loadable({
+  loading: Loader,
+  loader: () => import("./app/create-application")
+});
+
 export const Error403Page = Loadable({
   loading: Loader,
   loader: () => import("./app/error-403")
