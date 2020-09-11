@@ -28,7 +28,7 @@ export const launchAuthentication = () => {
   let hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
   const state = window.reduxStore.getState();
-  const currentPage = state.app?.currentPage?.id || "resume-application";
+  const currentPage = "resume-application";
   let redirectUrl = origin;
   redirectUrl = `${redirectUrl}/?page=${currentPage}&requisitionId=${hash[1]}&applicationId=${hash[2]}&${queryStr}`;
   if (hash.length === 4) {

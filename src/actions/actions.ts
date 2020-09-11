@@ -79,7 +79,7 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
   if (urlParams) {
     const { requisitionId, applicationId, misc } = urlParams;
     const page = path;
-    path = `/app/${requisitionId}/${applicationId}`;
+    path = `/app/${requisitionId}/${applicationId || ""}`;
     if (misc) {
       path = `${path}/${misc}`;
     }
