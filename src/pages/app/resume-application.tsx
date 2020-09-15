@@ -19,6 +19,7 @@ interface PageProps {
 
 class ResumeApplicationPage extends React.Component<PageProps, {}> {
   componentDidMount() {
+    window.localStorage.setItem("page", "resume-application");
     const { appConfig, data, match } = this.props;
     this.props.onGetApplication({
       appConfig,

@@ -174,6 +174,7 @@ export const createApplication = (payload: IPayload) => async (
       const { urlParams } = payload;
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
+        window.localStorage.setItem("page", "already-applied");
         goTo("already-applied", urlParams)(dispatch);
       } else {
         onUpdateError(

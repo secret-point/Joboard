@@ -19,6 +19,7 @@ interface PageProps {
 
 class CreateApplicationPage extends Component<PageProps, {}> {
   componentDidMount() {
+    window.localStorage.setItem("page", "create-application");
     const { appConfig, data, match } = this.props;
     this.props.createApplication({
       appConfig,
@@ -26,7 +27,7 @@ class CreateApplicationPage extends Component<PageProps, {}> {
       urlParams: match.params
     });
   }
-  
+
   render() {
     return this.props.hasResponseError ? (
       <MessageBanner type={MessageBannerType.Error}>
