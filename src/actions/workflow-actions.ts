@@ -68,7 +68,8 @@ export const sendHeartBeatWorkflow = () => {
 export const goToStep = async (workflowData: WorkflowData) => {
   const { app } = window.reduxStore.getState();
   const application = app.data.application;
-  if (workflowData.stepName) {
+  const storedPageId = window.localStorage.getItem("page");
+  if (workflowData.stepName && storedPageId !== workflowData.stepName) {
     setWorkflowLoading(true)(window.reduxStore.dispatch);
     await new CandidateApplicationService()
       .updateWorkflowStepName(application.applicationId, workflowData.stepName)

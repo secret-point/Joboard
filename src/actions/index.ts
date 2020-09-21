@@ -1,5 +1,6 @@
 import actionMap from "./action-map";
 import IPayload, { Page } from "./../@types/IPayload";
+import { InitialLoadActions } from "../@types/IActionType";
 
 export const LOAD_INIT_DATA = "LOAD_INIT_DATA";
 
@@ -54,6 +55,32 @@ export const onExecuteMultipleActions = (payload: IPayload) => async (
   } else {
     for (const actionObject of options.actions) {
       UIExecutedActionsMetrics.publishCounterMonitor(actionObject.action, 1);
+      actionMap[actionObject.action]({
+        ...payload,
+        options: actionObject.options
+      })(dispatch);
+    }
+  }
+};
+
+export const onInitialLoadActions = (
+  initialLoadActions: InitialLoadActions,
+  payload: IPayload
+) => async (dispatch: Function) => {
+  const UIInitialLoadActionsMetrics = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
+    "UIInitialLoadActions"
+  );
+  if (!initialLoadActions.async) {
+    for (const actionObject of initialLoadActions.actions) {
+      UIInitialLoadActionsMetrics.publishCounterMonitor(actionObject.action, 1);
+      await actionMap[actionObject.action]({
+        ...payload,
+        options: actionObject.options
+      })(dispatch);
+    }
+  } else {
+    for (const actionObject of initialLoadActions.actions) {
+      UIInitialLoadActionsMetrics.publishCounterMonitor(actionObject.action, 1);
       actionMap[actionObject.action]({
         ...payload,
         options: actionObject.options

@@ -225,10 +225,15 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case SET_SELECTED_SHIFT: {
+      const application = { ...state.data.application };
+      application.shift = payload;
       return updateState(state, {
         data: {
           selectedShift: {
             $set: payload
+          },
+          application: {
+            $set: application
           }
         }
       });

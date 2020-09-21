@@ -7,6 +7,7 @@ import HeaderContainer from "../../containers/header/header-container";
 import { Col } from "@amzn/stencil-react-components/layout";
 import ContentContainer from "../../containers/content/content-container";
 import FooterContainer from "../../containers/footer/footer-container";
+import InitialLoaderContainer from "../../containers/initial-loader";
 import isEmpty from "lodash/isEmpty";
 
 type IConsentPageProps = {
@@ -35,6 +36,7 @@ const Page: React.FC<IConsentPageProps> = ({
     <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
       {({ matches }) => (
         <div data-testid="page">
+          <InitialLoaderContainer />
           <HeaderContainer />
           <ContentContainer />
           {!isEmpty(pageConfig?.footer?.components) && (
