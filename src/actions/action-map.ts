@@ -34,7 +34,8 @@ import {
   onGoToDescription,
   onApplySortSelection,
   onApplyFilter,
-  onResetFilters
+  onResetFilters,
+  onShiftsIncrementalLoad
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -70,7 +71,8 @@ const actionMap: any = {
   ON_VALUE_UPDATE: onUpdateChange,
   ON_RESET_OUTPUT_STATE: onResetPageOutput,
   ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask,
-  SHOW_PREVIOUS_NAMES: onShowPreviousName
+  SHOW_PREVIOUS_NAMES: onShowPreviousName,
+  LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad
 };
 
 export default actionMap;

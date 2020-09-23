@@ -337,6 +337,11 @@ const Renderer: React.FC<IRendererProps> = ({
             dataObject[component.componentValueProp] =
               getValue(component.valueKey) || component.defaultValue;
           }
+          if (component.stateProps) {
+            component.stateProps.forEach((prop: any) => {
+              dataObject[prop.key] = getValue(prop.dataKey);
+            });
+          }
           const componentValidation = getValidationValue(
             component.properties.dataKey
           );

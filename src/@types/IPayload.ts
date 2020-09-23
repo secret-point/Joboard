@@ -41,6 +41,8 @@ export interface ApplicationData {
   candidate: Candidate;
   showPreviousNames: string;
   selectedShift: any;
+  loadingShifts: boolean;
+  shiftPageFactor: number;
 }
 
 export interface Page {
@@ -102,6 +104,8 @@ export interface AvailableFilter {
   filter: Filter;
   seasonalOnly: boolean;
   locale: string;
+  pageFactor: number;
+  isCRSJobsDisplayed: boolean;
 }
 
 export interface AppConfig {

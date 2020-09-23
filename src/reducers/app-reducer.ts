@@ -20,7 +20,10 @@ import {
   UPDATE_SHIFTS,
   RESET_FILTERS,
   UPDATE_JOB_DESCRIPTION,
-  SELECTED_REQUISITION
+  SELECTED_REQUISITION,
+  SET_LOADING_SHIFTS,
+  MERGE_SHIFTS,
+  SET_PAGE_FACTOR
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -52,7 +55,8 @@ const initialState: any = {
     candidate: {},
     output: {},
     config: {},
-    showPreviousNames: "NO"
+    showPreviousNames: "NO",
+    loadingShifts: false
   },
   applicationData: {},
   output: {},
@@ -234,6 +238,17 @@ const AppReducer = (state = initialState, action: IAction) => {
           },
           application: {
             $set: application
+          },
+          shiftPageFactor: {
+            $set: 0
+          },
+          loadingShifts: {
+            $set: false
+          },
+          requisition: {
+            availableShifts: {
+              $set: {}
+            }
           }
         }
       });
@@ -328,6 +343,36 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           requisition: {
             $set: requisition
+          },
+          shiftPageFactor: {
+            $set: 0
+          },
+          shiftsEmptyOnFilter: {
+            $set: payload.shiftsEmptyOnFilter
+          }
+        }
+      });
+    }
+
+    case MERGE_SHIFTS: {
+      const requisition = cloneDeep(state.data.requisition);
+      requisition.availableShifts.shifts = [
+        ...requisition.availableShifts.shifts,
+        ...payload.shifts
+      ];
+      return updateState(state, {
+        data: {
+          requisition: {
+            $set: requisition
+          },
+          shiftPageFactor: {
+            $set: payload.pageFactor
+          },
+          loadingShifts: {
+            $set: false
+          },
+          shiftsEmptyOnFilter: {
+            $set: false
           }
         }
       });
@@ -388,6 +433,29 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           showPreviousNames: {
             $set: payload
+          }
+        }
+      });
+    }
+
+    case SET_LOADING_SHIFTS: {
+      return updateState(state, {
+        data: {
+          loadingShifts: {
+            $set: payload
+          }
+        }
+      });
+    }
+
+    case SET_PAGE_FACTOR: {
+      return updateState(state, {
+        data: {
+          shiftPageFactor: {
+            $set: payload
+          },
+          loadingShifts: {
+            $set: false
           }
         }
       });

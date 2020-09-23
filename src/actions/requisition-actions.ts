@@ -20,6 +20,9 @@ export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
 export const UPDATE_JOB_DESCRIPTION = "UPDATE_JOB_DESCRIPTION";
 export const UPDATE_SHIFTS = "UPDATE_SHIFTS";
 export const RESET_FILTERS = "RESET_FILTERS";
+export const SET_LOADING_SHIFTS = "SET_LOADING_SHIFTS";
+export const SET_PAGE_FACTOR = "SET_PAGE_FACTOR";
+export const MERGE_SHIFTS = "MERGE_SHIFTS";
 
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -241,6 +244,10 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
+  dispatch({
+    type: SET_LOADING_SHIFTS,
+    payload: true
+  });
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
   const storedApplicationId = window.sessionStorage.getItem("applicationId");
@@ -257,8 +264,12 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
       dispatch({
         type: UPDATE_REQUISITION,
         payload: {
-          ...response
+          availableShifts: response.availableShifts
         }
+      });
+      dispatch({
+        type: SET_PAGE_FACTOR,
+        payload: response.pageFactor
       });
       setLoading(false)(dispatch);
     } catch (ex) {
@@ -350,12 +361,59 @@ const constructFilterPayload = (payload: IPayload) => {
   return defaultFilter;
 };
 
+export const onShiftsIncrementalLoad = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
+  dispatch({
+    type: SET_LOADING_SHIFTS,
+    payload: true
+  });
+  const filter = constructFilterPayload(payload);
+  if (payload.data.shiftPageFactor) {
+    filter.pageFactor = payload.data.shiftPageFactor + 1;
+  } else {
+    filter.pageFactor = filter.pageFactor + 1;
+  }
+  const requisitionId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
+
+  if (requisitionId) {
+    try {
+      const response = await new RequisitionService().getAllAvailableShifts(
+        requisitionId,
+        applicationId,
+        filter
+      );
+      dispatch({
+        type: MERGE_SHIFTS,
+        payload: {
+          shifts: response.availableShifts.shifts,
+          pageFactor: response.pageFactor
+        }
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      console.log(ex);
+      setLoading(false)(dispatch);
+      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Unable to get shifts"
+        )(dispatch);
+      }
+    }
+  }
+};
+
 export const onApplyFilter = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   const { options } = payload;
   onRemoveError()(dispatch);
   const filter = constructFilterPayload(payload);
+  filter.pageFactor = 1;
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
@@ -403,7 +461,8 @@ export const onApplyFilter = (payload: IPayload) => async (
             availableShifts: {
               shifts: [],
               total: 0
-            }
+            },
+            shiftsEmptyOnFilter: true
           }
         });
       } else {
