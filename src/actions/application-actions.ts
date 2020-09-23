@@ -309,7 +309,6 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
     if (payload.options?.goTo) {
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
-    completeTask(application, "job-selection");
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
