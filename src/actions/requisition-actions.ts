@@ -185,7 +185,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   if (requisitionId) {
     try {
       let application = payload.data.application;
-      if (!application) {
+      if (!application || isEmpty(application)) {
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
