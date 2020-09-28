@@ -31,6 +31,7 @@ import {
   Popover,
   IFrame,
   Expander,
+  PreHireTask,
   DaysHoursFilter,
   AddressComponent,
   TextAreaWithLength
@@ -85,6 +86,7 @@ const ComponentMap: any = {
   StepsContainer,
   IFrame,
   Expander,
+  PreHireTask,
   DaysHoursFilter,
   AddressComponent,
   TextAreaWithLength,
