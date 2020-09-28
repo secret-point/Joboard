@@ -48,3 +48,35 @@ export const PAGE_NAME: any = {
   "non-fcra": "BGC: non-fcra",
   "cali-disclosure": "BGC: california disclosure"
 };
+
+export const PAGE_TITLE: any = {
+  "already-applied": "Already applied",
+  "pre-consent": "Welcome",
+  "amazon-rejects": "Sorry",
+  "amazon-withdraws": "Sorry",
+  "assessment-consent": "Pre-assessment",
+  "assessment-not-eligible": "Not moving forward",
+  assessment: "Assessment",
+  bgc: "Background check",
+  "cali-disclosure": "California disclosure",
+  "can-not-offer-job": "Sorry",
+  "candidate-withdraws": "Sorry",
+  consent: "Start application",
+  "contingent-offer": "Contingent offer",
+  fcra: "FCRA disclosure",
+  "job-confirmation": "Job confirmation",
+  "job-opportunities": "Job opportunities",
+  "job-description": "Job description",
+  "job-roles": "Job roles",
+  nhe: "Pre-hire appointment",
+  "no-available-shift": "All shifts filled",
+  "rehire-not-eligible-seasonal-only": "Rehire not eligible",
+  "rehire-not-eligible": "Rehire not eligible",
+  "review-submit": "Review and submit",
+  "self-identification": "Voluntary self-identification",
+  "session-timeout": "Session timeout",
+  "supplementary-success": "Supplementary success",
+  "thank-you": "Pre-hire activities",
+  "workflow-failed": "Application error",
+  wotc: "Work Opportunity Tax Credit"
+};

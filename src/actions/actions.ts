@@ -7,6 +7,8 @@ import {
   addMetricForPageLoad,
   sendDataLayerAdobeAnalytics
 } from "./adobe-actions";
+import { PAGE_TITLE } from "../constants/adobe-analytics";
+import { isNil } from "lodash";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -144,6 +146,9 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
           addMetricForPageLoad();
         }, 5000);
       }
+    }
+    if (!isNil(PAGE_TITLE[page])) {
+      document.title = `Amazon Jobs - ${PAGE_TITLE[page]}`;
     }
     dispatch({
       type: ON_UPDATE_PAGE_ID,

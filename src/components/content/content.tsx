@@ -22,7 +22,7 @@ const Content: React.FC<IContentProps> = ({
       <Col gridGap={5}>
         {hasResponseError && (
           <Col gridGap={10}>
-            <MessageBanner type={MessageBannerType.Error}>
+            <MessageBanner type={MessageBannerType.Error} aria-live="assertive">
               {errorMessage}
             </MessageBanner>
           </Col>
