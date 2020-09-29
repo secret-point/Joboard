@@ -57,7 +57,11 @@ const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
   }, [hours, application, minutes, onUpdatePageId]);
 
   return (
-    <MessageBanner type={MessageBannerType.Warning}>
+    <MessageBanner
+      type={MessageBannerType.Warning}
+      aria-live="assertive"
+      iconAltText="warn"
+    >
       {`We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to complete the remaining steps.`}
     </MessageBanner>
   );

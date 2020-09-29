@@ -39,6 +39,7 @@ const App: React.FC<IApp> = ({
           <PageHeaderButton
             data-testid="home-button"
             title="Home"
+            onClick={onClick}
             hasHover={false}
             paddingHorizontal={0}
           >
@@ -46,8 +47,9 @@ const App: React.FC<IApp> = ({
               <img
                 data-testid="logo-image"
                 src="https://static.amazon.jobs/assets/icons/jobs_logo-5f4dd79a8e72aeaabe6aa3acae80962cd16317cff83e3a29c2f5dd5f30d33b31.svg"
-                alt="Amazon Jobs"
-                onClick={onClick}
+                aria-hidden="true"
+                role="presentation"
+                tabIndex={-1}
               />
             </span>
           </PageHeaderButton>

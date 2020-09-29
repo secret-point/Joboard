@@ -24,6 +24,9 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
             alt="container"
             className={matches ? "image" : "responsive-image"}
             src={src}
+            aria-hidden="true"
+            role="presentation"
+            tabIndex={-1}
           />
           <div className="ui-image-overlay">
             <div className="ui-image-overlay-content">
