@@ -1,18 +1,18 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, { DaysHoursFilter } from "../@types/IPayload";
+import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
 import { setLoading, onUpdatePageId } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
-import orderBy from "lodash/orderBy";
 import CandidateApplicationService from "../services/candidate-application-service";
 import isNil from "lodash/isNil";
 import { push } from "react-router-redux";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
+import { sortWith, ascend, descend, prop } from "ramda";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -286,45 +286,47 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
   }
 };
 
-export const onApplySortSelection = (payload: IPayload) => async (
-  dispatch: Function
+export const applySortOnShifts = (
+  availableShifts: any,
+  filter: AvailableFilter
 ) => {
-  let { availableShifts } = payload.data.requisition;
-  let shifts = availableShifts.shifts;
-  const selectedSortKey = propertyOf(payload.data.output)(
-    "job-opportunities.sortKey"
-  );
-  switch (selectedSortKey) {
+  let shifts: any[] = [];
+  switch (filter.sortBy) {
     case "FEATURED": {
-      shifts = orderBy(availableShifts.shifts, ["fillRate"], ["asc"]);
+      const shiftsData = [...availableShifts.shifts];
+      const sortFunction = sortWith<any>([
+        ascend(prop("pageFactor")),
+        ascend(prop("rankingOrder"))
+      ]);
+      shifts = sortFunction(shiftsData);
       break;
     }
     case "PAY_RATE": {
-      shifts = orderBy(availableShifts.shifts, ["totalPayRate"], ["desc"]);
+      const shiftsData = [...availableShifts.shifts];
+      const sortFunction = sortWith<any>([descend(prop("totalPayRate"))]);
+      shifts = sortFunction(shiftsData);
       break;
     }
-    case "HOURS_MOST": {
-      shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"], ["desc"]);
+    case "HOURS_DESC": {
+      const shiftsData = [...availableShifts.shifts];
+      const sortFunction = sortWith<any>([descend(prop("minHoursPerWeek"))]);
+      shifts = sortFunction(shiftsData);
       break;
     }
-    case "HOURS_LEAST": {
-      shifts = orderBy(availableShifts.shifts, ["hoursPerWeek"], ["asc"]);
+    case "HOURS_ASC": {
+      const shiftsData = [...availableShifts.shifts];
+      const sortFunction = sortWith<any>([ascend(prop("minHoursPerWeek"))]);
+      shifts = sortFunction(shiftsData);
       break;
     }
     default: {
-      console.log("Sort key is not availble");
+      console.log("Sort key is not available");
       break;
     }
   }
   availableShifts.shifts = shifts;
-  const { requisition } = payload.data;
-  requisition.availableShifts = availableShifts;
-  dispatch({
-    type: UPDATE_REQUISITION,
-    payload: {
-      ...requisition
-    }
-  });
+  availableShifts.total = shifts.length;
+  return availableShifts;
 };
 
 const constructFilterPayload = (payload: IPayload) => {
@@ -386,10 +388,14 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
         applicationId,
         filter
       );
+      const availableShifts = applySortOnShifts(
+        response.availableShifts,
+        filter
+      );
       dispatch({
         type: MERGE_SHIFTS,
         payload: {
-          shifts: response.availableShifts.shifts,
+          shifts: availableShifts.shifts,
           pageFactor: response.pageFactor
         }
       });
@@ -439,15 +445,22 @@ export const onApplyFilter = (payload: IPayload) => async (
 
   if (requisitionId) {
     try {
-      const response = await new RequisitionService().getAllAvailableShifts(
-        requisitionId,
-        applicationId,
-        filter
-      );
+      let availableShifts: any = {};
+      if (options?.hasSortAction) {
+        const shiftsInRequisition = payload.data.requisition.availableShifts;
+        availableShifts = applySortOnShifts(shiftsInRequisition, filter);
+      } else {
+        const response = await new RequisitionService().getAllAvailableShifts(
+          requisitionId,
+          applicationId,
+          filter
+        );
+        availableShifts = applySortOnShifts(response.availableShifts, filter);
+      }
       dispatch({
         type: UPDATE_SHIFTS,
         payload: {
-          ...response
+          availableShifts
         }
       });
       setLoading(false)(dispatch);

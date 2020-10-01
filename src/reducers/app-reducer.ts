@@ -345,7 +345,7 @@ const AppReducer = (state = initialState, action: IAction) => {
             $set: requisition
           },
           shiftPageFactor: {
-            $set: 0
+            $set: payload.pageFactor || 0
           },
           shiftsEmptyOnFilter: {
             $set: payload.shiftsEmptyOnFilter

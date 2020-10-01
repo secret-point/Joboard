@@ -26,7 +26,7 @@ export interface Requisition {
   childRequisitions: any[];
   selectedChildRequisition: any;
   jobDescription: any;
-  availableShifts: requistionAvailableShifts;
+  availableShifts: AvailableShifts;
 }
 
 export interface ContingentOffer {
@@ -146,11 +146,11 @@ export default interface Payload {
   selectedRequisitionId: string;
   history: History;
 }
-export interface requistionAvailableShifts {
-  shifts: requistionShifts[];
+export interface AvailableShifts {
+  shifts: Shifts[];
   total: any;
 }
-export interface requistionShifts {
+export interface Shifts {
   headCountRequestId: string;
   jobTitle: string;
   isTemporaryReq: boolean;

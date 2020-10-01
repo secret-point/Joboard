@@ -32,7 +32,6 @@ import {
   onGetChildRequisitions,
   onGetJobDescription,
   onGoToDescription,
-  onApplySortSelection,
   onApplyFilter,
   onResetFilters,
   onShiftsIncrementalLoad
@@ -60,7 +59,6 @@ const actionMap: any = {
   GET_JOB_DESCRIPTION: onGetJobDescription,
   UPDATE_SHIFT_SELECTION: onUpdateShiftSelection,
   ON_GET_CANDIDATE: onGetCandidate,
-  ON_APPLY_SORTING: onApplySortSelection,
   GO_TO_DASHBOARD: onGoToDashboard,
   TERMINATE_APPLICATION: onTerminateApplication,
   COMPLETE_TASK: onCompleteTask,
