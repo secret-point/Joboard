@@ -113,6 +113,7 @@ export interface AppConfig {
   authenticationURL: string;
   dashboardUrl: string;
   stepFunctionEndpoint: string;
+  ASHChecklistURL: string;
   defaultDaysHoursFilter: DaysHoursFilter[];
   defaultAvailableFilter: AvailableFilter;
 }

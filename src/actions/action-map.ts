@@ -9,7 +9,8 @@ import {
   onCompleteTask,
   onFilterChange,
   onResetPageOutput,
-  onBackButtonCompleteTask
+  onBackButtonCompleteTask,
+  onRedirectToASHChecklist
 } from "./actions";
 import {
   onStartApplication,
@@ -70,7 +71,8 @@ const actionMap: any = {
   ON_RESET_OUTPUT_STATE: onResetPageOutput,
   ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask,
   SHOW_PREVIOUS_NAMES: onShowPreviousName,
-  LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad
+  LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
+  REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist
 };
 
 export default actionMap;

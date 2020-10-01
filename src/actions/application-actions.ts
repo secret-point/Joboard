@@ -53,9 +53,14 @@ export const onGetApplication = (payload: IPayload) => async (
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
     const requisitionId = payload.urlParams?.requisitionId;
-    onGetRequisitionHeaderInfo(payload)(dispatch);
-    const candidateResponse = await onGetCandidate(payload)(dispatch);
     const { options, data } = payload;
+    let candidateResponse;
+
+    if (!options?.loadOnlyApplicationData) {
+      onGetRequisitionHeaderInfo(payload)(dispatch);
+      candidateResponse = await onGetCandidate(payload)(dispatch);
+    }
+
     if (
       applicationId &&
       (options?.ignoreApplicationData || isEmpty(payload.data.application))
@@ -79,19 +84,25 @@ export const onGetApplication = (payload: IPayload) => async (
         }
       });
 
-      const candidateId =
-        candidateResponse?.candidateId || payload.data.candidate.candidateId;
-      loadWorkflow(
-        requisitionId,
-        applicationId,
-        candidateId,
-        payload.appConfig,
-        options?.isCompleteTaskOnLoad
-      );
-    }
+      if (!options?.doNotInitiateWorkflow) {
+        const candidateId =
+          candidateResponse?.candidateId || payload.data.candidate.candidateId;
+        loadWorkflow(
+          requisitionId,
+          applicationId,
+          candidateId,
+          payload.appConfig,
+          options?.isCompleteTaskOnLoad
+        );
 
-    if (!options?.isCompleteTaskOnLoad) {
-      setLoading(false)(dispatch);
+        if (!options?.isCompleteTaskOnLoad) {
+          setLoading(false)(dispatch);
+        }
+      } else {
+        if (applicationResponse.shift) {
+          setLoading(false)(dispatch);
+        }
+      }
     }
   } catch (ex) {
     console.log(ex);

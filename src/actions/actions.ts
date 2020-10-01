@@ -75,6 +75,17 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
   dispatch(push(`/app${payload.redirectPath}`));
 };
 
+export const onRedirectToASHChecklist = (payload: IPayload): void  => {
+  const ASHChecklistURL = payload.appConfig.ASHChecklistURL.replace(
+    "{applicationId}",
+    payload.urlParams.applicationId
+  ).replace(
+    "{requisitionId}",
+    payload.urlParams.requisitionId
+  );
+   window.location.assign(ASHChecklistURL);
+};
+
 export const goTo = (path: string, urlParams?: UrlParam) => (
   dispatch: Function
 ) => {
