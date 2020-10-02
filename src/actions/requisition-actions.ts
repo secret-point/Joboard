@@ -261,12 +261,16 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
         requisitionId,
         applicationId
       );
-      dispatch({
-        type: UPDATE_REQUISITION,
-        payload: {
-          availableShifts: response.availableShifts
-        }
-      });
+      if (response.availableShifts.total > 0) {
+        dispatch({
+          type: UPDATE_REQUISITION,
+          payload: {
+            availableShifts: response.availableShifts
+          }
+        });
+      } else {
+        onUpdatePageId("no-available-shift")(dispatch);
+      }
       dispatch({
         type: SET_PAGE_FACTOR,
         payload: response.pageFactor
@@ -275,13 +279,9 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
     } catch (ex) {
       console.log(ex);
       setLoading(false)(dispatch);
-      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
-        onUpdatePageId("no-available-shift")(dispatch);
-      } else {
-        onUpdateError(
-          ex?.response?.data?.errorMessage || "Unable to get shifts"
-        )(dispatch);
-      }
+      onUpdateError(ex?.response?.data?.errorMessage || "Unable to get shifts")(
+        dispatch
+      );
     }
   }
 };
@@ -388,17 +388,20 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
         applicationId,
         filter
       );
-      const availableShifts = applySortOnShifts(
-        response.availableShifts,
-        filter
-      );
-      dispatch({
-        type: MERGE_SHIFTS,
-        payload: {
-          shifts: availableShifts.shifts,
-          pageFactor: response.pageFactor
-        }
-      });
+
+      if (response.availableShifts.total > 0) {
+        const availableShifts = applySortOnShifts(
+          response.availableShifts,
+          filter
+        );
+        dispatch({
+          type: MERGE_SHIFTS,
+          payload: {
+            shifts: availableShifts.shifts,
+            pageFactor: response.pageFactor
+          }
+        });
+      }
       setLoading(false)(dispatch);
     } catch (ex) {
       console.log(ex);
