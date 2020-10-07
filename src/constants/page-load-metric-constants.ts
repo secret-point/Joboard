@@ -78,6 +78,16 @@ const shiftsPayloadDefault = {
   ]
 };
 
+const shiftsErrorEvent = {
+  key: "shifts",
+  values: [
+    {
+      key: "errorMessage",
+      value: ""
+    }
+  ]
+};
+
 const eventShiftPayload = {
   key: "shift",
   values: [
@@ -589,6 +599,17 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       }
     },
     dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+  },
+
+  "get-all-avaliable-shift-error": {
+    eventPayload: {
+      event: EVENT.GET_SHIFTS_ERROR
+    },
+    dataPayload: [
+      applicationPayloadDefault,
+      jobPayloadDefault,
+      shiftsErrorEvent
+    ]
   },
 
   "apply-filter": {

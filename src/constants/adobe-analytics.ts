@@ -4,7 +4,8 @@ export enum EVENT {
   START_ASSESSMENT = "assessment start",
   JOBS_FILTER = "jobs filter",
   JOBS_SORT = "jobs sort",
-  SHIFT_SELECTED = "selected shift"
+  SHIFT_SELECTED = "selected shift",
+  GET_SHIFTS_ERROR = "shift display error"
 }
 
 export enum PAGE_TYPE {

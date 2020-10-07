@@ -279,9 +279,17 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
     } catch (ex) {
       console.log(ex);
       setLoading(false)(dispatch);
-      onUpdateError(ex?.response?.data?.errorMessage || "Unable to get shifts")(
-        dispatch
-      );
+      const errorMessage = ex?.response?.data?.errorMessage
+        ? ex?.response?.data?.errorMessage
+        : "Unable to get shifts";
+
+      //send the error message to Adobe Analytics
+      let dataLayer: any = {};
+      dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error");
+      dataLayer.shifts.errorMessage = errorMessage;
+      sendDataLayerAdobeAnalytics(dataLayer);
+
+      onUpdateError(errorMessage)(dispatch);
     }
   }
 };
