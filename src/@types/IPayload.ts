@@ -177,6 +177,7 @@ export interface Shifts {
   jobClass: string;
   shiftCode: string;
   altShiftCode: string;
+  locationPostalCode: string;
 }
 
 export interface HoursPerWeek {
