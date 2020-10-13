@@ -44,24 +44,34 @@ export const startOrResumeWorkflow = () => {
 };
 
 export const sendHeartBeatWorkflow = () => {
+  const websocket = window.stepFunctionService.websocket;
   if (window.hearBeatTime) {
     const endTime = moment();
     const startTime = moment(window.hearBeatTime);
     const duration = moment.duration(endTime.diff(startTime));
-    if (duration.asMinutes() < MAX_MINUTES_FOR_HEARTBEAT) {
+    if (
+      duration.asMinutes() < MAX_MINUTES_FOR_HEARTBEAT &&
+      websocket?.OPEN === websocket?.readyState
+    ) {
       window.stepFunctionService.websocket?.send(
         JSON.stringify({
           action: "heartbeat"
         })
       );
+    } else {
+      window.location.assign("/#/timeout");
     }
   } else {
     window.hearBeatTime = moment().toISOString();
-    window.stepFunctionService.websocket?.send(
-      JSON.stringify({
-        action: "heartbeat"
-      })
-    );
+    if (websocket?.OPEN === websocket?.readyState) {
+      window.stepFunctionService.websocket?.send(
+        JSON.stringify({
+          action: "heartbeat"
+        })
+      );
+    } else {
+      window.location.assign("/#/timeout");
+    }
   }
 };
 
