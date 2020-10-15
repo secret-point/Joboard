@@ -34,7 +34,8 @@ import {
   PreHireTask,
   DaysHoursFilter,
   AddressComponent,
-  TextAreaWithLength
+  TextAreaWithLength,
+  Video
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
@@ -90,7 +91,8 @@ const ComponentMap: any = {
   DaysHoursFilter,
   AddressComponent,
   TextAreaWithLength,
-  Modal: ModalContainer
+  Modal: ModalContainer,
+  Video
 };
 
 export default ComponentMap;

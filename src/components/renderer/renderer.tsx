@@ -295,6 +295,9 @@ const Renderer: React.FC<IRendererProps> = ({
 
       if (filter.type === "object") {
         return !isEmpty(value);
+      } else if (filter.type === "filterValue") {
+        //if filterValue is empty, return reture
+        return isEmpty(value);
       } else {
         return value === filter.value;
       }
