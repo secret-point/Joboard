@@ -381,7 +381,7 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
     payload: true
   });
   const filter = constructFilterPayload(payload);
-  if (payload.data.shiftPageFactor) {
+  if (!isNil(payload.data.shiftPageFactor)) {
     filter.pageFactor = payload.data.shiftPageFactor + 1;
   } else {
     filter.pageFactor = filter.pageFactor + 1;
@@ -457,6 +457,7 @@ export const onApplyFilter = (payload: IPayload) => async (
   if (requisitionId) {
     try {
       let availableShifts: any = {};
+      let pageFactor;
       if (options?.hasSortAction) {
         const shiftsInRequisition = payload.data.requisition.availableShifts;
         availableShifts = applySortOnShifts(shiftsInRequisition, filter);
@@ -466,12 +467,14 @@ export const onApplyFilter = (payload: IPayload) => async (
           applicationId,
           filter
         );
+        pageFactor = response.pageFactor;
         availableShifts = applySortOnShifts(response.availableShifts, filter);
       }
       dispatch({
         type: UPDATE_SHIFTS,
         payload: {
-          availableShifts
+          availableShifts,
+          pageFactor
         }
       });
       setLoading(false)(dispatch);
