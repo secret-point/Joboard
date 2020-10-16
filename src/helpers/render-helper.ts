@@ -48,20 +48,10 @@ export const validation = (
       let tenYearsFromNow = moment()
         .utc()
         .subtract(18, "years");
-
-      const regex = new RegExp(
-        /^[12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/
-      );
-      if (!regex.test(value)) {
-        //format: should be yyyy-mm-dd, and valid date: [18: 100] ; month : [1-12]: days: [1,31]
-        return false;
-      } else if (!moment(value).isValid()) {
-        //legal date
-        return false;
-      } else if (moment(value).utc() > tenYearsFromNow) {
-        return false;
-      } else {
+      if (moment(value).utc() <= tenYearsFromNow) {
         return true;
+      } else {
+        return false;
       }
     }
     case "LEGAL_NAME": {
