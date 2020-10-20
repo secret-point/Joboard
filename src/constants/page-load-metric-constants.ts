@@ -600,6 +600,16 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
   },
+  "applicationId-null": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["applicationId-null"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+  },
 
   "get-all-avaliable-shift-error": {
     eventPayload: {

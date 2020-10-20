@@ -14,6 +14,7 @@ export enum PAGE_TYPE {
 
 export const PAGE_NAME: any = {
   "pre-consent": "BB - welcome",
+  "applicationId-null": "error - application id is undefined",
   consent: "job landing",
   "assessment-consent": "BB - pre-assessment",
   assessment: "BB - assessment",
@@ -52,6 +53,7 @@ export const PAGE_NAME: any = {
 
 export const PAGE_TITLE: any = {
   "already-applied": "Already applied",
+  "applicationId-null": "Error",
   "pre-consent": "Welcome",
   "amazon-rejects": "Sorry",
   "amazon-withdraws": "Sorry",

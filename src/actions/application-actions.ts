@@ -14,6 +14,7 @@ import propertyOf from "lodash/propertyOf";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import findIndex from "lodash/findIndex";
+import { isNil } from "lodash";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -26,6 +27,7 @@ export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
+export const NO_APPLICATION_ID = "NO_APPLICATION_ID";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -103,13 +105,20 @@ export const onGetApplication = (payload: IPayload) => async (
           setLoading(false)(dispatch);
         }
       }
+    } else if (isNil(applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
     }
   } catch (ex) {
     console.log(ex);
     setLoading(false)(dispatch);
-    onUpdateError(
-      ex?.response?.data?.errorMessage || "unable to get application"
-    )(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "unable to get application"
+      )(dispatch);
+    }
   }
 };
 
@@ -220,6 +229,9 @@ export const updateApplication = (payload: IPayload) => async (
     type = stepId;
   }
   const applicationId = data.application.applicationId;
+  if (isNil(applicationId)) {
+    throw new Error(NO_APPLICATION_ID);
+  }
   onUpdateOutput(payload)(dispatch);
   if (options?.valueExitsInData) {
     updateData = data.output[currentPage.id];
@@ -260,9 +272,14 @@ export const updateApplication = (payload: IPayload) => async (
       }
     } catch (ex) {
       setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Failed to update application"
-      )(dispatch);
+      if (ex?.message === NO_APPLICATION_ID) {
+        window.localStorage.setItem("page", "applicationId-null");
+        onUpdatePageId("applicationId-null")(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to update application"
+        )(dispatch);
+      }
     }
   } else {
     if (options?.goTo) {
@@ -300,6 +317,10 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
     const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
 
+    if (isNil(urlParams.applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
+
     const response = await new CandidateApplicationService().updateApplication({
       type: "job-confirm",
       applicationId: urlParams.applicationId,
@@ -325,9 +346,14 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);
-    onUpdateError(
-      ex?.response?.data?.errorMessage || "Failed to update application"
-    )(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
   }
 };
 
@@ -340,6 +366,9 @@ export const onTerminateApplication = (payload: IPayload) => async (
     const { options, urlParams } = payload;
     const state = options.state;
     const applicationId = urlParams.applicationId;
+    if (isNil(applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
     const response = await new CandidateApplicationService().terminateApplication(
       applicationId,
       state
@@ -354,9 +383,14 @@ export const onTerminateApplication = (payload: IPayload) => async (
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);
-    onUpdateError(
-      ex?.response?.data?.errorMessage || "Failed to update application"
-    )(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
   }
 };
 
@@ -368,6 +402,9 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
   try {
     const { options, urlParams } = payload;
     const applicationId = urlParams.applicationId;
+    if (isNil(applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
     const { status } = options;
     const candidateResponse = await onGetCandidate(payload, true)(dispatch);
     const response = await new CandidateApplicationService().updateWOTCStatus(
@@ -386,9 +423,14 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
   } catch (ex) {
     setLoading(false)(dispatch);
     console.log(ex);
-    onUpdateError(
-      ex?.response?.data?.errorMessage || "Failed to update application"
-    )(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
   }
 };
 
