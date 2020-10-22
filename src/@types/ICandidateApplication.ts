@@ -9,6 +9,12 @@ export interface JobSelected {
   childRequisitionId: string;
   headCountRequestId: string;
   jobSelectedOn: string;
+  bgcVendorName: BGCVendorType;
+}
+
+export enum BGCVendorType {
+  FADV = "FADV",
+  ACCURATE = "ACCURATE"
 }
 
 export default interface ICandidateApplication {
