@@ -1,10 +1,20 @@
 import isEmpty from "lodash/isEmpty";
+import isNil from "lodash/isNil";
 import { getDataForMetrics } from "../helpers/adobe-helper";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
 
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
+  const cmpId = window.sessionStorage.getItem("cmpid");
+  if (!isNil(cmpId)) {
+    metric = {
+      ...metric,
+      campaign: {
+        cmpid: cmpId
+      }
+    };
+  }
   window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
 };
