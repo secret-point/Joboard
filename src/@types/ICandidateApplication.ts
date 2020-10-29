@@ -17,6 +17,11 @@ export enum BGCVendorType {
   ACCURATE = "ACCURATE"
 }
 
+export interface JobReferral{
+  hasReferral: boolean | string;
+  referralInfo: string;
+}
+
 export default interface ICandidateApplication {
   active: boolean;
   submitted: boolean;
@@ -51,6 +56,7 @@ export default interface ICandidateApplication {
   onlySeasonalShifts: boolean;
   workflowStepName: string;
   hasBGCCaliforniaDisclosureAcknowledged: boolean;
+  jobReferral: JobReferral;
 }
 export interface Candidate {
   candidateId: string;
