@@ -54,16 +54,17 @@ getInitialData()
     const misc = queryParams["misc"];
     const token = queryParams["token"] as any;
     if (!isNil(requisitionId) && !isNil(page)) {
-      const urlParams = { ...queryParams };
-      delete urlParams.token;
-      delete urlParams.page;
+      // disabled preserve url query params.
+      // const urlParams = { ...queryParams };
+      // delete urlParams.token;
+      // delete urlParams.page;
 
-      const queryString = objectToQuerystring(urlParams);
+      // const queryString = objectToQuerystring(urlParams);
 
-      let appHashUrl = `#/${page}/${requisitionId}`;
-      appHashUrl = !isEmpty(queryString)
-        ? `${queryString}${appHashUrl}`
-        : appHashUrl;
+      // appHashUrl = !isEmpty(queryString)
+      //   ? `${queryString}${appHashUrl}`
+      //   : appHashUrl;
+      let appHashUrl = `/#/${page}/${requisitionId}`;
       appHashUrl = !isNil(applicationId)
         ? `${appHashUrl}/${applicationId}`
         : appHashUrl;
