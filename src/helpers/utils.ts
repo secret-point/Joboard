@@ -49,3 +49,13 @@ export const isJson = (obj: string) => {
   }
   return true;
 };
+
+export const objectToQuerystring = (obj: any) => {
+  return Object.keys(obj).reduce((str: string, key: string, i: number) => {
+    let delimiter, val;
+    delimiter = i === 0 ? "?" : "&";
+    key = encodeURIComponent(key);
+    val = encodeURIComponent(obj[key]);
+    return [str, delimiter, key, "=", val].join("");
+  }, "");
+};

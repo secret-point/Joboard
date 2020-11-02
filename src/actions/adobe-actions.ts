@@ -5,8 +5,21 @@ import { getDataForMetrics } from "../helpers/adobe-helper";
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
 
+const getCmpId = () => {
+  const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
+  let cmpIdValue;
+  for (let key of cmpIdKeys) {
+    const cmpId = window.sessionStorage.getItem(key);
+    if (!isNil(cmpId)) {
+      cmpIdValue = cmpId;
+      break;
+    }
+  }
+  return cmpIdValue;
+};
+
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
-  const cmpId = window.sessionStorage.getItem("cmpid");
+  const cmpId = getCmpId();
   if (!isNil(cmpId)) {
     metric = {
       ...metric,

@@ -17,6 +17,7 @@ import domLoaded from "dom-loaded";
 import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
+import { objectToQuerystring } from "./helpers/utils";
 
 declare global {
   interface Window {
@@ -53,10 +54,23 @@ getInitialData()
     const misc = queryParams["misc"];
     const token = queryParams["token"] as any;
     if (!isNil(requisitionId) && !isNil(page)) {
-      let url = `/#/${page}/${requisitionId}`;
-      url = !isNil(applicationId) ? `${url}/${applicationId}` : url;
-      url = !isNil(misc) ? `${url}/${applicationId}/${misc}` : url;
-      window.location.assign(url);
+      const urlParams = { ...queryParams };
+      delete urlParams.token;
+      delete urlParams.page;
+
+      const queryString = objectToQuerystring(urlParams);
+
+      let appHashUrl = `#/${page}/${requisitionId}`;
+      appHashUrl = !isEmpty(queryString)
+        ? `${queryString}${appHashUrl}`
+        : appHashUrl;
+      appHashUrl = !isNil(applicationId)
+        ? `${appHashUrl}/${applicationId}`
+        : appHashUrl;
+      appHashUrl = !isNil(misc)
+        ? `${appHashUrl}/${applicationId}/${misc}`
+        : appHashUrl;
+      window.location.assign(appHashUrl);
     }
 
     if (!isNil(token)) {
