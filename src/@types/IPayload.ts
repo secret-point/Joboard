@@ -42,6 +42,7 @@ export interface ApplicationData {
   showPreviousNames: string;
   selectedShift: any;
   loadingShifts: boolean;
+  shiftsEmptyOnFilter: boolean;
   shiftPageFactor: number;
 }
 

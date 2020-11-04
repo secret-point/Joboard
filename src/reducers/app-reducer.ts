@@ -56,7 +56,8 @@ const initialState: any = {
     output: {},
     config: {},
     showPreviousNames: "NO",
-    loadingShifts: false
+    loadingShifts: false,
+    shiftsEmptyOnFilter: false
   },
   applicationData: {},
   output: {},
