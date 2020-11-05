@@ -44,10 +44,6 @@ export enum ApplicationState {
    */
   WOTC_COMPLETED = "WOTC_COMPLETED",
   /**
-   * Candidate completed WOTC form
-   */
-  WOTC_INITIATED = "WOTC_INITIATED",
-  /**
    * SelfID steps
    */
   EQUAL_OPPORTUNITY_FORM_SAVED = "EQUAL_OPPORTUNITY_FORM_SAVED",

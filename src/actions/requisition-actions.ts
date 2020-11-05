@@ -492,17 +492,6 @@ export const onApplyFilter = (payload: IPayload) => async (
             shiftsEmptyOnFilter: true
           }
         });
-      } else if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
-        dispatch({
-          type: UPDATE_SHIFTS,
-          payload: {
-            availableShifts: {
-              shifts: [],
-              total: 0
-            },
-            shiftsEmptyOnFilter: true
-          }
-        });
       } else {
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get shifts"
