@@ -197,7 +197,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         parentRequisitionId: requisitionId
       });
 
-      if (response) {
+      if (!isEmpty(response)) {
         const nheSlots: any[] = [];
         response.forEach((slot: any) => {
           const nheSlot: any = {};
@@ -228,6 +228,8 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
             nheTimeSlots: nheSlots
           }
         });
+      } else {
+        onUpdatePageId("no-available-time-slots")(dispatch);
       }
       setLoading(false)(dispatch);
     } catch (ex) {
