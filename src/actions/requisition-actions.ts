@@ -493,6 +493,10 @@ export const onApplyFilter = (payload: IPayload) => async (
           }
         });
       } else if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
+        console.log(
+          "getAvaliableShift bad request error when apply filter ",
+          HTTPStatusCodes.BAD_REQUEST
+        );
         dispatch({
           type: UPDATE_SHIFTS,
           payload: {
@@ -504,6 +508,7 @@ export const onApplyFilter = (payload: IPayload) => async (
           }
         });
       } else {
+        console.log("Error while apply shift filter");
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get shifts"
         )(dispatch);
