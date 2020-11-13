@@ -24,6 +24,8 @@ export const RESET_FILTERS = "RESET_FILTERS";
 export const SET_LOADING_SHIFTS = "SET_LOADING_SHIFTS";
 export const SET_PAGE_FACTOR = "SET_PAGE_FACTOR";
 export const MERGE_SHIFTS = "MERGE_SHIFTS";
+const SORT_KEY_DEFAULT = "FEATURED";
+const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -498,7 +500,7 @@ export const onApplyFilter = (payload: IPayload) => async (
 ) => {
   const { options } = payload;
   onRemoveError()(dispatch);
-  const filter = constructFilterPayload(payload);
+  let filter = constructFilterPayload(payload);
   filter.pageFactor = 1;
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
@@ -538,6 +540,27 @@ export const onApplyFilter = (payload: IPayload) => async (
         const shiftsInRequisition = payload.data.requisition.availableShifts;
         availableShifts = applySortOnShifts(shiftsInRequisition, filter);
       } else {
+        if (isEmpty(filter.filter.schedulePreferences)) {
+          const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
+          const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
+          const sortKey = SORT_KEY_DEFAULT;
+          const filterData = {
+            sortKey,
+            maxHoursPerWeek,
+            daysHoursFilter
+          };
+          dispatch({
+            type: RESET_FILTERS,
+            payload: {
+              ...filterData
+            }
+          });
+          payload.data.output["job-opportunities"] = filterData;
+          log("schedulePreference is empty, reset the filterData:", {
+            filterData: JSON.stringify(filterData)
+          });
+          filter = constructFilterPayload(payload);
+        }
         const response = await new RequisitionService().getAllAvailableShifts(
           requisitionId,
           applicationId,
@@ -564,18 +587,10 @@ export const onApplyFilter = (payload: IPayload) => async (
     } catch (ex) {
       log("Error while applying filter", ex);
       setLoading(false)(dispatch);
-      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
-        dispatch({
-          type: UPDATE_SHIFTS,
-          payload: {
-            availableShifts: {
-              shifts: [],
-              total: 0
-            },
-            shiftsEmptyOnFilter: true
-          }
-        });
-      } else if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
+      if (
+        ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
+        ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
+      ) {
         dispatch({
           type: UPDATE_SHIFTS,
           payload: {
@@ -598,8 +613,8 @@ export const onApplyFilter = (payload: IPayload) => async (
 export const onResetFilters = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  const sortKey = "FEATURED";
-  const maxHoursPerWeek = "40";
+  const sortKey = SORT_KEY_DEFAULT;
+  const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
   const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
 
   const filterData = {
