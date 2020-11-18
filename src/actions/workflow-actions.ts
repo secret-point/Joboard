@@ -141,7 +141,8 @@ export const completeTask = (
       candidateId: window.stepFunctionService.candidateId,
       requisitionId: window.stepFunctionService.requisitionId,
       eventSource: "HVH-CA-UI",
-      jobSelectedOn
+      jobSelectedOn,
+      currentWorkflowStep: step
     };
 
     if (isBackButton) {
