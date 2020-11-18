@@ -129,7 +129,8 @@ export const goToStep = async (workflowData: WorkflowData) => {
 export const completeTask = (
   application?: ICandidateApplication,
   step?: string,
-  isBackButton?: boolean
+  isBackButton?: boolean,
+  goToStep?: string
 ) => {
   console.log(`${step} completed`);
   if (window.stepFunctionService?.websocket) {
@@ -146,7 +147,7 @@ export const completeTask = (
     };
 
     if (isBackButton) {
-      data.workflowStepName = step;
+      data.workflowStepName = goToStep;
     } else {
       data.workflowStepName = "";
     }

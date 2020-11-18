@@ -217,7 +217,9 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
 
 export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const { application } = payload.data;
-  completeTask(application, "on-complete-task");
+  const currentStepName =
+    window.localStorage.getItem("page") || "on-complete-task";
+  completeTask(application, currentStepName);
 };
 
 export const onBackButtonCompleteTask = (payload: IPayload) => (
@@ -227,7 +229,9 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
   const options = payload.options;
   onResetPageOutput()(dispatch);
   if (!isEmpty(options?.stepName)) {
-    completeTask(application, options?.stepName, true);
+    const currentStepName =
+      window.localStorage.getItem("page") || options?.stepName;
+    completeTask(application, currentStepName, true, options?.stepName);
   }
 };
 

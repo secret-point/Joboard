@@ -265,7 +265,15 @@ export const updateApplication = (payload: IPayload) => async (
       }
       setLoading(false)(dispatch);
       if (options?.executeCompleteStep) {
-        completeTask(data.application, type);
+        const sidStatus = [
+          "equal-opportunity-form",
+          "veteran-status-form",
+          "disability-form"
+        ];
+        const bgcStatus = ["non-fcra", "fcra", "additional-bgc-info"];
+        let stepName = bgcStatus.includes(type) ? "bgc" : type;
+        stepName = sidStatus.includes(type) ? "self-identification" : stepName;
+        completeTask(data.application, stepName);
       }
       if (options?.goTo) {
         goTo(options?.goTo, urlParams)(dispatch);
@@ -341,7 +349,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
     if (payload.options?.goTo) {
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
-    completeTask(application, "job-selection");
+    completeTask(application, "job-opportunities");
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
