@@ -19,7 +19,6 @@ interface PageProps {
 
 class CreateApplicationPage extends Component<PageProps, {}> {
   componentDidMount() {
-    window.localStorage.setItem("page", "create-application");
     const { appConfig, data, match } = this.props;
     this.props.createApplication({
       appConfig,

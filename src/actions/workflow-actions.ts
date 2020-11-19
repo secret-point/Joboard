@@ -123,6 +123,8 @@ export const goToStep = async (workflowData: WorkflowData) => {
         }/${application.applicationId || ""}`
       )
     );
+  } else {
+    setWorkflowLoading(false)(window.reduxStore.dispatch);
   }
 };
 

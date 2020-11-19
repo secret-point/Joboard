@@ -9,6 +9,7 @@ import {
 } from "./adobe-actions";
 import { PAGE_TITLE } from "../constants/adobe-analytics";
 import { isNil } from "lodash";
+import { onUpdateError } from "./error-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -125,6 +126,7 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
   );
 
   const responseTime = Date.now();
+  setLoading(true)(dispatch);
   try {
     const pageConfig = await new PageService().getPageConfig(`${page}.json`);
     (window as any).isPageMetricsUpdated = false;
@@ -166,10 +168,14 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
       }
     });
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
+    metric?.publishCounterMonitor(`${page}-loaded`, 1);
   } catch (ex) {
     console.log(ex);
+    setLoading(false)(dispatch);
+    onUpdateError("Unable to load page configuration")(dispatch);
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
     metric?.publishCounterMonitor(`${page}-load-failed`, 1);
+    metric?.publishCounterMonitor(`page-config-load-failed`, 1);
   }
 };
 
@@ -217,8 +223,10 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
 
 export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const { application } = payload.data;
-  const currentStepName =
-    window.localStorage.getItem("page") || "on-complete-task";
+  const { options } = payload;
+  const currentStepName = options?.currentStepName
+    ? options?.currentStepName
+    : window.localStorage.getItem("page");
   completeTask(application, currentStepName);
 };
 
@@ -230,7 +238,7 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
   onResetPageOutput()(dispatch);
   if (!isEmpty(options?.stepName)) {
     const currentStepName =
-      window.localStorage.getItem("page") || options?.stepName;
+      options?.currentStepName || window.localStorage.getItem("page");
     completeTask(application, currentStepName, true, options?.stepName);
   }
 };
