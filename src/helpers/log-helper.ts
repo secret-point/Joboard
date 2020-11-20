@@ -18,7 +18,10 @@ export const initLogger = (url?: string, context?: any) => {
 
 export const log = (message: string, context: any = {}, type?: LoggerType) => {
   const cid = getCookie("hvhcid");
-  const log = window.log;
+  let log = window.log;
+  if (!log) {
+    return;
+  }
   context = {
     cid,
     ...new URLParamsHelper().get(),
