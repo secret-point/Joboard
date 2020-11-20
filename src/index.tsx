@@ -18,6 +18,8 @@ import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
 import { objectToQuerystring } from "./helpers/utils";
+import KatalLogger from "@katal/logger";
+import { initLogger } from "./helpers/log-helper";
 
 declare global {
   interface Window {
@@ -33,6 +35,8 @@ declare global {
     urlParams: any;
     MetricsPublisher: KatalMetrics.Publisher;
     applicationStartTime: number;
+    log: KatalLogger;
+    loggerUrl: string;
   }
 }
 
@@ -105,6 +109,12 @@ getInitialData()
         window.MetricsPublisher = initializationMetricsPublisher;
         new DeviceMetrics(initializationMetricsPublisher).publish();
         window.applicationStartTime = Date.now();
+
+        window.loggerUrl = data[0].loggerUrl;
+        window.log = initLogger(data[0].loggerUrl, queryParams);
+        window.log.addErrorListener();
+
+        window.log.info("Application load with config");
       });
     }
     const Main = () => (

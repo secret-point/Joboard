@@ -10,6 +10,7 @@ import {
 import { PAGE_TITLE } from "../constants/adobe-analytics";
 import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
+import { log, logError } from "../helpers/log-helper";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -128,6 +129,7 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
   const responseTime = Date.now();
   setLoading(true)(dispatch);
   try {
+    log(`Loading page configuration ${page}`);
     const pageConfig = await new PageService().getPageConfig(`${page}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
@@ -169,8 +171,12 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
     });
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
     metric?.publishCounterMonitor(`${page}-loaded`, 1);
+    log(`${page} - page configuration loaded`, {
+      loadDate: new Date().toISOString(),
+      apiResponseTime: Date.now() - responseTime
+    });
   } catch (ex) {
-    console.log(ex);
+    logError(`Error while loading page (${page}) configuration`, ex);
     setLoading(false)(dispatch);
     onUpdateError("Unable to load page configuration")(dispatch);
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
@@ -227,6 +233,7 @@ export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const currentStepName = options?.currentStepName
     ? options?.currentStepName
     : window.localStorage.getItem("page");
+  log(`Completed task on ${currentStepName}`);
   completeTask(application, currentStepName);
 };
 
@@ -239,6 +246,9 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
   if (!isEmpty(options?.stepName)) {
     const currentStepName =
       options?.currentStepName || window.localStorage.getItem("page");
+    log(
+      `Completed task on back button execution, current step is ${currentStepName}`
+    );
     completeTask(application, currentStepName, true, options?.stepName);
   }
 };

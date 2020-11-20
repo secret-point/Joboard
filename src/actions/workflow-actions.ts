@@ -9,6 +9,7 @@ import moment from "moment";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../constants";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
+import { log, logError, LoggerType } from "../helpers/log-helper";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -23,6 +24,7 @@ export const loadWorkflow = (
       window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
       window.applicationData = applicationData;
     }
+    log("Initiated to connect websocket");
     window.stepFunctionService = StepFunctionService.load(
       requisitionId,
       applicationId,
@@ -33,6 +35,7 @@ export const loadWorkflow = (
 };
 
 export const startOrResumeWorkflow = () => {
+  log("Started workflow");
   window.stepFunctionService.websocket?.send(
     JSON.stringify({
       action: "startWorkflow",
@@ -46,6 +49,7 @@ export const startOrResumeWorkflow = () => {
 export const sendHeartBeatWorkflow = () => {
   const websocket = window.stepFunctionService.websocket;
   if (window.hearBeatTime) {
+    log("Sending the heart beat event");
     const endTime = moment();
     const startTime = moment(window.hearBeatTime);
     const duration = moment.duration(endTime.diff(startTime));
@@ -59,17 +63,20 @@ export const sendHeartBeatWorkflow = () => {
         })
       );
     } else {
+      log("Websocket timed out, moved to timed out page");
       window.location.assign("/#/timeout");
     }
   } else {
     window.hearBeatTime = moment().toISOString();
     if (websocket?.OPEN === websocket?.readyState) {
+      log("Sending the heart beat event");
       window.stepFunctionService.websocket?.send(
         JSON.stringify({
           action: "heartbeat"
         })
       );
     } else {
+      log("Websocket timed out, moved to timed out page");
       window.location.assign("/#/timeout");
     }
   }
@@ -79,10 +86,23 @@ export const goToStep = async (workflowData: WorkflowData) => {
   const { app } = window.reduxStore.getState();
   const application = app.data.application;
   const storedPageId = window.localStorage.getItem("page");
-  if (workflowData.stepName && storedPageId !== workflowData.stepName) {
+  const { stepName } = workflowData;
+  log("Received data from step function", {
+    workflowData,
+    currentStepName: storedPageId,
+    goToStepName: stepName
+  });
+  if (stepName && storedPageId !== stepName) {
     setWorkflowLoading(true)(window.reduxStore.dispatch);
+    log(
+      `current step name (${storedPageId}) and go to step name (${stepName}) is not matched`
+    );
+    log("updating workflow step name in application", {
+      applicationId: application.applicationId,
+      stepName
+    });
     await new CandidateApplicationService()
-      .updateWorkflowStepName(application.applicationId, workflowData.stepName)
+      .updateWorkflowStepName(application.applicationId, stepName)
       .then(data => {
         window.reduxStore.dispatch({
           type: UPDATE_APPLICATION,
@@ -94,7 +114,7 @@ export const goToStep = async (workflowData: WorkflowData) => {
         return data;
       })
       .catch(ex => {
-        console.log(ex);
+        logError("Unable to update workflow step in application", ex);
         setWorkflowLoading(false)(window.reduxStore.dispatch);
       });
     onUpdatePageId(workflowData.stepName)(window.reduxStore.dispatch);
@@ -115,15 +135,17 @@ export const goToStep = async (workflowData: WorkflowData) => {
         Date.now() - window.applicationStartTime
       );
     }
-    window.localStorage.setItem("page", workflowData.stepName);
+    window.localStorage.setItem("page", stepName);
+    log(`update workflow step in local storage as ${stepName}`);
     window.reduxStore.dispatch(
       push(
-        `/${workflowData.stepName}/${
+        `/${stepName}/${
           application.parentRequisitionId
         }/${application.applicationId || ""}`
       )
     );
   } else {
+    log(`Received same as current step name ${storedPageId}`);
     setWorkflowLoading(false)(window.reduxStore.dispatch);
   }
 };
@@ -134,7 +156,6 @@ export const completeTask = (
   isBackButton?: boolean,
   goToStep?: string
 ) => {
-  console.log(`${step} completed`);
   if (window.stepFunctionService?.websocket) {
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
     setWorkflowLoading(true)(window.reduxStore.dispatch);
@@ -155,6 +176,9 @@ export const completeTask = (
     }
 
     window.stepFunctionService.websocket?.send(JSON.stringify(data));
+    log(`${step} completed`, {
+      ...data
+    });
   }
 };
 

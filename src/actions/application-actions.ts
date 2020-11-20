@@ -15,6 +15,7 @@ import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import findIndex from "lodash/findIndex";
 import { isNil } from "lodash";
+import { log, logError } from "../helpers/log-helper";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -43,6 +44,9 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
     redirectUrl
   )}`;
 
+  log("Started application", {
+    url
+  });
   const adobeDataMetric = getDataForEventMetrics("start-application");
   sendDataLayerAdobeAnalytics(adobeDataMetric);
   window.location.assign(url);
@@ -58,6 +62,10 @@ export const onGetApplication = (payload: IPayload) => async (
     const { options, data } = payload;
     let candidateResponse;
 
+    log(`started getting application data for ${applicationId}`, {
+      applicationId,
+      requisitionId
+    });
     if (!options?.loadOnlyApplicationData) {
       onGetRequisitionHeaderInfo(payload)(dispatch);
       candidateResponse = await onGetCandidate(payload)(dispatch);
@@ -67,6 +75,7 @@ export const onGetApplication = (payload: IPayload) => async (
       applicationId &&
       (options?.ignoreApplicationData || isEmpty(payload.data.application))
     ) {
+      log(`loading application data for ${applicationId}`);
       const applicationResponse = await new CandidateApplicationService().getApplication(
         applicationId
       );
@@ -76,6 +85,9 @@ export const onGetApplication = (payload: IPayload) => async (
           onSelectedRequisition(data.selectedShift.requisitionId)(dispatch);
         }
         applicationResponse.shift = data.selectedShift;
+        log("appending selected shift data", {
+          selectShift: JSON.stringify(data.selectedShift)
+        });
       }
 
       dispatch({
@@ -86,9 +98,12 @@ export const onGetApplication = (payload: IPayload) => async (
         }
       });
 
+      log("Updated state with application data");
+
       if (!options?.doNotInitiateWorkflow) {
         const candidateId =
           candidateResponse?.candidateId || payload.data.candidate.candidateId;
+        log("loading workflow if doNotInitiateWorkflow is true in page config");
         loadWorkflow(
           requisitionId,
           applicationId,
@@ -106,10 +121,11 @@ export const onGetApplication = (payload: IPayload) => async (
         }
       }
     } else if (isNil(applicationId)) {
+      log("did not found application id in state or URL");
       throw new Error(NO_APPLICATION_ID);
     }
   } catch (ex) {
-    console.log(ex);
+    logError("Failed while fetching the application data", ex);
     setLoading(false)(dispatch);
     if (ex?.message === NO_APPLICATION_ID) {
       window.localStorage.setItem("page", "applicationId-null");
@@ -127,16 +143,19 @@ export const onGetCandidate = (
   ignoreCandidateData?: boolean
 ) => async (dispatch: Function) => {
   if (isEmpty(payload.data.candidate) || ignoreCandidateData) {
+    log("loading candidate data");
     const response = await new CandidateApplicationService().getCandidate();
     dispatch({
       type: ON_GET_CANDIDATE,
       payload: response
     });
+    log("loaded candidate data and updated state");
     return response;
   }
 };
 
 export const onLaunchFCRA = (payload: IPayload) => (dispatch: Function) => {
+  log("request to load FCRA");
   onUpdatePageId("fcra")(dispatch);
 };
 
@@ -151,6 +170,7 @@ export const continueWithFCRADecline = (payload: IPayload) => (
       pageId: payload.currentPage.id
     }
   });
+  log("request to show withdraw modal screen");
 };
 
 export const createApplication = (payload: IPayload) => async (
@@ -160,6 +180,7 @@ export const createApplication = (payload: IPayload) => async (
     try {
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
+      log("started creating the application");
       const candidateApplicationService = new CandidateApplicationService();
       const candidateResponse = await candidateApplicationService.getCandidate();
       const response = await candidateApplicationService.createApplication({
@@ -175,12 +196,18 @@ export const createApplication = (payload: IPayload) => async (
           application: response
         }
       });
+      log("created application and updated state with application data", {
+        applicationId: response.applicationId
+      });
 
       dispatch({
         type: ON_GET_CANDIDATE,
         payload: candidateResponse
       });
 
+      log("Updated candidate response in state");
+
+      log("started loading workflow");
       loadWorkflow(
         payload.urlParams.requisitionId,
         response.applicationId,
@@ -190,7 +217,7 @@ export const createApplication = (payload: IPayload) => async (
 
       //setLoading(false)(dispatch);
     } catch (ex) {
-      console.log(ex);
+      logError(`Error while creating the application`, ex);
       const { urlParams } = payload;
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
@@ -247,6 +274,7 @@ export const updateApplication = (payload: IPayload) => async (
   }
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
     try {
+      log(`Started updating application at ${type}`);
       const response = await new CandidateApplicationService().updateApplication(
         {
           type: type,
@@ -260,6 +288,9 @@ export const updateApplication = (payload: IPayload) => async (
           application: response
         }
       });
+      log(
+        `Updated application at ${type} and update application data in state`
+      );
       if (options?.updateCandidate) {
         onGetCandidate(payload, true)(dispatch);
       }
@@ -273,12 +304,17 @@ export const updateApplication = (payload: IPayload) => async (
         const bgcStatus = ["non-fcra", "fcra", "additional-bgc-info"];
         let stepName = bgcStatus.includes(type) ? "bgc" : type;
         stepName = sidStatus.includes(type) ? "self-identification" : stepName;
+        log(
+          `Complete task event initiated on action ${type} and current page is ${stepName}`
+        );
         completeTask(data.application, stepName);
       }
       if (options?.goTo) {
+        log(`After update, application is redirecting to ${options?.goTo}`);
         goTo(options?.goTo, urlParams)(dispatch);
       }
     } catch (ex) {
+      logError(`Error while updating application at ${type}`, ex);
       setLoading(false)(dispatch);
       if (ex?.message === NO_APPLICATION_ID) {
         window.localStorage.setItem("page", "applicationId-null");
@@ -314,6 +350,9 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
   //position
   dataLayerShiftSelected.shift.position = selectedShiftPositionInOrder + 1;
   sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
+  log(`Selected shift`, {
+    selectedShift: JSON.stringify(payload.selectedShift)
+  });
 };
 
 export const onUpdateShiftSelection = (payload: IPayload) => async (
@@ -329,6 +368,9 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
       throw new Error(NO_APPLICATION_ID);
     }
 
+    log("Updating the shift selection in application", {
+      selectedShift: JSON.stringify(selectedShift)
+    });
     const response = await new CandidateApplicationService().updateApplication({
       type: "job-confirm",
       applicationId: urlParams.applicationId,
@@ -346,14 +388,26 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
         application: response
       }
     });
+    log(
+      `Updated application at job-confirm and update application data in state`,
+      {
+        selectedShift: JSON.stringify(selectedShift)
+      }
+    );
     if (payload.options?.goTo) {
+      log(
+        `After updating shift, application is redirecting to ${payload.options?.goTo}`
+      );
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
+    log(
+      `Complete task event initiated on action job-confirm and current page is job-opportunities`
+    );
     completeTask(application, "job-opportunities");
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
-    console.log(ex);
+    logError(`Failed while updating job selection`, ex);
     if (ex?.message === NO_APPLICATION_ID) {
       window.localStorage.setItem("page", "applicationId-null");
       onUpdatePageId("applicationId-null")(dispatch);
@@ -377,6 +431,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
     if (isNil(applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
+    log("Updating application with termination");
     const response = await new CandidateApplicationService().terminateApplication(
       applicationId,
       state
@@ -387,6 +442,7 @@ export const onTerminateApplication = (payload: IPayload) => async (
         application: response
       }
     });
+    log("Updated application with termination and state");
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -407,14 +463,16 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
+  const { options, urlParams } = payload;
+  const { status } = options;
   try {
-    const { options, urlParams } = payload;
     const applicationId = urlParams.applicationId;
     if (isNil(applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
-    const { status } = options;
+
     const candidateResponse = await onGetCandidate(payload, true)(dispatch);
+    log(`Updating application with wtoc status ${status}`);
     const response = await new CandidateApplicationService().updateWOTCStatus(
       applicationId,
       candidateResponse.candidateId,
@@ -426,11 +484,13 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
         application: response
       }
     });
-
+    log(
+      `Updated application with wtoc status ${status} and update application data in state`
+    );
     setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
-    console.log(ex);
+    log(`Error while updating wtoc status ${status}`);
     if (ex?.message === NO_APPLICATION_ID) {
       window.localStorage.setItem("page", "applicationId-null");
       onUpdatePageId("applicationId-null")(dispatch);

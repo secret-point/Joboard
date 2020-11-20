@@ -6,6 +6,7 @@ import Loader from "../components/loader";
 import isEmpty from "lodash/isEmpty";
 import { onUpdatePageId } from "../actions/actions";
 import { IGNORE_PAGE_TO_STORE_LOCAL } from "../constants";
+import { log } from "../helpers/log-helper";
 
 interface RedirectPageProps {
   appData: any;
@@ -34,6 +35,7 @@ const RedirectPage: React.FC<RedirectPageProps> = ({
     if (!IGNORE_PAGE_TO_STORE_LOCAL.includes(page)) {
       window.localStorage.setItem("page", page);
     }
+    log(`loading page ${page}`);
     setTimeout(() => {
       setRedirectPath(path);
     }, 200);

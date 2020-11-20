@@ -10,6 +10,7 @@ import {
   onTimeOut
 } from "../actions/workflow-actions";
 import { setInterval } from "timers";
+import { log, LoggerType } from "../helpers/log-helper";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -69,7 +70,7 @@ export default class StepFunctionService {
   }
 
   connect(event: any) {
-    console.log("Connected");
+    log("Websocket is connected");
     if (window.isCompleteTaskOnLoad) {
       completeTask(window.applicationData, "Complete Task On Load");
     } else {
@@ -79,13 +80,13 @@ export default class StepFunctionService {
 
   close(event: any) {
     window.setTimeout(() => {
-      console.log(event);
+      log("Websocket closed event executed", event);
       onTimeOut();
     }, 10000);
   }
 
   async message(event: MessageEvent) {
-    console.log("Message Received");
+    log("Message received from Websocket", event);
     const { data } = event;
     const message = isJson(data) ? JSON.parse(data) : data;
     if (!isString(message)) {
@@ -94,6 +95,6 @@ export default class StepFunctionService {
   }
 
   error(event: any) {
-    console.log(event);
+    log("Error on received from wWebsocket", event, LoggerType.ERROR);
   }
 }

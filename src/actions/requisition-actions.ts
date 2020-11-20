@@ -13,6 +13,7 @@ import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
+import { log, logError } from "../helpers/log-helper";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -32,6 +33,7 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId && isEmpty(payload.data.requisition)) {
     try {
+      log(`Getting requisition header info for ${requisitionId}`);
       const response = await new RequisitionService().getRequisitionHeaderInfo(
         requisitionId
       );
@@ -39,8 +41,12 @@ export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
         type: GET_REQUISITION_HEADER_INFO,
         payload: response
       });
+      log(
+        `loaded requisition header info for ${requisitionId} and updated state`
+      );
       setLoading(false)(dispatch);
     } catch (ex) {
+      logError("Error while fetching requisition header info", ex);
       setLoading(false)(dispatch);
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get requisition"
@@ -57,6 +63,7 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   if (requisitionId) {
     try {
+      log(`Getting child requisitions for ${requisitionId}`);
       const response = await new RequisitionService().getChildRequisitions(
         requisitionId
       );
@@ -66,9 +73,11 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
           childRequisitions: response
         }
       });
+      log(`loaded child requisitions for ${requisitionId} and updated state`);
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
+      logError("Unable to get child requisitions", ex);
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get requisition"
       )(dispatch);
@@ -84,6 +93,7 @@ export const onGetRequisition = (payload: IPayload) => async (
   const id = payload.urlParams?.requisitionId;
   if (id) {
     try {
+      log(`Getting requisition for ${id}`);
       const response = await new RequisitionService().getRequisition(id);
       dispatch({
         type: UPDATE_REQUISITION,
@@ -91,6 +101,7 @@ export const onGetRequisition = (payload: IPayload) => async (
           ...response
         }
       });
+      log(`loaded requisition for ${id} and update state`);
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
@@ -104,11 +115,13 @@ export const onGetRequisition = (payload: IPayload) => async (
 export const onSelectedRequisition = (requisitionId: string) => async (
   dispatch: Function
 ) => {
+  log(`getting selected requisition ${requisitionId}`);
   const response = await new RequisitionService().getRequisition(requisitionId);
   dispatch({
     type: SELECTED_REQUISITION,
     payload: response
   });
+  log(`loaded selected requisition ${requisitionId} and update state`);
 };
 
 export const onGetJobDescription = (payload: IPayload) => async (
@@ -124,6 +137,9 @@ export const onGetJobDescription = (payload: IPayload) => async (
       if (!payload.data.requisition.selectedChildRequisition) {
         onSelectedRequisition(childRequisitionId)(dispatch);
       }
+      log(
+        `getting job description for child requisition ${childRequisitionId}`
+      );
       const response = await new RequisitionService().getJobDescription(
         childRequisitionId
       );
@@ -133,6 +149,9 @@ export const onGetJobDescription = (payload: IPayload) => async (
           jobDescription: response
         }
       });
+      log(
+        `loaded job description for child requisition ${childRequisitionId} and update state`
+      );
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
@@ -155,6 +174,7 @@ export const onGoToDescription = (payload: IPayload) => async (
   const { requisition } = payload.data;
 
   let childRequisition;
+  log(`getting child requisition ${childRequisitionId}`);
   if (requisition.childRequisitions) {
     childRequisition = find(requisition.childRequisitions, {
       requisitionId: payload.selectedRequisitionId
@@ -172,6 +192,7 @@ export const onGoToDescription = (payload: IPayload) => async (
       selectedChildRequisition: childRequisition
     }
   });
+  log(`loaded child requisition ${childRequisitionId} and updated state`);
   onUpdatePageId(goTo)(dispatch);
 };
 
@@ -186,11 +207,17 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
     try {
       let application = payload.data.application;
       if (!application || isEmpty(application)) {
+        log(`getting application in NHE if application not exits in state`);
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
       }
       const { jobSelected } = application;
+      log(`getting time slots for HCR ${jobSelected.headCountRequestId}`, {
+        childRequisitionId: jobSelected.childRequisitionId,
+        headCountRequestId: jobSelected.headCountRequestId,
+        parentRequisitionId: requisitionId
+      });
       const response = await new RequisitionService().availableTimeSlots({
         childRequisitionId: jobSelected.childRequisitionId,
         headCountRequestId: jobSelected.headCountRequestId,
@@ -198,6 +225,9 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
       });
 
       if (!isEmpty(response)) {
+        log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
+          timeSlotsCount: response.length
+        });
         const nheSlots: any[] = [];
         response.forEach((slot: any) => {
           const nheSlot: any = {};
@@ -228,11 +258,16 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
             nheTimeSlots: nheSlots
           }
         });
+        log(`sanitized and updated state with time slots`);
       } else {
+        log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
+          timeSlotsCount: response?.length
+        });
         onUpdatePageId("no-available-time-slots")(dispatch);
       }
       setLoading(false)(dispatch);
     } catch (ex) {
+      logError(`Unable to get NHE time slots`, ex);
       setLoading(false)(dispatch);
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
@@ -259,10 +294,15 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
     );
   } else if (requisitionId) {
     try {
+      log(`getting all available shifts for requisition ${requisitionId}`);
       const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,
         applicationId
       );
+      log(`loaded all available shifts for requisition ${requisitionId}`, {
+        pageFactor: response.pageFactor,
+        availableShiftsCount: response.availableShifts.total
+      });
       if (response.availableShifts.total > 0) {
         dispatch({
           type: UPDATE_REQUISITION,
@@ -270,16 +310,21 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
             availableShifts: response.availableShifts
           }
         });
+        log("updated sate with available shifts");
       } else {
+        log(
+          "there are no shifts, application redirected to no-available-shift"
+        );
         onUpdatePageId("no-available-shift")(dispatch);
       }
       dispatch({
         type: SET_PAGE_FACTOR,
         payload: response.pageFactor
       });
+      log("updated sate with page factor");
       setLoading(false)(dispatch);
     } catch (ex) {
-      console.log(ex);
+      logError("Error while fetching available shits", ex);
       setLoading(false)(dispatch);
       let errorMessage = ex?.response?.data?.errorMessage
         ? ex?.response?.data?.errorMessage
@@ -305,6 +350,9 @@ export const applySortOnShifts = (
   filter: AvailableFilter
 ) => {
   let shifts: any[] = [];
+  log("applying sort on shifts", {
+    filter: JSON.stringify(filter)
+  });
   switch (filter.sortBy) {
     case "FEATURED": {
       const shiftsData = [...availableShifts.shifts];
@@ -397,12 +445,26 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
 
   if (requisitionId) {
     try {
+      log(
+        `getting available shifts for requisition ${requisitionId} in incremental`,
+        {
+          filter: JSON.stringify(filter)
+        }
+      );
       const response = await new RequisitionService().getAllAvailableShifts(
         requisitionId,
         applicationId,
         filter
       );
 
+      log(
+        `loaded available shifts for requisition ${requisitionId} in incremental`,
+        {
+          pageFactor: response.pageFactor,
+          availableShiftsCount: response.availableShifts.total,
+          filter: JSON.stringify(filter)
+        }
+      );
       if (response.availableShifts.total > 0) {
         const availableShifts = applySortOnShifts(
           response.availableShifts,
@@ -415,10 +477,11 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
             pageFactor: response.pageFactor
           }
         });
+        log("Updated shifts in state");
       }
       setLoading(false)(dispatch);
     } catch (ex) {
-      console.log(ex);
+      logError("Error while getting shifts in incremental", ex);
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
       } else {
@@ -460,11 +523,18 @@ export const onApplyFilter = (payload: IPayload) => async (
   }
   sendDataLayerAdobeAnalytics(dataLayer);
 
+  log("Applying filter", {
+    filter: JSON.stringify(filter)
+  });
+
   if (requisitionId) {
     try {
       let availableShifts: any = {};
       let pageFactor;
       if (options?.hasSortAction) {
+        log("Applying sorting selected sort", {
+          filter: JSON.stringify(filter)
+        });
         const shiftsInRequisition = payload.data.requisition.availableShifts;
         availableShifts = applySortOnShifts(shiftsInRequisition, filter);
       } else {
@@ -474,6 +544,11 @@ export const onApplyFilter = (payload: IPayload) => async (
           filter
         );
         pageFactor = response.pageFactor;
+        log("Applying sorting if user selected sort", {
+          pageFactor: response.pageFactor,
+          availableShiftsCount: response.availableShifts.total,
+          filter: JSON.stringify(filter)
+        });
         availableShifts = applySortOnShifts(response.availableShifts, filter);
       }
       dispatch({
@@ -484,9 +559,10 @@ export const onApplyFilter = (payload: IPayload) => async (
           shiftsEmptyOnFilter: isEmpty(availableShifts.shifts) ? true : false
         }
       });
+      log("Updated shifts in state while applying filter");
       setLoading(false)(dispatch);
     } catch (ex) {
-      console.log(ex);
+      log("Error while applying filter", ex);
       setLoading(false)(dispatch);
       if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
         dispatch({
@@ -538,6 +614,9 @@ export const onResetFilters = (payload: IPayload) => async (
     }
   });
   payload.data.output["job-opportunities"] = filterData;
+  log("Reset filter initiated", {
+    filter: JSON.stringify(filterData)
+  });
 
   onApplyFilter(payload)(dispatch);
 };
