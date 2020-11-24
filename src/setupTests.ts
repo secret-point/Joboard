@@ -24,7 +24,9 @@ window.MetricsPublisher = {
   ) => {
     return {
       publishCounter: (name: string, value: number) => {},
-      publishTimer: (name: string, value: number) => {}
+      publishTimer: (name: string, value: number) => {},
+      publishCounterMonitor: (name: string, value: number) => {},
+      publishTimerMonitor: (name: string, value: number) => {}
     };
   }
 };
