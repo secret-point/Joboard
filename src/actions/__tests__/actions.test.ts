@@ -7,7 +7,6 @@ import { createHashHistory } from "history";
 import { routerMiddleware } from "react-router-redux";
 import PageService from "../../services/page-service";
 import * as test_data from "../../../tests/test-data";
-import { when } from 'ramda';
 
 jest.mock("../../services/page-service");
 jest.mock("../workflow-actions.ts");

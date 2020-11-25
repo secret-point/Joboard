@@ -14,17 +14,27 @@ export const TEST_STEP_ID = "job-opportunities";
 
 
 
+export const TEST_CANDIDATE: any = {
+  candidateId: TEST_CANDIDATE_ID
+}
+export const TEST_APPLICATION: any = {
+  applicationId: TEST_APPLICATION_ID
+}
+
 export const TEST_APPLICATION_DATA: any = {
     requisition: {},
     application: {},
     output: {},
     candidate: {},
     showPreviousNames: "",
-    selectedShift: {},
+    selectedShift: {
+        requisitionId: TEST_REQUISITION_ID
+    },
     loadingShifts: true,
     shiftsEmptyOnFilter: false,
     shiftPageFactor: 0
 }
+
 
 export const TEST_PAGE: any = {
   id: TEST_PAGE_ID,
@@ -48,7 +58,7 @@ export const TEST_APP_CONFIG: any = {
   defaultDaysHoursFilter: [],
   defaultAvailableFilter: []
 }
-export const TEST_PAYLOAD = {
+export const TEST_PAYLOAD: any = {
   output: {}, 
   data: TEST_APPLICATION_DATA,
   currentPage: TEST_PAGE,
@@ -70,4 +80,17 @@ export const TEST_PAYLOAD = {
   history: createHashHistory(),
   activeStepIndex: 0,
   isContentContainsSteps: false
+}
+
+export const EXCEPTION_MESSAGE = "EXCEPTION_MESSAGE";
+
+//util functions
+export const hasAction = (actions: any[], actionToCheck: string) => {
+  let result = false;
+  actions.forEach(element => {
+    if (element.type === actionToCheck) {
+      result = true;
+    }
+  });
+  return result;
 }
