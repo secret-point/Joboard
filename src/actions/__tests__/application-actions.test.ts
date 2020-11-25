@@ -26,10 +26,17 @@ import {sendDataLayerAdobeAnalytics} from "../../actions/adobe-actions";
 import CandidateApplicationService from "../../services/candidate-application-service";
 import {onUpdateError} from "../error-actions";
 import cloneDeep from "lodash/cloneDeep";
-import { catch } from 'dom-loaded';
 
 jest.mock("../../actions/adobe-actions");
-jest.mock("../../helpers/adobe-helper");
+jest.mock("../../helpers/adobe-helper", () => ({
+  getDataForEventMetrics: jest.fn((eventData: any) => {
+    return {
+      shift: {
+        position: 0
+      }
+    }
+  })
+}));
 jest.mock("../requisition-actions", () => ({
   onGetRequisitionHeaderInfo: jest.fn((payload: IPayload) => async (dispatch: Function) => {}),
   onSelectedRequisition: jest.fn((requisitionId: string) => async (dispatch: Function) => {}),
@@ -73,13 +80,25 @@ describe("Test for Application Actions", () => {
           }
           return {...TEST_APPLICATION}
         },
-        createApplication:(payload: any) => {
+        createApplication: (payload: any) => {
           if (withException) {
             throw new Error(message || EXCEPTION_MESSAGE);
           }
           return {...TEST_APPLICATION}
         },
-        updateApplication:(payload: any) => {
+        updateApplication: (payload: any) => {
+          if (withException) {
+            throw new Error(message || EXCEPTION_MESSAGE);
+          }
+          return {...TEST_APPLICATION}
+        },
+        terminateApplication: (applicationId: string, state: string) => {
+          if (withException) {
+            throw new Error(message || EXCEPTION_MESSAGE);
+          }
+          return {...TEST_APPLICATION}
+        },
+        updateWOTCStatus: (applicationId: string, candidateId: string, status: string) => {
           if (withException) {
             throw new Error(message || EXCEPTION_MESSAGE);
           }
@@ -498,5 +517,200 @@ describe("Test for Application Actions", () => {
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(completeTask).toBeCalledTimes(0);
   });
+
+  test("Test onSelectedShifts with goto option should dispatch SET_REQUISITION_SHIFT action", async () => {
+    const store = getStore();
+
+    payload.options = {
+      goTo: "go-to-step"
+    }
+
+    await actions.onSelectedShifts(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(2);
+    expect(getDataForEventMetrics).toBeCalled();
+    expect(getDataForEventMetrics).toBeCalledWith("shift-selection");
+    expect(sendDataLayerAdobeAnalytics).toBeCalled();
+    expect(hasAction(store.getActions(), actions.SET_SELECTED_SHIFT)).toBe(true);
+  });
+
+  test("Test onSelectedShifts without goto option should dispatch SET_REQUISITION_SHIFT action", async () => {
+    const store = getStore();
+
+    await actions.onSelectedShifts(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(1);
+    expect(getDataForEventMetrics).toBeCalled();
+    expect(getDataForEventMetrics).toBeCalledWith("shift-selection");
+    expect(sendDataLayerAdobeAnalytics).toBeCalled();
+    expect(hasAction(store.getActions(), actions.SET_SELECTED_SHIFT)).toBe(true);
+  });
+
+  test("Test onUpdateShiftSelection with goto option should update selected shift", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    payload.options = {
+      goTo: "go-to-step"
+    }
+
+    await actions.onUpdateShiftSelection(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(4);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+    expect(completeTask).toBeCalledTimes(1);
+  });
+
+  test("Test onUpdateShiftSelection without goto option should update selected shift", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+
+    await actions.onUpdateShiftSelection(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+    expect(completeTask).toBeCalledTimes(1);
+    expect(completeTask).toBeCalledWith(payload.data.application, "job-opportunities");
+  });
+
+  test("Test onUpdateShiftSelection with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+
+    payload.urlParams.applicationId = null;
+
+    await actions.onUpdateShiftSelection(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test onUpdateShiftSelection with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+
+    await actions.onUpdateShiftSelection(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
+    expect(onUpdateError).toBeCalledWith("Failed to update application");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test OnTerminatingApplication should dispatch UPDATE_APPLICATION action", async() => {
+    const store = getStore();
+    mockCandidateAppService();
+
+    await actions.onTerminateApplication(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+  });
+
+  test("Test OnTerminatingApplication with empty applicationId in payload should catch exception", async() => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+    payload.urlParams.applicationId = null;
+
+    await actions.onTerminateApplication(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test OnTerminatingApplication with exception in API call should catch exception", async() => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    await actions.onTerminateApplication(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
+    expect(onUpdateError).toBeCalledWith("Failed to update application");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test onUpdateWotcStatus should dispatch UPDATE_APPLICATION action", async() => {
+    const store = getStore();
+    mockCandidateAppService();
+
+    await actions.onUpdateWotcStatus(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(4);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+    expect(hasAction(store.getActions(), actions.ON_GET_CANDIDATE)).toBe(true);
+  });
+
+  test("Test onUpdateWotcStatus with empty applicationId in payload should catch exception", async() => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+    payload.urlParams.applicationId = null;
+
+    await actions.onUpdateWotcStatus(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test onUpdateWotcStatus with exception in API call should catch exception", async() => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    await actions.onUpdateWotcStatus(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
+    expect(onUpdateError).toBeCalledWith("Failed to update application");
+    expect(completeTask).toBeCalledTimes(0);
+  });
+
+  test("Test onShowPreviousName", async () => {
+    const store = getStore();
+
+    await actions.onShowPreviousName(payload)(store.dispatch);
+
+    expect(store.getActions()[0].type).toBe(actions.SHOW_PREVIOUS_NAMES);
+    expect(store.getActions()[0].payload).toBe("YES");
+  })
 
 });

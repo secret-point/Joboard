@@ -11,6 +11,7 @@ export const TEST_STAGE = "";
 export const TEST_URL = "https://test-me.url.fake/{applicationId}/{requisitionId}";
 export const TEST_KEY = "test-key";
 export const TEST_STEP_ID = "job-opportunities";
+export const TEST_HCR_ID = "test-hcr-id";
 
 
 
@@ -22,7 +23,15 @@ export const TEST_APPLICATION: any = {
 }
 
 export const TEST_APPLICATION_DATA: any = {
-    requisition: {},
+    requisition: {
+      availableShifts:{
+        shifts: [
+          {
+            headCountRequestId: TEST_HCR_ID
+          }
+        ]
+      }
+    },
     application: {},
     output: {},
     candidate: {},
@@ -75,7 +84,9 @@ export const TEST_PAYLOAD: any = {
   pageId: TEST_PAGE_ID,
   stepId: TEST_STEP_ID,
   stepsLength: 1,
-  selectedShift: {},
+  selectedShift: {
+    headCountRequestId: TEST_HCR_ID
+  },
   selectedRequisitionId: "",
   history: createHashHistory(),
   activeStepIndex: 0,
