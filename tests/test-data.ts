@@ -1,4 +1,3 @@
-import { ApplicationData, Page } from './../src/@types/IPayload';
 import { History, createHashHistory } from "history";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -94,6 +93,24 @@ export const TEST_PAYLOAD: any = {
 }
 
 export const EXCEPTION_MESSAGE = "EXCEPTION_MESSAGE";
+
+export const TEST_REDUX_STORE: any = {
+  app: {
+    data: {
+      requisition: {
+        requisitionId: TEST_REQUISITION_ID
+      },
+      application: {
+        applicationId: TEST_APPLICATION_ID,
+        parentRequisitionId: TEST_REQUISITION_ID
+      }
+    }
+  }
+}
+
+export const TEST_WORKFLOW_DATA: any = {
+  stepName: TEST_STEP_ID
+}
 
 //util functions
 export const hasAction = (actions: any[], actionToCheck: string) => {

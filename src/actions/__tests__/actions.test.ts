@@ -45,8 +45,8 @@ describe("Test for Actions", () => {
     );
     const store = getStore();
     await actions.onUpdatePageId("assessment")(store.dispatch);
-    expect(store.getActions()[0].type).toBe(actions.ON_UPDATE_PAGE_ID);
-    expect(store.getActions()[0].payload.updatedPageId).toEqual("assessment");
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("assessment");
   });
 
   test("Test on Update Page Id is pre-consent", async () => {
@@ -61,8 +61,8 @@ describe("Test for Actions", () => {
     );
     const store = getStore();
     await actions.onUpdatePageId("pre-consent")(store.dispatch);
-    expect(store.getActions()[0].type).toBe(actions.ON_UPDATE_PAGE_ID);
-    expect(store.getActions()[0].payload.updatedPageId).toEqual("pre-consent");
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("pre-consent");
   });
 
   test("Test goto action without params", async () => {
@@ -157,8 +157,8 @@ describe("Test for Actions", () => {
 
     await actions.onGoToAction(payload)(store.dispatch);
 
-    expect(store.getActions()[0].type).toBe(actions.ON_UPDATE_PAGE_ID);
-    expect(store.getActions()[0].payload.updatedPageId).toEqual("contingent-offer");
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("contingent-offer");
     expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
   });
 
@@ -168,8 +168,8 @@ describe("Test for Actions", () => {
 
     await actions.onGoBack(payload)(store.dispatch);
 
-    expect(store.getActions()[0].type).toBe(actions.ON_UPDATE_PAGE_ID);
-    expect(store.getActions()[0].payload.updatedPageId).toEqual(test_data.TEST_PAGE_ID);
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual(test_data.TEST_PAGE_ID);
     expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
   });
 
@@ -200,7 +200,7 @@ describe("Test for Actions", () => {
     await actions.onCompleteTask(payload)(store.dispatch);
     completeMethod_methodCalled++;
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(test_data.TEST_APPLICATION_DATA.application, "on-complete-task");
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null);
   });
 
   test("Test OnBackButtonCompleteTask Action with step name", async () => {
@@ -216,7 +216,7 @@ describe("Test for Actions", () => {
     expect(store.getActions()[0].type).toBe(actions.RESET_PAGE_OUTPUT);
 
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(test_data.TEST_APPLICATION_DATA.application, "job-opportunities", true);
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, true, "job-opportunities");
   });
 
   test("Test OnBackButtonCompleteTask Action without step name", async () => {
