@@ -179,6 +179,8 @@ export interface Shifts {
   shiftCode: string;
   altShiftCode: string;
   locationPostalCode: string;
+  locationState: string;
+  country: string;
 }
 
 export interface HoursPerWeek {
