@@ -1,3 +1,4 @@
+import { filter } from 'lodash';
 import { History, createHashHistory } from "history";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -64,7 +65,15 @@ export const TEST_APP_CONFIG: any = {
   stepFunctionEndpoint: TEST_URL,
   ASHChecklistURL: TEST_URL,
   defaultDaysHoursFilter: [],
-  defaultAvailableFilter: []
+  defaultAvailableFilter: {
+    filter: {
+      range: {
+        HOURS_PER_WEEK: {
+          maximumValue: 30
+        }
+      }
+    }
+  }
 }
 export const TEST_PAYLOAD: any = {
   output: {}, 
