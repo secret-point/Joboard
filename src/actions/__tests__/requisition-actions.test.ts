@@ -1076,8 +1076,6 @@ describe("Test for Actions", () => {
 
     requisitionActions.onResetFilters(payload)(store.dispatch);
 
-    console.log("------------------------");
-    console.log(store.getActions());
     expect(store.getActions().length).toBe(4);
     expect(hasAction(store.getActions(), requisitionActions.RESET_FILTERS)).toBe(true);
     expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
