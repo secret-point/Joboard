@@ -4,6 +4,7 @@ import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
 import { setLoading, onUpdatePageId } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
+import findIndex from "lodash/findIndex";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
 import CandidateApplicationService from "../services/candidate-application-service";
@@ -14,9 +15,11 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
+import filter from "lodash/filter";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
+export const UPDATE_SELECTED_JOB_ROLE = "UPDATE_SELECTED_JOB_ROLE";
 export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
 export const UPDATE_JOB_DESCRIPTION = "UPDATE_JOB_DESCRIPTION";
 export const UPDATE_SHIFTS = "UPDATE_SHIFTS";
@@ -67,7 +70,8 @@ export const onGetChildRequisitions = (payload: IPayload) => async (
     try {
       log(`Getting child requisitions for ${requisitionId}`);
       const response = await new RequisitionService().getChildRequisitions(
-        requisitionId
+        requisitionId,
+        payload.options.getAllChildRequisitions
       );
       dispatch({
         type: UPDATE_REQUISITION,
@@ -634,4 +638,43 @@ export const onResetFilters = (payload: IPayload) => async (
   });
 
   onApplyFilter(payload)(dispatch);
+};
+
+export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
+  const selectedIndex = payload.selectedRequisitionIndex;
+  if (selectedIndex > -1) {
+    const childRequisitions = [...payload.data.requisition.childRequisitions];
+    const selectedRequisition = childRequisitions[selectedIndex];
+    selectedRequisition.selected = selectedRequisition.selected ? false : true;
+    childRequisitions[selectedIndex] = selectedRequisition;
+    // construct locations
+    const locationDescription = selectedRequisition.locationDescription;
+    const searchIndex = locationDescription.lastIndexOf("(");
+    const selectedLocations = payload.data.requisition.selectedLocations || [];
+    const location = locationDescription.substring(
+      searchIndex + 1,
+      locationDescription.length - 1
+    );
+    const selectedLocationIndex = findIndex(selectedLocations, {
+      label: location
+    });
+    if (selectedLocationIndex === -1) {
+      selectedLocations.push({
+        label: location,
+        checked: false,
+        value: location
+      });
+    } else {
+      selectedLocations.splice(selectedLocationIndex, 1);
+    }
+
+    dispatch({
+      type: UPDATE_SELECTED_JOB_ROLE,
+      payload: {
+        selectedIndex,
+        selectedRequisition,
+        selectedLocations
+      }
+    });
+  }
 };

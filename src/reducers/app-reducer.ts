@@ -23,7 +23,8 @@ import {
   SELECTED_REQUISITION,
   SET_LOADING_SHIFTS,
   MERGE_SHIFTS,
-  SET_PAGE_FACTOR
+  SET_PAGE_FACTOR,
+  UPDATE_SELECTED_JOB_ROLE
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -212,6 +213,23 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           requisition: {
             $set: updatedRequisition
+          }
+        }
+      });
+    }
+
+    case UPDATE_SELECTED_JOB_ROLE: {
+      return updateState(state, {
+        data: {
+          requisition: {
+            childRequisitions: {
+              [payload.selectedIndex]: {
+                $set: payload.selectedRequisition
+              }
+            },
+            selectedLocations: {
+              $set: payload.selectedLocations
+            }
           }
         }
       });

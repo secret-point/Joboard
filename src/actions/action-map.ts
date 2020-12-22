@@ -24,7 +24,8 @@ import {
   onGetCandidate,
   onTerminateApplication,
   onUpdateWotcStatus,
-  onShowPreviousName
+  onShowPreviousName,
+  onSaveShiftPreferences
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -35,11 +36,13 @@ import {
   onGoToDescription,
   onApplyFilter,
   onResetFilters,
-  onShiftsIncrementalLoad
+  onShiftsIncrementalLoad,
+  selectJobRole
 } from "./requisition-actions";
 
 const actionMap: any = {
   ON_VALUE_CHANGE: onUpdateChange,
+  ON_OUTPUT_VALUE_CHANGE: onUpdateChange,
   ON_REDIRECT: onRedirect,
   START_APPLICATION: onStartApplication,
   GET_REQUISITION_HEADER_INFO: onGetRequisitionHeaderInfo,
@@ -72,7 +75,9 @@ const actionMap: any = {
   ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask,
   SHOW_PREVIOUS_NAMES: onShowPreviousName,
   LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
-  REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist
+  REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
+  SELECT_JOB_ROLE: selectJobRole,
+  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences
 };
 
 export default actionMap;

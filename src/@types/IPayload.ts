@@ -21,12 +21,19 @@ export interface ConsentInfo {
   requisitionType: string;
 }
 
+export interface SelectedLocations {
+  label: string;
+  checked: boolean;
+  value: string;
+}
+
 export interface Requisition {
   consentInfo: ConsentInfo;
   childRequisitions: any[];
   selectedChildRequisition: any;
   jobDescription: any;
   availableShifts: AvailableShifts;
+  selectedLocations: SelectedLocations[];
 }
 
 export interface ContingentOffer {
@@ -146,6 +153,7 @@ export default interface Payload {
   stepsLength: number;
   selectedShift: any;
   selectedRequisitionId: string;
+  selectedRequisitionIndex: number;
   history: History;
 }
 export interface AvailableShifts {

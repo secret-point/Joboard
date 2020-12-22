@@ -510,3 +510,61 @@ export const onShowPreviousName = (payload: IPayload) => (
     payload: "YES"
   });
 };
+
+export const onSaveShiftPreferences = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  try {
+    onRemoveError()(dispatch);
+    setLoading(true)(dispatch);
+    const { output, requisition } = payload.data;
+    const { urlParams } = payload;
+    const selectedRequisitions = requisition.childRequisitions.reduce(
+      (previousValue, currentValue) => {
+        if (currentValue.selected) {
+          previousValue.push(currentValue.requisitionId);
+        }
+        return previousValue;
+      },
+      []
+    );
+    const shiftPreference: any = {};
+    shiftPreference.jobRoles = selectedRequisitions;
+
+    const selectedData = output[payload.pageId];
+    if (selectedData) {
+      for (let key in selectedData) {
+        let data = selectedData[key] as any[];
+        data = data.reduce((previousValue, currentValue) => {
+          if (currentValue.checked) {
+            previousValue.push(currentValue.value);
+          }
+          return previousValue;
+        }, []);
+        shiftPreference[key] = data;
+      }
+    }
+
+    shiftPreference.candidateTimezone = payload.data.candidate.timezone;
+
+    const response = await new CandidateApplicationService().updateApplication({
+      type: "job-preferences",
+      applicationId: urlParams.applicationId,
+      payload: {
+        shiftPreference
+      }
+    });
+    log("save selected shift preferences", {
+      shiftPreference,
+      saveResponse: response.data
+    });
+    onUpdatePageId("job-preferences-thank-you")(dispatch);
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    log("Error while saving shift preferences", ex);
+    onUpdateError(
+      ex?.response?.data?.errorMessage || "Unable to save shift preferences"
+    )(dispatch);
+  }
+};

@@ -188,7 +188,8 @@ const Renderer: React.FC<IRendererProps> = ({
     output,
     getValueFromServiceData,
     getInitialValidations,
-    getValueFromStoreOutput
+    getValueFromStoreOutput,
+    getValueFromDefaultValue
   ]);
 
   const commonProps = {

@@ -46,6 +46,7 @@
     "aws-amplify": "^2.3.0",
     "axios": "^0.19.2",
     "caniuse-lite": "^1.0.30001090",
+    "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "create-emotion-styled": "^9.2.8",
     "dom-loaded": "^2.0.0",
@@ -104,5 +105,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "@types/classnames": "^2.2.10"
+  }
 }

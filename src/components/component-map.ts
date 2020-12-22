@@ -6,6 +6,7 @@ import {
   PhoneNumber,
   RedirectButton,
   Checkbox,
+  CheckboxList,
   DisqualifiedQuestions,
   Text,
   PageHeader,
@@ -40,6 +41,7 @@ import {
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
 import FlyoutContainer from "../containers/flyout";
+import StickyContentContainer from "../containers/sticky-content";
 import ModalContainer from "../containers/modal/modal-container";
 import ImageContainer from "./image";
 import { Col, Row, Spacer, View } from "@amzn/stencil-react-components/layout";
@@ -53,6 +55,7 @@ const ComponentMap: any = {
   PhoneNumber,
   RedirectButton,
   Checkbox,
+  CheckboxList,
   DisqualifiedQuestions,
   Text,
   PageHeader,
@@ -92,7 +95,8 @@ const ComponentMap: any = {
   AddressComponent,
   TextAreaWithLength,
   Modal: ModalContainer,
-  Video
+  Video,
+  StickyContent: StickyContentContainer
 };
 
 export default ComponentMap;

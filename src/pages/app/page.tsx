@@ -8,6 +8,7 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import ContentContainer from "../../containers/content/content-container";
 import FooterContainer from "../../containers/footer/footer-container";
 import InitialLoaderContainer from "../../containers/initial-loader";
+import StickyContentContainer from "../../containers/sticky-content";
 import isEmpty from "lodash/isEmpty";
 
 type IConsentPageProps = {
@@ -39,6 +40,9 @@ const Page: React.FC<IConsentPageProps> = ({
           <InitialLoaderContainer />
           <HeaderContainer />
           <ContentContainer />
+          {!isEmpty(pageConfig?.stickyContent?.components) && (
+            <StickyContentContainer />
+          )}
           {!isEmpty(pageConfig?.footer?.components) && (
             <Col backgroundColor="#EEF5F6" gridGap="m" padding="1.5rem">
               <FooterContainer />

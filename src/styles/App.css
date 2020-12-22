@@ -103,3 +103,19 @@
   display: flex;
   flex-direction: column;
 }
+
+.sticky-content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  background-color: #fff;
+  border-top: 1px solid #bdd3d5;
+}
+
+.sticky-content.bottom {
+  bottom: 0;
+}
+
+.sticky-content.top {
+  bottom: 0;
+}

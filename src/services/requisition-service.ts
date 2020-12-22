@@ -27,10 +27,15 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async getChildRequisitions(requisitionId: string) {
-    const response = await this.axiosInstance.get(
-      `/child-requisitions/${requisitionId}`
-    );
+  async getChildRequisitions(
+    requisitionId: string,
+    getAllRequisitions?: boolean
+  ) {
+    let url = `/child-requisitions/${requisitionId}`;
+    if (getAllRequisitions) {
+      url = `${url}/${getAllRequisitions}`;
+    }
+    const response = await this.axiosInstance.get(url);
 
     return response.data;
   }
