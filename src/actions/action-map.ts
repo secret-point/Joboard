@@ -5,6 +5,7 @@ import {
   onGoToAction,
   onResetIsUpdateActionExecuted,
   onGoBack,
+  onGoToNhePreferences,
   onGoToDashboard,
   onCompleteTask,
   onFilterChange,
@@ -30,6 +31,7 @@ import {
 import {
   onGetRequisitionHeaderInfo,
   onGetNHETimeSlots,
+  onGetPossibleNHEDates,
   onGetAllAvailableShifts,
   onGetChildRequisitions,
   onGetJobDescription,
@@ -53,6 +55,7 @@ const actionMap: any = {
   CREATE_APPLICATION: createApplication,
   UPDATE_APPLICATION: updateApplication,
   GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
+  GET_NHE_PREFERENCES_DATES: onGetPossibleNHEDates,
   GET_CHILD_REQUISITIONS: onGetChildRequisitions,
   GET_ALL_AVAILABLE_SHIFTS: onGetAllAvailableShifts,
   ON_GO_TO: onGoToAction,
@@ -77,7 +80,8 @@ const actionMap: any = {
   LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
   REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
   SELECT_JOB_ROLE: selectJobRole,
-  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences
+  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,
+  GO_TO_NHE_PREFERENCES: onGoToNhePreferences
 };
 
 export default actionMap;

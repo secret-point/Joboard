@@ -269,3 +269,7 @@ export const onShowNavbar = () => (dispatch: Function) => {
     }
   });
 };
+
+export const onGoToNhePreferences = () => {
+  return onUpdatePageId("nhe-preferences");
+};

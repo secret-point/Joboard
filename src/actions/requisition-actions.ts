@@ -677,3 +677,13 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
     });
   }
 };
+
+export const onGetPossibleNHEDates = () => async (dispatch: Function) => {
+  const response = await new RequisitionService().getPossibleNHEDates();
+  dispatch({
+    type: UPDATE_REQUISITION,
+    payload: {
+      possibleNHEDates: response.data
+    }
+  });
+}
