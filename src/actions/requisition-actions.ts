@@ -17,6 +17,7 @@ import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
+export const GET_POSSIBLE_NHE_DATES = "GET_POSSIBLE_NHE_DATES";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
 export const UPDATE_SELECTED_JOB_ROLE = "UPDATE_SELECTED_JOB_ROLE";
 export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
@@ -679,11 +680,12 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
 };
 
 export const onGetPossibleNHEDates = () => async (dispatch: Function) => {
-  const response = await new RequisitionService().getPossibleNHEDates();
+  const response = await new RequisitionService().getPossibleNHEDates("wat");
+
   dispatch({
     type: UPDATE_REQUISITION,
     payload: {
-      possibleNHEDates: response.data
+      possibleNHEDates: response
     }
   });
 }
