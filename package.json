@@ -82,7 +82,7 @@
     "test:disabled": "react-app-rewired test --coverage --watchAll=false",
     "test": "echo 'ignored for now'",
     "test:watch": "react-app-rewired test --colors --coverage --watchAll=true",
-    "test:file": "react-app-rewired test ./src/actions/__tests__/requisition-actions.test.ts --colors --coverage",
+    "test:file": "react-app-rewired test ./src/helpers/__tests__/utils.test.ts --colors --coverage",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.tsx'",
     "clean": "rm -rf build node_modules lib",

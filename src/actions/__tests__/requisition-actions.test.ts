@@ -1,4 +1,4 @@
-import { TEST_PAYLOAD, hasAction, TEST_REQUISITION_ID, TEST_HCR_ID, TEST_APPLICATION, TEST_APPLICATION_ID } from './../../../tests/test-data';
+import { TEST_PAYLOAD, hasAction, TEST_REQUISITION_ID, TEST_HCR_ID, TEST_APPLICATION_ID } from './../../../tests/test-data';
 import {ON_RESPONSE_ERROR} from '../error-actions';
 import * as requisitionActions from "../requisition-actions";
 import configureStore from "redux-mock-store";
@@ -8,7 +8,6 @@ import { routerMiddleware } from "react-router-redux";
 import RequisitionService from "../../services/requisition-service";
 import cloneDeep from "lodash/cloneDeep";
 import CandidateApplicationService from '../../services/candidate-application-service';
-import { ON_UPDATE_PAGE_ID } from '../actions';
 
 jest.mock("axios");
 jest.mock("../../services/requisition-service");

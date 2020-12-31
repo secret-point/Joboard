@@ -32,7 +32,9 @@ export const TEST_APPLICATION_DATA: any = {
         ]
       }
     },
-    application: {},
+    application: {
+      applicationId: TEST_APPLICATION_ID
+    },
     output: {},
     candidate: {},
     showPreviousNames: "",
