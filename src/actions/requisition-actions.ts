@@ -679,8 +679,9 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
   }
 };
 
-export const onGetPossibleNHEDates = () => async (dispatch: Function) => {
-  const response = await new RequisitionService().getPossibleNHEDates("wat");
+export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Function) => {
+  const hcrId = payload.data.application.jobSelected.headCountRequestId;
+  const response = await new RequisitionService().getPossibleNHEDates(hcrId);
 
   dispatch({
     type: UPDATE_REQUISITION,
