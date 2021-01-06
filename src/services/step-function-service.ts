@@ -11,6 +11,7 @@ import {
 } from "../actions/workflow-actions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
+import ConfigService from "./config-service";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -38,26 +39,33 @@ export default class StepFunctionService {
       this.candidateId = candidateId;
       this.appConfig = appConfig;
       this.requisitionId = requisitionId;
-      let websocketURL = appConfig.stepFunctionEndpoint as string;
-      const token = getAccessToken();
-      websocketURL = websocketURL
-        .replace("{applicationId}", this.applicationId)
-        .replace("{candidateId}", this.candidateId);
-      if (token) {
-        websocketURL = `${websocketURL}&authToken=${encodeURIComponent(token)}`;
-      }
-      this.stepFunctionEndpoint = websocketURL;
-      this.websocket = new WebSocket(this.stepFunctionEndpoint);
-      this.websocket.onopen = this.connect;
-      this.websocket.onclose = this.close;
-      this.websocket.onmessage = this.message;
-      this.websocket.onerror = this.error;
+      new ConfigService().getStepFunctionConfig().then(data => {
+        let websocketURL = data.stepFunctionEndpoint as string;
+        websocketURL = websocketURL
+          .replace("{applicationId}", applicationId)
+          .replace("{candidateId}", candidateId);
+        if (!websocketURL.includes("authToken")) {
+          websocketURL = appConfig.stepFunctionEndpoint;
+        }
+        this.stepFunctionEndpoint = websocketURL;
+        this.websocket = new WebSocket(this.stepFunctionEndpoint);
+        this.websocket.onopen = this.connect;
+        this.websocket.onclose = this.close;
+        this.websocket.onmessage = this.message;
+        this.websocket.onerror = this.error;
 
-      this.interval = setInterval(
-        sendHeartBeatWorkflow,
-        this.SECONDS * this.MINUTES
-      );
+        this.interval = setInterval(
+          sendHeartBeatWorkflow,
+          this.SECONDS * this.MINUTES
+        );
+      });
     }
+  }
+
+  getConfig() {
+    return new ConfigService()
+      .getStepFunctionConfig()
+      .then(data => Promise.resolve(data));
   }
 
   static load(

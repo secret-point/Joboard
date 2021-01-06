@@ -21,4 +21,9 @@ export default class ConfigService {
     );
     return response.data;
   }
+
+  async getStepFunctionConfig(): Promise<any> {
+    const response = await this.axiosInstance.get("/step-function-config");
+    return response.data;
+  }
 }

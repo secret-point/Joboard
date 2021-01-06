@@ -17,9 +17,9 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@katal/metrics-sellercentral": "*",
     "@katal/logger": "*",
     "@katal/metrics": "*",
+    "@katal/metrics-sellercentral": "*",
     "@katal/metricsDriverSushi": "*",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -55,6 +55,7 @@
     "history": "^4.10.1",
     "immutability-helper": "^3.1.1",
     "jest-websocket-mock": "^2.1.0",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "moment": "^2.27.0",
     "prettier": "1.19.1",
@@ -106,6 +107,7 @@
   },
   "proxy": "http://localhost:8080",
   "devDependencies": {
-    "@types/classnames": "^2.2.10"
+    "@types/classnames": "^2.2.10",
+    "@types/js-cookie": "^2.2.6"
   }
 }
