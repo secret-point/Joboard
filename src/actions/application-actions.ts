@@ -313,8 +313,10 @@ export const updateApplication = (payload: IPayload) => async (
           "disability-form"
         ];
         const bgcStatus = ["non-fcra", "fcra", "additional-bgc-info"];
+        const nheStatus = ["nhe", "nhe-preferences"];
         let stepName = bgcStatus.includes(type) ? "bgc" : type;
         stepName = sidStatus.includes(type) ? "self-identification" : stepName;
+        stepName = nheStatus.includes(type) ? "nhe" : stepName;
         log(
           `Complete task event initiated on action ${type} and current page is ${stepName}`
         );

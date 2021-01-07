@@ -22,6 +22,16 @@ export interface JobReferral {
   referralInfo: string;
 }
 
+export interface SimpleTimeInterval {
+  from: string;
+  to: string;
+}
+
+export interface NHEPreferences {
+  preferredNHEDates: string[];
+  preferredNHETimeIntervals: SimpleTimeInterval[];
+}
+
 export default interface ICandidateApplication {
   active: boolean;
   submitted: boolean;
@@ -39,6 +49,7 @@ export default interface ICandidateApplication {
   fcraQuestions: any;
   nonFcraQuestions: any;
   nheAppointment: any;
+  nhePreference: NHEPreferences;
   applicationSignature: any;
   firstAvailableStartDate: number;
   appointmentCompleted: boolean;

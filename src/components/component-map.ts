@@ -36,7 +36,9 @@ import {
   DaysHoursFilter,
   AddressComponent,
   TextAreaWithLength,
-  Video
+  Video,
+  TimeInterval,
+  TimeIntervalList
 } from "@amzn/hvh-candidate-application-ui-components/lib";
 import PanelContainer from "../containers/panel/panel-container";
 import StepsContainer from "../containers/steps-content-renderer/index";
@@ -96,6 +98,8 @@ const ComponentMap: any = {
   TextAreaWithLength,
   Modal: ModalContainer,
   Video,
+  TimeInterval,
+  TimeIntervalList,
   StickyContent: StickyContentContainer
 };
 
