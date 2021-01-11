@@ -16,7 +16,6 @@ import { IAction } from "../@types/IActionType";
 import updateState from "immutability-helper";
 import {
   GET_REQUISITION_HEADER_INFO,
-  GET_POSSIBLE_NHE_DATES,
   UPDATE_REQUISITION,
   UPDATE_SHIFTS,
   RESET_FILTERS,
@@ -196,18 +195,6 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case GET_REQUISITION_HEADER_INFO: {
-      return updateState(state, {
-        data: {
-          requisition: {
-            $merge: {
-              consentInfo: payload
-            }
-          }
-        }
-      });
-    }
-
-    case GET_POSSIBLE_NHE_DATES: {
       return updateState(state, {
         data: {
           requisition: {

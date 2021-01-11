@@ -15,9 +15,9 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
+import { CheckboxItem } from "@amzn/hvh-candidate-application-ui-components/lib/types/ICheckboxProps";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
-export const GET_POSSIBLE_NHE_DATES = "GET_POSSIBLE_NHE_DATES";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
 export const UPDATE_SELECTED_JOB_ROLE = "UPDATE_SELECTED_JOB_ROLE";
 export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
@@ -683,10 +683,14 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Fun
   const hcrId = payload.data.application.jobSelected.headCountRequestId;
   const response = await new RequisitionService().getPossibleNHEDates(hcrId);
 
-  dispatch({
-    type: UPDATE_REQUISITION,
-    payload: {
-      possibleNHEDates: response
-    }
-  });
+  try {
+    dispatch({
+      type: UPDATE_REQUISITION,
+      payload: {
+        possibleNHEDates: response
+      }
+    });
+  } catch (e) {
+    log("Error while fetching possible NHE dates", e);
+  }
 }

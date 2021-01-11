@@ -22,14 +22,9 @@ export interface JobReferral {
   referralInfo: string;
 }
 
-export interface SimpleTimeInterval {
-  from: string;
-  to: string;
-}
-
 export interface NHEPreferences {
   preferredNHEDates: string[];
-  preferredNHETimeIntervals: SimpleTimeInterval[];
+  preferredNHETimeIntervals: string[];
 }
 
 export default interface ICandidateApplication {
