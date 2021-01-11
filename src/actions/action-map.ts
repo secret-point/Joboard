@@ -5,7 +5,6 @@ import {
   onGoToAction,
   onResetIsUpdateActionExecuted,
   onGoBack,
-  onGoToNhePreferences,
   onGoToDashboard,
   onCompleteTask,
   onFilterChange,
@@ -80,8 +79,7 @@ const actionMap: any = {
   LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
   REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
   SELECT_JOB_ROLE: selectJobRole,
-  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,
-  GO_TO_NHE_PREFERENCES: onGoToNhePreferences
+  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences
 };
 
 export default actionMap;
