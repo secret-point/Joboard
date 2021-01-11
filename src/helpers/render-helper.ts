@@ -81,6 +81,19 @@ export const validation = (
         }
       }
     }
+    case "AT_LEAST_ONE": {
+      if (value && value.length > 0) {
+        let oneChecked = false;
+        value.forEach((item: { checked: boolean }) => {
+          if (item.checked) {
+            oneChecked = true;
+          }
+        });
+        return oneChecked;
+      } else {
+        return false;
+      }
+    }
     default: {
       console.log("Missing validation type");
       return true;
