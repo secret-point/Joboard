@@ -97,7 +97,8 @@ describe("Test App Reducer", () => {
         questions: ["Sample Questions"],
         locationCode: "1198",
         requisitionStatus: "XX",
-        requisitionType: "YY"
+        requisitionType: "YY",
+        isCandidatePreferencesEnabled: true
       }
     });
 
@@ -106,6 +107,9 @@ describe("Test App Reducer", () => {
     expect(state.data.requisition.consentInfo.locationCode).toBe("1198");
     expect(state.data.requisition.consentInfo.requisitionStatus).toBe("XX");
     expect(state.data.requisition.consentInfo.requisitionType).toBe("YY");
+    expect(
+      state.data.requisition.consentInfo.isCandidatePreferencesEnabled
+    ).toBe(true);
 
     expect(state.data.requisition.consentInfo.questions.length).toBe(1);
     expect(state.data.requisition.consentInfo.questions[0]).toBe(
