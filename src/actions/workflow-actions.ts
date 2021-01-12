@@ -9,7 +9,7 @@ import moment from "moment";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../constants";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
-import { log, logError } from "../helpers/log-helper";
+import { log, logError, LoggerType } from "../helpers/log-helper";
 
 export const loadWorkflow = (
   requisitionId: string,

@@ -17,7 +17,7 @@ export enum BGCVendorType {
   ACCURATE = "ACCURATE"
 }
 
-export interface JobReferral {
+export interface JobReferral{
   hasReferral: boolean | string;
   referralInfo: string;
 }
@@ -92,8 +92,6 @@ export interface Candidate {
   isPhoneVerified: boolean;
   isSFUser: boolean;
   isAgreeToCommunication: boolean;
-  isDuplicateSSN: boolean;
-  socialSecurityNumber: string;
 }
 export interface Address {
   addressLine1: string;

@@ -15,6 +15,7 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
+import filter from "lodash/filter";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";

@@ -16,7 +16,6 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import findIndex from "lodash/findIndex";
 import { isNil } from "lodash";
 import { log, logError } from "../helpers/log-helper";
-import { NO_APPLICATION_ID, DUPLICATE_SSN } from "../constants/error-messages";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -29,6 +28,7 @@ export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
+export const NO_APPLICATION_ID = "NO_APPLICATION_ID";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -183,14 +183,6 @@ export const createApplication = (payload: IPayload) => async (
       log("started creating the application");
       const candidateApplicationService = new CandidateApplicationService();
       const candidateResponse = await candidateApplicationService.getCandidate();
-      if (
-        !isNil(candidateResponse) &&
-        candidateResponse.isDuplicateSSN === true
-      ) {
-        log("candidate has duplicate ssn, not able to create an application");
-        throw Error(DUPLICATE_SSN);
-      }
-
       const response = await candidateApplicationService.createApplication({
         candidateId: candidateResponse.candidateId,
         parentRequisitionId: payload.urlParams.requisitionId,
@@ -231,9 +223,6 @@ export const createApplication = (payload: IPayload) => async (
       if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
         window.localStorage.setItem("page", "already-applied");
         goTo("already-applied", urlParams)(dispatch);
-      } else if (ex?.message === DUPLICATE_SSN) {
-        window.localStorage.setItem("page", "duplicate-national-id");
-        goTo("duplicate-national-id", urlParams)(dispatch);
       } else {
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get application"
