@@ -20,7 +20,6 @@ import { isEmpty } from "lodash";
 import { objectToQuerystring } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
-import Cookie from "js-cookie";
 
 declare global {
   interface Window {
@@ -78,8 +77,8 @@ getInitialData()
       window.location.assign(appHashUrl);
     }
 
-    if (!isNil(token) && process.env.NODE_ENV === "development") {
-      Cookie.set("beta_access_token", token);
+    if (!isNil(token)) {
+      window.localStorage.setItem("accessToken", token);
     }
 
     if (!isNil(agency)) {
