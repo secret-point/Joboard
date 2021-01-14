@@ -4,11 +4,12 @@ import {
   MessageBanner,
   MessageBannerType
 } from "@amzn/stencil-react-components/message-banner";
+import { Markdown } from "@amzn/hvh-candidate-application-ui-components";
 import RendererContainer from "../../containers/renderer";
 
 export type IContentProps = {
   hasResponseError: boolean;
-  errorMessage?: string;
+  errorMessage: string;
   isContentContainsSteps: boolean;
   isContentContainsModals: boolean;
 };
@@ -27,7 +28,7 @@ const Content: React.FC<IContentProps> = ({
               aria-live="assertive"
               iconAltText="error"
             >
-              {errorMessage}
+              <Markdown text={errorMessage} />
             </MessageBanner>
           </Col>
         )}
