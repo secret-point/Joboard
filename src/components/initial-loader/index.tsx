@@ -20,7 +20,8 @@ const InitialLoad: React.FC<InitialLoadProps> = ({
     if (pageConfig.initialLoad) {
       const payload: any = {
         urlParams: match.params,
-        appConfig
+        appConfig,
+        data: {}
       };
       if (pageConfig.initialLoad.isDataRequired) {
         payload.data = data;
