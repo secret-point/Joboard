@@ -680,13 +680,15 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
 
 export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Function) => {
   const hcrId = payload.data.application.jobSelected.headCountRequestId;
-  const response = await new RequisitionService().getPossibleNHEDates(hcrId);
+  const applicationId = payload.data.application.applicationId;
+  const response = await new RequisitionService().getPossibleNHEDates(hcrId, applicationId);
 
   try {
     dispatch({
       type: UPDATE_REQUISITION,
       payload: {
-        possibleNHEDates: response
+        possibleNHEDates: response.dates,
+        possibleNHETimeSlots: response.timeslots
       }
     });
   } catch (e) {

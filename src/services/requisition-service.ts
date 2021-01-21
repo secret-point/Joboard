@@ -87,9 +87,9 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async getPossibleNHEDates(hcrId: string) {
+  async getPossibleNHEDates(applicationId: string, hcrId: string) {
     const response = await this.axiosInstance.get(
-      `/get-possible-nhe-dates/${hcrId}`
+      `/get-possible-nhe-dates/${applicationId}/${hcrId}`
     );
 
     return response.data.data;
