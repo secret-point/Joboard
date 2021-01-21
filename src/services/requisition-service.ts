@@ -92,7 +92,7 @@ export default class RequisitionService {
       `/get-possible-nhe-dates/${applicationId}/${hcrId}`
     );
 
-    return response.data.data;
+    return response.data;
   }
 
 }

@@ -24,7 +24,8 @@ import {
   SET_LOADING_SHIFTS,
   MERGE_SHIFTS,
   SET_PAGE_FACTOR,
-  UPDATE_SELECTED_JOB_ROLE
+  UPDATE_SELECTED_JOB_ROLE,
+  UPDATE_POSSIBLE_NHE_DATES
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -213,6 +214,21 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           requisition: {
             $set: updatedRequisition
+          }
+        }
+      });
+    }
+
+    case UPDATE_POSSIBLE_NHE_DATES: {
+      return updateState(state, {
+        data: {
+          requisition: {
+            possibleNHEDates: {
+              $set: payload.possibleNHEDates
+            },
+            possibleNHETimeSlots: {
+              $set: payload.possibleNHETimeSlots
+            }
           }
         }
       });

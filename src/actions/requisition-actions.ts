@@ -1,7 +1,7 @@
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
-import { setLoading, onUpdatePageId } from "./actions";
+import { setLoading, onUpdatePageId, onUpdateChange } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import findIndex from "lodash/findIndex";
@@ -15,6 +15,7 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
+import { cloneDeep } from "lodash";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -26,6 +27,7 @@ export const RESET_FILTERS = "RESET_FILTERS";
 export const SET_LOADING_SHIFTS = "SET_LOADING_SHIFTS";
 export const SET_PAGE_FACTOR = "SET_PAGE_FACTOR";
 export const MERGE_SHIFTS = "MERGE_SHIFTS";
+export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
 const SORT_KEY_DEFAULT = "FEATURED";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 
@@ -681,17 +683,43 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
 export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Function) => {
   const hcrId = payload.data.application.jobSelected.headCountRequestId;
   const applicationId = payload.data.application.applicationId;
-  const response = await new RequisitionService().getPossibleNHEDates(hcrId, applicationId);
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
 
   try {
+
     dispatch({
-      type: UPDATE_REQUISITION,
+      type: UPDATE_POSSIBLE_NHE_DATES,
+      payload: {
+        possibleNHEDates: [],
+        possibleNHETimeSlots: []
+      }
+    });
+
+    const response = await new RequisitionService().getPossibleNHEDates(applicationId, hcrId);
+
+    dispatch({
+      type: UPDATE_POSSIBLE_NHE_DATES,
       payload: {
         possibleNHEDates: response.dates,
         possibleNHETimeSlots: response.timeslots
       }
     });
+    const newPayload = cloneDeep(payload);
+    newPayload.keyName = "possibleNHEDates";
+    newPayload.value = response.dates;
+    onUpdateChange(newPayload)(dispatch);
+
+    newPayload.keyName = "possibleNHETimeSlots";
+    newPayload.value = response.timeslots;
+    onUpdateChange(newPayload)(dispatch);
+
   } catch (e) {
     log("Error while fetching possible NHE dates", e);
+    onUpdateError(
+      e?.response?.data?.errorMessage || "Unable to get possible NHE Dates"
+    )(dispatch);
+  } finally {
+    setLoading(false)(dispatch);
   }
 }

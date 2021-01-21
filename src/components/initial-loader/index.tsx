@@ -13,15 +13,18 @@ const InitialLoad: React.FC<InitialLoadProps> = ({
   pageConfig,
   match,
   onInitialLoadActions,
-  appConfig
+  appConfig,
+  data
 }) => {
   useEffect(() => {
     if (pageConfig.initialLoad) {
       const payload: any = {
         urlParams: match.params,
-        appConfig,
-        data: {}
+        appConfig
       };
+      if (pageConfig.initialLoad.isDataRequired) {
+        payload.data = data;
+      }
       onInitialLoadActions(pageConfig.initialLoad, payload);
     }
   }, [pageConfig, match, onInitialLoadActions, appConfig]);
