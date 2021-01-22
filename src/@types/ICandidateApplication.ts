@@ -25,6 +25,7 @@ export interface JobReferral {
 export interface NHEPreferences {
   preferredNHEDates: string[];
   preferredNHETimeIntervals: string[];
+  preferenceSelectedOn: string;
 }
 
 export default interface ICandidateApplication {
