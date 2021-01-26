@@ -15,7 +15,8 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
-import { cloneDeep } from "lodash";
+import cloneDeep from "lodash/cloneDeep";
+import removeFromObject from "lodash/remove";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -648,25 +649,17 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
     const selectedRequisition = childRequisitions[selectedIndex];
     selectedRequisition.selected = selectedRequisition.selected ? false : true;
     childRequisitions[selectedIndex] = selectedRequisition;
-    // construct locations
-    const locationDescription = selectedRequisition.locationDescription;
-    const searchIndex = locationDescription.lastIndexOf("(");
+    const { locationDescription } = selectedRequisition;
     const selectedLocations = payload.data.requisition.selectedLocations || [];
-    const location = locationDescription.substring(
-      searchIndex + 1,
-      locationDescription.length - 1
-    );
-    const selectedLocationIndex = findIndex(selectedLocations, {
-      label: location
-    });
-    if (selectedLocationIndex === -1) {
+    if (selectedRequisition.selected) {
       selectedLocations.push({
-        label: location,
+        id: selectedIndex,
+        label: locationDescription,
         checked: false,
-        value: location
+        value: locationDescription
       });
     } else {
-      selectedLocations.splice(selectedLocationIndex, 1);
+      removeFromObject(selectedLocations, { id: selectedIndex });
     }
 
     dispatch({
@@ -680,14 +673,15 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
   }
 };
 
-export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Function) => {
+export const onGetPossibleNHEDates = (payload: IPayload) => async (
+  dispatch: Function
+) => {
   const hcrId = payload.data.application.jobSelected.headCountRequestId;
   const applicationId = payload.data.application.applicationId;
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
 
   try {
-
     dispatch({
       type: UPDATE_POSSIBLE_NHE_DATES,
       payload: {
@@ -696,7 +690,10 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Fun
       }
     });
 
-    const response = await new RequisitionService().getPossibleNHEDates(applicationId, hcrId);
+    const response = await new RequisitionService().getPossibleNHEDates(
+      applicationId,
+      hcrId
+    );
 
     dispatch({
       type: UPDATE_POSSIBLE_NHE_DATES,
@@ -713,7 +710,6 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Fun
     newPayload.keyName = "possibleNHETimeSlots";
     newPayload.value = response.timeslots;
     onUpdateChange(newPayload)(dispatch);
-
   } catch (e) {
     log("Error while fetching possible NHE dates", e);
     onUpdateError(
@@ -722,4 +718,4 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (dispatch: Fun
   } finally {
     setLoading(false)(dispatch);
   }
-}
+};
