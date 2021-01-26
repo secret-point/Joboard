@@ -95,7 +95,7 @@ export interface Candidate {
   isAgreeToCommunication: boolean;
   isDuplicateSSN: boolean;
   socialSecurityNumber: string;
-  ssnEditCount: number;
+  numSSNEdits: number;
 }
 export interface Address {
   addressLine1: string;
