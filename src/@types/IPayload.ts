@@ -27,7 +27,6 @@ export interface SelectedLocations {
   label: string;
   checked: boolean;
   value: string;
-  id: number;
 }
 
 export interface Requisition {

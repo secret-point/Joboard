@@ -95,4 +95,14 @@ export default class RequisitionService {
     return response.data;
   }
 
+  async getShiftPreferenceDetails(
+    applicationId: string,
+    requisitionId: string
+  ) {
+    const response = await this.axiosInstance.get(
+      `/get-shift-preference-details/${applicationId}/${requisitionId}`
+    );
+
+    return response.data;
+  }
 }

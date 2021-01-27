@@ -38,7 +38,8 @@ import {
   onApplyFilter,
   onResetFilters,
   onShiftsIncrementalLoad,
-  selectJobRole
+  selectJobRole,
+  loadShiftPreferences
 } from "./requisition-actions";
 
 const actionMap: any = {
@@ -79,7 +80,8 @@ const actionMap: any = {
   LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
   REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
   SELECT_JOB_ROLE: selectJobRole,
-  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences
+  ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,
+  LOAD_SHIFT_PREFERENCES_DETAILS: loadShiftPreferences
 };
 
 export default actionMap;

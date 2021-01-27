@@ -25,7 +25,8 @@ import {
   MERGE_SHIFTS,
   SET_PAGE_FACTOR,
   UPDATE_SELECTED_JOB_ROLE,
-  UPDATE_POSSIBLE_NHE_DATES
+  UPDATE_POSSIBLE_NHE_DATES,
+  UPDATE_SHIFT_PREF_DETAILS
 } from "../actions/requisition-actions";
 import {
   GET_APPLICATION,
@@ -245,6 +246,24 @@ const AppReducer = (state = initialState, action: IAction) => {
             },
             selectedLocations: {
               $set: payload.selectedLocations
+            }
+          }
+        }
+      });
+    }
+
+    case UPDATE_SHIFT_PREF_DETAILS: {
+      return updateState(state, {
+        data: {
+          requisition: {
+            childRequisitions: {
+              $set: payload.childRequisitions
+            },
+            selectedLocations: {
+              $set: payload.selectedLocations
+            },
+            shiftPrefDetails: {
+              $set: payload.shiftPrefDetails
             }
           }
         }

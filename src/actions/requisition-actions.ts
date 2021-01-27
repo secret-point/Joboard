@@ -29,6 +29,7 @@ export const SET_LOADING_SHIFTS = "SET_LOADING_SHIFTS";
 export const SET_PAGE_FACTOR = "SET_PAGE_FACTOR";
 export const MERGE_SHIFTS = "MERGE_SHIFTS";
 export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
+export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 const SORT_KEY_DEFAULT = "FEATURED";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 
@@ -650,6 +651,48 @@ export const onResetFilters = (payload: IPayload) => async (
   onApplyFilter(payload)(dispatch);
 };
 
+export const loadShiftPreferences = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
+  const requisitionId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
+  if (requisitionId && applicationId) {
+    try {
+      log(
+        `Getting Shift Preferences for ${requisitionId} and ${applicationId}`
+      );
+      const response = await new RequisitionService().getShiftPreferenceDetails(
+        applicationId,
+        requisitionId
+      );
+      dispatch({
+        type: UPDATE_SHIFT_PREF_DETAILS,
+        payload: {
+          childRequisitions: response.childRequisitions,
+          selectedLocations: response.locations,
+          shiftPrefDetails: {
+            shiftTimeIntervals: response.shiftTimings,
+            daysOfWeek: response.shiftDays,
+            hoursPerWeek: response.shiftHours
+          }
+        }
+      });
+      log(`loaded child requisitions for ${requisitionId} and updated state`);
+
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      setLoading(false)(dispatch);
+      logError("Unable to shift preferences details", ex);
+      onUpdateError(
+        ex?.response?.data?.errorMessage ||
+          "Unable to shift preferences details"
+      )(dispatch);
+    }
+  }
+};
+
 export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
   const selectedIndex = payload.selectedRequisitionIndex;
   if (selectedIndex > -1) {
@@ -661,13 +704,12 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
     const selectedLocations = payload.data.requisition.selectedLocations || [];
     if (selectedRequisition.selected) {
       selectedLocations.push({
-        id: selectedIndex,
         label: locationDescription,
         checked: false,
         value: locationDescription
       });
     } else {
-      removeFromObject(selectedLocations, { id: selectedIndex });
+      removeFromObject(selectedLocations, { label: locationDescription });
     }
 
     dispatch({
@@ -678,6 +720,10 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
         selectedLocations
       }
     });
+
+    payload.keyName = "locations";
+    payload.value = selectedLocations;
+    onUpdateChange(payload)(dispatch);
   }
 };
 
