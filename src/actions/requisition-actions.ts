@@ -212,34 +212,26 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
-  //payload.data.requisition.flag
-  log(`get NHE slots request payload: `, payload);
   if (requisitionId) {
     try {
-      let {application, requisition} = payload.data;
+      let application = payload.data.application;
       if (!application || isEmpty(application)) {
         log(`getting application in NHE if application not exits in state`);
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
       }
-      if (!requisition || isEmpty(requisition)) {
-        const state = window.reduxStore.getState();
-        requisition = state.app.data.requisition;
-      } 
       const { jobSelected } = application;
       log(`getting time slots for HCR ${jobSelected.headCountRequestId}`, {
         childRequisitionId: jobSelected.childRequisitionId,
         headCountRequestId: jobSelected.headCountRequestId,
-        parentRequisitionId: requisitionId,
-        isCentralizationEnabled: requisition.consentInfo.isCentralizationEnabled
+        parentRequisitionId: requisitionId
       });
       const response = await new RequisitionService().availableTimeSlots({
         childRequisitionId: jobSelected.childRequisitionId,
         headCountRequestId: jobSelected.headCountRequestId,
-        parentRequisitionId: requisitionId,
-        isCentralizationEnabled: requisition.consentInfo.isCentralizationEnabled
-      } );
+        parentRequisitionId: requisitionId
+      });
 
       if (!isEmpty(response)) {
         log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
