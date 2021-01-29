@@ -20,6 +20,7 @@ export interface ConsentInfo {
   requisitionStatus: string;
   requisitionType: string;
   isCandidatePreferencesEnabled: boolean;
+  isCandidateNHEPreferencesEnabled: boolean;
 }
 
 export interface SelectedLocations {
