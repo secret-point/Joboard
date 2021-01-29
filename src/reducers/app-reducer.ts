@@ -7,7 +7,8 @@ import {
   UPDATE_OUTPUT,
   RESET_PAGE_OUTPUT,
   SHOW_NAVBAR,
-  ON_SET_WORKFLOW_LOADING
+  ON_SET_WORKFLOW_LOADING,
+  SET_STEPS_COMPLETED
 } from "../actions/actions";
 import { ON_REMOVE_ERROR, ON_RESPONSE_ERROR } from "../actions/error-actions";
 import set from "lodash/set";
@@ -60,7 +61,8 @@ const initialState: any = {
     config: {},
     showPreviousNames: "NO",
     loadingShifts: false,
-    shiftsEmptyOnFilter: false
+    shiftsEmptyOnFilter: false,
+    stepsCompleted: false
   },
   applicationData: {},
   output: {},
@@ -510,6 +512,16 @@ const AppReducer = (state = initialState, action: IAction) => {
           },
           loadingShifts: {
             $set: false
+          }
+        }
+      });
+    }
+
+    case SET_STEPS_COMPLETED: {
+      return updateState(state, {
+        data: {
+          stepsCompleted: {
+            $set: payload
           }
         }
       });

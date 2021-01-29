@@ -22,6 +22,7 @@ export const RESET_IS_UPDATE_ACTION_EXECUTED =
 export const RESET_PAGE_OUTPUT = "RESET_PAGE_OUTPUT";
 export const SHOW_NAVBAR = "SHOW_NAVBAR";
 export const ON_SET_WORKFLOW_LOADING = "ON_SET_WORKFLOW_LOADING";
+export const SET_STEPS_COMPLETED = "SET_STEPS_COMPLETED";
 
 export const onUpdateChange = (payload: IPayload) => (dispatch: Function) => {
   const {
@@ -216,6 +217,13 @@ export const setWorkflowLoading = (value: boolean) => (dispatch: Function) => {
   });
 };
 
+export const setStepsCompleted = (value: boolean) => (dispatch: Function) => {
+  dispatch({
+    type: SET_STEPS_COMPLETED,
+    payload: value
+  });
+};
+
 export const onResetIsUpdateActionExecuted = () => (dispatch: Function) => {
   dispatch({
     type: RESET_IS_UPDATE_ACTION_EXECUTED
@@ -269,4 +277,3 @@ export const onShowNavbar = () => (dispatch: Function) => {
     }
   });
 };
-

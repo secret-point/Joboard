@@ -2,9 +2,11 @@ import { connect } from "react-redux";
 import StepsContentRenderer from "../../components/steps-content-renderer";
 import { onAction } from "../../actions";
 import { withRouter } from "react-router-dom";
+import { setStepsCompleted } from "../../actions/actions";
 
 const actions = {
-  onAction
+  onAction,
+  setStepsCompleted
 };
 
 const mapStateToProps = (state: any, ownProps: any) => {

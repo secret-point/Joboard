@@ -6,7 +6,8 @@ import { Button } from "@amzn/stencil-react-components/button";
 import {
   IconPadlock,
   IconCheckCircle,
-  IconPencil
+  IconPencil,
+  IconCrossCircle
 } from "@amzn/stencil-react-components/icons";
 import RendererContainer from "../../containers/renderer";
 import { getStatusForSteps } from "./../../helpers/steps-helper";
@@ -14,24 +15,27 @@ import { PENDING, IN_PROGRESS, COMPLETED } from "../../constants";
 import { RESET_IS_UPDATE_ACTION_EXECUTED } from "../../actions/actions";
 import { sendDataLayerAdobeAnalytics } from "../../actions/adobe-actions";
 import { getDataForEventMetrics } from "../../helpers/adobe-helper";
-import { isEmpty } from "lodash";
+import isEmpty from "lodash/isEmpty";
 
 interface IStepContentRenderer {
   steps: any[];
   data: any;
   isUpdateActionExecuted: boolean;
-  onAction: any;
+  onAction: Function;
+  setStepsCompleted: Function;
 }
 
 const StepContentRenderer: React.FC<IStepContentRenderer> = ({
   steps,
   data,
   isUpdateActionExecuted,
-  onAction
+  onAction,
+  setStepsCompleted
 }) => {
   const [statuses, setStatuses] = useState<string[]>([]);
   const [editStatusIndex, SetEditStatusIndex] = useState<number>(-1);
   const [adobeMetricRecords, setAdobeMetricRecords] = useState<any>({});
+  const [showCloseButton, setShowCloseButton] = useState<boolean>(false);
 
   const metric = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
     "StepsLoad"
@@ -53,7 +57,11 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
       isUpdateActionExecuted
     );
     setStatuses(_statuses);
-  }, [data, steps, editStatusIndex, isUpdateActionExecuted]);
+    const arStatuses = _statuses.filter(v => v === COMPLETED);
+    if (arStatuses.length === steps.length || arStatuses.length === 0) {
+      setStepsCompleted(true);
+    }
+  }, [data, steps, editStatusIndex, isUpdateActionExecuted, setStepsCompleted]);
 
   useEffect(() => {
     if (!isEmpty(steps)) {
@@ -90,6 +98,24 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
     }
     SetEditStatusIndex(_editStatusIndex);
     setStatuses(_statuses);
+
+    const arStatuses = _statuses.filter(v => v === COMPLETED);
+    if (arStatuses.length === steps.length) {
+      setStepsCompleted(true);
+      setShowCloseButton(false);
+    } else {
+      setStepsCompleted(false);
+      setShowCloseButton(true);
+    }
+  };
+
+  const onCloseStep = (index: number) => {
+    const _statuses = [...statuses];
+    _statuses[index] = COMPLETED;
+    SetEditStatusIndex(-1);
+    setStatuses(_statuses);
+    setStepsCompleted(true);
+    setShowCloseButton(false);
   };
 
   return (
@@ -99,9 +125,16 @@ const StepContentRenderer: React.FC<IStepContentRenderer> = ({
           <Card key={index}>
             <Col width="100%" gridGap="s">
               <Col>
-                <Text fontSize="14px" color="#5C7274">
-                  Step {index + 1} of {steps.length}
-                </Text>
+                <Row gridGap="m" justifyContent="space-between">
+                  <Text fontSize="14px" color="#5C7274">
+                    Step {index + 1} of {steps.length}
+                  </Text>
+                  {statuses[index] === IN_PROGRESS && showCloseButton && (
+                    <Button onClick={() => onCloseStep(index)} tertiary>
+                      <IconCrossCircle color="accent1" />
+                    </Button>
+                  )}
+                </Row>
               </Col>
               <Row
                 alignItems="center"

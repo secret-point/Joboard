@@ -288,6 +288,8 @@ const Renderer: React.FC<IRendererProps> = ({
       if (dataKeyIsArray) {
         for (let i = 0; i < dataKey.length; i++) {
           value = getValue(dataKey[i]);
+          const isValueBoolean = typeof value === "boolean";
+          filter.type = isValueBoolean ? "boolean" : filter.type;
           if (isEmpty(value)) {
             break;
           }
@@ -295,7 +297,7 @@ const Renderer: React.FC<IRendererProps> = ({
       }
 
       if (filter.type === "object") {
-        return !isEmpty(value);
+        return !isEmpty(value) || !isNil(value);
       } else if (filter.type === "filterValue") {
         //if filterValue is empty, return reture
         return isEmpty(value);
