@@ -216,7 +216,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   log(`get NHE slots request payload: `, payload);
   if (requisitionId) {
     try {
-      let {application} = payload.data;
+      let { application } = payload.data;
       if (!application || isEmpty(application)) {
         log(`getting application in NHE if application not exits in state`);
         application = await new CandidateApplicationService().getApplication(
@@ -233,7 +233,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         childRequisitionId: jobSelected.childRequisitionId,
         headCountRequestId: jobSelected.headCountRequestId,
         parentRequisitionId: requisitionId
-      } );
+      });
 
       if (!isEmpty(response)) {
         log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
@@ -694,16 +694,17 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
     const selectedRequisition = childRequisitions[selectedIndex];
     selectedRequisition.selected = selectedRequisition.selected ? false : true;
     childRequisitions[selectedIndex] = selectedRequisition;
-    const { locationDescription } = selectedRequisition;
+    const { locationCity, locationState } = selectedRequisition;
+    const location = `${locationCity}, ${locationState}`;
     const selectedLocations = payload.data.requisition.selectedLocations || [];
     if (selectedRequisition.selected) {
       selectedLocations.push({
-        label: locationDescription,
+        label: location,
         checked: false,
-        value: locationDescription
+        value: location
       });
     } else {
-      removeFromObject(selectedLocations, { label: locationDescription });
+      removeFromObject(selectedLocations, { label: location });
     }
 
     dispatch({
