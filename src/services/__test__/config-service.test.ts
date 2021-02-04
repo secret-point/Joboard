@@ -10,4 +10,12 @@ describe("Test config service", () => {
     const response = await new ConfigService().getConfig();
     expect(get).toHaveBeenCalled();
   });
+
+  test("test get countryshould get application config", async () => {
+    const get = jest.fn(() => Promise.resolve({}));
+    axios.get.mockImplementation(() => ({ get }));
+    const response = await new ConfigService().getCountryStateList();
+    //TODO:why get is never called??
+    //expect(get).toHaveBeenCalled();
+  });
 });

@@ -26,6 +26,7 @@ import {sendDataLayerAdobeAnalytics} from "../../actions/adobe-actions";
 import CandidateApplicationService from "../../services/candidate-application-service";
 import {onUpdateError} from "../error-actions";
 import cloneDeep from "lodash/cloneDeep";
+import { NO_APPLICATION_ID } from "../../constants/error-messages";
 
 jest.mock("../../actions/adobe-actions");
 jest.mock("../../helpers/adobe-helper", () => ({
@@ -151,7 +152,8 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     payload.options = {
-      doNotInitiateWorkflow: true
+      doNotInitiateWorkflow: true,
+      ignoreApplicationData: true
     }
     payload.data.selectedShift = {
       requisitionId: TEST_REQUISITION_ID
@@ -171,7 +173,8 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     //manually set data
     payload.options = {
-      doNotInitiateWorkflow: true
+      doNotInitiateWorkflow: true,
+      ignoreApplicationData: true
     }
     payload.data.selectedShift = null;
     await actions.onGetApplication(payload)(store.dispatch); 
@@ -188,7 +191,8 @@ describe("Test for Application Actions", () => {
     mockWorkflowActionsPartial();
     //manually set data
     payload.options = {
-      doNotInitiateWorkflow: false
+      doNotInitiateWorkflow: false,
+      ignoreApplicationData: true
     }
     await actions.onGetApplication(payload)(store.dispatch);
     //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
@@ -275,6 +279,7 @@ describe("Test for Application Actions", () => {
     mockErrorActionsPartial();
     mockWorkflowActionsPartial();
 
+    payload.data.application = null;
     await actions.createApplication(payload)(store.dispatch);
 
     expect(onRemoveError).toBeCalledTimes(1);
@@ -282,6 +287,31 @@ describe("Test for Application Actions", () => {
     expect(loadWorkflow).toBeCalledTimes(1);
     expect(loadWorkflow).toBeCalledWith(TEST_REQUISITION_ID, TEST_APPLICATION_ID, TEST_CANDIDATE_ID, payload.appConfig)
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+  });
+
+  test("Test createApplication with duplicatedSSN should throw error and catch exception", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockErrorActionsPartial();
+    mockWorkflowActionsPartial();
+
+    //override behavior
+    CandidateApplicationService.mockImplementation(() => ({
+      getCandidate: () => {
+        return {...TEST_CANDIDATE, isDuplicateSSN: true}
+      }
+    }));
+
+    payload.data.application = null;
+    
+    await actions.createApplication(payload)(store.dispatch);
+
+    expect(onRemoveError).toBeCalledTimes(1);
+    expect(store.getActions().length).toBe(3);
+    expect(loadWorkflow).toBeCalledTimes(0);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(window.localStorage.getItem('page')).toBe("duplicate-national-id")
+    expect(window.location.href).toBe("http://localhost/#/app/test-req-id/test-app-id/test-misc");
   });
 
   test("Test createApplication with application already exist should do nothing", async () => {
@@ -307,6 +337,7 @@ describe("Test for Application Actions", () => {
     mockErrorActionsPartial();
     mockWorkflowActionsPartial();
 
+    payload.data.application = null;
     await actions.createApplication(payload)(store.dispatch);
 
     expect(onRemoveError).toBeCalledTimes(1);
@@ -462,7 +493,7 @@ describe("Test for Application Actions", () => {
     try { 
       await actions.updateApplication(payload)(store.dispatch);
     } catch (ex) {
-      expect(ex.message).toBe(actions.NO_APPLICATION_ID)
+      expect(ex.message).toBe(NO_APPLICATION_ID)
       //TODO: verify calls for candidateAppService
       expect(store.getActions().length).toBe(1);
       expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
@@ -496,7 +527,7 @@ describe("Test for Application Actions", () => {
 
   test("Test updateApplication with update data in payload but exception while calling API and error message is NO_APPLICATION_ID", async () => {
     const store = getStore();
-    mockCandidateAppService(true, actions.NO_APPLICATION_ID);
+    mockCandidateAppService(true, NO_APPLICATION_ID);
     mockErrorActionsPartial();
     mockWorkflowActionsPartial();
     //manually set data
@@ -517,6 +548,35 @@ describe("Test for Application Actions", () => {
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(completeTask).toBeCalledTimes(0);
   });
+
+  test("Test updateApplication with no applicationId in payload should throw error", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockErrorActionsPartial();
+    mockWorkflowActionsPartial();
+    //manually set data
+    payload.data.application = TEST_APPLICATION;
+    payload.data.application.applicationId = undefined;
+    payload.options = {
+      checkDataInPayload: true,
+      outputKey: TEST_PAGE_ID,
+      dataKey: TEST_KEY
+    }
+    payload.data[TEST_KEY] = {
+      testUpdatePayload: "test-fcra"
+    }
+
+    try { 
+      await actions.updateApplication(payload)(store.dispatch);
+    } catch (ex) {
+      expect(ex.message).toBe(NO_APPLICATION_ID)
+      //TODO: verify calls for candidateAppService
+      expect(store.getActions().length).toBe(1);
+      expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+      expect(completeTask).toBeCalledTimes(0);
+    }
+  });
+  
 
   test("Test onSelectedShifts with goto option should dispatch SET_REQUISITION_SHIFT action", async () => {
     const store = getStore();
@@ -712,5 +772,90 @@ describe("Test for Application Actions", () => {
     expect(store.getActions()[0].type).toBe(actions.SHOW_PREVIOUS_NAMES);
     expect(store.getActions()[0].payload).toBe("YES");
   })
+
+  test("Test onSaveShiftPreferences with correct data without selected data should save preference", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    payload.data.requisition = {
+      requisitionId: TEST_REQUISITION_ID,
+      childRequisitions: [
+        {
+          requisitionId: TEST_REQUISITION_ID,
+          selected:true
+        }, 
+        {
+          requisitionId: TEST_REQUISITION_ID,
+          selected:false
+        }
+      ]
+    }
+
+    await actions.onSaveShiftPreferences(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("job-preferences-thank-you")
+  });
+
+  test("Test onSaveShiftPreferences with correct data with selected data should save preference", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    payload.data.requisition = {
+      requisitionId: TEST_REQUISITION_ID,
+      childRequisitions: [
+        {
+          requisitionId: TEST_REQUISITION_ID,
+          selected:true
+        }, 
+        {
+          requisitionId: TEST_REQUISITION_ID,
+          selected:false
+        }
+      ]
+    }
+
+    payload.data.output[payload.pageId] = {
+      key: [
+        {
+          checked:true,
+          value: "value"
+        },
+        {
+          checked:false,
+          value: "value"
+        }
+      ]
+    }
+
+    await actions.onSaveShiftPreferences(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("job-preferences-thank-you")
+  });
+
+  test("Test onSaveShiftPreferences with exception should catch exception", async () => {
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    const store = getStore();
+
+    //bad data will throw exception
+    await actions.onSaveShiftPreferences(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
+    expect(onUpdateError).toBeCalledWith("Unable to save shift preferences");
+  });
 
 });

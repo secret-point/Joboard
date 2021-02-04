@@ -17,4 +17,11 @@ describe("Test page service", () => {
     await new PageService().getPageConfig("Config.json");
     expect(get).toHaveBeenCalled();
   });
+
+  test("should get page order from config", async () => {
+    const get = jest.fn(() => Promise.resolve({}));
+    axios.create.mockImplementation(() => ({ get }));
+    await new PageService().getPageOrder();
+    expect(get).toHaveBeenCalled();
+  });
 });
