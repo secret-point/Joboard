@@ -5,8 +5,10 @@ import { completeTask } from "./workflow-actions";
 import isEmpty from "lodash/isEmpty";
 import {
   addMetricForPageLoad,
+  postAdobeMetrics,
   sendDataLayerAdobeAnalytics
 } from "./adobe-actions";
+import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { PAGE_TITLE } from "../constants/adobe-analytics";
 import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
@@ -115,6 +117,10 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
 };
 
 export const onGoBack = (payload: IPayload) => (dispatch: Function) => {
+  const { options } = payload;
+  if (options?.adobeMetrics) {
+    postAdobeMetrics(options.adobeMetrics, {});
+  }
   onUpdatePageId(payload.previousPage.id)(dispatch);
 };
 
@@ -276,4 +282,21 @@ export const onShowNavbar = () => (dispatch: Function) => {
       }
     }
   });
+};
+
+export const onLogVideoMetrics = (payload: IPayload) => (
+  dispatch: Function
+) => {
+  const { data, options } = payload;
+  const selectedRequisition =
+    data.requisition.childRequisitions[options.selectedRequisitionIndex];
+  console.log(options);
+  const eventName = options.started ? "start-job-video" : "finish-job-video";
+  const metrics = getDataForEventMetrics(eventName);
+  metrics.job = {
+    ...metrics.job,
+    role: selectedRequisition.jobTitle
+  };
+
+  sendDataLayerAdobeAnalytics(metrics);
 };

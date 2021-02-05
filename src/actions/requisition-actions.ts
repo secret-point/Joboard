@@ -1,3 +1,4 @@
+import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
@@ -17,6 +18,7 @@ import { sortWith, ascend, descend, prop } from "ramda";
 import { log, logError } from "../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
+import { EVENT_NAMES } from "../constants/adobe-analytics";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -261,12 +263,14 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
             : nheSlotLocation + ", " + slot.location.postalCode;
           nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
           nheSlot.recruitingEventId = slot.recruitingEventId;
+          nheSlot.timeSlotId = slot.timeSlotId;
           nheSlots.push(nheSlot);
         });
         dispatch({
           type: UPDATE_REQUISITION,
           payload: {
-            nheTimeSlots: nheSlots
+            nheTimeSlots: nheSlots,
+            nehTimeSlotsTotalCount: nheSlots.length
           }
         });
         log(`sanitized and updated state with time slots`);
@@ -657,14 +661,19 @@ export const loadShiftPreferences = (payload: IPayload) => async (
       log(
         `Getting Shift Preferences for ${requisitionId} and ${applicationId}`
       );
-      const response = await new RequisitionService().getShiftPreferenceDetails(
+      const response: ShiftPreferenceResponse = await new RequisitionService().getShiftPreferenceDetails(
         applicationId,
         requisitionId
       );
+      const titles = response.childRequisitions?.map((value: any) => {
+        return value.jobTitle;
+      });
       dispatch({
         type: UPDATE_SHIFT_PREF_DETAILS,
         payload: {
           childRequisitions: response.childRequisitions,
+          totalChildRequisitions: response.childRequisitions?.length,
+          jobTitles: titles,
           selectedLocations: response.locations,
           shiftPrefDetails: {
             shiftTimeIntervals: response.shiftTimings,
@@ -694,6 +703,7 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
     const selectedRequisition = childRequisitions[selectedIndex];
     selectedRequisition.selected = selectedRequisition.selected ? false : true;
     childRequisitions[selectedIndex] = selectedRequisition;
+
     const { locationCity, locationState } = selectedRequisition;
     const location = `${locationCity}, ${locationState}`;
     const selectedLocations = payload.data.requisition.selectedLocations || [];
@@ -707,6 +717,12 @@ export const selectJobRole = (payload: IPayload) => (dispatch: Function) => {
       removeFromObject(selectedLocations, { label: location });
     }
 
+    const metrics = getDataForEventMetrics(EVENT_NAMES.SELECT_JOB_ROLE);
+    metrics.job = {
+      ...metrics.job,
+      role: selectedRequisition.jobTitle
+    };
+    sendDataLayerAdobeAnalytics(metrics);
     dispatch({
       type: UPDATE_SELECTED_JOB_ROLE,
       payload: {

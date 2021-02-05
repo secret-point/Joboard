@@ -5,7 +5,14 @@ export enum EVENT {
   JOBS_FILTER = "jobs filter",
   JOBS_SORT = "jobs sort",
   SHIFT_SELECTED = "selected shift",
-  GET_SHIFTS_ERROR = "shift display error"
+  GET_SHIFTS_ERROR = "shift display error",
+  CLICK_ROLE = "click role",
+  SELECT_PREFERENCES = "select preferences",
+  START_JOB_VIDEO = "start job video",
+  FINISH_JOB_VIDEO = "finish job video",
+  SUBMIT_NHE_PREFERENCES = "submit nhe preferences",
+  RETURN_TO_NHE = "return to nhe",
+  SELECT_NHE = "select NHE"
 }
 
 export enum PAGE_TYPE {
@@ -48,7 +55,10 @@ export const PAGE_NAME: any = {
 
   "additional-bgc-info": "BGC: additional bgc info",
   "non-fcra": "BGC: non-fcra",
-  "cali-disclosure": "BGC: california disclosure"
+  "cali-disclosure": "BGC: california disclosure",
+  "job-preferences-thank-you": "shift preference submitted",
+  "job-preferences": "shift preference",
+  "nhe-preferences": "nhe preferences"
 };
 
 export const PAGE_TITLE: any = {
@@ -81,5 +91,15 @@ export const PAGE_TITLE: any = {
   "supplementary-success": "Supplementary success",
   "thank-you": "Pre-hire activities",
   "workflow-failed": "Application error",
-  wotc: "Work Opportunity Tax Credit"
+  wotc: "Work Opportunity Tax Credit",
+  "job-preferences-thank-you": "Shift preference submitted",
+  "job-preferences": "Shift preference",
+  "nhe-preferences": "Nhe preference"
 };
+
+export enum EVENT_NAMES {
+  SUBMIT_NHE_PREFERENCES = "SUBMIT_NHE_PREFERENCES",
+  SELECT_JOB_ROLE = "SELECT_JOB_ROLE",
+  SELECT_NHE = "SELECT_NHE",
+  SUBMIT_SHIFT_PREFERENCES = "SUBMIT_SHIFT_PREFERENCES"
+}

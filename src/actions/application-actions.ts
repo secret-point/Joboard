@@ -11,12 +11,21 @@ import {
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow } from "./workflow-actions";
 import propertyOf from "lodash/propertyOf";
-import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
+import {
+  postAdobeMetrics,
+  sendDataLayerAdobeAnalytics
+} from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import findIndex from "lodash/findIndex";
 import { isNil } from "lodash";
 import { log, logError } from "../helpers/log-helper";
 import { NO_APPLICATION_ID, DUPLICATE_SSN } from "../constants/error-messages";
+import {
+  HoursPerWeekValue,
+  ShiftPreference,
+  ShiftTimeInterval
+} from "../@types/shift-preferences";
+import { MetricData } from "../@types/adobe-metrics";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -305,6 +314,11 @@ export const updateApplication = (payload: IPayload) => async (
       if (options?.updateCandidate) {
         onGetCandidate(payload, true)(dispatch);
       }
+
+      if (options?.adobeMetrics) {
+        postAdobeMetrics(options.adobeMetrics, updateData, payload.data);
+      }
+
       setLoading(false)(dispatch);
       if (options?.executeCompleteStep) {
         const sidStatus = [
@@ -531,7 +545,7 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
     onRemoveError()(dispatch);
     setLoading(true)(dispatch);
     const { output, requisition } = payload.data;
-    const { urlParams } = payload;
+    const { urlParams, options } = payload;
     const selectedRequisitions = requisition.childRequisitions.reduce(
       (previousValue, currentValue) => {
         if (currentValue.selected) {
@@ -539,9 +553,9 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
         }
         return previousValue;
       },
-      []
+      [] as string[]
     );
-    const shiftPreference: any = {};
+    const shiftPreference: ShiftPreference = {};
     shiftPreference.jobRoles = selectedRequisitions;
 
     const selectedData = output[payload.pageId];
@@ -554,6 +568,7 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
           }
           return previousValue;
         }, []);
+        //@ts-ignore
         shiftPreference[key] = data;
       }
     }
@@ -567,6 +582,30 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
         shiftPreference
       }
     });
+
+    const hoursPerWeek = shiftPreference.hoursPerWeek?.map(
+      (value: HoursPerWeekValue) =>
+        `${value.minimumValue} - ${value.maximumValue} hrs/wk`
+    );
+    const shiftTimeIntervals = shiftPreference.shiftTimeIntervals?.map(
+      (value: ShiftTimeInterval) => `${value.from} - ${value.to}`
+    );
+
+    if (options?.adobeMetrics) {
+      const metricData = {
+        preference: {
+          locations: shiftPreference.locations,
+          hoursPerWeek: hoursPerWeek,
+          daysOfWeek: shiftPreference.daysOfWeek,
+          timeWindow: shiftTimeIntervals
+        }
+      };
+      postAdobeMetrics(
+        options.adobeMetrics,
+        metricData as MetricData,
+        payload.data
+      );
+    }
     log("save selected shift preferences", {
       shiftPreference,
       saveResponse: response.data

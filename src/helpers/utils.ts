@@ -1,5 +1,10 @@
+import { CheckBoxItem } from "../@types";
 import queryString from "query-string";
 import isEmpty from "lodash/isEmpty";
+import map from "lodash/map";
+import filter from "lodash/filter";
+import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
+import propertyOf from "lodash/propertyOf";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -58,4 +63,29 @@ export const objectToQuerystring = (obj: any) => {
     val = encodeURIComponent(obj[key]);
     return [str, delimiter, key, "=", val].join("");
   }, "");
+};
+
+export const getCheckBoxListLabels = (items: CheckBoxItem[]): string[] => {
+  return map(filter(items, { checked: true }), v => {
+    return v.label;
+  });
+};
+
+export const getMetricValues = (
+  metricsValues: MetricsValue,
+  metric: Metric,
+  data: { [key: string]: string | string[] } | MetricData
+) => {
+  if (!isEmpty(metricsValues)) {
+    for (const key in metricsValues) {
+      const metricMappings = metricsValues[key];
+      if (!metric[key]) {
+        metric[key] = {};
+      }
+      metricMappings.forEach(metricMapping => {
+        metric[key][metricMapping.key] = propertyOf(data)(metricMapping.value);
+      });
+    }
+  }
+  return metric;
 };

@@ -266,6 +266,12 @@ const AppReducer = (state = initialState, action: IAction) => {
             },
             shiftPrefDetails: {
               $set: payload.shiftPrefDetails
+            },
+            totalChildRequisitions: {
+              $set: payload.totalChildRequisitions
+            },
+            jobTitles: {
+              $set: payload.jobTitles
             }
           }
         }

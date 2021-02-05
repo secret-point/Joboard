@@ -1,5 +1,6 @@
 import ICandidateApplication, { Candidate } from "./ICandidateApplication";
 import { History } from "history";
+import { ChildRequisition } from "./shift-preferences";
 export interface Consent {}
 
 export interface WorkflowData {
@@ -28,14 +29,38 @@ export interface SelectedLocations {
   checked: boolean;
   value: string;
 }
+export interface Location {
+  streetAddress: string;
+  city: string;
+  state: string;
+  country: string;
+  postalCode: string;
+}
+
+export interface NHETimeSlots {
+  timeSlotId: string;
+  startTime: string;
+  endTime: string;
+  location: Location;
+  timezone: string;
+  availableResources: number;
+  appointmentsBooked: number;
+  recruitingEventId: string;
+  timeRange: string;
+  date: string;
+  dateWithoutFormat: string;
+  childRequisitionId: string;
+  nheSource: string;
+}
 
 export interface Requisition {
   consentInfo: ConsentInfo;
-  childRequisitions: any[];
-  selectedChildRequisition: any;
+  childRequisitions: ChildRequisition[];
+  selectedChildRequisition: ChildRequisition;
   jobDescription: any;
   availableShifts: AvailableShifts;
   selectedLocations: SelectedLocations[];
+  nheTimeSlots: NHETimeSlots[];
 }
 
 export interface ContingentOffer {

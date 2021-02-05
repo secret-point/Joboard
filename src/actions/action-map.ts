@@ -10,7 +10,8 @@ import {
   onFilterChange,
   onResetPageOutput,
   onBackButtonCompleteTask,
-  onRedirectToASHChecklist
+  onRedirectToASHChecklist,
+  onLogVideoMetrics
 } from "./actions";
 import {
   onStartApplication,
@@ -81,7 +82,8 @@ const actionMap: any = {
   REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
   SELECT_JOB_ROLE: selectJobRole,
   ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,
-  LOAD_SHIFT_PREFERENCES_DETAILS: loadShiftPreferences
+  LOAD_SHIFT_PREFERENCES_DETAILS: loadShiftPreferences,
+  LOG_VIDEO_METRICS: onLogVideoMetrics
 };
 
 export default actionMap;

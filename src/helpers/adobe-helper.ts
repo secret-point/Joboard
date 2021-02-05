@@ -3,6 +3,7 @@ import { ADOBE_PAGE_LOAD_METRICS } from "../constants/page-load-metric-constants
 import { isArray } from "lodash";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";
+import { Metric } from "../@types/adobe-metrics";
 
 const WORKFLOW = "BB NACF Tier-1 Node Workflow";
 

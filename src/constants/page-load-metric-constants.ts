@@ -40,6 +40,20 @@ const applicationPayloadDefault = {
   ]
 };
 
+const shiftPreferencesPayload = {
+  key: "job",
+  values: [
+    {
+      key: "roleCount",
+      value: "requisition.totalChildRequisitions"
+    },
+    {
+      key: "list",
+      value: "requisition.jobTitles"
+    }
+  ]
+};
+
 const applicationIneligibleDefault = {
   key: "application",
   values: [
@@ -189,7 +203,7 @@ const nhePayloadDefault = {
   values: [
     {
       key: "count",
-      value: "requisition.nheTimeSlots"
+      value: "requisition.nehTimeSlotsTotalCount"
     }
   ]
 };
@@ -729,6 +743,110 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         name: PAGE_NAME["cali-disclosure"],
         type: PAGE_TYPE.APPLICATION
       }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "job-preferences-thank-you": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["job-preferences-thank-you"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+  },
+  "job-preferences": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["job-preferences"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPreferencesPayload
+    ]
+  },
+  SELECT_JOB_ROLE: {
+    eventPayload: {
+      event: EVENT.CLICK_ROLE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPreferencesPayload
+    ]
+  },
+  SUBMIT_SHIFT_PREFERENCES: {
+    eventPayload: {
+      event: EVENT.SELECT_PREFERENCES
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPreferencesPayload
+    ]
+  },
+  "start-job-video": {
+    eventPayload: {
+      event: EVENT.START_JOB_VIDEO
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPreferencesPayload
+    ]
+  },
+  "finish-job-video": {
+    eventPayload: {
+      event: EVENT.FINISH_JOB_VIDEO
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPreferencesPayload
+    ]
+  },
+  "nhe-preferences": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["nhe-preferences"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  SUBMIT_NHE_PREFERENCES: {
+    eventPayload: {
+      event: EVENT.SUBMIT_NHE_PREFERENCES
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  RETURN_TO_NHE: {
+    eventPayload: {
+      event: EVENT.RETURN_TO_NHE
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+  },
+  SELECT_NHE: {
+    eventPayload: {
+      event: EVENT.SELECT_NHE
     },
     dataPayload: [
       jobPayloadDefault,
