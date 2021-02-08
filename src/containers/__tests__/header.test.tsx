@@ -38,6 +38,14 @@ describe("Test App", () => {
         pageOrder: [pageOderData],
         currentPage: {
           id: currentPageId
+        },
+        data: {
+          output: {
+            consent: {}
+          }
+        },
+        output: {
+          consent: {}
         }
       }
     };

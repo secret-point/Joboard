@@ -79,8 +79,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
-    "test:disabled": "react-app-rewired test --coverage --watchAll=false",
-    "test": "echo 'ignored for now'",
+    "test": "react-app-rewired test --coverage --watchAll=false",
     "test:watch": "react-app-rewired test --colors --coverage --watchAll=true",
     "test:file": "react-app-rewired test ./src/actions/__tests__/application-actions.test.ts --colors --coverage",
     "eject": "react-scripts eject",

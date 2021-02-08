@@ -1,15 +1,15 @@
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
-  webpack: function(config, env) {
+  webpack: function (config, env) {
     // ...add your webpack config
     return config;
   },
-  paths: function(paths, env) {
+  paths: function (paths, env) {
     // ...add your paths config
     paths.appBuild = paths.appPath + "/lib";
     return paths;
   },
-  jest: function(config) {
+  jest: function (config) {
     const newConfig = { ...config };
     newConfig.collectCoverageFrom = [
       ...newConfig.collectCoverageFrom,
@@ -19,10 +19,10 @@ module.exports = {
     ];
     newConfig.coverageThreshold = {
       global: {
-        branches: 10,
-        functions: 10,
-        lines: 10,
-        statements: 10
+        branches: 60,
+        functions: 60,
+        lines: 60,
+        statements: 60
       }
     };
     return newConfig;

@@ -203,7 +203,7 @@ const nhePayloadDefault = {
   values: [
     {
       key: "count",
-      value: "requisition.nehTimeSlotsTotalCount"
+      value: "requisition.nheTimeSlots"
     }
   ]
 };

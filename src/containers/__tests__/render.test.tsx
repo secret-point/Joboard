@@ -22,8 +22,15 @@ describe("Test App", () => {
         data: {
           application: {
             id: "1"
+          },
+          output: {
+            consent: {}
           }
         },
+        output: {
+          consent: {}
+        },
+
         pageConfig: {
           content: {
             components: components

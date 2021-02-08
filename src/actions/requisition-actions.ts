@@ -5,7 +5,6 @@ import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
 import { setLoading, onUpdatePageId, onUpdateChange } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
-import findIndex from "lodash/findIndex";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
 import CandidateApplicationService from "../services/candidate-application-service";

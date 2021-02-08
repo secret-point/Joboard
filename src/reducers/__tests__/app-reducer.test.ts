@@ -26,7 +26,13 @@ describe("Test App Reducer", () => {
               id: "bgc"
             }
           ]
-        }
+        },
+        [
+          {
+            code3: "USA",
+            states: []
+          }
+        ]
       ]
     });
 
@@ -61,7 +67,6 @@ describe("Test App Reducer", () => {
     });
 
     expect(state.currentPage.id).toBe("consent");
-    expect(state.nextPage.id).toBe("bgc");
   });
 
   test("tests for ON_RESPONSE_ERROR", () => {

@@ -38,11 +38,19 @@ describe("Test App", () => {
           header: {},
           footer: {}
         },
+        data: {
+          output: {
+            consent: {}
+          }
+        },
         pageOrder: [
           {
             id: "consent"
           }
         ],
+        output: {
+          consent: {}
+        },
         currentPage: {
           id: "consent"
         },
