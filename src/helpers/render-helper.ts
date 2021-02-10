@@ -32,6 +32,10 @@ export const validation = (
 ) => {
   switch (type) {
     case "SSN": {
+      if (value && value.includes("*")) {
+        var reg = new RegExp(/[*]{5}\d{4}$/);
+        return reg.test(value);
+      }
       //9 digit number, in format xxx-xx-xxxx
       const regex = new RegExp(
         /^(?!000|666)[0-8][0-9]{2}(?!00)[0-9]{2}(?!0000)[0-9]{4}$/
