@@ -816,11 +816,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "nhe-preferences": {
     eventPayload: {
-      event: EVENT.PAGE_LOAD,
-      page: {
-        name: PAGE_NAME["nhe-preferences"],
-        type: PAGE_TYPE.APPLICATION
-      }
+      event: EVENT.NHE_PREFERENCE
     },
     dataPayload: [
       jobPayloadDefault,

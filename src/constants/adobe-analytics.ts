@@ -12,7 +12,8 @@ export enum EVENT {
   FINISH_JOB_VIDEO = "finish job video",
   SUBMIT_NHE_PREFERENCES = "submit nhe preferences",
   RETURN_TO_NHE = "return to nhe",
-  SELECT_NHE = "select NHE"
+  SELECT_NHE = "select NHE",
+  NHE_PREFERENCE = "nhe preferences"
 }
 
 export enum PAGE_TYPE {
