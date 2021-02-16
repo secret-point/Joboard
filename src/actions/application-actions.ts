@@ -556,61 +556,70 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
       [] as string[]
     );
     const shiftPreference: ShiftPreference = {};
-    shiftPreference.jobRoles = selectedRequisitions;
+    if (!isEmpty(selectedRequisitions)) {
+      shiftPreference.jobRoles = selectedRequisitions;
 
-    const selectedData = output[payload.pageId];
-    if (selectedData) {
-      for (let key in selectedData) {
-        let data = selectedData[key] as any[];
-        data = data.reduce((previousValue, currentValue) => {
-          if (currentValue.checked) {
-            previousValue.push(currentValue.value);
-          }
-          return previousValue;
-        }, []);
-        //@ts-ignore
-        shiftPreference[key] = data;
-      }
-    }
-
-    shiftPreference.candidateTimezone = payload.data.candidate.timezone;
-
-    const response = await new CandidateApplicationService().updateApplication({
-      type: "job-preferences",
-      applicationId: urlParams.applicationId,
-      payload: {
-        shiftPreference
-      }
-    });
-
-    const hoursPerWeek = shiftPreference.hoursPerWeek?.map(
-      (value: HoursPerWeekValue) =>
-        `${value.minimumValue} - ${value.maximumValue} hrs/wk`
-    );
-    const shiftTimeIntervals = shiftPreference.shiftTimeIntervals?.map(
-      (value: ShiftTimeInterval) => `${value.from} - ${value.to}`
-    );
-
-    if (options?.adobeMetrics) {
-      const metricData = {
-        preference: {
-          locations: shiftPreference.locations,
-          hoursPerWeek: hoursPerWeek,
-          daysOfWeek: shiftPreference.daysOfWeek,
-          timeWindow: shiftTimeIntervals
+      const selectedData = output[payload.pageId];
+      if (selectedData) {
+        for (let key in selectedData) {
+          let data = selectedData[key] as any[];
+          data = data.reduce((previousValue, currentValue) => {
+            if (currentValue.checked) {
+              previousValue.push(currentValue.value);
+            }
+            return previousValue;
+          }, []);
+          //@ts-ignore
+          shiftPreference[key] = data;
         }
-      };
-      postAdobeMetrics(
-        options.adobeMetrics,
-        metricData as MetricData,
-        payload.data
+      }
+
+      shiftPreference.candidateTimezone = payload.data.candidate.timezone;
+
+      const response = await new CandidateApplicationService().updateApplication(
+        {
+          type: "job-preferences",
+          applicationId: urlParams.applicationId,
+          payload: {
+            shiftPreference
+          }
+        }
       );
+
+      const hoursPerWeek = shiftPreference.hoursPerWeek?.map(
+        (value: HoursPerWeekValue) =>
+          `${value.minimumValue} - ${value.maximumValue} hrs/wk`
+      );
+      const shiftTimeIntervals = shiftPreference.shiftTimeIntervals?.map(
+        (value: ShiftTimeInterval) => `${value.from} - ${value.to}`
+      );
+
+      if (options?.adobeMetrics) {
+        const metricData = {
+          preference: {
+            locations: shiftPreference.locations,
+            hoursPerWeek: hoursPerWeek,
+            daysOfWeek: shiftPreference.daysOfWeek,
+            timeWindow: shiftTimeIntervals
+          }
+        };
+        postAdobeMetrics(
+          options.adobeMetrics,
+          metricData as MetricData,
+          payload.data
+        );
+      }
+      log("save selected shift preferences", {
+        shiftPreference,
+        saveResponse: response.data
+      });
+      onUpdatePageId("job-preferences-thank-you")(dispatch);
+    } else {
+      window.scrollTo({ top: 0 });
+      onUpdateError(
+        "Please select a job role that you are interested in before submitting your preferences! You may select multiple roles."
+      )(dispatch);
     }
-    log("save selected shift preferences", {
-      shiftPreference,
-      saveResponse: response.data
-    });
-    onUpdatePageId("job-preferences-thank-you")(dispatch);
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
