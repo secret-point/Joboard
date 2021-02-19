@@ -33,6 +33,7 @@ export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
 export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 const SORT_KEY_DEFAULT = "FEATURED";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
+const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -263,6 +264,14 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
           nheSlot.recruitingEventId = slot.recruitingEventId;
           nheSlot.timeSlotId = slot.timeSlotId;
+          const availableTimeSlots =
+            slot.availableResources - slot.appointmentsBooked;
+          if (availableTimeSlots <= MINIMUM_AVAILABLE_TIME_SLOTS) {
+            nheSlot.optionalMessage = {
+              type: "warning",
+              message: "Very few spots remaining"
+            };
+          }
           nheSlots.push(nheSlot);
         });
         dispatch({
