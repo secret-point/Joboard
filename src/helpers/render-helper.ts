@@ -48,11 +48,11 @@ export const validation = (
       return regex.test(value);
     }
     case "DATE_OF_BIRTH": {
-      //According to SF rule: DoB should not be within 10 yrs: today - 10 years.
-      let tenYearsFromNow = moment()
+      //According to SF rule: DoB should not be within 18 yrs: today - 18 years.
+      let EightneenYearsAgo = moment()
         .utc()
         .subtract(18, "years");
-      if (moment(value).utc() <= tenYearsFromNow) {
+      if (moment(value).utc().isBefore(EightneenYearsAgo)) {
         return true;
       } else {
         return false;
