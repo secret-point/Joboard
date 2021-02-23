@@ -10,8 +10,7 @@ const getValue = (
   isContentContainsSteps?: boolean,
   activeStepIndex?: number
 ) => {
-  let value = propertyOf(data)(dataKey);
-  value = isEmpty(value) ? propertyOf(output)(dataKey) : value;
+  let value = propertyOf(output)(dataKey);
   value = isEmpty(value) ? propertyOf(output[pageId])(dataKey) : value;
   if (
     isContentContainsSteps &&
@@ -22,6 +21,7 @@ const getValue = (
       ? propertyOf(output[pageId][activeStepIndex])(dataKey)
       : value;
   }
+  value = isEmpty(value) ? propertyOf(data)(dataKey) : value;
   value = isEmpty(value) ? propertyOf(data.output[pageId])(dataKey) : value;
   return value;
 };
