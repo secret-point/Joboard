@@ -37,10 +37,8 @@ import {
   onGetJobDescription,
   onGoToDescription,
   onApplyFilter,
-  onApplyFilterSelfService,
   onResetFilters,
   onShiftsIncrementalLoad,
-  onShiftsIncrementalLoadSelfService,
   selectJobRole,
   loadShiftPreferences
 } from "./requisition-actions";
@@ -74,7 +72,6 @@ const actionMap: any = {
   COMPLETE_TASK: onCompleteTask,
   UPDATE_WOTC_STATUS: onUpdateWotcStatus,
   ON_APPLY_FILTER: onApplyFilter,
-  ON_APPLY_FILTER_SELF_SERVICE: onApplyFilterSelfService,
   RESET_FILTERS: onResetFilters,
   ON_FILTER_CHANGE: onFilterChange,
   ON_VALUE_UPDATE: onUpdateChange,
@@ -82,7 +79,6 @@ const actionMap: any = {
   ON_BACK_BUTTON_COMPLETE_TASK: onBackButtonCompleteTask,
   SHOW_PREVIOUS_NAMES: onShowPreviousName,
   LOAD_INCREMENTAL_SHIFTS: onShiftsIncrementalLoad,
-  LOAD_INCREMENTAL_SHIFTS_SELF_SERVICE: onShiftsIncrementalLoadSelfService,
   REDIRECT_TO_ASH_CHECKLIST: onRedirectToASHChecklist,
   SELECT_JOB_ROLE: selectJobRole,
   ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,

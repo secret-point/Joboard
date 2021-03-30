@@ -404,12 +404,6 @@ export const applySortOnShifts = (
       shifts = sortFunction(shiftsData);
       break;
     }
-    case "DATE_ASC": {
-      const shiftsData = [...availableShifts.shifts];
-      const sortFunction = sortWith<any>([ascend(prop("day1Date"))]);
-      shifts = sortFunction(shiftsData);
-      break;
-    }
     default: {
       console.log("Sort key is not available");
       break;
@@ -449,40 +443,6 @@ const constructFilterPayload = (payload: IPayload) => {
   if (maxHoursPerWeek) {
     defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
       maxHoursPerWeek
-    );
-  }
-  return defaultFilter;
-};
-
-const constructFilterPayloadSelfService = (payload: IPayload) => {
-  const selectedSortKey =
-      propertyOf(payload.data.output)("update-shift.sortKey") || "FEATURED";
-
-  const maxHoursPerWeek = propertyOf(payload.data.output)(
-      "update-shift.maxHoursPerWeek"
-  );
-
-  let daysHoursFilter = (propertyOf(payload.data.output)(
-      "update-shift.daysHoursFilter"
-  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
-
-  const defaultFilter = payload.appConfig.defaultAvailableFilter;
-
-  const scheduleReference: any = {};
-  daysHoursFilter.forEach(filter => {
-    if (filter.isActive) {
-      scheduleReference[filter.day.toUpperCase()] = {
-        startTime: filter.startTime,
-        endTime: filter.endTime
-      };
-    }
-  });
-
-  defaultFilter.filter.schedulePreferences = scheduleReference;
-  defaultFilter.sortBy = selectedSortKey;
-  if (maxHoursPerWeek) {
-    defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
-        maxHoursPerWeek
     );
   }
   return defaultFilter;
@@ -550,75 +510,6 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
       } else {
         onUpdateError(
           ex?.response?.data?.errorMessage || "Unable to get shifts"
-        )(dispatch);
-      }
-    }
-  }
-};
-
-export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
-    dispatch: Function
-) => {
-  onRemoveError()(dispatch);
-  setLoading(true)(dispatch);
-  dispatch({
-    type: SET_LOADING_SHIFTS,
-    payload: true
-  });
-  const filter = constructFilterPayloadSelfService(payload);
-  if (!isNil(payload.data.shiftPageFactor)) {
-    filter.pageFactor = payload.data.shiftPageFactor + 1;
-  } else {
-    filter.pageFactor = filter.pageFactor + 1;
-  }
-  const requisitionId = payload.urlParams?.requisitionId;
-  const applicationId = payload.urlParams?.applicationId;
-
-  if (requisitionId) {
-    try {
-      log(
-          `getting available shifts for requisition ${requisitionId} in incremental`,
-          {
-            filter: JSON.stringify(filter)
-          }
-      );
-      const response = await new RequisitionService().getAllAvailableShifts(
-          requisitionId,
-          applicationId,
-          filter
-      );
-
-      log(
-          `loaded available shifts for requisition ${requisitionId} in incremental`,
-          {
-            pageFactor: response.pageFactor,
-            availableShiftsCount: response.availableShifts.total,
-            filter: JSON.stringify(filter)
-          }
-      );
-
-      if (response.availableShifts.total > 0) {
-        const availableShifts = applySortOnShifts(
-            response.availableShifts,
-            filter
-        );
-        dispatch({
-          type: MERGE_SHIFTS,
-          payload: {
-            shifts: availableShifts.shifts,
-            pageFactor: response.pageFactor
-          }
-        });
-        log("Updated shifts in state");
-      }
-      setLoading(false)(dispatch);
-    } catch (ex) {
-      logError("Error while getting shifts in incremental", ex);
-      setLoading(false)(dispatch);
-      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
-      } else {
-        onUpdateError(
-            ex?.response?.data?.errorMessage || "Unable to get shifts"
         )(dispatch);
       }
     }
@@ -739,123 +630,6 @@ export const onApplyFilter = (payload: IPayload) => async (
     }
   }
 };
-
-export const onApplyFilterSelfService = (payload: IPayload) => async (
-    dispatch: Function
-) => {
-  const { options } = payload;
-  onRemoveError()(dispatch);
-  let filter = constructFilterPayloadSelfService(payload);
-  filter.pageFactor = 1;
-  setLoading(true)(dispatch);
-  const requisitionId = payload.urlParams?.requisitionId;
-  const applicationId = payload.urlParams?.applicationId;
-
-  const activeDays: any[] = [];
-  let daysHoursFilter = (propertyOf(payload.data.output)(
-      "update-shift.daysHoursFilter"
-  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
-  daysHoursFilter.forEach(filter => {
-    if (filter.isActive) {
-      activeDays.push(filter.day);
-    }
-  });
-
-  let dataLayer: any = {};
-  if (options?.hasSortAction) {
-    dataLayer = getDataForEventMetrics("apply-sorting");
-  } else {
-    dataLayer = getDataForEventMetrics("apply-filter");
-    dataLayer.filter.daysOfWeek = activeDays;
-  }
-  sendDataLayerAdobeAnalytics(dataLayer);
-
-  log("Applying filter", {
-    filter: JSON.stringify(filter)
-  });
-
-  if (requisitionId) {
-    try {
-      let availableShifts: any = {};
-      let pageFactor;
-      if (options?.hasSortAction) {
-        log("Applying sorting selected sort", {
-          filter: JSON.stringify(filter)
-        });
-        const shiftsInRequisition = payload.data.requisition.availableShifts;
-        availableShifts = applySortOnShifts(shiftsInRequisition, filter);
-      } else {
-        if (isEmpty(filter.filter.schedulePreferences)) {
-          const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
-          const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
-          const sortKey = SORT_KEY_DEFAULT;
-          const filterData = {
-            sortKey,
-            maxHoursPerWeek,
-            daysHoursFilter
-          };
-          dispatch({
-            type: RESET_FILTERS,
-            payload: {
-              ...filterData
-            }
-          });
-          payload.data.output["update-shift"] = filterData;
-          log("schedulePreference is empty, reset the filterData:", {
-            filterData: JSON.stringify(filterData)
-          });
-          filter = constructFilterPayloadSelfService(payload);
-        }
-        const response = await new RequisitionService().getAllAvailableShifts(
-            requisitionId,
-            applicationId,
-            filter
-        );
-
-        pageFactor = response.pageFactor;
-        log("Applying sorting if user selected sort", {
-          pageFactor: response.pageFactor,
-          availableShiftsCount: response.availableShifts.total,
-          filter: JSON.stringify(filter)
-        });
-        availableShifts = applySortOnShifts(response.availableShifts, filter);
-      }
-      dispatch({
-        type: UPDATE_SHIFTS,
-        payload: {
-          availableShifts,
-          pageFactor,
-          shiftsEmptyOnFilter: isEmpty(availableShifts.shifts) ? true : false
-        }
-      });
-      log("Updated shifts in state while applying filter");
-      setLoading(false)(dispatch);
-    } catch (ex) {
-      log("Error while applying filter", ex);
-      setLoading(false)(dispatch);
-      if (
-          ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
-          ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
-      ) {
-        dispatch({
-          type: UPDATE_SHIFTS,
-          payload: {
-            availableShifts: {
-              shifts: [],
-              total: 0
-            },
-            shiftsEmptyOnFilter: true
-          }
-        });
-      } else {
-        onUpdateError(
-            ex?.response?.data?.errorMessage || "Unable to get shifts"
-        )(dispatch);
-      }
-    }
-  }
-};
-
 
 export const onResetFilters = (payload: IPayload) => async (
   dispatch: Function
