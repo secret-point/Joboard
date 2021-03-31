@@ -65,7 +65,8 @@ const initialState: any = {
     showPreviousNames: "NO",
     loadingShifts: false,
     shiftsEmptyOnFilter: false,
-    stepsCompleted: false
+    stepsCompleted: false,
+    workflowErrorCode: undefined
   },
   applicationData: {},
   output: {},
@@ -182,6 +183,11 @@ const AppReducer = (state = initialState, action: IAction) => {
         },
         output: {
           $set: {}
+        },
+        data: {
+          workflowErrorCode: {
+            $set: payload.errorCode
+          }
         }
       });
     }

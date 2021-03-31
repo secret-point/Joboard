@@ -146,7 +146,9 @@ export const onSubmit = (payload: any) => async (dispatch: Function) => {
   console.log(payload);
 };
 
-export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
+export const onUpdatePageId = (page: string, errorCode?: string) => async (
+  dispatch: Function
+) => {
   const metric = (window as any).MetricsPublisher?.newChildActionPublisherForMethod(
     "PageConfigLoad"
   );
@@ -191,7 +193,8 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
       type: ON_UPDATE_PAGE_ID,
       payload: {
         updatedPageId: page,
-        page: pageConfig
+        page: pageConfig,
+        errorCode
       }
     });
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);

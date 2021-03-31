@@ -5,6 +5,7 @@ export interface Consent {}
 
 export interface WorkflowData {
   stepName: string;
+  errorCode?: string;
 }
 
 export interface Bgc {}

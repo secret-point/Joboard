@@ -117,7 +117,10 @@ export const goToStep = async (workflowData: WorkflowData) => {
         logError("Unable to update workflow step in application", ex);
         setWorkflowLoading(false)(window.reduxStore.dispatch);
       });
-    onUpdatePageId(workflowData.stepName)(window.reduxStore.dispatch);
+    onUpdatePageId(
+      workflowData.stepName,
+      workflowData.errorCode
+    )(window.reduxStore.dispatch);
     if (
       workflowData.stepName === "supplementary-success" ||
       workflowData.stepName === "thank-you"
