@@ -26,9 +26,12 @@ export const SELECTED_REQUISITION = "SELECTED_REQUISITION";
 export const UPDATE_JOB_DESCRIPTION = "UPDATE_JOB_DESCRIPTION";
 export const UPDATE_SHIFTS = "UPDATE_SHIFTS";
 export const RESET_FILTERS = "RESET_FILTERS";
+export const RESET_FILTERS_SELF_SERVICE = "RESET_FILTERS_SELF_SERVICE";
 export const SET_LOADING_SHIFTS = "SET_LOADING_SHIFTS";
 export const SET_PAGE_FACTOR = "SET_PAGE_FACTOR";
 export const MERGE_SHIFTS = "MERGE_SHIFTS";
+export const SHOW_MESSAGE = "SHOW_MESSAGE";
+export const REMOVE_MESSAGE = "REMOVE_MESSAGE";
 export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
 export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 const SORT_KEY_DEFAULT = "FEATURED";
@@ -295,6 +298,71 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
       )(dispatch);
+    }
+  }
+};
+
+export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
+  dispatch({
+    type: SET_LOADING_SHIFTS,
+    payload: true
+  });
+  dispatch({
+    type: REMOVE_MESSAGE
+  });
+  const requisitionId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
+  const storedApplicationId = window.sessionStorage.getItem("applicationId");
+  if (!applicationId && storedApplicationId) {
+    dispatch(
+        push(`/update-shift/${requisitionId}/${storedApplicationId}`)
+    );
+  } else if (requisitionId) {
+    try {
+      log(`getting all available shifts for requisition ${requisitionId}`);
+      const response = await new RequisitionService().getAllAvailableShifts(
+          requisitionId,
+          applicationId
+      );
+      log(`loaded all available shifts for requisition ${requisitionId}`, {
+        pageFactor: response.pageFactor,
+        availableShiftsCount: response.availableShifts.total
+      });
+
+      dispatch({
+        type: UPDATE_REQUISITION,
+        payload: {
+          availableShifts: response.availableShifts
+        }
+      });
+
+      dispatch({
+        type: SET_PAGE_FACTOR,
+        payload: response.pageFactor
+      });
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      logError("Error while fetching available shits", ex);
+      setLoading(false)(dispatch);
+      let errorMessage = ex?.response?.data?.errorMessage
+          ? ex?.response?.data?.errorMessage
+          : ex?.message;
+
+      errorMessage = errorMessage
+          ? errorMessage
+          : "CLIENT_ERROR: something went wrong while fetching shifts";
+
+      //send the error message to Adobe Analytics
+      let dataLayer: any = {};
+      dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error-self-service");
+      dataLayer.shifts.errorMessage = errorMessage;
+      sendDataLayerAdobeAnalytics(dataLayer);
+
+      onUpdateError(errorMessage)(dispatch);
     }
   }
 };
@@ -610,6 +678,13 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
           }
         });
         log("Updated shifts in state");
+      } else {
+        dispatch({
+          type: SHOW_MESSAGE,
+          payload: {
+            message:"Sorry, we cannot find anymore schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
+          }
+        });
       }
       setLoading(false)(dispatch);
     } catch (ex) {
@@ -795,7 +870,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
             daysHoursFilter
           };
           dispatch({
-            type: RESET_FILTERS,
+            type: RESET_FILTERS_SELF_SERVICE,
             payload: {
               ...filterData
             }
@@ -817,6 +892,11 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
           pageFactor: response.pageFactor,
           availableShiftsCount: response.availableShifts.total,
           filter: JSON.stringify(filter)
+        });
+
+        dispatch({
+          type: SET_PAGE_FACTOR,
+          payload: pageFactor
         });
         availableShifts = applySortOnShifts(response.availableShifts, filter);
       }
@@ -881,6 +961,32 @@ export const onResetFilters = (payload: IPayload) => async (
   });
 
   onApplyFilter(payload)(dispatch);
+};
+
+export const onResetFiltersSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  const sortKey = SORT_KEY_DEFAULT;
+  const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
+  const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
+
+  const filterData = {
+    sortKey,
+    maxHoursPerWeek,
+    daysHoursFilter
+  };
+  dispatch({
+    type: RESET_FILTERS_SELF_SERVICE,
+    payload: {
+      ...filterData
+    }
+  });
+  payload.data.output["update-shift"] = filterData;
+  log("Reset filter initiated", {
+    filter: JSON.stringify(filterData)
+  });
+
+  onApplyFilterSelfService(payload)(dispatch);
 };
 
 export const loadShiftPreferences = (payload: IPayload) => async (

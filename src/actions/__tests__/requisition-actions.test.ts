@@ -1319,7 +1319,7 @@ describe("Test for Actions", () => {
 
     await requisitionActions.onShiftsIncrementalLoadSelfService(payload)(store.dispatch);
 
-    expect(store.getActions().length).toBe(4);
+    expect(store.getActions().length).toBe(5);
     expect(hasAction(store.getActions(), requisitionActions.MERGE_SHIFTS)).toBe(
         false
     );
@@ -1427,7 +1427,7 @@ describe("Test for Actions", () => {
     };
     await requisitionActions.onApplyFilterSelfService(payload)(store.dispatch);
 
-    expect(store.getActions().length).toBe(4);
+    expect(store.getActions().length).toBe(5);
     expect(
         hasAction(store.getActions(), requisitionActions.UPDATE_SHIFTS)
     ).toBe(true);
@@ -1565,12 +1565,12 @@ describe("Test for Actions", () => {
 
     await requisitionActions.onApplyFilterSelfService(payload)(store.dispatch);
 
-    expect(store.getActions().length).toBe(5);
+    expect(store.getActions().length).toBe(6);
     expect(
         hasAction(store.getActions(), requisitionActions.UPDATE_SHIFTS)
     ).toBe(true);
     expect(
-        hasAction(store.getActions(), requisitionActions.RESET_FILTERS)
+        hasAction(store.getActions(), requisitionActions.RESET_FILTERS_SELF_SERVICE)
     ).toBe(true);
 
     expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
@@ -1640,6 +1640,135 @@ describe("Test for Actions", () => {
     expect(hasAction(store.getActions(), ON_RESPONSE_ERROR)).toBe(false);
     expect(
         hasAction(store.getActions(), requisitionActions.UPDATE_SHIFTS)
+    ).toBe(true);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
+  });
+
+  test("Test onResetFiltersSelfService", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(Promise.resolve({}));
+
+    requisitionActions.onResetFiltersSelfService(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(4);
+    expect(
+        hasAction(store.getActions(), requisitionActions.RESET_FILTERS_SELF_SERVICE)
+    ).toBe(true);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
+  });
+
+  test("Test onGetAllAvailableShiftsSelfService with requisitionId", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(
+        Promise.resolve({
+          availableShifts: {
+            total: 1
+          }
+        })
+    );
+
+    await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(7);
+    expect(
+        hasAction(store.getActions(), requisitionActions.UPDATE_REQUISITION)
+    ).toBe(true);
+    expect(
+        hasAction(store.getActions(), requisitionActions.SET_PAGE_FACTOR)
+    ).toBe(true);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
+  });
+
+  test("Test onGetAllAvailableShiftsSelfService with requisitionId and API failed", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(Promise.reject({}));
+
+    await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(6);
+    expect(
+        hasAction(store.getActions(), requisitionActions.UPDATE_REQUISITION)
+    ).toBe(false);
+    expect(
+        hasAction(store.getActions(), requisitionActions.SET_PAGE_FACTOR)
+    ).toBe(false);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
+  });
+
+  test("Test onGetAllAvailableShiftsSelfService with stored ApplicationId", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(
+        Promise.resolve({
+          availableShifts: {
+            total: 1
+          }
+        })
+    );
+    payload.urlParams.applicationId = null;
+    window.sessionStorage.setItem("applicationId", TEST_APPLICATION_ID);
+
+    await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
+
+    expect(window.location.href).toBe(
+        `http://localhost/#/update-shift/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`
+    );
+    expect(store.getActions().length).toBe(4);
+    expect(
+        hasAction(store.getActions(), requisitionActions.UPDATE_REQUISITION)
+    ).toBe(false);
+    expect(
+        hasAction(store.getActions(), requisitionActions.SET_PAGE_FACTOR)
+    ).toBe(false);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(0);
+  });
+
+  test("Test onGetAllAvailableShiftsSelfService with empty requisitionId", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(
+        Promise.resolve({
+          availableShifts: {
+            total: 1
+          }
+        })
+    );
+    payload.urlParams.requisitionId = null;
+
+    await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(4);
+    expect(
+        hasAction(store.getActions(), requisitionActions.UPDATE_REQUISITION)
+    ).toBe(false);
+    expect(
+        hasAction(store.getActions(), requisitionActions.SET_PAGE_FACTOR)
+    ).toBe(false);
+    expect(mockGetAllAvailableShifts).toBeCalledTimes(0);
+  });
+
+  test("Test onGetAllAvailableShiftsSelfService with requisitionId with empty shifts", async () => {
+    const mockGetAllAvailableShifts = jest.fn();
+    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    mockGetAllAvailableShifts.mockReturnValue(
+        Promise.resolve({
+          availableShifts: {
+            total: 0
+          }
+        })
+    );
+
+    await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
+
+    expect(store.getActions().length).toBe(7);
+    expect(
+        hasAction(store.getActions(), requisitionActions.UPDATE_REQUISITION)
+    ).toBe(true);
+    expect(
+        hasAction(store.getActions(), requisitionActions.SET_PAGE_FACTOR)
     ).toBe(true);
     expect(mockGetAllAvailableShifts).toBeCalledTimes(1);
   });

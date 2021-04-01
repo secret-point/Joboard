@@ -6,6 +6,7 @@ export enum EVENT {
   JOBS_SORT = "jobs sort",
   SHIFT_SELECTED = "selected shift",
   GET_SHIFTS_ERROR = "shift display error",
+  GET_SHIFTS_ERROR_SELF_SERVICE = "shift display error on self service page",
   CLICK_ROLE = "click role",
   SELECT_PREFERENCES = "select preferences",
   START_JOB_VIDEO = "start job video",

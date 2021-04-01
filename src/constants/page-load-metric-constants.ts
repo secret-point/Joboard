@@ -636,6 +636,17 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ]
   },
 
+  "get-all-avaliable-shift-error-self-service": {
+    eventPayload: {
+      event: EVENT.GET_SHIFTS_ERROR_SELF_SERVICE
+    },
+    dataPayload: [
+      applicationPayloadDefault,
+      jobPayloadDefault,
+      shiftsErrorEvent
+    ]
+  },
+
   "apply-filter": {
     eventPayload: {
       event: EVENT.JOBS_FILTER

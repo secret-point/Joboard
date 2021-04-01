@@ -20,6 +20,9 @@ import {
   UPDATE_REQUISITION,
   UPDATE_SHIFTS,
   RESET_FILTERS,
+  RESET_FILTERS_SELF_SERVICE,
+  SHOW_MESSAGE,
+  REMOVE_MESSAGE,
   UPDATE_JOB_DESCRIPTION,
   SELECTED_REQUISITION,
   SET_LOADING_SHIFTS,
@@ -411,6 +414,11 @@ const AppReducer = (state = initialState, action: IAction) => {
           },
           shiftsEmptyOnFilter: {
             $set: payload.shiftsEmptyOnFilter
+          },
+          config: {
+            message: {
+              $set: ""
+            }
           }
         }
       });
@@ -440,6 +448,30 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
 
+    case SHOW_MESSAGE: {
+      return updateState(state, {
+        data: {
+          config: {
+            message: {
+              $set: payload.message
+            }
+          }
+        }
+      });
+    }
+
+    case REMOVE_MESSAGE: {
+      return updateState(state, {
+        data: {
+          config: {
+            message: {
+              $set: ""
+            }
+          }
+        }
+      });
+    }
+
     case UPDATE_JOB_DESCRIPTION: {
       const requisition = cloneDeep(state.data.requisition);
       requisition.jobDescription = { ...payload.jobDescription };
@@ -460,6 +492,20 @@ const AppReducer = (state = initialState, action: IAction) => {
           output: {
             "job-opportunities": {
               $set: jobOpportunities
+            }
+          }
+        }
+      });
+    }
+
+    case RESET_FILTERS_SELF_SERVICE: {
+      let updateShift = cloneDeep(state.data.output["update-shift"]);
+      updateShift = { ...payload };
+      return updateState(state, {
+        data: {
+          output: {
+            "update-shift": {
+              $set: updateShift
             }
           }
         }
