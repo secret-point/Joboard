@@ -1,4 +1,5 @@
 import { SelfIdentificationInfo } from "./candidate-application-service-requests";
+import {Shifts} from "./IPayload";
 
 export interface ContingentOffer {
   offerAcceptedTime: string;
@@ -10,6 +11,7 @@ export interface JobSelected {
   headCountRequestId: string;
   jobSelectedOn: string;
   bgcVendorName: BGCVendorType;
+  shift: Shifts;
 }
 
 export enum BGCVendorType {
