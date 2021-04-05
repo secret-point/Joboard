@@ -116,6 +116,23 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   dispatch(push(path));
 };
 
+export const onGoToSelfServicePage = (payload: IPayload) => (dispatch: Function) => {
+  const { requisitionId, applicationId } = payload.urlParams;
+  const { hasShiftSelected } = payload.options;
+  const { noShiftSelected } = payload.options;
+  let path = `/app/${requisitionId}`;
+  if (applicationId) {
+    path = `${path}/${applicationId}`;
+  }
+  if (isNil(payload.data.application.jobSelected)) {
+    onUpdatePageId(noShiftSelected)(dispatch);
+  } else {
+    onUpdatePageId(hasShiftSelected)(dispatch);
+  }
+
+  dispatch(push(path));
+};
+
 export const onGoBack = (payload: IPayload) => (dispatch: Function) => {
   const { options } = payload;
   if (options?.adobeMetrics) {

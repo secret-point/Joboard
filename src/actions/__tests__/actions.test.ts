@@ -162,6 +162,38 @@ describe("Test for Actions", () => {
     expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
   });
 
+  test("Test OnGoToSelfServicePage with no shift selected", async () => {
+    const store = getStore();
+    const payload = getPayload();
+    //set goto
+    payload.options = {
+      hasShiftSelected: "current-shift",
+      noShiftSelected: "no-shift-selected"
+    };
+    payload.data.application.jobSelected = null;
+    await actions.onGoToSelfServicePage(payload)(store.dispatch);
+
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("no-shift-selected");
+    expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
+  });
+
+  test("Test OnGoToSelfServicePage with a shift selected", async () => {
+    const store = getStore();
+    const payload = getPayload();
+    //set goto
+    payload.options = {
+      hasShiftSelected: "current-shift",
+      noShiftSelected: "no-shift-selected"
+    };
+    payload.data.application.jobSelected = {};
+    await actions.onGoToSelfServicePage(payload)(store.dispatch);
+
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("current-shift");
+    expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
+  });
+
   test("Test OnGoBack action", async () => {
     const store = getStore();
     const payload = getPayload();
