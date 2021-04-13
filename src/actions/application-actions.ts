@@ -629,3 +629,122 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
     )(dispatch);
   }
 };
+
+export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application, selectedShift } = payload.data;
+    const { urlParams } = payload;
+
+    if (isNil(urlParams.applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
+
+    log("Updating the shift selection in application", {
+      selectedShift: JSON.stringify(selectedShift)
+    });
+
+    let response;
+
+    response = await new CandidateApplicationService().updateApplication({
+      type: "update-shift",
+      applicationId: urlParams.applicationId,
+      payload: {
+        headCountRequestId: selectedShift.headCountRequestId,
+        childRequisitionId: selectedShift.requisitionId,
+        shiftType: selectedShift.shiftType,
+        shift: selectedShift
+      }
+    });
+    response.shift = selectedShift;
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+
+    log(
+        `Updated application at update-shift and update application data in state`,
+        {
+          selectedShift: JSON.stringify(selectedShift)
+        }
+    );
+    if (payload.options?.goTo) {
+      log(
+          `After updating shift, application is redirecting to ${payload.options?.goTo}`
+      );
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    log(
+        `Complete task event initiated on action update-shift`
+    );
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while updating job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
+  }
+};
+
+export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application } = payload.data;
+    const { urlParams } = payload;
+
+    if (isNil(urlParams.applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
+
+    let response;
+
+    response = await new CandidateApplicationService().updateApplication({
+      type: "cancel-shift",
+      applicationId: urlParams.applicationId,
+      payload: {}
+    });
+
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+
+    if (payload.options?.goTo) {
+      log(
+          `After canceling shift, application is redirecting to ${payload.options?.goTo}`
+      );
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    log(
+        `Complete task event initiated on action cancel-shift`
+    );
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while canceling job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
+  }
+};
