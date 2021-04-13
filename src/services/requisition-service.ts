@@ -105,4 +105,21 @@ export default class RequisitionService {
 
     return response.data;
   }
+
+  async getAllAvailableShiftsWithTrainingAvailability(
+      requisitionId: string,
+      applicationId?: string,
+      payload?: AvailableFilter
+  ) {
+    const response = await this.axiosInstance.post(
+        `/get-all-available-shifts-with-training-availability`,
+        {
+          requisitionId,
+          applicationId,
+          payload
+        }
+    );
+
+    return response.data;
+  }
 }

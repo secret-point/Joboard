@@ -1221,7 +1221,7 @@ describe("Test for Actions", () => {
 
   test("Test onShiftsIncrementalLoadSelfService with page factor", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1249,7 +1249,7 @@ describe("Test for Actions", () => {
 
   test("Test onShiftsIncrementalLoadSelfService without page factor", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1306,7 +1306,7 @@ describe("Test for Actions", () => {
 
   test("Test onShiftsIncrementalLoadSelfService without page factor with empty shift returned", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1328,7 +1328,7 @@ describe("Test for Actions", () => {
 
   test("Test onShiftsIncrementalLoadSelfService without page factor with failed API", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(Promise.reject({}));
     payload.data.shiftPageFactor = null;
 
@@ -1344,7 +1344,7 @@ describe("Test for Actions", () => {
 
   test("Test onShiftsIncrementalLoadSelfService without page factor with not found response", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.reject({
           response: {
@@ -1366,7 +1366,7 @@ describe("Test for Actions", () => {
 
   test("Test coverage for constructFilterPayloadSelfService", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(Promise.reject({}));
     payload.data.shiftPageFactor = null;
     payload.data.output["update-shift"] = {
@@ -1392,7 +1392,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter without sort option on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1436,7 +1436,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter with sort option on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1482,7 +1482,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter with sort option with empty requisition Id on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1529,7 +1529,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter without sort option with no preferred schedule on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1578,7 +1578,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter without sort option with API failed on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(Promise.reject({}));
     payload.data.output["update-shift"] = {
       maxHoursPerWeek: 40,
@@ -1609,7 +1609,7 @@ describe("Test for Actions", () => {
 
   test("Test onApplyFilter without sort option with Not found response on SelfService page", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.reject({
           response: {
@@ -1646,7 +1646,7 @@ describe("Test for Actions", () => {
 
   test("Test onResetFiltersSelfService", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(Promise.resolve({}));
 
     requisitionActions.onResetFiltersSelfService(payload)(store.dispatch);
@@ -1660,7 +1660,7 @@ describe("Test for Actions", () => {
 
   test("Test onGetAllAvailableShiftsSelfService with requisitionId", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1683,7 +1683,7 @@ describe("Test for Actions", () => {
 
   test("Test onGetAllAvailableShiftsSelfService with requisitionId and API failed", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(Promise.reject({}));
 
     await requisitionActions.onGetAllAvailableShiftsSelfService(payload)(store.dispatch);
@@ -1700,7 +1700,7 @@ describe("Test for Actions", () => {
 
   test("Test onGetAllAvailableShiftsSelfService with stored ApplicationId", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1728,7 +1728,7 @@ describe("Test for Actions", () => {
 
   test("Test onGetAllAvailableShiftsSelfService with empty requisitionId", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {
@@ -1752,7 +1752,7 @@ describe("Test for Actions", () => {
 
   test("Test onGetAllAvailableShiftsSelfService with requisitionId with empty shifts", async () => {
     const mockGetAllAvailableShifts = jest.fn();
-    RequisitionService.prototype.getAllAvailableShifts = mockGetAllAvailableShifts;
+    RequisitionService.prototype.getAllAvailableShiftsWithTrainingAvailability = mockGetAllAvailableShifts;
     mockGetAllAvailableShifts.mockReturnValue(
         Promise.resolve({
           availableShifts: {

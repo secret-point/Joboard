@@ -324,7 +324,7 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
   } else if (requisitionId) {
     try {
       log(`getting all available shifts for requisition ${requisitionId}`);
-      const response = await new RequisitionService().getAllAvailableShifts(
+      const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
           requisitionId,
           applicationId
       );
@@ -650,7 +650,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
             filter: JSON.stringify(filter)
           }
       );
-      const response = await new RequisitionService().getAllAvailableShifts(
+      const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
           requisitionId,
           applicationId,
           filter
@@ -881,7 +881,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
           });
           filter = constructFilterPayloadSelfService(payload);
         }
-        const response = await new RequisitionService().getAllAvailableShifts(
+        const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
             requisitionId,
             applicationId,
             filter
