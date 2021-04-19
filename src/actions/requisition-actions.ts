@@ -2,7 +2,7 @@ import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
-import { setLoading, onUpdatePageId, onUpdateChange } from "./actions";
+import {setLoading, onUpdatePageId, onUpdateChange, onGoToAction} from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
@@ -344,6 +344,14 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
         type: SET_PAGE_FACTOR,
         payload: response.pageFactor
       });
+
+      if (payload.options?.goTo) {
+        log(
+            `Application is redirecting to ${payload.options?.goTo}`
+        );
+        onGoToAction(payload)(dispatch);
+      }
+
       setLoading(false)(dispatch);
     } catch (ex) {
       logError("Error while fetching available shits", ex);
