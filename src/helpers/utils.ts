@@ -33,7 +33,14 @@ export const launchAuthentication = () => {
   let hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
   const state = window.reduxStore.getState();
-  const currentPage = "resume-application";
+  let currentPage;
+  const previousPage = window.localStorage.getItem("page");
+  if (previousPage === "no-shift-selected" || previousPage === "current-shift") {
+    //in candidate-self-service workflow
+    currentPage = previousPage;
+  } else {
+    currentPage = "resume-application";
+  }
   let redirectUrl = origin;
   redirectUrl = `${redirectUrl}/?page=${currentPage}&requisitionId=${hash[1]}&applicationId=${hash[2]}&${queryStr}`;
   if (hash.length === 4) {
