@@ -13,6 +13,7 @@ import { PAGE_TITLE } from "../constants/adobe-analytics";
 import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
 import { log, logError } from "../helpers/log-helper";
+import i18n from "../i18n";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -183,8 +184,8 @@ export const onUpdatePageId = (page: any) => async (dispatch: Function) => {
         }, 5000);
       }
     }
-    if (!isNil(PAGE_TITLE[page])) {
-      document.title = `Amazon Jobs - ${PAGE_TITLE[page]}`;
+    if (PAGE_TITLE.has(page)) {
+      document.title = `Amazon Jobs - ${i18n.t(`pageTitles:${page}`)}`;
     }
     dispatch({
       type: ON_UPDATE_PAGE_ID,

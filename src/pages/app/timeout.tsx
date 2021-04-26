@@ -9,6 +9,7 @@ import { connect } from "react-redux";
 import { onShowNavbar } from "../../actions/actions";
 import { IconClock } from "@amzn/stencil-react-components/icons";
 import { Button } from "@amzn/stencil-react-components/button";
+import { useTranslation } from 'react-i18next';
 
 interface Error403PageProps {
   onShowNavbar: Function;
@@ -27,6 +28,8 @@ const TimeoutPage: React.FC<Error403PageProps> = ({
     window.location.assign(appConfig.dashboardUrl);
   };
 
+  const { t: translate } = useTranslation();
+
   return (
     <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
       {({ matches }) => (
@@ -34,16 +37,15 @@ const TimeoutPage: React.FC<Error403PageProps> = ({
           <Col gridGap="m" padding="l">
             <Text fontSize="m">
               <Row gridGap={4} alignItems="center">
-                <IconClock color="warning" title="Session Expired" />
-                <Col>Session Expired</Col>
+                <IconClock color="warning" title={translate("servicePages:timeout.title")} />
+                <Col>{translate("servicePages:timeout.title")}</Col>
               </Row>
             </Text>
             <Text fontSize="xs">
-              Due to inactivity, you are session is expired, Please return to
-              dashboard and resume the application.
+              {translate('servicePages:timeout.description')}
             </Text>
             <Button data-testid="dashboard-button" primary onClick={onClick}>
-              Return to dashboard
+              {translate('servicePages:return-to-dashboard')}
             </Button>
           </Col>
         </div>

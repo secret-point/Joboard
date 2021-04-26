@@ -20,6 +20,7 @@ import { isEmpty } from "lodash";
 import { objectToQuerystring } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
+import './i18n';
 
 declare global {
   interface Window {

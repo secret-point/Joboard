@@ -9,6 +9,7 @@ import { connect } from "react-redux";
 import { onShowNavbar } from "../../actions/actions";
 import { IconCrossCircle } from "@amzn/stencil-react-components/icons";
 import { Button } from "@amzn/stencil-react-components/button";
+import { useTranslation } from 'react-i18next';
 
 interface Error403PageProps {
   onShowNavbar: Function;
@@ -27,6 +28,8 @@ const Error403Page: React.FC<Error403PageProps> = ({
     window.location.assign(appConfig.dashboardUrl);
   };
 
+  const { t: translate } = useTranslation();
+
   return (
     <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
       {({ matches }) => (
@@ -34,15 +37,15 @@ const Error403Page: React.FC<Error403PageProps> = ({
           <Col gridGap="m" padding="l">
             <Text fontSize="m">
               <Row gridGap={4} alignItems="center">
-                <IconCrossCircle color="negative" title="Access Denied" />
-                <Col>Access Denied</Col>
+                <IconCrossCircle color="negative" title={translate("servicePages:error-403.title")} />
+                <Col>{translate("servicePages:error-403.title")}</Col>
               </Row>
             </Text>
             <Text fontSize="xs">
-              You are not authorized to view the information you requested.
+              {translate('servicePages:error-403.description')}
             </Text>
             <Button data-testid="dashboard-button" primary onClick={onClick}>
-              Return to dashboard
+              {translate('servicePages:return-to-dashboard')}
             </Button>
           </Col>
         </div>
