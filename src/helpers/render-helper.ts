@@ -15,8 +15,7 @@ export const covertValueTo = (type: string, value: any) => {
     case "DATE_TO_STRING": {
       return isEmpty(value)
         ? value
-        : moment(value)
-            .utc()
+        : moment.utc(value)
             .format("YYYY-MM-DD");
     }
     default:
@@ -52,7 +51,7 @@ export const validation = (
       let tenYearsFromNow = moment()
         .utc()
         .subtract(18, "years");
-      if (moment(value).utc() <= tenYearsFromNow) {
+      if (moment.utc(value) <= tenYearsFromNow) {
         return true;
       } else {
         return false;
