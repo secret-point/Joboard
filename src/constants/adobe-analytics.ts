@@ -14,7 +14,15 @@ export enum EVENT {
   SUBMIT_NHE_PREFERENCES = "submit nhe preferences",
   RETURN_TO_NHE = "return to nhe",
   SELECT_NHE = "select NHE",
-  NHE_PREFERENCE = "nhe preferences"
+  NHE_PREFERENCE = "nhe preferences",
+  GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE = "get all available shift error on self service page",
+  NO_AVAILABLE_SHIFT_SELF_SERVICE = "no available shift on self service page",
+  APPLY_FILTER_SELF_SERVICE = "apply filter on self service page",
+  APPLY_SORTING_SELF_SERVICE = "apply sorting on self service page",
+  SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE = "successfully update shift on self service page",
+  SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE = "successfully cancel shift on self service page",
+  Fail_UPDATE_SHIFT_SELF_SERVICE = "fail to update shift on self service page",
+  Fail_CANCEL_SHIFT_SELF_SERVICE = "fail to cancel shift on self service page"
 }
 
 export enum PAGE_TYPE {

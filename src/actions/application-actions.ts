@@ -687,6 +687,9 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
     log(
         `Complete task event initiated on action update-shift`
     );
+
+    sendAdobeAnalytics("successful-update-shift-self-service");
+
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -695,9 +698,16 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
       window.localStorage.setItem("page", "applicationId-null");
       onUpdatePageId("applicationId-null")(dispatch);
     } else {
-      onUpdateError(
-          ex?.response?.data?.errorMessage || "Failed to update application"
-      )(dispatch);
+      let errorMessage;
+      if (ex?.response?.data?.errorMessage && ex.response.data.errorMessage ===
+          "The appointment you selected is no longer available. Please select a different time.") {
+        errorMessage = "The schedule you selected is no longer available. Please select a different option."
+      } else {
+        errorMessage = ex?.response?.data?.errorMessage || "Failed to update application";
+      }
+      onUpdateError(errorMessage)(dispatch);
+
+      sendAdobeAnalytics("fail-update-shift-self-service");
     }
   }
 };
@@ -722,6 +732,8 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
       applicationId: urlParams.applicationId,
       payload: {}
     });
+
+    sendAdobeAnalytics("successful-cancel-shift-self-service");
 
     dispatch({
       type: UPDATE_APPLICATION,
@@ -750,6 +762,14 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
       onUpdateError(
           ex?.response?.data?.errorMessage || "Failed to update application"
       )(dispatch);
+
+      sendAdobeAnalytics("fail-cancel-shift-self-service");
     }
   }
+};
+
+export const sendAdobeAnalytics = (eventName: any) => {
+  let dataLayer: any = {};
+  dataLayer = getDataForEventMetrics(eventName);
+  sendDataLayerAdobeAnalytics(dataLayer);
 };

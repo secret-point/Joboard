@@ -604,6 +604,58 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
   },
+
+  "no-available-shift-self-service": {
+    eventPayload: {
+      event: EVENT.NO_AVAILABLE_SHIFT_SELF_SERVICE,
+      page: {
+        name: PAGE_NAME["update-shift"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+  },
+
+  "successful-update-shift-self-service": {
+    eventPayload: {
+      event: EVENT.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload
+    ]
+  },
+  "fail-update-shift-self-service": {
+    eventPayload: {
+      event: EVENT.Fail_UPDATE_SHIFT_SELF_SERVICE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload
+    ]
+  },
+  "successful-cancel-shift-self-service": {
+    eventPayload: {
+      event: EVENT.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "fail-cancel-shift-self-service": {
+    eventPayload: {
+      event: EVENT.Fail_CANCEL_SHIFT_SELF_SERVICE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
   "session-timeout": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -638,7 +690,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
 
   "get-all-avaliable-shift-error-self-service": {
     eventPayload: {
-      event: EVENT.GET_SHIFTS_ERROR_SELF_SERVICE
+      event: EVENT.GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE
     },
     dataPayload: [
       applicationPayloadDefault,
@@ -647,6 +699,20 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ]
   },
 
+  "apply-filter-self-service": {
+    eventPayload: {
+      event: EVENT.APPLY_FILTER_SELF_SERVICE
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    appConfigPayload: [filterPayloadDefault]
+  },
+  "apply-sorting-self-service": {
+    eventPayload: {
+      event: EVENT.APPLY_SORTING_SELF_SERVICE
+    },
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    appConfigPayload: [sortPayloadDefault]
+  },
   "apply-filter": {
     eventPayload: {
       event: EVENT.JOBS_FILTER

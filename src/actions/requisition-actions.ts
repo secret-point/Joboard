@@ -18,6 +18,7 @@ import { log, logError } from "../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
+import {sendAdobeAnalytics} from "./application-actions";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -350,6 +351,10 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
             `Application is redirecting to ${payload.options?.goTo}`
         );
         onGoToAction(payload)(dispatch);
+      }
+
+      if (response.availableShifts.total === 0) {
+        sendAdobeAnalytics("no-available-shift-self-service");
       }
 
       setLoading(false)(dispatch);
@@ -690,7 +695,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
         dispatch({
           type: SHOW_MESSAGE,
           payload: {
-            message:"Sorry, we cannot find anymore schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
+            message:"Sorry, we cannot find any more schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
           }
         });
       }
@@ -846,9 +851,9 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
 
   let dataLayer: any = {};
   if (options?.hasSortAction) {
-    dataLayer = getDataForEventMetrics("apply-sorting");
+    dataLayer = getDataForEventMetrics("apply-sorting-self-service");
   } else {
-    dataLayer = getDataForEventMetrics("apply-filter");
+    dataLayer = getDataForEventMetrics("apply-filter-self-service");
     dataLayer.filter.daysOfWeek = activeDays;
   }
   sendDataLayerAdobeAnalytics(dataLayer);
