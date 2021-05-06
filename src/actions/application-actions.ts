@@ -768,6 +768,13 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
   }
 };
 
+export const sendPageLoadAdobeEvent = (payload: IPayload) => async () => {
+  const { options } = payload;
+  if (options?.adobeMetrics) {
+    postAdobeMetrics(options.adobeMetrics, {});
+  }
+};
+
 export const sendAdobeAnalytics = (eventName: any) => {
   let dataLayer: any = {};
   dataLayer = getDataForEventMetrics(eventName);

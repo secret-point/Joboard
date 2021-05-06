@@ -68,7 +68,13 @@ export const PAGE_NAME: any = {
   "cali-disclosure": "BGC: california disclosure",
   "job-preferences-thank-you": "shift preference submitted",
   "job-preferences": "shift preference",
-  "nhe-preferences": "nhe preferences"
+  "nhe-preferences": "nhe preferences",
+
+  "current-shift": "current-shift",
+  "no-shift-selected": "no-shift-selected",
+  "update-shift-confirmation": "update-shift-confirmation",
+  "cancel-shift-confirmation": "cancel-shift-confirmation",
+  "update-shift": "update-shift"
 };
 
 export const PAGE_TITLE: Set<string> = new Set(

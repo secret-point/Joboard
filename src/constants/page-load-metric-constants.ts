@@ -926,5 +926,74 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       shiftPayloadDefault
     ]
+  },
+  "update-shift": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["update-shift"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "no-shift-selected": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["no-shift-selected"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault
+    ]
+  },
+  "current-shift": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["current-shift"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "cancel-shift-confirmation": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["cancel-shift-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault
+    ]
+  },
+  "update-shift-confirmation": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["update-shift-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload
+    ]
   }
 };

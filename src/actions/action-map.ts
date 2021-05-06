@@ -29,7 +29,8 @@ import {
   onTerminateApplication,
   onUpdateWotcStatus,
   onShowPreviousName,
-  onSaveShiftPreferences
+  onSaveShiftPreferences,
+  sendPageLoadAdobeEvent
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -97,7 +98,8 @@ const actionMap: any = {
   SELECT_JOB_ROLE: selectJobRole,
   ON_SAVE_SHIFT_PREFERENCES: onSaveShiftPreferences,
   LOAD_SHIFT_PREFERENCES_DETAILS: loadShiftPreferences,
-  LOG_VIDEO_METRICS: onLogVideoMetrics
+  LOG_VIDEO_METRICS: onLogVideoMetrics,
+  SEND_PAGE_LOAD_ADOBE_EVENT: sendPageLoadAdobeEvent,
 };
 
 export default actionMap;
