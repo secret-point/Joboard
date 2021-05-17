@@ -198,6 +198,20 @@ const shiftPayloadDefault = {
   ]
 };
 
+const shiftTypePayloadDefault = {
+  key: "shiftType",
+  values: [
+    {
+      key: "oldShiftType",
+      value: "application.shift.shiftType"
+    },
+    {
+      key: "newShiftType",
+      value: "selectedShift.shiftType"
+    }
+  ]
+};
+
 const nhePayloadDefault = {
   key: "NHE",
   values: [
@@ -623,17 +637,30 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      eventShiftPayload
+      eventShiftPayload,
+      shiftTypePayloadDefault
     ]
   },
-  "fail-update-shift-self-service": {
+  "fail-update-shift-schedule-full-self-service": {
     eventPayload: {
-      event: EVENT.Fail_UPDATE_SHIFT_SELF_SERVICE
+      event: EVENT.FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE
     },
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      eventShiftPayload
+      eventShiftPayload,
+      shiftTypePayloadDefault
+    ]
+  },
+  "fail-update-shift-unknown-error-self-service": {
+    eventPayload: {
+      event: EVENT.FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      shiftTypePayloadDefault
     ]
   },
   "successful-cancel-shift-self-service": {
@@ -643,17 +670,19 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "fail-cancel-shift-self-service": {
     eventPayload: {
-      event: EVENT.Fail_CANCEL_SHIFT_SELF_SERVICE
+      event: EVENT.FAIL_CANCEL_SHIFT_SELF_SERVICE
     },
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "session-timeout": {
@@ -946,6 +975,19 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       event: EVENT.PAGE_LOAD,
       page: {
         name: PAGE_NAME["no-shift-selected"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault
+    ]
+  },
+  "view-shift": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["view-shift"],
         type: PAGE_TYPE.APPLICATION
       }
     },

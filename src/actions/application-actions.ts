@@ -667,6 +667,7 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
         shift: selectedShift
       }
     });
+    sendAdobeAnalytics("successful-update-shift-self-service");
     response.shift = selectedShift;
     dispatch({
       type: UPDATE_APPLICATION,
@@ -691,8 +692,6 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
         `Complete task event initiated on action update-shift`
     );
 
-    sendAdobeAnalytics("successful-update-shift-self-service");
-
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -705,12 +704,13 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
       if (ex?.response?.data?.errorMessage && ex.response.data.errorMessage ===
           "The appointment you selected is no longer available. Please select a different time.") {
         errorMessage = "The schedule you selected is no longer available. Please select a different option."
+        sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
       } else {
         errorMessage = ex?.response?.data?.errorMessage || "Failed to update application";
+        sendAdobeAnalytics("fail-update-shift-unknown-error-self-service");
       }
       onUpdateError(errorMessage)(dispatch);
 
-      sendAdobeAnalytics("fail-update-shift-self-service");
     }
   }
 };

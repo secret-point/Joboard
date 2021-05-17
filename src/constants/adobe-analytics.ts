@@ -21,8 +21,9 @@ export enum EVENT {
   APPLY_SORTING_SELF_SERVICE = "apply sorting on self service page",
   SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE = "successfully update shift on self service page",
   SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE = "successfully cancel shift on self service page",
-  Fail_UPDATE_SHIFT_SELF_SERVICE = "fail to update shift on self service page",
-  Fail_CANCEL_SHIFT_SELF_SERVICE = "fail to cancel shift on self service page"
+  FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE = "fail to update shift due to unknown error on self service page",
+  FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE = "fail to update shift due to full schedule on self service page",
+  FAIL_CANCEL_SHIFT_SELF_SERVICE = "fail to cancel shift on self service page"
 }
 
 export enum PAGE_TYPE {
@@ -74,7 +75,8 @@ export const PAGE_NAME: any = {
   "no-shift-selected": "no-shift-selected",
   "update-shift-confirmation": "update-shift-confirmation",
   "cancel-shift-confirmation": "cancel-shift-confirmation",
-  "update-shift": "update-shift"
+  "update-shift": "update-shift",
+  "view-shift": "view-shift"
 };
 
 export const PAGE_TITLE: Set<string> = new Set(
