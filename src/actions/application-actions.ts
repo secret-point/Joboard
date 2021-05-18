@@ -68,7 +68,7 @@ export const onGetApplication = (payload: IPayload) => async (
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
     const requisitionId = payload.urlParams?.requisitionId;
-    const { options = {}, data } = payload;
+    const { options, data } = payload;
     let candidateResponse;
 
     log(`started getting application data for ${applicationId}`, {
@@ -77,10 +77,7 @@ export const onGetApplication = (payload: IPayload) => async (
     });
     if (!options?.loadOnlyApplicationData) {
       onGetRequisitionHeaderInfo(payload)(dispatch);
-      candidateResponse = await onGetCandidate(
-        payload,
-        options.ignoreCandidateData
-      )(dispatch);
+      candidateResponse = await onGetCandidate(payload)(dispatch);
     }
 
     if (
