@@ -10,6 +10,7 @@ import { MAX_MINUTES_FOR_HEARTBEAT } from "../constants";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { log, logError } from "../helpers/log-helper";
+import _get from "lodash/get";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -119,7 +120,7 @@ export const goToStep = async (workflowData: WorkflowData) => {
       });
     onUpdatePageId(
       workflowData.stepName,
-      workflowData.errorCode
+      _get(workflowData, "stepData.errorMessageCode")
     )(window.reduxStore.dispatch);
     if (
       workflowData.stepName === "supplementary-success" ||

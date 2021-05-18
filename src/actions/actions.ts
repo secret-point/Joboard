@@ -117,7 +117,9 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
   dispatch(push(path));
 };
 
-export const onGoToSelfServicePage = (payload: IPayload) => (dispatch: Function) => {
+export const onGoToSelfServicePage = (payload: IPayload) => (
+  dispatch: Function
+) => {
   const { requisitionId, applicationId } = payload.urlParams;
   const { hasShiftSelected } = payload.options;
   const { noShiftSelected } = payload.options;
