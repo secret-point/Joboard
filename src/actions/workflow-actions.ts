@@ -120,7 +120,7 @@ export const goToStep = async (workflowData: WorkflowData) => {
       });
     onUpdatePageId(
       workflowData.stepName,
-      _get(workflowData, "stepData.errorMessageCode")
+      workflowData?.errorMessageCode
     )(window.reduxStore.dispatch);
     if (
       workflowData.stepName === "supplementary-success" ||

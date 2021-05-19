@@ -5,10 +5,7 @@ export interface Consent {}
 
 export interface WorkflowData {
   stepName: string;
-  errorCode?: {
-    errorMessageCode: string;
-    rehireEligibilityChoice: string;
-  };
+  errorMessageCode: string;
 }
 
 export interface Bgc {}
