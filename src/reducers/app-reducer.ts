@@ -166,6 +166,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
     case ON_UPDATE_PAGE_ID: {
       const currentPage: any = {};
+      const workflowErrorCode = payload.errorCode || "not-rehire-eligible";
       currentPage.id = payload.updatedPageId;
       return updateState(state, {
         loading: { $set: false },
@@ -186,7 +187,7 @@ const AppReducer = (state = initialState, action: IAction) => {
         },
         data: {
           workflowErrorCode: {
-            $set: payload.errorCode
+            $set: workflowErrorCode
           }
         }
       });
