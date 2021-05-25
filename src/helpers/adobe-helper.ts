@@ -33,9 +33,7 @@ export const getDataForMetrics = () => {
           } else if (v.key === "day1Date") {
             //add day1Date, day1Week for page load
             let day1Date = formatDate(propertyOf(app.data)(v.value));
-            let day1Week = getDay1Week(day1Date);
             metricData[d.key][v.key] = day1Date;
-            metricData[d.key].day1Week = day1Week;
           } else if (d.key === "NHE" && v.key === "count") {
             // NHE sent the count of NHE, not the list
             metricData[d.key][v.key] =
@@ -81,12 +79,10 @@ export const getDataForEventMetrics = (eventName: any) => {
           if (v.key === "workflow") {
             metricData[d.key][v.key] = WORKFLOW;
           } else if (v.key === "day1Date") {
-            //add day1Date, day1Week, daysUntilDay1 for event
+            //add day1Date, daysUntilDay1 for event
             let day1Date = formatDate(propertyOf(app.data)(v.value));
-            let day1Week = getDay1Week(day1Date);
             let daysUntilDay1 = getDaysUntilDay1(day1Date);
             metricData[d.key][v.key] = day1Date;
-            metricData[d.key].day1Week = day1Week;
             metricData[d.key].daysUntilDay1 = daysUntilDay1;
           } else {
             metricData[d.key][v.key] = propertyOf(app.data)(v.value);
@@ -114,10 +110,6 @@ const formatDate = (ISODate: string) => {
   return moment(ISODate)
     .utc()
     .format("YYYY-MM-DD");
-};
-
-const getDay1Week = (day: string) => {
-  return moment(day).week();
 };
 
 const getDaysUntilDay1 = (day: string) => {

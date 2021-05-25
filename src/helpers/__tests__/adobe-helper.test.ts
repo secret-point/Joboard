@@ -189,4 +189,26 @@ describe("Unit tests for adobe helper", () => {
         expect(data.event).toBe("jobs sort");
         expect(data.job.ID).toBe(TEST_REQUISITION_ID);
     })
+    test("test getDataForMetrics for shift-selection with shift with day1Date and weekNumber", () => {
+        const weekNumber = 11;
+        store.getState = jest.fn().mockReturnValue({
+            app: {
+                currentPage: {
+                    id: "shift-selection"
+                },
+                data: {
+                    selectedShift: {
+                            day1Date: "2020-11-12T08:00:00Z",
+                            weekNumber
+                    }
+                }
+            }
+        });
+        const data = getDataForMetrics();
+        console.log(data);
+
+        expect(data.event).toBe("selected shift");
+        expect(data.shift.day1Date).toBe("2020-11-12");
+        expect(data.shift.day1Week).toBe(weekNumber);
+    })
 });

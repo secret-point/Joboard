@@ -140,6 +140,10 @@ const eventShiftPayload = {
       value: "selectedShift.day1Date"
     },
     {
+      key: "day1Week",
+      value: "selectedShift.weekNumber"
+    },
+    {
       key: "altCode",
       value: "selectedShift.altShiftCode"
     },
