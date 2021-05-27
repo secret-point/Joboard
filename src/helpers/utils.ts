@@ -22,6 +22,10 @@ export const convertPramsToJson = (params: string) => {
 };
 
 export const launchAuthentication = () => {
+  if (window.location.pathname.startsWith("/ds/")) {
+    launchAuthenticationDS();
+    return;
+  }
   const queryParamsInSession = window.sessionStorage.getItem("query-params");
   const queryParams = queryParamsInSession
     ? JSON.parse(queryParamsInSession)
@@ -52,6 +56,17 @@ export const launchAuthentication = () => {
   }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
+
+export const launchAuthenticationDS = () => {
+  /* Build auth URL using this URL for redirect */
+  const state = window.reduxStore.getState();
+  const url = `${
+    state.app.appConfig.authenticationURL
+  }/?redirectUrl=${encodeURIComponent(window.location.origin + window.location.pathname + window.location.search)}`;
+
+  /* Redirect to auth */
+  window.location.assign(url);
+}
 
 export const isJson = (obj: string) => {
   try {

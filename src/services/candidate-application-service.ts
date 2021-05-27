@@ -2,6 +2,8 @@ import { axiosHelper } from "./../helpers/axios-helper";
 import { AxiosInstance } from "axios";
 import {
   CreateApplicationRequest,
+  CreateApplicationRequestDS,
+  CreateApplicationResponseDS,
   UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
 export default class CandidateApplicationService {
@@ -28,6 +30,14 @@ export default class CandidateApplicationService {
       payload
     );
     return response.data;
+  }
+
+  async createApplicationDS(payload: CreateApplicationRequestDS): Promise<string> {
+    const response =  await this.axiosInstance.post(
+      "/ds/create-application/",
+      payload
+    ) as { data: CreateApplicationResponseDS }
+    return response.data.applicationId;
   }
 
   async updateApplication(payload: UpdateApplicationRequest) {

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./styles/index.css";
 import App from "./App.container";
 import store from "./store";
@@ -20,8 +21,11 @@ import { isEmpty } from "lodash";
 import { objectToQuerystring } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
-import './i18n';
+import "./i18n";
+import { DragonStoneApp } from "./dragon-stone-app";
+import { log } from "./helpers/log-helper";
 
+const DRAGONSTONE_PATH_PREFIX = "/ds/";
 declare global {
   interface Window {
     reduxStore: Store;
@@ -47,10 +51,11 @@ getInitialData()
       type: "LOAD_INIT_DATA",
       payload: { ...data }
     });
-    if (window.location.hash.includes("?token=")) {
-      const tokenString = window.location.hash.split("?token=");
-      window.localStorage.setItem("accessToken", tokenString[1]);
-    }
+
+    const isDragonStone = window.location.pathname.startsWith(
+      DRAGONSTONE_PATH_PREFIX
+    );
+
     const queryParams = queryString.parse(window.location.search);
     const requisitionId = queryParams["requisitionId"];
     const agency: any = queryParams["agency"];
@@ -58,16 +63,17 @@ getInitialData()
     const applicationId = queryParams["applicationId"];
     const misc = queryParams["misc"];
     const token = queryParams["token"] as any;
-    if (!isNil(requisitionId) && !isNil(page)) {
+
+    if (!isDragonStone && !isNil(requisitionId) && !isNil(page)) {
       const urlParams = { ...queryParams };
       delete urlParams.token;
       delete urlParams.page;
 
-      const queryString = objectToQuerystring(urlParams);
+      const requestQueryString = objectToQuerystring(urlParams);
 
       let appHashUrl = `#/${page}/${requisitionId}`;
-      appHashUrl = !isEmpty(queryString)
-        ? `${queryString}${appHashUrl}`
+      appHashUrl = !isEmpty(requestQueryString)
+        ? `${requestQueryString}${appHashUrl}`
         : appHashUrl;
       appHashUrl = !isNil(applicationId)
         ? `${appHashUrl}/${applicationId}`
@@ -75,11 +81,19 @@ getInitialData()
       appHashUrl = !isNil(misc)
         ? `${appHashUrl}/${applicationId}/${misc}`
         : appHashUrl;
+
+      log(`appHashUrl="${appHashUrl}"`);
       window.location.assign(appHashUrl);
     }
 
     if (!isNil(token)) {
+      /* TODO: Use react location lib for this */
       window.localStorage.setItem("accessToken", token);
+      const urlParams = { ...queryParams };
+      delete urlParams.token;
+      const requestQueryString = objectToQuerystring(urlParams);
+
+      window.history.replaceState({}, document.title, window.location.origin + window.location.pathname + requestQueryString);
     }
 
     if (!isNil(agency)) {
@@ -120,9 +134,19 @@ getInitialData()
     }
     const Main = () => (
       <Provider store={store}>
-        <App />
+        <Router>
+          <Switch>
+            <Route path="/ds/">
+              <DragonStoneApp />
+            </Route>
+            <Route path="/">
+              <App />
+            </Route>
+          </Switch>
+        </Router>
       </Provider>
     );
+
     ReactDOM.render(<Main />, document.getElementById("root"));
   })
   .catch(ex => {

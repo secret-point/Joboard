@@ -4,6 +4,15 @@ export interface CreateApplicationRequest {
   language: string;
 }
 
+export interface CreateApplicationRequestDS {
+  jobId: string;
+  scheduleId?: string;
+}
+
+export interface CreateApplicationResponseDS {
+  applicationId: string;
+}
+
 export interface UpdateApplicationRequest {
   applicationId: string;
   payload: any;

@@ -88,6 +88,11 @@ const AppReducer = (state = initialState, action: IAction) => {
   const { type, payload } = action;
 
   switch (type) {
+    /* TODO: refactor the typing on all these to be nicer */
+    case "createApplication": {
+      state.applicationId = action.payload.applicationId;
+      return state;
+    }
     case LOAD_INIT_DATA: {
       const outputDataObject = getOutputDataObject(payload[1].pageOrder);
 

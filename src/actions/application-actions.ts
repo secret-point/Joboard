@@ -96,7 +96,7 @@ export const onGetApplication = (payload: IPayload) => async (
         //candidates should not know about slotsAvailable for shift selected
         applicationResponse.jobSelected.shift.slotsAvailable = null;
       }
-      
+
       if (!applicationResponse.shift && !isEmpty(data.selectedShift)) {
         if (!payload.data.requisition.selectedChildRequisition) {
           onSelectedRequisition(data.selectedShift.requisitionId)(dispatch);
