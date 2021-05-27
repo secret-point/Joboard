@@ -69,7 +69,10 @@ describe("Unit tests for adobe helper", () => {
                 data: {
                     requisition: {
                         nheTimeSlots: []
-                    }
+                    },
+                    application: {
+                        shift: getShift()
+                    } 
                 }
             }
         });
@@ -79,9 +82,10 @@ describe("Unit tests for adobe helper", () => {
         expect(data.event).toBe("page load");
         expect(data.job.ID).toBe(TEST_REQUISITION_ID);
         expect(data.page.name).toBe("pre-hire appointment");
+        testDay1DateAndWeekNumber(data, getShift());
     })
 
-    test("test getDataForMetrics for job opportunities with shifts", () => {
+    test("test getDataForMetrics for job opportunities with shifts", () => {        
         store.getState = jest.fn().mockReturnValue({
             app: {
                 currentPage: {
@@ -140,7 +144,11 @@ describe("Unit tests for adobe helper", () => {
     test("test getDataForEventMetrics for contingent offer", () => {
         store.getState = jest.fn().mockReturnValue({
             app: {
-                data: {}
+                data: {
+                    application: {
+                        shift: getShift()
+                    } 
+                }
             }
         });
         const data = getDataForEventMetrics("contingent-offer");
@@ -149,6 +157,7 @@ describe("Unit tests for adobe helper", () => {
         expect(data.event).toBe("page load");
         expect(data.job.ID).toBe(TEST_REQUISITION_ID);
         expect(data.page.name).toBe("BB-contingent offer");
+        testDay1DateAndWeekNumber(data, getShift());
     })
 
     test("test getDataForEventMetrics for other pages", () => {
@@ -190,17 +199,13 @@ describe("Unit tests for adobe helper", () => {
         expect(data.job.ID).toBe(TEST_REQUISITION_ID);
     })
     test("test getDataForMetrics for shift-selection with shift with day1Date and weekNumber", () => {
-        const weekNumber = 11;
         store.getState = jest.fn().mockReturnValue({
             app: {
                 currentPage: {
                     id: "shift-selection"
                 },
                 data: {
-                    selectedShift: {
-                            day1Date: "2020-11-12T08:00:00Z",
-                            weekNumber
-                    }
+                    selectedShift: getShift()
                 }
             }
         });
@@ -208,7 +213,42 @@ describe("Unit tests for adobe helper", () => {
         console.log(data);
 
         expect(data.event).toBe("selected shift");
-        expect(data.shift.day1Date).toBe("2020-11-12");
-        expect(data.shift.day1Week).toBe(weekNumber);
+        testDay1DateAndWeekNumber(data, getShift());
+    })
+
+    test("test getDataForMetrics for thank you page", () => {        
+        store.getState = jest.fn().mockReturnValue({
+            app: {
+            currentPage: {
+                id: "thank-you"
+            },
+            data: {
+                application: {
+                    shift: getShift()
+                } 
+            }
+        }
+        });
+        const data = getDataForMetrics();
+        console.log(data);
+
+        expect(data.event).toBe("page load");
+        testDay1DateAndWeekNumber(data, getShift());
+        expect(data.job.ID).toBe(TEST_REQUISITION_ID);
+        expect(data.page.name).toBe("thank you / prehire activities");
     })
 });
+
+function testDay1DateAndWeekNumber(data: any, shift: any) {
+    expect(data.shift.day1Date).toBe(shift.day1Date.split("T")[0]);
+    expect(data.shift.day1Week).toBe(shift.weekNumber);
+}
+
+function getShift() {
+    const weekNumber = 11;
+    return {
+        day1Date: "2020-11-12T08:00:00Z",
+        headCountRequestId: TEST_HCR_ID,
+        weekNumber
+    };
+}

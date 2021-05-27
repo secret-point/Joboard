@@ -198,7 +198,11 @@ const shiftPayloadDefault = {
     {
       key: "day1Date",
       value: "application.shift.day1Date"
-    }
+    },
+    {
+      key: "day1Week",
+      value: "application.shift.weekNumber"
+    },
   ]
 };
 
