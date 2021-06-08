@@ -635,7 +635,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault]
   },
 
   "successful-update-shift-self-service": {
@@ -732,7 +732,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       applicationPayloadDefault,
       jobPayloadDefault,
-      shiftsErrorEvent
+      shiftsErrorEvent,
+      shiftTypePayloadDefault
     ]
   },
 
@@ -740,14 +741,14 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     eventPayload: {
       event: EVENT.APPLY_FILTER_SELF_SERVICE
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault],
     appConfigPayload: [filterPayloadDefault]
   },
   "apply-sorting-self-service": {
     eventPayload: {
       event: EVENT.APPLY_SORTING_SELF_SERVICE
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault],
     appConfigPayload: [sortPayloadDefault]
   },
   "apply-filter": {
@@ -966,7 +967,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "update-shift": {
     eventPayload: {
-      event: EVENT.PAGE_LOAD,
+      event: "update shift page load",
       page: {
         name: PAGE_NAME["update-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -975,7 +976,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "no-shift-selected": {
@@ -988,7 +990,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [
       jobPayloadDefault,
-      applicationPayloadDefault
+      applicationPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "view-shift": {
@@ -1001,7 +1004,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [
       jobPayloadDefault,
-      applicationPayloadDefault
+      applicationPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "current-shift": {
@@ -1015,7 +1019,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "cancel-shift-confirmation": {
@@ -1029,7 +1034,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      shiftTypePayloadDefault
     ]
   },
   "update-shift-confirmation": {
@@ -1043,7 +1049,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      eventShiftPayload
+      eventShiftPayload,
+      shiftTypePayloadDefault
     ]
   }
 };
