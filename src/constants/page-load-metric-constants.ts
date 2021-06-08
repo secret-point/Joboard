@@ -211,7 +211,7 @@ const shiftTypePayloadDefault = {
   values: [
     {
       key: "oldShiftType",
-      value: "application.shift.shiftType"
+      value: "application.jobSelected.shiftType"
     },
     {
       key: "newShiftType",
