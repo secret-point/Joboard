@@ -967,7 +967,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "update-shift": {
     eventPayload: {
-      event: "update shift page load",
+      event: EVENT.PAGE_LOAD,
       page: {
         name: PAGE_NAME["update-shift"],
         type: PAGE_TYPE.APPLICATION
