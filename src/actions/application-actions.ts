@@ -9,7 +9,7 @@ import {
   onSelectedRequisition
 } from "./requisition-actions";
 import HTTPStatusCodes from "../constants/http-status-codes";
-import { completeTask, loadWorkflow } from "./workflow-actions";
+import { completeTask, loadWorkflow, loadWorkflowDS } from "./workflow-actions";
 import propertyOf from "lodash/propertyOf";
 import {
   postAdobeMetrics,
@@ -26,6 +26,7 @@ import {
   ShiftTimeInterval
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
+import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
 
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -195,6 +196,9 @@ export const createApplication = (payload: IPayload) => async (
 ) => {
   if (isEmpty(payload.data.application)) {
     try {
+      // this is dragonstone if there is a jobId in the urlParams
+      const isDragonStone = !isNil(payload.urlParams.jobId);
+
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       log("started creating the application");
@@ -208,12 +212,22 @@ export const createApplication = (payload: IPayload) => async (
         throw Error(DUPLICATE_SSN);
       }
 
-      const response = await candidateApplicationService.createApplication({
-        candidateId: candidateResponse.candidateId,
-        parentRequisitionId: payload.urlParams.requisitionId,
-        language: "English"
-      });
-
+      // Invoke either createApplication or createApplicationDS as appropriate
+      let response;
+      if (!isDragonStone) {
+        response = await candidateApplicationService.createApplication({
+          candidateId: candidateResponse.candidateId,
+          parentRequisitionId: payload.urlParams.requisitionId,
+          language: "English"
+        });
+      } else {
+        response = await candidateApplicationService.createApplicationDS({
+          jobId: payload.urlParams.jobId || "",
+          scheduleId: payload.urlParams.scheduleId
+        });
+      }
+      log("createApplication response=", response);
+      console.log(response);
       window.sessionStorage.setItem("applicationId", response.applicationId);
       dispatch({
         type: UPDATE_APPLICATION,
@@ -232,13 +246,25 @@ export const createApplication = (payload: IPayload) => async (
 
       log("Updated candidate response in state");
 
-      log("started loading workflow");
-      loadWorkflow(
-        payload.urlParams.requisitionId,
-        response.applicationId,
-        candidateResponse.candidateId,
-        payload.appConfig
-      );
+      // TODO: invoke with jobId instead of requisitionId if appropriate
+      log("started loading workflow", response);
+      if (!isDragonStone) {
+        loadWorkflow(
+          payload.urlParams.requisitionId,
+          response.applicationId,
+          candidateResponse.candidateId,
+          payload.appConfig
+        );
+      } else {
+        // TODO call loadWorkflowDS
+        loadWorkflowDS(
+          payload.urlParams.jobId || "",
+          payload.urlParams.scheduleId || "",
+          response.applicationId,
+          candidateResponse.candidateId,
+          payload.appConfig
+        );
+      }
 
       //setLoading(false)(dispatch);
     } catch (ex) {
@@ -639,7 +665,7 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (
 };
 
 export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
@@ -677,20 +703,18 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
     });
 
     log(
-        `Updated application at update-shift and update application data in state`,
-        {
-          selectedShift: JSON.stringify(selectedShift)
-        }
+      `Updated application at update-shift and update application data in state`,
+      {
+        selectedShift: JSON.stringify(selectedShift)
+      }
     );
     if (payload.options?.goTo) {
       log(
-          `After updating shift, application is redirecting to ${payload.options?.goTo}`
+        `After updating shift, application is redirecting to ${payload.options?.goTo}`
       );
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
-    log(
-        `Complete task event initiated on action update-shift`
-    );
+    log(`Complete task event initiated on action update-shift`);
 
     setLoading(false)(dispatch);
   } catch (ex) {
@@ -701,22 +725,26 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
       onUpdatePageId("applicationId-null")(dispatch);
     } else {
       let errorMessage;
-      if (ex?.response?.data?.errorMessage && ex.response.data.errorMessage ===
-          "The appointment you selected is no longer available. Please select a different time.") {
-        errorMessage = "The schedule you selected is no longer available. Please select a different option."
+      if (
+        ex?.response?.data?.errorMessage &&
+        ex.response.data.errorMessage ===
+          "The appointment you selected is no longer available. Please select a different time."
+      ) {
+        errorMessage =
+          "The schedule you selected is no longer available. Please select a different option.";
         sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
       } else {
-        errorMessage = ex?.response?.data?.errorMessage || "Failed to update application";
+        errorMessage =
+          ex?.response?.data?.errorMessage || "Failed to update application";
         sendAdobeAnalytics("fail-update-shift-unknown-error-self-service");
       }
       onUpdateError(errorMessage)(dispatch);
-
     }
   }
 };
 
 export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
@@ -747,13 +775,11 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
 
     if (payload.options?.goTo) {
       log(
-          `After canceling shift, application is redirecting to ${payload.options?.goTo}`
+        `After canceling shift, application is redirecting to ${payload.options?.goTo}`
       );
       goTo(payload.options?.goTo, payload.urlParams)(dispatch);
     }
-    log(
-        `Complete task event initiated on action cancel-shift`
-    );
+    log(`Complete task event initiated on action cancel-shift`);
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -763,7 +789,7 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
       onUpdatePageId("applicationId-null")(dispatch);
     } else {
       onUpdateError(
-          ex?.response?.data?.errorMessage || "Failed to update application"
+        ex?.response?.data?.errorMessage || "Failed to update application"
       )(dispatch);
 
       sendAdobeAnalytics("fail-cancel-shift-self-service");

@@ -17,6 +17,11 @@ const Routes: React.FC = () => {
         <Route exact path="/timeout" component={TimeoutPage} />
         <Route
           exact
+          path="/create-application/job/:jobId"
+          component={CreateApplicationPage}
+        />
+        <Route
+          exact
           path="/create-application/:requisitionId"
           component={CreateApplicationPage}
         />
