@@ -76,7 +76,7 @@ export interface Candidate {
   nameSuffix: string;
   address: Address;
   timezone: string;
-  mailId: string;
+  emailId: string;
   language: string;
   preferredPhoneType: string;
   phoneNumber: string;

@@ -218,7 +218,10 @@ export const createApplication = (payload: IPayload) => async (
         response = await candidateApplicationService.createApplication({
           candidateId: candidateResponse.candidateId,
           parentRequisitionId: payload.urlParams.requisitionId,
-          language: "English"
+          language: "English",
+          candidateEmail: candidateResponse.emailId,
+          candidateMobile: candidateResponse.phoneNumber,
+          sfCandidateId: candidateResponse.candidateSFId
         });
       } else {
         response = await candidateApplicationService.createApplicationDS({

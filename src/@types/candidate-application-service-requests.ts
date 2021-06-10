@@ -2,6 +2,9 @@ export interface CreateApplicationRequest {
   candidateId: string;
   parentRequisitionId: string;
   language: string;
+  candidateEmail: string;
+  candidateMobile: string;
+  sfCandidateId: string;
 }
 
 export interface CreateApplicationRequestDS {
