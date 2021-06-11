@@ -93,11 +93,30 @@ getInitialData()
       const urlParams = { ...queryParams };
       delete urlParams.token;
       delete urlParams.page;
+
+      console.log("DS appUrl creation", page, jobId, urlParams);
+
       const requestQueryString = objectToQuerystring(urlParams);
-      const appId = applicationId ? `/${applicationId}` : "";
-      const miscParam = misc ? `/${applicationId}/${misc}` : "";
-      const appHashUrl = `${requestQueryString}#/${page}/job/${jobId}${appId}${miscParam}`;
-      log(`DS appHashUrl="${appHashUrl}"`);
+      console.log("DS requestQueryString", requestQueryString);
+
+      let appHashUrl = `#/${page}/job/${jobId}`;
+      console.log("DS appHashUrl 1", appHashUrl);
+
+      appHashUrl = !isEmpty(requestQueryString)
+        ? `${requestQueryString}${appHashUrl}`
+        : appHashUrl;
+      console.log("DS appHashUrl 2", appHashUrl);
+
+      appHashUrl = !isNil(applicationId)
+        ? `${appHashUrl}/${applicationId}`
+        : appHashUrl;
+      console.log("DS appHashUrl 3", appHashUrl);
+
+      appHashUrl = !isNil(misc)
+        ? `${appHashUrl}/${applicationId}/${misc}`
+        : appHashUrl;
+
+      console.log(`DS appHashUrl 4 "${appHashUrl}"`);
       window.location.assign(appHashUrl);
     }
 
