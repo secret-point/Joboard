@@ -32,14 +32,12 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async createApplicationDS(
-    payload: CreateApplicationRequestDS
-  ): Promise<CreateApplicationResponseDS> {
-    const response = await this.axiosInstance.post(
+  async createApplicationDS(payload: CreateApplicationRequestDS): Promise<string> {
+    const response =  await this.axiosInstance.post(
       "/ds/create-application/",
       payload
-    );
-    return response.data;
+    ) as { data: CreateApplicationResponseDS }
+    return response.data.applicationId;
   }
 
   async updateApplication(payload: UpdateApplicationRequest) {

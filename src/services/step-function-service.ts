@@ -7,8 +7,7 @@ import {
   goToStep,
   completeTask,
   sendHeartBeatWorkflow,
-  onTimeOut,
-  startOrResumeWorkflowDS
+  onTimeOut
 } from "../actions/workflow-actions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
@@ -18,8 +17,6 @@ export default class StepFunctionService {
   requisitionId: string | undefined;
   applicationId: string | undefined;
   candidateId: string | undefined;
-  jobId: string | undefined;
-  scheduleId: string | undefined;
   appConfig: any;
   stepFunctionEndpoint: string | undefined;
   isCompleteTaskOnLoad: boolean | undefined;
@@ -28,12 +25,10 @@ export default class StepFunctionService {
   MINUTES: number = 5;
 
   constructor(
+    requisitionId: string,
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig,
-    requisitionId?: string,
-    jobId?: string,
-    scheduleId?: string
+    appConfig: AppConfig
   ) {
     this.applicationId = applicationId;
     this.candidateId = candidateId;
@@ -42,9 +37,7 @@ export default class StepFunctionService {
       this.applicationId = applicationId;
       this.candidateId = candidateId;
       this.appConfig = appConfig;
-      requisitionId && (this.requisitionId = requisitionId);
-      jobId && (this.jobId = jobId);
-      scheduleId && (this.scheduleId = scheduleId);
+      this.requisitionId = requisitionId;
       let websocketURL = appConfig.stepFunctionEndpoint as string;
       const token = getAccessToken();
       websocketURL = websocketURL
@@ -73,24 +66,7 @@ export default class StepFunctionService {
     candidateId: string,
     appConfig: AppConfig
   ) {
-    return new this(applicationId, candidateId, appConfig, requisitionId);
-  }
-
-  static loadDS(
-    jobId: string,
-    scheduleId: string,
-    applicationId: string,
-    candidateId: string,
-    appConfig: AppConfig
-  ) {
-    return new this(
-      applicationId,
-      candidateId,
-      appConfig,
-      undefined,
-      jobId,
-      scheduleId
-    );
+    return new this(requisitionId, applicationId, candidateId, appConfig);
   }
 
   connect(event: any) {
@@ -98,7 +74,7 @@ export default class StepFunctionService {
     if (window.isCompleteTaskOnLoad) {
       completeTask(window.applicationData, "Complete Task On Load");
     } else {
-      this.jobId ? startOrResumeWorkflow() : startOrResumeWorkflowDS();
+      startOrResumeWorkflow();
     }
   }
 

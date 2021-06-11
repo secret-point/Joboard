@@ -7,7 +7,6 @@ import {
   MessageBannerType
 } from "@amzn/stencil-react-components/message-banner";
 import { withRouter, match } from "react-router";
-import { log } from "../../helpers/log-helper";
 
 interface PageProps {
   createApplication: Function;
@@ -21,7 +20,6 @@ interface PageProps {
 class CreateApplicationPage extends Component<PageProps, {}> {
   componentDidMount() {
     const { appConfig, data, match } = this.props;
-    log("CreateApplicationPage", this.props);
     this.props.createApplication({
       appConfig,
       data,

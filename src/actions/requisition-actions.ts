@@ -2,12 +2,7 @@ import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
-import {
-  setLoading,
-  onUpdatePageId,
-  onUpdateChange,
-  onGoToAction
-} from "./actions";
+import {setLoading, onUpdatePageId, onUpdateChange, onGoToAction} from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "../constants/http-status-codes";
@@ -23,7 +18,7 @@ import { log, logError } from "../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
-import { sendAdobeAnalytics } from "./application-actions";
+import {sendAdobeAnalytics} from "./application-actions";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -47,15 +42,9 @@ const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 export const onGetRequisitionHeaderInfo = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  log("onGetRequisitionHeaderInfo", payload);
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
-  // TODO: this is a hack for dragonstone m0--do not fetch requisition header info
-  if (requisitionId === "job") {
-    setLoading(false)(dispatch);
-    return;
-  }
   if (requisitionId && isEmpty(payload.data.requisition)) {
     try {
       log(`Getting requisition header info for ${requisitionId}`);
@@ -315,7 +304,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
 };
 
 export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
-  dispatch: Function
+    dispatch: Function
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
@@ -330,13 +319,15 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
   const storedApplicationId = window.sessionStorage.getItem("applicationId");
   if (!applicationId && storedApplicationId) {
-    dispatch(push(`/update-shift/${requisitionId}/${storedApplicationId}`));
+    dispatch(
+        push(`/update-shift/${requisitionId}/${storedApplicationId}`)
+    );
   } else if (requisitionId) {
     try {
       log(`getting all available shifts for requisition ${requisitionId}`);
       const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
-        requisitionId,
-        applicationId
+          requisitionId,
+          applicationId
       );
       log(`loaded all available shifts for requisition ${requisitionId}`, {
         pageFactor: response.pageFactor,
@@ -356,7 +347,9 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
       });
 
       if (payload.options?.goTo) {
-        log(`Application is redirecting to ${payload.options?.goTo}`);
+        log(
+            `Application is redirecting to ${payload.options?.goTo}`
+        );
         onGoToAction(payload)(dispatch);
       }
 
@@ -369,18 +362,16 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
       logError("Error while fetching available shits", ex);
       setLoading(false)(dispatch);
       let errorMessage = ex?.response?.data?.errorMessage
-        ? ex?.response?.data?.errorMessage
-        : ex?.message;
+          ? ex?.response?.data?.errorMessage
+          : ex?.message;
 
       errorMessage = errorMessage
-        ? errorMessage
-        : "CLIENT_ERROR: something went wrong while fetching shifts";
+          ? errorMessage
+          : "CLIENT_ERROR: something went wrong while fetching shifts";
 
       //send the error message to Adobe Analytics
       let dataLayer: any = {};
-      dataLayer = getDataForEventMetrics(
-        "get-all-avaliable-shift-error-self-service"
-      );
+      dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error-self-service");
       dataLayer.shifts.errorMessage = errorMessage;
       sendDataLayerAdobeAnalytics(dataLayer);
 
@@ -546,14 +537,14 @@ const constructFilterPayload = (payload: IPayload) => {
 
 const constructFilterPayloadSelfService = (payload: IPayload) => {
   const selectedSortKey =
-    propertyOf(payload.data.output)("update-shift.sortKey") || "FEATURED";
+      propertyOf(payload.data.output)("update-shift.sortKey") || "FEATURED";
 
   const maxHoursPerWeek = propertyOf(payload.data.output)(
-    "update-shift.maxHoursPerWeek"
+      "update-shift.maxHoursPerWeek"
   );
 
   let daysHoursFilter = (propertyOf(payload.data.output)(
-    "update-shift.daysHoursFilter"
+      "update-shift.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
   const defaultFilter = payload.appConfig.defaultAvailableFilter;
@@ -572,7 +563,7 @@ const constructFilterPayloadSelfService = (payload: IPayload) => {
   defaultFilter.sortBy = selectedSortKey;
   if (maxHoursPerWeek) {
     defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
-      maxHoursPerWeek
+        maxHoursPerWeek
     );
   }
   return defaultFilter;
@@ -647,7 +638,7 @@ export const onShiftsIncrementalLoad = (payload: IPayload) => async (
 };
 
 export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
-  dispatch: Function
+    dispatch: Function
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
@@ -667,30 +658,30 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
   if (requisitionId) {
     try {
       log(
-        `getting available shifts for requisition ${requisitionId} in incremental`,
-        {
-          filter: JSON.stringify(filter)
-        }
+          `getting available shifts for requisition ${requisitionId} in incremental`,
+          {
+            filter: JSON.stringify(filter)
+          }
       );
       const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
-        requisitionId,
-        applicationId,
-        filter
+          requisitionId,
+          applicationId,
+          filter
       );
 
       log(
-        `loaded available shifts for requisition ${requisitionId} in incremental`,
-        {
-          pageFactor: response.pageFactor,
-          availableShiftsCount: response.availableShifts.total,
-          filter: JSON.stringify(filter)
-        }
+          `loaded available shifts for requisition ${requisitionId} in incremental`,
+          {
+            pageFactor: response.pageFactor,
+            availableShiftsCount: response.availableShifts.total,
+            filter: JSON.stringify(filter)
+          }
       );
 
       if (response.availableShifts.total > 0) {
         const availableShifts = applySortOnShifts(
-          response.availableShifts,
-          filter
+            response.availableShifts,
+            filter
         );
         dispatch({
           type: MERGE_SHIFTS,
@@ -704,8 +695,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
         dispatch({
           type: SHOW_MESSAGE,
           payload: {
-            message:
-              "Sorry, we cannot find any more schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
+            message:"Sorry, we cannot find any more schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
           }
         });
       }
@@ -716,7 +706,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
       if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
       } else {
         onUpdateError(
-          ex?.response?.data?.errorMessage || "Unable to get shifts"
+            ex?.response?.data?.errorMessage || "Unable to get shifts"
         )(dispatch);
       }
     }
@@ -839,7 +829,7 @@ export const onApplyFilter = (payload: IPayload) => async (
 };
 
 export const onApplyFilterSelfService = (payload: IPayload) => async (
-  dispatch: Function
+    dispatch: Function
 ) => {
   const { options } = payload;
   onRemoveError()(dispatch);
@@ -851,7 +841,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
 
   const activeDays: any[] = [];
   let daysHoursFilter = (propertyOf(payload.data.output)(
-    "update-shift.daysHoursFilter"
+      "update-shift.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
   daysHoursFilter.forEach(filter => {
     if (filter.isActive) {
@@ -905,9 +895,9 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
           filter = constructFilterPayloadSelfService(payload);
         }
         const response = await new RequisitionService().getAllAvailableShiftsWithTrainingAvailability(
-          requisitionId,
-          applicationId,
-          filter
+            requisitionId,
+            applicationId,
+            filter
         );
 
         pageFactor = response.pageFactor;
@@ -937,8 +927,8 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
       log("Error while applying filter", ex);
       setLoading(false)(dispatch);
       if (
-        ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
-        ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
+          ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
+          ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
       ) {
         dispatch({
           type: UPDATE_SHIFTS,
@@ -952,12 +942,13 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
         });
       } else {
         onUpdateError(
-          ex?.response?.data?.errorMessage || "Unable to get shifts"
+            ex?.response?.data?.errorMessage || "Unable to get shifts"
         )(dispatch);
       }
     }
   }
 };
+
 
 export const onResetFilters = (payload: IPayload) => async (
   dispatch: Function
@@ -986,7 +977,7 @@ export const onResetFilters = (payload: IPayload) => async (
 };
 
 export const onResetFiltersSelfService = (payload: IPayload) => async (
-  dispatch: Function
+    dispatch: Function
 ) => {
   const sortKey = SORT_KEY_DEFAULT;
   const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;

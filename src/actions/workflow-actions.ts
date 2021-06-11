@@ -35,37 +35,6 @@ export const loadWorkflow = (
   }
 };
 
-export const loadWorkflowDS = (
-  jobId: string,
-  scheduleId: string,
-  applicationId: string,
-  candidateId: string,
-  appConfig: AppConfig,
-  isCompleteTaskOnLoad?: boolean,
-  applicationData?: ICandidateApplication
-) => {
-  if (!window?.stepFunctionService?.websocket) {
-    if (isCompleteTaskOnLoad) {
-      window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
-      window.applicationData = applicationData;
-    }
-    log("Initiated to connect websocket", [
-      jobId,
-      scheduleId,
-      applicationId,
-      candidateId,
-      appConfig
-    ]);
-    window.stepFunctionService = StepFunctionService.loadDS(
-      jobId,
-      scheduleId,
-      applicationId,
-      candidateId,
-      appConfig
-    );
-  }
-};
-
 export const startOrResumeWorkflow = () => {
   log("Started workflow");
   window.stepFunctionService.websocket?.send(
@@ -74,19 +43,6 @@ export const startOrResumeWorkflow = () => {
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
       requisitionId: window.stepFunctionService.requisitionId
-    })
-  );
-};
-
-export const startOrResumeWorkflowDS = () => {
-  log("Started DS workflow");
-  window.stepFunctionService.websocket?.send(
-    JSON.stringify({
-      action: "startWorkflow",
-      applicationId: window.stepFunctionService.applicationId,
-      candidateId: window.stepFunctionService.candidateId,
-      jobId: window.stepFunctionService.jobId,
-      scheduleId: window.stepFunctionService.scheduleId
     })
   );
 };
