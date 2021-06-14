@@ -92,6 +92,8 @@ export interface UrlParam {
   requisitionId: string;
   applicationId: string;
   misc: string;
+  jobId?: string;
+  scheduleId?: string;
 }
 
 export interface DaysHoursFilter {

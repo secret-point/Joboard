@@ -52,12 +52,15 @@ getInitialData()
       payload: { ...data }
     });
 
+    // TODO: Note there are two competing dragonstone implementations. This is the
+    // routing for a complete replacement of page-configs in favor of react pages.
     const isDragonStone = window.location.pathname.startsWith(
       DRAGONSTONE_PATH_PREFIX
     );
 
     const queryParams = queryString.parse(window.location.search);
     const requisitionId = queryParams["requisitionId"];
+    const jobId = queryParams["jobId"];
     const agency: any = queryParams["agency"];
     const page = queryParams["page"];
     const applicationId = queryParams["applicationId"];
@@ -86,6 +89,37 @@ getInitialData()
       window.location.assign(appHashUrl);
     }
 
+    if (!isDragonStone && !isNil(page) && !isNil(jobId)) {
+      const urlParams = { ...queryParams };
+      delete urlParams.token;
+      delete urlParams.page;
+
+      console.log("DS appUrl creation", page, jobId, urlParams);
+
+      const requestQueryString = objectToQuerystring(urlParams);
+      console.log("DS requestQueryString", requestQueryString);
+
+      let appHashUrl = `#/${page}/job/${jobId}`;
+      console.log("DS appHashUrl 1", appHashUrl);
+
+      appHashUrl = !isEmpty(requestQueryString)
+        ? `${requestQueryString}${appHashUrl}`
+        : appHashUrl;
+      console.log("DS appHashUrl 2", appHashUrl);
+
+      appHashUrl = !isNil(applicationId)
+        ? `${appHashUrl}/${applicationId}`
+        : appHashUrl;
+      console.log("DS appHashUrl 3", appHashUrl);
+
+      appHashUrl = !isNil(misc)
+        ? `${appHashUrl}/${applicationId}/${misc}`
+        : appHashUrl;
+
+      console.log(`DS appHashUrl 4 "${appHashUrl}"`);
+      window.location.assign(appHashUrl);
+    }
+
     if (!isNil(token)) {
       /* TODO: Use react location lib for this */
       window.localStorage.setItem("accessToken", token);
@@ -93,7 +127,11 @@ getInitialData()
       delete urlParams.token;
       const requestQueryString = objectToQuerystring(urlParams);
 
-      window.history.replaceState({}, document.title, window.location.origin + window.location.pathname + requestQueryString);
+      window.history.replaceState(
+        {},
+        document.title,
+        window.location.origin + window.location.pathname + requestQueryString
+      );
     }
 
     if (!isNil(agency)) {
