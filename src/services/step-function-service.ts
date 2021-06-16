@@ -98,7 +98,7 @@ export default class StepFunctionService {
     if (window.isCompleteTaskOnLoad) {
       completeTask(window.applicationData, "Complete Task On Load");
     } else {
-      this.jobId ? startOrResumeWorkflow() : startOrResumeWorkflowDS();
+      this.jobId ? startOrResumeWorkflowDS() : startOrResumeWorkflow();
     }
   }
 
