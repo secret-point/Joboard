@@ -52,6 +52,31 @@ getInitialData()
       payload: { ...data }
     });
 
+    /********** Disable back button for HVHBB-Backlog-3812 ***********
+     * This manipulates the browser history to disable the back button because
+     * it can create unexpected results. It would be better to carefully manage
+     * the browser state throughout but that is out of scope for now.
+     */
+    const query = queryString.parse(window.location.search);
+
+    /* Rewrite the history with state `back: true` so the onpopstate event listener
+        below will know whether to push another duplicate to the stack to avoid actually
+        going back */
+    window.history.pushState({ back: true }, window.document.title, window.location.href);
+    window.history.pushState({ back: false }, window.document.title, window.location.href);
+
+    /* This looks for the back state and pushes a page duplicate onto the history stack
+      so that hitting back will simply run this again each time */
+    window.onpopstate = (event: PopStateEvent) => {
+      /* Make sure back is still disabled if some other source changes the URL */
+      window.history.pushState({ back: true }, window.document.title, window.location.href);
+      window.history.pushState({ back: false }, window.document.title, window.location.href);
+      if (event.state?.back) {
+        window.history.pushState({ back: false }, window.document.title, window.location.href);
+      }
+    }
+    /*****************************************************************/
+
     // TODO: Note there are two competing dragonstone implementations. This is the
     // routing for a complete replacement of page-configs in favor of react pages.
     const isDragonStone = window.location.pathname.startsWith(

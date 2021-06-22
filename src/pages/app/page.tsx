@@ -34,30 +34,6 @@ const Page: React.FC<IConsentPageProps> = ({
     }
   }, [urlPageId, currentPageId, onUpdatePageId, pageOrder]);
 
-  /********** Disable back button for HVHBB-Backlog-3812 ***********
-   * This manipulates the browser history to disable the back button because
-   * it can create unexpected results. It would be better to carefully manage
-   * the browser state throughout but that is out of scope for now.
-   */
-  const query = queryString.parse(window.location.search);
-  /* These conditions should capture all pages that are processing an application and
-     thus unsafe to go "back" from */
-  if (query.applicationId || window.location.hash.startsWith("#/app/")) {
-    /* Rewrite the history with state `back: true` so the onpopstate event listener
-       below will know whether to push another duplicate to the stack to avoid actually
-       going back */
-    window.history.pushState({ back: true }, window.document.title, window.location.href);
-    window.history.pushState({ back: false }, window.document.title, window.location.href);
-  }
-  /* This looks for the back state and pushes a page duplicate onto the history stack
-     so that hitting back will simply run this again each time */
-  window.onpopstate = (event: PopStateEvent) => {
-    if (event.state?.back) {
-      window.history.pushState({ back: false }, window.document.title, window.location.href);
-    }
-  }
-  /*****************************************************************/
-
   return (
     <StencilResponsiveConsumer sizes={[VIEWPORT_SIZES.S]}>
       {({ matches }) => (
