@@ -202,16 +202,22 @@ export const completeTask = (
   application?: ICandidateApplication,
   step?: string,
   isBackButton?: boolean,
-  goToStep?: string
+  goToStep?: string,
+  job?: any
 ) => {
   if (window.stepFunctionService?.websocket) {
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
+    const scheduleDetails = job?.selectedChildSchedule;
+    const state = scheduleDetails?.state || "";
+    const employmentType = scheduleDetails?.employmentType || "";
     setWorkflowLoading(true)(window.reduxStore.dispatch);
     const data: any = {
       action: "completeTask",
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
-      requisitionId: window.stepFunctionService.requisitionId,
+      requisitionId: window.stepFunctionService.requisitionId || "req", // requisitionId can't be null
+      state,
+      employmentType,
       eventSource: "HVH-CA-UI",
       jobSelectedOn,
       currentWorkflowStep: step

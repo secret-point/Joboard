@@ -66,6 +66,10 @@ export default interface ICandidateApplication {
   workflowStepName: string;
   hasBGCCaliforniaDisclosureAcknowledged: boolean;
   jobReferral: JobReferral;
+  jobScheduleSelected: {
+    jobId: string;
+    scheduleId: string;
+  }
 }
 export interface Candidate {
   candidateId: string;

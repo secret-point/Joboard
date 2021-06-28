@@ -111,3 +111,9 @@ export const getMetricValues = (
   }
   return metric;
 };
+
+export const checkIfIsLegacy = () => {
+  const queryParams = queryString.parse(window.location.search);
+  const isLegacy = !queryParams.jobId;
+  return isLegacy;
+}

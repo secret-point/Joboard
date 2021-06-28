@@ -33,6 +33,13 @@ import {
   UPDATE_SHIFT_PREF_DETAILS
 } from "../actions/requisition-actions";
 import {
+  GET_JOB_INFO,
+  UPDATE_SCHEDULES,
+  UPDATE_JOB_INFO,
+  SELECTED_SCHEDULE,
+  SET_LOADING_SCHEDULES,
+} from "../actions/job-actions";
+import {
   GET_APPLICATION,
   SET_APPLICATION_DATA,
   UPDATE_APPLICATION,
@@ -40,7 +47,8 @@ import {
   ON_GET_CANDIDATE,
   UPDATE_CONTINGENT_OFFER,
   SHOW_PREVIOUS_NAMES,
-  SET_SELECTED_SHIFT
+  SET_SELECTED_SHIFT,
+  SET_SELECTED_SCHEDULE,
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
@@ -58,6 +66,7 @@ const getOutputDataObject = (pageOrder: any[]) => {
 const initialState: any = {
   data: {
     requisition: {},
+    job: {},
     application: {},
     candidate: {},
     output: {},
@@ -224,6 +233,18 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       });
     }
+    case GET_JOB_INFO: {
+      return updateState(state, {
+        data: {
+          job: {
+            $merge: {
+              consentInfo: payload,
+              jobDescription: payload
+            }
+          }
+        }
+      });
+    }
 
     case UPDATE_REQUISITION: {
       const requisition = cloneDeep(state.data.requisition);
@@ -232,6 +253,22 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           requisition: {
             $set: updatedRequisition
+          }
+        }
+      });
+    }
+
+    case UPDATE_JOB_INFO: {
+      const job = cloneDeep(state.data.job);
+      const newJobInfo = {
+        consentInfo: payload,
+        jobDescription: payload,
+      }
+      const updatedJob = merge(job, newJobInfo);
+      return updateState(state, {
+        data: {
+          job: {
+            $set: updatedJob,
           }
         }
       });
@@ -305,6 +342,18 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
 
+    case SELECTED_SCHEDULE: {
+      return updateState(state, {
+        data: {
+          job: {
+            selectedChildSchedule: {
+              $set: payload
+            }
+          }
+        }
+      });
+    }
+    
     case SET_SELECTED_SHIFT: {
       const application = { ...state.data.application };
       application.shift = payload;
@@ -331,11 +380,42 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
 
+    case SET_SELECTED_SCHEDULE: {
+      const application = { ...state.data.application };
+      application.schedule = payload;
+      application.shift = payload;
+      console.log(application);
+      return updateState(state, {
+        data: {
+          selectedSchedule: {
+            $set: payload
+          },
+          application: {
+            $set: application
+          },
+          schedulePageFactor: {
+            $set: 0
+          },
+          loadingSchedule: {
+            $set: false
+          },
+          job: {
+            availableSchedules: {
+              $set: {}
+            }
+          }
+        }
+      });
+    }
+
     case GET_APPLICATION: {
+      const schedule = cloneDeep(state.data.application.schedule);
+      const shift = cloneDeep(state.data.application.shift);
+      const application = { ...payload.application, schedule, shift};
       return updateState(state, {
         data: {
           application: {
-            $set: payload.application
+            $set: application
           }
         }
       });
@@ -426,6 +506,30 @@ const AppReducer = (state = initialState, action: IAction) => {
           },
           shiftsEmptyOnFilter: {
             $set: payload.shiftsEmptyOnFilter
+          },
+          config: {
+            message: {
+              $set: ""
+            }
+          }
+        }
+      });
+    }
+
+    case UPDATE_SCHEDULES: {
+      const job = cloneDeep(state.data.job);
+      job.availableSchedules = { ...payload.availableSchedules };
+      return updateState(state, {
+        data: {
+          job: {
+            $set: job
+          },
+          shiftPageFactor: {
+            $set: payload.pageFactor || 0
+          },
+          schedulesEmptyOnFilter: {
+            $set: payload.schedulesEmptyOnFilter,
+
           },
           config: {
             message: {
@@ -562,6 +666,16 @@ const AppReducer = (state = initialState, action: IAction) => {
       return updateState(state, {
         data: {
           loadingShifts: {
+            $set: payload
+          }
+        }
+      });
+    }
+
+    case SET_LOADING_SCHEDULES: {
+      return updateState(state, {
+        data: {
+          loadingSchedules: {
             $set: payload
           }
         }

@@ -55,7 +55,7 @@ export default class StepFunctionService {
       }
       this.stepFunctionEndpoint = websocketURL;
       this.websocket = new WebSocket(this.stepFunctionEndpoint);
-      this.websocket.onopen = this.connect;
+      this.websocket.onopen = (event) => this.connect(event);
       this.websocket.onclose = this.close;
       this.websocket.onmessage = this.message;
       this.websocket.onerror = this.error;

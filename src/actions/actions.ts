@@ -14,6 +14,8 @@ import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
 import { log, logError } from "../helpers/log-helper";
 import i18n from "../i18n";
+import { checkIfIsLegacy } from "../helpers/utils";
+import queryString from "query-string";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -82,20 +84,25 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
 };
 
 export const onRedirectToASHChecklist = (payload: IPayload): void => {
+  const isLegacy = checkIfIsLegacy();
+  console.log('=========isLegacy=========onRedirectToASHChecklist==================', isLegacy);
+  const { requisitionId, jobId } = payload.urlParams
   const ASHChecklistURL = payload.appConfig.ASHChecklistURL.replace(
     "{applicationId}",
     payload.urlParams.applicationId
-  ).replace("{requisitionId}", payload.urlParams.requisitionId);
+  ).replace("{requisitionId}", (isLegacy? requisitionId : jobId) as string);
   window.location.assign(ASHChecklistURL);
 };
 
 export const goTo = (path: string, urlParams?: UrlParam) => (
   dispatch: Function
 ) => {
+  const isLegacy = checkIfIsLegacy();
+  console.log('=========isLegacy=========goTo==================', isLegacy);
   if (urlParams) {
-    const { requisitionId, applicationId, misc } = urlParams;
+    const { requisitionId, applicationId, misc, jobId } = urlParams;
     const page = path;
-    path = `/app/${requisitionId}/${applicationId || ""}`;
+    path = `/app/${isLegacy? requisitionId : jobId}/${applicationId || ""}`;
     if (misc) {
       path = `${path}/${misc}`;
     }
@@ -107,9 +114,12 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
 };
 
 export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
+  const urlParams = queryString.parse(window.location.search);
+  const { jobId } = urlParams;
+  const isLegacy = checkIfIsLegacy();
   const { requisitionId, applicationId } = payload.urlParams;
   const { goTo } = payload.options;
-  let path = `/app/${requisitionId}`;
+  let path = `/app/${isLegacy ? requisitionId : jobId}`;
   if (applicationId) {
     path = `${path}/${applicationId}`;
   }
@@ -120,10 +130,12 @@ export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
 export const onGoToSelfServicePage = (payload: IPayload) => (
   dispatch: Function
 ) => {
-  const { requisitionId, applicationId } = payload.urlParams;
+  const isLegacy = checkIfIsLegacy();
+  console.log('=========isLegacy=========onGoToSelfServicePage==================', isLegacy);
+  const { requisitionId, applicationId, jobId } = payload.urlParams;
   const { hasShiftSelected } = payload.options;
   const { noShiftSelected } = payload.options;
-  let path = `/app/${requisitionId}`;
+  let path = `/app/${isLegacy ? requisitionId : jobId}`;
   if (applicationId) {
     path = `${path}/${applicationId}`;
   }
@@ -157,9 +169,16 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
 
   const responseTime = Date.now();
   setLoading(true)(dispatch);
+  const isLegacy = checkIfIsLegacy();
+  console.log('=========isLegacy=========page==================', page);
+  console.log('=========isLegacy=========isLegacy==================', isLegacy);
   try {
     log(`Loading page configuration ${page}`);
-    const pageConfig = await new PageService().getPageConfig(`${page}.json`);
+    const pageConfig = await new PageService().getPageConfig(`${isLegacy
+      ? page
+      : DsPages[page]
+        ? DsPages[page]
+        : page}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
       const pageLoadMetric = (window as any).MetricsPublisher?.newChildActionPublisherForMethod(
@@ -323,3 +342,10 @@ export const onLogVideoMetrics = (payload: IPayload) => (
 
   sendDataLayerAdobeAnalytics(metrics);
 };
+
+export const DsPages: { [key: string]: string } = {
+  "job-opportunities": "job-opportunities-ds",
+  "job-confirmation": "job-confirmation-ds",
+  "job-description": "job-description-ds",
+  "consent": "consent-ds"
+}

@@ -1,7 +1,7 @@
 import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
+import IPayload, { AvailableFilter, DaysHoursFilter, Schedule } from "../@types/IPayload";
 import {
   setLoading,
   onUpdatePageId,
@@ -24,6 +24,7 @@ import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
 import { sendAdobeAnalytics } from "./application-actions";
+import JobService from "../services/job-service";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -241,19 +242,33 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         );
       }
       const { jobSelected } = application;
-      log(`getting time slots for HCR ${jobSelected.headCountRequestId}`, {
-        childRequisitionId: jobSelected.childRequisitionId,
-        headCountRequestId: jobSelected.headCountRequestId,
+      log(`getting time slots for HCR ${jobSelected?.headCountRequestId}`, {
+        childRequisitionId: jobSelected?.childRequisitionId,
+        headCountRequestId: jobSelected?.headCountRequestId,
         parentRequisitionId: requisitionId
       });
-      const response = await new RequisitionService().availableTimeSlots({
-        childRequisitionId: jobSelected.childRequisitionId,
-        headCountRequestId: jobSelected.headCountRequestId,
-        parentRequisitionId: requisitionId
-      });
+      const timeslotRequest: any = {
+        childRequisitionId: jobSelected?.childRequisitionId,
+        headCountRequestId: jobSelected?.headCountRequestId,
+        parentRequisitionId: requisitionId,
+      };
+
+      if (application?.jobScheduleSelected?.scheduleId) {
+        const schedule: Schedule = await new JobService().getScheduleDetailByScheduleId(
+          application.jobScheduleSelected.scheduleId
+        );
+        timeslotRequest.requisitionServiceScheduleDetails = {
+          "scheduleId": schedule.scheduleId,
+          "locationCode": schedule.locationCode,
+          "hireStartDate": schedule.hireStartDate,
+          "contingencyTurnAroundDays": schedule.contingencyTat
+        }
+      }
+
+      const response = await new RequisitionService().availableTimeSlots(timeslotRequest);
 
       if (!isEmpty(response)) {
-        log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
+        log(`load time slots for HCR ${jobSelected?.headCountRequestId}`, {
           timeSlotsCount: response.length
         });
         const nheSlots: any[] = [];
@@ -298,7 +313,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         });
         log(`sanitized and updated state with time slots`);
       } else {
-        log(`load time slots for HCR ${jobSelected.headCountRequestId}`, {
+        log(`load time slots for HCR ${jobSelected?.headCountRequestId}`, {
           timeSlotsCount: response?.length
         });
         onUpdatePageId("no-available-time-slots")(dispatch);

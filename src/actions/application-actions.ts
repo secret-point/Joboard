@@ -8,6 +8,10 @@ import {
   onGetRequisitionHeaderInfo,
   onSelectedRequisition
 } from "./requisition-actions";
+import {
+  onGetJobInfo,
+  onSelectedSchedule
+} from "./job-actions";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow, loadWorkflowDS } from "./workflow-actions";
 import propertyOf from "lodash/propertyOf";
@@ -27,7 +31,8 @@ import {
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
 import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-
+import { checkIfIsLegacy } from "../helpers/utils";
+import ICandidateApplication from "../@types/ICandidateApplication";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -39,6 +44,7 @@ export const UPDATE_CONTINGENT_OFFER = "UPDATE_CONTINGENT_OFFER";
 export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
+export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHDULE";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -64,7 +70,9 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
 
 export const onGetApplication = (payload: IPayload) => async (
   dispatch: Function
-) => {
+): Promise<ICandidateApplication | void> => {
+  const isLegacy = checkIfIsLegacy();
+  console.log("=======onGetApplication")
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
@@ -77,7 +85,7 @@ export const onGetApplication = (payload: IPayload) => async (
       requisitionId
     });
     if (!options?.loadOnlyApplicationData) {
-      onGetRequisitionHeaderInfo(payload)(dispatch);
+      isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);;
       candidateResponse = await onGetCandidate(
         payload,
         options.ignoreCandidateData
@@ -138,10 +146,12 @@ export const onGetApplication = (payload: IPayload) => async (
           setLoading(false)(dispatch);
         }
       }
+      return applicationResponse;
     } else if (isNil(applicationId)) {
       log("did not found application id in state or URL");
       throw new Error(NO_APPLICATION_ID);
     }
+
   } catch (ex) {
     logError("Failed while fetching the application data", ex);
     setLoading(false)(dispatch);
@@ -194,10 +204,15 @@ export const continueWithFCRADecline = (payload: IPayload) => (
 export const createApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  console.log("==================createApplication")
+  const isLegacy = checkIfIsLegacy();
+  const urlParams = queryString.parse(window.location.search);
+  const jobId  = urlParams.jobId as string;
+  console.log("==================createApplication=====jobId",jobId)
   if (isEmpty(payload.data.application)) {
     try {
-      // this is dragonstone if there is a jobId in the urlParams
-      const isDragonStone = !isNil(payload.urlParams.jobId);
+      // // this is dragonstone if there is a jobId in the urlParams
+      // const isDragonStone = !isNil(payload.urlParams.jobId);
 
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
@@ -214,7 +229,7 @@ export const createApplication = (payload: IPayload) => async (
 
       // Invoke either createApplication or createApplicationDS as appropriate
       let response;
-      if (!isDragonStone) {
+      if (isLegacy) {
         response = await candidateApplicationService.createApplication({
           candidateId: candidateResponse.candidateId,
           parentRequisitionId: payload.urlParams.requisitionId,
@@ -224,8 +239,9 @@ export const createApplication = (payload: IPayload) => async (
           sfCandidateId: candidateResponse.candidateSFId
         });
       } else {
+        log("Create DS application");
         response = await candidateApplicationService.createApplicationDS({
-          jobId: payload.urlParams.jobId || "",
+          jobId: jobId || "",
           scheduleId: payload.urlParams.scheduleId
         });
       }
@@ -251,7 +267,7 @@ export const createApplication = (payload: IPayload) => async (
 
       // TODO: invoke with jobId instead of requisitionId if appropriate
       log("started loading workflow", response);
-      if (!isDragonStone) {
+      if (isLegacy) {
         loadWorkflow(
           payload.urlParams.requisitionId,
           response.applicationId,
@@ -261,8 +277,8 @@ export const createApplication = (payload: IPayload) => async (
       } else {
         // TODO call loadWorkflowDS
         loadWorkflowDS(
-          payload.urlParams.jobId || "",
-          payload.urlParams.scheduleId || "",
+          payload.urlParams.jobId || urlParams.jobId as string || "",
+          payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
           response.applicationId,
           candidateResponse.candidateId,
           payload.appConfig
@@ -292,6 +308,7 @@ export const createApplication = (payload: IPayload) => async (
 export const updateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
+  console.log('updateApplication')
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
   const {
@@ -371,7 +388,7 @@ export const updateApplication = (payload: IPayload) => async (
         log(
           `Complete task event initiated on action ${type} and current page is ${stepName}`
         );
-        completeTask(data.application, stepName);
+        completeTask(data.application, stepName, undefined, undefined, data.job);
       }
       if (options?.goTo) {
         log(`After update, application is redirecting to ${options?.goTo}`);
@@ -419,6 +436,33 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
   });
 };
 
+
+export const onSelectedSchedules = (payload: IPayload) => (dispatch: Function) => {
+  const urlParams = queryString.parse(window.location.search);
+  const jobId = urlParams.jobId as string;
+  console.log("============onSelectedSchedules",payload);
+  onSelectedSchedule(payload.selectedSchedule.scheduleId)(dispatch);
+  if (payload.options?.goTo) {
+    goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+  }
+  dispatch({
+    type: SET_SELECTED_SCHEDULE,
+    payload: payload.selectedSchedule
+  });
+
+  // let allSchedules = payload.data.job.availableSchedules.schedules;
+  // let selectedSchedulePositionInOrder: number = findIndex(allSchedules, {
+  //   headCountRequestId: payload.selectedSchedule.headCountRequestId
+  // });
+  const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
+  //position
+  // dataLayerShiftSelected.shift.position = selectedSchedulePositionInOrder + 1;
+  sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
+  log(`Selected schedules`, {
+    selectedSchedule: JSON.stringify(payload.selectedSchedule)
+  });
+};
+
 export const onUpdateShiftSelection = (payload: IPayload) => async (
   dispatch: Function
 ) => {
@@ -458,6 +502,75 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
         selectedShift: JSON.stringify(selectedShift)
       }
     );
+    if (payload.options?.goTo) {
+      log(
+        `After updating shift, application is redirecting to ${payload.options?.goTo}`
+      );
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    log(
+      `Complete task event initiated on action job-confirm and current page is job-opportunities`
+    );
+    completeTask(application, "job-opportunities");
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while updating job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
+  }
+};
+
+export interface JobSelectedDS {
+  jobId: string;
+  scheduleDetails: string;
+  scheduleId: string;
+}
+
+export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application } = payload.data;
+
+    const selectedShift = payload.data.application.jobScheduleSelected;
+
+    log("Updating the shift selection in application", {
+      selectedShift: JSON.stringify(selectedShift)
+    });
+
+    const jobSelected: JobSelectedDS = {
+      jobId: payload.data.application.jobScheduleSelected.jobId,
+      scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
+      scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule)
+    }
+
+    const response = await new CandidateApplicationService().updateApplication({
+      type: "job-confirm",
+      applicationId: application.applicationId,
+      payload: jobSelected
+    });
+    // response.shift = selectedShift;
+    // dispatch({
+    //   type: UPDATE_APPLICATION,
+    //   payload: {
+    //     application: response
+    //   }
+    // });
+    // log(
+    //   `Updated application at job-confirm and update application data in state`,
+    //   {
+    //     selectedShift: JSON.stringify(selectedShift)
+    //   }
+    // );
     if (payload.options?.goTo) {
       log(
         `After updating shift, application is redirecting to ${payload.options?.goTo}`

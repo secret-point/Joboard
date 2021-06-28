@@ -18,7 +18,7 @@ import domLoaded from "dom-loaded";
 import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
-import { objectToQuerystring } from "./helpers/utils";
+import { checkIfIsLegacy, objectToQuerystring } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
 import "./i18n";
@@ -83,6 +83,7 @@ getInitialData()
       DRAGONSTONE_PATH_PREFIX
     );
 
+    const isLegacy = checkIfIsLegacy();
     const queryParams = queryString.parse(window.location.search);
     const requisitionId = queryParams["requisitionId"];
     const jobId = queryParams["jobId"];
@@ -91,12 +92,11 @@ getInitialData()
     const applicationId = queryParams["applicationId"];
     const misc = queryParams["misc"];
     const token = queryParams["token"] as any;
-
-    if (!isDragonStone && !isNil(requisitionId) && !isNil(page)) {
+    if (isLegacy && !isNil(requisitionId) && !isNil(page)) {
       const urlParams = { ...queryParams };
       delete urlParams.token;
       delete urlParams.page;
-
+      
       const requestQueryString = objectToQuerystring(urlParams);
 
       let appHashUrl = `#/${page}/${requisitionId}`;
@@ -114,8 +114,10 @@ getInitialData()
       window.location.assign(appHashUrl);
     }
 
-    if (!isDragonStone && !isNil(page) && !isNil(jobId)) {
+    if (!isLegacy && !isNil(page) && !isNil(jobId)) {
       const urlParams = { ...queryParams };
+      urlParams.jobId = jobId;
+      console.log("==========urlParams",urlParams);
       delete urlParams.token;
       delete urlParams.page;
 
@@ -124,7 +126,7 @@ getInitialData()
       const requestQueryString = objectToQuerystring(urlParams);
       console.log("DS requestQueryString", requestQueryString);
 
-      let appHashUrl = `#/${page}/job/${jobId}`;
+      let appHashUrl = `#/${page}/${jobId}`;
       console.log("DS appHashUrl 1", appHashUrl);
 
       appHashUrl = !isEmpty(requestQueryString)

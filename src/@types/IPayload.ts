@@ -71,14 +71,101 @@ export interface ContingentOffer {
 
 export interface ApplicationData {
   requisition: Requisition;
+  job: Job;
   application: ICandidateApplication;
   output: any;
   candidate: Candidate;
   showPreviousNames: string;
   selectedShift: any;
+  selectedSchedule: any;
+  loadingSchedules:boolean;
   loadingShifts: boolean;
   shiftsEmptyOnFilter: boolean;
+  schedulesEmptyOnFilter?: boolean;
   shiftPageFactor: number;
+  schedulePageFactor: number;
+}
+
+export interface Job {
+  jobId: string;
+  selectedChildSchedule: Schedule;
+  availableSchedules: { schedules: AvailableSchedule[] };
+  language: string,
+  dataSource: string,
+  requisitionType: string,
+  jobIdNumber: string,
+  jobTitle: string,
+  jobType: string,
+  employmentType: string,
+  fullAddress: string,
+  country: string,
+  city: string,
+  postalCode: string,
+  totalPayRateMin: number,
+  totalPayRateMax: number,
+  currencyCode: string,
+  tagLine: string,
+  letterOfIntent: string,
+  image: string,
+  jobPreviewVideo: string,
+  limitedTimeOffer: string,
+  featuredJob: boolean,
+  bonusJob: boolean,
+  jobDescription: string,
+  jobQualification: string,
+  careerPortalURL: string,
+  blackbirdPortalURL: string,
+  postingStatus: string
+}
+
+export interface AvailableSchedule {
+  scheduleId: string;
+}
+
+export interface Schedule {
+  employmentType: string;
+  scheduleId: string;
+  jobId: string;
+  state: string;
+  language: string,
+  dataSource: string,
+  currencyCode: string,
+  address: string,
+  city: string,
+  postalCode: string,
+  businessLine: string,
+  contingencyTat: number,
+  externalJobTitle: string,
+  tagLine: string,
+  jobPreviewVideo: string,
+  detailedJobDescription: string,
+  briefDescription: string,
+  image: string,
+  financeWeekStartDate: string,
+  financeWeekEndDate: string,
+  signOnBonus: number,
+  surgePay: number,
+  scheduleBannerText: string,
+  scheduleType: string,
+  phoneToolTitle: string,
+  scheduleText: string,
+  hoursPerWeek: number,
+  totalWeeklyPay: string,
+  financeWeek: number,
+  alpsCode: string,
+  departmentCode: string,
+  managerLogin: string,
+  managerEmployeeId: string,
+  trainingShiftCode: string,
+  crsCode: string,
+  nhoType: string,
+  trainingDate: string,
+  hireStartDate: string,
+  hireEndDate: string,
+  firstDateOnSite: string,
+  startTime: string,
+  isPublicSchedule: string,
+  locationCode: string
 }
 
 export interface Page {
@@ -182,6 +269,7 @@ export default interface Payload {
   stepId: string;
   stepsLength: number;
   selectedShift: any;
+  selectedSchedule: any;
   selectedRequisitionId: string;
   selectedRequisitionIndex: number;
   history: History;
@@ -190,7 +278,44 @@ export interface AvailableShifts {
   shifts: Shifts[];
   total: any;
 }
+
+export interface AvailableShifts {
+  schedules: Schedules[];
+  total: any;
+}
+
 export interface Shifts {
+  headCountRequestId: string;
+  jobTitle: string;
+  isTemporaryReq: boolean;
+  requisitionId: string;
+  jobType: string;
+  locationDescription: string;
+  fillRate: number;
+  openCount: number;
+  daysOfWeek: string[];
+  startTime: string;
+  endTime: string;
+  hoursPerWeek: HoursPerWeek;
+  haveMedicalBenefits: boolean;
+  day1Date: string;
+  hireStartDate: string;
+  basePayRate: number;
+  shiftDifferential: number;
+  shortDescription: string;
+  days: string;
+  time: string;
+  iconUrl: string;
+  currency: string;
+  jobClass: string;
+  shiftCode: string;
+  altShiftCode: string;
+  locationPostalCode: string;
+  locationState: string;
+  country: string;
+}
+
+export interface Schedules {
   headCountRequestId: string;
   jobTitle: string;
   isTemporaryReq: boolean;
