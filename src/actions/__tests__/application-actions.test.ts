@@ -371,7 +371,7 @@ describe("Test for Application Actions", () => {
     //TODO: verify calls for candidateAppService
     expect(store.getActions().length).toBe(6);
     expect(completeTask).toBeCalledTimes(1);
-    expect(completeTask).toHaveBeenCalledWith(TEST_APPLICATION, TEST_STEP_ID);
+    expect(completeTask).toHaveBeenCalledWith(TEST_APPLICATION, TEST_STEP_ID, undefined, undefined, undefined);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 

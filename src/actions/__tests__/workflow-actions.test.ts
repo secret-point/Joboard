@@ -180,7 +180,9 @@ describe("Test for Application Actions", () => {
             action: "completeTask",
             applicationId: window.stepFunctionService.applicationId,
             candidateId: window.stepFunctionService.candidateId,
-            requisitionId: window.stepFunctionService.requisitionId,
+            requisitionId: window.stepFunctionService.requisitionId || "req",
+            state: "",
+            employmentType: "",
             eventSource: "HVH-CA-UI",
             currentWorkflowStep: "job-opportunities",
             workflowStepName:""
@@ -196,7 +198,9 @@ describe("Test for Application Actions", () => {
             action: "completeTask",
             applicationId: window.stepFunctionService.applicationId,
             candidateId: window.stepFunctionService.candidateId,
-            requisitionId: window.stepFunctionService.requisitionId,
+            requisitionId: window.stepFunctionService.requisitionId || "req",
+            state: "",
+            employmentType: "",
             eventSource: "HVH-CA-UI",
             currentWorkflowStep: "job-opportunities",
             workflowStepName:"contingent-offer"
