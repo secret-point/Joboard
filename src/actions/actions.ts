@@ -347,5 +347,6 @@ export const DsPages: { [key: string]: string } = {
   "job-opportunities": "job-opportunities-ds",
   "job-confirmation": "job-confirmation-ds",
   "job-description": "job-description-ds",
-  "consent": "consent-ds"
+  "consent": "consent-ds",
+  "bgc": "bgc-ds"
 }
