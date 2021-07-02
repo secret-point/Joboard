@@ -25,6 +25,7 @@ import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
 import { sendAdobeAnalytics } from "./application-actions";
 import JobService from "../services/job-service";
+import queryString from "query-string";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -230,9 +231,11 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
+  const urlParams = queryString.parse(window.location.search);
+  const jobId = urlParams.jobId;
   //payload.data.requisition.flag
   log(`get NHE slots request payload: `, payload);
-  if (requisitionId) {
+  if (requisitionId || jobId) {
     try {
       let { application } = payload.data;
       if (!application || isEmpty(application)) {
@@ -257,9 +260,15 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         const schedule: Schedule = await new JobService().getScheduleDetailByScheduleId(
           application.jobScheduleSelected.scheduleId
         );
+
+        let siteId = schedule.siteId;
+        if(siteId.startsWith("SITE-")){
+          siteId = siteId.replace("SITE-", "");
+        }
+
         timeslotRequest.requisitionServiceScheduleDetails = {
           "scheduleId": schedule.scheduleId,
-          "locationCode": schedule.locationCode,
+          "locationCode": siteId,
           "hireStartDate": schedule.hireStartDate,
           "contingencyTurnAroundDays": schedule.contingencyTat
         }

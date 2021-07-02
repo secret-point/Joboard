@@ -165,7 +165,8 @@ export interface Schedule {
   firstDateOnSite: string,
   startTime: string,
   isPublicSchedule: string,
-  locationCode: string
+  locationCode: string,
+  siteId: string,
 }
 
 export interface Page {
