@@ -166,6 +166,58 @@ export const onGetApplication = (payload: IPayload) => async (
   }
 };
 
+export const onGetApplicationDS = (payload: IPayload) => async (
+  dispatch: Function
+): Promise<ICandidateApplication | void> => {
+  const isLegacy = checkIfIsLegacy();
+  console.log("=======onGetApplication")
+  try {
+    setLoading(true)(dispatch);
+    const applicationId = payload.urlParams?.applicationId;
+    const { options = {}, data } = payload;
+    let candidateResponse;
+
+    log(`started getting application data for ${applicationId}`, {
+      applicationId
+    });
+
+    if (applicationId) {
+      log(`loading application data for ${applicationId}`);
+      const applicationResponse = await new CandidateApplicationService().getApplication(
+        applicationId
+      );
+
+      dispatch({
+        type: GET_APPLICATION,
+        payload: {
+          application: applicationResponse,
+          currentState: applicationResponse.currentState
+        }
+      });
+
+      log("Updated state with application data");
+
+      setLoading(false)(dispatch);
+
+      return applicationResponse;
+    } else {
+      log("did not found application id in state or URL");
+      throw new Error(NO_APPLICATION_ID);
+    }
+  } catch (ex) {
+    logError("Failed while fetching the application data", ex);
+    setLoading(false)(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "unable to get application"
+      )(dispatch);
+    }
+  }
+};
+
 export const onGetCandidate = (
   payload: IPayload,
   ignoreCandidateData?: boolean
@@ -290,7 +342,7 @@ export const createApplication = (payload: IPayload) => async (
       logError(`Error while creating the application`, ex);
       const { urlParams } = payload;
       setLoading(false)(dispatch);
-      if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST) {
+      if (ex?.response?.status === HTTPStatusCodes.BAD_REQUEST || ex?.response?.status === HTTPStatusCodes.CONFLICT) {
         window.localStorage.setItem("page", "already-applied");
         goTo("already-applied", urlParams)(dispatch);
       } else if (ex?.message === DUPLICATE_SSN) {

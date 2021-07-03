@@ -4,7 +4,8 @@ enum HTTPStatusCodes {
   NOT_FOUND = 404,
   REDIRECT = 301,
   OK = 200,
-  UNAUTHORIZED = 401
+  UNAUTHORIZED = 401,
+  CONFLICT = 409
 }
 
 export default HTTPStatusCodes;

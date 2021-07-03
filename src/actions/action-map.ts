@@ -32,7 +32,8 @@ import {
   onUpdateWotcStatus,
   onShowPreviousName,
   onSaveShiftPreferences,
-  sendPageLoadAdobeEvent
+  sendPageLoadAdobeEvent,
+  onGetApplicationDS
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -71,6 +72,7 @@ const actionMap: any = {
   GET_ALL_AVAILABLE_SHIFTS_SELF_SERVICE: onGetAllAvailableShiftsSelfService,
   GET_ALL_SCHEDULES: onGetAllSchedules,
   GET_APPLICATION: onGetApplication,
+  GET_APPLICATION_DS: onGetApplicationDS,
   GET_CHILD_REQUISITIONS: onGetChildRequisitions,
   GET_JOB_DESCRIPTION: onGetJobDescription,
   GET_JOB_DESCRIPTION_DS: onGetJobDescriptionDS,
