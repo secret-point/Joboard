@@ -71,7 +71,7 @@ export interface ContingentOffer {
 
 export interface ApplicationData {
   requisition: Requisition;
-  job: Job;
+  job: JobDescriptor;
   application: ICandidateApplication;
   output: any;
   candidate: Candidate;
@@ -86,9 +86,15 @@ export interface ApplicationData {
   schedulePageFactor: number;
 }
 
+export interface JobDescriptor {
+  consentInfo: Job;
+  jobDescription: Job;
+  availableSchedules: unknown;
+  selectedChildSchedule: Schedule;
+}
+
 export interface Job {
   jobId: string;
-  selectedChildSchedule: Schedule;
   availableSchedules: { schedules: AvailableSchedule[] };
   language: string,
   dataSource: string,
@@ -125,7 +131,6 @@ export interface AvailableSchedule {
 export interface Schedule {
   employmentType: string;
   scheduleId: string;
-  jobId: string;
   state: string;
   language: string,
   dataSource: string,

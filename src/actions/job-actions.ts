@@ -56,23 +56,20 @@ export const onGetJobInfo = (payload: IPayload) => async (
 ) => {
   log("onGetJobInfo", payload);
   const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;  console.log(jobId);
+  const jobId = urlParams.jobId as string;
+  console.log(jobId);
 
   if (jobId && isEmpty(payload.data.job)) {
     try {
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       log(`Getting Job info for ${jobId}`);
-      const response = await new JobService().getJobInfo(
-        jobId
-      );
+      const response = await new JobService().getJobInfo(jobId);
       dispatch({
         type: GET_JOB_INFO,
         payload: response
       });
-      log(
-        `loaded job info for ${jobId} and updated state`
-      );
+      log(`loaded job info for ${jobId} and updated state`);
       setLoading(false)(dispatch);
     } catch (ex) {
       logError("Error while fetching job info", ex);
@@ -119,15 +116,19 @@ export const onGetChildSchedule = (payload: IPayload) => async (
 export const onGetScheduleDetails = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  await onSelectedSchedule(localStorage.getItem("scheduleId") as string)(dispatch);
+  await onSelectedSchedule(localStorage.getItem("scheduleId") as string)(
+    dispatch
+  );
 };
 
 export const onSelectedSchedule = (scheduleId: string) => async (
   dispatch: Function
 ) => {
-  console.log("============onSelectedSchedule",scheduleId)
+  console.log("============onSelectedSchedule", scheduleId);
   log(`getting selected schedule ${scheduleId}`);
-  const response = await new JobService().getScheduleDetailByScheduleId(scheduleId);
+  const response = await new JobService().getScheduleDetailByScheduleId(
+    scheduleId
+  );
   console.log(response);
   dispatch({
     type: SELECTED_SCHEDULE,
@@ -145,24 +146,30 @@ export const onGetAllSchedules = (payload: IPayload) => async (
     type: SET_LOADING_SCHEDULES,
     payload: true
   });
-  console.log("========onGetAllSchedules============start",payload)
+  console.log("========onGetAllSchedules============start", payload);
   const isLegacy = checkIfIsLegacy();
   const urlParams = queryString.parse(window.location.search);
-  const jobId  = urlParams.jobId as string;
+  const jobId = urlParams.jobId as string;
   // const jobId = payload.urlParams?.jobId;
-  console.log("========onGetAllSchedules============jobId",jobId)
+  console.log("========onGetAllSchedules============jobId", jobId);
   const applicationId = payload.urlParams?.applicationId;
-  console.log(payload.urlParams)
+  console.log(payload.urlParams);
   const storedApplicationId = window.sessionStorage.getItem("applicationId");
   if (!applicationId && storedApplicationId) {
-    console.log("========applicationId============storedApplicationId", applicationId,storedApplicationId)
-    dispatch(
-      push(`/job-opportunities/${jobId}/${storedApplicationId}`)
+    console.log(
+      "========applicationId============storedApplicationId",
+      applicationId,
+      storedApplicationId
     );
+    dispatch(push(`/job-opportunities/${jobId}/${storedApplicationId}`));
   } else if (jobId) {
     try {
       log(`getting all available shifts for job ${jobId}`);
-      console.log("========onGetAllSchedules============jobId", jobId,applicationId);
+      console.log(
+        "========onGetAllSchedules============jobId",
+        jobId,
+        applicationId
+      );
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       const response = await new JobService().getAllSchedules({
@@ -321,26 +328,20 @@ export const onSchedulesIncrementalLoad = (payload: IPayload) => async (
 
   if (jobId) {
     try {
-      log(
-        `getting available shifts for requisition ${jobId} in incremental`,
-        {
-          filter: JSON.stringify(filter)
-        }
-      );
+      log(`getting available shifts for requisition ${jobId} in incremental`, {
+        filter: JSON.stringify(filter)
+      });
       const response = await new RequisitionService().getAllAvailableShifts(
         jobId,
         applicationId,
         filter
       );
 
-      log(
-        `loaded available shifts for requisition ${jobId} in incremental`,
-        {
-          pageFactor: response.pageFactor,
-          availableShiftsCount: response.availableShifts.total,
-          filter: JSON.stringify(filter)
-        }
-      );
+      log(`loaded available shifts for requisition ${jobId} in incremental`, {
+        pageFactor: response.pageFactor,
+        availableShiftsCount: response.availableShifts.total,
+        filter: JSON.stringify(filter)
+      });
       if (response.availableShifts.total > 0) {
         const availableShifts = applySortOnSchedules(
           response.availableShifts,
@@ -441,21 +442,26 @@ export const onApplyFilterDS = (payload: IPayload) => async (
           applicationId,
           filter
         });
-        console.log("===============",response);
+        console.log("===============", response);
         pageFactor = response.pageFactor;
         log("Applying sorting if user selected sort", {
           pageFactor: response.pageFactor,
           availableSchedulesCount: response.availableSchedules.total,
           filter: JSON.stringify(filter)
         });
-        availableSchedules = applySortOnSchedules(response.availableSchedules, filter);
+        availableSchedules = applySortOnSchedules(
+          response.availableSchedules,
+          filter
+        );
       }
       dispatch({
         type: UPDATE_SCHEDULES,
         payload: {
           availableSchedules,
           pageFactor,
-          schedulesEmptyOnFilter: isEmpty(availableSchedules.schedules) ? true : false
+          schedulesEmptyOnFilter: isEmpty(availableSchedules.schedules)
+            ? true
+            : false
         }
       });
       log("Updated shifts in state while applying filter");
@@ -526,34 +532,31 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
-  console.log(payload)
+  console.log(payload);
+
+  const urlParams = queryString.parse(window.location.search);
   const jobId =
+    (urlParams.jobId as string) ||
     payload.data.selectedSchedule.jobId ||
-    payload.data.job.selectedChildSchedule.jobId;
+    payload.data.job.consentInfo.jobId;
   if (jobId) {
     try {
       if (!payload.data.job.selectedChildSchedule) {
         onSelectedSchedule(jobId)(dispatch);
       }
-      log(
-        `getting job description for job ${jobId}`
-      );
-      const response = await new JobService().getJobInfo(
-        jobId
-      );
+      log(`getting job description for job ${jobId}`);
+      const response = await new JobService().getJobInfo(jobId);
       dispatch({
         type: UPDATE_JOB_INFO,
         payload: response
       });
-      log(
-        `loaded job description for child job ${jobId} and update state`
-      );
+      log(`loaded job description for child job ${jobId} and update state`);
       setLoading(false)(dispatch);
     } catch (ex) {
       setLoading(false)(dispatch);
-      onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to get job"
-      )(dispatch);
+      onUpdateError(ex?.response?.data?.errorMessage || "Unable to get job")(
+        dispatch
+      );
     }
   }
 };

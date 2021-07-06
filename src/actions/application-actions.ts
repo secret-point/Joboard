@@ -593,14 +593,14 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
   try {
     const { application } = payload.data;
 
-    const selectedShift = payload.data.application.jobScheduleSelected;
+    const selectedShift = payload.data.job.selectedChildSchedule;
 
     log("Updating the shift selection in application", {
       selectedShift: JSON.stringify(selectedShift)
     });
 
     const jobSelected: JobSelectedDS = {
-      jobId: payload.data.application.jobScheduleSelected.jobId,
+      jobId: payload.data.job.jobDescription.jobId,
       scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
       scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule)
     }
