@@ -55,14 +55,13 @@ export const onGetJobInfo = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   log("onGetJobInfo", payload);
-  onRemoveError()(dispatch);
-  setLoading(true)(dispatch);
   const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
+  const jobId = urlParams.jobId as string;  console.log(jobId);
 
-  console.log(jobId);
   if (jobId && isEmpty(payload.data.job)) {
     try {
+      onRemoveError()(dispatch);
+      setLoading(true)(dispatch);
       log(`Getting Job info for ${jobId}`);
       const response = await new JobService().getJobInfo(
         jobId
@@ -88,13 +87,12 @@ export const onGetJobInfo = (payload: IPayload) => async (
 export const onGetChildSchedule = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  onRemoveError()(dispatch);
-  setLoading(true)(dispatch);
-  console.log(payload);
   const urlParams = queryString.parse(window.location.search);
   const jobId = urlParams.jobId as string;
   if (jobId) {
     try {
+      onRemoveError()(dispatch);
+      setLoading(true)(dispatch);
       log(`Getting child requisitions for ${jobId}`);
       const response = await new JobService().getScheduleDetailByScheduleId(
         "blah"
@@ -143,8 +141,6 @@ export const onSelectedSchedule = (scheduleId: string) => async (
 export const onGetAllSchedules = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  onRemoveError()(dispatch);
-  setLoading(true)(dispatch);
   dispatch({
     type: SET_LOADING_SCHEDULES,
     payload: true
@@ -166,7 +162,9 @@ export const onGetAllSchedules = (payload: IPayload) => async (
   } else if (jobId) {
     try {
       log(`getting all available shifts for job ${jobId}`);
-      console.log("========onGetAllSchedules============jobId", jobId,applicationId)
+      console.log("========onGetAllSchedules============jobId", jobId,applicationId);
+      onRemoveError()(dispatch);
+      setLoading(true)(dispatch);
       const response = await new JobService().getAllSchedules({
         jobId,
         applicationId
