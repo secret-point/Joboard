@@ -233,6 +233,8 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
   const urlParams = queryString.parse(window.location.search);
   const jobId = urlParams.jobId;
+  let job = payload.data?.job;
+  let schedule = payload.data?.job?.selectedChildSchedule;
   //payload.data.requisition.flag
   log(`get NHE slots request payload: `, payload);
   if (requisitionId || jobId) {
@@ -243,6 +245,12 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
+      }
+      if (!job) {
+        job = await new JobService().getJobInfo(application.jobScheduleSelected.jobId);
+      }
+      if (!schedule) {
+        schedule = await new JobService().getScheduleDetailByScheduleId(job.selectedChildSchedule.scheduleId);
       }
       const { jobSelected } = application;
       log(`getting time slots for HCR ${jobSelected?.headCountRequestId}`, {
@@ -256,11 +264,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         parentRequisitionId: requisitionId,
       };
 
-      if (application?.jobScheduleSelected?.scheduleId) {
-        const schedule: Schedule = await new JobService().getScheduleDetailByScheduleId(
-          application.jobScheduleSelected.scheduleId
-        );
-
+      if (schedule) {
         let siteId = schedule.siteId;
         if(siteId.startsWith("SITE-")){
           siteId = siteId.replace("SITE-", "");

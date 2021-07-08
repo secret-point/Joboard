@@ -648,6 +648,48 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
   }
 };
 
+export const onSubmitApplicationDS = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application } = payload.data;
+
+    const selectedShift = payload.data.job.selectedChildSchedule;
+
+    log("Updating the shift selection in application", {
+      selectedShift: JSON.stringify(selectedShift)
+    });
+
+    const jobSelected: JobSelectedDS = {
+      jobId: payload.data.job.jobDescription.jobId,
+      scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
+      scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule)
+    }
+
+    const response = await new CandidateApplicationService().updateApplication({
+      type: "review-submit",
+      applicationId: application.applicationId,
+      payload: jobSelected
+    });
+
+    completeTask(application, "review-submit");
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while updating job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+    }
+  }
+};
+
 export const onTerminateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {

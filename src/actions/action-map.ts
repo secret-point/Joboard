@@ -33,7 +33,8 @@ import {
   onShowPreviousName,
   onSaveShiftPreferences,
   sendPageLoadAdobeEvent,
-  onGetApplicationDS
+  onGetApplicationDS,
+  onSubmitApplicationDS
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -116,6 +117,7 @@ const actionMap: any = {
   SEND_PAGE_LOAD_ADOBE_EVENT: sendPageLoadAdobeEvent,
   SHOW_PREVIOUS_NAMES: onShowPreviousName,
   START_APPLICATION: onStartApplication,
+  SUBMIT_APPLICATION: onSubmitApplicationDS,
   SUBMIT_DATA: onSubmit,
   TERMINATE_APPLICATION: onTerminateApplication,
   UPDATE_APPLICATION: updateApplication,
