@@ -130,13 +130,26 @@ export const onGetApplication = (payload: IPayload) => async (
         const candidateId =
           candidateResponse?.candidateId || payload.data.candidate.candidateId;
         log("loading workflow if doNotInitiateWorkflow is true in page config");
-        loadWorkflow(
-          requisitionId,
-          applicationId,
-          candidateId,
-          payload.appConfig,
-          options?.isCompleteTaskOnLoad
-        );
+
+        const urlParams = queryString.parse(window.location.search);
+        const isLegacy = checkIfIsLegacy();
+        if (isLegacy) {
+          loadWorkflow(
+            requisitionId,
+            applicationId,
+            candidateId,
+            payload.appConfig,
+            options?.isCompleteTaskOnLoad
+          );
+        } else {
+          loadWorkflowDS(
+            payload.urlParams.jobId || urlParams.jobId as string || "",
+            payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
+            applicationId,
+            candidateResponse.candidateId,
+            payload.appConfig
+          );
+        }
 
         if (!options?.isCompleteTaskOnLoad) {
           setLoading(false)(dispatch);
@@ -194,6 +207,22 @@ export const onGetApplicationDS = (payload: IPayload) => async (
           currentState: applicationResponse.currentState
         }
       });
+      const urlParams = queryString.parse(window.location.search);
+      loadWorkflowDS(
+        payload.urlParams.jobId || urlParams.jobId as string || "",
+        payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
+        applicationId,
+        applicationResponse.candidateId,
+        payload.appConfig
+      );
+
+      if (!options?.loadOnlyApplicationData) {
+        isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);;
+        candidateResponse = await onGetCandidate(
+          payload,
+          options.ignoreCandidateData
+        )(dispatch);
+      }
 
       log("Updated state with application data");
 
@@ -317,7 +346,6 @@ export const createApplication = (payload: IPayload) => async (
 
       log("Updated candidate response in state");
 
-      // TODO: invoke with jobId instead of requisitionId if appropriate
       log("started loading workflow", response);
       if (isLegacy) {
         loadWorkflow(
@@ -327,7 +355,6 @@ export const createApplication = (payload: IPayload) => async (
           payload.appConfig
         );
       } else {
-        // TODO call loadWorkflowDS
         loadWorkflowDS(
           payload.urlParams.jobId || urlParams.jobId as string || "",
           payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
