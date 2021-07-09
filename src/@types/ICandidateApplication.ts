@@ -69,6 +69,7 @@ export default interface ICandidateApplication {
   jobScheduleSelected: {
     jobId: string;
     scheduleId: string;
+    jobScheduleSelectedTime: string;
   }
 }
 export interface Candidate {

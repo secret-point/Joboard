@@ -206,7 +206,7 @@ export const completeTask = (
   job?: any
 ) => {
   if (window.stepFunctionService?.websocket) {
-    const jobSelectedOn = application?.jobSelected?.jobSelectedOn;
+    const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime;
     const scheduleDetails = job?.selectedChildSchedule;
     const state = scheduleDetails?.state || "";
     const employmentType = scheduleDetails?.employmentType || "";

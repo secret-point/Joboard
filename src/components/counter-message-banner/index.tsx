@@ -28,7 +28,7 @@ const CounterMessageBanner: React.FC<CounterMessageBannerProps> = ({
 
   useEffect(() => {
     if (!isEmpty(application)) {
-      const startCountTime: string = application.jobSelected?.jobSelectedOn;
+      const startCountTime: string = application.jobSelected?.jobSelectedOn || application.jobScheduleSelected?.jobScheduleSelectedTime;
       reserveTime =
         moment(startCountTime).unix() +
         HOUR_IN_SECONDS * RESERVED_TIME_IN_HOURS -
