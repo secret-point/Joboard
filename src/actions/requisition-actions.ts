@@ -246,12 +246,12 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           applicationId
         );
       }
-      if (!job) {
-        job = await new JobService().getJobInfo(application.jobScheduleSelected.jobId);
-      }
-      if (!schedule) {
-        schedule = await new JobService().getScheduleDetailByScheduleId(job.selectedChildSchedule.scheduleId);
-      }
+      // if (!job) {
+      //   job = await new JobService().getJobInfo(application.jobScheduleSelected.jobId);
+      // }
+      // if (!schedule) {
+      //   schedule = await new JobService().getScheduleDetailByScheduleId(job.selectedChildSchedule.scheduleId);
+      // }
       const { jobSelected } = application;
       log(`getting time slots for HCR ${jobSelected?.headCountRequestId}`, {
         childRequisitionId: jobSelected?.childRequisitionId,
