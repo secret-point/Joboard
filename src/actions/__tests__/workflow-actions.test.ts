@@ -1,9 +1,9 @@
 import cloneDeep from 'lodash/cloneDeep';
-import { 
-    TEST_REQUISITION_ID, 
-    TEST_APPLICATION_ID, 
-    TEST_CANDIDATE_ID, 
-    TEST_APP_CONFIG, 
+import {
+    TEST_REQUISITION_ID,
+    TEST_APPLICATION_ID,
+    TEST_CANDIDATE_ID,
+    TEST_APP_CONFIG,
     TEST_APPLICATION,
     TEST_WORKFLOW_DATA,
     TEST_PAGE_ID,
@@ -76,9 +76,9 @@ describe("Test for Application Actions", () => {
         window.isCompleteTaskOnLoad = false;
         window.applicationData = undefined;
         window.stepFunctionService = new StepFunctionService(
-            TEST_REQUISITION_ID, 
-            TEST_APPLICATION_ID, 
-            TEST_CANDIDATE_ID, 
+            TEST_REQUISITION_ID,
+            TEST_APPLICATION_ID,
+            TEST_CANDIDATE_ID,
             TEST_APP_CONFIG,
         );
         window.stepFunctionService.websocket = mockWebSocket;
@@ -93,20 +93,20 @@ describe("Test for Application Actions", () => {
     test("Test loadWorkflow with complete task on load", async () => {
         window.stepFunctionService.websocket = undefined;
         actions.loadWorkflow(
-            TEST_REQUISITION_ID, 
-            TEST_APPLICATION_ID, 
-            TEST_CANDIDATE_ID, 
-            TEST_APP_CONFIG, 
-            true, 
+            TEST_REQUISITION_ID,
+            TEST_APPLICATION_ID,
+            TEST_CANDIDATE_ID,
+            TEST_APP_CONFIG,
+            true,
             TEST_APPLICATION
         );
 
         expect(StepFunctionService.load).toBeCalledTimes(loadBeingCalled += 1);
         expect(window.isCompleteTaskOnLoad).toBe(true);
         expect(StepFunctionService.load).toBeCalledWith(
-            TEST_REQUISITION_ID, 
-            TEST_APPLICATION_ID, 
-            TEST_CANDIDATE_ID, 
+            TEST_REQUISITION_ID,
+            TEST_APPLICATION_ID,
+            TEST_CANDIDATE_ID,
             TEST_APP_CONFIG,
         );
     });
@@ -114,29 +114,29 @@ describe("Test for Application Actions", () => {
     test("Test loadWorkflow without complete task on load", async () => {
         window.stepFunctionService.websocket = undefined;
         actions.loadWorkflow(
-            TEST_REQUISITION_ID, 
-            TEST_APPLICATION_ID, 
-            TEST_CANDIDATE_ID, 
-            TEST_APP_CONFIG, 
-            false, 
+            TEST_REQUISITION_ID,
+            TEST_APPLICATION_ID,
+            TEST_CANDIDATE_ID,
+            TEST_APP_CONFIG,
+            false,
             TEST_APPLICATION);
             expect(StepFunctionService.load).toBeCalledTimes(loadBeingCalled += 1);
             expect(window.isCompleteTaskOnLoad).toBe(false);
             expect(StepFunctionService.load).toBeCalledWith(
-                TEST_REQUISITION_ID, 
-                TEST_APPLICATION_ID, 
-                TEST_CANDIDATE_ID, 
+                TEST_REQUISITION_ID,
+                TEST_APPLICATION_ID,
+                TEST_CANDIDATE_ID,
                 TEST_APP_CONFIG,
             );
     });
 
     test("Test loadWorkflow without complete task on and websocket already exist should do nothing", async () => {
         actions.loadWorkflow(
-            TEST_REQUISITION_ID, 
-            TEST_APPLICATION_ID, 
-            TEST_CANDIDATE_ID, 
-            TEST_APP_CONFIG, 
-            false, 
+            TEST_REQUISITION_ID,
+            TEST_APPLICATION_ID,
+            TEST_CANDIDATE_ID,
+            TEST_APP_CONFIG,
+            false,
             TEST_APPLICATION);
             expect(StepFunctionService.load).toBeCalledTimes(loadBeingCalled += 0);
     });
@@ -155,7 +155,7 @@ describe("Test for Application Actions", () => {
 
     //TODO: can't set websocket ready state to OPEN so this test can't have better coverage
     test("Test sendHeartBeatWorkflow with heartbeat time and socket close should redirect to timeout", async () => {
-        
+
         actions.sendHeartBeatWorkflow();
 
         expect(window.stepFunctionService.websocket?.send).toBeCalledTimes(0);
@@ -180,7 +180,8 @@ describe("Test for Application Actions", () => {
             action: "completeTask",
             applicationId: window.stepFunctionService.applicationId,
             candidateId: window.stepFunctionService.candidateId,
-            requisitionId: window.stepFunctionService.requisitionId || "req",
+            requisitionId: window.stepFunctionService.requisitionId || "",
+            jobId: "",
             state: "",
             employmentType: "",
             eventSource: "HVH-CA-UI",
@@ -198,14 +199,15 @@ describe("Test for Application Actions", () => {
             action: "completeTask",
             applicationId: window.stepFunctionService.applicationId,
             candidateId: window.stepFunctionService.candidateId,
-            requisitionId: window.stepFunctionService.requisitionId || "req",
+            requisitionId: window.stepFunctionService.requisitionId || "",
+            jobId: "",
             state: "",
             employmentType: "",
             eventSource: "HVH-CA-UI",
             currentWorkflowStep: "job-opportunities",
             workflowStepName:"contingent-offer"
         }));
-    
+
     });
 
     test("Test completeTask with no websocket associated should do nothing", async () => {

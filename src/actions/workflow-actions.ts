@@ -215,7 +215,8 @@ export const completeTask = (
       action: "completeTask",
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
-      requisitionId: window.stepFunctionService.requisitionId || "req", // requisitionId can't be null
+      requisitionId: window.stepFunctionService.requisitionId || "", // requisitionId can't be null
+      jobId: job?.jobId || "",
       state,
       employmentType,
       eventSource: "HVH-CA-UI",
