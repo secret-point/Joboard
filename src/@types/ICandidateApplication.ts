@@ -62,6 +62,7 @@ export default interface ICandidateApplication {
   creationDate: string;
   lastModificationDate?: any;
   shift: any;
+  schedule: any;
   onlySeasonalShifts: boolean;
   workflowStepName: string;
   hasBGCCaliforniaDisclosureAcknowledged: boolean;
@@ -69,6 +70,7 @@ export default interface ICandidateApplication {
   jobScheduleSelected: {
     jobId: string;
     scheduleId: string;
+    scheduleDetails: any;
     jobScheduleSelectedTime: string;
   }
 }

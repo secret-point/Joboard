@@ -349,5 +349,6 @@ export const DsPages: { [key: string]: string } = {
   "job-description": "job-description-ds",
   "consent": "consent-ds",
   "bgc": "bgc-ds",
-  "review-submit": "review-submit-ds"
+  "review-submit": "review-submit-ds",
+  "contingent-offer": "contingent-offer-ds",
 }

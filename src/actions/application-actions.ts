@@ -610,6 +610,7 @@ export interface JobSelectedDS {
   jobId: string;
   scheduleDetails: string;
   scheduleId: string;
+  jobScheduleSelectedTime?: string;
 }
 
 export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
@@ -620,16 +621,16 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
   try {
     const { application } = payload.data;
 
-    const selectedShift = payload.data.job.selectedChildSchedule;
+    const selectedSchedule = payload.data.job.selectedChildSchedule;
 
     log("Updating the shift selection in application", {
-      selectedShift: JSON.stringify(selectedShift)
+      selectedSchedule: JSON.stringify(selectedSchedule)
     });
 
     const jobSelected: JobSelectedDS = {
       jobId: payload.data.job.jobDescription.jobId,
       scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
-      scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule)
+      scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule),
     }
 
     const response = await new CandidateApplicationService().updateApplication({
@@ -637,19 +638,20 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
       applicationId: application.applicationId,
       payload: jobSelected
     });
-    // response.shift = selectedShift;
-    // dispatch({
-    //   type: UPDATE_APPLICATION,
-    //   payload: {
-    //     application: response
-    //   }
-    // });
-    // log(
-    //   `Updated application at job-confirm and update application data in state`,
-    //   {
-    //     selectedShift: JSON.stringify(selectedShift)
-    //   }
-    // );
+    response.schedule = selectedSchedule;
+    response.jobDescription = payload.data.job.jobDescription
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
+    log(
+      `Updated application at job-confirm and update application data in state`,
+      {
+        selectedSchedule: JSON.stringify(selectedSchedule)
+      }
+    );
     if (payload.options?.goTo) {
       log(
         `After updating shift, application is redirecting to ${payload.options?.goTo}`
