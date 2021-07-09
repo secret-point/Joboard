@@ -343,13 +343,18 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case SELECTED_SCHEDULE: {
+      const application = { ...state.data.application };
+      application.schedule = payload;
       return updateState(state, {
         data: {
           job: {
             selectedChildSchedule: {
               $set: payload
             }
-          }
+          },
+          application: {
+            $set: application
+          },
         }
       });
     }
@@ -383,7 +388,6 @@ const AppReducer = (state = initialState, action: IAction) => {
     case SET_SELECTED_SCHEDULE: {
       const application = { ...state.data.application };
       application.schedule = payload;
-      application.shift = payload;
       console.log(application);
       return updateState(state, {
         data: {
@@ -411,7 +415,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     case GET_APPLICATION: {
       const schedule = cloneDeep(state.data.application.schedule);
       const shift = cloneDeep(state.data.application.shift);
-      const application = { ...payload.application, schedule, shift};
+      const application = { schedule, shift, ...payload.application};
       return updateState(state, {
         data: {
           application: {
@@ -428,10 +432,13 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case UPDATE_APPLICATION: {
+      const schedule = cloneDeep(state.data.application.schedule);
+      const shift = cloneDeep(state.data.application.shift);
+      const application = { schedule, shift, ...payload.application};
       return updateState(state, {
         data: {
           application: {
-            $set: payload.application
+            $set: application
           }
         },
         isUpdateActionExecuted: {

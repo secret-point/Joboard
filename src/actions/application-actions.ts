@@ -116,6 +116,10 @@ export const onGetApplication = (payload: IPayload) => async (
         });
       }
 
+      if (applicationResponse.jobScheduleSelected && !isEmpty(applicationResponse.jobScheduleSelected.scheduleId)) {
+        onSelectedSchedule(applicationResponse.jobScheduleSelected.scheduleId)(dispatch);
+      }
+
       dispatch({
         type: GET_APPLICATION,
         payload: {
@@ -183,7 +187,7 @@ export const onGetApplicationDS = (payload: IPayload) => async (
   dispatch: Function
 ): Promise<ICandidateApplication | void> => {
   const isLegacy = checkIfIsLegacy();
-  console.log("=======onGetApplication")
+  console.log("=======onGetApplication-ds")
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
