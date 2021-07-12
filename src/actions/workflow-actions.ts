@@ -1,4 +1,4 @@
-import { WorkflowData, AppConfig } from "../@types/IPayload";
+import { WorkflowData, AppConfig, JobDescriptor } from "../@types/IPayload";
 import StepFunctionService from "../services/step-function-service";
 import ICandidateApplication from "../@types/ICandidateApplication";
 import { setWorkflowLoading, onUpdatePageId } from "./actions";
@@ -203,7 +203,7 @@ export const completeTask = (
   step?: string,
   isBackButton?: boolean,
   goToStep?: string,
-  job?: any
+  job?: JobDescriptor
 ) => {
   if (window.stepFunctionService?.websocket) {
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime;
@@ -216,7 +216,7 @@ export const completeTask = (
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
       requisitionId: window.stepFunctionService.requisitionId || "", // requisitionId can't be null
-      jobId: job?.jobId || "",
+      jobId: job?.consentInfo?.jobId || job?.jobDescription?.jobId || "",
       state,
       employmentType,
       eventSource: "HVH-CA-UI",
