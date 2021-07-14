@@ -594,7 +594,7 @@ export const onUpdateShiftSelection = (payload: IPayload) => async (
     log(
       `Complete task event initiated on action job-confirm and current page is job-opportunities`
     );
-    completeTask(application, "job-opportunities");
+    completeTask(application, "job-opportunities", undefined, undefined, payload.data?.job);
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -665,7 +665,7 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
     log(
       `Complete task event initiated on action job-confirm and current page is job-opportunities`
     );
-    completeTask(application, "job-opportunities");
+    completeTask(application, "job-opportunities", undefined, undefined, payload.data?.job);
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
@@ -707,7 +707,7 @@ export const onSubmitApplicationDS = (payload: IPayload) => async (
       payload: jobSelected
     });
 
-    completeTask(application, "review-submit");
+    completeTask(application, "review-submit", undefined, undefined, payload.data?.job);
     setLoading(false)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);

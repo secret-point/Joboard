@@ -290,7 +290,7 @@ export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
     ? options?.currentStepName
     : window.localStorage.getItem("page");
   log(`Completed task on ${currentStepName}`);
-  completeTask(application, currentStepName);
+  completeTask(application, currentStepName, undefined, undefined, payload.data?.job);
 };
 
 export const onBackButtonCompleteTask = (payload: IPayload) => (
@@ -305,7 +305,7 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
     log(
       `Completed task on back button execution, current step is ${currentStepName}`
     );
-    completeTask(application, currentStepName, true, options?.stepName);
+    completeTask(application, currentStepName, true, options?.stepName, payload.data?.job);
   }
 };
 
@@ -351,4 +351,5 @@ export const DsPages: { [key: string]: string } = {
   "bgc": "bgc-ds",
   "review-submit": "review-submit-ds",
   "contingent-offer": "contingent-offer-ds",
+  "cali-disclosure": "cali-disclosure-ds",
 }

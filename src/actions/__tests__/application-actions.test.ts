@@ -7,15 +7,15 @@ import thunk from "redux-thunk";
 import IPayload from "../../@types/IPayload";
 import { createHashHistory } from "history";
 import { routerMiddleware } from "react-router-redux";
-import { 
-  TEST_PAGE, 
+import {
+  TEST_PAGE,
   TEST_PAGE_ID,
-  TEST_PAYLOAD, 
-  EXCEPTION_MESSAGE, 
-  TEST_CANDIDATE, 
-  TEST_APPLICATION, 
-  TEST_REQUISITION_ID, 
-  TEST_APPLICATION_ID, 
+  TEST_PAYLOAD,
+  EXCEPTION_MESSAGE,
+  TEST_CANDIDATE,
+  TEST_APPLICATION,
+  TEST_REQUISITION_ID,
+  TEST_APPLICATION_ID,
   TEST_CANDIDATE_ID,
   TEST_STEP_ID,
   TEST_KEY,
@@ -61,12 +61,12 @@ describe("Test for Application Actions", () => {
     ]);
     getStore = () => {
       const initState = {};
-  
+
       return mockStore(initState);
     };
-  
+
     payload = cloneDeep(TEST_PAYLOAD)
-  
+
     mockCandidateAppService = (withException?: boolean, message?: string) => {
       CandidateApplicationService.mockImplementation(() => ({
         getCandidate: () => {
@@ -140,12 +140,12 @@ describe("Test for Application Actions", () => {
     payload.nextPage.id = "consent";
     payload.urlParams.UrlParam = "123123";
 
-    await actions.onStartApplication(payload)(store.dispatch); 
+    await actions.onStartApplication(payload)(store.dispatch);
 
 
     expect(getDataForEventMetrics).toHaveBeenCalledWith("start-application");
     expect(getDataForEventMetrics).toBeCalledTimes(1);
-    expect(sendDataLayerAdobeAnalytics).toBeCalledTimes(1); 
+    expect(sendDataLayerAdobeAnalytics).toBeCalledTimes(1);
   });
 
   test("Test onGetApplication action with normal behavior and application with shift", async () => {
@@ -177,7 +177,7 @@ describe("Test for Application Actions", () => {
       ignoreApplicationData: true
     }
     payload.data.selectedShift = null;
-    await actions.onGetApplication(payload)(store.dispatch); 
+    await actions.onGetApplication(payload)(store.dispatch);
     //to verify: last action: GET_APPLICATION
     const actionLength = store.getActions().length;
     expect(actionLength).toBe(3);
@@ -246,7 +246,7 @@ describe("Test for Application Actions", () => {
     payload.data.candidate = TEST_CANDIDATE;
 
     const response = await actions.onGetCandidate(payload, false)(store.dispatch);
-    
+
     expect(store.getActions().length).toBe(0);
     expect(hasAction(store.getActions(), actions.ON_GET_CANDIDATE)).toBe(false);
   });
@@ -303,7 +303,7 @@ describe("Test for Application Actions", () => {
     }));
 
     payload.data.application = null;
-    
+
     await actions.createApplication(payload)(store.dispatch);
 
     expect(onRemoveError).toBeCalledTimes(1);
@@ -490,7 +490,7 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     mockErrorActionsPartial();
     mockWorkflowActionsPartial();
-    try { 
+    try {
       await actions.updateApplication(payload)(store.dispatch);
     } catch (ex) {
       expect(ex.message).toBe(NO_APPLICATION_ID)
@@ -566,7 +566,7 @@ describe("Test for Application Actions", () => {
       testUpdatePayload: "test-fcra"
     }
 
-    try { 
+    try {
       await actions.updateApplication(payload)(store.dispatch);
     } catch (ex) {
       expect(ex.message).toBe(NO_APPLICATION_ID)
@@ -576,7 +576,7 @@ describe("Test for Application Actions", () => {
       expect(completeTask).toBeCalledTimes(0);
     }
   });
-  
+
 
   test("Test onSelectedShifts with goto option should dispatch SET_REQUISITION_SHIFT action", async () => {
     const store = getStore();
@@ -633,7 +633,7 @@ describe("Test for Application Actions", () => {
     expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
     expect(completeTask).toBeCalledTimes(1);
-    expect(completeTask).toBeCalledWith(payload.data.application, "job-opportunities");
+    expect(completeTask).toBeCalledWith(payload.data.application, "job-opportunities", undefined, undefined, undefined);
   });
 
   test("Test onUpdateShiftSelection with empty applicationId in payload should capture exception", async () => {
@@ -785,7 +785,7 @@ describe("Test for Application Actions", () => {
         {
           requisitionId: TEST_REQUISITION_ID,
           selected:true
-        }, 
+        },
         {
           requisitionId: TEST_REQUISITION_ID,
           selected:false
@@ -813,7 +813,7 @@ describe("Test for Application Actions", () => {
         {
           requisitionId: TEST_REQUISITION_ID,
           selected:true
-        }, 
+        },
         {
           requisitionId: TEST_REQUISITION_ID,
           selected:false

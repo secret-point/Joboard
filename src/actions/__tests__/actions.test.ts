@@ -22,7 +22,7 @@ describe("Test for Actions", () => {
     const initState = {};
     return mockStore(initState);
   };
-  
+
   const getPayload = () => {
     return test_data.TEST_PAYLOAD;
   }
@@ -209,7 +209,7 @@ describe("Test for Actions", () => {
     const store = getStore();
     const payload = getPayload();
 
-    await actions.onSubmit(payload)(store.dispatch); 
+    await actions.onSubmit(payload)(store.dispatch);
 
     //Nothing to verify. this function is empty. Just to get code coverage
   });
@@ -218,7 +218,7 @@ describe("Test for Actions", () => {
     const store = getStore();
     const payload = getPayload();
     window.location.assign = jest.fn();
-    
+
     await actions.onGoToDashboard(payload)(store.dispatch);
 
     expect(window.location.assign).toHaveBeenCalledTimes(1);
@@ -228,11 +228,11 @@ describe("Test for Actions", () => {
   test("Test OnCompleteTask Action", async () => {
     const store = getStore();
     const payload = getPayload();
-    
+
     await actions.onCompleteTask(payload)(store.dispatch);
     completeMethod_methodCalled++;
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null);
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, undefined, undefined, undefined);
   });
 
   test("Test OnBackButtonCompleteTask Action with step name", async () => {
@@ -242,13 +242,13 @@ describe("Test for Actions", () => {
     payload.options = {
       stepName: "job-opportunities"
     };
-    
+
     await actions.onBackButtonCompleteTask(payload)(store.dispatch);
     completeMethod_methodCalled++;
     expect(store.getActions()[0].type).toBe(actions.RESET_PAGE_OUTPUT);
 
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, true, "job-opportunities");
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, true, "job-opportunities", undefined);
   });
 
   test("Test OnBackButtonCompleteTask Action without step name", async () => {
@@ -257,7 +257,7 @@ describe("Test for Actions", () => {
     payload.options = {
       stepName: ""
     };
-    
+
     await actions.onBackButtonCompleteTask(payload)(store.dispatch);
     expect(store.getActions()[0].type).toBe(actions.RESET_PAGE_OUTPUT);
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled);
