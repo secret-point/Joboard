@@ -4,6 +4,8 @@ import { onAction } from "../../actions";
 import { withRouter } from "react-router-dom";
 import find from "lodash/find";
 import cloneDeep from "lodash/cloneDeep";
+import { checkIfIsLegacy } from "../../helpers/utils";
+import queryString from "query-string";
 
 const actions = {
   onAction
@@ -31,6 +33,8 @@ const getConfig = (config: any, ownProps: any) => {
 
 const mapStateToProps = (state: any, ownProps: any) => {
   let config = getConfig(state.app.pageConfig, ownProps);
+  const isLegacy = checkIfIsLegacy();
+  const urlParams = queryString.parse(window.location.search);
 
   return {
     ...config,
@@ -38,7 +42,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
     pageId: state.app?.currentPage?.id,
     currentPage: state.app.currentPage,
     previousPage: state.app.previousPage,
-    urlParams: ownProps.match?.params,
+    urlParams: isLegacy? ownProps.match?.params : {...ownProps.match.params, ...urlParams, requisitionId: null},
     appConfig: state.app.appConfig,
     pageOrder: state.app.pageOrder,
     candidateId: state.app.candidateId,

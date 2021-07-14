@@ -92,6 +92,20 @@ const shiftsPayloadDefault = {
   ]
 };
 
+const schedulesPayloadDefault = {
+  key: "schedules",
+  values: [
+    {
+      key: "count",
+      value: "job.availableSchedules.total"
+    },
+    {
+      key: "list",
+      value: "job.availableSchedules.schedules"
+    }
+  ]
+};
+
 const shiftsErrorEvent = {
   key: "shifts",
   values: [
@@ -202,6 +216,146 @@ const shiftPayloadDefault = {
     {
       key: "day1Week",
       value: "application.shift.weekNumber"
+    },
+  ]
+};
+
+const eventSchedulePayload = {
+  key: "dragonstoneSchedule",
+  values: [
+    {
+      key: "jobID",
+      value: "application.schedule.scheduleId"
+    },
+    {
+      key: "scheduleID",
+      value: "application.schedule.scheduleId"
+    }
+  ]
+};
+
+const schedulePayloadDefault = {
+  key: "dragonstoneSchedule",
+  values: [
+    {
+      key: "jobID",
+      value: "application.jobScheduleSelected.jobId"
+    },
+    {
+      key: "scheduleID",
+      value: "application.schedule.scheduleId"
+    },
+    {
+      key: "siteCode",
+      value: "application.schedule.siteId"
+    },
+    {
+      key: "internalJobCode",
+      value: "application.schedule.internalJobCode"
+    },
+    {
+      key: "employeeClass",
+      value: "application.schedule.employeeClass"
+    },
+    {
+      key: "employmentType",
+      value: "application.schedule.employmentType"
+    },
+    {
+      key: "scheduleType",
+      value: "application.schedule.scheduleType"
+    },
+    {
+      key: "agencyName",
+      value: "application.schedule.agencyName"
+    },
+    {
+      key: "employmentType",
+      value: "application.schedule.employmentType"
+    },
+    {
+      key: "marketingContent",
+      value: "application.schedule.marketingContent" // not in DS
+    },
+    {
+      key: "phoneToolTitle",
+      value: "application.schedule.phoneToolTitle" // not in DS
+    },
+    {
+      key: "shiftCode",
+      value: "application.schedule.standardShiftCode"
+    },
+    {
+      key: "scheduleText",
+      value: "application.schedule.scheduleText"
+    },
+    {
+      key: "hoursPerWeek",
+      value: "application.schedule.hoursPerWeek"
+    },
+    {
+      key: "basePay",
+      value: "application.schedule.basePay"
+    },
+    {
+      key: "scheduleBannerText",
+      value: "application.schedule.scheduleBannerText"
+    },
+    {
+      key: "nhoType",
+      value: "application.schedule.nhoType"
+    },
+    {
+      key: "trainingDate",
+      value: "application.schedule.trainingDate"
+    },
+    {
+      key: "hireDate",
+      value: "application.schedule.hireStartDate"
+    },
+    {
+      key: "firstDayOnsite",
+      value: "application.schedule.firstDayOnsite"
+    },
+    {
+      key: "priorityRank",
+      value: "application.schedule.priorityRank"
+    },
+    {
+      key: "laborOrderCount",
+      value: "application.schedule.laborOrderCount"
+    },
+    {
+      key: "laborDemandCount",
+      value: "application.schedule.laborDemandCount"
+    },
+    {
+      key: "softMatchCount",
+      value: "application.schedule.softMatchCount" // not in DS
+    },
+    {
+      key: "matchCount",
+      value: "application.schedule.matchCount" // not in DS
+    },
+    {
+      key: "softMatchCount",
+      value: "application.schedule.softMatchCount" // not in DS
+    },
+    {
+      key: "financeWeek",
+      value: "application.schedule.financeWeek"
+    },
+    {
+      key: "alpsCode",
+      value: "application.schedule.alpsCode"
+    },
+    {
+      key: "departmentCode",
+      value: "application.schedule.departmentCode"
+    },
+    {
+      key: "managerLogin",
+      value: "application.schedule.managerLogin"
     },
   ]
 };
@@ -363,7 +517,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftsPayloadDefault
+      shiftsPayloadDefault,
+      schedulesPayloadDefault,
     ]
   },
   "job-roles": {
@@ -391,7 +546,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      eventShiftPayload
+      eventShiftPayload,
+      eventSchedulePayload,
     ]
   },
   "contingent-offer": {
@@ -405,7 +561,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   bgc: {
@@ -419,7 +576,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   fcra: {
@@ -433,7 +591,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   nhe: {
@@ -448,6 +607,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
+      schedulePayloadDefault,
       nhePayloadDefault
     ]
   },
@@ -462,7 +622,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "thank-you": {
@@ -476,7 +637,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "self-identification": {
@@ -490,7 +652,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   wotc: {
@@ -504,7 +667,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "supplementary-success": {
@@ -518,7 +682,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "amazon-withdraws": {
@@ -532,7 +697,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "amazon-rejects": {
@@ -546,7 +712,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "assessment-not-eligible": {
@@ -570,7 +737,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "rehire-not-eligible-seasonal-only": {
@@ -584,7 +752,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "rehire-not-eligible": {
@@ -598,7 +767,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "can-not-offer-job": {
@@ -612,7 +782,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationIneligibleDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
 
@@ -690,6 +861,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
+      schedulePayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -778,7 +950,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      eventShiftPayload
+      eventShiftPayload,
+      eventSchedulePayload,
     ]
   },
   "equal-opportunity-form": {
@@ -792,7 +965,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "veteran-status-form": {
@@ -806,7 +980,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "disability-form": {
@@ -820,7 +995,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "additional-bgc-info": {
@@ -834,7 +1010,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "non-fcra": {
@@ -848,7 +1025,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "cali-disclosure": {
@@ -862,7 +1040,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "job-preferences-thank-you": {
@@ -936,7 +1115,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   SUBMIT_NHE_PREFERENCES: {
@@ -946,7 +1126,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   RETURN_TO_NHE: {
@@ -962,7 +1143,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPayloadDefault
+      shiftPayloadDefault,
+      schedulePayloadDefault,
     ]
   },
   "update-shift": {
@@ -977,6 +1159,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
+      schedulePayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1020,6 +1203,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
+      schedulePayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1035,6 +1219,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
+      schedulePayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1050,7 +1235,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       eventShiftPayload,
-      shiftTypePayloadDefault
+      eventSchedulePayload,
+      shiftTypePayloadDefault,
     ]
   }
 };

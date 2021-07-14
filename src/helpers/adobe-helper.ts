@@ -11,7 +11,7 @@ export const getDataForMetrics = () => {
   const { app } = window.reduxStore.getState();
   const currentPage = app.currentPage.id;
   app.data.requisitionId = window.urlParams.requisitionId;
-
+  app.data.jobId = window.urlParams.jobId;
   const metricObject: any = ADOBE_PAGE_LOAD_METRICS[currentPage];
   let metricData: any;
   if (!isEmpty(metricObject)) {
@@ -60,6 +60,7 @@ export const getDataForMetrics = () => {
 export const getDataForEventMetrics = (eventName: any) => {
   const { app } = window.reduxStore.getState();
   app.data.requisitionId = window.urlParams.requisitionId;
+  app.data.jobId = window.urlParams.jobId;
 
   const metricObject: any = ADOBE_PAGE_LOAD_METRICS[eventName];
   let metricData: any;

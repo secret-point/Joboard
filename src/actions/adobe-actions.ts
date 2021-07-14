@@ -43,7 +43,7 @@ export const addMetricForPageLoad = () => {
   let dataLayer: any = {};
   try {
     const { app } = window.reduxStore.getState();
-    if (!isEmpty(app.data.requisition) && !window.isPageMetricsUpdated) {
+    if ((!isEmpty(app.data.requisition)|| !isEmpty(app.data.job)) && !window.isPageMetricsUpdated) {
       dataLayer = getDataForMetrics();
       window.isPageMetricsUpdated = true;
       if (!isEmpty(dataLayer)) {
