@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { match } from "react-router";
+import { checkIfIsLegacy } from "../../helpers/utils";
+import queryString from "query-string";
 
 type InitialLoadProps = {
   pageConfig: any;
@@ -16,10 +18,12 @@ const InitialLoad: React.FC<InitialLoadProps> = ({
   appConfig,
   data
 }) => {
+  const isLegacy = checkIfIsLegacy();
+  const urlParams = queryString.parse(window.location.search);
   useEffect(() => {
     if (pageConfig.initialLoad) {
       const payload: any = {
-        urlParams: match.params,
+        urlParams: isLegacy? match.params : {...match.params, ...urlParams, requisitionId: null},
         appConfig,
         data: {}
       };

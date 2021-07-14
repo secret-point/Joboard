@@ -7,6 +7,8 @@ import {
   MessageBannerType
 } from "@amzn/stencil-react-components/message-banner";
 import { withRouter, match } from "react-router";
+import { checkIfIsLegacy } from "../../helpers/utils";
+import queryString from "query-string";
 
 interface PageProps {
   onGetApplication: Function;
@@ -20,11 +22,13 @@ interface PageProps {
 class ResumeApplicationPage extends React.Component<PageProps, {}> {
   componentDidMount() {
     window.localStorage.setItem("page", "resume-application");
+    const isLegacy = checkIfIsLegacy();
+    const urlParams = queryString.parse(window.location.search);
     const { appConfig, data, match } = this.props;
     this.props.onGetApplication({
       appConfig,
       data,
-      urlParams: match.params
+      urlParams: isLegacy? match.params : {...match.params, ...urlParams, requisitionId: null},
     });
   }
 

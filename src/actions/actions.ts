@@ -114,10 +114,8 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
 };
 
 export const onGoToAction = (payload: IPayload) => (dispatch: Function) => {
-  const urlParams = queryString.parse(window.location.search);
-  const { jobId } = urlParams;
   const isLegacy = checkIfIsLegacy();
-  const { requisitionId, applicationId } = payload.urlParams;
+  const { requisitionId, applicationId, jobId } = payload.urlParams;
   const { goTo } = payload.options;
   let path = `/app/${isLegacy ? requisitionId : jobId}`;
   if (applicationId) {

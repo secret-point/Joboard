@@ -24,8 +24,6 @@ import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
 import { sendAdobeAnalytics } from "./application-actions";
-import { checkIfIsLegacy } from "../helpers/utils";
-import queryString from "query-string";
 
 export const GET_JOB_INFO = "GET_JOB_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -55,8 +53,7 @@ export const onGetJobInfo = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   log("onGetJobInfo", payload);
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
+  const jobId = payload.urlParams?.jobId as string;
   console.log(jobId);
 
   if (jobId && isEmpty(payload.data.job)) {
@@ -84,8 +81,7 @@ export const onGetJobInfo = (payload: IPayload) => async (
 export const onGetChildSchedule = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
+  const jobId = payload.urlParams.jobId as string;
   if (jobId) {
     try {
       onRemoveError()(dispatch);
@@ -147,9 +143,7 @@ export const onGetAllSchedules = (payload: IPayload) => async (
     payload: true
   });
   console.log("========onGetAllSchedules============start", payload);
-  const isLegacy = checkIfIsLegacy();
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
+  const jobId = payload.urlParams.jobId as string;
   // const jobId = payload.urlParams?.jobId;
   console.log("========onGetAllSchedules============jobId", jobId);
   const applicationId = payload.urlParams?.applicationId;
@@ -378,8 +372,7 @@ export const onApplyFilterDS = (payload: IPayload) => async (
   let filter = constructFilterPayload(payload);
   filter.pageFactor = 1;
   setLoading(true)(dispatch);
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
+  const jobId = payload.urlParams.jobId as string;
   const applicationId = payload.urlParams?.applicationId;
 
   const activeDays: any[] = [];
@@ -533,10 +526,9 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   console.log(payload);
-
-  const urlParams = queryString.parse(window.location.search);
+  
   const jobId =
-    (urlParams.jobId as string) ||
+    (payload.urlParams.jobId as string) ||
     payload.data.selectedSchedule.jobId ||
     payload.data.job.consentInfo.jobId;
   if (jobId) {

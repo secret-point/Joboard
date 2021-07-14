@@ -57,7 +57,6 @@ getInitialData()
      * it can create unexpected results. It would be better to carefully manage
      * the browser state throughout but that is out of scope for now.
      */
-    const query = queryString.parse(window.location.search);
 
     /* Rewrite the history with state `back: true` so the onpopstate event listener
         below will know whether to push another duplicate to the stack to avoid actually

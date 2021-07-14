@@ -8,6 +8,8 @@ import {
 } from "@amzn/stencil-react-components/message-banner";
 import { withRouter, match } from "react-router";
 import { log } from "../../helpers/log-helper";
+import { checkIfIsLegacy } from "../../helpers/utils";
+import queryString from "query-string";
 
 interface PageProps {
   createApplication: Function;
@@ -21,11 +23,13 @@ interface PageProps {
 class CreateApplicationPage extends Component<PageProps, {}> {
   componentDidMount() {
     const { appConfig, data, match } = this.props;
+    const isLegacy = checkIfIsLegacy();
+    const urlParams = queryString.parse(window.location.search);
     log("CreateApplicationPage", this.props);
     this.props.createApplication({
       appConfig,
       data,
-      urlParams: match.params
+      urlParams: isLegacy? match.params : {...match.params, ...urlParams, requisitionId: null},
     });
   }
 

@@ -521,8 +521,6 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
 
 
 export const onSelectedSchedules = (payload: IPayload) => (dispatch: Function) => {
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId as string;
   console.log("============onSelectedSchedules",payload);
   onSelectedSchedule(payload.selectedSchedule.scheduleId)(dispatch);
   if (payload.options?.goTo) {

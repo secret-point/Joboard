@@ -231,8 +231,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
-  const urlParams = queryString.parse(window.location.search);
-  const jobId = urlParams.jobId;
+  const jobId = payload.urlParams?.jobId;
   let job = payload.data?.job;
   let schedule = payload.data?.job?.selectedChildSchedule;
   //payload.data.requisition.flag
