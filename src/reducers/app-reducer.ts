@@ -458,10 +458,11 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case ON_GET_CANDIDATE: {
+      const candidate = {...payload, loginStatus:true}
       return updateState(state, {
         data: {
           candidate: {
-            $set: payload
+            $set: candidate
           }
         }
       });
