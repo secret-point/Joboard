@@ -116,6 +116,16 @@ const shiftsErrorEvent = {
   ]
 };
 
+const schedulesErrorEvent = {
+  key: "schedules",
+  values: [
+    {
+      key: "errorMessage",
+      value: ""
+    }
+  ]
+};
+
 const eventShiftPayload = {
   key: "shift",
   values: [
@@ -893,7 +903,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       applicationPayloadDefault,
       jobPayloadDefault,
-      shiftsErrorEvent
+      shiftsErrorEvent,
+      schedulesErrorEvent
     ]
   },
 
@@ -905,6 +916,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       jobPayloadDefault,
       shiftsErrorEvent,
+      schedulesErrorEvent,
       shiftTypePayloadDefault
     ]
   },
