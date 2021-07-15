@@ -350,4 +350,5 @@ export const DsPages: { [key: string]: string } = {
   "review-submit": "review-submit-ds",
   "contingent-offer": "contingent-offer-ds",
   "cali-disclosure": "cali-disclosure-ds",
+  "nhe": "nhe-ds",
 }
