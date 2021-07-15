@@ -92,15 +92,19 @@ const shiftsPayloadDefault = {
   ]
 };
 
-const schedulesPayloadDefault = {
-  key: "schedules",
+const dragonstoneJobPayloadDefault = {
+  key: "dragonstoneJob",
   values: [
     {
-      key: "count",
+      key: "jobID",
+      value: "job.consentInfo.jobId"
+    },
+    {
+      key: "scheduleCount",
       value: "job.availableSchedules.total"
     },
     {
-      key: "list",
+      key: "scheduleList",
       value: "job.availableSchedules.schedules"
     }
   ]
@@ -244,12 +248,12 @@ const eventSchedulePayload = {
   ]
 };
 
-const schedulePayloadDefault = {
+const dragonstoneSchedulePayloadDefault = {
   key: "dragonstoneSchedule",
   values: [
     {
       key: "jobID",
-      value: "application.jobScheduleSelected.jobId"
+      value: "job.consentInfo.jobId"
     },
     {
       key: "scheduleID",
@@ -494,7 +498,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault]
+    dataPayload: [jobPayloadDefault, dragonstoneSchedulePayloadDefault]
   },
   "assessment-consent": {
     eventPayload: {
@@ -504,7 +508,10 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault]
   },
   assessment: {
     eventPayload: {
@@ -514,7 +521,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
   "job-opportunities": {
     eventPayload: {
@@ -528,7 +540,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftsPayloadDefault,
-      schedulesPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "job-roles": {
@@ -542,7 +555,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      jobRolesPayloadDefault
+      jobRolesPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "job-description": {
@@ -558,6 +573,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       eventShiftPayload,
       eventSchedulePayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "contingent-offer": {
@@ -572,7 +589,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   bgc: {
@@ -587,7 +605,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   fcra: {
@@ -602,7 +621,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   nhe: {
@@ -617,7 +637,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
       nhePayloadDefault
     ]
   },
@@ -633,7 +654,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "thank-you": {
@@ -648,7 +670,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "self-identification": {
@@ -663,7 +686,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   wotc: {
@@ -678,7 +702,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "supplementary-success": {
@@ -693,7 +718,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "amazon-withdraws": {
@@ -708,7 +734,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "amazon-rejects": {
@@ -723,7 +750,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "assessment-not-eligible": {
@@ -734,7 +762,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
   "candidate-withdraws": {
     eventPayload: {
@@ -748,7 +781,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "rehire-not-eligible-seasonal-only": {
@@ -763,7 +797,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "rehire-not-eligible": {
@@ -778,7 +813,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "can-not-offer-job": {
@@ -793,7 +829,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationIneligibleDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
 
@@ -805,7 +842,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
 
   "no-available-shift-self-service": {
@@ -816,7 +858,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault
+    ]
   },
 
   "successful-update-shift-self-service": {
@@ -827,7 +874,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       eventShiftPayload,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "fail-update-shift-schedule-full-self-service": {
@@ -838,7 +887,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       eventShiftPayload,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "fail-update-shift-unknown-error-self-service": {
@@ -849,7 +900,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       eventShiftPayload,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "successful-cancel-shift-self-service": {
@@ -860,7 +913,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "fail-cancel-shift-self-service": {
@@ -871,7 +926,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -883,7 +939,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
   "applicationId-null": {
     eventPayload: {
@@ -893,7 +954,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationIneligibleDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
 
   "get-all-avaliable-shift-error": {
@@ -904,7 +970,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       jobPayloadDefault,
       shiftsErrorEvent,
-      schedulesErrorEvent
+      schedulesErrorEvent,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
 
@@ -917,7 +985,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       shiftsErrorEvent,
       schedulesErrorEvent,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
 
@@ -925,35 +995,57 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     eventPayload: {
       event: EVENT.APPLY_FILTER_SELF_SERVICE
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault],
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ],
     appConfigPayload: [filterPayloadDefault]
   },
   "apply-sorting-self-service": {
     eventPayload: {
       event: EVENT.APPLY_SORTING_SELF_SERVICE
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault, shiftTypePayloadDefault],
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ],
     appConfigPayload: [sortPayloadDefault]
   },
   "apply-filter": {
     eventPayload: {
       event: EVENT.JOBS_FILTER
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ],
     appConfigPayload: [filterPayloadDefault]
   },
   "apply-sorting": {
     eventPayload: {
       event: EVENT.JOBS_SORT
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault],
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ],
     appConfigPayload: [sortPayloadDefault]
   },
   "start-application": {
     eventPayload: {
       event: EVENT.START_APPLICATION
     },
-    dataPayload: [jobPayloadDefault]
+    dataPayload: [jobPayloadDefault, dragonstoneSchedulePayloadDefault]
   },
   "shift-selection": {
     eventPayload: {
@@ -964,6 +1056,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       eventShiftPayload,
       eventSchedulePayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "equal-opportunity-form": {
@@ -978,7 +1072,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "veteran-status-form": {
@@ -993,7 +1088,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "disability-form": {
@@ -1008,7 +1104,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "additional-bgc-info": {
@@ -1023,7 +1120,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "non-fcra": {
@@ -1038,7 +1136,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "cali-disclosure": {
@@ -1053,7 +1152,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "job-preferences-thank-you": {
@@ -1064,7 +1164,12 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
   "job-preferences": {
     eventPayload: {
@@ -1077,7 +1182,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPreferencesPayload
+      shiftPreferencesPayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   SELECT_JOB_ROLE: {
@@ -1087,7 +1194,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPreferencesPayload
+      shiftPreferencesPayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   SUBMIT_SHIFT_PREFERENCES: {
@@ -1097,7 +1206,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPreferencesPayload
+      shiftPreferencesPayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "start-job-video": {
@@ -1107,7 +1218,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPreferencesPayload
+      shiftPreferencesPayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "finish-job-video": {
@@ -1117,7 +1230,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftPreferencesPayload
+      shiftPreferencesPayload,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "nhe-preferences": {
@@ -1128,7 +1243,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   SUBMIT_NHE_PREFERENCES: {
@@ -1139,14 +1255,20 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   RETURN_TO_NHE: {
     eventPayload: {
       event: EVENT.RETURN_TO_NHE
     },
-    dataPayload: [jobPayloadDefault, applicationPayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+    ]
   },
   SELECT_NHE: {
     eventPayload: {
@@ -1156,7 +1278,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "update-shift": {
@@ -1171,7 +1294,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1186,7 +1310,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "view-shift": {
@@ -1200,7 +1326,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      shiftTypePayloadDefault
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   },
   "current-shift": {
@@ -1215,7 +1343,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1231,7 +1360,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftPayloadDefault,
-      schedulePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
       shiftTypePayloadDefault
     ]
   },
@@ -1249,6 +1379,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       eventShiftPayload,
       eventSchedulePayload,
       shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
     ]
   }
 };
