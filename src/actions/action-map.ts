@@ -39,6 +39,7 @@ import {
 import {
   onGetRequisitionHeaderInfo,
   onGetNHETimeSlots,
+  onGetNHETimeSlotsDS,
   onGetPossibleNHEDates,
   onGetAllAvailableShifts,
   onGetAllAvailableShiftsSelfService,
@@ -80,6 +81,7 @@ const actionMap: any = {
   GET_JOB_INFO: onGetJobInfo,
   GET_NHE_PREFERENCES_DATES: onGetPossibleNHEDates,
   GET_NHE_TIME_SLOTS: onGetNHETimeSlots,
+  GET_NHE_TIME_SLOTS_DS: onGetNHETimeSlotsDS,
   GET_REQUISITION_HEADER_INFO: onGetRequisitionHeaderInfo,
   GET_SCHEDULE_DETAILS: onGetScheduleDetails,
   GO_TO_DASHBOARD: onGoToDashboard,

@@ -231,12 +231,9 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   setLoading(true)(dispatch);
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
-  const jobId = payload.urlParams?.jobId;
-  let job = payload.data?.job;
-  let schedule = payload.data?.job?.selectedChildSchedule;
-  //payload.data.requisition.flag
+
   log(`get NHE slots request payload: `, payload);
-  if (requisitionId || jobId) {
+  if (requisitionId) {
     try {
       let { application } = payload.data;
       if (!application || isEmpty(application)) {
@@ -245,12 +242,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
           applicationId
         );
       }
-      // if (!job) {
-      //   job = await new JobService().getJobInfo(application.jobScheduleSelected.jobId);
-      // }
-      // if (!schedule) {
-      //   schedule = await new JobService().getScheduleDetailByScheduleId(job.selectedChildSchedule.scheduleId);
-      // }
+
       const { jobSelected } = application;
       log(`getting time slots for HCR ${jobSelected?.headCountRequestId}`, {
         childRequisitionId: jobSelected?.childRequisitionId,
@@ -262,20 +254,6 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         headCountRequestId: jobSelected?.headCountRequestId,
         parentRequisitionId: requisitionId,
       };
-
-      if (schedule) {
-        let siteId = schedule.siteId;
-        if(siteId.startsWith("SITE-")){
-          siteId = siteId.replace("SITE-", "");
-        }
-
-        timeslotRequest.requisitionServiceScheduleDetails = {
-          "scheduleId": schedule.scheduleId,
-          "locationCode": siteId,
-          "hireStartDate": schedule.hireStartDate,
-          "contingencyTurnAroundDays": schedule.contingencyTat
-        }
-      }
 
       const response = await new RequisitionService().availableTimeSlots(timeslotRequest);
 
@@ -328,6 +306,131 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         log(`load time slots for HCR ${jobSelected?.headCountRequestId}`, {
           timeSlotsCount: response?.length
         });
+        onUpdatePageId("no-available-time-slots")(dispatch);
+      }
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      logError(`Unable to get NHE time slots`, ex);
+      setLoading(false)(dispatch);
+      onUpdateError(
+        ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
+      )(dispatch);
+    }
+  }
+};
+
+export interface NHETimeslotRequestDS {
+  parentRequisitionId: null,
+  requisitionServiceScheduleDetails: {
+    scheduleId: string;
+    locationCode: string;
+    hireStartDate: string;
+    contingencyTurnAroundDays: number;
+  }
+}
+
+export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
+  const applicationId = payload.urlParams?.applicationId;
+  const jobId = payload.urlParams?.jobId;
+  let job = payload.data?.job;
+  let schedule = payload.data?.job?.selectedChildSchedule;
+
+  log(`get NHE slots request payload: `, payload);
+  if (jobId) {
+    try {
+      let { application } = payload.data;
+      if (!application || isEmpty(application)) {
+        log(`getting application in NHE if application not exits in state`);
+        application = await new CandidateApplicationService().getApplication(
+          applicationId
+        );
+      }
+
+      if (!job) {
+        try {
+          job = await new JobService().getJobInfo(application.jobScheduleSelected.jobId);
+        } catch (ex) {
+          setLoading(false)(dispatch);
+          onUpdateError("Failed to fetch schedule information to fetch time slots.")(dispatch);
+          throw ex;
+        }
+      }
+
+      if (!schedule) {
+        try {
+          schedule = await new JobService().getScheduleDetailByScheduleId(job.selectedChildSchedule.scheduleId);
+        } catch (ex) {
+          setLoading(false)(dispatch);
+          onUpdateError("Failed to fetch schedule information to fetch time slots.")(dispatch);
+          throw ex;
+        }
+      }
+
+      let siteId = schedule.siteId;
+      if(siteId.startsWith("SITE-")){
+        siteId = siteId.replace("SITE-", "");
+      }
+
+      const timeslotRequest: NHETimeslotRequestDS = {
+        parentRequisitionId: null,
+        requisitionServiceScheduleDetails: {
+          scheduleId: schedule.scheduleId,
+          locationCode: siteId,
+          hireStartDate: schedule.hireStartDate,
+          contingencyTurnAroundDays: schedule.contingencyTat
+        }
+      }
+
+      const response = await new RequisitionService().availableTimeSlots(timeslotRequest);
+
+      if (!isEmpty(response)) {
+        const nheSlots: any[] = [];
+        response.forEach((slot: any) => {
+          const nheSlot: any = {};
+          nheSlot.value = JSON.stringify(slot);
+          //format the date with
+          nheSlot.title = moment(slot.dateWithoutFormat, "DD/MM/yyyy").format(
+            "dddd, MMM Do YYYY"
+          );
+          let nheSlotLocation: string = isNil(slot.location.streetAddress)
+            ? ""
+            : slot.location.streetAddress;
+          nheSlotLocation = isNil(slot.location.city)
+            ? nheSlotLocation
+            : nheSlotLocation + ", " + slot.location.city;
+          nheSlotLocation = isNil(slot.location.state)
+            ? nheSlotLocation
+            : nheSlotLocation + ", " + slot.location.state;
+          nheSlotLocation = isNil(slot.location.postalCode)
+            ? nheSlotLocation
+            : nheSlotLocation + ", " + slot.location.postalCode;
+          nheSlot.details = slot.timeRange + `${"\n"}` + nheSlotLocation;
+          nheSlot.recruitingEventId = slot.recruitingEventId;
+          nheSlot.timeSlotId = slot.timeSlotId;
+          const availableTimeSlots =
+            slot.availableResources - slot.appointmentsBooked;
+          if (availableTimeSlots <= MINIMUM_AVAILABLE_TIME_SLOTS) {
+            nheSlot.optionalMessage = {
+              type: "warning",
+              message: "Very few spots remaining"
+            };
+          }
+          nheSlots.push(nheSlot);
+        });
+        dispatch({
+          type: UPDATE_REQUISITION,
+          payload: {
+            nheTimeSlots: nheSlots,
+            nehTimeSlotsTotalCount: nheSlots.length
+          }
+        });
+        log(`sanitized and updated state with time slots`);
+      } else {
+        log(`Empty response loading time slots for ${JSON.stringify(timeslotRequest)}`);
         onUpdatePageId("no-available-time-slots")(dispatch);
       }
       setLoading(false)(dispatch);
