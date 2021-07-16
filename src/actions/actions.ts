@@ -351,4 +351,5 @@ export const DsPages: { [key: string]: string } = {
   "contingent-offer": "contingent-offer-ds",
   "cali-disclosure": "cali-disclosure-ds",
   "nhe": "nhe-ds",
+  "appointment-detail-page": "appointment-detail-page-ds"
 }
