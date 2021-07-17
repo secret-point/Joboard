@@ -78,7 +78,7 @@ describe("Utils Tests: ", () => {
         window.location.hash = "/#/1234/1234/misc";
         launchAuthentication();
         const expected = 
-        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234&&misc=misc")}`;
+        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234&misc=misc")}`;
         expect(window.location.assign).toBeCalledTimes(1);
         expect(window.location.assign).toBeCalledWith(expected);
     });
@@ -88,7 +88,7 @@ describe("Utils Tests: ", () => {
         window.location.hash = "/#/1234/1234";
         launchAuthentication();
         const expected = 
-        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234&")}`;
+        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234")}`;
         expect(window.location.assign).toBeCalledTimes(1);
         expect(window.location.assign).toBeCalledWith(expected);
     });
@@ -99,7 +99,7 @@ describe("Utils Tests: ", () => {
         window.sessionStorage.setItem("query-params", "");
         launchAuthentication();
         const expected = 
-        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234&")}`;
+        `https://test.auth.url/?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234")}`;
         expect(window.location.assign).toBeCalledTimes(1);
         expect(window.location.assign).toBeCalledWith(expected);
     });

@@ -33,7 +33,8 @@ export const launchAuthentication = () => {
   delete queryParams.page;
   delete queryParams.requisitionId;
   delete queryParams.applicationId;
-  const queryStr = queryString.stringify(queryParams);
+  delete queryParams.jobId;
+  const queryStr = isEmpty(queryParams)? "" :`&${queryString.stringify(queryParams)}`;
   let hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
   const state = window.reduxStore.getState();
@@ -46,7 +47,8 @@ export const launchAuthentication = () => {
     currentPage = "resume-application";
   }
   let redirectUrl = origin;
-  redirectUrl = `${redirectUrl}/?page=${currentPage}&requisitionId=${hash[1]}&applicationId=${hash[2]}&${queryStr}`;
+  const isLegacy = checkIfIsLegacy();
+  redirectUrl = `${redirectUrl}/?page=${currentPage}&${isLegacy? "requisitionId" : "jobId"}=${hash[1]}&applicationId=${hash[2]}${queryStr}`;
   if (hash.length === 4) {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }
