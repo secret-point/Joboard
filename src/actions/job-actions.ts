@@ -45,7 +45,7 @@ export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
 export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHEDULE";
 export const SELECTED_SCHEDULE = "SELECTED_SCHEDULE";
-const SORT_KEY_DEFAULT = "FEATURED";
+const SORT_KEY_DEFAULT = "DEFAULT";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
@@ -225,41 +225,39 @@ export const applySortOnSchedules = (
     filter: JSON.stringify(filter)
   });
   switch (filter.sortBy) {
-    case "FEATURED": {
+    case "DEFAULT": {
       const schedulesData = [...availableSchedules.schedules];
-      const sortFunction = sortWith<any>([
-        ascend(prop("pageFactor")),
-        ascend(prop("rankingOrder"))
-      ]);
-      schedules = sortFunction(schedulesData);
+      schedules = schedulesData;
       break;
     }
     case "PAY_RATE": {
-      const schedulesData = [...availableSchedules.schedules];
-      const sortFunction = sortWith<any>([descend(prop("totalPayRate"))]);
+      const schedulesData = availableSchedules.schedules;
+      const sortFunction = sortWith<any>([descend(prop("basePay"))]);
       schedules = sortFunction(schedulesData);
       break;
     }
     case "HOURS_DESC": {
       const schedulesData = [...availableSchedules.schedules];
-      const sortFunction = sortWith<any>([descend(prop("minHoursPerWeek"))]);
+      const sortFunction = sortWith<any>([descend(prop("hoursPerWeek"))]);
       schedules = sortFunction(schedulesData);
       break;
     }
     case "HOURS_ASC": {
       const schedulesData = [...availableSchedules.schedules];
-      const sortFunction = sortWith<any>([ascend(prop("minHoursPerWeek"))]);
+      const sortFunction = sortWith<any>([ascend(prop("hoursPerWeek"))]);
       schedules = sortFunction(schedulesData);
       break;
     }
     case "DATE_ASC": {
       const schedulesData = [...availableSchedules.schedules];
-      const sortFunction = sortWith<any>([ascend(prop("day1Date"))]);
+      const sortFunction = sortWith<any>([ascend(prop("firstDayOnSite"))]);
       schedules = sortFunction(schedulesData);
       break;
     }
     default: {
       console.log("Sort key is not available");
+      const schedulesData = [...availableSchedules.schedules];
+      schedules = schedulesData;
       break;
     }
   }
@@ -268,9 +266,9 @@ export const applySortOnSchedules = (
   return availableSchedules;
 };
 
-const constructFilterPayload = (payload: IPayload) => {
+const constructFilterPayloadDS = (payload: IPayload) => {
   const selectedSortKey =
-    propertyOf(payload.data.output)("job-opportunities.sortKey") || "FEATURED";
+    propertyOf(payload.data.output)("job-opportunities.sortKey") || "DEFAULT";
 
   const maxHoursPerWeek = propertyOf(payload.data.output)(
     "job-opportunities.maxHoursPerWeek"
@@ -280,7 +278,7 @@ const constructFilterPayload = (payload: IPayload) => {
     "job-opportunities.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
-  const defaultFilter = payload.appConfig.defaultAvailableFilter;
+  const defaultFilter = payload.appConfig.defaultAvailableFilterDS;
 
   const scheduleReference: any = {};
   daysHoursFilter.forEach(filter => {
@@ -311,7 +309,7 @@ export const onSchedulesIncrementalLoad = (payload: IPayload) => async (
     type: SET_LOADING_SCHEDULES,
     payload: true
   });
-  const filter = constructFilterPayload(payload);
+  const filter = constructFilterPayloadDS(payload);
   if (!isNil(payload.data.schedulePageFactor)) {
     filter.pageFactor = payload.data.schedulePageFactor + 1;
   } else {
@@ -369,7 +367,7 @@ export const onApplyFilterDS = (payload: IPayload) => async (
 ) => {
   const { options } = payload;
   onRemoveError()(dispatch);
-  let filter = constructFilterPayload(payload);
+  let filter = constructFilterPayloadDS(payload);
   filter.pageFactor = 1;
   setLoading(true)(dispatch);
   const jobId = payload.urlParams.jobId as string;
@@ -428,7 +426,7 @@ export const onApplyFilterDS = (payload: IPayload) => async (
           log("schedulePreference is empty, reset the filterData:", {
             filterData: JSON.stringify(filterData)
           });
-          filter = constructFilterPayload(payload);
+          filter = constructFilterPayloadDS(payload);
         }
         const response = await new JobService().getAllSchedules({
           jobId,

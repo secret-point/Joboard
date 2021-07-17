@@ -247,6 +247,7 @@ export interface AppConfig {
   ASHChecklistURL: string;
   defaultDaysHoursFilter: DaysHoursFilter[];
   defaultAvailableFilter: AvailableFilter;
+  defaultAvailableFilterDS: AvailableFilter;
 }
 
 export interface PageOrder {

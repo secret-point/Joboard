@@ -75,6 +75,15 @@ export const TEST_APP_CONFIG: any = {
         }
       }
     }
+  },
+  defaultAvailableFilterDS: {
+    filter: {
+      range: {
+        HOURS_PER_WEEK: {
+          maximumValue: 30
+        }
+      }
+    }
   }
 }
 export const TEST_PAYLOAD: any = {

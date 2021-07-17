@@ -1,3 +1,4 @@
+import { checkIfIsLegacy } from "../helpers/utils";
 import { EVENT, PAGE_TYPE, PAGE_NAME } from "./adobe-analytics";
 
 const candidatePayloadDefault = {
@@ -495,7 +496,7 @@ const filterPayloadDefault = {
 
 const sortPayloadDefault = {
   key: "sortBy",
-  value: "defaultAvailableFilter.sortBy"
+  value: checkIfIsLegacy()? "defaultAvailableFilter.sortBy" : "defaultAvailableFilterDS.sortBy"
 };
 
 export const ADOBE_PAGE_LOAD_METRICS: any = {
