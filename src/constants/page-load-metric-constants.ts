@@ -407,6 +407,90 @@ const shiftTypePayloadDefault = {
   ]
 };
 
+const geoclusterPayloadDefault = {
+  key: "geocluster",
+  values: [
+    {
+      key: "ID",
+      value: "application.schedule.geoClusterId"
+    },
+    {
+      key: "name",
+      value: "application.schedule.geoClusterName"
+    },
+    {
+      key: "description",
+      value: "application.schedule.description"
+    },
+    {
+      key: "country",
+      value: "application.schedule.country"
+    },
+    {
+      key: "region",
+      value: "application.schedule.region"
+    },
+    {
+      key: "zone",
+      value: "application.schedule.zone"
+    },
+    {
+      key: "locationCode",
+      value: "application.schedule.locationCode"
+    },
+    {
+      key: "loEnable",
+      value: "application.schedule.loEnable"
+    }
+  ]
+};
+
+const sitePayloadDefault = {
+  key: "site",
+  values: [
+    {
+      key: "code",
+      value: "application.schedule.siteId"
+    },
+    {
+      key: "locationCode",
+      value: "application.schedule.locationCode"
+    },
+    {
+      key: "geoclusterCode",
+      value: "application.schedule.geoClusterId"
+    },
+    {
+      key: "businessLine",
+      value: "application.schedule.businessLine"
+    },
+    {
+      key: "businessCategory",
+      value: "application.schedule.businessCategory"
+    },
+    {
+      key: "address",
+      value: "application.schedule.address"
+    },
+    {
+      key: "city",
+      value: "application.schedule.city"
+    },
+    {
+      key: "zipCode",
+      value: "application.schedule.postalCode"
+    },
+    {
+      key: "agencyName",
+      value: "application.schedule.agencyName"
+    },
+    {
+      key: "contingencyTAT",
+      value: "application.schedule.businessLine"
+    }
+  ]
+};
+
 const nhePayloadDefault = {
   key: "NHE",
   values: [
@@ -517,7 +601,13 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
         type: PAGE_TYPE.APPLICATION
       }
     },
-    dataPayload: [jobPayloadDefault, dragonstoneSchedulePayloadDefault]
+    dataPayload: [
+      jobPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+    ]
   },
   "assessment-consent": {
     eventPayload: {
@@ -530,7 +620,10 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     dataPayload: [
       jobPayloadDefault,
       applicationPayloadDefault,
-      dragonstoneSchedulePayloadDefault]
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,]
   },
   assessment: {
     eventPayload: {
@@ -545,6 +638,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -562,6 +657,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftsPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -579,6 +676,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobRolesPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -597,6 +696,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       eventSchedulePayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -614,6 +715,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -631,6 +734,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -648,6 +753,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -665,6 +772,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
       nhePayloadDefault
     ]
@@ -683,6 +792,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -700,6 +811,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -717,6 +830,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -734,6 +849,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -751,6 +868,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -768,6 +887,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -785,6 +906,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -801,6 +924,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationIneligibleDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -818,6 +943,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -835,6 +962,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -852,6 +981,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -869,6 +1000,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -886,6 +1019,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationIneligibleDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -902,7 +1037,10 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       jobPayloadDefault,
       applicationPayloadDefault,
       shiftTypePayloadDefault,
-      dragonstoneSchedulePayloadDefault
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
     ]
   },
 
@@ -917,6 +1055,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -931,6 +1071,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -945,6 +1087,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -959,6 +1103,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -972,6 +1118,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
       shiftTypePayloadDefault
     ]
@@ -989,6 +1137,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationIneligibleDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1005,6 +1155,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationIneligibleDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1020,6 +1172,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       schedulesErrorEvent,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1036,6 +1190,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1050,6 +1206,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ],
     appConfigPayload: [filterPayloadDefault]
@@ -1064,6 +1222,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ],
     appConfigPayload: [sortPayloadDefault]
@@ -1077,6 +1237,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ],
     appConfigPayload: [filterPayloadDefault]
@@ -1090,6 +1252,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ],
     appConfigPayload: [sortPayloadDefault]
@@ -1111,6 +1275,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       eventSchedulePayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1128,6 +1294,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1145,6 +1313,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1162,6 +1332,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1179,6 +1351,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1196,6 +1370,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1213,6 +1389,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1229,6 +1407,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1246,6 +1426,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPreferencesPayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1259,6 +1441,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPreferencesPayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1272,6 +1456,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPreferencesPayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1285,6 +1471,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPreferencesPayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1298,6 +1486,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPreferencesPayload,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1311,6 +1501,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1324,6 +1516,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1336,6 +1530,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1349,6 +1545,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1366,6 +1564,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
       shiftTypePayloadDefault
     ]
@@ -1384,6 +1584,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1401,6 +1603,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
     ]
   },
@@ -1418,6 +1622,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
       shiftTypePayloadDefault
     ]
@@ -1436,6 +1642,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftPayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault,
       shiftTypePayloadDefault
     ]
@@ -1456,6 +1664,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault,
       dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
       candidatePayloadDefault
     ]
   }
