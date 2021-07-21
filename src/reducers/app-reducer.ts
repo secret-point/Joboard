@@ -358,7 +358,7 @@ const AppReducer = (state = initialState, action: IAction) => {
         }
       });
     }
-    
+
     case SET_SELECTED_SHIFT: {
       const application = { ...state.data.application };
       application.shift = payload;
@@ -413,9 +413,12 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case GET_APPLICATION: {
-      const schedule = cloneDeep(state.data.application.schedule);
-      const shift = cloneDeep(state.data.application.shift);
-      const application = { schedule, shift, ...payload.application};
+      let application = payload.application;
+      if (state?.data?.application?.schedule) {
+        const schedule = cloneDeep(state.data.application.schedule);
+        const shift = cloneDeep(state.data.application.shift);
+        application = { schedule, shift, ...payload.application};
+      }
       return updateState(state, {
         data: {
           application: {

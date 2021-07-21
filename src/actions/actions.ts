@@ -85,7 +85,6 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
 
 export const onRedirectToASHChecklist = (payload: IPayload): void => {
   const isLegacy = checkIfIsLegacy();
-  console.log('=========isLegacy=========onRedirectToASHChecklist==================', isLegacy);
   const { requisitionId, jobId } = payload.urlParams
   const ASHChecklistURL = payload.appConfig.ASHChecklistURL.replace(
     "{applicationId}",
@@ -98,7 +97,6 @@ export const goTo = (path: string, urlParams?: UrlParam) => (
   dispatch: Function
 ) => {
   const isLegacy = checkIfIsLegacy();
-  console.log('=========isLegacy=========goTo==================', isLegacy);
   if (urlParams) {
     const { requisitionId, applicationId, misc, jobId } = urlParams;
     const page = path;
@@ -129,7 +127,6 @@ export const onGoToSelfServicePage = (payload: IPayload) => (
   dispatch: Function
 ) => {
   const isLegacy = checkIfIsLegacy();
-  console.log('=========isLegacy=========onGoToSelfServicePage==================', isLegacy);
   const { requisitionId, applicationId, jobId } = payload.urlParams;
   const { hasShiftSelected } = payload.options;
   const { noShiftSelected } = payload.options;
@@ -168,8 +165,6 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
   const responseTime = Date.now();
   setLoading(true)(dispatch);
   const isLegacy = checkIfIsLegacy();
-  console.log('=========isLegacy=========page==================', page);
-  console.log('=========isLegacy=========isLegacy==================', isLegacy);
   try {
     log(`Loading page configuration ${page}`);
     const pageConfig = await new PageService().getPageConfig(`${isLegacy

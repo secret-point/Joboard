@@ -72,7 +72,6 @@ export const onGetApplication = (payload: IPayload) => async (
   dispatch: Function
 ): Promise<ICandidateApplication | void> => {
   const isLegacy = checkIfIsLegacy();
-  console.log("=======onGetApplication")
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
@@ -163,7 +162,6 @@ export const onGetApplication = (payload: IPayload) => async (
           setLoading(false)(dispatch);
         }
       }
-      return applicationResponse;
     } else if (isNil(applicationId)) {
       log("did not found application id in state or URL");
       throw new Error(NO_APPLICATION_ID);
@@ -187,7 +185,6 @@ export const onGetApplicationDS = (payload: IPayload) => async (
   dispatch: Function
 ): Promise<ICandidateApplication | void> => {
   const isLegacy = checkIfIsLegacy();
-  console.log("=======onGetApplication-ds")
   try {
     setLoading(true)(dispatch);
     const applicationId = payload.urlParams?.applicationId;
@@ -289,16 +286,11 @@ export const continueWithFCRADecline = (payload: IPayload) => (
 export const createApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  console.log("==================createApplication")
   const isLegacy = checkIfIsLegacy();
   const urlParams = queryString.parse(window.location.search);
   const jobId  = urlParams.jobId as string;
-  console.log("==================createApplication=====jobId",jobId)
   if (isEmpty(payload.data.application)) {
     try {
-      // // this is dragonstone if there is a jobId in the urlParams
-      // const isDragonStone = !isNil(payload.urlParams.jobId);
-
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       log("started creating the application");
@@ -331,7 +323,7 @@ export const createApplication = (payload: IPayload) => async (
         });
       }
       log("createApplication response=", response);
-      console.log(response);
+
       window.sessionStorage.setItem("applicationId", response.applicationId);
       dispatch({
         type: UPDATE_APPLICATION,
@@ -391,7 +383,6 @@ export const createApplication = (payload: IPayload) => async (
 export const updateApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  console.log('updateApplication')
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
   const {
@@ -521,7 +512,6 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
 
 
 export const onSelectedSchedules = (payload: IPayload) => (dispatch: Function) => {
-  console.log("============onSelectedSchedules",payload);
   onSelectedSchedule(payload.selectedSchedule.scheduleId)(dispatch);
   if (payload.options?.goTo) {
     goTo(payload.options?.goTo, payload.urlParams)(dispatch);

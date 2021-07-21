@@ -120,12 +120,10 @@ export const onGetScheduleDetails = (payload: IPayload) => async (
 export const onSelectedSchedule = (scheduleId: string) => async (
   dispatch: Function
 ) => {
-  console.log("============onSelectedSchedule", scheduleId);
   log(`getting selected schedule ${scheduleId}`);
   const response = await new JobService().getScheduleDetailByScheduleId(
     scheduleId
   );
-  console.log(response);
   dispatch({
     type: SELECTED_SCHEDULE,
     payload: response
@@ -142,28 +140,15 @@ export const onGetAllSchedules = (payload: IPayload) => async (
     type: SET_LOADING_SCHEDULES,
     payload: true
   });
-  console.log("========onGetAllSchedules============start", payload);
   const jobId = payload.urlParams.jobId as string;
   // const jobId = payload.urlParams?.jobId;
-  console.log("========onGetAllSchedules============jobId", jobId);
   const applicationId = payload.urlParams?.applicationId;
-  console.log(payload.urlParams);
   const storedApplicationId = window.sessionStorage.getItem("applicationId");
   if (!applicationId && storedApplicationId) {
-    console.log(
-      "========applicationId============storedApplicationId",
-      applicationId,
-      storedApplicationId
-    );
     dispatch(push(`/job-opportunities/${jobId}/${storedApplicationId}`));
   } else if (jobId) {
     try {
       log(`getting all available shifts for job ${jobId}`);
-      console.log(
-        "========onGetAllSchedules============jobId",
-        jobId,
-        applicationId
-      );
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
       const response = await new JobService().getAllSchedules({
@@ -433,7 +418,6 @@ export const onApplyFilterDS = (payload: IPayload) => async (
           applicationId,
           filter
         });
-        console.log("===============", response);
         pageFactor = response.pageFactor;
         log("Applying sorting if user selected sort", {
           pageFactor: response.pageFactor,
@@ -524,7 +508,7 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
   console.log(payload);
-  
+
   const jobId =
     (payload.urlParams.jobId as string) ||
     payload.data.selectedSchedule.jobId ||
