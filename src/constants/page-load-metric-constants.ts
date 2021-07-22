@@ -19,6 +19,32 @@ const candidatePayloadDefault = {
   ]
 }
 
+const candidateOnThankYouPayloadDefault = {
+  key: "candidate",
+  values: [
+    {
+      key: "status",
+      value: "candidate.loginStatus"
+    },
+    {
+      key: "sfCandidateId",
+      value: "candidate.candidateSFId"
+    },
+    {
+      key: "bbCandidateId",
+      value: "candidate.candidateId"
+    },
+    {
+      key: "referbyExisting",
+      value: "application.jobReferral.hasReferral"
+    },
+    {
+      key: "referrerID",
+      value: "application.jobReferral.referralInfo"
+    }
+  ]
+}
+
 const jobPayloadDefault = {
   key: "job",
   values: [
@@ -1668,5 +1694,45 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
       candidatePayloadDefault
     ]
-  }
+  },
+  "skip-schedule":{
+    eventPayload: {
+      event: EVENT.SKIP_SCHEDULE_SELECTION,
+      page: {
+        name: PAGE_NAME["update-shift-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      eventSchedulePayload,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault
+    ]
+  },
+  "thank-you-submit": {
+    eventPayload: {
+      event: EVENT.THANK_YOU_SUBMIT,
+      page: {
+        name: PAGE_NAME["thank-you"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidateOnThankYouPayloadDefault,
+    ]
+  },
 };

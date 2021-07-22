@@ -16,7 +16,7 @@ import propertyOf from "lodash/propertyOf";
 import CandidateApplicationService from "../services/candidate-application-service";
 import isNil from "lodash/isNil";
 import { push } from "react-router-redux";
-import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
+import { postAdobeMetrics, sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import moment from "moment";
 import { sortWith, ascend, descend, prop } from "ramda";
@@ -636,6 +636,9 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           availableSchedules: [],
           selectedChildSchedule: selectedSchedule
         } 
+        if (payload.options?.adobeMetrics) {
+          postAdobeMetrics(payload.options.adobeMetrics, {});
+        }
         setWorkflowLoading(false)(dispatch);
         completeTask(applicationResponse, "job-opportunities", undefined, "contingent-offer", jobPayload);
       });
