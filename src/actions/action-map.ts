@@ -63,7 +63,9 @@ import {
   onSchedulesIncrementalLoad,
   onGoToDescriptionDS,
   onGetJobDescriptionDS,
-  onGetScheduleDetails
+  onGetScheduleDetails,
+  onCheckIfSkipScheduleSelection,
+  onSkipScheduleSelection
 } from "./job-actions";
 const actionMap: any = {
   CANCEL_SHIFT_SELECTION_SELF_SERVICE: onCancelShiftSelectionSelfService,
@@ -127,6 +129,8 @@ const actionMap: any = {
   UPDATE_SHIFT_SELECTION_DS: onUpdateShiftSelectionDS,
   UPDATE_SHIFT_SELECTION_SELF_SERVICE: onUpdateShiftSelectionSelfService,
   UPDATE_WOTC_STATUS: onUpdateWotcStatus,
+  CHECK_IF_SKIP_SCHEDULE_SELECTION: onCheckIfSkipScheduleSelection,
+  SKIP_SCHEDULE_SELECTION: onSkipScheduleSelection,
 };
 
 export default actionMap;

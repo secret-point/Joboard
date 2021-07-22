@@ -84,7 +84,7 @@ export const onGetApplication = (payload: IPayload) => async (
       requisitionId
     });
     if (!options?.loadOnlyApplicationData) {
-      isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);;
+      isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);
       candidateResponse = await onGetCandidate(
         payload,
         options.ignoreCandidateData
@@ -218,7 +218,7 @@ export const onGetApplicationDS = (payload: IPayload) => async (
       );
 
       if (!options?.loadOnlyApplicationData) {
-        isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);;
+        isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);
         candidateResponse = await onGetCandidate(
           payload,
           options.ignoreCandidateData

@@ -1,12 +1,13 @@
 import RequisitionService from "../services/requisition-service";
 import JobService from "../services/job-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
+import IPayload, { AvailableFilter, DaysHoursFilter, JobDescriptor } from "../@types/IPayload";
 import {
   setLoading,
   onUpdatePageId,
   onUpdateChange,
-  onGoToAction
+  goTo,
+  setWorkflowLoading
 } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
@@ -23,7 +24,10 @@ import { log, logError } from "../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
-import { sendAdobeAnalytics } from "./application-actions";
+import { GET_APPLICATION, JobSelectedDS, UPDATE_APPLICATION } from "./application-actions";
+import { NO_APPLICATION_ID } from "../constants/error-messages";
+import { completeTask } from "./workflow-actions";
+import queryString from "query-string";
 
 export const GET_JOB_INFO = "GET_JOB_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -534,3 +538,128 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
     }
   }
 };
+
+export const onCheckIfSkipScheduleSelection = ( payload: IPayload ) => async (
+  dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  const scheduleId = payload.urlParams.scheduleId;
+  const jobId = payload.urlParams.jobId;
+  const applicationId = payload.urlParams.applicationId;
+  if(jobId && applicationId && scheduleId){
+    goTo("skip-schedule", payload.urlParams)(dispatch);
+  }
+}
+
+export const onSkipScheduleSelection = ( payload: IPayload ) => async (
+  dispatch: Function
+) => {
+  setWorkflowLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  // set current page to job-opportunities so it wont go back to this skip-schedule page when click back botton
+  window.localStorage.setItem("page", "job-opportunities");
+  const scheduleId = payload.urlParams.scheduleId;
+  const jobId = payload.urlParams.jobId;
+  const applicationId = payload.urlParams.applicationId;
+  if(jobId && applicationId && scheduleId){
+    try {
+      const getApplication = new CandidateApplicationService().getApplication(applicationId);
+      const getJob = new JobService().getJobInfo(jobId);
+      const getSelectedSchedule = new JobService().getScheduleDetailByScheduleId(scheduleId);
+  
+      let applicationResponse, job, selectedSchedule;
+      await Promise.all([getApplication, getJob, getSelectedSchedule]).then(async (results) => {
+        applicationResponse = results[0];
+        job = results[1];
+        selectedSchedule = results[2];
+        dispatch({
+          type: GET_APPLICATION,
+          payload: {
+            application: applicationResponse,
+            currentState: applicationResponse.currentState
+          }
+        });
+
+        dispatch({
+          type: GET_JOB_INFO,
+          payload: job
+        });
+
+        // Go to contingent-offer
+        const jobSelected: JobSelectedDS = {
+          jobId: jobId,
+          scheduleId: scheduleId,
+          scheduleDetails: JSON.stringify(selectedSchedule),
+        }
+
+        const response = await new CandidateApplicationService().updateApplication({
+          type: "job-confirm",
+          applicationId: applicationId,
+          payload: jobSelected
+        });
+
+        response.schedule = selectedSchedule;
+        response.jobDescription = job.jobDescription;
+
+        dispatch({
+          type: UPDATE_APPLICATION,
+          payload: {
+            application: response
+          }
+        });
+
+        log(
+          `Updated application at skip-schedule and update application data in state`,
+          {
+            selectedSchedule: JSON.stringify(selectedSchedule)
+          }
+        );
+        log(
+          `After updating schedule selection, application is redirecting to contingent-offer`
+        );
+        delete payload.urlParams.scheduleId
+        const queryParams = queryString.parse(window.location.search);
+        // Remove schedule Id before go to contingent-offer page
+        window.history.replaceState(
+          {},
+          document.title,
+          `${window.location.origin}${window.location.pathname}?applicationId=${queryParams.applicationId}&jobId=${queryParams.jobId}${window.location.hash}`
+        );
+
+        goTo("contingent-offer", payload.urlParams)(dispatch);
+        log(
+          `Complete task event initiated on action job-confirm and current page is skip-schedule`
+        );
+        const jobPayload: JobDescriptor = {
+          consentInfo: job,
+          jobDescription: job,
+          availableSchedules: [],
+          selectedChildSchedule: selectedSchedule
+        } 
+        setWorkflowLoading(false)(dispatch);
+        completeTask(applicationResponse, "job-opportunities", undefined, "contingent-offer", jobPayload);
+      });
+
+    } catch (ex) {
+      setWorkflowLoading(false)(dispatch);
+      logError(`Failed while updating schedule selection`, ex);
+      if (ex?.message === NO_APPLICATION_ID) {
+        window.localStorage.setItem("page", "applicationId-null");
+        onUpdatePageId("applicationId-null")(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to update application"
+        )(dispatch);
+      }
+    }
+  } else {
+    // Go to job list if any of (jobId && applicationId && scheduleId) is missing
+    const queryParams = queryString.parse(window.location.search);
+    window.history.replaceState(
+      {},
+      document.title,
+      `${window.location.origin}${window.location.pathname}?applicationId=${queryParams.applicationId}&jobId=${queryParams.jobId}${window.location.hash}`
+    );
+    goTo("job-opportunities", payload.urlParams)(dispatch);
+  }
+}
