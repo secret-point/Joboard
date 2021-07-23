@@ -7,7 +7,8 @@ import {
   onUpdatePageId,
   onUpdateChange,
   goTo,
-  setWorkflowLoading
+  setWorkflowLoading,
+  onGoToAction
 } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import find from "lodash/find";
@@ -49,6 +50,7 @@ export const UPDATE_POSSIBLE_NHE_DATES = "UPDATE_POSSIBLE_NHE_DATES";
 export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHEDULE";
 export const SELECTED_SCHEDULE = "SELECTED_SCHEDULE";
+export const RESET_FILTERS_SELF_SERVICE_DS = "RESET_FILTERS_SELF_SERVICE_DS";
 const SORT_KEY_DEFAULT = "DEFAULT";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
@@ -537,6 +539,335 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
       );
     }
   }
+};
+
+export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  const { options } = payload;
+  onRemoveError()(dispatch);
+  let filter = constructFilterPayloadSelfService(payload);
+  filter.pageFactor = 1;
+  setLoading(true)(dispatch);
+  const jobId = payload.urlParams.jobId as string;
+  const applicationId = payload.urlParams?.applicationId;
+
+  const activeDays: any[] = [];
+  let daysHoursFilter = (propertyOf(payload.data.output)(
+      "update-shift-ds.daysHoursFilter"
+  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
+  daysHoursFilter.forEach(filter => {
+    if (filter.isActive) {
+      activeDays.push(filter.day);
+    }
+  });
+
+  let dataLayer: any = {};
+  if (options?.hasSortAction) {
+    dataLayer = getDataForEventMetrics("apply-sorting-self-service");
+  } else {
+    dataLayer = getDataForEventMetrics("apply-filter-self-service");
+    dataLayer.filter.daysOfWeek = activeDays;
+  }
+  sendDataLayerAdobeAnalytics(dataLayer);
+
+  log("Applying filter DS", {
+    filter: JSON.stringify(filter)
+  });
+
+  if (jobId) {
+    try {
+      let availableSchedules: any = {};
+      let pageFactor;
+      if (options?.hasSortAction) {
+        log("Applying sorting selected sort", {
+          filter: JSON.stringify(filter)
+        });
+        const scheduleInJob = payload.data.job.availableSchedules;
+        availableSchedules = applySortOnSchedules(scheduleInJob, filter);
+      } else {
+        if (isEmpty(filter.filter.schedulePreferences)) {
+          const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
+          const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
+          const sortKey = SORT_KEY_DEFAULT;
+          const filterData = {
+            sortKey,
+            maxHoursPerWeek,
+            daysHoursFilter
+          };
+          dispatch({
+            type: RESET_FILTERS,
+            payload: {
+              ...filterData
+            }
+          });
+          payload.data.output["update-shift-ds"] = filterData;
+          log("schedulePreference is empty, reset the filterData:", {
+            filterData: JSON.stringify(filterData)
+          });
+          filter = constructFilterPayloadSelfService(payload);
+        }
+        const response = await new JobService().getAllSchedules({
+          jobId,
+          applicationId,
+          filter
+        });
+        console.log("===============", response);
+        pageFactor = response.pageFactor;
+        log("Applying sorting if user selected sort", {
+          pageFactor: response.pageFactor,
+          availableSchedulesCount: response.availableSchedules.total,
+          filter: JSON.stringify(filter)
+        });
+        availableSchedules = applySortOnSchedules(
+            response.availableSchedules,
+            filter
+        );
+      }
+      dispatch({
+        type: UPDATE_SCHEDULES,
+        payload: {
+          availableSchedules,
+          pageFactor,
+          schedulesEmptyOnFilter: isEmpty(availableSchedules.schedules)
+              ? true
+              : false
+        }
+      });
+      log("Updated shifts in state while applying filter");
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      log("Error while applying filter", ex);
+      setLoading(false)(dispatch);
+      if (
+          ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
+          ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
+      ) {
+        dispatch({
+          type: UPDATE_SCHEDULES,
+          payload: {
+            availableSchedules: {
+              schedules: [],
+              total: 0
+            },
+            schedulesEmptyOnFilter: true
+          }
+        });
+      } else {
+        onUpdateError(
+            ex?.response?.data?.errorMessage || "Unable to get schedules"
+        )(dispatch);
+      }
+    }
+  }
+};
+
+const constructFilterPayloadSelfService = (payload: IPayload) => {
+  const selectedSortKey =
+      propertyOf(payload.data.output)("update-shift-ds.sortKey") || "FEATURED";
+
+  const maxHoursPerWeek = propertyOf(payload.data.output)(
+      "update-shift-ds.maxHoursPerWeek"
+  );
+
+  let daysHoursFilter = (propertyOf(payload.data.output)(
+      "update-shift-ds.daysHoursFilter"
+  ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
+
+  const defaultFilter = payload.appConfig.defaultAvailableFilter;
+
+  const scheduleReference: any = {};
+  daysHoursFilter.forEach(filter => {
+    if (filter.isActive) {
+      scheduleReference[filter.day.toUpperCase()] = {
+        startTime: filter.startTime,
+        endTime: filter.endTime
+      };
+    }
+  });
+
+  defaultFilter.filter.schedulePreferences = scheduleReference;
+  defaultFilter.sortBy = selectedSortKey;
+  if (maxHoursPerWeek) {
+    defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
+        maxHoursPerWeek
+    );
+  }
+  return defaultFilter;
+};
+
+export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  dispatch({
+    type: SET_LOADING_SCHEDULES,
+    payload: true
+  });
+  console.log("========onGetAllSchedules============start", payload);
+  const jobId = payload.urlParams.jobId as string;
+
+  console.log("========onGetAllSchedules============jobId", jobId);
+  const applicationId = payload.urlParams?.applicationId;
+  console.log(payload.urlParams);
+  if (jobId) {
+    try {
+      log(`getting all available shifts for job ${jobId}`);
+      console.log(
+          "========onGetAllSchedules============jobId",
+          jobId,
+          applicationId
+      );
+      onRemoveError()(dispatch);
+      setLoading(true)(dispatch);
+      const response = await new JobService().getAllSchedules({
+        jobId,
+        applicationId
+      });
+      log(`loaded all available shifts for job ${jobId}`, {
+        pageFactor: response.pageFactor,
+        availableSchedulesCount: response.availableSchedules.total
+      });
+      if (response.availableSchedules.total > 0) {
+        dispatch({
+          type: UPDATE_SCHEDULES,
+          payload: {
+            availableSchedules: response.availableSchedules
+          }
+        });
+        log("updated sate with available shifts");
+      } else {
+        log(
+            "there are no shifts, application redirected to no-available-shift"
+        );
+        onUpdatePageId("no-available-shift")(dispatch);
+      }
+
+      if (payload.options?.goTo) {
+        log(`Application is redirecting to ${payload.options?.goTo}`);
+        onGoToAction(payload)(dispatch);
+      }
+      dispatch({
+        type: SET_PAGE_FACTOR,
+        payload: response.pageFactor
+      });
+      log("updated sate with page factor");
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      logError("Error while fetching available shits", ex);
+      setLoading(false)(dispatch);
+      let errorMessage = ex?.response?.data?.errorMessage
+          ? ex?.response?.data?.errorMessage
+          : ex?.message;
+
+      errorMessage = errorMessage
+          ? errorMessage
+          : "CLIENT_ERROR: something went wrong while fetching shifts";
+
+      //send the error message to Adobe Analytics
+      let dataLayer: any = {};
+      dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error");
+      dataLayer.schedules.errorMessage = errorMessage;
+      sendDataLayerAdobeAnalytics(dataLayer);
+
+      onUpdateError(errorMessage)(dispatch);
+    }
+  }
+};
+
+export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  onRemoveError()(dispatch);
+  setLoading(true)(dispatch);
+  dispatch({
+    type: SET_LOADING_SCHEDULES,
+    payload: true
+  });
+  const filter = constructFilterPayloadSelfService(payload);
+  if (!isNil(payload.data.schedulePageFactor)) {
+    filter.pageFactor = payload.data.schedulePageFactor + 1;
+  } else {
+    filter.pageFactor = filter.pageFactor + 1;
+  }
+  const jobId = payload.urlParams?.requisitionId;
+  const applicationId = payload.urlParams?.applicationId;
+
+  if (jobId) {
+    try {
+      log(`getting available shifts for requisition ${jobId} in incremental`, {
+        filter: JSON.stringify(filter)
+      });
+      const response = await new RequisitionService().getAllAvailableShifts(
+          jobId,
+          applicationId,
+          filter
+      );
+
+      log(`loaded available shifts for requisition ${jobId} in incremental`, {
+        pageFactor: response.pageFactor,
+        availableShiftsCount: response.availableShifts.total,
+        filter: JSON.stringify(filter)
+      });
+      if (response.availableShifts.total > 0) {
+        const availableShifts = applySortOnSchedules(
+            response.availableShifts,
+            filter
+        );
+        dispatch({
+          type: MERGE_SHIFTS,
+          payload: {
+            shifts: availableShifts.shifts,
+            pageFactor: response.pageFactor
+          }
+        });
+        log("Updated shifts in state");
+      } else {
+        dispatch({
+          type: SHOW_MESSAGE,
+          payload: {
+            message:
+                "Sorry, we cannot find any more schedules matching your preferences. We post schedules from Monday to Friday each week. Please try again at a later time."
+          }
+        });
+      }
+      setLoading(false)(dispatch);
+    } catch (ex) {
+      logError("Error while getting shifts in incremental", ex);
+      setLoading(false)(dispatch);
+      if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
+      } else {
+        onUpdateError(
+            ex?.response?.data?.errorMessage || "Unable to get shifts"
+        )(dispatch);
+      }
+    }
+  }
+};
+
+export const onResetFiltersSelfServiceDS = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  const sortKey = SORT_KEY_DEFAULT;
+  const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
+  const daysHoursFilter = payload.appConfig.defaultDaysHoursFilter;
+
+  const filterData = {
+    sortKey,
+    maxHoursPerWeek,
+    daysHoursFilter
+  };
+  dispatch({
+    type: RESET_FILTERS_SELF_SERVICE_DS,
+    payload: {
+      ...filterData
+    }
+  });
+  payload.data.output["update-shift-ds"] = filterData;
+  log("Reset filter initiated", {
+    filter: JSON.stringify(filterData)
+  });
+
+  onApplyFilterSelfServiceDS(payload)(dispatch);
 };
 
 export const onCheckIfSkipScheduleSelection = ( payload: IPayload ) => async (

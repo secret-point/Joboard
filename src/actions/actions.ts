@@ -302,6 +302,27 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
   }
 };
 
+export const onGoToSelfServicePageDS = (payload: IPayload) => (
+    dispatch: Function
+) => {
+  const isLegacy = checkIfIsLegacy();
+  console.log('=========isLegacy=========onGoToSelfServicePageDS==================', isLegacy);
+  const { requisitionId, applicationId, jobId } = payload.urlParams;
+  const { hasShiftSelected } = payload.options;
+  const { noShiftSelected } = payload.options;
+  let path = `/app/${isLegacy ? requisitionId : jobId}`;
+  if (applicationId) {
+    path = `${path}/${applicationId}`;
+  }
+  if (isNil(payload.data.application.jobScheduleSelected)) {
+    onUpdatePageId(noShiftSelected)(dispatch);
+  } else {
+    onUpdatePageId(hasShiftSelected)(dispatch);
+  }
+
+  dispatch(push(path));
+};
+
 export const onResetPageOutput = () => (dispatch: Function) => {
   dispatch({
     type: RESET_PAGE_OUTPUT

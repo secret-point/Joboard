@@ -194,6 +194,38 @@ describe("Test for Actions", () => {
     expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
   });
 
+  test("Test OnGoToSelfServicePageDS with no schedule selected", async () => {
+    const store = getStore();
+    const payload = getPayload();
+    //set goto
+    payload.options = {
+      hasShiftSelected: "current-shift-ds",
+      noShiftSelected: "no-shift-selected-ds"
+    };
+    payload.data.application.jobScheduleSelected = null;
+    await actions.onGoToSelfServicePageDS(payload)(store.dispatch);
+
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("no-shift-selected-ds");
+    expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
+  });
+
+  test("Test OnGoToSelfServicePageDS with a schedule selected", async () => {
+    const store = getStore();
+    const payload = getPayload();
+    //set goto
+    payload.options = {
+      hasShiftSelected: "current-shift-ds",
+      noShiftSelected: "no-shift-selected-ds"
+    };
+    payload.data.application.jobScheduleSelected = {};
+    await actions.onGoToSelfServicePageDS(payload)(store.dispatch);
+
+    expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
+    expect(store.getActions()[1].payload.updatedPageId).toEqual("current-shift-ds");
+    expect(window.location.href).toBe(`http://localhost/#/app/${test_data.TEST_REQUISITION_ID}/${test_data.TEST_APPLICATION_ID}`);
+  });
+
   test("Test OnGoBack action", async () => {
     const store = getStore();
     const payload = getPayload();

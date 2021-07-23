@@ -1040,3 +1040,102 @@ export const sendAdobeAnalytics = (eventName: any) => {
   dataLayer = getDataForEventMetrics(eventName);
   sendDataLayerAdobeAnalytics(dataLayer);
 };
+
+export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application, selectedShift } = payload.data;
+    const { urlParams } = payload;
+
+    if (isNil(urlParams.applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
+
+    log("Updating the schedule selection in application", {
+      selectedShift: JSON.stringify(selectedShift)
+    });
+
+    //TODO:Add backend API calls
+
+    log(
+        `Updated application at update-shift-ds and update application data in state`,
+        {
+          selectedShift: JSON.stringify(selectedShift)
+        }
+    );
+    if (payload.options?.goTo) {
+      log(
+          `After updating schedule, application is redirecting to ${payload.options?.goTo}`
+      );
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    log(`Complete task event initiated on action update-shift-ds`);
+
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while updating job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      let errorMessage;
+      if (
+          ex?.response?.data?.errorMessage &&
+          ex.response.data.errorMessage ===
+          "The appointment you selected is no longer available. Please select a different time."
+      ) {
+        errorMessage =
+            "The schedule you selected is no longer available. Please select a different option.";
+        sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
+      } else {
+        errorMessage =
+            ex?.response?.data?.errorMessage || "Failed to update application";
+        sendAdobeAnalytics("fail-update-shift-unknown-error-self-service");
+      }
+      onUpdateError(errorMessage)(dispatch);
+    }
+  }
+}
+
+export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async (
+    dispatch: Function
+) => {
+  setLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  try {
+    const { application } = payload.data;
+    const { urlParams } = payload;
+
+    if (isNil(urlParams.applicationId)) {
+      throw new Error(NO_APPLICATION_ID);
+    }
+
+    //TODO:Add backend API calls
+
+    if (payload.options?.goTo) {
+      log(
+          `After canceling schedule, application is redirecting to ${payload.options?.goTo}`
+      );
+      goTo(payload.options?.goTo, payload.urlParams)(dispatch);
+    }
+    log(`Complete task event initiated on action cancel-shift`);
+    setLoading(false)(dispatch);
+  } catch (ex) {
+    setLoading(false)(dispatch);
+    logError(`Failed while canceling job selection`, ex);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to update application"
+      )(dispatch);
+
+      sendAdobeAnalytics("fail-cancel-shift-self-service");
+    }
+  }
+};

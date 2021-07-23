@@ -920,6 +920,68 @@ describe("Test for Application Actions", () => {
     expect(onUpdateError).toBeCalledWith("Failed to update application");
   });
 
+  test("Test onUpdateShiftSelectionSelfServiceDS with goto option should update selected schedule", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    payload.options = {
+      goTo: "go-to-step"
+    }
+
+    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+  });
+
+  test("Test onUpdateShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+
+    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+  });
+
+  test("Test onUpdateShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+
+    payload.urlParams.applicationId = null;
+
+    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+  });
+
+  test("Test onUpdateShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+
+    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(0);
+    //expect(onUpdateError).toBeCalledWith("Failed to update application");
+  });
+
   test("Test onCancelShiftSelectionSelfService with goto option should update selected shift", async () => {
     const store = getStore();
     mockCandidateAppService();
@@ -982,5 +1044,59 @@ describe("Test for Application Actions", () => {
     expect(onUpdateError).toBeCalledWith("Failed to update application");
   });
 
+  test("Test onCancelShiftSelectionSelfServiceDS with goto option should update selected schedule", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    payload.options = {
+      goTo: "go-to-step"
+    }
+    await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+  });
 
+  test("Test onCancelShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+
+    await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+  });
+
+  test("Test onCancelShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+    payload.urlParams.applicationId = null;
+    await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+  });
+
+  test("Test onCancelShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockWorkflowActionsPartial();
+    mockActionsPartial();
+    mockErrorActionsPartial();
+
+    await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(2);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(onUpdatePageId).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(0);
+    //expect(onUpdateError).toBeCalledWith("Failed to update application");
+  });
 });

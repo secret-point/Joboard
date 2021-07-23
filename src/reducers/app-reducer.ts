@@ -38,6 +38,7 @@ import {
   UPDATE_JOB_INFO,
   SELECTED_SCHEDULE,
   SET_LOADING_SCHEDULES,
+  RESET_FILTERS_SELF_SERVICE_DS
 } from "../actions/job-actions";
 import {
   GET_APPLICATION,
@@ -711,6 +712,20 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           stepsCompleted: {
             $set: payload
+          }
+        }
+      });
+    }
+
+    case RESET_FILTERS_SELF_SERVICE_DS: {
+      let updateShift = cloneDeep(state.data.output["update-shift-ds"]);
+      updateShift = { ...payload };
+      return updateState(state, {
+        data: {
+          output: {
+            "update-shift-ds": {
+              $set: updateShift
+            }
           }
         }
       });
