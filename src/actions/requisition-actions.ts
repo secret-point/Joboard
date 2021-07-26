@@ -1,7 +1,7 @@
 import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, { AvailableFilter, DaysHoursFilter, Schedule } from "../@types/IPayload";
+import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
 import {
   setLoading,
   onUpdatePageId,
@@ -313,7 +313,8 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
       logError(`Unable to get NHE time slots`, ex);
       setLoading(false)(dispatch);
       onUpdateError(
-        ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
+        ex?.response?.data?.errorMessage || "Unable to get NHE time slots",
+        payload.currentPage.id
       )(dispatch);
     }
   }

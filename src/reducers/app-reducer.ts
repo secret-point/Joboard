@@ -208,6 +208,10 @@ const AppReducer = (state = initialState, action: IAction) => {
       });
     }
     case ON_RESPONSE_ERROR: {
+      /* Don't post error if we've since moved to another page */
+      if (payload.expectedPageId && state.currentPage.id !== payload.expectedPageId) {
+        return state;
+      }
       const newState = { ...state };
       newState.hasResponseError = true;
       newState.errorMessage = payload.errorMessage;
