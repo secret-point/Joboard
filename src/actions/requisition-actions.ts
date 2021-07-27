@@ -1,7 +1,7 @@
 import { ShiftPreferenceResponse } from "./../@types/shift-preferences";
 import RequisitionService from "../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, { AvailableFilter, DaysHoursFilter } from "../@types/IPayload";
+import IPayload, {AvailableFilter, AvailableShifts, DaysHoursFilter} from "../@types/IPayload";
 import {
   setLoading,
   onUpdatePageId,
@@ -26,6 +26,7 @@ import { EVENT_NAMES } from "../constants/adobe-analytics";
 import { sendAdobeAnalytics } from "./application-actions";
 import JobService from "../services/job-service";
 import queryString from "query-string";
+import { ShiftType } from "../constants/shift-type";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -450,6 +451,7 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
+  const { application } = payload.data;
   dispatch({
     type: SET_LOADING_SHIFTS,
     payload: true
@@ -473,6 +475,10 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
         pageFactor: response.pageFactor,
         availableShiftsCount: response.availableShifts.total
       });
+
+      if (application != null && application.jobSelected != null) {
+        filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
+      }
 
       dispatch({
         type: UPDATE_REQUISITION,
@@ -516,6 +522,16 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
       sendDataLayerAdobeAnalytics(dataLayer);
 
       onUpdateError(errorMessage)(dispatch);
+    }
+  }
+};
+
+const filterOutCurrentShift = (availableShifts : AvailableShifts, currentHCRId : string) => {
+  let shifts =  availableShifts.shifts;
+  for (let i = shifts.length - 1; i >= 0; i--) {
+    let shift = shifts[i];
+    if (shift.shiftType === ShiftType.REGULAR && shift.headCountRequestId === currentHCRId) {
+      shifts.splice(i, 1);
     }
   }
 };
@@ -782,6 +798,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
+  const { application } = payload.data;
   dispatch({
     type: SET_LOADING_SHIFTS,
     payload: true
@@ -808,6 +825,10 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
         applicationId,
         filter
       );
+
+      if (application != null && application.jobSelected != null) {
+        filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
+      }
 
       log(
         `loaded available shifts for requisition ${requisitionId} in incremental`,

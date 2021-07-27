@@ -485,6 +485,7 @@ export interface Shifts {
   currency: string;
   jobClass: string;
   shiftCode: string;
+  shiftType: string;
   altShiftCode: string;
   locationPostalCode: string;
   locationState: string;
