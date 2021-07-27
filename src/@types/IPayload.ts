@@ -1,6 +1,7 @@
 import ICandidateApplication, { Candidate } from "./ICandidateApplication";
 import { History } from "history";
 import { ChildRequisition } from "./shift-preferences";
+import { type } from "ramda";
 export interface Consent {}
 
 export interface WorkflowData {
@@ -90,7 +91,7 @@ export interface JobDescriptor {
   consentInfo: Job;
   jobDescription: Job;
   availableSchedules: unknown;
-  selectedChildSchedule: Schedule;
+  selectedChildSchedule: ScheduleDetails;
 }
 
 export interface Job {
@@ -128,51 +129,219 @@ export interface AvailableSchedule {
   scheduleId: string;
 }
 
-export interface Schedule {
+export type Schedule = ScheduleDetails | ScheduleCard;
+
+export interface ScheduleDetails {
+  address: string;
+  agencyName: string;
+  alpsCode: string;
+  basePay: number;
+  briefJobDescription: string;
+  businessLine: string;
+  city: string;
+  companyCode: string;
+  contingencyTat: number;
+  county: string;
+  crsCode: string;
+  /**
+   * ISO 4217 Currency Code
+   * for Salesforce: examples:
+   *      "Argentina","ARS",
+   *      "Australia","AUD",
+   *      "Austria","EUR",
+   *      "Brazil","BRL",
+   *      "Canada","CAD",
+   *      "Colombia","COP",
+   *      "China","CNY",
+   *      "Costa Rica","CRC",
+   *      "Czech Republic","CZK",
+   *      "Denmark","DKK",
+   *      "Egypt","EGP",
+   *      "Hong Kong","HKD",
+   *      "India","INR",
+   *      "Ireland","EUR",
+   *      "Israel","ILS",
+   *      "Japan","JPY",
+   *      "Korea, Republic of","KRW",
+   *      "Mexico","MXN",
+   *      "United Kingdom","GBP",
+   *      "United States", "USD",
+   *      "Germany","EUR",
+   *      "Italy","EUR",
+   *      "France","EUR",
+   *      "Netherlands","EUR",
+   *      "Spain","EUR",
+   */
+  currencyCode: string;
+  dataSource: string;
+  departmentCode: string;
+  detailedJobDescription: string;
+  eSL: boolean;
+  employeeClass: string;
   employmentType: string;
+  externalJobTitle: string;
+  financeWeek: number;
+  financeWeekEndDate: string;
+  financeWeekStartDate: string;
+  firstDayOnSite: string;
+  geoClusterId: string;
+  geoClusterName: string;
+  hireStartDate: string;
+  hoursPerWeek: number;
+  image: string;
+  internalJobCode: string;
+  internalJobTitle: string;
+  jobPreviewVideo: string;
+  laborDemandCount: number;
+  laborOrderCount: number;
+  language: string;
+  locationCode: string;
+  managerEmployeeId: string;
+  managerLogin: string;
+  managerName: string;
+  msa: string;
+  nhoType: string;
+  phoneToolTitle: string;
+  postalCode: string;
+  scheduleBannerText: string;
   scheduleId: string;
+  scheduleText: string;
+  scheduleType: string;
+  shiftDifferential: number;
+  siteId: string;
+  standardShiftCode: string;
+  startDateAvailableCount: number;
+  startDateDemandCount: number;
+  startDateDeniedCount: number;
+  startDateFillCount: number;
+  startTime: string;
   state: string;
-  language: string,
-  dataSource: string,
-  currencyCode: string,
-  address: string,
-  city: string,
-  postalCode: string,
-  businessLine: string,
-  contingencyTat: number,
-  externalJobTitle: string,
-  tagLine: string,
-  jobPreviewVideo: string,
-  detailedJobDescription: string,
-  briefDescription: string,
-  image: string,
-  financeWeekStartDate: string,
-  financeWeekEndDate: string,
-  signOnBonus: number,
-  surgePay: number,
-  scheduleBannerText: string,
-  scheduleType: string,
-  phoneToolTitle: string,
-  scheduleText: string,
-  hoursPerWeek: number,
-  totalWeeklyPay: string,
-  financeWeek: number,
-  alpsCode: string,
-  departmentCode: string,
-  managerLogin: string,
-  managerEmployeeId: string,
-  trainingShiftCode: string,
-  crsCode: string,
-  nhoType: string,
-  trainingDate: string,
-  hireStartDate: string,
-  hireEndDate: string,
-  firstDateOnSite: string,
-  startTime: string,
-  isPublicSchedule: string,
-  locationCode: string,
-  siteId: string,
+  tagLine: string;
+  trainingDate: string;
+  trainingShiftCode: string;
 }
+
+export interface ScheduleCard {
+  /**
+   * Schedule ID
+   */
+  scheduleId: string;
+  /**
+   * Job ID
+   */
+  jobId: string;
+  /**
+   * Data Source, either `Salesforce` or `Dragonstone`
+   */
+  dataSource: string;
+  /**
+   * Language of the Schedule
+   */
+  language: string;
+  /**
+   * External Job Title.
+   */
+  externalJobTitle: string;
+  /**
+   * @Deprecated
+   * Base Pay.
+   * The value of this field was updated to basePay + shiftDifferential
+   * Use totalPayRate instead
+   */
+  basePay: number;
+  /**
+   * totalPayRate = schedule -> basePay + shiftDifferential.
+   */
+  totalPayRate: number;
+  /**
+   * ISO 4217 Currency Code
+   * for Salesforce: examples:
+   *      "Argentina","ARS",
+   *      "Australia","AUD",
+   *      "Austria","EUR",
+   *      "Brazil","BRL",
+   *      "Canada","CAD",
+   *      "Colombia","COP",
+   *      "China","CNY",
+   *      "Costa Rica","CRC",
+   *      "Czech Republic","CZK",
+   *      "Denmark","DKK",
+   *      "Egypt","EGP",
+   *      "Hong Kong","HKD",
+   *      "India","INR",
+   *      "Ireland","EUR",
+   *      "Israel","ILS",
+   *      "Japan","JPY",
+   *      "Korea, Republic of","KRW",
+   *      "Mexico","MXN",
+   *      "United Kingdom","GBP",
+   *      "United States", "USD",
+   *      "Germany","EUR",
+   *      "Italy","EUR",
+   *      "France","EUR",
+   *      "Netherlands","EUR",
+   *      "Spain","EUR",
+   */
+  currencyCode: string;
+
+  /**
+   * Schedule Text.
+   */
+  scheduleText: string;
+  /**
+   * Hours per Week.
+   */
+  hoursPerWeek: number;
+  /**
+   * First Day on Site.
+   */
+  firstDayOnSite: string;
+  /**
+   * Schedule Banner Text.
+   */
+  scheduleBannerText: string;
+  /**
+   * Schedule Type.
+   */
+  scheduleType: string;
+  /**
+   * Employment Type.
+   */
+  employmentType: string;
+  /**
+   * Tag Line of the Job.
+   */
+  tagLine: string;
+  /**
+   * Image/Icon URL
+   */
+  image: string;
+  /**
+   * Job Preview Video URL Link
+   */
+  jobPreviewVideo: string;
+  /**
+   * Location Address
+   */
+  address: string;
+  /**
+   * Location City
+   */
+  city: string;
+  /**
+   * Location State
+   */
+  state: string;
+  /**
+   * Location Postal Code
+   */
+  postalCode: string;
+  /**
+   * Distance
+   */
+  distance: number;
+}
+
 
 export interface Page {
   id: string;
