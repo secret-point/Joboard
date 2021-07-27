@@ -39,6 +39,7 @@ export const PAGE_NAME: any = {
   "assessment-consent": "BB - pre-assessment",
   assessment: "BB - assessment",
   "job-opportunities": "view jobs",
+  "job-confirmation": "selected shift",
   "job-description": "job description",
   "job-roles": "job roles",
   "contingent-offer": "BB-contingent offer",

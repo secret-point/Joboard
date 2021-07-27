@@ -13,7 +13,8 @@ import {
   onResetPageOutput,
   onBackButtonCompleteTask,
   onRedirectToASHChecklist,
-  onLogVideoMetrics
+  onLogVideoMetrics,
+  onLogSpecificJobVideoMetrics
 } from "./actions";
 import {
   onStartApplication,
@@ -105,6 +106,7 @@ const actionMap: any = {
   LOAD_INCREMENTAL_SHIFTS_SELF_SERVICE: onShiftsIncrementalLoadSelfService,
   LOAD_SHIFT_PREFERENCES_DETAILS: loadShiftPreferences,
   LOG_VIDEO_METRICS: onLogVideoMetrics,
+  LOG_SPECIFIC_JOB_VIDEO_METRICS: onLogSpecificJobVideoMetrics,
   ON_APPLY_FILTER: onApplyFilter,
   ON_APPLY_FILTER_DS: onApplyFilterDS,
   ON_APPLY_FILTER_SELF_SERVICE_DS: onApplyFilterSelfServiceDS,

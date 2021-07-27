@@ -9,7 +9,7 @@ const candidatePayloadDefault = {
       value: "candidate.loginStatus"
     },
     {
-      key: "sfCandidateId",
+      key: "CID",
       value: "candidate.candidateSFId"
     },
     {
@@ -27,7 +27,7 @@ const candidateOnThankYouPayloadDefault = {
       value: "candidate.loginStatus"
     },
     {
-      key: "sfCandidateId",
+      key: "CID",
       value: "candidate.candidateSFId"
     },
     {
@@ -724,6 +724,51 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault,
       geoclusterPayloadDefault,
       sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
+  "job-confirmation" : {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["job-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      candidatePayloadDefault,
+    ]
+  },
+  "start-specific-job-video" : {
+    eventPayload: {
+      event: EVENT.START_JOB_VIDEO,
+      page: {
+        name: PAGE_NAME["job-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      candidatePayloadDefault,
+    ]
+  },
+  "finish-specific-job-video" : {
+    eventPayload: {
+      event: EVENT.FINISH_JOB_VIDEO,
+      page: {
+        name: PAGE_NAME["job-confirmation"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
       candidatePayloadDefault,
     ]
   },

@@ -357,6 +357,16 @@ export const onLogVideoMetrics = (payload: IPayload) => (
   sendDataLayerAdobeAnalytics(metrics);
 };
 
+export const onLogSpecificJobVideoMetrics = (payload: IPayload) => (
+    dispatch: Function
+  ) => {
+    const { options } = payload;
+    console.log(options);
+    const eventName = options.started ? "start-specific-job-video" : "finish-specific-job-video";
+    const metrics = getDataForEventMetrics(eventName);
+    sendDataLayerAdobeAnalytics(metrics);
+  };
+
 export const DsPages: { [key: string]: string } = {
   "job-opportunities": "job-opportunities-ds",
   "job-confirmation": "job-confirmation-ds",
