@@ -417,6 +417,7 @@ export interface AppConfig {
   defaultDaysHoursFilter: DaysHoursFilter[];
   defaultAvailableFilter: AvailableFilter;
   defaultAvailableFilterDS: AvailableFilter;
+  featuresList?: any;
 }
 
 export interface PageOrder {

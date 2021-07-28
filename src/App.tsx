@@ -14,6 +14,9 @@ import LoaderContainer from "./containers/loader/loader-container";
 import CompleteTaskLoaderContainer from "./containers/loader/complete-task-loading-container";
 import ContentMessageBanner from "./containers/counter-message-banner";
 import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
+import defaultTheme from '@amzn/stencil-react-theme-default';
+import { Colors } from "./constants/stencilThemeOverride";
+import store from "./store";
 
 interface IApp {
   showNavbar: boolean;
@@ -30,8 +33,17 @@ const App: React.FC<IApp> = ({
     window.location.assign(dashboardUrl);
   };
 
+  const stencilThemeColorOverride = store.getState().app.appConfig.featureList?.STENCIL_COLOR_OVERRIDE?.isAvailable ? Colors : {};
+
   return (
-    <StencilProvider>
+    <StencilProvider
+      theme={{
+        ...defaultTheme,
+        color: {
+          ...defaultTheme.color,
+          ...stencilThemeColorOverride,
+        }
+    }}>
       <LoaderContainer />
       <CompleteTaskLoaderContainer />
       {showNavbar && (
