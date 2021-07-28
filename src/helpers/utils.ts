@@ -116,6 +116,6 @@ export const getMetricValues = (
 
 export const checkIfIsLegacy = () => {
   const queryParams = queryString.parse(window.location.search);
-  const isLegacy = !queryParams.jobId;
+  const isLegacy = !queryParams.jobId && (queryParams.requisitionId?.indexOf("JOB") !== 0)
   return isLegacy;
 }

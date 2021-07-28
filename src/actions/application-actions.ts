@@ -209,16 +209,19 @@ export const onGetApplicationDS = (payload: IPayload) => async (
         }
       });
       const urlParams = queryString.parse(window.location.search);
-      loadWorkflowDS(
-        payload.urlParams.jobId || urlParams.jobId as string || "",
-        payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
-        applicationId,
-        applicationResponse.candidateId,
-        payload.appConfig
-      );
+
+      if (!options?.doNotInitiateWorkflow) {
+        loadWorkflowDS(
+          payload.urlParams.jobId || urlParams.jobId as string || "",
+          payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
+          applicationId,
+          applicationResponse.candidateId,
+          payload.appConfig
+        );
+      }
 
       if (!options?.loadOnlyApplicationData) {
-        isLegacy? onGetRequisitionHeaderInfo(payload)(dispatch) : onGetJobInfo(payload)(dispatch);
+        onGetJobInfo(payload)(dispatch);
         candidateResponse = await onGetCandidate(
           payload,
           options.ignoreCandidateData
