@@ -25,6 +25,28 @@ export default class JobService {
     return response.data;
   }
 
+  async getAllSchedulesWithStartDateAvailability({
+    jobId,
+    applicationId,
+    filter,
+  } : GetAllAvailableScheduleParams) {
+    console.log(
+      jobId,
+      applicationId,
+      filter)
+    const response = await this.axiosInstance.post(
+        `/get-all-schedules-with-start-date-availability/${jobId}`,
+        {
+          jobId,
+          applicationId,
+          filter,
+          locale: 'en-us',
+        }
+    );
+    console.log(response.data);
+    return response.data;
+  }
+
   async getAllSchedules({
     jobId,
     applicationId,

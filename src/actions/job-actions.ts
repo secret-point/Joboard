@@ -719,7 +719,7 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
       );
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
-      const response = await new JobService().getAllSchedules({
+      const response = await new JobService().getAllSchedulesWithStartDateAvailability({
         jobId,
         applicationId
       });
