@@ -379,5 +379,8 @@ export const DsPages: { [key: string]: string } = {
   "nhe": "nhe-ds",
   "appointment-detail-page": "appointment-detail-page-ds",
   "wotc": "wotc-ds",
-  "self-identification": "self-identification-ds"
+  "self-identification": "self-identification-ds",
+  "rehire-eligibility-status": "rehire-eligibility-status-ds",
+  "rehire-not-eligible": "rehire-not-eligible-ds",
+  "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only-ds",
 }
