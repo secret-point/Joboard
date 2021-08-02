@@ -85,6 +85,13 @@ getInitialData()
     const isLegacy = checkIfIsLegacy();
     const queryParams = queryString.parse(window.location.search);
     const requisitionId = queryParams["requisitionId"];
+    if (requisitionId?.indexOf("JOB") === 0) {
+      /* jobId passed as requisitionId; forward */
+      delete queryParams["requisitionId"];
+      queryParams["jobId"] = requisitionId;
+      window.location.assign(window.location.hostname + window.location.pathname + "?" + queryString.stringify(queryParams));
+      return;
+    }
     const jobId = queryParams["jobId"];
     const agency: any = queryParams["agency"];
     const page = queryParams["page"];
@@ -95,7 +102,7 @@ getInitialData()
       const urlParams = { ...queryParams };
       delete urlParams.token;
       delete urlParams.page;
-      
+
       const requestQueryString = objectToQuerystring(urlParams);
 
       let appHashUrl = `#/${page}/${requisitionId}`;
