@@ -7,6 +7,7 @@ import { createHashHistory } from "history";
 import { routerMiddleware } from "react-router-redux";
 import PageService from "../../services/page-service";
 import * as test_data from "../../../tests/test-data";
+import {TEST_JOB} from "../../../tests/test-data";
 
 jest.mock("../../services/page-service");
 jest.mock("../workflow-actions.ts");
@@ -264,7 +265,7 @@ describe("Test for Actions", () => {
     await actions.onCompleteTask(payload)(store.dispatch);
     completeMethod_methodCalled++;
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, undefined, undefined, undefined);
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, undefined, undefined, TEST_JOB);
   });
 
   test("Test OnBackButtonCompleteTask Action with step name", async () => {
@@ -280,7 +281,7 @@ describe("Test for Actions", () => {
     expect(store.getActions()[0].type).toBe(actions.RESET_PAGE_OUTPUT);
 
     expect(completeTask).toHaveBeenCalledTimes(completeMethod_methodCalled)
-    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, true, "job-opportunities", undefined);
+    expect(completeTask).toHaveBeenCalledWith(payload.data.application, null, true, "job-opportunities", TEST_JOB);
   });
 
   test("Test OnBackButtonCompleteTask Action without step name", async () => {

@@ -12,6 +12,7 @@ export const TEST_URL = "https://test-me.url.fake/{applicationId}/{requisitionId
 export const TEST_KEY = "test-key";
 export const TEST_STEP_ID = "job-opportunities";
 export const TEST_HCR_ID = "test-hcr-id";
+export const TEST_SCHEDULE_ID = "test-schedule-id";
 
 
 
@@ -20,6 +21,13 @@ export const TEST_CANDIDATE: any = {
 }
 export const TEST_APPLICATION: any = {
   applicationId: TEST_APPLICATION_ID
+}
+
+export const TEST_JOB: any = {
+    selectedChildSchedule: {
+      scheduleId: TEST_SCHEDULE_ID
+    },
+    jobDescription: "",
 }
 
 export const TEST_APPLICATION_DATA: any = {
@@ -35,6 +43,7 @@ export const TEST_APPLICATION_DATA: any = {
     application: {
       applicationId: TEST_APPLICATION_ID
     },
+    job: TEST_JOB,
     output: {},
     candidate: {},
     showPreviousNames: "",

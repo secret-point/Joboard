@@ -1050,23 +1050,41 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
   setLoading(true)(dispatch);
   onRemoveError()(dispatch);
   try {
-    const { application, selectedShift } = payload.data;
+    const { application } = payload.data;
     const { urlParams } = payload;
+    const selectedSchedule = payload.data.job.selectedChildSchedule;
 
     if (isNil(urlParams.applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
 
-    log("Updating the schedule selection in application", {
-      selectedShift: JSON.stringify(selectedShift)
+    log("Updating the shift selection in application", {
+      selectedSchedule: JSON.stringify(selectedSchedule)
     });
 
-    //TODO:Add backend API calls
+    const jobSelected: JobSelectedDS = {
+      jobId: payload.data.job.jobDescription.jobId,
+      scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
+      scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule),
+    }
 
+    const response = await new CandidateApplicationService().updateApplication({
+      type: "update-schedule",
+      applicationId: application.applicationId,
+      payload: jobSelected
+    });
+    response.schedule = selectedSchedule;
+    response.jobDescription = payload.data.job.jobDescription
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
     log(
-        `Updated application at update-shift-ds and update application data in state`,
+        `Updated application at update-schedule and update application data in state`,
         {
-          selectedShift: JSON.stringify(selectedShift)
+          selectedSchedule: JSON.stringify(selectedSchedule)
         }
     );
     if (payload.options?.goTo) {
@@ -1117,7 +1135,22 @@ export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async 
       throw new Error(NO_APPLICATION_ID);
     }
 
-    //TODO:Add backend API calls
+    let response;
+
+    response = await new CandidateApplicationService().updateApplication({
+      type: "cancel-schedule",
+      applicationId: urlParams.applicationId,
+      payload: {}
+    });
+
+    sendAdobeAnalytics("successful-cancel-shift-self-service");
+
+    dispatch({
+      type: UPDATE_APPLICATION,
+      payload: {
+        application: response
+      }
+    });
 
     if (payload.options?.goTo) {
       log(

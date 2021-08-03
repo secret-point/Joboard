@@ -19,7 +19,8 @@ import {
   TEST_CANDIDATE_ID,
   TEST_STEP_ID,
   TEST_KEY,
-  hasAction
+  hasAction,
+  TEST_JOB,
 } from "../../../tests/test-data";
 import {getDataForEventMetrics} from "../../helpers/adobe-helper";
 import {sendDataLayerAdobeAnalytics} from "../../actions/adobe-actions";
@@ -371,7 +372,7 @@ describe("Test for Application Actions", () => {
     //TODO: verify calls for candidateAppService
     expect(store.getActions().length).toBe(6);
     expect(completeTask).toBeCalledTimes(1);
-    expect(completeTask).toHaveBeenCalledWith(TEST_APPLICATION, TEST_STEP_ID, undefined, undefined, undefined);
+    expect(completeTask).toHaveBeenCalledWith(TEST_APPLICATION, TEST_STEP_ID, undefined, undefined, TEST_JOB);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
@@ -633,7 +634,7 @@ describe("Test for Application Actions", () => {
     expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
     expect(completeTask).toBeCalledTimes(1);
-    expect(completeTask).toBeCalledWith(payload.data.application, "job-opportunities", undefined, undefined, undefined);
+    expect(completeTask).toBeCalledWith(payload.data.application, "job-opportunities", undefined, undefined, TEST_JOB);
   });
 
   test("Test onUpdateShiftSelection with empty applicationId in payload should capture exception", async () => {
@@ -931,8 +932,8 @@ describe("Test for Application Actions", () => {
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(store.getActions().length).toBe(4);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
   test("Test onUpdateShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
@@ -943,8 +944,8 @@ describe("Test for Application Actions", () => {
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
   test("Test onUpdateShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
@@ -978,7 +979,7 @@ describe("Test for Application Actions", () => {
     expect(store.getActions().length).toBe(2);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(0);
-    expect(onUpdateError).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
     //expect(onUpdateError).toBeCalledWith("Failed to update application");
   });
 
@@ -1053,8 +1054,8 @@ describe("Test for Application Actions", () => {
     }
     await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(store.getActions().length).toBe(4);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
   test("Test onCancelShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
@@ -1064,8 +1065,8 @@ describe("Test for Application Actions", () => {
 
     await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
+    expect(store.getActions().length).toBe(3);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
   test("Test onCancelShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
@@ -1096,7 +1097,7 @@ describe("Test for Application Actions", () => {
     expect(store.getActions().length).toBe(2);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(0);
-    expect(onUpdateError).toBeCalledTimes(0);
+    expect(onUpdateError).toBeCalledTimes(1);
     //expect(onUpdateError).toBeCalledWith("Failed to update application");
   });
 });

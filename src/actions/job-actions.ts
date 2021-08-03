@@ -735,11 +735,6 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
           }
         });
         log("updated sate with available shifts");
-      } else {
-        log(
-            "there are no shifts, application redirected to no-available-shift"
-        );
-        onUpdatePageId("no-available-shift")(dispatch);
       }
 
       if (payload.options?.goTo) {
