@@ -89,7 +89,7 @@ getInitialData()
       /* jobId passed as requisitionId; forward */
       delete queryParams["requisitionId"];
       queryParams["jobId"] = requisitionId;
-      window.location.assign(window.location.hostname + window.location.pathname + "?" + queryString.stringify(queryParams));
+      window.location.assign(window.location.pathname + "?" + queryString.stringify(queryParams));
       return;
     }
     const jobId = queryParams["jobId"];
