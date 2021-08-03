@@ -40,7 +40,15 @@ export const launchAuthentication = () => {
   const state = window.reduxStore.getState();
   let currentPage;
   const previousPage = window.localStorage.getItem("page");
-  if (previousPage === "no-shift-selected" || previousPage === "current-shift" || previousPage === "view-shift") {
+  const candidateSelfServicePage = [
+      "no-shift-selected",
+      "current-shift",
+      "view-shift",
+      "no-shift-selected-ds",
+      "current-shift-ds",
+      "view-shift-ds"];
+
+  if (candidateSelfServicePage.includes(<string>previousPage)) {
     //in candidate-self-service workflow
     currentPage = previousPage;
   } else {
