@@ -25,7 +25,7 @@ import { log, logError } from "../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "../constants/adobe-analytics";
-import { GET_APPLICATION, JobSelectedDS, UPDATE_APPLICATION } from "./application-actions";
+import {GET_APPLICATION, JobSelectedDS, sendAdobeAnalytics, UPDATE_APPLICATION} from "./application-actions";
 import { NO_APPLICATION_ID } from "../constants/error-messages";
 import { completeTask } from "./workflow-actions";
 import queryString from "query-string";
@@ -735,6 +735,8 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
           }
         });
         log("updated sate with available shifts");
+      } else {
+        sendAdobeAnalytics("no-available-shift-self-service");
       }
 
       if (payload.options?.goTo) {

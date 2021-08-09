@@ -1073,6 +1073,7 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
       applicationId: application.applicationId,
       payload: jobSelected
     });
+    sendAdobeAnalytics("successful-update-shift-self-service");
     response.schedule = selectedSchedule;
     response.jobDescription = payload.data.job.jobDescription
     dispatch({
