@@ -946,12 +946,11 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           `After updating schedule selection, application is redirecting to contingent-offer`
         );
         delete payload.urlParams.scheduleId
-        const queryParams = queryString.parse(window.location.search);
         // Remove schedule Id before go to contingent-offer page
         window.history.replaceState(
           {},
           document.title,
-          `${window.location.origin}${window.location.pathname}?applicationId=${queryParams.applicationId}&jobId=${queryParams.jobId}${window.location.hash}`
+          `${window.location.origin}${window.location.pathname}?applicationId=${applicationId}&jobId=${jobId}${window.location.hash}`
         );
 
         goTo("contingent-offer", payload.urlParams)(dispatch);
