@@ -321,8 +321,7 @@ export const createApplication = (payload: IPayload) => async (
       } else {
         log("Create DS application");
         response = await candidateApplicationService.createApplicationDS({
-          jobId: jobId || "",
-          scheduleId: payload.urlParams.scheduleId
+          jobId: jobId || ""
         });
       }
       log("createApplication response=", response);
