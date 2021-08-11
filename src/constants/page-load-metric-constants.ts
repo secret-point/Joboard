@@ -613,6 +613,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "pre-consent": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["pre-consent"],
         type: PAGE_TYPE.APPLICATION
@@ -622,6 +623,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   consent: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["consent"],
         type: PAGE_TYPE.APPLICATION
@@ -638,6 +640,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "assessment-consent": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["assessment-consent"],
         type: PAGE_TYPE.APPLICATION
@@ -654,6 +657,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   assessment: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["assessment"],
         type: PAGE_TYPE.APPLICATION
@@ -672,6 +676,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-opportunities": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-opportunities"],
         type: PAGE_TYPE.APPLICATION
@@ -691,6 +696,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-roles": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-roles"],
         type: PAGE_TYPE.APPLICATION
@@ -710,6 +716,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-description": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-description"],
         type: PAGE_TYPE.APPLICATION
@@ -730,6 +737,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-confirmation" : {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -745,6 +753,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "start-specific-job-video" : {
     eventPayload: {
       event: EVENT.START_JOB_VIDEO,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -760,6 +769,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "finish-specific-job-video" : {
     eventPayload: {
       event: EVENT.FINISH_JOB_VIDEO,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -775,6 +785,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "contingent-offer": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["contingent-offer"],
         type: PAGE_TYPE.APPLICATION
@@ -794,6 +805,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   bgc: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["bgc"],
         type: PAGE_TYPE.APPLICATION
@@ -813,6 +825,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   fcra: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["fcra"],
         type: PAGE_TYPE.APPLICATION
@@ -832,6 +845,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   nhe: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["nhe"],
         type: PAGE_TYPE.APPLICATION
@@ -852,6 +866,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "review-submit": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["review-submit"],
         type: PAGE_TYPE.APPLICATION
@@ -871,6 +886,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "thank-you": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["thank-you"],
         type: PAGE_TYPE.APPLICATION
@@ -890,6 +906,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "self-identification": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["self-identification"],
         type: PAGE_TYPE.APPLICATION
@@ -909,6 +926,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   wotc: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["wotc"],
         type: PAGE_TYPE.APPLICATION
@@ -928,6 +946,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "supplementary-success": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["supplementary-success"],
         type: PAGE_TYPE.APPLICATION
@@ -947,6 +966,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "amazon-withdraws": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["amazon-withdraws"],
         type: PAGE_TYPE.APPLICATION
@@ -966,6 +986,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "amazon-rejects": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["amazon-rejects"],
         type: PAGE_TYPE.APPLICATION
@@ -985,6 +1006,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "assessment-not-eligible": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["assessment-not-eligible"],
         type: PAGE_TYPE.APPLICATION
@@ -1003,6 +1025,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "candidate-withdraws": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["candidate-withdraws"],
         type: PAGE_TYPE.APPLICATION
@@ -1022,6 +1045,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "rehire-not-eligible-seasonal-only": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["rehire-not-eligible-seasonal-only"],
         type: PAGE_TYPE.APPLICATION
@@ -1041,6 +1065,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "rehire-not-eligible": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["rehire-not-eligible"],
         type: PAGE_TYPE.APPLICATION
@@ -1060,6 +1085,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "can-not-offer-job": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["can-not-offer-job"],
         type: PAGE_TYPE.APPLICATION
@@ -1080,6 +1106,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "no-available-shift": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["no-available-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -1099,6 +1126,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "no-available-shift-self-service": {
     eventPayload: {
       event: EVENT.NO_AVAILABLE_SHIFT_SELF_SERVICE,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["update-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -1117,7 +1145,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
 
   "successful-update-shift-self-service": {
     eventPayload: {
-      event: EVENT.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE
+      event: EVENT.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1133,7 +1162,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "fail-update-shift-schedule-full-self-service": {
     eventPayload: {
-      event: EVENT.FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE
+      event: EVENT.FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1149,7 +1179,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "fail-update-shift-unknown-error-self-service": {
     eventPayload: {
-      event: EVENT.FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE
+      event: EVENT.FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1165,7 +1196,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "successful-cancel-shift-self-service": {
     eventPayload: {
-      event: EVENT.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE
+      event: EVENT.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1181,7 +1213,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "fail-cancel-shift-self-service": {
     eventPayload: {
-      event: EVENT.FAIL_CANCEL_SHIFT_SELF_SERVICE
+      event: EVENT.FAIL_CANCEL_SHIFT_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1198,6 +1231,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "session-timeout": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["session-timeout"],
         type: PAGE_TYPE.APPLICATION
@@ -1216,6 +1250,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "applicationId-null": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["applicationId-null"],
         type: PAGE_TYPE.APPLICATION
@@ -1234,7 +1269,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
 
   "get-all-avaliable-shift-error": {
     eventPayload: {
-      event: EVENT.GET_SHIFTS_ERROR
+      event: EVENT.GET_SHIFTS_ERROR,
+      countryCode: "us",
     },
     dataPayload: [
       applicationPayloadDefault,
@@ -1251,7 +1287,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
 
   "get-all-avaliable-shift-error-self-service": {
     eventPayload: {
-      event: EVENT.GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE
+      event: EVENT.GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       applicationPayloadDefault,
@@ -1269,7 +1306,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
 
   "apply-filter-self-service": {
     eventPayload: {
-      event: EVENT.APPLY_FILTER_SELF_SERVICE
+      event: EVENT.APPLY_FILTER_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1285,7 +1323,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "apply-sorting-self-service": {
     eventPayload: {
-      event: EVENT.APPLY_SORTING_SELF_SERVICE
+      event: EVENT.APPLY_SORTING_SELF_SERVICE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1301,7 +1340,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "apply-filter": {
     eventPayload: {
-      event: EVENT.JOBS_FILTER
+      event: EVENT.JOBS_FILTER,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1316,7 +1356,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "apply-sorting": {
     eventPayload: {
-      event: EVENT.JOBS_SORT
+      event: EVENT.JOBS_SORT,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1331,13 +1372,15 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "start-application": {
     eventPayload: {
-      event: EVENT.START_APPLICATION
+      event: EVENT.START_APPLICATION,
+      countryCode: "us",
     },
     dataPayload: [jobPayloadDefault, dragonstoneSchedulePayloadDefault]
   },
   "shift-selection": {
     eventPayload: {
-      event: EVENT.SHIFT_SELECTED
+      event: EVENT.SHIFT_SELECTED,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1354,6 +1397,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "equal-opportunity-form": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["equal-opportunity-form"],
         type: PAGE_TYPE.APPLICATION
@@ -1373,6 +1417,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "veteran-status-form": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["veteran-status-form"],
         type: PAGE_TYPE.APPLICATION
@@ -1392,6 +1437,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "disability-form": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["disability-form"],
         type: PAGE_TYPE.APPLICATION
@@ -1411,6 +1457,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "additional-bgc-info": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["additional-bgc-info"],
         type: PAGE_TYPE.APPLICATION
@@ -1430,6 +1477,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "non-fcra": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["non-fcra"],
         type: PAGE_TYPE.APPLICATION
@@ -1449,6 +1497,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "cali-disclosure": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["cali-disclosure"],
         type: PAGE_TYPE.APPLICATION
@@ -1468,6 +1517,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-preferences-thank-you": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-preferences-thank-you"],
         type: PAGE_TYPE.APPLICATION
@@ -1486,6 +1536,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "job-preferences": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["job-preferences"],
         type: PAGE_TYPE.APPLICATION
@@ -1504,7 +1555,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   SELECT_JOB_ROLE: {
     eventPayload: {
-      event: EVENT.CLICK_ROLE
+      event: EVENT.CLICK_ROLE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1519,7 +1571,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   SUBMIT_SHIFT_PREFERENCES: {
     eventPayload: {
-      event: EVENT.SELECT_PREFERENCES
+      event: EVENT.SELECT_PREFERENCES,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1534,7 +1587,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "start-job-video": {
     eventPayload: {
-      event: EVENT.START_JOB_VIDEO
+      event: EVENT.START_JOB_VIDEO,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1549,7 +1603,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "finish-job-video": {
     eventPayload: {
-      event: EVENT.FINISH_JOB_VIDEO
+      event: EVENT.FINISH_JOB_VIDEO,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1564,7 +1619,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   "nhe-preferences": {
     eventPayload: {
-      event: EVENT.NHE_PREFERENCE
+      event: EVENT.NHE_PREFERENCE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1579,7 +1635,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   SUBMIT_NHE_PREFERENCES: {
     eventPayload: {
-      event: EVENT.SUBMIT_NHE_PREFERENCES
+      event: EVENT.SUBMIT_NHE_PREFERENCES,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1594,7 +1651,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   RETURN_TO_NHE: {
     eventPayload: {
-      event: EVENT.RETURN_TO_NHE
+      event: EVENT.RETURN_TO_NHE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1608,7 +1666,8 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   },
   SELECT_NHE: {
     eventPayload: {
-      event: EVENT.SELECT_NHE
+      event: EVENT.SELECT_NHE,
+      countryCode: "us",
     },
     dataPayload: [
       jobPayloadDefault,
@@ -1624,6 +1683,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "update-shift": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["update-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -1644,6 +1704,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "no-shift-selected": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["no-shift-selected"],
         type: PAGE_TYPE.APPLICATION
@@ -1663,6 +1724,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "view-shift": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["view-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -1682,6 +1744,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "current-shift": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["current-shift"],
         type: PAGE_TYPE.APPLICATION
@@ -1702,6 +1765,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "cancel-shift-confirmation": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["cancel-shift-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -1722,6 +1786,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "update-shift-confirmation": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["update-shift-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -1743,6 +1808,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "skip-schedule":{
     eventPayload: {
       event: EVENT.SKIP_SCHEDULE_SELECTION,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["update-shift-confirmation"],
         type: PAGE_TYPE.APPLICATION
@@ -1764,6 +1830,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   "thank-you-submit": {
     eventPayload: {
       event: EVENT.THANK_YOU_SUBMIT,
+      countryCode: "us",
       page: {
         name: PAGE_NAME["thank-you"],
         type: PAGE_TYPE.APPLICATION
