@@ -51,6 +51,7 @@ export const UPDATE_SHIFT_PREF_DETAILS = "UPDATE_SHIFT_PREF_DETAILS";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHEDULE";
 export const SELECTED_SCHEDULE = "SELECTED_SCHEDULE";
 export const RESET_FILTERS_SELF_SERVICE_DS = "RESET_FILTERS_SELF_SERVICE_DS";
+export const CLEAR_SELECTED_SCHEDULE = "CLEAR_SELECTED_SCHEDULE";
 const SORT_KEY_DEFAULT = "DEFAULT";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
 const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
@@ -992,4 +993,13 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
     );
     goTo("job-opportunities", payload.urlParams)(dispatch);
   }
+}
+
+export const onClearSelectedSchedule = (payload: IPayload) => async (
+  dispatch: Function
+) => {
+  dispatch({
+    type: CLEAR_SELECTED_SCHEDULE,
+    payload: {}
+  });
 }

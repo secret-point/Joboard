@@ -37,6 +37,7 @@ import {
   UPDATE_SCHEDULES,
   UPDATE_JOB_INFO,
   SELECTED_SCHEDULE,
+  CLEAR_SELECTED_SCHEDULE,
   SET_LOADING_SCHEDULES,
   RESET_FILTERS_SELF_SERVICE_DS
 } from "../actions/job-actions";
@@ -356,6 +357,24 @@ const AppReducer = (state = initialState, action: IAction) => {
             selectedChildSchedule: {
               $set: payload
             }
+          },
+          application: {
+            $set: application
+          },
+        }
+      });
+    }
+
+    case CLEAR_SELECTED_SCHEDULE: {
+      const application = { ...state.data.application };
+      delete application.schedule;
+      const job = { ...state.data.job };
+      delete job.selectedChildSchedule;
+
+      return updateState(state, {
+        data: {
+          job: {
+            $set: job
           },
           application: {
             $set: application

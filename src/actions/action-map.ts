@@ -73,11 +73,13 @@ import {
   onGetJobDescriptionDS,
   onGetScheduleDetails,
   onCheckIfSkipScheduleSelection,
-  onSkipScheduleSelection
+  onSkipScheduleSelection,
+  onClearSelectedSchedule,
 } from "./job-actions";
 const actionMap: any = {
   CANCEL_SHIFT_SELECTION_SELF_SERVICE: onCancelShiftSelectionSelfService,
   CANCEL_SHIFT_SELECTION_SELF_SERVICE_DS: onCancelShiftSelectionSelfServiceDS,
+  CLEAR_SELECTED_SCHEDULE: onClearSelectedSchedule,
   COMPLETE_TASK: onCompleteTask,
   CONTINUE_WITH_FCRA_DECLINE: continueWithFCRADecline,
   CREATE_APPLICATION: createApplication,
