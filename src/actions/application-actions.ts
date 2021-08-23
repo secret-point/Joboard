@@ -1112,6 +1112,14 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
         errorMessage =
             "The schedule you selected is no longer available. Please select a different option.";
         sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
+      } else if (
+          ex?.response?.data?.errorMessage &&
+          ex.response.data.errorMessage === "Reversion failed."
+      ) {
+        errorMessage = "Sorry, we are having some technical difficulties. Because of this, you have lost your " +
+            "previously confirmed schedule and start date. Please exit, click on \"Schedule your shift today!\", and " +
+            "select a schedule and start date.";
+        sendAdobeAnalytics("fail-update-shift-schedule-unsuccessful-reversion-self-service");
       } else {
         errorMessage =
             ex?.response?.data?.errorMessage || "Failed to update application";

@@ -1194,6 +1194,23 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
+  "fail-update-shift-schedule-unsuccessful-reversion-self-service": {
+    eventPayload: {
+      event: EVENT.FAIL_UPDATE_SHIFT_UNSUCCESSFUL_REVERSION_SELF_SERVICE,
+      countryCode: "us",
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
   "successful-cancel-shift-self-service": {
     eventPayload: {
       event: EVENT.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE,
