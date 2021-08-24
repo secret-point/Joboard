@@ -90,7 +90,7 @@ export interface ApplicationData {
 export interface JobDescriptor {
   consentInfo: Job;
   jobDescription: Job;
-  availableSchedules: unknown;
+  availableSchedules: any;
   selectedChildSchedule: ScheduleDetails;
 }
 

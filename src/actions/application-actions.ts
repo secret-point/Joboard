@@ -523,13 +523,13 @@ export const onSelectedSchedules = (payload: IPayload) => (dispatch: Function) =
     payload: payload.selectedSchedule
   });
 
-  // let allSchedules = payload.data.job.availableSchedules.schedules;
-  // let selectedSchedulePositionInOrder: number = findIndex(allSchedules, {
-  //   headCountRequestId: payload.selectedSchedule.headCountRequestId
-  // });
+  let allSchedules = payload.data.job.availableSchedules.schedules;
+  let selectedSchedulePositionInOrder: number = findIndex(allSchedules, {
+    scheduleId: payload.selectedSchedule.scheduleId
+  });
   const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
   //position
-  // dataLayerShiftSelected.shift.position = selectedSchedulePositionInOrder + 1;
+  dataLayerShiftSelected.shift.position = selectedSchedulePositionInOrder + 1;
   sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
   log(`Selected schedules`, {
     selectedSchedule: JSON.stringify(payload.selectedSchedule)
