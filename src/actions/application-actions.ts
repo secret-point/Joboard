@@ -68,6 +68,61 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   window.location.assign(url);
 };
 
+export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
+    dispatch: Function
+): Promise<ICandidateApplication | void> => {
+  try {
+    setLoading(true)(dispatch);
+    const applicationId = payload.urlParams?.applicationId;
+    log(`started getting application data from CandidateAppService and HiringPortal for ${applicationId}`,
+        {
+      applicationId
+    });
+
+    if (applicationId) {
+      await onGetJobInfo(payload)(dispatch);
+      await onGetCandidate(payload)(dispatch);
+      log(`loading application data from CandidateAppService and HiringPortal for ${applicationId}`);
+
+      const applicationResponseFromHP = await new CandidateApplicationService().getApplicationSelfServiceDS(
+          applicationId
+      );
+
+      const applicationResponseFromBB = await new CandidateApplicationService().getApplication(
+          applicationId
+      );
+
+      onSelectedSchedule(applicationResponseFromHP.scheduleId)(dispatch);
+
+      dispatch({
+        type: GET_APPLICATION,
+        payload: {
+          application: applicationResponseFromBB,
+          currentState: applicationResponseFromBB.currentState
+        }
+      });
+
+      log("Updated state with application data from CandidateAppService and HiringPortal");
+      setLoading(false)(dispatch);
+    } else if (isNil(applicationId)) {
+      log("did not found application id in state or URL");
+      throw new Error(NO_APPLICATION_ID);
+    }
+
+  } catch (ex) {
+    logError("Failed while fetching the application data from CandidateAppService and HiringPortal", ex);
+    setLoading(false)(dispatch);
+    if (ex?.message === NO_APPLICATION_ID) {
+      window.localStorage.setItem("page", "applicationId-null");
+      onUpdatePageId("applicationId-null")(dispatch);
+    } else {
+      onUpdateError(
+          ex?.response?.data?.errorMessage || "unable to get application"
+      )(dispatch);
+    }
+  }
+};
+
 export const onGetApplication = (payload: IPayload) => async (
   dispatch: Function
 ): Promise<ICandidateApplication | void> => {

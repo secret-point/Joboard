@@ -88,4 +88,16 @@ export default class CandidateApplicationService {
     );
     return response.data;
   }
+
+  async getApplicationSelfServiceDS(applicationId: string) {
+    const response = await this.axiosInstance.get(
+        `/applications/reserved/${applicationId}`,
+        {
+          headers: {
+            "Cache-Control": "no-cache"
+          }
+        }
+    );
+    return response.data;
+  }
 }

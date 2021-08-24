@@ -105,6 +105,12 @@ describe("Test for Application Actions", () => {
             throw new Error(message || EXCEPTION_MESSAGE);
           }
           return {...TEST_APPLICATION}
+        },
+        getApplicationSelfServiceDS: (applicationId: string) => {
+          if (withException) {
+            throw new Error(message || EXCEPTION_MESSAGE);
+          }
+          return {...TEST_APPLICATION}
         }
       }));
     }
@@ -1099,5 +1105,46 @@ describe("Test for Application Actions", () => {
     expect(onUpdatePageId).toBeCalledTimes(0);
     expect(onUpdateError).toBeCalledTimes(1);
     //expect(onUpdateError).toBeCalledWith("Failed to update application");
+  });
+
+  test("Test onGetApplicationSelfServiceDS action with normal behavior and application with shift", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    payload.data.selectedShift = {
+      requisitionId: TEST_REQUISITION_ID
+    }
+    await actions.onGetApplicationSelfServiceDS(payload)(store.dispatch);
+
+    //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
+    const actionLength = store.getActions().length;
+    expect(actionLength).toBe(4);
+    expect(store.getActions()[actionLength - 2].type).toBe(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 1].type).toBe(ON_SET_LOADING);
+    expect(store.getActions()[actionLength - 1].payload).toBe(false);
+  });
+
+  test("Test onGetApplicationSelfServiceDS action without applicationId should catch exception", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockActionsPartial();
+    //manually set data
+    payload.urlParams.applicationId = null;
+    await actions.onGetApplicationSelfServiceDS(payload)(store.dispatch);
+
+    expect(onUpdatePageId).toBeCalledTimes(1);
+    expect(onUpdatePageId).toBeCalledWith("applicationId-null");
+    expect(hasAction(store.getActions(), actions.GET_APPLICATION)).toBe(false);
+  });
+
+  test("Test onGetApplicationSelfServiceDS action exception during API call should execute onUpdateError",
+      async () => {
+    const store = getStore();
+    mockCandidateAppService(true);
+    mockErrorActionsPartial();
+
+    await actions.onGetApplicationSelfServiceDS(payload)(store.dispatch);
+
+    expect(onUpdateError).toBeCalledTimes(1);
+    expect(onUpdateError).toBeCalledWith("unable to get application");
   });
 });

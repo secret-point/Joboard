@@ -19,6 +19,7 @@ import {
 import {
   onStartApplication,
   onGetApplication,
+  onGetApplicationSelfServiceDS,
   onLaunchFCRA,
   continueWithFCRADecline,
   createApplication,
@@ -88,6 +89,7 @@ const actionMap: any = {
   GET_ALL_SCHEDULES: onGetAllSchedules,
   GET_ALL_SCHEDULES_SELF_SERVICE: onGetAllSchedulesSelfService,
   GET_APPLICATION: onGetApplication,
+  GET_APPLICATION_SELF_SERVICE_DS: onGetApplicationSelfServiceDS,
   GET_APPLICATION_DS: onGetApplicationDS,
   GET_CHILD_REQUISITIONS: onGetChildRequisitions,
   GET_JOB_DESCRIPTION: onGetJobDescription,
