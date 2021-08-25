@@ -84,15 +84,18 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
       await onGetCandidate(payload)(dispatch);
       log(`loading application data from CandidateAppService and HiringPortal for ${applicationId}`);
 
-      const applicationResponseFromHP = await new CandidateApplicationService().getApplicationSelfServiceDS(
-          applicationId
-      );
-
       const applicationResponseFromBB = await new CandidateApplicationService().getApplication(
           applicationId
       );
 
-      onSelectedSchedule(applicationResponseFromHP.scheduleId)(dispatch);
+      if (window.localStorage.getItem("page") !== "no-shift-selected-ds") {
+        //Hiring portal returns 404 if the application is in schedule RELEASED status
+        //So only if current page is not equal to no-shift-selected-ds, execute the followings
+        const applicationResponseFromHP = await new CandidateApplicationService().getApplicationSelfServiceDS(
+            applicationId
+        );
+        onSelectedSchedule(applicationResponseFromHP.scheduleId)(dispatch);
+      }
 
       dispatch({
         type: GET_APPLICATION,

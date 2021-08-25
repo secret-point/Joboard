@@ -314,7 +314,7 @@ export const onGoToSelfServicePageDS = (payload: IPayload) => (
   if (applicationId) {
     path = `${path}/${applicationId}`;
   }
-  if (isNil(payload.data.application.jobScheduleSelected)) {
+  if (isNil(payload.data.application.schedule)) {
     onUpdatePageId(noShiftSelected)(dispatch);
   } else {
     onUpdatePageId(hasShiftSelected)(dispatch);
