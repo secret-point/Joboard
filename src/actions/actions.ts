@@ -298,6 +298,16 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
     log(
       `Completed task on back button execution, current step is ${currentStepName}`
     );
+    if(options?.stepName === "job-opportunities"){
+      const jobId = payload.urlParams.jobId;
+      const applicationId = payload.urlParams.applicationId;
+      // Remove schedule Id before go to contingent-offer page
+      window.history.replaceState(
+        {},
+        document.title,
+        `${window.location.origin}${window.location.pathname}?applicationId=${applicationId}&jobId=${jobId}${window.location.hash}`
+      );
+    }
     completeTask(application, currentStepName, true, options?.stepName, payload.data?.job);
   }
 };

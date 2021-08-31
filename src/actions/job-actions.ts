@@ -119,7 +119,15 @@ export const onGetChildSchedule = (payload: IPayload) => async (
 export const onGetScheduleDetails = (payload: IPayload) => async (
   dispatch: Function
 ) => {
-  await onSelectedSchedule(localStorage.getItem("scheduleId") as string)(
+  let { application } = payload.data;
+  const applicationId = payload.urlParams.applicationId;
+  if (!application || isEmpty(application)) {
+    application = await new CandidateApplicationService().getApplication(
+      applicationId
+    );
+  }
+  const scheduleId = application.jobScheduleSelected.scheduleId? application.jobScheduleSelected.scheduleId : payload.urlParams.scheduleId;
+  await onSelectedSchedule(scheduleId as string)(
     dispatch
   );
 };
@@ -947,12 +955,6 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           `After updating schedule selection, application is redirecting to contingent-offer`
         );
         delete payload.urlParams.scheduleId
-        // Remove schedule Id before go to contingent-offer page
-        window.history.replaceState(
-          {},
-          document.title,
-          `${window.location.origin}${window.location.pathname}?applicationId=${applicationId}&jobId=${jobId}${window.location.hash}`
-        );
 
         goTo("contingent-offer", payload.urlParams)(dispatch);
         log(

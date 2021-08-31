@@ -366,8 +366,8 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
         try {
           const scheduleId = application.jobScheduleSelected.scheduleId
             ? application.jobScheduleSelected.scheduleId
-            : localStorage.getItem("scheduleId") as string;
-          schedule = await new JobService().getScheduleDetailByScheduleId(scheduleId);
+            : payload.urlParams.scheduleId;
+          schedule = await new JobService().getScheduleDetailByScheduleId(scheduleId as string);
         } catch (ex) {
           setLoading(false)(dispatch);
           onUpdateError("Failed to fetch schedule information to fetch time slots.")(dispatch);
