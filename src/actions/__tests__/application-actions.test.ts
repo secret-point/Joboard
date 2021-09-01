@@ -869,6 +869,7 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
+    payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
     payload.options = {
       goTo: "go-to-step"
     }
@@ -876,7 +877,7 @@ describe("Test for Application Actions", () => {
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(4);
+    expect(store.getActions().length).toBe(5);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
@@ -884,11 +885,12 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
+    payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
 
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
+    expect(store.getActions().length).toBe(4);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
@@ -899,11 +901,12 @@ describe("Test for Application Actions", () => {
     mockActionsPartial();
 
     payload.urlParams.applicationId = null;
+    payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
 
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(1);
     expect(onUpdatePageId).toBeCalledWith("applicationId-null");
@@ -931,9 +934,24 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
+    payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
+
     payload.options = {
       goTo: "go-to-step"
     }
+
+    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(5);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+  });
+
+  test("Test onUpdateShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
 
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
@@ -942,30 +960,20 @@ describe("Test for Application Actions", () => {
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
-  test("Test onUpdateShiftSelectionSelfServiceDS without goto option should update selected schedule", async () => {
-    const store = getStore();
-    mockCandidateAppService();
-    mockWorkflowActionsPartial();
-
-    await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
-
-    //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
-  });
-
   test("Test onUpdateShiftSelectionSelfServiceDS with empty applicationId in payload should capture exception", async () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     mockActionsPartial();
+    payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
+
 
     payload.urlParams.applicationId = null;
 
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(1);
     expect(onUpdatePageId).toBeCalledWith("applicationId-null");
@@ -993,9 +1001,24 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
+    payload.data.output["cancel-shift-confirmation.cancelScheduleReason"] = "reason1";
+
     payload.options = {
       goTo: "go-to-step"
     }
+
+    await actions.onCancelShiftSelectionSelfService(payload)(store.dispatch);
+
+    //TODO: verify calls for candidateAppService
+    expect(store.getActions().length).toBe(5);
+    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
+  });
+
+  test("Test onCancelShiftSelectionSelfService without goto option should update selected shift", async () => {
+    const store = getStore();
+    mockCandidateAppService();
+    mockWorkflowActionsPartial();
+    payload.data.output["cancel-shift-confirmation.cancelScheduleReason"] = "reason1";
 
     await actions.onCancelShiftSelectionSelfService(payload)(store.dispatch);
 
@@ -1004,30 +1027,18 @@ describe("Test for Application Actions", () => {
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
-  test("Test onCancelShiftSelectionSelfService without goto option should update selected shift", async () => {
-    const store = getStore();
-    mockCandidateAppService();
-    mockWorkflowActionsPartial();
-
-    await actions.onCancelShiftSelectionSelfService(payload)(store.dispatch);
-
-    //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
-    expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
-  });
-
   test("Test onCancelShiftSelectionSelfService with empty applicationId in payload should capture exception", async () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     mockActionsPartial();
-
+    payload.data.output["cancel-shift-confirmation.cancelScheduleReason"] = "reason1";
     payload.urlParams.applicationId = null;
 
     await actions.onCancelShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(1);
     expect(onUpdatePageId).toBeCalledWith("applicationId-null");
@@ -1055,12 +1066,13 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
+    payload.data.output["cancel-shift-confirmation-ds.cancelScheduleReason"] = "reason1";
     payload.options = {
       goTo: "go-to-step"
     }
     await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(4);
+    expect(store.getActions().length).toBe(5);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
@@ -1068,10 +1080,10 @@ describe("Test for Application Actions", () => {
     const store = getStore();
     mockCandidateAppService();
     mockWorkflowActionsPartial();
-
+    payload.data.output["cancel-shift-confirmation-ds.cancelScheduleReason"] = "reason1";
     await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(3);
+    expect(store.getActions().length).toBe(4);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(true);
   });
 
@@ -1081,10 +1093,11 @@ describe("Test for Application Actions", () => {
     mockWorkflowActionsPartial();
     mockActionsPartial();
     payload.urlParams.applicationId = null;
+    payload.data.output["cancel-shift-confirmation-ds.cancelScheduleReason"] = "reason1";
     await actions.onCancelShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(1);
     expect(onUpdatePageId).toBeCalledWith("applicationId-null");

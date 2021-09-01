@@ -16,6 +16,7 @@ import { log, logError } from "../helpers/log-helper";
 import i18n from "../i18n";
 import { checkIfIsLegacy } from "../helpers/utils";
 import queryString from "query-string";
+import {REMOVE_MESSAGE} from "./requisition-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -376,6 +377,14 @@ export const onLogSpecificJobVideoMetrics = (payload: IPayload) => (
     const metrics = getDataForEventMetrics(eventName);
     sendDataLayerAdobeAnalytics(metrics);
   };
+
+export const onClearWarningMessage = (payload: IPayload) => (
+    dispatch: Function
+) => {
+  dispatch({
+    type: REMOVE_MESSAGE
+  });
+};
 
 export const DsPages: { [key: string]: string } = {
   "job-opportunities": "job-opportunities-ds",
