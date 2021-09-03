@@ -24,6 +24,7 @@ import { initLogger } from "./helpers/log-helper";
 import "./i18n";
 import { DragonStoneApp } from "./dragon-stone-app";
 import { log } from "./helpers/log-helper";
+import { onSFLogout } from "./actions/application-actions";
 
 const DRAGONSTONE_PATH_PREFIX = "/ds/";
 declare global {
@@ -123,33 +124,25 @@ getInitialData()
     if (!isLegacy && !isNil(page) && !isNil(jobId)) {
       const urlParams = { ...queryParams };
       urlParams.jobId = jobId;
-      console.log("==========urlParams",urlParams);
       delete urlParams.token;
       delete urlParams.page;
 
-      console.log("DS appUrl creation", page, jobId, urlParams);
-
       const requestQueryString = objectToQuerystring(urlParams);
-      console.log("DS requestQueryString", requestQueryString);
 
       let appHashUrl = `#/${page}/${jobId}`;
-      console.log("DS appHashUrl 1", appHashUrl);
 
       appHashUrl = !isEmpty(requestQueryString)
         ? `${requestQueryString}${appHashUrl}`
         : appHashUrl;
-      console.log("DS appHashUrl 2", appHashUrl);
 
       appHashUrl = !isNil(applicationId)
         ? `${appHashUrl}/${applicationId}`
         : appHashUrl;
-      console.log("DS appHashUrl 3", appHashUrl);
 
       appHashUrl = !isNil(misc)
         ? `${appHashUrl}/${applicationId}/${misc}`
         : appHashUrl;
 
-      console.log(`DS appHashUrl 4 "${appHashUrl}"`);
       window.location.assign(appHashUrl);
     }
 
@@ -184,6 +177,10 @@ getInitialData()
     }
 
     window.reduxStore = store;
+    // Inject temp solusion for removing accessToken when CS logout and continue logout on SF
+    if(page === "sflogout"){
+      onSFLogout();
+    }
     if (data[0]) {
       domLoaded.then(() => {
         const initializationMetric = new KatalMetrics.Metric.Initialization().withMonitor();

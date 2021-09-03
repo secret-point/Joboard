@@ -1338,3 +1338,11 @@ export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     }
   }
 };
+
+export const onSFLogout = () => {
+  window.localStorage.removeItem("accessToken");
+  const SFLogoutURL = window.reduxStore?.getState()?.app?.appConfig?.SFLogoutURL
+    ? window.reduxStore?.getState()?.app?.appConfig?.SFLogoutURL
+    : "https://amazon.force.com/secur/logout.jsp";
+  window.location.assign(SFLogoutURL);
+}
