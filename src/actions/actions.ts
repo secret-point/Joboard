@@ -17,6 +17,7 @@ import i18n from "../i18n";
 import { checkIfIsLegacy } from "../helpers/utils";
 import queryString from "query-string";
 import {REMOVE_MESSAGE} from "./requisition-actions";
+import {REMOVE_CANCELLATION_RESCHEDULE_QUESTION} from "./application-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -383,6 +384,9 @@ export const onClearWarningMessage = (payload: IPayload) => (
 ) => {
   dispatch({
     type: REMOVE_MESSAGE
+  });
+  dispatch({
+    type: REMOVE_CANCELLATION_RESCHEDULE_QUESTION
   });
 };
 
