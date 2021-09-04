@@ -60,9 +60,8 @@ export const onGetJobInfo = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   log("onGetJobInfo", payload);
-  const jobId = payload.urlParams?.jobId
-    ? payload.urlParams.jobId
-    : null;
+  const jobId = payload.urlParams?.jobId as string;
+  console.log(jobId);
 
   if (jobId && isEmpty(payload.data.job)) {
     try {
@@ -127,15 +126,10 @@ export const onGetScheduleDetails = (payload: IPayload) => async (
       applicationId
     );
   }
-  const scheduleId = application.jobScheduleSelected.scheduleId
-    ? application.jobScheduleSelected.scheduleId 
-    : payload.urlParams.scheduleId;
-
-  if(scheduleId){
-    await onSelectedSchedule(scheduleId as string)(
-      dispatch
-    );
-  }
+  const scheduleId = application.jobScheduleSelected.scheduleId? application.jobScheduleSelected.scheduleId : payload.urlParams.scheduleId;
+  await onSelectedSchedule(scheduleId as string)(
+    dispatch
+  );
 };
 
 export const onSelectedSchedule = (scheduleId: string) => async (
