@@ -47,7 +47,6 @@ export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHDULE";
 export const REMOVE_CANCELLATION_RESCHEDULE_QUESTION = "REMOVE_CANCELLATION_RESCHEDULE_QUESTION";
-export const UPDATE_SCHEDULE_ID = "UPDATE_SCHEDULE_ID";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -98,21 +97,6 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
             applicationId
         );
         onSelectedSchedule(applicationResponseFromHP.scheduleId)(dispatch);
-        //update application data with schedule from HiringPortal
-        dispatch({
-          type: UPDATE_SCHEDULE_ID,
-          payload: {
-            scheduleId: applicationResponseFromHP.scheduleId
-          }
-        });
-      } else {
-        //remove schedule data from BB application as HiringPortal does not have a schedule
-        dispatch({
-          type: UPDATE_SCHEDULE_ID,
-          payload: {
-            scheduleId: null
-          }
-        });
       }
 
       dispatch({
@@ -991,7 +975,7 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
   try {
     const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
-    const currentShift = payload.data.application.jobSelected.headCountRequestId;
+    const currentShift = payload.data.application.shift;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation.updateScheduleReason");
     if (!isNil(currentShift)
@@ -1181,7 +1165,7 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     const { application } = payload.data;
     const { urlParams } = payload;
     const selectedSchedule = payload.data.job.selectedChildSchedule;
-    const currentSchedule = payload.data.application.jobScheduleSelected.scheduleId;
+    const currentSchedule = payload.data.application.schedule;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation-ds.updateScheduleReason");
     if (!isNil(currentSchedule)

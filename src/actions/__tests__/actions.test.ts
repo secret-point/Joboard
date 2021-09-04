@@ -203,8 +203,7 @@ describe("Test for Actions", () => {
       hasShiftSelected: "current-shift-ds",
       noShiftSelected: "no-shift-selected-ds"
     };
-    payload.data.application.jobScheduleSelected = {}
-    payload.data.application.jobScheduleSelected.scheduleId = null;
+    payload.data.application.schedule = null;
     await actions.onGoToSelfServicePageDS(payload)(store.dispatch);
 
     expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);
@@ -220,8 +219,7 @@ describe("Test for Actions", () => {
       hasShiftSelected: "current-shift-ds",
       noShiftSelected: "no-shift-selected-ds"
     };
-    payload.data.application.jobScheduleSelected = {};
-    payload.data.application.jobScheduleSelected.scheduleId = "1234567";
+    payload.data.application.schedule = {};
     await actions.onGoToSelfServicePageDS(payload)(store.dispatch);
 
     expect(store.getActions()[1].type).toBe(actions.ON_UPDATE_PAGE_ID);

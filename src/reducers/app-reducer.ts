@@ -52,8 +52,7 @@ import {
   SHOW_PREVIOUS_NAMES,
   SET_SELECTED_SHIFT,
   SET_SELECTED_SCHEDULE,
-  REMOVE_CANCELLATION_RESCHEDULE_QUESTION,
-  UPDATE_SCHEDULE_ID
+  REMOVE_CANCELLATION_RESCHEDULE_QUESTION
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
@@ -631,8 +630,8 @@ const AppReducer = (state = initialState, action: IAction) => {
     case REMOVE_CANCELLATION_RESCHEDULE_QUESTION: {
       let page = state.pageConfig.id;
       let components = cloneDeep(state.pageConfig.content.components);
-      if ((checkIfIsDGSCSS(page) && isNil(state?.data?.application?.jobScheduleSelected?.scheduleId))
-          || (checkIfIsNonDGSCSS(page) && isNil(state?.data?.application?.jobSelected?.headCountRequestId))) {
+      if ((checkIfIsDGSCSS(page) && isNil(state.data.application.schedule))
+          || (checkIfIsNonDGSCSS(page) && isNil(state.data.application.shift))) {
         for (let i = components.length - 1; i >= 0; i--) {
           let component = components[i];
           if (component.properties.id === "cancellation-reschedule-reason") {
@@ -788,20 +787,6 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           cancellationRescheduleReason: {
             $set: payload.reason
-          }
-        }
-      });
-    }
-
-    case UPDATE_SCHEDULE_ID: {
-      return updateState(state, {
-        data: {
-          application: {
-            jobScheduleSelected: {
-              scheduleId: {
-                $set: payload.scheduleId
-              }
-            }
           }
         }
       });
