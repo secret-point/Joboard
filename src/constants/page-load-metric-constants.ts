@@ -1168,7 +1168,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       geoclusterPayloadDefault,
       sitePayloadDefault,
       candidatePayloadDefault,
-      cancellationRescheduleReasonPayloadDefault
     ]
   },
   "fail-update-shift-schedule-full-self-service": {
@@ -1237,7 +1236,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       geoclusterPayloadDefault,
       sitePayloadDefault,
       candidatePayloadDefault,
-      cancellationRescheduleReasonPayloadDefault
     ]
   },
   "fail-cancel-shift-self-service": {
@@ -1874,6 +1872,24 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       geoclusterPayloadDefault,
       sitePayloadDefault,
       candidateOnThankYouPayloadDefault,
+    ]
+  },
+  "cancellation-reschedule-reason-self-service": {
+    eventPayload: {
+      event: EVENT.CANCELLATION_RESCHEDULE_REASON_SELF_SERVICE,
+      countryCode: "us",
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      eventShiftPayload,
+      shiftTypePayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+      cancellationRescheduleReasonPayloadDefault,
     ]
   }
 };

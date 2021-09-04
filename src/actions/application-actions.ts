@@ -31,7 +31,7 @@ import {
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
 import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-import { checkIfIsLegacy, checkIfIsCSS } from "../helpers/utils";
+import { checkIfIsLegacy } from "../helpers/utils";
 import ICandidateApplication from "../@types/ICandidateApplication";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -46,7 +46,6 @@ export const TERMINATE_APPLICATION = "TERMINATE_APPLICATION";
 export const SHOW_PREVIOUS_NAMES = "SHOW_PREVIOUS_NAMES";
 export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHDULE";
-export const REMOVE_CANCELLATION_RESCHEDULE_QUESTION = "REMOVE_CANCELLATION_RESCHEDULE_QUESTION";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -566,12 +565,7 @@ export const onSelectedShifts = (payload: IPayload) => (dispatch: Function) => {
   const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
   //position
   dataLayerShiftSelected.shift.position = selectedShiftPositionInOrder + 1;
-
-  const page = window.localStorage.getItem("page");
-  if (!checkIfIsCSS(<string>page)) {
-    sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
-  }
-
+  sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
   log(`Selected shift`, {
     selectedShift: JSON.stringify(payload.selectedShift)
   });
@@ -595,12 +589,7 @@ export const onSelectedSchedules = (payload: IPayload) => (dispatch: Function) =
   const dataLayerShiftSelected = getDataForEventMetrics("shift-selection");
   //position
   dataLayerShiftSelected.shift.position = selectedSchedulePositionInOrder + 1;
-
-  const page = window.localStorage.getItem("page");
-  if (!checkIfIsCSS(<string>page)) {
-    sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
-  }
-
+  sendDataLayerAdobeAnalytics(dataLayerShiftSelected);
   log(`Selected schedules`, {
     selectedSchedule: JSON.stringify(payload.selectedSchedule)
   });
@@ -975,11 +964,9 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
   try {
     const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
-    const currentShift = payload.data.application.shift;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation.updateScheduleReason");
-    if (!isNil(currentShift)
-        && (updateScheduleReason === undefined || updateScheduleReason === "default")) {
+    if (updateScheduleReason === undefined || updateScheduleReason === "default") {
       dispatch({
         type: SHOW_MESSAGE,
         payload: {
@@ -1019,6 +1006,7 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
       }
     });
     sendAdobeAnalytics("successful-update-shift-self-service");
+    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     response.shift = selectedShift;
     dispatch({
@@ -1111,6 +1099,7 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
     });
 
     sendAdobeAnalytics("successful-cancel-shift-self-service");
+    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     dispatch({
       type: UPDATE_APPLICATION,
@@ -1165,11 +1154,9 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     const { application } = payload.data;
     const { urlParams } = payload;
     const selectedSchedule = payload.data.job.selectedChildSchedule;
-    const currentSchedule = payload.data.application.schedule;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation-ds.updateScheduleReason");
-    if (!isNil(currentSchedule)
-        && (updateScheduleReason === undefined || updateScheduleReason === "default")) {
+    if (updateScheduleReason === undefined || updateScheduleReason === "default") {
       dispatch({
         type: SHOW_MESSAGE,
         payload: {
@@ -1208,6 +1195,7 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
       payload: jobSelected
     });
     sendAdobeAnalytics("successful-update-shift-self-service");
+    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     response.schedule = selectedSchedule;
     response.jobDescription = payload.data.job.jobDescription
@@ -1307,6 +1295,7 @@ export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     });
 
     sendAdobeAnalytics("successful-cancel-shift-self-service");
+    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     dispatch({
       type: UPDATE_APPLICATION,
