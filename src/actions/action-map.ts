@@ -14,8 +14,7 @@ import {
   onBackButtonCompleteTask,
   onRedirectToASHChecklist,
   onLogVideoMetrics,
-  onLogSpecificJobVideoMetrics,
-  onClearWarningMessage
+  onLogSpecificJobVideoMetrics
 } from "./actions";
 import {
   onStartApplication,
@@ -152,7 +151,6 @@ const actionMap: any = {
   UPDATE_WOTC_STATUS: onUpdateWotcStatus,
   CHECK_IF_SKIP_SCHEDULE_SELECTION: onCheckIfSkipScheduleSelection,
   SKIP_SCHEDULE_SELECTION: onSkipScheduleSelection,
-  CLEAR_WARNING_MESSAGE: onClearWarningMessage,
 };
 
 export default actionMap;

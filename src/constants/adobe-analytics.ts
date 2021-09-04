@@ -26,8 +26,7 @@ export enum EVENT {
   FAIL_UPDATE_SHIFT_UNSUCCESSFUL_REVERSION_SELF_SERVICE = "fail to update shift due to failed reversion on self service page",
   FAIL_CANCEL_SHIFT_SELF_SERVICE = "fail to cancel shift on self service page",
   SKIP_SCHEDULE_SELECTION = "skip schedule selection",
-  THANK_YOU_SUBMIT = "submit on thank-you page",
-  CANCELLATION_RESCHEDULE_REASON_SELF_SERVICE = "reason of cancellation or reschedule"
+  THANK_YOU_SUBMIT = "submit on thank-you page"
 }
 
 export enum PAGE_TYPE {

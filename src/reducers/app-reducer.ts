@@ -45,7 +45,6 @@ import {
   GET_APPLICATION,
   SET_APPLICATION_DATA,
   UPDATE_APPLICATION,
-  UPDATE_CANCELLATION_RESCHEDULE_REASON,
   UPDATE_NON_FCRA_QUESTIONS,
   ON_GET_CANDIDATE,
   UPDATE_CONTINGENT_OFFER,
@@ -750,16 +749,6 @@ const AppReducer = (state = initialState, action: IAction) => {
             "update-shift-ds": {
               $set: updateShift
             }
-          }
-        }
-      });
-    }
-
-    case UPDATE_CANCELLATION_RESCHEDULE_REASON: {
-      return updateState(state, {
-        data: {
-          cancellationRescheduleReason: {
-            $set: payload.reason
           }
         }
       });

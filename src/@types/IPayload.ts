@@ -85,7 +85,6 @@ export interface ApplicationData {
   schedulesEmptyOnFilter?: boolean;
   shiftPageFactor: number;
   schedulePageFactor: number;
-  cancellationRescheduleReason: string;
 }
 
 export interface JobDescriptor {

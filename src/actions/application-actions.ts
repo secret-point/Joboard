@@ -6,7 +6,7 @@ import IPayload from "../@types/IPayload";
 import isEmpty from "lodash/isEmpty";
 import {
   onGetRequisitionHeaderInfo,
-  onSelectedRequisition, SHOW_MESSAGE
+  onSelectedRequisition
 } from "./requisition-actions";
 import {
   onGetJobInfo,
@@ -37,7 +37,6 @@ export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
-export const UPDATE_CANCELLATION_RESCHEDULE_REASON = "UPDATE_CANCELLATION_RESCHEDULE_REASON";
 export const UPDATE_NON_FCRA_QUESTIONS = "UPDATE_NON_FCRA_QUESTIONS";
 export const ON_GET_CANDIDATE = "ON_GET_CANDIDATE";
 export const UPDATE_ADDITIONAL_BG_INFO = "UPDATE_ADDITIONAL_BG_INFO";
@@ -965,26 +964,6 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
     const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
 
-    let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation.updateScheduleReason");
-    if (updateScheduleReason === undefined || updateScheduleReason === "default") {
-      dispatch({
-        type: SHOW_MESSAGE,
-        payload: {
-          message:
-              "Please select a reschedule reason."
-        }
-      });
-      setLoading(false)(dispatch);
-      return;
-    }
-
-    dispatch({
-      type: UPDATE_CANCELLATION_RESCHEDULE_REASON,
-      payload: {
-        reason: updateScheduleReason
-      }
-    });
-
     if (isNil(urlParams.applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
@@ -1006,8 +985,6 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
       }
     });
     sendAdobeAnalytics("successful-update-shift-self-service");
-    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
-
     response.shift = selectedShift;
     dispatch({
       type: UPDATE_APPLICATION,
@@ -1066,26 +1043,6 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
     const { application } = payload.data;
     const { urlParams } = payload;
 
-    let cancelScheduleReason = propertyOf(payload.data.output)("cancel-shift-confirmation.cancelScheduleReason");
-    if (cancelScheduleReason === undefined || cancelScheduleReason === "default") {
-      dispatch({
-        type: SHOW_MESSAGE,
-        payload: {
-          message:
-              "Please select a cancellation reason."
-        }
-      });
-      setLoading(false)(dispatch);
-      return;
-    }
-
-    dispatch({
-      type: UPDATE_CANCELLATION_RESCHEDULE_REASON,
-      payload: {
-        reason: cancelScheduleReason
-      }
-    });
-
     if (isNil(urlParams.applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
@@ -1099,7 +1056,6 @@ export const onCancelShiftSelectionSelfService = (payload: IPayload) => async (
     });
 
     sendAdobeAnalytics("successful-cancel-shift-self-service");
-    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     dispatch({
       type: UPDATE_APPLICATION,
@@ -1155,26 +1111,6 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     const { urlParams } = payload;
     const selectedSchedule = payload.data.job.selectedChildSchedule;
 
-    let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation-ds.updateScheduleReason");
-    if (updateScheduleReason === undefined || updateScheduleReason === "default") {
-      dispatch({
-        type: SHOW_MESSAGE,
-        payload: {
-          message:
-              "Please select a reschedule reason."
-        }
-      });
-      setLoading(false)(dispatch);
-      return;
-    }
-
-    dispatch({
-      type: UPDATE_CANCELLATION_RESCHEDULE_REASON,
-      payload: {
-        reason: updateScheduleReason
-      }
-    });
-
     if (isNil(urlParams.applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
@@ -1195,8 +1131,6 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
       payload: jobSelected
     });
     sendAdobeAnalytics("successful-update-shift-self-service");
-    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
-
     response.schedule = selectedSchedule;
     response.jobDescription = payload.data.job.jobDescription
     dispatch({
@@ -1262,25 +1196,6 @@ export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async 
   try {
     const { application } = payload.data;
     const { urlParams } = payload;
-    let cancelScheduleReason = propertyOf(payload.data.output)("cancel-shift-confirmation-ds.cancelScheduleReason");
-    if (cancelScheduleReason === undefined || cancelScheduleReason === "default") {
-      dispatch({
-        type: SHOW_MESSAGE,
-        payload: {
-          message:
-              "Please select a cancellation reason."
-        }
-      });
-      setLoading(false)(dispatch);
-      return;
-    }
-
-    dispatch({
-      type: UPDATE_CANCELLATION_RESCHEDULE_REASON,
-      payload: {
-        reason: cancelScheduleReason
-      }
-    });
 
     if (isNil(urlParams.applicationId)) {
       throw new Error(NO_APPLICATION_ID);
@@ -1295,7 +1210,6 @@ export const onCancelShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     });
 
     sendAdobeAnalytics("successful-cancel-shift-self-service");
-    sendAdobeAnalytics("cancellation-reschedule-reason-self-service");
 
     dispatch({
       type: UPDATE_APPLICATION,
