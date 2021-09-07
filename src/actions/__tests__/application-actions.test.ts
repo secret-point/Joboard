@@ -870,6 +870,8 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
+    payload.data.application.jobSelected = {};
+    payload.data.application.jobSelected.headCountRequestId = "210037986";
     payload.options = {
       goTo: "go-to-step"
     }
@@ -886,6 +888,8 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
+    payload.data.application.jobSelected = {};
+    payload.data.application.jobSelected.headCountRequestId = "210037986";
 
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
@@ -902,7 +906,8 @@ describe("Test for Application Actions", () => {
 
     payload.urlParams.applicationId = null;
     payload.data.output["update-shift-confirmation.updateScheduleReason"] = "reason1";
-
+    payload.data.application.jobSelected = {};
+    payload.data.application.jobSelected.headCountRequestId = "210037986";
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
@@ -935,7 +940,8 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
-
+    payload.data.application.jobScheduleSelected = {};
+    payload.data.application.jobScheduleSelected.scheduleId = "210037986";
     payload.options = {
       goTo: "go-to-step"
     }
@@ -952,6 +958,8 @@ describe("Test for Application Actions", () => {
     mockCandidateAppService();
     mockWorkflowActionsPartial();
     payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
+    payload.data.application.jobScheduleSelected = {};
+    payload.data.application.jobScheduleSelected.scheduleId = "210037986";
 
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
@@ -966,7 +974,8 @@ describe("Test for Application Actions", () => {
     mockWorkflowActionsPartial();
     mockActionsPartial();
     payload.data.output["update-shift-confirmation-ds.updateScheduleReason"] = "reason1";
-
+    payload.data.application.jobScheduleSelected = {};
+    payload.data.application.jobScheduleSelected.scheduleId = "210037986";
 
     payload.urlParams.applicationId = null;
 
@@ -1130,7 +1139,7 @@ describe("Test for Application Actions", () => {
 
     //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
     const actionLength = store.getActions().length;
-    expect(actionLength).toBe(4);
+    expect(actionLength).toBe(5);
     expect(store.getActions()[actionLength - 2].type).toBe(actions.GET_APPLICATION);
     expect(store.getActions()[actionLength - 1].type).toBe(ON_SET_LOADING);
     expect(store.getActions()[actionLength - 1].payload).toBe(false);
