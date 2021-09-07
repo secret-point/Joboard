@@ -52,11 +52,14 @@ import {
   SHOW_PREVIOUS_NAMES,
   SET_SELECTED_SHIFT,
   SET_SELECTED_SCHEDULE,
+  REMOVE_CANCELLATION_RESCHEDULE_QUESTION
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
 import find from "lodash/find";
 import { sortBy } from "lodash";
+import { checkIfIsNonDGSCSS, checkIfIsDGSCSS } from "../helpers/utils";
+import { isNil } from "lodash";
 
 const getOutputDataObject = (pageOrder: any[]) => {
   const outputData: any = {};
@@ -622,6 +625,30 @@ const AppReducer = (state = initialState, action: IAction) => {
           }
         }
       });
+    }
+
+    case REMOVE_CANCELLATION_RESCHEDULE_QUESTION: {
+      let page = state.pageConfig.id;
+      let components = cloneDeep(state.pageConfig.content.components);
+      if ((checkIfIsDGSCSS(page) && isNil(state.data.application.schedule))
+          || (checkIfIsNonDGSCSS(page) && isNil(state.data.application.shift))) {
+        for (let i = components.length - 1; i >= 0; i--) {
+          let component = components[i];
+          if (component.properties.id === "cancellation-reschedule-reason") {
+            components.splice(i, 1);
+            return updateState(state, {
+              pageConfig: {
+                content: {
+                  components: {
+                    $set: components
+                  }
+                }
+              }
+            });
+          }
+        }
+      }
+      return updateState(state, {});
     }
 
     case UPDATE_JOB_DESCRIPTION: {

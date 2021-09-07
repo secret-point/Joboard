@@ -919,7 +919,7 @@ describe("Test for Application Actions", () => {
     mockActionsPartial();
     mockErrorActionsPartial();
 
-
+    payload.data.application.shift = {};
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
@@ -986,7 +986,7 @@ describe("Test for Application Actions", () => {
     mockActionsPartial();
     mockErrorActionsPartial();
 
-
+    payload.data.application.schedule = {}
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
