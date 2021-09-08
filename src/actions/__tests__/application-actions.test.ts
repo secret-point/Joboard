@@ -928,7 +928,7 @@ describe("Test for Application Actions", () => {
     await actions.onUpdateShiftSelectionSelfService(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(0);
     expect(onUpdateError).toBeCalledTimes(1);
@@ -999,7 +999,7 @@ describe("Test for Application Actions", () => {
     await actions.onUpdateShiftSelectionSelfServiceDS(payload)(store.dispatch);
 
     //TODO: verify calls for candidateAppService
-    expect(store.getActions().length).toBe(2);
+    expect(store.getActions().length).toBe(3);
     expect(hasAction(store.getActions(), actions.UPDATE_APPLICATION)).toBe(false);
     expect(onUpdatePageId).toBeCalledTimes(0);
     expect(onUpdateError).toBeCalledTimes(1);

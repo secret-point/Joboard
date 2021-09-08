@@ -991,7 +991,7 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
   try {
     const { application, selectedShift } = payload.data;
     const { urlParams } = payload;
-    const currentShift = payload.data.application.jobSelected.headCountRequestId;
+    const currentShift = payload?.data?.application?.jobSelected?.headCountRequestId;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation.updateScheduleReason");
     if (!isNil(currentShift)
@@ -1181,7 +1181,7 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
     const { application } = payload.data;
     const { urlParams } = payload;
     const selectedSchedule = payload.data.job.selectedChildSchedule;
-    const currentSchedule = payload.data.application.jobScheduleSelected.scheduleId;
+    const currentSchedule = payload?.data?.application?.jobScheduleSelected?.scheduleId;
 
     let updateScheduleReason = propertyOf(payload.data.output)("update-shift-confirmation-ds.updateScheduleReason");
     if (!isNil(currentSchedule)

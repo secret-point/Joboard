@@ -798,8 +798,8 @@ const AppReducer = (state = initialState, action: IAction) => {
         data: {
           application: {
             jobScheduleSelected: {
-              scheduleId: {
-                $set: payload.scheduleId
+              $set: {
+                scheduleId: payload.scheduleId
               }
             }
           }
