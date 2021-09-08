@@ -105,14 +105,6 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
             scheduleId: applicationResponseFromHP.scheduleId
           }
         });
-      } else {
-        //remove schedule data from BB application as HiringPortal does not have a schedule
-        dispatch({
-          type: UPDATE_SCHEDULE_ID,
-          payload: {
-            scheduleId: null
-          }
-        });
       }
 
       dispatch({
@@ -122,6 +114,16 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
           currentState: applicationResponseFromBB.currentState
         }
       });
+
+      if (window.localStorage.getItem("page") === "no-shift-selected-ds") {
+        //remove schedule data from BB application as HiringPortal does not have a schedule
+        dispatch({
+          type: UPDATE_SCHEDULE_ID,
+          payload: {
+            scheduleId: null
+          }
+        });
+      }
 
       log("Updated state with application data from CandidateAppService and HiringPortal");
       setLoading(false)(dispatch);
