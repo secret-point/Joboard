@@ -997,6 +997,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   const { options } = payload;
+  const { application } = payload.data;
   onRemoveError()(dispatch);
   let filter = constructFilterPayloadSelfService(payload);
   filter.pageFactor = 1;
@@ -1064,6 +1065,10 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
           applicationId,
           filter
         );
+
+        if (application != null && application.jobSelected != null) {
+          filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
+        }
 
         pageFactor = response.pageFactor;
         log("Applying sorting if user selected sort", {
