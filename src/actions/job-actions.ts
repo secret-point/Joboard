@@ -622,7 +622,7 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
           });
           filter = constructFilterPayloadSelfService(payload);
         }
-        const response = await new JobService().getAllSchedules({
+        const response = await new JobService().getAllSchedulesWithStartDateAvailability({
           jobId,
           applicationId,
           filter
