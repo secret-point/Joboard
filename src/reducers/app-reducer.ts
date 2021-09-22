@@ -490,12 +490,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case ON_GET_CANDIDATE: {
-      const candidate = {...payload, loginStatus:true};
-
-      //add a boolean hasPreferredFirstName and hasPreferredLastName
-      candidate.hasPreferredLastName = !!candidate.preferredLastName;
-      candidate.hasPreferredFirstName = !!candidate.preferredFirstName;
-
+      const candidate = {...payload, loginStatus:true}
       return updateState(state, {
         data: {
           candidate: {
