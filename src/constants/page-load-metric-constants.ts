@@ -442,35 +442,35 @@ const geoclusterPayloadDefault = {
   values: [
     {
       key: "ID",
-      value: "application.schedule.geoClusterId"
+      value: "job.consentInfo.geoClusterId"
     },
     {
       key: "name",
-      value: "application.schedule.geoClusterName"
+      value: "job.consentInfo.geoClusterName"
     },
     {
       key: "description",
-      value: "application.schedule.description"
+      value: "job.consentInfo.geoClusterDescription"
     },
     {
       key: "country",
-      value: "application.schedule.country"
+      value: "job.consentInfo.country"
     },
     {
       key: "region",
-      value: "application.schedule.region"
+      value: "job.consentInfo.geoClusterRegion"
     },
     {
       key: "zone",
-      value: "application.schedule.zone"
+      value: "job.consentInfo.geoClusterZone"
     },
     {
       key: "locationCode",
-      value: "application.schedule.locationCode"
+      value: "job.consentInfo.locationCode"
     },
     {
       key: "loEnable",
-      value: "application.schedule.loEnable"
+      value: "job.consentInfo.loEnable"
     }
   ]
 };
