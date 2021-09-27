@@ -528,7 +528,6 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
-  console.log(payload);
 
   const jobId =
     (payload.urlParams.jobId as string) ||
@@ -536,9 +535,6 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
     payload.data.job.consentInfo.jobId;
   if (jobId) {
     try {
-      if (!payload.data.job.selectedChildSchedule) {
-        onSelectedSchedule(jobId)(dispatch);
-      }
       log(`getting job description for job ${jobId}`);
       const response = await new JobService().getJobInfo(jobId);
       dispatch({
