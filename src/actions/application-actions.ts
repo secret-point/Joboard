@@ -48,6 +48,7 @@ export const SET_SELECTED_SHIFT = "SET_SELECTED_SHIFT";
 export const SET_SELECTED_SCHEDULE = "SET_SELECTED_SCHDULE";
 export const REMOVE_CANCELLATION_RESCHEDULE_QUESTION = "REMOVE_CANCELLATION_RESCHEDULE_QUESTION";
 export const UPDATE_SCHEDULE_ID = "UPDATE_SCHEDULE_ID";
+export const DISABLE_CONFIRMATION_BUTTON = "DISABLE_CONFIRMATION_BUTTON";
 
 export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const { appConfig } = data;
@@ -1075,8 +1076,20 @@ export const onUpdateShiftSelectionSelfService = (payload: IPayload) => async (
           "The appointment you selected is no longer available. Please select a different time."
       ) {
         errorMessage =
-          "The schedule you selected is no longer available. Please select a different option.";
+            "The schedule you selected is no longer available. Please select a different option.";
+        dispatch({
+          type: DISABLE_CONFIRMATION_BUTTON
+        });
         sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
+      } else if (
+          ex?.response?.data?.errorMessage &&
+          ex.response.data.errorMessage === "Candidate already hired."
+      ) {
+        errorMessage = "You have recently been hired for this application, your shift cannot be changed. " +
+            "Please reach out at https://www.amazondelivers.jobs/contactus to change your shift";
+        dispatch({
+          type: DISABLE_CONFIRMATION_BUTTON
+        });
       } else {
         errorMessage =
           ex?.response?.data?.errorMessage || "Failed to update application";
@@ -1265,6 +1278,9 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
       ) {
         errorMessage =
             "The schedule you selected is no longer available. Please select a different option.";
+        dispatch({
+          type: DISABLE_CONFIRMATION_BUTTON
+        });
         sendAdobeAnalytics("fail-update-shift-schedule-full-self-service");
       } else if (
           ex?.response?.data?.errorMessage &&
@@ -1273,7 +1289,19 @@ export const onUpdateShiftSelectionSelfServiceDS = (payload: IPayload) => async 
         errorMessage = "Sorry, we are having some technical difficulties. Because of this, you have lost your " +
             "previously confirmed schedule and start date. Please exit, click on \"Schedule your shift today!\", and " +
             "select a schedule and start date.";
+        dispatch({
+          type: DISABLE_CONFIRMATION_BUTTON
+        });
         sendAdobeAnalytics("fail-update-shift-schedule-unsuccessful-reversion-self-service");
+      } else if (
+          ex?.response?.data?.errorMessage &&
+          ex.response.data.errorMessage === "Candidate already hired."
+      ) {
+        errorMessage = "You have recently been hired for this application, your schedule cannot be changed. " +
+            "Please reach out at https://www.amazondelivers.jobs/contactus to change your schedule";
+        dispatch({
+          type: DISABLE_CONFIRMATION_BUTTON
+        });
       } else {
         errorMessage =
             ex?.response?.data?.errorMessage || "Failed to update application";

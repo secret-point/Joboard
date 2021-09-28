@@ -53,7 +53,8 @@ import {
   SET_SELECTED_SHIFT,
   SET_SELECTED_SCHEDULE,
   REMOVE_CANCELLATION_RESCHEDULE_QUESTION,
-  UPDATE_SCHEDULE_ID
+  UPDATE_SCHEDULE_ID,
+  DISABLE_CONFIRMATION_BUTTON
 } from "../actions/application-actions";
 import cloneDeep from "lodash/cloneDeep";
 import merge from "lodash/merge";
@@ -652,6 +653,27 @@ const AppReducer = (state = initialState, action: IAction) => {
               }
             });
           }
+        }
+      }
+      return updateState(state, {});
+    }
+
+    case DISABLE_CONFIRMATION_BUTTON: {
+      let components = cloneDeep(state.pageConfig.content.components);
+
+      for (let i = components.length - 1; i >= 0; i--) {
+        let component = components[i];
+        if (component.properties.id === "Select-job") {
+          component.properties.disabled = true;
+          return updateState(state, {
+            pageConfig: {
+              content: {
+                components: {
+                  $set: components
+                }
+              }
+            }
+          });
         }
       }
       return updateState(state, {});
