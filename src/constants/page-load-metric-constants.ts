@@ -153,7 +153,7 @@ const dragonstoneJobPayloadDefault = {
       value: "job.availableSchedules.schedules"
     },
     {
-      key: "source",
+      key: "dataSource",
       value: "job.consentInfo.dataSource"
     }
   ]
