@@ -31,7 +31,7 @@ import {
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
 import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-import { checkIfIsLegacy, checkIfIsCSS } from "../helpers/utils";
+import { checkIfIsLegacy, checkIfIsCSS, get3rdPartyFromQueryParams } from "../helpers/utils";
 import ICandidateApplication from "../@types/ICandidateApplication";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -60,7 +60,12 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   delete queryParams.page;
   const queryStr = queryString.stringify(queryParams);
   const redirectUrl = `${origin}/?page=create-application&${queryStr}`;
-  let url = `${appConfig.authenticationURL}/?redirectUrl=${encodeURIComponent(
+  let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  debugger
+  let url = `${appConfig.authenticationURL.replace(
+    "{queryString}",
+    `${queryStringFor3rdParty}`
+  )}/?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;
 

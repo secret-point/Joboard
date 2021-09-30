@@ -22,10 +22,6 @@ export const convertPramsToJson = (params: string) => {
 };
 
 export const launchAuthentication = () => {
-  if (window.location.pathname.startsWith("/ds/")) {
-    launchAuthenticationDS();
-    return;
-  }
   const queryParamsInSession = window.sessionStorage.getItem("query-params");
   const queryParams = queryParamsInSession
     ? JSON.parse(queryParamsInSession)
@@ -61,22 +57,16 @@ export const launchAuthentication = () => {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }
 
+  let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  debugger
   let url = `${
-    state.app.appConfig.authenticationURL
+    state.app.appConfig.authenticationURL.replace(
+      "{queryString}",
+      `${queryStringFor3rdParty}`
+    )
   }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
-
-export const launchAuthenticationDS = () => {
-  /* Build auth URL using this URL for redirect */
-  const state = window.reduxStore.getState();
-  const url = `${
-    state.app.appConfig.authenticationURL
-  }/?redirectUrl=${encodeURIComponent(window.location.origin + window.location.pathname + window.location.search)}`;
-
-  /* Redirect to auth */
-  window.location.assign(url);
-}
 
 export const isJson = (obj: string) => {
   try {
@@ -169,3 +159,22 @@ export const checkIfIsDGSCSS = (page : string) => {
 export const checkIfIsCSS = (page : string) => {
   return checkIfIsDGSCSS(page) || checkIfIsNonDGSCSS(page);
 }
+
+export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: string): string => {
+  let queryString = '';
+
+  // These keys are 3rd Party params we allowed to pass with redirectUrl after login.
+  const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "piq_source"];
+
+  Object.keys(queryParams).forEach((key) => {
+      if (includedKeyList.includes(key)) {
+          queryString += `&${key}=${queryParams[key] || ''}`;
+      }
+  });
+
+  if(notationOverride && queryString.length > 0){
+      return `${notationOverride}${queryString.substring(1)}`;
+  } else {
+      return queryString;
+  }
+};
