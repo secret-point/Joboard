@@ -491,7 +491,15 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case ON_GET_CANDIDATE: {
-      const candidate = {...payload, loginStatus:true}
+      const candidate = {...payload, loginStatus:true};
+
+      const { preferredFirstName, preferredLastName, firstName, lastName } = candidate;
+      const isPreferredNameEnabled = state.appConfig?.featureList?.PREFERRED_NAME?.isAvailable;
+
+      //add shown name value to be displayed in config between preferred names, legal names
+      candidate.shownFirstName = preferredFirstName && isPreferredNameEnabled ? preferredFirstName : firstName;
+      candidate.shownLastName = preferredLastName && isPreferredNameEnabled ? preferredLastName : lastName;
+
       return updateState(state, {
         data: {
           candidate: {
