@@ -5,6 +5,7 @@ import map from "lodash/map";
 import filter from "lodash/filter";
 import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
+import { CS_DOMAIN_LIST } from "../constants";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -52,13 +53,13 @@ export const launchAuthentication = () => {
   }
   let redirectUrl = origin;
   const isLegacy = checkIfIsLegacy();
-  redirectUrl = `${redirectUrl}/?page=${currentPage}&${isLegacy? "requisitionId" : "jobId"}=${hash[1]}&applicationId=${hash[2]}${queryStr}`;
+  redirectUrl = `${redirectUrl}${pathByDomain()}/?page=${currentPage}&${isLegacy? "requisitionId" : "jobId"}=${hash[1]}&applicationId=${hash[2]}${queryStr}`;
   if (hash.length === 4) {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }
 
   let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
-  debugger
+
   let url = `${state.app.appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
@@ -111,6 +112,17 @@ export const checkIfIsLegacy = () => {
   const queryParams = queryString.parse(window.location.search);
   const isLegacy = !queryParams.jobId;
   return isLegacy;
+}
+
+export const checkIfIsCSRequest = () => {
+  const origin = window.location.origin;
+  const isCSRequest = CS_DOMAIN_LIST.includes(origin);
+  return isCSRequest;
+}
+
+export const pathByDomain = (url: string = "") => {
+  const csPath = checkIfIsCSRequest()? "/application" : "";
+  return `${csPath}${url}`
 }
 
 export const NonDGSCandidateSelfServicePage = [

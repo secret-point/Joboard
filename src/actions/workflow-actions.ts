@@ -11,6 +11,7 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { log, logError } from "../helpers/log-helper";
 import _get from "lodash/get";
+import { pathByDomain } from "../helpers/utils";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -109,7 +110,7 @@ export const sendHeartBeatWorkflow = () => {
       );
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign("/#/timeout");
+      window.location.assign(pathByDomain("/#/timeout"));
     }
   } else {
     window.hearBeatTime = moment().toISOString();
@@ -122,7 +123,7 @@ export const sendHeartBeatWorkflow = () => {
       );
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign("/#/timeout");
+      window.location.assign(pathByDomain("/#/timeout"));
     }
   }
 };
@@ -246,12 +247,12 @@ export const onTimeOut = () => {
       setWorkflowLoading(false)(window.reduxStore.dispatch);
       const adobeDataLayer = getDataForEventMetrics("session-timeout");
       sendDataLayerAdobeAnalytics(adobeDataLayer);
-      window.location.assign("/#/timeout");
+      window.location.assign(pathByDomain("/#/timeout"));
     }
   } else {
     setWorkflowLoading(false)(window.reduxStore.dispatch);
     const adobeDataLayer = getDataForEventMetrics("session-timeout");
     sendDataLayerAdobeAnalytics(adobeDataLayer);
-    window.location.assign("/#/timeout");
+    window.location.assign(pathByDomain("/#/timeout"));
   }
 };

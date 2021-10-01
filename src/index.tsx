@@ -18,7 +18,7 @@ import domLoaded from "dom-loaded";
 import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
-import { checkIfIsLegacy, objectToQuerystring } from "./helpers/utils";
+import { checkIfIsLegacy, objectToQuerystring, pathByDomain } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
 import "./i18n";
@@ -90,7 +90,7 @@ getInitialData()
       /* jobId passed as requisitionId; forward */
       delete queryParams["requisitionId"];
       queryParams["jobId"] = requisitionId;
-      window.location.assign(window.location.pathname + "?" + queryString.stringify(queryParams));
+      window.location.assign(pathByDomain(window.location.pathname + "?" + queryString.stringify(queryParams)));
       return;
     }
     const jobId = queryParams["jobId"];
@@ -118,7 +118,7 @@ getInitialData()
         : appHashUrl;
 
       log(`appHashUrl="${appHashUrl}"`);
-      window.location.assign(appHashUrl);
+      window.location.assign(pathByDomain(appHashUrl));
     }
 
     if (!isLegacy && !isNil(page) && !isNil(jobId)) {
@@ -143,7 +143,7 @@ getInitialData()
         ? `${appHashUrl}/${applicationId}/${misc}`
         : appHashUrl;
 
-      window.location.assign(appHashUrl);
+      window.location.assign(pathByDomain(appHashUrl));
     }
 
     if (!isNil(token)) {

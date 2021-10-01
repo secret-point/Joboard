@@ -1,12 +1,13 @@
 import axios, { AxiosInstance } from "axios";
 import IPageOrderResponse from "../@types/IPageOrderResponse";
+import { pathByDomain } from "../helpers/utils";
 
 export default class PageService {
   private readonly axiosInstance: AxiosInstance;
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "/api/page-config",
+      baseURL: pathByDomain("/api/page-config"),
       headers: {
         "Cache-Control": "no-cache"
       }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import isNull from "lodash/isNull";
-import { launchAuthentication } from "./utils";
+import { launchAuthentication, pathByDomain } from "./utils";
 
 export const getAccessToken = () => {
   const accessToken = window.localStorage.getItem("accessToken");
@@ -31,7 +31,7 @@ const errorHandler = (error: any) => {
   if (error.response && error.response.status === 401) {
     launchAuthentication();
   } else if (error.response && error.response.status === 403) {
-    window.location.assign("/#/403");
+    window.location.assign(pathByDomain("/#/403"));
   }
   return Promise.reject({ ...error });
 };
@@ -52,7 +52,7 @@ export const axiosHelper = (baseUrl: string = "/api", headers: any = {}) => {
   }
 
   const axiosInstance = axios.create({
-    baseURL: baseUrl,
+    baseURL: pathByDomain(baseUrl),
     headers: {
       ...authorizationObject,
       ...headers

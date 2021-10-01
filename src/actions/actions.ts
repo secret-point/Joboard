@@ -14,7 +14,7 @@ import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
 import { log, logError } from "../helpers/log-helper";
 import i18n from "../i18n";
-import { checkIfIsLegacy } from "../helpers/utils";
+import { checkIfIsCSRequest, checkIfIsLegacy } from "../helpers/utils";
 import queryString from "query-string";
 import {REMOVE_MESSAGE} from "./requisition-actions";
 import {REMOVE_CANCELLATION_RESCHEDULE_QUESTION} from "./application-actions";
@@ -87,8 +87,10 @@ export const onRedirect = (payload: any) => async (dispatch: Function) => {
 
 export const onRedirectToASHChecklist = (payload: IPayload): void => {
   const isLegacy = checkIfIsLegacy();
+  const isCSRequest = checkIfIsCSRequest();
+  const ASHUrl = isCSRequest? payload.appConfig.ASHChecklistURLCS : payload.appConfig.ASHChecklistURL;
   const { requisitionId, jobId } = payload.urlParams
-  const ASHChecklistURL = payload.appConfig.ASHChecklistURL.replace(
+  const ASHChecklistURL = ASHUrl.replace(
     "{applicationId}",
     payload.urlParams.applicationId
   ).replace("{requisitionId}", (isLegacy? requisitionId : jobId) as string);

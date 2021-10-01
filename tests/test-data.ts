@@ -75,6 +75,7 @@ export const TEST_APP_CONFIG: any = {
   dashboardUrl: TEST_URL,
   stepFunctionEndpoint: TEST_URL,
   ASHChecklistURL: TEST_URL,
+  ASHChecklistURLCS: TEST_URL,
   defaultDaysHoursFilter: [],
   defaultAvailableFilter: {
     filter: {

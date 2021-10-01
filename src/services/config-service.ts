@@ -1,12 +1,13 @@
 import axios, { AxiosInstance } from "axios";
 import Axios from "axios";
+import { pathByDomain } from "../helpers/utils";
 
 export default class ConfigService {
   readonly axiosInstance: AxiosInstance;
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "/api/config"
+      baseURL: pathByDomain("/api/config")
     });
   }
 
