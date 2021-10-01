@@ -59,12 +59,7 @@ export const launchAuthentication = () => {
 
   let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
   debugger
-  let url = `${
-    state.app.appConfig.authenticationURL.replace(
-      "{queryString}",
-      `${queryStringFor3rdParty}`
-    )
-  }/?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+  let url = `${state.app.appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
 

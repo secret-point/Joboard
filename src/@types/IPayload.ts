@@ -419,6 +419,7 @@ export interface AppConfig {
   defaultAvailableFilter: AvailableFilter;
   defaultAvailableFilterDS: AvailableFilter;
   featuresList?: any;
+  CSDomain: string;
 }
 
 export interface PageOrder {

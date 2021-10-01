@@ -138,7 +138,7 @@ describe("Test for Application Actions", () => {
   test("Test on start application", async () => {
     jest.spyOn(window.location, "assign").mockImplementation(l => {
       expect(l).toEqual(
-        `http://auth-url/?redirectUrl=http%3A%2F%2Flocalhost%2F%3Fpage%3Dcreate-application%26`
+        `https://hiring.amazon.com/app#/login?redirectUrl=http%3A%2F%2Flocalhost%2F%3Fpage%3Dcreate-application%26`
       );
     });
     const store = getStore();

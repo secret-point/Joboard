@@ -23,7 +23,8 @@ describe("Test <RedirectPage/>", () => {
           application: {}
         },
         appConfig: {
-          dashboardUrl: "http://sampleurl"
+          dashboardUrl: "http://sampleurl",
+          CSDomain:"https://hiring.amazon.com"
         }
       }
     };

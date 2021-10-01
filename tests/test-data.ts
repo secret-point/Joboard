@@ -13,7 +13,7 @@ export const TEST_KEY = "test-key";
 export const TEST_STEP_ID = "job-opportunities";
 export const TEST_HCR_ID = "test-hcr-id";
 export const TEST_SCHEDULE_ID = "test-schedule-id";
-
+export const TEST_CS_DOMAIN = "https://hiring.amazon.com";
 
 
 export const TEST_CANDIDATE: any = {
@@ -93,7 +93,8 @@ export const TEST_APP_CONFIG: any = {
         }
       }
     }
-  }
+  },
+  CSDomain: TEST_CS_DOMAIN
 }
 export const TEST_PAYLOAD: any = {
   output: {}, 
@@ -133,6 +134,9 @@ export const TEST_REDUX_STORE: any = {
         applicationId: TEST_APPLICATION_ID,
         parentRequisitionId: TEST_REQUISITION_ID
       }
+    },
+    appConfig:{
+      CSDomain: "https://hiring.amazon.com"
     }
   }
 }
