@@ -110,7 +110,7 @@ export const sendHeartBeatWorkflow = () => {
       );
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign(pathByDomain("/#/timeout"));
+      window.location.assign(`${pathByDomain()}/#/timeout`);
     }
   } else {
     window.hearBeatTime = moment().toISOString();
@@ -123,7 +123,7 @@ export const sendHeartBeatWorkflow = () => {
       );
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign(pathByDomain("/#/timeout"));
+      window.location.assign(`${pathByDomain()}/#/timeout`);
     }
   }
 };
@@ -247,12 +247,12 @@ export const onTimeOut = () => {
       setWorkflowLoading(false)(window.reduxStore.dispatch);
       const adobeDataLayer = getDataForEventMetrics("session-timeout");
       sendDataLayerAdobeAnalytics(adobeDataLayer);
-      window.location.assign(pathByDomain("/#/timeout"));
+      window.location.assign(`${pathByDomain()}/#/timeout`);
     }
   } else {
     setWorkflowLoading(false)(window.reduxStore.dispatch);
     const adobeDataLayer = getDataForEventMetrics("session-timeout");
     sendDataLayerAdobeAnalytics(adobeDataLayer);
-    window.location.assign(pathByDomain("/#/timeout"));
+    window.location.assign(`${pathByDomain()}/#/timeout`);
   }
 };

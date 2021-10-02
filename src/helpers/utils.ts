@@ -120,9 +120,9 @@ export const checkIfIsCSRequest = () => {
   return isCSRequest;
 }
 
-export const pathByDomain = (url: string = "") => {
+export const pathByDomain = () => {
   const csPath = checkIfIsCSRequest()? "/application" : "";
-  return `${csPath}${url}`
+  return csPath
 }
 
 export const NonDGSCandidateSelfServicePage = [

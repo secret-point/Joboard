@@ -7,7 +7,7 @@ export default class ConfigService {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: pathByDomain("/api/config")
+      baseURL: `${pathByDomain()}/api/config`
     });
   }
 

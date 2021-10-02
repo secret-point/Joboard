@@ -61,7 +61,7 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   const queryStr = queryString.stringify(queryParams);
   const redirectUrl = `${origin}/?page=create-application&${queryStr}`;
   let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
-  debugger
+  
   let url = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(
     redirectUrl
   )}`;

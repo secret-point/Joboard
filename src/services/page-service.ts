@@ -7,7 +7,7 @@ export default class PageService {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: pathByDomain("/api/page-config"),
+      baseURL: `${pathByDomain()}/api/page-config`,
       headers: {
         "Cache-Control": "no-cache"
       }
