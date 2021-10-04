@@ -4,7 +4,7 @@ import { onAction } from "../../actions";
 import { withRouter } from "react-router-dom";
 import find from "lodash/find";
 import cloneDeep from "lodash/cloneDeep";
-import { checkIfIsLegacy } from "../../helpers/utils";
+import { checkIfIsLegacy, parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
 import queryString from "query-string";
 
 const actions = {
@@ -34,7 +34,7 @@ const getConfig = (config: any, ownProps: any) => {
 const mapStateToProps = (state: any, ownProps: any) => {
   let config = getConfig(state.app.pageConfig, ownProps);
   const isLegacy = checkIfIsLegacy();
-  const urlParams = queryString.parse(window.location.search);
+  const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
 
   return {
     ...config,

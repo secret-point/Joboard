@@ -29,6 +29,7 @@ import {GET_APPLICATION, JobSelectedDS, sendAdobeAnalytics, UPDATE_APPLICATION} 
 import { NO_APPLICATION_ID } from "../constants/error-messages";
 import { completeTask } from "./workflow-actions";
 import queryString from "query-string";
+import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 
 export const GET_JOB_INFO = "GET_JOB_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -162,7 +163,6 @@ export const onGetAllSchedules = (payload: IPayload) => async (
     payload: true
   });
   const jobId = payload.urlParams.jobId as string;
-  // const jobId = payload.urlParams?.jobId;
   const applicationId = payload.urlParams?.applicationId;
   const storedApplicationId = window.sessionStorage.getItem("applicationId");
   if (!applicationId && storedApplicationId) {
@@ -989,7 +989,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
     }
   } else {
     // Go to job list if any of (jobId && applicationId && scheduleId) is missing
-    const queryParams = queryString.parse(window.location.search);
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
     window.history.replaceState(
       {},
       document.title,

@@ -6,6 +6,7 @@ import filter from "lodash/filter";
 import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
 import { CS_DOMAIN_LIST } from "../constants";
+import { isArray } from "lodash";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -109,7 +110,7 @@ export const getMetricValues = (
 };
 
 export const checkIfIsLegacy = () => {
-  const queryParams = queryString.parse(window.location.search);
+  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
   const isLegacy = !queryParams.jobId;
   return isLegacy;
 }
@@ -185,3 +186,59 @@ export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: 
       return queryString;
   }
 };
+
+export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
+  const parsedQueryParams = {...queryParams};
+  Object.keys(parsedQueryParams).forEach((key: string) => {
+    let item = parsedQueryParams[key];
+    if( isArray(item) && item.length > 0){
+      parsedQueryParams[key] = item[0];
+    }
+    if (key === "jobId"){
+      parsedQueryParams[key] = jobIdSanitizer(parsedQueryParams[key]);
+    } else if(key === "requisitionId"){
+      parsedQueryParams[key] = requisitionIdSanitizer(parsedQueryParams[key]);
+    }
+  });
+  return parsedQueryParams;
+}
+
+export const jobIdSanitizer = (jobId: string) => {
+  let rawJobId = decodeURIComponent(jobId);
+  let sanitizedJobId = rawJobId;
+  // Check ?
+  if(rawJobId.includes("?")){
+    const items = rawJobId.split("?");
+    items.forEach((item:string)=>{
+      if(item.includes('JOB')){
+        sanitizedJobId = item;
+      }
+    })
+  }
+  // Check &
+  if(sanitizedJobId.includes("&")){
+    const items = rawJobId.split("&");
+    items.forEach((item:string)=>{
+      if(item.includes('JOB')){
+        sanitizedJobId = item;
+      }
+    })
+  }
+  return sanitizedJobId;
+}
+
+export const requisitionIdSanitizer = (jobId: string) => {
+  let rawJobId = decodeURIComponent(jobId);
+  let sanitizedJobId = rawJobId;
+  // Check ?
+  if(rawJobId.includes("?")){
+    const items = rawJobId.split("?");
+    sanitizedJobId = items[0];
+  }
+  // Check &
+  if(sanitizedJobId.includes("&")){
+    const items = rawJobId.split("&");
+    sanitizedJobId = items[0];
+  }
+  return sanitizedJobId;
+}

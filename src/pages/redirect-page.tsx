@@ -7,7 +7,7 @@ import isEmpty from "lodash/isEmpty";
 import { onUpdatePageId } from "../actions/actions";
 import { IGNORE_PAGE_TO_STORE_LOCAL } from "../constants";
 import { log } from "../helpers/log-helper";
-import { checkIfIsLegacy } from "../helpers/utils";
+import { checkIfIsLegacy, parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import queryString from "query-string";
 
 interface RedirectPageProps {
@@ -23,7 +23,7 @@ const RedirectPage: React.FC<RedirectPageProps> = ({
 }) => {
   const [redirectPath, setRedirectPath] = useState<string>("");
   const isLegacy = checkIfIsLegacy();
-  const urlParams = queryString.parse(window.location.search);
+  const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
   useEffect(() => {
     const { page, requisitionId, applicationId, jobId } = isLegacy? match.params : {...match.params, ...urlParams, requisitionId: null} as any;
     let path = `/app/${isLegacy? requisitionId : jobId}`;

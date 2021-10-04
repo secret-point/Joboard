@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { match } from "react-router";
-import { checkIfIsLegacy } from "../../helpers/utils";
+import { checkIfIsLegacy, parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
 import queryString from "query-string";
 
 type InitialLoadProps = {
@@ -19,7 +19,7 @@ const InitialLoad: React.FC<InitialLoadProps> = ({
   data
 }) => {
   const isLegacy = checkIfIsLegacy();
-  const urlParams = queryString.parse(window.location.search);
+  const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
   useEffect(() => {
     if (pageConfig.initialLoad) {
       const payload: any = {

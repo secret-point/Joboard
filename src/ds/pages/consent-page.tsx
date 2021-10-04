@@ -14,6 +14,7 @@ import FlyOut from "../../components/flyout";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { Header } from "../../components/header";
+import { parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
 
 // the props supported on the <DragonStoneApp/> component
 type Props = {};
@@ -28,9 +29,9 @@ const ConsentPage: React.FunctionComponent<Props> = () => {
   const applicationId = useSelector(selectAppId);
 
   const location = useLocation<QueryParams>();
-  const { jobId, scheduleId } = queryString.parse(
+  const { jobId, scheduleId } = parseQueryParamsArrayToSingleItem(queryString.parse(
     location.search
-  ) as QueryParams;
+  )) as QueryParams;
 
   /* TODO: Move to a separate file */
   const createApplication = async () => {

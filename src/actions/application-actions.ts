@@ -31,7 +31,7 @@ import {
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
 import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-import { checkIfIsLegacy, checkIfIsCSS, get3rdPartyFromQueryParams } from "../helpers/utils";
+import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import ICandidateApplication from "../@types/ICandidateApplication";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
@@ -59,7 +59,7 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
     : {};
   delete queryParams.page;
   const queryStr = queryString.stringify(queryParams);
-  const redirectUrl = `${origin}/?page=create-application&${queryStr}`;
+  const redirectUrl = `${origin}${pathByDomain()}/?page=create-application&${queryStr}`;
   let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
   
   let url = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(
@@ -215,7 +215,7 @@ export const onGetApplication = (payload: IPayload) => async (
           candidateResponse?.candidateId || payload.data.candidate.candidateId;
         log("loading workflow if doNotInitiateWorkflow is true in page config");
 
-        const urlParams = queryString.parse(window.location.search);
+        const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
         const isLegacy = checkIfIsLegacy();
         if (isLegacy) {
           loadWorkflow(
@@ -289,7 +289,7 @@ export const onGetApplicationDS = (payload: IPayload) => async (
           currentState: applicationResponse.currentState
         }
       });
-      const urlParams = queryString.parse(window.location.search);
+      const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
 
       if (!options?.doNotInitiateWorkflow) {
         loadWorkflowDS(
@@ -371,7 +371,7 @@ export const createApplication = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   const isLegacy = checkIfIsLegacy();
-  const urlParams = queryString.parse(window.location.search);
+  const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
   const jobId  = urlParams.jobId as string;
   if (isEmpty(payload.data.application)) {
     try {

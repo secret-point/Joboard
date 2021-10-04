@@ -18,7 +18,7 @@ import domLoaded from "dom-loaded";
 import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
-import { checkIfIsLegacy, objectToQuerystring, pathByDomain } from "./helpers/utils";
+import { checkIfIsLegacy, objectToQuerystring, parseQueryParamsArrayToSingleItem, pathByDomain } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
 import "./i18n";
@@ -84,7 +84,7 @@ getInitialData()
     );
 
     const isLegacy = checkIfIsLegacy();
-    const queryParams = queryString.parse(window.location.search);
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
     const requisitionId = queryParams["requisitionId"];
     if (requisitionId?.indexOf("JOB") === 0) {
       /* jobId passed as requisitionId; forward */
