@@ -11,7 +11,7 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { log, logError } from "../helpers/log-helper";
 import _get from "lodash/get";
-import { pathByDomain } from "../helpers/utils";
+import { checkIfIsCSRequest, pathByDomain } from "../helpers/utils";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -74,7 +74,8 @@ export const startOrResumeWorkflow = () => {
       action: "startWorkflow",
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
-      requisitionId: window.stepFunctionService.requisitionId
+      requisitionId: window.stepFunctionService.requisitionId,
+      isCsDomain: checkIfIsCSRequest()
     })
   );
 };
@@ -87,7 +88,8 @@ export const startOrResumeWorkflowDS = () => {
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
       jobId: window.stepFunctionService.jobId,
-      scheduleId: window.stepFunctionService.scheduleId
+      scheduleId: window.stepFunctionService.scheduleId,
+      isCsDomain: checkIfIsCSRequest()
     })
   );
 };
@@ -222,7 +224,8 @@ export const completeTask = (
       employmentType,
       eventSource: "HVH-CA-UI",
       jobSelectedOn,
-      currentWorkflowStep: step
+      currentWorkflowStep: step,
+      isCsDomain: checkIfIsCSRequest()
     };
 
     if (isBackButton) {

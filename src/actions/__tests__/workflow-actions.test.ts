@@ -147,6 +147,7 @@ describe("Test for Application Actions", () => {
         expect(window.stepFunctionService.websocket?.send).toBeCalledTimes(1);
         expect(window.stepFunctionService.websocket?.send).toBeCalledWith(JSON.stringify({
             action: "startWorkflow",
+            isCsDomain: false,
             applicationId: window.stepFunctionService.applicationId,
             candidateId: window.stepFunctionService.candidateId,
             requisitionId: window.stepFunctionService.requisitionId
@@ -186,6 +187,7 @@ describe("Test for Application Actions", () => {
             employmentType: "",
             eventSource: "HVH-CA-UI",
             currentWorkflowStep: "job-opportunities",
+            isCsDomain: false,
             workflowStepName:""
         }));
    });
@@ -205,6 +207,7 @@ describe("Test for Application Actions", () => {
             employmentType: "",
             eventSource: "HVH-CA-UI",
             currentWorkflowStep: "job-opportunities",
+            isCsDomain: false,
             workflowStepName:"contingent-offer"
         }));
 
