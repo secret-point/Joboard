@@ -280,6 +280,24 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
   window.location.assign(appConfig.dashboardUrl);
 };
 
+export const onGoToDashboardOrASH = (payload: IPayload) => (dispatch: Function) => {
+  const source = window.sessionStorage.getItem("source") as string;
+  if (source === 'ASH') {
+    onGoToASH(payload);
+  } else {
+    const { appConfig } = payload;
+    window.location.assign(appConfig.dashboardUrl);
+  }
+};
+
+export const onGoToASH = (payload: IPayload): void => {
+  const ASHUrl = payload.appConfig.ASHChecklistURLCS;
+  const { jobId } = payload.urlParams;
+  const ASHChecklistURL = ASHUrl.replace("{applicationId}", payload.urlParams.applicationId)
+    .replace("{requisitionId}", jobId as string);
+  window.location.assign(ASHChecklistURL);
+};
+
 export const onCompleteTask = (payload: IPayload) => (dispatch: Function) => {
   const { application } = payload.data;
   const { options } = payload;
