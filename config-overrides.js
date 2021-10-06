@@ -1,7 +1,16 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   // The Webpack config to use when compiling your react app for development or production.
   webpack: function (config, env) {
     // ...add your webpack config
+    config.output.filename = 'staticbb/js/[name].js';
+    config.output.chunkFilename = 'staticbb/js/[name].chunk.js';
+    config.plugins.push(new MiniCssExtractPlugin({
+      filename: 'staticbb/css/[name].css',
+      chunkFilename: 'staticbb/css/[name].chunk.css',
+      })
+    );
     return config;
   },
   paths: function (paths, env) {

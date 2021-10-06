@@ -1,0 +1,25 @@
+{
+  "short_name": "AmazonDelivers.Jobs",
+  "name": "Amazon Delivers Jobs",
+  "icons": [
+    {
+      "src": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/favicon.ico",
+      "sizes": "64x64 48X48 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
