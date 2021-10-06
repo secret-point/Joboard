@@ -6,6 +6,13 @@ module.exports = {
     // ...add your webpack config
     config.output.filename = 'staticbb/js/[name].js';
     config.output.chunkFilename = 'staticbb/js/[name].chunk.js';
+    // Override the existed CSS setting and set new one.
+    config.plugins.forEach( (existed, index) => {
+      if( existed instanceof MiniCssExtractPlugin) {
+          //delete existed;
+          config.plugins.splice(index,1);
+      }              
+    })
     config.plugins.push(new MiniCssExtractPlugin({
       filename: 'staticbb/css/[name].css',
       chunkFilename: 'staticbb/css/[name].chunk.css',
