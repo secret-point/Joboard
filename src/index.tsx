@@ -52,6 +52,15 @@ getInitialData()
       type: "LOAD_INIT_DATA",
       payload: { ...data }
     });
+    // Redirect to csApplication path if it is not 
+    const featureList = data[0]?.featureList;
+    const CSDomain = data[0]?.CSDomain;
+    const currentOrigin = window.location.origin;
+    if(currentOrigin !== CSDomain && featureList?.UNIFIED_DOMAIN?.isAvailable && process.env.NODE_ENV === "production"){
+      const csApplicationURL = window.location.href.replace(currentOrigin, `${CSDomain}/application`);
+      window.location.href = csApplicationURL;
+      return;
+    }
 
     /********** Disable back button for HVHBB-Backlog-3812 ***********
      * This manipulates the browser history to disable the back button because
