@@ -86,6 +86,10 @@ getInitialData()
     const isLegacy = checkIfIsLegacy();
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
     const requisitionId = queryParams["requisitionId"];
+    if (queryParams["iframe"]){
+      const newURL = window.location.href.replace("&iframe=true","");
+      window.parent.window.location.href = newURL;
+    }
     if (requisitionId?.indexOf("JOB") === 0) {
       /* jobId passed as requisitionId; forward */
       delete queryParams["requisitionId"];
