@@ -1140,7 +1140,8 @@ describe("Test for Application Actions", () => {
     //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
     const actionLength = store.getActions().length;
     expect(actionLength).toBe(5);
-    expect(store.getActions()[actionLength - 2].type).toBe(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 3].type).toBe(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 2].type).toBe(actions.UPDATE_SCHEDULE_ID);
     expect(store.getActions()[actionLength - 1].type).toBe(ON_SET_LOADING);
     expect(store.getActions()[actionLength - 1].payload).toBe(false);
   });

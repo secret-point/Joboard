@@ -102,20 +102,15 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
           applicationId
       );
 
+      let scheduleIdFromHP = null;
       if (window.localStorage.getItem("page") !== "no-shift-selected-ds") {
         //Hiring portal returns 404 if the application is in schedule RELEASED status
         //So only if current page is not equal to no-shift-selected-ds, execute the followings
         const applicationResponseFromHP = await new CandidateApplicationService().getApplicationSelfServiceDS(
             applicationId
         );
-        onSelectedSchedule(applicationResponseFromHP.scheduleId)(dispatch);
-        //update application data with schedule from HiringPortal
-        dispatch({
-          type: UPDATE_SCHEDULE_ID,
-          payload: {
-            scheduleId: applicationResponseFromHP.scheduleId
-          }
-        });
+        scheduleIdFromHP = applicationResponseFromHP.scheduleId;
+        onSelectedSchedule(scheduleIdFromHP)(dispatch);
       }
 
       dispatch({
@@ -126,15 +121,12 @@ export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
         }
       });
 
-      if (window.localStorage.getItem("page") === "no-shift-selected-ds") {
-        //remove schedule data from BB application as HiringPortal does not have a schedule
-        dispatch({
-          type: UPDATE_SCHEDULE_ID,
-          payload: {
-            scheduleId: null
-          }
-        });
-      }
+      dispatch({
+        type: UPDATE_SCHEDULE_ID,
+        payload: {
+          scheduleId: scheduleIdFromHP
+        }
+      });
 
       log("Updated state with application data from CandidateAppService and HiringPortal");
       setLoading(false)(dispatch);
