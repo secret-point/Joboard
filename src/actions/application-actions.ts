@@ -31,8 +31,9 @@ import {
 } from "../@types/shift-preferences";
 import { MetricData } from "../@types/adobe-metrics";
 import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem } from "../helpers/utils";
+import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem, checkIfIsCSRequest } from "../helpers/utils";
 import ICandidateApplication from "../@types/ICandidateApplication";
+import { getAccessToken } from "../helpers/axios-helper";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -71,7 +72,14 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   });
   const adobeDataMetric = getDataForEventMetrics("start-application");
   sendDataLayerAdobeAnalytics(adobeDataMetric);
-  window.location.assign(url);
+  const accessToken = getAccessToken();
+  if(checkIfIsCSRequest() && appConfig.featureList?.UNIFIED_DOMAIN?.isAvailable && !isNil(accessToken) && !isEmpty(accessToken)){
+    // if unified Domain and already have accessToken, directly start application
+    window.location.assign(redirectUrl);
+  } else {
+    // Go to CS login page
+    window.location.assign(url);
+  }
 };
 
 export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
