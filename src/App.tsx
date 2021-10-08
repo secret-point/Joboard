@@ -17,6 +17,7 @@ import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 import defaultTheme from '@amzn/stencil-react-theme-default';
 import { Colors } from "./constants/stencilThemeOverride";
 import store from "./store";
+import { checkIfIsCSRequest } from "./helpers/utils";
 
 interface IApp {
   showNavbar: boolean;
@@ -46,7 +47,7 @@ const App: React.FC<IApp> = ({
     }}>
       <LoaderContainer />
       <CompleteTaskLoaderContainer />
-      {showNavbar && (
+      {showNavbar && !checkIfIsCSRequest() && (
         <PageHeader hasShadow data-testid="navbar">
           <PageHeaderButton
             data-testid="home-button"

@@ -242,3 +242,28 @@ export const requisitionIdSanitizer = (jobId: string) => {
   }
   return sanitizedJobId;
 }
+
+export const injectCsNavAndFooter = (CSDomain:string) => {
+  const topNav = document.createElement("div");
+  topNav.className = "hvh-widget";
+  topNav.setAttribute("data-hvh-position", "header")
+  document.body.prepend(topNav);
+  const footer = document.createElement("div");
+  footer.id = "f";
+  document.body.appendChild(footer);
+  const head = document.getElementsByTagName("head")[0];
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = true;
+  script.src = `${CSDomain}/app/main.prod.js`;
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href=`${CSDomain}/app/main.prod.css`;
+  head.appendChild(script);
+  head.appendChild(link);
+  fetch(`${CSDomain}/amabot-rest?page=common&res=footer`)
+    .then((res) => res.json())
+    .then((body) => {
+      document.getElementById("f")!.innerHTML = body.contentMap.footer.bodyContent;
+    });
+}
