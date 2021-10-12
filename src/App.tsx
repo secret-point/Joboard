@@ -73,6 +73,7 @@ const App: React.FC<IApp> = ({
         paddingTop="0"
         paddingBottom="0"
         paddingHorizontal="0"
+        style={{marginTop: 16}}
       >
         <MainWithSkipLink>
           {showShiftHoldingMessageBanner && <ContentMessageBanner />}
