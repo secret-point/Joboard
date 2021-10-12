@@ -72,14 +72,8 @@ export const onStartApplication = (data: IPayload) => (dispatch: Function) => {
   });
   const adobeDataMetric = getDataForEventMetrics("start-application");
   sendDataLayerAdobeAnalytics(adobeDataMetric);
-  const accessToken = getAccessToken();
-  if(checkIfIsCSRequest() && appConfig.featureList?.UNIFIED_DOMAIN?.isAvailable && !isNil(accessToken) && !isEmpty(accessToken)){
-    // if unified Domain and already have accessToken, directly start application
-    window.location.assign(redirectUrl);
-  } else {
-    // Go to CS login page
-    window.location.assign(url);
-  }
+  // always go login page to check auth on before create new application
+  window.location.assign(url);
 };
 
 export const onGetApplicationSelfServiceDS = (payload: IPayload) => async (
