@@ -20,6 +20,7 @@ export interface UpdateApplicationRequest {
   applicationId: string;
   payload: any;
   type: string;
+  isCsRequest?: boolean;
 }
 export interface UpdateContingentOffer {
   offerAcceptedTime: string;

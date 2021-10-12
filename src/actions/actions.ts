@@ -169,13 +169,20 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
   const responseTime = Date.now();
   setLoading(true)(dispatch);
   const isLegacy = checkIfIsLegacy();
+  const isCSRequest = checkIfIsCSRequest();
   try {
     log(`Loading page configuration ${page}`);
-    const pageConfig = await new PageService().getPageConfig(`${isLegacy
+    let pageName = isLegacy
       ? page
       : DsPages[page]
         ? DsPages[page]
-        : page}.json`);
+        : page;
+    pageName = !isCSRequest
+      ? pageName
+      : CsPages[pageName]
+        ? CsPages[pageName]
+        : pageName;
+    const pageConfig = await new PageService().getPageConfig(`${pageName}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
       const pageLoadMetric = (window as any).MetricsPublisher?.newChildActionPublisherForMethod(
@@ -429,4 +436,8 @@ export const DsPages: { [key: string]: string } = {
   "rehire-eligibility-status": "rehire-eligibility-status-ds",
   "rehire-not-eligible": "rehire-not-eligible-ds",
   "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only-ds",
+}
+
+export const CsPages: { [key: string]: string } = {
+  "duplicate-national-id": "duplicate-national-id-cs",
 }

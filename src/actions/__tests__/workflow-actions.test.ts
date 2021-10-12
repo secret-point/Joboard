@@ -259,7 +259,7 @@ describe("Test for Application Actions", () => {
         //TODO: how to validate candidateAppService calls
         expect(window.reduxStore.getActions().length).toBe(4);
         expect(hasAction(window.reduxStore.getActions(), UPDATE_APPLICATION)).toBe(true);
-        expect(window.location.href).toBe(`http://localhost/#/${TEST_STEP_ID}/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
+        expect(window.location.href).toBe(`http://localhost/?applicationId=${TEST_APPLICATION_ID}#/${TEST_STEP_ID}/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
     });
 
     //goTostep includes await calls so need to await on action
@@ -272,7 +272,7 @@ describe("Test for Application Actions", () => {
         //TODO: how to validate candidateAppService calls
         expect(window.reduxStore.getActions().length).toBe(3);
         expect(hasAction(window.reduxStore.getActions(), UPDATE_APPLICATION)).toBe(false);
-        expect(window.location.href).toBe(`http://localhost/#/${TEST_STEP_ID}/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
+        expect(window.location.href).toBe(`http://localhost/?applicationId=${TEST_APPLICATION_ID}#/${TEST_STEP_ID}/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
     });
 
     //goTostep includes await calls so need to await on action
@@ -300,6 +300,6 @@ describe("Test for Application Actions", () => {
         //TODO: how to validate candidateAppService calls
         expect(window.reduxStore.getActions().length).toBe(4);
         expect(hasAction(window.reduxStore.getActions(), UPDATE_APPLICATION)).toBe(true);
-        expect(window.location.href).toBe(`http://localhost/#/thank-you/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
+        expect(window.location.href).toBe(`http://localhost/?applicationId=test-app-id#/thank-you/${TEST_REQUISITION_ID}/${TEST_APPLICATION_ID}`);
     });
 });

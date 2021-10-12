@@ -11,7 +11,7 @@ import { getDataForEventMetrics } from "../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../actions/adobe-actions";
 import { log, logError } from "../helpers/log-helper";
 import _get from "lodash/get";
-import { checkIfIsCSRequest, pathByDomain } from "../helpers/utils";
+import { addApplicationIdInUrl, checkIfIsCSRequest, checkIfIsLegacy, pathByDomain } from "../helpers/utils";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -188,10 +188,11 @@ export const goToStep = async (workflowData: WorkflowData) => {
     }
     window.localStorage.setItem("page", stepName);
     log(`update workflow step in local storage as ${stepName}`);
+    addApplicationIdInUrl(application);
     window.reduxStore.dispatch(
       push(
         `/${stepName}/${
-          application.parentRequisitionId
+          checkIfIsLegacy()? application.parentRequisitionId : application.jobScheduleSelected.jobId
         }/${application.applicationId || ""}`
       )
     );

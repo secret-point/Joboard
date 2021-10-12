@@ -7,6 +7,7 @@ import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
 import { CS_DOMAIN_LIST } from "../constants";
 import { isArray } from "lodash";
+import ICandidateApplication from "../@types/ICandidateApplication";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -266,4 +267,26 @@ export const injectCsNavAndFooter = (CSDomain:string) => {
     .then((body) => {
       document.getElementById("f")!.innerHTML = body.contentMap.footer.bodyContent;
     });
+}
+
+export const addApplicationIdInUrl = (application?: ICandidateApplication) => {
+  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));  
+  const currentSearch = window.location.search;
+  let newSearch = currentSearch;
+  let newUrl = window.location.href;
+  if(application && application.applicationId && (!queryParams.applicationId || queryParams.applicationId === 'undefined')){
+    if(isEmpty(queryParams)){
+      newSearch = `?applicationId=${application.applicationId}`
+      newUrl = window.location.href.replace(`${window.location.origin}/`, `${window.location.origin}/${newSearch}`);
+    } else {
+      newSearch = `${currentSearch}&applicationId=${application.applicationId}`
+      newUrl = window.location.href.replace(currentSearch,newSearch);
+    }
+    // replace url params without reload page
+    window.history.replaceState(
+      {},
+      document.title,
+      newUrl
+    );
+  }
 }

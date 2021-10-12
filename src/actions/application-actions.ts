@@ -510,7 +510,8 @@ export const updateApplication = (payload: IPayload) => async (
         {
           type: type,
           applicationId,
-          payload: updateData
+          payload: updateData,
+          isCsRequest: checkIfIsCSRequest()
         }
       );
       dispatch({
