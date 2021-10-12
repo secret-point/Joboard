@@ -852,6 +852,10 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
   const { status } = options;
   try {
     const applicationId = urlParams.applicationId;
+    const jobId = urlParams.jobId;
+    const requisitionId = urlParams.requisitionId;
+    const urlParamsFromSearch = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+    const isLegacy = checkIfIsLegacy();
     if (isNil(applicationId)) {
       throw new Error(NO_APPLICATION_ID);
     }
@@ -872,6 +876,22 @@ export const onUpdateWotcStatus = (payload: IPayload) => async (
     log(
       `Updated application with wtoc status ${status} and update application data in state`
     );
+    if (isLegacy) {
+      loadWorkflow(
+        requisitionId,
+        applicationId,
+        candidateResponse.candidateId,
+        payload.appConfig
+      );
+    } else {
+      loadWorkflowDS(
+        jobId || urlParamsFromSearch.jobId as string || "",
+        response.jobScheduleSelected.scheduleId || urlParamsFromSearch.scheduleId as string || "",
+        response.applicationId,
+        candidateResponse.candidateId,
+        payload.appConfig
+      );
+    }
     setLoading(true)(dispatch);
   } catch (ex) {
     setLoading(false)(dispatch);
