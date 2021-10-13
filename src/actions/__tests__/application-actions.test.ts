@@ -168,11 +168,11 @@ describe("Test for Application Actions", () => {
     await actions.onGetApplication(payload)(store.dispatch);
     //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
     const actionLength = store.getActions().length;
-    expect(actionLength).toBe(4);
-    expect(store.getActions()[actionLength - 2].type).toBe(actions.GET_APPLICATION);
-    expect(store.getActions()[actionLength - 2].payload.application.applicationId).toBe(TEST_APPLICATION_ID);
-    expect(store.getActions()[actionLength - 1].type).toBe(ON_SET_LOADING);
-    expect(store.getActions()[actionLength - 1].payload).toBe(false);
+    expect(actionLength).toBe(5);
+    expect(store.getActions()[actionLength - 3].type).toBe(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 3].payload.application.applicationId).toBe(TEST_APPLICATION_ID);
+    expect(store.getActions()[actionLength - 2].type).toBe(ON_SET_LOADING);
+    expect(store.getActions()[actionLength - 2].payload).toBe(false);
   });
 
   test("Test onGetApplication action with normal behavior and application without shift", async () => {
@@ -187,9 +187,9 @@ describe("Test for Application Actions", () => {
     await actions.onGetApplication(payload)(store.dispatch);
     //to verify: last action: GET_APPLICATION
     const actionLength = store.getActions().length;
-    expect(actionLength).toBe(3);
-    expect(store.getActions()[actionLength - 1].type).toEqual(actions.GET_APPLICATION);
-    expect(store.getActions()[actionLength - 1].payload.application.applicationId).toEqual(TEST_APPLICATION_ID);
+    expect(actionLength).toBe(4);
+    expect(store.getActions()[actionLength - 2].type).toEqual(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 2].payload.application.applicationId).toEqual(TEST_APPLICATION_ID);
   });
 
   test("Test onGetApplication action with initiate workflow flag on", async () => {
@@ -205,11 +205,11 @@ describe("Test for Application Actions", () => {
     //to verify: last 2 actions: GET_APPLICATION and ON_SET_LOADING
     const actionLength = store.getActions().length;
     expect(loadWorkflow).toBeCalledTimes(1);
-    expect(actionLength).toBe(4);
-    expect(store.getActions()[actionLength - 2].type).toBe(actions.GET_APPLICATION);
-    expect(store.getActions()[actionLength - 2].payload.application.applicationId).toBe(TEST_APPLICATION_ID);
-    expect(store.getActions()[actionLength - 1].type).toBe(ON_SET_LOADING);
-    expect(store.getActions()[actionLength - 1].payload).toBe(false);
+    expect(actionLength).toBe(5);
+    expect(store.getActions()[actionLength - 3].type).toBe(actions.GET_APPLICATION);
+    expect(store.getActions()[actionLength - 3].payload.application.applicationId).toBe(TEST_APPLICATION_ID);
+    expect(store.getActions()[actionLength - 2].type).toBe(ON_SET_LOADING);
+    expect(store.getActions()[actionLength - 2].payload).toBe(false);
   });
 
   test("Test onGetApplication action without applicationId should catch exception", async () => {

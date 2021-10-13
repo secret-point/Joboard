@@ -241,7 +241,7 @@ export const onGetApplication = (payload: IPayload) => async (
       log("did not found application id in state or URL");
       throw new Error(NO_APPLICATION_ID);
     }
-
+    setLoading(false)(dispatch);
   } catch (ex) {
     logError("Failed while fetching the application data", ex);
     setLoading(false)(dispatch);
