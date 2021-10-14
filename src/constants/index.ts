@@ -12,3 +12,5 @@ export const CS_DOMAIN_LIST = [
     "https://us.preprod.jobsatamazon.hvh.a2z.com",
     "https://hiring.amazon.com",
 ];
+
+export const CS_PREPROD_DOMAIN = "https://us.preprod.jobsatamazon.hvh.a2z.com";

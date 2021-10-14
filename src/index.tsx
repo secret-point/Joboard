@@ -25,6 +25,7 @@ import "./i18n";
 import { DragonStoneApp } from "./dragon-stone-app";
 import { log } from "./helpers/log-helper";
 import { onSFLogout } from "./actions/application-actions";
+import { CS_PREPROD_DOMAIN } from "./constants";
 
 const DRAGONSTONE_PATH_PREFIX = "/ds/";
 declare global {
@@ -70,6 +71,8 @@ getInitialData()
     // Inject CS Nav and footer when is in CS domain
     if(currentOrigin === CSDomain){
       injectCsNavAndFooter(CSDomain);
+    } else if ( currentOrigin === CS_PREPROD_DOMAIN){
+      injectCsNavAndFooter(CS_PREPROD_DOMAIN);
     }
 
     /********** Disable back button for HVHBB-Backlog-3812 ***********
