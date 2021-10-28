@@ -146,10 +146,13 @@ export const onSelectedSchedule = (scheduleId: string) => async (
   const response = await new JobService().getScheduleDetailByScheduleId(
     scheduleId
   );
-
+  const metricSiteId = response.siteId ? response.siteId.replace("SITE-","") : undefined;
   dispatch({
     type: SELECTED_SCHEDULE,
-    payload: response
+    payload: {
+      ...response,
+      metricSiteId
+    }
   });
   localStorage.setItem("scheduleId", scheduleId);
 
@@ -935,7 +938,6 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
         const response = await new CandidateApplicationService().updateApplication({
           type: "job-confirm",
           applicationId: applicationId,
-
           payload: jobSelected
         });
 
