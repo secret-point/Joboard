@@ -129,7 +129,7 @@ export const onGetScheduleDetails = (payload: IPayload) => async (
     );
   }
   const scheduleId = application.jobScheduleSelected.scheduleId
-    ? application.jobScheduleSelected.scheduleId
+    ? application.jobScheduleSelected.scheduleId 
     : payload.urlParams.scheduleId;
 
   if(scheduleId){
@@ -146,13 +146,9 @@ export const onSelectedSchedule = (scheduleId: string) => async (
   const response = await new JobService().getScheduleDetailByScheduleId(
     scheduleId
   );
-  const metricSiteId = response.siteId ? response.siteId.replace("SITE-","") : undefined;
   dispatch({
     type: SELECTED_SCHEDULE,
-    payload: {
-      ...response,
-      metricSiteId
-    }
+    payload: response
   });
   localStorage.setItem("scheduleId", scheduleId);
 
@@ -909,7 +905,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
       const getApplication = new CandidateApplicationService().getApplication(applicationId);
       const getJob = new JobService().getJobInfo(jobId);
       const getSelectedSchedule = new JobService().getScheduleDetailByScheduleId(scheduleId);
-
+  
       let applicationResponse, job, selectedSchedule;
       await Promise.all([getApplication, getJob, getSelectedSchedule]).then(async (results) => {
         applicationResponse = results[0];
@@ -971,7 +967,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           jobDescription: job,
           availableSchedules: [],
           selectedChildSchedule: selectedSchedule
-        }
+        } 
         if (payload.options?.adobeMetrics) {
           postAdobeMetrics(payload.options.adobeMetrics, {});
         }

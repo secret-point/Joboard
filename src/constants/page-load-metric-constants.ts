@@ -310,7 +310,7 @@ const dragonstoneSchedulePayloadDefault = {
     },
     {
       key: "siteCode",
-      value: "application.schedule.metricSiteId"
+      value: "application.schedule.siteId"
     },
     {
       key: "internalJobCode",
