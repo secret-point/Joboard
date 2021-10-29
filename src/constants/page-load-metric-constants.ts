@@ -480,7 +480,7 @@ const sitePayloadDefault = {
   values: [
     {
       key: "code",
-      value: "application.schedule.siteId"
+      value: "application.schedule.metricSiteId"
     },
     {
       key: "locationCode",
