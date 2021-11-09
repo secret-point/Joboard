@@ -81,7 +81,9 @@ export const PAGE_NAME: any = {
   "update-shift-confirmation": "update-shift-confirmation",
   "cancel-shift-confirmation": "cancel-shift-confirmation",
   "update-shift": "update-shift",
-  "view-shift": "view-shift"
+  "view-shift": "view-shift",
+
+  "no-nhe-appointments": "no-available-time-slots"
 };
 
 export const PAGE_TITLE: Set<string> = new Set(

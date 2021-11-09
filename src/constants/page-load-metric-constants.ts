@@ -1879,5 +1879,22 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
       candidateOnThankYouPayloadDefault,
     ]
+  },
+  "no-available-time-slots": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      countryCode: "us",
+      page: {
+        name: PAGE_NAME["no-nhe-appointments"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
   }
 };

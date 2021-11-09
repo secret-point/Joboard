@@ -17,7 +17,8 @@ import {
   onRedirectToASHChecklist,
   onLogVideoMetrics,
   onLogSpecificJobVideoMetrics,
-  onClearWarningMessage
+  onClearWarningMessage,
+  onNheAppointmentsUnavailable
 } from "./actions";
 import {
   onStartApplication,
@@ -157,6 +158,7 @@ const actionMap: any = {
   CHECK_IF_SKIP_SCHEDULE_SELECTION: onCheckIfSkipScheduleSelection,
   SKIP_SCHEDULE_SELECTION: onSkipScheduleSelection,
   CLEAR_WARNING_MESSAGE: onClearWarningMessage,
+  NHE_APPOINTMENTS_UNAVAILABLE: onNheAppointmentsUnavailable
 };
 
 export default actionMap;

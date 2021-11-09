@@ -441,3 +441,7 @@ export const DsPages: { [key: string]: string } = {
 export const CsPages: { [key: string]: string } = {
   "duplicate-national-id": "duplicate-national-id-cs",
 }
+
+export const onNheAppointmentsUnavailable = () => () => {
+  addMetricForPageLoad();
+};
