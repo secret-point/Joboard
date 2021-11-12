@@ -18,7 +18,8 @@ import {
   onLogVideoMetrics,
   onLogSpecificJobVideoMetrics,
   onClearWarningMessage,
-  onNheAppointmentsUnavailable
+  onNheAppointmentsUnavailable,
+  goToCSHomePage
 } from "./actions";
 import {
   onStartApplication,
@@ -158,7 +159,8 @@ const actionMap: any = {
   CHECK_IF_SKIP_SCHEDULE_SELECTION: onCheckIfSkipScheduleSelection,
   SKIP_SCHEDULE_SELECTION: onSkipScheduleSelection,
   CLEAR_WARNING_MESSAGE: onClearWarningMessage,
-  NHE_APPOINTMENTS_UNAVAILABLE: onNheAppointmentsUnavailable
+  NHE_APPOINTMENTS_UNAVAILABLE: onNheAppointmentsUnavailable,
+  GO_TO_CAREESITE: goToCSHomePage
 };
 
 export default actionMap;

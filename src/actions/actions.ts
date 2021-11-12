@@ -445,3 +445,8 @@ export const CsPages: { [key: string]: string } = {
 export const onNheAppointmentsUnavailable = () => () => {
   addMetricForPageLoad();
 };
+
+export const goToCSHomePage = () => {
+  // redirect to homepage
+      window.location.assign(`/`)
+}
