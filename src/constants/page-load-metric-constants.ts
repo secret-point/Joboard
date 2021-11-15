@@ -1891,6 +1891,9 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     },
     dataPayload: [
       jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
       geoclusterPayloadDefault,
       sitePayloadDefault,
