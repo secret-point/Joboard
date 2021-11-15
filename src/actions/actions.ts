@@ -448,5 +448,5 @@ export const onNheAppointmentsUnavailable = () => () => {
 
 export const goToCSHomePage = () => {
   // redirect to homepage
-      window.location.assign(`/`)
+      window.location.assign(`/app#/jobSearch`);
 }
