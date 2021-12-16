@@ -8,7 +8,7 @@ const mapStateToProps = (state: any, ownProps: any) => {
     showNavbar: state.app.pageConfig?.showNavbar,
     showShiftHoldingMessageBanner:
       state.app.pageConfig?.showShiftHoldingMessageBanner,
-    dashboardUrl: state.app.appConfig?.dashboardUrl
+    appConfig: state.app.appConfig
   };
 };
 

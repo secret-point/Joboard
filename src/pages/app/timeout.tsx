@@ -10,6 +10,7 @@ import { onShowNavbar } from "../../actions/actions";
 import { IconClock } from "@amzn/stencil-react-components/icons";
 import { Button } from "@amzn/stencil-react-components/button";
 import { useTranslation } from 'react-i18next';
+import { get3rdPartyFromQueryParams } from "../../helpers/utils";
 
 interface Error403PageProps {
   onShowNavbar: Function;
@@ -25,7 +26,14 @@ const TimeoutPage: React.FC<Error403PageProps> = ({
   }, [onShowNavbar]);
 
   const onClick = () => {
-    window.location.assign(appConfig.dashboardUrl);
+    const isCandidateDashboardEnabled = appConfig.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
+    const queryParamsInSession = window.sessionStorage.getItem("query-params");
+    const queryParams = queryParamsInSession
+      ? JSON.parse(queryParamsInSession)
+      : {};
+    const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+    const candidateDashboardUrl = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+    window.location.assign(isCandidateDashboardEnabled? candidateDashboardUrl : appConfig.dashboardUrl);
   };
 
   const { t: translate } = useTranslation();

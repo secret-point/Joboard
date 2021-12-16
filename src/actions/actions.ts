@@ -14,7 +14,7 @@ import { isNil } from "lodash";
 import { onUpdateError } from "./error-actions";
 import { log, logError } from "../helpers/log-helper";
 import i18n from "../i18n";
-import { checkIfIsCSRequest, checkIfIsLegacy } from "../helpers/utils";
+import { checkIfIsCSRequest, checkIfIsLegacy, get3rdPartyFromQueryParams } from "../helpers/utils";
 import queryString from "query-string";
 import {REMOVE_MESSAGE} from "./requisition-actions";
 import {REMOVE_CANCELLATION_RESCHEDULE_QUESTION} from "./application-actions";
@@ -284,7 +284,14 @@ export const onResetIsUpdateActionExecuted = () => (dispatch: Function) => {
 
 export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
   const { appConfig } = payload;
-  window.location.assign(appConfig.dashboardUrl);
+  const isCandidateDashboardEnabled = appConfig.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession
+    ? JSON.parse(queryParamsInSession)
+    : {};
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  const candidateDashboardUrl = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+  window.location.assign(isCandidateDashboardEnabled? candidateDashboardUrl : appConfig.dashboardUrl);
 };
 
 export const onGoToDashboardOrASH = (payload: IPayload) => (dispatch: Function) => {
@@ -292,8 +299,7 @@ export const onGoToDashboardOrASH = (payload: IPayload) => (dispatch: Function) 
   if (source === 'ASH') {
     onGoToASH(payload);
   } else {
-    const { appConfig } = payload;
-    window.location.assign(appConfig.dashboardUrl);
+    onGoToDashboard(payload);
   }
 };
 

@@ -17,24 +17,32 @@ import "@amzn/hvh-candidate-application-ui-components/lib/css/styles.css";
 import defaultTheme from '@amzn/stencil-react-theme-default';
 import { Colors } from "./constants/stencilThemeOverride";
 import store from "./store";
-import { checkIfIsCSRequest } from "./helpers/utils";
+import { checkIfIsCSRequest, get3rdPartyFromQueryParams } from "./helpers/utils";
+import { AppConfig } from "./@types/IPayload";
 
 interface IApp {
   showNavbar: boolean;
   showShiftHoldingMessageBanner: boolean;
-  dashboardUrl: any;
+  appConfig: AppConfig;
 }
 
 const App: React.FC<IApp> = ({
   showNavbar,
   showShiftHoldingMessageBanner,
-  dashboardUrl
+  appConfig,
 }) => {
   const onClick = () => {
-    window.location.assign(dashboardUrl);
+    const isCandidateDashboardEnabled = appConfig.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
+    const queryParamsInSession = window.sessionStorage.getItem("query-params");
+    const queryParams = queryParamsInSession
+      ? JSON.parse(queryParamsInSession)
+      : {};
+    const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+    const candidateDashboardUrl = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+    window.location.assign(isCandidateDashboardEnabled? candidateDashboardUrl : appConfig.dashboardUrl);
   };
 
-  const stencilThemeColorOverride = store.getState().app.appConfig.featureList?.STENCIL_COLOR_OVERRIDE?.isAvailable ? Colors : {};
+  const stencilThemeColorOverride = appConfig.featureList?.STENCIL_COLOR_OVERRIDE?.isAvailable ? Colors : {};
 
   return (
     <StencilProvider
