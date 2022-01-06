@@ -25,6 +25,11 @@ export const convertPramsToJson = (params: string) => {
 };
 
 export const launchAuthentication = () => {
+  const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+  const jobIdFromUrl = urlParams.jobId;
+  const requisitionIdFromUrl = urlParams.requisitionId;
+  const applicationIdFromUrl = urlParams.applicationId;
+
   const queryParamsInSession = window.sessionStorage.getItem("query-params");
   const queryParams = queryParamsInSession
     ? JSON.parse(queryParamsInSession)
@@ -55,7 +60,14 @@ export const launchAuthentication = () => {
   }
   let redirectUrl = origin;
   const isLegacy = checkIfIsLegacy();
-  redirectUrl = `${redirectUrl}${pathByDomain()}/?page=${currentPage}&${isLegacy? "requisitionId" : "jobId"}=${hash[1]}&applicationId=${hash[2]}${queryStr}`;
+  const jobIdOrRequisitionIdFromHash = hash[1] && hash[1] != 'undefined' ? hash[1] : null;
+  const applicationIdFromHash = hash[2] && hash[2] != 'undefined' ? hash[2] : null;
+  const targetJobIdOrRequisitionId = isLegacy 
+    ? jobIdOrRequisitionIdFromHash || requisitionIdFromUrl
+    : jobIdOrRequisitionIdFromHash || jobIdFromUrl;
+  const targetApplicationId = applicationIdFromHash || applicationIdFromUrl;
+
+  redirectUrl = `${redirectUrl}${pathByDomain()}/?page=${currentPage}&${isLegacy? "requisitionId" : "jobId"}=${targetJobIdOrRequisitionId}&applicationId=${targetApplicationId}${queryStr}`;
   if (hash.length === 4) {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }
