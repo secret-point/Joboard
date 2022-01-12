@@ -11,6 +11,7 @@ import { ApplicationData } from "../@types/IPayload";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
+export const Unspecified = "Unspecified";
 
 const getCmpId = () => {
   const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
@@ -25,15 +26,20 @@ const getCmpId = () => {
   return cmpIdValue;
 };
 
+const getItemFromSessionStorageByKey = (key: string) => {
+  return window.sessionStorage.getItem(key);
+}
+
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
   const cmpId = getCmpId();
-  if (!isNil(cmpId)) {
-    metric = {
-      ...metric,
-      campaign: {
-        cmpid: cmpId
-      }
-    };
+  metric = {
+    ...metric,
+    campaign: {
+      cmpid: cmpId || Unspecified,
+      ikey: getItemFromSessionStorageByKey('ikey') || Unspecified,
+      akey: getItemFromSessionStorageByKey('ikey') || Unspecified,
+      pandocampaignid: getItemFromSessionStorageByKey('pandocampaignid') || Unspecified
+    }
   }
   window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
