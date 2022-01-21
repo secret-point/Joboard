@@ -123,7 +123,8 @@ export interface Job {
   jobQualification: string,
   careerPortalURL: string,
   blackbirdPortalURL: string,
-  postingStatus: string
+  postingStatus: string,
+  dspEnabled?: boolean | null,
 }
 
 export interface AvailableSchedule {

@@ -10,6 +10,7 @@ export interface CreateApplicationRequest {
 export interface CreateApplicationRequestDS {
   jobId: string;
   scheduleId?: string;
+  dspEnabled?: boolean | null;
 }
 
 export interface CreateApplicationResponseDS {

@@ -34,6 +34,7 @@ import { CreateApplicationRequestDS } from "../@types/candidate-application-serv
 import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem, checkIfIsCSRequest } from "../helpers/utils";
 import ICandidateApplication from "../@types/ICandidateApplication";
 import { getAccessToken } from "../helpers/axios-helper";
+import JobService from "../services/job-service";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -384,20 +385,27 @@ export const createApplication = (payload: IPayload) => async (
 
       // Invoke either createApplication or createApplicationDS as appropriate
       let response;
+      let request;
       if (isLegacy) {
-        response = await candidateApplicationService.createApplication({
+        request = {
           candidateId: candidateResponse.candidateId,
           parentRequisitionId: payload.urlParams.requisitionId,
           language: "English",
           candidateEmail: candidateResponse.emailId,
           candidateMobile: candidateResponse.phoneNumber,
           sfCandidateId: candidateResponse.candidateSFId
-        });
+        }
+        log("Create Requisition application request=", request);
+        response = await candidateApplicationService.createApplication(request);
       } else {
-        log("Create DS application");
-        response = await candidateApplicationService.createApplicationDS({
-          jobId: jobId || ""
-        });
+        const jobInfoResponse = await new JobService().getJobInfo(jobId);
+        const dspEnabled = jobInfoResponse.dspEnabled;
+        request = {
+          jobId: jobId || "",
+          dspEnabled
+        };
+        log("Create DS application request=", request);
+        response = await candidateApplicationService.createApplicationDS(request);
       }
       log("createApplication response=", response);
 
