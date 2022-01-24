@@ -32,13 +32,17 @@ const getItemFromSessionStorageByKey = (key: string) => {
 
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
   const cmpId = getCmpId();
+  const ikey = getItemFromSessionStorageByKey('ikey');
+  const akey = getItemFromSessionStorageByKey('akey');
+  const pandocampaignid = getItemFromSessionStorageByKey('pandocampaignid');
+
   metric = {
     ...metric,
     campaign: {
-      cmpid: cmpId || Unspecified,
-      ikey: getItemFromSessionStorageByKey('ikey') || Unspecified,
-      akey: getItemFromSessionStorageByKey('ikey') || Unspecified,
-      pandocampaignid: getItemFromSessionStorageByKey('pandocampaignid') || Unspecified
+      ...(!!cmpId && { cmpid: cmpId }),
+      ...(!!ikey && { ikey }),
+      ...(!!akey && { akey }),
+      ...(!!pandocampaignid && { pandocampaignid })
     }
   }
   window.dataLayerArray = window.dataLayerArray || [];
