@@ -185,7 +185,7 @@ export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: 
   let queryString = '';
 
   // These keys are 3rd Party params we allowed to pass with redirectUrl after login.
-  const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "piq_source", "ikey", "akey"];
+  const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "pandocandidateid", "piq_source", "ikey", "akey"];
 
   Object.keys(queryParams).forEach((key) => {
       if (includedKeyList.includes(key)) {
