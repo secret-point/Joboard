@@ -36,6 +36,7 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
   const akey = getItemFromSessionStorageByKey('akey');
   const pandocampaignid = getItemFromSessionStorageByKey('pandocampaignid');
   const pandocandidateid = getItemFromSessionStorageByKey('pandocandidateid');
+  const tid = getItemFromSessionStorageByKey('tid');
 
   metric = {
     ...metric,
@@ -44,7 +45,8 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
       ...(!!ikey && { ikey }),
       ...(!!akey && { akey }),
       ...(!!pandocampaignid && { pandocampaignid }),
-      ...(!!pandocandidateid && { pandocandidateid })
+      ...(!!pandocandidateid && { pandocandidateid }),
+      ...(!!tid && { tid })
     }
   }
   window.dataLayerArray = window.dataLayerArray || [];
