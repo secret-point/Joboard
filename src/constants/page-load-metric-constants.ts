@@ -661,12 +661,43 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       }
     },
     dataPayload: [
-      jobPayloadDefault,
       applicationPayloadDefault,
-      dragonstoneSchedulePayloadDefault,
       dragonstoneJobPayloadDefault,
       geoclusterPayloadDefault,
-      sitePayloadDefault,]
+      candidatePayloadDefault
+    ]
+  },
+  "assessment-start":{
+    eventPayload: {
+      event: EVENT.START_ASSESSMENT,
+      countryCode: "us",
+      page: {
+        name: PAGE_NAME["assessment-consent"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      applicationPayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      candidatePayloadDefault
+    ]
+  },
+  "assessment-finished": {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      countryCode: "us",
+      page: {
+        name: PAGE_NAME["assessment-finished"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      applicationPayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      candidatePayloadDefault
+    ]
   },
   assessment: {
     eventPayload: {

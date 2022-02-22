@@ -1,5 +1,5 @@
 import queryString from "query-string";
-import { goTo, setLoading, onUpdateOutput, onUpdatePageId } from "./actions";
+import { goTo, setLoading, onUpdateOutput, onUpdatePageId, setWorkflowLoading } from "./actions";
 import { onUpdateError, onRemoveError } from "./error-actions";
 import CandidateApplicationService from "../services/candidate-application-service";
 import IPayload from "../@types/IPayload";
@@ -9,6 +9,7 @@ import {
   onSelectedRequisition, SHOW_MESSAGE
 } from "./requisition-actions";
 import {
+  GET_JOB_INFO,
   onGetJobInfo,
   onSelectedSchedule
 } from "./job-actions";
@@ -1416,4 +1417,79 @@ export const onSFLogout = () => {
     ? window.reduxStore?.getState()?.app?.appConfig?.SFLogoutURL
     : "https://amazon.force.com/secur/logout.jsp";
   window.location.assign(SFLogoutURL);
+}
+
+export const onAssessmentStart = ( payload: IPayload ) => async (
+  dispatch: Function
+) => {
+  const assessmentUrl = payload.data.application.assessment?.assessmentUrl;
+  if (assessmentUrl && payload.options?.adobeMetrics) {
+    postAdobeMetrics(payload.options.adobeMetrics, {});
+  }
+  assessmentUrl && window.location.assign(assessmentUrl);
+}
+
+export const onAssessmentFinished = ( payload: IPayload ) => async (
+  dispatch: Function
+) => {
+  setWorkflowLoading(true)(dispatch);
+  onRemoveError()(dispatch);
+  window.localStorage.setItem("page", "contingent-offer");
+  const jobId = payload.urlParams.jobId;
+  const applicationId = payload.urlParams.applicationId;
+  if(jobId && applicationId){
+    try {
+      const getApplication = new CandidateApplicationService().getApplication(applicationId);
+      const getJob = new JobService().getJobInfo(jobId);
+      const getCandidate = new CandidateApplicationService().getCandidate();
+
+      let applicationResponse, job, candidate;
+      await Promise.all([getApplication, getJob, getCandidate]).then(async (results) => {
+        applicationResponse = results[0];
+        job = results[1];
+        candidate = results[2];
+        dispatch({
+          type: GET_APPLICATION,
+          payload: {
+            application: applicationResponse,
+            currentState: applicationResponse.currentState
+          }
+        });
+
+        dispatch({
+          type: GET_JOB_INFO,
+          payload: job
+        });
+
+        dispatch({
+          type: ON_GET_CANDIDATE,
+          payload: candidate
+        });
+
+        goTo("contingent-offer", payload.urlParams)(dispatch);
+        log(
+          `Complete task event initiated on action assessment-finished`
+        );
+        if (payload.options?.adobeMetrics) {
+          postAdobeMetrics(payload.options.adobeMetrics, {});
+        }
+        setWorkflowLoading(false)(dispatch);
+        completeTask(applicationResponse, "assessment-consent", undefined, "contingent-offer");
+      });
+
+    } catch (ex) {
+      setWorkflowLoading(false)(dispatch);
+      logError(`Failed while finishing assessment`, ex);
+      if (ex?.message === NO_APPLICATION_ID) {
+        window.localStorage.setItem("page", "applicationId-null");
+        onUpdatePageId("applicationId-null")(dispatch);
+      } else {
+        onUpdateError(
+          ex?.response?.data?.errorMessage || "Failed to finish assessment"
+        )(dispatch);
+      }
+    }
+  } else {
+    onUpdatePageId("applicationId-null")(dispatch);
+  }
 }

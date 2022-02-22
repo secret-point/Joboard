@@ -170,6 +170,9 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
   setLoading(true)(dispatch);
   const isLegacy = checkIfIsLegacy();
   const isCSRequest = checkIfIsCSRequest();
+  const state = window?.reduxStore?.getState();
+  const isHookEnabled = state?.app?.appConfig?.featureList?.HOOK?.isAvailable;
+
   try {
     log(`Loading page configuration ${page}`);
     let pageName = isLegacy
@@ -182,6 +185,14 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
       : CsPages[pageName]
         ? CsPages[pageName]
         : pageName;
+    
+    // Don't go to new assessment page if hook feature flag is not enabled
+    if(!isHookEnabled && pageName === "pre-consent-ds") {
+      pageName = "pre-consent"
+    } else if (!isHookEnabled && pageName === "assessment-consent-ds"){
+      pageName = "assessment-consent"
+    }
+  
     const pageConfig = await new PageService().getPageConfig(`${pageName}.json`);
     (window as any).isPageMetricsUpdated = false;
     if (!(window as any).pageLoadMetricsInterval) {
@@ -442,6 +453,8 @@ export const DsPages: { [key: string]: string } = {
   "rehire-eligibility-status": "rehire-eligibility-status-ds",
   "rehire-not-eligible": "rehire-not-eligible-ds",
   "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only-ds",
+  "assessment-consent": "assessment-consent-ds",
+  "pre-consent" : "pre-consent-ds"
 }
 
 export const CsPages: { [key: string]: string } = {

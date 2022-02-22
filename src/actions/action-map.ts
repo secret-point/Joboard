@@ -44,7 +44,9 @@ import {
   onSaveShiftPreferences,
   sendPageLoadAdobeEvent,
   onGetApplicationDS,
-  onSubmitApplicationDS
+  onSubmitApplicationDS,
+  onAssessmentFinished,
+  onAssessmentStart
 } from "./application-actions";
 import {
   onGetRequisitionHeaderInfo,
@@ -160,7 +162,9 @@ const actionMap: any = {
   SKIP_SCHEDULE_SELECTION: onSkipScheduleSelection,
   CLEAR_WARNING_MESSAGE: onClearWarningMessage,
   NHE_APPOINTMENTS_UNAVAILABLE: onNheAppointmentsUnavailable,
-  GO_TO_CAREESITE: goToCSHomePage
+  GO_TO_CAREESITE: goToCSHomePage,
+  ASSESSMENT_START: onAssessmentStart,
+  ASSESSMENT_FINISHED: onAssessmentFinished,
 };
 
 export default actionMap;

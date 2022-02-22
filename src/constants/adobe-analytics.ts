@@ -40,6 +40,7 @@ export const PAGE_NAME: any = {
   consent: "job landing",
   "assessment-consent": "BB - pre-assessment",
   assessment: "BB - assessment",
+  "assessment-finished": "BB - assessment finished",
   "job-opportunities": "view jobs",
   "job-confirmation": "selected shift",
   "job-description": "job description",
