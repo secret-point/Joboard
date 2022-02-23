@@ -11,7 +11,8 @@ import {
 import {
   GET_JOB_INFO,
   onGetJobInfo,
-  onSelectedSchedule
+  onSelectedSchedule,
+  SELECTED_SCHEDULE
 } from "./job-actions";
 import HTTPStatusCodes from "../constants/http-status-codes";
 import { completeTask, loadWorkflow, loadWorkflowDS } from "./workflow-actions";
@@ -1468,6 +1469,21 @@ export const onAssessmentFinished = ( payload: IPayload ) => async (
           type: ON_GET_CANDIDATE,
           payload: candidate
         });
+
+        const scheduleId = applicationResponse.jobScheduleSelected.scheduleId
+          ? applicationResponse.jobScheduleSelected.scheduleId
+          : payload.urlParams.scheduleId;
+        
+        if(scheduleId){
+          const scheduleResponse = await new JobService().getScheduleDetailByScheduleId(
+            scheduleId
+          );
+        
+          dispatch({
+            type: SELECTED_SCHEDULE,
+            payload: scheduleResponse
+          });
+        }
 
         goTo("contingent-offer", payload.urlParams)(dispatch);
         log(
