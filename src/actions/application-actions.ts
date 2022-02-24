@@ -37,7 +37,6 @@ import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams
 import ICandidateApplication from "../@types/ICandidateApplication";
 import { getAccessToken } from "../helpers/axios-helper";
 import JobService from "../services/job-service";
-import moment from "moment";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -702,7 +701,6 @@ export interface JobSelectedDS {
   scheduleDetails: string;
   scheduleId: string;
   jobScheduleSelectedTime?: string;
-  extendedTimestamp?: string;
 }
 
 export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
@@ -723,7 +721,6 @@ export const onUpdateShiftSelectionDS = (payload: IPayload) => async (
       jobId: payload.data.job.jobDescription.jobId,
       scheduleId: payload.data.job.selectedChildSchedule.scheduleId,
       scheduleDetails: JSON.stringify(payload.data.job.selectedChildSchedule),
-      extendedTimestamp: moment().utc().format()
     }
 
     const response = await new CandidateApplicationService().updateApplication({

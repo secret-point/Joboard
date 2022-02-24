@@ -930,7 +930,6 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           jobId: jobId,
           scheduleId: scheduleId,
           scheduleDetails: JSON.stringify(selectedSchedule),
-          extendedTimestamp: moment().utc().format()
         }
 
         const response = await new CandidateApplicationService().updateApplication({
