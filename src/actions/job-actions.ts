@@ -960,7 +960,6 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
         );
         delete payload.urlParams.scheduleId
 
-        goTo("contingent-offer", payload.urlParams)(dispatch);
         log(
           `Complete task event initiated on action job-confirm and current page is skip-schedule`
         );
@@ -974,7 +973,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           postAdobeMetrics(payload.options.adobeMetrics, {});
         }
         setWorkflowLoading(false)(dispatch);
-        completeTask(applicationResponse, "job-opportunities", undefined, "contingent-offer", jobPayload);
+        completeTask(applicationResponse, "job-opportunities", undefined, undefined, jobPayload);
       });
 
     } catch (ex) {

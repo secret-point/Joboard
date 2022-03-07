@@ -92,6 +92,10 @@ export const startOrResumeWorkflowDS = () => {
       isCsDomain: checkIfIsCSRequest()
     })
   );
+  if(window.hasCompleteTask){
+    window.hasCompleteTask();
+    window.hasCompleteTask = undefined;
+  }
 };
 
 export const sendHeartBeatWorkflow = () => {

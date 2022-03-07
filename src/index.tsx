@@ -44,6 +44,7 @@ declare global {
     applicationStartTime: number;
     log: KatalLogger;
     loggerUrl: string;
+    hasCompleteTask: Function | undefined;
   }
 }
 

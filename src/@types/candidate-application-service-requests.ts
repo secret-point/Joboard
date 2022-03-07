@@ -22,6 +22,7 @@ export interface UpdateApplicationRequest {
   payload: any;
   type: string;
   isCsRequest?: boolean;
+  dspEnabled?: boolean;
 }
 export interface UpdateContingentOffer {
   offerAcceptedTime: string;

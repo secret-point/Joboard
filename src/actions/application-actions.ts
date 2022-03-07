@@ -508,6 +508,7 @@ export const updateApplication = (payload: IPayload) => async (
     updateData[options.outputKey] = propertyOf(payload.data)(options?.dataKey);
   }
   if (!isEmpty(updateData) || options?.ignoreAPIPayload) {
+    const dspEnabled = data.application?.dspEnabled;
     try {
       log(`Started updating application at ${type}`);
       const response = await new CandidateApplicationService().updateApplication(
@@ -515,7 +516,8 @@ export const updateApplication = (payload: IPayload) => async (
           type: type,
           applicationId,
           payload: updateData,
-          isCsRequest: checkIfIsCSRequest()
+          isCsRequest: checkIfIsCSRequest(),
+          dspEnabled
         }
       );
       dispatch({
@@ -1423,7 +1425,7 @@ export const onSFLogout = () => {
 export const onAssessmentStart = ( payload: IPayload ) => async (
   dispatch: Function
 ) => {
-  const assessmentUrl = payload.data.application.assessment?.assessmentUrl;
+  const assessmentUrl = payload.data.application.assessment?.hookAssessmentInvitation?.launchUrl;
   if (assessmentUrl && payload.options?.adobeMetrics) {
     postAdobeMetrics(payload.options.adobeMetrics, {});
   }
@@ -1435,7 +1437,6 @@ export const onAssessmentFinished = ( payload: IPayload ) => async (
 ) => {
   setWorkflowLoading(true)(dispatch);
   onRemoveError()(dispatch);
-  window.localStorage.setItem("page", "contingent-offer");
   const jobId = payload.urlParams.jobId;
   const applicationId = payload.urlParams.applicationId;
   if(jobId && applicationId){
@@ -1444,11 +1445,15 @@ export const onAssessmentFinished = ( payload: IPayload ) => async (
       const getJob = new JobService().getJobInfo(jobId);
       const getCandidate = new CandidateApplicationService().getCandidate();
 
-      let applicationResponse, job, candidate;
+      let applicationResponse: ICandidateApplication, job, candidate;
       await Promise.all([getApplication, getJob, getCandidate]).then(async (results) => {
         applicationResponse = results[0];
         job = results[1];
         candidate = results[2];
+        window.hasCompleteTask = () => {
+          completeTask(applicationResponse, "assessment-consent", undefined, undefined);
+          setWorkflowLoading(false)(dispatch);
+        }
         dispatch({
           type: GET_APPLICATION,
           payload: {
@@ -1482,15 +1487,21 @@ export const onAssessmentFinished = ( payload: IPayload ) => async (
           });
         }
 
-        goTo("contingent-offer", payload.urlParams)(dispatch);
         log(
           `Complete task event initiated on action assessment-finished`
         );
         if (payload.options?.adobeMetrics) {
           postAdobeMetrics(payload.options.adobeMetrics, {});
         }
+
+        loadWorkflowDS(
+          jobId as string || "",
+          scheduleId as string || "",
+          applicationId,
+          candidate.candidateId,
+          payload.appConfig
+        );
         setWorkflowLoading(false)(dispatch);
-        completeTask(applicationResponse, "assessment-consent", undefined, "contingent-offer");
       });
 
     } catch (ex) {

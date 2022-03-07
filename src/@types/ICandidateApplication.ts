@@ -73,6 +73,7 @@ export default interface ICandidateApplication {
     scheduleDetails: any;
     jobScheduleSelectedTime: string;
   }
+  dspEnabled?: boolean
 }
 export interface Candidate {
   candidateId: string;
