@@ -1425,7 +1425,7 @@ export const onSFLogout = () => {
 export const onAssessmentStart = ( payload: IPayload ) => async (
   dispatch: Function
 ) => {
-  const assessmentUrl = payload.data.application.assessment?.hookAssessmentInvitation?.launchUrl;
+  const assessmentUrl = payload.data.application.assessment?.assessmentUrl;
   if (assessmentUrl && payload.options?.adobeMetrics) {
     postAdobeMetrics(payload.options.adobeMetrics, {});
   }
