@@ -48,10 +48,13 @@ export const validation = (
     }
     case "DATE_OF_BIRTH": {
       //According to SF rule: DoB should not be within 10 yrs: today - 10 years.
-      let tenYearsFromNow = moment()
+      let eighteenYearsFromNow = moment()
         .utc()
         .subtract(18, "years");
-      if (moment.utc(value) <= tenYearsFromNow) {
+      let limitYearsFromNow = moment()
+        .utc()
+        .subtract(100, "years");
+      if (moment.utc(value) <= eighteenYearsFromNow && moment.utc(value) >= limitYearsFromNow) {
         return true;
       } else {
         return false;
