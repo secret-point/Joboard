@@ -37,6 +37,7 @@ import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams
 import ICandidateApplication from "../@types/ICandidateApplication";
 import { getAccessToken } from "../helpers/axios-helper";
 import JobService from "../services/job-service";
+import { APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE, STEPS_NOT_CONNECT_WORKFLOW_SERVICE } from "../constants";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -207,37 +208,47 @@ export const onGetApplication = (payload: IPayload) => async (
 
       log("Updated state with application data");
 
-      if (!options?.doNotInitiateWorkflow) {
-        const candidateId =
-          candidateResponse?.candidateId || payload.data.candidate.candidateId;
-        log("loading workflow if doNotInitiateWorkflow is true in page config");
-
-        const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
-        const isLegacy = checkIfIsLegacy();
-        if (isLegacy) {
-          loadWorkflow(
-            requisitionId,
-            applicationId,
-            candidateId,
-            payload.appConfig,
-            options?.isCompleteTaskOnLoad
-          );
-        } else {
-          loadWorkflowDS(
-            payload.urlParams.jobId || urlParams.jobId as string || "",
-            payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
-            applicationId,
-            candidateResponse.candidateId,
-            payload.appConfig
-          );
-        }
-
-        if (!options?.isCompleteTaskOnLoad) {
-          setLoading(false)(dispatch);
-        }
+      // Dont initiate Workflow when workflowStepName is in STEPS_NOT_CONNECT_WORKFLOW_SERVICE
+      // Dont initiate Workflow when currentState is in APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE
+      const workflowStepName = applicationResponse.workflowStepName?.replaceAll("\"", "");
+      if(
+        APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationResponse.currentState) ||
+        STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
+      ){
+        const { urlParams } = payload;
+        goTo("can-not-offer-job", urlParams)(dispatch);
       } else {
-        if (applicationResponse.shift) {
-          setLoading(false)(dispatch);
+        if (!options?.doNotInitiateWorkflow) {
+          const candidateId =
+            candidateResponse?.candidateId || payload.data.candidate.candidateId;
+          log("loading workflow if doNotInitiateWorkflow is true in page config");
+
+          const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+          const isLegacy = checkIfIsLegacy();
+          if (isLegacy) {
+            loadWorkflow(
+              requisitionId,
+              applicationId,
+              candidateId,
+              payload.appConfig,
+              options?.isCompleteTaskOnLoad
+            );
+          } else {
+            loadWorkflowDS(
+              payload.urlParams.jobId || urlParams.jobId as string || "",
+              payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
+              applicationId,
+              candidateResponse.candidateId,
+              payload.appConfig
+            );
+          }
+          if (!options?.isCompleteTaskOnLoad) {
+            setLoading(false)(dispatch);
+          }
+        } else {
+          if (applicationResponse.shift) {
+            setLoading(false)(dispatch);
+          }
         }
       }
     } else if (isNil(applicationId)) {
@@ -287,30 +298,41 @@ export const onGetApplicationDS = (payload: IPayload) => async (
         }
       });
       const urlParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+      // Dont initiate Workflow when workflowStepName is in STEPS_NOT_CONNECT_WORKFLOW_SERVICE
+      // Dont initiate Workflow when currentState is in APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE
+      const workflowStepName = applicationResponse?.workflowStepName?.replaceAll("\"", "");
 
-      if (!options?.doNotInitiateWorkflow) {
-        loadWorkflowDS(
-          payload.urlParams.jobId || urlParams.jobId as string || "",
-          payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
-          applicationId,
-          applicationResponse.candidateId,
-          payload.appConfig
-        );
+      if(
+        APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationResponse?.currentState) ||
+        STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
+      ){
+        const { urlParams } = payload;
+        goTo("can-not-offer-job", urlParams)(dispatch);
+      } else {
+        if (!options?.doNotInitiateWorkflow) {
+          loadWorkflowDS(
+            payload.urlParams.jobId || urlParams.jobId as string || "",
+            payload.urlParams.scheduleId || urlParams.scheduleId as string || "",
+            applicationId,
+            applicationResponse.candidateId,
+            payload.appConfig
+          );
+        }
+
+        if (!options?.loadOnlyApplicationData) {
+          onGetJobInfo(payload)(dispatch);
+          candidateResponse = await onGetCandidate(
+            payload,
+            options.ignoreCandidateData
+          )(dispatch);
+        }
+
+        log("Updated state with application data");
+
+        setLoading(false)(dispatch);
+
+        return applicationResponse;
       }
-
-      if (!options?.loadOnlyApplicationData) {
-        onGetJobInfo(payload)(dispatch);
-        candidateResponse = await onGetCandidate(
-          payload,
-          options.ignoreCandidateData
-        )(dispatch);
-      }
-
-      log("Updated state with application data");
-
-      setLoading(false)(dispatch);
-
-      return applicationResponse;
     } else {
       log("did not found application id in state or URL");
       throw new Error(NO_APPLICATION_ID);

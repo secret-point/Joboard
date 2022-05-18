@@ -14,3 +14,13 @@ export const CS_DOMAIN_LIST = [
 ];
 
 export const CS_PREPROD_DOMAIN = "https://us.preprod.jobsatamazon.hvh.a2z.com";
+
+export const STEPS_NOT_CONNECT_WORKFLOW_SERVICE = [
+    "candidate-withdraws",
+    "amazon-withdraws",
+    "can-not-offer-job",
+]
+
+export const APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE = [
+    "CANNOT_OFFER_JOB_TERMINATION",
+]
