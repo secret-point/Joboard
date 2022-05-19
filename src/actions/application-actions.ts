@@ -37,7 +37,7 @@ import { checkIfIsLegacy, checkIfIsCSS, pathByDomain, get3rdPartyFromQueryParams
 import ICandidateApplication from "../@types/ICandidateApplication";
 import { getAccessToken } from "../helpers/axios-helper";
 import JobService from "../services/job-service";
-import { APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE, STEPS_NOT_CONNECT_WORKFLOW_SERVICE } from "../constants";
+import { APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE, APPLICATION_STATE_TO_STEP_NAME, STEPS_NOT_CONNECT_WORKFLOW_SERVICE } from "../constants";
 export const START_APPLICATION = "START_APPLICATION";
 export const GET_APPLICATION = "GET_APPLICATION";
 export const SET_APPLICATION_DATA = "SET_APPLICATION_DATA";
@@ -216,7 +216,11 @@ export const onGetApplication = (payload: IPayload) => async (
         STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
       ){
         const { urlParams } = payload;
-        goTo("can-not-offer-job", urlParams)(dispatch);
+        const stepName = STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
+          ? workflowStepName
+          : APPLICATION_STATE_TO_STEP_NAME[applicationResponse.currentState]
+        
+        goTo(stepName, urlParams)(dispatch);
       } else {
         if (!options?.doNotInitiateWorkflow) {
           const candidateId =
@@ -307,7 +311,12 @@ export const onGetApplicationDS = (payload: IPayload) => async (
         STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
       ){
         const { urlParams } = payload;
-        goTo("can-not-offer-job", urlParams)(dispatch);
+        const stepName = STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(workflowStepName)
+          ? workflowStepName
+          : APPLICATION_STATE_TO_STEP_NAME[applicationResponse.currentState]
+        
+        goTo(stepName, urlParams)(dispatch);
+
       } else {
         if (!options?.doNotInitiateWorkflow) {
           loadWorkflowDS(

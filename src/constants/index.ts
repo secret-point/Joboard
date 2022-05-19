@@ -24,3 +24,7 @@ export const STEPS_NOT_CONNECT_WORKFLOW_SERVICE = [
 export const APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE = [
     "CANNOT_OFFER_JOB_TERMINATION",
 ]
+
+export const APPLICATION_STATE_TO_STEP_NAME: { [key: string]: string }= {
+    "CANNOT_OFFER_JOB_TERMINATION": "can-not-offer-job"
+}
