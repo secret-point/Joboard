@@ -9,7 +9,7 @@ import {
   sendHeartBeatWorkflow,
   onTimeOut,
   startOrResumeWorkflowDS
-} from "../actions/workflow-actions";
+} from "./../actions/old/workflow-actions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
 

@@ -9,8 +9,10 @@
     "lib/**/*"
   ],
   "dependencies": {
+    "@amzn/arb-tools": "^0.1.1",
     "@amzn/hvh-candidate-application-ui-components": "1.0.0",
     "@amzn/hvh-common-ui-library": "*",
+    "@amzn/react-arb-tools": "^0.1.1",
     "@amzn/stencil-react-components": "*",
     "@amzn/stencil-react-theme-default": "*",
     "@babel/polyfill": "^7.10.1",
@@ -47,6 +49,7 @@
     "axios": "^0.19.2",
     "caniuse-lite": "^1.0.30001090",
     "classnames": "^2.2.6",
+    "connected-react-router": "^6.9.2",
     "core-js": "^3.6.5",
     "create-emotion-styled": "^9.2.8",
     "dom-loaded": "^2.0.0",
@@ -54,6 +57,10 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "history": "^4.10.1",
     "i18next": "^20.1.0",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-icu": "^1.4.2",
+    "i18next-resources-to-backend": "^1.0.0",
+    "i18next-xhr-backend": "^3.2.2",
     "immutability-helper": "^3.1.1",
     "jest-websocket-mock": "^2.1.0",
     "lodash": "^4.17.15",
@@ -72,8 +79,12 @@
     "react-router-dom": "^5.2.0",
     "react-router-redux": "^4.0.8",
     "react-scripts": "3.3.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.4",
+    "redux-observable": "^2.0.0",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "sushi-client": "1.0.0",
     "typescript": "~3.7.2"
@@ -87,7 +98,11 @@
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.tsx'",
     "clean": "rm -rf build node_modules lib",
-    "prepublishOnly": "CI=false npm run build"
+    "prepublishOnly": "CI=false npm run build",
+    "arb-tools": "arb-tools compile",
+    "panther": "panther translate",
+    "postpanther": "npm run arb-tools",
+    "prebuild": "npm run arb-tools"
   },
   "eslintConfig": {
     "extends": "react-app"

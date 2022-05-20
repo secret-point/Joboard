@@ -1,6 +1,6 @@
 import { StencilThemeColors } from '@amzn/stencil-react-theme-default';
 
-export const Colors: StencilThemeColors = {
+export const Colors = {
     primary: "#1768c9",
     primaryLight: "#0077d9",
     primaryDark: "#1659a9",

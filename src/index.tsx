@@ -2,8 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./styles/index.css";
-import App from "./App.container";
-import store from "./store";
+import store from "./store/store";
 import { Provider } from "react-redux";
 import { getInitialData } from "./services";
 import { Store } from "redux";
@@ -22,12 +21,12 @@ import { checkIfIsLegacy, injectCsNavAndFooter, objectToQuerystring, parseQueryP
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
 import "./i18n";
-import { DragonStoneApp } from "./dragon-stone-app";
+import DragonStoneAppUS from "./us/dsApp";
 import { log } from "./helpers/log-helper";
-import { onSFLogout } from "./actions/application-actions";
+import { onSFLogout } from "./actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "./constants";
-
-const DRAGONSTONE_PATH_PREFIX = "/ds/";
+import { actionGetInitialAppConfigActionSuccess } from "./actions/appConfigActions/appConfigActions";
+import { AppConfig } from "./utils/commonTypes";
 declare global {
   interface Window {
     reduxStore: Store;
@@ -50,11 +49,13 @@ declare global {
 
 getInitialData()
   .then((data: any) => {
-    store.dispatch({
-      type: "LOAD_INIT_DATA",
-      payload: { ...data }
-    });
-    // Redirect to csApplication path if it is not 
+    const appConfig: AppConfig = {
+      envConfig:data[0],
+      pageOrder: data[1]?.pageOrder,
+      countryStateConfig: data[2]
+    }
+    store.dispatch(actionGetInitialAppConfigActionSuccess(appConfig));
+
     const featureList = data[0]?.featureList;
     const CSDomain = data[0]?.CSDomain;
     const currentOrigin = window.location.origin;
@@ -70,7 +71,7 @@ getInitialData()
       return;
     }
     // Inject CS Nav and footer when is in CS domain
-    if(currentOrigin === CSDomain){
+    if(currentOrigin === CSDomain || "http://localhost:3000"){
       injectCsNavAndFooter(CSDomain);
     } else if ( currentOrigin === CS_PREPROD_DOMAIN){
       injectCsNavAndFooter(CS_PREPROD_DOMAIN);
@@ -99,12 +100,6 @@ getInitialData()
       }
     }
     /*****************************************************************/
-
-    // TODO: Note there are two competing dragonstone implementations. This is the
-    // routing for a complete replacement of page-configs in favor of react pages.
-    const isDragonStone = window.location.pathname.startsWith(
-      DRAGONSTONE_PATH_PREFIX
-    );
 
     const isLegacy = checkIfIsLegacy();
     const requisitionId = queryParams["requisitionId"];
@@ -226,11 +221,11 @@ getInitialData()
       <Provider store={store}>
         <Router>
           <Switch>
-            <Route path="/ds/">
-              <DragonStoneApp />
+            <Route path="/application/us/">
+              <DragonStoneAppUS />
             </Route>
             <Route path="/">
-              <App />
+              <DragonStoneAppUS />
             </Route>
           </Switch>
         </Router>
