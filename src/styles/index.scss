@@ -1,0 +1,118 @@
+@import "common_colors";
+
+body {
+  margin: 0;
+  font-family: "Amazon Ember", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+a {
+  cursor: pointer;
+}
+
+#preConsentImg {
+  width: 128px;
+  height: 128px;
+  align-self: flex-end;
+}
+
+#jobOpportunityHeaderImageContainer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(270deg, #fff, #d4e4e6 51%, #fff 100%, hsla(0, 0%, 100%, 0) 0);
+  //height: 270px;
+
+  #jobOpportunityHeaderImageOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: #000;
+    background: linear-gradient(0deg, #000, rgba(61, 61, 61, .524247) 38%, hsla(0, 0%, 100%, 0) 64%, hsla(0, 0%, 100%, 0));
+  }
+
+  #jobOpportunityHeaderImage {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.scheduleListContainer {
+  width: 100%;
+
+  .scheduleListActionContainer {
+    width: 100%;
+    justify-content: space-between;
+
+    .scheduleListActionItem {
+      color: $Blue_70;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.backToJobDashboardLink {
+  color: $Blue_70;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.scheduleCardBanner {
+  color: $Neutral0;
+  background: $Blue_70;
+  width: 100%;
+  padding: 0.25em;
+  font-size: 0.65em;
+  justify-content: center;
+}
+
+.scheduleCardContainer {
+  width: 100%;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+  box-shadow: rgba(22, 30, 45, 0.3) 0px 0px 10px 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: $Neutral0;
+  cursor: pointer;
+
+  .scheduleCardHeader {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    .scheduleCardBannerContainer {
+      width: 80px;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+

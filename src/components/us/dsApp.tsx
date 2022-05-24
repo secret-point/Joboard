@@ -1,21 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  HashRouter as Router,
-  useLocation,
-  Switch,
-  Route
-} from "react-router-dom";
+import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
-import queryString from "query-string";
-import CandidateApplicationService from "../services/candidate-application-service";
-import { CreateApplicationRequestDS } from "../@types/candidate-application-service-requests";
-import moment from "moment";
 import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
-import { checkIfIsCSRequest, get3rdPartyFromQueryParams } from "../helpers/utils";
-import { AppConfig } from "../@types/IPayload";
-import store from "../store/store";
+import { get3rdPartyFromQueryParams } from "../../helpers/utils";
+import { AppConfig } from "../../@types/IPayload";
+import store from "../../store/store";
+import { CONSENT, JOB_OPPORTUNITY, PRE_CONSENT } from "../pageRoutes";
+import JobOpportunity from "./jobOpportunity/JobOpportunity";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -38,18 +31,14 @@ const DragonStoneAppUS = (props: MapStateToProps) => {
   };
 
   return (
-    <StencilProvider>
       <Router>
         <Switch>
-          <Route path="/consent/">
-            <ConsentPage />
-          </Route>
-          <Route path="/">
-            <PreConsentPage />
-          </Route>
+          <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>} />
+          <Route path={`/${PRE_CONSENT}`} exact  component={() => <PreConsentPage/>}/>
+          <Route path={`/${CONSENT}`} exact component={() => <ConsentPage/>}/>
+          <Route path={`/${JOB_OPPORTUNITY}`} exact component={() => <JobOpportunity/>}/>
         </Switch>
       </Router>
-    </StencilProvider>
   );
 };
 
