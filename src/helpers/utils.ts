@@ -302,3 +302,7 @@ export const addApplicationIdInUrl = (application?: ICandidateApplication) => {
     );
   }
 }
+
+export const getPageNameFromPath = (path:string) => {
+  return path.split("/")[1];
+};

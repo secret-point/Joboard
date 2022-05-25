@@ -1,5 +1,5 @@
-import { APP_CONFIG_ACTION, GET_INITIAL_APP_CONFIG_TYPE, GET_ENV_CONFIG_TYPE } from "../actions/appConfigActions/appConfigActionTypes";
-import { UI_ACTION } from "../actions/uiActions/uiActionTypes";
+import { APP_CONFIG_ACTIONS, GET_INITIAL_APP_CONFIG_TYPE, GET_ENV_CONFIG_TYPE } from "../actions/AppConfigActions/appConfigActionTypes";
+import { UI_ACTION } from "../actions/UiActions/uiActionTypes";
 
 export interface uiState {
     isLoading: boolean;
@@ -11,7 +11,7 @@ export const initUiState: uiState = {
 
 export default function uiReducer(
     state: uiState = initUiState,
-    action: UI_ACTION | APP_CONFIG_ACTION
+    action: UI_ACTION | APP_CONFIG_ACTIONS
 ):uiState {
     switch (action.type) {
         case GET_INITIAL_APP_CONFIG_TYPE.GET:

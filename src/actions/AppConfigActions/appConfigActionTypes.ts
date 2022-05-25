@@ -43,7 +43,7 @@ export interface GetEnvConfigFailedAction extends Action {
     payload: any; // Refine errorMessage type later
 }
 
-export type APP_CONFIG_ACTION = GetEnvConfigAction
+export type APP_CONFIG_ACTIONS = GetEnvConfigAction
     | GetEnvConfigSuccessAction
     | GetEnvConfigFailedAction
     | GetInitialAppConfigAction

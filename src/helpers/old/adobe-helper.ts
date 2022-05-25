@@ -1,16 +1,18 @@
 import propertyOf from "lodash/propertyOf";
-import { ADOBE_PAGE_LOAD_METRICS } from "../constants/page-load-metric-constants";
+import { ADOBE_PAGE_LOAD_METRICS } from "../../constants/page-load-metric-constants";
 import { isArray } from "lodash";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";
-import { Metric } from "../@types/adobe-metrics";
-import store from "../store/store";
+import { Metric } from "../../@types/adobe-metrics";
 
 const WORKFLOW = "BB NACF Tier-1 Node Workflow";
 
-export const getDataForMetrics = (pageName: string) => {
-  const state = store.getState();
-  const metricObject: any = ADOBE_PAGE_LOAD_METRICS[pageName];
+export const getDataForMetrics = () => {
+  const { app } = window.reduxStore.getState();
+  const currentPage = app.currentPage.id;
+  app.data.requisitionId = window.urlParams.requisitionId;
+  app.data.jobId = window.urlParams.jobId;
+  const metricObject: any = ADOBE_PAGE_LOAD_METRICS[currentPage];
   let metricData: any;
   if (!isEmpty(metricObject)) {
     metricData = metricObject.eventPayload;
@@ -21,7 +23,7 @@ export const getDataForMetrics = (pageName: string) => {
         if (isArray(v.values)) {
           metricData[d.key][v.key] = {};
           v.values?.forEach((value: any) => {
-            metricData[d.key][v.key][value.key] = propertyOf(state)(
+            metricData[d.key][v.key][value.key] = propertyOf(app.data)(
               value.value
             );
           });
@@ -30,24 +32,24 @@ export const getDataForMetrics = (pageName: string) => {
             metricData[d.key][v.key] = WORKFLOW;
           } else if (v.key === "day1Date") {
             //add day1Date, day1Week for page load
-            let day1Date = formatDate(propertyOf(state)(v.value));
+            let day1Date = formatDate(propertyOf(app.data)(v.value));
             metricData[d.key][v.key] = day1Date;
             metricData[d.key].daysUntilDay1 = getDaysUntilDay1(day1Date);
           } else if (d.key === "NHE" && v.key === "count") {
             // NHE sent the count of NHE, not the list
             metricData[d.key][v.key] =
-              propertyOf(state)(v.value).length === 0
+              propertyOf(app.data)(v.value).length === 0
                 ? "zero"
-                : propertyOf(state)(v.value).length;
+                : propertyOf(app.data)(v.value).length;
           } else if (d.key === "shifts" && v.key === "list") {
             //filter shifts list
             let filteredShifts: any[] = [];
-            propertyOf(state)(v.value)?.forEach((element: any) => {
+            propertyOf(app.data)(v.value)?.forEach((element: any) => {
               filteredShifts.push(element.headCountRequestId);
             });
             metricData[d.key][v.key] = filteredShifts;
           } else {
-            metricData[d.key][v.key] = propertyOf(state)(v.value);
+            metricData[d.key][v.key] = propertyOf(app.data)(v.value);
           }
         }
       });

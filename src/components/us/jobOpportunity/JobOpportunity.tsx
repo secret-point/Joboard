@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
 import { Image } from "@amzn/hvh-candidate-application-ui-components";
 import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from '@amzn/stencil-react-components/icons';
 import { Text } from "@amzn/stencil-react-components/text";
 import ScheduleCard from "../../common/ScheduleCard";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import { useLocation } from "react-router";
+import queryString from "query-string";
+import { Locale } from "../../../utils/commonTypes";
+import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { JobState } from "../../../reducers/job.reducer";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
-const JobOpportunity = () => {
+interface MapStateToProps {
+    job: JobState,
+    application: ApplicationState
+}
+
+const JobOpportunity = (props: MapStateToProps) => {
+    const { job, application } = props;
+    const { search, pathname } = useLocation();
+    const pageName = getPageNameFromPath(pathname);
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
+    const applicationId = queryParams.applicationId;
+    const jobId = queryParams.jobId;
+    const jobDetail = job.results;
+    const applicationData = application.results;
+
+    useEffect(()=>{
+        jobId && boundGetJobDetail({jobId:jobId, locale:Locale.enUS})
+        applicationId && boundGetApplication({applicationId:applicationId, locale:Locale.enUS})
+    },[]);
+
+    useEffect(()=>{
+        jobDetail && applicationData && addMetricForPageLoad(pageName);
+    },[jobDetail, applicationData])
+
     return (
         <Col id='jobOpportunityContainer'>
             <StepHeader jobTitle="Amazon Associate" applicationStep="" stepAction="1. Select job"/>
@@ -50,4 +83,8 @@ const JobOpportunity = () => {
     )
 }
 
-export default JobOpportunity;
+const mapStateToProps = ( state: MapStateToProps ) => {
+    return state;
+};
+
+export default connect(mapStateToProps)(JobOpportunity);

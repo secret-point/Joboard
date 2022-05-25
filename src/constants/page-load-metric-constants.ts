@@ -70,7 +70,7 @@ const jobPayloadDefault = {
     },
     {
       key: "source",
-      value: "job.consentInfo.dataSource"
+      value: "job.results.dataSource"
     }
   ]
 };
@@ -146,7 +146,7 @@ const dragonstoneJobPayloadDefault = {
   values: [
     {
       key: "jobID",
-      value: "job.consentInfo.jobId"
+      value: "job.results.jobId"
     },
     {
       key: "scheduleCount",
@@ -302,7 +302,7 @@ const dragonstoneSchedulePayloadDefault = {
   values: [
     {
       key: "jobID",
-      value: "job.consentInfo.jobId"
+      value: "job.results.jobId"
     },
     {
       key: "scheduleID",
@@ -442,35 +442,35 @@ const geoclusterPayloadDefault = {
   values: [
     {
       key: "ID",
-      value: "job.consentInfo.geoClusterId"
+      value: "job.results.geoClusterId"
     },
     {
       key: "name",
-      value: "job.consentInfo.geoClusterName"
+      value: "job.results.geoClusterName"
     },
     {
       key: "description",
-      value: "job.consentInfo.geoClusterDescription"
+      value: "job.results.geoClusterDescription"
     },
     {
       key: "country",
-      value: "job.consentInfo.country"
+      value: "job.results.country"
     },
     {
       key: "region",
-      value: "job.consentInfo.geoClusterRegion"
+      value: "job.results.geoClusterRegion"
     },
     {
       key: "zone",
-      value: "job.consentInfo.geoClusterZone"
+      value: "job.results.geoClusterZone"
     },
     {
       key: "locationCode",
-      value: "job.consentInfo.locationCode"
+      value: "job.results.locationCode"
     },
     {
       key: "loEnable",
-      value: "job.consentInfo.loEnable"
+      value: "job.results.loEnable"
     }
   ]
 };

@@ -30,7 +30,7 @@ import "./i18n";
 import DragonStoneAppUS from "./components/us/dsApp";
 import { onSFLogout } from "./actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "./constants";
-import { actionGetInitialAppConfigActionSuccess } from "./actions/appConfigActions/appConfigActions";
+import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
 import { AppConfig } from "./utils/commonTypes";
 import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
 import { PageContainer } from "@amzn/stencil-react-components/page";

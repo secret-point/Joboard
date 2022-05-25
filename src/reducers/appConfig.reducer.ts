@@ -1,21 +1,21 @@
 import { AppConfig } from "../utils/commonTypes";
-import { APP_CONFIG_ACTION, GET_INITIAL_APP_CONFIG_TYPE, GET_ENV_CONFIG_TYPE } from "../actions/appConfigActions/appConfigActionTypes";
+import { APP_CONFIG_ACTIONS, GET_INITIAL_APP_CONFIG_TYPE, GET_ENV_CONFIG_TYPE } from "../actions/AppConfigActions/appConfigActionTypes";
 
-export interface appConfigState {
+export interface AppConfigState {
     loading: boolean;
     results?: AppConfig;
     failed?: boolean;
 }
 
-export const initAppConfigState: appConfigState = {
+export const initAppConfigState: AppConfigState = {
     loading: false,
     failed: false
 }
 
 export default function appConfigReducer(
-    state: appConfigState = initAppConfigState,
-    action: APP_CONFIG_ACTION
-):appConfigState {
+    state: AppConfigState = initAppConfigState,
+    action: APP_CONFIG_ACTIONS
+):AppConfigState {
     switch (action.type) {
         case GET_INITIAL_APP_CONFIG_TYPE.GET:
             return {

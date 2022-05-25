@@ -2,12 +2,13 @@ import { getDataForEventMetrics } from "./../../helpers/adobe-helper";
 import { AdobeMetrics, Metric, MetricData } from "./../../@types/adobe-metrics";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
-import { getDataForMetrics } from "./../../helpers/old/adobe-helper";
+import { getDataForMetrics } from "./../../helpers/adobe-helper";
 import { EVENT_NAMES } from "./../../constants/adobe-analytics";
 import findIndex from "lodash/findIndex";
 import { getCheckBoxListLabels, getMetricValues } from "./../../helpers/utils";
 import { CheckBoxItem } from "./../../@types";
 import { ApplicationData } from "./../../@types/IPayload";
+import store from "../../store/store";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
@@ -53,12 +54,12 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
   window.dataLayerArray.push(metric);
 };
 
-export const addMetricForPageLoad = () => {
+export const addMetricForPageLoad = (pageName: string) => {
   let dataLayer: any = {};
   try {
-    const { app } = window.reduxStore.getState();
-    if ((!isEmpty(app.data.requisition) || !isEmpty(app.data.job)) && !window.isPageMetricsUpdated) {
-      dataLayer = getDataForMetrics();
+    const { job, requisition } = store.getState();
+    if ((!isEmpty(requisition) || !isEmpty(job)) && !window.isPageMetricsUpdated) {
+      dataLayer = getDataForMetrics(pageName);
       window.isPageMetricsUpdated = true;
       if (!isEmpty(dataLayer)) {
         sendDataLayerAdobeAnalytics(dataLayer);
