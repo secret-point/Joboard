@@ -2,6 +2,7 @@ import React from 'react';
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { Link } from "@amzn/stencil-react-components/link";
+import { translate as t } from "../../utils/translator";
 
 interface StepHeaderProps {
     jobTitle: string;
@@ -16,7 +17,9 @@ const StepHeader = (props: StepHeaderProps) => {
         <Col id="stepHeaderContainer" gridGap={5} padding='S300' style={{background: '#edf5f6'}}>
             <Text>{jobTitle}</Text>
             <Col alignItems='flex-end'>
-                <Link fontSize='T100'>View progress</Link>
+                <Link fontSize='T100'>
+                    {t('BB-StepHeader-view-progress-button', 'View progress')}
+                </Link>
             </Col>
             <Text fontSize='T100'>{stepAction}</Text>
         </Col>

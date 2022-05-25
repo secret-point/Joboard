@@ -1,4 +1,4 @@
-import { Requisition } from "../utils/commonTypes";
+import { Requisition } from "../utils/types/common";
 import { GET_REQUISITION_ACTIONS, GET_REQUISITION_TYPE } from "../actions/RequisitionActions/requisitionActionTypes";
 
 export interface RequisitionState {

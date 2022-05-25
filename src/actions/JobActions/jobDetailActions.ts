@@ -1,6 +1,5 @@
-
 import { GetJobDetailRequest } from "../../utils/apiTypes";
-import { Job } from "../../utils/commonTypes";
+import { Job } from "../../utils/types/common";
 import {
     GET_JOB_DETAIL_TYPE,
     GetJobDetailAction,
@@ -8,20 +7,14 @@ import {
     GetJobDetailSuccessAction,
 } from "./jobDetailActionTypes";
 
-export const actionGetJobDetail = (
-    payload: GetJobDetailRequest
-): GetJobDetailAction => {
+export const actionGetJobDetail = ( payload: GetJobDetailRequest ): GetJobDetailAction => {
     return { type: GET_JOB_DETAIL_TYPE.GET, payload }
 };
 
-export const actionGetJobDetailSuccess = (
-    payload: Job
-): GetJobDetailSuccessAction => {
+export const actionGetJobDetailSuccess = ( payload: Job ): GetJobDetailSuccessAction => {
     return { type: GET_JOB_DETAIL_TYPE.SUCCESS, payload }
 };
 
-export const actionGetJobDetailFailed = (
-    payload: any
-): GetJobDetailFailedAction => {
+export const actionGetJobDetailFailed = ( payload: any ): GetJobDetailFailedAction => {
     return { type: GET_JOB_DETAIL_TYPE.FAILED, payload }
 };

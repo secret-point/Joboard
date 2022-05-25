@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { EnvConfig, AppConfig } from "../../utils/commonTypes";
+import { EnvConfig, AppConfig } from "../../utils/types/common";
 
 export enum GET_INITIAL_APP_CONFIG_TYPE {
     GET = 'GET_INITIAL_APP_CONFIG',

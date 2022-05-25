@@ -3,7 +3,7 @@ import { ofType } from "redux-observable";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import { GetJobDetailAction, GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
 import { actionGetJobDetailFailed, actionGetJobDetailSuccess } from "../actions/JobActions/jobDetailActions";
-import { Job } from "../utils/commonTypes";
+import { Job } from "../utils/types/common";
 import JobService from "../services/job-service";
 
 export const getJobDetailEpic = (action$: Observable<any>) => {

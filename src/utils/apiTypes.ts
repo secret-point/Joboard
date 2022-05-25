@@ -1,4 +1,5 @@
-import { Locale } from "./commonTypes";
+import { Locale } from "./types/common";
+import { AvailableFilter } from "../@types/IPayload";
 
 export interface GetJobDetailRequest {
     locale: Locale;
@@ -12,4 +13,16 @@ export interface GetApplicationRequest {
 
 export interface GetRequisitionRequest {
     requisitionId: string;
+}
+
+export interface GetScheduleListByJobIdRequest {
+    locale: Locale,
+    jobId: string,
+    applicationId: string,
+    filter?: AvailableFilter
+}
+
+export interface GetScheduleDetailRequest {
+    locale: Locale,
+    scheduleId: string
 }

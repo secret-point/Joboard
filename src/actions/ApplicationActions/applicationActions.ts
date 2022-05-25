@@ -1,6 +1,5 @@
-
 import { GetApplicationRequest } from "../../utils/apiTypes";
-import { Application } from "../../utils/commonTypes";
+import { Application } from "../../utils/types/common";
 import {
     GET_APPLICATION_TYPE,
     GetApplicationAction,
@@ -8,20 +7,14 @@ import {
     GetApplicationSuccessAction,
 } from "./applicationActionTypes";
 
-export const actionGetApplication = (
-    payload: GetApplicationRequest
-): GetApplicationAction => {
+export const actionGetApplication = ( payload: GetApplicationRequest ): GetApplicationAction => {
     return { type: GET_APPLICATION_TYPE.GET, payload }
 };
 
-export const actionGetApplicationSuccess = (
-    payload: Application
-): GetApplicationSuccessAction => {
+export const actionGetApplicationSuccess = ( payload: Application ): GetApplicationSuccessAction => {
     return { type: GET_APPLICATION_TYPE.SUCCESS, payload }
 };
 
-export const actionGetApplicationFailed = (
-    payload: any
-): GetApplicationFailedAction => {
+export const actionGetApplicationFailed = ( payload: any ): GetApplicationFailedAction => {
     return { type: GET_APPLICATION_TYPE.FAILED, payload }
 };

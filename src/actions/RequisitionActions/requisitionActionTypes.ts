@@ -1,6 +1,6 @@
 import { Action } from "redux";
 import { GetRequisitionRequest } from "../../utils/apiTypes";
-import { Requisition } from "../../utils/commonTypes";
+import { Requisition } from "../../utils/types/common";
 
 export enum GET_REQUISITION_TYPE {
     GET = 'GET_REQUISITION',

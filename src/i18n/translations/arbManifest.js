@@ -5,6 +5,12 @@ var endpointMap = {
 	"en-US": {
 		appStrings: "translation-en.json"
 	},
+	es: {
+		appStrings: "translation-es.json"
+	},
+	"es-US": {
+		appStrings: "translation-es.json"
+	},
 	und: {
 		appStrings: "translation.json"
 	}

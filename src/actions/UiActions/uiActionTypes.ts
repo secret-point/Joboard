@@ -1,10 +1,12 @@
 import { Action } from "redux";
-import { CountryStateConfig } from "../../utils/commonTypes";
+import { CountryStateConfig } from "../../utils/types/common";
+import { JOB_OPPORTUNITY_PAGE } from "../../utils/enums/common";
 
 export enum GET_STATE_CONFIG_TYPE {
     GET = 'GET_STATE_CONFIG',
     SUCCESS = 'GET_STATE_CONFIG_SUCCESS',
-    FAILED = 'GET_STATE_CONFIG_FAILED'
+    FAILED = 'GET_STATE_CONFIG_FAILED',
+    SET_JOB_OPPORTUNITY_PAGE = 'SET_JOB_OPPORTUNITY_PAGE'
 }
 
 export interface GetCountryStateConfigAction extends Action {
@@ -43,9 +45,15 @@ export interface GetPageOrderFailedAction extends Action {
     payload: any; // Refine errorMessage type later
 }
 
+export interface SetJobOpportunityPageAction extends Action {
+    type: GET_STATE_CONFIG_TYPE.SET_JOB_OPPORTUNITY_PAGE;
+    payload: JOB_OPPORTUNITY_PAGE
+}
+
 export type UI_ACTION = GetCountryStateConfigAction
     | GetCountryStateConfigSuccessAction
     | GetCountryStateConfigFailedAction
     | GetPageOrderAction
     | GetPageOrderSuccessAction
-    | GetPageOrderFailedAction;
+    | GetPageOrderFailedAction |
+    SetJobOpportunityPageAction;

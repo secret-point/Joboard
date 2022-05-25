@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import "./styles/index.scss";
 import store from "./store/store";
 import { Provider } from "react-redux";
@@ -31,7 +31,7 @@ import DragonStoneAppUS from "./components/us/dsApp";
 import { onSFLogout } from "./actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "./constants";
 import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
-import { AppConfig } from "./utils/commonTypes";
+import { AppConfig } from "./utils/types/common";
 import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
 import { PageContainer } from "@amzn/stencil-react-components/page";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -236,17 +236,16 @@ getInitialData()
                             <PageContainer
                                 data-testid="layout"
                                 paddingTop="0"
-                                paddingBottom="0"
+                                paddingBottom="S300"
                                 paddingHorizontal="0"
+                                width='80%'
                             >
                                 <MainWithSkipLink>
                                     <Switch>
                                         <Route path="/application/us/">
                                             <DragonStoneAppUS/>
                                         </Route>
-                                        <Route path="/">
-                                            <DragonStoneAppUS/>
-                                        </Route>
+                                        <Route path="/" render={() => <Redirect to="/application/us/"/>} />
                                     </Switch>
                                 </MainWithSkipLink>
                             </PageContainer>

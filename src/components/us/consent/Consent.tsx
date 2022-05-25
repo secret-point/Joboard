@@ -9,7 +9,7 @@ import { JOB_OPPORTUNITY } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
-import { Locale } from "../../../utils/commonTypes";
+import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";

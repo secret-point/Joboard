@@ -1,6 +1,6 @@
 import { Action } from "redux";
 import { GetJobDetailRequest } from "../../utils/apiTypes";
-import { Job } from "../../utils/commonTypes";
+import { Job } from "../../utils/types/common";
 
 export enum GET_JOB_DETAIL_TYPE {
     GET = 'GET_JOB_DETAIL',

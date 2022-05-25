@@ -1,4 +1,4 @@
-import { Application } from "../utils/commonTypes";
+import { Application } from "../utils/types/common";
 import { GET_APPLICATION_TYPE, GET_APPLICATION_ACTIONS } from "../actions/ApplicationActions/applicationActionTypes";
 
 export interface ApplicationState {

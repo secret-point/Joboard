@@ -1,6 +1,5 @@
-
 import { GetRequisitionRequest } from "../../utils/apiTypes";
-import { Requisition } from "../../utils/commonTypes";
+import { Requisition } from "../../utils/types/common";
 import {
     GET_REQUISITION_TYPE,
     GetRequisitionAction,

@@ -1,5 +1,5 @@
-import { AppConfig, EnvConfig } from "../../utils/commonTypes";
-import { 
+import { AppConfig, EnvConfig } from "../../utils/types/common";
+import {
     GetEnvConfigAction,
     GetEnvConfigSuccessAction,
     GetEnvConfigFailedAction,

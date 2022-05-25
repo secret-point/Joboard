@@ -36,7 +36,8 @@ i18n.use(resourcesToBackend((language, namespace, callback) => {
             load: 'currentOnly',
             detection: {
                 // order and from where user language should be detected
-                order: ['htmlTag', 'navigator']
+                order: ['cookie'],
+                lookupCookie: 'hvh-locale'
             }
         },
         (err?: string) => {

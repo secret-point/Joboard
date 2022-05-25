@@ -5,14 +5,16 @@ import uiReducer from "./ui.reducer";
 import jobReducer from "./job.reducer";
 import requisitionReducer from "./requisition.reducer";
 import applicationReducer from "./application.reducer";
+import scheduleReducer from "./schedule.reducer";
 
-const createRootReducer = (history: any) =>
+const createRootReducer = ( history: any ) =>
     combineReducers({
         appConfig: appConfigReducer,
         ui: uiReducer,
         job: jobReducer,
         application: applicationReducer,
         requisition: requisitionReducer,
+        schedule: scheduleReducer,
         router: connectRouter(history),
     });
 

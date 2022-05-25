@@ -1,6 +1,7 @@
 import { AxiosInstance } from "axios";
 import { axiosHelper } from "../helpers/axios-helper";
-import { AvailableFilter } from "../@types/IPayload";
+import { AvailableFilter, Schedule } from "../@types/IPayload";
+import { GetScheduleListByJobIdRequest } from "../utils/apiTypes";
 
 export default class JobService {
   private readonly axiosInstance: AxiosInstance;
@@ -43,31 +44,23 @@ export default class JobService {
           locale: 'en-us',
         }
     );
-    console.log(response.data);
     return response.data;
   }
 
-  async getAllSchedules({
-    jobId,
-    applicationId,
-    filter,
-  } : GetAllAvailableScheduleParams) {
-    console.log(
-      jobId,
-      applicationId,
-      filter)
-    const response = await this.axiosInstance.post(
-        `/get-all-schedules/${jobId}`,
-        {
-          jobId,
-          applicationId,
-          filter,
-          locale: 'en-us',
-        }
-    );
-    console.log(response.data);
-    return response.data;
-  }
+    async getAllSchedules( request: GetScheduleListByJobIdRequest ) {
+        const { jobId, applicationId, locale, filter } = request;
+
+        const response = await this.axiosInstance.post(
+            `/get-all-schedules/${jobId}`,
+            {
+                jobId,
+                applicationId,
+                filter,
+                locale: 'en-us' //TODO to be replaced by actual Locale from Cookie when proxy started to support the new locale
+            }
+        );
+        return response.data;
+    }
 }
 
 export interface GetAllAvailableScheduleParams {

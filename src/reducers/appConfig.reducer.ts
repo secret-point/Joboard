@@ -1,4 +1,4 @@
-import { AppConfig } from "../utils/commonTypes";
+import { AppConfig } from "../utils/types/common";
 import { APP_CONFIG_ACTIONS, GET_INITIAL_APP_CONFIG_TYPE, GET_ENV_CONFIG_TYPE } from "../actions/AppConfigActions/appConfigActionTypes";
 
 export interface AppConfigState {

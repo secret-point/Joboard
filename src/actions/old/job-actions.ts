@@ -2,16 +2,8 @@ import RequisitionService from "./../../services/requisition-service";
 import JobService from "./../../services/job-service";
 import isEmpty from "lodash/isEmpty";
 import IPayload, { AvailableFilter, DaysHoursFilter, JobDescriptor } from "./../../@types/IPayload";
-import {
-  setLoading,
-  onUpdatePageId,
-  onUpdateChange,
-  goTo,
-  setWorkflowLoading,
-  onGoToAction
-} from "./actions";
-import { onUpdateError, onRemoveError } from "./error-actions";
-import find from "lodash/find";
+import { goTo, onGoToAction, onUpdatePageId, setLoading, setWorkflowLoading } from "./actions";
+import { onRemoveError, onUpdateError } from "./error-actions";
 import HTTPStatusCodes from "./../../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
 import CandidateApplicationService from "./../../services/candidate-application-service";
@@ -19,17 +11,14 @@ import isNil from "lodash/isNil";
 import { push } from "react-router-redux";
 import { postAdobeMetrics, sendDataLayerAdobeAnalytics } from "./adobe-actions";
 import { getDataForEventMetrics } from "./../../helpers/adobe-helper";
-import moment from "moment";
-import { sortWith, ascend, descend, prop } from "ramda";
+import { ascend, descend, prop, sortWith } from "ramda";
 import { log, logError } from "./../../helpers/log-helper";
-import cloneDeep from "lodash/cloneDeep";
-import removeFromObject from "lodash/remove";
-import { EVENT_NAMES } from "./../../constants/adobe-analytics";
-import {GET_APPLICATION, JobSelectedDS, sendAdobeAnalytics, UPDATE_APPLICATION} from "./application-actions";
+import { GET_APPLICATION, JobSelectedDS, sendAdobeAnalytics, UPDATE_APPLICATION } from "./application-actions";
 import { NO_APPLICATION_ID } from "./../../constants/error-messages";
 import { completeTask } from "./workflow-actions";
 import queryString from "query-string";
 import { parseQueryParamsArrayToSingleItem } from "./../../helpers/utils";
+import { Locale } from "../../utils/types/common";
 
 export const GET_JOB_INFO = "GET_JOB_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -173,9 +162,11 @@ export const onGetAllSchedules = (payload: IPayload) => async (
       log(`getting all available shifts for job ${jobId}`);
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
+      const locale = 'en-us' as Locale; //TODO to be removed or replaced by actual Locale from Cookie
       const response = await new JobService().getAllSchedules({
         jobId,
-        applicationId
+        applicationId,
+        locale
       });
       log(`loaded all available shifts for job ${jobId}`, {
         pageFactor: response.pageFactor,
@@ -435,10 +426,12 @@ export const onApplyFilterDS = (payload: IPayload) => async (
           });
           filter = constructFilterPayloadDS(payload);
         }
+        const locale = 'en-us' as Locale; //TODO to be removed or replaced by actual Locale from Cookie
         const response = await new JobService().getAllSchedules({
           jobId,
           applicationId,
-          filter
+          filter,
+          locale
         });
         pageFactor = response.pageFactor;
         log("Applying sorting if user selected sort", {

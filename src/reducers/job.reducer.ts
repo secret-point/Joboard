@@ -1,4 +1,4 @@
-import { Job } from "../utils/commonTypes";
+import { Job } from "../utils/types/common";
 import { GET_JOB_DETAIL_TYPE, JOB_DETAIL_ACTIONS } from "../actions/JobActions/jobDetailActionTypes";
 
 export interface JobState {

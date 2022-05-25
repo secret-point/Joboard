@@ -4,17 +4,17 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import store from "../../store/store";
 import { CONSENT, JOB_OPPORTUNITY, PRE_CONSENT } from "../pageRoutes";
-import JobOpportunity from "./jobOpportunity/JobOpportunity";
+import JobOpportunityContainer from "./jobOpportunity";
+import { Col } from "@amzn/stencil-react-components/layout";
+import AppLoader from "../common/AppLoader";
 
 interface MapStateToProps {
-  appConfig: AppConfig
+  appConfig: AppConfig,
 }
 
-const DragonStoneAppUS = (props: MapStateToProps) => {
+const DragonStoneAppUS = ( props: MapStateToProps ) => {
   const { appConfig } = props;
-  console.log("appConfig", appConfig, store.getState());
 
   // Will review and refacoter this logic later
   // const onClick = () => {
@@ -29,24 +29,27 @@ const DragonStoneAppUS = (props: MapStateToProps) => {
   // };
 
   return (
-      <Router>
-        <Switch>
-          <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>
-          <Route path={`/${PRE_CONSENT}`} exact>
-            <PreConsentPage/>
-          </Route>
-          <Route path={`/${CONSENT}`} exact>
-            <ConsentPage/>
-          </Route>
-          <Route path={`/${JOB_OPPORTUNITY}`} exact>
-            <JobOpportunity/>
-          </Route>
-        </Switch>
-      </Router>
+      <Col padding='S300'>
+        <AppLoader/>
+        <Router>
+          <Switch>
+            <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>
+            <Route path={`/${PRE_CONSENT}`} exact>
+              <PreConsentPage/>
+            </Route>
+            <Route path={`/${CONSENT}`} exact>
+              <ConsentPage/>
+            </Route>
+            <Route path={`/${JOB_OPPORTUNITY}`} exact>
+              <JobOpportunityContainer/>
+            </Route>
+          </Switch>
+        </Router>
+      </Col>
   );
 };
 
-const mapStateToProps = (state: MapStateToProps) => {
+const mapStateToProps = ( state: MapStateToProps ) => {
   return state;
 };
 

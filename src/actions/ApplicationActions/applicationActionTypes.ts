@@ -1,6 +1,6 @@
 import { Action } from "redux";
 import { GetApplicationRequest } from "../../utils/apiTypes";
-import { Application } from "../../utils/commonTypes";
+import { Application } from "../../utils/types/common";
 
 export enum GET_APPLICATION_TYPE {
     GET = 'GET_APPLICATION',

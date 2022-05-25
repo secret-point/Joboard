@@ -5,6 +5,38 @@
         "BB-PreConsentPage-banner-journey-starts": {
             "note": "Text for PreConsentPage banner text",
             "value": "Your journey to becoming an Amazon Associate starts here."
+        },
+        "BB-JobOpportunity-Go-To-Dashboard-Link": {
+            "note": "Text for the link to go back to jobs dashboard",
+            "value": "Go Back to Jobs Dashboard"
+        },
+        "BB-JobOpportunity-back-to-indexPage-link": {
+            "note": "Text for the link to go back to job opportunity index",
+            "value": "View Jobs"
+        },
+        "BB-JobOpportunity-back-to-jobConfirmation-link": {
+            "note": "Text for the link to go back to job confirmation page",
+            "value": "Back"
+        },
+        "BB-JobOpportunity-go-to-jobDescription-link": {
+            "note": "Text for the link to go to job description page",
+            "value": "Job requirement and benefits"
+        },
+        "BB-JobOpportunity-filter-button": {
+            "note": "Text for the button to filter schedule list",
+            "value": "Filter"
+        },
+        "BB-JobOpportunity-sort-button": {
+            "note": "Text for the button to filter schedule list",
+            "value": "Sort"
+        },
+        "BB-JobOpportunity-select-job-button": {
+            "note": "Text for the button to select or confirm job",
+            "value": "Select this job"
+        },
+        "BB-StepHeader-view-progress-button": {
+            "note": "Text for the button to select or confirm job",
+            "value": "View progress"
         }
     }
 }
