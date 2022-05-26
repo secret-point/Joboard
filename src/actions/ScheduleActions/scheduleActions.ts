@@ -1,6 +1,8 @@
 import { GetScheduleDetailRequest, GetScheduleListByJobIdRequest } from "../../utils/apiTypes";
 import {
-    GetScheduleDetailAction, GetScheduleDetailFailedAction, GetScheduleDetailSuccessAction,
+    GetScheduleDetailAction,
+    GetScheduleDetailFailedAction,
+    GetScheduleDetailSuccessAction,
     GetScheduleListByJobIdAction,
     GetScheduleListByJobIdFailedAction,
     GetScheduleListByJobIdSuccessAction,
@@ -20,9 +22,15 @@ export const actionGetScheduleListByJobIdFailed = ( payload: any ): GetScheduleL
     return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_FAILED, payload }
 };
 
-export const actionGetScheduleDetail = ( payload: GetScheduleDetailRequest ): GetScheduleDetailAction => {
-    return { type: SCHEDULE_ACTION_TYPE.GET_DETAIL, payload }
-};
+export const actionGetScheduleDetail =
+    ( payload: GetScheduleDetailRequest, onSuccess?: Function, onError?: Function ): GetScheduleDetailAction => {
+        return {
+            type: SCHEDULE_ACTION_TYPE.GET_DETAIL,
+            payload,
+            onSuccess,
+            onError
+        }
+    };
 
 export const actionGetScheduleDetailSuccess = ( payload: Schedule): GetScheduleDetailSuccessAction => {
     return { type: SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS, payload }

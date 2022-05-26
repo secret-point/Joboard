@@ -48,9 +48,17 @@ export const GetScheduleDetailEpic = (action$: Observable<any>) => {
                         return response
                     }),
                     map((data: Schedule) => {
+                        if(action.onSuccess) {
+                            action.onSuccess()
+                        }
+
                         return actionGetScheduleDetailSuccess(data);
                     }),
                     catchError((error: any) => {
+                        if(action.onError) {
+                            action.onError()
+                        }
+
                         return of(actionGetScheduleDetailFailed({
                             error
                         }));

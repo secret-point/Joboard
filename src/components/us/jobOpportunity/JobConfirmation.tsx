@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Col } from "@amzn/stencil-react-components/layout";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import JobConfirmationCard from "../../common/jobOpportunity/JobConfirmationCard";
 import { H4, Text } from '@amzn/stencil-react-components/text';
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
@@ -8,11 +8,13 @@ import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
-import queryString from "query-string";
-import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
-import { getLocale } from "../../../utils/helper";
-import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { CommonColors } from "../../../utils/colors";
+import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
+import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { JOB_OPPORTUNITY } from "../../pageRoutes";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import queryString from "query-string";
 
 interface MapStateToProps {
     schedule: ScheduleState
@@ -24,17 +26,14 @@ const JobConfirmation = ( props: MapStateToProps ) => {
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const applicationId = queryParams.applicationId;
-    const jobId = queryParams.jobId;
-    const scheduleDetail = schedule?.scheduleDetail;
+    const scheduleDetail = schedule.scheduleDetail;
+    const { scheduleId } = queryParams;
 
     useEffect(() => {
-        const request: GetScheduleListByJobIdRequest = {
-            jobId,
-            applicationId,
-            locale: getLocale()
-        }
-        boundGetScheduleListByJobId(request);
+        boundGetScheduleDetail({
+            locale: getLocale(),
+            scheduleId: scheduleId
+        })
     }, []);
 
     useEffect(() => {
@@ -43,6 +42,24 @@ const JobConfirmation = ( props: MapStateToProps ) => {
 
     return (
         <Col gridGap={10}>
+            <Row
+                gridGap={5}
+                alignItems="center"
+                width="fit-content"
+                color={CommonColors.Blue70}
+                padding='S200'
+                onClick={() => {
+                    routeToAppPageWithPath(JOB_OPPORTUNITY);
+                }}
+                style={{ cursor: 'pointer' }}
+            >
+                <IconArrowLeft size={IconSize.ExtraSmall}/>
+                <Text fontSize="T100" fontWeight="medium">
+                    {
+                        t('BB-JobOpportunity-back-to-indexPage-link', 'View Jobs')
+                    }
+                </Text>
+            </Row>
             <Col className="jobConfirmationHeader" gridGap={8} padding={{ top: 'S300' }}>
                 <H4>{scheduleDetail?.externalJobTitle}</H4>
                 <Text fontSize='T200'>{scheduleDetail?.briefJobDescription}</Text>

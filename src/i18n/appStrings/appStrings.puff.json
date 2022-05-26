@@ -37,6 +37,30 @@
         "BB-StepHeader-view-progress-button": {
             "note": "Text for the button to select or confirm job",
             "value": "View progress"
+        },
+        "BB-PreconsentPage-preview-steps-button": {
+            "note": "Text for the button to preview application steps",
+            "value": "Preview Steps"
+        },
+        "BB-PreconsentPage-next-Button": {
+            "note": "Text for the button to go to next page ( consent page )",
+            "value": "Next"
+        },
+        "BB-ConsentPage-qualification-criteria-header-text": {
+            "note": "Text for application qualification criteria",
+            "value": "By applying, you confirm that:"
+        },
+        "BB-ConsentPage-data-policy-header-text": {
+            "note": "Text for the user data policy agreement title",
+            "value": "By applying, you read and agree to the"
+        },
+        "BB-ConsentPage-user-data-Policy-button": {
+            "note": "Text for the button to open user data policy page",
+            "value": "User Data Policy"
+        },
+        "BB-ConsentPage-create-application-button": {
+            "note": "Text for the create application button",
+            "value": "Create Application"
         }
     }
 }

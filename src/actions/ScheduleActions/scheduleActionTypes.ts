@@ -30,6 +30,8 @@ export interface GetScheduleListByJobIdFailedAction extends Action {
 export interface GetScheduleDetailAction extends Action {
     type: SCHEDULE_ACTION_TYPE.GET_DETAIL;
     payload: GetScheduleDetailRequest;
+    onSuccess?: Function,
+    onError?: Function
 }
 
 export interface GetScheduleDetailSuccessAction extends Action {

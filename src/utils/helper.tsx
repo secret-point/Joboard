@@ -1,7 +1,6 @@
 import React from "react";
-import { QueryParamItem } from "./types/common";
+import { Locale, QueryParamItem, Schedule } from "./types/common";
 import { history } from "../store/store";
-import { Locale } from "./types/common";
 import Cookies from "js-cookie";
 import { HVH_LOCALE } from "./constants/common";
 
@@ -62,4 +61,15 @@ export const getLocale = (): Locale => {
     const locale: string = Cookies.get(HVH_LOCALE) || '';
 
     return  locale ? locale as Locale : Locale.enUS;
+}
+
+export const renderScheduleFullAddress = (schedule: Schedule): string => {
+    const state = schedule.state || '';
+    const city = schedule.city || '';
+    const address = schedule.address || '';
+    const postalCode = schedule.postalCode || '';
+
+    const stateAndPostal = `${state ? `${state}${postalCode ? ` ${postalCode}` : ''}` : `${postalCode}`}`;
+
+    return `${address}${city && address && `, `}${city}${stateAndPostal && (city || address) && `, `}${stateAndPostal}`;
 }

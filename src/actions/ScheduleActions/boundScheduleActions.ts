@@ -5,5 +5,5 @@ import { actionGetScheduleDetail, actionGetScheduleListByJobId } from "./schedul
 export const boundGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ) =>
     store.dispatch(actionGetScheduleListByJobId(payload));
 
-export const boundGetScheduleDetail = ( payload: GetScheduleDetailRequest ) =>
-    store.dispatch(actionGetScheduleDetail(payload));
+export const boundGetScheduleDetail = ( payload: GetScheduleDetailRequest, onSuccess?: Function, onError?: Function ) =>
+    store.dispatch(actionGetScheduleDetail(payload, onSuccess, onError));

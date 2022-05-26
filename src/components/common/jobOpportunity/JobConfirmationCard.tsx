@@ -12,10 +12,10 @@ import {
 } from '@amzn/stencil-react-components/icons';
 import { Link } from "@amzn/stencil-react-components/link";
 import VideoContainer from "../VideoContainer";
-import { boundSetJobOpportunityPage } from "../../../actions/UiActions/boundUi";
-import { JOB_OPPORTUNITY_PAGE } from "../../../utils/enums/common";
 import { Schedule } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
+import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
+import { JOB_DESCRIPTION } from "../../pageRoutes";
 
 interface JobConfirmationCardProps {
     schedule: Schedule
@@ -65,7 +65,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconGlobe size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{`${address}, ${city}, ${state} ${postalCode}`}</Text>
+                        <Text fontSize="T100">{renderScheduleFullAddress(schedule)}</Text>
                     </Row>
                 </Col>
             </Row>
@@ -81,7 +81,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                 padding={'S200'}
                 className='jobDetailLink'
                 onClick={() => {
-                    boundSetJobOpportunityPage(JOB_OPPORTUNITY_PAGE.JOB_DESCRIPTION);
+                    routeToAppPageWithPath(JOB_DESCRIPTION);
                 }}
             >
                 <Text fontWeight="medium">

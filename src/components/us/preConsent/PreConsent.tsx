@@ -31,7 +31,7 @@ const PreConsent = ( props: MapStateToProps ) => {
                     {t("BB-PreConsentPage-banner-journey-starts", "Your journey to becoming an Amazon Associate starts here.")}
                 </Text>
                 <Button variant={ButtonVariant.Secondary} style={{ width: '35%' }}>
-                    Preview Steps
+                    {t("BB-PreconsentPage-preview-steps-button", "Preview Steps")}
                 </Button>
                 <img
                     id="preConsentImg"
@@ -46,8 +46,9 @@ const PreConsent = ( props: MapStateToProps ) => {
                 <Button
                     variant={ButtonVariant.Primary}
                     style={{ width: '90%', margin: "auto" }}
-                    onClick={onGoNextPage}>
-                    Next
+                    onClick={onGoNextPage}
+                >
+                    {t("BB-PreconsentPage-next-Button", "Next")}
                 </Button>
             </Col>
         </Col>

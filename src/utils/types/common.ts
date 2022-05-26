@@ -118,6 +118,7 @@ export interface Job {
     blackbirdPortalURL: string,
     postingStatus: string,
     dspEnabled?: boolean | null,
+    qualificationCriteria: string[];
 }
 
 export interface AvailableSchedule {

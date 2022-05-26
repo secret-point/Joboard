@@ -3,27 +3,17 @@ import {
     GET_ENV_CONFIG_TYPE,
     GET_INITIAL_APP_CONFIG_TYPE
 } from "../actions/AppConfigActions/appConfigActionTypes";
-import { GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
+import { UI_ACTION } from "../actions/UiActions/uiActionTypes";
 import { GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
-import {
-    CREATE_APPLICATION_TYPE,
-    GET_APPLICATION_TYPE,
-} from "../actions/ApplicationActions/applicationActionTypes";
+import { CREATE_APPLICATION_TYPE, GET_APPLICATION_TYPE, } from "../actions/ApplicationActions/applicationActionTypes";
 import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionTypes";
-import { JOB_OPPORTUNITY_PAGE } from "../utils/enums/common";
 
 export interface uiState {
     isLoading: boolean;
-    jobOpportunity: {
-        currentPage: JOB_OPPORTUNITY_PAGE
-    }
 }
 
 export const initUiState: uiState = {
-    isLoading: false,
-    jobOpportunity: {
-        currentPage: JOB_OPPORTUNITY_PAGE.INDEX
-    }
+    isLoading: false
 }
 
 export default function uiReducer( state: uiState = initUiState, action: UI_ACTION | APP_CONFIG_ACTIONS | any ): uiState {
@@ -58,15 +48,6 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 ...state,
                 isLoading: false
             };
-
-        case GET_STATE_CONFIG_TYPE.SET_JOB_OPPORTUNITY_PAGE:
-
-            return {
-                ...state,
-                jobOpportunity: {
-                    currentPage: action.payload
-                }
-            }
 
         default:
             return state;

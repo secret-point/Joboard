@@ -14,11 +14,10 @@ import {
     IconSize
 } from '@amzn/stencil-react-components/icons';
 import { Link } from "@amzn/stencil-react-components/link";
-import { boundSetJobOpportunityPage } from "../../../actions/UiActions/boundUi";
-import { JOB_OPPORTUNITY_PAGE } from "../../../utils/enums/common";
-import { Schedule } from "../../../utils/types/common";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { getLocale } from "../../../utils/helper";
+import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
+import { QueryParamItem, Schedule } from "../../../utils/types/common";
+import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
+import { JOB_CONFIRMATION } from "../../pageRoutes";
 
 interface ScheduleCardProps {
     scheduleDetail: Schedule
@@ -35,11 +34,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
         signOnBonus,
         firstDayOnSite,
         currencyCode,
-        postalCode,
-        city,
-        state,
         scheduleText,
-        address,
         totalPayRate,
         tagLine,
         externalJobTitle,
@@ -51,11 +46,11 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
             className="scheduleCardContainer"
             padding={{ bottom: 'S300' }}
             onClick={() => {
-                boundSetJobOpportunityPage(JOB_OPPORTUNITY_PAGE.JOB_CONFIRMATION);
-                boundGetScheduleDetail({
-                    locale: getLocale(),
-                    scheduleId: scheduleDetail.scheduleId
-                })
+                const queryParamItem: QueryParamItem = {
+                    paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+                    paramValue: scheduleDetail.scheduleId
+                }
+                routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
             }}
         >
             <Row className="scheduleCardHeader" gridGap={12} padding="S300" backgroundColor={CommonColors.Neutral10}>
@@ -92,7 +87,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconGlobe size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{`${address}, ${city}, ${state} ${postalCode}`}</Text>
+                        <Text fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
                     </Row>
                 </Col>
                 <Col>

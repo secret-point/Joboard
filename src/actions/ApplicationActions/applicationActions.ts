@@ -1,18 +1,14 @@
 import { Application } from "../../utils/types/common";
-import { 
-    CreateApplicationRequestDS, 
-    CreateApplicationResponseDS, 
-    GetApplicationRequest
-} from "../../utils/apiTypes";
+import { CreateApplicationRequestDS, CreateApplicationResponseDS, GetApplicationRequest } from "../../utils/apiTypes";
 import {
+    CREATE_APPLICATION_TYPE,
+    CreateApplicationActionDS,
+    CreateApplicationFailedActionDS,
+    CreateApplicationSuccessActionDS,
     GET_APPLICATION_TYPE,
     GetApplicationAction,
     GetApplicationFailedAction,
     GetApplicationSuccessAction,
-    CreateApplicationActionDS,
-    CREATE_APPLICATION_TYPE,
-    CreateApplicationSuccessActionDS,
-    CreateApplicationFailedActionDS,
 } from "./applicationActionTypes";
 
 export const actionGetApplication = ( payload: GetApplicationRequest ): GetApplicationAction => {
@@ -27,22 +23,15 @@ export const actionGetApplicationFailed = ( payload: any ): GetApplicationFailed
     return { type: GET_APPLICATION_TYPE.FAILED, payload }
 };
 
-export const actionCreateApplicationDS = (
-    payload: CreateApplicationRequestDS,
-    onSuccess?: Function,
-    onError?: Function
-): CreateApplicationActionDS => {
-    return { type: CREATE_APPLICATION_TYPE.CREATE, payload, onSuccess, onError }
-};
+export const actionCreateApplicationDS =
+    ( payload: CreateApplicationRequestDS, onSuccess?: Function, onError?: Function ): CreateApplicationActionDS => {
+        return { type: CREATE_APPLICATION_TYPE.CREATE, payload, onSuccess, onError }
+    };
 
-export const actionCreateApplicationDSSuccess = (
-    payload: CreateApplicationResponseDS,
-): CreateApplicationSuccessActionDS => {
+export const actionCreateApplicationDSSuccess = ( payload: CreateApplicationResponseDS, ): CreateApplicationSuccessActionDS => {
     return { type: CREATE_APPLICATION_TYPE.SUCCESS, payload }
 };
 
-export const actionCreateApplicationDSFailed = (
-    payload: any
-): CreateApplicationFailedActionDS => {
+export const actionCreateApplicationDSFailed = ( payload: any ): CreateApplicationFailedActionDS => {
     return { type: CREATE_APPLICATION_TYPE.FAILED, payload }
 };

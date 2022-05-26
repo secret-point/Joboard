@@ -17,6 +17,7 @@ import { boundCreateApplicationDS } from "../../../actions/ApplicationActions/bo
 import { CreateApplicationRequestDS } from "../../../utils/apiTypes";
 import { uiState } from "../../../reducers/ui.reducer";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState;
@@ -35,6 +36,7 @@ const ConsentPage = (props: MapStateToProps) => {
     const jobId = queryParams.jobId;
     const jobDetail = job.results;
     const pageName = getPageNameFromPath(pathname);
+    const qualificationCriteria= jobDetail?.qualificationCriteria || [];
 
     useEffect(()=>{
         jobId && boundGetJobDetail({jobId:jobId, locale:Locale.enUS})
@@ -60,14 +62,20 @@ const ConsentPage = (props: MapStateToProps) => {
 
     return (
         <Col gridGap="m" padding="n">
-            <h1>By applying, you confirm that:</h1>
+            <h1>
+                {t("BB-ConsentPage-qualification-criteria-header-text","By applying, you confirm that:")}
+            </h1>
             <ul>
-                <li>You are at least 18 years old.</li>
-                <li>You have at least a high school diploma or equivalent.</li>
-                <li>You are willing to submit a pre-employment drug test.</li>
+                {
+                    qualificationCriteria.map(item => (
+                        <li key={item}>{item}</li>
+                    ))
+                }
             </ul>
             <dl>
-                <Text textAlign="center" color="gray" fontSize="0.8em">By applying, you read and agree to the</Text>
+                <Text textAlign="center" color="gray" fontSize="0.8em">
+                    {t("BB-ConsentPage-data-policy-header-text", "By applying, you read and agree to the")}
+                </Text>
                 <WithFlyout renderFlyout={renderFlyout}>
                     {( { open } ) => (
                         <Button
@@ -76,7 +84,10 @@ const ConsentPage = (props: MapStateToProps) => {
                                 margin: "0.5em 0",
                                 width: "100%"
                             }}
-                            onClick={() => open()}>User Data Policy</Button>
+                            onClick={() => open()}
+                        >
+                            {t("BB-ConsentPage-user-data-Policy-button", "User Data Policy")}
+                        </Button>
                     )}
                 </WithFlyout>
                 <Button
@@ -88,11 +99,11 @@ const ConsentPage = (props: MapStateToProps) => {
                             jobId,
                             dspEnabled:job.results?.dspEnabled,
                         }
-                        
+
                         boundCreateApplicationDS(payload, (applicationId:string)=>routeToAppPageWithPath(JOB_OPPORTUNITY, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId}]));
                     }}
                 >
-                    Create Application
+                    {t("BB-ConsentPage-create-application-button", "Create Application")}
                 </Button>
             </dl>
         </Col>

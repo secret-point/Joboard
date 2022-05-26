@@ -38,8 +38,7 @@ const JobOpportunity = (props: JobOpportunityMergedProps) => {
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const applicationId = queryParams.applicationId;
-    const jobId = queryParams.jobId;
+    const { applicationId, jobId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
     const scheduleData = schedule.scheduleList;

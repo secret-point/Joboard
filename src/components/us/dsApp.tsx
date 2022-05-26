@@ -4,10 +4,12 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import { CONSENT, JOB_OPPORTUNITY, PRE_CONSENT } from "../pageRoutes";
-import JobOpportunityContainer from "./jobOpportunity";
+import { CONSENT, JOB_CONFIRMATION, JOB_DESCRIPTION, JOB_OPPORTUNITY, PRE_CONSENT } from "../pageRoutes";
+import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
+import JobConfirmation from "./jobOpportunity/JobConfirmation";
+import JobDescription from "./jobOpportunity/JobDescription";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -41,7 +43,13 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
               <ConsentPage/>
             </Route>
             <Route path={`/${JOB_OPPORTUNITY}`} exact>
-              <JobOpportunityContainer/>
+              <JobOpportunity/>
+            </Route>
+            <Route path={`/${JOB_CONFIRMATION}`} exact>
+              <JobConfirmation/>
+            </Route>
+            <Route path={`/${JOB_DESCRIPTION}`} exact>
+              <JobDescription/>
             </Route>
           </Switch>
         </Router>
