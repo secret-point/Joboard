@@ -74,7 +74,11 @@ getInitialData()
             window.location.href = csApplicationURL;
             return;
         }
-        const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+        const hashParam = window.location.hash.split('?').slice(1).join('&');
+        const urlParams = window.location.search.length>0
+            ? `${window.location.search}&${hashParam}`
+            : `?${hashParam}`
+        const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(urlParams));
         if(queryParams["iframe"]) {
             const newURL = window.location.href.replace("&iframe=true", "");
             window.parent.window.location.href = newURL;
@@ -175,16 +179,15 @@ getInitialData()
         }
 
         if(!isNil(token)) {
-            /* TODO: Use react location lib for this */
             window.localStorage.setItem("accessToken", token);
-            const urlParams = { ...queryParams };
-            delete urlParams.token;
-            const requestQueryString = objectToQuerystring(urlParams);
+            const newUrlWithoutToken = decodeURIComponent(window.location.href)
+                .replace(`?token=${token}`,'')
+                .replace(`&token=${token}`,'');
 
             window.history.replaceState(
                 {},
                 document.title,
-                window.location.origin + window.location.pathname + requestQueryString
+                newUrlWithoutToken
             );
         }
 

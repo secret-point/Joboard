@@ -8,6 +8,7 @@ import propertyOf from "lodash/propertyOf";
 import { CS_DOMAIN_LIST } from "../constants";
 import { isArray } from "lodash";
 import ICandidateApplication from "../@types/ICandidateApplication";
+import store from "../store/store";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -305,4 +306,12 @@ export const addApplicationIdInUrl = (application?: ICandidateApplication) => {
 
 export const getPageNameFromPath = (path:string) => {
   return path.split("/")[1];
+};
+
+export const redirectToLoginCSDS = () => {
+  const state = store.getState();
+  const CSDomain = state?.appConfig?.results?.envConfig?.CSDomain;
+  let redirectUrl = window.location.href;
+  let url = `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+  window.location.assign(url);
 };

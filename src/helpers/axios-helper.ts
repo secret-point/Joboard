@@ -1,6 +1,6 @@
 import axios from "axios";
 import isNull from "lodash/isNull";
-import { launchAuthentication, pathByDomain } from "./utils";
+import { pathByDomain, redirectToLoginCSDS } from "./utils";
 
 export const getAccessToken = () => {
   const accessToken = window.localStorage.getItem("accessToken");
@@ -29,7 +29,7 @@ const errorHandler = (error: any) => {
   }
 
   if (error.response && error.response.status === 401) {
-    launchAuthentication();
+    redirectToLoginCSDS();
   } else if (error.response && error.response.status === 403) {
     window.location.assign(`${pathByDomain()}/#/403`);
   }

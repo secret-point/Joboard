@@ -5,7 +5,10 @@ import {
 } from "../actions/AppConfigActions/appConfigActionTypes";
 import { GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
 import { GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
-import { GET_APPLICATION_TYPE } from "../actions/ApplicationActions/applicationActionTypes";
+import {
+    CREATE_APPLICATION_TYPE,
+    GET_APPLICATION_TYPE,
+} from "../actions/ApplicationActions/applicationActionTypes";
 import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionTypes";
 import { JOB_OPPORTUNITY_PAGE } from "../utils/enums/common";
 
@@ -31,7 +34,7 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case GET_APPLICATION_TYPE.GET:
         case SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB:
         case SCHEDULE_ACTION_TYPE.GET_DETAIL:
-
+        case CREATE_APPLICATION_TYPE.CREATE:
             return {
                 ...state,
                 isLoading: true
@@ -49,7 +52,8 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_FAILED:
         case SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS:
         case SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED:
-
+        case CREATE_APPLICATION_TYPE.SUCCESS:
+        case CREATE_APPLICATION_TYPE.FAILED:
             return {
                 ...state,
                 isLoading: false

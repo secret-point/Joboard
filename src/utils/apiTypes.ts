@@ -26,3 +26,12 @@ export interface GetScheduleDetailRequest {
     locale: Locale,
     scheduleId: string
 }
+export interface CreateApplicationRequestDS {
+    jobId: string;
+    scheduleId?: string;
+    dspEnabled?: boolean | null;
+}
+
+export interface CreateApplicationResponseDS {
+    applicationId: string;
+}

@@ -6,7 +6,7 @@ import { actionGetJobDetailFailed, actionGetJobDetailSuccess } from "../actions/
 import { Job } from "../utils/types/common";
 import JobService from "../services/job-service";
 
-export const getJobDetailEpic = (action$: Observable<any>) => {
+export const GetJobDetailEpic = (action$: Observable<any>) => {
     return action$.pipe(
         ofType(GET_JOB_DETAIL_TYPE.GET),
         switchMap((action: GetJobDetailAction) =>

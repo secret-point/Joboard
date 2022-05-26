@@ -6,16 +6,21 @@ import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout
 import { Text } from "@amzn/stencil-react-components/text";
 import { routeToAppPageWithPath } from "../../../utils/helper";
 import { JOB_OPPORTUNITY } from "../../pageRoutes";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToLoginCSDS } from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
 import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { boundCreateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { CreateApplicationRequestDS } from "../../../utils/apiTypes";
+import { uiState } from "../../../reducers/ui.reducer";
+import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 
 interface MapStateToProps {
-    job: JobState
+    job: JobState;
+    ui: uiState
 }
 
 interface RenderFlyoutFunctionParams {
@@ -23,7 +28,8 @@ interface RenderFlyoutFunctionParams {
 }
 
 const ConsentPage = (props: MapStateToProps) => {
-    const { job } = props;
+    const { job, ui } = props;
+    const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const jobId = queryParams.jobId;
@@ -76,8 +82,14 @@ const ConsentPage = (props: MapStateToProps) => {
                 <Button
                     variant={ButtonVariant.Primary}
                     style={{ width: "100%" }}
+                    disabled={jobDetail && !isLoading? false : true}
                     onClick={() => {
-                        routeToAppPageWithPath(JOB_OPPORTUNITY)
+                        const payload: CreateApplicationRequestDS ={
+                            jobId,
+                            dspEnabled:job.results?.dspEnabled,
+                        }
+                        
+                        boundCreateApplicationDS(payload, (applicationId:string)=>routeToAppPageWithPath(JOB_OPPORTUNITY, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId}]));
                     }}
                 >
                     Create Application

@@ -1,3 +1,3 @@
 export const CONSENT: string = "consent";
-export const PRE_CONSENT: string = 'preconsent';
-export const JOB_OPPORTUNITY: string = 'jobOpportunity';
+export const PRE_CONSENT: string = 'pre-consent';
+export const JOB_OPPORTUNITY: string = 'job-opportunities';
