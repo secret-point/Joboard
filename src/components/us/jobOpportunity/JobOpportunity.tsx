@@ -20,6 +20,16 @@ import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { getLocale } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { ApplicationStepList } from "../../../utils/constants/common";
+import {
+    FlyoutContent,
+    FlyoutPosition,
+    RenderFlyoutFunctionParams,
+    WithFlyout
+} from "@amzn/stencil-react-components/flyout";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import SortSchedule from "../../common/jobOpportunity/SortSchedule";
+import FilterSchedule from "../../common/jobOpportunity/FilterSchedule";
 
 interface MapStateToProps {
     job: JobState,
@@ -33,7 +43,7 @@ interface JobOpportunityProps {
 
 type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
 
-const JobOpportunity = (props: JobOpportunityMergedProps) => {
+const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const { job, application, schedule } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
@@ -43,25 +53,61 @@ const JobOpportunity = (props: JobOpportunityMergedProps) => {
     const applicationData = application.results;
     const scheduleData = schedule.scheduleList;
 
-    useEffect(()=>{
-        jobId && boundGetJobDetail({jobId:jobId, locale:Locale.enUS})
-        applicationId && boundGetApplication({applicationId:applicationId, locale:Locale.enUS});
+    useEffect(() => {
+        jobId && boundGetJobDetail({ jobId: jobId, locale: Locale.enUS })
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: Locale.enUS });
         const request: GetScheduleListByJobIdRequest = {
             jobId,
             applicationId,
             locale: getLocale()
         }
         boundGetScheduleListByJobId(request);
-    },[]);
+    }, []);
 
-    useEffect(()=>{
+    useEffect(() => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);
-    },[jobDetail, applicationData]);
+    }, [jobDetail, applicationData]);
 
+
+    const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
+        <FlyoutContent
+            titleText={t('BB-JobOpportunity-sort-schedule-flyout-title', 'Sort By')}
+            onCloseButtonClick={close}
+            buttons={[
+                <Button onClick={close} variant={ButtonVariant.Primary}>
+                    {t('BB-JobOpportunity-sort-schedule-flyout-apply-Btn', 'Apply')}
+                </Button>
+            ]}
+            maxWidth='40vw'
+        >
+            <SortSchedule/>
+        </FlyoutContent>
+    )
+
+    const renderFilterScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
+        <FlyoutContent
+            titleText={t('BB-JobOpportunity-filter-schedule-flyout-title', 'Filter')}
+            onCloseButtonClick={close}
+            buttons={[
+                <Button onClick={close}>
+                    {t('BB-JobOpportunity-filter-schedule-flyout-reset-Btn', 'Reset')}
+                </Button>,
+                <Button onClick={close} variant={ButtonVariant.Primary}>
+                    {t('BB-JobOpportunity-filter-schedule-flyout-apply-Btn', 'Apply')}
+                </Button>
+            ]}
+            maxWidth='40vw'
+        >
+            <FilterSchedule/>
+        </FlyoutContent>
+    )
 
     return (
         <Col id='jobOpportunityContainer'>
-            <StepHeader jobTitle="Amazon Associate" applicationStep="" stepAction="1. Select job"/>
+            {
+                //TODO need to align how each application workflow is related to app steps
+            }
+            <StepHeader jobTitle={jobDetail?.jobTitle || ''} step={ApplicationStepList[0]}/>
             <Col id="jobOpportunityHeaderImageContainer">
                 <Image
                     id="jobOpportunityHeaderImage"
@@ -74,11 +120,11 @@ const JobOpportunity = (props: JobOpportunityMergedProps) => {
             </Col>
 
             <Col>
-                <Row padding={{top: 'S400'}}>
+                <Row padding={{ top: 'S400' }}>
                     <Row className="backToJobDashboardLink" gridGap={5}>
                         <IconArrowLeft size={IconSize.ExtraSmall} fontSize='T100'/>
                         <Text fontWeight="medium" fontSize='T200'>
-                            {t('BB-JobOpportunity-Go-To-Dashboard-Link','Go Back to Jobs Dashboard')}
+                            {t('BB-JobOpportunity-Go-To-Dashboard-Link', 'Go Back to Jobs Dashboard')}
                         </Text>
                     </Row>
                 </Row>
@@ -86,16 +132,33 @@ const JobOpportunity = (props: JobOpportunityMergedProps) => {
                 <Col className="scheduleListContainer" padding={{ top: 'S500' }}>
                     <Row className="scheduleListActionContainer">
                         <Row className="scheduleListActionItem" gridGap={5}>
-                            <IconHourGlass size={IconSize.ExtraSmall} fontSize='T100'/>
-                            <Text fontWeight="medium" fontSize='T100'>
-                                {t('BB-JobOpportunity-filter-button','Filter')}
-                            </Text>
+                            <WithFlyout
+                                renderFlyout={renderFilterScheduleFlyout}
+                                flyoutPosition={FlyoutPosition.Leading}
+                            >
+                                {( { open } ) => (
+                                    <Row onClick={() => open()} gridGap={8} alignItems="center">
+                                        <IconHourGlass size={IconSize.ExtraSmall}/>
+                                        <Text fontWeight="medium" fontSize='T200'>
+                                            {t('BB-JobOpportunity-filter-button', 'Filter')}
+                                        </Text>
+                                    </Row>
+                                )}
+                            </WithFlyout>
                         </Row>
-                        <Row className="scheduleListActionItem" gridGap={5}>
-                            <IconSort size={IconSize.ExtraSmall} fontSize='0.8em'/>
-                            <Text fontWeight="medium" fontSize='0.8em'>
-                                {t('BB-JobOpportunity-sort-button','Sort')}
-                            </Text>
+                        <Row
+                            className="scheduleListActionItem"
+                        >
+                            <WithFlyout renderFlyout={renderSortScheduleFlyout}>
+                                {( { open } ) => (
+                                    <Row onClick={() => open()} gridGap={8} alignItems="center">
+                                        <IconSort size={IconSize.ExtraSmall}/>
+                                        <Text fontWeight="medium" fontSize='T200'>
+                                            {t('BB-JobOpportunity-sort-button', 'Sort')}
+                                        </Text>
+                                    </Row>
+                                )}
+                            </WithFlyout>
                         </Row>
                     </Row>
 

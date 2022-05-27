@@ -187,3 +187,98 @@ a {
   height: 100vh;
 }
 
+#applicationStepContainer {
+  .steps {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Amazon Ember", Helvetica, sans-serif;
+    line-height: 1.5715;
+    list-style: none;
+    display: flex;
+    color: #5c7274;
+    width: 100%;
+    &.steps-vertical {
+      display: flex;
+      flex-direction: column;
+      .steps-item {
+        display: block;
+        overflow: visible;
+        &:not(:last-child) {
+          .steps-item-container {
+            .steps-item-tail {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 16px;
+              width: 2px;
+              height: 100%;
+              padding: 38px 0 6px;
+              background-color: #5c7274;
+              z-index: -99;
+            }
+            .steps-item-content {
+              display: block;
+              min-height: 48px;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .steps-item-icon {
+          float: left;
+          margin-right: 16px;
+        }
+
+        &:last-child {
+          .ant-steps-item-tail {
+            position: absolute;
+            top: 0;
+            left: 16px;
+            width: 2px;
+            height: 100%;
+            padding: 38px 0 6px;
+          }
+        }
+      }
+    }
+
+    .steps-item-icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 8px 0 0;
+      font-size: 16px;
+      font-family: "Amazon Ember", Helvetica, sans-serif;
+      line-height: 28px;
+      text-align: center;
+      border: 2px solid #5c7274;
+      background-color: #ffffff;
+      border-radius: 32px;
+      -webkit-transition: background-color 0.3s, border-color 0.3s;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .steps-item-content {
+      display: inline-block;
+      vertical-align: top;
+      color: #232f3e;
+    }
+
+    .steps-item {
+      position: relative;
+      display: inline-block;
+      flex: 1;
+      overflow: hidden;
+      vertical-align: top;
+      z-index: 1000;
+
+      .steps-item-container {
+        outline: none;
+      }
+    }
+  }
+}
+
+#DaysHoursFilterContainer {
+  width: 100%;
+}

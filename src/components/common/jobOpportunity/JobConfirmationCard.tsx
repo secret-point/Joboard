@@ -28,11 +28,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
         hoursPerWeek,
         firstDayOnSite,
         currencyCode,
-        postalCode,
-        city,
-        state,
         scheduleText,
-        address,
         totalPayRate,
         jobPreviewVideo,
         scheduleBannerText

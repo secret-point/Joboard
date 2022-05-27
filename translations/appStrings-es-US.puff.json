@@ -61,6 +61,126 @@
         "BB-ConsentPage-create-application-button": {
             "note": "Text for the create application button",
             "value": "Crear aplicación"
+        },
+        "BB-StepHeader-view-progress-flyout-title": {
+            "note": "Text for view progress flyout title",
+            "value": "Ver progreso"
+        },
+        "BB-StepHeader-view-progress-flyout-close-button": {
+            "note": "Text for view progress flyout close button",
+            "value": "Hecho"
+        },
+        "BB-ApplicationSteps-select-job-text": {
+            "note": "Text form select job application step",
+            "value": "Seleccionar trabajo"
+        },
+        "BB-ApplicationSteps-complete-required-document-text": {
+            "note": "Text for complete required documents application step",
+            "value": "Completar documentos requeridos"
+        },
+        "BB-ApplicationSteps-schedule-preHire-appt-text": {
+            "note": "Text for Schedule pre-hire appointment application step",
+            "value": "Programar cita previa a la contratación"
+        },
+        "BB-ApplicationSteps-complete-assessment-text": {
+            "note": "Text for complete assessment application step",
+            "value": "Completar una evaluación (~15 minutos)"
+        },
+        "BB-JobOpportunity-filter-schedule-flyout-title": {
+            "note": "Text for filter schedule flyout title",
+            "value": "Filtrar"
+        },
+        "BB-JobOpportunity-filter-schedule-flyout-reset-Btn": {
+            "note": "Text for filter schedule flyout reset button",
+            "value": "Reiniciar"
+        },
+        "BB-JobOpportunity-filter-schedule-flyout-apply-Btn": {
+            "note": "Text for filter schedule flyout reset button",
+            "value": "Aplicar"
+        },
+        "BB-JobOpportunity-sort-schedule-flyout-apply-Btn": {
+            "note": "Text for sort schedule flyout apply button",
+            "value": "Aplicar"
+        },
+        "BB-JobOpportunity-sort-schedule-flyout-title": {
+            "note": "Text for sort schedule flyout title",
+            "value": "Ordenar por"
+        },
+        "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least": {
+            "note": "Text for sort schedule by payRate from highest to lowest",
+            "value": "Tasa de pago - de mayor a menor"
+        },
+        "BB-JobOpportunity-sort-schedule-by-hours-most-to-least": {
+            "note": "Text for sort schedule by hours from most to least",
+            "value": "Horas - De mayor a menor"
+        },
+        "BB-JobOpportunity-sort-schedule-by-hours-least-to-most": {
+            "note": "Text for sort schedule by hours from least to most",
+            "value": "Horas - De menor a mayor"
+        },
+        "BB-DaysHoursFilter-title-text": {
+            "note": "Text for the title of DaysHours Filter",
+            "value": "Filtrar Horarios"
+        },
+        "BB-DayName-Monday": {
+            "note": "Text for Monday",
+            "value": "Lunes"
+        },
+        "BB-DayName-Tuesday": {
+            "note": "Text for Tuesday",
+            "value": "Martes"
+        },
+        "BB-DayName-Wednesday": {
+            "note": "Text for Wednesday",
+            "value": "Miércoles"
+        },
+        "BB-DayName-Thursday": {
+            "note": "Text for Thursday",
+            "value": "Jueves"
+        },
+        "BB-DayName-Friday": {
+            "note": "Text for Friday",
+            "value": "Viernes"
+        },
+        "BB-DayName-Saturday": {
+            "note": "Text for Saturday",
+            "value": "Sábado"
+        },
+        "BB-DayName-Sunday": {
+            "note": "Text for Sunday",
+            "value": "Domingo"
+        },
+        "BB-TimeRange-start-time-select-label-text": {
+            "note": "Text for start time select input label text",
+            "value": "Hora de inicio"
+        },
+        "BB-TimeRange-end-time-select-label-text": {
+            "note": "Text for end time select input label text",
+            "value": "Hora de finalización"
+        },
+        "BB-FilterSchedule-DesiredHours-Upto-10-hours": {
+            "note": "Text for Desired Hours up to 10 hours",
+            "value": "Hasta 10 horas"
+        },
+        "BB-FilterSchedule-DesiredHours-Upto-20-hours": {
+            "note": "Text for Desired Hours up to 20 hours",
+            "value": "Hasta 20 horas"
+        },
+        "BB-FilterSchedule-DesiredHours-Upto-30-hours": {
+            "note": "Text for Desired Hours up to 30 hours",
+            "value": "Hasta 30 horas"
+        },
+        "BB-FilterSchedule-DesiredHours-Upto-40-hours": {
+            "note": "Text for Desired Hours up to 40 hours",
+            "value": "Hasta 40 horas"
+        },
+        "BB-FilterSchedule-desired-hour-select-place-holder": {
+            "note": "Text for desired hours select input place holder",
+            "value": "Seleccione las horas deseadas"
+        },
+        "BB-FilterSchedule-desired-hour-select-label-text": {
+            "note": "Text for desired hours select input label text",
+            "value": "Horas deseadas por semana"
         }
     }
 }

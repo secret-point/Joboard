@@ -1,4 +1,5 @@
-import { QUERY_PARAMETER_NAME } from "../enums/common";
+import { QUERY_PARAMETER_NAME, SCHEDULE_FILTER_TYPE } from "../enums/common";
+import { DesiredHoursPerWeekList } from "../constants/common";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -409,4 +410,37 @@ export enum BGCVendorType {
 export interface JobReferral {
     hasReferral: boolean | string;
     referralInfo: string;
+}
+
+export interface ApplicationStep {
+    stepNumber: number;
+    title: string,
+    description?: string;
+    titleTranslationKey: string;
+    descriptionTranslationKey?: string;
+}
+
+export interface ScheduleSortBy {
+    title: string,
+    value: SCHEDULE_FILTER_TYPE,
+    translationKey: string
+}
+
+export interface DayHoursFilter {
+    day: string;
+    isActive: boolean;
+    startTime: string;
+    endTime: string;
+    dayTranslationKey: string;
+}
+
+export interface TimeRangeHoursData {
+    time: string,
+    hours: number,
+}
+
+export interface DesiredHoursPerWeek {
+    title: string,
+    value: number,
+    translationKey: string
 }
