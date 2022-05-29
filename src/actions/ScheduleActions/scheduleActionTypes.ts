@@ -1,6 +1,7 @@
 import { Action } from "redux";
 import { GetScheduleDetailRequest, GetScheduleListByJobIdRequest } from "../../utils/apiTypes";
 import { Schedule } from "../../utils/types/common";
+import { ScheduleStateFilters } from "../../reducers/schedule.reducer";
 
 export enum SCHEDULE_ACTION_TYPE {
     GET_LIST_BY_JOB = 'GET_SCHEDULE_LIST_BY_JOB_ID',
@@ -8,8 +9,8 @@ export enum SCHEDULE_ACTION_TYPE {
     GET_LIST_BY_JOB_FAILED = 'GET_SCHEDULE_LIST_BY_JOB_ID_FAILED',
     GET_DETAIL = "GET_SCHEDULE_DETAIL",
     GET_DETAIL_SUCCESS = "GET_SCHEDULE_DETAIL_SUCCESS",
-    GET_DETAIL_FAILED = "GET_SCHEDULE_DETAIL_FAILED"
-
+    GET_DETAIL_FAILED = "GET_SCHEDULE_DETAIL_FAILED",
+    UPDATE_FILTERS = "UPDATE_SCHEDULE_FILTERS"
 }
 
 export interface GetScheduleListByJobIdAction extends Action {
@@ -44,10 +45,16 @@ export interface GetScheduleDetailFailedAction extends Action {
     payload: any;
 }
 
+export interface UpdateScheduleFiltersAction extends Action {
+    type: SCHEDULE_ACTION_TYPE.UPDATE_FILTERS;
+    payload: ScheduleStateFilters
+}
+
 export type ScheduleActions =
     GetScheduleListByJobIdAction |
     GetScheduleListByJobIdSuccessAction |
     GetScheduleListByJobIdFailedAction |
     GetScheduleDetailAction |
     GetScheduleDetailSuccessAction |
-    GetScheduleDetailFailedAction;
+    GetScheduleDetailFailedAction |
+    UpdateScheduleFiltersAction;

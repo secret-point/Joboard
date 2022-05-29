@@ -158,21 +158,9 @@
             "note": "Text for end time select input label text",
             "value": "Start Time"
         },
-        "BB-FilterSchedule-DesiredHours-Upto-10-hours": {
-            "note": "Text for Desired Hours up to 10 hours",
-            "value": "Upto 10 hours"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-20-hours": {
-            "note": "Text for Desired Hours up to 20 hours",
-            "value": "Upto 20 hours"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-30-hours": {
-            "note": "Text for Desired Hours up to 30 hours",
-            "value": "Upto 30 hours"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-40-hours": {
-            "note": "Text for Desired Hours up to 40 hours",
-            "value": "Upto 40 hours"
+        "BB-FilterSchedule-DesiredHours-Upto-hours": {
+            "note": "Text for Desired Hours up to a certain hours",
+            "value": "Upto {hourNumber} hours"
         },
         "BB-FilterSchedule-desired-hour-select-place-holder": {
             "note": "Text for desired hours select input place holder",

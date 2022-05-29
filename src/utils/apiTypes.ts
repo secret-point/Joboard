@@ -1,5 +1,4 @@
-import { Locale } from "./types/common";
-import { AvailableFilter } from "../@types/IPayload";
+import { AvailableFilter, Locale } from "./types/common";
 
 export interface GetJobDetailRequest {
     locale: Locale;

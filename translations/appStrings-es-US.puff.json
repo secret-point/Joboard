@@ -158,21 +158,9 @@
             "note": "Text for end time select input label text",
             "value": "Hora de finalización"
         },
-        "BB-FilterSchedule-DesiredHours-Upto-10-hours": {
-            "note": "Text for Desired Hours up to 10 hours",
-            "value": "Hasta 10 horas"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-20-hours": {
-            "note": "Text for Desired Hours up to 20 hours",
-            "value": "Hasta 20 horas"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-30-hours": {
-            "note": "Text for Desired Hours up to 30 hours",
-            "value": "Hasta 30 horas"
-        },
-        "BB-FilterSchedule-DesiredHours-Upto-40-hours": {
-            "note": "Text for Desired Hours up to 40 hours",
-            "value": "Hasta 40 horas"
+        "BB-FilterSchedule-DesiredHours-Upto-hours": {
+            "note": "Text for Desired Hours up to a certain hours",
+            "value": "Hasta {hourNumber} horas"
         },
         "BB-FilterSchedule-desired-hour-select-place-holder": {
             "note": "Text for desired hours select input place holder",

@@ -1,5 +1,4 @@
-import { QUERY_PARAMETER_NAME, SCHEDULE_FILTER_TYPE } from "../enums/common";
-import { DesiredHoursPerWeekList } from "../constants/common";
+import { DAYS_OF_WEEK, DESIRED_WORK_HOURS, QUERY_PARAMETER_NAME, SCHEDULE_FILTER_TYPE } from "../enums/common";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -50,16 +49,16 @@ export interface Filter {
 }
 
 export interface SchedulePreference {
-    MONDAY: day;
-    TUESDAY: day;
-    WEDNESDAY: day;
-    THURSDAY: day;
-    FRIDAY: day;
-    SATURDAY: day;
-    SUNDAY: day;
+    MONDAY?: Day;
+    TUESDAY?: Day;
+    WEDNESDAY?: Day;
+    THURSDAY?: Day
+    FRIDAY?: Day;
+    SATURDAY?: Day;
+    SUNDAY?: Day;
 }
 
-export interface day {
+export interface Day {
     startTime: string;
     endTime: string;
 }
@@ -427,7 +426,7 @@ export interface ScheduleSortBy {
 }
 
 export interface DayHoursFilter {
-    day: string;
+    day: DAYS_OF_WEEK;
     isActive: boolean;
     startTime: string;
     endTime: string;
@@ -441,6 +440,6 @@ export interface TimeRangeHoursData {
 
 export interface DesiredHoursPerWeek {
     title: string,
-    value: number,
+    value: DESIRED_WORK_HOURS,
     translationKey: string
 }

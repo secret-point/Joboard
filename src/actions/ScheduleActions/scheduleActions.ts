@@ -6,9 +6,11 @@ import {
     GetScheduleListByJobIdAction,
     GetScheduleListByJobIdFailedAction,
     GetScheduleListByJobIdSuccessAction,
-    SCHEDULE_ACTION_TYPE
+    SCHEDULE_ACTION_TYPE,
+    UpdateScheduleFiltersAction
 } from "./scheduleActionTypes";
 import { Schedule } from "../../utils/types/common";
+import { ScheduleStateFilters } from "../../reducers/schedule.reducer";
 
 export const actionGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ): GetScheduleListByJobIdAction => {
     return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB, payload }
@@ -39,3 +41,10 @@ export const actionGetScheduleDetailSuccess = ( payload: Schedule): GetScheduleD
 export const actionGetScheduleDetailFailed = ( payload: any ): GetScheduleDetailFailedAction => {
     return { type: SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED, payload }
 };
+
+export const actionUpdateScheduleFilters = (payload: ScheduleStateFilters): UpdateScheduleFiltersAction => {
+    return {
+        type: SCHEDULE_ACTION_TYPE.UPDATE_FILTERS,
+        payload
+    }
+}

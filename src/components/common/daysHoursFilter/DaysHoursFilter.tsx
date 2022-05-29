@@ -15,6 +15,7 @@ interface DaysHoursFilterProps {
 }
 
 const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
+
   const { defaultFilter, onValueChange, label } = props;
   const [daysFilters, setDaysFilters] = useState<DayHoursFilter[]>(defaultFilter);
 
@@ -25,6 +26,16 @@ const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
 
     if(onValueChange) {
       onValueChange(newDaysFilters);
+    }
+  };
+
+  const getHours = (time: string) => {
+    if (time === "23:59") {
+      return -1;
+    } else {
+      let dateTime = moment(`1990-01-01T${time}:00.000Z`).utc();
+      const hour = dateTime.get("hour");
+      return hour;
     }
   };
 
@@ -72,7 +83,7 @@ const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
                   <Row gridGap={10} alignItems="center">
                     <ToggleSwitch
                         onChange={( e: any ) => onToggleChange(e, index)}
-                        disabled={!filter.isActive}
+                        checked={filter.isActive}
                     />
                     <Text color="accent1">{t(filter.dayTranslationKey, filter.day)}</Text>
                   </Row>
@@ -82,8 +93,8 @@ const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
                       dayIndex={index}
                       disabled={!filter.isActive}
                       onChange={onTimeChange}
-                      startTimeHours={filter.startTime}
-                      endTimeHours={filter.endTime}
+                      startTimeHours={getHours(filter.startTime)}
+                      endTimeHours={getHours(filter.endTime)}
                   />
                 </Col>
               </fieldset>

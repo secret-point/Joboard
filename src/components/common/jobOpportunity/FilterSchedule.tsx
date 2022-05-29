@@ -1,20 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Label, Text } from "@amzn/stencil-react-components/text";
 import { Select } from "@amzn/stencil-react-components/form";
-import { DaysHoursDefaultFilters, DesiredHoursPerWeekList } from "../../../utils/constants/common";
 import { translate as t } from "../../../utils/translator";
-import { DesiredHoursPerWeek } from "../../../utils/types/common";
+import { DayHoursFilter } from "../../../utils/types/common";
 import DaysHoursFilter from "../daysHoursFilter/DaysHoursFilter";
+import { ScheduleStateFilters } from "../../../reducers/schedule.reducer";
+import { DESIRED_WORK_HOURS } from "../../../utils/enums/common";
+import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/boundScheduleActions";
 
-const FilterSchedule = () => {
+interface FilterScheduleProps {
+    filters: ScheduleStateFilters
+}
 
-    const [desiredHour, setDesiredHour] = useState<DesiredHoursPerWeek>();
-    const [daysHour, setDaysHour] = useState();
+const FilterSchedule = ( props: FilterScheduleProps ) => {
 
-    useEffect(() => {
-        console.log(daysHour, 'daysHour', desiredHour?.value)
-    })
+    const { filters } = props;
+    const { daysHoursFilter, maxHoursPerWeek } = filters;
+
+    const updateMaxHoursPerWeek = ( key: DESIRED_WORK_HOURS ) => {
+        const newFilters = { ...filters };
+        newFilters.maxHoursPerWeek = key;
+        boundUpdateScheduleFilters(newFilters);
+    }
+
+    const updateDaysHourFilter = ( dayHourFilters: DayHoursFilter[] ) => {
+        const newFilters = { ...filters };
+        newFilters.daysHoursFilter = dayHourFilters;
+        boundUpdateScheduleFilters(newFilters);
+    }
+
     return (
         <Col gridGap={20}>
             <Col gridGap={10} width="100%" padding={{ right: 'S300' }}>
@@ -23,23 +38,24 @@ const FilterSchedule = () => {
                 </Label>
                 <Select
                     id="desiredHoursSelect"
-                    onChange={( option ) => setDesiredHour(option)}
-                    options={DesiredHoursPerWeekList}
+                    onChange={( option ) => updateMaxHoursPerWeek(option)}
+                    options={Object.values(DESIRED_WORK_HOURS)}
                     renderOption={option => (
                         <Row width='100%'>
-                            <Text> {t(option.translationKey, option.title)}</Text>
+                            <Text>{t('BB-FilterSchedule-DesiredHours-Upto-hours', "Upto {hourNumber} hours", { hourNumber: option })}</Text>
                         </Row>
                     )}
-                    renderNativeOption={option => t(option.translationKey, option.title)}
-                    renderSelectedValue={option => t(option.translationKey, option.title)}
-                    valueAccessor={option => t(option.translationKey, option.title)}
+                    defaultValue={maxHoursPerWeek}
+                    renderNativeOption={option => t('BB-FilterSchedule-DesiredHours-Upto-hours', "Upto {hourNumber} hours", { hourNumber: option })}
+                    renderSelectedValue={option => t('BB-FilterSchedule-DesiredHours-Upto-hours', "Upto {hourNumber} hours", { hourNumber: option })}
+                    valueAccessor={option => option}
                     placeholder={t("BB-FilterSchedule-desired-hour-select-place-holder", "Select Desired Hours")}
                 />
             </Col>
             <DaysHoursFilter
-                defaultFilter={DaysHoursDefaultFilters}
+                defaultFilter={daysHoursFilter}
                 label={t("BB-DaysHoursFilter-title-text", "Filter Schedules")}
-                onValueChange={setDaysHour}
+                onValueChange={updateDaysHourFilter}
             />
         </Col>
     )

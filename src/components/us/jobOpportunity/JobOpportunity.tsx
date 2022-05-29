@@ -18,7 +18,7 @@ import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
 import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { getLocale } from "../../../utils/helper";
+import { getLocale, handleApplyScheduleFilters, handleResetScheduleFilters } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import {
@@ -52,6 +52,7 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const jobDetail = job.results;
     const applicationData = application.results;
     const scheduleData = schedule.scheduleList;
+    const scheduleFilters = schedule.filters;
 
     useEffect(() => {
         jobId && boundGetJobDetail({ jobId: jobId, locale: Locale.enUS })
@@ -68,19 +69,24 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);
     }, [jobDetail, applicationData]);
 
-
     const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
         <FlyoutContent
             titleText={t('BB-JobOpportunity-sort-schedule-flyout-title', 'Sort By')}
             onCloseButtonClick={close}
             buttons={[
-                <Button onClick={close} variant={ButtonVariant.Primary}>
+                <Button
+                    onClick={() => {
+                        handleApplyScheduleFilters(scheduleFilters);
+                        close()
+                    }}
+                    variant={ButtonVariant.Primary}
+                >
                     {t('BB-JobOpportunity-sort-schedule-flyout-apply-Btn', 'Apply')}
                 </Button>
             ]}
             maxWidth='40vw'
         >
-            <SortSchedule/>
+            <SortSchedule filters={scheduleFilters}/>
         </FlyoutContent>
     )
 
@@ -89,16 +95,27 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
             titleText={t('BB-JobOpportunity-filter-schedule-flyout-title', 'Filter')}
             onCloseButtonClick={close}
             buttons={[
-                <Button onClick={close}>
+                <Button
+                    onClick={() => {
+                        handleResetScheduleFilters();
+                        close();
+                    }}
+                >
                     {t('BB-JobOpportunity-filter-schedule-flyout-reset-Btn', 'Reset')}
                 </Button>,
-                <Button onClick={close} variant={ButtonVariant.Primary}>
+                <Button
+                    onClick={() => {
+                        handleApplyScheduleFilters(scheduleFilters);
+                        close()
+                    }}
+                    variant={ButtonVariant.Primary}
+                >
                     {t('BB-JobOpportunity-filter-schedule-flyout-apply-Btn', 'Apply')}
                 </Button>
             ]}
             maxWidth='40vw'
         >
-            <FilterSchedule/>
+            <FilterSchedule filters={scheduleFilters}/>
         </FlyoutContent>
     )
 

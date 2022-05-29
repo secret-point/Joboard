@@ -11,33 +11,38 @@ interface TimeRangeProps {
     dayIndex: number;
     onChange: Function;
     id?: string;
-    startTimeHours: string;
-    endTimeHours: string;
+    startTimeHours: number;
+    endTimeHours: number;
 }
 
 const TimeRange = ( props: TimeRangeProps ) => {
 
     const { disabled, id, dayIndex, endTimeHours, startTimeHours, onChange } = props;
-    const [startTime, setStartTime] = useState(startTimeHours);
-    const [endTime, setEndTime] = useState(endTimeHours);
+    const [startTime, setStartTime] = useState<string>(startTimeHours.toString());
+    const [endTime, setEndTime] = useState<string>(endTimeHours.toString());
+
+    const startTimeOptions = populateTimeRangeHourData(startTime);
+    const endTimeOptions = populateTimeRangeHourData(startTime, true);
+    const defaultStartTime = startTimeHours >= 0 ? startTimeOptions[startTimeHours] : startTimeOptions[startTimeOptions.length - 1];
+    const defaultEndTime = endTimeHours >= 0 ? endTimeOptions[endTimeHours] : endTimeOptions[endTimeOptions.length - 1];
 
     const onStartChange = ( option: TimeRangeHoursData ) => {
-        setStartTime(option.time);
+        setStartTime(option.hours.toString());
         onChange(
             {
-                interval: option.time,
-                isStartTime: false,
+                interval: option.hours.toString(),
+                isStartTime: true,
             },
             dayIndex
         );
     };
 
     const onEndChange = ( option: TimeRangeHoursData ) => {
-        setEndTime(option.time);
+        setEndTime(option.hours.toString());
 
         onChange(
             {
-                interval: option.time,
+                interval: option.hours.toString(),
                 isStartTime: false,
             },
             dayIndex
@@ -57,16 +62,16 @@ const TimeRange = ( props: TimeRangeProps ) => {
                 <Select
                     id={`${id}-start-time`}
                     disabled={disabled}
-                    value={startTime}
                     onChange={onStartChange}
-                    options={populateTimeRangeHourData(startTime)}
+                    defaultValue={defaultStartTime}
+                    options={startTimeOptions}
                     renderOption={option => (
                         <Row width='100%'>
                             <Text> {option.time}</Text>
                         </Row>
                     )}
                     renderNativeOption={option => option.time}
-                    renderSelectedValue={option => option}
+                    renderSelectedValue={option => option.time}
                     valueAccessor={option => option.time}
                 />
             </Col>
@@ -77,16 +82,16 @@ const TimeRange = ( props: TimeRangeProps ) => {
                 <Select
                     id={`${id}-end-time`}
                     disabled={disabled}
-                    value={endTime}
+                    defaultValue={defaultEndTime}
                     onChange={onEndChange}
-                    options={populateTimeRangeHourData(startTime, true)}
+                    options={endTimeOptions}
                     renderOption={option => (
                         <Row width='100%'>
                             <Text> {option.time}</Text>
                         </Row>
                     )}
                     renderNativeOption={option => option.time}
-                    renderSelectedValue={option => option}
+                    renderSelectedValue={option => option.time}
                     valueAccessor={option => option.time}
                 />
             </Col>
