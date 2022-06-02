@@ -6,6 +6,7 @@ import jobReducer from "./job.reducer";
 import requisitionReducer from "./requisition.reducer";
 import applicationReducer from "./application.reducer";
 import scheduleReducer from "./schedule.reducer";
+import bgcReducer from "./bgc.reducer";
 
 const createRootReducer = ( history: any ) =>
     combineReducers({
@@ -15,6 +16,7 @@ const createRootReducer = ( history: any ) =>
         application: applicationReducer,
         requisition: requisitionReducer,
         schedule: scheduleReducer,
+        bgc: bgcReducer,
         router: connectRouter(history),
     });
 

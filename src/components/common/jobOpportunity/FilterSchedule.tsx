@@ -3,9 +3,8 @@ import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Label, Text } from "@amzn/stencil-react-components/text";
 import { Select } from "@amzn/stencil-react-components/form";
 import { translate as t } from "../../../utils/translator";
-import { DayHoursFilter } from "../../../utils/types/common";
+import { DayHoursFilter, ScheduleStateFilters } from "../../../utils/types/common";
 import DaysHoursFilter from "../daysHoursFilter/DaysHoursFilter";
-import { ScheduleStateFilters } from "../../../reducers/schedule.reducer";
 import { DESIRED_WORK_HOURS } from "../../../utils/enums/common";
 import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/boundScheduleActions";
 

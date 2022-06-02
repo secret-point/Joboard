@@ -12,9 +12,11 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_OPPORTUNITIES } from "../../pageRoutes";
+import { CONTINGENT_OFFER, JOB_OPPORTUNITIES } from "../../pageRoutes";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import queryString from "query-string";
+import { QueryParamItem } from "../../../utils/types/common";
+import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 
 interface MapStateToProps {
     schedule: ScheduleState
@@ -68,6 +70,11 @@ const JobConfirmation = ( props: MapStateToProps ) => {
             <Col className="selectJobButtonContainer" padding='S300'>
                 <Button
                     onClick={() => {
+                        const queryParamItem: QueryParamItem = {
+                            paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+                            paramValue: scheduleDetail?.scheduleId
+                        }
+                        routeToAppPageWithPath(CONTINGENT_OFFER, [queryParamItem]);
                     }}
                     variant={ButtonVariant.Primary}
                 >

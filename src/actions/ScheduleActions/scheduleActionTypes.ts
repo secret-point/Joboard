@@ -1,7 +1,6 @@
 import { Action } from "redux";
 import { GetScheduleDetailRequest, GetScheduleListByJobIdRequest } from "../../utils/apiTypes";
-import { Schedule } from "../../utils/types/common";
-import { ScheduleStateFilters } from "../../reducers/schedule.reducer";
+import { Schedule, ScheduleStateFilters } from "../../utils/types/common";
 
 export enum SCHEDULE_ACTION_TYPE {
     GET_LIST_BY_JOB = 'GET_SCHEDULE_LIST_BY_JOB_ID',

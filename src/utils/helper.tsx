@@ -7,14 +7,14 @@ import {
     Range,
     Schedule,
     SchedulePreference,
+    ScheduleStateFilters,
     TimeRangeHoursData
 } from "./types/common";
 import { history } from "../store/store";
 import Cookies from "js-cookie";
-import { HVH_LOCALE } from "./constants/common";
+import { HVH_LOCALE, initScheduleStateFilters } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
-import { initScheduleStateFilters, ScheduleStateFilters } from "../reducers/schedule.reducer";
 import { GetScheduleListByJobIdRequest } from "./apiTypes";
 import {
     boundGetScheduleListByJobId,
@@ -162,7 +162,10 @@ export const handleApplyScheduleFilters = ( scheduleFilters: ScheduleStateFilter
 }
 
 export const handleResetScheduleFilters = () => {
-    boundUpdateScheduleFilters(initScheduleStateFilters);
+    boundUpdateScheduleFilters({
+        ...initScheduleStateFilters,
+        daysHoursFilter: getDaysHoursDefaultFilters()
+    });
     const queryParams = parseSearchParamFromHash(window.location.hash);
     const { applicationId, jobId } = queryParams;
     const request: GetScheduleListByJobIdRequest = {

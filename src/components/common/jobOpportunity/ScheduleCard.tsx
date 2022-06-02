@@ -20,12 +20,13 @@ import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../util
 import { JOB_CONFIRMATION } from "../../pageRoutes";
 
 interface ScheduleCardProps {
-    scheduleDetail: Schedule
+    scheduleDetail: Schedule,
+    displayOnly?: boolean
 }
 
 const ScheduleCard = ( props: ScheduleCardProps ) => {
 
-    const { scheduleDetail } = props;
+    const { scheduleDetail, displayOnly } = props;
 
     const {
         image,
@@ -41,17 +42,21 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
         scheduleBannerText
     } = scheduleDetail;
 
+    const handleClick = () => {
+        if(!displayOnly) {
+            const queryParamItem: QueryParamItem = {
+                paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+                paramValue: scheduleDetail.scheduleId
+            }
+            routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
+        }
+    }
+
     return (
         <Col
             className="scheduleCardContainer"
             padding={{ bottom: 'S300' }}
-            onClick={() => {
-                const queryParamItem: QueryParamItem = {
-                    paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
-                    paramValue: scheduleDetail.scheduleId
-                }
-                routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
-            }}
+            onClick={handleClick}
         >
             <Row className="scheduleCardHeader" gridGap={12} padding="S300" backgroundColor={CommonColors.Neutral10}>
                 <Col className="scheduleCardBannerContainer" gridGap={4}>
@@ -90,9 +95,10 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                         <Text fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
                     </Row>
                 </Col>
+                {!displayOnly &&
                 <Col>
                     <IconChevronRight/>
-                </Col>
+                </Col>}
             </Row>
             {
                 scheduleBannerText &&

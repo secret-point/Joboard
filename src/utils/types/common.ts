@@ -1,4 +1,12 @@
-import { DAYS_OF_WEEK, DESIRED_WORK_HOURS, QUERY_PARAMETER_NAME, SCHEDULE_FILTER_TYPE } from "../enums/common";
+import {
+    BGC_STEP_STATUS,
+    BGC_STEPS,
+    DAYS_OF_WEEK,
+    DESIRED_WORK_HOURS,
+    FCRA_DISCLOSURE_TYPE,
+    QUERY_PARAMETER_NAME,
+    SCHEDULE_FILTER_TYPE
+} from "../enums/common";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -297,6 +305,7 @@ export interface Schedule {
     bonusSchedule: boolean;
     signOnBonus: number;
     briefJobDescription: string;
+    jobDescription: string;
 }
 
 export interface HoursPerWeek {
@@ -448,3 +457,53 @@ export interface WorkflowData {
     stepName: string;
     errorMessageCode: string;
   }
+export interface FcraDisclosureConfig {
+    title: string,
+    value: FCRA_DISCLOSURE_TYPE,
+    description?: string
+}
+
+export interface NonFcraESignatureAcknowledgement {
+    title: string,
+    translationKey: string
+}
+
+export interface StateSpecificNotice {
+    noticeText: string;
+    noticeTranslationKey: string;
+}
+
+export interface FormInputItem {
+    labelText: string;
+    dataKey: string;
+    type: string;
+    defaultValue?: string;
+    selectOptions?: any[];
+    required?: boolean,
+    regex?: string,
+    id: string,
+    errorMessage?: string,
+    name?: string,
+    inputType?: string,
+    toolTipText?: string,
+    hasError?: boolean
+}
+
+export interface FormDateInputItem extends FormInputItem {
+    maxYear: number,
+    minYear: number
+}
+
+export interface BgcStepConfig {
+    completedSteps: BGC_STEPS[];
+    activeStep: BGC_STEPS;
+    pageStatus: {[keys in BGC_STEPS]: BGC_STEP_STATUS}
+}
+
+export interface ScheduleStateFilters {
+    sortKey: SCHEDULE_FILTER_TYPE,
+    maxHoursPerWeek:DESIRED_WORK_HOURS,
+    daysHoursFilter: DayHoursFilter[]
+}
+
+export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

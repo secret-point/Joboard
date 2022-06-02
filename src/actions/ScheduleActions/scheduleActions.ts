@@ -9,8 +9,7 @@ import {
     SCHEDULE_ACTION_TYPE,
     UpdateScheduleFiltersAction
 } from "./scheduleActionTypes";
-import { Schedule } from "../../utils/types/common";
-import { ScheduleStateFilters } from "../../reducers/schedule.reducer";
+import { Schedule, ScheduleStateFilters } from "../../utils/types/common";
 
 export const actionGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ): GetScheduleListByJobIdAction => {
     return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB, payload }

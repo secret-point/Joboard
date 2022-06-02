@@ -1,7 +1,7 @@
 import { GetScheduleDetailRequest, GetScheduleListByJobIdRequest } from "../../utils/apiTypes";
 import store from "../../store/store";
 import { actionGetScheduleDetail, actionGetScheduleListByJobId, actionUpdateScheduleFilters } from "./scheduleActions";
-import { ScheduleStateFilters } from "../../reducers/schedule.reducer";
+import { ScheduleStateFilters } from "../../utils/types/common";
 
 export const boundGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ) =>
     store.dispatch(actionGetScheduleListByJobId(payload));

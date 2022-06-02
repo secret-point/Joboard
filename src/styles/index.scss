@@ -282,3 +282,29 @@ a {
 #DaysHoursFilterContainer {
   width: 100%;
 }
+
+.contingencyOfferFooter {
+  background: $Blue_05;
+}
+
+.stateNoticeText {
+  p {
+    padding: 0px!important;
+    margin: 0px!important;
+  }
+
+  a {
+    color: $Blue_70;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.formInputItem {
+  width: 100%;
+  padding-top: 1em;
+}

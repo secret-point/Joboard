@@ -35,3 +35,28 @@ export enum DAYS_OF_WEEK {
     SATURDAY = "SATURDAY",
     SUNDAY = "SUNDAY"
 }
+
+export enum FCRA_DISCLOSURE_TYPE {
+    ACCEPT = "Accept",
+    DECLINE = "Decline"
+}
+
+export enum NON_FCRA_STATES {
+    ALL_STATE = "ALL STATES",
+    WASHINGTON = "WASHINGTON",
+    NEW_YORK = "NEW YORK",
+    MINNESOTA = "MINNESOTA",
+    CALIFORNIA = "CALIFORNIA"
+}
+
+export enum BGC_STEPS {
+    FCRA = "FCRA",
+    NON_FCRA = "NON_FCRA",
+    ADDITIONAL_BGC = "ADDITIONAL_BGC"
+}
+
+export enum BGC_STEP_STATUS {
+    LOCKED = 'LOCKED',
+    ACTIVE = 'ACTIVE',
+    COMPLETED = 'COMPLETED'
+}

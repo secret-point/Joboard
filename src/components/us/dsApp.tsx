@@ -4,13 +4,25 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import { CONSENT, CONTINGENT_OFFER, JOB_CONFIRMATION, JOB_DESCRIPTION, JOB_OPPORTUNITIES, PRE_CONSENT } from "../pageRoutes";
+import {
+  BACKGROUND_CHECK,
+  BACKGROUND_CHECK_FCRA,
+  CONSENT,
+  CONTINGENT_OFFER,
+  JOB_CONFIRMATION,
+  JOB_DESCRIPTION,
+  JOB_OPPORTUNITIES,
+  PRE_CONSENT
+} from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
 import JobConfirmation from "./jobOpportunity/JobConfirmation";
 import JobDescription from "./jobOpportunity/JobDescription";
-import ContingentOffer from "./contingentOffer/ContingentOffer";
+import ContingencyOffer from "./contingencyOffer/ContingencyOffer";
+import BackgroundCheck from "./bgc/BackgroundCheck";
+import FcraDisclosure from "../common/bgc/FcraDisclosure";
+
 interface MapStateToProps {
   appConfig: AppConfig,
 }
@@ -52,7 +64,13 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
               <JobDescription/>
             </Route>
             <Route path={`/${CONTINGENT_OFFER}`} exact>
-              <ContingentOffer/>
+              <ContingencyOffer/>
+            </Route>
+            <Route path={`/${BACKGROUND_CHECK}`} exact>
+              <BackgroundCheck/>
+            </Route>
+            <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
+              <FcraDisclosure/>
             </Route>
           </Switch>
         </Router>

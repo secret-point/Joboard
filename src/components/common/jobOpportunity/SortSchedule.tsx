@@ -3,9 +3,9 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { DetailedRadio } from "@amzn/stencil-react-components/form";
 import { translate as t } from "../../../utils/translator";
 import { ScheduleSortList } from "../../../utils/constants/common";
-import { ScheduleStateFilters } from "../../../reducers/schedule.reducer";
 import { SCHEDULE_FILTER_TYPE } from "../../../utils/enums/common";
 import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { ScheduleStateFilters } from "../../../utils/types/common";
 
 interface SortScheduleProps {
     filters: ScheduleStateFilters
@@ -23,7 +23,7 @@ const SortSchedule = (props: SortScheduleProps) => {
     }
 
     return (
-        <Col gridGap="S300" minWidth='420px'>
+        <Col gridGap="S300" className="sortScheduleContainer">
             {
                 ScheduleSortList.map(sortItem => (
                     <DetailedRadio

@@ -1,7 +1,10 @@
 import { SCHEDULE_ACTION_TYPE, ScheduleActions } from "../actions/ScheduleActions/scheduleActionTypes";
-import { DayHoursFilter, Schedule } from "../utils/types/common";
-import { DESIRED_WORK_HOURS, SCHEDULE_FILTER_TYPE } from "../utils/enums/common";
+import { Schedule, ScheduleStateFilters } from "../utils/types/common";
+import { initScheduleStateFilters } from "../utils/constants/common";
 import { getDaysHoursDefaultFilters } from "../utils/helper";
+
+
+const defaultDaysHoursFilters = getDaysHoursDefaultFilters();
 
 export interface ScheduleState {
     scheduleList: Schedule[],
@@ -10,22 +13,14 @@ export interface ScheduleState {
     filters: ScheduleStateFilters
 }
 
-export interface ScheduleStateFilters {
-    sortKey: SCHEDULE_FILTER_TYPE,
-    maxHoursPerWeek:DESIRED_WORK_HOURS,
-    daysHoursFilter: DayHoursFilter[]
-}
-
-export const initScheduleStateFilters: ScheduleStateFilters = {
-    maxHoursPerWeek: DESIRED_WORK_HOURS.FORTY,
-    daysHoursFilter: getDaysHoursDefaultFilters(),
-    sortKey: SCHEDULE_FILTER_TYPE.DEFAULT
-}
-
 export const initScheduleState: ScheduleState = {
     failed: false,
     scheduleList: [],
-    filters: initScheduleStateFilters
+    filters: {
+        ...initScheduleStateFilters,
+        daysHoursFilter: defaultDaysHoursFilters
+    }
+
 }
 
 export default function scheduleReducer( state: ScheduleState = initScheduleState, action: ScheduleActions ): ScheduleState {

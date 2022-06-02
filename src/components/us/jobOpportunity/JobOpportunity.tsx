@@ -30,6 +30,7 @@ import {
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import SortSchedule from "../../common/jobOpportunity/SortSchedule";
 import FilterSchedule from "../../common/jobOpportunity/FilterSchedule";
+import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
 
 interface MapStateToProps {
     job: JobState,
@@ -53,6 +54,9 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const applicationData = application.results;
     const scheduleData = schedule.scheduleList;
     const scheduleFilters = schedule.filters;
+    const { matches } = useBreakpoints();
+
+    const width = matches.s ? '100VW' : '420px';
 
     useEffect(() => {
         jobId && boundGetJobDetail({ jobId: jobId, locale: Locale.enUS })
@@ -70,53 +74,55 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     }, [jobDetail, applicationData]);
 
     const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
-        <FlyoutContent
-            titleText={t('BB-JobOpportunity-sort-schedule-flyout-title', 'Sort By')}
-            onCloseButtonClick={close}
-            buttons={[
-                <Button
-                    onClick={() => {
-                        handleApplyScheduleFilters(scheduleFilters);
-                        close()
-                    }}
-                    variant={ButtonVariant.Primary}
-                >
-                    {t('BB-JobOpportunity-sort-schedule-flyout-apply-Btn', 'Apply')}
-                </Button>
-            ]}
-            maxWidth='40vw'
-        >
-            <SortSchedule filters={scheduleFilters}/>
-        </FlyoutContent>
+        <Col width={width} height="100vh">
+            <FlyoutContent
+                titleText={t('BB-JobOpportunity-sort-schedule-flyout-title', 'Sort By')}
+                onCloseButtonClick={close}
+                buttons={[
+                    <Button
+                        onClick={() => {
+                            handleApplyScheduleFilters(scheduleFilters);
+                            close()
+                        }}
+                        variant={ButtonVariant.Primary}
+                    >
+                        {t('BB-JobOpportunity-sort-schedule-flyout-apply-Btn', 'Apply')}
+                    </Button>
+                ]}
+            >
+                <SortSchedule filters={scheduleFilters}/>
+            </FlyoutContent>
+        </Col>
     )
 
     const renderFilterScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
-        <FlyoutContent
-            titleText={t('BB-JobOpportunity-filter-schedule-flyout-title', 'Filter')}
-            onCloseButtonClick={close}
-            buttons={[
-                <Button
-                    onClick={() => {
-                        handleResetScheduleFilters();
-                        close();
-                    }}
-                >
-                    {t('BB-JobOpportunity-filter-schedule-flyout-reset-Btn', 'Reset')}
-                </Button>,
-                <Button
-                    onClick={() => {
-                        handleApplyScheduleFilters(scheduleFilters);
-                        close()
-                    }}
-                    variant={ButtonVariant.Primary}
-                >
-                    {t('BB-JobOpportunity-filter-schedule-flyout-apply-Btn', 'Apply')}
-                </Button>
-            ]}
-            maxWidth='40vw'
-        >
-            <FilterSchedule filters={scheduleFilters}/>
-        </FlyoutContent>
+        <Col width={width} height="100vh">
+            <FlyoutContent
+                titleText={t('BB-JobOpportunity-filter-schedule-flyout-title', 'Filter')}
+                onCloseButtonClick={close}
+                buttons={[
+                    <Button
+                        onClick={() => {
+                            handleResetScheduleFilters();
+                            close();
+                        }}
+                    >
+                        {t('BB-JobOpportunity-filter-schedule-flyout-reset-Btn', 'Reset')}
+                    </Button>,
+                    <Button
+                        onClick={() => {
+                            handleApplyScheduleFilters(scheduleFilters);
+                            close()
+                        }}
+                        variant={ButtonVariant.Primary}
+                    >
+                        {t('BB-JobOpportunity-filter-schedule-flyout-apply-Btn', 'Apply')}
+                    </Button>
+                ]}
+            >
+                <FilterSchedule filters={scheduleFilters}/>
+            </FlyoutContent>
+        </Col>
     )
 
     return (

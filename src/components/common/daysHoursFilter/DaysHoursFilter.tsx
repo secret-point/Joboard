@@ -67,7 +67,7 @@ const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
   };
 
   return (
-      <Col gridGap={20} id="DaysHoursFilterContainer" minWidth='420px'>
+      <Col gridGap={20} id="DaysHoursFilterContainer">
         <Text color="accent2" fontSize="T200">
           {label}
         </Text>
