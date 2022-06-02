@@ -54,6 +54,7 @@ declare global {
         log: KatalLogger;
         loggerUrl: string;
         hasCompleteTask: Function | undefined;
+        hasCompleteTaskOnSkipSchedule: Function | undefined;
     }
 }
 

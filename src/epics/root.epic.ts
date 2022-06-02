@@ -1,6 +1,6 @@
 import { combineEpics } from "redux-observable";
 import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
-import { CreateApplicationDSEpic, GetApplicationEpic } from "./application.epic";
+import { CreateApplicationAndSkipScheduleDSEpic, CreateApplicationDSEpic, GetApplicationEpic, GetApplicationSuccessEpic, UpdateApplicationDSEpic, UpdateWorkflowStepNameEpic } from "./application.epic";
 import { JobEpic } from "./job.epic";
 
 const rootEpic = combineEpics(
@@ -9,6 +9,10 @@ const rootEpic = combineEpics(
     GetScheduleListByJobIdEpic,
     GetScheduleDetailEpic,
     CreateApplicationDSEpic,
+    UpdateApplicationDSEpic,
+    CreateApplicationAndSkipScheduleDSEpic,
+    GetApplicationSuccessEpic,
+    UpdateWorkflowStepNameEpic,
 );
 
 export default rootEpic;

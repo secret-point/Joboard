@@ -8,11 +8,11 @@ import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_OPPORTUNITY } from "../../pageRoutes";
+import { JOB_OPPORTUNITIES } from "../../pageRoutes";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import queryString from "query-string";
 
@@ -49,7 +49,7 @@ const JobConfirmation = ( props: MapStateToProps ) => {
                 color={CommonColors.Blue70}
                 padding='S200'
                 onClick={() => {
-                    routeToAppPageWithPath(JOB_OPPORTUNITY);
+                    routeToAppPageWithPath(JOB_OPPORTUNITIES);
                 }}
                 style={{ cursor: 'pointer' }}
             >

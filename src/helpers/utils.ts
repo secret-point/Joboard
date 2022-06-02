@@ -6,7 +6,7 @@ import filter from "lodash/filter";
 import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
 import { CS_DOMAIN_LIST } from "../constants";
-import { isArray } from "lodash";
+import { isArray, isBoolean } from "lodash";
 import ICandidateApplication from "../@types/ICandidateApplication";
 import store from "../store/store";
 
@@ -129,7 +129,10 @@ export const checkIfIsLegacy = () => {
   return isLegacy;
 }
 
-export const checkIfIsCSRequest = () => {
+export const checkIfIsCSRequest = (override? : boolean) => {
+  if(isBoolean(override)){
+    return override
+  }
   const origin = window.location.origin;
   const isCSRequest = CS_DOMAIN_LIST.includes(origin);
   return isCSRequest;

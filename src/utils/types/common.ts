@@ -443,3 +443,8 @@ export interface DesiredHoursPerWeek {
     value: DESIRED_WORK_HOURS,
     translationKey: string
 }
+
+export interface WorkflowData {
+    stepName: string;
+    errorMessageCode: string;
+  }

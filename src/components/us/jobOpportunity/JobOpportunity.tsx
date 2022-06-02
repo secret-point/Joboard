@@ -10,7 +10,7 @@ import { useLocation } from "react-router";
 import queryString from "query-string";
 import { Locale } from "../../../utils/types/common";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";

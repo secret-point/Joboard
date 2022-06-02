@@ -34,3 +34,29 @@ export interface CreateApplicationRequestDS {
 export interface CreateApplicationResponseDS {
     applicationId: string;
 }
+
+export interface CreateApplicationAndSkipScheduleRequestDS {
+    jobId: string;
+    scheduleId: string;
+    dspEnabled?: boolean | null;
+}
+
+export interface UpdateApplicationRequestDS {
+    applicationId: string;
+    payload: any;
+    type: string;
+    isCsRequest?: boolean;
+    dspEnabled?: boolean;
+}
+
+export interface UpdateWorkflowNameRequest {
+    applicationId: string;
+    workflowStepName: string;
+}
+
+export interface SelectedScheduleForUpdateApplication {
+    jobId: string;
+    scheduleDetails: string;
+    scheduleId: string;
+    jobScheduleSelectedTime?: string;
+}

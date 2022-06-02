@@ -1,13 +1,13 @@
-import { getDataForEventMetrics } from "./../../helpers/adobe-helper";
-import { AdobeMetrics, Metric, MetricData } from "./../../@types/adobe-metrics";
+import { getDataForEventMetrics } from "../../helpers/adobe-helper";
+import { AdobeMetrics, Metric, MetricData } from "../../@types/adobe-metrics";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
-import { getDataForMetrics } from "./../../helpers/adobe-helper";
-import { EVENT_NAMES } from "./../../constants/adobe-analytics";
+import { getDataForMetrics } from "../../helpers/adobe-helper";
+import { EVENT_NAMES } from "../../constants/adobe-analytics";
 import findIndex from "lodash/findIndex";
-import { getCheckBoxListLabels, getMetricValues } from "./../../helpers/utils";
-import { CheckBoxItem } from "./../../@types";
-import { ApplicationData } from "./../../@types/IPayload";
+import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
+import { CheckBoxItem } from "../../@types";
+import { ApplicationData } from "../../@types/IPayload";
 import store from "../../store/store";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";

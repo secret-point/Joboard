@@ -1,18 +1,41 @@
 import store from "../../store/store";
 import {
+    CreateApplicationAndSkipScheduleRequestDS,
     CreateApplicationRequestDS,
-    GetApplicationRequest
+    GetApplicationRequest,
+    UpdateApplicationRequestDS,
+    UpdateWorkflowNameRequest
 } from "../../utils/apiTypes";
 import {
+    actionCreateApplicationAndSkipScheduleDS,
     actionCreateApplicationDS,
     actionGetApplication,
+    actionUpdateApplicationDS,
+    actionUpdateWorkflowName,
 } from "./applicationActions";
 
 export const boundGetApplication = (
     payload: GetApplicationRequest,
-) => store.dispatch(actionGetApplication(payload));
+    onSuccess?: Function,
+) => store.dispatch(actionGetApplication(payload, onSuccess));
 
 export const boundCreateApplicationDS = (
     payload: CreateApplicationRequestDS,
     onSuccess?: Function
 ) => store.dispatch(actionCreateApplicationDS(payload, onSuccess));
+
+export const boundUpdateApplicationAndSkipScheduleDS = (
+    payload: UpdateApplicationRequestDS,
+    onSuccess?: Function
+) => store.dispatch(actionUpdateApplicationDS(payload, onSuccess));
+
+export const boundUpdateWorkflowName = (
+    payload: UpdateWorkflowNameRequest,
+    onSuccess?: Function,
+    onError?: Function
+) => store.dispatch(actionUpdateWorkflowName(payload, onSuccess, onError));
+
+export const boundCreateApplicationAndSkipScheduleDS = (
+    payload: CreateApplicationAndSkipScheduleRequestDS,
+    onSuccess?: Function
+) => store.dispatch(actionCreateApplicationAndSkipScheduleDS(payload, onSuccess));

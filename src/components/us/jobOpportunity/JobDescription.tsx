@@ -14,7 +14,7 @@ import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 
 interface MapStateToProps {
     job: JobState,

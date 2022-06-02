@@ -5,16 +5,16 @@ import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_OPPORTUNITY } from "../../pageRoutes";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToLoginCSDS } from "../../../helpers/utils";
+import { JOB_OPPORTUNITIES } from "../../pageRoutes";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
 import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobe-actions";
-import { boundCreateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { CreateApplicationRequestDS } from "../../../utils/apiTypes";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundCreateApplicationAndSkipScheduleDS, boundCreateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { CreateApplicationAndSkipScheduleRequestDS, CreateApplicationRequestDS } from "../../../utils/apiTypes";
 import { uiState } from "../../../reducers/ui.reducer";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
@@ -35,6 +35,7 @@ const ConsentPage = (props: MapStateToProps) => {
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const jobId = queryParams.jobId;
     const jobDetail = job.results;
+    const scheduleId = queryParams.scheduleId;
     const pageName = getPageNameFromPath(pathname);
     const qualificationCriteria= jobDetail?.qualificationCriteria || [];
 
@@ -95,12 +96,20 @@ const ConsentPage = (props: MapStateToProps) => {
                     style={{ width: "100%" }}
                     disabled={jobDetail && !isLoading? false : true}
                     onClick={() => {
-                        const payload: CreateApplicationRequestDS ={
-                            jobId,
-                            dspEnabled:job.results?.dspEnabled,
+                        if(scheduleId){
+                            const payload: CreateApplicationAndSkipScheduleRequestDS ={
+                                jobId,
+                                scheduleId,
+                                dspEnabled:job.results?.dspEnabled,
+                            }
+                            boundCreateApplicationAndSkipScheduleDS(payload);
+                        } else {
+                            const payload: CreateApplicationRequestDS ={
+                                jobId,
+                                dspEnabled:job.results?.dspEnabled,
+                            }
+                            boundCreateApplicationDS(payload, (applicationId:string)=>routeToAppPageWithPath(JOB_OPPORTUNITIES, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId}]));
                         }
-
-                        boundCreateApplicationDS(payload, (applicationId:string)=>routeToAppPageWithPath(JOB_OPPORTUNITY, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId}]));
                     }}
                 >
                     {t("BB-ConsentPage-create-application-button", "Create Application")}

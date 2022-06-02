@@ -2,7 +2,11 @@ import { CountryStateConfig } from "../../utils/types/common";
 import {
     GET_STATE_CONFIG_TYPE,
     GetCountryStateConfigAction,
-    GetCountryStateConfigSuccessAction
+    GetCountryStateConfigSuccessAction,
+    WORKFLOW_REQUEST,
+    WorkflowRequestStartAction,
+    WorkflowRequestEndAction,
+    WorkflowRequestInitAction
 } from "./uiActionTypes";
 
 export const actionGetCountryStateConfig = (): GetCountryStateConfigAction => {
@@ -18,4 +22,16 @@ export const actionGetCountryStateConfigActionSuccess = (
 
 export const actionGetCountryStateConfigActionFailed = ( payload: any ) => { // Refine errorMessage type later): GetCountryStateConfigFailedAction
     return { type: GET_STATE_CONFIG_TYPE.FAILED, payload }
+};
+
+export const actionWorkflowRequestInit = (): WorkflowRequestInitAction => {
+    return { type: WORKFLOW_REQUEST.INIT }
+};
+
+export const actionWorkflowRequestStart = (): WorkflowRequestStartAction => {
+    return { type: WORKFLOW_REQUEST.START }
+};
+
+export const actionWorkflowRequestEnd = (): WorkflowRequestEndAction => {
+    return { type: WORKFLOW_REQUEST.END }
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    Application,
     DayHoursFilter,
     Locale,
     QueryParamItem,
@@ -186,4 +187,13 @@ export const getDaysHoursDefaultFilters = (): DayHoursFilter[]  => {
     });
 
     return result;
+}
+
+export const sanitizeApplicationData = (applicationData: Application) => {
+    const workflowStepName = applicationData?.workflowStepName as any;
+    if(workflowStepName){
+        const sanitizedWorkflowStepName =  workflowStepName.replaceAll("\"", "");
+        applicationData.workflowStepName = sanitizedWorkflowStepName;
+    }
+    return applicationData
 }

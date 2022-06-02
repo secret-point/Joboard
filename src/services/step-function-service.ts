@@ -1,5 +1,4 @@
 import { getAccessToken } from "./../helpers/axios-helper";
-import { AppConfig } from "../@types/IPayload";
 import isString from "lodash/isString";
 import { isJson } from "../helpers/utils";
 import {
@@ -9,9 +8,11 @@ import {
   sendHeartBeatWorkflow,
   onTimeOut,
   startOrResumeWorkflowDS
-} from "./../actions/old/workflow-actions";
+} from "./../actions/WorkflowActions/workflowActions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
+import { boundWorkflowRequestStart } from "../actions/UiActions/boundUi";
+import { EnvConfig } from "../utils/types/common";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -30,7 +31,7 @@ export default class StepFunctionService {
   constructor(
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig,
+    appConfig: EnvConfig,
     requisitionId?: string,
     jobId?: string,
     scheduleId?: string
@@ -71,7 +72,7 @@ export default class StepFunctionService {
     requisitionId: string,
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig
+    appConfig: EnvConfig
   ) {
     return new this(applicationId, candidateId, appConfig, requisitionId);
   }
@@ -81,7 +82,7 @@ export default class StepFunctionService {
     scheduleId: string,
     applicationId: string,
     candidateId: string,
-    appConfig: AppConfig
+    appConfig: EnvConfig
   ) {
     return new this(
       applicationId,
@@ -94,6 +95,7 @@ export default class StepFunctionService {
   }
 
   connect(event: any) {
+    boundWorkflowRequestStart();
     log("Websocket is connected");
     if (window.isCompleteTaskOnLoad) {
       completeTask(window.applicationData, "Complete Task On Load");
@@ -114,7 +116,15 @@ export default class StepFunctionService {
     const { data } = event;
     const message = isJson(data) ? JSON.parse(data) : data;
     if (!isString(message)) {
-      await goToStep(message);
+      // Ignore current step and wait until stepName is job-opportunities
+      if(window.hasCompleteTaskOnSkipSchedule){
+        if(message.stepName === 'job-opportunities'){
+          window.hasCompleteTaskOnSkipSchedule();
+          window.hasCompleteTaskOnSkipSchedule = undefined;
+        }
+      } else {
+        await goToStep(message);
+      }
     }
   }
 

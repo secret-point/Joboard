@@ -4,13 +4,13 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import { CONSENT, JOB_CONFIRMATION, JOB_DESCRIPTION, JOB_OPPORTUNITY, PRE_CONSENT } from "../pageRoutes";
+import { CONSENT, CONTINGENT_OFFER, JOB_CONFIRMATION, JOB_DESCRIPTION, JOB_OPPORTUNITIES, PRE_CONSENT } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
 import JobConfirmation from "./jobOpportunity/JobConfirmation";
 import JobDescription from "./jobOpportunity/JobDescription";
-
+import ContingentOffer from "./contingentOffer/ContingentOffer";
 interface MapStateToProps {
   appConfig: AppConfig,
 }
@@ -42,7 +42,7 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             <Route path={`/${CONSENT}`} exact>
               <ConsentPage/>
             </Route>
-            <Route path={`/${JOB_OPPORTUNITY}`} exact>
+            <Route path={`/${JOB_OPPORTUNITIES}`} exact>
               <JobOpportunity/>
             </Route>
             <Route path={`/${JOB_CONFIRMATION}`} exact>
@@ -50,6 +50,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${JOB_DESCRIPTION}`} exact>
               <JobDescription/>
+            </Route>
+            <Route path={`/${CONTINGENT_OFFER}`} exact>
+              <ContingentOffer/>
             </Route>
           </Switch>
         </Router>
