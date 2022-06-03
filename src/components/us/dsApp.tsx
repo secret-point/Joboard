@@ -12,7 +12,8 @@ import {
   JOB_CONFIRMATION,
   JOB_DESCRIPTION,
   JOB_OPPORTUNITIES,
-  PRE_CONSENT
+  PRE_CONSENT,
+  RESUME_APPLICATION
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -22,6 +23,7 @@ import JobDescription from "./jobOpportunity/JobDescription";
 import ContingencyOffer from "./contingencyOffer/ContingencyOffer";
 import BackgroundCheck from "./bgc/BackgroundCheck";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
+import ResumeApplication from "./resumeApplication/ResumeApplication";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -71,6 +73,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
               <FcraDisclosure/>
+            </Route>
+            <Route path={`/${RESUME_APPLICATION}`} exact>
+              <ResumeApplication/>
             </Route>
           </Switch>
         </Router>

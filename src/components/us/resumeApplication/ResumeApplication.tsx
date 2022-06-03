@@ -10,7 +10,6 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { getLocale } from "../../../utils/helper";
 import queryString from "query-string";
-import { Locale } from "../../../utils/types/common";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 
 interface MapStateToProps {
@@ -19,7 +18,7 @@ interface MapStateToProps {
     schedule: ScheduleState
 }
 
-const ContingentOffer = ( props: MapStateToProps ) => {
+const ResumeApplication = ( props: MapStateToProps ) => {
     const { job, application, schedule } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
@@ -27,28 +26,22 @@ const ContingentOffer = ( props: MapStateToProps ) => {
     const { applicationId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
-    const scheduleDetail = schedule.scheduleDetail;
     const jobId = applicationData?.jobScheduleSelected.jobId;
-    const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
 
     useEffect(()=>{
         applicationId && boundGetApplication({applicationId:applicationId, locale: getLocale()});
     },[applicationId]);
     
     useEffect(()=>{
-        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({jobId:jobId, locale:getLocale()});
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({jobId:jobId, locale: getLocale()});
     },[jobId]);
 
     useEffect(()=>{
-        scheduleId && boundGetScheduleDetail({ locale: getLocale(),scheduleId: scheduleId});
-    }, [scheduleId]);
-
-    useEffect(()=>{
-        jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    },[jobDetail, scheduleDetail, applicationData]);
+        jobDetail && applicationData && addMetricForPageLoad(pageName);
+    },[jobDetail, applicationData]);
 
     return (
-        <div>Contingent Offer page</div>
+        <div>ResumeApplication page, this page will be an empty page with loading icon for startWorkflow and wait the stepName for redirection</div>
     );
 };
 
@@ -56,4 +49,4 @@ const mapStateToProps = ( state: MapStateToProps ) => {
     return state;
 };
 
-export default connect(mapStateToProps)(ContingentOffer);
+export default connect(mapStateToProps)(ResumeApplication);

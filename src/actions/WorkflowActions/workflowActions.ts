@@ -10,7 +10,8 @@ import { checkIfIsCSRequest, pathByDomain } from "../../helpers/utils";
 import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../UiActions/boundUi";
 import store from "../../store/store";
 import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
-import { routeToAppPageWithPath } from "../../utils/helper";
+import { getCurrentStepNameFromHash, routeToAppPageWithPath } from "../../utils/helper";
+import { JOB_OPPORTUNITIES } from "../../components/pageRoutes";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -137,17 +138,17 @@ export const sendHeartBeatWorkflow = () => {
 export const goToStep = async (workflowData: WorkflowData) => {
   const state = store.getState();
   const applicationData = state.application.results;
-  const currentPath = window.location.hash.split('?')[0].replace('#/', '').split('/')[0];
+  const currentStepName = getCurrentStepNameFromHash();
   const { stepName } = workflowData;
   log("Received data from step function", {
     workflowData,
-    currentStepName: currentPath,
+    currentStepName: currentStepName,
     goToStepName: stepName
   });
-  if (stepName && stepName !== currentPath && applicationData) {
+  if (stepName && stepName !== currentStepName && applicationData) {
     boundWorkflowRequestStart();
     log(
-      `current step name (${currentPath}) and go to step name (${stepName}) is not matched`
+      `current step name (${currentStepName}) and go to step name (${stepName}) is not matched`
     );
     log("updating workflow step name in application", {
       applicationId: applicationData.applicationId,
@@ -184,45 +185,45 @@ export const goToStep = async (workflowData: WorkflowData) => {
       );
     }
   } else {
-    log(`Received same as current step name ${currentPath}`);
+    log(`Received same as current step name ${currentStepName}`);
     boundWorkflowRequestEnd();
   }
 };
 
 export const completeTask = (
   application?: Application,
-  step?: string,
+  currentStep?: string,
   isBackButton?: boolean,
-  goToStep?: string,
+  targetStep?: string,
   jobId?: string,
   schedule?: Schedule
 ) => {
   if (window.stepFunctionService?.websocket) {
     boundWorkflowRequestStart();
     const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime;
-    const state = schedule?.state || "";
-    const employmentType = schedule?.employmentType || "Regular";
+    const state = schedule?.state;
+    const employmentType = schedule?.employmentType;
     const data: any = {
       action: "completeTask",
       applicationId: window.stepFunctionService.applicationId,
       candidateId: window.stepFunctionService.candidateId,
       requisitionId: window.stepFunctionService.requisitionId || "", // requisitionId can't be null
       jobId: jobId || "",
-      state:'TB',
+      state,
       employmentType,
       eventSource: "HVH-CA-UI",
       jobSelectedOn,
-      currentWorkflowStep: step,
-      isCsDomain: checkIfIsCSRequest(true)
+      currentWorkflowStep: currentStep,
+      isCsDomain: checkIfIsCSRequest()
     };
 
     if (isBackButton) {
-      data.workflowStepName = goToStep;
+      data.workflowStepName = targetStep;
     } else {
       data.workflowStepName = "";
     }
     window.stepFunctionService.websocket?.send(JSON.stringify(data));
-    log(`${step} completed`, {
+    log(`${currentStep} completed`, {
       ...data
     });
   }
@@ -246,3 +247,35 @@ export const onTimeOut = () => {
     window.location.assign(`${pathByDomain()}/#/timeout`);
   }
 };
+
+export const onCompleteTaskHelper = (application: Application, isBackButton?:boolean, targetStep?: string) => {
+  const state = store.getState();
+  const jobId = application.jobScheduleSelected?.jobId;
+  const scheduleId = application.jobScheduleSelected?.scheduleId;
+  const applicationId = application.applicationId;
+  const candidateId = application.candidateId;
+  const currentStepName = getCurrentStepNameFromHash();
+  const scheduleDetail = state.schedule.scheduleDetail;
+
+  if(isBackButton){
+    log(`Completed task on back button execution, current step is ${currentStepName}`);
+  } else {
+    log(`Completed task on ${currentStepName}`);
+  }
+  
+  if (!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
+    window.hasCompleteTaskOnSkipSchedule = () => {  
+      completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
+    }
+    boundWorkflowRequestStart();
+    loadWorkflowDS(
+      jobId || "",
+      scheduleId || "",
+      applicationId,
+      candidateId,
+      state.appConfig.results.envConfig
+    );
+  } else {
+    completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
+  }
+}

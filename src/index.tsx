@@ -55,6 +55,7 @@ declare global {
         loggerUrl: string;
         hasCompleteTask: Function | undefined;
         hasCompleteTaskOnSkipSchedule: Function | undefined;
+        hasCompleteTaskOnWorkflowConnect: Function | undefined;
     }
 }
 

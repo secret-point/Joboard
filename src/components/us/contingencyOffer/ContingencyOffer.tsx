@@ -20,11 +20,14 @@ import InnerHTML from 'dangerously-set-html-content';
 import ApplicationSteps from "../../common/ApplicationSteps";
 import { BACKGROUND_CHECK, JOB_OPPORTUNITIES } from "../../pageRoutes";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { onCompleteTaskHelper } from '../../../actions/WorkflowActions/workflowActions';
+import { uiState } from '../../../reducers/ui.reducer';
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
-    schedule: ScheduleState
+    schedule: ScheduleState,
+    ui: uiState,
 }
 
 interface ContingencyOfferProps {
@@ -34,7 +37,8 @@ interface ContingencyOfferProps {
 type ContingencyOfferMergedProps = MapStateToProps & ContingencyOfferProps;
 
 const ContingencyOffer = (props: ContingencyOfferMergedProps) => {
-    const { job, application, schedule } = props;
+    const { job, application, schedule, ui } = props;
+    const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -43,14 +47,21 @@ const ContingencyOffer = (props: ContingencyOfferMergedProps) => {
     const applicationData = application.results;
     const scheduleDetail = schedule.scheduleDetail;
 
+    // Don't refetch data if id is not changing
     useEffect(() => {
-        jobId && boundGetJobDetail({ jobId: jobId, locale: Locale.enUS })
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: Locale.enUS });
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    }, [applicationId]);
+
+    useEffect(() => {
         scheduleId && boundGetScheduleDetail({
             locale: getLocale(),
             scheduleId: scheduleId
         })
-    }, []);
+    }, [scheduleId]);
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
@@ -92,6 +103,7 @@ const ContingencyOffer = (props: ContingencyOfferMergedProps) => {
                 <ApplicationSteps/>
                 <Col gridGap={20} padding='S300'>
                     <Button
+                        disabled={!applicationData || isLoading}
                         variant={ButtonVariant.Primary}
                         onClick={() => {
                             routeToAppPageWithPath(BACKGROUND_CHECK)
@@ -99,8 +111,15 @@ const ContingencyOffer = (props: ContingencyOfferMergedProps) => {
                     >
                         Accept Offer
                     </Button>
-                    <Button onClick={() => {
-                        routeToAppPageWithPath(JOB_OPPORTUNITIES);
+                    <Button 
+                        disabled={!applicationData || isLoading}
+                        onClick={() => {
+                            // Stay at the current page, wait work flow to do the routing
+                            // Need further work here
+                            // Remove schedule Id in URL here before go to contingent-offer page
+                            const isBackButton = true;
+                            const targetPageToGoBack = JOB_OPPORTUNITIES;
+                            applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
                     }}
                     >
                         Back to jobs

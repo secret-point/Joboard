@@ -7,7 +7,7 @@ import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
-import { routeToAppPageWithPath } from "../../../utils/helper";
+import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { JOB_CONFIRMATION } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
@@ -15,6 +15,7 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetApplication } from '../../../actions/ApplicationActions/boundApplicationActions';
 
 interface MapStateToProps {
     job: JobState,
@@ -26,12 +27,17 @@ const JobDescription = (props: MapStateToProps) => {
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const { jobId } = queryParams;
+    const { jobId, applicationId } = queryParams;
     const jobDetail = job.results;
 
+    // Don't refetch data if id is not changing
     useEffect(() => {
-        jobId && boundGetJobDetail({jobId:jobId, locale:Locale.enUS})
-    },[])
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    }, [applicationId]);;
 
     useEffect(()=>{
         jobDetail && addMetricForPageLoad(pageName);

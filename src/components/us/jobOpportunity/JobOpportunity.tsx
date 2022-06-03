@@ -59,8 +59,6 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const width = matches.s ? '100VW' : '420px';
 
     useEffect(() => {
-        jobId && boundGetJobDetail({ jobId: jobId, locale: Locale.enUS })
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: Locale.enUS });
         const request: GetScheduleListByJobIdRequest = {
             jobId,
             applicationId,
@@ -68,6 +66,15 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
         }
         boundGetScheduleListByJobId(request);
     }, []);
+
+    // Don't refetch data if id is not changing
+    useEffect(() => {
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    }, [applicationId]);
 
     useEffect(() => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);

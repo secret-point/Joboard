@@ -200,3 +200,7 @@ export const sanitizeApplicationData = (applicationData: Application) => {
     }
     return applicationData
 }
+
+export const getCurrentStepNameFromHash = ()=>{
+    return window.location.hash.split('?')[0].replace('#/', '').split('/')[0];
+}

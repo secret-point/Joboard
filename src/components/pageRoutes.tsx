@@ -6,3 +6,4 @@ export const JOB_DESCRIPTION: string = 'job-opportunities/job-description';
 export const CONTINGENT_OFFER: string = 'contingent-offer';
 export const BACKGROUND_CHECK: string = 'bgc';
 export const BACKGROUND_CHECK_FCRA: string = 'bgc/fcra'
+export const RESUME_APPLICATION: string = 'resume-application';

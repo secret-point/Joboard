@@ -24,7 +24,7 @@ export const boundCreateApplicationDS = (
     onSuccess?: Function
 ) => store.dispatch(actionCreateApplicationDS(payload, onSuccess));
 
-export const boundUpdateApplicationAndSkipScheduleDS = (
+export const boundUpdateApplicationDS = (
     payload: UpdateApplicationRequestDS,
     onSuccess?: Function
 ) => store.dispatch(actionUpdateApplicationDS(payload, onSuccess));

@@ -3,19 +3,17 @@ import { ofType } from "redux-observable";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import { actionCreateApplicationAndSkipScheduleDSFailed, actionCreateApplicationAndSkipScheduleDSSuccess, actionCreateApplicationDSFailed, actionCreateApplicationDSSuccess, actionGetApplicationFailed, actionGetApplicationSuccess, actionUpdateApplicationDSFailed, actionUpdateApplicationDSSuccess, actionUpdateWorkflowName, actionUpdateWorkflowNameFailed, actionUpdateWorkflowNameSuccess } from "../actions/ApplicationActions/applicationActions";
 import { Application } from "../utils/types/common";
-import { CreateApplicationActionDS, CreateApplicationAndSkipScheduleActionDS, CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE, CREATE_APPLICATION_TYPE, GetApplicationAction, GetApplicationSuccessAction, GET_APPLICATION_TYPE, UpdateApplicationActionDS, UpdateWorkflowStepNameAction, UPDATE_WORKFLOW_NAME_TYPE } from "../actions/ApplicationActions/applicationActionTypes";
+import { CreateApplicationActionDS, CreateApplicationAndSkipScheduleActionDS, CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE, CREATE_APPLICATION_TYPE, GetApplicationAction, GetApplicationSuccessAction, GET_APPLICATION_TYPE, UpdateApplicationActionDS, UpdateWorkflowStepNameAction, UPDATE_APPLICATION_TYPE, UPDATE_WORKFLOW_NAME_TYPE } from "../actions/ApplicationActions/applicationActionTypes";
 import CandidateApplicationService from "../services/candidate-application-service";
-import { UpdateWorkflowNameRequest } from "../utils/apiTypes";
-import { WorkflowStepNames } from "../utils/constants/common";
 import { completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
 import { actionWorkflowRequestEnd, actionWorkflowRequestInit, actionWorkflowRequestStart } from "../actions/UiActions/uiActions";
-import { boundUpdateWorkflowName } from "../actions/ApplicationActions/boundApplicationActions";
 import { routeToAppPageWithPath, sanitizeApplicationData } from "../utils/helper";
 import { APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE, APPLICATION_STATE_TO_STEP_NAME, STEPS_NOT_CONNECT_WORKFLOW_SERVICE } from "../constants";
 import { QUERY_PARAMETER_NAME } from "../utils/enums/common";
-import { CONSENT, CONTINGENT_OFFER } from "../components/pageRoutes";
+import { CONSENT } from "../components/pageRoutes";
 import { boundWorkflowRequestStart } from "../actions/UiActions/boundUi";
+import { WORKFLOW_STEP_NAME } from "../utils/constants/common";
 
 export const GetApplicationEpic = (action$: Observable<any>) => {
     return action$.pipe(
@@ -84,7 +82,7 @@ export const CreateApplicationDSEpic = (action$: Observable<any>) => {
                         return response
                     }),
                     map((data: Application) => {
-                        if (action.onSuccess) action.onSuccess(data.applicationId);
+                        if (action.onSuccess) action.onSuccess(data);
                         return actionCreateApplicationDSSuccess(data);
                     }),
                     catchError((error: any) => {
@@ -100,7 +98,7 @@ export const CreateApplicationDSEpic = (action$: Observable<any>) => {
 
 export const UpdateApplicationDSEpic = (action$: Observable<any>) => {
     return action$.pipe(
-        ofType(CREATE_APPLICATION_TYPE.CREATE),
+        ofType(UPDATE_APPLICATION_TYPE.UPDATE),
         switchMap((action: UpdateApplicationActionDS) =>
             from(new CandidateApplicationService().updateApplication(action.payload))
                 .pipe(
@@ -108,7 +106,7 @@ export const UpdateApplicationDSEpic = (action$: Observable<any>) => {
                         return response
                     }),
                     map((data: Application) => {
-                        if (action.onSuccess) action.onSuccess(data.applicationId);
+                        if (action.onSuccess) action.onSuccess(data);
                         return actionUpdateApplicationDSSuccess(data);
                     }),
                     catchError((error: any) => {
@@ -155,11 +153,8 @@ export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>)
                     return response
                 }),
                 map((data: Application) => {
-                    if (action.onSuccess) action.onSuccess(data.applicationId);
-                    const updateWorkflowNameRequest: UpdateWorkflowNameRequest = {applicationId:data.applicationId, workflowStepName:WorkflowStepNames.CONTINGENT_OFFER};
-                    boundUpdateWorkflowName(updateWorkflowNameRequest, ()=>{
-                        createApplicationAndSkipScheduleHelper(data)
-                    });
+                    if (action.onSuccess) action.onSuccess(data);
+                    createApplicationAndSkipScheduleHelper(data);
                     return actionCreateApplicationAndSkipScheduleDSSuccess(data);
                 }),
                 catchError((error: any) => {
@@ -173,25 +168,26 @@ export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>)
     )
 };
 
-
-const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Application) => {
+export const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Application) => {
     const state = store.getState();
     const jobId = createApplicationResponse.jobScheduleSelected?.jobId;
     const scheduleId = createApplicationResponse.jobScheduleSelected?.scheduleId;
     const applicationId = createApplicationResponse.applicationId;
+    const candidateId = createApplicationResponse.candidateId;
+    const scheduleDetail = state.schedule.scheduleDetail;
     if(scheduleId && state.appConfig.results?.envConfig){
         window.hasCompleteTaskOnSkipSchedule = () => {
             routeToAppPageWithPath(CONSENT, [
                 {paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId},
                 {paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId}])
-            completeTask(createApplicationResponse, "job-opportunities", undefined, undefined, jobId);
+            completeTask(createApplicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
         }
         boundWorkflowRequestStart();
         loadWorkflowDS(
-            createApplicationResponse.jobScheduleSelected.jobId || "",
-            createApplicationResponse.jobScheduleSelected.scheduleId || "",
-            createApplicationResponse.applicationId,
-            createApplicationResponse.candidateId,
+            jobId || "",
+            scheduleId || "",
+            applicationId,
+            candidateId,
             state.appConfig.results.envConfig
         );
     } else {

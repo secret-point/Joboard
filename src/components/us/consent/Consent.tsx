@@ -4,12 +4,12 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { routeToAppPageWithPath } from "../../../utils/helper";
+import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { JOB_OPPORTUNITIES } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
-import { Locale } from "../../../utils/types/common";
+import { Application, Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -18,10 +18,13 @@ import { CreateApplicationAndSkipScheduleRequestDS, CreateApplicationRequestDS }
 import { uiState } from "../../../reducers/ui.reducer";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 
 interface MapStateToProps {
     job: JobState;
-    ui: uiState
+    schedule: ScheduleState;
+    ui: uiState;
 }
 
 interface RenderFlyoutFunctionParams {
@@ -29,19 +32,28 @@ interface RenderFlyoutFunctionParams {
 }
 
 const ConsentPage = (props: MapStateToProps) => {
-    const { job, ui } = props;
+    const { job, ui, schedule } = props;
     const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const jobId = queryParams.jobId;
     const jobDetail = job.results;
     const scheduleId = queryParams.scheduleId;
+    const scheduleDetail = schedule.scheduleDetail;
     const pageName = getPageNameFromPath(pathname);
     const qualificationCriteria= jobDetail?.qualificationCriteria || [];
 
-    useEffect(()=>{
-        jobId && boundGetJobDetail({jobId:jobId, locale:Locale.enUS})
-    },[])
+    // Don't refetch data if id is not changing
+    useEffect(() => {
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        scheduleId && boundGetScheduleDetail({
+            locale: getLocale(),
+            scheduleId: scheduleId
+        })
+    }, [scheduleId]);
 
     useEffect(()=>{
         jobDetail && addMetricForPageLoad(pageName)
@@ -94,7 +106,7 @@ const ConsentPage = (props: MapStateToProps) => {
                 <Button
                     variant={ButtonVariant.Primary}
                     style={{ width: "100%" }}
-                    disabled={jobDetail && !isLoading? false : true}
+                    disabled={jobDetail && scheduleDetail && !isLoading? false : true}
                     onClick={() => {
                         if(scheduleId){
                             const payload: CreateApplicationAndSkipScheduleRequestDS ={
@@ -108,7 +120,7 @@ const ConsentPage = (props: MapStateToProps) => {
                                 jobId,
                                 dspEnabled:job.results?.dspEnabled,
                             }
-                            boundCreateApplicationDS(payload, (applicationId:string)=>routeToAppPageWithPath(JOB_OPPORTUNITIES, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId}]));
+                            boundCreateApplicationDS(payload, (application:Application)=>routeToAppPageWithPath(JOB_OPPORTUNITIES, [{paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId}]));
                         }
                     }}
                 >

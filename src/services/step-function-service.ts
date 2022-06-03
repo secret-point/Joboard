@@ -98,6 +98,8 @@ export default class StepFunctionService {
     boundWorkflowRequestStart();
     log("Websocket is connected");
     if (window.isCompleteTaskOnLoad) {
+      // This is from old BB and it is not working, may remove it later
+      // Using hasCompleteTaskOnWorkflowConnect below instead
       completeTask(window.applicationData, "Complete Task On Load");
     } else {
       this.jobId ? startOrResumeWorkflowDS() : startOrResumeWorkflow();
@@ -122,6 +124,11 @@ export default class StepFunctionService {
           window.hasCompleteTaskOnSkipSchedule();
           window.hasCompleteTaskOnSkipSchedule = undefined;
         }
+      // The reason we have this logic is to make sure the workflow start successfully before taking completeTask action
+      // Once it get the first message means the workflow service is ready to accpet completeTask action
+      } else if(window.hasCompleteTaskOnWorkflowConnect){
+        window.hasCompleteTaskOnWorkflowConnect();
+        window.hasCompleteTaskOnWorkflowConnect = undefined;
       } else {
         await goToStep(message);
       }
