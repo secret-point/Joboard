@@ -1,11 +1,15 @@
 import {
+    APPLICATION_STATE,
+    BACKGROUND_AGENT,
     BGC_STEP_STATUS,
     BGC_STEPS,
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
+    GOVERNMENT_TYPE,
     QUERY_PARAMETER_NAME,
-    SCHEDULE_FILTER_TYPE
+    SCHEDULE_FILTER_TYPE,
+    WORKFLOW_STEP_NAME
 } from "../enums/common";
 
 export interface QueryParamItem {
@@ -313,6 +317,95 @@ export interface HoursPerWeek {
     minimumValue: number;
 }
 
+export enum APPLICATION_STEP {
+    APPLICATION= "Application",
+    CANDIDATE_EVALUATION = "Candidate Evaluation",
+    CANDIDATE_SCHEDULE = "Candidate Schedule",
+    CONTINGENT_OFFER = "Contingent Offer",
+    BACKGROUND_CHECK_INFO = "Background Check Info",
+    CONTINGENCY = "Contingency",
+    PRE_HIRE = "Pre-Hire",
+    HIRE_CONFIRMED = "Hire Confirmed"
+}
+
+export enum APPLICATION_SUB_STEP {
+    // Common
+    AMAZON_WITHDRAWS = "Amazon Withdraws",
+    CANDIDATE_WITHDRAWS = "Candidate Withdraws",
+    AMAZON_REJECTS = "Amazon Rejects",
+    MERGE_DUPLICATE_APPLICATION = "Merge Duplicate Application",
+    REAPPLIED_DUPLICATE = "Reapplied Duplicate",
+    DUPLICATE_ACTIVE_APPLICATION = "Duplicate Active Application",
+    PROCESSING_ON_ANOTHER_REQ = "Processing On Another REQ",
+
+    // Application
+    CONTACT_INFORMATION = "Contact Information",
+    GENERAL_QUESTIONS = "General Questions",
+    TELL_US_ABOUT_YOURSELF = "Tell Us About Yourself",
+    DIVERSITY = "Diversity",
+    ASSESSMENT = "Assessment",
+    ASSESSMENT_PENDING = "Assessment Pending",
+    REVIEW_AND_SUBMIT = "Review & Submit",
+    SELF_IDENTIFICATION = "Self Identification",
+
+    // Candidate Evaluation
+    APPLIED = "Applied",
+    REHIRE_ELIGIBILITY_CHECK_PENDING = "Rehire Eligibility Check Pending",
+    REHIRE_ELIGIBILITY_CHECK_COMPLETE = "Rehire Eligibility Check Complete",
+    NOT_ELIGIBLE_FOR_REHIRE = "Not Eligible For Rehire",
+    HIGHEST = "Highest",
+    HIGH = "High",
+    MODERATE = "Moderate",
+    LOW = "Low",
+
+    // Contingent Offer
+    INTERVIEW_PENDING = "Interview Pending",
+    JOB_DESCRIPTION = "Job Description",
+    WOTC_SURVEY = "WOTC Survey",
+    OFFER_EXTENDED = "Offer Extended",
+
+    // Background Check Info
+    BACKGROUND_CHECK_DISCLOSURE = "Background Check Disclosure",
+    BACKGROUND_CHECK_CONSENT = "Background Check Consent",
+    CALIFORNIA_DISCLOSURE = "California Disclosure",
+    PRIOR_CONVICTIONS = "Prior Convictions",
+    PERSONAL_INFORMATION = "Personal Information",
+    CANDIDATE_BGC_INFO_COMPLETE = "Candidate BGC Info Complete",
+
+    // Contingency
+    DT_BGC_INITIATED = "DT/BGC Initiated",
+    BGC_PENDING = "BGC Pending",
+    PREPROCESSING = "PreProcessing",
+    BGC_CANCELLED = "BGC Cancelled",
+    BGC_NEEDS_REVIEW = "BGC Needs Review",
+    BGC_NEEDS_REVIEW_NO_NOTICE = "BGC Needs Review - No Notice",
+    BGC_NOT_ADJUDICATED = "BGC Not Adjudicated",
+    BGC_DELAYED_DECISION = "BGC Delayed Decision",
+    DT_FAILED = "DT Failed",
+    BGC_FAILED = "BGC Failed",
+    BGC_AND_DT_FAILED = "BGC and DT Failed",
+    BGC_PREADVERSE = "BGC Pre-Adverse",
+    SEND_CONTINGENT_OFFER = "Send Contingent Offer",
+
+    // Pre-Hire
+    ERROR_PREPROCESSING = "Error: Pre-processing",
+    CANDIDATE_READY_FOR_MATCHING = "Candidate Ready for Matching",
+    BGC_DT_INPROGRESS = "BGC DT Inprogress",
+    DRUG_TEST_RETAKE = "Drug Test Retake",
+    BGC_DT_COMPLETE_RESCHEDULE = "BGC DT Complete Reschedule",
+    SCHEDULE_APPOINTMENT_4 = "Schedule Appointment 4",
+    CANDIDATE_MATCHED = "Candidate Matched",
+    PEOPLESOFT_MANAGE_HIRE = "PeopleSoft: Manage Hire",
+    INITIATE_ONBOARDING = "Initiate Onboarding",
+    ERROR_INITIATE_ONBOARDING = "Error: Initiate Onboarding",
+    NO_SHOW_REHIRE = "No Show - Rehire",
+
+    // Hire Confirmed
+    HIRED_DIRECT = "Hired Direct",
+    HIRED_CONTINGENT = "Hired Contingent",
+    HIRED_ADMIN_TERM = "Hired - Admin Term"
+}
+
 export interface Application {
     active: boolean;
     submitted: boolean;
@@ -323,21 +416,20 @@ export interface Application {
     sfCandidateId: string;
     candidateName: string;
     parentRequisitionId: string;
-    currentState: string;
+    currentState: APPLICATION_STATE;
     assessment: any;
     jobSelected: JobSelected;
     contingentOffer: ContingentOffer;
-    fcraQuestions: any;
-    nonFcraQuestions: any;
+    fcraQuestions: FCRAQuestions;
+    nonFcraQuestions: NonFCRAQuestions;
     nheAppointment: any;
     nhePreference: NHEPreferences;
-    applicationSignature: any;
     firstAvailableStartDate: number;
     appointmentCompleted: boolean;
     wotcScreening: any;
     rehireEligibilityAudit: string;
-    step: string;
-    subStep: string;
+    step: APPLICATION_STEP;
+    subStep: APPLICATION_SUB_STEP;
     bgcDisclosureFCRA: string;
     metadata: any;
     createdBy: string;
@@ -347,16 +439,35 @@ export interface Application {
     shift: any;
     schedule: any;
     onlySeasonalShifts: boolean;
-    workflowStepName: string;
+    workflowStepName: WORKFLOW_STEP_NAME;
     hasBGCCaliforniaDisclosureAcknowledged: boolean;
     jobReferral: JobReferral;
-    jobScheduleSelected: {
-        jobId: string;
-        scheduleId: string;
-        scheduleDetails: any;
-        jobScheduleSelectedTime: string;
-    }
-    dspEnabled?: boolean
+    jobScheduleSelected: JobScheduleSelected;
+    dspEnabled?: boolean;
+    applicationSignature: ElectronicSignature;
+}
+
+export interface JobScheduleSelected {
+    jobId: string;
+    scheduleId: string;
+    scheduleDetails: any;
+    jobScheduleSelectedTime: string;
+}
+
+export interface FCRAQuestions {
+    bgcDisclosure: FCRA_DISCLOSURE_TYPE;
+    bgcDisclosureEsign: ElectronicSignature;
+}
+
+export interface NonFCRAQuestions {
+    requestedCopyOfBackgroundCheck: boolean,
+    nonFcraAcknowledgementEsign: ElectronicSignature,
+    nonFcraStateNoticeEsign: ElectronicSignature
+}
+
+export interface ElectronicSignature {
+    signature: string
+    signedDateTime: string
 }
 
 export interface ContingentOffer {
@@ -374,7 +485,7 @@ export interface JobSelected {
     childRequisitionId: string;
     headCountRequestId: string;
     jobSelectedOn: string;
-    bgcVendorName: BGCVendorType;
+    bgcVendorName: BGC_VENDOR_TYPE;
     shift: Shifts;
 }
 
@@ -410,7 +521,7 @@ export interface Shifts {
     country: string;
 }
 
-export enum BGCVendorType {
+export enum BGC_VENDOR_TYPE {
     FADV = "FADV",
     ACCURATE = "ACCURATE"
 }
@@ -454,23 +565,35 @@ export interface DesiredHoursPerWeek {
 }
 
 export interface WorkflowData {
-    stepName: string;
+    stepName: WORKFLOW_STEP_NAME;
     errorMessageCode: string;
   }
+
 export interface FcraDisclosureConfig {
     title: string,
     value: FCRA_DISCLOSURE_TYPE,
     description?: string
 }
 
+export interface AdditionalBgcConfig {
+    title: string,
+    value: boolean,
+    description?: string;
+    dataKey: string;
+}
+
 export interface NonFcraESignatureAcknowledgement {
     title: string,
-    translationKey: string
+    translationKey: string,
+    dataKeyDependency?: string,
+    dependencyValue?: BACKGROUND_AGENT;
 }
 
 export interface StateSpecificNotice {
     noticeText: string;
     noticeTranslationKey: string;
+    dataKeyDependency?: string,
+    dependencyValue?: BACKGROUND_AGENT;
 }
 
 export interface FormInputItem {
@@ -487,6 +610,8 @@ export interface FormInputItem {
     inputType?: string,
     toolTipText?: string,
     hasError?: boolean
+    edited?: boolean,
+    labelTranslationKey?: string
 }
 
 export interface FormDateInputItem extends FormInputItem {
@@ -496,14 +621,122 @@ export interface FormDateInputItem extends FormInputItem {
 
 export interface BgcStepConfig {
     completedSteps: BGC_STEPS[];
-    activeStep: BGC_STEPS;
-    pageStatus: {[keys in BGC_STEPS]: BGC_STEP_STATUS}
+    [BGC_STEPS.ADDITIONAL_BGC]: BgcStepStatus;
+    [BGC_STEPS.FCRA]: BgcStepStatus;
+    [BGC_STEPS.NON_FCRA]: BgcStepStatus
 }
 
 export interface ScheduleStateFilters {
     sortKey: SCHEDULE_FILTER_TYPE,
     maxHoursPerWeek:DESIRED_WORK_HOURS,
     daysHoursFilter: DayHoursFilter[]
+}
+
+export interface Candidate {
+    candidateId: string;
+    candidateSFId: string;
+    firstName: string;
+    middleName: string;
+    lastName: string;
+    nameSuffix: string;
+    address: Address;
+    timezone: string;
+    emailId: string;
+    language: string;
+    preferredPhoneType: string;
+    phoneNumber: string;
+    phoneCountryCode: string;
+    homePhoneNumber: string;
+    homePhoneCountryCode: string;
+    alternatePhoneNumber: string;
+    alternatePhoneCountryCode: string;
+    selfIdentificationInfo: SelfIdentificationInfo;
+    employmentInfo: EmploymentInfo;
+    additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
+    metadata: any;
+    locale: string;
+    isAgencyUser: boolean;
+    isEmailVerified: boolean;
+    isPhoneVerified: boolean;
+    isSFUser: boolean;
+    isAgreeToCommunication: boolean;
+    isDuplicateSSN: boolean;
+    socialSecurityNumber: string;
+    numSSNEdits: number;
+}
+export interface Address {
+    addressLine1: string;
+    addressLine2: string;
+    city: string;
+    state: string;
+    country: string;
+    zipcode: string;
+    countryCode: string;
+}
+
+export interface EmploymentInfo {
+    employeeId: string;
+    employeeType: string;
+    rehireEligibilityStatus: string;
+    rehireLocation: string;
+    rehireOverride: string;
+    startDate: string;
+    managerLogin: string;
+    department: string;
+    shiftCode: string;
+    agencyName: string;
+}
+
+export interface AdditionalBackgroundInfoRequest {
+    hasCriminalRecordWithinSevenYears: boolean;
+    hasPreviouslyWorkedAtAmazon: boolean;
+    mostRecentBuildingWorkedAtAmazon: string;
+    mostRecentTimePeriodWorkedAtAmazon: string;
+    previousLegalNames: string[];
+    governmentIdType: GOVERNMENT_TYPE;
+    idNumber: string;
+    dateOfBirth: string;
+    address: Address;
+    convictionDetails: string;
+}
+
+export interface SelfIdentificationInfo {
+    highestDegree: string;
+    nationalId: string;
+    nationalIdType: string;
+    citizenship: string;
+    driverLicence: string;
+    gender: string;
+    ethnicity: string;
+    ethnicitySubGroup: string;
+    ethnicityOther: string;
+    militarySpouse: string;
+    veteran: string;
+    protectedVeteran: string;
+    disability: string;
+    disabilityDate: string;
+    religion: string;
+    otherReligion: string;
+    sexualOrientation: string;
+}
+
+export interface CandidatePatchRequest {
+    additionalBackgroundInfo?: Partial<AdditionalBackgroundInfoRequest>;
+}
+
+export interface CandidateInfoErrorState {
+    [key:string]:boolean
+}
+
+export interface BgcStepStatus {
+    status: BGC_STEP_STATUS,
+    editMode: boolean
+}
+
+export interface NonFcraFormErrorStatus {
+    hasError: boolean;
+    ackESignHasError: boolean;
+    noticeESignHasError: boolean;
 }
 
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

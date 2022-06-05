@@ -5,13 +5,12 @@ import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
 import { getDataForEventMetrics } from "../../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../AdobeActions/adobeActions";
 import { log, logError } from "../../helpers/log-helper";
-import _get from "lodash/get";
 import { checkIfIsCSRequest, pathByDomain } from "../../helpers/utils";
 import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../UiActions/boundUi";
 import store from "../../store/store";
 import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
 import { getCurrentStepNameFromHash, routeToAppPageWithPath } from "../../utils/helper";
-import { JOB_OPPORTUNITIES } from "../../components/pageRoutes";
+import { WORKFLOW_STEP_NAME } from "../../utils/enums/common";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -168,15 +167,15 @@ export const goToStep = async (workflowData: WorkflowData) => {
     )
 
     if (
-      workflowData.stepName === "supplementary-success" ||
-      workflowData.stepName === "thank-you"
+      workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS ||
+      workflowData.stepName === WORKFLOW_STEP_NAME.THANK_YOU
     ) {
       const metric = window.MetricsPublisher.newChildActionPublisherForMethod(
         "ApplicationCompleteTime"
       );
 
       const metricName =
-        workflowData.stepName === "supplementary-success"
+        workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS
           ? "Completed"
           : "PreHireStepsCompleted";
       metric.publishTimerMonitor(
@@ -194,7 +193,7 @@ export const completeTask = (
   application?: Application,
   currentStep?: string,
   isBackButton?: boolean,
-  targetStep?: string,
+  targetStep?: WORKFLOW_STEP_NAME,
   jobId?: string,
   schedule?: Schedule
 ) => {
@@ -248,7 +247,7 @@ export const onTimeOut = () => {
   }
 };
 
-export const onCompleteTaskHelper = (application: Application, isBackButton?:boolean, targetStep?: string) => {
+export const onCompleteTaskHelper = (application: Application, isBackButton?:boolean, targetStep?: WORKFLOW_STEP_NAME) => {
   const state = store.getState();
   const jobId = application.jobScheduleSelected?.jobId;
   const scheduleId = application.jobScheduleSelected?.scheduleId;
@@ -262,9 +261,9 @@ export const onCompleteTaskHelper = (application: Application, isBackButton?:boo
   } else {
     log(`Completed task on ${currentStepName}`);
   }
-  
+
   if (!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
-    window.hasCompleteTaskOnSkipSchedule = () => {  
+    window.hasCompleteTaskOnSkipSchedule = () => {
       completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
     }
     boundWorkflowRequestStart();

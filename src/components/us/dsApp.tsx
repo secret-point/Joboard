@@ -11,7 +11,7 @@ import {
   CONTINGENT_OFFER,
   JOB_CONFIRMATION,
   JOB_DESCRIPTION,
-  JOB_OPPORTUNITIES,
+  JOB_OPPORTUNITIES, NHE,
   PRE_CONSENT,
   RESUME_APPLICATION
 } from "../pageRoutes";
@@ -20,10 +20,11 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
 import JobConfirmation from "./jobOpportunity/JobConfirmation";
 import JobDescription from "./jobOpportunity/JobDescription";
-import ContingencyOffer from "./contingencyOffer/ContingencyOffer";
+import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import BackgroundCheck from "./bgc/BackgroundCheck";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "./resumeApplication/ResumeApplication";
+import Nhe from "./nhe/Nhe";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -76,6 +77,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${RESUME_APPLICATION}`} exact>
               <ResumeApplication/>
+            </Route>
+            <Route path={`/${NHE}`} exact>
+              <Nhe/>
             </Route>
           </Switch>
         </Router>

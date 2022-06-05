@@ -7,8 +7,8 @@ import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
 import { CS_DOMAIN_LIST } from "../constants";
 import { isArray, isBoolean } from "lodash";
-import ICandidateApplication from "../@types/ICandidateApplication";
 import store from "../store/store";
+import { Application } from "../utils/types/common";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -63,7 +63,7 @@ export const launchAuthentication = () => {
   const isLegacy = checkIfIsLegacy();
   const jobIdOrRequisitionIdFromHash = hash[1] && hash[1] != 'undefined' ? hash[1] : null;
   const applicationIdFromHash = hash[2] && hash[2] != 'undefined' ? hash[2] : null;
-  const targetJobIdOrRequisitionId = isLegacy 
+  const targetJobIdOrRequisitionId = isLegacy
     ? jobIdOrRequisitionIdFromHash || requisitionIdFromUrl
     : jobIdOrRequisitionIdFromHash || jobIdFromUrl;
   const targetApplicationId = applicationIdFromHash || applicationIdFromUrl;
@@ -285,8 +285,8 @@ export const injectCsNavAndFooter = (CSDomain:string) => {
     });
 }
 
-export const addApplicationIdInUrl = (application?: ICandidateApplication) => {
-  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));  
+export const addApplicationIdInUrl = (application?: Application) => {
+  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
   const currentSearch = window.location.search;
   let newSearch = currentSearch;
   let newUrl = window.location.href;

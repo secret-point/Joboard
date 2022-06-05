@@ -8,29 +8,45 @@ import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { Locale } from "../../../utils/types/common";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
+import {
+    boundGetApplication,
+    boundUpdateApplicationDS
+} from "../../../actions/ApplicationActions/boundApplicationActions";
+import {
+    bgcShouldDisplayContinue,
+    createUpdateApplicationRequest,
+    getLocale,
+    handleUInitiateBGCStep,
+    routeToAppPageWithPath
+} from "../../../utils/helper";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import { connect } from "react-redux";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import BGCStepCard from "../../common/bgc/BGCStepCard";
 import { BGCState } from "../../../reducers/bgc.reducer";
-import { BGC_STEP_STATUS, BGC_STEPS } from "../../../utils/enums/common";
+import {
+    BGC_STEP_STATUS,
+    BGC_STEPS,
+    PROXY_APPLICATION_STATE,
+    UPDATE_APPLICATION_API_TYPE
+} from "../../../utils/enums/common";
 import { CommonColors } from "../../../utils/colors";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import NonFcraDisclosure from "../../common/bgc/NonFcraDisclosure";
 import AdditionalBGCInfo from "../../common/bgc/AdditionalBGCInfo";
-import { BACKGROUND_CHECK_FCRA } from "../../pageRoutes";
+import { BACKGROUND_CHECK_FCRA, NHE } from "../../pageRoutes";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
     schedule: ScheduleState,
-    bgc: BGCState
+    bgc: BGCState,
+    candidate: CandidateState
 }
 
 interface BackgroundCheckProps {
@@ -41,24 +57,28 @@ type BackgroundCheckMergedProps = MapStateToProps & BackgroundCheckProps;
 
 const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
-    const { job, application, schedule, bgc } = props;
+    const { job, application, schedule, bgc, candidate } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const { applicationId, jobId } = queryParams;
+    const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
     const { stepConfig } = bgc;
-    const { pageStatus } = stepConfig;
+    const { completedSteps } = stepConfig;
+    const scheduleDetail = schedule.scheduleDetail;
+    const { candidateData } = candidate;
 
     useEffect(() => {
-        const request: GetScheduleListByJobIdRequest = {
-            jobId,
-            applicationId,
-            locale: getLocale()
-        }
-        boundGetScheduleListByJobId(request);
-    }, []);
+        boundGetCandidateInfo();
+    },[])
+
+    useEffect(() => {
+        scheduleId && boundGetScheduleDetail({
+            locale: getLocale(),
+            scheduleId: scheduleId
+        })
+    }, [scheduleId]);
 
     // Don't refetch data if id is not changing
     useEffect(() => {
@@ -70,8 +90,26 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     }, [applicationId]);
 
     useEffect(() => {
-        jobDetail && applicationData && addMetricForPageLoad(pageName);
+        jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
     }, [jobDetail, applicationData]);
+
+    useEffect(() => {
+        if(applicationData && candidateData) {
+            handleUInitiateBGCStep(applicationData, candidateData);
+        }
+    }, [candidateData, applicationData])
+
+    const handleContinue = () => {
+        if(applicationData) {
+            const { BGC } = UPDATE_APPLICATION_API_TYPE;
+            const payload = {
+                state: PROXY_APPLICATION_STATE.ADDITIONAL_BACKGROUND_INFO_SAVED //TODO copied from proxy. need to align the meaning
+            }
+            const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, BGC, payload);
+            boundUpdateApplicationDS(request);
+            routeToAppPageWithPath(NHE);
+        }
+    }
 
     const renderFCRAExpandedContent = (): React.ReactNode => {
         return (
@@ -88,7 +126,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                             variant={ButtonVariant.Primary}
                             onClick={() => routeToAppPageWithPath(BACKGROUND_CHECK_FCRA)}
                         >
-                            {pageStatus.FCRA === BGC_STEP_STATUS.ACTIVE ? 'Get Started' : 'Edit Information'}
+                            {stepConfig[BGC_STEPS.FCRA].status === BGC_STEP_STATUS.ACTIVE ? 'Get Started' : 'Edit Information'}
                         </Button>
 
                     </Col>
@@ -110,28 +148,36 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                 title='Fair Credit Report Act Disclosure'
                 expandedContent={renderFCRAExpandedContent()}
                 stepName={BGC_STEPS.FCRA}
-                stepStatus={pageStatus.FCRA}
+                bgcStepStatus={stepConfig[BGC_STEPS.FCRA]}
                 stepIndex={1}
-                editMode={false}
             />
 
             <BGCStepCard
                 title='Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check'
                 expandedContent={<NonFcraDisclosure/>}
                 stepName={BGC_STEPS.NON_FCRA}
-                stepStatus={pageStatus.NON_FCRA}
+                bgcStepStatus={stepConfig[BGC_STEPS.NON_FCRA]}
                 stepIndex={2}
-                editMode={false}
             />
 
             <BGCStepCard
                 title='Additional background information'
                 expandedContent={<AdditionalBGCInfo/>}
                 stepName={BGC_STEPS.ADDITIONAL_BGC}
-                stepStatus={pageStatus.ADDITIONAL_BGC}
+                bgcStepStatus={stepConfig[BGC_STEPS.ADDITIONAL_BGC]}
                 stepIndex={3}
-                editMode={false}
             />
+            <Col padding={{top: 'S300'}}>
+                {
+                    bgcShouldDisplayContinue(stepConfig) &&
+                        <Button
+                            variant={ButtonVariant.Primary}
+                            onClick={handleContinue}
+                        >
+                            Continue
+                        </Button>
+                }
+            </Col>
         </Col>
     )
 }

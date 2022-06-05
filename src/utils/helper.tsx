@@ -1,8 +1,15 @@
 import React from "react";
 import {
     Application,
+    BgcStepConfig,
+    Candidate,
+    CandidateInfoErrorState,
+    CandidatePatchRequest,
     DayHoursFilter,
+    FormInputItem,
+    Job,
     Locale,
+    NonFcraFormErrorStatus,
     QueryParamItem,
     Range,
     Schedule,
@@ -12,16 +19,41 @@ import {
 } from "./types/common";
 import { history } from "../store/store";
 import Cookies from "js-cookie";
-import { HVH_LOCALE, initScheduleStateFilters } from "./constants/common";
+import { AdditionalBGCFormConfig, HVH_LOCALE, initScheduleStateFilters, NameRegexValidator } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
-import { GetScheduleListByJobIdRequest } from "./apiTypes";
+import {
+    GetScheduleListByJobIdRequest,
+    SelectedScheduleForUpdateApplication,
+    UpdateApplicationRequestDS
+} from "./apiTypes";
 import {
     boundGetScheduleListByJobId,
     boundUpdateScheduleFilters
 } from "../actions/ScheduleActions/boundScheduleActions";
-import { DAYS_OF_WEEK } from "./enums/common";
+import {
+    BGC_STEP_STATUS,
+    BGC_STEPS,
+    DAYS_OF_WEEK,
+    FCRA_DISCLOSURE_TYPE,
+    QUERY_PARAMETER_NAME,
+    UPDATE_APPLICATION_API_TYPE
+} from "./enums/common";
 import capitalize from 'lodash/capitalize';
+import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import { BACKGROUND_CHECK, JOB_CONFIRMATION, NHE } from "../components/pageRoutes";
+import queryString from "query-string";
+import { isBoolean } from "lodash";
+import { CS_DOMAIN_LIST } from "../constants";
+import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
+import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
+import isEmpty from "lodash/isEmpty";
+import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
+import get from 'lodash/get';
+import set from 'lodash/set';
+import pick from 'lodash/pick';
+import { initScheduleState } from "../reducers/bgc.reducer";
+import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
@@ -203,4 +235,362 @@ export const sanitizeApplicationData = (applicationData: Application) => {
 
 export const getCurrentStepNameFromHash = ()=>{
     return window.location.hash.split('?')[0].replace('#/', '').split('/')[0];
+}
+
+export const checkIfIsLegacy = () => {
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+    const isLegacy = !queryParams.jobId;
+    return isLegacy;
+}
+
+export const checkIfIsCSRequest = (override? : boolean) => {
+    if(isBoolean(override)){
+        return override
+    }
+    const origin = window.location.origin;
+    const isCSRequest = CS_DOMAIN_LIST.includes(origin);
+    return isCSRequest;
+}
+
+export const handleSubmitJobConfirmation = (applicationDetail: Application, jobDetail: Job, scheduleDetail: Schedule) => {
+    if(applicationDetail && scheduleDetail && jobDetail){
+        const queryParamItem: QueryParamItem = {
+            paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+            paramValue: scheduleDetail?.scheduleId
+        }
+        const selectedSchedule: SelectedScheduleForUpdateApplication = {
+            jobId: jobDetail.jobId,
+            scheduleId: scheduleDetail.scheduleId,
+            scheduleDetails: JSON.stringify(scheduleDetail),
+        }
+        const dspEnabled = applicationDetail?.dspEnabled;
+        const updateApplicationRequest: UpdateApplicationRequestDS = {
+            applicationId: applicationDetail.applicationId,
+            payload: selectedSchedule,
+            type: UPDATE_APPLICATION_API_TYPE.JOB_CONFIRM,
+            isCsRequest: checkIfIsCSRequest(),
+            dspEnabled
+        }
+        boundUpdateApplicationDS(updateApplicationRequest, (applicationData: Application)=>{
+            // Stay at the current page but add new urlParams, wait work flow to do the routing
+            routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
+            onCompleteTaskHelper(applicationData);
+        });
+    }
+}
+
+export const handleAcceptOffer = ( applicationData: Application ) => {
+    const updateApplicationRequest: UpdateApplicationRequestDS = {
+        applicationId: applicationData.applicationId,
+        payload: {
+            extendedTimeStamp: new Date().toISOString()
+        },
+        type: UPDATE_APPLICATION_API_TYPE.CONTINGENT_OFFER,
+        isCsRequest: checkIfIsCSRequest(),
+        dspEnabled: !!applicationData?.dspEnabled
+    }
+    boundUpdateApplicationDS(updateApplicationRequest, (applicationDetail: Application) => {
+        // Go to the new page, don't wait work flow to do the routing
+        routeToAppPageWithPath(BACKGROUND_CHECK);
+        onCompleteTaskHelper(applicationDetail);
+    });
+}
+
+
+export const createUpdateApplicationRequest = (application: Application, apiType: UPDATE_APPLICATION_API_TYPE, payload: any): UpdateApplicationRequestDS => {
+    const updateApplicationRequest: UpdateApplicationRequestDS = {
+        applicationId: application.applicationId,
+        payload,
+        type: apiType,
+        isCsRequest: checkIfIsCSRequest(),
+        dspEnabled: !!application?.dspEnabled
+    }
+    return updateApplicationRequest;
+}
+
+export const validateName = (name: string): boolean => {
+    return new RegExp(NameRegexValidator).test(name)
+}
+
+export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
+    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions);
+    const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions);
+    const isAdditionalBgcCompleted = !isEmpty(candidateData?.additionalBackgroundInfo);
+    const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
+    const { ACTIVE, COMPLETED, LOCKED } = BGC_STEP_STATUS;
+
+    let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig }
+
+    if(isFcraCompleted && !isNonFcraCompleted && !isAdditionalBgcCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [FCRA],
+            [FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [NON_FCRA]: {
+                status: ACTIVE,
+                editMode: false
+            },
+            [ADDITIONAL_BGC]: {
+                status: LOCKED,
+                editMode: false
+            }
+        }
+    }
+    else if(isFcraCompleted && isNonFcraCompleted && !isAdditionalBgcCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [FCRA, NON_FCRA],
+            [FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [NON_FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [ADDITIONAL_BGC]: {
+                status: ACTIVE,
+                editMode: false
+            }
+        }
+    }
+    else if(isFcraCompleted && isNonFcraCompleted && isAdditionalBgcCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [FCRA, NON_FCRA, ADDITIONAL_BGC],
+            [FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [NON_FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [ADDITIONAL_BGC]: {
+                status: COMPLETED,
+                editMode: false
+            }
+        }
+    }
+
+    const request: BgcStepConfig = stepConfig;
+
+    boundUpdateStepConfigAction(request);
+}
+
+export const verifyBasicInfo =
+    (candidate: CandidatePatchRequest, formError: CandidateInfoErrorState, formConfig: FormInputItem[]): {hasError: boolean, formError: CandidateInfoErrorState} => {
+        let hasError: boolean = false;
+        formConfig
+            .filter(itemConfig => itemConfig.edited === true)
+            .forEach(itemConfig => {
+                const { dataKey, required, regex } = itemConfig;
+                const value = get(candidate,itemConfig.dataKey);
+                const isValid = validateInput(value, required || false, regex || '');
+                set(formError, dataKey, !isValid);
+                if(!isValid && !hasError) hasError = true;
+            });
+        return {
+            hasError,
+            formError
+        }
+    }
+
+export const validateInput = (value: string, required: boolean, regex: string) => {
+    if(!required && (!value || value?.length === 0)) return true;
+
+    if(required && (!value || value?.length === 0)) return false;
+
+    return new RegExp(regex).test(value);
+}
+
+export const resetUnchangedFieldFromPatch = (parentObject: Object, formConfig: FormInputItem[], patchObject?: Object): Object => {
+    if(isEmpty(patchObject)) return {};
+
+    const changedField: string[] = formConfig
+        .filter(config => config.edited === true)
+        .map(config => {
+            if(get(patchObject, config.dataKey) === get(parentObject, config.dataKey)) {
+                config.edited = false
+            }
+            return config;
+        })
+        .filter(config => config.edited === true)
+        .map(config => config.dataKey);
+
+    const newPatchObject: Partial<Object> = pick(patchObject, changedField);
+
+    return newPatchObject as Object;
+}
+
+export const handleSubmitNonFcraBGC =
+    ( applicationData: Application, ackEsign: string, noticeEsign: string, requestedCopyOfBGC: boolean, stepConfig: BgcStepConfig ) => {
+        if(applicationData) {
+            const updateApplicationPayload = {
+                nonFcraQuestions: {
+                    nonFcraAcknowledgementEsign: {
+                        signature: ackEsign.trim(),
+                    },
+                    nonFcraStateNoticeEsign: {
+                        signature: noticeEsign.trim(),
+                    },
+                    requestedCopyOfBackgroundCheck: requestedCopyOfBGC
+                }
+            }
+
+            const updateApplicationRequest = createUpdateApplicationRequest(applicationData, UPDATE_APPLICATION_API_TYPE.NON_FCRA_BGC, updateApplicationPayload);
+            boundUpdateApplicationDS(updateApplicationRequest, () => {
+                handleUpdateNonFCRABGCStep(stepConfig);
+            })
+        }
+    }
+
+export const handleUpdateNonFCRABGCStep = (stepConfig: BgcStepConfig) => {
+    const { completedSteps } = stepConfig;
+    const request: BgcStepConfig = {
+        ...stepConfig,
+        completedSteps: [...completedSteps, BGC_STEPS.NON_FCRA],
+        [BGC_STEPS.NON_FCRA]: {
+            status: BGC_STEP_STATUS.COMPLETED,
+            editMode: false
+        },
+        [BGC_STEPS.ADDITIONAL_BGC]: {
+            status: BGC_STEP_STATUS.ACTIVE,
+            editMode: false
+        }
+    }
+    boundUpdateStepConfigAction(request);
+}
+
+export const validateNonFcraSignatures = ( applicationData: Application, nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
+    let errorStatus: NonFcraFormErrorStatus = {
+        hasError: false,
+        ackESignHasError: false,
+        noticeESignHasError: false
+    }
+
+    const fcraQuestions = applicationData?.fcraQuestions;
+    const bgcDisclosureEsign = fcraQuestions?.bgcDisclosureEsign.signature;
+
+    if(!validateName(nonFcraAckEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            ackESignHasError: true
+        }
+    }
+
+    if(!validateName(nonFcraNoticeEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            noticeESignHasError: true
+        }
+    }
+
+    //first check if there two signature are equal
+    if(nonFcraNoticeEsign !== nonFcraAckEsign) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            noticeESignHasError: true
+        }
+    }
+
+    if((!!bgcDisclosureEsign && bgcDisclosureEsign !== nonFcraAckEsign) || (!!bgcDisclosureEsign && bgcDisclosureEsign !== nonFcraNoticeEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            noticeESignHasError: true,
+            ackESignHasError: true
+        }
+    }
+
+    return errorStatus
+}
+
+export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => {
+    const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
+    const { COMPLETED } = BGC_STEP_STATUS;
+    const fcraStatus = stepConfig[FCRA];
+    const nonFcraStatus = stepConfig[NON_FCRA];
+    const addBgcStatus = stepConfig[ADDITIONAL_BGC];
+
+    return fcraStatus.status === COMPLETED && !fcraStatus.editMode &&
+        nonFcraStatus.status === COMPLETED && !nonFcraStatus.editMode &&
+        addBgcStatus.status == COMPLETED && !addBgcStatus.editMode
+}
+
+export const handleSubmitFcraBGC = ( applicationData: Application, stepConfig: BgcStepConfig, eSignature: string, fcraResponse?: FCRA_DISCLOSURE_TYPE ) => {
+    const updateApplicationPayload = {
+        fcraQuestions: {
+            bgcDisclosureEsign: {
+                signature: eSignature
+            },
+            bgcDisclosure: fcraResponse
+        }
+    }
+
+    const { FCRA_BGC } = UPDATE_APPLICATION_API_TYPE;
+
+    const updateApplicationRequest = createUpdateApplicationRequest(applicationData, FCRA_BGC, updateApplicationPayload);
+    boundUpdateApplicationDS(updateApplicationRequest, () => {
+        handleUpdateFcraBGCStep(stepConfig);
+        routeToAppPageWithPath(BACKGROUND_CHECK);
+    })
+}
+
+export const handleUpdateFcraBGCStep = (stepConfig: BgcStepConfig) => {
+    const { completedSteps } = stepConfig;
+    const request: BgcStepConfig = {
+        ...stepConfig,
+        completedSteps: [...completedSteps, BGC_STEPS.FCRA],
+        [BGC_STEPS.FCRA]: {
+            status: BGC_STEP_STATUS.COMPLETED,
+            editMode: false
+        },
+        [BGC_STEPS.NON_FCRA]: {
+            status: BGC_STEP_STATUS.ACTIVE,
+            editMode: false
+        }
+    }
+
+    boundUpdateStepConfigAction(request);
+}
+
+export const handleSubmitAdditionalBgc =
+    ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState, stepConfig: BgcStepConfig ) => {
+        const { ADDITIONAL_BGC } = UPDATE_APPLICATION_API_TYPE;
+        const patch: CandidatePatchRequest = resetUnchangedFieldFromPatch(candidateData, AdditionalBGCFormConfig, candidatePatchRequest) || {};
+        const verifyInfo = verifyBasicInfo(patch, formError, AdditionalBGCFormConfig);
+        boundUpdateCandidateInfoError(verifyInfo.formError);
+        if(!verifyInfo.hasError) {
+            //Bound update additional info all
+            const payload = {
+                candidate: candidatePatchRequest.additionalBackgroundInfo
+            }
+            const request: UpdateApplicationRequestDS =
+                createUpdateApplicationRequest(applicationData, ADDITIONAL_BGC, payload);
+            boundUpdateApplicationDS(request, () => {
+                handleUpdateAdditionalBGCStep(stepConfig);
+                routeToAppPageWithPath(NHE);
+            })
+        }
+    }
+
+export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
+    const { completedSteps } = stepConfig;
+    const request: BgcStepConfig = {
+        ...stepConfig,
+        completedSteps: [...completedSteps, BGC_STEPS.FCRA, BGC_STEPS.ADDITIONAL_BGC],
+        [BGC_STEPS.NON_FCRA]: {
+            status: BGC_STEP_STATUS.COMPLETED,
+            editMode: false
+        }
+    }
+
+    boundUpdateStepConfigAction(request);
 }

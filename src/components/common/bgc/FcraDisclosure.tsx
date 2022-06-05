@@ -3,17 +3,14 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import { DetailedRadio, Input, InputWrapper } from "@amzn/stencil-react-components/form";
 import { FcraDisclosureConfigList } from "../../../utils/constants/common";
-import { BGC_STEP_STATUS, BGC_STEPS, FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
+import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { connect } from "react-redux";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
-import { BgcStepConfig } from "../../../utils/types/common";
-import { boundUpdateStepConfigAction } from "../../../actions/BGC_Actions/boundBGCActions";
-import { routeToAppPageWithPath } from "../../../utils/helper";
-import { BACKGROUND_CHECK } from "../../pageRoutes";
+import { handleSubmitFcraBGC, validateName } from "../../../utils/helper";
 
 interface MapStateToProps {
     job: JobState,
@@ -29,25 +26,27 @@ interface FcraDisclosureProps {
 type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
 
 const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
-    const { bgc } = props;
+    const { bgc, application } = props;
     const { stepConfig } = bgc;
-    const { activeStep, pageStatus, completedSteps } = stepConfig;
-    const [fcraResponse, setFcraResponse] = useState(FCRA_DISCLOSURE_TYPE.ACCEPT.toString());
-    const [eSignature, setESignature] = useState();
+    const { completedSteps } = stepConfig;
+    const applicationData = application.results;
+    const fcraQuestions = applicationData?.fcraQuestions;
+
+    const [fcraResponse, setFcraResponse] = useState<FCRA_DISCLOSURE_TYPE | undefined>(fcraQuestions?.bgcDisclosure);
+    const [eSignature, setESignature] = useState(fcraQuestions?.bgcDisclosureEsign.signature || '');
+    const [isSignatureValid, setIsSignatureValid] = useState(true);
 
     const handleClickNext = () => {
-        const request: BgcStepConfig = {
-            activeStep: BGC_STEPS.NON_FCRA,
-            completedSteps: [...completedSteps, BGC_STEPS.FCRA],
-            pageStatus: {
-                ...pageStatus,
-                [BGC_STEPS.FCRA]: BGC_STEP_STATUS.COMPLETED,
-                [BGC_STEPS.NON_FCRA]: BGC_STEP_STATUS.ACTIVE,
-            }
+        const isFullNameValid = validateName(eSignature);
+
+        if(isFullNameValid && !!fcraResponse) {
+            setIsSignatureValid(true);
+            return;
         }
 
-        boundUpdateStepConfigAction(request);
-        routeToAppPageWithPath(BACKGROUND_CHECK);
+        if(applicationData) {
+            handleSubmitFcraBGC(applicationData, stepConfig, eSignature, fcraResponse);
+        }
     }
 
     return (
@@ -67,7 +66,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                             name="fcra-radio-col"
                             value={fcraItem.value}
                             titleText={fcraItem.title}
-                            onChange={event => setFcraResponse(event.target.value)}
+                            onChange={event => setFcraResponse(fcraItem.value)}
                             defaultChecked={fcraItem.value === fcraResponse}
                         />
                     ))
@@ -85,6 +84,8 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                         labelText="Type your full name here"
                         id="fcraFullNameInput"
                         required
+                        error={!isSignatureValid}
+                        footer={!isSignatureValid ? 'Enter full name': undefined}
                     >
                         {inputProps =>
                             <Input
@@ -92,6 +93,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                                 onChange={e => {
                                     setESignature(e.target.value);
                                 }}
+                                defaultValue={fcraQuestions?.bgcDisclosureEsign.signature || ''}
                             />
                         }
                     </InputWrapper>
@@ -101,7 +103,6 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                 <Button
                     variant={ButtonVariant.Primary}
                     onClick={handleClickNext}
-                    disabled={!eSignature && fcraResponse === FCRA_DISCLOSURE_TYPE.ACCEPT}
                 >
                     Next
                 </Button>

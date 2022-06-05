@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Card } from '@amzn/stencil-react-components/card';
 import { H5, Text } from "@amzn/stencil-react-components/text";
@@ -10,21 +10,39 @@ import {
     IconPencil
 } from '@amzn/stencil-react-components/icons';
 import { BGC_STEP_STATUS, BGC_STEPS } from "../../../utils/enums/common";
+import { BgcStepConfig, BgcStepStatus } from "../../../utils/types/common";
+import { connect } from "react-redux";
+import { JobState } from "../../../reducers/job.reducer";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { BGCState } from "../../../reducers/bgc.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundUpdateStepConfigAction } from "../../../actions/BGC_Actions/boundBGCActions";
+
+interface MapStateToProps {
+    job: JobState,
+    application: ApplicationState,
+    schedule: ScheduleState,
+    bgc: BGCState
+    candidate: CandidateState
+}
 
 interface BGCStepCardProps {
     title: string;
     expandedContent: React.ReactNode;
     collapsedContent?: React.ReactNode;
     stepName: BGC_STEPS;
-    editMode?: boolean;
     stepIndex: number;
-    stepStatus: BGC_STEP_STATUS
+    bgcStepStatus: BgcStepStatus
 }
 
-const BGCStepCard = ( props: BGCStepCardProps ) => {
+type BGCStepCardMergedProps = MapStateToProps & BGCStepCardProps;
 
-    const { title, collapsedContent, expandedContent, stepName, stepIndex, stepStatus } = props;
-    const [editMode, setEditMode] = useState<boolean>(false);
+const BGCStepCard = ( props: BGCStepCardMergedProps ) => {
+
+    const { title, collapsedContent, expandedContent, stepName, stepIndex, bgcStepStatus, bgc } = props;
+    const { stepConfig } = bgc;
+    const { status: stepStatus, editMode } = bgcStepStatus;
 
     const getContentToDisplay = (): React.ReactNode => {
 
@@ -34,6 +52,17 @@ const BGCStepCard = ( props: BGCStepCardProps ) => {
         else {
             return collapsedContent || <></>;
         }
+    }
+
+    const handleSetEditMode = (editMode: boolean) => {
+        const payload: BgcStepConfig = {
+            ...stepConfig,
+            [stepName]: {
+                ...stepConfig[stepName],
+                editMode: editMode
+            }
+        }
+        boundUpdateStepConfigAction(payload);
     }
 
     return (
@@ -48,7 +77,7 @@ const BGCStepCard = ( props: BGCStepCardProps ) => {
                     <Row justifyContent="space-between">
                         <Text fontSize="T200" color={CommonColors.Neutral70}>{`Step ${stepIndex} of 3`}</Text>
                         {stepStatus === BGC_STEP_STATUS.COMPLETED && editMode &&
-                        <Row onClick={() => setEditMode(false)}>
+                        <Row onClick={() => handleSetEditMode(false)}>
                             <IconCloseCircleFill/>
                         </Row>
                         }
@@ -64,7 +93,7 @@ const BGCStepCard = ( props: BGCStepCardProps ) => {
                             stepStatus === BGC_STEP_STATUS.COMPLETED && !editMode &&
                             <Row gridGap={15}>
                                 <IconCheckCircleFill color={CommonColors.GREEN70}/>
-                                <Col onClick={() => setEditMode(true)}>
+                                <Col onClick={() => handleSetEditMode(true)}>
                                     <IconPencil color={CommonColors.Blue70}/>
                                 </Col>
                             </Row>
@@ -79,4 +108,8 @@ const BGCStepCard = ( props: BGCStepCardProps ) => {
     )
 }
 
-export default BGCStepCard;
+const mapStateToProps = ( state: MapStateToProps ) => {
+    return state;
+};
+
+export default connect(mapStateToProps)(BGCStepCard);

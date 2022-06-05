@@ -7,6 +7,7 @@ import requisitionReducer from "./requisition.reducer";
 import applicationReducer from "./application.reducer";
 import scheduleReducer from "./schedule.reducer";
 import bgcReducer from "./bgc.reducer";
+import candidateReducer from "./candidate.reducer";
 
 const createRootReducer = ( history: any ) =>
     combineReducers({
@@ -17,6 +18,7 @@ const createRootReducer = ( history: any ) =>
         requisition: requisitionReducer,
         schedule: scheduleReducer,
         bgc: bgcReducer,
+        candidate: candidateReducer,
         router: connectRouter(history),
     });
 

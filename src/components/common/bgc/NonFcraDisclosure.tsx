@@ -7,14 +7,14 @@ import InnerHTML from 'dangerously-set-html-content';
 import { DetailedCheckbox, Input, InputWrapper } from "@amzn/stencil-react-components/form";
 import { CommonColors } from "../../../utils/colors";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { BgcStepConfig } from "../../../utils/types/common";
-import { BGC_STEP_STATUS, BGC_STEPS } from "../../../utils/enums/common";
-import { boundUpdateStepConfigAction } from "../../../actions/BGC_Actions/boundBGCActions";
+import { NonFcraFormErrorStatus } from "../../../utils/types/common";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { connect } from "react-redux";
+import get from 'lodash/get';
+import { handleSubmitNonFcraBGC, validateNonFcraSignatures } from "../../../utils/helper";
 
 interface MapStateToProps {
     job: JobState,
@@ -31,25 +31,36 @@ type NonFcraDisclosureMergedProps = MapStateToProps & NonFcraDisclosureProps;
 
 const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
 
-    const { bgc } = props;
+    const { application, schedule, bgc } = props;
+    const applicationData = application.results;
+    const scheduleDetail = schedule.scheduleDetail;
     const { stepConfig } = bgc;
-    const { activeStep, pageStatus, completedSteps } = stepConfig;
-    const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(false);
+    const nonFcraQuestions = applicationData?.nonFcraQuestions;
 
-    const handleClickNext = () => {
-        const request: BgcStepConfig = {
-            activeStep: BGC_STEPS.NON_FCRA,
-            completedSteps: [...completedSteps, BGC_STEPS.NON_FCRA],
-            pageStatus: {
-                ...pageStatus,
-                [BGC_STEPS.NON_FCRA]: BGC_STEP_STATUS.COMPLETED,
-                [BGC_STEPS.ADDITIONAL_BGC]: BGC_STEP_STATUS.ACTIVE,
+    const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(!!nonFcraQuestions?.requestedCopyOfBackgroundCheck);
+    const [nonFcraAckEsign, setNonFcraAckEsign] = useState(nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || '');
+    const [nonFcraNoticeEsign, setNonFcraNoticeEsign] = useState(nonFcraQuestions?.nonFcraStateNoticeEsign.signature || '');
+    const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
+    const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
+    const [errorMessage, setErrorMessage] = useState('eSignatures do not match. Please use the same text for each eSignature.');
+
+    const handleCLickNext = () => {
+        if(applicationData) {
+            const errorStatus: NonFcraFormErrorStatus =
+                validateNonFcraSignatures(applicationData, nonFcraAckEsign.trim(), nonFcraNoticeEsign.trim());
+
+            const { hasError, ackESignHasError, noticeESignHasError } = errorStatus;
+
+            setIsNoticeSignatureValid(!noticeESignHasError);
+            setIsAckSignatureValid(!ackESignHasError);
+
+            if(hasError) {
+                return;
             }
+
+            handleSubmitNonFcraBGC(applicationData, nonFcraAckEsign, nonFcraNoticeEsign, requestedCopyOfBGC, stepConfig);
         }
-
-        boundUpdateStepConfigAction(request);
     }
-
     return (
         <Col className="nonFcraContainer" gridGap={15}>
             <Text>
@@ -61,11 +72,21 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
             <Col gridGap={5}>
                 <ul>
                     {
-                        NonFcraESignatureAcknowledgementList.map(nonFcraESignatureItem => (
-                            <li>
-                                <Text>{t(nonFcraESignatureItem.translationKey, nonFcraESignatureItem.title)}</Text>
-                            </li>
-                        ))
+                        NonFcraESignatureAcknowledgementList.map(nonFcraESignatureItem => {
+                            const { dataKeyDependency, dependencyValue, translationKey, title } = nonFcraESignatureItem;
+                            const canDisplay = dataKeyDependency && dependencyValue ? get(scheduleDetail, dataKeyDependency) === dependencyValue.toString() : true;
+
+                            return (
+                                <>
+                                    {
+                                        canDisplay &&
+                                        <li>
+                                            <Text>{t(translationKey, title)}</Text>
+                                        </li>
+                                    }
+                                </>
+                            )
+                        })
                     }
                 </ul>
             </Col>
@@ -74,11 +95,26 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                 <Text>Please review the applicable notice(s) below.</Text>
                 <Col gridGap={10}>
                     {
-                        US_StateSpecificNotices.map(stateNotice => (
-                            <Text>
-                                <InnerHTML className="stateNoticeText" html={stateNotice.noticeText}/>
-                            </Text>
-                        ))
+                        US_StateSpecificNotices.map(stateNotice => {
+                            const {
+                                dataKeyDependency,
+                                dependencyValue,
+                                noticeText,
+                                noticeTranslationKey
+                            } = stateNotice;
+                            const canDisplay = dataKeyDependency && dependencyValue ? get(scheduleDetail, dataKeyDependency || '') === dependencyValue.toString() : true;
+
+                            return (
+                                <>
+                                    {
+                                        canDisplay &&
+                                        <Text>
+                                            <InnerHTML className="stateNoticeText" html={noticeText}/>
+                                        </Text>
+                                    }
+                                </>
+                            )
+                        })
                     }
                 </Col>
                 <Col padding={{ top: "S200", bottom: 'S300' }}>
@@ -100,8 +136,8 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     labelText="Please type your full name as eSignature"
                     id="fcraFullNameInputOne"
                     required
-                    error={false}
-                    // footer="Please sign your name here"
+                    error={!isAckSignatureValid}
+                    footer={!isAckSignatureValid ? errorMessage: undefined}
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
@@ -116,6 +152,8 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     {inputProps =>
                         <Input
                             {...inputProps}
+                            defaultValue={nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || ''}
+                            onChange={( e ) => setNonFcraAckEsign(e.target.value)}
                         />
                     }
                 </InputWrapper>
@@ -131,8 +169,8 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     labelText="Please type your full name as eSignature"
                     id="fcraFullNameInputTwo"
                     required
-                    error={false}
-                    // footer="Please sign your name here"
+                    error={!isNoticeSignatureValid}
+                    footer={!isNoticeSignatureValid ? errorMessage : undefined}
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
@@ -147,6 +185,8 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     {inputProps =>
                         <Input
                             {...inputProps}
+                            defaultValue={nonFcraQuestions?.nonFcraStateNoticeEsign.signature || ''}
+                            onChange={e => setNonFcraNoticeEsign(e.target.value)}
                         />
                     }
                 </InputWrapper>
@@ -154,7 +194,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
             <Col padding={{ top: 'S300', bottom: 'S300' }}>
                 <Button
                     variant={ButtonVariant.Primary}
-                    onClick={handleClickNext}
+                    onClick={handleCLickNext}
                 >
                     Next
                 </Button>

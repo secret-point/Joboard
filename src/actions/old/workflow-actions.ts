@@ -12,6 +12,7 @@ import { sendDataLayerAdobeAnalytics } from "./adobe-actions";
 import { log, logError } from "./../../helpers/log-helper";
 import _get from "lodash/get";
 import { addApplicationIdInUrl, checkIfIsCSRequest, checkIfIsLegacy, pathByDomain } from "./../../helpers/utils";
+import { Application } from "../../utils/types/common";
 
 export const loadWorkflow = (
   requisitionId: string,
@@ -19,7 +20,7 @@ export const loadWorkflow = (
   candidateId: string,
   appConfig: AppConfig,
   isCompleteTaskOnLoad?: boolean,
-  applicationData?: ICandidateApplication
+  applicationData?: Application
 ) => {
   if (!window?.stepFunctionService?.websocket) {
     if (isCompleteTaskOnLoad) {
@@ -43,7 +44,7 @@ export const loadWorkflowDS = (
   candidateId: string,
   appConfig: AppConfig,
   isCompleteTaskOnLoad?: boolean,
-  applicationData?: ICandidateApplication
+  applicationData?: Application
 ) => {
   if (!window?.stepFunctionService?.websocket) {
     if (isCompleteTaskOnLoad) {

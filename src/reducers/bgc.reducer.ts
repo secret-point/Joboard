@@ -9,12 +9,18 @@ export interface BGCState {
 export const initScheduleState: BGCState = {
     stepConfig: {
         completedSteps: [],
-        activeStep: BGC_STEPS.FCRA,
-        pageStatus: {
-            [BGC_STEPS.FCRA]: BGC_STEP_STATUS.ACTIVE,
-            [BGC_STEPS.NON_FCRA]: BGC_STEP_STATUS.LOCKED,
-            [BGC_STEPS.ADDITIONAL_BGC]: BGC_STEP_STATUS.LOCKED
-        }
+        [BGC_STEPS.FCRA]: {
+            status: BGC_STEP_STATUS.ACTIVE,
+            editMode: false
+        },
+        [BGC_STEPS.NON_FCRA]: {
+            status: BGC_STEP_STATUS.LOCKED,
+            editMode: false
+        },
+        [BGC_STEPS.ADDITIONAL_BGC]: {
+            status: BGC_STEP_STATUS.LOCKED,
+            editMode: false
+        },
     }
 }
 

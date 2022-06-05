@@ -1,5 +1,5 @@
 import { Application } from "../utils/types/common";
-import { GET_APPLICATION_TYPE, GET_APPLICATION_ACTIONS, UPDATE_APPLICATION_TYPE, UPDATE_APPLICATION_ACTIONS, UPDATE_WORKFLOW_NAME_TYPE, CREATE_APPLICATION_TYPE, CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE, CREATE_APPLICATION_AND_SKIP_SCHEDULE_ACTIONS, UPDATE_WORKFLOW_NAME_ACTIONS, CREATE_APPLICATION_ACTIONS } from "../actions/ApplicationActions/applicationActionTypes";
+import { APPLICATION_ACTION_TYPES, ApplicationActionTypes } from "../actions/ApplicationActions/applicationActionTypes";
 import { sanitizeApplicationData } from "../utils/helper";
 
 export interface ApplicationState {
@@ -13,30 +13,23 @@ export const initApplicationState: ApplicationState = {
     failed: false
 }
 
-export default function applicationReducer(
-    state: ApplicationState = initApplicationState,
-    action: GET_APPLICATION_ACTIONS | 
-        UPDATE_APPLICATION_ACTIONS |
-        CREATE_APPLICATION_AND_SKIP_SCHEDULE_ACTIONS |
-        UPDATE_WORKFLOW_NAME_ACTIONS |
-        CREATE_APPLICATION_ACTIONS
-):ApplicationState {
-    switch (action.type) {
-        case GET_APPLICATION_TYPE.GET:
-        case CREATE_APPLICATION_TYPE.CREATE:
-        case CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE.CREATE:
-        case UPDATE_APPLICATION_TYPE.UPDATE:
-        case UPDATE_WORKFLOW_NAME_TYPE.UPDATE:
+export default function applicationReducer( state: ApplicationState = initApplicationState, action: ApplicationActionTypes ): ApplicationState {
+    switch(action.type) {
+        case APPLICATION_ACTION_TYPES.GET_APPLICATION:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE:
+        case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION:
+        case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME:
             return {
                 ...state,
                 loading: true,
                 failed: false
             };
-        case GET_APPLICATION_TYPE.SUCCESS:
-        case CREATE_APPLICATION_TYPE.SUCCESS:
-        case CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE.SUCCESS:
-        case UPDATE_APPLICATION_TYPE.SUCCESS:
-        case UPDATE_WORKFLOW_NAME_TYPE.SUCCESS:
+        case APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS:
+        case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS:
+        case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_SUCCESS:
             const sanitizedApplicationData = sanitizeApplicationData(action.payload);
             return {
                 ...state,
@@ -46,12 +39,11 @@ export default function applicationReducer(
                     ...sanitizedApplicationData,
                 }
             };
-        case GET_APPLICATION_TYPE.FAILED:
-        case UPDATE_APPLICATION_TYPE.FAILED:
-        case CREATE_APPLICATION_TYPE.FAILED:
-        case CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE.FAILED:
-        case UPDATE_APPLICATION_TYPE.FAILED:
-        case UPDATE_WORKFLOW_NAME_TYPE.FAILED:
+        case APPLICATION_ACTION_TYPES.GET_APPLICATION_FAILED:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED:
+        case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_FAILED:
+        case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_FAILED:
             return {
                 ...state,
                 loading: false,

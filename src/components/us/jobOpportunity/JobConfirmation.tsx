@@ -7,23 +7,18 @@ import { translate as t } from "../../../utils/translator";
 import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router";
-import { checkIfIsCSRequest, getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_CONFIRMATION, JOB_OPPORTUNITIES } from "../../pageRoutes";
+import { getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
+import { JOB_OPPORTUNITIES } from "../../pageRoutes";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import queryString from "query-string";
-import { QueryParamItem } from "../../../utils/types/common";
-import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
-import { boundGetApplication, boundUpdateApplicationDS } from '../../../actions/ApplicationActions/boundApplicationActions';
-import { SelectedScheduleForUpdateApplication, UpdateApplicationRequestDS } from '../../../utils/apiTypes';
+import { boundGetApplication } from '../../../actions/ApplicationActions/boundApplicationActions';
 import { ApplicationState } from '../../../reducers/application.reducer';
-import { UPDATE_APPLICATION_API_TYPE } from '../../../utils/constants/common';
 import { JobState } from '../../../reducers/job.reducer';
 import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailActions';
-import { onCompleteTaskHelper } from '../../../actions/WorkflowActions/workflowActions';
 import { uiState } from '../../../reducers/ui.reducer';
 
 interface MapStateToProps {
@@ -64,6 +59,12 @@ const JobConfirmation = ( props: MapStateToProps ) => {
         jobDetail && scheduleDetail && applicationDetail && addMetricForPageLoad(pageName);
     }, [jobDetail, scheduleDetail, applicationDetail]);
 
+    const handleConfirmJob = () => {
+        if(applicationDetail && scheduleDetail && jobDetail){
+            handleSubmitJobConfirmation(applicationDetail, jobDetail, scheduleDetail);
+        }
+    }
+
     return (
         <Col gridGap={10}>
             <Row
@@ -92,32 +93,7 @@ const JobConfirmation = ( props: MapStateToProps ) => {
             <Col className="selectJobButtonContainer" padding='S300'>
                 <Button
                     disabled = { !applicationDetail || !scheduleDetail || !jobDetail || isLoading}
-                    onClick={() => {
-                        if(applicationDetail && scheduleDetail && jobDetail){
-                            const queryParamItem: QueryParamItem = {
-                                paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
-                                paramValue: scheduleDetail?.scheduleId
-                            }
-                            const selectedSchedule: SelectedScheduleForUpdateApplication = {
-                                jobId: jobId,
-                                scheduleId: scheduleId,
-                                scheduleDetails: JSON.stringify(scheduleDetail),
-                            }
-                            const dspEnabled = applicationDetail?.dspEnabled;
-                            const updateApplicationRequest: UpdateApplicationRequestDS = {
-                                applicationId,
-                                payload: selectedSchedule,
-                                type: UPDATE_APPLICATION_API_TYPE.JOB_CONFIRM,
-                                isCsRequest: checkIfIsCSRequest(),
-                                dspEnabled
-                            }
-                            boundUpdateApplicationDS(updateApplicationRequest, ()=>{
-                                // Stay at the current page but add new urlParams, wait work flow to do the routing
-                                routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
-                                onCompleteTaskHelper(applicationDetail);
-                            });
-                        }
-                    }}
+                    onClick={handleConfirmJob}
                     variant={ButtonVariant.Primary}
                 >
                     {t('BB-JobOpportunity-select-job-button', 'Select this job')}

@@ -1,4 +1,5 @@
 import { AvailableFilter, Locale } from "./types/common";
+import { WORKFLOW_STEP_NAME } from "./enums/common";
 
 export interface GetJobDetailRequest {
     locale: Locale;
@@ -51,7 +52,7 @@ export interface UpdateApplicationRequestDS {
 
 export interface UpdateWorkflowNameRequest {
     applicationId: string;
-    workflowStepName: string;
+    workflowStepName: WORKFLOW_STEP_NAME;
 }
 
 export interface SelectedScheduleForUpdateApplication {

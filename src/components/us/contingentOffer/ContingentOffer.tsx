@@ -1,56 +1,143 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from 'react';
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
-import { ApplicationState } from "../../../reducers/application.reducer";
 import { JobState } from "../../../reducers/job.reducer";
+import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { getLocale } from "../../../utils/helper";
+import { useLocation } from "react-router";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
-import { Locale } from "../../../utils/types/common";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { getLocale, handleAcceptOffer } from "../../../utils/helper";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { H2, H3, H4, Text } from '@amzn/stencil-react-components/text';
+import { Popover } from "@amzn/stencil-react-components/popover";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
+import InnerHTML from 'dangerously-set-html-content';
+import ApplicationSteps from "../../common/ApplicationSteps";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { onCompleteTaskHelper } from '../../../actions/WorkflowActions/workflowActions';
+import { uiState } from '../../../reducers/ui.reducer';
+import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
-    schedule: ScheduleState
+    schedule: ScheduleState,
+    ui: uiState,
+    candidate: CandidateState
 }
 
-const ContingentOffer = ( props: MapStateToProps ) => {
-    const { job, application, schedule } = props;
+interface ContingentOfferProps {
+
+}
+
+type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
+
+const ContingentOffer = ( props: ContingentOfferMergedProps) => {
+    const { job, application, schedule, ui, candidate } = props;
+    const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const { applicationId } = queryParams;
+    const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
     const scheduleDetail = schedule.scheduleDetail;
-    const jobId = applicationData?.jobScheduleSelected.jobId;
-    const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
+    const candidateData = candidate.candidateData;
 
-    useEffect(()=>{
-        applicationId && boundGetApplication({applicationId:applicationId, locale: getLocale()});
-    },[applicationId]);
-    
-    useEffect(()=>{
-        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({jobId:jobId, locale:getLocale()});
-    },[jobId]);
+    useEffect(() => {
+        boundGetCandidateInfo();
+    },[])
 
-    useEffect(()=>{
-        scheduleId && boundGetScheduleDetail({ locale: getLocale(),scheduleId: scheduleId});
+    // Don't refetch data if id is not changing
+    useEffect(() => {
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    }, [applicationId]);
+
+    useEffect(() => {
+        scheduleId && boundGetScheduleDetail({
+            locale: getLocale(),
+            scheduleId: scheduleId
+        })
     }, [scheduleId]);
 
-    useEffect(()=>{
+    useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    },[jobDetail, scheduleDetail, applicationData]);
+    }, [jobDetail, applicationData, scheduleDetail]);
+
+    const handleBackToJobs = () => {
+        // Stay at the current page, wait work flow to do the routing
+        // Need further work here
+        // Remove schedule Id in URL here before go to contingent-offer page
+        const isBackButton = true;
+        const targetPageToGoBack = WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES;
+        applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
+    }
+
+    const firstName = candidateData?.firstName || '';
 
     return (
-        <div>Contingent Offer page</div>
-    );
-};
+        <Col gridGap={10}>
+            <Col gridGap={10}>
+                <H2>Well done so far{firstName ? `, ${firstName}`: ''}!</H2>
+                <Text fontSize="T200">Here is the contingent offer for the job you picked.</Text>
+            </Col>
+            <Row>
+                <Popover triggerText="What is a contingent offer?">
+                    {({ close }) => (
+                        <Col gridGap="S500">
+                            <Text fontSize="T200">
+                                As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.
+                            </Text>
+                            <Row justifyContent='flex-end'>
+                                <Button onClick={close}>Close</Button>
+                            </Row>
+                        </Col>
+                    )}
+                </Popover>
+            </Row>
+            {scheduleDetail && <ScheduleCard scheduleDetail={scheduleDetail} displayOnly={true}/>}
+            <Col className="jobDescriptionContainer">
+                <H3>Job Requirement</H3>
+                <Col>
+                    <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription || ''}/>
+                </Col>
+            </Col>
+            <Col
+                className="contingencyOfferFooter"
+                gridGap={15}
+                padding={{top: 'S400', bottom: 'S400', left: 'S300', right: 'S300'}}
+            >
+                <H4>Remaining Steps</H4>
+                <ApplicationSteps/>
+                <Col gridGap={20} padding='S300'>
+                    <Button
+                        disabled={!applicationData || isLoading}
+                        variant={ButtonVariant.Primary}
+                        onClick={() => applicationData && handleAcceptOffer(applicationData)}
+                    >
+                        Accept Offer
+                    </Button>
+                    <Button
+                        disabled={!applicationData || isLoading}
+                        onClick={handleBackToJobs}
+                    >
+                        Back to jobs
+                    </Button>
+                </Col>
+            </Col>
+        </Col>
+    )
+}
 
 const mapStateToProps = ( state: MapStateToProps ) => {
     return state;
