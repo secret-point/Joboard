@@ -61,7 +61,7 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
 
 export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
     return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS),
+        ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS),
         map(( action ) => {
             const applicationData: Application = sanitizeApplicationData(action.payload);
             const state = store.getState();

@@ -272,9 +272,9 @@ export const handleSubmitJobConfirmation = (applicationDetail: Application, jobD
             dspEnabled
         }
         boundUpdateApplicationDS(updateApplicationRequest, (applicationData: Application)=>{
+            onCompleteTaskHelper(applicationData);
             // Stay at the current page but add new urlParams, wait work flow to do the routing
             routeToAppPageWithPath(JOB_CONFIRMATION, [queryParamItem]);
-            onCompleteTaskHelper(applicationData);
         });
     }
 }
@@ -290,9 +290,9 @@ export const handleAcceptOffer = ( applicationData: Application ) => {
         dspEnabled: !!applicationData?.dspEnabled
     }
     boundUpdateApplicationDS(updateApplicationRequest, (applicationDetail: Application) => {
+        onCompleteTaskHelper(applicationDetail);
         // Go to the new page, don't wait work flow to do the routing
         routeToAppPageWithPath(BACKGROUND_CHECK);
-        onCompleteTaskHelper(applicationDetail);
     });
 }
 
@@ -574,7 +574,8 @@ export const handleSubmitAdditionalBgc =
             }
             const request: UpdateApplicationRequestDS =
                 createUpdateApplicationRequest(applicationData, ADDITIONAL_BGC, payload);
-            boundUpdateApplicationDS(request, () => {
+            boundUpdateApplicationDS(request, (applicationData: Application) => {
+                onCompleteTaskHelper(applicationData);
                 handleUpdateAdditionalBGCStep(stepConfig);
                 routeToAppPageWithPath(NHE);
             })

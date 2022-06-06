@@ -40,6 +40,8 @@ import { BACKGROUND_CHECK_FCRA, NHE } from "../../pageRoutes";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
+import { Application } from "../../../utils/types/common";
+import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 
 interface MapStateToProps {
     job: JobState,
@@ -106,8 +108,10 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                 state: PROXY_APPLICATION_STATE.ADDITIONAL_BACKGROUND_INFO_SAVED //TODO copied from proxy. need to align the meaning
             }
             const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, BGC, payload);
-            boundUpdateApplicationDS(request);
-            routeToAppPageWithPath(NHE);
+            boundUpdateApplicationDS(request, (applicationData: Application)=>{
+                onCompleteTaskHelper(applicationData);
+                routeToAppPageWithPath(NHE);
+            });
         }
     }
 
