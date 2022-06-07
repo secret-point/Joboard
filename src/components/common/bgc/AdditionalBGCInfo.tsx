@@ -24,6 +24,7 @@ import {
     boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
 import { handleSubmitAdditionalBgc } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -136,7 +137,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                     variant={ButtonVariant.Primary}
                     onClick={handleClickNext}
                 >
-                    Next
+                    {t('BB-BGC-addition-bgc-form-next-btn','Next')}
                 </Button>
             </Col>
         </Col>

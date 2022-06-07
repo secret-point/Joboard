@@ -572,14 +572,14 @@ export interface WorkflowData {
 export interface FcraDisclosureConfig {
     title: string,
     value: FCRA_DISCLOSURE_TYPE,
-    description?: string
+    titleTranslationKey: string
 }
 
 export interface AdditionalBgcConfig {
     title: string,
     value: boolean,
-    description?: string;
     dataKey: string;
+    titleTranslationKey: string;
 }
 
 export interface NonFcraESignatureAcknowledgement {
@@ -611,7 +611,10 @@ export interface FormInputItem {
     toolTipText?: string,
     hasError?: boolean
     edited?: boolean,
-    labelTranslationKey?: string
+    labelTranslationKey?: string;
+    placeholder?: string;
+    placeholderTranslationKey?: string;
+    errorMessageTranslationKey?: string
 }
 
 export interface FormDateInputItem extends FormInputItem {

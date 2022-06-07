@@ -42,7 +42,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
     const [nonFcraNoticeEsign, setNonFcraNoticeEsign] = useState(nonFcraQuestions?.nonFcraStateNoticeEsign.signature || '');
     const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
     const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
-    const [errorMessage, setErrorMessage] = useState('eSignatures do not match. Please use the same text for each eSignature.');
+    const [errorMessage, setErrorMessage] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
 
     const handleCLickNext = () => {
         if(applicationData) {
@@ -64,11 +64,9 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
     return (
         <Col className="nonFcraContainer" gridGap={15}>
             <Text>
-                As disclosed and authorized by me in the separate Fair Credit Reporting Act Disclosure and Authorization
-                Document, Amazon.com, Inc. or its subsidiaries or affiliates (“Amazon”) will conduct a background check
-                on me.
+                {t("BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text","As disclosed and authorized by me in the separate Fair Credit Reporting Act Disclosure and Authorization Document, Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\") will conduct a background check on me.")}
             </Text>
-            <H4>By my eSignature below, I acknowledge as follows:</H4>
+            <H4>{t("BB-BGC_fcra-eSignature-acknowledgement-title-text", "By my eSignature below, I acknowledge as follows:")}</H4>
             <Col gridGap={5}>
                 <ul>
                     {
@@ -91,8 +89,8 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                 </ul>
             </Col>
             <Col gridGap={15} className="stateSpecificNoticeContainer">
-                <H4>State Specific Notices</H4>
-                <Text>Please review the applicable notice(s) below.</Text>
+                <H4>{t("BB-BGC-non-fcra-state-specific-notice-heading-title-text", "State Specific Notices")}</H4>
+                <Text>{t("BB-BGC-non-fcra-state-specific-notice-review-title-text", "Please review the applicable notice(s) below.")}</Text>
                 <Col gridGap={10}>
                     {
                         US_StateSpecificNotices.map(stateNotice => {
@@ -103,13 +101,13 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                                 noticeTranslationKey
                             } = stateNotice;
                             const canDisplay = dataKeyDependency && dependencyValue ? get(scheduleDetail, dataKeyDependency || '') === dependencyValue.toString() : true;
-
+                            const noticeTextValue: string = t(noticeTranslationKey, noticeText);
                             return (
                                 <>
                                     {
                                         canDisplay &&
                                         <Text>
-                                            <InnerHTML className="stateNoticeText" html={noticeText}/>
+                                            <InnerHTML className="stateNoticeText" html={noticeTextValue}/>
                                         </Text>
                                     }
                                 </>
@@ -119,21 +117,19 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                 </Col>
                 <Col padding={{ top: "S200", bottom: 'S300' }}>
                     <DetailedCheckbox
-                        titleText="I would like a free copy of my background check"
+                        titleText={t("BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text", "I would like a free copy of my background check")}
                         checked={requestedCopyOfBGC}
                         onChange={() => setRequestedCopyOfBGC(!requestedCopyOfBGC)}
                     />
                 </Col>
             </Col>
             <Col className="eSignatureContainer" gridGap={15}>
-                <H4>eSignature</H4>
+                <H4>{t("BB-BGC-non-fcra-esignature-certification-form-title", "eSignature")}</H4>
                 <Text>
-                    By my eSignature below, I certify that I have read, understand and accept all statements in this
-                    Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check. Please
-                    signify your acceptance by entering the information requested in the fields below.
+                    {t("BB-BGC-non-fcra-acknowledgement-and-authorization-text", "By my eSignature below, I certify that I have read, understand and accept all statements in this Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check. Please signify your acceptance by entering the information requested in the fields below.")}
                 </Text>
                 <InputWrapper
-                    labelText="Please type your full name as eSignature"
+                    labelText={`${t("BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text", "Please type your full name as eSignature")} *`}
                     id="fcraFullNameInputOne"
                     required
                     error={!isAckSignatureValid}
@@ -141,7 +137,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
-                                Please type your full name as eSignature *
+                                {`${t("BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text", "Please type your full name as eSignature")} *`}
                             </Text>
                             <Text color={CommonColors.Neutral70} fontSize="T200">
                                 2/3
@@ -160,13 +156,12 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
 
                 <Row>
                     <Text>
-                        By my eSignature below, I certify that I have read and understand any applicable state notices
-                        including the hyperlinks.
+                        {t("BB-BGC-non-fcra-applicable-notice-text", "By my eSignature below, I certify that I have read and understand any applicable state notices including the hyperlinks.")}
                     </Text>
                 </Row>
 
                 <InputWrapper
-                    labelText="Please type your full name as eSignature"
+                    labelText={`${t("BB-BGC-non-fcra-applicable-notice-signature-input-label-text", "Please type your full name as eSignature")} *`}
                     id="fcraFullNameInputTwo"
                     required
                     error={!isNoticeSignatureValid}
@@ -174,7 +169,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
-                                Please type your full name as eSignature *
+                                {`${t("BB-BGC-non-fcra-applicable-notice-signature-input-label-text", "Please type your full name as eSignature")} *`}
                             </Text>
                             <Text color={CommonColors.Neutral70} fontSize="T200">
                                 2/3
@@ -196,7 +191,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     variant={ButtonVariant.Primary}
                     onClick={handleCLickNext}
                 >
-                    Next
+                    {t("BB-BGC-non-fcra-form-page-next-button-text", "Next")}
                 </Button>
             </Col>
         </Col>

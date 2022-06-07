@@ -13,6 +13,7 @@ import get from 'lodash/get';
 import cloneDeep from "lodash/cloneDeep";
 import set from "lodash/set";
 import { boundSetCandidatePatchRequest } from "../../../actions/CandidateActions/boundCandidateActions";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -54,16 +55,16 @@ const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
         <Col gridGap={15} padding={{top: 'S300'}}>
             <InputWrapper
                 id="previousLegalNameInput"
-                labelText="Previous legal full name"
+                labelText={t("BB-BGC-additional-bgc-previous-legal-name-label-text", "Previous legal full name")}
                 renderLabel={() => (
                     <Row justifyContent="space-between">
-                        <Text fontSize="T200">Previous full name</Text>
-                        <Text fontSize="T200">Optional</Text>
+                        <Text fontSize="T200" fontWeight='bold'>{t("BB-BGC-additional-bgc-previous-legal-name-label-text", "Previous legal full name")}</Text>
+                        <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                     </Row>
                 )}
                 error={false}
                 required={false}
-                // footer="Please enter previously used legal full name following format: First Last"
+                // footer={t("BB-BGC-additional-bgc-previous-legal-name-error-text", "Please enter previously used legal full name following format: First Last")}
             >
                 {inputProps =>
                     <Input
@@ -81,7 +82,7 @@ const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
                     onClick={() => setShowMorePreviousLegalNames(true)}
                     variant={ButtonVariant.Tertiary}
                 >
-                    + Add/Show more previous names
+                    {`+ ${t("BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text","Add / Show more previous names")}`}
                 </Button>
             }
 
@@ -90,15 +91,15 @@ const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
                 <Col gridGap={15}>
                     <InputWrapper
                         id="previousLegalName1Input"
-                        labelText="Previous legal full name (1)"
+                        labelText={t("BB-BGC-additional-bgc-previous-legal-name1-label-text", "Previous legal full name (1)")}
                         renderLabel={() => (
                             <Row justifyContent="space-between">
-                                <Text fontSize="T200">Previous full name (1)</Text>
-                                <Text fontSize="T200">Optional</Text>
+                                <Text fontSize="T200" fontWeight='bold'>{t("BB-BGC-additional-bgc-previous-legal-name1-label-text", "Previous legal full name (1)")}</Text>
+                                <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                             </Row>
                         )}
                         // error={true}
-                        // footer="Please enter previously used legal full name following format: First Last"
+                        // footer={t("BB-BGC-additional-bgc-previous-legal-name1-error-text", "Please enter previously used legal full name (1) following format: First Last")}
                     >
                         {inputProps =>
                             <Input
@@ -112,15 +113,15 @@ const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
 
                     <InputWrapper
                         id="previousLegalName2Input"
-                        labelText="Previous legal full name (2)"
+                        labelText={t("BB-BGC-additional-bgc-previous-legal-name1-label-text", "Previous legal full name (2)")}
                         renderLabel={() => (
                             <Row justifyContent="space-between">
-                                <Text fontSize="T200">Previous full name (2)</Text>
-                                <Text fontSize="T200">Optional</Text>
+                                <Text fontSize="T200" fontWeight='bold'>{t("BB-BGC-additional-bgc-previous-legal-name2-label-text", "Previous legal full name (2)")}</Text>
+                                <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                             </Row>
                         )}
                         error={false}
-                        // footer="Please enter previously used legal full name following format: First Last"
+                        // footer={t("BB-BGC-additional-bgc-previous-legal-name2-error-text", "Please enter previously used legal full name (2) following format: First Last")}
                     >
                         {inputProps =>
                             <Input

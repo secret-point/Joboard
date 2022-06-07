@@ -169,6 +169,426 @@
         "BB-FilterSchedule-desired-hour-select-label-text": {
             "note": "Text for desired hours select input label text",
             "value": "Horas deseadas por semana"
+        },
+        "BB-ContingencyOffer-well-done-text": {
+            "note": "Text for congratulating candidate for accepting contingent offer",
+            "value": "Bien hecho hasta ahora"
+        },
+        "BB-ContingencyOffer-job-picked-title-text": {
+            "note": "Text for job offer picked title",
+            "value": "Here is the contingent offer for the job you picked."
+        },
+        "BB-ContingencyOffer-contingent-offer-meaning-popover-title": {
+            "note": "Text for contingent offer meaning popover title",
+            "value": "Aquí está la oferta contingente para el trabajo que eligió."
+        },
+        "BB-ContingencyOffer-contingent-offer-meaning-popover-content": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "Según lo permitido por la ley aplicable, su oferta depende de que pase con éxito la verificación de antecedentes requerida, la prueba de detección de drogas (si corresponde) y la verificación de elegibilidad para volver a contratar (si corresponde), por lo que es importante que complete los pasos previos al empleo en la página siguiente. En algunas circunstancias, su primer día puede retrasarse debido a que los requisitos previos al empleo no se completaron a tiempo. Si este es el caso, puede esperar tener noticias nuestras pronto."
+        },
+        "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn": {
+            "note": "Text for contingent offer meaning popover close button",
+            "value": "Cerca"
+        },
+        "BB-ContingencyOffer-job-requirement-Section-title": {
+            "note": "Text for job requirement section on contingent offer page",
+            "value": "Requisitos de trabajo."
+        },
+        "BB-ContingencyOffer-remaining-steps-container-title": {
+            "note": "Text for the remaining steps container title text",
+            "value": "Pasos restantes"
+        },
+        "BB-ContingencyOffer-accept-offer-button-text": {
+            "note": "Text for the accept offer button text",
+            "value": "Aceptar la oferta"
+        },
+        "BB-ContingencyOffer-back-to-jobs-button-text": {
+            "note": "Text for the back to jobs (from contingent offer page to job opportunity page) button",
+            "value": "volver a trabajos"
+        },
+        "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text": {
+            "note": "Text offer requirement understanding confirmed by accepting offer",
+            "value": "Al aceptar esta oferta, confirma que comprende los requisitos de este puesto."
+        },
+        "BB-BGC-page-content-title": {
+            "note": "Text for BGC page title",
+            "value": "Verificación de antecedentes"
+        },
+        "BB-BGC-page-provide-authorization-and-information-notice": {
+            "note": "Text for notice to let candidate provide authorization and information needed for bgc",
+            "value": "Proporcione la autorización y la información necesaria para una verificación de antecedentes."
+        },
+        "BB-BGC-page-fcra-step-card-title": {
+            "note": "Text for the FCRA step card title",
+            "value": "Divulgación de la Ley de Informe de Crédito Justo"
+        },
+        "BB-BGC-page-nonfcra-step-card-title": {
+            "note": "Text for the NON-FCRA step card title",
+            "value": "Reconocimientos y autorizaciones de la Ley de informes crediticios no justos para la verificación de antecedentes"
+        },
+        "BB-BGC-page-additional-bgc-step-card-title": {
+            "note": "Text for the Additional bgc information step card title",
+            "value": "Información adicional de antecedentes"
+        },
+        "BB-BGC-page-continue-button": {
+            "note": "Text for the bgc continue button ( from bgc to nhe page)",
+            "value": "Continuar"
+        },
+        "BB-BGC-page-fcra-subtitle-text": {
+            "note": "Text for the fcra subtitle",
+            "value": "Responda algunas preguntas usando el enlace a continuación."
+        },
+        "BB-BGC-page-fcra-get-started-btn": {
+            "note": "Text for the fcra get started button",
+            "value": "Empezar"
+        },
+        "BB-BGC-page-fcra-edit-form-btn": {
+            "note": "Text for the fcra edit information button",
+            "value": "Editar formulario"
+        },
+        "BB-BGC-addition-bgc-form-next-btn": {
+            "note": "Text for the additional bgc form next button",
+            "value": "Próxima"
+        },
+        "BB-BGC-Additional-bgc-form-address-line-one-label-text": {
+            "note": "Text for the additional bgc form  address line 1 label text",
+            "value": "Dirección Línea 1"
+        },
+        "BB-BGC-Additional-bgc-form-address-line-one-error-text": {
+            "note": "Text for the additional bgc form  address line 1 error message text",
+            "value": "Por favor introduce una dirección válida"
+        },
+        "BB-BGC-Additional-bgc-form-address-line-one-placeholder-text": {
+            "note": "Text for the additional bgc form  address line 1 placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-address-line-two-label-text": {
+            "note": "Text for the additional bgc form  address line 2 label text",
+            "value": "Apartamento, suite, .etc"
+        },
+        "BB-BGC-Additional-bgc-form-address-line-two-error-text": {
+            "note": "Text for the additional bgc form  address line 2 error message text",
+            "value": "Por favor introduce una dirección válid"
+        },
+        "BB-BGC-Additional-bgc-form-address-line-two-placeholder-text": {
+            "note": "Text for the additional bgc form  address line 2 placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-city-label-text": {
+            "note": "Text for the additional bgc form  city label text",
+            "value": "Ciudad"
+        },
+        "BB-BGC-Additional-bgc-form-city-error-text": {
+            "note": "Text for the additional bgc form city error message text",
+            "value": "Por favor introduzca una ciudad válida"
+        },
+        "BB-BGC-Additional-bgc-form-city-placeholder-text": {
+            "note": "Text for the additional bgc form city placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-state-label-text": {
+            "note": "Text for the additional bgc form  state label text",
+            "value": "Estado/Provincia"
+        },
+        "BB-BGC-Additional-bgc-form-state-error-text": {
+            "note": "Text for the additional bgc form state error message text",
+            "value": "Ingrese un estado/provincia válido"
+        },
+        "BB-BGC-Additional-bgc-form-state-placeholder-text": {
+            "note": "Text for the additional bgc form state placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-zipcode-label-text": {
+            "note": "Text for the additional bgc form  zipcode label text",
+            "value": "Código postal/Código postal"
+        },
+        "BB-BGC-Additional-bgc-form-zipcode-error-text": {
+            "note": "Text for the additional bgc form zipcode error message text",
+            "value": "Ingrese un código postal válido de 5 dígitos"
+        },
+        "BB-BGC-Additional-bgc-form-zipcode-placeholder-text": {
+            "note": "Text for the additional bgc form zipcode placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-country-label-text": {
+            "note": "Text for the additional bgc form  country label text",
+            "value": "País"
+        },
+        "BB-BGC-Additional-bgc-form-country-error-text": {
+            "note": "Text for the additional bgc form country error message text",
+            "value": "Por favor ingrese un país válido"
+        },
+        "BB-BGC-Additional-bgc-form-country-placeholder-text": {
+            "note": "Text for the additional bgc form country placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-national-id-type-label-text": {
+            "note": "Text for the additional bgc form  national id type label text",
+            "value": "Numero de identificacion nacional"
+        },
+        "BB-BGC-Additional-bgc-form-national-id-type-error-text": {
+            "note": "Text for the additional bgc form national id type error message text",
+            "value": "Ingrese un tipo de identificación nacional válido"
+        },
+        "BB-BGC-Additional-bgc-form-national-id-type-placeholder-text": {
+            "note": "Text for the additional bgc form national id type placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-national-id-number-label-text": {
+            "note": "Text for the additional bgc form  national id number label text",
+            "value": "Número de identificación"
+        },
+        "BB-BGC-Additional-bgc-form-national-id-number-error-text": {
+            "note": "Text for the additional bgc form national id number error message text",
+            "value": "Ingrese un número de seguro social válido de 9 dígitos sin guión"
+        },
+        "BB-BGC-Additional-bgc-form-national-id-number-placeholder-text": {
+            "note": "Text for the additional bgc form national id number placeholder text",
+            "value": ""
+        },
+        "BB-BGC-Additional-bgc-form-dob-label-text": {
+            "note": "Text for the additional bgc form  date of birth label text",
+            "value": "Fecha de nacimiento"
+        },
+        "BB-BGC-Additional-bgc-form-dob-error-text": {
+            "note": "Text for the additional bgc form date of birth error message text.",
+            "value": "Por favor ingresa una fecha de nacimiento valida."
+        },
+        "BB-BGC-Additional-bgc-form-dob-placeholder-text": {
+            "note": "Text for the additional bgc form national date of birth placeholder text",
+            "value": ""
+        },
+        "BB-BGC-form-optional-input-label-text": {
+            "note": "Text to show that inout on a form is optional",
+            "value": "Opcional"
+        },
+        "BB-BGC-bgc-step-card-step-progress": {
+            "note": "Text to show step progress on bgc step card",
+            "value": "Paso {currentStep} de {totalSteps}"
+        },
+        "BB-BGC-criminal-record-within-seven-years-question-text": {
+            "note": "Text to ask if candidate has had criminal record within 7 years",
+            "value": "¿Ha sido condenado por un delito menor o mayor o ha sido puesto en libertad condicional o en libertad condicional por un delito menor o mayor en los últimos siete (7) años?"
+        },
+        "BB-BGC-criminal-record-within-seven-years-answer-yes-text": {
+            "note": "Text to yes as an answer to candidate has had criminal record within 7 years",
+            "value": "Sí"
+        },
+        "BB-BGC-criminal-record-within-seven-years-answer-no-text": {
+            "note": "Text to No as an answer to candidate has had criminal record within 7 years",
+            "value": "No"
+        },
+        "BB-BGC-criminal-record-conviction-detail-label-text": {
+            "note": "Text to Criminal record conviction details label text",
+            "value": "Proporcione ciudad, país, estado de condena, fecha, naturaleza del delito, junto con información sobre la sentencia"
+        },
+        "BB-BGC-fcra-disclosure-bgc-explanation-text": {
+            "note": "Text to explain what report need to be collected from candidate on fcra form",
+            "value": "En relación con su solicitud de empleo con Amazon.com, Inc. o sus subsidiarias o afiliadas (\"Amazon\"), obtendremos un informe de consumidor sobre usted de una agencia de informes de consumidores. Esto se conoce comúnmente como \"verificación de antecedentes\"."
+        },
+        "BB-BGC-fcra-disclosure-bgc-form-title": {
+            "note": "Text for the fcra disclosure form title",
+            "value": "Divulgación de la Ley de Informe de Crédito Justo"
+        },
+        "BB-BGC-fcra-disclosure-signature-consent-notice-text": {
+            "note": "Text for the fcra disclosure signature consent text",
+            "value": "Mediante mi firma electrónica a continuación, autorizo a Amazon a obtener el informe del consumidor anterior ahora y durante cualquier empleo o compromiso que pueda tener con Amazon Corporate."
+        },
+        "BB-BGC-fcra-disclosure-bgc-form-next-btn": {
+            "note": "Text for the fcra disclosure form next button",
+            "value": "Próxima"
+        },
+        "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio": {
+            "note": "Text for the authorize Amazon to conduct bgc radio button",
+            "value": "AUTORIZO a Amazon a realizar esta verificación de antecedentes."
+        },
+        "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio": {
+            "note": "Text for the decline that Amazon to conduct bgc radio button",
+            "value": "Me niego a autorizar a Amazon esta verificación de antecedentes."
+        },
+        "BB-BGC_fcra-disclosure-signature-input-label-text": {
+            "note": "Text for the fcra signature input label text",
+            "value": "Escriba su nombre completo aquí"
+        },
+        "BB-BGC_fcra-disclosure-signature-input-error-text": {
+            "note": "Text for the fcra signature input error text",
+            "value": "Ingrese un nombre completo válido con el siguiente formato: Nombre Apellido"
+        },
+        "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text": {
+            "note": "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them",
+            "value": "Tal como lo divulgué y autoricé en el Documento de autorización y divulgación de la Ley de informes crediticios justos, Amazon.com, Inc. o sus subsidiarias o afiliadas (\"Amazon\") realizarán una verificación de mis antecedentes."
+        },
+        "BB-BGC_fcra-eSignature-acknowledgement-title-text": {
+            "note": "Text for the eSignature acknowledgement title",
+            "value": "Mediante mi firma electrónica a continuación, reconozco lo siguiente:"
+        },
+        "BB-non-fcra-fadv-acknowledgement-item-one": {
+            "note": "Text for non fcra acknowledgement number one for FADV bgcVendor",
+            "value": "El proveedor de verificación de antecedentes o \"CRA\", que realizará la verificación de antecedentes es First Advantage, está ubicado en 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, y se puede contactar al (800) 845-6004 o www.fadv .com."
+        },
+        "BB-non-fcra-accurate-acknowledgement-item-one": {
+            "note": "Text for non fcra acknowledgement number one for ACCURATE bgcVendor",
+            "value": "El proveedor de verificación de antecedentes o \"CRA\", que realizará la verificación de antecedentes es Accurate Background, está ubicado en 7515 Irvine Center Dr., Irvine, CA 92618, y se puede contactar al (800) 216-8024 o www.accuratebackground.com ."
+        },
+        "BB-non-fcra-fadv-acknowledgement-item-two": {
+            "note": "Text for non fcra acknowledgement number two for FADV bgcVendor",
+            "value": "Entiendo y acepto que, según lo permite la ley, Amazon puede ordenar verificaciones de antecedentes adicionales sobre mí con fines laborales, sin mi autorización adicional, (1) durante mi empleo, si corresponde, y (2) de CRA que no sean First Advantage."
+        },
+        "BB-non-fcra-accurate-acknowledgement-item-two": {
+            "note": "Text for non fcra acknowledgement number two for ACCURATE bgcVendor",
+            "value": "Entiendo y acepto que, según lo permita la ley, Amazon puede ordenar verificaciones de antecedentes adicionales sobre mí con fines laborales, sin mi autorización adicional, (1) durante mi empleo, si corresponde, y (2) de CRA que no sean Antecedentes precisos."
+        },
+        "BB-non-fcra-fdav-acknowledgement-item-three": {
+            "note": "Text for non fcra acknowledgement number three for FADV bgcVendor",
+            "value": "Para propósitos de empleo, y sujeto a todas las leyes que protegen mi privacidad de información, también autorizo a los siguientes a divulgar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o presentes, escuelas y fuerzas del orden público y otras agencias gubernamentales, incluidos agencias de registro de vehículos."
+        },
+        "BB-non-fcra-accurate-acknowledgement-item-three": {
+            "note": "Text for non fcra acknowledgement number three for ACCURATE bgcVendor",
+            "value": "Para propósitos de empleo, y sujeto a todas las leyes que protegen mi privacidad de información, también autorizo a los siguientes a divulgar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o presentes, escuelas y fuerzas del orden público y otras agencias gubernamentales, incluidos agencias de registro de vehículos."
+        },
+        "BB-non-fcra-accurate-california-specific-notice": {
+            "note": "Text for ACCURATE non fcra California specific notice ",
+            "value": "<p><b>CALIFORNIA: </b>Usted recibirá una Divulgación de California sobre el Informe de Investigación del Consumidor por separado (\"Divulgación de California\"). Este es un documento importante; por favor revíselo cuidadosamente. Además, haga clic en <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel =\"noopener noreferrer\"></a> si está buscando empleo o ya es empleado de la Compañía en San Francisco. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, autoriza a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento durante cualquier empleo con Amazon.</p>"
+        },
+        "BB-non-fcra-fadv-california-specific-notice": {
+            "note": "Text for FADV non fcra California specific notice ",
+            "value": "<p><b>CALIFORNIA: </b>Usted recibirá una Divulgación de California sobre el Informe de Investigación del Consumidor por separado (\"Divulgación de California\"). Este es un documento importante; por favor revíselo cuidadosamente. Además, haga clic en <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel =\"noopener noreferrer\"></a> si está buscando empleo o ya es empleado de la Compañía en San Francisco. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, autoriza a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento durante cualquier empleo con Amazon.</p>"
+        },
+        "BB-non-fcra-accurate-minnesota-specific-notice": {
+            "note": "Text for ACCURATE non fcra Minnesota specific notice ",
+            "value": "<p><b>MINNESOTA: </b>Tiene derecho a enviar una solicitud por escrito a la CRA para obtener una divulgación completa y precisa de la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre usted. La CRA debe proporcionarle la divulgación dentro de los cinco días hábiles posteriores a la recepción de su solicitud o cuando se ordenó el informe, la fecha que sea posterior.</p>"
+        },
+        "BB-non-fcra-fadv-minnesota-specific-notice": {
+            "note": "Text for FADV non fcra Minnesota specific notice ",
+            "value": "<p><b>MINNESOTA: </b>Tiene derecho a enviar una solicitud por escrito a la CRA para obtener una divulgación completa y precisa de la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre usted. La CRA debe proporcionarle la divulgación dentro de los cinco días hábiles posteriores a la recepción de su solicitud o cuando se ordenó el informe, la fecha que sea posterior.</p>"
+        },
+        "BB-non-fcra-accurate-newyork-specific-notice": {
+            "note": "Text for ACCURATE non fcra New York specific notice ",
+            "value": "<p><b>NUEVA YORK: </b>Tiene derecho a enviar una solicitud por escrito a Amazon para saber si solicitamos un informe del consumidor o un informe de investigación del consumidor sobre usted. Arriba se muestra la dirección y el número de teléfono de la CRA. Tiene derecho a comunicarse con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haga clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información sobre sus derechos en virtud del artículo 23-A de la Ley Correccional de Nueva York.</p>"
+        },
+        "BB-non-fcra-fadv-newyork-specific-notice": {
+            "note": "Text for FADV non fcra New York specific notice ",
+            "value": "<p><b>NUEVA YORK: </b>Tiene derecho a enviar una solicitud por escrito a Amazon para saber si solicitamos un informe del consumidor o un informe de investigación del consumidor sobre usted. Arriba se muestra la dirección y el número de teléfono de la CRA. Tiene derecho a comunicarse con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haga clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a > para obtener información sobre sus derechos en virtud del Artículo 23-A de la Ley Correccional de Nueva York.</p>'."
+        },
+        "BB-non-fcra-accurate-washington-specific-notice": {
+            "note": "Text for ACCURATE non fcra Washington specific notice ",
+            "value": "<p><b>WASHINGTON: </b>Tiene derecho a solicitar a la agencia de informes crediticios un resumen por escrito de sus derechos en virtud de la Ley de informes crediticios justos de Washington.</p>"
+        },
+        "BB-non-fcra-fadv-washington-specific-notice": {
+            "note": "Text for FADV non fcra Washington specific notice ",
+            "value": "<p><b>WASHINGTON: </b>Tiene derecho a solicitar a la agencia de informes crediticios un resumen por escrito de sus derechos en virtud de la Ley de informes crediticios justos de Washington.</p>"
+        },
+        "BB-non-fcra-accurate-allstate-specific-notice": {
+            "note": "Text for ACCURATE non fcra all state specific notice ",
+            "value": "<p><b>TODOS LOS ESTADOS: </b>Le proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marca esta casilla."
+        },
+        "BB-non-fcra-fadv-allstate-specific-notice": {
+            "note": "Text for FADV non fcra all state specific notice ",
+            "value": "<p><b>TODOS LOS ESTADOS: </b>Le proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marca esta casilla.</p>"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name-error-text": {
+            "note": "Text for the previous used legal name input error text",
+            "value": "Ingrese el nombre completo legal utilizado anteriormente en el siguiente formato: Nombre Apellido"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name-label-text": {
+            "note": "Text for the previous used legal name input label text",
+            "value": "Nombre completo legal anterior"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name1-error-text": {
+            "note": "Text for the previous used legal name 1 input error text",
+            "value": "Ingrese el nombre completo legal utilizado anteriormente en el siguiente formato: Nombre Apellido"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name1-label-text": {
+            "note": "Text for the previous used legal name 1 input label text",
+            "value": "Nombre completo legal anterior (1)"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name2-error-text": {
+            "note": "Text for the previous used legal name 2 input error text",
+            "value": "Ingrese el nombre completo legal utilizado anteriormente en el siguiente formato: Nombre Apellido"
+        },
+        "BB-BGC-additional-bgc-previous-legal-name2-label-text": {
+            "note": "Text for the previous used legal name 2 input label text",
+            "value": "Nombre completo legal anterior (2)"
+        },
+        "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text": {
+            "note": "Text for the button to show more previous legal names button text",
+            "value": "Añadir/Mostrar más nombres anteriores"
+        },
+        "BB-BGC-additional-previous-worked-at-Amazon-title-text": {
+            "note": "Text for the form title that ask candidate if they had previously worked at Amazon",
+            "value": "¿Ha trabajado anteriormente en un edificio de Amazon?"
+        },
+        "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text": {
+            "note": "Text for the accept previous worked at Amazon radio button label text",
+            "value": "Sí"
+        },
+        "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text": {
+            "note": "Text for the decline previous worked at Amazon radio button label text",
+            "value": "No"
+        },
+        "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title": {
+            "note": "Text for the for the form title about what to include in previous Amazon experience",
+            "value": "Qué información incluir"
+        },
+        "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text": {
+            "note": "Text for the most recent Amazon building input label text",
+            "value": "Identifique el edificio de Amazon en el que ha trabajado anteriormente"
+        },
+        "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text": {
+            "note": "Text for the most recent Amazon building input error text",
+            "value": "Ingrese un edificio de Amazon válido"
+        },
+        "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text": {
+            "note": "Text for the dates of employment at Amazon input label text",
+            "value": "Fechas de empleo - Desde/Hasta (MM/AA - MM/AA)"
+        },
+        "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text": {
+            "note": "Text for the dates of employment at Amazon input error text",
+            "value": "Ingrese un edificio de Amazon válido"
+        },
+        "BB-BGC-fcra-provide-eSignature-form-heading-text": {
+            "note": "Text for the fcra form heading text",
+            "value": "Proporcionar una firma electrónica"
+        },
+        "BB-BGC-non-fcra-state-specific-notice-heading-title-text": {
+            "note": "Text for the non fcra State specific notices title text",
+            "value": "Avisos específicos del estado"
+        },
+        "BB-BGC-non-fcra-state-specific-notice-review-title-text": {
+            "note": "Text for the non fcra State specific notices review text",
+            "value": "Revise los avisos correspondientes a continuación."
+        },
+        "BB-BGC-non-fcra-esignature-certification-form-title": {
+            "note": "Text for the non fcra e-signature certification title",
+            "value": "firma electrónica"
+        },
+        "BB-BGC-non-fcra-acknowledgement-and-authorization-text": {
+            "note": "Text for the non fcra acknowledgement and authorization text",
+            "value": "Mediante mi firma electrónica a continuación, certifico que he leído, comprendo y acepto todas las declaraciones en esta Ley de informes crediticios no justos, Reconocimientos y autorizaciones para la verificación de antecedentes. Indique su aceptación ingresando la información solicitada en los campos a continuación."
+        },
+        "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text": {
+            "note": "Text for the non fcra acknowledgement and authorization input label text",
+            "value": "Escriba su nombre completo como firma electrónica"
+        },
+        "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text": {
+            "note": "Text for the non fcra acknowledgement and authorization input error text",
+            "value": "Las firmas electrónicas no coinciden. Utilice el mismo texto para cada firma electrónica."
+        },
+        "BB-BGC-non-fcra-form-page-next-button-text": {
+            "note": "Text for the non fcra form page next button text",
+            "value": "Próxima"
+        },
+        "BB-BGC-non-fcra-applicable-notice-text": {
+            "note": "Text for the non fcra for the applicable notice",
+            "value": "Con mi firma a continuación, certifico que he leído y comprendo todos los avisos estatales aplicables, incluidos los hipervínculos."
+        },
+        "BB-BGC-non-fcra-applicable-notice-signature-input-label-text": {
+            "note": "Text for the non fcra for the applicable notice signature input label text",
+            "value": "Escriba su nombre completo como firma electrónica"
+        },
+        "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text": {
+            "note": "Text for the non fcra for request copy of bgc radio label text",
+            "value": "Me gustaría una copia gratuita de mi verificación de antecedentes"
         }
     }
 }

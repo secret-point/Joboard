@@ -86,11 +86,13 @@ export const CONTINGENT_OFFER: string = 'contingent-offer';
 export const FcraDisclosureConfigList: FcraDisclosureConfig[] = [
     {
         title: 'I AUTHORIZE Amazon to conduct this background check.',
-        value: FCRA_DISCLOSURE_TYPE.ACCEPT
+        value: FCRA_DISCLOSURE_TYPE.ACCEPT,
+        titleTranslationKey: 'BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio'
     },
     {
         title: 'I DECLINE to authorize Amazon this background check.',
-        value: FCRA_DISCLOSURE_TYPE.DECLINE
+        value: FCRA_DISCLOSURE_TYPE.DECLINE,
+        titleTranslationKey: 'BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio'
     }
 ]
 
@@ -98,49 +100,51 @@ export const CriminalConvictionConfigList: AdditionalBgcConfig[] = [
     {
         title: 'Yes.',
         value: true,
-        dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears'
+        dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears',
+        titleTranslationKey: 'BB-BGC-criminal-record-within-seven-years-answer-yes-text'
     },
     {
         title: 'NO',
         value: false,
-        dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears'
+        dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears',
+        titleTranslationKey: 'BB-BGC-criminal-record-within-seven-years-answer-no-text'
     }
 ]
 
 export const NonFcraESignatureAcknowledgementList: NonFcraESignatureAcknowledgement[] = [
     {
         title: "The background check provider or “CRA”, who will perform the background check is First Advantage, is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
-        translationKey: '',
+        translationKey: 'BB-non-fcra-fadv-acknowledgement-item-one',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
-        title: "The background check provider or “CRA”, who will perform the background check is Accurate Background, is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.\n\n* ",
-        translationKey: '',
+        title: "The background check provider or “CRA”, who will perform the background check is Accurate Background, is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
+        translationKey: 'BB-non-fcra-accurate-acknowledgement-item-one',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         title: 'I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.',
-        translationKey: '',
+        translationKey: 'BB-non-fcra-accurate-acknowledgement-item-two',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
-        title: 'For employment purposes, and subject to all laws protecting my informational privacy, I also authorize the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, and law enforcement and other government agencies, including motor vehicle record agencies.',
-        translationKey: '',
+        title: 'I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than First Advantage.',
+        translationKey: 'BB-non-fcra-fadv-acknowledgement-item-two',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
         title: "For employment purposes, and subject to all laws protecting my informational privacy, I also authorize the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, and law enforcement and other government agencies, including motor vehicle record  agencies.",
-        translationKey: '',
+        translationKey: 'BB-non-fcra-accurate-acknowledgement-item-three',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         title: "For employment purposes, and subject to all laws protecting my informational privacy, I also authorize the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, and law enforcement and other government agencies, including motor vehicle record  agencies.",
-        translationKey: '',
+        translationKey: 'BB-non-fcra-fadv-acknowledgement-item-three',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     }
@@ -149,61 +153,61 @@ export const NonFcraESignatureAcknowledgementList: NonFcraESignatureAcknowledgem
 export const US_StateSpecificNotices: StateSpecificNotice[] = [
     {
         noticeText: "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (“California Disclosure”). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-accurate-california-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         noticeText: "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (“California Disclosure”). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-fadv-california-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
         noticeText: '<p><b>MINNESOTA: </b>You have the right to submit a written request to the CRA for a complete and accurate disclosure of the nature and scope of any consumer report that was ordered about you. The CRA must provide you with the disclosure within five business days after its receipt of your request or when the report was ordered, whichever date is later.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-accurate-minnesota-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         noticeText: '<p><b>MINNESOTA: </b>You have the right to submit a written request to the CRA for a complete and accurate disclosure of the nature and scope of any consumer report that was ordered about you. The CRA must provide you with the disclosure within five business days after its receipt of your request or when the report was ordered, whichever date is later.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-fadv-minnesota-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
         noticeText: '<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target="_blank" rel="noopener noreferrer" href="http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-accurate-newyork-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         noticeText: '<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target="_blank" rel="noopener noreferrer" href="https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-fadv-newyork-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
         noticeText: '<p><b>WASHINGTON: </b>You have the right to request from the consumer reporting agency a written summary of your rights under the Washington Fair Credit Reporting Act.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-accurate-washington-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         noticeText: '<p><b>WASHINGTON: </b>You have the right to request from the consumer reporting agency a written summary of your rights under the Washington Fair Credit Reporting Act.</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-fadv-washington-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     },
     {
         noticeText: '<p><b>ALL STATES: </b>We will provide you with a free copy of any background check if you check this box</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-accurate-allstate-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.ACCURATE
     },
     {
         noticeText: '<p><b>ALL STATES: </b>We will provide you with a free copy of any background check if you check this box</p>',
-        noticeTranslationKey: '',
+        noticeTranslationKey: 'BB-non-fcra-fadv-allstate-specific-notice',
         dataKeyDependency: 'bgcVendorName',
         dependencyValue: BACKGROUND_AGENT.FADV
     }
@@ -213,43 +217,55 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
     {
         hasError: false,
         labelText: 'Address Line 1',
-        errorMessage: 'Invalid Address',
+        errorMessage: 'Please enter a valid address',
         required: true,
         name: 'additional BGC Address Line 1',
         dataKey: 'additionalBackgroundInfo.address.addressLine1',
         id: 'additionalBGCAddressLineOne',
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-address-line-one-placeholder-text'
     },
     {
         hasError: false,
         labelText: 'Apartment, suite, .etc',
-        errorMessage: 'Invalid Address',
+        errorMessage: 'Please enter a valid address',
         required: false,
         name: 'Apartment, suite, .etc',
         dataKey: 'additionalBackgroundInfo.address.addressLine2',
         id: 'additionalBGCAddressLineTwo',
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-address-line-two-placeholder-text'
     },
     {
         hasError: false,
         labelText: 'City',
-        errorMessage: 'Invalid City',
+        errorMessage: 'Please enter a valid city',
         required: true,
         name: 'City',
         dataKey: 'additionalBackgroundInfo.address.city',
         id: 'additionalBGCCity',
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-city-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-city-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-city-placeholder-text'
     },
     {
         hasError: false,
         labelText: 'State/province',
-        errorMessage: 'Invalid State/province',
+        errorMessage: 'Please enter a valid state/province',
         required: true,
         name: 'State/province',
         dataKey: 'additionalBackgroundInfo.address.state',
         id: 'additionalBGCState',
         type: 'select',
-        selectOptions: ['Al -- Alabama', 'Wa -- Washington'] // TODO to be aligned with actual state list
+        selectOptions: ['Al -- Alabama', 'Wa -- Washington'], // TODO to be aligned with actual state list,
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-state-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-state-placeholder-text'
     },
     {
         hasError: false,
@@ -260,29 +276,38 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         dataKey: 'additionalBackgroundInfo.address.zipcode',
         id: 'additionalBGCZipcode',
         regex: "[0-9]{5}(?:-[0-9]{4})?$",
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-zipcode-placeholder-text'
     },
     {
         hasError: false,
         labelText: 'Country',
-        errorMessage: 'Invalid Country',
+        errorMessage: 'Please enter a valid country',
         required: true,
         name: 'Country',
         dataKey: 'additionalBackgroundInfo.address.country',
         id: 'additionalBGC_Country',
         type: 'select',
-        selectOptions: ['United States'] // TODO to be aligned with actual all countries list
+        selectOptions: ['United States'] ,// TODO to be aligned with actual all countries list
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-country-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-country-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-country-placeholder-text'
     },
     {
         hasError: false,
         labelText: 'National ID number',
-        errorMessage: 'Invalid National ID number',
+        errorMessage: 'Please enter a valid National ID Type',
         required: true,
         name: 'National ID Type',
         dataKey: 'additionalBackgroundInfo.governmentIdType',
         id: 'additionalBGC_IdNumber',
         type: 'select',
-        selectOptions: ['Social Security Number'] // TODO to be aligned with actual all countries list
+        selectOptions: ['Social Security Number'], // TODO to be aligned with actual all countries list
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-country-national-id-type-text'
     },
     {
         dataKey: 'additionalBackgroundInfo.idNumber',
@@ -293,16 +318,22 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         id: "idNumberInput",
         name: 'idNumber',
         errorMessage: 'Please enter a valid 9 digits social security number without dash',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-country-national-id-number-text'
     },
     {
         hasError: false,
         labelText: 'Date of Birth',
-        errorMessage: 'Invalid Date of birth',
+        errorMessage: 'Please enter a valid Date of birth',
         required: true,
         name: 'Date of Birth',
         dataKey: 'additionalBackgroundInfo.dateOfBirth',
         id: 'additionalBGCDateOfBirth',
-        type: 'datePicker'
+        type: 'datePicker',
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-dob-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-dob-error-text',
+        placeholder: 'BB-BGC-Additional-bgc-form-country-dob-text'
     }
 ];
 
@@ -321,17 +352,21 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         name: 'mostRecentBuildingWorkedAtAmazon',
         dataKey: 'additionalBackgroundInfo.mostRecentBuildingWorkedAtAmazon',
         id: 'additionalBGCMostRecentBuildingWorkedAtAmazon',
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text',
+        errorMessageTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text',
     },
     {
         hasError: false,
         labelText: 'Dates of employment - From/To (MM/YY - MM/YY)',
-        errorMessage: 'Invalid Date of Employment',
+        errorMessage: 'Please enter a valid date of Employment',
         required: true,
         name: 'mostRecentTimePeriodWorkedAtAmazon',
         dataKey: 'additionalBackgroundInfo.mostRecentTimePeriodWorkedAtAmazon',
         id: 'additionalBGCMostRecentTimePeriodWorkedAtAmazon',
-        type: 'text'
+        type: 'text',
+        labelTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text',
+        errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text'
     }
 ]
 

@@ -7,6 +7,7 @@ import moment from "moment";
 import YearMonthPicker from "./YearMonthPicket";
 import { FormInputItem } from "../../../utils/types/common";
 import { PopoverPosition } from "@amzn/stencil-react-components/popover";
+import { translate as t } from "../../../utils/translator";
 
 type RenderPopupContentProps = {
     calendar: React.ReactNode;
@@ -30,7 +31,15 @@ const DatePicker = ( props: DatePickerProps ) => {
         labelText,
         toolTipText,
         errorMessage,
+        placeholder,
+        placeholderTranslationKey,
+        errorMessageTranslationKey,
+        labelTranslationKey
     } = inputItem;
+
+    const errorText = errorMessageTranslationKey && errorMessage ? t(errorMessageTranslationKey, errorMessage) : errorMessage;
+    const placeholderText = placeholder && placeholderTranslationKey ? t(placeholderTranslationKey, placeholder) : placeholder;
+
     const [date, setDate] = useState<string | undefined>(undefined);
     const [month, setMonth] = useState<string>("");
     const [year, setYear] = useState<string>("");
@@ -84,7 +93,7 @@ const DatePicker = ( props: DatePickerProps ) => {
     return (
         <Col gridGap={5} maxWidth="100%" className="formInputItem">
             <InputWrapper
-                labelText={labelText}
+                labelText={labelTranslationKey ? t(labelTranslationKey, labelText) : labelText}
                 id={id}
                 tooltipText={toolTipText}
                 error={hasError}
@@ -105,9 +114,9 @@ const DatePicker = ( props: DatePickerProps ) => {
                                 justifyContent={required ? 'flex-start' : 'space-between'}
                                 width="100%"
                             >
-                                <Text fontWeight='bold'>{labelText}</Text>
+                                <Text fontWeight='bold'>{labelTranslationKey ? t(labelTranslationKey, labelText) : labelText}</Text>
                                 <Row>
-                                    {required ? <Text color='red'> * </Text> : <Text>Optional</Text>}
+                                    {required ? <Text color='red'> * </Text> : <Text>{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>}
                                 </Row>
                             </Row>
                         </Label>

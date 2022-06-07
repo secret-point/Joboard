@@ -15,6 +15,7 @@ import get from 'lodash/get';
 import cloneDeep from "lodash/cloneDeep";
 import set from "lodash/set";
 import { boundSetCandidatePatchRequest } from "../../../actions/CandidateActions/boundCandidateActions";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -58,13 +59,13 @@ const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps
                 width="100%"
             >
                 <Text fontWeight='bold'>
-                    Have you previously worked at an Amazon building?
+                    {t('BB-BGC-additional-previous-worked-at-Amazon-title-text', 'Have you previously worked at an Amazon building?')}
                 </Text>
                 <Text color='red'> * </Text>
             </Row>
             <DetailedRadio
                 name="worked_at_Amazon-record-radio-col"
-                titleText="Yes"
+                titleText={t("BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text", "Yes")}
                 onChange={() => {
                     setHasWorkedAtAmazon(true);
                     handleCheckRadio(true);
@@ -74,7 +75,7 @@ const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps
 
             <DetailedRadio
                 name="worked_at_Amazon-record-radio-col"
-                titleText="No"
+                titleText={t("BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text", "No")}
                 onChange={() => {
                     setHasWorkedAtAmazon(false);
                     handleCheckRadio(false);
@@ -90,7 +91,7 @@ const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps
                             color={CommonColors.Blue70}
                             style={{ cursor: 'pointer' }}
                         >
-                            What Information to include
+                            {t('BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title',"What Information to include")}
                         </Text>
                     </Row>
                     {

@@ -28,7 +28,6 @@ const YearMonthPicker = ( props: YearMonthPickerProps ) => {
                 name="M"
                 defaultValue={parseInt(month)}
                 onChange={option => {
-                    console.log(option, ' test month', month, range(0, 12))
                     const param = {
                         value: option,
                         name: "M"

@@ -3,6 +3,7 @@ import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Label, Text } from "@amzn/stencil-react-components/text";
 import React from "react";
 import { FormInputItem, InputType } from "../../utils/types/common";
+import { translate as t } from "../../utils/translator";
 
 interface FormInputTextProps {
     inputItem: FormInputItem,
@@ -12,17 +13,20 @@ interface FormInputTextProps {
 
 const FormInputText = ( props: FormInputTextProps ) => {
     const { inputItem, handleChange, defaultValue } = props;
-    const { labelText, required, toolTipText, id, errorMessage, hasError, name, inputType } = inputItem;
+    const { labelText, required, toolTipText, id, errorMessage, hasError, name, inputType, labelTranslationKey, placeholderTranslationKey, errorMessageTranslationKey, placeholder } = inputItem;
+
+    const errorText = errorMessageTranslationKey && errorMessage ? t(errorMessageTranslationKey, errorMessage) : errorMessage;
+    const placeholderText = placeholder && placeholderTranslationKey ? t(placeholderTranslationKey, placeholder) : placeholder;
 
     return (
         <Col className="formInputItem">
             <InputWrapper
-                labelText={labelText}
+                labelText={labelTranslationKey ? t(labelTranslationKey, labelText) : labelText}
                 id={id}
                 required={!!required}
                 tooltipText={toolTipText || ''}
                 error={!!hasError}
-                footer={hasError ? errorMessage || undefined : undefined}
+                footer={hasError ? errorText || undefined : undefined}
                 renderLabel={() => (
                     <Row
                         alignItems="center"
@@ -30,6 +34,7 @@ const FormInputText = ( props: FormInputTextProps ) => {
                         gridGap={"S300"}
                         dataTestId='formInputItem-renderLabel'
                         width="100%"
+                        placeholder={placeholderText || ''}
                     >
                         <Label htmlFor={id} style={{ width: '100%' }}>
                             <Row
@@ -37,9 +42,9 @@ const FormInputText = ( props: FormInputTextProps ) => {
                                 justifyContent={required ? 'flex-start' : 'space-between'}
                                 width="100%"
                             >
-                                <Text fontWeight='bold'>{labelText}</Text>
+                                <Text fontWeight='bold'>{labelTranslationKey ? t(labelTranslationKey, labelText) : labelText}</Text>
                                 <Row>
-                                    {required ? <Text color='red'> * </Text> : <Text>Optional</Text>}
+                                    {required ? <Text color='red'> * </Text> : <Text>{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>}
                                 </Row>
                             </Row>
                         </Label>

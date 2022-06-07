@@ -11,6 +11,7 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { handleSubmitFcraBGC, validateName } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -52,11 +53,9 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     return (
         <Col className="FcraDisclosureContainer" gridGap={15}>
             <Col gridGap="S300" padding={{ top: 'S300' }}>
-                <H4>Fair Credit Report Act Disclosure</H4>
+                <H4>{t("BB-BGC-fcra-disclosure-bgc-form-title", "Fair Credit Report Act Disclosure")}</H4>
                 <Text>
-                    In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or
-                    affiliates ("Amazon"), we will procure a consumer report on you from a consumer reporting agency.
-                    This is commonly known as a "background check".
+                    {t("BB-BGC-fcra-disclosure-bgc-explanation-text", "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\".")}
                 </Text>
             </Col>
             <Col gridGap="S300" padding={{ top: 'S200' }}>
@@ -65,7 +64,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                         <DetailedRadio
                             name="fcra-radio-col"
                             value={fcraItem.value}
-                            titleText={fcraItem.title}
+                            titleText={t(fcraItem.titleTranslationKey, fcraItem.title)}
                             onChange={event => setFcraResponse(fcraItem.value)}
                             defaultChecked={fcraItem.value === fcraResponse}
                         />
@@ -75,17 +74,16 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
             {
                 fcraResponse === FCRA_DISCLOSURE_TYPE.ACCEPT &&
                 <Col gridGap={15} padding={{ top: 'S200' }}>
-                    <H4> Provide an e-Signature</H4>
+                    <H4>{t("BB-BGC-fcra-provide-eSignature-form-heading-text", "Provide an e-Signature")}</H4>
                     <Text>
-                        By my eSignature below, I hereby authorize Amazon to procure the above consumer report now and
-                        throughout any employment or engagement I may have with Amazon Corporate.
+                        {t("BB-BGC-fcra-disclosure-signature-consent-notice-text", "By my eSignature below, I hereby authorize Amazon to procure the above consumer report now and throughout any employment or engagement I may have with Amazon Corporate.")}
                     </Text>
                     <InputWrapper
-                        labelText="Type your full name here"
+                        labelText={t("BB-BGC_fcra-disclosure-signature-input-label-text", "Type your full name here")}
                         id="fcraFullNameInput"
                         required
                         error={!isSignatureValid}
-                        footer={!isSignatureValid ? 'Enter full name': undefined}
+                        footer={!isSignatureValid ? t("BB-BGC_fcra-disclosure-signature-input-error-text", "Enter full name"): undefined}
                     >
                         {inputProps =>
                             <Input
@@ -104,7 +102,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                     variant={ButtonVariant.Primary}
                     onClick={handleClickNext}
                 >
-                    Next
+                    {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
                 </Button>
             </Col>
         </Col>

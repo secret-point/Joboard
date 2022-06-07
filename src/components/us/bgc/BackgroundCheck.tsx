@@ -42,6 +42,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { Application } from "../../../utils/types/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -123,14 +124,17 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                         fontSize="T200"
                         color={CommonColors.Neutral70}
                     >
-                        Please answer a few questions using the link below.
+                        {t('BB-BGC-page-fcra-subtitle-text','Please answer a few questions using the link below.')}
                     </Text>
                     <Col padding='S300'>
                         <Button
                             variant={ButtonVariant.Primary}
                             onClick={() => routeToAppPageWithPath(BACKGROUND_CHECK_FCRA)}
                         >
-                            {stepConfig[BGC_STEPS.FCRA].status === BGC_STEP_STATUS.ACTIVE ? 'Get Started' : 'Edit Information'}
+                            {stepConfig[BGC_STEPS.FCRA].status === BGC_STEP_STATUS.ACTIVE ?
+                                t("BB-BGC-page-fcra-get-started-btn", "Get Started") :
+                                t("BB-BGC-page-fcra-edit-form-btn","Edit Form")
+                            }
                         </Button>
 
                     </Col>
@@ -144,12 +148,14 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         <Col className="bgcContainer" gridGap={15}>
             <StepHeader jobTitle={jobDetail?.jobTitle || ''} step={ApplicationStepList[1]}/>
             <Col gridGap={15}>
-                <H4>Background Check</H4>
-                <Text fontSize="T200">Please provide authorization and information needed for a background check.</Text>
+                <H4>{t('BB-BGC-page-content-title', 'Background Check')}</H4>
+                <Text fontSize="T200">
+                    {t('BB-BGC-page-provide-authorization-and-information-notice', 'Please provide authorization and information needed for a background check.')}
+                </Text>
             </Col>
 
             <BGCStepCard
-                title='Fair Credit Report Act Disclosure'
+                title={t('BB-BGC-page-fcra-step-card-title', 'Fair Credit Report Act Disclosure')}
                 expandedContent={renderFCRAExpandedContent()}
                 stepName={BGC_STEPS.FCRA}
                 bgcStepStatus={stepConfig[BGC_STEPS.FCRA]}
@@ -157,7 +163,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             />
 
             <BGCStepCard
-                title='Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check'
+                title={t('BB-BGC-page-nonfcra-step-card-title', 'Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check')}
                 expandedContent={<NonFcraDisclosure/>}
                 stepName={BGC_STEPS.NON_FCRA}
                 bgcStepStatus={stepConfig[BGC_STEPS.NON_FCRA]}
@@ -165,7 +171,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             />
 
             <BGCStepCard
-                title='Additional background information'
+                title={t('BB-BGC-page-additional-bgc-step-card-title', 'Additional background information')}
                 expandedContent={<AdditionalBGCInfo/>}
                 stepName={BGC_STEPS.ADDITIONAL_BGC}
                 bgcStepStatus={stepConfig[BGC_STEPS.ADDITIONAL_BGC]}
@@ -178,7 +184,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                             variant={ButtonVariant.Primary}
                             onClick={handleContinue}
                         >
-                            Continue
+                            {t('BB-BGC-page-continue-button', 'Continue')}
                         </Button>
                 }
             </Col>

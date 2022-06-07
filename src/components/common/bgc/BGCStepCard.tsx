@@ -18,6 +18,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundUpdateStepConfigAction } from "../../../actions/BGC_Actions/boundBGCActions";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -75,7 +76,9 @@ const BGCStepCard = ( props: BGCStepCardMergedProps ) => {
             >
                 <Col width="100%" padding="S300" gridGap={15}>
                     <Row justifyContent="space-between">
-                        <Text fontSize="T200" color={CommonColors.Neutral70}>{`Step ${stepIndex} of 3`}</Text>
+                        <Text fontSize="T200" color={CommonColors.Neutral70}>
+                            {t("BB-BGC-bgc-step-card-step-progress", "Step {currentStep} of {totalSteps}", {currentStep: stepIndex, totalSteps: 3})}
+                        </Text>
                         {stepStatus === BGC_STEP_STATUS.COMPLETED && editMode &&
                         <Row onClick={() => handleSetEditMode(false)}>
                             <IconCloseCircleFill/>
