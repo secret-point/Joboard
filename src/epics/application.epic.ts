@@ -26,7 +26,6 @@ import CandidateApplicationService from "../services/candidate-application-servi
 import { completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
 import { actionWorkflowRequestEnd, actionWorkflowRequestInit } from "../actions/UiActions/uiActions";
-import { boundUpdateWorkflowName } from "../actions/ApplicationActions/boundApplicationActions";
 import { routeToAppPageWithPath, sanitizeApplicationData } from "../utils/helper";
 import {
     APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
@@ -79,13 +78,8 @@ export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
             }
             else {
                 if(state.appConfig.results?.envConfig) {
-                    loadWorkflowDS(
-                        applicationData.jobScheduleSelected.jobId || "",
-                        applicationData.jobScheduleSelected.scheduleId || "",
-                        applicationData.applicationId,
-                        applicationData.candidateId,
-                        state.appConfig.results.envConfig
-                    );
+                    const {jobScheduleSelected, applicationId, candidateId} = applicationData;
+                    loadWorkflowDS(jobScheduleSelected.jobId || "", jobScheduleSelected.scheduleId || "", applicationId, candidateId, state.appConfig.results.envConfig);
                     return actionWorkflowRequestInit();
                 }
                 else {

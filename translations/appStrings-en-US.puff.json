@@ -416,7 +416,7 @@
         },
         "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text": {
             "note": "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them",
-            "value": "As disclosed and authorized by me in the separate Fair Credit Reporting Act Disclosure and Authorization Document, Amazon.com, Inc. or its subsidiaries or affiliates (“Amazon”) will conduct a background check on me."
+            "value": "As disclosed and authorized by me in the separate Fair Credit Reporting Act Disclosure and Authorization Document, Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\") will conduct a background check on me."
         },
         "BB-BGC_fcra-eSignature-acknowledgement-title-text": {
             "note": "Text for the eSignature acknowledgement title",
@@ -448,11 +448,11 @@
         },
         "BB-non-fcra-accurate-california-specific-notice": {
             "note": "Text for ACCURATE non fcra California specific notice ",
-            "value": "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (“California Disclosure”). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>"
+            "value": "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel='noopener noreferrer'></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>"
         },
         "BB-non-fcra-fadv-california-specific-notice": {
             "note": "Text for FADV non fcra California specific notice ",
-            "value": "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (“California Disclosure”). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>"
+            "value": "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel='noopener noreferrer'></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>"
         },
         "BB-non-fcra-accurate-minnesota-specific-notice": {
             "note": "Text for ACCURATE non fcra Minnesota specific notice ",
@@ -464,11 +464,11 @@
         },
         "BB-non-fcra-accurate-newyork-specific-notice": {
             "note": "Text for ACCURATE non fcra New York specific notice ",
-            "value": "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>"
+            "value": "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target='_blank' rel='noopener noreferrer' href='http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf'>here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>"
         },
         "BB-non-fcra-fadv-newyork-specific-notice": {
             "note": "Text for FADV non fcra New York specific notice ",
-            "value": "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>."
+            "value": "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target='_blank' rel='noopener noreferrer' href='https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf'>here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>."
         },
         "BB-non-fcra-accurate-washington-specific-notice": {
             "note": "Text for ACCURATE non fcra Washington specific notice ",

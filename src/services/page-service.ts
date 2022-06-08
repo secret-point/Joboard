@@ -3,6 +3,7 @@ import IPageOrderResponse from "../@types/IPageOrderResponse";
 import { pathByDomain } from "../helpers/utils";
 
 export default class PageService {
+
   private readonly axiosInstance: AxiosInstance;
 
   constructor() {
@@ -19,13 +20,13 @@ export default class PageService {
     return response.data;
   }
 
-  async getPageConfigWithPath(pageName: String): Promise<any> {
+  async getPageConfigWithPath( pageName: String ): Promise<any> {
     const response = await this.axiosInstance.get("/" + pageName);
     return response.data;
   }
 
-  async getPageConfig(configPath?: string) {
-    if (!configPath) {
+  async getPageConfig( configPath?: string ) {
+    if(!configPath) {
       configPath = "ConsentPage.json";
     }
     const response = await this.getPageConfigWithPath(configPath);

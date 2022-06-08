@@ -7,20 +7,14 @@ import {
     GetRequisitionSuccessAction,
 } from "./requisitionActionTypes";
 
-export const actionGetRequisition = (
-    payload: GetRequisitionRequest
-): GetRequisitionAction => {
+export const actionGetRequisition = ( payload: GetRequisitionRequest ): GetRequisitionAction => {
     return { type: GET_REQUISITION_TYPE.GET, payload }
 };
 
-export const actionGetRequisitionSuccess = (
-    payload: Requisition
-): GetRequisitionSuccessAction => {
+export const actionGetRequisitionSuccess = ( payload: Requisition ): GetRequisitionSuccessAction => {
     return { type: GET_REQUISITION_TYPE.SUCCESS, payload }
 };
 
-export const actionGetRequisitionFailed = (
-    payload: any
-): GetRequisitionFailedAction => {
+export const actionGetRequisitionFailed = ( payload: any ): GetRequisitionFailedAction => {
     return { type: GET_REQUISITION_TYPE.FAILED, payload }
 };

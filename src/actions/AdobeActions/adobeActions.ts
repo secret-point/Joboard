@@ -1,8 +1,7 @@
-import { getDataForEventMetrics } from "../../helpers/adobe-helper";
+import { getDataForEventMetrics, getDataForMetrics } from "../../helpers/adobe-helper";
 import { AdobeMetrics, Metric, MetricData } from "../../@types/adobe-metrics";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
-import { getDataForMetrics } from "../../helpers/adobe-helper";
 import { EVENT_NAMES } from "../../constants/adobe-analytics";
 import findIndex from "lodash/findIndex";
 import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
@@ -17,9 +16,9 @@ export const Unspecified = "Unspecified";
 const getCmpId = () => {
   const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
   let cmpIdValue;
-  for (let key of cmpIdKeys) {
+  for(let key of cmpIdKeys) {
     const cmpId = window.sessionStorage.getItem(key);
-    if (!isNil(cmpId)) {
+    if(!isNil(cmpId)) {
       cmpIdValue = cmpId;
       break;
     }
@@ -27,11 +26,11 @@ const getCmpId = () => {
   return cmpIdValue;
 };
 
-const getItemFromSessionStorageByKey = (key: string) => {
+const getItemFromSessionStorageByKey = ( key: string ) => {
   return window.sessionStorage.getItem(key);
 }
 
-export const sendDataLayerAdobeAnalytics = (metric: any) => {
+export const sendDataLayerAdobeAnalytics = ( metric: any ) => {
   const cmpId = getCmpId();
   const ikey = getItemFromSessionStorageByKey('ikey');
   const akey = getItemFromSessionStorageByKey('akey');
@@ -54,77 +53,55 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
   window.dataLayerArray.push(metric);
 };
 
-export const addMetricForPageLoad = (pageName: string) => {
+export const addMetricForPageLoad = ( pageName: string ) => {
   let dataLayer: any = {};
   try {
     const { job, requisition } = store.getState();
-    if ((!isEmpty(requisition) || !isEmpty(job)) && !window.isPageMetricsUpdated) {
+    if((!isEmpty(requisition) || !isEmpty(job)) && !window.isPageMetricsUpdated) {
       dataLayer = getDataForMetrics(pageName);
       window.isPageMetricsUpdated = true;
-      if (!isEmpty(dataLayer)) {
+      if(!isEmpty(dataLayer)) {
         sendDataLayerAdobeAnalytics(dataLayer);
       }
     }
-  } catch (ex) {
+  }
+  catch(ex) {
     console.log(ex);
     console.log("unable to update metrics");
   }
 };
 
-export const postAdobeMetrics = (
-  adobeMetrics: AdobeMetrics,
-  data: { [key: string]: object } | MetricData,
-  appData?: ApplicationData
-) => {
+export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: string]: object } | MetricData, appData?: ApplicationData ) => {
   const { name, metricsValues } = adobeMetrics;
   let metric: Metric = getDataForEventMetrics(name);
-  switch (name) {
+
+  switch(name) {
     case EVENT_NAMES.SUBMIT_NHE_PREFERENCES: {
-      const metricData: { [key: string]: string[] } = {
-        possibleNHEDates: [],
-        possibleNHETimeSlots: []
-      };
-      metricData.possibleNHEDates = getCheckBoxListLabels(
-        data.possibleNHEDates as CheckBoxItem[]
-      );
-      metricData.possibleNHETimeSlots = getCheckBoxListLabels(
-        data.possibleNHETimeSlots as CheckBoxItem[]
-      );
-      const submitNhePrefMetrics = getMetricValues(
-        metricsValues,
-        metric,
-        metricData
-      );
-      metric = {
-        ...metric,
-        ...submitNhePrefMetrics
-      };
+      const metricData: { [key: string]: string[] } = { possibleNHEDates: [], possibleNHETimeSlots: [] };
+      metricData.possibleNHEDates = getCheckBoxListLabels(data.possibleNHEDates as CheckBoxItem[]);
+      metricData.possibleNHETimeSlots = getCheckBoxListLabels(data.possibleNHETimeSlots as CheckBoxItem[]);
+      const submitNhePrefMetrics = getMetricValues(metricsValues, metric, metricData);
+      metric = { ...metric, ...submitNhePrefMetrics };
       break;
     }
+
     case EVENT_NAMES.SELECT_NHE: {
-      const selectNheMetricValue = getMetricValues(
-        metricsValues,
-        metric,
-        data as MetricData
-      );
-      if (appData) {
+      const selectNheMetricValue = getMetricValues(metricsValues, metric, data as MetricData);
+      if(appData) {
         const { nheTimeSlots } = appData.requisition;
         selectNheMetricValue["NHE"]["count"] = nheTimeSlots.length;
         const appId = selectNheMetricValue["NHE"]["apptID"] as string;
-        const selectedIndex = findIndex(nheTimeSlots, {
-          timeSlotId: appId
-        });
+        const selectedIndex = findIndex(nheTimeSlots, { timeSlotId: appId });
         selectNheMetricValue["NHE"]["position"] = selectedIndex + 1;
       }
-      metric = {
-        ...metric,
-        ...selectNheMetricValue
-      };
+      metric = { ...metric, ...selectNheMetricValue };
       break;
     }
+
     case EVENT_NAMES.SUBMIT_SHIFT_PREFERENCES: {
       getMetricValues(metricsValues, metric, data as MetricData);
     }
+
     default: {
       metric = getDataForEventMetrics(name);
       break;

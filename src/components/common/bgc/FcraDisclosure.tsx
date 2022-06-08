@@ -55,7 +55,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
             <Col gridGap="S300" padding={{ top: 'S300' }}>
                 <H4>{t("BB-BGC-fcra-disclosure-bgc-form-title", "Fair Credit Report Act Disclosure")}</H4>
                 <Text>
-                    {t("BB-BGC-fcra-disclosure-bgc-explanation-text", "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\".")}
+                    {t("BB-BGC-fcra-disclosure-bgc-explanation-text", "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates ('Amazon'), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\".")}
                 </Text>
             </Col>
             <Col gridGap="S300" padding={{ top: 'S200' }}>

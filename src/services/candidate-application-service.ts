@@ -3,51 +3,40 @@ import { AxiosInstance } from "axios";
 import {
   CreateApplicationRequest,
   CreateApplicationRequestDS,
-  CreateApplicationResponseDS,
   UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
 import { Application } from "../utils/types/common";
+
 export default class CandidateApplicationService {
+
   private readonly axiosInstance: AxiosInstance;
+
   constructor() {
     this.axiosInstance = axiosHelper("/api/candidate-application");
   }
 
-  async getApplication(applicationId: string) {
-    const response = await this.axiosInstance.get(
-      `/applications/${applicationId}`,
-      {
-        headers: {
-          "Cache-Control": "no-cache"
+  async getApplication( applicationId: string ) {
+    const response = await this.axiosInstance.get(`/applications/${applicationId}`, {
+          headers: {
+            "Cache-Control": "no-cache"
+          }
         }
-      }
     );
     return response.data;
   }
 
-  async createApplication(payload: CreateApplicationRequest) {
-    const response = await this.axiosInstance.post(
-      "/create-application",
-      payload
-    );
+  async createApplication( payload: CreateApplicationRequest ) {
+    const response = await this.axiosInstance.post("/create-application", payload);
     return response.data;
   }
 
-  async createApplicationDS(
-    payload: CreateApplicationRequestDS
-  ): Promise<Application> {
-    const response = await this.axiosInstance.post(
-      "/ds/create-application/",
-      payload
-    );
+  async createApplicationDS( payload: CreateApplicationRequestDS ): Promise<Application> {
+    const response = await this.axiosInstance.post("/ds/create-application/", payload);
     return response.data;
   }
 
-  async updateApplication(payload: UpdateApplicationRequest) {
-    const response = await this.axiosInstance.put(
-      "/update-application",
-      payload
-    );
+  async updateApplication( payload: UpdateApplicationRequest ) {
+    const response = await this.axiosInstance.put("/update-application", payload);
     return response.data;
   }
 
@@ -56,49 +45,25 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async terminateApplication(applicationId: string, state: string) {
-    const response = await this.axiosInstance.put(
-      `/terminate-application/${applicationId}/${state}`
-    );
+  async terminateApplication( applicationId: string, state: string ) {
+    const response = await this.axiosInstance.put(`/terminate-application/${applicationId}/${state}`);
     return response.data;
   }
 
-  async updateWOTCStatus(
-    applicationId: string,
-    candidateId: string,
-    status: string
-  ) {
-    await this.axiosInstance.put(`/update-wotc-status`, {
-      applicationId,
-      candidateId,
-      status
-    });
+  async updateWOTCStatus( applicationId: string, candidateId: string, status: string ) {
+    await this.axiosInstance.put(`/update-wotc-status`, { applicationId, candidateId, status });
     return await this.getApplication(applicationId);
   }
 
-  async updateWorkflowStepName(
-    applicationId: string,
-    workflowStepName: string
-  ) {
-    const response = await this.axiosInstance.put(
-      `/update-workflow-step-name`,
-      {
-        applicationId,
-        workflowStepName
-      }
-    );
+  async updateWorkflowStepName( applicationId: string, workflowStepName: string ) {
+    const response = await this.axiosInstance.put(`/update-workflow-step-name`, { applicationId, workflowStepName });
     return response.data;
   }
 
-  async getApplicationSelfServiceDS(applicationId: string) {
-    const response = await this.axiosInstance.get(
-        `/applications/reserved/${applicationId}`,
-        {
-          headers: {
-            "Cache-Control": "no-cache"
-          }
-        }
-    );
+  async getApplicationSelfServiceDS( applicationId: string ) {
+    const response = await this.axiosInstance.get(`/applications/reserved/${applicationId}`, {
+      headers: { "Cache-Control": "no-cache" }
+    });
     return response.data;
   }
 }

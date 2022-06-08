@@ -13,10 +13,7 @@ export const initRequisitionState: RequisitionState = {
 }
 
 
-export default function requisitionReducer(
-    state: RequisitionState = initRequisitionState,
-    action: GET_REQUISITION_ACTIONS
-):RequisitionState {
+export default function requisitionReducer( state: RequisitionState = initRequisitionState, action: GET_REQUISITION_ACTIONS ):RequisitionState {
     switch (action.type) {
         case GET_REQUISITION_TYPE.GET:
             return {

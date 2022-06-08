@@ -1,3 +1,5 @@
+import { NHE } from "../../components/pageRoutes";
+
 export enum QUERY_PARAMETER_NAME {
     APPLICATION_ID = 'applicationId',
     JOB_ID = 'jobId',
@@ -73,7 +75,15 @@ export enum WORKFLOW_STEP_NAME {
     THANK_YOU = 'thank-you',
     SUPPLEMENTARY_SUCCESS = 'supplementary-success',
     BGC = 'bgc',
-};
+    AMAZON_REJECTS = 'amazon-rejects',
+    AMAZON_WITHDRAWS = 'amazon-withdraws',
+    CANDIDATE_WITHDRAWS = 'candidate-withdraws',
+    REVIEW_SUBMIT = 'review-submit',
+    WOTC = 'wotc',
+    SELF_IDENTIFICATION = 'self-identification',
+    NHE = 'nhe',
+    WORKFLOW_FAILED = 'workflow-failed'
+}
 
 export enum UPDATE_APPLICATION_API_TYPE {
     JOB_CONFIRM = 'job-confirm',

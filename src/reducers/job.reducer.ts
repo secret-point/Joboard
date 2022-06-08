@@ -12,11 +12,7 @@ export const initJobState: JobState = {
     failed: false
 }
 
-
-export default function jobReducer(
-    state: JobState = initJobState,
-    action: JOB_DETAIL_ACTIONS
-):JobState {
+export default function jobReducer( state: JobState = initJobState, action: JOB_DETAIL_ACTIONS ):JobState {
     switch (action.type) {
         case GET_JOB_DETAIL_TYPE.GET:
             return {

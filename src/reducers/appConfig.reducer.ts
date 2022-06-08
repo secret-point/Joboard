@@ -12,10 +12,7 @@ export const initAppConfigState: AppConfigState = {
     failed: false
 }
 
-export default function appConfigReducer(
-    state: AppConfigState = initAppConfigState,
-    action: APP_CONFIG_ACTIONS
-):AppConfigState {
+export default function appConfigReducer( state: AppConfigState = initAppConfigState, action: APP_CONFIG_ACTIONS ): AppConfigState {
     switch (action.type) {
         case GET_INITIAL_APP_CONFIG_TYPE.GET:
             return {
@@ -62,5 +59,4 @@ export default function appConfigReducer(
         default:
             return state;
     }
-
 }
