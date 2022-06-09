@@ -5,6 +5,7 @@ import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
 import {
+  ALREADY_APPLIED,
   BACKGROUND_CHECK,
   BACKGROUND_CHECK_FCRA,
   CONSENT,
@@ -25,6 +26,7 @@ import BackgroundCheck from "./bgc/BackgroundCheck";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "./resumeApplication/ResumeApplication";
 import Nhe from "./nhe/Nhe";
+import AlreadyApplied from "./alreadyApplied/AlreadyApplied"
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -80,6 +82,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${NHE}`} exact>
               <Nhe/>
+            </Route>
+            <Route path={`/${ALREADY_APPLIED}`} exact>
+              <AlreadyApplied/>
             </Route>
           </Switch>
         </Router>

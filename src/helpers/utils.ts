@@ -318,3 +318,21 @@ export const redirectToLoginCSDS = () => {
   let url = `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
+
+export const redirectToDashboard = () => {
+  const state = store.getState();
+  const envConfig = state.appConfig?.results?.envConfig;
+  const isCandidateDashboardEnabled = envConfig?.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession
+    ? JSON.parse(queryParamsInSession)
+    : {};
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  const candidateDashboardUrl = `${envConfig?.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+
+  if (isCandidateDashboardEnabled) {
+    window.location.assign(candidateDashboardUrl);
+  } else if (envConfig?.dashboardUrl){
+    window.location.assign(envConfig?.dashboardUrl);
+  }
+};

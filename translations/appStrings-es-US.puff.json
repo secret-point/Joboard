@@ -589,6 +589,18 @@
         "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text": {
             "note": "Text for the non fcra for request copy of bgc radio label text",
             "value": "Me gustaría una copia gratuita de mi verificación de antecedentes"
+        },
+        "BB-already-applied": {
+            "note": "Text for aleady applied job text",
+            "value": ""
+        },
+        "BB-already-applied-description": {
+            "note": "Text for aleady applied job description text",
+            "value": ""
+        },
+        "BB-already-applied-button-text": {
+            "note": "Text for aleady applied job return to dashboard button text",
+            "value": ""
         }
     }
 }

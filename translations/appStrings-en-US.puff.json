@@ -589,6 +589,18 @@
         "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text": {
             "note": "Text for the non fcra for request copy of bgc radio label text",
             "value": "I would like a free copy of my background check"
+        },
+        "BB-already-applied": {
+            "note": "Text for aleady applied job text",
+            "value": "You have already started and / or completed an application for this job."
+        },
+        "BB-already-applied-description": {
+            "note": "Text for aleady applied job description text",
+            "value": "Return to the dashboard resume your application or view application and new hire appointment details, and your next steps."
+        },
+        "BB-already-applied-button-text": {
+            "note": "Text for aleady applied job return to dashboard button text",
+            "value": "Return to dashboard"
         }
     }
 }
