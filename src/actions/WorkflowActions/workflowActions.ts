@@ -205,7 +205,7 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   const applicationId = application.applicationId;
   const candidateId = application.candidateId;
   const currentStepName = getCurrentStepNameFromHash();
-  const scheduleDetail = state.schedule.scheduleDetail;
+  const scheduleDetail = state.schedule.results.scheduleDetail;
 
   if(isBackButton) {
     log(`Completed task on back button execution, current step is ${currentStepName}`);

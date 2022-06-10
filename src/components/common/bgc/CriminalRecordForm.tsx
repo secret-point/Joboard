@@ -32,7 +32,8 @@ type CriminalRecordFormMergedProps = MapStateToProps & CriminalRecordFormProps;
 const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
 
     const { candidate } = props;
-    const { candidateData, candidatePatchRequest } = candidate;
+    const { candidatePatchRequest } = candidate;
+    const { candidateData } = candidate.results
     const additionalBgc = candidateData?.additionalBackgroundInfo;
 
     const [hasCriminalRecord, setHasCriminalRecord] = useState(additionalBgc?.hasCriminalRecordWithinSevenYears);

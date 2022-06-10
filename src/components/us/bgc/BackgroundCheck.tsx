@@ -69,8 +69,8 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     const applicationData = application.results;
     const { stepConfig } = bgc;
     const { completedSteps } = stepConfig;
-    const scheduleDetail = schedule.scheduleDetail;
-    const { candidateData } = candidate;
+    const scheduleDetail = schedule.results.scheduleDetail;
+    const { candidateData } = candidate.results
 
     useEffect(() => {
         boundGetCandidateInfo();

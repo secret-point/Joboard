@@ -14,7 +14,7 @@ interface MapStateToProps {
 
 const AlreadyApplied = (props: MapStateToProps) => {
   const { candidate } = props;
-  const { candidateData } = candidate;
+  const { candidateData } = candidate.results;
   const firstName = candidateData?.firstName;
 
   useEffect(() => {

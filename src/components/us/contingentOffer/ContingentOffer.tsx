@@ -48,8 +48,8 @@ const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
-    const scheduleDetail = schedule.scheduleDetail;
-    const candidateData = candidate.candidateData;
+    const scheduleDetail = schedule.results.scheduleDetail;
+    const { candidateData } = candidate.results
 
     useEffect(() => {
         boundGetCandidateInfo();

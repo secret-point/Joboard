@@ -43,7 +43,8 @@ type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
     const { candidate, application, bgc } = props;
-    const { candidateData, candidatePatchRequest, formError } = candidate;
+    const { candidatePatchRequest, formError } = candidate;
+    const { candidateData } = candidate.results
     const { stepConfig } = bgc;
     const applicationData = application.results;
     const additionalBgc = candidateData?.additionalBackgroundInfo;

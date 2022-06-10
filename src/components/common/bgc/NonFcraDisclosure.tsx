@@ -33,7 +33,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
 
     const { application, schedule, bgc } = props;
     const applicationData = application.results;
-    const scheduleDetail = schedule.scheduleDetail;
+    const scheduleDetail = schedule.results.scheduleDetail;
     const { stepConfig } = bgc;
     const nonFcraQuestions = applicationData?.nonFcraQuestions;
 

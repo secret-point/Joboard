@@ -192,7 +192,7 @@ const createApplicationAndSkipScheduleHelper = ( createApplicationResponse: Appl
     const scheduleId = createApplicationResponse.jobScheduleSelected?.scheduleId;
     const applicationId = createApplicationResponse.applicationId;
     const candidateId = createApplicationResponse.candidateId;
-    const scheduleDetail = state.schedule.scheduleDetail;
+    const scheduleDetail = state.schedule.results.scheduleDetail;
     if(scheduleId && state.appConfig.results?.envConfig){
         window.hasCompleteTaskOnSkipSchedule = () => {
             routeToAppPageWithPath(CONSENT, [

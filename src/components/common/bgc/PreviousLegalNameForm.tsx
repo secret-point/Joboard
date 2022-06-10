@@ -32,7 +32,8 @@ type PreviousLegalNameFormMergedProps = MapStateToProps & PreviousLegalNameFormP
 const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
 
     const { candidate } = props;
-    const { candidateData, formError, candidatePatchRequest } = candidate;
+    const { formError, candidatePatchRequest } = candidate;
+    const { candidateData } = candidate.results
     const additionalBgc = candidateData?.additionalBackgroundInfo;
     const previousLegalNames: string[] = additionalBgc?.previousLegalNames || [];
 

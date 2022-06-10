@@ -2,27 +2,50 @@ import { Candidate, CandidateInfoErrorState, CandidatePatchRequest } from "../ut
 import { CANDIDATE_ACTION_TYPES, CandidateActionTypes } from "../actions/CandidateActions/candidateActionTypes";
 
 export interface CandidateState {
-    candidateData?: Candidate,
+    loading: boolean
+    results:{
+      candidateData?: Candidate,
+    }
+    failed: boolean
     candidatePatchRequest?: CandidatePatchRequest,
     formError: CandidateInfoErrorState
 }
 
 export const initCandidateState: CandidateState = {
-    formError: {}
+    formError: {},
+    loading: false,
+    failed: false,
+    results:{
+        candidateData: undefined
+    }
 }
 
 export default function candidateReducer( state: CandidateState = initCandidateState, action: CandidateActionTypes ): CandidateState {
     switch(action.type) {
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:
+            return {
+                ...state,
+                loading: true,
+                failed: false,     
+            }
         case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_SUCCESS:
             return {
                 ...state,
-                candidateData: action.payload
+                loading: false,
+                failed: false,
+                results:{
+                    candidateData: action.payload
+                }
             }
 
         case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_FAILED:
             return {
                 ...state,
-                candidateData: undefined
+                loading: false,
+                failed: true,
+                results:{
+                    candidateData: undefined
+                }
             }
 
         case CANDIDATE_ACTION_TYPES.SET_PATCH_REQUEST: {

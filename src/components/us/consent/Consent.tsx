@@ -39,7 +39,7 @@ const ConsentPage = (props: MapStateToProps) => {
     const jobId = queryParams.jobId;
     const jobDetail = job.results;
     const scheduleId = queryParams.scheduleId;
-    const scheduleDetail = schedule.scheduleDetail;
+    const scheduleDetail = schedule.results.scheduleDetail;
     const pageName = getPageNameFromPath(pathname);
     const qualificationCriteria= jobDetail?.qualificationCriteria || [];
 

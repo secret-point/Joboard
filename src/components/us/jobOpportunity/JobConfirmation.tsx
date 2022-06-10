@@ -35,7 +35,7 @@ const JobConfirmation = ( props: MapStateToProps ) => {
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const scheduleDetail = schedule.scheduleDetail;
+    const scheduleDetail = schedule.results.scheduleDetail;
     const { scheduleId, applicationId, jobId } = queryParams;
     const jobDetail = job.results;
     const applicationDetail = application.results;

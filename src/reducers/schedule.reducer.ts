@@ -7,15 +7,22 @@ import { getDaysHoursDefaultFilters } from "../utils/helper";
 const defaultDaysHoursFilters = getDaysHoursDefaultFilters();
 
 export interface ScheduleState {
-    scheduleList: Schedule[],
+    loading: boolean
+    results:{
+      scheduleList?: Schedule[],
+      scheduleDetail?: Schedule,
+    }
     failed?: boolean;
-    scheduleDetail?: Schedule,
     filters: ScheduleStateFilters
 }
 
 export const initScheduleState: ScheduleState = {
+    loading: false,
     failed: false,
-    scheduleList: [],
+    results:{
+        scheduleList: [],
+        scheduleDetail: undefined,
+    },
     filters: {
         ...initScheduleStateFilters,
         daysHoursFilter: defaultDaysHoursFilters
@@ -26,8 +33,10 @@ export const initScheduleState: ScheduleState = {
 export default function scheduleReducer( state: ScheduleState = initScheduleState, action: ScheduleActions ): ScheduleState {
     switch(action.type) {
         case SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB:
+        case SCHEDULE_ACTION_TYPE.GET_DETAIL:
             return {
                 ...state,
+                loading: true,
                 failed: false
             };
 
@@ -35,26 +44,32 @@ export default function scheduleReducer( state: ScheduleState = initScheduleStat
             return {
                 ...state,
                 failed: false,
-                scheduleList: action.payload
+                loading: false,
+                results: { ...state.results, scheduleList: action.payload }
             };
 
         case SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_FAILED:
             return {
                 ...state,
-                failed: true
+                failed: true,
+                loading: false,
             };
 
         case SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS:
             return {
                 ...state,
-                scheduleDetail: action.payload
+                loading: false,
+                failed: false,
+                results: { ...state.results, scheduleDetail: action.payload }
             }
 
         case SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED:
             return {
                 ...state,
-                scheduleDetail: undefined
-,            }
+                loading: false,
+                failed: true,
+                results: { ...state.results, scheduleDetail: undefined } 
+            }
 
         case SCHEDULE_ACTION_TYPE.UPDATE_FILTERS:
             return {

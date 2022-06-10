@@ -34,7 +34,8 @@ type PreviousWorkedAtAmazonFormMergedProps = MapStateToProps & PreviousWorkedAtA
 const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps) => {
 
     const { candidate } = props;
-    const { candidateData, candidatePatchRequest } = candidate;
+    const { candidatePatchRequest } = candidate;
+    const { candidateData } = candidate.results
     const additionalBgc = candidateData?.additionalBackgroundInfo;
 
     const [hasWorkedAtAmazon, setHasWorkedAtAmazon] = useState(additionalBgc?.hasPreviouslyWorkedAtAmazon);

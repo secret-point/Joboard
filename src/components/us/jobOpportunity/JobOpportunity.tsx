@@ -52,7 +52,7 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const { applicationId, jobId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
-    const scheduleData = schedule.scheduleList;
+    const scheduleData = schedule.results.scheduleList;
     const scheduleFilters = schedule.filters;
     const { matches } = useBreakpoints();
 
@@ -193,7 +193,7 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
                     </Row>
 
                     {
-                        scheduleData.map(scheduleItem => <ScheduleCard scheduleDetail={scheduleItem}/>)
+                        scheduleData && scheduleData.map(scheduleItem => <ScheduleCard scheduleDetail={scheduleItem}/>)
                     }
                 </Col>
             </Col>
