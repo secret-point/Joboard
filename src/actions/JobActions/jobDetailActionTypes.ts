@@ -22,6 +22,7 @@ export interface GetJobDetailAction extends Action {
 export interface GetJobDetailSuccessAction extends Action {
     type: GET_JOB_DETAIL_TYPE.SUCCESS;
     payload: Job;
+    loadingStatus: boolean
 }
 
 export interface GetJobDetailFailedAction extends Action {

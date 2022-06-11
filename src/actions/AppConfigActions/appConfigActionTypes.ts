@@ -15,6 +15,7 @@ export interface GetInitialAppConfigSuccessAction extends Action {
     type: GET_INITIAL_APP_CONFIG_TYPE.SUCCESS;
     onSuccess?: Function;
     payload: AppConfig;
+    loadingStatus: boolean;
 }
 
 export interface GetInitialAppConfigFailedAction extends Action {
@@ -36,6 +37,7 @@ export interface GetEnvConfigSuccessAction extends Action {
     type: GET_ENV_CONFIG_TYPE.SUCCESS;
     onSuccess?: Function;
     payload: EnvConfig;
+    loadingStatus: boolean;
 }
 
 export interface GetEnvConfigFailedAction extends Action {

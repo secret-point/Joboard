@@ -1,3 +1,4 @@
+import { loadingStatusHelper } from "../../utils/helper";
 import { AppConfig, EnvConfig } from "../../utils/types/common";
 import {
     GET_ENV_CONFIG_TYPE,
@@ -13,7 +14,7 @@ export const actionGetInitialAppConfig = (): GetInitialAppConfigAction => {
 };
 
 export const actionGetInitialAppConfigActionSuccess = ( payload: AppConfig, onSuccess?: Function ): GetInitialAppConfigSuccessAction => {
-    return { type: GET_INITIAL_APP_CONFIG_TYPE.SUCCESS, payload, onSuccess }
+    return { type: GET_INITIAL_APP_CONFIG_TYPE.SUCCESS, payload, onSuccess, loadingStatus:loadingStatusHelper() }
 };
 
 export const actionGetInitialAppConfigActionFailed = ( payload: any ) => {// Refine errorMessage type later): GetInitialAppConfigFailedAction
@@ -25,7 +26,7 @@ export const actionGetEnvConfig = (): GetEnvConfigAction => {
 };
 
 export const actionGetEnvConfigActionSuccess = ( payload: EnvConfig, onSuccess?: Function ): GetEnvConfigSuccessAction => {
-    return { type: GET_ENV_CONFIG_TYPE.SUCCESS, payload, onSuccess }
+    return { type: GET_ENV_CONFIG_TYPE.SUCCESS, payload, onSuccess, loadingStatus:loadingStatusHelper() }
 };
 
 export const actionGetEnvConfigActionFailed = ( payload: any ) => {// Refine errorMessage type later GetEnvConfigFailedAction

@@ -43,6 +43,10 @@ const ConsentPage = (props: MapStateToProps) => {
     const pageName = getPageNameFromPath(pathname);
     const qualificationCriteria= jobDetail?.qualificationCriteria || [];
 
+    const isCreateButtonDisabled = scheduleId
+        ? jobDetail && scheduleDetail && !isLoading? false : true
+        : jobDetail && !isLoading? false : true;
+
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
@@ -106,7 +110,7 @@ const ConsentPage = (props: MapStateToProps) => {
                 <Button
                     variant={ButtonVariant.Primary}
                     style={{ width: "100%" }}
-                    disabled={jobDetail && scheduleDetail && !isLoading? false : true}
+                    disabled={isCreateButtonDisabled}
                     onClick={() => {
                         if(scheduleId){
                             const payload: CreateApplicationAndSkipScheduleRequestDS ={

@@ -35,6 +35,7 @@ export interface GetApplicationAction extends Action {
 export interface GetApplicationSuccessAction extends Action {
     type: APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS;
     payload: Application;
+    loadingStatus: boolean;
 }
 
 export interface GetApplicationFailedAction extends Action {
@@ -57,6 +58,7 @@ export interface CreateApplicationActionDS extends Action {
 export interface CreateApplicationSuccessActionDS extends Action {
     type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS;
     payload: Application;
+    loadingStatus: boolean;
 }
 
 export interface CreateApplicationFailedActionDS extends Action {
@@ -74,6 +76,7 @@ export interface UpdateApplicationActionDS extends Action {
 export interface UpdateApplicationSuccessActionDS extends Action {
     type: APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS;
     payload: Application;
+    loadingStatus: boolean;
 }
 
 export interface UpdateApplicationFailedActionDS extends Action {
@@ -91,6 +94,7 @@ export interface CreateApplicationAndSkipScheduleActionDS extends Action {
 export interface CreateApplicationAndSkipScheduleSuccessActionDS extends Action {
     type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS;
     payload: Application;
+    loadingStatus: boolean;
 }
 
 export interface CreateApplicationAndSkipScheduleFailedActionDS extends Action {
@@ -108,6 +112,7 @@ export interface UpdateWorkflowStepNameAction extends Action {
 export interface UpdateWorkflowStepNameSuccessAction extends Action {
     type: APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_SUCCESS;
     payload: Application;
+    loadingStatus: boolean;
 }
 
 export interface UpdateWorkflowStepNameFailedAction extends Action {

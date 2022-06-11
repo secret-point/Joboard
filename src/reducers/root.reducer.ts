@@ -8,6 +8,7 @@ import applicationReducer from "./application.reducer";
 import scheduleReducer from "./schedule.reducer";
 import bgcReducer from "./bgc.reducer";
 import candidateReducer from "./candidate.reducer";
+import workflowReducer from "./workflow.reducer";
 
 const createRootReducer = ( history: any ) =>
     combineReducers({
@@ -19,6 +20,7 @@ const createRootReducer = ( history: any ) =>
         schedule: scheduleReducer,
         bgc: bgcReducer,
         candidate: candidateReducer,
+        workflow: workflowReducer,
         router: connectRouter(history),
     });
 

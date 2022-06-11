@@ -7,6 +7,7 @@ import {
     UpdateCandidateInfoErrorAction
 } from "./candidateActionTypes";
 import { Candidate, CandidateInfoErrorState, CandidatePatchRequest } from "../../utils/types/common";
+import { loadingStatusHelper } from "../../utils/helper";
 
 export const actionGetCandidateInfo = (): GetCandidateInfoAction => {
     return {
@@ -17,7 +18,8 @@ export const actionGetCandidateInfo = (): GetCandidateInfoAction => {
 export const actionGetCandidateInfoSuccess = (payload: Candidate): GetCandidateInfoSuccessAction => {
     return {
         type: CANDIDATE_ACTION_TYPES.GET_CANDIDATE_SUCCESS,
-        payload
+        payload,
+        loadingStatus:loadingStatusHelper()
     }
 }
 

@@ -15,7 +15,8 @@ export interface GetCandidateInfoAction extends Action {
 
 export interface GetCandidateInfoSuccessAction extends Action {
     type: CANDIDATE_ACTION_TYPES.GET_CANDIDATE_SUCCESS,
-    payload: Candidate
+    payload: Candidate,
+    loadingStatus: boolean
 }
 
 export interface GetCandidateInfoFailedAction extends Action {

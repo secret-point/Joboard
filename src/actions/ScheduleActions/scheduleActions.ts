@@ -10,13 +10,14 @@ import {
     UpdateScheduleFiltersAction
 } from "./scheduleActionTypes";
 import { Schedule, ScheduleStateFilters } from "../../utils/types/common";
+import { loadingStatusHelper } from "../../utils/helper";
 
 export const actionGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ): GetScheduleListByJobIdAction => {
     return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB, payload }
 };
 
 export const actionGetScheduleListByJobIdSuccess = ( payload: Schedule[] ): GetScheduleListByJobIdSuccessAction => {
-    return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_SUCCESS, payload }
+    return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_SUCCESS, payload, loadingStatus:loadingStatusHelper() }
 };
 
 export const actionGetScheduleListByJobIdFailed = ( payload: any ): GetScheduleListByJobIdFailedAction => {
@@ -34,7 +35,7 @@ export const actionGetScheduleDetail =
     };
 
 export const actionGetScheduleDetailSuccess = ( payload: Schedule): GetScheduleDetailSuccessAction => {
-    return { type: SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS, payload }
+    return { type: SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS, payload, loadingStatus:loadingStatusHelper() }
 };
 
 export const actionGetScheduleDetailFailed = ( payload: any ): GetScheduleDetailFailedAction => {

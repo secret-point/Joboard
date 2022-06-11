@@ -11,7 +11,7 @@ import {
 } from "./../actions/WorkflowActions/workflowActions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
-import { boundWorkflowRequestStart } from "../actions/UiActions/boundUi";
+import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
 import { EnvConfig } from "../utils/types/common";
 
 export default class StepFunctionService {
@@ -121,5 +121,6 @@ export default class StepFunctionService {
 
   error( event: any ) {
     log("Error on received from wWebsocket", event, LoggerType.ERROR);
+    boundWorkflowRequestEnd();
   }
 }

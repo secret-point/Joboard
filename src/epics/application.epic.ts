@@ -23,9 +23,8 @@ import {
     UpdateWorkflowStepNameAction
 } from "../actions/ApplicationActions/applicationActionTypes";
 import CandidateApplicationService from "../services/candidate-application-service";
-import { completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
+import { actionWorkflowRequestEnd, actionWorkflowRequestInit, completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
-import { actionWorkflowRequestEnd, actionWorkflowRequestInit } from "../actions/UiActions/uiActions";
 import { routeToAppPageWithPath, sanitizeApplicationData } from "../utils/helper";
 import {
     APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
@@ -34,7 +33,7 @@ import {
 } from "../constants";
 import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../utils/enums/common";
 import { CONSENT } from "../components/pageRoutes";
-import { boundWorkflowRequestStart } from "../actions/UiActions/boundUi";
+import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
 
 export const GetApplicationEpic = ( action$: Observable<any> ) => {
     return action$.pipe(
@@ -77,7 +76,7 @@ export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
                 routeToAppPageWithPath(stepName);
             }
             else {
-                if(state.appConfig.results?.envConfig) {
+                if(state.appConfig.results?.envConfig && !window?.stepFunctionService?.websocket) {
                     const {jobScheduleSelected, applicationId, candidateId} = applicationData;
                     loadWorkflowDS(jobScheduleSelected.jobId || "", jobScheduleSelected.scheduleId || "", applicationId, candidateId, state.appConfig.results.envConfig);
                     return actionWorkflowRequestInit();

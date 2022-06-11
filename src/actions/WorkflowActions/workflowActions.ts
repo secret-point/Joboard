@@ -6,11 +6,12 @@ import { getDataForEventMetrics } from "../../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "../AdobeActions/adobeActions";
 import { log, logError } from "../../helpers/log-helper";
 import { checkIfIsCSRequest, pathByDomain } from "../../helpers/utils";
-import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../UiActions/boundUi";
+import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../WorkflowActions/boundWorkflowActions";
 import store from "../../store/store";
 import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
-import { getCurrentStepNameFromHash, routeToAppPageWithPath } from "../../utils/helper";
+import { getCurrentStepNameFromHash, loadingStatusHelper, routeToAppPageWithPath } from "../../utils/helper";
 import { WORKFLOW_STEP_NAME } from "../../utils/enums/common";
+import { WorkflowRequestEndAction, WorkflowRequestInitAction, WorkflowRequestStartAction, WORKFLOW_REQUEST } from "../WorkflowActions/workflowActionTypes";
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
@@ -215,7 +216,7 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   }
 
   if(!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
-    window.hasCompleteTaskOnSkipSchedule = () => {
+    window.hasCompleteTaskOnWorkflowConnect = () => {
       completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
     }
     boundWorkflowRequestStart();
@@ -225,3 +226,15 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
     completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
   }
 }
+
+export const actionWorkflowRequestInit = (): WorkflowRequestInitAction => {
+  return { type: WORKFLOW_REQUEST.INIT }
+};
+
+export const actionWorkflowRequestStart = (): WorkflowRequestStartAction => {
+  return { type: WORKFLOW_REQUEST.START }
+};
+
+export const actionWorkflowRequestEnd = (): WorkflowRequestEndAction => {
+  return { type: WORKFLOW_REQUEST.END, loadingStatus: loadingStatusHelper() }
+};

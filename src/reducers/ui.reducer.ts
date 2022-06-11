@@ -3,10 +3,12 @@ import {
     GET_ENV_CONFIG_TYPE,
     GET_INITIAL_APP_CONFIG_TYPE
 } from "../actions/AppConfigActions/appConfigActionTypes";
-import { GET_STATE_CONFIG_TYPE, UI_ACTION, WORKFLOW_REQUEST } from "../actions/UiActions/uiActionTypes";
+import { GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
 import { GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
 import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionTypes";
 import { APPLICATION_ACTION_TYPES } from "../actions/ApplicationActions/applicationActionTypes";
+import { CANDIDATE_ACTION_TYPES } from "../actions/CandidateActions/candidateActionTypes";
+import { WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
 
 export interface uiState {
     isLoading: boolean;
@@ -30,11 +32,12 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION:
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME:
         case WORKFLOW_REQUEST.START:
+        case WORKFLOW_REQUEST.INIT:
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:  
             return {
                 ...state,
                 isLoading: true
             };
-
         case GET_INITIAL_APP_CONFIG_TYPE.SUCCESS:
         case GET_INITIAL_APP_CONFIG_TYPE.FAILED:
         case GET_ENV_CONFIG_TYPE.SUCCESS:
@@ -51,17 +54,18 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED:
         case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS:
         case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED:
-        // Don't add CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE.SUCCESS and let UI loading
-        // case CREATE_APPLICATION_AND_SKIP_SCHEDULE_TYPE.SUCCESS:
+        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS:
         case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED:
         case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS:
         case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_FAILED:
         case WORKFLOW_REQUEST.END:
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_SUCCESS:
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_FAILED:
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_SUCCESS:
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_FAILED:    
             return {
                 ...state,
-                isLoading: false
+                isLoading: action.loadingStatus? action.loadingStatus : false
             };
 
         default:

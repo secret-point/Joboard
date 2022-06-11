@@ -3,10 +3,6 @@ import {
     GET_STATE_CONFIG_TYPE,
     GetCountryStateConfigAction,
     GetCountryStateConfigSuccessAction,
-    WORKFLOW_REQUEST,
-    WorkflowRequestStartAction,
-    WorkflowRequestEndAction,
-    WorkflowRequestInitAction
 } from "./uiActionTypes";
 
 export const actionGetCountryStateConfig = (): GetCountryStateConfigAction => {
@@ -24,14 +20,3 @@ export const actionGetCountryStateConfigActionFailed = ( payload: any ) => { // 
     return { type: GET_STATE_CONFIG_TYPE.FAILED, payload }
 };
 
-export const actionWorkflowRequestInit = (): WorkflowRequestInitAction => {
-    return { type: WORKFLOW_REQUEST.INIT }
-};
-
-export const actionWorkflowRequestStart = (): WorkflowRequestStartAction => {
-    return { type: WORKFLOW_REQUEST.START }
-};
-
-export const actionWorkflowRequestEnd = (): WorkflowRequestEndAction => {
-    return { type: WORKFLOW_REQUEST.END }
-};

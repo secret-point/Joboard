@@ -1,4 +1,5 @@
 import { GetJobDetailRequest } from "../../utils/apiTypes";
+import { loadingStatusHelper } from "../../utils/helper";
 import { Job } from "../../utils/types/common";
 import {
     GET_JOB_DETAIL_TYPE,
@@ -12,7 +13,7 @@ export const actionGetJobDetail = ( payload: GetJobDetailRequest ): GetJobDetail
 };
 
 export const actionGetJobDetailSuccess = ( payload: Job ): GetJobDetailSuccessAction => {
-    return { type: GET_JOB_DETAIL_TYPE.SUCCESS, payload }
+    return { type: GET_JOB_DETAIL_TYPE.SUCCESS, payload, loadingStatus:loadingStatusHelper() }
 };
 
 export const actionGetJobDetailFailed = ( payload: any ): GetJobDetailFailedAction => {

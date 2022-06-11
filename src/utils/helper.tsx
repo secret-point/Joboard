@@ -17,7 +17,7 @@ import {
     ScheduleStateFilters,
     TimeRangeHoursData
 } from "./types/common";
-import { history } from "../store/store";
+import store, { history } from "../store/store";
 import Cookies from "js-cookie";
 import { AdditionalBGCFormConfig, HVH_LOCALE, initScheduleStateFilters, NameRegexValidator } from "./constants/common";
 import range from "lodash/range";
@@ -43,7 +43,7 @@ import capitalize from 'lodash/capitalize';
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { BACKGROUND_CHECK, JOB_CONFIRMATION, NHE } from "../components/pageRoutes";
 import queryString from "query-string";
-import { isBoolean } from "lodash";
+import { find, isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
 import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
@@ -291,8 +291,6 @@ export const handleAcceptOffer = ( applicationData: Application ) => {
     }
     boundUpdateApplicationDS(updateApplicationRequest, (applicationDetail: Application) => {
         onCompleteTaskHelper(applicationDetail);
-        // Go to the new page, don't wait work flow to do the routing
-        routeToAppPageWithPath(BACKGROUND_CHECK);
     });
 }
 
@@ -577,7 +575,6 @@ export const handleSubmitAdditionalBgc =
             boundUpdateApplicationDS(request, (applicationData: Application) => {
                 onCompleteTaskHelper(applicationData);
                 handleUpdateAdditionalBGCStep(stepConfig);
-                routeToAppPageWithPath(NHE);
             })
         }
     }
@@ -594,4 +591,16 @@ export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
     }
 
     boundUpdateStepConfigAction(request);
+}
+
+export const loadingStatusHelper = () =>{
+    const states = store.getState();
+    const loadingStates = [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow];
+    let loadingCount = 0;
+    loadingStates.forEach(loading=>{
+        if(loading.loading === true){
+            loadingCount++
+        }
+    })
+    return loadingCount > 1? true : false;
 }

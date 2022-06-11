@@ -20,6 +20,7 @@ export interface GetScheduleListByJobIdAction extends Action {
 export interface GetScheduleListByJobIdSuccessAction extends Action {
     type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB_SUCCESS;
     payload: Schedule[];
+    loadingStatus: boolean
 }
 
 export interface GetScheduleListByJobIdFailedAction extends Action {
@@ -37,6 +38,7 @@ export interface GetScheduleDetailAction extends Action {
 export interface GetScheduleDetailSuccessAction extends Action {
     type: SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS;
     payload: Schedule;
+    loadingStatus: boolean;
 }
 
 export interface GetScheduleDetailFailedAction extends Action {
