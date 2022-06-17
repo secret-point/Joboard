@@ -1,6 +1,7 @@
 import {
     AdditionalBgcConfig,
     ApplicationStep,
+    DetailedRadioButtonItem,
     FcraDisclosureConfig,
     FormInputItem,
     NonFcraESignatureAcknowledgement,
@@ -369,5 +370,171 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text'
     }
 ]
+
+export const SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
+    {
+        title: "Male",
+        value: "Male",
+        titleTranslationKey: ""
+    },
+    {
+        title: "Female",
+        value: "Female",
+        titleTranslationKey: ""
+    },
+    {
+        title: "I choose not to self-identify",
+        value: "I choose not to self-identify",
+        titleTranslationKey: ""
+    }
+]
+
+export const SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
+    {
+        title: "American Indian/Alaska Native (not Hispanic or Latino)",
+        value: "American Indian/Alaska Native",
+        details: "Persons having origins in any of the original peoples of North and South America, (including Central America), and who maintain tribal affiliation or community attachment",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "Asian (not Hispanic or Latino)",
+        value: "Asian (not Hispanic or Latino)",
+        details: "Persons having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian Subcontinent; including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand and Vietnam",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "Black/African American (not Hispanic or Latino)",
+        value: "Black/African American",
+        details: "Persons having origins in any of the Black racial groups of Africa",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "Hispanic/Latino",
+        value: "Hispanic/Latino",
+        details: "Persons of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)",
+        value: "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)",
+        details: "Persons having origins in any of the peoples of Hawaii, Guam, Samoa, or other Pacific Islands",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "White (not Hispanic or Latino)",
+        value: "White (not Hispanic or Latino)",
+        details: "Persons having origins in any of the original peoples of Europe, the Middle East or North Africa",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "Two or more Races (not Hispanic or Latino)",
+        value: "Two or more Races (not Hispanic or Latino)",
+        details: "Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander, (5) American Indian/Alaska Native",
+        titleTranslationKey: '',
+        detailsTranslationKey: ''
+    },
+    {
+        title: "I choose not to self-identify",
+        value: "I choose not to Self-Identify",
+        titleTranslationKey: ''
+    }
+]
+
+export const SelfIdVeteranStatusRadioItem: DetailedRadioButtonItem[] = [
+    {
+        title: "Yes",
+        value: "Yes",
+        titleTranslationKey: ""
+    },
+    {
+        title: "No",
+        value: "No",
+        titleTranslationKey: ""
+    },
+    {
+        title: "I choose not to self-identify",
+        value: "I choose not to self-identify",
+        titleTranslationKey: ""
+    }
+]
+
+export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
+    {
+        title: "Yes",
+        value: "Yes",
+        titleTranslationKey: ""
+    },
+    {
+        title: "No",
+        value: "No",
+        titleTranslationKey: ""
+    },
+    {
+        title: "I choose not to self-identify",
+        value: "I choose not to self-identify",
+        titleTranslationKey: ""
+    }
+]
+
+export const SelfIdProtectedVeteranRadioItem: DetailedRadioButtonItem[] = [
+    {
+        title: "Yes",
+        value: "Yes",
+        titleTranslationKey: ""
+    },
+    {
+        title: "No",
+        value: "No",
+        titleTranslationKey: ""
+    },
+    {
+        title: "I choose not to self-identify",
+        value: "I choose not to self-identify",
+        titleTranslationKey: ""
+    }
+]
+
+export const SelfIdDisabilityRadioItem: DetailedRadioButtonItem[] = [
+    {
+        title: "Yes, I Have A Disability, Or Have A History/Record Of Having A Disability ",
+        value: "YES, I HAVE A DISABILITY (or previously had a disability)",
+        titleTranslationKey: ""
+    },
+    {
+        title: "No, I Don’t Have A Disability, Or A History/Record Of Having A Disability",
+        value: "NO, I DON’T HAVE A DISABILITY",
+        titleTranslationKey: ""
+    },
+    {
+        title: "I Don’t Wish To Answer",
+        value: "I Don’t Wish To Answer",
+        titleTranslationKey: ""
+    }
+]
+
+export const DisabilityList: string[] = [
+    "Autism",
+    "Autoimmune disorder, for example, lupus, fibromyalgia, rheumatoid arthritis, or HIV/AIDS",
+    "Blind or low vision",
+    "Cancer",
+    "Cardiovascular or heart disease",
+    "Celiac disease",
+    "Cerebral palsy",
+    "Deaf or hard of hearing",
+    "Depression or anxiety",
+    "Diabetes", " Epilepsy",
+    "Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome",
+    "Intellectual disability", "Missing limbs or partially missing limbs",
+    "Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)",
+    "Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+];
+
+
 
 export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";

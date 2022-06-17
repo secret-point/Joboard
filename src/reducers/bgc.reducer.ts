@@ -1,5 +1,5 @@
 import { BgcStepConfig } from "../utils/types/common";
-import { BGC_STEP_STATUS, BGC_STEPS } from "../utils/enums/common";
+import { BGC_STEPS, INFO_CARD_STEP_STATUS } from "../utils/enums/common";
 import { BGC_ACTION_TYPE, BGCStepConfigActions } from "../actions/BGC_Actions/bgcActionTypes";
 
 export interface BGCState {
@@ -10,15 +10,15 @@ export const initScheduleState: BGCState = {
     stepConfig: {
         completedSteps: [],
         [BGC_STEPS.FCRA]: {
-            status: BGC_STEP_STATUS.ACTIVE,
+            status: INFO_CARD_STEP_STATUS.ACTIVE,
             editMode: false
         },
         [BGC_STEPS.NON_FCRA]: {
-            status: BGC_STEP_STATUS.LOCKED,
+            status: INFO_CARD_STEP_STATUS.LOCKED,
             editMode: false
         },
         [BGC_STEPS.ADDITIONAL_BGC]: {
-            status: BGC_STEP_STATUS.LOCKED,
+            status: INFO_CARD_STEP_STATUS.LOCKED,
             editMode: false
         },
     }

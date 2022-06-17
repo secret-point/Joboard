@@ -9,6 +9,8 @@ import scheduleReducer from "./schedule.reducer";
 import bgcReducer from "./bgc.reducer";
 import candidateReducer from "./candidate.reducer";
 import workflowReducer from "./workflow.reducer";
+import nheReducer from "./nhe.reducer";
+import selfIdentificationReducer from "./selfIdentification.reducer";
 
 const createRootReducer = ( history: any ) =>
     combineReducers({
@@ -21,6 +23,8 @@ const createRootReducer = ( history: any ) =>
         bgc: bgcReducer,
         candidate: candidateReducer,
         workflow: workflowReducer,
+        nhe: nheReducer,
+        selfIdentification: selfIdentificationReducer,
         router: connectRouter(history),
     });
 

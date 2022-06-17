@@ -24,11 +24,10 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { ApplicationStepList } from "../../../utils/constants/common";
 import { connect } from "react-redux";
 import { H4, Text } from "@amzn/stencil-react-components/text";
-import BGCStepCard from "../../common/bgc/BGCStepCard";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import {
-    BGC_STEP_STATUS,
     BGC_STEPS,
+    INFO_CARD_STEP_STATUS,
     PROXY_APPLICATION_STATE,
     UPDATE_APPLICATION_API_TYPE
 } from "../../../utils/enums/common";
@@ -43,6 +42,7 @@ import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { Application } from "../../../utils/types/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { translate as t } from "../../../utils/translator";
+import InfoStepCard from "../../common/InfoStepCard";
 
 interface MapStateToProps {
     job: JobState,
@@ -68,9 +68,8 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     const jobDetail = job.results;
     const applicationData = application.results;
     const { stepConfig } = bgc;
-    const { completedSteps } = stepConfig;
     const scheduleDetail = schedule.results.scheduleDetail;
-    const { candidateData } = candidate.results
+    const { candidateData } = candidate.results;
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -131,7 +130,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                             variant={ButtonVariant.Primary}
                             onClick={() => routeToAppPageWithPath(BACKGROUND_CHECK_FCRA)}
                         >
-                            {stepConfig[BGC_STEPS.FCRA].status === BGC_STEP_STATUS.ACTIVE ?
+                            {stepConfig[BGC_STEPS.FCRA].status === INFO_CARD_STEP_STATUS.ACTIVE ?
                                 t("BB-BGC-page-fcra-get-started-btn", "Get Started") :
                                 t("BB-BGC-page-fcra-edit-form-btn","Edit Form")
                             }
@@ -154,27 +153,27 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                 </Text>
             </Col>
 
-            <BGCStepCard
+            <InfoStepCard
                 title={t('BB-BGC-page-fcra-step-card-title', 'Fair Credit Report Act Disclosure')}
                 expandedContent={renderFCRAExpandedContent()}
                 stepName={BGC_STEPS.FCRA}
-                bgcStepStatus={stepConfig[BGC_STEPS.FCRA]}
+                infoCardStepStatus={stepConfig[BGC_STEPS.FCRA]}
                 stepIndex={1}
             />
 
-            <BGCStepCard
+            <InfoStepCard
                 title={t('BB-BGC-page-nonfcra-step-card-title', 'Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check')}
                 expandedContent={<NonFcraDisclosure/>}
                 stepName={BGC_STEPS.NON_FCRA}
-                bgcStepStatus={stepConfig[BGC_STEPS.NON_FCRA]}
+                infoCardStepStatus={stepConfig[BGC_STEPS.NON_FCRA]}
                 stepIndex={2}
             />
 
-            <BGCStepCard
+            <InfoStepCard
                 title={t('BB-BGC-page-additional-bgc-step-card-title', 'Additional background information')}
                 expandedContent={<AdditionalBGCInfo/>}
                 stepName={BGC_STEPS.ADDITIONAL_BGC}
-                bgcStepStatus={stepConfig[BGC_STEPS.ADDITIONAL_BGC]}
+                infoCardStepStatus={stepConfig[BGC_STEPS.ADDITIONAL_BGC]}
                 stepIndex={3}
             />
             <Col padding={{top: 'S300'}}>

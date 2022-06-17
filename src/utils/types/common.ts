@@ -1,14 +1,15 @@
 import {
     APPLICATION_STATE,
     BACKGROUND_AGENT,
-    BGC_STEP_STATUS,
     BGC_STEPS,
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
     GOVERNMENT_TYPE,
+    INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
     SCHEDULE_FILTER_TYPE,
+    SELF_IDENTIFICATION_STEPS,
     WORKFLOW_STEP_NAME
 } from "../enums/common";
 
@@ -150,14 +151,14 @@ export interface Requisition {
     jobDescription: any;
     availableShifts: AvailableShifts;
     selectedLocations: SelectedLocations[];
-    nheTimeSlots: NHETimeSlots[];
+    nheTimeSlots: NHETimeSlot[];
 }
 
-export interface NHETimeSlots {
+export interface NHETimeSlot {
     timeSlotId: string;
     startTime: string;
     endTime: string;
-    location: Location;
+    location: NheTimeSlotLocation;
     timezone: string;
     availableResources: number;
     appointmentsBooked: number;
@@ -167,6 +168,14 @@ export interface NHETimeSlots {
     dateWithoutFormat: string;
     childRequisitionId: string;
     nheSource: string;
+}
+
+export interface NheTimeSlotLocation {
+    city: string;
+    country: string;
+    postalCode: string;
+    streetAddress: string;
+    state: string;
 }
 
 export interface SelectedLocations {
@@ -310,6 +319,9 @@ export interface Schedule {
     signOnBonus: number;
     briefJobDescription: string;
     jobDescription: string;
+    siteId: string;
+    hireStartDate: string;
+    contingencyTat: number;
 }
 
 export interface HoursPerWeek {
@@ -624,10 +636,19 @@ export interface FormDateInputItem extends FormInputItem {
 
 export interface BgcStepConfig {
     completedSteps: BGC_STEPS[];
-    [BGC_STEPS.ADDITIONAL_BGC]: BgcStepStatus;
-    [BGC_STEPS.FCRA]: BgcStepStatus;
-    [BGC_STEPS.NON_FCRA]: BgcStepStatus
+    [BGC_STEPS.ADDITIONAL_BGC]: InfoCardStepStatus;
+    [BGC_STEPS.FCRA]: InfoCardStepStatus;
+    [BGC_STEPS.NON_FCRA]: InfoCardStepStatus
 }
+
+export interface SelfIdentificationConfig {
+    completedSteps: SELF_IDENTIFICATION_STEPS[];
+    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: InfoCardStepStatus;
+    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: InfoCardStepStatus;
+    [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: InfoCardStepStatus;
+}
+
+export type InfoCardStepConfig = BgcStepConfig & SelfIdentificationConfig;
 
 export interface ScheduleStateFilters {
     sortKey: SCHEDULE_FILTER_TYPE,
@@ -731,8 +752,8 @@ export interface CandidateInfoErrorState {
     [key:string]:boolean
 }
 
-export interface BgcStepStatus {
-    status: BGC_STEP_STATUS,
+export interface InfoCardStepStatus {
+    status: INFO_CARD_STEP_STATUS,
     editMode: boolean
 }
 
@@ -740,6 +761,22 @@ export interface NonFcraFormErrorStatus {
     hasError: boolean;
     ackESignHasError: boolean;
     noticeESignHasError: boolean;
+}
+export interface GetNheTimeSlotRequestDs {
+    requisitionServiceScheduleDetails: {
+        scheduleId: string,
+        locationCode: string,
+        hireStartDate: string,
+        contingencyTurnAroundDays: number | null
+    }
+}
+
+export interface DetailedRadioButtonItem {
+    title: string;
+    titleTranslationKey: string;
+    value: string;
+    details?: string;
+    detailsTranslationKey?: string
 }
 
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

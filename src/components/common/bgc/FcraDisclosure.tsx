@@ -29,7 +29,6 @@ type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
 const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const { bgc, application } = props;
     const { stepConfig } = bgc;
-    const { completedSteps } = stepConfig;
     const applicationData = application.results;
     const fcraQuestions = applicationData?.fcraQuestions;
 
@@ -42,7 +41,6 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
 
         if(isFullNameValid && !!fcraResponse) {
             setIsSignatureValid(true);
-            return;
         }
 
         if(applicationData) {

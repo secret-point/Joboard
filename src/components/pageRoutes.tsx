@@ -9,3 +9,4 @@ export const BACKGROUND_CHECK_FCRA: string = 'bgc/fcra'
 export const RESUME_APPLICATION: string = 'resume-application';
 export const NHE = 'nhe';
 export const ALREADY_APPLIED = 'already-applied';
+export const SELF_IDENTIFICATION = 'self-identification';

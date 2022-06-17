@@ -27,6 +27,7 @@ import { sendAdobeAnalytics } from "./application-actions";
 import JobService from "./../../services/job-service";
 import queryString from "query-string";
 import { ShiftType } from "./../../constants/shift-type";
+import { GetNheTimeSlotRequestDs } from "../../utils/types/common";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -380,8 +381,7 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
         siteId = siteId.replace("SITE-", "");
       }
 
-      const timeslotRequest: NHETimeslotRequestDS = {
-        parentRequisitionId: null,
+      const timeslotRequest: GetNheTimeSlotRequestDs = {
         requisitionServiceScheduleDetails: {
           scheduleId: schedule.scheduleId,
           locationCode: siteId,

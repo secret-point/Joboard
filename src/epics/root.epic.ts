@@ -10,6 +10,7 @@ import {
 } from "./application.epic";
 import { JobEpic } from "./job.epic";
 import { GetCandidateInfoEpic } from "./candidate.epic";
+import { GetNheTimeSlotsDs } from "./nhe.epic";
 
 const rootEpic = combineEpics(
     JobEpic,
@@ -21,7 +22,8 @@ const rootEpic = combineEpics(
     CreateApplicationAndSkipScheduleDSEpic,
     GetApplicationSuccessEpic,
     UpdateWorkflowStepNameEpic,
-    GetCandidateInfoEpic
+    GetCandidateInfoEpic,
+    GetNheTimeSlotsDs
 );
 
 export default rootEpic;

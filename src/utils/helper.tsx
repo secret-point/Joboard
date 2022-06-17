@@ -7,8 +7,10 @@ import {
     CandidatePatchRequest,
     DayHoursFilter,
     FormInputItem,
+    GetNheTimeSlotRequestDs,
     Job,
     Locale,
+    NHETimeSlot,
     NonFcraFormErrorStatus,
     QueryParamItem,
     Range,
@@ -32,14 +34,14 @@ import {
     boundUpdateScheduleFilters
 } from "../actions/ScheduleActions/boundScheduleActions";
 import {
-    BGC_STEP_STATUS,
+    INFO_CARD_STEP_STATUS,
     BGC_STEPS,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
     QUERY_PARAMETER_NAME,
     UPDATE_APPLICATION_API_TYPE
 } from "./enums/common";
-import capitalize from 'lodash/capitalize';
+import capitalize from "lodash/capitalize";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { BACKGROUND_CHECK, JOB_CONFIRMATION, NHE } from "../components/pageRoutes";
 import queryString from "query-string";
@@ -49,11 +51,12 @@ import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import isEmpty from "lodash/isEmpty";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
-import get from 'lodash/get';
-import set from 'lodash/set';
-import pick from 'lodash/pick';
+import get from "lodash/get";
+import set from "lodash/set";
+import pick from "lodash/pick";
 import { initScheduleState } from "../reducers/bgc.reducer";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
+import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
 
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
@@ -315,36 +318,24 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
     const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions);
     const isAdditionalBgcCompleted = !isEmpty(candidateData?.additionalBackgroundInfo);
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
-    const { ACTIVE, COMPLETED, LOCKED } = BGC_STEP_STATUS;
+    const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
 
     let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig }
 
-    if(isFcraCompleted && !isNonFcraCompleted && !isAdditionalBgcCompleted) {
+    if(isFcraCompleted) {
         stepConfig = {
             ...stepConfig,
             completedSteps: [FCRA],
             [FCRA]: {
                 status: COMPLETED,
                 editMode: false
-            },
-            [NON_FCRA]: {
-                status: ACTIVE,
-                editMode: false
-            },
-            [ADDITIONAL_BGC]: {
-                status: LOCKED,
-                editMode: false
             }
         }
     }
-    else if(isFcraCompleted && isNonFcraCompleted && !isAdditionalBgcCompleted) {
+    if(isNonFcraCompleted) {
         stepConfig = {
             ...stepConfig,
-            completedSteps: [FCRA, NON_FCRA],
-            [FCRA]: {
-                status: COMPLETED,
-                editMode: false
-            },
+            completedSteps: [...stepConfig.completedSteps, NON_FCRA],
             [NON_FCRA]: {
                 status: COMPLETED,
                 editMode: false
@@ -355,18 +346,20 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
             }
         }
     }
-    else if(isFcraCompleted && isNonFcraCompleted && isAdditionalBgcCompleted) {
+    else {
         stepConfig = {
             ...stepConfig,
-            completedSteps: [FCRA, NON_FCRA, ADDITIONAL_BGC],
-            [FCRA]: {
-                status: COMPLETED,
-                editMode: false
-            },
             [NON_FCRA]: {
-                status: COMPLETED,
+                status: ACTIVE,
                 editMode: false
-            },
+            }
+        }
+    }
+
+    if(isAdditionalBgcCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [...stepConfig.completedSteps, ADDITIONAL_BGC],
             [ADDITIONAL_BGC]: {
                 status: COMPLETED,
                 editMode: false
@@ -452,11 +445,11 @@ export const handleUpdateNonFCRABGCStep = (stepConfig: BgcStepConfig) => {
         ...stepConfig,
         completedSteps: [...completedSteps, BGC_STEPS.NON_FCRA],
         [BGC_STEPS.NON_FCRA]: {
-            status: BGC_STEP_STATUS.COMPLETED,
+            status: INFO_CARD_STEP_STATUS.COMPLETED,
             editMode: false
         },
         [BGC_STEPS.ADDITIONAL_BGC]: {
-            status: BGC_STEP_STATUS.ACTIVE,
+            status: INFO_CARD_STEP_STATUS.ACTIVE,
             editMode: false
         }
     }
@@ -512,7 +505,7 @@ export const validateNonFcraSignatures = ( applicationData: Application, nonFcra
 
 export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => {
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
-    const { COMPLETED } = BGC_STEP_STATUS;
+    const { COMPLETED } = INFO_CARD_STEP_STATUS;
     const fcraStatus = stepConfig[FCRA];
     const nonFcraStatus = stepConfig[NON_FCRA];
     const addBgcStatus = stepConfig[ADDITIONAL_BGC];
@@ -547,11 +540,11 @@ export const handleUpdateFcraBGCStep = (stepConfig: BgcStepConfig) => {
         ...stepConfig,
         completedSteps: [...completedSteps, BGC_STEPS.FCRA],
         [BGC_STEPS.FCRA]: {
-            status: BGC_STEP_STATUS.COMPLETED,
+            status: INFO_CARD_STEP_STATUS.COMPLETED,
             editMode: false
         },
         [BGC_STEPS.NON_FCRA]: {
-            status: BGC_STEP_STATUS.ACTIVE,
+            status: INFO_CARD_STEP_STATUS.ACTIVE,
             editMode: false
         }
     }
@@ -585,7 +578,7 @@ export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
         ...stepConfig,
         completedSteps: [...completedSteps, BGC_STEPS.FCRA, BGC_STEPS.ADDITIONAL_BGC],
         [BGC_STEPS.NON_FCRA]: {
-            status: BGC_STEP_STATUS.COMPLETED,
+            status: INFO_CARD_STEP_STATUS.COMPLETED,
             editMode: false
         }
     }
@@ -603,4 +596,37 @@ export const loadingStatusHelper = () =>{
         }
     })
     return loadingCount > 1? true : false;
+}
+
+export const fetchNheTimeSlotDs = (schedule: Schedule) => {
+    let siteId = schedule.siteId;
+    if(siteId.startsWith("SITE-")){
+        siteId = siteId.replace("SITE-", "");
+    }
+    const request: GetNheTimeSlotRequestDs = {
+        requisitionServiceScheduleDetails: {
+            scheduleId: schedule.scheduleId,
+            locationCode: siteId,
+            hireStartDate: schedule.hireStartDate,
+            contingencyTurnAroundDays: schedule.contingencyTat
+        }
+    }
+
+    boundGetNheTimeSlotsDs(request);
+}
+
+export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string => {
+    const state = nheTimeSlot.location.state || '';
+    const city = nheTimeSlot.location.city || '';
+    const address = nheTimeSlot.location.streetAddress || '';
+    const postalCode = nheTimeSlot.location.postalCode || '';
+
+    const stateAndPostal = `${state ? `${state}${postalCode ? ` ${postalCode}` : ''}` : `${postalCode}`}`;
+
+    return `${address}${city && address && `, `}${city}${stateAndPostal && (city || address) && `, `}${stateAndPostal}`;
+}
+
+export const getPageName = () => {
+    const hash = window.location.hash || '';
+    return hash.split('?')[0]?.split('/')[1] || '';
 }

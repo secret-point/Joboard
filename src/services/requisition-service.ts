@@ -1,6 +1,7 @@
 import { AxiosInstance } from "axios";
 import { axiosHelper } from "../helpers/axios-helper";
 import { AvailableFilter } from "../@types/IPayload";
+import { GetNheTimeSlotRequestDs } from "../utils/types/common";
 
 export default class RequisitionService {
   private readonly axiosInstance: AxiosInstance;
@@ -41,8 +42,8 @@ export default class RequisitionService {
     return response.data;
   }
 
-  async availableTimeSlots( payload: any ) {
-    const response = await this.axiosInstance.post(`/available-time-slots`, { ...payload });
+  async availableTimeSlots( payload: GetNheTimeSlotRequestDs ) {
+    const response = await this.axiosInstance.post(`/available-time-slots`, payload);
 
     return response.data;
   }

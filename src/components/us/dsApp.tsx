@@ -14,7 +14,7 @@ import {
   JOB_DESCRIPTION,
   JOB_OPPORTUNITIES, NHE,
   PRE_CONSENT,
-  RESUME_APPLICATION
+  RESUME_APPLICATION, SELF_IDENTIFICATION
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -27,6 +27,7 @@ import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "./resumeApplication/ResumeApplication";
 import Nhe from "./nhe/Nhe";
 import AlreadyApplied from "./alreadyApplied/AlreadyApplied"
+import SelfIdentification from "./selfIdentification/SelfIdentification";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -82,6 +83,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${NHE}`} exact>
               <Nhe/>
+            </Route>
+            <Route path={`/${SELF_IDENTIFICATION}`} exact>
+              <SelfIdentification/>
             </Route>
             <Route path={`/${ALREADY_APPLIED}`} exact>
               <AlreadyApplied/>
