@@ -10,3 +10,5 @@ export const RESUME_APPLICATION: string = 'resume-application';
 export const NHE = 'nhe';
 export const ALREADY_APPLIED = 'already-applied';
 export const SELF_IDENTIFICATION = 'self-identification';
+export const REVIEW_SUBMIT = 'review-submit';
+export const THANK_YOU = 'thank-you';

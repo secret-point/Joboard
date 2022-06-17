@@ -32,7 +32,7 @@ const StepHeader = (props: StepHeaderProps) => {
     )
 
     return (
-        <Col id="stepHeaderContainer" gridGap={5} padding='S300' style={{background: '#edf5f6'}}>
+        <Col id="stepHeaderContainer" gridGap={5} padding='S300' style={{background: `${CommonColors.Blue05}`}}>
             <Text>{jobTitle}</Text>
             <WithFlyout renderFlyout={renderFlyout}>
                 {( { open } ) => (

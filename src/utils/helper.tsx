@@ -792,3 +792,14 @@ export const SelfShouldDisplayContinue = (stepConfig: SelfIdentificationConfig):
       veteran.status === COMPLETED && !veteran.editMode &&
       disability.status == COMPLETED && !disability.editMode
 }
+
+export interface DateFormatOption {
+    displayFormat?: string;
+    defaultDateFormat?: string;
+};
+
+export const formatDate = (dateStr?: string, option: DateFormatOption = {}) => {
+    return moment(dateStr, option.defaultDateFormat).format(
+        option.displayFormat || "Do MMM YYYY"
+    );
+};

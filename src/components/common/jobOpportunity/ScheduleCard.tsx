@@ -1,23 +1,18 @@
-import React from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Image } from "@amzn/hvh-candidate-application-ui-components";
-import { Text } from "@amzn/stencil-react-components/text";
-import ScheduleCardBanner from "./ScheduleCardBanner";
-import { CommonColors } from "../../../utils/colors";
 import {
-    IconCalendarFill,
-    IconChevronRight,
-    IconClockFill,
-    IconDocument,
-    IconGlobe,
-    IconPaymentFill,
-    IconSize
+    IconChevronRight
 } from '@amzn/stencil-react-components/icons';
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Link } from "@amzn/stencil-react-components/link";
+import { Text } from "@amzn/stencil-react-components/text";
+import React from "react";
+import { CommonColors } from "../../../utils/colors";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
+import { routeToAppPageWithPath } from "../../../utils/helper";
 import { QueryParamItem, Schedule } from "../../../utils/types/common";
-import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
 import { JOB_CONFIRMATION } from "../../pageRoutes";
+import ScheduleCardBanner from "./ScheduleCardBanner";
+import ScheduleDetails from "./ScheduleDetails";
 
 interface ScheduleCardProps {
     scheduleDetail: Schedule,
@@ -31,12 +26,8 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
     const {
         image,
         bonusSchedule,
-        hoursPerWeek,
         signOnBonus,
-        firstDayOnSite,
         currencyCode,
-        scheduleText,
-        totalPayRate,
         tagLine,
         externalJobTitle,
         scheduleBannerText
@@ -73,28 +64,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                 </Col>
             </Row>
             <Row padding="S300" alignItems="center">
-                <Col gridGap={8} width="95%">
-                    <Row gridGap={5} alignItems="center">
-                        <IconClockFill size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{scheduleText}</Text>
-                    </Row>
-                    <Row gridGap={5} alignItems="center">
-                        <IconCalendarFill size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{`Possible Start Date: ${firstDayOnSite}`} <b>(or earlier!)</b></Text>
-                    </Row>
-                    <Row gridGap={5} alignItems="center">
-                        <IconPaymentFill size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{`${currencyCode}${totalPayRate} /hr`}</Text>
-                    </Row>
-                    <Row gridGap={5} alignItems="center">
-                        <IconDocument size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{`${hoursPerWeek}hrs/wk`}</Text>
-                    </Row>
-                    <Row gridGap={5} alignItems="center">
-                        <IconGlobe size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
-                    </Row>
-                </Col>
+                <ScheduleDetails scheduleDetail={scheduleDetail} />
                 {!displayOnly &&
                 <Col>
                     <IconChevronRight/>

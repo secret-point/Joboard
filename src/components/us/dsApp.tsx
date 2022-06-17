@@ -14,7 +14,10 @@ import {
   JOB_DESCRIPTION,
   JOB_OPPORTUNITIES, NHE,
   PRE_CONSENT,
-  RESUME_APPLICATION, SELF_IDENTIFICATION
+  RESUME_APPLICATION,
+  SELF_IDENTIFICATION,
+  REVIEW_SUBMIT,
+  THANK_YOU
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -26,8 +29,10 @@ import BackgroundCheck from "./bgc/BackgroundCheck";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "./resumeApplication/ResumeApplication";
 import Nhe from "./nhe/Nhe";
-import AlreadyApplied from "./alreadyApplied/AlreadyApplied"
 import SelfIdentification from "./selfIdentification/SelfIdentification";
+import AlreadyApplied from "./alreadyApplied/AlreadyApplied";
+import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
+import ThankYou from "./thankYou/ThankYou";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -89,6 +94,12 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${ALREADY_APPLIED}`} exact>
               <AlreadyApplied/>
+            </Route>
+            <Route path={`/${REVIEW_SUBMIT}`} exact>
+              <ReviewSubmit/>
+            </Route>
+            <Route path={`/${THANK_YOU}`} exact>
+              <ThankYou/>
             </Route>
           </Switch>
         </Router>
