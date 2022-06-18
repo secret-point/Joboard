@@ -12,6 +12,7 @@ import {
     SELF_IDENTIFICATION_STEPS,
     WORKFLOW_STEP_NAME
 } from "../enums/common";
+import { keys } from "ramda";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -725,6 +726,7 @@ export interface AdditionalBackgroundInfoRequest {
 }
 
 export interface SelfIdentificationInfo {
+    [key: string]: string;
     highestDegree: string;
     nationalId: string;
     nationalIdType: string;
@@ -777,6 +779,21 @@ export interface DetailedRadioButtonItem {
     value: string;
     details?: string;
     detailsTranslationKey?: string
+}
+
+export interface SelfIdentificationVeteranStatus {
+    veteran: string;
+    protectedVeteran: string;
+    militarySpouse: string;
+}
+
+export interface SelfIdEqualOpportunityStatus {
+    gender: string;
+    ethnicity: string;
+}
+
+export interface SelfIdentificationDisabilityStatus {
+    disability: string;
 }
 
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

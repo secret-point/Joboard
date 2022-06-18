@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { FormWrapper } from "@amzn/stencil-react-components/form";
@@ -11,8 +11,49 @@ import {
 import { translate as t } from "../../../utils/translator";
 import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
+import { connect } from "react-redux";
+import { SelfIdentificationVeteranStatus } from "../../../utils/types/common";
+import { handleSubmitSelfIdVeteranStatus } from "../../../utils/helper";
 
-const VeteranStatusForm = () => {
+interface MapStateToProps {
+  application: ApplicationState,
+  candidate: CandidateState,
+  selfIdentification: SelfIdentificationState
+}
+
+interface VeteranStatusFormProps {
+
+}
+
+type VeteranStatusFormMergedProps = MapStateToProps & VeteranStatusFormProps;
+
+const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
+
+  const { candidate, application, selfIdentification } = props;
+  const { stepConfig } = selfIdentification;
+  const candidateData = candidate.results.candidateData;
+  const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
+  const applicationData = application.results;
+  const [militarySpouse, setMilitarySpouse] = useState();
+  const [protectedVeteran, setProtectedVeteran] = useState();
+  const [veteran, setVeteran] = useState();
+
+  const handleCLickNext = () => {
+    if (militarySpouse && protectedVeteran && veteran) {
+      const payload: SelfIdentificationVeteranStatus = {militarySpouse, protectedVeteran, veteran};
+      applicationData && handleSubmitSelfIdVeteranStatus(applicationData, payload, stepConfig);
+    }
+  }
+
+  useEffect(() => {
+    setProtectedVeteran(selfIdentificationInfoData?.protectedVeteran);
+    setVeteran(selfIdentificationInfoData?.veteran);
+    setMilitarySpouse(selfIdentificationInfoData?.militarySpouse);
+  }, [selfIdentificationInfoData])
+
   return (
     <Col gridGap={15}>
       <Col gridGap={15}>
@@ -32,7 +73,7 @@ const VeteranStatusForm = () => {
 
       <Col gridGap={15}>
         <FormWrapper columnGap={10}>
-          <LabelText>What is your gender? * </LabelText>
+          <LabelText>Are you a veteran? * </LabelText>
           {
             SelfIdVeteranStatusRadioItem.map(radioItem => {
               const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
@@ -42,6 +83,8 @@ const VeteranStatusForm = () => {
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}
+                  defaultChecked={selfIdentificationInfoData?.veteran === value}
+                  onChange={() => setVeteran(value)}
                 />
               );
             })
@@ -49,7 +92,7 @@ const VeteranStatusForm = () => {
         </FormWrapper>
 
         <FormWrapper columnGap={10}>
-          <LabelText>What is your gender? * </LabelText>
+          <LabelText>Are you a military spouse? * </LabelText>
           {
             SelfIdMilitarySpouseRadioItem.map(radioItem => {
               const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
@@ -59,6 +102,8 @@ const VeteranStatusForm = () => {
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}
+                  defaultChecked={selfIdentificationInfoData?.militarySpouse === value}
+                  onChange={() => setMilitarySpouse(value)}
                 />
               );
             })
@@ -105,7 +150,7 @@ const VeteranStatusForm = () => {
         </Col>
 
         <FormWrapper columnGap={10}>
-          <LabelText>What is your gender? * </LabelText>
+          <LabelText>If you believe you belong to any of the categories of protected veterans please indicate by checking the appropriate box below. *</LabelText>
           {
             SelfIdProtectedVeteranRadioItem.map(radioItem => {
               const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
@@ -115,6 +160,8 @@ const VeteranStatusForm = () => {
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}
+                  defaultChecked={selfIdentificationInfoData?.protectedVeteran === value}
+                  onChange={() => setProtectedVeteran(value)}
                 />
               );
             })
@@ -122,7 +169,10 @@ const VeteranStatusForm = () => {
         </FormWrapper>
       </Col>
       <Col padding={{ top: "S300" }}>
-        <Button variant={ButtonVariant.Primary}>
+        <Button
+          variant={ButtonVariant.Primary}
+          onClick={handleCLickNext}
+        >
           Next
         </Button>
       </Col>
@@ -130,4 +180,8 @@ const VeteranStatusForm = () => {
   );
 };
 
-export default VeteranStatusForm;
+const mapStateToProps = (state: MapStateToProps) => {
+  return state;
+};
+
+export default connect(mapStateToProps)(VeteranStatusForm);

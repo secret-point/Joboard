@@ -35,7 +35,7 @@ import { CommonColors } from "../../../utils/colors";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import NonFcraDisclosure from "../../common/bgc/NonFcraDisclosure";
 import AdditionalBGCInfo from "../../common/bgc/AdditionalBGCInfo";
-import { BACKGROUND_CHECK_FCRA, NHE } from "../../pageRoutes";
+import { BACKGROUND_CHECK_FCRA } from "../../pageRoutes";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
@@ -105,12 +105,11 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         if(applicationData) {
             const { BGC } = UPDATE_APPLICATION_API_TYPE;
             const payload = {
-                state: PROXY_APPLICATION_STATE.ADDITIONAL_BACKGROUND_INFO_SAVED //TODO copied from proxy. need to align the meaning
+                state: PROXY_APPLICATION_STATE.ADDITIONAL_BACKGROUND_INFO_SAVED
             }
             const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, BGC, payload);
             boundUpdateApplicationDS(request, (applicationData: Application)=>{
                 onCompleteTaskHelper(applicationData);
-                routeToAppPageWithPath(NHE);
             });
         }
     }

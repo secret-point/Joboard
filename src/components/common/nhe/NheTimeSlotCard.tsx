@@ -5,18 +5,21 @@ import { NHETimeSlot } from "../../../utils/types/common";
 import { renderNheTimeSlotFullAddress } from "../../../utils/helper";
 
 interface NheCardProps {
-  nheTimeSlot: NHETimeSlot
+  nheTimeSlot: NHETimeSlot,
+  handleChange: Function
 }
 
 const NheTimeSlotCard = (props: NheCardProps) => {
 
-  const { nheTimeSlot } = props;
+  const { nheTimeSlot, handleChange } = props;
 
     return (
         <Col>
             <DetailedRadio
-                titleText={nheTimeSlot.timeRange}
-                details={renderNheTimeSlotFullAddress(nheTimeSlot)}
+              name="nheTimeSlotCard"
+              titleText={nheTimeSlot.timeRange}
+              details={renderNheTimeSlotFullAddress(nheTimeSlot)}
+              onChange={() => handleChange(nheTimeSlot)}
             />
         </Col>
     )

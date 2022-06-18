@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
 import { CommonColors } from "../../../utils/colors";
@@ -7,8 +7,45 @@ import { translate as t } from "../../../utils/translator";
 import { DetailedRadio, FormWrapper } from "@amzn/stencil-react-components/form";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
+import { SelfIdentificationDisabilityStatus } from "../../../utils/types/common";
+import { handleSubmitSelfIdDisabilityStatus } from "../../../utils/helper";
+import { connect } from "react-redux";
 
-const DisabilityForm = () => {
+interface MapStateToProps {
+  application: ApplicationState,
+  candidate: CandidateState,
+  selfIdentification: SelfIdentificationState
+}
+
+interface DisabilityFormProps {
+
+}
+
+type DisabilityFormMergedProps = MapStateToProps & DisabilityFormProps;
+
+const DisabilityForm = (props: DisabilityFormMergedProps) => {
+
+  const { candidate, application, selfIdentification } = props;
+  const { stepConfig } = selfIdentification;
+  const candidateData = candidate.results.candidateData;
+  const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
+  const applicationData = application.results;
+  const [disability, setDisability] = useState();
+
+  const handleClickNext = () => {
+    if (disability) {
+      const payload: SelfIdentificationDisabilityStatus = {disability};
+      applicationData && handleSubmitSelfIdDisabilityStatus(applicationData, payload, stepConfig);
+    }
+  }
+
+  useEffect(() => {
+    setDisability(selfIdentificationInfoData?.disability);
+  }, [selfIdentificationInfoData])
+
   return (
     <Col gridGap={15}>
       <Col gridGap={3} color={CommonColors.Neutral50}>
@@ -63,6 +100,8 @@ const DisabilityForm = () => {
                 titleText={t(titleTranslationKey, title)}
                 details={details ? t(detailsTranslationKey || "", details) : undefined}
                 key={title}
+                defaultChecked={selfIdentificationInfoData?.disability === value}
+                onChange={() => setDisability(value)}
               />
             );
           })
@@ -77,7 +116,10 @@ const DisabilityForm = () => {
         </Text>
       </Col>
       <Col padding={{ top: "S300" }}>
-        <Button variant={ButtonVariant.Primary}>
+        <Button
+          variant={ButtonVariant.Primary}
+          onClick={handleClickNext}
+        >
           Submit
         </Button>
       </Col>
@@ -85,4 +127,8 @@ const DisabilityForm = () => {
   );
 };
 
-export default DisabilityForm;
+const mapStateToProps = (state: MapStateToProps) => {
+  return state;
+};
+
+export default connect(mapStateToProps)(DisabilityForm);

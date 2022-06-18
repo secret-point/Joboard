@@ -3,12 +3,11 @@ import { connect } from "react-redux";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
 import { Image } from "@amzn/hvh-candidate-application-ui-components";
-import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from '@amzn/stencil-react-components/icons';
+import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { useLocation } from "react-router";
 import queryString from "query-string";
-import { Locale } from "../../../utils/types/common";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
@@ -22,10 +21,10 @@ import { getLocale, handleApplyScheduleFilters, handleResetScheduleFilters } fro
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import {
-    FlyoutContent,
-    FlyoutPosition,
-    RenderFlyoutFunctionParams,
-    WithFlyout
+  FlyoutContent,
+  FlyoutPosition,
+  RenderFlyoutFunctionParams,
+  WithFlyout
 } from "@amzn/stencil-react-components/flyout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import SortSchedule from "../../common/jobOpportunity/SortSchedule";

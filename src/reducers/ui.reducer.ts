@@ -9,6 +9,7 @@ import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionT
 import { APPLICATION_ACTION_TYPES } from "../actions/ApplicationActions/applicationActionTypes";
 import { CANDIDATE_ACTION_TYPES } from "../actions/CandidateActions/candidateActionTypes";
 import { WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
+import { NHE_ACTION_TYPES } from "../actions/NheActions/nheActionTypes";
 
 export interface uiState {
     isLoading: boolean;
@@ -33,7 +34,8 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME:
         case WORKFLOW_REQUEST.START:
         case WORKFLOW_REQUEST.INIT:
-        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:  
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:
+        case NHE_ACTION_TYPES.GET_SLOTS_DS:
             return {
                 ...state,
                 isLoading: true
@@ -62,7 +64,9 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_SUCCESS:
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_FAILED:
         case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_SUCCESS:
-        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_FAILED:    
+        case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_FAILED:
+        case NHE_ACTION_TYPES.GET_SLOTS_DS_FAILED:
+        case NHE_ACTION_TYPES.GET_SLOTS_DS_SUCCESS:
             return {
                 ...state,
                 isLoading: action.loadingStatus? action.loadingStatus : false

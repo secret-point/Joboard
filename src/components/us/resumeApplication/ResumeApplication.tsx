@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { JobState } from "../../../reducers/job.reducer";
@@ -31,7 +30,7 @@ const ResumeApplication = ( props: MapStateToProps ) => {
     useEffect(()=>{
         applicationId && boundGetApplication({applicationId:applicationId, locale: getLocale()});
     },[applicationId]);
-    
+
     useEffect(()=>{
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({jobId:jobId, locale: getLocale()});
     },[jobId]);

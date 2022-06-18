@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Col } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
@@ -12,7 +12,7 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { fetchNheTimeSlotDs, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
@@ -20,7 +20,7 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { NheState } from "../../../reducers/nhe.reducer";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
-import { SELF_IDENTIFICATION } from "../../pageRoutes";
+import { NHETimeSlot } from "../../../utils/types/common";
 
 interface MapStateToProps {
     job: JobState,
@@ -47,6 +47,7 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     const scheduleDetail = schedule.results.scheduleDetail;
     const candidateData = candidate.results?.candidateData;
     const nheData = nhe.results.nheData;
+    const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
 
     useEffect(() => {
         applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
@@ -76,6 +77,12 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
         scheduleDetail && fetchNheTimeSlotDs(scheduleDetail);
     }, [scheduleDetail]);
 
+    const handleConfirmSelection = () => {
+        if (applicationData && selectedNhe) {
+            handleConfirmNHESelection(applicationData, selectedNhe);
+        }
+    }
+
     return (
         <Col id='jobOpportunityContainer'>
             {
@@ -89,15 +96,21 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
                         {`You are almost there, ${candidateData?.firstName || ''} ${candidateData?.lastName || ''}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.`}
                     </Text>
                 </Col>
-                <Col padding={{top: 'S400'}}>
+                <Col padding={{top: 'S400'}} gridGap={15}>
                     {
                         nheData.map(nheItem => (
-                          <NheTimeSlotCard nheTimeSlot={nheItem} key={nheItem.timeSlotId}/>
+                          <NheTimeSlotCard
+                            nheTimeSlot={nheItem} key={nheItem.timeSlotId}
+                            handleChange={(nheSlotTIme: NHETimeSlot) => setSelectedNhe(nheSlotTIme)}
+                          />
                         ))
                     }
                 </Col>
                 <Col>
-                    <Button variant={ButtonVariant.Primary} onClick={() => routeToAppPageWithPath(SELF_IDENTIFICATION)}>
+                    <Button
+                      variant={ButtonVariant.Primary}
+                      onClick={handleConfirmSelection}
+                    >
                         Confirm Selection
                     </Button>
                 </Col>

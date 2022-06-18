@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
@@ -7,8 +7,46 @@ import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/fo
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { SelfIdEthnicBackgroundItems, SelfIdGenderRadioItems } from "../../../utils/constants/common";
 import { translate as t } from "../../../utils/translator";
+import { connect } from "react-redux";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
+import { handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
+import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
 
-const EqualOpportunityForm = () => {
+interface MapStateToProps {
+  application: ApplicationState,
+  candidate: CandidateState,
+  selfIdentification: SelfIdentificationState
+}
+
+interface EqualOpportunityFormProps {
+
+}
+
+type EqualOpportunityFormMergedProps = MapStateToProps & EqualOpportunityFormProps;
+
+const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
+
+  const { candidate, application, selfIdentification } = props;
+  const { stepConfig } = selfIdentification;
+  const candidateData = candidate.results.candidateData;
+  const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
+  const applicationData = application.results;
+  const [gender, setGender] = useState();
+  const [ethnicity, setEthnicity] = useState();
+
+  const handleClickNext = () => {
+    if (gender && ethnicity) {
+      const payload: SelfIdEqualOpportunityStatus = {gender, ethnicity};
+      applicationData && handleSubmitSelfIdEqualOpportunity(applicationData, payload, stepConfig);
+    }
+  }
+
+  useEffect(() => {
+    setEthnicity(selfIdentificationInfoData?.ethnicity);
+    setGender(selfIdentificationInfoData?.gender);
+  }, [selfIdentificationInfoData])
 
   return (
     <Col gridGap={15}>
@@ -34,6 +72,8 @@ const EqualOpportunityForm = () => {
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || '', details) : undefined}
                   key={title}
+                  defaultChecked={selfIdentificationInfoData?.gender === value}
+                  onChange={() => setGender(value)}
                 />
               );
             })
@@ -47,11 +87,13 @@ const EqualOpportunityForm = () => {
               const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
               return (
                 <DetailedRadio
-                  name="race/ethnic"
+                  name="ethnicity"
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || '', details) : undefined}
                   key={title}
+                  defaultChecked={selfIdentificationInfoData?.ethnicity === value}
+                  onChange={() => setEthnicity(value)}
                 />
               );
             })
@@ -59,7 +101,10 @@ const EqualOpportunityForm = () => {
         </FormWrapper>
       </Col>
       <Col padding={{ top: "S300" }}>
-        <Button variant={ButtonVariant.Primary}>
+        <Button
+          variant={ButtonVariant.Primary}
+          onClick={handleClickNext}
+        >
           Next
         </Button>
       </Col>
@@ -67,4 +112,8 @@ const EqualOpportunityForm = () => {
   )
 }
 
-export default EqualOpportunityForm;
+const mapStateToProps = (state: MapStateToProps) => {
+  return state;
+};
+
+export default connect(mapStateToProps)(EqualOpportunityForm);

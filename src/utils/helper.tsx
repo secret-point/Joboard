@@ -17,6 +17,10 @@ import {
     Schedule,
     SchedulePreference,
     ScheduleStateFilters,
+    SelfIdentificationConfig,
+    SelfIdentificationDisabilityStatus, SelfIdentificationInfo,
+    SelfIdentificationVeteranStatus,
+    SelfIdEqualOpportunityStatus,
     TimeRangeHoursData
 } from "./types/common";
 import store, { history } from "../store/store";
@@ -34,18 +38,19 @@ import {
     boundUpdateScheduleFilters
 } from "../actions/ScheduleActions/boundScheduleActions";
 import {
-    INFO_CARD_STEP_STATUS,
     BGC_STEPS,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
+    INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
+    SELF_IDENTIFICATION_STEPS,
     UPDATE_APPLICATION_API_TYPE
 } from "./enums/common";
 import capitalize from "lodash/capitalize";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
-import { BACKGROUND_CHECK, JOB_CONFIRMATION, NHE } from "../components/pageRoutes";
+import { BACKGROUND_CHECK, JOB_CONFIRMATION } from "../components/pageRoutes";
 import queryString from "query-string";
-import { find, isBoolean } from "lodash";
+import { isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
 import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
@@ -57,6 +62,9 @@ import pick from "lodash/pick";
 import { initScheduleState } from "../reducers/bgc.reducer";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
+import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
+import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
@@ -590,6 +598,7 @@ export const loadingStatusHelper = () =>{
     const states = store.getState();
     const loadingStates = [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow];
     let loadingCount = 0;
+
     loadingStates.forEach(loading=>{
         if(loading.loading === true){
             loadingCount++
@@ -629,4 +638,157 @@ export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string
 export const getPageName = () => {
     const hash = window.location.hash || '';
     return hash.split('?')[0]?.split('/')[1] || '';
+}
+
+export const  handleConfirmNHESelection = (applicationData: Application, nheTimeSlot: NHETimeSlot) => {
+    const payload = {
+        nheAppointment: nheTimeSlot
+    }
+    const { NHE } = UPDATE_APPLICATION_API_TYPE;
+
+    if (applicationData) {
+        const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, NHE, payload);
+        boundUpdateApplicationDS(request, (applicationData: Application)=>{
+            onCompleteTaskHelper(applicationData);
+        });
+    }
+}
+
+export const handleSubmitSelfIdEqualOpportunity =
+  (applicationData: Application, equalOpportunityStatus: SelfIdEqualOpportunityStatus, stepConfig: SelfIdentificationConfig) => {
+      const payload = {
+          selfIdentificationInfo: equalOpportunityStatus
+      };
+
+      const { EQUAL_OPPORTUNITY_FORM } = UPDATE_APPLICATION_API_TYPE;
+      const { EQUAL_OPPORTUNITY, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS;
+
+      const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, EQUAL_OPPORTUNITY_FORM, payload);
+      boundUpdateApplicationDS(request, () => {
+          handleUpdateSelfIdStep(stepConfig, EQUAL_OPPORTUNITY, VETERAN_FORM);
+      });
+  };
+
+
+export const handleSubmitSelfIdDisabilityStatus =
+  (applicationData: Application, disabilityStatus: SelfIdentificationDisabilityStatus, stepConfig: SelfIdentificationConfig) => {
+      const payload = {
+          selfIdentificationInfo: disabilityStatus
+      };
+
+      const { DISABILITY_FORM } = UPDATE_APPLICATION_API_TYPE;
+
+      const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, DISABILITY_FORM, payload);
+      boundUpdateApplicationDS(request, () => {
+          handleUpdateSelfIdStep(stepConfig, SELF_IDENTIFICATION_STEPS.DISABILITY_FORM);
+      });
+  };
+
+export const handleSubmitSelfIdVeteranStatus =
+  (applicationData: Application, veteranStatus: SelfIdentificationVeteranStatus, stepConfig: SelfIdentificationConfig) => {
+      const payload = { selfIdentificationInfo: veteranStatus };
+
+      const { VETERAN_STATUS_FORM } = UPDATE_APPLICATION_API_TYPE;
+      const { DISABILITY_FORM, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS;
+
+      const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, VETERAN_STATUS_FORM, payload);
+      boundUpdateApplicationDS(request, () => {
+          handleUpdateSelfIdStep(stepConfig, VETERAN_FORM, DISABILITY_FORM);
+      });
+  };
+
+export const handleUpdateSelfIdStep =
+  (stepConfig: SelfIdentificationConfig, currentStep: SELF_IDENTIFICATION_STEPS, nextStep?: SELF_IDENTIFICATION_STEPS) => {
+      const { completedSteps } = stepConfig;
+      const request: SelfIdentificationConfig = {
+          ...stepConfig,
+          completedSteps: [...completedSteps, currentStep],
+          [currentStep]: {
+              status: INFO_CARD_STEP_STATUS.COMPLETED,
+              editMode: false
+          }
+      };
+
+      if (nextStep) {
+          request[nextStep] = {
+              status: INFO_CARD_STEP_STATUS.ACTIVE,
+              editMode: false
+          };
+      }
+
+      boundUpdateSelfIdStepConfig(request);
+  };
+
+export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo ) => {
+    const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse} = selfIdentificationInfo;
+
+    const isEqualOpportunityCompleted = gender && ethnicity;
+    const isDisabilityCompleted = !!disability;
+    const isVeteranCompleted = protectedVeteran && veteran && militarySpouse;
+
+    const { EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM } = SELF_IDENTIFICATION_STEPS;
+    const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
+
+    let stepConfig: SelfIdentificationConfig = { ...initSelfIdentificationState.stepConfig}
+
+    if(isEqualOpportunityCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [EQUAL_OPPORTUNITY],
+            [EQUAL_OPPORTUNITY]: {
+                status: COMPLETED,
+                editMode: false
+            }
+        }
+    }
+    if(isVeteranCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [...stepConfig.completedSteps, VETERAN_FORM],
+            [VETERAN_FORM]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [DISABILITY_FORM]: {
+                status: ACTIVE,
+                editMode: false
+            }
+        }
+    }
+    else {
+        stepConfig = {
+            ...stepConfig,
+            [VETERAN_FORM]: {
+                status: ACTIVE,
+                editMode: false
+            }
+        }
+    }
+
+    if(isDisabilityCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [...stepConfig.completedSteps, DISABILITY_FORM],
+            [DISABILITY_FORM]: {
+                status: COMPLETED,
+                editMode: false
+            }
+        }
+    }
+
+    const request: SelfIdentificationConfig = stepConfig;
+
+    boundUpdateSelfIdStepConfig(request);
+}
+
+export const SelfShouldDisplayContinue = (stepConfig: SelfIdentificationConfig): boolean => {
+    const { DISABILITY_FORM, VETERAN_FORM, EQUAL_OPPORTUNITY } = SELF_IDENTIFICATION_STEPS;
+    const { COMPLETED } = INFO_CARD_STEP_STATUS;
+    const equalOpportunity = stepConfig[EQUAL_OPPORTUNITY];
+    const veteran = stepConfig[VETERAN_FORM];
+    const disability = stepConfig[DISABILITY_FORM];
+
+    return equalOpportunity.status === COMPLETED && !equalOpportunity.editMode &&
+      veteran.status === COMPLETED && !veteran.editMode &&
+      disability.status == COMPLETED && !disability.editMode
 }
