@@ -796,4 +796,8 @@ export interface SelfIdentificationDisabilityStatus {
     disability: string;
 }
 
+export interface DisabilityItem {
+    title: string;
+    translationKeyTitle: string;
+}
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

@@ -21,6 +21,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { NheState } from "../../../reducers/nhe.reducer";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import { NHETimeSlot } from "../../../utils/types/common";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
     job: JobState,
@@ -91,9 +92,11 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
             <StepHeader jobTitle={jobDetail?.jobTitle || ''} step={ApplicationStepList[2]}/>
             <Col padding={{top: 'S400'}} gridGap={20}>
                 <Col gridGap={10}>
-                    <H4>Schedule pre-hire appointment</H4>
+                    <H4>
+                        {t("BB-nhe-page-header-text","Schedule pre-hire appointment")}
+                    </H4>
                     <Text fontSize='T200'>
-                        {`You are almost there, ${candidateData?.firstName || ''} ${candidateData?.lastName || ''}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.`}
+                        {t("BB-nhe-page-title-text", "You are almost there, {firstname} {lastname}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.", {firstname: candidateData?.firstName || '', lastname: candidateData?.lastName || ''})}
                     </Text>
                 </Col>
                 <Col padding={{top: 'S400'}} gridGap={15}>
@@ -111,7 +114,7 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
                       variant={ButtonVariant.Primary}
                       onClick={handleConfirmSelection}
                     >
-                        Confirm Selection
+                        {t("BB-nhe-page-confirm-selection-button-text", "Confirm Selection")}
                     </Button>
                 </Col>
             </Col>

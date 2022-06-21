@@ -57,7 +57,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
-  }, [])
+  }, [candidateData, applicationData])
 
 
   const handleContinue = () => {
@@ -69,7 +69,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
   return (
     <Col gridGap={15}>
       <InfoStepCard
-        title="Voluntary Equal Opportunity Self-Identification Form"
+        title={t("BB-SelfId-equal-opportunity-form-title-text", "Voluntary Equal Opportunity Self-Identification Form")}
         expandedContent={<EqualOpportunityForm />}
         stepName={SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY}
         infoCardStepStatus={stepConfig[SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]}
@@ -77,7 +77,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
       />
 
       <InfoStepCard
-        title="Voluntary Self-Identification of Veteran Status"
+        title={t("BB-SelfId-veteran-status-title-text", "Voluntary Self-Identification of Veteran Status")}
         expandedContent={<VeteranStatusForm />}
         stepName={SELF_IDENTIFICATION_STEPS.VETERAN_FORM}
         infoCardStepStatus={stepConfig[SELF_IDENTIFICATION_STEPS.VETERAN_FORM]}
@@ -85,7 +85,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
       />
 
       <InfoStepCard
-        title="Voluntary Self-Identification of Disability"
+        title={t("BB-SelfId-disability-form-card-title-text", "Voluntary Self-Identification of Disability")}
         expandedContent={<DisabilityForm />}
         stepName={SELF_IDENTIFICATION_STEPS.DISABILITY_FORM}
         infoCardStepStatus={stepConfig[SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]}
@@ -98,7 +98,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
             variant={ButtonVariant.Primary}
             onClick={handleContinue}
           >
-            {t('BB-BGC-page-continue-button', 'Continue')}
+            {t('BB-SelfId-form-continue-button-text', 'Continue')}
           </Button>
         }
       </Col>

@@ -49,47 +49,35 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   return (
     <Col gridGap={15}>
       <Col gridGap={3} color={CommonColors.Neutral50}>
-        <Text fontSize="T200">Form CC-305</Text>
-        <Text fontSize="T200">OMB Control Number 1250-0005</Text>
-        <Text fontSize="T200">Expires 05/31/2023</Text>
+        <Text fontSize="T200">{t('BB-SelfId-disability-form-name-text', 'Form CC-305')}</Text>
+        <Text fontSize="T200">{t('BB-SelfId-disability-form-control-number-text', 'OMB Control Number 1250-0005')}</Text>
+        <Text fontSize="T200">{t('BB-SelfId-disability-form-expiration-date-textbrazil-bui','Expires 05/31/2023')}</Text>
       </Col>
       <Col gridGap={10}>
-        <H5>Why are you asked to complete this form?</H5>
-        <Text>
-          We are a federal contractor or subcontractor required by law to provide equal employment opportunity to
-          qualified people with disabilities. We are also required to measure our progress toward having at least 7% of
-          our workforce be individuals with disabilities. To do this, we must ask applicants and employees if they have
-          a disability or have ever had a disability. Because a person may become disabled at any time, we ask all of
-          our employees to update their information at least every five years.
+        <H5>{t("BB-SelfId-disability-form-why-this-form-header-text", "Why are you asked to complete this form?")}</H5>
+        <Text fontSize="T200">
+          {t("BB-SelfId-disability-form-why-this-form-content-paragraph1-text", "We are a federal contractor or subcontractor required by law to provide equal employment opportunity to qualified people with disabilities. We are also required to measure our progress toward having at least 7% ofour workforce be individuals with disabilities. To do this, we must ask applicants and employees if they have a disability or have ever had a disability. Because a person may become disabled at any time, we ask all of our employees to update their information at least every five years.")}
         </Text>
-        <Text>
-          Identifying yourself as an individual with a disability is voluntary, and we hope that you will choose to do
-          so. Your answer will be maintained confidentially and not be seen by selecting officials or anyone else
-          involved in making personnel decisions. Completing the form will not negatively impact you in any way,
-          regardless of whether you have self-identified in the past. For more information about this form or the equal
-          employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S.
-          Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at
-          <a href="https://www.dol.gov/agencies/ofccp" target="_blank">www.dol.gov/ofccp</a>.
+        <Text fontSize="T200">
+          {t("BB-SelfId-disability-form-why-this-form-content-paragraph2-text", "Identifying yourself as an individual with a disability is voluntary, and we hope that you will choose to do so. Your answer will be maintained confidentially and not be seen by selecting officials or anyone else involved in making personnel decisions. Completing the form will not negatively impact you in any way, regardless of whether you have self-identified in the past. For more information about this form or the equal employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S. Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.")}
         </Text>
       </Col>
       <Col className="disabilityListContainer" gridGap={15}>
-        <H5>How do I know if I have a disability?</H5>
-        <Text>
-          You are considered to have a disability if you have a physical or mental impairment or medical condition that
-          substantially limits a major life activity, or if you have a history or record of such an impairment or
-          medical condition.
+        <H5>{t("BB-SelfId-disability-form-how-know-have-disability-header-text", "How do I know if I have a disability?")}</H5>
+        <Text fontSize="T200">
+          {t("BB-SelfId-disability-form-how-know-have-disability-content-text", "You are considered to have a disability if you have a physical or mental impairment or medical condition that substantially limits a major life activity, or if you have a history or record of such an impairment or medical condition.")}
         </Text>
-        <Text>Disabilities include, but are not limited to:</Text>
+        <Text>{t("BB-SelfId-disability-form-disability-scope-list-header-text", "Disabilities include, but are not limited to:")}</Text>
         <ul>
           {
             DisabilityList.map(item => (
-              <li key={item}>{item}</li>
+              <li key={item.title}>{t(item.translationKeyTitle, item.title)}</li>
             ))
           }
         </ul>
       </Col>
       <FormWrapper columnGap={10}>
-        <LabelText>Please check one of the boxes below * </LabelText>
+        <LabelText>{t("BB-SelfId-disability-form-disability-checkbox-label-text", "Please check one of the boxes below")} *</LabelText>
         {
           SelfIdDisabilityRadioItem.map(radioItem => {
             const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
@@ -108,11 +96,9 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
         }
       </FormWrapper>
       <Col gridGap={15}>
-        <H5>Public burden statement</H5>
-        <Text>
-          According to the Paperwork Reduction Act of 1995 no persons are required to respond to a collection of
-          information unless such collection displays a valid OMB control number. This survey should take about 5
-          minutes to complete.
+        <H5>{t("BB-SelfId-disability-form-disability-public-burden-header-text", "Public burden statement")}</H5>
+        <Text fontSize="T200">
+          {t("BB-SelfId-disability-form-disability-public-burden-content-text", "According to the Paperwork Reduction Act of 1995 no persons are required to respond to a collection of information unless such collection displays a valid OMB control number. This survey should take about 5 minutes to complete.")}
         </Text>
       </Col>
       <Col padding={{ top: "S300" }}>
@@ -120,7 +106,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
           variant={ButtonVariant.Primary}
           onClick={handleClickNext}
         >
-          Submit
+          {t("BB-SelfId-disability-form-submit-button-text", "Submit")}
         </Button>
       </Col>
     </Col>

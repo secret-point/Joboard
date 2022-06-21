@@ -7,7 +7,8 @@ import {
     NonFcraESignatureAcknowledgement,
     ScheduleSortBy,
     ScheduleStateFilters,
-    StateSpecificNotice
+    StateSpecificNotice,
+    DisabilityItem
 } from "../types/common";
 import {
     APPLICATION_STEPS,
@@ -375,17 +376,17 @@ export const SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
     {
         title: "Male",
         value: "Male",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-male-text"
     },
     {
         title: "Female",
         value: "Female",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-female-text"
     },
     {
         title: "I choose not to self-identify",
         value: "I choose not to self-identify",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text"
     }
 ]
 
@@ -394,55 +395,55 @@ export const SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
         title: "American Indian/Alaska Native (not Hispanic or Latino)",
         value: "American Indian/Alaska Native",
         details: "Persons having origins in any of the original peoples of North and South America, (including Central America), and who maintain tribal affiliation or community attachment",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-american-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-american-details-text'
     },
     {
         title: "Asian (not Hispanic or Latino)",
         value: "Asian (not Hispanic or Latino)",
         details: "Persons having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian Subcontinent; including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand and Vietnam",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text'
     },
     {
         title: "Black/African American (not Hispanic or Latino)",
         value: "Black/African American",
         details: "Persons having origins in any of the Black racial groups of Africa",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text'
     },
     {
         title: "Hispanic/Latino",
         value: "Hispanic/Latino",
         details: "Persons of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text'
     },
     {
         title: "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)",
         value: "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)",
         details: "Persons having origins in any of the peoples of Hawaii, Guam, Samoa, or other Pacific Islands",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text'
     },
     {
         title: "White (not Hispanic or Latino)",
         value: "White (not Hispanic or Latino)",
         details: "Persons having origins in any of the original peoples of Europe, the Middle East or North Africa",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-white-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-white-details-text'
     },
     {
         title: "Two or more Races (not Hispanic or Latino)",
         value: "Two or more Races (not Hispanic or Latino)",
         details: "Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander, (5) American Indian/Alaska Native",
-        titleTranslationKey: '',
-        detailsTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text',
+        detailsTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text'
     },
     {
         title: "I choose not to self-identify",
         value: "I choose not to Self-Identify",
-        titleTranslationKey: ''
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text'
     }
 ]
 
@@ -450,17 +451,17 @@ export const SelfIdVeteranStatusRadioItem: DetailedRadioButtonItem[] = [
     {
         title: "Yes",
         value: "Yes",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text"
     },
     {
         title: "No",
         value: "No",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text"
     },
     {
         title: "I choose not to self-identify",
         value: "I choose not to self-identify",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text"
     }
 ]
 
@@ -468,17 +469,17 @@ export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
     {
         title: "Yes",
         value: "Yes",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text"
     },
     {
         title: "No",
         value: "No",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text"
     },
     {
         title: "I choose not to self-identify",
         value: "I choose not to self-identify",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text"
     }
 ]
 
@@ -486,55 +487,123 @@ export const SelfIdProtectedVeteranRadioItem: DetailedRadioButtonItem[] = [
     {
         title: "Yes",
         value: "Yes",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text"
     },
     {
         title: "No",
         value: "No",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text"
     },
     {
         title: "I choose not to self-identify",
         value: "I choose not to self-identify",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text"
     }
 ]
 
 export const SelfIdDisabilityRadioItem: DetailedRadioButtonItem[] = [
     {
-        title: "Yes, I Have A Disability, Or Have A History/Record Of Having A Disability ",
+        title: "Yes, I Have A Disability, Or Have A History/Record Of Having A Disability",
         value: "YES, I HAVE A DISABILITY (or previously had a disability)",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-disability-form-disability-checkbox-item-yes-text"
     },
     {
         title: "No, I Don’t Have A Disability, Or A History/Record Of Having A Disability",
         value: "NO, I DON’T HAVE A DISABILITY",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-disability-form-disability-checkbox-item-no-text"
     },
     {
         title: "I Don’t Wish To Answer",
         value: "I Don’t Wish To Answer",
-        titleTranslationKey: ""
+        titleTranslationKey: "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text"
     }
 ]
 
-export const DisabilityList: string[] = [
-    "Autism",
-    "Autoimmune disorder, for example, lupus, fibromyalgia, rheumatoid arthritis, or HIV/AIDS",
-    "Blind or low vision",
-    "Cancer",
-    "Cardiovascular or heart disease",
-    "Celiac disease",
-    "Cerebral palsy",
-    "Deaf or hard of hearing",
-    "Depression or anxiety",
-    "Diabetes", " Epilepsy",
-    "Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome",
-    "Intellectual disability", "Missing limbs or partially missing limbs",
-    "Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)",
-    "Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+export const DisabilityList: DisabilityItem[] = [
+    {
+        title: "Autism",
+        translationKeyTitle: 'BB-SelfId-disability-form-disability-item-autism-text'
+    }
+    ,
+    {
+        title: "Autoimmune disorder, for example, lupus, fibromyalgia, rheumatoid arthritis, or HIV/AIDS",
+        translationKeyTitle: 'BB-SelfId-disability-form-disability-item-autoimmune-disorder-text'
+    },
+    {
+        title: "Blind or low vision",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text"
+    },
+    {
+        title: "Cancer",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-cancer-text"
+    },
+    {
+        title: "Cardiovascular or heart disease",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-heart-disease-text"
+    },
+    {
+        title: "Celiac disease",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-celiac-disease-text"
+    },
+    {
+        title: "Cerebral palsy",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-cerebral-palsy-text"
+    },
+    {
+        title: "Deaf or hard of hearing",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-hearing-capacity-text"
+    },
+    {
+        title: "Depression or anxiety",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text"
+    },
+    {
+        title: "Diabetes",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text"
+    },
+    {
+        title: "Epilepsy",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-epilepsy-text"
+    },
+    {
+        title: "Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text"
+    },
+    {
+        title: "Intellectual disability",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-intellectual-disability-text"
+    },
+    {
+        title: "Missing limbs or partially missing limbs",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-missing-limb-text"
+    },
+    {
+        title: "Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-nervous-system-condition-text"
+    },
+    {
+        title: "Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression",
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-psychiatric-condition-text"
+    }
 ];
 
-
+export const ProtectedVeteranDefinitionList: {title: string, titleTranslationKey: string}[] = [
+    {
+        title: "<b>Disabled Veteran</b>: a veteran of the U.S. military, ground, naval or air service who is entitled to compensation (or who but for the receipt of military retired pay would be entitled to compensation) under laws administered by the Secretary of Veterans Affairs; or a person who was discharged or released from active duty because of a service-connected disability.",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text"
+    },
+    {
+        title: "<b>Recently Separated Veteran</b>: any veteran during the three-year period beginning on the date of such veteran's discharge or release from active duty in the U.S. military, ground, naval, or air service.",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text"
+    },
+    {
+        title: "<b>Active Duty Wartime or Campaign Badge Veteran</b>: a veteran who served on active duty in the U.S. badge has been authorized under the laws administered by the Department of Defense.",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text"
+    },
+    {
+        title: "<b>Armed Forces Service Medal Veteran</b>: a veteran who, while serving on active duty in the U.S. military, ground, naval or air service, participated in a United States military operation for which an Armed Forces service medal was awarded pursuant to <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Executive Order</a>.",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text"
+    }
+]
 
 export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";
