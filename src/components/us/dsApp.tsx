@@ -12,11 +12,13 @@ import {
   CONTINGENT_OFFER,
   JOB_CONFIRMATION,
   JOB_DESCRIPTION,
-  JOB_OPPORTUNITIES, NHE,
+  JOB_OPPORTUNITIES,
+  NHE,
   PRE_CONSENT,
   RESUME_APPLICATION,
-  SELF_IDENTIFICATION,
   REVIEW_SUBMIT,
+  SELF_IDENTIFICATION,
+  SESSION_TIMEOUT,
   THANK_YOU
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
@@ -33,6 +35,8 @@ import SelfIdentification from "./selfIdentification/SelfIdentification";
 import AlreadyApplied from "./alreadyApplied/AlreadyApplied";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import ThankYou from "./thankYou/ThankYou";
+import CounterMessageBanner from "../common/CounterMessageBanner";
+import SessionTimeout from "./sessionTimeout/SessionTimeout";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -56,6 +60,7 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
   return (
       <Col padding='S300'>
         <AppLoader/>
+        <CounterMessageBanner/>
         <Router>
           <Switch>
             <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>
@@ -100,6 +105,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${THANK_YOU}`} exact>
               <ThankYou/>
+            </Route>
+            <Route path={`/${SESSION_TIMEOUT}`} exact>
+              <SessionTimeout/>
             </Route>
           </Switch>
         </Router>

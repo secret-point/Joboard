@@ -929,6 +929,10 @@
         "BB-SelfId-veteran-status-title-text": {
             "note": "Text for the veteran status form title text",
             "value": "Autoidentificación voluntaria del estado de veterano"
+        },
+        "BB-counter-message-banner-text": {
+            "note": "Text for the holding spot time counter banner message",
+            "value": "Le reservamos un lugar durante las próximas {hours} horas y {minutes} minutos para completar los pasos restantes."
         }
     }
 }

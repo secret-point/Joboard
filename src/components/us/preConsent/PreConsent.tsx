@@ -7,6 +7,8 @@ import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { CommonColors } from "../../../utils/colors";
 import { routeToAppPageWithPath } from "../../../utils/helper";
 import { CONSENT } from "../../pageRoutes";
+import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
+import ApplicationSteps from "../../common/ApplicationSteps";
 
 interface MapStateToProps {
 
@@ -18,9 +20,23 @@ const PreConsent = ( props: MapStateToProps ) => {
         routeToAppPageWithPath(CONSENT)
     }
 
+    const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
+      <FlyoutContent
+        titleText={t('BB-StepHeader-view-progress-flyout-title', 'View progress')}
+        onCloseButtonClick={close}
+        buttons={[
+            <Button onClick={close} variant={ButtonVariant.Primary}>
+                {t('BB-StepHeader-view-progress-flyout-close-button', 'Done')}
+            </Button>
+        ]}
+        maxWidth='40vw'
+      >
+          <ApplicationSteps/>
+      </FlyoutContent>
+    )
+
     return (
         <Col gridGap={8} padding={{ top: 'S100', bottom: 'S400' }}>
-            {/*{showShiftHoldingMessageBanner && <ContentMessageBanner />}*/}
             <Col gridGap={20} backgroundColor={CommonColors.Neutral90} padding='S600'>
                 <Text
                     data-testid="text-pre-consent-page-title"
@@ -30,9 +46,19 @@ const PreConsent = ( props: MapStateToProps ) => {
                 >
                     {t("BB-PreConsentPage-banner-journey-starts", "Your journey to becoming an Amazon Associate starts here.")}
                 </Text>
-                <Button variant={ButtonVariant.Secondary} style={{ width: '35%' }}>
-                    {t("BB-PreconsentPage-preview-steps-button", "Preview Steps")}
-                </Button>
+                <WithFlyout renderFlyout={renderFlyout}>
+                    {( { open } ) => (
+                      <Col >
+                          <Button
+                            variant={ButtonVariant.Secondary}
+                            style={{ width: '35%' }}
+                            onClick={open}
+                          >
+                              {t("BB-PreconsentPage-preview-steps-button", "Preview Steps")}
+                          </Button>
+                      </Col>
+                    )}
+                </WithFlyout>
                 <img
                     id="preConsentImg"
                     aria-hidden="true"

@@ -18,7 +18,8 @@ import {
     SchedulePreference,
     ScheduleStateFilters,
     SelfIdentificationConfig,
-    SelfIdentificationDisabilityStatus, SelfIdentificationInfo,
+    SelfIdentificationDisabilityStatus,
+    SelfIdentificationInfo,
     SelfIdentificationVeteranStatus,
     SelfIdEqualOpportunityStatus,
     TimeRangeHoursData
@@ -48,11 +49,18 @@ import {
 } from "./enums/common";
 import capitalize from "lodash/capitalize";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
-import { BACKGROUND_CHECK, JOB_CONFIRMATION } from "../components/pageRoutes";
+import {
+    BACKGROUND_CHECK,
+    CONTINGENT_OFFER,
+    JOB_CONFIRMATION,
+    NHE,
+    REVIEW_SUBMIT,
+    SELF_IDENTIFICATION
+} from "../components/pageRoutes";
 import queryString from "query-string";
 import { isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
-import { parseQueryParamsArrayToSingleItem } from "../helpers/utils";
+import { get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem } from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import isEmpty from "lodash/isEmpty";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
@@ -322,11 +330,13 @@ export const validateName = (name: string): boolean => {
 }
 
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
-    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions);
-    const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions);
+    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions)
+    console.log("no fcra", isNonFcraCompleted)
+    const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions)
+    console.log("fcra", isFcraCompleted)
     const isAdditionalBgcCompleted = !isEmpty(candidateData?.additionalBackgroundInfo);
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
-    const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
+    const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
 
     let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig }
 
@@ -358,7 +368,7 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
         stepConfig = {
             ...stepConfig,
             [NON_FCRA]: {
-                status: ACTIVE,
+                status: LOCKED,
                 editMode: false
             }
         }
@@ -596,7 +606,7 @@ export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
 
 export const loadingStatusHelper = () =>{
     const states = store.getState();
-    const loadingStates = [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow];
+    const loadingStates = states ? [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow] : [];
     let loadingCount = 0;
 
     loadingStates.forEach(loading=>{
@@ -803,3 +813,30 @@ export const formatDate = (dateStr?: string, option: DateFormatOption = {}) => {
         option.displayFormat || "Do MMM YYYY"
     );
 };
+
+export const goToCandidateDashboard = () => {
+    const state = store.getState();
+
+    if (state) {
+        const appConfig = state.appConfig;
+        const envConfig = appConfig?.results?.envConfig;
+
+        const isCandidateDashboardEnabled = envConfig?.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
+        const queryParamsInSession = window.sessionStorage.getItem("query-params");
+        const queryParams = queryParamsInSession ? JSON.parse(queryParamsInSession) : {};
+
+        const CSDomain = envConfig?.CSDomain;
+        const dashboardUrl = envConfig?.dashboardUrl || '';
+
+        const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams, "?");
+        const candidateDashboardUrl = `${CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+
+        window.location.assign(isCandidateDashboardEnabled ? candidateDashboardUrl : dashboardUrl);
+    }
+};
+
+export const showCounterBanner = (): boolean => {
+    const hash = window.location.hash;
+    return hash.includes(CONTINGENT_OFFER) || hash.includes(BACKGROUND_CHECK) || hash.includes(NHE) || hash.includes(SELF_IDENTIFICATION) ||
+      hash.includes(REVIEW_SUBMIT);
+}

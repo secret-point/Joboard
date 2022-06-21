@@ -17,7 +17,12 @@ import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
 import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { getLocale, handleApplyScheduleFilters, handleResetScheduleFilters } from "../../../utils/helper";
+import {
+  getLocale,
+  goToCandidateDashboard,
+  handleApplyScheduleFilters,
+  handleResetScheduleFilters
+} from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import {
@@ -150,7 +155,11 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
 
             <Col>
                 <Row padding={{ top: 'S400' }}>
-                    <Row className="backToJobDashboardLink" gridGap={5}>
+                    <Row
+                      className="backToJobDashboardLink"
+                      gridGap={5}
+                      onClick={goToCandidateDashboard}
+                    >
                         <IconArrowLeft size={IconSize.ExtraSmall} fontSize='T100'/>
                         <Text fontWeight="medium" fontSize='T200'>
                             {t('BB-JobOpportunity-Go-To-Dashboard-Link', 'Go Back to Jobs Dashboard')}
