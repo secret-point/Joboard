@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
-import { Image } from "@amzn/hvh-candidate-application-ui-components";
 import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
@@ -25,6 +24,7 @@ import {
 } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
+import Image from "../../common/Image";
 import {
   FlyoutContent,
   FlyoutPosition,

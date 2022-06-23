@@ -26,7 +26,7 @@ import {
 } from "./types/common";
 import store, { history } from "../store/store";
 import Cookies from "js-cookie";
-import { AdditionalBGCFormConfig, HVH_LOCALE, initScheduleStateFilters, NameRegexValidator } from "./constants/common";
+import { AdditionalBGCFormConfig, HVH_LOCALE, initScheduleStateFilters, NameRegexValidator, UserIdValidator } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
 import {
@@ -326,7 +326,11 @@ export const createUpdateApplicationRequest = (application: Application, apiType
 }
 
 export const validateName = (name: string): boolean => {
-    return new RegExp(NameRegexValidator).test(name)
+    return new RegExp(NameRegexValidator).test(name);
+}
+
+export const validateUserId = (userId: string): boolean => {
+    return new RegExp(UserIdValidator).test(userId);
 }
 
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {

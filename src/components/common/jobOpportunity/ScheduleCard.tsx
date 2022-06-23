@@ -1,4 +1,3 @@
-import { Image } from "@amzn/hvh-candidate-application-ui-components";
 import {
     IconChevronRight
 } from '@amzn/stencil-react-components/icons';
@@ -13,6 +12,7 @@ import { QueryParamItem, Schedule } from "../../../utils/types/common";
 import { JOB_CONFIRMATION } from "../../pageRoutes";
 import ScheduleCardBanner from "./ScheduleCardBanner";
 import ScheduleDetails from "./ScheduleDetails";
+import Image from "../../common/Image";
 
 interface ScheduleCardProps {
     scheduleDetail: Schedule,

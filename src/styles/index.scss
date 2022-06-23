@@ -326,3 +326,14 @@ a {
     padding-top: 1em;
   }
 }
+
+.ul-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.border-top-row {
+  padding-top: 0.875em;
+  border-top: 1px solid $Neutral_20;
+  width: 100%;
+}
