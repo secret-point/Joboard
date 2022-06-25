@@ -40,7 +40,7 @@ const ResumeApplication = ( props: MapStateToProps ) => {
     },[jobDetail, applicationData]);
 
     return (
-        <div>ResumeApplication page, this page will be an empty page with loading icon for startWorkflow and wait the stepName for redirection</div>
+        <div></div>
     );
 };
 

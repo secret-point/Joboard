@@ -933,6 +933,70 @@
         "BB-counter-message-banner-text": {
             "note": "Text for the holding spot time counter banner message",
             "value": "Le reservamos un lugar durante las próximas {hours} horas y {minutes} minutos para completar los pasos restantes."
+        },
+        "BB-candidate-withdraws-thank-you-text": {
+            "note": "Text for the thanking candidate for their interest to apply for a job",
+            "value": "Gracias por su interés, pero no podemos ofrecerle un trabajo en este momento."
+        },
+        "BB-candidate-withdraws-withdraw-reason-text": {
+            "note": "Text for the reason to withdraw candidate application",
+            "value": "La información que proporcionó no cumple con nuestros requisitos. Lo alentamos a ver los trabajos en amazon.jobs."
+        },
+        "BB-candidate-withdraws-back-to-dashboard-button-text": {
+            "note": "Text for back to dashboard button text",
+            "value": "Volver al tablero"
+        },
+        "BB-assessment-not-eligible-heading-text": {
+            "note": "Text for the assessment not eligible heading text",
+            "value": "{name}, su interés en Amazon significa mucho para nosotros."
+        },
+        "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text": {
+            "note": "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken",
+            "value": "Muchas gracias por darnos la oportunidad de considerarlo para este puesto. Lamentablemente, no avanzaremos con su candidatura en este momento."
+        },
+        "BB-assessment-not-eligible-reconsideration-notice-text": {
+            "note": "Text for the text to let candidate know when to reconsider the assessment again",
+            "value": "Para ser reconsiderado para este puesto en otro momento, puede realizar la evaluación nuevamente en tres meses."
+        },
+        "BB-assessment-not-eligible-back-to-dashboard-button-text": {
+            "note": "Text for back to dashboard button text",
+            "value": "Volver al tablero"
+        },
+        "BB-assessment-consent-assessment-heading-text": {
+            "note": "Text for the assessment consent page assessment heading text",
+            "value": "Evaluación"
+        },
+        "BB-assessment-consent-excited-in-candidate-interest-text": {
+            "note": "Text to let candidate know that Amazon is excited for their interest to join Amazon",
+            "value": "¡Estamos muy entusiasmados con su interés en unirse a Amazon!"
+        },
+        "BB-assessment-consent-purpose-of-assessment-text": {
+            "note": "Text to let candidate know the purpose of Assessment",
+            "value": "Esta evaluación lo ayudará a comprender el rol de asociado y nos ayudará a conocerlo."
+        },
+        "BB-assessment-consent-accommodation-heading-text": {
+            "note": "Text for the assessment consent page accommodation heading text",
+            "value": "Alojamientos"
+        },
+        "BB-assessment-consent-diversity-and-disability-accommodation-notice-text": {
+            "note": "Text for the assessment consent page diversity and disability accommodation",
+            "value": "En Amazon, celebramos la diversidad de nuestra fuerza laboral y las diversas formas en que trabajamos. Si tiene una discapacidad y necesita adaptaciones durante el proceso de contratación, incluida la evaluación, visite <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Alojamiento en Amazonas.</a>"
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text": {
+            "note": "Text for the assessment pace and sections of the assessments list header text",
+            "value": "<b>Ninguna parte de la evaluación está cronometrada</b>: puede trabajar a su propio ritmo. Todas las secciones de esta evaluación:"
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text": {
+            "note": "Text for the assessment pace and sections of the assessments list item 1",
+            "value": "Están optimizados para los siguientes lectores de pantalla: VoiceOver (Mac) y NVDA (Windows) en Firefox, Chrome y Edge (Windows)."
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text": {
+            "note": "Text for the assessment pace and sections of the assessments list item 2",
+            "value": "Se puede acceder a través del mouse o el teclado."
+        },
+        "BB-assessment-consent-begin-assessment-button-text": {
+            "note": "Text for the begin assessment button text",
+            "value": "Comenzar evaluación"
         }
     }
 }

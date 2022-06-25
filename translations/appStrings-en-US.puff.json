@@ -933,6 +933,70 @@
         "BB-counter-message-banner-text": {
             "note": "Text for the holding spot time counter banner message",
             "value": "We are holding a spot for you for the next {hours} hours and {minutes} minutes to complete the remaining steps."
+        },
+        "BB-candidate-withdraws-thank-you-text": {
+            "note": "Text for the thanking candidate for their interest to apply for a job",
+            "value": "Thank you for your interest, but we are unable to offer you a job at this time."
+        },
+        "BB-candidate-withdraws-withdraw-reason-text": {
+            "note": "Text for the reason to withdraw candidate application",
+            "value": "The information you provided does not meet our requirements. We encourage you to look at the jobs at amazon.jobs."
+        },
+        "BB-candidate-withdraws-back-to-dashboard-button-text": {
+            "note": "Text for back to dashboard button text",
+            "value": "Return to dashboard"
+        },
+        "BB-assessment-not-eligible-heading-text": {
+            "note": "Text for the assessment not eligible heading text",
+            "value": "{name}, your interest with Amazon means a lot to us."
+        },
+        "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text": {
+            "note": "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken",
+            "value": "Thank you so much for giving us the opportunity to consider you for this position. Sadly, we will not be moving forward with your candidacy at this time."
+        },
+        "BB-assessment-not-eligible-reconsideration-notice-text": {
+            "note": "Text for the text to let candidate know when to reconsider the assessment again",
+            "value": "To be reconsidered for this role at another time, you may take the assessment again in three months."
+        },
+        "BB-assessment-not-eligible-back-to-dashboard-button-text": {
+            "note": "Text for back to dashboard button text",
+            "value": "Return to dashboard"
+        },
+        "BB-assessment-consent-assessment-heading-text": {
+            "note": "Text for the assessment consent page assessment heading text",
+            "value": "Assessment"
+        },
+        "BB-assessment-consent-excited-in-candidate-interest-text": {
+            "note": "Text to let candidate know that Amazon is excited for their interest to join Amazon",
+            "value": "We are so excited in your interest to join Amazon!"
+        },
+        "BB-assessment-consent-purpose-of-assessment-text": {
+            "note": "Text to let candidate know the purpose of Assessment",
+            "value": "This assessment will help you understand the associate role and help us get to know you."
+        },
+        "BB-assessment-consent-accommodation-heading-text": {
+            "note": "Text for the assessment consent page accommodation heading text",
+            "value": "Accommodations"
+        },
+        "BB-assessment-consent-diversity-and-disability-accommodation-notice-text": {
+            "note": "Text for the assessment consent page diversity and disability accommodation",
+            "value": "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>"
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text": {
+            "note": "Text for the assessment pace and sections of the assessments list header text",
+            "value": "<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:"
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text": {
+            "note": "Text for the assessment pace and sections of the assessments list item 1",
+            "value": "Are optimized for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows)."
+        },
+        "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text": {
+            "note": "Text for the assessment pace and sections of the assessments list item 2",
+            "value": "Can be accessed via mouse or keyboard."
+        },
+        "BB-assessment-consent-begin-assessment-button-text": {
+            "note": "Text for the begin assessment button text",
+            "value": "Begin Assessment"
         }
     }
 }

@@ -6,8 +6,12 @@ import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
 import {
   ALREADY_APPLIED,
+  ASSESSMENT_CONSENT,
+  ASSESSMENT_FINISHED,
+  ASSESSMENT_NOT_ELIGIBLE,
   BACKGROUND_CHECK,
   BACKGROUND_CHECK_FCRA,
+  CANDIDATE_WITHDRAWS,
   CONSENT,
   CONTINGENT_OFFER,
   JOB_CONFIRMATION,
@@ -19,7 +23,8 @@ import {
   REVIEW_SUBMIT,
   SELF_IDENTIFICATION,
   SESSION_TIMEOUT,
-  THANK_YOU
+  THANK_YOU,
+  WOTC
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -37,6 +42,11 @@ import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import ThankYou from "./thankYou/ThankYou";
 import CounterMessageBanner from "../common/CounterMessageBanner";
 import SessionTimeout from "./sessionTimeout/SessionTimeout";
+import WOTCComponent from "./wotc/WOTC";
+import AssessmentConsent from "./assessment/AssessmentConsent";
+import AssessmentNotEligible from "./assessment/AssementNotEligible";
+import AssessmentFinished from "./assessment/AssessmentFinished";
+import CandidateWithdraws from "../common/CandidateWithdraws";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -106,8 +116,23 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             <Route path={`/${THANK_YOU}`} exact>
               <ThankYou/>
             </Route>
+            <Route path={`/${WOTC}`} exact>
+              <WOTCComponent/>
+            </Route>
             <Route path={`/${SESSION_TIMEOUT}`} exact>
               <SessionTimeout/>
+            </Route>
+            <Route path={`/${ASSESSMENT_CONSENT}`} exact>
+              <AssessmentConsent/>
+            </Route>
+            <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
+              <AssessmentNotEligible/>
+            </Route>
+            <Route path={`/${ASSESSMENT_FINISHED}`} exact>
+              <AssessmentFinished/>
+            </Route>
+            <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
+              <CandidateWithdraws/>
             </Route>
           </Switch>
         </Router>

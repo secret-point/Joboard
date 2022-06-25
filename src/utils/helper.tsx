@@ -26,7 +26,13 @@ import {
 } from "./types/common";
 import store, { history } from "../store/store";
 import Cookies from "js-cookie";
-import { AdditionalBGCFormConfig, HVH_LOCALE, initScheduleStateFilters, NameRegexValidator, UserIdValidator } from "./constants/common";
+import {
+    AdditionalBGCFormConfig,
+    HVH_LOCALE,
+    initScheduleStateFilters,
+    NameRegexValidator,
+    UserIdValidator
+} from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
 import {
@@ -335,9 +341,7 @@ export const validateUserId = (userId: string): boolean => {
 
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
     const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions)
-    console.log("no fcra", isNonFcraCompleted)
     const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions)
-    console.log("fcra", isFcraCompleted)
     const isAdditionalBgcCompleted = !isEmpty(candidateData?.additionalBackgroundInfo);
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
@@ -372,7 +376,7 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
         stepConfig = {
             ...stepConfig,
             [NON_FCRA]: {
-                status: LOCKED,
+                status: isFcraCompleted ? ACTIVE : LOCKED,
                 editMode: false
             }
         }
@@ -843,4 +847,13 @@ export const showCounterBanner = (): boolean => {
     const hash = window.location.hash;
     return hash.includes(CONTINGENT_OFFER) || hash.includes(BACKGROUND_CHECK) || hash.includes(NHE) || hash.includes(SELF_IDENTIFICATION) ||
       hash.includes(REVIEW_SUBMIT);
+}
+
+export const onAssessmentStart =  (applicationData: Application) => {
+    const assessmentUrl = applicationData.assessment?.assessmentUrl;
+    //TODO need to align what metrics need to send here.
+    // if (assessmentUrl && payload.options?.adobeMetrics) {
+    //     postAdobeMetrics(payload.options.adobeMetrics, {});
+    // }
+    assessmentUrl && window.location.assign(assessmentUrl);
 }

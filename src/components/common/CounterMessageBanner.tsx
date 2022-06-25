@@ -27,7 +27,7 @@ const CounterMessageBanner = (props: MapStateToProps) => {
   const applicationData = application.results;
 
   useEffect(() => {
-    initiateCounter();
+    showCounterBanner() && initiateCounter();
   }, [hours, applicationData, minutes]);
 
   const initiateCounter = () => {
