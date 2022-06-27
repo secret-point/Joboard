@@ -997,6 +997,154 @@
         "BB-assessment-consent-begin-assessment-button-text": {
             "note": "Text for the begin assessment button text",
             "value": "Comenzar evaluación"
+        },
+        "BB-ReviewSubmit-header-title-text": {
+            "note": "Text for the review and submit title text",
+            "value": "Revisar y enviar"
+        },
+        "BB-ReviewSubmit-job-details-section-title-text": {
+            "note": "Text for the job details section title text",
+            "value": "Detalles del trabajo"
+        },
+        "BB-ReviewSubmit-job-details-section-background-check-text": {
+            "note": "Text for the job details section background check text",
+            "value": "Verificación de antecedentes"
+        },
+        "BB-ReviewSubmit-job-details-section-authorized-text": {
+            "note": "Text for the job details section authorized text",
+            "value": "Autorizada"
+        },
+        "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text": {
+            "note": "Text for the job details section authorized text",
+            "value": "Envíe una copia gratuita de la verificación de antecedentes"
+        },
+        "BB-ReviewSubmit-job-details-section-national-id-type-text": {
+            "note": "Text for the job details section national ID type text",
+            "value": "Tipo de identificación nacional:"
+        },
+        "BB-ReviewSubmit-job-details-section-national-id-number-text": {
+            "note": "Text for the job details section national ID number text",
+            "value": "Numero de identificacion nacional:"
+        },
+        "BB-ReviewSubmit-job-details-section-date-of-birth-text": {
+            "note": "Text for the job details section date of birth text",
+            "value": "Fecha de nacimiento:"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-title-text": {
+            "note": "Text for the pre-hire appointment section title text",
+            "value": "Cita previa a la contratación"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-hours-text": {
+            "note": "Text for the pre-hire appointment section hours text",
+            "value": "Horas:"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text": {
+            "note": "Text for the pre-hire appointment section look forward text",
+            "value": "Esperamos verte en el horario anterior."
+        },
+        "BB-ReviewSubmit-selfId-section-title-text": {
+            "note": "Text for the voluntary self-identification section title text",
+            "value": "Autoidentificación voluntaria"
+        },
+        "BB-ReviewSubmit-selfId-section-equal-opportunity-text": {
+            "note": "Text for the voluntary self-identification section equal opportunity text",
+            "value": "Igualdad de oportunidades:"
+        },
+        "BB-ReviewSubmit-selfId-section-veteral-status-text": {
+            "note": "Text for the voluntary self-identification section veteral status text",
+            "value": "Estatus de veterana:"
+        },
+        "BB-ReviewSubmit-selfId-section-disability-status-text": {
+            "note": "Text for the voluntary self-identification section disability status text",
+            "value": "Estado de Discapacidad:"
+        },
+        "BB-ReviewSubmit-submit-application-button-text": {
+            "note": "Text for the review and submit page submit application button text",
+            "value": "Presentar la solicitud"
+        },
+        "BB-ThankYou-thank-you-title-text": {
+            "note": "Text for the thank you page thank you title text",
+            "value": "¡Gracias por aplicar a Amazon!"
+        },
+        "BB-ThankYou-look-forward-next-steps-text": {
+            "note": "Text for the thank you page look forward and next steps text",
+            "value": "Esperamos verte. Estos son sus próximos pasos:"
+        },
+        "BB-ThankYou-referral-details-title-text": {
+            "note": "Text for the thank you page referral details input title text",
+            "value": "Proporcione detalles de referencia (si corresponde)"
+        },
+        "BB-ThankYou-referral-details-description-text": {
+            "note": "Text for the thank you page referral details description text",
+            "value": "¿Fue referido por un empleado existente de Amazon?"
+        },
+        "BB-ThankYou-referral-details-yes-text": {
+            "note": "Text for the thank you page referral details radio button 'yes' text",
+            "value": "Sí"
+        },
+        "BB-ThankYou-referral-details-no-text": {
+            "note": "Text for the thank you page referral details radio button 'no' text",
+            "value": "No"
+        },
+        "BB-ThankYou-start-pre-hire-activities-title-text": {
+            "note": "Text for the thank you page start pre-hire activities title text",
+            "value": "Comience con las actividades previas a la contratación"
+        },
+        "BB-ThankYou-fill-wotc-description-text": {
+            "note": "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text",
+            "value": "Antes de su cita previa a la contratación, complete el Cuestionario de Crédito Fiscal de Oportunidades de Trabajo."
+        },
+        "BB-ThankYou-get-started-button-text": {
+            "note": "Text for the thank you page let's get started button text",
+            "value": "Empecemos"
+        },
+        "BB-ThankYou-get-pre-hire-appointment-details-text": {
+            "note": "Text for the thank you page pre-hire appointment details text",
+            "value": "Detalles de la cita previa a la contratación"
+        },
+        "BB-ThankYou-nhe-appointment-details-visit-us-text": {
+            "note": "Text for the thank you page nhe appointment details visit us text",
+            "value": "Visítenos para una sesión de 30 minutos en cualquier momento entre {startTime} - {endTime}."
+        },
+        "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text": {
+            "note": "Text for the thank you page nhe appointment details flyout appointment details title text",
+            "value": "Detalles de la cita"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text": {
+            "note": "Text for the thank you page nhe appointment details flyout things to bring text",
+            "value": "Cosas para llevar"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text": {
+            "note": "Text for the thank you page nhe appointment details flyout original unexpired photo id text",
+            "value": "Identificación original con foto vigente"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text": {
+            "note": "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text",
+            "value": "Documento de autorización de trabajo original vigente"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text": {
+            "note": "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text",
+            "value": "Haga clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>aquí</a> para una lista completa de documentos aceptables."
+        },
+        "BB-ThankYou-nhe-appointment-flyout-special-assistance-text": {
+            "note": "Text for the thank you page nhe appointment details flyout special assistance text",
+            "value": "Asistencia especial"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text": {
+            "note": "Text for the thank you page nhe appointment details flyout accommodations assistance text",
+            "value": "Si necesita adaptaciones, como un intérprete de ASL para el evento de contratación, vaya a <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www. amazon.com/accommodations</a> y chatee con nosotros para solicitar un intérprete. Por favor contáctenos inmediatamente después de programar su cita. Necesitamos al menos 48 horas antes de su cita para hacer arreglos."
+        },
+        "BB-ThankYou-referral-login-label-text": {
+            "note": "Text for the thank you page referral login input label text",
+            "value": "Proporcione su ID de inicio de sesión de referencia (solo letras minúsculas)"
+        },
+        "BB-ThankYou-referral-login-empty-error-text": {
+            "note": "Text for the thank you page referral login input empty error text",
+            "value": "Proporcione su ID de inicio de sesión de referencia."
+        },
+        "BB-ThankYou-referral-login-regex-error-text": {
+            "note": "Text for the thank you page referral login input regex error text",
+            "value": "La identificación de usuario debe contener solo letras minúsculas y debe tener al menos 4 letras."
         }
     }
 }

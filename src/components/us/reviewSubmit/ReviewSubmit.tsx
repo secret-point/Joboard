@@ -21,6 +21,7 @@ import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { createUpdateApplicationRequest, formatDate, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
 
@@ -101,13 +102,13 @@ const ReviewSubmit = (props: MapStateToProps) => {
       </Row>
 
       <Text fontSize="T400">
-        Review and Submit
+        {t("BB-ReviewSubmit-header-title-text", "Review and Submit")}
       </Text>
 
       <div>
         <Col gridGap="S300">
           <Text fontSize="T300">
-            Job Details
+            {t("BB-ReviewSubmit-job-details-section-title-text", "Job Details")}
           </Text>
           {scheduleDetail && <ScheduleDetails scheduleDetail={scheduleDetail} />}
         </Col>
@@ -116,7 +117,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
       <div>
         <Row alignItems="center" justifyContent="space-between">
           <Text fontSize="T300">
-            Background check
+            {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
           </Text>
 
           <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>Edit</Button>
@@ -124,23 +125,23 @@ const ReviewSubmit = (props: MapStateToProps) => {
 
         <Col gridGap="S300">
           <Text fontSize="T100" fontWeight="bold">
-            Authorized
+            {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
           </Text>
 
           {applicationData?.nonFcraQuestions.requestedCopyOfBackgroundCheck && <Text fontSize="T100">
-            Send free copy of background check
+            {t("BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text", "Send free copy of background check")}
           </Text>}
 
           <Text fontSize="T100">
-            National ID Type: {candidateData?.additionalBackgroundInfo.governmentIdType}
+            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {candidateData?.additionalBackgroundInfo.governmentIdType}
           </Text>
 
           <Text fontSize="T100">
-            National ID Number: {candidateData?.additionalBackgroundInfo.idNumber}
+            {t("BB-ReviewSubmit-job-details-section-national-id-number-text", "National ID Number:")} {candidateData?.additionalBackgroundInfo.idNumber}
           </Text>
 
           <Text fontSize="T100">
-            Date of birth: {formatDate(candidateData?.additionalBackgroundInfo.dateOfBirth, { displayFormat: "Do MMM YYYY" })}
+            {t("BB-ReviewSubmit-job-details-section-date-of-birth-text", "Date of birth:")} {formatDate(candidateData?.additionalBackgroundInfo.dateOfBirth, { displayFormat: "Do MMM YYYY" })}
           </Text>
         </Col>
       </div>
@@ -148,7 +149,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
       <div>
         <Row alignItems="center" justifyContent="space-between">
           <Text fontSize="T300">
-            Pre-Hire Appointment
+            {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
           </Text>
 
           <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>Edit</Button>
@@ -166,11 +167,11 @@ const ReviewSubmit = (props: MapStateToProps) => {
           </Text>
 
           <Text fontSize="T100">
-            Hours: {nheAppointment?.startTime} - {nheAppointment?.endTime}
+            {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
           </Text>
 
           <Text fontSize="T100">
-            We look forward to seeing you at the time above.
+            {t("BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text", "We look forward to seeing you at the time above.")}
           </Text>
         </Col>
       </div>
@@ -178,30 +179,30 @@ const ReviewSubmit = (props: MapStateToProps) => {
       <div>
         <Row alignItems="center" justifyContent="space-between">
           <Text fontSize="T300">
-            Voluntary Self-identification
+            {t("BB-ReviewSubmit-selfId-section-title-text", "Voluntary Self-identification")}
           </Text>
 
           <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>Edit</Button>
         </Row>
         <Col gridGap="S300">
           <Text fontSize="T100">
-            Equal Opportunity: {candidateData?.selfIdentificationInfo.gender}
+            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {candidateData?.selfIdentificationInfo.gender}
             {candidateData?.selfIdentificationInfo.ethnicity ? `, ${candidateData?.selfIdentificationInfo.ethnicity}` : ""}
           </Text>
 
           <Text fontSize="T100">
-            Veteral Status: {candidateData?.selfIdentificationInfo.veteran}
+            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {candidateData?.selfIdentificationInfo.veteran}
           </Text>
 
           <Text fontSize="T100">
-            Disability Status: {candidateData?.selfIdentificationInfo.disability}
+            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {candidateData?.selfIdentificationInfo.disability}
           </Text>
         </Col>
       </div>
 
       <Col gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
         <Button variant={ButtonVariant.Primary} onClick={handleSubmitApplication}>
-          Submit application
+          {t("BB-ReviewSubmit-submit-application-button-text", "Submit application")}
         </Button>
       </Col>
     </Col >

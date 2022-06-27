@@ -6,6 +6,7 @@ import { IconArrowRight, IconSize } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
+import InnerHTML from 'dangerously-set-html-content';
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
@@ -19,9 +20,10 @@ import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
 import { createUpdateApplicationRequest, formatDate, getLocale, validateUserId } from "../../../utils/helper";
-import { Application } from "../../../utils/types/common";
+import { Application, FormInputItem } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -45,10 +47,12 @@ const ThankYou = (props: MapStateToProps) => {
   const [hasReferral, setHasReferral] = useState(false);
   const [referralId, setReferralId] = useState("");
 
-  const [formInputConfig, setFormInputConfig] = useState({
+  const [formInputConfig, setFormInputConfig] = useState<FormInputItem>({
     hasError: false,
     labelText: "Please provide your referrer login ID (lower case letters only)",
+    labelTranslationKey: "BB-ThankYou-referral-login-label-text",
     errorMessage: "Please provide your referrer login ID.",
+    errorMessageTranslationKey: "BB-ThankYou-referral-login-empty-error-text",
     required: true,
     name: "referralInfo",
     id: "referral-employee-name",
@@ -72,20 +76,22 @@ const ThankYou = (props: MapStateToProps) => {
   const validateFormInput = (): boolean => {
     if (hasReferral) {
       let errorMessage = "";
+      let errorMessageTranslationKey = "";
 
       if (!referralId) {
         errorMessage = "Please provide your referrer login ID.";
+        errorMessageTranslationKey = "BB-ThankYou-referral-login-empty-error-text";
       } else if (!validateUserId(referralId)) {
         errorMessage = "User ID should contain only lower case letters and should be at least 4 letters long.";
+        errorMessageTranslationKey = "BB-ThankYou-referral-login-regex-error-text";
       }
 
-      if (errorMessage) {
+      if (errorMessage && errorMessageTranslationKey) {
         setFormInputConfig({
           ...formInputConfig,
           hasError: true,
-          errorMessage
-          // TODO: add MLS support
-          // errorMessageTranslationKey,
+          errorMessage,
+          errorMessageTranslationKey
         });
 
         return false;
@@ -139,7 +145,7 @@ const ThankYou = (props: MapStateToProps) => {
         </Text>
 
         <Text fontSize="T100" color={CommonColors.Neutral70}>
-          Visit us for a 30 minute session anytime between {nheAppointment?.startTime} - {nheAppointment?.endTime}.
+          {t("BB-ThankYou-nhe-appointment-details-visit-us-text", "Visit us for a 30 minute session anytime between {startTime} - {endTime}.", { startTime: nheAppointment?.startTime, endTime: nheAppointment?.endTime })}
         </Text>
       </>
     );
@@ -152,32 +158,36 @@ const ThankYou = (props: MapStateToProps) => {
     >
       <Col width="100%" padding="S300" gridGap={15}>
         <Text fontSize="T200">
-          Appointment details
+          {t("BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text", "Appointment details")}
         </Text>
 
         {renderNheAppointmentDetails()}
 
-        <Text fontSize="T300">Things to bring</Text>
+        <Text fontSize="T300">
+          {t("BB-ThankYou-nhe-appointment-flyout-things-to-bring-text", "Things to bring")}
+        </Text>
         <ul className="ul-list">
           <li>
             <Text fontSize="T100">
-              Original unexpired photo ID
+              {t("BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text", "Original unexpired photo ID")}
             </Text>
           </li>
           <li>
             <Text fontSize="T100">
-              Original unexpired work authorization document
+              {t("BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text", "Original unexpired work authorization document")}
             </Text>
           </li>
         </ul>
 
         <Text fontSize="T100">
-          Click <a href="https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents" target="_blank" rel="noopener noreferrer">here</a> for a complete list of acceptable documents.
+          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text", "Click <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.")}/>
         </Text>
 
-        <Text fontSize="T300">Special assistance</Text>
+        <Text fontSize="T300">
+          {t("BB-ThankYou-nhe-appointment-flyout-special-assistance-text", "Special assistance")}
+        </Text>
         <Text fontSize="T100">
-          If you require any accommodations, such as an ASL interpreter for the hiring event, please go to <a href="https://www.amazon.com/accommodations" target="_blank" rel="noopener noreferrer">www.amazon.com/accommodations</a> and chat with us to request an interpreter. Please contact us immediately upon scheduling your appointment. We need at least 48 hours prior to your appointment to make arrangements.
+          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text", "If you require any accommodations, such as an ASL interpreter for the hiring event, please go to <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> and chat with us to request an interpreter. Please contact us immediately upon scheduling your appointment. We need at least 48 hours prior to your appointment to make arrangements.")}/>
         </Text>
       </Col>
     </FlyoutContent >
@@ -202,31 +212,31 @@ const ThankYou = (props: MapStateToProps) => {
       />
 
       <Text fontSize="T400" textAlign="center">
-        Thank you for applying to Amazon!
+        {t("BB-ThankYou-thank-you-title-text", "Thank you for applying to Amazon!")}
       </Text>
       <Text fontSize="T100" textAlign="center">
-        We look forward to seeing you. Here are your next steps:
+        {t("BB-ThankYou-look-forward-next-steps-text", "We look forward to seeing you. Here are your next steps:")}
       </Text>
 
       <Card width="100%" padding="S300" isElevated={true}>
         <Col width="100%" padding="S300" gridGap={15}>
           <Text fontSize="T300" fontWeight="bold">
-            Please provide referral details (if applicable)
+            {t("BB-ThankYou-referral-details-title-text", "Please provide referral details (if applicable)")}
           </Text>
           <Text fontSize="T200">
-            Were you referred by an existing Amazon employee?
+            {t("BB-ThankYou-referral-details-description-text", "Were you referred by an existing Amazon employee?")}
           </Text>
 
           <DetailedRadio
             name="has_referral-radio-col"
-            titleText={"Yes"}
+            titleText={t("BB-ThankYou-referral-details-yes-text", "Yes")}
             onChange={() => {
               setHasReferral(true);
             }}
           />
           <DetailedRadio
             name="has_referral-radio-col"
-            titleText={"No"}
+            titleText={t("BB-ThankYou-referral-details-no-text", "No")}
             onChange={() => {
               setHasReferral(false);
             }}
@@ -242,13 +252,15 @@ const ThankYou = (props: MapStateToProps) => {
           }
 
           <Text fontSize="T300" fontWeight="bold">
-            Get started on pre-hire activities
+            {t("BB-ThankYou-start-pre-hire-activities-title-text", "Get started on pre-hire activities")}
           </Text>
           <Text fontSize="T100">
-            Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.
+            {t("BB-ThankYou-fill-wotc-description-text", "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.")}
           </Text>
 
-          <Button variant={ButtonVariant.Primary} onClick={handleGetStarted}>Let"s get started</Button>
+          <Button variant={ButtonVariant.Primary} onClick={handleGetStarted}>
+            {t("BB-ThankYou-get-started-button-text", "Let's get started")}
+          </Button>
         </Col>
       </Card>
 
@@ -269,7 +281,7 @@ const ThankYou = (props: MapStateToProps) => {
                     <Row
                       gridGap={8}
                       alignItems="center">
-                      Pre-hire appointment details
+                      {t("BB-ThankYou-get-pre-hire-appointment-details-text", "Pre-hire appointment details")}
                       <IconArrowRight size={IconSize.ExtraSmall} />
                     </Row>
                   </Text>

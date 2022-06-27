@@ -997,6 +997,154 @@
         "BB-assessment-consent-begin-assessment-button-text": {
             "note": "Text for the begin assessment button text",
             "value": "Begin Assessment"
+        },
+        "BB-ReviewSubmit-header-title-text": {
+            "note": "Text for the review and submit title text",
+            "value": "Review and Submit"
+        },
+        "BB-ReviewSubmit-job-details-section-title-text": {
+            "note": "Text for the job details section title text",
+            "value": "Job Details"
+        },
+        "BB-ReviewSubmit-job-details-section-background-check-text": {
+            "note": "Text for the job details section background check text",
+            "value": "Background check"
+        },
+        "BB-ReviewSubmit-job-details-section-authorized-text": {
+            "note": "Text for the job details section authorized text",
+            "value": "Authorized"
+        },
+        "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text": {
+            "note": "Text for the job details section authorized text",
+            "value": "Send free copy of background check"
+        },
+        "BB-ReviewSubmit-job-details-section-national-id-type-text": {
+            "note": "Text for the job details section national ID type text",
+            "value": "National ID Type:"
+        },
+        "BB-ReviewSubmit-job-details-section-national-id-number-text": {
+            "note": "Text for the job details section national ID number text",
+            "value": "National ID Number:"
+        },
+        "BB-ReviewSubmit-job-details-section-date-of-birth-text": {
+            "note": "Text for the job details section date of birth text",
+            "value": "Date of birth:"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-title-text": {
+            "note": "Text for the pre-hire appointment section title text",
+            "value": "Pre-Hire Appointment"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-hours-text": {
+            "note": "Text for the pre-hire appointment section hours text",
+            "value": "Hours:"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text": {
+            "note": "Text for the pre-hire appointment section look forward text",
+            "value": "We look forward to seeing you at the time above."
+        },
+        "BB-ReviewSubmit-selfId-section-title-text": {
+            "note": "Text for the voluntary self-identification section title text",
+            "value": "Voluntary Self-identification"
+        },
+        "BB-ReviewSubmit-selfId-section-equal-opportunity-text": {
+            "note": "Text for the voluntary self-identification section equal opportunity text",
+            "value": "Equal Opportunity:"
+        },
+        "BB-ReviewSubmit-selfId-section-veteral-status-text": {
+            "note": "Text for the voluntary self-identification section veteral status text",
+            "value": "Veteral Status:"
+        },
+        "BB-ReviewSubmit-selfId-section-disability-status-text": {
+            "note": "Text for the voluntary self-identification section disability status text",
+            "value": "Disability Status:"
+        },
+        "BB-ReviewSubmit-submit-application-button-text": {
+            "note": "Text for the review and submit page submit application button text",
+            "value": "Submit application"
+        },
+        "BB-ThankYou-thank-you-title-text": {
+            "note": "Text for the thank you page thank you title text",
+            "value": "Thank you for applying to Amazon!"
+        },
+        "BB-ThankYou-look-forward-next-steps-text": {
+            "note": "Text for the thank you page look forward and next steps text",
+            "value": "We look forward to seeing you. Here are your next steps:"
+        },
+        "BB-ThankYou-referral-details-title-text": {
+            "note": "Text for the thank you page referral details input title text",
+            "value": "Please provide referral details (if applicable)"
+        },
+        "BB-ThankYou-referral-details-description-text": {
+            "note": "Text for the thank you page referral details description text",
+            "value": "Were you referred by an existing Amazon employee?"
+        },
+        "BB-ThankYou-referral-details-yes-text": {
+            "note": "Text for the thank you page referral details radio button 'yes' text",
+            "value": "Yes"
+        },
+        "BB-ThankYou-referral-details-no-text": {
+            "note": "Text for the thank you page referral details radio button 'no' text",
+            "value": "No"
+        },
+        "BB-ThankYou-start-pre-hire-activities-title-text": {
+            "note": "Text for the thank you page start pre-hire activities title text",
+            "value": "Get started on pre-hire activities"
+        },
+        "BB-ThankYou-fill-wotc-description-text": {
+            "note": "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text",
+            "value": "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire."
+        },
+        "BB-ThankYou-get-started-button-text": {
+            "note": "Text for the thank you page let's get started button text",
+            "value": "Let's get started"
+        },
+        "BB-ThankYou-get-pre-hire-appointment-details-text": {
+            "note": "Text for the thank you page pre-hire appointment details text",
+            "value": "Pre-hire appointment details"
+        },
+        "BB-ThankYou-nhe-appointment-details-visit-us-text": {
+            "note": "Text for the thank you page nhe appointment details visit us text",
+            "value": "Visit us for a 30 minute session anytime between {startTime} - {endTime}."
+        },
+        "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text": {
+            "note": "Text for the thank you page nhe appointment details flyout appointment details title text",
+            "value": "Appointment details"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text": {
+            "note": "Text for the thank you page nhe appointment details flyout things to bring text",
+            "value": "Things to bring"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text": {
+            "note": "Text for the thank you page nhe appointment details flyout original unexpired photo id text",
+            "value": "Original unexpired photo ID"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text": {
+            "note": "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text",
+            "value": "Original unexpired work authorization document"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text": {
+            "note": "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text",
+            "value": "Click <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents."
+        },
+        "BB-ThankYou-nhe-appointment-flyout-special-assistance-text": {
+            "note": "Text for the thank you page nhe appointment details flyout special assistance text",
+            "value": "Special assistance"
+        },
+        "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text": {
+            "note": "Text for the thank you page nhe appointment details flyout accommodations assistance text",
+            "value": "If you require any accommodations, such as an ASL interpreter for the hiring event, please go to <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> and chat with us to request an interpreter. Please contact us immediately upon scheduling your appointment. We need at least 48 hours prior to your appointment to make arrangements."
+        },
+        "BB-ThankYou-referral-login-label-text": {
+            "note": "Text for the thank you page referral login input label text",
+            "value": "Please provide your referrer login ID (lower case letters only)"
+        },
+        "BB-ThankYou-referral-login-empty-error-text": {
+            "note": "Text for the thank you page referral login input empty error text",
+            "value": "Please provide your referrer login ID."
+        },
+        "BB-ThankYou-referral-login-regex-error-text": {
+            "note": "Text for the thank you page referral login input regex error text",
+            "value": "User ID should contain only lower case letters and should be at least 4 letters long."
         }
     }
 }
