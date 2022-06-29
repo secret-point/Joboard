@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { BackToTopButton } from '@amzn/stencil-react-components/back-to-top-button';
 import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
@@ -136,6 +137,7 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
           </Switch>
         </Router>
+        <BackToTopButton />
       </Col>
   );
 };
