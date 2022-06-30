@@ -62,6 +62,38 @@
             "note": "Text for the create application button",
             "value": "Crear aplicación"
         },
+        "BB-ConsentPage-flyout-user-data-policy-title-text": {
+            "note": "Text for the flyout user data policy title text",
+            "value": "Política de datos de usuario"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph1-text": {
+            "note": "Text for the flyout user data policy paragraph 1 text",
+            "value": "Amazon está comprometida con un lugar de trabajo diverso e inclusivo. Amazon es un empleador que ofrece igualdad de oportunidades y no discrimina por motivos de raza, origen nacional, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición legalmente protegida. Para las personas con discapacidades que deseen solicitar una adaptación, visite <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https:/ /www.amazon.jobs/en/disability/us</a>"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph2-text": {
+            "note": "Text for the flyout user data policy paragraph 2 text",
+            "value": "Amazon se toma muy en serio la protección de sus datos personales y solo procesará sus datos personales de acuerdo con la ley. En particular, no compartimos sus datos personales con terceros sin su consentimiento previo, a menos que la ley nos obligue a hacerlo. A menos que usted exprese lo contrario, la empresa de contratación de Amazon almacenará sus datos personales en la base de datos electrónica mantenida por Amazon.com en los EE. UU. o una de sus afiliadas. Para obtener información completa sobre cómo Amazon almacena y procesa sus datos personales, haga clic aquí <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www. amazon.jobs/</a>"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph3-text": {
+            "note": "Text for the flyout user data policy paragraph 3 text",
+            "value": "Además del puesto que solicitó hoy, es posible que tengamos otros puestos que requieran las mismas funciones laborales o similares. Estos roles pueden ser puestos de tiempo completo, tiempo reducido, medio tiempo, estacionales y/o temporales que están disponibles en esta ubicación u otras ubicaciones cercanas de Amazon. No tiene la obligación de aceptar ningún puesto con Amazon o nuestros socios; sin embargo, al completar su solicitud, acepta ser considerado para puestos del mismo nivel, por horas, dentro de un radio de 30 millas del sitio de su solicitud. Esto incluye compartir la información de su solicitante con nuestros socios (agencias de personal) que contratan para nuestras necesidades de asociados regulares y temporales."
+        },
+        "BB-ConsentPage-flyout-user-data-policy-by-applying-text": {
+            "note": "Text for the flyout user data policy by applying text",
+            "value": "Al aplicar, usted:"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 1 text",
+            "value": "reconoce que ha leído la descripción del trabajo para el puesto que está solicitando y que comprende los requisitos básicos necesarios para realizar el trabajo;"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 2 text",
+            "value": "acepta el procesamiento, análisis y evaluación de sus datos personales por parte de Amazon, salesforce.com o cualquier otro tercero para los fines de su aplicación y para cualquier otro propósito legítimo de Amazon. Para evitar dudas, el \"procesamiento\" de sus datos personales incluirá, entre otros, recopilar, recibir, registrar, organizar, cotejar, almacenar, actualizar, alterar, usar, difundir, distribuir, fusionar, vincular, bloquear, degradar, borrado o destrucción de sus datos personales;"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 3 text",
+            "value": "da su consentimiento para que Amazon conserve sus datos personales después del proceso de solicitud, a fin de ayudarlo con el control efectivo de sus procesos de solicitud de empleo y para que sus datos personales se almacenen en una base de datos electrónica en los EE. UU."
+        },
         "BB-StepHeader-view-progress-flyout-title": {
             "note": "Text for view progress flyout title",
             "value": "Ver progreso"

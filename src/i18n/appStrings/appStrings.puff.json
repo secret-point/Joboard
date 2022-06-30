@@ -62,6 +62,38 @@
             "note": "Text for the create application button",
             "value": "Create Application"
         },
+        "BB-ConsentPage-flyout-user-data-policy-title-text": {
+            "note": "Text for the flyout user data policy title text",
+            "value": "User Data Policy"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph1-text": {
+            "note": "Text for the flyout user data policy paragraph 1 text",
+            "value": "Amazon is committed to a diverse and inclusive workplace. Amazon is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph2-text": {
+            "note": "Text for the flyout user data policy paragraph 2 text",
+            "value": "Amazon takes your personal data protection seriously and will only process your personal data in accordance with the law. In particular, we do not share your personal data with any third party without your prior consent, unless compelled by law to do so. Unless you express otherwise, the hiring Amazon company will store your personal data in the electronic database maintained by Amazon.com in the USA or one of its affiliates. For full information on how Amazon stores and processes your personal data, please click here <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-paragraph3-text": {
+            "note": "Text for the flyout user data policy paragraph 3 text",
+            "value": "In addition to the role you applied for today, we may have other positions that require the same or similar job functions. These roles may be full-time, reduced-time, part-time, seasonal, and/or temporary positions that are available at this location or other nearby Amazon locations. You are under no obligation to accept any role with Amazon or our partners, however, by completing your application you agree to be considered for same level, hourly roles within a 30 mile radius of your application site. This includes sharing your applicant information with our partners (staffing agencies) that hire for both our regular and temporary associate needs."
+        },
+        "BB-ConsentPage-flyout-user-data-policy-by-applying-text": {
+            "note": "Text for the flyout user data policy by applying text",
+            "value": "By applying, you:"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 1 text",
+            "value": "are acknowledging that you have read the job description for the position you are applying for and that you understand the basic requirements needed to perform the job;"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 2 text",
+            "value": "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the “processing” of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;"
+        },
+        "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text": {
+            "note": "Text for the flyout user data policy applying acknowledging item 3 text",
+            "value": "consent to Amazon retaining your personal data after the application process, in order to assist it with the effective monitoring of its job application processes and to your personal data being stored in an electronic database in the USA."
+        },
         "BB-StepHeader-view-progress-flyout-title": {
             "note": "Text for view progress flyout title",
             "value": "View progress"
