@@ -10,7 +10,6 @@
   ],
   "dependencies": {
     "@amzn/arb-tools": "^0.1.1",
-    "@amzn/hvh-candidate-application-ui-components": "1.0.0",
     "@amzn/hvh-common-ui-library": "*",
     "@amzn/react-arb-tools": "^0.1.1",
     "@amzn/stencil-react-components": "*",
@@ -81,7 +80,7 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.4.4",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
