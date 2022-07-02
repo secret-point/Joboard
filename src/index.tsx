@@ -36,6 +36,7 @@ import { PageContainer } from "@amzn/stencil-react-components/page";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { MainWithSkipLink } from "@amzn/stencil-react-components/a11y";
 import { RESUME_APPLICATION } from "./components/pageRoutes";
+import { parseObjectToQueryString } from "./utils/helper";
 
 declare global {
   interface Window {
@@ -79,18 +80,20 @@ getInitialData()
 
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(urlParams));
 
-    if(currentOrigin !== CSDomain && featureList?.UNIFIED_DOMAIN?.isAvailable && process.env.NODE_ENV === "production") {
+    if(featureList?.UNIFIED_DOMAIN?.isAvailable && process.env.NODE_ENV === "production") {
       //add pathname on the url
       let pathName: string = RESUME_APPLICATION;
 
-      if (queryParams["page"]) {
-        pathName = queryParams["page"];
+      if (queryParams.page) {
+        pathName = queryParams.page;
 
         //remove page from queryParams
-        delete queryParams["page"];
+        delete queryParams.page;
       }
 
-      window.location.href = `${CSDomain}/application/#/${pathName}${urlParams}`;
+      const newQueryParam = parseObjectToQueryString(queryParams) || null;
+
+      window.location.href = `${CSDomain}/application/#/${pathName}${newQueryParam ? `?${newQueryParam}`: ''}`;
 
       //TODO after once we support both old and new BB UI we can have the logic to set window.href to wither old/new BB UI
       // const csApplicationURL = window.location.href.replace(currentOrigin, `${CSDomain}/application`);
