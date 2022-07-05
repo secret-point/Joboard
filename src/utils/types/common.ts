@@ -5,7 +5,6 @@ import {
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
-    FEATURE_FLAG,
     GOVERNMENT_TYPE,
     INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
@@ -13,6 +12,7 @@ import {
     SELF_IDENTIFICATION_STEPS,
     WORKFLOW_STEP_NAME
 } from "../enums/common";
+import { keys } from "ramda";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -35,7 +35,7 @@ export interface EnvConfig {
     defaultDaysHoursFilter: DaysHoursFilter[];
     defaultAvailableFilter: AvailableFilter;
     defaultAvailableFilterDS: AvailableFilter;
-    featureList?: FeatureFlagList;
+    featureList?: any;
     CSDomain: string;
 }
 
@@ -800,11 +800,4 @@ export interface DisabilityItem {
     title: string;
     translationKeyTitle: string;
 }
-
-export type FeatureFlagList = {
-    [key in FEATURE_FLAG]: {
-        isAvailable: boolean;
-    };
-};
-
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;
