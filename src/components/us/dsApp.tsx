@@ -48,13 +48,17 @@ import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentNotEligible from "./assessment/AssementNotEligible";
 import AssessmentFinished from "./assessment/AssessmentFinished";
 import CandidateWithdraws from "../common/CandidateWithdraws";
+import { BannerMessage } from "../common/BannerMessage";
+import { uiState } from "../../reducers/ui.reducer";
 
 interface MapStateToProps {
   appConfig: AppConfig,
+  ui: uiState
 }
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
-  const { appConfig } = props;
+  const { appConfig, ui } = props;
+  const { bannerMessage } = ui;
 
   // Will review and refacoter this logic later
   // const onClick = () => {
@@ -72,6 +76,7 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
       <Col padding='S300'>
         <AppLoader/>
         <CounterMessageBanner/>
+        {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage}/>}
         <Router>
           <Switch>
             <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>

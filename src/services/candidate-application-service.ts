@@ -6,6 +6,7 @@ import {
   UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
 import { Application } from "../utils/types/common";
+import { CreateApplicationResponse } from "../utils/api/types";
 
 export default class CandidateApplicationService {
 
@@ -30,7 +31,7 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async createApplicationDS( payload: CreateApplicationRequestDS ): Promise<Application> {
+  async createApplicationDS( payload: CreateApplicationRequestDS ): Promise<CreateApplicationResponse> {
     const response = await this.axiosInstance.post("/ds/create-application/", payload);
     return response.data;
   }

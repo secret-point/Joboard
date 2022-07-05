@@ -3,16 +3,18 @@ import {
     GET_ENV_CONFIG_TYPE,
     GET_INITIAL_APP_CONFIG_TYPE
 } from "../actions/AppConfigActions/appConfigActionTypes";
-import { GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
+import { BANNER_MESSAGE_TYPE, GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
 import { GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
 import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionTypes";
 import { APPLICATION_ACTION_TYPES } from "../actions/ApplicationActions/applicationActionTypes";
 import { CANDIDATE_ACTION_TYPES } from "../actions/CandidateActions/candidateActionTypes";
 import { WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
 import { NHE_ACTION_TYPES } from "../actions/NheActions/nheActionTypes";
+import { AlertMessage } from "../utils/types/common";
 
 export interface uiState {
     isLoading: boolean;
+    bannerMessage?: AlertMessage,
 }
 
 export const initUiState: uiState = {
@@ -71,6 +73,17 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 ...state,
                 isLoading: action.loadingStatus? action.loadingStatus : false
             };
+
+        case BANNER_MESSAGE_TYPE.SET_BANNER_MESSAGE:
+            return {
+                ...state,
+                bannerMessage: action.payload
+            }
+        case BANNER_MESSAGE_TYPE.RESET_BANNER_MESSAGE:
+            return {
+                ...state,
+                bannerMessage: undefined
+            }
 
         default:
             return state;

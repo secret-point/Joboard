@@ -25,7 +25,7 @@ import {
 import CandidateApplicationService from "../services/candidate-application-service";
 import { actionWorkflowRequestEnd, actionWorkflowRequestInit, completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
-import { routeToAppPageWithPath, sanitizeApplicationData } from "../utils/helper";
+import { routeToAppPageWithPath, sanitizeApplicationData, setEpicApiCallErrorMessage } from "../utils/helper";
 import {
     APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
     APPLICATION_STATE_TO_STEP_NAME,
@@ -34,6 +34,9 @@ import {
 import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../utils/enums/common";
 import { CONSENT } from "../components/pageRoutes";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
+import { epicSwitchMapHelper } from "./helper";
+import { CreateApplicationResponse, ProxyApiError } from "../utils/api/types";
+import { CreateApplicationErrorMessage } from "../utils/api/errorMessages";
 
 export const GetApplicationEpic = ( action$: Observable<any> ) => {
     return action$.pipe(
@@ -95,19 +98,27 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
         switchMap(( action: CreateApplicationActionDS ) =>
             from(new CandidateApplicationService().createApplicationDS(action.payload))
                 .pipe(
+                    switchMap(epicSwitchMapHelper),
                     switchMap(async ( response ) => {
                         return response
                     }),
-                    map((data: Application) => {
-                        if (action.onSuccess) action.onSuccess(data);
-                        return actionCreateApplicationDSSuccess(data);
+                    map((response: CreateApplicationResponse) => {
+                      const application = response.data;
+                        if (action.onSuccess) {
+                          action.onSuccess(application)
+                        }
+                        return actionCreateApplicationDSSuccess(application);
                     }),
-                    catchError(( error: any ) => {
-                        if(action.onError) action.onError();
-                        return of(actionCreateApplicationDSFailed({
-                            error
-                        }));
-                    })
+                  catchError(( error: ProxyApiError ) => {
+                    if(action.onError){
+                      action.onError(error);
+                    }
+
+                    const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
+                    setEpicApiCallErrorMessage(errorMessage);
+
+                    return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
+                  })
                 )
         )
     )
@@ -166,19 +177,26 @@ export const CreateApplicationAndSkipScheduleDSEpic = ( action$: Observable<any>
         ofType(APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE),
         switchMap(( action: CreateApplicationAndSkipScheduleActionDS ) =>
             from(new CandidateApplicationService().createApplicationDS(action.payload)).pipe(
+                switchMap(epicSwitchMapHelper),
                 switchMap(async ( response ) => {
                     return response
                 }),
-                map((data: Application) => {
-                    if (action.onSuccess) action.onSuccess(data);
-                    createApplicationAndSkipScheduleHelper(data);
-                    return actionCreateApplicationAndSkipScheduleDSSuccess(data);
+                map((response: CreateApplicationResponse) => {
+                  const application = response.data;
+                  if (action.onSuccess) {
+                    action.onSuccess(application)
+                  }
+                  createApplicationAndSkipScheduleHelper(application);
+                  return actionCreateApplicationAndSkipScheduleDSSuccess(application);
                 }),
-                catchError(( error: any ) => {
-                    if(action.onError) action.onError(error);
-                    return of(actionCreateApplicationAndSkipScheduleDSFailed({
-                        error
-                    }));
+                catchError(( error: ProxyApiError ) => {
+                    if(action.onError){
+                      action.onError(error);
+                    }
+
+                    setEpicApiCallErrorMessage(error.errorCode);
+
+                    return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
                 })
             )
         )

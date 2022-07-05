@@ -13,6 +13,7 @@ import {
     WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { keys } from "ramda";
+import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 
 export interface QueryParamItem {
     paramName?: QUERY_PARAMETER_NAME,
@@ -800,4 +801,13 @@ export interface DisabilityItem {
     title: string;
     translationKeyTitle: string;
 }
+
+export interface AlertMessage {
+    title: string,
+    isDismissible?: boolean,
+    type: MessageBannerType,
+    visible: boolean,
+    dismissTime?: number
+}
+
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;

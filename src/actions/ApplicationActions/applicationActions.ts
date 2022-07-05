@@ -25,6 +25,7 @@ import {
     UpdateWorkflowStepNameSuccessAction,
 } from "./applicationActionTypes";
 import { loadingStatusHelper } from "../../utils/helper";
+import { ProxyApiError } from "../../utils/api/types";
 
 export const actionGetApplication = ( payload: GetApplicationRequest, onSuccess?: Function, onError?: Function ): GetApplicationAction => {
     return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION, payload }
@@ -86,6 +87,6 @@ export const actionCreateApplicationAndSkipScheduleDSSuccess = ( payload: Applic
     return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS, payload, loadingStatus:loadingStatusHelper() }
 };
 
-export const actionCreateApplicationAndSkipScheduleDSFailed = ( payload: any ): CreateApplicationAndSkipScheduleFailedActionDS => {
+export const actionCreateApplicationAndSkipScheduleDSFailed = ( payload: ProxyApiError ): CreateApplicationAndSkipScheduleFailedActionDS => {
     return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED, payload }
 };

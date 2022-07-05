@@ -1,8 +1,11 @@
-import { CountryStateConfig } from "../../utils/types/common";
+import { AlertMessage, CountryStateConfig } from "../../utils/types/common";
 import {
+    BANNER_MESSAGE_TYPE,
     GET_STATE_CONFIG_TYPE,
     GetCountryStateConfigAction,
     GetCountryStateConfigSuccessAction,
+    ResetBannerMessage,
+    SetBannerMessage
 } from "./uiActionTypes";
 
 export const actionGetCountryStateConfig = (): GetCountryStateConfigAction => {
@@ -19,4 +22,17 @@ export const actionGetCountryStateConfigActionSuccess = (
 export const actionGetCountryStateConfigActionFailed = ( payload: any ) => { // Refine errorMessage type later): GetCountryStateConfigFailedAction
     return { type: GET_STATE_CONFIG_TYPE.FAILED, payload }
 };
+
+export const actionSetBannerMessage = (payload: AlertMessage): SetBannerMessage => {
+    return {
+        type: BANNER_MESSAGE_TYPE.SET_BANNER_MESSAGE,
+        payload
+    }
+}
+
+export const actionResetBannerMessage = (): ResetBannerMessage => {
+    return {
+        type: BANNER_MESSAGE_TYPE.RESET_BANNER_MESSAGE
+    }
+}
 

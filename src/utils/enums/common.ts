@@ -170,3 +170,43 @@ export enum PROXY_APPLICATION_STATE {
     VETERAN_STATUS_SAVED = "VETERAN_STATUS_SAVED",
     SELF_IDENTIFICATION_COMPLETED = "SELF_IDENTIFICATION_COMPLETED",
 }
+
+export enum PROXY_ERROR_MESSAGE {
+    //application
+    BGC_VALIDATION_FAILED = "Additional background information is not valid, Please update all required fields",
+    MISSING_REFERRAL_INFORMATION = "Missing referral information",
+    FAILED_UPDATE_APPLICATION = "Failed to update the application",
+    NO_ACCESS_TO_APPLICATION = "you can not access this application",
+    FAILED_TERMINATE_APPLICATION = "Failed to terminate application",
+    FAILED_UPDATE_WOTC = "Failed to update WOTC status",
+    FAILED_UPDATE_STEP = "Failed to updating the step name",
+    CAN_NOT_CREATE_APPLICATION = "you can not create application",
+    APPLICATION_ID_REQUIRED = "applicationId is required to get application data",
+    DUPLICATE_SSN = 'The SSN or National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/logout) and try logging in with that email, using the "Forgot your personal pin?" link if needed. If you need help, please contact us via email or chat at [www.amazon.com/applicationhelp](https://www.amazondelivers.jobs/contactus)',
+    MAX_SSN_EDITS = 'Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please [Log Out](/logout) and try logging in with that email, using the "Forgot your personal pin?" link if needed. If you need help, please contact us via email or chat at [www.amazon.com/applicationhelp](https://www.amazondelivers.jobs/contactus)',
+    INVALID_SSN = "Update to application failed because provided National Identity Number is invalid. Please enter correct and complete National Identity Number before proceeding.",
+    MISMATCH_SIGNATURES = "eSignatures do not match. Please use the same text for each eSignature.",
+    //requisition
+    FETCH_REQUISITION_ERROR = "Unable to fetch requisition.",
+    REQUISITION_INFO_ERROR = "Unable to fetch requisition information.",
+    FETCH_CHILD_REQUISITION_ERROR = "Unable to fetch child requisition.",
+    JOB_DES_ERROR = "Unable to fetch job description.",
+    FETCH_TIME_SLOT_ERROR = "Something went wrong! Please refresh the page or try again later",
+    ALL_SHIFT_FILLED = "All Shifts Filled",
+    FETCH_SHIFTS_ERROR = "Something went wrong while fetching jobs! Please refresh the page or try again later",
+    FETCH_JOB_ERROR = "Unable to fetch job.",
+    JOB_INFO_ERROR = "Unable to fetch job information.",
+    FETCH_HCR_ERROR = "Unable to fetch head count request.",
+    FETCH_SHIFT_PREF_ERROR = "Unable to fetch shift preferences.",
+    SHIFTS_BAD_REQUEST = "Failed to retrieve jobs at the moment. Please try again after some time.",
+    SCHEDULE_NOT_AVAILABLE = "The schedule you have selected is no longer available, please select another schedule.",
+}
+
+export enum CREATE_APPLICATION_ERROR_CODE {
+    MISSING_REQUIRED_FIELDS = "MISSING_REQUIRED_FIELDS",
+    CANDIDATE_NOT_FOUND = "CANDIDATE_NOT_FOUND",
+    CANDIDATE_IS_INACTIVE = "CANDIDATE_IS_INACTIVE",
+    APPLICATION_ALREADY_EXIST = "APPLICATION_ALREADY_EXIST",
+    VERSION_MISMATCH = "VERSION_MISMATCH",
+    INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR",
+}

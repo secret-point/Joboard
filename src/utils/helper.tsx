@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    AlertMessage,
     Application,
     BgcStepConfig,
     Candidate,
@@ -79,6 +80,8 @@ import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
 import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
+import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
 
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
@@ -856,4 +859,18 @@ export const onAssessmentStart =  (applicationData: Application) => {
     //     postAdobeMetrics(payload.options.adobeMetrics, {});
     // }
     assessmentUrl && window.location.assign(assessmentUrl);
+}
+
+export const setEpicApiCallErrorMessage = (errorMessage: string, isDismissible?: boolean) => {
+
+    const alertMessage: AlertMessage = {
+        type: MessageBannerType.Error,
+        title: errorMessage,
+        visible: true,
+        isDismissible,
+        dismissTime: 5000
+    }
+
+    //Show Banner when error is due to unauthorized, we may extend logic to show error banner in future.
+    boundSetBannerMessage(alertMessage);
 }
