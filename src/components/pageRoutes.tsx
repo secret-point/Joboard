@@ -17,4 +17,5 @@ export const WOTC = 'wotc';
 export const ASSESSMENT_CONSENT = 'assessment-consent';
 export const ASSESSMENT_NOT_ELIGIBLE = 'assessment-not-eligible';
 export const ASSESSMENT_FINISHED = 'assessment-finished';
-export const CANDIDATE_WITHDRAWS = 'candidate-withdraws'
+export const CANDIDATE_WITHDRAWS = 'candidate-withdraws';
+export const CALI_DISCLOSURE = 'cali-disclosure';

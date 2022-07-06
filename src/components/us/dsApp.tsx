@@ -25,7 +25,8 @@ import {
   SELF_IDENTIFICATION,
   SESSION_TIMEOUT,
   THANK_YOU,
-  WOTC
+  WOTC,
+  CALI_DISCLOSURE
 } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -50,6 +51,7 @@ import AssessmentFinished from "./assessment/AssessmentFinished";
 import CandidateWithdraws from "../common/CandidateWithdraws";
 import { BannerMessage } from "../common/BannerMessage";
 import { uiState } from "../../reducers/ui.reducer";
+import CaliDisclosure from "./caliDisclosure/CaliDisclosure";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -139,6 +141,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
               <CandidateWithdraws/>
+            </Route>
+            <Route path={`/${CALI_DISCLOSURE}`} exact>
+              <CaliDisclosure/>
             </Route>
           </Switch>
         </Router>

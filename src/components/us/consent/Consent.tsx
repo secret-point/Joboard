@@ -90,7 +90,7 @@ const ConsentPage = (props: MapStateToProps) => {
                     </li>
                     <li>
                         <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-by-applying-acknowledging-item2-text", "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the “processing” of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;")}
+                            {t("BB-ConsentPage-flyout-user-data-policy-by-applying-acknowledging-item2-text", "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;")}
                         </Text>
                     </li>
                     <li>

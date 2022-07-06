@@ -88,7 +88,7 @@
         },
         "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text": {
             "note": "Text for the flyout user data policy applying acknowledging item 2 text",
-            "value": "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the “processing” of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;"
+            "value": "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;"
         },
         "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text": {
             "note": "Text for the flyout user data policy applying acknowledging item 3 text",
@@ -456,11 +456,11 @@
         },
         "BB-non-fcra-fadv-acknowledgement-item-one": {
             "note": "Text for non fcra acknowledgement number one for FADV bgcVendor",
-            "value": "The background check provider or “CRA”, who will perform the background check is First Advantage, is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com."
+            "value": "The background check provider or \"CRA\", who will perform the background check is First Advantage, is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com."
         },
         "BB-non-fcra-accurate-acknowledgement-item-one": {
             "note": "Text for non fcra acknowledgement number one for ACCURATE bgcVendor",
-            "value": "The background check provider or “CRA”, who will perform the background check is Accurate Background, is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than Accurate Background."
+            "value": "The background check provider or \"CRA\", who will perform the background check is Accurate Background, is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorization, (1) during my employment, if any, and (2) from CRAs other than Accurate Background."
         },
         "BB-non-fcra-fadv-acknowledgement-item-two": {
             "note": "Text for non fcra acknowledgement number two for FADV bgcVendor",
@@ -944,6 +944,110 @@
         },
         "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text": {
             "note": "Text for the protected veteran select form next button text",
+            "value": "Next"
+        },
+        "BB-cali-disclosure-page-title-text": {
+            "note": "Text for the california disclosure page title text",
+            "value": "California Disclosure Regarding Investigative Consumer Reports"
+        },
+        "BB-cali-disclosure-page-in-connection-text": {
+            "note": "Text for the california disclosure page in connection paragraph text",
+            "value": "In connection with my possible employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), Amazon may procure an investigative consumer report (\"Report\"), also known as a background check, about me from the following consumer reporting agency:"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-name-text": {
+            "note": "Text for the california disclosure page vendor accurate name text",
+            "value": "Accurate Background, LLC (\"Accurate\")"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-address-line1-text": {
+            "note": "Text for the california disclosure page vendor accurate address line 1 text",
+            "value": "7515 Irvine Center Dr."
+        },
+        "BB-cali-disclosure-page-vendor-accurate-address-line2-text": {
+            "note": "Text for the california disclosure page vendor accurate address line 2 text",
+            "value": "Irvine, CA 92618"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-phone-text": {
+            "note": "Text for the california disclosure page vendor accurate phone number text",
+            "value": "1-800-216-8024"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-url-text": {
+            "note": "Text for the california disclosure page vendor accurate home page url number text",
+            "value": "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-text": {
+            "note": "Text for the california disclosure page vendor accurate understand text",
+            "value": "I understand that:"
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text": {
+            "note": "Text for the california disclosure page vendor accurate understand list item 1 text",
+            "value": "To the extent a Report is requested from Accurate, information contained in such Report will be used solely to determine my eligibility for employment."
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text": {
+            "note": "Text for the california disclosure page vendor accurate understand list item 2 text",
+            "value": "Information obtained by Accurate, and included in any Report, may be obtained through a variety of means, including inspection of lawfully available documents and information and/or direct or indirect contact and interviews with former employers, schools, financial institutions, landlords, public agencies, and others such as my neighbors, friends, and associates with whom I am acquainted and who may have such knowledge."
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text": {
+            "note": "Text for the california disclosure page vendor accurate understand list item 3 text",
+            "value": "Investigation(s) to be conducted by Accurate, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record, and criminal record, subject to any limitations imposed by applicable federal and state law."
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text": {
+            "note": "Text for the california disclosure page vendor accurate understand list item 4 text",
+            "value": "Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report is requested by Amazon on me, I may view the file Accurate maintains on me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified mail or by appearing at Accurate’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from Accurate over the telephone, at my expense, upon submitting proper identification and a written request to Accurate for telephone disclosure. I understand that Accurate has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at Accurate’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to Accurate."
+        },
+        "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text": {
+            "note": "Text for the california disclosure page vendor accurate understand list item 5 text",
+            "value": "Information about Accurate's privacy practices is available at <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-name-text": {
+            "note": "Text for the california disclosure page vendor fadv name text",
+            "value": "First Advantage"
+        },
+        "BB-cali-disclosure-page-vendor-fadv-address-line1-text": {
+            "note": "Text for the california disclosure page vendor fadv address line 1 text",
+            "value": "1 Concourse Parkway NE, Suite 200."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-address-line2-text": {
+            "note": "Text for the california disclosure page vendor fadv address line 2 text",
+            "value": "Atlanta, GA 30328"
+        },
+        "BB-cali-disclosure-page-vendor-fadv-phone-text": {
+            "note": "Text for the california disclosure page vendor fadv phone number text",
+            "value": "1-800-845-6004"
+        },
+        "BB-cali-disclosure-page-vendor-fadv-url-text": {
+            "note": "Text for the california disclosure page vendor fadv home page url number text",
+            "value": "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>"
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-text": {
+            "note": "Text for the california disclosure page vendor fadv understand text",
+            "value": "I understand that:"
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text": {
+            "note": "Text for the california disclosure page vendor fadv understand list item 1 text",
+            "value": "To the extent a Report is requested from First Advantage, information contained in such Report will be used solely to determine my eligibility for employment."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text": {
+            "note": "Text for the california disclosure page vendor fadv understand list item 2 text",
+            "value": "Information obtained by First Advantage, and included in any Report, may be obtained through a variety of means, including inspection of lawfully available documents and information and/or direct or indirect contact and interviews with former employers, schools, financial institutions, landlords, public agencies, and others such as my neighbors, friends, and associates with whom I am acquainted and who may have such knowledge."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text": {
+            "note": "Text for the california disclosure page vendor fadv understand list item 3 text",
+            "value": "Investigation(s) to be conducted by First Advantage, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record, and criminal record, subject to any limitations imposed by applicable federal and state law."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text": {
+            "note": "Text for the california disclosure page vendor fadv understand list item 4 text",
+            "value": "Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report is requested by Amazon on me, I may view the file First Advantage maintains on me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified mail or by appearing at First Advantage’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from First Advantage over the telephone, at my expense, upon submitting proper identification and a written request to First Advantage for telephone disclosure. I understand that First Advantage has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at First Advantage’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to First Advantage."
+        },
+        "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text": {
+            "note": "Text for the california disclosure page vendor fadv understand list item 5 text",
+            "value": "Information about First Advantage's privacy practices is available at <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>."
+        },
+        "BB-cali-disclosure-page-certify-checkbox-text": {
+            "note": "Text for the california disclosure page certify checkbox text",
+            "value": "I certify that I have read this document and that I understand it, and that, pursuant to this CALIFORNIA DISCLOSURE REGARDING INVESTIGATIVE CONSUMER REPORTS, I authorize Amazon to obtain an investigative consumer report about me."
+        },
+        "BB-cali-disclosure-page-next-button-text": {
+            "note": "Text for the california disclosure page next button text",
             "value": "Next"
         },
         "BB-nhe-page-title-text": {
