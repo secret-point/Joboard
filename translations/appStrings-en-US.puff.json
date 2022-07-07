@@ -1285,6 +1285,14 @@
         "BB-ThankYou-referral-login-regex-error-text": {
             "note": "Text for the thank you page referral login input regex error text",
             "value": "User ID should contain only lower case letters and should be at least 4 letters long."
+        },
+        "BB-WOTC-page-title-text": {
+            "note": "Text for the WOTC page title text",
+            "value": "Work opportunity tax credit questionnaire"
+        },
+        "BB-WOTC-page-description-text": {
+            "note": "Text for the WOTC page description text",
+            "value": "Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programs and will in no way negatively impact any hiring, retention or promotion decisions."
         }
     }
 }

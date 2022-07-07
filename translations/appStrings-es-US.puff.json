@@ -1285,6 +1285,14 @@
         "BB-ThankYou-referral-login-regex-error-text": {
             "note": "Text for the thank you page referral login input regex error text",
             "value": "La identificación de usuario debe contener solo letras minúsculas y debe tener al menos 4 letras."
+        },
+        "BB-WOTC-page-title-text": {
+            "note": "Text for the WOTC page title text",
+            "value": "Cuestionario de crédito fiscal de oportunidad de trabajo"
+        },
+        "BB-WOTC-page-description-text": {
+            "note": "Text for the WOTC page description text",
+            "value": "Las pruebas de Amazon IAT participan en programas de crédito fiscal federal o estatal. La información que proporcione se utilizará para determinar la elegibilidad de la empresa para estos programas y de ninguna manera afectará negativamente las decisiones de contratación, retención o promoción."
         }
     }
 }
