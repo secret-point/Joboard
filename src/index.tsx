@@ -249,7 +249,10 @@ getInitialData()
                                         <Route path="/application/us/">
                                             <DragonStoneAppUS/>
                                         </Route>
-                                        <Route path="/" render={() => <Redirect to="/application/us/"/>} />
+                                        <Route path="/" render={() => <Redirect to={{
+                                            pathname: "/application/us/",
+                                            search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
+                                        }} />} />
                                     </Switch>
                                 </MainWithSkipLink>
                             </PageContainer>
