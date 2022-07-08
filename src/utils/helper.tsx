@@ -874,3 +874,7 @@ export const setEpicApiCallErrorMessage = (errorMessage: string, isDismissible?:
     //Show Banner when error is due to unauthorized, we may extend logic to show error banner in future.
     boundSetBannerMessage(alertMessage);
 }
+
+export const isI18nSelectOption = (option: any) => {
+    return typeof option === 'object' && option.translationKey && option.value && option.showValue;
+}

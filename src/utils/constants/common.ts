@@ -215,7 +215,7 @@ export const US_StateSpecificNotices: StateSpecificNotice[] = [
     }
 ]
 
-export const AdditionalBGCFormConfig: FormInputItem[] = [
+export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
     {
         hasError: false,
         labelText: 'Address Line 1',
@@ -227,7 +227,6 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-address-line-one-placeholder-text'
     },
     {
         hasError: false,
@@ -239,8 +238,7 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         id: 'additionalBGCAddressLineTwo',
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
-        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-address-line-two-placeholder-text'
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text'
     },
     {
         hasError: false,
@@ -253,7 +251,6 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-city-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-city-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-city-placeholder-text'
     },
     {
         hasError: false,
@@ -267,7 +264,8 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         selectOptions: ['Al -- Alabama', 'Wa -- Washington'], // TODO to be aligned with actual state list,
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-state-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-state-placeholder-text'
+        placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-state-placeholder-text',
+        placeholder: 'Select a state'
     },
     {
         hasError: false,
@@ -281,49 +279,10 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-zipcode-placeholder-text'
     },
-    {
-        hasError: false,
-        labelText: 'Country',
-        errorMessage: 'Please enter a valid country',
-        required: true,
-        name: 'Country',
-        dataKey: 'additionalBackgroundInfo.address.country',
-        id: 'additionalBGC_Country',
-        type: 'select',
-        selectOptions: ['United States'] ,// TODO to be aligned with actual all countries list
-        labelTranslationKey: 'BB-BGC-Additional-bgc-form-country-label-text',
-        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-country-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-country-placeholder-text'
-    },
-    {
-        hasError: false,
-        labelText: 'National ID number',
-        errorMessage: 'Please enter a valid National ID Type',
-        required: true,
-        name: 'National ID Type',
-        dataKey: 'additionalBackgroundInfo.governmentIdType',
-        id: 'additionalBGC_IdNumber',
-        type: 'select',
-        selectOptions: ['Social Security Number'], // TODO to be aligned with actual all countries list
-        labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-label-text',
-        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-country-national-id-type-text'
-    },
-    {
-        dataKey: 'additionalBackgroundInfo.idNumber',
-        labelText: "Id Number",
-        required: true,
-        type: 'text',
-        regex: '^[0-9]{9}$',
-        id: "idNumberInput",
-        name: 'idNumber',
-        errorMessage: 'Please enter a valid 9 digits social security number without dash',
-        labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-label-text',
-        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-country-national-id-number-text'
-    },
+];
+
+export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
     {
         hasError: false,
         labelText: 'Date of Birth',
@@ -335,9 +294,10 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
         type: 'datePicker',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-dob-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-dob-error-text',
-        placeholder: 'BB-BGC-Additional-bgc-form-country-dob-text'
     }
-];
+]
+
+export const AdditionalBGCFormConfig: FormInputItem[] = AdditionalBGCFormConfigPart1.concat(AdditionalBGCFormConfigPart2);
 
 export const initScheduleStateFilters: ScheduleStateFilters = {
     maxHoursPerWeek: DESIRED_WORK_HOURS.FORTY,
@@ -604,6 +564,15 @@ export const ProtectedVeteranDefinitionList: {title: string, titleTranslationKey
         title: "<b>Armed Forces Service Medal Veteran</b>: a veteran who, while serving on active duty in the U.S. military, ground, naval or air service, participated in a United States military operation for which an Armed Forces service medal was awarded pursuant to <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Executive Order</a>.",
         titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text"
     }
+]
+
+export const SocialSecurityNumberValue = 'United States - Social Security Number'
+
+export const CountrySelectOptions = [
+    { showValue: 'United States', value: 'United States', translationKey: 'BB-Country-United-States', countryCode: 'US' }
+]
+export const NationIdTypeSelectOptions = [
+    { showValue: 'Social Security Number', value: SocialSecurityNumberValue, translationKey: 'BB-BGC-Additional-bgc-form-national-id-options-ssn' }
 ]
 
 export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";

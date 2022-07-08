@@ -40,3 +40,10 @@ export const translateWithFormat = (
     : defaultString;
   return translation;
 };
+
+// Some use case needs useTranslation to call t function, this function help find string key in such scenario
+export const mapI18nStringKey = (stringId: string) => {
+  const locale = getLocale();
+  return i18next.exists([locale + '.appStrings.' + stringId]) ? locale + '.appStrings.' + stringId : locale.substring(0, 2) + '.appStrings.' + stringId;
+};
+

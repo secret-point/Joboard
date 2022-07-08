@@ -5,7 +5,6 @@ import {
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
-    GOVERNMENT_TYPE,
     INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
     SCHEDULE_FILTER_TYPE,
@@ -615,7 +614,7 @@ export interface FormInputItem {
     dataKey: string;
     type: string;
     defaultValue?: string;
-    selectOptions?: any[];
+    selectOptions?: any[] | i18nSelectOption[]
     required?: boolean,
     regex?: string,
     id: string,
@@ -719,11 +718,12 @@ export interface AdditionalBackgroundInfoRequest {
     mostRecentBuildingWorkedAtAmazon: string;
     mostRecentTimePeriodWorkedAtAmazon: string;
     previousLegalNames: string[];
-    governmentIdType: GOVERNMENT_TYPE;
+    governmentIdType: string;
     idNumber: string;
     dateOfBirth: string;
     address: Address;
     convictionDetails: string;
+    isWithoutSSN: boolean;
 }
 
 export interface SelfIdentificationInfo {
@@ -811,3 +811,10 @@ export interface AlertMessage {
 }
 
 export type InputType = "number" | "text" | "tel" | "url" | "email" | "password" | undefined;
+
+export type i18nSelectOption = {
+    showValue: string,
+    value: string,
+    translationKey: string,
+    countryCode?: string
+}

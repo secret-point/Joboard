@@ -1,10 +1,18 @@
-import React, { ChangeEvent, useEffect } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
-import { H4 } from "@amzn/stencil-react-components/text";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { H4, Label, Text } from "@amzn/stencil-react-components/text";
+import { Checkbox } from '@amzn/stencil-react-components/form';
+import { MessageBanner, MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import CriminalRecordForm from "./CriminalRecordForm";
 import PreviousLegalNameForm from "./PreviousLegalNameForm";
-import { AdditionalBGCFormConfig } from "../../../utils/constants/common";
-import { FormInputItem } from "../../../utils/types/common";
+import {
+    AdditionalBGCFormConfigPart1,
+    AdditionalBGCFormConfigPart2,
+    CountrySelectOptions,
+    NationIdTypeSelectOptions,
+    SocialSecurityNumberValue
+} from "../../../utils/constants/common";
+import { FormInputItem, i18nSelectOption } from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -23,6 +31,7 @@ import {
     boundSetCandidatePatchRequest,
     boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
+import { WithModal, ModalContent } from '@amzn/stencil-react-components/modal';
 import { handleSubmitAdditionalBgc } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 
@@ -41,13 +50,45 @@ interface AdditionalBGCInfoProps {
 type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 
 const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
-
     const { candidate, application, bgc } = props;
     const { candidatePatchRequest, formError } = candidate;
     const { candidateData } = candidate.results
     const { stepConfig } = bgc;
     const applicationData = application.results;
-    const additionalBgc = candidateData?.additionalBackgroundInfo;
+    const additionalBgc = candidateData?.additionalBackgroundInfo || {};
+
+    let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
+    let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
+    let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
+
+    // TODO: customized based on country
+    if (!countryDefaultValue){
+        countryDefaultValue = CountrySelectOptions[0].value
+        set(additionalBgc, 'address.country', countryDefaultValue)
+        set(additionalBgc, 'address.countryCode', CountrySelectOptions[0].countryCode)
+    }
+
+    if (!nationIdTypeDefaultValue){
+        nationIdTypeDefaultValue = NationIdTypeSelectOptions[0].value
+        set(additionalBgc, 'governmentIdType', nationIdTypeDefaultValue)
+    }
+
+    if (!isWithoutSSNDefaultValue){
+        isWithoutSSNDefaultValue = false
+        set(additionalBgc, 'isWithoutSSN', isWithoutSSNDefaultValue)
+    }
+
+    const [nationalIdType, setNationalIdType] = useState(nationIdTypeDefaultValue);
+    const [isNoSSNChecked, setIsNoSSNChecked] = useState(isWithoutSSNDefaultValue);
+    const [isNoSSNModalConsentChecked, setIsNoSSNModalConsentChecked] = useState(false);
+
+    useEffect(() => {
+        const patches = [{value: isNoSSNChecked, dataKey: 'additionalBackgroundInfo.isWithoutSSN'}]
+
+        if(isNoSSNChecked) patches.push({value: '', dataKey: 'additionalBackgroundInfo.idNumber'})
+
+        SetNewCandidatePatchRequest(patches)
+    }, [isNoSSNChecked])
 
     useEffect(() => {
         boundSetCandidatePatchRequest({additionalBackgroundInfo: additionalBgc});
@@ -110,11 +151,58 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         boundSetCandidatePatchRequest(newCandidate);
     }
 
+    // TODO: handleSelectChange, handleDatePickerInput, handleInputChange to be replaced by this function
+    const SetNewCandidatePatchRequest = (patches: { dataKey: string, value: any }[]) => {
+        const newCandidate  = cloneDeep(candidatePatchRequest) || {};
+        patches.forEach(patch => set(newCandidate, patch.dataKey, patch.value));
+        boundSetCandidatePatchRequest(newCandidate);
+    }
+
     const handleClickNext = () => {
         if(candidatePatchRequest && candidateData && applicationData) {
             handleSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
         }
     }
+
+    const renderModal = ({ close }: { close: () => void }) => (
+        <ModalContent
+            titleText=''
+            buttons={[
+                <Button onClick={() => { close(); setIsNoSSNChecked(false) }} variant={ButtonVariant.Secondary}>
+                    {t('BB-BGC-no-ssn-modal-cancel-button', 'Cancel')}
+                </Button>,
+                <Button
+                    onClick={() => { close(); setIsNoSSNChecked(true); }}
+                    variant={ButtonVariant.Primary}
+                    disabled={!isNoSSNModalConsentChecked}
+                >
+                    {t('BB-BGC-no-ssn-modal-continue-button', 'Continue')}
+                </Button>
+            ]}>
+            <Col gridGap="S400">
+                <H4>{t('BB-BGC-no-ssn-modal-title', 'Are you sure you would like to proceed without a Social Security Number (SSN)?')}</H4>
+                <MessageBanner type={MessageBannerType.Warning} icon={<></>}>
+                    {t('BB-BGC-no-ssn-modal-warning-banner', 'If you have a SSN, you are required to provide it. Failing to do so can cause delays in the hiring process which may lead to missing your start date and losing your selected shift.')}
+                </MessageBanner>
+                <Text>
+                    {t('BB-BGC-no-ssn-modal-content-first-paragraph', 'By continuing, I am confirming that I do not have a SSN.  I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the onboarding process or during my employment.')}
+                </Text>
+                <Text>
+                    {t('BB-BGC-no-ssn-modal-content-second-paragraph', 'I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.')}
+                </Text>
+                <Row alignItems="center" gridGap="S200">
+                    <Checkbox
+                        id="noSSNModalConsentBox"
+                        checked={isNoSSNModalConsentChecked}
+                        onChange={event => setIsNoSSNModalConsentChecked(event.target.checked)}
+                    />
+                    <Label htmlFor="noSSNModalConsentBox">
+                        {t('BB-BGC-no-ssn-modal-consent-checkbox', 'I have read and understood the above terms.')}
+                    </Label>
+                </Row>
+            </Col>
+        </ModalContent>
+    );
 
     return (
         <Col>
@@ -122,7 +210,123 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             <CriminalRecordForm/>
             <PreviousLegalNameForm/>
             {
-                AdditionalBGCFormConfig.map(config => {
+                AdditionalBGCFormConfigPart1.map(config => {
+                    return (
+                        <Col key={config.labelText} gridGap={15}>
+                            {
+                                renderFormItem(config)
+                            }
+                        </Col>
+                    )
+                })
+            }
+            <FormInputSelect
+                inputItem={{
+                    labelText: 'Country',
+                    hasError: false,
+                    errorMessage: 'Please enter a valid country',
+                    required: true,
+                    name: 'Country',
+                    dataKey: 'additionalBackgroundInfo.address.country',
+                    id: 'additionalBGC_Country',
+                    type: 'select',
+                    selectOptions: CountrySelectOptions,
+                    labelTranslationKey: 'BB-BGC-Additional-bgc-form-country-label-text',
+                    errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-country-error-text',
+                }}
+                defaultValue={CountrySelectOptions.find(option => option.value === countryDefaultValue)}
+                handleChange={(option: i18nSelectOption) => {
+                    SetNewCandidatePatchRequest([
+                        { value: option.value, dataKey: 'additionalBackgroundInfo.address.country' },
+                        { value: option.countryCode || '', dataKey: 'additionalBackgroundInfo.address.countryCode' }
+                    ])
+                }}
+            />
+            <FormInputSelect
+                inputItem={{
+                    labelText: 'National ID',
+                    hasError: false,
+                    errorMessage: 'Please enter a valid National ID Type',
+                    required: true,
+                    name: 'National ID Type',
+                    dataKey: 'additionalBackgroundInfo.governmentIdType',
+                    id: 'additionalBGC_IdNumber',
+                    type: 'select',
+                    selectOptions: NationIdTypeSelectOptions,
+                    labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-label-text-revise',
+                    errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-type-error-text',
+                    placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-country-national-id-type-text'
+                }}
+                defaultValue={NationIdTypeSelectOptions.find(option => option.value === nationIdTypeDefaultValue)}
+                handleChange={(option: i18nSelectOption) => {
+                    SetNewCandidatePatchRequest([{value: option.value, dataKey: 'additionalBackgroundInfo.governmentIdType'}]);
+                    setNationalIdType(option.value);
+
+                    if (option.value !== SocialSecurityNumberValue) setIsNoSSNChecked(false);
+                }}
+            />
+            {
+                nationalIdType === SocialSecurityNumberValue &&
+                <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
+                    {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
+                </MessageBanner>
+            }
+            {
+                nationalIdType === SocialSecurityNumberValue &&
+                <Col className="formInputItem">
+                    <WithModal
+                        renderModal={renderModal}
+                        shouldCloseOnClickOutside={false}
+                    >
+                        {({ open }) => (
+                            <Row
+                                alignItems="center"
+                                gridGap={8}
+                            >
+                                <Checkbox
+                                    id="noSSNCheckbox"
+                                    checked={isNoSSNChecked}
+                                    onChange={(event) => {
+                                        if (event.target.checked) {
+                                            open();
+                                            return;
+                                        }
+
+                                        setIsNoSSNChecked(false);
+                                    }}
+                                />
+                                <Label htmlFor="noSSNCheckbox">
+                                    {t('BB-BGC-no-ssn-checkbox-label', 'I do not have a Social Security Number')}
+                                </Label>
+                            </Row>
+                        )}
+                    </WithModal>
+                </Col>
+            }
+            <FormInputText
+                inputItem={{
+                    labelText: "National ID Number",
+                    dataKey: 'additionalBackgroundInfo.idNumber',
+                    required: true,
+                    type: 'text',
+                    regex: '^[0-9]{9}$',
+                    id: "idNumberInput",
+                    name: 'idNumber',
+                    errorMessage: 'Please enter a valid 9 digits social security number without dash',
+                    labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-label-text-revise',
+                    errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
+                    ...(isNoSSNChecked && {
+                        placeholder: 'Social Security Number not available',
+                        placeholderTranslationKey: 'BB-BGC-no-ssn-national-id-number-disabled-placeholder'
+                    }),
+                }}
+                defaultValue={get(candidateData, 'additionalBackgroundInfo.idNumber') || ''}
+                inputValue={get(candidatePatchRequest, 'additionalBackgroundInfo.idNumber') || ''}
+                disabled={isNoSSNChecked}
+                handleChange={(e: ChangeEvent<HTMLInputElement>) => SetNewCandidatePatchRequest([{ value: e.target.value, dataKey: 'additionalBackgroundInfo.idNumber'}])}
+            />
+            {
+                AdditionalBGCFormConfigPart2.map(config => {
                     return (
                         <Col key={config.labelText} gridGap={15}>
                             {

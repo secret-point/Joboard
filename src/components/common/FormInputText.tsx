@@ -9,6 +9,8 @@ interface FormInputTextProps {
     inputItem: FormInputItem,
     defaultValue: string,
     handleChange: Function
+    disabled?: boolean
+    inputValue?: string
 }
 
 const FormInputText = ( props: FormInputTextProps ) => {
@@ -34,7 +36,6 @@ const FormInputText = ( props: FormInputTextProps ) => {
                         gridGap={"S300"}
                         dataTestId='formInputItem-renderLabel'
                         width="100%"
-                        placeholder={placeholderText || ''}
                     >
                         <Label htmlFor={id} style={{ width: '100%' }}>
                             <Row
@@ -65,6 +66,9 @@ const FormInputText = ( props: FormInputTextProps ) => {
                         onChange={e => handleChange(e)}
                         defaultValue={defaultValue}
                         max={new Date("2022-01-01T00:00").toDateString()}
+                        placeholder={placeholderText || ''}
+                        disabled={props.disabled}
+                        {...((props.inputValue !== undefined) && { value: props.inputValue })}
                     />
                 )}
             </InputWrapper>

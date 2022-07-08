@@ -290,10 +290,6 @@
             "note": "Text for the additional bgc form  address line 1 error message text",
             "value": "Please enter a valid address"
         },
-        "BB-BGC-Additional-bgc-form-address-line-one-placeholder-text": {
-            "note": "Text for the additional bgc form  address line 1 placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-address-line-two-label-text": {
             "note": "Text for the additional bgc form  address line 2 label text",
             "value": "Apartment, suite, .etc"
@@ -301,10 +297,6 @@
         "BB-BGC-Additional-bgc-form-address-line-two-error-text": {
             "note": "Text for the additional bgc form  address line 2 error message text",
             "value": "Please enter a valid address"
-        },
-        "BB-BGC-Additional-bgc-form-address-line-two-placeholder-text": {
-            "note": "Text for the additional bgc form  address line 2 placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-city-label-text": {
             "note": "Text for the additional bgc form  city label text",
@@ -314,10 +306,6 @@
             "note": "Text for the additional bgc form city error message text",
             "value": "Please enter a valid city"
         },
-        "BB-BGC-Additional-bgc-form-city-placeholder-text": {
-            "note": "Text for the additional bgc form city placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-state-label-text": {
             "note": "Text for the additional bgc form  state label text",
             "value": "State/Province"
@@ -325,10 +313,6 @@
         "BB-BGC-Additional-bgc-form-state-error-text": {
             "note": "Text for the additional bgc form state error message text",
             "value": "Please enter a valid State/Province"
-        },
-        "BB-BGC-Additional-bgc-form-state-placeholder-text": {
-            "note": "Text for the additional bgc form state placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-zipcode-label-text": {
             "note": "Text for the additional bgc form  zipcode label text",
@@ -338,10 +322,6 @@
             "note": "Text for the additional bgc form zipcode error message text",
             "value": "Please enter a valid 5 digits zipcode"
         },
-        "BB-BGC-Additional-bgc-form-zipcode-placeholder-text": {
-            "note": "Text for the additional bgc form zipcode placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-country-label-text": {
             "note": "Text for the additional bgc form  country label text",
             "value": "Country"
@@ -349,10 +329,6 @@
         "BB-BGC-Additional-bgc-form-country-error-text": {
             "note": "Text for the additional bgc form country error message text",
             "value": "Please enter a valid country"
-        },
-        "BB-BGC-Additional-bgc-form-country-placeholder-text": {
-            "note": "Text for the additional bgc form country placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-national-id-type-label-text": {
             "note": "Text for the additional bgc form  national id type label text",
@@ -362,10 +338,6 @@
             "note": "Text for the additional bgc form national id type error message text",
             "value": "Please enter a valid National ID type"
         },
-        "BB-BGC-Additional-bgc-form-national-id-type-placeholder-text": {
-            "note": "Text for the additional bgc form national id type placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-national-id-number-label-text": {
             "note": "Text for the additional bgc form  national id number label text",
             "value": "Id Number"
@@ -374,10 +346,6 @@
             "note": "Text for the additional bgc form national id number error message text",
             "value": "Please enter a valid 9 digits social security number without dash"
         },
-        "BB-BGC-Additional-bgc-form-national-id-number-placeholder-text": {
-            "note": "Text for the additional bgc form national id number placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-dob-label-text": {
             "note": "Text for the additional bgc form  date of birth label text",
             "value": "Date of Birth"
@@ -385,10 +353,6 @@
         "BB-BGC-Additional-bgc-form-dob-error-text": {
             "note": "Text for the additional bgc form date of birth error message text.",
             "value": "Please enter a valid Date of Birth."
-        },
-        "BB-BGC-Additional-bgc-form-dob-placeholder-text": {
-            "note": "Text for the additional bgc form national date of birth placeholder text",
-            "value": ""
         },
         "BB-BGC-form-optional-input-label-text": {
             "note": "Text to show that inout on a form is optional",

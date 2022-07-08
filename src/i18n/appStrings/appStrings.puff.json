@@ -46,6 +46,10 @@
             "note": "Text for the button to go to next page ( consent page )",
             "value": "Next"
         },
+        "BB-Country-United-States": {
+            "note": "United States as country name our application supports",
+            "value": "United States"
+        },
         "BB-ConsentPage-qualification-criteria-header-text": {
             "note": "Text for application qualification criteria",
             "value": "By applying, you confirm that:"
@@ -290,10 +294,6 @@
             "note": "Text for the additional bgc form  address line 1 error message text",
             "value": "Please enter a valid address"
         },
-        "BB-BGC-Additional-bgc-form-address-line-one-placeholder-text": {
-            "note": "Text for the additional bgc form  address line 1 placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-address-line-two-label-text": {
             "note": "Text for the additional bgc form  address line 2 label text",
             "value": "Apartment, suite, .etc"
@@ -302,10 +302,6 @@
             "note": "Text for the additional bgc form  address line 2 error message text",
             "value": "Please enter a valid address"
         },
-        "BB-BGC-Additional-bgc-form-address-line-two-placeholder-text": {
-            "note": "Text for the additional bgc form  address line 2 placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-city-label-text": {
             "note": "Text for the additional bgc form  city label text",
             "value": "City"
@@ -313,10 +309,6 @@
         "BB-BGC-Additional-bgc-form-city-error-text": {
             "note": "Text for the additional bgc form city error message text",
             "value": "Please enter a valid city"
-        },
-        "BB-BGC-Additional-bgc-form-city-placeholder-text": {
-            "note": "Text for the additional bgc form city placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-state-label-text": {
             "note": "Text for the additional bgc form  state label text",
@@ -328,7 +320,7 @@
         },
         "BB-BGC-Additional-bgc-form-state-placeholder-text": {
             "note": "Text for the additional bgc form state placeholder text",
-            "value": ""
+            "value": "Select a state"
         },
         "BB-BGC-Additional-bgc-form-zipcode-label-text": {
             "note": "Text for the additional bgc form  zipcode label text",
@@ -338,10 +330,6 @@
             "note": "Text for the additional bgc form zipcode error message text",
             "value": "Please enter a valid 5 digits zipcode"
         },
-        "BB-BGC-Additional-bgc-form-zipcode-placeholder-text": {
-            "note": "Text for the additional bgc form zipcode placeholder text",
-            "value": ""
-        },
         "BB-BGC-Additional-bgc-form-country-label-text": {
             "note": "Text for the additional bgc form  country label text",
             "value": "Country"
@@ -350,33 +338,33 @@
             "note": "Text for the additional bgc form country error message text",
             "value": "Please enter a valid country"
         },
-        "BB-BGC-Additional-bgc-form-country-placeholder-text": {
-            "note": "Text for the additional bgc form country placeholder text",
-            "value": ""
+        "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner": {
+            "note": "Informational Banner Text for the additional bgc form to explain what is SSN",
+            "value": "In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents."
         },
         "BB-BGC-Additional-bgc-form-national-id-type-label-text": {
             "note": "Text for the additional bgc form  national id type label text",
             "value": "National ID number"
         },
+        "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise": {
+            "note": "Text for the additional bgc form  national id type label text",
+            "value": "National ID"
+        },
         "BB-BGC-Additional-bgc-form-national-id-type-error-text": {
             "note": "Text for the additional bgc form national id type error message text",
             "value": "Please enter a valid National ID type"
-        },
-        "BB-BGC-Additional-bgc-form-national-id-type-placeholder-text": {
-            "note": "Text for the additional bgc form national id type placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-national-id-number-label-text": {
             "note": "Text for the additional bgc form  national id number label text",
             "value": "Id Number"
         },
+        "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise": {
+            "note": "Text for the additional bgc form  national id number label text",
+            "value": "National ID Number"
+        },
         "BB-BGC-Additional-bgc-form-national-id-number-error-text": {
             "note": "Text for the additional bgc form national id number error message text",
             "value": "Please enter a valid 9 digits social security number without dash"
-        },
-        "BB-BGC-Additional-bgc-form-national-id-number-placeholder-text": {
-            "note": "Text for the additional bgc form national id number placeholder text",
-            "value": ""
         },
         "BB-BGC-Additional-bgc-form-dob-label-text": {
             "note": "Text for the additional bgc form  date of birth label text",
@@ -386,9 +374,9 @@
             "note": "Text for the additional bgc form date of birth error message text.",
             "value": "Please enter a valid Date of Birth."
         },
-        "BB-BGC-Additional-bgc-form-dob-placeholder-text": {
-            "note": "Text for the additional bgc form national date of birth placeholder text",
-            "value": ""
+        "BB-BGC-Additional-bgc-form-national-id-options-ssn": {
+            "note": "Social Security Number is one of options as National ID",
+            "value": "Social Security Number"
         },
         "BB-BGC-form-optional-input-label-text": {
             "note": "Text to show that inout on a form is optional",
@@ -577,6 +565,42 @@
         "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text": {
             "note": "Text for the dates of employment at Amazon input error text",
             "value": "Please Enter a Valid Amazon Building"
+        },
+        "BB-BGC-no-ssn-checkbox-label": {
+            "note": "Label for the no ssn checkbox",
+            "value": "I do not have a Social Security Number"
+        },
+        "BB-BGC-no-ssn-modal-title": {
+            "note": "Title for the no SSN modal",
+            "value": "Are you sure you would like to proceed without a Social Security Number (SSN)?"
+        },
+        "BB-BGC-no-ssn-modal-warning-banner": {
+            "note": "Warning banner in the no SSN modal",
+            "value": "If you have a SSN, you are required to provide it. Failing to do so can cause delays in the hiring process which may lead to missing your start date and losing your selected shift."
+        },
+        "BB-BGC-no-ssn-modal-content-first-paragraph": {
+            "note": "Content in the no SSN modal",
+            "value": "By continuing, I am confirming that I do not have a SSN.  I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the onboarding process or during my employment."
+        },
+        "BB-BGC-no-ssn-modal-content-second-paragraph": {
+            "note": "Content in the no SSN modal",
+            "value": "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment."
+        },
+        "BB-BGC-no-ssn-modal-consent-checkbox": {
+            "note": "consent checkbox in the no SSN modal",
+            "value": "I have read and understood the above terms."
+        },
+        "BB-BGC-no-ssn-modal-continue-button": {
+            "note": "continue button in the no SSN modal",
+            "value": "Continue"
+        },
+        "BB-BGC-no-ssn-modal-cancel-button": {
+            "note": "cancel button in the no SSN modal",
+            "value": "Cancel"
+        },
+        "BB-BGC-no-ssn-national-id-number-disabled-placeholder": {
+            "note": "Text display on national id number input when user check no ssn checkbox",
+            "value": "Social Security Number not available"
         },
         "BB-BGC-fcra-provide-eSignature-form-heading-text": {
             "note": "Text for the fcra form heading text",

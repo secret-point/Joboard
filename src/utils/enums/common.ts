@@ -116,12 +116,6 @@ export enum UPDATE_APPLICATION_API_TYPE {
     DEFAULT = 'Update type is missing'
 };
 
-export enum GOVERNMENT_TYPE {
-    DRIVERS_LICENSE = "DRIVERS_LICENSE",
-    PASSPORT = "PASSPORT",
-    SSN = "SSN"
-}
-
 export enum BACKGROUND_AGENT {
     FADV = 'FADV',
     ACCURATE = 'ACCURATE'

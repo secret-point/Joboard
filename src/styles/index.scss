@@ -344,3 +344,7 @@ a {
   border: none;
   -webkit-overflow-scrolling: touch;
 }
+
+div[data-test-id='SSNExplanationBanner'] {
+  border-left: none;
+}
