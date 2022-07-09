@@ -2,41 +2,55 @@ import { from, Observable, of } from "rxjs";
 import { ofType } from "redux-observable";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import {
-    actionCreateApplicationAndSkipScheduleDSFailed,
-    actionCreateApplicationAndSkipScheduleDSSuccess,
-    actionCreateApplicationDSFailed,
-    actionCreateApplicationDSSuccess,
-    actionGetApplicationFailed,
-    actionGetApplicationSuccess,
-    actionUpdateApplicationDSFailed,
-    actionUpdateApplicationDSSuccess,
-    actionUpdateWorkflowNameFailed,
-    actionUpdateWorkflowNameSuccess
+  actionCreateApplicationAndSkipScheduleDSFailed,
+  actionCreateApplicationAndSkipScheduleDSSuccess,
+  actionCreateApplicationDSSuccess,
+  actionGetApplicationFailed,
+  actionGetApplicationSuccess,
+  actionUpdateApplicationDSFailed,
+  actionUpdateApplicationDSSuccess,
+  actionUpdateWorkflowNameFailed,
+  actionUpdateWorkflowNameSuccess
 } from "../actions/ApplicationActions/applicationActions";
 import { Application } from "../utils/types/common";
 import {
-    APPLICATION_ACTION_TYPES,
-    CreateApplicationActionDS,
-    CreateApplicationAndSkipScheduleActionDS,
-    GetApplicationAction,
-    UpdateApplicationActionDS,
-    UpdateWorkflowStepNameAction
+  APPLICATION_ACTION_TYPES,
+  CreateApplicationActionDS,
+  CreateApplicationAndSkipScheduleActionDS,
+  GetApplicationAction,
+  UpdateApplicationActionDS,
+  UpdateWorkflowStepNameAction
 } from "../actions/ApplicationActions/applicationActionTypes";
 import CandidateApplicationService from "../services/candidate-application-service";
-import { actionWorkflowRequestEnd, actionWorkflowRequestInit, completeTask, loadWorkflowDS } from "../actions/WorkflowActions/workflowActions";
+import {
+  actionWorkflowRequestEnd,
+  actionWorkflowRequestInit,
+  completeTask,
+  loadWorkflowDS
+} from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
 import { routeToAppPageWithPath, sanitizeApplicationData, setEpicApiCallErrorMessage } from "../utils/helper";
 import {
-    APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
-    APPLICATION_STATE_TO_STEP_NAME,
-    STEPS_NOT_CONNECT_WORKFLOW_SERVICE
+  APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
+  APPLICATION_STATE_TO_STEP_NAME,
+  STEPS_NOT_CONNECT_WORKFLOW_SERVICE
 } from "../constants";
-import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../utils/enums/common";
+import {
+  CREATE_APPLICATION_ERROR_CODE,
+  QUERY_PARAMETER_NAME,
+  UPDATE_APPLICATION_ERROR_CODE,
+  WORKFLOW_STEP_NAME
+} from "../utils/enums/common";
 import { CONSENT } from "../components/pageRoutes";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
 import { epicSwitchMapHelper } from "./helper";
-import { CreateApplicationResponse, ProxyApiError } from "../utils/api/types";
-import { CreateApplicationErrorMessage } from "../utils/api/errorMessages";
+import {
+  CreateApplicationResponse,
+  GetApplicationResponse,
+  ProxyApiError,
+  UpdateApplicationResponse, UpdateWorkflowNameResponse
+} from "../utils/api/types";
+import { CreateApplicationErrorMessage, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
 
 export const GetApplicationEpic = ( action$: Observable<any> ) => {
     return action$.pipe(
@@ -44,16 +58,20 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
         switchMap(( action: GetApplicationAction ) =>
             from(new CandidateApplicationService().getApplication(action.payload.applicationId))
                 .pipe(
+                    switchMap(epicSwitchMapHelper),
                     switchMap(async ( response ) => {
                         return response
                     }),
-                    map(( data: Application ) => {
-                        return actionGetApplicationSuccess(data);
+                    map(( response: GetApplicationResponse ) => {
+
+                        return actionGetApplicationSuccess(response.data);
                     }),
                     catchError(( error: any ) => {
-                        return of(actionGetApplicationFailed({
-                            error
-                        }));
+
+                      const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+                      setEpicApiCallErrorMessage(errorMessage);
+
+                        return of(actionGetApplicationFailed(error));
                     })
                 )
         )
@@ -130,18 +148,29 @@ export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
         switchMap(( action: UpdateApplicationActionDS ) =>
             from(new CandidateApplicationService().updateApplication(action.payload))
                 .pipe(
+                    switchMap(epicSwitchMapHelper),
                     switchMap(async ( response ) => {
                         return response
                     }),
-                    map((data: Application) => {
-                        if (action.onSuccess) action.onSuccess(data);
-                        return actionUpdateApplicationDSSuccess(data);
+                    map((response: UpdateApplicationResponse) => {
+                      const application: Application = response.data;
+
+                        if (action.onSuccess) {
+                          action.onSuccess(application);
+                        }
+
+                        return actionUpdateApplicationDSSuccess(application);
                     }),
-                    catchError(( error: any ) => {
-                        if(action.onError) action.onError();
-                        return of(actionUpdateApplicationDSFailed({
-                            error
-                        }));
+                  catchError(( error: ProxyApiError ) => {
+
+                    if(action.onError){
+                      action.onError(error);
+                    }
+
+                    const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+                    setEpicApiCallErrorMessage(errorMessage);
+
+                        return of(actionUpdateApplicationDSFailed(error));
                     })
                 )
         )
@@ -154,15 +183,26 @@ export const UpdateWorkflowStepNameEpic = ( action$: Observable<any> ) => {
         switchMap(( action: UpdateWorkflowStepNameAction ) =>
             from(new CandidateApplicationService().updateWorkflowStepName(action.payload.applicationId, action.payload.workflowStepName))
                 .pipe(
+                    switchMap(epicSwitchMapHelper),
                     switchMap(async ( response ) => {
                         return response
                     }),
-                    map(( data: Application ) => {
-                        if(action.onSuccess) action.onSuccess(data);
-                        return actionUpdateWorkflowNameSuccess(data);
+                    map(( response: UpdateWorkflowNameResponse ) => {
+
+                      const application = response.data;
+
+                        if(action.onSuccess) {
+                          action.onSuccess(application);
+                        }
+
+                        return actionUpdateWorkflowNameSuccess(application);
                     }),
                     catchError(( error: any ) => {
                         if(action.onError) action.onError(error);
+
+                      const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+                      setEpicApiCallErrorMessage(errorMessage);
+
                         return of(actionUpdateWorkflowNameFailed({
                             error
                         }));
@@ -194,7 +234,8 @@ export const CreateApplicationAndSkipScheduleDSEpic = ( action$: Observable<any>
                       action.onError(error);
                     }
 
-                    setEpicApiCallErrorMessage(error.errorCode);
+                  const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
+                  setEpicApiCallErrorMessage(errorMessage);
 
                     return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
                 })

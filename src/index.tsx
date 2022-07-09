@@ -24,7 +24,7 @@ import {
   pathByDomain
 } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
-import { initLogger, log } from "./helpers/log-helper";
+import { initLogger } from "./helpers/log-helper";
 import "./i18n";
 import DragonStoneAppUS from "./components/us/dsApp";
 import { onSFLogout } from "./actions/old/application-actions";
@@ -139,7 +139,7 @@ getInitialData()
     let appHashUrl = "";
 
     if (!isNil(page)) {
-      appHashUrl = `${page} `;
+      appHashUrl = `${page}`;
     } else {
       if (!isNil(applicationId)) {
         appHashUrl = `${RESUME_APPLICATION}`;
