@@ -12,7 +12,7 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_OPPORTUNITIES } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import queryString from "query-string";
 import { boundGetApplication } from '../../../actions/ApplicationActions/boundApplicationActions';
@@ -39,6 +39,7 @@ const JobConfirmation = ( props: MapStateToProps ) => {
     const { scheduleId, applicationId, jobId } = queryParams;
     const jobDetail = job.results;
     const applicationDetail = application.results;
+    const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
 
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })

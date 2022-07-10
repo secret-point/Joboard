@@ -9,7 +9,7 @@ import { CommonColors } from "../../../utils/colors";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { routeToAppPageWithPath } from "../../../utils/helper";
 import { QueryParamItem, Schedule } from "../../../utils/types/common";
-import { JOB_CONFIRMATION } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import ScheduleCardBanner from "./ScheduleCardBanner";
 import ScheduleDetails from "./ScheduleDetails";
 import Image from "../../common/Image";
@@ -22,6 +22,7 @@ interface ScheduleCardProps {
 const ScheduleCard = ( props: ScheduleCardProps ) => {
 
     const { scheduleDetail, displayOnly } = props;
+    const { JOB_CONFIRMATION } = PAGE_ROUTES;
 
     const {
         image,

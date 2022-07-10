@@ -2,13 +2,13 @@ import {
     AdditionalBgcConfig,
     ApplicationStep,
     DetailedRadioButtonItem,
+    DisabilityItem,
     FcraDisclosureConfig,
     FormInputItem,
     NonFcraESignatureAcknowledgement,
     ScheduleSortBy,
     ScheduleStateFilters,
-    StateSpecificNotice,
-    DisabilityItem
+    StateSpecificNotice
 } from "../types/common";
 import {
     APPLICATION_STEPS,
@@ -580,3 +580,5 @@ export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";
 export const UserIdValidator = "^[a-z]{4,60}$";
 
 export const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
+
+export const usNewBBUIPathName = "/application/us/";

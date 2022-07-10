@@ -35,7 +35,7 @@ import { CommonColors } from "../../../utils/colors";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import NonFcraDisclosure from "../../common/bgc/NonFcraDisclosure";
 import AdditionalBGCInfo from "../../common/bgc/AdditionalBGCInfo";
-import { BACKGROUND_CHECK_FCRA } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
@@ -70,6 +70,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     const { stepConfig } = bgc;
     const scheduleDetail = schedule.results.scheduleDetail;
     const { candidateData } = candidate.results;
+    const { BACKGROUND_CHECK_FCRA } = PAGE_ROUTES;
 
     useEffect(() => {
         boundGetCandidateInfo();

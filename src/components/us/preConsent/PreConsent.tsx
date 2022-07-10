@@ -6,7 +6,7 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { CommonColors } from "../../../utils/colors";
 import { routeToAppPageWithPath } from "../../../utils/helper";
-import { CONSENT } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import ApplicationSteps from "../../common/ApplicationSteps";
 
@@ -15,6 +15,8 @@ interface MapStateToProps {
 }
 
 const PreConsent = ( props: MapStateToProps ) => {
+
+  const { CONSENT } = PAGE_ROUTES;
 
     const onGoNextPage = () => {
         routeToAppPageWithPath(CONSENT)

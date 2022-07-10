@@ -21,8 +21,10 @@ import { boundUpdateStepConfigAction } from "../../actions/BGC_Actions/boundBGCA
 import { translate as t } from "../../utils/translator";
 import { SelfIdentificationState } from "../../reducers/selfIdentification.reducer";
 import { getPageName } from "../../utils/helper";
-import { BACKGROUND_CHECK, SELF_IDENTIFICATION } from "../pageRoutes";
+import { PAGE_ROUTES } from "../pageRoutes";
 import { boundUpdateSelfIdStepConfig } from "../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+
+const { BACKGROUND_CHECK, SELF_IDENTIFICATION } = PAGE_ROUTES;
 
 interface MapStateToProps {
     job: JobState,

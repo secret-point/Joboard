@@ -5,29 +5,7 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import {
-  ALREADY_APPLIED,
-  ASSESSMENT_CONSENT,
-  ASSESSMENT_FINISHED,
-  ASSESSMENT_NOT_ELIGIBLE,
-  BACKGROUND_CHECK,
-  BACKGROUND_CHECK_FCRA,
-  CANDIDATE_WITHDRAWS,
-  CONSENT,
-  CONTINGENT_OFFER,
-  JOB_CONFIRMATION,
-  JOB_DESCRIPTION,
-  JOB_OPPORTUNITIES,
-  NHE,
-  PRE_CONSENT,
-  RESUME_APPLICATION,
-  REVIEW_SUBMIT,
-  SELF_IDENTIFICATION,
-  SESSION_TIMEOUT,
-  THANK_YOU,
-  WOTC,
-  CALI_DISCLOSURE
-} from "../pageRoutes";
+import { PAGE_ROUTES } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
@@ -57,6 +35,30 @@ interface MapStateToProps {
   appConfig: AppConfig,
   ui: uiState
 }
+
+const {
+  ALREADY_APPLIED,
+  ASSESSMENT_CONSENT,
+  ASSESSMENT_FINISHED,
+  ASSESSMENT_NOT_ELIGIBLE,
+  BACKGROUND_CHECK,
+  BACKGROUND_CHECK_FCRA,
+  CANDIDATE_WITHDRAWS,
+  CONSENT,
+  CONTINGENT_OFFER,
+  JOB_CONFIRMATION,
+  JOB_DESCRIPTION,
+  JOB_OPPORTUNITIES,
+  NHE,
+  PRE_CONSENT,
+  RESUME_APPLICATION,
+  REVIEW_SUBMIT,
+  SELF_IDENTIFICATION,
+  SESSION_TIMEOUT,
+  THANK_YOU,
+  WOTC,
+  CALI_DISCLOSURE
+} = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
   const { appConfig, ui } = props;

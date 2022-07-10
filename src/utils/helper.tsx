@@ -32,7 +32,8 @@ import {
     HVH_LOCALE,
     initScheduleStateFilters,
     NameRegexValidator,
-    UserIdValidator
+    UserIdValidator,
+    usNewBBUIPathName
 } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
@@ -56,14 +57,7 @@ import {
 } from "./enums/common";
 import capitalize from "lodash/capitalize";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
-import {
-    BACKGROUND_CHECK,
-    CONTINGENT_OFFER,
-    JOB_CONFIRMATION,
-    NHE,
-    REVIEW_SUBMIT,
-    SELF_IDENTIFICATION
-} from "../components/pageRoutes";
+import { PAGE_ROUTES } from "../components/pageRoutes";
 import queryString from "query-string";
 import { isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
@@ -82,6 +76,15 @@ import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActio
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
+
+const {
+    BACKGROUND_CHECK,
+    CONTINGENT_OFFER,
+    JOB_CONFIRMATION,
+    NHE,
+    REVIEW_SUBMIT,
+    SELF_IDENTIFICATION
+} = PAGE_ROUTES;
 
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
@@ -877,4 +880,16 @@ export const setEpicApiCallErrorMessage = (errorMessage: string, isDismissible?:
 
 export const isI18nSelectOption = (option: any) => {
     return typeof option === 'object' && option.translationKey && option.value && option.showValue;
+}
+
+export const isNewBBuiPath = (pathName: string): boolean => {
+    const href = window.location.href;
+    const hashPath = window.location.hash .split('?')[0];
+    const pageName = hashPath ? hashPath.replace("#/", "") : '';
+
+    if(!pathName){
+        pathName = pageName || '';
+    }
+
+    return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(`${usNewBBUIPathName}#/${pathName}`);
 }

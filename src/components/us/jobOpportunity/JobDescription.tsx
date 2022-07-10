@@ -8,7 +8,7 @@ import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_CONFIRMATION } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
@@ -29,6 +29,7 @@ const JobDescription = (props: MapStateToProps) => {
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const { jobId, applicationId } = queryParams;
     const jobDetail = job.results;
+    const { JOB_CONFIRMATION } = PAGE_ROUTES;
 
     // Don't refetch data if id is not changing
     useEffect(() => {

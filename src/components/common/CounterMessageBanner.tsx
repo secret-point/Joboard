@@ -6,7 +6,7 @@ import { ApplicationState } from "../../reducers/application.reducer";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { routeToAppPageWithPath, showCounterBanner } from "../../utils/helper";
 import { translate as t } from "../../utils/translator";
-import { SESSION_TIMEOUT } from "../pageRoutes";
+import { PAGE_ROUTES } from "../pageRoutes";
 
 const HOUR_IN_SECONDS = 3600;
 const MIN_IN_SECONDS = 60;
@@ -25,6 +25,7 @@ const CounterMessageBanner = (props: MapStateToProps) => {
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
   const applicationData = application.results;
+  const { SESSION_TIMEOUT } = PAGE_ROUTES;
 
   useEffect(() => {
     showCounterBanner() && initiateCounter();

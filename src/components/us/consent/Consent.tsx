@@ -4,17 +4,20 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { Text } from "@amzn/stencil-react-components/text";
-import InnerHTML from 'dangerously-set-html-content';
+import InnerHTML from "dangerously-set-html-content";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_OPPORTUNITIES } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
-import { Application, Locale, QueryParamItem } from "../../../utils/types/common";
+import { Application } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { boundCreateApplicationAndSkipScheduleDS, boundCreateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import {
+    boundCreateApplicationAndSkipScheduleDS,
+    boundCreateApplicationDS
+} from "../../../actions/ApplicationActions/boundApplicationActions";
 import { CreateApplicationAndSkipScheduleRequestDS, CreateApplicationRequestDS } from "../../../utils/apiTypes";
 import { uiState } from "../../../reducers/ui.reducer";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
@@ -43,6 +46,7 @@ const ConsentPage = (props: MapStateToProps) => {
     const scheduleDetail = schedule.results.scheduleDetail;
     const pageName = getPageNameFromPath(pathname);
     const qualificationCriteria = jobDetail?.qualificationCriteria || [];
+    const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
 
     const isCreateButtonDisabled = scheduleId
         ? jobDetail && scheduleDetail && !isLoading ? false : true

@@ -1,4 +1,6 @@
-import { NHE } from "../../components/pageRoutes";
+import { PAGE_ROUTES } from "../../components/pageRoutes";
+
+const { NHE } = PAGE_ROUTES;
 
 export enum QUERY_PARAMETER_NAME {
     APPLICATION_ID = 'applicationId',

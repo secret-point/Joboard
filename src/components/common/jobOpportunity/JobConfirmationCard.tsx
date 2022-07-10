@@ -15,7 +15,7 @@ import VideoContainer from "../VideoContainer";
 import { Schedule } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
 import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
-import { JOB_DESCRIPTION } from "../../pageRoutes";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface JobConfirmationCardProps {
     schedule: Schedule
@@ -23,6 +23,7 @@ interface JobConfirmationCardProps {
 
 const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
     const { schedule } = props;
+    const { JOB_DESCRIPTION } = PAGE_ROUTES;
 
     const {
         hoursPerWeek,

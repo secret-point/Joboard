@@ -41,7 +41,6 @@ import {
   UPDATE_APPLICATION_ERROR_CODE,
   WORKFLOW_STEP_NAME
 } from "../utils/enums/common";
-import { CONSENT } from "../components/pageRoutes";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
 import { epicSwitchMapHelper } from "./helper";
 import {
@@ -51,6 +50,9 @@ import {
   UpdateApplicationResponse, UpdateWorkflowNameResponse
 } from "../utils/api/types";
 import { CreateApplicationErrorMessage, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
+import { PAGE_ROUTES } from "../components/pageRoutes";
+
+const { CONSENT } = PAGE_ROUTES;
 
 export const GetApplicationEpic = ( action$: Observable<any> ) => {
     return action$.pipe(

@@ -20,8 +20,7 @@ import {
   checkIfIsLegacy,
   injectCsNavAndFooter,
   objectToQuerystring,
-  parseQueryParamsArrayToSingleItem,
-  pathByDomain
+  parseQueryParamsArrayToSingleItem
 } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
@@ -35,7 +34,11 @@ import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/
 import { PageContainer } from "@amzn/stencil-react-components/page";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { MainWithSkipLink } from "@amzn/stencil-react-components/a11y";
-import { PRE_CONSENT, RESUME_APPLICATION } from "./components/pageRoutes";
+import { PAGE_ROUTES } from "./components/pageRoutes";
+import { usNewBBUIPathName } from "./utils/constants/common";
+import { isNewBBuiPath } from "./utils/helper";
+
+const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
 
 declare global {
   interface Window {
@@ -136,24 +139,29 @@ getInitialData()
 
     const requestQueryString = objectToQuerystring(newUrlParams);
 
-    let appHashUrl = "";
+    const isNewBBFlow = isNewBBuiPath(page);
+    //Only build new BB UI path if the entry point is different to new BB UI
+    //When a valid pageName is passed as query params. on new BB UI, we will go to that page.
 
-    if (!isNil(page)) {
-      appHashUrl = `${page}`;
-    } else {
-      if (!isNil(applicationId)) {
-        appHashUrl = `${RESUME_APPLICATION}`;
+    if(!isNewBBFlow) {
+      let appHashUrl = "";
+
+      if (!isNil(page)) {
+        appHashUrl = `${page}`;
       } else {
-        appHashUrl = `${PRE_CONSENT}`;
+        if (!isNil(applicationId)) {
+          appHashUrl = `${RESUME_APPLICATION}`;
+        } else {
+          appHashUrl = `${PRE_CONSENT}`;
+        }
       }
+
+      appHashUrl = !isEmpty(requestQueryString)
+        ? `${appHashUrl}${requestQueryString}`
+        : appHashUrl;
+
+      window.location.assign(`${usNewBBUIPathName}#/${appHashUrl}`);
     }
-
-    appHashUrl = !isEmpty(requestQueryString)
-      ? `${appHashUrl}${requestQueryString}`
-      : appHashUrl;
-
-    console.log(`${pathByDomain()}/${appHashUrl}`, "appHashUrl");
-    window.location.assign(`/application/us/#/${appHashUrl}`);
 
     if (!isNil(token)) {
       window.localStorage.setItem("accessToken", token);
@@ -222,11 +230,11 @@ getInitialData()
               >
                 <MainWithSkipLink>
                   <Switch>
-                    <Route path="/application/us/">
+                    <Route path={usNewBBUIPathName}>
                       <DragonStoneAppUS />
                     </Route>
                     <Route path="/" render={() => <Redirect to={{
-                      pathname: "/application/us/",
+                      pathname: usNewBBUIPathName,
                       search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
                     }} />} />
                   </Switch>
