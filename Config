@@ -30,4 +30,9 @@ package.HVHCandidateApplicationUI = {
         };
     };
 
+    test-dependencies = {
+        1.0 = {
+            NodeJS-Brazil = 1.0;
+        }
+    }
 };

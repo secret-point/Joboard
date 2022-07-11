@@ -106,7 +106,8 @@
     "arb-tools": "arb-tools compile",
     "panther": "panther translate",
     "postpanther": "npm run arb-tools",
-    "prebuild": "npm run arb-tools"
+    "prebuild": "npm run arb-tools",
+    "posttest": "generate-coverage-data"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -126,6 +127,7 @@
   },
   "proxy": "http://localhost:8080",
   "devDependencies": {
-    "@types/classnames": "^2.2.10"
+    "@types/classnames": "^2.2.10",
+    "@amzn/brazil": "*"
   }
 }
