@@ -323,6 +323,9 @@ export interface Schedule {
     siteId: string;
     hireStartDate: string;
     contingencyTat: number;
+    signOnBonusL10N: string;
+    firstDayOnSiteL10N: string;
+    totalPayRateL10N: string;
 }
 
 export interface HoursPerWeek {

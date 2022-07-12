@@ -1257,6 +1257,26 @@
         "BB-WOTC-page-description-text": {
             "note": "Text for the WOTC page description text",
             "value": "Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programs and will in no way negatively impact any hiring, retention or promotion decisions."
+        },
+        "BB-Schedule-card-possible-start-date-text": {
+            "note": "Text for the schedule card possible start date text",
+            "value": "Possible Start Date:"
+        },
+        "BB-Schedule-card-possible-start-date-or-earlier-text": {
+            "note": "Text for the schedule card possible start date or earlier text",
+            "value": "(or earlier!)"
+        },
+        "BB-Schedule-card-total-pay-per-hour-text": {
+            "note": "Text for the schedule card total pay per hour text",
+            "value": "/hr"
+        },
+        "BB-Schedule-card-hours-per-week-text": {
+            "note": "Text for the schedule card hours per week text",
+            "value": "hrs/wk"
+        },
+        "BB-Schedule-card-bonus-text": {
+            "note": "Text for the schedule card bonus text",
+            "value": "Bonus:"
         }
     }
 }

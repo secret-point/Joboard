@@ -28,6 +28,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
         image,
         bonusSchedule,
         signOnBonus,
+        signOnBonusL10N,
         currencyCode,
         tagLine,
         externalJobTitle,
@@ -56,7 +57,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                         src={image}/>
                     {
                         bonusSchedule &&
-                        <ScheduleCardBanner currencyCode={currencyCode} signOnBonus={signOnBonus}/>
+                        <ScheduleCardBanner signOnBonusL10N={signOnBonusL10N} currencyCode={currencyCode} signOnBonus={signOnBonus}/>
                     }
                 </Col>
                 <Col width="auto" gridGap={10}>

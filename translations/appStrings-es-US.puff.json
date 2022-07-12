@@ -1257,6 +1257,26 @@
         "BB-WOTC-page-description-text": {
             "note": "Text for the WOTC page description text",
             "value": "Las pruebas de Amazon IAT participan en programas de crédito fiscal federal o estatal. La información que proporcione se utilizará para determinar la elegibilidad de la empresa para estos programas y de ninguna manera afectará negativamente las decisiones de contratación, retención o promoción."
+        },
+        "BB-Schedule-card-possible-start-date-text": {
+            "note": "Text for the schedule card possible start date text",
+            "value": "Posible fecha de inicio:"
+        },
+        "BB-Schedule-card-possible-start-date-or-earlier-text": {
+            "note": "Text for the schedule card possible start date or earlier text",
+            "value": "(¡o antes!)"
+        },
+        "BB-Schedule-card-total-pay-per-hour-text": {
+            "note": "Text for the schedule card total pay per hour text",
+            "value": "/hora"
+        },
+        "BB-Schedule-card-hours-per-week-text": {
+            "note": "Text for the schedule card hours per week text",
+            "value": "horas/semana"
+        },
+        "BB-Schedule-card-bonus-text": {
+            "note": "Text for the schedule card bonus text",
+            "value": "Prima:"
         }
     }
 }
