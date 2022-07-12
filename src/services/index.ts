@@ -7,6 +7,5 @@ export const getInitialData = async () => {
     const configService = new ConfigService();
     //TODO Remove unnecessary calls like page order
     const response = await axios.all([configService.getConfig(), pageService.getPageOrder(), configService.getCountryStateList()]);
-
     return response;
 };

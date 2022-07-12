@@ -8,8 +8,13 @@ import {
     GetJobDetailSuccessAction,
 } from "./jobDetailActionTypes";
 
-export const actionGetJobDetail = ( payload: GetJobDetailRequest ): GetJobDetailAction => {
-    return { type: GET_JOB_DETAIL_TYPE.GET, payload }
+export const actionGetJobDetail = ( payload: GetJobDetailRequest, onSuccess?: Function, onError?: Function ): GetJobDetailAction => {
+    return {
+        type: GET_JOB_DETAIL_TYPE.GET,
+        payload,
+        onSuccess,
+        onError
+    }
 };
 
 export const actionGetJobDetailSuccess = ( payload: Job ): GetJobDetailSuccessAction => {

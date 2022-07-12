@@ -47,7 +47,8 @@ import {
   CreateApplicationResponse,
   GetApplicationResponse,
   ProxyApiError,
-  UpdateApplicationResponse, UpdateWorkflowNameResponse
+  UpdateApplicationResponse,
+  UpdateWorkflowNameResponse
 } from "../utils/api/types";
 import { CreateApplicationErrorMessage, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
 import { PAGE_ROUTES } from "../components/pageRoutes";
@@ -68,7 +69,7 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
 
                         return actionGetApplicationSuccess(response.data);
                     }),
-                    catchError(( error: any ) => {
+                    catchError(( error: ProxyApiError ) => {
 
                       const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
                       setEpicApiCallErrorMessage(errorMessage);
@@ -199,15 +200,13 @@ export const UpdateWorkflowStepNameEpic = ( action$: Observable<any> ) => {
 
                         return actionUpdateWorkflowNameSuccess(application);
                     }),
-                    catchError(( error: any ) => {
+                    catchError(( error: ProxyApiError ) => {
                         if(action.onError) action.onError(error);
 
                       const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
                       setEpicApiCallErrorMessage(errorMessage);
 
-                        return of(actionUpdateWorkflowNameFailed({
-                            error
-                        }));
+                        return of(actionUpdateWorkflowNameFailed(error));
                     })
                 )
         )

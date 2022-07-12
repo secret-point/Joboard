@@ -4,5 +4,5 @@ import {
     actionGetJobDetail,
 } from "./jobDetailActions";
 
-export const boundGetJobDetail = ( payload: GetJobDetailRequest, ) =>
-    store.dispatch(actionGetJobDetail(payload));
+export const boundGetJobDetail = ( payload: GetJobDetailRequest, onSuccess?: Function, onError?: Function) =>
+    store.dispatch(actionGetJobDetail(payload, onSuccess, onError));

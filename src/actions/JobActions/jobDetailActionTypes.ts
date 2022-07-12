@@ -17,6 +17,8 @@ export type JOB_DETAIL_ACTIONS = GetJobDetailAction
 export interface GetJobDetailAction extends Action {
     type: GET_JOB_DETAIL_TYPE.GET;
     payload: GetJobDetailRequest;
+    onSuccess?: Function;
+    onError?: Function;
 }
 
 export interface GetJobDetailSuccessAction extends Action {

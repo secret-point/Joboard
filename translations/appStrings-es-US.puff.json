@@ -1289,6 +1289,234 @@
         "BB-amazon-rejects-return-to-dashboard": {
             "note": "Text for the amazon rejects page return to dashboard text",
             "value": "Volver al tablero"
+        },
+        "BB-create-application-error-message-application-exist": {
+            "note": "error message when trying to create application with existing application ",
+            "value": "Lo sentimos, ¡ya has solicitado este trabajo!"
+        },
+        "BB-create-application-error-message-missing-fields": {
+            "note": "error message when trying to create application with missing application Id field",
+            "value": "Faltan campos obligatorios."
+        },
+        "BB-create-application-error-message-internal-server-error": {
+            "note": "internal server Error message when creating application",
+            "value": "Algo salió mal con el servidor. Vuelva a intentarlo o actualice el navegador."
+        },
+        "BB-create-application-error-message-candidate-inactive": {
+            "note": "error message for create application if candidate is inactive",
+            "value": "El candidato está inactivo. No se puede crear la solicitud para el candidato."
+        },
+        "BB-create-application-error-message-candidate-not-found": {
+            "note": "error message for create application if candidate is not found",
+            "value": "Candidata no encontrada."
+        },
+        "BB-create-application-error-message-version-mismatch": {
+            "note": "error message when create application with version mismatching",
+            "value": "La aplicación no se puede actualizar porque existe una actualización más reciente."
+        },
+        "BB-create-application-error-message-default": {
+            "note": "Default error message for create application",
+            "value": "No se puede crear la aplicación."
+        },
+        "BB-update-application-error-message-applicationId-not-match": {
+            "note": "Error message for update application when application Id do not match",
+            "value": "El Id. de la aplicación no coincide con el Id. de la ruta de la solicitud."
+        },
+        "BB-update-application-error-message-application-not-found": {
+            "note": "Error message for update application when application can not be found",
+            "value": "No puedo encontrar la aplicación."
+        },
+        "BB-update-application-error-message-missing-required-fields": {
+            "note": "Error message when updating message with application Id missing",
+            "value": "Faltan campos obligatorios: ApplicationId."
+        },
+        "BB-update-application-error-message-version-mismatch": {
+            "note": "Error message when updating application with version mismatching",
+            "value": "La aplicación no se puede actualizar porque existe una actualización más reciente."
+        },
+        "BB-update-application-error-message-server-error": {
+            "note": "internal server Error message when updating application",
+            "value": "Algo salió mal con el servidor. Vuelva a intentarlo o actualice el navegador."
+        },
+        "BB-update-application-error-message-candidate-not-authorized": {
+            "note": "error message for update application when candidate is not authorized",
+            "value": "No puedes acceder a esta aplicación."
+        },
+        "BB-update-application-error-message-sign-fcra-ack": {
+            "note": "error message for update application without fcra acknowledge signature",
+            "value": "Por favor firme el reconocimiento."
+        },
+        "BB-update-application-error-message-sign-fcra-request": {
+            "note": "error message for update application without fcra request signature",
+            "value": "Firme la solicitud fcra."
+        },
+        "BB-update-application-error-message-sign-nonfcra-ack": {
+            "note": "error message for update application without non fcra acknowledgement signature",
+            "value": "Por favor firme el reconocimiento."
+        },
+        "BB-update-application-error-message-sign-notice-statement": {
+            "note": "error message for update application without state notices signature",
+            "value": "Por favor firme los avisos estatales."
+        },
+        "BB-update-application-error-message-selected-schedule-not-available": {
+            "note": "error message for update application when selected schedule is not available",
+            "value": "El horario que ha seleccionado ya no está disponible, seleccione otro horario."
+        },
+        "BB-update-application-error-message-mismatch-signatures": {
+            "note": "error message for update application when signatures do not match",
+            "value": "Las firmas electrónicas no coinciden. Utilice el mismo texto para cada firma electrónica."
+        },
+        "BB-update-application-error-message-max-ssn-edits": {
+            "note": "error message for update application when number of ssn edits exceed the maximum",
+            "value": "La actualización de la aplicación falló porque alcanzó la cantidad máxima de cambios en su identificación nacional. Si se ha registrado anteriormente con una dirección de correo electrónico diferente, [Cerrar sesión](/cerrar sesión) e intente iniciar sesión con ese correo electrónico, utilizando la opción \"¿Olvidó su pin personal?\" enlace si es necesario. Si necesita ayuda, contáctenos por correo electrónico o chatee en <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>."
+        },
+        "BB-update-application-error-message-invalid-ssn": {
+            "note": "error message for update application when ssn is invalid",
+            "value": "La actualización de la aplicación falló porque el número de identificación nacional proporcionado no es válido. Ingrese el Número de Identidad Nacional correcto y completo antes de continuar."
+        },
+        "BB-update-application-error-message-type-of-request-missing": {
+            "note": "error message for update application when request type is missing",
+            "value": "Falta el tipo de solicitud."
+        },
+        "BB-update-application-error-message-type-not-match-with-request": {
+            "note": "error message for update application when request type do not match with request payload",
+            "value": "El tipo no coincide con la solicitud."
+        },
+        "BB-update-application-error-message-dob-missing-in-request": {
+            "note": "error message for update application when date of birth is missing in the request",
+            "value": "Falta la fecha de nacimiento en la carga útil."
+        },
+        "BB-update-application-error-message-provide-dob": {
+            "note": "error message for update application when date of birth is no provided",
+            "value": "Proporcione una fecha válida."
+        },
+        "BB-update-application-error-message-applicationId-missing": {
+            "note": "error message for update application when application Id is missing",
+            "value": "Falta el ID de la aplicación en la solicitud."
+        },
+        "BB-update-application-error-message-government-type-missing": {
+            "note": "error message for update application when government Id is missing",
+            "value": "Falta la identificación del gobierno en la solicitud."
+        },
+        "BB-update-application-error-message-id-number-missing": {
+            "note": "error message for update application when Id Number is missing",
+            "value": "Falta el número de identificación en la solicitud."
+        },
+        "BB-update-application-error-message--has-criminal-in7-years-missing": {
+            "note": "error message for update application when has criminal record in past 7 years is missing",
+            "value": "Tiene antecedentes penales dentro de los siete años no se encuentra en la solicitud."
+        },
+        "BB-update-application-error-message-address-line1-missing": {
+            "note": "error message for update application when address line 1 is missing",
+            "value": "Falta la línea de dirección 1 en el objeto de dirección."
+        },
+        "BB-update-application-error-message-city-missing-in-address": {
+            "note": "error message for update application when city is missing in address",
+            "value": "Falta la ciudad en el objeto de dirección."
+        },
+        "BB-update-application-error-message-state-missing-in-address": {
+            "note": "error message for update application when state is missing in address",
+            "value": "Falta el estado en el objeto de dirección."
+        },
+        "BB-update-application-error-message-zipcode-missing-in-address": {
+            "note": "error message for update application when Zip/Postal code is missing in address",
+            "value": "Falta el código postal en el objeto de dirección."
+        },
+        "BB-update-application-error-message-country-missing-in-address": {
+            "note": "error message for update application when country is missing in address",
+            "value": "Falta el país en el objeto de dirección."
+        },
+        "BB-update-application-error-message-invalid-previous-legal-name": {
+            "note": "error message for update application with invalid previous legal name",
+            "value": "Ingrese el nombre completo legal utilizado anteriormente en el siguiente formato: Nombre Apellido."
+        },
+        "BB-update-application-error-message-bgc-validation-failed": {
+            "note": "error message for update application with invalid additional background",
+            "value": "La información de antecedentes adicional no es válida, actualice todos los campos obligatorios."
+        },
+        "BB-update-application-error-message-nhe-apt-missing": {
+            "note": "error message for update application with new hire event appointment missing",
+            "value": "Falta el objeto de cita de evento de nueva contratación en la solicitud."
+        },
+        "BB-update-application-error-message-referral-missing": {
+            "note": "error message for update application with referral information missing",
+            "value": "Falta la información de referencia en la solicitud."
+        },
+        "BB-update-application-error-message-ethnicity-missing": {
+            "note": "error message for update application with ethnicity information missing",
+            "value": "Falta el origen étnico en la carga útil."
+        },
+        "BB-update-application-error-message-gender-is-missing": {
+            "note": "error message for update application with gender information missing",
+            "value": "Falta el género en la carga útil."
+        },
+        "BB-update-application-error-message-military-service-missing": {
+            "note": "error message for update application with military Spouse  information missing",
+            "value": "Falta la información del cónyuge militar en la carga útil."
+        },
+        "BB-update-application-error-message-protected-veteran-missing": {
+            "note": "error message for update application with protected veteran status information missing",
+            "value": "Falta información de veterano en la carga útil."
+        },
+        "BB-update-application-error-message-disability-missing": {
+            "note": "error message for update application with disability status information missing",
+            "value": "Falta la discapacidad en la carga útil."
+        },
+        "BB-update-application-error-message-cali-disclosure-missing": {
+            "note": "error message for update application with california disclosure information missing",
+            "value": "Tiene Verificación de antecedentes California Divulgación reconocida falta en la carga útil."
+        },
+        "BB-update-application-error-message-duplication-ssn": {
+            "note": "error message for update application with duplicate ssn",
+            "value": "El SSN o Número de Identidad Nacional que ingresó ya está asociado con otra dirección de correo electrónico en nuestro sistema. Si se ha registrado previamente con una dirección de correo electrónico diferente, [Cerrar sesión](/aplicación/cerrar sesión) e intente iniciar sesión con ese correo electrónico, usando \"¿Olvidó su pin personal?\" enlace si es necesario. Si necesita ayuda, contáctenos por correo electrónico o chatee en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>."
+        },
+        "BB-get-job-error-message-unable-fetch-job": {
+            "note": "error message when unable to fetch job information",
+            "value": "No se puede obtener el trabajo."
+        },
+        "BB-get-schedule-list-error-message-fetch-shifts-failed": {
+            "note": "error message when unable to fetch shifts failed",
+            "value": "¡Algo salió mal al buscar trabajos! Actualiza la página o vuelve a intentarlo más tarde."
+        },
+        "BB-get-schedule-list-error-message-shifts-bad-request": {
+            "note": "error message when there is a bad request to fetch shifts",
+            "value": "Error al recuperar trabajos en este momento. Vuelva a intentarlo después de un tiempo."
+        },
+        "BB-get-schedule-list-error-message-all-shift-filled": {
+            "note": "error message when fetch shifts but all shifts are filled",
+            "value": "Todos los turnos llenos."
+        },
+        "BB-get-schedule-list-error-message-no-schedule-found": {
+            "note": "error message when fetch shifts but no shift found",
+            "value": "Todos los turnos llenos."
+        },
+        "BB-get-schedule-detail-error-message-fetch-hch-error": {
+            "note": "error message when fetch head count request failed",
+            "value": "No se pudo obtener la solicitud de recuento de personas."
+        },
+        "BB-get-time-slots-error-message-all-shift-filled": {
+            "note": "error message when all appointment time slots are filled",
+            "value": "Todos los turnos llenos."
+        },
+        "BB-get-time-slots-error-message-fetch_time-slot-error": {
+            "note": "error message when fetch appointment time slots failed",
+            "value": "¡Algo salió mal! Actualiza la página o vuelve a intentarlo más tarde."
+        },
+        "BB-get-time-slots-error-message-fetch_shifts_error": {
+            "note": "error message when fetch shift error failed",
+            "value": "¡Algo salió mal al buscar trabajos! Actualiza la página o vuelve a intentarlo más tarde."
+        },
+        "BB-get-time-slots-error-message-fetch-shift-pref-error": {
+            "note": "error message when fetch shift preference failed",
+            "value": "No se pueden obtener las preferencias de turno."
+        },
+        "BB-get-time-slots-error-message-shift-bad-request": {
+            "note": "error message when server received a bad request to get time slots",
+            "value": "Error al recuperar trabajos en este momento. Vuelva a intentarlo después de un tiempo."
+        },
+        "BB-get-candidate-error-message-failed-get-candidate": {
+            "note": "error message when failed to get candidate information",
+            "value": "No se pudo obtener la candidata."
         }
     }
 }

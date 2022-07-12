@@ -821,3 +821,8 @@ export type i18nSelectOption = {
     translationKey: string,
     countryCode?: string
 }
+
+export interface ApiErrorMessage {
+    translationKey: string;
+    value: string;
+}

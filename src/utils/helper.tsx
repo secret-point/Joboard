@@ -1,6 +1,7 @@
 import React from "react";
 import {
     AlertMessage,
+    ApiErrorMessage,
     Application,
     BgcStepConfig,
     Candidate,
@@ -76,6 +77,7 @@ import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActio
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
+import { translate } from "./translator";
 
 const {
     BACKGROUND_CHECK,
@@ -864,11 +866,13 @@ export const onAssessmentStart =  (applicationData: Application) => {
     assessmentUrl && window.location.assign(assessmentUrl);
 }
 
-export const setEpicApiCallErrorMessage = (errorMessage: string, isDismissible?: boolean) => {
+export const setEpicApiCallErrorMessage = (errorMessage: ApiErrorMessage, isDismissible?: boolean) => {
+
+    const message = translate(errorMessage.translationKey, errorMessage.value);
 
     const alertMessage: AlertMessage = {
         type: MessageBannerType.Error,
-        title: errorMessage,
+        title: message,
         visible: true,
         isDismissible,
         dismissTime: 5000
