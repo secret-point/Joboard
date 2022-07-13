@@ -31,6 +31,7 @@ import { BannerMessage } from "../common/BannerMessage";
 import { uiState } from "../../reducers/ui.reducer";
 import CaliDisclosure from "./caliDisclosure/CaliDisclosure";
 import AmazonRejects from "./amazonRejects/AmazonRejects";
+import WorkflowFailed from "./workflowFailed/WorkflowFailed";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -59,7 +60,8 @@ const {
   THANK_YOU,
   WOTC,
   CALI_DISCLOSURE,
-  AMAZON_REJECTS
+  AMAZON_REJECTS,
+  WORKFLOW_FAILED
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -151,6 +153,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${AMAZON_REJECTS}`} exact>
               <AmazonRejects/>
+            </Route>
+            <Route path={`/${WORKFLOW_FAILED}`} exact>
+              <WorkflowFailed/>
             </Route>
           </Switch>
         </Router>

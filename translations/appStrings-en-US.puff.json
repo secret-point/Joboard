@@ -1545,6 +1545,18 @@
         "BB-get-application-error-message-internal-server-error": {
             "note": "Error message when get application and there is server error",
             "value": "Something went wrong with the server. Please try again or refresh the browser."
+        },
+        "BB-amazon-workflow-failed-title-text": {
+            "note": "Text for the amazon workflow failed page title text",
+            "value": "Workflow Error"
+        },
+        "BB-amazon-workflow-failed-description-text": {
+            "note": "Text for the amazon workflow failed page description text",
+            "value": "While application workflow failed."
+        },
+        "BB-amazon-workflow-failed-return-to-dashboard-text": {
+            "note": "Text for the amazon workflow failed page return to dashboard text",
+            "value": "Return to dashboard"
         }
     }
 }
