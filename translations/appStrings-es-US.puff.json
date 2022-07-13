@@ -588,15 +588,15 @@
         },
         "BB-already-applied": {
             "note": "Text for aleady applied job text",
-            "value": ""
+            "value": "Ya ha iniciado y/o completado una solicitud para este trabajo."
         },
         "BB-already-applied-description": {
             "note": "Text for aleady applied job description text",
-            "value": ""
+            "value": "Regrese al panel de control, reanude su solicitud o vea la solicitud y los detalles de la cita de nuevo empleado, y sus próximos pasos."
         },
         "BB-already-applied-button-text": {
             "note": "Text for aleady applied job return to dashboard button text",
-            "value": ""
+            "value": "Volver al tablero"
         },
         "BB-SelfId-disability-form-name-text": {
             "note": "Text for Self Identification form name",
@@ -1556,6 +1556,30 @@
         },
         "BB-amazon-workflow-failed-return-to-dashboard-text": {
             "note": "Text for the amazon workflow failed page return to dashboard text",
+            "value": "Volver al tablero"
+        },
+        "BB-candidate-withdraws": {
+            "note": "Candidate withdraws page title",
+            "value": "Gracias por su interés, pero no podemos ofrecerle un trabajo en este momento."
+        },
+        "BB-candidate-withdraws-description": {
+            "note": "Candidate withdraws page description",
+            "value": "La información que proporcionó no cumple con nuestros requisitos. Lo alentamos a buscar otros trabajos en amazon.jobs."
+        },
+        "BB-candidate-withdraws-button-text": {
+            "note": "Candidate withdraws page back to dashboard buttton",
+            "value": "Volver al tablero"
+        },
+        "BB-amazon-withdraws": {
+            "note": "Amazon withdraws page title",
+            "value": "Gracias por su interés, pero no podemos ofrecerle un trabajo en este momento."
+        },
+        "BB-amazon-withdraws-description": {
+            "note": "Amazon withdraws page description",
+            "value": "La información que proporcionó no cumple con nuestros requisitos. Lo alentamos a buscar otros trabajos en amazon.jobs."
+        },
+        "BB-amazon-withdraws-button-text": {
+            "note": "Amazon withdraws page back to dashboard buttton",
             "value": "Volver al tablero"
         }
     }

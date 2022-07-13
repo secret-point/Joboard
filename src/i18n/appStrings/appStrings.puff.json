@@ -1617,6 +1617,30 @@
         "BB-amazon-workflow-failed-return-to-dashboard-text": {
             "note": "Text for the amazon workflow failed page return to dashboard text",
             "value": "Return to dashboard"
+        },
+        "BB-candidate-withdraws": {
+            "note": "Candidate withdraws page title",
+            "value": "Thank you for your interest, but we're unable to offer you a job at this time."
+        },
+        "BB-candidate-withdraws-description": {
+            "note": "Candidate withdraws page description",
+            "value": "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs."
+        },
+        "BB-candidate-withdraws-button-text": {
+            "note": "Candidate withdraws page back to dashboard buttton",
+            "value": "Return to dashboard"
+        },
+        "BB-amazon-withdraws": {
+            "note": "Amazon withdraws page title",
+            "value": "Thank you for your interest, but we're unable to offer you a job at this time."
+        },
+        "BB-amazon-withdraws-description": {
+            "note": "Amazon withdraws page description",
+            "value": "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs."
+        },
+        "BB-amazon-withdraws-button-text": {
+            "note": "Amazon withdraws page back to dashboard buttton",
+            "value": "Return to dashboard"
         }
     }
 }

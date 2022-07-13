@@ -71,7 +71,6 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
         boundGetScheduleListByJobId(request);
     }, []);
 
-    // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
     }, [jobId]);

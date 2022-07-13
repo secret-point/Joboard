@@ -23,4 +23,5 @@ export enum PAGE_ROUTES {
   CALI_DISCLOSURE = "cali-disclosure",
   AMAZON_REJECTS = "amazon-rejects",
   WORKFLOW_FAILED = "workflow-failed",
+  AMAZON_WITHDRAWS = "amazon-withdraws",
 }

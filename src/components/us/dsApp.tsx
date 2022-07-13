@@ -26,12 +26,13 @@ import WOTCComponent from "./wotc/WOTC";
 import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentNotEligible from "./assessment/AssementNotEligible";
 import AssessmentFinished from "./assessment/AssessmentFinished";
-import CandidateWithdraws from "../common/CandidateWithdraws";
 import { BannerMessage } from "../common/BannerMessage";
 import { uiState } from "../../reducers/ui.reducer";
 import CaliDisclosure from "./caliDisclosure/CaliDisclosure";
 import AmazonRejects from "./amazonRejects/AmazonRejects";
 import WorkflowFailed from "./workflowFailed/WorkflowFailed";
+import AmazonWithdraws from "./amazonWithdraws/AmazonWithdraws";
+import CandidateWithdraws from "./candidateWithdraws/CandidateWithdraws";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -61,7 +62,8 @@ const {
   WOTC,
   CALI_DISCLOSURE,
   AMAZON_REJECTS,
-  WORKFLOW_FAILED
+  WORKFLOW_FAILED,
+  AMAZON_WITHDRAWS
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -81,7 +83,7 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
   // };
 
   return (
-      <Col padding='S300'>
+      <Col padding='S300' minHeight="40vh">
         <AppLoader/>
         <CounterMessageBanner/>
         {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage}/>}
@@ -156,6 +158,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${WORKFLOW_FAILED}`} exact>
               <WorkflowFailed/>
+            </Route>
+            <Route path={`/${AMAZON_WITHDRAWS}`} exact>
+              <AmazonWithdraws/>
             </Route>
           </Switch>
         </Router>

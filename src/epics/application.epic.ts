@@ -136,7 +136,13 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
                     }
 
                     const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
-                    setEpicApiCallErrorMessage(errorMessage);
+
+                    if(error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
+                      routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
+                    }
+                    else {
+                      setEpicApiCallErrorMessage(errorMessage);
+                    }
 
                     return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
                   })
