@@ -20,5 +20,6 @@ export enum PAGE_ROUTES {
   ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
   ASSESSMENT_FINISHED = "assessment-finished",
   CANDIDATE_WITHDRAWS = "candidate-withdraws",
-  CALI_DISCLOSURE = "CALI_DISCLOSURE"
+  CALI_DISCLOSURE = "cali-disclosure",
+  AMAZON_REJECTS = "amazon-rejects",
 }

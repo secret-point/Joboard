@@ -30,6 +30,7 @@ import CandidateWithdraws from "../common/CandidateWithdraws";
 import { BannerMessage } from "../common/BannerMessage";
 import { uiState } from "../../reducers/ui.reducer";
 import CaliDisclosure from "./caliDisclosure/CaliDisclosure";
+import AmazonRejects from "./amazonRejects/AmazonRejects";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -57,7 +58,8 @@ const {
   SESSION_TIMEOUT,
   THANK_YOU,
   WOTC,
-  CALI_DISCLOSURE
+  CALI_DISCLOSURE,
+  AMAZON_REJECTS
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -146,6 +148,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${CALI_DISCLOSURE}`} exact>
               <CaliDisclosure/>
+            </Route>
+            <Route path={`/${AMAZON_REJECTS}`} exact>
+              <AmazonRejects/>
             </Route>
           </Switch>
         </Router>

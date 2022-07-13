@@ -1277,6 +1277,18 @@
         "BB-Schedule-card-bonus-text": {
             "note": "Text for the schedule card bonus text",
             "value": "Prima:"
+        },
+        "BB-amazon-rejects-thank-you": {
+            "note": "Text for the amazon rejects page thank you text",
+            "value": "Gracias por su interés, pero no podemos ofrecerle un trabajo en este momento."
+        },
+        "BB-amazon-rejects-not-meet-requirements": {
+            "note": "Text for the amazon rejects page not meet requirements text",
+            "value": "La información que proporcionó no cumple con nuestros requisitos. Lo alentamos a buscar otros trabajos en amazon.jobs."
+        },
+        "BB-amazon-rejects-return-to-dashboard": {
+            "note": "Text for the amazon rejects page return to dashboard text",
+            "value": "Volver al tablero"
         }
     }
 }
