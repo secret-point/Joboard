@@ -34,6 +34,7 @@ import WorkflowFailed from "./workflowFailed/WorkflowFailed";
 import AmazonWithdraws from "./amazonWithdraws/AmazonWithdraws";
 import CandidateWithdraws from "./candidateWithdraws/CandidateWithdraws";
 import NoAvailableTimeSlots from "./noAvailableTimeSlots/NoAvailableTimeSlots";
+import CanNotOfferJob from "./canNotOfferJob/CanNotOfferJob";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -65,7 +66,8 @@ const {
   AMAZON_REJECTS,
   WORKFLOW_FAILED,
   AMAZON_WITHDRAWS,
-  NO_AVAILABLE_TIME_SLOTS
+  NO_AVAILABLE_TIME_SLOTS,
+  CAN_NOT_OFFER_JOB
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -166,6 +168,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
               <NoAvailableTimeSlots/>
+            </Route>
+            <Route path={`/${CAN_NOT_OFFER_JOB}`} exact>
+              <CanNotOfferJob/>
             </Route>
           </Switch>
         </Router>

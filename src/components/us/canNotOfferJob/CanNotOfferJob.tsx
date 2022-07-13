@@ -9,7 +9,7 @@ import { translate as t } from "../../../utils/translator";
 interface MapStateToProps {
 }
 
-const WorkflowFailed = (props: MapStateToProps) => {
+const CanNotOfferJob = (props: MapStateToProps) => {
   const handleGoToDashboard = () => {
     redirectToDashboard();
   }
@@ -17,13 +17,13 @@ const WorkflowFailed = (props: MapStateToProps) => {
   return (
     <Col gridGap="S300" padding={{ top: 'S300' }}>
       <Text fontSize="T400">
-        {t("BB-workflow-failed-title-text", "Workflow Error")}
+        {t("BB-can-not-offer-job-title-text", "Thank you for your interest, but we're unable to offer you a job at this time.")}
       </Text>
       <Text fontSize="T200">
-        {t("BB-workflow-failed-description-text", "While application workflow failed.")}
+        {t("BB-can-not-offer-job-description-text", "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.")}
       </Text>
       <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
-        {t("BB-workflow-failed-return-to-dashboard-text", "Return to dashboard")}
+        {t("BB-can-not-offer-job-return-to-dashboard-text", "Return to dashboard")}
       </Button>
     </Col >
   )
@@ -33,4 +33,4 @@ const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 
-export default connect(mapStateToProps)(WorkflowFailed);
+export default connect(mapStateToProps)(CanNotOfferJob);

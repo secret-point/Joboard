@@ -1546,16 +1546,28 @@
             "note": "Error message when get application and there is server error",
             "value": "Algo salió mal con el servidor. Vuelva a intentarlo o actualice el navegador."
         },
-        "BB-amazon-workflow-failed-title-text": {
-            "note": "Text for the amazon workflow failed page title text",
+        "BB-workflow-failed-title-text": {
+            "note": "Text for the workflow failed page title text",
             "value": "Error de flujo de trabajo"
         },
-        "BB-amazon-workflow-failed-description-text": {
-            "note": "Text for the amazon workflow failed page description text",
+        "BB-workflow-failed-description-text": {
+            "note": "Text for the workflow failed page description text",
             "value": "Mientras que el flujo de trabajo de la aplicación falló."
         },
-        "BB-amazon-workflow-failed-return-to-dashboard-text": {
-            "note": "Text for the amazon workflow failed page return to dashboard text",
+        "BB-workflow-failed-return-to-dashboard-text": {
+            "note": "Text for the workflow failed page return to dashboard text",
+            "value": "Volver al tablero"
+        },
+        "BB-can-not-offer-job-title-text": {
+            "note": "Text for the can not offer job page title text",
+            "value": "Gracias por su interés, pero no podemos ofrecerle un trabajo en este momento."
+        },
+        "BB-can-not-offer-job-description-text": {
+            "note": "Text for the can not offer job page description text",
+            "value": "La información que proporcionó no cumple con nuestros requisitos. Lo alentamos a buscar otros trabajos en amazon.jobs."
+        },
+        "BB-can-not-offer-job-return-to-dashboard-text": {
+            "note": "Text for the can not offer job page description text",
             "value": "Volver al tablero"
         },
         "BB-candidate-withdraws": {
