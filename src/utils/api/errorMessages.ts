@@ -1,5 +1,6 @@
 import {
   CREATE_APPLICATION_ERROR_CODE,
+  GET_APPLICATION_ERROR_CODE,
   GET_CANDIDATE_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
   GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
@@ -38,6 +39,25 @@ export const CreateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   "DEFAULT": {
     translationKey: "BB-create-application-error-message-default",
     value: "Unable to create application."
+  }
+}
+
+export const GetApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
+  [GET_APPLICATION_ERROR_CODE.MISSING_REQUIRED_FIELDS]: {
+    translationKey: "BB-get-application-error-message-missing-fields",
+    value: "ApplicationId is required to get application data."
+  },
+  [GET_APPLICATION_ERROR_CODE.CANDIDATE_NOT_AUTHORIZED]: {
+    translationKey: "BB-get-application-error-message-candidate-not-authorized",
+    value: "You can not access this application."
+  },
+  [GET_APPLICATION_ERROR_CODE.APPLICATION_NOT_FOUND]: {
+    translationKey: "BB-get-application-error-message-application-not-found",
+    value: "Unable to get this application."
+  },
+  [GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR]: {
+    translationKey: "BB-get-application-error-message-internal-server-error",
+    value: "Something went wrong with the server. Please try again or refresh the browser."
   }
 }
 
@@ -193,6 +213,14 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   [UPDATE_APPLICATION_ERROR_CODE.DUPLICATE_SSN]: {
     translationKey: "BB-update-application-error-message-duplication-ssn",
     value: 'The SSN or National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the "Forgot yourpersonal pin ?" link if needed. If you need help, please contact us via email or chat at <a href="https://hiring.amazon.com/contact-us#/">www.amazon.com/applicationhelp</a>."'
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.CAN_NOT_CREATE_APPLICATION]: {
+    translationKey: "BB-update-application-error-message-can-not-create-application",
+    value: "You can not create application."
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.UNABLE_CREATE_APPLICATION]: {
+    translationKey: "BB-update-application-error-message-unable-create-application",
+    value: "Unable to create application."
   }
 }
 
@@ -256,5 +284,9 @@ export const GetCandidateErrorMessages: { [key: string]: ApiErrorMessage } = {
   [GET_CANDIDATE_ERROR_CODE.FAILED_GET_CANDIDATE]: {
     translationKey: "BB-get-candidate-error-message-failed-get-candidate",
     value: "Failed to get candidate."
+  },
+  [GET_CANDIDATE_ERROR_CODE.NO_ACCESS_TO_APPLICATION]: {
+    translationKey: "BB-get-candidate-error-message-no-access-to-application",
+    value: "You can not access this application."
   }
 }

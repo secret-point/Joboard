@@ -22,9 +22,19 @@ export const JobEpic = (action$: Observable<any>) => {
           }),
           map((response: GetJobInfoResponse) => {
             const jobData = response.data;
+
+            if(action.onSuccess) {
+              action.onSuccess(jobData);
+            }
+
             return actionGetJobDetailSuccess(jobData);
           }),
           catchError((error: ProxyApiError) => {
+
+            if(action.onError) {
+              action.onError();
+            }
+
             const errorMessage = GetJobInfoErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);
             return of(actionGetJobDetailFailed(error));

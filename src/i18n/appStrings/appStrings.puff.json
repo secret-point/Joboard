@@ -1577,6 +1577,34 @@
         "BB-get-candidate-error-message-failed-get-candidate": {
             "note": "error message when failed to get candidate information",
             "value": "Failed to get candidate."
+        },
+        "BB-get-candidate-error-message-no-access-to-application": {
+            "note": "error message when candidate doesn't access to the application",
+            "value": "You can not access this application."
+        },
+        "BB-update-application-error-message-unable-create-application": {
+            "note": "Error message when unable to create application",
+            "value": "Unable to create application."
+        },
+        "BB-update-application-error-message-can-not-create-application": {
+            "note": "Error message when candidate is not authorized to create application",
+            "value": "You can not create application."
+        },
+        "BB-get-application-error-message-missing-fields": {
+            "note": "Error message when trying to get application without passing application Id",
+            "value": "ApplicationId is required to get application data."
+        },
+        "BB-get-application-error-message-candidate-not-authorized": {
+            "note": "Error message when candidate trying to get application of another candidate",
+            "value": "You can not access this application."
+        },
+        "BB-get-application-error-message-application-not-found": {
+            "note": "Error message when get application and application is not found",
+            "value": "Unable to get this application."
+        },
+        "BB-get-application-error-message-internal-server-error": {
+            "note": "Error message when get application and there is server error",
+            "value": "Something went wrong with the server. Please try again or refresh the browser."
         }
     }
 }
