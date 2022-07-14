@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { BackToTopButton } from '@amzn/stencil-react-components/back-to-top-button';
+import { BackToTopButton } from "@amzn/stencil-react-components/back-to-top-button";
 import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import PreConsentPage from "./preConsent/PreConsent";
 import ConsentPage from "./consent/Consent";
@@ -33,6 +33,7 @@ import AmazonRejects from "./amazonRejects/AmazonRejects";
 import WorkflowFailed from "./workflowFailed/WorkflowFailed";
 import AmazonWithdraws from "./amazonWithdraws/AmazonWithdraws";
 import CandidateWithdraws from "./candidateWithdraws/CandidateWithdraws";
+import NoAvailableTimeSlots from "./noAvailableTimeSlots/NoAvailableTimeSlots";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -63,7 +64,8 @@ const {
   CALI_DISCLOSURE,
   AMAZON_REJECTS,
   WORKFLOW_FAILED,
-  AMAZON_WITHDRAWS
+  AMAZON_WITHDRAWS,
+  NO_AVAILABLE_TIME_SLOTS
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -161,6 +163,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${AMAZON_WITHDRAWS}`} exact>
               <AmazonWithdraws/>
+            </Route>
+            <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
+              <NoAvailableTimeSlots/>
             </Route>
           </Switch>
         </Router>

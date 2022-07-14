@@ -24,4 +24,5 @@ export enum PAGE_ROUTES {
   AMAZON_REJECTS = "amazon-rejects",
   WORKFLOW_FAILED = "workflow-failed",
   AMAZON_WITHDRAWS = "amazon-withdraws",
+  NO_AVAILABLE_TIME_SLOTS = "no-available-time-slots"
 }

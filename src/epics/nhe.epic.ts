@@ -8,7 +8,8 @@ import { epicSwitchMapHelper } from "./helper";
 import { GetNheTimeSlotsDsResponse, ProxyApiError } from "../utils/api/types";
 import { UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
 import { GetTimeSlotsErrorMessages, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
-import { setEpicApiCallErrorMessage } from "../utils/helper";
+import { routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
+import { PAGE_ROUTES } from "../components/pageRoutes";
 
 export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
   return action$.pipe(
@@ -27,6 +28,7 @@ export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
           catchError((error: ProxyApiError) => {
             const errorMessage = GetTimeSlotsErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);
+            routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
             return of(actionGetNheTimeSlotsDsFailed(error));
           })
         )

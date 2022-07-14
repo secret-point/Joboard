@@ -1581,6 +1581,46 @@
         "BB-amazon-withdraws-button-text": {
             "note": "Amazon withdraws page back to dashboard buttton",
             "value": "Volver al tablero"
+        },
+        "BB-session-timeout": {
+            "note": "session timeout page title",
+            "value": "Su reserva de puesto de trabajo ha caducado."
+        },
+        "BB-session-timeout-description": {
+            "note": "session timeout description",
+            "value": "Permitimos a los candidatos hasta tres horas para completar su solicitud. Desafortunadamente, el puesto de trabajo que estaba solicitando excedió el límite de tres horas. Explore las oportunidades laborales disponibles."
+        },
+        "BB-session-timeout-view-job-button-text": {
+            "note": "Session timeout view job opportunities button",
+            "value": "Ver oportunidades de trabajo"
+        },
+        "BB-no-available-time-slots-title": {
+            "note": "Text for no available time slots title",
+            "value": "No hay citas disponibles para este trabajo en este momento."
+        },
+        "BB-no-available-time-slots-description": {
+            "note": "Text for no available time slots description title",
+            "value": "You may:"
+        },
+        "BB-no-available-time-slots-select-different-job": {
+            "note": "Text for no available time slots page to select different job",
+            "value": "1. Seleccione una oportunidad de trabajo diferente"
+        },
+        "BB-no-available-time-slots-select-different-job-link": {
+            "note": "Text for no available time slots page to select different job link",
+            "value": "Haga clic aquí"
+        },
+        "BB-no-available-time-slots-select-later-date-text": {
+            "note": "Text for no available time slots page to select shift with later start date",
+            "value": "2. Seleccione un turno con una fecha de inicio posterior (recomendado)"
+        },
+        "BB-no-available-time-slots-view-other-shifts-button-text": {
+            "note": "Text for no available time slots page view other shifts button",
+            "value": "Ver otros turnos"
+        },
+        "BB-no-available-time-slots-back-to-dashboard-button-text": {
+            "note": "Text for no available time slots page back to dashboard button",
+            "value": "Volver al tablero"
         }
     }
 }

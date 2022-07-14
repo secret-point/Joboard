@@ -1581,6 +1581,46 @@
         "BB-amazon-withdraws-button-text": {
             "note": "Amazon withdraws page back to dashboard buttton",
             "value": "Return to dashboard"
+        },
+        "BB-session-timeout": {
+            "note": "session timeout page title",
+            "value": "Your job position reservation has expired."
+        },
+        "BB-session-timeout-description": {
+            "note": "session timeout description",
+            "value": "We allow candidates up to three hours to complete their application. Unfortunately, the job position you were applying for exceeded the three hour limit. Please explore available job opportunities."
+        },
+        "BB-session-timeout-view-job-button-text": {
+            "note": "Session timeout view job opportunities button",
+            "value": "View job opportunities"
+        },
+        "BB-no-available-time-slots-title": {
+            "note": "Text for no available time slots title",
+            "value": "There are no appointments available for this job right now."
+        },
+        "BB-no-available-time-slots-description": {
+            "note": "Text for no available time slots description title",
+            "value": "You may:"
+        },
+        "BB-no-available-time-slots-select-different-job": {
+            "note": "Text for no available time slots page to select different job",
+            "value": "1. Select a different job opportunity"
+        },
+        "BB-no-available-time-slots-select-different-job-link": {
+            "note": "Text for no available time slots page to select different job link",
+            "value": "Click here"
+        },
+        "BB-no-available-time-slots-select-later-date-text": {
+            "note": "Text for no available time slots page to select shift with later start date",
+            "value": "2. Select a shift with a later start date (recommended)"
+        },
+        "BB-no-available-time-slots-view-other-shifts-button-text": {
+            "note": "Text for no available time slots page view other shifts button",
+            "value": "View other shifts"
+        },
+        "BB-no-available-time-slots-back-to-dashboard-button-text": {
+            "note": "Text for no available time slots page back to dashboard button",
+            "value": "Return to dashboard"
         }
     }
 }
