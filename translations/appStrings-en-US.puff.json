@@ -1669,6 +1669,18 @@
         "BB-update-wotc-status-error-message-failed-update-wotc": {
             "note": "error message when failed to update wotc status",
             "value": "Failed to update WOTC."
+        },
+        "BB-update-application-error-message-unable-update-shift-appt-no-longer-available": {
+            "note": "Error message text displayed when selected NHE shift is no longer available",
+            "value": "The schedule you selected is no longer available. Please select a different option."
+        },
+        "BB-update-application-error-message-unable-update-shift-candidate-already-hired": {
+            "note": "Error message text displayed when selected NHE shift and candidate is already hired",
+            "value": "You have recently been hired for this application, your shift cannot be changed. Please reach out at https://www.amazondelivers.jobs/contactus to change your shift."
+        },
+        "BB-update-application-error-message-failed-update-shift": {
+            "note": "Error message text displayed when selected and failed",
+            "value": "Failed to update application with selected schedule"
         }
     }
 }

@@ -222,7 +222,19 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   [UPDATE_APPLICATION_ERROR_CODE.UNABLE_CREATE_APPLICATION]: {
     translationKey: "BB-update-application-error-message-unable-create-application",
     value: "Unable to create application."
-  }
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.APPOINTMENT_NO_LONGER_AVAILABLE]: {
+    translationKey: "BB-update-application-error-message-unable-update-shift-appt-no-longer-available",
+    value: "The schedule you selected is no longer available. Please select a different option."
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.CANDIDATE_ALREADY_HIRED]: {
+    translationKey: "BB-update-application-error-message-unable-update-shift-candidate-already-hired",
+    value: "You have recently been hired for this application, your shift cannot be changed. Please reach out at https://www.amazondelivers.jobs/contactus to change your shift."
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.FAILED_SELECT_APPT_SHIFT]: {
+    translationKey: "BB-update-application-error-message-failed-update-shift",
+    value: "Failed to update application with selected schedule."
+  },
 }
 
 export const GetJobInfoErrorMessages: { [key: string]: ApiErrorMessage } = {

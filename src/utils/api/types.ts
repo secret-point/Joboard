@@ -35,7 +35,8 @@ export interface UpdateWorkflowNameResponse {
 }
 
 export interface ProxyApiError {
-    errorCode: string
+    errorCode: string;
+    errorMessage?: string;
 }
 
 export interface GetJobInfoResponse {

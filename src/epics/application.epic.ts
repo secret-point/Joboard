@@ -183,7 +183,10 @@ export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
                       action.onError(error);
                     }
 
-                    const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+                    //TODO potentially rely on error Message for select shift on nhe step. BB is implementing logic to add errorCode in their api response
+                    const errorKey = error.errorCode || error.errorMessage || CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR;
+                    const errorMessage = UpdateApplicationErrorMessage[errorKey];
+
                     setEpicApiCallErrorMessage(errorMessage);
 
                         return of(actionUpdateApplicationDSFailed(error));
