@@ -6,7 +6,8 @@ import {
   GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
-  UPDATE_APPLICATION_ERROR_CODE
+  UPDATE_APPLICATION_ERROR_CODE,
+  UPDATE_WOTC_STATUS_ERROR_CODE
 } from "../enums/common";
 import { ApiErrorMessage } from "../types/common";
 
@@ -289,4 +290,11 @@ export const GetCandidateErrorMessages: { [key: string]: ApiErrorMessage } = {
     translationKey: "BB-get-candidate-error-message-no-access-to-application",
     value: "You can not access this application."
   }
-}
+};
+
+export const UpdateWotcStatusErrorMessages: { [key: string]: ApiErrorMessage } = {
+  [UPDATE_WOTC_STATUS_ERROR_CODE.FAILED_UPDATE_WOTC]: {
+    translationKey: "BB-update-wotc-status-error-message-failed-update-wotc",
+    value: "Failed to update WOTC."
+  }
+};

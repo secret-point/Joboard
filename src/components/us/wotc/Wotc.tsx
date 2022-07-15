@@ -16,7 +16,7 @@ interface MapStateToProps {
   application: ApplicationState;
 };
 
-export const WOTCComponent = (props: MapStateToProps) => {
+export const Wotc = (props: MapStateToProps) => {
   const { application } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
@@ -54,4 +54,4 @@ const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 
-export default connect(mapStateToProps)(WOTCComponent);
+export default connect(mapStateToProps)(Wotc);

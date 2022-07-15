@@ -1665,6 +1665,10 @@
         "BB-States-wyoming": {
             "note": "Text for Wyoming state",
             "value": "WY -- Wyoming"
+        },
+        "BB-update-wotc-status-error-message-failed-update-wotc": {
+            "note": "error message when failed to update wotc status",
+            "value": "No se pudo actualizar WOTC."
         }
     }
 }

@@ -28,7 +28,7 @@ import { loadingStatusHelper } from "../../utils/helper";
 import { ProxyApiError } from "../../utils/api/types";
 
 export const actionGetApplication = ( payload: GetApplicationRequest, onSuccess?: Function, onError?: Function ): GetApplicationAction => {
-    return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION, payload }
+    return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION, payload, onSuccess, onError };
 };
 
 export const actionGetApplicationSuccess = ( payload: Application ): GetApplicationSuccessAction => {

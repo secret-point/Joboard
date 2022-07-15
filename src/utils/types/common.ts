@@ -833,3 +833,9 @@ export interface ApiErrorMessage {
     translationKey: string;
     value: string;
 }
+
+export interface UpdateWotcStatusRequest {
+    applicationId: string;
+    candidateId: string;
+    status: string;
+}

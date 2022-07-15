@@ -16,6 +16,7 @@ export enum PAGE_ROUTES {
   THANK_YOU = "thank-you",
   SESSION_TIMEOUT = "session-timeout",
   WOTC = "wotc",
+  WOTC_COMPLETE = "wotc-complete",
   ASSESSMENT_CONSENT = "assessment-consent",
   ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
   ASSESSMENT_FINISHED = "assessment-finished",

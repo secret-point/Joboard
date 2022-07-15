@@ -30,6 +30,8 @@ export enum APPLICATION_ACTION_TYPES {
 export interface GetApplicationAction extends Action {
     type: APPLICATION_ACTION_TYPES.GET_APPLICATION;
     payload: GetApplicationRequest;
+    onSuccess?: Function;
+    onError?: Function;
 }
 
 export interface GetApplicationSuccessAction extends Action {

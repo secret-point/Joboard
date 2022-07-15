@@ -66,10 +66,17 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
                         return response
                     }),
                     map(( response: GetApplicationResponse ) => {
+                      const application: Application = response.data;
 
-                        return actionGetApplicationSuccess(response.data);
+                      if (action.onSuccess) {
+                        action.onSuccess(application)
+                      }
+                        return actionGetApplicationSuccess(application);
                     }),
                     catchError(( error: ProxyApiError ) => {
+                      if(action.onError){
+                        action.onError(error);
+                      }
 
                       const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
                       setEpicApiCallErrorMessage(errorMessage);

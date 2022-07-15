@@ -52,8 +52,8 @@ export default class CandidateApplicationService {
   }
 
   async updateWOTCStatus( applicationId: string, candidateId: string, status: string ) {
-    await this.axiosInstance.put(`/update-wotc-status`, { applicationId, candidateId, status });
-    return await this.getApplication(applicationId);
+    const response = await this.axiosInstance.put(`/update-wotc-status`, { applicationId, candidateId, status });
+    return response.data;
   }
 
   async updateWorkflowStepName( applicationId: string, workflowStepName: string ) {

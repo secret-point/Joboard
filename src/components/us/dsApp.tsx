@@ -22,7 +22,8 @@ import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import ThankYou from "./thankYou/ThankYou";
 import CounterMessageBanner from "../common/CounterMessageBanner";
 import SessionTimeout from "./sessionTimeout/SessionTimeout";
-import WOTCComponent from "./wotc/WOTC";
+import Wotc from "./wotc/Wotc";
+import WotcComplete from "./wotc/WotcComplete";
 import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentNotEligible from "./assessment/AssementNotEligible";
 import AssessmentFinished from "./assessment/AssessmentFinished";
@@ -62,6 +63,7 @@ const {
   SESSION_TIMEOUT,
   THANK_YOU,
   WOTC,
+  WOTC_COMPLETE,
   CALI_DISCLOSURE,
   AMAZON_REJECTS,
   WORKFLOW_FAILED,
@@ -137,7 +139,10 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
               <ThankYou/>
             </Route>
             <Route path={`/${WOTC}`} exact>
-              <WOTCComponent/>
+              <Wotc/>
+            </Route>
+            <Route path={`/${WOTC_COMPLETE}`} exact>
+              <WotcComplete/>
             </Route>
             <Route path={`/${SESSION_TIMEOUT}`} exact>
               <SessionTimeout/>
