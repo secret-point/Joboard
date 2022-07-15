@@ -9,11 +9,18 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { getLocale } from "../../../utils/helper";
 import { connect } from "react-redux";
+import { Locale } from "../../../utils/types/common";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
   application: ApplicationState;
+};
+
+const LocaleToWotcLangMapping: Record<Locale, string> = {
+  [Locale.enGB]: 'en',
+  [Locale.enUS]: 'en',
+  [Locale.esUS]: 'es',
 };
 
 export const Wotc = (props: MapStateToProps) => {
@@ -32,6 +39,13 @@ export const Wotc = (props: MapStateToProps) => {
     applicationData && addMetricForPageLoad(pageName);
   }, [applicationData, pageName]);
 
+  const wotcLocalizedUrl = (wotcUrl: string): string => {
+    if (!wotcUrl) {
+      return "";
+    }
+    return `${wotcUrl}&lang=${LocaleToWotcLangMapping[getLocale()]}`;
+  };
+
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text fontSize="T500">
@@ -42,9 +56,8 @@ export const Wotc = (props: MapStateToProps) => {
         {t("BB-WOTC-page-description-text", "Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programs and will in no way negatively impact any hiring, retention or promotion decisions.")}
       </Text>
 
-      {/* TODO: handle MLS for wotc iframe */}
       {applicationData?.wotcScreening?.wotcUrl && (
-        <IFrame src={applicationData?.wotcScreening?.wotcUrl} />
+        <IFrame src={wotcLocalizedUrl(applicationData?.wotcScreening?.wotcUrl)} />
       )}
     </Col>
   )
