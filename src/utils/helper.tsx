@@ -665,8 +665,9 @@ export const handleSubmitAdditionalBgc =
         const patch: CandidatePatchRequest = candidatePatchRequest;
         const verifyInfo = verifyBasicInfo(patch, formError, AdditionalBGCFormConfig);
         boundUpdateCandidateInfoError(verifyInfo.formError);
-        console.log(verifyInfo, "verify Info")
-        if(!verifyInfo.hasError) {
+        const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
+        const isOver18 = isDOBOverEighteen(dob);
+        if(!verifyInfo.hasError && isOver18) {
             //Bound update additional info all
             const payload = {
                 candidate: candidatePatchRequest.additionalBackgroundInfo

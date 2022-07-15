@@ -213,9 +213,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }
 
     const handleClickNext = () => {
-      const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
-      const isOver18 = isDOBOverEighteen(dob);
-        if(candidatePatchRequest && candidateData && applicationData && isOver18) {
+        if(candidatePatchRequest && candidateData && applicationData) {
             handleSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
         }
     }

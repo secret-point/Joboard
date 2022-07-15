@@ -47,7 +47,6 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const [isSignatureValid, setIsSignatureValid] = useState(true);
     const [missingFcraResponse, setMissingFcraResponse] = useState(false);
 
-
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
