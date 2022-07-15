@@ -1,11 +1,17 @@
 import React from "react";
-import { InputWrapper, Select, RenderOptionFunction, RenderNativeOptionFunction } from "@amzn/stencil-react-components/form";
+import {
+    InputWrapper,
+    RenderNativeOptionFunction,
+    RenderOptionFunction,
+    Select,
+    ValueAccessor
+} from "@amzn/stencil-react-components/form";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Label, Text } from "@amzn/stencil-react-components/text";
 import { FormInputItem, i18nSelectOption } from "../../utils/types/common";
-import { isI18nSelectOption } from '../../utils/helper';
-import { translate as t, mapI18nStringKey } from "../../utils/translator";
-import { useTranslation } from 'react-i18next'
+import { isI18nSelectOption } from "../../utils/helper";
+import { mapI18nStringKey, translate as t } from "../../utils/translator";
+import { useTranslation } from "react-i18next";
 
 interface FormInputSelectProps {
     inputItem: FormInputItem,
@@ -13,6 +19,7 @@ interface FormInputSelectProps {
     handleChange: Function,
     renderOption?: RenderOptionFunction,
     renderNativeOption?: RenderNativeOptionFunction,
+    valueAccessor?: ValueAccessor<any>
 }
 
 const FormInputSelect = ( props: FormInputSelectProps ) => {

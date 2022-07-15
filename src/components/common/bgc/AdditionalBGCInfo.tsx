@@ -1,18 +1,24 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H4, Label, Text } from "@amzn/stencil-react-components/text";
-import { Checkbox } from '@amzn/stencil-react-components/form';
+import {
+  Checkbox,
+  RenderNativeOptionFunction,
+  RenderOptionFunction,
+  ValueAccessor
+} from "@amzn/stencil-react-components/form";
 import { MessageBanner, MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import CriminalRecordForm from "./CriminalRecordForm";
 import PreviousLegalNameForm from "./PreviousLegalNameForm";
 import {
-    AdditionalBGCFormConfigPart1,
-    AdditionalBGCFormConfigPart2,
-    CountrySelectOptions,
-    NationIdTypeSelectOptions,
-    SocialSecurityNumberValue
+  AdditionalBGCFormConfigPart1,
+  AdditionalBGCFormConfigPart2,
+  CountrySelectOptions,
+  IdNumberBgcFormConfig,
+  NationIdTypeSelectOptions,
+  SocialSecurityNumberValue
 } from "../../../utils/constants/common";
-import { FormInputItem, i18nSelectOption } from "../../../utils/types/common";
+import { FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -24,15 +30,15 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { connect } from "react-redux";
-import get from 'lodash/get';
-import cloneDeep from 'lodash/cloneDeep';
-import set from 'lodash/set';
+import get from "lodash/get";
+import cloneDeep from "lodash/cloneDeep";
+import set from "lodash/set";
 import {
-    boundSetCandidatePatchRequest,
-    boundUpdateCandidateInfoError
+  boundSetCandidatePatchRequest,
+  boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
-import { WithModal, ModalContent } from '@amzn/stencil-react-components/modal';
-import { handleSubmitAdditionalBgc } from "../../../utils/helper";
+import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
+import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
@@ -60,6 +66,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
     let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
     let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
+    let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.state');
 
     // TODO: customized based on country
     if (!countryDefaultValue){
@@ -100,8 +107,30 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }, [])
 
     const renderFormItem = ( formItem: FormInputItem ) => {
-        const hasError = get(formError, formItem.dataKey) || false;
-        formItem.hasError = hasError;
+      const hasError = get(formError, formItem.dataKey) || false;
+      formItem.hasError = hasError;
+
+      const value = get(candidatePatchRequest, formItem.dataKey);
+
+      //Validate Date of Birth if is over 18
+      if (formItem.dataKey.includes("dateOfBirth") && !hasError && value) {
+        const dob = get(candidatePatchRequest, formItem.dataKey);
+        const isOver18 = isDOBOverEighteen(dob);
+        const legacyErrorMessage = formItem.errorMessage;
+        const legacyErrorTranslationKey = formItem.errorMessageTranslationKey;
+
+        if (!isOver18) {
+          formItem.hasError = true;
+          formItem.errorMessage = "You need to be above 18 years old.";
+          formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-below18-error-text';
+        }
+        //Reset config to original value
+        else {
+          formItem.hasError = hasError;
+          formItem.errorMessage = legacyErrorMessage;
+          formItem.errorMessageTranslationKey = legacyErrorTranslationKey;
+        }
+      }
 
         switch(formItem.type) {
             case 'text':
@@ -118,10 +147,35 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 />
 
             case 'select':
+              let defaultValue: string;
+              let handleChange: Function;
+              let valueAccessor: ValueAccessor<StateSelectOption> | undefined = undefined;
+              let renderNativeOptionFunction: RenderNativeOptionFunction | undefined = undefined;
+              let renderOption: RenderOptionFunction | undefined = undefined;
+
+              if(formItem.id.includes("additionalBGCState")){
+                defaultValue = formItem.selectOptions && formItem.selectOptions.find(state => state.value === stateIdTypeDefaultValue);
+                valueAccessor = option => option.value;
+                renderNativeOptionFunction = option => t(option.translationKey, option.displayValue);
+                renderOption = (option: StateSelectOption) => <Row>{t(option.translationKey, option.displayValue)}</Row>;
+
+                handleChange = (option: any) => {
+                  SetNewCandidatePatchRequest([
+                    { value: option.value, dataKey: formItem.dataKey },
+                  ])
+                }
+              }
+              else {
+                defaultValue = get(candidateData, formItem.dataKey) || '';
+                handleChange = (value: string) => handleSelectChange(value, formItem)
+              }
                 return <FormInputSelect
                     inputItem={formItem}
-                    defaultValue={get(candidateData, formItem.dataKey) || ''}
-                    handleChange={(value: string) => handleSelectChange(value, formItem)}
+                    defaultValue={defaultValue}
+                    handleChange={handleChange}
+                    valueAccessor={valueAccessor}
+                    renderNativeOption={renderNativeOptionFunction}
+                    renderOption={renderOption}
                 />
 
             default:
@@ -159,7 +213,9 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }
 
     const handleClickNext = () => {
-        if(candidatePatchRequest && candidateData && applicationData) {
+      const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
+      const isOver18 = isDOBOverEighteen(dob);
+        if(candidatePatchRequest && candidateData && applicationData && isOver18) {
             handleSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
         }
     }
@@ -305,16 +361,8 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             }
             <FormInputText
                 inputItem={{
-                    labelText: "National ID Number",
-                    dataKey: 'additionalBackgroundInfo.idNumber',
-                    required: true,
-                    type: 'text',
-                    regex: '^[0-9]{9}$',
-                    id: "idNumberInput",
-                    name: 'idNumber',
-                    errorMessage: 'Please enter a valid 9 digits social security number without dash',
-                    labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-label-text-revise',
-                    errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
+                  ...IdNumberBgcFormConfig,
+                  hasError: get(formError, IdNumberBgcFormConfig.dataKey) || false,
                     ...(isNoSSNChecked && {
                         placeholder: 'Social Security Number not available',
                         placeholderTranslationKey: 'BB-BGC-no-ssn-national-id-number-disabled-placeholder'

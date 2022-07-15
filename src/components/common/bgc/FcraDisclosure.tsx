@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
+import React, { useEffect, useState } from "react";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import { DetailedRadio, Input, InputWrapper } from "@amzn/stencil-react-components/form";
-import { FcraDisclosureConfigList } from "../../../utils/constants/common";
+import { FcraDisclosureConfigList, HasPreviouslyWorkedAtAmazonRadioConfig } from "../../../utils/constants/common";
 import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { connect } from "react-redux";
@@ -10,8 +10,18 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
-import { handleSubmitFcraBGC, validateName } from "../../../utils/helper";
+import { getLocale, handleSubmitFcraBGC, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
+import { useLocation } from "react-router";
+import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import queryString from "query-string";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { CommonColors } from "../../../utils/colors";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 
 interface MapStateToProps {
     job: JobState,
@@ -27,20 +37,64 @@ interface FcraDisclosureProps {
 type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
 
 const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
-    const { bgc, application } = props;
+    const { job, application, schedule, bgc } = props;
     const { stepConfig } = bgc;
     const applicationData = application.results;
     const fcraQuestions = applicationData?.fcraQuestions;
 
-    const [fcraResponse, setFcraResponse] = useState<FCRA_DISCLOSURE_TYPE | undefined>(fcraQuestions?.bgcDisclosure);
+    const [fcraResponse, setFcraResponse] = useState<FCRA_DISCLOSURE_TYPE | undefined>();
     const [eSignature, setESignature] = useState(fcraQuestions?.bgcDisclosureEsign.signature || '');
     const [isSignatureValid, setIsSignatureValid] = useState(true);
+    const [missingFcraResponse, setMissingFcraResponse] = useState(false);
+
+
+    const { search, pathname } = useLocation();
+    const pageName = getPageNameFromPath(pathname);
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
+    const { applicationId, jobId, scheduleId } = queryParams;
+    const jobDetail = job.results;
+    const scheduleDetail = schedule.results.scheduleDetail;
+
+    useEffect(() => {
+        boundGetCandidateInfo();
+    },[])
+
+    useEffect(() => {
+        scheduleId && boundGetScheduleDetail({
+            locale: getLocale(),
+            scheduleId: scheduleId
+        })
+    }, [scheduleId]);
+
+    // Don't refetch data if id is not changing
+    useEffect(() => {
+        jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    }, [jobId]);
+
+    useEffect(() => {
+        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    }, [applicationId]);
+
+    useEffect(() => {
+        jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
+    }, [jobDetail, applicationData]);
+
+    useEffect(() => {
+        setFcraResponse(fcraQuestions?.bgcDisclosure);
+        setESignature(fcraQuestions?.bgcDisclosureEsign.signature || "");
+    }, [JSON.stringify(fcraQuestions)])
 
     const handleClickNext = () => {
         const isFullNameValid = validateName(eSignature);
 
-        if(isFullNameValid && !!fcraResponse) {
-            setIsSignatureValid(true);
+        if(!isFullNameValid) {
+            setIsSignatureValid(false);
+            return;
+        }
+
+        if(!fcraResponse) {
+            setMissingFcraResponse(true);
+            return;
         }
 
         if(applicationData) {
@@ -58,15 +112,29 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
             </Col>
             <Col gridGap="S300" padding={{ top: 'S200' }}>
                 {
-                    FcraDisclosureConfigList.map(fcraItem => (
-                        <DetailedRadio
+                    FcraDisclosureConfigList.map(fcraItem => {
+                        const defaultChecked = fcraItem.value === fcraResponse
+                        return (
+                          <DetailedRadio
+                            key={fcraItem.value}
                             name="fcra-radio-col"
                             value={fcraItem.value}
                             titleText={t(fcraItem.titleTranslationKey, fcraItem.title)}
                             onChange={event => setFcraResponse(fcraItem.value)}
-                            defaultChecked={fcraItem.value === fcraResponse}
+                            defaultChecked={defaultChecked}
+                          />
+                        )
+                    })
+                }
+                {
+                    missingFcraResponse &&
+                    <Row padding="S300" backgroundColor={CommonColors.RED05}>
+                        <StatusIndicator
+                          messageText={missingFcraResponse ? HasPreviouslyWorkedAtAmazonRadioConfig.errorMessage || "" : ""}
+                          status={Status.Negative}
+                          iconAriaHidden={true}
                         />
-                    ))
+                    </Row>
                 }
             </Col>
             {
@@ -95,14 +163,17 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                     </InputWrapper>
                 </Col>
             }
-            <Col padding={{ top: 'S300', bottom: 'S300' }}>
-                <Button
-                    variant={ButtonVariant.Primary}
-                    onClick={handleClickNext}
-                >
-                    {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
-                </Button>
-            </Col>
+            {
+                fcraResponse &&
+                <Col padding={{ top: 'S300', bottom: 'S300' }}>
+                    <Button
+                      variant={ButtonVariant.Primary}
+                      onClick={handleClickNext}
+                    >
+                        {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
+                    </Button>
+                </Col>
+            }
         </Col>
     )
 }

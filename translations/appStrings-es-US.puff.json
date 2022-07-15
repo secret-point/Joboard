@@ -354,6 +354,10 @@
             "note": "Text for the additional bgc form date of birth error message text.",
             "value": "Por favor ingresa una fecha de nacimiento valida."
         },
+        "BB-BGC-Additional-bgc-form-dob-below18-error-text": {
+            "note": "Text for the additional bgc form date of birth below 18 years error message text.",
+            "value": "Necesitas ser mayor de 18 años."
+        },
         "BB-BGC-form-optional-input-label-text": {
             "note": "Text to show that inout on a form is optional",
             "value": "Opcional"
@@ -1368,7 +1372,7 @@
         },
         "BB-update-application-error-message-max-ssn-edits": {
             "note": "error message for update application when number of ssn edits exceed the maximum",
-            "value": "La actualización de la aplicación falló porque alcanzó la cantidad máxima de cambios en su identificación nacional. Si se ha registrado anteriormente con una dirección de correo electrónico diferente, [Cerrar sesión](/cerrar sesión) e intente iniciar sesión con ese correo electrónico, utilizando la opción \"¿Olvidó su pin personal?\" enlace si es necesario. Si necesita ayuda, contáctenos por correo electrónico o chatee en <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>."
+            "value": "La actualización de la aplicación falló porque alcanzó la cantidad máxima de cambios en su identificación nacional. Si se registró anteriormente con una dirección de correo electrónico diferente, cierre la sesión e intente iniciar sesión con ese correo electrónico, utilizando la opción \"¿Olvidó su pin personal?\" enlace si es necesario. Si necesita ayuda, comuníquese con nosotros por correo electrónico o chatee en <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>."
         },
         "BB-update-application-error-message-invalid-ssn": {
             "note": "error message for update application when ssn is invalid",
@@ -1633,6 +1637,34 @@
         "BB-no-available-time-slots-back-to-dashboard-button-text": {
             "note": "Text for no available time slots page back to dashboard button",
             "value": "Volver al tablero"
+        },
+        "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message": {
+            "note": "Text for HasPreviouslyWorkedAtAmazon bgc info error message",
+            "value": "Marque la casilla para continuar."
+        },
+        "BB-bgc-ConvictionInfoRadio-error-message": {
+            "note": "Text for ConvictionInfoRadio button bgc info error message",
+            "value": "Marque la casilla para continuar."
+        },
+        "BB-bgc-ConvictionDetail-error-message": {
+            "note": "Text for ConvictionDetail bgc info error message",
+            "value": "Marque la casilla para continuar."
+        },
+        "BB-States-Washington": {
+            "note": "Text for Washington state",
+            "value": "WA -- Washington"
+        },
+        "BB-States-wisconsin": {
+            "note": "Text for Wisconsin state",
+            "value": "WI -- Wisconsin"
+        },
+        "BB-States-west-virginia": {
+            "note": "Text for West Virginia state",
+            "value": "WV -- Virginia Occidental - Virginia Occidental"
+        },
+        "BB-States-wyoming": {
+            "note": "Text for Wyoming state",
+            "value": "WY -- Wyoming"
         }
     }
 }

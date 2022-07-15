@@ -17,5 +17,6 @@ export enum CommonColors {
     Neutral05 = "#F1F4F7",
     Neutral0 = "#ffffff",
     GREEN70= "#23756b",
-    RED70 = "#bb2929"
+    RED70 = "#bb2929",
+    RED05 = "#fef0ef"
 }

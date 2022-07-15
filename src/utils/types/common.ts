@@ -617,7 +617,7 @@ export interface FormInputItem {
     dataKey: string;
     type: string;
     defaultValue?: string;
-    selectOptions?: any[] | i18nSelectOption[]
+    selectOptions?: any[] | i18nSelectOption[] | StateSelectOption[] //TODO unify these two types into one
     required?: boolean,
     regex?: string,
     id: string,
@@ -820,6 +820,13 @@ export type i18nSelectOption = {
     value: string,
     translationKey: string,
     countryCode?: string
+}
+
+export type StateSelectOption = {
+    displayValue: string,
+    value: string,
+    translationKey: string,
+    code?: string
 }
 
 export interface ApiErrorMessage {

@@ -97,7 +97,7 @@ const DatePicker = ( props: DatePickerProps ) => {
                 id={id}
                 tooltipText={toolTipText}
                 error={hasError}
-                footer={hasError ? errorMessage : undefined}
+                footer={hasError ? t(errorMessageTranslationKey || "", errorMessage || "") : undefined}
                 data-testid={`input-wrapper-${id}`}
                 required={required}
                 renderLabel={() => (

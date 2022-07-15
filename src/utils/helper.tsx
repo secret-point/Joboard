@@ -1,5 +1,7 @@
 import React from "react";
 import {
+    AdditionalBackgroundInfoRequest,
+    Address,
     AlertMessage,
     ApiErrorMessage,
     Application,
@@ -31,6 +33,7 @@ import Cookies from "js-cookie";
 import {
     AdditionalBGCFormConfig,
     HVH_LOCALE,
+    IdNumberBgcFormConfig,
     initScheduleStateFilters,
     NameRegexValidator,
     UserIdValidator,
@@ -78,6 +81,7 @@ import { initSelfIdentificationState } from "../reducers/selfIdentification.redu
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { translate } from "./translator";
+import isNil from "lodash/isNil";
 
 const {
     BACKGROUND_CHECK,
@@ -350,7 +354,7 @@ export const validateUserId = (userId: string): boolean => {
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
     const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions)
     const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions)
-    const isAdditionalBgcCompleted = !isEmpty(candidateData?.additionalBackgroundInfo);
+    const isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo);
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
 
@@ -409,20 +413,89 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
 export const verifyBasicInfo =
     (candidate: CandidatePatchRequest, formError: CandidateInfoErrorState, formConfig: FormInputItem[]): {hasError: boolean, formError: CandidateInfoErrorState} => {
         let hasError: boolean = false;
+
         formConfig
-            .filter(itemConfig => itemConfig.edited === true)
             .forEach(itemConfig => {
+                let isValid: boolean;
                 const { dataKey, required, regex } = itemConfig;
                 const value = get(candidate,itemConfig.dataKey);
-                const isValid = validateInput(value, required || false, regex || '');
+                if(itemConfig.id === IdNumberBgcFormConfig.id) {
+                    isValid = isSSNValid(candidate, required || false, regex || "");
+                }
+                else if(itemConfig.dataKey.includes("mostRecentBuildingWorkedAtAmazon") || itemConfig.dataKey.includes("mostRecentTimePeriodWorkedAtAmazon")) {
+                    const hasWorkedAtAmazonPreviously = get(candidate, "additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon");
+                    if(hasWorkedAtAmazonPreviously === true) {
+                        isValid = validateInput(value, required || false, regex || '');
+                    }
+                    else {
+                        isValid = true;
+                    }
+                }
+                else if(itemConfig.dataKey.includes("convictionDetails")) {
+                    const hasCriminalRecordWithinSevenYears = get(candidate, "additionalBackgroundInfo.hasCriminalRecordWithinSevenYears");
+
+                    if(hasCriminalRecordWithinSevenYears === true) {
+                        isValid = validateInput(value, required || false, regex || '');
+                    }
+                    else {
+                        isValid = true;
+                    }
+                }
+                else if(itemConfig.dataKey.includes("hasCriminalRecordWithinSevenYears") || itemConfig.dataKey.includes("hasPreviouslyWorkedAtAmazon")) {
+                    isValid = typeof value === "boolean";
+                }
+                else {
+                    isValid = validateInput(value, required || false, regex || '');
+                }
+
                 set(formError, dataKey, !isValid);
                 if(!isValid && !hasError) hasError = true;
             });
+
         return {
             hasError,
             formError
         }
     }
+
+
+export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string): boolean => {
+
+    if(!patchCandidate) {
+        return false;
+    }
+
+    const states = store.getState();
+
+    const candidate = states.candidate?.results?.candidateData || null;
+    const newSSN = get(patchCandidate, "additionalBackgroundInfo.idNumber");
+    const oldSNN = get(candidate, IdNumberBgcFormConfig.dataKey);
+
+    if(newSSN && newSSN.includes("***") && newSSN === oldSNN){
+        return true;
+    }
+    else if( newSSN && validateInput(newSSN, required, regex)){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+export const isDOBOverEighteen = (dateOfBirth: string) => {
+    if(!dateOfBirth){
+        return false;
+    }
+    const date = new Date(dateOfBirth);
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate() + 1;
+
+    const now = parseInt(new Date().toISOString().slice(0, 10).replace(/-/g, ''));
+    var dob = year * 10000 + month * 100 + day * 1; // Coerces strings to integers
+
+    return now - dob > 180000;
+}
 
 export const validateInput = (value: string, required: boolean, regex: string) => {
     if(!required && (!value || value?.length === 0)) return true;
@@ -589,9 +662,10 @@ export const handleUpdateFcraBGCStep = (stepConfig: BgcStepConfig) => {
 export const handleSubmitAdditionalBgc =
     ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState, stepConfig: BgcStepConfig ) => {
         const { ADDITIONAL_BGC } = UPDATE_APPLICATION_API_TYPE;
-        const patch: CandidatePatchRequest = resetUnchangedFieldFromPatch(candidateData, AdditionalBGCFormConfig, candidatePatchRequest) || {};
+        const patch: CandidatePatchRequest = candidatePatchRequest;
         const verifyInfo = verifyBasicInfo(patch, formError, AdditionalBGCFormConfig);
         boundUpdateCandidateInfoError(verifyInfo.formError);
+        console.log(verifyInfo, "verify Info")
         if(!verifyInfo.hasError) {
             //Bound update additional info all
             const payload = {
@@ -897,3 +971,27 @@ export const isNewBBuiPath = (pathName: string): boolean => {
 
     return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(`${usNewBBUIPathName}#/${pathName}`);
 }
+
+export const isAddressValid = (address?: Address): boolean => {
+    //Will use mandatory field of address in BB UI to check if address is empty or not
+
+    if(!address) {
+        return false;
+    }
+
+    const { addressLine1, city, country, state, zipcode, countryCode } = address;
+    const isCompleteAddress = !!addressLine1 && !!city && !!country && !!state && !!zipcode && !!countryCode;
+
+    return isCompleteAddress;
+}
+
+export const isAdditionalBgcInfoValid = (additionBgc?: AdditionalBackgroundInfoRequest): boolean => {
+    if(!additionBgc) {
+        return false;
+    }
+
+    const { dateOfBirth, governmentIdType, address, hasCriminalRecordWithinSevenYears, hasPreviouslyWorkedAtAmazon, idNumber, } = additionBgc;
+    const addressValid = isAddressValid(address);
+    return addressValid && !isNil(dateOfBirth) && !isNil(governmentIdType) && !isNil(hasCriminalRecordWithinSevenYears) && !isNil(hasPreviouslyWorkedAtAmazon) && !isNil(idNumber);
+}
+

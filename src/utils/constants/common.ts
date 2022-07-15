@@ -8,6 +8,7 @@ import {
     NonFcraESignatureAcknowledgement,
     ScheduleSortBy,
     ScheduleStateFilters,
+    StateSelectOption,
     StateSpecificNotice
 } from "../types/common";
 import {
@@ -59,6 +60,13 @@ export const ApplicationWithAssessmentStepList: ApplicationStep[] = [
         title: APPLICATION_STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT,
         titleTranslationKey: 'BB-ApplicationSteps-schedule-preHire-appt-text'
     }
+]
+
+export const StatesSelectOptions: StateSelectOption[] = [
+    { displayValue: 'WA -- Washington', value: 'Washington', translationKey: 'BB-States-Washington', code: 'WA' },
+    { displayValue: 'WI -- Wisconsin', value: 'Wisconsin', translationKey: 'BB-States-wisconsin', code: 'WI' },
+    { displayValue: 'WV -- West Virginia', value: 'West Virginia', translationKey: 'BB-States-west-virginia', code: 'WV' },
+    { displayValue: 'WY -- Wyoming', value: 'Wyoming', translationKey: 'BB-States-wyoming', code: 'WY' },
 ]
 
 export const ScheduleSortList: ScheduleSortBy[] = [
@@ -215,6 +223,19 @@ export const US_StateSpecificNotices: StateSpecificNotice[] = [
     }
 ]
 
+export const IdNumberBgcFormConfig: FormInputItem = {
+    labelText: "National ID Number",
+    dataKey: 'additionalBackgroundInfo.idNumber',
+    required: true,
+    type: 'text',
+    regex: '^[0-9]{9}$',
+    id: "idNumberInput",
+    name: 'idNumber',
+    errorMessage: 'Please enter a valid 9 digits social security number without dash',
+    labelTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-label-text-revise',
+    errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
+}
+
 export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
     {
         hasError: false,
@@ -227,6 +248,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,
@@ -238,7 +260,8 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         id: 'additionalBGCAddressLineTwo',
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
-        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text'
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,
@@ -251,6 +274,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-city-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-city-error-text',
+        regex: "^(?=\\S)[a-zA-Z ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,
@@ -261,11 +285,12 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         dataKey: 'additionalBackgroundInfo.address.state',
         id: 'additionalBGCState',
         type: 'select',
-        selectOptions: ['Al -- Alabama', 'Wa -- Washington'], // TODO to be aligned with actual state list,
+        selectOptions: StatesSelectOptions,
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-state-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
         placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-state-placeholder-text',
-        placeholder: 'Select a state'
+        placeholder: 'Select a state',
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,
@@ -294,15 +319,55 @@ export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
         type: 'datePicker',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-dob-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-dob-error-text',
+        regex: "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
     }
 ]
-
-export const AdditionalBGCFormConfig: FormInputItem[] = AdditionalBGCFormConfigPart1.concat(AdditionalBGCFormConfigPart2);
 
 export const initScheduleStateFilters: ScheduleStateFilters = {
     maxHoursPerWeek: DESIRED_WORK_HOURS.FORTY,
     daysHoursFilter: [],
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT
+}
+
+//Only used for error handling
+export const HasPreviouslyWorkedAtAmazonRadioConfig: FormInputItem = {
+    hasError: false,
+    labelText: '',
+    errorMessage: 'Please check the box to proceed',
+    required: true,
+    name: '',
+    dataKey: 'additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon',
+    id: 'hasPreviouslyWorkedAtAmazon',
+    type: 'radioButton',
+    regex: "^(?=\\S)[a-zA-Z]{4,}(?<=[^\\s])$",
+    errorMessageTranslationKey: "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message"
+}
+
+export const ConvictionInfoRadioConfig: FormInputItem = {
+    hasError: false,
+    labelText: '',
+    errorMessage: 'Please check the box to proceed.',
+    required: true,
+    name: '',
+    dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears',
+    id: 'hasCriminalRecordWithinSevenYears',
+    type: 'radioButton',
+    regex: "^(?=\\S)[a-zA-Z0-9 ]{4,}(?<=[^\\s])$",
+    errorMessageTranslationKey: "BB-bgc-ConvictionInfoRadio-error-message"
+}
+
+export const ConvictionDetailConfig: FormInputItem = {
+    hasError: false,
+    labelText: 'Provide city, country, state of conviction, date, nature of the offense, along with sentencing information',
+    errorMessage: 'Please provide the conviction details.',
+    required: true,
+    name: 'convictionDetails',
+    dataKey: 'additionalBackgroundInfo.convictionDetails',
+    id: 'convictionDetails',
+    type: 'textArea',
+    regex: "^(?=\\S)[a-zA-Z0-9 ]{2,500}(?<=[^\\s])$",
+    labelTranslationKey: 'BB-BGC-criminal-record-conviction-detail-label-text',
+    errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message"
 }
 
 export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
@@ -317,6 +382,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text',
+        regex: "^(?=\\S)[a-zA-Z ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,
@@ -328,7 +394,8 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         id: 'additionalBGCMostRecentTimePeriodWorkedAtAmazon',
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text',
-        errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text'
+        errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text',
+        regex: "^(?=\\S)(0[1-9]|1[0-2])\\/?([0-9]{2})\\s-\\s(0[1-9]|1[0-2])\\/?([0-9]{2})(?<=[^\\s])$"
     }
 ]
 
@@ -571,6 +638,7 @@ export const SocialSecurityNumberValue = 'United States - Social Security Number
 export const CountrySelectOptions = [
     { showValue: 'United States', value: 'United States', translationKey: 'BB-Country-United-States', countryCode: 'US' }
 ]
+
 export const NationIdTypeSelectOptions = [
     { showValue: 'Social Security Number', value: SocialSecurityNumberValue, translationKey: 'BB-BGC-Additional-bgc-form-national-id-options-ssn' }
 ]
@@ -582,3 +650,14 @@ export const UserIdValidator = "^[a-z]{4,60}$";
 export const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
 export const usNewBBUIPathName = "/application/us/";
+
+//This is used for additional bgc page form validation
+export const AdditionalBGCFormConfig: FormInputItem[] = [
+    ...AdditionalBGCFormConfigPart1,
+    ...AdditionalBGCFormConfigPart2,
+    ...PreviousWorkedAtAmazonBGCFormConfig,
+    IdNumberBgcFormConfig,
+    HasPreviouslyWorkedAtAmazonRadioConfig,
+    ConvictionInfoRadioConfig,
+    ConvictionDetailConfig
+]
