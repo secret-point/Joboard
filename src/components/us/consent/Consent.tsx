@@ -89,17 +89,17 @@ const ConsentPage = (props: MapStateToProps) => {
                 <ul className="ul-list">
                     <li>
                         <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-by-applying-acknowledging-item1-text", "are acknowledging that you have read the job description for the position you are applying for and that you understand the basic requirements needed to perform the job;")}
+                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text", "are acknowledging that you have read the job description for the position you are applying for and that you understand the basic requirements needed to perform the job;")}
                         </Text>
                     </li>
                     <li>
                         <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-by-applying-acknowledging-item2-text", "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;")}
+                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text", "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;")}
                         </Text>
                     </li>
                     <li>
                         <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-by-applying-acknowledging-item3-text", "consent to Amazon retaining your personal data after the application process, in order to assist it with the effective monitoring of its job application processes and to your personal data being stored in an electronic database in the USA.")}
+                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text", "consent to Amazon retaining your personal data after the application process, in order to assist it with the effective monitoring of its job application processes and to your personal data being stored in an electronic database in the USA.")}
                         </Text>
                     </li>
                 </ul>
