@@ -1680,7 +1680,15 @@
         },
         "BB-update-application-error-message-failed-update-shift": {
             "note": "Error message text displayed when selected and failed",
-            "value": "Failed to update application with selected schedule."
+            "value": "No se pudo actualizar la aplicación con el horario seleccionado."
+        },
+        "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise": {
+            "note": "Text for the additional bgc form  national id type label text",
+            "value": "Identificación nacional"
+        },
+        "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise": {
+            "note": "Text for the additional bgc form  national id number label text",
+            "value": "Numero de identificacion nacional"
         }
     }
 }
