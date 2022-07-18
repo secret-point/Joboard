@@ -2,7 +2,7 @@ import { DetailedRadio, InputFooter } from '@amzn/stencil-react-components/form'
 import { Col } from '@amzn/stencil-react-components/layout';
 import React from 'react';
 import { MINIMUM_AVAILABLE_TIME_SLOTS } from '../../../utils/constants/common';
-import { renderNheTimeSlotFullAddress } from "../../../utils/helper";
+import { formatNheTimeSlotTitle, renderNheTimeSlotFullAddress } from "../../../utils/helper";
 import { NHETimeSlot } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
 
@@ -21,7 +21,7 @@ const NheTimeSlotCard = (props: NheCardProps) => {
     <Col>
       <DetailedRadio
         name="nheTimeSlotCard"
-        titleText={nheTimeSlot.timeRange}
+        titleText={formatNheTimeSlotTitle(nheTimeSlot.dateWithoutFormat)}
         details={renderNheTimeSlotFullAddress(nheTimeSlot)}
         onChange={() => handleChange(nheTimeSlot)}
       />

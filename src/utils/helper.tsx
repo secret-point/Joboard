@@ -41,6 +41,7 @@ import {
 } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
+import 'moment/locale/es';
 import {
     GetScheduleListByJobIdRequest,
     SelectedScheduleForUpdateApplication,
@@ -726,6 +727,7 @@ export const fetchNheTimeSlotDs = (schedule: Schedule) => {
 }
 
 export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string => {
+    const timeRange = nheTimeSlot.timeRange || '';
     const state = nheTimeSlot.location.state || '';
     const city = nheTimeSlot.location.city || '';
     const address = nheTimeSlot.location.streetAddress || '';
@@ -733,7 +735,7 @@ export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string
 
     const stateAndPostal = `${state ? `${state}${postalCode ? ` ${postalCode}` : ''}` : `${postalCode}`}`;
 
-    return `${address}${city && address && `, `}${city}${stateAndPostal && (city || address) && `, `}${stateAndPostal}`;
+    return `${timeRange} ${address}${city && address && `, `}${city}${stateAndPostal && (city || address) && `, `}${stateAndPostal}`;
 }
 
 export const getPageName = () => {
@@ -897,13 +899,21 @@ export const SelfShouldDisplayContinue = (stepConfig: SelfIdentificationConfig):
 export interface DateFormatOption {
     displayFormat?: string;
     defaultDateFormat?: string;
+    locale?: Locale;
 };
 
 export const formatDate = (dateStr?: string, option: DateFormatOption = {}) => {
-    return moment(dateStr, option.defaultDateFormat).format(
+    return moment(dateStr, option.defaultDateFormat).locale(option.locale || getLocale()).format(
         option.displayFormat || "Do MMM YYYY"
     );
 };
+
+export const formatNheTimeSlotTitle = (date: string) => {
+    return formatDate(date, {
+      defaultDateFormat: "DD/MM/yyyy",
+      displayFormat: "dddd, MMM Do YYYY",
+    });
+  };
 
 export const goToCandidateDashboard = () => {
     const state = store.getState();
@@ -963,7 +973,7 @@ export const isI18nSelectOption = (option: any) => {
 
 export const isNewBBuiPath = (pathName: string): boolean => {
     const href = window.location.href;
-    const hashPath = window.location.hash .split('?')[0];
+    const hashPath = window.location.hash.split('?')[0];
     const pageName = hashPath ? hashPath.replace("#/", "") : '';
 
     if(!pathName){
