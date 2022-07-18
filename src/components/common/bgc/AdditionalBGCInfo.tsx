@@ -11,14 +11,20 @@ import { MessageBanner, MessageBannerType } from "@amzn/stencil-react-components
 import CriminalRecordForm from "./CriminalRecordForm";
 import PreviousLegalNameForm from "./PreviousLegalNameForm";
 import {
-  AdditionalBGCFormConfigPart1,
-  AdditionalBGCFormConfigPart2,
-  CountrySelectOptions,
-  IdNumberBgcFormConfig,
-  NationIdTypeSelectOptions,
-  SocialSecurityNumberValue
+    AdditionalBGCFormConfigPart1,
+    AdditionalBGCFormConfigPart2,
+    CountrySelectOptions,
+    IdNumberBgcFormConfig,
+    NationIdTypeSelectOptions,
+    SocialSecurityNumberValue,
+    BusinessLineType
 } from "../../../utils/constants/common";
-import { FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
+import {
+    FormInputItem,
+    i18nSelectOption,
+    StateSelectOption,
+    AppConfig
+} from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -42,6 +48,7 @@ import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/hel
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
+    appConfig: AppConfig,
     job: JobState,
     application: ApplicationState,
     schedule: ScheduleState,
@@ -56,7 +63,7 @@ interface AdditionalBGCInfoProps {
 type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 
 const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
-    const { candidate, application, bgc } = props;
+    const { candidate, application, bgc, schedule, job, appConfig } = props;
     const { candidatePatchRequest, formError } = candidate;
     const { candidateData } = candidate.results
     const { stepConfig } = bgc;
@@ -321,41 +328,44 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             />
             {
                 nationalIdType === SocialSecurityNumberValue &&
-                <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
-                    {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
-                </MessageBanner>
-            }
-            {
-                nationalIdType === SocialSecurityNumberValue &&
-                <Col className="formInputItem">
-                    <WithModal
-                        renderModal={renderModal}
-                        shouldCloseOnClickOutside={false}
-                    >
-                        {({ open }) => (
-                            <Row
-                                alignItems="center"
-                                gridGap={8}
-                            >
-                                <Checkbox
-                                    id="noSSNCheckbox"
-                                    checked={isNoSSNChecked}
-                                    onChange={(event) => {
-                                        if (event.target.checked) {
-                                            open();
-                                            return;
-                                        }
+                get(appConfig, 'results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable') === true &&
+                !get(candidateData, 'additionalBackgroundInfo.idNumber') &&
+                get(schedule, 'results.scheduleDetail.data.businessLine') !== BusinessLineType.Air_Job &&
+                get(job, 'results.data.dspEnabled') === true &&
+                <>
+                    <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
+                        {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
+                    </MessageBanner>
+                    <Col className="formInputItem">
+                        <WithModal
+                            renderModal={renderModal}
+                            shouldCloseOnClickOutside={false}
+                        >
+                            {({ open }) => (
+                                <Row
+                                    alignItems="center"
+                                    gridGap={8}
+                                >
+                                    <Checkbox
+                                        id="noSSNCheckbox"
+                                        checked={isNoSSNChecked}
+                                        onChange={(event) => {
+                                            if (event.target.checked) {
+                                                open();
+                                                return;
+                                            }
 
-                                        setIsNoSSNChecked(false);
-                                    }}
-                                />
-                                <Label htmlFor="noSSNCheckbox">
-                                    {t('BB-BGC-no-ssn-checkbox-label', 'I do not have a Social Security Number')}
-                                </Label>
-                            </Row>
-                        )}
-                    </WithModal>
-                </Col>
+                                            setIsNoSSNChecked(false);
+                                        }}
+                                    />
+                                    <Label htmlFor="noSSNCheckbox">
+                                        {t('BB-BGC-no-ssn-checkbox-label', 'I do not have a Social Security Number')}
+                                    </Label>
+                                </Row>
+                            )}
+                        </WithModal>
+                    </Col>
+                </>
             }
             <FormInputText
                 inputItem={{

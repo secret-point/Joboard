@@ -643,6 +643,10 @@ export const NationIdTypeSelectOptions = [
     { showValue: 'Social Security Number', value: SocialSecurityNumberValue, translationKey: 'BB-BGC-Additional-bgc-form-national-id-options-ssn' }
 ]
 
+export enum BusinessLineType {
+    Air_Job = 'AIR'
+}
+
 export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";
 
 export const UserIdValidator = "^[a-z]{4,60}$";
