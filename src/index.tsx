@@ -17,7 +17,6 @@ import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
 import {
-  checkIfIsLegacy,
   injectCsNavAndFooter,
   objectToQuerystring,
   parseQueryParamsArrayToSingleItem
@@ -36,7 +35,7 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { MainWithSkipLink } from "@amzn/stencil-react-components/a11y";
 import { PAGE_ROUTES } from "./components/pageRoutes";
 import { usNewBBUIPathName } from "./utils/constants/common";
-import { isNewBBuiPath } from "./utils/helper";
+import { checkIfIsLegacy, isNewBBuiPath } from "./utils/helper";
 
 const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
 

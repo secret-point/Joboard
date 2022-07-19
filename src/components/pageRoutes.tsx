@@ -27,4 +27,5 @@ export enum PAGE_ROUTES {
   AMAZON_WITHDRAWS = "amazon-withdraws",
   NO_AVAILABLE_TIME_SLOTS = "no-available-time-slots",
   CAN_NOT_OFFER_JOB = "can-not-offer-job",
+  SUPPLEMENTARY_SUCCESS = "supplementary-success"
 }

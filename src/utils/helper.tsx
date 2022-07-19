@@ -276,7 +276,8 @@ export const getCurrentStepNameFromHash = ()=>{
 }
 
 export const checkIfIsLegacy = () => {
-    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search));
+    const hashParam = window.location.hash.split("?").slice(1).join("&");
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(window.location.search || hashParam));
     const isLegacy = !queryParams.jobId;
     return isLegacy;
 }
@@ -940,6 +941,25 @@ export const goToCandidateDashboard = () => {
         window.location.assign(isCandidateDashboardEnabled ? candidateDashboardUrl : dashboardUrl);
     }
 };
+
+export const redirectToASHChecklist = (applicationId: string, jobId: string, requisitionId: string) => {
+    const state = store.getState();
+
+    const appConfig = state.appConfig;
+    const envConfig = appConfig?.results?.envConfig;
+
+    if (envConfig) {
+        const isLegacy = checkIfIsLegacy();
+        const isCSRequest = checkIfIsCSRequest();
+
+        const ASHUrl = isCSRequest? envConfig?.ASHChecklistURLCS : envConfig?.ASHChecklistURL;
+        const ASHChecklistURL = ASHUrl.replace(
+            "{applicationId}",
+            applicationId
+        ).replace("{requisitionId}", (isLegacy? requisitionId : jobId) as string);
+        window.location.assign(ASHChecklistURL);
+    }
+  };
 
 export const showCounterBanner = (): boolean => {
     const hash = window.location.hash;
