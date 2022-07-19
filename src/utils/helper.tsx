@@ -470,7 +470,12 @@ export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: bool
 
     const candidate = states.candidate?.results?.candidateData || null;
     const newSSN = get(patchCandidate, "additionalBackgroundInfo.idNumber");
+    const noSSN = get(patchCandidate, "additionalBackgroundInfo.isWithoutSSN");
     const oldSNN = get(candidate, IdNumberBgcFormConfig.dataKey);
+
+    if (noSSN === true && newSSN === ''){
+        return true;
+    }
 
     if(newSSN && newSSN.includes("***") && newSSN === oldSNN){
         return true;

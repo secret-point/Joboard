@@ -370,7 +370,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             <FormInputText
                 inputItem={{
                   ...IdNumberBgcFormConfig,
-                  hasError: get(formError, IdNumberBgcFormConfig.dataKey) || false,
+                  hasError: (!isNoSSNChecked && get(formError, IdNumberBgcFormConfig.dataKey)) || false,
                     ...(isNoSSNChecked && {
                         placeholder: 'Social Security Number not available',
                         placeholderTranslationKey: 'BB-BGC-no-ssn-national-id-number-disabled-placeholder'
