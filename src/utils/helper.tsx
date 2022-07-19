@@ -967,13 +967,25 @@ export const showCounterBanner = (): boolean => {
       hash.includes(REVIEW_SUBMIT);
 }
 
-export const onAssessmentStart =  (applicationData: Application) => {
+export const processAssessmentUrl = (assessmentUrl: string, applicationId: string, jobId: string): string => {
+    if (!assessmentUrl) {
+        return assessmentUrl;
+    }
+    // add redirect and locale query params to the url before redirecting to HOOK
+    const url = new URL(assessmentUrl);
+    url.searchParams.append("locale", getLocale());
+    url.searchParams.append("redirect", `applicationId=${applicationId}&jobId=${jobId}`);
+    return url.toString();
+};
+
+export const onAssessmentStart =  (applicationData: Application, jobDetail: Job) => {
     const assessmentUrl = applicationData.assessment?.assessmentUrl;
+    const assessmentRedirectUrl = processAssessmentUrl(assessmentUrl, applicationData.applicationId, jobDetail.jobId);
     //TODO need to align what metrics need to send here.
     // if (assessmentUrl && payload.options?.adobeMetrics) {
     //     postAdobeMetrics(payload.options.adobeMetrics, {});
     // }
-    assessmentUrl && window.location.assign(assessmentUrl);
+    assessmentRedirectUrl && window.location.assign(assessmentRedirectUrl);
 }
 
 export const setEpicApiCallErrorMessage = (errorMessage: ApiErrorMessage, isDismissible?: boolean) => {

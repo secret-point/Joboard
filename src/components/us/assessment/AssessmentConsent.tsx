@@ -15,6 +15,7 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { JobState } from "../../../reducers/job.reducer";
 import { translate as t } from "../../../utils/translator";
 import InnerHTML from 'dangerously-set-html-content';
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -34,7 +35,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId } = queryParams;
+  const { applicationId, jobId } = queryParams;
   const applicationData = application.results;
   const jobDetail = job.results;
 
@@ -43,12 +44,16 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   },[])
 
   useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
+
+  useEffect(() => {
     applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
   }, [applicationId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData]);
+  }, [jobDetail, applicationData, pageName]);
 
   const diversityAndDisabilityText = t("BB-assessment-consent-diversity-and-disability-accommodation-notice-text", "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>");
   const assessmentPaceAndSectionHeadingText = t("BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text", "<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:");
@@ -96,7 +101,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
         >
           <Button
             variant={ButtonVariant.Primary}
-            onClick={() => applicationData && onAssessmentStart(applicationData)}
+            onClick={() => applicationData && jobDetail && onAssessmentStart(applicationData, jobDetail)}
             disabled={!applicationData?.assessment?.assessmentUrl}
           >
             {t("BB-assessment-consent-begin-assessment-button-text", "Begin Assessment")}
