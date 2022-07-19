@@ -145,7 +145,6 @@ const ConsentPage = (props: MapStateToProps) => {
                         if (scheduleId) {
                             const payload: CreateApplicationAndSkipScheduleRequestDS = {
                                 jobId,
-                                scheduleId,
                                 dspEnabled: job.results?.dspEnabled,
                             }
                             boundCreateApplicationAndSkipScheduleDS(payload);

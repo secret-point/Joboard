@@ -26,8 +26,9 @@ export const boundCreateApplicationDS = (
 
 export const boundUpdateApplicationDS = (
     payload: UpdateApplicationRequestDS,
-    onSuccess?: Function
-) => store.dispatch(actionUpdateApplicationDS(payload, onSuccess));
+    onSuccess?: Function,
+    onError?: Function
+) => store.dispatch(actionUpdateApplicationDS(payload, onSuccess, onError));
 
 export const boundUpdateWorkflowName = (
     payload: UpdateWorkflowNameRequest,

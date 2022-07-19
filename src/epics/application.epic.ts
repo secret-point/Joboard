@@ -26,10 +26,16 @@ import {
   actionWorkflowRequestEnd,
   actionWorkflowRequestInit,
   completeTask,
-  loadWorkflowDS
+  loadWorkflowDS,
+  onCompleteTaskHelper
 } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
-import { routeToAppPageWithPath, sanitizeApplicationData, setEpicApiCallErrorMessage } from "../utils/helper";
+import {
+  createUpdateApplicationRequest,
+  routeToAppPageWithPath,
+  sanitizeApplicationData,
+  setEpicApiCallErrorMessage
+} from "../utils/helper";
 import {
   APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE,
   APPLICATION_STATE_TO_STEP_NAME,
@@ -37,8 +43,9 @@ import {
 } from "../constants";
 import {
   CREATE_APPLICATION_ERROR_CODE,
+  GET_APPLICATION_ERROR_CODE,
   QUERY_PARAMETER_NAME,
-  UPDATE_APPLICATION_ERROR_CODE,
+  UPDATE_APPLICATION_API_TYPE,
   WORKFLOW_STEP_NAME
 } from "../utils/enums/common";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
@@ -50,8 +57,14 @@ import {
   UpdateApplicationResponse,
   UpdateWorkflowNameResponse
 } from "../utils/api/types";
-import { CreateApplicationErrorMessage, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
+import {
+  CreateApplicationErrorMessage,
+  GetApplicationErrorMessage,
+  UpdateApplicationErrorMessage
+} from "../utils/api/errorMessages";
 import { PAGE_ROUTES } from "../components/pageRoutes";
+import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import { SelectedScheduleForUpdateApplication } from "../utils/apiTypes";
 
 const { CONSENT } = PAGE_ROUTES;
 
@@ -78,7 +91,7 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
                         action.onError(error);
                       }
 
-                      const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+                      const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
                       setEpicApiCallErrorMessage(errorMessage);
 
                         return of(actionGetApplicationFailed(error));
@@ -183,8 +196,7 @@ export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
                       action.onError(error);
                     }
 
-                    //TODO potentially rely on error Message for select shift on nhe step. BB is implementing logic to add errorCode in their api response
-                    const errorKey = error.errorCode || error.errorMessage || CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR;
+                    const errorKey = error.errorCode || CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR;
                     const errorMessage = UpdateApplicationErrorMessage[errorKey];
 
                     setEpicApiCallErrorMessage(errorMessage);
@@ -261,30 +273,46 @@ export const CreateApplicationAndSkipScheduleDSEpic = ( action$: Observable<any>
     )
 };
 
-const createApplicationAndSkipScheduleHelper = ( createApplicationResponse: Application ) => {
+const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Application) => {
+  const state = store.getState();
+  const jobId = createApplicationResponse.jobScheduleSelected?.jobId;
+  const applicationId = createApplicationResponse.applicationId;
+  const candidateId = createApplicationResponse.candidateId;
+  const scheduleDetail = state.schedule.results.scheduleDetail;
+  const scheduleId = scheduleDetail?.scheduleId || "";
+
+  const selectedSchedule: SelectedScheduleForUpdateApplication = {
+    jobId,
+    scheduleId,
+    scheduleDetails: JSON.stringify(scheduleDetail)
+  };
+  const request = createUpdateApplicationRequest(createApplicationResponse, UPDATE_APPLICATION_API_TYPE.JOB_CONFIRM, selectedSchedule);
+
+  boundUpdateApplicationDS(request, (applicationResponse: Application) => {
     const state = store.getState();
-    const jobId = createApplicationResponse.jobScheduleSelected?.jobId;
-    const scheduleId = createApplicationResponse.jobScheduleSelected?.scheduleId;
-    const applicationId = createApplicationResponse.applicationId;
-    const candidateId = createApplicationResponse.candidateId;
-    const scheduleDetail = state.schedule.results.scheduleDetail;
-    if(scheduleId && state.appConfig.results?.envConfig){
-        window.hasCompleteTaskOnSkipSchedule = () => {
-            routeToAppPageWithPath(CONSENT, [
-                {paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId},
-                {paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId}])
-            completeTask(createApplicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
-        }
-        boundWorkflowRequestStart();
-        loadWorkflowDS(
-            jobId || "",
-            scheduleId || "",
-            applicationId,
-            candidateId,
-            state.appConfig.results.envConfig
-        );
+
+    if (scheduleId && state.appConfig.results?.envConfig) {
+      window.hasCompleteTaskOnSkipSchedule = () => {
+        routeToAppPageWithPath(CONSENT, [
+          { paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId },
+          { paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId }]);
+        completeTask(applicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
+      };
+      boundWorkflowRequestStart();
+      loadWorkflowDS(
+        jobId || "",
+        scheduleId || "",
+        applicationId,
+        candidateId,
+        state.appConfig.results.envConfig
+      );
+    } else {
+      throw new Error("");
     }
-    else {
-        throw new Error('');
+  }, () => {
+    const state = store.getState();
+    if (state.appConfig.results?.envConfig) {
+      onCompleteTaskHelper(createApplicationResponse);
     }
-}
+  });
+};

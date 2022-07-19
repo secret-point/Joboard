@@ -1738,9 +1738,9 @@
             "note": "Error message text displayed when selected NHE shift and candidate is already hired",
             "value": "You have recently been hired for this application, your shift cannot be changed. Please reach out at https://www.amazondelivers.jobs/contactus to change your shift."
         },
-        "BB-update-application-error-message-failed-update-shift": {
-            "note": "Error message text displayed when selected and failed",
-            "value": "Failed to update application with selected schedule"
+        "BB-update-application-error-message-failed-update-application": {
+            "note": "Error message text displayed when failed to update application",
+            "value": "Failed to update application."
         }
     }
 }

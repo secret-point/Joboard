@@ -1678,10 +1678,6 @@
             "note": "Error message text displayed when selected NHE shift and candidate is already hired",
             "value": "Ha sido contratado recientemente para esta aplicación, su turno no se puede cambiar. Comuníquese con https://www.amazondelivers.jobs/contactus para cambiar su turno."
         },
-        "BB-update-application-error-message-failed-update-shift": {
-            "note": "Error message text displayed when selected and failed",
-            "value": "No se pudo actualizar la aplicación con el horario seleccionado."
-        },
         "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise": {
             "note": "Text for the additional bgc form  national id type label text",
             "value": "Identificación nacional"
@@ -1689,6 +1685,10 @@
         "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise": {
             "note": "Text for the additional bgc form  national id number label text",
             "value": "Numero de identificacion nacional"
+        },
+        "BB-update-application-error-message-failed-update-application": {
+            "note": "Error message text displayed when failed to update application",
+            "value": "No se pudo actualizar la aplicación."
         }
     }
 }
