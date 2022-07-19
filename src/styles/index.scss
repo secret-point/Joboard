@@ -188,6 +188,7 @@ a {
 }
 
 #applicationStepContainer {
+  z-index: 0;
   .steps {
     box-sizing: border-box;
     margin: 0;

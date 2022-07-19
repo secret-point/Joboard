@@ -260,7 +260,7 @@
         },
         "BB-BGC-page-additional-bgc-step-card-title": {
             "note": "Text for the Additional bgc information step card title",
-            "value": "Información adicional de antecedentes"
+            "value": "Información Adicional de Antecedentes"
         },
         "BB-BGC-page-continue-button": {
             "note": "Text for the bgc continue button ( from bgc to nhe page)",
@@ -1460,7 +1460,11 @@
         },
         "BB-update-application-error-message-protected-veteran-missing": {
             "note": "error message for update application with protected veteran status information missing",
-            "value": "Falta información de veterano en la carga útil."
+            "value": "Falta información de Veterana protegida en la carga útil."
+        },
+        "BB-update-application-error-message-veteran-status-missing": {
+            "note": "error message for update application with veteran status information missing",
+            "value": "Falta información de veteranos en la carga útil."
         },
         "BB-update-application-error-message-disability-missing": {
             "note": "error message for update application with disability status information missing",
@@ -1689,6 +1693,10 @@
         "BB-update-application-error-message-failed-update-application": {
             "note": "Error message text displayed when failed to update application",
             "value": "No se pudo actualizar la aplicación."
+        },
+        "BB-bgc-additional-bgc-form-header-text": {
+            "note": "Text for the additional background check form header",
+            "value": "Información adicional de antecedentes"
         }
     }
 }

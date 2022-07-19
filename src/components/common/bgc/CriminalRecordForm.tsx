@@ -53,7 +53,7 @@ const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
     const missingConvictionDetails = get(formError, ConvictionDetailConfig.dataKey);
 
     return (
-        <Col gridGap={15}>
+        <Col gridGap={15} padding={{top: "S300"}}>
             <Text>
                 {t('BB-BGC-criminal-record-within-seven-years-question-text', 'Have you been convicted of misdemeanor or felony or been released from prison or parole from a misdemeanor or felony conviction in last seven (7) years?')}
             </Text>

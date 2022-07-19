@@ -262,7 +262,9 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
     return (
         <Col>
-            <H4>Additional Background Information</H4>
+            <H4>
+              {t("BB-bgc-additional-bgc-form-header-text", "Additional Background Information")}
+            </H4>
             <CriminalRecordForm/>
             <PreviousLegalNameForm/>
             {

@@ -159,9 +159,11 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
 
                     if(error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
                       routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
+                      console.log("Testing redirection", "error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST", error)
                     }
                     else {
                       setEpicApiCallErrorMessage(errorMessage);
+                      console.log("Testing redirection", "error.errorCode !== CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST", error)
                     }
 
                     return of(actionCreateApplicationAndSkipScheduleDSFailed(error));

@@ -1520,6 +1520,10 @@
         },
         "BB-update-application-error-message-protected-veteran-missing": {
             "note": "error message for update application with protected veteran status information missing",
+            "value": "Protected Veteran info is missing in payload."
+        },
+        "BB-update-application-error-message-veteran-status-missing": {
+            "note": "error message for update application with veteran status information missing",
             "value": "Veteran info is missing in payload."
         },
         "BB-update-application-error-message-disability-missing": {
@@ -1741,6 +1745,10 @@
         "BB-update-application-error-message-failed-update-application": {
             "note": "Error message text displayed when failed to update application",
             "value": "Failed to update application."
+        },
+        "BB-bgc-additional-bgc-form-header-text": {
+            "note": "Text for the additional background check form header",
+            "value": "Additional Background Information"
         }
     }
 }

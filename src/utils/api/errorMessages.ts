@@ -201,6 +201,10 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   },
   [UPDATE_APPLICATION_ERROR_CODE.PROTECTED_VETERAN_MISSING]: {
     translationKey: "BB-update-application-error-message-protected-veteran-missing",
+    value: "Protected Veteran info is missing in payload."
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.VETERAN_STATUS_MISSING]: {
+    translationKey: "BB-update-application-error-message-veteran-status-missing",
     value: "Veteran info is missing in payload."
   },
   [UPDATE_APPLICATION_ERROR_CODE.DISABILITY_IS_MISSING]: {

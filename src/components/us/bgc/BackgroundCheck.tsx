@@ -170,7 +170,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             />
 
             <InfoStepCard
-                title={t('BB-BGC-page-additional-bgc-step-card-title', 'Additional background information')}
+                title={t('BB-BGC-page-additional-bgc-step-card-title', 'Additional Background Information')}
                 expandedContent={<AdditionalBGCInfo/>}
                 stepName={BGC_STEPS.ADDITIONAL_BGC}
                 infoCardStepStatus={stepConfig[BGC_STEPS.ADDITIONAL_BGC]}
