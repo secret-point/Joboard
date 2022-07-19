@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
 import { FormWrapper } from "@amzn/stencil-react-components/form";
@@ -7,12 +7,14 @@ import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/fo
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { SelfIdEthnicBackgroundItems, SelfIdGenderRadioItems } from "../../../utils/constants/common";
 import { translate as t } from "../../../utils/translator";
-import { connect } from "react-redux";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
+import { CommonColors } from "../../../utils/colors";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { connect } from "react-redux";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -35,11 +37,19 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
   const applicationData = application.results;
   const [gender, setGender] = useState();
   const [ethnicity, setEthnicity] = useState();
+  const [isGenderMissing, setIsGenderMissing] = useState(false);
+  const [isEthnicityMissing, setIsEthnicityMissing] = useState(false);
 
   const handleClickNext = () => {
-    if (gender && ethnicity) {
+    const isFormValid = !!gender && !!ethnicity;
+
+    if(isFormValid) {
       const payload: SelfIdEqualOpportunityStatus = {gender, ethnicity};
       applicationData && handleSubmitSelfIdEqualOpportunity(applicationData, payload, stepConfig);
+    }
+    else {
+      setIsGenderMissing(!gender);
+      setIsEthnicityMissing(!ethnicity);
     }
   }
 
@@ -74,6 +84,17 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
           }
         </FormWrapper>
 
+        {
+          isGenderMissing &&
+          <Row padding="S300" backgroundColor={CommonColors.RED05}>
+            <StatusIndicator
+              messageText={"Please check the box to proceed."}
+              status={Status.Negative}
+              iconAriaHidden={true}
+            />
+          </Row>
+        }
+
         <FormWrapper columnGap={10}>
           <LabelText>{t("BB-SelfId-equal-opportunity-form-ethnicity-label-text", "What is your race/ethnic background?")} * </LabelText>
           {
@@ -94,6 +115,16 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
           }
         </FormWrapper>
       </Col>
+      {
+        isEthnicityMissing &&
+        <Row padding="S300" backgroundColor={CommonColors.RED05}>
+          <StatusIndicator
+            messageText={"Please check the box to proceed."}
+            status={Status.Negative}
+            iconAriaHidden={true}
+          />
+        </Row>
+      }
       <Col padding={{ top: "S300" }}>
         <Button
           variant={ButtonVariant.Primary}

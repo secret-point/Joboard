@@ -11,20 +11,15 @@ import { MessageBanner, MessageBannerType } from "@amzn/stencil-react-components
 import CriminalRecordForm from "./CriminalRecordForm";
 import PreviousLegalNameForm from "./PreviousLegalNameForm";
 import {
-    AdditionalBGCFormConfigPart1,
-    AdditionalBGCFormConfigPart2,
-    CountrySelectOptions,
-    IdNumberBgcFormConfig,
-    NationIdTypeSelectOptions,
-    SocialSecurityNumberValue,
-    BusinessLineType
+  AdditionalBGCFormConfigPart1,
+  AdditionalBGCFormConfigPart2,
+  BusinessLineType,
+  CountrySelectOptions,
+  IdNumberBgcFormConfig,
+  NationIdTypeSelectOptions,
+  SocialSecurityNumberValue
 } from "../../../utils/constants/common";
-import {
-    FormInputItem,
-    i18nSelectOption,
-    StateSelectOption,
-    AppConfig
-} from "../../../utils/types/common";
+import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -70,10 +65,10 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     const applicationData = application.results;
     const additionalBgc = candidateData?.additionalBackgroundInfo || {};
 
-    let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
-    let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
-    let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
-    let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.state');
+  let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
+  let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
+  let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
+  let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
 
     // TODO: customized based on country
     if (!countryDefaultValue){

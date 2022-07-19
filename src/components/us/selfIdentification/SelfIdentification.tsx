@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
+import React, { useEffect, useState } from "react";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import InfoStepCard from "../../common/InfoStepCard";
 import { SELF_IDENTIFICATION_STEPS } from "../../../utils/enums/common";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
@@ -10,7 +10,12 @@ import { SelfIdentificationState } from "../../../reducers/selfIdentification.re
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { getLocale, handleInitiateSelfIdentificationStep, SelfShouldDisplayContinue } from "../../../utils/helper";
+import {
+  getLocale,
+  handleInitiateSelfIdentificationStep,
+  isSelfIdentificationInfoValid,
+  SelfShouldDisplayContinue
+} from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { useLocation } from "react-router";
@@ -19,6 +24,8 @@ import queryString from "query-string";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { translate as t } from "../../../utils/translator";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { CommonColors } from "../../../utils/colors";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -42,6 +49,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
   const applicationData = application.results;
   const candidateData = candidate.results?.candidateData;
   const selfIdentificationInfo = candidateData?.selfIdentificationInfo;
+  const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
 
   useEffect(() => {
     applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
@@ -61,10 +69,15 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
 
 
   const handleContinue = () => {
-    if(applicationData) {
+    const isSelfIdInfoValid = isSelfIdentificationInfoValid(selfIdentificationInfo);
+    setIsSelfIdInfoValid(isSelfIdInfoValid);
+
+    if(applicationData && isSelfIdInfoValid) {
       onCompleteTaskHelper(applicationData);
     }
   }
+
+  const shouldRenderContinueButton = SelfShouldDisplayContinue(stepConfig);
 
   return (
     <Col gridGap={15}>
@@ -91,9 +104,19 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
         infoCardStepStatus={stepConfig[SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]}
         stepIndex={3}
       />
+      {
+        shouldRenderContinueButton && !isSelfIdInfoValid &&
+        <Row padding="S300" backgroundColor={CommonColors.RED05}>
+          <StatusIndicator
+            messageText={"Please check all required boxes in previous steps to proceed."}
+            status={Status.Negative}
+            iconAriaHidden={true}
+          />
+        </Row>
+      }
       <Col padding={{top: 'S300'}}>
         {
-          SelfShouldDisplayContinue(stepConfig) &&
+          shouldRenderContinueButton &&
           <Button
             variant={ButtonVariant.Primary}
             onClick={handleContinue}

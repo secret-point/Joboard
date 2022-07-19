@@ -13,15 +13,15 @@ export const initSelfIdentificationState: SelfIdentificationState = {
   stepConfig: {
     completedSteps: [],
     [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: {
-      status: INFO_CARD_STEP_STATUS.COMPLETED,
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
       editMode: false
     },
     [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: {
-      status: INFO_CARD_STEP_STATUS.COMPLETED,
+      status: INFO_CARD_STEP_STATUS.LOCKED,
       editMode: false
     },
     [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: {
-      status: INFO_CARD_STEP_STATUS.COMPLETED,
+      status: INFO_CARD_STEP_STATUS.LOCKED,
       editMode: false
     },
   }

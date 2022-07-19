@@ -41,7 +41,7 @@ import {
 } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
-import 'moment/locale/es';
+import "moment/locale/es";
 import {
     GetScheduleListByJobIdRequest,
     SelectedScheduleForUpdateApplication,
@@ -777,7 +777,6 @@ export const handleSubmitSelfIdEqualOpportunity =
       });
   };
 
-
 export const handleSubmitSelfIdDisabilityStatus =
   (applicationData: Application, disabilityStatus: SelfIdentificationDisabilityStatus, stepConfig: SelfIdentificationConfig) => {
       const payload = {
@@ -787,7 +786,8 @@ export const handleSubmitSelfIdDisabilityStatus =
       const { DISABILITY_FORM } = UPDATE_APPLICATION_API_TYPE;
 
       const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, DISABILITY_FORM, payload);
-      boundUpdateApplicationDS(request, () => {
+      boundUpdateApplicationDS(request, (applicationResponse: Application) => {
+          onCompleteTaskHelper(applicationResponse);
           handleUpdateSelfIdStep(stepConfig, SELF_IDENTIFICATION_STEPS.DISABILITY_FORM);
       });
   };
@@ -830,9 +830,9 @@ export const handleUpdateSelfIdStep =
 export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo ) => {
     const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse} = selfIdentificationInfo;
 
-    const isEqualOpportunityCompleted = gender && ethnicity;
+    const isEqualOpportunityCompleted = !!gender && !!ethnicity;
     const isDisabilityCompleted = !!disability;
-    const isVeteranCompleted = protectedVeteran && veteran && militarySpouse;
+    const isVeteranCompleted = !!protectedVeteran && !!veteran && !!militarySpouse;
 
     const { EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM } = SELF_IDENTIFICATION_STEPS;
     const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
@@ -1009,5 +1009,26 @@ export const isAdditionalBgcInfoValid = (additionBgc?: AdditionalBackgroundInfoR
     const { dateOfBirth, governmentIdType, address, hasCriminalRecordWithinSevenYears, hasPreviouslyWorkedAtAmazon, idNumber, } = additionBgc;
     const addressValid = isAddressValid(address);
     return addressValid && !isNil(dateOfBirth) && !isNil(governmentIdType) && !isNil(hasCriminalRecordWithinSevenYears) && !isNil(hasPreviouslyWorkedAtAmazon) && !isNil(idNumber);
+}
+
+export const isSelfIdentificationInfoValid = (selfIdInfo?: SelfIdentificationInfo): boolean => {
+    if(!selfIdInfo) {
+        return false;
+    }
+
+    const { disability, ethnicity, gender, militarySpouse, protectedVeteran, veteran } = selfIdInfo;
+
+    return !!disability && !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
+}
+
+//This wil be used to check if first two steps are filled correctly before submitting in step 3
+export const isSelfIdentificationInfoValidBeforeDisability = (selfIdInfo?: SelfIdentificationInfo): boolean => {
+    if(!selfIdInfo) {
+        return false;
+    }
+
+    const { ethnicity, gender, militarySpouse, protectedVeteran, veteran } = selfIdInfo;
+
+    return  !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
 }
 

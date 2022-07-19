@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
 import { CommonColors } from "../../../utils/colors";
 import { DisabilityList, SelfIdDisabilityRadioItem } from "../../../utils/constants/common";
@@ -11,8 +11,12 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { SelfIdentificationDisabilityStatus } from "../../../utils/types/common";
-import { handleSubmitSelfIdDisabilityStatus } from "../../../utils/helper";
+import {
+  handleSubmitSelfIdDisabilityStatus,
+  isSelfIdentificationInfoValidBeforeDisability
+} from "../../../utils/helper";
 import { connect } from "react-redux";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -34,11 +38,23 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [disability, setDisability] = useState();
+  const [isDisabilityMissing, setDisabilityMissing] = useState(false);
+  let errorMessage = "Please check the box to proceed.";
 
   const handleClickNext = () => {
-    if (disability) {
+    const isFormValid = !!disability;
+
+    const isSelfIdValid = isSelfIdentificationInfoValidBeforeDisability(selfIdentificationInfoData);
+
+    if (isFormValid && isSelfIdValid) {
       const payload: SelfIdentificationDisabilityStatus = {disability};
       applicationData && handleSubmitSelfIdDisabilityStatus(applicationData, payload, stepConfig);
+    }
+    else if (isFormValid && !isSelfIdValid){
+      errorMessage = "Please check all required boxes in previous steps to proceed."
+    }
+    else {
+      setDisabilityMissing(!disability);
     }
   }
 
@@ -95,6 +111,18 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
           })
         }
       </FormWrapper>
+
+      {
+        isDisabilityMissing &&
+        <Row padding="S300" backgroundColor={CommonColors.RED05}>
+          <StatusIndicator
+            messageText={errorMessage}
+            status={Status.Negative}
+            iconAriaHidden={true}
+          />
+        </Row>
+      }
+
       <Col gridGap={15}>
         <H5>{t("BB-SelfId-disability-form-disability-public-burden-header-text", "Public burden statement")}</H5>
         <Text fontSize="T200">

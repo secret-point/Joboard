@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Col } from "@amzn/stencil-react-components/layout";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { FormWrapper } from "@amzn/stencil-react-components/form";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
 import {
+  ProtectedVeteranDefinitionList,
   SelfIdMilitarySpouseRadioItem,
   SelfIdProtectedVeteranRadioItem,
-  SelfIdVeteranStatusRadioItem,
-  ProtectedVeteranDefinitionList
+  SelfIdVeteranStatusRadioItem
 } from "../../../utils/constants/common";
 import { translate as t } from "../../../utils/translator";
 import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
@@ -18,7 +18,9 @@ import { SelfIdentificationState } from "../../../reducers/selfIdentification.re
 import { connect } from "react-redux";
 import { SelfIdentificationVeteranStatus } from "../../../utils/types/common";
 import { handleSubmitSelfIdVeteranStatus } from "../../../utils/helper";
-import InnerHTML from 'dangerously-set-html-content';
+import InnerHTML from "dangerously-set-html-content";
+import { CommonColors } from "../../../utils/colors";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -42,11 +44,21 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
   const [militarySpouse, setMilitarySpouse] = useState();
   const [protectedVeteran, setProtectedVeteran] = useState();
   const [veteran, setVeteran] = useState();
+  const [isMilitarySpouseMissing, setIsMilitarySpouseMissing] = useState(false);
+  const [isProtectedVeteranMissing, setIsProtectedVeteranMissing] = useState(false);
+  const [isVeteranMissingMissing, setIsVeteranMissingMissing] = useState(false);
 
   const handleCLickNext = () => {
-    if (militarySpouse && protectedVeteran && veteran) {
+    const isFormValid = !!militarySpouse && !!protectedVeteran && !!veteran;
+
+    if(isFormValid) {
       const payload: SelfIdentificationVeteranStatus = {militarySpouse, protectedVeteran, veteran};
       applicationData && handleSubmitSelfIdVeteranStatus(applicationData, payload, stepConfig);
+    }
+    else {
+      setIsVeteranMissingMissing(!veteran);
+      setIsProtectedVeteranMissing(!protectedVeteran);
+      setIsMilitarySpouseMissing(!militarySpouse);
     }
   }
 
@@ -90,6 +102,17 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
           }
         </FormWrapper>
 
+        {
+          isVeteranMissingMissing &&
+          <Row padding="S300" backgroundColor={CommonColors.RED05}>
+            <StatusIndicator
+              messageText={"Please check the box to proceed."}
+              status={Status.Negative}
+              iconAriaHidden={true}
+            />
+          </Row>
+        }
+
         <FormWrapper columnGap={10}>
           <LabelText>{t("BB-SelfId-equal-opportunity-form-military-spouse-label-text","Are you a military spouse?")} * </LabelText>
           {
@@ -108,6 +131,17 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
             })
           }
         </FormWrapper>
+
+        {
+          isMilitarySpouseMissing &&
+          <Row padding="S300" backgroundColor={CommonColors.RED05}>
+            <StatusIndicator
+              messageText={"Please check the box to proceed."}
+              status={Status.Negative}
+              iconAriaHidden={true}
+            />
+          </Row>
+        }
 
         <Col gridGap={5} className="protectedVetContainer">
           <Text>
@@ -150,6 +184,18 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
             })
           }
         </FormWrapper>
+
+        {
+          isProtectedVeteranMissing &&
+          <Row padding="S300" backgroundColor={CommonColors.RED05}>
+            <StatusIndicator
+              messageText={"Please check the box to proceed."}
+              status={Status.Negative}
+              iconAriaHidden={true}
+            />
+          </Row>
+        }
+
       </Col>
       <Col padding={{ top: "S300" }}>
         <Button
