@@ -1809,6 +1809,18 @@
         "BB-365-days-not-rehire-eligible-content-text": {
             "note": "Text for rehire not eligible 365 days content text",
             "value": "Due to the termination reason, you can reapply 90 days after your last day worked at Amazon."
+        },
+        "BB-no-available-shift-all-shifts-filled-text": {
+            "note": "Text for the no available shift page all shifts filled text",
+            "value": "Currently all shifts have been filled."
+        },
+        "BB-no-available-shift-return-dashboard-to-apply-text": {
+            "note": "Text for the no available shift page return to dashboard to apply other jobs text",
+            "value": "Please return to the dashboard to apply for other jobs."
+        },
+        "BB-no-available-shift-return-to-dashboard": {
+            "note": "Text for the no available shift page return to dashboard text",
+            "value": "Return to dashboard"
         }
     }
 }

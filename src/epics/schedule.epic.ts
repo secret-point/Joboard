@@ -22,7 +22,8 @@ import {
   GetScheduleListErrorMessages,
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
-import { setEpicApiCallErrorMessage } from "../utils/helper";
+import { routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
+import { PAGE_ROUTES } from "../components/pageRoutes";
 
 export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
     return action$.pipe(
@@ -38,9 +39,10 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
                     throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.FETCH_SHIFTS_ERROR);
                   }
 
-                  if (data.availableSchedules.schedules.length === 0) {
+                  if (data.availableSchedules.total <= 0 || data.availableSchedules.schedules.length === 0) {
                     throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND);
                   }
+
                   return data.availableSchedules.schedules;
                 }),
                 map((data: Schedule[]) => {
@@ -49,7 +51,12 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
                 catchError((error: any) => {
 
                   const errorMessage = GetScheduleListErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
-                  setEpicApiCallErrorMessage(errorMessage);
+
+                  if (error.errorCode === GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND) {
+                    routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_SHIFT);
+                  } else {
+                    setEpicApiCallErrorMessage(errorMessage);
+                  }
 
                   return of(actionGetScheduleListByJobIdFailed(error));
                 })

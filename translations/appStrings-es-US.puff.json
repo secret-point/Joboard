@@ -1757,6 +1757,18 @@
         "BB-365-days-not-rehire-eligible-content-text": {
             "note": "Text for rehire not eligible 365 days content text",
             "value": "Debido al motivo de terminación, puede volver a presentar una solicitud 90 días después de su último día trabajado en Amazon."
+        },
+        "BB-no-available-shift-all-shifts-filled-text": {
+            "note": "Text for the no available shift page all shifts filled text",
+            "value": "Actualmente todos los turnos han sido ocupados."
+        },
+        "BB-no-available-shift-return-dashboard-to-apply-text": {
+            "note": "Text for the no available shift page return to dashboard to apply other jobs text",
+            "value": "Regrese al tablero para solicitar otros trabajos."
+        },
+        "BB-no-available-shift-return-to-dashboard": {
+            "note": "Text for the no available shift page return to dashboard text",
+            "value": "Volver al tablero"
         }
     }
 }
