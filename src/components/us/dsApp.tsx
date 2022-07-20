@@ -37,6 +37,7 @@ import CandidateWithdraws from "./candidateWithdraws/CandidateWithdraws";
 import NoAvailableTimeSlots from "./noAvailableTimeSlots/NoAvailableTimeSlots";
 import CanNotOfferJob from "./canNotOfferJob/CanNotOfferJob";
 import SupplementarySuccess from "./supplementarySuccess/SupplementarySuccess";
+import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireELigibilityStatus";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -71,7 +72,8 @@ const {
   AMAZON_WITHDRAWS,
   NO_AVAILABLE_TIME_SLOTS,
   CAN_NOT_OFFER_JOB,
-  SUPPLEMENTARY_SUCCESS
+  SUPPLEMENTARY_SUCCESS,
+  REHIRE_ELIGIBILITY_STATUS
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -181,6 +183,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${SUPPLEMENTARY_SUCCESS}`} exact>
               <SupplementarySuccess/>
+            </Route>
+            <Route path={`/${REHIRE_ELIGIBILITY_STATUS}`} exact>
+              <RehireEligibilityStatus/>
             </Route>
           </Switch>
         </Router>

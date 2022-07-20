@@ -159,11 +159,9 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
 
                     if(error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
                       routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
-                      console.log("Testing redirection", "error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST", error)
                     }
                     else {
                       setEpicApiCallErrorMessage(errorMessage);
-                      console.log("Testing redirection", "error.errorCode !== CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST", error)
                     }
 
                     return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
@@ -243,36 +241,41 @@ export const UpdateWorkflowStepNameEpic = ( action$: Observable<any> ) => {
     )
 };
 
-export const CreateApplicationAndSkipScheduleDSEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE),
-        switchMap(( action: CreateApplicationAndSkipScheduleActionDS ) =>
-            from(new CandidateApplicationService().createApplicationDS(action.payload)).pipe(
-                switchMap(epicSwitchMapHelper),
-                switchMap(async ( response ) => {
-                    return response
-                }),
-                map((response: CreateApplicationResponse) => {
-                  const application = response.data;
-                  if (action.onSuccess) {
-                    action.onSuccess(application)
-                  }
-                  createApplicationAndSkipScheduleHelper(application);
-                  return actionCreateApplicationAndSkipScheduleDSSuccess(application);
-                }),
-                catchError(( error: ProxyApiError ) => {
-                    if(action.onError){
-                      action.onError(error);
-                    }
+export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>) => {
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE),
+    switchMap((action: CreateApplicationAndSkipScheduleActionDS) =>
+      from(new CandidateApplicationService().createApplicationDS(action.payload)).pipe(
+        switchMap(epicSwitchMapHelper),
+        switchMap(async (response) => {
+          return response;
+        }),
+        map((response: CreateApplicationResponse) => {
+          const application = response.data;
+          if (action.onSuccess) {
+            action.onSuccess(application);
+          }
+          createApplicationAndSkipScheduleHelper(application);
+          return actionCreateApplicationAndSkipScheduleDSSuccess(application);
+        }),
+        catchError((error: ProxyApiError) => {
+          if (action.onError) {
+            action.onError(error);
+          }
 
-                  const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
-                  setEpicApiCallErrorMessage(errorMessage);
+          const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
 
-                    return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
-                })
-            )
-        )
+          if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
+            routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
+          } else {
+            setEpicApiCallErrorMessage(errorMessage);
+          }
+
+          return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
+        })
+      )
     )
+  );
 };
 
 const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Application) => {

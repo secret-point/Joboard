@@ -10,8 +10,14 @@ import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../WorkflowA
 import store from "../../store/store";
 import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
 import { getCurrentStepNameFromHash, loadingStatusHelper, routeToAppPageWithPath } from "../../utils/helper";
-import { WORKFLOW_STEP_NAME } from "../../utils/enums/common";
-import { WorkflowRequestEndAction, WorkflowRequestInitAction, WorkflowRequestStartAction, WORKFLOW_REQUEST } from "../WorkflowActions/workflowActionTypes";
+import { WORKFLOW_ERROR_CODE, WORKFLOW_STEP_NAME } from "../../utils/enums/common";
+import {
+  SetWorkflowErrorCodeAction,
+  WORKFLOW_REQUEST,
+  WorkflowRequestEndAction,
+  WorkflowRequestInitAction,
+  WorkflowRequestStartAction
+} from "./workflowActionTypes";
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
@@ -238,3 +244,10 @@ export const actionWorkflowRequestStart = (): WorkflowRequestStartAction => {
 export const actionWorkflowRequestEnd = (): WorkflowRequestEndAction => {
   return { type: WORKFLOW_REQUEST.END, loadingStatus: loadingStatusHelper() }
 };
+
+export const actionSetWorkflowErrorCode = (payload: WORKFLOW_ERROR_CODE): SetWorkflowErrorCodeAction => {
+  return {
+    type: WORKFLOW_REQUEST.SET_WORKFLOW_ERROR_CODE,
+    payload
+  }
+}

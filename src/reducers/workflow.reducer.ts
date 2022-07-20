@@ -1,14 +1,17 @@
 import { WORKFLOW_ACTIONS, WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
+import { WORKFLOW_ERROR_CODE } from "../utils/enums/common";
 
 
 export interface WorkflowState {
     loading: boolean;
     failed: boolean;
+    workflowErrorCode: WORKFLOW_ERROR_CODE
 }
 
 export const initJobState: WorkflowState = {
     loading: false,
-    failed: false
+    failed: false,
+    workflowErrorCode: WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE
 }
 
 export default function workflowReducer( state: WorkflowState = initJobState, action: WORKFLOW_ACTIONS ):WorkflowState {
@@ -26,6 +29,12 @@ export default function workflowReducer( state: WorkflowState = initJobState, ac
                 loading: false,
                 failed: false
             };
+
+        case WORKFLOW_REQUEST.SET_WORKFLOW_ERROR_CODE:
+            return {
+                ...state,
+                workflowErrorCode: action.payload
+            }
         default:
             return state;
     }

@@ -92,7 +92,11 @@ export enum WORKFLOW_STEP_NAME {
     WOTC = 'wotc',
     SELF_IDENTIFICATION = 'self-identification',
     NHE = 'nhe',
-    WORKFLOW_FAILED = 'workflow-failed'
+    WORKFLOW_FAILED = 'workflow-failed',
+    REHIRE_ELIGIBILITY_STATUS = 'rehire-eligibility-status',
+    CAN_NOT_OFFER_JOB = 'can-not-offer-job',
+    CALI_DISCLOSURE = 'cali-disclosure',
+    ASSESSMENT_NOT_ELIGIBLE = 'assessment-not-eligible'
 }
 
 export enum UPDATE_APPLICATION_API_TYPE {
@@ -116,7 +120,7 @@ export enum UPDATE_APPLICATION_API_TYPE {
     JOB_PREFERENCES = 'job-preferences',
     NHE_PREFERENCES = 'nhe=preferences',
     DEFAULT = 'Update type is missing'
-};
+}
 
 export enum BACKGROUND_AGENT {
     FADV = 'FADV',
@@ -299,4 +303,11 @@ export enum GET_CANDIDATE_ERROR_CODE {
 
 export enum UPDATE_WOTC_STATUS_ERROR_CODE {
     FAILED_UPDATE_WOTC = "FAILED_UPDATE_WOTC",
+}
+
+export enum WORKFLOW_ERROR_CODE {
+    NOT_REHIRE_ELIGIBLE = "not-rehire-eligible",
+    NOT_REHIRE_ELIGIBLE_365_DAYS = "365-days-not-rehire-eligible",
+    ACTIVE = "active",
+    SEASONAL_ONLY = "seasonal-only"
 }

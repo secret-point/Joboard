@@ -1697,6 +1697,66 @@
         "BB-bgc-additional-bgc-form-header-text": {
             "note": "Text for the additional background check form header",
             "value": "Información adicional de antecedentes"
+        },
+        "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle": {
+            "note": "Text for rehire not eligible seasonal only title when there is jobTitle",
+            "value": "Gracias por su interés en el puesto de {jobTitle}. Nuestros registros indican que usted trabajó anteriormente en Amazon. En este momento, usted es elegible para volver a contratarlo como Asociado de Amazon de Temporada o empleado de una agencia de terceros según su historial de empleo. Como resultado, no podemos seguir adelante con su candidatura para este trabajo. Si tiene alguna pregunta sobre la elegibilidad para volver a contratar, comuníquese con el equipo de recursos humanos del sitio."
+        },
+        "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle": {
+            "note": "Text for rehire not eligible seasonal only title when there is no jobTitle",
+            "value": "Gracias por su interés en esta posición. Nuestros registros indican que usted trabajó anteriormente en Amazon. En este momento, usted es elegible para volver a contratarlo como Asociado de Amazon de Temporada o empleado de una agencia de terceros según su historial de empleo. Como resultado, no podemos seguir adelante con su candidatura para este trabajo. Si tiene alguna pregunta sobre la elegibilidad para volver a contratar, comuníquese con el equipo de recursos humanos del sitio."
+        },
+        "BB-rehire-not-eligible-seasonal-only-content-text": {
+            "note": "Text for rehire not eligible seasonal only content",
+            "value": "Visite nuestra página de temporada para explorar las oportunidades de temporada en su área."
+        },
+        "BB-rehire-eligibility-status-back-to-dashboard-button-text": {
+            "note": "rehire eligibility status back to dashboard button",
+            "value": "Volver al tablero"
+        },
+        "BB-not-rehire-eligible-title-text": {
+            "note": "text for Not rehire eligibility page title",
+            "value": "Gracias por su reciente solicitud de empleo en Amazon. Después de una cuidadosa consideración, no seguiremos adelante con su solicitud de empleo."
+        },
+        "BB-not-rehire-eligible-content-text": {
+            "note": "text for Not rehire eligibility page content",
+            "value": "Valoramos su tiempo y le deseamos la mejor de las suertes en el futuro."
+        },
+        "BB-rehire-not-eligible-active-title-text": {
+            "note": "Text for rehire not eligible active page title",
+            "value": "¡Agradecemos su reciente solicitud de empleo! Desafortunadamente, no es elegible para este puesto en particular porque ya está empleado por Amazon."
+        },
+        "BB-rehire-not-eligible-active-text-open-opportunities-list-title": {
+            "note": "Text for rehire not eligible active open opportunities list title",
+            "value": "¿Las buenas noticias? Hay muchas oportunidades abiertas que puede buscar y solicitar en línea. Estas son algunas de las formas en que puede explorar su futuro crecimiento profesional:"
+        },
+        "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one": {
+            "note": "Text for rehire not eligible active open opportunities list item one",
+            "value": "Para conversiones de agencia o estacionales, visite amazon.com/conversions (http://amazon.com/conversions)."
+        },
+        "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two": {
+            "note": "Text for rehire not eligible active open opportunities list item two",
+            "value": "Para solicitar cambios de turno o ubicación, comuníquese con su equipo en el sitio."
+        },
+        "BB-rehire-not-eligible-active-content-text-one": {
+            "note": "Text for rehire not eligible active content text one",
+            "value": "Su equipo local de recursos humanos o el Centro de recursos para empleados (ERC) son el mejor recurso para cualquier pregunta. Puede comunicarse con el equipo de ERC las 24 horas del día, los 7 días de la semana al 1-888-892-7180 (tel:18888927180)."
+        },
+        "BB-rehire-not-eligible-active-content-text-two": {
+            "note": "Text for rehire not eligible active content text two",
+            "value": "¡Gracias por ser parte del increíble equipo de Amazon! Nos esforzamos continuamente para brindarle los mejores recursos, beneficios, salarios y horarios flexibles posibles para los empleados, ¡todo respalda nuestros esfuerzos para convertirnos en el mejor empleador de la Tierra!"
+        },
+        "BB-365-days-not-rehire-eligible-title-text-with-jobTitle": {
+            "note": "Text for rehire not eligible 365 days title with jobTitle",
+            "value": "Gracias por su interés en el puesto de {jobTitle}. Nuestros registros indican que trabajó anteriormente en Amazon y no es elegible para volver a contratarlo según su historial de empleo anterior en Amazon. Como resultado, no podemos seguir adelante con su candidatura en este momento."
+        },
+        "BB-365-days-not-rehire-eligible-title-text-without-jobTitle": {
+            "note": "Text for rehire not eligible 365 days title without jobTitle",
+            "value": "Gracias por su interés en esta posición. Nuestros registros indican que trabajó anteriormente en Amazon y no es elegible para volver a contratarlo según su historial de empleo anterior en Amazon. Como resultado, no podemos seguir adelante con su candidatura en este momento."
+        },
+        "BB-365-days-not-rehire-eligible-content-text": {
+            "note": "Text for rehire not eligible 365 days content text",
+            "value": "Debido al motivo de terminación, puede volver a presentar una solicitud 90 días después de su último día trabajado en Amazon."
         }
     }
 }

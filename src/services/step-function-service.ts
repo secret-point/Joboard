@@ -11,8 +11,13 @@ import {
 } from "./../actions/WorkflowActions/workflowActions";
 import { setInterval } from "timers";
 import { log, LoggerType } from "../helpers/log-helper";
-import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
+import {
+  boundSetWorkflowErrorCode,
+  boundWorkflowRequestEnd,
+  boundWorkflowRequestStart
+} from "../actions/WorkflowActions/boundWorkflowActions";
 import { EnvConfig } from "../utils/types/common";
+import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -99,10 +104,15 @@ export default class StepFunctionService {
     const { data } = event;
     const message = isJson(data) ? JSON.parse(data) : data;
 
+    log("workflow service message", message);
     if(!isString(message)) {
+      //Update workflowErrorCode when page is rehire eligibility status as ew rely on errorCode to display different contents
+      if (message.stepName === WORKFLOW_STEP_NAME.REHIRE_ELIGIBILITY_STATUS) {
+        boundSetWorkflowErrorCode(message.errorMessageCode);
+      }
       // Ignore current step and wait until stepName is job-opportunities
       if(window.hasCompleteTaskOnSkipSchedule) {
-        if(message.stepName === 'job-opportunities') {
+        if(message.stepName === WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES) {
           window.hasCompleteTaskOnSkipSchedule();
           window.hasCompleteTaskOnSkipSchedule = undefined;
         }
