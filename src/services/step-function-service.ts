@@ -102,7 +102,11 @@ export default class StepFunctionService {
   async message( event: MessageEvent ) {
     log("Message received from Websocket", event);
     const { data } = event;
-    const message = isJson(data) ? JSON.parse(data) : data;
+    let message = isJson(data) ? JSON.parse(data) : data;
+
+    if (!message.stepName && isJson(message.data)){
+      message = JSON.parse(message.data)
+    }
 
     log("workflow service message", message);
     if(!isString(message)) {

@@ -27,7 +27,8 @@ import {
   actionWorkflowRequestInit,
   completeTask,
   loadWorkflowDS,
-  onCompleteTaskHelper
+  onCompleteTaskHelper,
+  startOrResumeWorkflowDS
 } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
 import {
@@ -126,6 +127,7 @@ export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
                     return actionWorkflowRequestInit();
                 }
                 else {
+                    startOrResumeWorkflowDS();
                     return actionWorkflowRequestEnd();
                 }
             }
