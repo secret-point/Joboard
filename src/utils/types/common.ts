@@ -133,6 +133,7 @@ export interface Job {
     postingStatus: string,
     dspEnabled?: boolean | null,
     qualificationCriteria: string[];
+    assessmentType: string;
 }
 
 export interface AvailableSchedule {
@@ -659,7 +660,19 @@ export interface ScheduleStateFilters {
     sortKey: SCHEDULE_FILTER_TYPE,
     maxHoursPerWeek:DESIRED_WORK_HOURS,
     daysHoursFilter: DayHoursFilter[]
-}
+};
+
+export interface Assessment {
+    assessmentExpireDateTime: string;
+    assessmentInitiationDateTime: string;
+    assessmentOrderId: string;
+    assessmentPackageId: string;
+    assessmentScore: string;
+    assessmentStatus: string;
+    assessmentStatusDateTime: string;
+    assessmentType: string;
+    assessmentUrl: string;
+};
 
 export interface Candidate {
     candidateId: string;
@@ -692,7 +705,9 @@ export interface Candidate {
     isDuplicateSSN: boolean;
     socialSecurityNumber: string;
     numSSNEdits: number;
-}
+    assessmentsTaken: Record<string, Assessment>;
+};
+
 export interface Address {
     addressLine1: string;
     addressLine2: string;

@@ -987,8 +987,7 @@ export const processAssessmentUrl = (assessmentUrl: string, applicationId: strin
     return url.toString();
 };
 
-export const onAssessmentStart =  (applicationData: Application, jobDetail: Job) => {
-    const assessmentUrl = applicationData.assessment?.assessmentUrl;
+export const onAssessmentStart =  (assessmentUrl: string, applicationData: Application, jobDetail: Job) => {
     const assessmentRedirectUrl = processAssessmentUrl(assessmentUrl, applicationData.applicationId, jobDetail.jobId);
     //TODO need to align what metrics need to send here.
     // if (assessmentUrl && payload.options?.adobeMetrics) {
