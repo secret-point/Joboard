@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text, H4 } from "@amzn/stencil-react-components/text";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { checkAndBoundGetApplication, goToCandidateDashboard } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, goToCandidateDashboard } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
@@ -13,6 +13,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { translate as t } from "../../../utils/translator";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -32,7 +33,7 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId } = queryParams;
+  const { applicationId, jobId } = queryParams;
   const applicationData = application.results;
   const jobDetail = job.results;
   const candidateData = candidate.results.candidateData;
@@ -44,6 +45,11 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
+
+  // Don't refresh data if id is not changing
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
