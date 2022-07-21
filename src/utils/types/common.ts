@@ -461,6 +461,7 @@ export interface Application {
     jobScheduleSelected: JobScheduleSelected;
     dspEnabled?: boolean;
     applicationSignature: ElectronicSignature;
+    additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
 }
 
 export interface JobScheduleSelected {

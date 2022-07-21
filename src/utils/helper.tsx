@@ -354,11 +354,20 @@ export const validateUserId = (userId: string): boolean => {
 }
 
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
-    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions)
-    const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions)
-    const isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo);
+    const isDspEnabled = applicationData?.dspEnabled;
+    const applicationAdditionalBgcInfo = applicationData.additionalBackgroundInfo;
+    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions);
+    const isFcraCompleted = !isEmpty(applicationData?.fcraQuestions);
+    let isAdditionalBgcCompleted: boolean;
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
+
+    if(isDspEnabled) {
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo);
+    }
+    else {
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) && isAdditionalBgcInfoValid(applicationAdditionalBgcInfo);
+    }
 
     let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig }
 

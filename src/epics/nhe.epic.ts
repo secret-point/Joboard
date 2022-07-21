@@ -23,6 +23,10 @@ export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
           }),
           map((response: GetNheTimeSlotsDsResponse) => {
 
+            if(response.data.length === 0) {
+              routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
+            }
+
             return actionGetNheTimeSlotsDsSuccess(response.data);
           }),
           catchError((error: ProxyApiError) => {

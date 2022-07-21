@@ -319,6 +319,9 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
   }, () => {
     const state = store.getState();
     if (state.appConfig.results?.envConfig) {
+      routeToAppPageWithPath(CONSENT, [
+        { paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId }
+      ]);
       onCompleteTaskHelper(createApplicationResponse);
     }
   });
