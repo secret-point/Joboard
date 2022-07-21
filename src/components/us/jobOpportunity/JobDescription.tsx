@@ -7,15 +7,13 @@ import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { Locale } from "../../../utils/types/common";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { boundGetApplication } from '../../../actions/ApplicationActions/boundApplicationActions';
 
 interface MapStateToProps {
     job: JobState,
@@ -34,15 +32,15 @@ const JobDescription = (props: MapStateToProps) => {
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);;
 
     useEffect(()=>{
         jobDetail && addMetricForPageLoad(pageName);
-    },[jobDetail]);
+    },[jobDetail, pageName]);
 
     return (
         <Col>

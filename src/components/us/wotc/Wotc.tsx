@@ -6,8 +6,7 @@ import IFrame from "../../common/IFrame";
 import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { Locale } from "../../../utils/types/common";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -32,7 +31,7 @@ export const Wotc = (props: MapStateToProps) => {
   const applicationData = application.results;
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {

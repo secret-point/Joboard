@@ -10,8 +10,8 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { translate as t } from "../../../utils/translator";
 import { DetailedCheckbox } from "@amzn/stencil-react-components/form";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { boundGetApplication, boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { createUpdateApplicationRequest, getLocale } from "../../../utils/helper";
+import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale } from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
@@ -48,7 +48,7 @@ const CaliDisclosure = (props: MapStateToProps) => {
   }, [scheduleId]);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
 
     setAcknowledged(hasBGCCaliforniaDisclosureAcknowledged);
   }, [applicationId, hasBGCCaliforniaDisclosureAcknowledged]);

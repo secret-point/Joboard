@@ -1769,6 +1769,18 @@
         "BB-no-available-shift-return-to-dashboard": {
             "note": "Text for the no available shift page return to dashboard text",
             "value": "Volver al tablero"
+        },
+        "BB-application-id-null-title-text": {
+            "note": "Text for the applicationId null page title text",
+            "value": "Error de la aplicación"
+        },
+        "BB-application-id-null-description-text": {
+            "note": "Text for the applicationId null page description text",
+            "value": "Algo anda mal, por favor ve al tablero"
+        },
+        "BB-application-id-null-return-to-dashboard-text": {
+            "note": "Text for the applicationId null page return to dashboard text",
+            "value": "Volver al tablero"
         }
     }
 }

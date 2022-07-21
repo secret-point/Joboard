@@ -11,10 +11,9 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import queryString from "query-string";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { Link } from "@amzn/stencil-react-components/link";
 import { AppConfigState } from "../../../reducers/appConfig.reducer";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
@@ -43,15 +42,15 @@ const NoAvailableTimeSlots = (props: MapStateToProps) => {
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
-  }, [jobId]);
+  }, [jobDetail, jobId]);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData]);
+  }, [jobDetail, applicationData, pageName]);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

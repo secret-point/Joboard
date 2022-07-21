@@ -19,7 +19,7 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
-import { createUpdateApplicationRequest, formatDate, getLocale, validateUserId } from "../../../utils/helper";
+import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, validateUserId } from "../../../utils/helper";
 import { Application, FormInputItem } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
@@ -65,7 +65,7 @@ const ThankYou = (props: MapStateToProps) => {
   }, [])
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {

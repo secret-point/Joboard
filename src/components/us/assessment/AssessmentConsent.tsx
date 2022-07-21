@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { getLocale, onAssessmentStart } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, onAssessmentStart } from "../../../utils/helper";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { connect } from "react-redux";
@@ -10,7 +10,6 @@ import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { translate as t } from "../../../utils/translator";
@@ -48,7 +47,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   }, [jobDetail, jobId]);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {

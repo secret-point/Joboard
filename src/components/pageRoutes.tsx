@@ -29,5 +29,6 @@ export enum PAGE_ROUTES {
   CAN_NOT_OFFER_JOB = "can-not-offer-job",
   SUPPLEMENTARY_SUCCESS = "supplementary-success",
   REHIRE_ELIGIBILITY_STATUS = "rehire-eligibility-status",
-  NO_AVAILABLE_SHIFT = "no-available-shift"
+  NO_AVAILABLE_SHIFT = "no-available-shift",
+  APPLICATIONID_NULL = "applicationId-null"
 }

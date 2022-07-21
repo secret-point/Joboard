@@ -6,13 +6,12 @@ import { H4, Text } from "@amzn/stencil-react-components/text";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { useLocation } from "react-router";
 import queryString from "query-string";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
+import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
@@ -51,12 +50,12 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData]);
+    }, [jobDetail, applicationData, pageName]);
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -65,7 +64,7 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
         scheduleId && boundGetScheduleDetail({

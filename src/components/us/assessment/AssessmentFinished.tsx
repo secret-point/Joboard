@@ -6,8 +6,7 @@ import queryString from "query-string";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { connect } from "react-redux";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 
@@ -27,16 +26,16 @@ const AssessmentFinished = (props: MapStateToProps) => {
   const jobId = applicationData?.jobScheduleSelected.jobId;
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
-  }, [jobId]);
+  }, [jobDetail, jobId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData]);
+  }, [jobDetail, applicationData, pageName]);
 
   return (
     <Col></Col>

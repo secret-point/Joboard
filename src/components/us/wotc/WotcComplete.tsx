@@ -6,7 +6,7 @@ import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../..
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundUpdateWotcStatus } from "../../../actions/WotcActions/boundWotcAction";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { Application, UpdateWotcStatusRequest } from "../../../utils/types/common";
@@ -35,7 +35,7 @@ export const WotcComplete = (props: MapStateToProps) => {
   }, [])
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {

@@ -11,10 +11,9 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { useLocation } from "react-router";
 import { JobState } from "../../../reducers/job.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import queryString from "query-string";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 
 interface MapStateToProps {
   candidate: CandidateState,
@@ -37,15 +36,15 @@ const CandidateWithdraws = (props: MapStateToProps) => {
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
-  }, [jobId]);
+  }, [jobDetail, jobId]);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData]);
+  }, [jobDetail, applicationData, pageName]);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

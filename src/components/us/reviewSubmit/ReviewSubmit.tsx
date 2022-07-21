@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { boundGetApplication, boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
@@ -20,7 +20,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { createUpdateApplicationRequest, formatDate, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
@@ -63,7 +63,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
   }, [jobDetail, jobId]);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
@@ -128,7 +128,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
           </Text>
 
-          {applicationData?.nonFcraQuestions.requestedCopyOfBackgroundCheck && <Text fontSize="T100">
+          {applicationData?.nonFcraQuestions?.requestedCopyOfBackgroundCheck && <Text fontSize="T100">
             {t("BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text", "Send free copy of background check")}
           </Text>}
 

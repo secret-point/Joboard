@@ -10,7 +10,7 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
-import { getLocale, handleSubmitFcraBGC, validateName } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
@@ -18,7 +18,6 @@ import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
@@ -68,20 +67,20 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData]);
+    }, [jobDetail, applicationData, scheduleDetail, pageName]);
 
     useEffect(() => {
         setFcraResponse(fcraQuestions?.bgcDisclosure);
         setESignature(fcraQuestions?.bgcDisclosureEsign.signature || "");
-    }, [JSON.stringify(fcraQuestions)])
+    }, [fcraQuestions])
 
     const handleClickNext = () => {
         const isFullNameValid = validateName(eSignature);

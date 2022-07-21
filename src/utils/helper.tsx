@@ -61,7 +61,7 @@ import {
     UPDATE_APPLICATION_API_TYPE
 } from "./enums/common";
 import capitalize from "lodash/capitalize";
-import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { PAGE_ROUTES } from "../components/pageRoutes";
 import queryString from "query-string";
 import { isBoolean } from "lodash";
@@ -1064,3 +1064,10 @@ export const isSelfIdentificationInfoValidBeforeDisability = (selfIdInfo?: SelfI
     return  !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
 }
 
+export const checkAndBoundGetApplication = (applicationId: string) => {
+    if (applicationId){
+        boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    } else {
+        routeToAppPageWithPath(PAGE_ROUTES.APPLICATIONID_NULL);
+    }
+};

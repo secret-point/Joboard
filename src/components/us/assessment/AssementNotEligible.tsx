@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text, H4 } from "@amzn/stencil-react-components/text";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { getLocale, goToCandidateDashboard } from "../../../utils/helper";
+import { checkAndBoundGetApplication, goToCandidateDashboard } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
@@ -10,7 +10,6 @@ import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { translate as t } from "../../../utils/translator";
@@ -43,12 +42,12 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
   },[])
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData]);
+  }, [jobDetail, applicationData, pageName]);
 
   return (
     <Col gridGap={15}>

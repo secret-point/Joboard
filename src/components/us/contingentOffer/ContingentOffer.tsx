@@ -8,8 +8,7 @@ import { useLocation } from "react-router";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
-import { getLocale, handleAcceptOffer } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { H2, H3, H4, Text } from '@amzn/stencil-react-components/text';
 import { Popover } from "@amzn/stencil-react-components/popover";
@@ -58,10 +57,10 @@ const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
@@ -73,7 +72,7 @@ const ContingentOffer = ( props: ContingentOfferMergedProps) => {
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, scheduleDetail]);
+    }, [jobDetail, applicationData, scheduleDetail, pageName]);
 
     const handleBackToJobs = () => {
         // Stay at the current page, wait work flow to do the routing

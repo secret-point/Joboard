@@ -9,11 +9,11 @@ import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../..
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {
-    boundGetApplication,
     boundUpdateApplicationDS
 } from "../../../actions/ApplicationActions/boundApplicationActions";
 import {
     bgcShouldDisplayContinue,
+    checkAndBoundGetApplication,
     createUpdateApplicationRequest,
     getLocale,
     handleUInitiateBGCStep,
@@ -86,15 +86,15 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData]);
+    }, [jobDetail, applicationData, scheduleDetail, pageName]);
 
     useEffect(() => {
         if(applicationData && candidateData) {

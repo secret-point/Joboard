@@ -7,7 +7,6 @@ import { Text } from "@amzn/stencil-react-components/text";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { useLocation } from "react-router";
 import queryString from "query-string";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
@@ -17,10 +16,11 @@ import { translate as t } from "../../../utils/translator";
 import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
 import {
+  checkAndBoundGetApplication,
   getLocale,
   goToCandidateDashboard,
   handleApplyScheduleFilters,
-  handleResetScheduleFilters
+  handleResetScheduleFilters,
 } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
@@ -69,19 +69,19 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
             locale: getLocale()
         }
         boundGetScheduleListByJobId(request);
-    }, []);
+    }, [applicationId, jobId]);
 
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData]);
+    }, [jobDetail, applicationData, pageName]);
 
     const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
         <Col width={width} height="100vh">

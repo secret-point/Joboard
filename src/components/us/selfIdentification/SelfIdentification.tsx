@@ -9,9 +9,8 @@ import { connect } from "react-redux";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DisabilityForm from "../../common/self-Identification/disability-form";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import {
-  getLocale,
+  checkAndBoundGetApplication,
   handleInitiateSelfIdentificationStep,
   isSelfIdentificationInfoValid,
   SelfShouldDisplayContinue
@@ -52,12 +51,12 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
 
   useEffect(() => {
-    applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     applicationData && addMetricForPageLoad(pageName);
-  }, [applicationData]);
+  }, [applicationData, pageName]);
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -65,7 +64,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
-  }, [candidateData, applicationData])
+  }, [candidateData, applicationData, selfIdentificationInfo])
 
 
   const handleContinue = () => {

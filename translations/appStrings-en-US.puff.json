@@ -1769,6 +1769,18 @@
         "BB-no-available-shift-return-to-dashboard": {
             "note": "Text for the no available shift page return to dashboard text",
             "value": "Return to dashboard"
+        },
+        "BB-application-id-null-title-text": {
+            "note": "Text for the applicationId null page title text",
+            "value": "Application Error"
+        },
+        "BB-application-id-null-description-text": {
+            "note": "Text for the applicationId null page description text",
+            "value": "Something is wrong, please go to dashboard"
+        },
+        "BB-application-id-null-return-to-dashboard-text": {
+            "note": "Text for the applicationId null page return to dashboard text",
+            "value": "Return to dashboard"
         }
     }
 }

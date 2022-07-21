@@ -39,6 +39,7 @@ import CanNotOfferJob from "./canNotOfferJob/CanNotOfferJob";
 import SupplementarySuccess from "./supplementarySuccess/SupplementarySuccess";
 import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireELigibilityStatus";
 import NoAvailableShift from "./noAvailableShift/NoAvailableShift";
+import ApplicationIdNull from "./applicationIdNull/ApplicationIdNull";
 
 interface MapStateToProps {
   appConfig: AppConfig,
@@ -75,7 +76,8 @@ const {
   CAN_NOT_OFFER_JOB,
   SUPPLEMENTARY_SUCCESS,
   REHIRE_ELIGIBILITY_STATUS,
-  NO_AVAILABLE_SHIFT
+  NO_AVAILABLE_SHIFT,
+  APPLICATIONID_NULL
 } = PAGE_ROUTES;
 
 const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -191,6 +193,9 @@ const DragonStoneAppUS = ( props: MapStateToProps ) => {
             </Route>
             <Route path={`/${NO_AVAILABLE_SHIFT}`} exact>
               <NoAvailableShift/>
+            </Route>
+            <Route path={`/${APPLICATIONID_NULL}`} exact>
+              <ApplicationIdNull/>
             </Route>
           </Switch>
         </Router>

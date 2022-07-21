@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
-import { boundGetApplication } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import queryString from "query-string";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { QueryParamItem } from "../../../utils/types/common";
@@ -34,7 +33,7 @@ const ResumeApplication = (props: MapStateToProps) => {
     const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
@@ -57,11 +56,11 @@ const ResumeApplication = (props: MapStateToProps) => {
             //call workflow service to update step
             applicationData && onCompleteTaskHelper(applicationData);
         });
-    }, [jobId]);
+    }, [applicationData, jobDetail, jobId, scheduleId]);
 
     useEffect(() => {
         jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData]);
+    }, [jobDetail, applicationData, pageName]);
 
     return (
       <Col minHeight="40vh"></Col>

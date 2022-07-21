@@ -11,11 +11,10 @@ import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../..
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
-import { getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import queryString from "query-string";
-import { boundGetApplication } from '../../../actions/ApplicationActions/boundApplicationActions';
 import { ApplicationState } from '../../../reducers/application.reducer';
 import { JobState } from '../../../reducers/job.reducer';
 import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailActions';
@@ -43,10 +42,10 @@ const JobConfirmation = ( props: MapStateToProps ) => {
 
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobId]);
+    }, [jobDetail, jobId]);
 
     useEffect(() => {
-        applicationId && boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+        checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
@@ -58,7 +57,7 @@ const JobConfirmation = ( props: MapStateToProps ) => {
 
     useEffect(() => {
         jobDetail && scheduleDetail && applicationDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, scheduleDetail, applicationDetail]);
+    }, [jobDetail, scheduleDetail, applicationDetail, pageName]);
 
     const handleConfirmJob = () => {
         if(applicationDetail && scheduleDetail && jobDetail){
