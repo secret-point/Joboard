@@ -5,11 +5,11 @@
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "जॉब्स डैशबोर्ड पर वापस जाएं",
+      "value" : "नौकरियों के डैशबोर्ड पर वापस जाएं",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
-      "value" : "जॉब्स देखें",
+      "value" : "नौकरियों को देखें",
       "note" : "Text for the link to go back to job opportunity index"
     },
     "BB-JobOpportunity-back-to-jobConfirmation-link" : {
@@ -17,7 +17,7 @@
       "note" : "Text for the link to go back to job confirmation page"
     },
     "BB-JobOpportunity-go-to-jobDescription-link" : {
-      "value" : "जॉब की ज़रूरत और फ़ायदे",
+      "value" : "नौकरी की ज़रूरत और फ़ायदे",
       "note" : "Text for the link to go to job description page"
     },
     "BB-JobOpportunity-filter-button" : {
@@ -29,7 +29,7 @@
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-select-job-button" : {
-      "value" : "यह जॉब चुनें",
+      "value" : "यह नौकरी चुनें",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-StepHeader-view-progress-button" : {
@@ -61,7 +61,7 @@
       "note" : "Text for the button to open user data policy page"
     },
     "BB-ConsentPage-create-application-button" : {
-      "value" : "एप्लिकेशन बनाएं",
+      "value" : "आवेदन बनाएं",
       "note" : "Text for the create application button"
     },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
@@ -69,15 +69,15 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon एक विविध और समावेशी कार्यस्थल के लिए प्रतिबद्ध है. Amazon एक समान अवसर नियोक्ता है और जाती, राष्ट्रीय मूल, लिंग, लिंग पहचान, सेक्शूअल ओरिएंटेशन, संरक्षित वेटरन स्थिति, विकलांगता, उम्र या अन्य लीगल रूप से संरक्षित स्थिति के आधार पर भेदभाव नहीं करता है. विकलांग व्यक्तियों के लिए जो आवास का अनुरोध करना चाहते हैं, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> पर जाएं",
+      "value" : "Amazon एक विविध और समावेशी कार्यस्थल के लिए प्रतिबद्ध है. Amazon एक समान अवसर नियोक्ता है और जाती, राष्ट्रीय मूल, लिंग, लिंग पहचान, सेक्शूअल ओरिएंटेशन, संरक्षित वेटरन स्थिति, विकलांगता, उम्र या अन्य कानूनी रूप से संरक्षित स्थिति के आधार पर भेदभाव नहीं करता है. विकलांग व्यक्तियों के लिए जो आवास का अनुरोध करना चाहते हैं, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> पर जाएं",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "Amazon आपकी व्यक्तिगत डेटा सुरक्षा को गंभीरता से लेता है और सिर्फ़ कानून के अनुसार आपके व्यक्तिगत डेटा को संसाधित करेगा. विशेष रूप से, हम आपकी पूर्व सहमति के बिना आपके व्यक्तिगत डेटा को किसी तीसरे पक्ष के साथ साझा नहीं करते हैं, जब तक कि ऐसा करने के लिए कानून द्वारा मजबूर नहीं किया जाता है. जब तक आप अन्यथा व्यक्त नहीं करते हैं, तब तक हायरिंग Amazon कंपनी आपके व्यक्तिगत डेटा को संयुक्त राज्य अमेरिका या उसके किसी सहयोगी कंपनी में Amazon.com द्वारा बनाए गए इलेक्ट्रॉनिक डेटाबेस में संग्रहित करेगी. Amazon आपके व्यक्तिगत डेटा को कैसे स्टोर और संसाधित करता है, इस बारे में पूरी जानकारी के लिए कृपया यहां क्लिक करें <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
+      "value" : "Amazon आपकी व्यक्तिगत डेटा सुरक्षा को गंभीरता से लेता है और सिर्फ़ कानून के अनुसार आपके व्यक्तिगत डेटा को संसाधित करेगा. विशेष रूप से, हम आपकी पूर्व सहमति के बिना आपके व्यक्तिगत डेटा को किसी तीसरे पक्ष के साथ साझा नहीं करते हैं, जब तक कि ऐसा करने के लिए कानून द्वारा मजबूर नहीं किया जाता है. जब तक आप अन्यथा व्यक्त नहीं करते हैं, तब तक हायरिंग Amazon कंपनी आपके व्यक्तिगत डेटा को संयुक्त राज्य अमेरिका या उसके किसी सहयोगी कंपनी में Amazon.com द्वारा बनाए गए इलेक्ट्रॉनिक डेटाबेस में संग्रहित करेगी. Amazon आपके व्यक्तिगत डेटा को कैसे स्टोर और संसाधित करता है, इस बारे में पूरी जानकारी के लिए कृपया यहां क्लिक करें <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "आज के लिए आपके द्वारा आवेदन की गई भूमिका के अलावा, हमारे पास अन्य पोज़िशन हो सकती हैं जिनके लिए समान या मिलते-जुलते जॉब फ़ंक्शन की ज़रूरत होती है. ये भूमिकाएं पूर्णकालिक, कम-समय, अंशकालिक, मौसमी और/या अस्थायी पोज़िशन हो सकती हैं जो इस लोकेशन या अन्य आस-पास की Amazon लोकेशन पर उपलब्ध हैं. आप Amazon या हमारे भागीदारों के साथ किसी भी भूमिका को स्वीकार करने के लिए बाध्य नहीं हैं, हालांकि, अपना एप्लिकेशन पूरी करके आप अपनी एप्लिकेशन साइट के 30 मील के दायरे में समान स्तर, प्रति घंटा भूमिकाओं के लिए विचार करने के लिए सहमत हैं. इसमें आपके आवेदक की जानकारी को हमारे भागीदारों (स्टाफिंग एजेंसियों) के साथ साझा करना शामिल है जो हमारी दोनों नियमित और अस्थायी सहयोगी की जरूरतों के लिए हायर करते हैं.",
+      "value" : "आज के लिए आपके द्वारा आवेदन की गई भूमिका के अलावा, हमारे पास अन्य पद हो सकते हैं जिनके लिए समान या मिलते-जुलते नौकरी फ़ंक्शन की ज़रूरत होती है. ये भूमिकाएं पूर्णकालिक, कम-समय, अंशकालिक, सीज़नल और/या अस्थायी पद हो सकती हैं जो इस लोकेशन या अन्य आस-पास की Amazon लोकेशन पर उपलब्ध हैं. आप Amazon या हमारे भागीदारों के साथ किसी भी भूमिका को स्वीकार करने के लिए बाध्य नहीं हैं, हालांकि, अपना आवेदन पूरी करके आप अपनी आवेदन कार्य स्थल के 30 मील के दायरे में समान स्तर, प्रति घंटा भूमिकाओं के लिए विचार करने के लिए सहमत हैं. इसमें आपके आवेदक की जानकारी को हमारे भागीदारों (स्टाफिंग एजेंसियों) के साथ साझा करना शामिल है जो हमारी दोनों नियमित और अस्थायी एसोसिएट की जरूरतों के लिए हायर करते हैं.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
@@ -85,15 +85,15 @@
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
-      "value" : "स्वीकार कर रहे हैं कि आपने उस पोज़िशन के लिए नौकरी का विवरण पढ़ा है जिसके लिए आप आवेदन कर रहे हैं और आप जॉब करने के लिए ज़रूरी बुनियादी जरूरतों को समझते हैं;",
+      "value" : "स्वीकार कर रहे हैं कि आपने उस पद के लिए नौकरी का विवरण पढ़ा है जिसके लिए आप आवेदन कर रहे हैं और आप नौकरी करने के लिए ज़रूरी बुनियादी जरूरतों को समझते हैं;",
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "आपकी एप्लिकेशन के प्रयोजनों के लिए और Amazon के किसी भी अन्य मान्य उद्देश्यों के लिए Amazon, salesforce.com या किसी अन्य तीसरे पक्ष द्वारा आपके व्यक्तिगत डेटा के प्रोसेसिंग, विश्लेषण और असेसमेंट के लिए सहमति. संदेह से बचने के लिए, आपके व्यक्तिगत डेटा के \"प्रोसेसिंग\" में आपके व्यक्तिगत डेटा क्लेक्ट करना, प्राप्त करना, रिकॉर्ड करना, आयोजन, संयोजन, भंडारण, अद्यतन, परिवर्तन, इस्तेमाल, प्रसार, वितरण, विलय, लिंक करना, ब्लॉक करना, अपमानित करना, मिटाना या नष्ट करना तक शामिल होंगे लेकिन इन्हीं सीमित नहीं होगा;",
+      "value" : "आपकी आवेदन के प्रयोजनों के लिए और Amazon के किसी भी अन्य वैध उद्देश्यों के लिए Amazon, salesforce.com या किसी अन्य तीसरे पक्ष द्वारा आपके व्यक्तिगत डेटा के प्रोसेसिंग, विश्लेषण और मूल्यांकन के लिए सहमति. संदेह से बचने के लिए, आपके व्यक्तिगत डेटा के \"प्रोसेसिंग\" में आपके व्यक्तिगत डेटा क्लेक्ट करना, प्राप्त करना, रिकॉर्ड करना, आयोजन, संयोजन, भंडारण, अद्यतन, परिवर्तन, इस्तेमाल, प्रसार, वितरण, विलय, लिंक करना, ब्लॉक करना, अपमानित करना, मिटाना या नष्ट करना तक शामिल होंगे लेकिन इन्हीं तक प्रतिबंधित नहीं होगा;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "एप्लिकेशन प्रक्रिया के बाद Amazon को आपके व्यक्तिगत डेटा को बनाए रखने के लिए सहमति, ताकि इसकी जॉब एप्लिकेशन प्रक्रियाओं की प्रभावी निगरानी और USA में इलेक्ट्रॉनिक डेटाबेस में आपके व्यक्तिगत डेटा को संग्रहित करने में मदद मिल सके.",
+      "value" : "आवेदन प्रक्रिया के बाद Amazon को आपके व्यक्तिगत डेटा को बनाए रखने के लिए सहमति, ताकि इसकी नौकरी आवेदन प्रक्रियाओं की प्रभावी निगरानी और USA में इलेक्ट्रॉनिक डेटाबेस में आपके व्यक्तिगत डेटा को संग्रहित करने में मदद मिल सके.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
@@ -105,7 +105,7 @@
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "जॉब चुनें",
+      "value" : "नौकरी चुनें",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
@@ -209,15 +209,15 @@
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "आपके द्वारा चुनी गई जॉब के लिए आकस्मिक ऑफ़र यहां दिया गया है.",
+      "value" : "आपके द्वारा चुनी गई नौकरी के लिए आकस्मिक पेशकश यहां दी गई है.",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "आपके द्वारा चुनी गई जॉब के लिए आकस्मिक ऑफ़र यहां दिया गया है.",
+      "value" : "आपके द्वारा चुनी गई नौकरी के लिए आकस्मिक पेशकश यहां दी गई है.",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "जैसे कि लागू कानून द्वारा अनुमति दी गई है, आपका ऑफ़र ज़रूरी बैकग्राउंड की जांच, ड्रग स्क्रीनिंग (अगर लागू है) और योग्यता जांच (अगर लागू है) को सफलतापूर्वक पारित करने पर आकस्मिक है, इसलिए यह ज़रूरी है कि आप अगले पेज पर रोजगार से पहले के चरणों को पूरा करें. कुछ परिस्थितियों में, पूर्व-रोजगार ज़रूरतें समय पर पूरी नहीं होने के कारण आपके पहले दिन में देरी हो सकती है. अगर यह स्थिति है, तो हम जल्द ही आपसे संपर्क करेंगे.",
+      "value" : "जैसे कि लागू कानून द्वारा अनुमति दी गई है, आपकी पेशकश ज़रूरी बैकग्राउंड की जांच, ड्रग स्क्रीनिंग (अगर लागू हो) और योग्यता जांच (अगर लागू हो) को सफलतापूर्वक पारित करने पर आकस्मिक है, इसलिए यह ज़रूरी है कि आप अगले पेज पर रोजगार से पहले के चरणों को पूरा करें. कुछ परिस्थितियों में, पूर्व-रोजगार ज़रूरतें समय पर पूरी नहीं होने के कारण आपके पहले दिन में देरी हो सकती है. अगर यह स्थिति है, तो हम जल्द ही आपसे संपर्क करेंगे.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -225,7 +225,7 @@
       "note" : "Text for contingent offer meaning popover close button"
     },
     "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "जॉब की जरूरतें.",
+      "value" : "नौकरी की जरूरतें.",
       "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
@@ -233,15 +233,15 @@
       "note" : "Text for the remaining steps container title text"
     },
     "BB-ContingencyOffer-accept-offer-button-text" : {
-      "value" : "ऑफ़र स्वीकार करें",
+      "value" : "पेशकश स्वीकार करें",
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
-      "value" : "जॉब्स पर वापस जाएं",
+      "value" : "नौकरियों पर वापस जाएं",
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "इस ऑफ़र को स्वीकार करके आप पुष्टि करते हैं कि आप इस पोज़िशन की ज़रूरतें समझते हैं.",
+      "value" : "इस पेशकश को स्वीकार करके, आप पुष्टि करते हैं कि आप इस पद की ज़रूरतें समझते हैं.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
@@ -353,7 +353,7 @@
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
-      "value" : "Id नंबर",
+      "value" : "ID नंबर",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
@@ -373,7 +373,7 @@
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
-      "value" : "आपकी उम्र18 साल से ज़्यादा होनी चाहिए.",
+      "value" : "आपकी आयु 18 वर्ष से अधिक होनी चाहिए.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
@@ -405,15 +405,23 @@
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "Amazon.com, Inc. या इसकी सहायक कंपनियों या सहयोगी (\"Amazon\") के साथ रोजगार के लिए आपके एप्लिकेशन के संबंध में हम उपभोक्ता रिपोर्टिंग एजेंसी से आपके बारे में उपभोक्ता रिपोर्ट हासिल करेंगे. इसे आमतौर पर \"बैकग्राउंड की जांच\" के रूप में जाना जाता है.",
+      "value" : "Amazon.com, Inc. के साथ रोजगार के लिए आपके आवेदन के संबंध में या इसकी सहायक कंपनियां या सहयोगी (“Amazon”), हम उपभोक्ता रिपोर्टिंग एजेंसी से आप पर एक उपभोक्ता रिपोर्ट प्राप्त करेंगे. इसे आमतौर पर \"बैकग्राउंड की जांच\" के रूप में जाना जाता है.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "एप्लिकेशन वापस लें",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "अगर आप बैकग्राउंड की जांच करने से इनकार करते हैं तो आपकी एप्लिकेशन वापस ले ली जाएगी.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "फेयर क्रेडिट रिपोर्ट अधिनियम डिस्क्लोजर",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "नीचे दिए गए मेरे ई-हस्ताक्षर द्वारा, मैं अभी और Amazon कॉरपोरेट के साथ किसी भी रोजगार या एंगेजमेंट के दौरान Amazon को उपरोक्त उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करता/करती हूं.",
+      "value" : "नीचे दिए गए मेरे ई-हस्ताक्षर द्वारा, मैं अभी और Amazon कॉर्पोरेट के साथ किसी भी रोजगार या एंगेजमेंट के दौरान Amazon को उपरोक्त उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करता/करती हूं.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -445,11 +453,11 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "First Advantage बैकग्राउंड चेक प्रदाता या \"CRA\" है, जो बैकग्राउंड चेक करेगा, 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 में स्थित है और (800) 845-6004 या www.fadv.com पर इस तक पहुंचा जा सकता है.",
+      "value" : "फ़र्स्ट एडवांटेज बैकग्राउंड चेक प्रदाता या \"CRA\" है, जो बैकग्राउंड चेक करेगा, 1 कॉनकोर्स पार्कवे NE, सुइट 200, अटलांटा, GA 30328 में स्थित है और (800) 845-6004 या www.fadv.com पर इस तक पहुंचा जा सकता है.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "Accurate Background बैकग्राउंड चेक प्रोवाइडर या \"CRA\" है, जो बैकग्राउंड की जांच करेगा, 7515 Irvine Center Dr., Irvine, CA 92618 में स्थित है और (800) 216-8024 या www.accuratebackground.com पर इस तक पहुंचा जा सकता है.\n\n* मैं समझता/समझती हूं और सहमत हूं कि कानून द्वारा दी गई अनुमति के अनुसार Amazon मेरे आगे के प्राधिकरण के बिना, रोजगार उद्देश्यों के लिए मेरे बारे में अतिरिक्त बैकग्राउंड जांच का ऑर्डर दे सकता है, (1) मेरे रोजगार के दौरान, अगर कोई है और (2) Accurate Background के अलावा के CRA से.",
+      "value" : "Accurate Background बैकग्राउंड चेक प्रोवाइडर या \"CRA\" है, जो बैकग्राउंड की जांच करेगा, 7515 इरविन सेंटर डॉ, इरविन, CA 92618 में स्थित है और (800) 216-8024 या www.accuratebackground.com पर इस तक पहुंचा जा सकता है.\n\n* मैं समझता/समझती हूं और सहमत हूं कि कानून द्वारा दी गई अनुमति के अनुसार Amazon मेरे आगे के प्राधिकरण के बिना, रोजगार उद्देश्यों के लिए मेरे बारे में अतिरिक्त बैकग्राउंड जांच का ऑर्डर दे सकता है, (1) मेरे रोजगार के दौरान, अगर कोई है और (2) Accurate Background के अलावा CRA से.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
@@ -469,28 +477,36 @@
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>कैलिफोर्निया: </b> आपको खोज उपभोक्ता रिपोर्ट (\"कैलिफोर्निया प्रकटीकरण\") के बारे में एक अलग कैलिफोर्निया प्रकटीकरण प्राप्त होगा. यह एक महत्वपूर्ण दस्तावेज़ है; कृपया इसकी सावधानीपूर्वक समीक्षा करें. इसके अलावा अगर सैन फ्रांसिस्को में रोजगार की मांग कर रहे हैं या कंपनी द्वारा पहले से ही कार्यरत हैं तो <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> पर क्लिक करें. नीचे हस्ताक्षर करके, अब और किसी भी समय Amazon के साथ किसी भी रोजगार के दौरान कैलिफोर्निया कानून और कैलिफोर्निया प्रकटीकरण के अनुसार, आप Amazon को एक खोज उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करते हैं, जिसे बैकग्राउंड की जांच के रूप में भी जाना जाता है.</p>",
+      "value" : "<p><b>कैलिफोर्निया: </b>आपको खोज उपभोक्ता रिपोर्ट (\"कैलिफोर्निया प्रकटीकरण\") के बारे में एक अलग कैलिफोर्निया प्रकटीकरण प्राप्त होगा. यह एक ज़रूरी दस्तावेज़ है; कृपया इसकी सावधानीपूर्वक समीक्षा करें. इसके अलावा अगर सैन फ्रांसिस्को में रोजगार की मांग कर रहे हैं या कंपनी द्वारा पहले से ही कार्यरत हैं तो <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> पर क्लिक करें. नीचे हस्ताक्षर करके, अब और किसी भी समय Amazon के साथ किसी भी रोजगार के दौरान कैलिफोर्निया कानून और कैलिफोर्निया प्रकटीकरण के अनुसार, आप Amazon को एक खोज उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करते हैं, जिसे बैकग्राउंड की जांच के रूप में भी जाना जाता है.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>कैलिफोर्निया: </b> आपको खोज उपभोक्ता रिपोर्ट (\"कैलिफोर्निया प्रकटीकरण\") के बारे में एक अलग कैलिफोर्निया प्रकटीकरण प्राप्त होगा. यह एक महत्वपूर्ण दस्तावेज़ है; कृपया इसकी सावधानीपूर्वक समीक्षा करें. इसके अलावा अगर सैन फ्रांसिस्को में रोजगार की मांग कर रहे हैं या कंपनी द्वारा पहले से ही कार्यरत हैं तो <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> पर क्लिक करें. नीचे हस्ताक्षर करके, अब और किसी भी समय Amazon के साथ किसी भी रोजगार के दौरान कैलिफोर्निया कानून और कैलिफोर्निया प्रकटीकरण के अनुसार, आप Amazon को एक खोज उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करते हैं, जिसे बैकग्राउंड की जांच के रूप में भी जाना जाता है.</p>",
+      "value" : "<p><b>कैलिफोर्निया: </b>आपको खोज उपभोक्ता रिपोर्ट (\"कैलिफोर्निया प्रकटीकरण\") के बारे में एक अलग कैलिफोर्निया प्रकटीकरण प्राप्त होगा. यह एक ज़रूरी दस्तावेज़ है; कृपया इसकी सावधानीपूर्वक समीक्षा करें. इसके अलावा अगर सैन फ्रांसिस्को में रोजगार की मांग कर रहे हैं या कंपनी द्वारा पहले से ही कार्यरत हैं तो <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> पर क्लिक करें. नीचे हस्ताक्षर करके, अब और किसी भी समय Amazon के साथ किसी भी रोजगार के दौरान कैलिफोर्निया कानून और कैलिफोर्निया प्रकटीकरण के अनुसार, आप Amazon को एक खोज उपभोक्ता रिपोर्ट हासिल करने के लिए अधिकृत करते हैं, जिसे बैकग्राउंड की जांच के रूप में भी जाना जाता है.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>मिनेसोटा: </b>आपके पास आपके बारे में आदेश दी गई किसी भी उपभोक्ता रिपोर्ट की प्रकृति और दायरे के पूर्ण और सटीक प्रकटीकरण के लिए CRA को एक लिखित अनुरोध प्रस्तुत करने का अधिकार है. CRA को आपके अनुरोध की प्राप्ति के बाद या रिपोर्ट के ऑर्डर दिए जाने के बाद, जो भी तारीख बाद में हो, पांच बिज़नेस दिनों के अंदर आपको प्रकटीकरण प्रदान करना होगा.</p>",
+      "value" : "<p><b>मिनेसोटा: </b>आपके पास आपके बारे में ऑर्डर दी गई किसी भी उपभोक्ता रिपोर्ट की प्रकृति और दायरे के पूर्ण और सटीक प्रकटीकरण के लिए CRA को एक लिखित अनुरोध सबमिट करने का अधिकार है. CRA को आपके अनुरोध की प्राप्ति के बाद या रिपोर्ट के ऑर्डर दिए जाने के बाद, जो भी तारीख बाद में हो, पांच बिज़नेस दिनों के अंदर आपको प्रकटीकरण प्रदान करना होगा.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>मिनेसोटा: </b>आपके पास आपके बारे में आदेश दी गई किसी भी उपभोक्ता रिपोर्ट की प्रकृति और दायरे के पूर्ण और सटीक प्रकटीकरण के लिए CRA को एक लिखित अनुरोध प्रस्तुत करने का अधिकार है. CRA को आपके अनुरोध की प्राप्ति के बाद या रिपोर्ट के ऑर्डर दिए जाने के बाद, जो भी तारीख बाद में हो, पांच बिज़नेस दिनों के अंदर आपको प्रकटीकरण प्रदान करना होगा.</p>",
+      "value" : "<p><b>मिनेसोटा: </b>आपके पास आपके बारे में ऑर्डर दी गई किसी भी उपभोक्ता रिपोर्ट की प्रकृति और दायरे के पूर्ण और सटीक प्रकटीकरण के लिए CRA को एक लिखित अनुरोध सबमिट करने का अधिकार है. CRA को आपके अनुरोध की प्राप्ति के बाद या रिपोर्ट के ऑर्डर दिए जाने के बाद, जो भी तारीख बाद में हो, पांच बिज़नेस दिनों के अंदर आपको प्रकटीकरण प्रदान करना होगा.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>न्यूयॉर्क: </b> आपके पास Amazon को एक लिखित अनुरोध सबमिट करके यह जानने का अधिकार है कि क्या हमने आपके बारे में उपभोक्ता रिपोर्ट या खोज उपभोक्ता रिपोर्ट का ऑर्डर दिया है. CRA का पता और टेलीफ़ोन नंबर ऊपर दिखाया गया है. आपको ऐसी किसी भी रिपोर्ट की एक कॉपी का निरीक्षण करने या प्राप्त करने के लिए किसी भी CRA से संपर्क करने का अधिकार है. न्यूयॉर्क सुधार कानून के अनुच्छेद 23-A के तहत अपने अधिकारों के बारे में जानकारी के लिए <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">यहां</a> क्लिक करें.</p>",
+      "value" : "<p><b>न्यूयॉर्क: </b>आपके पास Amazon को एक लिखित अनुरोध सबमिट करके यह जानने का अधिकार है कि क्या हमने आपके बारे में उपभोक्ता रिपोर्ट या खोज उपभोक्ता रिपोर्ट का ऑर्डर दिया है. CRA का पता और टेलीफ़ोन नंबर ऊपर दिखाया गया है. आपको ऐसी किसी भी रिपोर्ट की एक कॉपी का निरीक्षण करने या प्राप्त करने के लिए किसी भी CRA से संपर्क करने का अधिकार है. न्यूयॉर्क सुधार कानून के अनुच्छेद 23-A के तहत अपने अधिकारों के बारे में जानकारी के लिए <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">यहां</a> क्लिक करें.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-fadv-newyork-specific-notice" : {
       "value" : "<p><b>न्यूयॉर्क: </b>आपके पास Amazon को एक लिखित अनुरोध सबमिट करके यह जानने का अधिकार है कि क्या हमने आपके बारे में उपभोक्ता रिपोर्ट या खोज उपभोक्ता रिपोर्ट का ऑर्डर दिया है. CRA का पता और टेलीफ़ोन नंबर ऊपर दिखाया गया है. आपको ऐसी किसी भी रिपोर्ट की एक कॉपी का निरीक्षण करने या प्राप्त करने के लिए किसी भी CRA से संपर्क करने का अधिकार है. न्यूयॉर्क सुधार कानून के अनुच्छेद 23-A के तहत अपने अधिकारों के बारे में जानकारी के लिए <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">यहां</a> क्लिक करें.</p>",
       "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>वॉशिंगटन: </b>आपको उपभोक्ता रिपोर्टिंग एजेंसी से वाशिंगटन फेयर क्रेडिट रिपोर्टिंग अधिनियम के तहत अपने अधिकारों का लिखित सारांश अनुरोध करने का अधिकार है.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>वॉशिंगटन: </b>आपको उपभोक्ता रिपोर्टिंग एजेंसी से वाशिंगटन फेयर क्रेडिट रिपोर्टिंग अधिनियम के तहत अपने अधिकारों का लिखित सारांश अनुरोध करने का अधिकार है.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>सभी राज्य: </b>अगर आप इस बॉक्स को चिन्हित करते हैं तो हम आपको किसी भी बैकग्राउंड की जांच की एक मुफ़्त कॉपी प्रदान करेंगे",
@@ -501,31 +517,31 @@
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "कृपया पहले इस्तेमाल किया गया पूरा लीगल नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
+      "value" : "कृपया पहले इस्तेमाल किया गया पूरा कानूनी नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
-      "value" : "पिछला पूरा लीगल नाम",
+      "value" : "पिछला पूरा कानूनी नाम",
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "कृपया पहले इस्तेमाल किया गया पूरा लीगल नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
+      "value" : "कृपया पहले इस्तेमाल किया गया पूरा कानूनी नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
-      "value" : "पिछला पूरा लीगल नाम (1)",
+      "value" : "पिछला पूरा कानूनी नाम (1)",
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "कृपया पहले इस्तेमाल किया गया पूरा लीगल नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
+      "value" : "कृपया पहले इस्तेमाल किया गया पूरा कानूनी नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "पिछला पूरा लीगल नाम (2)",
+      "value" : "पिछला पूरा कानूनी नाम (2)",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
-      "value" : "ज़्यादा पिछले नाम जोड़ें/दिखाएं",
+      "value" : "और पिछले नाम जोड़ें/दिखाएं",
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
@@ -577,7 +593,7 @@
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "मैं यह भी स्वीकार करता/करती हूं कि मेरे SSN की जानबूझकर की गई किसी भी गलतबयानी पर Amazon द्वारा विचार किया जाएगा और इससे मेरे रोजगार का ऑफ़र कैंसल हो सकता है या अगर मुझे काम पर रखा गया है, तो मेरे रोजगार को समाप्त किया जा सकता है.",
+      "value" : "मैं यह भी स्वीकार करता/करती हूं कि मेरे SSN की जानबूझकर की गई किसी भी गलतबयानी पर Amazon द्वारा विचार किया जाएगा और इससे मेरे रोजगार की पेशकश कैंसल हो सकती है या अगर मुझे काम पर रखा गया है, तो मेरे रोजगार को समाप्त किया जा सकता है.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
@@ -605,7 +621,7 @@
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
-      "value" : "कृपया नीचे दिए गए लागू नोटिस की समीक्षा करें.",
+      "value" : "कृपया नीचे दिए गए लागू नोटिस(सो) की समीक्षा करें.",
       "note" : "Text for the non fcra State specific notices review text"
     },
     "BB-BGC-non-fcra-esignature-certification-form-title" : {
@@ -641,15 +657,15 @@
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
-      "value" : "आपने इस जॉब के लिए एप्लिकेशन शुरू कर दी है और/या पूरी कर ली है.",
+      "value" : "आपने इस नौकरी के लिए आवेदन शुरू कर दिया है और/या पूरा कर लिया है.",
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "डैशबोर्ड पर लौटें, अपनी एप्लिकेशन फिर से शुरू करें या एप्लिकेशन और नया हायर अपॉइंटमेंट विवरण और अपने अगले चरण देखें.",
+      "value" : "डैशबोर्ड पर वापस जाएं, अपना आवेदन फिर से शुरू करें या आवेदन और नए हायर की अपॉइंटमेंट की डिटेल्स और अपने अगले चरण देखें.",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
-      "value" : "डैशबोर्ड पर लौटें",
+      "value" : "डैशबोर्ड पर वापस जाएं",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
     "BB-SelfId-disability-form-name-text" : {
@@ -669,7 +685,7 @@
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "हम एक संघीय कॉन्ट्रैक्टर या उपकॉन्ट्रैक्टर हैं जिनके लिए कानून द्वारा विकलांग लोगों को समान रोजगार अवसर प्रदान करने की ज़रूरत है. हमें अपने कार्यबल में कम से कम 7% विकलांग व्यक्ति होने की दिशा में अपनी प्रगति को मापने की भी ज़रूरत है. ऐसा करने के लिए हमें आवेदकों और कर्मचारियों से पूछना होगा कि क्या उनकों विकलांगता है या कभी विकलांगता हुई है. क्योंकि कोई व्यक्ति किसी भी समय विकलांग हो सकता है, हम अपने सभी कर्मचारियों से कम से कम हर पांच साल में अपनी जानकारी अपडेट करने के लिए कहते हैं.",
+      "value" : "हम एक संघीय कॉन्ट्रैक्टर या उपकॉन्ट्रैक्टर हैं जिनके लिए कानून द्वारा विकलांग लोगों को समान रोजगार अवसर प्रदान करने की ज़रूरत है. हमें अपने कार्यबल में कम से कम 7% विकलांग व्यक्ति होने की दिशा में अपनी प्रगति को मापने की भी ज़रूरत है. ऐसा करने के लिए, हमें आवेदकों और कर्मचारियों से पूछना होगा कि क्या उनकों विकलांगता है या कभी विकलांगता हुई है. क्योंकि कोई व्यक्ति किसी भी समय विकलांग हो सकता है, हम अपने सभी कर्मचारियों से कम से कम हर पांच साल में अपनी जानकारी अपडेट करने के लिए कहते हैं.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
@@ -789,11 +805,11 @@
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
-      "value" : "स्वैच्छिक समान अवसर आत्म-पहचान फ़ॉर्म",
+      "value" : "स्वैच्छिक समान अवसर आत्म-पहचान फ़ॉर्म",
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon विविधता के सभी रूपों को महत्व देता है और कुछ गैर-भेदभाव और सकारात्मक कार्रवाई रिकॉर्डकीपिंग और रिपोर्टिंग ज़रूरतों के अधीन है, जिसके लिए हमें उम्मीदवारों और कर्मचारियों को स्वेच्छा से अपने लिंग और जाति/जातीयता की पहचान करने के लिए आमंत्रित करने की ज़रूरत होती है. इस जानकारी को प्रस्तुत करना स्वैच्छिक है और इसे प्रदान करने से इनकार करने से आपके साथ कोई भी प्रतिकूल बर्ताव नहीं किया जाएगा. प्राप्त जानकारी को गोपनीय रखा जाएगा और इसका इस्तेमाल सिर्फ़ लागू संघीय कानूनों, कार्यकारी आदेशों और विनियमों के प्रावधानों के अनुसार किया जा सकता है, जिनमें वे भी शामिल हैं, जिन्हें नागरिक अधिकार प्रवर्तन उद्देश्यों के लिए संघीय सरकार को संक्षेप में जानकारी और रिपोर्ट करने की ज़रूरत होती है. अगर आप इस समय अपने लिंग या जाति/जातीयता की आत्म-पहचान नहीं करना चुनते हैं, तो संघीय सरकार को हमें विज़ुअल सर्वेक्षण और/या अन्य उपलब्ध जानकारी द्वारा कर्मचारियों के लिए यह जानकारी निर्धारित करने की ज़रूरत है.",
+      "value" : "Amazon विविधता के सभी रूपों को महत्व देता है और कुछ गैर-भेदभाव और सकारात्मक कार्रवाई रिकॉर्ड कीपिंग और रिपोर्टिंग ज़रूरतों के अधीन है, जिसके लिए हमें उम्मीदवारों और कर्मचारियों को स्वेच्छा से अपने लिंग और जाति/जातीयता की पहचान करने के लिए आमंत्रित करने की ज़रूरत होती है. इस जानकारी को प्रस्तुत करना स्वैच्छिक है और इसे प्रदान करने से इनकार करने से आपके साथ कोई भी प्रतिकूल बर्ताव नहीं किया जाएगा. प्राप्त जानकारी को गोपनीय रखा जाएगा और इसका इस्तेमाल सिर्फ़ लागू संघीय कानूनों, कार्यकारी आदेशों और विनियमों के प्रावधानों के अनुसार किया जा सकता है, जिनमें वे भी शामिल हैं, जिन्हें नागरिक अधिकार प्रवर्तन उद्देश्यों के लिए संघीय सरकार को संक्षेप में जानकारी और रिपोर्ट करने की ज़रूरत होती है. अगर आप इस समय अपने लिंग या जाति/जातीयता की आत्म-पहचान नहीं करना चुनते हैं, तो संघीय सरकार को हमें विज़ुअल सर्वेक्षण और/या अन्य उपलब्ध जानकारी द्वारा कर्मचारियों के लिए यह जानकारी निर्धारित करने की ज़रूरत है.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -921,7 +937,7 @@
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "Amazon एक संघीय सरकार का कॉन्ट्रैक्टर है जो जॉब्स फॉर वेटरन्स अधिनियम 2002 द्वारा संशोधित किए गए वियतनाम एरा वेटरन्स रीडजस्टमेंट असिस्टेंस अधिनियम 1974 के अधीन है, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA) जिसके अनुसार सरकारी कॉन्ट्रैक्टर को (1) विकलांग वेटरन; (2) हाल ही में अलग हुए वेटरन; (3) सक्रिय कर्तव्य युद्ध के समय या अभियान बैज वेटरन और (4) सशस्त्र बल सेवा मेडल वेटरन के लिए रोजगार में नौकरी देने और आगे बढ़ने के लिए सकारात्मक कार्रवाई करने की ज़रूरत होती है. आपकी संरक्षित वेटरन स्थिति की आत्म-पहचान करने के लिए निम्नलिखित आमंत्रण धारा 4212 के अनुसार किया गया है. इस जानकारी का प्रकटीकरण पूरी तरह से स्वैच्छिक है और इसे प्रदान करने से इनकार करने से आपके साथ कोई भी प्रतिकूल बर्ताव नहीं किया जाएगा.",
+      "value" : "Amazon एक संघीय सरकार का कॉन्ट्रैक्टर है जो 2002 का वेटरन के लिए नौकरियों का अधिनियम द्वारा संशोधित किए गए 1974 का वियतनाम युग के वेटरन का पुन: समायोजन के लिए सहायता अधिनियम 1974 के अधीन है, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'>38 U.S.C.4212</a> (VEVRAA) जिसके अनुसार सरकारी कॉन्ट्रैक्टर को (1) विकलांग वेटरन; (2) हाल ही में अलग हुए वेटरन; (3) सक्रिय कर्तव्य युद्ध के समय या अभियान बैज वेटरन और (4) सशस्त्र बल सेवा मेडल वेटरन के लिए रोजगार में नौकरी देने और आगे बढ़ने के लिए सकारात्मक कार्रवाई करने की ज़रूरत होती है. आपकी संरक्षित वेटरन स्थिति की आत्म-पहचान करने के लिए निम्नलिखित आमंत्रण धारा 4212 के अनुसार किया गया है. इस जानकारी का प्रकटीकरण पूरी तरह से स्वैच्छिक है और इसे प्रदान करने से इनकार करने से आपके साथ कोई भी प्रतिकूल बर्ताव नहीं किया जाएगा.",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
@@ -969,7 +985,7 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "Amazon.com, Inc. या इसकी सहायक कंपनियों या सहयोगी (\"Amazon\") के साथ मेरे संभावित रोजगार के संबंध में Amazon मेरे बारे में निम्नलिखित उपभोक्ता रिपोर्टिंग एजेंसी से एक खोज उपभोक्ता रिपोर्ट (\"रिपोर्ट\") हासिल कर सकता है, जिसे बैकग्राउंड चेक के रूप में भी जाना जाता है:",
+      "value" : "Amazon.com, Inc. के साथ मेरे संभावित रोजगार के संबंध में Amazon मेरे बारे में निम्नलिखित उपभोक्ता रिपोर्टिंग एजेंसी से एक खोज उपभोक्ता रिपोर्ट (\"रिपोर्ट\") हासिल कर सकता है, जिसे बैकग्राउंड चेक के रूप में भी जाना जाता है:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -977,11 +993,11 @@
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
-      "value" : "7515 Irvine Center Dr.",
+      "value" : "7515 इरविन सेंटर डॉ.",
       "note" : "Text for the california disclosure page vendor accurate address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
-      "value" : "Irvine, CA 92618",
+      "value" : "इरविन, CA 92618",
       "note" : "Text for the california disclosure page vendor accurate address line 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
@@ -1001,7 +1017,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "Accurate द्वारा प्राप्त की गई जानकारी और किसी भी रिपोर्ट में शामिल विभिन्न साधनों के माध्यम से प्राप्त की जा सकती है, जिसमें कानूनी रूप से उपलब्ध दस्तावेजों और सूचनाओं का निरीक्षण और/या पूर्व नियोक्ताओं, स्कूलों, वित्तीय संस्थानों, जमींदारों, सार्वजनिक एजेंसियों के साथ प्रत्यक्ष या अप्रत्यक्ष संपर्क और साक्षात्कार शामिल हैं और अन्य जैसे मेरे पड़ोसी, दोस्त और सहयोगी जिनके साथ मैं परिचित हूं और जिनके पास ऐसा ज्ञान हो सकता है.",
+      "value" : "Accurate द्वारा प्राप्त की गई जानकारी और किसी भी रिपोर्ट में शामिल विभिन्न साधनों के माध्यम से प्राप्त की जा सकती है, जिसमें कानूनी रूप से उपलब्ध दस्तावेजों और सूचनाओं का निरीक्षण और/या पूर्व नियोक्ताओं, स्कूलों, वित्तीय संस्थानों, जमींदारों, सार्वजनिक एजेंसियों के साथ प्रत्यक्ष या अप्रत्यक्ष संपर्क और साक्षात्कार शामिल हैं और अन्य जैसे मेरे पड़ोसी, दोस्त और एसोसिएट जिनके साथ मैं परिचित हूं और जिनके पास ऐसा ज्ञान हो सकता है.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
@@ -1009,7 +1025,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "कैलिफोर्निया सिविल कोड के अनुसार § 1785 et seq. और § 1786 et seq., अगर Amazon द्वारा मेरे बारे में किसी भी रिपोर्ट का अनुरोध किया जाता है, तो मैं Accurate के नियमित कार्यालय घंटों के दौरान उसके द्वारा मेरे ऊपर बनाई रखने वाली फ़ाइल देख सकता/सकती हूं. मैं समझता/समझती हूं कि मैं भी (1) प्रमाणित मेल द्वारा या अपनी नियोजित उपस्थिति की उचित अग्रिम सूचना प्रदान करने के बाद Accurate के नियमित कार्यालय घंटों के दौरान व्यक्तिगत रूप से इसके कार्यालयों में उपस्थित होकर उचित पहचान जमा करने और कॉपी करने की लागत का भुगतान करने पर इस फ़ाइल की एक प्रति प्राप्त कर सकता/सकती हूं; और (2) टेलीफ़ोन प्रकटीकरण के लिए Accurate को उचित पहचान और लिखित अनुरोध सबमिट करके अपने खर्च पर टेलीफ़ोन पर Accurate से इस फ़ाइल का सारांश प्राप्त कर सकता/सकती हूं. मैं समझता/समझती हूं कि मुझे मेरी फ़ाइल समझाने, जिसमें कोडित जानकारी शामिल है, के लिए Accurate के पास प्रशिक्षित कर्मी उपलब्ध हैं और अगर मैं Accurate के कार्यालयों में व्यक्तिगत रूप से जाता/जाती हूं, तो मैं एक अन्य व्यक्ति को साथ ले जा सकता/सकती हूं, बशर्ते वह व्यक्ति Accurate को उचित पहचान प्रस्तुत करता हो.",
+      "value" : "कैलिफोर्निया सिविल कोड के अनुसार § 1785 et seq. और § 1786 et seq., अगर Amazon द्वारा मेरे बारे में किसी भी रिपोर्ट का अनुरोध किया जाता है, तो मैं Accurate के नियमित कार्यालय घंटों के दौरान उसके द्वारा मेरे ऊपर बनाई रखने वाली फ़ाइल देख सकता/सकती हूं. मैं समझता/समझती हूं कि मैं भी (1) प्रमाणित मेल द्वारा या अपनी प्लान की गई उपस्थिति की उचित अग्रिम नोटिस प्रदान करने के बाद Accurate के नियमित कार्यालय घंटों के दौरान व्यक्तिगत रूप से इसके कार्यालयों में उपस्थित होकर उचित पहचान सबमिट करने और कॉपी करने की लागत का भुगतान करने पर इस फ़ाइल की एक प्रति प्राप्त कर सकता/सकती हूं; और (2) टेलीफ़ोन प्रकटीकरण के लिए Accurate को उचित पहचान और लिखित अनुरोध सबमिट करके अपने खर्च पर टेलीफ़ोन पर Accurate से इस फ़ाइल का सारांश प्राप्त कर सकता/सकती हूं. मैं समझता/समझती हूं कि मुझे मेरी फ़ाइल समझाने, जिसमें कोडित जानकारी शामिल है, के लिए Accurate के पास प्रशिक्षित कर्मी उपलब्ध हैं और अगर मैं Accurate के कार्यालयों में व्यक्तिगत रूप से जाता/जाती हूं, तो मैं एक अन्य व्यक्ति को साथ ले जा सकता/सकती हूं, बशर्ते वह व्यक्ति Accurate को उचित पहचान प्रस्तुत करता हो.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
@@ -1017,7 +1033,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
-      "value" : "First Advantage",
+      "value" : "फर्स्ट एडवांटेज",
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
@@ -1041,11 +1057,11 @@
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "जहां तक फर्स्ट एडवांटेज से एक रिपोर्ट का अनुरोध करने का सवाल है, इस तरह की रिपोर्ट में निहित जानकारी का इस्तेमाल केवल रोजगार के लिए मेरी योग्यता निर्धारित करने के लिए किया जाएगा.",
+      "value" : "जहां तक फर्स्ट एडवांटेज से एक रिपोर्ट का अनुरोध करने का सवाल है, इस तरह की रिपोर्ट में निहित जानकारी का इस्तेमाल सिर्फ़ रोजगार के लिए मेरी योग्यता निर्धारित करने के लिए किया जाएगा.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "फर्स्ट एडवांटेज द्वारा प्राप्त और किसी भी रिपोर्ट में शामिल जानकारी विभिन्न साधनों के माध्यम से प्राप्त की जा सकती है, जिसमें कानूनी रूप से उपलब्ध दस्तावेज़ों और सूचनाओं का निरीक्षण और/या पूर्व नियोक्ताओं, स्कूलों, वित्तीय संस्थानों, जमींदारों, सार्वजनिक एजेंसियों के साथ प्रत्यक्ष या अप्रत्यक्ष संपर्क और साक्षात्कार और अन्य जैसे कि मेरे पड़ोसी, दोस्त, और सहयोगी जिनके साथ मैं परिचित हूं और जिनके पास ऐसा ज्ञान हो सकता है, शामिल हैं.",
+      "value" : "फर्स्ट एडवांटेज द्वारा प्राप्त और किसी भी रिपोर्ट में शामिल जानकारी विभिन्न साधनों के माध्यम से प्राप्त की जा सकती है, जिसमें कानूनी रूप से उपलब्ध दस्तावेज़ों और सूचनाओं का निरीक्षण और/या पूर्व नियोक्ताओं, स्कूलों, वित्तीय संस्थानों, जमींदारों, सार्वजनिक एजेंसियों के साथ प्रत्यक्ष या अप्रत्यक्ष संपर्क और साक्षात्कार और अन्य जैसे कि मेरे पड़ोसी, दोस्त और सहयोगी जिनके साथ मैं परिचित हूं और जिनके पास ऐसा ज्ञान हो सकता है, शामिल हैं.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
@@ -1053,7 +1069,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "कैलिफ़ोर्निया सिविल कोड के अनुसार § 1785 et seq. और § 1786 et seq, अगर Amazon द्वारा मुझ पर किसी भी रिपोर्ट का अनुरोध किया जाता है, तो मैं उस फ़ाइल को देख सकता/सकती हूं जो फर्स्ट एडवांटेज अपने नियमित कार्यालय समय के दौरान मुझ पर बनाता है. मैं समझता/समझती हूं कि मैं भी (1) इस फ़ाइल की एक प्रति प्राप्त कर सकता/सकती हूं, उचित पहचान जमा करने और कॉपी करने की लागत का भुगतान करने पर, प्रमाणित मेल द्वारा या अपने नियोजित उपस्थिति की उचित अग्रिम सूचना प्रदान करने के बाद अपने नियमित कार्यालय घंटों के दौरान व्यक्तिगत रूप से सटीक के कार्यालयों में उपस्थित होने पर; और (2) टेलीफोन पर सटीक से इस फ़ाइल का सारांश, मेरे खर्च पर, उचित पहचान और टेलीफोन प्रकटीकरण के लिए सटीक के लिए एक लिखित अनुरोध सबमिट करने पर प्राप्त करते हैं. मैं समझता/समझती हूं कि फर्स्ट एडवांटेज ने किसी भी कोडित जानकारी सहित मुझे अपनी फ़ाइल समझाने के लिए उपलब्ध कर्मियों को प्रशिक्षित किया है और अगर मैं फर्स्ट एडवांटेज के कार्यालयों में व्यक्तिगत रूप से दिखाई देता/देती हूं, तो मैं एक अन्य व्यक्ति के साथ हो सकता/सकती हूं, जब तक कि वह व्यक्ति फर्स्ट एडवांटेज के लिए उचित पहचान प्रस्तुत करता है.",
+      "value" : "कैलिफ़ोर्निया सिविल कोड के अनुसार § 1785 et seq. और § 1786 et seq, अगर Amazon द्वारा मुझ पर किसी भी रिपोर्ट का अनुरोध किया जाता है, तो मैं उस फ़ाइल को देख सकता/सकती हूं जो फर्स्ट एडवांटेज अपने नियमित कार्यालय समय के दौरान मुझ पर बनाता है. मैं समझता/समझती हूं कि मैं भी (1) इस फ़ाइल की एक कॉपी प्राप्त कर सकता/सकती हूं, उचित पहचान जमा करने और कॉपी करने की लागत का भुगतान करने पर, प्रमाणित मेल द्वारा या अपने नियोजित उपस्थिति की उचित अग्रिम सूचना प्रदान करने के बाद अपने नियमित कार्यालय घंटों के दौरान व्यक्तिगत रूप से सटीक के कार्यालयों में उपस्थित होने पर; और (2) टेलीफ़ोन पर सटीक से इस फ़ाइल का सारांश, मेरे खर्च पर, उचित पहचान और टेलीफ़ोन प्रकटीकरण के लिए सटीक के लिए एक लिखित अनुरोध सबमिट करने पर प्राप्त करते हैं. मैं समझता/समझती हूं कि फर्स्ट एडवांटेज ने किसी भी कोडेड जानकारी सहित मुझे अपनी फ़ाइल समझाने के लिए उपलब्ध कर्मियों को प्रशिक्षित किया है और अगर मैं फर्स्ट एडवांटेज के कार्यालयों में व्यक्तिगत रूप से दिखाई देता/देती हूं, तो मैं एक अन्य व्यक्ति के साथ हो सकता/सकती हूं, जब तक कि वह व्यक्ति फर्स्ट एडवांटेज के लिए उचित पहचान प्रस्तुत करता है.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1061,7 +1077,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "मैं प्रमाणित करता/करती हूं कि मैंने इस दस्तावेज़ को पढ़ा है और मैं इसे समझता/समझती हूं और यह कि इस CALIFORNIA DISCLOSURE INVISTRATIVE CONSUMER REPORTS के अनुसार मैं Amazon को मेरे बारे में एक खोजी उपभोक्ता रिपोर्ट प्राप्त करने के लिए अधिकृत करता/करती हूं.",
+      "value" : "मैं प्रमाणित करता/करती हूं कि मैंने यह दस्तावेज़ पढ़ा है और मैं इसे समझता/समझती हूं और यह कि इस कैलिफ़ोर्निया प्रकटीकरण खोजी उपभोक्ता रिपोर्ट के अनुसार मैं Amazon को मेरे बारे में एक खोजी उपभोक्ता रिपोर्ट प्राप्त करने के लिए अधिकृत करता/करती हूं.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1069,7 +1085,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "आप लगभग पहुंच चूकें हैं, {firstname} {lastname}! अगर लागू हो, तो हमे चाहते हैं कि आप बैज फ़ोटो, पूर्ण कार्य प्राधिकरण और एक ड्रग परीक्षण के लिए आएं.",
+      "value" : "बस लगभग हो गया, {firstname}{lastname}! अगर लागू हो, तो हमे चाहते हैं कि आप बैज फ़ोटो, पूर्ण कार्य प्राधिकरण और एक ड्रग परीक्षण के लिए आएं.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1085,7 +1101,7 @@
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "वयोवृद्ध स्थिति की स्वैच्छिक स्व-पहचान",
+      "value" : "वेटरन स्टेटस की स्वैच्छिक स्व-पहचान",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
@@ -1093,31 +1109,31 @@
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
-      "value" : "आपकी रुचि के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब देने में असमर्थ हैं.",
+      "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "आपके द्वारा दी गई जानकारी हमारी आवश्यकताओं को पूरा नहीं करती है. हम आपको amazon जॉब्स पर नौकरियां देखने के लिए प्रोत्साहित करते हैं.",
+      "value" : "आपके द्वारा प्रदान की गई जानकारी हमारी जरूरतों को पूरा नहीं करती है. हम आपको amazon.jobs पर जॉब्स देखने के लिए प्रोत्साहित करते हैं.",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "डैशबोर्ड पर लौटें",
+      "value" : "डैशबोर्ड पर वापस जाएं",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
-      "value" : "{name}, Amazon के साथ आपकी रुचि हमारे लिए बहुत मायने रखती है.",
+      "value" : "{name}, Amazon में आपकी दिलचस्पी हमारे लिए बहुत मायने रखती है.",
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "हमें इस पद के लिए विचार करने का अवसर देने के लिए बहुत-बहुत धन्यवाद. अफसोस की बात है कि हम इस समय आपकी उम्मीदवारी के साथ आगे नहीं बढ़ेंगे.",
+      "value" : "हमें इस पद के लिए आपकी उम्मीदवारी पर विचार करने का अवसर देने के लिए बहुत-बहुत धन्यवाद. अफसोस की बात है कि हम इस समय आपकी उम्मीदवारी के साथ आगे नहीं बढ़ेंगे.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "इस भूमिका के लिए किसी अन्य समय पर पुनर्विचार करने के लिए, आप तीन महीने में फिर से असेसमेंट ले सकते हैं.",
+      "value" : "इस भूमिका के लिए किसी अन्य समय पर पुनर्विचार करवाने के लिए, आप तीन महीने में फिर से असेसमेंट ले सकते हैं.",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "डैशबोर्ड पर लौटें",
+      "value" : "डैशबोर्ड पर वापस जाएं",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
@@ -1125,11 +1141,11 @@
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "हम Amazon में शामिल होने के लिए आपकी रुचि में बहुत उत्साहित हैं!",
+      "value" : "हम Amazon में शामिल होने के लिए आपकी दिलचस्पी से बहुत उत्साहित हैं!",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "यह मूल्यांकन आपको सहयोगी भूमिका को समझने में मदद करेगा और हमें आपको जानने में मदद करेगा.",
+      "value" : "यह असेसमेंट आपको सहयोगी की भूमिका को समझने में मदद करेगा और हमें आपको जानने में मदद करेगा.",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
@@ -1137,15 +1153,15 @@
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazon में, हम अपने कार्यबल की विविधता और हमारे द्वारा काम करने के विभिन्न तरीकों का जश्न मनाते हैं. अगर आपको विकलांगता है और मूल्यांकन सहित हायरिंग प्रक्रिया के दौरान आवास की ज़रूरत है, तो कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon आवास पर जाएं.</a>",
+      "value" : "Amazon में, हम अपने कार्यबल की विविधता और हमारे द्वारा काम करने के विभिन्न तरीकों का जश्न मनाते हैं. अगर आपको विकलांगता है और असेसमेंट सहित हायरिंग प्रक्रिया के दौरान आवास की ज़रूरत है, तो कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon आवास पर विज़िट करें.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>असेसमेंट का कोई भी हिस्सा समयबद्ध नहीं है</b> – आप अपनी गति से काम कर सकते हैं. इस असेसमेंट के सभी अनुभाग:",
+      "value" : "<b>असेसमेंट का कोई भी हिस्सा समयबद्ध नहीं है</b> – आप अपनी गति से काम कर सकते हैं. इस असेसमेंट के सभी सेक्शन:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "निम्नलिखित स्क्रीन रीडर के लिए अनुकूलित हैं: Firefox, Chrome और Edge (विंडो) पर वॉयसओवर (Mac) और NVDA (विंडो).",
+      "value" : "निम्नलिखित स्क्रीन रीडर के लिए अनुकूलित हैं: Firefox, Chrome और Edge (Windows) पर VoiceOver (Mac) और NVDA (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1169,7 +1185,7 @@
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
-      "value" : "बैकग्राउंड चेक",
+      "value" : "बैकग्राउंड जांच",
       "note" : "Text for the job details section background check text"
     },
     "BB-ReviewSubmit-job-details-section-authorized-text" : {
@@ -1177,7 +1193,7 @@
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "बैकग्राउंड चेक की मुफ़्त कॉपी भेजें",
+      "value" : "बैकग्राउंड जांच की मुफ़्त कॉपी भेजें",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
@@ -1189,7 +1205,7 @@
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
-      "value" : "जन्म की तारीख:",
+      "value" : "जन्म की तिथि:",
       "note" : "Text for the job details section date of birth text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
@@ -1201,7 +1217,7 @@
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "हम आपको ऊपर दिए गए समय में देखने के लिए उत्सुक हैं.",
+      "value" : "हम आपको ऊपर दिए गए समय पर मिलने के लिए उत्सुक हैं.",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
@@ -1213,11 +1229,11 @@
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "वयोवृद्ध स्थिति:",
+      "value" : "वेटरन स्थिति:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
-      "value" : "विकलांगता की स्थिति:",
+      "value" : "विकलांगता स्थिति:",
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
@@ -1229,7 +1245,7 @@
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "हम आपको देखने के लिए उत्सुक हैं. यहां आपके अगले चरण दिए गए हैं:",
+      "value" : "हम आपसे मिलने के लिए उत्सुक हैं. यहां आपके अगले चरण दिए गए हैं:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
@@ -1249,7 +1265,7 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "प्री-हायर एक्टिविटी पर शुरू करें",
+      "value" : "प्री-हायर गतिविधियों पर जा कर शुरुआत करें",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
@@ -1265,7 +1281,7 @@
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "{startTime} - {endTime} के बीच में कभी भी 30 मिनट के सत्र के लिए हमसे मिलें.",
+      "value" : "{startTime} - {endTime} के बीच में कभी भी 30 मिनट के सेशन के लिए हमसे मिलें.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
@@ -1277,15 +1293,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "मूल अनपेक्षित फ़ोटो ID",
+      "value" : "असली फ़ोटो ID जिसकी समय सीमा समाप्त नहीं हुई हो",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "मूल असमाप्त कार्य प्राधिकरण दस्तावेज़",
+      "value" : "असली समय सीमा समाप्त नहीं हुआ कार्य प्राधिकरण दस्तावेज़",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "स्वीकार्य दस्तावेजों की पूरी सूची के लिए<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>यहां</a> क्लिक करें.",
+      "value" : "स्वीकार करने योग्य दस्तावेजों की पूरी सूची के लिए <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>यहां</a> क्लिक करें.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
@@ -1293,15 +1309,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "अगर आपको हायरिंग ईवेंट के लिए ASL दुभाषिया जैसे किसी भी आवास की ज़रूरत है, तो कृपया <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> पर जाएं और दुभाषिया का अनुरोध करने के लिए हमारे साथ चैट करें. कृपया अपनी अपॉइंटमेंट निर्धारित करने के तुरंत बाद हमसे संपर्क करें. हमें व्यवस्था करने के लिए आपकी अपॉइंटमेंट से पहले कम से कम 48 घंटे की ज़रूरत है.",
+      "value" : "अगर आपको हायरिंग ईवेंट के लिए किसी भी आवास जैसे कि ASL दुभाषिया की ज़रूरत है, तो कृपया <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> पर जाएं और दुभाषिया का अनुरोध करने के लिए हमारे साथ चैट करें. कृपया अपनी अपॉइंटमेंट निर्धारित करने के तुरंत बाद हमसे संपर्क करें. हमें व्यवस्था करने के लिए आपकी अपॉइंटमेंट से पहले कम से कम 48 घंटों की ज़रूरत है.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "कृपया अपना रेफ़रर लॉगिन ID (सिर्फ़ लोअर केस अक्षर) प्रदान करें",
+      "value" : "कृपया अपनी रेफ़रर लॉगिन ID (केवल लोअर केस अक्षर) प्रदान करें",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "कृपया अपना रेफ़रर लॉगिन ID प्रदान करें.",
+      "value" : "कृपया अपनी रेफ़रर लॉगिन ID प्रदान करें.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
@@ -1313,8 +1329,712 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT परीक्षण संघीय और राज्य कर क्रेडिट कार्यक्रमों में भाग लेता है. आपके द्वारा दी गई जानकारी का इस्तेमाल इन कार्यक्रमों के लिए कंपनी की योग्यता निर्धारित करने के लिए किया जाएगा और किसी भी तरह से किसी भी हायरिंग, प्रतिधारण या प्रमोशन के फैसले को नकारात्मक रूप से प्रभावित नहीं करेगा.",
+      "value" : "Amazon IAT परीक्षण संघीय और राज्य कर क्रेडिट कार्यक्रमों में भाग लेता है. आपके द्वारा दी गई जानकारी का इस्तेमाल इन कार्यक्रमों के लिए कंपनी की योग्यता निर्धारित करने के लिए किया जाएगा और किसी भी तरह से किसी भी हायरिंग, प्रतिधारण या प्रमोशन के फैसलों को नकारात्मक रूप से प्रभावित नहीं करेगा.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "संभावित प्रारंभ तिथि:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(या इससे पहले!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/घंटा",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "घंटे/हफ़्ते",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "बोनस:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "आपके द्वारा प्रदान की गई जानकारी हमारी जरूरतों को पूरा नहीं करती है. हम आपको amazon.jobs पर अन्य जॉब्स देखने के लिए प्रोत्साहित करते हैं.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "क्षमा करें, आपने पहले ही इस जॉब के लिए आवेदन कर दिया है!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "ज़रूरी फ़ील्ड गायब हैं.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "इस सर्वर के साथ कुछ गड़बड़ी हो गई. कृपया फिर से कोशिश करें या ब्राउज़र को रीफ़्रेश करें.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "उम्मीदवार निष्क्रिय है. उम्मीदवार के लिए आवेदन नहीं बना सकते हैं.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "उम्मीदवार नहीं मिला.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "आवेदन अपडेट नहीं की जा सकती है क्योंकि और हाल के अपडेट मौजूद हैं.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "आवेदन बनाने में असमर्थ हैं.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "आवेदन Id अनुरोध पथ में Id से मेल नहीं खाती है.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "आवेदन नहीं खोज सके.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "ज़रूरी फ़ील्ड गायब हैं: आवेदन Id.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "आवेदन अपडेट नहीं की जा सकती है क्योंकि और हाल के अपडेट मौजूद हैं.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "इस सर्वर के साथ कुछ गड़बड़ी हो गई. कृपया फिर से कोशिश करें या ब्राउज़र को रीफ़्रेश करें.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "आप यह आवेदन एक्सेस नहीं कर सकते हैं.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "कृपया स्वीकृति पर हस्ताक्षर करें.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "कृपया fcra अनुरोध पर हस्ताक्षर करें.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "कृपया स्वीकृति पर हस्ताक्षर करें.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "कृपया राज्य के नोटिस पर हस्ताक्षर करें.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "आपके द्वारा चुना गया शेड्यूल अब उपलब्ध नहीं है, कृपया एक और शेड्यूल चुनें.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "ई-हस्ताक्षर मेल नहीं खाते. कृपया हर ई-हस्ताक्षर के लिए एक ही जैसे टेक्स्ट का इस्तेमाल करें.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "आवेदन में अपडेट विफल रहा क्योंकि आप अपनी राष्ट्रीय ID में अधिकतम बदलावों तक पहुंच गए हैं. अगर आपने पहले एक अलग ईमेल पते के साथ साइन अप किया है, तो कृपया लॉग आउट करें और उस ईमेल के साथ लॉग इन करने की कोशिश करें, अगर ज़रूरी हो तो \"अपना व्यक्तिगत पिन भूल गए हैं?\" लिंक का इस्तेमाल करें. अगर आपको मदद की ज़रूरत है, तो कृपया ईमेल के माध्यम से हमसे संपर्क करें या <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> पर चैट करें.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "आवेदन में अपडेट विफल रहा क्योंकि दी गई राष्ट्रीय पहचान संख्या अमान्य है. कृपया आगे बढ़ने से पहले सही और पूर्ण राष्ट्रीय पहचान नंबर एंटर करें.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "अनुरोध का प्रकार गायब है.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "अनुरोध के साथ टाइप मेल नहीं खाया है.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "पेलोड में जन्म की तिथि गायब है.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "कृपया मान्य तिथि प्रदान करें.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "अनुरोध में आवेदन Id गायब है.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "अनुरोध में सरकारी Id गायब है.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "अनुरोध में Id नंबर गायब है.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "‘सात साल के अंदर आपराधिक रिकॉर्ड है' अनुरोध से गायब है.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "पता ऑब्जेक्ट में पता पंक्ति 1 गायब है.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "पता ऑब्जेक्ट में शहर गायब है.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "पता ऑब्जेक्ट में राज्य गायब है.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "पता ऑब्जेक्ट में ज़िप/पोस्टल कोड गायब है.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "पता ऑब्जेक्ट में देश गायब है.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "कृपया पहले इस्तेमाल किया गया पूरा लीगल नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "अतिरिक्त बैकग्राउंड जानकारी मान्य नहीं है, कृपया सभी ज़रूरी फ़ील्ड अपडेट करें.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "अनुरोध में nheअपॉइंटमेंट गायब है.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "अनुरोध में रेफ़रल जानकारी गायब है.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "पेलोड में जातीयता गायब है.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "पेलोड में लिंग गायब है.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "पेलोड में सैन्य पति/पत्नी की जानकारी गायब है.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "पेलोड में संरक्षित वेटरन जानकारी गायब है.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "पेलोड में वेटरन जानकारी गायब है.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "पेलोड में विकलांगता गायब है.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "‘BGC कैलिफ़ोर्निया प्रकटीकरण स्वीकार किया गया है’ पेलोड से गायब है.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "आपके द्वारा एंटर किया SSN या राष्ट्रीय पहचान संख्या पहले से ही हमारे सिस्टम में किसी अन्य ईमेल पते से जुड़ी हुई है. अगर आपने पहले एक अलग ईमेल पते के साथ साइन अप किया है, तो कृपया [लॉग आउट करें] (/ऐप्लिकेशन/लॉगआउट) और उस ईमेल के साथ लॉग इन करने की कोशिश करें, अगर ज़रूरी हो तो \"अपना व्यक्तिगत PIN भूल गए हैं?\" लिंक का इस्तेमाल करें. अगर आपको मदद की ज़रूरत है, तो कृपया ईमेल के माध्यम से हमसे संपर्क करें या <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp </a> पर चैट करें.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "जॉब दिखाने में असमर्थ हैं.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "जॉब्स दिखाने के दौरान कुछ गलत हुआ है! कृपया पेज रीफ़्रेश करें या बाद में फिर से कोशिश करें.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "इस समय जॉब्स को फिर से प्राप्त करने में विफल हुए. कृपया कुछ देर बाद फिर से कोशिश करें.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "सभी शिफ्ट भर गई हैं.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "सभी शिफ्ट भर गई हैं.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "हेड काउंट अनुरोध प्राप्त करने में असमर्थ हैं.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "सभी शिफ्ट भर गई हैं.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "कोई गड़बड़ी हुई! कृपया पेज रीफ़्रेश करें या बाद में फिर से कोशिश करें.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "जॉब्स दिखाने के दौरान कुछ गलत हुआ है! कृपया पेज रीफ़्रेश करें या बाद में फिर से कोशिश करें.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "शिफ्ट प्राथमिकता लाने में असमर्थ हैं.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "इस समय जॉब्स को पुनः प्राप्त करने में विफल हुए. कृपया कुछ देर बाद फिर से कोशिश करें.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "उम्मीदवार पाने में विफल हुए.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "आप यह आवेदन एक्सेस नहीं कर सकते हैं.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "आवेदन बनाने में असमर्थ हैं.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "आप आवेदन नहीं बना सकते हैं.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "आवेदन डेटा प्राप्त करने के लिए आवेदन Id की ज़रूरत होती है.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "आप यह आवेदन एक्सेस नहीं कर सकते हैं.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "यह आवेदन पाने में असमर्थ हैं.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "इस सर्वर के साथ कुछ गड़बड़ी हो गई. कृपया फिर से कोशिश करें या ब्राउज़र को रीफ़्रेश करें.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "वर्कफ़्लो गड़बड़ी",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "साथ ही आवेदन वर्कफ़्लो विफल रहा.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "आपके द्वारा प्रदान की गई जानकारी हमारी जरूरतों को पूरा नहीं करती है. हम आपको amazon.jobs पर अन्य जॉब्स देखने के लिए प्रोत्साहित करते हैं.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "आपके द्वारा प्रदान की गई जानकारी हमारी जरूरतों को पूरा नहीं करती है. हम आपको amazon.jobs पर अन्य जॉब्स देखने के लिए प्रोत्साहित करते हैं.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "आपके द्वारा प्रदान की गई जानकारी हमारी जरूरतों को पूरा नहीं करती है. हम आपको amazon.jobs पर अन्य जॉब्स देखने के लिए प्रोत्साहित करते हैं.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "आपकी जॉब की पोज़ीशन के आरक्षण की समय सीमा समाप्त हो गई है.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "हम उम्मीदवारों को अपना आवेदन पूरा करने के लिए तीन घंटे तक की अनुमति देते हैं. दुर्भाग्य से, आप जिस जॉब पोज़ीशन के लिए आवेदन कर रहे थे, वह तीन घंटे की सीमा पार कर गई. कृपया उपलब्ध जॉब के अवसर एक्स्प्लोर करें.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "जॉब के अवसर देखें",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "अभी इस जॉब के लिए कोई अपॉइंटमेंट उपलब्ध नहीं है.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "आप यह कर सकते हैं:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. नौकरी का एक अलग अवसर चुनें",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "यहां क्लिक करें",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. बाद की प्रारंभ तिथि के साथ एक शिफ्ट चुनें (सुझाया गया)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "अन्य शिफ्ट देखें",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- अलबामा",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- अलास्का",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- एरिज़ोना",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- अर्कांसस",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- कैलिफोर्निया",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- कोलोराडो",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- कनेक्टिकट",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- डेलावेयर",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- डिस्ट्रिक्ट ऑफ़ कोलंबिया",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- फ़्लोरिडा",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- जॉर्जिया",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- हवाई",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- इडाहो",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- इलिनोइस",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- इंडियाना",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- आयोवा",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- कंसास",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- केंटकी",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- लुइसियाना",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- मेन",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- मैरीलैंड",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- मैसाचुसेट्स",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- मिशिगन",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- मिनेसोटा",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- मिसिसिपी",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- मिसौरी",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- मोंटाना",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- नेब्रास्का",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- नेवादा",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- न्यू हैम्पशायर",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- न्यू जर्सी",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- न्यू मैक्सिको",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- न्यूयॉर्क",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- नॉर्थ कैरोलिना",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- नॉर्थ डकोटा",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- ओहायो",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- ओक्लाहोमा",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- ओरेगन",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- पेंसिल्वेनिया",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- रोड आइलैंड",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- साउथ कैरोलिना",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- साउथ डकोटा",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- टेनेसी",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- टेक्सस",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- यूटा",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- वरमोंट",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- वर्जीनिया",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA — वॉशिंगटन",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI -- Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV -- पश्चिमी वर्जीनिया",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY — वायोमिंग",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "WOTC अपडेट करने में विफल हुए.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "आपके द्वारा चुना गया शेड्यूल अब उपलब्ध नहीं है. कृपया एक अलग विकल्प चुनें.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "आपको हाल ही में इस आवेदन के लिए नौकरी पर रखा गया है, आपकी शिफ्ट को बदला नहीं जा सकता है. अपनी शिफ्ट बदलने के लिए कृपया https://www.amazondelivers.jobs/contactus पर जाएं.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "आवेदन अपडेट करने में विफल रहे.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "अतिरिक्त बैकग्राउंड की जानकारी",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} पोज़ीशन में आपकी दिलचस्पी के लिए धन्यवाद. हमारे रिकॉर्ड बताते हैं कि आपने पहले Amazon में काम किया था.  इस समय, आप अपने रोजगार रिकॉर्ड के आधार पर सीज़नल Amazon Associate या तृतीय-पक्ष एजेंसी कर्मचारी के रूप में फिर से काम करने के लिए योग्य हैं. परिणामस्वरूप, हम इस नौकरी के लिए आपकी उम्मीदवारी के साथ आगे बढ़ने में असमर्थ हैं. अगर आपके पास योग्यता के बारे में कोई सवाल हैं, तो कार्य स्थल HR टीम से संपर्क करें.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "इस पोज़ीशन में आपकी दिलचस्पी के लिए धन्यवाद. हमारे रिकॉर्ड बताते हैं कि आपने पहले Amazon में काम किया था.  इस समय, आप अपने रोजगार रिकॉर्ड के आधार पर सीज़नल Amazon Associate या तृतीय-पक्ष एजेंसी कर्मचारी के रूप में फिर से काम करने के लिए योग्य हैं. परिणामस्वरूप, हम इस नौकरी के लिए आपकी उम्मीदवारी के साथ आगे बढ़ने में असमर्थ हैं. अगर आपके पास योग्यता के बारे में कोई सवाल हैं, तो कार्य स्थल HR टीम से संपर्क करें.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "अपने क्षेत्र में सीज़नल अवसरों का पता लगाने के लिए कृपया हमारे सीज़नल पेज पर जाएं.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Amazon पर आपकी हाल ही में जॉब आवेदन के लिए धन्यवाद. सावधानीपूर्वक विचार करने के बाद, हम आपके जॉब के आवेदन के साथ आगे नहीं बढ़ेंगे.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "हम आपके समय को महत्व देते हैं और आपको भविष्य में शुभकामनाएं देते हैं.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "हम आपकी हाल की जॉब आवेदन की सराहना करते हैं! दुर्भाग्य से, आप इस विशेष पोज़ीशन के लिए योग्य नहीं हैं क्योंकि आप पहले से ही Amazon द्वारा नियोजित हैं.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "खुशखबरी? बहुत सारे खुले अवसर हैं जिन्हें आप ब्राउज़ कर सकते हैं और ऑनलाइन आवेदन कर सकते हैं. यहां कुछ तरीके दिए गए हैं जिनसे आप अपने भविष्य के करियर को एक्स्प्लोर कर सकते हैं:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "एजेंसी या सीज़नल रूपांतरणों के लिए, amazon.com/conversions (http://amazon.com/conversions) पर विज़िट करें.",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "शिफ्ट या लोकेशन बदलावों का अनुरोध करने के लिए अपनी ऑनसाइट टीम से संपर्क करें.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "आपकी स्थानीय HR टीम या कर्मचारी संसाधन केंद्र (ERC) किसी भी सवाल के लिए सबसे अच्छे संसाधन हैं. आप ERC टीम 1-888-892-7180 (टेलीफ़ोन:18888927180) तक 24/7 पर पहुंच सकते हैं.",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Amazon में अद्भुत टीम का हिस्सा बनने के लिए धन्यवाद! हम लगातार आपको सर्वोत्तम संभव कर्मचारी संसाधन, फ़ायदों, वेतन और फ़्लेक्सिबल शेड्यूल प्रदान करने की कोशिश कर रहे हैं - सभी धरती के सबसे बढ़िया नियोक्ता बनने की हमारी कोशिशों का समर्थन करते हैं!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} पोज़ीशन में आपकी दिलचस्पी के लिए धन्यवाद. हमारे रिकॉर्ड बताते हैं कि आपने पहले Amazon पर काम किया था और आपके पिछले Amazon रोजगार रिकॉर्ड के आधार पर फिर से काम करने के लिए योग्य नहीं हैं. परिणामस्वरूप, हम इस समय आपकी उम्मीदवारी के साथ आगे बढ़ने में असमर्थ हैं.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "इस पोज़ीशन में आपकी दिलचस्पी के लिए धन्यवाद. हमारे रिकॉर्ड बताते हैं कि आपने पहले Amazon पर काम किया था और आपके पिछले Amazon रोजगार रिकॉर्ड के आधार पर फिर से काम करने के लिए योग्य नहीं हैं. परिणामस्वरूप, हम इस समय आपकी उम्मीदवारी के साथ आगे बढ़ने में असमर्थ हैं.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "समाप्ति के कारण, आप Amazon पर अपने आखिरी दिन काम करने के 90 दिन बाद फिर से आवेदन कर सकते हैं.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "मौजूदा सभी शिफ्ट भर दी गई हैं.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "कृपया अन्य जॉब्स के लिए आवेदन करने के लिए डैशबोर्ड पर वापस जाएं.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "आवेदन गड़बड़ी",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "कुछ गलत हुआ, कृपया डैशबोर्ड पर जाएं",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
+      "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "संयुक्त राज्य अमेरिका - सामाजिक सुरक्षा नंबर",
@@ -1325,20 +2045,24 @@
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "नहीं, मुझे कोई विकलांगता नहीं है",
+      "value" : "नहीं, मुझे विकलांगता नहीं है",
       "note" : "Text for the reverse mapping candidate disability no"
     },
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
-      "value" : "मैं जवाब नहीं देना चाहता/चाहती हूं",
+      "value" : "मैं जवाब नहीं देना चाहता/चाहती",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     },
     "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
-      "value" : "अमेरिकन भारतीय/अलास्का मूल निवासी",
+      "value" : "अमेरिकी भारतीय/अलास्का मूल निवासी",
       "note" : "Text for the reverse mapping candidate ethnicity american indian"
     },
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "ब्लैक/अफ्रीकन अमेरिकन",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Websocket सर्वर के साथ कुछ गलत हो गया. कृपया फिर से कोशिश करें या ब्राउज़र को रीफ़्रेश करें.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

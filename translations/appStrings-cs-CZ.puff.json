@@ -1,15 +1,15 @@
 {
   "resources" : {
     "BB-PreConsentPage-banner-journey-starts" : {
-      "value" : "Vaše cesta k tomu, abyste se stali Amazon Associate, začíná zde.",
+      "value" : "Vaše cesta k tomu, abyste se stali zaměstnancem firmy Amazon, začíná zde.",
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "Zpět na řídicí panel pracovních míst",
+      "value" : "Zpět na řídicí panel pracovních pozic",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
-      "value" : "Zobrazit pracovní místa",
+      "value" : "Zobrazit pracovní pozice",
       "note" : "Text for the link to go back to job opportunity index"
     },
     "BB-JobOpportunity-back-to-jobConfirmation-link" : {
@@ -17,7 +17,7 @@
       "note" : "Text for the link to go back to job confirmation page"
     },
     "BB-JobOpportunity-go-to-jobDescription-link" : {
-      "value" : "Požadavky na pracovní místo a výhody",
+      "value" : "Požadavky na pracovní pozici a výhody",
       "note" : "Text for the link to go to job description page"
     },
     "BB-JobOpportunity-filter-button" : {
@@ -77,7 +77,7 @@
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "Kromě pozice, o kterou jste se dnes ucházeli, můžeme mít i další pozice, které vyžadují stejné nebo podobné pracovní funkce. Může se jednat o pozice na plný, zkrácený, částečný, sezónní a/nebo dočasný úvazek, které jsou k dispozici v této lokalitě nebo v jiných blízkých pobočkách společnosti Amazon. Nejste povinni přijmout jakoukoli pozici u společnosti Amazon nebo našich partnerů, nicméně vyplněním žádosti souhlasíte s tím, že budete zvažováni pro hodinové pozice stejné úrovně v okruhu 48 km (30 mil) od místa, kde jste požádali o práci. To zahrnuje sdílení informací o uchazečích s našimi partnery (personálními agenturami), kteří najímají zaměstnance pro naše stálé i dočasné potřeby.",
+      "value" : "Kromě pozice, o kterou jste se dnes ucházeli, můžeme mít i další pozice, které vyžadují stejné nebo podobné pracovní funkce. Může se jednat o pozice na plný, zkrácený, částečný, sezónní a/nebo dočasný úvazek, které jsou k dispozici v této lokalitě nebo v jiných blízkých pobočkách společnosti Amazon. Nejste povinni přijmout jakoukoli pozici u společnosti Amazon nebo našich partnerů, nicméně vyplněním žádosti souhlasíte s tím, že budete zvažováni pro hodinově placené pozice stejné úrovně v okruhu 48 km (30 mil) od místa, kde jste požádali o práci. To zahrnuje sdílení informací o uchazečích s našimi partnery (personálními agenturami), kteří najímají zaměstnance pro naše stálé i dočasné potřeby.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
@@ -89,11 +89,11 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "souhlasíte se zpracováním, analýzou a vyhodnocováním Vašich osobních údajů společností Amazon, salesforce.com nebo jinou třetí stranou pro účely Vaší žádosti a pro další oprávněné účely společnosti Amazon. Aby se předešlo pochybnostem, „zpracování“ Vašich osobních údajů zahrnuje mimo jiné shromažďování, přijímání, zaznamenávání, organizování, srovnávání, ukládání, aktualizování, pozměňování, používání, šíření, distribuci, slučování, propojování, blokování, znehodnocování, vymazávání nebo likvidaci Vašich osobních údajů;",
+      "value" : "souhlasíte se zpracováním, analýzou a posouzením Vašich osobních údajů společností Amazon, salesforce.com nebo jinou třetí stranou pro účely Vaší žádosti a pro další oprávněné účely společnosti Amazon. Aby se předešlo pochybnostem, „zpracování“ Vašich osobních údajů zahrnuje mimo jiné shromažďování, přijímání, zaznamenávání, organizování, srovnávání, ukládání, aktualizování, pozměňování, používání, šíření, distribuci, slučování, propojování, blokování, znehodnocování, vymazávání nebo likvidaci Vašich osobních údajů;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "souhlasíte s tím, aby společnost Amazon uchovávala Vaše osobní údaje i po ukončení procesu podávání žádostí o zaměstnání, a to za účelem efektivního monitorování procesů podávání žádostí o zaměstnání, a s tím, aby Vaše osobní údaje byly uloženy v elektronické databázi v USA.",
+      "value" : "souhlasíte s tím, aby společnost Amazon uchovávala Vaše osobní údaje i po ukončení uchazečského procesu o zaměstnání, a to za účelem efektivního monitorování uchazečských procesů a uložení Vašich osobních údajů v elektronické databázi v USA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
@@ -117,7 +117,7 @@
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "Dokončit vyhodnocení (~15 min)",
+      "value" : "Dokončit posouzení (~15 min)",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
@@ -125,15 +125,15 @@
       "note" : "Text for filter schedule flyout title"
     },
     "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
-      "value" : "Resetovat",
+      "value" : "Obnovit",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "Použít",
+      "value" : "Podat žádost",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "Použít",
+      "value" : "Podat žádost",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
@@ -145,7 +145,7 @@
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "Počet hodin - nejvíce až nejméně",
+      "value" : "Počet hodin – nejvíce až nejméně",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
@@ -153,7 +153,7 @@
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
-      "value" : "Filtrovat plány",
+      "value" : "Filtrovat rozvrhy",
       "note" : "Text for the title of DaysHours Filter"
     },
     "BB-DayName-Monday" : {
@@ -193,7 +193,7 @@
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
-      "value" : "Až {hourNumber} hodin/y",
+      "value" : "Až {hourNumber} hodin(y)",
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
@@ -237,7 +237,7 @@
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
-      "value" : "Zpět na pracovní místa",
+      "value" : "Zpět na pracovní pozice",
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
@@ -257,11 +257,11 @@
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "Potvrzení a oprávnění k prověření důvěryhodnosti podle zákona o nespravedlivém podávání zpráv o úvěrech",
+      "value" : "Potvrzení a oprávnění k ověření důvěryhodnosti údajů podle zákona o nespravedlivém podávání zpráv o úvěrech",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
-      "value" : "Další doplňující informace",
+      "value" : "Doplňující informace k základním údajům",
       "note" : "Text for the Additional bgc information step card title"
     },
     "BB-BGC-page-continue-button" : {
@@ -293,7 +293,7 @@
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
-      "value" : "Byt, apartmá, atd.",
+      "value" : "Byt, apartmá atd.",
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
@@ -337,7 +337,7 @@
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
-      "value" : "Ve Spojených státech je číslo sociálního pojištění (SSN) devítimístné číslo, které se vydává občanům USA, osobám s trvalým pobytem a osobám s dočasným (pracovním) pobytem.",
+      "value" : "Ve Spojených státech je číslo sociálního pojištění (SSN) devítimístné číslo, které se vydává občanům USA, osobám s trvalým pobytem a osobám s přechodným (pracovním) pobytem.",
       "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
@@ -349,15 +349,15 @@
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "Zadejte prosím platný typ národního průkazu totožnosti",
+      "value" : "Zadejte prosím platný typ státního dokladu totožnosti",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
-      "value" : "Číslo dokladu totožnosti",
+      "value" : "Číslo průkazu totožnosti",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "Číslo národního průkazu totožnosti",
+      "value" : "Číslo dokladu totožnosti",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
@@ -389,7 +389,7 @@
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "Byl/a jste v posledních sedmi (7) letech odsouzen/a za přestupek nebo trestný čin nebo jste byl/a podmínečně propuštěn/a z výkonu trestu za přestupek nebo trestný čin?",
+      "value" : "Byli jste v posledních sedmi (7) letech odsouzeni za přestupek nebo trestný čin nebo jste byli podmínečně propuštěni z výkonu trestu za přestupek nebo trestný čin?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
@@ -413,7 +413,7 @@
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "Svým níže uvedeným elektronickým podpisem opravňuji společnost Amazon k pořízení výše uvedené zprávy o spotřebiteli nyní i v průběhu mého případného zaměstnání nebo pracovního poměru u společnosti Amazon Corporate.",
+      "value" : "Svým níže uvedeným elektronickým podpisem opravňuji společnost Amazon k pořízení výše uvedené zprávy o spotřebiteli nyní i v průběhu mého případného pracovního poměru nebo zaměstnání na smlouvu u společnosti Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -445,43 +445,43 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "Poskytovatel prověrky neboli „CRA“, který prověrku provede, je společnost First Advantage, která sídlí na adrese 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, a je dostupná na telefonním čísle (800) 845-6004 nebo na adrese www.fadv.com.",
+      "value" : "Poskytovatel prověrky neboli „CRA“, který prověrku provede, je společnost First Advantage, která sídlí na adrese 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 a je dostupná na telefonním čísle (800) 845-6004 nebo na adrese www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "Poskytovatel prověrky neboli „CRA“, který prověrku provede, je společnost Accurate Background, která sídlí na adrese 7515 Irvine Center Dr., Irvine, CA 92618, a je dostupná na telefonním čísle (800) 216-8024 nebo na adrese www.accuratebackground.com.\n\n* Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrky mé osoby pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných agentur než Accurate Background.",
+      "value" : "Poskytovatel prověrky neboli „CRA“, který prověrku provede, je společnost Accurate Background, která sídlí na adrese 7515 Irvine Center Dr., Irvine, CA 92618, a je dostupná na telefonním čísle (800) 216-8024 nebo na adrese www.accuratebackground.com.\n\n* Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrku k mé osobě pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných agentur než Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrky mé osoby pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných agentur než First Advantage.",
+      "value" : "Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrky k mé osobě pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných agentur než First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrky mé osoby pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných agentur než Accurate Background.",
+      "value" : "Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrku k mé osobě pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných CRA agentur než Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "Pro účely zaměstnání a s výhradou všech zákonů chránících mé informační soukromí také opravňuji následující subjekty k tomu, aby zpřístupnily agenturám CRA veškeré informace potřebné pro prověrku: mé dřívější nebo současné zaměstnavatele, školy a orgány činné v trestním řízení a další vládní agentury, včetně úřadů pro evidenci motorových vozidel.",
+      "value" : "Pro účely zaměstnání a s výhradou všech zákonů chránících mé informační soukromí také opravňuji následující subjekty k tomu, aby zpřístupnily agenturám CRA veškeré informace potřebné pro prověrku: mé dřívější nebo současné zaměstnavatele, školy, policii a bezpečnostní složky a jiné vládní agentury, včetně úřadů pro evidenci motorových vozidel.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "Pro účely zaměstnání a s výhradou všech zákonů chránících mé informační soukromí také opravňuji následující subjekty k tomu, aby zpřístupnily agenturám CRA veškeré informace potřebné pro prověrku: mé dřívější nebo současné zaměstnavatele, školy a orgány činné v trestním řízení a další vládní agentury, včetně úřadů pro evidenci motorových vozidel.",
+      "value" : "Pro účely zaměstnání a s výhradou všech zákonů chránících mé informační soukromí také opravňuji následující subjekty k tomu, aby zpřístupnily agenturám CRA veškeré informace potřebné pro prověrku: mé dřívější nebo současné zaměstnavatele, školy, policii a bezpečnostní složky a jiné vládní agentury, včetně úřadů pro evidenci motorových vozidel.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>KALIFORNIE: </b>Obdržíte samostatný dokument Zpřístupnění informací o vyšetřovacích zprávách o spotřebiteli v Kalifornii („Zpřístupnění informací v Kalifornii“). Toto je důležitý dokument; pečlivě jej zkontrolujte. Klikněte také na <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>, pokud hledáte zaměstnání ve společnosti v San Francisku nebo v ní již pracujete. Podpisem níže, podle kalifornského práva a zpřístupnění informací v Kalifornii, tímto opravňujete společnost Amazon k pořízení vyšetřovací zprávy o spotřebiteli, také známé jako prověrka, nyní a kdykoli během jakéhokoli zaměstnání u Amazonu.</p>",
+      "value" : "<p><b>KALIFORNIE: </b>Obdržíte samostatný dokument Zpřístupnění informací o vyšetřovacích zprávách o spotřebiteli v Kalifornii („Zpřístupnění informací v Kalifornii“). Toto je důležitý dokument; pečlivě jej zkontrolujte. Klikněte také na <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>, pokud hledáte zaměstnání ve společnosti v San Francisku nebo v ní již pracujete. Podpisem níže, podle kalifornského práva a zpřístupnění informací v Kalifornii, tímto opravňujete společnost Amazon k pořízení vyšetřovací zprávy o spotřebiteli, také známé jako prověrka, nyní a kdykoli během jakéhokoli zaměstnání ve společnosti Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>KALIFORNIE: </b>Obdržíte samostatný dokument Zpřístupnění informací o vyšetřovacích zprávách o spotřebiteli v Kalifornii („Zpřístupnění informací v Kalifornii“). Toto je důležitý dokument; pečlivě jej zkontrolujte. Klikněte také na <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>, pokud hledáte zaměstnání ve společnosti v San Francisku nebo v ní již pracujete. Podpisem níže, podle kalifornského práva a zpřístupnění informací v Kalifornii, tímto opravňujete společnost Amazon k pořízení vyšetřovací zprávy o spotřebiteli, také známé jako prověrka, nyní a kdykoli během jakéhokoli zaměstnání u Amazonu.</p>",
+      "value" : "<p><b>KALIFORNIE: </b>Obdržíte samostatný dokument Zpřístupnění informací o vyšetřovacích zprávách o spotřebiteli v Kalifornii („Zpřístupnění informací v Kalifornii“). Toto je důležitý dokument; pečlivě jej zkontrolujte. Klikněte také na <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>, pokud hledáte zaměstnání ve společnosti v San Francisku nebo v ní již pracujete. Podpisem níže, podle kalifornského práva a zpřístupnění informací v Kalifornii, tímto opravňujete společnost Amazon k pořízení vyšetřovací zprávy o spotřebiteli, také známé jako prověrka, nyní a kdykoli během jakéhokoli zaměstnání ve společnosti Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Máte právo podat agentuře CRA písemnou žádost o úplné a přesné zpřístupnění inormací o povaze a rozsahu jakékoli zprávy o spotřebiteli, která o Vás byla objednána. Agentura CRA Vám musí poskytnout zpřístupnění informací do pěti pracovních dnů po obdržení Vaší žádosti nebo po objednání zprávy, podle toho, co nastane později.</p>",
+      "value" : "<p><b>MINNESOTA: </b>Máte právo podat agentuře CRA písemnou žádost o úplné a přesné zpřístupnění informací o povaze a rozsahu jakékoli zprávy o spotřebiteli, která o Vás byla objednána. Agentura CRA Vám musí poskytnout zpřístupnění informací do pěti pracovních dnů po obdržení Vaší žádosti nebo po objednání zprávy, podle toho, co nastane později.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Máte právo podat agentuře CRA písemnou žádost o úplné a přesné zpřístupnění inormací o povaze a rozsahu jakékoli zprávy o spotřebiteli, která o Vás byla objednána. Agentura CRA Vám musí poskytnout zpřístupnění informací do pěti pracovních dnů po obdržení Vaší žádosti nebo po objednání zprávy, podle toho, co nastane později.</p>",
+      "value" : "<p><b>MINNESOTA: </b>Máte právo podat agentuře CRA písemnou žádost o úplné a přesné zpřístupnění informací o povaze a rozsahu jakékoli zprávy o spotřebiteli, která o Vás byla objednána. Agentura CRA Vám musí poskytnout zpřístupnění informací do pěti pracovních dnů po obdržení Vaší žádosti nebo po objednání zprávy, podle toho, co nastane později.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
@@ -545,7 +545,7 @@
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
-      "value" : "Zadejte prosím platnou budovu Amazonu",
+      "value" : "Zadejte prosím platnou budovu firmy Amazon",
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
@@ -553,7 +553,7 @@
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Zadejte prosím platnou budovu Amazonu",
+      "value" : "Zadejte prosím platnou budovu firmy Amazon",
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
@@ -597,7 +597,7 @@
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
-      "value" : "Oznámení specifická pro stát",
+      "value" : "Oznámení konkrétního státu",
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
@@ -609,7 +609,7 @@
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "Níže uvedeným elektronickým podpisem potvrzuji, že jsem si přečetl/a, porozuměl/a a souhlasím se všemi prohlášeními uvedenými v tomto Potvrzení a oprávnění k prověrce důvěryhodnosti podle zákona o nespravedlivém podávání zpráv o úvěrech. Svůj souhlas prosím vyjádřete zadáním požadovaných údajů do níže uvedených polí.",
+      "value" : "Níže uvedeným elektronickým podpisem potvrzuji, že jsem si přečetl/a, porozuměl/a a souhlasím se všemi prohlášeními uvedenými v tomto Potvrzení a oprávnění k ověření důvěryhodnosti údajů podle zákona o nespravedlivém podávání zpráv o úvěrech. Svůj souhlas prosím vyjádřete zadáním požadovaných údajů do níže uvedených polí.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
@@ -633,7 +633,7 @@
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "Chtěl/a bych získat bezplatnou kopii prověrky mé osoby",
+      "value" : "Chtěl/a bych získat bezplatnou kopii prověrky k mé osobě",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
@@ -645,7 +645,7 @@
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
-      "value" : "Návrat na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
     "BB-SelfId-disability-form-name-text" : {
@@ -669,7 +669,7 @@
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Označení sebe sama jako osoby se zdravotním postižením je dobrovolné a doufáme, že se tak rozhodnete učinit. Vaše odpovědi budou uchovávány v důvěrnosti a neuvidí je výběroví úředníci ani nikdo jiný, kdo se podílí na personálním rozhodování. Vyplnění formuláře na Vás nebude mít žádný negativní dopad, bez ohledu na to, zda jste se v minulosti sami identifikovali. Další informace o tomto formuláři nebo o povinnostech federálních dodavatelů v oblasti rovného zaměstnávání podle § 503 zákona o rehabilitaci naleznete na webových stránkách Úřadu federálních programů pro dodržování smluv (OFCCP) ministerstva práce USA na adrese <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "Označení sebe sama jako osoby se zdravotním postižením je dobrovolné a doufáme, že se tak rozhodnete učinit. Vaše odpovědi budou uchovávány v důvěrnosti a neuvidí je úředníci výběru ani nikdo jiný, kdo se podílí na personálním rozhodování. Vyplnění formuláře na Vás nebude mít žádný negativní dopad, bez ohledu na to, zda jste se v minulosti sami identifikovali. Další informace o tomto formuláři nebo o povinnostech federálních dodavatelů v oblasti rovného zaměstnávání podle § 503 zákona o rehabilitaci naleznete na webových stránkách Úřadu federálních programů pro dodržování smluv (OFCCP) ministerstva práce USA na adrese <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -709,7 +709,7 @@
       "note" : "Text for the disability item: Celiac disease"
     },
     "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
-      "value" : "Dětská mozková obrna",
+      "value" : "Mozková obrna",
       "note" : "Text for the disability item: Cerebral palsy"
     },
     "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
@@ -733,7 +733,7 @@
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
-      "value" : "Mentální retardace",
+      "value" : "Mentální postižení",
       "note" : "Text for the disability item: Intellectual disability"
     },
     "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
@@ -813,7 +813,7 @@
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
-      "value" : "Americký indián/původní obyvatel Aljašky (ne Hispánec nebo Latinoameričan)",
+      "value" : "Americký indián / původní obyvatel Aljašky (ne Hispánec nebo Latinoameričan)",
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
@@ -821,7 +821,7 @@
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
-      "value" : "Asiat/ka (ne Hispánec nebo Latinoameričan)",
+      "value" : "Asiat (ne Hispánec nebo Latinoameričan)",
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
@@ -845,7 +845,7 @@
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
-      "value" : "Původní obyvatelé Havaje/jiných tichomořských ostrovů (ne Hispánci nebo Latinoameričané)",
+      "value" : "Původní obyvatelé Havaje / jiných tichomořských ostrovů (ne Hispánci nebo Latinoameričané)",
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
@@ -861,11 +861,11 @@
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
-      "value" : "Dvě nebo více ras (ne hispánská nebo latinskoamerická)",
+      "value" : "Dvě nebo více ras (ne Hispánci nebo Latinoameričané)",
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Nehispánské osoby, které se hlásí k více než jedné z následujících pěti ras: (1) běloch, (2) černoch, (3) Asiat, (4) původní obyvatel Havaje/jiných tichomořských ostrovů, (5) americký indián/rodilý obyvatel Aljašky",
+      "value" : "Nehispánské osoby, které se hlásí k více než jedné z následujících pěti ras: (1) běloch, (2) černoch, (3) Asiat, (4) původní obyvatel Havaje / jiných tichomořských ostrovů, (5) americký indián / rodilý obyvatel Aljašky",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
@@ -877,11 +877,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "Ve společnosti Amazon jsou tisíce veteránů a manželů/manželek vojáků hnací silou inovací a zvyšují úroveň zákaznické zkušenosti. Lidé s vojenským vzděláním mohou denně uplatňovat své znalosti, dovednosti a vůdčí schopnosti v nejrůznějších profesích a ovlivňovat tak změny po celém světě. Z těchto důvodů aktivně usilujeme o zaměstnávání veteránů a manželů/manželek vojáků.",
+      "value" : "Ve společnosti Amazon jsou tisíce veteránů a manželů/manželek vojáků, kteří pokračují v inovaci a zvyšování úrovně zákaznické zkušenosti. Lidé s vojenskou praxí mohou denně uplatňovat své znalosti, dovednosti a vůdčí schopnosti v nejrůznějších profesích a ovlivňovat tak změny po celém světě. Z těchto důvodů aktivně usilujeme o zaměstnávání veteránů a manželů/manželek vojáků.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "Ve společnosti Amazon jsou tisíce veteránů a manželů/manželek vojáků hnací silou inovací a zvyšují úroveň zákaznické zkušenosti. Lidé s vojenským vzděláním mohou denně uplatňovat své znalosti, dovednosti a vůdčí schopnosti v nejrůznějších profesích a ovlivňovat tak změny po celém světě. Z těchto důvodů aktivně usilujeme o zaměstnávání veteránů a manželů/manželek vojáků.",
+      "value" : "Ve společnosti Amazon jsou tisíce veteránů a manželů/manželek vojáků, kteří pokračují v inovaci a zvyšování úrovně zákaznické zkušenosti. Lidé s vojenskou praxí mohou denně uplatňovat své znalosti, dovednosti a vůdčí schopnosti v nejrůznějších profesích a ovlivňovat tak změny po celém světě. Z těchto důvodů aktivně usilujeme o zaměstnávání veteránů a manželů/manželek vojáků.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -1005,7 +1005,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Podle občanského zákoníku Kalifornie § 1785 a násl. a § 1786 a násl., pokud si společnost Amazon vyžádá jakoukoli zprávu o mé osobě, mohu v běžných úředních hodinách nahlédnout do spisu, který o mně společnost Accurate vede. Beru na vědomí, že mohu také (1) získat kopii tohoto spisu po předložení řádné identifikace a zaplacení nákladů na kopírování, a to doporučenou poštou nebo osobním dostavením se do kanceláří společnosti Accurate v jejích běžných úředních hodinách po předchozím oznámení o plánovaném dostavení se; a (2) obdržet od společnosti Accurate shrnutí tohoto spisu po telefonu na své náklady po předložení řádné identifikace a písemné žádosti o telefonické zpřístupnění informací. Beru na vědomí, že společnost Accurate má k dispozici vyškolený personál, který mi vysvětlí její spis, včetně všech kódovaných informací, a pokud se dostavím osobně do kanceláří společnosti Accurate, může mě doprovázet jedna další osoba, pokud tato osoba předloží společnosti Accurate řádnou identifikaci.",
+      "value" : "Podle kalifornského občanského zákoníku § 1785 a násl. a § 1786 a násl., pokud si společnost Amazon vyžádá jakoukoli zprávu o mé osobě, mohu v běžných úředních hodinách nahlédnout do spisu, který o mně společnost Accurate vede. Beru na vědomí, že mohu také (1) získat kopii tohoto spisu po předložení řádné identifikace a zaplacení nákladů na kopírování, a to doporučenou poštou nebo osobním dostavením se do kanceláří společnosti Accurate v jejích běžných úředních hodinách po předchozím oznámení o plánovaném dostavení se; a (2) obdržet od společnosti Accurate shrnutí tohoto spisu po telefonu na své náklady po předložení řádné identifikace a písemné žádosti o telefonické zpřístupnění informací. Beru na vědomí, že společnost Accurate má k dispozici vyškolený personál, který mi vysvětlí její spis, včetně všech kódovaných informací, a pokud se dostavím osobně do kanceláří společnosti Accurate, může mě doprovázet jedna další osoba, pokud tato osoba předloží společnosti Accurate řádnou identifikaci.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
@@ -1057,7 +1057,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "Potvrzuji, že jsem si tento dokument přečetl(a), že mu rozumím a že v souladu s CALIFORNIA DISCLOSURE REGARDING INVESTIGATIVE CONSUMER REPORTS opravňuji společnost Amazon k získání investigativní spotřebitelské zprávy o mé osobě.",
+      "value" : "Potvrzuji, že jsem si tento dokument přečetl(a), že mu rozumím a že v souladu s ZPŘÍSTUPNĚNÍ INFORMACÍ O VYŠETŘOVACÍCH ZPRÁVÁCH O SPOTŘEBITELI V KALIFORNII opravňuji společnost Amazon k získání vyšetřující zprávy o spotřebiteli k mé osobě.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1065,7 +1065,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "Už máte téměř hotovo, {firstname} {lastname}! Potřebujeme, abyste si přišli pro průkazovou fotografii, vyplnili pracovní povolení a případně se podrobili testu na drogy.",
+      "value" : "Už máte téměř hotovo, {firstname} {lastname}. Potřebujeme, abyste si přišli pro průkazovou fotografii, vyplnili pracovní povolení a případně se podrobili testu na drogy.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1097,7 +1097,7 @@
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "Návrat na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
@@ -1105,7 +1105,7 @@
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "Velmi Vám děkujeme, že jste nám dali možnost posoudit Vás pro tuto pozici. Vaše uchazečství však bohužel momentálně dále nezvažujeme.",
+      "value" : "Velmi Vám děkujeme, že jste nám dali možnost posoudit Vás pro tuto pozici. Vaše uchazečství však bohužel momentálně dále neprojednáváme.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
@@ -1113,7 +1113,7 @@
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "Návrat na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
@@ -1133,7 +1133,7 @@
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Ve společnosti Amazon oslavujeme rozmanitost našich zaměstnanců a různé způsoby práce. Pokud máte zdravotní postižení a potřebujete během přijímacího procesu (včetně fáze hodnocení) přizpůsobení, navštivte prosím stránku <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>přizpůsobení Amazon.</a>",
+      "value" : "Ve společnosti Amazon oslavujeme rozmanitost našich zaměstnanců a různé způsoby práce. Pokud máte zdravotní postižení a potřebujete během přijímacího procesu (včetně fáze posouzení) přizpůsobení, navštivte prosím stránku <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>přizpůsobení Amazon.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
@@ -1156,16 +1156,12 @@
       "value" : "Zkontrolovat a odeslat",
       "note" : "Text for the review and submit title text"
     },
-    "BB-ReviewSubmit-edit-button-text" : {
-      "value" : "Upravit",
-      "note" : "Text for the review and submit page edit button text"
-    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Podrobnosti pracovní pozice",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
-      "value" : "Ověření údajů",
+      "value" : "Prověrka",
       "note" : "Text for the job details section background check text"
     },
     "BB-ReviewSubmit-job-details-section-authorized-text" : {
@@ -1173,15 +1169,15 @@
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "Odeslat bezplatnou kopii ověření údajů",
+      "value" : "Odeslat bezplatnou kopii prověrky",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
-      "value" : "Typ státního průkazu totožnosti:",
+      "value" : "Typ dokladu totožnosti:",
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "Číslo státního průkazu totožnosti:",
+      "value" : "Číslo dokladu totožnosti:",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
@@ -1221,7 +1217,7 @@
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
-      "value" : "Děkujeme, že jste podali žádost do firmy Amazon.",
+      "value" : "Děkujeme, že jste podali žádost do společnosti Amazon.",
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
@@ -1229,7 +1225,7 @@
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "Uveďte prosím údaje o doporučení (pokud je to relevantní)",
+      "value" : "Uveďte prosím podrobnosti k doporučení (je-li relevantní)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
@@ -1293,15 +1289,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "Uveďte prosím své přihlašovací ID referenta (pouze malá písmena)",
+      "value" : "Uveďte prosím své přihlašovací ID doporučující osoby (pouze malá písmena)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "Uveďte prosím své přihlašovací ID referenta.",
+      "value" : "Uveďte prosím přihlašovací ID doporučující osoby.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "ID uživatele by mělo obsahovat pouze malá písmena a mělo by být dlouhé alespoň 4 písmena.",
+      "value" : "ID uživatele by mělo obsahovat pouze malá písmena a mělo by být alespoň 4 písmena dlouhé.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
@@ -1317,7 +1313,7 @@
       "note" : "Text for the schedule card possible start date text"
     },
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
-      "value" : "(nebo dříve!)",
+      "value" : "(nebo dříve)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
@@ -1337,15 +1333,15 @@
       "note" : "Text for the amazon rejects page thank you text"
     },
     "BB-amazon-rejects-not-meet-requirements" : {
-      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám podívat se na jiné nabídky práce na amazon.jobs.",
       "note" : "Text for the amazon rejects page not meet requirements text"
     },
     "BB-amazon-rejects-return-to-dashboard" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for the amazon rejects page return to dashboard text"
     },
     "BB-create-application-error-message-application-exist" : {
-      "value" : "Omlouváme se, ale o tuto práci jste se již ucházeli!",
+      "value" : "Omlouváme se, ale o tuto práci jste se již ucházeli.",
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
@@ -1373,7 +1369,7 @@
       "note" : "Default error message for create application"
     },
     "BB-update-application-error-message-applicationId-not-match" : {
-      "value" : "ID žádosti se neshoduje s ID v dané cestě požadavku.",
+      "value" : "ID žádosti se neshoduje s ID v cestě požadavku.",
       "note" : "Error message for update application when application Id do not match"
     },
     "BB-update-application-error-message-application-not-found" : {
@@ -1413,7 +1409,7 @@
       "note" : "error message for update application without state notices signature"
     },
     "BB-update-application-error-message-selected-schedule-not-available" : {
-      "value" : "Vámi zvolený rozvrh již není k dispozici, vyberte prosím jiný.",
+      "value" : "Vámi zvolený rozvrh již není k dispozici, vyberte si prosím jiný.",
       "note" : "error message for update application when selected schedule is not available"
     },
     "BB-update-application-error-message-mismatch-signatures" : {
@@ -1421,7 +1417,7 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "Aktualizace žádosti se nezdařila, protože jste dosáhli maximálního počtu změn Vašeho dokladu totožnosti. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, odhlaste se a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste Váš osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "value" : "Aktualizace žádosti se nezdařila, protože jste dosáhli maximálního počtu změn u svého dokladu totožnosti. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, odhlaste se a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste svůj osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
@@ -1441,7 +1437,7 @@
       "note" : "error message for update application when date of birth is missing in the request"
     },
     "BB-update-application-error-message-provide-dob" : {
-      "value" : "Uveďte prosím platné datum.",
+      "value" : "Uveďte platné datum.",
       "note" : "error message for update application when date of birth is no provided"
     },
     "BB-update-application-error-message-applicationId-missing" : {
@@ -1449,7 +1445,7 @@
       "note" : "error message for update application when application Id is missing"
     },
     "BB-update-application-error-message-government-type-missing" : {
-      "value" : "V požadavku chybí vládní ID.",
+      "value" : "V požadavku chybí úřední ID.",
       "note" : "error message for update application when government Id is missing"
     },
     "BB-update-application-error-message-id-number-missing" : {
@@ -1461,11 +1457,11 @@
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
-      "value" : "V předmětu adresy chybí řádek adresy 1.",
+      "value" : "V předmětu adresy chybí řádek 1.",
       "note" : "error message for update application when address line 1 is missing"
     },
     "BB-update-application-error-message-city-missing-in-address" : {
-      "value" : "V předmětu adresy chybí město.",
+      "value" : "Město chybí v předmětu adresy.",
       "note" : "error message for update application when city is missing in address"
     },
     "BB-update-application-error-message-state-missing-in-address" : {
@@ -1477,7 +1473,7 @@
       "note" : "error message for update application when Zip/Postal code is missing in address"
     },
     "BB-update-application-error-message-country-missing-in-address" : {
-      "value" : "V předmětu adresy chybí země.",
+      "value" : "Země chybí v předmětu adresy.",
       "note" : "error message for update application when country is missing in address"
     },
     "BB-update-application-error-message-invalid-previous-legal-name" : {
@@ -1489,11 +1485,11 @@
       "note" : "error message for update application with invalid additional background"
     },
     "BB-update-application-error-message-nhe-apt-missing" : {
-      "value" : "V požadavku chybí předmět schůzky nhe.",
+      "value" : "Předmět schůzky NHE v požadavku chybí.",
       "note" : "error message for update application with new hire event appointment missing"
     },
     "BB-update-application-error-message-referral-missing" : {
-      "value" : "V požadavku chybí informace o doporučení.",
+      "value" : "Informace o doporučení v požadavku chybí.",
       "note" : "error message for update application with referral information missing"
     },
     "BB-update-application-error-message-ethnicity-missing" : {
@@ -1509,11 +1505,11 @@
       "note" : "error message for update application with military Spouse  information missing"
     },
     "BB-update-application-error-message-protected-veteran-missing" : {
-      "value" : "V datovém obsahu chybí informace o chráněném veteránovi.",
+      "value" : "V datovém obsahu chybí informace o chráněných veteránech.",
       "note" : "error message for update application with protected veteran status information missing"
     },
     "BB-update-application-error-message-veteran-status-missing" : {
-      "value" : "V datovém obsahu chybí informace o veteránovi.",
+      "value" : "V datovém obsahu chybí informace o veteránech.",
       "note" : "error message for update application with veteran status information missing"
     },
     "BB-update-application-error-message-disability-missing" : {
@@ -1525,7 +1521,7 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Zadané SSN nebo číslo dokladu totožnosti je již v našem systému přiřazeno k jiné e-mailové adrese. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, [odhlaste se](/application/logout) a zkuste se přihlásit pod touto e-mailovou adresou. V případě potřeby použijte odkaz „Zapomněli jste Váš osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "value" : "Zadané číslo sociálního pojištění nebo dokladu totožnosti je již v našem systému přiřazeno k jiné e-mailové adrese. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, [odhlaste se]  (/application/logout) a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste svůj osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
@@ -1537,7 +1533,7 @@
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
-      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozice. Zkuste to prosím znovu za chvíli.",
+      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozici. Zkuste to prosím znovu za chvíli.",
       "note" : "error message when there is a bad request to fetch shifts"
     },
     "BB-get-schedule-list-error-message-all-shift-filled" : {
@@ -1557,7 +1553,7 @@
       "note" : "error message when all appointment time slots are filled"
     },
     "BB-get-time-slots-error-message-fetch_time-slot-error" : {
-      "value" : "Něco se pokazilo! Aktualizujte prosím stránku nebo to zkuste později.",
+      "value" : "Něco se pokazilo. Aktualizujte prosím stránku nebo to zkuste později.",
       "note" : "error message when fetch appointment time slots failed"
     },
     "BB-get-time-slots-error-message-fetch_shifts_error" : {
@@ -1565,11 +1561,11 @@
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
-      "value" : "Nepodařilo se načíst předvolby směn.",
+      "value" : "Nelze načíst předvolby směn.",
       "note" : "error message when fetch shift preference failed"
     },
     "BB-get-time-slots-error-message-shift-bad-request" : {
-      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozice. Zkuste to prosím znovu za chvíli.",
+      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozici. Zkuste to prosím znovu za chvíli.",
       "note" : "error message when server received a bad request to get time slots"
     },
     "BB-get-candidate-error-message-failed-get-candidate" : {
@@ -1589,7 +1585,7 @@
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
-      "value" : "Pro získání údajů o žádosti je vyžadováno ID žádosti.",
+      "value" : "Pro získání dat žádosti je vyžadováno ID žádosti.",
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
@@ -1613,7 +1609,7 @@
       "note" : "Text for the workflow failed page description text"
     },
     "BB-workflow-failed-return-to-dashboard-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for the workflow failed page return to dashboard text"
     },
     "BB-can-not-offer-job-title-text" : {
@@ -1621,11 +1617,11 @@
       "note" : "Text for the can not offer job page title text"
     },
     "BB-can-not-offer-job-description-text" : {
-      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám podívat se na jiné nabídky práce na amazon.jobs.",
       "note" : "Text for the can not offer job page description text"
     },
     "BB-can-not-offer-job-return-to-dashboard-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for the can not offer job page description text"
     },
     "BB-candidate-withdraws" : {
@@ -1633,11 +1629,11 @@
       "note" : "Candidate withdraws page title"
     },
     "BB-candidate-withdraws-description" : {
-      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám podívat se na jiné nabídky práce na amazon.jobs.",
       "note" : "Candidate withdraws page description"
     },
     "BB-candidate-withdraws-button-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Candidate withdraws page back to dashboard buttton"
     },
     "BB-amazon-withdraws" : {
@@ -1645,11 +1641,11 @@
       "note" : "Amazon withdraws page title"
     },
     "BB-amazon-withdraws-description" : {
-      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám podívat se na jiné nabídky práce na amazon.jobs.",
       "note" : "Amazon withdraws page description"
     },
     "BB-amazon-withdraws-button-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Amazon withdraws page back to dashboard buttton"
     },
     "BB-session-timeout" : {
@@ -1689,7 +1685,7 @@
       "note" : "Text for no available time slots page view other shifts button"
     },
     "BB-no-available-time-slots-back-to-dashboard-button-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for no available time slots page back to dashboard button"
     },
     "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
@@ -1704,208 +1700,20 @@
       "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
-    "BB-States-Alabama" : {
-      "value" : "AL –⁠ Alabama",
-      "note" : "Text for Alabama state"
-    },
-    "BB-States-Alaska" : {
-      "value" : "AK –⁠ Aljaška",
-      "note" : "Text for Alaska state"
-    },
-    "BB-States-Arizona" : {
-      "value" : "AZ –⁠ Arizona",
-      "note" : "Text for Arizona state"
-    },
-    "BB-States-Arkansas" : {
-      "value" : "AR –⁠ Arkansas",
-      "note" : "Text for Arkansas state"
-    },
-    "BB-States-California" : {
-      "value" : "CA –⁠ Kalifornie",
-      "note" : "Text for California state"
-    },
-    "BB-States-Colorado" : {
-      "value" : "CO –⁠ Colorado",
-      "note" : "Text for Colorado state"
-    },
-    "BB-States-Connecticut" : {
-      "value" : "CT –⁠ Connecticut",
-      "note" : "Text for Connecticut state"
-    },
-    "BB-States-Delaware" : {
-      "value" : "DE –⁠ Delaware",
-      "note" : "Text for Delaware state"
-    },
-    "BB-States-District-of-Columbia" : {
-      "value" : "DC –⁠ District of Columbia",
-      "note" : "Text for District of Columbia state"
-    },
-    "BB-States-Florida" : {
-      "value" : "FL –⁠ Florida",
-      "note" : "Text for Florida state"
-    },
-    "BB-States-Georgia" : {
-      "value" : "GA –⁠ Georgie",
-      "note" : "Text for Georgia state"
-    },
-    "BB-States-Hawaii" : {
-      "value" : "HI –⁠ Havaj",
-      "note" : "Text for Hawaii state"
-    },
-    "BB-States-Idaho" : {
-      "value" : "ID –⁠ Idaho",
-      "note" : "Text for Idaho state"
-    },
-    "BB-States-Illinois" : {
-      "value" : "IL –⁠ Illinois",
-      "note" : "Text for Illinois state"
-    },
-    "BB-States-Indiana" : {
-      "value" : "IN –⁠ Indiana",
-      "note" : "Text for Indiana state"
-    },
-    "BB-States-Iowa" : {
-      "value" : "IA –⁠ Iowa",
-      "note" : "Text for Iowa state"
-    },
-    "BB-States-Kansas" : {
-      "value" : "KS –⁠ Kansas",
-      "note" : "Text for Kansas state"
-    },
-    "BB-States-Kentucky" : {
-      "value" : "KY –⁠ Kentucky",
-      "note" : "Text for Kentucky state"
-    },
-    "BB-States-Louisiana" : {
-      "value" : "LA –⁠ Louisiana",
-      "note" : "Text for Louisiana state"
-    },
-    "BB-States-Maine" : {
-      "value" : "ME –⁠ Maine",
-      "note" : "Text for Maine state"
-    },
-    "BB-States-Maryland" : {
-      "value" : "MD –⁠ Maryland",
-      "note" : "Text for Maryland state"
-    },
-    "BB-States-Massachusetts" : {
-      "value" : "MA –⁠ Massachusetts",
-      "note" : "Text for Massachusetts state"
-    },
-    "BB-States-Michigan" : {
-      "value" : "MI –⁠ Michigan",
-      "note" : "Text for Michigan state"
-    },
-    "BB-States-Minnesota" : {
-      "value" : "MN –⁠ Minnesota",
-      "note" : "Text for Minnesota state"
-    },
-    "BB-States-Mississippi" : {
-      "value" : "MS –⁠ Mississippi",
-      "note" : "Text for Mississippi state"
-    },
-    "BB-States-Missouri" : {
-      "value" : "MO –⁠ Missouri",
-      "note" : "Text for Missouri state"
-    },
-    "BB-States-Montana" : {
-      "value" : "MT –⁠ Montana",
-      "note" : "Text for Montana state"
-    },
-    "BB-States-Nebraska" : {
-      "value" : "NE –⁠ Nebraska",
-      "note" : "Text for Nebraska state"
-    },
-    "BB-States-Nevada" : {
-      "value" : "NV –⁠ Nevada",
-      "note" : "Text for Nevada state"
-    },
-    "BB-States-New-Hampshire" : {
-      "value" : "NH –⁠ New Hampshire",
-      "note" : "Text for New Hampshire state"
-    },
-    "BB-States-New-Jersey" : {
-      "value" : "NJ –⁠ New Jersey",
-      "note" : "Text for New Jersey state"
-    },
-    "BB-States-New-Mexico" : {
-      "value" : "NM –⁠ Nové Mexiko",
-      "note" : "Text for New Mexico state"
-    },
-    "BB-States-New-York" : {
-      "value" : "NY –⁠ New York",
-      "note" : "Text for New York state"
-    },
-    "BB-States-North-Carolina" : {
-      "value" : "NC –⁠ Severní Karolína",
-      "note" : "Text for North Carolina state"
-    },
-    "BB-States-North-Dakota" : {
-      "value" : "ND –⁠ Severní Dakota",
-      "note" : "Text for North Dakota state"
-    },
-    "BB-States-Ohio" : {
-      "value" : "OH –⁠ Ohio",
-      "note" : "Text for Ohio state"
-    },
-    "BB-States-Oklahoma" : {
-      "value" : "OK –⁠ Oklahoma",
-      "note" : "Text for Oklahoma state"
-    },
-    "BB-States-Oregon" : {
-      "value" : "OR –⁠ Oregon",
-      "note" : "Text for Oregon state"
-    },
-    "BB-States-Pennsylvania" : {
-      "value" : "PA –⁠ Pensylvánie",
-      "note" : "Text for Pennsylvania state"
-    },
-    "BB-States-Rhode-Island" : {
-      "value" : "RI –⁠ Rhode Island",
-      "note" : "Text for Rhode Island state"
-    },
-    "BB-States-South-Carolina" : {
-      "value" : "SC –⁠ Jižní Karolína",
-      "note" : "Text for South Carolina state"
-    },
-    "BB-States-South-Dakota" : {
-      "value" : "SD –⁠ Jižní Dakota",
-      "note" : "Text for South Dakota state"
-    },
-    "BB-States-Tennessee" : {
-      "value" : "TN –⁠ Tennessee",
-      "note" : "Text for Tennessee state"
-    },
-    "BB-States-Texas" : {
-      "value" : "TX –⁠ Texas",
-      "note" : "Text for Texas state"
-    },
-    "BB-States-Utah" : {
-      "value" : "UT –⁠ Utah",
-      "note" : "Text for Utah state"
-    },
-    "BB-States-Vermont" : {
-      "value" : "VT –⁠ Vermont",
-      "note" : "Text for Vermont state"
-    },
-    "BB-States-Virginia" : {
-      "value" : "VA –⁠ Virginie",
-      "note" : "Text for Virginia state"
-    },
     "BB-States-Washington" : {
-      "value" : "WA –⁠ Washington",
+      "value" : "WA – Washington",
       "note" : "Text for Washington state"
     },
     "BB-States-wisconsin" : {
-      "value" : "WI –⁠ Wisconsin",
+      "value" : "WI – Wisconsin",
       "note" : "Text for Wisconsin state"
     },
     "BB-States-west-virginia" : {
-      "value" : "WV –⁠ Západní Virginie",
+      "value" : "WV – Západní Virginie",
       "note" : "Text for West Virginia state"
     },
     "BB-States-wyoming" : {
-      "value" : "WY –⁠ Wyoming",
+      "value" : "WY – Wyoming",
       "note" : "Text for Wyoming state"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
@@ -1937,15 +1745,15 @@
       "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-content-text" : {
-      "value" : "Navštivte prosím naši Sezónní stránku, kde najdete sezónní nabídky ve Vaší oblasti.",
+      "value" : "Navštivte naši stránku sezónních prací, kde najdete sezónní nabídky ve Vaší oblasti.",
       "note" : "Text for rehire not eligible seasonal only content"
     },
     "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "rehire eligibility status back to dashboard button"
     },
     "BB-not-rehire-eligible-title-text" : {
-      "value" : "Děkujeme Vám za Vaši nedávnou žádost o zaměstnání ve společnosti Amazon. Po pečlivém zvážení nebudeme pokračovat s Vaší žádostí o zaměstnání dále.",
+      "value" : "Děkujeme Vám za Vaši nedávnou žádost o zaměstnání ve společnosti Amazon. Po pečlivém zvážení nebudeme Vaši žádost o zaměstnání dále projednávat.",
       "note" : "text for Not rehire eligibility page title"
     },
     "BB-not-rehire-eligible-content-text" : {
@@ -1953,27 +1761,27 @@
       "note" : "text for Not rehire eligibility page content"
     },
     "BB-rehire-not-eligible-active-title-text" : {
-      "value" : "Vážíme si Vaší nedávné žádosti o pracovní pozici! Na tuto pozici bohužel nemáte nárok, protože jste již zaměstnancem společnosti Amazon.",
+      "value" : "Vážíme si Vaší nedávné žádosti o zaměstnání. Na tuto pozici bohužel nemáte nárok, protože jste již zaměstnancem společnosti Amazon.",
       "note" : "Text for rehire not eligible active page title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
-      "value" : "Jaká je dobrá zpráva? Existuje spousta volných pracovních míst, která si můžete prohlédnout a ucházet se o ně online. Zde je několik způsobů, jak můžete prozkoumat Váš budoucí kariérní růst:",
+      "value" : "Jaká je dobrá zpráva? Existuje spousta volných pracovních míst, která si můžete prohlédnout a ucházet se o ně on-line. Zde je několik způsobů, jak můžete prozkoumat svůj budoucí kariérní růst:",
       "note" : "Text for rehire not eligible active open opportunities list title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
-      "value" : "Pro převod z agenturních nebo sezónních pozic navštivte amazon.com/conversions (http://amazon.com/conversions).",
+      "value" : "O převodu z agenturních nebo sezónních pozic se dozvíte na amazon.com/conversions (http://amazon.com/conversions).",
       "note" : "Text for rehire not eligible active open opportunities list item one"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
-      "value" : "Chcete-li požádat o změnu směny nebo pracoviště, obraťte se na Váš tým na pracovišti.",
+      "value" : "Chcete-li požádat o změnu směny nebo působiště, obraťte se na svůj tým na místě.",
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "V případě jakýchkoli dotazů Vám nejlépe poradí místní tým lidských zdrojů nebo zdrojové centrum pro zaměstnance (ERC). Tým ERC můžete kontaktovat nepřetržitě na telefonním čísle 1-888-892-7180 (tel.:18888927180).",
+      "value" : "V případě jakýchkoli dotazů Vám nejlépe poradí místní tým lidských zdrojů nebo zdrojové centrum pro zaměstnance (ERC). Tým ERC můžete kontaktovat nepřetržitě na čísle 1-888-892-7180 (tel.:18888927180).",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
-      "value" : "Děkujeme, že jste součástí úžasného týmu společnosti Amazon! Neustále se snažíme poskytovat Vám ty nejlepší možné zaměstnanecké zdroje, výhody, mzdu a flexibilní rozvrhy – to vše podporuje naše úsilí stát se nejlepším zaměstnavatelem na Zemi!",
+      "value" : "Děkujeme, že jste součástí úžasného týmu společnosti Amazon. Neustále se snažíme poskytovat Vám ty nejlepší možné zaměstnanecké zdroje, benefity, mzdy a flexibilní rozvrhy – to vše podporuje naše úsilí stát se nejlepším zaměstnavatelem na Zemi.",
       "note" : "Text for rehire not eligible active content text two"
     },
     "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
@@ -1993,11 +1801,11 @@
       "note" : "Text for the no available shift page all shifts filled text"
     },
     "BB-no-available-shift-return-dashboard-to-apply-text" : {
-      "value" : "Vraťte se prosím na řídicí panel a ucházejte se o další pracovní pozice.",
+      "value" : "Vraťte se prosím na řídicí panel a podejte si žádosti na další pracovní pozice.",
       "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
     },
     "BB-no-available-shift-return-to-dashboard" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for the no available shift page return to dashboard text"
     },
     "BB-application-id-null-title-text" : {
@@ -2009,28 +1817,8 @@
       "note" : "Text for the applicationId null page description text"
     },
     "BB-application-id-null-return-to-dashboard-text" : {
-      "value" : "Zpět na řídicí panel",
+      "value" : "Vrátit na řídicí panel",
       "note" : "Text for the applicationId null page return to dashboard text"
-    },
-    "BB-Detailed-button-error-text-message" : {
-      "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
-      "note" : "Text for the detailed radio button error."
-    },
-    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
-      "value" : "Spojené státy - číslo sociálního pojištění",
-      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
-    },
-    "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "Ano, mám zdravotní postižení (nebo jsem měl/a zdravotní postižení dříve)",
-      "note" : "Text for the reverse mapping candidate disability yes"
-    },
-    "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "Ne, nemám zdravotní postižení",
-      "note" : "Text for the reverse mapping candidate disability no"
-    },
-    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
-      "value" : "Nechci odpovídat",
-      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     },
     "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
       "value" : "Americký indián/původní obyvatel Aljašky",

@@ -185,11 +185,11 @@
       "note" : "Text for Sunday"
     },
     "BB-TimeRange-start-time-select-label-text" : {
-      "value" : "Başlangıç Zamanı",
+      "value" : "Başlama Zamanı",
       "note" : "Text for start time select input label text"
     },
     "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Başlangıç Zamanı",
+      "value" : "Başlama Zamanı",
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
@@ -337,7 +337,7 @@
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
-      "value" : "Amerika Birleşik Devletleri'nde, bir Sosyal Güvenlik numarası (SSN), ABD vatandaşlarına, daimi sakinlere ve geçici (çalışan) sakinlere verilen dokuz basamaklı bir sayıdır.",
+      "value" : "Sosyal Güvenlik numarası (SSN), Amerika Birleşik Devletleri'nde, ABD vatandaşlarına, kalıcı ve geçici (çalışma) oturma izni olan kimselere verilen dokuz basamaklı bir sayıdır.",
       "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
@@ -421,11 +421,11 @@
       "note" : "Text for the fcra disclosure form next button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
-      "value" : "Amazon'un bu geçmiş kontrolünü yapması için YETKİ VERİYORUM.",
+      "value" : "Amazon'a bu geçmiş kontrolünü yapması için YETKİ VERİYORUM.",
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "Amazon'u bu geçmiş kontrolü için yetkilendirmeyi RED EDİYORUM.",
+      "value" : "Amazon'u bu geçmiş kontrolü için yetkilendirmeyi REDDEDİYORUM.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -453,7 +453,7 @@
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Amazon'un, yasaların izin verdiği şekilde, daha fazla yetkim olmaksızın, (1) varsa istihdamım sırasında ve (2) First Advantage dışındaki CRA'lardan istihdam amacıyla benim hakkımda ek özgeçmiş kontrolleri sipariş edebileceğini anlıyor ve kabul ediyorum.",
+      "value" : "Amazon'un, yasaların izin verdiği şekilde, daha fazla yetkim olmaksızın, (1) varsa istihdamım sırasında ve (2) First Advantage dışındaki CRA'lardan istihdam amacıyla benim hakkımda ek özgeçmiş kontrolleri talep edebileceğini anlıyor ve kabul ediyorum.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
@@ -789,7 +789,7 @@
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon her türlü çeşitliliğe değer verir ve adayları ve çalışanları gönüllü olarak cinsiyetlerini ve ırklarını/etnik kökenlerini tanımlamaya davet etmemizi gerektiren belirli ayrımcılık yapmama ve olumlu eylem kayıt tutma ve raporlama gereksinimlerine tabidir. Bu bilgilerin sunulması isteğe bağlıdır ve vermeyi reddetmek sizi herhangi bir olumsuz muameleye maruz bırakmayacaktır. Elde edilen bilgiler gizli tutulacaktır ve yalnızca, bilgilerin özetlenmesini ve medeni hakların uygulanması amacıyla Federal Hükümete bildirilmesini gerektirenler de dahil olmak üzere, yürürlükteki federal yasaların, idari emirlerin ve yönetmeliklerin hükümlerine uygun olarak kullanılabilir. Şu anda cinsiyetinizi veya ırkınızı/etnik kökeninizi belirtmemeyi seçerseniz, federal hükümet, bu bilgileri çalışanlar için görsel anket ve/veya diğer mevcut bilgilerle belirlememizi ister.",
+      "value" : "Amazon her türlü çeşitliliğe değer verir ve adayları ve çalışanları gönüllü olarak cinsiyetlerini ve ırklarını/etnik kökenlerini tanımlamaya davet etmemizi gerektiren belirli ayrımcılık yapmama ve olumlu eylem kayıt tutma ve raporlama gereksinimlerine tabidir. Bu bilgilerin sunulması isteğe bağlıdır ve vermeyi reddetmek sizi herhangi bir olumsuz muameleye maruz bırakmayacaktır. Elde edilen bilgiler gizli tutulacaktır ve yalnızca, bilgilerin özetlenmesini ve medeni hakların uygulanması amacıyla Federal Hükumete bildirilmesini gerektirenler de dahil olmak üzere, yürürlükteki federal yasaların, idari emirlerin ve yönetmeliklerin hükümlerine uygun olarak kullanılabilir. Şu anda cinsiyetinizi veya ırkınızı/etnik kökeninizi belirtmemeyi seçerseniz, federal hükumet, bu bilgileri çalışanlar için görsel anket ve/veya diğer mevcut bilgilerle belirlememizi ister.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -929,7 +929,7 @@
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: ABD ordusundaki aktif görevden, kara, deniz veya hava hizmetibden terhis veya salıverilme tarihinde başlayan üç yıllık süre içinde tüm gaziler.",
+      "value" : "</b>: ABD ordusundaki aktif görevden, kara, deniz veya hava hizmetinden terhis veya salıverilme tarihinde başlayan üç yıllık süre içinde tüm gaziler.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
@@ -1013,7 +1013,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
-      "value" : "İlk Avantaj",
+      "value" : "First Advantage",
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
@@ -1073,7 +1073,7 @@
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
-      "value" : "İşe alım öncesi randevu planlama",
+      "value" : "İşe alım öncesi randevusunu planlayın",
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
@@ -1097,7 +1097,7 @@
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "Panele geri dön",
+      "value" : "Panoya geri dön",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
@@ -1113,7 +1113,7 @@
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "Panele geri dön",
+      "value" : "Panoya geri dön",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
@@ -1141,7 +1141,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "Şu ekran okuyucular için optimize edilmiştir: Firefox, Chrome ve Edge (Windows) üzerinde VoiceOver (Mac) ve NVDA (Windows).",
+      "value" : "Şu ekran okuyucular için optimize edilmiştir: Firefox, Chrome ve Edge (Windows) üzerinde VoiceOver (Mac) ve NVDA (Windows)",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1264,10 +1264,6 @@
       "value" : "{startTime} ile {endTime} saatleri arası herhangi bir zaman bizi 30 dakikalık bir oturum için ziyaret edin.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
-    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
-      "value" : "İşe Alım Öncesi Randevu",
-      "note" : "Text for the thank you page nhe appointment flyout title text"
-    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Randevu ayrıntıları",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -1315,6 +1311,710 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT testi, federal ve/veya eyalet vergi kredisi programlarında kullanılır. Verdiğiniz bilgiler, şirketin bu programlara uygunluğunu belirlemek için kullanılacak ve hiçbir şekilde işe alma, elde tutma veya terfi kararlarını olumsuz etkilemeyecektir.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "Olası Başlangıç Tarihi:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(veya daha erken!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/saat",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "saat/hafta",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "Bonus:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "İlginiz için teşekkür ederiz, ancak şu anda size bir iş teklifi yapamıyoruz.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "Sağladığınız bilgiler gereksinimlerimizi karşılamıyor. Amazon.jobs adresindeki diğer işlere bakmanızı öneririz.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "Üzgünüz, bu işe zaten başvurmuşsunuz!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "Zorunlu alanlar eksik.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "Sunucuda bir şeyler ters gitti. Lütfen tekrar deneyin veya tarayıcıyı yenileyin.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "Aday etkin değil. Aday için başvuru oluşturulamıyor.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "Aday bulunamadı.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "Daha yeni bir güncelleme olduğu için uygulama güncellenemiyor.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "Uygulama oluşturulamıyor.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "Uygulama Kimliği istek yolundaki kimlik ile eşleşmiyor.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "Uygulama bulunamıyor.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "Gerekli alanlar eksik: ApplicationId.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "Daha yeni bir güncelleme olduğu için uygulama güncellenemiyor.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "Sunucuda bir şeyler ters gitti. Lütfen tekrar deneyin veya tarayıcıyı yenileyin.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "Bu uygulamaya erişemezsiniz.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "Lütfen onayı imzalayın.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "Lütfen fcra isteğini imzalayın.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "Lütfen onayı imzalayın.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "Lütfen eyalet bildirimlerini imzalayın.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "Seçtiğiniz program artık mevcut değil, lütfen başka bir program seçin.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "e-İmzalar eşleşmiyor. Lütfen her bir e-İmza için aynı metni kullanın.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "Ulusal Kimliğinizde maksimum değişiklik sayısına ulaştığınız için uygulama güncellemesi başarısız oldu. Daha önce farklı bir e-posta adresiyle kaydolduysanız, lütfen oturumu kapatın ve gerekirse bu e-postayla, “Kişisel pininizi mi unuttunuz?’’ bağlantısından giriş yapmayı deneyin. Yardıma ihtiyacınız varsa, lütfen bizimle e-posta yoluyla iletişime geçin veya <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> üzerinden sohbet edin.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "Ulusal Kimlik Numarası geçersiz olduğu için uygulama güncellemesi başarısız oldu. Lütfen devam etmeden önce doğru ve eksiksiz Ulusal Kimlik Numarasını girin.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "İsteğin türü eksik.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "Tür istekle eşleşmiyor.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "Yükte doğum tarihi eksik.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "Lütfen geçerli tarih belirtin.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "ApplicationId istekte eksik.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "İstekte Devlet Kimliği eksik.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "İstekte kimlik numarası eksik.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "HasCriminalRecordWithinSevenYears istekte eksik.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "Adres satırı 1 adres nesnesinde eksik.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "Adres nesnesinde şehir eksik.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "Adres nesnesinde eyalet eksik.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "Adres nesnesinde Zip/Posta kodu eksik.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "Adres nesnesinde ülke eksik.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "Lütfen daha önce kullanılan yasal tam adı aşağıdaki biçimde girin: Ad Soyad",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "Ek geçmiş bilgileri geçerli değil, lütfen gerekli tüm alanları güncelleyin.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "nheAppointment nesnesi istekte eksik.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "İstek üzerine yönlendirme bilgisi eksik.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "Yükte etnik köken eksik.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "Yükte cinsiyet eksik.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "Yükte asker eşi bilgisi eksik.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "Protected Veteran bilgileri yükte eksik.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "Yükte gazi bilgileri eksik.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "Yükte engellilik eksik.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "Yükte hasBGCCaliforniaDisclosureAcknowledged eksik.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Girdiğiniz SSN veya Ulusal Kimlik Numarası zaten sistemimizdeki başka bir e-posta adresiyle ilişkilendirilmiştir. Daha önce farklı bir e-posta adresiyle kaydolduysanız, lütfen [Oturumu Kapat] (/uygulama/çıkış) ve gerekirse bu e-postayla, “Kişisel pininizi mi unuttunuz?’’ bağlantısından giriş yapmayı deneyin. Yardıma ihtiyacınız varsa, lütfen bizimle e-posta yoluyla iletişime geçin veya <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> üzerinden sohbet edin.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "İş getirilemiyor.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "İşler alınırken bir sorunla karşılaştık! Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "Şu anda iş alınamadı. Lütfen bir süre sonra tekrar deneyin.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "Tüm Vardiyalar Dolduruldu.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "Tüm Vardiyalar Dolduruldu.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "Kafa sayısı isteği getirilemiyor.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "Tüm Vardiyalar Dolduruldu.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "Bir sorun oluştu! Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "İşler alınırken bir sorunla karşılaştık! Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "Vardiya tercihleri alınamıyor.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "Şu anda iş alınamadı. Lütfen bir süre sonra tekrar deneyin.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "Aday alınamadı.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "Bu uygulamaya erişemezsiniz.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "Uygulama oluşturulamıyor.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "Uygulama oluşturamazsınız.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "Uygulama verilerini almak için ApplicationID gereklidir.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "Bu uygulamaya erişemezsiniz.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "Bu uygulama alınamıyor.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "Sunucuda bir şeyler ters gitti. Lütfen tekrar deneyin veya tarayıcıyı yenileyin.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "İş Akışı Hatası",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "Uygulama iş akışı başarısız olduğunda.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "İlginiz için teşekkür ederiz, ancak şu anda size bir iş teklifi yapamıyoruz.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "Sağladığınız bilgiler gereksinimlerimizi karşılamıyor. Amazon.jobs adresindeki diğer işlere bakmanızı öneririz.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "İlginiz için teşekkür ederiz, ancak şu anda size bir iş teklifi yapamıyoruz.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "Sağladığınız bilgiler gereksinimlerimizi karşılamıyor. Amazon.jobs adresindeki diğer işlere bakmanızı öneririz.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "İlginiz için teşekkür ederiz, ancak şu anda size bir iş teklifi yapamıyoruz.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "Sağladığınız bilgiler gereksinimlerimizi karşılamıyor. Amazon.jobs adresindeki diğer işlere bakmanızı öneririz.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "İş pozisyonu rezervasyonunuzun süresi doldu.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "Adayların başvurularını tamamlamaları için üç saate kadar süre veriyoruz. Ne yazık ki, başvurduğunuz iş pozisyonu üç saatlik sınırı aştı. Lütfen mevcut iş fırsatlarını keşfedin.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "İş fırsatlarını görüntüleyin",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "Şu anda bu iş için randevu yok.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "Şunlar olabilir:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. Farklı bir iş fırsatı seçin",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "Burayı tıklayın",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. Daha sonraki bir başlangıç tarihi olan bir vardiya seçin (önerilir)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "Diğer vardiyaları görüntüle",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "Devam etmek için lütfen kutuyu işaretleyin.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "Devam etmek için lütfen kutuyu işaretleyin.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "Devam etmek için lütfen kutuyu işaretleyin.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- Alabama",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- Alaska",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- Arizona",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- Arkansas",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- Kaliforniya",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- Kolorado",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- Connecticut",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- Delaware",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- Kolumbiya Bölgesi",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- Florida",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- Georgia",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- Hawaii",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- İdaho",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- İllinois",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- İndiana",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- İowa",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- Kansas",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- Kentucky",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- Louisiana",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- Maine",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- Maryland",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- Massachusetts",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- Michigan",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- Minnesota",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- Mississippi",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- Missouri",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- Montana",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- Nebraska",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- Nevada",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- New Hampshire",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- New Jersey",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- New Mexico",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- New York",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- Kuzey Carolina",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- Kuzey Dakota",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- Ohio",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- Oklahoma",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- Oregon",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- Pensilvanya",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- Rhode İsland",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC — Güney Carolina",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- Güney Dakota",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- Tennessee",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- Teksas",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- Utah",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- Vermont",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- Virginia",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA — Washington",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI — Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV - Batı Virginia",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY — Wyoming",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "WOTC güncellenemedi.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "Seçtiğiniz program artık mevcut değil. Lütfen farklı bir seçenek seçin.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "Yakın zamanda bu uygulama için işe alındınız, vardiyanız değiştirilemez. Vardiyanızı değiştirmek için lütfen https://www.amazondelivers.jobs/contactus adresinden iletişime geçin.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "Uygulama güncellenemedi.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "Ek geçmiş kontrolü bilgileri",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} pozisyonuna gösterdiğiniz ilgi için teşekkür ederiz. Kayıtlarımız daha önce Amazon'da çalıştığınızı gösteriyor.  Şu anda, istihdam kaydınıza dayalı olarak Sezonluk Amazon Gelir Ortağı veya üçüncü taraf acente çalışanı olarak yeniden işe alınmaya uygunsunuz. Sonuç olarak, bu iş için adaylığınızla ilerleyemiyoruz. Yeniden işe alma uygunluğuyla ilgili herhangi bir sorunuz varsa, site İK Ekibi ile iletişime geçin.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "Bu pozisyona gösterdiğiniz ilgi için teşekkür ederiz. Kayıtlarımız daha önce Amazon'da çalıştığınızı gösteriyor.  Şu anda, istihdam kaydınıza dayalı olarak Sezonluk Amazon Gelir Ortağı veya üçüncü taraf acente çalışanı olarak yeniden işe alınmaya uygunsunuz. Sonuç olarak, bu iş için adaylığınızla ilerleyemiyoruz. Yeniden işe alma uygunluğuyla ilgili herhangi bir sorunuz varsa, site İK Ekibi ile iletişime geçin.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "Bölgenizdeki sezonluk fırsatları keşfetmek için lütfen Sezonluk Sayfamızı ziyaret edin.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Amazon’a son iş başvurunuz için teşekkür ederiz. Dikkatli bir değerlendirmeden sonra, iş başvurunuzda daha fazla ilerleyemiyoruz.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "Zamanınıza değer veriyoruz ve gelecekte size bol şans diliyoruz.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "Son iş başvurunuz için teşekkür ederiz! Ne yazık ki, Amazon tarafından zaten istihdam edildiğiniz için bu özel pozisyon için uygun değilsiniz.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "İyi haber yok mu? Çevrimiçi olarak göz atabileceğiniz ve başvurabileceğiniz birçok açık fırsat var. Gelecekteki kariyer gelişiminizi keşfetmenin yollarından birkaçı:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "Ajans veya Sezonluk dönüşümler için amazon.com/conversions (http://amazon.com/conversions) adresini ziyaret edin.",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "Vardiya veya konum değişikliği istemek için, tesis ekibinize ulaşın.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "Yerel İK ekibiniz veya Çalışan Kaynak Merkezi (ERC) tüm sorularınız için en iyi kaynaktır. ERC ekibine 7/24 1-888-892-7180 (tel:18888927180) üzerinden ulaşabilirsiniz.",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Amazon’daki harika ekibin bir parçası olduğunuz için teşekkürler! Size mümkün olan en iyi çalışan kaynaklarını sağlamak için sürekli çabalıyoruz, ayrıcalıklar, ücretler ve esnek programlar - Hepsi Dünya’nın En Büyük İşvereni olma çabalarımızı destekliyor!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} pozisyonuna gösterdiğiniz ilgi için teşekkür ederiz. Kayıtlarımız, daha önce Amazon’da çalıştığınızı ve önceki Amazon istihdam kaydınıza göre yeniden işe almaya uygun olmadığınızı gösteriyor. Sonuç olarak, şu anda adaylığınızla ilerleyemiyoruz.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "Bu pozisyona gösterdiğiniz ilgi için teşekkür ederiz. Kayıtlarımız, daha önce Amazon’da çalıştığınızı ve önceki Amazon istihdam kaydınıza göre yeniden işe almaya uygun olmadığınızı gösteriyor. Sonuç olarak, şu anda adaylığınızla ilerleyemiyoruz.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "Fesih nedeni ile Amazon'da çalıştığınız son günden 90 gün sonra yeniden başvurabilirsiniz.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Şu anda tüm vardiyalar dolduruldu.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Diğer işlere başvurmak için lütfen kontrol paneline dönün.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "Uygulama Hatası",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "Bir şeyler yanlış, lütfen kontrol paneline gidin",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "Panoya geri dön",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Devam etmek için lütfen kutuyu işaretleyin.",
+      "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Amerika Birleşik Devletleri - Sosyal Güvenlik Numarası",

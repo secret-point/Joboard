@@ -49,11 +49,11 @@
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "Con la tua candidatura, confermi che:",
+      "value" : "Effettuando la tua candidatura, confermi che:",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
-      "value" : "Con la candidatura, leggi e accetti il",
+      "value" : "Effettuando la candidatura, leggi e accetti il",
       "note" : "Text for the user data policy agreement title"
     },
     "BB-ConsentPage-user-data-Policy-button" : {
@@ -69,7 +69,7 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon si impegna per un ambiente di lavoro diversificato e inclusivo. Amazon è un datore di lavoro per le pari opportunità e non discrimina in base a razza, origine nazionale, sesso, identità di genere, orientamento sessuale, stato di veterano protetto, disabilità, età o altro stato legalmente protetto. Per le persone con disabilità che desiderano richiedere un alloggio, visitare la pagina <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "Amazon si impegna per un ambiente di lavoro diversificato e inclusivo. Amazon è un datore di lavoro che sostiene le pari opportunità e non discrimina in base a etnia, origine nazionale, sesso, identità di genere, orientamento sessuale, stato di veterano protetto, disabilità, età o altro stato legalmente protetto. Per le persone con disabilità che vogliono richiedere un alloggio, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
@@ -77,11 +77,11 @@
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "Oltre al ruolo per cui ti sei candidato oggi, potremmo avere altre posizioni che richiedono funzioni lavorative uguali o simili. Questi ruoli possono essere posizioni a tempo pieno, a tempo ridotto, part-time, stagionali e/o temporanee disponibili in questa sede o in altre sedi Amazon vicine. Non sei obbligato ad accettare alcun ruolo presso Amazon o i nostri partner, tuttavia, completando la tua candidatura accetti di essere considerato per ruoli a ore dello stesso livello entro un raggio di 30 miglia dalla sede della tua candidatura. Ciò include la condivisione delle tue informazioni di candidato con i nostri partner (agenzie per il personale) che si occupano delle assunzioni per le nostre esigenze di dipendenti regolari e temporanei.",
+      "value" : "Oltre al ruolo per cui ti sei candidato oggi, potremmo avere altre posizioni che richiedono funzioni lavorative uguali o simili. Questi ruoli possono essere posizioni a tempo pieno, a tempo ridotto, part-time, stagionali e/o temporanee disponibili in questa sede o in altre sedi Amazon vicine. Non sei obbligato ad accettare alcun ruolo presso Amazon o i nostri partner, tuttavia completando la tua candidatura accetti di essere considerato per ruoli a ore dello stesso livello entro un raggio di 30 miglia dalla sede della tua candidatura. Ciò include la condivisione delle tue informazioni di candidato con i nostri partner (agenzie per il personale) che si occupano delle assunzioni per le nostre esigenze di dipendenti regolari e temporanei.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "Con la tua candidatura, tu:",
+      "value" : "Effettuando la candidatura:",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
@@ -89,7 +89,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "acconsentire al trattamento, all'analisi e alla valutazione dei tuoi dati personali da parte di Amazon, salesforce.com o di qualsiasi altra terza parte ai fini della tua candidatura e per qualsiasi altro scopo legittimo di Amazon. A scanso di equivoci, il “trattamento” dei tuoi dati personali includerà, a titolo non esaustivo, la raccolta, la ricezione, la registrazione, l'organizzazione, la raccolta, la memorizzazione, l'aggiornamento, l'alterazione, l'utilizzo, la diffusione, la distribuzione, la fusione, il collegamento, il blocco, la degradazione, la cancellazione o la distruzione dei tuoi dati personali;",
+      "value" : "acconsentire al trattamento, all'analisi e alla valutazione dei tuoi dati personali da parte di Amazon, di salesforce.com o di qualsiasi altra terza parte ai fini della tua candidatura e per qualsiasi altro scopo legittimo di Amazon. A scanso di equivoci, il “trattamento” dei tuoi dati personali includerà, a titolo non esaustivo, la raccolta, la ricezione, la registrazione, l'organizzazione, la fascicolazione, la memorizzazione, l'aggiornamento, l'alterazione, l'utilizzo, la diffusione, la distribuzione, la fusione, il collegamento, il blocco, la degradazione, la cancellazione o la distruzione dei tuoi dati personali;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
@@ -113,7 +113,7 @@
       "note" : "Text for complete required documents application step"
     },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
-      "value" : "Pianifica un appuntamento pre-assunzione",
+      "value" : "Programma un appuntamento pre-assunzione",
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
@@ -217,7 +217,7 @@
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "Come previsto dalla legge applicabile, la tua offerta è subordinata al superamento del controllo richiesto dei precedenti personali, dello screening antidroga (se applicabile) e del controllo di idoneità alla riassunzione (se applicabile), quindi è importante completare i passaggi pre-assunzione riportati nella pagina successiva. In alcune circostanze, il primo giorno di lavoro può essere posticipato a causa del mancato completamento dei requisiti di per-assunzione in tempo utile. Se questo è il caso, puoi aspettarti di avere presto nostre notizie.",
+      "value" : "Come previsto dalla legge applicabile, la tua offerta è subordinata al superamento del controllo richiesto dei precedenti personali, dello screening antidroga (se è il caso) e del controllo di idoneità alla riassunzione (se è il caso), quindi è importante completare i passaggi pre-assunzione riportati nella pagina successiva. In alcune circostanze, il primo giorno di lavoro può essere posticipato a causa del mancato completamento dei requisiti di pre-assunzione in tempo utile. Se questo è il caso, puoi aspettarti di avere presto nostre notizie.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -241,11 +241,11 @@
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "Accettando questa offerta, confermi di aver compreso i requisiti di questa posizione.",
+      "value" : "Accettando questa offerta, confermi di aver sottinteso i requisiti di questa posizione.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
-      "value" : "Controllo dei precedenti",
+      "value" : "Controllo dell’esperienza professionale",
       "note" : "Text for BGC page title"
     },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
@@ -285,7 +285,7 @@
       "note" : "Text for the additional bgc form next button"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
-      "value" : "Indirizzo (riga 1)",
+      "value" : "Indirizzo riga 1",
       "note" : "Text for the additional bgc form  address line 1 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
@@ -313,7 +313,7 @@
       "note" : "Text for the additional bgc form  state label text"
     },
     "BB-BGC-Additional-bgc-form-state-error-text" : {
-      "value" : "Inserisci uno stato/provincia valido",
+      "value" : "Inserisci uno stato/provincia valido/a",
       "note" : "Text for the additional bgc form state error message text"
     },
     "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
@@ -345,11 +345,11 @@
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
-      "value" : "Documento d'identità nazionale",
+      "value" : "Documento di identità",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "Inserisci un tipo di documento d'identità nazionale valido",
+      "value" : "Inserisci un tipo di documento di identità valido",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
@@ -357,7 +357,7 @@
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "Numero del documento d'identità nazionale",
+      "value" : "Numero di documento di identità",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
@@ -389,7 +389,7 @@
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "Sei stato condannato per reato minore o reato o sei stato rilasciato dal carcere o sulla parola per una condanna per un reato minore o un reato negli ultimi sette (7) anni?",
+      "value" : "Sei stato condannato per reato minore o reato penale o sei stato rilasciato dal carcere o sulla parola per una condanna per un reato minore o un reato penale negli ultimi sette (7) anni?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
@@ -405,7 +405,7 @@
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "In relazione alla tua domanda di assunzione presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), provvederemo a ottenere un rapporto sul consumatore sul tuo conto da un’agenzia di rapporto sui consumatori. Questo è comunemente noto come “controllo dei precedenti”.",
+      "value" : "In relazione alla tua domanda di assunzione presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), acquisiremo un rapporto sul consumatore nei tuoi riguardi da un’agenzia di rapporto sui consumatori. Ciò è comunemente noto come “controllo dei precedenti”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
@@ -413,7 +413,7 @@
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "Con la mia firma elettronica di seguito, autorizzo Amazon a procurarsi il rapporto sul consumatore di cui sopra ora e per tutta la durata del mio impiego o impegno con Amazon Corporate.",
+      "value" : "Con la mia firma elettronica di seguito, autorizzo Amazon ad acquisire il rapporto sul consumatore di cui sopra ora e per tutta la durata del mio impiego o impegno con Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -425,7 +425,7 @@
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "RIFIUTO di autorizzare Amazon ad eseguire questo controllo dei precedenti.",
+      "value" : "RIFIUTO di autorizzare Amazon a eseguire questo controllo dei precedenti.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -445,19 +445,19 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è First Advantage, si trova in 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 e può essere contattato al numero (800) 845-6004 o sul sito www.fadv.com.",
+      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è First Advantage, sita all’indirizzo 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 e che può essere contattata al numero (800) 845-6004 o sul sito www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è Accurate Background, si trova a 7515 Irvine Center Dr., Irvine, CA 92618 e può essere contattato al numero (800) 216-8024 o sul sito www.accuratebackground.com.\n\n* Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
+      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è Accurate Background, si trova all’indirizzo 7515 Irvine Center Dr., Irvine, CA 92618 e può essere contattato al numero (800) 216-8024 o sul sito www.accuratebackground.com.\n\n* Sottintendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da First Advantage.",
+      "value" : "Sottintendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
+      "value" : "Sottintendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
@@ -469,27 +469,27 @@
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato da un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic su <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato presso un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato da un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic su <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato presso un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto a tuo nome. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
+      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto nei tuoi confronti. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto a tuo nome. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
+      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto nei tuoi confronti. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK: </b>Hai il diritto di inviare una richiesta scritta ad Amazon per sapere se abbiamo richiesto un rapporto sul consumatore o un rapporto investigativo sul consumatore a tuo nome. Sopra sono indicati l'indirizzo e il numero di telefono dell'agenzia di rating. Hai il diritto di contattare qualsiasi agenzia di rating per ispezionare o ricevere una copia di tale segnalazione. Fai clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">qui</a> per informazioni sui tuoi diritti ai sensi dell'articolo 23-A dell’ordinamento penitenziario di New York.</p>",
+      "value" : "<p><b>NEW YORK: </b>Hai il diritto di inviare una richiesta scritta ad Amazon per sapere se abbiamo richiesto un rapporto sul consumatore o un rapporto investigativo sul consumatore nei tuoi riguardi. Sopra sono indicati l'indirizzo e il numero di telefono dell'agenzia di rating. Hai il diritto di contattare qualsiasi agenzia di rating per ispezionare o ricevere una copia di tale rapporto. Fai clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">qui</a> per informazioni sui tuoi diritti ai sensi dell'articolo 23-A dell’ordinamento penitenziario di New York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
-      "value" : "<p><b>TUTTI GLI STATI: </b>Ti forniremo una copia gratuita di eventuali controlli dei precedenti se selezioni questa casella",
+      "value" : "<p><b>TUTTI GLI STATI: </b>ti forniremo una copia gratuita di eventuali controlli dei precedenti se selezioni questa casella",
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
@@ -501,7 +501,7 @@
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
-      "value" : "Nome e cognome precedente",
+      "value" : "Nome e cognome legale precedente",
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
@@ -565,15 +565,15 @@
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "Se disponi di un numero di previdenza sociale, sei tenuto a fornirlo. In caso contrario, il processo di assunzione potrebbe subire dei ritardi, con il rischio di perdere la data di inizio e il turno prescelto.",
+      "value" : "Se disponi di un SSN, sei tenuto a fornirlo. In caso contrario, il processo di assunzione potrebbe subire dei ritardi, con il rischio di perdere la data di inizio e il turno prescelto.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Continuando, confermo di non avere un numero di previdenza sociale.  Sono a conoscenza del fatto che, come consentito dalla legge, Amazon effettuerà un controllo successivo sul mio conto se modifico o aggiorno il mio numero di previdenza sociale durante il processo di inserimento o durante il mio impiego.",
+      "value" : "Continuando, confermo di non avere un SSN.  Sottintendo che, come consentito dalla legge, Amazon effettuerà un successivo controllo dei precedenti sul mio conto se modifico o aggiorno il mio SSN durante il processo di inserimento o durante il mio impiego.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "Riconosco inoltre che qualsiasi dichiarazione mendace intenzionale del mio SSN sarà presa in considerazione da Amazon e può comportare la revoca della mia offerta di lavoro o, se sono assunto, la cessazione del mio rapporto di lavoro.",
+      "value" : "Riconosco inoltre che qualsiasi dichiarazione mendace intenzionale del mio SSN sarà presa in esame da Amazon e può comportare la revoca della mia offerta di lavoro o, in caso di assunzione, la cessazione del rapporto di lavoro.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
@@ -609,7 +609,7 @@
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "Con la mia firma elettronica qui sotto, certifico di aver letto, compreso e accettato tutte le dichiarazioni contenute nel presente documento di accettazioni e autorizzazioni sul Non-Fair Credit Reporting Act per il controllo dei precedenti. Indica la tua accettazione inserendo le informazioni richieste nei campi sottostanti.",
+      "value" : "Con la mia firma elettronica qui sotto, certifico di aver letto, sottinteso e accettato tutte le dichiarazioni contenute nel presente documento di accettazioni e autorizzazioni sul Non-Fair Credit Reporting Act per il controllo dei precedenti. Indica il tuo assenso inserendo le informazioni richieste nei campi sottostanti.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
@@ -665,11 +665,11 @@
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "Siamo un appaltatore o subappaltatore federale tenuto per legge a fornire pari opportunità di lavoro a persone qualificate con disabilità. Siamo inoltre tenuti a misurare i nostri progressi verso l’ottenimento di almeno il 7% della nostra forza lavoro composta da persone con disabilità. Per fare ciò, dobbiamo chiedere ai candidati e ai dipendenti se hanno una disabilità o hanno mai avuto una disabilità. Poiché una persona può diventare disabile in qualsiasi momento, chiediamo a tutti i nostri dipendenti di aggiornare le proprie informazioni personali almeno ogni cinque anni.",
+      "value" : "Siamo un appaltatore o subappaltatore federale tenuti per legge a fornire pari opportunità di lavoro a persone qualificate con disabilità. Siamo inoltre tenuti a misurare i nostri progressi verso l’ottenimento di almeno il 7% della nostra forza lavoro composta da persone con disabilità. Per fare ciò, dobbiamo chiedere ai candidati e ai dipendenti se hanno una disabilità o hanno mai avuto una disabilità. Poiché una persona può diventare disabile in qualsiasi momento, chiediamo a tutti i nostri dipendenti di aggiornare le proprie informazioni personali almeno ogni cinque anni.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Identificarti come persona con disabilità è volontario e speriamo che tu scelga di farlo. La tua risposta verrà mantenuta riservata e non sarà visibile dai responsabili delle selezioni o da chiunque altro coinvolto nelle decisioni riguardanti il personale. La compilazione del modulo non avrà alcun impatto negativo su di te, indipendentemente dal fatto che tu ti sia autoidentificato in passato. Per ulteriori informazioni su questo modulo o sugli obblighi degli appaltatori federali in materia di parità di impiego ai sensi della Sezione 503 del Rehabilitation Act, visita il sito web dell'Ufficio federale dei programmi di conformità dei contratti federali (OFCCP) del Dipartimento del Lavoro degli Stati Uniti all'indirizzo<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "L’identificazione come persona con disabilità è volontaria e speriamo che tu scelga di farlo. La tua risposta verrà mantenuta riservata e non sarà visibile dai responsabili delle selezioni o da chiunque altro coinvolto nelle decisioni riguardanti il personale. La compilazione del modulo non avrà alcun impatto negativo su di te, indipendentemente dal fatto che tu ti sia autoidentificato in passato. Per ulteriori informazioni su questo modulo o sugli obblighi degli appaltatori federali in materia di parità di impiego ai sensi della Sezione 503 del Rehabilitation Act, visita il sito web dell'Ufficio federale dei programmi di conformità dei contratti federali (OFCCP) del Dipartimento del Lavoro degli Stati Uniti all'indirizzo <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -677,7 +677,7 @@
       "note" : "Text for how I know I have disability header"
     },
     "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
-      "value" : "Si è considerati disabili se si è affetti da una menomazione fisica o mentale o da una patologia che limita in modo sostanziale una delle principali attività della vita, o se si ha una storia o dei precedenti di tale menomazione o patologia.",
+      "value" : "Si è considerati disabili se si è affetti da una menomazione fisica o mentale o da una patologia che limita in modo sostanziale una delle principali attività della vita, o se si ha un passato o dei precedenti di tale menomazione o patologia.",
       "note" : "Text for how I know I have disability content"
     },
     "BB-SelfId-disability-form-disability-scope-list-header-text" : {
@@ -765,11 +765,11 @@
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "Sì, ho una disabilità o una storia/precedenti di disabilità",
+      "value" : "Sì, ho una disabilità o un passato/precedenti di disabilità",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "No, non ho una disabilità o una storia/precedenti di disabilità",
+      "value" : "No, non ho una disabilità o un passato/precedenti di disabilità",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
@@ -789,7 +789,7 @@
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon apprezza tutte le forme di diversità ed è soggetta a determinati requisiti di registrazione e segnalazione in materia di non discriminazione e di azioni positive che ci impongono di invitare i candidati e i dipendenti ad auto-identificare volontariamente il proprio genere e la propria razza/etnia. L’invio di queste informazioni è del tutto volontario e il rifiuto di fornirle non comporta alcuna conseguenza negativa. Le informazioni ottenute saranno mantenute riservate e potranno essere usate solo in conformità con le disposizioni delle leggi, degli ordini esecutivi e dei regolamenti federali applicabili, compresi quelli che richiedono che le informazioni siano riassunte e comunicate al governo federale ai fini dell'applicazione dei diritti civili. Se scegli di non autoidentificare il tuo sesso o razza/etnia in questo momento, il governo federale ci richiede di determinare queste informazioni per i dipendenti mediante sondaggio visivo e/o altre informazioni disponibili.",
+      "value" : "Amazon valorizza tutte le forme di diversità ed è soggetta a determinati requisiti di registrazione e segnalazione in materia di non discriminazione e di azioni positive che ci impongono di invitare i candidati e i dipendenti ad auto-identificare volontariamente il proprio genere e la propria etnia. L’invio di queste informazioni è del tutto volontario e il rifiuto di fornirle non comporta alcuna conseguenza negativa. Le informazioni ottenute saranno mantenute riservate e potranno essere usate solo in conformità con le disposizioni delle leggi, degli ordini esecutivi e dei regolamenti federali applicabili, compresi quelli che richiedono che le informazioni siano riassunte e comunicate al governo federale ai fini dell'applicazione dei diritti civili. Se scegli di non autoidentificare il tuo sesso o la tua etnia in questo momento, il governo federale ci richiede di determinare queste informazioni per i dipendenti mediante ispezione visiva e/o altre informazioni disponibili.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -805,11 +805,11 @@
       "note" : "Text for the equal opportunity form gender option: Female"
     },
     "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
-      "value" : "Scelgo di non identificarmi",
+      "value" : "Scelgo di non autoidentificarmi",
       "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
-      "value" : "Qual è la tua razza/etnia di provenienza?",
+      "value" : "Qual è la tua etnia di provenienza?",
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
@@ -817,7 +817,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "Persone con origini in uno dei popoli originari del Nord e del Sud America (compresa l'America Centrale), e che mantengono un'affiliazione tribale o un attaccamento alla comunità",
+      "value" : "Persone con origini di un popolo del Nord e del Sud America (compresa l'America Centrale), e che mantengono un'affiliazione tribale o un legame con la comunità",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
@@ -825,7 +825,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "Persone con origini in uno qualsiasi dei popoli originari dell'Estremo Oriente, del Sud-est asiatico o del subcontinente indiano; tra cui, ad esempio, Cambogia, Cina, India, Giappone, Corea, Malesia, Pakistan, Isole Filippine, Thailandia e Vietnam",
+      "value" : "Persone con origini di un popolo dell'Estremo Oriente, del Sud-est asiatico o del subcontinente indiano; tra cui, ad esempio, Cambogia, Cina, India, Giappone, Corea, Malesia, Pakistan, Isole Filippine, Thailandia e Vietnam",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
@@ -833,7 +833,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "Persone con origini in uno qualsiasi dei gruppi razziali neri dell'Africa",
+      "value" : "Persone con origini di un gruppo etnico nero dell'Africa",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
@@ -841,7 +841,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
-      "value" : "Persone di cultura o origine cubana, messicana, portoricana, sudamericana o centroamericana o di altra cultura o origine spagnola, indipendentemente dalla razza",
+      "value" : "Persone di cultura o origine cubana, messicana, portoricana, sudamericana o centroamericana o di altra cultura o origine spagnola, indipendentemente dall’etnia",
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
@@ -849,7 +849,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
-      "value" : "Persone con origini in uno qualsiasi dei popoli delle Hawaii, Guam, Samoa o altre isole del Pacifico",
+      "value" : "Persone con origine di un popolo di Hawaii, Guam, Samoa o di altre isole del Pacifico",
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
@@ -857,19 +857,19 @@
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
-      "value" : "Persone con origini in uno dei popoli originari dell'Europa, del Medio Oriente o del Nord Africa",
+      "value" : "Persone con origine di un popolo dell'Europa, del Medio Oriente o del Nord Africa",
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
-      "value" : "Due o più razze (non ispaniche o latine)",
+      "value" : "Due o più etnie (non ispaniche o latine)",
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Persone non ispaniche che si identificano con più di una delle seguenti cinque razze: (1) bianco, (2) nero, (3) asiatico, (4) nativo hawaiano/di altre isole del Pacifico, (5) indiano d'America/nativo dell'Alaska",
+      "value" : "Persone non ispaniche che si identificano con più di una delle seguenti cinque etnie: (1) bianco, (2) nero, (3) asiatico, (4) nativo hawaiano/di altre isole del Pacifico, (5) indiano d'America/nativo dell'Alaska",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
-      "value" : "Scelgo di non identificarmi",
+      "value" : "Scelgo di non autoidentificarmi",
       "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
@@ -877,11 +877,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia varietà di carriere, influenzando il cambiamento in tutto il mondo. Per questi motivi, stiamo attivamente perseguendo l'assunzione di veterani e coniugi di militari.",
+      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia gamma di percorsi professionali, influenzando il cambiamento in tutto il mondo. Per questi motivi, sosteniamo attivamente l'assunzione di veterani e coniugi di militari.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia varietà di carriere, influenzando il cambiamento in tutto il mondo. Per questi motivi, stiamo attivamente perseguendo l'assunzione di veterani e coniugi di militari.",
+      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia gamma di percorsi professionali, influenzando il cambiamento in tutto il mondo. Per questi motivi, sosteniamo attivamente l'assunzione di veterani e coniugi di militari.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -897,11 +897,11 @@
       "note" : "Text for the equal opportunity form veteran status item: NO"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
-      "value" : "Scelgo di non identificarmi",
+      "value" : "Scelgo di non autoidentificarmi",
       "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
-      "value" : "Sei un coniuge di militare?",
+      "value" : "Sei un coniuge di un militare?",
       "note" : "Text for the equal opportunity form : military spouse label text"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
@@ -913,7 +913,7 @@
       "note" : "Text for the equal opportunity form military-spouse item: NO"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
-      "value" : "Scelgo di non identificarmi",
+      "value" : "Scelgo di non autoidentificarmi",
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
@@ -925,11 +925,11 @@
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>Veterano disabile</b>: un veterano dei militari statunitensi, di terra, navale o aereo Uniti che ha diritto a un indennizzo (o che, se non ricevesse l'indennità di pensionamento militare, avrebbe diritto a un indennizzo) ai sensi delle normative amministrate dal Segretario degli Affari dei Veterani; o una persona che è stata congedata o dispensata dal servizio attivo a causa di una disabilità connessa al servizio.",
+      "value" : "<b>Veterano disabile</b>: un veterano dell’esercito di terra, navale o aereo statunitense che ha diritto a un indennizzo (o che, se non ricevesse l'indennità di pensionamento militare, avrebbe diritto a un indennizzo) ai sensi delle normative amministrate dal Segretario degli Affari dei Veterani; o una persona che è stata congedata o dispensata dal servizio attivo a causa di una disabilità connessa al servizio.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: qualsiasi veterano durante il periodo di tre anni a partire dalla data di congedo o dispensa dal servizio attivo nelle forze armate statunitensi, di terra, navali o aeree.",
+      "value" : "</b>: qualsiasi veterano durante il periodo di tre anni a partire dalla data di congedo o dispensa dal servizio attivo nelle forze armate di terra, navali o aeree statunitensi.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
@@ -937,7 +937,7 @@
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
-      "value" : "<b>Veterano con medaglia al servizio delle forze armate</b>: un veterano che, mentre prestava servizio attivo nei militari degli Stati Uniti, di terra, navali o aerei, ha partecipato a un'operazione militare degli Stati Uniti per la quale è stata assegnata una medaglia al servizio delle Forze Armate ai sensi dell’<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Ordine Esecutivo</a>.",
+      "value" : "<b>Veterano con medaglia per il servizio nelle forze armate</b>: un veterano che, mentre prestava servizio attivo nelle forze armate di terra, navali o aeree statunitensi, ha partecipato a un'operazione militare degli Stati Uniti per la quale è stata assegnata una medaglia per il servizio nelle Forze Armate ai sensi dell’<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Ordine Esecutivo</a>.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
@@ -953,7 +953,7 @@
       "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
-      "value" : "Scelgo di non identificarmi",
+      "value" : "Scelgo di non autoidentificarmi",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
@@ -965,7 +965,7 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "In relazione al mio possibile impiego presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), Amazon può acquisire un rapporto investigativo sui consumatori (“Rapporto”), noto anche come controllo dei precedenti, su di me dalla seguente agenzia di rapporti sui consumatori:",
+      "value" : "In relazione al mio possibile impiego presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), Amazon può acquisire un rapporto investigativo sui consumatori (“Rapporto”), noto anche come controllo dei precedenti, nei miei riguardi dalla seguente agenzia di rapporti sui consumatori:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -989,7 +989,7 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "Sono consapevole che:",
+      "value" : "Sottintendo che:",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
@@ -997,23 +997,23 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "Le informazioni ottenute da Accurate, e incluse in qualsiasi rapporto, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, proprietari di abitazioni, enti pubblici, e altri come i miei vicini, amici e colleghi che conosco e che potrebbero avere tale conoscenza.",
+      "value" : "Le informazioni ottenute da Accurate, e incluse in qualsiasi Rapporto, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, padroni di casa, enti pubblici, e con altre persone come vicini di casa, amici e colleghi che conosco e che potrebbero avere tali informazioni.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Le indagini che devono essere condotte da Accurate, i cui risultati possono essere inclusi in qualsiasi rapporto fornito ad Amazon, possono includere vari tipi di informazioni su di me in merito a carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
+      "value" : "Le indagini che devono essere condotte da Accurate, i cui risultati possono essere inclusi in qualsiasi Rapporto fornito ad Amazon, possono includere vari tipi di informazioni su di me in merito a carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Secondo il Codice Civile della California § 1785 e seguenti e § 1786 e seguenti, se viene richiesto da Amazon un rapporto su di me, posso visionare il fascicolo che Accurate conserva su di me durante il suo normale orario di ufficio. Sono consapevole che posso anche (1) ottenere una copia del suddetto fascicolo, dietro presentazione di un opportuno documento di identità e pagamento dei costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di Accurate durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia presenza; e (2) ricevere una sintesi del suddetto fascicolo da Accurate per telefono, a mie spese, dietro presentazione di un documento di identità adeguato e di una richiesta scritta ad Accurate di comunicazione telefonica. Sono a conoscenza del fatto che Accurate dispone di personale qualificato per fornirmi spiegazioni sul suddetto fascicolo, comprese eventuali informazioni codificate, e che, se mi dovessi presentare di persona presso gli uffici di Accurate, posso essere accompagnato da un'altra persona, purché questa fornisca ad Accurate un documento di identità adeguato.",
+      "value" : "Secondo il codice civile della California § 1785 e seguenti e § 1786 e seguenti, se viene richiesto da Amazon un Rapporto nei miei riguardi, posso visionare la documentazione che Accurate conserva su di me durante il suo normale orario di ufficio. Sottintendo che posso anche (1) ottenere una copia di questa documentazione, fornendo un’opportuna identificazione e pagando i costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di Accurate durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia presenza programmata; e (2) ricevere un riepilogo di questa documentazione da Accurate per telefono, a mie spese, dopo aver inviato un'opportuna identificazione e una richiesta scritta a Accurate per la divulgazione telefonica. Sottintendo che Accurate ha personale qualificato disponibile a spiegarmi la sua documentazione, comprese eventuali informazioni codificate, e, se mi presento di persona presso gli uffici di Accurate, potrò essere accompagnato da un'altra persona purché quella persona fornisca un'identificazione adeguata a Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "Le informazioni sulle pratiche sulla privacy sono disponibili all’indirizzo <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
+      "value" : "Le informazioni sulle pratiche sulla privacy di Accurate sono disponibili all’indirizzo <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
-      "value" : "Primo vantaggio",
+      "value" : "First Advantage",
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
@@ -1033,23 +1033,23 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "Capisco che:",
+      "value" : "Sottintendo che:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "Nella misura in cui viene richiesto un Rapporto a First Advantage, le informazioni contenute in tale Rapporto verranno utilizzate esclusivamente per determinare la mia idoneità all'impiego.",
+      "value" : "Nella misura in cui viene richiesto un Rapporto a First Advantage, le informazioni contenute in tale Rapporto verranno usate esclusivamente per determinare la mia idoneità all'impiego.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "Le informazioni ottenute da First Advantage, e incluse in qualsiasi Report, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, proprietari, enti pubblici, e altri come i miei vicini, amici e colleghi che conosco e che potrebbero avere tale conoscenza.",
+      "value" : "Le informazioni ottenute da First Advantage, e incluse in qualsiasi Rapporto, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, padroni di casa, enti pubblici, e con altre persone come vicini di casa, amici e colleghi che conosco e che potrebbero avere tali informazioni.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "Le indagini che devono essere condotte da First Advantage, i cui risultati possono essere inclusi in qualsiasi Report fornito ad Amazon, possono includere vari tipi di informazione su di me in merito al mio carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
+      "value" : "Le indagini che devono essere condotte da First Advantage, i cui risultati possono essere inclusi in qualsiasi Rapporto fornito ad Amazon, possono includere vari tipi di informazioni su di me in merito a carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "Secondo il codice civile della California § 1785 e seguenti. e § 1786 e seguenti, se viene richiesto da Amazon un rapporto su di me, posso visualizzare il file che First Advantage conserva su di me durante il normale orario di ufficio. Comprendo che posso anche (1) ottenere una copia di questo file, dopo aver inviato una corretta identificazione e pagando i costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di First Advantage durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia apparizione programmata; e (2) ricevere un riepilogo di questo file da First Advantage per telefono, a mie spese, dopo aver inviato un'identificazione adeguata e una richiesta scritta a First Advantage per la divulgazione telefonica. Comprendo che First Advantage ha personale qualificato disponibile per spiegarmi il suo fascicolo, comprese eventuali informazioni codificate, e, se mi presento di persona presso gli uffici di First Advantage, potrei essere accompagnato da un'altra persona purché quella persona fornisca un'identificazione adeguata a First Advantage.",
+      "value" : "Secondo il codice civile della California § 1785 e seguenti e § 1786 e seguenti, se viene richiesto da Amazon un Rapporto su di me, posso visualizzare la documentazione che First Advantage conserva su di me durante il normale orario di ufficio. Sottintendo che posso anche (1) ottenere una copia di questa documentazione, fornendo un’opportuna identificazione e pagando i costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di First Advantage durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia presenza programmata; e (2) ricevere un riepilogo di questa documentazione da First Advantage per telefono, a mie spese, dopo aver inviato un'opportuna identificazione e una richiesta scritta a First Advantage per la divulgazione telefonica. Sottintendo che First Advantage ha personale qualificato disponibile a spiegarmi la sua documentazione, comprese eventuali informazioni codificate, e, se mi presento di persona presso gli uffici di First Advantage, potrò essere accompagnato da un'altra persona purché quella persona fornisca un'identificazione adeguata a First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1057,7 +1057,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "Dichiaro di aver letto questo documento e di averlo compreso e che, ai sensi della presente INFORMATIVA DELLA CALIFORNIA SUI RAPPORTI INVESTIGATIVI DEI CONSUMATORI, autorizzo Amazon a ottenere un report investigativo dei consumatori su di me.",
+      "value" : "Dichiaro di aver letto questo documento e di averlo compreso e che, ai sensi della presente INFORMATIVA DELLA CALIFORNIA SUI RAPPORTI INVESTIGATIVI DEI CONSUMATORI, autorizzo Amazon a ottenere un rapporto investigativo del consumatore su di me.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1065,7 +1065,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "Ci sei quasi,{firstname} {lastname}! Abbiamo bisogno che tu venga per una foto del badge, un'autorizzazione completa per lavorare e un test antidroga, se applicabile.",
+      "value" : "Ci sei quasi, {firstname} {lastname}! Abbiamo bisogno che tu venga per una foto per il badge, un'autorizzazione completa per lavorare e un test antidroga, se è il caso.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1073,7 +1073,7 @@
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
-      "value" : "Pianifica un appuntamento pre-assunzione",
+      "value" : "Programma un appuntamento pre-assunzione",
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
@@ -1085,7 +1085,7 @@
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "Abbiamo un posto per te per le prossime {hours} ore e {minutes} minuti per completare i passaggi rimanenti.",
+      "value" : "Stiamo tenendo un posto per te per le prossime {hours} ore e {minutes} minuti, in modo da completare i passaggi rimanenti.",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
@@ -1101,15 +1101,15 @@
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
-      "value" : "{name}, il tuo interesse per Amazon significa molto per noi.",
+      "value" : "{name}, il tuo interesse per Amazon è molto importante per noi.",
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "Grazie mille per averci dato l'opportunità di considerarti per questa posizione. Purtroppo in questo momento non possiamo portare avanti la tua candidatura.",
+      "value" : "Grazie mille per averci proposto la tua candidatura per questa posizione. Purtroppo in questo momento non possiamo procedere con la tua candidatura.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "Per essere riconsiderato per questo ruolo in un altro momento, è possibile eseguire nuovamente la valutazione tra tre mesi.",
+      "value" : "Per essere riconsiderato per questo ruolo in un altro momento, potrai eseguire nuovamente la valutazione tra tre mesi.",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
@@ -1121,11 +1121,11 @@
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "Siamo davvero entusiasti del tuo interesse ad entrare a far parte di Amazon!",
+      "value" : "Siamo davvero entusiasti del tuo interesse a far parte di Amazon!",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "Questa valutazione ti aiuterà a comprendere il ruolo dell'associato e ci aiuterà a conoscerti.",
+      "value" : "Questa valutazione ti aiuterà a comprendere il ruolo da dipendente e ci aiuterà a conoscerti.",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
@@ -1133,11 +1133,11 @@
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "In Amazon, celebriamo la diversità della nostra forza lavoro e i diversi modi in cui lavoriamo. Se hai una disabilità e hai bisogno di un alloggio durante il processo di assunzione, compresa la valutazione, visita<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "In Amazon valorizziamo la diversità della nostra forza lavoro e i diversi modi in cui lavoriamo. Se hai una disabilità e hai bisogno di un alloggio durante il processo di assunzione, valutazione compresa, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Nessuna parte della valutazione è programmata</b>: puoi lavorare secondo i tuoi ritmi. Tutte le sezioni di questa valutazione:",
+      "value" : "<b>Nessuna parte della valutazione è cronometrata</b>: puoi lavorare secondo i tuoi ritmi. Tutte le sezioni di questa valutazione:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1161,11 +1161,11 @@
       "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
-      "value" : "Dettagli mansione",
+      "value" : "Dettagli offerta di lavoro",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
-      "value" : "Controllo dei precedenti",
+      "value" : "Controllo dell’esperienza professionale",
       "note" : "Text for the job details section background check text"
     },
     "BB-ReviewSubmit-job-details-section-authorized-text" : {
@@ -1173,15 +1173,15 @@
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "Invia una copia gratuita del controllo dei precedenti",
+      "value" : "Invia una copia gratuita della verifica dell’esperienza professionale",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
-      "value" : "Tipo di carta d'identità nazionale:",
+      "value" : "Tipo di documento di identità:",
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "Numero della carta d'identità nazionale:",
+      "value" : "Numero di documento di identità",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
@@ -1197,7 +1197,7 @@
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "Non vediamo l'ora di vederti al momento sopra indicato.",
+      "value" : "Ti aspettiamo all’ora indicata qui sopra.",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
@@ -1217,7 +1217,7 @@
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "Invia richiesta",
+      "value" : "Invia candidatura",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
@@ -1229,11 +1229,11 @@
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "Fornire i dettagli del riferimento (se applicabile)",
+      "value" : "Fornisci i dettagli del riferimento (se è il caso)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "Sei stato segnalato da un dipendente Amazon esistente?",
+      "value" : "Sei stato segnalato da un attuale dipendente Amazon?",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
@@ -1245,7 +1245,7 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "Inizia con le attività pre-assunzione",
+      "value" : "Inizia le attività pre-assunzione",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
@@ -1261,7 +1261,7 @@
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "Vieni a trovarci per una sessione di 30 minuti in qualsiasi momento tra le {startTime} - {endTime}.",
+      "value" : "Vieni a trovarci per una sessione di 30 minuti in qualsiasi momento tra le {startTime} e le {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
@@ -1273,15 +1273,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "Documento d'identità originale non scaduto",
+      "value" : "Documento d'identità con foto originale non scaduto",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "Documento in originale di autorizzazione al lavoro non scaduto",
+      "value" : "Documento originale di autorizzazione al lavoro non scaduto",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Fare clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>qui</a> per un elenco completo dei documenti accettabili.",
+      "value" : "Fai clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>qui</a> per avere un elenco completo dei documenti accettabili.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
@@ -1289,7 +1289,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "Se hai bisogno di una sistemazione, ad esempio un interprete ASL per l'evento di assunzione, vai su <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> e chatta con noi per richiedere un interprete. Contattaci immediatamente dopo aver fissato l’appuntamento. Abbiamo bisogno di almeno 48 ore prima dell'appuntamento per organizzarci.",
+      "value" : "Se hai bisogno di un adattamento, ad esempio un interprete ASL per l'evento di assunzione, vai su <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> e richiedi un interprete via chat. Contattaci immediatamente dopo aver fissato l’appuntamento. Abbiamo bisogno di almeno 48 ore prima dell'appuntamento per organizzarci.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
@@ -1297,11 +1297,11 @@
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "Fornisci il tuo ID di accesso del referente.",
+      "value" : "Fornisci l’ID di accesso del tuo referente.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "L'ID utente deve contenere solo lettere minuscole e deve contenere almeno 4 lettere.",
+      "value" : "L'ID utente deve contenere solo lettere minuscole e deve essere lungo almeno 4 lettere.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
@@ -1309,7 +1309,7 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "I test Amazon IAT partecipano a programmi di credito d'imposta federali e/o statali. Le informazioni fornite verranno utilizzate per determinare l'idoneità dell'azienda a questi programmi e non avranno alcun impatto negativo sulle decisioni di assunzione, fidelizzazione o promozione.",
+      "value" : "I test Amazon IAT fanno parte di programmi di credito d'imposta federali e/o statali. Le informazioni fornite verranno usate per determinare l'idoneità dell'azienda a questi programmi e non avranno alcun impatto negativo sulle decisioni di assunzione, mantenimento al lavoro o promozione.",
       "note" : "Text for the WOTC page description text"
     },
     "BB-Schedule-card-possible-start-date-text" : {
@@ -1321,7 +1321,7 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/ora",
+      "value" : "/hr",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
@@ -1345,11 +1345,11 @@
       "note" : "Text for the amazon rejects page return to dashboard text"
     },
     "BB-create-application-error-message-application-exist" : {
-      "value" : "Spiacenti, hai già fatto domanda per questo lavoro!",
+      "value" : "Spiacenti, ti sei già candidato per questo lavoro!",
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
-      "value" : "Campi obbligatori mancanti.",
+      "value" : "Mancano dei campi obbligatori.",
       "note" : "error message when trying to create application with missing application Id field"
     },
     "BB-create-application-error-message-internal-server-error" : {
@@ -1397,15 +1397,15 @@
       "note" : "error message for update application when candidate is not authorized"
     },
     "BB-update-application-error-message-sign-fcra-ack" : {
-      "value" : "Firma l’accettazione.",
+      "value" : "Firma la presa visione.",
       "note" : "error message for update application without fcra acknowledge signature"
     },
     "BB-update-application-error-message-sign-fcra-request" : {
-      "value" : "Firma la richiesta FCRA.",
+      "value" : "Firma la richiesta fcra.",
       "note" : "error message for update application without fcra request signature"
     },
     "BB-update-application-error-message-sign-nonfcra-ack" : {
-      "value" : "Firma l’accettazione.",
+      "value" : "Firma la presa visione.",
       "note" : "error message for update application without non fcra acknowledgement signature"
     },
     "BB-update-application-error-message-sign-notice-statement" : {
@@ -1413,7 +1413,7 @@
       "note" : "error message for update application without state notices signature"
     },
     "BB-update-application-error-message-selected-schedule-not-available" : {
-      "value" : "Il programma selezionato non è più disponibile. Seleziona un altro programma.",
+      "value" : "Il programma selezionato non è più disponibile, seleziona un altro programma.",
       "note" : "error message for update application when selected schedule is not available"
     },
     "BB-update-application-error-message-mismatch-signatures" : {
@@ -1421,7 +1421,7 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "Aggiornamento della candidatura non riuscito a causa del raggiungimento del numero massimo di modifiche del tuo documento di identità. Se in precedenza hai effettuato la registrazione con un indirizzo e-mail diverso, esci e prova ad accedere con quella e-mail, usando il link “Hai dimenticato il tuo PIN personale?” se necessario. Se hai bisogno di aiuto, contattaci via e-mail o tramite chat all'indirizzo <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "value" : "Aggiornamento della candidatura non riuscito perché hai raggiunto il numero massimo di modifiche al tuo documento di identità. Se in precedenza ti sei registrato con un indirizzo e-mail diverso, disconnettiti e prova ad accedere con quell'e-mail, usando il link “Hai dimenticato il tuo PIN personale?” se necessario. Se hai bisogno di aiuto, contattaci via e-mail o tramite chat all'indirizzo <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
@@ -1457,7 +1457,7 @@
       "note" : "error message for update application when Id Number is missing"
     },
     "BB-update-application-error-message--has-criminal-in7-years-missing" : {
-      "value" : "HasCriminalRecordWithinSevenYears non è presente nella richiesta.",
+      "value" : "HasCriminalRecordWithinSevenYears non presente nella richiesta.",
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
@@ -1485,7 +1485,7 @@
       "note" : "error message for update application with invalid previous legal name"
     },
     "BB-update-application-error-message-bgc-validation-failed" : {
-      "value" : "Le informazioni aggiuntive sui precedenti non sono valide. Aggiorna tutti i campi obbligatori.",
+      "value" : "Le informazioni aggiuntive sulle precedenti esperienze professionali non sono valide. Aggiorna tutti i campi obbligatori.",
       "note" : "error message for update application with invalid additional background"
     },
     "BB-update-application-error-message-nhe-apt-missing" : {
@@ -1525,7 +1525,7 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Il numero di documento di identità o SSN inserito è già associato a un altro indirizzo e-mail nel nostro sistema. Se in precedenza hai effettuato la registrazione con un indirizzo e-mail diverso, [Esci](/application/logout) e prova ad accedere con quella e-mail, usando il link “Hai dimenticato il tuo PIN personale?” se necessario. Se hai bisogno di aiuto, contattaci via e-mail o tramite chat all'indirizzo <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "value" : "Il numero di documento di identità o SSN inserito è già associato a un altro indirizzo e-mail nel nostro sistema. Se in precedenza ti sei registrato con un indirizzo e-mail diverso, [Esci](/application/logout) e prova ad accedere con quell'e-mail, usando il link “Hai dimenticato il tuo PIN personale?” se necessario. Se hai bisogno di aiuto, contattaci via e-mail o tramite chat all'indirizzo <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
@@ -1537,23 +1537,23 @@
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
-      "value" : "Impossibile recuperare le offerte di lavoro al momento. Riprova più tardi.",
+      "value" : "Impossibile recuperare i lavori al momento. Riprova più tardi.",
       "note" : "error message when there is a bad request to fetch shifts"
     },
     "BB-get-schedule-list-error-message-all-shift-filled" : {
-      "value" : "Tutti i turni sono completi.",
+      "value" : "Tutti i turni sono pieni.",
       "note" : "error message when fetch shifts but all shifts are filled"
     },
     "BB-get-schedule-list-error-message-no-schedule-found" : {
-      "value" : "Tutti i turni sono completi.",
+      "value" : "Tutti i turni sono pieni.",
       "note" : "error message when fetch shifts but no shift found"
     },
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
-      "value" : "Impossibile recuperare la richiesta del numero degli effettivi.",
+      "value" : "Impossibile recuperare la richiesta di conteggio degli effettivi.",
       "note" : "error message when fetch head count request failed"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
-      "value" : "Tutti i turni sono completi.",
+      "value" : "Tutti i turni sono pieni.",
       "note" : "error message when all appointment time slots are filled"
     },
     "BB-get-time-slots-error-message-fetch_time-slot-error" : {
@@ -1569,7 +1569,7 @@
       "note" : "error message when fetch shift preference failed"
     },
     "BB-get-time-slots-error-message-shift-bad-request" : {
-      "value" : "Impossibile recuperare le offerte di lavoro al momento. Riprova più tardi.",
+      "value" : "Impossibile recuperare i lavori al momento. Riprova più tardi.",
       "note" : "error message when server received a bad request to get time slots"
     },
     "BB-get-candidate-error-message-failed-get-candidate" : {
@@ -1589,7 +1589,7 @@
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
-      "value" : "L’ID candidatura è necessario per ottenere i dati dell'applicazione.",
+      "value" : "ApplicationId è necessario per ottenere i dati dell'applicazione.",
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
@@ -1609,7 +1609,7 @@
       "note" : "Text for the workflow failed page title text"
     },
     "BB-workflow-failed-description-text" : {
-      "value" : "Flusso di lavoro while della candidatura non riuscito.",
+      "value" : "Flusso di lavoro non riuscito durante la candidatura.",
       "note" : "Text for the workflow failed page description text"
     },
     "BB-workflow-failed-return-to-dashboard-text" : {
@@ -1681,7 +1681,7 @@
       "note" : "Text for no available time slots page to select different job link"
     },
     "BB-no-available-time-slots-select-later-date-text" : {
-      "value" : "2. Seleziona un turno con una data di inizio successiva (consigliato)",
+      "value" : "2. Seleziona un turno con una data di inizio successiva (scelta consigliata)",
       "note" : "Text for no available time slots page to select shift with later start date"
     },
     "BB-no-available-time-slots-view-other-shifts-button-text" : {
@@ -1705,207 +1705,207 @@
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
-      "value" : "AL -- Alabama",
+      "value" : "AL - Alabama",
       "note" : "Text for Alabama state"
     },
     "BB-States-Alaska" : {
-      "value" : "AK -- Alaska",
+      "value" : "AK - Alaska",
       "note" : "Text for Alaska state"
     },
     "BB-States-Arizona" : {
-      "value" : "AZ -- Arizona",
+      "value" : "AZ - Arizona",
       "note" : "Text for Arizona state"
     },
     "BB-States-Arkansas" : {
-      "value" : "AR -- Arkansas",
+      "value" : "AR - Arkansas",
       "note" : "Text for Arkansas state"
     },
     "BB-States-California" : {
-      "value" : "CA -- California",
+      "value" : "CA - California",
       "note" : "Text for California state"
     },
     "BB-States-Colorado" : {
-      "value" : "CO -- Colorado",
+      "value" : "CO - Colorado",
       "note" : "Text for Colorado state"
     },
     "BB-States-Connecticut" : {
-      "value" : "CT -- Connecticut",
+      "value" : "CT - Connecticut",
       "note" : "Text for Connecticut state"
     },
     "BB-States-Delaware" : {
-      "value" : "DE -- Delaware",
+      "value" : "DE - Delaware",
       "note" : "Text for Delaware state"
     },
     "BB-States-District-of-Columbia" : {
-      "value" : "DC -- Distretto di Columbia",
+      "value" : "DC - Distretto di Columbia",
       "note" : "Text for District of Columbia state"
     },
     "BB-States-Florida" : {
-      "value" : "FL -- Florida",
+      "value" : "FL - Florida",
       "note" : "Text for Florida state"
     },
     "BB-States-Georgia" : {
-      "value" : "GA -- Georgia",
+      "value" : "GA - Georgia",
       "note" : "Text for Georgia state"
     },
     "BB-States-Hawaii" : {
-      "value" : "HI -- Hawaii",
+      "value" : "HI - Hawaii",
       "note" : "Text for Hawaii state"
     },
     "BB-States-Idaho" : {
-      "value" : "ID -- Idaho",
+      "value" : "ID - Idaho",
       "note" : "Text for Idaho state"
     },
     "BB-States-Illinois" : {
-      "value" : "IL -- Illinois",
+      "value" : "IL - Illinois",
       "note" : "Text for Illinois state"
     },
     "BB-States-Indiana" : {
-      "value" : "IN -- Indiana",
+      "value" : "IN - Indiana",
       "note" : "Text for Indiana state"
     },
     "BB-States-Iowa" : {
-      "value" : "IA -- Iowa",
+      "value" : "IA - Iowa",
       "note" : "Text for Iowa state"
     },
     "BB-States-Kansas" : {
-      "value" : "KS -- Kansas",
+      "value" : "KS - Kansas",
       "note" : "Text for Kansas state"
     },
     "BB-States-Kentucky" : {
-      "value" : "KY -- Kentucky",
+      "value" : "KY - Kentucky",
       "note" : "Text for Kentucky state"
     },
     "BB-States-Louisiana" : {
-      "value" : "LA -- Louisiana",
+      "value" : "LA - Louisiana",
       "note" : "Text for Louisiana state"
     },
     "BB-States-Maine" : {
-      "value" : "ME -- Maine",
+      "value" : "ME - Maine",
       "note" : "Text for Maine state"
     },
     "BB-States-Maryland" : {
-      "value" : "MD -- Maryland",
+      "value" : "MD - Maryland",
       "note" : "Text for Maryland state"
     },
     "BB-States-Massachusetts" : {
-      "value" : "MA -- Massachusetts",
+      "value" : "MA - Massachusetts",
       "note" : "Text for Massachusetts state"
     },
     "BB-States-Michigan" : {
-      "value" : "MI -- Michigan",
+      "value" : "MI - Michigan",
       "note" : "Text for Michigan state"
     },
     "BB-States-Minnesota" : {
-      "value" : "MN -- Minnesota",
+      "value" : "MN - Minnesota",
       "note" : "Text for Minnesota state"
     },
     "BB-States-Mississippi" : {
-      "value" : "MS -- Mississippi",
+      "value" : "MS - Mississippi",
       "note" : "Text for Mississippi state"
     },
     "BB-States-Missouri" : {
-      "value" : "MO -- Missouri",
+      "value" : "MO - Missouri",
       "note" : "Text for Missouri state"
     },
     "BB-States-Montana" : {
-      "value" : "MT -- Montana",
+      "value" : "MT - Montana",
       "note" : "Text for Montana state"
     },
     "BB-States-Nebraska" : {
-      "value" : "NE -- Nebraska",
+      "value" : "NE - Nebraska",
       "note" : "Text for Nebraska state"
     },
     "BB-States-Nevada" : {
-      "value" : "NV -- Nevada",
+      "value" : "NV - Nevada",
       "note" : "Text for Nevada state"
     },
     "BB-States-New-Hampshire" : {
-      "value" : "NH -- New Hampshire",
+      "value" : "NH - New Hampshire",
       "note" : "Text for New Hampshire state"
     },
     "BB-States-New-Jersey" : {
-      "value" : "NJ -- New Jersey",
+      "value" : "NJ - New Jersey",
       "note" : "Text for New Jersey state"
     },
     "BB-States-New-Mexico" : {
-      "value" : "NM -- New Mexico",
+      "value" : "NM - Nuovo Messico",
       "note" : "Text for New Mexico state"
     },
     "BB-States-New-York" : {
-      "value" : "NY -- New York",
+      "value" : "NY - New York",
       "note" : "Text for New York state"
     },
     "BB-States-North-Carolina" : {
-      "value" : "NC -- North Carolina",
+      "value" : "NC - Carolina del Nord",
       "note" : "Text for North Carolina state"
     },
     "BB-States-North-Dakota" : {
-      "value" : "ND -- North Dakota",
+      "value" : "ND - Nord Dakota",
       "note" : "Text for North Dakota state"
     },
     "BB-States-Ohio" : {
-      "value" : "OH -- Ohio",
+      "value" : "OH - Ohio",
       "note" : "Text for Ohio state"
     },
     "BB-States-Oklahoma" : {
-      "value" : "OK -- Oklahoma",
+      "value" : "OK - Oklahoma",
       "note" : "Text for Oklahoma state"
     },
     "BB-States-Oregon" : {
-      "value" : "OR -- Oregon",
+      "value" : "OR - Oregon",
       "note" : "Text for Oregon state"
     },
     "BB-States-Pennsylvania" : {
-      "value" : "PA -- Pennsylvania",
+      "value" : "PA - Pennsylvania",
       "note" : "Text for Pennsylvania state"
     },
     "BB-States-Rhode-Island" : {
-      "value" : "RI -- Rhode Island",
+      "value" : "RI - Rhode Island",
       "note" : "Text for Rhode Island state"
     },
     "BB-States-South-Carolina" : {
-      "value" : "SC -- South Carolina",
+      "value" : "SC - Carolina del Sud",
       "note" : "Text for South Carolina state"
     },
     "BB-States-South-Dakota" : {
-      "value" : "SD -- South Dakota",
+      "value" : "SD - Sud Dakota",
       "note" : "Text for South Dakota state"
     },
     "BB-States-Tennessee" : {
-      "value" : "TN -- Tennessee",
+      "value" : "TN - Tennessee",
       "note" : "Text for Tennessee state"
     },
     "BB-States-Texas" : {
-      "value" : "TX -- Texas",
+      "value" : "TX - Texas",
       "note" : "Text for Texas state"
     },
     "BB-States-Utah" : {
-      "value" : "UT -- Utah",
+      "value" : "UT - Utah",
       "note" : "Text for Utah state"
     },
     "BB-States-Vermont" : {
-      "value" : "VT -- Vermont",
+      "value" : "VT - Vermont",
       "note" : "Text for Vermont state"
     },
     "BB-States-Virginia" : {
-      "value" : "VA -- Virginia",
+      "value" : "VA - Virginia",
       "note" : "Text for Virginia state"
     },
     "BB-States-Washington" : {
-      "value" : "WA -- Washington",
+      "value" : "WA — Washington",
       "note" : "Text for Washington state"
     },
     "BB-States-wisconsin" : {
-      "value" : "WI -- Wisconsin",
+      "value" : "WI — Wisconsin",
       "note" : "Text for Wisconsin state"
     },
     "BB-States-west-virginia" : {
-      "value" : "WV -- West Virginia",
+      "value" : "WV — Virginia Occidentale",
       "note" : "Text for West Virginia state"
     },
     "BB-States-wyoming" : {
-      "value" : "WY -- Wyoming",
+      "value" : "WY — Wyoming",
       "note" : "Text for Wyoming state"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
@@ -1917,7 +1917,7 @@
       "note" : "Error message text displayed when selected NHE shift is no longer available"
     },
     "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
-      "value" : "Sei stato assunto di recente per questa candidatura, pertanto il tuo turno non può essere modificato. Contatta https://www.amazondelivers.jobs/contactus per modificare il tuo turno.",
+      "value" : "Sei stato assunto di recente per questa candidatura, il tuo turno non può essere modificato. Contatta https://www.amazondelivers.jobs/contactus per modificare il tuo turno.",
       "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
     },
     "BB-update-application-error-message-failed-update-application" : {
@@ -1925,15 +1925,15 @@
       "note" : "Error message text displayed when failed to update application"
     },
     "BB-bgc-additional-bgc-form-header-text" : {
-      "value" : "Informazioni aggiuntive sui precedenti",
+      "value" : "Informazioni aggiuntive sulle precedenti esperienze professionali",
       "note" : "Text for the additional background check form header"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
-      "value" : "Grazie per l'interesse dimostrato per la posizione di {jobTitle}. I dati in nostro possesso indicano che in precedenza hai lavorato in Amazon.  Al momento, in base ai tuoi dati di impiego, sei idoneo per la riassunzione come affiliato Amazon stagionale o dipendente di un'agenzia terza. Di conseguenza, non siamo in grado di proseguire con la tua candidatura per questo lavoro. Se hai domande sull'idoneità alla riassunzione, contatta il team risorse umane della sede.",
+      "value" : "Grazie per l'interesse dimostrato per la posizione di {jobTitle}. I dati in nostro possesso indicano che in precedenza hai lavorato in Amazon.  Al momento, in base ai tuoi dati di impiego, sei idoneo per la riassunzione come collaboratore Amazon stagionale o dipendente di un'agenzia terza. Di conseguenza, non siamo in grado di proseguire con la tua candidatura per questo lavoro. Se hai domande sull'idoneità alla riassunzione, contatta il team risorse umane della sede.",
       "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
-      "value" : "Grazie per l'interesse mostrato per questa posizione. I dati in nostro possesso indicano che in precedenza hai lavorato in Amazon.  Al momento, in base ai tuoi dati di impiego, sei idoneo per la riassunzione come affiliato Amazon stagionale o dipendente di un'agenzia terza. Di conseguenza, non siamo in grado di proseguire con la tua candidatura per questo lavoro. Se hai domande sull'idoneità alla riassunzione, contatta il team risorse umane della sede.",
+      "value" : "Grazie per l'interesse mostrato per questa posizione. I dati in nostro possesso indicano che in precedenza hai lavorato in Amazon.  Al momento, in base ai tuoi dati di impiego, sei idoneo per la riassunzione come collaboratore Amazon stagionale o dipendente di un'agenzia terza. Di conseguenza, non siamo in grado di proseguire con la tua candidatura per questo lavoro. Se hai domande sull'idoneità alla riassunzione, contatta il team risorse umane della sede.",
       "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-content-text" : {
@@ -1973,7 +1973,7 @@
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
-      "value" : "Grazie di far parte del fantastico team di Amazon! Ci sforziamo continuamente di fornirti il meglio possibile in termini di risorse per i dipendenti, vantaggi, retribuzioni e orari flessibili: tutto a supporto del nostro impegno per diventare il più grande datore di lavoro della Terra!",
+      "value" : "Grazie per aver fatto parte del fantastico team di Amazon! Ci sforziamo continuamente di fornirti il meglio possibile in termini di risorse per i dipendenti, vantaggi, retribuzioni e orari flessibili: il tutto a supporto del nostro impegno per diventare il più grande datore di lavoro della Terra!",
       "note" : "Text for rehire not eligible active content text two"
     },
     "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
@@ -1985,7 +1985,7 @@
       "note" : "Text for rehire not eligible 365 days title without jobTitle"
     },
     "BB-365-days-not-rehire-eligible-content-text" : {
-      "value" : "Dato il motivo della risoluzione, puoi presentare nuovamente la candidatura 90 giorni dopo il tuo ultimo giorno di lavoro in Amazon.",
+      "value" : "Dato il motivo del licenziamento, puoi presentare nuovamente la candidatura 90 giorni dopo il tuo ultimo giorno di lavoro in Amazon.",
       "note" : "Text for rehire not eligible 365 days content text"
     },
     "BB-no-available-shift-all-shifts-filled-text" : {
@@ -2017,7 +2017,7 @@
       "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
-      "value" : "Stati Uniti - Numero di previdenza sociale",
+      "value" : "Stati Uniti - Numero di previdenza sociale (SSN)",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
@@ -2025,7 +2025,7 @@
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "NO, NON HO UNA DISABILITÀ",
+      "value" : "NO, NON HO DISABILITÀ",
       "note" : "Text for the reverse mapping candidate disability no"
     },
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
@@ -2033,7 +2033,7 @@
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     },
     "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
-      "value" : "Indiano d'America/Nativo dell'Alaska",
+      "value" : "Indiano d'America/nativo dell'Alaska",
       "note" : "Text for the reverse mapping candidate ethnicity american indian"
     },
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {

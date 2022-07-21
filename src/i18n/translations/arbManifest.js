@@ -29,6 +29,12 @@ var endpointMap = {
 	"de-DE": {
 		appStrings: "translation-de.json"
 	},
+	el: {
+		appStrings: "translation-el.json"
+	},
+	"el-GR": {
+		appStrings: "translation-el.json"
+	},
 	en: {
 		appStrings: "translation-en.json"
 	},

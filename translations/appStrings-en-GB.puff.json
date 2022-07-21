@@ -77,7 +77,7 @@
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "In addition to the role you applied for today, we may have other positions that require the same or similar job functions. These roles may be full-time, reduced-time, part-time, seasonal and/or temporary positions that are available at this location or other nearby Amazon locations. You are under no obligation to accept any role with Amazon or our partners, however, by completing your application you agree to be considered for same level, hourly roles within a 30 mile radius of your application site. This includes sharing your applicant information with our partners (staffing agencies) that hire for both our regular and temporary associate needs.",
+      "value" : "In addition to the role you applied for today, we may have other positions that require the same or similar job functions. These roles may be full-time, reduced-time, part-time, seasonal and/or temporary positions that are available at this location or other nearby Amazon locations. You are under no obligation to accept any role with Amazon or our partners, however, by completing your application you agree to be considered for same level, hourly roles within a 30-mile radius of your application site. This includes sharing your applicant information with our partners (staffing agencies) that hire for both our regular and temporary associate needs.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
@@ -89,7 +89,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "consent to the processing, analysing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the ‘processing’ of your personal data will include but not restricted to collecting, receiving, recording, organising, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;",
+      "value" : "consent to the processing, analysing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the ‘processing’ of your personal data will include but not be restricted to collecting, receiving, recording, organising, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
@@ -117,7 +117,7 @@
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "Complete an assessment (~15 min)",
+      "value" : "Complete an assessment (~15 min.)",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
@@ -293,7 +293,7 @@
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
-      "value" : "Apartment, suite, etc.",
+      "value" : "Flat, suite, etc.",
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
@@ -321,11 +321,11 @@
       "note" : "Text for the additional bgc form state placeholder text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
-      "value" : "Postcode",
+      "value" : "Zip/Postcode",
       "note" : "Text for the additional bgc form  zipcode label text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
-      "value" : "Please enter a valid 5-digit postcode",
+      "value" : "Please enter a valid 5-digit zip code",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
@@ -336,6 +336,14 @@
       "value" : "Please enter a valid country",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents and temporary (working) residents.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "National ID Number",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "National ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -344,12 +352,16 @@
       "value" : "Please enter a valid National ID type",
       "note" : "Text for the additional bgc form national id type error message text"
     },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID Number",
+      "note" : "Text for the additional bgc form  national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "National ID Number",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Please enter a valid 9-digit social security number without dash",
+      "value" : "Please enter a valid 9-digit social security number without dashes",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Please enter a valid Date of Birth.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "You need to be above 18 years old.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Social Security Number",
@@ -373,7 +389,7 @@
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "Have you been convicted of misdemeanour or felony or been released from prison or parole from a misdemeanour or felony conviction in last seven (7) years?",
+      "value" : "Have you been convicted of a misdemeanour or felony or been released from prison or parole from a misdemeanour or felony conviction in the last seven (7) years?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
@@ -385,7 +401,7 @@
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Provide city, country, state of conviction, date, nature of the offence, along with sentencing information",
+      "value" : "Provide city, country, state of conviction, date and nature of the offence, along with sentencing information",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
@@ -409,7 +425,7 @@
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "I DECLINE to authorise Amazon this background check.",
+      "value" : "I DECLINE to authorise Amazon to conduct this background check.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -429,35 +445,35 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "The background check provider or ‘CRA’, who will perform the background check is First Advantage, is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
+      "value" : "The background check provider or ‘CRA’ that will perform the background check is First Advantage. It is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "The background check provider or ‘CRA’, who will perform the background check is Accurate Background, is located at 7515 Irvine Centre Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
+      "value" : "The background check provider or ‘CRA’ that will perform the background check is Accurate Background. It is located at 7515 Irvine Centre Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than First Advantage.",
+      "value" : "I understand and agree that as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "I understand and agree that as allowed by law Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
+      "value" : "I understand and agree that as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "For employment purposes, and subject to all laws protecting my informational privacy, I also authorise the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, and law enforcement and other government agencies, including motor vehicle record agencies.",
+      "value" : "For employment purposes, and subject to all laws protecting my informational privacy, I also authorise the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, law enforcement and other government agencies, including motor vehicle record agencies.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "For employment purposes, and subject to all laws protecting my informational privacy, I also authorise the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, and law enforcement and other government agencies, including motor vehicle record agencies.",
+      "value" : "For employment purposes, and subject to all laws protecting my informational privacy, I also authorise the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, law enforcement and other government agencies, including motor vehicle record agencies.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorize Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you hereby authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
@@ -481,7 +497,7 @@
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "Please enter previously used legal full name following format: First Last",
+      "value" : "Please enter previously used legal full name in the following format: First Last",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
@@ -489,7 +505,7 @@
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "Please enter previously used legal full name following format: First Last",
+      "value" : "Please enter previously used legal full name in the following format: First Last",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
@@ -497,7 +513,7 @@
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "Please enter previously used legal full name following format: First Last",
+      "value" : "Please enter previously used legal full name in the following format: First Last",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
@@ -549,7 +565,7 @@
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "If you have a SSN, you are required to provide it. Failing to do so can cause delays in the hiring process, which may lead to missing your start date and losing your selected shift.",
+      "value" : "If you have an SSN, you are required to provide it. Failing to do so can cause delays in the hiring process, which may lead to missing your start date and losing your selected shift.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
@@ -557,7 +573,7 @@
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.",
+      "value" : "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
@@ -581,7 +597,7 @@
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
-      "value" : "State Specific Notices",
+      "value" : "State-Specific Notices",
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
@@ -625,7 +641,7 @@
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "Return to the dashboard. Resume your application or view application and new hire appointment details, and your next steps.",
+      "value" : "Return to the dashboard to resume your application or view application and new-hire appointment details and your next steps.",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
@@ -713,7 +729,7 @@
       "note" : "Text for the disability item: Epilepsy"
     },
     "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
-      "value" : "Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome",
+      "value" : "Gastrointestinal disorders, for example, Crohn's Disease or irritable bowel syndrome",
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
@@ -725,7 +741,7 @@
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "Nervous system condition for example, migraine he…, Parkinson’s disease or Multiple sclerosis (MS)",
+      "value" : "Nervous system condition for example, migraine headaches, Parkinson’s disease or Multiple sclerosis (MS)",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
@@ -749,11 +765,11 @@
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "Yes, I Have A Disability, Or Have A History/Record Of Having A Disability",
+      "value" : "Yes, I Have A Disability Or Have A History/Record Of Having A Disability",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "No, I Don’t Have A Disability, Or A History/Record Of Having A Disability",
+      "value" : "No, I Don’t Have A Disability Or A History/Record Of Having A Disability",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
@@ -801,7 +817,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "Persons having origins in any of the original peoples of North and South America, (including Central America), and who maintain tribal affiliation or community attachment",
+      "value" : "Persons having origins in any of the original peoples of North and South America (including Central America) and who maintain tribal affiliation or community attachment",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
@@ -849,7 +865,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander, (5) American Indian/Alaska Native",
+      "value" : "Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander or 5) American Indian/Alaska Native",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
@@ -909,7 +925,7 @@
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>Disabled Veteran</b>: a veteran of the U.S. military, ground, naval or air service who is entitled to compensation (or who but for the receipt of military retired pay would be entitled to compensation) under laws administered by the Secretary of Veterans Affairs; or a person who was discharged or released from active duty because of a service-connected disability.",
+      "value" : "<b>Disabled Veteran</b>: a veteran of the U.S. military, ground, naval or air service who is entitled to compensation (or who, but for the receipt of military retired pay, would be entitled to compensation) under laws administered by the Secretary of Veterans Affairs; or a person who was discharged or released from active duty because of a service-connected disability.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
@@ -917,7 +933,7 @@
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>Active Duty Wartime or Campaign Badge Veteran</b>: a veteran who served on active duty in the U.S. badge has been authorised under the laws administered by the Department of Defense.",
+      "value" : "<b>Active Duty Wartime or Campaign Badge Veteran</b>: a veteran who served on active duty in the U.S. badge has been authorised under the laws administered by the Department of Defence.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
@@ -931,6 +947,10 @@
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
       "value" : "Yes",
       "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "No",
+      "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "I choose not to self-identify",
@@ -985,7 +1005,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report is requested by Amazon about me, I may view the file that Accurate maintains about me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified post or by appearing at Accurate’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from Accurate over the telephone, at my expense, upon submitting proper identification and a written request to Accurate for telephone disclosure. I understand that Accurate has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at Accurate’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to Accurate.",
+      "value" : "Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report on me is requested by Amazon, I may view the file that Accurate maintains on me during its regular office hours. I understand that I may also (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified post or by appearing at Accurate’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from Accurate over the telephone, at my expense, upon submitting proper identification and a written request to Accurate for telephone disclosure. I understand that Accurate has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at Accurate’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
@@ -1113,7 +1133,7 @@
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
@@ -1121,7 +1141,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "Are optimized for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
+      "value" : "Are optimised for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1133,7 +1153,7 @@
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "Review and Submit",
+      "value" : "Review and submit",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-edit-button-text" : {
@@ -1289,23 +1309,727 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programs and will in no way negatively impact any hiring, retention or promotion decisions.",
+      "value" : "Amazon IAT testing participates in federal and or state tax credit programmes. The information you give will be used to determine the company's eligibility for these programmes and will in no way negatively impact any hiring, retention or promotion decisions.",
       "note" : "Text for the WOTC page description text"
     },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "Possible Start Date:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(or earlier!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hr",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "hrs/wk",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "Bonus:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "Sorry, you have already applied for this job!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "Required fields are missing.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "Something went wrong with the service. Please try again or refresh the browser.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "Candidate is inactive. Cannot create application for candidate.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "Candidate not found.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "Application cannot be updated because there exist more recent update.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "Unable to create application.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "Application ID does not match the id in the request path.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "Cannot find the application.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "Required fields are missing: ApplicationId.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "Application cannot be updated because there exist more recent update.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "Something went wrong with the service. Please try again or refresh the browser.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "You can not access this application.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "Please sign the acknowledgement.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "Please sign fcra request.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "Please sign the acknowledgement.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "Please sign the state notices.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "The schedule you have selected is no longer available, please select another schedule.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "eSignatures do not match. Please use the same text for each eSignature.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please logout and try logging in with that email, using the \"Forgot your personal pin?\" link if needed. If you need help, please contact us via email or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "Update to application failed because provided National Identity Number is invalid. Please enter correct and complete National Identity Number before proceeding.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "Type of the request is missing.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "Type is not matched with request.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "Date of birth is missing in payload.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "Please provide valid date.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "ApplicationId is missing in request.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "Government ID is missing in request.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "ID number is missing in request.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "HasCriminalRecordWithinSevenYears is missing in request.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "Address line 1 is missing in address object.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "City is missing in address object.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "State is missing in address object.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "Postcode is missing in address object.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "Country is missing in address object.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "Please enter previously used legal full name following format: First Last.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "Additional background information is not valid, Please update all required fields.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "nheAppointment object is missing in request.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "Referral info is missing in request.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "Ethnicity is missing in payload.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "Gender is missing in payload.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "Military spouse info is missing in payload.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "Protected Veteran info is missing in payload.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "Veteran info is missing in payload.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "Disability is missing in payload.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "hasBGCCaliforniaDisclosureAcknowledged is missing in payload.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "The SSN or National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the \"Forgot your personal pin ?\" link if needed. If you need help, please contact us via email or chat at <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "Unable to fetch job.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "Something went wrong while fetching jobs! Please refresh the page or try again later.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "Failed to retrieve jobs at the moment. Please try again after some time.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "All Shifts Filled.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "All Shifts Filled.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "Unable to fetch head count request.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "All Shifts Filled.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "Something went wrong. Please refresh the page or try again later.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "Something went wrong while fetching jobs! Please refresh the page or try again later.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "Unable to fetch shift preferences.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "Failed to retrieve jobs at the moment. Please try again after some time.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "Failed to get candidate.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "You can not access this application.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "Unable to create application.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "You can not create application.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "ApplicationId is required to get application data.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "You can not access this application.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "Unable to get this application.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "Something went wrong with the service. Please try again or refresh the browser.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "Workflow Error",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "While application workflow failed.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "Your job position reservation has expired.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "We allow candidates up to three hours to complete their application. Unfortunately, the job position you were applying for exceeded the three hour limit. Please explore available job opportunities.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "View job opportunities",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "There are no appointments available for this job right now.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "You may:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. Select a different job opportunity",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "Click here",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. Select a shift with a later start date (recommended)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "View other shifts",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "Please check the box to proceed.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "Please check the box to proceed.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "Please check the box to proceed.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL – Alabama",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK – Alaska",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ – Arizona",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR – Arkansas",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA – California",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO – Colorado",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT – Connecticut",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE – Delaware",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC – District of Columbia",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL – Florida",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA – Georgia",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI – Hawaii",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID – Idaho",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL – Illinois",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN – Indiana",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA – Iowa",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS – Kansas",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY – Kentucky",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA – Louisiana",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME – Maine",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD – Maryland",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA – Massachusetts",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI – Michigan",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN – Minnesota",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS – Mississippi",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO – Missouri",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT – Montana",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE – Nebraska",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV – Nevada",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH – New Hampshire",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ – New Jersey",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM – New Mexico",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY – New York",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC – North Carolina",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND – North Dakota",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH – Ohio",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK – Oklahoma",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR – Oregon",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA – Pennsylvania",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI – Rhode Island",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC – South Carolina",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD – South Dakota",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN – Tennessee",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX – Texas",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT – Utah",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT – Vermont",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA – Virginia",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA -- Washington",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI -- Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV -- West Virginia",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY -- Wyoming",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "Failed to update WOTC.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "The schedule you selected is no longer available. Please select a different option.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "You have recently been hired for this application, your shift cannot be changed. Please reach out at https://www.amazondelivers.jobs/contactus to change your shift.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "Failed to update application.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "Additional background information",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "Thank you for your interest in the {jobTitle} position. Our records indicate that you previously worked at Amazon.  At this time, you are eligible for rehire as a Seasonal Amazon Associate or third-party agency employee based upon your employment record. As a result, we are unable to move forward with your candidacy for this job. If you have any questions regarding rehire eligibility, contact the site HR Team.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "Thank you for your interest in this position. Our records indicate that you previously worked at Amazon.  At this time, you are eligible for rehire as a Seasonal Amazon Associate or third-party agency employee based upon your employment record. As a result, we are unable to move forward with your candidacy for this job. If you have any questions regarding rehire eligibility, contact the site HR Team.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "Please visit our Seasonal Page to explore seasonal opportunities in your area.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "Return to dashboard",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Thank you for your recent job application to Amazon. After careful consideration, we will not be moving forward with your job application.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "We value your time and wish you the best of luck in the future.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "We appreciate your recent job application! Unfortunately, you are not eligible for this particular position since you are already employed by Amazon.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "The good news? There are plenty of open opportunities that you can browse and apply for online. Here are a few of the ways you can explore your future career growth:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "For Agency or Seasonal conversions, visit amazon.com/conversions (http://amazon.com/conversions).",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "To request shift or location changes, reach out to your onsite team.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "Your local HR team or the Employee Resource Centre (ERC) are the best resource for any questions. You can reach the ERC team 24/7 at 1-888-892-7180 (tel:18888927180).",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "Thank you for your interest in the {jobTitle} position. Our records indicate you previously worked at Amazon and are not eligible for rehire based upon your previous Amazon employment record. As a result, we are unable to move forward with your candidacy at this time.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "Thank you for your interest in this position. Our records indicate you previously worked at Amazon and are not eligible for rehire based upon your previous Amazon employment record. As a result, we are unable to move forward with your candidacy at this time.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "Due to the termination reason, you can reapply 90 days after your last day worked at Amazon.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Currently all shifts have been filled.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Please return to the dashboard to apply for other jobs.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "Application Error",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "Something is wrong, please go to dashboard",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "Return to dashboard",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Please check the box to proceed.",
+      "note" : "Text for the detailed radio button error."
+    },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
-      "value" : "United States - Social Security Number",
+      "value" : "United States – Social Security Number",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "YES, I HAVE A DISABILITY (or previously had a disability)",
+      "value" : "Yes, I Have a Disability (or previously had a disability)",
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "NO, I DON'T HAVE A DISABILITY",
+      "value" : "No, I Don't Have a Disability",
       "note" : "Text for the reverse mapping candidate disability no"
     },
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
-      "value" : "I DON'T WISH TO ANSWER",
+      "value" : "I Do Not Wish To Answer",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     },
     "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {

@@ -89,7 +89,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "consent to the processing, analysing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not be restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;",
+      "value" : "consent to the processing, analysing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the ‘processing’ of your personal data will include but not be restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
@@ -293,7 +293,7 @@
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
-      "value" : "Apartment, suite, etc.",
+      "value" : "Apartment, suite, etc",
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
@@ -405,7 +405,7 @@
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\".",
+      "value" : "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (‘Amazon’), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a ‘background check’.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
@@ -437,7 +437,7 @@
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "As disclosed and authorised by me in the separate Fair Credit Reporting Act Disclosure and Authorisation Document, Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\") will conduct a background check on me.",
+      "value" : "As disclosed and authorised by me in the separate Fair Credit Reporting Act Disclosure and Authorisation Document, Amazon.com, Inc. or its subsidiaries or affiliates (‘Amazon’) will conduct a background check on me.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -445,11 +445,11 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "The background check provider or \"CRA\", who will perform the background check, is First Advantage. It is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
+      "value" : "The background check provider or ‘CRA’, who will perform the background check, is First Advantage. It is located at 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "The background check provider or \"CRA\", who will perform the background check is Accurate Background, which is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that, as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
+      "value" : "The background check provider or ‘CRA’, who will perform the background check is Accurate Background, which is located at 7515 Irvine Center Dr., Irvine, CA 92618, and can be reached at (800) 216-8024 or www.accuratebackground.com.\n\n* I understand and agree that, as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
@@ -469,11 +469,11 @@
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>You will receive a separate California Disclosure Regarding Investigative Consumer Report (‘California Disclosure’). This is an important document; please review it carefully. Also, click <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> if you are seeking employment in or are already employed by Company in San Francisco. By signing below, pursuant to California law and the California Disclosure, you authorise Amazon to procure an investigative consumer report, also known as a background check, now and at any time throughout any employment with Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
@@ -553,7 +553,7 @@
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Please Enter a Valid Amazon Building",
+      "value" : "Please enter a valid Amazon building",
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
@@ -669,7 +669,7 @@
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Identifying yourself as an individual with a disability is voluntary and we hope that you will choose to do so. Your answer will be maintained confidentially and will not be seen by selecting officials or anyone else involved in making personnel decisions. Completing the form will not negatively impact you in any way, regardless of whether you have self-identified in the past. For more information about this form or the equal employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S. Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "Identifying yourself as an individual with a disability is voluntary and we hope that you will choose to do so. Your answer will be maintained confidentially and will not be seen by selecting officials or anyone else involved in making personnel decisions. Completing the form will not negatively impact you in any way, regardless of whether you have self-identified in the past. For more information about this form or the equal employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S. Department of Labour’s Office of Federal Contract Compliance Programs (OFCCP) website at <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -773,11 +773,11 @@
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
-      "value" : "I don’t wish to answer",
+      "value" : "I do not wish to answer",
       "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
     },
     "BB-SelfId-disability-form-disability-public-burden-header-text" : {
-      "value" : "Public burden statement",
+      "value" : "Public Burden Statement",
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
@@ -861,7 +861,7 @@
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
-      "value" : "Two or more Races (not Hispanic or Latino)",
+      "value" : "Two or more races (not Hispanic or Latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
@@ -933,7 +933,7 @@
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>Active Duty Wartime or Campaign Badge Veteran</b>: a veteran who served on active duty in the U.S. badge has been authorised under the laws administered by the Department of Defense.",
+      "value" : "<b>Active Duty Wartime or Campaign Badge Veteran</b>: a veteran who served on active duty in the U.S. badge has been authorised under the laws administered by the Department of Defence.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
@@ -965,11 +965,11 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "In connection with my possible employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), Amazon may procure an investigative consumer report (\"Report\"), also known as a background check, about me from the following consumer reporting agency:",
+      "value" : "In connection with my possible employment with Amazon.com, Inc. or its subsidiaries or affiliates (‘Amazon’), Amazon may procure an investigative consumer report (‘Report’), also known as a background check, about me from the following consumer reporting agency:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
-      "value" : "Accurate Background, LLC (\"Accurate\")",
+      "value" : "Accurate Background, LLC (‘Accurate’)",
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
@@ -1001,7 +1001,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Investigation(s) to be conducted by Accurate, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record and criminal record, subject to any limitations imposed by applicable federal and state law.",
+      "value" : "Investigation(s) to be conducted by Accurate, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record and criminal record, subject to any limitations imposed by applicable federal and State law.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
@@ -1045,11 +1045,11 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "Investigation(s) to be conducted by First Advantage, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record, and criminal record, subject to any limitations imposed by applicable federal and State law.",
+      "value" : "Investigation(s) to be conducted by First Advantage, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record, and criminal record, subject to any limitations imposed by applicable federal and state law.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report is requested by Amazon on me, I may view the file First Advantage maintains on me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified post or by appearing at First Advantage’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from First Advantage over the telephone, at my expense, upon submitting proper identification and a written request to First Advantage for telephone disclosure. I understand that First Advantage has trained personnel available to explain its file to me, including any coded information and, if I appear in person at First Advantage’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to First Advantage.",
+      "value" : "Per California Civil Code Sec. 1785 et seq. and Sec. 1786 et seq., if any Report is requested by Amazon on me, I may view the file First Advantage maintains on me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified post or by appearing at First Advantage’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from First Advantage over the telephone, at my expense, upon submitting proper identification and a written request to First Advantage for telephone disclosure. I understand that First Advantage has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at First Advantage’s offices, I may be accompanied by one other person as long as that person furnishes proper identification to First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1141,7 +1141,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "Are optimised for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
+      "value" : "Optimised for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1185,11 +1185,11 @@
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
-      "value" : "Date of Birth:",
+      "value" : "Date of birth:",
       "note" : "Text for the job details section date of birth text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
-      "value" : "Pre-hire Appointment",
+      "value" : "Pre-Hire Appointment",
       "note" : "Text for the pre-hire appointment section title text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
@@ -1213,7 +1213,7 @@
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
-      "value" : "Disability status:",
+      "value" : "Disability Status:",
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
@@ -1225,7 +1225,7 @@
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "We look forward to seeing you soon. Here are your next steps:",
+      "value" : "We look forward to seeing you. Here are your next steps:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
@@ -1261,7 +1261,7 @@
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "Visit us for a 30 minute session at any time between {startTime} - {endTime}.",
+      "value" : "Visit us for a 30 minute session anytime between {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
@@ -1277,7 +1277,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "Original unexpired work authorisation document",
+      "value" : "Original unexpired work authorization document",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
@@ -1309,7 +1309,7 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT testing participates in federal and or State tax credit programmes. The information you give will be used to determine the company's eligibility for these programmes and will in no way negatively impact any hiring, retention or promotion decisions.",
+      "value" : "Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programmes and will in no way negatively impact any hiring, retention or promotion decisions.",
       "note" : "Text for the WOTC page description text"
     },
     "BB-Schedule-card-possible-start-date-text" : {
@@ -1317,7 +1317,7 @@
       "note" : "Text for the schedule card possible start date text"
     },
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
-      "value" : "(or earlier.)",
+      "value" : "(or earlier!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
@@ -1333,7 +1333,7 @@
       "note" : "Text for the schedule card bonus text"
     },
     "BB-amazon-rejects-thank-you" : {
-      "value" : "Thank you for your interest, but we're unable to offer you a job at this time.",
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
       "note" : "Text for the amazon rejects page thank you text"
     },
     "BB-amazon-rejects-not-meet-requirements" : {
@@ -1345,7 +1345,7 @@
       "note" : "Text for the amazon rejects page return to dashboard text"
     },
     "BB-create-application-error-message-application-exist" : {
-      "value" : "Sorry, you have already applied for this job.",
+      "value" : "Sorry, you have already applied for this job!",
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
@@ -1393,7 +1393,7 @@
       "note" : "internal server Error message when updating application"
     },
     "BB-update-application-error-message-candidate-not-authorized" : {
-      "value" : "You cannot access this application.",
+      "value" : "You can not access this application.",
       "note" : "error message for update application when candidate is not authorized"
     },
     "BB-update-application-error-message-sign-fcra-ack" : {
@@ -1401,7 +1401,7 @@
       "note" : "error message for update application without fcra acknowledge signature"
     },
     "BB-update-application-error-message-sign-fcra-request" : {
-      "value" : "Please sign FCRA request.",
+      "value" : "Please sign fcra request.",
       "note" : "error message for update application without fcra request signature"
     },
     "BB-update-application-error-message-sign-nonfcra-ack" : {
@@ -1413,7 +1413,7 @@
       "note" : "error message for update application without state notices signature"
     },
     "BB-update-application-error-message-selected-schedule-not-available" : {
-      "value" : "The schedule you have selected is no longer available. Please select another schedule.",
+      "value" : "The schedule you have selected is no longer available, please select another schedule.",
       "note" : "error message for update application when selected schedule is not available"
     },
     "BB-update-application-error-message-mismatch-signatures" : {
@@ -1421,7 +1421,7 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please logout and try logging in with that email, using the ‘Forgot your personal PIN?’ link if needed. If you need help, please contact us via email or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "value" : "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please logout and try logging in with that email, using the \"Forgot your personal PIN?\" link if needed. If you need help, please contact us via email or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
@@ -1445,11 +1445,11 @@
       "note" : "error message for update application when date of birth is no provided"
     },
     "BB-update-application-error-message-applicationId-missing" : {
-      "value" : "Application ID is missing in request.",
+      "value" : "ApplicationId is missing in request.",
       "note" : "error message for update application when application Id is missing"
     },
     "BB-update-application-error-message-government-type-missing" : {
-      "value" : "Government ID is missing in request.",
+      "value" : "Government Id is missing in request.",
       "note" : "error message for update application when government Id is missing"
     },
     "BB-update-application-error-message-id-number-missing" : {
@@ -1461,7 +1461,7 @@
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
-      "value" : "Address Line 1 is missing in address object.",
+      "value" : "Address line 1 is missing in address object.",
       "note" : "error message for update application when address line 1 is missing"
     },
     "BB-update-application-error-message-city-missing-in-address" : {
@@ -1525,7 +1525,7 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "The SSN or National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the ‘Forgot your personal PIN?’ link if needed. If you need help, please contact us via email or chat at <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "value" : "The SSN or National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the \"Forgot your personal PIN?\" link if needed. If you need help, please contact us via email or chat at <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
@@ -1533,7 +1533,7 @@
       "note" : "error message when unable to fetch job information"
     },
     "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
-      "value" : "Something went wrong while fetching jobs. Please refresh the page or try again later.",
+      "value" : "Something went wrong while fetching jobs! Please refresh the page or try again later.",
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
@@ -1557,11 +1557,11 @@
       "note" : "error message when all appointment time slots are filled"
     },
     "BB-get-time-slots-error-message-fetch_time-slot-error" : {
-      "value" : "Something went wrong. Please refresh the page or try again later.",
+      "value" : "Something went wrong! Please refresh the page or try again later.",
       "note" : "error message when fetch appointment time slots failed"
     },
     "BB-get-time-slots-error-message-fetch_shifts_error" : {
-      "value" : "Something went wrong while fetching jobs. Please refresh the page or try again later.",
+      "value" : "Something went wrong while fetching jobs! Please refresh the page or try again later.",
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
@@ -1577,7 +1577,7 @@
       "note" : "error message when failed to get candidate information"
     },
     "BB-get-candidate-error-message-no-access-to-application" : {
-      "value" : "You cannot access this application.",
+      "value" : "You can not access this application.",
       "note" : "error message when candidate doesn't access to the application"
     },
     "BB-update-application-error-message-unable-create-application" : {
@@ -1585,15 +1585,15 @@
       "note" : "Error message when unable to create application"
     },
     "BB-update-application-error-message-can-not-create-application" : {
-      "value" : "You cannot create an application.",
+      "value" : "You can not create application.",
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
-      "value" : "Application ID is required to acquire application data.",
+      "value" : "ApplicationId is required to get application data.",
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
-      "value" : "You cannot access this application.",
+      "value" : "You can not access this application.",
       "note" : "Error message when candidate trying to get application of another candidate"
     },
     "BB-get-application-error-message-application-not-found" : {
@@ -1617,7 +1617,7 @@
       "note" : "Text for the workflow failed page return to dashboard text"
     },
     "BB-can-not-offer-job-title-text" : {
-      "value" : "Thank you for your interest, but we're unable to offer you a job at this time.",
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
       "note" : "Text for the can not offer job page title text"
     },
     "BB-can-not-offer-job-description-text" : {
@@ -1629,7 +1629,7 @@
       "note" : "Text for the can not offer job page description text"
     },
     "BB-candidate-withdraws" : {
-      "value" : "Thank you for your interest, but we're unable to offer you a job at this time.",
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
       "note" : "Candidate withdraws page title"
     },
     "BB-candidate-withdraws-description" : {
@@ -1641,7 +1641,7 @@
       "note" : "Candidate withdraws page back to dashboard buttton"
     },
     "BB-amazon-withdraws" : {
-      "value" : "Thank you for your interest, but we're unable to offer you a job at this time.",
+      "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",
       "note" : "Amazon withdraws page title"
     },
     "BB-amazon-withdraws-description" : {
@@ -1953,7 +1953,7 @@
       "note" : "text for Not rehire eligibility page content"
     },
     "BB-rehire-not-eligible-active-title-text" : {
-      "value" : "We appreciate your recent job application. Unfortunately, you are not eligible for this particular position since you are already employed by Amazon.",
+      "value" : "We appreciate your recent job application! Unfortunately, you are not eligible for this particular position since you are already employed by Amazon.",
       "note" : "Text for rehire not eligible active page title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
@@ -1969,11 +1969,11 @@
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "Your local HR team or the Employee Resource Centre (ERC) are the best resource for any questions. You can reach the ERC team 24/7 at 1-888-892-7180 (tel: 18888927180).",
+      "value" : "Your local HR team or the Employee Resource Center (ERC) are the best resource for any questions. You can reach the ERC team 24/7 at 1-888-892-7180 (tel:18888927180).",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
-      "value" : "Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer.",
+      "value" : "Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer!",
       "note" : "Text for rehire not eligible active content text two"
     },
     "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
@@ -2005,7 +2005,7 @@
       "note" : "Text for the applicationId null page title text"
     },
     "BB-application-id-null-description-text" : {
-      "value" : "Something is wrong. Please go to the dashboard",
+      "value" : "Something is wrong, please go to the dashboard",
       "note" : "Text for the applicationId null page description text"
     },
     "BB-application-id-null-return-to-dashboard-text" : {

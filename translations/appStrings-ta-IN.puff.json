@@ -1,7 +1,7 @@
 {
   "resources" : {
     "BB-PreConsentPage-banner-journey-starts" : {
-      "value" : "Amazon associate ஆவதற்கான உங்கள் பயணம் இங்கே தொடங்குகிறது.",
+      "value" : "Amazon Associate ஆவதற்கான உங்கள் பயணம் இங்கே தொடங்குகிறது.",
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
@@ -89,7 +89,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "உங்கள் விண்ணப்பத்தின் நோக்கங்களுக்காகவும், Amazonஇன் பிற சட்டப்பூர்வ நோக்கங்களுக்காகவும் Amazon, salesforce.com அல்லது வேறு எந்த மூன்றாம் தரப்பினரும் உங்கள் தனிப்பட்ட தரவை செயலாக்கவும், பகுப்பாய்வு செய்யவும் மதிப்பீடு செய்யவும் ஒப்புதல் அளிக்கவும். சந்தேகத்தைத் தவிர்ப்பதற்காக, உங்கள் தனிப்பட்ட தரவின் \"செயலாக்கத்தில்\" சேகரித்தல், பெறுதல், பதிவு செய்தல், ஒழுங்கமைத்தல், தொகுத்தல், சேமித்தல், புதுப்பித்தல், மாற்றுதல், பயன்படுத்துதல், பரப்புதல், விநியோகித்தல், ஒன்றிணைத்தல், இணைத்தல், தடுப்பது, இழிவுபடுத்துதல், உங்கள் தனிப்பட்ட தரவை அகற்றுதல் அல்லது அழித்தல் ஆகியவை அடங்கும்;",
+      "value" : "உங்கள் விண்ணப்பத்தின் நோக்கங்களுக்காகவும், Amazonஇன் பிற சட்டப்பூர்வ நோக்கங்களுக்காகவும் Amazon, salesforce.com அல்லது வேறு எந்த மூன்றாம் தரப்பினரும் உங்கள் தனிப்பட்ட தரவை செயலாக்கவும், பகுப்பாய்வு செய்யவும் மதிப்பீடு செய்யவும் ஒப்புதல் அளியுங்கள். சந்தேகத்தைத் தவிர்ப்பதற்காக, உங்கள் தனிப்பட்ட தரவின் \"செயலாக்கத்தில்\" சேகரித்தல், பெறுதல், பதிவு செய்தல், ஒழுங்கமைத்தல், தொகுத்தல், சேமித்தல், புதுப்பித்தல், மாற்றுதல், பயன்படுத்துதல், பரப்புதல், விநியோகித்தல், ஒன்றிணைத்தல், இணைத்தல், தடுப்பது, இழிவுபடுத்துதல், உங்கள் தனிப்பட்ட தரவை அகற்றுதல் அல்லது அழித்தல் ஆகியவை அடங்கும்;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
@@ -129,11 +129,11 @@
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "பயன்படுத்து",
+      "value" : "விண்ணப்பி",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "பயன்படுத்து",
+      "value" : "விண்ணப்பி",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
@@ -145,7 +145,7 @@
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "மணிநேரம் - அதிகப்பட்சம் முதல் குறைந்தபட்சம் வரை",
+      "value" : "மணிநேரம் - அதிகபட்சம் முதல் குறைந்தபட்சம் வரை",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
@@ -153,7 +153,7 @@
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
-      "value" : "வடிகட்டி திட்டமிடல்கள்",
+      "value" : "திட்டமிடல்களை வடிகட்டு",
       "note" : "Text for the title of DaysHours Filter"
     },
     "BB-DayName-Monday" : {
@@ -197,11 +197,11 @@
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
-      "value" : "விரும்பிய நேரங்களைத் தேர்ந்தெடுக்கவும்",
+      "value" : "விருப்பமான நேரங்களைத் தேர்ந்தெடுக்கவும்",
       "note" : "Text for desired hours select input place holder"
     },
     "BB-FilterSchedule-desired-hour-select-label-text" : {
-      "value" : "ஒரு வாரத்திற்கு விரும்பும் மணிநேரம்",
+      "value" : "ஒவ்வொரு வாரத்திற்குமான விருப்பமான மணிநேரம்",
       "note" : "Text for desired hours select input label text"
     },
     "BB-ContingencyOffer-well-done-text" : {
@@ -233,7 +233,7 @@
       "note" : "Text for the remaining steps container title text"
     },
     "BB-ContingencyOffer-accept-offer-button-text" : {
-      "value" : "ஆஃபரை ஏற்கிறேன்",
+      "value" : "சலுகையை ஏற்கிறேன்",
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
@@ -261,7 +261,7 @@
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
-      "value" : "கூடுதல் பின்னணி தகவல்கள்",
+      "value" : "கூடுதல் பின்னணித் தகவல்கள்",
       "note" : "Text for the Additional bgc information step card title"
     },
     "BB-BGC-page-continue-button" : {
@@ -336,10 +336,6 @@
       "value" : "சரியான நாட்டின் பெயரை உள்ளிடவும்",
       "note" : "Text for the additional bgc form country error message text"
     },
-    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
-      "value" : "அமெரிக்காவில், சமூகப் பாதுகாப்பு எண் (SSN) என்பது அமெரிக்க குடிமக்கள், நிரந்தர குடியிருப்பாளர்கள் மற்றும் தற்காலிக (வேலை செய்யும்) குடியிருப்பாளர்களுக்கு வழங்கப்படும் ஒன்பது இலக்க எண்ணாகும்.",
-      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
-    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "தேசிய அடையாள எண்",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -353,7 +349,7 @@
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
-      "value" : "அடையாள எண்",
+      "value" : "ஐடி எண்",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
@@ -425,7 +421,7 @@
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "இந்த பின்னணி சரிபார்ப்புக்கு Amazonஐ அங்கீகரிக்காமல் நான் நிராகரிக்கிறேன்.",
+      "value" : "இந்தப் பின்னணிச் சரிபார்ப்புக்கு Amazonஐ அங்கீகரிக்காமல் நான் நிராகரிக்கிறேன்.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -469,11 +465,11 @@
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் கிளிக் செய்யவும்<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>. கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
+      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>ஐக் கிளிக் செய்யவும். கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் கிளிக் செய்யவும்<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>. கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
+      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>ஐக் கிளிக் செய்யவும். கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
@@ -517,7 +513,7 @@
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "முந்தைய சட்ட முழுப்பெயர் (2)",
+      "value" : "முந்தைய சட்டப்பூர்வ முழுப்பெயர் (2)",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
@@ -525,7 +521,7 @@
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
-      "value" : "நீங்கள் முன்பு Amazon கட்டிடத்தில் பணிபுரிந்திருக்கிறீர்களா?",
+      "value" : "நீங்கள் முன்பு Amazon கட்டடத்தில் பணிபுரிந்திருக்கிறீர்களா?",
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
@@ -541,11 +537,11 @@
       "note" : "Text for the for the form title about what to include in previous Amazon experience"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
-      "value" : "நீங்கள் முன்பு பணியாற்றிய Amazon கட்டிடத்தை அடையாளம் காணவும்",
+      "value" : "நீங்கள் முன்பு பணியாற்றிய Amazon கட்டடத்தை அடையாளம் காணவும்",
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
-      "value" : "சரியான Amazon கட்டிடத்தின் பெயரை உள்ளிடவும்",
+      "value" : "சரியான Amazon கட்டடத்தின் பெயரை உள்ளிடவும்",
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
@@ -577,7 +573,7 @@
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
-      "value" : "மேலே கூறப்பட்ட விதிமுறைகளைப் படித்து புரிந்து கொண்டேன்.",
+      "value" : "மேலே கூறப்பட்ட விதிமுறைகளைப் படித்துப் புரிந்து கொண்டேன்.",
       "note" : "consent checkbox in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-continue-button" : {
@@ -597,11 +593,11 @@
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
-      "value" : "மாநிலத்திற்கு மட்டுமான அறிக்கைகள்",
+      "value" : "குறிப்பிட்ட மாநிலத்திற்கான அறிக்கைகள்",
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
-      "value" : "கீழே பொருந்தக்கூடிய அறிக்கை(களை) மதிப்பாய்வு செய்யவும்.",
+      "value" : "கீழே பொருந்தக்கூடிய அறிக்கை(களை)யை மதிப்பாய்வு செய்யவும்.",
       "note" : "Text for the non fcra State specific notices review text"
     },
     "BB-BGC-non-fcra-esignature-certification-form-title" : {
@@ -625,7 +621,7 @@
       "note" : "Text for the non fcra form page next button text"
     },
     "BB-BGC-non-fcra-applicable-notice-text" : {
-      "value" : "கீழே எனது மின்னணு கையொப்பத்தில், ஹைப்பர்லிங்க்கள் உட்பட பொருந்தக்கூடிய ஏதேனும் மாநில அறிவிப்புகளைப் படித்துப் புரிந்துகொண்டேன் என்று சான்றளிக்கிறேன்.",
+      "value" : "கீழே எனது மின்னணு கையொப்பம் மூலம், ஹைப்பர்லிங்க்கள் உட்பட பொருந்தக்கூடிய ஏதேனும் நிலை அறிவிப்புகளைப் படித்துப் புரிந்துகொண்டேன் என்று சான்றளிக்கிறேன்.",
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
@@ -637,7 +633,7 @@
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
-      "value" : "இந்த வேலைக்கான விண்ணப்பத்தை ஏற்கனவே தொடங்கிவிட்டீர்கள் மற்றும் / அல்லது பூர்த்தி செய்துவிட்டீர்கள்.",
+      "value" : "இந்த வேலைக்கான விண்ணப்பத்தை ஏற்கெனவே தொடங்கிவிட்டீர்கள் மற்றும் / அல்லது பூர்த்தி செய்துவிட்டீர்கள்.",
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
@@ -657,7 +653,7 @@
       "note" : "Text for Self Identification control number"
     },
     "BB-SelfId-disability-form-expiration-date-text" : {
-      "value" : "05/31/2023 அன்று காலாவதியாகும்",
+      "value" : "31/05/2023 அன்று காலாவதியாகும்",
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
@@ -693,7 +689,7 @@
       "note" : "Text for the disability item: Autoimmune disorder"
     },
     "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
-      "value" : "பார்வையற்ற அல்லது பார்வை குறைபாடு",
+      "value" : "பார்வையில்லை அல்லது பார்வைக் குறைபாடு",
       "note" : "Text the disability item: Blind or low vision"
     },
     "BB-SelfId-disability-form-disability-item-cancer-text" : {
@@ -761,7 +757,7 @@
       "note" : "Text for the submit disability form submit button text"
     },
     "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
-      "value" : "கீழே உள்ள பெட்டிகளில் ஒன்றைத் தேர்ந்தெடுக்கவும்",
+      "value" : "கீழே உள்ள கட்டங்களில் ஒன்றைத் தேர்ந்தெடுக்கவும்",
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
@@ -833,7 +829,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "ஆப்பிரிக்காவின் கருப்பு இனக் குழுக்கள் எதையாவது பூர்வீகமாகக் கொண்டவர்கள்",
+      "value" : "ஆப்பிரிக்காவின் கருப்பு இனக் குழுக்களில் எதையாவது பூர்வீகமாகக் கொண்டவர்கள்",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
@@ -853,7 +849,7 @@
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
-      "value" : "வெள்ளை (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "value" : "வெள்ளையர் (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
@@ -877,11 +873,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, நாம் தீவிரமாகப் படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து பணியமர்த்தி வருகிறோம்.",
+      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து நாங்கள் தீவிரமாகப் பணியமர்த்தி வருகிறோம்.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, நாம் தீவிரமாகப் படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து பணியமர்த்தி வருகிறோம்.",
+      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து நாங்கள் தீவிரமாகப் பணியமர்த்தி வருகிறோம்.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -948,10 +944,6 @@
       "value" : "ஆம்",
       "note" : "Text for the protected veteran select form option: Yes"
     },
-    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
-      "value" : "இல்லை",
-      "note" : "Text for the protected veteran select form option: No"
-    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -993,7 +985,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
-      "value" : "Accurate நிறுவனத்திடம் இருந்து ஒரு அறிக்கை கோரப்படுகையில், அத்தகைய அறிக்கையில் உள்ள தகவல்கள் எனது வேலைக்கான தகுதியைத் தீர்மானிக்க மட்டுமே பயன்படுத்தப்படும்.",
+      "value" : "Accurate நிறுவனத்திடம் இருந்து ஓர் அறிக்கை கோரப்படுகையில், அத்தகைய அறிக்கையில் உள்ள தகவல்கள் எனது வேலைக்கான தகுதியைத் தீர்மானிக்க மட்டுமே பயன்படுத்தப்படும்.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
@@ -1041,15 +1033,15 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "First Advantage மூலம் பெறப்பட்டு ஏதேனும் அறிக்கையில் சேர்க்கப்பட்டுள்ள தகவல்கள் பின்வருபவை உட்பட பல்வேறு வழிகளில் கிடைத்திருக்கக்கூடும். சட்டப்பூர்வமாக கிடைக்கக்கூடிய ஆவணங்கள் மற்றும் தகவல்கள் மற்றும்/அல்லது நேரடி அல்லது மறைமுகத் தொடர்பு மற்றும் முன்னாள் நிறுவனங்கள், பள்ளிகள், நிதி நிறுவனங்கள், நில உரிமையாளர்கள், பொது ஏஜென்சிகள் மற்றும் எனது சுற்றுப்புறத்தில் உள்ளவர்கள், நண்பர்கள் மற்றும் எனக்கு அறிமுகமானவர்கள் மற்றும் தொடர்புடைய நபர்கள் எவருடனாவது பெறப்பட்ட நேர்காணல்களில் கிடைத்த தகவல்கள் போன்றவை.",
+      "value" : "First Advantage மூலம் பெறப்பட்டு ஏதேனும் அறிக்கையில் சேர்க்கப்பட்டுள்ள பின்வரும் விஷயங்கள் உட்பட பல்வேறு வழிகளில் தகவல்கள் கிடைத்திருக்கக்கூடும். சட்டப்பூர்வமாக கிடைக்கக்கூடிய ஆவணங்கள் மற்றும் தகவல்கள் மற்றும்/அல்லது நேரடி அல்லது மறைமுகத் தொடர்பு, முன்னாள் நிறுவனங்கள், பள்ளிகள், நிதி நிறுவனங்கள், நில உரிமையாளர்கள், பொது ஏஜென்சிகள், எனது சுற்றுப்புறத்தில் உள்ளவர்கள், நண்பர்கள் மற்றும் எனக்கு அறிமுகமானவர்கள், தொடர்புடைய நபர்கள் எவருடனாவது பெறப்பட்ட நேர்காணல்களில் கிடைத்த தகவல்கள் போன்றவை.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "First Advantage மூலம் நடத்தப்படும் விசாரணை(களின்) முடிவுகள், Amazonக்கு வழங்கப்படும் எந்த அறிக்கையிலும் சேர்க்கப்படும் பின்வருபவை உட்பட என்னைப் பற்றிய பல்வேறு வகையான தகவல்கள் அதில் இருக்கக்கூடும்: எனது குணாதிசயங்கள், பொது நற்பெயர், தனிப்பட்ட குணாதிசயங்கள் அல்லது வாழ்க்கை முறை, வேலைவாய்ப்பு மற்றும் பணி வரலாறு, கல்வி, ஓட்டுநர் பதிவு, பொருந்தக்கூடிய கூட்டாட்சி மற்றும் மாநில சட்டத்தால் விதிக்கப்படும் வரம்புகளுக்கு உட்பட்டது குற்றவியல் பதிவு போன்றவை.",
+      "value" : "First Advantage மூலம் நடத்தப்படும் விசாரணை(களின்) முடிவுகள், Amazonக்கு வழங்கப்படும் எந்த அறிக்கையிலும் சேர்க்கப்படும் பின்வரும் விஷயங்கள் உட்பட என்னைப் பற்றிய பல்வேறு வகையான தகவல்கள் அதில் இருக்கக்கூடும்: எனது குணாதிசயங்கள், பொது நற்பெயர், தனிப்பட்ட குணாதிசயங்கள் அல்லது வாழ்க்கை முறை, வேலைவாய்ப்பு மற்றும் பணி வரலாறு, கல்வி, ஓட்டுநர் பதிவு, பொருந்தக்கூடிய கூட்டாட்சி மற்றும் மாநில சட்டத்தால் விதிக்கப்படும் வரம்புகளுக்கு உட்பட்டது குற்றவியல் பதிவு போன்றவை.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "கலிஃபோர்னியா சிவில் குறியீடு § 1785 et seq. மற்றும் § 1786 et seq. இன்படி, Amazon என்னைப் பற்றி ஏதேனும் அறிக்கை கோரினால், அதன் வழக்கமான அலுவலக நேரத்தின்போது First Advantage என்னிடம் பராமரிக்கும் கோப்பை நான் பார்க்கலாம். (1) சான்றளிக்கப்பட்ட அஞ்சல் மூலமாகவோ First Advantageஇன் அலுவலகத்திற்கு அதன் வழக்கமான அலுவலக நேரங்களில் (எனது திட்டமிட்ட தோற்றம் குறித்த நியாயமான முன் அறிவிப்பை வழங்கிய பிறகு) நேரில் சென்றோ சரியான அடையாளத்தைச் சமர்ப்பித்து, நகலெடுக்கும் செலவுகளைச் செலுத்தி இந்தக் கோப்பின் நகலைப் பெற்றுக்கொள்ள வேண்டும்; மற்றும் (2) சரியான அடையாளத்தை சமர்ப்பித்து, தொலைப்பேசி வெளிப்படுத்தலுக்கான எழுத்துப்பூர்வ கோரிக்கையை சமர்ப்பித்த பிறகு எனது செலவில் இந்த கோப்பின் சுருக்கத்தை First Advantage நிறுவனத்திடம் இருந்து பெற்றுக்கொள்ள வேண்டும் என்பதையும் நான் புரிந்துகொள்கிறேன். First Advantage அதன் கோப்பினை என்னிடம் (அதில் குறியிடப்பட்ட தகவல்கள் உட்பட) விளக்குவதற்கு பயிற்சி பெற்ற பணியாளர்கள் உள்ளனர், மேலும், First Advantage அலுவலகத்திற்கு நான் நேரில் செல்லும்போது என்னுடன் ஒருவர் வரக்கூடும் என்பதையும் எனது சரியான அடையாளத்தை First Advantageக்கு அளிக்கும் வரை அவர் என்னுடனே இருப்பார் என்பதையும் நான் புரிந்துகொள்கிறேன்.",
+      "value" : "கலிஃபோர்னியா சிவில் குறியீடு § 1785 et seq. மற்றும் § 1786 et seq. இன்படி, Amazon என்னைப் பற்றி ஏதேனும் அறிக்கை கோரினால், அதன் வழக்கமான அலுவலக நேரத்தின்போது First Advantage என்னிடம் பராமரிக்கும் கோப்பை நான் பார்க்கலாம். (1) சான்றளிக்கப்பட்ட அஞ்சல் மூலமாகவோ First Advantageஇன் அலுவலகத்திற்கு அதன் வழக்கமான அலுவலக நேரங்களில் (எனது திட்டமிட்ட வருகை குறித்த நியாயமான முன் அறிவிப்பை வழங்கிய பிறகு) நேரில் சென்றோ சரியான அடையாளத்தைச் சமர்ப்பித்து, நகலெடுக்கும் செலவுகளைச் செலுத்தி இந்தக் கோப்பின் நகலைப் பெற்றுக்கொள்ள வேண்டும்; மற்றும் (2) சரியான அடையாளத்தை சமர்ப்பித்து, தொலைப்பேசி வெளிப்படுத்தலுக்கான எழுத்துப்பூர்வ கோரிக்கையை சமர்ப்பித்த பிறகு எனது செலவில் இந்த கோப்பின் சுருக்கத்தை First Advantage நிறுவனத்திடம் இருந்து பெற்றுக்கொள்ள வேண்டும் என்பதையும் நான் புரிந்துகொள்கிறேன். First Advantage அதன் கோப்பினை என்னிடம் (அதில் குறியிடப்பட்ட தகவல்கள் உட்பட) விளக்குவதற்கு பயிற்சி பெற்ற பணியாளர்கள் உள்ளனர், மேலும், First Advantage அலுவலகத்திற்கு நான் நேரில் செல்லும்போது என்னுடன் ஒருவர் வரக்கூடும் என்பதையும் எனது சரியான அடையாளத்தை First Advantageக்கு அளிக்கும் வரை அவர் என்னுடனே இருப்பார் என்பதையும் நான் புரிந்துகொள்கிறேன்.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1057,7 +1049,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "நான் இந்த ஆவணத்தைப் படித்தேன், அதைப் புரிந்துகொண்டேன் என்று சான்றளிக்கிறேன், மேலும் இந்த கலிஃபோர்னியாவின் விசாரணை நுகர்வோர் அறிக்கைகள் தொடர்பான இந்த வெளிப்படுத்துதலின்படி, என்னைப் பற்றிய விசாரணை நுகர்வோர் அறிக்கையைப் பெற Amazonஐ அங்கீகரிக்கிறேன்.",
+      "value" : "நான் இந்த ஆவணத்தைப் படித்தேன் என்றும் அதைப் புரிந்துகொண்டேன் என்றும் சான்றளிக்கிறேன், மேலும் கலிஃபோர்னியாவின் விசாரணை நுகர்வோர் அறிக்கைகள் தொடர்பான இந்த வெளிப்படுத்துதலின்படி, என்னைப் பற்றிய விசாரணை நுகர்வோர் அறிக்கையைப் பெற Amazonஐ அங்கீகரிக்கிறேன்.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1065,11 +1057,11 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "{firstname} {lastname} நீங்கள் கிட்டத்தட்ட முடித்துவிட்டீர்கள்! நீங்கள் பேட்ஜ் புகைப்படம் எடுப்பதற்காகவும், முழுமையான பணி அங்கீகாரத்தை முடிப்பதற்காகவும், தேவைப்பட்டால் போதைமருந்து பரிசோதனைக்காவும் வர வேண்டும்.",
+      "value" : "{firstname} {lastname} நீங்கள் கிட்டத்தட்ட முடித்துவிட்டீர்கள்! பேட்ஜ் புகைப்படம் எடுப்பதற்காகவும், முழுமையான பணி அங்கீகாரத்தை முடிப்பதற்காகவும், தேவைப்பட்டால் போதைமருந்து பரிசோதனைக்காவும் நீங்கள் வர வேண்டும்.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
-      "value" : "தேர்வை உறுதிப்படுத்தவும்",
+      "value" : "தேர்வை உறுதிப்படுத்துக",
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
@@ -1081,7 +1073,7 @@
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "அனுபவமுள்ளவர் நிலையின் தன்னார்வ சுய-அடையாளம்",
+      "value" : "படைவீரர் அந்தஸ்தின் தன்னார்வ சுய-அடையாளம்",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
@@ -1093,7 +1085,7 @@
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்களுக்குத் தேவையானவற்றைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள வேலை விவரங்களைப் பார்க்கவும்.",
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்கள் தேவைகளைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள வேலை விவரங்களைப் பார்க்குமாறு பரிந்துரைக்கிறோம்.",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
@@ -1105,11 +1097,11 @@
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "இந்தப் பணிக்கு உங்களைப் பரிசீலிக்க வாய்ப்பளித்ததற்கு மிக்க நன்றி. தற்சமயம் எங்களால் உங்களது விண்ணப்பத்தை அடுத்த படிக்கு எடுத்துச்செல்ல இயலவில்லை.",
+      "value" : "இந்தப் பணிக்கு உங்களைப் பரிசீலிக்க வாய்ப்பளித்ததற்கு மிக்க நன்றி. தற்சமயம் எங்களால் உங்களது விண்ணப்பத்தை அடுத்த படிக்கு எடுத்துச்செல்ல முடியவில்லை.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "மற்றொரு நேரத்தில் நாங்கள் உங்களை இந்தப் பணிக்கு மறுபரிசீலனை செய்ய வேண்டுமெனில், நீங்கள் அடுத்த மூன்று மாதங்களில் மீண்டும் மதிப்பீட்டில் கலந்துகொள்ளலாம்.",
+      "value" : "மற்றொரு நேரத்தில் நாங்கள் உங்களை இந்தப் பணிப் பொறுப்புக்கு மறுபரிசீலனை செய்ய வேண்டுமெனில், நீங்கள் அடுத்த மூன்று மாதங்களில் மீண்டும் மதிப்பீட்டில் கலந்துகொள்ளலாம்.",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
@@ -1129,7 +1121,7 @@
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "உதவிகள்",
+      "value" : "தங்குமிடங்கள்",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
@@ -1137,11 +1129,11 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>மதிப்பீட்டின் எந்த பகுதிக்கும் கால வரையறை இல்லை</b> — உங்களுக்கு ஏற்ற வேகத்தில் செய்யலாம். இந்த மதிப்பீட்டின் அனைத்துப் பிரிவுகளும்:",
+      "value" : "<b>மதிப்பீட்டின் எந்த பகுதிக்கும் கால வரையறை இல்லை</b> — உங்களுக்கு ஏற்ற வேகத்தில் வேலை செய்யலாம். இந்த மதிப்பீட்டின் அனைத்துப் பிரிவுகளும்:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "பின்வரும் ஸ்க்ரீன் ரீடர்களுக்கு உகந்ததாக இருக்கும்: VoiceOver (Mac) மற்றும் Firefox, Chrome மற்றும் Edge (Windows)இல் NVDA (Windows).",
+      "value" : "பின்வரும் ஸ்க்ரீன் ரீடர்களுக்கு உகந்ததாக இருக்கும்: VoiceOver (Mac), Firefoxஇல் NVDA (Windows), Chrome, Edge (Windows) ஆகியவை.",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1149,16 +1141,12 @@
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
-      "value" : "மதிப்பீட்டைத் தொடங்கு",
+      "value" : "மதிப்பீட்டைத் தொடங்குக",
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
       "value" : "சரிபார்த்து, சமர்ப்பிக்கவும்",
       "note" : "Text for the review and submit title text"
-    },
-    "BB-ReviewSubmit-edit-button-text" : {
-      "value" : "திருத்து",
-      "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "வேலை விவரங்கள்",
@@ -1173,7 +1161,7 @@
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "பின்னணி சரிபார்ப்பின் இலவச நகலை அனுப்பவும்",
+      "value" : "பின்னணிச் சரிபார்ப்பின் இலவச நகலை அனுப்பவும்",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
@@ -1205,11 +1193,11 @@
       "note" : "Text for the voluntary self-identification section title text"
     },
     "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
-      "value" : "சம வாய்ப்பு:",
+      "value" : "சமமான வாய்ப்பு:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "Veteral நிலை:",
+      "value" : "படைவீரர் நிலை:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
@@ -1225,7 +1213,7 @@
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "நாம் விரைவில் மீண்டும் சந்திப்போம். உங்கள் அடுத்த படிகள் இதோ:",
+      "value" : "நாம் விரைவில் மீண்டும் சந்திப்போம். உங்களின் அடுத்த படிகள் இதோ:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
@@ -1249,7 +1237,7 @@
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "உங்கள் முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்கு முன்பு, வேலை வாய்ப்புகள் வரி கிரெடிட் கேள்வித்தாளை நிரப்பவும்..",
+      "value" : "உங்கள் முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்கு முன்பு, வேலை வாய்ப்புகள் வரிக் கிரெடிட் கேள்வித்தாளை நிரப்பவும்.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
@@ -1261,8 +1249,12 @@
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "{startTime} - {endTime}க்குள் எப்போது வேண்டுமானாலும் 30 நிமிட அமர்வுக்கு வருகை தரவும்.",
+      "value" : "{startTime} - {endTime}க்குள் எப்போது வேண்டுமானாலும் 30 நிமிட அமர்வுக்கு வருகை தாருங்கள்.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனம்",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "நியமன விவரங்கள்",
@@ -1293,11 +1285,11 @@
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு IDஐ வழங்கவும் (சிற்றெழுத்துகளில் மட்டும்)",
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு ஐடியை வழங்கவும் (சிற்றெழுத்துகளில் மட்டும்)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு IDஐ வழங்கவும்.",
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு ஐடியை வழங்கவும்.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
@@ -1305,36 +1297,524 @@
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
-      "value" : "வேலை வாய்ப்பு வரி கிரெடிட் கேள்வித்தாள்",
+      "value" : "வேலை வாய்ப்பு வரிக் கிரெடிட் கேள்வித்தாள்",
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT சோதனையானது மத்திய மற்றும்/அல்லது மாநில வரி கிரெடிட் திட்டங்களில் பங்கேற்கிறது. நீங்கள் வழங்கும் தகவல்கள் இந்த திட்டங்களுக்கான நிறுவனத் தகுதியைத் தீர்மானிப்பதற்காகப் பயன்படுத்தப்படும், அவை எந்த விதத்திலும் பணியமர்த்தல், தக்கவைத்தல் அல்லது பதவி உயர்வு முடிவுகளை எதிர்மறையாக பாதிக்காது.",
+      "value" : "Amazon IAT சோதனையானது மத்திய மற்றும்/அல்லது மாநில வரிக் கிரெடிட் திட்டங்களில் பங்கேற்கிறது. நீங்கள் வழங்கும் தகவல்கள் இந்த திட்டங்களுக்கான நிறுவனத் தகுதியைத் தீர்மானிப்பதற்காகப் பயன்படுத்தப்படும், அவை எந்த விதத்திலும் பணியமர்த்தல், தக்கவைத்தல் அல்லது பதவி உயர்வு முடிவுகளை எதிர்மறையாக பாதிக்காது.",
       "note" : "Text for the WOTC page description text"
     },
-    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
-      "value" : "அமெரிக்கா - சமூகப் பாதுகாப்பு எண்",
-      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "சாத்தியமான தொடக்க தேதி:",
+      "note" : "Text for the schedule card possible start date text"
     },
-    "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "ஆம், நான் ஒரு மாற்றுத்திறனாளி (அல்லது முன்பு மாற்றுத்திறனாளியாக இருந்தேன்)",
-      "note" : "Text for the reverse mapping candidate disability yes"
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(அல்லது அதற்கும் முந்தைய தேதியில்!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "இல்லை, நான் ஒரு மாற்றுத்திறனாளி அல்ல",
-      "note" : "Text for the reverse mapping candidate disability no"
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ம.நே",
+      "note" : "Text for the schedule card total pay per hour text"
     },
-    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
-      "value" : "நான் பதிலளிக்க விரும்பவில்லை",
-      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "ம.நே/வா",
+      "note" : "Text for the schedule card hours per week text"
     },
-    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
-      "value" : "அமெரிக்க இந்தியர்/அலாஸ்கா பூர்வீகம்",
-      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "போனஸ்:",
+      "note" : "Text for the schedule card bonus text"
     },
-    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
-      "value" : "கறுப்பு/ஆப்பிரிக்க அமெரிக்கர்",
-      "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்கள் தேவைகளைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள மற்ற வேலைகள் பற்றிய தகவல்களைப் பார்க்கும்படி நாங்கள் உங்களை ஊக்குவிக்கிறோம்.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "மன்னிக்கவும், நீங்கள் ஏற்கெனவே இந்த வேலைக்கு விண்ணப்பித்திருக்கிறீர்கள்!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "தேவையான புலங்கள் விடுபட்டுள்ளன.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "சர்வரில் ஏதோ தவறாகிவிட்டது. மீண்டும் முயலவும் அல்லது உலாவியைப் புதுப்பிக்கவும்.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "விண்ணப்பதாரர் செயலில் இல்லை. விண்ணப்பதாரருக்கான விண்ணப்பத்தை உருவாக்க முடியவில்லை.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "விண்ணப்பததாரர் கிடைக்கவில்லை.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "மிகச் சமீபத்திய புதுப்பிப்பு இருப்பதால், விண்ணப்பத்தைப் புதுப்பிக்க முடியாது.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "விண்ணப்பத்தை உருவாக்க முடியவில்லை.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "கோரிக்கை பாதையில் உள்ள ஐடியுடன் விண்ணப்ப ஐடி பொருந்தவில்லை.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "விண்ணப்பத்தைக் கண்டறிய முடியவில்லை.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "தேவையான புலங்கள் விடுபட்டுள்ளன: ApplicationID.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "மிகச் சமீபத்திய புதுப்பிப்பு இருப்பதால், விண்ணப்பத்தைப் புதுப்பிக்க முடியாது.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "சர்வரில் ஏதோ தவறாகிவிட்டது. மீண்டும் முயலவும் அல்லது உலாவியைப் புதுப்பிக்கவும்.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "இந்த விண்ணப்பத்தை நீங்கள் அணுக முடியாது.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "ஒப்புதல் பகுதியில் கையெழுத்திடவும்.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "fcra கோரிக்கையில் கையெழுத்திடவும்.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "ஒப்புதல் பகுதியில் கையெழுத்திடவும்.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "நிலை அறிக்கைகளில் கையெழுத்திடவும்.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்த காலத்திட்டம் தற்போது இல்லை, மற்றொரு காலத்திட்டத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "மின்னனு கையொப்பம் பொருந்தவில்லை. அனைத்து மின்னணு கையொப்பத்திற்கும் ஒரே உரையைப் பயன்படுத்தவும்.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "உங்கள் தேசிய அடையாள அட்டைக்கான அதிகபட்ச மாற்ற வரம்பை நீங்கள் அடைந்துவிட்டதால், விண்ணப்பத்தைப் புதுப்பிக்க முடியவில்லை. நீங்கள் முன்னர் வேறு மின்னஞ்சல் முகவரி மூலம் பதிவுசெய்திருந்தால் இதிலிருந்து வெளியேறி அந்த மின்னஞ்சல் முகவரி மூலம் உள்நுழைய முயலவும், தேவைப்பட்டால் “உங்கள் தனிப்பட்ட பின் மறந்துவிட்டதா?“ என்ற இணைப்பைப் பயன்படுத்தவும். உங்களுக்கு உதவி தேவைப்பட்டால், மின்னஞ்சல் வழியாக எங்களை தொடர்புகொள்ளவும் அல்லது <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> எனும் பக்கத்தில் எங்களுடன் உரையாடவும்.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "வழங்கப்பட்ட தேசிய அடையாள எண் தவறானது என்பதால் விண்ணப்பத்தைப் புதுப்பிக்க முடியவில்லை. தொடர்வதற்கு முன்னர் சரியான மற்றும் முழுமையான தேசிய அடையாள எண்ணை உள்ளிடவும்.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "கோரிக்கையின் வகை விடுபட்டுள்ளது.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "கோரிக்கையுடன் வகை பொருந்தவில்லை.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "பிறந்த தேதி பேலோட்டில் காணவில்லை.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "செல்லுபடியாகும் தேதியை வழங்கவும்.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "கோரிக்கையில் விண்ணப்ப ஐடி விடுபட்டுள்ளது.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "கோரிக்கையில் அரசாங்க ஐடி விடுபட்டுள்ளது.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "கோரிக்கையில் ஐடி எண் விடுபட்டுள்ளது.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "HasCriminalRecordWithinSevenYears தகவல்கள் கோரிக்கையில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "முகவரி ஆப்ஜெக்ட்டில் முகவரி வரி 1 விடுபட்டுள்ளது.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "முகவரி ஆப்ஜெக்ட்டில் நகரம் விடுபட்டுள்ளது.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "முகவரி ஆப்ஜெக்ட்டில் மாநிலம் விடுபட்டுள்ளது.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "முகவரி ஆப்ஜெக்ட்டில் ஜிப்/அஞ்சல் குறியீடு விடுபட்டுள்ளது.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "முகவரி ஆப்ஜெக்ட்டில் நாடு விடுபட்டுள்ளது.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "முன்பு பயன்படுத்திய சட்டப்பூர்வ முழுப் பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்: பெயரின் முற்பகுதி, பிற்பகுதி.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "கூடுதல் பின்னணி தகவல்கள் தவறானவை, தேவையான அனைத்துப் புலங்களையும் புதுப்பிக்கவும்.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "கோரிக்கையில் nheAppointment ஆப்ஜெக்ட் விடுபட்டுள்ளது.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "கோரிக்கையில் பரிந்துரை தகவல்கள் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "இனத் தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "பாலினம் பேலோடில் விடுபட்டுள்ளது.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "இராணுவத்தில் பணியாற்றுபவரின் வாழ்க்கைத்துணை குறித்த தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "பாதுகாக்கப்பட்ட படைவீரர் குறித்த தகவல்கள் பேலோடில் விடுபட்டுள்ளது.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "படைவீரர் குறித்த தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "மாற்றுத்திறன் தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "hasBGCCaliforniaDisclosureAcknowledged தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "நீங்கள் உள்ளிட்ட SSN அல்லது தேசிய அடையாள எண் ஏற்கெனவே எங்கள் சிஸ்டத்தில் உள்ள மற்றொரு மின்னஞ்சல் முகவரியுடன் இணைக்கப்பட்டுள்ளது. நீங்கள் முன்னர் வேறு மின்னஞ்சல் முகவரி மூலம் பதிவுசெய்திருந்தால், [Log Out](/application/logout) செய்துவிட்டு அந்த மின்னஞ்சல் முகவரி மூலம் உள்நுழைய முயலவும், தேவைப்பட்டால் “உங்கள் தனிப்பட்ட பின் மறந்துவிட்டதா?“ என்ற இணைப்பைப் பயன்படுத்தவும். உங்களுக்கு உதவி தேவைப்பட்டால், மின்னஞ்சல் வழியாக எங்களை தொடர்புகொள்ளவும் அல்லது <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> எனும் பக்கத்தில் எங்களுடன் உரையாடவும்.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "வேலைத் தகவல்கலைப் பெற முடியவில்லை.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "வேலைகள் குறித்த தகவல்களைப் பெறும்போது ஏதோ தவறாகிவிட்டது! பக்கத்தை ரெஃப்ரெஷ் செய்யவும் அல்லது பிறகு மீண்டும் முயலவும்.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "தற்சமயம் வேலைகளை மீட்டெடுக்க முடியவில்லை. சிறிது நேரம் கழித்து மீண்டும் முயலவும்.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "அனைத்து ஷிஃப்ட்களும் நிரம்பிவிட்டன.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "அனைத்து ஷிஃப்ட்களும் நிரம்பிவிட்டன.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "நபர்களின் எண்ணிக்கை குறித்த கோரிக்கையைப் பெற முடியவில்லை.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "அனைத்து ஷிஃப்ட்களும் நிரம்பிவிட்டன.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "ஏதோ தவறாகிவிட்டது! பக்கத்தை ரெஃப்ரெஷ் செய்யவும் அல்லது பிறகு மீண்டும் முயலவும்.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "வேலைகள் குறித்த தகவல்களைப் பெறும்போது ஏதோ தவறாகிவிட்டது! பக்கத்தை ரெஃப்ரெஷ் செய்யவும் அல்லது பிறகு மீண்டும் முயலவும்.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "ஷிஃப்ட் விருப்பத்தேர்வுகளைப் பெற முடியவில்லை.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "தற்சமயம் வேலைகளை மீட்டெடுக்க முடியவில்லை. சிறிது நேரம் கழித்து மீண்டும் முயலவும்.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "விண்ணப்பதாரர் தகவல்களைப் பெற முடியவில்லை.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "இந்த விண்ணப்பத்தை நீங்கள் அணுக முடியாது.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "விண்ணப்பத்தை உருவாக்க முடியவில்லை.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "உங்களால் விண்ணப்பத்தை உருவாக்க முடியாது.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "விண்ணப்பத் தரவை பெற விண்ணப்ப ஐடி தேவை.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "இந்த விண்ணப்பத்தை நீங்கள் அணுக முடியாது.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "இந்த விண்ணப்பத்தைப் பெற முடியவில்லை.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "சர்வரில் ஏதோ தவறாகிவிட்டது. மீண்டும் முயலவும் அல்லது உலாவியைப் புதுப்பிக்கவும்.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "பணிப்போக்குப் பிழை",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "விண்ணப்பப் பணிப்போக்கு தோல்வியடைந்தபோது.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்கள் தேவைகளைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள மற்ற வேலைகள் பற்றிய தகவல்களைப் பார்க்கும்படி நாங்கள் உங்களை ஊக்குவிக்கிறோம்.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்கள் தேவைகளைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள மற்ற வேலைகள் பற்றிய தகவல்களைப் பார்க்கும்படி நாங்கள் உங்களை ஊக்குவிக்கிறோம்.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்கள் தேவைகளைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள மற்ற வேலைகள் பற்றிய தகவல்களைப் பார்க்கும்படி நாங்கள் உங்களை ஊக்குவிக்கிறோம்.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "உங்கள் வேலை நிலைக்கான ஒதுக்கீடு காலாவதியாகிவிட்டது.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "விண்ணப்பதாரர்கள் தங்கள் விண்ணப்பத்தை பூர்த்தி செய்ய மூன்று மணிநேரம் வரை தருகிறோம். துரதிர்ஷ்டவசமாக, நீங்கள் விண்ணப்பிக்கும் வேலைக்கான செயல்பாடு மூன்று மணிநேர வரம்பைக் கடந்துவிட்டது. கிடைக்கக்கூடிய வேலை வாய்ப்புகளைக் கண்டறியுங்கள்.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "வேலை வாய்ப்புகளைக் காண்க",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "தற்சமயம் இந்த வேலைக்கான நியமனங்கள் எதுவும் இல்லை.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "நீங்கள் வேண்டுமானால்:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. வேறு வேலை வாய்ப்பைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "இங்கு கிளிக் செய்க",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. வருங்காலத் தொடக்க தேதியுடன் ஒரு ஷிஃப்ட்டைத் தேர்ந்தெடுக்கவும் (பரிந்துரைக்கப்படுகிறது)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "பிற ஷிஃப்ட்களைக் காண்க",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA -- வாஷிங்டன்",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI -- விஸ்கான்சின்",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV -- மேற்கு விர்ஜீனியா",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY -- வயோமிங்",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "WOTCஐப் புதுப்பிக்க முடியவில்லை.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்த காலத்திட்டம் தற்போது இல்லை. வேறு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "இந்த விண்ணப்பத்திற்காக நீங்கள் சமீபத்தில் பணியமர்த்தப்பட்டீர்கள், உங்கள் ஷிஃப்ட்டை மாற்ற முடியாது. உங்கள் ஷிஃப்ட்ட்டை மாற்றுவதற்கு இங்கு தொடர்புகொள்ளவும்: https://www.amazondelivers.jobs/contactus.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "விண்ணப்பத்தைப் புதுப்பிக்க முடியவில்லை.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "கூடுதல் பின்னணித் தகவல்கள்",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} பணியில் நீங்கள் காட்டும் ஆர்வத்திற்கு நன்றி. நீங்கள் முன்பு Amazonஇல் பணிபுரிந்ததாக எங்கள் பதிவுகள் குறிப்பிடுகின்றன.  இந்த நேரத்தில், உங்கள் வேலைவாய்ப்புப் பதிவின் அடிப்படையில் குறிப்பிட்ட காலத்திற்கான Amazon associate அல்லது மூன்றாம் தரப்பு ஏஜென்சி பணியாளராக நீங்கள் மீண்டும் பணியமர்த்தப்படுவதற்கு தகுதியுடையவர். இதன் விளைவாக, இந்த வேலைக்கான உங்கள் கோரிக்கையை எங்களால் அடுத்த நிலைக்கு எடுத்துச் செல்ல முடியவில்லை. மறுபணியமர்த்தல் தகுதிநிலை குறித்து ஏதேனும் கேள்விகள் இருந்தால், தள HR குழுவைத் தொடர்புகொள்ளவும்.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "இந்தப் பணியில் நீங்கள் காட்டும் ஆர்வத்திற்கு நன்றி. நீங்கள் முன்பு Amazonஇல் பணிபுரிந்ததாக எங்கள் பதிவுகள் குறிப்பிடுகின்றன.  இந்த நேரத்தில், உங்கள் வேலைவாய்ப்புப் பதிவின் அடிப்படையில் குறிப்பிட்ட காலத்திற்கான Amazon associate அல்லது மூன்றாம் தரப்பு ஏஜென்சி பணியாளராக நீங்கள் மீண்டும் பணியமர்த்தப்படுவதற்கு தகுதியுடையவர். இதன் விளைவாக, இந்த வேலைக்கான உங்கள் கோரிக்கையை எங்களால் அடுத்த நிலைக்கு எடுத்துச் செல்ல முடியவில்லை. மறுபணியமர்த்தல் தகுதிநிலை குறித்து ஏதேனும் கேள்விகள் இருந்தால், தள HR குழுவைத் தொடர்புகொள்ளவும்.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "உங்கள் பகுதியிலுள்ள குறிப்பிட்ட கால வாய்ப்புகளைத் தெரிந்துகொள்ள எங்கள் குறிப்பிட்ட காலப் பணிப் பக்கத்தைப் பார்வையிடவும்.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Amazonக்கான உங்கள் சமீபத்திய வேலை விண்ணப்பத்திற்கு நன்றி. கவனமாகப் பரிசீலித்த பிறகு, உங்கள் வேலை விண்ணப்பத்தை நாங்கள் அடுத்த படிக்கு கொண்டு செல்ல மாட்டோம் என முடிவெடுத்துள்ளோம்.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "உங்கள் நேரத்தை நாங்கள் மதிக்கிறோம், எதிர்காலத்தில் உங்களுக்கு நல்ல அதிர்ஷ்டம் கிடைக்க வாழ்த்துகிறோம்.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "உங்கள் சமீபத்திய வேலை விண்ணப்பத்திற்கு நன்றி! எதிர்பாராதவிதமாக, நீங்கள் ஏற்கெனவே Amazon நிறுவனத்தில் பணிபுரிந்து வருவதால், இந்த குறிப்பிட்ட பதவிக்கு நீங்கள் தகுதிபெறவில்லை.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "நல்ல செய்தி என்ன? நீங்கள் ஆன்லைனில் உலாவவும் விண்ணப்பிக்கவும் ஏராளமான வாய்ப்புகள் திறந்துள்ளன. உங்கள் எதிர்காலத் தொழில் வளர்ச்சியை ஆராயும் சில வழிகள் இதோ:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "ஏஜென்சி அல்லது குறிப்பிட்ட காலப் பணி மாற்றங்களுக்கு, amazon.com/conversions (http://amazon.com/conversions) இணையப் பக்கத்திற்குச் செல்லவும்.",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "ஷிஃப்ட் அல்லது இருப்பிட மாற்றங்களைக் கோர, உங்கள் ஆன்சைட் குழுவைத் தொடர்புகொள்ளவும்.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "உங்கள் உள்ளூர் HR குழு அல்லது பணியாளர் வள மையம் (ERC) எந்த கேள்விகளுக்கும் சிறந்த ஆதாரமாகும். 1-888-892-7180 (ஃபோன்:18888927180) எனும் எண்ணில் ERC குழுவை நீங்கள் 24/7 தொடர்புகொள்ளலாம்.",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Amazonஇல் உள்ள அற்புதமான குழுவில் ஒருவராக இணைந்திருப்பதற்கு நன்றி! சிறந்த பணியாளர் வளங்கள், பலன்கள், ஊதியம் மற்றும் மாற்றிக்கொள்ளக்கூடிய திட்டக்காலங்கள் ஆகியவற்றை உங்களுக்கு வழங்க நாங்கள் தொடர்ந்து முயன்று வருகிறோம் - இவை அனைத்தும் உலகின் மிகச்சிறந்த பணி நிறுவனமாக மாறுவதற்கான எங்கள் முயற்சிகளை ஆதரிக்கின்றன!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} பணியில் நீங்கள் காட்டும் ஆர்வத்திற்கு நன்றி. நீங்கள் முன்பு Amazon இல் பணிபுரிந்தீர்கள் என்றும், உங்கள் முந்தைய Amazon வேலைவாய்ப்புப் பதிவின் அடிப்படையில் நீங்கள் மீண்டும் பணியமர்த்தப்பட தகுதிபெறவில்லை என்றும் எங்கள் பதிவுகள் குறிப்பிடுகின்றன. இதன் விளைவாக, தற்சமயம் உங்கள் கோரிக்கையை அடுத்த நிலைக்கு எடுத்துச் செல்ல முடியவில்லை.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "இந்தப் பணியில் நீங்கள் காட்டும் ஆர்வத்திற்கு நன்றி. நீங்கள் முன்பு Amazon இல் பணிபுரிந்தீர்கள் என்றும், உங்கள் முந்தைய Amazon வேலைவாய்ப்புப் பதிவின் அடிப்படையில் நீங்கள் மீண்டும் பணியமர்த்தப்பட தகுதிபெறவில்லை என்றும் எங்கள் பதிவுகள் குறிப்பிடுகின்றன. இதன் விளைவாக, தற்சமயம் உங்கள் கோரிக்கையை அடுத்த நிலைக்கு எடுத்துச் செல்ல முடியவில்லை.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "பணிநீக்கம் செய்யப்பட்ட காரணத்தால், Amazonஇல் பணிபுரிந்த கடைசி நாளிலிருந்து 90 நாட்களுக்குப் பிறகு மீண்டும் விண்ணப்பிக்கலாம்.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "தற்சமயம் அனைத்து ஷிஃப்ட்களும் நிரப்பப்பட்டுள்ளன.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "மற்ற வேலைகளுக்கு விண்ணப்பிக்க, டாஷ்போர்டுக்குத் திரும்பவும்.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "விண்ணப்பப் பிழை",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "ஏதோ தவறு உள்ளது, டாஷ்போர்டுக்குச் செல்லவும்",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for the applicationId null page return to dashboard text"
     }
   }
 }

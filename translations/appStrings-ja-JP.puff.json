@@ -77,23 +77,23 @@
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "お客様が今日応募した役割に加えて、同じまたは類似の職務を必要とする他の職種があるかもしれません。これらの役職は、この場所または他の近くのAmazonロケーションでの、フルタイム、短時間、パートタイム、シーズン、および/または一時雇用の可能性があります。お客様は、AmazonまたはAmazonパートナーのいかなる役割も承諾する義務を負いません。ただし、応募を完了することにより、応募サイトから半径30マイル以内で、同じレベルの時間単位の役職に就くことに同意したものとみなされます。これには、通常および一時的な関連するニーズの両方のために採用するパートナー(人材派遣会社)と応募者情報を共有することが含まれます。",
+      "value" : "今日応募した役割に加えて、同じまたは類似の職務を必要とする他の職種があるかもしれません。これらの役職は、この場所または他の近くのAmazonロケーションでの、フルタイム、短時間、パートタイム、シーズン、および/または一時雇用の可能性があります。お客様は、AmazonまたはAmazonパートナーのいかなる役割も承諾する義務を負いません。ただし、応募を完了することにより、応募サイトから半径30マイル以内で、同じレベルの時間単位の役職に就くことに同意したものとみなされます。これには、通常および一時的な関連するニーズの両方のために採用するパートナー(人材派遣会社)と応募者情報を共有することが含まれます。",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "応募することで、お客様は以下を行います。",
+      "value" : "応募することで、お客様は以下を行います:",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
-      "value" : "応募する職種の職務内容を読み、その職務を遂行するために必要な基本的要件を理解していることを認めていること。",
+      "value" : "応募する職種の職務内容を読み、その職務を遂行するために必要な基本的要件を理解していることを認めている。",
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "申請の目的およびAmazonの他の正当な目的のために、Amazon、salesforce.com、またはその他の第三者が個人データを処理、分析、評価することに同意する。疑義を避けるために、お客様の個人データの「処理」には、個人情報の収集、受信、記録、整理、照合、保存、更新、改変、使用、普及、配布、マージ、リンク、ブロック、劣化、消去、または破壊に限定されません。",
+      "value" : "申請の目的およびAmazonの他の正当な目的のために、Amazon、salesforce.com、またはその他の第三者が個人データを処理、分析、評価することに同意する。疑義を避けるために、個人データの「処理」には、個人情報の収集、受信、記録、整理、照合、保存、更新、改変、使用、普及、配布、マージ、リンク、ブロック、劣化、消去、または破壊に限定されません。",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "求人応募プロセスを効果的に監視し、お客様の個人データが米国の電子データベースに保存されるのを支援するために、Amazonが応募プロセス後もお客様の個人データを保持することに同意します。",
+      "value" : "求人応募プロセスを効果的に監視し、あなたの個人データが米国の電子データベースに保存されるのを支援するために、Amazonが応募プロセス後も個人データを保持することに同意します。",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
@@ -105,7 +105,7 @@
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "職種を選ぶ",
+      "value" : "ジョブを選択",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
@@ -209,11 +209,11 @@
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "これが選んだ仕事の条件付き求人です。",
+      "value" : "こちらが選んだ仕事の条件付き求人です。",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "これが選んだ仕事の条件付き求人です。",
+      "value" : "こちらが選んだ仕事の条件付き求人です。",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
@@ -289,7 +289,7 @@
       "note" : "Text for the additional bgc form  address line 1 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
-      "value" : "正しい住所を入力してください",
+      "value" : "有効な住所を入力してください",
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
@@ -297,7 +297,7 @@
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
-      "value" : "正しい住所を入力してください",
+      "value" : "有効な住所を入力してください",
       "note" : "Text for the additional bgc form  address line 2 error message text"
     },
     "BB-BGC-Additional-bgc-form-city-label-text" : {
@@ -433,23 +433,23 @@
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
-      "value" : "次の形式で有効なフルネームを入力してください:名",
+      "value" : "次の形式で有効なフルネームを入力してください:名、姓",
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "Amazon.com, Inc. の別の公正信用報告法の開示および承認文書で開示および承認されたとおりまたはその子会社または関連会社(「Amazon」)が私の身元調査を行います。",
+      "value" : "別の公正信用報告法の開示および承認文書で開示および承認されたとおり、Amazon.com, Inc.またはその子会社または関連会社(「Amazon」)が私の身元調査を行うこと。",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
-      "value" : "以下の私の電子署名により、私は以下のことを認めます:",
+      "value" : "以下の電子署名により、私は以下のことを認めます:",
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "身元調査を行う身元調査プロバイダーまたは「CRA」はFirst Advantageであり、アトランタ、ジョージア州30328のアトランタの1コンコース・パークウェイNE、スイート200にあり、（800）845-6004またはwww.fadv.comでアクセスできます。",
+      "value" : "身元調査を行う身元調査プロバイダーまたは「CRA」はFirst Advantageであり、1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328にあり、（800）845-6004またはwww.fadv.comからお問い合わせいただけます。",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "身元調査を行う身元調査プロバイダーまたは「CRA」は、Accurate Background であり、カリフォルニア州92618、アーバインの7515アーバインセンターDr.に所在し、（800）216-8024またはwww.accuratebackground.comにお問い合わせいただけます。\n\n* 私は、法律で認められているとおり、Amazonが、私のさらなる許可なしに、(1)雇用中(ある場合)および(2)Accurate Background(Accurate Background)以外のCRAから、雇用目的で私に関する追加の身元調査を注文できることを理解し、同意します。",
+      "value" : "身元調査を行う身元調査プロバイダーまたは「CRA」は、Accurate Background であり、7515 Irvine Center Dr., Irvine, CA 92618に所在し、（800）216-8024またはwww.accuratebackground.comにお問い合わせいただけます。\n\n* 私は、法律で認められているとおり、Amazonが、私のさらなる許可なしに、(1)雇用中(ある場合)および(2)Accurate Background(Accurate Background)以外のCRAから、雇用目的で私に関する追加の身元調査を注文できることを理解し、同意します。",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
@@ -457,7 +457,7 @@
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "* 私は、法律で認められているとおり、Amazonが、私のさらなる許可なしに、(1)雇用中(ある場合)および(2)Accurate Background以外のCRAから、雇用目的で私に関する追加の身元調査を注文できることを理解し、同意します。",
+      "value" : "私は、法律で認められているとおり、Amazonが、私のさらなる許可なしに、(1)雇用中(ある場合)および(2)Accurate Background以外のCRAから、雇用目的で私に関する追加の身元調査を注文できることを理解し、同意します。",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
@@ -485,7 +485,7 @@
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>ニューヨーク:</b>お客様は、Amazonがお客様に関する消費者レポートまたは調査消費者レポートを注文したかどうかを知るために、書面によるリクエストをAmazonに送信する権利を有します。上に表示されているのは、CRAの住所と電話番号です。お客様には、そのようなレポートの検査またはコピーを受け取るために、CRAに連絡する権利があります。ニューヨーク州矯正法第23-A条に基づくお客様の権利に関する情報については、<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ここ</a>をクリックしてください。</p>",
+      "value" : "<p><b>ニューヨーク:</b>あなたは、Amazonがあなたに関する消費者レポートまたは調査消費者レポートを注文したかどうかを知るために、書面によるリクエストをAmazonに送信する権利を有します。上に表示されているのは、CRAの住所と電話番号です。お客様には、そのようなレポートの検査またはコピーを受け取るために、CRAに連絡する権利があります。ニューヨーク州矯正法第23-A条に基づくお客様の権利に関する情報については、<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">こちら</a>をクリックしてください。</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
@@ -497,7 +497,7 @@
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "以前に使用した正式名称を次の形式で入力してください:名",
+      "value" : "以前に使用した正式名称を次の形式で入力してください:名、姓",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
@@ -505,15 +505,15 @@
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "以前に使用した正式名称を次の形式で入力してください:名",
+      "value" : "以前に使用した正式名称を次の形式で入力してください:名、姓",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
-      "value" : "以前の正式名称 (1)",
+      "value" : "以前の正式なフルネーム (1)",
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "以前に使用した正式名称を次の形式で入力してください:名",
+      "value" : "以前に使用した正式名称を次の形式で入力してください:名、姓",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
@@ -525,7 +525,7 @@
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
-      "value" : "Amazon ビルディングで働いたことがありますか？",
+      "value" : "Amazon ビルディングで働いたことがありますか?",
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
@@ -653,7 +653,7 @@
       "note" : "Text for Self Identification form name"
     },
     "BB-SelfId-disability-form-control-number-text" : {
-      "value" : "OMBコントロールナンバー1250-0005",
+      "value" : "OMB Control Number 1250-0005",
       "note" : "Text for Self Identification control number"
     },
     "BB-SelfId-disability-form-expiration-date-text" : {
@@ -665,11 +665,11 @@
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "私たちは、資格のある障がい者に平等な雇用機会を提供することを法律で義務付けられている連邦請負業者または下請け業者です。また、労働力の少なくとも 7% が障がいを持つ個人となるための進捗状況を測定することも求められています。そのためには、応募者と従業員に障がいがあるかどうか、またはこれまでに障がいがあったかどうかを尋ねる必要があります。人はいつでも身体障がい者になる可能性があるため、すべての従業員に少なくとも5年ごとに情報を更新するようお願いしています。",
+      "value" : "Amazonは、資格のある障がい者に平等な雇用機会を提供することを法律で義務付けられている連邦請負業者または下請け業者です。また、労働力の少なくとも 7% が障がいを持つ個人となるための進捗状況を測定することも求められています。そのためには、応募者と従業員に障がいがあるかどうか、またはこれまでに障がいがあったかどうかを尋ねる必要があります。人はいつでも身体障がい者になる可能性があるため、すべての従業員に少なくとも5年ごとに情報を更新するようお願いしています。",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "障がいを持つ個人として自分自身を識別することは任意であり、私たちはお客様がそう選択することを願っています。お客様の答えは秘密に保持され、公務員や人事決定に関与する他の誰かによって見られることはありません。フォームに記入しても、過去に自己識別をしたことがあるかどうかにかかわらず、いかなる形でもお客様に悪影響を与えることはありません。このフォームまたは治療的訓練法第503条に基づく連邦請負業者の平等な雇用義務の詳細については、米国連邦政府観光局をご覧ください。労働省の連邦契約コンプライアンスプログラム（OFCCP）のウェブサイト<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>。",
+      "value" : "障がいを持つ個人として自分自身を識別することは任意であり、Amazonはあなたがそう選択することを願っています。あなたの答えは秘密に保持され、公務員や人事決定に関与する他の誰かによって見られることはありません。フォームに記入しても、過去に自己識別をしたことがあるかどうかにかかわらず、いかなる形でもあなたに悪影響を与えることはありません。このフォームまたは治療的訓練法第503条に基づく連邦請負業者の平等な雇用義務の詳細については、米国連邦政府観光局をご覧ください。労働省の連邦契約コンプライアンスプログラム（OFCCP）のウェブサイト<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>。",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -765,11 +765,11 @@
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "はい、障がいがあります、または障がいのある歴史/記録があります",
+      "value" : "はい、障がいがあります、または障がいのある経歴/記録があります",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "いいえ、私は障がい、または障がいのある歴史/記録を持っていません",
+      "value" : "いいえ、私は障がい、または障がいのある経歴/記録を持っていません",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
@@ -789,7 +789,7 @@
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazonはあらゆる形態の多様性を重視しており、候補者と従業員に性別と人種/民族を自発的に自己識別するよう勧めることを要求する特定の無差別およびアファーマティブアクションの記録管理と報告の要件の対象となっています。この情報の提出は任意であり、提供を拒否しても不利な扱いを受けることはありません。取得した情報は機密情報として保持され、公民権行使の目的で情報を要約して連邦政府に報告することを要求するものを含む、適用される連邦法、行政命令、および規制の規定に従ってのみ使用できます。現時点で性別または人種/民族を自己識別しないことを選択した場合、連邦政府は、従業員への視覚調査やその他の入手可能な情報によって、この情報を決定することを当社に要求しています。",
+      "value" : "Amazonはあらゆる形態の多様性を重視しており、候補者と従業員に性別と人種/民族を自発的に自己識別するよう勧めることを要求する特定の無差別およびアファーマティブアクションの記録管理と報告の要件の対象となっています。この情報の提出は任意であり、提供を拒否しても不利な扱いを受けることはありません。取得した情報は機密情報として保持され、公民権行使の目的で情報を要約して連邦政府に報告することを要求するものを含む、適用される連邦法、行政命令、および規制の規定に従ってのみ使用できます。現時点で性別または人種/民族を自己識別しないことを選択した場合、連邦政府は、従業員への視覚調査やその他の入手可能な情報によって、この情報を決定することをAmazonに要求しています。",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -877,11 +877,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "Amazonでは、数多くの退役軍人や軍の配偶者がイノベーションを推進し、顧客体験の水準を引き上げています。日常的に、軍の経験を持つ人々は、知識、スキル、リーダーシップ能力をさまざまなキャリアに応用することができ、世界中の変化に影響を与えます。これらの理由から、私たちは退役軍人や軍人の配偶者の雇用を積極的に追求しています。",
+      "value" : "Amazonでは、数多くの退役軍人や軍の配偶者がイノベーションを推進し、顧客体験の水準を引き上げています。日常的に、軍の経験を持つ人々は、知識、スキル、リーダーシップ能力をさまざまなキャリアに応用することができ、世界中の変化に影響を与えます。これらの理由から、Amazonは退役軍人や軍人の配偶者の雇用を積極的に追求しています。",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "Amazonでは、数多くの退役軍人や軍の配偶者がイノベーションを推進し、顧客体験の水準を引き上げています。日常的に、軍の経験を持つ人々は、知識、スキル、リーダーシップ能力をさまざまなキャリアに応用することができ、世界中の変化に影響を与えます。これらの理由から、私たちは退役軍人や軍人の配偶者の雇用を積極的に追求しています。",
+      "value" : "Amazonでは、数多くの退役軍人や軍の配偶者がイノベーションを推進し、顧客体験の水準を引き上げています。日常的に、軍の経験を持つ人々は、知識、スキル、リーダーシップ能力をさまざまなキャリアに応用することができ、世界中の変化に影響を与えます。これらの理由から、Amazonは退役軍人や軍人の配偶者の雇用を積極的に追求しています。",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -965,7 +965,7 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "Amazon.com, Inc. での可能な雇用に関連して。またはその子会社または関連会社（以下「Amazon」）の場合、Amazonは、以下の消費者報告機関から、身元調査としても知られる調査消費者レポート（「レポート」）を入手する場合があります。",
+      "value" : "Amazon.com, Inc. での可能な雇用に関連してまたはその子会社または関連会社(以下「Amazon」)の場合、Amazonは、以下の消費者報告機関から、身元調査としても知られる調査消費者レポート(「レポート」)を入手する場合があります。",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -973,11 +973,11 @@
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
-      "value" : "7515 アーバインセンターDr.",
+      "value" : "7515 Irvine Center Dr.",
       "note" : "Text for the california disclosure page vendor accurate address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
-      "value" : "カリフォルニア州アーバイン 92618",
+      "value" : "Irvine, CA 92618",
       "note" : "Text for the california disclosure page vendor accurate address line 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
@@ -1005,7 +1005,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "カリフォルニア州民法§1785及び以下の項目による。および§1786及び以下の項目、Amazonから私に関するレポートが要求された場合、Accurateが通常の営業時間中に保持しているファイルを閲覧できます。また、（1）適切な身分証明書を提出し、コピー費用を支払った上で、書留郵便で、または予定されている出頭について合理的な事前通知を行った後、通常の営業時間中にAccurateのオフィスに直接出頭することにより、このファイルのコピーを入手でき、（2）適切な身分証明書と書面による電話開示の要求をAccurateに提出したうえで、Accurateからこのファイルの概要を電話で、私の費用で受け取ることを理解しています。Accurateが、コード化された情報を含め、そのファイルを私に個人的に説明でき、また、私がAccurateのオフィスに直接出頭する場合、その人がAccurateに適切な身分証明書を提示する限り、他の1人を同伴することができることを私は理解しています。",
+      "value" : "カリフォルニア州民法§1785及び以下の項目および§1786及び以下の項目により、Amazonから私に関するレポートが要求された場合、Accurateが通常の営業時間中に保持しているファイルを閲覧できます。また、（1）適切な身分証明書を提出し、コピー費用を支払った上で、書留郵便で、または予定されている出頭について合理的な事前通知を行った後、通常の営業時間中にAccurateのオフィスに直接出頭することにより、このファイルのコピーを入手でき、（2）適切な身分証明書と書面による電話開示の要求をAccurateに提出したうえで、Accurateからこのファイルの概要を電話で、私の費用で受け取ることを理解しています。Accurateが、コード化された情報を含め、そのファイルを私に個人的に説明でき、また、私がAccurateのオフィスに直接出頭する場合、その人がAccurateに適切な身分証明書を提示する限り、他の1人を同伴することができることを私は理解しています。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
@@ -1017,7 +1017,7 @@
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
-      "value" : "1 コンコースパークウェイNE、スイート 200。",
+      "value" : "1 Concourse Parkway NE, Suite 200.",
       "note" : "Text for the california disclosure page vendor fadv address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
@@ -1033,11 +1033,11 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "理解します:",
+      "value" : "理解しています:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "First Advantageからレポートが要求される範囲で、そのようなレポートに含まれる情報は、雇用適格性を判断するためにのみ使用されます。",
+      "value" : "First Advantageからレポートが要求される範囲で、そのようなレポートに含まれる情報は、私の雇用適格性を判断するためにのみ使用されます。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
@@ -1045,7 +1045,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "First Advantageが実施する調査、Amazonに提供されるレポートに含まれる可能性がある結果は、性格、一般的な評判、個人の特性または生活様式、雇用および職歴、教育、運転記録および適用される連邦法および州法によって課せられる制限の対象となる犯罪歴に関するさまざまな種類の情報が含まれる場合があります。",
+      "value" : "First Advantageが実施する調査、Amazonに提供されるレポートに含まれる可能性がある結果は、私の性格、一般的な評判、個人の特性または生活様式、雇用および職歴、教育、運転記録および適用される連邦法および州法によって課せられる制限の対象となる犯罪歴に関するさまざまな種類の情報が含まれる場合があります。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
@@ -1073,7 +1073,7 @@
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
-      "value" : "採用前の予約をスケジュールする",
+      "value" : "雇用前予約をスケジュールする",
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
@@ -1081,7 +1081,7 @@
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "退役軍人ステータスの自発的な自己識別",
+      "value" : "任意による退役軍人ステータスの自己識別",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
@@ -1121,7 +1121,7 @@
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "Amazonへの参加にご関心をお寄せいただき、ありがとうございます!",
+      "value" : "Amazonへの参加にご関心をお寄せいただき、ありがとうございます。",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
@@ -1133,11 +1133,11 @@
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazonでは、従業員の多様性と多様な働き方を称賛しています。障がいがあり、アセスメントを含む採用プロセス中に宿泊施設が必要な場合は、<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation にアクセスしてください。</a>",
+      "value" : "Amazonでは、従業員の多様性と多様な働き方を称えています。障がいがあり、アセスメントを含む採用プロセス中に宿泊施設が必要な場合は、<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation にアクセスしてください。</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>アセスメントのどの部分にも時間制限はありません</b>。お客様のペースで作業できます。この評価のすべてのセクション:",
+      "value" : "<b>アセスメントのどの部分にも時間制限はありません</b>。自分のペースで作業できます。このアセスメントのすべてのセクション:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1149,7 +1149,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
-      "value" : "評価を始める",
+      "value" : "アセスメントを開始する",
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
@@ -1181,7 +1181,7 @@
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "国民ID番号",
+      "value" : "国民ID番号:",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
@@ -1213,11 +1213,11 @@
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
-      "value" : "障害ステータス:",
+      "value" : "障がいステータス:",
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "申請書を送信",
+      "value" : "アプリケーションを送信",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
@@ -1249,7 +1249,7 @@
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "雇用前の予約の前に、就労機会税額控除アンケートに記入してください。",
+      "value" : "雇用前予約の前に、就労機会税額控除アンケートに記入してください。",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
@@ -1257,7 +1257,7 @@
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
-      "value" : "雇用前の予定の詳細",
+      "value" : "雇用前予定の詳細",
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
@@ -1273,7 +1273,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "期限切れではない写真付きIDの原本",
+      "value" : "元の期限切れではない写真付きID",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
@@ -1281,7 +1281,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "受理可能な書類の完全なリストについては、<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>ここ</a>をクリックしてください。",
+      "value" : "受理可能な書類の完全なリストについては、<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>こちら</a>をクリックしてください。",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
@@ -1317,7 +1317,7 @@
       "note" : "Text for the schedule card possible start date text"
     },
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
-      "value" : "(またはそれ以前に)",
+      "value" : "(またはそれよりも早く)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
@@ -1329,15 +1329,15 @@
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
-      "value" : "ボーナス：",
+      "value" : "ボーナス:",
       "note" : "Text for the schedule card bonus text"
     },
     "BB-amazon-rejects-thank-you" : {
-      "value" : "ご関心をお寄せいただきありがとうございます。しかし残念ながら、今回は不採用の運びとなりました。",
+      "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",
       "note" : "Text for the amazon rejects page thank you text"
     },
     "BB-amazon-rejects-not-meet-requirements" : {
-      "value" : "入力された情報はAmazonの要件を満たしていません。Amazon.jobsで他の求人情報をチェックされることをお勧めします。",
+      "value" : "入力された情報は、当社の要件を満たしていません。Amazon.jobsで他の求人を見ることをお勧めします。",
       "note" : "Text for the amazon rejects page not meet requirements text"
     },
     "BB-amazon-rejects-return-to-dashboard" : {
@@ -1353,7 +1353,7 @@
       "note" : "error message when trying to create application with missing application Id field"
     },
     "BB-create-application-error-message-internal-server-error" : {
-      "value" : "サーバーで問題が発生しました。もう一度試すか、もしくはブラウザを更新してください。",
+      "value" : "サーバーで問題が発生しました。もう一度試すか、ブラウザを更新してください。",
       "note" : "internal server Error message when creating application"
     },
     "BB-create-application-error-message-candidate-inactive" : {
@@ -1373,7 +1373,7 @@
       "note" : "Default error message for create application"
     },
     "BB-update-application-error-message-applicationId-not-match" : {
-      "value" : "アプリケーションIDがリクエストパスのIDと一致しません。",
+      "value" : "アプリケーション ID がリクエストパスの ID と一致しません。",
       "note" : "Error message for update application when application Id do not match"
     },
     "BB-update-application-error-message-application-not-found" : {
@@ -1389,7 +1389,7 @@
       "note" : "Error message when updating application with version mismatching"
     },
     "BB-update-application-error-message-server-error" : {
-      "value" : "サーバーで問題が発生しました。もう一度試すか、もしくはブラウザを更新してください。",
+      "value" : "サーバーで問題が発生しました。もう一度試すか、ブラウザを更新してください。",
       "note" : "internal server Error message when updating application"
     },
     "BB-update-application-error-message-candidate-not-authorized" : {
@@ -1421,11 +1421,11 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "国民ID番号の変更回数が最大数に達したため、アプリケーションの更新に失敗しました。 以前に別のEメールアドレスで登録したことがある場合は、ログアウトしてそのEメールを使用し、必要であれば「個人PINをお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>からEメールまたはチャットでお問い合わせください。",
+      "value" : "国民IDの変更回数が最大数に達したため、アプリケーションの更新に失敗しました。以前に別のEメールアドレスで登録したことがある場合は、ログアウトしてそのEメールを使い、必要であれば「個人 PIN をお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href=`https://hiring.amazon.com/contact-us#/`> www.amazon.com/applicationhelp</a>からEメールまたはチャットでお問い合わせください。",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "指定された国民識別番号が無効なため、アプリケーションの更新に失敗しました。続行する前に、正確かつ完全な国民識別番号を入力してください。",
+      "value" : "指定された国民識別番号が無効なため、アプリケーションの更新に失敗しました。続行する前に、正確で完全な国民識別番号を入力してください。",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
@@ -1437,7 +1437,7 @@
       "note" : "error message for update application when request type do not match with request payload"
     },
     "BB-update-application-error-message-dob-missing-in-request" : {
-      "value" : "ペイロードに生年月日情報がありません。",
+      "value" : "ペイロードに生年月日がありません。",
       "note" : "error message for update application when date of birth is missing in the request"
     },
     "BB-update-application-error-message-provide-dob" : {
@@ -1445,7 +1445,7 @@
       "note" : "error message for update application when date of birth is no provided"
     },
     "BB-update-application-error-message-applicationId-missing" : {
-      "value" : "リクエストにアプリケーションIDがありません。",
+      "value" : "リクエストに アプリケーションID がありません。",
       "note" : "error message for update application when application Id is missing"
     },
     "BB-update-application-error-message-government-type-missing" : {
@@ -1457,7 +1457,7 @@
       "note" : "error message for update application when Id Number is missing"
     },
     "BB-update-application-error-message--has-criminal-in7-years-missing" : {
-      "value" : "リクエストに過去7年の犯罪歴がありません。",
+      "value" : "リクエストに7年以内の犯罪歴がありません。",
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
@@ -1465,7 +1465,7 @@
       "note" : "error message for update application when address line 1 is missing"
     },
     "BB-update-application-error-message-city-missing-in-address" : {
-      "value" : "住所オブジェクトに都市情報がありません。",
+      "value" : "住所オブジェクトに市区町村がありません。",
       "note" : "error message for update application when city is missing in address"
     },
     "BB-update-application-error-message-state-missing-in-address" : {
@@ -1477,11 +1477,11 @@
       "note" : "error message for update application when Zip/Postal code is missing in address"
     },
     "BB-update-application-error-message-country-missing-in-address" : {
-      "value" : "住所オブジェクトに国情報がありません。",
+      "value" : "住所オブジェクトに国がありません。",
       "note" : "error message for update application when country is missing in address"
     },
     "BB-update-application-error-message-invalid-previous-legal-name" : {
-      "value" : "以前に使用した正式なフルネームを次のフォーマットで入力してください：名、氏",
+      "value" : "以前に使用した正式なフルネームを次の形式で入力してください:名、氏",
       "note" : "error message for update application with invalid previous legal name"
     },
     "BB-update-application-error-message-bgc-validation-failed" : {
@@ -1489,7 +1489,7 @@
       "note" : "error message for update application with invalid additional background"
     },
     "BB-update-application-error-message-nhe-apt-missing" : {
-      "value" : "予約オブジェクトがリクエストにありません。",
+      "value" : "nheAppointment オブジェクトがリクエストにありません。",
       "note" : "error message for update application with new hire event appointment missing"
     },
     "BB-update-application-error-message-referral-missing" : {
@@ -1497,11 +1497,11 @@
       "note" : "error message for update application with referral information missing"
     },
     "BB-update-application-error-message-ethnicity-missing" : {
-      "value" : "ペイロードに民族情報がありません。",
+      "value" : "ペイロードにエスニシティがありません。",
       "note" : "error message for update application with ethnicity information missing"
     },
     "BB-update-application-error-message-gender-is-missing" : {
-      "value" : "ペイロードに性別情報がありません。",
+      "value" : "ペイロードに性別がありません。",
       "note" : "error message for update application with gender information missing"
     },
     "BB-update-application-error-message-military-service-missing" : {
@@ -1509,7 +1509,7 @@
       "note" : "error message for update application with military Spouse  information missing"
     },
     "BB-update-application-error-message-protected-veteran-missing" : {
-      "value" : "退役軍人情報がペイロードにありません。",
+      "value" : "保護された退役軍人情報がペイロードにありません。",
       "note" : "error message for update application with protected veteran status information missing"
     },
     "BB-update-application-error-message-veteran-status-missing" : {
@@ -1517,7 +1517,7 @@
       "note" : "error message for update application with veteran status information missing"
     },
     "BB-update-application-error-message-disability-missing" : {
-      "value" : "ペイロードに障害情報がありません。",
+      "value" : "ペイロードに障がいがありません。",
       "note" : "error message for update application with disability status information missing"
     },
     "BB-update-application-error-message-cali-disclosure-missing" : {
@@ -1525,7 +1525,7 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "入力されたSSNまたは国民識別番号は、システム内の別のEメールアドレスに既に関連付けられています。以前に別のEメールアドレスで登録したことがある場合は、「ログアウト」(/application/logout) してそのEメールを使い、必要であれば「個人PINをお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>にアクセスし、Eメールまたはチャットでお問い合わせください。",
+      "value" : "入力されたSSNまたは国民識別番号は、システム内の別のEメールアドレスに既に関連付けられています。以前に別のEメールアドレスで登録したことがある場合は、[ログアウト](/application/logout) してそのEメールを使い、必要であれば「個人 PIN をお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href='https://hiring.amazon.com/contact-us#/'> www.amazon.com/applicationhelp</a>からでEメールまたはチャットでお問い合わせください。",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
@@ -1533,7 +1533,7 @@
       "note" : "error message when unable to fetch job information"
     },
     "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
-      "value" : "ジョブの取得中に問題が発生しました。 ページを更新するか、しばらくしてからもう一度お試しください。",
+      "value" : "ジョブの取得中に何か問題が発生しました。 ページを更新するか、しばらくしてからもう一度お試しください。",
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
@@ -1561,7 +1561,7 @@
       "note" : "error message when fetch appointment time slots failed"
     },
     "BB-get-time-slots-error-message-fetch_shifts_error" : {
-      "value" : "ジョブの取得中に問題が発生しました。 ページを更新するか、しばらくしてからもう一度お試しください。",
+      "value" : "ジョブの取得中に何か問題が発生しました。 ページを更新するか、しばらくしてからもう一度お試しください。",
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
@@ -1589,7 +1589,7 @@
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
-      "value" : "アプリケーションデータを取得するには アプリケーションIDが必要です。",
+      "value" : "アプリケーションデータを取得するには アプリケーションID が必要です。",
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
@@ -1601,7 +1601,7 @@
       "note" : "Error message when get application and application is not found"
     },
     "BB-get-application-error-message-internal-server-error" : {
-      "value" : "サーバーで問題が発生しました。もう一度試すか、もしくはブラウザを更新してください。",
+      "value" : "サーバーで問題が発生しました。もう一度試すか、ブラウザを更新してください。",
       "note" : "Error message when get application and there is server error"
     },
     "BB-workflow-failed-title-text" : {
@@ -1609,7 +1609,7 @@
       "note" : "Text for the workflow failed page title text"
     },
     "BB-workflow-failed-description-text" : {
-      "value" : "アプリケーションワークフローに失敗しました。",
+      "value" : "アプリケーションワークフローに失敗しています。",
       "note" : "Text for the workflow failed page description text"
     },
     "BB-workflow-failed-return-to-dashboard-text" : {
@@ -1617,11 +1617,11 @@
       "note" : "Text for the workflow failed page return to dashboard text"
     },
     "BB-can-not-offer-job-title-text" : {
-      "value" : "ご関心をお寄せいただきありがとうございます。しかし残念ながら、今回は不採用の運びとなりました。",
+      "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",
       "note" : "Text for the can not offer job page title text"
     },
     "BB-can-not-offer-job-description-text" : {
-      "value" : "入力された情報はAmazonの要件を満たしていません。Amazon.jobsで他の求人情報をチェックされることをお勧めします。",
+      "value" : "入力された情報は、当社の要件を満たしていません。Amazon.jobsで他の求人を見ることをお勧めします。",
       "note" : "Text for the can not offer job page description text"
     },
     "BB-can-not-offer-job-return-to-dashboard-text" : {
@@ -1629,11 +1629,11 @@
       "note" : "Text for the can not offer job page description text"
     },
     "BB-candidate-withdraws" : {
-      "value" : "ご関心をお寄せいただきありがとうございます。しかし残念ながら、今回は不採用の運びとなりました。",
+      "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",
       "note" : "Candidate withdraws page title"
     },
     "BB-candidate-withdraws-description" : {
-      "value" : "入力された情報はAmazonの要件を満たしていません。Amazon.jobsで他の求人情報をチェックされることをお勧めします。",
+      "value" : "入力された情報は、当社の要件を満たしていません。Amazon.jobsで他の求人を見ることをお勧めします。",
       "note" : "Candidate withdraws page description"
     },
     "BB-candidate-withdraws-button-text" : {
@@ -1641,11 +1641,11 @@
       "note" : "Candidate withdraws page back to dashboard buttton"
     },
     "BB-amazon-withdraws" : {
-      "value" : "ご関心をお寄せいただきありがとうございます。しかし残念ながら、今回は不採用の運びとなりました。",
+      "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",
       "note" : "Amazon withdraws page title"
     },
     "BB-amazon-withdraws-description" : {
-      "value" : "入力された情報はAmazonの要件を満たしていません。Amazon.jobsで他の求人情報をチェックされることをお勧めします。",
+      "value" : "入力された情報は、当社の要件を満たしていません。Amazon.jobsで他の求人を見ることをお勧めします。",
       "note" : "Amazon withdraws page description"
     },
     "BB-amazon-withdraws-button-text" : {
@@ -1653,11 +1653,11 @@
       "note" : "Amazon withdraws page back to dashboard buttton"
     },
     "BB-session-timeout" : {
-      "value" : "ポジションへの予約の有効期限が切れました。",
+      "value" : "職位の予約の有効期限が切れました。",
       "note" : "session timeout page title"
     },
     "BB-session-timeout-description" : {
-      "value" : "候補者による応募プロセスの完了は最大3時間に制限されます。申し訳ありませんが、ポジションへの応募プロセスが3時間の制限を超えました。応募可能な採用情報をお探しください。",
+      "value" : "候補者は応募を完了するのに最大3時間かかります。申し訳ありませんが、応募していた職種が3時間の制限を超えました。応募可能な採用情報を探してください。",
       "note" : "session timeout description"
     },
     "BB-session-timeout-view-job-button-text" : {
@@ -1669,7 +1669,7 @@
       "note" : "Text for no available time slots title"
     },
     "BB-no-available-time-slots-description" : {
-      "value" : "以下を行うことができます：",
+      "value" : "次のことができます:",
       "note" : "Text for no available time slots description title"
     },
     "BB-no-available-time-slots-select-different-job" : {
@@ -1681,7 +1681,7 @@
       "note" : "Text for no available time slots page to select different job link"
     },
     "BB-no-available-time-slots-select-later-date-text" : {
-      "value" : "2.遅い開始日のシフトを選択する (推奨)",
+      "value" : "2.開始日が遅いシフトを選択する (推奨)",
       "note" : "Text for no available time slots page to select shift with later start date"
     },
     "BB-no-available-time-slots-view-other-shifts-button-text" : {
@@ -1705,115 +1705,115 @@
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
-      "value" : "AL — アラバマ州",
+      "value" : "AL — アラバマ",
       "note" : "Text for Alabama state"
     },
     "BB-States-Alaska" : {
-      "value" : "AK — アラスカ州",
+      "value" : "AK — アラスカ",
       "note" : "Text for Alaska state"
     },
     "BB-States-Arizona" : {
-      "value" : "AZ — アリゾナ州",
+      "value" : "AZ — アリゾナ",
       "note" : "Text for Arizona state"
     },
     "BB-States-Arkansas" : {
-      "value" : "AR — アーカンソー州",
+      "value" : "AR — アーカンソー",
       "note" : "Text for Arkansas state"
     },
     "BB-States-California" : {
-      "value" : "CA — カリフォルニア州",
+      "value" : "CA — カリフォルニア",
       "note" : "Text for California state"
     },
     "BB-States-Colorado" : {
-      "value" : "CO — コロラド州",
+      "value" : "CO — コロラド",
       "note" : "Text for Colorado state"
     },
     "BB-States-Connecticut" : {
-      "value" : "CT — コネチカット州",
+      "value" : "CT — コネチカット",
       "note" : "Text for Connecticut state"
     },
     "BB-States-Delaware" : {
-      "value" : "DE — デラウェア州",
+      "value" : "DE — デラウェア",
       "note" : "Text for Delaware state"
     },
     "BB-States-District-of-Columbia" : {
-      "value" : "DCーコロンビア特別区",
+      "value" : "DC — コロンビア特別区",
       "note" : "Text for District of Columbia state"
     },
     "BB-States-Florida" : {
-      "value" : "FL— フロリダ州",
+      "value" : "FL — フロリダ",
       "note" : "Text for Florida state"
     },
     "BB-States-Georgia" : {
-      "value" : "GA — ジョージア州",
+      "value" : "GA — ジョージア",
       "note" : "Text for Georgia state"
     },
     "BB-States-Hawaii" : {
-      "value" : "HI— ハワイ州",
+      "value" : "HI — ハワイ",
       "note" : "Text for Hawaii state"
     },
     "BB-States-Idaho" : {
-      "value" : "ID — アイダホ州",
+      "value" : "ID — アイダホ",
       "note" : "Text for Idaho state"
     },
     "BB-States-Illinois" : {
-      "value" : "IL — イリノイ州",
+      "value" : "IL — イリノイ",
       "note" : "Text for Illinois state"
     },
     "BB-States-Indiana" : {
-      "value" : "IN — インディアナ州",
+      "value" : "IN — インディアナ",
       "note" : "Text for Indiana state"
     },
     "BB-States-Iowa" : {
-      "value" : "IA — アイオワ州",
+      "value" : "IA — アイオワ",
       "note" : "Text for Iowa state"
     },
     "BB-States-Kansas" : {
-      "value" : "KS — カンザス州",
+      "value" : "KS — カンザス",
       "note" : "Text for Kansas state"
     },
     "BB-States-Kentucky" : {
-      "value" : "KY — ケンタッキー州",
+      "value" : "KY — ケンタッキー",
       "note" : "Text for Kentucky state"
     },
     "BB-States-Louisiana" : {
-      "value" : "LA — ルイジアナ州",
+      "value" : "LA — ルイジアナ",
       "note" : "Text for Louisiana state"
     },
     "BB-States-Maine" : {
-      "value" : "ME — メイン州",
+      "value" : "ME — メイン",
       "note" : "Text for Maine state"
     },
     "BB-States-Maryland" : {
-      "value" : "MD — メリーランド州",
+      "value" : "MD — メリーランド",
       "note" : "Text for Maryland state"
     },
     "BB-States-Massachusetts" : {
-      "value" : "MA — マサチューセッツ州",
+      "value" : "MA — マサチューセッツ",
       "note" : "Text for Massachusetts state"
     },
     "BB-States-Michigan" : {
-      "value" : "MI — ミシガン州",
+      "value" : "MI — ミシガン",
       "note" : "Text for Michigan state"
     },
     "BB-States-Minnesota" : {
-      "value" : "MN — ミネソタ州",
+      "value" : "MN -- ミネソタ",
       "note" : "Text for Minnesota state"
     },
     "BB-States-Mississippi" : {
-      "value" : "MS — ミシシッピ州",
+      "value" : "MS — ミシシッピ",
       "note" : "Text for Mississippi state"
     },
     "BB-States-Missouri" : {
-      "value" : "MO — ミズーリ州",
+      "value" : "MO — ミズーリ",
       "note" : "Text for Missouri state"
     },
     "BB-States-Montana" : {
-      "value" : "MT — モンタナ州",
+      "value" : "MT — モンタナ",
       "note" : "Text for Montana state"
     },
     "BB-States-Nebraska" : {
-      "value" : "NE — ネブラスカ州",
+      "value" : "NE — ネブラスカ",
       "note" : "Text for Nebraska state"
     },
     "BB-States-Nevada" : {
@@ -1821,75 +1821,75 @@
       "note" : "Text for Nevada state"
     },
     "BB-States-New-Hampshire" : {
-      "value" : "NH — ニューハンプシャー州",
+      "value" : "NH — ニューハンプシャー",
       "note" : "Text for New Hampshire state"
     },
     "BB-States-New-Jersey" : {
-      "value" : "NJ — ニュージャージー州",
+      "value" : "NJ — ニュージャージー",
       "note" : "Text for New Jersey state"
     },
     "BB-States-New-Mexico" : {
-      "value" : "NM — ニューメキシコ州",
+      "value" : "NM — ニューメキシコ",
       "note" : "Text for New Mexico state"
     },
     "BB-States-New-York" : {
-      "value" : "NY — ニューヨーク州",
+      "value" : "NY — ニューヨーク",
       "note" : "Text for New York state"
     },
     "BB-States-North-Carolina" : {
-      "value" : "NC — ノースカロライナ州",
+      "value" : "NC — ノースカロライナ",
       "note" : "Text for North Carolina state"
     },
     "BB-States-North-Dakota" : {
-      "value" : "ND — ノースダコタ州",
+      "value" : "ND — ノースダコタ",
       "note" : "Text for North Dakota state"
     },
     "BB-States-Ohio" : {
-      "value" : "OH— オハイオ州",
+      "value" : "OH— オハイオ",
       "note" : "Text for Ohio state"
     },
     "BB-States-Oklahoma" : {
-      "value" : "OK — オクラホマ州",
+      "value" : "OK — オクラホマ",
       "note" : "Text for Oklahoma state"
     },
     "BB-States-Oregon" : {
-      "value" : "OR — オレゴン州",
+      "value" : "OR — オレゴン",
       "note" : "Text for Oregon state"
     },
     "BB-States-Pennsylvania" : {
-      "value" : "PA — ペンシルベニア州",
+      "value" : "PA — ペンシルベニア",
       "note" : "Text for Pennsylvania state"
     },
     "BB-States-Rhode-Island" : {
-      "value" : "RI — ロードアイランド州",
+      "value" : "RI — ロードアイランド",
       "note" : "Text for Rhode Island state"
     },
     "BB-States-South-Carolina" : {
-      "value" : "SC — サウスカロライナ州",
+      "value" : "SC — サウスカロライナ",
       "note" : "Text for South Carolina state"
     },
     "BB-States-South-Dakota" : {
-      "value" : "SD — サウスダコタ州",
+      "value" : "SD — サウスダコタ",
       "note" : "Text for South Dakota state"
     },
     "BB-States-Tennessee" : {
-      "value" : "TN — テネシー州",
+      "value" : "TN — テネシー",
       "note" : "Text for Tennessee state"
     },
     "BB-States-Texas" : {
-      "value" : "TX — テキサス州",
+      "value" : "TX — テキサス",
       "note" : "Text for Texas state"
     },
     "BB-States-Utah" : {
-      "value" : "UT — ユタ州",
+      "value" : "UT — ユタ",
       "note" : "Text for Utah state"
     },
     "BB-States-Vermont" : {
-      "value" : "VT— バーモント州",
+      "value" : "VT — バーモント",
       "note" : "Text for Vermont state"
     },
     "BB-States-Virginia" : {
-      "value" : "VA — バージニア州",
+      "value" : "VA — バージニア",
       "note" : "Text for Virginia state"
     },
     "BB-States-Washington" : {
@@ -1905,11 +1905,11 @@
       "note" : "Text for West Virginia state"
     },
     "BB-States-wyoming" : {
-      "value" : "WY — ワイオミング州",
+      "value" : "WY — ワイオミング",
       "note" : "Text for Wyoming state"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
-      "value" : "WOTCの更新に失敗しました。",
+      "value" : "WOTC の更新に失敗しました。",
       "note" : "error message when failed to update wotc status"
     },
     "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
@@ -1917,7 +1917,7 @@
       "note" : "Error message text displayed when selected NHE shift is no longer available"
     },
     "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
-      "value" : "最近この応募で採用されています。シフトを変更することはできません。シフトを変更するには、https://www.amazondelivers.jobs/contactusまでご連絡ください。",
+      "value" : "最近この応募に採用されています。シフトを変更することはできません。シフトを変更するには、https://www.amazondelivers.jobs/contactus にご連絡ください。",
       "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
     },
     "BB-update-application-error-message-failed-update-application" : {
@@ -1929,15 +1929,15 @@
       "note" : "Text for the additional background check form header"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
-      "value" : "{jobTitle}ポジションに関心をお寄せいただきありがとうございます。記録によると、以前Amazonでの勤務経験があるようです。 現時点では、雇用記録に基づいて、シーズン限定のAmazonアソシエイトまたはサードパーティ代理店の従業員として再雇用の対象となります。そのため、この仕事への応募プロセスを進めることはできません。再雇用資格についてご質問のある場合は、サイトのHRチームにお問い合わせください。",
+      "value" : "{jobTitle}ポジションに関心をお寄せいただきありがとうございます。記録によると、以前Amazonでの勤務経験があるようです。 現時点では、雇用記録に基づいて、季節限定のAmazonアソシエイトまたはサードパーティ代理店の従業員として再雇用する資格があります。その結果、この仕事への応募を進めることができません。再雇用の適格性について質問がある場合は、サイトの人事チームにお問い合わせください。",
       "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
-      "value" : "このポジションに関心をお寄せいただきありがとうございます。記録によると、以前Amazonでの勤務経験があるようです。 現時点では、雇用記録に基づいて、シーズン限定のAmazonアソシエイトまたはサードパーティ代理店の従業員として再雇用の対象となります。そのため、この仕事への応募プロセスを進めることはできません。再雇用資格についてご質問のある場合は、サイトのHRチームにお問い合わせください。",
+      "value" : "このポジションに関心をお寄せいただきありがとうございます。記録によると、以前Amazonでの勤務経験があるようです。 現時点では、雇用記録に基づいて、季節限定のAmazonアソシエイトまたはサードパーティ代理店の従業員として再雇用する資格があります。その結果、この仕事への応募を進めることができません。再雇用の適格性について質問がある場合は、サイトの人事チームにお問い合わせください。",
       "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-content-text" : {
-      "value" : "お住まいの地域のシーズン限定の雇用機会を探すには、シーズン限定のページをご覧ください。",
+      "value" : "お住まいの地域の季節ごとの機会を探すには、季節雇用のページをご覧ください。",
       "note" : "Text for rehire not eligible seasonal only content"
     },
     "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
@@ -1945,51 +1945,51 @@
       "note" : "rehire eligibility status back to dashboard button"
     },
     "BB-not-rehire-eligible-title-text" : {
-      "value" : "先日はAmazonへの求人にご応募くださりありがとうございました。慎重に検討させていただいた結果、求人応募を見送らせていただくこととなりました。",
+      "value" : "先日Amazonへの求人に応募くださりありがとうございます。慎重に検討した結果、求人応募を見送らせていただきます。",
       "note" : "text for Not rehire eligibility page title"
     },
     "BB-not-rehire-eligible-content-text" : {
-      "value" : "お時間をお取りいただきありがとうございました。今後のご活躍をお祈りしております。",
+      "value" : "Amazonはあなたの時間を大切にし、将来の幸運を祈っています。",
       "note" : "text for Not rehire eligibility page content"
     },
     "BB-rehire-not-eligible-active-title-text" : {
-      "value" : "先日は求人にご応募いただきありがとうございました。 残念ながら、Amazonですでに雇用されているため、この特定の職種での雇用の対象となりません。",
+      "value" : "先日は求人応募にお申し込みくださりありがとうございます。 残念ながら、Amazonですでに雇用されているため、この特定の職種の資格はありません。",
       "note" : "Text for rehire not eligible active page title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
-      "value" : "うれしいお知らせがあります。 オンラインでは閲覧して応募できる新たな機会が数多くあります。将来のキャリア成長を探る方法をいくつかご紹介します:",
+      "value" : "うれしいお知らせがあります。 オンラインで閲覧して応募できるオープンな機会がたくさんあります。将来のキャリア成長を探る方法をいくつかご紹介します:",
       "note" : "Text for rehire not eligible active open opportunities list title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
-      "value" : "代理店またはシーズンごとのコンバージョンについては、amazon.com/conversions (http://amazon.com/conversions) をご覧ください。",
+      "value" : "代理店または季節ごとのコンバージョンについては、amazon.com/conversions (http://amazon.com/conversions) をご覧ください。",
       "note" : "Text for rehire not eligible active open opportunities list item one"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
-      "value" : "シフトや場所の変更をリクエストするには、オンサイトチームにお問い合わせください。",
+      "value" : "シフトや場所の変更をリクエストするには、オンサイトチームに連絡してください。",
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "お住まいの地域のHRチームまたは従業員リソースセンター（ERC）は、どんなご質問にも対応いたします。ERCチームは、24時間年中無休で対応しています。下記の番号に電話で連絡してください：1-888-892-7180または18888927180。",
+      "value" : "あなたの地域の人事チームまたは従業員リソースセンター(ERC)は、どんな質問にも最適なリソースです。ERCチームには24時間年中無休で1-888-892-7180(電話:18888927180)にご連絡いただけます。",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
-      "value" : "Amazonの素晴らしいチームの一員になってくださりありがとうございます。 Amazonは、可能な限り最高の人的資源、福利厚生、給与、柔軟なスケジュールを提供するために絶えず尽力しています。これらはすべて「地球上で最もお客様を大切にする企業になること」というAmazonの取り組みを支えています。",
+      "value" : "Amazonの素晴らしいチームの一員になってくださりありがとうございます。 Amazonは、可能な限り最高の従業員資源、福利厚生、給与、柔軟なスケジュールを提供するために絶えず努力しています。これらはすべて、地球で最も偉大な雇用者になるためのAmazonの努力を支えています。",
       "note" : "Text for rehire not eligible active content text two"
     },
     "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
-      "value" : "{jobTitle}ポジションに関心をお寄せいただきありがとうございます。Amazonの記録によると、過去にAmazonでの勤務経験があります。以前のAmazon雇用記録に基づき、再雇用の対象として認められません。そのため、この仕事への応募を進めることはできません。",
+      "value" : "{jobTitle}ポジションに関心をお寄せいただきありがとうございます。Amazonの記録によると、過去にAmazonでの勤務経験があるため、以前のAmazon雇用記録に基づき再雇用資格はありません。その結果、この仕事への応募を進めることができません。",
       "note" : "Text for rehire not eligible 365 days title with jobTitle"
     },
     "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
-      "value" : "このポジションに関心をお寄せいただきありがとうございます。Amazonの記録によると、過去にAmazonでの勤務経験があります。以前のAmazon雇用記録に基づき、再雇用の対象として認められません。そのため、この仕事への応募を進めることはできません。",
+      "value" : "このポジションに関心をお寄せいただきありがとうございます。Amazonの記録によると、過去にAmazonでの勤務経験があるため、以前のAmazon雇用記録に基づき再雇用資格はありません。その結果、この仕事への応募を進めることができません。",
       "note" : "Text for rehire not eligible 365 days title without jobTitle"
     },
     "BB-365-days-not-rehire-eligible-content-text" : {
-      "value" : "解約理由により、Amazonでの最終勤務日から90日以降にしか再申請できません。",
+      "value" : "解約の理由により、Amazonでの最終勤務日から90日後に再申請できます。",
       "note" : "Text for rehire not eligible 365 days content text"
     },
     "BB-no-available-shift-all-shifts-filled-text" : {
-      "value" : "現在、すべてのシフトが埋まっています。",
+      "value" : "現在、すべてのシフトが埋められています。",
       "note" : "Text for the no available shift page all shifts filled text"
     },
     "BB-no-available-shift-return-dashboard-to-apply-text" : {

@@ -1,11 +1,11 @@
 {
   "resources" : {
     "BB-PreConsentPage-banner-journey-starts" : {
-      "value" : "您成为亚马逊员工的旅程从这里开始。",
+      "value" : "您成为亚马逊员工之旅从这里开始。",
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "返回工作控制面板",
+      "value" : "返回职位控制面板",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
@@ -17,7 +17,7 @@
       "note" : "Text for the link to go back to job confirmation page"
     },
     "BB-JobOpportunity-go-to-jobDescription-link" : {
-      "value" : "工作要求和福利",
+      "value" : "职位要求和福利",
       "note" : "Text for the link to go to job description page"
     },
     "BB-JobOpportunity-filter-button" : {
@@ -29,7 +29,7 @@
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-select-job-button" : {
-      "value" : "选择这份工作",
+      "value" : "选择此职位",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-StepHeader-view-progress-button" : {
@@ -49,11 +49,11 @@
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "申请即表明您确认：",
+      "value" : "确定申请即表明您确认：",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
-      "value" : "申请即表明您已阅读并同意",
+      "value" : "确定申请即表示您已阅读并同意",
       "note" : "Text for the user data policy agreement title"
     },
     "BB-ConsentPage-user-data-Policy-button" : {
@@ -69,19 +69,19 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "亚马逊致力于打造多元化和包容性的工作场所。亚马逊是一家机会均等的雇主，不会基于种族、国籍、性别、性别认同、性取向、受保护的退伍军人身份、残疾、年龄或其他受法律保护的身份进行歧视。对于想申请便利设施的残疾人士，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "亚马逊致力于打造多元化和包容性的工作场所。亚马逊是一家机会均等的雇主，不会基于种族、出身国、性别、性别认同、性取向、受保护的退伍军人身份、残疾、年龄或其他受法律保护的身份进行歧视。对于希望申请便利设施的残障人士，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "亚马逊认真对待个人数据保护，只会依法处理您的个人数据。特别是，除非法律强制外，未经您事先同意，我们不会与任何第三方共享您的个人数据。除非您另有说明，否则招聘的亚马逊公司会将您的个人数据存储在由 Amazon.com 在美国或其附属公司之一维护的电子数据库中。有关亚马逊如何存储和处理您的个人数据的完整信息，请点击此处<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
+      "value" : "亚马逊非常重视您的个人数据保护，只会依法处理您的个人数据。特别是，除非法律强制，否则未经您事先同意，我们不会与任何第三方共享您的个人数据。除非您另有说明，否则招聘的亚马逊公司会将您的个人数据存储在由 Amazon.com 在美国或其附属公司之一维护的电子数据库中。有关亚马逊如何存储和处理您的个人数据的完整信息，请点击此处<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "除了您今天申请的职位外，我们可能还有其他职位需要相同或相似的工作职能。这些职位可以是全职、缩短时间、兼职、季节性和/或临时职位，这些职位在此地点或附近的亚马逊其他地点提供。您没有义务接受亚马逊或我们的合作伙伴的任何职位，但是，完成申请即表示您同意在距离您的申请站点 30 英里半径范围内安排您承担同等级别、按小时计算的工作。这包括与我们的合作伙伴（人事机构）共享您的申请人信息，这些合作伙伴为我们招聘常规和临时员工。",
+      "value" : "除了您今天申请的职位外，我们可能还有其他职位需要相同或相似的工作职能。这些职位可以是全职、缩短工时、兼职、季节性和/或临时职位，这些职位在此地点或其他附近的亚马逊地点可提供。您没有义务接受亚马逊或我们的合作伙伴的任何职位，不过，确定完成申请即表示您同意在距离您的申请地点 30 英里半径范围内考虑承担同等级别、按小时计算的工作。这包括与我们的合作伙伴（人事机构）共享您的申请人信息，这些合作伙伴为我们招聘常规和临时员工。",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "通过申请，您：",
+      "value" : "确定申请即表示您：",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
@@ -89,11 +89,11 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "同意亚马逊、salesforce.com 或任何其他第三方出于您的申请目的和亚马逊的任何其他合法目的处理、分析和评估您的个人数据。为避免产生疑问，对您个人数据的 “处理” 将包括但不限于收集、接收、记录、组织、整理、存储、更新、更改、使用、传播、分发、合并、链接、屏蔽、降级、删除或销毁您的个人信息数据；",
+      "value" : "同意亚马逊、salesforce.com 或任何其他第三方基于您的申请目的和亚马逊的任何其他合法目的进行处理、分析和评估您的个人数据。为避免产生疑惑，对您个人数据的“处理”将包括但不限于：收集、接收、记录、整理、核对、存储、更新、更改、使用、传播、分发、合并、链接、屏蔽、降级、删除或销毁您的个人信息数据；",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "同意亚马逊在申请流程结束后保留您的个人数据，以帮助其有效监控其求职流程，并将您的个人数据存储在美国的电子数据库中。",
+      "value" : "同意亚马逊在申请流程结束后保留您的个人数据，以帮助其有效监控其职位申请流程，并将您的个人数据存储在美国境内的电子数据库中。",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
@@ -105,11 +105,11 @@
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "选择工作",
+      "value" : "选择职位",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
-      "value" : "填写所需文件",
+      "value" : "完成所需文件",
       "note" : "Text for complete required documents application step"
     },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
@@ -117,7 +117,7 @@
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "完成一次评估（~15 分钟）",
+      "value" : "完成一次评估（大概 15 分钟）",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
@@ -129,15 +129,15 @@
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "应用",
+      "value" : "适用",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "应用",
+      "value" : "适用",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
-      "value" : "排序方式",
+      "value" : "排序按",
       "note" : "Text for sorting schedule flyout title"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
@@ -145,11 +145,11 @@
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "时长 - 最长到最短",
+      "value" : "工作时长 - 最长到最短",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
-      "value" : "时长 - 从最短到最长",
+      "value" : "工作时长 - 从最短到最长",
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
@@ -193,11 +193,11 @@
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
-      "value" : "长达{hourNumber} 小时",
+      "value" : "最长 {hourNumber} 小时",
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
-      "value" : "选择期望时长",
+      "value" : "选择期望工作时长",
       "note" : "Text for desired hours select input place holder"
     },
     "BB-FilterSchedule-desired-hour-select-label-text" : {
@@ -209,15 +209,15 @@
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "以下是您选择的职位的临时聘用。",
+      "value" : "以下是您所挑选职位的意向书。",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "以下是您选择的职位的临时聘用。",
+      "value" : "以下是您所挑选职位的意向书。",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "在适用法律允许的情况下，您能否聘用取决于是否成功通过所需的背景调查、药物筛查（如果适用）和重新受雇资格检查（如果适用），因此完成下一页受聘前的步骤非常重要。在某些情况下，由于受聘前所需要求未及时完成，您上班的第一天可能会延迟。如果是这种情况，我们会尽快联系您。",
+      "value" : "在适用法律允许的情况下，能否聘用您取决于是否成功通过所需的背景调查、药物筛查（如果适用）和重新受雇资格审查（如果适用），因此完成下一页受聘前的步骤非常重要。在某些情况下，由于受聘前所需要求未及时完成，您入职的第一天可能会延迟。如果是这种情况，我们会尽快联系您。",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -225,11 +225,11 @@
       "note" : "Text for contingent offer meaning popover close button"
     },
     "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "工作要求。",
+      "value" : "职位要求。",
       "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
-      "value" : "剩余步骤",
+      "value" : "剩下的步骤",
       "note" : "Text for the remaining steps container title text"
     },
     "BB-ContingencyOffer-accept-offer-button-text" : {
@@ -237,11 +237,11 @@
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
-      "value" : "回到职位",
+      "value" : "返回职位",
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "接受聘用即表示您确认了解此职位的要求。",
+      "value" : "确定接受此聘用即表示您确认了解此职位的要求。",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
@@ -253,11 +253,11 @@
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
     "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "《公平信用报告法》披露",
+      "value" : "《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》",
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "非 FCRA 背景调查确认和授权 (Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check)",
+      "value" : "《Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check（用于背景调查的非公平信用报告法的确认书和授权书）》",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
@@ -341,27 +341,27 @@
       "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
-      "value" : "身份证号码",
+      "value" : "身份证件编号",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
-      "value" : "国民身份证",
+      "value" : "身份证件",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "请输入有效的国民身份证类型",
+      "value" : "请输入有效的身份证件类型",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
-      "value" : "身份证号码",
+      "value" : "身份证件编号",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "国民身份证号码",
+      "value" : "身份证件编号",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "请输入有效的 9 位数社会保险号，不带破折号",
+      "value" : "请输入有效的 9 位数社会保障号，不带破折号",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -389,31 +389,31 @@
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "在过去的七（7）年中，您是否被判犯有轻罪或重罪，或者因轻罪或重罪判刑而被释放出狱或假释？",
+      "value" : "在过去的七（7）年中，您是否被判轻罪或重罪，或者因轻罪或重罪判刑而被释放出狱或假释？",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
-      "value" : "是",
+      "value" : "有",
       "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
-      "value" : "否",
+      "value" : "无",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "提供城市、国家/地区、定罪状态、日期、犯罪性质以及量刑信息",
+      "value" : "提供城市、国家/地区、定罪情况、犯罪的性质与日期以及量刑相关信息",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "与您在 Amazon.com, Inc 的工作申请有关或与您在其子公司或附属公司（“亚马逊”）的工作申请有关，我们将从消费者报告机构获取您的消费者报告。这通常被称为 “背景调查”。",
+      "value" : "关于您所申请的 Amazon.com, Inc. 的职位或其子公司或附属公司（“亚马逊”）的职位，我们将会从消费者报告机构获取您的消费者报告。这通常被称为“背景调查”。",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "《公平信用报告法》披露",
+      "value" : "《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "在下方进行电子签名即表示现在及我在亚马逊企业工作或聘用期间，我特此授权亚马逊获取上述消费者报告。",
+      "value" : "确定在下方进行电子签名即表示本人特此授权亚马逊现在以及本人可能在亚马逊企业受雇或受聘期间获取上述消费者报告。",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -421,11 +421,11 @@
       "note" : "Text for the fcra disclosure form next button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
-      "value" : "我授权亚马逊进行此背景调查。",
+      "value" : "本人授权亚马逊进行此背景调查。",
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "我拒绝授权亚马逊进行此背景调查。",
+      "value" : "本人拒绝授权亚马逊进行此背景调查。",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -433,75 +433,71 @@
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
-      "value" : "请输入以下格式的有效全名：名字、姓氏",
+      "value" : "请按以下格式输入有效全名：名字 姓氏",
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "正如我在单独的《公平信用报告法案披露和授权文件》中披露和授权的那样，Amazon.com, Inc.或其子公司或附属公司（“亚马逊”）将对我进行背景调查。",
+      "value" : "正如本人分别在《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》和《Authorization Document（授权文件）》中所公示并授权一样，本人公示并授权 Amazon.com, Inc.或其子公司或附属公司（“亚马逊”）将对本人进行背景调查。",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
-      "value" : "签写下面的电子签名即表明我确认以下内容：",
+      "value" : "确定在下方进行电子签名即表示本人确认以下内容：",
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "进行背景调查的公司或 “CRA” 是 First Advantage，位于 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, 您可致电 (800) 845-6004 或通过 www.fadv.com 与其联系。",
+      "value" : "进行背景调查的公司或 “CRA” 为 First Advantage，该公示位于 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, 您可致电 (800) 845-6004 或通过 www.fadv.com 与其联系。",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "进行背景调查的公司或“CRA” 是 Accurate Background，位于 7515 Irvine Center Dr., Irvine, CA 92618，您可致电 (800) 216-8024 或通过www.accuratebackground.com 与之联系。\n\n* 我理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的要求进行以下额外的背景调查，无需我的进一步授权，(1) 在我受雇期间 (如适用)，以及 (2) 由 Accurate Background 以外的 CRA 进行调查。",
+      "value" : "进行背景调查的公司或“CRA” 为 Accurate Background，该公司位于 7515 Irvine Center Dr., Irvine, CA 92618，您可致电 (800) 216-8024 或通过 www.accuratebackground.com 与之联系。\n\n*本人理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的（1）在本人受雇期间（如适用），以及（2）由 Accurate Background 以外的其他 CRA 机构按要求对本人进行以下额外的背景调查，无需本人的进一步授权。",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "我理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的要求进行以下额外的背景调查，无需我的进一步授权，(1）在我受雇期间（如适用），以及 (2) First Advantage 以外的 CRA 进行调查。",
+      "value" : "本人理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的（1）在本人受雇期间（如适用），以及（2）由 First Advantage 以外的其他 CRA 机构按要求对本人进行以下额外的背景调查，无需本人的进一步授权。",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "我理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的要求进行以下额外的背景调查，无需我的进一步授权，(1) 在我受雇期间（如适用)，以及 (2) 由 Accurate Background 以外的 CRA 进行调查。",
+      "value" : "本人理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的（1）在本人受雇期间（如适用），以及（2）由 Accurate Background 以外的其他 CRA 机构按要求对本人进行以下额外的背景调查，无需本人的进一步授权。",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "出于雇用目的，在遵守保护我信息隐私的所有法律的前提下，我还授权以下各方向 CRA 披露背景调查所需的信息：我过去或现在的雇主、学校、执法部门和其他政府机构，包括机动车信息管理机构。",
+      "value" : "出于雇用目的，在遵守保护本人个人信息隐私的所有法律的前提下，本人还授权以下各方向 CRA 公开背景调查所需的信息：本人过去或现在的雇主、学校、执法部门和其他政府机构，包括机动车信息管理机构。",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "出于雇用目的，在遵守保护我信息隐私的所有法律的前提下，我还授权以下各方向 CRA 披露背景调查所需的信息：我过去或现在的雇主、学校、执法部门和其他政府机构，包括机动车信息管理机构。",
+      "value" : "出于雇用目的，在遵守保护本人个人信息隐私的所有法律的前提下，本人还授权以下各方向 CRA 公开背景调查所需的信息：本人过去或现在的雇主、学校、执法部门和其他政府机构，包括机动车信息管理机构。",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>加利福尼亚州：</b>您将收到一份单独的加州调查性消费者披露报告（“加州披露报告”）。这是一份重要的文件；请仔细查看。另外，如果您正在旧金山找工作或已经受雇于旧金山的公司，请点击<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>。通过在下方签字，根据加州法律和加州披露条款，您特此授权亚马逊立即获取调查性消费者报告，及您在亚马逊任职期间随时可获取调查性消费者报告，报告也称为背景调查。</p>",
+      "value" : "<p><b>加利福尼亚州：</b>您将收到一份单独的 California Disclosure Regarding Investigative Consumer Report（关于加州消费者调查报告的公开内容）（“California Disclosure（加州公开内容）”）。这是一份重要的文件；请仔细查看。另外，如果您正在旧金山找工作或已经受雇于旧金山的公司，请点击<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>。确定在下方签字即表示，根据加州法律和 California Disclosure（加州公开内容）条款，您特此授权亚马逊现在以及您在亚马逊任职期间的任何时候可获取消费者调查报告，也称为背景调查。</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>加利福尼亚州：</b>您将收到一份单独的加州调查性消费者披露报告（“加州披露报告”）。这是一份重要的文件；请仔细查看。另外，如果您正在旧金山找工作或已经受雇于旧金山的公司，请点击<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>。通过在下方签字，根据加州法律和加州披露条款，您特此授权亚马逊立即获取调查性消费者报告，及您在亚马逊任职期间随时可获取调查性消费者报告，报告也称为背景调查。</p>",
+      "value" : "<p><b>加利福尼亚州：</b>您将收到一份单独的 California Disclosure Regarding Investigative Consumer Report（关于加州消费者调查报告的公开内容）（“California Disclosure（加州公开内容）”）。这是一份重要的文件；请仔细查看。另外，如果您正在旧金山找工作或已经受雇于旧金山的公司，请点击<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>。确定在下方签字即表示，根据加州法律和 California Disclosure（加州公开内容）条款，您特此授权亚马逊现在以及您在亚马逊任职期间的任何时候可获取消费者调查报告，也称为背景调查。</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>明尼苏达州：</b>您有权向 CRA 提交书面请求，要求完整准确地披露要求取得有关您的任何消费者报告的性质和范围。CRA 必须在收到您的请求后或要求取得报告后的五个工作日内（以较晚的日期为准）向您提供披露信息。</p>",
+      "value" : "<p><b>明尼苏达州：</b>您有权向 CRA 提交书面请求，要求完整准确地公开按要求取得有关您的任何消费者报告的性质和范围。CRA 必须在收到您的请求后或要求取得报告后的五个工作日内（以较晚的日期为准）向您提供公开信息。</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>明尼苏达州：</b>您有权向 CRA 提交书面请求，要求完整准确地披露要求取得有关您的任何消费者报告的性质和范围。CRA 必须在收到您的请求后或要求取得报告后的五个工作日内（以较晚的日期为准）向您提供披露信息。</p>",
+      "value" : "<p><b>明尼苏达州：</b>您有权向 CRA 提交书面请求，要求完整准确地公开按要求取得有关您的任何消费者报告的性质和范围。CRA 必须在收到您的请求后或要求取得报告后的五个工作日内（以较晚的日期为准）向您提供公开信息。</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>纽约：</b>您有权向亚马逊提交书面请求，以了解我们是否已要求取得有关您的消费者报告或调查性消费者报告。上面显示的是 CRA 的地址和电话号码。您有权联系任何 CRA 以检查或接收此类报告的副本。点击<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">此处</a>了解您在《纽约惩教法》第 23 条 A 项下的权利。</p>",
+      "value" : "<p><b>纽约：</b>您有权向亚马逊提交书面请求，以了解我们是否已按要求取得有关您的消费者报告或消费者调查报告。上面显示的是 CRA 的地址和电话号码。您有权联系任何 CRA 以检查或接收此类报告的副本。点击<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">此处</a>了解您在《New York Correction Law（纽约惩教法）》第 23 条-A 下的权利。</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>纽约：</b>您有权向亚马逊提交书面请求，以了解我们是否订购了有关您的买家报告或调查性买家报告。上面显示的是 CRA 的地址和电话号码。您有权联系任何 CRA 以检查或接收此类报告的副本。点击<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">此处</a>了解您在 New York Correction Law（纽约惩教法）第 23-A 条下的权利。</p>",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
-      "value" : "<p><b>所有州：</b>如果您选择此选项，我们将免费为您提供任何背景调查的副本",
+      "value" : "<p><b>所有州：</b>如果您勾选此选项，我们将免费为您提供任何背景调查的副本",
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
-      "value" : "<p><b>所有州：</b>如果您选择此选项，我们将免费为您提供任何背景调查的副本</p>",
+      "value" : "<p><b>所有州：</b>如果您勾选此选项，我们将免费为您提供任何背景调查的副本</p>",
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "请按以下格式输入以前使用过的法定全名：名字、姓氏",
+      "value" : "请按以下格式输入以前使用过的法定全名：名字 姓氏",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
@@ -509,23 +505,23 @@
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "请按以下格式输入以前使用过的法定全名：名字、姓氏",
+      "value" : "请按以下格式输入以前使用过的法定全名：名字 姓氏",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
-      "value" : "以前的法定全名 (1)",
+      "value" : "以前的法定全名（1）",
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "请按以下格式输入以前使用过的法定全名：名字、姓氏",
+      "value" : "请按以下格式输入以前使用过的法定全名：名字 姓氏",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "以前的法定全名 (2)",
+      "value" : "以前的法定全名（2）",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
-      "value" : "加入/显示更多以前使用过的法定全名",
+      "value" : "添加/显示更多以前使用过的姓名",
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
@@ -533,7 +529,7 @@
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
-      "value" : "是",
+      "value" : "有",
       "note" : "Text for the accept previous worked at Amazon radio button label text"
     },
     "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
@@ -545,7 +541,7 @@
       "note" : "Text for the for the form title about what to include in previous Amazon experience"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
-      "value" : "请确定您之前工作过的亚马逊大楼",
+      "value" : "请确认您之前工作过的亚马逊大楼",
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
@@ -553,7 +549,7 @@
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "受雇日期-自/至（月/年-月/年）",
+      "value" : "受雇日期 - 自/至（月/年 - 月/年）",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
@@ -561,27 +557,27 @@
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
-      "value" : "我没有社会保障号",
+      "value" : "本人没有社会保障号",
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
-      "value" : "您确定要在没有社会保障号 (SSN) 的情况下继续吗？",
+      "value" : "您确定要在没有社会保障号（SSN）的情况下继续吗？",
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "如果您有 SSN，则需要提供 SSN。不这样做可能会造成招聘过程延迟，从而可能导致错过开始日期并失去所选班次。",
+      "value" : "如果您有 SSN，则需要提供 SSN。不这样做可能会造成招聘过程的延迟，从而可能导致错过开始工作的日期并失去所选的轮班。",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "继续即表明我确认我没有社会保障号 (SSN)。 我理解，在法律允许的情况下，如果我在入职流程或受雇期间更改或更新我的社会保障号 (SSN)，亚马逊将对我进行进一步的背景调查。",
+      "value" : "确定继续即表示本人确认没有社会保障号（SSN）。 本人理解，如果本人在入职流程或受雇期间更改或更新本人的社会保障号（SSN），在法律允许的情况下，亚马逊将对本人进行进一步的背景调查。",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "我也知悉，任何亚马逊认为是故意虚报 SSN 的情况都可能会导致撤销我的聘用，或者如果我已被录用，则可能会终止我的雇佣关系。",
+      "value" : "本人也知悉，任何亚马逊认为是故意虚报 SSN 的情况都可能会导致撤销本人的聘用，或者如果本人已受雇，则可能会终止与本人的雇佣关系。",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
-      "value" : "我已阅读并理解上述条款。",
+      "value" : "本人已阅读并理解上述条款。",
       "note" : "consent checkbox in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-continue-button" : {
@@ -593,7 +589,7 @@
       "note" : "cancel button in the no SSN modal"
     },
     "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
-      "value" : "没有提供社会保障号",
+      "value" : "无法提供社会保障号",
       "note" : "Text display on national id number input when user check no ssn checkbox"
     },
     "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
@@ -613,7 +609,7 @@
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "通过下面的电子签名，我特此证明我已阅读、理解并接受此非 FCRA 背景调查确认和授权 (Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check) 中的所有声明。请在以下字段中输入所需信息以表示接受。",
+      "value" : "确定在下方进行电子签名即表示本人特此证明本人已阅读、理解并接受这份《Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check（用于背景调查的非公平信用报告法的确认书和授权书）》中的所有声明。请在以下栏中输入所需信息以表示您接受。",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
@@ -621,7 +617,7 @@
       "note" : "Text for the non fcra acknowledgement and authorization input label text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
-      "value" : "电子签名不符。请为每个电子签名使用相同的文本。",
+      "value" : "电子签名不匹配。请为每个电子签名使用相同的文本。",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
@@ -629,7 +625,7 @@
       "note" : "Text for the non fcra form page next button text"
     },
     "BB-BGC-non-fcra-applicable-notice-text" : {
-      "value" : "通过签写以下电子签名，我特此证明我已阅读并理解适用的州声明，包括超链接。",
+      "value" : "确定在下方进行电子签名即表示本人特此证明本人已阅读并理解适用的州声明，包括超链接。",
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
@@ -637,7 +633,7 @@
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "我想要一份背景调查的免费副本",
+      "value" : "本人想要一份本人的背景调查的免费副本",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
@@ -645,7 +641,7 @@
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "返回控制面板继续申请或查看申请和新员工预约详情以及后续步骤。",
+      "value" : "返回控制面板继续您的申请或查看申请和新员工面谈详情以及后续步骤。",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
@@ -669,11 +665,11 @@
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "我们是联邦承包商或分包商，法律要求为符合资格的残疾人士提供平等的就业机会。我们还必须评估我们在至少 7％ 的员工是残疾人士方面的进展。为此，我们必须询问申请人和员工是否有残障或曾经有过残疾。由于人们随时都可能成为残疾人，因此我们要求所有员工至少每五年更新一次信息。",
+      "value" : "我们是联邦承包商或分包商，法律要求我们为符合条件的残疾人士提供平等的就业机会。我们还必须按要求评估我们在至少 7％ 的员工是残障人士方面的进展。为此，我们必须询问申请人和员工是否有残障或曾经有过残疾。由于任何人随时都可能成为残疾人，因此我们要求所有员工至少每五年更新一次信息。",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "表明自己为残疾人士是自愿的，我们希望您会选择这样做。您的答案将被保密，进行筛选的高级职员或参与人事决策的任何其他人都不会看到您的答案。填写表格不会对您产生任何负面影响，无论您过去是否自己表明过。有关此表格或《康复法案》第 503 条规定的联邦承包商平等就业义务的更多信息，请访问美国劳工部 OFCCP 网站<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'> www.dol.gov/ofccp</a>。",
+      "value" : "自我认定为残疾人士以自愿为原则，我们希望您选择自愿表明。您的回答将被保密，负责选拔的高管或参与人事决策的任何其他人都不会看到您的回答。无论您过去是否有自我认定身份，填写该表格不会对您产生任何负面影响。如需了解有关此表格或《Rehabilitation Act（康复法案）》第 503 条规定的联邦承包商平等就业义务的更多信息，请访问美国劳工部联邦合同合规计划办公室（OFCCP）网站<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'> www.dol.gov/ofccp</a>。",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -681,7 +677,7 @@
       "note" : "Text for how I know I have disability header"
     },
     "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
-      "value" : "如果您的身体或精神障碍或医疗状况严重限制了主要生活活动，或者您有此类损伤或医疗状况的病史或记录，则被视为残疾。",
+      "value" : "如果您有身体上或精神上的损伤或疾病严重限制了主要生活活动，或者如果您有过此类障碍或疾病的病史或记录，则被视为残疾。",
       "note" : "Text for how I know I have disability content"
     },
     "BB-SelfId-disability-form-disability-scope-list-header-text" : {
@@ -709,7 +705,7 @@
       "note" : "Text for the disability item: Cardiovascular or heart disease"
     },
     "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
-      "value" : "乳糜泻",
+      "value" : "严重慢性腹泻症",
       "note" : "Text for the disability item: Celiac disease"
     },
     "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
@@ -733,7 +729,7 @@
       "note" : "Text for the disability item: Epilepsy"
     },
     "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
-      "value" : "胃肠功能紊乱，例如克隆氏症或大肠激躁症",
+      "value" : "胃肠功能紊乱，如：克隆氏症或肠道易激综合症",
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
@@ -745,15 +741,15 @@
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "神经系统疾病，例如偏头痛...、帕金森病或多发性硬化症（MS）",
+      "value" : "神经系统疾病，例如偏头痛、帕金森病或多发性硬化症（MS）",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
-      "value" : "精神疾病，例如双相情感障碍症、精神分裂症、创伤后应激障碍或重度抑郁症",
+      "value" : "精神疾病，如：躁郁症、精神分裂症、创伤后应激障碍或重度抑郁症",
       "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
     },
     "BB-SelfId-disability-form-card-title-text" : {
-      "value" : "自愿表明残疾",
+      "value" : "自愿性自我认定残疾",
       "note" : "Text for the disability form card title"
     },
     "BB-SelfId-form-continue-button-text" : {
@@ -765,15 +761,15 @@
       "note" : "Text for the submit disability form submit button text"
     },
     "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
-      "value" : "请选择以下其中一个选项",
+      "value" : "请勾选以下其中一个选项",
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "是的，我有残疾，或者有残疾的历史/记录",
+      "value" : "是的，本人有残疾，或者曾有残疾的病史/记录",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "不，我没有残疾，也没有残疾的历史/记录",
+      "value" : "无，本人没有残疾，也没有残疾的病史/记录",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
@@ -781,19 +777,19 @@
       "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
     },
     "BB-SelfId-disability-form-disability-public-burden-header-text" : {
-      "value" : "公共负担声明",
+      "value" : "公共责任声明",
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
-      "value" : "根据1995年的《减少文书工作法》(Paperwork Reduction Act)，除非此类信息收集文件上显示有效的 OMB 控制编号，否则任何人无需对信息收集作出回应。完成这项调查需要大约 5 分钟时间。",
+      "value" : "根据《Paperwork Reduction Act of 1995（1995 年减少文书工作法）》，除非此类信息收集文件上显示有效的 OMB 控制编号，否则任何人无需对信息收集作出回应。完成这项调查问卷需要大约 5 分钟时间。",
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
-      "value" : "自愿机会均等申明表",
+      "value" : "自愿性平等机会自我认定表",
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "亚马逊重视所有形式的多样性，并遵守某些非歧视和平权行动记录和报告要求，这要求我们邀请候选人和员工自愿表明其性别和种族/民族。提交这些信息是自愿的，拒绝提供这些信息不会使您受到任何不利待遇。所获得的信息将被保密，只能根据适用的联邦法律、行政命令和法规的规定使用，包括要求为民事权利执法目的对信息进行汇总并向联邦政府报告的规定。如果您现在选择不表明自己的性别或种族/民族，联邦政府要求我们通过目测和/或其他可用信息来确定员工的这些信息。",
+      "value" : "亚马逊重视各种形式的多元化，并遵守一些非歧视和平权法案的记录和报告要求，这要求我们邀请候选人和员工自愿性自我认定自己的性别和种族/民族。此类信息的提交以自愿为原则，拒绝提供这些信息不会导致您遭受任何不公平待遇。获得的信息将被保密，只能根据适用的联邦法律、行政命令和法规的规定使用，包括用于公民权利执法目的对信息进行汇总并向联邦政府报告的规定。如果您现在选择不自我认定自己的性别或种族/民族，联邦政府要求我们通过目测和/或其他可用信息来确定员工的这些信息。",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -801,7 +797,7 @@
       "note" : "Text for the equal opportunity form : gender label text"
     },
     "BB-SelfId-equal-opportunity-form-gender-male-text" : {
-      "value" : "男",
+      "value" : "男性",
       "note" : "Text for the equal opportunity form gender option: Male"
     },
     "BB-SelfId-equal-opportunity-form-gender-female-text" : {
@@ -809,7 +805,7 @@
       "note" : "Text for the equal opportunity form gender option: Female"
     },
     "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
-      "value" : "我选择不表明",
+      "value" : "本人选择不自我认定身份",
       "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
@@ -821,7 +817,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "具有北美和南美（包括中美洲）的原住民血统，并保持部落隶属关系或社群关系的人",
+      "value" : "具有任一种北美和南美（包括中美洲）的原住民血统，并保持部落隶属关系或社群关系的人士",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
@@ -829,7 +825,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "具有远东、东南亚或印度次大陆血统的人；包括例如柬埔寨、中国、印度、日本、韩国、马来西亚、巴基斯坦、菲律宾群岛、泰国和越南的人",
+      "value" : "具有任一种远东、东南亚或南亚次大陆血统的人士；包括例如柬埔寨、中国、印度、日本、韩国、马来西亚、巴基斯坦、菲律宾群岛、泰国和越南的人士",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
@@ -837,7 +833,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "具有非洲黑人种族群体血统的人",
+      "value" : "具有非洲黑人种族群体血统的人士",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
@@ -845,7 +841,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
-      "value" : "具有古巴、墨西哥、波多黎各、南美洲或中美洲或其他西班牙文化或血统的人，不分种族",
+      "value" : "具有古巴、墨西哥、波多黎各、南美洲或中美洲或其他西班牙文化或血统的人士，不分种族",
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
@@ -853,7 +849,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
-      "value" : "具有夏威夷、关岛、萨摩亚或其他太平洋各岛族裔血统",
+      "value" : "具有夏威夷、关岛、萨摩亚或其他太平洋各岛族裔血统的人士",
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
@@ -861,7 +857,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
-      "value" : "具有欧洲、中东或北非原住民血统的人",
+      "value" : "具有任一种欧洲、中东或北非原住民血统的人士",
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
@@ -869,11 +865,11 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "表明为以下五个种族中一个以上种族的非西班牙裔人士：(1) 白人、(2) 黑人、(3) 亚洲人、(4) 夏威夷原住民/其他太平洋岛民、(5) 美洲印第安人/阿拉斯加原住民",
+      "value" : "认定为以下五个种族中一个以上种族的非西班牙裔人士：（1）白人、（2）黑人、（3）亚洲人、（4）夏威夷原住民/其他太平洋岛民、（5）美洲印第安人/阿拉斯加原住民",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
-      "value" : "我选择不表明",
+      "value" : "本人选择不自我认定身份",
       "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
@@ -881,11 +877,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "在亚马逊，数千名退伍军人和军人配偶正在推动创新，并提高客户体验的标准。每天，具有军事背景的人士都能将自己的知识、技能和领导能力运用到各种各样的职业中，从而影响全球的变革。出于这些原因，我们正在积极招聘退伍军人和军人配偶。",
+      "value" : "在亚马逊，有数千名退伍军人和军人配偶努力推动创新，并提高客户体验的标准。每天，这些具有军事背景的人士将自己的知识、技能和领导能力运用到各种各样的职业中，从而影响全球的变革。出于这些原因，我们正在积极招聘退伍军人和军人配偶。",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "在亚马逊，数千名退伍军人和军人配偶正在推动创新，并提高客户体验的标准。每天，具有军事背景的人士都能将自己的知识、技能和领导能力运用到各种各样的职业中，从而影响全球的变革。出于这些原因，我们正在积极招聘退伍军人和军人配偶。",
+      "value" : "在亚马逊，有数千名退伍军人和军人配偶努力推动创新，并提高客户体验的标准。每天，这些具有军事背景的人士将自己的知识、技能和领导能力运用到各种各样的职业中，从而影响全球的变革。出于这些原因，我们正在积极招聘退伍军人和军人配偶。",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -901,7 +897,7 @@
       "note" : "Text for the equal opportunity form veteran status item: NO"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
-      "value" : "我选择不表明",
+      "value" : "本人选择不自我认定身份",
       "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
@@ -917,19 +913,19 @@
       "note" : "Text for the equal opportunity form military-spouse item: NO"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
-      "value" : "我选择不表明",
+      "value" : "本人选择不自我认定身份",
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "亚马逊是受1974年《帮助越南退役军人重新就业法》约束的联邦政府承包商，该法经2002年《退伍军人就业法》<a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212</a>（VEVRAA）修订，该法案要求政府承包商采取平权行动来雇用和晋升 (1) 残疾退伍军人; (2) 最近离职的退伍军人; (3) 战时或战役时服役纪念奖章退伍军人; 和 (4) 武装部队服役奖章退伍军人。以下是根据第 4212 条邀请您表明是否有受保护退伍军人的身份。披露这些信息完全是自愿的，拒绝提供这些信息不会使您受到任何不利待遇。",
+      "value" : "亚马逊是受《Jobs for Veterans Act of 2002（2002 年退伍军人就业法）》<a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212</a>（VEVRAA）修订的《Vietnam Era Veterans' Readjustment Assistance Act of 1974（1974 年协助越战退伍军人辅助法）》约束的联邦政府承包商，该法案要求政府承包商按照平权法案来雇用和晋升（1）伤残退伍军人；（2）近期退役的军人；（3）战时服役或非战事活动中获得奖章的退伍军人；和（4）获武装部队服役奖章的退伍军人。以下是根据第 4212 条邀请您自我认定是否属于受保护退伍军人。公开此类信息完全以自愿为原则，拒绝提供这些信息不会导致您遭受任何不公平待遇。",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
-      "value" : "<b>受保护的退伍军人</b>是以下任一一种：",
+      "value" : "<b>受保护的退伍军人</b>指以下任何一种：",
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>残疾退伍军人</b>：根据美国退伍军人事务部实施的法律有权获得补偿（或不领军人退休金而有权获得补偿) 的美国军队、陆军、海军或空军退伍军人；或因服役残疾而退伍或退役的人。",
+      "value" : "<b>残疾退伍军人</b>：根据美国退伍军人事务部实施的法律有资格获得补偿（或不领取军人退休金而有资格获得补偿) 的美国军队、陆军、海军或空军退伍军人；或因服役残疾而退伍或退役的人士。",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
@@ -937,15 +933,15 @@
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>战时或战役时服役纪念奖章退伍军人</b>：在美国曾服役并且根据国防部实施的法律获颁纪念奖章的退伍军人。",
+      "value" : "<b>战时服役或非战事活动中获得奖章的退伍军人</b>：在美国曾服役并且根据国防部实施的法律获颁奖章的退伍军人。",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
-      "value" : "<b>武装部队服役奖章退伍军人</b>：在美国军队、陆军、海军或空军服役期间参与美国军事行动的退伍军人，根据<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>行政命令</a>授予武装部队服役奖章。",
+      "value" : "<b>获武装部队服役奖章的退伍军人</b>：在美国军队、陆军、海军或空军服役期间参与美国军事行动，根据<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>行政命令</a>被授予武装部队服役奖章的退伍军人。",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
-      "value" : "如果您认为自己属于任何一类受保护的退伍军人，请选择以下合适的选项表明身份。",
+      "value" : "如果您认为自己属于以下任何一类受保护的退伍军人，请勾选合适的选项表明身份。",
       "note" : "Text for the protected veteran select form label text"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
@@ -957,7 +953,7 @@
       "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
-      "value" : "我选择不表明",
+      "value" : "本人选择不自我认定身份",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
@@ -965,11 +961,11 @@
       "note" : "Text for the protected veteran select form next button text"
     },
     "BB-cali-disclosure-page-title-text" : {
-      "value" : "加州调查性消费者披露报告 (California Disclosure Regarding Investigative Consumer Reports)",
+      "value" : "California Disclosure Regarding Investigative Consumer Reports（关于加州消费者调查报告的公开内容）",
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "关于我可能受雇于 Amazon.com, Inc.或其子公司或附属公司（“亚马逊”），亚马逊可能会从以下消费者报告机构获得一份关于我的调查性消费者报告（“报告”），也称为背景调查：",
+      "value" : "关于本人可能受雇于 Amazon.com, Inc.或其子公司或附属公司（“亚马逊”），亚马逊可能会从以下消费者报告机构获得一份关于本人的消费者调查报告（“报告”），也称为背景调查：",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -993,27 +989,27 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "我明白：",
+      "value" : "本人理解：",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
-      "value" : "如果要求 Accurate 提供报告，则此类报告中包含的信息将仅用于确定我的工作资格。",
+      "value" : "如果要求 Accurate 提供“报告”，则此类“报告”中包含的信息将仅用于确定本人的受雇资格。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "Accurate 获得并包含在任何报告中的信息可以通过多种方式获得，包括查阅合法可用的文件和信息，和/或直接或间接联系和面访前雇主、学校、金融机构、房东、公共机构、及其他可能有这种信息的人士，例如我的邻居、朋友和同事。",
+      "value" : "Accurate 获得并包含在任何报告中的信息可以通过多种方式获得，包括查阅合法可用的文件和信息，和/或直接或间接联系和面访前雇主、学校、金融机构、房东、公共机构、及其他本人所认识的可能有这种信息的人士，如：本人的邻居、朋友和同事。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Accurate 将进行调查，调查结果可能包含在提供给亚马逊的任何报告中，其中可能包括关于我的品格、一般声誉、个人特征或生活方式、就业和工作经历、教育、驾驶记录和犯罪记录等各类信息，受适用的联邦和州法律规定限制的约束。",
+      "value" : "Accurate 将进行调查，调查结果可能包含在提供给亚马逊的任何报告中，其中可能包括关于本人的性格、总体声誉、个人特征或生活方式、就业和工作经历、教育、驾驶记录和犯罪记录等各类信息，受适用的联邦和州法律规定限制的约束。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "根据《加州民法典》第 1785 条及其后各节以及第 1786 条及其后各节，如果亚马逊要求提供任何有关我的报告，我可以在正常办公时间内查看 Accurate 为我保留的文件。本人理解，我也可以 (1) 在提交有效的身份证明文件并支付复印费用后，通过挂号信或在提交合理提前通知后，在正常办公时间内亲自到 Accurate 的办公室，获得此文件的副本；以及 (2) 在向 Accurate 提交有效的身份证明文件并向 Accurate 提出电话披露的书面请求后，通过电话从 Accurate 接收此文件的摘要，费用由我承担。本人理解，Accurate 有接受过培训的人员，可以向我解释 Accurate 的文件，包括任何编码信息，而且，如果我亲自到 Accurate 的办公室，我可以有一位陪同人员，该人要向 Accurate 提供有效的身份证明文件。",
+      "value" : "根据《California Civil Code（加州民法）》第 1785 条及其后各节以及第 1786 条及其后各节，如果亚马逊要求提供任何有关本人的报告，本人可以在正常办公时间内查看 Accurate 为本人保留的文件。本人理解，本人也可以（1）在提交有效的身份证明文件并支付复印费用后，通过挂号信获得此文件的副本，或者在向 Accurate 提前提交合理理由的通知后，在正常办公时间内亲自到 Accurate 的办公室，获得此文件的副本；以及（2）在向 Accurate 提交有效的身份证明文件并向 Accurate 提出通过电话公开信息的书面请求后，可通过电话从 Accurate 接收此文件的摘要，费用由本人承担。本人理解，Accurate 有接受过培训的人员，可以向本人解释 Accurate 的文件，包括任何编码信息，而且，如果本人亲自到 Accurate 的办公室，可以带一位陪同人员，此人需要先完成向 Accurate 提供有效的身份证明文件的手续。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "有关 Accurate 隐私政策的信息可在<a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'> https://www.accurate.com/privacy-policy/</a> 获得。",
+      "value" : "有关 Accurate 隐私政策的信息请访问<a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'> https://www.accurate.com/privacy-policy/</a>。",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
@@ -1041,27 +1037,27 @@
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "如果需要 First Advantage 提供报告，则此类报告中包含的信息将仅用于确定我的就业资格。",
+      "value" : "如果需要 First Advantage 提供报告，则此类报告中所包含的信息将仅用于确定我的任职资格。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "First Advantage 获得并包含在任何报告中的信息可能可以通过多种方式获得，包括查阅合法可用的文件和信息，和/或直接或间接联系人并与前雇主、学校、金融机构、房东、公共机构、还有其他我认识的且可能有这种信息的人士，例如我的邻居、朋友和同事等进行访谈。",
+      "value" : "由 First Advantage 获得并在任何报告中使用的信息可以通过多种方式取得，包括查阅以合法方式获得的文件和信息，和/或直接或间接联系和面访前雇主、学校、金融机构、房东、公共机构、及其他可能掌握这类信息的人士，如：我的邻居、朋友和同事。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "First Advantage 将进行调查，调查结果可能会体现在提供给亚马逊的任何报告，可能包括关于我的各类信息，如我的品格特性、总体声誉、个人特征或生活方式、就业和工作经历、教育、驾驶记录和犯罪记录、适用于联邦和州法律规定的各项规章制度的遵守情况。",
+      "value" : "First Advantage 将进行调查，调查结果可能会体现在提供给亚马逊的任何报告中，可能包括关于我的各类信息，如：我的性格特点、总体声誉、个人特点或生活方式、就业和工作经历、教育、驾驶记录和犯罪记录，受适用的联邦和州法律规定限制的约束。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "按照加州民法第 1785 条及其后各节以及第 1786 条及其后各节的规定，如果亚马逊要求我提供任何报告，我可以在正常办公时间内可能查看 First Advantage 为我保留的文件。本人理解，我也可能可以（1）在提交适当的身份证明文件并支付复印费用后，通过挂号信或在提交合理的我亲自到访计划的提前通知书后，在正常办公时间内亲自到 First Advantage 办公室，获得此文件的副本；以及（2）在向 First Advantage 提交适当的身份证明文件并向 First Advantage 提出电话告知的书面请求后，通过电话从 First Advantage 收到此文件的摘要，费用由我承担。本人理解，First Advantage 有接受过培训的人员，可以向我解释 First Advantage 的文件，包括任何编码信息，而且，如果我亲自到 First Advantage 的办公室，我可能可以由另一人陪同，此人也要向 First Advantage 提供适当的身份证明文件。",
+      "value" : "根据《加州民法典》第 1785 条及其后各节以及第 1786 条及其后各节的规定，如果亚马逊要求我提供任何报告，我可以在正常办公时间内查看 First Advantage 为我保留的文件。本人理解，我也可以 (1) 在提交有效的身份证明文件并支付复印费用后，通过挂号信或在提交合理提前通知后，在正常办公时间内亲自到 First Advantage 的办公室，获得此文件的副本；以及 (2) 在向 First Advantage 提交有效的身份证明文件并向 First Advantage 提出电话披露的书面请求后，通过电话从 First Advantage 接收此文件的摘要，费用由我承担。本人理解，First Advantage 有接受过培训的人员，可以向我解释 First Advantage 的文件，包括任何编码信息，而且，如果我亲自到 First Advantage 的办公室，我可能可以由另一人陪同，此人也要向 First Advantage 提供适当的身份证明文件。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
-      "value" : "有关 First Advantage 隐私政策的信息可在<a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'> https://fadv.com/privacy-policy/ </a>获得。",
+      "value" : "有关 First Advantage 的隐私政策的信息，请参阅 <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>。",
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "我特此证明，我已阅读并理解本文件，并且根据加利福尼亚州消费者调查报告的披露準則，我授权亚马逊获取关于我的消费者调查报告。",
+      "value" : "我特此证明，我已阅读并理解本文件，并且根据加利福尼亚州消费者调查报告的披露准则，我授权亚马逊获取关于我的消费者调查报告。",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1069,7 +1065,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "{lastname}{firstname} ，您马上就要完成了！ 我们需要您过来拍摄工作证照片、完成工作许可手续并进行药物测试（如适用）。",
+      "value" : "{lastname}{firstname}，马上就好了！ 您需要过来拍摄工作证照片、完成上岗授权手续以及进行药检（如果适用）。",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1085,11 +1081,11 @@
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "自愿自我鉴定退伍军人身份",
+      "value" : "自愿自我认定退役军人身份",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "我们将在接下来的 {hours} 小时 {minutes} 分钟为您保留职位以便您完成剩余的步骤。",
+      "value" : "我们将在接下来的 {hours} 小时 {minutes} 分钟为您保留职位，以便您完成剩余的步骤。",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
@@ -1097,7 +1093,7 @@
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "您提供的信息不符合我们的要求。我们鼓励您查看 amazon.jobs 上的工作职位。",
+      "value" : "您提供的信息不符合我们的要求。我们建议您查看 amazon.jobs 上的工作职位。",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
@@ -1105,15 +1101,15 @@
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
-      "value" : "{name}，您对亚马逊感到兴趣对我们意义重大。",
+      "value" : "{name}，非常感谢您应聘亚马逊的工作岗位。",
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "非常感谢您给我们这个机会考虑您担任这个职位。很遗憾，我们目前不会将您纳入候选人行列。",
+      "value" : "非常感谢您申请这个职位。很抱歉，我们决定不再处理您的应聘申请。",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "如需重新考虑这个职位，您可以在三个月内再次参加评估。",
+      "value" : "若要再次申请此职位，您可以在三个月后再次参加评估。",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
@@ -1125,23 +1121,23 @@
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "我们很高兴您有兴趣加入亚马逊！",
+      "value" : "欢迎您应聘亚马逊的职位！",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "此评估帮助您了解关联的职权并帮助我们认识您。",
+      "value" : "此评估帮助您了解关联的职位，并帮助我们更好地了解您。",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "便利设施",
+      "value" : "便利",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要便利设施，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>亚马逊便利设施。</a>",
+      "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要提供便利，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>亚马逊便利。</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>评估的任何部分都没有时间限制</b>，您可以按照自己的进度进行评估。此评估的所有部分：",
+      "value" : "<b>评估的所有环节都没有时间限制</b>，您可以按照自己的节奏进行评估。此评估的所有环节：",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1149,7 +1145,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
-      "value" : "可以通过鼠标或键盘进行访问。",
+      "value" : "您可以使用鼠标或键盘访问。",
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
@@ -1157,7 +1153,7 @@
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "查看并提交",
+      "value" : "检查并提交",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-edit-button-text" : {
@@ -1165,7 +1161,7 @@
       "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
-      "value" : "工作职位详情",
+      "value" : "职位详情",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
@@ -1181,11 +1177,11 @@
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
-      "value" : "国民身份证类型：",
+      "value" : "身份证件类型：",
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "国民身份号码：",
+      "value" : "身份证件编号：",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
@@ -1201,11 +1197,11 @@
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "我们期待在上述时间见到您。",
+      "value" : "我们期待在上述时间与您见面。",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
-      "value" : "自愿自我身份鉴定",
+      "value" : "自愿自我认定",
       "note" : "Text for the voluntary self-identification section title text"
     },
     "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
@@ -1213,7 +1209,7 @@
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "退伍军人身份：",
+      "value" : "退役军人身份：",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
@@ -1229,15 +1225,15 @@
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "我们期待很快能见到您。后续步骤：",
+      "value" : "期待与您见面。后续步骤：",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "请提供推荐详情（如适用）",
+      "value" : "请提供推荐详情（如果适用）",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "您是由亚马逊现有员工推荐的吗？",
+      "value" : "是亚马逊在职员工推荐的您吗？",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
@@ -1245,19 +1241,19 @@
       "note" : "Text for the thank you page referral details radio button 'yes' text"
     },
     "BB-ThankYou-referral-details-no-text" : {
-      "value" : "无",
+      "value" : "否",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "开始准备入职前的事项",
+      "value" : "开始入职前活动",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "在您的入职前面谈之前，请填写工作机会税收抵免问卷。",
+      "value" : "在参加入职前面谈之前，请填写工作机会税额减免问卷。",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
-      "value" : "让我们开始吧",
+      "value" : "马上开始吧",
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
@@ -1277,15 +1273,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "未过期的带照片的身份证原件",
+      "value" : "带照片且未过期身份证件的原件",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "未过期的工作许可文件原件",
+      "value" : "未过期工作许可文件的原件",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "点击<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>此处</a>查看可接纳文件的完整列表。",
+      "value" : "点击<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>此处</a>查看可接受文件的完整列表。",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
@@ -1293,7 +1289,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "如果您需要任何便利设施，例如招聘活动的 ASL 美国手语口译员，请前往<a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'> www.amazon.com/accommentions</a> 与我们沟通，以申请口译员。请您在预约面谈后立即联系我们。在您的面谈时间之前，我们需要提前至少 48 小时进行安排。",
+      "value" : "如果您需要任何便利，如：招聘活动的 ASL 手语口译员，请前往 <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> 与我们联系，以申请安排口译员。请在预约面谈后立即联系我们。在您参加面谈之前，我们需要提前至少 48 小时进行安排。",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
@@ -1309,15 +1305,15 @@
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
-      "value" : "工作机会税收抵免问卷",
+      "value" : "工作机会税额减免问卷",
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "亚马逊 IAT 测试参与了联邦和/或州税收抵免计划。您提供的信息将用于确定公司是否有资格参加这些计划，绝不会对任何招聘、留用或晋升决策产生负面影响。",
+      "value" : "亚马逊 IAT 测试加入了联邦和/或州的税额减免计划。您提供的信息将用于确定公司是否有资格参加这些计划，并且绝不会对任何招聘、留用或晋升决策产生负面影响。",
       "note" : "Text for the WOTC page description text"
     },
     "BB-Schedule-card-possible-start-date-text" : {
-      "value" : "可能的入职日期：",
+      "value" : "可能的开始日期：",
       "note" : "Text for the schedule card possible start date text"
     },
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
@@ -1337,7 +1333,7 @@
       "note" : "Text for the schedule card bonus text"
     },
     "BB-amazon-rejects-thank-you" : {
-      "value" : "感谢您的关注，但我们目前无法为您提供职位。",
+      "value" : "感谢您的关注，但我们目前无法为您提供工作机会。",
       "note" : "Text for the amazon rejects page thank you text"
     },
     "BB-amazon-rejects-not-meet-requirements" : {
@@ -1353,15 +1349,15 @@
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
-      "value" : "必填字段缺少信息。",
+      "value" : "缺少必填字段。",
       "note" : "error message when trying to create application with missing application Id field"
     },
     "BB-create-application-error-message-internal-server-error" : {
-      "value" : "系统出错了。请重试或刷新浏览器。",
+      "value" : "服务器出错了。请重试或刷新浏览器。",
       "note" : "internal server Error message when creating application"
     },
     "BB-create-application-error-message-candidate-inactive" : {
-      "value" : "应聘者处于非活跃状态。未能为应聘者创建申请。",
+      "value" : "应聘者处于非活跃状态。无法为应聘者创建申请。",
       "note" : "error message for create application if candidate is inactive"
     },
     "BB-create-application-error-message-candidate-not-found" : {
@@ -1369,11 +1365,11 @@
       "note" : "error message for create application if candidate is not found"
     },
     "BB-create-application-error-message-version-mismatch" : {
-      "value" : "未能更新申请，因为存在较新的更新。",
+      "value" : "无法更新申请，因为存在时间更近的更新。",
       "note" : "error message when create application with version mismatching"
     },
     "BB-create-application-error-message-default" : {
-      "value" : "未能创建申请。",
+      "value" : "无法创建申请。",
       "note" : "Default error message for create application"
     },
     "BB-update-application-error-message-applicationId-not-match" : {
@@ -1381,23 +1377,23 @@
       "note" : "Error message for update application when application Id do not match"
     },
     "BB-update-application-error-message-application-not-found" : {
-      "value" : "未能找到该申请。",
+      "value" : "找不到申请。",
       "note" : "Error message for update application when application can not be found"
     },
     "BB-update-application-error-message-missing-required-fields" : {
-      "value" : "必填字段缺少：申请 ID。",
+      "value" : "缺少必填字段：申请 ID。",
       "note" : "Error message when updating message with application Id missing"
     },
     "BB-update-application-error-message-version-mismatch" : {
-      "value" : "未能更新申请，因为存在较新的更新。",
+      "value" : "无法更新申请，因为存在时间更近的更新。",
       "note" : "Error message when updating application with version mismatching"
     },
     "BB-update-application-error-message-server-error" : {
-      "value" : "系统出错了。请重试或刷新浏览器。",
+      "value" : "服务器出错了。请重试或刷新浏览器。",
       "note" : "internal server Error message when updating application"
     },
     "BB-update-application-error-message-candidate-not-authorized" : {
-      "value" : "您无访问此申请的权限。",
+      "value" : "您无法访问此申请。",
       "note" : "error message for update application when candidate is not authorized"
     },
     "BB-update-application-error-message-sign-fcra-ack" : {
@@ -1417,7 +1413,7 @@
       "note" : "error message for update application without state notices signature"
     },
     "BB-update-application-error-message-selected-schedule-not-available" : {
-      "value" : "您选择的计划安排不再可用，请选择其他计划安排。",
+      "value" : "您选择的时间段已经约满，请选择其他时间。",
       "note" : "error message for update application when selected schedule is not available"
     },
     "BB-update-application-error-message-mismatch-signatures" : {
@@ -1425,7 +1421,7 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "更新申请失败，因为您更改身份证件编号的次数已经达到上限。如果您之前使用其他电子邮件地址注册过，请退出登录，然后尝试使用该电子邮件登录，如有需要，可以使用“是否忘记个人 PIN 码？”链接。如果您需要帮助，请通过电子邮件联系我们或通过 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> 发起实时交谈。",
+      "value" : "更新申请失败，因为您更改身份证件的次数已经达到上限。如果您之前使用其他电子邮件地址注册过，请注销，然后尝试使用该电子邮件登录，如果需要，可以使用“忘记个人 PIN 码？”链接。如果您需要帮助，请发邮件给我们或通过 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> 发起实时聊天。",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
@@ -1441,7 +1437,7 @@
       "note" : "error message for update application when request type do not match with request payload"
     },
     "BB-update-application-error-message-dob-missing-in-request" : {
-      "value" : "更新申请中缺少出生日期。",
+      "value" : "有效负载中缺少出生日期。",
       "note" : "error message for update application when date of birth is missing in the request"
     },
     "BB-update-application-error-message-provide-dob" : {
@@ -1465,27 +1461,27 @@
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
-      "value" : "地址中缺少地址行 1。",
+      "value" : "地址对象中缺少地址行 1。",
       "note" : "error message for update application when address line 1 is missing"
     },
     "BB-update-application-error-message-city-missing-in-address" : {
-      "value" : "地址中缺少城市。",
+      "value" : "地址对象中缺少城市。",
       "note" : "error message for update application when city is missing in address"
     },
     "BB-update-application-error-message-state-missing-in-address" : {
-      "value" : "地址中缺少州。",
+      "value" : "地址对象中缺少州。",
       "note" : "error message for update application when state is missing in address"
     },
     "BB-update-application-error-message-zipcode-missing-in-address" : {
-      "value" : "地址中缺少邮政编码。",
+      "value" : "地址对象中缺少邮政编码。",
       "note" : "error message for update application when Zip/Postal code is missing in address"
     },
     "BB-update-application-error-message-country-missing-in-address" : {
-      "value" : "地址中缺少国家/地区。",
+      "value" : "地址对象中缺少国家/地区。",
       "note" : "error message for update application when country is missing in address"
     },
     "BB-update-application-error-message-invalid-previous-legal-name" : {
-      "value" : "请按以下格式输入以前曾用过的法定全名：名字 姓氏。",
+      "value" : "请按以下格式输入以前使用过的法定全名：名字、姓氏。",
       "note" : "error message for update application with invalid previous legal name"
     },
     "BB-update-application-error-message-bgc-validation-failed" : {
@@ -1493,47 +1489,47 @@
       "note" : "error message for update application with invalid additional background"
     },
     "BB-update-application-error-message-nhe-apt-missing" : {
-      "value" : "请求中缺少新入职预约面谈。",
+      "value" : "请求中缺少 nheAppointment 对象。",
       "note" : "error message for update application with new hire event appointment missing"
     },
     "BB-update-application-error-message-referral-missing" : {
-      "value" : "请求中缺少推荐人信息。",
+      "value" : "请求中缺少推荐信息。",
       "note" : "error message for update application with referral information missing"
     },
     "BB-update-application-error-message-ethnicity-missing" : {
-      "value" : "更新申请中缺少民族信息。",
+      "value" : "有效负载中缺少民族。",
       "note" : "error message for update application with ethnicity information missing"
     },
     "BB-update-application-error-message-gender-is-missing" : {
-      "value" : "更新申请中缺少性别。",
+      "value" : "有效负载中缺少性别。",
       "note" : "error message for update application with gender information missing"
     },
     "BB-update-application-error-message-military-service-missing" : {
-      "value" : "更新申请中缺少军人配偶信息。",
+      "value" : "有效负载中缺少军人配偶信息。",
       "note" : "error message for update application with military Spouse  information missing"
     },
     "BB-update-application-error-message-protected-veteran-missing" : {
-      "value" : "更新申请中缺少受保护的退伍军人信息。",
+      "value" : "有效负载中缺少受保护的退役军人信息。",
       "note" : "error message for update application with protected veteran status information missing"
     },
     "BB-update-application-error-message-veteran-status-missing" : {
-      "value" : "更新申请中缺少退伍军人信息。",
+      "value" : "有效负载中缺少退役军人信息。",
       "note" : "error message for update application with veteran status information missing"
     },
     "BB-update-application-error-message-disability-missing" : {
-      "value" : "更新申请中缺少残障信息。",
+      "value" : "有效负载中缺少残障信息。",
       "note" : "error message for update application with disability status information missing"
     },
     "BB-update-application-error-message-cali-disclosure-missing" : {
-      "value" : "更新申请中缺少 BGC California Disclosure Acknowledged（加州公开信息确认函）。",
+      "value" : "有效负载中缺少已同意的 BGC California Disclosure（加州披露报告）。",
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "您输入的 SSN 或身份证件编号已与我们系统中的另一个电子邮件地址相关联。如果您之前使用其他电子邮件地址注册过，请[退出登录]（/application/logout），然后尝试使用该电子邮件登录。如有需要，可以使用“是否忘记个人 PIN 码？”链接。如果您需要帮助，请通过发电子邮件联系我们或通过 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 发起实时交谈。",
+      "value" : "您输入的 SSN 或身份证件编号已与我们系统中的另一个电子邮件地址相关联。如果您之前使用其他电子邮件地址注册过，请[注销]/application/logout，然后尝试使用该电子邮件登录。如果需要，可以使用“忘记个人 PIN 码？”链接。如果您需要帮助，请发邮件给我们或通过 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 发起实时聊天。",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
-      "value" : "未能获取职位。",
+      "value" : "无法获取职位。",
       "note" : "error message when unable to fetch job information"
     },
     "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
@@ -1541,23 +1537,23 @@
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
-      "value" : "此刻检索职位失败。请稍后再试。",
+      "value" : "目前无法检索职位。请稍后再试。",
       "note" : "error message when there is a bad request to fetch shifts"
     },
     "BB-get-schedule-list-error-message-all-shift-filled" : {
-      "value" : "所有轮班工作已满。",
+      "value" : "所有班次已满。",
       "note" : "error message when fetch shifts but all shifts are filled"
     },
     "BB-get-schedule-list-error-message-no-schedule-found" : {
-      "value" : "所有轮班工作已满。",
+      "value" : "所有班次已满。",
       "note" : "error message when fetch shifts but no shift found"
     },
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
-      "value" : "获取人数统计请求失败。",
+      "value" : "无法获取人数统计请求。",
       "note" : "error message when fetch head count request failed"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
-      "value" : "所有轮班工作已满。",
+      "value" : "所有班次已满。",
       "note" : "error message when all appointment time slots are filled"
     },
     "BB-get-time-slots-error-message-fetch_time-slot-error" : {
@@ -1569,27 +1565,27 @@
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
-      "value" : "未能获取轮班工作首选项。",
+      "value" : "无法获取班次偏好。",
       "note" : "error message when fetch shift preference failed"
     },
     "BB-get-time-slots-error-message-shift-bad-request" : {
-      "value" : "此刻检索职位失败。请稍后再试。",
+      "value" : "目前无法检索职位。请稍后再试。",
       "note" : "error message when server received a bad request to get time slots"
     },
     "BB-get-candidate-error-message-failed-get-candidate" : {
-      "value" : "获取应聘者信息失败。",
+      "value" : "未能获取应聘者。",
       "note" : "error message when failed to get candidate information"
     },
     "BB-get-candidate-error-message-no-access-to-application" : {
-      "value" : "您无访问此申请的权限。",
+      "value" : "您无法访问此申请。",
       "note" : "error message when candidate doesn't access to the application"
     },
     "BB-update-application-error-message-unable-create-application" : {
-      "value" : "未能创建申请。",
+      "value" : "无法创建申请。",
       "note" : "Error message when unable to create application"
     },
     "BB-update-application-error-message-can-not-create-application" : {
-      "value" : "您无创建申请的权限。",
+      "value" : "您无法创建申请。",
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
@@ -1597,15 +1593,15 @@
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
-      "value" : "您无访问此申请的权限。",
+      "value" : "您无法访问此申请。",
       "note" : "Error message when candidate trying to get application of another candidate"
     },
     "BB-get-application-error-message-application-not-found" : {
-      "value" : "未能获取此申请。",
+      "value" : "无法获取此申请。",
       "note" : "Error message when get application and application is not found"
     },
     "BB-get-application-error-message-internal-server-error" : {
-      "value" : "系统出错了。请重试或刷新浏览器。",
+      "value" : "服务器出错了。请重试或刷新浏览器。",
       "note" : "Error message when get application and there is server error"
     },
     "BB-workflow-failed-title-text" : {
@@ -1621,7 +1617,7 @@
       "note" : "Text for the workflow failed page return to dashboard text"
     },
     "BB-can-not-offer-job-title-text" : {
-      "value" : "感谢您的关注，但我们目前无法为您提供职位。",
+      "value" : "感谢您的关注，但我们目前无法为您提供工作机会。",
       "note" : "Text for the can not offer job page title text"
     },
     "BB-can-not-offer-job-description-text" : {
@@ -1633,7 +1629,7 @@
       "note" : "Text for the can not offer job page description text"
     },
     "BB-candidate-withdraws" : {
-      "value" : "感谢您的关注，但我们目前无法为您提供职位。",
+      "value" : "感谢您的关注，但我们目前无法为您提供工作机会。",
       "note" : "Candidate withdraws page title"
     },
     "BB-candidate-withdraws-description" : {
@@ -1645,7 +1641,7 @@
       "note" : "Candidate withdraws page back to dashboard buttton"
     },
     "BB-amazon-withdraws" : {
-      "value" : "感谢您的关注，但我们目前无法为您提供职位。",
+      "value" : "感谢您的关注，但我们目前无法为您提供工作机会。",
       "note" : "Amazon withdraws page title"
     },
     "BB-amazon-withdraws-description" : {
@@ -1657,19 +1653,19 @@
       "note" : "Amazon withdraws page back to dashboard buttton"
     },
     "BB-session-timeout" : {
-      "value" : "您的职位保留时限已过。",
+      "value" : "您的职位保留时限已过期。",
       "note" : "session timeout page title"
     },
     "BB-session-timeout-description" : {
-      "value" : "应聘者需要在三个小时内完成申请。很抱歉，您申请该职位时超过了三小时限制。请浏览现有的空缺职位。",
+      "value" : "应聘者需要在三个小时内完成申请。很抱歉，您超时了。请浏览职位空缺。",
       "note" : "session timeout description"
     },
     "BB-session-timeout-view-job-button-text" : {
-      "value" : "查看空缺职位",
+      "value" : "查看工作机会",
       "note" : "Session timeout view job opportunities button"
     },
     "BB-no-available-time-slots-title" : {
-      "value" : "目前该职位无预约可供安排。",
+      "value" : "目前没有该职位的面谈信息。",
       "note" : "Text for no available time slots title"
     },
     "BB-no-available-time-slots-description" : {
@@ -1677,7 +1673,7 @@
       "note" : "Text for no available time slots description title"
     },
     "BB-no-available-time-slots-select-different-job" : {
-      "value" : "1、选择其他空缺职位",
+      "value" : "1.选择其他工作机会",
       "note" : "Text for no available time slots page to select different job"
     },
     "BB-no-available-time-slots-select-different-job-link" : {
@@ -1685,11 +1681,11 @@
       "note" : "Text for no available time slots page to select different job link"
     },
     "BB-no-available-time-slots-select-later-date-text" : {
-      "value" : "2、选择入职日期较晚的轮班工作（推荐）",
+      "value" : "2.选择开始日期较晚的班次（推荐）",
       "note" : "Text for no available time slots page to select shift with later start date"
     },
     "BB-no-available-time-slots-view-other-shifts-button-text" : {
-      "value" : "查看其他轮班工作",
+      "value" : "查看其他班次",
       "note" : "Text for no available time slots page view other shifts button"
     },
     "BB-no-available-time-slots-back-to-dashboard-button-text" : {
@@ -1697,235 +1693,235 @@
       "note" : "Text for no available time slots page back to dashboard button"
     },
     "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
-      "value" : "请勾选该复选框以继续。",
+      "value" : "请选中该复选框以继续。",
       "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
     },
     "BB-bgc-ConvictionInfoRadio-error-message" : {
-      "value" : "请勾选该复选框以继续。",
+      "value" : "请选中该复选框以继续。",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message" : {
-      "value" : "请勾选该复选框以继续。",
+      "value" : "请选中该复选框以继续。",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
-      "value" : "AL - 阿拉巴马州",
+      "value" : "AL — 阿拉巴马州",
       "note" : "Text for Alabama state"
     },
     "BB-States-Alaska" : {
-      "value" : "AK - 阿拉斯加州",
+      "value" : "AK — 阿拉斯加州",
       "note" : "Text for Alaska state"
     },
     "BB-States-Arizona" : {
-      "value" : "AZ - 亚利桑那州",
+      "value" : "AZ — 亚利桑那州",
       "note" : "Text for Arizona state"
     },
     "BB-States-Arkansas" : {
-      "value" : "AR - 阿肯色州",
+      "value" : "AR — 阿肯色州",
       "note" : "Text for Arkansas state"
     },
     "BB-States-California" : {
-      "value" : "CA - 加利福尼亚州",
+      "value" : "CA — 加利福尼亚州",
       "note" : "Text for California state"
     },
     "BB-States-Colorado" : {
-      "value" : "CO - 科罗拉多州",
+      "value" : "CO — 科罗拉多州",
       "note" : "Text for Colorado state"
     },
     "BB-States-Connecticut" : {
-      "value" : "CT - 康涅狄格州",
+      "value" : "CT — 康涅狄格州",
       "note" : "Text for Connecticut state"
     },
     "BB-States-Delaware" : {
-      "value" : "DE - 特拉华州",
+      "value" : "DE — 特拉华州",
       "note" : "Text for Delaware state"
     },
     "BB-States-District-of-Columbia" : {
-      "value" : "DC - 华盛顿哥伦比亚特区",
+      "value" : "DC — 哥伦比亚特区",
       "note" : "Text for District of Columbia state"
     },
     "BB-States-Florida" : {
-      "value" : "FL - 佛罗里达州",
+      "value" : "FL — 佛罗里达州",
       "note" : "Text for Florida state"
     },
     "BB-States-Georgia" : {
-      "value" : "GA - 佐治亚州",
+      "value" : "GA — 格鲁吉亚州",
       "note" : "Text for Georgia state"
     },
     "BB-States-Hawaii" : {
-      "value" : "HI - 夏威夷州",
+      "value" : "HI — 夏威夷州",
       "note" : "Text for Hawaii state"
     },
     "BB-States-Idaho" : {
-      "value" : "ID - 爱达荷州",
+      "value" : "ID — 爱达荷州",
       "note" : "Text for Idaho state"
     },
     "BB-States-Illinois" : {
-      "value" : "IL - 伊利诺伊州",
+      "value" : "IL — 伊利诺伊州",
       "note" : "Text for Illinois state"
     },
     "BB-States-Indiana" : {
-      "value" : "IN - 印第安纳州",
+      "value" : "IN — 印第安纳州",
       "note" : "Text for Indiana state"
     },
     "BB-States-Iowa" : {
-      "value" : "IA - 爱荷华州",
+      "value" : "IA — 爱荷华州",
       "note" : "Text for Iowa state"
     },
     "BB-States-Kansas" : {
-      "value" : "KS - 堪萨斯州",
+      "value" : "KS — 堪萨斯州",
       "note" : "Text for Kansas state"
     },
     "BB-States-Kentucky" : {
-      "value" : "KY - 肯塔基州",
+      "value" : "KY — 肯塔基州",
       "note" : "Text for Kentucky state"
     },
     "BB-States-Louisiana" : {
-      "value" : "LA - 路易斯安那州",
+      "value" : "LA — 路易斯安那州",
       "note" : "Text for Louisiana state"
     },
     "BB-States-Maine" : {
-      "value" : "ME - 缅因州",
+      "value" : "ME — 缅因州",
       "note" : "Text for Maine state"
     },
     "BB-States-Maryland" : {
-      "value" : "MD - 马里兰州",
+      "value" : "MD — 马里兰州",
       "note" : "Text for Maryland state"
     },
     "BB-States-Massachusetts" : {
-      "value" : "MA - 马萨诸塞州",
+      "value" : "MA — 马萨诸塞州",
       "note" : "Text for Massachusetts state"
     },
     "BB-States-Michigan" : {
-      "value" : "MI - 密歇根州",
+      "value" : "MI — 密歇根州",
       "note" : "Text for Michigan state"
     },
     "BB-States-Minnesota" : {
-      "value" : "MN - 明尼苏达州",
+      "value" : "MN — 明尼苏达州",
       "note" : "Text for Minnesota state"
     },
     "BB-States-Mississippi" : {
-      "value" : "MS - 密西西比州",
+      "value" : "MS — 密西西比州",
       "note" : "Text for Mississippi state"
     },
     "BB-States-Missouri" : {
-      "value" : "MO - 密苏里州",
+      "value" : "MO — 密苏里州",
       "note" : "Text for Missouri state"
     },
     "BB-States-Montana" : {
-      "value" : "MT - 蒙大拿州",
+      "value" : "MT — 蒙大拿州",
       "note" : "Text for Montana state"
     },
     "BB-States-Nebraska" : {
-      "value" : "NE - 内布拉斯加州",
+      "value" : "NE — 内布拉斯加州",
       "note" : "Text for Nebraska state"
     },
     "BB-States-Nevada" : {
-      "value" : "NV - 内华达州",
+      "value" : "NV — 内华达州",
       "note" : "Text for Nevada state"
     },
     "BB-States-New-Hampshire" : {
-      "value" : "NH - 新罕布什尔州",
+      "value" : "NH — 新罕布什尔州",
       "note" : "Text for New Hampshire state"
     },
     "BB-States-New-Jersey" : {
-      "value" : "NJ - 新泽西州",
+      "value" : "NJ — 新泽西州",
       "note" : "Text for New Jersey state"
     },
     "BB-States-New-Mexico" : {
-      "value" : "NM - 新墨西哥州",
+      "value" : "NM — 新墨西哥州",
       "note" : "Text for New Mexico state"
     },
     "BB-States-New-York" : {
-      "value" : "NY - 纽约州",
+      "value" : "NY — 纽约州",
       "note" : "Text for New York state"
     },
     "BB-States-North-Carolina" : {
-      "value" : "NC - 北卡罗来纳州",
+      "value" : "NC — 北卡罗来纳州",
       "note" : "Text for North Carolina state"
     },
     "BB-States-North-Dakota" : {
-      "value" : "ND - 北达科他州",
+      "value" : "ND — 北达科他州",
       "note" : "Text for North Dakota state"
     },
     "BB-States-Ohio" : {
-      "value" : "OH - 俄亥俄州",
+      "value" : "OH — 俄亥俄州",
       "note" : "Text for Ohio state"
     },
     "BB-States-Oklahoma" : {
-      "value" : "OK - 俄克拉荷马州",
+      "value" : "OK — 俄克拉荷马州",
       "note" : "Text for Oklahoma state"
     },
     "BB-States-Oregon" : {
-      "value" : "OR - 俄勒冈州",
+      "value" : "OR — 俄勒冈州",
       "note" : "Text for Oregon state"
     },
     "BB-States-Pennsylvania" : {
-      "value" : "PA - 宾夕法尼亚州",
+      "value" : "PA — 宾夕法尼亚州",
       "note" : "Text for Pennsylvania state"
     },
     "BB-States-Rhode-Island" : {
-      "value" : "RI - 罗德岛州",
+      "value" : "RI — 罗德岛州",
       "note" : "Text for Rhode Island state"
     },
     "BB-States-South-Carolina" : {
-      "value" : "SC - 南卡罗来纳州",
+      "value" : "SC — 南卡罗来纳州",
       "note" : "Text for South Carolina state"
     },
     "BB-States-South-Dakota" : {
-      "value" : "SD - 南达科他州",
+      "value" : "SD — 南达科他州",
       "note" : "Text for South Dakota state"
     },
     "BB-States-Tennessee" : {
-      "value" : "TN - 田纳西州",
+      "value" : "TN — 田纳西州",
       "note" : "Text for Tennessee state"
     },
     "BB-States-Texas" : {
-      "value" : "TX - 得克萨斯州",
+      "value" : "TX — 得克萨斯州",
       "note" : "Text for Texas state"
     },
     "BB-States-Utah" : {
-      "value" : "UT - 犹他州",
+      "value" : "UT — 犹他州",
       "note" : "Text for Utah state"
     },
     "BB-States-Vermont" : {
-      "value" : "VT - 佛蒙特州",
+      "value" : "VT — 佛蒙特州",
       "note" : "Text for Vermont state"
     },
     "BB-States-Virginia" : {
-      "value" : "VA - 弗吉尼亚州",
+      "value" : "VA — 弗吉尼亚州",
       "note" : "Text for Virginia state"
     },
     "BB-States-Washington" : {
-      "value" : "WA - 华盛顿州",
+      "value" : "WA — 华盛顿",
       "note" : "Text for Washington state"
     },
     "BB-States-wisconsin" : {
-      "value" : "WI - 威斯康星州",
+      "value" : "WI — 威斯康星",
       "note" : "Text for Wisconsin state"
     },
     "BB-States-west-virginia" : {
-      "value" : "WV - 西弗吉尼亚州",
+      "value" : "WV — 西弗吉尼亚",
       "note" : "Text for West Virginia state"
     },
     "BB-States-wyoming" : {
-      "value" : "WY - 怀俄明州",
+      "value" : "WY — 怀俄明",
       "note" : "Text for Wyoming state"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
-      "value" : "未能更新 WOTC。",
+      "value" : "无法更新 WOTC。",
       "note" : "error message when failed to update wotc status"
     },
     "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
-      "value" : "您选择的轮班安排不再可用。请选择其他选项。",
+      "value" : "您选择的时间段已约满。请选择其他选项。",
       "note" : "Error message text displayed when selected NHE shift is no longer available"
     },
     "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
-      "value" : "您最近已受聘于此职位，您的轮班工作无法更改。请通过 https://www.amazondelivers.jobs/contactus 联系我们，以更改您的轮班工作。",
+      "value" : "您最近已受聘于此职位，您的班次无法更改。请通过 https://www.amazondelivers.jobs/contactus 联系我们，以更改班次。",
       "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
     },
     "BB-update-application-error-message-failed-update-application" : {
-      "value" : "更新申请失败。",
+      "value" : "申请更新失败。",
       "note" : "Error message text displayed when failed to update application"
     },
     "BB-bgc-additional-bgc-form-header-text" : {
@@ -1933,15 +1929,15 @@
       "note" : "Text for the additional background check form header"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
-      "value" : "感谢您对{jobTitle}职位的关注。我们的记录显示您之前曾任职于亚马逊。 根据您之前的亚马逊任职记录，您目前符合重新受聘为亚马逊季节性员工或第三方代理机构员工的条件。因此，我们无法继续处理您应聘此职位的申请。如果您对重新聘用资格有任何疑问，请联系现场的人力资源团队。",
+      "value" : "感谢您对{jobTitle}职位的关注。我们的记录显示您之前曾任职于亚马逊。 根据您之前的亚马逊任职记录，您符合重新受聘为亚马逊临时员工或第三方代理机构员工的条件。因此，我们无法继续处理您的应聘申请。如果您对重新聘用资格有任何疑问，请联系现场的人力资源团队。",
       "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
-      "value" : "感谢您关注这个职位。我们的记录显示您之前曾任职于亚马逊。 根据您之前的亚马逊任职记录，您目前符合重新受聘为亚马逊季节性员工或第三方代理机构员工的条件。因此，我们无法继续处理您应聘此职位的申请。如果您对重新聘用资格有任何疑问，请联系现场的人力资源团队。",
+      "value" : "感谢您关注这个职位。我们的记录显示您之前曾任职于亚马逊。 根据您之前的亚马逊任职记录，您符合重新受聘为亚马逊临时员工或第三方代理机构员工的条件。因此，我们无法继续处理您的应聘申请。如果您对重新聘用资格有任何疑问，请联系现场的人力资源团队。",
       "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-content-text" : {
-      "value" : "请访问我们的季节性工作页面，以了解您所在地区的季节性职位空缺。",
+      "value" : "请访问我们的临时工作页面，以了解您所在地区的临时职位空缺。",
       "note" : "Text for rehire not eligible seasonal only content"
     },
     "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
@@ -1953,27 +1949,27 @@
       "note" : "text for Not rehire eligibility page title"
     },
     "BB-not-rehire-eligible-content-text" : {
-      "value" : "我们感谢您的时间，并祝您未来一切顺利。",
+      "value" : "我们珍惜您的时间，并祝您未来一切顺利。",
       "note" : "text for Not rehire eligibility page content"
     },
     "BB-rehire-not-eligible-active-title-text" : {
-      "value" : "我们感谢您最近提交的职位申请！ 很遗憾，您已经是亚马逊的雇员，因此不符合申请该职位的条件。",
+      "value" : "感谢您最近提交的职位申请！ 很遗憾，您已经是亚马逊的雇员，因此不符合申请该职位的条件。",
       "note" : "Text for rehire not eligible active page title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
-      "value" : "好消息！ 目前有多个空缺职位，您可以在线浏览并申请。您可以通过下述方式了解您未来的职业发展机会：",
+      "value" : "好消息！ 目前有多个空缺职位，您可以在线浏览并应聘。您可以通过下述方式了解您未来的职业发展机会：",
       "note" : "Text for rehire not eligible active open opportunities list title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
-      "value" : "有关代理机构员工或季节性员工转正式员工的问题，请访问 amazon.com/conversions (http://amazon.com/conversions)。",
+      "value" : "有关代理机构员工或临时工转正式员工的问题，请访问 amazon.com/conversions (http://amazon.com/conversions)。",
       "note" : "Text for rehire not eligible active open opportunities list item one"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
-      "value" : "如需更改轮班工作或地点，请联系您的现场团队。",
+      "value" : "如需更改班次或地点，请联系您的现场团队。",
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "建议您联系您当地的人力资源团队或员工资源中心（ERC），他们能够更好地解答您遇到的问题。您可以随时拨打 1-888-892-7180（电话：18888927180）与 ERC 团队联系。",
+      "value" : "建议您联系您当地的人力资源团队或员工资源中心 (ERC)，他们能够更好地解答您遇到的问题。您可以随时拨打 1-888-892-7180（电话：18888927180）与 ERC 团队联系。",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
@@ -1989,11 +1985,11 @@
       "note" : "Text for rehire not eligible 365 days title without jobTitle"
     },
     "BB-365-days-not-rehire-eligible-content-text" : {
-      "value" : "考虑到您的离职原因，您可以在亚马逊离职 90 天后重新申请。",
+      "value" : "考虑到您的离职原因，您可以在离职亚马逊 90 天后重新申请。",
       "note" : "Text for rehire not eligible 365 days content text"
     },
     "BB-no-available-shift-all-shifts-filled-text" : {
-      "value" : "目前，所有轮班工作均已满。",
+      "value" : "目前，所有班次均已满。",
       "note" : "Text for the no available shift page all shifts filled text"
     },
     "BB-no-available-shift-return-dashboard-to-apply-text" : {
@@ -2017,19 +2013,19 @@
       "note" : "Text for the applicationId null page return to dashboard text"
     },
     "BB-Detailed-button-error-text-message" : {
-      "value" : "请勾选该复选框以继续。",
+      "value" : "请选中该复选框以继续。",
       "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
-      "value" : "美国 - 社会保障号",
+      "value" : "美国 - 社会保障号码",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "是的，我有残疾（或以前有过残疾）",
+      "value" : "是的，我有残疾（或以前有残疾）",
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {
-      "value" : "不，我没有残疾",
+      "value" : "没有，我没有残疾",
       "note" : "Text for the reverse mapping candidate disability no"
     },
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {

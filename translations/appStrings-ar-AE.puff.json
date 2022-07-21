@@ -33,7 +33,7 @@
       "note" : "Text for the button to select or confirm job"
     },
     "BB-StepHeader-view-progress-button" : {
-      "value" : "عرض التقدم",
+      "value" : "عرض مستوى التقدم",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-PreconsentPage-preview-steps-button" : {
@@ -41,7 +41,7 @@
       "note" : "Text for the button to preview application steps"
     },
     "BB-PreconsentPage-next-Button" : {
-      "value" : "التالي",
+      "value" : "التالية",
       "note" : "Text for the button to go to next page ( consent page )"
     },
     "BB-Country-United-States" : {
@@ -49,11 +49,11 @@
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "من خلال التقديم، فإنك تؤكد ما يلي:",
+      "value" : "يعني التقديم أنك تؤكد ما يلي:",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
-      "value" : "من خلال التقديم، فإنه يعني قرأتك وموافقتك على",
+      "value" : "يعني التقديم أنك قرأت وتوافق على",
       "note" : "Text for the user data policy agreement title"
     },
     "BB-ConsentPage-user-data-Policy-button" : {
@@ -69,35 +69,35 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "تلتزم أمازون بمكان عمل متنوع وشامل. أمازون هي صاحب عمل متكافئ الفرص، حيث إنها لا تميز على أساس العرق، أو الأصل الوطني، أو الجنس، أو الهوية الجنسية، أو التوجه الجنسي، أو حالة المحاربين القدامى المحميين، أو الإعاقة، أو العمر، أو أي حالة أخرى محمية قانونًا. بالنسبة للأفراد ذوي الإعاقة الذين يرغبون في طلب سكن، يرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "تلتزم أمازون بتوفير مكان عمل متنوع وشامل. أمازون هي جهة توفّر فرص عمل متكافئة، وليس لديها تمييز على أساس العرق، أو الأصل الوطني، أو الجنس، أو الهوية الجنسية، أو الميل الجنسي، أو حالة المحاربين القدامى الذين يتمتعون بحماية، أو الإعاقة، أو العمر، أو أي حالة أخرى تتمتع بحماية قانونية. بالنسبة للأفراد ذوي الإعاقة الذين يرغبون في طلب سكن، يرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "تأخذ أمازون حماية بياناتك الشخصية على محمل الجد ولن تعالج بياناتك الشخصية إلا وفقًا للقانون. على وجه الخصوص، نحن لا نشارك بياناتك الشخصية مع أي طرف ثالث دون موافقتك المسبقة، ما لم يُلزمنا القانون بفعل ذلك. ما لم تعبر عن خلاف ذلك، ستقوم شركة التوظيف التابعة لأمازون بتخزين بياناتك الشخصية في قاعدة البيانات الإلكترونية التي تحتفظ بها Amazon.com في الولايات المتحدة الأمريكية أو إحدى الشركات التابعة لها. للحصول على معلومات كاملة حول كيفية قيام أمازون بحفظ ومعالجة بياناتك الشخصية، يرجى الضغط هنا<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
+      "value" : "تأخذ أمازون حماية بياناتك الشخصية على محمل الجد ولن تعالج بياناتك الشخصية إلا وفقًا للقانون. على وجه الخصوص، نحن لا نشارك بياناتك الشخصية مع أيّ طرف ثالث بدون موافقتك المسبقة، ما لم يُلزمنا القانون بفعل ذلك. ما لم تصرِّح بخلاف ذلك، ستقوم شركة التوظيف التابعة لأمازون بتخزين بياناتك الشخصية في قاعدة البيانات الإلكترونية التي تحتفظ بها Amazon.com في الولايات المتحدة الأمريكية أو إحدى الشركات التابعة لها. للحصول على معلومات كاملة حول كيفية قيام أمازون بحفظ ومعالجة بياناتك الشخصية، يرجى النقر على هذا الرابط <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "بالإضافة إلى الدور الذي تقدمت له اليوم، قد يكون لدينا وظائف أخرى تتطلب نفس المهام الوظيفية أو مهام وظيفية مماثلة. قد تكون هذه الأدوار لوظائف بدوام كامل، أو بوقت مخفض، أو بدوام جزئي، أو بصفة موسمية، و/أو بصفة مؤقتة و المتوفرة في هذا الموقع أو في مواقع أمازون الأخرى القريبة. أنت لست ملزمًا بقبول أي دور مع أمازون أو مع شركائنا، ومع ذلك، من خلال إكمال طلبك فإنك توافق على أن يتم النظر في طلبك لنفس المستوى، وساعات العمل ضمن دائرة نصف قطرها 30 ميلًا من موقع الطلب الخاص بك. يتضمن ذلك مشاركة معلومات مقدم الطلب الخاصة بك مع شركائنا (وكالات التوظيف) الذين يوظفون لتلبية احتياجاتنا من الموظفين المنتظمين والمؤقتين.",
+      "value" : "بالإضافة إلى الوظيفة التي تقدمت لها اليوم، قد يكون لدينا وظائف أخرى تتطلب المهام الوظيفية نفسها أو مهام وظيفية مماثلة. قد تكون هذه الأدوار لوظائف بدوام كامل و/أو بوقت مخفَّض و/أو بدوام جزئي و/أو بصفة موسمية و/أو بصفة مؤقتة والمتوفرة في هذا الموقع أو في مواقع أمازون الأخرى القريبة. أنت لست ملزَمًا بقبول أيّ دور مع أمازون أو مع شركائنا، ومع ذلك، يعني إكمال طلبك أنك توافق على أن يتم النظر في طلبك للمستوى نفسه، ونظام ساعات العمل ضمن دائرة نصف قطرها 30 ميلاً من موقع الطلب الخاص بك. يتضمن ذلك مشاركة معلومات مقدّم الطلب الخاصة بك مع شركائنا (وكالات التوظيف) الذين يوظفون لتلبية احتياجاتنا من الموظفين المنتظمين والمؤقتين.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "من خلال التقديم، فإنك:",
+      "value" : "يعني التقديم أنك:",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
-      "value" : "تقر بأنك قد قرأت الوصف الوظيفي للوظيفة التي تتقدم إليها وأنك تفهم المتطلبات الأساسية اللازمة لأداء الوظيفة؛",
+      "value" : "تقرّ بأنك قد قرأت الوصف الوظيفي للوظيفة التي تتقدم إليها وأنك تفهم المتطلبات الأساسية اللازمة لأداء الوظيفة؛",
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "الموافقة على معالجة، وتحليل وتقييم بياناتك الشخصية من قِبل أمازون، أو salesforce.com أو أي طرف ثالث آخر لأغراض طلبك ولأي أغراض قانونية أخرى لدى أمازون. لتجنب الشك، ستشمل \"معالجة\" بياناتك الشخصية على سبيل المثال لا الحصر؛ جمع، أو استلام، أو تسجيل، أو تنظيم، أو ترتيب، أو تخزين، أو تحديث، أو تغيير، أو استخدام، أو نشر، أو توزيع، أو دمج، أو ربط، أو حظر، أو تقليل، أو محو، أو إتلاف بياناتك الشخصية؛",
+      "value" : "توافق على معالجة وتحليل وتقييم بياناتك الشخصية من قِبل أمازون أو salesforce.com أو أي طرف ثالث آخر لأغراض طلبك ولأي أغراض قانونية أخرى لدى أمازون. لتجنّب الشك، ستشمل \"معالجة\" بياناتك الشخصية على سبيل المثال لا الحصر؛ جمع، أو استلام، أو تسجيل، أو تنظيم، أو ترتيب، أو تخزين، أو تحديث، أو تغيير، أو استخدام، أو نشر، أو توزيع، أو دمج، أو ربط، أو حظر، أو تقليل، أو محو، أو إتلاف بياناتك الشخصية؛",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "الموافقة على احتفاظ أمازون ببياناتك الشخصية بعد عملية تقديم الطلب، من أجل مساعدتها في المراقبة الفعالة لعملياتها المتعلقة بطلبات الوظائف ولتخزين بياناتك الشخصية في قاعدة بيانات إلكترونية في الولايات المتحدة الأمريكية.",
+      "value" : "توافق على احتفاظ أمازون ببياناتك الشخصية بعد عملية تقديم الطلب، من أجل مساعدتها في المراقبة الفعالة لعملياتها المتعلقة بطلبات الوظائف ولتخزين بياناتك الشخصية في قاعدة بيانات إلكترونية في الولايات المتحدة الأمريكية.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
-      "value" : "عرض التقدم",
+      "value" : "عرض مستوى التقدم",
       "note" : "Text for view progress flyout title"
     },
     "BB-StepHeader-view-progress-flyout-close-button" : {
@@ -105,19 +105,19 @@
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "تحديد الوظيفة",
+      "value" : "تحديد وظيفة",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
-      "value" : "أكمل المستندات المطلوبة",
+      "value" : "إكمال المستندات المطلوبة",
       "note" : "Text for complete required documents application step"
     },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
-      "value" : "تحديد موعد ما قبل التعيين",
+      "value" : "تحديد موعد ما قبل التوظيف",
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "أكمل التقييم (حوالي 15 دقيقة)",
+      "value" : "إكمال التقييم (حوالي 15 دقيقة)",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
@@ -125,15 +125,15 @@
       "note" : "Text for filter schedule flyout title"
     },
     "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
-      "value" : "إعادة تعيين",
+      "value" : "إعادة التعيين",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "تقديم الطلب",
+      "value" : "تقديم",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "تقديم الطلب",
+      "value" : "تقديم",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
@@ -153,47 +153,47 @@
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
-      "value" : "تصفية المخطط الزمني",
+      "value" : "تصفية الجداول الزمنية",
       "note" : "Text for the title of DaysHours Filter"
     },
     "BB-DayName-Monday" : {
-      "value" : "يوم الإثنين",
+      "value" : "الإثنين",
       "note" : "Text for Monday"
     },
     "BB-DayName-Tuesday" : {
-      "value" : "يوم الثلاثاء",
+      "value" : "الثلاثاء",
       "note" : "Text for Tuesday"
     },
     "BB-DayName-Wednesday" : {
-      "value" : "يوم الأربعاء",
+      "value" : "الأربعاء",
       "note" : "Text for Wednesday"
     },
     "BB-DayName-Thursday" : {
-      "value" : "يوم الخميس",
+      "value" : "الخميس",
       "note" : "Text for Thursday"
     },
     "BB-DayName-Friday" : {
-      "value" : "يوم الجمعة",
+      "value" : "الجمعة",
       "note" : "Text for Friday"
     },
     "BB-DayName-Saturday" : {
-      "value" : "يوم السبت",
+      "value" : "السبت",
       "note" : "Text for Saturday"
     },
     "BB-DayName-Sunday" : {
-      "value" : "يوم الأحد",
+      "value" : "الأحد",
       "note" : "Text for Sunday"
     },
     "BB-TimeRange-start-time-select-label-text" : {
-      "value" : "وقت البداية",
+      "value" : "وقت البدء",
       "note" : "Text for start time select input label text"
     },
     "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "وقت البداية",
+      "value" : "وقت البدء",
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
-      "value" : "حتى{hourNumber} ساعات",
+      "value" : "حتى {hourNumber} ساعات",
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
@@ -217,7 +217,7 @@
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "وفقًا لما يسمح به القانون المعمول به، يعد العرض الخاص بك مشروطًا باجتياز فحص المعلومات الأساسية المطلوب، وفحص المخدرات (إن وجد)، والتحقق من الأهلية لإعادة التوظيف (إن وجد)، لذلك من المهم أن تكمل خطوات ما قبل التوظيف في الصفحة التالية. في بعض الحالات، قد يتأخر يومك الأول بسبب عدم إكمال متطلبات ما قبل التوظيف في الوقت المناسب. إذا كان هذا هو الحال، يمكنك توقع تواصلنا معك قريبًا.",
+      "value" : "وفقًا لما يسمح به القانون المعمول به، يعد العرض الخاص بك مشروطًا باجتياز فحص الخلفية المطلوب، وفحص المخدرات (إن وُجد)، والتحقق من الأهلية لإعادة التوظيف (إن وُجد)، لذلك من المهم أن تكمل خطوات ما قبل التوظيف في الصفحة التالية. في بعض الحالات، قد يتأخر يومك الأول بسبب عدم إكمال متطلبات ما قبل التوظيف في الوقت المناسب. إذا كان هذا هو الحال، يمكنك توقع تواصلنا معك قريبًا.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -241,15 +241,15 @@
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "بقبول هذا العرض، فإنك تؤكد أنك تفهم متطلبات هذه الوظيفة.",
+      "value" : "يعني قبول هذا العرض أنك تؤكد فهمك لمتطلبات هذه الوظيفة.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
-      "value" : "فحص المعلومات الأساسية",
+      "value" : "فحص الخلفية",
       "note" : "Text for BGC page title"
     },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
-      "value" : "يرجى تقديم التفويض والمعلومات اللازمة لفحص المعلومات الأساسية.",
+      "value" : "يرجى تقديم التفويض والمعلومات اللازمة لفحص الخلفية.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
     "BB-BGC-page-fcra-step-card-title" : {
@@ -257,11 +257,11 @@
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص المعلومات الأساسية",
+      "value" : "إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص الخلفية",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
-      "value" : "معلومات أساسية إضافية",
+      "value" : "معلومات خلفية إضافية",
       "note" : "Text for the Additional bgc information step card title"
     },
     "BB-BGC-page-continue-button" : {
@@ -313,7 +313,7 @@
       "note" : "Text for the additional bgc form  state label text"
     },
     "BB-BGC-Additional-bgc-form-state-error-text" : {
-      "value" : "الرجاء إدخال ولاية/مقاطعة صحيحة",
+      "value" : "يرجى إدخال ولاية/مقاطعة صالحة",
       "note" : "Text for the additional bgc form state error message text"
     },
     "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
@@ -325,7 +325,7 @@
       "note" : "Text for the additional bgc form  zipcode label text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
-      "value" : "يرجى إدخال رمز بريدي صحيح مكون من 5 أرقام",
+      "value" : "يرجى إدخال رمز بريدي صالح يتألّف من 5 أرقام",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
@@ -333,11 +333,11 @@
       "note" : "Text for the additional bgc form  country label text"
     },
     "BB-BGC-Additional-bgc-form-country-error-text" : {
-      "value" : "يُرجى إدخال بلد صحيح",
+      "value" : "يُرجى إدخال بلد صالح",
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
-      "value" : "في الولايات المتحدة، رقم الضمان الاجتماعي (SSN) هو رقم يتألّف من تسعة أرقام يتم إصداره للمواطنين الأمريكيين، المقيمين الدائمين و المقيمين المؤقتين (العاملين).",
+      "value" : "في الولايات المتحدة، رقم الضمان الاجتماعي (SSN) هو رقم يتألّف من تسعة أرقام يتم إصداره للمواطنين الأمريكيين والمقيمين الدائمين والمقيمين المؤقتين (العاملين).",
       "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
@@ -345,11 +345,11 @@
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
-      "value" : "رقم الهوية الوطنية",
+      "value" : "بطاقة الهوية الوطنية",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "الرجاء إدخال نوع بطاقة هوية وطنية صالحة",
+      "value" : "يرجى إدخال نوع بطاقة هوية وطنية صالحًا",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
@@ -361,7 +361,7 @@
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "يرجى إدخال رقم ضمان اجتماعي صالح مكون من 9 أرقام بدون شرطة",
+      "value" : "يرجى إدخال رقم ضمان اجتماعي صالح يتألّف من 9 أرقام بدون شرطة",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -369,7 +369,7 @@
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "الرجاء إدخال تاريخ ميلاد صحيح.",
+      "value" : "يرجى إدخال تاريخ ميلاد صالح.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
@@ -385,7 +385,7 @@
       "note" : "Text to show that inout on a form is optional"
     },
     "BB-BGC-bgc-step-card-step-progress" : {
-      "value" : "خطوة{currentStep} من{totalSteps}",
+      "value" : "الخطوة {currentStep} من {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
@@ -401,11 +401,11 @@
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "وضح المدينة، والبلد، وحالة الإدانة، والتاريخ، ونوع الجريمة، بالإضافة إلى معلومات الحُكْم",
+      "value" : "اذكر اسم المدينة، والبلد، وحالة الإدانة، والتاريخ، ونوع الجريمة، بالإضافة إلى معلومات العقوبة",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "فيما يتعلق بطلب توظيفك مع Amazon.com, Inc. أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\")، سنحصل على تقرير المستهلك عنك من وكالة تقارير المستهلك. يُعرف هذا عادةً باسم \"فحص المعلومات الأساسية\".",
+      "value" : "فيما يتعلق بطلب توظيفك لدى Amazon.com, Inc.‎ أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\")، سنحصل على تقرير المستهلك عنك من الهيئة المعنية بتقارير المستهلك. يُعرف هذا عادةً باسم \"فحص الخلفية\".",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
@@ -413,7 +413,7 @@
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أفوض بموجبه أمازون بالحصول على تقرير المستهلك أعلاه الآن وطوال أي وظيفة أو مشاركة قد تكون لدي مع شركة أمازون.",
+      "value" : "بموجب التوقيع الإلكتروني الخاص بي أدناه، أفوّض أمازون بالحصول على تقرير المستهلك أعلاه الآن وطوال فترة شغلي أيّ وظيفة أو مشاركتي في أي نشاط لدي شركة أمازون.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -421,11 +421,11 @@
       "note" : "Text for the fcra disclosure form next button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
-      "value" : "أفوض أمازون لإجراء فحص المعلومات الأساسية هذا.",
+      "value" : "أفوّض أمازون لإجراء فحص الخلفية هذا.",
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "أرفض تفويض أمازون بفحص المعلومات الأساسية هذا.",
+      "value" : "أرفض تفويض أمازون بفحص الخلفية هذا.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
@@ -433,71 +433,71 @@
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
-      "value" : "يرجى إدخال اسمًا كاملاً صحيحًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
+      "value" : "يرجى إدخال اسم كامل وصالح بالتنسيق التالي: الاسم الأول الاسم الأخير",
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "وفقًا لما أفصحتُ عنه وأذنتُ به في وثيقة الإفصاح والتفويض المنفصلة لقانون الإبلاغ عن الائتمان العادل، فإنه شركة Amazon.com, Inc. أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\") ستجري فحصًا للمعلومات الأساسية عني.",
+      "value" : "وفقًا لما أفصحتُ عنه وأذنتُ به في وثيقة الإفصاح والتفويض المنفصلة لقانون الإبلاغ عن الائتمان العادل، فإن شركة Amazon.com, Inc.‎ أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\") ستجري فحصًا للخلفية عني.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
-      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقر بما يلي:",
+      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقرّ بما يلي:",
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "مزود فحص المعلومات الأساسية أو \"CRA\"، الذي سيُجري فحص المعلومات الأساسية هو شركة First Advantage، التي يقع مقرها في 1 كونكورس باركواي ان اي، جناح 200، أتلانتا، جورجيا 30328، ويمكن التواصل معها من خلال الرقم (800) 845-6004 أو الموقع الإلكتروني: www.fadv.com.",
+      "value" : "مقدّم خدمة فحص الخلفية أو CRA، الذي سيُجري فحص الخلفية هو شركة First Advantage، التي يقع مقرها في 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328، ويمكن التواصل معها من خلال الرقم ‎(800) 845-6004 أو الموقع الإلكتروني www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "مزود فحص المعلومات الأساسية أو \"CRA\"، الذي سيُجري فحص المعلومات الأساسية هو شركة Accurate Background، ويقع مقرها في 7515 مركز إيرفاين د.، إيرفاين، CA 92618، ويمكن الوصول إليها من خلال الرقم 8024-216 (800) أو الموقع الإلكتروني: www.accuratebackground.com.\n\n* أفهم وأوافق على أنه، وفقًا لما يسمح به القانون، يمكن لشركة أمازون طلب فحوصات إضافية للمعلومات الأساسية عني لأغراض التوظيف دون الحصول على إذن إضافي، (1) أثناء عملي، إن وجد، و(2) من CRAs بخلاف Accurate Background.",
+      "value" : "الجهة المقدّمة لخدمة فحص الخلفية أو جهة CRA التي ستُجري فحص الخلفية هي شركة Accurate Background والتي يقع مقرها في 7515 Irvine Center Dr., Irvine, CA 92618، ويمكن التواصل معها من خلال الرقم 8024-216 (800) أو الموقع الإلكتروني www.accuratebackground.com.\n\n* أفهم وأوافق على أنه، وفقًا لما يسمح به القانون، يمكن لشركة أمازون طلب فحوصات إضافية للخلفية عنّي لأغراض التوظيف بدون الحصول على إذن إضافي منّي، (1) أثناء وجودي في الوظيفة، إن وُجدت، (2) ومن جهات CRA بخلاف Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "أفهم وأوافق على أنه وفقًا لما يسمح به القانون يمكن لشركة أمازون طلب فحوصات إضافية للمعلومات الأساسية عني لأغراض التوظيف، دون الحصول على إذن إضافي، (1) أثناء عملي، إن وجد، و(2) من CRAs بخلاف First Advantage.",
+      "value" : "أفهم وأوافق على أنه وفقًا لما يسمح به القانون يمكن لشركة أمازون طلب فحوصات إضافية للخلفية عني لأغراض التوظيف، بدون الحصول على إذن إضافي منّي، (1) أثناء وجودي في الوظيفة، إن وُجدت، (2) ومن جهة CRA بخلاف First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "أفهم وأوافق على أنه، وفقًا لما يسمح به القانون يمكن لشركة أمازون طلب فحوصات إضافية للمعلومات الأساسية عني لأغراض التوظيف، دون الحصول على إذن إضافي، (1) أثناء عملي، إن وجد، و(2) من CRAs بخلاف Accurate Background.",
+      "value" : "أفهم وأوافق على أنه، وفقًا لما يسمح به القانون يمكن لشركة أمازون طلب فحوصات إضافية للخلفية عنّي لأغراض التوظيف، بدون الحصول على إذن إضافي، (1) أثناء وجودي في الوظيفة، إن وُجدت، (2) ومن جهات CRA بخلاف Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "لأغراض التوظيف، ورهنًا بكافة القوانين التي تحمي خصوصية معلوماتي، أسمح أيضًا بالإفصاح إلى CRAs عن أي معلومات مطلوبة للتحقق من المعلومات الأساسية الخاصة بي كما يلي: أرباب العمل السابقين أو الحاليين، والمدارس، ووكالات إنفاذ القانون وغيرها من الوكالات الحكومية، بما في ذلك وكالات تسجيل السيارات.",
+      "value" : "لأغراض التوظيف، وشريطة الامتثال لجميع القوانين التي تحمي خصوصية معلوماتي، أسمح أيضًا للجهات التالية بالإفصاح لدى جهات CRA عن أيّ معلومات مطلوبة للتحقق من الخلفية الخاصة بي: أرباب العمل السابقون أو الحاليون، والمؤسسات التعليمية، وهيئات إنفاذ القانون وغيرها من الهيئات الحكومية، بما في ذلك هيئات تسجيل السيارات.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "لأغراض التوظيف، ورهنًا بكافة القوانين التي تحمي خصوصية معلوماتي، أسمح أيضًا بالإفصاح إلى CRAs عن أي معلومات مطلوبة للتحقق من المعلومات الأساسية الخاصة بي كما يلي: أرباب العمل السابقين أو الحاليين، والمدارس، ووكالات إنفاذ القانون وغيرها من الوكالات الحكومية، بما في ذلك وكالات تسجيل السيارات.",
+      "value" : "لأغراض التوظيف، وشريطة الامتثال لجميع القوانين التي تحمي خصوصية معلوماتي، أسمح أيضًا للجهات التالية بالإفصاح لدى جهات CRA عن أيّ معلومات مطلوبة للتحقق من الخلفية الخاصة بي: أرباب العمل السابقون أو الحاليون، والمؤسسات التعليمية، وهيئات إنفاذ القانون وغيرها من الهيئات الحكومية، بما في ذلك هيئات تسجيل السيارات.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>كاليفورنيا:</b> ستتلقى إفصاح كاليفورنيا بخصوص تقرير المستهلك الاستقصائي بصورة منفصلة (\"إفصاح كاليفورنيا\"). هذه وثيقة مهمة؛ يرجى مراجعتها بعناية. أيضا، اضغط<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> إذا كنت تبحث عن وظيفة في سان فرانسيسكو أو كنت تعمل بالفعل لدى شركة فيها. بالتوقيع أدناه، عملاً بقانون كاليفورنيا وإفصاح كاليفورنيا، فإنك تفوض بموجبه أمازون للحصول على تقرير المستهلك الاستقصائي، والذي يُعرف أيضًا باسم فحص المعلومات الأساسية، سواء الآن وفي أي وقت خلال أي عمل مع أمازون.</p>",
+      "value" : "<p><b>كاليفورنيا:</b> ستتلقى إفصاح كاليفورنيا بخصوص تقرير المستهلك الاستقصائي بصورة منفصلة (\"إفصاح كاليفورنيا\"). هذه وثيقة مهمة؛ يرجى مراجعتها بعناية. أيضا، انقر على <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> إذا كنت تبحث عن وظيفة في سان فرانسيسكو أو كنت تعمل بالفعل لدى شركة فيها. بموجب التوقيع أدناه، وعملاً بقانون كاليفورنيا وإفصاح كاليفورنيا، فإنك تفوّض أمازون للحصول على تقرير المستهلك الاستقصائي، والذي يُعرف أيضًا باسم فحص الخلفية، سواء الآن وفي أيّ وقت خلال أيّ وظيفة لدى أمازون.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>كاليفورنيا:</b> ستتلقى إفصاح كاليفورنيا بخصوص تقرير المستهلك الاستقصائي بصورة منفصلة (\"إفصاح كاليفورنيا\"). هذه وثيقة مهمة؛ يرجى مراجعتها بعناية. أيضا، اضغط<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> إذا كنت تبحث عن وظيفة في سان فرانسيسكو أو كنت تعمل بالفعل لدى شركة فيها. بالتوقيع أدناه، عملاً بقانون كاليفورنيا وإفصاح كاليفورنيا، فإنك تفوض بموجبه أمازون للحصول على تقرير المستهلك الاستقصائي، والذي يُعرف أيضًا باسم فحص المعلومات الأساسية، سواء الآن وفي أي وقت خلال أي عمل مع أمازون.</p>",
+      "value" : "<p><b>كاليفورنيا:</b> ستتلقى إفصاح كاليفورنيا بخصوص تقرير المستهلك الاستقصائي بصورة منفصلة (\"إفصاح كاليفورنيا\"). هذه وثيقة مهمة؛ يرجى مراجعتها بعناية. أيضا، انقر على <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> إذا كنت تبحث عن وظيفة في سان فرانسيسكو أو كنت تعمل بالفعل لدى شركة فيها. بموجب التوقيع أدناه، وعملاً بقانون كاليفورنيا وإفصاح كاليفورنيا، فإنك تفوّض أمازون للحصول على تقرير المستهلك الاستقصائي، والذي يُعرف أيضًا باسم فحص الخلفية، سواء الآن وفي أيّ وقت خلال أيّ وظيفة لدى أمازون.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>مينيسوتا: </b>لديك الحق في تقديم طلب خطي إلى CRA للإفصاح الكامل والدقيق عن طبيعة ونطاق أي تقرير مستهلك تم طلبه عنك. يجب على CRA تزويدك بالإفصاح في غضون خمسة أيام عمل بعد استلامها لطلبك أو عند طلب التقرير، أيهما متأخراً.</p>",
+      "value" : "<p><b>مينيسوتا: </b>لديك الحق في تقديم طلب خطي إلى CRA للإفصاح الكامل والدقيق عن طبيعة ونطاق أيّ تقرير مستهلك تم طلبه عنك. يجب على CRA تزويدك بالإفصاح في غضون خمسة أيام عمل من استلامها لطلبك أو من تاريخ طلب التقرير، أيهما أبعد.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>مينيسوتا: </b>لديك الحق في تقديم طلب خطي إلى CRA للإفصاح الكامل والدقيق عن طبيعة ونطاق أي تقرير مستهلك تم طلبه عنك. يجب على CRA تزويدك بالإفصاح في غضون خمسة أيام عمل بعد استلامها لطلبك أو عند طلب التقرير، أيهما متأخراً.</p>",
+      "value" : "<p><b>مينيسوتا: </b>لديك الحق في تقديم طلب خطي إلى CRA للإفصاح الكامل والدقيق عن طبيعة ونطاق أيّ تقرير مستهلك تم طلبه عنك. يجب على CRA تزويدك بالإفصاح في غضون خمسة أيام عمل من استلامها لطلبك أو من تاريخ طلب التقرير، أيهما أبعد.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان CRA ورقم هاتفها. لديك الحق في الاتصال بأي CRA لفحص أو استلام نسخة من أي تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح بمدينة نيويورك.</p>",
+      "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان CRA ورقم هاتفها. لديك الحق في الاتصال بأيّ جهة CRA لفحص أو استلام نسخة من أيّ تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح الخاص بولاية نيويورك.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
-      "value" : "<p><b>جميع الولايات: </b>سنزودك بنسخة مجانية من أي فحص للمعلومات الأساسية إذا قمت بتحديد هذا المربع",
+      "value" : "<p><b>جميع الولايات: </b>سنزوّدك بنسخة مجانية من أيّ فحص للخلفية إذا قمت بتحديد هذا المربع",
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
-      "value" : "<p><b>جميع الولايات: </b>سنزودك بنسخة مجانية من أي فحص للمعلومات الأساسية إذا قمت بتحديد هذا المربع</p>",
+      "value" : "<p><b>جميع الولايات: </b>سنزوّدك بنسخة مجانية من أيّ فحص للخلفية إذا قمت بتحديد هذا المربع</p>",
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "الرجاء إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
+      "value" : "يرجى إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
@@ -505,7 +505,7 @@
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "الرجاء إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
+      "value" : "يرجى إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
@@ -513,7 +513,7 @@
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "الرجاء إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
+      "value" : "يرجى إدخال الاسم القانوني بالكامل المستخدم سابقًا بالتنسيق التالي: الاسم الأول الاسم الأخير",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
@@ -525,7 +525,7 @@
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
-      "value" : "هل سبق لك أن عملت في مبنى أمازون؟",
+      "value" : "هل سبق لك أن عملت في أحد مباني أمازون؟",
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
@@ -545,35 +545,35 @@
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
-      "value" : "الرجاء إدخال مبنى أمازون صحيح",
+      "value" : "يرجى إدخال مبنى صالح في أمازون",
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "مواعيد العمل - من/إلى (شهر/سنة - شهر/سنة)",
+      "value" : "تواريخ التوظيف - من/إلى (شهر/سنة - شهر/سنة)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "الرجاء إدخال مبنى أمازون صحيح",
+      "value" : "يرجى إدخال مبنى صالح في أمازون",
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
-      "value" : "ليس لدي رقم ضمان اجتماعي",
+      "value" : "ليس لديّ رقم ضمان اجتماعي",
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
-      "value" : "هل ترغب بالتأكيد في المتابعة بدون رقم الضمان الاجتماعي(SSN)؟",
+      "value" : "هل ترغب بالتأكيد في المتابعة بدون رقم الضمان الاجتماعي (SSN)؟",
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "إذا كان لديك رقم ضمان اجتماعي(SSN)، فأنت مطالب بتوفيره. يمكن أن يؤدي عدم القيام بذلك إلى تأخير عملية التوظيف مما قد يؤدي إلى فقدان تاريخ البدء الخاص بك وفقدان مناوبة العمل التي حددتها.",
+      "value" : "إذا كان لديك رقم ضمان اجتماعي (SSN)، فأنت مطالَب بتقديمه. يمكن أن يؤدي عدم القيام بذلك إلى تأخير عملية التوظيف، ما قد يؤدي إلى فوات تاريخ البدء الخاص بك وفوات مناوبة العمل التي حددتها.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "من خلال الاستمرار، أؤكد أنه ليس لدي رقم ضمان اجتماعي.  أفهم أنه، وفقًا لما يسمح به القانون، ستُجري أمازون فحصًا للمعلومات الأساسية الخاصة بي على سبيل المتابعة إذا قمت بتغيير أو تحديث رقم الضمان الاجتماعي الخاص بي(SSN) أثناء عملية الإعداد أو أثناء عملي.",
+      "value" : "من خلال الاستمرار، أؤكد أنه ليس لديّ رقم ضمان اجتماعي.  أفهم أنه، وفقًا لما يسمح به القانون، ستُجري أمازون فحصًا للخلفية الخاصة بي على سبيل المتابعة إذا قمت بتغيير أو تحديث رقم الضمان الاجتماعي الخاص بي (SSN) أثناء عملية الإعداد أو أثناء وجودي في الوظيفة.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "أقر أيضًا بأن أي تزييف متعمد لرقم الضمان الاجتماعي الخاص بي(SSN) سوف تنظر فيه أمازون، الأمر الذي قد يؤدي إلى إلغاء عرض العمل الخاص بي، أو إنهاء عملي إذا ما كان قد تم تعييني.",
+      "value" : "أقرّ أيضًا بأن أيّ تزييف متعمد لرقم الضمان الاجتماعي الخاص بي (SSN) سوف تنظر فيه أمازون، الأمر الذي قد يؤدي إلى إلغاء عرض العمل الخاص بي، أو إنهاء عملي إذا ما كان قد تم تعييني.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
@@ -593,7 +593,7 @@
       "note" : "Text display on national id number input when user check no ssn checkbox"
     },
     "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
-      "value" : "قم بتقديم توقيع إلكتروني",
+      "value" : "تقديم توقيع إلكتروني",
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
@@ -601,7 +601,7 @@
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
-      "value" : "يرجى مراجعة الإشعار (الإشعارات) المعمول بها أدناه.",
+      "value" : "يرجى مراجعة الإشعارات المعمول بها أدناه.",
       "note" : "Text for the non fcra State specific notices review text"
     },
     "BB-BGC-non-fcra-esignature-certification-form-title" : {
@@ -609,15 +609,15 @@
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أشهد بأنني قد قرأت، وفهمت وقبلت جميع البيانات الواردة في إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص البيانات الأساسية. يرجى تأكيد موافقتك عن طريق إدخال المعلومات المطلوبة في الحقول أدناه.",
+      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقرّ بأنني قد قرأت وفهمت وقبلت جميع البيانات الواردة في إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص الخلفية. يرجى تأكيد موافقتك عن طريق إدخال المعلومات المطلوبة في الحقول أدناه.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
-      "value" : "يرجى كتابة اسمك بالكامل بصيغة توقيع إلكتروني",
+      "value" : "يرجى كتابة اسمك الكامل بصيغة توقيع إلكتروني",
       "note" : "Text for the non fcra acknowledgement and authorization input label text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
-      "value" : "لا تتطابق التوقيعات الإلكترونية. يرجى استخدام نفس النص لكل توقيع إلكتروني.",
+      "value" : "لا تتطابق التوقيعات الإلكترونية. يرجى استخدام النص نفسه في كل توقيع إلكتروني.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
@@ -625,15 +625,15 @@
       "note" : "Text for the non fcra form page next button text"
     },
     "BB-BGC-non-fcra-applicable-notice-text" : {
-      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقر بأنني قرأت وفهمت أي ملاحظات للولاية المعمول بها بما في ذلك الارتباطات التشعبية.",
+      "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقرّ بأنني قرأت وفهمت أيّ إشعارات معمول بها للولاية بما في ذلك الارتباطات التشعبية.",
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
-      "value" : "يرجى كتابة اسمك بالكامل بصيغة توقيع إلكتروني",
+      "value" : "يرجى كتابة اسمك الكامل بصيغة توقيع إلكتروني",
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "أرغب في الحصول على نسخة مجانية من فحص المعلومات الأساسية الخاصة بي",
+      "value" : "أرغب في الحصول على نسخة مجانية من فحص الخلفية الخاص بي",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
@@ -645,7 +645,7 @@
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
-      "value" : "رجوع إلى لوحة السجل",
+      "value" : "الرجوع إلى لوحة السجل",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
     "BB-SelfId-disability-form-name-text" : {
@@ -653,11 +653,11 @@
       "note" : "Text for Self Identification form name"
     },
     "BB-SelfId-disability-form-control-number-text" : {
-      "value" : "رقم مراقبة OMB هو 1250-0005",
+      "value" : "الرقم المرجعي من مكتب OMB هو ‎1250-0005",
       "note" : "Text for Self Identification control number"
     },
     "BB-SelfId-disability-form-expiration-date-text" : {
-      "value" : "تنتهي الصلاحية في 31/5/2023",
+      "value" : "تنتهي الصلاحية في 31/05/2023",
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
@@ -665,11 +665,11 @@
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "نعمل كمتعهد فيدرالي أو متعهد فرعي على النحو المطلوب بموجب القانون لتوفير فرص عمل متساوية للأشخاص المؤهلين ذوي الإعاقة. نحن مطالبون أيضًا بقياس مدى تقدمنا نحو جعل 7% على الأقل من القوى العاملة لدينا أفرادًا من ذوي الإعاقة. للقيام بذلك، يتعين علينا أن نسأل المتقدمين والموظفين إذا كانت لديهم إعاقة أو كانوا يعانون من إعاقة في أي وقت مضى. نظرًا لأن الشخص قد يصبح معاقًا في أي وقت، فإننا نطلب من جميع موظفينا تحديث معلوماتهم كل خمس سنوات على الأقل.",
+      "value" : "نعمل كجهة تعاقد من الظاهر أو الباطن مع الحكومة الفيدرالية وبموجب القانون نلتزم بتوفير فرص عمل متكافئة للأشخاص المؤهلين ذوي الإعاقة. نحن مطالبون أيضًا بقياس مدى تقدمنا نحو شغل ذوي الإعاقة لنسبة 7% على الأقل من قوة العمل لدينا. للقيام بذلك، يتعين علينا أن نسأل المتقدمين والموظفين إذا كانت لديهم إعاقة أو كانوا يعانون من إعاقة في أيّ وقت مضى. نظرًا لأن الشخص قد يصبح معاقًا في أيّ وقت، فإننا نطلب من جميع موظفينا تحديث معلوماتهم كل خمس سنوات على الأقل.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "إن تعريف نفسك كفرد من ذوي الإعاقة أمر طوعي، ونأمل أن تختار القيام بذلك. سيتم الحفاظ على سرية إجابتك ولن يتم رؤيتها بواسطة مسؤولين الاختيار أو أي شخص آخر يشارك في اتخاذ قرارات تتعلق بالموظفين. إكمال النموذج لن يؤثر سلبًا عليك بأي شكل من الأشكال، بغض النظر عما إذا كنت قد حددت هويتك في الماضي. لمزيد من المعلومات حول هذا النموذج أو التزامات التوظيف المتساوية للمتعهدين الفيدراليين بموجب البند 503 من قانون إعادة التأهيل، قم بزيارة الولايات المتحدة. موقع برامج الامتثال للعقود الفيدرالية التابع لوزارة العمل الأمريكية (OFCCP) على <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "إن تعريف نفسك كفرد من ذوي الإعاقة أمر طوعي، ونأمل أن تختار القيام بذلك بنفسك. سيتم الحفاظ على سرية إجابتك ولن يتمكّن من الاطّلاع عليها المسؤولون عن اختيار المرشّحين للوظائف أو أيّ شخص آخر يشارك في اتخاذ قرارات تتعلق بالموظفين. إكمال النموذج لن يؤثر سلبًا عليك بأيّ شكل من الأشكال، بغض النظر عما إذا كنت قد اخترت تعريف ذاتك في الماضي. لمزيد من المعلومات حول هذا النموذج أو التزامات تكافؤ فرص العمل لدى المتعاقدين مع الحكومة الفيدرالية بموجب البند 503 من قانون إعادة التأهيل، يمكنك زيارة موقع برامج الامتثال للعقود الفيدرالية التابع لوزارة العمل الأمريكية (OFCCP) على <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -677,11 +677,11 @@
       "note" : "Text for how I know I have disability header"
     },
     "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
-      "value" : "تعتبر من ذوي الإعاقة إذا كنت تعاني من اعتلال جسدي أو عقلي أو حالة طبية تحد بشكل كبير من نشاط الحياة الرئيسي، أو إذا كان لديك تاريخ أو سجل لمثل هذا الاعتلال أو الحالة الطبية.",
+      "value" : "تعتبر من ذوي الإعاقة إذا كنت تعاني من اعتلال جسدي أو عقلي أو حالة طبية تحد بشكل كبير من أحد الأنشطة الأساسية للحياة، أو إذا كان لديك تاريخ أو سجلّ لمثل هذا الاعتلال أو الحالة الطبية.",
       "note" : "Text for how I know I have disability content"
     },
     "BB-SelfId-disability-form-disability-scope-list-header-text" : {
-      "value" : "تشمل الإعاقات، ولكن لا تقتصر على:",
+      "value" : "تشمل الإعاقات ما يلي، على سبيل المثال لا الحصر:",
       "note" : "Text for the disability scope/type list header text"
     },
     "BB-SelfId-disability-form-disability-item-autism-text" : {
@@ -693,15 +693,15 @@
       "note" : "Text for the disability item: Autoimmune disorder"
     },
     "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
-      "value" : "كفيف أو ضعيف البصر",
+      "value" : "كفيف أو مصاب بضعف بصر",
       "note" : "Text the disability item: Blind or low vision"
     },
     "BB-SelfId-disability-form-disability-item-cancer-text" : {
-      "value" : "السرطان",
+      "value" : "سرطان",
       "note" : "Text for the disability item: Cancer text"
     },
     "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
-      "value" : "أمراض القلب والأوعية الدموية للقلب",
+      "value" : "أمراض القلب والأوعية الدموية",
       "note" : "Text for the disability item: Cardiovascular or heart disease"
     },
     "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
@@ -709,15 +709,15 @@
       "note" : "Text for the disability item: Celiac disease"
     },
     "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
-      "value" : "الشلل الدماغي",
+      "value" : "شلل دماغي",
       "note" : "Text for the disability item: Cerebral palsy"
     },
     "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
-      "value" : "الصم أو ضعاف السمع",
+      "value" : "أصمّ أو من ضعاف السمع",
       "note" : "Text for the disability item: Deaf or hard of hearing"
     },
     "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
-      "value" : "الاكتئاب أو القلق",
+      "value" : "اكتئاب أو قلق",
       "note" : "Text for the disability item: Depression or anxiety"
     },
     "BB-SelfId-disability-form-disability-item-diabetes-text" : {
@@ -725,7 +725,7 @@
       "note" : "Text for the disability item: Diabetes"
     },
     "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
-      "value" : "الصرع",
+      "value" : "صرَع",
       "note" : "Text for the disability item: Epilepsy"
     },
     "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
@@ -733,23 +733,23 @@
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
-      "value" : "الإعاقة الذهنية",
+      "value" : "إعاقة ذهنية",
       "note" : "Text for the disability item: Intellectual disability"
     },
     "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
-      "value" : "الأطراف المفقودة أو الأطراف المفقودة جزئيًا",
+      "value" : "أطراف مفقودة أو أطراف مفقودة جزئيًا",
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "حالة الجهاز العصبي، على سبيل المثال: الصداع النصفي، أو مرض باركنسون، أو التصلب العصبي المتعدد (MS)",
+      "value" : "حالة جهاز عصبي، على سبيل المثال: الصداع النصفي، أو مرض باركنسون، أو التصلب العصبي المتعدد (MS)",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
-      "value" : "الحالة النفسية، على سبيل المثال، الاضطراب ثنائي القطب، الفصام، اضطراب ما بعد الصدمة، أو الاكتئاب الشديد",
+      "value" : "حالة نفسية، على سبيل المثال، الاضطراب ثنائي القطب، أو الفصام، أو اضطراب ما بعد الصدمة، أو الاكتئاب الشديد",
       "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
     },
     "BB-SelfId-disability-form-card-title-text" : {
-      "value" : "التعريف الذاتي الطوعي للإعاقة",
+      "value" : "التعريف الذاتي الطوعي المتعلق بالإعاقة",
       "note" : "Text for the disability form card title"
     },
     "BB-SelfId-form-continue-button-text" : {
@@ -757,7 +757,7 @@
       "note" : "Text for the Self Identification page form continue button text"
     },
     "BB-SelfId-disability-form-submit-button-text" : {
-      "value" : "تقديم",
+      "value" : "إرسال",
       "note" : "Text for the submit disability form submit button text"
     },
     "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
@@ -765,11 +765,11 @@
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "نعم، لدي إعاقة، أو لدي تاريخ/سجل يتعلق بوجود إعاقة",
+      "value" : "نعم، لديّ إعاقة، أو لديّ تاريخ/سجل يتعلق بوجود إعاقة",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "لا، ليس لدي إعاقة، أو لدي تاريخ/سجل يتعلق بوجود إعاقة",
+      "value" : "لا، ليس لديّ إعاقة أو تاريخ/سجل يتعلق بوجود إعاقة",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
@@ -781,7 +781,7 @@
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
-      "value" : "وفقًا لقانون تخفيض الأعمال الورقية لعام 1995 لا يُطلب من أي شخص الرد على مجموعة من المعلومات ما لم تظهر هذه المجموعة رقم مراقبة OMB صالحًا. قد يستغرق هذا الاستبيان حوالي 5 دقائق لإكماله.",
+      "value" : "وفقًا لقانون تخفيض الأعمال الورقية لعام 1995 لا يُطلب من أيّ شخص الرد على جمع معلومات ما لم تعرض عملية جمع المعلومات رقمًا مرجعيًا صالحًا من مكتب الإدارة والميزانية (OMB). قد يستغرق ملء هذا الاستبيان حوالي 5 دقائق.",
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
@@ -789,7 +789,7 @@
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "تُقدِر أمازون جميع أشكال التنوع وتخضع لبعض متطلبات عدم التمييز وحفظ سجلات العمل الإيجابي وتقديم التقارير وهو ما يتطلب منا دعوة المرشحين والموظفين لتحديد جنسهم وعرقهم/أصلهم طواعية بأنفسهم. تقديم هذه المعلومات هو أمر طوعي، كما أن رفض تقديمها لن يعرضك لأي معاملة سلبية. سيتم الحفاظ على سرية المعلومات التي تم الحصول عليها ولا يجوز استخدامها إلا وفقًا لأحكام القوانين الفيدرالية المعمول بها، والأوامر التنفيذية، واللوائح، بما في ذلك تلك التي تتطلب تلخيص المعلومات وإبلاغ الحكومة الفيدرالية بها لأغراض إنفاذ الحقوق المدنية. إذا اخترت عدم تحديد جنسك أو عرقك/أصلك في هذا الوقت، فإن الحكومة الفيدرالية تطلب منا تحديد هذه المعلومات للموظفين عن طريق المسح البصري و/أو المعلومات الأخرى المتاحة.",
+      "value" : "تُقدِّر أمازون جميع أشكال التنوع وتخضع لبعض متطلبات التسجيل وإعداد التقارير الخاصة بعدم التمييز والإجراءات الإيجابية، وهو ما يتطلب منا دعوة المرشحين والموظفين لإجراء تعريف ذاتي بأنفسهم من حيث الجنس والعرق/الأصل طواعية. تقديم هذه المعلومات هو أمر طوعي، كما أن رفض تقديمها لن يعرّضك لأيّ معاملة سيئة. سيتم الحفاظ على سرية المعلومات عند الحصول عليها ولا يجوز استخدامها إلا وفقًا لأحكام القوانين الفيدرالية المعمول بها، والأوامر التنفيذية، واللوائح، بما في ذلك تلك التي تتطلب تلخيص المعلومات وإبلاغ الحكومة الفيدرالية بها لأغراض إنفاذ الحقوق المدنية. إذا اخترت عدم تعريف ذاتك من حيث الجنس أو العرض/الأصل في الوقت الحالي، فإن الحكومة الفيدرالية تطلب منا تحديد هذه المعلومات للموظفين عن طريق المسح البصري و/أو المعلومات الأخرى المتاحة.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -805,7 +805,7 @@
       "note" : "Text for the equal opportunity form gender option: Female"
     },
     "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
-      "value" : "اختار عدم تعريف الذات",
+      "value" : "لا أريد تعريف ذاتي",
       "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
@@ -813,11 +813,11 @@
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
-      "value" : "الهنود الأمريكيين/سكان ألاسكا الأصليين (ليس من أصل إسباني أو لاتيني)",
+      "value" : "الهنود الأمريكيون/سكان ألاسكا الأصليون (ليس من أصل إسباني أو لاتيني)",
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "الأشخاص الذين لديهم أصول في أي من الشعوب الأصلية لأمريكا الشمالية والجنوبية، (بما في ذلك أمريكا الوسطى)، والذين يحتفظون بالانتماء القبلي أو الارتباط المجتمعي",
+      "value" : "الأشخاص الذين لديهم أصول تعود إلى أيٍّ من الشعوب الأصلية لأمريكا الشمالية والجنوبية، (بما في ذلك أمريكا الوسطى)، والذين يحتفظون بالانتماء القبلي أو الارتباط المجتمعي",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
@@ -825,15 +825,15 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "الأشخاص الذين لديهم أصول في أي من الشعوب الأصلية لمنطقة الشرق الأقصى، أو جنوب شرق آسيا، أو شبه القارة الهندية؛ بما في ذلك على سبيل المثال، كمبوديا، والصين، والهند، واليابان، وكوريا، وماليزيا، وباكستان، وجزر الفلبين، وتايلاند، وفيتنام",
+      "value" : "الأشخاص الذين لديهم أصول في أيّ من الشعوب الأصلية لمنطقة الشرق الأقصى، أو جنوب شرق آسيا، أو شبه القارة الهندية؛ بما في ذلك على سبيل المثال، كمبوديا، والصين، والهند، واليابان، وكوريا، وماليزيا، وباكستان، وجزر الفلبين، وتايلاند، وفيتنام",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
-      "value" : "أسود/أمريكي من أصل أفريقي (ليس من أصل إسباني أو لاتيني)",
+      "value" : "أمريكي ببشرة سوداء/من أصل أفريقي (ليس من أصل إسباني أو لاتيني)",
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "الأشخاص الذين تعود أصولهم إلى أي من المجموعات العرقية السوداء في إفريقيا",
+      "value" : "الأشخاص الذين تعود أصولهم إلى أيّ من المجموعات العرقية ذات البشرة السوداء في أفريقيا",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
@@ -841,15 +841,15 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
-      "value" : "الأشخاص أصحاب الثقافة أو الأصل الذي يرجع إلى كوبا، أو المكسيك، أو بورتوريكو، أو أمريكا الجنوبية أو الوسطى، أو أي ثقافة أو أصل إسباني آخر، بغض النظر عن العرق",
+      "value" : "الأشخاص الذين ينحدرون من ثقافات أو أصول في كوبا، أو المكسيك، أو بورتوريكو، أو أمريكا الجنوبية أو الوسطى، أو أيّ ثقافة أو أصل إسباني آخر، بغض النظر عن العرق",
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
-      "value" : "السكان الأصليون في هاواي /جزر المحيط الهادئ الأخرى (غير إسباني أو لاتيني)",
+      "value" : "السكان الأصليون في هاواي/جزر المحيط الهادئ الأخرى (غير إسباني أو لاتيني)",
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
-      "value" : "الأشخاص الذين تعود أصولهم إلى أي من شعوب هاواي أو غوام أو ساموا أو جزر المحيط الهادئ الأخرى",
+      "value" : "الأشخاص الذين لديهم أصول تعود لأيٍّ من شعوب هاواي أو غوام أو ساموا أو جزر المحيط الهادئ الأخرى",
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
@@ -857,7 +857,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
-      "value" : "الأشخاص الذين لديهم أصول في أي من الشعوب الأصلية بأوروبا، أو الشرق الأوسط أو شمال إفريقيا",
+      "value" : "الأشخاص الذين لديهم أصول تعود لأيٍّ من الشعوب الأصلية بأوروبا أو الشرق الأوسط أو شمال إفريقيا",
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
@@ -865,11 +865,11 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "الأشخاص غير الإسبان الذين يُعرفون بأكثر من واحد من الأعراق الخمسة التالية: (1) أبيض، (2) أسود، (3) آسيوي، (4) السكان الأصليين لهاواي/جزر المحيط الهادئ الأخرى، (5) الهنود الأمريكيين/سكان ألاسكا الأصليين",
+      "value" : "الأشخاص غير الإسبان الذين يُعرفون بأكثر من واحد من الأعراق الخمسة التالية: (1) أبيض، (2) أسود، (3) آسيوي، (4) السكان الأصليون لهاواي/جزر المحيط الهادئ الأخرى، (5) الهنود الأمريكيون/سكان ألاسكا الأصليون",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
-      "value" : "اختار عدم تعريف الذات",
+      "value" : "لا أريد تعريف ذاتي",
       "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
@@ -877,11 +877,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "في أمازون، يتولى الآلاف من المحاربين القدامى والأزواج العسكريين قيادة الابتكار ورفع مستوى تجربة العملاء. على أساس يومي، أولئك الذين لديهم خلفيات عسكرية قادرون على تطبيق معارفهم، ومهاراتهم، وقدراتهم القيادية في مجموعة واسعة من المهن– مما يُحدث تغييرًا في جميع أنحاء العالم. لهذه الأسباب، نتابع بنشاط توظيف المحاربين القدامى والأزواج العسكريين.",
+      "value" : "في أمازون، يساهم الآلاف من أزواج المحاربين القدامى والعسكريين في تعزيز الابتكار ورفع مستوى تجربة العملاء. يثبت أولئك الذين لديهم خلفيات عسكرية قدرتهم كل يوم على تطبيق خبراتهم، ومهاراتهم، وقدراتهم القيادية في مجموعة متنوعة من المهن - ما يساهم في إحداث التغيير المنشود حول العالم. لهذه الأسباب، نحرص على مواصلة توظيف أزواج المحاربين القدامى والعسكريين.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "في أمازون، يتولى الآلاف من المحاربين القدامى والأزواج العسكريين قيادة الابتكار ورفع مستوى تجربة العملاء. على أساس يومي، أولئك الذين لديهم خلفيات عسكرية قادرون على تطبيق معارفهم، ومهاراتهم، وقدراتهم القيادية في مجموعة واسعة من المهن– مما يُحدث تغييرًا في جميع أنحاء العالم. لهذه الأسباب، نتابع بنشاط توظيف المحاربين القدامى والأزواج العسكريين.",
+      "value" : "في أمازون، يساهم الآلاف من أزواج المحاربين القدامى والعسكريين في تعزيز الابتكار ورفع مستوى تجربة العملاء. يثبت أولئك الذين لديهم خلفيات عسكرية قدرتهم كل يوم على تطبيق خبراتهم، ومهاراتهم، وقدراتهم القيادية في مجموعة متنوعة من المهن - ما يساهم في إحداث التغيير المنشود حول العالم. لهذه الأسباب، نحرص على مواصلة توظيف أزواج المحاربين القدامى والعسكريين.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -897,11 +897,11 @@
       "note" : "Text for the equal opportunity form veteran status item: NO"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
-      "value" : "اختار عدم تعريف الذات",
+      "value" : "لا أريد تعريف ذاتي",
       "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
-      "value" : "هل أنت زوج(ة) عسكري(ة)؟",
+      "value" : "هل أنت من أزواج العسكريين؟",
       "note" : "Text for the equal opportunity form : military spouse label text"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
@@ -913,35 +913,35 @@
       "note" : "Text for the equal opportunity form military-spouse item: NO"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
-      "value" : "اختار عدم تعريف الذات",
+      "value" : "لا أريد تعريف ذاتي",
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "أمازون هي متعهد حكومي فيدرالي تخضع لقانون مساعدات إعادة التكيف للمحاربين القدامى في حقبة فيتنام لعام 1974، بصيغته المعدلة بموجب قانون وظائف المحاربين القدامى لعام 2002، <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'>38 U.S.C.4212</a> (VEVRAA)، والذي يتطلب من المتعهدين الحكوميين اتخاذ إجراءات إيجابية للتوظيف والتقدم في توظيف (1) المحاربين القدامى المعاقين؛ و(2) المحاربين القدامى المنفصلين مؤخرًا؛ و(3) المحاربين القدامى الذين قاموا بالخدمة في زمن الحرب أو حاملو شارة الحملة؛ و(4) المحاربين القدامى حاملو ميدالية خدمة القوات المسلحة. يتم إجراء الدعوة التالية للتعريف الذاتي لحالة المحاربين القدامى المحميين الخاصة بك وفقًا للبند 4212. الإفصاح عن هذه المعلومات هو أمر طوعي تمامًا، كما أن رفض تقديمها لن يعرضك لأي معاملة سلبية.",
+      "value" : "أمازون هي جهة متعاقدة مع الحكومة الفيدرالية وتخضع لقانون مساعدات إعادة التكيف للمحاربين القدامى في حقبة فيتنام لعام 1974، بصيغته المعدلة بموجب قانون وظائف المحاربين القدامى لعام 2002، <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> ‏(VEVRAA)، والذي يتطلب من الجهات المتعاقدة مع الحكومة اتخاذ إجراءات إيجابية للتوظيف والترقية في وظائف (1) المحاربين القدامى المعاقين؛ (2) والمحاربين القدامى المنفصلين مؤخرًا؛ (3) والمحاربين القدامى الذين قاموا بالخدمة في زمن الحرب أو حاملي شارة حملة؛ (4) والمحاربين القدامى الحاصلين على ميدالية خدمة القوات المسلحة. يتم تقديم الدعوة التالية إليك لتعريف ذاتك من حيث حالة المحاربين القدامى الذين يتمتعون بالحماية، وذلك بموجب البند 4212. الإفصاح عن هذه المعلومات هو أمر طوعي تمامًا، كما أن رفض تقديمها لن يعرضك لأيّ معاملة سيئة.",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
-      "value" : "<b>المحارب القديم المحمي</b> هو أي شخص مما يلي:",
+      "value" : "<b>المحارب القديم الذي يتمتع بحماية</b> هو أيّ شخص مما يلي:",
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>المحارب القديم المعاق</b>: المحارب القديم الذي أدى الخدمة العسكرية سواء في القوات البرية أو البحرية أو الجوية الأمريكية الذي يحق له الحصول على تعويض (أو الشخص الذي لولا حصوله على أجر متقاعد عسكري يحق له الحصول على تعويض) بموجب القوانين التي يديرها وزير شؤون المحاربين القدامى؛ أو الشخص الذي تم إخراجه أو إعفاؤه من الخدمة الفعلية بسبب إعاقة مرتبطة بالخدمة.",
+      "value" : "<b>محارب قديم معاق</b>: هو محارب قديم أدى الخدمة العسكرية سواء في القوات البرية أو البحرية أو الجوية الأمريكية ويحق له الحصول على تعويض (أو شخص لولا حصوله على أجر متقاعد عسكري يحق له الحصول على تعويض) بموجب القوانين التي يديرها وزير شؤون المحاربين القدامى؛ أو شخص تم إخراجه أو إعفاؤه من الخدمة الفعلية بسبب إعاقة مرتبطة بالخدمة.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: أي محارب قديم خلال فترة الثلاث سنوات التي تبدأ من تاريخ خروج هذا المحارب القديم أو إعفائه من الخدمة الفعلية في الخدمة العسكرية الأمريكية سواء في، القوات البرية، أو البحرية، أو الجوية.",
+      "value" : "</b>: أيّ محارب قديم خلال فترة الثلاث سنوات التي تبدأ من تاريخ خروج هذا المحارب القديم أو إعفائه من الخدمة الفعلية في الخدمة العسكرية الأمريكية سواء في القوات البرية، أو البحرية، أو الجوية الأمريكية.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>المحاربون القدامى في الخدمة الفعلية في زمن الحرب أو حاملو شارة الحملة</b>: المحارب القديم الذي أدى الخدمة الفعلية تحت شارة الولايات المتحدة يتم التصريح له بموجب القوانين التي تديرها وزارة الدفاع.",
+      "value" : "<b>المحاربون القدامى في الخدمة الفعلية في زمن الحرب أو حاملو شارة حملة</b>: المحارب القديم الذي أدى الخدمة الفعلية تحت شارة الولايات المتحدة يتم التصريح له بموجب القوانين التي تديرها وزارة الدفاع.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
-      "value" : "<b>المحارب القديم الحائز على ميدالية خدمة القوات المسلحة</b>: المحارب القديم الذي، شارك في عملية عسكرية للولايات المتحدة أثناء الخدمة الفعلية في الجيش الأمريكي سواء في القوات البرية، أو البحرية، أو الجوية وحصل بسبب ذلك على ميدالية خدمة القوات المسلحة وفقًا لـ<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>الأمر التنفيذي</a>.",
+      "value" : "<b>المحارب القديم الحائز على ميدالية خدمة القوات المسلحة</b>: المحارب القديم الذي شارك في عملية عسكرية للولايات المتحدة أثناء الخدمة الفعلية في الجيش الأمريكي سواء في القوات البرية، أو البحرية، أو الجوية وحصل بسبب ذلك على ميدالية خدمة القوات المسلحة وفقًا <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>للأمر التنفيذي</a>.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
-      "value" : "إذا كنت تعتقد أنك تنتمي إلى أي فئة من فئات المحاربين القدامى المحميين، فيرجى الإشارة إلى ذلك عن طريق تحديد المربع المناسب أدناه.",
+      "value" : "إذا كنت تعتقد أنك تنتمي إلى أيّ فئة من فئات المحاربين القدامى الذين يتمتعون بحماية، فيرجى الإشارة إلى ذلك عن طريق تحديد المربع المناسب أدناه.",
       "note" : "Text for the protected veteran select form label text"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
@@ -953,7 +953,7 @@
       "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
-      "value" : "اختار عدم تعريف الذات",
+      "value" : "لا أريد تعريف ذاتي",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
@@ -965,7 +965,7 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "فيما يتعلق بعملي المحتمل مع Amazon.com, Inc. أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\")، قد تحصل أمازون على تقرير المستهلك الاستقصائي (\"التقرير\")، والذي يُعرف أيضًا باسم فحص المعلومات الأساسية، عني من وكالة إعداد تقارير المستهلك التالية:",
+      "value" : "فيما يتعلق بوظيفتي المحتمَلة مع Amazon.com, Inc.‎ أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\")، قد تحصل أمازون على تقرير المستهلك الاستقصائي (\"التقرير\")، والذي يُعرف أيضًا باسم فحص الخلفية، عنّي من هيئة إعداد تقارير المستهلك التالية:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -973,11 +973,11 @@
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
-      "value" : "7515 طريق مركز إيرفاين.",
+      "value" : "7515 Irvine Center Dr.",
       "note" : "Text for the california disclosure page vendor accurate address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
-      "value" : "إرفاين، كاليفورنيا 92618",
+      "value" : "Irvine, CA 92618",
       "note" : "Text for the california disclosure page vendor accurate address line 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
@@ -989,27 +989,27 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "أفهم ما يلي:",
+      "value" : "أَفهم ما يلي:",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
-      "value" : "إلى الحد الذي يتم فيه طلب تقرير من Accurate، يتم استخدام المعلومات الواردة في هذا التقرير لتحديد أهليتي للعمل فقط.",
+      "value" : "إلى الحد الذي يتعيّن به على Accurate تقديم تقرير، يمكن استخدام المعلومات الواردة في هذا التقرير لتحديد أهليتي للعمل فقط.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "يمكن الحصول على المعلومات التي حصلت عليها شركة Accurate، والمدرجة في أي تقرير، من خلال مجموعة متنوعة من الوسائل، بما في ذلك فحص الوثائق والمعلومات المتاحة بشكل قانوني و/أو الاتصال المباشر أو غير المباشر والمقابلات مع أصحاب العمل السابقين، والمدارس، والمؤسسات المالية، والمُلّاك، والوكالات العامة، وغيرهم مثل جيراني، وأصدقائي، وزملائي الذين أعرفهم والذين قد يكون لديهم مثل هذه المعرفة.",
+      "value" : "يمكن من خلال مجموعة متنوعة من الوسائل الحصول على المعلومات التي حصلت عليها شركة Accurate والمدرجة في أيّ تقرير، ومن بين هذه الوسائل فحص الوثائق والمعلومات المتاحة بشكل قانوني و/أو الاتصال المباشر أو غير المباشر والمقابلات مع أصحاب العمل السابقين، والمدارس، والمؤسسات المالية، وأصحاب العقارات، والوكالات العامة، وغيرهم مثل جيراني، وأصدقائي، وزملائي الذين أعرفهم والذين قد تكون لديهم مثل هذه المعرفة.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "قد يتضمن التحقيق (التحقيقات) الذي ستجريه شركة Accurate، والذي قد يتم تضمين نتائجه في أي تقرير يتم تقديمه إلى أمازون، أنواعًا مختلفة من المعلومات الخاصة بي فيما يتعلق بشخصيتي، أو سمعتي العامة، أو سماتي الشخصية، أو نمط معيشتي، أو سجل التوظيف والعمل الخاص بي، أو التعليم، أو سجل القيادة، أو السجل الجنائي، مع مراعاة أي قيود يفرضها القانون الفيدرالي وقانون الولاية المعمول به.",
+      "value" : "إنّ التحقيقات التي ستجريها شركة Accurate والتي قد يحتوي أي تقرير تقدّمه أمازون على نتائجها، قد تشمل أيضًا أنواعًا مختلفة من المعلومات الخاصة بي فيما يتعلق بشخصيتي، أو سمعتي العامة، أو سماتي الشخصية، أو نمط معيشتي، أو سجل التوظيف والعمل الخاص بي، أو التعليم الذي حصلت عليه، أو سجل القيادة، أو السجل الجنائي، مع مراعاة أيّ قيود يفرضها القانون الفيدرالي وقانون الولاية المعمول به.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "وفقًا للقانون المدني لولاية كاليفورنيا § 1785 وما يليه. و§ 1786 وما يليه، إذا طلبت أمازون أي تقرير عني، فقد أقوم بعرض الملف الخاص بي الذي تحتفظ به Accurate خلال ساعات عملها العادية. أفهم أنه يجوز لي أيضًا (1) الحصول على نسخة من هذا الملف، عند تقديم الهوية المناسبة ودفع تكاليف النسخ، عن طريق البريد المعتمد أو من خلال الحضور إلى مكاتب Accurate شخصيًا خلال ساعات عملها العادية بعد تقديم إشعار مسبق منطقي بحضوري المخطط له؛ و(2) تلقي ملخص هذا الملف من Accurate عبر الهاتف، على نفقتي، عند تقديم الهوية المناسبة وتقديم طلب خطي إلى Accurate للإفصاح عبر الهاتف. أفهم أن Accurate لديها موظفين مدربين متاحين لشرح ملفها لي، بما في ذلك أي معلومات مشفرة، وإذا حضرت شخصيًا إلى مكاتب Accurate, قد أكون برفقة شخص آخر طالما أن هذا الشخص يقدم الهوية المناسبة إلى Accurate.",
+      "value" : "وفقًا للقانون المدني لولاية كاليفورنيا § 1785 وما يليه و§ 1786 وما يليه، إذا طلبت أمازون أيّ تقرير عنّي، فقد أقوم بعرض الملف الخاص بي الذي تحتفظ به Accurate خلال ساعات عملها العادية. أفهم أنه يجوز لي أيضًا (1) الحصول على نسخة من هذا الملف، عند تقديم الهوية المناسبة ودفع تكاليف النسخ، عن طريق البريد المعتمَد أو من خلال الحضور إلى مكاتب Accurate شخصيًا خلال ساعات عملها العادية بعد تقديم إشعار مسبق منطقي بحضوري المخطط له؛ (2) وتلقّي ملخص هذا الملف من Accurate عبر الهاتف، على نفقتي، عند تقديم الهوية المناسبة وتقديم طلب خطي إلى Accurate للإفصاح عبر الهاتف. أفهم أن Accurate لديها موظفون مدرّبون ومتاحون لشرح ملفها لي، بما في ذلك أيّ معلومات مشفّرة، وإذا حضرت شخصيًا إلى مكاتب Accurate، قد أكون برفقة شخص آخر طالما أن هذا الشخص يقدّم الهوية المناسبة إلى Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "تتوفر معلومات حول ممارسات الخصوصية لدى Accurate على<a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'> https://www.accurate.com/privacy-policy/</a>.",
+      "value" : "تتوفر معلومات حول ممارسات الخصوصية لدى Accurate على <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
@@ -1017,11 +1017,11 @@
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
-      "value" : "1 كونكورس باركواي إن إي، جناح 200.",
+      "value" : "1 Concourse Parkway NE, Suite 200.",
       "note" : "Text for the california disclosure page vendor fadv address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
-      "value" : "أتلانتا، جورجيا 30328",
+      "value" : "Atlanta, GA 30328",
       "note" : "Text for the california disclosure page vendor fadv address line 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-phone-text" : {
@@ -1033,7 +1033,7 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "أَفهم ما يلي:",
+      "value" : "أَفهم أن:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
@@ -1041,15 +1041,15 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "يمكن الحصول على المعلومات التي حصلت عليها شركة First Advantage، والمدرجة في أي تقرير، من خلال مجموعة متنوعة من الوسائل، بما في ذلك فحص الوثائق والمعلومات المتاحة بشكل قانوني و/أو الاتصال المباشر أو غير المباشر والمقابلات مع أصحاب العمل السابقين، المدارس، المؤسسات المالية، أصحاب العقارات، الوكالات العامة، وغيرهم مثل جيراني وأصدقائي وزملائي الذين أعرفهم والذين قد يكون لديهم مثل هذه المعرفة.",
+      "value" : "يمكن الحصول على المعلومات التي حصلت عليها شركة First Advantage، والمدرجة في أي تقرير، من خلال مجموعة متنوعة من الوسائل، بما في ذلك فحص الوثائق والمعلومات المتاحة بشكل قانوني و/أو الاتصال المباشر أو غير المباشر والمقابلات مع أصحاب العمل السابقين، والمدارس، والمؤسسات المالية، وأصحاب العقارات، والوكالات العامة، وغيرهم، مثل جيراني وأصدقائي وشركائي الذين أعرفهم والذين قد يكون لديهم مثل هذه المعرفة.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "التحقيق (التحقيقات) الذي ستجريه شركة First Advantage، والذي يمكن تضمين نتائجه في أي تقرير يتم تقديمه إلى أمازون، قد تتضمن مختلف أنواع المعلومات الخاصة بي فيما يتعلق بشخصيتي، سمعتي العامة، سماتي الشخصية أو نمط معيشتي، سجل التوظيف والعمل الخاص بي، التعليم، سجل القيادة، والسجل الجنائي، مع مراعاة أي قيود يفرضها القانون الفيدرالي وقانون الولاية المعمول به.",
+      "value" : "التحقيق (التحقيقات) الذي ستجريه شركة First Advantage، والذي يمكن تضمين نتائجه في أي تقرير يتم تقديمه إلى أمازون، قد يتضمن أنواع متنوعة من المعلومات عني فيما يتعلق بشخصيتي، وسمعتي العامة، وسماتي الشخصية أو نمط معيشتي، وسجل التوظيف والعمل الخاص بي، والتعليم، وسجل القيادة، والسجل الجنائي، مع مراعاة أيّ قيود يفرضها القانون الفيدرالي وقانون الولاية المعمول به.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "وفقًا للقانون المدني لولاية كاليفورنيا § 1785 وما يليه. و § 1786 وما يليه.، إذا طلبت أمازون أي تقرير عني، فقد اعرض الملف الخاص بي الذي تحتفظ به First Advantage وذلك خلال ساعات عملها العادية. أفهم أنه يجوز لي أيضًا (1) الحصول على نسخة من هذا الملف، عند تقديم الهوية المناسبة ودفع تكاليف النسخ، عن طريق البريد المعتمد أو من خلال الحضور إلى مكاتب First Advantage شخصيًا خلال ساعات عملها العادية بعد تقديم إشعار مسبق معقول بحضوري المخطط له؛ و(2) تلقي ملخص هذا الملف من First Advantage عبر الهاتف، على نفقتي، عند تقديم الهوية المناسبة وتقديم طلب خطي إلى First Advantage للإفصاح عبر الهاتف. أفهم أن First Advantage لديها موظفين مدربين متاحين لشرح ملفها لي، بما في ذلك أي معلومات مشفرة، وإذا حضرت شخصيًا إلى مكاتب First Advantage، يصرح لي أن أكون برفقة شخص آخر بشرط أن يقوم هذا الشخص بتقديم الهوية المناسبة إلى First Advantage.",
+      "value" : "وفقًا للقانون المدني لولاية كاليفورنيا § 1785 وما يليه. و§ 1786 وما يليه، إذا طلبت أمازون أي تقرير عني، يمكنني عرض الملف الخاص بي الذي تحتفظ به First Advantage وذلك خلال ساعات عملها العادية. أفهم أنه يجوز لي أيضًا (1) الحصول على نسخة من هذا الملف، عند تقديم الهوية المناسبة ودفع تكاليف النسخ، عن طريق البريد المعتمد أو من خلال الحضور إلى مكاتب First Advantage شخصيًا خلال ساعات عملها العادية بعد تقديم إشعار مسبق معقول بحضوري المخطط له؛ و(2) تلقي ملخص هذا الملف من First Advantage عبر الهاتف، على نفقتي، عند تقديم الهوية المناسبة وتقديم طلب خطي إلى First Advantage للإفصاح عبر الهاتف. أفهم أن First Advantage لديها موظفين مدربين متاحين لشرح ملفها لي، بما في ذلك أيّ معلومات مشفرة، وإذا حضرت شخصيًا إلى مكاتب First Advantage، يصرح لي أن أكون برفقة شخص آخر بشرط أن يقوم هذا الشخص بتقديم الهوية المناسبة إلى First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1057,7 +1057,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "أقر بأنني قد قرأت هذا المستند وأنني أفهمه، وأنه، وفقًا لإفصاح كاليفورنيا هذا فيما يتعلق بتقارير المستهلك الاستقصائية، أفوض أمازون بالحصول على تقرير استقصائي للمستهلك عني.",
+      "value" : "أقر بأنني قد قرأت هذا المستند وأنني أفهمه، وأنه، وفقًا لإفصاح كاليفورنيا هذا فيما يتعلق بتقارير المستهلك الاستقصائية، أقوم بتفويض أمازون بالحصول على تقرير استقصائي للمستهلك عني.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1065,7 +1065,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "لقد أوشكت على الانتهاء،{firstname}{lastname}! نحتاج منك أن تأتي للحصول على صورة شارة، وتفويض عمل كامل واختبار المخدرات، إن أمكن.",
+      "value" : "لقد أوشكت على الانتهاء، {firstname} {lastname}. نحتاج منك أن تأتي للانتهاء من صورة الشعار وإكمال إذن العمل واختبار المخدرات، إن أمكن.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1077,7 +1077,7 @@
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
-      "value" : "عدد قليل جدًا من الأماكن الشاغرة المتبقية",
+      "value" : "عدد قليل جدًا من الأماكن مازال متبقيًا",
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
@@ -1085,7 +1085,7 @@
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "نحن نحتفظ بمكان لك{hours} للساعات و الـ{minutes} الدقائق القادمة لإكمال الخطوات المتبقية.",
+      "value" : "نحن نحتفظ بمكان لك للـ {hours} ساعات و{minutes} دقائق القادمة لإكمال الخطوات المتبقية.",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
@@ -1097,7 +1097,7 @@
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "العودة إلى لوحة المعلومات",
+      "value" : "العودة إلى لوحة السجل",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
@@ -1105,7 +1105,7 @@
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "شكرًا جزيلاً على منحنا الفرصة للنظر في أمر انضمامك لهذا المنصب. نعرب عن خالص أسفنا، عن عدم قدرتنا على مواصلة عملية ترشيحك هذه المرة.",
+      "value" : "شكرًا جزيلاً على منحنا الفرصة للنظر في أمر انضمامك لهذا المنصب. للأسف، لن نتمكن من المضي قدمًا في عملية ترشيحك في هذا الوقت.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
@@ -1113,15 +1113,15 @@
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "العودة إلى لوحة المعلومات",
+      "value" : "العودة إلى لوحة السجل",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
-      "value" : "التقييم",
+      "value" : "تقييم",
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "نحن متحمسون جدًا لاهتمامك بالانضمام إلى أمازون!",
+      "value" : "نحن متحمسون جدًا لاهتمامك بالانضمام إلى أمازون.",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
@@ -1129,11 +1129,11 @@
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "الاتفاق",
+      "value" : "أماكن الإقامة",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "في أمازون، نحتفل بتنوع القوى العاملة لدينا والطرق المتنوعة التي نعمل بها. إذا كنت تعاني من إعاقة وتحتاج إلى سكن أثناء عملية التوظيف، بما في ذلك التقييم، فيرجى زيارة<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "في أمازون، نحتفي بتنوع القوى العاملة لدينا والطرق المتنوعة التي نعمل بها. إذا كنت تعاني من إعاقة وتحتاج إلى سكن أثناء عملية التوظيف، بما في ذلك التقييم، فيرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> إقامة أمازون.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
@@ -1141,11 +1141,11 @@
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "تم تحسين برامج قراءة الشاشة التالية: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
+      "value" : "تم تحسينه لبرامج قراءة الشاشة التالية: VoiceOver (ماك) وNVDA (ويندوز) على فايرفوكس وكروم وإيدج (ويندوز).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
-      "value" : "يمكن الوصول إليها عن طريق الفأرة أو لوحة المفاتيح.",
+      "value" : "يمكن الوصول إليه عن طريق الماوس أو لوحة المفاتيح.",
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
@@ -1153,7 +1153,7 @@
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "مراجعة وتقديم",
+      "value" : "مراجعة وإرسال",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-edit-button-text" : {
@@ -1197,15 +1197,15 @@
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "نتطلع إلى رؤيتك في الوقت أعلاه.",
+      "value" : "نتطلع إلى رؤيتك في الوقت المحدد أعلاه.",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
-      "value" : "التحديد الذاتي الطوعي",
+      "value" : "التعريف الذاتي الطوعي",
       "note" : "Text for the voluntary self-identification section title text"
     },
     "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
-      "value" : "تكافؤ الفرص:",
+      "value" : "فرص متساوية:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
@@ -1217,23 +1217,23 @@
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "تقديم الطلب",
+      "value" : "إرسال الطلب",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
-      "value" : "نشكرك على التقدم بطلب التوظيف لدى أمازون!",
+      "value" : "نشكرك على التقدم بطلب التوظيف لدى أمازون.",
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "نتطلع إلى رؤيتك قريبًا. فيما يلي خطواتك التالية:",
+      "value" : "نتطلع إلى رؤيتك. فيما يلي خطواتك التالية:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "يُرجى تقديم تفاصيل الإحالة (إذا انطبقت الحالة)",
+      "value" : "يُرجى تقديم تفاصيل الإحالة (إذا كان هذا قابلاً للتطبيق)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "هل تمت إحالتك من قِبَل موظف حالي في Amazon؟",
+      "value" : "هل تمت إحالتك من قِبَل موظف حالي في أمازون؟",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
@@ -1245,7 +1245,7 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "ابدأ في مهام ما قبل التوظيف",
+      "value" : "البدء في أنشطة ما قبل التوظيف",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
@@ -1261,7 +1261,7 @@
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "قم بزيارتنا لجلسة مدتها 30 دقيقة في أي وقت بين{startTime} - {endTime}.",
+      "value" : "قم بزيارتنا لجلسة مدتها 30 دقيقة في أي وقت بين {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
@@ -1281,7 +1281,7 @@
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "اضغط<a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>هنا</a> للحصول على قائمة كاملة بالوثائق المقبولة.",
+      "value" : "اضغط <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>هنا</a> للحصول على قائمة كاملة بالوثائق المقبولة.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
@@ -1289,19 +1289,19 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "إذا كنت بحاجة إلى أي تسهيلات، مثل مترجم لغة الإشارة الأمريكية (ASL) لحدث التوظيف، يرجى الانتقال إلى <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> والدردشة معنا لطلب مترجم. يرجى الاتصال بنا على الفور بمجرد تحديد موعدك. نحتاج إلى فترة 48 ساعة على الأقل قبل موعدك لإجراء الترتيبات.",
+      "value" : "إذا كنت بحاجة إلى أيّ تسهيلات، مثل مترجم لغة الإشارة الأمريكية (ASL) أثناء إجراءات التوظيف، يرجى الانتقال إلى <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> وإجراء محادثة معنا لطلب مترجم. يرجى الاتصال بنا على الفور بمجرد تحديد موعدك. نحتاج إلى فترة 48 ساعة على الأقل قبل موعدك لإجراء الترتيبات.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "يُرجى تقديم معرف تسجيل دخول مسئول التحويلات الخاص بك (بأحرف صغيرة فقط)",
+      "value" : "يُرجى تقديم معرّف تسجيل دخول مسئول التحويلات الخاص بك (بأحرف صغيرة فقط)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "يُرجى تقديم معرف تسجيل دخول مسئول التحويلات الخاص بك.",
+      "value" : "يُرجى تقديم معرّف تسجيل دخول مسئول التحويلات الخاص بك.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "يجب أن يحتوي معرف المستخدم على أحرف صغيرة فقط ويجب أن يكون طوله 4 أحرف على الأقل.",
+      "value" : "يجب أن يحتوي معرّف المستخدم على أحرف صغيرة فقط ويجب أن يكون طوله 4 أحرف على الأقل.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
@@ -1309,15 +1309,719 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "يشارك اختبار Amazon IAT في برامج الائتمان الضريبي الفيدرالية و/أو الحكومية. سيتم استخدام المعلومات التي تقدمها لتحديد أهلية الشركة لهذه البرامج ولن تؤثر سلبًا بأي حال من الأحوال على أي قرارات توظيف أو استبقاء أو ترقية.",
+      "value" : "يشارك اختبار أمازون IAT في برامج الائتمان الضريبي الفيدرالية و/أو الخاصة بالولاية. سيتم استخدام المعلومات التي تقدمها لتحديد أهلية الشركة لهذه البرامج ولن تؤثر سلبًا بأيّ حال من الأحوال على أيّ قرارات تخص التوظيف أو الإبقاء أو الترقية.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "تاريخ البدء المحتمل:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(أو في وقت سابق)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ساعة",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "ساعة/أسبوع",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "مكافأة:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "شكرًا لك على اهتمامك، لكننا غير قادرين على تقديم وظيفة لك في هذا الوقت.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "المعلومات التي قدمتها لا تفي بمتطلباتنا. نحن نشجعك على إلقاء نظرة على وظائف أخرى موجودة في amazon.jobs.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "عذرًا، لقد تقدمت بالفعل لهذه الوظيفة.",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "توجد حقول مطلوبة مفقودة.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "حدث خطأ ما في الخادم. يرجى المحاولة مرة أخرى أو قم بتحديث المتصفح.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "المرشح غير نشط. لا يمكن إنشاء طلب للمرشح.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "لم يتم العثور على المرشح.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "لا يمكن تحديث الطلب بسبب وجود تحديث أحدث.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "تعذَّر إنشاء الطلب.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "لا يتطابق معرف الطلب مع المعرف في مسار الطلب.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "لا يمكن العثور على الطلب.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "حقول مطلوبة مفقودة: معرف الطلب.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "لا يمكن تحديث الطلب بسبب وجود تحديث أحدث.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "حدث خطأ ما في الخادم. يرجى المحاولة مرة أخرى أو قم بتحديث المتصفح.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "لا يمكنك الوصول إلى هذا الطلب.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "يرجى التوقيع على الإقرار.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "الرجاء التوقيع على طلب fcra.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "يرجى التوقيع على الإقرار.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "يرجى التوقيع على إشعارات الولاية.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "لم يعد الجدول الذي حددته متاحًا، يرجى تحديد جدول آخر.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "لا تتطابق التوقيعات الإلكترونية. يرجى استخدام نفس النص لكل توقيع إلكتروني.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "فشل التحديث إلى الطلب لأنك وصلت إلى الحد الأقصى لعدد التغييرات على معرف هويتك الوطنية. إذا كنت قد قمت بالاشتراك مسبقًا باستخدام عنوان بريد إلكتروني مختلف، يرجى تسجيل الخروج ومحاولة تسجيل الدخول باستخدام هذا البريد الإلكتروني، باستخدام رابط \"نسيت رقم التعريف الشخصي (PIN) الخاص بك؟\" إذا لزم الأمر. إذا كنت بحاجة إلى مساعدة، يرجى الاتصال بنا عبر البريد الإلكتروني أو المحادثة على <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "فشل التحديث إلى الطلب لأن رقم الهوية الوطنية المُقدم غير صالح. يرجى إدخال رقم الهوية الوطنية الصحيح والكامل قبل المتابعة.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "نوع الطلب مفقود.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "النوع غير مطابق للطلب.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "تاريخ الميلاد مفقود في البيانات الأساسية.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "يرجى تقديم تاريخ صالح.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "\"معرف الطلب\" مفقود في الطلب.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "المعرف الحكومي مفقود في الطلب.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "رقم الهوية مفقود في الطلب.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "\"لديه سجل جنائي خلال سبع سنوات\" مفقود في الطلب.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "سطر العنوان 1 مفقود في عنصر العنوان.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "اسم المدينة مفقود في عنصر العنوان.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "اسم الولاية مفقود في عنصر العنوان.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "الرمز البريدي مفقود في عنصر العنوان.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "البلد مفقود في عنصر العنوان.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "الرجاء إدخال الاسم القانوني بالكامل المستخدم سابقًا بالصيغة التالية: الاسم الأول الاسم الأخير.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "معلومات الخلفية الإضافية غير صالحة، يرجى تحديث جميع الحقول المطلوبة.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "عنصر nheAppointment مفقود في الطلب.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "معلومات الإحالة مفقودة في الطلب.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "الأصل العرقي مفقود في البيانات الأساسية.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "الجنس مفقود في البيانات الأساسية.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "معلومات الزوج (الزوجة) العسكري (العسكرية) مفقودة في البيانات الأساسية.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "معلومات المحاربين القدامى المحمية مفقودة في البيانات الأساسية.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "معلومات المحاربين القدامى مفقودة في البيانات الأساسية.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "الإعاقة مفقودة في البيانات الأساسية.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "\"hasBGCCaliforniaDisclosureAcknowledged\" مفقود في البيانات الأساسية.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "رقم \"SSN\" أو رقم الهوية الوطنية الذي أدخلته مرتبط بالفعل بعنوان بريد إلكتروني آخر في نظامنا. إذا كنت قد قمت بتسجيل الاشتراك مسبقًا باستخدام عنوان بريد إلكتروني مختلف، فيرجى [تسجيل الخروج] (/application/logout) وحاول تسجيل الدخول باستخدام هذا البريد الإلكتروني، باستخدام رابط \"هل نسيت رقم التعريف الشخصي (PIN) الخاص بك؟\" إذا لزم الأمر. إذا كنت بحاجة إلى مساعدة، يرجى الاتصال بنا عبر البريد الإلكتروني أو الدردشة على <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "تعذَّر جلب وظيفة.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "حدث خطأ ما أثناء جلب الوظائف. يُرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "تعذر استرداد الوظائف في الوقت الحالي. يُرجى إعادة المحاولة بعد مرور بعض الوقت.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "تم ملء جميع المناوبات.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "تم ملء جميع المناوبات.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "غير قادر على جلب طلب عدد الأشخاص.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "تم ملء جميع المناوبات.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "حدث خطأ ما. يُرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "حدث خطأ ما أثناء جلب الوظائف. يُرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "غير قادر على جلب تفضيلات المناوبة.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "تعذر استرداد الوظائف في الوقت الحالي. يُرجى إعادة المحاولة بعد مرور بعض الوقت.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "تعذَّر الحصول على مرشح.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "لا يمكنك الوصول إلى هذا الطلب.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "تعذَّر إنشاء الطلب.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "لا يمكنك إنشاء طلب.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "معرف الطلب مطلوب للحصول على بيانات الطلب.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "لا يمكنك الوصول إلى هذا الطلب.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "غير قادر على الحصول على هذا الطلب.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "حدث خطأ ما في الخادم. يرجى المحاولة مرة أخرى أو قم بتحديث المتصفح.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "خطأ سير العمل",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "بينما فشل سير عمل الطلب.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "شكرًا لك على اهتمامك، لكننا غير قادرين على تقديم وظيفة لك في هذا الوقت.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "المعلومات التي قدمتها لا تفي بمتطلباتنا. نحن نشجعك على إلقاء نظرة على وظائف أخرى موجودة في amazon.jobs.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "شكرًا لك على اهتمامك، لكننا غير قادرين على تقديم وظيفة لك في هذا الوقت.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "المعلومات التي قدمتها لا تفي بمتطلباتنا. نحن نشجعك على إلقاء نظرة على وظائف أخرى موجودة في amazon.jobs.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "شكرًا لك على اهتمامك، لكننا غير قادرين على تقديم وظيفة لك في هذا الوقت.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "المعلومات التي قدمتها لا تفي بمتطلباتنا. نحن نشجعك على إلقاء نظرة على وظائف أخرى موجودة في amazon.jobs.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "انتهت صلاحية حجز الوظيفة الخاصة بك.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "نسمح للمرشحين بمدة تصل إلى ثلاث ساعات لإكمال طلباتهم. لسوء الحظ، تجاوزت الوظيفة التي كنت تتقدم لها حد الثلاث ساعات. يرجى استكشاف فرص العمل المتاحة.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "عرض فرص العمل",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "لا توجد مواعيد متاحة لهذه الوظيفة في الوقت الحالي.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "يمكنك:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. حدد فرصة عمل مختلفة",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "اضغط هنا",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. حدد مناوبة مع تاريخ بدء لاحق (موصى به)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "عرض المناوبات الأخرى",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- ألاباما",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- ألاسكا",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- أريزونا",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- أركنساس",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- كاليفورنيا",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- كولورادو",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- كونيتيكت",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- ديلاوير",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- مقاطعة كولومبيا",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- فلوريدا",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- جورجيا",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- هاواي",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- أيداهو",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- إلينوي",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- إنديانا",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- آيوا",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- كانساس",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- كنتاكي",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- لويزيانا",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME - ماين",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- ماريلاند",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- ماساتشوستس",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- ميتشيغان",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- مينيسوتا",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- ميسيسيبي",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- ميسوري",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- مونتانا",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- نبراسكا",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- نيفادا",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- نيو هامبشاير",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- نيو جيرسي",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- نيو مكسيكو",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- نيويورك",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- نورث كارولينا",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- داكوتا الشمالية",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- أوهايو",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- أوكلاهوما",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- أوريغون",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- بنسلفانيا",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- رود آيلاند",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- ساوث كارولينا",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- داكوتا الجنوبية",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- تينيسي",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- تكساس",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- يوتا",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- فيرمونت",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- فيرجينيا",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "واشنطن - واشنطن",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "ويسكونسن - ويسكونسن",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "فيرجينيا الغربية -- فيرجينيا الغربية",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "وايومنغ - وايومنغ",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "تعذر تحديث WOTC.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "لم يعد الجدول الذي حددته متاحًا. يرجى تحديد خيار مختلف.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "لقد تم تعيينك مؤخرًا لهذا الطلب، ولا يمكن تغيير مناوبتك. يرجى التواصل على https://www.amazondelivers.jobs/contactus لتغيير مناوبتك.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "تعذر تحديث الطلب.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "معلومات إضافية عن الخلفية",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "شكرًا لك على اهتمامك بوظيفة {jobTitle}. تشير سجلاتنا إلى أنك عملت سابقًا في أمازون.  في هذا الوقت، أنت مؤهل لإعادة التوظيف كشريك موسمي في أمازون أو موظف وكالة تابع لجهة خارجية بناءً على سجل التوظيف الخاص بك. نتيجة لذلك، نحن غير قادرين على المضي قدمًا في ترشيحك لهذه الوظيفة. إذا كانت لديك أيّ أسئلة بشأن أهلية إعادة التوظيف، فاتصل بفريق الموارد البشرية بالموقع.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "شكرًا لك على اهتمامك بهذه الوظيفة. تشير سجلاتنا إلى أنك عملت سابقًا في أمازون.  في هذا الوقت، أنت مؤهل لإعادة التوظيف كشريك موسمي في أمازون أو موظف وكالة تابع لجهة خارجية بناءً على سجل التوظيف الخاص بك. نتيجة لذلك، نحن غير قادرين على المضي قدمًا في ترشيحك لهذه الوظيفة. إذا كانت لديك أيّ أسئلة بشأن أهلية إعادة التوظيف، فاتصل بفريق الموارد البشرية بالموقع.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "يرجى زيارة صفحتنا الموسمية لاستكشاف الفرص الموسمية في منطقتك.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "شكرًا لك على تقديم طلب الوظيفة الأخير إلى أمازون. بعد دراسة متأنية، لن نمضي قدمًا في طلب الوظيفة الخاص بك.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "نحن نقدر وقتك ونتمنى لك حظًا سعيدًا في المستقبل.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "نحن نقدر طلب الوظيفة الأخير الخاص بك. للأسف، أنت غير مؤهل لهذه الوظيفة بالتحديد لأنك موظف بالفعل في أمازون.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "الأخبار الجيدة؟ هناك الكثير من الفرص المفتوحة التي يمكنك تصفحها والتقدم بطلب عليها عبر الإنترنت. فيما يلي بعض الطرق التي يمكنك من خلالها استكشاف نموّك الوظيفي في المستقبل:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "للوكالة أو التحويلات الموسمية، تفضل بزيارة amazon.com/conversions (http://amazon.com/conversions).",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "لطلب تغيير المناوبة أو الموقع، تواصل مع فريقك في الموقع.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "فريق الموارد البشرية المحلي أو مركز موارد الموظفين (ERC) لديك هو أفضل موْرد معلومات لأي أسئلة. يمكنك الوصول إلى فريق ERC 24/7 على 1-888-892-7180 (هاتف: 18888927180).",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "شكرًا لكونك جزءًا من الفريق المذهل في أمازون. نحن نسعى بشدة باستمرار لتزويدك بأفضل موارد الموظفين الممكنة والمزايا والأجور والجداول المرنة — كل ذلك يدعم جهودنا لنصبح أعظم صاحب عمل على الأرض.",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "شكرًا لك على اهتمامك بوظيفة {jobTitle}. تشير سجلاتنا إلى أنك عملت سابقًا في أمازون ولست مؤهلاً لإعادة التوظيف بناءً على سجل التوظيف السابق الخاص بك في أمازون. نتيجة لذلك، نحن غير قادرين على المضي قدمًا في ترشيحك في هذا الوقت.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "شكرًا لك على اهتمامك بهذه الوظيفة. تشير سجلاتنا إلى أنك عملت سابقًا في أمازون ولست مؤهلاً لإعادة التوظيف بناءً على سجل التوظيف السابق الخاص بك في أمازون. نتيجة لذلك، نحن غير قادرين على المضي قدمًا في ترشيحك في هذا الوقت.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "نظرًا لسبب الإنهاء، يمكنك إعادة التقديم بعد 90 يومًا من آخر يوم عمل لك في أمازون.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "تم ملء جميع المناوبات حاليًا.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "يرجى العودة إلى لوحة السجل للتقدم لوظائف أخرى.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "خطأ في الطلب",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "هناك خطأ ما، يرجى الانتقال إلى لوحة السجل",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "العودة إلى لوحة السجل",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
+      "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "الولايات المتحدة - رقم الضمان الاجتماعي",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "نعم، لدي إعاقة (أو كان لدي إعاقة في السابق)",
+      "value" : "نعم، لدي إعاقة (أو كانت لدي إعاقة سابقًا)",
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {

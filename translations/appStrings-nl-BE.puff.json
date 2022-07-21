@@ -37,7 +37,7 @@
       "note" : "Text for the button to select or confirm job"
     },
     "BB-PreconsentPage-preview-steps-button" : {
-      "value" : "Stappen voor voorbeeld",
+      "value" : "Voorbeeld van de stappen bekijken",
       "note" : "Text for the button to preview application steps"
     },
     "BB-PreconsentPage-next-Button" : {
@@ -69,7 +69,7 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon zet zich in voor een diverse en inclusieve werkplek. Amazon is een werkgever die gelijke kansen biedt en niet discrimineert op basis van ras, nationale afkomst, geslacht, genderidentiteit, seksuele geaardheid, beschermde veteranenstatus, handicap, leeftijd of een andere wettelijk beschermde status. Voor personen met een handicap die een accommodatie willen aanvragen, ga je naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "Amazon zet zich in voor een diverse en inclusieve werkplek. Amazon is een werkgever die gelijke kansen biedt en niet discrimineert op basis van ras, nationale afkomst, geslacht, genderidentiteit, seksuele geaardheid, beschermde veteranenstatus, handicap, leeftijd of een andere wettelijk beschermde status. Voor personen met een handicap die een aanpassing willen aanvragen, ga naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
@@ -93,7 +93,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "stemt ermee in dat Amazon je persoonlijke gegevens bewaart na de sollicitatieprocedure, om het te helpen bij de effectieve monitoring van zijn sollicitatieprocessen, en dat het je persoonlijke gegevens opslaat in een elektronische database in de VS.",
+      "value" : "stemt ermee in dat Amazon je persoonlijke gegevens bewaart na de sollicitatieprocedure, om hem te helpen bij de effectieve monitoring van zijn sollicitatieprocessen, en dat hij je persoonlijke gegevens opslaat in een elektronische database in de VS.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
@@ -129,11 +129,11 @@
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "Toepassen",
+      "value" : "Solliciteren",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "Toepassen",
+      "value" : "Solliciteren",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
@@ -145,11 +145,11 @@
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "Uren - Meeste tot minste",
+      "value" : "Uren: meeste tot minste",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
-      "value" : "Uren - Minste tot meeste",
+      "value" : "Uren: minste tot meeste",
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
@@ -205,7 +205,7 @@
       "note" : "Text for desired hours select input label text"
     },
     "BB-ContingencyOffer-well-done-text" : {
-      "value" : "Goed bezig",
+      "value" : "Goed gedaan tot nu toe",
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
@@ -217,7 +217,7 @@
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "Zoals toegestaan door de toepasselijke wetgeving, is je aanbod afhankelijk van het succesvol doorstaan van het vereiste antecedentenonderzoek, drugsscreening (indien van toepassing) en geschiktheidscontrole voor heraanwerving (indien van toepassing), dus het is belangrijk dat je de stappen vóór indiensttreding op de volgende pagina voltooit. In sommige omstandigheden kan je eerste dag vertraging oplopen omdat de vereisten voor indiensttreding niet op tijd zijn voltooid. Als dit het geval is, kun je snel van ons horen.",
+      "value" : "Zoals toegestaan door de toepasselijke wetgeving, is je aanbod afhankelijk van het succesvol doorstaan van het vereiste antecedentenonderzoek, drugsscreening (indien van toepassing) en geschiktheidscontrole voor heraanwerving (indien van toepassing), dus het is belangrijk dat je de stappen vóór indiensttreding op de volgende pagina voltooit. In bepaalde omstandigheden kan je eerste dag vertraging oplopen omdat de vereisten voor indiensttreding niet op tijd zijn voltooid. Als dit het geval is, kun je verwachten snel van ons te horen.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -225,7 +225,7 @@
       "note" : "Text for contingent offer meaning popover close button"
     },
     "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Functie-eisen.",
+      "value" : "Functievereisten.",
       "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
@@ -257,7 +257,7 @@
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "Erkenningen en autorisaties voor antecedentenonderzoek in het kader van de Non-Fair Credit Reporting Act ",
+      "value" : "Erkenningen en autorisaties voor antecedentenonderzoek in het kader van de Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
@@ -289,7 +289,7 @@
       "note" : "Text for the additional bgc form  address line 1 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
-      "value" : "Voer een geldig adres in.",
+      "value" : "Voer een geldig adres in",
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
@@ -297,11 +297,11 @@
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
-      "value" : "Voer een geldig adres in.",
+      "value" : "Voer een geldig adres in",
       "note" : "Text for the additional bgc form  address line 2 error message text"
     },
     "BB-BGC-Additional-bgc-form-city-label-text" : {
-      "value" : "Woonplaats",
+      "value" : "Plaatsnaam",
       "note" : "Text for the additional bgc form  city label text"
     },
     "BB-BGC-Additional-bgc-form-city-error-text" : {
@@ -333,11 +333,11 @@
       "note" : "Text for the additional bgc form  country label text"
     },
     "BB-BGC-Additional-bgc-form-country-error-text" : {
-      "value" : "Voer een geldig land in.",
+      "value" : "Voer een geldig land in",
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
-      "value" : "In de Verenigde Staten is een Social Security Number (SSN) een negencijferig nummer, dat wordt uitgegeven aan Amerikaanse burgers, permanente inwoners en tijdelijke (werkende) inwoners.",
+      "value" : "In de Verenigde Staten is een Social Security Number (SSN) een negencijferig nummer dat wordt uitgegeven aan Amerikaanse burgers, permanente inwoners en tijdelijke (werkende) inwoners.",
       "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
@@ -357,7 +357,7 @@
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "Nationaal identiteitsnummer",
+      "value" : "Nationaal ID-nummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
@@ -453,39 +453,39 @@
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Ik begrijp en ga ermee akkoord dat Amazon, zoals wettelijk is toegestaan, aanvullende antecedentenonderzoeken over mij kan aanvragen voor arbeidsdoeleinden, zonder mijn verdere toestemming, (1) tijdens mijn dienstverband, indien van toepassing, en (2) bij andere screeningbureaus dan First Advantage.",
+      "value" : "Ik begrijp en ga ermee akkoord dat Amazon, zoals wettelijk is toegestaan, aanvullende antecedentenonderzoeken over mij kan aanvragen voor arbeidsdoeleinden, zonder mijn verdere toestemming, (1) tijdens mijn dienstverband, indien van toepassing, en (2) bij andere screeningbureaus (CRA‘s) dan First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "Ik begrijp en ga ermee akkoord dat Amazon, zoals wettelijk is toegestaan, aanvullende antecedentenonderzoeken over mij kan aanvragen voor arbeidsdoeleinden, zonder mijn verdere toestemming, (1) tijdens mijn dienstverband, indien van toepassing, en (2) bij andere screeningbureaus dan Accurate Background.",
+      "value" : "Ik begrijp en ga ermee akkoord dat Amazon, zoals wettelijk is toegestaan, aanvullende antecedentenonderzoeken over mij kan aanvragen voor arbeidsdoeleinden, zonder mijn verdere toestemming, (1) tijdens mijn dienstverband, indien van toepassing, en (2) bij andere screeningbureaus (CRA‘s) dan Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "Voor arbeidsdoeleinden, en onderworpen aan alle wetten die mijn informatieprivacy beschermen, geef ik aan de volgende instellingen toestemming om aan de screeningbureaus alle informatie bekend te maken die nodig is voor het antecedentenonderzoek: mijn vroegere of huidige werkgevers, scholen en wetshandhavers en andere overheidsinstanties, inclusief gegevens van agentschappen bevoegd voor motorvoertuigen.",
+      "value" : "Voor arbeidsdoeleinden, en onderworpen aan alle wetten die mijn informatieprivacy beschermen, geef ik ook aan de volgende instellingen toestemming om aan de screeningbureaus (CRA‘s) alle informatie bekend te maken die nodig is voor het antecedentenonderzoek: mijn vroegere of huidige werkgevers, scholen, wetshandhavers en andere overheidsinstanties, inclusief gegevens van agentschappen bevoegd voor motorvoertuigen.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "Voor arbeidsdoeleinden, en onderworpen aan alle wetten die mijn informatieprivacy beschermen, geef ik aan de volgende instellingen toestemming om aan de screeningbureaus alle informatie bekend te maken die nodig is voor het antecedentenonderzoek: mijn vroegere of huidige werkgevers, scholen en wetshandhavers en andere overheidsinstanties, inclusief gegevens van agentschappen bevoegd voor motorvoertuigen.",
+      "value" : "Voor arbeidsdoeleinden, en onderworpen aan alle wetten die mijn informatieprivacy beschermen, geef ik ook aan de volgende instellingen toestemming om aan de screeningbureaus (CRA‘s) alle informatie bekend te maken die nodig is voor het antecedentenonderzoek: mijn vroegere of huidige werkgevers, scholen, wetshandhavers en andere overheidsinstanties, inclusief gegevens van agentschappen bevoegd voor motorvoertuigen.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIË:</b> Je ontvangt een afzonderlijk California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). Dit is een belangrijk document; lees het zorgvuldig door. Klik ook op <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> als je werk zoekt in of al in dienst bent van het bedrijf in San Francisco. Door hieronder te ondertekenen, machtig je Amazon in overeenstemming met de Californische wet en de California Disclosure, om nu en op elk moment tijdens elke tewerkstelling bij Amazon een screeningrapport op te vragen, ook wel bekend als een antecedentenonderzoek.</p>",
+      "value" : "<p><b>CALIFORNIË: </b>Je ontvangt een afzonderlijk California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). Dit is een belangrijk document; lees het zorgvuldig door. Klik ook op <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> als je werk zoekt in of al in dienst bent van het bedrijf in San Francisco. Door hieronder te ondertekenen, machtig je Amazon in overeenstemming met de Californische wet en de California Disclosure, om nu en op elk moment tijdens elke tewerkstelling bij Amazon een screeningrapport op te vragen, ook wel bekend als een antecedentenonderzoek.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIË:</b> Je ontvangt een afzonderlijk California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). Dit is een belangrijk document; lees het zorgvuldig door. Klik ook op <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> als je werk zoekt in of al in dienst bent van het bedrijf in San Francisco. Door hieronder te ondertekenen, machtig je Amazon in overeenstemming met de Californische wet en de California Disclosure, om nu en op elk moment tijdens elke tewerkstelling bij Amazon een screeningrapport op te vragen, ook wel bekend als een antecedentenonderzoek.</p>",
+      "value" : "<p><b>CALIFORNIË: </b>Je ontvangt een afzonderlijk California Disclosure Regarding Investigative Consumer Report (\"California Disclosure\"). Dit is een belangrijk document; lees het zorgvuldig door. Klik ook op <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> als je werk zoekt in of al in dienst bent van het bedrijf in San Francisco. Door hieronder te ondertekenen, machtig je Amazon in overeenstemming met de Californische wet en de California Disclosure, om nu en op elk moment tijdens elke tewerkstelling bij Amazon een screeningrapport op te vragen, ook wel bekend als een antecedentenonderzoek.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA:</b> Je hebt het recht om een schriftelijk verzoek in te dienen bij het screeningbureau voor een volledige en nauwkeurige openbaarmaking van de aard en reikwijdte van elk screeningrapport dat over je is aangevraagd. Het screeningbureau moet je de openbaarmaking binnen vijf werkdagen na ontvangst van je verzoek of toen het rapport is aangevraagd, verstrekken, afhankelijk van welke datum later is.</p>",
+      "value" : "<p><b>MINNESOTA:</b>Je hebt het recht om een schriftelijk verzoek in te dienen bij het screeningbureau (CRA) voor een volledige en nauwkeurige openbaarmaking van de aard en reikwijdte van elk screeningrapport dat over je is aangevraagd. Het screeningbureau (CRA) moet je de openbaarmaking binnen vijf werkdagen na ontvangst van je verzoek of toen het rapport is aangevraagd, verstrekken, afhankelijk van welke datum later is.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA:</b> Je hebt het recht om een schriftelijk verzoek in te dienen bij het screeningbureau voor een volledige en nauwkeurige openbaarmaking van de aard en reikwijdte van elk screeningrapport dat over je is aangevraagd. Het screeningbureau moet je de openbaarmaking binnen vijf werkdagen na ontvangst van je verzoek of toen het rapport is aangevraagd, verstrekken, afhankelijk van welke datum later is.</p>",
+      "value" : "<p><b>MINNESOTA:</b>Je hebt het recht om een schriftelijk verzoek in te dienen bij het screeningbureau (CRA) voor een volledige en nauwkeurige openbaarmaking van de aard en reikwijdte van elk screeningrapport dat over je is aangevraagd. Het screeningbureau (CRA) moet je de openbaarmaking binnen vijf werkdagen na ontvangst van je verzoek of toen het rapport is aangevraagd, verstrekken, afhankelijk van welke datum later is.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een screeningrapport of een onderzoeksrapport over jou hebben aangevraagd. Hierboven zie je het adres en telefoonnummer van het screeningbureau. Je hebt het recht om contact op te nemen met een screeningbureau om een dergelijk rapport in te zien of een kopie op te vragen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>",
+      "value" : "<p><b>NEW YORK: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een screeningrapport of een onderzoeksrapport over jou hebben aangevraagd. Hierboven zie je het adres en telefoonnummer van het screeningbureau (CRA). Je hebt het recht om contact op te nemen met een screeningbureau (CRA) om een dergelijk rapport in te zien of een kopie op te vragen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
@@ -557,7 +557,7 @@
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
-      "value" : "Ik heb geen SSN (Social Security Number)",
+      "value" : "Ik heb geen burgerservicenummer (Social Security Number)",
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
@@ -569,7 +569,7 @@
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Door verder te gaan, bevestig ik dat ik geen SSN heb.  Ik begrijp dat Amazon, zoals wettelijk is toegestaan, een antecedentenonderzoek over mij zal uitvoeren als ik mijn SSN wijzig of bijwerk tijdens het indiensttredingsproces of tijdens mijn dienstverband.",
+      "value" : "Door verder te gaan, bevestig ik dat ik geen SSN heb.  Ik begrijp dat Amazon, zoals wettelijk is toegestaan, een vervolgantecedentenonderzoek over mij zal uitvoeren als ik mijn SSN wijzig of bijwerk tijdens het indiensttredingsproces of tijdens mijn dienstverband.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
@@ -661,15 +661,15 @@
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
-      "value" : "Waarom wordt je gevraagd dit formulier in te vullen?",
+      "value" : "Waarom word je gevraagd dit formulier in te vullen?",
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "Wij zijn een federale aannemer of onderaannemer die wettelijk verplicht is om gelijke kansen op werk te bieden aan gekwalificeerde mensen met een handicap. We zijn ook verplicht om onze vooruitgang te meten in de richting van ten minste 7% van ons personeelsbestand dat uit personen met een handicap bestaat. Om dit te doen, moeten we sollicitanten en werknemers vragen of ze een handicap hebben of ooit een handicap hebben gehad. Omdat een persoon op elk moment gehandicapt kan raken, vragen we al onze medewerkers om hun informatie minstens om de vijf jaar bij te werken.",
+      "value" : "Wij zijn een federale aannemer of onderaannemer die wettelijk verplicht is om gelijke kansen op werk te bieden aan gekwalificeerde mensen met een handicap. We zijn ook verplicht om onze vooruitgang te meten in de richting van het doel dat ten minste 7% van ons personeelsbestand uit personen met een handicap bestaat. Om dit te doen, moeten we sollicitanten en werknemers vragen of ze een handicap hebben of ooit een handicap hebben gehad. Omdat een persoon op elk moment gehandicapt kan raken, vragen we al onze medewerkers om hun informatie minstens om de vijf jaar bij te werken.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Jezelf identificeren als persoon met een handicap is vrijwillig, en we hopen dat je ervoor kiest om dit te doen. Je antwoord wordt vertrouwelijk behandeld en niet gezien door ambtenaren die medewerkers aanwerven of door anderen die betrokken zijn bij het nemen van personeelsbeslissingen. Het invullen van het formulier heeft op geen enkele manier een negatieve invloed op jou, ongeacht of je in het verleden een zelfidentificatie hebt aangegeven. Ga voor meer informatie over dit formulier of de gelijke arbeidsverplichtingen van federale aannemers op grond van sectie 503 van de Rehabilitation Act naar de website van het Office of Federal Contract Compliance Programs (OFCCP) van het U.S. Department of Labor op <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "Jezelf identificeren als persoon met een handicap is vrijwillig, en we hopen dat je ervoor kiest om dit te doen. Je antwoord wordt vertrouwelijk behandeld en niet gezien door functionarissen die medewerkers aanwerven of door anderen die betrokken zijn bij het nemen van personeelsbeslissingen. Het invullen van het formulier heeft op geen enkele manier een negatieve invloed op jou, ongeacht of je in het verleden een zelfidentificatie hebt aangegeven. Ga voor meer informatie over dit formulier of de gelijke arbeidsverplichtingen van federale aannemers op grond van sectie 503 van de Rehabilitation Act naar de website van het Office of Federal Contract Compliance Programs (OFCCP) van het U.S. Department of Labor op <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -789,7 +789,7 @@
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon waardeert alle vormen van diversiteit en is onderworpen aan bepaalde registratie- en rapportagevereisten van non-discriminatie en positieve discriminatie die ons verplichten kandidaten en werknemers uit te nodigen om vrijwillig hun geslacht en ras/etniciteit te identificeren.\n Het indienen van deze informatie is vrijwillig en weigering om deze te verstrekken zal je niet onderwerpen aan enige nadelige behandeling. De verkregen informatie wordt vertrouwelijk behandeld en mag alleen worden gebruikt in overeenstemming met de bepalingen van de toepasselijke federale wetten, regeringsbesluiten en voorschriften, inclusief die die vereisen dat de informatie wordt samengevat en gerapporteerd aan de federale overheid voor handhavingsdoeleinden van burgerrechten. Als je ervoor kiest om je geslacht of ras/etniciteit op dit moment niet te identificeren, vereist de federale overheid dat we deze informatie voor werknemers bepalen aan de hand van visuele controle en/of andere beschikbare informatie.",
+      "value" : "Amazon waardeert alle vormen van diversiteit en is onderworpen aan bepaalde registratie- en rapportagevereisten van non-discriminatie en positieve discriminatie die ons verplichten kandidaten en werknemers uit te nodigen om vrijwillig hun geslacht en ras/etniciteit te identificeren. Het indienen van deze informatie is vrijwillig en weigering om deze te verstrekken zal je niet onderwerpen aan enige nadelige behandeling. De verkregen informatie wordt vertrouwelijk behandeld en mag alleen worden gebruikt in overeenstemming met de bepalingen van de toepasselijke federale wetten, regeringsbesluiten en voorschriften, inclusief die die vereisen dat de informatie wordt samengevat en gerapporteerd aan de federale overheid voor handhavingsdoeleinden van burgerrechten. Als je ervoor kiest om je geslacht of ras/etniciteit op dit moment niet zelf te identificeren, vereist de federale overheid dat we deze informatie voor werknemers bepalen aan de hand van visuele controle en/of andere beschikbare informatie.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -813,7 +813,7 @@
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
-      "value" : "Amerikaanse Indianen/Inheemse volken uit Alaska (niet Hispanic of Latino)",
+      "value" : "Amerikaanse Indianen/Inheemse volkeren uit Alaska (niet Hispanic of Latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
@@ -825,7 +825,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "Personen die afkomstig zijn uit een van de oorspronkelijke volkeren van het Verre Oosten, Zuidoost-Azië, of het Indiase subcontinent; inclusief bijvoorbeeld Cambodja, China, India, Japan, Korea, Maleisië, Pakistan, de Filippijnen, Thailand en Vietnam",
+      "value" : "Personen die afkomstig zijn uit een van de oorspronkelijke volkeren van het Verre Oosten, Zuidoost-Azië, of het Indiase subcontinent; inclusief bijvoorbeeld Cambodja, China, India, Japan, Korea, Maleisië, Pakistan, de Filipijnen, Thailand en Vietnam",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
@@ -865,7 +865,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Niet-Spaanse personen die zich identificeren met meer dan een van de volgende vijf rassen: (1) Blank, (2) Zwart, (3) Aziatisch, (4) Inheemse Hawaiianen/Andere eilandbewoners in de Stille Oceaan, (5) Amerikaanse Indianen/Inheemse volken uit Alaska",
+      "value" : "Niet-Hispanic personen die zich identificeren met meer dan een van de volgende vijf rassen: (1) Wit, (2) Zwart, (3) Aziatisch, (4) Inheemse Hawaiianen/Andere eilandbewoners in de Stille Oceaan, (5) Amerikaanse Indianen/Inheemse volken uit Alaska",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
@@ -917,7 +917,7 @@
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "is een aannemer van de federale overheid die onderworpen is aan de Vietnam Era Veterans' Rejustment Assistance Act van 1974, zoals gewijzigd bij de Jobs for Veterans Act van 2002,<a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212</a> (VEVRAA), die vereist dat overheidsaannemers positieve discriminatie aanwenden bij het in dienst nemen van en aanbieden van werkgelegenheid aan (1) gehandicapte veteranen; (2) onlangs gescheiden veteranen; (3) veteranen die in actieve dienst in oorlogstijd hebben gediend of veteranen aan wie een campagnebadge is verleend; en (4) veteranen die een medaille hebben ontvangen voor hun dienst tijdens een militaire operatie. De volgende uitnodiging om zelf je beschermde veteranenstatus te identificeren, wordt gedaan op grond van sectie 4212. Openbaarmaking van deze informatie is volledig vrijwillig en de weigering om deze te verstrekken zal je niet blootstellen aan enige nadelige behandeling.",
+      "value" : "Amazon is een aannemer van de federale overheid die onderworpen is aan de Vietnam Era Veterans' Readjustment Assistance Act van 1974, zoals gewijzigd bij de Jobs for Veterans Act van 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), die vereist dat overheidsaannemers positieve discriminatie aanwenden bij het in dienst nemen van en aanbieden van werkgelegenheid aan (1) gehandicapte veteranen; (2) onlangs gescheiden veteranen; (3) veteranen die in actieve dienst in oorlogstijd hebben gediend of veteranen aan wie een campagnebadge is verleend; en (4) veteranen die een medaille hebben ontvangen voor hun dienst tijdens een militaire operatie. De volgende uitnodiging om zelf je beschermde veteranenstatus te identificeren, wordt gedaan op grond van sectie 4212. Openbaarmaking van deze informatie is volledig vrijwillig en de weigering om deze te verstrekken zal je niet blootstellen aan enige nadelige behandeling.",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
@@ -925,7 +925,7 @@
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>Gehandicapte veteraan</b>: Een veteraan van de land-, zee- of luchtmacht van het Amerikaanse leger die recht heeft op compensatie (of die zonder ontvangst van een militair pensioen recht zou hebben op compensatie) krachtens wetten die worden beheerd door de Secretary of Veterans Affairs; of een persoon die werd ontslagen of uit actieve dienst is gehaald vanwege een dienstgebonden handicap.",
+      "value" : "<b>Gehandicapte veteraan</b>: een veteraan van de land-, zee- of luchtmacht van het Amerikaanse leger die recht heeft op compensatie (of die zonder ontvangst van een militair pensioen recht zou hebben op compensatie) krachtens wetten die worden beheerd door de Secretary of Veterans Affairs; of een persoon die werd ontslagen of uit actieve dienst is gehaald vanwege een dienstgebonden handicap.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
@@ -933,7 +933,7 @@
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>Active Duty Wartime of Campaign Badge Veteran</b>: Een veteraan die in actieve dienst heeft gediend in de land-, zee- of luchtmacht van het Amerikaanse leger tijdens een oorlog of tijdens een campagne of expeditie waarvoor een campagnebadge is verleend volgens de wetten van het ministerie van Defensie.",
+      "value" : "<b>Active Duty Wartime of Campaign Badge Veteran</b>: een veteraan die in actieve dienst heeft gediend in de Amerikaanse badge is bevoegd volgens de wetten van het ministerie van Defensie.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
@@ -989,7 +989,7 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "Ik begrijp dat:",
+      "value" : "Ik begrijp dat deze:",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
@@ -997,15 +997,15 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "Informatie verkregen door Accurate en opgenomen in elk rapport, kan op verschillende manieren worden verkregen, waaronder inspectie van rechtmatig beschikbare documenten en informatie en/of direct of indirect contact en interviews met voormalige werkgevers, scholen, financiële instellingen, verhuurders, overheidsinstanties, en andere partijen zoals mijn buren, vrienden en medewerkers met wie ik bekend ben en die dergelijke kennis kunnen hebben.",
+      "value" : "Informatie verkregen door Accurate en opgenomen in elk rapport, kan op verschillende manieren worden verkregen, waaronder inspectie van rechtmatig beschikbare documenten en informatie en/of direct of indirect contact en interviews met voormalige werkgevers, scholen, financiële instellingen, verhuurders, overheidsinstanties, en andere partijen zoals mijn buren, vrienden en medewerkers die ik ken en die dergelijke kennis kunnen hebben.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Door Accurate uitgevoerde onderzoeken, waarvan de resultaten kunnen worden opgenomen in elk rapport dat aan Amazon wordt verstrekt, kunnen verschillende soorten informatie over mij bevatten met betrekking tot mijn karakter, algemene reputatie, persoonlijke kenmerken, manier van leven, werk- en werkgeschiedenis, opleiding, verkeersovertredingen, en strafblad. Dit is onder voorbehoud van eventuele beperkingen opgelegd door de toepasselijke federale en staatswetten.",
+      "value" : "Door Accurate uitgevoerde onderzoeken, waarvan de resultaten kunnen worden opgenomen in elk rapport dat aan Amazon wordt verstrekt, kunnen verschillende soorten informatie over mij bevatten met betrekking tot mijn karakter, algemene reputatie, persoonlijke kenmerken, manier van leven, werk- en werkgeschiedenis, opleiding, rijgedragsdossier, en strafblad. Dit is onder voorbehoud van eventuele beperkingen opgelegd door de toepasselijke federale en staatswetten.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Volgens het Burgerlijk Wetboek van Californië § 1785 e.v. en § 1786 e.v., als Amazon om een rapport over mij vraagt, kan ik het bestand bekijken dat Accurate over mij bijhoudt tijdens de reguliere kantooruren. Ik begrijp dat ik ook (1) een kopie van dit bestand kan verkrijgen, na het indienen van de juiste identificatie en het betalen van de kopieerkosten, per aangetekende post of door persoonlijk op de kantoren van Accurate te verschijnen tijdens de reguliere kantooruren na een redelijke voorafgaande kennisgeving van mijn geplande verschijning; en (2) een samenvatting van dit bestand kan ontvangen van Accurate via de telefoon, op mijn kosten, na het indienen van de juiste identificatie en een schriftelijk verzoek aan Accurate voor telefonische openbaarmaking. Ik begrijp dat Accurate opgeleid personeel beschikbaar heeft om het bestand aan mij uit te leggen, inclusief gecodeerde informatie, en, als ik persoonlijk op de kantoren van Accurate verschijn, ik kan worden vergezeld door een andere persoon zolang die persoon de juiste identificatie verstrekt aan Accurate.",
+      "value" : "Volgens het Burgerlijk Wetboek van Californië § 1785 e.v. en § 1786 e.v., als Amazon om een rapport over mij vraagt, kan ik tijdens de reguliere kantooruren het bestand bekijken dat Accurate over mij bijhoudt. Ik begrijp dat ik ook (1) een kopie van dit bestand kan verkrijgen, na het indienen van de juiste identificatie en het betalen van de kopieerkosten, per aangetekende post of door persoonlijk op de kantoren van Accurate te verschijnen tijdens de reguliere kantooruren na een redelijke voorafgaande kennisgeving van mijn geplande verschijning; en (2) een samenvatting van dit bestand kan ontvangen van Accurate via de telefoon, op mijn kosten, na het indienen van de juiste identificatie en een schriftelijk verzoek aan Accurate voor telefonische openbaarmaking. Ik begrijp dat Accurate opgeleid personeel beschikbaar heeft om het bestand aan mij uit te leggen, inclusief gecodeerde informatie, en, als ik persoonlijk op de kantoren van Accurate verschijn, ik kan worden vergezeld door een andere persoon zolang die persoon de juiste identificatie verstrekt aan Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
@@ -1013,7 +1013,7 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
-      "value" : "Eerste voordeel",
+      "value" : "First Advantage",
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
@@ -1033,7 +1033,7 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "Ik begrijp dat deze:",
+      "value" : "Ik begrijp dat:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
@@ -1045,11 +1045,11 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "Onderzoek(en) dat (die) moet(en) worden uitgevoerd door First Advantage, waarvan de resultaten kunnen worden opgenomen in elk rapport dat aan Amazon wordt verstrekt, kan verschillende soorten informatie over mij bevatten met betrekking tot mijn karakter, algemene reputatie, persoonlijke kenmerken of manier van leven, werk- en werkgeschiedenis, opleiding, autorijden record, en strafblad, onder voorbehoud van eventuele beperkingen opgelegd door de toepasselijke federale en staatswet.",
+      "value" : "Onderzoek(en) dat (die) moet(en) worden uitgevoerd door First Advantage, waarvan de resultaten kunnen worden opgenomen in elk rapport dat aan Amazon wordt verstrekt, kan verschillende soorten informatie over mij bevatten met betrekking tot mijn karakter, algemene reputatie, persoonlijke kenmerken of manier van leven, tewerkstellings- en werkgeschiedenis, opleiding, historiek als bestuurder van een voertuig, en strafblad, onder voorbehoud van eventuele beperkingen opgelegd door de toepasselijke federale en staatswet.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "Volgens het Burgerlijk Wetboek van Californië § 1785 e.v. en § 1786 e.v., als Amazon om een rapport over mij vraagt, kan ik het bestand bekijken dat First Advantage over mij bijhoudt tijdens de reguliere kantooruren. Ik begrijp dat ik ook (1) een kopie van dit bestand kan verkrijgen, na het indienen van de juiste identificatie en het betalen van de kopieerkosten, per aangetekende post of door persoonlijk op de kantoren van First Advantage te verschijnen tijdens de reguliere kantooruren nadat ik een redelijke voorafgaande kennisgeving van mijn geplande verschijning heb verstrekt; en (2) ontvang een samenvatting van dit bestand van First Advantage via de telefoon, op mijn kosten, na het indienen van de juiste identificatie en een schriftelijk verzoek aan First Advantage voor telefonische openbaarmaking. Ik begrijp dat First Advantage getraind personeel beschikbaar heeft om mij zijn dossier uit te leggen, inclusief gecodeerde informatie, en als ik persoonlijk op de kantoren van First Advantage verschijnt, kan ik worden vergezeld door één andere persoon, zolang die persoon First Advantage de juiste identificatie verstrekt.",
+      "value" : "Volgens het Burgerlijk Wetboek van Californië § 1785 e.v. en § 1786 e.v., kan ik als Amazon om een rapport over mij vraagt, tijdens de reguliere kantooruren het bestand bekijken dat First Advantage over mij bijhoudt. Ik begrijp dat ik ook (1) een kopie van dit bestand kan verkrijgen, na het indienen van de juiste identificatie en het betalen van de kopieerkosten, per aangetekende post of door persoonlijk op de kantoren van First Advantage te verschijnen tijdens de reguliere kantooruren nadat ik een redelijke voorafgaande kennisgeving van mijn geplande verschijning heb verstrekt; en (2) ontvang een samenvatting van dit bestand van First Advantage via de telefoon, op mijn kosten, na het indienen van de juiste identificatie en een schriftelijk verzoek aan First Advantage voor telefonische openbaarmaking. Ik begrijp dat First Advantage getraind personeel beschikbaar heeft om mij het dossier uit te leggen, inclusief gecodeerde informatie, en als ik persoonlijk op de kantoren van First Advantage verschijn, kan ik worden vergezeld door één andere persoon, zolang die persoon First Advantage de juiste identificatie verstrekt.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1097,7 +1097,7 @@
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "Terug naar Dashboard",
+      "value" : "Terug naar dashboard",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
@@ -1113,7 +1113,7 @@
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "Terug naar Dashboard",
+      "value" : "Terug naar dashboard",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
@@ -1129,15 +1129,15 @@
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "Accommodaties",
+      "value" : "Assistentie",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Bij Amazon vieren we de diversiteit van ons personeelsbestand en de verschillende manieren waarop we werken. Als je een handicap hebt en een accommodatie nodig hebt tijdens het huurproces, inclusief de beoordeling, ga dan naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "Bij Amazon vieren we de diversiteit van ons personeelsbestand en de verschillende manieren waarop we werken. Als je een handicap hebt en assistentie nodig hebt tijdens het aanwervingsproces, inclusief de beoordeling, ga dan naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Geen enkel onderdeel van de beoordeling is getimed</b> - je kunt in je eigen tempo werken. Alle onderdelen van deze beoordeling:",
+      "value" : "<b>Geen enkel onderdeel van de beoordeling wordt getimed</b> - je kunt in je eigen tempo werken. Alle onderdelen van deze beoordeling:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1149,7 +1149,7 @@
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
-      "value" : "Begin met de evaluatie",
+      "value" : "Begin met de beoordeling",
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
@@ -1161,7 +1161,7 @@
       "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
-      "value" : "Taakdetails",
+      "value" : "Details van de functie",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
@@ -1209,7 +1209,7 @@
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "Veterale status:",
+      "value" : "Veteranenstatus:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
@@ -1221,7 +1221,7 @@
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
-      "value" : "Bedankt voor het solliciteren bij Amazon.",
+      "value" : "Bedankt voor je sollicitatie bij Amazon.",
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
@@ -1229,11 +1229,11 @@
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "Geef verwijzingsgegevens op (indien van toepassing)",
+      "value" : "Geef aanbevelingsgegevens op (indien van toepassing)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "Ben je doorverwezen door een bestaande Amazon-medewerker?",
+      "value" : "Ben je aanbevolen door een bestaande Amazon-medewerker?",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
@@ -1245,19 +1245,19 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "Ga aan de slag met activiteiten vóór indiensttreding",
+      "value" : "Ga aan de slag met activiteiten vóór indiensttreding.",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "Voordat je een afspraak maakt, vul de vragenlijst voor belastingkrediet voor werkmogelijkheden in.",
+      "value" : "Voordat je een afspraak maakt, vul je de vragenlijst voor belastingkrediet voor werkmogelijkheden in.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
-      "value" : "LATEN WE AAN DE SLAG GAAN",
+      "value" : "Laten we aan de slag gaan",
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
-      "value" : "Details van een afspraak vóór indiensttreding",
+      "value" : "Details van afspraak vóór indiensttreding.",
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
@@ -1265,11 +1265,11 @@
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
-      "value" : "Gegevens voor de afspraak",
+      "value" : "Details van de afspraak",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
-      "value" : "Dingen om mee te nemen",
+      "value" : "Zaken om mee te nemen",
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
@@ -1289,15 +1289,15 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "Als je accommodatie nodig hebt, zoals een ASL-tolk voor het wervingsevenement, ga dan naar <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> en chat met ons om een tolk aan te vragen. Neem bij het plannen van je afspraak onmiddellijk contact met ons op. We hebben minimaal 48 uur nodig voorafgaand aan je afspraak om regelingen te treffen.",
+      "value" : "Als je assistentie nodig hebt, zoals een ASL-tolk voor het wervingsevenement, ga dan naar <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> en chat met ons om een tolk aan te vragen. Neem bij het plannen van je afspraak onmiddellijk contact met ons op. We hebben minimaal 48 uur nodig voorafgaand aan je afspraak om regelingen te treffen.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "Geef je verwijzende aanmeldings-ID op (alleen kleine letters)",
+      "value" : "Geef het inlog-ID van de aanbeveler op (alleen kleine letters)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "Geef je inlog-ID voor verwijzende gebruikers op.",
+      "value" : "Geef het inlog-ID van de aanbeveler op.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
@@ -1309,7 +1309,7 @@
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT-tests nemen deel aan federale en/of nationale belastingkredietprogramma's. De informatie die je geeft, wordt gebruikt om te bepalen of het bedrijf in aanmerking komt voor deze programma's en heeft op geen enkele manier een negatieve invloed op aanwervings-, behoud- of promotiebeslissingen.",
+      "value" : "Amazon IAT-tests nemen deel aan federale en/of nationale belastingkredietprogramma's. De informatie die je geeft, wordt gebruikt om te bepalen of het bedrijf in aanmerking komt voor deze programma's en heeft op geen enkele manier een negatieve invloed op beslissingen op het vlak van aanwervingen, retenties of promoties.",
       "note" : "Text for the WOTC page description text"
     },
     "BB-Schedule-card-possible-start-date-text" : {
@@ -1345,7 +1345,7 @@
       "note" : "Text for the amazon rejects page return to dashboard text"
     },
     "BB-create-application-error-message-application-exist" : {
-      "value" : "Sorry, je hebt al gesolliciteerd voor deze vacature.",
+      "value" : "Sorry, je hebt al gesolliciteerd voor deze vacature!",
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
@@ -1525,7 +1525,7 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Het SSN-nummer of nationale identiteitsnummer dat je hebt ingevoerd, is al gekoppeld aan een ander e-mailadres in ons systeem. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "value" : "Het SSN-nummer of nationale identiteitsnummer dat je hebt ingevoerd, is al gekoppeld aan een ander e-mailadres in ons systeem. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op<a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
@@ -1533,7 +1533,7 @@
       "note" : "error message when unable to fetch job information"
     },
     "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
-      "value" : "Er is iets misgegaan bij het ophalen van vacatures. Vernieuw de pagina of probeer het later nog eens.",
+      "value" : "Er is iets misgegaan bij het ophalen van vacatures! Vernieuw de pagina of probeer het later nog eens.",
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
@@ -1541,11 +1541,11 @@
       "note" : "error message when there is a bad request to fetch shifts"
     },
     "BB-get-schedule-list-error-message-all-shift-filled" : {
-      "value" : "Alle diensten zijn gevuld.",
+      "value" : "Alle ploegen gevuld.",
       "note" : "error message when fetch shifts but all shifts are filled"
     },
     "BB-get-schedule-list-error-message-no-schedule-found" : {
-      "value" : "Alle diensten zijn gevuld.",
+      "value" : "Alle ploegen gevuld.",
       "note" : "error message when fetch shifts but no shift found"
     },
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
@@ -1553,7 +1553,7 @@
       "note" : "error message when fetch head count request failed"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
-      "value" : "Alle diensten zijn gevuld.",
+      "value" : "Alle ploegen gevuld.",
       "note" : "error message when all appointment time slots are filled"
     },
     "BB-get-time-slots-error-message-fetch_time-slot-error" : {
@@ -1561,11 +1561,11 @@
       "note" : "error message when fetch appointment time slots failed"
     },
     "BB-get-time-slots-error-message-fetch_shifts_error" : {
-      "value" : "Er is iets misgegaan bij het ophalen van vacatures. Vernieuw de pagina of probeer het later nog eens.",
+      "value" : "Er is iets misgegaan bij het ophalen van vacatures! Vernieuw de pagina of probeer het later nog eens.",
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
-      "value" : "Kan dienstvoorkeuren niet ophalen.",
+      "value" : "Kan voorkeuren voor ploegendienst niet ophalen.",
       "note" : "error message when fetch shift preference failed"
     },
     "BB-get-time-slots-error-message-shift-bad-request" : {
@@ -1673,7 +1673,7 @@
       "note" : "Text for no available time slots description title"
     },
     "BB-no-available-time-slots-select-different-job" : {
-      "value" : "1 Selecteer een andere vacature.",
+      "value" : "1. Selecteer een andere vacature.",
       "note" : "Text for no available time slots page to select different job"
     },
     "BB-no-available-time-slots-select-different-job-link" : {
@@ -1705,35 +1705,35 @@
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
-      "value" : "AL — Alabama",
+      "value" : "AL -- Alabama",
       "note" : "Text for Alabama state"
     },
     "BB-States-Alaska" : {
-      "value" : "AK — Alaska",
+      "value" : "AK -- Alaska",
       "note" : "Text for Alaska state"
     },
     "BB-States-Arizona" : {
-      "value" : "AZ — Arizona",
+      "value" : "AZ -- Arizona",
       "note" : "Text for Arizona state"
     },
     "BB-States-Arkansas" : {
-      "value" : "AR — Arkansas",
+      "value" : "AR -- Arkansas",
       "note" : "Text for Arkansas state"
     },
     "BB-States-California" : {
-      "value" : "CA — Californië",
+      "value" : "CA -- California",
       "note" : "Text for California state"
     },
     "BB-States-Colorado" : {
-      "value" : "CO — Colorado",
+      "value" : "CO -- Colorado",
       "note" : "Text for Colorado state"
     },
     "BB-States-Connecticut" : {
-      "value" : "CT — Connecticut",
+      "value" : "CT -- Connecticut",
       "note" : "Text for Connecticut state"
     },
     "BB-States-Delaware" : {
-      "value" : "DE — Delaware",
+      "value" : "DE -- Delaware",
       "note" : "Text for Delaware state"
     },
     "BB-States-District-of-Columbia" : {
@@ -1741,103 +1741,103 @@
       "note" : "Text for District of Columbia state"
     },
     "BB-States-Florida" : {
-      "value" : "FL — Florida",
+      "value" : "F -- Florida",
       "note" : "Text for Florida state"
     },
     "BB-States-Georgia" : {
-      "value" : "GA — Georgia",
+      "value" : "GA -- Georgia",
       "note" : "Text for Georgia state"
     },
     "BB-States-Hawaii" : {
-      "value" : "HI — Hawaï",
+      "value" : "HI -- Hawaï",
       "note" : "Text for Hawaii state"
     },
     "BB-States-Idaho" : {
-      "value" : "ID — Idaho",
+      "value" : "ID -- Idaho",
       "note" : "Text for Idaho state"
     },
     "BB-States-Illinois" : {
-      "value" : "IL — Illinois",
+      "value" : "IL -- Illinois",
       "note" : "Text for Illinois state"
     },
     "BB-States-Indiana" : {
-      "value" : "IN — Indiana",
+      "value" : "IN -- Indiana",
       "note" : "Text for Indiana state"
     },
     "BB-States-Iowa" : {
-      "value" : "IA — Iowa",
+      "value" : "IA -- Iowa",
       "note" : "Text for Iowa state"
     },
     "BB-States-Kansas" : {
-      "value" : "KS — Kansas",
+      "value" : "KS -- Kansas",
       "note" : "Text for Kansas state"
     },
     "BB-States-Kentucky" : {
-      "value" : "KY — Kentucky",
+      "value" : "KY -- Kentucky",
       "note" : "Text for Kentucky state"
     },
     "BB-States-Louisiana" : {
-      "value" : "LA — Louisiana",
+      "value" : "LA -- Louisiana",
       "note" : "Text for Louisiana state"
     },
     "BB-States-Maine" : {
-      "value" : "ME — Maine",
+      "value" : "ME -- Maine",
       "note" : "Text for Maine state"
     },
     "BB-States-Maryland" : {
-      "value" : "MD — Maryland",
+      "value" : "MD -- Maryland",
       "note" : "Text for Maryland state"
     },
     "BB-States-Massachusetts" : {
-      "value" : "MA — Massachusetts",
+      "value" : "MA -- Massachusetts",
       "note" : "Text for Massachusetts state"
     },
     "BB-States-Michigan" : {
-      "value" : "MI — Michigan",
+      "value" : "MI -- Michigan",
       "note" : "Text for Michigan state"
     },
     "BB-States-Minnesota" : {
-      "value" : "MN — Minnesota",
+      "value" : "MN -- Minnesota",
       "note" : "Text for Minnesota state"
     },
     "BB-States-Mississippi" : {
-      "value" : "MS — Mississippi",
+      "value" : "MS -- Mississippi",
       "note" : "Text for Mississippi state"
     },
     "BB-States-Missouri" : {
-      "value" : "MO — Missouri",
+      "value" : "MO -- Missouri",
       "note" : "Text for Missouri state"
     },
     "BB-States-Montana" : {
-      "value" : "MT — Montana",
+      "value" : "MT -- Montana",
       "note" : "Text for Montana state"
     },
     "BB-States-Nebraska" : {
-      "value" : "NE — Nebraska",
+      "value" : "NE -- Nebraska",
       "note" : "Text for Nebraska state"
     },
     "BB-States-Nevada" : {
-      "value" : "NV — Nevada",
+      "value" : "NV -- Nevada",
       "note" : "Text for Nevada state"
     },
     "BB-States-New-Hampshire" : {
-      "value" : "NH — New Hampshire",
+      "value" : "NH -- New Hampshire",
       "note" : "Text for New Hampshire state"
     },
     "BB-States-New-Jersey" : {
-      "value" : "NJ — New Jersey",
+      "value" : "NJ -- New Jersey",
       "note" : "Text for New Jersey state"
     },
     "BB-States-New-Mexico" : {
-      "value" : "NM — New Mexico",
+      "value" : "NM -- New Mexico",
       "note" : "Text for New Mexico state"
     },
     "BB-States-New-York" : {
-      "value" : "NY - New York",
+      "value" : "NY -- New York",
       "note" : "Text for New York state"
     },
     "BB-States-North-Carolina" : {
-      "value" : "NC — North Carolina",
+      "value" : "NC -- North Carolina",
       "note" : "Text for North Carolina state"
     },
     "BB-States-North-Dakota" : {
@@ -1845,51 +1845,51 @@
       "note" : "Text for North Dakota state"
     },
     "BB-States-Ohio" : {
-      "value" : "OH — Ohio",
+      "value" : "OH -- Ohio",
       "note" : "Text for Ohio state"
     },
     "BB-States-Oklahoma" : {
-      "value" : "OK — Oklahoma",
+      "value" : "OK -- Oklahoma",
       "note" : "Text for Oklahoma state"
     },
     "BB-States-Oregon" : {
-      "value" : "OR — Oregon",
+      "value" : "OR -- Oregon",
       "note" : "Text for Oregon state"
     },
     "BB-States-Pennsylvania" : {
-      "value" : "PA — Pennsylvania",
+      "value" : "PA -- Pennsylvania",
       "note" : "Text for Pennsylvania state"
     },
     "BB-States-Rhode-Island" : {
-      "value" : "RI — Rhode Island",
+      "value" : "RI -- Rhode Island",
       "note" : "Text for Rhode Island state"
     },
     "BB-States-South-Carolina" : {
-      "value" : "SC — South Carolina",
+      "value" : "SC -- South Carolina",
       "note" : "Text for South Carolina state"
     },
     "BB-States-South-Dakota" : {
-      "value" : "SD — South Dakota",
+      "value" : "SD -- South Dakota",
       "note" : "Text for South Dakota state"
     },
     "BB-States-Tennessee" : {
-      "value" : "TN — Tennessee",
+      "value" : "TN -- Tennessee",
       "note" : "Text for Tennessee state"
     },
     "BB-States-Texas" : {
-      "value" : "TX — Texas",
+      "value" : "TX -- Texas",
       "note" : "Text for Texas state"
     },
     "BB-States-Utah" : {
-      "value" : "UT — Utah",
+      "value" : "UT -- Utah",
       "note" : "Text for Utah state"
     },
     "BB-States-Vermont" : {
-      "value" : "VT — Vermont",
+      "value" : "VT -- Vermont",
       "note" : "Text for Vermont state"
     },
     "BB-States-Virginia" : {
-      "value" : "VA — Virginia",
+      "value" : "VA -- Virginia",
       "note" : "Text for Virginia state"
     },
     "BB-States-Washington" : {
@@ -1969,7 +1969,7 @@
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "Jouw lokale HR-team of het Employee Resource Center (ERC) zijn de beste bron voor al jouw vragen. Je kunt het ERC-team 24/7 bereiken op het telefoonnummer 1-888-892-7180 (tel:18888927180).",
+      "value" : "Jouw lokale HR-team of het Employee Resource Center (ERC) zijn de beste bron voor al jouw vragen. Je kunt het ERC-team 24/7 bereiken op het telefoonnummer 1-888-892-7180.",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
@@ -2021,7 +2021,7 @@
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
-      "value" : "JA, IK HEB EEN HANDICAP (of had vroeger een handicap)",
+      "value" : "JA, IK HEB EEN HANDICAP (of heb eerder een handicap gehad)",
       "note" : "Text for the reverse mapping candidate disability yes"
     },
     "BB-ReverseMapping-candidate-disability-no" : {
@@ -2029,15 +2029,15 @@
       "note" : "Text for the reverse mapping candidate disability no"
     },
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
-      "value" : "IK WENS NIET TE ANTWOORDEN",
+      "value" : "IK WIL NIET ANTWOORDEN",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     },
     "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
-      "value" : "Amerikaans-Indiaans/Alaska inheems",
+      "value" : "Amerikaans-Indiaans / Inheems van Alaska",
       "note" : "Text for the reverse mapping candidate ethnicity american indian"
     },
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
-      "value" : "Zwart/Afro-Amerikaans",
+      "value" : "Zwart / Afro-Amerikaans",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }

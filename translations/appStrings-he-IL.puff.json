@@ -5,7 +5,7 @@
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "חזרה ללוח הבקרה של דף המשרות",
+      "value" : "חזרה לעמוד המשרות",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
@@ -49,7 +49,7 @@
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "בכך שאתה מגיש את מועמדותך, אתה מאשר כי:",
+      "value" : "בהגשת מועמדותך, אתה מאשר כי:",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
@@ -69,15 +69,15 @@
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon מחויבת למקום עבודה מגוון וכוללני. Amazon בעד שוויון הזדמנויות ואינה מפלה על בסיס גזע, מוצא לאומי, מין, זהות מגדרית, נטייה מינית, מעמד יוצא צבא מוגן, מוגבלות, גיל או מעמד אחר המוגן מבחינה משפטית. עבור אנשים עם מוגבלות המעוניינים לבקש מקום לינה, יש לבקר בכתובת <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "Amazon מתחייבת למקום עבודה מגוון וכוללני. Amazon בעד שוויון הזדמנויות ואינה מפלה על בסיס גזע, מוצא לאומי, מין, זהות מגדרית, נטייה מינית, מצב מוגן של  יוצא צבא, מוגבלות, גיל או מעמד אחר המוגן מבחינה משפטית. עבור אנשים עם מוגבלויות המעוניינים לבקש מקום לינה, יש לבקר בכתובת <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "Amazon מתייחסת ברצינות להגנה על הנתונים האישיים שלך ותעבד את הנתונים האישיים שלך רק בהתאם לחוק. בפרט, איננו משתפים את הנתונים האישיים שלך עם צד שלישי כלשהו ללא הסכמתך מראש, אלא אם כן נאלצנו לעשות זאת על פי חוק. אלא אם כן תביע אחרת, חברת Amazon המעסיקה תשמור את הנתונים האישיים שלך במאגר הנתונים האלקטרוני המנוהל על ידי Amazon.com בארה\"ב או באחת החברות השותפות שלה. לקבלת מידע מלא על האופן שבו Amazon שומרת ומעבדת את הנתונים האישיים שלך, יש ללחוץ כאן <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "value" : "Amazon מתייחסת ברצינות להגנה על הנתונים האישיים שלך ותעבד את הנתונים האישיים שלך רק בהתאם לחוק. בפרט, איננו משתפים את הנתונים האישיים שלך עם צד שלישי כלשהו ללא הסכמתך מראש, אלא אם כן נאלצנו לעשות זאת על פי חוק. אלא אם תביע רצון אחר, חברת Amazon המעסיקה תשמור את הנתונים האישיים שלך במאגר הנתונים האלקטרוני המנוהל על ידי Amazon.com בארה\"ב או באחת החברות השותפות שלה. לקבלת מידע מלא על האופן שבו Amazon שומרת ומעבדת את הנתונים האישיים שלך, יש ללחוץ כאן <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "בנוסף לתפקיד אליו הגשת מועמדות היום, ייתכן שיהיו לנו תפקידים אחרים הדורשים פונקציות עבודה זהות או דומות. תפקידים אלה עשויים להיות במשרה מלאה, משרה חלקית, משרה עונתית ו/או זמנית הזמינים במיקום זה או במיקומים סמוכים אחרים של Amazon. אינך מחויב לקבל כל תפקיד בחברת Amazon או השותפים שלנו, עם זאת, על ידי השלמת הבקשה שלך אתה מסכים להישקל לתפקידים שעתיים באותה רמה ברדיוס של 50 קילומטרים מאזור הגשת המועמדות שלך. זה כולל שיתוף פרטי המועמדות שלך עם השותפים שלנו (סוכנויות כוח האדם) שמגייסים עובדים גם לצרכים הקבועים וגם לצרכים הזמניים שלנו.",
+      "value" : "בנוסף לתפקיד אליו הגשת מועמדות היום, ייתכן שיהיו לנו תפקידים אחרים הדורשים משימות עבודה זהות או דומות. תפקידים אלה עשויים להיות במשרה מלאה, משרה חלקית, משרה עונתית ו/או זמנית הזמינים במיקום זה או במיקומים סמוכים אחרים של Amazon. אינך מחויב לקבל כל תפקיד בחברת Amazon או השותפים שלנו, עם זאת, על ידי השלמת הבקשה שלך אתה מסכים להישקל לתפקידים באותה רמה ובאותם שעות עבודה ברדיוס של 50 קילומטרים מאזור הגשת המועמדות שלך. זה כולל שיתוף פרטי המועמדות שלך עם השותפים שלנו (סוכנויות כוח האדם) שמגייסים עובדים גם לצרכים הקבועים וגם לצרכים הזמניים שלנו.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
@@ -89,7 +89,7 @@
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "הסכמה לעיבוד, ניתוח והערכה של הנתונים האישיים שלך על ידי Amazon, salesforce.com או כל צד שלישי אחר למטרות הגשת המועמדות שלך ולכל מטרה לגיטימית אחרת של Amazon. למען הסר ספק, ״העיבוד״ של הנתונים האישיים שלך יכלול אך לא יוגבל לאיסוף, קבלה, הקלטה, ארגון, איסוף, אחסון, עדכון, שינוי, שימוש, הפצה, מיזוג, קישור, חסימה, ירידה, מחיקה או השמדה של הנתונים האישיים שלך;",
+      "value" : "הסכמה לעיבוד, ניתוח והערכה של הנתונים האישיים שלך על ידי Amazon, salesforce.com או כל צד שלישי אחר למטרות הגשת המועמדות שלך ולכל מטרה לגיטימית אחרת של Amazon. למען הסר ספק, ״עיבוד״ הנתונים האישיים שלך יכלול אך לא יוגבל לאיסוף, קבלה, הקלטה, ארגון, איסוף, אחסון, עדכון, שינוי, שימוש, הפצה, מיזוג, קישור, חסימה, ירידה, מחיקה או השמדה של הנתונים האישיים שלך;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
@@ -129,11 +129,11 @@
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "להחיל",
+      "value" : "הגשת מועמדות",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "להחיל",
+      "value" : "הגשת מועמדות",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
@@ -209,15 +209,15 @@
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "הנה ההצעה המותנית של התפקיד שבחרת.",
+      "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "הנה ההצעה המותנית של התפקיד שבחרת.",
+      "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. במקרה זה, צפה לשמוע מאיתנו בקרוב.",
+      "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות להעסקה חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. אם זה המקרה, אתה יכול לצפות לשמוע מאיתנו בקרוב.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -241,7 +241,7 @@
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "בכך שאתה מקבל הצעה זו, אתה מאשר שאתה מבין את הדרישות של תפקיד זה.",
+      "value" : "בקבלת הצעה זו, הינך מאשר שאתה מבין את הדרישות של תפקיד זה.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
@@ -257,7 +257,7 @@
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "אישורים והראשות של חוק דיווח אשראי לא הוגן אישורים לבדיקת רקע",
+      "value" : "אישורים והרשאות של חוק דיווח אשראי לא הוגן ואישורים לבדיקת רקע",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
@@ -336,20 +336,28 @@
       "value" : "יש להזין שם מדינה חוקי",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "מספר זהות לאומי",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "תעודת זהות לאומית",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "יש להזין סוג מזהה לאומי חוקי",
+      "value" : "יש להזין סוג מספר מזהה לאומי חוקי",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "מספר זיהוי",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "מספר זהות לאומי",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "יש להזין מספר ביטוח לאומי חוקי של 9 ספרות ללא מקף",
+      "value" : "יש להזין מספר ביטוח לאומי חוקי בעל 9 ספרות ללא מקף",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -359,6 +367,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "יש להזין תאריך לידה חוקי.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "אתה צריך להיות מעל גיל 18.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "מספר ביטוח לאומי",
@@ -389,7 +401,7 @@
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "בקשר לבקשה שלך לעבוד אצל Amazon.com, Inc. או החברות הבת שלה או החברות השותפות שלה (\"Amazon\"), נשיג דוח צרכנים עליך מסוכנות דיווח צרכנית. זה ידוע בכינוי \"בדיקת רקע\".",
+      "value" : "בקשר לבקשה שלך לעבוד אצל Amazon.com, Inc. או אצל חברות הבת שלה או החברות השותפות שלה (\"Amazon\"), נשיג דוח צרכנים עליך מסוכנות דיווח צרכנית. זה ידוע בתור \"בדיקת רקע\".",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
@@ -397,7 +409,7 @@
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "בחתימתי האלקטרונית להלן, אני מאשר בזאת ל-Amazon לרכוש את דוח הצרכנים הנ\"ל כעת ולאורך כל עבודה או מעורבות שיש לי עם חברת Amazon.",
+      "value" : "על ידי החתימה האלקטרונית להלן, אני מאשר בזאת ל-Amazon לרכוש את דוח הצרכנים הנ\"ל כעת ולאורך כל עבודה או מעורבות שיש לי עם חברת Amazon.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
@@ -413,7 +425,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "יש להקליד את שמך המלא כאן",
+      "value" : "יש להקליד את השם המלא כאן",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
@@ -429,11 +441,11 @@
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "ספק בדיקת הרקע או \"CRA\", אשר יבצע את בדיקת הרקע הוא First Advantage, הממוקם ב-1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, and can be reached at (800) 845-6004 or www.fadv.com.",
+      "value" : "ספק בדיקת הרקע או \"CRA\", אשר יבצע את בדיקת הרקע הוא First Advantage, הממוקם ב-1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, אפשר ליצור איתו קשר במספר (800) 845-6004 או בכתובת www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "ספק בדיקת הרקע או \"CRA\", אשר יבצע את בדיקת הרקע הוא Accurate Background, אשר ממוקם בכתובת 7515 Irvine Center Dr., Irvine, CA 92618, וניתן להגיע אליו ב- (800) 216-8024 או www.accuratebackground.com.\n\n* אני מבין ומסכים כי כפי ככל שהחוק מתיר, Amazon יכולה להזמין בדיקות רקע נוספות עלי למטרות תעסוקה, ללא אישור נוסף שלי, (1) במהלך עבודתי, אם יש, ו-(2) מ- CRAs מלבד Accurate Background.",
+      "value" : "ספק בדיקת הרקע או \"CRA\", אשר יבצע את בדיקת הרקע הוא Accurate Background, אשר ממוקם בכתובת 7515 Irvine Center Dr., Irvine, CA 92618, וניתן ליצור איתו קשר במספר (800) 216-8024 או בכתובת www.accuratebackground.com.\n\n* אני מבין ומסכים כי כפי ככל שהחוק מתיר, Amazon יכולה להזמין בדיקות רקע נוספות עלי למטרות תעסוקה, ללא אישור נוסף שלי, (1) במהלך עבודתי, אם יש, ו-(2) מ- CRAs מלבד Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
@@ -453,11 +465,11 @@
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>קליפורניה: </b>תקבל גילוי נאות נפרד בקליפורניה בנוגע לדוח צרכנים חקירתי (\"גילוי נאות בקליפורניה\"). זהו מסמך חשוב; יש לעיין בו בקפידה. כמו כן, יש ללחוץ על <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> אם אתה מחפש עבודה או כבר מועסק על ידי החברה בסן פרנסיסקו. בחתימתך להלן, על פי החוק בקליפורניה ו“גילוי בקליפורניה“, אתה מאשר בזאת ל-Amazon לקבל דוח צרכנים חקירתי, הידוע גם כבדיקת רקע, עכשיו ובכל עת במהלך כל עבודה עם Amazon.</p>",
+      "value" : "<p><b>קליפורניה: </b>תקבל גילוי נפרד בנוגע לדוח צרכנים חקירתי (\"California Disclosure). זהו מסמך חשוב; יש לעיין בו בקפידה. כמו כן, יש ללחוץ על <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> אם אתה מחפש עבודה או כבר מועסק על ידי החברה בסן פרנסיסקו. בחתימתך להלן, על פי החוק בקליפורניה ו“California Disclosure“, אתה מאשר בזאת ל-Amazon לקבל דו“ח צרכנים חקירתי, הידוע גם כבדיקת רקע, עכשיו ובכל עת במהלך כל עבודה עם Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>קליפורניה: </b>תקבל גילוי נאות נפרד בקליפורניה בנוגע לדוח צרכנים חקירתי (\"גילוי נאות בקליפורניה\"). זהו מסמך חשוב; יש לעיין בו בקפידה. כמו כן, יש ללחוץ על <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> אם אתה מחפש עבודה או כבר מועסק על ידי החברה בסן פרנסיסקו. בחתימתך להלן, על פי החוק בקליפורניה ו“גילוי בקליפורניה“, אתה מאשר בזאת ל-Amazon לקבל דוח צרכנים חקירתי, הידוע גם כבדיקת רקע, עכשיו ובכל עת במהלך כל עבודה עם Amazon.</p>",
+      "value" : "<p><b>קליפורניה: </b>תקבל גילוי נפרד בנוגע לדוח צרכנים חקירתי (\"California Disclosure). זהו מסמך חשוב; יש לעיין בו בקפידה. כמו כן, יש ללחוץ על <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> אם אתה מחפש עבודה או כבר מועסק על ידי החברה בסן פרנסיסקו. בחתימתך להלן, על פי החוק בקליפורניה ו“California Disclosure“, אתה מאשר בזאת ל-Amazon לקבל דו“ח צרכנים חקירתי, הידוע גם כבדיקת רקע, עכשיו ובכל עת במהלך כל עבודה עם Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
@@ -469,7 +481,7 @@
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>ניו יורק:  </b>יש לך הזכות להגיש בקשה בכתב ל-Amazon כדי לדעת אם הזמנו דוח צרכנים או דוח צרכנים חקירתי אודותיך. המוצג לעיל הם הכתובת ומספר הטלפון של ה-CRA. יש לך הזכות ליצור קשר עם כל סוכנות CRA כדי לבדוק או לקבל עותק של דוח כזה. יש ללחוץ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">כאן</a> כדי לקבל מידע על זכויותיך לפי סעיף 23-A לחוק התיקון בניו יורק.</p>",
+      "value" : "<p><b>ניו יורק: </b>יש לך את הזכות להגיש בקשה בכתב ל-Amazon כדי לדעת אם הזמנו דוח צרכנים או דוח צרכנים חקירתי אודותיך. המוצג לעיל הם הכתובת ומספר הטלפון של ה-CRA. יש לך את הזכות ליצור קשר עם כל סוכנות CRA כדי לבדוק או לקבל עותק של דוח כזה. יש ללחוץ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">כאן</a> כדי לקבל מידע על זכויותיך לפי סעיף 23-A לחוק התיקון בניו יורק.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
@@ -477,19 +489,19 @@
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
-      "value" : "<p><b>כל המדינות: </b>אם תסמן תיבה זו, נספק לך עותק חינם של כל בדיקת רקע</p>",
+      "value" : "<p><b>כל המדינות: </b>אנו נספק לך עותק חינם של כל בדיקת רקע שהיא אם תסמן תיבה זו</p>",
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "יש להזין שם חוקי מלא שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
+      "value" : "יש להזין שם מלא חוקי שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
-      "value" : "שם חוקי מלא קודם",
+      "value" : "שם מלא קודם חוקי",
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "יש להזין שם חוקי מלא שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
+      "value" : "יש להזין שם מלא חוקי שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
@@ -497,11 +509,11 @@
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "יש להזין שם חוקי מלא שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
+      "value" : "יש להזין שם מלא חוקי שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "שם חוקי מלא קודם (2)",
+      "value" : "שם מלא קודם חוקי (2)",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
@@ -545,23 +557,23 @@
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
-      "value" : "האם אתה בטוח שאתה רוצה להמשיך ללא מספר ביטוח לאומי (SSN)?",
+      "value" : "האם אתה בטוח שתרצה להמשיך ללא מספר ביטוח לאומי (SSN)?",
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "אם יש לך SSN, אתה נדרש לספק אותו. אם לא תעשה כן, הדבר עלול לגרום לעיכובים בתהליך ההעסקה, מה שעלול להוביל להחמצת תאריך ההתחלה ולאובדן המשמרת שבחרת.",
+      "value" : "אם יש לך SSN, אתה נדרש לספק אותו. אם לא ייעשה כך, הדבר עלול לגרום לעיכובים בתהליך ההעסקה, מה שעלול להוביל להחמצת תאריך ההתחלה ולאובדן המשמרת שנבחרה.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "על ידי המשך, אני מאשר כי אין לי SSN.  אני מבין שככל המותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
+      "value" : "באם אני ממשיך, אני מאשר כי אין לי SSN.  אני מבין שככל המותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "אני גם מכיר בכך שכל מצג שווא מכוון של ה-SSN שלי יילקח בחשבון על ידי Amazon ויוכל להוביל לביטול הצעת העבודה שלי או, אם אני מועסק, לסיום העסקתי.",
+      "value" : "אני גם מכיר בכך שכל הצגה לא נכונה באופן מכוון של ה-SSN שלי זה יילקח בחשבון על ידי Amazon ויוכל להוביל לביטול הצעת העבודה שלי או, אם אני מועסק, לסיום העסקתי.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
-      "value" : "קראתי והבנתי את המונחים לעיל.",
+      "value" : "קראתי והבנתי את התנאים לעיל.",
       "note" : "consent checkbox in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-continue-button" : {
@@ -593,15 +605,15 @@
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "בחתימתי האלקטרונית להלן, אני מאשר כי קראתי, הבנתי ואישרתי את כל ההצהרות המופיעות באישורים ובהרשאות של חוק דיווח אשראי לא הוגן זה לצורך בדיקת רקע. יש לסמן את הסכמתך על ידי הזנת המידע המבוקש בשדות שלהלן. ",
+      "value" : "בחתימתי האלקטרונית להלן, אני מאשר כי קראתי, הבנתי ואישרתי את כל ההצהרות המופיעות באישורים ובהרשאות של חוק דיווח אשראי לא הוגן זה לצורך בדיקת רקע. יש לסמן הסכמתך על ידי הזנת המידע המבוקש בשדות שלהלן. ",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
-      "value" : "יש להקליד את שמך המלא כחתימה אלקטרונית",
+      "value" : "יש להקליד את השם המלא כחתימה אלקטרונית",
       "note" : "Text for the non fcra acknowledgement and authorization input label text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
-      "value" : "חתימות אלקטרוניות אינן תואמות. יש להשתמש באותו טקסט עבור כל החתימות האלקטרוניות.",
+      "value" : "החתימות האלקטרוניות אינן תואמות. יש להשתמש באותו טקסט עבור כל החתימות האלקטרוניות.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
@@ -613,11 +625,11 @@
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
-      "value" : "יש להקליד את שמך המלא כחתימה אלקטרונית",
+      "value" : "יש להקליד את השם המלא כחתימה אלקטרונית",
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "אני רוצה עותק חינם של בדיקת הרקע שלי",
+      "value" : "אשמח לקבל עותק חינם של בדיקת הרקע שלי",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
@@ -625,7 +637,7 @@
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "יש לחזור אל לוח הבקרה כדי לחדש את הגשת המעומדות שלך או כדי להציג את המעומדות ואת פרטי פגישת ההעסקה שלך ואת השלבים הבאים לביצוע.",
+      "value" : "יש לחזור אל לוח הצעות העבודה כדי לחדש את הגשת המעומדות שלך או כדי להציג את המעומדות ואת פרטי פגישת ההעסקה שלך ואת השלבים הבאים לביצוע.",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
@@ -645,15 +657,15 @@
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
-      "value" : "למה אתה מתבקש למלא את הטופס הזה?",
+      "value" : "מה סיבת הבקשה למילוי טופס זה?",
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "אנו קבלן פדרלי או קבלן משנה הנדרש על פי חוק לספק הזדמנות תעסוקה שווה לאנשים מוסמכים עם מוגבלות. כמו כן, אנו נדרשים למדוד את ההתקדמות שלנו לקראת כך שלפחות 7% מכוח העבודה שלנו יהיו אנשים עם מוגבלות. לשם כך, עלינו לשאול מועמדים ועובדים אם יש להם מוגבלות או שהייתה להם אי פעם מוגבלות. מכיוון שאדם עלול להפוך לנכה בכל עת, אנו מבקשים מכל העובדים שלנו לעדכן את המידע שלהם לפחות אחת לחמש שנים.",
+      "value" : "אנחנו קבלנים פדרליים או קבלני משנה הנדרשים על פי חוק לספק הזדמנות תעסוקה שווה לאנשים מוסמכים עם מוגבלויות. כמו כן, אנחנו נדרשים למדוד את ההתקדמות שלנו לכך שלפחות 7% מכוח העבודה שלנו יהיו אנשים עם מוגבלויות. לשם כך, עלינו לשאול מועמדים ועובדים אם יש להם מוגבלות או שהייתה להם אי פעם מוגבלות כלשהי. מכיוון שאדם עלול להפוך לנכה בכל עת, אנחנו מבקשים מכל העובדים שלנו לעדכן את המידע שלהם לפחות אחת לחמש שנים.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "זיהוי עצמך כאדם עם מוגבלות הוא מרצון, ואנו מקווים שתבחר לעשות זאת. תשובתך תישמר בסודיות וגורמים נבחרים או כל אדם אחר המעורב בקבלת החלטות כוח אדם לא יוכלו לראות אותה. מילוי הטופס לא ישפיע עליך לרעה בשום דרך בין אם הזדהית בעבר או לא. לקבלת מידע נוסף אודות טופס זה או חובות ההעסקה השוות של קבלנים פדרליים לפי סעיף 503 לחוק השיקום, יש לבקר באתר האינטרנט של משרד העבודה האמריקאי לתוכניות עמידה בחוזים פדרליים בכתובת <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "זיהוי עצמי כאדם עם מוגבלות הוא מרצון, ואנו מקווים שתבחר לעשות זאת. תשובתך תישמר בסודיות וגורמים נבחרים או כל אדם אחר המעורב בקבלת החלטות כוח אדם לא יוכלו לראות אותה. מילוי הטופס לא ישפיע עליך לרעה בשום דרך בין אם הזדהית בעבר או לא. לקבלת מידע נוסף אודות טופס זה או חובות ההעסקה שוות של קבלנים פדרליים לפי סעיף 503 לחוק השיקום, יש לבקר באתר האינטרנט של משרד העבודה האמריקאי לתוכניות עמידה בחוזים פדרליים בכתובת <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
@@ -725,15 +737,15 @@
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "מצב מערכת העצבים, למשל, מיגרנה, מחלת פרקינסון, או טרשת נפוצה (MS)",
+      "value" : "בעיה במערכת העצבים, למשל, מיגרנה, מחלת פרקינסון, או טרשת נפוצה (MS)",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
-      "value" : "מצב פסיכיאטרי, למשל, הפרעה דו-קוטבית, סכיזופרניה, הפרעה פוסט טראומטית או דיכאון קליני",
+      "value" : "מצב פסיכיאטרי, למשל, הפרעה דו-קוטבית, סכיזופרניה, הפרעת דחק פוסט טראומטית או דיכאון קליני",
       "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
     },
     "BB-SelfId-disability-form-card-title-text" : {
-      "value" : "הזדהות מרצון של פרט כאדם עם מוגבלות",
+      "value" : "הזדהות מרצון ובאופן התנדבותי כאדם עם מוגבלות",
       "note" : "Text for the disability form card title"
     },
     "BB-SelfId-form-continue-button-text" : {
@@ -757,7 +769,7 @@
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
-      "value" : "אינני רוצה לענות",
+      "value" : "אני מעדיף לא לענות",
       "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
     },
     "BB-SelfId-disability-form-disability-public-burden-header-text" : {
@@ -765,15 +777,15 @@
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
-      "value" : "על פי חוק הפחתת הניירת משנת 1995, אנשים אינם נדרשים להגיב לאוסף של מידע אלא אם אוסף כזה מציג מספר בקרת OMB תקף. מילוי הסקר הזה אמור להימשך כ-5 דקות.\n",
+      "value" : "על פי חוק הפחתת הניירת משנת 1995, אנשים אינם נדרשים להגיב לאוסף של מידע אלא אם אוסף כזה מציג מספר בקרת OMB תקף. מילוי הסקר הזה אמור לקחת כ-5 דקות.\n",
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
-      "value" : "טופס זיהוי עצמי מרצון של שוויון הזדמנויות",
+      "value" : "מילוי מרצון של טופס לשוויון הזדמנויות ",
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon מעריכה את כל סוגי הגיוון וכפופה לאי-אפליה מסוימת ולדרישות רישום ודיווח של אפליה מתקנת המחייבות אותנו להזמין מועמדים ועובדים להזדהות מרצון בנוגע למין והגזע/המוצא האתני שלהם. מסירת מידע זה הינה מרצון וסירוב למסור לא יגרום לטיפול שלילי במועמדות שלך. המידע המתקבל יישמר בסודיות וניתן להשתמש בו רק בהתאם להוראות החוקים הפדרליים החלים, צווי ביצוע ותקנות, כולל אלה המחייבים לסכם את המידע ולדווח לממשלה הפדרלית למטרות אכיפת זכויות אזרח. אם תבחר שלא להזדהות בנוגע למגדר או הגזע/המוצא האתני שלך בשלב זה, הממשלה הפדרלית דורשת מאיתנו לקבוע מידע זה לעובדים על ידי סקר חזותי ו/או מידע זמין אחר.",
+      "value" : "Amazon מעריכה את כל סוגי הגיוון וכפופה לאי-אפליה מסוימת ולדרישות רישום ודיווח של אפליה מתקנת המחייבות אותנו להזמין מועמדים ועובדים להזדהות מרצון בנוגע למין והגזע/המוצא האתני שלהם. מסירת מידע זה הינה מרצון וסירוב למסרה לא יגרום לטיפול שלילי במועמדות שלך. המידע המתקבל יישמר בסודיות וניתן להשתמש בו רק בהתאם להוראות החוקים הפדרליים החלים, צווי ביצוע ותקנות, כולל אלה המחייבים לסכם את המידע ולדווח לממשלה הפדרלית למטרות אכיפת זכויות אזרח. אם תבחר שלא להזדהות בנוגע למגדר או הגזע/המוצא האתני שלך בשלב זה, הממשלה הפדרלית דורשת מאיתנו לקבוע מידע זה עבור העובדים על ידי סקר חזותי ו/או מידע זמין אחר.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
@@ -849,7 +861,7 @@
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "אנשים שאינם היספנים שמזדהים עם יותר מאחד מחמשת הגזעים הבאים: (1) לבן, (2) שחור, (3) אסייתי, (4) יליד הוואי/איים אחרים באוקיאנוס השקט, (5) אינדיאני/יליד אלסקה",
+      "value" : "אנשים שאינם היספנים שמזדהים עם יותר מאחד מחמשת הגזעים הבאים: (1) לבן, (2) שחור, (3) אסייתי, (4) יליד הוואי/איים אחרים באוקיינוס השקט, (5) אינדיאני-אמריקאי/יליד אלסקה",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
@@ -861,11 +873,11 @@
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "ב-Amazon, אלפי יוצאי צבא ובני זוג של אנשי צבא מניעים חדשנות ומעלים את הרף של חוויית הלקוח. על בסיס יומיומי, בעלי רקע צבאי מיישמים את הידע, המיומנות ויכולות המנהיגות שלהם במגוון רחב של קריירות - ומניעים שינוי ברחבי העולם. מסיבות אלה, אנו מעסיקים על בסיס קבוע יוצאי צבא ואת בני זוגם.",
+      "value" : "ב-Amazon, אלפי יוצאי צבא ובני זוג של אנשי צבא מניעים חדשנות ומעלים את הרף של חוויית הלקוח. על בסיס יומיומי, בעלי רקע צבאי מיישמים את הידע, המיומנות ויכולות המנהיגות שלהם במגוון רחב של קריירות - ומשפיעים על שינוי ברחבי העולם. מסיבות אלה, אנו ממשיכים להעסיק יוצאי צבא ואת בני זוגם.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "ב-Amazon, אלפי יוצאי צבא ובני זוג של אנשי צבא מניעים חדשנות ומעלים את הרף של חוויית הלקוח. על בסיס יומיומי, בעלי רקע צבאי מיישמים את הידע, המיומנות ויכולות המנהיגות שלהם במגוון רחב של קריירות - ומניעים שינוי ברחבי העולם. מסיבות אלה, אנו מעסיקים על בסיס קבוע יוצאי צבא ואת בני זוגם.",
+      "value" : "ב-Amazon, אלפי יוצאי צבא ובני זוג של אנשי צבא מניעים חדשנות ומעלים את הרף של חוויית הלקוח. על בסיס יומיומי, בעלי רקע צבאי מיישמים את הידע, המיומנות ויכולות המנהיגות שלהם במגוון רחב של קריירות - ומשפיעים על שינוי ברחבי העולם. מסיבות אלה, אנו ממשיכים להעסיק יוצאי צבא ואת בני זוגם.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
@@ -909,11 +921,11 @@
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>יוצא צבא נכה</b>: יוצא צבא של חיל רגלים, חיל הים או חיל האוויר של צבא ארה״ב הזכאי לפיצוי (מלבד קבלת דמי פרישה צבאיים, יהיה זכאי לפיצוי) על פי חוקים המנוהלים על ידי מזכיר לענייני יוצאי צבא; או אדם ששוחרר משירות פעיל בשל מוגבלות הקשורה לשירות.",
+      "value" : "<b>יוצא צבא נכה</b>: יוצא צבא ארה“ב, חיל רגלים, חיל הים או חיל האוויר הזכאי לפיצוי (מלבד קבלת דמי פרישה צבאיים, יהיה זכאי לפיצוי) על פי חוקים המנוהלים על ידי המזכירות לענייני יוצאי צבא; או אדם ששוחרר משירות פעיל בשל מוגבלות הקשורה לשירות.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: כל יוצא צבא במהלך תקופת שלוש השנים שמתחילה בתאריך השחרור של יוצא צבא כזה משירות פעיל בשירות חיל רגלים, חיל הים או חיל האוויר של צבא ארה\"ב.",
+      "value" : "</b>: כל יוצא צבא במהלך תקופת שלוש השנים שמתחילת תאריך השחרור משירות פעיל בשירות חיל רגלים, חיל הים או חיל האוויר של צבא ארה\"ב.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
@@ -945,7 +957,7 @@
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "בקשר להעסקה האפשרית שלי עם Amazon.com, Inc. או עם חברות הבת שלה או החברות השותפות שלה (\"Amazon\"), אמזון עשויה להשיג דוח צרכנים חקירתי (\"דוח\"), הידוע גם כבדיקת רקע, אודותיי מסוכנות דיווח הצרכנים הבאה:",
+      "value" : "בקשר להעסקה האפשרית שלי עם Amazon.com, Inc. או עם חברות הבת שלה או החברות השותפות שלה (\"Amazon\"), Amazon עשויה להשיג דוח צרכנים חקירתי (\"דוח\"), הידוע גם כבדיקת רקע, אודותיי מסוכנות דיווח הצרכנים הבאה:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
@@ -981,15 +993,15 @@
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "חקירות שיבוצעו על ידי Accurate, שתוצאותיהן עשויות להיכלל בכל דוח שנמסר ל-Amazon, עשויות לכלול סוגים שונים של מידע אודותיי בנוגע לאופי, למוניטין הכללי, לתכונות האישיות או סגנון החיים שלי, לתעסוקה והיסטוריית העבודה שלי, להשכלה, עבר הנהיגה והרישום הפלילי שלי, בכפוף לכל המגבלות המוטלות על ידי החוק הפדרלי והמדינתי החלים.",
+      "value" : "חקירות שיבוצעו על ידי Accurate, שתוצאותיהן עשויות להיכלל בכל דוח שנמסר ל-Amazon, עשויות לכלול סוגים שונים של מידע אודותיי בנוגע לאופיי, למוניטין הכללי אודותיי, לתכונות האישיות או סגנון החיים שלי, לתעסוקה והיסטוריית העבודה שלי, להשכלה, עבר הנהיגה והרישום הפלילי שלי, בכפוף לכל המגבלות החלות על ידי החוק הפדרלי והמדיני.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "לפי הקוד האזרחי של קליפורניה § 1785 ואילך. ו-§ 1786 ואילך, אם Amazon מבקשת ממני דיווח כלשהו, ​​אוכל לראות את הקובץ השמור ב-Accurate אודותיי במהלך שעות הפעילות הרגילות.\n אני מבין שאני גם רשאי (1) לקבל עותק של קובץ זה, עם הגשת זיהוי נכון ותשלום עלויות ההעתקה, בדואר מאושר או על ידי הופעה במשרדי Accurate באופן אישי בשעות העבודה הרגילות לאחר מסירת הודעה מראש על התכנון שלי להגיע; ו-(2) לקבל סיכום של קובץ זה מ-Accurate בטלפון, על חשבוני, עם הגשת זיהוי נכון ובקשה בכתב מ- Accurate לחשיפה טלפונית. אני מבין ש-Accurate הכשירה צוות מיומן זמין על מנת להסביר לי את הקובץ, כולל כל מידע מקודד, ואם אני מופיע באופן אישי במשרדי Accurate, יכול להתלוות אליי אדם אחד נוסף כל עוד אותו אדם מספק זיהוי נכון ל-Accurate.",
+      "value" : "לפי הקוד האזרחי של קליפורניה § 1785 ותת סעיף. ו-§ 1786 ותת סעיף, אם Amazon מבקשת ממני דיווח כלשהו, ​​אוכל לראות את הקובץ השמור ב-Accurate אודותיי במהלך שעות הפעילות הרגילות.\n אני מבין שאני גם רשאי (1) לקבל עותק של קובץ זה, עם הגשת זיהוי נכון ותשלום עלויות ההעתקה, בדואר מאושר או על ידי הופעה במשרדי Accurate באופן אישי בשעות העבודה הרגילות לאחר מסירת הודעה מראש על התכנון שלי להגיע; ו-(2) לקבל סיכום של קובץ זה מ-Accurate בטלפון, על חשבוני, עם הגשת זיהוי נכון ובקשה בכתב מ- Accurate לחשיפה טלפונית. אני מבין ש-Accurate הכשירה צוות מיומן זמין על מנת להסביר לי את הקובץ, כולל כל מידע מקודד, ואם אני מופיע באופן אישי במשרדי Accurate, יכול להתלוות אליי אדם אחד נוסף כל עוד אותו אדם יספק זיהוי נכון ל-Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "מידע על נוהלי הפרטיות של Accurate זמין בכתובת <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
+      "value" : "מידע על נוהלי הפרטיות של Accurate זמינים בכתובת <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
@@ -997,7 +1009,7 @@
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
-      "value" : "1 Concourse Parkway NE, Suite 200.",
+      "value" : "‎1 Concourse Parkway NE, Suite 200.",
       "note" : "Text for the california disclosure page vendor fadv address line 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
@@ -1013,23 +1025,23 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "אני מבין/ה כי:",
+      "value" : "הבנתי כי:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "במקרה שנדרשים ממני דוחות על-ידי First Advantage, המידע הכלול בדוח זה ישמש אך ורק כדי לקבוע את זכאותי לעבודה.",
+      "value" : "במקרה שנדרשים ממני דוחות מ-First Advantage, המידע הכלול בדוח זה ישמש אך ורק כדי לקבוע את זכאותי לעבודה.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "מידע שהושג על ידי First Advantage ונכלל בכל דוח ניתן להשגה במגוון אמצעים, כולל בדיקה של מסמכים ומידע זמינים כדין ו/או קשר ישיר או עקיף וראיונות עם מעסיקים לשעבר, בתי ספר, מוסדות פיננסיים, בעלי בתים, סוכנויות ציבוריות, ואחרים כגון השכנים שלי, חברים, ושותפים שאותם אני מכיר ויכולים להיות בעלי מידע זה.",
+      "value" : "מידע שהושג על ידי First Advantage ונכלל בכל דוח ניתן להשגה במגוון אמצעים, כולל בדיקה של מסמכים ומידע זמינים כדין ו/או קשר ישיר או עקיף וראיונות עם מעסיקים לשעבר, בתי ספר, מוסדות פיננסיים, בעלי בית, סוכנויות ציבוריות, ואחרים כגון שכני, חברי ומקורביי שאני מכיר ויכול להיות שיש להם מידע זה.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "חקירות שיבוצעו על ידי First Advantage, שתוצאותיה עשויות להיכלל בכל דוח שסופק ל-Amazon, יכולות לכלול סוגים שונים של מידע אודותיי בנוגע לאופיי, המוניטין הכללי שלי, למאפיינים האישיים או לאופן החיים, התעסוקה והעבודה, חינוך, נהיגה רישום ורישום פלילי, בכפוף לכל מגבלות שהוטלו על ידי החוק הפדרלי וחוק המדינה.",
+      "value" : "חקירה/ות שיבוצעו על ידי First Advantage, שתוצאותיהן עשויות להיכלל בכל דוח שיסופק ל-Amazon, עשויות לכלול סוגים שונים של מידע אודותיי בנוגע לאופיי, המוניטין הכללי שלי, המאפיינים האישיים או אופן החיים, התעסוקה והעבודה, חינוך, היסטוריית נהיגה ורישום פלילי, בכפוף לכל מגבלות שהוטלו על ידי החוק הפדרלי וחוק המדינה.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "לפי הקוד האזרחי של קליפורניה § 1785 תת סעיף ו- § 1786 תת סעיף, אם דוח כלשהו עליי מתבקש על ידי Amazon, באפשרותי לראות את הקובץ ש-First Advantage שומר עליי במהלך שעות העבודה הרגילות. אני גם מבין/ה שאני רשאי/ת (1) לקבל עותק של קובץ זה לאחר הגשת זיהוי נכון ותשלום עלויות ההעתקה, בדואר מוסמך או על ידי ביקור במשרדי First Advantage באופן אישי בשעות העבודה הרגילות אחרי הודעה סבירה מראש על ההופעה המתוכננת שלי; ו- (2) לקבל סיכום של קובץ זה מ-First Advantage בטלפון, על חשבוני, עם הגשת זיהוי נכון ובקשה בכתב ל- First Advantage לגילוי טלפוני. אני מבין/ה ש-First Advantage הכשיר כוח אדם זמין להסביר לי על התיק, כולל כל מידע מקודד, ואם אני מופיע באופן אישי במשרדי ה-First Advantage, אני רשאי להיות מלווה על ידי אדם נוסף אחד כל עוד אותו אדם מספק זיהוי ראוי ל-First Advantage.",
+      "value" : "לפי הקוד האזרחי של קליפורניה ותת סעיף § 1785. ו-תת סעיף § 1786, אם Amazon מבקשת ממני דוח כלשהו, באפשרותי לראות את הקובץ ש-First Advantage שומר עליי במהלך שעות העבודה הרגילות. אני גם מבין/ה שאני רשאי/ת (1) לקבל עותק של קובץ זה לאחר הגשת זיהוי נכון ותשלום עלויות ההעתקה, בדואר מוסמך או על ידי ביקור במשרדי First Advantage באופן אישי במהלך שעות הפעילות הרגילות שלה לאחר מתן הודעה סבירה מראש על ההופעה המתוכננת שלי; ו-(2) לקבל סיכום של קובץ זה מ-First Advantage בטלפון, על חשבוני, עם הגשת זיהוי נכון ובקשה בכתב ל- First Advantage לגילוי טלפוני. אני מבין/ה ש-First Advantage הכשיר כוח אדם שיהיה זמין להסביר לי על התיק, כולל כל מידע מקודד, ואם אני מופיע באופן אישי במשרדי First Advantage, אני רשאי להיות מלווה על ידי אדם נוסף אחד כל עוד אותו אדם מזדהה באופן ראוי ל-First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
@@ -1037,7 +1049,7 @@
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "אני מאשר/ת שקראתי את המסמך הזה ושאני מבין אותו, וכי על פי ׳חוקי החשיפה של קליפורניה הנוגעים לדוחות חקירה של צרכנים׳(CALIFORNIA DISCLOSURE REGARDING INVESTIGATIVE CONSUMER REPORTS), אני מאשר/ת ל-Amazon לקבל דוח חקירה של צרכנים עליי.",
+      "value" : "אני מאשר/ת שקראתי את המסמך הזה ושהבנתי אותו, וכי בהתאם לחוקי הגילוי הנאות של קליפורניה בנוגע לדוחות חקירה של צרכנים (CALIFORNIA DISCLOSURE REGARDING INVESTIGATIVE CONSUMER REPORTS), אני מאשר/ת ל-Amazon לקבל דוח חקירת צרכנים אודותיי.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
@@ -1045,7 +1057,7 @@
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "כמעט סיימת, {firstname}{lastname}! עליך להגיע כדי להצטלם לתמונת תג, להשלים אישור העבודה ולעבור בדיקת סמים, אם רלוונטי.",
+      "value" : "כמעט סיימת, {firstname} {lastname}! עליך להגיע כדי להצטלם לתמונת תג, להשלים את אישור העבודה ולעבור בדיקת סמים, באם רלוונטי.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
@@ -1061,11 +1073,11 @@
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "הזדהות מרצון של ׳סטטוס ותיק מלחמה׳",
+      "value" : "הזדהות עצמית מרצון כבעל סטטוס של 'יוצא צבא'",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "אנחנו מחזיקים עבורך מקום ב- {hours} השעות ו- {minutes} הדקות הקרובות כדי להשלים את השלבים הנותרים.",
+      "value" : "אנחנו שומרים עבורך מקום ב-{hours} השעות ו-{minutes} הדקות הקרובות כדי להשלים את השלבים הנותרים.",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
@@ -1073,11 +1085,11 @@
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "המידע שסיפקת אינו עומד בדרישות שלנו. אנו ממליצים לך לבדוק הצעות עבודה באתר amazon.jobs.",
+      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנו ממליצים לך לבדוק הצעות עבודה באתר amazon.jobs.",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "חזרה אל לוח המחוונים",
+      "value" : "חזרה ללוח הבקרה",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
@@ -1093,7 +1105,7 @@
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "חזרה אל לוח המחוונים",
+      "value" : "חזרה ללוח הבקרה",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
@@ -1101,27 +1113,27 @@
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "אנחנו כל כך נרגשים שאתה מעוניין להצטרף ל-Amazon!",
+      "value" : "אנחנו מאוד נרגשים מרצונך להצטרף ל-Amazon!",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "הערכה זו תעזור לך להבין את התפקיד ולעזור לנו להכיר אותך.",
+      "value" : "מטלה זו תעזור לך להבין את התפקיד ותעזור לנו להכיר אותך.",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "מקומות לינה",
+      "value" : "התאמות",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "ב-Amazon, אנו חוגגים את הגיוון של כוח העבודה שלנו ואת הדרכים המגוונות בהן אנו עובדים. אם יש לך מוגבלות כלשהי ויש לך צורך בלינה במהלך תהליך ההעסקה, כולל ההערכה, יש לבקר <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>באתר האירוח של Amazon.</a>",
+      "value" : "ב-Amazon, אנחנו חוגגים את הגיוון של כוח העבודה שלנו ואת הדרכים המגוונות בהן אנחנו עובדים. אם יש לך מוגבלות כלשהי ויש לך צורך בלינה במהלך תהליך ההעסקה, כולל בזמן תהליך ההערכה עצמו, יש לבקר <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>באתר האירוח של Amazon.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>אף חלק מההערכה מתוזמן</b> - ניתן לעבוד בקצב שלך. כל הסעיפים של הערכה זו:",
+      "value" : "<b>אין הגבלת זמן על אף חלק בהערכה</b> - באפשרותך לעבוד בקצב שלך. כל הסעיפים של הערכה זו:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "הם ממוטבים עבור קוראי המסך הבאים: קריינות (Mac) ו- NVDA (Windows) ב-Firefox, כרום ו- Edge (Windows).",
+      "value" : "מותאמים עבור קוראי המסך הבאים: VoiceOver (Mac) ו-NVDA (Windows) ב-Firefox,‏ Chrome ו-Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
@@ -1133,7 +1145,7 @@
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "סקירה ושליחה",
+      "value" : "בדיקה ושליחה",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
@@ -1157,7 +1169,7 @@
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "מספר זהות לאומי:",
+      "value" : "מספר תעודת זהות לאומית:",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
@@ -1185,7 +1197,7 @@
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "סטטוס ותיק מלחמה:",
+      "value" : "סטטוס יוצא צבא:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
@@ -1193,7 +1205,7 @@
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "שליחת בקשה",
+      "value" : "שליחת הגשת מועמדות",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
@@ -1205,7 +1217,7 @@
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "יש לספק פרטי הפניה (אם רלוונטי)",
+      "value" : "יש לספק את פרטי הפניה (אם רלוונטי)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
@@ -1221,15 +1233,15 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "להתחיל בפעילויות טרום העסקה",
+      "value" : "להתחיל בפעילויות טרום ההעסקה",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "לפני פגישת טרום ההעסקה שלך, יש למלא את ׳שאלון זיכוי המס של הזדמנויות עבודה׳.",
+      "value" : "לפני פגישת טרום ההעסקה שלך, יש למלא את 'שאלון זיכוי המס של הזדמנויות העבודה'.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
-      "value" : "שנתחיל?",
+      "value" : "מתחילים",
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
@@ -1245,11 +1257,11 @@
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
-      "value" : "דברים שעליך להביא עמך",
+      "value" : "דברים שצריך להביא",
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "מזהה תמונה מקורית בתוקף",
+      "value" : "תמונה מזהה מקורית בתוקף",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
@@ -1265,27 +1277,27 @@
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "אם יש לך צורך בהתאמות כלשהן, כגון מתורגמן ASL לאירוע ההעסקה, יש לעבור אל <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accom/accom/accartes</a> ולשוחח איתנו כדי לבקש מתורגמן. ניתן לפנות אלינו מיד לאחר תזמון הפגישה שלך. אנו זקוקים להתראה של 48 שעות לפחות כדי להתכונן לפגישה.",
+      "value" : "אם יש לך צורך בהתאמות כלשהן, כגון מתורגמן ASL לאירוע ההעסקה, יש לעבור אל <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> ולשוחח איתנו כדי לבקש מתורגמן. יש ליצור איתנו קשר מיד לאחר קביעת הפגישה שלך. אנו זקוקים להתראה של 48 שעות לפחות כדי להתכונן לפגישה.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "יש לספק את מזהה הכניסה של המפנה שלך (אותיות קטנות בלבד)",
+      "value" : "יש לספק את מזהה ההתחברות של המפנה שלך (אותיות קטנות בלבד)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "יש לספק את מזהה הכניסה של המפנה שלך.",
+      "value" : "יש לספק את מזהה ההתחברות של המפנה שלך.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "מזהה המשתמש צריך להכיל אותיות קטנות בלבד ועליו להיות באורך של לפחות 4 אותיות.",
+      "value" : "זיהוי המשתמש צריך להכיל אותיות קטנות בלבד ועליו להיות באורך של לפחות 4 אותיות.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
-      "value" : "שאלון זיכוי המס של הזדמנויות עבודה",
+      "value" : "שאלון זיכוי המס של הזדמנויות העבודה",
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "בדיקות IAT של Amazon משתתפות בתוכניות זיכוי מס פדרליות או ממלכתיות. המידע שיימסר על-ידך ישמש לקביעת זכאותה של החברה לתוכניות אלה ולא ישפיע בשום אופן לרעה על החלטות גיוס, שימור או קידום מכירות.",
+      "value" : "בדיקות IAT של Amazon משתתפות בתכניות זיכוי מס פדרליות או ממלכתיות. המידע שיימסר על-ידך ישמש לקביעת זכאותה של החברה לתכניות אלה ולא ישפיע בשום אופן לרעה על החלטות גיוס, שימור או קידום מכירות.",
       "note" : "Text for the WOTC page description text"
     },
     "BB-Schedule-card-possible-start-date-text" : {
@@ -1297,11 +1309,11 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "לשעה",
+      "value" : "משאבי אנוש",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "שעות בשבוע",
+      "value" : "שעות/שבועות",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
@@ -1309,11 +1321,11 @@
       "note" : "Text for the schedule card bonus text"
     },
     "BB-amazon-rejects-thank-you" : {
-      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך משרה בשלב זה.",
+      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
       "note" : "Text for the amazon rejects page thank you text"
     },
     "BB-amazon-rejects-not-meet-requirements" : {
-      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לך להסתכל על משרות אחרות ב-amazon.jobs.",
+      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לכם להסתכל על עבודות אחרות ב-amazon.jobs.",
       "note" : "Text for the amazon rejects page not meet requirements text"
     },
     "BB-amazon-rejects-return-to-dashboard" : {
@@ -1321,7 +1333,7 @@
       "note" : "Text for the amazon rejects page return to dashboard text"
     },
     "BB-create-application-error-message-application-exist" : {
-      "value" : "סליחה, כבר הגשת מועמדות למשרה זו!",
+      "value" : "סליחה, כבר הגשת מועמדות לעבודה זו!",
       "note" : "error message when trying to create application with existing application "
     },
     "BB-create-application-error-message-missing-fields" : {
@@ -1341,7 +1353,7 @@
       "note" : "error message for create application if candidate is not found"
     },
     "BB-create-application-error-message-version-mismatch" : {
-      "value" : "לא ניתן לעדכן את הגשת המועמדות מכיוון שקיים עדכון חדש יותר.",
+      "value" : "לא ניתן לעדכן את הגשת המועמדות מכיוון שקיים עדכון עדכני יותר.",
       "note" : "error message when create application with version mismatching"
     },
     "BB-create-application-error-message-default" : {
@@ -1357,11 +1369,11 @@
       "note" : "Error message for update application when application can not be found"
     },
     "BB-update-application-error-message-missing-required-fields" : {
-      "value" : "שדות חובה חסרים: ApplicationId.",
+      "value" : "שדות חובה חסרים: מספר הגשת מועמדות.",
       "note" : "Error message when updating message with application Id missing"
     },
     "BB-update-application-error-message-version-mismatch" : {
-      "value" : "לא ניתן לעדכן את הגשת המועמדות מכיוון שקיים עדכון חדש יותר.",
+      "value" : "לא ניתן לעדכן את הגשת המועמדות מכיוון שקיים עדכון עדכני יותר.",
       "note" : "Error message when updating application with version mismatching"
     },
     "BB-update-application-error-message-server-error" : {
@@ -1397,11 +1409,11 @@
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
-      "value" : "העדכון להגשת המועמדות נכשל מכיוון שהגעת למספר המרבי של שינויים במזהה הלאומי שלך. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש להתנתק ולנסות להיכנס באמצעות דואר אלקטרוני זה, ובמידת הצורך להשתמש בקישור \"שכחת את קוד הזיהוי האישי שלך?\" אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "value" : "העדכון להגשת המועמדות נכשל מכיוון שהגעת למספר המרבי של שינויים בתעודת הזהות הלאומית שלך. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש להתנתק ולנסות להיכנס באמצעות דואר אלקטרוני זה, באמצעות \"שכחת את קוד הזיהוי האישי שלך?\" קישור במידת הצורך. אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "עדכון הגשת המועמדות נכשל מכיוון שמספר הזהות הלאומי שסופק אינו תקין. יש להזין מספר זהות לאומי נכון ומלא לפני ההמשך.",
+      "value" : "עדכון הגשת המועמדות נכשל מכיוון שמספר הזהות הלאומי שסופק אינו חוקי. יש להזין מספר זהות לאומי נכון ומלא לפני שממשיכים.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
@@ -1421,11 +1433,11 @@
       "note" : "error message for update application when date of birth is no provided"
     },
     "BB-update-application-error-message-applicationId-missing" : {
-      "value" : "מזהה הגשת המועמדות חסר בבקשה עצמה.",
+      "value" : "מספר הגשת המועמדות חסר בבקשה עצמה.",
       "note" : "error message for update application when application Id is missing"
     },
     "BB-update-application-error-message-government-type-missing" : {
-      "value" : "מזהה ממשלתי חסר בבקשה.",
+      "value" : "תעודת זהות ממשלתית חסרה בבקשה.",
       "note" : "error message for update application when government Id is missing"
     },
     "BB-update-application-error-message-id-number-missing" : {
@@ -1433,7 +1445,7 @@
       "note" : "error message for update application when Id Number is missing"
     },
     "BB-update-application-error-message--has-criminal-in7-years-missing" : {
-      "value" : "HasCriminalRecordWithinSevenYears חסר בבקשה.",
+      "value" : "מצב רשומה פלילית בשבע שנים האחרונות חסר בבקשה.",
       "note" : "error message for update application when has criminal record in past 7 years is missing"
     },
     "BB-update-application-error-message-address-line1-missing" : {
@@ -1457,11 +1469,11 @@
       "note" : "error message for update application when country is missing in address"
     },
     "BB-update-application-error-message-invalid-previous-legal-name" : {
-      "value" : "יש להזין שם מלא רשמי שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה.",
+      "value" : "יש להזין שם חוקי מלא שנעשה בו שימוש בעבר בפורמט הבא: שם פרטי שם משפחה.",
       "note" : "error message for update application with invalid previous legal name"
     },
     "BB-update-application-error-message-bgc-validation-failed" : {
-      "value" : "מידע הרקע הנוסף אינו תקין, יש לעדכן את כל השדות הנדרשים.",
+      "value" : "מידע הרקע הנוסף אינו חוקי, יש לעדכן את כל השדות הנדרשים.",
       "note" : "error message for update application with invalid additional background"
     },
     "BB-update-application-error-message-nhe-apt-missing" : {
@@ -1481,19 +1493,19 @@
       "note" : "error message for update application with gender information missing"
     },
     "BB-update-application-error-message-military-service-missing" : {
-      "value" : "מידע צבאי על בן/בת הזוג חסר בתוכן.",
+      "value" : "מידע צבאי על בני הזוג חסר בתוכן.",
       "note" : "error message for update application with military Spouse  information missing"
     },
     "BB-update-application-error-message-protected-veteran-missing" : {
-      "value" : "מידע יוצא צבא מוגן חסר בתוכן.",
+      "value" : "מידע ותיק מוגן חסר בתוכן.",
       "note" : "error message for update application with protected veteran status information missing"
     },
     "BB-update-application-error-message-veteran-status-missing" : {
-      "value" : "מידע יוצא צבא חסר בתוכן.",
+      "value" : "מידע ותיק חסר בתוכן.",
       "note" : "error message for update application with veteran status information missing"
     },
     "BB-update-application-error-message-disability-missing" : {
-      "value" : "הנכות חסרה בתוכן הבקשה.",
+      "value" : "מוגבלות חסרה בתוכן הבקשה.",
       "note" : "error message for update application with disability status information missing"
     },
     "BB-update-application-error-message-cali-disclosure-missing" : {
@@ -1501,19 +1513,19 @@
       "note" : "error message for update application with california disclosure information missing"
     },
     "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "מספר ה-SSN או מספר הזהות הלאומי שהזנת כבר משויך לכתובת דואר אלקטרוני אחרת במערכת שלנו. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש [להתנתק] (/application/logout) ולנסות להיכנס באמצעות דואר אלקטרוני זה, ובמידת הצורך להשתמש בקישור \"שכחת את הקוד האישי שלך?\" אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "value" : "מספר ה-SSN או מספר הזהות הלאומי שהזנת כבר משויך לכתובת דואר אלקטרוני אחרת במערכת שלנו. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש [להתנתק] (/יישום/התנתקות) ולנסות להיכנס באמצעות דואר אלקטרוני זה, באמצעות \"שכחת את הקוד האישי שלך? \" קישור במידת הצורך. אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
-      "value" : "לא ניתן להציג את המשרה.",
+      "value" : "לא ניתן להביא את העבודה.",
       "note" : "error message when unable to fetch job information"
     },
     "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
-      "value" : "משהו השתבש בזמן הצגת המשרות! יש לרענן את הדף או לנסות שוב מאוחר יותר.",
+      "value" : "משהו השתבש בזמן הבאת העבודות! יש לרענן את הדף או לנסות שוב מאוחר יותר.",
       "note" : "error message when unable to fetch shifts failed"
     },
     "BB-get-schedule-list-error-message-shifts-bad-request" : {
-      "value" : "לא ניתן לאחזר משרות כרגע. יש לנסות שוב מאוחר יותר.",
+      "value" : "לא ניתן לאחזר עבודות כרגע. יש לנסות שוב בעוד זמן מה.",
       "note" : "error message when there is a bad request to fetch shifts"
     },
     "BB-get-schedule-list-error-message-all-shift-filled" : {
@@ -1537,19 +1549,19 @@
       "note" : "error message when fetch appointment time slots failed"
     },
     "BB-get-time-slots-error-message-fetch_shifts_error" : {
-      "value" : "משהו השתבש בזמן הצגת המשרות! יש לרענן את הדף או לנסות שוב מאוחר יותר.",
+      "value" : "משהו השתבש בזמן הבאת העבודות! יש לרענן את הדף או לנסות שוב מאוחר יותר.",
       "note" : "error message when fetch shift error failed"
     },
     "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
-      "value" : "לא ניתן להציג את העדפות המשמרת.",
+      "value" : "לא ניתן להביא את העדפות המשמרת.",
       "note" : "error message when fetch shift preference failed"
     },
     "BB-get-time-slots-error-message-shift-bad-request" : {
-      "value" : "לא ניתן לאחזר משרות כרגע. יש לנסות שוב מאוחר יותר.",
+      "value" : "לא ניתן לאחזר עבודות כרגע. יש לנסות שוב בעוד זמן מה.",
       "note" : "error message when server received a bad request to get time slots"
     },
     "BB-get-candidate-error-message-failed-get-candidate" : {
-      "value" : "כשל בהצגת המועמד.",
+      "value" : "כשל בהשגת המועמד.",
       "note" : "error message when failed to get candidate information"
     },
     "BB-get-candidate-error-message-no-access-to-application" : {
@@ -1561,11 +1573,11 @@
       "note" : "Error message when unable to create application"
     },
     "BB-update-application-error-message-can-not-create-application" : {
-      "value" : "אין באפשרותך ליצור הגשת מועמדות.",
+      "value" : "אין באפשרותך לבצע הגשת מועמדות.",
       "note" : "Error message when candidate is not authorized to create application"
     },
     "BB-get-application-error-message-missing-fields" : {
-      "value" : "מזהה הגשת מועמדות נדרש כדי לקבל נתוני הגשת המועמדות.",
+      "value" : "מספר הגשת מועמדות נדרש כדי לקבל נתוני הגשת המועמדות.",
       "note" : "Error message when trying to get application without passing application Id"
     },
     "BB-get-application-error-message-candidate-not-authorized" : {
@@ -1585,7 +1597,7 @@
       "note" : "Text for the workflow failed page title text"
     },
     "BB-workflow-failed-description-text" : {
-      "value" : "בעוד שזרימת עבודה של הגשת המועמדות נכשלה.",
+      "value" : "בעוד שתהליך הגשת המועמדות נכשל.",
       "note" : "Text for the workflow failed page description text"
     },
     "BB-workflow-failed-return-to-dashboard-text" : {
@@ -1593,11 +1605,11 @@
       "note" : "Text for the workflow failed page return to dashboard text"
     },
     "BB-can-not-offer-job-title-text" : {
-      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך משרה בשלב זה.",
+      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
       "note" : "Text for the can not offer job page title text"
     },
     "BB-can-not-offer-job-description-text" : {
-      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לך להסתכל על משרות אחרות ב-amazon.jobs.",
+      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לכם להסתכל על עבודות אחרות ב-amazon.jobs.",
       "note" : "Text for the can not offer job page description text"
     },
     "BB-can-not-offer-job-return-to-dashboard-text" : {
@@ -1605,11 +1617,11 @@
       "note" : "Text for the can not offer job page description text"
     },
     "BB-candidate-withdraws" : {
-      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך משרה בשלב זה.",
+      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
       "note" : "Candidate withdraws page title"
     },
     "BB-candidate-withdraws-description" : {
-      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לך להסתכל על משרות אחרות ב-amazon.jobs.",
+      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לכם להסתכל על עבודות אחרות ב-amazon.jobs.",
       "note" : "Candidate withdraws page description"
     },
     "BB-candidate-withdraws-button-text" : {
@@ -1617,11 +1629,11 @@
       "note" : "Candidate withdraws page back to dashboard buttton"
     },
     "BB-amazon-withdraws" : {
-      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך משרה בשלב זה.",
+      "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
       "note" : "Amazon withdraws page title"
     },
     "BB-amazon-withdraws-description" : {
-      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לך להסתכל על משרות אחרות ב-amazon.jobs.",
+      "value" : "המידע שסיפקת אינו עומד בדרישותינו. אנחנו ממליצים לכם להסתכל על עבודות אחרות ב-amazon.jobs.",
       "note" : "Amazon withdraws page description"
     },
     "BB-amazon-withdraws-button-text" : {
@@ -1629,11 +1641,11 @@
       "note" : "Amazon withdraws page back to dashboard buttton"
     },
     "BB-session-timeout" : {
-      "value" : "פג תוקפה של הזמנת המשרה שלך.",
+      "value" : "פג תוקפה של הזמנת משרת העבודה שלך.",
       "note" : "session timeout page title"
     },
     "BB-session-timeout-description" : {
-      "value" : "אנו מאפשרים למועמדים עד שלוש שעות להשלים את הגשת המועמדות שלהם. למרבה הצער, המשרה שאליה הגשת מועמדות חרגה ממגבלת שלוש השעות. ניתן לעיין במשרות הזמינות.",
+      "value" : "אנו מאפשרים למועמדים עד שלוש שעות להשלים את הגשת המועמדות שלהם. למרבה הצער, משרת העבודה שאליה הגשת מועמדות חרגה ממגבלת שלוש השעות. יש לחקור הזדמנויות עבודה זמינות.",
       "note" : "session timeout description"
     },
     "BB-session-timeout-view-job-button-text" : {
@@ -1641,7 +1653,7 @@
       "note" : "Session timeout view job opportunities button"
     },
     "BB-no-available-time-slots-title" : {
-      "value" : "אין פגישות פנויות למשרה זו כרגע.",
+      "value" : "אין פגישות פנויות לעבודה זו כרגע.",
       "note" : "Text for no available time slots title"
     },
     "BB-no-available-time-slots-description" : {
@@ -1649,7 +1661,7 @@
       "note" : "Text for no available time slots description title"
     },
     "BB-no-available-time-slots-select-different-job" : {
-      "value" : "1. יש לבחור הזדמנות למשרה אחרת",
+      "value" : "1. אנחנו מציעים לבחור עבודות אחרות",
       "note" : "Text for no available time slots page to select different job"
     },
     "BB-no-available-time-slots-select-different-job-link" : {
@@ -1661,7 +1673,7 @@
       "note" : "Text for no available time slots page to select shift with later start date"
     },
     "BB-no-available-time-slots-view-other-shifts-button-text" : {
-      "value" : "הצגת משמרות אחרות",
+      "value" : "צפייה במשמרות אחרות",
       "note" : "Text for no available time slots page view other shifts button"
     },
     "BB-no-available-time-slots-back-to-dashboard-button-text" : {
@@ -1680,194 +1692,6 @@
       "value" : "יש לסמן את התיבה כדי להמשיך.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
-    "BB-States-Alabama" : {
-      "value" : "AL -- אלבמה",
-      "note" : "Text for Alabama state"
-    },
-    "BB-States-Alaska" : {
-      "value" : "AK -- אלסקה",
-      "note" : "Text for Alaska state"
-    },
-    "BB-States-Arizona" : {
-      "value" : "AZ -- אריזונה",
-      "note" : "Text for Arizona state"
-    },
-    "BB-States-Arkansas" : {
-      "value" : "AR -- ארקנסו",
-      "note" : "Text for Arkansas state"
-    },
-    "BB-States-California" : {
-      "value" : "CA -- קליפורניה",
-      "note" : "Text for California state"
-    },
-    "BB-States-Colorado" : {
-      "value" : "CO -- קולורדו",
-      "note" : "Text for Colorado state"
-    },
-    "BB-States-Connecticut" : {
-      "value" : "CT -- קונטיקט",
-      "note" : "Text for Connecticut state"
-    },
-    "BB-States-Delaware" : {
-      "value" : "DE -- דלאוור",
-      "note" : "Text for Delaware state"
-    },
-    "BB-States-District-of-Columbia" : {
-      "value" : "DC -- מחוז קולומביה",
-      "note" : "Text for District of Columbia state"
-    },
-    "BB-States-Florida" : {
-      "value" : "FL -- פלורידה",
-      "note" : "Text for Florida state"
-    },
-    "BB-States-Georgia" : {
-      "value" : "GA -- ג׳ורג׳יה",
-      "note" : "Text for Georgia state"
-    },
-    "BB-States-Hawaii" : {
-      "value" : "HI -- הוואי",
-      "note" : "Text for Hawaii state"
-    },
-    "BB-States-Idaho" : {
-      "value" : "ID -- איידהו",
-      "note" : "Text for Idaho state"
-    },
-    "BB-States-Illinois" : {
-      "value" : "IL -- אילינוי",
-      "note" : "Text for Illinois state"
-    },
-    "BB-States-Indiana" : {
-      "value" : "IN -- אינדיאנה",
-      "note" : "Text for Indiana state"
-    },
-    "BB-States-Iowa" : {
-      "value" : "IA -- איווה",
-      "note" : "Text for Iowa state"
-    },
-    "BB-States-Kansas" : {
-      "value" : "KS -- קנזס",
-      "note" : "Text for Kansas state"
-    },
-    "BB-States-Kentucky" : {
-      "value" : "KY -- קנטקי",
-      "note" : "Text for Kentucky state"
-    },
-    "BB-States-Louisiana" : {
-      "value" : "LA -- לואיזיאנה",
-      "note" : "Text for Louisiana state"
-    },
-    "BB-States-Maine" : {
-      "value" : "ME -- מיין",
-      "note" : "Text for Maine state"
-    },
-    "BB-States-Maryland" : {
-      "value" : "MD -- מרילנד",
-      "note" : "Text for Maryland state"
-    },
-    "BB-States-Massachusetts" : {
-      "value" : "MA -- מסצ'וסטס",
-      "note" : "Text for Massachusetts state"
-    },
-    "BB-States-Michigan" : {
-      "value" : "MI -- מישיגן",
-      "note" : "Text for Michigan state"
-    },
-    "BB-States-Minnesota" : {
-      "value" : "MN -- מינסוטה",
-      "note" : "Text for Minnesota state"
-    },
-    "BB-States-Mississippi" : {
-      "value" : "MS -- מיסיסיפי",
-      "note" : "Text for Mississippi state"
-    },
-    "BB-States-Missouri" : {
-      "value" : "MO -- מיזורי",
-      "note" : "Text for Missouri state"
-    },
-    "BB-States-Montana" : {
-      "value" : "MT -- מונטנה",
-      "note" : "Text for Montana state"
-    },
-    "BB-States-Nebraska" : {
-      "value" : "NE -- נברסקה",
-      "note" : "Text for Nebraska state"
-    },
-    "BB-States-Nevada" : {
-      "value" : "NV -- נבאדה",
-      "note" : "Text for Nevada state"
-    },
-    "BB-States-New-Hampshire" : {
-      "value" : "NH — ניו המפשייר",
-      "note" : "Text for New Hampshire state"
-    },
-    "BB-States-New-Jersey" : {
-      "value" : "NJ -- ניו ג'רזי",
-      "note" : "Text for New Jersey state"
-    },
-    "BB-States-New-Mexico" : {
-      "value" : "NM -- ניו מקסיקו",
-      "note" : "Text for New Mexico state"
-    },
-    "BB-States-New-York" : {
-      "value" : "NY -- ניו יורק",
-      "note" : "Text for New York state"
-    },
-    "BB-States-North-Carolina" : {
-      "value" : "NC -- קרוליינה הצפונית",
-      "note" : "Text for North Carolina state"
-    },
-    "BB-States-North-Dakota" : {
-      "value" : "ND -- דקוטה הצפונית",
-      "note" : "Text for North Dakota state"
-    },
-    "BB-States-Ohio" : {
-      "value" : "OH -- אוהיו",
-      "note" : "Text for Ohio state"
-    },
-    "BB-States-Oklahoma" : {
-      "value" : "OK -- אוקלהומה",
-      "note" : "Text for Oklahoma state"
-    },
-    "BB-States-Oregon" : {
-      "value" : "OR -- אורגון",
-      "note" : "Text for Oregon state"
-    },
-    "BB-States-Pennsylvania" : {
-      "value" : "PA -- פנסילבניה",
-      "note" : "Text for Pennsylvania state"
-    },
-    "BB-States-Rhode-Island" : {
-      "value" : "RI -- רוד איילנד",
-      "note" : "Text for Rhode Island state"
-    },
-    "BB-States-South-Carolina" : {
-      "value" : "SC -- קרוליינה הדרומית",
-      "note" : "Text for South Carolina state"
-    },
-    "BB-States-South-Dakota" : {
-      "value" : "SD -- דקוטה הדרומית",
-      "note" : "Text for South Dakota state"
-    },
-    "BB-States-Tennessee" : {
-      "value" : "TN -- טנסי",
-      "note" : "Text for Tennessee state"
-    },
-    "BB-States-Texas" : {
-      "value" : "TX -- טקסס",
-      "note" : "Text for Texas state"
-    },
-    "BB-States-Utah" : {
-      "value" : "UT -- יוטה",
-      "note" : "Text for Utah state"
-    },
-    "BB-States-Vermont" : {
-      "value" : "VT -- ורמונט",
-      "note" : "Text for Vermont state"
-    },
-    "BB-States-Virginia" : {
-      "value" : "VA -- וירג'יניה",
-      "note" : "Text for Virginia state"
-    },
     "BB-States-Washington" : {
       "value" : "WA -- וושינגטון",
       "note" : "Text for Washington state"
@@ -1877,7 +1701,7 @@
       "note" : "Text for Wisconsin state"
     },
     "BB-States-west-virginia" : {
-      "value" : "WV -- וירג'יניה המערבית",
+      "value" : "WV -- מערב וירג'יניה",
       "note" : "Text for West Virginia state"
     },
     "BB-States-wyoming" : {
@@ -1905,15 +1729,15 @@
       "note" : "Text for the additional background check form header"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
-      "value" : "תודה על התעניינותך בתפקיד {jobTitle}. הרשומות שלנו מצביעות על כך שעבדת בעבר ב-Amazon.  בשלב זה, אתה עומד בדרישות להעסקה חוזרת ב-Amazon כעמית עונתי או כעובד בסוכנות צד שלישי בהתבסס על היסטוריית התעסוקה שלך. כתוצאה מכך, איננו יכולים להתקדם עם מועמדותך לתפקיד זה. אם יש לך שאלות בנוגע לזכאות להעסקה חוזרת, יש ליצור קשר עם צוות HR של האתר.",
+      "value" : "תודה על התעניינותך בתפקיד {jobTitle}. הרשומות שלנו מצביעות על כך שעבדת בעבר ב-Amazon.  בשלב זה, אתה עומד בדרישות להעסקה חוזרת ב-Amazon כשכיר עונתי או כעובד בסוכנות צד שלישי בהתבסס על היסטוריית התעסוקה שלך. כתוצאה מכך, איננו יכולים להתקדם עם מועמדותך לתפקיד זה. אם יש לך שאלות בנוגע לזכאות להעסקה חוזרת, יש ליצור קשר עם צוות משאבי אנוש של האתר.",
       "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
-      "value" : "תודה על התעניינותך בתפקיד זה. הרשומות שלנו מצביעות על כך שעבדת בעבר ב-Amazon.  בשלב זה, אתה עומד בדרישות להעסקה חוזרת ב-Amazon כעמית עונתי או כעובד בסוכנות צד שלישי בהתבסס על היסטוריית התעסוקה שלך. כתוצאה מכך, איננו יכולים להתקדם עם מועמדותך לתפקיד זה. אם יש לך שאלות בנוגע לזכאות להעסקה חוזרת, יש ליצור קשר עם צוות HR של האתר.",
+      "value" : "תודה על התעניינותך בתפקיד זה. הרשומות שלנו מצביעות על כך שעבדת בעבר ב-Amazon.  בשלב זה, אתה עומד בדרישות להעסקה חוזרת ב-Amazon כשכיר עונתי או כעובד בסוכנות צד שלישי בהתבסס על היסטוריית התעסוקה שלך. כתוצאה מכך, איננו יכולים להתקדם עם מועמדותך לתפקיד זה. אם יש לך שאלות בנוגע לזכאות להעסקה חוזרת, יש ליצור קשר עם צוות משאבי אנוש של האתר.",
       "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
     },
     "BB-rehire-not-eligible-seasonal-only-content-text" : {
-      "value" : "יש לבקר בדף ההעסקה העונתית שלנו כדי למצוא הזדמנויות עונתיות באזור.",
+      "value" : "יש לבקר בדף העונתי שלנו כדי למצוא הזדמנויות עונתיות באזור.",
       "note" : "Text for rehire not eligible seasonal only content"
     },
     "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
@@ -1925,31 +1749,31 @@
       "note" : "text for Not rehire eligibility page title"
     },
     "BB-not-rehire-eligible-content-text" : {
-      "value" : "אנו מעריכים את הזמן שלך ומאחלים לך בהצלחה בהמשך.",
+      "value" : "אנו מעריכים את הזמן שלך ומאחלים לך את הטוב ביותר בעתיד.",
       "note" : "text for Not rehire eligibility page content"
     },
     "BB-rehire-not-eligible-active-title-text" : {
-      "value" : "אנו מעריכים את הגשת מועמדות האחרונה שלך! למרבה הצער, אינך עומד בדרישות לתפקיד המסוים הזה מכיוון שהנך כבר מועסק על ידי Amazon.",
+      "value" : "אנו מעריכים את בקשת העבודה האחרונה שלך! למרבה הצער, אינך עומד בדרישות לתפקיד המסוים הזה מכיוון שהנך כבר מועסק על ידי Amazon.",
       "note" : "Text for rehire not eligible active page title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
-      "value" : "החדשות הטובות? יש שפע של הזדמנויות פתוחות שבאפשרותך לדפדף בהן ולהגיש מועמדות באינטרנט. הנה כמה מהדרכים בהן באפשרותך לגלות את הצמיחה התעסוקתית העתידית שלך:",
+      "value" : "החדשות הטובות? יש שפע של הזדמנויות פתוחות שבאפשרותך לעיין בהן ולהגיש להן בקשה באינטרנט. הנה כמה מהדרכים בהן באפשרותך לחקור את הצמיחה העתידית שלך בקריירה:",
       "note" : "Text for rehire not eligible active open opportunities list title"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
-      "value" : "לקבלת המרות מסוכנויות או המרות עונתיות, יש לבקר באתר amazon.com/conversions (http://amazon.com/conversions).",
+      "value" : "לקבלת המרות מסוכנויות או המרות עונתיות, יש לבקר באתרamazon.com/conversions (http://amazon.com/conversions).",
       "note" : "Text for rehire not eligible active open opportunities list item one"
     },
     "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
-      "value" : "כדי לבקש שינוי משמרת או שינוי מיקום, יש לפנות לצוות שלך באתר.",
+      "value" : "כדי לבקש שינוי משמרת או שינוי מיקום, יש לפנות לצוות שלכם באתר.",
       "note" : "Text for rehire not eligible active open opportunities list item two"
     },
     "BB-rehire-not-eligible-active-content-text-one" : {
-      "value" : "צוות HR המקומי שלך או מרכז המשאבים של העובדים (ERC) הם המשאב הטוב ביותר לכל שאלה. ניתן להגיע לצוות ה-ERC ‏24 שעות ביממה, 7 ימים בשבוע בטלפון 1-888-892-7180 (טל׳: 18888927180).",
+      "value" : "צוות משאבי האנוש המקומי שלך או מרכז משאבי העובדים (ERC) הם המשאב הטוב ביותר לכל שאלה. ניתן להגיע לצוות ה-ERC ‏24/7 בטלפון 1-888-892-7180 (טל: 18888927180).",
       "note" : "Text for rehire not eligible active content text one"
     },
     "BB-rehire-not-eligible-active-content-text-two" : {
-      "value" : "תודה על היותך חלק מהצוות המדהים ב-Amazon! אנו שואפים תמיד לספק לך את משאבי העובדים הטובים ביותר, ההטבות, השכר ולוחות הזמנים הגמישים - כל אלה תומכים במאמצינו להפוך למעסיק הכי טוב בעולם!",
+      "value" : "תודה על היותך חלק מהצוות המדהים ב-Amazon! אנו שואפים ללא הרף לספק לכם את משאבי העובדים הטובים ביותר, ההטבות, השכר ולוחות הזמנים הגמישים - כל אלה תומכים במאמצינו להפוך למעסיק הגדול ביותר בכדור הארץ!",
       "note" : "Text for rehire not eligible active content text two"
     },
     "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
@@ -1987,10 +1811,6 @@
     "BB-application-id-null-return-to-dashboard-text" : {
       "value" : "חזרה ללוח הבקרה",
       "note" : "Text for the applicationId null page return to dashboard text"
-    },
-    "BB-Detailed-button-error-text-message" : {
-      "value" : "יש לסמן את התיבה כדי להמשיך.",
-      "note" : "Text for the detailed radio button error."
     }
   }
 }
