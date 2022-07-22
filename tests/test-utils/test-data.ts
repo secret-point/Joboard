@@ -1,5 +1,6 @@
 import { filter } from 'lodash';
 import { History, createHashHistory } from "history";
+import { uiState } from "../../src/reducers/ui.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -98,7 +99,7 @@ export const TEST_APP_CONFIG: any = {
   CSDomain: TEST_CS_DOMAIN
 }
 export const TEST_PAYLOAD: any = {
-  output: {}, 
+  output: {},
   data: TEST_APPLICATION_DATA,
   currentPage: TEST_PAGE,
   nextPage: TEST_PAGE,
@@ -155,4 +156,8 @@ export const hasAction = (actions: any[], actionToCheck: string) => {
     }
   });
   return result;
+}
+
+export const TestInitUiState: uiState = {
+  isLoading: false
 }

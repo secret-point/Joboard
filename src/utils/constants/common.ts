@@ -1,6 +1,6 @@
 import {
     AdditionalBgcConfig,
-    ApplicationStep,
+    ApplicationStep, DayHoursFilter,
     DetailedRadioButtonItem,
     DisabilityItem,
     FcraDisclosureConfig,
@@ -13,7 +13,7 @@ import {
 } from "../types/common";
 import {
     APPLICATION_STEPS,
-    BACKGROUND_AGENT,
+    BACKGROUND_AGENT, DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
     SCHEDULE_FILTER_TYPE
@@ -665,3 +665,55 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
     ConvictionInfoRadioConfig,
     ConvictionDetailConfig
 ]
+
+export const dayHoursFilterValues: DayHoursFilter[] = [
+    {
+        day: DAYS_OF_WEEK.MONDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-MONDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.TUESDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-TUESDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.WEDNESDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-WEDNESDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.THURSDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-THURSDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.FRIDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-FRIDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.SATURDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-SATURDAY"
+    },
+    {
+        day: DAYS_OF_WEEK.SUNDAY,
+        isActive: true,
+        startTime: "00:00",
+        endTime: "23:59",
+        dayTranslationKey: "BB-DayName-SUNDAY"
+    }
+];

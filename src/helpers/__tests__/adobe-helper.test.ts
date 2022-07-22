@@ -4,7 +4,7 @@ import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { createHashHistory } from "history";
 import { routerMiddleware } from "react-router-redux";
-import { TEST_HCR_ID, TEST_PAGE, TEST_REQUISITION_ID } from '../../../tests/test-data';
+import { TEST_HCR_ID, TEST_PAGE, TEST_REQUISITION_ID } from '../../../tests/test-utils/test-data';
 
 
 describe("Unit tests for adobe helper", () => {
@@ -76,7 +76,7 @@ describe("Unit tests for adobe helper", () => {
     //                 },
     //                 application: {
     //                     shift: getShift()
-    //                 } 
+    //                 }
     //             }
     //         }
     //     });
@@ -89,7 +89,7 @@ describe("Unit tests for adobe helper", () => {
     //     testDay1DateAndWeekNumber(data, getShift());
     // })
 
-    // test("test getDataForMetrics for job opportunities with shifts", () => {        
+    // test("test getDataForMetrics for job opportunities with shifts", () => {
     //     store.getState = jest.fn().mockReturnValue({
     //         app: {
     //             currentPage: {
@@ -151,7 +151,7 @@ describe("Unit tests for adobe helper", () => {
     //             data: {
     //                 application: {
     //                     shift: getShift()
-    //                 } 
+    //                 }
     //             }
     //         }
     //     });
@@ -220,7 +220,7 @@ describe("Unit tests for adobe helper", () => {
     //     testDay1DateAndWeekNumber(data, getShift());
     // })
 
-    // test("test getDataForMetrics for thank you page", () => {        
+    // test("test getDataForMetrics for thank you page", () => {
     //     store.getState = jest.fn().mockReturnValue({
     //         app: {
     //         currentPage: {
@@ -229,7 +229,7 @@ describe("Unit tests for adobe helper", () => {
     //         data: {
     //             application: {
     //                 shift: getShift()
-    //             } 
+    //             }
     //         }
     //     }
     //     });

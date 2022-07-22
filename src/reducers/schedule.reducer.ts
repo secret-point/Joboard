@@ -1,10 +1,6 @@
 import { SCHEDULE_ACTION_TYPE, ScheduleActions } from "../actions/ScheduleActions/scheduleActionTypes";
 import { Schedule, ScheduleStateFilters } from "../utils/types/common";
-import { initScheduleStateFilters } from "../utils/constants/common";
-import { getDaysHoursDefaultFilters } from "../utils/helper";
-
-
-const defaultDaysHoursFilters = getDaysHoursDefaultFilters();
+import { dayHoursFilterValues, initScheduleStateFilters } from "../utils/constants/common";
 
 export interface ScheduleState {
     loading: boolean
@@ -25,7 +21,7 @@ export const initScheduleState: ScheduleState = {
     },
     filters: {
         ...initScheduleStateFilters,
-        daysHoursFilter: defaultDaysHoursFilters
+        daysHoursFilter: dayHoursFilterValues
     }
 
 }
@@ -68,7 +64,7 @@ export default function scheduleReducer( state: ScheduleState = initScheduleStat
                 ...state,
                 loading: false,
                 failed: true,
-                results: { ...state.results, scheduleDetail: undefined } 
+                results: { ...state.results, scheduleDetail: undefined }
             }
 
         case SCHEDULE_ACTION_TYPE.UPDATE_FILTERS:

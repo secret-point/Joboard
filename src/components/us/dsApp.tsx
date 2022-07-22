@@ -80,7 +80,7 @@ const {
   APPLICATIONID_NULL
 } = PAGE_ROUTES;
 
-const DragonStoneAppUS = ( props: MapStateToProps ) => {
+export const DragonStoneAppUS = ( props: MapStateToProps ) => {
   const { appConfig, ui } = props;
   const { bannerMessage } = ui;
 

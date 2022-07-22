@@ -1,5 +1,5 @@
 import { validateRequiredData } from "../validate";
-import { TEST_PAGE_ID, TEST_APPLICATION_DATA } from "../../../tests/test-data";
+import { TEST_PAGE_ID, TEST_APPLICATION_DATA } from "../../../tests/test-utils/test-data";
 
 describe("Validate: ", () => {
   const getComponentsWithoutRequiredData = () => {
