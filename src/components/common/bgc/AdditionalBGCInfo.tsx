@@ -327,8 +327,8 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 nationalIdType === SocialSecurityNumberValue &&
                 get(appConfig, 'results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable') === true &&
                 !get(candidateData, 'additionalBackgroundInfo.idNumber') &&
-                get(schedule, 'results.scheduleDetail.data.businessLine') !== BusinessLineType.Air_Job &&
-                get(job, 'results.data.dspEnabled') === true &&
+                get(schedule, 'results.scheduleDetail.businessLine') !== BusinessLineType.Air_Job &&
+                get(job, 'results.dspEnabled') === true &&
                 <>
                     <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
                         {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
