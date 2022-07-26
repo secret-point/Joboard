@@ -4,10 +4,10 @@ import { InputWrapper, } from "@amzn/stencil-react-components/form";
 import { Label, Text } from "@amzn/stencil-react-components/text";
 import { PopupDatePicker } from "@amzn/stencil-react-components/date-picker";
 import moment from "moment";
-import YearMonthPicker from "./YearMonthPicket";
 import { FormInputItem } from "../../../utils/types/common";
 import { PopoverPosition } from "@amzn/stencil-react-components/popover";
 import { translate as t } from "../../../utils/translator";
+import { getLocale } from "../../../utils/helper";
 
 type RenderPopupContentProps = {
     calendar: React.ReactNode;
@@ -41,45 +41,21 @@ const DatePicker = ( props: DatePickerProps ) => {
     const placeholderText = placeholder && placeholderTranslationKey ? t(placeholderTranslationKey, placeholder) : placeholder;
 
     const [date, setDate] = useState<string | undefined>(undefined);
-    const [month, setMonth] = useState<string>("");
-    const [year, setYear] = useState<string>("");
 
     useEffect(() => {
         const dateFromValue = value ? moment(value) : moment();
-        setMonth(dateFromValue.format("MM"));
-        setYear(dateFromValue.format("yyyy"));
         if(value) {
             setDate(dateFromValue.format("yyyy-MM-DD"));
         }
     }, [value]);
-
-    const onYearMonthChange = ( value: number, unit: any ) => {
-        if(unit === "M") {
-            setMonth(value.toString());
-        }
-        else {
-            setYear(value.toString());
-        }
-
-        if(date) {
-            const selectedDate = moment(date).set(unit, value).format("yyyy-MM-DD");
-            onDateChange(selectedDate);
-        }
-        else {
-            const selectedDate = moment().set(unit, value).format("yyyy-MM-DD");
-            onDateChange(selectedDate);
-        }
-    };
 
     const renderPopupContent = ( params: RenderPopupContentProps ) => {
         const { calendar, legend, } = params;
         return (
             <Col gridGap={15} alignItems="center">
                 {calendar}
-                <YearMonthPicker month={month} year={year} onChange={onYearMonthChange}/>
                 {legend}
             </Col>
-
         )
     };
 
@@ -127,6 +103,7 @@ const DatePicker = ( props: DatePickerProps ) => {
                     <PopupDatePicker
                         {...inputProps}
                         id={id}
+                        key={`key-${id}`}
                         aria-label={name}
                         aria-describedby={`introduction ${inputProps["aria-describedby"]}`}
                         name={name}
@@ -139,6 +116,7 @@ const DatePicker = ( props: DatePickerProps ) => {
                             position: PopoverPosition.TopLeading,
                         }}
                         error={hasError}
+                        locale={getLocale()}
                         renderPopupContent={renderPopupContent}
                         inputProps={{
                             ...inputProps,
