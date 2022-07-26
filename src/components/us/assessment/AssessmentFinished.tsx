@@ -54,7 +54,7 @@ const AssessmentFinished = (props: MapStateToProps) => {
         });
       }
       //force route to the same page to append query params ( jobId and schedule Id)
-      routeToAppPageWithPath(PAGE_ROUTES.RESUME_APPLICATION, queryParamItems);
+      routeToAppPageWithPath(PAGE_ROUTES.ASSESSMENT_FINISHED, queryParamItems);
       //call workflow service to update step
       applicationData && onCompleteTaskHelper(applicationData);
     });
