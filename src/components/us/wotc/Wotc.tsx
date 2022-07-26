@@ -14,7 +14,7 @@ import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
   application: ApplicationState;
-};
+}
 
 const LocaleToWotcLangMapping: Record<Locale, string> = {
   [Locale.enGB]: 'en',

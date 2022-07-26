@@ -4,8 +4,11 @@ import {
     GET_STATE_CONFIG_TYPE,
     GetCountryStateConfigAction,
     GetCountryStateConfigSuccessAction,
+    HideAppLoaderAction,
     ResetBannerMessage,
-    SetBannerMessage
+    SetBannerMessage,
+    ShowAppLoaderAction,
+    UI_STATE_TYPES
 } from "./uiActionTypes";
 
 export const actionGetCountryStateConfig = (): GetCountryStateConfigAction => {
@@ -33,6 +36,18 @@ export const actionSetBannerMessage = (payload: AlertMessage): SetBannerMessage 
 export const actionResetBannerMessage = (): ResetBannerMessage => {
     return {
         type: BANNER_MESSAGE_TYPE.RESET_BANNER_MESSAGE
+    }
+}
+
+export const actionShowAppLoader = (): ShowAppLoaderAction => {
+    return {
+        type: UI_STATE_TYPES.SHOW_WOTC_LOADER
+    }
+}
+
+export const actionHideAppLoader = (): HideAppLoaderAction => {
+    return {
+        type: UI_STATE_TYPES.HIDE_WOTC_LOADER
     }
 }
 

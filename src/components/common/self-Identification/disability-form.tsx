@@ -17,6 +17,7 @@ import {
 } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import DetailedRadioError from "../DetailedRadioError";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -113,14 +114,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
       </FormWrapper>
 
       {
-        isDisabilityMissing &&
-        <Row padding="S300" backgroundColor={CommonColors.RED05}>
-          <StatusIndicator
-            messageText={errorMessage}
-            status={Status.Negative}
-            iconAriaHidden={true}
-          />
-        </Row>
+        isDisabilityMissing && <DetailedRadioError/>
       }
 
       <Col gridGap={15}>

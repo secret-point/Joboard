@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Spinner, SpinnerSize } from "@amzn/stencil-react-components/spinner";
 import { connect } from "react-redux";
@@ -19,7 +19,7 @@ export const AppLoader = ( props: AppLoaderMergedProps) => {
     const { ui, loaderText } = props;
 
     return (
-        ui.isLoading ?
+        ui.isLoading || ui.wotcLoading ?
         <Col
             className="AppLoader"
         >

@@ -18,6 +18,11 @@ export enum BANNER_MESSAGE_TYPE {
     RESET_BANNER_MESSAGE = "RESET_BANNER_MESSAGE",
 }
 
+export enum UI_STATE_TYPES {
+    SHOW_WOTC_LOADER= "SHOW_WOTC_APP_LOADER",
+    HIDE_WOTC_LOADER = "HIDE_WOTC_APP_LOADER"
+}
+
 export interface GetCountryStateConfigAction extends Action {
     type: GET_STATE_CONFIG_TYPE.GET;
 }
@@ -56,6 +61,14 @@ export interface GetPageOrderFailedAction extends Action {
     payload: any; // Refine errorMessage type later
 }
 
+export interface ShowAppLoaderAction extends Action {
+    type: UI_STATE_TYPES.SHOW_WOTC_LOADER;
+}
+
+export interface HideAppLoaderAction extends Action {
+    type: UI_STATE_TYPES.HIDE_WOTC_LOADER;
+}
+
 export type UI_ACTION =
   GetCountryStateConfigAction |
   GetCountryStateConfigSuccessAction |
@@ -64,4 +77,6 @@ export type UI_ACTION =
   GetPageOrderSuccessAction |
   GetPageOrderFailedAction |
   SetBannerMessage |
-  ResetBannerMessage;
+  ResetBannerMessage |
+  HideAppLoaderAction |
+  ShowAppLoaderAction ;

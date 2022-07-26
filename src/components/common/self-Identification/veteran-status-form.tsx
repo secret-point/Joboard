@@ -21,6 +21,7 @@ import { handleSubmitSelfIdVeteranStatus } from "../../../utils/helper";
 import InnerHTML from "dangerously-set-html-content";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import DetailedRadioError from "../DetailedRadioError";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -103,14 +104,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isVeteranMissingMissing &&
-          <Row padding="S300" backgroundColor={CommonColors.RED05}>
-            <StatusIndicator
-              messageText={"Please check the box to proceed."}
-              status={Status.Negative}
-              iconAriaHidden={true}
-            />
-          </Row>
+          isVeteranMissingMissing && <DetailedRadioError/>
         }
 
         <FormWrapper columnGap={10}>
@@ -133,14 +127,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isMilitarySpouseMissing &&
-          <Row padding="S300" backgroundColor={CommonColors.RED05}>
-            <StatusIndicator
-              messageText={"Please check the box to proceed."}
-              status={Status.Negative}
-              iconAriaHidden={true}
-            />
-          </Row>
+          isMilitarySpouseMissing && <DetailedRadioError/>
         }
 
         <Col gridGap={5} className="protectedVetContainer">
@@ -186,14 +173,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isProtectedVeteranMissing &&
-          <Row padding="S300" backgroundColor={CommonColors.RED05}>
-            <StatusIndicator
-              messageText={"Please check the box to proceed."}
-              status={Status.Negative}
-              iconAriaHidden={true}
-            />
-          </Row>
+          isProtectedVeteranMissing && <DetailedRadioError/>
         }
 
       </Col>

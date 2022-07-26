@@ -3,7 +3,12 @@ import {
     GET_ENV_CONFIG_TYPE,
     GET_INITIAL_APP_CONFIG_TYPE
 } from "../actions/AppConfigActions/appConfigActionTypes";
-import { BANNER_MESSAGE_TYPE, GET_STATE_CONFIG_TYPE, UI_ACTION } from "../actions/UiActions/uiActionTypes";
+import {
+    BANNER_MESSAGE_TYPE,
+    GET_STATE_CONFIG_TYPE,
+    UI_ACTION,
+    UI_STATE_TYPES
+} from "../actions/UiActions/uiActionTypes";
 import { GET_JOB_DETAIL_TYPE } from "../actions/JobActions/jobDetailActionTypes";
 import { SCHEDULE_ACTION_TYPE } from "../actions/ScheduleActions/scheduleActionTypes";
 import { APPLICATION_ACTION_TYPES } from "../actions/ApplicationActions/applicationActionTypes";
@@ -15,6 +20,7 @@ import { AlertMessage } from "../utils/types/common";
 export interface uiState {
     isLoading: boolean;
     bannerMessage?: AlertMessage,
+    wotcLoading?: boolean
 }
 
 export const initUiState: uiState = {
@@ -42,6 +48,13 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 ...state,
                 isLoading: true
             };
+
+        case UI_STATE_TYPES.SHOW_WOTC_LOADER:
+            return {
+                ...state,
+                wotcLoading: true
+            };
+
         case GET_INITIAL_APP_CONFIG_TYPE.SUCCESS:
         case GET_INITIAL_APP_CONFIG_TYPE.FAILED:
         case GET_ENV_CONFIG_TYPE.SUCCESS:
@@ -72,6 +85,13 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 ...state,
                 isLoading: action.loadingStatus? action.loadingStatus : false
             };
+
+        case UI_STATE_TYPES.HIDE_WOTC_LOADER:
+            return {
+                ...state,
+                wotcLoading: false
+            };
+
 
         case BANNER_MESSAGE_TYPE.SET_BANNER_MESSAGE:
             return {

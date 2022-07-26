@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
 import { FormWrapper } from "@amzn/stencil-react-components/form";
@@ -12,9 +12,8 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
-import { CommonColors } from "../../../utils/colors";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import { connect } from "react-redux";
+import DetailedRadioError from "../DetailedRadioError";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -85,14 +84,7 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
         </FormWrapper>
 
         {
-          isGenderMissing &&
-          <Row padding="S300" backgroundColor={CommonColors.RED05}>
-            <StatusIndicator
-              messageText={"Please check the box to proceed."}
-              status={Status.Negative}
-              iconAriaHidden={true}
-            />
-          </Row>
+          isGenderMissing && <DetailedRadioError/>
         }
 
         <FormWrapper columnGap={10}>
@@ -116,14 +108,7 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
         </FormWrapper>
       </Col>
       {
-        isEthnicityMissing &&
-        <Row padding="S300" backgroundColor={CommonColors.RED05}>
-          <StatusIndicator
-            messageText={"Please check the box to proceed."}
-            status={Status.Negative}
-            iconAriaHidden={true}
-          />
-        </Row>
+        isEthnicityMissing && <DetailedRadioError/>
       }
       <Col padding={{ top: "S300" }}>
         <Button

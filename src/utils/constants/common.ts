@@ -513,12 +513,12 @@ export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
 export const SelfIdProtectedVeteranRadioItem: DetailedRadioButtonItem[] = [
     {
         title: "Yes",
-        value: "Yes",
+        value: "Yes, I believe one or more of the above categories apply to me",
         titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text"
     },
     {
         title: "No",
-        value: "No",
+        value: "No, I do not believe one or more of the above categories apply to me",
         titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text"
     },
     {
@@ -541,7 +541,7 @@ export const SelfIdDisabilityRadioItem: DetailedRadioButtonItem[] = [
     },
     {
         title: "I Don’t Wish To Answer",
-        value: "I Don’t Wish To Answer",
+        value: "I DON’T WISH TO ANSWER",
         titleTranslationKey: "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text"
     }
 ]

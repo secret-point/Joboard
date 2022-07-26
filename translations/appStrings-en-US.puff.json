@@ -904,7 +904,7 @@
         },
         "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text": {
             "note": "Text for the protected veteran select form option: No",
-            "value": "NO"
+            "value": "No"
         },
         "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text": {
             "note": "Text for the protected veteran select form option: I choose not to self-identify",
@@ -1781,6 +1781,10 @@
         "BB-application-id-null-return-to-dashboard-text": {
             "note": "Text for the applicationId null page return to dashboard text",
             "value": "Return to dashboard"
+        },
+        "BB-Detailed-button-error-text-message":  {
+            "note": "Text for the detailed radio button error.",
+            "value": "Please check the box to proceed."
         }
     }
 }

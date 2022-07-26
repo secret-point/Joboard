@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import isEmpty from "lodash/isEmpty";
-import { Spinner } from "@amzn/stencil-react-components/spinner";
 import { Col } from "@amzn/stencil-react-components/layout";
+import { boundHideAppLoader, boundShowAppLoader } from "../../actions/UiActions/boundUi";
 
 interface IFrameProps {
   src: string;
@@ -9,27 +9,30 @@ interface IFrameProps {
 }
 
 const IFrame: React.FC<IFrameProps> = ({ src, title }) => {
-  const iframeRef = useRef(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const iframeRef = useRef<any>(null);
 
   useEffect(() => {
-    if (!isEmpty(src)) {
-      setLoading(false);
+    boundShowAppLoader();
+    if (iframeRef.current) {
+      iframeRef.current.addEventListener("load", () => {
+        boundHideAppLoader();
+      });
     }
-    console.log(src);
-  }, [src]);
+  }, [iframeRef.current]);
 
-  return loading ? (
-    <Col alignItems="center">
-      <Spinner />
+  return (
+    <Col id="wotcIframeContainer">
+      {
+        !isEmpty(src) &&
+        <iframe
+          ref={iframeRef}
+          className="iframe"
+          src={src}
+          title={title}
+          id="wotcIframe"
+        />
+      }
     </Col>
-  ) : (
-    <iframe
-      ref={iframeRef}
-      className="iframe"
-      src={src}
-      title={title}
-    />
   );
 };
 
