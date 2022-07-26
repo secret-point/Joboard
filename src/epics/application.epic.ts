@@ -27,11 +27,13 @@ import {
   actionWorkflowRequestInit,
   completeTask,
   loadWorkflowDS,
-  onCompleteTaskHelper
+  onCompleteTaskHelper,
+  startOrResumeWorkflowDS
 } from "../actions/WorkflowActions/workflowActions";
 import store from "../store/store";
 import {
   createUpdateApplicationRequest,
+  getCurrentStepNameFromHash,
   routeToAppPageWithPath,
   sanitizeApplicationData,
   setEpicApiCallErrorMessage
@@ -62,7 +64,7 @@ import {
   GetApplicationErrorMessage,
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
-import { PAGE_ROUTES } from "../components/pageRoutes";
+import { PAGE_ROUTES, PagesControlledByWorkFlowService } from "../components/pageRoutes";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { SelectedScheduleForUpdateApplication } from "../utils/apiTypes";
 
@@ -126,6 +128,9 @@ export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
                     return actionWorkflowRequestInit();
                 }
                 else {
+                    const currentStepName = getCurrentStepNameFromHash();
+                    if (PagesControlledByWorkFlowService.includes(currentStepName as PAGE_ROUTES)) startOrResumeWorkflowDS()
+
                     return actionWorkflowRequestEnd();
                 }
             }
