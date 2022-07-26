@@ -10,7 +10,7 @@ import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { QueryParamItem } from "../../../utils/types/common";
-import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
+import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 
@@ -56,7 +56,7 @@ const AssessmentFinished = (props: MapStateToProps) => {
       //force route to the same page to append query params ( jobId and schedule Id)
       routeToAppPageWithPath(PAGE_ROUTES.ASSESSMENT_FINISHED, queryParamItems);
       //call workflow service to update step
-      applicationData && onCompleteTaskHelper(applicationData);
+      applicationData && onCompleteTaskHelper(applicationData, false, undefined, WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT);
     });
   }, [applicationData, jobDetail, jobId, scheduleId]);
 

@@ -205,13 +205,13 @@ export const onTimeOut = () => {
   }
 };
 
-export const onCompleteTaskHelper = ( application: Application, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME ) => {
+export const onCompleteTaskHelper = ( application: Application, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME, currentStep?: WORKFLOW_STEP_NAME ) => {
   const state = store.getState();
   const jobId = application.jobScheduleSelected?.jobId;
   const scheduleId = application.jobScheduleSelected?.scheduleId;
   const applicationId = application.applicationId;
   const candidateId = application.candidateId;
-  const currentStepName = getCurrentStepNameFromHash();
+  const currentStepName = currentStep || getCurrentStepNameFromHash();
   const scheduleDetail = state.schedule.results.scheduleDetail;
 
   if(isBackButton) {
