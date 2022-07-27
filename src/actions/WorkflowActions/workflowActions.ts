@@ -18,6 +18,7 @@ import {
   WorkflowRequestInitAction,
   WorkflowRequestStartAction
 } from "./workflowActionTypes";
+import { PAGE_ROUTES } from "../../components/pageRoutes";
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
@@ -116,6 +117,28 @@ export const sendHeartBeatWorkflow = () => {
   }
 };
 
+export const ifShouldGoToStep = (targetStepName: string, currentStepName:string): boolean => {
+  // Do not redirect if the current step is the same as the target step
+  if(targetStepName === currentStepName) {
+    return false;
+  }
+
+  // Do not redirect to `assessment-consent` if the current step is `assessment-finished`.
+  //
+  // There is a race condition on `assessment-finished` page, when HOOK redirect back to us, since the whole domain and url change it's a
+  // page refresh. BB UI will reconnect websocket which will returns the step `assessment-consent`, since there is a mismatch between the
+  // current step and the current page, BB UI will try to redirect the user to the `assessment-consent` page the WS response indicates.
+  //
+  // We want to make sure that the user stays at `assessment-finished` page when we are trying to completeTask assessment-consent. Otherwise,
+  // the user will see the `assessment-consent` page first then after a few seconds be redirected back to the next step.
+  if (currentStepName === PAGE_ROUTES.ASSESSMENT_FINISHED &&
+    targetStepName === WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT) {
+    return false;
+  }
+
+  return true;
+};
+
 export const goToStep = async ( workflowData: WorkflowData ) => {
   const state = store.getState();
   const applicationData = state.application.results;
@@ -124,7 +147,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
 
   log("Received data from step function", { workflowData, currentStepName: currentStepName, goToStepName: stepName });
 
-  if(stepName && stepName !== currentStepName && applicationData) {
+  if(stepName && applicationData && ifShouldGoToStep(stepName, currentStepName)) {
     boundWorkflowRequestStart();
 
     log(`current step name (${currentStepName}) and go to step name (${stepName}) is not matched`);
@@ -147,7 +170,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
     }
   }
   else {
-    log(`Received same as current step name ${currentStepName}`);
+    log(`Received target step name: ${stepName}, current step name ${currentStepName}. Stay on current step.`);
     boundWorkflowRequestEnd();
   }
 };
