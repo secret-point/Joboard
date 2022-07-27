@@ -52,5 +52,6 @@ module.exports = {
   ],
   testEnvironmentOptions: {
     url: "http://test.com/"
-  }
+  },
+  snapshotSerializers: ["enzyme-to-json/serializer"]
 };

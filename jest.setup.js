@@ -1,7 +1,7 @@
 import { mockUseBreakPoint } from "./tests/test-utils/test-helper";
 import { MediaQueryRules } from "./tests/test-utils/constants";
 
-const localStorageMock = (function() {
+const storageMock = (function() {
     var store = {};
 
     return {
@@ -23,7 +23,11 @@ const localStorageMock = (function() {
 
 
 Object.defineProperty(window, 'localStorage', {
-    value: localStorageMock
+    value: storageMock
+});
+
+Object.defineProperty(window, 'sessionStorage', {
+    value: storageMock
 });
 
 mockUseBreakPoint(MediaQueryRules['s'], true);

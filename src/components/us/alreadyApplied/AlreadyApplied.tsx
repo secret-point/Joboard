@@ -19,7 +19,7 @@ interface MapStateToProps {
   job: JobState
 }
 
-const AlreadyApplied = (props: MapStateToProps) => {
+export const AlreadyApplied = (props: MapStateToProps) => {
   const { candidate, job } = props;
   const { candidateData } = candidate.results;
   const firstName = candidateData?.firstName;
@@ -35,11 +35,11 @@ const AlreadyApplied = (props: MapStateToProps) => {
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-  }, [jobId]);
+  }, [jobDetail, jobId]);
 
   useEffect(() => {
     jobDetail && addMetricForPageLoad(pageName);
-  }, [jobDetail]);
+  }, [jobDetail, pageName]);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
@@ -55,7 +55,7 @@ const AlreadyApplied = (props: MapStateToProps) => {
         {t("BB-already-applied-description", "Return to the dashboard resume your application or view application and new hire appointment details, and your next steps.")}
       </Text>
       <Col padding={{top: "S300"}}>
-        <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
+        <Button dataTestId="button-dashboard" variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
           {t("BB-already-applied-button-text", "Return to dashboard")}
         </Button>
       </Col>

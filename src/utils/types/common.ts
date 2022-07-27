@@ -663,11 +663,11 @@ export interface ScheduleStateFilters {
 };
 
 export interface Assessment {
-    assessmentExpireDateTime: string;
-    assessmentInitiationDateTime: string;
+    assessmentExpireDateTime: string | null;
+    assessmentInitiationDateTime: string | null;
     assessmentOrderId: string;
     assessmentPackageId: string;
-    assessmentScore: string;
+    assessmentScore: string | null;
     assessmentStatus: string;
     assessmentStatusDateTime: string;
     assessmentType: string;

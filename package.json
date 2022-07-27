@@ -142,7 +142,8 @@
   },
   "proxy": "http://localhost:8080",
   "devDependencies": {
+    "@amzn/brazil": "*",
     "@types/classnames": "^2.2.10",
-    "@amzn/brazil": "*"
+    "enzyme-to-json": "^3.6.2"
   }
 }

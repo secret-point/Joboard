@@ -1,6 +1,7 @@
-import { filter } from 'lodash';
-import { History, createHashHistory } from "history";
+import { createHashHistory } from "history";
 import { uiState } from "../../src/reducers/ui.reducer";
+import { CandidateState } from "../../src/reducers/candidate.reducer";
+import { Address, Candidate } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -9,66 +10,196 @@ export const TEST_PAGE_ID = "test-page-id";
 export const TEST_PAGE_CONFIG_PATH = "test-config-path";
 export const TEST_MISC = "test-misc";
 export const TEST_STAGE = "";
-export const TEST_URL = "https://test-me.url.fake/{applicationId}/{requisitionId}";
+export const TEST_URL =
+  "https://test-me.url.fake/{applicationId}/{requisitionId}";
 export const TEST_KEY = "test-key";
 export const TEST_STEP_ID = "job-opportunities";
 export const TEST_HCR_ID = "test-hcr-id";
 export const TEST_SCHEDULE_ID = "test-schedule-id";
 export const TEST_CS_DOMAIN = "https://hiring.amazon.com";
 
+export const TEST_CANDIDATE_SF_ID = "CID099157287";
 
-export const TEST_CANDIDATE: any = {
-  candidateId: TEST_CANDIDATE_ID
-}
+export const TEST_CANDIDATE_ADDRESS: Address = {
+  addressLine1: "test address line 1",
+  addressLine2: "test address line 2",
+  city: "Test City",
+  state: "California",
+  country: "United States",
+  zipcode: "94458",
+  countryCode: "US"
+};
+
+export const TEST_CANDIDATE: Candidate = {
+  candidateId: TEST_CANDIDATE_ID,
+  candidateSFId: TEST_CANDIDATE_SF_ID,
+  firstName: "test-firstname",
+  middleName: "test-middlename",
+  lastName: "test-lastname",
+  nameSuffix: "",
+  address: TEST_CANDIDATE_ADDRESS,
+  timezone: "(GMT-08:00) Pacific Standard Time (America/Los_Angeles)",
+  emailId: "test-hvh@amazon.com",
+  language: "English",
+  preferredPhoneType: "",
+  phoneNumber: "+16729991234",
+  phoneCountryCode: "",
+  homePhoneNumber: "",
+  homePhoneCountryCode: "",
+  alternatePhoneNumber: "",
+  alternatePhoneCountryCode: "",
+  selfIdentificationInfo: {
+    highestDegree: "",
+    nationalId: "",
+    nationalIdType: "",
+    citizenship: "",
+    document: "",
+    driverLicence: "",
+    gender: "Male",
+    ethnicity: "Asian (not Hispanic or Latino)",
+    ethnicitySubGroup: "",
+    ethnicityOther: "",
+    militarySpouse: "No",
+    veteran: "No",
+    protectedVeteran:
+      "No, I do not believe one or more of the above categories apply to me",
+    disability: "NO, I DON'T HAVE A DISABILITY",
+    disabilityDate: "2022-07-20T01:12:29.985Z",
+    religion: "",
+    otherReligion: "",
+    sexualOrientation: ""
+  },
+  employmentInfo: {
+    employeeId: "",
+    employeeType: "Full Time",
+    rehireEligibilityStatus: "",
+    rehireLocation: "",
+    rehireOverride: "N",
+    startDate: "",
+    managerLogin: "",
+    department: "",
+    shiftCode: "",
+    agencyName: "None;Adecco"
+  },
+  additionalBackgroundInfo: {
+    hasCriminalRecordWithinSevenYears: false,
+    convictionDetails: "",
+    hasPreviouslyWorkedAtAmazon: false,
+    mostRecentBuildingWorkedAtAmazon: "",
+    mostRecentTimePeriodWorkedAtAmazon: "",
+    previousLegalNames: [],
+    governmentIdType: "United States - Social Security Number",
+    idNumber: "*****9599",
+    dateOfBirth: "1988-08-02",
+    address: TEST_CANDIDATE_ADDRESS,
+    isWithoutSSN: false
+  },
+  metadata: null,
+  locale: "en_US",
+  isAgencyUser: false,
+  isEmailVerified: true,
+  isPhoneVerified: true,
+  isSFUser: false,
+  isAgreeToCommunication: true,
+  isDuplicateSSN: false,
+  socialSecurityNumber: "uoYHDQffNlHRGrvu77SW/On8LGpJz8lmCWmcK+CJVJM",
+  numSSNEdits: 1,
+  assessmentsTaken: {
+    Tier1_WS: {
+      assessmentPackageId: "Tier1_WS",
+      assessmentType: "Overall",
+      assessmentOrderId: "f7af4d5e-2375-4e02-8256-42589c3143ca",
+      assessmentUrl:
+        "https://beta.assessments.amazon.jobs/?auth=rkDk3vARs8nyRn-pQZGN6uOn-NXHXGD9zLR7N5q1Gos#/v2/assessment/BB_f7af4d5e-2375-4e02-8256-42589c3143ca",
+      assessmentScore: null,
+      assessmentExpireDateTime: null,
+      assessmentStatus: "Initiated",
+      assessmentInitiationDateTime: null,
+      assessmentStatusDateTime: "2022-07-26T23:04:13.250Z"
+    },
+    Tier1_WS_Place_Rank: {
+      assessmentPackageId: "Tier1_WS_Place_Rank",
+      assessmentType: "Overall",
+      assessmentOrderId: "7e04c725-8de2-4242-afc0-f9ae5c09f046",
+      assessmentUrl:
+        "https://beta.assessments.amazon.jobs/?auth=a-DEajP_7yqu20e1mRhsGF6eT3LVQ5xTW6Q_E-9Rg3g#/assessment/BB_7e04c725-8de2-4242-afc0-f9ae5c09f046",
+      assessmentScore: null,
+      assessmentExpireDateTime: null,
+      assessmentStatus: "Initiated",
+      assessmentInitiationDateTime: null,
+      assessmentStatusDateTime: "2022-07-15T22:26:38.546Z"
+    }
+  }
+};
+
+export const TEST_CANDIDATE_STATE: CandidateState = {
+  formError: {},
+  loading: false,
+  failed: false,
+  results: {
+    candidateData: TEST_CANDIDATE
+  }
+};
+
 export const TEST_APPLICATION: any = {
   applicationId: TEST_APPLICATION_ID
-}
+};
 
+export const TEST_JOB_ID = "JOB-US-0000001234";
+export const TEST_JOB2_ID = "JOB-US-0000005678";
+
+// TODO: change it to be type JOB
 export const TEST_JOB: any = {
-    selectedChildSchedule: {
-      scheduleId: TEST_SCHEDULE_ID
-    },
-    jobDescription: "",
-}
+  selectedChildSchedule: {
+    scheduleId: TEST_SCHEDULE_ID
+  },
+  jobDescription: "",
+  jobId: TEST_JOB_ID
+};
+
+export const TEST_JOB_STATE: any = {
+  loading: false,
+  failed: false,
+  results: TEST_JOB
+};
 
 export const TEST_APPLICATION_DATA: any = {
-    requisition: {
-      availableShifts:{
-        shifts: [
-          {
-            headCountRequestId: TEST_HCR_ID
-          }
-        ]
-      }
-    },
-    application: {
-      applicationId: TEST_APPLICATION_ID
-    },
-    job: TEST_JOB,
-    output: {},
-    candidate: {},
-    showPreviousNames: "",
-    selectedShift: {
-        requisitionId: TEST_REQUISITION_ID
-    },
-    loadingShifts: true,
-    shiftsEmptyOnFilter: false,
-    shiftPageFactor: 0
-}
-
+  requisition: {
+    availableShifts: {
+      shifts: [
+        {
+          headCountRequestId: TEST_HCR_ID
+        }
+      ]
+    }
+  },
+  application: {
+    applicationId: TEST_APPLICATION_ID
+  },
+  job: TEST_JOB,
+  output: {},
+  candidate: {},
+  showPreviousNames: "",
+  selectedShift: {
+    requisitionId: TEST_REQUISITION_ID
+  },
+  loadingShifts: true,
+  shiftsEmptyOnFilter: false,
+  shiftPageFactor: 0
+};
 
 export const TEST_PAGE: any = {
   id: TEST_PAGE_ID,
   orderNumber: 0,
   configPath: TEST_PAGE_CONFIG_PATH
-}
+};
 
 export const TEST_URL_PARAM: any = {
   page: TEST_PAGE_ID,
   requisitionId: TEST_REQUISITION_ID,
   applicationId: TEST_APPLICATION_ID,
   misc: TEST_MISC
-}
+};
 
 export const TEST_APP_CONFIG: any = {
   stage: TEST_STAGE,
@@ -96,8 +227,46 @@ export const TEST_APP_CONFIG: any = {
       }
     }
   },
-  CSDomain: TEST_CS_DOMAIN
-}
+  CSDomain: TEST_CS_DOMAIN,
+  featureList: {
+    PREVENT_DUPLICATE_SSN: {
+      isAvailable: true
+    },
+    SUPPRESS_QUESTIONS_IF_REHIRE_ELIGIBLE: {
+      isAvailable: true
+    },
+    STENCIL_COLOR_OVERRIDE: {
+      isAvailable: true
+    },
+    CS_AUTH: {
+      isAvailable: true
+    },
+    UNIFIED_DOMAIN: {
+      isAvailable: true
+    },
+    PREFERRED_NAME: {
+      isAvailable: true
+    },
+    SELF_ID_PLACEMENT: {
+      isAvailable: true
+    },
+    CANDIDATE_DASHBOARD: {
+      isAvailable: true
+    },
+    HOOK: {
+      isAvailable: true
+    },
+    NO_SSN_CHECKBOX: {
+      isAvailable: true
+    },
+    MLS: {
+      isAvailable: true,
+      options: {
+        message: "Multi-language sopport feature flag"
+      }
+    }
+  }
+};
 export const TEST_PAYLOAD: any = {
   output: {},
   data: TEST_APPLICATION_DATA,
@@ -122,7 +291,7 @@ export const TEST_PAYLOAD: any = {
   history: createHashHistory(),
   activeStepIndex: 0,
   isContentContainsSteps: false
-}
+};
 
 export const EXCEPTION_MESSAGE = "EXCEPTION_MESSAGE";
 
@@ -137,15 +306,15 @@ export const TEST_REDUX_STORE: any = {
         parentRequisitionId: TEST_REQUISITION_ID
       }
     },
-    appConfig:{
+    appConfig: {
       CSDomain: "https://hiring.amazon.com"
     }
   }
-}
+};
 
 export const TEST_WORKFLOW_DATA: any = {
   stepName: TEST_STEP_ID
-}
+};
 
 //util functions
 export const hasAction = (actions: any[], actionToCheck: string) => {
@@ -156,8 +325,8 @@ export const hasAction = (actions: any[], actionToCheck: string) => {
     }
   });
   return result;
-}
+};
 
 export const TestInitUiState: uiState = {
   isLoading: false
-}
+};
