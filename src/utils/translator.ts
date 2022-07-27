@@ -1,5 +1,6 @@
 import i18next, { StringMap, TOptions } from "i18next";
-import { getLocale } from "./helper";
+import { getFeatureFlagValue, getLocale } from "./helper";
+import { FEATURE_FLAG } from "./enums/common";
 
 /**
  * Get translated strings.
@@ -7,6 +8,14 @@ import { getLocale } from "./helper";
  * @param defaultString
  */
 export const translate = (stringId: string, defaultString: string, options?: TOptions<StringMap> | string) => {
+
+  //Check if MLS feature flag is enabled otherwise return defaultString
+  const isMlsEnabled = getFeatureFlagValue(FEATURE_FLAG.MLS);
+
+  if(!isMlsEnabled) {
+    return defaultString;
+  }
+
   //You can pass an array of keys to lookup.
   //The last one in the list will end up being the default value being displayed if no keys are found.
   // const locale = getLocale({});

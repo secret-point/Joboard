@@ -28,7 +28,7 @@ import DragonStoneAppUS from "./components/us/dsApp";
 import { onSFLogout } from "./actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "./constants";
 import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
-import { AppConfig, Application } from "./utils/types/common";
+import { AppConfig, Application, FeatureFlagList } from "./utils/types/common";
 import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
 import { PageContainer } from "@amzn/stencil-react-components/page";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -70,7 +70,7 @@ getInitialData()
     };
     store.dispatch(actionGetInitialAppConfigActionSuccess(appConfig));
 
-    const featureList = data[0]?.featureList;
+    const featureList: FeatureFlagList = data[0]?.featureList;
     const CSDomain = data[0]?.CSDomain;
     const currentOrigin = window.location.origin;
     if (currentOrigin !== CSDomain && featureList?.UNIFIED_DOMAIN?.isAvailable && process.env.NODE_ENV === "production") {

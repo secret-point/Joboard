@@ -10,6 +10,7 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
+    FeatureFlagList,
     FormInputItem,
     GetNheTimeSlotRequestDs,
     Job,
@@ -55,6 +56,7 @@ import {
     BGC_STEPS,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
+    FEATURE_FLAG,
     INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
     SELF_IDENTIFICATION_STEPS,
@@ -1079,3 +1081,15 @@ export const checkAndBoundGetApplication = (applicationId: string) => {
         routeToAppPageWithPath(PAGE_ROUTES.APPLICATIONID_NULL);
     }
 };
+
+export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
+    const state = store.getState();
+    const envConfig = state.appConfig.results?.envConfig;
+    const featureFlagList: FeatureFlagList | undefined = envConfig?.featureList;
+
+    if(featureFlagList){
+        return featureFlagList[featureFlag]?.isAvailable || false;
+    }
+
+    return false;
+}

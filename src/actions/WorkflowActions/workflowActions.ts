@@ -133,9 +133,9 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
     boundUpdateWorkflowName({ applicationId: applicationData.applicationId, workflowStepName: stepName }, () => {
           boundWorkflowRequestEnd();
           routeToAppPageWithPath(stepName);
-          log(`update workflow step in local storage as ${stepName}`);
+          log(`update workflow step in local storage as ${stepName}`, applicationData);
         }, ( ex: any ) => {
-          logError("Unable to update workflow step in application", ex);
+          logError("Unable to update workflow step in application", ex, applicationData);
           boundWorkflowRequestEnd();
         }
     )

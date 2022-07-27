@@ -5,13 +5,13 @@ import {
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
+    FEATURE_FLAG,
     INFO_CARD_STEP_STATUS,
     QUERY_PARAMETER_NAME,
     SCHEDULE_FILTER_TYPE,
     SELF_IDENTIFICATION_STEPS,
     WORKFLOW_STEP_NAME
 } from "../enums/common";
-import { keys } from "ramda";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 
 export interface QueryParamItem {
@@ -35,7 +35,7 @@ export interface EnvConfig {
     defaultDaysHoursFilter: DaysHoursFilter[];
     defaultAvailableFilter: AvailableFilter;
     defaultAvailableFilterDS: AvailableFilter;
-    featureList?: any;
+    featureList?: FeatureFlagList;
     CSDomain: string;
 }
 
@@ -855,3 +855,9 @@ export interface UpdateWotcStatusRequest {
     candidateId: string;
     status: string;
 }
+
+export type FeatureFlagList = {
+    [key in FEATURE_FLAG]: {
+        isAvailable: boolean;
+    };
+};
