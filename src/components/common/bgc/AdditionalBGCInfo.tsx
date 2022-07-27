@@ -224,11 +224,14 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         <ModalContent
             titleText=''
             buttons={[
-                <Button onClick={() => { close(); setIsNoSSNChecked(false) }} variant={ButtonVariant.Secondary}>
+                <Button
+                    onClick={() => { close(); setIsNoSSNChecked(false); setIsNoSSNModalConsentChecked(false); }}
+                    variant={ButtonVariant.Secondary}
+                >
                     {t('BB-BGC-no-ssn-modal-cancel-button', 'Cancel')}
                 </Button>,
                 <Button
-                    onClick={() => { close(); setIsNoSSNChecked(true); }}
+                    onClick={() => { close(); setIsNoSSNChecked(true); setIsNoSSNModalConsentChecked(false); }}
                     variant={ButtonVariant.Primary}
                     disabled={!isNoSSNModalConsentChecked}
                 >
@@ -331,7 +334,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 get(job, 'results.dspEnabled') === true &&
                 <>
                     <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
-                        {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
+                        {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security Number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
                     </MessageBanner>
                     <Col className="formInputItem">
                         <WithModal
