@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 import { Col } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
 import { H4, Text } from "@amzn/stencil-react-components/text";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { useLocation } from "react-router";
 import queryString from "query-string";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -50,12 +54,13 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
 
     useEffect(() => {
-        checkAndBoundGetApplication(applicationId);
+        applicationId && checkAndBoundGetApplication(applicationId);
     }, [applicationId]);
 
     useEffect(() => {
-        jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, pageName]);
+        scheduleDetail &&jobDetail && applicationData && nheData.length && addMetricForPageLoad(pageName);
+
+    }, [jobDetail, applicationData, scheduleDetail, nheData]);
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -67,7 +72,7 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     }, [jobDetail, jobId]);
 
     useEffect(() => {
-        scheduleId && boundGetScheduleDetail({
+        scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
             locale: getLocale(),
             scheduleId: scheduleId
         })
@@ -76,6 +81,13 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
     useEffect(() => {
         scheduleDetail && fetchNheTimeSlotDs(scheduleDetail);
     }, [scheduleDetail]);
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[])
 
     const handleConfirmSelection = () => {
         if (applicationData && selectedNhe) {

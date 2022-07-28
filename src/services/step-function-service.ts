@@ -134,7 +134,7 @@ export default class StepFunctionService {
   }
 
   error( event: any ) {
-    log("Error on received from wWebsocket", event, LoggerType.ERROR);
+    log("Error on received from Websocket", event, LoggerType.ERROR);
     boundWorkflowRequestEnd();
   }
 }

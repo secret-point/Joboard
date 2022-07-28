@@ -10,7 +10,7 @@ import { SelfIdentificationState } from "../../../reducers/selfIdentification.re
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import {
-  checkAndBoundGetApplication,
+  checkAndBoundGetApplication, getLocale,
   handleInitiateSelfIdentificationStep,
   isSelfIdentificationInfoValid,
   SelfShouldDisplayContinue
@@ -18,18 +18,28 @@ import {
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { translate as t } from "../../../utils/translator";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { JobState } from "../../../reducers/job.reducer";
 
 interface MapStateToProps {
   application: ApplicationState,
   candidate: CandidateState,
-  selfIdentification: SelfIdentificationState
+  selfIdentification: SelfIdentificationState,
+  schedule: ScheduleState,
+  job: JobState;
 }
 
 interface SelfIdentificationProps {
@@ -39,28 +49,49 @@ interface SelfIdentificationProps {
 type SelfIdentificationMergeProps = MapStateToProps & SelfIdentificationProps;
 
 const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
-  const { selfIdentification, application, candidate } = props;
+  const { selfIdentification, application, candidate, schedule, job } = props;
   const { stepConfig } = selfIdentification;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId } = queryParams;
+  const { applicationId, scheduleId, jobId } = queryParams;
   const applicationData = application.results;
   const candidateData = candidate.results?.candidateData;
   const selfIdentificationInfo = candidateData?.selfIdentificationInfo;
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
+  const jobDetail = job.results;
+  const scheduleDetail = schedule.results.scheduleDetail;
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
-    applicationData && addMetricForPageLoad(pageName);
-  }, [applicationData, pageName]);
-
-  useEffect(() => {
     boundGetCandidateInfo();
   }, [applicationData]);
+
+  useEffect(() => {
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
+      locale: getLocale(),
+      scheduleId: scheduleId
+    })
+  }, [scheduleId]);
+
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
+
+  useEffect(() => {
+    jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);

@@ -6,15 +6,15 @@ const candidatePayloadDefault = {
   values: [
     {
       key: "status",
-      value: "candidate.loginStatus"
+      value: "candidate.results.candidateData.loginStatus"
     },
     {
       key: "CID",
-      value: "candidate.candidateSFId"
+      value: "candidate.results.candidateData.candidateSFId"
     },
     {
       key: "bbCandidateId",
-      value: "candidate.candidateId"
+      value: "candidate.results.candidateData.candidateId"
     }
   ]
 }
@@ -24,23 +24,23 @@ const candidateOnThankYouPayloadDefault = {
   values: [
     {
       key: "status",
-      value: "candidate.loginStatus"
+      value: "candidate.results.candidateData.loginStatus"
     },
     {
       key: "CID",
-      value: "candidate.candidateSFId"
+      value: "candidate.results.candidateData.candidateSFId"
     },
     {
       key: "bbCandidateId",
-      value: "candidate.candidateId"
+      value: "candidate.results.candidateData.candidateId"
     },
     {
       key: "referbyExisting",
-      value: "application.jobReferral.hasReferral"
+      value: "application.results.jobReferral.hasReferral"
     },
     {
       key: "referrerID",
-      value: "application.jobReferral.referralInfo"
+      value: "application.results.jobReferral.referralInfo"
     }
   ]
 }
@@ -50,23 +50,23 @@ const jobPayloadDefault = {
   values: [
     {
       key: "ID",
-      value: "requisitionId"
+      value: "requisition.results.requisitionId"
     },
     {
       key: "title",
-      value: "requisition.consentInfo.jobTitle"
+      value: "requisition.results.consentInfo.jobTitle"
     },
     {
       key: "location",
-      value: "requisition.consentInfo.locationDescription"
+      value: "requisition.results.consentInfo.locationDescription"
     },
     {
       key: "reqStatus",
-      value: "requisition.consentInfo.requisitionStatus"
+      value: "requisition.results.consentInfo.requisitionStatus"
     },
     {
       key: "reqType",
-      value: "requisition.consentInfo.requisitionType"
+      value: "requisition.results.consentInfo.requisitionType"
     },
     {
       key: "source",
@@ -80,11 +80,11 @@ const applicationPayloadDefault = {
   values: [
     {
       key: "ID",
-      value: "application.applicationId"
+      value: "application.results.applicationId"
     },
     {
       key: "workflow",
-      value: "application.workflowStepName"
+      value: "application.results.workflowStepName"
     }
   ]
 };
@@ -94,11 +94,11 @@ const shiftPreferencesPayload = {
   values: [
     {
       key: "roleCount",
-      value: "requisition.totalChildRequisitions"
+      value: "requisition.results.totalChildRequisitions"
     },
     {
       key: "list",
-      value: "requisition.jobTitles"
+      value: "requisition.results.jobTitles"
     }
   ]
 };
@@ -108,11 +108,11 @@ const applicationIneligibleDefault = {
   values: [
     {
       key: "ID",
-      value: "application.applicationId"
+      value: "application.results.applicationId"
     },
     {
       key: "workflow",
-      value: "application.workflowStepName"
+      value: "requisition.results.workflowStepName"
     }
   ]
 };
@@ -122,7 +122,7 @@ const jobRolesPayloadDefault = {
   values: [
     {
       key: "list",
-      value: "requisition.childRequisitions"
+      value: "requisition.results.childRequisitions"
     }
   ]
 };
@@ -132,11 +132,11 @@ const shiftsPayloadDefault = {
   values: [
     {
       key: "count",
-      value: "requisition.availableShifts.total"
+      value: "requisition.results.availableShifts.total"
     },
     {
       key: "list",
-      value: "requisition.availableShifts.shifts"
+      value: "requisition.results.availableShifts.shifts"
     }
   ]
 };
@@ -154,7 +154,7 @@ const dragonstoneJobPayloadDefault = {
     },
     {
       key: "scheduleList",
-      value: "job.availableSchedules.schedules"
+      value: "schedule.results.scheduleList"
     }
   ]
 };
@@ -239,7 +239,7 @@ const shiftPayloadDefault = {
       values: [
         {
           key: "ID",
-          value: "application.jobSelected.childRequisitionId"
+          value: "application.results.jobSelected.childRequisitionId"
         },
         {
           key: "location",
@@ -252,7 +252,7 @@ const shiftPayloadDefault = {
       values: [
         {
           key: "ID",
-          value: "application.jobSelected.headCountRequestId"
+          value: "application.results.jobSelected.headCountRequestId"
         },
         {
           key: "type",
@@ -288,11 +288,11 @@ const eventSchedulePayload = {
   values: [
     {
       key: "jobID",
-      value: "application.schedule.scheduleId"
+      value: "job.results.jobId"
     },
     {
       key: "scheduleID",
-      value: "application.schedule.scheduleId"
+      value: "schedule.results.scheduleDetail.scheduleId"
     }
   ]
 };
@@ -306,119 +306,119 @@ const dragonstoneSchedulePayloadDefault = {
     },
     {
       key: "scheduleID",
-      value: "application.schedule.scheduleId"
+      value: "schedule.results.scheduleDetail.scheduleId"
     },
     {
       key: "siteCode",
-      value: "application.schedule.metricSiteId"
+      value: "schedule.results.scheduleDetail.metricSiteId"
     },
     {
       key: "internalJobCode",
-      value: "application.schedule.internalJobCode"
+      value: "schedule.results.scheduleDetail.internalJobCode"
     },
     {
       key: "employeeClass",
-      value: "application.schedule.employeeClass"
+      value: "schedule.results.scheduleDetail.employeeClass"
     },
     {
       key: "employmentType",
-      value: "application.schedule.employmentType"
+      value: "schedule.results.scheduleDetail.employmentType"
     },
     {
       key: "scheduleType",
-      value: "application.schedule.scheduleType"
+      value: "schedule.results.scheduleDetail.scheduleType"
     },
     {
       key: "agencyName",
-      value: "application.schedule.agencyName"
+      value: "schedule.results.scheduleDetail.agencyName"
     },
     {
       key: "employmentType",
-      value: "application.schedule.employmentType"
+      value: "schedule.results.scheduleDetail.employmentType"
     },
     {
       key: "marketingContent",
-      value: "application.schedule.marketingContent" // not in DS
+      value: "schedule.results.scheduleDetail.marketingContent" // not in DS
     },
     {
       key: "phoneToolTitle",
-      value: "application.schedule.phoneToolTitle" // not in DS
+      value: "schedule.results.scheduleDetail.phoneToolTitle" // not in DS
     },
     {
       key: "shiftCode",
-      value: "application.schedule.standardShiftCode"
+      value: "schedule.results.scheduleDetail.standardShiftCode"
     },
     {
       key: "scheduleText",
-      value: "application.schedule.scheduleText"
+      value: "schedule.results.scheduleDetail.scheduleText"
     },
     {
       key: "hoursPerWeek",
-      value: "application.schedule.hoursPerWeek"
+      value: "schedule.results.scheduleDetail.hoursPerWeek"
     },
     {
       key: "basePay",
-      value: "application.schedule.basePay"
+      value: "schedule.results.scheduleDetail.basePay"
     },
     {
       key: "scheduleBannerText",
-      value: "application.schedule.scheduleBannerText"
+      value: "schedule.results.scheduleDetail.scheduleBannerText"
     },
     {
       key: "nhoType",
-      value: "application.schedule.nhoType"
+      value: "schedule.results.scheduleDetail.nhoType"
     },
     {
       key: "trainingDate",
-      value: "application.schedule.trainingDate"
+      value: "schedule.results.scheduleDetail.trainingDate"
     },
     {
       key: "hireDate",
-      value: "application.schedule.hireStartDate"
+      value: "schedule.results.scheduleDetail.hireStartDate"
     },
     {
       key: "firstDayOnsite",
-      value: "application.schedule.firstDayOnsite"
+      value: "schedule.results.scheduleDetail.firstDayOnsite"
     },
     {
       key: "priorityRank",
-      value: "application.schedule.priorityRank"
+      value: "schedule.results.scheduleDetail.priorityRank"
     },
     {
       key: "laborOrderCount",
-      value: "application.schedule.laborOrderCount"
+      value: "schedule.results.scheduleDetail.laborOrderCount"
     },
     {
       key: "laborDemandCount",
-      value: "application.schedule.laborDemandCount"
+      value: "schedule.results.scheduleDetail.laborDemandCount"
     },
     {
       key: "softMatchCount",
-      value: "application.schedule.softMatchCount" // not in DS
+      value: "schedule.results.scheduleDetail.softMatchCount" // not in DS
     },
     {
       key: "matchCount",
-      value: "application.schedule.matchCount" // not in DS
+      value: "schedule.results.scheduleDetail.matchCount" // not in DS
     },
     {
       key: "softMatchCount",
-      value: "application.schedule.softMatchCount" // not in DS
+      value: "schedule.results.scheduleDetail.softMatchCount" // not in DS
     },
     {
       key: "financeWeek",
-      value: "application.schedule.financeWeek"
+      value: "schedule.results.scheduleDetail.financeWeek"
     },
     {
       key: "alpsCode",
-      value: "application.schedule.alpsCode"
+      value: "schedule.results.scheduleDetail.alpsCode"
     },
     {
       key: "departmentCode",
-      value: "application.schedule.departmentCode"
+      value: "schedule.results.scheduleDetail.departmentCode"
     },
     {
       key: "managerLogin",
-      value: "application.schedule.managerLogin"
+      value: "schedule.results.scheduleDetail.managerLogin"
     },
   ]
 };
@@ -428,7 +428,7 @@ const shiftTypePayloadDefault = {
   values: [
     {
       key: "oldShiftType",
-      value: "application.jobSelected.shiftType"
+      value: "application.results.jobSelected.shiftType"
     },
     {
       key: "newShiftType",
@@ -480,43 +480,43 @@ const sitePayloadDefault = {
   values: [
     {
       key: "code",
-      value: "application.schedule.metricSiteId"
+      value: "schedule.results.scheduleDetail.metricSiteId"
     },
     {
       key: "locationCode",
-      value: "application.schedule.locationCode"
+      value: "schedule.results.scheduleDetail.locationCode"
     },
     {
       key: "geoclusterCode",
-      value: "application.schedule.geoClusterId"
+      value: "schedule.results.scheduleDetail.geoClusterId"
     },
     {
       key: "businessLine",
-      value: "application.schedule.businessLine"
+      value: "schedule.results.scheduleDetail.businessLine"
     },
     {
       key: "businessCategory",
-      value: "application.schedule.businessCategory"
+      value: "schedule.results.scheduleDetail.businessCategory"
     },
     {
       key: "address",
-      value: "application.schedule.address"
+      value: "schedule.results.scheduleDetail.address"
     },
     {
       key: "city",
-      value: "application.schedule.city"
+      value: "schedule.results.scheduleDetail.city"
     },
     {
       key: "zipCode",
-      value: "application.schedule.postalCode"
+      value: "schedule.results.scheduleDetail.postalCode"
     },
     {
       key: "agencyName",
-      value: "application.schedule.agencyName"
+      value: "schedule.results.scheduleDetail.agencyName"
     },
     {
       key: "contingencyTAT",
-      value: "application.schedule.businessLine"
+      value: "schedule.results.scheduleDetail.businessLine"
     }
   ]
 };
@@ -526,7 +526,7 @@ const nhePayloadDefault = {
   values: [
     {
       key: "count",
-      value: "requisition.nheTimeSlots"
+      value: "nhe.results.nheData"
     }
   ]
 };
@@ -793,6 +793,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       eventShiftPayload,
       candidatePayloadDefault,
+      dragonstoneJobPayloadDefault
     ]
   },
   "start-specific-job-video" : {
@@ -809,6 +810,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       eventShiftPayload,
       candidatePayloadDefault,
+      dragonstoneJobPayloadDefault
     ]
   },
   "finish-specific-job-video" : {
@@ -825,6 +827,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       applicationPayloadDefault,
       eventShiftPayload,
       candidatePayloadDefault,
+      dragonstoneJobPayloadDefault
     ]
   },
   "contingent-offer": {
@@ -1147,7 +1150,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-
   "no-available-shift": {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -1167,7 +1169,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-
   "no-available-shift-self-service": {
     eventPayload: {
       event: EVENT.NO_AVAILABLE_SHIFT_SELF_SERVICE,
@@ -1187,7 +1188,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
     ]
   },
-
   "successful-update-shift-self-service": {
     eventPayload: {
       event: EVENT.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE,
@@ -1330,7 +1330,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-
   "get-all-avaliable-shift-error": {
     eventPayload: {
       event: EVENT.GET_SHIFTS_ERROR,
@@ -1348,7 +1347,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-
   "get-all-avaliable-shift-error-self-service": {
     eventPayload: {
       event: EVENT.GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE,
@@ -1367,7 +1365,6 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-
   "apply-filter-self-service": {
     eventPayload: {
       event: EVENT.APPLY_FILTER_SELF_SERVICE,

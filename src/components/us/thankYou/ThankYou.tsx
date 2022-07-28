@@ -6,41 +6,61 @@ import { IconArrowRight, IconSize } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
-import InnerHTML from 'dangerously-set-html-content';
+import InnerHTML from "dangerously-set-html-content";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { boundGetApplication, boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
-import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, validateUserId } from "../../../utils/helper";
+import {
+  checkAndBoundGetApplication,
+  createUpdateApplicationRequest,
+  formatDate, getLocale,
+  validateUserId
+} from "../../../utils/helper";
 import { Application, FormInputItem } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { translate as t } from "../../../utils/translator";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
   application: ApplicationState;
-};
+  candidate: CandidateState,
+  schedule: ScheduleState,
+  job: JobState;
+}
 
 interface JobReferral {
   hasReferral: 'yes' | 'no';
   referralInfo?: string;
-};
+}
 
 const ThankYou = (props: MapStateToProps) => {
-  const { application } = props;
+  const { application, candidate, schedule, job } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId } = queryParams;
+  const { applicationId, jobId, scheduleId } = queryParams;
   const applicationData = application.results;
+  const scheduleDetail = schedule.results.scheduleDetail;
+  const candidateData = candidate.results.candidateData;
+  const jobDetail = job.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
 
@@ -69,9 +89,27 @@ const ThankYou = (props: MapStateToProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    applicationData && addMetricForPageLoad(pageName);
-  }, [applicationData, pageName]);
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
+      locale: getLocale(),
+      scheduleId: scheduleId
+    })
+  }, [scheduleId]);
 
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
+
+  useEffect(() => {
+    jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   const validateFormInput = (): boolean => {
     if (hasReferral) {

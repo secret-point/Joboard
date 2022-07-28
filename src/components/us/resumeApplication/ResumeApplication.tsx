@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
@@ -14,15 +18,18 @@ import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { Col } from "@amzn/stencil-react-components/layout";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
-    schedule: ScheduleState
+    schedule: ScheduleState,
+    candidate: CandidateState
 }
 
 const ResumeApplication = (props: MapStateToProps) => {
-    const { job, application, schedule } = props;
+    const { job, application, schedule, candidate } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -31,6 +38,11 @@ const ResumeApplication = (props: MapStateToProps) => {
     const applicationData = application.results;
     const jobId = applicationData?.jobScheduleSelected.jobId;
     const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
+    const candidateData = candidate.results.candidateData;
+
+    useEffect(() => {
+        boundGetCandidateInfo();
+    }, [])
 
     useEffect(() => {
         checkAndBoundGetApplication(applicationId);
@@ -59,11 +71,19 @@ const ResumeApplication = (props: MapStateToProps) => {
     }, [applicationData, jobDetail, jobId, scheduleId]);
 
     useEffect(() => {
-        jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, pageName]);
+        jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+    }, [jobDetail, applicationData, candidateData]);
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[]);
 
     return (
-      <Col minHeight="40vh"></Col>
+      <Col minHeight="40vh"/>
     );
 };
 

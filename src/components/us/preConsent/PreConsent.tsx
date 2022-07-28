@@ -1,22 +1,55 @@
-import React from "react"
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { CommonColors } from "../../../utils/colors";
-import { routeToAppPageWithPath } from "../../../utils/helper";
+import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import ApplicationSteps from "../../common/ApplicationSteps";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
+import { JobState } from "../../../reducers/job.reducer";
+import { useLocation } from "react-router";
+import queryString from "query-string";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
-
+  job: JobState;
 }
 
 const PreConsent = ( props: MapStateToProps ) => {
 
+  const { job } = props;
+  const { search, pathname } = useLocation();
+  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
+  const pageName = getPageNameFromPath(pathname);
+  const jobId = queryParams.jobId;
+  const jobDetail = job.results;
   const { CONSENT } = PAGE_ROUTES;
+
+  // Don't refetch data if id is not changing
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobId]);
+
+  useEffect(() => {
+    jobDetail &&  addMetricForPageLoad(pageName);
+
+  }, [jobDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
     const onGoNextPage = () => {
         routeToAppPageWithPath(CONSENT)

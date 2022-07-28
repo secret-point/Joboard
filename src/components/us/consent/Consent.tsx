@@ -7,7 +7,11 @@ import { Text } from "@amzn/stencil-react-components/text";
 import InnerHTML from "dangerously-set-html-content";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
 import { Application } from "../../../utils/types/common";
@@ -49,13 +53,13 @@ const ConsentPage = (props: MapStateToProps) => {
     const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
 
     const isCreateButtonDisabled = scheduleId
-        ? jobDetail && scheduleDetail && !isLoading ? false : true
-        : jobDetail && !isLoading ? false : true;
+        ? !(jobDetail && scheduleDetail && !isLoading)
+        : !(jobDetail && !isLoading);
 
     // Don't refetch data if id is not changing
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
-    }, [jobDetail, jobId]);
+    }, [jobId]);
 
     useEffect(() => {
         scheduleId && boundGetScheduleDetail({
@@ -65,8 +69,18 @@ const ConsentPage = (props: MapStateToProps) => {
     }, [scheduleId]);
 
     useEffect(() => {
-        jobDetail && addMetricForPageLoad(pageName)
-    }, [jobDetail, pageName])
+        if(jobDetail && ((scheduleId && scheduleDetail) || (!scheduleId))) {
+            addMetricForPageLoad(pageName);
+        }
+
+    }, [jobDetail, scheduleDetail])
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[])
 
     const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
         <FlyoutContent

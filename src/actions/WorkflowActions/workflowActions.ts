@@ -1,4 +1,4 @@
-import { Application, EnvConfig, Schedule, WorkflowData } from "../../utils/types/common";
+import { Application, CompleteTaskRequest, EnvConfig, Schedule, WorkflowData } from "../../utils/types/common";
 import StepFunctionService from "../../services/step-function-service";
 import moment from "moment";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
@@ -179,31 +179,27 @@ export const completeTask =
     ( application?: Application, currentStep?: string, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME, jobId?: string, schedule?: Schedule ) => {
       if(window.stepFunctionService?.websocket) {
         boundWorkflowRequestStart();
-        const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime;
-        const state = schedule?.state;
-        const employmentType = schedule?.employmentType;
-        const data: any = {
+        const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime || "";
+        const state = schedule?.state || "";
+        const employmentType = schedule?.employmentType || "";
+        const data: CompleteTaskRequest = {
           action: "completeTask",
-          applicationId: window.stepFunctionService.applicationId,
-          candidateId: window.stepFunctionService.candidateId,
+          applicationId: window.stepFunctionService.applicationId || "",
+          candidateId: window.stepFunctionService.candidateId || "",
           requisitionId: window.stepFunctionService.requisitionId || "", // requisitionId can't be null
           jobId: jobId || "",
           state,
           employmentType,
           eventSource: "HVH-CA-UI",
           jobSelectedOn,
-          currentWorkflowStep: currentStep,
-          isCsDomain: checkIfIsCSRequest()
+          currentWorkflowStep: currentStep || "",
+          isCsDomain: checkIfIsCSRequest(),
+          workflowStepName: isBackButton ? targetStep || "" : ""
         };
 
-        if(isBackButton) {
-          data.workflowStepName = targetStep;
-        }
-        else {
-          data.workflowStepName = "";
-        }
+        log(`complete ${currentStep} stepName request: `, { ...data });
+
         window.stepFunctionService.websocket?.send(JSON.stringify(data));
-        log(`${currentStep} completed`, { ...data });
       }
     };
 
@@ -238,10 +234,10 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   const scheduleDetail = state.schedule.results.scheduleDetail;
 
   if(isBackButton) {
-    log(`Completed task on back button execution, current step is ${currentStepName}`);
+    log(`Completed task on back button execution, current step is ${currentStepName} for application:`, application);
   }
   else {
-    log(`Completed task on ${currentStepName}`);
+    log(`Completed task on ${currentStepName} for application:`, application);
   }
 
   if(!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {

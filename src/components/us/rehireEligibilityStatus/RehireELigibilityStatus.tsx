@@ -3,11 +3,16 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToDashboard } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  redirectToDashboard,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { useLocation } from "react-router";
 import queryString from "query-string";
@@ -18,20 +23,24 @@ import RehireNotEligibleActive from "../../common/rehireEligibilityStatus/Rehire
 import Days365NotRehireEligible from "../../common/rehireEligibilityStatus/Days365NotRehireEligible";
 import RehireNotEligibleSeasonalOnly from "../../common/rehireEligibilityStatus/RehireNotEligibleSeasonalOnly";
 import NotRehireEligible from "../../common/rehireEligibilityStatus/NotRehireEligible";
+import { ApplicationState } from "../../../reducers/application.reducer";
 
 interface MapStateToProps {
   candidate: CandidateState,
   job: JobState,
-  workflow: WorkflowState
+  workflow: WorkflowState,
+  application: ApplicationState
 }
 
 const RehireEligibilityStatus = (props: MapStateToProps) => {
-  const { job, workflow } = props;
+  const { job, workflow, candidate, application } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const pageName = getPageNameFromPath(pathname);
-  const { jobId } = queryParams;
+  const { jobId, applicationId } = queryParams;
   const jobDetail = job.results;
+  const applicationData = application.results;
+  const candidateData = candidate.results.candidateData;
   const { workflowErrorCode } = workflow;
 
   useEffect(() => {
@@ -39,12 +48,26 @@ const RehireEligibilityStatus = (props: MapStateToProps) => {
   }, [])
 
   useEffect(() => {
+    checkAndBoundGetApplication(applicationId);
+  }, [applicationId]);
+
+  useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
   }, [jobId]);
 
   useEffect(() => {
-    jobDetail && addMetricForPageLoad(pageName);
-  }, [jobDetail]);
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[]);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

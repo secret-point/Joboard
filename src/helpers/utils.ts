@@ -9,6 +9,7 @@ import { CS_DOMAIN_LIST } from "../constants";
 import { isArray, isBoolean } from "lodash";
 import store from "../store/store";
 import { Application } from "../utils/types/common";
+import { PAGE_ROUTES } from "../components/pageRoutes";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -140,7 +141,7 @@ export const checkIfIsCSRequest = (override? : boolean) => {
 
 export const pathByDomain = () => {
   const csPath = checkIfIsCSRequest()? "/application" : "";
-  return csPath
+  return csPath;
 }
 
 export const NonDGSCandidateSelfServicePage = [
@@ -308,7 +309,10 @@ export const addApplicationIdInUrl = (application?: Application) => {
 }
 
 export const getPageNameFromPath = (path:string) => {
-  return path.split("/")[1];
+  const { JOB_CONFIRMATION, JOB_DESCRIPTION, BACKGROUND_CHECK_FCRA } = PAGE_ROUTES;
+  const isSubPath = path.includes(JOB_CONFIRMATION) || path.includes(JOB_DESCRIPTION) || path.includes(BACKGROUND_CHECK_FCRA);
+  //Return subPath as pathname to send correct page name to BI
+  return isSubPath ? path.split("/")[2] : path.split("/")[1];
 };
 
 export const redirectToLoginCSDS = () => {
@@ -336,3 +340,9 @@ export const redirectToDashboard = () => {
     window.location.assign(envConfig?.dashboardUrl);
   }
 };
+
+export const resetIsPageMetricsUpdated = (pageName: string) => {
+  const isPageMetricsUpdated = window.isPageMetricsUpdated || {};
+  isPageMetricsUpdated[pageName] = false;
+  window.isPageMetricsUpdated = isPageMetricsUpdated;
+}

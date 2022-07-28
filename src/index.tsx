@@ -16,11 +16,7 @@ import domLoaded from "dom-loaded";
 import queryString from "query-string";
 import isNil from "lodash/isNil";
 import { isEmpty } from "lodash";
-import {
-  injectCsNavAndFooter,
-  objectToQuerystring,
-  parseQueryParamsArrayToSingleItem
-} from "./helpers/utils";
+import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "./helpers/utils";
 import KatalLogger from "@katal/logger";
 import { initLogger } from "./helpers/log-helper";
 import "./i18n";
@@ -28,7 +24,7 @@ import DragonStoneAppUS from "./components/us/dsApp";
 import { onSFLogout } from "./actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "./constants";
 import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
-import { AppConfig, Application, FeatureFlagList } from "./utils/types/common";
+import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
 import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
 import { PageContainer } from "@amzn/stencil-react-components/page";
 import { Col } from "@amzn/stencil-react-components/layout";
@@ -48,7 +44,7 @@ declare global {
     applicationData: Application | undefined;
     hearBeatTime: string;
     dataLayerArray: any[];
-    isPageMetricsUpdated: boolean;
+    isPageMetricsUpdated: IsPageMetricsUpdated;
     pageLoadMetricsInterval: any;
     urlParams: any;
     MetricsPublisher: KatalMetrics.Publisher;

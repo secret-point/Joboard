@@ -5,7 +5,11 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {
@@ -77,7 +81,7 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     },[])
 
     useEffect(() => {
-        scheduleId && boundGetScheduleDetail({
+        scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
             locale: getLocale(),
             scheduleId: scheduleId
         })
@@ -93,8 +97,18 @@ const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     }, [applicationId]);
 
     useEffect(() => {
-        jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, scheduleDetail, pageName]);
+        // Page will emit page load event once both pros are available but
+        // will not emit new event on props change once it has emitted pageload event previously
+        scheduleDetail && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+    }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[])
 
     useEffect(() => {
         if(applicationData && candidateData) {

@@ -4,7 +4,12 @@ import { Text } from "@amzn/stencil-react-components/text";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToDashboard } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  redirectToDashboard,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -18,22 +23,27 @@ import { Link } from "@amzn/stencil-react-components/link";
 import { AppConfigState } from "../../../reducers/appConfig.reducer";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 
 interface MapStateToProps {
   candidate: CandidateState,
   job: JobState,
   application: ApplicationState,
-  appConfig: AppConfigState
+  appConfig: AppConfigState,
+  schedule: ScheduleState
 }
 
 const NoAvailableTimeSlots = (props: MapStateToProps) => {
-  const { job, application, appConfig } = props;
+  const { job, application, appConfig, schedule, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const pageName = getPageNameFromPath(pathname);
-  const { applicationId, jobId } = queryParams;
+  const { applicationId, jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
+  const scheduleDetail = schedule.results.scheduleDetail;
+  const candidateData = candidate.results.candidateData;
   const envConfig = appConfig.results?.envConfig;
 
   useEffect(() => {
@@ -49,8 +59,25 @@ const NoAvailableTimeSlots = (props: MapStateToProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
+      locale: getLocale(),
+      scheduleId: scheduleId
+    })
+  }, [scheduleId]);
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    scheduleDetail && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

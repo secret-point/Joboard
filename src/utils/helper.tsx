@@ -715,7 +715,7 @@ export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
 
 export const loadingStatusHelper = () =>{
     const states = store.getState();
-    const loadingStates = states ? [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow] : [];
+    const loadingStates = states ? [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow, states.nhe] : [];
     let loadingCount = 0;
 
     loadingStates.forEach(loading=>{
@@ -723,7 +723,7 @@ export const loadingStatusHelper = () =>{
             loadingCount++
         }
     })
-    return loadingCount > 1? true : false;
+    return loadingCount > 1;
 }
 
 export const fetchNheTimeSlotDs = (schedule: Schedule) => {

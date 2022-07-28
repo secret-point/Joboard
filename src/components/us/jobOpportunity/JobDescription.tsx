@@ -9,25 +9,40 @@ import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
 import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 
 interface MapStateToProps {
     job: JobState,
+    application: ApplicationState,
+    candidate: CandidateState
 }
 
 const JobDescription = (props: MapStateToProps) => {
 
-    const { job } = props;
+    const { job, application, candidate } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const { jobId, applicationId } = queryParams;
     const jobDetail = job.results;
+    const applicationData = application.results;
     const { JOB_CONFIRMATION } = PAGE_ROUTES;
+    const candidateData = candidate.results.candidateData;
+
+    useEffect(() => {
+      boundGetCandidateInfo();
+    },[])
 
     // Don't refetch data if id is not changing
     useEffect(() => {
@@ -39,8 +54,15 @@ const JobDescription = (props: MapStateToProps) => {
     }, [applicationId]);;
 
     useEffect(()=>{
-        jobDetail && addMetricForPageLoad(pageName);
-    },[jobDetail, pageName]);
+      applicationData && jobDetail && candidateData && addMetricForPageLoad(pageName);
+    },[jobDetail, candidateData, applicationData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
     return (
         <Col>

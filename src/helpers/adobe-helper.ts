@@ -3,7 +3,6 @@ import { ADOBE_PAGE_LOAD_METRICS } from "../constants/page-load-metric-constants
 import { isArray } from "lodash";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";
-import { Metric } from "../@types/adobe-metrics";
 import store from "../store/store";
 
 const WORKFLOW = "BB NACF Tier-1 Node Workflow";
@@ -36,7 +35,7 @@ export const getDataForMetrics = (pageName: string) => {
           } else if (d.key === "NHE" && v.key === "count") {
             // NHE sent the count of NHE, not the list
             metricData[d.key][v.key] =
-              propertyOf(state)(v.value).length === 0
+              !propertyOf(state)(v.value) || propertyOf(state)(v.value).length === 0
                 ? "zero"
                 : propertyOf(state)(v.value).length;
           } else if (d.key === "shifts" && v.key === "list") {

@@ -4,7 +4,11 @@ import { Text } from "@amzn/stencil-react-components/text";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -24,13 +28,14 @@ interface MapStateToProps {
 }
 
 const SessionTimeout = (props: MapStateToProps) => {
-  const { job, application } = props;
+  const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const pageName = getPageNameFromPath(pathname);
   const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
+  const candidateData = candidate.results.candidateData;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -45,8 +50,18 @@ const SessionTimeout = (props: MapStateToProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   const handleGoToJobOpportunities = () => {
     const isBackButton = true;

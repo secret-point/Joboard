@@ -7,7 +7,11 @@ import { translate as t } from "../../../utils/translator";
 import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
@@ -19,17 +23,20 @@ import { ApplicationState } from '../../../reducers/application.reducer';
 import { JobState } from '../../../reducers/job.reducer';
 import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailActions';
 import { uiState } from '../../../reducers/ui.reducer';
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 
 interface MapStateToProps {
     application: ApplicationState
     schedule: ScheduleState
     job: JobState
-    ui: uiState
+    ui: uiState,
+    candidate: CandidateState
 }
 
 const JobConfirmation = ( props: MapStateToProps ) => {
 
-    const { schedule, application, job, ui } = props;
+    const { schedule, application, job, ui, candidate } = props;
     const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
@@ -39,6 +46,11 @@ const JobConfirmation = ( props: MapStateToProps ) => {
     const jobDetail = job.results;
     const applicationDetail = application.results;
     const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
+    const candidateData = candidate.results.candidateData;
+
+    useEffect(() => {
+        boundGetCandidateInfo();
+    },[])
 
     useEffect(() => {
         jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
@@ -56,8 +68,16 @@ const JobConfirmation = ( props: MapStateToProps ) => {
     }, [scheduleId]);
 
     useEffect(() => {
-        jobDetail && scheduleDetail && applicationDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, scheduleDetail, applicationDetail, pageName]);
+        jobDetail && scheduleDetail && applicationDetail && candidateData && addMetricForPageLoad(pageName);
+
+    }, [jobDetail, scheduleDetail, applicationDetail, candidateData]);
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[])
 
     const handleConfirmJob = () => {
         if(applicationDetail && scheduleDetail && jobDetail){

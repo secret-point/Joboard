@@ -861,3 +861,22 @@ export type FeatureFlagList = {
         isAvailable: boolean;
     };
 };
+
+export interface CompleteTaskRequest {
+    action: string;
+    applicationId: string;
+    candidateId: string;
+    currentWorkflowStep: string;
+    employmentType: string;
+    eventSource: string;
+    isCsDomain: boolean
+    jobId: string;
+    jobSelectedOn: string;
+    requisitionId: string;
+    state: string;
+    workflowStepName: string;
+}
+
+export interface IsPageMetricsUpdated {
+    [key: string]: boolean
+}

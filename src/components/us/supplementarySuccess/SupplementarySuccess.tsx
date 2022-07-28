@@ -8,7 +8,7 @@ import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../..
 import { redirectToASHChecklist } from "../../../utils/helper";
 
 interface MapStateToProps {
-};
+}
 
 export const SupplementarySuccess = (props: MapStateToProps) => {
   const { search, pathname } = useLocation();

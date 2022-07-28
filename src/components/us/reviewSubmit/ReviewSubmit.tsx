@@ -12,7 +12,11 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
@@ -52,7 +56,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
   }, []);
 
   useEffect(() => {
-    scheduleId && boundGetScheduleDetail({
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
     })
@@ -67,8 +71,16 @@ const ReviewSubmit = (props: MapStateToProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[]);
 
   const handleBackToEdit = (stepName: WORKFLOW_STEP_NAME) => {
     const isBackButton = true;

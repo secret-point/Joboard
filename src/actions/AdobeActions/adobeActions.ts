@@ -55,13 +55,19 @@ export const sendDataLayerAdobeAnalytics = ( metric: any ) => {
 
 export const addMetricForPageLoad = ( pageName: string ) => {
   let dataLayer: any = {};
+  window.isPageMetricsUpdated = window.isPageMetricsUpdated || {};
   try {
     const { job, requisition } = store.getState();
-    if((!isEmpty(requisition) || !isEmpty(job)) && !window.isPageMetricsUpdated) {
+    const isPageMetricsUpdated = window.isPageMetricsUpdated || {};
+    if((!isEmpty(requisition) || !isEmpty(job)) && !isPageMetricsUpdated[pageName]) {
       dataLayer = getDataForMetrics(pageName);
-      window.isPageMetricsUpdated = true;
       if(!isEmpty(dataLayer)) {
         sendDataLayerAdobeAnalytics(dataLayer);
+        isPageMetricsUpdated[pageName] = true;
+        window.isPageMetricsUpdated = isPageMetricsUpdated;
+        //TODO will be removed currently used to test in beta
+        console.log("adding new metrics", dataLayer);
+        console.log("new metrics", window.dataLayerArray);
       }
     }
   }

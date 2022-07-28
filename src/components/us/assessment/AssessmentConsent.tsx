@@ -7,7 +7,11 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -34,7 +38,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId, jobId } = queryParams;
+  const { applicationId, jobId, scheduleId } = queryParams;
   const applicationData = application.results;
   const jobDetail = job.results;
   const { candidateData } = candidate.results;
@@ -54,8 +58,18 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   useEffect(() => {
     if (candidateData && jobDetail) {

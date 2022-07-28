@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
@@ -13,14 +17,17 @@ import { QueryParamItem } from "../../../utils/types/common";
 import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
   job: JobState,
   application: ApplicationState,
+  candidate: CandidateState,
 }
 
 const AssessmentFinished = (props: MapStateToProps) => {
-  const { job, application } = props;
+  const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -29,14 +36,29 @@ const AssessmentFinished = (props: MapStateToProps) => {
   const applicationData = application.results;
   const jobId = applicationData?.jobScheduleSelected.jobId;
   const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
+  const candidateData = candidate.results.candidateData;
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    boundGetCandidateInfo();
+  },[])
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() }, () => {

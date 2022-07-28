@@ -49,16 +49,19 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
       ...(!!tid && { tid })
     }
   }
+
   window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
 };
 
 export const addMetricForPageLoad = () => {
+  const state = window.reduxStore.getState();
   let dataLayer: any = {};
   try {
-    const { app } = window.reduxStore.getState();
-    if ((!isEmpty(app.data.requisition) || !isEmpty(app.data.job)) && !window.isPageMetricsUpdated) {
+    if ((!isEmpty(state.requisition) || !isEmpty(state.job)) && !window.isPageMetricsUpdated) {
       dataLayer = getDataForMetrics();
+      // @ts-ignore
+      //Legacy code not used anywhere
       window.isPageMetricsUpdated = true;
       if (!isEmpty(dataLayer)) {
         sendDataLayerAdobeAnalytics(dataLayer);

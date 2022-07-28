@@ -13,7 +13,11 @@ import { BGCState } from "../../../reducers/bgc.reducer";
 import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+    getPageNameFromPath,
+    parseQueryParamsArrayToSingleItem,
+    resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
@@ -75,7 +79,14 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, scheduleDetail, pageName]);
+    }, [jobDetail, applicationData, scheduleDetail]);
+
+    useEffect(() => {
+        return () => {
+            //reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    },[]);
 
     useEffect(() => {
         setFcraResponse(fcraQuestions?.bgcDisclosure);

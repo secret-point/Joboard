@@ -7,18 +7,24 @@ import { connect } from "react-redux";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { translate as t } from "../../../utils/translator";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 
 interface MapStateToProps {
   application: ApplicationState,
   candidate: CandidateState,
-  job: JobState
+  job: JobState,
+  schedule: ScheduleState
 }
 
 interface AssessmentNotEligibleProps {
@@ -29,7 +35,7 @@ type AssessmentNotEligibleMergedProps = MapStateToProps & AssessmentNotEligibleP
 
 export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) => {
 
-  const { application, job, candidate } = props;
+  const { application, job, candidate, schedule } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -37,6 +43,7 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
   const applicationData = application.results;
   const jobDetail = job.results;
   const candidateData = candidate.results.candidateData;
+  const scheduleDetail = schedule.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -51,9 +58,20 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
   }, [jobDetail, jobId]);
 
+
   useEffect(() => {
-    jobDetail && applicationData && addMetricForPageLoad(pageName);
-  }, [jobDetail, applicationData, pageName]);
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   return (
     <Col gridGap={15}>

@@ -4,16 +4,29 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import IFrame from "../../common/IFrame";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { connect } from "react-redux";
 import { Locale } from "../../../utils/types/common";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { translate as t } from "../../../utils/translator";
+import { JobState } from "../../../reducers/job.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
   application: ApplicationState;
+  job: JobState,
+  candidate: CandidateState,
+  schedule: ScheduleState,
 }
 
 const LocaleToWotcLangMapping: Record<Locale, string> = {
@@ -23,20 +36,46 @@ const LocaleToWotcLangMapping: Record<Locale, string> = {
 };
 
 export const Wotc = (props: MapStateToProps) => {
-  const { application } = props;
+  const { application, candidate, schedule, job } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId } = queryParams;
+  const { applicationId, jobId, scheduleId } = queryParams;
   const applicationData = application.results;
+  const { scheduleDetail } = schedule.results;
+  const jobDetail = job.results;
+  const candidateData = candidate.results;
+
+  useEffect(() => {
+    boundGetCandidateInfo();
+  }, [])
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
-    applicationData && addMetricForPageLoad(pageName);
-  }, [applicationData, pageName]);
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
+      locale: getLocale(),
+      scheduleId: scheduleId
+    })
+  }, [scheduleId]);
+
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
+
+  useEffect(() => {
+    jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   const wotcLocalizedUrl = (wotcUrl: string): string => {
     if (!wotcUrl) {

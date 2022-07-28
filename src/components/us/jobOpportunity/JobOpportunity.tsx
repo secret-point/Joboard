@@ -4,7 +4,11 @@ import { Col, Row } from "@amzn/stencil-react-components/layout";
 import StepHeader from "../../common/StepHeader";
 import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
 import { Text } from "@amzn/stencil-react-components/text";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { useLocation } from "react-router";
 import queryString from "query-string";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -35,11 +39,14 @@ import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import SortSchedule from "../../common/jobOpportunity/SortSchedule";
 import FilterSchedule from "../../common/jobOpportunity/FilterSchedule";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
-    schedule: ScheduleState
+    schedule: ScheduleState,
+    candidate: CandidateState
 }
 
 interface JobOpportunityProps {
@@ -49,7 +56,7 @@ interface JobOpportunityProps {
 type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
 
 const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
-    const { job, application, schedule } = props;
+    const { job, application, schedule, candidate } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -59,8 +66,13 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const scheduleData = schedule.results.scheduleList;
     const scheduleFilters = schedule.filters;
     const { matches } = useBreakpoints();
+    const candidateData = candidate.results.candidateData;
 
     const width = matches.s ? '100VW' : '420px';
+
+    useEffect(() => {
+      boundGetCandidateInfo();
+    },[])
 
     useEffect(() => {
         const request: GetScheduleListByJobIdRequest = {
@@ -80,8 +92,18 @@ const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     }, [applicationId]);
 
     useEffect(() => {
-        jobDetail && applicationData && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, pageName]);
+      // Page will emit page load event once both pros are available but
+      // will not emit new event on props change once it has emitted pageload event previously
+      scheduleData && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+    }, [jobDetail, applicationData, candidateData, scheduleData]);
+
+    useEffect(() => {
+      return () => {
+        //reset this so as it can emit new pageload event after being unmounted.
+        resetIsPageMetricsUpdated(pageName);
+      }
+    },[])
 
     const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
         <Col width={width} height="100vh">

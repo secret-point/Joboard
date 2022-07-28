@@ -5,7 +5,11 @@ import queryString from "query-string";
 import InnerHTML from 'dangerously-set-html-content';
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { translate as t } from "../../../utils/translator";
 import { DetailedCheckbox } from "@amzn/stencil-react-components/form";
@@ -20,20 +24,27 @@ import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
 
 interface MapStateToProps {
   application: ApplicationState;
   schedule: ScheduleState;
-};
+  candidate: CandidateState,
+  job: JobState,
+}
 
 const CaliDisclosure = (props: MapStateToProps) => {
-  const { application, schedule } = props;
+  const { application, schedule, job, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId, scheduleId } = queryParams;
-
+  const { applicationId, scheduleId, jobId } = queryParams;
   const applicationData = application.results;
+  const jobDetail = job.results;
+  const candidateData = candidate.results.candidateData;
   const { scheduleDetail } = schedule.results;
 
   const hasBGCCaliforniaDisclosureAcknowledged = !!applicationData?.hasBGCCaliforniaDisclosureAcknowledged;
@@ -41,11 +52,21 @@ const CaliDisclosure = (props: MapStateToProps) => {
   const [acknowledged, setAcknowledged] = useState(hasBGCCaliforniaDisclosureAcknowledged);
 
   useEffect(() => {
-    scheduleId && boundGetScheduleDetail({
+    boundGetCandidateInfo();
+  },[])
+
+  useEffect(() => {
+    scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
     })
   }, [scheduleId]);
+
+  // Don't refetch data if id is not changing
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+  }, [jobDetail, jobId]);
+
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -54,8 +75,18 @@ const CaliDisclosure = (props: MapStateToProps) => {
   }, [applicationId, hasBGCCaliforniaDisclosureAcknowledged]);
 
   useEffect(() => {
-    applicationData && addMetricForPageLoad(pageName);
-  }, [applicationData, pageName]);
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    scheduleDetail && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+
+  useEffect(() => {
+    return () => {
+      //reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    }
+  },[])
 
   const handleGoToNext = () => {
     if (applicationData) {
