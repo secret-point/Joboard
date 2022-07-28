@@ -324,3 +324,8 @@ export enum FEATURE_FLAG {
     NO_SSN_CHECKBOX = "NO_SSN_CHECKBOX",
     MLS = "MLS"
 }
+
+export enum BB_UI_VERSION {
+    BB_UI_OLD = "bb-ui-v1",
+    BB_UI_NEW = "bb-ui-v2",
+}

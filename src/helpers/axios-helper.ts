@@ -1,6 +1,7 @@
 import axios from "axios";
 import isNull from "lodash/isNull";
 import { pathByDomain, redirectToLoginCSDS } from "./utils";
+import { BB_UI_VERSION } from "../utils/enums/common";
 
 export const getAccessToken = () => {
   const accessToken = window.localStorage.getItem("accessToken");
@@ -63,6 +64,12 @@ export const axiosHelper = (baseUrl: string = "/api", headers: any = {}) => {
     response => successHandler(response),
     error => errorHandler(error)
   );
+
+  //add custom header to differentiate request from old BB UI and new BB UI
+  axiosInstance.interceptors.request.use(config => {
+    config.headers['bb-ui-version'] = BB_UI_VERSION.BB_UI_NEW;
+    return config;
+  })
 
   return axiosInstance;
 };
