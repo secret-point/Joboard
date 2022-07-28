@@ -1,719 +1,719 @@
 {
   "resources" : {
     "BB-PreConsentPage-banner-journey-starts" : {
-      "value" : "Tu viaje para convertirte en un afiliado de Amazon comienza aquí.",
+      "value" : "Din resa till att bli en Amazon-medarbetare börjar här.",
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "Volver al panel de trabajos",
+      "value" : "Gå tillbaka till jobböversikten",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
-      "value" : "Ver trabajos",
+      "value" : "Visa jobb",
       "note" : "Text for the link to go back to job opportunity index"
     },
     "BB-JobOpportunity-back-to-jobConfirmation-link" : {
-      "value" : "Atrás",
+      "value" : "Tillbaka",
       "note" : "Text for the link to go back to job confirmation page"
     },
     "BB-JobOpportunity-go-to-jobDescription-link" : {
-      "value" : "Requisito y beneficios del trabajo",
+      "value" : "Jobbkrav och förmåner",
       "note" : "Text for the link to go to job description page"
     },
     "BB-JobOpportunity-filter-button" : {
-      "value" : "Filtro",
+      "value" : "Filtrera",
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-sort-button" : {
-      "value" : "Ordenar",
+      "value" : "Sortera",
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-select-job-button" : {
-      "value" : "Seleccionar este trabajo",
+      "value" : "Välj det här jobbet",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-StepHeader-view-progress-button" : {
-      "value" : "Ver progreso",
+      "value" : "Visa framsteg",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-PreconsentPage-preview-steps-button" : {
-      "value" : "Vista previa de los pasos",
+      "value" : "Förhandsgranska steg",
       "note" : "Text for the button to preview application steps"
     },
     "BB-PreconsentPage-next-Button" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the button to go to next page ( consent page )"
     },
     "BB-Country-United-States" : {
-      "value" : "Estados Unidos",
+      "value" : "USA",
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "Al presentar tu solicitud, confirmas que:",
+      "value" : "Genom att ansöka bekräftar du att:",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
-      "value" : "Al presentar tu solicitud, lees y aceptas la",
+      "value" : "Genom att ansöka bekräftar du att du har läst och godkänner",
       "note" : "Text for the user data policy agreement title"
     },
     "BB-ConsentPage-user-data-Policy-button" : {
-      "value" : "Política de datos de usuario",
+      "value" : "Policy för användardata",
       "note" : "Text for the button to open user data policy page"
     },
     "BB-ConsentPage-create-application-button" : {
-      "value" : "Crear solicitud",
+      "value" : "Skapa ansökan",
       "note" : "Text for the create application button"
     },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
-      "value" : "Política de datos de usuario",
+      "value" : "Policy för användardata",
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon se compromete a crear un ambiente laboral diverso e inclusivo. Amazon es un empleador que ofrece igualdad de oportunidades de trabajo y no discrimina por motivos de raza, nacionalidad, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición legalmente protegida. Las personas con discapacidad que deseen solicitar una adaptación, pueden visitar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "Amazon engagerar sig för att skapa en inkluderande arbetsplats med mångfald. Amazon är en arbetsgivare som verkar för lika möjligheter och diskriminerar inte på grund av etnisk tillhörighet, nationellt ursprung, kön, könsidentitet, sexuell läggning, status som skyddad veteran, funktionsnedsättning, ålder, eller annan rättsligt skyddad status. För personer med funktionsnedsättning som vill lämna en förfrågan om ett boende, besök <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "Amazon se toma muy en serio la protección de tus datos personales y solo procesará tus datos personales de acuerdo con la ley. En particular, no compartimos tus datos personales con ningún tercero sin tu consentimiento previo, a menos que la ley nos obligue a hacerlo. A menos que expreses lo contrario, la empresa contratante de Amazon almacenará tus datos personales en la base de datos electrónica que mantiene Amazon.com en EE. UU. o una de sus filiales. Para obtener información completa sobre cómo Amazon almacena y procesa tus datos personales, haz clic aquí <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "value" : "Amazon tar skyddet för dina personuppgifter seriöst och kommer endast att behandla dina personuppgifter i enlighet med lagen. I synnerhet delar vi inte dina personuppgifter med någon tredje part om du inte har lämnat samtycke till det, såvida vi inte enligt lag tvingas till det. Om du inte ger uttryck något annat kommer det anställande Amazon-företaget att lagra dina personuppgifter i den elektroniska databasen som tillhandahålls av Amazon.com i USA eller ett av dess dotterbolag. För fullständig information om hur Amazon lagrar och behandlar dina personuppgifter, klicka här <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "Además del puesto que has solicitado hoy, es posible que tengamos otros puestos que requieran las mismas o similares funciones laborales. Estos puestos pueden ser a tiempo completo, a tiempo reducido, a tiempo, parcial, de temporada y/o temporales que están disponibles en esta ubicación u otras ubicaciones cercanas de Amazon. No tienes ninguna obligación de aceptar ningún puesto en Amazon o en nuestros socios. Sin embargo, al completar tu solicitud aceptas que se te tenga en cuenta para puestos del mismo nivel, por horas, dentro de un radio de 30 millas de tu lugar de solicitud. Esto incluye compartir tu información de solicitante con nuestros socios (agencias de empleo) que contratan tanto para nuestras necesidades de empleados regulares y temporales.",
+      "value" : "Förutom den roll du sökte idag, kan vi ha andra befattningar som kräver samma eller liknande arbetsuppgifter. Dessa tjänster kan vara heltid, reducerad tid, deltid, säsongsarbete och/eller tillfälliga tjänster som finns tillgängliga på den här platsen eller andra, närliggande Amazon-platser. Du är inte skyldig att acceptera någon tjänst hos Amazon eller våra partners, men genom att fylla i din ansökan samtycker du till att övervägas för tjänster på samma nivå och med liknande timmar, inom en radie på 5 mil (30 mile) från din ansökningsplats. Detta inkluderar att dela din ansökningsinformation med våra partners (bemanningsföretag) som anställer för både våra ordinarie och tillfälliga behov av medarbetare.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "Al presentar tu solicitud:",
+      "value" : "Genom att ansöka:",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
-      "value" : "reconoces que has leído la descripción del puesto de trabajo que solicitas y que comprendes los requisitos básicos necesarios para desempeñarlo;",
+      "value" : "bekräftar att du har läst arbetsbeskrivningen för den tjänst du söker och att du förstår de grundläggande krav som krävs för att utföra jobbet;",
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "consientes el tratamiento, análisis y evaluación de tus datos personales por parte de Amazon, salesforce.com o cualquier otro tercero para los fines de tu solicitud y para cualquier otro fin legítimo de Amazon. Para evitar dudas, el “tratamiento” de tus datos personales incluirá, pero no se limitará a la recogida, recepción, registro, organización, cotejo, almacenamiento, actualización, alteración, uso, difusión, distribución, fusión, vinculación, bloqueo, degradación, borrado o destrucción de tus datos personales;",
+      "value" : "samtycker du till behandling, analys och bedömning av dina personuppgifter av Amazon, salesforce.com eller någon annan tredje part för syftet med din ansökan och för andra berättigade ändamål av Amazon. För att undvika tvivel kommer ”behandlingen” av dina personuppgifter att omfatta, men inte vara begränsad till, insamling, mottagning, registrering, organisering, jämförelse, lagring, uppdatering, ändring, användning, spridning, distribution, sammanslagning, länkning, blockering, degradering, radering eller förstörande av dina personuppgifter;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "consientes que Amazon conserve tus datos personales después del proceso de solicitud, con el fin de ayudarlo a supervisar eficazmente sus procesos de solicitud de empleo y que tus datos personales se almacenen en una base de datos electrónica en los Estados Unidos.",
+      "value" : "samtycker du till att Amazon behåller dina personuppgifter efter ansökningsprocessen för att underlätta effektiv hantering av jobbansökningsprocesserna och att dina personuppgifter lagras i en elektronisk databas i USA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
-      "value" : "Ver progreso",
+      "value" : "Visa framsteg",
       "note" : "Text for view progress flyout title"
     },
     "BB-StepHeader-view-progress-flyout-close-button" : {
-      "value" : "Listo",
+      "value" : "Klar",
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "Seleccionar trabajo",
+      "value" : "Välj jobb",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
-      "value" : "Completar los documentos requeridos",
+      "value" : "Fyll i nödvändiga dokument",
       "note" : "Text for complete required documents application step"
     },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
-      "value" : "Programar cita previa a la contratación",
+      "value" : "Boka nyanställningsmöte",
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "Completar una evaluación (~15 min)",
+      "value" : "Slutför en bedömning (~15 min)",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
-      "value" : "Filtro",
+      "value" : "Filtrera",
       "note" : "Text for filter schedule flyout title"
     },
     "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
-      "value" : "Restablecer",
+      "value" : "Återställ",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "Solicitar",
+      "value" : "Tillämpa",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "Solicitar",
+      "value" : "Tillämpa",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
-      "value" : "Ordenar por",
+      "value" : "Sortera efter",
       "note" : "Text for sorting schedule flyout title"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
-      "value" : "Tarifa de pago: de mayor a menor",
+      "value" : "Lön – högst till lägst",
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "Horas: de más a menos",
+      "value" : "Timmar – flest till minst",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
-      "value" : "Horas: de menos a más",
+      "value" : "Timmar – minst till flest",
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
-      "value" : "Filtrar horarios",
+      "value" : "Filtrera scheman",
       "note" : "Text for the title of DaysHours Filter"
     },
     "BB-DayName-Monday" : {
-      "value" : "Lunes",
+      "value" : "Måndag",
       "note" : "Text for Monday"
     },
     "BB-DayName-Tuesday" : {
-      "value" : "Martes",
+      "value" : "Tisdag",
       "note" : "Text for Tuesday"
     },
     "BB-DayName-Wednesday" : {
-      "value" : "Miércoles",
+      "value" : "Onsdag",
       "note" : "Text for Wednesday"
     },
     "BB-DayName-Thursday" : {
-      "value" : "Jueves",
+      "value" : "Torsdag",
       "note" : "Text for Thursday"
     },
     "BB-DayName-Friday" : {
-      "value" : "Viernes",
+      "value" : "Fredag",
       "note" : "Text for Friday"
     },
     "BB-DayName-Saturday" : {
-      "value" : "Sábado",
+      "value" : "Lördag",
       "note" : "Text for Saturday"
     },
     "BB-DayName-Sunday" : {
-      "value" : "Domingo",
+      "value" : "Söndag",
       "note" : "Text for Sunday"
     },
     "BB-TimeRange-start-time-select-label-text" : {
-      "value" : "Hora de inicio",
+      "value" : "Starttid",
       "note" : "Text for start time select input label text"
     },
     "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Hora de inicio",
+      "value" : "Starttid",
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
-      "value" : "Hasta {hourNumber} horas",
+      "value" : "Upp till {hourNumber} timmar",
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
-      "value" : "Seleccionar las horas deseadas",
+      "value" : "Välj önskade timmar",
       "note" : "Text for desired hours select input place holder"
     },
     "BB-FilterSchedule-desired-hour-select-label-text" : {
-      "value" : "Horas deseadas por semana",
+      "value" : "Önskade timmar per vecka",
       "note" : "Text for desired hours select input label text"
     },
     "BB-ContingencyOffer-well-done-text" : {
-      "value" : "Bien hecho hasta ahora",
+      "value" : "Bra gjort hittills",
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "Aquí está la oferta contingente para el trabajo que elegiste.",
+      "value" : "Här är det villkorade erbjudandet för det jobb du valde.",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "Aquí está la oferta contingente para el trabajo que elegiste.",
+      "value" : "Här är det villkorade erbjudandet för det jobb du valde.",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "Tal y como permite la ley aplicable, tu oferta está supeditada a que superes con éxito la verificación de antecedentes requerida, el control de drogas (si corresponde) y la verificación de idoneidad de recontratación (si corresponde). Por lo tanto, es importante que completes los pasos previos a la contratación en la página siguiente. En ciertas circunstancias, tu primer día puede retrasarse debido a que los requisitos previos a la contratación no se han completado a tiempo. Si este es el caso, pronto sabrás de nosotros.",
+      "value" : "Som tillåtet enligt tillämplig lag är ditt erbjudande beroende av att du genomgår den obligatoriska bakgrundskontrollen med godkänt resultat, drogscreening (om tillämpligt) och lämplighetskontroll för återanställning (om tillämpligt), så det är viktigt att du slutför de anställningsförberedande stegen på nästa sida. I vissa fall kan din första dag behöva senareläggas på grund av att kraven före anställning inte uppfylls i tid. Om så är fallet kan du förvänta dig att höra från oss snart.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
-      "value" : "Cerrar.",
+      "value" : "Stäng.",
       "note" : "Text for contingent offer meaning popover close button"
     },
     "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Requisitos del trabajo.",
+      "value" : "Jobbkrav.",
       "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
-      "value" : "Pasos restantes",
+      "value" : "Återstående steg",
       "note" : "Text for the remaining steps container title text"
     },
     "BB-ContingencyOffer-accept-offer-button-text" : {
-      "value" : "Aceptar la oferta",
+      "value" : "Acceptera erbjudande",
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
-      "value" : "Volver a trabajos",
+      "value" : "Tillbaka till jobb",
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "Al aceptar esta oferta, confirmas que entiendes los requisitos de este puesto.",
+      "value" : "Genom att acceptera detta erbjudande bekräftar du att du förstår kraven för denna position.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
-      "value" : "Verificación de antecedentes",
+      "value" : "Bakgrundskontroll",
       "note" : "Text for BGC page title"
     },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
-      "value" : "Proporciona la autorización y la información necesaria para una verificación de antecedentes.",
+      "value" : "Vänligen lämna tillstånd och den information som behövs för en bakgrundskontroll.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
     "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Divulgación de la Ley de Informe Justo de Crédito",
+      "value" : "Upplysning enligt lagen om skälig kreditupplysning (Fair Credit Reporting Act)",
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "Reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes",
+      "value" : "Information om och tillåtelse till bakgrundskontroll ej grundad i lagen om skäliga personupplysningar (Fair Credit Reporting Act)",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
-      "value" : "Información adicional de antecedentes",
+      "value" : "Ytterligare bakgrundsinformation",
       "note" : "Text for the Additional bgc information step card title"
     },
     "BB-BGC-page-continue-button" : {
-      "value" : "Continuar",
+      "value" : "Fortsätt",
       "note" : "Text for the bgc continue button ( from bgc to nhe page)"
     },
     "BB-BGC-page-fcra-subtitle-text" : {
-      "value" : "Responde algunas preguntas en el siguiente enlace.",
+      "value" : "Svara på några frågor genom att klicka på länken nedan.",
       "note" : "Text for the fcra subtitle"
     },
     "BB-BGC-page-fcra-get-started-btn" : {
-      "value" : "Comenzar",
+      "value" : "Kom igång",
       "note" : "Text for the fcra get started button"
     },
     "BB-BGC-page-fcra-edit-form-btn" : {
-      "value" : "Editar formulario",
+      "value" : "Redigera formulär",
       "note" : "Text for the fcra edit information button"
     },
     "BB-BGC-addition-bgc-form-next-btn" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the additional bgc form next button"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
-      "value" : "Línea de dirección 1",
+      "value" : "Adressrad 1",
       "note" : "Text for the additional bgc form  address line 1 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
-      "value" : "Ingresa una dirección válida",
+      "value" : "Ange en giltig adress",
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
-      "value" : "Departamento, suite, .etc",
+      "value" : "Lägenhet, svit, etc.",
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
-      "value" : "Ingresa una dirección válida",
+      "value" : "Ange en giltig adress",
       "note" : "Text for the additional bgc form  address line 2 error message text"
     },
     "BB-BGC-Additional-bgc-form-city-label-text" : {
-      "value" : "Ciudad",
+      "value" : "Ort",
       "note" : "Text for the additional bgc form  city label text"
     },
     "BB-BGC-Additional-bgc-form-city-error-text" : {
-      "value" : "Ingresa una ciudad válida",
+      "value" : "Ange en giltig ort",
       "note" : "Text for the additional bgc form city error message text"
     },
     "BB-BGC-Additional-bgc-form-state-label-text" : {
-      "value" : "Estado/Provincia",
+      "value" : "Län/provins",
       "note" : "Text for the additional bgc form  state label text"
     },
     "BB-BGC-Additional-bgc-form-state-error-text" : {
-      "value" : "Ingresa un Estado/Provincia válido",
+      "value" : "Ange en giltig delstat/provins",
       "note" : "Text for the additional bgc form state error message text"
     },
     "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
-      "value" : "Selecciona un estado",
+      "value" : "Välj en delstat",
       "note" : "Text for the additional bgc form state placeholder text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
-      "value" : "Código postal",
+      "value" : "Postnummer",
       "note" : "Text for the additional bgc form  zipcode label text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
-      "value" : "Ingresa un código postal válido de 5 dígitos",
+      "value" : "Ange ett giltigt, 5-siffrigt postnummer",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
-      "value" : "País",
+      "value" : "Land",
       "note" : "Text for the additional bgc form  country label text"
     },
     "BB-BGC-Additional-bgc-form-country-error-text" : {
-      "value" : "Ingresa un país válido",
+      "value" : "Ange ett giltigt land",
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
-      "value" : "ID nacional",
+      "value" : "Nationellt ID",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "Ingresa un tipo de ID nacional válida",
+      "value" : "Ange en giltig typ av nationellt ID",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "Número de ID nacional",
+      "value" : "Nationellt ID-nummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Ingresa un número de seguro social válido de 9 dígitos sin guión",
+      "value" : "Ange ett giltigt, 9-siffrigt socialförsäkringsnummer utan bindestreck",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
-      "value" : "Fecha de nacimiento",
+      "value" : "Födelsedatum",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Ingresa una fecha de nacimiento válida.",
+      "value" : "Ange ett giltigt födelsedatum.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
-      "value" : "Número de Seguro Social",
+      "value" : "Socialförsäkringsnummer",
       "note" : "Social Security Number is one of options as National ID"
     },
     "BB-BGC-form-optional-input-label-text" : {
-      "value" : "Opcional",
+      "value" : "Valfritt",
       "note" : "Text to show that inout on a form is optional"
     },
     "BB-BGC-bgc-step-card-step-progress" : {
-      "value" : "Paso {currentStep} de {totalSteps}",
+      "value" : "Steg {currentStep} av {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "¿Has sido condenado por un delito menor o un delito grave o has salido de la cárcel o en libertad condicional tras haber sido condenado por un delito menor o un delito grave en los últimos siete (7) años?",
+      "value" : "Har du dömts för en förseelse eller ett brott eller släppts från fängelse eller fått villkorlig frigivning för en förseelse eller brott under de senaste sju (7) åren?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
-      "value" : "No",
+      "value" : "Nej",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Indica la ciudad, país, el estado de condena, la fecha y la naturaleza del delito, junto con la información sobre la sentencia",
+      "value" : "Ange ort, land, dömande delstat, datum, typ av brott, tillsammans med information om brottspåföljden",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "En relación con tu solicitud de empleo en Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), obtendremos un informe del consumidor sobre ti de una agencia de informes del consumidor. Esto se conoce comúnmente como “verificación de antecedentes”.",
+      "value" : "I samband med din ansökan om anställning hos Amazon.com, Inc. eller dess filialer eller dotterbolag (”Amazon”), kommer vi att begära en personupplysning om dig från ett kreditupplysningsföretag. Detta är allmänt känt som en ”bakgrundskontroll”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Divulgación de la Ley de Informe Justo de Crédito",
+      "value" : "Upplysning enligt lagen om skälig kreditupplysning (Fair Credit Reporting Act)",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "Con mi firma electrónica a continuación, autorizo a Amazon a obtener el informe del consumidor anterior ahora y durante cualquier empleo o compromiso que pueda tener con Amazon Corporate.",
+      "value" : "Genom min e-signatur nedan tillåter jag Amazon att begära ovanstående personupplysning nu och under alla anställningar eller engagemang jag kan komma att ha med Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the fcra disclosure form next button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
-      "value" : "AUTORIZO a Amazon a realizar esta verificación de antecedentes.",
+      "value" : "Jag TILLÅTER Amazon att genomföra denna bakgrundskontroll.",
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "RECHAZO autorizar a Amazon esta verificación de antecedentes.",
+      "value" : "Jag TILLÅTER INTE Amazon till att genomföra denna bakgrundskontroll.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Escribe tu nombre completo aquí",
+      "value" : "Skriv ditt fullständiga namn här",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
-      "value" : "Ingresa un nombre completo válido con el siguiente formato: Nombre Apellido",
+      "value" : "Ange ett giltigt, fullständigt namn i följande format: Förnamn Efternamn",
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "Tal y como he indicado y autorizado en el documento de Divulgación y autorización de la Ley de Informe Justo de Crédito por separado, Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”) realizarán una verificación de mis antecedentes.",
+      "value" : "Som meddelats och godkänts av mig i den separata upplysningen enligt lagen om skälig kreditupplysning och dess tillåtelse (Fair Credit Reporting Act Disclosure and Authorization Document), kommer Amazon.com, Inc. eller dess filialer eller dotterbolag (”Amazon”) att genomföra en bakgrundskontroll av mig.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
-      "value" : "Con mi firma electrónica a continuación, reconozco lo siguiente:",
+      "value" : "Genom min e-signatur nedan, erkänner jag följande:",
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "El proveedor de verificación de antecedentes o “CRA”, que realizará la verificación de antecedentes es First Advantage, está situado en 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, y puede ser contactado en el (800) 845-6004 o www.fadv.com.",
+      "value" : "Kreditupplysningsföretaget som kommer att utföra bakgrundskontrollen är First Advantage. Företaget är beläget på 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 och kan nås på (800) 845-6004 eller www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "El proveedor de verificación de antecedentes o “CRA”, que realizará la verificación de antecedentes es Accurate Background, está situado en 7515 Irvine Center Dr., Irvine, CA 92618, y puede ser contactado en el (800) 216-8024 o www.accuratebackground.com.\n\n* Entiendo y acepto que según lo permitido por la ley Amazon puede pedir verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean Accurate Background.",
+      "value" : "Kreditupplysningsföretaget som kommer att utföra bakgrundskontrollen är Accurate Background. Företaget är beläget på 7515 Irvine Center Dr., Irvine, CA 92618, och kan nås på (800) 216-8024 eller www.accuratebackground.com.\n\n* Jag förstår och samtycker till att Amazon enligt lag kan begära ytterligare bakgrundskontroller av mig för anställningsändamål, utan ytterligare tillstånd från mig, (1) under min anställning, om någon, och (2) från andra kreditupplysningsföretag än Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Entiendo y acepto que, según lo permitido por la ley, Amazon puede pedir verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean First Advantage.",
+      "value" : "Jag förstår och samtycker till att Amazon enligt lag kan begära ytterligare bakgrundskontroller av mig för anställningsändamål, utan ytterligare tillstånd från mig, (1) under min anställning, om någon, och (2) från andra kreditupplysningsföretag än First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "Entiendo y acepto que, según lo permitido por la ley, Amazon puede solicitar verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean Accurate Background.",
+      "value" : "Jag förstår och samtycker till att Amazon enligt lag kan utföra ytterligare bakgrundskontroller av mig för anställningsändamål, utan ytterligare tillstånd från mig, (1) under min anställning, om sådan finns, och (2) från andra bakgrundskontrollföretag än Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo a las siguientes personas a revelar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o actuales, las escuelas y las agencias y otras agencias gubernamentales, incluidas las agencias de registros de vehículos de motor.",
+      "value" : "För anställningsändamål, och med förbehåll för alla lagar som skyddar min informations sekretess, tillåter jag också följande att lämna till kreditupplysningsföretaget all information som behövs för bakgrundskontrollen: mina tidigare eller nuvarande arbetsgivare, skolor, och brottsbekämpnings- och andra myndigheter, inklusive myndigheter som för motorfordonsregister.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo a las siguientes personas a revelar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o actuales, las escuelas y las agencias y otras agencias gubernamentales, incluidas las agencias de registros de vehículos de motor.",
+      "value" : "För anställningsändamål, och med förbehåll för alla lagar som skyddar min informations sekretess, tillåter jag också följande att lämna till kreditupplysningsföretaget all information som behövs för bakgrundskontrollen: mina tidigare eller nuvarande arbetsgivare, skolor, och brottsbekämpnings- och andra myndigheter, inklusive myndigheter som för motorfordonsregister.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>Recibirás por separado una Divulgación de California sobre el Informe de Investigación del Consumidor (“Divulgación de California”). Este es un documento importante, revísalo cuidadosamente. Además, haz clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> si estás buscando empleo en una empresa de San Francisco o si ya lo tienes. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, por la presente autorizas a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento a lo largo de cualquier empleo con Amazon.</p>",
+      "value" : "<p><b>KALIFORNIEN: </b>Du kommer att få en separat upplysning angående utredande personupplysningar i Kalifornien (California Disclosure Regarding Investigative Consumer Report, eller ”California Disclosure”). Detta är ett viktigt dokument; gå igenom det noggrant. Klicka även på <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> om du söker arbete i eller redan är anställd av ett företag i San Francisco. Genom att underteckna nedan, i enlighet med Kaliforniens lag och upplysningen om personupplysningar i Kalifornien, tillåter du Amazon att begära en utredande personupplysning, även kallad bakgrundskontroll, nu och när som helst under alla eventuella anställningar hos Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>Recibirás por separado una Divulgación de California sobre el Informe de Investigación del Consumidor (“Divulgación de California”). Este es un documento importante, revísalo cuidadosamente. Además, haz clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> si buscas empleo en una empresa de San Francisco o si ya lo tienes. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, por la presente autorizas a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento a lo largo de cualquier empleo con Amazon.</p>",
+      "value" : "<p><b>KALIFORNIEN: </b>Du kommer att få en separat upplysning angående utredande personupplysningar i Kalifornien (California Disclosure Regarding Investigative Consumer Report, eller ”California Disclosure”). Detta är ett viktigt dokument; gå igenom det noggrant. Klicka även på <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> om du söker arbete i eller redan är anställd av ett företag i San Francisco. Genom att underteckna nedan, i enlighet med Kaliforniens lag och upplysningen om personupplysningar i Kalifornien, tillåter du Amazon att begära en utredande personupplysning, även kallad bakgrundskontroll, nu och när som helst under alla eventuella anställningar hos Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Tienes derecho a presentar una solicitud por escrito a la CRA para que te revele de forma completa y precisa la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre ti. La CRA debe proporcionarte la divulgación dentro de los cinco días hábiles siguientes a la recepción de tu solicitud o a la fecha en que se pidió el informe, cualquiera que sea la fecha posterior.</p>",
+      "value" : "<p><b>MINNESOTA: </b>Du har rätt att lämna in en skriftlig begäran till kreditupplysningsföretaget för en fullständig och korrekt upplysning om typen och omfattningen av alla personupplysningar som begärts om dig. Kreditupplysningsföretaget måste ge dig upplysningen inom fem arbetsdagar efter mottagandet av din begäran eller när rapporten beställdes, beroende på vilket datum som är det senaste.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Tienes derecho a presentar una solicitud por escrito a la CRA para que te revele de forma completa y precisa la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre ti. La CRA debe proporcionarte la divulgación dentro de los cinco días hábiles siguientes a la recepción de tu solicitud o a la fecha en que se pidió el informe, cualquiera que sea la fecha posterior.</p>",
+      "value" : "<p><b>MINNESOTA: </b>Du har rätt att lämna in en skriftlig begäran till kreditupplysningsföretaget för en fullständig och korrekt upplysning om typen och omfattningen av alla personupplysningar som begärts om dig. Kreditupplysningsföretaget måste ge dig upplysningen inom fem arbetsdagar efter mottagandet av din begäran eller när rapporten beställdes, beroende på vilket datum som är det senaste.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor sobre ti Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del artículo 23-A de la Ley Correccional de Nueva York.</p>",
+      "value" : "<p><b>NEW YORK: </b>Du har rätt att skicka en skriftlig begäran till Amazon för att få reda på om vi har begärt en personupplysning eller utredande personupplysning om dig. Ovan visas kreditupplysningsföretagets adress och telefonnummer. Du har rätt att kontakta alla kreditupplysningsföretag för att inspektera eller få en kopia på varje sådan rapport. Klicka <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">här</a> för information om dina rättigheter enligt artikel 23-A i New Yorks kriminalvårdslag (Correction Law).</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor sobre ti Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del artículo 23-A de la Ley Correccional de Nueva York.</p>.",
+      "value" : "<p><b>NEW YORK: </b>Du har rätt att skicka en skriftlig begäran till Amazon för att få reda på om vi har begärt en personupplysning eller utredande personupplysning om dig. Ovan visas kreditupplysningsföretagets adress och telefonnummer. Du har rätt att kontakta alla kreditupplysningsföretag för att inspektera eller få en kopia på varje sådan rapport. Klicka <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">här</a> för information om dina rättigheter enligt artikel 23-A i New Yorks kriminalvårdslag (Correction Law).</p>.",
       "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
-      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos en virtud de la Ley de Informe Justo de Crédito de Washington.</p>.",
+      "value" : "<p><b>WASHINGTON: </b>Du har rätt att från kreditupplysningsföretaget begära en skriftlig sammanfattning över dina rättigheter enligt Washingtons lag om skälig kreditupplysning (Washington Fair Credit Reporting Act).</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
     },
     "BB-non-fcra-fadv-washington-specific-notice" : {
-      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos en virtud de la Ley de Informe Justo de Crédito de Washington.</p>.",
+      "value" : "<p><b>WASHINGTON: </b>Du har rätt att från kreditupplysningsföretaget begära en skriftlig sammanfattning över dina rättigheter enligt Washingtons lag om skälig kreditupplysning (Washington Fair Credit Reporting Act).</p>.",
       "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
-      "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla",
+      "value" : "<p><b>ALLA DELSTATER: </b>Vi skickar dig en gratis kopia av eventuella bakgrundskontroller om du markerar den här rutan",
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
-      "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla</p>",
+      "value" : "<p><b>ALLA DELSTATER: </b>Vi skickar dig en gratis kopia av eventuella bakgrundskontroller om du markerar den här rutan</p>",
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Ange tidigare använt juridiskt fullständigt namn i följande format: Förnamn Efternamn",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
-      "value" : "Nombre completo legal anterior",
+      "value" : "Tidigare fullständiga juridiska namn",
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Ange tidigare använt juridiskt fullständigt namn i följande format: Förnamn Efternamn",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
-      "value" : "Nombre completo legal anterior (1)",
+      "value" : "Tidigare fullständiga juridiska namn (1)",
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Ange tidigare använt juridiskt fullständigt namn i följande format: Förnamn Efternamn",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "Nombre completo legal anterior (2)",
+      "value" : "Tidigare fullständiga juridiska namn (2)",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
-      "value" : "Agregar/Mostrar más nombres anteriores",
+      "value" : "Lägg till/visa fler tidigare namn",
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
-      "value" : "¿Has trabajado anteriormente en un edificio de Amazon?",
+      "value" : "Har du arbetat i en Amazon-byggnad tidigare?",
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text for the accept previous worked at Amazon radio button label text"
     },
     "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
-      "value" : "No",
+      "value" : "Nej",
       "note" : "Text for the decline previous worked at Amazon radio button label text"
     },
     "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
-      "value" : "Qué información incluir",
+      "value" : "Vilken information som ska inkluderas",
       "note" : "Text for the for the form title about what to include in previous Amazon experience"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
-      "value" : "Identifica el edificio de Amazon en el que has trabajado anteriormente",
+      "value" : "Identifiera den Amazon-byggnad du har arbetat i tidigare",
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
-      "value" : "Ingresa un edificio válido de Amazon",
+      "value" : "Ange en giltig Amazon-byggnad",
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
+      "value" : "Anställningsdatum – från/till (MM/ÅÅ – MM/ÅÅ)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Ingresa un edificio válido de Amazon",
+      "value" : "Ange en giltig Amazon-byggnad",
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
-      "value" : "No tengo un Número de Seguro Social",
+      "value" : "Jag har inget socialförsäkringsnummer",
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
-      "value" : "¿Estás seguro de que deseas seguir adelante sin un Número de Seguro Social (SSN)?",
+      "value" : "Är du säker på att du vill fortsätta utan ett socialförsäkringsnummer (SSN)?",
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "Si tienes un SSN, estás obligado a proporcionarlo. No hacerlo puede causar retrasos en el proceso de contratación, lo que puede hacer que pierdas tu fecha de inicio y tu turno seleccionado.",
+      "value" : "Om du har ett SSN måste du uppge det. Att inte göra det kan det orsaka förseningar i anställningsprocessen, vilket kan leda till att du missar ditt startdatum och förlorar ditt valda skift.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Al continuar, confirmo que no tengo un SSN.  Entiendo que, tal y como lo permite la ley, Amazon realizará una verificación de mis antecedentes si cambio o actualizo mi SSN durante el proceso de incorporación o durante mi empleo.",
+      "value" : "Genom att fortsätta bekräftar jag att jag inte har ett SSN.  Jag förstår att Amazon, som tillåtet enligt lag, kommer att genomföra en uppföljande bakgrundskontroll av mig om jag ändrar eller uppdaterar mitt SSN under introduktionsprocessen eller under min anställning.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "También reconozco que cualquier tergiversación intencional de mi SSN será considerada por Amazon, y puede llevar a la revocación de mi oferta de empleo, o si soy contratado, a la terminación de mi empleo.",
+      "value" : "Jag godkänner också att all avsiktlig, felaktig framställning av mitt SSN kommer att tas i beaktande av Amazon och kan leda till återkallande av mitt anställningserbjudande eller, om jag är anställd, uppsägning av min anställning.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
-      "value" : "He leído y entendido los términos anteriores.",
+      "value" : "Jag har läst och förstått ovanstående villkor.",
       "note" : "consent checkbox in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-continue-button" : {
-      "value" : "Continuar",
+      "value" : "Fortsätt",
       "note" : "continue button in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-cancel-button" : {
-      "value" : "Cancelar",
+      "value" : "Avbryt",
       "note" : "cancel button in the no SSN modal"
     },
     "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
-      "value" : "Número de Seguro Social no disponible",
+      "value" : "Socialförsäkringsnummer inte tillgängligt",
       "note" : "Text display on national id number input when user check no ssn checkbox"
     },
     "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
-      "value" : "Proporcionar una firma electrónica",
+      "value" : "Lämna en e-signatur",
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
-      "value" : "Avisos específicos del Estado",
+      "value" : "Delstatsspecifika meddelanden",
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
-      "value" : "Revisa los avisos aplicables a continuación.",
+      "value" : "Läs igenom tillämpliga meddelande(n) nedan.",
       "note" : "Text for the non fcra State specific notices review text"
     },
     "BB-BGC-non-fcra-esignature-certification-form-title" : {
-      "value" : "Firma electrónica",
+      "value" : "E-signatur",
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "Con mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones contenidas en este documento de reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes. Indica tu aceptación ingresando la información solicitada en los campos siguientes.",
+      "value" : "Genom min e-signatur nedan intygar jag att jag har läst, förstått och accepterar alla redogörelser i detta meddelande om information om och tillåtelse till bakgrundskontroll ej grundad i lagen om skäliga personupplysningar (Fair Credit Reporting Act) Vänligen uttryck ditt godkännande genom att ange den information som begärs i fälten nedan.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
-      "value" : "Escribe tu nombre completo como firma electrónica",
+      "value" : "Vänligen skriv ditt fullständiga namn som e-signatur",
       "note" : "Text for the non fcra acknowledgement and authorization input label text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
-      "value" : "Las firmas electrónicas no coinciden. Utiliza el mismo texto para cada firma electrónica.",
+      "value" : "E-signaturerna matchar inte. Använd samma text för varje e-signatur.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the non fcra form page next button text"
     },
     "BB-BGC-non-fcra-applicable-notice-text" : {
-      "value" : "Con mi firma electrónica a continuación, certifico que he leído y entiendo cualquier aviso estatal aplicable, incluidos los hipervínculos.",
+      "value" : "Genom min e-signatur nedan intygar jag att jag har läst och förstått alla tillämpliga delstatsmeddelanden, inklusive hyperlänkarna.",
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
-      "value" : "Escribe tu nombre completo como firma electrónica",
+      "value" : "Vänligen skriv ditt fullständiga namn som e-signatur",
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "Deseo una copia gratis de mi verificación de antecedentes",
+      "value" : "Jag vill ha en gratis kopia av min bakgrundskontroll",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
-      "value" : "Ya iniciaste y/o completaste una solicitud para este trabajo.",
+      "value" : "Du har redan påbörjat och/eller slutfört en ansökan för det här jobbet.",
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "Regresa al panel para reanudar tu solicitud o ver la solicitud y la nueva cita de contratación, y tus próximos pasos.",
+      "value" : "Återgå till översikten, fortsätt med din ansökan, eller se information om ansökan och nyanställningsmötet, och dina nästa steg.",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
-      "value" : "Regresar al panel",
+      "value" : "Återgå till översikten",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
     "BB-SelfId-disability-form-name-text" : {
-      "value" : "Formulario CC-305",
+      "value" : "Blankett CC-305",
       "note" : "Text for Self Identification form name"
     },
     "BB-SelfId-disability-form-control-number-text" : {
-      "value" : "Número de control OMB 1250-0005",
+      "value" : "OMB-kontrollnummer 1250-0005",
       "note" : "Text for Self Identification control number"
     },
     "BB-SelfId-disability-form-expiration-date-text" : {
-      "value" : "Expira el 31/05/2023",
+      "value" : "Förfaller 31/05/2023",
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
-      "value" : "¿Por qué se te pide que completes este formulario?",
+      "value" : "Varför blir du ombedd att fylla i det här formuläret?",
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "Somos un contratista o subcontratista federal que está obligado por ley a ofrecer igualdad de oportunidades de empleo a personas calificadas con discapacidad. También se nos exige que midamos nuestros progresos para conseguir que al menos el 7% de nuestra fuerza laboral sean personas con discapacidad. Para ello, debemos preguntar a los solicitantes y empleados si tienen alguna discapacidad o la han tenido alguna vez. Dado que una persona puede quedar discapacitada en cualquier momento, pedimos a todos nuestros empleados que actualicen su información al menos cada cinco años.",
+      "value" : "Vi är en leverantör eller underleverantör till den federala regeringen som enligt lag är skyldig att ge lika anställningsmöjligheter till kvalificerade personer med funktionsnedsättning. Vi är också skyldiga att mäta våra framsteg mot att minst 7 % av vår arbetskraft ska utgöras av personer med funktionsnedsättning. För lyckas med detta måste vi fråga sökanden och anställda om de har någon funktionsnedsättning eller någonsin har haft en funktionsnedsättning. Eftersom att en person kan få en funktionsnedsättning när som helst, ber vi alla våra anställda att uppdatera sin information minst vart femte år.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Identificarte como persona con discapacidad es voluntario, y esperamos que elijas hacerlo. Tu respuesta se mantendrá confidencial y no será vista por los funcionarios encargados de la selección ni por ninguna otra persona que participe en la toma de decisiones de personal. Completar el formulario no te afectará negativamente de ninguna manera, independientemente de que te hayas identificado en el pasado. Si deseas obtener más información sobre este formulario o sobre las obligaciones en materia de igualdad de empleo de los contratistas federales en virtud de la sección 503 de la Ley de Rehabilitación, visita la página web de los EE. UU. Sitio web de la Oficina de Programas de Cumplimiento de Contratos Federales (OFCCP) del Departamento de Trabajo en <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "Att identifiera sig som en person med en funktionsnedsättning är upp till var och en, och vi hoppas att du väljer att göra det. Ditt svar kommer att hållas konfidentiellt och kommer inte ses av rekryterande tjänstemän eller någon annan person involverad i fatta personalbeslut. Att fylla i formuläret kommer inte att påverka dig negativt på något sätt, oavsett om du har självidentifierat dig tidigare eller inte. För mer information om detta formulär eller de federala leverantörernas skyldigheter kring lika anställning enligt avsnitt 503 i rehabiliteringslagen (Rehabilitation Act), besök webbplatsen för USA:s Department of Labours Office of Federal Contract Compliance Programs (OFCCP) på <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
-      "value" : "¿Cómo sé si tengo alguna discapacidad?",
+      "value" : "Hur vet jag om jag har ett funktionsnedsättning?",
       "note" : "Text for how I know I have disability header"
     },
     "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
-      "value" : "Se considera que tienes una discapacidad si tienes un impedimento físico o mental o una condición médica que limita sustancialmente una actividad vital importante o si tienes antecedentes de dicha discapacidad o condición médica.",
+      "value" : "Du anses ha en funktionsnedsättning om du har en fysisk eller psykisk funktionsnedsättning eller ett medicinskt tillstånd som väsentligt begränsar en viktig aktivitet i livet, eller om du har en historik av att ha haft en sådan nedsättning eller ett sådant medicinskt tillstånd.",
       "note" : "Text for how I know I have disability content"
     },
     "BB-SelfId-disability-form-disability-scope-list-header-text" : {
-      "value" : "Las discapacidades incluyen, pero no se limitan a:",
+      "value" : "Funktionsnedsättningar inkluderar, men är inte begränsade till:",
       "note" : "Text for the disability scope/type list header text"
     },
     "BB-SelfId-disability-form-disability-item-autism-text" : {
-      "value" : "Autismo",
+      "value" : "Autism",
       "note" : "Text for the disability item: autism"
     },
     "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
-      "value" : "Trastorno autoinmune",
+      "value" : "Autoimmun sjukdom",
       "note" : "Text for the disability item: Autoimmune disorder"
     },
     "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
-      "value" : "Ciego o baja visión",
+      "value" : "Blind eller nedsatt syn",
       "note" : "Text the disability item: Blind or low vision"
     },
     "BB-SelfId-disability-form-disability-item-cancer-text" : {
-      "value" : "Cáncer",
+      "value" : "Cancer",
       "note" : "Text for the disability item: Cancer text"
     },
     "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
-      "value" : "Enfermedad cardiovascular o del corazón",
+      "value" : "Hjärt-kärlsjukdom",
       "note" : "Text for the disability item: Cardiovascular or heart disease"
     },
     "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
-      "value" : "Enfermedad celíaca",
+      "value" : "Celiaki",
       "note" : "Text for the disability item: Celiac disease"
     },
     "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
-      "value" : "Parálisis cerebral",
+      "value" : "Cerebral pares",
       "note" : "Text for the disability item: Cerebral palsy"
     },
     "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
-      "value" : "Sordos o con problemas de audición",
+      "value" : "Döv eller nedsatt hörsel",
       "note" : "Text for the disability item: Deaf or hard of hearing"
     },
     "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
-      "value" : "Depresión o ansiedad",
+      "value" : "Depression eller ångest",
       "note" : "Text for the disability item: Depression or anxiety"
     },
     "BB-SelfId-disability-form-disability-item-diabetes-text" : {
@@ -721,247 +721,247 @@
       "note" : "Text for the disability item: Diabetes"
     },
     "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
-      "value" : "Epilepsia",
+      "value" : "Epilepsi",
       "note" : "Text for the disability item: Epilepsy"
     },
     "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
-      "value" : "Trastornos gastrointestinales, por ejemplo, la enfermedad de Crohn o el síndrome del intestino irritable",
+      "value" : "Mag-tarmsjukdomar, till exempel Crohns sjukdom eller irritabel tarm (IBS)",
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
-      "value" : "Discapacidad intelectual",
+      "value" : "Intellektuell funktionsnedsättning",
       "note" : "Text for the disability item: Intellectual disability"
     },
     "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
-      "value" : "Falta de extremidades o falta parcial de extremidades",
+      "value" : "Har saknade lemmar eller delvis saknade lemmar",
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "Afección del sistema nervioso, por ejemplo, migraña, enfermedad de Parkinson o esclerosis múltiple (EM)",
+      "value" : "Nervsjukdom, exempelvis migrän, Parkinsons sjukdom, eller multipel skleros (MS)",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
-      "value" : "Afección psiquiátrica, por ejemplo, trastorno bipolar, esquizofrenia, trastorno de estrés postraumático (TEPT) o depresión grave",
+      "value" : "Psykiatriskt tillstånd, till exempel bipolär sjukdom, schizofreni, PTSD, eller klinisk depression",
       "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
     },
     "BB-SelfId-disability-form-card-title-text" : {
-      "value" : "Identificación voluntaria de discapacidad",
+      "value" : "Frivillig självidentifiering av funktionsnedsättning",
       "note" : "Text for the disability form card title"
     },
     "BB-SelfId-form-continue-button-text" : {
-      "value" : "Continuar",
+      "value" : "Fortsätt",
       "note" : "Text for the Self Identification page form continue button text"
     },
     "BB-SelfId-disability-form-submit-button-text" : {
-      "value" : "Enviar",
+      "value" : "Skicka in",
       "note" : "Text for the submit disability form submit button text"
     },
     "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
-      "value" : "Marca una de las casillas siguientes",
+      "value" : "Markera en av rutorna nedan",
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "Sí, tengo una discapacidad, o tengo antecedentes/registro de tener una discapacidad",
+      "value" : "Ja, jag har en funktionsnedsättning, eller har haft en funktionsnedsättning tidigare",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "No tengo ninguna discapacidad ni antecedentes/registro de tener una discapacidad",
+      "value" : "Nej, jag har ingen funktionsnedsättning och har inte haft någon funktionsnedsättning tidigare",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
-      "value" : "No deseo responder",
+      "value" : "Jag vill inte svara",
       "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
     },
     "BB-SelfId-disability-form-disability-public-burden-header-text" : {
-      "value" : "Declaración de carga pública",
+      "value" : "Meddelande om allmänhetens börda",
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
-      "value" : "De acuerdo con la Ley de Reducción del Papeleo de 1995, ninguna persona está obligada a responder a una recopilación de información a menos que dicha recopilación muestre un número de control OMB válido. Esta encuesta debería durar unos 5 minutos.",
+      "value" : "Enligt 1995 års lag om minskat pappersarbete (Paperwork Reduction Act) är ingen skyldig att svara på en informationsinsamling om en sådan insamling inte uppvisar ett giltigt OMB-kontrollnummer. Undersökningen tar ungefär 5 minuter att slutföra.",
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
-      "value" : "Formulario de identificación voluntaria de igualdad de oportunidades",
+      "value" : "Frivilligt lika-möjligheter-formulär för självidentifiering",
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon valora todas las formas de diversidad y está sujeta a ciertos requisitos de mantenimiento de registros e informes de no discriminación y acción afirmativa que nos obligan a invitar a los candidatos y empleados a identificar voluntariamente su género y raza/etnia. La presentación de esta información es voluntaria y negarte a proporcionarla no te someterá a ningún tratamiento adverso. La información obtenida será confidencial y solo podrá utilizarse de acuerdo con las disposiciones de las leyes federales, órdenes ejecutivas y reglamentos aplicables, incluidos los que exigen que la información se resuma y se comunique al Gobierno Federal con fines de aplicación de los derechos civiles. Si eliges no identificar tu género o raza/etnia en este momento, el gobierno federal nos obliga a determinar esta información para los empleados mediante una encuesta visual y/u otra información disponible.",
+      "value" : "Amazon värderar alla former av mångfald och är förpliktigad till att föra vissa register och vissa rapporteringskrav i icke-diskriminerings- och affirmative action-syfte, vilket kräver att vi erbjuder kandidater och anställda möjligheten att frivilligt självidentifiera sitt kön och etnisk tillhörighet. Att lämna denna information är frivilligt och att inte tillhandahålla den kommer inte att leda till någon ogynnsam behandling. Den erhållna informationen kommer att hållas konfidentiell och får endast användas i enlighet med bestämmelserna i tillämpliga federala lagar, presidentordrar och förordningar, inklusive de som kräver att informationen sammanfattas och rapporteras till den federala regeringen för verkställighet av medborgerliga rättigheter. Om du väljer att inte själv identifiera ditt kön eller etniska tillhörighet/etnicitet just nu, kräver den federala regeringen att vi bestämmer denna information för anställda genom visuell undersökning och/eller annan tillgänglig information.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
-      "value" : "¿Cuál es tu género?",
+      "value" : "Vad är ditt kön?",
       "note" : "Text for the equal opportunity form : gender label text"
     },
     "BB-SelfId-equal-opportunity-form-gender-male-text" : {
-      "value" : "Hombre",
+      "value" : "Man",
       "note" : "Text for the equal opportunity form gender option: Male"
     },
     "BB-SelfId-equal-opportunity-form-gender-female-text" : {
-      "value" : "Mujer",
+      "value" : "Kvinna",
       "note" : "Text for the equal opportunity form gender option: Female"
     },
     "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Jag vill inte självidentifiera",
       "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
-      "value" : "¿Cuál es tu origen racial/étnico?",
+      "value" : "Vad har du för etnisk tillhörighet?",
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
-      "value" : "Indio americano/nativo de Alaska (no hispano ni latino)",
+      "value" : "Ursprungsamerikan/urinvånare från Alaska (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios de América del Norte y del Sur, (incluida América Central), y que mantienen una afiliación tribal o vínculo comunitario",
+      "value" : "Personer som härstammar från de urfolken i Nord- och Sydamerika (inklusive Centralamerika) och som upprätthåller stamtillhörighet eller samhällsanknytning",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
-      "value" : "Asiático (no hispano ni latino)",
+      "value" : "Asiat (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios del Extremo Oriente, el Sudeste Asiático o el Subcontinente Indio, incluyendo, por ejemplo, Camboya, China, India, Japón, Corea, Malasia, Pakistán, las Islas Filipinas, Tailandia y Vietnam",
+      "value" : "Personer som härstammar från något av urfolken i Östasien, Sydostasien eller den indiska subkontinenten, inklusive exempelvis Kambodja, Kina, Indien, Japan, Korea, Malaysia, Pakistan, Filippinerna, Thailand och Vietnam",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
-      "value" : "Negro/afroamericano (no hispano ni latino)",
+      "value" : "Svart/afroamerikan (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los grupos raciales negros de África",
+      "value" : "Personer som härstammar från någon av de svarta etniska grupperna i Afrika",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
-      "value" : "Hispano/Latino",
+      "value" : "Spansk/latinamerikansk (Hispanic/Latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
-      "value" : "Personas de origen cubano, mexicano, puertorriqueño, sudamericano o centroamericano, o de otra cultura u origen español, independientemente de su raza",
+      "value" : "Personer med kubanskt, mexikanskt, puertoric­anskt, syd- eller centralamerikanskt ursprung, eller annan spansk kultur eller ursprung, oavsett etnisk tillhörighet",
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
-      "value" : "Hawaiano nativo/otro isleño del Pacífico (no hispano ni latino)",
+      "value" : "Urinvånare från Hawaii/annan stillahavsö (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos de Hawai, Guam, Samoa u otras islas del Pacífico",
+      "value" : "Personer som härstammar från något av folken på Hawaii, Guam, Samoa eller andra stillahavsöar",
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
-      "value" : "Blanco (no hispano ni latino)",
+      "value" : "Vit (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios de Europa, Oriente Medio o África del Norte",
+      "value" : "Personer som härstammar från några av urfolken i Europa, Mellanöstern eller Nordafrika",
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
-      "value" : "Dos o más razas (no hispano ni latino)",
+      "value" : "Två eller flera etniska tillhörigheter (inte spansk/latinamerikansk)",
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Personas no hispanas que se identifican con más de una de las cinco razas siguientes: (1) blanco, (2) negro, (3) asiático, (4) hawaiano nativo/otro isleño del Pacífico, (5) indio americano/nativo de Alaska",
+      "value" : "Icke-spanska/latinamerikanska personer som identifierar sig med fler än ett av följande fem etniska ursprung: (1) vit, (2) svart, (3) asiatisk, (4) urinvånare från Hawaii/annan stillahavsö, (5) ursprungsamerikan/urinvånare från Alaska",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Jag vill inte självidentifiera",
       "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "En Amazon, miles de veteranos y cónyuges de militares impulsan la innovación y elevan el nivel de la experiencia del cliente. A diario, las personas con formación militar pueden aplicar sus conocimientos, habilidades y capacidades de liderazgo en una amplia variedad de carreras, influyendo en el cambio en todo el mundo. Por estas razones, buscamos activamente la contratación de veteranos y cónyuges militares.",
+      "value" : "På Amazon har vi tusentals veteraner och makar till militär personer som stärker vår innovationskraft och höjer ribban för kundupplevelsen. Dagligen kan de med militär bakgrund tillämpa sina kunskaper, kompetens, och ledarskapsförmåga i en mängd olika karriärer – och bidra till förändring över hela världen. Av dessa anledningar arbetar vi aktivt med att anställa veteraner och makar till militär personal.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "En Amazon, miles de veteranos y cónyuges de militares impulsan la innovación y elevan el nivel de la experiencia del cliente. A diario, las personas con formación militar pueden aplicar sus conocimientos, habilidades y capacidades de liderazgo en una amplia variedad de carreras, influyendo en el cambio en todo el mundo. Por estas razones, buscamos activamente la contratación de veteranos y cónyuges de militares.",
+      "value" : "På Amazon har vi tusentals veteraner och makar till militär personer som stärker vår innovationskraft och höjer ribban för kundupplevelsen. Dagligen kan de med militär bakgrund tillämpa sina kunskaper, kompetens, och ledarskapsförmåga i en mängd olika karriärer – och bidra till förändring över hela världen. Av dessa anledningar arbetar vi aktivt med att anställa veteraner och makar till militär personal.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
-      "value" : "¿Eres un veterano?",
+      "value" : "Är du krigsveteran?",
       "note" : "Text for the equal opportunity form : veteran status label text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text for the equal opportunity form veteran status item: YES"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
-      "value" : "No",
+      "value" : "Nej",
       "note" : "Text for the equal opportunity form veteran status item: NO"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Jag vill inte självidentifiera",
       "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
-      "value" : "¿Eres cónyuge de un militar?",
+      "value" : "Är du gift med en person i militären?",
       "note" : "Text for the equal opportunity form : military spouse label text"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text for the equal opportunity form military-spouse item: YES"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
-      "value" : "No",
+      "value" : "Nej",
       "note" : "Text for the equal opportunity form military-spouse item: NO"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Jag vill inte självidentifiera",
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "Amazon es un contratista del Gobierno Federal sujeto a la Ley de Asistencia para la Readaptación de los Veteranos de la Era de Vietnam de 1974, modificada por la Ley de Empleos para Veteranos de 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), que exige que los contratistas del Gobierno que tomen medidas afirmativas para emplear y promover el empleo de (1) veteranos discapacitados, (2) veteranos recientemente separados, (3) veteranos en servicio activo de guerra o con insignias de campaña y (4) veteranos con medalla de servicio de las Fuerzas Armadas. La siguiente invitación para identificar tu condición de veterano protegido se realiza de conformidad con la sección 4212. La divulgación de esta información es completamente voluntaria y negarte a proporcionarla no te someterá a ningún tratamiento adverso.",
+      "value" : "Amazon är en leverantör till den federala regeringen som omfattas av 1974 års lag om återanpassningsstöd till vietnamperiodens veteraner (Vietnam Era Veterans’ Readjustment Assistance Act), ändrad genom 2002 års lag om jobb för veteraner (Jobs for Veterans Act), <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), som kräver att sådana leverantörer arbetar aktivt för att anställa och främja sysselsättningen för (1) veteraner med funktionnedsättning; (2) veteraner som nyligen avslutat sin tjänstgöring; (3) veteraner som varit i aktiv tjänst under krigstid (Active Duty Wartime) eller veteraner med kampanjmärke (Campaign Badge Veteran); och (4) veteraner med tjänstgöringsmedalj från USA:s väpnade styrkor. Följande inbjudan att självidentifiera dig som skyddad veteran är utförd i enlighet med paragraf 4212. Att lämna denna information är helt frivilligt och att inte tillhandahålla den kommer inte att leda till någon ogynnsam behandling.",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
-      "value" : "<b>Un veterano protegido</b> es cualquiera de los siguientes:",
+      "value" : "<b>En skyddad veteran</b> är något av följande:",
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>Veterano discapacitado</b>: un veterano del servicio militar, terrestre, naval o aéreo de EE. UU. que tiene derecho a una indemnización (o quien, si no recibe una pensión de militar jubilado, tendría derecho a una indemnización) en virtud de las leyes administradas por el secretario de Asuntos de Veteranos, o una persona que fue dada de baja o liberada del servicio activo debido a una discapacidad relacionada con el servicio.",
+      "value" : "<b>Handikappad veteran</b>: en veteran från USA:s militär, armé, flotta eller flygvapen med rätt till ersättning (eller den som utan militär pensionsutbetalning skulle ha rätt till ersättning) enligt lagar administrerade av veteranministern; eller en person som avslutat aktiv tjänstgöring på grund av tjänsterelaterad funktionsnedsättning.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: cualquier veterano durante el período de tres años que comienza en la fecha de su baja o liberación del servicio activo en el servicio militar terrestre, naval o aéreo de EE. UU.",
+      "value" : "</b>: alla veteraner som avslutat aktiv tjänstgöring under en treårsperiod som börjar på det datum sådan veteran avslutade sin tjänstgöring i USA:s militär, armé, flotta eller flygvapen.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>Veterano de guerra o con insignia de campaña en servicio activo</b>: un veterano que sirvió en servicio activo en los EE. UU. y cuya insignia fue autorizado en virtud de las leyes administradas por el Departamento de Defensa.",
+      "value" : "<b>Veteran i aktiv tjänst under krigstid (Active Duty Wartime Veteran) eller Veteran med kampanjmärke (Campaign Badge Veteran)</b>: en veteran som gjort aktiv tjänstgöring i USA:s militär, armé, flotta eller flygvapen under pågående krig, eller i militär operation för vilken ett kampanjmärke har godkänts enligt de lagar som administreras av försvarsdepartementet.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
-      "value" : "<b>Veterano con medalla de servicio de las Fuerzas Armadas</b>: un veterano que, mientras estaba en servicio activo en el servicio militar terrestre, naval o aéreo de  EE. UU., participó en una operación militar de los Estados Unidos por la que se concedió una medalla de servicio de las Fuerzas Armadas de acuerdo con la <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Orden Ejecutiva</a>.",
+      "value" : "<b>Veteran med tjänstgöringsmedalj från USA:s väpnade styrkor</b>: en veteran som, under aktiv tjänstgöring i USA:s militär, armé, flotta eller flygvapen, deltog i en amerikansk militär operation för vilken en tjänstgöringsmedalj tilldelades av USA:s väpnade styrkor efter en <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>presidentorder</a>.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
-      "value" : "Si crees que perteneces a alguna de las categorías de veteranos protegidos, indícalo marcando la casilla correspondiente a continuación.",
+      "value" : "Om du anser att du tillhör någon av kategorierna för skyddade veteraner, ange detta genom att markera passande ruta nedan.",
       "note" : "Text for the protected veteran select form label text"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text for the protected veteran select form option: Yes"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Jag vill inte självidentifiera",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the protected veteran select form next button text"
     },
     "BB-cali-disclosure-page-title-text" : {
-      "value" : "Divulgación en California de los informes de investigación de los consumidores",
+      "value" : "Upplysning angående utredande personupplysningar i Kalifornien",
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "En relación con mi posible empleo con Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), Amazon puede solicitar un informe de investigación del consumidor (“Informe”), también conocido como verificación de antecedentes, sobre mí de la siguiente agencia de informes del consumidor:",
+      "value" : "I samband med min eventuella anställning hos Amazon.com, Inc. eller dess filialer eller dotterbolag (”Amazon”) tillåter jag att Amazon begär en utredande personupplysning (”Rapport”), även känd som en bakgrundskontroll, om mig från följande kreditupplysningsbyrå:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
-      "value" : "Accurate Background, LLECO (\"Accurate\")",
+      "value" : "Accurate Background, LLC (”Accurate”)",
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
@@ -981,27 +981,27 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "Entiendo que:",
+      "value" : "Jag förstår att:",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
-      "value" : "En la medida que se solicite un informe a Accurate, la información contenida en dicho informe se utilizará únicamente para determinar mi idoneidad para el empleo.",
+      "value" : "I den utsträckning en Rapport begärs från Accurate kommer informationen i en sådan Rapport endast att användas för att avgöra min lämplighet för anställning.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "La información obtenida por Accurate, e incluida en cualquier informe, puede obtenerse a través de diversos medios, incluida la investigación de documentos e información disponibles de forma legal y/o contacto directo o indirecto, y entrevistas con exempleadores, escuelas, instituciones financieras, arrendatarios, agencias públicas y otros como mis vecinos, amigos y colegas a los que conozco y que puedan tener tal conocimiento.",
+      "value" : "Information som erhållits av Accurate, och som ingår i en Rapport, kan erhållas på olika sätt, inklusive granskning av allmänna handlingar och information och/eller direkt eller indirekt kontakt och intervjuer med tidigare arbetsgivare, skolor, finansinstitut, hyresvärdar, myndigheter, och andra så som mina grannar, vänner, och medarbetare som jag är bekant med och som kan ha sådan kunskap.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Las investigaciones que llevará a cabo Accurate, cuyos resultados podrán incluirse en cualquier Informe proporcionado a Amazon, podrá incluir diversos tipos de información sobre mí en relación con mi carácter, reputación general, características personales o modo de vida, antecedentes laborales, educación, historial de conducción y antecedentes penales, con sujeción a las limitaciones impuestas por las leyes federales y estatales aplicables.\n",
+      "value" : "Undersökning(ar) som ska genomföras av Accurate, vars resultat kan komma att inkluderas i en Rapport som tillhandahålls Amazon, kan innehålla olika typer av information om mig gällande min karaktär, allmänna anseende, personliga egenskaper eller levnadssätt, anställnings- och arbetshistorik, utbildning, körkort och eventuella brott, med undantag för eventuella begränsningar i tillämplig federal och statlig lag.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Según el Código Civil de California § 1785 et seq. y § 1786 et seq., si Amazon solicita algún informe sobre mí, puedo ver el archivo que Accurate mantiene sobre mí durante su horario habitual de oficina. Entiendo que también puedo: (1) obtener una copia de este archivo, al presentar una identificación adecuada y pagar el costo de la copia, por correo certificado o al presentarme personalmente en las oficinas de Accurate durante su horario habitual de oficina después de haber avisado con razonable anticipación de mi plan de visita; y (2) recibir un resumen telefónico de este archivo por parte de Accurate a mi cargo, al presentar una identificación válida y una solicitud por escrito a Accurate para su información telefónica. Entiendo que Accurate tiene disponible personal capacitado para explicarme su informe, incluida cualquier información codificada, y, si me presento en persona en las oficinas de Accurate, puede acompañarme otra persona siempre que esta proporcione una identificación adecuada a Accurate.",
+      "value" : "Enligt Kaliforniens civilrättslag (California Civil Code) § 1785 och följande. och § 1786 samt följande, om någon Rapport begärs av Amazon om mig, kan jag se filen Accurate upprätthåller på mig under deras ordinarie kontorstid. Jag förstår att jag också kan (1) få en kopia av denna akt efter att ha lämnat in korrekt identifikation och betalat kopieringskostnaderna, med rekommenderad post eller genom att personligen besöka Accurates kontor under ordinarie kontorstid efter att i förväg ha meddelat mitt planerade besök i rimlig tid, och (2) få en sammanfattning av denna akt från Accurate över telefon, på min bekostnad, efter att ha lämnat in korrekt identifiering och en skriftlig begäran om telefonupplysning till Accurate. Jag förstår att Accurate har utbildad personal tillgänglig som kan förklara akten för mig, inklusive eventuell kodad information, och, om jag besöker Accurates kontor personligen, kan jag åtföljas av en annan person så länge den personen tillhandahåller korrekt identifiering till Accurate.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "La información sobre las prácticas de privacidad de Accurate está disponible en <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
+      "value" : "Information om Accurates sekretesspraxis finns på <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
@@ -1025,279 +1025,279 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "Comprendo que:",
+      "value" : "Jag förstår att:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "En la medida en que se solicite un informe a First Advantage, la información contenida en dicho informe se utilizará únicamente para determinar mi idoneidad para el empleo.",
+      "value" : "I den utsträckning en rapport begärs från First Advantage, kommer informationen i en sådan rapport endast att användas för att avgöra min behörighet till anställning.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "La información obtenida por First Advantage, e incluida en cualquier informe, puede obtenerse a través de diversos medios, incluida la investigación de documentos e información disponibles de forma legal y/o contacto directo o indirecto, y entrevistas con exempleadores, escuelas, instituciones financieras, arrendatarios, oficinas públicas y otros como mis vecinos, amigos y colegas a los que conozco y que puedan tener tal conocimiento.",
+      "value" : "Information som erhållits av First Advantage, och som ingår i en rapport, kan erhållas på olika sätt, inklusive inspektion av lagligen tillgängliga dokument och information och/eller direkt eller indirekt kontakt och intervjuer med tidigare arbetsgivare, skolor, finansinstitut, hyresvärdar, offentliga organ och andra som mina grannar, vänner, och medarbetare som jag är bekant med och som kan ha sådan kunskap.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "Las investigaciones que realizará First Advantage, cuyos resultados pueden incluirse en cualquier informe proporcionado a Amazon, pueden incluir varios tipos de información sobre mí con respecto a mi carácter, reputación en general, características personales o estilo de vida, empleo e historial laboral, educación, registro de conducción y antecedentes penales, con apego a las limitaciones impuestas por las leyes federales y estatales vigentes.",
+      "value" : "Undersökningar som ska genomföras av First Advantage, vars resultat kan inkluderas i en rapport som tillhandahålls Amazon, kan innehålla olika typer av information om mig angående min karaktär, allmänna anseende, personliga egenskaper eller levnadssätt, anställning och arbetshistoria, utbildning, körhistorik, och brottsregister, med förbehåll för eventuella begränsningar som införs genom tillämplig federal och statlig lag.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "Según el Código Civil de California § 1785 et seq. y § 1786 et seq., si Amazon solicita algún informe sobre mí, puedo ver el archivo que First Advantage mantiene sobre mí durante su horario habitual de oficina. Entiendo que también puedo: (1) obtener una copia de este archivo, al presentar una identificación válida y pagar el costo de la copia, por correo certificado o al presentarme personalmente en las oficinas de First Advantage durante su horario habitual de oficina, después de haber avisado con razonable anticipación de mi plan de visita; y (2) recibir un resumen telefónico de este archivo por parte de First Advantage a mi cargo, al presentar una identificación válida y una solicitud por escrito a First Advantage para información telefónica. Entiendo que First Advantage tiene disponible personal capacitado para explicarme su informe, incluida cualquier información codificada, y si me presento en persona en las oficinas de First Advantage, puede acompañarme otra persona siempre que esta proporcione una identificación válida a First Advantage.",
+      "value" : "Per California Civil Code § 1785 et seq. och § 1786 et seq., om någon rapport begärs av Amazon på mig, kan jag se akten First Advantage upprätthåller på mig under dess ordinarie kontorstid. Jag förstår att jag också kan (1) få en kopia av denna akt, när jag lämnar in korrekt identifikation och betalar kopieringskostnaderna, med rekommenderad post eller genom att personligen besöka First Advantages kontor under ordinarie kontorstid efter att ha meddelat mitt planerade besök i rimlig tid, och (2) få en sammanfattning av denna akt från First Advantage via telefon, på min bekostnad, efter att ha lämnat in korrekt identifiering och en skriftlig begäran till First Advantage om telefonutlämnande. Jag förstår att First Advantage har utbildad personal tillgänglig för att förklara sin akt för mig, inklusive kodad information, och, om jag personligen uppträder på First Advantages kontor, kan jag åtföljas av en annan person så länge personen tillhandahåller korrekt identifiering till First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
-      "value" : "La información sobre las políticas de privacidad de First Advantage está disponible en <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>.",
+      "value" : "Information om First Advantage sekretessrutiner finns på <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "Declaro que he leído este documento, que lo entiendo, y que de conformidad con esta INFORMACIÓN DE CALIFORNIA SOBRE LOS INFORMES DE INVESTIGACIÓN DE CONSUMIDORES, autorizo a Amazon a obtener un informe de investigación del consumidor acerca de mi persona.",
+      "value" : "Jag intygar att jag har läst detta dokument och att jag förstår det, och att jag, i enlighet med denna CALIFORNIA DISCLOSURING REGARDATIVE CONSUMER REPORTS, bemyndigar Amazon att anskaffa en undersökande konsumentrapport om mig.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Nästa",
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "¡Ya casi terminas, {firstname} {lastname}! Necesitamos que vengas para la foto del distintivo, completar el permiso de trabajo y la prueba de drogas, si corresponde.",
+      "value" : "Du är nästan klar, {firstname} {lastname}! Du måste ta med ett foto för bricka, komplett arbetstillstånd och ett drogtest, om tillämpligt.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
-      "value" : "Confirmar selección",
+      "value" : "Bekräfta val",
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
-      "value" : "Programar cita previa a la contratación",
+      "value" : "Schemalägg möte före anställning",
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
-      "value" : "Quedan muy pocos lugares",
+      "value" : "Mycket få platser kvar",
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "Autoidentificación voluntaria de condición de veterano",
+      "value" : "Frivillig självidentifiering av veteranstatus",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "Estamos reservando un lugar para ti durante las próximas {hours} horas y {minutes} minutos para realizar los pasos faltantes.",
+      "value" : "Vi håller en plats åt dig de närmaste {hours} timmarna och {minutes} minuterna för att slutföra de återstående stegen.",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
-      "value" : "Gracias por tu interés, pero en este momento no podemos ofrecerte un empleo.",
+      "value" : "Tack för ditt intresse, men vi kan inte erbjuda dig ett jobb just nu.",
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "La información que proporcionaste no cumple con nuestros requisitos. Te recomendamos que veas los empleos en amazon.jobs.",
+      "value" : "Informationen du angav uppfyller inte våra krav. Vi uppmuntrar dig att titta på jobben på amazon.jobs.",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "Volver al tablero",
+      "value" : "Återgå till översikten",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
-      "value" : "{name}, tu interés por Amazon significa mucho para nosotros.",
+      "value" : "{name}, ditt intresse med Amazon betyder mycket för oss.",
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "Muchas gracias por darnos la oportunidad de considerarte para este puesto. Lamentablemente, no proseguiremos con tu candidatura en este momento.",
+      "value" : "Tack så mycket för att du gav oss möjlighet att överväga dig för denna position. Tyvärr kommer vi inte att gå vidare med din ansökan i nuläget.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "Para ser reconsiderado para este rol en otro momento, puedes volver a realizar la evaluación en tres meses.",
+      "value" : "För att omprövas för denna roll vid en annan tidpunkt, kan du genomföra bedömningen igen om tre månader.",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "Volver al tablero",
+      "value" : "Återgå till översikten",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
-      "value" : "Evaluación",
+      "value" : "Bedömning",
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "¡Estamos muy emocionados por tu interés en unirte a Amazon!",
+      "value" : "Vi är så glada över ditt intresse att arbeta med Amazon!",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "Esta evaluación te ayudará a entender el rol del empleado y nos ayudará a conocerte.",
+      "value" : "Denna bedömning hjälper dig att förstå den associerade rollen och hjälpa oss att lära känna dig.",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "Ajustes",
+      "value" : "Anpassning",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "En Amazon, honramos la diversidad de nuestra fuerza laboral y las diversas formas en que trabajamos. Si tienes una discapacidad y requieres algún ajuste durante el proceso de contratación, incluida la evaluación, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "På Amazon firar vi mångfalden i vår arbetskraft och de olika sätten vi arbetar på. Om du har ett funktionshinder och behöver anpassning under anställningsprocessen, inklusive bedömningen, besök <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Ninguna parte de la evaluación está cronometrada</b>; puedes trabajar a tu propio ritmo. Todas las secciones de esta evaluación:",
+      "value" : "<b>Ingen del av bedömningen är tidsbestämd</b> - du kan arbeta i din egen takt. Alla avsnitt i denna bedömning:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "Están optimizados para los siguientes lectores de pantalla: VoiceOver (Mac) y NVDA (Windows) en Firefox, Chrome y Edge (Windows).",
+      "value" : "Optimeras för följande skärmläsare: VoiceOver (Mac) och NVDA (Windows) i Firefox, Chrome och Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
-      "value" : "Se puede ingresar mediante el mouse o teclado.",
+      "value" : "Kan nås via mus eller tangentbord.",
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
-      "value" : "Comenzar evaluación",
+      "value" : "Börja bedömningen",
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "Revisar y enviar",
+      "value" : "Granska och skicka",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
-      "value" : "Detalles del empleo",
+      "value" : "Jobbdetaljer",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
-      "value" : "Verificación de antecedentes",
+      "value" : "Bakgrundskontroll",
       "note" : "Text for the job details section background check text"
     },
     "BB-ReviewSubmit-job-details-section-authorized-text" : {
-      "value" : "Autorizado",
+      "value" : "Godkänd",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "Enviar copia gratuita de verificación de antecedentes",
+      "value" : "Skicka gratis kopia av bakgrundskontroll",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
-      "value" : "Tipo de ID nacional:",
+      "value" : "Nationell ID-typ:",
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "Número de ID nacional:",
+      "value" : "Nationellt ID-nummer:",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
-      "value" : "Fecha de nacimiento:",
+      "value" : "Födelsedatum:",
       "note" : "Text for the job details section date of birth text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
-      "value" : "Cita previa a la contratación",
+      "value" : "Möte inför anställning",
       "note" : "Text for the pre-hire appointment section title text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
-      "value" : "Horario:",
+      "value" : "Timmar:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "Esperamos verte en el horario indicado anteriormente.",
+      "value" : "Vi ser fram emot att träffa dig vid tiden ovan.",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
-      "value" : "Autoidentificación voluntaria",
+      "value" : "Frivillig självidentifiering",
       "note" : "Text for the voluntary self-identification section title text"
     },
     "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
-      "value" : "Igualdad de oportunidades:",
+      "value" : "Jämställdhet:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "Condición de veterano:",
+      "value" : "Veteranstatus:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
-      "value" : "Condición de discapacidad:",
+      "value" : "Status för funktionshinder:",
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "Enviar solicitud",
+      "value" : "Skicka in ansökan",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
-      "value" : "¡Gracias por presentar tu solicitud en Amazon!",
+      "value" : "Tack för din ansökan till Amazon!",
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "Esperamos verte pronto. Estos son tus siguientes pasos:",
+      "value" : "Vi ser fram emot att träffa dig snart. Här är dina nästa steg:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "Proporciona los detalles de la referencia (si corresponde)",
+      "value" : "Ange hänvisningsuppgifter (om tillämpligt)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "¿Te refirió un empleado de Amazon?",
+      "value" : "Hänvisades du av en befintlig Amazon-anställd?",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
-      "value" : "Sí",
+      "value" : "Ja",
       "note" : "Text for the thank you page referral details radio button 'yes' text"
     },
     "BB-ThankYou-referral-details-no-text" : {
-      "value" : "No",
+      "value" : "Nej",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "Comenzar las actividades previas a la contratación",
+      "value" : "Kom igång med aktiviteter före anställning",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "Antes de tu cita previa a la contratación, llena el cuestionario de crédito fiscal de oportunidades laborales.",
+      "value" : "Innan ditt möte före anställning, fyll i frågeformuläret för Work Opportunities Tax Credit.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
-      "value" : "Comencemos",
+      "value" : "Kom igång",
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
-      "value" : "Detalles de cita previa a la contratación",
+      "value" : "Information om möte inför anställning",
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "Visítanos para una sesión de 30 minutos en cualquier momento entre las {startTime} y las {endTime}.",
+      "value" : "Besök oss för en 30-minuters session när som helst mellan {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
-      "value" : "Detalles de la cita",
+      "value" : "Information om avtalad tid",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
-      "value" : "Elementos para presentar",
+      "value" : "Saker att ta med",
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "ID original vigente con foto",
+      "value" : "Giltig originallegitimation med foto",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "Documento original vigente del permiso de trabajo",
+      "value" : "Giltigt originaldokument för arbetstillstånd",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Haz clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de la documentación aceptable.",
+      "value" : "Klicka <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>här</a> för en fullständig lista över godtagbara dokument.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
-      "value" : "Asistencia especial",
+      "value" : "Särskild assistans",
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "Si necesitas algún tipo de ajuste, como un intérprete de ASL para el evento de contratación, dirígete a <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> y chatea con nosotros para solicitar un intérprete. Contáctanos inmediatamente después de programar la cita. Necesitamos al menos 48 horas antes de tu cita para coordinarlo.",
+      "value" : "Om du behöver anpassning, till exempel en ASL-tolk för anställningstillfället, gå till <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> och chatta med oss för att begära en tolk. Kontakta oss omedelbart efter schemaläggning av ditt möte. Vi behöver kontaktas åtminstone 48 timmar före ditt möte för att kunna ordna anpassningar.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "Proporciona el ID de inicio de sesión de quien te refirió (solo letras minúsculas)",
+      "value" : "Ange ditt hänvisnings-inloggnings-ID (endast små bokstäver)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "Proporciona el ID de inicio de sesión de quien te refirió.",
+      "value" : "Ange ditt hänvisnings-inloggnings-ID.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "El ID de usuario debe tener solo letras minúsculas y al menos 4 letras de largo.",
+      "value" : "Användar-ID bör endast innehålla små bokstäver och bör vara minst 4 bokstäver långa.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
-      "value" : "Cuestionario de crédito fiscal de oportunidades laborales",
+      "value" : "Work opportunity tax credit-frågeformulär",
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT testing participa en programas de crédito fiscal federales y/o estatales. La información que proporciones se utilizará para determinar la idoneidad de la compañía para estos programas y de ninguna manera afectará negativamente sobre ninguna decisión de contratación, retención o promoción.",
+      "value" : "Amazon IAT-testning deltar i federala och eller statliga skattekreditprogram. Informationen du ger kommer att användas för att fastställa företagets behörighet för dessa program och påverkar inte på något sätt anställnings-, vidareanställnings- eller befordringsbeslut negativt.",
       "note" : "Text for the WOTC page description text"
     }
   }

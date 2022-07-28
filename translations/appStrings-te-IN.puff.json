@@ -1,0 +1,1304 @@
+{
+  "resources" : {
+    "BB-PreConsentPage-banner-journey-starts" : {
+      "value" : "Amazon Associate కావడానికి మీ ప్రయాణం ఇక్కడ ప్రారంభమవుతుంది.",
+      "note" : "Text for PreConsentPage banner text"
+    },
+    "BB-JobOpportunity-Go-To-Dashboard-Link" : {
+      "value" : "ఉద్యోగాల డాష్‌బోర్డ్‌కి తిరిగి వెళ్లండి",
+      "note" : "Text for the link to go back to jobs dashboard"
+    },
+    "BB-JobOpportunity-back-to-indexPage-link" : {
+      "value" : "ఉద్యోగాలను వీక్షించండి",
+      "note" : "Text for the link to go back to job opportunity index"
+    },
+    "BB-JobOpportunity-back-to-jobConfirmation-link" : {
+      "value" : "వెనుకకు",
+      "note" : "Text for the link to go back to job confirmation page"
+    },
+    "BB-JobOpportunity-go-to-jobDescription-link" : {
+      "value" : "ఉద్యోగ అవసరాలు మరియు ప్రయోజనాలు",
+      "note" : "Text for the link to go to job description page"
+    },
+    "BB-JobOpportunity-filter-button" : {
+      "value" : "ఫిల్టర్",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-sort-button" : {
+      "value" : "క్రమబద్ధీకరించండి",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-select-job-button" : {
+      "value" : "ఈ ఉద్యోగాన్ని ఎంచుకోండి",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-StepHeader-view-progress-button" : {
+      "value" : "పురోగతిని చూడండి",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-PreconsentPage-preview-steps-button" : {
+      "value" : "ప్రివ్యూ దశలు",
+      "note" : "Text for the button to preview application steps"
+    },
+    "BB-PreconsentPage-next-Button" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the button to go to next page ( consent page )"
+    },
+    "BB-Country-United-States" : {
+      "value" : "యునైటెడ్ స్టేట్స్",
+      "note" : "United States as country name our application supports"
+    },
+    "BB-ConsentPage-qualification-criteria-header-text" : {
+      "value" : "దరఖాస్తు చేయడం ద్వారా, మీరు దీనిని ధృవీకరిస్తారు:",
+      "note" : "Text for application qualification criteria"
+    },
+    "BB-ConsentPage-data-policy-header-text" : {
+      "value" : "దరఖాస్తు చేయడం ద్వారా, మీరు చదివి మరియు అంగీకరిస్తున్నారు",
+      "note" : "Text for the user data policy agreement title"
+    },
+    "BB-ConsentPage-user-data-Policy-button" : {
+      "value" : "వినియోగదారు డేటా విధానం",
+      "note" : "Text for the button to open user data policy page"
+    },
+    "BB-ConsentPage-create-application-button" : {
+      "value" : "అప్లికేషన్ సృష్టించండి",
+      "note" : "Text for the create application button"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "వినియోగదారు డేటా విధానం",
+      "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "విభిన్నమైన మరియు సమగ్రమైన కార్యాలయానికి Amazon కట్టుబడి ఉంది. Amazon సమాన అవకాశాల యజమాని మరియు జాతి, జాతీయ మూలం, లింగం, లింగ గుర్తింపు, లైంగిక ధోరణి, రక్షిత మాజీ సైనికుల స్థితి, వైకల్యం, వయస్సు లేదా ఇతర చట్టబద్ధంగా రక్షిత హోదా ఆధారంగా వివక్ష చూపదు. వసతిని అభ్యర్థించాలనుకునే వైకల్యాలున్న వ్యక్తుల కోసం, దయచేసి <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>ని సందర్శించండి",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
+      "value" : "Amazon మీ వ్యక్తిగత డేటా రక్షణను తీవ్రంగా పరిగణిస్తుంది మరియు చట్టానికి అనుగుణంగా మీ వ్యక్తిగత డేటాను మాత్రమే ప్రాసెస్ చేస్తుంది. ప్రత్యేకించి, మేము మీ వ్యక్తిగత డేటాను మీ ముందస్తు అనుమతి లేకుండా ఏ మూడవ పక్షంతోనూ భాగస్వామ్యం చేయము, చట్టం ద్వారా బలవంతం చేస్తే తప్ప. మీరు వేరే విధంగా వ్యక్తం చేయకపోతే, నియామకం చేసే Amazon కంపెనీ USAలో Amazon.com లేదా దాని అనుబంధ సంస్థల్లో నిర్వహించే ఎలక్ట్రానిక్ డేటాబేస్‌లో మీ వ్యక్తిగత డేటాను స్టోర్ చేస్తుంది. Amazon మీ వ్యక్తిగత డేటాను ఎలా నిల్వ చేస్తుంది మరియు ప్రాసెస్ చేస్తుంది అనే పూర్తి సమాచారం కోసం, దయచేసి ఇక్కడ క్లిక్ చేయండి <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "note" : "Text for the flyout user data policy paragraph 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
+      "value" : "ఈరోజు మీరు దరఖాస్తు చేసిన పాత్రతో పాటు, మేము అదే లేదా ఇలాంటి ఉద్యోగ విధులు అవసరమయ్యే ఇతర స్థానాలను కలిగి ఉండవచ్చు. ఈ పాత్రలు పూర్తి సమయం, తగ్గిన సమయం, పార్ట్ టైమ్, సీజనల్ మరియు/లేదా తాత్కాలిక స్థానాలు ఈ స్థానంలో లేదా ఇతర సమీపంలోని Amazon స్థానాల్లో అందుబాటులో ఉండవచ్చు. మీరు Amazon లేదా మా భాగస్వాములతో ఎలాంటి పాత్రను అంగీకరించాల్సిన అవసరం లేదు, అయితే, మీ దరఖాస్తును పూర్తి చేయడం ద్వారా మీరు మీ అప్లికేషన్ సైట్‌కు 30 మైళ్ల పరిధిలో అదే స్థాయి, గంటవారీ పాత్రల కోసం పరిగణించబడతారని అంగీకరిస్తున్నారు. మా సాధారణ మరియు తాత్కాలిక అసోసియేట్ అవసరాల కోసం నియమించుకునే మా భాగస్వాములతో (సిబ్బంది ఏజెన్సీలు) మీ దరఖాస్తుదారు సమాచారాన్ని పంచుకోవడం కూడా ఇందులో ఉంది.",
+      "note" : "Text for the flyout user data policy paragraph 3 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
+      "value" : "దరఖాస్తు ద్వారా, మీరు:",
+      "note" : "Text for the flyout user data policy by applying text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
+      "value" : "మీరు దరఖాస్తు చేస్తున్న స్థానానికి సంబంధించిన ఉద్యోగ వివరణను మీరు చదివారని మరియు ఉద్యోగాన్ని నిర్వహించడానికి అవసరమైన ప్రాథమిక అవసరాలను మీరు అర్థం చేసుకున్నారని అంగీకరిస్తున్నారు;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
+      "value" : "Amazon, salesforce.com లేదా ఏదైనా ఇతర మూడవ పక్షం ద్వారా మీ అప్లికేషన్ యొక్క ప్రయోజనాల కోసం మరియు Amazon యొక్క ఏదైనా ఇతర చట్టబద్ధమైన ప్రయోజనాల కోసం మీ వ్యక్తిగత డేటాను ప్రాసెస్ చేయడానికి, విశ్లేషించడానికి మరియు అంచనా వేయడానికి సమ్మతి. సందేహాన్ని నివారించడం కోసం, మీ వ్యక్తిగత డేటా \"ప్రాసెసింగ్\"లో సేకరించడం, స్వీకరించడం, రికార్డింగ్ చేయడం, నిర్వహించడం, కలపడం, నిల్వ చేయడం, నవీకరించడం, మార్చడం, ఉపయోగించడం, వ్యాప్తి చేయడం, పంపిణీ చేయడం, విలీనం చేయడం, లింక్ చేయడం, నిరోధించడం, దిగజారడం, మీ వ్యక్తిగత డేటాను తొలగించడం లేదా నాశనం చేయడం వంటివి ఉంటాయి;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
+      "value" : "అప్లికేషన్ ప్రాసెస్ తర్వాత Amazon మీ వ్యక్తిగత డేటాను ఉంచుకోవడానికి సమ్మతిస్తుంది, దాని జాబ్ అప్లికేషన్ ప్రాసెస్‌లను సమర్థవంతంగా పర్యవేక్షించడంలో మరియు USAలోని ఎలక్ట్రానిక్ డేటాబేస్‌లో స్టోర్ చేయబడే మీ వ్యక్తిగత డేటాకు సహాయపడటానికి.",
+      "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
+    },
+    "BB-StepHeader-view-progress-flyout-title" : {
+      "value" : "పురోగతిని చూడండి",
+      "note" : "Text for view progress flyout title"
+    },
+    "BB-StepHeader-view-progress-flyout-close-button" : {
+      "value" : "పూర్తయింది",
+      "note" : "Text for view progress flyout close button"
+    },
+    "BB-ApplicationSteps-select-job-text" : {
+      "value" : "ఉద్యోగం ఎంచుకోండి",
+      "note" : "Text form select job application step"
+    },
+    "BB-ApplicationSteps-complete-required-document-text" : {
+      "value" : "అవసరమైన పత్రాలను పూర్తి చేయండి",
+      "note" : "Text for complete required documents application step"
+    },
+    "BB-ApplicationSteps-schedule-preHire-appt-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ షెడ్యూల్ చేయండి",
+      "note" : "Text for Schedule pre-hire appointment application step"
+    },
+    "BB-ApplicationSteps-complete-assessment-text" : {
+      "value" : "అసెస్‌మెంట్‌ను పూర్తి చేయండి (~15 నిమి)",
+      "note" : "Text for complete assessment application step"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-title" : {
+      "value" : "ఫిల్టర్",
+      "note" : "Text for filter schedule flyout title"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
+      "value" : "రీసెట్ చేయండి",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
+      "value" : "వర్తింపజేయండి",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
+      "value" : "వర్తింపజేయండి",
+      "note" : "Text for sort schedule flyout apply button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-title" : {
+      "value" : "ఈ ప్రకారం అమర్చండి",
+      "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
+      "value" : "చెల్లింపు రేటు - అత్యధికం నుండి తక్కువ",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
+      "value" : "గంటలు - చాలా నుండి కనీసం",
+      "note" : "Text for sort schedule by hours from most to least"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
+      "value" : "గంటలు - తక్కువ నుండి చాలా వరకు",
+      "note" : "Text for sort schedule by hours from least to most"
+    },
+    "BB-DaysHoursFilter-title-text" : {
+      "value" : "షెడ్యూల్‌లను ఫిల్టర్ చేయండి",
+      "note" : "Text for the title of DaysHours Filter"
+    },
+    "BB-DayName-Monday" : {
+      "value" : "సోమవారం",
+      "note" : "Text for Monday"
+    },
+    "BB-DayName-Tuesday" : {
+      "value" : "మంగళవారం",
+      "note" : "Text for Tuesday"
+    },
+    "BB-DayName-Wednesday" : {
+      "value" : "బుధవారం",
+      "note" : "Text for Wednesday"
+    },
+    "BB-DayName-Thursday" : {
+      "value" : "గురువారం",
+      "note" : "Text for Thursday"
+    },
+    "BB-DayName-Friday" : {
+      "value" : "శుక్రవారం",
+      "note" : "Text for Friday"
+    },
+    "BB-DayName-Saturday" : {
+      "value" : "శనివారం",
+      "note" : "Text for Saturday"
+    },
+    "BB-DayName-Sunday" : {
+      "value" : "ఆదివారం",
+      "note" : "Text for Sunday"
+    },
+    "BB-TimeRange-start-time-select-label-text" : {
+      "value" : "ప్రారంభ సమయం",
+      "note" : "Text for start time select input label text"
+    },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "ప్రారంభ సమయం",
+      "note" : "Text for end time select input label text"
+    },
+    "BB-FilterSchedule-DesiredHours-Upto-hours" : {
+      "value" : "{hourNumber} గంటల వరకు",
+      "note" : "Text for Desired Hours up to a certain hours"
+    },
+    "BB-FilterSchedule-desired-hour-select-place-holder" : {
+      "value" : "కావలసిన గంటలను ఎంచుకోండి",
+      "note" : "Text for desired hours select input place holder"
+    },
+    "BB-FilterSchedule-desired-hour-select-label-text" : {
+      "value" : "వారానికి కావలసిన గంటలు",
+      "note" : "Text for desired hours select input label text"
+    },
+    "BB-ContingencyOffer-well-done-text" : {
+      "value" : "ఇప్పటివరకు బాగా పూర్తయింది",
+      "note" : "Text for congratulating candidate for accepting contingent offer"
+    },
+    "BB-ContingencyOffer-job-picked-title-text" : {
+      "value" : "మీరు ఎంచుకున్న ఉద్యోగానికి సంబంధించిన కంటింజెంట్ ఆఫర్ ఇక్కడ ఉంది.",
+      "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
+      "value" : "మీరు ఎంచుకున్న ఉద్యోగానికి సంబంధించిన కంటింజెంట్ ఆఫర్ ఇక్కడ ఉంది.",
+      "note" : "Text for contingent offer meaning popover title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
+      "value" : "వర్తించే చట్టం ద్వారా అనుమతించబడినట్లుగా, మీ ఆఫర్ అవసరమైన బ్యాక్‌గ్రౌండ్ చెక్, డ్రగ్ స్క్రీనింగ్ (వర్తిస్తే) మరియు అర్హత తనిఖీని (వర్తిస్తే) విజయవంతంగా పాస్ చేయడంపై ఆధారపడి ఉంటుంది, కాబట్టి మీరు తదుపరి పేజీలో ఉపాధికి ముందు దశలను పూర్తి చేయడం ముఖ్యం. కొన్ని పరిస్థితులలో, ముందస్తు ఉపాధి అవసరాలు సకాలంలో పూర్తి కానందున మీ మొదటి రోజు ఆలస్యం కావచ్చు. ఇదే జరిగితే, మీరు మా నుండి త్వరలో వినవచ్చు.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
+      "value" : "మూసివేయండి.",
+      "note" : "Text for contingent offer meaning popover close button"
+    },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "ఉద్యోగ అవసరాలు.",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
+    "BB-ContingencyOffer-remaining-steps-container-title" : {
+      "value" : "మిగిలిన దశలు",
+      "note" : "Text for the remaining steps container title text"
+    },
+    "BB-ContingencyOffer-accept-offer-button-text" : {
+      "value" : "ఆఫర్‌ను అంగీకరించండి",
+      "note" : "Text for the accept offer button text"
+    },
+    "BB-ContingencyOffer-back-to-jobs-button-text" : {
+      "value" : "ఉద్యోగాలకు తిరిగి వెళ్ళు",
+      "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
+    },
+    "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
+      "value" : "ఈ ఆఫర్‌ను అంగీకరించడం ద్వారా, మీరు ఈ పదవి యొక్క అవసరాలను అర్థం చేసుకున్నారని నిర్ధారిస్తారు.",
+      "note" : "Text offer requirement understanding confirmed by accepting offer"
+    },
+    "BB-BGC-page-content-title" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ తనిఖీ",
+      "note" : "Text for BGC page title"
+    },
+    "BB-BGC-page-provide-authorization-and-information-notice" : {
+      "value" : "దయచేసి నేపథ్య తనిఖీ కోసం అవసరమైన అధికారం మరియు సమాచారాన్ని అందించండి.",
+      "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
+    },
+    "BB-BGC-page-fcra-step-card-title" : {
+      "value" : "ఫెయిర్ క్రెడిట్ రిపోర్ట్ యాక్ట్ డిస్‌క్లోజర్‌",
+      "note" : "Text for the FCRA step card title"
+    },
+    "BB-BGC-page-nonfcra-step-card-title" : {
+      "value" : "నాన్-ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ అక్నాలెడ్జ్‌మెంట్ మరియు ఆథరైజేషన్ కోసం బ్యాక్‌గ్రౌండ్ తనిఖీ",
+      "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-additional-bgc-step-card-title" : {
+      "value" : "అదనపు నేపథ్య సమాచారం",
+      "note" : "Text for the Additional bgc information step card title"
+    },
+    "BB-BGC-page-continue-button" : {
+      "value" : "కొనసాగించండి",
+      "note" : "Text for the bgc continue button ( from bgc to nhe page)"
+    },
+    "BB-BGC-page-fcra-subtitle-text" : {
+      "value" : "దయచేసి దిగువ లింక్‌ని ఉపయోగించి కొన్ని ప్రశ్నలకు సమాధానం ఇవ్వండి.",
+      "note" : "Text for the fcra subtitle"
+    },
+    "BB-BGC-page-fcra-get-started-btn" : {
+      "value" : "ప్రారంభించండి",
+      "note" : "Text for the fcra get started button"
+    },
+    "BB-BGC-page-fcra-edit-form-btn" : {
+      "value" : "ఫారమ్‌ని సవరించండి",
+      "note" : "Text for the fcra edit information button"
+    },
+    "BB-BGC-addition-bgc-form-next-btn" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the additional bgc form next button"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
+      "value" : "అడ్రస్ లైన్ 1",
+      "note" : "Text for the additional bgc form  address line 1 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటయ్యే చిరునామాను నమోదు చేయండి",
+      "note" : "Text for the additional bgc form  address line 1 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
+      "value" : "అపార్ట్మెంట్, సూట్, .etc",
+      "note" : "Text for the additional bgc form  address line 2 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటయ్యే చిరునామాను నమోదు చేయండి",
+      "note" : "Text for the additional bgc form  address line 2 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-city-label-text" : {
+      "value" : "నగరం",
+      "note" : "Text for the additional bgc form  city label text"
+    },
+    "BB-BGC-Additional-bgc-form-city-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే నగరాన్ని నమోదు చేయండి",
+      "note" : "Text for the additional bgc form city error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-label-text" : {
+      "value" : "రాష్ట్రం/ప్రావిన్స్",
+      "note" : "Text for the additional bgc form  state label text"
+    },
+    "BB-BGC-Additional-bgc-form-state-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే రాష్ట్రం/ప్రావిన్స్‌ని నమోదు చేయండి",
+      "note" : "Text for the additional bgc form state error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
+      "value" : "ఒక రాష్ట్రాన్ని ఎంచుకోండి",
+      "note" : "Text for the additional bgc form state placeholder text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
+      "value" : "జిప్/పోస్టల్ కోడ్",
+      "note" : "Text for the additional bgc form  zipcode label text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే 5 అంకెల జిప్ కోడ్‌ను నమోదు చేయండి",
+      "note" : "Text for the additional bgc form zipcode error message text"
+    },
+    "BB-BGC-Additional-bgc-form-country-label-text" : {
+      "value" : "దేశం",
+      "note" : "Text for the additional bgc form  country label text"
+    },
+    "BB-BGC-Additional-bgc-form-country-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే దేశాన్ని ఎంటర్ చేయండి",
+      "note" : "Text for the additional bgc form country error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
+      "value" : "జాతీయ ID",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే జాతీయ ID రకాన్ని నమోదు చేయండి",
+      "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
+      "value" : "జాతీయ ID నంబర్",
+      "note" : "Text for the additional bgc form  national id number label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "దయచేసి డాష్ లేకుండా చెల్లుబాటు అయ్యే 9 అంకెల సామాజిక భద్రతా నంబర్‌ను నమోదు చేయండి",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-label-text" : {
+      "value" : "పుట్టిన తేదీ",
+      "note" : "Text for the additional bgc form  date of birth label text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే పుట్టిన తేదీని నమోదు చేయండి.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
+      "value" : "సోషల్ సెక్యూరిటీ నంబర్",
+      "note" : "Social Security Number is one of options as National ID"
+    },
+    "BB-BGC-form-optional-input-label-text" : {
+      "value" : "ఆప్షనల్",
+      "note" : "Text to show that inout on a form is optional"
+    },
+    "BB-BGC-bgc-step-card-step-progress" : {
+      "value" : "{totalSteps}లో {currentStep}వ దశ",
+      "note" : "Text to show step progress on bgc step card"
+    },
+    "BB-BGC-criminal-record-within-seven-years-question-text" : {
+      "value" : "మీరు గత ఏడు (7) సంవత్సరాలలో దుష్ప్రవర్తన లేదా నేరారోపణకు పాల్పడినట్లు నిర్ధారించబడ్డారా లేదా జైలు లేదా పెరోల్ నుండి విముక్తి పొందారా?",
+      "note" : "Text to ask if candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
+      "value" : "అవును",
+      "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
+      "value" : "లేదు",
+      "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "నగరం, దేశం, నేరారోపణ జరిగిన రాష్ట్రం, తేదీ, నేరం యొక్క స్వభావం, శిక్షా సమాచారంతో పాటు అందించండి",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
+      "value" : "ఉపాధి కోసం మీ దరఖాస్తుకు సంబంధించి Amazon.com, Inc. లేదా దాని అనుబంధ సంస్థలు లేదా అనుబంధ సంస్థలతో (\"Amazon\"), మేము వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి మీపై వినియోగదారు నివేదికను సేకరిస్తాము. దీనిని సాధారణంగా \"బ్యాక్‌గ్రౌండ్ చెక్\" అంటారు.",
+      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-title" : {
+      "value" : "ఫెయిర్ క్రెడిట్ రిపోర్ట్ యాక్ట్ డిస్‌క్లోజర్‌",
+      "note" : "Text for the fcra disclosure form title"
+    },
+    "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
+      "value" : "దిగువన ఉన్న నా eSignature ద్వారా, పైన పేర్కొన్న వినియోగదారు నివేదికను ఇప్పుడు మరియు నేను Amazon కార్పొరేట్‌తో కలిగి ఉన్న ఏదైనా ఉపాధి లేదా నిశ్చితార్థం అంతటా సేకరించడానికి నేను Amazon‌కి అధికారం ఇస్తున్నాను.",
+      "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the fcra disclosure form next button"
+    },
+    "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
+      "value" : "ఈ బ్యాక్‌గ్రౌండ్ తనిఖీని నిర్వహించడానికి నేను Amazonకి అధికారం ఇచ్చాను.",
+      "note" : "Text for the authorize Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
+      "value" : "ఈ బ్యాక్‌గ్రౌండ్ తనిఖీని Amazonకి అధికారం ఇవ్వడానికి నేను నిరాకరించాను.",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-label-text" : {
+      "value" : "మీ పూర్తి పేరును ఇక్కడ టైప్ చేయండి",
+      "note" : "Text for the fcra signature input label text"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-error-text" : {
+      "value" : "దయచేసి కింది ఫార్మాట్‌లో చెల్లుబాటు అయ్యే పూర్తి పేరును నమోదు చేయండి: మొదటిది చివరిది",
+      "note" : "Text for the fcra signature input error text"
+    },
+    "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
+      "value" : "నేను వెల్లడించిన మరియు అధికారం ఇచ్చినట్లుగా ప్రత్యేక ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ డిస్‌క్లోజర్ మరియు ఆథరైజేషన్ డాక్యుమెంట్, Amazon.com, Inc. లేదా దాని అనుబంధ సంస్థలు లేదా అనుబంధ సంస్థలు (“Amazon”) నాపై నేపథ్య తనిఖీని నిర్వహిస్తాయి.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
+      "value" : "క్రింద నా eSignature ద్వారా, నేను ఈ క్రింది విధంగా గుర్తించాను:",
+      "note" : "Text for the eSignature acknowledgement title"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-one" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ చెక్ ప్రొవైడర్ లేదా \"CRA\", బ్యాక్‌గ్రౌండ్ చెక్ చేసేవారు ఫస్ట్ అడ్వాంటేజ్, 1 కాన్కోర్స్ పార్క్‌వే NE, సూట్ 200, అట్లాంటా, GA 30328లో ఉన్నారు మరియు (800) 845-6004 లేదా www.fadv.com వద్ద సంప్రదించవచ్చు.",
+      "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-one" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ చెక్ ప్రొవైడర్ లేదా \"CRA\", ఖచ్చితమైన బ్యాక్‌గ్రౌండ్ అని బ్యాక్‌గ్రౌండ్ చెక్ చేసేవారు, 7515 ఇర్విన్ సెంటర్ డాక్టర్, ఇర్విన్, CA 92618లో ఉన్నారు మరియు (800) 216-8024 లేదా www.accuratebackground.comలో సంప్రదించవచ్చు .\n\n* చట్టం ద్వారా అనుమతించబడినట్లుగా, Amazon నా తదుపరి అనుమతి లేకుండా, (1) నా ఉద్యోగ సమయంలో, ఏదైనా ఉంటే మరియు (2) ఖచ్చితమైన నేపథ్యం కాకుండా ఇతర CRAల నుండి ఉద్యోగ ప్రయోజనాల కోసం అదనపు నేపథ్య తనిఖీలను ఆర్డర్ చేయగలదని నేను అర్థం చేసుకున్నాను మరియు అంగీకరిస్తున్నాను.",
+      "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-two" : {
+      "value" : "చట్టం ద్వారా అనుమతించబడినట్లుగా, నా తదుపరి అనుమతి లేకుండా, (1) నా ఉద్యోగ సమయంలో, ఏదైనా ఉంటే మరియు (2) ఫస్ట్ అడ్వాంటేజ్ కాకుండా ఇతర CRAల నుండి ఉద్యోగ ప్రయోజనాల కోసం Amazon నా గురించి అదనపు నేపథ్య తనిఖీలను ఆర్డర్ చేయగలదని నేను అర్థం చేసుకున్నాను మరియు అంగీకరిస్తున్నాను.",
+      "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-two" : {
+      "value" : "చట్టం ద్వారా అనుమతించబడినట్లుగా, నా తదుపరి అనుమతి లేకుండా, (1) నా ఉద్యోగ సమయంలో, ఏదైనా ఉంటే మరియు (2) ఖచ్చితమైన నేపథ్యం కాకుండా ఇతర CRAల నుండి ఉద్యోగ ప్రయోజనాల కోసం Amazon నా గురించి అదనపు నేపథ్య తనిఖీలను ఆర్డర్ చేయగలదని నేను అర్థం చేసుకున్నాను మరియు అంగీకరిస్తున్నాను.",
+      "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+      "value" : "ఉపాధి ప్రయోజనాల కోసం మరియు నా సమాచార గోప్యతను రక్షించే అన్ని చట్టాలకు లోబడి, నేపథ్య తనిఖీ కోసం అవసరమైన ఏదైనా సమాచారాన్ని CRAలకు బహిర్గతం చేయడానికి నేను క్రింది వాటికి అధికారం ఇస్తున్నాను: నా గత లేదా ప్రస్తుత యజమానులు, పాఠశాలలు మరియు చట్టాన్ని అమలు చేసేవారు మరియు మోటారుతో సహా ఇతర ప్రభుత్వ సంస్థలు వాహన రికార్డు ఏజెన్సీలు.",
+      "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-three" : {
+      "value" : "ఉపాధి ప్రయోజనాల కోసం మరియు నా సమాచార గోప్యతను రక్షించే అన్ని చట్టాలకు లోబడి, నేపథ్య తనిఖీ కోసం అవసరమైన ఏదైనా సమాచారాన్ని CRAలకు బహిర్గతం చేయడానికి నేను క్రింది వాటికి అధికారం ఇస్తున్నాను: నా గత లేదా ప్రస్తుత యజమానులు, పాఠశాలలు మరియు చట్టాన్ని అమలు చేసేవారు మరియు మోటారుతో సహా ఇతర ప్రభుత్వ సంస్థలు వాహన రికార్డు ఏజెన్సీలు.",
+      "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-accurate-california-specific-notice" : {
+      "value" : "<p><b>కాలిఫోర్నియా: </b>మీరు ఇన్వెస్టిగేటివ్ కన్స్యూమర్ రిపోర్ట్ (\"కాలిఫోర్నియా డిస్‌క్లోజర్\")కి సంబంధించి ప్రత్యేక కాలిఫోర్నియా డిస్‌క్లోజర్‌ని అందుకుంటారు. ఇది ఒక ముఖ్యమైన పత్రం; దయచేసి దాన్ని జాగ్రత్తగా సమీక్షించండి. అలాగే, మీరు శాన్ ఫ్రాన్సిస్కోలోని కంపెనీలో ఉద్యోగం కోసం చూస్తున్నట్లయితే లేదా ఇప్పటికే ఉద్యోగం చేస్తున్నట్లయితే<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> క్లిక్ చేయండి. క్రింద సంతకం చేయడం ద్వారా, కాలిఫోర్నియా చట్టం మరియు కాలిఫోర్నియా డిస్‌క్లోజర్‌కు అనుగుణంగా, మీరు అమెజాన్‌తో ఏ సమయంలోనైనా ఏ సమయంలోనైనా బ్యాక్‌గ్రౌండ్ చెక్ అని కూడా పిలువబడే పరిశోధనాత్మక వినియోగదారు నివేదికను సేకరించేందుకు Amazonకి అధికారం ఇస్తున్నారు.</p>",
+      "note" : "Text for ACCURATE non fcra California specific notice "
+    },
+    "BB-non-fcra-fadv-california-specific-notice" : {
+      "value" : "<p><b>కాలిఫోర్నియా: </b>మీరు ఇన్వెస్టిగేటివ్ కన్స్యూమర్ రిపోర్ట్ (\"కాలిఫోర్నియా డిస్‌క్లోజర్\")కి సంబంధించి ప్రత్యేక కాలిఫోర్నియా డిస్‌క్లోజర్‌ని అందుకుంటారు. ఇది ఒక ముఖ్యమైన పత్రం; దయచేసి దాన్ని జాగ్రత్తగా సమీక్షించండి. అలాగే, మీరు శాన్ ఫ్రాన్సిస్కోలోని కంపెనీలో ఉద్యోగం కోసం చూస్తున్నట్లయితే లేదా ఇప్పటికే ఉద్యోగం చేస్తున్నట్లయితే<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> క్లిక్ చేయండి. క్రింద సంతకం చేయడం ద్వారా, కాలిఫోర్నియా చట్టం మరియు కాలిఫోర్నియా డిస్‌క్లోజర్‌కు అనుగుణంగా, మీరు అమెజాన్‌తో ఏ సమయంలోనైనా ఏ సమయంలోనైనా బ్యాక్‌గ్రౌండ్ చెక్ అని కూడా పిలువబడే పరిశోధనాత్మక వినియోగదారు నివేదికను సేకరించేందుకు Amazonకి అధికారం ఇస్తున్నారు.</p>",
+      "note" : "Text for FADV non fcra California specific notice "
+    },
+    "BB-non-fcra-accurate-minnesota-specific-notice" : {
+      "value" : "<p><b>మిన్నెసోటా: </b>మీ గురించి ఆర్డర్ చేయబడిన ఏదైనా వినియోగదారు నివేదిక యొక్క స్వభావం మరియు పరిధిని పూర్తి మరియు ఖచ్చితమైన బహిర్గతం కోసం CRAకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. CRA మీ అభ్యర్థనను స్వీకరించిన తర్వాత లేదా నివేదికను ఆర్డర్ చేసినప్పుడు, ఏ తేదీ తర్వాత అయినా ఐదు పనిదినాలలోపు మీకు డిస్‌క్లోజర్ అందించాలి.</p>",
+      "note" : "Text for ACCURATE non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-fadv-minnesota-specific-notice" : {
+      "value" : "<p><b>మిన్నెసోటా: </b>మీ గురించి ఆర్డర్ చేయబడిన ఏదైనా వినియోగదారు నివేదిక యొక్క స్వభావం మరియు పరిధిని పూర్తి మరియు ఖచ్చితమైన బహిర్గతం కోసం CRAకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. CRA మీ అభ్యర్థనను స్వీకరించిన తర్వాత లేదా నివేదికను ఆర్డర్ చేసినప్పుడు, ఏ తేదీ తర్వాత అయినా ఐదు పనిదినాలలోపు మీకు డిస్‌క్లోజర్ అందించాలి.</p>",
+      "note" : "Text for FADV non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-accurate-newyork-specific-notice" : {
+      "value" : "<p><b>న్యూ యార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ఇక్కడ </a> క్లిక్ చేయండి.</p>",
+      "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>న్యూ యార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\"> ఇక్కడ</a> క్లిక్ చేయండి.</p>.",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>వాషింగ్టన్: </b> వాషింగ్టన్ ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ కింద మీ హక్కులకు సంబంధించిన వ్రాతపూర్వక సారాంశాన్ని వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి అభ్యర్థించడానికి మీకు హక్కు ఉంది.</p>.",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>వాషింగ్టన్: </b> వాషింగ్టన్ ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ కింద మీ హక్కులకు సంబంధించిన వ్రాతపూర్వక సారాంశాన్ని వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి అభ్యర్థించడానికి మీకు హక్కు ఉంది.</p>.",
+      "note" : "Text for FADV non fcra Washington specific notice "
+    },
+    "BB-non-fcra-accurate-allstate-specific-notice" : {
+      "value" : "<p><b>అన్ని రాష్ట్రాలు: </b> మీరు ఈ బాక్స్‌ను చెక్ చేస్తే ఏదైనా బ్యాక్‌గ్రౌండ్ చెక్ యొక్క ఉచిత కాపీని మేము మీకు అందిస్తాము",
+      "note" : "Text for ACCURATE non fcra all state specific notice "
+    },
+    "BB-non-fcra-fadv-allstate-specific-notice" : {
+      "value" : "<p><b>అన్ని రాష్ట్రాలు: </b> మీరు ఈ బాక్స్‌ను చెక్ చేస్తే ఏదైనా బ్యాక్‌గ్రౌండ్ చెక్ యొక్క ఉచిత కాపీని మేము మీకు అందిస్తాము</p>",
+      "note" : "Text for FADV non fcra all state specific notice "
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
+      "value" : "దయచేసి మునుపు ఉపయోగించిన చట్టపరమైన పూర్తి పేరును క్రింది ఫార్మాట్‌లో నమోదు చేయండి: మొదటిది చివరిది",
+      "note" : "Text for the previous used legal name input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
+      "value" : "మునుపటి చట్టపరమైన పూర్తి పేరు",
+      "note" : "Text for the previous used legal name input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
+      "value" : "దయచేసి మునుపు ఉపయోగించిన చట్టపరమైన పూర్తి పేరును క్రింది ఫార్మాట్‌లో నమోదు చేయండి: మొదటిది చివరిది",
+      "note" : "Text for the previous used legal name 1 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
+      "value" : "మునుపటి చట్టపరమైన పూర్తి పేరు (1)",
+      "note" : "Text for the previous used legal name 1 input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
+      "value" : "దయచేసి మునుపు ఉపయోగించిన చట్టపరమైన పూర్తి పేరును క్రింది ఫార్మాట్‌లో నమోదు చేయండి: మొదటిది చివరిది",
+      "note" : "Text for the previous used legal name 2 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
+      "value" : "మునుపటి చట్టపరమైన పూర్తి పేరు (2)",
+      "note" : "Text for the previous used legal name 2 input label text"
+    },
+    "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
+      "value" : "మరిన్ని మునుపటి పేర్లను జోడించండి/చూపండి",
+      "note" : "Text for the button to show more previous legal names button text"
+    },
+    "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
+      "value" : "మీరు ఇంతకు ముందు Amazon భవనంలో పని చేశారా?",
+      "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
+    },
+    "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "అవును",
+      "note" : "Text for the accept previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "లేదు",
+      "note" : "Text for the decline previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
+      "value" : "ఏ సమాచారాన్ని చేర్చాలి",
+      "note" : "Text for the for the form title about what to include in previous Amazon experience"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
+      "value" : "దయచేసి మీరు ఇంతకు ముందు పనిచేసిన Amazon భవనాన్ని గుర్తించండి",
+      "note" : "Text for the most recent Amazon building input label text"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే Amazon బిల్డింగ్‌ను నమోదు చేయండి",
+      "note" : "Text for the most recent Amazon building input error text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
+      "value" : "ఉద్యోగ తేదీలు - నుండి/వరకు (MM/YY - MM/YY)",
+      "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
+      "value" : "దయచేసి చెల్లుబాటు అయ్యే Amazon బిల్డింగ్‌ను నమోదు చేయండి",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
+    "BB-BGC-no-ssn-checkbox-label" : {
+      "value" : "నాకు సోషల్ సెక్యూరిటీ నంబర్ లేదు",
+      "note" : "Label for the no ssn checkbox"
+    },
+    "BB-BGC-no-ssn-modal-title" : {
+      "value" : "మీరు ఖచ్చితంగా సోషల్ సెక్యూరిటీ నంబర్ (SSN) లేకుండానే కొనసాగించాలనుకుంటున్నారా?",
+      "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "మీకు SSN ఉంటే, మీరు దాన్ని అందించాలి. అలా చేయడంలో విఫలమైతే నియామక ప్రక్రియలో జాప్యం జరగవచ్చు, దీని వలన మీ ప్రారంభ తేదీని కోల్పోవచ్చు మరియు మీరు ఎంచుకున్న షిఫ్ట్‌ను కోల్పోవచ్చు.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "కొనసాగించడం ద్వారా, నాకు SSN లేదని నేను ధృవీకరిస్తున్నాను.  నేను ఆన్‌బోర్డింగ్ ప్రక్రియలో లేదా నా ఉద్యోగ సమయంలో నా SSNని మార్చినా లేదా అప్‌డేట్ చేసినా, చట్టం ద్వారా అనుమతించబడినట్లుగా, Amazon నా గురించి ఫాలో-అప్ బ్యాక్‌గ్రౌండ్ చెక్ నిర్వహిస్తుందని నేను అర్థం చేసుకున్నాను.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-second-paragraph" : {
+      "value" : "నా SSN గురించి ఏదైనా ఉద్దేశపూర్వకంగా తప్పుగా సూచించడం Amazon ద్వారా పరిగణించబడుతుందని మరియు నా ఉపాధి ఆఫర్‌ను ఉపసంహరించుకోవచ్చు లేదా నన్ను నియమించినట్లయితే, నా ఉద్యోగాన్ని రద్దు చేయవచ్చు అని నేను అంగీకరిస్తున్నాను.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-consent-checkbox" : {
+      "value" : "నేను పైన పేర్కొన్న నిబంధనలను చదివాను మరియు అర్థం చేసుకున్నాను.",
+      "note" : "consent checkbox in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-continue-button" : {
+      "value" : "కొనసాగించండి",
+      "note" : "continue button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-cancel-button" : {
+      "value" : "రద్దు చేయండి",
+      "note" : "cancel button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
+      "value" : "సోషల్ సెక్యూరిటీ నంబర్ అందుబాటులో లేదు",
+      "note" : "Text display on national id number input when user check no ssn checkbox"
+    },
+    "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
+      "value" : "eSignatureని అందించండి",
+      "note" : "Text for the fcra form heading text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
+      "value" : "రాష్ట్ర నిర్దిష్ట నోటీసులు",
+      "note" : "Text for the non fcra State specific notices title text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
+      "value" : "దయచేసి దిగువ వర్తించే నోటీసు(ల)ను సమీక్షించండి.",
+      "note" : "Text for the non fcra State specific notices review text"
+    },
+    "BB-BGC-non-fcra-esignature-certification-form-title" : {
+      "value" : "eSignature",
+      "note" : "Text for the non fcra e-signature certification title"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
+      "value" : "దిగువ నా సంతకం ద్వారా, నేను ఈ నాన్-ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్‌లోని అన్ని స్టేట్‌మెంట్‌లను చదివానని, అర్థం చేసుకున్నానని మరియు ఆమోదించానని ధృవీకరిస్తున్నాను మరియు నేపథ్య తనిఖీ కోసం ఆథరైజేషన్. దయచేసి దిగువ ఫీల్డ్‌లలో అభ్యర్థించిన సమాచారాన్ని నమోదు చేయడం ద్వారా మీ అంగీకారాన్ని సూచించండి.",
+      "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
+      "value" : "దయచేసి మీ పూర్తి పేరును eSignatureగా టైప్ చేయండి",
+      "note" : "Text for the non fcra acknowledgement and authorization input label text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
+      "value" : "eSignatures సరిపోలడం లేదు. దయచేసి ప్రతి eSignature కోసం ఒకే వచనాన్ని ఉపయోగించండి.",
+      "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-non-fcra-form-page-next-button-text" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the non fcra form page next button text"
+    },
+    "BB-BGC-non-fcra-applicable-notice-text" : {
+      "value" : "దిగువన ఉన్న నా eSignature ద్వారా, నేను హైపర్‌లింక్‌లతో సహా ఏవైనా వర్తించే రాష్ట్ర నోటీసులను చదివి అర్థం చేసుకున్నానని ధృవీకరిస్తున్నాను.",
+      "note" : "Text for the non fcra for the applicable notice"
+    },
+    "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
+      "value" : "దయచేసి మీ పూర్తి పేరును eSignatureగా టైప్ చేయండి",
+      "note" : "Text for the non fcra for the applicable notice signature input label text"
+    },
+    "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
+      "value" : "నా నేపథ్య చెక్ యొక్క ఉచిత కాపీని నేను కోరుకుంటున్నాను",
+      "note" : "Text for the non fcra for request copy of bgc radio label text"
+    },
+    "BB-already-applied" : {
+      "value" : "మీరు ఇప్పటికే ఈ ఉద్యోగం కోసం దరఖాస్తును ప్రారంభించారు మరియు / లేదా పూర్తి చేసారు.",
+      "note" : "Text for aleady applied job text"
+    },
+    "BB-already-applied-description" : {
+      "value" : "డ్యాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి మీ దరఖాస్తును పునఃప్రారంభించండి లేదా అప్లికేషన్ మరియు కొత్త నియామకం వివరాలను మరియు మీ తదుపరి దశలను వీక్షించండి.",
+      "note" : "Text for aleady applied job description text"
+    },
+    "BB-already-applied-button-text" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "Text for aleady applied job return to dashboard button text"
+    },
+    "BB-SelfId-disability-form-name-text" : {
+      "value" : "ఫారమ్ CC-305",
+      "note" : "Text for Self Identification form name"
+    },
+    "BB-SelfId-disability-form-control-number-text" : {
+      "value" : "OMB కంట్రోల్ నంబర్ 1250-0005",
+      "note" : "Text for Self Identification control number"
+    },
+    "BB-SelfId-disability-form-expiration-date-text" : {
+      "value" : "05/31/2023న గడువు ముగుస్తుంది",
+      "note" : "Text for Self Identification expiration date"
+    },
+    "BB-SelfId-disability-form-why-this-form-header-text" : {
+      "value" : "ఈ ఫారమ్‌ను ఎందుకు పూర్తి చేయమని మిమ్మల్ని అడిగారు?",
+      "note" : "Text for why asked this form header text"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
+      "value" : "మేము ఒక ఫెడరల్ కాంట్రాక్టర్ లేదా సబ్ కాంట్రాక్టర్ వికలాంగులకు అర్హత కలిగిన వ్యక్తులకు సమాన ఉపాధి అవకాశాలను అందించడానికి చట్టం ప్రకారం అవసరం. మా వర్క్‌ఫోర్స్‌లో కనీసం 7% మంది వైకల్యాలున్న వ్యక్తులుగా ఉండేలా మేము మా పురోగతిని కూడా కొలవాలి. దీన్ని చేయడానికి, దరఖాస్తుదారులు మరియు ఉద్యోగులకు వైకల్యం ఉందా లేదా ఎప్పుడైనా వైకల్యం ఉందా అని మేము తప్పక అడగాలి. ఒక వ్యక్తి ఎప్పుడైనా డిసేబుల్ కావచ్చు కాబట్టి, కనీసం ప్రతి ఐదు సంవత్సరాలకు ఒకసారి వారి సమాచారాన్ని అప్‌డేట్ చేయమని మా ఉద్యోగులందరినీ మేము కోరతాము.",
+      "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
+      "value" : "వైకల్యం ఉన్న వ్యక్తిగా మిమ్మల్ని మీరు గుర్తించడం స్వచ్ఛందంగా ఉంటుంది మరియు మీరు దీన్ని ఎంచుకుంటారని మేము ఆశిస్తున్నాము. మీ సమాధానం గోప్యంగా నిర్వహించబడుతుంది మరియు ఎంపిక చేసిన అధికారులు లేదా సిబ్బంది నిర్ణయాలు తీసుకోవడంలో ప్రమేయం ఉన్న ఎవరైనా చూడలేరు. ఫారమ్‌ను పూర్తి చేయడం వలన మీరు గతంలో స్వీయ-గుర్తింపు పొందినా, ఏ విధంగానూ ప్రతికూల ప్రభావం చూపదు. పునరావాస చట్టంలోని సెక్షన్ 503 ప్రకారం ఈ ఫారమ్ లేదా ఫెడరల్ కాంట్రాక్టర్‌ల సమాన ఉపాధి బాధ్యతల గురించి మరింత సమాచారం కోసం, U.S. సందర్శించండి. <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a> వద్ద ఫెడరల్ కాంట్రాక్ట్ కంప్లయన్స్ ప్రోగ్రామ్స్ (OFCCP) వెబ్‌సైట్ యొక్క కార్మిక శాఖ కార్యాలయం.",
+      "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
+      "value" : "నాకు అంగవైకల్యం ఉంటే ఎలా తెలుస్తుంది?",
+      "note" : "Text for how I know I have disability header"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
+      "value" : "మీకు శారీరక లేదా మానసిక వైకల్యం ఉన్నా లేదా రోజువారీ కార్యకలాపాల్లో భాగంగా చేయాల్సిన పనులు చేయలేని వైద్య పరిస్థితి ఉన్నా లేదా అలాంటి వైకల్యం లేదా వైద్య పరిస్థితి వంశపారంపర్యంగా వస్తున్నా లేదా అలాంటి రికార్డ్ ఉన్నా, మీకు వైకల్యం ఉన్నట్లు పరిగణించడం జరుగుతుంది.",
+      "note" : "Text for how I know I have disability content"
+    },
+    "BB-SelfId-disability-form-disability-scope-list-header-text" : {
+      "value" : "వైకల్యతలలో క్రింద పేర్కొన్న వాటితో పాటుగా మరెన్నో ఉంటాయి:",
+      "note" : "Text for the disability scope/type list header text"
+    },
+    "BB-SelfId-disability-form-disability-item-autism-text" : {
+      "value" : "ఆటిజం",
+      "note" : "Text for the disability item: autism"
+    },
+    "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
+      "value" : "ఆటో ఇమ్యూన్ డిజార్డర్",
+      "note" : "Text for the disability item: Autoimmune disorder"
+    },
+    "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
+      "value" : "బ్లైండ్ లేదా తక్కువ దృష్టి",
+      "note" : "Text the disability item: Blind or low vision"
+    },
+    "BB-SelfId-disability-form-disability-item-cancer-text" : {
+      "value" : "క్యాన్సర్",
+      "note" : "Text for the disability item: Cancer text"
+    },
+    "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
+      "value" : "హృదయ లేదా గుండె జబ్బులు",
+      "note" : "Text for the disability item: Cardiovascular or heart disease"
+    },
+    "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
+      "value" : "సెలియక్ వ్యాధి",
+      "note" : "Text for the disability item: Celiac disease"
+    },
+    "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
+      "value" : "సెరెబ్రల్ పాల్సీ",
+      "note" : "Text for the disability item: Cerebral palsy"
+    },
+    "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
+      "value" : "చెవిటి లేదా వినికిడి కష్టం",
+      "note" : "Text for the disability item: Deaf or hard of hearing"
+    },
+    "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
+      "value" : "డిప్రెషన్ లేదా ఆందోళన",
+      "note" : "Text for the disability item: Depression or anxiety"
+    },
+    "BB-SelfId-disability-form-disability-item-diabetes-text" : {
+      "value" : "డయాబెటిస్",
+      "note" : "Text for the disability item: Diabetes"
+    },
+    "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
+      "value" : "మూర్ఛ వ్యాధి",
+      "note" : "Text for the disability item: Epilepsy"
+    },
+    "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
+      "value" : "జీర్ణశయాంతర రుగ్మతలు, ఉదాహరణకు, క్రోన్'స్ వ్యాధి లేదా ప్రకోప ప్రేగు సిండ్రోమ్",
+      "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
+    },
+    "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
+      "value" : "మేధో వైకల్యం",
+      "note" : "Text for the disability item: Intellectual disability"
+    },
+    "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
+      "value" : "మిస్ అయిన భాగాలు లేదా పాక్షికంగా మిస్ అయిన భాగాలు",
+      "note" : "Text for the disability item:Missing limbs or partially missing limbs"
+    },
+    "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
+      "value" : "ఉదాహరణకు నాడీ వ్యవస్థ పరిస్థితి, పార్కిన్సన్స్ వ్యాధి, లేదా మల్టిపుల్ స్క్లెరోసిస్ (MS)",
+      "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
+    },
+    "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
+      "value" : "మానసిక స్థితి, ఉదాహరణకు, బైపోలార్ డిజార్డర్, స్కిజోఫ్రెనియా, PTSD లేదా మేజర్ డిప్రెషన్",
+      "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+    },
+    "BB-SelfId-disability-form-card-title-text" : {
+      "value" : "వైకల్యం గురించి స్వచ్ఛందంగా స్వీయ గుర్తింపు",
+      "note" : "Text for the disability form card title"
+    },
+    "BB-SelfId-form-continue-button-text" : {
+      "value" : "కొనసాగించండి",
+      "note" : "Text for the Self Identification page form continue button text"
+    },
+    "BB-SelfId-disability-form-submit-button-text" : {
+      "value" : "సమర్పించండి",
+      "note" : "Text for the submit disability form submit button text"
+    },
+    "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
+      "value" : "దయచేసి కింది బాక్స్‌లలో ఒక దానిని ఎంచుకోండి",
+      "note" : "Text for the disability selection checkbox label text"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
+      "value" : "అవును, నాకు వైకల్యం ఉంది, లేదా వైకల్యం కలిగి ఉన్న చరిత్ర/రికార్డ్ ఉంది",
+      "note" : "Text for the disability selection checkbox item: YES"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
+      "value" : "లేదు, నాకు వైకల్యం లేదు, లేదా వైకల్యాన్ని కలిగి ఉన్న చరిత్ర/రికార్డ్ లేదు",
+      "note" : "Text for the disability selection checkbox item: NO"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
+      "value" : "నేను సమాధానం చెప్పదలుచుకోలేదు",
+      "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-header-text" : {
+      "value" : "ప్రజా భారం ప్రకటన",
+      "note" : "Text for the disability form Public burden statement header text"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-content-text" : {
+      "value" : "పేపర్‌వర్క్ తగ్గింపు చట్టం 1995 ప్రకారం, అటువంటి సేకరణ చెల్లుబాటు అయ్యే OMB నియంత్రణ సంఖ్యను ప్రదర్శిస్తే తప్ప, సమాచార సేకరణకు ప్రతిస్పందించాల్సిన అవసరం లేదు. ఈ సర్వే పూర్తి కావడానికి దాదాపు 5 నిమిషాలు పడుతుంది.",
+      "note" : "Text for the disability form Public burden statement content text"
+    },
+    "BB-SelfId-equal-opportunity-form-title-text" : {
+      "value" : "వాలెంటరీ ఈక్వల్ ఆపర్చునిటీ సెల్ఫ్-ఐడెంటిఫికేషన్ ఫారమ్",
+      "note" : "Text for the equal opportunity form title"
+    },
+    "BB-SelfId-equal-opportunity-form-statement-text" : {
+      "value" : "Amazon అన్ని రకాల భిన్నత్వానికి విలువనిస్తుంది, అలాగే రికార్డుల నిర్వహణ మరియు రిపోర్టింగ్ ప్రయోజనాల కోసం నిర్దిష్ట వివక్షారహితమైన మరియు ఖచ్చితమైన చర్యకు లోబడి ఉంటుంది, ఇందుకోసం మేము అభ్యర్థులు, ఉద్యోగులను తమ లింగం, జాతి/జాతి మూలం వివరాలను స్వచ్ఛందంగా తెలియజేయాల్సిందిగా కోరుతూ ఆహ్వానిస్తాము. ఈ సమాచారాన్ని సమర్పించడం పూర్తిగా స్వచ్ఛందం. దీనిని అందించడానికి నిరాకరిస్తే, మీపై ఎలాంటి క్రమశిక్షణ ఉల్లంఘన చర్య తీసుకోబడదు. ఈ విధంగా అందుకునే సమాచారం గోప్యంగా ఉంచుతాము. దీనిని కేవలం సంబంధిత సమాఖ్య చట్టాలు, కార్యనిర్వాహక ఉత్తర్వులు, ఆంక్షలతో సహా పౌర హక్కులు అమలు ప్రయోజనాల కోసం సమాచారం సారాంశం రూపంలో సంగ్రహించి, సమాఖ్య ప్రభుత్వానికి రిపోర్ట్ చేయడానికి మాత్రమే ఉపయోగించవచ్చు. ప్రస్తుతం మీ లింగం లేదా జాతి/జాతి మూలాన్ని స్వచ్ఛందంగా చెప్పకూడదనుకుంటే, విజువల్ సర్వే ద్వారా ఉద్యోగులకు సంబంధించిన ఈ సమాచారం మరియు / లేదా అందుబాటులో ఉన్న ఇతర సమాచారాన్ని మేము కనుగొనాలని సమాఖ్య ప్రభుత్వం కోరుతోంది.",
+      "note" : "Text for the equal opportunity form statement text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-label-text" : {
+      "value" : "మీ జెండర్ ఏమిటి?",
+      "note" : "Text for the equal opportunity form : gender label text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-male-text" : {
+      "value" : "పురుషులు",
+      "note" : "Text for the equal opportunity form gender option: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-female-text" : {
+      "value" : "మహిళ",
+      "note" : "Text for the equal opportunity form gender option: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
+      "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
+      "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
+      "value" : "మీ జాతి/జాతీయ నేపథ్యం ఏమిటి?",
+      "note" : "Text for the equal opportunity form : ethnicity label text"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
+      "value" : "అమెరికన్ ఇండియన్/అలాస్కా స్థానికుడు (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
+      "value" : "ఉత్తర మరియు దక్షిణ అమెరికాలోని అసలు ప్రజలలో (మధ్య అమెరికాతో సహా) మూలాలను కలిగి ఉన్న వ్యక్తులు మరియు గిరిజన అనుబంధం లేదా కమ్యూనిటీ అనుబంధాన్ని కొనసాగించేవారు",
+      "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
+      "value" : "ఏషియన్ (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
+      "value" : "ఫార్ ఈస్ట్, ఆగ్నేయాసియా లేదా భారత ఉపఖండంలోని ఏదైనా అసలు ప్రజలలో మూలాలను కలిగి ఉన్న వ్యక్తులు; ఉదాహరణకు, కంబోడియా, చైనా, ఇండియా, జపాన్, కొరియా, మలేషియా, పాకిస్థాన్, ఫిలిప్పీన్స్ దీవులు, థాయిలాండ్ మరియు వియత్నాం",
+      "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
+      "value" : "బ్లాక్/ఆఫ్రికన్ అమెరికన్ (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
+      "value" : "ఆఫ్రికాలోని ఏదైనా నల్లజాతి జాతి సమూహాలలో మూలాలను కలిగి ఉన్న వ్యక్తులు",
+      "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
+      "value" : "హిస్పానిక్/లాటినో",
+      "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
+      "value" : "జాతితో సంబంధం లేకుండా క్యూబన్, మెక్సికన్, ప్యూర్టో రికన్, సౌత్ లేదా సెంట్రల్ అమెరికన్, లేదా ఇతర స్పానిష్ సంస్కృతి లేదా మూలానికి చెందిన వ్యక్తులు",
+      "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
+      "value" : "స్థానిక హవాయి దేశం వ్యక్తి/ఇతర పసిఫిక్ ప్రాంతం వ్యక్తి (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
+      "value" : "హవాయి, గ్వామ్, సమోవా లేదా ఇతర పసిఫిక్ దీవులలోని ప్రజలలో ఏదైనా మూలాన్ని కలిగి ఉన్న వ్యక్తులు",
+      "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
+      "value" : "తెలుపు (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
+      "value" : "యూరప్, మిడిల్ ఈస్ట్ లేదా నార్త్ ఆఫ్రికాలోని అసలు ప్రజలలో దేనినైనా మూలాలు కలిగి ఉన్న వ్యక్తులు",
+      "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
+      "value" : "రెండు లేదా అంతకంటే ఎక్కువ జాతులు (హిస్పానిక్ లేదా లాటినో కాదు)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
+      "value" : "కింది ఐదు జాతులలో ఒకటి కంటే ఎక్కువ మందిని గుర్తించే నాన్-హిస్పానిక్ వ్యక్తులు: (1) తెలుపు, (2) నలుపు, (3) ఆసియా, (4) స్థానిక హవాయి/ ఇతర పసిఫిక్ ద్వీప వాసులు, (5) అమెరికన్ ఇండియన్/అలాస్కా స్థానికులు",
+      "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
+      "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
+      "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the equal opportunity form ethinicity next button"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
+      "value" : "Amazonలో, వేలమంది మాజీ సైనికులు, మిలిటరీ వ్యక్తుల జీవిత భాగస్వాములు వినూత్న రీతిలో మార్గదర్శకం చూపుతూ, కస్టమర్ పొందే అనుభవం స్థాయిని పెంచుతున్నారు. రోజువారీ ప్రాతిపదికన, సైనిక నేపథ్యం ఉన్నవారు తమ విజ్ఞానం, నైపుణ్యాలు మరియు నాయకత్వ సామర్థ్యాలను అనేక రకాల కెరీర్‌లలో వర్తింపజేయగలరు - ప్రపంచవ్యాప్తంగా మార్పును ప్రభావితం చేస్తారు. ఈ కారణాల వలన, మాజీ సైనికులు, మిలిటరీ వ్యక్తుల జీవిత భాగస్వాములను మేము ప్రధానంగా నియామకం చేసుకుంటున్నాము.",
+      "note" : "Text for the veteran status statement paragraph 1 text"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
+      "value" : "Amazonలో, వేలమంది మాజీ సైనికులు, మిలిటరీ వ్యక్తుల జీవిత భాగస్వాములు వినూత్న రీతిలో మార్గదర్శకం చూపుతూ, కస్టమర్ పొందే అనుభవం స్థాయిని పెంచుతున్నారు. రోజువారీ ప్రాతిపదికన, సైనిక నేపథ్యం ఉన్నవారు తమ విజ్ఞానం, నైపుణ్యాలు మరియు నాయకత్వ సామర్థ్యాలను అనేక రకాల కెరీర్‌లలో వర్తింపజేయగలరు - ప్రపంచవ్యాప్తంగా మార్పును ప్రభావితం చేస్తారు. ఈ కారణాల వలన, మాజీ సైనికులు, మిలిటరీ వ్యక్తుల జీవిత భాగస్వాములను మేము ప్రధానంగా నియామకం చేసుకుంటున్నాము.",
+      "note" : "Text for the veteran status statement  paragraph 2 text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
+      "value" : "మీరు మాజీ సైనికులా?",
+      "note" : "Text for the equal opportunity form : veteran status label text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
+      "value" : "అవును",
+      "note" : "Text for the equal opportunity form veteran status item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
+      "value" : "లేదు",
+      "note" : "Text for the equal opportunity form veteran status item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
+      "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
+      "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
+      "value" : "మీరు సైనికుని జీవిత భాగస్వామా?",
+      "note" : "Text for the equal opportunity form : military spouse label text"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
+      "value" : "అవును",
+      "note" : "Text for the equal opportunity form military-spouse item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
+      "value" : "లేదు",
+      "note" : "Text for the equal opportunity form military-spouse item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
+      "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
+      "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
+      "value" : "Amazon అనేది వియత్నాం ఎరా వెటరన్స్ రీజస్ట్‌మెంట్ అసిస్టెన్స్ యాక్ట్ 1974కి లోబడి, 2002 యొక్క జాబ్స్ ఫర్ వెటరన్స్ యాక్ట్,<a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212</a> (VEVRAA) ద్వారా సవరించబడిన ఒక ఫెడరల్ ప్రభుత్వ కాంట్రాక్టర్, దీని ప్రకారం ప్రభుత్వ కాంట్రాక్టర్‌లు, (1) వికలాంగ మాజీ సైనికులు; (2) ఇటీవల విడిపోయినమాజీ సైనికులు; (3) యాక్టివ్ డ్యూటీ యుద్ధ సమయంలో లేదా ప్రచార బ్యాడ్జ్ మాజీ సైనికులు; మరియు (4) సాయుధ దళాల సేవా పతక మాజీ సైనికులకు ఉద్యోగాలు కల్పించడానికి మరియు ముందుకు సాగడానికి నిశ్చయాత్మక చర్య తీసుకోవాలి. మీ రక్షిత మాజీ సైనికుల స్థితిని స్వీయ-గుర్తింపు కోసం క్రింది ఆహ్వానం సెక్షన్ 4212 ప్రకారం చేయబడింది. ఈ సమాచారాన్ని బహిర్గతం చేయడం పూర్తిగా స్వచ్ఛందమైనది మరియు దానిని అందించడానికి నిరాకరించడం వలన మీరు ఎటువంటి ప్రతికూల చికిత్సకు లోబడి ఉండరు.",
+      "note" : "Text for the equal opportunity form protected veteran statement"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
+      "value" : "<b>రక్షిత మాజీ సైనికుడు</b> ఈ క్రింది వాటిలో ఏదైనా:",
+      "note" : "Text for the title of protected veteran meaning list"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
+      "value" : "<b>డిసేబుల్డ్ వెటరన్ </b>: వెటరన్స్ అఫైర్స్ సెక్రటరీచే నిర్వహించబడే చట్టాల ప్రకారం పరిహారానికి (లేదా మిలిటరీ రిటైర్డ్ పే రసీదు కోసం కానీ పరిహారం పొందే అర్హత ఉన్న) U.S. మిలిటరీ, గ్రౌండ్, నావల్ లేదా ఎయిర్ సర్వీస్‌కు చెందిన అనుభవజ్ఞుడు; లేదా సేవతో అనుసంధానించబడిన వైకల్యం కారణంగా యాక్టివ్ డ్యూటీ నుండి విడుదల చేయబడిన లేదా విడుదల చేయబడిన వ్యక్తి.",
+      "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
+      "value" : "</b>: U.S. మిలిటరీ, గ్రౌండ్, నేవల్ లేదా వైమానిక సేవలో యాక్టివ్ డ్యూటీ నుండి అటువంటి మాజీ సైనికుని డిశ్చార్జ్ లేదా విడుదల తేదీ నుండి మూడు సంవత్సరాల వ్యవధిలో ఏదైనా అనుభవజ్ఞుడు.",
+      "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
+      "value" : "<b> యాక్టివ్ డ్యూటీ వార్‌టైమ్ లేదా క్యాంపెయిన్ బ్యాడ్జ్ వెటరన్</b>: యుఎస్ బ్యాడ్జ్‌లో యాక్టివ్ డ్యూటీలో పనిచేసిన మాజీ సైనికుడు డిపార్ట్‌మెంట్ ఆఫ్ డిఫెన్స్ ద్వారా నిర్వహించబడే చట్టాల ప్రకారం అధికారం పొందారు.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
+      "value" : "<b> ఆర్మ్‌డ్ ఫోర్సెస్ సర్వీస్ మెడల్ వెటరన్ </b>: యుఎస్ మిలిటరీ, గ్రౌండ్, నేవల్ లేదా ఎయిర్ సర్వీస్‌లో యాక్టివ్ డ్యూటీలో పనిచేస్తున్నప్పుడు, <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'> ఎగ్జిక్యూటివ్ ఆర్డర్ </a> ప్రకారం సాయుధ దళాల సేవా పతకం లభించిన యునైటెడ్ స్టేట్స్ మిలిటరీ ఆపరేషన్‌లో పాల్గొన్న మాజీ సైనికులు.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
+      "value" : "మీరు రక్షిత మాజీ సైనికుల వర్గాలలో దేనికైనా చెందినవారని మీరు విశ్వసిస్తే, దయచేసి దిగువ తగిన బాక్స్‌ను ఎంచుకోవడం ద్వారా సూచించండి.",
+      "note" : "Text for the protected veteran select form label text"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
+      "value" : "అవును",
+      "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
+      "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
+      "note" : "Text for the protected veteran select form option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the protected veteran select form next button text"
+    },
+    "BB-cali-disclosure-page-title-text" : {
+      "value" : "పరిశోధనాత్మక వినియోగదారు నివేదికలకు సంబంధించి కాలిఫోర్నియా డిస్‌క్లోజర్",
+      "note" : "Text for the california disclosure page title text"
+    },
+    "BB-cali-disclosure-page-in-connection-text" : {
+      "value" : "నా సాధ్యమయ్యే ఉపాధికి సంబంధించి Amazon.com, Inc. లేదా దాని అనుబంధ సంస్థలు లేదా అనుబంధ సంస్థలతో (\"Amazon\"), Amazon కింది వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి నా గురించి బ్యాక్‌గ్రౌండ్ చెక్ అని కూడా పిలువబడే పరిశోధనాత్మక వినియోగదారు నివేదికను (\"రిపోర్ట్\") సేకరించవచ్చు:",
+      "note" : "Text for the california disclosure page in connection paragraph text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-name-text" : {
+      "value" : "ఖచ్చితమైన నేపథ్యం, LLC (“ఖచ్చితమైన”)",
+      "note" : "Text for the california disclosure page vendor accurate name text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
+      "value" : "7515 Irvine Center Dr.",
+      "note" : "Text for the california disclosure page vendor accurate address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
+      "value" : "ఇర్విన్, CA 92618",
+      "note" : "Text for the california disclosure page vendor accurate address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
+      "value" : "1-800-216-8024",
+      "note" : "Text for the california disclosure page vendor accurate phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-url-text" : {
+      "value" : "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>",
+      "note" : "Text for the california disclosure page vendor accurate home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
+      "value" : "నేను అర్థం చేసుకున్నాను:",
+      "note" : "Text for the california disclosure page vendor accurate understand text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
+      "value" : "ఖచ్చితమైన నుండి నివేదిక అభ్యర్థించినంత వరకు, అటువంటి నివేదికలో ఉన్న సమాచారం ఉద్యోగానికి నా అర్హతను నిర్ణయించడానికి మాత్రమే ఉపయోగించబడుతుంది.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
+      "value" : "చట్టబద్ధంగా అందుబాటులో ఉన్న పత్రాలు మరియు సమాచారం మరియు/లేదా ప్రత్యక్ష లేదా పరోక్ష పరిచయం మరియు మాజీ యజమానులు, పాఠశాలలు, ఆర్థిక సంస్థలు, భూస్వాములు, పబ్లిక్ ఏజెన్సీలతో ఇంటర్వ్యూలతో సహా, ఖచ్చితమైన మరియు ఏదైనా నివేదికలో చేర్చబడిన సమాచారాన్ని వివిధ మార్గాల ద్వారా పొందవచ్చు. , మరియు నాకు పరిచయం ఉన్న నా పొరుగువారు, స్నేహితులు మరియు సహచరులు మరియు అలాంటి జ్ఞానం ఉన్నవారు వంటి ఇతరులు.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
+      "value" : "ఖచ్చితత్వం ద్వారా నిర్వహించబడే పరిశోధన(లు) అమెజాన్‌కు అందించబడిన ఏదైనా నివేదికలో చేర్చబడి ఉండవచ్చు, నా పాత్ర, సాధారణ కీర్తి, వ్యక్తిగత లక్షణాలు లేదా జీవన విధానం, ఉపాధి మరియు పని చరిత్రకు సంబంధించి నా గురించి వివిధ రకాల సమాచారాన్ని కలిగి ఉండవచ్చు. , విద్య, డ్రైవింగ్ రికార్డ్ మరియు క్రిమినల్ రికార్డ్, వర్తించే ఫెడరల్ మరియు రాష్ట్ర చట్టం ద్వారా విధించబడిన ఏవైనా పరిమితులకు లోబడి ఉంటుంది.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
+      "value" : "కాలిఫోర్నియా సివిల్ కోడ్ § 1785 et seq. మరియు § 1786 et seq., Amazon నాపై ఏదైనా నివేదికను అభ్యర్థించినట్లయితే, నేను దాని సాధారణ కార్యాలయ వేళల్లో నాపై కచ్చితమైన నిర్వహించే ఫైల్‌ను వీక్షించవచ్చు. నేను కూడా (1) ఈ ఫైల్ కాపీని, సరైన గుర్తింపును సమర్పించి, కాపీ చేసే ఖర్చులను చెల్లించి, ధృవీకరించబడిన మెయిల్ ద్వారా లేదా నా ప్రణాళికకు సహేతుకమైన ముందస్తు నోటీసు అందించిన తర్వాత దాని సాధారణ కార్యాలయ సమయాల్లో వ్యక్తిగతంగా ఖచ్చితమైన కార్యాలయాలకు హాజరుకావచ్చని మరియు (2) టెలిఫోన్ బహిర్గతం కోసం సరైన గుర్తింపు మరియు వ్రాతపూర్వక అభ్యర్థనను సమర్పించిన తర్వాత, నా ఖర్చుతో, టెలిఫోన్ ద్వారా ఖచ్చితమైన నుండి ఈ ఫైల్ యొక్క సారాంశాన్ని స్వీకరించవచ్చని నేను అర్థం చేసుకున్నాను. ఏదైనా కోడెడ్ సమాచారంతో సహా దాని ఫైల్‌ను వివరించడానికి ఖచ్చితమైన శిక్షణ పొందిన సిబ్బంది అందుబాటులో ఉన్నారని నేను అర్థం చేసుకున్నాను మరియు నేను ఖచ్చితమైన కార్యాలయాలలో వ్యక్తిగతంగా కనిపిస్తే, ఆ వ్యక్తి ఖచ్చితమైన గుర్తింపును అందించినంత వరకు నాతో పాటు మరొకరు ఉండవచ్చు.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
+      "value" : "ఖచ్చితమైన గోప్యతా పద్ధతుల గురించిన సమాచారం <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>లో అందుబాటులో ఉంది.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-name-text" : {
+      "value" : "ఫస్ట్ అడ్వాంటేజ్",
+      "note" : "Text for the california disclosure page vendor fadv name text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
+      "value" : "1 కాంకోర్స్ పార్క్వే NE, సూట్ 200.",
+      "note" : "Text for the california disclosure page vendor fadv address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
+      "value" : "అట్లాంటా, GA 30328",
+      "note" : "Text for the california disclosure page vendor fadv address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-phone-text" : {
+      "value" : "1-800-845-6004",
+      "note" : "Text for the california disclosure page vendor fadv phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-url-text" : {
+      "value" : "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>",
+      "note" : "Text for the california disclosure page vendor fadv home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
+      "value" : "నేను అర్థం చేసుకున్నాను:",
+      "note" : "Text for the california disclosure page vendor fadv understand text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
+      "value" : "ఫస్ట్ అడ్వాంటేజ్ నుండి రిపోర్ట్ కోరినంత వరకు, అటువంటి రిపోర్ట్‌లో ఉన్న సమాచారం ఉద్యోగానికి నా అర్హతను నిర్ణయించడానికి మాత్రమే ఉపయోగించబడుతుంది.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
+      "value" : "మొదటి ప్రయోజనం ద్వారా పొందిన మరియు ఏదైనా నివేదికలో చేర్చబడిన సమాచారం, చట్టబద్ధంగా అందుబాటులో ఉన్న పత్రాలు మరియు సమాచారాన్ని తనిఖీ చేయడం మరియు/లేదా ప్రత్యక్ష లేదా పరోక్ష పరిచయం మరియు మాజీ యజమానులు, పాఠశాలలు, ఆర్థిక సంస్థలు, భూస్వాములు, ప్రజల ఏజన్సీలు, మరియు అటువంటి పరిజ్ఞానం ఉన్నవారు వంటి నా పొరుగువారు, స్నేహితులు మరియు నాకు పరిచయమున్న ఇతరులతో ఇంటర్వ్యూలతో సహా వివిధ మార్గాల ద్వారా పొందవచ్చు.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
+      "value" : "ఫస్ట్ అడ్వాంటేజ్ ద్వారా నిర్వహించబడే పరిశోధన(లు) Amazon‌కు అందించబడిన ఏదైనా నివేదికలో పొందుపరచబడవచ్చు, వర్తించే సమాఖ్య మరియు రాష్ట్ర చట్టం ద్వారా విధించబడిన ఏవైనా పరిమితులకు లోబడి, నా రోల్‌, సాధారణ కీర్తి, వ్యక్తిగత లక్షణాలు లేదా జీవన విధానం, ఉపాధి మరియు పని చరిత్ర, విద్య, డ్రైవింగ్ రికార్డు మరియు నేర చరిత్రకి సంబంధించి నా గురించి వివిధ రకాల సమాచారాన్ని కలిగి ఉండవచ్చు.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
+      "value" : "Per California Civil Code § 1785 et seq. మరియు § 1786 et seq., నాపై Amazon ద్వారా ఏదైనా నివేదికను అభ్యర్థించినట్లయితే, నేను దాని సాధారణ కార్యాలయ సమయాల్లో మొదటి ప్రయోజనం నాపై నిర్వహించే ఫైల్‌ను వీక్షించవచ్చు. నేను (1) సరైన గుర్తింపును సమర్పించిన తర్వాత మరియు కాపీ చేసే ఖర్చులను చెల్లించి, ధృవీకరించబడిన మెయిల్ ద్వారా లేదా నా గురించి సహేతుకమైన ముందస్తు ప్రణాళికాబద్ధమైన ప్రదర్శన నోటీసు అందించిన తర్వాత దాని సాధారణ కార్యాలయ వేళల్లో వ్యక్తిగతంగా ఫస్ట్ అడ్వాంటేజ్ కార్యాలయాలకు హాజరుకావడం ద్వారా ఈ ఫైల్ కాపీని కూడా పొందవచ్చని మరియు (2) టెలిఫోన్ బహిర్గతం కోసం సరైన గుర్తింపును మరియు ఫస్ట్ అడ్వాంటేజ్‌కి వ్రాతపూర్వక అభ్యర్థనను సమర్పించిన తర్వాత, నా ఖర్చుతో, టెలిఫోన్ ద్వారా ఫస్ట్ అడ్వాంటేజ్ నుండి ఈ ఫైల్ యొక్క సారాంశాన్ని స్వీకరించవచ్చని నేను అర్థం చేసుకున్నాను. ఫస్ట్ అడ్వాంటేజ్ ఏదైనా కోడ్ చేసిన సమాచారంతో సహా దాని ఫైల్‌ను నాకు వివరించడానికి శిక్షణ పొందిన సిబ్బందిని నేను అర్థం చేసుకున్నాను మరియు ఫస్ట్ అడ్వాంటేజ్ కార్యాలయాల్లో నేను వ్యక్తిగతంగా కనిపిస్తే, ఫస్ట్ అడ్వాంటేజ్‌కి సరైన గుర్తింపును అందించినంత వరకు నాతో పాటు మరొక వ్యక్తి కూడా ఉండవచ్చు.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
+      "value" : "ఫస్ట్ అడ్వాంటేజ్ యొక్క గోప్యతా పద్ధతుల గురించి సమాచారం <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>లో అందుబాటులో ఉంది.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-certify-checkbox-text" : {
+      "value" : "నేను ఈ పత్రాన్ని చదివానని మరియు నేను దానిని అర్థం చేసుకున్నానని ధృవీకరిస్తున్నాను మరియు ఇన్వెస్టిగేటివ్ కన్స్యూమర్ రిపోర్ట్‌లకు సంబంధించి ఈ కాలిఫోర్నియా బహిర్గతం ప్రకారం, నా గురించి పరిశోధనాత్మక వినియోగదారు నివేదికను పొందేందుకు నేను Amazonకి అధికారం ఇస్తున్నాను.",
+      "note" : "Text for the california disclosure page certify checkbox text"
+    },
+    "BB-cali-disclosure-page-next-button-text" : {
+      "value" : "తర్వాత",
+      "note" : "Text for the california disclosure page next button text"
+    },
+    "BB-nhe-page-title-text" : {
+      "value" : "మీరు దాదాపుగా పూర్తిచేసారు, {firstname} {lastname}! వర్తిస్తే, మీరు బ్యాడ్జ్ ఫోటో, పూర్తి వర్క్ ఆథరైజేషన్ మరియు డ్రగ్ టెస్ట్ కోసం రావాలి.",
+      "note" : "Text for the nhe page title"
+    },
+    "BB-nhe-page-confirm-selection-button-text" : {
+      "value" : "ఎంపికను నిర్ధారించండి",
+      "note" : "Text for the nhe page confirm selection button text"
+    },
+    "BB-nhe-page-header-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ షెడ్యూల్ చేయండి",
+      "note" : "Text for the nhe page header text"
+    },
+    "BB-nhe-few-spots-remaining-text" : {
+      "value" : "చాలా తక్కువ స్పాట్‌లు మిగిలి ఉన్నాయి",
+      "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-SelfId-veteran-status-title-text" : {
+      "value" : "వెటరన్ స్థితి యొక్క స్వచ్ఛంద స్వీయ-గుర్తింపు",
+      "note" : "Text for the veteran status form title text"
+    },
+    "BB-counter-message-banner-text" : {
+      "value" : "మిగిలిన దశలను పూర్తి చేయడానికి మేము తదుపరి {hours} గంటలు మరియు {minutes} నిమిషాలు మీ కోసం ఒక స్పాట్‌ను ఉంచుతాము.",
+      "note" : "Text for the holding spot time counter banner message"
+    },
+    "BB-candidate-withdraws-thank-you-text" : {
+      "value" : "మీ ఆసక్తికి ధన్యవాదాలు, కానీ మేము ఈ సమయంలో మీకు ఉద్యోగం ఇవ్వలేకపోతున్నాము.",
+      "note" : "Text for the thanking candidate for their interest to apply for a job"
+    },
+    "BB-candidate-withdraws-withdraw-reason-text" : {
+      "value" : "మీరు అందించిన సమాచారం మా అవసరాలకు అనుగుణంగా లేదు. amazon.jobsలో ఉద్యోగాలను చూడమని మేము మిమ్మల్ని ప్రోత్సహిస్తున్నాము.",
+      "note" : "Text for the reason to withdraw candidate application"
+    },
+    "BB-candidate-withdraws-back-to-dashboard-button-text" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-not-eligible-heading-text" : {
+      "value" : "{name}, Amazonతో మీ ఆసక్తి అంటే మాకు చాలా ఎక్కువ.",
+      "note" : "Text for the assessment not eligible heading text"
+    },
+    "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
+      "value" : "ఈ పదవికి మిమ్మల్ని పరిగణలోకి తీసుకునే అవకాశాన్ని మాకు ఇచ్చినందుకు చాలా ధన్యవాదాలు. దురదృష్టవశాత్తూ, మేము ఈ సమయంలో మీ అభ్యర్థిత్వంతో ముందుకు సాగడం లేదు.",
+      "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
+    },
+    "BB-assessment-not-eligible-reconsideration-notice-text" : {
+      "value" : "మరొక సమయంలో ఈ రోల్‌ కోసం మళ్లీ పరిగణించబడటానికి, మీరు మూడు నెలల్లో మళ్లీ అసెస్‌మెంట్ తీసుకోవచ్చు.",
+      "note" : "Text for the text to let candidate know when to reconsider the assessment again"
+    },
+    "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-consent-assessment-heading-text" : {
+      "value" : "అసెస్‌మెంట్",
+      "note" : "Text for the assessment consent page assessment heading text"
+    },
+    "BB-assessment-consent-excited-in-candidate-interest-text" : {
+      "value" : "Amazonలో చేరాలనే మీ ఆసక్తికి మేము చాలా సంతోషిస్తున్నాము!",
+      "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
+    },
+    "BB-assessment-consent-purpose-of-assessment-text" : {
+      "value" : "ఈ అసెస్‌మెంట్ అసోసియేట్ రోల్‌ను అర్థం చేసుకోవడంలో మీకు సహాయం చేస్తుంది మరియు మీ గురించి తెలుసుకోవడంలో మాకు సహాయపడుతుంది.",
+      "note" : "Text to let candidate know the purpose of Assessment"
+    },
+    "BB-assessment-consent-accommodation-heading-text" : {
+      "value" : "వసతులు",
+      "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazonలో, మేము మా వర్క్‌ఫోర్స్ యొక్క వైవిధ్యాన్ని మరియు మేము పని చేసే విభిన్న మార్గాలను జరుపుకుంటాము. మీకు వైకల్యం ఉంటే మరియు నియామక ప్రక్రియ సమయంలో అసెస్‌మెంట్‌తో సహా వసతి అవసరమైతే, దయచేసి <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodationని సందర్శించండి.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "<b>అసెస్‌మెంట్‌లోని ఏ భాగమూ సమయానుకూలంగా లేదు</b>- మీరు మీ స్వంత వేగంతో పని చేయవచ్చు. ఈ అసెస్‌మెంట్‌లోని అన్ని విభాగాలు:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
+      "value" : "కింది స్క్రీన్ రీడర్‌ల కోసం ఆప్టిమైజ్ చేయబడ్డాయి: Firefox, Chrome మరియు Edge (Windows)లో VoiceOver (Mac) మరియు NVDA (Windows).",
+      "note" : "Text for the assessment pace and sections of the assessments list item 1"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
+      "value" : "మౌస్ లేదా కీబోర్డ్ ద్వారా యాక్సెస్ చేయవచ్చు.",
+      "note" : "Text for the assessment pace and sections of the assessments list item 2"
+    },
+    "BB-assessment-consent-begin-assessment-button-text" : {
+      "value" : "అసెస్‌మెంట్‌ను ప్రారంభించండి",
+      "note" : "Text for the begin assessment button text"
+    },
+    "BB-ReviewSubmit-header-title-text" : {
+      "value" : "సమీక్షించి, సమర్పించండి",
+      "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-job-details-section-title-text" : {
+      "value" : "ఉద్యోగ వివరాలు",
+      "note" : "Text for the job details section title text"
+    },
+    "BB-ReviewSubmit-job-details-section-background-check-text" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ చెక్",
+      "note" : "Text for the job details section background check text"
+    },
+    "BB-ReviewSubmit-job-details-section-authorized-text" : {
+      "value" : "అధీకృతం చేయబడింది",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
+      "value" : "నేపథ్య తనిఖీ యొక్క ఉచిత కాపీని పంపండి",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
+      "value" : "జాతీయ ID రకం:",
+      "note" : "Text for the job details section national ID type text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
+      "value" : "నేషనల్ ID నంబర్:",
+      "note" : "Text for the job details section national ID number text"
+    },
+    "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
+      "value" : "పుట్టిన తేదీ:",
+      "note" : "Text for the job details section date of birth text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్",
+      "note" : "Text for the pre-hire appointment section title text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
+      "value" : "గంటలు:",
+      "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
+      "value" : "పై సమయంలో మిమ్మల్ని చూడాలని మేము ఎదురుచూస్తున్నాము.",
+      "note" : "Text for the pre-hire appointment section look forward text"
+    },
+    "BB-ReviewSubmit-selfId-section-title-text" : {
+      "value" : "స్వచ్ఛంద స్వీయ-గుర్తింపు",
+      "note" : "Text for the voluntary self-identification section title text"
+    },
+    "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
+      "value" : "సమాన అవకాశం:",
+      "note" : "Text for the voluntary self-identification section equal opportunity text"
+    },
+    "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
+      "value" : "వెటరల్ స్థితి:",
+      "note" : "Text for the voluntary self-identification section veteral status text"
+    },
+    "BB-ReviewSubmit-selfId-section-disability-status-text" : {
+      "value" : "అంగవైకల్యం స్థితి:",
+      "note" : "Text for the voluntary self-identification section disability status text"
+    },
+    "BB-ReviewSubmit-submit-application-button-text" : {
+      "value" : "అప్లికేషన్‌ని సమర్పించండి",
+      "note" : "Text for the review and submit page submit application button text"
+    },
+    "BB-ThankYou-thank-you-title-text" : {
+      "value" : "మీరు Amazonకి దరఖాస్తు చేసుకున్నందుకు ధన్యవాదాలు!",
+      "note" : "Text for the thank you page thank you title text"
+    },
+    "BB-ThankYou-look-forward-next-steps-text" : {
+      "value" : "త్వరలో మిమ్మల్ని కలుసుకోవాలని ఆశిస్తున్నాము. మీ తదుపరి దశలు ఇక్కడ ఉన్నాయి:",
+      "note" : "Text for the thank you page look forward and next steps text"
+    },
+    "BB-ThankYou-referral-details-title-text" : {
+      "value" : "దయచేసి రిఫెరల్ వివరాలను అందించండి (వర్తిస్తే)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-ThankYou-referral-details-description-text" : {
+      "value" : "మీరు ఇప్పటికే ఉన్న Amazon ఉద్యోగి ద్వారా సూచించబడ్డారా?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-ThankYou-referral-details-yes-text" : {
+      "value" : "అవును",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-ThankYou-referral-details-no-text" : {
+      "value" : "లేదు",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-ThankYou-start-pre-hire-activities-title-text" : {
+      "value" : "ముందస్తు నియామక కార్యకలాపాలను ప్రారంభించండి",
+      "note" : "Text for the thank you page start pre-hire activities title text"
+    },
+    "BB-ThankYou-fill-wotc-description-text" : {
+      "value" : "మీ ముందస్తు నియామక అపాయింట్‌మెంట్‌కు ముందు, పని అవకాశాల పన్ను క్రెడిట్ ప్రశ్నాపత్రాన్ని పూరించండి.",
+      "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
+    },
+    "BB-ThankYou-get-started-button-text" : {
+      "value" : "ఇక ప్రారంభిద్దాం",
+      "note" : "Text for the thank you page let's get started button text"
+    },
+    "BB-ThankYou-get-pre-hire-appointment-details-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ వివరాలు",
+      "note" : "Text for the thank you page pre-hire appointment details text"
+    },
+    "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
+      "value" : "{startTime} - {endTime} మధ్య ఎప్పుడైనా 30 నిమిషాల సెషన్ కోసం మమ్మల్ని సందర్శించండి.",
+      "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
+      "value" : "అపాయింట్‌మెంట్ వివరాలు",
+      "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
+      "value" : "తీసుకురావల్సిన వస్తువులు",
+      "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
+      "value" : "అసలు గడువు ముగియని ఫోటో ID",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
+      "value" : "అసలు గడువు ముగియని పని ప్రామాణీకరణ డాక్యుమెంట్",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "ఆమోదయోగ్యమైన పత్రాల పూర్తి జాబితా కోసం <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'> ఇక్కడ క్లిక్ </a> చేయండి.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
+      "value" : "ప్రత్యేక సహాయం",
+      "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "నియామక ఈవెంట్ కోసం మీకు ASL ఇంటర్‌ప్రెటర్ వంటి ఏవైనా వసతి కావాలంటే, దయచేసి <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a>కి వెళ్లి, వ్యాఖ్యాతను అభ్యర్థించడానికి మాతో చాట్ చేయండి. దయచేసి మీ అపాయింట్‌మెంట్ షెడ్యూల్ చేసిన వెంటనే మమ్మల్ని సంప్రదించండి. ఏర్పాట్లు చేయడానికి మాకు మీ అపాయింట్‌మెంట్‌కి ముందు కనీసం 48 గంటలు అవసరం.",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-ThankYou-referral-login-label-text" : {
+      "value" : "దయచేసి మీ రిఫరర్ లాగిన్ IDని అందించండి (చిన్న అక్షరాలు మాత్రమే)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-ThankYou-referral-login-empty-error-text" : {
+      "value" : "దయచేసి మీ రిఫరర్ లాగిన్ IDని అందించండి.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-ThankYou-referral-login-regex-error-text" : {
+      "value" : "వినియోగదారు IDలో చిన్న అక్షరాలు మాత్రమే ఉండాలి మరియు కనీసం 4 అక్షరాల పొడవు ఉండాలి.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-WOTC-page-title-text" : {
+      "value" : "పని అవకాశం పన్ను క్రెడిట్ ప్రశ్నాపత్రం",
+      "note" : "Text for the WOTC page title text"
+    },
+    "BB-WOTC-page-description-text" : {
+      "value" : "Amazon IAT టెస్టింగ్ ఫెడరల్ మరియు లేదా స్టేట్ టాక్స్ క్రెడిట్ ప్రోగ్రామ్‌లలో పాల్గొంటుంది. మీరు అందించే సమాచారం ఈ ప్రోగ్రామ్‌ల కోసం కంపెనీ అర్హతను నిర్ణయించడానికి ఉపయోగించబడుతుంది మరియు ఎటువంటి నియామకం, నిలుపుదల లేదా ప్రమోషన్ నిర్ణయాలపై ప్రతికూల ప్రభావం చూపదు.",
+      "note" : "Text for the WOTC page description text"
+    }
+  }
+}

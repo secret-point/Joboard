@@ -1,383 +1,383 @@
 {
   "resources" : {
     "BB-PreConsentPage-banner-journey-starts" : {
-      "value" : "Tu viaje para convertirte en un afiliado de Amazon comienza aquí.",
+      "value" : "Il tuo percorso per diventare un dipendente Amazon inizia qui.",
       "note" : "Text for PreConsentPage banner text"
     },
     "BB-JobOpportunity-Go-To-Dashboard-Link" : {
-      "value" : "Volver al panel de trabajos",
+      "value" : "Torna alla dashboard delle offerte di lavoro",
       "note" : "Text for the link to go back to jobs dashboard"
     },
     "BB-JobOpportunity-back-to-indexPage-link" : {
-      "value" : "Ver trabajos",
+      "value" : "Visualizza offerte di lavoro",
       "note" : "Text for the link to go back to job opportunity index"
     },
     "BB-JobOpportunity-back-to-jobConfirmation-link" : {
-      "value" : "Atrás",
+      "value" : "Indietro",
       "note" : "Text for the link to go back to job confirmation page"
     },
     "BB-JobOpportunity-go-to-jobDescription-link" : {
-      "value" : "Requisito y beneficios del trabajo",
+      "value" : "Requisiti e vantaggi del lavoro",
       "note" : "Text for the link to go to job description page"
     },
     "BB-JobOpportunity-filter-button" : {
-      "value" : "Filtro",
+      "value" : "Filtra",
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-sort-button" : {
-      "value" : "Ordenar",
+      "value" : "Ordina",
       "note" : "Text for the button to filter schedule list"
     },
     "BB-JobOpportunity-select-job-button" : {
-      "value" : "Seleccionar este trabajo",
+      "value" : "Seleziona questo lavoro",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-StepHeader-view-progress-button" : {
-      "value" : "Ver progreso",
+      "value" : "Visualizza avanzamento",
       "note" : "Text for the button to select or confirm job"
     },
     "BB-PreconsentPage-preview-steps-button" : {
-      "value" : "Vista previa de los pasos",
+      "value" : "Vedi l’anteprima dei passaggi",
       "note" : "Text for the button to preview application steps"
     },
     "BB-PreconsentPage-next-Button" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the button to go to next page ( consent page )"
     },
     "BB-Country-United-States" : {
-      "value" : "Estados Unidos",
+      "value" : "Stati Uniti",
       "note" : "United States as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
-      "value" : "Al presentar tu solicitud, confirmas que:",
+      "value" : "Con la tua candidatura, confermi che:",
       "note" : "Text for application qualification criteria"
     },
     "BB-ConsentPage-data-policy-header-text" : {
-      "value" : "Al presentar tu solicitud, lees y aceptas la",
+      "value" : "Con la candidatura, leggi e accetti il",
       "note" : "Text for the user data policy agreement title"
     },
     "BB-ConsentPage-user-data-Policy-button" : {
-      "value" : "Política de datos de usuario",
+      "value" : "Informativa sui dati degli utenti",
       "note" : "Text for the button to open user data policy page"
     },
     "BB-ConsentPage-create-application-button" : {
-      "value" : "Crear solicitud",
+      "value" : "Crea candidatura",
       "note" : "Text for the create application button"
     },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
-      "value" : "Política de datos de usuario",
+      "value" : "Informativa sui dati degli utenti",
       "note" : "Text for the flyout user data policy title text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon se compromete a crear un ambiente laboral diverso e inclusivo. Amazon es un empleador que ofrece igualdad de oportunidades de trabajo y no discrimina por motivos de raza, nacionalidad, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición legalmente protegida. Las personas con discapacidad que deseen solicitar una adaptación, pueden visitar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "value" : "Amazon si impegna per un ambiente di lavoro diversificato e inclusivo. Amazon è un datore di lavoro per le pari opportunità e non discrimina in base a razza, origine nazionale, sesso, identità di genere, orientamento sessuale, stato di veterano protetto, disabilità, età o altro stato legalmente protetto. Per le persone con disabilità che desiderano richiedere un alloggio, visitare la pagina <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
-      "value" : "Amazon se toma muy en serio la protección de tus datos personales y solo procesará tus datos personales de acuerdo con la ley. En particular, no compartimos tus datos personales con ningún tercero sin tu consentimiento previo, a menos que la ley nos obligue a hacerlo. A menos que expreses lo contrario, la empresa contratante de Amazon almacenará tus datos personales en la base de datos electrónica que mantiene Amazon.com en EE. UU. o una de sus filiales. Para obtener información completa sobre cómo Amazon almacena y procesa tus datos personales, haz clic aquí <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "value" : "Amazon prende sul serio la protezione dei tuoi dati personali e tratterà i tuoi dati personali solo in conformità con la legge. In particolare, non condividiamo i tuoi dati personali con terzi senza il tuo previo consenso, a meno che non sia obbligatorio farlo per legge. Salvo espressa indicazione contraria, la società Amazon responsabile dell’assunzione conserverà i tuoi dati personali nel database elettronico gestito da Amazon.com negli Stati Uniti o da una delle sue affiliate. Per informazioni complete su come Amazon memorizza ed elabora i tuoi dati personali, fai clic qui <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
-      "value" : "Además del puesto que has solicitado hoy, es posible que tengamos otros puestos que requieran las mismas o similares funciones laborales. Estos puestos pueden ser a tiempo completo, a tiempo reducido, a tiempo, parcial, de temporada y/o temporales que están disponibles en esta ubicación u otras ubicaciones cercanas de Amazon. No tienes ninguna obligación de aceptar ningún puesto en Amazon o en nuestros socios. Sin embargo, al completar tu solicitud aceptas que se te tenga en cuenta para puestos del mismo nivel, por horas, dentro de un radio de 30 millas de tu lugar de solicitud. Esto incluye compartir tu información de solicitante con nuestros socios (agencias de empleo) que contratan tanto para nuestras necesidades de empleados regulares y temporales.",
+      "value" : "Oltre al ruolo per cui ti sei candidato oggi, potremmo avere altre posizioni che richiedono funzioni lavorative uguali o simili. Questi ruoli possono essere posizioni a tempo pieno, a tempo ridotto, part-time, stagionali e/o temporanee disponibili in questa sede o in altre sedi Amazon vicine. Non sei obbligato ad accettare alcun ruolo presso Amazon o i nostri partner, tuttavia, completando la tua candidatura accetti di essere considerato per ruoli a ore dello stesso livello entro un raggio di 30 miglia dalla sede della tua candidatura. Ciò include la condivisione delle tue informazioni di candidato con i nostri partner (agenzie per il personale) che si occupano delle assunzioni per le nostre esigenze di dipendenti regolari e temporanei.",
       "note" : "Text for the flyout user data policy paragraph 3 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
-      "value" : "Al presentar tu solicitud:",
+      "value" : "Con la tua candidatura, tu:",
       "note" : "Text for the flyout user data policy by applying text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
-      "value" : "reconoces que has leído la descripción del puesto de trabajo que solicitas y que comprendes los requisitos básicos necesarios para desempeñarlo;",
+      "value" : "dichiari di aver letto la descrizione del lavoro per la posizione per la quale ti candidi e di aver compreso i requisiti di base necessari per svolgere la mansione;",
       "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
-      "value" : "consientes el tratamiento, análisis y evaluación de tus datos personales por parte de Amazon, salesforce.com o cualquier otro tercero para los fines de tu solicitud y para cualquier otro fin legítimo de Amazon. Para evitar dudas, el “tratamiento” de tus datos personales incluirá, pero no se limitará a la recogida, recepción, registro, organización, cotejo, almacenamiento, actualización, alteración, uso, difusión, distribución, fusión, vinculación, bloqueo, degradación, borrado o destrucción de tus datos personales;",
+      "value" : "acconsentire al trattamento, all'analisi e alla valutazione dei tuoi dati personali da parte di Amazon, salesforce.com o di qualsiasi altra terza parte ai fini della tua candidatura e per qualsiasi altro scopo legittimo di Amazon. A scanso di equivoci, il “trattamento” dei tuoi dati personali includerà, a titolo non esaustivo, la raccolta, la ricezione, la registrazione, l'organizzazione, la raccolta, la memorizzazione, l'aggiornamento, l'alterazione, l'utilizzo, la diffusione, la distribuzione, la fusione, il collegamento, il blocco, la degradazione, la cancellazione o la distruzione dei tuoi dati personali;",
       "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
     },
     "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
-      "value" : "consientes que Amazon conserve tus datos personales después del proceso de solicitud, con el fin de ayudarlo a supervisar eficazmente sus procesos de solicitud de empleo y que tus datos personales se almacenen en una base de datos electrónica en los Estados Unidos.",
+      "value" : "acconsenti che Amazon conservi i tuoi dati personali dopo la procedura di candidatura, al fine di assisterla nel monitoraggio efficace dei suoi processi di candidatura e l'archiviazione dei tuoi dati personali in un database elettronico negli Stati Uniti.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
-      "value" : "Ver progreso",
+      "value" : "Visualizza avanzamento",
       "note" : "Text for view progress flyout title"
     },
     "BB-StepHeader-view-progress-flyout-close-button" : {
-      "value" : "Listo",
+      "value" : "Fatto",
       "note" : "Text for view progress flyout close button"
     },
     "BB-ApplicationSteps-select-job-text" : {
-      "value" : "Seleccionar trabajo",
+      "value" : "Seleziona offerta di lavoro",
       "note" : "Text form select job application step"
     },
     "BB-ApplicationSteps-complete-required-document-text" : {
-      "value" : "Completar los documentos requeridos",
+      "value" : "Compila i documenti richiesti",
       "note" : "Text for complete required documents application step"
     },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
-      "value" : "Programar cita previa a la contratación",
+      "value" : "Pianifica un appuntamento pre-assunzione",
       "note" : "Text for Schedule pre-hire appointment application step"
     },
     "BB-ApplicationSteps-complete-assessment-text" : {
-      "value" : "Completar una evaluación (~15 min)",
+      "value" : "Completa una valutazione (~15 minuti)",
       "note" : "Text for complete assessment application step"
     },
     "BB-JobOpportunity-filter-schedule-flyout-title" : {
-      "value" : "Filtro",
+      "value" : "Filtra",
       "note" : "Text for filter schedule flyout title"
     },
     "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
-      "value" : "Restablecer",
+      "value" : "Reimposta",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
-      "value" : "Solicitar",
+      "value" : "Candidati",
       "note" : "Text for filter schedule flyout reset button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
-      "value" : "Solicitar",
+      "value" : "Candidati",
       "note" : "Text for sort schedule flyout apply button"
     },
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
-      "value" : "Ordenar por",
+      "value" : "Ordina per",
       "note" : "Text for sorting schedule flyout title"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
-      "value" : "Tarifa de pago: de mayor a menor",
+      "value" : "Retribuzione: dalla più alta alla più bassa",
       "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
-      "value" : "Horas: de más a menos",
+      "value" : "Quantità di ore: da maggiore a minore",
       "note" : "Text for sort schedule by hours from most to least"
     },
     "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
-      "value" : "Horas: de menos a más",
+      "value" : "Quantità di ore: da minore a maggiore",
       "note" : "Text for sort schedule by hours from least to most"
     },
     "BB-DaysHoursFilter-title-text" : {
-      "value" : "Filtrar horarios",
+      "value" : "Filtra orari",
       "note" : "Text for the title of DaysHours Filter"
     },
     "BB-DayName-Monday" : {
-      "value" : "Lunes",
+      "value" : "Lunedì",
       "note" : "Text for Monday"
     },
     "BB-DayName-Tuesday" : {
-      "value" : "Martes",
+      "value" : "Martedì",
       "note" : "Text for Tuesday"
     },
     "BB-DayName-Wednesday" : {
-      "value" : "Miércoles",
+      "value" : "Mercoledì",
       "note" : "Text for Wednesday"
     },
     "BB-DayName-Thursday" : {
-      "value" : "Jueves",
+      "value" : "Giovedì",
       "note" : "Text for Thursday"
     },
     "BB-DayName-Friday" : {
-      "value" : "Viernes",
+      "value" : "Venerdì",
       "note" : "Text for Friday"
     },
     "BB-DayName-Saturday" : {
-      "value" : "Sábado",
+      "value" : "Sabato",
       "note" : "Text for Saturday"
     },
     "BB-DayName-Sunday" : {
-      "value" : "Domingo",
+      "value" : "Domenica",
       "note" : "Text for Sunday"
     },
     "BB-TimeRange-start-time-select-label-text" : {
-      "value" : "Hora de inicio",
+      "value" : "Ora di inizio",
       "note" : "Text for start time select input label text"
     },
     "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Hora de inicio",
+      "value" : "Ora di inizio",
       "note" : "Text for end time select input label text"
     },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
-      "value" : "Hasta {hourNumber} horas",
+      "value" : "Fino a {hourNumber} ore",
       "note" : "Text for Desired Hours up to a certain hours"
     },
     "BB-FilterSchedule-desired-hour-select-place-holder" : {
-      "value" : "Seleccionar las horas deseadas",
+      "value" : "Seleziona le ore desiderate",
       "note" : "Text for desired hours select input place holder"
     },
     "BB-FilterSchedule-desired-hour-select-label-text" : {
-      "value" : "Horas deseadas por semana",
+      "value" : "Ore settimanali desiderate",
       "note" : "Text for desired hours select input label text"
     },
     "BB-ContingencyOffer-well-done-text" : {
-      "value" : "Bien hecho hasta ahora",
+      "value" : "Ben fatto finora",
       "note" : "Text for congratulating candidate for accepting contingent offer"
     },
     "BB-ContingencyOffer-job-picked-title-text" : {
-      "value" : "Aquí está la oferta contingente para el trabajo que elegiste.",
+      "value" : "Ecco l'offerta potenziale per il lavoro che hai scelto.",
       "note" : "Text for job offer picked title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "Aquí está la oferta contingente para el trabajo que elegiste.",
+      "value" : "Ecco l'offerta potenziale per il lavoro che hai scelto.",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
-      "value" : "Tal y como permite la ley aplicable, tu oferta está supeditada a que superes con éxito la verificación de antecedentes requerida, el control de drogas (si corresponde) y la verificación de idoneidad de recontratación (si corresponde). Por lo tanto, es importante que completes los pasos previos a la contratación en la página siguiente. En ciertas circunstancias, tu primer día puede retrasarse debido a que los requisitos previos a la contratación no se han completado a tiempo. Si este es el caso, pronto sabrás de nosotros.",
+      "value" : "Come previsto dalla legge applicabile, la tua offerta è subordinata al superamento del controllo richiesto dei precedenti personali, dello screening antidroga (se applicabile) e del controllo di idoneità alla riassunzione (se applicabile), quindi è importante completare i passaggi pre-assunzione riportati nella pagina successiva. In alcune circostanze, il primo giorno di lavoro può essere posticipato a causa del mancato completamento dei requisiti di per-assunzione in tempo utile. Se questo è il caso, puoi aspettarti di avere presto nostre notizie.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
-      "value" : "Cerrar.",
+      "value" : "Chiudi.",
       "note" : "Text for contingent offer meaning popover close button"
     },
     "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Requisitos del trabajo.",
+      "value" : "Requisiti per il lavoro.",
       "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
-      "value" : "Pasos restantes",
+      "value" : "Passaggi rimanenti",
       "note" : "Text for the remaining steps container title text"
     },
     "BB-ContingencyOffer-accept-offer-button-text" : {
-      "value" : "Aceptar la oferta",
+      "value" : "Accetta l’offerta",
       "note" : "Text for the accept offer button text"
     },
     "BB-ContingencyOffer-back-to-jobs-button-text" : {
-      "value" : "Volver a trabajos",
+      "value" : "Torna alle offerte di lavoro",
       "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
     },
     "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
-      "value" : "Al aceptar esta oferta, confirmas que entiendes los requisitos de este puesto.",
+      "value" : "Accettando questa offerta, confermi di aver compreso i requisiti di questa posizione.",
       "note" : "Text offer requirement understanding confirmed by accepting offer"
     },
     "BB-BGC-page-content-title" : {
-      "value" : "Verificación de antecedentes",
+      "value" : "Controllo dei precedenti",
       "note" : "Text for BGC page title"
     },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
-      "value" : "Proporciona la autorización y la información necesaria para una verificación de antecedentes.",
+      "value" : "Fornisci l'autorizzazione e le informazioni necessarie per un controllo dei precedenti.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
     "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Divulgación de la Ley de Informe Justo de Crédito",
+      "value" : "Informativa sul Fair Credit Report Act",
       "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
-      "value" : "Reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes",
+      "value" : "Accettazioni e autorizzazioni del Non-Fair Credit Reporting Act per il controllo dei precedenti",
       "note" : "Text for the NON-FCRA step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
-      "value" : "Información adicional de antecedentes",
+      "value" : "Informazioni aggiuntive sui precedenti",
       "note" : "Text for the Additional bgc information step card title"
     },
     "BB-BGC-page-continue-button" : {
-      "value" : "Continuar",
+      "value" : "Continua",
       "note" : "Text for the bgc continue button ( from bgc to nhe page)"
     },
     "BB-BGC-page-fcra-subtitle-text" : {
-      "value" : "Responde algunas preguntas en el siguiente enlace.",
+      "value" : "Rispondi ad alcune domande usando il link di seguito.",
       "note" : "Text for the fcra subtitle"
     },
     "BB-BGC-page-fcra-get-started-btn" : {
-      "value" : "Comenzar",
+      "value" : "Inizia",
       "note" : "Text for the fcra get started button"
     },
     "BB-BGC-page-fcra-edit-form-btn" : {
-      "value" : "Editar formulario",
+      "value" : "Modifica modulo",
       "note" : "Text for the fcra edit information button"
     },
     "BB-BGC-addition-bgc-form-next-btn" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the additional bgc form next button"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
-      "value" : "Línea de dirección 1",
+      "value" : "Indirizzo (riga 1)",
       "note" : "Text for the additional bgc form  address line 1 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
-      "value" : "Ingresa una dirección válida",
+      "value" : "Inserisci un indirizzo valido",
       "note" : "Text for the additional bgc form  address line 1 error message text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
-      "value" : "Departamento, suite, .etc",
+      "value" : "Appartamento, suite, ecc.",
       "note" : "Text for the additional bgc form  address line 2 label text"
     },
     "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
-      "value" : "Ingresa una dirección válida",
+      "value" : "Inserisci un indirizzo valido",
       "note" : "Text for the additional bgc form  address line 2 error message text"
     },
     "BB-BGC-Additional-bgc-form-city-label-text" : {
-      "value" : "Ciudad",
+      "value" : "Città",
       "note" : "Text for the additional bgc form  city label text"
     },
     "BB-BGC-Additional-bgc-form-city-error-text" : {
-      "value" : "Ingresa una ciudad válida",
+      "value" : "Inserisci una città valida",
       "note" : "Text for the additional bgc form city error message text"
     },
     "BB-BGC-Additional-bgc-form-state-label-text" : {
-      "value" : "Estado/Provincia",
+      "value" : "Stato/Provincia",
       "note" : "Text for the additional bgc form  state label text"
     },
     "BB-BGC-Additional-bgc-form-state-error-text" : {
-      "value" : "Ingresa un Estado/Provincia válido",
+      "value" : "Inserisci uno stato/provincia valido",
       "note" : "Text for the additional bgc form state error message text"
     },
     "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
-      "value" : "Selecciona un estado",
+      "value" : "Seleziona uno stato",
       "note" : "Text for the additional bgc form state placeholder text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
-      "value" : "Código postal",
+      "value" : "CAP/codice di avviamento postale",
       "note" : "Text for the additional bgc form  zipcode label text"
     },
     "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
-      "value" : "Ingresa un código postal válido de 5 dígitos",
+      "value" : "Inserisci un codice postale valido di 5 cifre",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
-      "value" : "País",
+      "value" : "Paese",
       "note" : "Text for the additional bgc form  country label text"
     },
     "BB-BGC-Additional-bgc-form-country-error-text" : {
-      "value" : "Ingresa un país válido",
+      "value" : "Inserisci un Paese valido",
       "note" : "Text for the additional bgc form country error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
-      "value" : "ID nacional",
+      "value" : "Documento d'identità nazionale",
       "note" : "Text for the additional bgc form  national id type label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
-      "value" : "Ingresa un tipo de ID nacional válida",
+      "value" : "Inserisci un tipo di documento d'identità nazionale valido",
       "note" : "Text for the additional bgc form national id type error message text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
-      "value" : "Número de ID nacional",
+      "value" : "Numero del documento d'identità nazionale",
       "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Ingresa un número de seguro social válido de 9 dígitos sin guión",
+      "value" : "Inserisci un numero di previdenza sociale valido di 9 cifre senza trattino",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
-      "value" : "Fecha de nacimiento",
+      "value" : "Data di nascita",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Ingresa una fecha de nacimiento válida.",
+      "value" : "Inserisci una data di nascita valida.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
-      "value" : "Número de Seguro Social",
+      "value" : "Numero di previdenza sociale",
       "note" : "Social Security Number is one of options as National ID"
     },
     "BB-BGC-form-optional-input-label-text" : {
-      "value" : "Opcional",
+      "value" : "Facoltativo",
       "note" : "Text to show that inout on a form is optional"
     },
     "BB-BGC-bgc-step-card-step-progress" : {
-      "value" : "Paso {currentStep} de {totalSteps}",
+      "value" : "Passaggio {currentStep} di {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
-      "value" : "¿Has sido condenado por un delito menor o un delito grave o has salido de la cárcel o en libertad condicional tras haber sido condenado por un delito menor o un delito grave en los últimos siete (7) años?",
+      "value" : "Sei stato condannato per reato minore o reato o sei stato rilasciato dal carcere o sulla parola per una condanna per un reato minore o un reato negli ultimi sette (7) anni?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
@@ -385,147 +385,147 @@
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Indica la ciudad, país, el estado de condena, la fecha y la naturaleza del delito, junto con la información sobre la sentencia",
+      "value" : "Indica la città, il paese, lo stato di condanna, la data, la natura del reato e le informazioni sulla sentenza",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "En relación con tu solicitud de empleo en Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), obtendremos un informe del consumidor sobre ti de una agencia de informes del consumidor. Esto se conoce comúnmente como “verificación de antecedentes”.",
+      "value" : "In relazione alla tua domanda di assunzione presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), provvederemo a ottenere un rapporto sul consumatore sul tuo conto da un’agenzia di rapporto sui consumatori. Questo è comunemente noto come “controllo dei precedenti”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Divulgación de la Ley de Informe Justo de Crédito",
+      "value" : "Informativa sul Fair Credit Report Act",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
-      "value" : "Con mi firma electrónica a continuación, autorizo a Amazon a obtener el informe del consumidor anterior ahora y durante cualquier empleo o compromiso que pueda tener con Amazon Corporate.",
+      "value" : "Con la mia firma elettronica di seguito, autorizzo Amazon a procurarsi il rapporto sul consumatore di cui sopra ora e per tutta la durata del mio impiego o impegno con Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the fcra disclosure form next button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
-      "value" : "AUTORIZO a Amazon a realizar esta verificación de antecedentes.",
+      "value" : "AUTORIZZO Amazon a effettuare questo controllo dei precedenti.",
       "note" : "Text for the authorize Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
-      "value" : "RECHAZO autorizar a Amazon esta verificación de antecedentes.",
+      "value" : "RIFIUTO di autorizzare Amazon ad eseguire questo controllo dei precedenti.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Escribe tu nombre completo aquí",
+      "value" : "Digita qui il tuo nome e cognome",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
-      "value" : "Ingresa un nombre completo válido con el siguiente formato: Nombre Apellido",
+      "value" : "Inserisci un nome e cognome valido nel seguente formato: Nome Cognome",
       "note" : "Text for the fcra signature input error text"
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
-      "value" : "Tal y como he indicado y autorizado en el documento de Divulgación y autorización de la Ley de Informe Justo de Crédito por separado, Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”) realizarán una verificación de mis antecedentes.",
+      "value" : "Come da me comunicato e autorizzato nel documento separato Fair Credit Reporting Act Disclosure and Authorization, Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”) effettueranno un controllo dei miei precedenti.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
-      "value" : "Con mi firma electrónica a continuación, reconozco lo siguiente:",
+      "value" : "Con la mia firma elettronica di seguito, riconosco quanto segue:",
       "note" : "Text for the eSignature acknowledgement title"
     },
     "BB-non-fcra-fadv-acknowledgement-item-one" : {
-      "value" : "El proveedor de verificación de antecedentes o “CRA”, que realizará la verificación de antecedentes es First Advantage, está situado en 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328, y puede ser contactado en el (800) 845-6004 o www.fadv.com.",
+      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è First Advantage, si trova in 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 e può essere contattato al numero (800) 845-6004 o sul sito www.fadv.com.",
       "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-one" : {
-      "value" : "El proveedor de verificación de antecedentes o “CRA”, que realizará la verificación de antecedentes es Accurate Background, está situado en 7515 Irvine Center Dr., Irvine, CA 92618, y puede ser contactado en el (800) 216-8024 o www.accuratebackground.com.\n\n* Entiendo y acepto que según lo permitido por la ley Amazon puede pedir verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean Accurate Background.",
+      "value" : "Il fornitore del controllo dei precedenti o “CRA” che eseguirà il controllo dei precedenti è Accurate Background, si trova a 7515 Irvine Center Dr., Irvine, CA 92618 e può essere contattato al numero (800) 216-8024 o sul sito www.accuratebackground.com.\n\n* Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
       "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fadv-acknowledgement-item-two" : {
-      "value" : "Entiendo y acepto que, según lo permitido por la ley, Amazon puede pedir verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean First Advantage.",
+      "value" : "Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da First Advantage.",
       "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-two" : {
-      "value" : "Entiendo y acepto que, según lo permitido por la ley, Amazon puede solicitar verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si procede, y (2) de CRA que no sean Accurate Background.",
+      "value" : "Comprendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
     "BB-non-fcra-fdav-acknowledgement-item-three" : {
-      "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo a las siguientes personas a revelar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o actuales, las escuelas y las agencias y otras agencias gubernamentales, incluidas las agencias de registros de vehículos de motor.",
+      "value" : "Ai fini dell'assunzione, e nel rispetto di tutte le leggi che tutelano la privacy delle mie informazioni, autorizzo inoltre i seguenti soggetti a divulgare alle agenzie di rating qualsiasi informazione necessaria per il controllo dei miei precedenti: i miei datori di lavoro passati o presenti, le scuole, le forze dell'ordine e altre agenzie governative, comprese le agenzie di registrazione dei veicoli a motore.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
     "BB-non-fcra-accurate-acknowledgement-item-three" : {
-      "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo a las siguientes personas a revelar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o actuales, las escuelas y las agencias y otras agencias gubernamentales, incluidas las agencias de registros de vehículos de motor.",
+      "value" : "Ai fini dell'assunzione, e nel rispetto di tutte le leggi che tutelano la privacy delle mie informazioni, autorizzo inoltre i seguenti soggetti a divulgare alle agenzie di rating qualsiasi informazione necessaria per il controllo dei miei precedenti: i miei datori di lavoro passati o presenti, le scuole, le forze dell'ordine e altre agenzie governative, comprese le agenzie di registrazione dei veicoli a motore.",
       "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
     },
     "BB-non-fcra-accurate-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>Recibirás por separado una Divulgación de California sobre el Informe de Investigación del Consumidor (“Divulgación de California”). Este es un documento importante, revísalo cuidadosamente. Además, haz clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> si estás buscando empleo en una empresa de San Francisco o si ya lo tienes. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, por la presente autorizas a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento a lo largo de cualquier empleo con Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato da un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
       "note" : "Text for ACCURATE non fcra California specific notice "
     },
     "BB-non-fcra-fadv-california-specific-notice" : {
-      "value" : "<p><b>CALIFORNIA: </b>Recibirás por separado una Divulgación de California sobre el Informe de Investigación del Consumidor (“Divulgación de California”). Este es un documento importante, revísalo cuidadosamente. Además, haz clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> si buscas empleo en una empresa de San Francisco o si ya lo tienes. Al firmar a continuación, de conformidad con la ley de California y la Divulgación de California, por la presente autorizas a Amazon a obtener un informe de investigación del consumidor, también conocido como verificación de antecedentes, ahora y en cualquier momento a lo largo de cualquier empleo con Amazon.</p>",
+      "value" : "<p><b>CALIFORNIA: </b>riceverai separatamente un’informativa riguardo il rapporto investigativo dei consumatori della California (\"Informativa della California\"). Si tratta di un documento importante; esaminalo attentamente. Inoltre, fai clic <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> se stai cercando un impiego o sei già impiegato da un’azienda a San Francisco. Apponendo la firma di seguito, ai sensi della legge della California e dell’informativa della California, autorizzi Amazon ad acquisire un rapporto investigativo sul consumatore, noto anche come controllo dei precedenti, ora e in qualsiasi momento durante l'impiego presso Amazon.</p>",
       "note" : "Text for FADV non fcra California specific notice "
     },
     "BB-non-fcra-accurate-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Tienes derecho a presentar una solicitud por escrito a la CRA para que te revele de forma completa y precisa la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre ti. La CRA debe proporcionarte la divulgación dentro de los cinco días hábiles siguientes a la recepción de tu solicitud o a la fecha en que se pidió el informe, cualquiera que sea la fecha posterior.</p>",
+      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto a tuo nome. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
       "note" : "Text for ACCURATE non fcra Minnesota specific notice "
     },
     "BB-non-fcra-fadv-minnesota-specific-notice" : {
-      "value" : "<p><b>MINNESOTA: </b>Tienes derecho a presentar una solicitud por escrito a la CRA para que te revele de forma completa y precisa la naturaleza y el alcance de cualquier informe del consumidor que se haya solicitado sobre ti. La CRA debe proporcionarte la divulgación dentro de los cinco días hábiles siguientes a la recepción de tu solicitud o a la fecha en que se pidió el informe, cualquiera que sea la fecha posterior.</p>",
+      "value" : "<p><b>MINNESOTA: </b>hai il diritto di presentare una richiesta scritta all'agenzia di rating per ricevere una comunicazione completa e accurata della natura e della portata di qualsiasi rapporto sui consumatori richiesto a tuo nome. L'agenzia di rating deve fornirti la comunicazione entro cinque giorni lavorativi dal ricevimento della tua richiesta o al momento della richiesta del rapporto, a seconda di quale data sia successiva.</p>",
       "note" : "Text for FADV non fcra Minnesota specific notice "
     },
     "BB-non-fcra-accurate-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor sobre ti Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del artículo 23-A de la Ley Correccional de Nueva York.</p>",
+      "value" : "<p><b>NEW YORK: </b>Hai il diritto di inviare una richiesta scritta ad Amazon per sapere se abbiamo richiesto un rapporto sul consumatore o un rapporto investigativo sul consumatore a tuo nome. Sopra sono indicati l'indirizzo e il numero di telefono dell'agenzia di rating. Hai il diritto di contattare qualsiasi agenzia di rating per ispezionare o ricevere una copia di tale segnalazione. Fai clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">qui</a> per informazioni sui tuoi diritti ai sensi dell'articolo 23-A dell’ordinamento penitenziario di New York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
     "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor sobre ti Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del artículo 23-A de la Ley Correccional de Nueva York.</p>.",
+      "value" : "<p><b>NEW YORK: </b>Hai il diritto di inviare una richiesta scritta ad Amazon per sapere se abbiamo richiesto un rapporto sul consumatore o un rapporto investigativo sul consumatore a tuo nome. Sopra sono indicati l'indirizzo e il numero di telefono dell'agenzia di rating. Hai il diritto di contattare qualsiasi agenzia di rating per ispezionare o ricevere una copia di tale segnalazione. Fai clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">qui</a> per informazioni sui tuoi diritti ai sensi dell'articolo 23-A dell’ordinamento penitenziario di New York.</p>.",
       "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
-      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos en virtud de la Ley de Informe Justo de Crédito de Washington.</p>.",
+      "value" : "<p><b>WASHINGTON: </b>Hai il diritto di richiedere all'agenzia di segnalazione dei consumatori un riepilogo scritto dei tuoi diritti ai sensi del Washington Fair Credit Reporting Act.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
     },
     "BB-non-fcra-fadv-washington-specific-notice" : {
-      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos en virtud de la Ley de Informe Justo de Crédito de Washington.</p>.",
+      "value" : "<p><b>WASHINGTON: </b>Hai il diritto di richiedere all'agenzia di segnalazione dei consumatori un riepilogo scritto dei tuoi diritti ai sensi del Washington Fair Credit Reporting Act.</p>.",
       "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
-      "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla",
+      "value" : "<p><b>TUTTI GLI STATI: </b>Ti forniremo una copia gratuita di eventuali controlli dei precedenti se selezioni questa casella",
       "note" : "Text for ACCURATE non fcra all state specific notice "
     },
     "BB-non-fcra-fadv-allstate-specific-notice" : {
-      "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla</p>",
+      "value" : "<p><b>TUTTI GLI STATI: </b>ti forniremo una copia gratuita di qualsiasi controllo dei precedenti se selezioni questa casella</p>",
       "note" : "Text for FADV non fcra all state specific notice "
     },
     "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Inserisci il nome e cognome usato in precedenza nel seguente formato: Nome Cognome",
       "note" : "Text for the previous used legal name input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
-      "value" : "Nombre completo legal anterior",
+      "value" : "Nome e cognome precedente",
       "note" : "Text for the previous used legal name input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Inserisci il nome e cognome usato in precedenza nel seguente formato: Nome Cognome",
       "note" : "Text for the previous used legal name 1 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
-      "value" : "Nombre completo legal anterior (1)",
+      "value" : "Nome e cognome legale precedente (1)",
       "note" : "Text for the previous used legal name 1 input label text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
-      "value" : "Ingresa el nombre completo legal utilizado anteriormente siguiendo el formato: Nombre Apellido",
+      "value" : "Inserisci il nome e cognome usato in precedenza nel seguente formato: Nome Cognome",
       "note" : "Text for the previous used legal name 2 input error text"
     },
     "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
-      "value" : "Nombre completo legal anterior (2)",
+      "value" : "Nome e cognome legale precedente (2)",
       "note" : "Text for the previous used legal name 2 input label text"
     },
     "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
-      "value" : "Agregar/Mostrar más nombres anteriores",
+      "value" : "Aggiungi/mostra altri nomi precedenti",
       "note" : "Text for the button to show more previous legal names button text"
     },
     "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
-      "value" : "¿Has trabajado anteriormente en un edificio de Amazon?",
+      "value" : "Hai già lavorato in una struttura Amazon?",
       "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
     },
     "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text for the accept previous worked at Amazon radio button label text"
     },
     "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
@@ -533,151 +533,151 @@
       "note" : "Text for the decline previous worked at Amazon radio button label text"
     },
     "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
-      "value" : "Qué información incluir",
+      "value" : "Quali informazioni includere",
       "note" : "Text for the for the form title about what to include in previous Amazon experience"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
-      "value" : "Identifica el edificio de Amazon en el que has trabajado anteriormente",
+      "value" : "Identifica la struttura Amazon in cui hai lavorato in precedenza",
       "note" : "Text for the most recent Amazon building input label text"
     },
     "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
-      "value" : "Ingresa un edificio válido de Amazon",
+      "value" : "Inserisci una struttura Amazon valida",
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
+      "value" : "Date di impiego - da/a (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Ingresa un edificio válido de Amazon",
+      "value" : "Inserisci una struttura Amazon valida",
       "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
-      "value" : "No tengo un Número de Seguro Social",
+      "value" : "Non ho un numero di previdenza sociale",
       "note" : "Label for the no ssn checkbox"
     },
     "BB-BGC-no-ssn-modal-title" : {
-      "value" : "¿Estás seguro de que deseas seguir adelante sin un Número de Seguro Social (SSN)?",
+      "value" : "Sei sicuro di voler procedere senza un numero di previdenza sociale (SSN)?",
       "note" : "Title for the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "Si tienes un SSN, estás obligado a proporcionarlo. No hacerlo puede causar retrasos en el proceso de contratación, lo que puede hacer que pierdas tu fecha de inicio y tu turno seleccionado.",
+      "value" : "Se disponi di un numero di previdenza sociale, sei tenuto a fornirlo. In caso contrario, il processo di assunzione potrebbe subire dei ritardi, con il rischio di perdere la data di inizio e il turno prescelto.",
       "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Al continuar, confirmo que no tengo un SSN.  Entiendo que, tal y como lo permite la ley, Amazon realizará una verificación de mis antecedentes si cambio o actualizo mi SSN durante el proceso de incorporación o durante mi empleo.",
+      "value" : "Continuando, confermo di non avere un numero di previdenza sociale.  Sono a conoscenza del fatto che, come consentito dalla legge, Amazon effettuerà un controllo successivo sul mio conto se modifico o aggiorno il mio numero di previdenza sociale durante il processo di inserimento o durante il mio impiego.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
-      "value" : "También reconozco que cualquier tergiversación intencional de mi SSN será considerada por Amazon, y puede llevar a la revocación de mi oferta de empleo, o si soy contratado, a la terminación de mi empleo.",
+      "value" : "Riconosco inoltre che qualsiasi dichiarazione mendace intenzionale del mio SSN sarà presa in considerazione da Amazon e può comportare la revoca della mia offerta di lavoro o, se sono assunto, la cessazione del mio rapporto di lavoro.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-consent-checkbox" : {
-      "value" : "He leído y entendido los términos anteriores.",
+      "value" : "Ho letto e compreso i termini di cui sopra.",
       "note" : "consent checkbox in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-continue-button" : {
-      "value" : "Continuar",
+      "value" : "Continua",
       "note" : "continue button in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-cancel-button" : {
-      "value" : "Cancelar",
+      "value" : "Annulla",
       "note" : "cancel button in the no SSN modal"
     },
     "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
-      "value" : "Número de Seguro Social no disponible",
+      "value" : "Numero di previdenza sociale non disponibile",
       "note" : "Text display on national id number input when user check no ssn checkbox"
     },
     "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
-      "value" : "Proporcionar una firma electrónica",
+      "value" : "Fornisci una firma elettronica",
       "note" : "Text for the fcra form heading text"
     },
     "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
-      "value" : "Avisos específicos del Estado",
+      "value" : "Avvisi specifici dello stato",
       "note" : "Text for the non fcra State specific notices title text"
     },
     "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
-      "value" : "Revisa los avisos aplicables a continuación.",
+      "value" : "Consulta le comunicazioni applicabili di seguito.",
       "note" : "Text for the non fcra State specific notices review text"
     },
     "BB-BGC-non-fcra-esignature-certification-form-title" : {
-      "value" : "Firma electrónica",
+      "value" : "Firma elettronica",
       "note" : "Text for the non fcra e-signature certification title"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
-      "value" : "Con mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones contenidas en este documento de reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes. Indica tu aceptación ingresando la información solicitada en los campos siguientes.",
+      "value" : "Con la mia firma elettronica qui sotto, certifico di aver letto, compreso e accettato tutte le dichiarazioni contenute nel presente documento di accettazioni e autorizzazioni sul Non-Fair Credit Reporting Act per il controllo dei precedenti. Indica la tua accettazione inserendo le informazioni richieste nei campi sottostanti.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
-      "value" : "Escribe tu nombre completo como firma electrónica",
+      "value" : "Digita il tuo nome e cognome come firma elettronica",
       "note" : "Text for the non fcra acknowledgement and authorization input label text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
-      "value" : "Las firmas electrónicas no coinciden. Utiliza el mismo texto para cada firma electrónica.",
+      "value" : "Le firme elettroniche non corrispondono. Usa lo stesso testo per ogni firma elettronica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the non fcra form page next button text"
     },
     "BB-BGC-non-fcra-applicable-notice-text" : {
-      "value" : "Con mi firma electrónica a continuación, certifico que he leído y entiendo cualquier aviso estatal aplicable, incluidos los hipervínculos.",
+      "value" : "Con la mia firma elettronica di seguito, dichiaro di aver letto e compreso tutti gli avvisi di stato applicabili, inclusi i collegamenti ipertestuali.",
       "note" : "Text for the non fcra for the applicable notice"
     },
     "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
-      "value" : "Escribe tu nombre completo como firma electrónica",
+      "value" : "Digita il tuo nome e cognome come firma elettronica",
       "note" : "Text for the non fcra for the applicable notice signature input label text"
     },
     "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
-      "value" : "Deseo una copia gratis de mi verificación de antecedentes",
+      "value" : "Vorrei una copia gratuita del mio controllo dei precedenti",
       "note" : "Text for the non fcra for request copy of bgc radio label text"
     },
     "BB-already-applied" : {
-      "value" : "Ya iniciaste y/o completaste una solicitud para este trabajo.",
+      "value" : "Hai già iniziato e/o completato una candidatura per questo lavoro.",
       "note" : "Text for aleady applied job text"
     },
     "BB-already-applied-description" : {
-      "value" : "Regresa al panel para reanudar tu solicitud o ver la solicitud y la nueva cita de contratación, y tus próximos pasos.",
+      "value" : "Torna alla dashboard, riprendi la tua candidatura o visualizza i dettagli della candidatura e del nuovo appuntamento per l’assunzione e i passaggi successivi.",
       "note" : "Text for aleady applied job description text"
     },
     "BB-already-applied-button-text" : {
-      "value" : "Regresar al panel",
+      "value" : "Torna alla dashboard",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
     "BB-SelfId-disability-form-name-text" : {
-      "value" : "Formulario CC-305",
+      "value" : "Modulo CC-305",
       "note" : "Text for Self Identification form name"
     },
     "BB-SelfId-disability-form-control-number-text" : {
-      "value" : "Número de control OMB 1250-0005",
+      "value" : "Numero di controllo OMB 1250-0005",
       "note" : "Text for Self Identification control number"
     },
     "BB-SelfId-disability-form-expiration-date-text" : {
-      "value" : "Expira el 31/05/2023",
+      "value" : "Scade il 31/05/2023",
       "note" : "Text for Self Identification expiration date"
     },
     "BB-SelfId-disability-form-why-this-form-header-text" : {
-      "value" : "¿Por qué se te pide que completes este formulario?",
+      "value" : "Perché ti viene chiesto di compilare questo modulo?",
       "note" : "Text for why asked this form header text"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
-      "value" : "Somos un contratista o subcontratista federal que está obligado por ley a ofrecer igualdad de oportunidades de empleo a personas calificadas con discapacidad. También se nos exige que midamos nuestros progresos para conseguir que al menos el 7% de nuestra fuerza laboral sean personas con discapacidad. Para ello, debemos preguntar a los solicitantes y empleados si tienen alguna discapacidad o la han tenido alguna vez. Dado que una persona puede quedar discapacitada en cualquier momento, pedimos a todos nuestros empleados que actualicen su información al menos cada cinco años.",
+      "value" : "Siamo un appaltatore o subappaltatore federale tenuto per legge a fornire pari opportunità di lavoro a persone qualificate con disabilità. Siamo inoltre tenuti a misurare i nostri progressi verso l’ottenimento di almeno il 7% della nostra forza lavoro composta da persone con disabilità. Per fare ciò, dobbiamo chiedere ai candidati e ai dipendenti se hanno una disabilità o hanno mai avuto una disabilità. Poiché una persona può diventare disabile in qualsiasi momento, chiediamo a tutti i nostri dipendenti di aggiornare le proprie informazioni personali almeno ogni cinque anni.",
       "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
-      "value" : "Identificarte como persona con discapacidad es voluntario, y esperamos que elijas hacerlo. Tu respuesta se mantendrá confidencial y no será vista por los funcionarios encargados de la selección ni por ninguna otra persona que participe en la toma de decisiones de personal. Completar el formulario no te afectará negativamente de ninguna manera, independientemente de que te hayas identificado en el pasado. Si deseas obtener más información sobre este formulario o sobre las obligaciones en materia de igualdad de empleo de los contratistas federales en virtud de la sección 503 de la Ley de Rehabilitación, visita la página web de los EE. UU. Sitio web de la Oficina de Programas de Cumplimiento de Contratos Federales (OFCCP) del Departamento de Trabajo en <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "value" : "Identificarti come persona con disabilità è volontario e speriamo che tu scelga di farlo. La tua risposta verrà mantenuta riservata e non sarà visibile dai responsabili delle selezioni o da chiunque altro coinvolto nelle decisioni riguardanti il personale. La compilazione del modulo non avrà alcun impatto negativo su di te, indipendentemente dal fatto che tu ti sia autoidentificato in passato. Per ulteriori informazioni su questo modulo o sugli obblighi degli appaltatori federali in materia di parità di impiego ai sensi della Sezione 503 del Rehabilitation Act, visita il sito web dell'Ufficio federale dei programmi di conformità dei contratti federali (OFCCP) del Dipartimento del Lavoro degli Stati Uniti all'indirizzo<a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
       "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
     },
     "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
-      "value" : "¿Cómo sé si tengo alguna discapacidad?",
+      "value" : "Come faccio a sapere se ho una disabilità?",
       "note" : "Text for how I know I have disability header"
     },
     "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
-      "value" : "Se considera que tienes una discapacidad si tienes un impedimento físico o mental o una condición médica que limita sustancialmente una actividad vital importante o si tienes antecedentes de dicha discapacidad o condición médica.",
+      "value" : "Si è considerati disabili se si è affetti da una menomazione fisica o mentale o da una patologia che limita in modo sostanziale una delle principali attività della vita, o se si ha una storia o dei precedenti di tale menomazione o patologia.",
       "note" : "Text for how I know I have disability content"
     },
     "BB-SelfId-disability-form-disability-scope-list-header-text" : {
-      "value" : "Las discapacidades incluyen, pero no se limitan a:",
+      "value" : "Le disabilità includono, in maniera non esaustiva:",
       "note" : "Text for the disability scope/type list header text"
     },
     "BB-SelfId-disability-form-disability-item-autism-text" : {
@@ -685,207 +685,207 @@
       "note" : "Text for the disability item: autism"
     },
     "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
-      "value" : "Trastorno autoinmune",
+      "value" : "Malattia autoimmune",
       "note" : "Text for the disability item: Autoimmune disorder"
     },
     "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
-      "value" : "Ciego o baja visión",
+      "value" : "Non vedente o ipovedente",
       "note" : "Text the disability item: Blind or low vision"
     },
     "BB-SelfId-disability-form-disability-item-cancer-text" : {
-      "value" : "Cáncer",
+      "value" : "Cancro",
       "note" : "Text for the disability item: Cancer text"
     },
     "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
-      "value" : "Enfermedad cardiovascular o del corazón",
+      "value" : "Malattia cardiovascolare o cardiaca",
       "note" : "Text for the disability item: Cardiovascular or heart disease"
     },
     "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
-      "value" : "Enfermedad celíaca",
+      "value" : "Celiachia",
       "note" : "Text for the disability item: Celiac disease"
     },
     "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
-      "value" : "Parálisis cerebral",
+      "value" : "Paralisi cerebrale",
       "note" : "Text for the disability item: Cerebral palsy"
     },
     "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
-      "value" : "Sordos o con problemas de audición",
+      "value" : "Sordo o audioleso",
       "note" : "Text for the disability item: Deaf or hard of hearing"
     },
     "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
-      "value" : "Depresión o ansiedad",
+      "value" : "Depressione o ansia",
       "note" : "Text for the disability item: Depression or anxiety"
     },
     "BB-SelfId-disability-form-disability-item-diabetes-text" : {
-      "value" : "Diabetes",
+      "value" : "Diabete",
       "note" : "Text for the disability item: Diabetes"
     },
     "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
-      "value" : "Epilepsia",
+      "value" : "Epilessia",
       "note" : "Text for the disability item: Epilepsy"
     },
     "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
-      "value" : "Trastornos gastrointestinales, por ejemplo, la enfermedad de Crohn o el síndrome del intestino irritable",
+      "value" : "Disturbi gastrointestinali, per esempio, morbo di Crohn o sindrome dell'intestino irritabile",
       "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
     },
     "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
-      "value" : "Discapacidad intelectual",
+      "value" : "Disabilità intellettiva",
       "note" : "Text for the disability item: Intellectual disability"
     },
     "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
-      "value" : "Falta de extremidades o falta parcial de extremidades",
+      "value" : "Arti mancanti o arti parzialmente mancanti",
       "note" : "Text for the disability item:Missing limbs or partially missing limbs"
     },
     "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
-      "value" : "Afección del sistema nervioso, por ejemplo, migraña, enfermedad de Parkinson o esclerosis múltiple (EM)",
+      "value" : "Patologia del sistema nervoso, per esempio emicrania, morbo di Parkinson o sclerosi multipla (SM)",
       "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
     },
     "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
-      "value" : "Afección psiquiátrica, por ejemplo, trastorno bipolar, esquizofrenia, trastorno de estrés postraumático (TEPT) o depresión grave",
+      "value" : "Patologia psichiatrica, per esempio disturbo bipolare, schizofrenia, disturbo da stress post-traumatico o depressione maggiore",
       "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
     },
     "BB-SelfId-disability-form-card-title-text" : {
-      "value" : "Identificación voluntaria de discapacidad",
+      "value" : "Autoidentificazione volontaria della disabilità",
       "note" : "Text for the disability form card title"
     },
     "BB-SelfId-form-continue-button-text" : {
-      "value" : "Continuar",
+      "value" : "Continua",
       "note" : "Text for the Self Identification page form continue button text"
     },
     "BB-SelfId-disability-form-submit-button-text" : {
-      "value" : "Enviar",
+      "value" : "Invia",
       "note" : "Text for the submit disability form submit button text"
     },
     "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
-      "value" : "Marca una de las casillas siguientes",
+      "value" : "Seleziona una delle caselle qui sotto",
       "note" : "Text for the disability selection checkbox label text"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
-      "value" : "Sí, tengo una discapacidad, o tengo antecedentes/registro de tener una discapacidad",
+      "value" : "Sì, ho una disabilità o una storia/precedenti di disabilità",
       "note" : "Text for the disability selection checkbox item: YES"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
-      "value" : "No tengo ninguna discapacidad ni antecedentes/registro de tener una discapacidad",
+      "value" : "No, non ho una disabilità o una storia/precedenti di disabilità",
       "note" : "Text for the disability selection checkbox item: NO"
     },
     "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
-      "value" : "No deseo responder",
+      "value" : "Preferisco non rispondere",
       "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
     },
     "BB-SelfId-disability-form-disability-public-burden-header-text" : {
-      "value" : "Declaración de carga pública",
+      "value" : "Dichiarazione pubblica obbligatoria",
       "note" : "Text for the disability form Public burden statement header text"
     },
     "BB-SelfId-disability-form-disability-public-burden-content-text" : {
-      "value" : "De acuerdo con la Ley de Reducción del Papeleo de 1995, ninguna persona está obligada a responder a una recopilación de información a menos que dicha recopilación muestre un número de control OMB válido. Esta encuesta debería durar unos 5 minutos.",
+      "value" : "Secondo il Paperwork Reduction Act del 1995, nessuno è tenuto a rispondere a una raccolta di informazioni a meno che tale raccolta non abbia un numero di controllo OMB valido. Il completamento di questo sondaggio dovrebbe richiedere circa 5 minuti.",
       "note" : "Text for the disability form Public burden statement content text"
     },
     "BB-SelfId-equal-opportunity-form-title-text" : {
-      "value" : "Formulario de identificación voluntaria de igualdad de oportunidades",
+      "value" : "Modulo di autoidentificazione volontario per le pari opportunità",
       "note" : "Text for the equal opportunity form title"
     },
     "BB-SelfId-equal-opportunity-form-statement-text" : {
-      "value" : "Amazon valora todas las formas de diversidad y está sujeta a ciertos requisitos de mantenimiento de registros e informes de no discriminación y acción afirmativa que nos obligan a invitar a los candidatos y empleados a identificar voluntariamente su género y raza/etnia. La presentación de esta información es voluntaria y negarte a proporcionarla no te someterá a ningún tratamiento adverso. La información obtenida será confidencial y solo podrá utilizarse de acuerdo con las disposiciones de las leyes federales, órdenes ejecutivas y reglamentos aplicables, incluidos los que exigen que la información se resuma y se comunique al Gobierno Federal con fines de aplicación de los derechos civiles. Si eliges no identificar tu género o raza/etnia en este momento, el gobierno federal nos obliga a determinar esta información para los empleados mediante una encuesta visual y/u otra información disponible.",
+      "value" : "Amazon apprezza tutte le forme di diversità ed è soggetta a determinati requisiti di registrazione e segnalazione in materia di non discriminazione e di azioni positive che ci impongono di invitare i candidati e i dipendenti ad auto-identificare volontariamente il proprio genere e la propria razza/etnia. L’invio di queste informazioni è del tutto volontario e il rifiuto di fornirle non comporta alcuna conseguenza negativa. Le informazioni ottenute saranno mantenute riservate e potranno essere usate solo in conformità con le disposizioni delle leggi, degli ordini esecutivi e dei regolamenti federali applicabili, compresi quelli che richiedono che le informazioni siano riassunte e comunicate al governo federale ai fini dell'applicazione dei diritti civili. Se scegli di non autoidentificare il tuo sesso o razza/etnia in questo momento, il governo federale ci richiede di determinare queste informazioni per i dipendenti mediante sondaggio visivo e/o altre informazioni disponibili.",
       "note" : "Text for the equal opportunity form statement text"
     },
     "BB-SelfId-equal-opportunity-form-gender-label-text" : {
-      "value" : "¿Cuál es tu género?",
+      "value" : "Qual è il tuo sesso?",
       "note" : "Text for the equal opportunity form : gender label text"
     },
     "BB-SelfId-equal-opportunity-form-gender-male-text" : {
-      "value" : "Hombre",
+      "value" : "Maschio",
       "note" : "Text for the equal opportunity form gender option: Male"
     },
     "BB-SelfId-equal-opportunity-form-gender-female-text" : {
-      "value" : "Mujer",
+      "value" : "Femmina",
       "note" : "Text for the equal opportunity form gender option: Female"
     },
     "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Scelgo di non identificarmi",
       "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
-      "value" : "¿Cuál es tu origen racial/étnico?",
+      "value" : "Qual è la tua razza/etnia di provenienza?",
       "note" : "Text for the equal opportunity form : ethnicity label text"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
-      "value" : "Indio americano/nativo de Alaska (no hispano ni latino)",
+      "value" : "Indiano americano/nativo dell'Alaska (non ispanico o latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios de América del Norte y del Sur, (incluida América Central), y que mantienen una afiliación tribal o vínculo comunitario",
+      "value" : "Persone con origini in uno dei popoli originari del Nord e del Sud America (compresa l'America Centrale), e che mantengono un'affiliazione tribale o un attaccamento alla comunità",
       "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
-      "value" : "Asiático (no hispano ni latino)",
+      "value" : "Asiatico (non ispanico o latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios del Extremo Oriente, el Sudeste Asiático o el Subcontinente Indio, incluyendo, por ejemplo, Camboya, China, India, Japón, Corea, Malasia, Pakistán, las Islas Filipinas, Tailandia y Vietnam",
+      "value" : "Persone con origini in uno qualsiasi dei popoli originari dell'Estremo Oriente, del Sud-est asiatico o del subcontinente indiano; tra cui, ad esempio, Cambogia, Cina, India, Giappone, Corea, Malesia, Pakistan, Isole Filippine, Thailandia e Vietnam",
       "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
-      "value" : "Negro/afroamericano (no hispano ni latino)",
+      "value" : "Nero/afroamericano (non ispanico o latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los grupos raciales negros de África",
+      "value" : "Persone con origini in uno qualsiasi dei gruppi razziali neri dell'Africa",
       "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
-      "value" : "Hispano/Latino",
+      "value" : "Ispanico/Latino",
       "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
-      "value" : "Personas de origen cubano, mexicano, puertorriqueño, sudamericano o centroamericano, o de otra cultura u origen español, independientemente de su raza",
+      "value" : "Persone di cultura o origine cubana, messicana, portoricana, sudamericana o centroamericana o di altra cultura o origine spagnola, indipendentemente dalla razza",
       "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
-      "value" : "Hawaiano nativo/otro isleño del Pacífico (no hispano ni latino)",
+      "value" : "Nativo hawaiano/di altre isole del Pacifico (non ispanico o latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos de Hawai, Guam, Samoa u otras islas del Pacífico",
+      "value" : "Persone con origini in uno qualsiasi dei popoli delle Hawaii, Guam, Samoa o altre isole del Pacifico",
       "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
-      "value" : "Blanco (no hispano ni latino)",
+      "value" : "Bianco (non ispanico o latino)",
       "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
-      "value" : "Personas con orígenes en cualquiera de los pueblos originarios de Europa, Oriente Medio o África del Norte",
+      "value" : "Persone con origini in uno dei popoli originari dell'Europa, del Medio Oriente o del Nord Africa",
       "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
-      "value" : "Dos o más razas (no hispano ni latino)",
+      "value" : "Due o più razze (non ispaniche o latine)",
       "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
-      "value" : "Personas no hispanas que se identifican con más de una de las cinco razas siguientes: (1) blanco, (2) negro, (3) asiático, (4) hawaiano nativo/otro isleño del Pacífico, (5) indio americano/nativo de Alaska",
+      "value" : "Persone non ispaniche che si identificano con più di una delle seguenti cinque razze: (1) bianco, (2) nero, (3) asiatico, (4) nativo hawaiano/di altre isole del Pacifico, (5) indiano d'America/nativo dell'Alaska",
       "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Scelgo di non identificarmi",
       "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
     },
     "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the equal opportunity form ethinicity next button"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
-      "value" : "En Amazon, miles de veteranos y cónyuges de militares impulsan la innovación y elevan el nivel de la experiencia del cliente. A diario, las personas con formación militar pueden aplicar sus conocimientos, habilidades y capacidades de liderazgo en una amplia variedad de carreras, influyendo en el cambio en todo el mundo. Por estas razones, buscamos activamente la contratación de veteranos y cónyuges militares.",
+      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia varietà di carriere, influenzando il cambiamento in tutto il mondo. Per questi motivi, stiamo attivamente perseguendo l'assunzione di veterani e coniugi di militari.",
       "note" : "Text for the veteran status statement paragraph 1 text"
     },
     "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
-      "value" : "En Amazon, miles de veteranos y cónyuges de militares impulsan la innovación y elevan el nivel de la experiencia del cliente. A diario, las personas con formación militar pueden aplicar sus conocimientos, habilidades y capacidades de liderazgo en una amplia variedad de carreras, influyendo en el cambio en todo el mundo. Por estas razones, buscamos activamente la contratación de veteranos y cónyuges de militares.",
+      "value" : "In Amazon, migliaia di veterani e di coniugi di militari stanno favorendo l'innovazione e migliorando il livello dell'esperienza dei clienti. Ogni giorno, coloro che hanno un background militare sono in grado di applicare le proprie conoscenze, abilità e capacità di leadership in un'ampia varietà di carriere, influenzando il cambiamento in tutto il mondo. Per questi motivi, stiamo attivamente perseguendo l'assunzione di veterani e coniugi di militari.",
       "note" : "Text for the veteran status statement  paragraph 2 text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
-      "value" : "¿Eres un veterano?",
+      "value" : "Sei un veterano?",
       "note" : "Text for the equal opportunity form : veteran status label text"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text for the equal opportunity form veteran status item: YES"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
@@ -893,15 +893,15 @@
       "note" : "Text for the equal opportunity form veteran status item: NO"
     },
     "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Scelgo di non identificarmi",
       "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
-      "value" : "¿Eres cónyuge de un militar?",
+      "value" : "Sei un coniuge di militare?",
       "note" : "Text for the equal opportunity form : military spouse label text"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text for the equal opportunity form military-spouse item: YES"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
@@ -909,59 +909,59 @@
       "note" : "Text for the equal opportunity form military-spouse item: NO"
     },
     "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Scelgo di non identificarmi",
       "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
-      "value" : "Amazon es un contratista del Gobierno Federal sujeto a la Ley de Asistencia para la Readaptación de los Veteranos de la Era de Vietnam de 1974, modificada por la Ley de Empleos para Veteranos de 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), que exige que los contratistas del Gobierno que tomen medidas afirmativas para emplear y promover el empleo de (1) veteranos discapacitados, (2) veteranos recientemente separados, (3) veteranos en servicio activo de guerra o con insignias de campaña y (4) veteranos con medalla de servicio de las Fuerzas Armadas. La siguiente invitación para identificar tu condición de veterano protegido se realiza de conformidad con la sección 4212. La divulgación de esta información es completamente voluntaria y negarte a proporcionarla no te someterá a ningún tratamiento adverso.",
+      "value" : "Amazon è un appaltatore del governo federale soggetto al Vietnam Era Veterans' Readjustment Assistance Act del 1974, modificato dal Jobs for Veterans Act del 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), che richiede agli appaltatori governativi di adottare azioni positive per l'assunzione e l'avanzamento di carriera di (1) veterani disabili; (2) veterani congedati di recente; (3) veterani in servizio attivo in tempo di guerra o con distintivo di campagna; e (4) veterani con medaglia di servizio delle Forze Armate. Il seguente invito ad autoidentificare il tuo status di veterano protetto viene fatto ai sensi della Sezione 4212. La divulgazione di queste informazioni è del tutto volontaria e il rifiuto di fornirle non comporta alcuna conseguenza negativa.",
       "note" : "Text for the equal opportunity form protected veteran statement"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
-      "value" : "<b>Un veterano protegido</b> es cualquiera de los siguientes:",
+      "value" : "<b>Un veterano protetto</b> è uno dei seguenti:",
       "note" : "Text for the title of protected veteran meaning list"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
-      "value" : "<b>Veterano discapacitado</b>: un veterano del servicio militar, terrestre, naval o aéreo de EE. UU. que tiene derecho a una indemnización (o quien, si no recibe una pensión de militar jubilado, tendría derecho a una indemnización) en virtud de las leyes administradas por el secretario de Asuntos de Veteranos, o una persona que fue dada de baja o liberada del servicio activo debido a una discapacidad relacionada con el servicio.",
+      "value" : "<b>Veterano disabile</b>: un veterano dei militari statunitensi, di terra, navale o aereo Uniti che ha diritto a un indennizzo (o che, se non ricevesse l'indennità di pensionamento militare, avrebbe diritto a un indennizzo) ai sensi delle normative amministrate dal Segretario degli Affari dei Veterani; o una persona che è stata congedata o dispensata dal servizio attivo a causa di una disabilità connessa al servizio.",
       "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
-      "value" : "</b>: cualquier veterano durante el período de tres años que comienza en la fecha de su baja o liberación del servicio activo en el servicio militar terrestre, naval o aéreo de EE. UU.",
+      "value" : "</b>: qualsiasi veterano durante il periodo di tre anni a partire dalla data di congedo o dispensa dal servizio attivo nelle forze armate statunitensi, di terra, navali o aeree.",
       "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
-      "value" : "<b>Veterano de guerra o con insignia de campaña en servicio activo</b>: un veterano que sirvió en servicio activo en los EE. UU. y cuya insignia fue autorizado en virtud de las leyes administradas por el Departamento de Defensa.",
+      "value" : "<b>Veterano in servizio attivo durante la guerra o titolare di distintivo della campagna</b>: un veterano che ha prestato servizio attivo per gli Stati Uniti a cui è stato riconosciuto un distintivo ai sensi delle normative del Dipartimento della Difesa.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
-      "value" : "<b>Veterano con medalla de servicio de las Fuerzas Armadas</b>: un veterano que, mientras estaba en servicio activo en el servicio militar terrestre, naval o aéreo de  EE. UU., participó en una operación militar de los Estados Unidos por la que se concedió una medalla de servicio de las Fuerzas Armadas de acuerdo con la <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Orden Ejecutiva</a>.",
+      "value" : "<b>Veterano con medaglia al servizio delle forze armate</b>: un veterano che, mentre prestava servizio attivo nei militari degli Stati Uniti, di terra, navali o aerei, ha partecipato a un'operazione militare degli Stati Uniti per la quale è stata assegnata una medaglia al servizio delle Forze Armate ai sensi dell’<a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>Ordine Esecutivo</a>.",
       "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
-      "value" : "Si crees que perteneces a alguna de las categorías de veteranos protegidos, indícalo marcando la casilla correspondiente a continuación.",
+      "value" : "Se ritieni di appartenere a una delle categorie di veterani protetti, indicalo selezionando la casella appropriata qui sotto.",
       "note" : "Text for the protected veteran select form label text"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text for the protected veteran select form option: Yes"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
-      "value" : "Elijo no identificarme",
+      "value" : "Scelgo di non identificarmi",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the protected veteran select form next button text"
     },
     "BB-cali-disclosure-page-title-text" : {
-      "value" : "Divulgación en California de los informes de investigación de los consumidores",
+      "value" : "Informativa della California sui rapporti investigativi sui consumatori",
       "note" : "Text for the california disclosure page title text"
     },
     "BB-cali-disclosure-page-in-connection-text" : {
-      "value" : "En relación con mi posible empleo con Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), Amazon puede solicitar un informe de investigación del consumidor (“Informe”), también conocido como verificación de antecedentes, sobre mí de la siguiente agencia de informes del consumidor:",
+      "value" : "In relazione al mio possibile impiego presso Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”), Amazon può acquisire un rapporto investigativo sui consumatori (“Rapporto”), noto anche come controllo dei precedenti, su di me dalla seguente agenzia di rapporti sui consumatori:",
       "note" : "Text for the california disclosure page in connection paragraph text"
     },
     "BB-cali-disclosure-page-vendor-accurate-name-text" : {
-      "value" : "Accurate Background, LLECO (\"Accurate\")",
+      "value" : "Accurate Background, LLC (“Accurate”)",
       "note" : "Text for the california disclosure page vendor accurate name text"
     },
     "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
@@ -981,31 +981,31 @@
       "note" : "Text for the california disclosure page vendor accurate home page url number text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
-      "value" : "Entiendo que:",
+      "value" : "Sono consapevole che:",
       "note" : "Text for the california disclosure page vendor accurate understand text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
-      "value" : "En la medida que se solicite un informe a Accurate, la información contenida en dicho informe se utilizará únicamente para determinar mi idoneidad para el empleo.",
+      "value" : "Nella misura in cui viene richiesto un rapporto ad Accurate, le informazioni contenute in tale rapporto verranno usate esclusivamente per determinare la mia idoneità all'impiego.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
-      "value" : "La información obtenida por Accurate, e incluida en cualquier informe, puede obtenerse a través de diversos medios, incluida la investigación de documentos e información disponibles de forma legal y/o contacto directo o indirecto, y entrevistas con exempleadores, escuelas, instituciones financieras, arrendatarios, agencias públicas y otros como mis vecinos, amigos y colegas a los que conozco y que puedan tener tal conocimiento.",
+      "value" : "Le informazioni ottenute da Accurate, e incluse in qualsiasi rapporto, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, proprietari di abitazioni, enti pubblici, e altri come i miei vicini, amici e colleghi che conosco e che potrebbero avere tale conoscenza.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
-      "value" : "Las investigaciones que llevará a cabo Accurate, cuyos resultados podrán incluirse en cualquier Informe proporcionado a Amazon, podrá incluir diversos tipos de información sobre mí en relación con mi carácter, reputación general, características personales o modo de vida, antecedentes laborales, educación, historial de conducción y antecedentes penales, con sujeción a las limitaciones impuestas por las leyes federales y estatales aplicables.\n",
+      "value" : "Le indagini che devono essere condotte da Accurate, i cui risultati possono essere inclusi in qualsiasi rapporto fornito ad Amazon, possono includere vari tipi di informazioni su di me in merito a carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
-      "value" : "Según el Código Civil de California § 1785 et seq. y § 1786 et seq., si Amazon solicita algún informe sobre mí, puedo ver el archivo que Accurate mantiene sobre mí durante su horario habitual de oficina. Entiendo que también puedo: (1) obtener una copia de este archivo, al presentar una identificación adecuada y pagar el costo de la copia, por correo certificado o al presentarme personalmente en las oficinas de Accurate durante su horario habitual de oficina después de haber avisado con razonable anticipación de mi plan de visita; y (2) recibir un resumen telefónico de este archivo por parte de Accurate a mi cargo, al presentar una identificación válida y una solicitud por escrito a Accurate para su información telefónica. Entiendo que Accurate tiene disponible personal capacitado para explicarme su informe, incluida cualquier información codificada, y, si me presento en persona en las oficinas de Accurate, puede acompañarme otra persona siempre que esta proporcione una identificación adecuada a Accurate.",
+      "value" : "Secondo il Codice Civile della California § 1785 e seguenti e § 1786 e seguenti, se viene richiesto da Amazon un rapporto su di me, posso visionare il fascicolo che Accurate conserva su di me durante il suo normale orario di ufficio. Sono consapevole che posso anche (1) ottenere una copia del suddetto fascicolo, dietro presentazione di un opportuno documento di identità e pagamento dei costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di Accurate durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia presenza; e (2) ricevere una sintesi del suddetto fascicolo da Accurate per telefono, a mie spese, dietro presentazione di un documento di identità adeguato e di una richiesta scritta ad Accurate di comunicazione telefonica. Sono a conoscenza del fatto che Accurate dispone di personale qualificato per fornirmi spiegazioni sul suddetto fascicolo, comprese eventuali informazioni codificate, e che, se mi dovessi presentare di persona presso gli uffici di Accurate, posso essere accompagnato da un'altra persona, purché questa fornisca ad Accurate un documento di identità adeguato.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
-      "value" : "La información sobre las prácticas de privacidad de Accurate está disponible en <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
+      "value" : "Le informazioni sulle pratiche sulla privacy sono disponibili all’indirizzo <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-name-text" : {
-      "value" : "First Advantage",
+      "value" : "Primo vantaggio",
       "note" : "Text for the california disclosure page vendor fadv name text"
     },
     "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
@@ -1025,207 +1025,207 @@
       "note" : "Text for the california disclosure page vendor fadv home page url number text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
-      "value" : "Comprendo que:",
+      "value" : "Capisco che:",
       "note" : "Text for the california disclosure page vendor fadv understand text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
-      "value" : "En la medida en que se solicite un informe a First Advantage, la información contenida en dicho informe se utilizará únicamente para determinar mi idoneidad para el empleo.",
+      "value" : "Nella misura in cui viene richiesto un Rapporto a First Advantage, le informazioni contenute in tale Rapporto verranno utilizzate esclusivamente per determinare la mia idoneità all'impiego.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
-      "value" : "La información obtenida por First Advantage, e incluida en cualquier informe, puede obtenerse a través de diversos medios, incluida la investigación de documentos e información disponibles de forma legal y/o contacto directo o indirecto, y entrevistas con exempleadores, escuelas, instituciones financieras, arrendatarios, oficinas públicas y otros como mis vecinos, amigos y colegas a los que conozco y que puedan tener tal conocimiento.",
+      "value" : "Le informazioni ottenute da First Advantage, e incluse in qualsiasi Report, possono essere ottenute attraverso una serie di mezzi, tra cui l'ispezione di documenti e informazioni legalmente disponibili e/o contatti diretti o indiretti e colloqui con ex datori di lavoro, scuole, istituti finanziari, proprietari, enti pubblici, e altri come i miei vicini, amici e colleghi che conosco e che potrebbero avere tale conoscenza.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
-      "value" : "Las investigaciones que realizará First Advantage, cuyos resultados pueden incluirse en cualquier informe proporcionado a Amazon, pueden incluir varios tipos de información sobre mí con respecto a mi carácter, reputación en general, características personales o estilo de vida, empleo e historial laboral, educación, registro de conducción y antecedentes penales, con apego a las limitaciones impuestas por las leyes federales y estatales vigentes.",
+      "value" : "Le indagini che devono essere condotte da First Advantage, i cui risultati possono essere inclusi in qualsiasi Report fornito ad Amazon, possono includere vari tipi di informazione su di me in merito al mio carattere, reputazione generale, caratteristiche personali o modo di vivere, impiego e storia lavorativa, istruzione, precedenti di guida e precedenti penali, fatte salve eventuali limitazioni imposte dalla legge federale e statale applicabile.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
-      "value" : "Según el Código Civil de California § 1785 et seq. y § 1786 et seq., si Amazon solicita algún informe sobre mí, puedo ver el archivo que First Advantage mantiene sobre mí durante su horario habitual de oficina. Entiendo que también puedo: (1) obtener una copia de este archivo, al presentar una identificación válida y pagar el costo de la copia, por correo certificado o al presentarme personalmente en las oficinas de First Advantage durante su horario habitual de oficina, después de haber avisado con razonable anticipación de mi plan de visita; y (2) recibir un resumen telefónico de este archivo por parte de First Advantage a mi cargo, al presentar una identificación válida y una solicitud por escrito a First Advantage para información telefónica. Entiendo que First Advantage tiene disponible personal capacitado para explicarme su informe, incluida cualquier información codificada, y si me presento en persona en las oficinas de First Advantage, puede acompañarme otra persona siempre que esta proporcione una identificación válida a First Advantage.",
+      "value" : "Secondo il codice civile della California § 1785 e seguenti. e § 1786 e seguenti, se viene richiesto da Amazon un rapporto su di me, posso visualizzare il file che First Advantage conserva su di me durante il normale orario di ufficio. Comprendo che posso anche (1) ottenere una copia di questo file, dopo aver inviato una corretta identificazione e pagando i costi di copia, tramite posta raccomandata o presentandomi di persona presso gli uffici di First Advantage durante il normale orario di ufficio dopo aver fornito un ragionevole preavviso della mia apparizione programmata; e (2) ricevere un riepilogo di questo file da First Advantage per telefono, a mie spese, dopo aver inviato un'identificazione adeguata e una richiesta scritta a First Advantage per la divulgazione telefonica. Comprendo che First Advantage ha personale qualificato disponibile per spiegarmi il suo fascicolo, comprese eventuali informazioni codificate, e, se mi presento di persona presso gli uffici di First Advantage, potrei essere accompagnato da un'altra persona purché quella persona fornisca un'identificazione adeguata a First Advantage.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
     },
     "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
-      "value" : "La información sobre las políticas de privacidad de First Advantage está disponible en <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>.",
+      "value" : "Le informazioni sulle pratiche sulla privacy di First Advantage sono disponibili all'indirizzo <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>.",
       "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
     },
     "BB-cali-disclosure-page-certify-checkbox-text" : {
-      "value" : "Declaro que he leído este documento, que lo entiendo, y que de conformidad con esta INFORMACIÓN DE CALIFORNIA SOBRE LOS INFORMES DE INVESTIGACIÓN DE CONSUMIDORES, autorizo a Amazon a obtener un informe de investigación del consumidor acerca de mi persona.",
+      "value" : "Dichiaro di aver letto questo documento e di averlo compreso e che, ai sensi della presente INFORMATIVA DELLA CALIFORNIA SUI RAPPORTI INVESTIGATIVI DEI CONSUMATORI, autorizzo Amazon a ottenere un report investigativo dei consumatori su di me.",
       "note" : "Text for the california disclosure page certify checkbox text"
     },
     "BB-cali-disclosure-page-next-button-text" : {
-      "value" : "Siguiente",
+      "value" : "Avanti",
       "note" : "Text for the california disclosure page next button text"
     },
     "BB-nhe-page-title-text" : {
-      "value" : "¡Ya casi terminas, {firstname} {lastname}! Necesitamos que vengas para la foto del distintivo, completar el permiso de trabajo y la prueba de drogas, si corresponde.",
+      "value" : "Ci sei quasi,{firstname} {lastname}! Abbiamo bisogno che tu venga per una foto del badge, un'autorizzazione completa per lavorare e un test antidroga, se applicabile.",
       "note" : "Text for the nhe page title"
     },
     "BB-nhe-page-confirm-selection-button-text" : {
-      "value" : "Confirmar selección",
+      "value" : "Conferma la selezione",
       "note" : "Text for the nhe page confirm selection button text"
     },
     "BB-nhe-page-header-text" : {
-      "value" : "Programar cita previa a la contratación",
+      "value" : "Pianifica un appuntamento pre-assunzione",
       "note" : "Text for the nhe page header text"
     },
     "BB-nhe-few-spots-remaining-text" : {
-      "value" : "Quedan muy pocos lugares",
+      "value" : "Sono rimasti pochissimi posti",
       "note" : "Text for the nhe page few spots remaining text"
     },
     "BB-SelfId-veteran-status-title-text" : {
-      "value" : "Autoidentificación voluntaria de condición de veterano",
+      "value" : "Autoidentificazione volontaria dello status di veterano",
       "note" : "Text for the veteran status form title text"
     },
     "BB-counter-message-banner-text" : {
-      "value" : "Estamos reservando un lugar para ti durante las próximas {hours} horas y {minutes} minutos para realizar los pasos faltantes.",
+      "value" : "Abbiamo un posto per te per le prossime {hours} ore e {minutes} minuti per completare i passaggi rimanenti.",
       "note" : "Text for the holding spot time counter banner message"
     },
     "BB-candidate-withdraws-thank-you-text" : {
-      "value" : "Gracias por tu interés, pero en este momento no podemos ofrecerte un empleo.",
+      "value" : "Grazie per il tuo interesse, ma al momento non siamo in grado di offrirti un lavoro.",
       "note" : "Text for the thanking candidate for their interest to apply for a job"
     },
     "BB-candidate-withdraws-withdraw-reason-text" : {
-      "value" : "La información que proporcionaste no cumple con nuestros requisitos. Te recomendamos que veas los empleos en amazon.jobs.",
+      "value" : "Le informazioni fornite non soddisfano i nostri requisiti. Ti invitiamo a esaminare le offerte di lavoro su amazon.jobs.",
       "note" : "Text for the reason to withdraw candidate application"
     },
     "BB-candidate-withdraws-back-to-dashboard-button-text" : {
-      "value" : "Volver al tablero",
+      "value" : "Torna alla dashboard",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-not-eligible-heading-text" : {
-      "value" : "{name}, tu interés por Amazon significa mucho para nosotros.",
+      "value" : "{name}, il tuo interesse per Amazon significa molto per noi.",
       "note" : "Text for the assessment not eligible heading text"
     },
     "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
-      "value" : "Muchas gracias por darnos la oportunidad de considerarte para este puesto. Lamentablemente, no proseguiremos con tu candidatura en este momento.",
+      "value" : "Grazie mille per averci dato l'opportunità di considerarti per questa posizione. Purtroppo in questo momento non possiamo portare avanti la tua candidatura.",
       "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
     },
     "BB-assessment-not-eligible-reconsideration-notice-text" : {
-      "value" : "Para ser reconsiderado para este rol en otro momento, puedes volver a realizar la evaluación en tres meses.",
+      "value" : "Per essere riconsiderato per questo ruolo in un altro momento, è possibile eseguire nuovamente la valutazione tra tre mesi.",
       "note" : "Text for the text to let candidate know when to reconsider the assessment again"
     },
     "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
-      "value" : "Volver al tablero",
+      "value" : "Torna alla dashboard",
       "note" : "Text for back to dashboard button text"
     },
     "BB-assessment-consent-assessment-heading-text" : {
-      "value" : "Evaluación",
+      "value" : "Valutazione",
       "note" : "Text for the assessment consent page assessment heading text"
     },
     "BB-assessment-consent-excited-in-candidate-interest-text" : {
-      "value" : "¡Estamos muy emocionados por tu interés en unirte a Amazon!",
+      "value" : "Siamo davvero entusiasti del tuo interesse ad entrare a far parte di Amazon!",
       "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
     },
     "BB-assessment-consent-purpose-of-assessment-text" : {
-      "value" : "Esta evaluación te ayudará a entender el rol del empleado y nos ayudará a conocerte.",
+      "value" : "Questa valutazione ti aiuterà a comprendere il ruolo dell'associato e ci aiuterà a conoscerti.",
       "note" : "Text to let candidate know the purpose of Assessment"
     },
     "BB-assessment-consent-accommodation-heading-text" : {
-      "value" : "Ajustes",
+      "value" : "Alloggi",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
     "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "En Amazon, honramos la diversidad de nuestra fuerza laboral y las diversas formas en que trabajamos. Si tienes una discapacidad y requieres algún ajuste durante el proceso de contratación, incluida la evaluación, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "value" : "In Amazon, celebriamo la diversità della nostra forza lavoro e i diversi modi in cui lavoriamo. Se hai una disabilità e hai bisogno di un alloggio durante il processo di assunzione, compresa la valutazione, visita<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Ninguna parte de la evaluación está cronometrada</b>; puedes trabajar a tu propio ritmo. Todas las secciones de esta evaluación:",
+      "value" : "<b>Nessuna parte della valutazione è programmata</b>: puoi lavorare secondo i tuoi ritmi. Tutte le sezioni di questa valutazione:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
-      "value" : "Están optimizados para los siguientes lectores de pantalla: VoiceOver (Mac) y NVDA (Windows) en Firefox, Chrome y Edge (Windows).",
+      "value" : "Sono ottimizzati per i seguenti screen reader: VoiceOver (Mac) e NVDA (Windows) su Firefox, Chrome ed Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
-      "value" : "Se puede ingresar mediante el mouse o teclado.",
+      "value" : "È possibile accedervi tramite mouse o tastiera.",
       "note" : "Text for the assessment pace and sections of the assessments list item 2"
     },
     "BB-assessment-consent-begin-assessment-button-text" : {
-      "value" : "Comenzar evaluación",
+      "value" : "Inizia la valutazione",
       "note" : "Text for the begin assessment button text"
     },
     "BB-ReviewSubmit-header-title-text" : {
-      "value" : "Revisar y enviar",
+      "value" : "Rivedi e invia",
       "note" : "Text for the review and submit title text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
-      "value" : "Detalles del empleo",
+      "value" : "Dettagli mansione",
       "note" : "Text for the job details section title text"
     },
     "BB-ReviewSubmit-job-details-section-background-check-text" : {
-      "value" : "Verificación de antecedentes",
+      "value" : "Controllo dei precedenti",
       "note" : "Text for the job details section background check text"
     },
     "BB-ReviewSubmit-job-details-section-authorized-text" : {
-      "value" : "Autorizado",
+      "value" : "Autorizzato",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
-      "value" : "Enviar copia gratuita de verificación de antecedentes",
+      "value" : "Invia una copia gratuita del controllo dei precedenti",
       "note" : "Text for the job details section authorized text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
-      "value" : "Tipo de ID nacional:",
+      "value" : "Tipo di carta d'identità nazionale:",
       "note" : "Text for the job details section national ID type text"
     },
     "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
-      "value" : "Número de ID nacional:",
+      "value" : "Numero della carta d'identità nazionale:",
       "note" : "Text for the job details section national ID number text"
     },
     "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
-      "value" : "Fecha de nacimiento:",
+      "value" : "Data di nascita:",
       "note" : "Text for the job details section date of birth text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
-      "value" : "Cita previa a la contratación",
+      "value" : "Appuntamento pre-assunzione",
       "note" : "Text for the pre-hire appointment section title text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
-      "value" : "Horario:",
+      "value" : "Ore:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
-      "value" : "Esperamos verte en el horario indicado anteriormente.",
+      "value" : "Non vediamo l'ora di vederti al momento sopra indicato.",
       "note" : "Text for the pre-hire appointment section look forward text"
     },
     "BB-ReviewSubmit-selfId-section-title-text" : {
-      "value" : "Autoidentificación voluntaria",
+      "value" : "Autoidentificazione volontaria",
       "note" : "Text for the voluntary self-identification section title text"
     },
     "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
-      "value" : "Igualdad de oportunidades:",
+      "value" : "Pari opportunità:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
     "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "Condición de veterano:",
+      "value" : "Status di veterano:",
       "note" : "Text for the voluntary self-identification section veteral status text"
     },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
-      "value" : "Condición de discapacidad:",
+      "value" : "Stato di disabilità:",
       "note" : "Text for the voluntary self-identification section disability status text"
     },
     "BB-ReviewSubmit-submit-application-button-text" : {
-      "value" : "Enviar solicitud",
+      "value" : "Invia richiesta",
       "note" : "Text for the review and submit page submit application button text"
     },
     "BB-ThankYou-thank-you-title-text" : {
-      "value" : "¡Gracias por presentar tu solicitud en Amazon!",
+      "value" : "Grazie per aver inviato la tua candidatura per lavorare con Amazon.",
       "note" : "Text for the thank you page thank you title text"
     },
     "BB-ThankYou-look-forward-next-steps-text" : {
-      "value" : "Esperamos verte pronto. Estos son tus siguientes pasos:",
+      "value" : "Non vediamo l'ora di incontrarti. Ecco i tuoi prossimi passi:",
       "note" : "Text for the thank you page look forward and next steps text"
     },
     "BB-ThankYou-referral-details-title-text" : {
-      "value" : "Proporciona los detalles de la referencia (si corresponde)",
+      "value" : "Fornire i dettagli del riferimento (se applicabile)",
       "note" : "Text for the thank you page referral details input title text"
     },
     "BB-ThankYou-referral-details-description-text" : {
-      "value" : "¿Te refirió un empleado de Amazon?",
+      "value" : "Sei stato segnalato da un dipendente Amazon esistente?",
       "note" : "Text for the thank you page referral details description text"
     },
     "BB-ThankYou-referral-details-yes-text" : {
-      "value" : "Sí",
+      "value" : "Sì",
       "note" : "Text for the thank you page referral details radio button 'yes' text"
     },
     "BB-ThankYou-referral-details-no-text" : {
@@ -1233,71 +1233,71 @@
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
     "BB-ThankYou-start-pre-hire-activities-title-text" : {
-      "value" : "Comenzar las actividades previas a la contratación",
+      "value" : "Inizia con le attività pre-assunzione",
       "note" : "Text for the thank you page start pre-hire activities title text"
     },
     "BB-ThankYou-fill-wotc-description-text" : {
-      "value" : "Antes de tu cita previa a la contratación, llena el cuestionario de crédito fiscal de oportunidades laborales.",
+      "value" : "Prima dell'appuntamento pre-assunzione, compila il questionario sul credito d'imposta sulle opportunità di lavoro.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
     "BB-ThankYou-get-started-button-text" : {
-      "value" : "Comencemos",
+      "value" : "Iniziamo",
       "note" : "Text for the thank you page let's get started button text"
     },
     "BB-ThankYou-get-pre-hire-appointment-details-text" : {
-      "value" : "Detalles de cita previa a la contratación",
+      "value" : "Dettagli dell'appuntamento pre-assunzione",
       "note" : "Text for the thank you page pre-hire appointment details text"
     },
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
-      "value" : "Visítanos para una sesión de 30 minutos en cualquier momento entre las {startTime} y las {endTime}.",
+      "value" : "Vieni a trovarci per una sessione di 30 minuti in qualsiasi momento tra le {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
-      "value" : "Detalles de la cita",
+      "value" : "Dettagli dell'appuntamento",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
-      "value" : "Elementos para presentar",
+      "value" : "Cose da portare",
       "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
-      "value" : "ID original vigente con foto",
+      "value" : "Documento d'identità originale non scaduto",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
     },
     "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
-      "value" : "Documento original vigente del permiso de trabajo",
+      "value" : "Documento in originale di autorizzazione al lavoro non scaduto",
       "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
     },
     "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Haz clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de la documentación aceptable.",
+      "value" : "Fare clic <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>qui</a> per un elenco completo dei documenti accettabili.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
-      "value" : "Asistencia especial",
+      "value" : "Assistenza speciale",
       "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
     },
     "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
-      "value" : "Si necesitas algún tipo de ajuste, como un intérprete de ASL para el evento de contratación, dirígete a <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> y chatea con nosotros para solicitar un intérprete. Contáctanos inmediatamente después de programar la cita. Necesitamos al menos 48 horas antes de tu cita para coordinarlo.",
+      "value" : "Se hai bisogno di una sistemazione, ad esempio un interprete ASL per l'evento di assunzione, vai su <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> e chatta con noi per richiedere un interprete. Contattaci immediatamente dopo aver fissato l’appuntamento. Abbiamo bisogno di almeno 48 ore prima dell'appuntamento per organizzarci.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
     },
     "BB-ThankYou-referral-login-label-text" : {
-      "value" : "Proporciona el ID de inicio de sesión de quien te refirió (solo letras minúsculas)",
+      "value" : "Fornisci il tuo ID di accesso del referente (solo lettere minuscole)",
       "note" : "Text for the thank you page referral login input label text"
     },
     "BB-ThankYou-referral-login-empty-error-text" : {
-      "value" : "Proporciona el ID de inicio de sesión de quien te refirió.",
+      "value" : "Fornisci il tuo ID di accesso del referente.",
       "note" : "Text for the thank you page referral login input empty error text"
     },
     "BB-ThankYou-referral-login-regex-error-text" : {
-      "value" : "El ID de usuario debe tener solo letras minúsculas y al menos 4 letras de largo.",
+      "value" : "L'ID utente deve contenere solo lettere minuscole e deve contenere almeno 4 lettere.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
     "BB-WOTC-page-title-text" : {
-      "value" : "Cuestionario de crédito fiscal de oportunidades laborales",
+      "value" : "Questionario sul credito d'imposta sulle opportunità di lavoro",
       "note" : "Text for the WOTC page title text"
     },
     "BB-WOTC-page-description-text" : {
-      "value" : "Amazon IAT testing participa en programas de crédito fiscal federales y/o estatales. La información que proporciones se utilizará para determinar la idoneidad de la compañía para estos programas y de ninguna manera afectará negativamente sobre ninguna decisión de contratación, retención o promoción.",
+      "value" : "I test Amazon IAT partecipano a programmi di credito d'imposta federali e/o statali. Le informazioni fornite verranno utilizzate per determinare l'idoneità dell'azienda a questi programmi e non avranno alcun impatto negativo sulle decisioni di assunzione, fidelizzazione o promozione.",
       "note" : "Text for the WOTC page description text"
     }
   }

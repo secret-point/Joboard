@@ -1,0 +1,1304 @@
+{
+  "resources" : {
+    "BB-PreConsentPage-banner-journey-starts" : {
+      "value" : "Amazon associate ஆவதற்கான உங்கள் பயணம் இங்கே தொடங்குகிறது.",
+      "note" : "Text for PreConsentPage banner text"
+    },
+    "BB-JobOpportunity-Go-To-Dashboard-Link" : {
+      "value" : "வேலைகள் டாஷ்போர்டிற்குத் திரும்பச் செல்க",
+      "note" : "Text for the link to go back to jobs dashboard"
+    },
+    "BB-JobOpportunity-back-to-indexPage-link" : {
+      "value" : "வேலைகளைக் காண்க",
+      "note" : "Text for the link to go back to job opportunity index"
+    },
+    "BB-JobOpportunity-back-to-jobConfirmation-link" : {
+      "value" : "பின்செல்",
+      "note" : "Text for the link to go back to job confirmation page"
+    },
+    "BB-JobOpportunity-go-to-jobDescription-link" : {
+      "value" : "வேலைக்கான தேவை மற்றும் நன்மைகள்",
+      "note" : "Text for the link to go to job description page"
+    },
+    "BB-JobOpportunity-filter-button" : {
+      "value" : "வடிகட்டு",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-sort-button" : {
+      "value" : "வரிசைப்படுத்து",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-select-job-button" : {
+      "value" : "இந்த வேலையைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-StepHeader-view-progress-button" : {
+      "value" : "செயல்நிலையைக் காண்க",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-PreconsentPage-preview-steps-button" : {
+      "value" : "முன்னோட்டப் படிகள்",
+      "note" : "Text for the button to preview application steps"
+    },
+    "BB-PreconsentPage-next-Button" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the button to go to next page ( consent page )"
+    },
+    "BB-Country-United-States" : {
+      "value" : "அமெரிக்கா",
+      "note" : "United States as country name our application supports"
+    },
+    "BB-ConsentPage-qualification-criteria-header-text" : {
+      "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றை உறுதிப்படுத்துகிறீர்கள்:",
+      "note" : "Text for application qualification criteria"
+    },
+    "BB-ConsentPage-data-policy-header-text" : {
+      "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றைப் படித்து ஒப்புக்கொள்கிறீர்கள்",
+      "note" : "Text for the user data policy agreement title"
+    },
+    "BB-ConsentPage-user-data-Policy-button" : {
+      "value" : "பயனர் தரவுக் கொள்கை",
+      "note" : "Text for the button to open user data policy page"
+    },
+    "BB-ConsentPage-create-application-button" : {
+      "value" : "விண்ணப்பத்தை உருவாக்கு",
+      "note" : "Text for the create application button"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "பயனர் தரவுக் கொள்கை",
+      "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon ஒரு பன்முகத்தன்மையுள்ள மற்றும் அனைவருக்கும் ஏற்ற பணியிடத்தைத் தருவதற்கு உறுதிபூண்டுள்ளது. Amazon ஒரு சம வாய்ப்பளிக்கும் நிறுவனமாகும். இனம், தேசிய தோற்றம், பாலினம், பாலின அடையாளம், பாலியல் நோக்குநிலை, பாதுகாக்கப்பட்ட படைவீரர் நிலை, மாற்றுத்திறன், வயது அல்லது பிற சட்டப்பூர்வமாக பாதுகாக்கப்பட்ட நிலை ஆகியவற்றின் அடிப்படையில் இங்கு பாகுபாடு இருக்காது. தங்குமிடத்தைக் கோர விரும்பும் மாற்றுத்திறனாளிகள் இங்குப் பார்வையிடவும்:<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
+      "value" : "Amazon உங்கள் தனிப்பட்ட தரவுப் பாதுகாப்பை தீவிரமாக எடுத்துக்கொள்கிறது மற்றும் சட்டப்படி மட்டுமே உங்கள் தனிப்பட்ட தரவைப் பயண்படுத்தும். குறிப்பாக, சட்டத்தின் நிர்பந்தமின்றி அல்லது உங்களின் முன் அனுமதியின்றி உங்கள் தனிப்பட்ட தரவை எந்தவொரு மூன்றாம் தரப்பினருடனும் நாங்கள் பகிர மாட்டோம். நீங்கள் இதைக் குறிப்பிட்டு வெளிப்படுத்தாவிட்டால், பணியமர்த்தப்படும் Amazon நிறுவனம் உங்கள் தனிப்பட்ட தரவை அமெரிக்காவில் Amazon.com அல்லது அதன் துணை நிறுவனங்களில் பராமரிக்கும் மின்னணு தரவுத்தளத்தில் சேமிக்கும். உங்கள் தனிப்பட்ட தரவை Amazon எவ்வாறு சேமித்து செயலாக்குகிறது என்பது பற்றிய முழுத் தகவல்களுக்கு, இங்கே கிளிக் செய்யவும்: <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "note" : "Text for the flyout user data policy paragraph 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
+      "value" : "இன்று நீங்கள் விண்ணப்பித்த வேலைக்குக் கூடுதலாக, அதேபோன்ற அல்லது ஒத்த வேலை செயல்பாடுகள் தேவைப்படும் பிற வேலைகள் எங்களிடம் இருக்கக்கூடும். இந்த வேலைகள் முழுநேரம், குறைக்கப்பட்ட நேரம், பகுதி நேரம், குறிப்பிட்ட காலம் மற்றும்/அல்லது தற்காலிக நிலைகளாக இந்த இருப்பிடத்திலோ அல்லது அருகிலுள்ள மற்ற Amazon இடங்களிலோ கிடைக்கும். Amazon அல்லது எங்கள் கூட்டாளர்களுடன் எந்த வேலையையும் ஏற்க உங்களுக்கு எந்தக் கடமையும் இல்லை. இருப்பினும் உங்கள் விண்ணப்பத்தைப் பூர்த்தி செய்வதன் மூலம், உங்கள் விண்ணப்பத் தளத்தின் 30 மைல் சுற்றளவிற்குள் அதே நிலையிலான, மணிநேர வேலைக்கு நீங்கள் பரிசீலிக்கப்படுவீர்கள் என்பதை ஒப்புக்கொள்கிறீர்கள். இது எங்கள் வழக்கமான மற்றும் தற்காலிக அசோசியேட் தேவைகளுக்கு பணியமர்த்தும் எங்கள் கூட்டாளிகளுடன் (பணியாளர் ஏஜென்சிகள்) உங்கள் விண்ணப்பதாரர் தகவலைப் பகிர்வதும் இதில் அடங்கும்.",
+      "note" : "Text for the flyout user data policy paragraph 3 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
+      "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள்:",
+      "note" : "Text for the flyout user data policy by applying text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
+      "value" : "நீங்கள் விண்ணப்பிக்கும் பதவிக்கான வேலை விளக்கத்தைப் படித்துவிட்டீர்கள் என்பதையும், வேலையைச் செய்வதற்குத் தேவையான அடிப்படைத் தேவைகளைப் புரிந்துகொண்டிருப்பதையும் ஒப்புக்கொள்கிறீர்கள்;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
+      "value" : "உங்கள் விண்ணப்பத்தின் நோக்கங்களுக்காகவும், Amazonஇன் பிற சட்டப்பூர்வ நோக்கங்களுக்காகவும் Amazon, salesforce.com அல்லது வேறு எந்த மூன்றாம் தரப்பினரும் உங்கள் தனிப்பட்ட தரவை செயலாக்கவும், பகுப்பாய்வு செய்யவும் மதிப்பீடு செய்யவும் ஒப்புதல் அளிக்கவும். சந்தேகத்தைத் தவிர்ப்பதற்காக, உங்கள் தனிப்பட்ட தரவின் \"செயலாக்கத்தில்\" சேகரித்தல், பெறுதல், பதிவு செய்தல், ஒழுங்கமைத்தல், தொகுத்தல், சேமித்தல், புதுப்பித்தல், மாற்றுதல், பயன்படுத்துதல், பரப்புதல், விநியோகித்தல், ஒன்றிணைத்தல், இணைத்தல், தடுப்பது, இழிவுபடுத்துதல், உங்கள் தனிப்பட்ட தரவை அகற்றுதல் அல்லது அழித்தல் ஆகியவை அடங்கும்;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
+      "value" : "Amazon தனது வேலை விண்ணப்பச் செயல்முறைகளை திறம்பட கண்காணிப்பதற்கும், அமெரிக்காவில் உள்ள மின்னணு தரவுத்தளத்தில் சேமிக்கப்படும் உங்களின் தனிப்பட்ட தரவுகளுக்கு உதவுவதற்கும், விண்ணப்பச் செயல்முறைக்குப் பிறகு உங்கள் தனிப்பட்ட தரவைத் தக்கவைத்துக் கொள்வதற்கு Amazonக்கு ஒப்புதல் அளிக்கவும்.",
+      "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
+    },
+    "BB-StepHeader-view-progress-flyout-title" : {
+      "value" : "செயல்நிலையைக் காண்க",
+      "note" : "Text for view progress flyout title"
+    },
+    "BB-StepHeader-view-progress-flyout-close-button" : {
+      "value" : "முடிந்தது",
+      "note" : "Text for view progress flyout close button"
+    },
+    "BB-ApplicationSteps-select-job-text" : {
+      "value" : "வேலையைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text form select job application step"
+    },
+    "BB-ApplicationSteps-complete-required-document-text" : {
+      "value" : "தேவையான ஆவணங்களை நிறைவுசெய்யவும்",
+      "note" : "Text for complete required documents application step"
+    },
+    "BB-ApplicationSteps-schedule-preHire-appt-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்குத் திட்டமிடுதல்",
+      "note" : "Text for Schedule pre-hire appointment application step"
+    },
+    "BB-ApplicationSteps-complete-assessment-text" : {
+      "value" : "மதிப்பீட்டை முடிக்கவும் (~15 நிமி)",
+      "note" : "Text for complete assessment application step"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-title" : {
+      "value" : "வடிகட்டு",
+      "note" : "Text for filter schedule flyout title"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
+      "value" : "மீட்டமை",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
+      "value" : "பயன்படுத்து",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
+      "value" : "பயன்படுத்து",
+      "note" : "Text for sort schedule flyout apply button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-title" : {
+      "value" : "இதன்படி வரிசைப்படுத்து",
+      "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
+      "value" : "ஊதிய விகிதம் - அதிகபட்சம் முதல் குறைந்தபட்சம் வரை",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
+      "value" : "மணிநேரம் - அதிகப்பட்சம் முதல் குறைந்தபட்சம் வரை",
+      "note" : "Text for sort schedule by hours from most to least"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
+      "value" : "மணிநேரம் - குறைந்தது முதல் அதிகம் வரை",
+      "note" : "Text for sort schedule by hours from least to most"
+    },
+    "BB-DaysHoursFilter-title-text" : {
+      "value" : "வடிகட்டி திட்டமிடல்கள்",
+      "note" : "Text for the title of DaysHours Filter"
+    },
+    "BB-DayName-Monday" : {
+      "value" : "திங்கட்கிழமை",
+      "note" : "Text for Monday"
+    },
+    "BB-DayName-Tuesday" : {
+      "value" : "செவ்வாய்க்கிழமை",
+      "note" : "Text for Tuesday"
+    },
+    "BB-DayName-Wednesday" : {
+      "value" : "புதன்கிழமை",
+      "note" : "Text for Wednesday"
+    },
+    "BB-DayName-Thursday" : {
+      "value" : "வியாழக்கிழமை",
+      "note" : "Text for Thursday"
+    },
+    "BB-DayName-Friday" : {
+      "value" : "வெள்ளிக்கிழமை",
+      "note" : "Text for Friday"
+    },
+    "BB-DayName-Saturday" : {
+      "value" : "சனிக்கிழமை",
+      "note" : "Text for Saturday"
+    },
+    "BB-DayName-Sunday" : {
+      "value" : "ஞாயிற்றுக்கிழமை",
+      "note" : "Text for Sunday"
+    },
+    "BB-TimeRange-start-time-select-label-text" : {
+      "value" : "தொடக்க நேரம்",
+      "note" : "Text for start time select input label text"
+    },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "தொடக்க நேரம்",
+      "note" : "Text for end time select input label text"
+    },
+    "BB-FilterSchedule-DesiredHours-Upto-hours" : {
+      "value" : "{hourNumber} மணிநேரம் வரை",
+      "note" : "Text for Desired Hours up to a certain hours"
+    },
+    "BB-FilterSchedule-desired-hour-select-place-holder" : {
+      "value" : "விரும்பிய நேரங்களைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for desired hours select input place holder"
+    },
+    "BB-FilterSchedule-desired-hour-select-label-text" : {
+      "value" : "ஒரு வாரத்திற்கு விரும்பும் மணிநேரம்",
+      "note" : "Text for desired hours select input label text"
+    },
+    "BB-ContingencyOffer-well-done-text" : {
+      "value" : "இதுவரை நன்றாகச் செல்கிறது",
+      "note" : "Text for congratulating candidate for accepting contingent offer"
+    },
+    "BB-ContingencyOffer-job-picked-title-text" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்த வேலைக்கான தற்செயலான சலுகை இதோ.",
+      "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்த வேலைக்கான தற்செயலான சலுகை இதோ.",
+      "note" : "Text for contingent offer meaning popover title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
+      "value" : "பொருந்தக்கூடிய சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, உங்கள் ஆஃபர், தேவையான பின்னணிச் சோதனை, மருந்துப் பரிசோதனை (பொருந்தினால்) மற்றும் தகுதிச் சரிபார்ப்பு (பொருந்தினால்) ஆகியவற்றை வெற்றிகரமாகச் செய்வதன் மூலம் தொடர்ந்து இருக்கும். எனவே அடுத்த பக்கத்தில் நீங்கள் முன்கூட்டிய-பணியமர்த்தல் நடவடிக்கைகளை முடிக்க வேண்டியது அவசியம். சில சூழ்நிலைகளில், பணிக்கு முந்தைய தேவைகள் சரியான நேரத்தில் முடிக்கப்படாததால், உங்கள் முதல் நாள் தாமதமாகலாம். இந்த நிலை ஏற்பட்டால், விரைவில் எங்களிடமிருந்து இதுகுறித்த அறிவிப்பை எதிர்பார்க்கலாம்.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
+      "value" : "மூடுக.",
+      "note" : "Text for contingent offer meaning popover close button"
+    },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "வேலைக்கான தேவைகள்.",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
+    "BB-ContingencyOffer-remaining-steps-container-title" : {
+      "value" : "மீதமுள்ள படிகள்",
+      "note" : "Text for the remaining steps container title text"
+    },
+    "BB-ContingencyOffer-accept-offer-button-text" : {
+      "value" : "ஆஃபரை ஏற்கிறேன்",
+      "note" : "Text for the accept offer button text"
+    },
+    "BB-ContingencyOffer-back-to-jobs-button-text" : {
+      "value" : "வேலைகள் பக்கத்திற்குத் திரும்பச்செல்க",
+      "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
+    },
+    "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
+      "value" : "இந்தச் சலுகையை ஏற்றுக்கொள்வதன் மூலம், இந்தப் பதவியின் தேவைகளைப் புரிந்துகொண்டுள்ளீர்கள் என்பதை உறுதிப்படுத்துகிறீர்கள்.",
+      "note" : "Text offer requirement understanding confirmed by accepting offer"
+    },
+    "BB-BGC-page-content-title" : {
+      "value" : "பின்னணிச் சரிபார்ப்பு",
+      "note" : "Text for BGC page title"
+    },
+    "BB-BGC-page-provide-authorization-and-information-notice" : {
+      "value" : "பின்புலச் சரிபார்ப்புக்குத் தேவையான அங்கீகாரத்தையும் தகவலையும் வழங்கவும்.",
+      "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
+    },
+    "BB-BGC-page-fcra-step-card-title" : {
+      "value" : "நியாயமான கடன் அறிக்கை சட்டம் வெளிப்படுத்தல்",
+      "note" : "Text for the FCRA step card title"
+    },
+    "BB-BGC-page-nonfcra-step-card-title" : {
+      "value" : "பின்னணி சரிபார்ப்புக்கான நியாயமான கடன் அறிக்கையிடல் சட்டம் ஒப்புதல்கள் மற்றும் அங்கீகாரங்கள்",
+      "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-additional-bgc-step-card-title" : {
+      "value" : "கூடுதல் பின்னணி தகவல்கள்",
+      "note" : "Text for the Additional bgc information step card title"
+    },
+    "BB-BGC-page-continue-button" : {
+      "value" : "தொடர்க",
+      "note" : "Text for the bgc continue button ( from bgc to nhe page)"
+    },
+    "BB-BGC-page-fcra-subtitle-text" : {
+      "value" : "கீழே உள்ள இணைப்பைப் பயன்படுத்தி சில கேள்விகளுக்கு பதிலளிக்கவும்.",
+      "note" : "Text for the fcra subtitle"
+    },
+    "BB-BGC-page-fcra-get-started-btn" : {
+      "value" : "தொடங்குக",
+      "note" : "Text for the fcra get started button"
+    },
+    "BB-BGC-page-fcra-edit-form-btn" : {
+      "value" : "படிவத்தைத் திருத்து",
+      "note" : "Text for the fcra edit information button"
+    },
+    "BB-BGC-addition-bgc-form-next-btn" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the additional bgc form next button"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
+      "value" : "முகவரி வரி 1",
+      "note" : "Text for the additional bgc form  address line 1 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
+      "value" : "சரியான முகவரியை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form  address line 1 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
+      "value" : "அபார்ட்மெண்ட், சூட் முதலியன",
+      "note" : "Text for the additional bgc form  address line 2 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
+      "value" : "சரியான முகவரியை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form  address line 2 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-city-label-text" : {
+      "value" : "நகரம்",
+      "note" : "Text for the additional bgc form  city label text"
+    },
+    "BB-BGC-Additional-bgc-form-city-error-text" : {
+      "value" : "சரியான நகரத்தின் பெயரை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form city error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-label-text" : {
+      "value" : "மாநிலம்/மாகாணம்",
+      "note" : "Text for the additional bgc form  state label text"
+    },
+    "BB-BGC-Additional-bgc-form-state-error-text" : {
+      "value" : "சரியான மாநிலம்/மாகாணத்தை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form state error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
+      "value" : "மாநிலத்தைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for the additional bgc form state placeholder text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
+      "value" : "ஜிப்/அஞ்சல் குறியீடு",
+      "note" : "Text for the additional bgc form  zipcode label text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "சரியான 5 இலக்க அஞ்சல் குறியீட்டை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form zipcode error message text"
+    },
+    "BB-BGC-Additional-bgc-form-country-label-text" : {
+      "value" : "நாடு",
+      "note" : "Text for the additional bgc form  country label text"
+    },
+    "BB-BGC-Additional-bgc-form-country-error-text" : {
+      "value" : "சரியான நாட்டின் பெயரை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form country error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
+      "value" : "தேசிய அடையாள அட்டை",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
+      "value" : "சரியான தேசிய அடையாள ஆவண வகையை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
+      "value" : "தேசிய அடையாள எண்",
+      "note" : "Text for the additional bgc form  national id number label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "கோடு இல்லாமல் சரியான 9 இலக்க சமூகப் பாதுகாப்பு எண்ணை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-label-text" : {
+      "value" : "பிறந்த தேதி",
+      "note" : "Text for the additional bgc form  date of birth label text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "சரியான பிறந்த தேதியை உள்ளிடவும்.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
+      "value" : "சமூகப் பாதுகாப்பு எண்",
+      "note" : "Social Security Number is one of options as National ID"
+    },
+    "BB-BGC-form-optional-input-label-text" : {
+      "value" : "விருப்பத்திற்குரியது",
+      "note" : "Text to show that inout on a form is optional"
+    },
+    "BB-BGC-bgc-step-card-step-progress" : {
+      "value" : "படி: {currentStep} / {totalSteps}",
+      "note" : "Text to show step progress on bgc step card"
+    },
+    "BB-BGC-criminal-record-within-seven-years-question-text" : {
+      "value" : "கடந்த ஏழு (7) ஆண்டுகளில் நீங்கள் தவறான செயலுக்கு அல்லது குற்றத்திற்காகத் தண்டிக்கப்பட்டிருக்கிறீர்களா அல்லது சிறையிலிருந்து விடுவிக்கப்பட்டிருக்கிறீர்களா அல்லது ஒரு தவறான அல்லது குற்றவியல் தண்டனையிலிருந்து பரோலில் விடுவிக்கப்பட்டுள்ளீர்களா?",
+      "note" : "Text to ask if candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
+      "value" : "ஆம்",
+      "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "தண்டனை குறித்த தகவல்களுடன் நகரம், நாடு, தண்டனை நிலை, தேதி, குற்றத்தின் தன்மை ஆகியவற்றை வழங்கவும்",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
+      "value" : "Amazon.com, Inc. அல்லது அதன் துணை நிறுவனங்கள் அல்லது இணை நிறுவனங்கள் (\"Amazon\") உடனான வேலைக்கான உங்கள் விண்ணப்பம் தொடர்பாக, ஒரு நுகர்வோர் அறிக்கையிடல் நிறுவனத்திடம் இருந்து உங்களைப் பற்றிய நுகர்வோர் அறிக்கையைப் பெறுவோம். இது பொதுவாக \"பின்னணி சரிபார்ப்பு\" என்று அழைக்கப்படுகிறது.",
+      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-title" : {
+      "value" : "நியாயமான கடன் அறிக்கை சட்டம் வெளிப்படுத்தல்",
+      "note" : "Text for the fcra disclosure form title"
+    },
+    "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
+      "value" : "கீழே உள்ள எனது மின்னணு கையொப்பத்தின் மூலம், இப்போதிருந்து Amazon கார்ப்பரேட்டுடன் நான் வைத்திருக்கும் எந்தவொரு வேலை அல்லது தொடர்பு முழுவதும், நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonக்கு இதன் மூலம் அங்கீகாரம் அளிக்கிறேன்.",
+      "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the fcra disclosure form next button"
+    },
+    "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
+      "value" : "இந்தப் பின்னணிச் சரிபார்ப்பை நடத்த Amazonஐ நான் அங்கீகரிக்கிறேன்.",
+      "note" : "Text for the authorize Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
+      "value" : "இந்த பின்னணி சரிபார்ப்புக்கு Amazonஐ அங்கீகரிக்காமல் நான் நிராகரிக்கிறேன்.",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-label-text" : {
+      "value" : "இங்கே உங்கள் முழு பெயரை உள்ளிடவும்",
+      "note" : "Text for the fcra signature input label text"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-error-text" : {
+      "value" : "செல்லுபடியாகும் முழுப்பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்",
+      "note" : "Text for the fcra signature input error text"
+    },
+    "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
+      "value" : "தனி நியாயமான கடன் அறிக்கையிடல் சட்டத்தின் வெளிப்படுத்தல் மற்றும் அங்கீகார ஆவணத்தில் நான் வெளிப்படுத்தி அங்கீகரித்துள்ளபடி, Amazon.com, Inc. அல்லது அதன் துணை நிறுவனங்கள் அல்லது இணை நிறுவனங்கள் (\"Amazon\") என்னைப் பற்றிய பின்னணிச் சோதனையை நடத்தும்.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
+      "value" : "கீழே உள்ள எனது மின்னணு கையொப்பத்தின் மூலம், நான் பின்வருபவற்றை ஒப்புக்கொள்கிறேன்:",
+      "note" : "Text for the eSignature acknowledgement title"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-one" : {
+      "value" : "பின்னணிச் சரிபார்ப்பைச் செய்வது, பின்னணிச் சரிபார்ப்பு வழங்குநர் அல்லது \"CRA\" ஆக செயல்படும் First Advantage நிறுவனமாகும், இது 1 Concourse Parkway NE, Suite 200, Atlanta, GA 30328 என்ற முகவரியில் அமைந்துள்ளது, (800) 845-6004 என்ற எண்ணிலும் www.fadv.com என்ற இணையதளத்திலும் இந்நிறுவனத்தைத் தொடர்புகொள்ளலாம்.",
+      "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-one" : {
+      "value" : "பின்னணிச் சரிபார்ப்பைச் செய்வது, பின்னணிச் சரிபார்ப்பு வழங்குநர் அல்லது \"CRA\" ஆக செயல்படும் Accurate நிறுவனமாகும், இது 7515 Irvine Center Dr., Irvine, CA 92618 என்ற முகவரியில் அமைந்துள்ளது, (800) 216-8024 என்ற எண்ணிலும் www.accuratebackground.com என்ற இணையதளத்திலும் இந்நிறுவனத்தைத் தொடர்புகொள்ளலாம்.\n\nசட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, Amazon என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை, எனது கூடுதல் அங்கீகாரம் இல்லாமல், (1) எனது பணிக்காலத்தின் போது ஏதேனும் இருந்தால், மற்றும் (2) Accurate தவிர வேறு CRAகளில் இருந்து என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை ஆர்டர் செய்யலாம் என்பதை நான் புரிந்துகொண்டு ஒப்புக்கொள்கிறேன்.",
+      "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-two" : {
+      "value" : "சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, Amazon என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை, எனது கூடுதல் அங்கீகாரம் இல்லாமல், (1) எனது பணிக்காலத்தின் போது ஏதேனும் இருந்தால், மற்றும் (2) First Advantage தவிர வேறு CRAகளில் இருந்து என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை ஆர்டர் செய்யலாம் என்பதை நான் புரிந்துகொண்டு ஒப்புக்கொள்கிறேன்.",
+      "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-two" : {
+      "value" : "சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, Amazon என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை, எனது கூடுதல் அங்கீகாரம் இல்லாமல், (1) எனது பணிக்காலத்தின் போது ஏதேனும் இருந்தால், மற்றும் (2) Accurate தவிர வேறு CRAகளில் இருந்து என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை ஆர்டர் செய்யலாம் என்பதை நான் புரிந்துகொண்டு ஒப்புக்கொள்கிறேன்.",
+      "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+      "value" : "வேலை நோக்கங்களுக்காகவும், எனது தகவல் தனியுரிமையைப் பாதுகாக்கும் அனைத்துச் சட்டங்களுக்கும் உட்பட்டு, பின்புலச் சரிபார்ப்பிற்குத் தேவையான எந்தத் தகவலையும் CRAக்களுக்கு வெளிப்படுத்த நான் பின்வருவனவற்றை அங்கீகரிக்கிறேன்: எனது கடந்தகால அல்லது தற்போதைய நிறுவனங்கள், பள்ளிகள், சட்ட அமலாக்க மற்றும் மோட்டார் உட்பட பிற அரசு நிறுவனங்கள் வாகன பதிவு ஏஜென்சிகள் ஆகியோர்.",
+      "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-three" : {
+      "value" : "வேலை நோக்கங்களுக்காகவும், எனது தகவல் தனியுரிமையைப் பாதுகாக்கும் அனைத்துச் சட்டங்களுக்கும் உட்பட்டு, பின்புலச் சரிபார்ப்பிற்குத் தேவையான எந்தத் தகவலையும் CRAக்களுக்கு வெளிப்படுத்த நான் பின்வருவனவற்றை அங்கீகரிக்கிறேன்: எனது கடந்தகால அல்லது தற்போதைய நிறுவனங்கள், பள்ளிகள், சட்ட அமலாக்க மற்றும் மோட்டார் உட்பட பிற அரசு நிறுவனங்கள் வாகன பதிவு ஏஜென்சிகள் ஆகியோர்.",
+      "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-accurate-california-specific-notice" : {
+      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் கிளிக் செய்யவும்<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>. கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
+      "note" : "Text for ACCURATE non fcra California specific notice "
+    },
+    "BB-non-fcra-fadv-california-specific-notice" : {
+      "value" : "<p><b>கலிஃபோர்னியா: </b>புலனாய்வு நுகர்வோர் அறிக்கை (\"கலிஃபோர்னியா வெளிப்படுத்தல்\") தொடர்பான தனிப்பட்ட கலிஃபோர்னியா வெளிப்படுத்தலைப் பெறுவீர்கள். இது ஒரு முக்கியமான ஆவணம்; இதைக் கவனமாக மதிப்பாய்வு செய்யவும். மேலும், நீங்கள் சான் பிரான்சிஸ்கோவில் உள்ள நிறுவனத்தில் வேலை தேடுகிறீர்கள் அல்லது ஏற்கனவே பணிபுரிந்திருந்தால் கிளிக் செய்யவும்<a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>. கீழே கையொப்பமிடுவதன் மூலம், கலிஃபோர்னியா சட்டம், கலிஃபோர்னியா வெளிப்படுத்தல் ஆகியவற்றின் படி, Amazon உடன் இப்போதிருந்து எப்போது வேண்டுமானாலும், பின்னணிச் சரிபார்ப்பு என்றும் அழைக்கப்படும் புலனாய்வு நுகர்வோர் அறிக்கையை வாங்குவதற்கு Amazonஐ அங்கீகரிக்கிறீர்கள்.</p>",
+      "note" : "Text for FADV non fcra California specific notice "
+    },
+    "BB-non-fcra-accurate-minnesota-specific-notice" : {
+      "value" : "<p><b>மின்னசோட்டா: </b>உங்களைப் பற்றி ஆர்டர் செய்யப்பட்ட எந்தவொரு நுகர்வோர் அறிக்கையின் தன்மை மற்றும் நோக்கம் பற்றிய முழுமையான மற்றும் துல்லியமான வெளிப்பாட்டிற்காக CRAக்கு எழுத்துப்பூர்வக் கோரிக்கையை சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. உங்கள் கோரிக்கையைப் பெற்ற ஐந்து வணிக நாட்கள் அல்லது அறிக்கை ஆர்டர் செய்யப்பட்டதில் இருந்து ஐந்து வணிக நாட்கள், இதில் எது பின்னால் வரும் தேதியோ அதற்குள் CRA உங்களுக்கு வழங்க வேண்டும்.</p>",
+      "note" : "Text for ACCURATE non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-fadv-minnesota-specific-notice" : {
+      "value" : "<p><b>மின்னசோட்டா: </b>உங்களைப் பற்றி ஆர்டர் செய்யப்பட்ட எந்தவொரு நுகர்வோர் அறிக்கையின் தன்மை மற்றும் நோக்கம் பற்றிய முழுமையான மற்றும் துல்லியமான வெளிப்பாட்டிற்காக CRAக்கு எழுத்துப்பூர்வக் கோரிக்கையை சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. உங்கள் கோரிக்கையைப் பெற்ற ஐந்து வணிக நாட்கள் அல்லது அறிக்கை ஆர்டர் செய்யப்பட்டதில் இருந்து ஐந்து வணிக நாட்கள், இதில் எது பின்னால் வரும் தேதியோ அதற்குள் CRA உங்களுக்கு வழங்க வேண்டும்.</p>",
+      "note" : "Text for FADV non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-accurate-newyork-specific-notice" : {
+      "value" : "<p><b>நியூயார்க்: </b>உங்களைப் பற்றிய நுகர்வோர் அறிக்கை அல்லது புலனாய்வு நுகர்வோர் அறிக்கையை நாங்கள் ஆர்டர் செய்தோமா என்பதை அறிய Amazonக்கு எழுத்துப்பூர்வக் கோரிக்கையைச் சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. மேலே காட்டப்பட்டுள்ள CRAஇன் முகவரி மற்றும் தொலைபேசி எண். அத்தகைய அறிக்கையின் நகலை ஆய்வு செய்ய அல்லது பெற, எந்த CRAஐயும் தொடர்பு கொள்ள உங்களுக்கு உரிமை உள்ளது. நியூயார்க் திருத்தச் சட்டத்தின் பிரிவு 23-A இன் கீழ் உங்கள் உரிமைகள் பற்றிய தகவல்களுக்கு <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">இங்கே</a> கிளிக் செய்யவும்.</p>",
+      "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>நியூயார்க்: </b>உங்களைப் பற்றிய நுகர்வோர் அறிக்கை அல்லது புலனாய்வு நுகர்வோர் அறிக்கையை நாங்கள் ஆர்டர் செய்தோமா என்பதை அறிய Amazonக்கு எழுத்துப்பூர்வக் கோரிக்கையைச் சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. மேலே காட்டப்பட்டுள்ள CRAஇன் முகவரி மற்றும் தொலைபேசி எண். அத்தகைய அறிக்கையின் நகலை ஆய்வு செய்ய அல்லது பெற, எந்த CRAஐயும் தொடர்பு கொள்ள உங்களுக்கு உரிமை உள்ளது. நியூயார்க் திருத்தச் சட்டத்தின் பிரிவு 23-A இன் கீழ் உங்கள் உரிமைகள் பற்றிய தகவல்களுக்கு <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">இங்கே</a> கிளிக் செய்யவும்.</p>.",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>வாஷிங்டன்: </b>வாஷிங்டன் நியாயமான கடன் அறிக்கையிடல் சட்டத்தின் கீழ் உங்கள் உரிமைகள் பற்றிய எழுத்துப்பூர்வ சுருக்கத்தை நுகர்வோர் அறிக்கையிடல் நிறுவனத்திடம் கோர உங்களுக்கு உரிமை உள்ளது..</p>.",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>வாஷிங்டன்: </b>வாஷிங்டன் நியாயமான கடன் அறிக்கையிடல் சட்டத்தின் கீழ் உங்கள் உரிமைகள் பற்றிய எழுத்துப்பூர்வ சுருக்கத்தை நுகர்வோர் அறிக்கையிடல் நிறுவனத்திடம் கோர உங்களுக்கு உரிமை உள்ளது..</p>.",
+      "note" : "Text for FADV non fcra Washington specific notice "
+    },
+    "BB-non-fcra-accurate-allstate-specific-notice" : {
+      "value" : "<p><b>அனைத்து மாநிலங்களும்: </b>இந்தப் பெட்டியை நீங்கள் தேர்வுசெய்தால், எந்தவொரு பின்னணி சரிபார்ப்பின் இலவச நகலையும் உங்களுக்கு வழங்குவோம்",
+      "note" : "Text for ACCURATE non fcra all state specific notice "
+    },
+    "BB-non-fcra-fadv-allstate-specific-notice" : {
+      "value" : "<p><b>அனைத்து மாநிலங்களும்: </b>இந்தப் பெட்டியை நீங்கள் தேர்வுசெய்தால், எந்தவொரு பின்னணி சரிபார்ப்பின் இலவச நகலையும் உங்களுக்கு வழங்குவோம்</p>",
+      "note" : "Text for FADV non fcra all state specific notice "
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
+      "value" : "முன்பு பயன்படுத்திய சட்டப்பூர்வ முழுப் பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்: பெயரின் முற்பகுதி, பிற்பகுதி",
+      "note" : "Text for the previous used legal name input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
+      "value" : "முந்தைய சட்டபூர்வ முழுப்பெயர்",
+      "note" : "Text for the previous used legal name input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
+      "value" : "முன்பு பயன்படுத்திய சட்டப்பூர்வ முழுப் பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்: பெயரின் முற்பகுதி, பிற்பகுதி",
+      "note" : "Text for the previous used legal name 1 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
+      "value" : "முந்தைய சட்ட முழுப்பெயர் (1)",
+      "note" : "Text for the previous used legal name 1 input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
+      "value" : "முன்பு பயன்படுத்திய சட்டப்பூர்வ முழுப் பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்: பெயரின் முற்பகுதி, பிற்பகுதி",
+      "note" : "Text for the previous used legal name 2 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
+      "value" : "முந்தைய சட்ட முழுப்பெயர் (2)",
+      "note" : "Text for the previous used legal name 2 input label text"
+    },
+    "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
+      "value" : "மேலும் முந்தைய பெயர்களைச் சேர்/காண்பி",
+      "note" : "Text for the button to show more previous legal names button text"
+    },
+    "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
+      "value" : "நீங்கள் முன்பு Amazon கட்டிடத்தில் பணிபுரிந்திருக்கிறீர்களா?",
+      "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
+    },
+    "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the accept previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the decline previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
+      "value" : "என்ன தகவல்களைச் சேர்க்க வேண்டும்",
+      "note" : "Text for the for the form title about what to include in previous Amazon experience"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
+      "value" : "நீங்கள் முன்பு பணியாற்றிய Amazon கட்டிடத்தை அடையாளம் காணவும்",
+      "note" : "Text for the most recent Amazon building input label text"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
+      "value" : "சரியான Amazon கட்டிடத்தின் பெயரை உள்ளிடவும்",
+      "note" : "Text for the most recent Amazon building input error text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
+      "value" : "வேலைவாய்ப்பு தேதிகள் - முதல்/வரை (MM/YY - MM/YY)",
+      "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
+      "value" : "சரியான Amazon கட்டடத்தின் பெயரை உள்ளிடவும்",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
+    "BB-BGC-no-ssn-checkbox-label" : {
+      "value" : "என்னிடம் சமூகப் பாதுகாப்பு எண் இல்லை",
+      "note" : "Label for the no ssn checkbox"
+    },
+    "BB-BGC-no-ssn-modal-title" : {
+      "value" : "நீங்கள் சமூகப் பாதுகாப்பு எண் (SSN) இல்லாமல் தொடர விரும்புகிறீர்களா?",
+      "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "உங்களிடம் SSN இருந்தால், அதுகுறித்த தகவல்களை வழங்க வேண்டும். அவ்வாறு செய்யத் தவறினால் பணியமர்த்தல் செயல்முறையில் தாமதம் ஏற்படலாம், இதனால் உங்கள் தொடக்கத் தேதியையும் நீங்கள் தேர்ந்தெடுத்த ஷிஃப்ட் நேரத்தையும் இழக்க நேரிடலாம்.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "தொடர்வதன் மூலம், என்னிடம் SSN இல்லை என்பதை உறுதிப்படுத்துகிறேன்.  நான் எனது SSNஐ மாற்றினால் அல்லது புதுப்பித்தால் என்னைப் பற்றிய மேற்கொண்டு செயலாற்றுதல் பின்னணிச் சோதனையை சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி Amazon மேற்கொள்ளும் என்பதை நான் புரிந்துகொள்கிறேன்.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-second-paragraph" : {
+      "value" : "எனது SSNஐ வேண்டுமென்றே தவறாகக் குறிப்பிடுவது Amazonஆல் பரிசீலிக்கப்பட்டு இதனால் எனது வேலை வாய்ப்பு திரும்பப் பெறப்படலாம் அல்லது நான் பணியமர்த்தப்பட்டால், நான் வேலையிலிருந்து நீக்கப்படலாம் என்பதையும் நான் ஒப்புக்கொள்கிறேன்,.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-consent-checkbox" : {
+      "value" : "மேலே கூறப்பட்ட விதிமுறைகளைப் படித்து புரிந்து கொண்டேன்.",
+      "note" : "consent checkbox in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-continue-button" : {
+      "value" : "தொடர்க",
+      "note" : "continue button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-cancel-button" : {
+      "value" : "ரத்துசெய்",
+      "note" : "cancel button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
+      "value" : "சமூகப் பாதுகாப்பு எண் கிடைக்கவில்லை",
+      "note" : "Text display on national id number input when user check no ssn checkbox"
+    },
+    "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
+      "value" : "மின்னணு கையொப்பத்தை வழங்குங்கள்",
+      "note" : "Text for the fcra form heading text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
+      "value" : "மாநிலத்திற்கு மட்டுமான அறிக்கைகள்",
+      "note" : "Text for the non fcra State specific notices title text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
+      "value" : "கீழே பொருந்தக்கூடிய அறிக்கை(களை) மதிப்பாய்வு செய்யவும்.",
+      "note" : "Text for the non fcra State specific notices review text"
+    },
+    "BB-BGC-non-fcra-esignature-certification-form-title" : {
+      "value" : "மின்னணு கையொப்பம்",
+      "note" : "Text for the non fcra e-signature certification title"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
+      "value" : "கீழே உள்ள எனது மின்னணு கையொப்பத்தின் மூலம், பின்னணி சரிபார்ப்புக்காக நான் இந்த நியாயமற்ற கடன் அறிக்கையிடல் சட்ட ஒப்புதல்கள் மற்றும் அங்கீகாரங்களில் உள்ள அனைத்து அறிக்கைகளையும் படித்து, புரிந்துகொண்டு ஏற்றுக்கொண்டேன் என்று சான்றளிக்கிறேன். கீழே உள்ள புலங்களில் கோரப்பட்ட தகவல்களை உள்ளிடுவதன் மூலம் உங்கள் ஏற்பைக் குறிப்பிடவும்.",
+      "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
+      "value" : "மின்னணு கையொப்பத்தில் உள்ளபடி உங்கள் முழுப் பெயரை உள்ளிடவும்",
+      "note" : "Text for the non fcra acknowledgement and authorization input label text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
+      "value" : "மின்னனு கையொப்பம் பொருந்தவில்லை. ஒவ்வொரு மின்னணு கையொப்பத்திற்கும் ஒரே உரையைப் பயன்படுத்தவும்.",
+      "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-non-fcra-form-page-next-button-text" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the non fcra form page next button text"
+    },
+    "BB-BGC-non-fcra-applicable-notice-text" : {
+      "value" : "கீழே எனது மின்னணு கையொப்பத்தில், ஹைப்பர்லிங்க்கள் உட்பட பொருந்தக்கூடிய ஏதேனும் மாநில அறிவிப்புகளைப் படித்துப் புரிந்துகொண்டேன் என்று சான்றளிக்கிறேன்.",
+      "note" : "Text for the non fcra for the applicable notice"
+    },
+    "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
+      "value" : "மின்னணு கையொப்பத்தில் உள்ளபடி உங்கள் முழுப் பெயரை உள்ளிடவும்",
+      "note" : "Text for the non fcra for the applicable notice signature input label text"
+    },
+    "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
+      "value" : "எனது பின்னணி சரிபார்ப்பின் இலவச நகலைப் பெற விரும்புகிறேன்",
+      "note" : "Text for the non fcra for request copy of bgc radio label text"
+    },
+    "BB-already-applied" : {
+      "value" : "இந்த வேலைக்கான விண்ணப்பத்தை ஏற்கனவே தொடங்கிவிட்டீர்கள் மற்றும் / அல்லது பூர்த்தி செய்துவிட்டீர்கள்.",
+      "note" : "Text for aleady applied job text"
+    },
+    "BB-already-applied-description" : {
+      "value" : "டாஷ்போர்டிற்குத் திரும்பி உங்கள் விண்ணப்பத்தை மீண்டும் தொடங்கலாம், விண்ணப்பத்தைப் பார்க்கலாம், புதிய பணி நியமன விவரங்களையும் உங்கள் அடுத்த படிகளையும் பார்க்கலாம்.",
+      "note" : "Text for aleady applied job description text"
+    },
+    "BB-already-applied-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for aleady applied job return to dashboard button text"
+    },
+    "BB-SelfId-disability-form-name-text" : {
+      "value" : "படிவம் CC-305",
+      "note" : "Text for Self Identification form name"
+    },
+    "BB-SelfId-disability-form-control-number-text" : {
+      "value" : "OMB கட்டுப்பாட்டு எண் 1250-0005",
+      "note" : "Text for Self Identification control number"
+    },
+    "BB-SelfId-disability-form-expiration-date-text" : {
+      "value" : "05/31/2023 அன்று காலாவதியாகும்",
+      "note" : "Text for Self Identification expiration date"
+    },
+    "BB-SelfId-disability-form-why-this-form-header-text" : {
+      "value" : "இந்தப் படிவத்தை பூர்த்தி செய்யுமாறு ஏன் கேட்கிறீர்கள்?",
+      "note" : "Text for why asked this form header text"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
+      "value" : "சட்டப்படி தேவையுள்ளவாறு, நாங்கள் மாற்றுத்திறனுடன் உள்ள தகுதி வாய்ந்த நபர்களுக்கு சமமான வேலை வாய்ப்பை வழங்குவதற்கான ஒரு கூட்டாட்சி ஒப்பந்ததாரர் அல்லது துணை ஒப்பந்ததாரராக செயல்படுகிறோம். எங்களின் பணியாளர்களில் குறைந்தபட்சம் 7% பேராவது மாற்றுத்திறன் உள்ளவர்களாக இருப்பதை உறுதிப்படுத்தும் நோக்குடன் உள்ள செயல்பாட்டின் முன்னேற்றத்தை அளவிட வேண்டியது அவசியமாகும். இதைச் செய்ய, விண்ணப்பதாரர்கள் மற்றும் ஊழியர்களுக்கு மாற்றுத்திறன் உள்ளதா அல்லது எப்போதாவது மாற்றுத்திறன் ஏற்பட்டதா என்பதை நாங்கள் கேட்க வேண்டும். ஒரு நபர் எப்போது வேண்டுமானாலும் ஒரு மாற்றுத்திறனாளியாக மாறக்கூடும் என்பதால், குறைந்தபட்சம் ஐந்து ஆண்டுகளுக்கு ஒருமுறையாவது அவர்களது தகவல்களைப் புதுப்பிக்கும்படி எங்கள் பணியாளர்கள் அனைவரையும் கேட்டுக்கொள்கிறோம்.",
+      "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
+      "value" : "மாற்றுத்திறனுள்ள ஒரு தனிநபராக உங்களை அடையாளம் காண்பது தன்னார்வமானது, அதை நீங்களே தேர்வுசெய்வீர்கள் என்று நம்புகிறோம். உங்களின் பதில் ரகசியமாகப் பராமரிக்கப்படும். அதிகாரிகள் அல்லது பணியாளர் முடிவுகளை எடுப்பதில் ஈடுபட்டுள்ள வேறு யாராலும் அதைப் பார்க்க முடியாது. கடந்த காலத்தில் நீங்கள் சுயமாக அடையாளம் காட்டியிருந்தாலும், படிவத்தைப் பூர்த்தி செய்வது உங்களை எந்த வகையிலும் எதிர்மறையாக பாதிக்காது. இந்தப் படிவத்தைப் பற்றிய கூடுதல் தகவலுக்கு அல்லது மறுசீரமைவு சட்டத்தின் பிரிவு 503இன் கீழ் கூட்டாட்சி ஒப்பந்ததாரர்களின் சமமான வேலைவாய்ப்புக் கடமைகள் பற்றிய கூடுதல் தகவல்களுக்கு, <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a> இணையதளத்தில் உள்ள அமெரிக்க தொழிலாளர் துறையின் கூட்டாட்சி ஒப்பந்த இணக்கத் திட்டங்களின் (OFCCP) இணையதளத்தைப் பார்வையிடவும்.",
+      "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
+      "value" : "எனக்கு மாற்றுத்திறன் இருந்தால் அதை எப்படிக் கண்டறிவது?",
+      "note" : "Text for how I know I have disability header"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
+      "value" : "முக்கிய வாழ்க்கைச் செயல்பாட்டைக் கணிசமாகக் கட்டுப்படுத்துகின்ற உடல் அல்லது மனநலக் குறைபாடு அல்லது மருத்துவ நிலை இருந்தால், அல்லது உங்களுக்கு முன்பு இத்தகைய குறைபாடு அல்லது மருத்துவ நிலை ஏற்பட்டதாக வரலாறு அல்லது பதிவு இருந்தால், நீங்கள் மாற்றுத்திறன் உள்ளவர் எனக் கருதப்படுகிறீர்கள்.",
+      "note" : "Text for how I know I have disability content"
+    },
+    "BB-SelfId-disability-form-disability-scope-list-header-text" : {
+      "value" : "மாற்றுத்திறன்களில் இவை உட்பட பல அடங்கும்:",
+      "note" : "Text for the disability scope/type list header text"
+    },
+    "BB-SelfId-disability-form-disability-item-autism-text" : {
+      "value" : "மன இறுக்கம்",
+      "note" : "Text for the disability item: autism"
+    },
+    "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
+      "value" : "தன்னுடல் தாங்குதிறன் நோய்",
+      "note" : "Text for the disability item: Autoimmune disorder"
+    },
+    "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
+      "value" : "பார்வையற்ற அல்லது பார்வை குறைபாடு",
+      "note" : "Text the disability item: Blind or low vision"
+    },
+    "BB-SelfId-disability-form-disability-item-cancer-text" : {
+      "value" : "புற்றுநோய்",
+      "note" : "Text for the disability item: Cancer text"
+    },
+    "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
+      "value" : "கார்டியோவாஸ்குலர் அல்லது இதய நோய்",
+      "note" : "Text for the disability item: Cardiovascular or heart disease"
+    },
+    "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
+      "value" : "செலியாக் நோய்",
+      "note" : "Text for the disability item: Celiac disease"
+    },
+    "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
+      "value" : "பெருமூளை வாதம்",
+      "note" : "Text for the disability item: Cerebral palsy"
+    },
+    "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
+      "value" : "காது கேளாதவர் அல்லது குறைவாகவே காது கேட்கும்",
+      "note" : "Text for the disability item: Deaf or hard of hearing"
+    },
+    "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
+      "value" : "மன அழுத்தம் அல்லது பதட்டம்",
+      "note" : "Text for the disability item: Depression or anxiety"
+    },
+    "BB-SelfId-disability-form-disability-item-diabetes-text" : {
+      "value" : "நீரிழிவு நோய்",
+      "note" : "Text for the disability item: Diabetes"
+    },
+    "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
+      "value" : "வலிப்பு நோய்",
+      "note" : "Text for the disability item: Epilepsy"
+    },
+    "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
+      "value" : "இரைப்பை குடல் கோளாறுகள், எடுத்துக்காட்டாக, கிரோன் நோய், அல்லது எரிச்சல் கொண்ட குடல் நோய்க்குறி",
+      "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
+    },
+    "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
+      "value" : "அறிவுசார் மாற்றுத்திறன்",
+      "note" : "Text for the disability item: Intellectual disability"
+    },
+    "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
+      "value" : "உடல் பாகங்கள் இல்லாமல் இருத்தல் அல்லது பகுதியாக உடல் பாகங்கள் இல்லாமல் இருத்தல்",
+      "note" : "Text for the disability item:Missing limbs or partially missing limbs"
+    },
+    "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
+      "value" : "நரம்பு மண்டல நிலைக்கு எடுத்துக்காட்டு, ஒற்றைத் தலைவலி, பார்கின்சன் நோய் அல்லது மல்டிபிள் ஸ்களீரோசிஸ் (MS)",
+      "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
+    },
+    "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
+      "value" : "மனநல நிலை. எடுத்துக்காட்டாக, இருமுனைச் சீர்குலைவு, ஸ்கிசோஃப்ரினியா, PTSD அல்லது பெரிய மனச்சோர்வு",
+      "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+    },
+    "BB-SelfId-disability-form-card-title-text" : {
+      "value" : "மாற்றுத்திறன் குறித்து தன்னார்வ சுய-அடையாளப்படுத்தல்",
+      "note" : "Text for the disability form card title"
+    },
+    "BB-SelfId-form-continue-button-text" : {
+      "value" : "தொடர்க",
+      "note" : "Text for the Self Identification page form continue button text"
+    },
+    "BB-SelfId-disability-form-submit-button-text" : {
+      "value" : "சமர்ப்பி",
+      "note" : "Text for the submit disability form submit button text"
+    },
+    "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
+      "value" : "கீழே உள்ள பெட்டிகளில் ஒன்றைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for the disability selection checkbox label text"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
+      "value" : "ஆம், எனக்கு மாற்றுத்திறன் இல்லை அல்லது மாற்றுத்திறன் இருந்ததற்கான வரலாறு/பதிவு உள்ளது",
+      "note" : "Text for the disability selection checkbox item: YES"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
+      "value" : "இல்லை, எனக்கு எந்தவித மாற்றுத்திறனும் இல்லை அல்லது மாற்றுத்திறன் இருந்ததற்கான வரலாறோ/பதிவோ இல்லை",
+      "note" : "Text for the disability selection checkbox item: NO"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
+      "value" : "நான் பதிலளிக்க விரும்பவில்லை",
+      "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-header-text" : {
+      "value" : "பொதுச்சுமை அறிக்கை",
+      "note" : "Text for the disability form Public burden statement header text"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-content-text" : {
+      "value" : "1995 ஆம் ஆண்டின் பத்திரப்பணி குறைப்புச் சட்டத்தின்படி, தகவல் சேகரிப்பானது செல்லுபடியாகும் OMB கட்டுப்பாட்டு எண்ணைக் காட்டினால் தவிர, எவரும் அத்தகைய சேகரிப்புக்குப் பதிலளிக்கத் தேவையில்லை. இந்தக் கருத்துகணிப்பை முடிக்க சுமார் 5 நிமிடங்கள் ஆகும்.",
+      "note" : "Text for the disability form Public burden statement content text"
+    },
+    "BB-SelfId-equal-opportunity-form-title-text" : {
+      "value" : "தன்னார்வ சம வாய்ப்பு சுய அடையாளப்படுத்தல் படிவம்",
+      "note" : "Text for the equal opportunity form title"
+    },
+    "BB-SelfId-equal-opportunity-form-statement-text" : {
+      "value" : "பன்முகத்தன்மையின் அனைத்து வடிவங்களையும் Amazon உயர்வாக மதிக்கிறது, மேலும் விண்ணப்பதாரர்கள் மற்றும் பணியாளர்கள் அவர்களின் பாலினம் மற்றும் குலம்/இனத்தை அவர்களாகவே அடையாளம் காட்ட வேண்டும், அவர்களை அழைப்பதற்கு எங்களுக்கு வேண்டிய சில பாகுபாடு மற்றும் உறுதியான செயல் பதிவுசெய்தல் மற்றும் அறிக்கையிடல் தேவைகளுக்கு இது உட்பட்டது. இந்தத் தகவலைச் சமர்ப்பிப்பது தன்னார்வமானது, அதை வழங்க மறுப்பதால் உங்களை நடத்தும் முறையில் எந்தவொரு பாதகமும் ஏற்படாது. பெறப்பட்ட தகவல்கள் ரகசியமாக வைக்கப்படும் மற்றும் பொருந்தக்கூடிய கூட்டாட்சி சட்டங்கள், நிர்வாக உத்தரவுகள் மற்றும் ஒழுங்குமுறைகளின் விதிகளின்படி மட்டுமே பயன்படுத்தப்படும், இதில் தகவல் சுருக்கப்பட்டு சமூக உரிமைகள் அமலாக்க நோக்கங்களுக்காக மத்திய அரசுக்கு தெரிவிக்கப்பட வேண்டும். இந்த நேரத்தில் உங்கள் பாலினம் அல்லது குலம்/இனத்தை சுயமாக அடையாளப்படுத்தவில்லை என்று நீங்கள் தேர்வு செய்தால், காட்சிசார் கருத்தாய்வு மற்றும் /அல்லது பிற கிடைக்கக்கூடிய தகவல்கள் மூலம் பணியாளர்களுக்கான இந்தத் தகவலை நாங்கள் தீர்மானிக்க வேண்டுமென மத்திய அரசாங்கம் எதிர்பார்க்கும்.",
+      "note" : "Text for the equal opportunity form statement text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-label-text" : {
+      "value" : "நீங்கள் எந்தப் பாலினத்தவர்?",
+      "note" : "Text for the equal opportunity form : gender label text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-male-text" : {
+      "value" : "ஆண்",
+      "note" : "Text for the equal opportunity form gender option: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-female-text" : {
+      "value" : "பெண்",
+      "note" : "Text for the equal opportunity form gender option: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
+      "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
+      "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
+      "value" : "உங்கள் குலம்/இனப் பின்னணி என்ன?",
+      "note" : "Text for the equal opportunity form : ethnicity label text"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
+      "value" : "அமெரிக்க இந்தியர்/அலாஸ்கா பூர்வீகத்தவர் (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
+      "value" : "வட மற்றும் தென் அமெரிக்க அசல் மக்களின் எந்தவொரு பூர்வீகத்தையும் கொண்டவர்கள் (மத்திய அமெரிக்கா உட்பட), மற்றும் பழங்குடித் தொடர்பு அல்லது சமூக இணைப்பைப் பராமரிப்பவர்கள்",
+      "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
+      "value" : "ஆசியர் (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
+      "value" : "தொலைதூரக் கிழக்குப் பகுதி, தென்கிழக்கு ஆசியா அல்லது இந்திய துணைக்கண்டத்தைச் சேர்ந்த மக்களில் ஏதேனும் ஒரு நாட்டை பூர்வீகமாக கொண்டவர்கள்; உதாரணமாக, கம்போடியா, சீனா, இந்தியா, ஜப்பான், கொரியா, மலேசியா, பாகிஸ்தான், பிலிப்பைன்ஸ் தீவுகள், தாய்லாந்து மற்றும் வியட்நாம்",
+      "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
+      "value" : "கருப்பின/ஆப்பிரிக்க அமெரிக்கர் (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
+      "value" : "ஆப்பிரிக்காவின் கருப்பு இனக் குழுக்கள் எதையாவது பூர்வீகமாகக் கொண்டவர்கள்",
+      "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
+      "value" : "ஹிஸ்பானிக்/லத்தினோ",
+      "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
+      "value" : "கியூபர், மெக்சிகர், புவேர்டோ ரிகர், தென் அல்லது மத்திய அமெரிக்கர் அல்லது குலம் எதுவாக இருந்தாலும் மற்ற ஸ்பானிஷ் கலாச்சாரம் அல்லது பூர்வீகத்தைச் சேர்ந்தவர்கள்",
+      "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
+      "value" : "பிறப்பில் ஹவாய்/பிற பசிபிக் தீவினர் (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
+      "value" : "ஹவாய், குவாம், சமோவா அல்லது பிற பசிபிக் தீவுகள் ஆகியவற்றின் எந்தவொரு மக்களையும் பூர்வீகமாகக் கொண்டவர்கள்",
+      "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
+      "value" : "வெள்ளை (ஹிஸ்பானிக் அல்லது லத்தினோ அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
+      "value" : "ஐரோப்பா, மத்திய கிழக்கு அல்லது வட ஆபிரிக்காவின் அசல் மக்களில் ஏதேனும் ஒரு பூர்வீகம் கொண்ட நபர்கள்",
+      "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
+      "value" : "இரண்டு அல்லது அதற்கு மேற்பட்ட இனங்கள் (ஹிஸ்பானிக் அல்லது லத்தீன் அல்ல)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
+      "value" : "பின்வரும் ஐந்து இனங்களில் ஒன்றுக்கு மேற்பட்ட இனங்களுடன் அடையாளம் காணும் ஹிஸ்பானிக் அல்லாத நபர்கள்: (1) வெள்ளையினத்தவர், (2) கருப்பினத்தவர் (3) ஆசியர் (4) பூர்வீக ஹவாய்/பிற பசிபிக் தீவுவாசி (5) அமெரிக்க இந்தியர்/அலாஸ்கா பூர்வீகம்",
+      "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
+      "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
+      "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the equal opportunity form ethinicity next button"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
+      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, நாம் தீவிரமாகப் படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து பணியமர்த்தி வருகிறோம்.",
+      "note" : "Text for the veteran status statement paragraph 1 text"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
+      "value" : "Amazonஇல் ஆயிரக்கணக்கான படைவீரர்களும் இராணுவ வாழ்க்கைத்துணைகளும் புதுமையான கண்டுபிடிப்பை ஊக்குவித்து, வாடிக்கையாளர் அனுபவத்தில் தரத்தை உயர்த்துகிறார்கள். தினசரி, இராணுவ பின்னணியில் உள்ளவர்கள் தங்கள் அறிவு, திறன்கள் மற்றும் தலைமைத்துவத் திறன்களை பல்வேறு வேலைவாய்ப்புகளில் பயன்படுத்த முடியும் - எனவே அவர்கள் உலகம் முழுவதும் மாற்றம் ஏற்படுத்துகிறார்கள். இந்தக் காரணங்களுக்காக, நாம் தீவிரமாகப் படைவீரர்கள் மற்றும் இராணுவ வாழ்க்கைத்துணைகளைத் தொடர்ந்து பணியமர்த்தி வருகிறோம்.",
+      "note" : "Text for the veteran status statement  paragraph 2 text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
+      "value" : "நீங்கள் ஒரு படைவீரரா?",
+      "note" : "Text for the equal opportunity form : veteran status label text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the equal opportunity form veteran status item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the equal opportunity form veteran status item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
+      "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
+      "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
+      "value" : "நீங்கள் இராணுவத்தில் பணியாற்றுபவரின் வாழ்க்கைத்துணையா?",
+      "note" : "Text for the equal opportunity form : military spouse label text"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the equal opportunity form military-spouse item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the equal opportunity form military-spouse item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
+      "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
+      "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
+      "value" : "2002 ஆம் ஆண்டின் படைவீரர்களுக்கான வேலைகள் சட்டம்,<a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA) மூலம் திருத்தப்பட்ட, 1974 ஆம் ஆண்டின் வியட்நாம் சகாப்தத்தின் படைவீரர்களின் மறுசீரமைப்பு உதவிச் சட்டத்தின் கீழ் Amazon ஒரு மத்திய அரசாங்க ஒப்பந்ததாரர் ஆகும். பின்குறிப்பிடப்பட்டுள்ளவர்களை வேலையில் அமர்த்துவதற்கும், வேலையில் முன்னேறுவதற்கும் அரசு ஒப்பந்ததாரர்கள் உறுதியான நடவடிக்கை எடுக்க வேண்டும்: (1) மாற்றுத்திறனுள்ள படைவீரர்கள்; (2) சமீபத்தில் பிரிந்த படைவீரர்கள்; (3) போர்க்காலத்தில் கடமையாற்றிக் கொண்டிருப்பவர்கள் அல்லது பிரச்சார பேட்ஜ் வீரர்கள் மற்றும் (4) ஆயுதப்படை சேவை பதக்கம் பெற்ற வீரர்கள். உங்கள் பாதுகாக்கப்பட்ட படைவீரர் அந்தஸ்தைச் சுயமாக அடையாளம் காண்பதற்கான பின்வரும் அழைப்பானது, பிரிவு 4212க்கு இணங்க மேற்கொள்ளப்படுகிறது. இந்த தகவலை வெளிப்படுத்துவது முற்றிலும் தன்னார்வமானது மற்றும் அதை வழங்க மறுப்பது உங்களை எந்த பாதகமான நிலைக்கும் உட்படுத்தாது.",
+      "note" : "Text for the equal opportunity form protected veteran statement"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
+      "value" : "<b>ஒரு பாதுகாக்கப்பட்ட படைவீரர்</b> என்பவர் பின்வருவனவற்றில் ஏதேனும் ஒன்றில் இருப்பார்:",
+      "note" : "Text for the title of protected veteran meaning list"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
+      "value" : "<b>ஊனமுற்ற படைவீரர்</b>: படைவீரர் விவகாரங்கள் துறையின் செயலாளரால் நிர்வகிக்கப்படும் சட்டங்களின் கீழ் இழப்பீடு பெறத் தகுதியான அமெரிக்க இராணுவத்தில் தரைப்படை, கடற்படை அல்லது விமானப்படையில் பணியாற்றிய படைவீரர் (அல்லது இழப்பீட்டுக்கு இராணுவ ஓய்வுபெற்ற ஊதியம் பெற உரிமை அளிக்கப்படக்கூடியவர்); அல்லது சேவை தொடர்பான மாற்றுத்திறன் ஏற்பட்ட காரணத்தால் கடமையிலிருந்து வெளியேற்றப்பட்ட அல்லது விடுவிக்கப்பட்ட ஒருவர்.",
+      "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
+      "value" : "</b>: அமெரிக்க இராணுவம், தரைப்படை, கடற்படை அல்லது விமான சேவையில் கடமையாற்றிக் கொண்டிருந்ததிலிருந்து பணியில் இருந்து விடுவிக்கப்பட்ட அல்லது அத்தகைய படைவீரர் விடுவிக்கப்பட்ட தேதியில் தொடங்கும் மூன்று வருட காலப்பகுதியில் உள்ள ஒரு படைவீரர்.",
+      "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
+      "value" : "<b>போர்க்காலத்தில் கடமையாற்றிக் கொண்டிருப்பவர்கள் அல்லது பிரச்சார பேட்ஜ் வீரர்கள்</b>: அமெரிக்க பேட்ஜில் கடமைப் பணியாற்றிய ஒரு வீரர், பாதுகாப்புத் துறையால் நிர்வகிக்கப்படும் சட்டங்களின் கீழ் அங்கீகரிக்கப்பட்டுள்ளார்.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
+      "value" : "<b>ஆயுதப்படை சேவைக்காகப் பதக்கம் பெற்ற வீரர்</b>: அமெரிக்க இராணுவதில் தரைப்படையிலோ, கடற்படை அல்லது விமான சேவையிலோ பணிபுரியும்போது, அமெரிக்க இராணுவ நடவடிக்கையில் பங்கேற்ற ஒரு மூத்த படைவீரர் என <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>நிர்வாக ஆணையின்படி</a> ஆயுதப்படை சேவை பதக்கம் வழங்கப்பட்டது.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
+      "value" : "நீங்கள் பாதுகாக்கப்பட்ட வீரர்களின் வகைகளில் ஏதேனும் ஒன்றைச் சேர்ந்தவர் என்று நீங்கள் நம்பினால், கீழே உள்ள பொருத்தமான பெட்டியைத் தேர்வுசெய்து குறிப்பிடவும்.",
+      "note" : "Text for the protected veteran select form label text"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
+      "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
+      "note" : "Text for the protected veteran select form option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the protected veteran select form next button text"
+    },
+    "BB-cali-disclosure-page-title-text" : {
+      "value" : "புலனாய்வு நுகர்வோர் அறிக்கைகள் தொடர்பான கலிஃபோர்னியா வெளிப்படுத்தல்",
+      "note" : "Text for the california disclosure page title text"
+    },
+    "BB-cali-disclosure-page-in-connection-text" : {
+      "value" : "Amazon.com, Inc. அல்லது அதன் துணை நிறுவனங்கள் அல்லது இணை நிறுவனங்கள் (\"Amazon\") உடனான எனது சாத்தியமான வேலைவாய்ப்பு தொடர்பாக, பின்வரும் நுகர்வோர் அறிக்கை ஏஜென்சியிடம் இருந்து என்னைப் பற்றிய ஒரு விசாரணை நுகர்வோர் அறிக்கையை (\"அறிக்கை\") Amazon பெறலாம்:",
+      "note" : "Text for the california disclosure page in connection paragraph text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-name-text" : {
+      "value" : "Accurate Background, LLC (\"Accurate\")",
+      "note" : "Text for the california disclosure page vendor accurate name text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
+      "value" : "7515 Irvine Center Dr.",
+      "note" : "Text for the california disclosure page vendor accurate address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
+      "value" : "Irvine, CA 92618",
+      "note" : "Text for the california disclosure page vendor accurate address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
+      "value" : "1-800-216-8024",
+      "note" : "Text for the california disclosure page vendor accurate phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-url-text" : {
+      "value" : "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>",
+      "note" : "Text for the california disclosure page vendor accurate home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
+      "value" : "நான் இவற்றைப் புரிந்துகொள்கிறேன்:",
+      "note" : "Text for the california disclosure page vendor accurate understand text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
+      "value" : "Accurate நிறுவனத்திடம் இருந்து ஒரு அறிக்கை கோரப்படுகையில், அத்தகைய அறிக்கையில் உள்ள தகவல்கள் எனது வேலைக்கான தகுதியைத் தீர்மானிக்க மட்டுமே பயன்படுத்தப்படும்.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
+      "value" : "Accurate மூலம் பெறப்பட்டு ஏதேனும் அறிக்கையில் சேர்க்கப்பட்டுள்ள தகவல்கள் பின்வருபவை உட்பட பல்வேறு வழிகளில் கிடைத்திருக்கக்கூடும். சட்டப்பூர்வமாக கிடைக்கக்கூடிய ஆவணங்கள் மற்றும் தகவல்கள் மற்றும்/அல்லது நேரடி அல்லது மறைமுகத் தொடர்பு மற்றும் முன்னாள் நிறுவனங்கள், பள்ளிகள், நிதி நிறுவனங்கள், நில உரிமையாளர்கள், பொது ஏஜென்சிகள் மற்றும் எனது சுற்றுப்புறத்தில் உள்ளவர்கள், நண்பர்கள் மற்றும் எனக்கு அறிமுகமானவர்கள் மற்றும் தொடர்புடைய நபர்கள் எவருடனாவது பெறப்பட்ட நேர்காணல்களில் கிடைத்த தகவல்கள் போன்றவை.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
+      "value" : "Accurate மூலம் நடத்தப்படும் விசாரணை(கள்) முடிவுகள், Amazonக்கு வழங்கப்படும் எந்த அறிக்கையிலும் சேர்க்கப்படும் பின்வருபவை உட்பட என்னைப் பற்றிய பல்வேறு வகையான தகவல்கள் அதில் இருக்கக்கூடும்: எனது குணாதிசயங்கள், பொது நற்பெயர், தனிப்பட்ட குணாதிசயங்கள் அல்லது வாழ்க்கை முறை, வேலைவாய்ப்பு மற்றும் பணி வரலாறு, கல்வி, ஓட்டுநர் பதிவு, பொருந்தக்கூடிய கூட்டாட்சி மற்றும் மாநில சட்டத்தால் விதிக்கப்படும் வரம்புகளுக்கு உட்பட்டது குற்றவியல் பதிவு போன்றவை.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
+      "value" : "கலிஃபோர்னியா சிவில் குறியீடு § 1785 et seq. மற்றும் § 1786 et seq.இன் படி, Amazon என்னைப் பற்றி ஏதேனும் அறிக்கை கோரினால், அதன் வழக்கமான அலுவலக நேரத்தின்போது Accurate நிறுவனம் என்னிடம் பராமரிக்கும் கோப்பை நான் பார்க்கலாம். (1) சான்றளிக்கப்பட்ட அஞ்சல் மூலமாகவோ Accurateஇன் அலுவலகத்திற்கு அதன் வழக்கமான அலுவலக நேரங்களில் (எனது திட்டமிட்ட வருகை குறித்த நியாயமான முன் அறிவிப்பை வழங்கிய பிறகு) நேரில் சென்றோ சரியான அடையாளத்தைச் சமர்ப்பித்து, நகலெடுக்கும் செலவுகளைச் செலுத்தி இந்தக் கோப்பின் நகலைப் பெற்றுக்கொள்ள வேண்டும்; மற்றும் (2) சரியான அடையாளத்தை சமர்ப்பித்து, தொலைப்பேசி வெளிப்படுத்தலுக்கான எழுத்துப்பூர்வ கோரிக்கையை சமர்ப்பித்த பிறகு எனது செலவில் இந்த கோப்பின் சுருக்கத்தை Accurate நிறுவனத்திடம் இருந்து பெற்றுக்கொள்ள வேண்டும் என்பதையும் நான் புரிந்துகொள்கிறேன். Accurate அதன் கோப்பினை என்னிடம் (அதில் குறியிடப்பட்ட தகவல்கள் உட்பட) விளக்குவதற்கு பயிற்சி பெற்ற பணியாளர்கள் உள்ளனர், மேலும், Accurate அலுவலகத்தில் நான் நேரில் செல்லும்போது என்னுடன் ஒருவர் வரக்கூடும் என்பதையும் எனது சரியான அடையாளத்தை Accurateக்கு அளிக்கும் வரை அவர் என்னுடனே இருப்பார் என்பதையும் நான் புரிந்துகொள்கிறேன்.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
+      "value" : "Accurateஇன் தனியுரிமை நடைமுறைகள் பற்றிய தகவல்களை இங்கே காணலாம்: <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-name-text" : {
+      "value" : "First Advantage",
+      "note" : "Text for the california disclosure page vendor fadv name text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
+      "value" : "1 Concourse Parkway NE, Suite 200.",
+      "note" : "Text for the california disclosure page vendor fadv address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
+      "value" : "Atlanta, GA 30328",
+      "note" : "Text for the california disclosure page vendor fadv address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-phone-text" : {
+      "value" : "1-800-845-6004",
+      "note" : "Text for the california disclosure page vendor fadv phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-url-text" : {
+      "value" : "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>",
+      "note" : "Text for the california disclosure page vendor fadv home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
+      "value" : "நான் இவற்றைப் புரிந்துகொள்கிறேன்:",
+      "note" : "Text for the california disclosure page vendor fadv understand text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
+      "value" : "First Advantage நிறுவனத்திடம் இருந்து ஓர் அறிக்கை கோரப்படுகையில், அவ்வறிக்கையில் உள்ள தகவல்கள் எனது வேலைக்கான தகுதியைத் தீர்மானிக்க மட்டுமே பயன்படுத்தப்படும்.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
+      "value" : "First Advantage மூலம் பெறப்பட்டு ஏதேனும் அறிக்கையில் சேர்க்கப்பட்டுள்ள தகவல்கள் பின்வருபவை உட்பட பல்வேறு வழிகளில் கிடைத்திருக்கக்கூடும். சட்டப்பூர்வமாக கிடைக்கக்கூடிய ஆவணங்கள் மற்றும் தகவல்கள் மற்றும்/அல்லது நேரடி அல்லது மறைமுகத் தொடர்பு மற்றும் முன்னாள் நிறுவனங்கள், பள்ளிகள், நிதி நிறுவனங்கள், நில உரிமையாளர்கள், பொது ஏஜென்சிகள் மற்றும் எனது சுற்றுப்புறத்தில் உள்ளவர்கள், நண்பர்கள் மற்றும் எனக்கு அறிமுகமானவர்கள் மற்றும் தொடர்புடைய நபர்கள் எவருடனாவது பெறப்பட்ட நேர்காணல்களில் கிடைத்த தகவல்கள் போன்றவை.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
+      "value" : "First Advantage மூலம் நடத்தப்படும் விசாரணை(களின்) முடிவுகள், Amazonக்கு வழங்கப்படும் எந்த அறிக்கையிலும் சேர்க்கப்படும் பின்வருபவை உட்பட என்னைப் பற்றிய பல்வேறு வகையான தகவல்கள் அதில் இருக்கக்கூடும்: எனது குணாதிசயங்கள், பொது நற்பெயர், தனிப்பட்ட குணாதிசயங்கள் அல்லது வாழ்க்கை முறை, வேலைவாய்ப்பு மற்றும் பணி வரலாறு, கல்வி, ஓட்டுநர் பதிவு, பொருந்தக்கூடிய கூட்டாட்சி மற்றும் மாநில சட்டத்தால் விதிக்கப்படும் வரம்புகளுக்கு உட்பட்டது குற்றவியல் பதிவு போன்றவை.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
+      "value" : "கலிஃபோர்னியா சிவில் குறியீடு § 1785 et seq. மற்றும் § 1786 et seq. இன்படி, Amazon என்னைப் பற்றி ஏதேனும் அறிக்கை கோரினால், அதன் வழக்கமான அலுவலக நேரத்தின்போது First Advantage என்னிடம் பராமரிக்கும் கோப்பை நான் பார்க்கலாம். (1) சான்றளிக்கப்பட்ட அஞ்சல் மூலமாகவோ First Advantageஇன் அலுவலகத்திற்கு அதன் வழக்கமான அலுவலக நேரங்களில் (எனது திட்டமிட்ட தோற்றம் குறித்த நியாயமான முன் அறிவிப்பை வழங்கிய பிறகு) நேரில் சென்றோ சரியான அடையாளத்தைச் சமர்ப்பித்து, நகலெடுக்கும் செலவுகளைச் செலுத்தி இந்தக் கோப்பின் நகலைப் பெற்றுக்கொள்ள வேண்டும்; மற்றும் (2) சரியான அடையாளத்தை சமர்ப்பித்து, தொலைப்பேசி வெளிப்படுத்தலுக்கான எழுத்துப்பூர்வ கோரிக்கையை சமர்ப்பித்த பிறகு எனது செலவில் இந்த கோப்பின் சுருக்கத்தை First Advantage நிறுவனத்திடம் இருந்து பெற்றுக்கொள்ள வேண்டும் என்பதையும் நான் புரிந்துகொள்கிறேன். First Advantage அதன் கோப்பினை என்னிடம் (அதில் குறியிடப்பட்ட தகவல்கள் உட்பட) விளக்குவதற்கு பயிற்சி பெற்ற பணியாளர்கள் உள்ளனர், மேலும், First Advantage அலுவலகத்திற்கு நான் நேரில் செல்லும்போது என்னுடன் ஒருவர் வரக்கூடும் என்பதையும் எனது சரியான அடையாளத்தை First Advantageக்கு அளிக்கும் வரை அவர் என்னுடனே இருப்பார் என்பதையும் நான் புரிந்துகொள்கிறேன்.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
+      "value" : "First Advantageஇன் தனியுரிமை நடைமுறைகள் பற்றிய தகவல்கள் இங்கு உள்ளன: <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>.",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-certify-checkbox-text" : {
+      "value" : "நான் இந்த ஆவணத்தைப் படித்தேன், அதைப் புரிந்துகொண்டேன் என்று சான்றளிக்கிறேன், மேலும் இந்த கலிஃபோர்னியாவின் விசாரணை நுகர்வோர் அறிக்கைகள் தொடர்பான இந்த வெளிப்படுத்துதலின்படி, என்னைப் பற்றிய விசாரணை நுகர்வோர் அறிக்கையைப் பெற Amazonஐ அங்கீகரிக்கிறேன்.",
+      "note" : "Text for the california disclosure page certify checkbox text"
+    },
+    "BB-cali-disclosure-page-next-button-text" : {
+      "value" : "அடுத்து",
+      "note" : "Text for the california disclosure page next button text"
+    },
+    "BB-nhe-page-title-text" : {
+      "value" : "{firstname} {lastname} நீங்கள் கிட்டத்தட்ட முடித்துவிட்டீர்கள்! நீங்கள் பேட்ஜ் புகைப்படம் எடுப்பதற்காகவும், முழுமையான பணி அங்கீகாரத்தை முடிப்பதற்காகவும், தேவைப்பட்டால் போதைமருந்து பரிசோதனைக்காவும் வர வேண்டும்.",
+      "note" : "Text for the nhe page title"
+    },
+    "BB-nhe-page-confirm-selection-button-text" : {
+      "value" : "தேர்வை உறுதிப்படுத்தவும்",
+      "note" : "Text for the nhe page confirm selection button text"
+    },
+    "BB-nhe-page-header-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்குத் திட்டமிடுதல்",
+      "note" : "Text for the nhe page header text"
+    },
+    "BB-nhe-few-spots-remaining-text" : {
+      "value" : "மிகக் குறைவான இடங்களே எஞ்சியுள்ளன",
+      "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-SelfId-veteran-status-title-text" : {
+      "value" : "அனுபவமுள்ளவர் நிலையின் தன்னார்வ சுய-அடையாளம்",
+      "note" : "Text for the veteran status form title text"
+    },
+    "BB-counter-message-banner-text" : {
+      "value" : "மீதமுள்ள படிகளை முடிக்க, அடுத்த {hours} மணிநேரம் {minutes} நிமிடங்களுக்கு உங்களுக்கான இடத்தைத் தக்க வைத்திருக்கிறோம்.",
+      "note" : "Text for the holding spot time counter banner message"
+    },
+    "BB-candidate-withdraws-thank-you-text" : {
+      "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
+      "note" : "Text for the thanking candidate for their interest to apply for a job"
+    },
+    "BB-candidate-withdraws-withdraw-reason-text" : {
+      "value" : "நீங்கள் வழங்கிய தகவல்கள் எங்களுக்குத் தேவையானவற்றைப் பூர்த்தி செய்யவில்லை. amazon.jobsஇல் உள்ள வேலை விவரங்களைப் பார்க்கவும்.",
+      "note" : "Text for the reason to withdraw candidate application"
+    },
+    "BB-candidate-withdraws-back-to-dashboard-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-not-eligible-heading-text" : {
+      "value" : "{name}, Amazon மீதான உங்கள் ஆர்வம் எங்களுக்கு மகிழ்ச்சி அளிக்கிறது.",
+      "note" : "Text for the assessment not eligible heading text"
+    },
+    "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
+      "value" : "இந்தப் பணிக்கு உங்களைப் பரிசீலிக்க வாய்ப்பளித்ததற்கு மிக்க நன்றி. தற்சமயம் எங்களால் உங்களது விண்ணப்பத்தை அடுத்த படிக்கு எடுத்துச்செல்ல இயலவில்லை.",
+      "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
+    },
+    "BB-assessment-not-eligible-reconsideration-notice-text" : {
+      "value" : "மற்றொரு நேரத்தில் நாங்கள் உங்களை இந்தப் பணிக்கு மறுபரிசீலனை செய்ய வேண்டுமெனில், நீங்கள் அடுத்த மூன்று மாதங்களில் மீண்டும் மதிப்பீட்டில் கலந்துகொள்ளலாம்.",
+      "note" : "Text for the text to let candidate know when to reconsider the assessment again"
+    },
+    "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-consent-assessment-heading-text" : {
+      "value" : "மதிப்பீடு",
+      "note" : "Text for the assessment consent page assessment heading text"
+    },
+    "BB-assessment-consent-excited-in-candidate-interest-text" : {
+      "value" : "Amazonஇல் சேருவதற்கான உங்கள் ஆர்வம் குறித்து நாங்கள் மிகவும் மகிழ்ச்சியடைகிறோம்!",
+      "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
+    },
+    "BB-assessment-consent-purpose-of-assessment-text" : {
+      "value" : "தொடர்புடைய பொறுப்பை நீங்கள் புரிந்துகொள்ளவும், உங்களைப் பற்றி நாங்கள் தெரிந்துகொள்ளவும் இந்த மதிப்பீடு உதவும்.",
+      "note" : "Text to let candidate know the purpose of Assessment"
+    },
+    "BB-assessment-consent-accommodation-heading-text" : {
+      "value" : "உதவிகள்",
+      "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazonஇல், எங்கள் பணியாளர்களின் பன்முகத்தன்மையையும் நாங்கள் வேலை செய்யும் பல்வேறு வழிகளையும் கொண்டாடுகிறோம். நீங்கள் மாற்றுத்திறனாளியாக இருந்து, மதிப்பாய்வு உட்பட பணியமர்த்தல் செயல்முறையின்போது உங்களுக்கு உதவி தேவைப்பட்டால், <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodationஐப் பார்வையிடவும்.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "<b>மதிப்பீட்டின் எந்த பகுதிக்கும் கால வரையறை இல்லை</b> — உங்களுக்கு ஏற்ற வேகத்தில் செய்யலாம். இந்த மதிப்பீட்டின் அனைத்துப் பிரிவுகளும்:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
+      "value" : "பின்வரும் ஸ்க்ரீன் ரீடர்களுக்கு உகந்ததாக இருக்கும்: VoiceOver (Mac) மற்றும் Firefox, Chrome மற்றும் Edge (Windows)இல் NVDA (Windows).",
+      "note" : "Text for the assessment pace and sections of the assessments list item 1"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
+      "value" : "மவுஸ் அல்லது கீபோர்டு வழியாக அணுக முடியும்.",
+      "note" : "Text for the assessment pace and sections of the assessments list item 2"
+    },
+    "BB-assessment-consent-begin-assessment-button-text" : {
+      "value" : "மதிப்பீட்டைத் தொடங்கு",
+      "note" : "Text for the begin assessment button text"
+    },
+    "BB-ReviewSubmit-header-title-text" : {
+      "value" : "சரிபார்த்து, சமர்ப்பிக்கவும்",
+      "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-job-details-section-title-text" : {
+      "value" : "வேலை விவரங்கள்",
+      "note" : "Text for the job details section title text"
+    },
+    "BB-ReviewSubmit-job-details-section-background-check-text" : {
+      "value" : "பின்னணிச் சரிபார்ப்பு",
+      "note" : "Text for the job details section background check text"
+    },
+    "BB-ReviewSubmit-job-details-section-authorized-text" : {
+      "value" : "அங்கீகரிக்கப்பட்டது",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
+      "value" : "பின்னணி சரிபார்ப்பின் இலவச நகலை அனுப்பவும்",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
+      "value" : "தேசிய அடையாள ஆவண வகை:",
+      "note" : "Text for the job details section national ID type text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
+      "value" : "தேசிய அடையாள எண்:",
+      "note" : "Text for the job details section national ID number text"
+    },
+    "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
+      "value" : "பிறந்த தேதி:",
+      "note" : "Text for the job details section date of birth text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனம்",
+      "note" : "Text for the pre-hire appointment section title text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
+      "value" : "மணிநேரம்:",
+      "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
+      "value" : "மேலே குறிப்பிட்டுள்ள நேரத்தில் உங்களைப் பார்க்க ஆவலுடன் காத்திருக்கிறோம்.",
+      "note" : "Text for the pre-hire appointment section look forward text"
+    },
+    "BB-ReviewSubmit-selfId-section-title-text" : {
+      "value" : "தன்னார்வ சுய அடையாளம்",
+      "note" : "Text for the voluntary self-identification section title text"
+    },
+    "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
+      "value" : "சம வாய்ப்பு:",
+      "note" : "Text for the voluntary self-identification section equal opportunity text"
+    },
+    "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
+      "value" : "Veteral நிலை:",
+      "note" : "Text for the voluntary self-identification section veteral status text"
+    },
+    "BB-ReviewSubmit-selfId-section-disability-status-text" : {
+      "value" : "மாற்றுத்திறன் நிலை:",
+      "note" : "Text for the voluntary self-identification section disability status text"
+    },
+    "BB-ReviewSubmit-submit-application-button-text" : {
+      "value" : "விண்ணப்பத்தைச் சமர்ப்பி",
+      "note" : "Text for the review and submit page submit application button text"
+    },
+    "BB-ThankYou-thank-you-title-text" : {
+      "value" : "Amazonக்கு விண்ணப்பித்ததற்கு நன்றி!",
+      "note" : "Text for the thank you page thank you title text"
+    },
+    "BB-ThankYou-look-forward-next-steps-text" : {
+      "value" : "நாம் விரைவில் மீண்டும் சந்திப்போம். உங்கள் அடுத்த படிகள் இதோ:",
+      "note" : "Text for the thank you page look forward and next steps text"
+    },
+    "BB-ThankYou-referral-details-title-text" : {
+      "value" : "பரிந்துரையாளர் விவரங்களை வழங்கவும் (பொருந்தும்பட்சத்தில்)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-ThankYou-referral-details-description-text" : {
+      "value" : "Amazonஇல் வேலைசெய்யும் பணியாளரால் நீங்கள் பரிந்துரைக்கப்பட்டீர்களா?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-ThankYou-referral-details-yes-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-ThankYou-referral-details-no-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-ThankYou-start-pre-hire-activities-title-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நடவடிக்கைகளைத் தொடங்குங்கள்",
+      "note" : "Text for the thank you page start pre-hire activities title text"
+    },
+    "BB-ThankYou-fill-wotc-description-text" : {
+      "value" : "உங்கள் முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்கு முன்பு, வேலை வாய்ப்புகள் வரி கிரெடிட் கேள்வித்தாளை நிரப்பவும்..",
+      "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
+    },
+    "BB-ThankYou-get-started-button-text" : {
+      "value" : "தொடங்குவோம்",
+      "note" : "Text for the thank you page let's get started button text"
+    },
+    "BB-ThankYou-get-pre-hire-appointment-details-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமன விவரங்கள்",
+      "note" : "Text for the thank you page pre-hire appointment details text"
+    },
+    "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
+      "value" : "{startTime} - {endTime}க்குள் எப்போது வேண்டுமானாலும் 30 நிமிட அமர்வுக்கு வருகை தரவும்.",
+      "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
+      "value" : "நியமன விவரங்கள்",
+      "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
+      "value" : "எடுத்து வரவேண்டியவை",
+      "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
+      "value" : "காலாவதியாகாத அசல் புகைப்பட ஐடி",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
+      "value" : "காலாவதியாகாத பணி அங்கீகார அசல் ஆவணம்",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "ஏற்றுக்கொள்ளக்கூடிய ஆவணங்களின் முழுமையான பட்டியலுக்கு <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>இங்கே</a> கிளிக் செய்யவும்.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
+      "value" : "சிறப்பு உதவி",
+      "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "பணியமர்த்தல் நிகழ்வுக்கு ASL மொழிபெயர்ப்பாளர் போன்ற ஏதேனும் உதவிகள் தேவைப்பட்டால், மொழிபெயர்ப்பாளரைக் கோர <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> எனும் தளத்திற்கு வந்து எங்களுடன் உரையாடவும். உங்கள் நியமனத்தைத் திட்டமிட்டவுடன் உடனடியாக எங்களைத் தொடர்புகொள்ளவும். உங்கள் நியமன ஏற்பாடுகளைச் செய்ய, எங்களுக்குக் குறைந்தபட்சம் 48 மணிநேரம் தேவை.",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-ThankYou-referral-login-label-text" : {
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு IDஐ வழங்கவும் (சிற்றெழுத்துகளில் மட்டும்)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-ThankYou-referral-login-empty-error-text" : {
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு IDஐ வழங்கவும்.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-ThankYou-referral-login-regex-error-text" : {
+      "value" : "பயனர் IDஇல் சிற்றெழுத்துகள் மட்டுமே இருக்க வேண்டும், அதில் குறைந்தது 4 எழுத்துகளாவது இருக்க வேண்டும்.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-WOTC-page-title-text" : {
+      "value" : "வேலை வாய்ப்பு வரி கிரெடிட் கேள்வித்தாள்",
+      "note" : "Text for the WOTC page title text"
+    },
+    "BB-WOTC-page-description-text" : {
+      "value" : "Amazon IAT சோதனையானது மத்திய மற்றும்/அல்லது மாநில வரி கிரெடிட் திட்டங்களில் பங்கேற்கிறது. நீங்கள் வழங்கும் தகவல்கள் இந்த திட்டங்களுக்கான நிறுவனத் தகுதியைத் தீர்மானிப்பதற்காகப் பயன்படுத்தப்படும், அவை எந்த விதத்திலும் பணியமர்த்தல், தக்கவைத்தல் அல்லது பதவி உயர்வு முடிவுகளை எதிர்மறையாக பாதிக்காது.",
+      "note" : "Text for the WOTC page description text"
+    }
+  }
+}

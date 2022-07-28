@@ -1,0 +1,1304 @@
+{
+  "resources" : {
+    "BB-PreConsentPage-banner-journey-starts" : {
+      "value" : "Amazon Associate হওয়ার জন্য আপনার যাত্রা এখান থেকে শুরু।",
+      "note" : "Text for PreConsentPage banner text"
+    },
+    "BB-JobOpportunity-Go-To-Dashboard-Link" : {
+      "value" : "কাজের ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the link to go back to jobs dashboard"
+    },
+    "BB-JobOpportunity-back-to-indexPage-link" : {
+      "value" : "কাজ সমূহ দেখুন",
+      "note" : "Text for the link to go back to job opportunity index"
+    },
+    "BB-JobOpportunity-back-to-jobConfirmation-link" : {
+      "value" : "ফিরে যান",
+      "note" : "Text for the link to go back to job confirmation page"
+    },
+    "BB-JobOpportunity-go-to-jobDescription-link" : {
+      "value" : "চাকরির শর্তাবলী এবং সুবিধা",
+      "note" : "Text for the link to go to job description page"
+    },
+    "BB-JobOpportunity-filter-button" : {
+      "value" : "ফিল্টার করুন",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-sort-button" : {
+      "value" : "সাজান",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-select-job-button" : {
+      "value" : "এই চাকরিটি বেছে নিন",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-StepHeader-view-progress-button" : {
+      "value" : "অগ্রগতি দেখুন",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-PreconsentPage-preview-steps-button" : {
+      "value" : "ধাপগুলি প্রিভিউ করুন",
+      "note" : "Text for the button to preview application steps"
+    },
+    "BB-PreconsentPage-next-Button" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the button to go to next page ( consent page )"
+    },
+    "BB-Country-United-States" : {
+      "value" : "মার্কিন যুক্তরাষ্ট্র",
+      "note" : "United States as country name our application supports"
+    },
+    "BB-ConsentPage-qualification-criteria-header-text" : {
+      "value" : "আবেদন করার মাধ্যেম, আপনি কনফার্ম করছেন যে:",
+      "note" : "Text for application qualification criteria"
+    },
+    "BB-ConsentPage-data-policy-header-text" : {
+      "value" : "আবেদন করার মাধ্যমে, আপনি পড়ে সম্মত হচ্ছেন",
+      "note" : "Text for the user data policy agreement title"
+    },
+    "BB-ConsentPage-user-data-Policy-button" : {
+      "value" : "ব্যবহারকারীর ডেটা নীতিমালা",
+      "note" : "Text for the button to open user data policy page"
+    },
+    "BB-ConsentPage-create-application-button" : {
+      "value" : "আবেদন তৈরি করুন",
+      "note" : "Text for the create application button"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "ব্যবহারকারীর ডেটার নীতিমালা",
+      "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon একটি বৈচিত্র্যময় এবং সার্বজনীন কর্মক্ষেত্রের প্রতি প্রতিশ্রুতিবদ্ধ। Amazon একটি সমান সুযোগে বিশ্বাসী নিয়োগকর্তা এবং জাতি, পূর্বপুরুষের দেশ, লিঙ্গ, লিঙ্গ পরিচয়, যৌন অভিমুখীতা, সুরক্ষিত ভেটেরান স্ট্যাটাস, প্রতিবন্ধিতা, বয়স, বা অন্যান্য আইনত সুরক্ষিত অবস্থার ভিত্তিতে বৈষম্য করে না। প্রতিবন্ধী ব্যক্তি হিসাবে বাসস্থানের জন্য অনুরোধ করতে চাইলে, অনুগ্রহ করে <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>-এ ভিজিট করুন",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
+      "value" : "Amazon আপনার ব্যক্তিগত ডেটা সুরক্ষাকে গুরুত্ব সহকারে নেয় এবং শুধুমাত্র আইন অনুযায়ী আপনার ব্যক্তিগত ডেটা প্রক্রিয়া করবে। বিশেষ করে, আমরা আপনার পূর্ব সম্মতি ব্যতীত কোনো তৃতীয় পক্ষের সাথে আপনার ব্যক্তিগত তথ্য শেয়ার করি না, যদি না আইন দ্বারা তা করতে বাধ্য করা হয়। আপনি অন্যথায় প্রকাশ না করলে, নিয়োগকারী Amazon কোম্পানি আপনার ব্যক্তিগত ডেটা USA-এ Amazon.com দ্বারা রক্ষণাবেক্ষণ করা ইলেকট্রনিক ডাটাবেসে বা এর কোনো সহযোগীতে সংরক্ষণ করবে। Amazon কীভাবে আপনার ব্যক্তিগত ডেটা সঞ্চয় করে এবং প্রক্রিয়া করে সে সম্পর্কে সম্পূর্ণ তথ্যের জন্য, অনুগ্রহ করে এখানে ক্লিক করুন <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "note" : "Text for the flyout user data policy paragraph 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
+      "value" : "আপনি আজ যে ভূমিকার জন্য আবেদন করেছেন তা ছাড়াও, আমাদের অন্যান্য পজিশন থাকতে পারে যেগুলির জন্য একই বা অনুরূপ কাজের ফাংশন প্রয়োজন। এই ভূমিকাগুলি পূর্ণকালীন, হ্রাসকৃত-সময়, খণ্ডকালীন, সিজনাল এবং/অথবা অস্থায়ী পজিশন হতে পারে যা এই অবস্থানে বা অন্যান্য আশেপাশের Amazon অবস্থানগুলিতে বিদ্যমান। Amazon বা আমাদের অংশীদারদের সাথে কোনো ভূমিকা গ্রহণ করার জন্য আপনার কোনো বাধ্যবাধকতা নেই, তবে, আপনার আবেদনটি সম্পূর্ণ করার মাধ্যমে আপনি আপনার আবেদন সাইটের 30 মাইল ব্যাসার্ধের মধ্যে একই লেভেলের, প্রতি ঘণ্টার ভূমিকার জন্য বিবেচিত হতে সম্মত হচ্ছেন। এর মধ্যে আমাদের অংশীদারদের (স্টাফিং এজেন্সি) সাথে আপনার আবেদনকারীর তথ্য শেয়ার করা অন্তর্ভুক্ত যারা আমাদের নিয়মিত এবং অস্থায়ী উভয় সহযোগীর প্রয়োজনের জন্য ভাড়া করে।",
+      "note" : "Text for the flyout user data policy paragraph 3 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
+      "value" : "আবেদন করার মাধ্যমে, আপনি:",
+      "note" : "Text for the flyout user data policy by applying text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
+      "value" : "স্বীকার করছেন যে আপনি যে পদের জন্য আবেদন করছেন তার কাজের বিবরণ পড়েছেন এবং আপনি কাজ সম্পাদনের জন্য প্রয়োজনীয় মৌলিক প্রয়োজনীয়তাগুলি বুঝতে পেরেছেন;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
+      "value" : "আপনার আবেদনের উদ্দেশ্যে এবং Amazon-এর অন্য কোনো বৈধ উদ্দেশ্যে Amazon, salesforce.com বা অন্য কোনও তৃতীয় পক্ষকে আপনার ব্যক্তিগত ডেটা প্রক্রিয়াকরণ, বিশ্লেষণ এবং মূল্যায়নে সম্মতি দিন। সন্দেহ এড়ানোর জন্য, আপনার ব্যক্তিগত ডেটার \"প্রক্রিয়াকরণ\" এর মধ্যে অন্তর্ভুক্ত থাকবে আপনার ব্যক্তিগত তথ্য সংগ্রহ করা, গ্রহণ করা, রেকর্ড করা, সংগঠিত করা, সংযোজন করা, সংরক্ষণ করা, আপডেট করা, পরিবর্তন করা, ব্যবহার করা, প্রচার করা, বিতরণ করা, একত্র করা, লিঙ্ক করা, ব্লক করা, অবনমিত করা, মুছে ফেলা বা ধ্বংস করা, তবে এগুলিতেই সীমিত হবে না;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
+      "value" : "আবেদন প্রক্রিয়ার পরে Amazon-কে আপনার ব্যক্তিগত ডেটা ধরে রাখতে সম্মতি দিন, যাতে এটির চাকরির আবেদন প্রক্রিয়াগুলির কার্যকর পর্যবেক্ষণে এবং মার্কিন যুক্তরাষ্ট্রে একটি ইলেকট্রনিক ডাটাবেসে আপনার ব্যক্তিগত ডেটা সংরক্ষণে সহায়তা করতে পারে।",
+      "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
+    },
+    "BB-StepHeader-view-progress-flyout-title" : {
+      "value" : "অগ্রগতি দেখুন",
+      "note" : "Text for view progress flyout title"
+    },
+    "BB-StepHeader-view-progress-flyout-close-button" : {
+      "value" : "সম্পন্ন হয়েছে",
+      "note" : "Text for view progress flyout close button"
+    },
+    "BB-ApplicationSteps-select-job-text" : {
+      "value" : "চাকরী নির্বাচন করুন",
+      "note" : "Text form select job application step"
+    },
+    "BB-ApplicationSteps-complete-required-document-text" : {
+      "value" : "প্রয়োজনীয় নথি সম্পূর্ণ করুন",
+      "note" : "Text for complete required documents application step"
+    },
+    "BB-ApplicationSteps-schedule-preHire-appt-text" : {
+      "value" : "প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের সময়সূচী নির্ধারণ করুন",
+      "note" : "Text for Schedule pre-hire appointment application step"
+    },
+    "BB-ApplicationSteps-complete-assessment-text" : {
+      "value" : "একটি মূল্যায়ন সম্পূর্ণ করুন (~ 15 মিনিট)",
+      "note" : "Text for complete assessment application step"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-title" : {
+      "value" : "ফিল্টার করুন",
+      "note" : "Text for filter schedule flyout title"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
+      "value" : "রিসেট করুন",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
+      "value" : "প্রয়োগ করুন",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
+      "value" : "প্রয়োগ করুন",
+      "note" : "Text for sort schedule flyout apply button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-title" : {
+      "value" : "এই অনুসারে সাজান",
+      "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
+      "value" : "বেতনের হার - সর্বোচ্চ থেকে সর্বনিম্ন",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
+      "value" : "ঘন্টা - সর্বোচ্চ থেকে সর্বনিম্ন",
+      "note" : "Text for sort schedule by hours from most to least"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
+      "value" : "ঘন্টা - সর্বনিম্ন থেকে সর্বোচ্চ",
+      "note" : "Text for sort schedule by hours from least to most"
+    },
+    "BB-DaysHoursFilter-title-text" : {
+      "value" : "সময়সূচী ফিল্টার করুন",
+      "note" : "Text for the title of DaysHours Filter"
+    },
+    "BB-DayName-Monday" : {
+      "value" : "সোমবার",
+      "note" : "Text for Monday"
+    },
+    "BB-DayName-Tuesday" : {
+      "value" : "মঙ্গলবার",
+      "note" : "Text for Tuesday"
+    },
+    "BB-DayName-Wednesday" : {
+      "value" : "বুধবার",
+      "note" : "Text for Wednesday"
+    },
+    "BB-DayName-Thursday" : {
+      "value" : "বৃহস্পতিবার",
+      "note" : "Text for Thursday"
+    },
+    "BB-DayName-Friday" : {
+      "value" : "শুক্রবার",
+      "note" : "Text for Friday"
+    },
+    "BB-DayName-Saturday" : {
+      "value" : "শনিবার",
+      "note" : "Text for Saturday"
+    },
+    "BB-DayName-Sunday" : {
+      "value" : "রবিবার",
+      "note" : "Text for Sunday"
+    },
+    "BB-TimeRange-start-time-select-label-text" : {
+      "value" : "শুরুর সময়",
+      "note" : "Text for start time select input label text"
+    },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "শুরুর সময়",
+      "note" : "Text for end time select input label text"
+    },
+    "BB-FilterSchedule-DesiredHours-Upto-hours" : {
+      "value" : "{hourNumber} ঘন্টা পর্যন্ত",
+      "note" : "Text for Desired Hours up to a certain hours"
+    },
+    "BB-FilterSchedule-desired-hour-select-place-holder" : {
+      "value" : "পছন্দসই ঘন্টা নির্বাচন করুন",
+      "note" : "Text for desired hours select input place holder"
+    },
+    "BB-FilterSchedule-desired-hour-select-label-text" : {
+      "value" : "প্রতি সপ্তাহে পছন্দসই ঘন্টা",
+      "note" : "Text for desired hours select input label text"
+    },
+    "BB-ContingencyOffer-well-done-text" : {
+      "value" : "এখন পর্যন্ত খুব ভালো",
+      "note" : "Text for congratulating candidate for accepting contingent offer"
+    },
+    "BB-ContingencyOffer-job-picked-title-text" : {
+      "value" : "আপনি যে চাকরিটি বেছে নিয়েছেন তার জন্য এখানে আনুষঙ্গিক অফার রয়েছে।",
+      "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
+      "value" : "এখানে আপনার বেছে নেওয়া চাকরিটির শর্তাধীন অফার রয়েছে।",
+      "note" : "Text for contingent offer meaning popover title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
+      "value" : "প্রযোজ্য আইন দ্বারা অনুমোদিত হিসেবে, আপনার অফারটি প্রয়োজনীয় ব্যাকগ্রাউন্ড চেক, ড্রাগ স্ক্রিনিং (যদি প্রযোজ্য হয়) এবং পুনরায় নিয়োগের যোগ্যতা পরীক্ষা (যদি প্রযোজ্য হয়) সফলভাবে পাস করার উপর নির্ভরশীল, তাই পরবর্তী পৃষ্ঠায় আপনার প্রাক-নিয়োগ পদক্ষেপগুলি সম্পূর্ণ করা গুরুত্বপূর্ণ। কিছু পরিস্থিতিতে, প্রাক-নিয়োগের শর্তাবলী সময়মতো সম্পূর্ণ না হওয়ার কারণে আপনার প্রথম দিন বিলম্বিত হতে পারে। এই ক্ষেত্রে, আপনি শীঘ্রই আমাদের কাছ থেকে শোনার আশা করতে পারেন।",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
+      "value" : "বন্ধ করুন।",
+      "note" : "Text for contingent offer meaning popover close button"
+    },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "চাকরির শর্তাবলী।",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
+    "BB-ContingencyOffer-remaining-steps-container-title" : {
+      "value" : "অবশিষ্ট পদক্ষেপসমূহ",
+      "note" : "Text for the remaining steps container title text"
+    },
+    "BB-ContingencyOffer-accept-offer-button-text" : {
+      "value" : "অফার গ্রহণ করুন",
+      "note" : "Text for the accept offer button text"
+    },
+    "BB-ContingencyOffer-back-to-jobs-button-text" : {
+      "value" : "চাকরিতে ফিরে যান",
+      "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
+    },
+    "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
+      "value" : "এই অফারটি গ্রহণ করার মাধ্যমে, আপনি নিশ্চিত করেছেন যে আপনি এই পজিশনের প্রয়োজনীয়তাগুলি বুঝতে পারছেন।",
+      "note" : "Text offer requirement understanding confirmed by accepting offer"
+    },
+    "BB-BGC-page-content-title" : {
+      "value" : "ব্যাকগ্রাউন্ড পরীক্ষা",
+      "note" : "Text for BGC page title"
+    },
+    "BB-BGC-page-provide-authorization-and-information-notice" : {
+      "value" : "একটি ব্যাকগ্রাউন্ড পরীক্ষার জন্য প্রয়োজনীয় অনুমোদন এবং তথ্য প্রদান করুন।",
+      "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
+    },
+    "BB-BGC-page-fcra-step-card-title" : {
+      "value" : "ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট ডিসক্লোজার",
+      "note" : "Text for the FCRA step card title"
+    },
+    "BB-BGC-page-nonfcra-step-card-title" : {
+      "value" : "ব্যাকগ্রাউন্ড পরীক্ষার জন্য নন-ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট স্বীকৃতি এবং অনুমোদন",
+      "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-additional-bgc-step-card-title" : {
+      "value" : "অতিরিক্ত ব্যাকগ্রাউন্ডের তথ্য",
+      "note" : "Text for the Additional bgc information step card title"
+    },
+    "BB-BGC-page-continue-button" : {
+      "value" : "চালিয়ে যান",
+      "note" : "Text for the bgc continue button ( from bgc to nhe page)"
+    },
+    "BB-BGC-page-fcra-subtitle-text" : {
+      "value" : "দয়া করে নীচের লিংকটি ব্যবহার করে কয়েকটি প্রশ্নের উত্তর দিন।",
+      "note" : "Text for the fcra subtitle"
+    },
+    "BB-BGC-page-fcra-get-started-btn" : {
+      "value" : "শুরু করা যাক",
+      "note" : "Text for the fcra get started button"
+    },
+    "BB-BGC-page-fcra-edit-form-btn" : {
+      "value" : "ফরম এডিট করুন",
+      "note" : "Text for the fcra edit information button"
+    },
+    "BB-BGC-addition-bgc-form-next-btn" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the additional bgc form next button"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
+      "value" : "ঠিকানার লাইন 1",
+      "note" : "Text for the additional bgc form  address line 1 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
+      "value" : "অনুগ্রহ করে একটি কার্যকর ঠিকানা লিখুন",
+      "note" : "Text for the additional bgc form  address line 1 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
+      "value" : "অ্যাপার্টমেন্ট, স্যুট, ইত্যাদি",
+      "note" : "Text for the additional bgc form  address line 2 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
+      "value" : "অনুগ্রহ করে একটি কার্যকর ঠিকানা লিখুন",
+      "note" : "Text for the additional bgc form  address line 2 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-city-label-text" : {
+      "value" : "শহর",
+      "note" : "Text for the additional bgc form  city label text"
+    },
+    "BB-BGC-Additional-bgc-form-city-error-text" : {
+      "value" : "অনুগ্রহ করে একটি সঠিক শহরের নাম লিখুন।",
+      "note" : "Text for the additional bgc form city error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-label-text" : {
+      "value" : "রাজ্য/প্রদেশ",
+      "note" : "Text for the additional bgc form  state label text"
+    },
+    "BB-BGC-Additional-bgc-form-state-error-text" : {
+      "value" : "অনুগ্রহ করে একটি সঠিক রাজ্য/প্রদেশ লিখুন",
+      "note" : "Text for the additional bgc form state error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
+      "value" : "একটি রাজ্য নির্বাচন করুন",
+      "note" : "Text for the additional bgc form state placeholder text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
+      "value" : "জিপ/পোস্টাল কোড",
+      "note" : "Text for the additional bgc form  zipcode label text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "অনুগ্রহ করে একটি কার্যকর 5 সংখ্যার জিপ কোড লিখুন",
+      "note" : "Text for the additional bgc form zipcode error message text"
+    },
+    "BB-BGC-Additional-bgc-form-country-label-text" : {
+      "value" : "দেশ",
+      "note" : "Text for the additional bgc form  country label text"
+    },
+    "BB-BGC-Additional-bgc-form-country-error-text" : {
+      "value" : "অনুগ্রহ করে একটি সঠিক দেশের নাম লিখুন",
+      "note" : "Text for the additional bgc form country error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
+      "value" : "জাতীয় পরিচয়পত্র",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
+      "value" : "অনুগ্রহ করে একটি বৈধ জাতীয় পরিচয়পত্রের ধরণ লিখুন",
+      "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
+      "value" : "জাতীয় আইডি নাম্বার",
+      "note" : "Text for the additional bgc form  national id number label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ড্যাশ ছাড়া একটি কার্যকর 9 সংখ্যার সোশ্যাল সিকিউরিটি নাম্বার লিখুন",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-label-text" : {
+      "value" : "জন্ম তারিখ",
+      "note" : "Text for the additional bgc form  date of birth label text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "অনুগ্রহ করে একটি বৈধ জন্ম তারিখ লিখুন।",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
+      "value" : "সোশ্যাল সিকিউরিটি নাম্বার",
+      "note" : "Social Security Number is one of options as National ID"
+    },
+    "BB-BGC-form-optional-input-label-text" : {
+      "value" : "ঐচ্ছিক",
+      "note" : "Text to show that inout on a form is optional"
+    },
+    "BB-BGC-bgc-step-card-step-progress" : {
+      "value" : "ধাপ {totalSteps} এর মধ্যে {currentStep}",
+      "note" : "Text to show step progress on bgc step card"
+    },
+    "BB-BGC-criminal-record-within-seven-years-question-text" : {
+      "value" : "আপনি কি গত সাত (7) বছরে অপকর্ম বা অপরাধের জন্য দোষী সাব্যস্ত হয়েছেন বা এর জন্য জেল বা প্যারোলে মুক্তি পেয়েছেন?",
+      "note" : "Text to ask if candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
+      "value" : "না",
+      "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "শহর, দেশ, দোষী সাব্যস্ত হওয়ার রাজ্য, তারিখ, অপরাধের প্রকৃতিসহ সাজা সংক্রান্ত তথ্য প্রদান করুন",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
+      "value" : "Amazon.com, Inc. বা এর সহযোগী সংস্থা বা সহযোগীদের (\"Amazon\") সাথে চাকরির জন্য আপনার আবেদনের সাথে সম্পর্কিত হিসেবে, আমরা একটি ভোক্তা রিপোর্টিং এজেন্সি থেকে আপনার উপর একটি ভোক্তা প্রতিবেদন সংগ্রহ করব। এটি সাধারণত “ব্যাকগ্রাউন্ড পরীক্ষা” নামে পরিচিত।",
+      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-title" : {
+      "value" : "ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট ডিসক্লোজার",
+      "note" : "Text for the fcra disclosure form title"
+    },
+    "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
+      "value" : "নীচে আমার ই-স্বাক্ষরের মাধ্যমে, আমি এতদ্বারা Amazon কর্পোরেটের সাথে আমার যে কোনও চাকরি বা নিযুক্তি জুড়ে উপরোক্ত ভোক্তা প্রতিবেদন সংগ্রহ করার জন্য Amazon-কে অনুমোদন করছি।",
+      "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the fcra disclosure form next button"
+    },
+    "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
+      "value" : "আমি এই ব্যাকগ্রাউন্ড পরীক্ষা করার জন্য Amazon-কে অনুমোদন দিচ্ছি।",
+      "note" : "Text for the authorize Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
+      "value" : "আমি এই ব্যাকগ্রাউন্ড চেকের জন্য Amazon-কে অনুমোদন দেওয়া প্রত্যাখান করছি।",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-label-text" : {
+      "value" : "আপনার পুরো নাম এখানে লিখুন",
+      "note" : "Text for the fcra signature input label text"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-error-text" : {
+      "value" : "অনুগ্রহ করে নিচের ফরম্যাটে একটি বৈধ পুরো নাম লিখুন: প্রথম শেষ",
+      "note" : "Text for the fcra signature input error text"
+    },
+    "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
+      "value" : "পৃথক ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট ডিসক্লোজার এবং অথরাইজেশন ডকুমেন্টে আমার দ্বারা ডিসক্লোজার এবং অনুমোদিত হিসাবে, Amazon.com, Inc. বা এর সহযোগী সংস্থাগুলি বা সহযোগী সংস্থাগুলি (\"Amazon\") আমার উপর একটি ব্যাকগ্রাউন্ড চেক করবে।",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
+      "value" : "নীচে আমার ই-স্বাক্ষর দ্বারা, আমি নিম্নরূপ স্বীকার করছি যে:",
+      "note" : "Text for the eSignature acknowledgement title"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-one" : {
+      "value" : "ব্যাকগ্রাউন্ড চেক প্রোভাইডার বা \"CRA\", যার দ্বারা ব্যাকগ্রাউন্ড চেক করা হবে তা হলো First Advantage, এটি 1 কনকোর্স পার্কওয়ে NE, স্যুট 200, আটলান্টা, GA 30328-এ অবস্থিত এবং (800) 845-6004 বা www.fadv.com-এ যোগাযোগ করা যেতে পারে।",
+      "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-one" : {
+      "value" : "ব্যাকগ্রাউন্ড পরীক্ষা করার পরিষেবা প্রদানকারী বা \"CRA\",  Accurate Background যারা ব্যাকগ্রাউন্ড পরীক্ষা সম্পাদন করবে, 7515 ইরভাইন সেন্টার Dr., ইরভাইন, CA 92618-তে অবস্থিত এবং (800) 216-8024 নম্বর বা www.accuratebackground.com ওয়েবসাইটের মাধ্যমে যোগাযোগ করা যেতে পারে।\n\n* আমি বুঝতে পারছি এবং সম্মত হচ্ছি যে আইন দ্বারা অনুমোদিত হওয়ায় Amazon, আমার অধিকতর অনুমোদন ছাড়াই, (1) আমি কর্মরত অবস্থায়, যদি হয়ে থাকে, (2) Accurate Background ছাড়া অন্যান্য CRA থেকে চাকরির উদ্দেশ্যে আমার সম্পর্কে অতিরিক্ত ব্যাকগ্রাউন্ড পরীক্ষার আদেশ দিতে পারে।",
+      "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-two" : {
+      "value" : "আমি বুঝতে পেরে সম্মত হচ্ছি যে আইন দ্বারা অনুমোদিত হিসাবে Amazon আমার আরও অনুমোদন ছাড়াই চাকরি সম্পর্কিত কাজে, (1) আমার চাকরির সময়, যদি থাকে, এবং (2) First Advantage ছাড়া অন্য CRA থেকে আমার সম্পর্কে অতিরিক্ত ব্যাকগ্রাউন্ড চেকের অর্ডার করতে পারে।",
+      "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-two" : {
+      "value" : "আমি বুঝতে পেরে সম্মত হচ্ছি যে আইন দ্বারা অনুমোদিত হিসাবে Amazon আমার আরও অনুমোদন ছাড়াই চাকরি সম্পর্কিত কাজে, (1) আমার চাকরির সময়, যদি থাকে, এবং (2) Accurate Background ছাড়া অন্য CRA থেকে আমার সম্পর্কে অতিরিক্ত ব্যাকগ্রাউন্ড চেকের অর্ডার করতে পারে।",
+      "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+      "value" : "চাকরির উদ্দেশ্যে, এবং আমার তথ্যগত গোপনীয়তা রক্ষাকারী সমস্ত আইনের সাপেক্ষে, ব্যাকগ্রাউন্ড চেক করার জন্য প্রয়োজনীয় যেকোন তথ্য CRA-এর কাছে প্রকাশ করার জন্য আমি নিম্নলিখিতগুলিকে অনুমোদন দিচ্ছি: আমার অতীত বা বর্তমান নিয়োগকর্তা, স্কুল, এবং আইন প্রয়োগকারী এবং অন্যান্য সরকারী সংস্থা যেমন মোটর সহ যানবাহন রেকর্ড সংস্থা।",
+      "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-three" : {
+      "value" : "চাকরির উদ্দেশ্যে, এবং আমার তথ্যগত গোপনীয়তা রক্ষাকারী সমস্ত আইনের সাপেক্ষে, ব্যাকগ্রাউন্ড চেক করার জন্য প্রয়োজনীয় যেকোন তথ্য CRA-এর কাছে প্রকাশ করার জন্য আমি নিম্নলিখিতগুলিকে অনুমোদন দিচ্ছি: আমার অতীত বা বর্তমান নিয়োগকর্তা, স্কুল, এবং আইন প্রয়োগকারী এবং অন্যান্য সরকারী সংস্থা যেমন মোটর সহ যানবাহন রেকর্ড সংস্থা।",
+      "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-accurate-california-specific-notice" : {
+      "value" : "<p><b>ক্যালিফোর্নিয়া: </b>আপনি ইনভেস্টিগেটিভ কনজিউমার রিপোর্ট (\"ক্যালিফোর্নিয়া ডিসক্লোজার\") সংক্রান্ত একটি পৃথক ক্যালিফোর্নিয়া ডিসক্লোজার পাবেন। এটি একটি গুরুত্বপূর্ণ নথি; দয়া করে এটি সাবধানে পর্যালোচনা করুন। এছাড়াও, আপনি যদি সান ফ্রান্সিসকোতে কোম্পানিতে চাকরি খুঁজেন বা ইতিমধ্যেই চাকরি করেন তাহলে <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>-এ ক্লিক করুন। ক্যালিফোর্নিয়া আইন এবং ক্যালিফোর্নিয়া ডিসক্লোজার অনুসারে নীচে স্বাক্ষর করার মাধ্যমে, আপনি এতদ্বারা Amazon-কে এখন এবং যেকোন সময়ে Amazon-এর সাথে যে কোনও চাকরি জুড়ে একটি অনুসন্ধানী ভোক্তা প্রতিবেদন সংগ্রহ করার জন্য অনুমোদন দিচ্ছেন, যা একটি ব্যাকগ্রাউন্ড চেক নামেও পরিচিত।</p>",
+      "note" : "Text for ACCURATE non fcra California specific notice "
+    },
+    "BB-non-fcra-fadv-california-specific-notice" : {
+      "value" : "<p><b>ক্যালিফোর্নিয়া: </b>আপনি ইনভেস্টিগেটিভ কনজিউমার রিপোর্ট (\"ক্যালিফোর্নিয়া ডিসক্লোজার\") সংক্রান্ত একটি পৃথক ক্যালিফোর্নিয়া ডিসক্লোজার পাবেন। এটি একটি গুরুত্বপূর্ণ নথি; দয়া করে এটি সাবধানে পর্যালোচনা করুন। এছাড়াও, আপনি যদি সান ফ্রান্সিসকোতে কোম্পানিতে চাকরি খুঁজেন বা ইতিমধ্যেই চাকরি করেন তাহলে <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a>-এ ক্লিক করুন। ক্যালিফোর্নিয়া আইন এবং ক্যালিফোর্নিয়া ডিসক্লোজার অনুসারে নীচে স্বাক্ষর করার মাধ্যমে, আপনি এতদ্বারা Amazon-কে এখন এবং যেকোন সময়ে Amazon-এর সাথে যে কোনও চাকরি জুড়ে একটি অনুসন্ধানী ভোক্তা প্রতিবেদন সংগ্রহ করার জন্য অনুমোদন দিচ্ছেন, যা একটি ব্যাকগ্রাউন্ড চেক নামেও পরিচিত।</p>",
+      "note" : "Text for FADV non fcra California specific notice "
+    },
+    "BB-non-fcra-accurate-minnesota-specific-notice" : {
+      "value" : "<p><b>মিনেসোটা: </b>আপনার সম্বন্ধে আদেশ দেওয়া যেকোনও ভোক্তা প্রতিবেদনের প্রকৃতি এবং পরিধি সম্পর্কে সম্পূর্ণ ও নির্ভুল প্রকাশের জন্য CRA-তে একটি লিখিত অনুরোধ জমা দেওয়ার অধিকার আপনার আছে। CRA আপনার অনুরোধ প্রাপ্তির পাঁচ কর্মদিবসের মধ্যে বা প্রতিবেদন দেওয়ার আদেশের পর, যে তারিখ পরে হবে তখন, আপনাকে অবশ্যই ডিসক্লোজারটি প্রদান করবে।</p>",
+      "note" : "Text for ACCURATE non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-fadv-minnesota-specific-notice" : {
+      "value" : "<p><b>মিনেসোটা: </b>আপনার সম্বন্ধে আদেশ দেওয়া যেকোনও ভোক্তা প্রতিবেদনের প্রকৃতি এবং পরিধি সম্পর্কে সম্পূর্ণ ও নির্ভুল প্রকাশের জন্য CRA-তে একটি লিখিত অনুরোধ জমা দেওয়ার অধিকার আপনার আছে। CRA আপনার অনুরোধ প্রাপ্তির পাঁচ কর্মদিবসের মধ্যে বা প্রতিবেদন দেওয়ার আদেশের পর, যে তারিখ পরে হবে তখন, আপনাকে অবশ্যই ডিসক্লোজারটি প্রদান করবে।</p>",
+      "note" : "Text for FADV non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-accurate-newyork-specific-notice" : {
+      "value" : "<p><b>নিউ ইয়র্ক: </b>আমরা আপনার সম্পর্কে কোন ভোক্তা প্রতিবেদন বা অনুসন্ধানমূলক ভোক্তা প্রতিবেদনের আদেশ দিয়েছি কিনা তা জানতে আপনার Amazon-এ একটি লিখিত অনুরোধ জমা দেওয়ার অধিকার রয়েছে। উপরে CRA-এর ঠিকানা এবং টেলিফোন নাম্বার দেওয়া হয়েছে। এই ধরনের কোনো রিপোর্টের একটি কপি পরীক্ষা করতে বা পাওয়ার জন্য আপনার যেকোনও CRA-এর সাথে যোগাযোগ করার অধিকার রয়েছে। নিউ ইয়র্ক সংশোধন আইনের ধারা 23-A এর অধীনে আপনার অধিকার সম্পর্কে তথ্যের জন্য <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">এখানে</a> ক্লিক করুন।</p>",
+      "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>নিউ ইয়র্ক: </b>আমরা আপনার সম্পর্কে কোন ভোক্তা প্রতিবেদন বা অনুসন্ধানমূলক ভোক্তা প্রতিবেদনের আদেশ দিয়েছি কিনা তা জানতে আপনার Amazon-এ একটি লিখিত অনুরোধ জমা দেওয়ার অধিকার রয়েছে। উপরে CRA-এর ঠিকানা এবং টেলিফোন নাম্বার দেওয়া হয়েছে। এই ধরনের কোনো রিপোর্টের একটি কপি পরীক্ষা করতে বা পাওয়ার জন্য আপনার যেকোনও CRA-এর সাথে যোগাযোগ করার অধিকার রয়েছে। নিউ ইয়র্ক সংশোধন আইনের ধারা 23-A এর অধীনে আপনার অধিকার সম্পর্কে তথ্যের জন্য <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">এখানে</a> ক্লিক করুন।</p>।",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>ওয়াশিংটন: </b>ওয়াশিংটন ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্টের অধীনে আপনার অধিকারের একটি লিখিত সারসংক্ষেপ ভোক্তা রিপোর্টিং সংস্থার কাছে অনুরোধ করার অধিকার আপনার আছে।</p>।",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>ওয়াশিংটন: </b>ওয়াশিংটন ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্টের অধীনে আপনার অধিকারের একটি লিখিত সারসংক্ষেপ ভোক্তা রিপোর্টিং সংস্থার কাছে অনুরোধ করার অধিকার আপনার আছে।</p>।",
+      "note" : "Text for FADV non fcra Washington specific notice "
+    },
+    "BB-non-fcra-accurate-allstate-specific-notice" : {
+      "value" : "<p><b>সকল রাজ্য: </b>আপনি যদি এই বাক্সটি চেক করেন তবে আমরা আপনাকে যেকোনও ব্যাকগ্রাউন্ড চেকের একটি বিনামূল্যের কপি প্রদান করব",
+      "note" : "Text for ACCURATE non fcra all state specific notice "
+    },
+    "BB-non-fcra-fadv-allstate-specific-notice" : {
+      "value" : "<p><b>সকল রাজ্য: </b>আপনি যদি এই বাক্সটি চেক করেন তবে আমরা আপনাকে যেকোনও ব্যাকগ্রাউন্ড চেকের একটি বিনামূল্যের কপি প্রদান করব</p>",
+      "note" : "Text for FADV non fcra all state specific notice "
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
+      "value" : "অনুগ্রহ করে পূর্বে ব্যবহৃত আইনি পূর্ণ নাম নিম্নলিখিত বিন্যাসে লিখুন: প্রথম শেষ",
+      "note" : "Text for the previous used legal name input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
+      "value" : "পূর্ববর্তী আইনগত পূর্ণ নাম",
+      "note" : "Text for the previous used legal name input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
+      "value" : "অনুগ্রহ করে পূর্বে ব্যবহৃত আইনি পূর্ণ নাম নিম্নলিখিত বিন্যাসে লিখুন: প্রথম শেষ",
+      "note" : "Text for the previous used legal name 1 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
+      "value" : "পূর্ববর্তী আইনি পুরো নাম (1)",
+      "note" : "Text for the previous used legal name 1 input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
+      "value" : "অনুগ্রহ করে পূর্বে ব্যবহৃত আইনি পূর্ণ নাম নিম্নলিখিত বিন্যাসে লিখুন: প্রথম শেষ",
+      "note" : "Text for the previous used legal name 2 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
+      "value" : "পূর্ববর্তী আইনি পুরো নাম (2)",
+      "note" : "Text for the previous used legal name 2 input label text"
+    },
+    "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
+      "value" : "আরো পূর্ববর্তী নাম যোগ করুন/দেখান",
+      "note" : "Text for the button to show more previous legal names button text"
+    },
+    "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
+      "value" : "আপনি কি আগে কোনো Amazon বিল্ডিং এ কাজ করেছেন?",
+      "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
+    },
+    "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the accept previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "না",
+      "note" : "Text for the decline previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
+      "value" : "কী কী তথ্য অন্তর্ভুক্ত করতে হবে",
+      "note" : "Text for the for the form title about what to include in previous Amazon experience"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
+      "value" : "অনুগ্রহ করে আপনি আগে কাজ করা Amazon বিল্ডিংটি শনাক্ত করুন",
+      "note" : "Text for the most recent Amazon building input label text"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
+      "value" : "অনুগ্রহ করে একটি বৈধ Amazon বিল্ডিং লিখুন",
+      "note" : "Text for the most recent Amazon building input error text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
+      "value" : "চাকরির তারিখ - থেকে/পর্যন্ত (MM/YY - MM/YY)",
+      "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
+      "value" : "অনুগ্রহ করে একটি বৈধ Amazon বিল্ডিং লিখুন",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
+    "BB-BGC-no-ssn-checkbox-label" : {
+      "value" : "আমার কোনও সোশ্যাল সিকিউরিটি নাম্বার নেই",
+      "note" : "Label for the no ssn checkbox"
+    },
+    "BB-BGC-no-ssn-modal-title" : {
+      "value" : "আপনি কি নিশ্চিত যে আপনি একটি সোশ্যাল সিকিউরিটি নাম্বার (SSN) ছাড়াই এগিয়ে যেতে চান?",
+      "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "আপনার কোনো SSN থাকলে, আপনাকে সেটি প্রদান করতে হবে। তা করতে ব্যর্থ হলে নিয়োগ প্রক্রিয়া বিলম্ব হতে পারে যার ফলে আপনার শুরুর তারিখ হারিয়ে যেতে পারে এবং আপনার নির্বাচিত শিফট হারাতে পারে।",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "চালিয়ে যাওয়ার মাধ্যমে, আমি নিশ্চিত করছি যে আমার কাছে কোনো SSN নেই।  আমি বুঝতে পেরেছি যে, আইন দ্বারা অনুমোদিত হিসেবে, আমি অনবোর্ডিং প্রক্রিয়া চলাকালীন বা আমার চাকরির সময় আমার SSN পরিবর্তন বা আপডেট করলে Amazon আমার সম্পর্কে একটি ফলো-আপ ব্যাকগ্রাউন্ড চেক পরিচালনা করবে।",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-second-paragraph" : {
+      "value" : "আমি এও স্বীকার করি যে আমার SSN-এর কোনো ইচ্ছাকৃত ভুল উপস্থাপন Amazon বিবেচনা করবে, এবং এটি আমার চাকরির প্রস্তাব প্রত্যাহার করার দিকে পরিচালনা করতে পারে বা, যদি আমাকে নিয়োগ দেওয়া হয়, আমার চাকরির অবসান ঘটাতে পারে।",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-consent-checkbox" : {
+      "value" : "আমি উপরের শর্তগুলি পড়েছি এবং বুঝতে পেরেছি।",
+      "note" : "consent checkbox in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-continue-button" : {
+      "value" : "চালিয়ে যান",
+      "note" : "continue button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-cancel-button" : {
+      "value" : "বাতিল করুন",
+      "note" : "cancel button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
+      "value" : "সোশ্যাল সিকিউরিটি নম্বর পাওয়া যাচ্ছে না",
+      "note" : "Text display on national id number input when user check no ssn checkbox"
+    },
+    "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
+      "value" : "একটি ই-স্বাক্ষর প্রদান করুন",
+      "note" : "Text for the fcra form heading text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
+      "value" : "রাজ্য ভিত্তিক সুনির্দিষ্ট নোটিশ",
+      "note" : "Text for the non fcra State specific notices title text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
+      "value" : "অনুগ্রহ করে নীচের প্রযোজ্য বিজ্ঞপ্তি(গুলি) রিভিউ করুন।",
+      "note" : "Text for the non fcra State specific notices review text"
+    },
+    "BB-BGC-non-fcra-esignature-certification-form-title" : {
+      "value" : "ই-স্বাক্ষর",
+      "note" : "Text for the non fcra e-signature certification title"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
+      "value" : "নীচের আমার ই-স্বাক্ষরের মাধ্যমে, আমি প্রত্যয়ন করছি যে আমি এই নন-ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট এবং ব্যাকগ্রাউন্ড চেকের জন্য অনুমোদনের সমস্ত বিবৃতি পড়েছি, বুঝেছি এবং গ্রহণ করেছি। অনুগ্রহ করে নীচের ক্ষেত্রগুলিতে অনুরোধ করা তথ্যপ্রদান করে আপনার গ্রহণযোগ্যতা নির্দেশ করুন।",
+      "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
+      "value" : "অনুগ্রহ করে আপনার পুরো নামটি ই-স্বাক্ষর হিসাবে লিখুন",
+      "note" : "Text for the non fcra acknowledgement and authorization input label text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
+      "value" : "ই-স্বাক্ষর মিলছে না। প্রতিটি ই-স্বাক্ষরের জন্য অনুগ্রহ করে একই টেক্সট ব্যবহার করুন।",
+      "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-non-fcra-form-page-next-button-text" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the non fcra form page next button text"
+    },
+    "BB-BGC-non-fcra-applicable-notice-text" : {
+      "value" : "নীচের আমার ই-স্বাক্ষর দ্বারা, আমি প্রত্যয়িত করছি যে আমি হাইপারলিঙ্ক সহ যেকোন প্রযোজ্য রাজ্যের বিজ্ঞপ্তিগুলি পড়েছি এবং বুঝেছি।",
+      "note" : "Text for the non fcra for the applicable notice"
+    },
+    "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
+      "value" : "অনুগ্রহ করে আপনার পুরো নামটি ই-স্বাক্ষর হিসাবে লিখুন",
+      "note" : "Text for the non fcra for the applicable notice signature input label text"
+    },
+    "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
+      "value" : "আমি আমার ব্যাকগ্রাউন্ড চেকের একটি বিনামূল্যের কপি চাই",
+      "note" : "Text for the non fcra for request copy of bgc radio label text"
+    },
+    "BB-already-applied" : {
+      "value" : "আপনি ইতিমধ্যেই এই কাজের জন্য একটি আবেদন শুরু করেছেন এবং/অথবা সম্পূর্ণ করেছেন।",
+      "note" : "Text for aleady applied job text"
+    },
+    "BB-already-applied-description" : {
+      "value" : "আপনার আবেদন পুনরায় শুরু করতে ড্যাশবোর্ডে ফিরে যান বা আবেদন এবং নতুন নিয়োগের বিশদ বিবরণ এবং আপনার পরবর্তী পদক্ষেপগুলি দেখুন।",
+      "note" : "Text for aleady applied job description text"
+    },
+    "BB-already-applied-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for aleady applied job return to dashboard button text"
+    },
+    "BB-SelfId-disability-form-name-text" : {
+      "value" : "ফর্ম CC-305",
+      "note" : "Text for Self Identification form name"
+    },
+    "BB-SelfId-disability-form-control-number-text" : {
+      "value" : "OMB কন্ট্রোল নাম্বার 1250-0005",
+      "note" : "Text for Self Identification control number"
+    },
+    "BB-SelfId-disability-form-expiration-date-text" : {
+      "value" : "05/31/2023-এ মেয়াদ শেষ হবে",
+      "note" : "Text for Self Identification expiration date"
+    },
+    "BB-SelfId-disability-form-why-this-form-header-text" : {
+      "value" : "কেন আপনাকে এই ফর্ম পূরণ করতে বলা হয়েছে?",
+      "note" : "Text for why asked this form header text"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
+      "value" : "আমরা ফেডারেল কন্ট্রাক্টর বা উপ-কন্ট্রাক্টর যারা আইন অনুসারে যোগ্য প্রতিবন্ধী ব্যক্তিদের সমান চাকরির সুযোগ প্রদান করতে বাধ্য। আমাদের কর্মশক্তির অন্তত 7% প্রতিবন্ধী ব্যক্তি হওয়ার দিকে আমাদের অগ্রগতি পরিমাপ করতে হবে। এটি করার জন্য, আমাদের অবশ্যই আবেদনকারী এবং কর্মচারীদের জিজ্ঞাসা করতে হবে যে তাদের কোনও প্রতিবন্ধিতা আছে বা তাদের কোনো প্রতিবন্ধিতা ছিল কিনা। যেহেতু একজন ব্যক্তি যে কোনো সময় প্রতিবন্ধিতার সম্মুখীন হতে পারে, তাই আমরা আমাদের সকল কর্মচারীকে অন্তত প্রতি পাঁচ বছরে তাদের তথ্য আপডেট করতে বলি।",
+      "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
+      "value" : "একজন প্রতিবন্ধী ব্যক্তি হিসাবে নিজেকে চিহ্নিত করা ঐচ্ছিক, এবং আমরা আশা করি আপনি এটি করতে নির্বাচন করবেন। আপনার উত্তর গোপনীয়ভাবে রক্ষণাবেক্ষণ করা হবে এবং কর্মীদের সিদ্ধান্ত নেওয়ার সাথে জড়িত এমন নির্বাচিত কর্মকর্তা বা অন্য কেউ আপনার উত্তর দেখতে পাবেন না। আপনি অতীতে স্ব-পরিচয় করেছেন কিনা তা নির্বিশেষে ফর্মটি পূরণ করা আপনাকে কোনোভাবেই নেতিবাচকভাবে প্রভাবিত করবে না। এই ফর্ম বা পুনর্বাসন আইনের ধারা 503 এর অধীনে ফেডারেল কন্ট্রাক্টরদের সমান চাকরির বাধ্যবাধকতা সম্পর্কে আরও তথ্যের জন্য, মার্কিন যুক্তরাষ্ট্রের ডিপার্টমেন্ট অফ লেবার অফিস অফ ফেডারেল কন্ট্রাক্ট কমপ্লায়েন্স প্রোগ্রাম (OFCCP) ওয়েবসাইটে <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a> এ যান।",
+      "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
+      "value" : "আমি প্রতিবন্ধী কিনা তা আমি কীভাবে জানবো?",
+      "note" : "Text for how I know I have disability header"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
+      "value" : "যদি আপনার শারীরিক বা মানসিক বৈকল্য বা চিকিৎসা সংক্রান্ত অবস্থা থাকে যা একটি বড় জীবন কার্যকলাপকে সীমিত করে দেয়, অথবা যদি আপনার এই ধরনের দুর্ঘটনা বা চিকিৎসা সংক্রান্ত কোন ইতিহাস বা রেকর্ড থাকে, তাহলে আপনার প্রতিবন্ধিতা আছে বলে মনে করা হবে।",
+      "note" : "Text for how I know I have disability content"
+    },
+    "BB-SelfId-disability-form-disability-scope-list-header-text" : {
+      "value" : "প্রতিবন্ধীতায় অন্তর্ভুক্ত রয়েছে, কিন্তু শুধু এতেই সীমাবদ্ধ নয়:",
+      "note" : "Text for the disability scope/type list header text"
+    },
+    "BB-SelfId-disability-form-disability-item-autism-text" : {
+      "value" : "অটিজম",
+      "note" : "Text for the disability item: autism"
+    },
+    "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
+      "value" : "অটোইমিউন ডিসঅর্ডার",
+      "note" : "Text for the disability item: Autoimmune disorder"
+    },
+    "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
+      "value" : "অন্ধ বা স্বল্প দৃষ্টি",
+      "note" : "Text the disability item: Blind or low vision"
+    },
+    "BB-SelfId-disability-form-disability-item-cancer-text" : {
+      "value" : "ক্যান্সার",
+      "note" : "Text for the disability item: Cancer text"
+    },
+    "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
+      "value" : "কার্ডিওভাসকুলার বা হৃদরোগ",
+      "note" : "Text for the disability item: Cardiovascular or heart disease"
+    },
+    "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
+      "value" : "সিলিয়াক রোগ",
+      "note" : "Text for the disability item: Celiac disease"
+    },
+    "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
+      "value" : "সেরিব্রাল পালসি",
+      "note" : "Text for the disability item: Cerebral palsy"
+    },
+    "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
+      "value" : "বধির বা শ্রবণশক্তিহীন",
+      "note" : "Text for the disability item: Deaf or hard of hearing"
+    },
+    "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
+      "value" : "বিষন্নতা বা উদ্বেগ",
+      "note" : "Text for the disability item: Depression or anxiety"
+    },
+    "BB-SelfId-disability-form-disability-item-diabetes-text" : {
+      "value" : "ডায়াবেটিস",
+      "note" : "Text for the disability item: Diabetes"
+    },
+    "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
+      "value" : "মৃগীরোগ",
+      "note" : "Text for the disability item: Epilepsy"
+    },
+    "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
+      "value" : "গ্যাস্ট্রোইনটেস্টাইনাল ব্যাধি, উদাহরণস্বরূপ, ক্রোনস ডিজিজ, বা বিরক্তিকর অন্ত্রের সিন্ড্রোম",
+      "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
+    },
+    "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
+      "value" : "বুদ্ধিগত প্রতিবন্ধিতা",
+      "note" : "Text for the disability item: Intellectual disability"
+    },
+    "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
+      "value" : "অনুপস্থিত অঙ্গ বা আংশিকভাবে অনুপস্থিত অঙ্গ",
+      "note" : "Text for the disability item:Missing limbs or partially missing limbs"
+    },
+    "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
+      "value" : "স্নায়ুতন্ত্রের অবস্থা যেমন, মাইগ্রেন হি..., পারকিনসন রোগ, বা একাধিক স্ক্লেরোসিস (MS)",
+      "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
+    },
+    "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
+      "value" : "মনোরোগ, উদাহরণস্বরূপ, বাইপোলার ডিসঅর্ডার, সিজোফ্রেনিয়া, PTSD, বা মেজর বিষন্নতা",
+      "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+    },
+    "BB-SelfId-disability-form-card-title-text" : {
+      "value" : "প্রতিবন্ধীতার স্বেচ্ছায় স্ব-পরিচয়",
+      "note" : "Text for the disability form card title"
+    },
+    "BB-SelfId-form-continue-button-text" : {
+      "value" : "চালিয়ে যান",
+      "note" : "Text for the Self Identification page form continue button text"
+    },
+    "BB-SelfId-disability-form-submit-button-text" : {
+      "value" : "জমা দিন",
+      "note" : "Text for the submit disability form submit button text"
+    },
+    "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
+      "value" : "অনুগ্রহ করে নীচের বাক্সগুলির মধ্যে একটি চেক করুন",
+      "note" : "Text for the disability selection checkbox label text"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
+      "value" : "হ্যাঁ, আমি প্রতিবন্ধী, বা প্রতিবন্ধী হওয়ার ইতিহাস/রেকর্ড আছে",
+      "note" : "Text for the disability selection checkbox item: YES"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
+      "value" : "না, আমি প্রতিবন্ধী নই, বা প্রতিবন্ধী হওয়ার ইতিহাস/রেকর্ড নেই",
+      "note" : "Text for the disability selection checkbox item: NO"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
+      "value" : "আমি উত্তর দিতে চাই না",
+      "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-header-text" : {
+      "value" : "পাবলিক বার্ডেন স্টেটমেন্ট",
+      "note" : "Text for the disability form Public burden statement header text"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-content-text" : {
+      "value" : "1995 সালের পেপারওয়ার্ক রিডাকশন অ্যাক্ট অনুসারে, কোনো ব্যক্তিকে তথ্য সংগ্রহের প্রতি কোন প্রতিক্রিয়া জানাতে হবে না যদি না এই ধরনের সংগ্রহ একটি বৈধ OMB নিয়ন্ত্রণ নাম্বার প্রদর্শন করে।  এই জরিপটি সম্পন্ন করতে প্রায় 5 মিনিটের মত সময় লাগবে।",
+      "note" : "Text for the disability form Public burden statement content text"
+    },
+    "BB-SelfId-equal-opportunity-form-title-text" : {
+      "value" : "ঐচ্ছিক সমান সুযোগের স্ব-পরিচয় ফর্ম",
+      "note" : "Text for the equal opportunity form title"
+    },
+    "BB-SelfId-equal-opportunity-form-statement-text" : {
+      "value" : "Amazon সমস্ত ধরণের বৈচিত্র্যকে মূল্য প্রদান করে এবং নির্দিষ্ট বৈষম্যহীন এবং ইতিবাচক পদক্ষেপের রেকর্ড রাখার এবং রিপোর্ট করার প্রয়োজনীয়তার সাপেক্ষে যার জন্য আমাদের প্রার্থী এবং কর্মচারীদের স্বেচ্ছায় তাদের লিঙ্গ এবং জাতি/জাতিগততা স্ব-পরিচয় করতে আমন্ত্রণ জানাতে হবে। এই তথ্য জমা দেওয়া ঐচ্ছিক এবং এটি প্রদান করতে অস্বীকৃতি জানালে আপনাকে কোনও প্রতিকূল অবস্থার সম্মুখীন হতে হবে না। প্রাপ্ত তথ্য গোপন রাখা হবে এবং শুধুমাত্র প্রযোজ্য ফেডারেল আইন, নির্বাহী আদেশ, এবং প্রবিধানের বিধান অনুসারে ব্যবহার করা যেতে পারে, যার মধ্যে নাগরিক অধিকার প্রয়োগের উদ্দেশ্যে তথ্যের সংক্ষিপ্ত বিবরণ এবং ফেডারেল সরকারকে রিপোর্ট করা প্রয়োজন হবে। আপনি যদি এই সময়ে আপনার লিঙ্গ বা জাতি/জাতিগততা স্ব-পরিচয় না করা বেছে নেন, তাহলে ফেডারেল সরকার চাক্ষুষ সমীক্ষা এবং/অথবা অন্যান্য বিদ্যমান তথ্যের দ্বারা কর্মীদের জন্য আমাদের মাধ্যমে এই তথ্য নির্ধারণ করতে চাইবে।",
+      "note" : "Text for the equal opportunity form statement text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-label-text" : {
+      "value" : "আপনার লিঙ্গ কী?",
+      "note" : "Text for the equal opportunity form : gender label text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-male-text" : {
+      "value" : "পুরুষ",
+      "note" : "Text for the equal opportunity form gender option: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-female-text" : {
+      "value" : "মহিলা",
+      "note" : "Text for the equal opportunity form gender option: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
+      "value" : "আমি স্ব-পরিচয় দিতে ইচ্ছুক নই",
+      "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
+      "value" : "আপনার জাতি/জাতিগত ব্যাকগ্রাউন্ড কী?",
+      "note" : "Text for the equal opportunity form : ethnicity label text"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
+      "value" : "আমেরিকান ভারতীয়/আলাস্কার স্থানীয় (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
+      "value" : "উত্তর ও দক্ষিণ আমেরিকার (মধ্য আমেরিকা সহ) যেকোনও আদি জনগোষ্ঠীর আদিবাসী এবং যারা উপজাতীয় সম্পর্ক বা সম্প্রদায় সংযুক্তি বজায় রাখে",
+      "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
+      "value" : "এশিয়ান (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
+      "value" : "দূরপ্রাচ্য, দক্ষিণ-পূর্ব এশিয়া বা ভারতীয় উপমহাদেশের; উদাহরণস্বরূপ, কম্বোডিয়া, চীন, ভারত, জাপান, কোরিয়া, মালয়েশিয়া, পাকিস্তান, ফিলিপাইন দ্বীপপুঞ্জ, থাইল্যান্ড এবং ভিয়েতনামের যেকোনও আদি জনগোষ্ঠীর আদিবাসী ব্যক্তি",
+      "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
+      "value" : "কৃষ্ণাঙ্গ/আফ্রিকান আমেরিকান (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
+      "value" : "আফ্রিকার যে কোনো কৃষ্ণাঙ্গ জাতিগত গোষ্ঠীতে আদিবাসী ব্যক্তিবর্গ",
+      "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
+      "value" : "হিস্পানিক/ল্যাটিনো",
+      "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
+      "value" : "কিউবান, মেক্সিকান, পুয়ের্তো রিকান, দক্ষিণ বা মধ্য আমেরিকান, বা অন্যান্য স্প্যানিশ সংস্কৃতি বা আদিবাসী ব্যক্তি, জাতি নির্বিশেষে",
+      "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
+      "value" : "স্থানীয় হাওয়াইয়ান/অন্যান্য প্রশান্ত মহাসাগরীয় দ্বীপবাসী (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
+      "value" : "হাওয়াই, গুয়াম, সামোয়া, বা অন্যান্য প্রশান্ত মহাসাগরীয় দ্বীপপুঞ্জের যে কোনো জনগোষ্ঠীর আদিবাসী",
+      "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
+      "value" : "শ্বেতাঙ্গ (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
+      "value" : "ইউরোপ, মধ্যপ্রাচ্য বা উত্তর আফ্রিকার যেকোনও আদি জনগোষ্ঠীর আদিবাসী ব্যক্তি",
+      "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
+      "value" : "দুই বা ততোধিক জাতি (হিস্পানিক বা ল্যাটিনো নয়)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
+      "value" : "নন-হিস্পানিক ব্যক্তিরা যারা নিম্নলিখিত পাঁচটি জাতিগুলির মধ্যে একটির বেশি চিহ্নিত করে: (1) সাদা, (2) কালো, (3) এশিয়ান, (4) স্থানীয় হাওয়াইয়ান/অন্যান্য প্রশান্ত মহাসাগরীয় দ্বীপবাসী, (5) আমেরিকান ভারতীয়/আলাস্কার স্থানীয়",
+      "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
+      "value" : "আমি স্ব-পরিচয় দিতে ইচ্ছুক নই",
+      "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the equal opportunity form ethinicity next button"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
+      "value" : "Amazon-এ, হাজার হাজার প্রবীন এবং সামরিক পতি-পত্নীরা উদ্ভাবন কাজ পরিচালনা করছেন এবং গ্রাহকের অভিজ্ঞতার মাত্রা বৃদ্ধি করছেন। প্রতিদিন, সামরিক ব্যাকগ্রাউন্ড সম্পন্ন ব্যক্তিবর্গ তাদের জ্ঞান, দক্ষতা এবং নেতৃত্বের গুণাবলীকে বিভিন্ন ধরণের কাজে প্রয়োগ করতে সক্ষম হয় – যা বিশ্বজুড়ে পরিবর্তনকে প্রভাবিত করে। এই কারণে, আমরা সক্রিয়ভাবে প্রবীন এবং সামরিক পতি-পত্নীদের নিয়োগের চেষ্টা করছি।",
+      "note" : "Text for the veteran status statement paragraph 1 text"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
+      "value" : "Amazon-এ, হাজার হাজার প্রবীণ এবং সামরিক পতি-পত্নীরা উদ্ভাবন কাজ পরিচালনা করছেন এবং গ্রাহকের অভিজ্ঞতার মাত্রা বৃদ্ধি করছেন। প্রতিদিন, সামরিক ব্যাকগ্রাউন্ড সম্পন্ন ব্যক্তিবর্গ তাদের জ্ঞান, দক্ষতা এবং নেতৃত্বের গুণাবলীকে বিভিন্ন ধরণের কাজে প্রয়োগ করতে সক্ষম হয় – যা বিশ্বজুড়ে পরিবর্তনকে প্রভাবিত করে। এই কারণে, আমরা সক্রিয়ভাবে প্রবীণ এবং সামরিক পতি-পত্নীদের নিয়োগের চেষ্টা করছি।",
+      "note" : "Text for the veteran status statement  paragraph 2 text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
+      "value" : "আপনি কি একজন প্রবীণ?",
+      "note" : "Text for the equal opportunity form : veteran status label text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the equal opportunity form veteran status item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
+      "value" : "না",
+      "note" : "Text for the equal opportunity form veteran status item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
+      "value" : "আমি স্ব-পরিচয় দিতে ইচ্ছুক নই",
+      "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
+      "value" : "আপনি কি একজন সামরিক পতি/পত্নী?",
+      "note" : "Text for the equal opportunity form : military spouse label text"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the equal opportunity form military-spouse item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
+      "value" : "না",
+      "note" : "Text for the equal opportunity form military-spouse item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
+      "value" : "আমি স্ব-পরিচয় দিতে ইচ্ছুক নই",
+      "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
+      "value" : "Amazon হল একটি ফেডারেল সরকারী কন্ট্রাক্টর যা 1974 সালের ভিয়েতনাম এরা ভেটেরান্স রিডজাস্টমেন্ট অ্যাসিসট্যান্স অ্যাক্টের অধীন, যা জবস ফর ভেটেরান্স অ্যাক্ট অফ 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA) দ্বারা সংশোধন করা হয়েছে, যার ফলে সরকারী কন্ট্রাক্টর কর্তৃক (1) প্রতিবন্ধী ভেটেরান্স; (2) সম্প্রতি বিচ্ছিন্ন ভেটেরান্স; (3) যুদ্ধকালীন সক্রিয় দায়িত্ব পালনকারীনকারী ক্যাম্পেইন ব্যাজ ভেটেরান্স; এবং (4) সশস্ত্র বাহিনী সেবা পদক ভেটেরান্সদের চাকরিতে নিয়োগ এবং অগ্রসর হওয়ার জন্য ইতিবাচক পদক্ষেপ নিতে হবে। আপনার সুরক্ষিত প্রবীন স্ট্যাটাস স্ব-পরিচয় করার জন্য নিম্নলিখিত আমন্ত্রণটি ধারা 4212 অনুসারে করা হয়েছে। এই তথ্যের ডিসক্লোজার সম্পূর্ণরূপে ঐচ্ছিক এবং এটি প্রদান করতে অস্বীকৃতি জানালে আপনাকে কোনও প্রতিকূল অবস্থার সম্মুখীন হতে হবে না।",
+      "note" : "Text for the equal opportunity form protected veteran statement"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
+      "value" : "<b>একজন সুরক্ষিত প্রবীন</b> হলো নিম্নলিখিতগুলির মধ্যে যেকোনো একটি:",
+      "note" : "Text for the title of protected veteran meaning list"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
+      "value" : "<b>প্রতিবন্ধী ভেটেরান</b>: ভেটেরান্স অ্যাফেয়ার্স সেক্রেটারি দ্বারা পরিচালিত আইনের অধীনে মার্কিন সামরিক, স্থল, নৌ বা বিমান পরিষেবার একজন ভেটেরান যিনি ক্ষতিপূরণ পাওয়ার অধিকারী (অথবা যিনি কিন্তু সামরিক অবসরপ্রাপ্ত বেতন প্রাপ্তির জন্য ক্ষতিপূরণ পাওয়ার অধিকারী); অথবা একজন ব্যক্তি যিনি পরিষেবা-সংযুক্ত প্রতিবন্ধিতার কারণে সক্রিয় দায়িত্ব থেকে অব্যাহতিপ্রাপ্ত বা মুক্তি পেয়েছিলেন।",
+      "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
+      "value" : "</b>: মার্কিন সামরিক, স্থল, নৌ, বা বিমান পরিষেবায় সক্রিয় দায়িত্ব থেকে এই জাতীয় ভেটেরানের ডিসচার্জ বা রিলিজের তারিখ থেকে শুরু হওয়া তিন বছরের সময়কালে যে কোনও ভেটেরান।",
+      "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
+      "value" : "<b>অ্যাক্টিভ ডিউটি/ক্যাম্পেইন ব্যাজ ভেটেরান</b>: মার্কিন ব্যাজে সক্রিয় দায়িত্ব পালনকারী একজন ভেটেরান প্রতিরক্ষা বিভাগ দ্বারা পরিচালিত আইনের অধীনে অনুমোদিত।",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
+      "value" : "<b>আর্মড ফোর্সেস সার্ভিস মেডেল ভেটেরান</b>: একজন ভেটেরান যিনি মার্কিন সামরিক, স্থল, নৌ বা বিমান পরিষেবায় সক্রিয় দায়িত্ব পালন করার সময়, মার্কিন যুক্তরাষ্ট্রের একটি সামরিক অভিযানে অংশ নিয়েছিলেন যার জন্য <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>নির্বাহী আদেশ</a> অনুসারে সশস্ত্র বাহিনী পরিষেবা পদক প্রদান করা হয়েছিল।",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
+      "value" : "আপনি যদি বিশ্বাস করেন যে আপনি সুরক্ষিত ভেটেরান্সের কোনো বিভাগের অন্তর্গত, অনুগ্রহ করে নীচের উপযুক্ত বাক্সে চেক করে তা নির্দেশ করুন।",
+      "note" : "Text for the protected veteran select form label text"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
+      "value" : "আমি স্ব-পরিচয় দিতে ইচ্ছুক নই",
+      "note" : "Text for the protected veteran select form option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the protected veteran select form next button text"
+    },
+    "BB-cali-disclosure-page-title-text" : {
+      "value" : "অনুসন্ধানী ভোক্তা রিপোর্ট সংক্রান্ত ক্যালিফোর্নিয়া ডিসক্লোজার",
+      "note" : "Text for the california disclosure page title text"
+    },
+    "BB-cali-disclosure-page-in-connection-text" : {
+      "value" : "Amazon.com, Inc.-এ আমার সম্ভাব্য চাকরির ক্ষেত্রে বা এর সহযোগী সংস্থা বা সহযোগীদের (\"Amazon\") সাথে, Amazon নিম্নলিখিত ভোক্তা রিপোর্টিং এজেন্সি থেকে আমার সম্পর্কে, যা ব্যাকগ্রাউন্ড পরীক্ষা হিসাবে পরিচিত, একটি অনুসন্ধানী ভোক্তা প্রতিবেদন (\"প্রতিবেদন \") সংগ্রহ করতে পারবে:",
+      "note" : "Text for the california disclosure page in connection paragraph text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-name-text" : {
+      "value" : "Accurate Background, LLC (\"Accurate\")",
+      "note" : "Text for the california disclosure page vendor accurate name text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
+      "value" : "7515 ইরভাইন সেন্টার ড্রাইভ",
+      "note" : "Text for the california disclosure page vendor accurate address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
+      "value" : "ইরভাইন, CA 92618",
+      "note" : "Text for the california disclosure page vendor accurate address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
+      "value" : "1-800-216-8024",
+      "note" : "Text for the california disclosure page vendor accurate phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-url-text" : {
+      "value" : "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>",
+      "note" : "Text for the california disclosure page vendor accurate home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
+      "value" : "আমি বুঝতে পেরেছি যে:",
+      "note" : "Text for the california disclosure page vendor accurate understand text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
+      "value" : "যে পরিমাণে একটি রিপোর্ট Accurate থেকে অনুরোধ করা হয়েছে, এই ধরনের রিপোর্টে থাকা তথ্য শুধুমাত্র চাকরির জন্য আমার যোগ্যতা নির্ধারণ করতে ব্যবহার করা হবে।",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
+      "value" : "Accurate দ্বারা প্রাপ্ত তথ্য, এবং যেকোনও প্রতিবেদনে অন্তর্ভুক্ত, বিভিন্ন উপায়ে প্রাপ্ত করা যেতে পারে, যার মধ্যে আইনসম্মতভাবে বিদ্যমান নথি ও তথ্যের পরীক্ষা এবং/অথবা প্রাক্তন নিয়োগকর্তা, স্কুল, আর্থিক প্রতিষ্ঠান, বাড়িওয়ালা, সরকারি সংস্থা, এবং অন্যরা যেমন আমার প্রতিবেশী, বন্ধু এবং সহযোগী যাদের সাথে আমি পরিচিত এবং যাদের এই ধরনের জ্ঞান থাকতে পারে তাঁদের সাথে প্রত্যক্ষ বা পরোক্ষ যোগাযোগ এবং সাক্ষাৎকার অন্তর্ভুক্ত।",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
+      "value" : "Accurate দ্বারা পরিচালিত তদন্ত(গুলি), যার ফলাফলগুলি Amazon-কে দেওয়া যে কোনও প্রতিবেদনে অন্তর্ভুক্ত করা যেতে পারে, এতে আমার চরিত্র, সাধারণ খ্যাতি, ব্যক্তিগত বৈশিষ্ট্য বা জীবনযাপনের পদ্ধতি, চাকরি ও কাজের ইতিহাস, শিক্ষা, ড্রাইভিং রেকর্ড, এবং অপরাধমূলক রেকর্ড সম্পর্কিত বিভিন্ন ধরণের তথ্য অন্তর্ভুক্ত থাকতে পারে, যা প্রযোজ্য ফেডারেল এবং রাজ্য আইন দ্বারা আরোপিত কোনো সীমাবদ্ধতার সাপেক্ষে হবে।",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
+      "value" : "ক্যালিফোর্নিয়া সিভিল কোড § 1785 et seq. এবং § 1786 et seq. অনুসারে, যদি Amazon আমার কাছে কোনো প্রতিবেদনের অনুরোধ করে, তাহলে আমি আমার উপর Accurate-এর রক্ষণাবেক্ষণ করা ফাইলটি এর নিয়মিত অফিস সময়ের মধ্যে দেখতে পারি। আমি বুঝতে পেরেছি যে আমিও (1) সঠিক শনাক্তকরণ জমা দেওয়ার পরে ও প্রত্যয়িত মেইলের মাধ্যমে কপি করার খরচ পরিশোধ করার পরে অথবা আমার পরিকল্পিত উপস্থিতির যুক্তিসঙ্গত অগ্রিম নোটিশ প্রদানের পর অফিস চলাকালীন সময়ের মধ্যে Accurate-এর অফিসে ব্যক্তিগতভাবে উপস্থিত হয়ে এই ফাইলের একটি কপি পেতে পারি, এবং (2) সঠিক শনাক্তকরণ এবং টেলিফোন ডিসক্লোজারের জন্য Accurate-কে লিখিত অনুরোধ জমা দেওয়ার পরে আমি আমার খরচে টেলিফোনে Accurate থেকে এই ফাইলের একটি সারাংশ পেতে পারি। আমি বুঝি যে Accurate-এর কাছে যেকোন কোডেড তথ্য সহ তার ফাইলটি ব্যাখ্যা করার জন্য প্রশিক্ষিত কর্মী বিদ্যমান রয়েছে এবং, আমি যদি Accurate-এর অফিসে ব্যক্তিগতভাবে উপস্থিত হই, তাহলে আমার সাথে অন্য একজন ব্যক্তি থাকতে পারে যতক্ষণ পর্যন্ত ঐ ব্যক্তি Accurate-এ সঠিক সনাক্তকরণ প্রদান করে।",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
+      "value" : "Accurate এর গোপনীয়তা অনুশীলন সম্পর্কে তথ্য <a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a>-এ পাওয়া যাবে।",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-name-text" : {
+      "value" : "First Advantage",
+      "note" : "Text for the california disclosure page vendor fadv name text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
+      "value" : "1 কনকোর্স পার্কওয়ে NE, স্যুইট 200।",
+      "note" : "Text for the california disclosure page vendor fadv address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
+      "value" : "আটলান্টা, GA 30328",
+      "note" : "Text for the california disclosure page vendor fadv address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-phone-text" : {
+      "value" : "1-800-845-6004",
+      "note" : "Text for the california disclosure page vendor fadv phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-url-text" : {
+      "value" : "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>",
+      "note" : "Text for the california disclosure page vendor fadv home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-text" : {
+      "value" : "আমি বুঝতে পেরেছি যে:",
+      "note" : "Text for the california disclosure page vendor fadv understand text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item1-text" : {
+      "value" : "First Advantage থেকে একটি রিপোর্টের অনুরোধ করা হলে, এই রিপোর্টে থাকা তথ্য কেবলমাত্র এই কর্মসংস্থানের জন্য আমার যোগ্যতা নির্ধারণের জন্য ব্যবহার করা হবে।",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item2-text" : {
+      "value" : "First Advantage দ্বারা এবং কোনো রিপোর্টে অন্তর্ভুক্ত প্রাপ্ত তথ্য, বিভিন্ন উপায়ে সংগৃহীত হয়ে থাকতে পারে, তারমধ্যে রয়েছে, আইনত উপলব্ধ নথি এবং তথ্য তত্বানুসন্ধান এবং/অথবা সাবেক নিয়োগকর্তা, স্কুল, আর্থিক প্রতিষ্ঠান, জমিদার, পাবলিক এজেন্সির এবং অন্যান্য যেমন আমার প্রতিবেশী, বন্ধু, এবং সহযোগীদের সাথে যাদের আমি পরিচিত এবং যারা আমার সম্পর্কে অবগত তাদের সাথে সরাসরি বা পরোক্ষ যোগাযোগ এবং সাক্ষাত্কার।",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item3-text" : {
+      "value" : "তদন্ত (গুলি) First Advantage দ্বারা পরিচালিত হবে, যার ফলাফল Amazon কে দেওয়া যেকোনো রিপোর্টে অন্তর্ভুক্ত করা হতে পারে, যাতে আমার চরিত্র, সাধারণ খ্যাতি, ব্যক্তিগত বৈশিষ্ট্য বা জীবনযাত্রার ধরণ কর্মসংস্থান এবং কাজের ইতিহাস, শিক্ষা, ড্রাইভিং রেকর্ড, এবং অপরাধমূলক রেকর্ড, প্রযোজ্য ফেডারেল এবং রাষ্ট্র আইন দ্বারা আরোপিত কোন সীমাবদ্ধতা সম্পর্কে বিভিন্ন ধরনের তথ্য অন্তর্ভুক্ত থাকতে পারে ।",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item4-text" : {
+      "value" : "প্রতি ক্যালিফোর্নিয়া সিভিল কোড § 1785 et seq. এবং § 1786 et seq. অনুযায়ী, যদি Amazon থেকে আমার কাছে কোনো রিপোর্টের অনুরোধ করা হয়, এর নিয়মিত অফিসের সময়ের মধ্যে First Advantage রক্ষণাবেক্ষণ করা ফাইলটি দেখতে পারব। আমি বুঝতে পারি যে আমি (1) যথাযথ সনাক্তকরণ জমা দিয়ে এবং কপি করার খরচ পরিশোধ করার পরে, প্রত্যয়িত মেইলযোগে বা স্বাভাবিক অফিসের সময় আমার স্বশরীরে আসার পরিকল্পনা গ্রহনযোগ্য অগ্রিম খবর দেওয়ার পরে First Advantage এর অফিসে উপস্থিত হয়ে এই ফাইলটির একটি অনুলিপি পেতে পারি, এবং (2) নিজ খরচে, সঠিক সনাক্তকরণ এবং টেলিফোন পাঠানোর জন্য First Advantage এ একটি লিখিত অনুরোধ জমা দেওয়ার পরে টেলিফোনের মাধ্যমে First Advantage থেকে এই ফাইলটির একটি সারসংক্ষেপ পেতে পারি। আমি বুঝছি যে First Advantage এর আমার কাছে যেকোন কোড করা তথ্য সহ তাদের ফাইলটি ব্যাখ্যা করার জন্য প্রশিক্ষিত কর্মী রয়েছে, এবং, যদি আমি First Advantage এর অফিসে স্বশরীরে উপস্থিত হই তবে আমি অন্য একজন ব্যক্তি আমার সাথে থাকতে পারবে, যদি সেই ব্যক্তি First Advantage বরাবর যথাযথ সনাক্তকরণ প্রদর্শন করে।",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-understand-list-item5-text" : {
+      "value" : "First Advantage এর গোপনীয়তা চর্চা সম্পর্কিত তথ্য <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a> এ পাওয়া যাবে।",
+      "note" : "Text for the california disclosure page vendor fadv understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-certify-checkbox-text" : {
+      "value" : "আমি প্রত্যয়ন করছি যে, আমি এই নথিটি পড়েছি এবং আমি এটি বুঝতে পেরেছি, এবং আরও উল্ল্যেখ্য যে, এই অনুসন্ধানী ভোক্তা প্রতিবেদন সম্পর্কিত ক্যালিফোর্নিয়ার ডিসক্লোজার অনুসারে, আমি Amazon কে আমার সম্পর্কে একটি অনুসন্ধানী ভোক্তা প্রতিবেদন পাওয়ার অনুমোদন দিচ্ছি।",
+      "note" : "Text for the california disclosure page certify checkbox text"
+    },
+    "BB-cali-disclosure-page-next-button-text" : {
+      "value" : "পরবর্তী",
+      "note" : "Text for the california disclosure page next button text"
+    },
+    "BB-nhe-page-title-text" : {
+      "value" : "আপনি প্রায় পৌঁছে গেছেন ,{firstname} {lastname}! প্রযোজ্য হলে আমদের কাছে আপনাকে একটি ব্যাজের ছবি, সম্পূর্ণ কাজের অনুমোদন এবং একটি ড্রাগ পরীক্ষার জন্য আসতে হবে।",
+      "note" : "Text for the nhe page title"
+    },
+    "BB-nhe-page-confirm-selection-button-text" : {
+      "value" : "নির্বাচন নিশ্চিত করুন",
+      "note" : "Text for the nhe page confirm selection button text"
+    },
+    "BB-nhe-page-header-text" : {
+      "value" : "প্রাক-নিয়োগ সাক্ষাৎকারের সময়সূচী নির্ধারণ করুন",
+      "note" : "Text for the nhe page header text"
+    },
+    "BB-nhe-few-spots-remaining-text" : {
+      "value" : "খুব কম জায়গা অবশিষ্ট রয়েছে",
+      "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-SelfId-veteran-status-title-text" : {
+      "value" : "ভেটেরান স্ট্যাটাসের স্বেচ্ছাসেবী স্ব-পরিচয় প্রদান",
+      "note" : "Text for the veteran status form title text"
+    },
+    "BB-counter-message-banner-text" : {
+      "value" : "বাকি পদক্ষেপগুলি সম্পূর্ণ করার জন্য আমরা আপনার জন্য আগামী {hours} ঘন্টা এবং {minutes} মিনিটের একটি জায়গা ধরে রাখছি।",
+      "note" : "Text for the holding spot time counter banner message"
+    },
+    "BB-candidate-withdraws-thank-you-text" : {
+      "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই সময়ে আপনাকে একটি চাকরি দিতে অক্ষম।",
+      "note" : "Text for the thanking candidate for their interest to apply for a job"
+    },
+    "BB-candidate-withdraws-withdraw-reason-text" : {
+      "value" : "আপনার প্রদত্ত তথ্য আমাদের প্রয়োজনীয়তাগুলি পূরণ করে না। আমরা আপনাকে amazon.jobs এ চাকরিগুলি দেখতে উত্সাহিত করি।",
+      "note" : "Text for the reason to withdraw candidate application"
+    },
+    "BB-candidate-withdraws-back-to-dashboard-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-not-eligible-heading-text" : {
+      "value" : "{name}, Amazon এ আপনার আগ্রহ আমাদের জন্য অনেক বড় অর্থ বহন করে।",
+      "note" : "Text for the assessment not eligible heading text"
+    },
+    "BB-assessment-not-eligible-thank-you-and-assessment-not-eligible-notice-text" : {
+      "value" : "এই পদের জন্য আপনাকে বিবেচনা করার সুযোগ দেওয়ার জন্য আপনাকে অনেক ধন্যবাদ। দুর্ভাগ্যবশত, আমরা এই মূহুর্তে আপনার আবেদন নিয়ে আর অগ্রসর হব না।",
+      "note" : "Text for thanking candidate to apply on the position and noticing that candidate was not able to move forward with the assessment taken"
+    },
+    "BB-assessment-not-eligible-reconsideration-notice-text" : {
+      "value" : "অন্য সময়ে এই কাজের জন্য পুনর্বিবেচিত হওয়ার জন্য, আপনি তিন মাসের মধ্যে আবার মূল্যায়নে অংশগ্রহন করতে পারবেন।",
+      "note" : "Text for the text to let candidate know when to reconsider the assessment again"
+    },
+    "BB-assessment-not-eligible-back-to-dashboard-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for back to dashboard button text"
+    },
+    "BB-assessment-consent-assessment-heading-text" : {
+      "value" : "মূল্যায়ন",
+      "note" : "Text for the assessment consent page assessment heading text"
+    },
+    "BB-assessment-consent-excited-in-candidate-interest-text" : {
+      "value" : "Amazon যোগ দিতে আপনার আগ্রহে আমরা খুবই উত্তেজিত!",
+      "note" : "Text to let candidate know that Amazon is excited for their interest to join Amazon"
+    },
+    "BB-assessment-consent-purpose-of-assessment-text" : {
+      "value" : "এই মূল্যায়ন আপনাকে সহযোগী পদ সম্পর্কে বুঝতে সাহায্য করবে এবং আপনাকে জানতে আমাদের সাহায্য করবে।",
+      "note" : "Text to let candidate know the purpose of Assessment"
+    },
+    "BB-assessment-consent-accommodation-heading-text" : {
+      "value" : "আবাসন",
+      "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazon এ, আমরা আমাদের কর্মশক্তির বৈচিত্র্য এবং আমদের কাজ করার বিভিন্ন উপায় উদযাপন করি। যদি আপনার কোনও অক্ষমতা থাকে এবং মূল্যায়ন সহ নিয়োগের প্রক্রিয়ার সময় একটি বাসস্থানের প্রয়োজন হয় তবে দয়া করে <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> এ Amazon আবাসন দেখুন।</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "<b>মূল্যায়ন প্রক্রিয়ার কোন অংশের জন্যই সময় নির্ধারিত নয়</b> — আপনি আপনার নিজের গতিতে কাজ করতে পারবেন। এই মূল্যায়নের সমস্ত ভাগ:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
+      "value" : "নিম্নলিখিত স্ক্রিন পাঠকদের জন্য অপ্টিমাইজ করা: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
+      "note" : "Text for the assessment pace and sections of the assessments list item 1"
+    },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item2-text" : {
+      "value" : "মাউস বা কীবোর্ডের মাধ্যমে অ্যাক্সেস করা যাবে।",
+      "note" : "Text for the assessment pace and sections of the assessments list item 2"
+    },
+    "BB-assessment-consent-begin-assessment-button-text" : {
+      "value" : "মূল্যায়ন শুরু করুন",
+      "note" : "Text for the begin assessment button text"
+    },
+    "BB-ReviewSubmit-header-title-text" : {
+      "value" : "রিভিউ করুন এবং জমা দিন",
+      "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-job-details-section-title-text" : {
+      "value" : "কাজের বিবরণসমূহ",
+      "note" : "Text for the job details section title text"
+    },
+    "BB-ReviewSubmit-job-details-section-background-check-text" : {
+      "value" : "ব্যাকগ্রাউন্ড চেক",
+      "note" : "Text for the job details section background check text"
+    },
+    "BB-ReviewSubmit-job-details-section-authorized-text" : {
+      "value" : "অনুমোদিত",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text" : {
+      "value" : "ব্যাকগ্রাউন্ড চেকের ফ্রি কপি পাঠান",
+      "note" : "Text for the job details section authorized text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-type-text" : {
+      "value" : "জাতীয় পরিচয়পত্রের ধরণ:",
+      "note" : "Text for the job details section national ID type text"
+    },
+    "BB-ReviewSubmit-job-details-section-national-id-number-text" : {
+      "value" : "জাতীয় পরিচয়পত্রের নম্বর:",
+      "note" : "Text for the job details section national ID number text"
+    },
+    "BB-ReviewSubmit-job-details-section-date-of-birth-text" : {
+      "value" : "জন্ম তারিখ:",
+      "note" : "Text for the job details section date of birth text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-title-text" : {
+      "value" : "প্রাক-নিয়োগ সাক্ষাৎকার",
+      "note" : "Text for the pre-hire appointment section title text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
+      "value" : "ঘণ্টা:",
+      "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
+      "value" : "আমরা উপরের সময়ে আপনাকে দেখার প্রত্যাশা রাখি।",
+      "note" : "Text for the pre-hire appointment section look forward text"
+    },
+    "BB-ReviewSubmit-selfId-section-title-text" : {
+      "value" : "স্বেচ্ছায় স্ব-পরিচয়",
+      "note" : "Text for the voluntary self-identification section title text"
+    },
+    "BB-ReviewSubmit-selfId-section-equal-opportunity-text" : {
+      "value" : "সমান সুযোগ:",
+      "note" : "Text for the voluntary self-identification section equal opportunity text"
+    },
+    "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
+      "value" : "প্রাক্তন সেনাবাহিনী স্ট্যাটাস:",
+      "note" : "Text for the voluntary self-identification section veteral status text"
+    },
+    "BB-ReviewSubmit-selfId-section-disability-status-text" : {
+      "value" : "শারীরিক অক্ষমতার অবস্থা:",
+      "note" : "Text for the voluntary self-identification section disability status text"
+    },
+    "BB-ReviewSubmit-submit-application-button-text" : {
+      "value" : "আবেদন জমা দিন",
+      "note" : "Text for the review and submit page submit application button text"
+    },
+    "BB-ThankYou-thank-you-title-text" : {
+      "value" : "Amazon-এ আবেদন করার জন্য আপনাকে ধন্যবাদ!",
+      "note" : "Text for the thank you page thank you title text"
+    },
+    "BB-ThankYou-look-forward-next-steps-text" : {
+      "value" : "আমারা আপনার সাথে দেখা হবার প্রত্যাশা রাখি। এখানে আপনার পরবর্তী পদক্ষেপগুলি রয়েছে:",
+      "note" : "Text for the thank you page look forward and next steps text"
+    },
+    "BB-ThankYou-referral-details-title-text" : {
+      "value" : "অনুগ্রহ করে রেফারেল বিবরণ প্রদান করুন (প্রযোজ্য হলে)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-ThankYou-referral-details-description-text" : {
+      "value" : "আপনাকে কি কোন বর্তমান Amazon এর কর্মচারী রেফার করেছেন?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-ThankYou-referral-details-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-ThankYou-referral-details-no-text" : {
+      "value" : "না",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-ThankYou-start-pre-hire-activities-title-text" : {
+      "value" : "প্রাক-নিয়োগ কার্যক্রম শুরু করুন",
+      "note" : "Text for the thank you page start pre-hire activities title text"
+    },
+    "BB-ThankYou-fill-wotc-description-text" : {
+      "value" : "আপনার প্রাক-নিয়োগ সাক্ষাৎকারের আগে, ওয়ার্ক অপারচুনিটি ট্যাক্স ক্রেডিট প্রশ্নাবলী পূরণ করুন।",
+      "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
+    },
+    "BB-ThankYou-get-started-button-text" : {
+      "value" : "চলুন শুরু করা যাক",
+      "note" : "Text for the thank you page let's get started button text"
+    },
+    "BB-ThankYou-get-pre-hire-appointment-details-text" : {
+      "value" : "প্রাক-নিয়োগ সাক্ষাৎকারের বিবরণ",
+      "note" : "Text for the thank you page pre-hire appointment details text"
+    },
+    "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
+      "value" : "{startTime} - {endTime} এর মধ্যে যেকোনও সময় 30 মিনিটের সেশনের জন্য আমাদের ভিজিট করুন",
+      "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
+      "value" : "সাক্ষাৎকারের বিস্তারিত বিবরণ",
+      "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-things-to-bring-text" : {
+      "value" : "যে জিনিসগুলি আনতে হবে",
+      "note" : "Text for the thank you page nhe appointment details flyout things to bring text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-photoid-text" : {
+      "value" : "মেয়াদ শেষ না হওয়া আসল ছবিযুক্ত আইডি",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired photo id text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-original-unexpired-work-authorization-document-text" : {
+      "value" : "আসল মেয়াদ শেষ না হওয়া কাজের অনুমোদনের নথি",
+      "note" : "Text for the thank you page nhe appointment details flyout original unexpired work authorization document text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "গ্রহণযোগ্য নথির সম্পূর্ণ তালিকার জন্য <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>এখানে</a> ক্লিক করুন।",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-special-assistance-text" : {
+      "value" : "বিশেষ সহায়তা",
+      "note" : "Text for the thank you page nhe appointment details flyout special assistance text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "যদি আপনার কোনো আবাসনের প্রয়োজন হয়, যেমন নিয়োগের ইভেন্টের জন্য ASL দোভাষী, অনুগ্রহ করে <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> এ যান এবং একজন দোভাষীর জন্য অনুরোধ করতে আমাদের সাথে চ্যাট করুন। অনুগ্রহ করে আপনার সাক্ষাৎকারের সময় নির্ধারণের পর অবিলম্বে আমাদের সাথে যোগাযোগ করুন। আপনার সাক্ষাৎকারের ব্যবস্থা করার জন্য আমাদের সাক্ষাৎকারের আগে কমপক্ষে 48 ঘন্টা প্রয়োজন।",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-ThankYou-referral-login-label-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যিনি রেফার করেছে তার লগইন আইডি প্রদান করুন (শুধুমাত্র ছোট হাতের অক্ষর)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-ThankYou-referral-login-empty-error-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যে রেফার করেছে তার লগইন আইডি প্রদান করুন।",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-ThankYou-referral-login-regex-error-text" : {
+      "value" : "ব্যবহারকারী আইডিতে শুধুমাত্র ছোটহাতের অক্ষর থাকা উচিত এবং অন্তত 4 অক্ষর দীর্ঘ হওয়া উচিত।",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-WOTC-page-title-text" : {
+      "value" : "ওয়ার্ক অপারচুনিটি ট্যাক্স ক্রেডিট প্রশ্নাবলী",
+      "note" : "Text for the WOTC page title text"
+    },
+    "BB-WOTC-page-description-text" : {
+      "value" : "আমাজন IAT টেস্টিং ফেডারেল এবং বা রাজ্য ট্যাক্স ক্রেডিট প্রোগ্রামগুলিতে অংশগ্রহণ করে। আপনার দেওয়া তথ্যগুলি এই প্রোগ্রামগুলির জন্য কোম্পানির অংশগ্রহণের যোগ্যতা নির্ধারণে ব্যবহার করা হবে এবং কোনও ভাবে কোনও নিয়োগের, চাকরি অব্যাহত রাখার বা পদন্নতির সিদ্ধান্তগুলিতে নেতিবাচকভাবে প্রভাবিত করবে না।",
+      "note" : "Text for the WOTC page description text"
+    }
+  }
+}
