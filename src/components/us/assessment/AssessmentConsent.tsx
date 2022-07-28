@@ -74,7 +74,9 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   useEffect(() => {
     if (candidateData && jobDetail) {
       const assessmentType = jobDetail?.assessmentType;
-      assessmentType && setAssessmentUrl(candidateData.assessmentsTaken[assessmentType]?.assessmentUrl);
+      if (assessmentType && candidateData.assessmentsTaken) {
+        setAssessmentUrl(candidateData.assessmentsTaken[assessmentType]?.assessmentUrl);
+      }
     }
   }, [candidateData, jobDetail]);
 
@@ -125,7 +127,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
           <Button
             variant={ButtonVariant.Primary}
             onClick={() => assessmentUrl && applicationData && jobDetail && onAssessmentStart(assessmentUrl, applicationData, jobDetail)}
-            disabled={!assessmentUrl}
+            disabled={!(assessmentUrl && applicationData && jobDetail)}
           >
             {t("BB-assessment-consent-begin-assessment-button-text", "Begin Assessment")}
           </Button>

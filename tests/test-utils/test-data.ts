@@ -330,3 +330,5 @@ export const hasAction = (actions: any[], actionToCheck: string) => {
 export const TestInitUiState: uiState = {
   isLoading: false
 };
+
+export const TEST_ASSESSMENT_URL = "https://assessment-url.test.amazon.com/";

@@ -152,7 +152,48 @@ export const getLocale = (): Locale => {
     const locale: string = Cookies.get(HVH_LOCALE) || '';
 
     return locale ? locale as Locale : Locale.enUS;
-}
+};
+
+export const parseSearchParamFromLocationSearch = (): {[key: string]: string} => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const searchParamObject: {[key: string]: string} = {};
+
+    searchParams.forEach((value, key) => {
+        searchParamObject[key] = value;
+    });
+
+    return searchParamObject;
+};
+
+export const getAllQueryParamsFromURL = (): {[key: string]: string} => {
+    const urlHashParams = parseSearchParamFromHash(window.location.hash);
+    const urlSearchParams = parseSearchParamFromLocationSearch();
+
+    return {
+        ...urlHashParams,
+        ...urlSearchParams
+    };
+};
+
+export const getQueryParamStringFromURLFor3rdParty = (notationOverride?: string): string => {
+    const allQueryParams = getAllQueryParamsFromURL();
+    let queryString = '';
+
+    // These keys are 3rd Party params we allowed to pass with redirectUrl after login.
+    const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "pandocandidateid", "piq_source", "ikey", "akey", "tid"];
+
+    Object.keys(allQueryParams).forEach((key) => {
+        if (includedKeyList.includes(key)) {
+            queryString += `&${key}=${allQueryParams[key] || ''}`;
+        }
+    });
+
+    if(notationOverride){
+        return `${notationOverride}${queryString.substring(1)}`;
+    } else {
+        return queryString;
+    }
+};
 
 export const renderScheduleFullAddress = ( schedule: Schedule ): string => {
     const state = schedule.state || '';
@@ -985,7 +1026,7 @@ export const processAssessmentUrl = (assessmentUrl: string, applicationId: strin
     // add redirect and locale query params to the url before redirecting to HOOK
     const url = new URL(assessmentUrl);
     url.searchParams.append("locale", getLocale());
-    url.searchParams.append("redirect", `applicationId=${applicationId}&jobId=${jobId}`);
+    url.searchParams.append("redirect", `applicationId=${applicationId}&jobId=${jobId}${getQueryParamStringFromURLFor3rdParty()}`);
     return url.toString();
 };
 
