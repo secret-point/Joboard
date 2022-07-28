@@ -30,7 +30,7 @@ interface MapStateToProps {
   candidate: CandidateState
 }
 
-const AmazonRejects = (props: MapStateToProps) => {
+export const AmazonRejects = (props: MapStateToProps) => {
   const { job, application, schedule, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);

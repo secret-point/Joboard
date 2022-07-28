@@ -26,7 +26,7 @@ interface MapStateToProps {
   candidate: CandidateState,
 }
 
-const AssessmentFinished = (props: MapStateToProps) => {
+export const AssessmentFinished = (props: MapStateToProps) => {
   const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);

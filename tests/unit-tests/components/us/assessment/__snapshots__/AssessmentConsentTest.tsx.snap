@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssessmentConsent should match snapshot 1`] = `
+<Col
+  gridGap={15}
+>
+  <Col
+    gridGap={10}
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Assessment
+    </H4>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      We are so excited in your interest to join Amazon!
+    </Text>
+    <ul>
+      <li>
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          This assessment will help you understand the associate role and help us get to know you.
+        </Text>
+      </li>
+    </ul>
+  </Col>
+  <Col
+    gridGap={10}
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Accommodations
+    </H4>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      <DangerouslySetHtmlContent
+        className="diversityAndDisabilityText"
+        html="At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>"
+      />
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      <DangerouslySetHtmlContent
+        className="assessmentPaceAndSectionHeadingText"
+        html="<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:"
+      />
+    </Text>
+    <ul>
+      <li>
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Are optimized for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).
+        </Text>
+      </li>
+      <li>
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Can be accessed via mouse or keyboard.
+        </Text>
+      </li>
+    </ul>
+    <Col
+      padding={
+        Object {
+          "top": "S300",
+        }
+      }
+    >
+      <Button
+        colorScheme="default"
+        disabled={true}
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="primary"
+      >
+        Begin Assessment
+      </Button>
+    </Col>
+  </Col>
+</Col>
+`;

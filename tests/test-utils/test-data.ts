@@ -1,7 +1,11 @@
 import { createHashHistory } from "history";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { CandidateState } from "../../src/reducers/candidate.reducer";
+import { ApplicationState } from "../../src/reducers/application.reducer";
 import { Address, Candidate } from "../../src/utils/types/common";
+import { ScheduleState } from "../../src/reducers/schedule.reducer";
+import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
+import { DESIRED_WORK_HOURS, SCHEDULE_FILTER_TYPE } from "../../src/utils/enums/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -19,6 +23,9 @@ export const TEST_SCHEDULE_ID = "test-schedule-id";
 export const TEST_CS_DOMAIN = "https://hiring.amazon.com";
 
 export const TEST_CANDIDATE_SF_ID = "CID099157287";
+
+export const TEST_JOB_ID = "JOB-US-0000001234";
+export const TEST_JOB2_ID = "JOB-US-0000005678";
 
 export const TEST_CANDIDATE_ADDRESS: Address = {
   addressLine1: "test address line 1",
@@ -142,11 +149,20 @@ export const TEST_CANDIDATE_STATE: CandidateState = {
 };
 
 export const TEST_APPLICATION: any = {
-  applicationId: TEST_APPLICATION_ID
+  applicationId: TEST_APPLICATION_ID,
+  jobScheduleSelected: {
+    jobId: TEST_JOB_ID,
+    scheduleId: TEST_SCHEDULE_ID,
+    scheduleDetails: null,
+    jobScheduleSelectedTime: "2022-07-28T16:48:29.230756Z"
+  }
 };
 
-export const TEST_JOB_ID = "JOB-US-0000001234";
-export const TEST_JOB2_ID = "JOB-US-0000005678";
+export const TEST_APPLICATION_STATE: ApplicationState = {
+  loading: false,
+  failed: false,
+  results: TEST_APPLICATION
+};
 
 // TODO: change it to be type JOB
 export const TEST_JOB: any = {
@@ -186,6 +202,24 @@ export const TEST_APPLICATION_DATA: any = {
   loadingShifts: true,
   shiftsEmptyOnFilter: false,
   shiftPageFactor: 0
+};
+
+export const TEST_SCHEDULE: any = {
+  scheduleId: TEST_SCHEDULE_ID,
+};
+
+export const TEST_SCHEDULE_STATE: ScheduleState = {
+  loading: false,
+  failed: false,
+  filters: {
+    sortKey: SCHEDULE_FILTER_TYPE.DEFAULT,
+    maxHoursPerWeek:DESIRED_WORK_HOURS.THIRTY,
+    daysHoursFilter: []
+  },
+  results:{
+    scheduleList: [],
+    scheduleDetail: TEST_SCHEDULE,
+  },
 };
 
 export const TEST_PAGE: any = {

@@ -29,7 +29,7 @@ interface MapStateToProps {
   schedule: ScheduleState
 }
 
-const AmazonWithdraws = (props: MapStateToProps) => {
+export const AmazonWithdraws = (props: MapStateToProps) => {
   const { job, application, candidate, schedule } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));

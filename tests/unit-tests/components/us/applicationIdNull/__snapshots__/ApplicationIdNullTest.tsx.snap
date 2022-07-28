@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplicationIdNull should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    Application Error
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Something is wrong, please go to dashboard
+  </Text>
+  <Button
+    colorScheme="default"
+    iconPosition="leading"
+    onClick={[Function]}
+    shouldUseResponsiveContent={true}
+    size="default"
+    type="button"
+    variant="primary"
+  >
+    Return to dashboard
+  </Button>
+</Col>
+`;

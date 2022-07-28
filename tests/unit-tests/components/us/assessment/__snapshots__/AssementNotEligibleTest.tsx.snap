@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssementNotEligible should match snapshot 1`] = `
+<Col
+  gridGap={15}
+>
+  <H4
+    color="neutral90"
+    font="primary"
+    fontSize="T400"
+    fontWeight="regular"
+    hyphens="none"
+    margin={0}
+  >
+    {name}, your interest with Amazon means a lot to us.
+  </H4>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Thank you so much for giving us the opportunity to consider you for this position. Sadly, we will not be moving forward with your candidacy at this time.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    To be reconsidered for this role at another time, you may take the assessment again in three months.
+  </Text>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Return to dashboard
+    </Button>
+  </Col>
+</Col>
+`;

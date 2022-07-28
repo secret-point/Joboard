@@ -25,7 +25,7 @@ import SessionTimeout from "./sessionTimeout/SessionTimeout";
 import Wotc from "./wotc/Wotc";
 import WotcComplete from "./wotc/WotcComplete";
 import AssessmentConsent from "./assessment/AssessmentConsent";
-import AssessmentNotEligible from "./assessment/AssementNotEligible";
+import AssessmentNotEligible from "./assessment/AssessmentNotEligible";
 import AssessmentFinished from "./assessment/AssessmentFinished";
 import { BannerMessage } from "../common/BannerMessage";
 import { uiState } from "../../reducers/ui.reducer";

@@ -26,7 +26,7 @@ interface MapStateToProps {
   candidate: CandidateState
 }
 
-const ApplicationIdNull = (props: MapStateToProps) => {
+export const ApplicationIdNull = (props: MapStateToProps) => {
   const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
