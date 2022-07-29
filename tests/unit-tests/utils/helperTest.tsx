@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { processAssessmentUrl } from "../../../src/utils/helper";
+import { getCountryCodeByCountryName, processAssessmentUrl } from "../../../src/utils/helper";
 import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID } from "../../test-utils/test-data";
 
 describe('processAssessmentUrl', () => {
@@ -30,5 +30,10 @@ describe('processAssessmentUrl', () => {
     const redirectStr = `applicationId=${TEST_APPLICATION_ID}&jobId=${TEST_JOB_ID}&${thridPartyQueryParam}`;
     expect(url).toEqual(`${TEST_ASSESSMENT_URL}?locale=${locale}&redirect=${encodeURIComponent(redirectStr)}`);
   });
-
 });
+
+test("getCountryCodeByCountryName", () => {
+  expect(getCountryCodeByCountryName("")).toEqual("");
+  expect(getCountryCodeByCountryName("United States")).toEqual("US");
+  expect(getCountryCodeByCountryName("custom")).toEqual("");
+})

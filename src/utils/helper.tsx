@@ -33,6 +33,7 @@ import store, { history } from "../store/store";
 import Cookies from "js-cookie";
 import {
     AdditionalBGCFormConfig,
+    CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,
     initScheduleStateFilters,
@@ -723,7 +724,13 @@ export const handleUpdateFcraBGCStep = (stepConfig: BgcStepConfig) => {
 export const handleSubmitAdditionalBgc =
     ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState, stepConfig: BgcStepConfig ) => {
         const { ADDITIONAL_BGC } = UPDATE_APPLICATION_API_TYPE;
-        const patch: CandidatePatchRequest = candidatePatchRequest;
+
+        if(candidatePatchRequest.additionalBackgroundInfo?.address) {
+            const countryName = candidatePatchRequest.additionalBackgroundInfo.address?.country || "";
+            candidatePatchRequest.additionalBackgroundInfo.address.countryCode = getCountryCodeByCountryName(countryName);
+        }
+
+        const patch: CandidatePatchRequest = { ...candidatePatchRequest };
         const verifyInfo = verifyBasicInfo(patch, formError, AdditionalBGCFormConfig);
         boundUpdateCandidateInfoError(verifyInfo.formError);
         const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
@@ -1151,3 +1158,8 @@ export const reverseMappingTranslate = (value: string | undefined) => {
 
     return t(key, value);
 };
+
+export const getCountryCodeByCountryName = (countryName: string): string => {
+    const country = CountrySelectOptions.filter(country => country.value === countryName);
+    return country.length ? country[0].countryCode : "";
+}

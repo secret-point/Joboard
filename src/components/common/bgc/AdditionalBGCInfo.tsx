@@ -298,8 +298,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 defaultValue={CountrySelectOptions.find(option => option.value === countryDefaultValue)}
                 handleChange={(option: i18nSelectOption) => {
                     SetNewCandidatePatchRequest([
-                        { value: option.value, dataKey: 'additionalBackgroundInfo.address.country' },
-                        { value: option.countryCode || '', dataKey: 'additionalBackgroundInfo.address.countryCode' }
+                        { value: option.value, dataKey: 'additionalBackgroundInfo.address.country' }
                     ])
                 }}
             />
