@@ -1148,6 +1148,10 @@
       "value" : "சரிபார்த்து, சமர்ப்பிக்கவும்",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "திருத்து",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "வேலை விவரங்கள்",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1303,10 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT சோதனையானது மத்திய மற்றும்/அல்லது மாநில வரி கிரெடிட் திட்டங்களில் பங்கேற்கிறது. நீங்கள் வழங்கும் தகவல்கள் இந்த திட்டங்களுக்கான நிறுவனத் தகுதியைத் தீர்மானிப்பதற்காகப் பயன்படுத்தப்படும், அவை எந்த விதத்திலும் பணியமர்த்தல், தக்கவைத்தல் அல்லது பதவி உயர்வு முடிவுகளை எதிர்மறையாக பாதிக்காது.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "அமெரிக்கா - சமூகப் பாதுகாப்பு எண்",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     }
   }
 }

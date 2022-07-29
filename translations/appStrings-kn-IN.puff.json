@@ -1,5 +1,1021 @@
 {
   "resources" : {
+    "BB-PreConsentPage-banner-journey-starts" : {
+      "value" : "Amazon associate ಆಗುವ ನಿಮ್ಮ ಪ್ರಯಾಣ ಇಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "note" : "Text for PreConsentPage banner text"
+    },
+    "BB-JobOpportunity-Go-To-Dashboard-Link" : {
+      "value" : "ಉದ್ಯೋಗಗಳ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+      "note" : "Text for the link to go back to jobs dashboard"
+    },
+    "BB-JobOpportunity-back-to-indexPage-link" : {
+      "value" : "ಉದ್ಯೋಗಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+      "note" : "Text for the link to go back to job opportunity index"
+    },
+    "BB-JobOpportunity-back-to-jobConfirmation-link" : {
+      "value" : "ಹಿಂದೆ",
+      "note" : "Text for the link to go back to job confirmation page"
+    },
+    "BB-JobOpportunity-go-to-jobDescription-link" : {
+      "value" : "ಜಾಬ್ ಅವಶ್ಯಕತೆ ಮತ್ತು ಪ್ರಯೋಜನಗಳು",
+      "note" : "Text for the link to go to job description page"
+    },
+    "BB-JobOpportunity-filter-button" : {
+      "value" : "ಫಿಲ್ಟರ್ ಮಾಡಿ",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-sort-button" : {
+      "value" : "ವಿಂಗಡಿಸಿ",
+      "note" : "Text for the button to filter schedule list"
+    },
+    "BB-JobOpportunity-select-job-button" : {
+      "value" : "ಈ ಉದ್ಯೋಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-StepHeader-view-progress-button" : {
+      "value" : "ಪ್ರಗತಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
+      "note" : "Text for the button to select or confirm job"
+    },
+    "BB-PreconsentPage-preview-steps-button" : {
+      "value" : "ಪೂರ್ವವೀಕ್ಷಣೆ ಹಂತಗಳು",
+      "note" : "Text for the button to preview application steps"
+    },
+    "BB-PreconsentPage-next-Button" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the button to go to next page ( consent page )"
+    },
+    "BB-Country-United-States" : {
+      "value" : "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್",
+      "note" : "United States as country name our application supports"
+    },
+    "BB-ConsentPage-qualification-criteria-header-text" : {
+      "value" : "ಅನ್ವಯಿಸುವ ಮೂಲಕ, ನೀವು ಅದನ್ನು ಖಚಿತಪಡಿಸುತ್ತೀರಿ:",
+      "note" : "Text for application qualification criteria"
+    },
+    "BB-ConsentPage-data-policy-header-text" : {
+      "value" : "ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಮೂಲಕ, ನೀವು ಈ ನಿಯಮಗಳನ್ನು ಓದುತ್ತೀರಿ ಮತ್ತು ಒಪ್ಪುತ್ತೀರಿ",
+      "note" : "Text for the user data policy agreement title"
+    },
+    "BB-ConsentPage-user-data-Policy-button" : {
+      "value" : "ಬಳಕೆದಾರ ಡೇಟಾ ನೀತಿ",
+      "note" : "Text for the button to open user data policy page"
+    },
+    "BB-ConsentPage-create-application-button" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ರಚಿಸಿ",
+      "note" : "Text for the create application button"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "ಬಳಕೆದಾರ ಡೇಟಾ ನೀತಿ",
+      "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon ವೈವಿಧ್ಯಮಯ ಮತ್ತು ಅಂತರ್ಗತ ಕಾರ್ಯಸ್ಥಳಕ್ಕೆ ಬದ್ಧವಾಗಿದೆ. Amazon ಸಮಾನ ಅವಕಾಶ ಉದ್ಯೋಗದಾತ ಮತ್ತು ಜನಾಂಗ, ರಾಷ್ಟ್ರೀಯ ಮೂಲ, ಲಿಂಗ, ಲಿಂಗ ಗುರುತಿಸುವಿಕೆ, ಲೈಂಗಿಕ ದೃಷ್ಟಿಕೋನ, ಸಂರಕ್ಷಿತ ಅನುಭವಿ ಸ್ಥಿತಿ, ಅಂಗವೈಕಲ್ಯ, ವಯಸ್ಸು ಅಥವಾ ಇತರ ಕಾನೂನುಬದ್ಧವಾಗಿ ಸಂರಕ್ಷಿತ ಸ್ಥಿತಿಯ ಆಧಾರದ ಮೇಲೆ ತಾರತಮ್ಯ ಮಾಡುವುದಿಲ್ಲ. ವಸತಿಗಾಗಿ ವಿನಂತಿಸಲು ಬಯಸುವ ವಿಕಲಾಂಗ ವ್ಯಕ್ತಿಗಳಿಗೆ, ದಯವಿಟ್ಟು <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> ಗೆ ಭೇಟಿ ನೀಡಿ",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
+      "value" : "Amazon ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾ ರಕ್ಷಣೆಯನ್ನು ಗಂಭೀರವಾಗಿ ಪರಿಗಣಿಸುತ್ತದೆ ಮತ್ತು ಕಾನೂನಿಗೆ ಅನುಗುಣವಾಗಿ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಮಾತ್ರ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ ಹೇಳುವುದಾದರೆ, ಕಾನೂನಿನಿಂದ ಬಲವಂತಪಡಿಸದ ಹೊರತು ನಿಮ್ಮ ಪೂರ್ವಾನುಮತಿಯಿಲ್ಲದೆ ನಾವು ಯಾವುದೇ ಮೂರನೇ ವ್ಯಕ್ತಿಯೊಂದಿಗೆ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ. ನೀವು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ವ್ಯಕ್ತಪಡಿಸದ ಹೊರತು, ನೇಮಕ ಮಾಡುವ Amazon ಕಂಪನಿಯು USA ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳಲ್ಲಿ Amazon.com ನಿರ್ವಹಿಸುವ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸುತ್ತದೆ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು Amazon ಹೇಗೆ ಸಂಗ್ರಹಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುತ್ತದೆ ಎಂಬುದರ ಕುರಿತು ಸಂಪೂರ್ಣ ಮಾಹಿತಿಗಾಗಿ, ದಯವಿಟ್ಟು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
+      "note" : "Text for the flyout user data policy paragraph 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph3-text" : {
+      "value" : "ನೀವು ಇಂದು ಅರ್ಜಿ ಸಲ್ಲಿಸುತ್ತಿರುವ ಹುದ್ದೆಗೆ ಹೆಚ್ಚುವರಿಯಾಗಿ, ಅದೇ ಅಥವಾ ಅಂತಹುದೇ ಉದ್ಯೋಗ ಕಾರ್ಯಗಳ ಅಗತ್ಯವಿರುವ ಇತರ ಹುದ್ದೆಗಳನ್ನು ನಾವು ಹೊಂದಿರಬಹುದು. ಈ ಪಾತ್ರಗಳು ಪೂರ್ಣ-ಸಮಯ, ಕಡಿಮೆ-ಸಮಯ, ಅರೆಕಾಲಿಕ, ಕಾಲೋಚಿತ ಮತ್ತು/ಅಥವಾ ತಾತ್ಕಾಲಿಕ ಸ್ಥಾನಗಳಾಗಿರಬಹುದು ಅದು ಈ ಸ್ಥಳ ಅಥವಾ ಇತರ ಹತ್ತಿರದ Amazon ಸ್ಥಳಗಳಲ್ಲಿ ಲಭ್ಯವಿದೆ. Amazon ಅಥವಾ ನಮ್ಮ ಪಾಲುದಾರರೊಂದಿಗೆ ಯಾವುದೇ ಪಾತ್ರವನ್ನು ಸ್ವೀಕರಿಸಲು ನೀವು ಯಾವುದೇ ಬಾಧ್ಯತೆ ಹೊಂದಿಲ್ಲ, ಆದಾಗ್ಯೂ, ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಸೈಟ್‌ನ 30 ಮೈಲಿ ವ್ಯಾಪ್ತಿಯೊಳಗೆ ಅದೇ ಮಟ್ಟದ, ಗಂಟೆಯ ಪಾತ್ರಗಳನ್ನು ಪರಿಗಣಿಸಲು ನೀವು ಒಪ್ಪುತ್ತೀರಿ. ನಮ್ಮ ನಿಯಮಿತ ಮತ್ತು ತಾತ್ಕಾಲಿಕ ಸಿಬ್ಬಂದಿ ಅಗತ್ಯಗಳಿಗಾಗಿ ನೇಮಕಗೊಂಡಿರುವ ನಮ್ಮ ಪಾಲುದಾರರೊಂದಿಗೆ (ಸಿಬ್ಬಂದಿ ಏಜೆನ್ಸಿಗಳು) ನಿಮ್ಮ ಅರ್ಜಿದಾರರ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದನ್ನು ಇದು ಒಳಗೊಂಡಿರುತ್ತದೆ.",
+      "note" : "Text for the flyout user data policy paragraph 3 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-by-applying-text" : {
+      "value" : "ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಮೂಲಕ, ನೀವು:",
+      "note" : "Text for the flyout user data policy by applying text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text" : {
+      "value" : "ನೀವು ಅರ್ಜಿ ಸಲ್ಲಿಸುತ್ತಿರುವ ಸ್ಥಾನಕ್ಕಾಗಿ ಉದ್ಯೋಗ ವಿವರಣೆಯನ್ನು ಓದಿದ್ದೀರಿ ಮತ್ತು ಕೆಲಸವನ್ನು ನಿರ್ವಹಿಸಲು ಅಗತ್ಯವಿರುವ ಮೂಲಭೂತ ಅವಶ್ಯಕತೆಗಳನ್ನು ನೀವು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೀರಿ ಎಂದು ಒಪ್ಪಿಕೊಳ್ಳುವುದು;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 1 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text" : {
+      "value" : "ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮತ್ತು Amazon ನ ಯಾವುದೇ ಇತರ ಕಾನೂನುಬದ್ಧ ಉದ್ದೇಶಗಳಿಗಾಗಿ, Amazon, salesforce.com ಅಥವಾ ಯಾವುದೇ ಇತರ ಮೂರನೇ ವ್ಯಕ್ತಿಯಿಂದ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾದ ಪ್ರಕ್ರಿಯೆ, ವಿಶ್ಲೇಷಣೆ ಮತ್ತು ಮೌಲ್ಯಮಾಪನಕ್ಕೆ ಸಮ್ಮತಿ ನೀಡಿ. ಸಂದೇಹವನ್ನು ತಪ್ಪಿಸಲು, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾದ \"ಪ್ರಕ್ರಿಯೆ\" ಹಂತವು ಸಂಗ್ರಹಿಸುವುದು, ಸ್ವೀಕರಿಸುವುದು, ರೆಕಾರ್ಡಿಂಗ್ ಮಾಡುವುದು, ಸಂಘಟಿಸುವುದು, ಒಟ್ಟುಗೂಡಿಸುವುದು, ಸಂಗ್ರಹಿಸುವುದು, ನವೀಕರಿಸುವುದು, ಬದಲಾಯಿಸುವುದು, ಬಳಸುವುದು, ಪ್ರಸಾರ ಮಾಡುವುದು, ವಿತರಿಸುವುದು, ವಿಲೀನಗೊಳಿಸುವುದು, ಲಿಂಕ್ ಮಾಡುವುದು, ನಿರ್ಬಂಧಿಸುವುದು, ಅವಮಾನಗೊಳಿಸುವುದು, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಅಳಿಸುವುದು ಅಥವಾ ನಾಶಪಡಿಸುವುದನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ ಮತ್ತು ಅಷ್ಟಕ್ಕೆ ಮಾತ್ರವೇ ಸೀಮಿತವಾಗಿರುವುದಿಲ್ಲ;",
+      "note" : "Text for the flyout user data policy applying acknowledging item 2 text"
+    },
+    "BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಯ ನಂತರ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು Amazon ಗೆ ಸಮ್ಮತಿಸಿ ಅದರ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಮತ್ತು ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್‌ನಲ್ಲಿ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಡೇಟಾಬೇಸ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+      "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
+    },
+    "BB-StepHeader-view-progress-flyout-title" : {
+      "value" : "ಪ್ರಗತಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
+      "note" : "Text for view progress flyout title"
+    },
+    "BB-StepHeader-view-progress-flyout-close-button" : {
+      "value" : "ಮುಗಿದಿದೆ",
+      "note" : "Text for view progress flyout close button"
+    },
+    "BB-ApplicationSteps-select-job-text" : {
+      "value" : "ಕೆಲಸ ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text form select job application step"
+    },
+    "BB-ApplicationSteps-complete-required-document-text" : {
+      "value" : "ಅಗತ್ಯವಿರುವ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ",
+      "note" : "Text for complete required documents application step"
+    },
+    "BB-ApplicationSteps-schedule-preHire-appt-text" : {
+      "value" : "ಪ್ರೀ-ಹೈರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವೇಳಾಪಟ್ಟಿ",
+      "note" : "Text for Schedule pre-hire appointment application step"
+    },
+    "BB-ApplicationSteps-complete-assessment-text" : {
+      "value" : "ಮೌಲ್ಯಮಾಪನವನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ (~ 15 ನಿಮಿಷ)",
+      "note" : "Text for complete assessment application step"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-title" : {
+      "value" : "ಫಿಲ್ಟರ್ ಮಾಡಿ",
+      "note" : "Text for filter schedule flyout title"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-reset-Btn" : {
+      "value" : "ಮರುಹೊಂದಿಸಿ",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-filter-schedule-flyout-apply-Btn" : {
+      "value" : "ಅನ್ವಯಿಸಿ",
+      "note" : "Text for filter schedule flyout reset button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-apply-Btn" : {
+      "value" : "ಅನ್ವಯಿಸಿ",
+      "note" : "Text for sort schedule flyout apply button"
+    },
+    "BB-JobOpportunity-sort-schedule-flyout-title" : {
+      "value" : "ಹೀಗೆ ವಿಂಗಡಿಸಿ",
+      "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
+      "value" : "ಪಾವತಿ ದರ - ಗರಿಷ್ಠದಿಂದ ಕನಿಷ್ಠ",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-most-to-least" : {
+      "value" : "ಕಾರ್ಯಾವಧಿ - ಗರಿಷ್ಠದಿಂದ ಕನಿಷ್ಠ",
+      "note" : "Text for sort schedule by hours from most to least"
+    },
+    "BB-JobOpportunity-sort-schedule-by-hours-least-to-most" : {
+      "value" : "ಗಂಟೆಗಳು - ಕನಿಷ್ಠದಿಂದ ಗರಿಷ್ಠ",
+      "note" : "Text for sort schedule by hours from least to most"
+    },
+    "BB-DaysHoursFilter-title-text" : {
+      "value" : "ಫಿಲ್ಟರ್ ವೇಳಾಪಟ್ಟಿಗಳು",
+      "note" : "Text for the title of DaysHours Filter"
+    },
+    "BB-DayName-Monday" : {
+      "value" : "ಸೋಮವಾರ",
+      "note" : "Text for Monday"
+    },
+    "BB-DayName-Tuesday" : {
+      "value" : "ಮಂಗಳವಾರ",
+      "note" : "Text for Tuesday"
+    },
+    "BB-DayName-Wednesday" : {
+      "value" : "ಬುಧವಾರ",
+      "note" : "Text for Wednesday"
+    },
+    "BB-DayName-Thursday" : {
+      "value" : "ಗುರುವಾರ",
+      "note" : "Text for Thursday"
+    },
+    "BB-DayName-Friday" : {
+      "value" : "ಶುಕ್ರವಾರ",
+      "note" : "Text for Friday"
+    },
+    "BB-DayName-Saturday" : {
+      "value" : "ಶನಿವಾರ",
+      "note" : "Text for Saturday"
+    },
+    "BB-DayName-Sunday" : {
+      "value" : "ಭಾನುವಾರ",
+      "note" : "Text for Sunday"
+    },
+    "BB-TimeRange-start-time-select-label-text" : {
+      "value" : "ಆರಂಭದ ಸಮಯ",
+      "note" : "Text for start time select input label text"
+    },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "ಆರಂಭದ ಸಮಯ",
+      "note" : "Text for end time select input label text"
+    },
+    "BB-FilterSchedule-DesiredHours-Upto-hours" : {
+      "value" : "{hourNumber} ಗಂಟೆಗಳವರೆಗೆ",
+      "note" : "Text for Desired Hours up to a certain hours"
+    },
+    "BB-FilterSchedule-desired-hour-select-place-holder" : {
+      "value" : "ಆದ್ಯತೆಯ ಕಾರ್ಯಾವಧಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for desired hours select input place holder"
+    },
+    "BB-FilterSchedule-desired-hour-select-label-text" : {
+      "value" : "ಪ್ರತಿ ವಾರಕ್ಕೆ ಅಪೇಕ್ಷಿತ ಗಂಟೆಗಳು",
+      "note" : "Text for desired hours select input label text"
+    },
+    "BB-ContingencyOffer-well-done-text" : {
+      "value" : "ಇಲ್ಲಿಯವರೆಗೆ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದ್ದೀರಿ",
+      "note" : "Text for congratulating candidate for accepting contingent offer"
+    },
+    "BB-ContingencyOffer-job-picked-title-text" : {
+      "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅನಿಶ್ಚಿತ ಕೊಡುಗೆ ಇಲ್ಲಿದೆ.",
+      "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
+      "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅನಿಶ್ಚಿತ ಕೊಡುಗೆ ಇಲ್ಲಿದೆ.",
+      "note" : "Text for contingent offer meaning popover title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
+      "value" : "ಅನ್ವಯವಾಗುವ ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ನಿಮ್ಮ ಕೊಡುಗೆಯು ಅಗತ್ಯವಿರುವ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ, ಡ್ರಗ್ ಸ್ಕ್ರೀನಿಂಗ್ (ಅನ್ವಯಿಸಿದರೆ) ಮತ್ತು ಅರ್ಹತಾ ಪರಿಶೀಲನೆಯನ್ನು (ಅನ್ವಯಿಸಿದರೆ) ಯಶಸ್ವಿಯಾಗಿ ರವಾನಿಸುವಲ್ಲಿ ಅನಿಶ್ಚಿತವಾಗಿರುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ಮುಂದಿನ ಪುಟದಲ್ಲಿ ಪೂರ್ವ-ಉದ್ಯೋಗ ಹಂತಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ. ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ, ಪೂರ್ವ ಉದ್ಯೋಗದ ಅವಶ್ಯಕತೆಗಳನ್ನು ಸಮಯಕ್ಕೆ ಪೂರ್ಣಗೊಳಿಸದ ಕಾರಣ ನಿಮ್ಮ ಮೊದಲ ದಿನವು ವಿಳಂಬವಾಗಬಹುದು. ಇದು ಒಂದು ವೇಳೆ, ನೀವು ಶೀಘ್ರದಲ್ಲೇ ನಮ್ಮಿಂದ ಕೇಳಲು ನಿರೀಕ್ಷಿಸಬಹುದು.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
+      "value" : "ಮುಚ್ಚಿ.",
+      "note" : "Text for contingent offer meaning popover close button"
+    },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "ಕೆಲಸದ ಅವಶ್ಯಕತೆಗಳು.",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
+    "BB-ContingencyOffer-remaining-steps-container-title" : {
+      "value" : "ಉಳಿದ ಹಂತಗಳು",
+      "note" : "Text for the remaining steps container title text"
+    },
+    "BB-ContingencyOffer-accept-offer-button-text" : {
+      "value" : "ಕೊಡುಗೆ ಸ್ವೀಕರಿಸಿ",
+      "note" : "Text for the accept offer button text"
+    },
+    "BB-ContingencyOffer-back-to-jobs-button-text" : {
+      "value" : "ಉದ್ಯೋಗಗಳಿಗೆ ಹಿಂತಿರುಗಿ",
+      "note" : "Text for the back to jobs (from contingent offer page to job opportunity page) button"
+    },
+    "BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text" : {
+      "value" : "ಈ ಪ್ರಸ್ತಾಪವನ್ನು ಸ್ವೀಕರಿಸುವ ಮೂಲಕ, ಈ ಸ್ಥಾನದ ಅವಶ್ಯಕತೆಗಳನ್ನು ನೀವು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೀರಿ ಎಂದು ನೀವು ದೃಢೀಕರಿಸುತ್ತೀರಿ.",
+      "note" : "Text offer requirement understanding confirmed by accepting offer"
+    },
+    "BB-BGC-page-content-title" : {
+      "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ",
+      "note" : "Text for BGC page title"
+    },
+    "BB-BGC-page-provide-authorization-and-information-notice" : {
+      "value" : "ದಯವಿಟ್ಟು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗೆ ಅಗತ್ಯವಿರುವ ದೃಢೀಕರಣ ಮತ್ತು ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ.",
+      "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
+    },
+    "BB-BGC-page-fcra-step-card-title" : {
+      "value" : "ನ್ಯಾಯಯುತ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟ್ ಆಕ್ಟ್ ಪ್ರಕಟಣೆ",
+      "note" : "Text for the FCRA step card title"
+    },
+    "BB-BGC-page-nonfcra-step-card-title" : {
+      "value" : "ನಾನ್-ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ಸ್ವೀಕೃತಿ ಮತ್ತು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಾಗಿ ಅಧಿಕಾರ",
+      "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-additional-bgc-step-card-title" : {
+      "value" : "ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಮಾಹಿತಿ",
+      "note" : "Text for the Additional bgc information step card title"
+    },
+    "BB-BGC-page-continue-button" : {
+      "value" : "ಮುಂದುವರಿಸಿ",
+      "note" : "Text for the bgc continue button ( from bgc to nhe page)"
+    },
+    "BB-BGC-page-fcra-subtitle-text" : {
+      "value" : "ಕೆಳಗಿನ ಲಿಂಕ್ ಬಳಸಿ ಕೆಲವು ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಿ.",
+      "note" : "Text for the fcra subtitle"
+    },
+    "BB-BGC-page-fcra-get-started-btn" : {
+      "value" : "ಪ್ರಾರಂಭಿಸಿ",
+      "note" : "Text for the fcra get started button"
+    },
+    "BB-BGC-page-fcra-edit-form-btn" : {
+      "value" : "ಫಾರ್ಮ್ ಎಡಿಟ್ ಮಾಡಿ",
+      "note" : "Text for the fcra edit information button"
+    },
+    "BB-BGC-addition-bgc-form-next-btn" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the additional bgc form next button"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-label-text" : {
+      "value" : "ವಿಳಾಸದ ಸಾಲು 1",
+      "note" : "Text for the additional bgc form  address line 1 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-one-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಒಂದು ಮಾನ್ಯವಾದ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form  address line 1 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-label-text" : {
+      "value" : "ಅಪಾರ್ಟ್‌ಮೆಂಟ್, ಸೂಟ್, ಇತ್ಯಾದಿ",
+      "note" : "Text for the additional bgc form  address line 2 label text"
+    },
+    "BB-BGC-Additional-bgc-form-address-line-two-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಒಂದು ಮಾನ್ಯವಾದ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form  address line 2 error message text"
+    },
+    "BB-BGC-Additional-bgc-form-city-label-text" : {
+      "value" : "ನಗರ",
+      "note" : "Text for the additional bgc form  city label text"
+    },
+    "BB-BGC-Additional-bgc-form-city-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ನಗರವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form city error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-label-text" : {
+      "value" : "ರಾಜ್ಯ/ಪ್ರಾಂತ್ಯ",
+      "note" : "Text for the additional bgc form  state label text"
+    },
+    "BB-BGC-Additional-bgc-form-state-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾಗಿರುವ ರಾಜ್ಯ/ಪ್ರಾಂತ್ಯವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form state error message text"
+    },
+    "BB-BGC-Additional-bgc-form-state-placeholder-text" : {
+      "value" : "ಒಂದು ಸ್ಥಿತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for the additional bgc form state placeholder text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-label-text" : {
+      "value" : "ಜಿಪ್/ಪಿನ್ ಕೋಡ್",
+      "note" : "Text for the additional bgc form  zipcode label text"
+    },
+    "BB-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "ಮಾನ್ಯವಾದ 5 ಅಂಕೆಗಳ ಜಿಪ್‌ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form zipcode error message text"
+    },
+    "BB-BGC-Additional-bgc-form-country-label-text" : {
+      "value" : "ದೇಶ",
+      "note" : "Text for the additional bgc form  country label text"
+    },
+    "BB-BGC-Additional-bgc-form-country-error-text" : {
+      "value" : "ಮಾನ್ಯವಾದ ದೇಶವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form country error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
+      "value" : "ರಾಷ್ಟ್ರೀಯ ID",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
+      "value" : "ಮಾನ್ಯವಾದ ರಾಷ್ಟ್ರೀಯ ID ಪ್ರಕಾರವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
+      "value" : "ರಾಷ್ಟ್ರೀಯ ID ಸಂಖ್ಯೆ",
+      "note" : "Text for the additional bgc form  national id number label text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ಡ್ಯಾಶ್ ಗುರುತು ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 9 ಅಂಕಿಗಳ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-label-text" : {
+      "value" : "ಹುಟ್ಟಿದ ದಿನಾಂಕ",
+      "note" : "Text for the additional bgc form  date of birth label text"
+    },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "ಒಂದು ಮಾನ್ಯತೆ ಹೊಂದಿರುವ ಹುಟ್ಟಿದ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
+      "value" : "ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ",
+      "note" : "Social Security Number is one of options as National ID"
+    },
+    "BB-BGC-form-optional-input-label-text" : {
+      "value" : "ಐಚ್ಛಿಕ",
+      "note" : "Text to show that inout on a form is optional"
+    },
+    "BB-BGC-bgc-step-card-step-progress" : {
+      "value" : "ಹಂತ {totalSteps} ರಲ್ಲಿ {currentStep}",
+      "note" : "Text to show step progress on bgc step card"
+    },
+    "BB-BGC-criminal-record-within-seven-years-question-text" : {
+      "value" : "ಕಳೆದ ಏಳು (7) ವರ್ಷಗಳಲ್ಲಿ, ನೀವು ಎಂದಾದರೂ ದುಷ್ಕೃತ್ಯ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಶಿಕ್ಷೆಗೊಳಗಾಗಿದ್ದೀರಾ ಅಥವಾ ಅಪರಾಧ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಜೈಲಿನಿಂದ ಅಥವಾ ಪೆರೋಲ್‌ನಲ್ಲಿ ಬಿಡುಗಡೆ ಹೊಂದಿದ್ದೀರಾ?",
+      "note" : "Text to ask if candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-yes-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text to yes as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "ನಗರ, ದೇಶ, ಅಪರಾಧದ ಸ್ಥಿತಿ, ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
+      "value" : "Amazon.com, Inc ನಲ್ಲಿ ಉದ್ಯೋಗಕ್ಕಾಗಿ ನೀವು ಸಲ್ಲಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಸಂಬಂಧಿಸಿದಂತೆ. ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಂಗಸಂಸ್ಥೆಗಳು (\"Amazon\"), ನಾವು ಕಸ್ಟಮರ್ ವರದಿ ಮಾಡುವ ಏಜೆನ್ಸಿಯಿಂದ ನಿಮ್ಮ ಬಗ್ಗೆ ಕಸ್ಟಮರ್ ರಿಪೋರ್ಟ್ ಅನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ. ಇದನ್ನು ಸಾಮಾನ್ಯವಾಗಿ “ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ” ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-title" : {
+      "value" : "ನ್ಯಾಯಯುತ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟ್ ಆಕ್ಟ್ ಪ್ರಕಟಣೆ",
+      "note" : "Text for the fcra disclosure form title"
+    },
+    "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
+      "value" : "ಕೆಳಗಿನ ನನ್ನ ಇಸಹಿ ಮೂಲಕ, ಮೇಲಿನ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ಈಗ ಮತ್ತು Amazon ಕಾರ್ಪೊರೇಟ್‌ನೊಂದಿಗೆ ನಾನು ಹೊಂದಿರುವ ಯಾವುದೇ ಉದ್ಯೋಗ ಅಥವಾ ನಿಶ್ಚಿತಾರ್ಥದ ಉದ್ದಕ್ಕೂ ಸಂಗ್ರಹಿಸಲು ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",
+      "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the fcra disclosure form next button"
+    },
+    "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
+      "value" : "ಈ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯನ್ನು ನಡೆಸಲು ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",
+      "note" : "Text for the authorize Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
+      "value" : "ಈ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯನ್ನು Amazon ಗೆ ಅಧಿಕೃತಗೊಳಿಸಲು ನಾನು ನಿರಾಕರಿಸುತ್ತೇನೆ.",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-label-text" : {
+      "value" : "ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ",
+      "note" : "Text for the fcra signature input label text"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಪೂರ್ಣ ಹೆಸರನ್ನು ಈ ಕೆಳಗಿನ ಸ್ವರೂಪವನ್ನು ನಮೂದಿಸಿ: ಮೊದಲನೆಯದು ಕೊನೆಯದು",
+      "note" : "Text for the fcra signature input error text"
+    },
+    "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
+      "value" : "ಪ್ರತ್ಯೇಕ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ಡಿಸ್‌ಕ್ಲೋಸರ್ ಮತ್ತು ಆಥರೈಸೇಶನ್ ಡಾಕ್ಯುಮೆಂಟ್, Amazon.com, Inc ನಲ್ಲಿ ನಾನು ಬಹಿರಂಗಪಡಿಸಿದಂತೆ ಮತ್ತು ಅಧಿಕೃತಗೊಳಿಸಿದಂತೆ. ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಂಗಸಂಸ್ಥೆಗಳು (\"Amazon\") ನನ್ನ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ನಡೆಸುತ್ತವೆ.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
+      "value" : "ಕೆಳಗಿನ ನನ್ನ ಇಸಹಿ ಮೂಲಕ, ನಾನು ಈ ಕೆಳಗಿನಂತೆ ಅಂಗೀಕರಿಸುತ್ತೇನೆ:",
+      "note" : "Text for the eSignature acknowledgement title"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-one" : {
+      "value" : "ಹಿನ್ನಲೆ ಚೆಕ್ ಪ್ರೊವೈಡರ್ ಅಥವಾ \"CRA\", ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯನ್ನು ಮಾಡುವವರು ಮೊದಲ ಅನುಕೂಲ, 1 ಕಾನ್ಕೋರ್ಸ್ ಪಾರ್ಕ್‌ವೇ NE, ಸೂಟ್ 200, ಅಟ್ಲಾಂಟಾ, GA 30328 ನಲ್ಲಿ ನೆಲೆಸಿದ್ದಾರೆ ಮತ್ತು (800) 845-6004 ಅಥವಾ www.fadv ನಲ್ಲಿ ತಲುಪಬಹುದು .com.",
+      "note" : "Text for non fcra acknowledgement number one for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-one" : {
+      "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ಒದಗಿಸುವವರು ಅಥವಾ \"CRA\", ಅವರು ನಿಖರವಾದ ಹಿನ್ನೆಲೆಯನ್ನು ನಿರ್ವಹಿಸುತ್ತಾರೆ, ಅವರು 7515 Irvine Center Dr., Irvine, CA 92618, ಮತ್ತು ಫೋನ್ ಸಂಖ್ಯೆ (800) 216-8024 ಅಥವಾ www.accuratebackground.com ನಲ್ಲಿ ತಲುಪಬಹುದು .\n\n* ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ನನ್ನ ಹೆಚ್ಚಿನ ಅನುಮತಿಯಿಲ್ಲದೆಯೇ, (1) ನನ್ನ ಉದ್ಯೋಗದ ಸಮಯದಲ್ಲಿ, ಯಾವುದಾದರೂ ಇದ್ದರೆ, ಮತ್ತು (2) ನಿಖರವಾದ ಹಿನ್ನೆಲೆಯನ್ನು ಹೊರತುಪಡಿಸಿ CRA ಯಿಂದ ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ Amazon ಗೆ ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳು ಅಗತ್ಯವಾಗಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ.",
+      "note" : "Text for non fcra acknowledgement number one for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fadv-acknowledgement-item-two" : {
+      "value" : "ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ನನ್ನ ಹೆಚ್ಚಿನ ಅನುಮತಿಯಿಲ್ಲದೆ, (1) ನನ್ನ ಉದ್ಯೋಗದ ಸಮಯದಲ್ಲಿ, ಯಾವುದಾದರೂ ಇದ್ದರೆ ಮತ್ತು (2) ಮೊದಲ ಪ್ರಯೋಜನವನ್ನು ಹೊರತುಪಡಿಸಿ CRA ಗಳಿಂದ ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ Amazon ನನ್ನ ಬಗ್ಗೆ ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳನ್ನು ಆದೇಶಿಸಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ.",
+      "note" : "Text for non fcra acknowledgement number two for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-two" : {
+      "value" : "ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ನನ್ನ ಹೆಚ್ಚಿನ ಅನುಮತಿಯಿಲ್ಲದೆಯೇ, (1) ನನ್ನ ಉದ್ಯೋಗದ ಸಮಯದಲ್ಲಿ, ಯಾವುದಾದರೂ ಇದ್ದರೆ, ಮತ್ತು (2) ನಿಖರವಾದ ಹಿನ್ನೆಲೆಯನ್ನು ಹೊರತುಪಡಿಸಿ CRA ಯಿಂದ ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ Amazon ಗೆ ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳು ಅಗತ್ಯವಾಗಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ.",
+      "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+      "value" : "ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮತ್ತು ನನ್ನ ಮಾಹಿತಿಯ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸುವ ಎಲ್ಲಾ ಕಾನೂನುಗಳಿಗೆ ಅನುಸಾರವಾಗಿ, ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳಿಗೆ ಅಗತ್ಯವಿರುವ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು CRA ಗೆ ಬಹಿರಂಗಪಡಿಸಲು ನಾನು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ: ನನ್ನ ಹಿಂದಿನ ಅಥವಾ ಪ್ರಸ್ತುತ ಉದ್ಯೋಗದಾತರು, ಶಾಲೆಗಳು, ಕಾನೂನು ಜಾರಿ ಮತ್ತು ಇತರ ಸರ್ಕಾರಿ ಏಜೆನ್ಸಿಗಳು, ಸೇರಿದಂತೆ ಮೋಟಾರು ವಾಹನ ರೆಕಾರ್ಡಿಂಗ್ ಏಜೆನ್ಸಿ.",
+      "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
+    },
+    "BB-non-fcra-accurate-acknowledgement-item-three" : {
+      "value" : "ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮತ್ತು ನನ್ನ ಮಾಹಿತಿಯ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸುವ ಎಲ್ಲಾ ಕಾನೂನುಗಳಿಗೆ ಅನುಸಾರವಾಗಿ, ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳಿಗೆ ಅಗತ್ಯವಿರುವ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು CRA ಗೆ ಬಹಿರಂಗಪಡಿಸಲು ನಾನು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ: ನನ್ನ ಹಿಂದಿನ ಅಥವಾ ಪ್ರಸ್ತುತ ಉದ್ಯೋಗದಾತರು, ಶಾಲೆಗಳು, ಕಾನೂನು ಜಾರಿ ಮತ್ತು ಇತರ ಸರ್ಕಾರಿ ಏಜೆನ್ಸಿಗಳು, ಸೇರಿದಂತೆ ಮೋಟಾರು ವಾಹನ ರೆಕಾರ್ಡಿಂಗ್ ಏಜೆನ್ಸಿ.",
+      "note" : "Text for non fcra acknowledgement number three for ACCURATE bgcVendor"
+    },
+    "BB-non-fcra-accurate-california-specific-notice" : {
+      "value" : "<p><b>ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ: </b>ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ನೀವು ಪ್ರತ್ಯೇಕ ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ (\"ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಬಹಿರಂಗಪಡಿಸುವಿಕೆ\"). ಇದು ಪ್ರಮುಖ ದಾಖಲೆಯಾಗಿದೆ; ದಯವಿಟ್ಟು ಅದನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಿ. ಅಲ್ಲದೆ, ನೀವು ಉದ್ಯೋಗವನ್ನು ಹುಡುಕುತ್ತಿದ್ದರೆ ಅಥವಾ ಸ್ಯಾನ್ ಫ್ರಾನ್ಸಿಸ್ಕೋದಲ್ಲಿ ಕಂಪನಿಯಿಂದ ಈಗಾಗಲೇ ಉದ್ಯೋಗದಲ್ಲಿದ್ದರೆ <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಳಗೆ ಸಹಿ ಮಾಡುವ ಮೂಲಕ, ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಕಾನೂನು ಮತ್ತು ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಪ್ರಕಟಣೆಗೆ ಅನುಸಾರವಾಗಿ, ನೀವು Amazon ನೊಂದಿಗೆ ಯಾವುದೇ ಉದ್ಯೋಗ ಮಾಡುತ್ತಿರುವಾಗಲೂ ಅಂದರೆ ಈಗ ಮತ್ತು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ಎಂದೂ ಕರೆಯಲ್ಪಡುವ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೀರಿ.</p>",
+      "note" : "Text for ACCURATE non fcra California specific notice "
+    },
+    "BB-non-fcra-fadv-california-specific-notice" : {
+      "value" : "<p><b>ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ: </b>ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ನೀವು ಪ್ರತ್ಯೇಕ ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ (\"ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಬಹಿರಂಗಪಡಿಸುವಿಕೆ\"). ಇದು ಪ್ರಮುಖ ದಾಖಲೆಯಾಗಿದೆ; ದಯವಿಟ್ಟು ಅದನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಿ. ಅಲ್ಲದೆ, ನೀವು ಉದ್ಯೋಗವನ್ನು ಹುಡುಕುತ್ತಿದ್ದರೆ ಅಥವಾ ಸ್ಯಾನ್ ಫ್ರಾನ್ಸಿಸ್ಕೋದಲ್ಲಿ ಕಂಪನಿಯಿಂದ ಈಗಾಗಲೇ ಉದ್ಯೋಗದಲ್ಲಿದ್ದರೆ <a href='https://sfgov.org/olse/sites/default/files/Document/FCO%20Poster%20Set%20All%20Languages%2010%2001%2018.pdf' target='_blank' rel=\"noopener noreferrer\"></a> ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಳಗೆ ಸಹಿ ಮಾಡುವ ಮೂಲಕ, ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಕಾನೂನು ಮತ್ತು ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಪ್ರಕಟಣೆಗೆ ಅನುಸಾರವಾಗಿ, ನೀವು Amazon ನೊಂದಿಗೆ ಯಾವುದೇ ಉದ್ಯೋಗ ಮಾಡುತ್ತಿರುವಾಗಲೂ ಅಂದರೆ ಈಗ ಮತ್ತು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ಎಂದೂ ಕರೆಯಲ್ಪಡುವ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೀರಿ.</p>",
+      "note" : "Text for FADV non fcra California specific notice "
+    },
+    "BB-non-fcra-accurate-minnesota-specific-notice" : {
+      "value" : "<p><b>MINNESOTA: </b>ನಿಮ್ಮ ಕುರಿತು ಆದೇಶಿಸಿದ ಯಾವುದೇ ಕನ್‌ಸ್ಯೂಮರ್ ರಿಪೋರ್ಟ್‌ನ ಸ್ವಭಾವ ಮತ್ತು ವ್ಯಾಪ್ತಿಯ ಸಂಪೂರ್ಣ ಮತ್ತು ನಿಖರವಾದ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಗಾಗಿ CRA ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸಿದ ಐದು ವ್ಯವಹಾರದ ದಿನಗಳಲ್ಲಿ ಅಥವಾ ವರದಿಯನ್ನು ಆದೇಶಿಸಿದಾಗ, ಈ ಎರಡು ದಿನಾಂಕಗಳಲ್ಲಿ ಯಾವುದೋ ಮೊದಲು ಬರುತ್ತದೋ ಆ ದಿನಾಂಕದಂದು CRA ನಿಮಗೆ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಬೇಕು.</p>",
+      "note" : "Text for ACCURATE non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-fadv-minnesota-specific-notice" : {
+      "value" : "<p><b>MINNESOTA: </b>ನಿಮ್ಮ ಕುರಿತು ಆದೇಶಿಸಿದ ಯಾವುದೇ ಕನ್‌ಸ್ಯೂಮರ್ ರಿಪೋರ್ಟ್‌ನ ಸ್ವಭಾವ ಮತ್ತು ವ್ಯಾಪ್ತಿಯ ಸಂಪೂರ್ಣ ಮತ್ತು ನಿಖರವಾದ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಗಾಗಿ CRA ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ವಿನಂತಿಯನ್ನು ಸ್ವೀಕರಿಸಿದ ಐದು ವ್ಯವಹಾರದ ದಿನಗಳಲ್ಲಿ ಅಥವಾ ವರದಿಯನ್ನು ಆದೇಶಿಸಿದಾಗ, ಈ ಎರಡು ದಿನಾಂಕಗಳಲ್ಲಿ ಯಾವುದೋ ಮೊದಲು ಬರುತ್ತದೋ ಆ ದಿನಾಂಕದಂದು CRA ನಿಮಗೆ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಬೇಕು.</p>",
+      "note" : "Text for FADV non fcra Minnesota specific notice "
+    },
+    "BB-non-fcra-accurate-newyork-specific-notice" : {
+      "value" : "<p><b>ನ್ಯೂಯಾರ್ಕ್: </b>ನಿಮ್ಮ ಬಗ್ಗೆ ಗ್ರಾಹಕ ವರದಿ ಅಥವಾ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ನಾವು ಆದೇಶಿಸಿದ್ದೇವೆಯೇ ಎಂದು ತಿಳಿಯಲು Amazon ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕು ನಿಮಗೆ ಇದೆ. ಮೇಲೆ ತೋರಿಸಲಾಗಿದೆ CRA ನ ವಿಳಾಸ ಮತ್ತು ದೂರವಾಣಿ ಸಂಖ್ಯೆ. ಅಂತಹ ಯಾವುದೇ ವರದಿಯ ಪ್ರತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಅಥವಾ ಸ್ವೀಕರಿಸಲು ನೀವು ಯಾವುದೇ CRA ಅನ್ನು ಸಂಪರ್ಕಿಸುವ ಹಕ್ಕನ್ನು ಹೊಂದಿರುತ್ತೀರಿ. ನ್ಯೂಯಾರ್ಕ್ ತಿದ್ದುಪಡಿ ಕಾನೂನಿನ ಆರ್ಟಿಕಲ್ 23-A ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತು ಮಾಹಿತಿಗಾಗಿ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ಇಲ್ಲಿ</a> ಕ್ಲಿಕ್ ಮಾಡಿ.</p>",
+      "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>ನ್ಯೂಯಾರ್ಕ್: </b>ನಿಮ್ಮ ಬಗ್ಗೆ ಗ್ರಾಹಕ ವರದಿ ಅಥವಾ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ನಾವು ಆದೇಶಿಸಿದ್ದೇವೆಯೇ ಎಂದು ತಿಳಿಯಲು Amazon ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕು ನಿಮಗೆ ಇದೆ. ಮೇಲೆ ತೋರಿಸಲಾಗಿದೆ CRA ನ ವಿಳಾಸ ಮತ್ತು ದೂರವಾಣಿ ಸಂಖ್ಯೆ. ಅಂತಹ ಯಾವುದೇ ವರದಿಯ ಪ್ರತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಅಥವಾ ಸ್ವೀಕರಿಸಲು ನೀವು ಯಾವುದೇ CRA ಅನ್ನು ಸಂಪರ್ಕಿಸುವ ಹಕ್ಕನ್ನು ಹೊಂದಿರುತ್ತೀರಿ. ನ್ಯೂಯಾರ್ಕ್ ತಿದ್ದುಪಡಿ ಕಾನೂನಿನ ಆರ್ಟಿಕಲ್ 23-A ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತು ಮಾಹಿತಿಗಾಗಿ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ಇಲ್ಲಿ</a> ಕ್ಲಿಕ್ ಮಾಡಿ.</p>.",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>ವಾಷಿಂಗ್ಟನ್: </b>ವಾಷಿಂಗ್ಟನ್ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಲಿಖಿತ ಸಾರಾಂಶವನ್ನು ಗ್ರಾಹಕ ವರದಿ ಮಾಡುವ ಏಜೆನ್ಸಿಯಿಂದ ವಿನಂತಿಸಲು ನೀವು ಹಕ್ಕನ್ನು ಹೊಂದಿದ್ದೀರಿ.</p>.",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>ವಾಷಿಂಗ್ಟನ್: </b>ವಾಷಿಂಗ್ಟನ್ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಲಿಖಿತ ಸಾರಾಂಶವನ್ನು ಗ್ರಾಹಕ ವರದಿ ಮಾಡುವ ಏಜೆನ್ಸಿಯಿಂದ ವಿನಂತಿಸಲು ನೀವು ಹಕ್ಕನ್ನು ಹೊಂದಿದ್ದೀರಿ.</p>.",
+      "note" : "Text for FADV non fcra Washington specific notice "
+    },
+    "BB-non-fcra-accurate-allstate-specific-notice" : {
+      "value" : "<p><b>ಎಲ್ಲಾ ಸ್ಥಿತಿಗಳು: </b>ಮನೋವೈದ್ಯಕೀಯ ಸ್ಥಿತಿ, ಉದಾಹರಣೆಗೆ, ಬೈಪೋಲಾರ್ ಡಿಸಾರ್ಡರ್, ಸ್ಕಿಜೋಫ್ರೇನಿಯಾ, PTSD, ಅಥವಾ ಪ್ರಮುಖ ಖಿನ್ನತೆ",
+      "note" : "Text for ACCURATE non fcra all state specific notice "
+    },
+    "BB-non-fcra-fadv-allstate-specific-notice" : {
+      "value" : "<p><b>ಎಲ್ಲಾ ರಾಜ್ಯಗಳು: </b>ನೀವು ಈ ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತಿಸಿದರೆ ಯಾವುದೇ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯ ಉಚಿತ ನಕಲನ್ನು ನಾವು ನಿಮಗೆ ಒದಗಿಸುತ್ತೇವೆ</p>",
+      "note" : "Text for FADV non fcra all state specific notice "
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಫಾರ್ಮ್ಯಾಟ್‌ನಲ್ಲಿ ಹಿಂದೆ ಬಳಸಿದ ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಕಾನೂನಾತ್ಮಕ ಹೆಸರನ್ನು ನಮೂದಿಸಿ: ಮೊದಲ ಮತ್ತು ಕೊನೆಯ ಹೆಸರು",
+      "note" : "Text for the previous used legal name input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name-label-text" : {
+      "value" : "ಹಿಂದಿನ ಕಾನೂನಾತ್ಮಕ ಪೂರ್ಣ ಹೆಸರು",
+      "note" : "Text for the previous used legal name input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಫಾರ್ಮ್ಯಾಟ್‌ನಲ್ಲಿ ಹಿಂದೆ ಬಳಸಿದ ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಕಾನೂನಾತ್ಮಕ ಹೆಸರನ್ನು ನಮೂದಿಸಿ: ಮೊದಲ ಮತ್ತು ಕೊನೆಯ ಹೆಸರು",
+      "note" : "Text for the previous used legal name 1 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name1-label-text" : {
+      "value" : "ಹಿಂದಿನ ಕಾನೂನಾತ್ಮಕ ಪೂರ್ಣ ಹೆಸರು (1)",
+      "note" : "Text for the previous used legal name 1 input label text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಫಾರ್ಮ್ಯಾಟ್‌ನಲ್ಲಿ ಹಿಂದೆ ಬಳಸಿದ ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಕಾನೂನಾತ್ಮಕ ಹೆಸರನ್ನು ನಮೂದಿಸಿ: ಮೊದಲ ಮತ್ತು ಕೊನೆಯ ಹೆಸರು",
+      "note" : "Text for the previous used legal name 2 input error text"
+    },
+    "BB-BGC-additional-bgc-previous-legal-name2-label-text" : {
+      "value" : "ಹಿಂದಿನ ಕಾನೂನಾತ್ಮಕ ಪೂರ್ಣ ಹೆಸರು (2)",
+      "note" : "Text for the previous used legal name 2 input label text"
+    },
+    "BB-BGC-additional-bgc-show-additional-previous-legal-names-button-text" : {
+      "value" : "ಇನ್ನಷ್ಟು ಹಿಂದಿನ ಹೆಸರುಗಳನ್ನು ಸೇರಿಸಿ/ತೋರಿಸಿ",
+      "note" : "Text for the button to show more previous legal names button text"
+    },
+    "BB-BGC-additional-previous-worked-at-Amazon-title-text" : {
+      "value" : "ನೀವು ಈ ಹಿಂದೆ Amazon ಕಟ್ಟಡದಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+      "note" : "Text for the form title that ask candidate if they had previously worked at Amazon"
+    },
+    "BB-BGC-additional-accept-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text for the accept previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-decline-previous-worked-at-Amazon-radio-label-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text for the decline previous worked at Amazon radio button label text"
+    },
+    "BB-BGC-additional-what-to-include-in-previous-Amazon-experience-form-title" : {
+      "value" : "ಯಾವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಕು",
+      "note" : "Text for the for the form title about what to include in previous Amazon experience"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text" : {
+      "value" : "ನೀವು ಈ ಹಿಂದೆ ಕೆಲಸ ಮಾಡಿದ Amazon ಕಟ್ಟಡವನ್ನು ಗುರುತಿಸಿ",
+      "note" : "Text for the most recent Amazon building input label text"
+    },
+    "BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text" : {
+      "value" : "ಮಾನ್ಯವಾದ Amazon ಕಟ್ಟಡವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the most recent Amazon building input error text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
+      "value" : "ಉದ್ಯೋಗದ ದಿನಾಂಕಗಳು - ಫ್ರೊಮ್/ಟು (MM/YY - MM/YY)",
+      "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
+      "value" : "ಮಾನ್ಯವಾದ Amazon ಕಟ್ಟಡವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
+    "BB-BGC-no-ssn-checkbox-label" : {
+      "value" : "ನನ್ನ ಬಳಿ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ ಇಲ್ಲ",
+      "note" : "Label for the no ssn checkbox"
+    },
+    "BB-BGC-no-ssn-modal-title" : {
+      "value" : "ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ (SSN) ಇಲ್ಲದೆಯೇ ಮುಂದುವರಿಯಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+      "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "ನೀವು SSN ಅನ್ನು ಹೊಂದಿದ್ದರೆ, ಅದನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ. ಹಾಗೆ ಮಾಡಲು ವಿಫಲವಾದರೆ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ವಿಳಂಬವನ್ನು ಉಂಟುಮಾಡಬಹುದು, ಇದು ನಿಮ್ಮ ಪ್ರಾರಂಭದ ದಿನಾಂಕವನ್ನು ಕಳೆದುಕೊಳ್ಳಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಆಯ್ಕೆಮಾಡಿದ ಶಿಫ್ಟ್ ಅನ್ನು ಕಳೆದುಕೊಳ್ಳಬಹುದು.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "ಮುಂದುವರಿಸುವ ಮೂಲಕ, ನಾನು SSN ಹೊಂದಿಲ್ಲ ಎಂದು ದೃಢೀಕರಿಸುತ್ತಿದ್ದೇನೆ.  ನಾನು ಆನ್‌ಬೋರ್ಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಅಥವಾ ಕೆಲಸದಲ್ಲಿರುವಾಗ ನನ್ನ SSN ಅನ್ನು ಬದಲಾಯಿಸಿದರೆ ಅಥವಾ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದರೆ, ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಲಾದಲ್ಲಿ, Amazon ನನ್ನ ಮೇಲೆ ಹಿನ್ನಲೆ ಪರಿಶೀಲನೆಯನ್ನು ನಡೆಸುತ್ತದೆ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-second-paragraph" : {
+      "value" : "ನನ್ನ SSN ನ ಯಾವುದೇ ಉದ್ದೇಶಪೂರ್ವಕ ತಪ್ಪು ನಿರೂಪಣೆಯನ್ನು Amazon ನಿಂದ ಪರಿಗಣಿಸಲಾಗುವುದು ಮತ್ತು ನನ್ನ ಉದ್ಯೋಗದ ಪ್ರಸ್ತಾಪವನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳಲು ಕಾರಣವಾಗಬಹುದು ಅಥವಾ ನಾನು ನೇಮಕಗೊಂಡರೆ, ನನ್ನ ಉದ್ಯೋಗವನ್ನು ಮುಕ್ತಾಯಗೊಳಿಸಬಹುದು ಎಂದು ನಾನು ಅಂಗೀಕರಿಸುತ್ತೇನೆ.",
+      "note" : "Content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-consent-checkbox" : {
+      "value" : "ಮೇಲಿನ ನಿಯಮಗಳನ್ನು ನಾನು ಓದಿದ್ದೇನೆ ಮತ್ತು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "consent checkbox in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-continue-button" : {
+      "value" : "ಮುಂದುವರಿಸಿ",
+      "note" : "continue button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-cancel-button" : {
+      "value" : "ರದ್ದುಮಾಡಿ",
+      "note" : "cancel button in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-national-id-number-disabled-placeholder" : {
+      "value" : "ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ ಲಭ್ಯವಿಲ್ಲ",
+      "note" : "Text display on national id number input when user check no ssn checkbox"
+    },
+    "BB-BGC-fcra-provide-eSignature-form-heading-text" : {
+      "value" : "ಇ-ಸಹಿಯನ್ನು ಒದಗಿಸಿ",
+      "note" : "Text for the fcra form heading text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-heading-title-text" : {
+      "value" : "ರಾಜ್ಯ ನಿರ್ದಿಷ್ಟ ಪ್ರಕಟಣೆಗಳು",
+      "note" : "Text for the non fcra State specific notices title text"
+    },
+    "BB-BGC-non-fcra-state-specific-notice-review-title-text" : {
+      "value" : "ಕೆಳಗಿನ ಅನ್ವಯವಾಗುವ ಸೂಚನೆ (ಗಳನ್ನು) ಪರಿಶೀಲಿಸಿ.",
+      "note" : "Text for the non fcra State specific notices review text"
+    },
+    "BB-BGC-non-fcra-esignature-certification-form-title" : {
+      "value" : "ಇಸಹಿ",
+      "note" : "Text for the non fcra e-signature certification title"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
+      "value" : "ಕೆಳಗಿನ ನನ್ನ ಸಹಿಯ ಮೂಲಕ, ನಾನು ಈ ಅನ್ಯಾಯದ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ದೃಢೀಕರಣ ಮತ್ತು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ದೃಢೀಕರಣದಲ್ಲಿನ ಎಲ್ಲಾ ಹೇಳಿಕೆಗಳನ್ನು ಓದಿದ್ದೇನೆ, ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಸ್ವೀಕರಿಸಿದ್ದೇನೆ ಎಂದು ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇನೆ. ಕೆಳಗಿನ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ವಿನಂತಿಸಿದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಅಂಗೀಕಾರವನ್ನು ಸೂಚಿಸಿ.",
+      "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
+      "value" : "ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ಇಸಹಿಯ ರೂಪದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ",
+      "note" : "Text for the non fcra acknowledgement and authorization input label text"
+    },
+    "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
+      "value" : "ಇಸಹಿಗಳು ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. ಪ್ರತಿ ಇಸಹಿಗೆ ಒಂದೇ ಪಠ್ಯವನ್ನು ಬಳಸಿ.",
+      "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-non-fcra-form-page-next-button-text" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the non fcra form page next button text"
+    },
+    "BB-BGC-non-fcra-applicable-notice-text" : {
+      "value" : "ಕೆಳಗಿನ ನನ್ನ ಇಸಹಿ ಮೂಲಕ, ನಾನು ಹೈಪರ್‌ಲಿಂಕ್‌ಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ಯಾವುದೇ ಅನ್ವಯವಾಗುವ ರಾಜ್ಯ ಸೂಚನೆಗಳನ್ನು ಓದಿದ್ದೇನೆ ಮತ್ತು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಎಂದು ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇನೆ.",
+      "note" : "Text for the non fcra for the applicable notice"
+    },
+    "BB-BGC-non-fcra-applicable-notice-signature-input-label-text" : {
+      "value" : "ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ಇಸಹಿಯ ರೂಪದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ",
+      "note" : "Text for the non fcra for the applicable notice signature input label text"
+    },
+    "BB-BGC-non-fcra-copy-of-bgc-request-radio-label-text" : {
+      "value" : "ನನ್ನ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯ ಉಚಿತ ನಕಲನ್ನು ನಾನು ಬಯಸುತ್ತೇನೆ",
+      "note" : "Text for the non fcra for request copy of bgc radio label text"
+    },
+    "BB-already-applied" : {
+      "value" : "ಈ ಕೆಲಸಕ್ಕಾಗಿ ನೀವು ಈಗಾಗಲೇ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿದ್ದೀರಿ ಮತ್ತು / ಅಥವಾ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ.",
+      "note" : "Text for aleady applied job text"
+    },
+    "BB-already-applied-description" : {
+      "value" : "ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮುಂದುವರಿಸಲು ಅಥವಾ ಅಪ್ಲಿಕೇಶನ್ ಮತ್ತು ಹೊಸ ನೇಮಕಾತಿ ವಿವರಗಳು ಮತ್ತು ನಿಮ್ಮ ಮುಂದಿನ ಹಂತಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ.",
+      "note" : "Text for aleady applied job description text"
+    },
+    "BB-already-applied-button-text" : {
+      "value" : "ಡ್ಯಾಶ್‍‌ಬೋರ್ಡ್‌ಗೆೆ ಹಿಂತಿರುಗಿ",
+      "note" : "Text for aleady applied job return to dashboard button text"
+    },
+    "BB-SelfId-disability-form-name-text" : {
+      "value" : "ನಮೂನೆ ಸಿಸಿ-305",
+      "note" : "Text for Self Identification form name"
+    },
+    "BB-SelfId-disability-form-control-number-text" : {
+      "value" : "OMB ನಿಯಂತ್ರಣ ಸಂಖ್ಯೆ 1250-0005",
+      "note" : "Text for Self Identification control number"
+    },
+    "BB-SelfId-disability-form-expiration-date-text" : {
+      "value" : "05/31/2023 ರಂದು ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
+      "note" : "Text for Self Identification expiration date"
+    },
+    "BB-SelfId-disability-form-why-this-form-header-text" : {
+      "value" : "ಈ ಫಾರ್ಮ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ನಿಮ್ಮನ್ನು ಏಕೆ ಕೇಳಲಾಗುತ್ತದೆ?",
+      "note" : "Text for why asked this form header text"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph1-text" : {
+      "value" : "ನಾವು ಫೆಡರಲ್ ಗುತ್ತಿಗೆದಾರ ಅಥವಾ ಉಪಗುತ್ತಿಗೆದಾರರಾಗಿದ್ದೇವೆ, ಇದು ವಿಕಲಾಂಗತೆ ಹೊಂದಿರುವ ಅರ್ಹ ವ್ಯಕ್ತಿಗಳಿಗೆ ಕಾನೂನಿನ ಮೂಲಕ ಸಮಾನ ಉದ್ಯೋಗ ಅವಕಾಶವನ್ನು ಒದಗಿಸುವುದು ಅಗತ್ಯವಿದೆ. ನಮ್ಮ ಕಾರ್ಯಪಡೆಯಲ್ಲಿ ಕನಿಷ್ಠ 7% ರಷ್ಟು ವಿಕಲಾಂಗ ವ್ಯಕ್ತಿಗಳಾಗಿರಲು ನಾವು ನಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಅಳೆಯುವ ಅಗತ್ಯವಿದೆ. ಇದನ್ನು ಮಾಡಲು, ಅರ್ಜಿದಾರರು ಮತ್ತು ಉದ್ಯೋಗಿಗಳಿಗೆ ಅವರು ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿದ್ದರೆ ಅಥವಾ ಇದುವರೆಗೆ ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿದ್ದರೆ ನಾವು ಕೇಳಬೇಕು. ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಅಶಕ್ತರಾಗಬಹುದು ಎಂಬ ಕಾರಣದಿಂದ, ಕನಿಷ್ಠ ಐದು ವರ್ಷಗಳಿಗೊಮ್ಮೆ ತಮ್ಮ ಮಾಹಿತಿಯನ್ನು ನವೀಕರಿಸಲು ನಮ್ಮ ಎಲ್ಲಾ ಉದ್ಯೋಗಿಗಳಿಗೆ ನಾವು ಕೇಳುತ್ತೇವೆ.",
+      "note" : "Paragraph one of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-why-this-form-content-paragraph2-text" : {
+      "value" : "ಅಂಗವೈಕಲ್ಯ ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಯಾಗಿ ನಿಮ್ಮನ್ನು ಗುರುತಿಸಿಕೊಳ್ಳುವುದು ಸ್ವಯಂಪ್ರೇರಿತವಾಗಿದೆ ಮತ್ತು ನೀವು ಹಾಗೆ ಮಾಡಲು ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳುತ್ತೀರಿ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ. ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಗೌಪ್ಯವಾಗಿ ಇರಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಆಯ್ಕೆ ಅಧಿಕಾರಿ ಅಥವಾ ಸಿಬ್ಬಂದಿ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಭಾಗಿಯಾಗಿರುವ ಯಾರಾದರೂ ನೋಡುವುದಿಲ್ಲ. ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡುವುದರಿಂದ ನೀವು ಹಿಂದೆ ಸ್ವಯಂ-ಗುರುತಿಸಿದ್ದರೂ ಅಥವಾ ಇಲ್ಲದಿದ್ದರೂ ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ ಋಣಾತ್ಮಕ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ. ಪುನರ್ವಸತಿ ಕಾಯಿದೆಯ ಸೆಕ್ಷನ್ 503 ರ ಅಡಿಯಲ್ಲಿ ಈ ಫಾರ್ಮ್ ಅಥವಾ ಫೆಡರಲ್ ಗುತ್ತಿಗೆದಾರರ ಸಮಾನ ಉದ್ಯೋಗದ ಜವಾಬ್ದಾರಿಗಳ ಕುರಿತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ, ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್‌ಗೆ ಭೇಟಿ ನೀಡಿ. ಫೆಡರಲ್ ಒಪ್ಪಂದದ ಅನುಸರಣೆ ಕಾರ್ಯಕ್ರಮಗಳ (OFCCP) ವೆಬ್‌ಸೈಟ್‌ನ ಕಾರ್ಮಿಕ ಇಲಾಖೆಯ ಕಚೇರಿ <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.",
+      "note" : "Paragraph two of the Text that explains why candidate is asked to fill disability form"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-header-text" : {
+      "value" : "ನನಗೆ ಅಂಗವೈಕಲ್ಯ ಇದ್ದರೆ ತಿಳಿಯುವುದು ಹೇಗೆ?",
+      "note" : "Text for how I know I have disability header"
+    },
+    "BB-SelfId-disability-form-how-know-have-disability-content-text" : {
+      "value" : "ಒಂದು ಪ್ರಮುಖ ಜೀವನ ಚಟುವಟಿಕೆಯನ್ನು ಗಣನೀಯವಾಗಿ ಮಿತಿಗೊಳಿಸುತ್ತದೆ, ಅಥವಾ ಅಂತಹ ತೊಂದರೆ ಅಥವಾ ವೈದ್ಯಕೀಯ ಸ್ಥಿತಿಯ ಇತಿಹಾಸ ಅಥವಾ ದಾಖಲೆಯೊಂದನ್ನು ನೀವು ಹೊಂದಿದ್ದರೆ, ದೈಹಿಕ ಅಥವಾ ಮಾನಸಿಕ ತೊಂದರೆ ಅಥವಾ ವೈದ್ಯಕೀಯ ಸ್ಥಿತಿಯನ್ನು ಹೊಂದಿದ್ದರೆ ನಿಮಗೆ ಅಂಗವೈಕಲ್ಯ ಉಂಟಾಗಿದೆ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.",
+      "note" : "Text for how I know I have disability content"
+    },
+    "BB-SelfId-disability-form-disability-scope-list-header-text" : {
+      "value" : "ವಿಕಲಾಂಗತೆಗಳು ಸೇರಿವೆ, ಆದರೆ ಇವುಗಳಿಗೆ ಸೀಮಿತವಾಗಿಲ್ಲ:.",
+      "note" : "Text for the disability scope/type list header text"
+    },
+    "BB-SelfId-disability-form-disability-item-autism-text" : {
+      "value" : "ಆಟಿಸಂ",
+      "note" : "Text for the disability item: autism"
+    },
+    "BB-SelfId-disability-form-disability-item-autoimmune-disorder-text" : {
+      "value" : "ಆಟೋಇಮ್ಯೂನ್ ಅಸ್ವಸ್ಥತೆ",
+      "note" : "Text for the disability item: Autoimmune disorder"
+    },
+    "BB-SelfId-disability-form-disability-item-blind-or-low-vision-text" : {
+      "value" : "ಕುರುಡು ಅಥವಾ ಕಡಿಮೆ ದೃಷ್ಟಿ ಸಾಮರ್ಥ್ಯ",
+      "note" : "Text the disability item: Blind or low vision"
+    },
+    "BB-SelfId-disability-form-disability-item-cancer-text" : {
+      "value" : "ಕ್ಯಾನ್ಸರ್",
+      "note" : "Text for the disability item: Cancer text"
+    },
+    "BB-SelfId-disability-form-disability-item-heart-disease-text" : {
+      "value" : "ಹೃದಯರಕ್ತನಾಳದ ಅಥವಾ ಹೃದ್ರೋಗ",
+      "note" : "Text for the disability item: Cardiovascular or heart disease"
+    },
+    "BB-SelfId-disability-form-disability-item-celiac-disease-text" : {
+      "value" : "ಉದರದ ಕಾಯಿಲೆ",
+      "note" : "Text for the disability item: Celiac disease"
+    },
+    "BB-SelfId-disability-form-disability-item-cerebral-palsy-text" : {
+      "value" : "ಸೆರೆಬ್ರಲ್ ಪಾಲ್ಸಿ",
+      "note" : "Text for the disability item: Cerebral palsy"
+    },
+    "BB-SelfId-disability-form-disability-item-hearing-capacity-text" : {
+      "value" : "ಕಿವುಡ ಅಥವಾ ಕೇಳುವುದು ಕಷ್ಟ",
+      "note" : "Text for the disability item: Deaf or hard of hearing"
+    },
+    "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text" : {
+      "value" : "ಖಿನ್ನತೆ ಅಥವಾ ಆತಂಕ",
+      "note" : "Text for the disability item: Depression or anxiety"
+    },
+    "BB-SelfId-disability-form-disability-item-diabetes-text" : {
+      "value" : "ಮಧುಮೇಹ",
+      "note" : "Text for the disability item: Diabetes"
+    },
+    "BB-SelfId-disability-form-disability-item-epilepsy-text" : {
+      "value" : "ಮೂರ್ಛೆರೋಗ",
+      "note" : "Text for the disability item: Epilepsy"
+    },
+    "BB-SelfId-disability-form-disability-item-gastrointestinal-disorders-text" : {
+      "value" : "ಜಠರಗರುಳಿನ ಅಸ್ವಸ್ಥತೆಗಳು, ಉದಾಹರಣೆಗೆ, ಕ್ರೋನ್ಸ್ ಕಾಯಿಲೆ, ಅಥವಾ ಕೆರಳಿಸುವ ಕರುಳಿನ ಸಹಲಕ್ಷಣಗಳು",
+      "note" : "Text for the disability item: Gastrointestinal disorders, for example, Crohn's Disease, or irritable bowel syndrome"
+    },
+    "BB-SelfId-disability-form-disability-item-intellectual-disability-text" : {
+      "value" : "ಬೌದ್ಧಿಕ ಅಸಾಮರ್ಥ್ಯ",
+      "note" : "Text for the disability item: Intellectual disability"
+    },
+    "BB-SelfId-disability-form-disability-item-missing-limb-text" : {
+      "value" : "ಕಳೆದುಕೊಂಡ ಅಂಗಗಳು ಅಥವಾ ಭಾಗಶಃ ಕಳೆದುಕೊಂಡ ಅಂಗಗಳು",
+      "note" : "Text for the disability item:Missing limbs or partially missing limbs"
+    },
+    "BB-SelfId-disability-form-disability-item-nervous-system-condition-text" : {
+      "value" : "ಉದಾಹರಣೆಗೆ ನರಮಂಡಲದ ಸ್ಥಿತಿ, ಮೈಗ್ರೇನ್ ಹೀ..., ಪಾರ್ಕಿನ್ಸನ್ ಕಾಯಿಲೆ, ಅಥವಾ ಮಲ್ಟಿಪಲ್ ಸ್ಕ್ಲೆರೋಸಿಸ್ (MS)",
+      "note" : "Text for the disability item:Nervous system condition for example, migraine he…, Parkinson’s disease, or Multiple sclerosis (MS)"
+    },
+    "BB-SelfId-disability-form-disability-item-psychiatric-condition-text" : {
+      "value" : "ಮನೋವೈದ್ಯಕೀಯ ಸ್ಥಿತಿ, ಉದಾಹರಣೆಗೆ, ಬೈಪೋಲಾರ್ ಡಿಸಾರ್ಡರ್, ಸ್ಕಿಜೋಫ್ರೇನಿಯಾ, PTSD, ಅಥವಾ ಪ್ರಮುಖ ಖಿನ್ನತೆ",
+      "note" : "Text for the disability item: Psychiatric condition, for example, bipolar disorder, schizophrenia, PTSD, or major depression"
+    },
+    "BB-SelfId-disability-form-card-title-text" : {
+      "value" : "ಅಂಗವೈಕಲ್ಯದ ಸ್ವಯಂಪ್ರೇರಿತ ಗುರುತಿಸುವಿಕೆ",
+      "note" : "Text for the disability form card title"
+    },
+    "BB-SelfId-form-continue-button-text" : {
+      "value" : "ಮುಂದುವರಿಸಿ",
+      "note" : "Text for the Self Identification page form continue button text"
+    },
+    "BB-SelfId-disability-form-submit-button-text" : {
+      "value" : "ಸಲ್ಲಿಸಿ",
+      "note" : "Text for the submit disability form submit button text"
+    },
+    "BB-SelfId-disability-form-select-disability-checkbox-label-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನಲ್ಲಿನ ಒಂದು ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತುಹಾಕಿ",
+      "note" : "Text for the disability selection checkbox label text"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-yes-text" : {
+      "value" : "ಹೌದು, ನನಗೆ ಅಂಗವೈಕಲ್ಯವಿದೆ, ಅಥವಾ ಅಂಗವೈಕಲ್ಯ ಹೊಂದಿರುವ ಇತಿಹಾಸ/ದಾಖಲೆ ಇದೆ",
+      "note" : "Text for the disability selection checkbox item: YES"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-no-text" : {
+      "value" : "ಇಲ್ಲ, ನನಗೆ ಅಂಗವೈಕಲ್ಯತೆಯಿಲ್ಲ ಅಥವಾ ಅಂತಹ ಯಾವುದೇ ಇತಿಹಾಸ/ದಾಖಲೆಗಳಿಲ್ಲ",
+      "note" : "Text for the disability selection checkbox item: NO"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-item-do-wish-to-answer-text" : {
+      "value" : "ನಾನು ಉತ್ತರಿಸಲು ಇಚ್ಚಿಸುವುದಿಲ್ಲ",
+      "note" : "Text for the disability selection checkbox item: I Don’t Wish To Answer"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-header-text" : {
+      "value" : "ಸಾರ್ವಜನಿಕ ಹೊರೆ ಹೇಳಿಕೆ",
+      "note" : "Text for the disability form Public burden statement header text"
+    },
+    "BB-SelfId-disability-form-disability-public-burden-content-text" : {
+      "value" : "1995 ರ ಪೇಪರ್ ಕಡಿಮೆ ಮಾಡುವ ಕಾಯ್ದೆಯ ಪ್ರಕಾರ ಅಂತಹ ಸಂಗ್ರಹವು ಒಂದು ಮಾನ್ಯವಾದ ಓಮ್ಬ್ ಕಂಟ್ರೋಲ್ ಸಂಖ್ಯೆಯನ್ನು ಪ್ರದರ್ಶಿಸದ ಹೊರತು ಯಾವುದೇ ವ್ಯಕ್ತಿಗಳು ಮಾಹಿತಿಯ ಸಂಗ್ರಹಕ್ಕೆ ಪ್ರತಿಕ್ರಿಯಿಸುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ. ಈ ಸಮೀಕ್ಷೆ ಪೂರ್ಣಗೊಳ್ಳಲು ಸುಮಾರು 5 ನಿಮಿಷಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು.",
+      "note" : "Text for the disability form Public burden statement content text"
+    },
+    "BB-SelfId-equal-opportunity-form-title-text" : {
+      "value" : "ಸ್ವಯಂಪ್ರೇರಿತ ಸಮಾನ ಅವಕಾಶ ಸ್ವಯಂ-ಗುರುತಿಸುವಿಕೆ ನಮೂನೆ",
+      "note" : "Text for the equal opportunity form title"
+    },
+    "BB-SelfId-equal-opportunity-form-statement-text" : {
+      "value" : "Amazon ಎಲ್ಲಾ ರೀತಿಯ ವೈವಿಧ್ಯತೆಯನ್ನು ಗೌರವಿಸುತ್ತದೆ ಮತ್ತು ಇದು ಕೆಲವು ತಾರತಮ್ಯ ರಹಿತ ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಕ್ರಿಯೆ, ದಾಖಲೆ ಇರಿಸುವುದು ಮತ್ತು ವರದಿ ಮಾಡುವ ಅವಶ್ಯಕತೆಗಳಿಗೆ ಒಳಪಡುತ್ತದೆ ಮತ್ತು ಇದಕ್ಕಾಗಿ ನಮಗೆ ಅಭ್ಯರ್ಥಿಗಳು ಮತ್ತು ನೌಕರರು ತಮ್ಮ ಲಿಂಗ ಮತ್ತು ಜಾತಿ/ಜನಾಂಗವನ್ನು ಸ್ವಯಂಪ್ರೇರಣೆಯಿಂದ ಗುರುತಿಸುವಂತೆ ಆಹ್ವಾನಿಸುವ ಅಗತ್ಯವಿರುತ್ತದೆ. ಈ ಮಾಹಿತಿಯ ಸಲ್ಲಿಕೆ ಸ್ವಯಂಪ್ರೇರಿತವಾಗಿದೆ ಮತ್ತು ಅದನ್ನು ಒದಗಿಸಲು ನಿರಾಕರಿಸುವುದರಿಂದ ನಿಮಗೆ ಯಾವುದೇ ಪ್ರತಿಕೂಲ ಪರಿಸ್ಥಿತಿ ಉಂಟಾಗುವುದಿಲ್ಲ. ಪಡೆದ ಮಾಹಿತಿಯನ್ನು ಗೌಪ್ಯವಾಗಿಡಲಾಗುತ್ತದೆ ಮತ್ತು ನಾಗರಿಕ ಹಕ್ಕುಗಳ ಜಾರಿ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಫೆಡರಲ್ ಸರ್ಕಾರಕ್ಕೆ ಮಾಹಿತಿಯನ್ನು ಸಂಕ್ಷಿಪ್ತವಾಗಿ ಮತ್ತು ವರದಿ ಮಾಡಬೇಕಾದ ಅಗತ್ಯಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ಅನ್ವಯವಾಗುವ ಫೆಡರಲ್ ಕಾನೂನುಗಳು, ಕಾರ್ಯನಿರ್ವಾಹಕ ಆದೇಶಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳ ಅನುಸಾರವಾಗಿ ಮಾತ್ರ ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಈ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಲಿಂಗ ಅಥವಾ ಜಾತಿ/ಜನಾಂಗವನ್ನು ಸ್ವಯಂ ಗುರುತಿಸದಿರಲು ನೀವು ಬಯಸಿದಲ್ಲಿ,ಹೊರ ನೋಟದಿಂದ ಮತ್ತು/ಅಥವಾ ಲಭ್ಯವಿರುವ ಇತರ ಮಾಹಿತಿಯ ಮೂಲಕ ನೌಕರರ ಈ ಮಾಹಿತಿಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಫೆಡರಲ್ ಸರ್ಕಾರ ನಮಗೆ ತಿಳಿಸಿರುತ್ತದೆ.",
+      "note" : "Text for the equal opportunity form statement text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-label-text" : {
+      "value" : "ನಿಮ್ಮ ಲಿಂಗ ಯಾವುದು?",
+      "note" : "Text for the equal opportunity form : gender label text"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-male-text" : {
+      "value" : "ಪುರುಷ",
+      "note" : "Text for the equal opportunity form gender option: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-female-text" : {
+      "value" : "ಮಹಿಳೆ",
+      "note" : "Text for the equal opportunity form gender option: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text" : {
+      "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
+      "note" : "Text for the equal opportunity form gender option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-label-text" : {
+      "value" : "ನಿಮ್ಮ ಜನಾಂಗ/ಜನಾಂಗೀಯ ಹಿನ್ನೆಲೆಯೇನು?",
+      "note" : "Text for the equal opportunity form : ethnicity label text"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-title-text" : {
+      "value" : "ಅಮೇರಿಕನ್ ಇಂಡಿಯನ್/ಅಲಾಸ್ಕ ನಿವಾಸಿ (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಅಲ್ಲ)",
+      "note" : "Text for the equal opportunity form ethinicity option title: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-american-details-text" : {
+      "value" : "ಉತ್ತರ ಮತ್ತು ದಕ್ಷಿಣ ಅಮೆರಿಕದ ಯಾವುದೇ ಮೂಲ ಜನರಲ್ಲಿ (ಮಧ್ಯ ಅಮೇರಿಕಾ ಸೇರಿದಂತೆ) ಮೂಲವನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು ಮತ್ತು ಬುಡಕಟ್ಟು ಜನಾಂಗದವರ ಸಂಬಂಧ ಅಥವಾ ಸಮುದಾಯದ ಬಾಂಧವ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳುವ ವ್ಯಕ್ತಿಗಳು",
+      "note" : "Text for the equal opportunity form ethinicity option details: American Indian/Alaska Native"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text" : {
+      "value" : "ಏಶಿಯನ್ (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಅಲ್ಲ)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-Asian-details-text" : {
+      "value" : "ದೂರದ ಪೂರ್ವ, ಆಗ್ನೇಯ ಏಷ್ಯಾದ ಯಾವುದೇ ಮೂಲ ಪ್ರಜಾತಿಗಳಲ್ಲಿ ಅಥವಾ ಭಾರತೀಯ ಉಪಖಂಡದ, ಉದಾಹರಣೆಗೆ ಕಾಂಬೋಡಿಯಾ, ಚೀನಾ, ಭಾರತ, ಜಪಾನ್, ಕೊರಿಯಾ, ಮಲೇಷಿಯಾ, ಪಾಕಿಸ್ತಾನ, ಫಿಲಿಪ್ಪೈನ್ಸ್ ದ್ವೀಪಗಳು, ಥೈಲ್ಯಾಂಡ್ ಮತ್ತು ವಿಯೆಟ್ನಾಂಗಳಲ್ಲಿ ಮೂಲವನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು.",
+      "note" : "Text for the equal opportunity form ethinicity option details: Asian (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-title-text" : {
+      "value" : "ಕಪ್ಪು/ಆಫ್ರಿಕನ್ ಅಮೇರಿಕನ್ (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಅಲ್ಲ)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-black-or-african-details-text" : {
+      "value" : "ಆಫ್ರಿಕಾದ ಯಾವುದೇ ಕಪ್ಪು ಜನಾಂಗೀಯ ಗುಂಪಿನ ಮೂಲವನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು",
+      "note" : "Text for the equal opportunity form ethinicity option details: Black/African American"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text" : {
+      "value" : "ಹಿಸ್ಪಾನಿಕ್/ಲ್ಯಾಟಿನೋ",
+      "note" : "Text for the equal opportunity form ethinicity option title: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-details-text" : {
+      "value" : "ಕ್ಯೂಬಾ, ಮೆಕ್ಸಿಕನ್, ಪ್ಯುರ್ಟೊ ರಿಕನ್, ದಕ್ಷಿಣ ಅಥವಾ ಮಧ್ಯ ಅಮೇರಿಕದ ವ್ಯಕ್ತಿಗಳು ಅಥವಾ ಜನಾಂಗವನ್ನು ಲೆಕ್ಕಿಸದೆ ಇತರ ಸ್ಪ್ಯಾನಿಷ್ ಸಂಸ್ಕೃತಿ ಅಥವಾ ಮೂಲದ ವ್ಯಕ್ತಿಗಳು",
+      "note" : "Text for the equal opportunity form ethinicity option details: Hispanic/Latino"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text" : {
+      "value" : "ನೇಟಿವ್ ಹವಾಯಿಯನ್/ಇತರ ಪೆಸಿಫಿಕ್ ಇಸ್ಲ್ಯಾಂಡರ್ (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಅಲ್ಲ)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-details-text" : {
+      "value" : "ಹವಾಯಿ, ಗುವಾಮ್, ಸಮೋವಾ, ಅಥವಾ ಇತರ ಪೆಸಿಫಿಕ್ ದ್ವೀಪಗಳ ಯಾವುದೇ ಜನಾಂಗೀಯ ಮೂಲವನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳು",
+      "note" : "Text for the equal opportunity form ethinicity option details: Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text" : {
+      "value" : "ಬಿಳಿಯ (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಅಲ್ಲ)",
+      "note" : "Text for the equal opportunity form ethinicity option title: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-white-details-text" : {
+      "value" : "ಮಧ್ಯಪ್ರಾಚ್ಯ ಅಥವಾ ಉತ್ತರ ಆಫ್ರಿಕಾದ ಯುರೋಪ್ ನ ಯಾವುದೇ ಮೂಲ ಪ್ರಜಾತಿಗಳಲ್ಲಿ ಹುಟ್ಟಿದ ವ್ಯಕ್ತಿಗಳು",
+      "note" : "Text for the equal opportunity form ethinicity option details: White (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text" : {
+      "value" : "ಎರಡು ಅಥವಾ ಹೆಚ್ಚು ಜನಾಂಗಗಳು (ಹಿಸ್ಪಾನಿಕ್ ಅಥವಾ ಲ್ಯಾಟಿನೋ ಹೊರತು)",
+      "note" : "Text for the equal opportunity form ethinicity option title: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-details-text" : {
+      "value" : "ಕೆಳಗಿನ ಐದು ಜನಾಂಗಗಳಲ್ಲಿ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಜನರೊಂದಿಗೆ ಗುರುತಿಸುವ ಹಿಸ್ಪಾನಿಕ್ ಅಲ್ಲದ ವ್ಯಕ್ತಿಗಳು: (1) ಬಿಳಿ, (2) ಕಪ್ಪು, (3) ಏಷ್ಯನ್, (4) ಸ್ಥಳೀಯ ಹವಾಯಿಯನ್/ಇತರೆ ಪೆಸಿಫಿಕ್ ಐಲ್ಯಾಂಡರ್, (5) ಅಮೇರಿಕನ್ ಇಂಡಿಯನ್/ಅಲಾಸ್ಕಾ ಸ್ಥಳೀಯ",
+      "note" : "Text for the equal opportunity form ethinicity option details: Two or more Races (not Hispanic or Latino)"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text" : {
+      "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
+      "note" : "Text for the equal opportunity form ethinicity option title: I choose not to Self-Identify"
+    },
+    "BB-SelfId-equal-opportunity-form-ethinicity-next-button-text" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the equal opportunity form ethinicity next button"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph1-text" : {
+      "value" : "Amazon ನಲ್ಲಿ, ಸಾವಿರಾರು ಅನುಭವಿಗಳು ಮತ್ತು ಮಿಲಿಟರಿ ಸಂಗಾತಿಗಳು ಹೊಸತನವನ್ನು ಹೆಚ್ಚಿಸುತ್ತಿದ್ದಾರೆ ಮತ್ತು ಗ್ರಾಹಕರ ಅನುಭವದ ಗಡಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತಿದ್ದಾರೆ. ದೈನಂದಿನ ಆಧಾರದ ಮೇಲೆ, ಮಿಲಿಟರಿ ಹಿನ್ನೆಲೆ ಹೊಂದಿರುವವರು ತಮ್ಮ ಜ್ಞಾನ, ಕೌಶಲ್ಯ ಮತ್ತು ನಾಯಕತ್ವದ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ವಿವಿಧ ವೃತ್ತಿಗಳಲ್ಲಿ ಅನ್ವಯಿಸಲು ಸಮರ್ಥರಾಗಿದ್ದಾರೆ – ಇದು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಬದಲಾವಣೆಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ಈ ಕಾರಣಗಳಿಂದಾಗಿ ನಾವು ವೆಟರನ್ಸ್ ಮತ್ತು ಮಿಲಿಟರಿ ಸ್ಪೌಸ್ ಗಳ ನೇಮಕ ಮಾಡುವುದನ್ನು ಸಕ್ರಿಯವಾಗಿ ಅನುಸರಿಸಿ ಹೋಗುತ್ತೇವೆ.",
+      "note" : "Text for the veteran status statement paragraph 1 text"
+    },
+    "BB-SelfId-veteran-status-form-statement-paragraph2-text" : {
+      "value" : "Amazon ನಲ್ಲಿ, ಸಾವಿರಾರು ಅನುಭವಿಗಳು ಮತ್ತು ಮಿಲಿಟರಿ ಸಂಗಾತಿಗಳು ಹೊಸತನವನ್ನು ಹೆಚ್ಚಿಸುತ್ತಿದ್ದಾರೆ ಮತ್ತು ಗ್ರಾಹಕರ ಅನುಭವದ ಗಡಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತಿದ್ದಾರೆ. ದೈನಂದಿನ ಆಧಾರದ ಮೇಲೆ, ಮಿಲಿಟರಿ ಹಿನ್ನೆಲೆ ಹೊಂದಿರುವವರು ತಮ್ಮ ಜ್ಞಾನ, ಕೌಶಲ್ಯ ಮತ್ತು ನಾಯಕತ್ವದ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ವಿವಿಧ ವೃತ್ತಿಗಳಲ್ಲಿ ಅನ್ವಯಿಸಲು ಸಮರ್ಥರಾಗಿದ್ದಾರೆ – ಇದು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಬದಲಾವಣೆಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ಈ ಕಾರಣಗಳಿಂದಾಗಿ ನಾವು ವೆಟರನ್ಸ್ ಮತ್ತು ಮಿಲಿಟರಿ ಸ್ಪೌಸ್ ಗಳ ನೇಮಕ ಮಾಡುವುದನ್ನು ಸಕ್ರಿಯವಾಗಿ ಅನುಸರಿಸಿ ಹೋಗುತ್ತೇವೆ.",
+      "note" : "Text for the veteran status statement  paragraph 2 text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-label-text" : {
+      "value" : "ನೀವು ಒಬ್ಬ ನುರಿತರೆ?",
+      "note" : "Text for the equal opportunity form : veteran status label text"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text for the equal opportunity form veteran status item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text for the equal opportunity form veteran status item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text" : {
+      "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
+      "note" : "Text for the equal opportunity form veteran status item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-label-text" : {
+      "value" : "ನೀವು ಸೈನ್ಯದಲ್ಲಿರುವವರ ಸಂಗಾತಿಯಾ?",
+      "note" : "Text for the equal opportunity form : military spouse label text"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-yes-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text for the equal opportunity form military-spouse item: YES"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-no-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text for the equal opportunity form military-spouse item: NO"
+    },
+    "BB-SelfId-equal-opportunity-form-military-spouse-option-choose-not-to-identify-text" : {
+      "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
+      "note" : "Text for the equal opportunity form military-spouse item: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-statement-text" : {
+      "value" : "2002 ರ ವೆಟರನ್ಸ್ ಆಕ್ಟ್ <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA) ಯಿಂದ ತಿದ್ದುಪಡಿ ಮಾಡಲಾದ ವಿಯೆಟ್ನಾಂ ಎರಾ ವೆಟರನ್ಸ್ ಮರುಹೊಂದಾಣಿಕೆ ಸಹಾಯ ಕಾಯಿದೆ 1974 ಗೆ Amazon ಫೆಡರಲ್ ಸರ್ಕಾರಿ ಗುತ್ತಿಗೆದಾರರಾಗಿದ್ದು, ಸರ್ಕಾರಿ ಗುತ್ತಿಗೆದಾರರು ಉದ್ಯೋಗವನ್ನು ನೇಮಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಉದ್ಯೋಗದಲ್ಲಿ ಮುನ್ನಡೆಯಲು ದೃಢವಾದ ಕ್ರಮವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕಾಗುತ್ತದೆ. (1) ಅಂಗವಿಕಲ ಅನುಭವಿಗಳು; (2) ಇತ್ತೀಚೆಗೆ ಬೇರ್ಪಟ್ಟ ಅನುಭವಿಗಳು; (3) ಸಕ್ರಿಯ ಕರ್ತವ್ಯ ಯುದ್ಧಕಾಲದ ಅಥವಾ ಪ್ರಚಾರ ಬ್ಯಾಡ್ಜ್ ವೆಟರನ್ಸ್; ಮತ್ತು (4) ಸಶಸ್ತ್ರ ಪಡೆಗಳ ಸೇವಾ ಪದಕದ ಪರಿಣತರು. ನಿಮ್ಮ ರಕ್ಷಿತ ಹಿರಿಯ ಸ್ಥಾನಮಾನವನ್ನು ಸ್ವಯಂ ಗುರುತಿಸುವ ಈ ಕೆಳಕಂಡ ಆಹ್ವಾನವನ್ನು ಕಲಮು 4212 ರ ಪ್ರಕಾರ ಮಾಡಲಾಗಿದೆ. ಈ ಮಾಹಿತಿಯ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯು ಸಂಪೂರ್ಣವಾಗಿ ಸ್ವಯಂಪ್ರೇರಿತವಾಗಿದೆ ಮತ್ತು ಅದನ್ನು ಒದಗಿಸಲು ನಿರಾಕರಿಸುವುದು ನಿಮಗೆ ಯಾವುದೇ ಪ್ರತಿಕೂಲ ಪರಿಣಾಮಕ್ಕೆ ಒಳಪಡುವುದಿಲ್ಲ.",
+      "note" : "Text for the equal opportunity form protected veteran statement"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text" : {
+      "value" : "<b>ಸಂರಕ್ಷಿತ ಅನುಭವಿ</b> ಈ ಕೆಳಗಿನವುಗಳಲ್ಲಿ ಯಾವುದಾದರೂ:",
+      "note" : "Text for the title of protected veteran meaning list"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text" : {
+      "value" : "<b>ಅಂಗವಿಕಲ ಅನುಭವಿ</b>: ಅಮೆರಿಕಾ ಮಿಲಿಟರಿ ಭೂ, ಜಲ ಅಥವಾ ವಾಯು ಸೇವೆಯ ವೆಟರನ್ ಆಗಿರುವ, ವೆಟರನ್ ಅಫೇರ್ಸ್ ಕಾರ್ಯದರ್ಶಿಯಿಂದ ಜಾರಿಗೊಳಿಸಲಾದ ಕಾನೂನಿನ ಅಡಿಯಲ್ಲಿ ಪರಿಹಾರಕ್ಕೆ ಅರ್ಹನಾಗಿರುವ; (ಅಥವಾ ಮಿಲಿಟರಿ ನಿವೃತ್ತ ವೇತನವನ್ನು ಸ್ವೀಕರಿಸುತ್ತಿರುವ ಆದರೆ ಪರಿಹಾರಕ್ಕೆ ಅರ್ಹರಾಗಿರುವ); ಅಥವಾ ಅಂಗವೈಕಲ್ಯ ಕಾರಣದಿಂದಾಗಿ ಸಕ್ರಿಯ ಕರ್ತವ್ಯದಿಂದ ಬಿಡುಗಡೆಗೊಂಡ ಅಥವಾ ನಿವೃತ್ತಿ ಪಡೆದ ವ್ಯಕ್ತಿ.",
+      "note" : "Text for the title of protected veteran meaning item: Disabled Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-recently-removed-veteran-item-text" : {
+      "value" : "</b>:US ಮಿಲಿಟರಿ, ನೆಲ, ನೌಕಾ ಅಥವಾ ವಾಯು ಸೇವೆಯಲ್ಲಿ ಸಕ್ರಿಯ ಕರ್ತವ್ಯದಿಂದ ಬಿಡುಗಡೆ ಅಥವಾ ಅಂತಹ ಅನುಭವಿಗಳ ಬಿಡುಗಡೆಯ ದಿನಾಂಕದಿಂದ ಪ್ರಾರಂಭವಾಗುವ ಮೂರು ವರ್ಷಗಳ ಅವಧಿಯಲ್ಲಿ ಯಾವುದೇ ಅನುಭವಿ.",
+      "note" : "Text for the title of protected veteran meaning item: Recently Separated Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-active-duty-wartime-item-text" : {
+      "value" : "<b>ಆಕ್ಟಿವ್ ಡ್ಯೂಟಿ ವಾರ್ಟೈಮ್ ಅಥವಾ ಕ್ಯಾಂಪೇನ್ ಬ್ಯಾಡ್ಜ್ ಅನುಭವಿ</b>: ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ ಬ್ಯಾಡ್ಜ್‌ನಲ್ಲಿ ಸಕ್ರಿಯ ಕರ್ತವ್ಯದಲ್ಲಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ ಅನುಭವಿ ರಕ್ಷಣಾ ಇಲಾಖೆಯಿಂದ ನಿರ್ವಹಿಸಲ್ಪಡುವ ಕಾನೂನುಗಳ ಅಡಿಯಲ್ಲಿ ಅಧಿಕಾರ ಪಡೆದಿದ್ದಾರೆ.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-definition-armed-force-medal-veteran-item-text" : {
+      "value" : "<b>ಸಶಸ್ತ್ರ ಪಡೆಗಳ ಸೇವಾ ಪದಕ ಅನುಭವಿ</b>: ಒಬ್ಬ ಅನುಭವಿ, ಯುಎಸ್ ಮಿಲಿಟರಿ, ನೆಲ, ನೌಕಾ ಅಥವಾ ವಾಯು ಸೇವೆಯಲ್ಲಿ ಸಕ್ರಿಯ ಕರ್ತವ್ಯದಲ್ಲಿ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿರುವಾಗ, ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ ಮಿಲಿಟರಿ ಕಾರ್ಯಾಚರಣೆಯಲ್ಲಿ ಭಾಗವಹಿಸಿದರು, ಇದಕ್ಕಾಗಿ ಸಶಸ್ತ್ರ ಪಡೆಗಳ ಸೇವಾ ಪದಕವನ್ನು <a href='https://www.federalregister.gov/documents/1996/01/18/96-622/establishing-the-armed-forces-service-medal' target='_blank' rel='noopener noreferrer'>ಕಾರ್ಯನಿರ್ವಾಹಕ ಆರ್ಡರ್‌ನ</a> ಅನುಸಾರವಾಗಿ ನೀಡಲಾಯಿತು.",
+      "note" : "Text for the title of protected veteran meaning item: Active Duty Wartime or Campaign Badge Veteran"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-select-label-text" : {
+      "value" : "ನೀವು ಸಂರಕ್ಷಿತ ವೆಟರನ್‌ಗಳ ಯಾವುದೇ ವರ್ಗಕ್ಕೆ ಸೇರಿರುವಿರಿ ಎಂದು ನೀವು ಭಾವಿಸಿದರೆ ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಸೂಕ್ತವಾದ ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತಿಸುವ ಮೂಲಕ ಸೂಚಿಸಿ.",
+      "note" : "Text for the protected veteran select form label text"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
+      "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
+      "note" : "Text for the protected veteran select form option: I choose not to self-identify"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-next-button-text" : {
+      "value" : "ಮುಂದೆ",
+      "note" : "Text for the protected veteran select form next button text"
+    },
+    "BB-cali-disclosure-page-title-text" : {
+      "value" : "ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಬಹಿರಂಗಪಡಿಸುವಿಕೆ",
+      "note" : "Text for the california disclosure page title text"
+    },
+    "BB-cali-disclosure-page-in-connection-text" : {
+      "value" : "Amazon.com, Inc ನೊಂದಿಗೆ ನನ್ನ ಸಂಭವನೀಯ ಉದ್ಯೋಗಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ. ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಂಗಸಂಸ್ಥೆಗಳು (\"Amazon\"), Amazon ಈ ಕೆಳಗಿನ ಗ್ರಾಹಕ ವರದಿ ಮಾಡುವ ಏಜೆನ್ಸಿಯಿಂದ ನನ್ನ ಬಗ್ಗೆ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ಎಂದು ಕರೆಯಲ್ಪಡುವ ತನಿಖಾ ಕಸ್ಟಮರ್ ವರದಿಯನ್ನು (\"ವರದಿ\") ಸಂಗ್ರಹಿಸಬಹುದು:",
+      "note" : "Text for the california disclosure page in connection paragraph text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-name-text" : {
+      "value" : "ನಿಖರವಾದ ಹಿನ್ನೆಲೆ, LLC (\"Accurate\")",
+      "note" : "Text for the california disclosure page vendor accurate name text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line1-text" : {
+      "value" : "7515 Irvine Center Dr.",
+      "note" : "Text for the california disclosure page vendor accurate address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-address-line2-text" : {
+      "value" : "Irvine, CA 92618",
+      "note" : "Text for the california disclosure page vendor accurate address line 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-phone-text" : {
+      "value" : "1-800-216-8024",
+      "note" : "Text for the california disclosure page vendor accurate phone number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-url-text" : {
+      "value" : "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>",
+      "note" : "Text for the california disclosure page vendor accurate home page url number text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-text" : {
+      "value" : "ನಾನು ಈ ಅಂಶಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ:",
+      "note" : "Text for the california disclosure page vendor accurate understand text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item1-text" : {
+      "value" : "ನಿಖರವಾದ ವರದಿಯನ್ನು ವಿನಂತಿಸಿದರೆ, ವರದಿಯಲ್ಲಿರುವ ಮಾಹಿತಿಯನ್ನು ನನ್ನ ಉದ್ಯೋಗದ ಅರ್ಹತೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item2-text" : {
+      "value" : "ನಿಖರತೆಯಿಂದ ಪಡೆದ ಮತ್ತು ಯಾವುದೇ ವರದಿಯಲ್ಲಿ ಒಳಗೊಂಡಿರುವ ಮಾಹಿತಿಯನ್ನು ವಿವಿಧ ವಿಧಾನಗಳ ಮೂಲಕ ಪಡೆಯಬಹುದು, ಕಾನೂನುಬದ್ಧವಾಗಿ ಲಭ್ಯವಿರುವ ದಾಖಲೆಗಳು ಮತ್ತು ಮಾಹಿತಿಯ ಪರಿಶೀಲನೆ ಮತ್ತು/ಅಥವಾ ನೇರ ಅಥವಾ ಪರೋಕ್ಷ ಸಂಪರ್ಕ ಮತ್ತು ಮಾಜಿ ಉದ್ಯೋಗದಾತರು, ಶಾಲೆಗಳು, ಹಣಕಾಸು ಸಂಸ್ಥೆಗಳು, ಭೂಮಾಲೀಕರು, ಸಾರ್ವಜನಿಕ ಏಜೆನ್ಸಿಗಳು ಮತ್ತು ನನ್ನ ನೆರೆಹೊರೆಯವರು, ಸ್ನೇಹಿತರು ಮತ್ತು ನನಗೆ ಪರಿಚಯವಿರುವ ಸಹವರ್ತಿಗಳಂತಹ ಇತರರೊಂದಿಗೆ ಸಂದರ್ಶನಗಳು ಮತ್ತು ಯಾರು ಅಂತಹ ಜ್ಞಾನವನ್ನು ಹೊಂದಿರುತ್ತಾರೆ.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 2 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item3-text" : {
+      "value" : "ನಿಖರತೆ ಮೂಲಕ ತನಿಖೆ(ಗಳು) ನಡೆಸಲಾಗುವುದು, ಅದರ ಫಲಿತಾಂಶಗಳನ್ನು Amazon ಗೆ ಒದಗಿಸಿದ ಯಾವುದೇ ವರದಿಯಲ್ಲಿ ಸೇರಿಸಬಹುದು, ನನ್ನ ಪಾತ್ರಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ನನ್ನ ಬಗ್ಗೆ ವಿವಿಧ ರೀತಿಯ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಿರಬಹುದು, ಸಾಮಾನ್ಯ ಖ್ಯಾತಿ, ವೈಯಕ್ತಿಕ ಗುಣಲಕ್ಷಣಗಳು ಅಥವಾ ಜೀವನ ವಿಧಾನ, ಉದ್ಯೋಗ ಮತ್ತು ಕೆಲಸದ ಇತಿಹಾಸ, ಶಿಕ್ಷಣ, ಚಾಲನಾ ದಾಖಲೆ ಮತ್ತು ಕ್ರಿಮಿನಲ್ ದಾಖಲೆ, ಅನ್ವಯವಾಗುವ ಫೆಡರಲ್ ಮತ್ತು ರಾಜ್ಯ ಕಾನೂನಿನಿಂದ ವಿಧಿಸಲಾದ ಯಾವುದೇ ಮಿತಿಗಳಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 3 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item4-text" : {
+      "value" : "ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ ಸಿವಿಲ್ ಕೋಡ್ § 1785 et seq. ಮತ್ತು § 1786 et seq., Amazon ನನ್ನ ಕುರಿತಾದ ಯಾವುದೇ ವರದಿಯನ್ನು ವಿನಂತಿಸಿದರೆ, ನಾನು ಅದರ ನಿಯಮಿತ ಕಚೇರಿ ಸಮಯದಲ್ಲಿ Accurate ನನ್ನ ಕುರಿತಾಗಿ ನಿರ್ವಹಿಸುವ ಫೈಲ್ ಅನ್ನು ವೀಕ್ಷಿಸಬಹುದು. ನಾನು (1) ಸೂಕ್ತ ಗುರುತು ಪ್ರತಿಗಳನ್ನು ಸಲ್ಲಿಸಿದ ನಂತರ ಮತ್ತು ನಕಲಿಸುವಿಕೆ ವೆಚ್ಚಗಳನ್ನು ಪಾವತಿಸಿದ ಬಳಿಕ, ಪ್ರಮಾಣೀಕೃತ ಇಮೇಲ್ ಮುಖಾಂತರ ಇಲ್ಲವೇ ನನ್ನ ಯೋಜಿತ ಗೋಚರತೆಯ ಬಗೆಗೆ ಮುಂಗಡ ಸೂಚನೆಯನ್ನು ಒದಗಿಸುವ ಮೂಲಕ Accurate ನ ಕಚೇರಿಯ ಸಾಮಾನ್ಯ ಕಾರ್ಯಾವಧಿಯಲ್ಲಿ ನೇರವಾಗಿ ಭೇಟಿ ನೀಡಿ ಈ ಕಡತದ ನಕಲು ಪ್ರತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಬಹುದು; ಮತ್ತು (2) Accurate ಕಂಪನಿಗೆ ದೂರವಾಣಿ ಸೇವೆಯ ಮೂಲಕ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಸೂಕ್ತ ಗುರುತು ಪ್ರತಿಗಳು ಹಾಗೂ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸಿದ ತರುವಾಯ, Accuate ಕಂಪನಿಯಿಂದ ದೂರವಾಣಿಯ ಮೂಲಕವೇ ಈ ಕಡತದ ಸಾರಾಂಶವನ್ನು ಸ್ವೀಕರಿಸಬಹುದು ಎಂಬುದನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ. ಯಾವುದೇ ಕೋಡ್ ಮಾಡಲಾದ ಮಾಹಿತಿಯು ಸೇರಿದಂತೆ, ಕಡತಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ವಿವರಗಳನ್ನು ನನಗೆ ಸಂಕ್ಷಿಪ್ತವಾಗಿ ವಿವರಿಸಲು Accurate ನ ತರಬೇತಿ ಪಡೆದ ಸಹಾಯಕ ಸಿಬ್ಬಂದಿಗಳು ಲಭ್ಯವಿರುತ್ತಾರೆ ಮತ್ತು ನಾನು Accurate ಕಚೇರಿಗೆ ನೇರವಾಗಿ ಭೇಟಿ ನೀಡಿದ ಸಂದರ್ಭದಲ್ಲಿ, ಆ ವ್ಯಕ್ತಿ ಇಲ್ಲವೇ Accurate ಕಂಪನಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುವ ಬೇರಾವುದೇ ವ್ಯಕ್ತಿಯನ್ನು ನಾನು ಭೇಟಿ ಮಾಡಬಹುದು ಎಂಬುದನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 4 text"
+    },
+    "BB-cali-disclosure-page-vendor-accurate-understand-list-item5-text" : {
+      "value" : "<a href='https://www.accurate.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://www.accurate.com/privacy-policy/</a> ನಲ್ಲಿ ನಿಖರವಾದ ಗೌಪ್ಯತೆ ಅಭ್ಯಾಸಗಳ ಕುರಿತು ಮಾಹಿತಿ ಇಲ್ಲಿ ಲಭ್ಯವಿದೆ.",
+      "note" : "Text for the california disclosure page vendor accurate understand list item 5 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-name-text" : {
+      "value" : "ಮೊದಲ ಪ್ರಯೋಜನ",
+      "note" : "Text for the california disclosure page vendor fadv name text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line1-text" : {
+      "value" : "1 Concourse Parkway NE, Suite 200.",
+      "note" : "Text for the california disclosure page vendor fadv address line 1 text"
+    },
+    "BB-cali-disclosure-page-vendor-fadv-address-line2-text" : {
+      "value" : "Atlanta, GA 30328",
+      "note" : "Text for the california disclosure page vendor fadv address line 2 text"
+    },
     "BB-cali-disclosure-page-vendor-fadv-phone-text" : {
       "value" : "1-800-845-6004",
       "note" : "Text for the california disclosure page vendor fadv phone number text"
@@ -131,6 +1147,10 @@
     "BB-ReviewSubmit-header-title-text" : {
       "value" : "ಪರಿಶೀಲನೆ ಮಾಡಿ ಮತ್ತು ಸಲ್ಲಿಸಿ",
       "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "ತಿದ್ದಿ",
+      "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "ಉದ್ಯೋಗ ವಿವರಗಳು",
@@ -283,6 +1303,22 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT ಫೆಡರಲ್ ಮತ್ತು/ಅಥವಾ ರಾಜ್ಯ ತೆರಿಗೆ ಕ್ರೆಡಿಟ್ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಭಾಗವಹಿಸುವಿಕೆಯನ್ನು ಪರೀಕ್ಷಿಸುತ್ತದೆ. ನೀವು ನೀಡುವ ಮಾಹಿತಿಯನ್ನು ಈ ಕಾರ್ಯಕ್ರಮಗಳಿಗೆ ಕಂಪನಿಯ ಅರ್ಹತೆಯನ್ನು ನಿರ್ಧರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ಯಾವುದೇ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್, ರಿಟೆನ್ಶನ್ ಅಥವಾ ಪ್ರಚಾರದ ನಿರ್ಧಾರಗಳ ಮೇಲೆ ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ ಋಣಾತ್ಮಕ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ - ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "ಹೌದು, ನನಗೆ ಅಂಗವೈಕಲ್ಯವಿದೆ (ಅಥವಾ ಹಿಂದೆ ಅಂಗವೈಕಲ್ಯವಿತ್ತು)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "ಇಲ್ಲ, ನನಗೆ ಅಂಗವೈಕಲ್ಯ ಇಲ್ಲ",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "ನಾನು ಉತ್ತರಿಸಲು ಇಚ್ಚಿಸುವುದಿಲ್ಲ",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     }
   }
 }

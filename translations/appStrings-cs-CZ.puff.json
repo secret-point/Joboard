@@ -336,6 +336,14 @@
       "value" : "Zadejte prosím platný název země",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "Ve Spojených státech je číslo sociálního pojištění (SSN) devítimístné číslo, které se vydává občanům USA, osobám s trvalým pobytem a osobám s dočasným (pracovním) pobytem.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Číslo dokladu totožnosti",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "Doklad totožnosti",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Zadejte prosím platný typ národního průkazu totožnosti",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Číslo dokladu totožnosti",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Číslo národního průkazu totožnosti",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Zadejte prosím platné datum narození.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "Musí Vám být více než 18 let.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Číslo sociálního pojištění",
@@ -944,6 +960,10 @@
       "value" : "Ano",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "Ne",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Rozhodl/a jsem se neidentifikovat",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1168,10 @@
       "value" : "Zkontrolovat a odeslat",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Upravit",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Podrobnosti pracovní pozice",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1323,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Testování Amazon IAT je zapojeno do federálních a státních programů daňových úlev. Informace, které poskytnete, budou použity k určení způsobilosti společnosti pro tyto programy a v žádném případě nebudou mít negativní vliv na rozhodnutí o přijetí, udržení nebo povýšení.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Spojené státy - číslo sociálního pojištění",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "Ano, mám zdravotní postižení (nebo jsem měl/a zdravotní postižení dříve)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "Ne, nemám zdravotní postižení",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "Nechci odpovídat",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Americký indián/původní obyvatel Aljašky",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Černoch/Afroameričan",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

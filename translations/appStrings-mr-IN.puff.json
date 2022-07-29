@@ -336,6 +336,14 @@
       "value" : "कृपया एक वैध देशाचे नाव भरा",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "युनायटेड स्टेट्समध्ये, सोशल सिक्युरिटी नंबर (SSN) हा U.S. नागरिक, कायमस्वरूपी रहिवासी आणि तात्पुरते (कार्यरत) रहिवाशांना जारी केलेला नऊ-अंकी क्रमांक आहे.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "राष्ट्रीय ID क्रमांक",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "राष्ट्रीय ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "कृपया वैध राष्ट्रीय ID प्रकार प्रविष्ट करा",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Id क्रमांक",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "राष्ट्रीय ID क्रमांक",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "कृपया वैध जन्मतारीख प्रविष्ट करा.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "तुम्ही 18 वर्षांपेक्षा जास्त वयाचे असणे आवश्यक आहे.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "सोशल सिक्युरिटी नंबर",
@@ -943,6 +959,10 @@
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
       "value" : "होय",
       "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "नाही",
+      "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "मी स्वत:ची ओळख न करणे निवडतो",

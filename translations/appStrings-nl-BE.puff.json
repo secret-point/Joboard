@@ -336,6 +336,14 @@
       "value" : "Voer een geldig land in.",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "In de Verenigde Staten is een Social Security Number (SSN) een negencijferig nummer, dat wordt uitgegeven aan Amerikaanse burgers, permanente inwoners en tijdelijke (werkende) inwoners.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Nationaal ID-nummer",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "Nationaal identiteitsbewijs",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Voer een geldig nationaal identificatietype in",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID-nummer",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Nationaal identiteitsnummer",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Voer een geldige geboortedatum in.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "Je moet ouder zijn dan 18 jaar.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Social Security Number",
@@ -944,6 +960,10 @@
       "value" : "Ja",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "Nee",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Ik kies ervoor om mezelf niet te identificeren",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1168,10 @@
       "value" : "Controleren en indienen",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Bewerken",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Taakdetails",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1323,10 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT-tests nemen deel aan federale en/of nationale belastingkredietprogramma's. De informatie die je geeft, wordt gebruikt om te bepalen of het bedrijf in aanmerking komt voor deze programma's en heeft op geen enkele manier een negatieve invloed op aanwervings-, behoud- of promotiebeslissingen.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Verenigde Staten - Rijksregisternummer",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     }
   }
 }

@@ -336,6 +336,14 @@
       "value" : "Lütfen geçerli bir ülke girin",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "Amerika Birleşik Devletleri'nde, bir Sosyal Güvenlik numarası (SSN), ABD vatandaşlarına, daimi sakinlere ve geçici (çalışan) sakinlere verilen dokuz basamaklı bir sayıdır.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Ulusal Kimlik Numarası",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "Ulusal Kimlik",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Lütfen geçerli bir Ulusal Kimlik türü girin",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Kimlik Numarası",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Ulusal Kimlik Numarası",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Lütfen geçerli bir Doğum Tarihi girin.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "18 yaşından büyük olmalısınız.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Sosyal Güvenlik Numarası",
@@ -944,6 +960,10 @@
       "value" : "Evet",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "Hayır",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Kendimi tanımlamamayı tercih ediyorum",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1168,10 @@
       "value" : "İncele ve Gönder",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Düzenle",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "İş Detayları",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1323,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT testi, federal ve/veya eyalet vergi kredisi programlarında kullanılır. Verdiğiniz bilgiler, şirketin bu programlara uygunluğunu belirlemek için kullanılacak ve hiçbir şekilde işe alma, elde tutma veya terfi kararlarını olumsuz etkilemeyecektir.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Amerika Birleşik Devletleri - Sosyal Güvenlik Numarası",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "Evet engelliyim (ya da daha önce engelliydim)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "Hayır, engelli değilim",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "Yanıtlamak istemiyorum",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Kızılderili/Alaska Yerlisi",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Siyah/Afro-Amerikan",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

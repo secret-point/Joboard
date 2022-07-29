@@ -1148,6 +1148,10 @@
       "value" : "సమీక్షించి, సమర్పించండి",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "సవరించండి",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "ఉద్యోగ వివరాలు",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1303,26 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT టెస్టింగ్ ఫెడరల్ మరియు లేదా స్టేట్ టాక్స్ క్రెడిట్ ప్రోగ్రామ్‌లలో పాల్గొంటుంది. మీరు అందించే సమాచారం ఈ ప్రోగ్రామ్‌ల కోసం కంపెనీ అర్హతను నిర్ణయించడానికి ఉపయోగించబడుతుంది మరియు ఎటువంటి నియామకం, నిలుపుదల లేదా ప్రమోషన్ నిర్ణయాలపై ప్రతికూల ప్రభావం చూపదు.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "అవును, నాకు వైకల్యం ఉంది (లేదా గతంలో వైకల్యం ఉండేది)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "లేదు, నాకు వైకల్యం లేదు",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "నేను సమాధానం చెప్పదలుచుకోలేదు",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "అమెరికన్ ఇండియన్/అలస్కా నేటివ్",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "నల్లజాతి/ఆఫ్రికన్ అమెరికన్",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

@@ -1148,6 +1148,10 @@
       "value" : "রিভিউ করুন এবং জমা দিন",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "সম্পাদনা করুন",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "কাজের বিবরণসমূহ",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1303,734 @@
     "BB-WOTC-page-description-text" : {
       "value" : "আমাজন IAT টেস্টিং ফেডারেল এবং বা রাজ্য ট্যাক্স ক্রেডিট প্রোগ্রামগুলিতে অংশগ্রহণ করে। আপনার দেওয়া তথ্যগুলি এই প্রোগ্রামগুলির জন্য কোম্পানির অংশগ্রহণের যোগ্যতা নির্ধারণে ব্যবহার করা হবে এবং কোনও ভাবে কোনও নিয়োগের, চাকরি অব্যাহত রাখার বা পদন্নতির সিদ্ধান্তগুলিতে নেতিবাচকভাবে প্রভাবিত করবে না।",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "সম্ভাব্য আরম্ভের তারিখ:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(বা তার আগে!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ঘণ্টা",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "ঘণ্টা/সপ্তাহ",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "বোনাস:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই মুহূর্তে আপনাকে চাকরি দিতে অক্ষম।",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "আপনার প্রদত্ত তথ্য আমাদের শর্তাবলী পূরণ করে না। আমরা আপনাকে amazon.jobs-এ অন্যান্য চাকরি দেখতে উৎসাহিত করছি।",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "দুঃখিত, আপনি ইতিমধ্যে এই চাকরির জন্য আবেদন করেছেন!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "প্রয়োজনীয় ক্ষেত্র অনুপস্থিত।",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "এই পরিষেবার কিছু সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা ব্রাউজারটি রিফ্রেশ করুন।",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "প্রার্থী নিষ্ক্রিয়। প্রার্থীর জন্য আবেদন তৈরি করা যাবে না।",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "প্রার্থী পাওয়া যায়নি।",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "আবেদন আপডেট করা যাবে না কারণ আরো সাম্প্রতিক আপডেট রয়েছে।",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "আবেদন তৈরি করা যায়নি।",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "আবেদন আইডি অনুরোধ পথ-এর আইডির সাথে মেলে না।",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "আবেদনটি খুঁজে পাওয়া যায়নি।",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "প্রয়োজনীয় ক্ষেত্র অনুপস্থিত: আবেদন আইডি।",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "আবেদন আপডেট করা যাবে না কারণ আরো সাম্প্রতিক আপডেট রয়েছে।",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "এই পরিষেবার কিছু সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা ব্রাউজারটি রিফ্রেশ করুন।",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "আপনি এই আবেদনে অ্যাক্সেস করতে পারবেন না।",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "অনুগ্রহ করে স্বীকৃতিতে স্বাক্ষর করুন।",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "অনুগ্রহ করে fcra অনুরোধে স্বাক্ষর করুন।",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "অনুগ্রহ করে স্বীকৃতিতে স্বাক্ষর করুন।",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "দয়া করে রাষ্ট্রীয় বিজ্ঞপ্তিতে স্বাক্ষর করুন।",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "আপনার নির্বাচিত সময়সূচী আর পাওয়া যাচ্ছে না, দয়া করে অন্য একটি সময়সূচী নির্বাচন করুন।",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "ই-স্বাক্ষর মিলছে না। প্রতিটি ই-স্বাক্ষরের জন্য অনুগ্রহ করে একই টেক্সট ব্যবহার করুন।",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "আবেদনের আপডেট ব্যর্থ হয়েছে কারণ আপনি আপনার জাতীয় পরিচয়পত্রে পরিবর্তনের সর্বাধিক সংখ্যায় পৌঁছেছেন। আপনি যদি আগে একটি ভিন্ন ইমেইল ঠিকানা দিয়ে সাইন আপ করে থাকেন, অনুগ্রহ করে লগআউট করুন এবং প্রয়োজন হলে \"আপনার ব্যক্তিগত পিন ভুলে গেছেন?\" লিঙ্ক ব্যবহার করে সেই ইমেইলটি দিয়ে লগ ইন করার চেষ্টা করুন। আপনার যদি সাহায্যের প্রয়োজন হয়, অনুগ্রহ করে আমাদের সাথে ইমেইলের মাধ্যমে যোগাযোগ করুন বা <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> এ চ্যাট করুন।",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "আবেদনের আপডেট ব্যর্থ হয়েছে কারণ প্রদত্ত জাতীয় পরিচয় নম্বরটি অবৈধ। অনুগ্রহ করে এগিয়ে যাওয়ার আগে সঠিক এবং সম্পূর্ণ জাতীয় পরিচয় নম্বর লিখুন।",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "অনুরোধের ধরন অনুপস্থিত।",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "টাইপ অনুরোধের সাথে মিলেছে না।",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "পেলোড-এ জন্ম তারিখ অনুপস্থিত।",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "অনুগ্রহ করে বৈধ তারিখ প্রদান করুন।",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "অনুরোধে আবেদন আইডি অনুপস্থিত।",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "অনুরোধে সরকারি আইডি অনুপস্থিত।",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "অনুরোধে আইডি নম্বর অনুপস্থিত।",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "অনুরোধে HasCriminalRecordWithinSevenYears অনুপস্থিত।",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "ঠিকানার অবজেক্টে ঠিকানা লাইন 1 অনুপস্থিত।",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "ঠিকানার অবজেক্টে শহর অনুপস্থিত।",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "ঠিকানা অবজেক্টে রাজ্য অনুপস্থিত।",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "ঠিকানা অবজেক্টে জিপ/পোস্টাল কোড অনুপস্থিত।",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "ঠিকানার অবজেক্টে দেশ অনুপস্থিত।",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "অনুগ্রহ করে পূর্বে ব্যবহৃত আইনি পূর্ণ নাম নিম্নলিখিত বিন্যাসে লিখুন: প্রথম শেষ",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "অতিরিক্ত ব্যাকগ্রাউন্ডের তথ্য বৈধ নয়, অনুগ্রহ করে সমস্ত প্রয়োজনীয় ক্ষেত্র আপডেট করুন।",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "অনুরোধে nheঅ্যাপয়েন্টমেন্ট অবজেক্ট অনুপস্থিত।",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "অনুরোধে রেফারেল তথ্য অনুপস্থিত।",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "পেলোড-এ জাতিসত্ত্বা অনুপস্থিত।",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "পেলোড-এ লিঙ্গ অনুপস্থিত।",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "পেলোড-এ মিলিটারি পতি-পত্নীর তথ্য অনুপস্থিত।",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "পেলোড-এ সুরক্ষিত ভেটেরান তথ্য অনুপস্থিত।",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "পেলোড-এ ভেটেরানের তথ্য অনুপস্থিত।",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "পেলোড-এ প্রতিবন্ধিতা অনুপস্থিত।",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "পেলোড-এ hasBGCCaliforniaDisclosureAcknowledged অনুপস্থিত।",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "আপনার দেওয়া SSN বা জাতীয় পরিচয় নম্বরটি ইতিমধ্যেই আমাদের সিস্টেমে অন্য একটি ইমেইল ঠিকানার সাথে যুক্ত। আপনি যদি আগে একটি ভিন্ন ইমেইল ঠিকানা দিয়ে সাইন আপ করে থাকেন, অনুগ্রহ করে [লগ আউট করুন](/আবেদন/লগআউট) এবং প্রয়োজন হলে \"আপনার ব্যক্তিগত পিন ভুলে গেছেন?\" লিঙ্ক ব্যবহার করে সেই ইমেইল দিয়ে লগ ইন করার চেষ্টা করুন। আপনার যদি সাহায্যের প্রয়োজন হয়, অনুগ্রহ করে আমাদের সাথে ইমেইলের মাধ্যমে যোগাযোগ করুন বা <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> এ চ্যাট করুন।",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "চাকরি আনতে অক্ষম।",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "চাকরি নিয়ে আসার সময় কিছু সমস্যা হয়েছে! অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করুন বা পরে আবার চেষ্টা করুন।",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "এই মুহূর্তে চাকরি পুনরুদ্ধার করতে ব্যর্থ হয়েছে। অনুগ্রহ করে কিছুক্ষণ পরে পুনরায় চেষ্টা করুন।",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "সব শিফট পূরণ করা হয়েছে।",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "সব শিফট পূরণ করা হয়েছে।",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "মাথা গণনার অনুরোধ আনা যাচ্ছে না।",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "সব শিফট পূরণ করা হয়েছে।",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "কিছু সমস্যা হয়েছে! অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করুন বা পরে আবার চেষ্টা করুন।",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "চাকরি নিয়ে আসার সময় কিছু সমস্যা হয়েছে! অনুগ্রহ করে পৃষ্ঠাটি রিফ্রেশ করুন বা পরে আবার চেষ্টা করুন।",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "শিফটের পছন্দসমূহ নিয়ে আসা যায়নি।",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "এই মুহূর্তে চাকরি পুনরুদ্ধার করতে ব্যর্থ হয়েছে। অনুগ্রহ করে কিছুক্ষণ পরে পুনরায় চেষ্টা করুন।",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "প্রার্থী পেতে ব্যর্থ হয়েছে।",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "আপনি এই আবেদনে অ্যাক্সেস করতে পারবেন না।",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "আবেদন তৈরি করা যায়নি।",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "আপনি আবেদন তৈরি করতে পারবেন না।",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "আবেদন ডেটা পেতে আবেদন আইডির প্রয়োজন।",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "আপনি এই আবেদনে অ্যাক্সেস করতে পারবেন না।",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "এই আবেদনটি পাওয়া যায়নি।",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "এই পরিষেবার কিছু সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা ব্রাউজারটি রিফ্রেশ করুন।",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "ওয়ার্কফ্লো ত্রুটি",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "যখন আবেদন ওয়ার্কফ্লো ব্যর্থ হয়েছে।",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই মুহূর্তে আপনাকে চাকরি দিতে অক্ষম।",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "আপনার প্রদত্ত তথ্য আমাদের শর্তাবলী পূরণ করে না। আমরা আপনাকে amazon.jobs-এ অন্যান্য চাকরি দেখতে উৎসাহিত করছি।",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই মুহূর্তে আপনাকে চাকরি দিতে অক্ষম।",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "আপনার প্রদত্ত তথ্য আমাদের শর্তাবলী পূরণ করে না। আমরা আপনাকে amazon.jobs-এ অন্যান্য চাকরি দেখতে উৎসাহিত করছি।",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই মুহূর্তে আপনাকে চাকরি দিতে অক্ষম।",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "আপনার প্রদত্ত তথ্য আমাদের শর্তাবলী পূরণ করে না। আমরা আপনাকে amazon.jobs-এ অন্যান্য চাকরি দেখতে উৎসাহিত করছি।",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "আপনার চাকরির পদ সংরক্ষণের মেয়াদ শেষ হয়ে গেছে।",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "আমরা প্রার্থীদের তিন ঘন্টা পর্যন্ত তাদের আবেদন সম্পূর্ণ করার অনুমতি দিই। দুর্ভাগ্যবশত, আপনি যে চাকরির পদের জন্য আবেদন করছেন সেটি তিন ঘণ্টার সীমা অতিক্রম করেছে। অনুগ্রহ করে বিদ্যমান চাকরির সুযোগ অন্বেষণ করুন।",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "চাকরির সুযোগ দেখুন",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "এই মুহূর্তে এই চাকরির জন্য কোনো অ্যাপয়েন্টমেন্ট নেই।",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "আপনি করতে পারেন:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. একটি ভিন্ন চাকরির সুযোগ নির্বাচন করুন",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "এখানে ক্লিক করুন",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. পরবর্তী শুরুর তারিখ সহ একটি শিফট নির্বাচন করুন (প্রস্তাবিত)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "অন্যান্য শিফট দেখুন",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "অগ্রসর হওয়ার জন্য অনুগ্রহ করে বাক্সটি চেক করুন।",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "অগ্রসর হওয়ার জন্য অনুগ্রহ করে বাক্সটি চেক করুন।",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "অগ্রসর হওয়ার জন্য অনুগ্রহ করে বাক্সটি চেক করুন।",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- আলাবামা",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- আলাস্কা",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- অ্যারিজোনা",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- আরকানসাস",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA — ক্যালিফোর্নিয়া",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- কলোরাডো",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- কানেকটিকাট",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE — ডেলাওয়্যার",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- ডিস্ট্রিক্ট অফ কলম্বিয়া",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- ফ্লোরিডা",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- জর্জিয়া",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- হাওয়াই",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- আইডাহো",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- ইলিনয়",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- ইন্ডিয়ানা",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- আইওয়া",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- ক্যান্সাস",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- কেন্টাকি",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- লুইজিয়ানা",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- মেইন",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- মেরিল্যান্ড",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- ম্যাসাচুসেটস",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- মিশিগান",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- মিনেসোটা",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- মিসিসিপি",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- মিসৌরি",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- মন্টানা",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- নেব্রাস্কা",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- নেভাডা",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- নিউ হ্যাম্পশায়ার",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- নিউ জার্সি",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- নিউ মেক্সিকো",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- নিউ ইয়র্ক",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- নর্থ ক্যারোলিনা",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- নর্থ ডাকোটা",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- ওহাইও",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- ওকলাহোমা",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- অরেগন",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- পেনসিলভেনিয়া",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- রোড আইল্যান্ড",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- সাউথ ক্যারোলিনা",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- সাউথ ডাকোটা",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- টেনেসি",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- টেক্সাস",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- উটাহ",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT — ভারমন্ট",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- ভার্জিনিয়া",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA — ওয়াশিংটন",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI — উইসকনসিন",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV — পশ্চিম ভার্জিনিয়া",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY -- ওয়াইয়োমিং",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "WOTC আপডেট করতে ব্যর্থ।",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "আপনার নির্বাচিত সময়সূচী আর বিদ্যমান নেই৷ অনুগ্রহ করে একটি ভিন্ন অপশন নির্বাচন করুন।",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "আপনাকে সম্প্রতি এই আবেদনের জন্য নিয়োগ করা হয়েছে, আপনার শিফট পরিবর্তন করা যাবে না। আপনার শিফট পরিবর্তন করতে দয়া করে https://www.amazondelivers.jobs/contactus এ যোগাযোগ করুন।",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "আবেদন আপডেট করতে ব্যর্থ হয়েছে।",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "অতিরিক্ত ব্যাকগ্রাউন্ডের তথ্য",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} পদে আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ। আমাদের রেকর্ডগুলি নির্দেশ করে যে আপনি আগে Amazon-এ কাজ করেছেন৷  এই মূহুর্তে, আপনি আপনার কর্মসংস্থান রেকর্ডের উপর ভিত্তি করে একজন মৌসুমী Amazon Associate বা তৃতীয় পক্ষের এজেন্সি কর্মচারী হিসাবে পুনরায় নিয়োগের জন্য যোগ্য। ফলস্বরূপ, আমরা এই চাকরির জন্য আপনার প্রার্থিতা নিয়ে এগিয়ে যেতে পারছি না। আপনার যদি পুনরায় নিয়োগের যোগ্যতা সম্পর্কিত কোনও প্রশ্ন থাকে, তাহলে সাইট HR টিমের সাথে যোগাযোগ করুন।",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "এই পদে আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ। আমাদের রেকর্ডগুলি নির্দেশ করে যে আপনি আগে Amazon-এ কাজ করেছেন৷  এই মূহুর্তে, আপনি আপনার কর্মসংস্থান রেকর্ডের উপর ভিত্তি করে একজন মৌসুমী Amazon Associate বা তৃতীয় পক্ষের এজেন্সি কর্মচারী হিসাবে পুনরায় নিয়োগের জন্য যোগ্য। ফলস্বরূপ, আমরা এই চাকরির জন্য আপনার প্রার্থিতা নিয়ে এগিয়ে যেতে পারছি না। আপনার যদি পুনরায় নিয়োগের যোগ্যতা সম্পর্কিত কোনও প্রশ্ন থাকে, তাহলে সাইট HR টিমের সাথে যোগাযোগ করুন।",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "আপনার এলাকায় মৌসুমী সুযোগগুলি অন্বেষণ করতে দয়া করে আমাদের মৌসুমী পৃষ্ঠাটি দেখুন।",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Amazon-এ আপনার সাম্প্রতিক চাকরির আবেদনের জন্য আপনাকে ধন্যবাদ। যত্নশীল বিবেচনা করার পরে, আমরা আপনার চাকরির আবেদন নিয়ে এগিয়ে যাব না।",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "আমরা আপনার সময়কে মূল্য দিই এবং ভবিষ্যতের জন্য আপনাকে শুভকামনা জানাই।",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "আমরা আপনার সাম্প্রতিক চাকরির আবেদনের জন্য প্রশংসা করি! দুর্ভাগ্যবশত, আপনি এই নির্দিষ্ট পদের জন্য যোগ্য নন যেহেতু আপনি ইতিমধ্যেই Amazon দ্বারা নিযুক্ত আছেন।",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "ভালো খবর? আপনি অনলাইনে ব্রাউজ করতে এবং আবেদন করতে পারেন এমন প্রচুর উম্মুক্ত সুযোগ রয়েছে। এখানে কয়েকটি উপায় রয়েছে যা আপনি আপনার ভবিষ্যত ক্যারিয়ারের বৃদ্ধিতে অন্বেষণ করতে পারেন:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "এজেন্সি বা মৌসুমী রূপান্তরের জন্য, amazon.com/conversions (http://amazon.com/conversions) দেখুন।",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "শিফট বা অবস্থান পরিবর্তনের অনুরোধ করতে, আপনার অনসাইট টিমের সাথে যোগাযোগ করুন।",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "আপনার স্থানীয় HR টিম বা এমপ্লয়ি সংস্থান কেন্দ্র (ERC) হলো যেকোনো প্রশ্নের জন্য সেরা রিসোর্স। আপনি 1-888-892-7180 (টেলি:18888927180) এ 24/7 ERC টিমের সাথে যোগাযোগ করতে পারেন।",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Amazon এ অসাধারণ দলের একটি অংশ হওয়ার জন্য ধন্যবাদ! আমরা আপনাকে সর্বোত্তম সম্ভাব্য কর্মচারী রিসোর্স, সুবিধা, বেতন এবং নমনীয় সময়সূচী প্রদান করার জন্য ক্রমাগত চেষ্টা করছি - যা পৃথিবীর সর্বশ্রেষ্ঠ নিয়োগকর্তা হওয়ার জন্য আমাদের প্রচেষ্টাকে সমর্থন করে!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} পদে আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ। আমাদের রেকর্ডগুলি নির্দেশ করে যে আপনি পূর্বে Amazon-এ কাজ করেছেন এবং আপনার আগের Amazon কর্মসংস্থান রেকর্ডের উপর ভিত্তি করে পুনরায় নিয়োগের জন্য যোগ্য নন। ফলস্বরূপ, আমরা এই মূহুর্তে আপনার প্রার্থীতা নিয়ে এগিয়ে যেতে পারছি না।",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "এই পদে আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ। আমাদের রেকর্ডগুলি নির্দেশ করে যে আপনি পূর্বে Amazon-এ কাজ করেছেন এবং আপনার আগের Amazon কর্মসংস্থান রেকর্ডের উপর ভিত্তি করে পুনরায় নিয়োগের জন্য যোগ্য নন। ফলস্বরূপ, আমরা এই মূহুর্তে আপনার প্রার্থীতা নিয়ে এগিয়ে যেতে পারছি না।",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "সমাপ্তির কারণে, আপনি Amazon-এ আপনার শেষ দিনে কাজ করার 90 দিন পরে পুনরায় আবেদন করতে পারেন।",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "বর্তমানে সব শিফট পূরণ করা হয়েছে।",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "অন্যান্য চাকরির জন্য আবেদন করতে অনুগ্রহ করে ড্যাশবোর্ডে ফিরে যান।",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "আবেদন ত্রুটি",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "কিছু ভুল হয়েছে, অনুগ্রহ করে ড্যাশবোর্ডে যান",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "অগ্রসর হওয়ার জন্য অনুগ্রহ করে বাক্সটি চেক করুন।",
+      "note" : "Text for the detailed radio button error."
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "মার্কিন যুক্তরাষ্ট্র - সোশ্যাল সিকিউরিটি নাম্বার",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "হ্যাঁ, আমার প্রতিবন্ধিতা আছে (বা পূর্বে প্রতিবন্ধিতা ছিল)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "না, আমার কোনও প্রতিবন্ধিতা নেই",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "আমি উত্তর দিতে চাই না",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "আমেরিকান ইন্ডিয়ান/আলাস্কার স্থানীয়",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "কৃষ্ণাঙ্গ/আফ্রিকান আমেরিকান",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

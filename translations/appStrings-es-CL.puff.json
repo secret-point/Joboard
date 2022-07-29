@@ -1148,6 +1148,10 @@
       "value" : "Revisar y enviar",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Editar",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Detalles del empleo",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1303,26 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT testing participa en programas de crédito fiscal federales y/o estatales. La información que proporciones se utilizará para determinar la aptitud de la compañía para estos programas y de ninguna manera afectará negativamente sobre ninguna decisión de contratación, retención o promoción.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "Sí, tengo una discapacidad (o tuve una anteriormente)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "No, no tengo ninguna discapacidad",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "No deseo contestar",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Indios Americanos/Nativo de Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Negro/Afroamericano",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

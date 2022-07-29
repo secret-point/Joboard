@@ -38,7 +38,8 @@ import {
     initScheduleStateFilters,
     NameRegexValidator,
     UserIdValidator,
-    usNewBBUIPathName
+    usNewBBUIPathName,
+    ValueToI18nKeyMap
 } from "./constants/common";
 import range from "lodash/range";
 import moment from "moment";
@@ -85,6 +86,7 @@ import { MessageBannerType } from "@amzn/stencil-react-components/message-banner
 import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { translate } from "./translator";
 import isNil from "lodash/isNil";
+import { translate as t } from "./translator";
 
 const {
     BACKGROUND_CHECK,
@@ -1134,3 +1136,18 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
 
     return false;
 }
+
+export const reverseMappingTranslate = (value: string | undefined) => {
+    if (!value) {
+        return "";
+    }
+
+    const key = ValueToI18nKeyMap[value];
+
+    if (!key) {
+        console.warn('No key/translation found for value: ', value);
+        return "";
+    }
+
+    return t(key, value);
+};

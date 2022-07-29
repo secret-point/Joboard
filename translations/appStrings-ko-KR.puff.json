@@ -336,6 +336,14 @@
       "value" : "유효한 국가를 입력하세요.",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "미국에서 사회 보장 번호(SSN)는 미국 시민, 영주권자 및 임시 (근로) 거주자에게 발급되는 9자리 숫자입니다.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "국가 신분증 번호",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "국가 ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "올바른 국가 ID 유형을 입력하세요.",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "신분증 번호",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "국가 신분증 번호",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "올바른 생년월일을 입력하세요.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "만 18세 이상이어야 합니다.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "사회 보장 번호(SSN)",
@@ -944,6 +960,10 @@
       "value" : "예",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "아니요",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "본인은 자신의 정체성을 규정하지 않기로 선택합니다.",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1299,6 +1319,26 @@
     "BB-WOTC-page-description-text" : {
       "value" : "아마존 IAT 테스트는 연방 및/또는 주 세금 공제 프로그램에 참여합니다. 귀하가 제공하는 정보는 이러한 프로그램에 대한 회사의 자격을 결정하는 데 사용되며 채용, 유지 또는 승진 결정에 부정적인 영향을 전혀 미치지 않습니다.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "예, 저는 장애가 있습니다(또는 이전에 장애가 있었습니다).",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "아니요, 저는 장애가 없습니다.",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "대답하고 싶지 않습니다.",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "아메리칸 인디언/알래스카 원주민",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "흑인/아프리카계 미국인",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

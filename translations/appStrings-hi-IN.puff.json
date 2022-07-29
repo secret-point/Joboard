@@ -336,6 +336,14 @@
       "value" : "कृपया एक मान्य देश एंटर करें",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "संयुक्त राज्य अमेरिका में, एक सामाजिक सुरक्षा नंबर (SSN) अमेरिकी नागरिकों, स्थायी निवासियों और अस्थायी (कामकाजी) निवासियों को जारी किया गया नौ डिजिट का नंबर है.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "राष्ट्रीय ID नंबर",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "राष्ट्रीय ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "कृपया एक मान्य राष्ट्रीय ID प्रकार एंटर करें",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Id नंबर",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "राष्ट्रीय ID नंबर",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "कृपया मान्य जन्म की तारीख एंटर करें.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "आपकी उम्र18 साल से ज़्यादा होनी चाहिए.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "सामाजिक सुरक्षा नंबर",
@@ -944,6 +960,10 @@
       "value" : "हां",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "नहीं",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "मैं आत्म-पहचान नहीं करने का विकल्प चुनता/चुनती हूं",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1168,10 @@
       "value" : "समीक्षा करें और सबमिट करें",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "संपादित करें",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "जॉब विवरण",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1323,18 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT परीक्षण संघीय और राज्य कर क्रेडिट कार्यक्रमों में भाग लेता है. आपके द्वारा दी गई जानकारी का इस्तेमाल इन कार्यक्रमों के लिए कंपनी की योग्यता निर्धारित करने के लिए किया जाएगा और किसी भी तरह से किसी भी हायरिंग, प्रतिधारण या प्रमोशन के फैसले को नकारात्मक रूप से प्रभावित नहीं करेगा.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "संयुक्त राज्य अमेरिका - सामाजिक सुरक्षा नंबर",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "अमेरिकन भारतीय/अलास्का मूल निवासी",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "ब्लैक/अफ्रीकन अमेरिकन",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

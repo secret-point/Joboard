@@ -336,6 +336,14 @@
       "value" : "സാധുവായ ഒരു രാജ്യം നൽകുക",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "യുണൈറ്റഡ് സ്റ്റേറ്റ്സിൽ, ഒരു സോഷ്യൽ സുരക്ഷ നമ്പർ (SSN) എന്നത് US പൗരന്മാർക്കും സ്ഥിര താമസക്കാർക്കും താൽക്കാലിക (ജോലി ചെയ്യുന്ന) താമസക്കാർക്കും ഇഷ്യൂ ചെയ്യുന്ന ഒരു ഒമ്പത്-അക്ക നമ്പറാണ്.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "ദേശീയ ID നമ്പർ",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "ദേശീയ ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "ദയവായി സാധുവായ ഒരു ദേശീയ ID തരം നൽകുക",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID നമ്പർ",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "ദേശീയ ID നമ്പർ",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "ദയവായി സാധുതയുള്ള ജനന തിയതി നൽകുക.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "നിങ്ങൾക്ക് 18 വയസ്സിന് മുകളിലായിരിക്കണം.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "സാമൂഹിക സുരക്ഷാ നമ്പർ",
@@ -944,6 +960,10 @@
       "value" : "അതെ",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "ഇല്ല",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "സ്വയം തിരിച്ചറിയിക്കാതിരിക്കുക എന്നത് ഞാൻ തിരഞ്ഞെടുക്കുന്നു",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1168,10 @@
       "value" : "അവലോകനം ചെയ്ത് സമർപ്പിക്കുക",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "എഡിറ്റ് ചെയ്യുക",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "ജോലിയുടെ വിശദാംശങ്ങൾ",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1323,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT ടെസ്റ്റിംഗ്, ഫെഡറൽ അല്ലെങ്കിൽ സ്റ്റേറ്റ് ടാക്സ് ക്രെഡിറ്റ് പ്രോഗ്രാമുകളിൽ പങ്കെടുക്കുന്നു. ഈ പ്രോഗ്രാമുകൾക്കായുള്ള കമ്പനിയുടെ യോഗ്യത നിർണ്ണയിക്കുന്നതിന് നിങ്ങൾ നൽകുന്ന വിവരങ്ങൾ ഉപയോഗിക്കും, കൂടാതെ ഏതെങ്കിലും നിയമനം, നിലനിർത്തൽ അല്ലെങ്കിൽ പ്രമോഷൻ തീരുമാനങ്ങളെ ഒരു തരത്തിലും പ്രതികൂലമായി ബാധിക്കില്ല.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "യുണൈറ്റഡ് സ്റ്റേറ്റ്സ് - സോഷ്യൽ സെക്യൂരിറ്റി നമ്പർ",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "അതെ, എനിക്കൊരു വൈകല്യം ഉണ്ട് (അല്ലെങ്കിൽ മുമ്പ് ഒരു വൈകല്യം ഉണ്ടായിരുന്നു)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "ഇല്ല, എനിക്ക് വൈകല്യമില്ല",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "മറുപടി നല്‍കാന്‍ ഞാൻ ആഗ്രഹിക്കുന്നില്ല",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "അമേരിക്കൻ ഇന്ത്യൻ/അലാസ്ക സ്വദേശി",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "കറുത്ത വര്‍ഗ്ഗം/ആഫ്രിക്കൻ അമേരിക്കൻ",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

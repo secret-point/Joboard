@@ -1148,6 +1148,10 @@
       "value" : "確認および送信",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "編集する",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "仕事の詳細",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1303,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT テストは、連邦または州の税額控除プログラムに参加しています。提供された情報は、これらのプログラムへの企業の適格性を判断するために使用され、採用、保持、または昇進の決定に悪影響を与えることはありません。",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "米国-社会保障番号",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "はい、障害がある（または以前に障害があった）",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "いいえ、障害はありません",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "答えたくありません",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "アメリカインディアン/アラスカ先住民",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "黒人/アフリカ系アメリカ人",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

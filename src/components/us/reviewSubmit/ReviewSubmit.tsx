@@ -24,7 +24,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, reverseMappingTranslate, routeToAppPageWithPath } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
@@ -103,7 +103,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
         onCompleteTaskHelper(applicationData);
       });
     }
-  }
+  };
 
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
@@ -132,7 +132,9 @@ const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>Edit</Button>
+          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
+            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+          </Button>
         </Row>
 
         <Col gridGap="S300">
@@ -145,7 +147,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
           </Text>}
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {candidateData?.additionalBackgroundInfo.governmentIdType}
+            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {reverseMappingTranslate(candidateData?.additionalBackgroundInfo.governmentIdType)}
           </Text>
 
           <Text fontSize="T100">
@@ -164,7 +166,9 @@ const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>Edit</Button>
+          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
+            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+          </Button>
         </Row>
         <Col gridGap="S300">
           <Text>
@@ -194,20 +198,22 @@ const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-selfId-section-title-text", "Voluntary Self-identification")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>Edit</Button>
+          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
+            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+          </Button>
         </Row>
         <Col gridGap="S300">
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {candidateData?.selfIdentificationInfo.gender}
-            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${candidateData?.selfIdentificationInfo.ethnicity}` : ""}
+            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender)}
+            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity)}` : ""}
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {candidateData?.selfIdentificationInfo.veteran}
+            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran)}
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {candidateData?.selfIdentificationInfo.disability}
+            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.disability)}
           </Text>
         </Col>
       </div>
