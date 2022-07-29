@@ -177,6 +177,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
 
 export const completeTask =
     ( application?: Application, currentStep?: string, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME, jobId?: string, schedule?: Schedule ) => {
+      console.info("[WS] in completeTask, websocket is: ", window.stepFunctionService?.websocket);
       if(window.stepFunctionService?.websocket) {
         boundWorkflowRequestStart();
         const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime || "";
@@ -198,6 +199,7 @@ export const completeTask =
         };
 
         log(`complete ${currentStep} stepName request: `, { ...data });
+        console.info(`[WS] complete ${currentStep} stepName request: `, { ...data });
 
         window.stepFunctionService.websocket?.send(JSON.stringify(data));
       }
@@ -235,12 +237,15 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
 
   if(isBackButton) {
     log(`Completed task on back button execution, current step is ${currentStepName} for application:`, application);
+    console.info(`[WS] Completed task on back button execution, current step is ${currentStepName} for application:`, application);
   }
   else {
     log(`Completed task on ${currentStepName} for application:`, application);
+    console.info(`[WS] Completed task on ${currentStepName} for application:`, application);
   }
 
   if(!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
+    console.info("[WS] No websocket connection, add hasCompleteTaskOnWorkflowConnect and load workflow");
     window.hasCompleteTaskOnWorkflowConnect = () => {
       completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
     }

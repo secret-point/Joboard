@@ -77,13 +77,14 @@ export const AssessmentFinished = (props: MapStateToProps) => {
       }
       //force route to the same page to append query params ( jobId and schedule Id)
       routeToAppPageWithPath(PAGE_ROUTES.ASSESSMENT_FINISHED, queryParamItems);
+      console.info("[WS] In AssessmentFinished useEffect, starting to call onCompleteTaskHelper: ", applicationData, jobId, jobDetail);
       //call workflow service to update step
       applicationData && onCompleteTaskHelper(applicationData, false, undefined, WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT);
     });
   }, [applicationData, jobDetail, jobId, scheduleId]);
 
   return (
-    <Col></Col>
+    <Col minHeight="40vh"/>
   );
 };
 
