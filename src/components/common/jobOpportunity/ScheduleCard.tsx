@@ -74,8 +74,11 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
             </Row>
             {
                 scheduleBannerText &&
-                <Row padding={{ left: 'S300', right: 'S300', bottom: 'S300' }}>
-                    <Link fontSize='T100'>{scheduleBannerText}</Link>
+                <Row
+                  padding={{ left: 'S300', right: 'S300', bottom: 'S300' }}
+                  className="scheduleBannerText"
+                >
+                    <Text fontSize='T100'>{scheduleBannerText}</Text>
                 </Row>
             }
         </Col>
