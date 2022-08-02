@@ -191,7 +191,7 @@ const ThankYou = (props: MapStateToProps) => {
 
   const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
     <FlyoutContent
-      titleText="Pre-hire appointment"
+      titleText={t("BB-ThankYou-nhe-appointment-flyout-title-text", "Pre-hire appointment")}
       onCloseButtonClick={close}
     >
       <Col width="100%" padding="S300" gridGap={15}>

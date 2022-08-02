@@ -1315,6 +1315,14 @@
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
       "value" : "ನಾನು ಉತ್ತರಿಸಲು ಇಚ್ಚಿಸುವುದಿಲ್ಲ",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "ಅಮೇರಿಕನ್ ಇಂಡಿಯನ್/ಅಲಾಸ್ಕಾ ಮೂಲನಿವಾಸಿ",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "ಕಪ್ಪು ಜನಾಂದವರು/ಆಫ್ರಿಕನ್ ಅಮೇರಿಕನ್",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }
