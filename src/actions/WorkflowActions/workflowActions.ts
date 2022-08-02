@@ -44,6 +44,7 @@ export const loadWorkflowDS =
         }
 
         log("Initiated to connect websocket", [jobId, scheduleId, applicationId, candidateId, envConfig]);
+        console.info("[WS] Initiated to connect websocket", [jobId, scheduleId, applicationId, candidateId, envConfig]);
         window.stepFunctionService = StepFunctionService.loadDS(jobId, scheduleId, applicationId, candidateId, envConfig);
       }
     };
@@ -64,6 +65,7 @@ export const startOrResumeWorkflow = () => {
 
 export const startOrResumeWorkflowDS = () => {
   log("Started DS workflow");
+  console.info("[WS] Started/Resume DS workflow");
   boundWorkflowRequestStart();
   const { stepFunctionService } = window;
   const { applicationId, candidateId, jobId, scheduleId } = stepFunctionService;
@@ -178,6 +180,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
 export const completeTask =
     ( application?: Application, currentStep?: string, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME, jobId?: string, schedule?: Schedule ) => {
       console.info("[WS] in completeTask, websocket is: ", window.stepFunctionService?.websocket);
+      console.info("[WS] in completeTask, websocket readyState is: ", window.stepFunctionService?.websocket?.readyState);
       if(window.stepFunctionService?.websocket) {
         boundWorkflowRequestStart();
         const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime || "";
