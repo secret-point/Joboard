@@ -336,6 +336,14 @@
       "value" : "請輸入有效的國家/地區",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "在美國，社會安全號碼 (SSN) 是發給美國公民、永久居民和臨時 (工作) 居民的九位數號碼。",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "國民身分證號碼",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "國民身分證",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "請輸入有效的國民身份證類型",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID 號碼",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "國民身分證號碼",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "請輸入有效的出生日期。",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "您必須年滿 18 歲。",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "社會安全號碼",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>紐約州：</b>您有權向 Amazon 提交書面請求，以了解我們是否要求了有關您的消費者報告或調查消費者報告。以上顯示的是 CRA 的地址及電話號碼。您有權聯絡任何 CRA 查閱或接收任何此類報告的副本。點擊<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">此處</a>了解《紐約州修正法》第 23-A 條有關您的權利的資訊。</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>紐約州：</b>您有權向 Amazon 提交書面請求，以了解我們是否要求了有關您的消費者報告或調查消費者報告。以上顯示的是 CRA 的地址及電話號碼。您有權聯絡任何 CRA 查閱或接收任何此類報告的副本。點擊<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">此處</a>了解《紐約修正法》第 23-A 條有關您權利的資訊。</p>。",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p> <b>華盛頓州：</b> 您有權要求消費者報告機構提供一份關於您在《華盛頓州公平信用報告法案》下的權利的書面摘要。</p>。",
@@ -944,6 +956,10 @@
       "value" : "是",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "否",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "我選擇不認定特定身分",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1164,10 @@
       "value" : "檢閱並提交",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "編輯",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "工作詳細內容",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1319,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT 測試參與聯邦和/或州稅收抵免計劃。您提供的資訊將用於確定公司是否有資格參與這些計劃，絕不會對任何招聘、保留或晉升決定產生負面影響。",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "美國 - 社會安全號碼",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "是，我有身心障礙 (或以前有身心障礙)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "不，我沒有身心障礙",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "我不想回答",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "美洲印第安人/阿拉斯加原住民",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "黑人/非洲裔美國人",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

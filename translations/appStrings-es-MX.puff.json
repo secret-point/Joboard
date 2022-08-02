@@ -472,10 +472,6 @@
       "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor acerca de ti. Arriba se muestra la dirección y el número de teléfono del CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho reporte. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información acerca de tus derechos en virtud del artículo 23-A de la Ley de Corrección de Nueva York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor acerca de ti. Arriba se muestra la dirección y el número de teléfono del CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho reporte. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información acerca de tus derechos en virtud del artículo 23-A de la Ley de Corrección de Nueva York.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos bajo la Ley de Informe Justo de Crédito de Washington.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1307,6 +1303,14 @@
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Estados Unidos: número de seguridad Social",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Indio Americano/Nativo de Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Negro/Afroamericano",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

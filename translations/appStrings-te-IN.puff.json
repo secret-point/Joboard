@@ -336,6 +336,14 @@
       "value" : "దయచేసి చెల్లుబాటు అయ్యే దేశాన్ని ఎంటర్ చేయండి",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "అమెరికాలో, సోషల్ సెక్యూరిటీ నంబర్ (SSN) అనేది U.S. పౌరులు, శాశ్వత నివాసితులు మరియు తాత్కాలిక (పని చేసే) నివాసితులకు జారీ చేయబడిన తొమ్మిది అంకెల సంఖ్య.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "జాతీయ ID నంబర్",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "జాతీయ ID",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "దయచేసి చెల్లుబాటు అయ్యే జాతీయ ID రకాన్ని నమోదు చేయండి",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID నంబర్",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "జాతీయ ID నంబర్",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "దయచేసి చెల్లుబాటు అయ్యే పుట్టిన తేదీని నమోదు చేయండి.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "మీకు 18 సంవత్సరాల కంటే ఎక్కువ వయస్సు ఉండాలి.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "సోషల్ సెక్యూరిటీ నంబర్",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>న్యూ యార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ఇక్కడ </a> క్లిక్ చేయండి.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>న్యూ యార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\"> ఇక్కడ</a> క్లిక్ చేయండి.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>వాషింగ్టన్: </b> వాషింగ్టన్ ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ కింద మీ హక్కులకు సంబంధించిన వ్రాతపూర్వక సారాంశాన్ని వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి అభ్యర్థించడానికి మీకు హక్కు ఉంది.</p>.",
@@ -944,6 +956,10 @@
       "value" : "అవును",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "లేదు",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "నేను చెప్పదలుచుకోలేదు అని ఎంచుకుంటున్నాను",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1303,6 +1319,10 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT టెస్టింగ్ ఫెడరల్ మరియు లేదా స్టేట్ టాక్స్ క్రెడిట్ ప్రోగ్రామ్‌లలో పాల్గొంటుంది. మీరు అందించే సమాచారం ఈ ప్రోగ్రామ్‌ల కోసం కంపెనీ అర్హతను నిర్ణయించడానికి ఉపయోగించబడుతుంది మరియు ఎటువంటి నియామకం, నిలుపుదల లేదా ప్రమోషన్ నిర్ణయాలపై ప్రతికూల ప్రభావం చూపదు.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "యునైటెడ్ స్టేట్స్ - సోషల్ సెక్యూరిటీ నంబర్",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
       "value" : "అవును, నాకు వైకల్యం ఉంది (లేదా గతంలో వైకల్యం ఉండేది)",

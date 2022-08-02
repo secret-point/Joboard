@@ -336,6 +336,14 @@
       "value" : "Introduza um código de país válido",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "Nos Estados Unidos, um Número de Identificação de Segurança Social (NISS) é um número de nove dígitos emitido a cidadãos, residentes permanentes e residentes temporários (a trabalhar) nos EUA.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Número de ID nacional",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "Documento de identificação nacional",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Insira um tipo de ID nacional válida",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Número de ID",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Número de identificação nacional",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Insira uma data de nascimento válida.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "É necessário ter mais de 18 anos de idade.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Número de segurança social",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NOVA IORQUE: </b>tem o direito de enviar um pedido por escrito à Amazon para saber se solicitámos um relatório de consumidor ou relatório investigativo de consumidor sobre si. Acima são apresentados a morada e o número de telefone da CRA. Tem o direito de entrar em contacto com qualquer CRA para inspecionar ou receber uma cópia de tais relatórios. Clique <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aqui</a> para obter informações sobre os seus direitos ao abrigo do Artigo 23-A da New York Correction Law (Lei de correção de Nova Iorque).</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NOVA IORQUE: </b>tem o direito de enviar um pedido por escrito à Amazon para saber se solicitámos um relatório de consumidor ou relatório investigativo de consumidor sobre si. Acima são apresentados a morada e o número de telefone da CRA. Tem o direito de entrar em contacto com qualquer CRA para inspecionar ou receber uma cópia de tais relatórios. Clique <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aqui</a> para obter informações sobre os seus direitos sob o Artigo 23-A da New York Correction Law (Lei de correção de Nova Iorque).</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Tem o direito de solicitar à agência de relatórios de consumidor um resumo por escrito dos seus direitos ao abrigo da Washington Fair Credit Reporting Act (Lei de relatório de crédito justo de Washington).</p>.",
@@ -943,6 +955,10 @@
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
       "value" : "Sim",
       "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "Não",
+      "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Prefiro não me identificar",

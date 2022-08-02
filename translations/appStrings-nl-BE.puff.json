@@ -488,10 +488,6 @@
       "value" : "<p><b>NEW YORK: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een screeningrapport of een onderzoeksrapport over jou hebben aangevraagd. Hierboven zie je het adres en telefoonnummer van het screeningbureau. Je hebt het recht om contact op te nemen met een screeningbureau om een dergelijk rapport in te zien of een kopie op te vragen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een screeningrapport of een consumentenonderzoeksrapport over jou hebben aangevraagd. Hierboven zie je het adres en telefoonnummer van het screeningbureau. Je hebt het recht om contact op te nemen met een screeningbureau om een dergelijk rapport in te zien of een kopie op te vragen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Je hebt het recht om bij het screeningbureau een schriftelijke samenvatting te vragen van je rechten op grond van de Washington Fair Credit Reporting Act.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1324,9 +1320,733 @@
       "value" : "Amazon IAT-tests nemen deel aan federale en/of nationale belastingkredietprogramma's. De informatie die je geeft, wordt gebruikt om te bepalen of het bedrijf in aanmerking komt voor deze programma's en heeft op geen enkele manier een negatieve invloed op aanwervings-, behoud- of promotiebeslissingen.",
       "note" : "Text for the WOTC page description text"
     },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "Mogelijke startdatum:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(of eerder!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "per uur",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "uur/week",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "Bonus:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "De door jou verstrekte informatie voldoet niet aan onze vereisten. We raden je aan om naar andere vacatures op amazon.jobs te kijken.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "Sorry, je hebt al gesolliciteerd voor deze vacature.",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "Een of meer vereiste velden ontbreken.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "Er is iets fout gegaan met de server. Probeer het nog eens of vernieuw de browser.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "De kandidaat is inactief. Kan geen aanvraag voor kandidaat aanmaken.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "Kandidaat niet gevonden.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "De sollicitatie kan niet worden bijgewerkt omdat er een recentere update bestaat.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "Kan geen sollicitatie aanmaken.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "De sollicitatie-ID komt niet overeen met de ID in de aanvraag.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "Kan de sollicitatie niet vinden.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "Verplichte velden ontbreken: sollicitatie-ID.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "De sollicitatie kan niet worden bijgewerkt omdat er een recentere update bestaat.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "Er is iets fout gegaan met de server. Probeer het nog eens of vernieuw de browser.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "Je hebt geen toegang tot deze sollicitatie.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "Teken de bevestiging alstublieft.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "Teken de FCRA-aanvraag.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "Teken de bevestiging alstublieft.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "Teken de mededelingen van de staat.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "Het schema dat je hebt geselecteerd, is niet langer beschikbaar. Selecteer een ander schema.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "Elektronische handtekeningen komen niet overeen. Gebruik voor elke elektronische handtekening dezelfde tekst.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "Het bijwerken van de sollicitatie is mislukt omdat je het maximale aantal wijzigingen in jouw nationale ID hebt bereikt. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "Het bijwerken van de sollicitatie is mislukt omdat het opgegeven nationale identiteitsnummer ongeldig is. Voer het juiste en volledige nationale identiteitsnummer in voordat je doorgaat.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "Het type aanvraag ontbreekt.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "Type komt niet overeen met de aanvraag.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "Geboortedatum ontbreekt in de sollicitatie.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "Geef een geldige datum op.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "Sollicitatie-ID ontbreekt in de aanvraag.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "Overheids-ID ontbreekt in de aanvraag.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "ID-nummer ontbreekt in de aanvraag.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "\"Is er een strafblad in de laatste zeven jaar\" ontbreekt in de aanvraag.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "Adresregel 1 ontbreekt in het adresgedeelte.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "Stad ontbreekt in het adresgedeelte.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "Staat ontbreekt in het adresgedeelte.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "Postcode ontbreekt in het adresgedeelte.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "Land ontbreekt in het adresgedeelte.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "Voer de eerder gebruikte wettelijke volledige naam in met de volgende notatie: Voornaam Achternaam.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "Aanvullende achtergrondinformatie is niet geldig. Werk alle vereiste velden bij.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "De afspraak voor het aanwervingsevenement ontbreekt in de aanvraag.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "Aanbevelingsinformatie ontbreekt in de aanvraag.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "Etniciteit ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "Geslacht ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "Informatie over militaire echtgenoten ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "Informatie over beschermde veteranen ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "Informatie over veteranen ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "Handicap ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "\"Heeft BGC de California Disclosure erkend\" ontbreekt in de sollicitatie.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Het SSN-nummer of nationale identiteitsnummer dat je hebt ingevoerd, is al gekoppeld aan een ander e-mailadres in ons systeem. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "Kan vacature niet ophalen.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "Er is iets misgegaan bij het ophalen van vacatures. Vernieuw de pagina of probeer het later nog eens.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "Het ophalen van vacatures is op dit moment niet gelukt. Probeer het later nog eens.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "Alle diensten zijn gevuld.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "Alle diensten zijn gevuld.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "Kan de telling van het aantal aanvragen niet ophalen.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "Alle diensten zijn gevuld.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "Er is iets fout gegaan. Vernieuw de pagina of probeer het later nog eens.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "Er is iets misgegaan bij het ophalen van vacatures. Vernieuw de pagina of probeer het later nog eens.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "Kan dienstvoorkeuren niet ophalen.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "Het ophalen van vacatures is op dit moment niet gelukt. Probeer het later nog eens.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "Kon geen kandidaat verkrijgen.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "Je hebt geen toegang tot deze sollicitatie.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "Kan geen sollicitatie aanmaken.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "Je kunt geen sollicitatie aanmaken.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "Sollicitatie-ID is vereist om sollicitatiegegevens te verkrijgen.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "Je hebt geen toegang tot deze sollicitatie.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "Kan deze sollicitatie niet ophalen.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "Er is iets fout gegaan met de server. Probeer het nog eens of vernieuw de browser.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "Workflow-fout",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "De workflow van de sollicitatie is mislukt.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "De door jou verstrekte informatie voldoet niet aan onze vereisten. We raden je aan om naar andere vacatures op amazon.jobs te kijken.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "De door jou verstrekte informatie voldoet niet aan onze vereisten. We raden je aan om naar andere vacatures op amazon.jobs te kijken.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "De door jou verstrekte informatie voldoet niet aan onze vereisten. We raden je aan om naar andere vacatures op amazon.jobs te kijken.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "De reservering van jouw vacature is verlopen.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "We geven kandidaten tot drie uur de tijd om hun sollicitatie te voltooien. Helaas overschreed je bij het solliciteren voor een functie de limiet van drie uur. Bekijk de beschikbare vacatures.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "Vacatures bekijken",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "Er zijn momenteel geen afspraken beschikbaar voor deze functie.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "Je mag:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1 Selecteer een andere vacature.",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "Klik hier",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. Selecteer een dienst met een latere startdatum (aanbevolen)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "Andere diensten bekijken",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "Vink het vakje aan om verder te gaan.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "Vink het vakje aan om verder te gaan.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "Vink het vakje aan om verder te gaan.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL — Alabama",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK — Alaska",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ — Arizona",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR — Arkansas",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA — Californië",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO — Colorado",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT — Connecticut",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE — Delaware",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- District van Columbia",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL — Florida",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA — Georgia",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI — Hawaï",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID — Idaho",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL — Illinois",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN — Indiana",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA — Iowa",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS — Kansas",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY — Kentucky",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA — Louisiana",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME — Maine",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD — Maryland",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA — Massachusetts",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI — Michigan",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN — Minnesota",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS — Mississippi",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO — Missouri",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT — Montana",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE — Nebraska",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV — Nevada",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH — New Hampshire",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ — New Jersey",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM — New Mexico",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY - New York",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC — North Carolina",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- North Dakota",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH — Ohio",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK — Oklahoma",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR — Oregon",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA — Pennsylvania",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI — Rhode Island",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC — South Carolina",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD — South Dakota",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN — Tennessee",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX — Texas",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT — Utah",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT — Vermont",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA — Virginia",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA - Washington",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI - Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV - West Virginia",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY - Wyoming",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "Het updaten van WOTC is mislukt.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "Het schema dat je hebt geselecteerd, is niet langer beschikbaar. Selecteer een andere optie.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "Je bent onlangs aangenomen voor deze sollicitatie, jouw dienst kan niet worden gewijzigd. Neem contact op via https://www.amazondelivers.jobs/contactus om je dienst te wijzigen.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "Het bijwerken van de sollicitatie is mislukt.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "Aanvullende achtergrondinformatie",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "Bedankt voor je interesse in de functie van {jobTitle}. Uit onze gegevens blijkt dat je eerder bij Amazon hebt gewerkt.  Op dit moment kom je in aanmerking voor herindiensttreding als Seasonal Amazon Associate of externe uitzendkracht op basis van je arbeidsverleden. Als gevolg hiervan kunnen we niet verder gaan met jouw kandidatuur voor deze functie. Als je vragen hebt over het in aanmerking komen voor een nieuwe aanwerving, neem dan contact op met het HR-team.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "Bedankt voor je interesse in deze functie. Uit onze gegevens blijkt dat je eerder bij Amazon hebt gewerkt.  Op dit moment kom je in aanmerking voor herindiensttreding als Seasonal Amazon Associate of externe uitzendkracht op basis van je arbeidsverleden. Als gevolg hiervan kunnen we niet verder gaan met jouw kandidatuur voor deze functie. Als je vragen hebt over het in aanmerking komen voor een nieuwe aanwerving, neem dan contact op met het HR-team.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "Bezoek onze Seizoenspagina om seizoensmogelijkheden in jouw regio te verkennen.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Bedankt voor je recente sollicitatie bij Amazon. Na zorgvuldige afweging gaan we niet verder met jouw sollicitatie.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "We waarderen jouw tijd en wensen je veel succes in de toekomst.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "Bedankt voor je recente sollicitatie! Helaas kom je niet in aanmerking voor deze specifieke functie omdat je al in dienst bent bij Amazon.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "Goed nieuws! Er zijn tal van openstaande mogelijkheden die je online kunt bekijken en aanvragen. Hier zijn enkele manieren waarop je jouw toekomstige carrièregroei kunt verkennen:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "Ga voor conversies voor agentschappen of seizoenen naar amazon.com/conversions (http://amazon.com/conversions).",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "Neem contact op met je team ter plaatse als je een shift- of locatiewijziging wilt aanvragen.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "Jouw lokale HR-team of het Employee Resource Center (ERC) zijn de beste bron voor al jouw vragen. Je kunt het ERC-team 24/7 bereiken op het telefoonnummer 1-888-892-7180 (tel:18888927180).",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Bedankt dat je deel uitmaakt van het geweldige team van Amazon! We streven er voortdurend naar om je de best mogelijke personeelsmiddelen, voordelen, beloning en flexibele schema's te bieden - allemaal ter ondersteuning van onze inspanningen om de grootste werkgever ter wereld te worden!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "Bedankt voor je interesse in de functie van {jobTitle}. Uit onze gegevens blijkt dat je eerder bij Amazon hebt gewerkt en niet in aanmerking komt voor een nieuwe aanwerving op basis van je eerdere arbeidsverleden bij Amazon. Als gevolg hiervan kunnen we op dit moment niet verder gaan met jouw kandidatuur.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "Bedankt voor je interesse in deze functie. Uit onze gegevens blijkt dat je eerder bij Amazon hebt gewerkt en niet in aanmerking komt voor een nieuwe aanwerving op basis van je eerdere arbeidsverleden bij Amazon. Als gevolg hiervan kunnen we op dit moment niet verder gaan met jouw kandidatuur.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "Vanwege de reden van beëindiging kun je 90 dagen na je laatste werkdag bij Amazon opnieuw een aanvraag indienen.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Momenteel zijn alle diensten gevuld.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Ga terug naar het dashboard om te solliciteren op andere vacatures.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "Fout in de sollicitatie",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "Er is iets mis, ga naar het dashboard.",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Vink het vakje aan om verder te gaan.",
+      "note" : "Text for the detailed radio button error."
+    },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Verenigde Staten - Rijksregisternummer",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "JA, IK HEB EEN HANDICAP (of had vroeger een handicap)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "NEE, IK HEB GEEN HANDICAP",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "IK WENS NIET TE ANTWOORDEN",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Amerikaans-Indiaans/Alaska inheems",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Zwart/Afro-Amerikaans",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

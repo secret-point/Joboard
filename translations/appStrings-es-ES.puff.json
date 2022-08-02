@@ -472,10 +472,6 @@
       "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si hemos pedido un informe del consumidor o un informe de investigación del consumidor sobre ti. Arriba se muestra la dirección y el número de teléfono del CRA. Tienes derecho a contactar con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del Artículo 23-A de la Ley Correccional de Nueva York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si hemos pedido un informe del consumidor o un informe de investigación del consumidor sobre ti. Arriba se muestra la dirección y el número de teléfono del CRA. Tienes derecho a contactar con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información sobre tus derechos en virtud del Artículo 23-A de la Ley Correccional de Nueva York.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes del consumidor un resumen por escrito de tus derechos en virtud de la Ley de Informe Justo de Crédito de Washington.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1148,6 +1144,10 @@
       "value" : "Revisar y enviar",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Editar",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Detalles del trabajo",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1299,22 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Las pruebas de Amazon IAT forman parte de programas de crédito fiscal federales o estatales. La información que nos des se utilizará para determinar la admisibilidad de la empresa en estos programas y no afectará negativamente, en ningún aspecto, a las decisiones de contratación, permanencia o ascenso.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Estados Unidos: número de la seguridad social",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "SÍ, TENGO UNA DISCAPACIDAD (o he tenido una discapacidad anteriormente)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "NO, NO TENGO NINGUNA DISCAPACIDAD",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "PREFIERO NO RESPONDER",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     }
   }
 }

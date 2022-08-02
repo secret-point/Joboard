@@ -488,10 +488,6 @@
       "value" : "<p><b>뉴욕: </b>귀하는 아마존이 귀하에 대한 소비자 보고서 또는 조사 소비자 보고서를 주문했는지 확인하기 위해 아마존에 서면 요청을 제출할 권리가 있습니다. 위에 표시된 내용은 CRA의 주소와 전화번호입니다. 귀하는 해당 보고서를 점검하거나 사본을 받기 위해 CRA에 연락할 권리가 있습니다. 뉴욕 교정법 23-A조에 따른 귀하의 권리에 대한 정보를 보려면 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">여기</a>를 클릭하세요.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>뉴욕: </b>귀하는 아마존이 귀하에 대한 소비자 보고서 또는 조사 소비자 보고서를 주문했는지 확인하기 위해 아마존에 서면 요청을 제출할 권리가 있습니다. 위에 표시된 내용은 CRA의 주소와 전화번호입니다. 귀하는 해당 보고서를 점검하거나 사본을 받기 위해 CRA에 연락할 권리가 있습니다. 뉴욕 교정법 23-A조에 따른 귀하의 권리에 대한 정보를 보려면 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">여기</a>를 클릭하세요.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>워싱턴: </b>귀하는 워싱턴 공정 신용 보고법에 따라 소비자 보고 기관에 귀하의 권리에 대한 서면 요약을 요청할 권리가 있습니다.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1319,6 +1315,710 @@
     "BB-WOTC-page-description-text" : {
       "value" : "아마존 IAT 테스트는 연방 및/또는 주 세금 공제 프로그램에 참여합니다. 귀하가 제공하는 정보는 이러한 프로그램에 대한 회사의 자격을 결정하는 데 사용되며 채용, 유지 또는 승진 결정에 부정적인 영향을 전혀 미치지 않습니다.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "가능한 시작 날짜:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(또는 그 이전!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/시간",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "시간/주",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "보너스:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "관심을 가져주셔서 감사하지만, 이번에는 귀하를 채용할 수 없게 됐습니다.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "제공하신 정보가 당사의 요구 사항을 충족하지 않습니다. amazon.jobs에서 다른 채용 정보를 살펴보는 것을 권장드립니다.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "죄송합니다. 이미 이 직무에 지원하셨습니다!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "필수 필드가 누락되었습니다.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "서버에 문제가 발생했습니다. 다시 시도하거나 브라우저를 새로 고치세요.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "지원자 현황이 비활성 상태입니다. 지원자의 지원서를 생성할 수 없습니다.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "지원자를 찾을 수 없습니다.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "더 많은 최신 업데이트가 있으므로 지원서를 업데이트할 수 없습니다.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "지원서를 생성할 수 없습니다.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "지원서 ID가 요청 경로의 ID와 일치하지 않습니다.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "지원서를 찾을 수 없습니다.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "필수 필드 누락: 지원서 ID",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "더 많은 최신 업데이트가 있으므로 지원서를 업데이트할 수 없습니다.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "서버에 문제가 발생했습니다. 다시 시도하거나 브라우저를 새로 고치세요.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "이 지원서에 접근할 수 없습니다.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "승인에 서명하세요.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "공정신용보고법(FCRA) 요청 서류에 서명하세요.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "승인에 서명하세요.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "주 공지에 서명하세요.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "선택하신 일정을 더 이상 사용할 수 없습니다. 다른 일정을 선택하세요.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "전자 서명이 일치하지 않습니다. 각 전자 서명에 동일한 텍스트를 사용하세요.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "국가 신분증의 최대 변경 횟수에 도달했기 때문에 지원서 업데이트에 실패했습니다. 이전에 다른 이메일 주소로 가입한 적이 있는 경우 로그아웃하고 필요한 경우 “개인 PIN을 잊으셨습니까?” 링크를 사용하여 해당 이메일로 로그인해 보세요. 도움이 필요하면 이메일을 통해 문의하거나 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>에서 채팅을 이용하세요.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "제공된 국가 신분증 번호가 유효하지 않아 지원서 업데이트에 실패했습니다. 계속하기 전에 올바르고 완전한 국가 신분증 번호를 입력하세요.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "요청 유형이 누락되었습니다.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "유형이 요청과 일치하지 않습니다.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "페이로드에서 생년월일이 누락되었습니다.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "올바른 날짜를 입력하세요.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "정보 요청 항목에서 지원서 ID가 누락되었습니다.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "정보 요청 항목에서 정부 ID가 누락되었습니다.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "정보 요청 항목에서 ID 번호가 누락되었습니다.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "정보 요청 항목에서 7년 이내 범죄 경력 내역이 누락되었습니다.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "주소 개체에서 주소란 1이 누락되었습니다.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "주소 개체에서 시/군이 누락되었습니다.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "주소 개체에서 주/도가 누락되었습니다.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "주소 개체에서 우편 번호가 누락되었습니다.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "주소 개체에서 국가가 누락되었습니다.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "이전에 사용한 법적 성명을 다음 형식으로 입력: 이름 성.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "추가 배경 정보가 유효하지 않습니다. 필수 필드를 모두 업데이트하세요.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "정보 요청 항목에서 약속 시간 개체가 누락되었습니다.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "정보 요청 항목에서 추천 정보가 누락되었습니다.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "페이로드에서 민족이 누락되었습니다.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "페이로드에서 성별이 누락되었습니다.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "페이로드에서 군인 배우자 정보가 누락되었습니다.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "페이로드에서 보호 대상 재향 군인 정보가 누락되었습니다.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "페이로드에서 재향 군인 정보가 누락되었습니다.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "페이로드에서 장애가 누락되었습니다.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "페이로드에서 BGC 캘리포니아 공개 승인이 누락되었습니다.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "입력하신 SSN 또는 국가 신분증 번호가 이미 당사 시스템의 다른 이메일 주소와 연결되어 있습니다. 이전에 다른 이메일 주소로 가입한 적이 있는 경우 [로그아웃](/application/logout)하고 필요한 경우 “개인 PIN을 잊으셨습니까?” 링크를 사용하여 해당 이메일로 로그인해 보세요. 도움이 필요하면 이메일을 통해 문의하거나 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>에서 채팅을 이용하세요.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "채용 정보를 가져올 수 없습니다.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "일자리를 가져오는 중에 문제가 발생했습니다! 페이지를 새로 고치거나 나중에 다시 시도하세요.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "현재 채용 정보를 검색하지 못했습니다. 잠시 후 다시 시도하세요.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "모든 근무조가 충원됐습니다.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "모든 근무조가 충원됐습니다.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "인원수 요청을 가져올 수 없습니다.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "모든 근무조가 충원됐습니다.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "문제가 발생했습니다! 페이지를 새로 고치거나 나중에 다시 시도하세요.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "일자리를 가져오는 중에 문제가 발생했습니다! 페이지를 새로 고치거나 나중에 다시 시도하세요.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "근무조 선호 사항을 가져올 수 없습니다.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "현재 채용 정보를 검색하지 못했습니다. 잠시 후 다시 시도하세요.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "지원자를 가져오지 못했습니다.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "이 지원서에 접근할 수 없습니다.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "지원서를 생성할 수 없습니다.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "지원서를 생성할 수 없습니다.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "지원서 데이터를 가져오려면 지원서 ID가 필요합니다.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "이 지원서에 접근할 수 없습니다.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "이 지원서를 가져올 수 없습니다.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "서버에 문제가 발생했습니다. 다시 시도하거나 브라우저를 새로 고치세요.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "워크플로 오류",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "지원서 워크플로는 실패했지만.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "관심을 가져주셔서 감사하지만, 이번에는 귀하를 채용할 수 없게 됐습니다.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "제공하신 정보가 당사의 요구 사항을 충족하지 않습니다. amazon.jobs에서 다른 채용 정보를 살펴보는 것을 권장드립니다.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "관심을 가져주셔서 감사하지만, 이번에는 귀하를 채용할 수 없게 됐습니다.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "제공하신 정보가 당사의 요구 사항을 충족하지 않습니다. amazon.jobs에서 다른 채용 정보를 살펴보는 것을 권장드립니다.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "관심을 가져주셔서 감사하지만, 이번에는 귀하를 채용할 수 없게 됐습니다.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "제공하신 정보가 당사의 요구 사항을 충족하지 않습니다. amazon.jobs에서 다른 채용 정보를 살펴보는 것을 권장드립니다.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "직책 예약이 만료되었습니다.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "지원자는 최대 3시간 동안 지원서를 작성할 수 있습니다. 안타깝게도 지원서를 작성하시던 직책이 3시간 제한을 초과했습니다. 유효한 채용 기회를 찾아보세요.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "채용 기회 보기",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "현재 이 직책에 유효한 약속 시간이 없습니다.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "다음이 가능할 수 있습니다.",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. 다른 채용 기회 선택",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "여기를 클릭",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. 시작 날짜가 더 늦은 근무조 선택(권장)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "다른 근무조 보기",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "계속 진행하려면 확인란을 선택하세요.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "계속 진행하려면 확인란을 선택하세요.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "계속 진행하려면 확인란을 선택하세요.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- 앨라배마",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- 알래스카",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- 애리조나",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- 아칸소",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- 캘리포니아",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- 콜로라도",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- 코네티컷",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- 델라웨어",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- 컬럼비아 특별구",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- 플로리다",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- 조지아",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- 하와이",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- 아이다호",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- 일리노이",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- 인디애나",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- 아이오와",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- 캔자스",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- 켄터키",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- 루이지애나",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- 메인",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- 메릴랜드",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- 매사추세츠",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- 미시건",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- 미네소타",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- 미시시피",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- 미주리",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- 몬태나",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- 네브래스카",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- 네바다",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- 뉴햄프셔",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- 뉴저지",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- 뉴멕시코",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- 뉴욕",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- 노스캐롤라이나",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- 노스다코타",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- 오하이오",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- 오클라호마",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- 오리건",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- 펜실베이니아",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- 로드아일랜드",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- 사우스캐롤라이나",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- 사우스다코타",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- 테네시",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- 텍사스",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- 유타",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- 버몬트",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- 버지니아",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA -- 워싱턴",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI -- 위스콘신",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV -- 웨스트버지니아",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY -- 와이오밍",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "WOTC를 업데이트하지 못했습니다.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "선택하신 일정을 더 이상 사용할 수 없습니다. 다른 옵션을 선택하세요.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "최근에 이 지원서를 통해 고용되었으므로 근무조를 변경할 수 없습니다. 근무조를 변경하려면 https://www.amazondelivers.jobs/contactus로 문의하세요.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "지원서를 업데이트하지 못했습니다.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "추가 신원 정보",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} 직책에 관심을 가져주셔서 감사합니다. 기록에 따르면 이전에 아마존에서 근무하셨던 것으로 보입니다.  현재 고용 기록에 따라 귀하는 시즌별 아마존 어소시에이트 또는 타사 에이전시 직원으로 재고용될 수 있는 자격에 해당됩니다. 결과적으로 이 직무에 대한 귀하의 입사 지원을 진행할 수 없습니다. 재고용 자격과 관련하여 궁금한 점이 있으면 사이트 HR 팀에 문의하세요.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "이 직책에 관심을 가져주셔서 감사합니다. 기록에 따르면 이전에 아마존에서 근무하셨던 것으로 보입니다.  현재 고용 기록에 따라 귀하는 시즌별 아마존 어소시에이트 또는 타사 에이전시 직원으로 재고용될 수 있는 자격에 해당됩니다. 결과적으로 이 직무에 대한 귀하의 입사 지원을 진행할 수 없습니다. 재고용 자격과 관련하여 궁금한 점이 있으면 사이트 HR 팀에 문의하세요.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "시즌제 페이지를 방문하여 해당 지역의 시즌제 취업 기회를 살펴보세요.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "최근 아마존에 입사 지원해 주셔서 감사합니다. 신중하게 고려 과정을 거친 후, 귀하의 입사 지원을 진행하지 않기로 했습니다.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "당사는 귀하의 시간을 소중히 여기며 앞으로의 행운을 기원합니다.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "최근의 입사 지원에 감사드립니다! 안타깝지만 아마존에 이미 고용된 상태이기에 이 특정 직책에 대한 자격을 충족하지 못하십니다.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "좋은 소식이 있습니다. 온라인에서 찾아보고 지원할 수 있는 열린 기회가 많이 있습니다. 다음은 미래의 경력 성장을 탐색할 수 있는 몇 가지 방법입니다.",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "에이전시 또는 시즌제 전환의 경우 amazon.com/conversions(http://amazon.com/conversions)를 방문하세요.",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "근무조 또는 근무지 변경을 요청하려면 현장 지원 팀에 문의하세요.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "현지 HR 팀 또는 직원 리소스 센터(ERC)가 모든 질문에 대한 최고의 리소스입니다. 1-888-892-7180(전화:18888927180)으로 연중무휴 24시간 ERC 팀에 연락하실 수 있습니다.",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "뛰어난 아마존 팀의 일원이 되어 주셔서 감사합니다! 당사는 가능한 최고의 직원 자원, 복리 후생, 급여 및 유연한 일정을 제공하기 위해 지속적으로 노력하고 있으며, 이 모든 것은 지구 최고의 고용주가 되려는 저희의 노력에 도움이 됩니다!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "{jobTitle} 직책에 관심을 가져주셔서 감사합니다. 아마존 기록에 따르면 귀하는 이전에 아마존에서 근무했으며 이전 아마존 고용 기록에 근거할 때 재고용 자격에 해당되지 않습니다. 따라서 현재로서는 귀하의 입사 지원을 진행할 수 없습니다.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "이 직책에 관심을 가져주셔서 감사합니다. 아마존 기록에 따르면 귀하는 이전에 아마존에서 근무했으며 이전 아마존 고용 기록에 근거할 때 재고용 자격에 해당되지 않습니다. 따라서 현재로서는 귀하의 입사 지원을 진행할 수 없습니다.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "종료 이유로 인해 아마존에서 근무한 마지막 날로부터 90일 후에 다시 지원하실 수 있습니다.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "현재 모든 근무조가 충원되었습니다.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "다른 직무에 지원하려면 대시보드로 돌아가세요.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "지원서 오류",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "문제가 발생했습니다. 대시보드로 이동하세요.",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "계속 진행하려면 확인란을 선택하세요.",
+      "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-disability-yes" : {
       "value" : "예, 저는 장애가 있습니다(또는 이전에 장애가 있었습니다).",

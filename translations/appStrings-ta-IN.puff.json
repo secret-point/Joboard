@@ -472,10 +472,6 @@
       "value" : "<p><b>நியூயார்க்: </b>உங்களைப் பற்றிய நுகர்வோர் அறிக்கை அல்லது புலனாய்வு நுகர்வோர் அறிக்கையை நாங்கள் ஆர்டர் செய்தோமா என்பதை அறிய Amazonக்கு எழுத்துப்பூர்வக் கோரிக்கையைச் சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. மேலே காட்டப்பட்டுள்ள CRAஇன் முகவரி மற்றும் தொலைபேசி எண். அத்தகைய அறிக்கையின் நகலை ஆய்வு செய்ய அல்லது பெற, எந்த CRAஐயும் தொடர்பு கொள்ள உங்களுக்கு உரிமை உள்ளது. நியூயார்க் திருத்தச் சட்டத்தின் பிரிவு 23-A இன் கீழ் உங்கள் உரிமைகள் பற்றிய தகவல்களுக்கு <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">இங்கே</a> கிளிக் செய்யவும்.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>நியூயார்க்: </b>உங்களைப் பற்றிய நுகர்வோர் அறிக்கை அல்லது புலனாய்வு நுகர்வோர் அறிக்கையை நாங்கள் ஆர்டர் செய்தோமா என்பதை அறிய Amazonக்கு எழுத்துப்பூர்வக் கோரிக்கையைச் சமர்ப்பிக்க உங்களுக்கு உரிமை உள்ளது. மேலே காட்டப்பட்டுள்ள CRAஇன் முகவரி மற்றும் தொலைபேசி எண். அத்தகைய அறிக்கையின் நகலை ஆய்வு செய்ய அல்லது பெற, எந்த CRAஐயும் தொடர்பு கொள்ள உங்களுக்கு உரிமை உள்ளது. நியூயார்க் திருத்தச் சட்டத்தின் பிரிவு 23-A இன் கீழ் உங்கள் உரிமைகள் பற்றிய தகவல்களுக்கு <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">இங்கே</a> கிளிக் செய்யவும்.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>வாஷிங்டன்: </b>வாஷிங்டன் நியாயமான கடன் அறிக்கையிடல் சட்டத்தின் கீழ் உங்கள் உரிமைகள் பற்றிய எழுத்துப்பூர்வ சுருக்கத்தை நுகர்வோர் அறிக்கையிடல் நிறுவனத்திடம் கோர உங்களுக்கு உரிமை உள்ளது..</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1307,6 +1303,26 @@
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "அமெரிக்கா - சமூகப் பாதுகாப்பு எண்",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "ஆம், நான் ஒரு மாற்றுத்திறனாளி (அல்லது முன்பு மாற்றுத்திறனாளியாக இருந்தேன்)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "இல்லை, நான் ஒரு மாற்றுத்திறனாளி அல்ல",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "நான் பதிலளிக்க விரும்பவில்லை",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "அமெரிக்க இந்தியர்/அலாஸ்கா பூர்வீகம்",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "கறுப்பு/ஆப்பிரிக்க அமெரிக்கர்",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

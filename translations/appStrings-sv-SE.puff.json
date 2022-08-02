@@ -472,10 +472,6 @@
       "value" : "<p><b>NEW YORK: </b>Du har rätt att skicka en skriftlig begäran till Amazon för att få reda på om vi har begärt en personupplysning eller utredande personupplysning om dig. Ovan visas kreditupplysningsföretagets adress och telefonnummer. Du har rätt att kontakta alla kreditupplysningsföretag för att inspektera eller få en kopia på varje sådan rapport. Klicka <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">här</a> för information om dina rättigheter enligt artikel 23-A i New Yorks kriminalvårdslag (Correction Law).</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK: </b>Du har rätt att skicka en skriftlig begäran till Amazon för att få reda på om vi har begärt en personupplysning eller utredande personupplysning om dig. Ovan visas kreditupplysningsföretagets adress och telefonnummer. Du har rätt att kontakta alla kreditupplysningsföretag för att inspektera eller få en kopia på varje sådan rapport. Klicka <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">här</a> för information om dina rättigheter enligt artikel 23-A i New Yorks kriminalvårdslag (Correction Law).</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Du har rätt att från kreditupplysningsföretaget begära en skriftlig sammanfattning över dina rättigheter enligt Washingtons lag om skälig kreditupplysning (Washington Fair Credit Reporting Act).</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1299,6 +1295,18 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Amazon IAT-testning deltar i federala och eller statliga skattekreditprogram. Informationen du ger kommer att användas för att fastställa företagets behörighet för dessa program och påverkar inte på något sätt anställnings-, vidareanställnings- eller befordringsbeslut negativt.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "JA, JAG HAR ETT FUNKTIONSHINDER (eller har tidigare haft ett funktionshinder)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "NEJ, JAG HAR INGA FUNKTIONSHINDER",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "JAG VILL INTE SVARA",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     }
   }
 }

@@ -336,6 +336,14 @@
       "value" : "Ingresa un país válido",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "En los Estados Unidos, el número de Seguro Social (SSN) es un número de nueve dígitos que se le concede a los ciudadanos estadounidenses, residentes permanentes y residentes temporales (que trabajan).",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Número identificación nacional",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "ID nacional",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Ingresa un tipo de ID nacional válido",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Número de identificación",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Número de ID nacional",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Ingresa una fecha de nacimiento válida.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "Debes tener más de 18 años de edad.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Número de seguridad social",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si ordenamos un informe sobre el consumidor o un informe de investigación sobre el consumidor relacionado contigo. Arriba se muestra la dirección y el número de teléfono de la CRA. Tiene derecho a contactar a cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información acerca de tus derechos según el artículo 23-A de la Ley de Corrección de Nueva York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si ordenamos un informe sobre el consumidor o un informe de investigación sobre el consumidor relacionado contigo. Arriba se muestra la dirección y el número de teléfono de la CRA. Tiene derecho a contactar a cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información acerca de tus derechos según el artículo 23-A de la Ley de Corrección de Nueva York.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de informes sobre el consumidor un resumen por escrito de tus derechos según la Ley de Informe Justo de Crédito de Washington.</p>.",
@@ -944,6 +956,10 @@
       "value" : "Sí",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "No",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Elijo no identificarme",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1147,6 +1163,10 @@
     "BB-ReviewSubmit-header-title-text" : {
       "value" : "Revisar y enviar",
       "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Editar",
+      "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Detalles del empleo",
@@ -2003,6 +2023,30 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Marca la casilla para continuar.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Estados Unidos - Número de Seguro Social",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "SÍ, TENGO UNA DISCAPACIDAD (o tuve una discapacidad)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "NO, NO TENGO NINGUNA DISCAPACIDAD",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "NO DESEO CONTESTAR",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Indio americano/nativo de Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Negro/Afroamericano",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

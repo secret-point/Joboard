@@ -336,6 +336,14 @@
       "value" : "Veuillez saisir un pays valide",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "Aux États-Unis, un numéro de sécurité sociale (SSN) est un numéro à neuf chiffres délivré aux citoyens américains, aux résidents permanents et aux résidents temporaires (en activité).",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "Numéro de carte d’identité nationale",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "Pièce d’identité nationale",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "Veuillez entrer un type d’identification nationale valide",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Numéro de la pièce d’identité",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "Numéro de carte d’identité nationale",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "Veuillez saisir une date de naissance valide.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "Vous devez avoir plus de 18 ans.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "Numéro de sécurité sociale",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>New York : </b>Vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d’enquête sur le consommateur à votre sujet. Ci-dessus figurent l’adresse et le numéro de téléphone de l’ARC. Vous avez le droit de contacter toute agence de renseignements pour inspecter ou recevoir une copie d’un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ici</a> pour obtenir des informations sur vos droits en vertu de l’Article 23-A de la loi correctionnelle de l’État de New York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>New York : </b>Vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d’enquête sur le consommateur à votre sujet. Ci-dessus figurent l’adresse et le numéro de téléphone de l’ARC. Vous avez le droit de contacter toute agence de renseignements pour inspecter ou recevoir une copie d’un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ici</a> pour obtenir des informations sur vos droits en vertu de l’article 23-A de la loi correctionnelle de l’État de New York.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>Washington : </b>Vous avez le droit de demander à l’agence de renseignements sur les consommateurs un résumé écrit de vos droits en vertu du Washington Fair Credit Reporting Act.</p>.",
@@ -944,6 +956,10 @@
       "value" : "Oui",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "N°",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Je choisis de ne pas m’identifier",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1164,10 @@
       "value" : "Vérifier et envoyer",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Modifier",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Détails du poste",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1319,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Les tests Amazon IAT participent aux programmes de crédits d’impôt fédéraux et/ou étatiques. Les renseignements que vous fournirez serviront à déterminer l’admissibilité de l’entreprise à ces programmes et n’auront aucune incidence négative sur les décisions d’embauche, de maintien en poste ou de promotion.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "États-Unis - Numéro de sécurité sociale",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "OUI, J'AI UN HANDICAP (ou j'ai déjà souffert d'un handicap)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "NON, JE N'AI PAS DE HANDICAP",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "JE NE SOUHAITE PAS RÉPONDRE",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Amérindien/Originaire de l'Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Noir/Afro-américain",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

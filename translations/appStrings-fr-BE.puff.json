@@ -472,10 +472,6 @@
       "value" : "<p><b>NEW YORK :</b> vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d'enquête sur le consommateur à votre sujet. L'adresse et le numéro de téléphone de l’entreprise de vérification des antécédents sont indiqués ci-dessus. Vous avez le droit de contacter n'importe quelle entreprise de vérification des antécédents pour inspecter ou recevoir une copie d'un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ici</a> pour obtenir plus d'informations concernant vos droits en vertu de l'article 23-A de la loi pénale de New York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK :</b> vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d'enquête sur le consommateur à votre sujet. L'adresse et le numéro de téléphone de l’entreprise de vérification des antécédents sont indiqués ci-dessus. Vous avez le droit de contacter n'importe quelle entreprise de vérification des antécédents pour inspecter ou recevoir une copie d'un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ici</a> pour obtenir plus d'informations concernant vos droits en vertu de l'article 23-A de la loi pénale de New York.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON : </b>vous avez le droit de demander à l'agence d'évaluation des consommateurs un résumé écrit de vos droits en vertu du Washington Fair Credit Reporting Act.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1299,6 +1295,710 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Les tests IAT d'Amazon sont inclus dans des programmes de crédit d'impôt fédéraux et/ou étatiques. Les informations que vous fournissez seront utilisées pour déterminer l'éligibilité de l'entreprise à ces programmes et n'auront aucun impact négatif sur les décisions d'embauche, de rétention ou de promotion.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "Date de début possible :",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(ou plus tôt !)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/heure",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "heures/semaine",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "Bonus :",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "Nous vous remercions de votre intérêt. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "Les informations que vous avez fournies ne répondent pas à nos exigences. Nous vous encourageons à consulter d’autres offres d’emploi disponibles sur amazon.jobs.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "Désolé, vous avez déjà postulé à ce poste.",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "Des champs obligatoires ne sont pas renseignés.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "Un problème est survenu avec le serveur. Réessayez ou actualisez la page de votre navigateur.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "Le candidat est inactif. Impossible de créer une candidature pour le candidat.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "Candidat introuvable.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "Impossible de mettre à jour la candidature car il existe une mise à jour plus récente.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "Impossible de créer la candidature.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "L’identifiant de candidature ne correspond pas à l’identifiant indiqué dans le chemin de demande.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "Impossible de trouver la candidature.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "Champs obligatoires non renseignés : identifiant de candidature.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "Impossible de mettre à jour la candidature car il existe une mise à jour plus récente.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "Un problème est survenu avec le serveur. Réessayez ou actualisez la page de votre navigateur.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "Vous ne pouvez pas accéder à cette candidature.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "Merci de signer l’accusé de réception.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "Merci de signer la demande relative au Fair Credit Reporting Act.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "Merci de signer l’accusé de réception.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "Merci de signer les avis de l’État.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "L’horaire que vous avez sélectionné n’est plus disponible. Merci d’en sélectionner un autre.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "Les signatures électroniques ne correspondent pas. Utilisez le même texte pour toutes les signatures électroniques.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "La mise à jour de la candidature a échoué car vous avez atteint le nombre maximum de modifications de votre carte d’identité nationale. Si vous vous êtes précédemment inscrit avec une adresse e-mail différente, déconnectez-vous et essayez de vous connecter avec cette adresse e-mail, en utilisant le lien « Vous avez oublié votre code PIN personnel ? » si nécessaire. Si vous avez besoin d’aide, contactez-nous par e-mail ou par chat sur <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "La mise à jour de la candidature a échoué car le numéro d’identité national fourni n’est pas valide. Saisissez votre numéro d’identité national correct et complet avant de poursuivre.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "Merci d’indiquer le type de demande.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "Le type ne correspond pas à la demande.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "Merci d’indiquer votre date de naissance.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "Indiquez une date valide.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "Merci d’indiquer l’identifiant de candidature.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "Merci de fournir votre pièce d’identité nationale.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "Merci d’indiquer votre numéro de pièce d’identité.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "Merci d’indiquer vos antécédents judiciaires des sept dernières années.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "Merci de renseigner la ligne 1 dans le champ adresse.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "Merci de renseigner la ville dans le champ adresse.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "Merci de renseigner l’État dans le champ adresse.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "Merci de renseigner le code postal dans le champ adresse.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "Merci de renseigner le pays dans le champ adresse.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "Saisissez vos noms et prénoms légaux complets précédemment utilisés au format suivant : Prénom Nom.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "Les informations générales supplémentaires ne sont pas valides. Merci de mettre à jour tous les champs obligatoires.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "Merci d’indiquer les informations relatives au rendez-vous de recrutement.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "Merci d’indiquer les informations relatives aux références.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "Merci d’indiquer les informations concernant votre origine ethnique.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "Merci d’indiquer votre genre.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "Merci d’indiquer les informations relatives au statut de conjoint militaire.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "Merci d’indiquer les informations relatives au statut d’ancien combattant protégé.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "Merci d’indiquer les informations relatives au statut d’ancien combattant.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "Merci d’indiquer les informations relatives au handicap.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "Merci d’indiquer les informations relatives à la loi californienne sur le renseignement des antécédents.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Le numéro de sécurité sociale ou le numéro d’identité national que vous avez saisi est déjà associé à une autre adresse e-mail dans notre système. Si vous vous êtes précédemment inscrit avec une adresse e-mail différente, déconnectez-vous [Log Out](/application/logout) et essayez de vous connecter avec cette adresse e-mail, en utilisant le lien « Vous avez oublié votre code PIN personnel ? » si nécessaire. Si vous avez besoin d’aide, contactez-nous par e-mail ou par chat à sur <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "Impossible de récupérer l’emploi.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "Un problème est survenu lors de la récupération des emplois. Actualisez la page ou réessayez ultérieurement.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "Impossible de récupérer les emplois pour le moment. Réessayez ultérieurement.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "Tous les horaires de travail sont pourvus.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "Tous les horaires de travail sont pourvus.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "Impossible de récupérer la demande de décompte des effectifs.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "Tous les horaires de travail sont pourvus.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "Une erreur s’est produite. Actualisez la page ou réessayez ultérieurement.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "Un problème est survenu lors de la récupération des emplois. Actualisez la page ou réessayez ultérieurement.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "Impossible de récupérer les préférences d’horaire de travail.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "Impossible de récupérer les emplois pour le moment. Réessayez ultérieurement.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "Impossible d’obtenir les informations du candidat.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "Vous ne pouvez pas accéder à cette candidature.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "Impossible de créer la candidature.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "Vous ne pouvez pas créer la candidature.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "L’identifiant de candidature est nécessaire pour obtenir les données sur la candidature.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "Vous ne pouvez pas accéder à cette candidature.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "Impossible de trouver cette candidature.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "Un problème est survenu avec le serveur. Réessayez ou actualisez la page de votre navigateur.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "Erreur de flux de travail",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "Échec du flux de travail de la candidature.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "Nous vous remercions de votre intérêt. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "Les informations que vous avez fournies ne répondent pas à nos exigences. Nous vous encourageons à consulter d’autres offres d’emploi disponibles sur amazon.jobs.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "Nous vous remercions de votre intérêt. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "Les informations que vous avez fournies ne répondent pas à nos exigences. Nous vous encourageons à consulter d’autres offres d’emploi disponibles sur amazon.jobs.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "Nous vous remercions de votre intérêt. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "Les informations que vous avez fournies ne répondent pas à nos exigences. Nous vous encourageons à consulter d’autres offres d’emploi disponibles sur amazon.jobs.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "La réservation de votre poste a expiré.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "Nous accordons aux candidats jusqu’à trois heures pour compléter leur candidature. Malheureusement, votre candidature pour ce poste a dépassé la limite des trois heures. Découvrez les offres d’emploi disponibles.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "Afficher les offres d’emploi",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "Il n’y a actuellement aucun rendez-vous disponible pour ce poste.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "Vous pouvez :",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. Sélectionnez une autre offre d’emploi",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "Cliquez ici",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. Sélectionnez un horaire de travail avec une date de début ultérieure (recommandé)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "Afficher les autres horaires de travail",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "Cochez la case pour continuer.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "Cochez la case pour continuer.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "Cochez la case pour continuer.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL -- Alabama",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- Alaska",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- Arizona",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- Arkansas",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- Californie",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- Colorado",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- Connecticut",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- Delaware",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- District de Columbia",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- Floride",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- Géorgie",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- Hawaï",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- Idaho",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- Illinois",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- Indiana",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- Iowa",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- Kansas",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- Kentucky",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- Louisiana",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- Maine",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- Maryland",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- Massachusetts",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- Michigan",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- Minnesota",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- Mississippi",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- Missouri",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- Montana",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- Nebraska",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- Nevada",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- New Hampshire",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- New Jersey",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- Nouveau-Mexique",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- New York",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- Caroline du Nord",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- Dakota du Nord",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- Ohio",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- Oklahoma",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- Oregon",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- Pennsylvanie",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- Rhode Island",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- Caroline du Sud",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- Dakota du Sud",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- Tennessee",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- Texas",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- Utah",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- Vermont",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- Virginie",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA -- Washington",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI -- Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV - Virginie-Occidentale",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY -- Wyoming",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "Impossible de mettre à jour le statut WOTC.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "L’horaire que vous avez sélectionné n’est plus disponible. Sélectionnez une autre option.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "Vous avez récemment été recruté suite à cette candidature. Votre horaire de travail ne peut pas être modifié. Contactez-nous sur https://www.amazondelivers.jobs/contactus pour modifier votre horaire.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "Impossible de mettre à jour la candidature.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "Informations supplémentaires relatives aux antécédents",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "Merci de l’intérêt que vous portez au poste de {jobTitle}. Nos archives indiquent que vous avez déjà travaillé chez Amazon.  À l’heure actuelle, vous êtes éligible à un nouveau recrutement en tant que partenaire Amazon saisonnier ou employé d’une agence tierce en fonction de votre dossier professionnel. Par conséquent, nous ne sommes pas en mesure de donner suite à votre candidature pour ce poste. Si vous avez des questions concernant votre éligibilité à un nouveau recrutement, contactez l’équipe RH du site.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "Merci de l’intérêt que vous portez à ce poste. Nos archives indiquent que vous avez déjà travaillé chez Amazon.  À l’heure actuelle, vous êtes éligible à un nouveau recrutement en tant que partenaire Amazon saisonnier ou employé d’une agence tierce en fonction de votre dossier professionnel. Par conséquent, nous ne sommes pas en mesure de donner suite à votre candidature pour ce poste. Si vous avez des questions concernant votre éligibilité à un nouveau recrutement, contactez l’équipe RH du site.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "Consultez notre page d’emplois saisonniers pour découvrir les offres saisonnières dans votre région.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Merci pour votre récente candidature chez Amazon. Après un examen approfondi, nous avons choisi de ne pas donner suite à votre candidature.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "Nous vous remercions du temps que vous nous avez accordé et vous souhaitons bonne chance pour l’avenir.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "Nous vous remercions de votre candidature récente. Malheureusement, vous n’êtes pas éligible pour ce poste précis, car vous êtes déjà employé par Amazon.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "La bonne nouvelle ? Il existe de nombreuses offres ouvertes que vous pouvez parcourir et auxquelles vous pouvez postuler en ligne. Voici quelques conseils relatifs au développement de votre carrière :",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "Pour les conversions comme employé d’agence ou saisonnier, rendez-vous sur amazon.com/conversions (http://amazon.com/conversions).",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "Pour demander des changements d’horaire ou de lieu de travail, contactez votre équipe sur site.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "Votre équipe RH locale ou le centre de ressources pour les employés (ERC) sont les points de contact privilégiés pour répondre à toutes vos questions. Vous pouvez joindre l’équipe ERC 24 h/24 et 7 j/7 au 1-888-892-7180 (tel:18888927180).",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Merci de faire partie de l’incroyable équipe d’Amazon ! Nous nous efforçons continuellement de vous offrir les meilleures ressources humaines, les meilleurs avantages sociaux, les meilleurs salaires et les meilleurs horaires flexibles afin de soutenir nos efforts pour devenir le meilleur employeur au monde !",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "Merci de l’intérêt que vous portez au poste de {jobTitle}. Nos archives indiquent que vous avez déjà travaillé chez Amazon et que vous ne pouvez pas être réengagé sur la base de votre dossier d’emploi précédent chez Amazon. Par conséquent, nous ne sommes pas en mesure de donner suite à votre candidature pour le moment.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "Merci de l’intérêt que vous portez à ce poste. Nos archives indiquent que vous avez déjà travaillé chez Amazon et que vous ne pouvez pas être réengagé sur la base de votre dossier d’emploi précédent chez Amazon. Par conséquent, nous ne sommes pas en mesure de donner suite à votre candidature pour le moment.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "En raison du motif de la rupture du contrat de travail, vous pouvez présenter une nouvelle candidature 90 jours après votre dernier jour de travail chez Amazon.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Tous les horaires de travail sont actuellement pourvus.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Retournez sur le tableau de bord pour postuler à d’autres emplois.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "Erreur de candidature",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "Un problème est survenu. Rendez-vous sur le tableau de bord.",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Cochez la case pour continuer.",
+      "note" : "Text for the detailed radio button error."
     }
   }
 }

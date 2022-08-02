@@ -336,6 +336,14 @@
       "value" : "يُرجى إدخال بلد صحيح",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "في الولايات المتحدة، رقم الضمان الاجتماعي (SSN) هو رقم يتألّف من تسعة أرقام يتم إصداره للمواطنين الأمريكيين، المقيمين الدائمين و المقيمين المؤقتين (العاملين).",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "رقم الهوية الوطنية",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "رقم الهوية الوطنية",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "الرجاء إدخال نوع بطاقة هوية وطنية صالحة",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "رقم الهوية",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "رقم الهوية الوطنية",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "الرجاء إدخال تاريخ ميلاد صحيح.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "يجب أن يتجاوز عمرك 18 عامًا.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "رقم الضمان الاجتماعي",
@@ -471,10 +487,6 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان CRA ورقم هاتفها. لديك الحق في الاتصال بأي CRA لفحص أو استلام نسخة من أي تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح بمدينة نيويورك.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
-    },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان CRA ورقم هاتفها. لديك الحق في الاتصال بأي CRA لفحص أو استلام نسخة من أي تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح بمدينة نيويورك.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>واشنطن:</b> لديك الحق في أن تطلب من وكالة الإبلاغ عن المستهلك ملخصًا مكتوبًا لحقوقك بموجب قانون الإبلاغ عن الائتمان العادل في واشنطن.</p>.",
@@ -944,6 +956,10 @@
       "value" : "نعم",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "لا",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "اختار عدم تعريف الذات",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1148,6 +1164,10 @@
       "value" : "مراجعة وتقديم",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "تعديل",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "تفاصيل الوظيفة",
       "note" : "Text for the job details section title text"
@@ -1299,6 +1319,30 @@
     "BB-WOTC-page-description-text" : {
       "value" : "يشارك اختبار Amazon IAT في برامج الائتمان الضريبي الفيدرالية و/أو الحكومية. سيتم استخدام المعلومات التي تقدمها لتحديد أهلية الشركة لهذه البرامج ولن تؤثر سلبًا بأي حال من الأحوال على أي قرارات توظيف أو استبقاء أو ترقية.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "الولايات المتحدة - رقم الضمان الاجتماعي",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "نعم، لدي إعاقة (أو كان لدي إعاقة في السابق)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "لا، ليس لدي إعاقة",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "لا أرغب في الإجابة",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "الهنود الأمريكيون/سكان ألاسكا الأصليين",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "أسود/أمريكي من أصل أفريقي",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

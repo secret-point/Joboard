@@ -488,10 +488,6 @@
       "value" : "<p><b>NEW YORK: </b>Máte právo podat společnosti Amazon písemnou žádost o informaci, zda jsme si o Vás objednali zprávu o spotřebiteli nebo vyšetřovací zprávu o spotřebiteli. Výše je uvedena adresa a telefonní číslo agentury CRA. Máte právo obrátit se na kteroukoli agenturu CRA a nahlédnout do takové zprávy nebo získat její kopii. Kliknutím <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">sem</a> získáte informace o svých právech podle článku 23-A newyorského zákona o nápravě.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
     },
-    "BB-non-fcra-fadv-newyork-specific-notice" : {
-      "value" : "<p><b>NEW YORK: </b>Máte právo podat společnosti Amazon písemnou žádost o informaci, zda jsme si o Vás objednali zprávu o spotřebiteli nebo vyšetřovací zprávu o spotřebiteli. Výše je uvedena adresa a telefonní číslo agentury CRA. Máte právo obrátit se na kteroukoli agenturu CRA a nahlédnout do takové zprávy nebo získat její kopii. Kliknutím <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">sem</a> získáte informace o svých právech podle článku 23-A newyorského zákona o nápravě.</p>.",
-      "note" : "Text for FADV non fcra New York specific notice "
-    },
     "BB-non-fcra-accurate-washington-specific-notice" : {
       "value" : "<p><b>WASHINGTON: </b>Máte právo si od agentury, která podává zprávy o spotřebitelích, vyžádat písemné shrnutí svých práv podle washingtonského zákona o spravedlivém podávání zpráv o úvěrech.</p>.",
       "note" : "Text for ACCURATE non fcra Washington specific notice "
@@ -1323,6 +1319,710 @@
     "BB-WOTC-page-description-text" : {
       "value" : "Testování Amazon IAT je zapojeno do federálních a státních programů daňových úlev. Informace, které poskytnete, budou použity k určení způsobilosti společnosti pro tyto programy a v žádném případě nebudou mít negativní vliv na rozhodnutí o přijetí, udržení nebo povýšení.",
       "note" : "Text for the WOTC page description text"
+    },
+    "BB-Schedule-card-possible-start-date-text" : {
+      "value" : "Možné datum nástupu:",
+      "note" : "Text for the schedule card possible start date text"
+    },
+    "BB-Schedule-card-possible-start-date-or-earlier-text" : {
+      "value" : "(nebo dříve!)",
+      "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hod",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "hod/týden",
+      "note" : "Text for the schedule card hours per week text"
+    },
+    "BB-Schedule-card-bonus-text" : {
+      "value" : "Bonus:",
+      "note" : "Text for the schedule card bonus text"
+    },
+    "BB-amazon-rejects-thank-you" : {
+      "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",
+      "note" : "Text for the amazon rejects page thank you text"
+    },
+    "BB-amazon-rejects-not-meet-requirements" : {
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "note" : "Text for the amazon rejects page not meet requirements text"
+    },
+    "BB-amazon-rejects-return-to-dashboard" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the amazon rejects page return to dashboard text"
+    },
+    "BB-create-application-error-message-application-exist" : {
+      "value" : "Omlouváme se, ale o tuto práci jste se již ucházeli!",
+      "note" : "error message when trying to create application with existing application "
+    },
+    "BB-create-application-error-message-missing-fields" : {
+      "value" : "Chybí povinná pole.",
+      "note" : "error message when trying to create application with missing application Id field"
+    },
+    "BB-create-application-error-message-internal-server-error" : {
+      "value" : "U tohoto serveru se něco pokazilo. Zkuste to prosím znovu nebo obnovte prohlížeč.",
+      "note" : "internal server Error message when creating application"
+    },
+    "BB-create-application-error-message-candidate-inactive" : {
+      "value" : "Uchazeč je neaktivní. Pro uchazeče nelze vytvořit žádost.",
+      "note" : "error message for create application if candidate is inactive"
+    },
+    "BB-create-application-error-message-candidate-not-found" : {
+      "value" : "Uchazeč nebyl nalezen.",
+      "note" : "error message for create application if candidate is not found"
+    },
+    "BB-create-application-error-message-version-mismatch" : {
+      "value" : "Žádost nelze aktualizovat, protože existuje novější aktualizace.",
+      "note" : "error message when create application with version mismatching"
+    },
+    "BB-create-application-error-message-default" : {
+      "value" : "Nelze vytvořit žádost.",
+      "note" : "Default error message for create application"
+    },
+    "BB-update-application-error-message-applicationId-not-match" : {
+      "value" : "ID žádosti se neshoduje s ID v dané cestě požadavku.",
+      "note" : "Error message for update application when application Id do not match"
+    },
+    "BB-update-application-error-message-application-not-found" : {
+      "value" : "Žádost nelze najít.",
+      "note" : "Error message for update application when application can not be found"
+    },
+    "BB-update-application-error-message-missing-required-fields" : {
+      "value" : "Chybí povinná pole: ID žádosti.",
+      "note" : "Error message when updating message with application Id missing"
+    },
+    "BB-update-application-error-message-version-mismatch" : {
+      "value" : "Žádost nelze aktualizovat, protože existuje novější aktualizace.",
+      "note" : "Error message when updating application with version mismatching"
+    },
+    "BB-update-application-error-message-server-error" : {
+      "value" : "U tohoto serveru se něco pokazilo. Zkuste to prosím znovu nebo obnovte prohlížeč.",
+      "note" : "internal server Error message when updating application"
+    },
+    "BB-update-application-error-message-candidate-not-authorized" : {
+      "value" : "K této žádosti nemáte přístup.",
+      "note" : "error message for update application when candidate is not authorized"
+    },
+    "BB-update-application-error-message-sign-fcra-ack" : {
+      "value" : "Potvrzení prosím podepište.",
+      "note" : "error message for update application without fcra acknowledge signature"
+    },
+    "BB-update-application-error-message-sign-fcra-request" : {
+      "value" : "Podepište požadavek fcra.",
+      "note" : "error message for update application without fcra request signature"
+    },
+    "BB-update-application-error-message-sign-nonfcra-ack" : {
+      "value" : "Potvrzení prosím podepište.",
+      "note" : "error message for update application without non fcra acknowledgement signature"
+    },
+    "BB-update-application-error-message-sign-notice-statement" : {
+      "value" : "Podepište prosím státní oznámení.",
+      "note" : "error message for update application without state notices signature"
+    },
+    "BB-update-application-error-message-selected-schedule-not-available" : {
+      "value" : "Vámi zvolený rozvrh již není k dispozici, vyberte prosím jiný.",
+      "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures" : {
+      "value" : "Elektronické podpisy se neshodují. Pro každý elektronický podpis použijte stejný text.",
+      "note" : "error message for update application when signatures do not match"
+    },
+    "BB-update-application-error-message-max-ssn-edits" : {
+      "value" : "Aktualizace žádosti se nezdařila, protože jste dosáhli maximálního počtu změn Vašeho dokladu totožnosti. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, odhlaste se a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste Váš osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application when number of ssn edits exceed the maximum"
+    },
+    "BB-update-application-error-message-invalid-ssn" : {
+      "value" : "Aktualizace žádosti se nezdařila, protože zadané číslo dokladu totožnosti je neplatné. Před pokračováním zadejte správné a úplné číslo dokladu totožnosti.",
+      "note" : "error message for update application when ssn is invalid"
+    },
+    "BB-update-application-error-message-type-of-request-missing" : {
+      "value" : "Chybí typ požadavku.",
+      "note" : "error message for update application when request type is missing"
+    },
+    "BB-update-application-error-message-type-not-match-with-request" : {
+      "value" : "Typ se neshoduje s požadavkem.",
+      "note" : "error message for update application when request type do not match with request payload"
+    },
+    "BB-update-application-error-message-dob-missing-in-request" : {
+      "value" : "V datovém obsahu chybí datum narození.",
+      "note" : "error message for update application when date of birth is missing in the request"
+    },
+    "BB-update-application-error-message-provide-dob" : {
+      "value" : "Uveďte prosím platné datum.",
+      "note" : "error message for update application when date of birth is no provided"
+    },
+    "BB-update-application-error-message-applicationId-missing" : {
+      "value" : "V požadavku chybí ID žádosti.",
+      "note" : "error message for update application when application Id is missing"
+    },
+    "BB-update-application-error-message-government-type-missing" : {
+      "value" : "V požadavku chybí vládní ID.",
+      "note" : "error message for update application when government Id is missing"
+    },
+    "BB-update-application-error-message-id-number-missing" : {
+      "value" : "V požadavku chybí číslo průkazu totožnosti.",
+      "note" : "error message for update application when Id Number is missing"
+    },
+    "BB-update-application-error-message--has-criminal-in7-years-missing" : {
+      "value" : "Má záznam v trestním rejstříku v rozmezí sedmi let v požadavku chybí.",
+      "note" : "error message for update application when has criminal record in past 7 years is missing"
+    },
+    "BB-update-application-error-message-address-line1-missing" : {
+      "value" : "V předmětu adresy chybí řádek adresy 1.",
+      "note" : "error message for update application when address line 1 is missing"
+    },
+    "BB-update-application-error-message-city-missing-in-address" : {
+      "value" : "V předmětu adresy chybí město.",
+      "note" : "error message for update application when city is missing in address"
+    },
+    "BB-update-application-error-message-state-missing-in-address" : {
+      "value" : "V předmětu adresy chybí stát.",
+      "note" : "error message for update application when state is missing in address"
+    },
+    "BB-update-application-error-message-zipcode-missing-in-address" : {
+      "value" : "V předmětu adresy chybí PSČ.",
+      "note" : "error message for update application when Zip/Postal code is missing in address"
+    },
+    "BB-update-application-error-message-country-missing-in-address" : {
+      "value" : "V předmětu adresy chybí země.",
+      "note" : "error message for update application when country is missing in address"
+    },
+    "BB-update-application-error-message-invalid-previous-legal-name" : {
+      "value" : "Zadejte prosím dříve používané zákonné plné jméno v následujícím formátu: Jméno Příjmení.",
+      "note" : "error message for update application with invalid previous legal name"
+    },
+    "BB-update-application-error-message-bgc-validation-failed" : {
+      "value" : "Doplňující informace k základním údajům nejsou platné, aktualizujte prosím všechna povinná pole.",
+      "note" : "error message for update application with invalid additional background"
+    },
+    "BB-update-application-error-message-nhe-apt-missing" : {
+      "value" : "V požadavku chybí předmět schůzky nhe.",
+      "note" : "error message for update application with new hire event appointment missing"
+    },
+    "BB-update-application-error-message-referral-missing" : {
+      "value" : "V požadavku chybí informace o doporučení.",
+      "note" : "error message for update application with referral information missing"
+    },
+    "BB-update-application-error-message-ethnicity-missing" : {
+      "value" : "V datovém obsahu chybí etnický původ.",
+      "note" : "error message for update application with ethnicity information missing"
+    },
+    "BB-update-application-error-message-gender-is-missing" : {
+      "value" : "V datovém obsahu chybí pohlaví.",
+      "note" : "error message for update application with gender information missing"
+    },
+    "BB-update-application-error-message-military-service-missing" : {
+      "value" : "V datovém obsahu chybí informace o manželovi/manželce vojáka.",
+      "note" : "error message for update application with military Spouse  information missing"
+    },
+    "BB-update-application-error-message-protected-veteran-missing" : {
+      "value" : "V datovém obsahu chybí informace o chráněném veteránovi.",
+      "note" : "error message for update application with protected veteran status information missing"
+    },
+    "BB-update-application-error-message-veteran-status-missing" : {
+      "value" : "V datovém obsahu chybí informace o veteránovi.",
+      "note" : "error message for update application with veteran status information missing"
+    },
+    "BB-update-application-error-message-disability-missing" : {
+      "value" : "V datovém obsahu chybí postižení.",
+      "note" : "error message for update application with disability status information missing"
+    },
+    "BB-update-application-error-message-cali-disclosure-missing" : {
+      "value" : "V datovém obsahu chybí potvrzení BGCC zpřístupnění informací v Kalifornii.",
+      "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Zadané SSN nebo číslo dokladu totožnosti je již v našem systému přiřazeno k jiné e-mailové adrese. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, [odhlaste se](/application/logout) a zkuste se přihlásit pod touto e-mailovou adresou. V případě potřeby použijte odkaz „Zapomněli jste Váš osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
+    "BB-get-job-error-message-unable-fetch-job" : {
+      "value" : "Pracovní pozici nelze načíst.",
+      "note" : "error message when unable to fetch job information"
+    },
+    "BB-get-schedule-list-error-message-fetch-shifts-failed" : {
+      "value" : "Při načítání pracovních míst se něco pokazilo! Aktualizujte prosím stránku nebo to zkuste později.",
+      "note" : "error message when unable to fetch shifts failed"
+    },
+    "BB-get-schedule-list-error-message-shifts-bad-request" : {
+      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozice. Zkuste to prosím znovu za chvíli.",
+      "note" : "error message when there is a bad request to fetch shifts"
+    },
+    "BB-get-schedule-list-error-message-all-shift-filled" : {
+      "value" : "Všechny směny jsou obsazeny.",
+      "note" : "error message when fetch shifts but all shifts are filled"
+    },
+    "BB-get-schedule-list-error-message-no-schedule-found" : {
+      "value" : "Všechny směny jsou obsazeny.",
+      "note" : "error message when fetch shifts but no shift found"
+    },
+    "BB-get-schedule-detail-error-message-fetch-hch-error" : {
+      "value" : "Nelze načíst požadavek na počet zaměstnanců.",
+      "note" : "error message when fetch head count request failed"
+    },
+    "BB-get-time-slots-error-message-all-shift-filled" : {
+      "value" : "Všechny směny jsou obsazeny.",
+      "note" : "error message when all appointment time slots are filled"
+    },
+    "BB-get-time-slots-error-message-fetch_time-slot-error" : {
+      "value" : "Něco se pokazilo! Aktualizujte prosím stránku nebo to zkuste později.",
+      "note" : "error message when fetch appointment time slots failed"
+    },
+    "BB-get-time-slots-error-message-fetch_shifts_error" : {
+      "value" : "Při načítání pracovních míst se něco pokazilo! Aktualizujte prosím stránku nebo to zkuste později.",
+      "note" : "error message when fetch shift error failed"
+    },
+    "BB-get-time-slots-error-message-fetch-shift-pref-error" : {
+      "value" : "Nepodařilo se načíst předvolby směn.",
+      "note" : "error message when fetch shift preference failed"
+    },
+    "BB-get-time-slots-error-message-shift-bad-request" : {
+      "value" : "V tuto chvíli se nepodařilo načíst pracovní pozice. Zkuste to prosím znovu za chvíli.",
+      "note" : "error message when server received a bad request to get time slots"
+    },
+    "BB-get-candidate-error-message-failed-get-candidate" : {
+      "value" : "Nepodařilo se získat uchazeče.",
+      "note" : "error message when failed to get candidate information"
+    },
+    "BB-get-candidate-error-message-no-access-to-application" : {
+      "value" : "K této žádosti nemáte přístup.",
+      "note" : "error message when candidate doesn't access to the application"
+    },
+    "BB-update-application-error-message-unable-create-application" : {
+      "value" : "Nelze vytvořit žádost.",
+      "note" : "Error message when unable to create application"
+    },
+    "BB-update-application-error-message-can-not-create-application" : {
+      "value" : "Aplikaci nemůžete vytvořit.",
+      "note" : "Error message when candidate is not authorized to create application"
+    },
+    "BB-get-application-error-message-missing-fields" : {
+      "value" : "Pro získání údajů o žádosti je vyžadováno ID žádosti.",
+      "note" : "Error message when trying to get application without passing application Id"
+    },
+    "BB-get-application-error-message-candidate-not-authorized" : {
+      "value" : "K této žádosti nemáte přístup.",
+      "note" : "Error message when candidate trying to get application of another candidate"
+    },
+    "BB-get-application-error-message-application-not-found" : {
+      "value" : "Tuto žádost nelze získat.",
+      "note" : "Error message when get application and application is not found"
+    },
+    "BB-get-application-error-message-internal-server-error" : {
+      "value" : "U tohoto serveru se něco pokazilo. Zkuste to prosím znovu nebo obnovte prohlížeč.",
+      "note" : "Error message when get application and there is server error"
+    },
+    "BB-workflow-failed-title-text" : {
+      "value" : "Chyba pracovního postupu",
+      "note" : "Text for the workflow failed page title text"
+    },
+    "BB-workflow-failed-description-text" : {
+      "value" : "Zatímco pracovní postup aplikace selhal.",
+      "note" : "Text for the workflow failed page description text"
+    },
+    "BB-workflow-failed-return-to-dashboard-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the workflow failed page return to dashboard text"
+    },
+    "BB-can-not-offer-job-title-text" : {
+      "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",
+      "note" : "Text for the can not offer job page title text"
+    },
+    "BB-can-not-offer-job-description-text" : {
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-can-not-offer-job-return-to-dashboard-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the can not offer job page description text"
+    },
+    "BB-candidate-withdraws" : {
+      "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",
+      "note" : "Candidate withdraws page title"
+    },
+    "BB-candidate-withdraws-description" : {
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "note" : "Candidate withdraws page description"
+    },
+    "BB-candidate-withdraws-button-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Candidate withdraws page back to dashboard buttton"
+    },
+    "BB-amazon-withdraws" : {
+      "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",
+      "note" : "Amazon withdraws page title"
+    },
+    "BB-amazon-withdraws-description" : {
+      "value" : "Vámi poskytnuté informace nesplňují naše požadavky. Doporučujeme Vám prohlížet jiné pracovní pozice na amazon.jobs.",
+      "note" : "Amazon withdraws page description"
+    },
+    "BB-amazon-withdraws-button-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Amazon withdraws page back to dashboard buttton"
+    },
+    "BB-session-timeout" : {
+      "value" : "Platnost rezervace Vaší pracovní pozice vypršela.",
+      "note" : "session timeout page title"
+    },
+    "BB-session-timeout-description" : {
+      "value" : "Na vyplnění žádosti dáváme uchazečům až tři hodiny. Pracovní pozice, o kterou jste se ucházeli, bohužel překročila tříhodinový limit. Prozkoumejte prosím dostupné pracovní příležitosti.",
+      "note" : "session timeout description"
+    },
+    "BB-session-timeout-view-job-button-text" : {
+      "value" : "Zobrazit pracovní příležitosti",
+      "note" : "Session timeout view job opportunities button"
+    },
+    "BB-no-available-time-slots-title" : {
+      "value" : "V tuto chvíli nejsou pro tuto práci k dispozici žádné termíny.",
+      "note" : "Text for no available time slots title"
+    },
+    "BB-no-available-time-slots-description" : {
+      "value" : "Můžete:",
+      "note" : "Text for no available time slots description title"
+    },
+    "BB-no-available-time-slots-select-different-job" : {
+      "value" : "1. Vyberte jinou pracovní příležitost",
+      "note" : "Text for no available time slots page to select different job"
+    },
+    "BB-no-available-time-slots-select-different-job-link" : {
+      "value" : "Klikněte sem",
+      "note" : "Text for no available time slots page to select different job link"
+    },
+    "BB-no-available-time-slots-select-later-date-text" : {
+      "value" : "2. Vyberte směnu s pozdějším datem nástupu (doporučeno)",
+      "note" : "Text for no available time slots page to select shift with later start date"
+    },
+    "BB-no-available-time-slots-view-other-shifts-button-text" : {
+      "value" : "Zobrazit další směny",
+      "note" : "Text for no available time slots page view other shifts button"
+    },
+    "BB-no-available-time-slots-back-to-dashboard-button-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for no available time slots page back to dashboard button"
+    },
+    "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message" : {
+      "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
+      "note" : "Text for HasPreviouslyWorkedAtAmazon bgc info error message"
+    },
+    "BB-bgc-ConvictionInfoRadio-error-message" : {
+      "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
+      "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message" : {
+      "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
+    "BB-States-Alabama" : {
+      "value" : "AL –⁠ Alabama",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK –⁠ Aljaška",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ –⁠ Arizona",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR –⁠ Arkansas",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA –⁠ Kalifornie",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO –⁠ Colorado",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT –⁠ Connecticut",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE –⁠ Delaware",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC –⁠ District of Columbia",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL –⁠ Florida",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA –⁠ Georgie",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI –⁠ Havaj",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID –⁠ Idaho",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL –⁠ Illinois",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN –⁠ Indiana",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA –⁠ Iowa",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS –⁠ Kansas",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY –⁠ Kentucky",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA –⁠ Louisiana",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME –⁠ Maine",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD –⁠ Maryland",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA –⁠ Massachusetts",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI –⁠ Michigan",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN –⁠ Minnesota",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS –⁠ Mississippi",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO –⁠ Missouri",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT –⁠ Montana",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE –⁠ Nebraska",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV –⁠ Nevada",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH –⁠ New Hampshire",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ –⁠ New Jersey",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM –⁠ Nové Mexiko",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY –⁠ New York",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC –⁠ Severní Karolína",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND –⁠ Severní Dakota",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH –⁠ Ohio",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK –⁠ Oklahoma",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR –⁠ Oregon",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA –⁠ Pensylvánie",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI –⁠ Rhode Island",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC –⁠ Jižní Karolína",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD –⁠ Jižní Dakota",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN –⁠ Tennessee",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX –⁠ Texas",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT –⁠ Utah",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT –⁠ Vermont",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA –⁠ Virginie",
+      "note" : "Text for Virginia state"
+    },
+    "BB-States-Washington" : {
+      "value" : "WA –⁠ Washington",
+      "note" : "Text for Washington state"
+    },
+    "BB-States-wisconsin" : {
+      "value" : "WI –⁠ Wisconsin",
+      "note" : "Text for Wisconsin state"
+    },
+    "BB-States-west-virginia" : {
+      "value" : "WV –⁠ Západní Virginie",
+      "note" : "Text for West Virginia state"
+    },
+    "BB-States-wyoming" : {
+      "value" : "WY –⁠ Wyoming",
+      "note" : "Text for Wyoming state"
+    },
+    "BB-update-wotc-status-error-message-failed-update-wotc" : {
+      "value" : "Aktualizace WOTC se nezdařila.",
+      "note" : "error message when failed to update wotc status"
+    },
+    "BB-update-application-error-message-unable-update-shift-appt-no-longer-available" : {
+      "value" : "Vámi vybraný rozvrh již není k dispozici. Vyberte prosím jinou možnost.",
+      "note" : "Error message text displayed when selected NHE shift is no longer available"
+    },
+    "BB-update-application-error-message-unable-update-shift-candidate-already-hired" : {
+      "value" : "Prostřednictvím této žádosti jste byli nedávno přijati, Vaši směnu nelze změnit. Pro změnu směny se prosím obraťte na https://www.amazondelivers.jobs/contactus.",
+      "note" : "Error message text displayed when selected NHE shift and candidate is already hired"
+    },
+    "BB-update-application-error-message-failed-update-application" : {
+      "value" : "Žádost se nepodařilo aktualizovat.",
+      "note" : "Error message text displayed when failed to update application"
+    },
+    "BB-bgc-additional-bgc-form-header-text" : {
+      "value" : "Doplňující informace k základním údajům",
+      "note" : "Text for the additional background check form header"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-with-jobTitle" : {
+      "value" : "Děkujeme za Váš zájem o pozici {jobTitle}. Naše záznamy ukazují, že jste dříve pracovali ve společnosti Amazon.  Na základě Vašich pracovních záznamů můžete být momentálně znovu přijati jako sezónní zaměstnanec společnosti Amazon nebo externí zaměstnanec agentury. V důsledku toho Vás nemůžeme pro tuto pracovní pozici dále zvažovat. Máte-li jakékoli dotazy týkající se způsobilosti k opětovnému přijetí, obraťte se na tým lidských zdrojů daného pracoviště.",
+      "note" : "Text for rehire not eligible seasonal only title when there is jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-title-text-without-jobTitle" : {
+      "value" : "Děkujeme za Váš zájem o tuto pozici. Naše záznamy ukazují, že jste dříve pracovali ve společnosti Amazon.  Na základě Vašich pracovních záznamů můžete být momentálně znovu přijati jako sezónní zaměstnanec společnosti Amazon nebo externí zaměstnanec agentury. V důsledku toho Vás nemůžeme pro tuto pracovní pozici dále zvažovat. Máte-li jakékoli dotazy týkající se způsobilosti k opětovnému přijetí, obraťte se na tým lidských zdrojů daného pracoviště.",
+      "note" : "Text for rehire not eligible seasonal only title when there is no jobTitle"
+    },
+    "BB-rehire-not-eligible-seasonal-only-content-text" : {
+      "value" : "Navštivte prosím naši Sezónní stránku, kde najdete sezónní nabídky ve Vaší oblasti.",
+      "note" : "Text for rehire not eligible seasonal only content"
+    },
+    "BB-rehire-eligibility-status-back-to-dashboard-button-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "rehire eligibility status back to dashboard button"
+    },
+    "BB-not-rehire-eligible-title-text" : {
+      "value" : "Děkujeme Vám za Vaši nedávnou žádost o zaměstnání ve společnosti Amazon. Po pečlivém zvážení nebudeme pokračovat s Vaší žádostí o zaměstnání dále.",
+      "note" : "text for Not rehire eligibility page title"
+    },
+    "BB-not-rehire-eligible-content-text" : {
+      "value" : "Vážíme si Vašeho času a přejeme Vám hodně štěstí v budoucnu.",
+      "note" : "text for Not rehire eligibility page content"
+    },
+    "BB-rehire-not-eligible-active-title-text" : {
+      "value" : "Vážíme si Vaší nedávné žádosti o pracovní pozici! Na tuto pozici bohužel nemáte nárok, protože jste již zaměstnancem společnosti Amazon.",
+      "note" : "Text for rehire not eligible active page title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-title" : {
+      "value" : "Jaká je dobrá zpráva? Existuje spousta volných pracovních míst, která si můžete prohlédnout a ucházet se o ně online. Zde je několik způsobů, jak můžete prozkoumat Váš budoucí kariérní růst:",
+      "note" : "Text for rehire not eligible active open opportunities list title"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-one" : {
+      "value" : "Pro převod z agenturních nebo sezónních pozic navštivte amazon.com/conversions (http://amazon.com/conversions).",
+      "note" : "Text for rehire not eligible active open opportunities list item one"
+    },
+    "BB-rehire-not-eligible-active-text-open-opportunities-list-item-two" : {
+      "value" : "Chcete-li požádat o změnu směny nebo pracoviště, obraťte se na Váš tým na pracovišti.",
+      "note" : "Text for rehire not eligible active open opportunities list item two"
+    },
+    "BB-rehire-not-eligible-active-content-text-one" : {
+      "value" : "V případě jakýchkoli dotazů Vám nejlépe poradí místní tým lidských zdrojů nebo zdrojové centrum pro zaměstnance (ERC). Tým ERC můžete kontaktovat nepřetržitě na telefonním čísle 1-888-892-7180 (tel.:18888927180).",
+      "note" : "Text for rehire not eligible active content text one"
+    },
+    "BB-rehire-not-eligible-active-content-text-two" : {
+      "value" : "Děkujeme, že jste součástí úžasného týmu společnosti Amazon! Neustále se snažíme poskytovat Vám ty nejlepší možné zaměstnanecké zdroje, výhody, mzdu a flexibilní rozvrhy – to vše podporuje naše úsilí stát se nejlepším zaměstnavatelem na Zemi!",
+      "note" : "Text for rehire not eligible active content text two"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-with-jobTitle" : {
+      "value" : "Děkujeme za Váš zájem o pozici {jobTitle}. Podle našich záznamů jste dříve pracovali ve společnosti Amazon a na základě Vašeho předchozího pracovního záznamu ve společnosti Amazon nemáte nárok na opětovné přijetí. V důsledku toho Vás momentálně nemůžeme dále zvažovat.",
+      "note" : "Text for rehire not eligible 365 days title with jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-title-text-without-jobTitle" : {
+      "value" : "Děkujeme za Váš zájem o tuto pozici. Podle našich záznamů jste dříve pracovali ve společnosti Amazon a na základě Vašeho předchozího pracovního záznamu ve společnosti Amazon nemáte nárok na opětovné přijetí. V důsledku toho Vás momentálně nemůžeme dále zvažovat.",
+      "note" : "Text for rehire not eligible 365 days title without jobTitle"
+    },
+    "BB-365-days-not-rehire-eligible-content-text" : {
+      "value" : "Z důvodu ukončení pracovního poměru se můžete znovu přihlásit 90 dní po posledním dni práce ve společnosti Amazon.",
+      "note" : "Text for rehire not eligible 365 days content text"
+    },
+    "BB-no-available-shift-all-shifts-filled-text" : {
+      "value" : "V současné době jsou všechny směny obsazeny.",
+      "note" : "Text for the no available shift page all shifts filled text"
+    },
+    "BB-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Vraťte se prosím na řídicí panel a ucházejte se o další pracovní pozice.",
+      "note" : "Text for the no available shift page return to dashboard to apply other jobs text"
+    },
+    "BB-no-available-shift-return-to-dashboard" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the no available shift page return to dashboard text"
+    },
+    "BB-application-id-null-title-text" : {
+      "value" : "Chyba žádosti",
+      "note" : "Text for the applicationId null page title text"
+    },
+    "BB-application-id-null-description-text" : {
+      "value" : "Něco není v pořádku, přejděte na řídicí panel",
+      "note" : "Text for the applicationId null page description text"
+    },
+    "BB-application-id-null-return-to-dashboard-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
+      "note" : "Text for the detailed radio button error."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Spojené státy - číslo sociálního pojištění",
