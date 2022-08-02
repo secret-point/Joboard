@@ -703,6 +703,22 @@ export const handleSubmitFcraBGC = ( applicationData: Application, stepConfig: B
     })
 }
 
+export const handleWithdrawFcraBGC = ( applicationData: Application, fcraResponse?: FCRA_DISCLOSURE_TYPE ) => {
+    const updateApplicationPayload = {
+        fcraQuestions: {
+            bgcDisclosureEsign: {},
+            bgcDisclosure: fcraResponse
+        }
+    };
+
+    const { FCRA_BGC } = UPDATE_APPLICATION_API_TYPE;
+
+    const updateApplicationRequest = createUpdateApplicationRequest(applicationData, FCRA_BGC, updateApplicationPayload);
+    boundUpdateApplicationDS(updateApplicationRequest, () => {
+        onCompleteTaskHelper(applicationData);
+    });
+};
+
 export const handleUpdateFcraBGCStep = (stepConfig: BgcStepConfig) => {
     const { completedSteps } = stepConfig;
     const request: BgcStepConfig = {

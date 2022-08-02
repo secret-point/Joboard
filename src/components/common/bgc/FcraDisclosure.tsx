@@ -10,7 +10,7 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
-import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, validateName } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, handleWithdrawFcraBGC, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { useLocation } from "react-router";
 import {
@@ -25,6 +25,7 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
 
 interface MapStateToProps {
     job: JobState,
@@ -46,7 +47,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const fcraQuestions = applicationData?.fcraQuestions;
 
     const [fcraResponse, setFcraResponse] = useState<FCRA_DISCLOSURE_TYPE | undefined>();
-    const [eSignature, setESignature] = useState(fcraQuestions?.bgcDisclosureEsign.signature || '');
+    const [eSignature, setESignature] = useState(fcraQuestions?.bgcDisclosureEsign?.signature || '');
     const [isSignatureValid, setIsSignatureValid] = useState(true);
     const [missingFcraResponse, setMissingFcraResponse] = useState(false);
 
@@ -90,10 +91,15 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
 
     useEffect(() => {
         setFcraResponse(fcraQuestions?.bgcDisclosure);
-        setESignature(fcraQuestions?.bgcDisclosureEsign.signature || "");
+        setESignature(fcraQuestions?.bgcDisclosureEsign?.signature || "");
     }, [fcraQuestions])
 
-    const handleClickNext = () => {
+    const handleClickNext = (modalOpen: Function) => {
+        if (fcraResponse && fcraResponse === FCRA_DISCLOSURE_TYPE.DECLINE) {
+            modalOpen();
+            return;
+        }
+
         const isFullNameValid = validateName(eSignature);
 
         if(!isFullNameValid) {
@@ -109,7 +115,33 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
         if(applicationData) {
             handleSubmitFcraBGC(applicationData, stepConfig, eSignature, fcraResponse);
         }
-    }
+    };
+
+    const handleClickWithdrawApplication = () => {
+        applicationData && handleWithdrawFcraBGC(applicationData, FCRA_DISCLOSURE_TYPE.DECLINE);
+    };
+
+    const renderModal = ({ close }: { close: () => void }) => (
+        <ModalContent
+            titleText=''
+            buttons={[
+                <Button
+                    key="fcra-disclosure-decline-modal-btn"
+                    variant={ButtonVariant.Primary}
+                    isDestructive
+                    onClick={() => {
+                        close();
+                        handleClickWithdrawApplication();
+                    }}
+                >
+                    {t("BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text", "Withdraw application")}
+                </Button>
+            ]}>
+            <Text>
+                {t("BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text", "Your application will be withdrawn if you decline to conduct the background check.")}
+            </Text>
+        </ModalContent>
+    );
 
     return (
         <Col className="FcraDisclosureContainer" gridGap={15}>
@@ -166,7 +198,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                                 onChange={e => {
                                     setESignature(e.target.value);
                                 }}
-                                defaultValue={fcraQuestions?.bgcDisclosureEsign.signature || ''}
+                                defaultValue={fcraQuestions?.bgcDisclosureEsign?.signature || ''}
                             />
                         }
                     </InputWrapper>
@@ -175,12 +207,18 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
             {
                 fcraResponse &&
                 <Col padding={{ top: 'S300', bottom: 'S300' }}>
-                    <Button
-                      variant={ButtonVariant.Primary}
-                      onClick={handleClickNext}
+                    <WithModal
+                        renderModal={renderModal}
                     >
-                        {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
-                    </Button>
+                        {({ open }) => (
+                            <Button
+                                variant={ButtonVariant.Primary}
+                                onClick={() => handleClickNext(open)}
+                            >
+                                {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
+                            </Button>
+                        )}
+                    </WithModal>
                 </Col>
             }
         </Col>

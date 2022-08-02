@@ -410,6 +410,14 @@
             "note": "Text to explain what report need to be collected from candidate on fcra form",
             "value": "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\"), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\"."
         },
+        "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text": {
+            "note": "Text for fcra disclosure decline modall withdraw application button text",
+            "value": "Withdraw application"
+        },
+        "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text": {
+            "note":  "Text for fcra disclosure decline modall withdraw application description text",
+            "value": "Your application will be withdrawn if you decline to conduct the background check."
+        },
         "BB-BGC-fcra-disclosure-bgc-form-title": {
             "note": "Text for the fcra disclosure form title",
             "value": "Fair Credit Report Act Disclosure"

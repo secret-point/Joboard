@@ -336,6 +336,14 @@
       "value" : "சரியான நாட்டின் பெயரை உள்ளிடவும்",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "அமெரிக்காவில், சமூகப் பாதுகாப்பு எண் (SSN) என்பது அமெரிக்க குடிமக்கள், நிரந்தர குடியிருப்பாளர்கள் மற்றும் தற்காலிக (வேலை செய்யும்) குடியிருப்பாளர்களுக்கு வழங்கப்படும் ஒன்பது இலக்க எண்ணாகும்.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
+      "value" : "தேசிய அடையாள எண்",
+      "note" : "Text for the additional bgc form  national id type label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise" : {
       "value" : "தேசிய அடையாள அட்டை",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -343,6 +351,10 @@
     "BB-BGC-Additional-bgc-form-national-id-type-error-text" : {
       "value" : "சரியான தேசிய அடையாள ஆவண வகையை உள்ளிடவும்",
       "note" : "Text for the additional bgc form national id type error message text"
+    },
+    "BB-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "அடையாள எண்",
+      "note" : "Text for the additional bgc form  national id number label text"
     },
     "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise" : {
       "value" : "தேசிய அடையாள எண்",
@@ -359,6 +371,10 @@
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
       "value" : "சரியான பிறந்த தேதியை உள்ளிடவும்.",
       "note" : "Text for the additional bgc form date of birth error message text."
+    },
+    "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
+      "value" : "நீங்கள் 18 வயதுக்கு மேல் இருக்க வேண்டும்.",
+      "note" : "Text for the additional bgc form date of birth below 18 years error message text."
     },
     "BB-BGC-Additional-bgc-form-national-id-options-ssn" : {
       "value" : "சமூகப் பாதுகாப்பு எண்",
@@ -939,6 +955,10 @@
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
       "value" : "ஆம்",
       "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "இல்லை",
+      "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
