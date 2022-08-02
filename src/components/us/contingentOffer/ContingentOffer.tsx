@@ -97,12 +97,12 @@ const ContingentOffer = ( props: ContingentOfferMergedProps) => {
         applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
     }
 
-    const firstName = candidateData?.firstName || '';
+    const displayName = candidateData?.preferredFirstName || candidateData?.firstName || '';
 
     return (
         <Col gridGap={10}>
             <Col gridGap={10}>
-                <H2>{t("BB-ContingencyOffer-well-done-text","Well done so far")}{firstName ? `, ${firstName}`: ''}!</H2>
+                <H2>{t("BB-ContingencyOffer-well-done-text","Well done so far")}{displayName ? `, ${displayName}`: ''}!</H2>
                 <Text fontSize="T200">Here is the contingent offer for the job you picked.</Text>
             </Col>
             <Row>

@@ -685,7 +685,10 @@ export interface Candidate {
     timezone: string;
     emailId: string;
     language: string;
-    preferredPhoneType: string;
+    preferredFirstName?: string;
+    preferredLastName?: string;
+    preferredMiddleName?: string;
+    preferredPhoneType?: string;
     phoneNumber: string;
     phoneCountryCode: string;
     homePhoneNumber: string;

@@ -107,7 +107,7 @@ const Nhe = ( props: JobOpportunityMergedProps ) => {
                         {t("BB-nhe-page-header-text","Schedule pre-hire appointment")}
                     </H4>
                     <Text fontSize='T200'>
-                        {t("BB-nhe-page-title-text", "You are almost there, {firstname} {lastname}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.", {firstname: candidateData?.firstName || '', lastname: candidateData?.lastName || ''})}
+                        {t("BB-nhe-page-title-text", "You are almost there, {firstname} {lastname}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.", {firstname: candidateData?.preferredFirstName || candidateData?.firstName || '', lastname: candidateData?.lastName || ''})}
                     </Text>
                 </Col>
                 <Col padding={{top: 'S400'}} gridGap={15}>
