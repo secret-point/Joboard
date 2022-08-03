@@ -18,6 +18,7 @@ import {
 } from "../actions/WorkflowActions/boundWorkflowActions";
 import { EnvConfig } from "../utils/types/common";
 import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
+import { awaitWithTimeout, showErrorMessage } from "../utils/helper";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -32,6 +33,7 @@ export default class StepFunctionService {
   interval: any;
   SECONDS: number = 60000;
   MINUTES: number = 5;
+  CONNECTION_TIMEOUT: number = 5000;
 
   constructor( applicationId: string, candidateId: string, appConfig: EnvConfig, requisitionId?: string, jobId?: string, scheduleId?: string ) {
     this.applicationId = applicationId;
@@ -137,4 +139,34 @@ export default class StepFunctionService {
     log("Error on received from Websocket", event, LoggerType.ERROR);
     boundWorkflowRequestEnd();
   }
+
+  // Wait for socket to be in open state
+  waitForOpenSocket() {
+    return new Promise<void>((resolve, reject) => {
+      if (this.websocket?.readyState === WebSocket.OPEN) {
+        resolve();
+      } else {
+        this.websocket?.addEventListener("open", () => resolve(), { once: true });
+      }
+    });
+  }
+
+  // Race condition: there is a chance that during initial page load/refresh, the socket is still in connecting state (socket is
+  // not null, our current logic only checks if socket is null) when we are trying to send message to websocket. The message won't
+  // be sent in this case and the message will be lost.
+  //
+  // Send message after websocket is in open state, otherwise wait for socket to be open
+  async sendMessage(message: string) {
+    try {
+      await awaitWithTimeout(this.waitForOpenSocket(), this.CONNECTION_TIMEOUT);
+      this.websocket?.send(message);
+    } catch (error) {
+        console.error("[WS] Error sending message to websocket", error);
+        showErrorMessage({
+          translationKey: "BB-websocket-error-message-internal-server-error",
+          value: "Something went wrong with the websocket server. Please try again or refresh the browser.",
+        });
+      }
+  }
+
 }

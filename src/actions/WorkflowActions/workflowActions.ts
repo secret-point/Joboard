@@ -60,7 +60,7 @@ export const startOrResumeWorkflow = () => {
     requisitionId,
     isCsDomain: checkIfIsCSRequest()
   });
-  window.stepFunctionService.websocket?.send(payload);
+  window.stepFunctionService.sendMessage(payload);
 };
 
 export const startOrResumeWorkflowDS = () => {
@@ -79,7 +79,7 @@ export const startOrResumeWorkflowDS = () => {
     isCsDomain: checkIfIsCSRequest()
   });
 
-  window.stepFunctionService.websocket?.send(payload);
+  window.stepFunctionService.sendMessage(payload);
 
   if(window.hasCompleteTask) {
     window.hasCompleteTask();
@@ -97,7 +97,7 @@ export const sendHeartBeatWorkflow = () => {
 
     if(duration.asMinutes() < MAX_MINUTES_FOR_HEARTBEAT && websocket?.OPEN === websocket?.readyState) {
       const payload: string = JSON.stringify({ action: "heartbeat" });
-      window.stepFunctionService.websocket?.send(payload);
+      window.stepFunctionService.sendMessage(payload);
     }
     else {
       log("Websocket timed out, moved to timed out page");
@@ -110,7 +110,7 @@ export const sendHeartBeatWorkflow = () => {
     if(websocket?.OPEN === websocket?.readyState) {
       log("Sending the heart beat event");
       const payload: string = JSON.stringify({ action: "heartbeat" });
-      window.stepFunctionService.websocket?.send(payload);
+      window.stepFunctionService.sendMessage(payload);
     }
     else {
       log("Websocket timed out, moved to timed out page");
@@ -204,7 +204,8 @@ export const completeTask =
         log(`complete ${currentStep} stepName request: `, { ...data });
         console.info(`[WS] complete ${currentStep} stepName request: `, { ...data });
 
-        window.stepFunctionService.websocket?.send(JSON.stringify(data));
+        // wait for ready state to be open
+        window.stepFunctionService.sendMessage(JSON.stringify(data));
       }
     };
 
@@ -258,7 +259,7 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   else {
     completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
   }
-}
+};
 
 export const actionWorkflowRequestInit = (): WorkflowRequestInitAction => {
   return { type: WORKFLOW_REQUEST.INIT }

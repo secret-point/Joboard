@@ -1327,6 +1327,14 @@
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
       "value" : "SAYA TIDAK MAHU MENJAWAB",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Orang India Amerika/Orang Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Negro/Afrika Amerika",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

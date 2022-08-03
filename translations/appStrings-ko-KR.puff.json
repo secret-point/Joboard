@@ -408,6 +408,14 @@
       "value" : "Amazon.com, Inc. 또는 그 자회사 또는 계열사(“아마존”)에서의 취업 지원과 관련하여 아마존은 소비자 보고 기관으로부터 귀하에 대한 소비자 보고서를 조달합니다. 이를 흔히 “신원 조사”라고 합니다.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "지원 철회",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "신원 조회를 거부하면 지원서가 철회됩니다.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "공정신용보고법 공시",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,10 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>뉴욕: </b>귀하는 아마존이 귀하에 대한 소비자 보고서 또는 조사 소비자 보고서를 주문했는지 확인하기 위해 아마존에 서면 요청을 제출할 권리가 있습니다. 위에 표시된 내용은 CRA의 주소와 전화번호입니다. 귀하는 해당 보고서를 점검하거나 사본을 받기 위해 CRA에 연락할 권리가 있습니다. 뉴욕 교정법 23-A조에 따른 귀하의 권리에 대한 정보를 보려면 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">여기</a>를 클릭하세요.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>뉴욕: </b>귀하는 아마존이 귀하에 대한 소비자 보고서 또는 조사 소비자 보고서를 주문했는지 확인하기 위해 아마존에 서면 요청을 제출할 권리가 있습니다. 위에 표시된 내용은 CRA의 주소와 전화번호입니다. 귀하는 해당 보고서를 점검하거나 사본을 받기 위해 CRA에 연락할 권리가 있습니다. 뉴욕 교정법 23-A조에 따른 귀하의 권리에 대한 정보를 보려면 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">여기</a>를 클릭하세요.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>모든 주: </b>이 확인란을 선택하면 신원 조사의 무료 사본을 제공합니다.",

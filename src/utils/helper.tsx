@@ -10,6 +10,7 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
+    ErrorMessage,
     FeatureFlagList,
     FormInputItem,
     GetNheTimeSlotRequestDs,
@@ -1179,3 +1180,43 @@ export const getCountryCodeByCountryName = (countryName: string): string => {
     const country = CountrySelectOptions.filter(country => country.value === countryName);
     return country.length ? country[0].countryCode : "";
 }
+
+export const AWAIT_TIMEOUT = "AWAIT_TIMEOUT";
+
+// await a promise with timeout(ms), throws timeout error if not suppressTimeoutError
+export const awaitWithTimeout = async (promise: Promise<any>, timeout: number, suppressTimeoutError?: boolean): Promise<any> => {
+    let timer: ReturnType<typeof setTimeout>;
+
+    return Promise.race([
+        promise,
+        new Promise(
+            (_, reject) => timer = setTimeout(() => reject(AWAIT_TIMEOUT), timeout)
+        )
+    ]).catch(err => {
+        if (err === AWAIT_TIMEOUT) {
+            console.warn(`Promise await timeout: ${timeout} ms`);
+            if (!suppressTimeoutError) {
+                throw new Error(AWAIT_TIMEOUT);
+            }
+        } else {
+            // other errors, rethrow to let client to handle
+            throw err;
+        }
+    }).finally(
+        () => clearTimeout(timer)
+    );
+};
+
+export const showErrorMessage = (errorMessage: ErrorMessage, isDismissible?: boolean) => {
+    const message = translate(errorMessage.translationKey, errorMessage.value);
+
+    const alertMessage: AlertMessage = {
+        type: MessageBannerType.Error,
+        title: message,
+        visible: true,
+        isDismissible,
+        dismissTime: 5000
+    }
+
+    boundSetBannerMessage(alertMessage);
+};

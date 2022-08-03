@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import { getCountryCodeByCountryName, processAssessmentUrl } from "../../../src/utils/helper";
+import { awaitWithTimeout, AWAIT_TIMEOUT, getCountryCodeByCountryName, processAssessmentUrl } from "../../../src/utils/helper";
 import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID } from "../../test-utils/test-data";
 
 describe('processAssessmentUrl', () => {
@@ -36,4 +36,29 @@ test("getCountryCodeByCountryName", () => {
   expect(getCountryCodeByCountryName("")).toEqual("");
   expect(getCountryCodeByCountryName("United States")).toEqual("US");
   expect(getCountryCodeByCountryName("custom")).toEqual("");
-})
+});
+
+describe('awaitWithTimeout', () => {
+  let promise: Promise<any>;
+
+  beforeEach(() => {
+    promise = new Promise((res) => setTimeout(() => res('result'), 100));
+  });
+
+  it('should return promise result if not timeout', async () => {
+    const res = await awaitWithTimeout(promise, 1000);
+    expect(res).toEqual('result');
+  });
+
+  it('should throw timeout error if timeout', async () => {
+    await expect(awaitWithTimeout(promise, 10))
+      .rejects
+      .toThrow(AWAIT_TIMEOUT);
+  });
+
+  it('should not throw timeout error if suppressed', async () => {
+    await expect(awaitWithTimeout(promise, 10, true))
+      .resolves
+      .toBeUndefined();
+  });
+});

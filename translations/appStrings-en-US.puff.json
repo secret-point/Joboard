@@ -2063,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Black/African American",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

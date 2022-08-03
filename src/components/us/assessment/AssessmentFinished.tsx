@@ -44,7 +44,7 @@ export const AssessmentFinished = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  },[]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but

@@ -848,9 +848,12 @@ export type StateSelectOption = {
     code?: string
 }
 
-export interface ApiErrorMessage {
+export interface ErrorMessage {
     translationKey: string;
     value: string;
+}
+
+export interface ApiErrorMessage extends ErrorMessage{
 }
 
 export interface UpdateWotcStatusRequest {

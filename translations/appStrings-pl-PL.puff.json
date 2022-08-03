@@ -408,6 +408,14 @@
       "value" : "W związku z podaniem o zatrudnienie w Amazon.com, Inc. lub jej spółce zależnej lub stowarzyszonej („Amazon”), od agencji raportowania konsumenckiego otrzymamy dotyczący Ciebie raport konsumencki. Jest to powszechnie znane jako „weryfikacja przeszłości”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Wycofaj podanie",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Twoje zgłoszenie zostanie wycofane, jeśli odmówisz weryfikacji swojej przeszłości.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Ujawnienie informacji zgodnie z ustawą o uczciwej sprawozdawczości kredytowej (Fair Credit Report Act)",
       "note" : "Text for the fcra disclosure form title"
