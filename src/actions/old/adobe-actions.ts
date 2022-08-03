@@ -78,7 +78,7 @@ export const postAdobeMetrics = (
   data: { [key: string]: object } | MetricData,
   appData?: ApplicationData
 ) => {
-  const { name, metricsValues } = adobeMetrics;
+  const { name, metricsValues = {} } = adobeMetrics;
   let metric: Metric = getDataForEventMetrics(name);
   switch (name) {
     case EVENT_NAMES.SUBMIT_NHE_PREFERENCES: {

@@ -77,8 +77,8 @@ export const addMetricForPageLoad = ( pageName: string ) => {
   }
 };
 
-export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: string]: object } | MetricData, appData?: ApplicationData ) => {
-  const { name, metricsValues } = adobeMetrics;
+export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: string]: object } | MetricData = {}, appData?: ApplicationData ) => {
+  const { name, metricsValues = {} } = adobeMetrics;
   let metric: Metric = getDataForEventMetrics(name);
 
   switch(name) {
@@ -115,4 +115,8 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
   }
 
   sendDataLayerAdobeAnalytics(metric);
+
+  // TODO will be removed currently used to test in beta
+  console.log(`[Evnet "${name}"] adding new metrics`, metric);
+  console.log(`[Evnet "${name}"] new metrics`, window.dataLayerArray);
 };

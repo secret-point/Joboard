@@ -27,7 +27,9 @@ export enum EVENT {
   FAIL_CANCEL_SHIFT_SELF_SERVICE = "fail to cancel shift on self service page",
   SKIP_SCHEDULE_SELECTION = "skip schedule selection",
   THANK_YOU_SUBMIT = "submit on thank-you page",
-  CANCELLATION_RESCHEDULE_REASON_SELF_SERVICE = "reason of cancellation or reschedule"
+  CANCELLATION_RESCHEDULE_REASON_SELF_SERVICE = "reason of cancellation or reschedule",
+  NO_SSN_CONTINUE = "SSN continue",
+  NO_SSN_CANCEL = "SSN cancel"
 }
 
 export enum PAGE_TYPE {
@@ -130,4 +132,9 @@ export enum EVENT_NAMES {
   SELECT_JOB_ROLE = "SELECT_JOB_ROLE",
   SELECT_NHE = "SELECT_NHE",
   SUBMIT_SHIFT_PREFERENCES = "SUBMIT_SHIFT_PREFERENCES"
-}
+};
+
+export enum METRIC_NAME {
+  NO_SSN_CONTINUE = "no-ssn-continue",
+  NO_SSN_CANCEL = "no-ssn-cancel",
+};

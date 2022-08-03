@@ -9,7 +9,7 @@ export interface MetricsValue {
 
 export interface AdobeMetrics {
   name: string;
-  metricsValues: MetricsValue;
+  metricsValues?: MetricsValue;
 }
 
 export interface Metric {

@@ -41,6 +41,8 @@ import {
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
 import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
+import { postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
     appConfig: AppConfig,
@@ -225,13 +227,23 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             titleText=''
             buttons={[
                 <Button
-                    onClick={() => { close(); setIsNoSSNChecked(false); setIsNoSSNModalConsentChecked(false); }}
+                    onClick={() => {
+                        close();
+                        setIsNoSSNChecked(false);
+                        setIsNoSSNModalConsentChecked(false);
+                        postAdobeMetrics({name: METRIC_NAME.NO_SSN_CANCEL});
+                    }}
                     variant={ButtonVariant.Secondary}
                 >
                     {t('BB-BGC-no-ssn-modal-cancel-button', 'Cancel')}
                 </Button>,
                 <Button
-                    onClick={() => { close(); setIsNoSSNChecked(true); setIsNoSSNModalConsentChecked(false); }}
+                    onClick={() => {
+                        close();
+                        setIsNoSSNChecked(true);
+                        setIsNoSSNModalConsentChecked(false);
+                        postAdobeMetrics({name: METRIC_NAME.NO_SSN_CONTINUE});
+                    }}
                     variant={ButtonVariant.Primary}
                     disabled={!isNoSSNModalConsentChecked}
                 >

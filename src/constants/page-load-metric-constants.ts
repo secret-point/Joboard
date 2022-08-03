@@ -1,5 +1,5 @@
 import { checkIfIsLegacy } from "../helpers/utils";
-import { EVENT, PAGE_TYPE, PAGE_NAME } from "./adobe-analytics";
+import { EVENT, PAGE_TYPE, PAGE_NAME, METRIC_NAME } from "./adobe-analytics";
 
 const candidatePayloadDefault = {
   key: "candidate",
@@ -853,6 +853,46 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
   bgc: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
+      countryCode: "us",
+      page: {
+        name: PAGE_NAME["bgc"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
+  [METRIC_NAME.NO_SSN_CONTINUE]: {
+    eventPayload: {
+      event: EVENT.NO_SSN_CONTINUE,
+      countryCode: "us",
+      page: {
+        name: PAGE_NAME["bgc"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
+  [METRIC_NAME.NO_SSN_CANCEL]: {
+    eventPayload: {
+      event: EVENT.NO_SSN_CANCEL,
       countryCode: "us",
       page: {
         name: PAGE_NAME["bgc"],
