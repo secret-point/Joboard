@@ -155,7 +155,7 @@ getInitialData()
         ? `${appHashUrl}${requestQueryString}`
         : appHashUrl;
 
-      window.location.assign(`${usNewBBUIPathName}#/${appHashUrl}`);
+      window.location.assign(`${usNewBBUIPathName}${requestQueryString}#/${appHashUrl}`);
     }
 
     if (!isNil(token)) {

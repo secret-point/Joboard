@@ -1094,7 +1094,7 @@ export const isNewBBuiPath = (pathName: string): boolean => {
         pathName = pageName || '';
     }
 
-    return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(`${usNewBBUIPathName}#/${pathName}`);
+    return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(usNewBBUIPathName) && href.includes(`#/${pathName}`);
 }
 
 export const isAddressValid = (address?: Address): boolean => {
