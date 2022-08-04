@@ -1264,6 +1264,10 @@
       "value" : "{startTime}~{endTime} 사이에 언제든지 30분 세션을 위해 방문해 주세요.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "채용 전 면담",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "약속 시간 세부 사항",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2043,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "흑인/아프리카계 미국인",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "웹소켓 서버에 문제가 발생했습니다. 다시 시도하거나 브라우저를 새로 고침하세요.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

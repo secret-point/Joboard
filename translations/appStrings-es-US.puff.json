@@ -336,6 +336,10 @@
       "value" : "Ingresa un país válido",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "En los Estados Unidos, un número de Seguridad Social (SSN) es un número de nueve dígitos que se otorga a los ciudadanos estadounidenses, a los residentes permanentes y a los residentes temporales (que trabajan).",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "Número de ID nacional",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -944,6 +948,10 @@
       "value" : "Sí",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "No",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Elijo no identificarme",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1255,6 +1263,10 @@
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
       "value" : "Visítanos para una sesión de 30 minutos en cualquier momento entre las {startTime} y las {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Cita previa a la contratación",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Detalles de la cita",
@@ -2023,6 +2035,14 @@
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
       "value" : "NO DESEO RESPONDER",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Indígena Americano/Nativo de Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Negro/Afroamericano",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

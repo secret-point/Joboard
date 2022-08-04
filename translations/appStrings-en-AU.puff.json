@@ -1264,6 +1264,10 @@
       "value" : "Visit us for a 30-minute session anytime between {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Pre-hire appointment",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Appointment details",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2043,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Black/African American",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

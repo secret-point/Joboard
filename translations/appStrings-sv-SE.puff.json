@@ -1811,6 +1811,14 @@
     "BB-application-id-null-return-to-dashboard-text" : {
       "value" : "Återgå till översikten",
       "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Ursprungsamerikan/ursprungsbefolkningen i Alaska",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Svart/afroamerikan",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

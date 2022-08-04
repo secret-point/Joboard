@@ -336,6 +336,10 @@
       "value" : "ಮಾನ್ಯವಾದ ದೇಶವನ್ನು ನಮೂದಿಸಿ",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್‌‌ನಲ್ಲಿ, ಸಾಮಾಜಿಕ ಭದ್ರತಾ ಸಂಖ್ಯೆ (SSN) ಎಂಬುದು U.S. ನಾಗರಿಕರು, ಖಾಯಂ ನಿವಾಸಿಗಳು ಮತ್ತು ತಾತ್ಕಾಲಿಕ (ಕೆಲಸ ಮಾಡುತ್ತಿರುವ) ನಿವಾಸಿಗಳಿಗೆ ನೀಡಲಾಗುವ ಒಂಬತ್ತು-ಅಂಕಿಯ ಸಂಖ್ಯೆಯಾಗಿದೆ.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "ರಾಷ್ಟ್ರೀಯ ID ಸಂಖ್ಯೆ",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -944,6 +948,10 @@
       "value" : "ಹೌದು",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "ನಾನು ಸ್ವಯಂ ಗುರುತಿಸಿಕೊಳ್ಳದಿರಲು ಆಯ್ಕೆ ಮಾಡುತ್ತೇನೆ",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1255,6 +1263,10 @@
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
       "value" : "{startTime} - {endTime} ನಡುವೆ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ 30 ನಿಮಿಷಗಳ ಸೆಷನ್‌ಗಾಗಿ ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "ಪ್ರೀ-ಹೈರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವಿವರಗಳು",
@@ -2023,6 +2035,18 @@
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
       "value" : "ನಾನು ಉತ್ತರಿಸಲು ಇಚ್ಚಿಸುವುದಿಲ್ಲ",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "ಅಮೇರಿಕನ್ ಇಂಡಿಯನ್/ಅಲಾಸ್ಕಾ ಮೂಲನಿವಾಸಿ",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "ಕಪ್ಪು ಜನಾಂದವರು/ಆಫ್ರಿಕನ್ ಅಮೇರಿಕನ್",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "ವೆಬ್‌ಸಾಕೆಟ್ ಸರ್ವರ್‌ನಲ್ಲಿ ಏನೋ ತಪ್ಪಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಬ್ರೌಸರ್ ರಿಫ್ರೆಶ್ ಮಾಡಿ.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

@@ -336,6 +336,10 @@
       "value" : "சரியான நாட்டின் பெயரை உள்ளிடவும்",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "அமெரிக்காவில், சமூகப் பாதுகாப்பு எண் (SSN) என்பது அமெரிக்கக் குடிமக்கள், நிரந்தரக் குடியிருப்பாளர்கள் மற்றும் தற்காலிக (வேலை செய்யும்) குடியிருப்பாளர்களுக்கு வழங்கப்படும் ஒன்பது இலக்க எண்ணாகும்.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "தேசிய அடையாள எண்",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -944,6 +948,10 @@
       "value" : "ஆம்",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "என்னைச் சுயமாக அடையாளப்படுத்திக்கொள்ள விரும்பவில்லை",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1147,6 +1155,10 @@
     "BB-ReviewSubmit-header-title-text" : {
       "value" : "சரிபார்த்து, சமர்ப்பிக்கவும்",
       "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "திருத்து",
+      "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "வேலை விவரங்கள்",
@@ -1696,6 +1708,194 @@
       "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
+    "BB-States-Alabama" : {
+      "value" : "AL -- அலபாமா",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- அலாஸ்கா",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- அரிசோனா",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- ஆர்கன்சாஸ்",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- கலிஃபோர்னியா",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- கொலராடோ",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- கனெக்டிகட்",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- டெலாவேர்",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- கொலம்பியா மாவட்டம்",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "IL -- ஃபுளோரிடா",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- ஜார்ஜியா",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- ஹவாய்",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- ஐடஹோ",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- இல்லினோய்ஸ்",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- இண்டியானா",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- அயோவா",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- கன்சாஸ்",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- கென்டக்கி",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- லூசியானா",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "MD -- மேய்னி",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- மேரிலாந்து",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- மாசசூசெட்ஸ்",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- மிச்சிகன்",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- மின்னுசோட்டா",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- மிஸ்ஸிசிப்பி",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- மிசூரி",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- மொண்டானா",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "MD -- நெப்ராஸ்கா",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "OR -- நெவாடா",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "MD -- நியூ ஹாம்ப்ஷயர்",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- நியூ ஜெர்சி",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- நியூ மெக்ஸிகோ",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY -- நியூயார்க்",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- வடக்கு கரோலினா",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- வடக்கு டகோட்டா",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- ஓஹியோ",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- ஓக்லஹோமா",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- ஒரேகன்",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- பென்சில்வேனியா",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- ரோட் தீவு",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- தென் கரோலினா",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- தெற்கு டகோட்டா",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "AK -- டென்னிசி",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- டெக்சாஸ்",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- உட்டா",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "OK -- வெர்மான்ட்",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- விர்ஜினியா",
+      "note" : "Text for Virginia state"
+    },
     "BB-States-Washington" : {
       "value" : "WA -- வாஷிங்டன்",
       "note" : "Text for Washington state"
@@ -1815,6 +2015,34 @@
     "BB-application-id-null-return-to-dashboard-text" : {
       "value" : "டாஷ்போர்டுக்குத் திரும்புக",
       "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
+      "note" : "Text for the detailed radio button error."
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "அமெரிக்கா - சமூகப் பாதுகாப்பு எண்",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "ஆம், நான் ஒரு மாற்றுத்திறனாளி (அல்லது முன்பு மாற்றுத்திறனாளியாக இருந்தேன்)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "இல்லை, நான் மாற்றுத்திறனாளி அல்ல",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "நான் பதிலளிக்க விரும்பவில்லை",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "அமெரிக்க இந்தியர்/அலாஸ்கா பூர்வீகம்",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "கறுப்பு/ஆப்பிரிக்க அமெரிக்கர்",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
     }
   }
 }

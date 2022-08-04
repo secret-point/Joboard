@@ -336,6 +336,10 @@
       "value" : "Ingresa un país válido",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "En Estados Unidos, un número de la Seguridad Social (SSN) es un número de nueve dígitos emitido a los ciudadanos estadounidenses, residentes permanentes y residentes temporales (trabajadores).",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "Número de ID nacional",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -943,6 +947,10 @@
     "BB-SelfId-equal-opportunity-form-protected-veteran-yes-option-text" : {
       "value" : "Sí",
       "note" : "Text for the protected veteran select form option: Yes"
+    },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "No",
+      "note" : "Text for the protected veteran select form option: No"
     },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Prefiero no autoidentificarme",

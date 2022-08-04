@@ -1156,6 +1156,10 @@
       "value" : "檢閱並提交",
       "note" : "Text for the review and submit title text"
     },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "編輯",
+      "note" : "Text for the review and submit page edit button text"
+    },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "工作詳細內容",
       "note" : "Text for the job details section title text"
@@ -1700,6 +1704,194 @@
       "value" : "請核取方塊以繼續。",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
+    "BB-States-Alabama" : {
+      "value" : "AL -- 阿拉巴馬州",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK -- 阿拉斯加州",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ -- 亞利桑那州",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR -- 阿肯色州",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA -- 加州",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO -- 科羅拉多州",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT -- 康乃狄克州",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE -- 德拉瓦州",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC -- 哥倫比亞特區",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL -- 佛羅里達州",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA -- 喬治亞州",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI -- 夏威夷州",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID -- 愛達荷州",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL -- 伊利諾州",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "IN -- 印第安納州",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA -- 愛荷華州",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS -- 堪薩斯州",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY -- 肯塔基州",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA -- 路易斯安那州",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME -- 緬因州",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD -- 馬里蘭州",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA -- 麻薩諸塞州",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI -- 密西根州",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN -- 明尼蘇達州",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS -- 密西西比州",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO -- 密蘇里州",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT -- 蒙大拿州",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE -- 內布拉斯加州",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV -- 內華達州",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH -- 新罕布夏州",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ -- 新澤西州",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM -- 新墨西哥州",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY - 紐約州",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC -- 北卡羅來納州",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND -- 北達科他州",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH -- 俄亥俄州",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK -- 奧克拉荷馬州",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR -- 俄勒岡州",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA -- 賓夕法尼亞州",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI -- 羅德島州",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC -- 南卡羅來納州",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD -- 南達科他州",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN -- 田納西州",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX -- 德克薩斯州",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT -- 猶他州",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT -- 佛蒙特州",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA -- 維吉尼亞州",
+      "note" : "Text for Virginia state"
+    },
     "BB-States-Washington" : {
       "value" : "WA -- 華盛頓州",
       "note" : "Text for Washington state"
@@ -1819,6 +2011,26 @@
     "BB-application-id-null-return-to-dashboard-text" : {
       "value" : "返回控制面板",
       "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "請核取方塊以繼續。",
+      "note" : "Text for the detailed radio button error."
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "美國 - 社會安全號碼",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "是，我是傷殘人士 (或先前是傷殘人士)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "否，我不是傷殘人士",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "我不想回答",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
     }
   }
 }

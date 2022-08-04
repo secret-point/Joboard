@@ -1264,6 +1264,10 @@
       "value" : "{startTime} -{endTime} दरम्यान कधीही 30 मिनिटांच्या सत्रासाठी आम्हाला भेट द्या.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "प्री-हायर अपॉइंटमेंट",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "अपॉइंटमेंट तपशील",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2043,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "कृष्णवर्णीय/आफ्रिकन अमेरिकन",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "वेबसॉकेट सर्व्हरमध्ये काहीतरी गडबड झाली. कृपया पुन्हा प्रयत्न करा किंवा ब्राउझर रीफ्रेश करा.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

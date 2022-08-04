@@ -408,6 +408,14 @@
       "value" : "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (‘Amazon’), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a ‘background check’.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Withdraw application",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Your application will be withdrawn if you decline to conduct the background check.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Fair Credit Report Act Disclosure",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NEW YORK: </b>You have the right to submit a written request to Amazon to know if we ordered a consumer report or an investigative consumer report about you. Shown above is the CRA’s address and telephone number. You have the right to contact any CRA to inspect or receive a copy of any such report. Click <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">here</a> for information about your rights under Article 23-A of the New York Correction Law.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>You have the right to request from the consumer reporting agency a written summary of your rights under the Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>You have the right to request from the consumer reporting agency a written summary of your rights under the Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>ALL STATES: </b>We will provide you with a free copy of any background check if you check this box",

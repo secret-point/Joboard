@@ -2039,6 +2039,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "കറുത്ത വര്‍ഗ്ഗം/ആഫ്രിക്കൻ അമേരിക്കൻ",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "വെബ്സോക്കറ്റ് സെർവറിൽ എന്തോ കുഴപ്പം സംഭവിച്ചു. ദയവായി വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ ബ്രൗസർ റീഫ്രഷ് ചെയ്യുക.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }
