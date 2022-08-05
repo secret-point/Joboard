@@ -27,6 +27,7 @@ import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -89,6 +90,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     },[])
 
     const handleBackToJobs = () => {
+        boundResetBannerMessage();
         // Stay at the current page, wait work flow to do the routing
         // Need further work here
         // Remove schedule Id in URL here before go to contingent-offer page

@@ -33,6 +33,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { JobState } from "../../../reducers/job.reducer";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -99,6 +100,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
 
 
   const handleContinue = () => {
+    boundResetBannerMessage();
     const isSelfIdInfoValid = isSelfIdentificationInfoValid(selfIdentificationInfo);
     setIsSelfIdInfoValid(isSelfIdInfoValid);
 

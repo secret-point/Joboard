@@ -13,6 +13,7 @@ import { PAGE_ROUTES } from "../../pageRoutes";
 import ScheduleCardBanner from "./ScheduleCardBanner";
 import ScheduleDetails from "./ScheduleDetails";
 import Image from "../../common/Image";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface ScheduleCardProps {
     scheduleDetail: Schedule,
@@ -37,6 +38,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
 
     const handleClick = () => {
         if(!displayOnly) {
+            boundResetBannerMessage();
             const queryParamItem: QueryParamItem = {
                 paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
                 paramValue: scheduleDetail.scheduleId

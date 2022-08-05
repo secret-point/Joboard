@@ -20,6 +20,7 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import queryString from "query-string";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   candidate: CandidateState,
@@ -64,6 +65,7 @@ const SessionTimeout = (props: MapStateToProps) => {
   },[])
 
   const handleGoToJobOpportunities = () => {
+    boundResetBannerMessage();
     const isBackButton = true;
     const targetPageToGoBack = WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES;
     applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);

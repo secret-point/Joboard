@@ -25,6 +25,7 @@ import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailAct
 import { uiState } from '../../../reducers/ui.reducer';
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     application: ApplicationState
@@ -80,6 +81,7 @@ export const JobConfirmation = ( props: MapStateToProps ) => {
     },[])
 
     const handleConfirmJob = () => {
+        boundResetBannerMessage();
         if(applicationDetail && scheduleDetail && jobDetail){
             handleSubmitJobConfirmation(applicationDetail, jobDetail, scheduleDetail);
         }

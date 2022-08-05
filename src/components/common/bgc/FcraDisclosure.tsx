@@ -26,6 +26,7 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -95,6 +96,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     }, [fcraQuestions])
 
     const handleClickNext = (modalOpen: Function) => {
+        boundResetBannerMessage();
         if (fcraResponse && fcraResponse === FCRA_DISCLOSURE_TYPE.DECLINE) {
             modalOpen();
             return;
@@ -130,6 +132,7 @@ const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                     variant={ButtonVariant.Primary}
                     isDestructive
                     onClick={() => {
+                        boundResetBannerMessage();
                         close();
                         handleClickWithdrawApplication();
                     }}

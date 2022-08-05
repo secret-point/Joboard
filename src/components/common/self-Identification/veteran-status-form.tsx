@@ -22,6 +22,7 @@ import InnerHTML from "dangerously-set-html-content";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import DetailedRadioError from "../DetailedRadioError";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -50,6 +51,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
   const [isVeteranMissingMissing, setIsVeteranMissingMissing] = useState(false);
 
   const handleCLickNext = () => {
+    boundResetBannerMessage();
     const isFormValid = !!militarySpouse && !!protectedVeteran && !!veteran;
 
     if(isFormValid) {

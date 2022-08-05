@@ -89,7 +89,7 @@ import { UpdateApplicationRequest } from "../@types/candidate-application-servic
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
-import { boundSetBannerMessage } from "../actions/UiActions/boundUi";
+import {boundResetBannerMessage, boundSetBannerMessage} from "../actions/UiActions/boundUi";
 import { translate } from "./translator";
 import isNil from "lodash/isNil";
 import { translate as t } from "./translator";
@@ -370,6 +370,7 @@ export const handleSubmitJobConfirmation = (applicationDetail: Application, jobD
 }
 
 export const handleAcceptOffer = ( applicationData: Application ) => {
+    boundResetBannerMessage();
     const updateApplicationRequest: UpdateApplicationRequestDS = {
         applicationId: applicationData.applicationId,
         payload: {
@@ -1078,7 +1079,6 @@ export const setEpicApiCallErrorMessage = (errorMessage: ApiErrorMessage, isDism
         title: message,
         visible: true,
         isDismissible,
-        dismissTime: 5000
     }
 
     //Show Banner when error is due to unauthorized, we may extend logic to show error banner in future.
@@ -1219,7 +1219,6 @@ export const showErrorMessage = (errorMessage: ErrorMessage, isDismissible?: boo
         title: message,
         visible: true,
         isDismissible,
-        dismissTime: 5000
     }
 
     boundSetBannerMessage(alertMessage);

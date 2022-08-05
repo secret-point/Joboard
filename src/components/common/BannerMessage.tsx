@@ -19,8 +19,8 @@ export const BannerMessage = (props: MapStateToProps) => {
                     type={bannerMessage.type}
                     isDismissible={bannerMessage.isDismissible || true}
                     onDismissed={boundResetBannerMessage}
-                    autoDismissAfter={bannerMessage.dismissTime || 5000}
                     aria-live="assertive"
+                    {...(bannerMessage.dismissTime && { autoDismissAfter: bannerMessage.dismissTime })}
                 >
                     <InnerHTML html={bannerMessage.title} className="bannerMessageTitle"/>
                 </MessageBanner>

@@ -15,6 +15,7 @@ import { BGCState } from "../../../reducers/bgc.reducer";
 import { connect } from "react-redux";
 import get from 'lodash/get';
 import { handleSubmitNonFcraBGC, validateNonFcraSignatures } from "../../../utils/helper";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -45,6 +46,7 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
     const [errorMessage, setErrorMessage] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
 
     const handleCLickNext = () => {
+        boundResetBannerMessage();
         if(applicationData) {
             const errorStatus: NonFcraFormErrorStatus =
                 validateNonFcraSignatures(applicationData, nonFcraAckEsign.trim(), nonFcraNoticeEsign.trim());

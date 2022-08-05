@@ -47,6 +47,7 @@ import { Application } from "../../../utils/types/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { translate as t } from "../../../utils/translator";
 import InfoStepCard from "../../common/InfoStepCard";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -117,6 +118,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
     }, [candidateData, applicationData])
 
     const handleContinue = () => {
+        boundResetBannerMessage();
         if(applicationData) {
             const { BGC } = UPDATE_APPLICATION_API_TYPE;
             const payload = {
@@ -142,7 +144,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
                     <Col padding='S300'>
                         <Button
                             variant={ButtonVariant.Primary}
-                            onClick={() => routeToAppPageWithPath(BACKGROUND_CHECK_FCRA)}
+                            onClick={() => { boundResetBannerMessage(); routeToAppPageWithPath(BACKGROUND_CHECK_FCRA) }}
                         >
                             {stepConfig[BGC_STEPS.FCRA].status === INFO_CARD_STEP_STATUS.ACTIVE ?
                                 t("BB-BGC-page-fcra-get-started-btn", "Get Started") :

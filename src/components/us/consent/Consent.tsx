@@ -28,6 +28,7 @@ import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState;
@@ -156,6 +157,7 @@ export const Consent = (props: MapStateToProps) => {
                     style={{ width: "100%" }}
                     disabled={isCreateButtonDisabled}
                     onClick={() => {
+                        boundResetBannerMessage();
                         if (scheduleId) {
                             const payload: CreateApplicationAndSkipScheduleRequestDS = {
                                 jobId,

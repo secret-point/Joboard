@@ -25,6 +25,7 @@ import { NheState } from "../../../reducers/nhe.reducer";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import { NHETimeSlot } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -90,6 +91,8 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
     },[])
 
     const handleConfirmSelection = () => {
+        boundResetBannerMessage();
+
         if (applicationData && selectedNhe) {
             handleConfirmNHESelection(applicationData, selectedNhe);
         }

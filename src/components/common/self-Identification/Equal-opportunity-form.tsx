@@ -14,6 +14,7 @@ import { handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
 import { connect } from "react-redux";
 import DetailedRadioError from "../DetailedRadioError";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -40,6 +41,7 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
   const [isEthnicityMissing, setIsEthnicityMissing] = useState(false);
 
   const handleClickNext = () => {
+    boundResetBannerMessage();
     const isFormValid = !!gender && !!ethnicity;
 
     if(isFormValid) {

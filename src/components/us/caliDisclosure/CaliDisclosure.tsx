@@ -28,6 +28,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -89,6 +90,8 @@ export const CaliDisclosure = (props: MapStateToProps) => {
   },[])
 
   const handleGoToNext = () => {
+    boundResetBannerMessage();
+
     if (applicationData) {
       const { CALI_DISCLOSURE } = UPDATE_APPLICATION_API_TYPE;
       const payload = {

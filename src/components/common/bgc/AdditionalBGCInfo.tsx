@@ -43,6 +43,7 @@ import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/hel
 import { translate as t } from "../../../utils/translator";
 import { postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     appConfig: AppConfig,
@@ -217,6 +218,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }
 
     const handleClickNext = () => {
+        boundResetBannerMessage();
         if(candidatePatchRequest && candidateData && applicationData) {
             handleSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
         }

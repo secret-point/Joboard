@@ -28,6 +28,7 @@ import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   job: JobState;
@@ -83,6 +84,8 @@ const ReviewSubmit = (props: MapStateToProps) => {
   },[]);
 
   const handleBackToEdit = (stepName: WORKFLOW_STEP_NAME) => {
+    boundResetBannerMessage();
+
     const isBackButton = true;
     if (applicationData) {
       onCompleteTaskHelper(applicationData, isBackButton, stepName);
@@ -91,6 +94,8 @@ const ReviewSubmit = (props: MapStateToProps) => {
   };
 
   const handleSubmitApplication = () => {
+    boundResetBannerMessage();
+
     if (applicationData) {
       const { REVIEW_SUBMIT } = UPDATE_APPLICATION_API_TYPE;
       const payload = {

@@ -21,6 +21,7 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
     job: JobState,
@@ -73,6 +74,7 @@ export const JobDescription = (props: MapStateToProps) => {
                 color={CommonColors.Blue70}
                 padding='S200'
                 onClick={() => {
+                    boundResetBannerMessage();
                     routeToAppPageWithPath(JOB_CONFIRMATION);
                 }}
                 style={{ cursor: 'pointer' }}

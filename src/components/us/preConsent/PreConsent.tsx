@@ -19,6 +19,7 @@ import { JobState } from "../../../reducers/job.reducer";
 import { useLocation } from "react-router";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   job: JobState;
@@ -52,6 +53,7 @@ const PreConsent = ( props: MapStateToProps ) => {
   },[])
 
     const onGoNextPage = () => {
+        boundResetBannerMessage();
         routeToAppPageWithPath(CONSENT)
     }
 

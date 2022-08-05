@@ -18,6 +18,7 @@ import {
 import { connect } from "react-redux";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import DetailedRadioError from "../DetailedRadioError";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -43,6 +44,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   let errorMessage = "Please check the box to proceed.";
 
   const handleClickNext = () => {
+    boundResetBannerMessage();
     const isFormValid = !!disability;
 
     const isSelfIdValid = isSelfIdentificationInfoValidBeforeDisability(selfIdentificationInfoData);

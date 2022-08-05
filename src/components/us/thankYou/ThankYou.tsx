@@ -38,6 +38,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -140,6 +141,7 @@ const ThankYou = (props: MapStateToProps) => {
   };
 
   const handleGetStarted = () => {
+    boundResetBannerMessage();
     if (!validateFormInput()) {
       return;
     }

@@ -25,6 +25,7 @@ import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   candidate: CandidateState,
@@ -84,6 +85,8 @@ const NoAvailableTimeSlots = (props: MapStateToProps) => {
   };
 
   const handleGoToJobOpportunities = () => {
+    boundResetBannerMessage();
+
     const isBackButton = true;
     const targetPageToGoBack = WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES;
     applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
