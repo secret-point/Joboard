@@ -26,7 +26,7 @@ interface MapStateToProps {
   candidate: CandidateState,
 }
 
-const CanNotOfferJob = (props: MapStateToProps) => {
+export const CanNotOfferJob = (props: MapStateToProps) => {
 
   const { job, candidate, application } = props;
   const { search, pathname } = useLocation();

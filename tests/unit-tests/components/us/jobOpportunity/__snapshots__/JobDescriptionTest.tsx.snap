@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobDescription should match snapshot 1`] = `
+<Col>
+  <Row
+    alignItems="center"
+    color="#1768C9"
+    gridGap={5}
+    onClick={[Function]}
+    padding="S200"
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+    width="fit-content"
+  >
+    <IconArrowLeft
+      display="block"
+      size={16}
+    />
+    <Text
+      font="primary"
+      fontSize="T100"
+      fontWeight="medium"
+      hyphens="none"
+    >
+      Back
+    </Text>
+  </Row>
+  <Row
+    id="jobImageContainer"
+    padding="S300"
+    width="100%"
+  >
+    <img />
+  </Row>
+  <DangerouslySetHtmlContent
+    className="jobDescription"
+    html=""
+  />
+</Col>
+`;

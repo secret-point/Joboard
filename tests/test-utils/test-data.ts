@@ -2,10 +2,12 @@ import { createHashHistory } from "history";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { CandidateState } from "../../src/reducers/candidate.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
-import { Address, Candidate } from "../../src/utils/types/common";
+import { Address, Candidate, NheTimeSlotLocation } from "../../src/utils/types/common";
 import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
-import { DESIRED_WORK_HOURS, SCHEDULE_FILTER_TYPE } from "../../src/utils/enums/common";
+import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE } from "../../src/utils/enums/common";
+import { BGCState } from "../../src/reducers/bgc.reducer";
+import { NheState } from "../../src/reducers/nhe.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -366,3 +368,53 @@ export const TestInitUiState: uiState = {
 };
 
 export const TEST_ASSESSMENT_URL = "https://assessment-url.test.amazon.com/";
+
+export const TEST_BGC_STATE: BGCState = {
+  stepConfig: {
+    completedSteps: [],
+    [BGC_STEPS.ADDITIONAL_BGC]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: true
+    },
+    [BGC_STEPS.FCRA]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    },
+    [BGC_STEPS.NON_FCRA]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    }
+  }
+};
+
+export const NHE_TIMESLOT_LOCATION: NheTimeSlotLocation = {
+  streetAddress: "Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place",
+  city: "Dupont",
+  state: "WA",
+  country: "US",
+  postalCode: "98327"
+};
+
+export const TEST_NHE_STATE: NheState = {
+  loading: false,
+  failed: false,
+  results: {
+    nheData: [
+      {
+        timeSlotId: "VTS-1643678",
+        startTime: "13:30",
+        endTime: "14:00",
+        location: NHE_TIMESLOT_LOCATION,
+        timezone: "America/Los_Angeles",
+        availableResources: 33,
+        appointmentsBooked: 2,
+        recruitingEventId: "",
+        timeRange: "01:30 PM - 02:00 PM",
+        date: "Thursday, Aug 04",
+        dateWithoutFormat: "04/08/2022",
+        childRequisitionId: "",
+        nheSource: "Centralization",
+      }
+    ]
+  }
+};

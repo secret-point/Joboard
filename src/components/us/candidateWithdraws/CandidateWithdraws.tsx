@@ -26,7 +26,7 @@ interface MapStateToProps {
   application: ApplicationState
 }
 
-const CandidateWithdraws = (props: MapStateToProps) => {
+export const CandidateWithdraws = (props: MapStateToProps) => {
   const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));

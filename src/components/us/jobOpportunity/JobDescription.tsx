@@ -28,7 +28,7 @@ interface MapStateToProps {
     candidate: CandidateState
 }
 
-const JobDescription = (props: MapStateToProps) => {
+export const JobDescription = (props: MapStateToProps) => {
 
     const { job, application, candidate } = props;
     const { search, pathname } = useLocation();

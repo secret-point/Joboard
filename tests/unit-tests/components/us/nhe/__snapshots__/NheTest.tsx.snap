@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nhe should match snapshot 1`] = `
+<Col
+  id="jobOpportunityContainer"
+>
+  <StepHeader
+    jobTitle=""
+    step={
+      Object {
+        "stepNumber": 3,
+        "title": "Schedule pre-hire appointment",
+        "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
+      }
+    }
+  />
+  <Col
+    gridGap={20}
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Col
+      gridGap={10}
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="regular"
+        hyphens="none"
+        margin={0}
+      >
+        Schedule pre-hire appointment
+      </H4>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You are almost there, {firstname} {lastname}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.
+      </Text>
+    </Col>
+    <Col
+      gridGap={15}
+      padding={
+        Object {
+          "top": "S400",
+        }
+      }
+    >
+      <NheTimeSlotCard
+        handleChange={[Function]}
+        key="VTS-1643678"
+        nheTimeSlot={
+          Object {
+            "appointmentsBooked": 2,
+            "availableResources": 33,
+            "childRequisitionId": "",
+            "date": "Thursday, Aug 04",
+            "dateWithoutFormat": "04/08/2022",
+            "endTime": "14:00",
+            "location": Object {
+              "city": "Dupont",
+              "country": "US",
+              "postalCode": "98327",
+              "state": "WA",
+              "streetAddress": "Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place",
+            },
+            "nheSource": "Centralization",
+            "recruitingEventId": "",
+            "startTime": "13:30",
+            "timeRange": "01:30 PM - 02:00 PM",
+            "timeSlotId": "VTS-1643678",
+            "timezone": "America/Los_Angeles",
+          }
+        }
+      />
+    </Col>
+    <Col>
+      <Button
+        colorScheme="default"
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="primary"
+      >
+        Confirm Selection
+      </Button>
+    </Col>
+  </Col>
+</Col>
+`;

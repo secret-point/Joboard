@@ -40,7 +40,7 @@ interface JobOpportunityProps {
 
 type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
 
-const Nhe = ( props: JobOpportunityMergedProps ) => {
+export const Nhe = ( props: JobOpportunityMergedProps ) => {
     const { job, application, schedule, candidate, nhe } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);

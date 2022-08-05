@@ -24,7 +24,7 @@ exports[`App snapshot 1`] = `
         exact={true}
         path="/consent"
       >
-        <Connect(ConsentPage) />
+        <Connect(Consent) />
       </Route>
       <Route
         exact={true}

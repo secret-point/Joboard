@@ -34,7 +34,7 @@ interface MapStateToProps {
     candidate: CandidateState
 }
 
-const JobConfirmation = ( props: MapStateToProps ) => {
+export const JobConfirmation = ( props: MapStateToProps ) => {
 
     const { schedule, application, job, ui, candidate } = props;
     const isLoading = ui.isLoading;

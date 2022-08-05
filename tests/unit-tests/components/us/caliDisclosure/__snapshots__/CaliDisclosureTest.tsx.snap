@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaliDisclosure should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T500"
+    hyphens="none"
+  >
+    California Disclosure Regarding Investigative Consumer Reports
+  </Text>
+  <Text
+    color="#232f3e"
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    In connection with my possible employment with Amazon.com, Inc. or its subsidiaries or affiliates ("Amazon"), Amazon may procure an investigative consumer report ("Report"), also known as a background check, about me from the following consumer reporting agency:
+  </Text>
+  <DetailedCheckbox
+    checked={false}
+    onChange={[Function]}
+    titleText="I certify that I have read this document and that I understand it, and that, pursuant to this CALIFORNIA DISCLOSURE REGARDING INVESTIGATIVE CONSUMER REPORTS, I authorize Amazon to obtain an investigative consumer report about me."
+  />
+</Col>
+`;

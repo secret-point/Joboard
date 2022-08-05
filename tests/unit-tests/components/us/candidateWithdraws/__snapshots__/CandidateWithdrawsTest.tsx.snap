@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CandidateWithdraws should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Thank you for your interest, but we're unable to offer you a job at this time.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    The information you provided does not meet our requirements. We encourage you to look at other jobs on amazon.jobs.
+  </Text>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Return to dashboard
+    </Button>
+  </Col>
+</Col>
+`;

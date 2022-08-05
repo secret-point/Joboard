@@ -39,7 +39,7 @@ interface RenderFlyoutFunctionParams {
     close: () => void;
 }
 
-const ConsentPage = (props: MapStateToProps) => {
+export const Consent = (props: MapStateToProps) => {
     const { job, ui, schedule } = props;
     const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();
@@ -182,4 +182,4 @@ const mapStateToProps = (state: MapStateToProps) => {
     return state;
 };
 
-export default connect(mapStateToProps)(ConsentPage);
+export default connect(mapStateToProps)(Consent);

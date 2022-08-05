@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContingentOffer should match snapshot 1`] = `
+<Col
+  gridGap={10}
+>
+  <Col
+    gridGap={10}
+  >
+    <H2
+      color="neutral90"
+      font="primary"
+      fontSize="T600"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Well done so far
+      , test-firstname
+      !
+    </H2>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Here is the contingent offer for the job you picked.
+    </Text>
+  </Col>
+  <Row>
+    <Popover
+      position="bottom-leading"
+      shouldCloseOnFocusLeave={true}
+      shouldFocusOnOpen={false}
+      triggerButtonProps={Object {}}
+      triggerText="What is a contingent offer?"
+    >
+      <Component />
+    </Popover>
+  </Row>
+  <ScheduleCard
+    displayOnly={true}
+    scheduleDetail={
+      Object {
+        "scheduleId": "test-schedule-id",
+      }
+    }
+  />
+  <Col
+    className="jobDescriptionContainer"
+  >
+    <H3
+      color="neutral90"
+      font="primary"
+      fontSize="T500"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Job requirements
+    </H3>
+    <Col>
+      <DangerouslySetHtmlContent
+        className="jobDescription"
+        html=""
+      />
+    </Col>
+  </Col>
+  <Col
+    className="contingencyOfferFooter"
+    gridGap={15}
+    padding={
+      Object {
+        "bottom": "S400",
+        "left": "S300",
+        "right": "S300",
+        "top": "S400",
+      }
+    }
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Remaining Steps
+    </H4>
+    <ApplicationSteps />
+    <Col>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        By accepting this offer, you confirm that you understand the requirements of this position.
+      </Text>
+    </Col>
+    <Col
+      gridGap={20}
+      padding="S300"
+    >
+      <Button
+        colorScheme="default"
+        disabled={false}
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="primary"
+      >
+        Accept Offer
+      </Button>
+      <Button
+        colorScheme="default"
+        disabled={false}
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="secondary"
+      >
+        Back to jobs
+      </Button>
+    </Col>
+  </Col>
+</Col>
+`;

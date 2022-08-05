@@ -42,7 +42,7 @@ interface ContingentOfferProps {
 
 type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
 
-const ContingentOffer = ( props: ContingentOfferMergedProps) => {
+export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     const { job, application, schedule, ui, candidate } = props;
     const isLoading = ui.isLoading;
     const { search, pathname } = useLocation();

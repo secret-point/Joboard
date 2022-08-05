@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobConfirmation should match snapshot 1`] = `
+<Col
+  gridGap={10}
+>
+  <Row
+    alignItems="center"
+    color="#1768C9"
+    gridGap={5}
+    onClick={[Function]}
+    padding="S200"
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+    width="fit-content"
+  >
+    <IconArrowLeft
+      display="block"
+      size={16}
+    />
+    <Text
+      font="primary"
+      fontSize="T100"
+      fontWeight="medium"
+      hyphens="none"
+    >
+      View Jobs
+    </Text>
+  </Row>
+  <Col
+    className="jobConfirmationHeader"
+    gridGap={8}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    />
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    />
+  </Col>
+  <JobConfirmationCard
+    schedule={
+      Object {
+        "scheduleId": "test-schedule-id",
+      }
+    }
+  />
+  <Col
+    className="selectJobButtonContainer"
+    padding="S300"
+  >
+    <Button
+      colorScheme="default"
+      disabled={false}
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Select this job
+    </Button>
+  </Col>
+</Col>
+`;

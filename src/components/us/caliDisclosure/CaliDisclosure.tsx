@@ -36,7 +36,7 @@ interface MapStateToProps {
   job: JobState,
 }
 
-const CaliDisclosure = (props: MapStateToProps) => {
+export const CaliDisclosure = (props: MapStateToProps) => {
   const { application, schedule, job, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);

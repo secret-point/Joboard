@@ -62,7 +62,7 @@ interface BackgroundCheckProps {
 
 type BackgroundCheckMergedProps = MapStateToProps & BackgroundCheckProps;
 
-const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
+export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
     const { job, application, schedule, bgc, candidate } = props;
     const { search, pathname } = useLocation();
