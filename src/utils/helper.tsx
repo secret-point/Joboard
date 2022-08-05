@@ -69,9 +69,13 @@ import capitalize from "lodash/capitalize";
 import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { PAGE_ROUTES } from "../components/pageRoutes";
 import queryString from "query-string";
-import { isBoolean } from "lodash";
+import { isArray, isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
-import { get3rdPartyFromQueryParams, parseQueryParamsArrayToSingleItem } from "../helpers/utils";
+import {
+    get3rdPartyFromQueryParams,
+    jobIdSanitizer,
+    requisitionIdSanitizer
+} from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import isEmpty from "lodash/isEmpty";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
@@ -1220,3 +1224,19 @@ export const showErrorMessage = (errorMessage: ErrorMessage, isDismissible?: boo
 
     boundSetBannerMessage(alertMessage);
 };
+
+export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
+    const parsedQueryParams = {...queryParams};
+    Object.keys(parsedQueryParams).forEach((key: string) => {
+        let item = parsedQueryParams[key];
+        if( isArray(item) && item.length > 0){
+            parsedQueryParams[key] = item[0];
+        }
+        if (key === "jobId"){
+            parsedQueryParams[key] = jobIdSanitizer(parsedQueryParams[key]);
+        } else if(key === "requisitionId"){
+            parsedQueryParams[key] = requisitionIdSanitizer(parsedQueryParams[key]);
+        }
+    });
+    return parsedQueryParams;
+}

@@ -1,4 +1,3 @@
-import { checkIfIsLegacy } from "../helpers/utils";
 import { EVENT, PAGE_TYPE, PAGE_NAME, METRIC_NAME } from "./adobe-analytics";
 
 const candidatePayloadDefault = {
@@ -620,7 +619,7 @@ const cancellationRescheduleReasonPayloadDefault = {
 
 const sortPayloadDefault = {
   key: "sortBy",
-  value: checkIfIsLegacy()? "defaultAvailableFilter.sortBy" : "defaultAvailableFilterDS.sortBy"
+  value: "defaultAvailableFilter.sortBy"
 };
 
 export const ADOBE_PAGE_LOAD_METRICS: any = {

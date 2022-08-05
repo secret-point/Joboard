@@ -1,13 +1,16 @@
 import * as helper from "../log-helper"
+import KatalLogger from "@katal/logger";
 
 describe("Unit tests for log helper", () =>{
     beforeEach(() => {
-        let logger = helper.initLogger("url");
+        let logger: any = helper.initLogger("url");
         window.log = logger;
         window.loggerUrl = "url";
     });
     afterEach(() => {
+        // @ts-ignore
         window.log = undefined;
+        // @ts-ignore
         window.loggerUrl = undefined;
     });
     test("test logger", () => {
@@ -18,6 +21,7 @@ describe("Unit tests for log helper", () =>{
         helper.log("log default", {}, undefined);
     });
     test("test logger with logger not initiated", () => {
+        // @ts-ignore
         window.log = undefined;
         helper.log("log info", {}, helper.LoggerType.INFO);
     });
@@ -36,5 +40,4 @@ describe("Unit tests for log helper", () =>{
     test("test log error with no cookie", () => {
         helper.logError("error", new Error(), helper.LoggerType.ERROR);
     });
-
 });
