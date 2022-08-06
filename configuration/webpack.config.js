@@ -166,17 +166,15 @@ module.exports = {
     devServer: {
         hot: true,
         compress: true,
-        overlay: true,
         host: '0.0.0.0',
-        disableHostCheck: true,
-        publicPath: "/",
+        allowedHosts: "all",  // disableHostCheck: true,
         open: configUtils.serverMode === 'standalone',
-        index: 'index.html',
         historyApiFallback: true,
         port: 3000,
-        before: KatalWebpackPlugin.createMiddleware(),
-        inline: false,
-        proxy: { "/api/**": { target: 'http://localhost:8080', secure: false }  }
+        onBeforeSetupMiddleware: (devServer) => {
+            return KatalWebpackPlugin.createMiddleware()(devServer.app, devServer, devServer.compiler);
+        },
+        proxy: { '/api': { target: 'http://localhost:8080', secure: false }  }
     },
 
     performance: { hints: false },
