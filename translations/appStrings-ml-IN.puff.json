@@ -408,6 +408,14 @@
       "value" : "Amazon.com, Inc. അല്ലെങ്കിൽ അതിന്‍റെ അനുബന്ധ സ്ഥാപനങ്ങൾ അല്ലെങ്കിൽ അഫിലിയേറ്റുകൾ (\"Amazon\") എന്നിവയിലെ ജോലിക്കുള്ള നിങ്ങളുടെ അപേക്ഷയുമായി ബന്ധപ്പെട്ട് ഒരു ഉപഭോക്തൃ റിപ്പോർട്ടിംഗ് ഏജൻസിയിൽ നിന്ന് ഞങ്ങൾ നിങ്ങളെക്കുറിച്ചുള്ള ഒരു ഉപഭോക്തൃ റിപ്പോർട്ട് വാങ്ങും. ഇത് സാധാരണയായി ഒരു “പശ്ചാത്തല പരിശോധന” എന്നറിയപ്പെടുന്നു.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "അപേക്ഷ പിൻവലിക്കുക",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "പശ്ചാത്തല പരിശോധന നടത്താൻ നിങ്ങൾ വിസമ്മതിച്ചാൽ നിങ്ങളുടെ അപേക്ഷ പിൻവലിക്കും.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ട് നിയമം വെളിപ്പെടുത്തൽ",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>ന്യൂയോർക്ക്: </b>ഞങ്ങൾ ഒരു ഉപഭോക്തൃ റിപ്പോർട്ടോ അന്വേഷണാത്മക ഉപഭോക്തൃ റിപ്പോർട്ടോ ഓർഡർ ചെയ്‌തിട്ടുണ്ടോ എന്നറിയാൻ Amazon-ലേക്ക് ഒരു രേഖാമൂലമുള്ള അഭ്യർത്ഥന സമർപ്പിക്കാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്. CRA-യുടെ വിലാസവും ടെലിഫോൺ നമ്പറും മുകളിൽ കാണിച്ചിരിക്കുന്നു. അത്തരം ഏതെങ്കിലും റിപ്പോർട്ടിന്റെ പകർപ്പ് പരിശോധിക്കുന്നതിനോ സ്വീകരിക്കുന്നതിനോ ഏതെങ്കിലും CRA-യുമായി ബന്ധപ്പെടാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്. ന്യൂയോർക്ക് തിരുത്തൽ നിയമത്തിലെ ആർട്ടിക്കിൾ 23-A പ്രകാരം നിങ്ങളുടെ അവകാശങ്ങളെക്കുറിച്ചുള്ള വിവരങ്ങൾക്ക് ഇവിടെ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\"></a> ക്ലിക്ക് ചെയ്യുക.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>ന്യൂയോർക്ക്: </b>നിങ്ങളെക്കുറിച്ച് ഞങ്ങൾ ഒരു ഉപഭോക്തൃ റിപ്പോർട്ടോ അന്വേഷണാത്മക ഉപഭോക്തൃ റിപ്പോർട്ടോ ഓർഡർ ചെയ്‌തിട്ടുണ്ടോ എന്നറിയാൻ Amazon-ലേക്ക് ഒരു രേഖാമൂലമുള്ള അഭ്യർത്ഥന സമർപ്പിക്കാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്. CRA-യുടെ വിലാസവും ടെലിഫോൺ നമ്പറുമാണ് മുകളിൽ കാണിച്ചിരിക്കുന്നത്. അത്തരം ഏതെങ്കിലും റിപ്പോർട്ടിന്റെ പകർപ്പ് പരിശോധിക്കുന്നതിനോ സ്വീകരിക്കുന്നതിനോ ഏത് CRA-യുമായും ബന്ധപ്പെടാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്. ന്യൂയോർക്ക് തിരുത്തൽ നിയമത്തിലെ ആർട്ടിക്കിൾ 23-A പ്രകാരം നിങ്ങളുടെ അവകാശങ്ങളെക്കുറിച്ചുള്ള വിവരങ്ങൾക്ക് <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ഇവിടെ</a> ക്ലിക്ക് ചെയ്യുക.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>വാഷിംഗ്ടൺ: </b>വാഷിംഗ്ടൺ ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് നിയമത്തിന് കീഴിലുള്ള നിങ്ങളുടെ അവകാശങ്ങളുടെ രേഖാമൂലമുള്ള സംഗ്രഹം ഉപഭോക്തൃ റിപ്പോർട്ടിംഗ് ഏജൻസിയിൽ നിന്ന് അഭ്യർത്ഥിക്കാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>വാഷിംഗ്ടൺ: </b>വാഷിംഗ്ടൺ ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് നിയമത്തിന് കീഴിലുള്ള നിങ്ങളുടെ അവകാശങ്ങളുടെ രേഖാമൂലമുള്ള സംഗ്രഹം ഉപഭോക്തൃ റിപ്പോർട്ടിംഗ് ഏജൻസിയിൽ നിന്ന് അഭ്യർത്ഥിക്കാൻ നിങ്ങൾക്ക് അവകാശമുണ്ട്.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>എല്ലാ സംസ്ഥാനങ്ങളും: നിങ്ങൾ ഈ ബോക്‌സ് </b> ചെക്ക് ചെയ്യുകയാണെങ്കിൽ ഏത് പശ്ചാത്തല പരിശോധനയുടെയും സൗജന്യ പകർപ്പ് ഞങ്ങൾ നിങ്ങൾക്ക് നൽകും",
@@ -1263,6 +1283,10 @@
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
       "value" : "{startTime} - {endTime}-ന് ഇടയിൽ ഏത് സമയത്തും 30 മിനിറ്റ് സെഷനായി ഞങ്ങളെ സന്ദർശിക്കുക.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ്",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "നിയമന വിശദാംശങ്ങൾ",

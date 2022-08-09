@@ -408,6 +408,14 @@
       "value" : "En relación con tu solicitud de empleo con Amazon.com, Inc. o sus subsidiarias o afiliadas (“Amazon”), obtendremos un informe sobre el consumidor en relación contigo por parte de una agencia de informes sobre el consumidor. Esto se conoce comúnmente como “verificación de antecedentes”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Retirar solicitud",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Se retirará tu solicitud si te rehúsas a realizar la verificación de antecedentes.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Divulgación según la Ley de Informe Justo de Crédito",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si ordenamos un informe sobre el consumidor o un informe de investigación sobre el consumidor relacionado contigo. Arriba se muestra la dirección y el número de teléfono de la CRA. Tiene derecho a contactar a cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información acerca de tus derechos según el artículo 23-A de la Ley de Corrección de Nueva York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NUEVA YORK: </b>tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor acerca de ti. Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para inspeccionar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información acerca de tus derechos según el artículo 23-A de la Ley Penitenciaria de Nueva York.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos conforme a la Ley de Informe Justo de Crédito de Washington.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>tienes derecho a solicitar a la agencia de informes del consumidor un resumen escrito de tus derechos conforme a la Ley de Informe Justo de Crédito de Washington.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla",
@@ -2043,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Negro/Afroamericano",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Algo salió mal con el servidor websocket. Inténtalo de nuevo o actualiza el navegador.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

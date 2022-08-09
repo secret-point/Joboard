@@ -2063,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "কৃষ্ণাঙ্গ/আফ্রিকান আমেরিকান",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "ওয়েবসকেট সার্ভারে কিছু সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন বা ব্রাউজারটি রিফ্রেশ করুন।",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

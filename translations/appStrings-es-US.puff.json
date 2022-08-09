@@ -408,6 +408,14 @@
       "value" : "En relación con tu solicitud de empleo en Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), obtendremos un informe del consumidor sobre ti de una agencia de informes del consumidor. Esto se conoce comúnmente como “verificación de antecedentes”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Retirar solicitud",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Tu solicitud se retirará si te niegas a realizar la verificación de antecedentes.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Divulgación de la Ley de Informe Justo de Crédito",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación del consumidor sobre ti. Arriba se muestra la dirección y el número de teléfono de la CRA. Tienes derecho a ponerte en contacto con cualquier CRA para revisar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aquí</a> para obtener información sobre tus derechos de conformidad al artículo 23-A de la Ley Correccional de Nueva York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NUEVA YORK: </b>Tienes derecho a enviar una solicitud por escrito a Amazon para saber si pedimos un informe del consumidor o un informe de investigación al consumidor acerca de ti. Arriba se muestra la dirección y el número de teléfono de CRA. Tienes derecho a ponerte en contacto con cualquier CRA para revisar o recibir una copia de dicho informe. Haz clic <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aquí</a> para obtener información acerca de tus derechos en virtud del artículo 23-A de la New York Correction Law (Ley Correccional de Nueva York).</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de información al consumidor un resumen por escrito de tus derechos conforme a la Washington Fair Credit Reporting Act (Ley de Informe de Crédito Justo de Washington).</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>Tienes derecho a solicitar a la agencia de información al consumidor un resumen por escrito de tus derechos conforme a la Washington Fair Credit Reporting Act (Ley de Informe de Crédito Justo de Washington).</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>TODOS LOS ESTADOS: </b>Te proporcionaremos una copia gratuita de cualquier verificación de antecedentes si marcas esta casilla",
@@ -2043,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Negro/Afroamericano",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Se produjo un error con el servidor websocket. Inténtalo de nuevo o actualiza el navegador.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

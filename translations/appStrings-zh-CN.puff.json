@@ -408,6 +408,14 @@
       "value" : "关于您所申请的 Amazon.com, Inc. 的职位或其子公司或附属公司（“亚马逊”）的职位，我们将会从消费者报告机构获取您的消费者报告。这通常被称为“背景调查”。",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "撤销申请",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "如果您拒绝进行背景调查，您的申请将被撤销。",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>纽约：</b>您有权向亚马逊提交书面请求，以了解我们是否已按要求取得有关您的消费者报告或消费者调查报告。上面显示的是 CRA 的地址和电话号码。您有权联系任何 CRA 以检查或接收此类报告的副本。点击<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">此处</a>了解您在《New York Correction Law（纽约惩教法）》第 23 条-A 下的权利。</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>纽约：</b>您有权向亚马逊提交书面请求，以了解我们是否订购了有关您的买家报告或调查性买家报告。上面显示的是 CRA 的地址和电话号码。您有权联系任何 CRA 以检查或接收此类报告的副本。点击<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">此处</a>了解您在 New York Correction Law（纽约惩教法）》第 23-A 条下的权利。</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>华盛顿：</b>根据 Washington Fair Credit Reporting Act（华盛顿公平信用报告法），您有权向买家报告机构索取一份权力的书面摘要。</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>华盛顿：</b>根据 Washington Fair Credit Reporting Act（华盛顿公平信用报告法），您有权向买家报告机构索取一份权力的书面摘要。</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>所有州：</b>如果您勾选此选项，我们将免费为您提供任何背景调查的副本",

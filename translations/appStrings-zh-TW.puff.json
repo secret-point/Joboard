@@ -408,6 +408,14 @@
       "value" : "關於您在 Amazon.com, Inc. 或者其子公司或附屬公司 (統稱「Amazon」) 的工作應徵，我們將請求消費者報告機構提供您的相關消費者報告。這通常稱為「背景調查」。",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "撤回申請",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "如果您拒絕進行背景調查，您的申請將被撤回。",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "公平信用報告法案披露",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>紐約州：</b>您有權向 Amazon 提交書面請求，以了解我們是否要求有關您的消費者報告或調查性消費者報告。以上顯示的是 CRA 的地址及電話號碼。您有權聯絡任何 CRA 查閱或接收任何此類報告的副本。請點擊<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">此處</a>了解《紐約修正法》第 23-A 條下有關您的權利的資訊。</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>紐約州：</b>您有權向 Amazon 提交書面請求，以了解我們是否要求取得有關您的消費者報告或調查性消費者報告。以上顯示的是 CRA 的地址及電話號碼。您有權聯絡任何 CRA 查閱或接收任何此類報告的副本。請點擊<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">此處</a>了解紐約修正法第 23-A 條下有關您的權利的資訊。</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>華盛頓州：</b>您有權要求消費者報告機構提供一份關於您在華盛頓州公平信用報告法案下的權利的書面摘要。</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>華盛頓州：</b>您有權要求消費者報告機構提供一份關於您在華盛頓州公平信用報告法案下的權利的書面摘要。</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>所有州：</b>如果您核取此方塊，我們將為您提供任何背景調查的免費副本",
@@ -1264,6 +1284,10 @@
       "value" : "請於 {startTime}至 {endTime}期間，隨時造訪我們以進行 30 分鐘的會議。",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "聘前預約",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "約見詳細內容",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2031,6 +2055,18 @@
     "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
       "value" : "我不想回答",
       "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "美洲印第安人/阿拉斯加原住民",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "黑人/非洲裔美國人",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "WebSocket 伺服器發生錯誤。請再試一次或重新整理瀏覽器。",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

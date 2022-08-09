@@ -336,6 +336,10 @@
       "value" : "Εισαγάγετε μια έγκυρη χώρα",
       "note" : "Text for the additional bgc form country error message text"
     },
+    "BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner" : {
+      "value" : "Στις Ηνωμένες Πολιτείες, ο αριθμός κοινωνικής ασφάλισης (SSN) είναι ένας εννιαψήφιος αριθμός που εκδίδεται για τους πολίτες των ΗΠΑ, τους μόνιμους κατοίκους και τους προσωρινούς (εργαζόμενους) κατοίκους.",
+      "note" : "Informational Banner Text for the additional bgc form to explain what is SSN"
+    },
     "BB-BGC-Additional-bgc-form-national-id-type-label-text" : {
       "value" : "Αριθμός εθνικής ταυτότητας",
       "note" : "Text for the additional bgc form  national id type label text"
@@ -944,6 +948,10 @@
       "value" : "Ναι",
       "note" : "Text for the protected veteran select form option: Yes"
     },
+    "BB-SelfId-equal-opportunity-form-protected-veteran-no-option-text" : {
+      "value" : "Όχι",
+      "note" : "Text for the protected veteran select form option: No"
+    },
     "BB-SelfId-equal-opportunity-form-protected-veteran-choose-not-to-identify-option-text" : {
       "value" : "Επιλέγω να μην αυτοπροσδιοριστώ",
       "note" : "Text for the protected veteran select form option: I choose not to self-identify"
@@ -1147,6 +1155,10 @@
     "BB-ReviewSubmit-header-title-text" : {
       "value" : "Ανασκόπηση και υποβολή",
       "note" : "Text for the review and submit title text"
+    },
+    "BB-ReviewSubmit-edit-button-text" : {
+      "value" : "Επεξεργασία",
+      "note" : "Text for the review and submit page edit button text"
     },
     "BB-ReviewSubmit-job-details-section-title-text" : {
       "value" : "Λεπτομέρειες θέσης εργασίας",
@@ -1692,6 +1704,194 @@
       "value" : "Προσθέστε σημάδι επιλογής στο πλαίσιο για να συνεχίσετε.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
+    "BB-States-Alabama" : {
+      "value" : "AL — Αλαμπάμα",
+      "note" : "Text for Alabama state"
+    },
+    "BB-States-Alaska" : {
+      "value" : "AK — Αλάσκα",
+      "note" : "Text for Alaska state"
+    },
+    "BB-States-Arizona" : {
+      "value" : "AZ — Αριζόνα",
+      "note" : "Text for Arizona state"
+    },
+    "BB-States-Arkansas" : {
+      "value" : "AR — Αρκάνσας",
+      "note" : "Text for Arkansas state"
+    },
+    "BB-States-California" : {
+      "value" : "CA — Καλιφόρνια",
+      "note" : "Text for California state"
+    },
+    "BB-States-Colorado" : {
+      "value" : "CO — Κολοράντο",
+      "note" : "Text for Colorado state"
+    },
+    "BB-States-Connecticut" : {
+      "value" : "CT — Κονέκτικατ",
+      "note" : "Text for Connecticut state"
+    },
+    "BB-States-Delaware" : {
+      "value" : "DE — Ντέλαγουερ",
+      "note" : "Text for Delaware state"
+    },
+    "BB-States-District-of-Columbia" : {
+      "value" : "DC — Περιφέρεια της Κολούμπια",
+      "note" : "Text for District of Columbia state"
+    },
+    "BB-States-Florida" : {
+      "value" : "FL — Φλόριντα",
+      "note" : "Text for Florida state"
+    },
+    "BB-States-Georgia" : {
+      "value" : "GA — Τζόρτζια",
+      "note" : "Text for Georgia state"
+    },
+    "BB-States-Hawaii" : {
+      "value" : "HI — Χαβάη",
+      "note" : "Text for Hawaii state"
+    },
+    "BB-States-Idaho" : {
+      "value" : "ID — Αϊντάχο",
+      "note" : "Text for Idaho state"
+    },
+    "BB-States-Illinois" : {
+      "value" : "IL — Ιλινόι",
+      "note" : "Text for Illinois state"
+    },
+    "BB-States-Indiana" : {
+      "value" : "ΙΝ-Ιντιάνα",
+      "note" : "Text for Indiana state"
+    },
+    "BB-States-Iowa" : {
+      "value" : "IA — Αϊόβα",
+      "note" : "Text for Iowa state"
+    },
+    "BB-States-Kansas" : {
+      "value" : "KS — Κάνσας",
+      "note" : "Text for Kansas state"
+    },
+    "BB-States-Kentucky" : {
+      "value" : "KY — Κεντάκι",
+      "note" : "Text for Kentucky state"
+    },
+    "BB-States-Louisiana" : {
+      "value" : "LA — Λουιζιάνα",
+      "note" : "Text for Louisiana state"
+    },
+    "BB-States-Maine" : {
+      "value" : "ME — Μέιν",
+      "note" : "Text for Maine state"
+    },
+    "BB-States-Maryland" : {
+      "value" : "MD — Μέριλαντ",
+      "note" : "Text for Maryland state"
+    },
+    "BB-States-Massachusetts" : {
+      "value" : "MA — Μασαχουσέτη",
+      "note" : "Text for Massachusetts state"
+    },
+    "BB-States-Michigan" : {
+      "value" : "MI — Μίσιγκαν",
+      "note" : "Text for Michigan state"
+    },
+    "BB-States-Minnesota" : {
+      "value" : "MN — Μινεσότα",
+      "note" : "Text for Minnesota state"
+    },
+    "BB-States-Mississippi" : {
+      "value" : "MS — Μισισίπι",
+      "note" : "Text for Mississippi state"
+    },
+    "BB-States-Missouri" : {
+      "value" : "MO — Μιζούρι",
+      "note" : "Text for Missouri state"
+    },
+    "BB-States-Montana" : {
+      "value" : "MT — Μοντάνα",
+      "note" : "Text for Montana state"
+    },
+    "BB-States-Nebraska" : {
+      "value" : "NE — Νεμπράσκα",
+      "note" : "Text for Nebraska state"
+    },
+    "BB-States-Nevada" : {
+      "value" : "NV — Νεβάδα",
+      "note" : "Text for Nevada state"
+    },
+    "BB-States-New-Hampshire" : {
+      "value" : "NH — Νιου Χάμσαϊρ",
+      "note" : "Text for New Hampshire state"
+    },
+    "BB-States-New-Jersey" : {
+      "value" : "NJ — Νιου Τζέρσεϊ",
+      "note" : "Text for New Jersey state"
+    },
+    "BB-States-New-Mexico" : {
+      "value" : "NM — Νέο Μεξικό",
+      "note" : "Text for New Mexico state"
+    },
+    "BB-States-New-York" : {
+      "value" : "NY — Νέα Υόρκη",
+      "note" : "Text for New York state"
+    },
+    "BB-States-North-Carolina" : {
+      "value" : "NC — Βόρεια Καρολίνα",
+      "note" : "Text for North Carolina state"
+    },
+    "BB-States-North-Dakota" : {
+      "value" : "ND — Βόρεια Ντακότα",
+      "note" : "Text for North Dakota state"
+    },
+    "BB-States-Ohio" : {
+      "value" : "OH — Οχάιο",
+      "note" : "Text for Ohio state"
+    },
+    "BB-States-Oklahoma" : {
+      "value" : "OK — Οκλαχόμα",
+      "note" : "Text for Oklahoma state"
+    },
+    "BB-States-Oregon" : {
+      "value" : "OR — Όρεγκον",
+      "note" : "Text for Oregon state"
+    },
+    "BB-States-Pennsylvania" : {
+      "value" : "PA — Πενσυλβάνια",
+      "note" : "Text for Pennsylvania state"
+    },
+    "BB-States-Rhode-Island" : {
+      "value" : "RI — Ρόουντ Άιλαντ",
+      "note" : "Text for Rhode Island state"
+    },
+    "BB-States-South-Carolina" : {
+      "value" : "SC — Νότια Καρολίνα",
+      "note" : "Text for South Carolina state"
+    },
+    "BB-States-South-Dakota" : {
+      "value" : "SD — Νότια Ντακότα",
+      "note" : "Text for South Dakota state"
+    },
+    "BB-States-Tennessee" : {
+      "value" : "TN — Τενεσί",
+      "note" : "Text for Tennessee state"
+    },
+    "BB-States-Texas" : {
+      "value" : "TX — Τέξας",
+      "note" : "Text for Texas state"
+    },
+    "BB-States-Utah" : {
+      "value" : "UT — Γιούτα",
+      "note" : "Text for Utah state"
+    },
+    "BB-States-Vermont" : {
+      "value" : "VT — Βερμόντ",
+      "note" : "Text for Vermont state"
+    },
+    "BB-States-Virginia" : {
+      "value" : "VA — Βιρτζίνια",
+      "note" : "Text for Virginia state"
+    },
     "BB-States-Washington" : {
       "value" : "WA -- Washington",
       "note" : "Text for Washington state"
@@ -1811,6 +2011,38 @@
     "BB-application-id-null-return-to-dashboard-text" : {
       "value" : "Επιστροφή στο ταμπλό",
       "note" : "Text for the applicationId null page return to dashboard text"
+    },
+    "BB-Detailed-button-error-text-message" : {
+      "value" : "Επιλέξτε το πλαίσιο για να συνεχίσετε.",
+      "note" : "Text for the detailed radio button error."
+    },
+    "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
+      "value" : "Ηνωμένες Πολιτείες - Αριθμός Κοινωνικής Ασφάλισης",
+      "note" : "Text for the reverse mapping candidate nationalId type US SSN"
+    },
+    "BB-ReverseMapping-candidate-disability-yes" : {
+      "value" : "ΝΑΙ, ΕΧΩ ΑΝΑΠΗΡΙΑ (ή είχα προηγουμένως κάποια αναπηρία)",
+      "note" : "Text for the reverse mapping candidate disability yes"
+    },
+    "BB-ReverseMapping-candidate-disability-no" : {
+      "value" : "ΟΧΙ, ΔΕΝ ΕΧΩ ΚΑΠΟΙΑ ΑΝΑΠΗΡΙΑ",
+      "note" : "Text for the reverse mapping candidate disability no"
+    },
+    "BB-ReverseMapping-candidate-disability-dont-wish-to-answer" : {
+      "value" : "ΔΕΝ ΕΠΙΘΥΜΩ ΝΑ ΑΠΑΝΤΉΣΩ",
+      "note" : "Text for the reverse mapping candidate disability dont wish to answer"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native" : {
+      "value" : "Αυτόχθων/Ιθαγενής Αλάσκας",
+      "note" : "Text for the reverse mapping candidate ethnicity american indian"
+    },
+    "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
+      "value" : "Μαύρος/Αφροαμερικανός",
+      "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Κάτι πήγε στραβά με τον εξυπηρετητή websocket. Προσπαθήστε ξανά ή ανανεώστε το πρόγραμμα περιήγησης.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

@@ -408,6 +408,14 @@
       "value" : "Em conexão com sua candidatura para emprego na Amazon.com, Inc. ou suas subsidiárias ou afiliadas (“Amazon”), obteremos um relatório do consumidor sobre você de uma agência de relatórios de consumidor. Isso é comumente conhecido como “verificação de antecedentes”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Cancelar candidatura",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Sua candidatura será cancelada se você se recusar a realizar a verificação de antecedentes criminais.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Declaração da Lei de Relatórios de Crédito Justo",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NOVA YORK: </b>você tem o direito de enviar uma solicitação por escrito à Amazon para saber se solicitamos um relatório do consumidor ou um relatório investigativo do consumidor sobre você. Acima são mostrados o endereço e o número de telefone do CRA. Você tem o direito de entrar em contato com qualquer CRA para inspecionar ou receber uma cópia de qualquer relatório desse tipo. Clique <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">aqui</a> para obter informações sobre seus direitos nos termos do Artigo 23-A da Lei de Correção de Nova York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NOVA YORK: </b>você tem o direito de enviar uma solicitação por escrito à Amazon para saber se solicitamos um relatório de consumidor ou um relatório investigativo de consumidor sobre você. Acima estão o endereço e o número de telefone do CRA. Você tem o direito de entrar em contato com qualquer CRA para inspecionar ou receber uma cópia de qualquer relatório desse tipo. Clique <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">aqui</a> para informações sobre seus direitos nos termos do Artigo 23-A da Lei Penitenciária de Nova York.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>você tem o direito de solicitar à agência de relatórios de consumidor um resumo por escrito de seus direitos sob a Lei de Relatórios de Crédito Justos de Washington.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>você tem o direito de solicitar à agência de relatórios de consumidor um resumo por escrito de seus direitos sob a Lei de Relatórios de Crédito Justos de Washington.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>TODOS OS ESTADOS: </b>forneceremos uma cópia gratuita de qualquer verificação de antecedentes se você marcar esta caixa",
@@ -1264,6 +1284,10 @@
       "value" : "Visite-nos para uma sessão de 30 minutos a qualquer momento entre {startTime} e {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Reunião de pré-contratação",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Detalhes da reunião",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Negro/afro-americano",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Ocorreu um erro com o servidor websocket. Tente novamente ou atualize o navegador.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

@@ -408,6 +408,14 @@
       "value" : "Amazon.com, Inc ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಫಿಲಿಯೇಟ್ ಸಂಸ್ಥೆಗಳಲ್ಲಿ (\"Amazon\") ಉದ್ಯೋಗಕ್ಕಾಗಿ ನೀವು ಸಲ್ಲಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಸಂಬಂಧಿಸಿದಂತೆ, ನಾವು ಬಳಕೆದಾರ ವರದಿ ನೀಡುವ ಏಜೆನ್ಸಿಯಿಂದ ನಿಮ್ಮ ಬಗ್ಗೆ ಬಳಕೆದಾರ ರಿಪೋರ್ಟ್ ಅನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ. ಇದನ್ನು ಸಾಮಾನ್ಯವಾಗಿ “ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ” ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್ ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ನಡೆಸಲು ನೀವು ನಿರಾಕರಿಸಿದರೆ ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "ನ್ಯಾಯಯುತ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟ್ ಆ್ಯಕ್ಟ್ ಪ್ರಕಟಣೆ",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>ನ್ಯೂಯಾರ್ಕ್: </b>ನಿಮ್ಮ ಬಗ್ಗೆ ಗ್ರಾಹಕ ವರದಿ ಅಥವಾ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ನಾವು ಆದೇಶಿಸಿದ್ದೇವೆಯೇ ಎಂದು ತಿಳಿಯಲು Amazon ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕು ನಿಮಗೆ ಇದೆ. ಮೇಲೆ ತೋರಿಸಲಾಗಿರುವುದು CRA ನ ವಿಳಾಸ ಮತ್ತು ದೂರವಾಣಿ ಸಂಖ್ಯೆಯಾಗಿದೆ. ಅಂತಹ ಯಾವುದೇ ವರದಿಯ ಪ್ರತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಅಥವಾ ಸ್ವೀಕರಿಸಲು ನೀವು ಯಾವುದೇ CRA ಅನ್ನು ಸಂಪರ್ಕಿಸುವ ಹಕ್ಕನ್ನು ಹೊಂದಿರುತ್ತೀರಿ. ನ್ಯೂಯಾರ್ಕ್ ತಿದ್ದುಪಡಿ ಕಾನೂನಿನ ಆರ್ಟಿಕಲ್ 23-A ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತು ಮಾಹಿತಿಗಾಗಿ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ಇಲ್ಲಿ</a> ಕ್ಲಿಕ್ ಮಾಡಿ.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>ನ್ಯೂಯಾರ್ಕ್: </b>ನಿಮ್ಮ ಬಗ್ಗೆ ಗ್ರಾಹಕ ವರದಿ ಅಥವಾ ತನಿಖಾ ಗ್ರಾಹಕ ವರದಿಯನ್ನು ನಾವು ಆದೇಶಿಸಿದ್ದೇವೆಯೇ ಎಂದು ತಿಳಿಯಲು Amazon ಗೆ ಲಿಖಿತ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸುವ ಹಕ್ಕು ನಿಮಗೆ ಇದೆ. ಮೇಲೆ ತೋರಿಸಲಾಗಿದೆ CRA ನ ವಿಳಾಸ ಮತ್ತು ದೂರವಾಣಿ ಸಂಖ್ಯೆ. ಅಂತಹ ಯಾವುದೇ ವರದಿಯ ಪ್ರತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಅಥವಾ ಸ್ವೀಕರಿಸಲು ನೀವು ಯಾವುದೇ CRA ಅನ್ನು ಸಂಪರ್ಕಿಸುವ ಹಕ್ಕನ್ನು ಹೊಂದಿರುತ್ತೀರಿ. ನ್ಯೂಯಾರ್ಕ್ ತಿದ್ದುಪಡಿ ಕಾನೂನಿನ ಆರ್ಟಿಕಲ್ 23-A ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತು ಮಾಹಿತಿಗಾಗಿ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ಇಲ್ಲಿ</a> ಕ್ಲಿಕ್ ಮಾಡಿ.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>ವಾಷಿಂಗ್ಟನ್: </b>ವಾಷಿಂಗ್ಟನ್ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆ್ಯಕ್ಟ್ ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತಾಗಿ ಲಿಖಿತ ಸಾರಾಂಶವನ್ನು ನೀಡುವಂತೆ ಕನ್ಸ್ಯೂಮರ್ ರಿಪೋರ್ಟಿಂಗ್ ಏಜೆನ್ಸಿಯ ಬಳಿ ವಿನಂತಿಸಲು ನೀವು ಹಕ್ಕನ್ನು ಹೊಂದಿದ್ದೀರಿ.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>ವಾಷಿಂಗ್ಟನ್: </b>ವಾಷಿಂಗ್ಟನ್ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆ್ಯಕ್ಟ್ ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಹಕ್ಕುಗಳ ಕುರಿತಾಗಿ ಲಿಖಿತ ಸಾರಾಂಶವನ್ನು ನೀಡುವಂತೆ ಕನ್ಸ್ಯೂಮರ್ ರಿಪೋರ್ಟಿಂಗ್ ಏಜೆನ್ಸಿಯ ಬಳಿ ವಿನಂತಿಸಲು ನೀವು ಹಕ್ಕನ್ನು ಹೊಂದಿದ್ದೀರಿ.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>ಎಲ್ಲಾ ರಾಜ್ಯಗಳು: </b>ನೀವು ಈ ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತು ಮಾಡಿದರೆ, ಯಾವುದೇ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯ ಉಚಿತ ಪ್ರತಿಯನ್ನು ನಾವು ನಿಮಗೆ ಒದಗಿಸುತ್ತೇವೆ.",

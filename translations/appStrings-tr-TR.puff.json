@@ -2043,6 +2043,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Siyah/Afro-Amerikan",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Websocket sunucusunda bir sorun oluştu. Lütfen tekrar deneyin veya tarayıcıyı yenileyin.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

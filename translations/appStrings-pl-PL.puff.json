@@ -408,6 +408,14 @@
       "value" : "W związku z podaniem o zatrudnienie w firmie Amazon.com, Inc. lub jej spółce zależnej lub stowarzyszonej („Amazon”), od agencji raportowania konsumenckiego otrzymamy dotyczący Ciebie raport konsumencki. Jest to powszechnie znane jako „weryfikacja przeszłości”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Wycofaj podanie",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Twoje podanie zostanie wycofane, jeśli odmówisz weryfikacji swojej przeszłości.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Ujawnienie informacji zgodnie z ustawą o uczciwej sprawozdawczości kredytowej (Fair Credit Report Act)",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NOWY JORK: </b>masz prawo złożyć pisemny wniosek do firmy Amazon, aby dowiedzieć się, czy zamówiliśmy dotyczący Ciebie raport konsumencki lub śledczy raport konsumencki. Powyżej znajduje się adres i numer telefonu agencji ratingowej. Masz prawo skontaktować się z dowolną agencją ratingową w celu sprawdzenia lub otrzymania kopii takiego raportu. Kliknij <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">tutaj</a>, aby uzyskać informacje na temat Twoich praw wynikających z art. 23-A ustawy o resocjalizacji (New York Correction Law).</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NOWY JORK: </b>masz prawo złożyć pisemny wniosek do firmy Amazon, aby dowiedzieć się, czy zamówiliśmy dotyczący Ciebie raport konsumencki lub śledczy raport konsumencki. Powyżej znajduje się adres i numer telefonu agencji ratingowej. Masz prawo skontaktować się z dowolną agencją ratingową w celu sprawdzenia lub otrzymania kopii takiego raportu. Kliknij <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">tutaj</a>, aby uzyskać informacje na temat Twoich praw wynikających z art. 23-A ustawy o resocjalizacji (New York Correction Law).</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASZYNGTON: </b>masz prawo zażądać od agencji raportowania konsumenckiego pisemnego streszczenia swoich praw wynikających z obowiązującej w Waszyngtonie ustawy o uczciwej sprawozdawczości kredytowej (Washington Fair Credit Reporting Act).</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASZYNGTON: </b>masz prawo zażądać od agencji raportowania konsumenckiego pisemnego streszczenia swoich praw wynikających z obowiązującej w Waszyngtonie ustawy o uczciwej sprawozdawczości kredytowej (Washington Fair Credit Reporting Act).</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>WSZYSTKIE STANY: </b>przekażemy Ci bezpłatną kopię dowolnej weryfikacji przeszłości, jeśli zaznaczysz to pole",

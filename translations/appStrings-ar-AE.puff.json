@@ -408,6 +408,14 @@
       "value" : "فيما يتعلق بطلب توظيفك لدى Amazon.com, Inc.‎ أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\")، سنحصل على تقرير المستهلك عنك من الهيئة المعنية بتقارير المستهلك. يُعرف هذا عادةً باسم \"فحص الخلفية\".",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "سحب الاستمارة",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "سيتم سحب استمارتك إذا رفضت إجراء التحقق من الخلفية.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "الإفصاح عن قانون تقرير الائتمان العادل",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان CRA ورقم هاتفها. لديك الحق في الاتصال بأيّ جهة CRA لفحص أو استلام نسخة من أيّ تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح الخاص بولاية نيويورك.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>نيويورك: </b>لديك الحق في تقديم طلب خطي إلى أمازون لمعرفة ما إذا كنا قد طلبنا تقرير المستهلك أو تقرير المستهلك الاستقصائي عنك. يظهر أعلاه عنوان جهة CRA ورقم هاتفها. لديك الحق في الاتصال بأيّ جهة CRA لفحص أو استلام نسخة من أيّ تقرير من هذا القبيل. انقر <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">هنا</a> للحصول على معلومات حول حقوقك بموجب المادة 23-أ من قانون التصحيح الخاص بولاية نيويورك.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>واشنطن:</b> لديك الحق في أن تطلب من الهيئة المسؤولة عن إعداد تقارير المستهلك ملخصًا مكتوبًا بحقوقك بموجب قانون الإبلاغ عن الائتمان العادل في واشنطن.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>واشنطن:</b> لديك الحق في أن تطلب من الهيئة المسؤولة عن إعداد تقارير المستهلك ملخصًا مكتوبًا بحقوقك بموجب قانون الإبلاغ عن الائتمان العادل في واشنطن.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>جميع الولايات: </b>سنزوّدك بنسخة مجانية من أيّ فحص للخلفية إذا قمت بتحديد هذا المربع",
@@ -1264,6 +1284,10 @@
       "value" : "قم بزيارتنا لجلسة مدتها 30 دقيقة في أي وقت بين {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "موعد ما قبل التوظيف",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "تفاصيل الموعد",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "أسود/أمريكي من أصل أفريقي",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "حدث خطأ ما مع خادم ويب سوكيت. يرجى المحاولة مرة أخرى أو تحديث المتصفح.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

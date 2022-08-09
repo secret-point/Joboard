@@ -408,6 +408,14 @@
       "value" : "In verband met je sollicitatie voor een functie bij Amazon.com, Inc. of haar dochterondernemingen of gelieerde ondernemingen (”Amazon”), zullen we een consumentenrapport over je aanvragen bij een consumenteninformatiebureau. Dit staat algemeen bekend als een “antecedentenonderzoek”.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Sollicitatie intrekken",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Je sollicitatie wordt ingetrokken als je weigert het antecedentenonderzoek uit te voeren.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Openbaarmaking van Fair Credit Report Act",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NEW YORK: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een consumentenrapport of een consumentenonderzoeksrapport over jou hebben aangevraagd. Hierboven ziet je het adres en telefoonnummer van het CRA. Je hebt het recht om contact op te nemen met een CRA om een dergelijk rapport in te zien of een kopie te ontvangen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>New York: </b>Je hebt het recht om een schriftelijk verzoek in te dienen bij Amazon om te weten of we een consumentenrapport of een consumentenonderzoeksrapport over jou hebben aangevraagd. Hierboven ziet je het adres en telefoonnummer van het CRA. Je hebt het recht om contact op te nemen met een CRA om een dergelijk rapport in te zien of een kopie te ontvangen. Klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">hier</a> voor informatie over je rechten onder artikel 23-A van de New York Correction Law.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON:</b> Je hebt het recht om bij het consumentenrapportagebureau een schriftelijke samenvatting aan te vragen van je rechten op grond van de Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON:</b> Je hebt het recht om bij het consumentenrapportagebureau een schriftelijke samenvatting aan te vragen van je rechten op grond van de Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>ALLE STATEN: </b>We zullen je een gratis exemplaar van een antecedentenonderzoek bezorgen als je dit vakje aanvinkt",
@@ -2043,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Zwart / Afro-Amerikaans",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Er is iets misgegaan met de websocket-server. Probeer het nog eens of vernieuw de browser.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

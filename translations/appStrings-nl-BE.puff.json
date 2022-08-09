@@ -1284,6 +1284,10 @@
       "value" : "Bezoek ons voor een sessie van 30 minuten op elk moment tussen {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Afspraak vóór indiensttreding",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Details van de afspraak",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2059,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Zwart / Afro-Amerikaans",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Er is iets misgegaan met de websocket-server. Probeer het nog eens of vernieuw de browser.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

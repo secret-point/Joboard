@@ -408,6 +408,14 @@
       "value" : "ఉపాధి కోసం మీ దరఖాస్తుకు సంబంధించి Amazon.com, Inc. లేదా దాని అనుబంధ సంస్థలు లేదా అనుబంధ సంస్థలతో (\"Amazon\"), మేము వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి మీపై వినియోగదారు నివేదికను సేకరిస్తాము. దీనిని సాధారణంగా \"బ్యాక్‌గ్రౌండ్ చెక్\" అంటారు.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "అప్లికేషన్‌ను ఉపసంహరించుకోండి",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "నేపథ్య తనిఖీని నిర్వహించడానికి మీరు తిరస్కరించినట్లయితే మీ అప్లికేషన్ ఉపసంహరించబడుతుంది.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "ఫెయిర్ క్రెడిట్ రిపోర్ట్ యాక్ట్ డిస్‌క్లోజర్‌",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>న్యూ యార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ఇక్కడ </a> క్లిక్ చేయండి.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>న్యూయార్క్: </b>మేము మీ గురించి వినియోగదారు నివేదిక లేదా పరిశోధనాత్మక వినియోగదారు నివేదికను ఆదేశించామో లేదో తెలుసుకోవడానికి Amazonకి వ్రాతపూర్వక అభ్యర్థనను సమర్పించే హక్కు మీకు ఉంది. పైన చూపబడినది CRA యొక్క చిరునామా మరియు టెలిఫోన్ నంబర్. అటువంటి నివేదిక యొక్క ఏదైనా కాపీని తనిఖీ చేయడానికి లేదా స్వీకరించడానికి ఏదైనా CRAని సంప్రదించే హక్కు మీకు ఉంది. న్యూయార్క్ దిద్దుబాటు చట్టంలోని ఆర్టికల్ 23-A కింద మీ హక్కుల గురించి సమాచారం కోసం <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ఇక్కడ</a> క్లిక్ చేయండి.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>వాషింగ్టన్: </b> వాషింగ్టన్ ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ కింద మీ హక్కులకు సంబంధించిన వ్రాతపూర్వక సారాంశాన్ని వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి అభ్యర్థించడానికి మీకు హక్కు ఉంది.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>వాషింగ్టన్: </b> వాషింగ్టన్ ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ కింద మీ హక్కులకు సంబంధించిన వ్రాతపూర్వక సారాంశాన్ని వినియోగదారు రిపోర్టింగ్ ఏజెన్సీ నుండి అభ్యర్థించడానికి మీకు హక్కు ఉంది.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>అన్ని రాష్ట్రాలు: </b> మీరు ఈ బాక్స్‌ను చెక్ చేస్తే ఏదైనా బ్యాక్‌గ్రౌండ్ చెక్ యొక్క ఉచిత కాపీని మేము మీకు అందిస్తాము",
@@ -1264,6 +1284,10 @@
       "value" : "{startTime} - {endTime} మధ్య ఎప్పుడైనా 30 నిమిషాల సెషన్ కోసం మమ్మల్ని సందర్శించండి.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "అపాయింట్‌మెంట్ వివరాలు",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "నలుపు/ఆఫ్రికన్ అమెరికన్",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "వెబ్‌సాకెట్ సర్వర్‌లో ఏదో తప్పు జరిగింది. దయచేసి మళ్లీ ప్రయత్నించండి లేదా బ్రౌజర్‌ను రిఫ్రెష్ చేయండి.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }

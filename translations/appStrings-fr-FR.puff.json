@@ -408,6 +408,14 @@
       "value" : "Dans le cadre de votre candidature pour un emploi chez Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon »), nous obtiendrons un rapport sur le consommateur vous concernant auprès d'une agence d'information sur les consommateurs. C'est ce que l'on appelle communément une « vérification des antécédents ».",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Retirer la candidature",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Votre candidature sera retirée si vous refusez de procéder à la vérification des antécédents.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Demande d’informations faite en vertu du Fair Credit Report Act",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NEW YORK :</b>vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d'enquête sur le consommateur à votre sujet. L'adresse et le numéro de téléphone de l’entreprise de vérification des antécédents sont indiqués ci-dessus. Vous avez le droit de contacter n'importe quelle entreprise de vérification des antécédents pour inspecter ou recevoir une copie d'un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">ici</a> pour obtenir plus d'informations concernant vos droits en vertu de l'article 23-A de la loi pénale de New York.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NEW YORK :</b>vous avez le droit de soumettre une demande écrite à Amazon pour savoir si nous avons commandé un rapport sur le consommateur ou un rapport d'enquête sur le consommateur à votre sujet. L'adresse et le numéro de téléphone de l’entreprise de vérification des antécédents sont indiqués ci-dessus. Vous avez le droit de contacter n'importe quelle entreprise de vérification des antécédents pour inspecter ou recevoir une copie d'un tel rapport. Cliquez <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">ici</a> pour obtenir plus d'informations concernant vos droits en vertu de l'article 23-A de la loi correctionnelle de New York.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON : </b>vous avez le droit de demander à l'agence d’évaluation des consommateurs un résumé écrit de vos droits en vertu du Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON : </b>vous avez le droit de demander à l'agence d’évaluation des consommateurs un résumé écrit de vos droits en vertu du Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>TOUS LES ÉTATS : </b>nous vous fournirons une copie gratuite de toute vérification des antécédents si vous cochez cette case",
@@ -1264,6 +1284,10 @@
       "value" : "Nous vous invitons à venir nous rencontrer pour un rendez-vous de 30 minutes de {startTime} à {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
     },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Rendez-vous de pré-recrutement",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
+    },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Détails du rendez-vous",
       "note" : "Text for the thank you page nhe appointment details flyout appointment details title text"
@@ -2039,6 +2063,10 @@
     "BB-ReverseMapping-candidate-ethnicity-black-african-american" : {
       "value" : "Noir/Afro-américain",
       "note" : "Text for the reverse mapping candidate ethnicity black african american"
+    },
+    "BB-websocket-error-message-internal-server-error" : {
+      "value" : "Un problème s'est produit avec le serveur WebSocket. Réessayez ou actualisez le navigateur.",
+      "note" : "Text for websocket internal server error message"
     }
   }
 }
