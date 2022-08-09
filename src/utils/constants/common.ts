@@ -283,6 +283,8 @@ export const IdNumberBgcFormConfig: FormInputItem = {
     errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
 }
 
+export const accentedChars = "À-ÖØ-öø-ÿ";
+
 export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
     {
         hasError: false,
@@ -295,7 +297,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
-        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
+        regex: `^(?=\\S)[a-zA-Z0-9${accentedChars} ]{2,}(?<=[^\\s])$`,
     },
     {
         hasError: false,
@@ -308,7 +310,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
-        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
+        regex: `^(?=\\S)[a-zA-Z0-9${accentedChars} ]{2,}(?<=[^\\s])$`,
     },
     {
         hasError: false,
@@ -321,7 +323,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-city-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-city-error-text',
-        regex: "^(?=\\S)[a-zA-Z ]{2,}(?<=[^\\s])$",
+        regex: `^(?=\\S)[a-zA-Z${accentedChars} ]{2,}(?<=[^\\s])$`,
     },
     {
         hasError: false,
