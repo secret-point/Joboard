@@ -74,6 +74,8 @@ const ALL_PLUGINS = [
     })
 ];
 
+const katalMiddleware = KatalWebpackPlugin.createMiddleware();
+
 module.exports = {
     mode: configUtils.webpackMode,
 
@@ -166,13 +168,16 @@ module.exports = {
     devServer: {
         hot: true,
         compress: true,
+        client: {
+            overlay: true,
+        },
         host: '0.0.0.0',
         allowedHosts: "all",  // disableHostCheck: true,
         open: configUtils.serverMode === 'standalone',
         historyApiFallback: true,
         port: 3000,
         onBeforeSetupMiddleware: (devServer) => {
-            return KatalWebpackPlugin.createMiddleware()(devServer.app, devServer, devServer.compiler);
+            return katalMiddleware(devServer.app, devServer, devServer.compiler);
         },
         proxy: { '/api': { target: 'http://localhost:8080', secure: false }  }
     },
