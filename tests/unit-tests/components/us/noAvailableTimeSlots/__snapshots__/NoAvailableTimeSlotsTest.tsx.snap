@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoAvailableTimeSlots should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    There are no appointments available for this job right now.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    You may:
+  </Text>
+  <Row
+    gridGap="S100"
+  >
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      1. Select a different job opportunity
+       -
+    </Text>
+    <Link
+      color="primary70"
+      fontSize="T100"
+      fontWeight="medium"
+      iconPosition="trailing"
+      iconVerticalAlign="text-top"
+      textDecoration="underline"
+    >
+      Click here
+    </Link>
+  </Row>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    2. Select a shift with a later start date (recommended)
+  </Text>
+  <Col
+    gridGap={20}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      View other shifts
+    </Button>
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="secondary"
+    >
+      Return to dashboard
+    </Button>
+  </Col>
+</Col>
+`;

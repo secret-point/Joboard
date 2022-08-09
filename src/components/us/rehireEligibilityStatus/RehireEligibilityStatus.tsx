@@ -32,7 +32,7 @@ interface MapStateToProps {
   application: ApplicationState
 }
 
-const RehireEligibilityStatus = (props: MapStateToProps) => {
+export const RehireEligibilityStatus = (props: MapStateToProps) => {
   const { job, workflow, candidate, application } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));

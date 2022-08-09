@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RehireEligibilityStatus should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <RehireNotEligibleActive />
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Return to dashboard
+    </Button>
+  </Col>
+</Col>
+`;

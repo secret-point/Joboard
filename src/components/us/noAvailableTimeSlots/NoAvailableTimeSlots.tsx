@@ -35,7 +35,7 @@ interface MapStateToProps {
   schedule: ScheduleState
 }
 
-const NoAvailableTimeSlots = (props: MapStateToProps) => {
+export const NoAvailableTimeSlots = (props: MapStateToProps) => {
   const { job, application, appConfig, schedule, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));

@@ -25,7 +25,7 @@ interface MapStateToProps {
   job: JobState;
 }
 
-const PreConsent = ( props: MapStateToProps ) => {
+export const PreConsent = ( props: MapStateToProps ) => {
 
   const { job } = props;
   const { search, pathname } = useLocation();

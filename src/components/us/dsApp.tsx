@@ -37,7 +37,7 @@ import CandidateWithdraws from "./candidateWithdraws/CandidateWithdraws";
 import NoAvailableTimeSlots from "./noAvailableTimeSlots/NoAvailableTimeSlots";
 import CanNotOfferJob from "./canNotOfferJob/CanNotOfferJob";
 import SupplementarySuccess from "./supplementarySuccess/SupplementarySuccess";
-import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireELigibilityStatus";
+import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireEligibilityStatus";
 import NoAvailableShift from "./noAvailableShift/NoAvailableShift";
 import ApplicationIdNull from "./applicationIdNull/ApplicationIdNull";
 

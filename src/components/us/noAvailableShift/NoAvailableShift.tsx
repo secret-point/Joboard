@@ -12,15 +12,11 @@ import {
 import { translate as t } from "../../../utils/translator";
 import { useLocation } from "react-router";
 import queryString from "query-string";
-import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
-import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
-import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 
@@ -30,7 +26,7 @@ interface MapStateToProps {
   candidate: CandidateState
 }
 
-const NoAvailableShift = (props: MapStateToProps) => {
+export const NoAvailableShift = (props: MapStateToProps) => {
 
   const { job, application, candidate } = props;
   const { search, pathname } = useLocation();

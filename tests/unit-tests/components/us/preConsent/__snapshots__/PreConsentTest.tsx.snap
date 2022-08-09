@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreConsent should match snapshot 1`] = `
+<Col
+  gridGap={8}
+  padding={
+    Object {
+      "bottom": "S400",
+      "top": "S100",
+    }
+  }
+>
+  <Col
+    backgroundColor="#232f3e"
+    gridGap={20}
+    padding="S600"
+  >
+    <Text
+      color="#FFFFFF"
+      data-testid="text-pre-consent-page-title"
+      font="primary"
+      fontSize="T400"
+      hyphens="none"
+      id="pre-consent-page-title"
+    >
+      Your journey to becoming an Amazon Associate starts here.
+    </Text>
+    <WithFlyout
+      flyoutPosition="trailing"
+      renderFlyout={[Function]}
+    >
+      <Component />
+    </WithFlyout>
+    <img
+      aria-hidden="true"
+      id="preConsentImg"
+      placeholder="header"
+      role="presentation"
+      src="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/illustration-box.svg"
+      tabIndex={-1}
+    />
+  </Col>
+  <Col
+    alignItems="center"
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      style={
+        Object {
+          "margin": "auto",
+          "width": "90%",
+        }
+      }
+      type="button"
+      variant="primary"
+    >
+      Next
+    </Button>
+  </Col>
+</Col>
+`;

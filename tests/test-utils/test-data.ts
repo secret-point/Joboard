@@ -5,9 +5,11 @@ import { ApplicationState } from "../../src/reducers/application.reducer";
 import { Address, Candidate, NheTimeSlotLocation } from "../../src/utils/types/common";
 import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
-import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE } from "../../src/utils/enums/common";
+import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
 import { BGCState } from "../../src/reducers/bgc.reducer";
 import { NheState } from "../../src/reducers/nhe.reducer";
+import { AppConfigState } from "../../src/reducers/appConfig.reducer";
+import { WorkflowState } from "../../src/reducers/workflow.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -303,6 +305,13 @@ export const TEST_APP_CONFIG: any = {
     }
   }
 };
+
+export const TEST_APP_CONFIG_STATE: AppConfigState = {
+  loading: false,
+  failed: false,
+  results: TEST_APP_CONFIG
+};
+
 export const TEST_PAYLOAD: any = {
   output: {},
   data: TEST_APPLICATION_DATA,
@@ -350,6 +359,12 @@ export const TEST_REDUX_STORE: any = {
 
 export const TEST_WORKFLOW_DATA: any = {
   stepName: TEST_STEP_ID
+};
+
+export const TEST_WORKFLOW_STATE: WorkflowState = {
+  loading: false,
+  failed: false,
+  workflowErrorCode: WORKFLOW_ERROR_CODE.ACTIVE
 };
 
 //util functions
