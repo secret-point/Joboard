@@ -2,6 +2,7 @@ import { AxiosInstance } from "axios";
 import { axiosHelper } from "../helpers/axios-helper";
 import { AvailableFilter } from "../@types/IPayload";
 import { GetScheduleListByJobIdRequest } from "../utils/apiTypes";
+import { getLocale } from "../utils/helper";
 
 export default class JobService {
     private readonly axiosInstance: AxiosInstance;
@@ -11,12 +12,16 @@ export default class JobService {
     }
 
     async getJobInfo( jobId: string ) {
-        const response = await this.axiosInstance.get(`/${jobId}`);
+        const response = await this.axiosInstance.get(`/${jobId}`, {
+            params: { locale: getLocale() }
+        });
         return response.data;
     }
 
     async getScheduleDetailByScheduleId( scheduleId: string ) {
-        const response = await this.axiosInstance.get(`/get-schedule-details/${scheduleId}`);
+        const response = await this.axiosInstance.get(`/get-schedule-details/${scheduleId}`, {
+            params: { locale: getLocale() }
+        });
         return response.data;
     }
 
