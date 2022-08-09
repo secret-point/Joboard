@@ -12,13 +12,14 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { connect } from "react-redux";
 import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { QueryParamItem } from "../../../utils/types/common";
 import { QUERY_PARAMETER_NAME, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
   job: JobState,
@@ -51,14 +52,14 @@ export const AssessmentFinished = (props: MapStateToProps) => {
     // will not emit new event on props change once it has emitted pageload event previously
     jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData]);
+  }, [jobDetail, applicationData, candidateData, pageName]);
 
   useEffect(() => {
     return () => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[])
+  },[pageName])
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() }, () => {
@@ -77,6 +78,7 @@ export const AssessmentFinished = (props: MapStateToProps) => {
       }
       //force route to the same page to append query params ( jobId and schedule Id)
       routeToAppPageWithPath(PAGE_ROUTES.ASSESSMENT_FINISHED, queryParamItems);
+      postAdobeMetrics({name: METRIC_NAME.ASSESSMENT_FINISHED});
       console.info("[WS] In AssessmentFinished useEffect, starting to call onCompleteTaskHelper: ", applicationData, jobId, jobDetail);
       //call workflow service to update step
       applicationData && onCompleteTaskHelper(applicationData, false, undefined, WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT);

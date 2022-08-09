@@ -78,7 +78,7 @@ export const addMetricForPageLoad = ( pageName: string ) => {
 };
 
 export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: string]: object } | MetricData = {}, appData?: ApplicationData ) => {
-  const { name, metricsValues = {} } = adobeMetrics;
+  const { name, values = {}, metricsValues = {} } = adobeMetrics;
   let metric: Metric = getDataForEventMetrics(name);
 
   switch(name) {
@@ -92,12 +92,14 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
     }
 
     case EVENT_NAMES.SELECT_NHE: {
-      const selectNheMetricValue = getMetricValues(metricsValues, metric, data as MetricData);
-      if(appData) {
-        const { nheTimeSlots } = appData.requisition;
-        selectNheMetricValue["NHE"]["count"] = nheTimeSlots.length;
+      // add old method getMetricValues as a fallback for now, this can be revisited and removed later.
+      const selectNheMetricValue = {...getMetricValues(metricsValues, metric, data as MetricData), ...values};
+      const { nhe } = store.getState();
+      if(nhe) {
+        const { nheData } = nhe.results;
+        selectNheMetricValue["NHE"]["count"] = nheData.length;
         const appId = selectNheMetricValue["NHE"]["apptID"] as string;
-        const selectedIndex = findIndex(nheTimeSlots, { timeSlotId: appId });
+        const selectedIndex = findIndex(nheData, { timeSlotId: appId });
         selectNheMetricValue["NHE"]["position"] = selectedIndex + 1;
       }
       metric = { ...metric, ...selectNheMetricValue };

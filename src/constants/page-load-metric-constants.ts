@@ -623,7 +623,7 @@ const sortPayloadDefault = {
 };
 
 export const ADOBE_PAGE_LOAD_METRICS: any = {
-  "pre-consent": {
+  [METRIC_NAME.PRE_CONSENT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -633,7 +633,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       }
     }
   },
-  consent: {
+  [METRIC_NAME.CONSENT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -650,7 +650,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
     ]
   },
-  "assessment-consent": {
+  [METRIC_NAME.ASSESSMENT_CONSENT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -666,7 +666,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  "assessment-start":{
+  [METRIC_NAME.ASSESSMENT_START]:{
     eventPayload: {
       event: EVENT.START_ASSESSMENT,
       countryCode: "us",
@@ -682,7 +682,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  "assessment-finished": {
+  [METRIC_NAME.ASSESSMENT_FINISHED]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -698,7 +698,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  assessment: {
+  [METRIC_NAME.ASSESSMENT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -717,7 +717,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-opportunities": {
+  [METRIC_NAME.JOB_OPPORTUNITIES]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -737,7 +737,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-roles": {
+  [METRIC_NAME.JOB_ROLES]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -757,7 +757,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-description": {
+  [METRIC_NAME.JOB_DESCRIPTION]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -778,7 +778,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-confirmation" : {
+  [METRIC_NAME.JOB_CONFIRMATION] : {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -795,7 +795,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault
     ]
   },
-  "start-specific-job-video" : {
+  [METRIC_NAME.START_SPECIFIC_JOB_VIDEO] : {
     eventPayload: {
       event: EVENT.START_JOB_VIDEO,
       countryCode: "us",
@@ -812,7 +812,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault
     ]
   },
-  "finish-specific-job-video" : {
+  [METRIC_NAME.FINISH_SPECIFIC_JOB_VIDEO] : {
     eventPayload: {
       event: EVENT.FINISH_JOB_VIDEO,
       countryCode: "us",
@@ -829,7 +829,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault
     ]
   },
-  "contingent-offer": {
+  [METRIC_NAME.CONTINGENT_OFFER]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -849,7 +849,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  bgc: {
+  [METRIC_NAME.BGC]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -909,7 +909,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  fcra: {
+  [METRIC_NAME.FCRA]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -929,7 +929,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  nhe: {
+  [METRIC_NAME.NHE]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -950,7 +950,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       nhePayloadDefault
     ]
   },
-  "review-submit": {
+  [METRIC_NAME.REVIEW_SUBMIT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -970,7 +970,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "thank-you": {
+  [METRIC_NAME.THANK_YOU]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -990,7 +990,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "self-identification": {
+  [METRIC_NAME.SELF_IDENTIFICATION]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1010,7 +1010,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  wotc: {
+  [METRIC_NAME.WOTC]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1030,7 +1030,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "supplementary-success": {
+  [METRIC_NAME.SUPPLEMENTARY_SUCCESS]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1050,7 +1050,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "amazon-withdraws": {
+  [METRIC_NAME.AMAZON_WITHDRAWS]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1070,7 +1070,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "amazon-rejects": {
+  [METRIC_NAME.AMAZON_REJECTS]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1090,7 +1090,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "assessment-not-eligible": {
+  [METRIC_NAME.ASSESSMENT_NOT_ELIGIBLE]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1109,7 +1109,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "candidate-withdraws": {
+  [METRIC_NAME.CANDIDATE_WITHDRAWS]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1129,7 +1129,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "rehire-not-eligible-seasonal-only": {
+  [METRIC_NAME.REHIRE_NOT_ELIGIBLE_SEASONAL_ONLY]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1149,7 +1149,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "rehire-not-eligible": {
+  [METRIC_NAME.REHIRE_NOT_ELIGIBLE]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1169,7 +1169,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "can-not-offer-job": {
+  [METRIC_NAME.CAN_NOT_OFFER_JOB]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1189,7 +1189,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "no-available-shift": {
+  [METRIC_NAME.NO_AVAILABLE_SHIFT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1208,7 +1208,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "no-available-shift-self-service": {
+  [METRIC_NAME.NO_AVAILABLE_SHIFT_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.NO_AVAILABLE_SHIFT_SELF_SERVICE,
       countryCode: "us",
@@ -1227,7 +1227,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
     ]
   },
-  "successful-update-shift-self-service": {
+  [METRIC_NAME.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.SUCCESSFUL_UPDATE_SHIFT_SELF_SERVICE,
       countryCode: "us",
@@ -1245,7 +1245,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       cancellationRescheduleReasonPayloadDefault
     ]
   },
-  "fail-update-shift-schedule-full-self-service": {
+  [METRIC_NAME.FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.FAIL_UPDATE_SHIFT_SCHEDULE_FULL_SELF_SERVICE,
       countryCode: "us",
@@ -1262,7 +1262,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "fail-update-shift-unknown-error-self-service": {
+  [METRIC_NAME.FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.FAIL_UPDATE_SHIFT_UNKNOWN_ERROR_SELF_SERVICE,
       countryCode: "us",
@@ -1279,7 +1279,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "fail-update-shift-schedule-unsuccessful-reversion-self-service": {
+  [METRIC_NAME.FAIL_UPDATE_SHIFT_SCHEDULE_UNSUCCESSFUL_REVERSION_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.FAIL_UPDATE_SHIFT_UNSUCCESSFUL_REVERSION_SELF_SERVICE,
       countryCode: "us",
@@ -1296,7 +1296,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "successful-cancel-shift-self-service": {
+  [METRIC_NAME.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.SUCCESSFUL_CANCEL_SHIFT_SELF_SERVICE,
       countryCode: "us",
@@ -1314,7 +1314,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       cancellationRescheduleReasonPayloadDefault
     ]
   },
-  "fail-cancel-shift-self-service": {
+  [METRIC_NAME.FAIL_CANCEL_SHIFT_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.FAIL_CANCEL_SHIFT_SELF_SERVICE,
       countryCode: "us",
@@ -1331,7 +1331,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault
     ]
   },
-  "session-timeout": {
+  [METRIC_NAME.SESSION_TIMEOUT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1350,7 +1350,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "applicationId-null": {
+  [METRIC_NAME.APPLICATION_ID_NULL]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1369,7 +1369,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "get-all-avaliable-shift-error": {
+  [METRIC_NAME.GET_ALL_AVALIABLE_SHIFT_ERROR]: {
     eventPayload: {
       event: EVENT.GET_SHIFTS_ERROR,
       countryCode: "us",
@@ -1386,7 +1386,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "get-all-avaliable-shift-error-self-service": {
+  [METRIC_NAME.GET_ALL_AVALIABLE_SHIFT_ERROR_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.GET_ALL_AVAILABLE_SHIFT_ERROR_SELF_SERVICE,
       countryCode: "us",
@@ -1404,7 +1404,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "apply-filter-self-service": {
+  [METRIC_NAME.APPLY_FILTER_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.APPLY_FILTER_SELF_SERVICE,
       countryCode: "us",
@@ -1421,7 +1421,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ],
     appConfigPayload: [filterPayloadDefault]
   },
-  "apply-sorting-self-service": {
+  [METRIC_NAME.APPLY_SORTING_SELF_SERVICE]: {
     eventPayload: {
       event: EVENT.APPLY_SORTING_SELF_SERVICE,
       countryCode: "us",
@@ -1438,7 +1438,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ],
     appConfigPayload: [sortPayloadDefault]
   },
-  "apply-filter": {
+  [METRIC_NAME.APPLY_FILTER]: {
     eventPayload: {
       event: EVENT.JOBS_FILTER,
       countryCode: "us",
@@ -1454,7 +1454,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ],
     appConfigPayload: [filterPayloadDefault]
   },
-  "apply-sorting": {
+  [METRIC_NAME.APPLY_SORTING]: {
     eventPayload: {
       event: EVENT.JOBS_SORT,
       countryCode: "us",
@@ -1470,14 +1470,14 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
     ],
     appConfigPayload: [sortPayloadDefault]
   },
-  "start-application": {
+  [METRIC_NAME.START_APPLICATION]: {
     eventPayload: {
       event: EVENT.START_APPLICATION,
       countryCode: "us",
     },
     dataPayload: [jobPayloadDefault, dragonstoneSchedulePayloadDefault]
   },
-  "shift-selection": {
+  [METRIC_NAME.SHIFT_SELECTION]: {
     eventPayload: {
       event: EVENT.SHIFT_SELECTED,
       countryCode: "us",
@@ -1494,7 +1494,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "equal-opportunity-form": {
+  [METRIC_NAME.EQUAL_OPPORTUNITY_FORM]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1514,7 +1514,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "veteran-status-form": {
+  [METRIC_NAME.VETERAN_STATUS_FORM]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1534,7 +1534,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "disability-form": {
+  [METRIC_NAME.DISABILITY_FORM]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1554,7 +1554,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "additional-bgc-info": {
+  [METRIC_NAME.ADDITIONAL_BGC_INFO]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1574,7 +1574,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "non-fcra": {
+  [METRIC_NAME.NON_FCRA]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1594,7 +1594,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "cali-disclosure": {
+  [METRIC_NAME.CALI_DISCLOSURE]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1614,7 +1614,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-preferences-thank-you": {
+  [METRIC_NAME.JOB_PREFERENCES_THANK_YOU]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1633,7 +1633,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "job-preferences": {
+  [METRIC_NAME.JOB_PREFERENCES]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1653,7 +1653,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  SELECT_JOB_ROLE: {
+  [METRIC_NAME.SELECT_JOB_ROLE]: {
     eventPayload: {
       event: EVENT.CLICK_ROLE,
       countryCode: "us",
@@ -1669,7 +1669,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  SUBMIT_SHIFT_PREFERENCES: {
+  [METRIC_NAME.SUBMIT_SHIFT_PREFERENCES]: {
     eventPayload: {
       event: EVENT.SELECT_PREFERENCES,
       countryCode: "us",
@@ -1685,7 +1685,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "start-job-video": {
+  [METRIC_NAME.START_JOB_VIDEO]: {
     eventPayload: {
       event: EVENT.START_JOB_VIDEO,
       countryCode: "us",
@@ -1701,7 +1701,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "finish-job-video": {
+  [METRIC_NAME.FINISH_JOB_VIDEO]: {
     eventPayload: {
       event: EVENT.FINISH_JOB_VIDEO,
       countryCode: "us",
@@ -1717,7 +1717,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "nhe-preferences": {
+  [METRIC_NAME.NHE_PREFERENCES]: {
     eventPayload: {
       event: EVENT.NHE_PREFERENCE,
       countryCode: "us",
@@ -1733,7 +1733,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  SUBMIT_NHE_PREFERENCES: {
+  [METRIC_NAME.SUBMIT_NHE_PREFERENCES]: {
     eventPayload: {
       event: EVENT.SUBMIT_NHE_PREFERENCES,
       countryCode: "us",
@@ -1749,7 +1749,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  RETURN_TO_NHE: {
+  [METRIC_NAME.RETURN_TO_NHE]: {
     eventPayload: {
       event: EVENT.RETURN_TO_NHE,
       countryCode: "us",
@@ -1764,7 +1764,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  SELECT_NHE: {
+  [METRIC_NAME.SELECT_NHE]: {
     eventPayload: {
       event: EVENT.SELECT_NHE,
       countryCode: "us",
@@ -1780,7 +1780,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "update-shift": {
+  [METRIC_NAME.UPDATE_SHIFT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1801,7 +1801,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault
     ]
   },
-  "no-shift-selected": {
+  [METRIC_NAME.NO_SHIFT_SELECTED]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1821,7 +1821,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "view-shift": {
+  [METRIC_NAME.VIEW_SHIFT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1841,7 +1841,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  "current-shift": {
+  [METRIC_NAME.CURRENT_SHIFT]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1862,7 +1862,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault
     ]
   },
-  "cancel-shift-confirmation": {
+  [METRIC_NAME.CANCEL_SHIFT_CONFIRMATION]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1883,7 +1883,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       shiftTypePayloadDefault
     ]
   },
-  "update-shift-confirmation": {
+  [METRIC_NAME.UPDATE_SHIFT_CONFIRMATION]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",
@@ -1905,7 +1905,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  "skip-schedule":{
+  [METRIC_NAME.SKIP_SCHEDULE]:{
     eventPayload: {
       event: EVENT.SKIP_SCHEDULE_SELECTION,
       countryCode: "us",
@@ -1927,7 +1927,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  "thank-you-submit": {
+  [METRIC_NAME.THANK_YOU_SUBMIT]: {
     eventPayload: {
       event: EVENT.THANK_YOU_SUBMIT,
       countryCode: "us",
@@ -1947,7 +1947,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidateOnThankYouPayloadDefault,
     ]
   },
-  "no-available-time-slots": {
+  [METRIC_NAME.NO_AVAILABLE_TIME_SLOTS]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       countryCode: "us",

@@ -93,6 +93,9 @@ import {boundResetBannerMessage, boundSetBannerMessage} from "../actions/UiActio
 import { translate } from "./translator";
 import isNil from "lodash/isNil";
 import { translate as t } from "./translator";
+import { METRIC_NAME } from "../constants/adobe-analytics";
+import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
+import { MetricData } from "../@types/adobe-metrics";
 
 const {
     BACKGROUND_CHECK,
@@ -687,7 +690,7 @@ export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => 
 
     return fcraStatus.status === COMPLETED && !fcraStatus.editMode &&
         nonFcraStatus.status === COMPLETED && !nonFcraStatus.editMode &&
-        addBgcStatus.status == COMPLETED && !addBgcStatus.editMode
+        addBgcStatus.status === COMPLETED && !addBgcStatus.editMode
 }
 
 export const handleSubmitFcraBGC = ( applicationData: Application, stepConfig: BgcStepConfig, eSignature: string, fcraResponse?: FCRA_DISCLOSURE_TYPE ) => {
@@ -842,6 +845,14 @@ export const  handleConfirmNHESelection = (applicationData: Application, nheTime
         const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, NHE, payload);
         boundUpdateApplicationDS(request, (applicationData: Application)=>{
             onCompleteTaskHelper(applicationData);
+        });
+        postAdobeMetrics({name: METRIC_NAME.SELECT_NHE, values: {
+            NHE: {
+                apptID: nheTimeSlot.timeSlotId,
+                date: nheTimeSlot.dateWithoutFormat,
+                hours: nheTimeSlot.timeRange
+            }
+          }
         });
     }
 }
@@ -1063,11 +1074,10 @@ export const processAssessmentUrl = (assessmentUrl: string, applicationId: strin
 
 export const onAssessmentStart =  (assessmentUrl: string, applicationData: Application, jobDetail: Job) => {
     const assessmentRedirectUrl = processAssessmentUrl(assessmentUrl, applicationData.applicationId, jobDetail.jobId);
-    //TODO need to align what metrics need to send here.
-    // if (assessmentUrl && payload.options?.adobeMetrics) {
-    //     postAdobeMetrics(payload.options.adobeMetrics, {});
-    // }
-    assessmentRedirectUrl && window.location.assign(assessmentRedirectUrl);
+    if (assessmentRedirectUrl) {
+        postAdobeMetrics({name: METRIC_NAME.ASSESSMENT_START});
+        window.location.assign(assessmentRedirectUrl);
+    }
 }
 
 export const setEpicApiCallErrorMessage = (errorMessage: ApiErrorMessage, isDismissible?: boolean) => {

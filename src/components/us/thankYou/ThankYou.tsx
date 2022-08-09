@@ -10,7 +10,7 @@ import InnerHTML from "dangerously-set-html-content";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
@@ -39,6 +39,7 @@ import { JobState } from "../../../reducers/job.reducer";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -94,7 +95,7 @@ const ThankYou = (props: MapStateToProps) => {
       locale: getLocale(),
       scheduleId: scheduleId
     })
-  }, [scheduleId]);
+  }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
@@ -103,14 +104,14 @@ const ThankYou = (props: MapStateToProps) => {
   useEffect(() => {
     jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+  }, [jobDetail, applicationData, candidateData, scheduleDetail, pageName]);
 
   useEffect(() => {
     return () => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[])
+  },[pageName])
 
   const validateFormInput = (): boolean => {
     if (hasReferral) {
@@ -162,6 +163,8 @@ const ThankYou = (props: MapStateToProps) => {
       boundUpdateApplicationDS(request, (applicationData: Application) => {
         onCompleteTaskHelper(applicationData);
       });
+
+      postAdobeMetrics({name: METRIC_NAME.THANK_YOU_SUBMIT});
     }
   };
 
