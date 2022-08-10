@@ -16,20 +16,22 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { QueryParamItem } from "../../../utils/types/common";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
-import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { loadWorkflowDS } from "../../../actions/WorkflowActions/workflowActions";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
+import { AppConfigState } from "../../../reducers/appConfig.reducer";
 
 interface MapStateToProps {
     job: JobState,
     application: ApplicationState,
     schedule: ScheduleState,
-    candidate: CandidateState
+    candidate: CandidateState,
+    appConfig: AppConfigState,
 }
 
 const ResumeApplication = (props: MapStateToProps) => {
-    const { job, application, schedule, candidate } = props;
+    const { job, application, schedule, candidate, appConfig } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -39,6 +41,7 @@ const ResumeApplication = (props: MapStateToProps) => {
     const jobId = applicationData?.jobScheduleSelected.jobId;
     const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
     const candidateData = candidate.results.candidateData;
+    const envConfig = appConfig.results?.envConfig;
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -65,8 +68,8 @@ const ResumeApplication = (props: MapStateToProps) => {
             }
             //force route to the same page to append query params ( jobId and schedule Id)
             routeToAppPageWithPath(PAGE_ROUTES.RESUME_APPLICATION, queryParamItems);
-            //call workflow service to update step
-            applicationData && onCompleteTaskHelper(applicationData);
+            // resume workflow, but do not complet any task, since there is no task to complete on resume-application page
+            envConfig && loadWorkflowDS(jobId, scheduleId || "", applicationId, candidateData?.candidateId || "", envConfig);
         });
     }, [applicationData, jobDetail, jobId, scheduleId]);
 
