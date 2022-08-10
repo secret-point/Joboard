@@ -67,7 +67,7 @@ const CounterMessageBanner = (props: MapStateToProps) => {
             aria-live="assertive"
             iconAltText="warn"
           >
-            {t("BB-counter-message-banner-text", "We are holding a spot for you for the next {hours} hours and {minutes} minutes to complete the remaining steps.", {
+            {t("BB-counter-message-banner-text", `We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to complete the remaining steps.`, {
               hours,
               minutes
             })}

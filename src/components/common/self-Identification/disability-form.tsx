@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
 import { CommonColors } from "../../../utils/colors";
 import { DisabilityList, SelfIdDisabilityRadioItem } from "../../../utils/constants/common";
@@ -16,9 +16,8 @@ import {
   isSelfIdentificationInfoValidBeforeDisability
 } from "../../../utils/helper";
 import { connect } from "react-redux";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import DetailedRadioError from "../DetailedRadioError";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,

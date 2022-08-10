@@ -85,6 +85,8 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
         }
     }
 
+    const totalStepNumber = 3;
+
     return (
         <Col>
             <Card
@@ -96,7 +98,7 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
                 <Col width="100%" padding="S300" gridGap={15}>
                     <Row justifyContent="space-between">
                         <Text fontSize="T200" color={CommonColors.Neutral70}>
-                            {t("BB-BGC-bgc-step-card-step-progress", "Step {currentStep} of {totalSteps}", {currentStep: stepIndex, totalSteps: 3})}
+                            {t("BB-BGC-bgc-step-card-step-progress", `Step ${stepIndex} of ${totalStepNumber}`, {currentStep: stepIndex, totalSteps: totalStepNumber})}
                         </Text>
                         {stepStatus === INFO_CARD_STEP_STATUS.COMPLETED && editMode &&
                         <Row onClick={() => handleSetEditMode(false)}>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { FormWrapper } from "@amzn/stencil-react-components/form";
 import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
@@ -19,10 +19,8 @@ import { connect } from "react-redux";
 import { SelfIdentificationVeteranStatus } from "../../../utils/types/common";
 import { handleSubmitSelfIdVeteranStatus } from "../../../utils/helper";
 import InnerHTML from "dangerously-set-html-content";
-import { CommonColors } from "../../../utils/colors";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import DetailedRadioError from "../DetailedRadioError";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState,

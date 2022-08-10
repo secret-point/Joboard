@@ -40,7 +40,7 @@ exports[`Nhe should match snapshot 1`] = `
         fontSize="T200"
         hyphens="none"
       >
-        You are almost there, {firstname} {lastname}! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.
+        You are almost there, test-firstname test-lastname! We need you to come for a badge photo, complete work authorization and a drug test, if applicable.
       </Text>
     </Col>
     <Col
