@@ -408,6 +408,14 @@
       "value" : "Amazon.com, Inc. veya yan kuruluşları veya bağlı kuruluşları (\"Amazon\") ile çalışmak için yaptığınız başvuruyla bağlantılı olarak, bir tüketici raporlama kuruluşundan hakkınızda bir tüketici raporu temin edeceğiz. Bu genellikle “geçmiş kontrolü” olarak bilinir.",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Başvuruyu geri çek",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Geçmiş kontrolü yapmayı reddediyorsanız başvurunuz geri çekilecektir.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Adil Kredi Raporu Yasası Açıklaması",
       "note" : "Text for the fcra disclosure form title"
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>NEW YORK: </b>Sizinle ilgili bir tüketici raporu mu yoksa araştırmacı tüketici raporu mu sipariş ettiğimizi öğrenmek için Amazon'a yazılı bir talep gönderme hakkına sahipsiniz. Yukarıda gösterilen CRA'nın adresi ve telefon numarasıdır. Bu tür bir raporun bir kopyasını incelemek veya almak için herhangi bir CRA ile iletişime geçme hakkınız vardır. New York Islah Yasası Madde 23-A kapsamındaki haklarınız hakkında bilgi almak için <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">buraya</a> tıklayın.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>NEW YORK: </b>Sizinle ilgili bir tüketici raporu mu yoksa araştırmacı tüketici raporu mu talep ettiğimizi öğrenmek için Amazon'a yazılı bir talep gönderme hakkına sahipsiniz. Yukarıda gösterilen, CRA'nın adresi ve telefon numarasıdır. Bu tür bir raporu incelemek veya bir kopyasını almak için herhangi bir CRA ile iletişime geçme hakkınız vardır. New York Correction Law Madde 23-A kapsamındaki haklarınız hakkında bilgi almak için <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">burayı</a> tıklayın.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>Tüketici raporlama kurumundan Washington Fair Kredi Raporlama Yasası kapsamındaki haklarınızın yazılı bir özetini talep etme hakkınız vardır.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>WASHINGTON: </b>Tüketici raporlama kurumundan Washington Fair Kredi Raporlama Yasası kapsamındaki haklarınızın yazılı bir özetini talep etme hakkınız vardır.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>TÜM EYALETLER: </b>Bu kutuyu işaretlerseniz, size herhangi bir geçmiş kontrolünün ücretsiz bir kopyasını sağlayacağız",

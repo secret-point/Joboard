@@ -696,7 +696,7 @@ export enum BusinessLineType {
     Air_Job = 'AIR'
 }
 
-export const NameRegexValidator = "^(?=\\S)[a-zA-Z ,.'-]{2,40}(?<=[^\\s])$";
+export const NameRegexValidator = `^(?=\\S)[a-zA-Z${accentedChars} ,.'-]{2,40}(?<=[^\\s])$`;
 
 export const UserIdValidator = "^[a-z]{4,60}$";
 
