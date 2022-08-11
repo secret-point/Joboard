@@ -73,6 +73,11 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
   let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
   let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
 
+    const shouldDisplayNoSSNCheckbox = get(appConfig, 'results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable') === true &&
+        !get(candidateData, 'additionalBackgroundInfo.idNumber') &&
+        get(schedule, 'results.scheduleDetail.businessLine') !== BusinessLineType.Air_Job &&
+        get(job, 'results.dspEnabled') === true
+
     // TODO: customized based on country
     if (!countryDefaultValue){
         countryDefaultValue = CountrySelectOptions[0].value
@@ -85,7 +90,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         set(additionalBgc, 'governmentIdType', nationIdTypeDefaultValue)
     }
 
-    if (!isWithoutSSNDefaultValue){
+    if (!isWithoutSSNDefaultValue || !shouldDisplayNoSSNCheckbox){
         isWithoutSSNDefaultValue = false
         set(additionalBgc, 'isWithoutSSN', isWithoutSSNDefaultValue)
     }
@@ -341,10 +346,7 @@ const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             />
             {
                 nationalIdType === SocialSecurityNumberValue &&
-                get(appConfig, 'results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable') === true &&
-                !get(candidateData, 'additionalBackgroundInfo.idNumber') &&
-                get(schedule, 'results.scheduleDetail.businessLine') !== BusinessLineType.Air_Job &&
-                get(job, 'results.dspEnabled') === true &&
+                shouldDisplayNoSSNCheckbox &&
                 <>
                     <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
                         {t('BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner', 'In the United States, a Social Security Number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.')}
