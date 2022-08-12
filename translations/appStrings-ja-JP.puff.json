@@ -388,6 +388,10 @@
       "value" : "ステップ{currentStep}/{totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "前回の有罪判決に関する質問",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "過去7年間に軽罪または重罪で有罪判決を受けたり、軽犯罪または重罪の有罪判決から刑務所または仮釈放されたりしましたか?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "いいえ",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "含める情報",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "市、国、有罪判決の状態、日付、犯罪の性質、判決情報を提供する",
@@ -571,10 +579,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "雇用日-から/まで（月/年-月/年）",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "有効な Amazon ビルディングを入力してください",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "社会保障番号を持っていない",

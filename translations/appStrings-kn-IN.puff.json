@@ -388,6 +388,10 @@
       "value" : "ಹಂತ {totalSteps} ರಲ್ಲಿ {currentStep}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "ಹಿಂದಿನ ಕನ್ವಿಕ್ಷನ್ ಪ್ರಶ್ನೆ",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "ಕಳೆದ ಏಳು (7) ವರ್ಷಗಳಲ್ಲಿ, ನೀವು ಎಂದಾದರೂ ದುಷ್ಕೃತ್ಯ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಶಿಕ್ಷೆಗೊಳಗಾಗಿದ್ದೀರಾ ಅಥವಾ ಅಪರಾಧ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಜೈಲಿನಿಂದ ಅಥವಾ ಪೆರೋಲ್‌ನಲ್ಲಿ ಬಿಡುಗಡೆ ಹೊಂದಿದ್ದೀರಾ?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "ಇಲ್ಲ",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "ಯಾವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಕು",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "ನಗರ, ದೇಶ, ಅಪರಾಧದ ಸ್ಥಿತಿ, ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ",
@@ -571,10 +579,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "ಉದ್ಯೋಗದ ದಿನಾಂಕಗಳು - ಮೊದಲ/ಕೊನೆಯ (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "ಮಾನ್ಯವಾದ Amazon ಕಟ್ಟಡವನ್ನು ನಮೂದಿಸಿ",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "ನನ್ನ ಬಳಿ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ ಇಲ್ಲ",

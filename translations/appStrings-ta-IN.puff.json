@@ -400,6 +400,10 @@
       "value" : "வேண்டாம்",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "என்ன தகவலைச் சேர்க்க வேண்டும்",
+      "note" : "Text for what information to include label text"
+    },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "தண்டனை குறித்த தகவல்களுடன் நகரம், நாடு, தண்டனை நிலை, தேதி, குற்றத்தின் தன்மை ஆகியவற்றை வழங்கவும்",
       "note" : "Text to Criminal record conviction details label text"
@@ -571,10 +575,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "வேலைவாய்ப்பு தேதிகள் - முதல்/வரை (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "சரியான Amazon கட்டடத்தின் பெயரை உள்ளிடவும்",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "என்னிடம் சமூகப் பாதுகாப்பு எண் இல்லை",

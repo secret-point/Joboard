@@ -388,6 +388,10 @@
       "value" : "{totalSteps}లో {currentStep}వ దశ",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "మునుపటి విశ్వాస ప్రశ్న",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "మీరు గత ఏడు (7) సంవత్సరాలలో దుష్ప్రవర్తన లేదా నేరారోపణకు పాల్పడినట్లు నిర్ధారించబడ్డారా లేదా జైలు లేదా పెరోల్ నుండి విముక్తి పొందారా?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "లేదు",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "ఏ సమాచారాన్ని చేర్చాలి",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "నగరం, దేశం, నేరారోపణ జరిగిన రాష్ట్రం, తేదీ, నేరం యొక్క స్వభావం, శిక్షా సమాచారంతో పాటు అందించండి",
@@ -571,10 +579,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "ఉద్యోగ తేదీలు - నుండి/వరకు (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "దయచేసి చెల్లుబాటు అయ్యే Amazon బిల్డింగ్‌ను నమోదు చేయండి",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "నాకు సోషల్ సెక్యూరిటీ నంబర్ లేదు",

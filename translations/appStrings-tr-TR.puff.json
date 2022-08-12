@@ -400,6 +400,10 @@
       "value" : "Hayır",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Hangi Bilgiler dahil edilmeli?",
+      "note" : "Text for what information to include label text"
+    },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Ceza bilgisi ile birlikte şehir, ülke, mahkumiyet durumu, tarih, suçun niteliğini sağlayın",
       "note" : "Text to Criminal record conviction details label text"
@@ -571,10 +575,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "İstihdam tarihleri - Başlangıç/Bitiş (AA/YY - AA/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Lütfen Geçerli bir Amazon Binası Girin",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Sosyal Güvenlik Numaram yok",

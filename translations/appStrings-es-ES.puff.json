@@ -388,6 +388,14 @@
       "value" : "Paso {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pregunta sobre la condena anterior",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> No incluyas delitos que tengan más de siete (7) años desde la fecha de la sentencia, de modo que no debes incluir <strong> ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años_.  No incluyas delitos que no sean delitos menores o delitos graves, como infracciones, o condenas relacionadas con conductas que hayan sido despenalizadas desde la fecha de la condena, incluidos, entre otros, los delitos relacionados con la marihuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Te han condenado por un delito menor o un delito grave o te han puesto en libertad o en libertad condicional por una condena por un delito menor o un delito grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Qué información incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Proporciona la ciudad, el país, el estado de la condena, la fecha y la naturaleza de la infracción, junto con la información sobre la sentencia",
@@ -571,10 +583,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de empleo - Desde/Hasta (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Introduce un edificio de Amazon válido",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un número de la Seguridad Social",

@@ -400,6 +400,10 @@
       "value" : "না",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
     },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "কী কী তথ্য অন্তর্ভুক্ত করতে হবে",
+      "note" : "Text for what information to include label text"
+    },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "শহর, দেশ, দোষী সাব্যস্ত হওয়ার রাজ্য, তারিখ, অপরাধের প্রকৃতিসহ সাজা সংক্রান্ত তথ্য প্রদান করুন",
       "note" : "Text to Criminal record conviction details label text"
@@ -571,10 +575,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "চাকরির মেয়াদ - থেকে/পর্যন্ত (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "অনুগ্রহ করে একটি বৈধ Amazon বিল্ডিং লিখুন",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "আমার কোনও সোশ্যাল সিকিউরিটি নাম্বার নেই",

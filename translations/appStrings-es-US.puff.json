@@ -388,6 +388,10 @@
       "value" : "Paso {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pregunta sobre condenas previas",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por un delito menor o un delito grave o has salido de la cárcel o en libertad condicional tras haber sido condenado por un delito menor o un delito grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Información a incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Indica la ciudad, país, el estado donde tuvo lugar la condena, la fecha y la naturaleza del delito, junto con la información sobre la sentencia",
@@ -571,10 +579,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Ingresa un edificio válido de Amazon",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un Número de Seguro Social",

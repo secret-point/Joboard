@@ -388,6 +388,10 @@
       "value" : "Langkah {currentStep} daripada {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> Jangan sertakan, kesalahan yang berusia lebih daripada tujuh (7) tahun dari tarikh hukuman, agar anda tidak perlu memasukkan <strong>sebarang</strong> tempoh pemenjaraan dalam pengiraan tempoh tujuh tahun_.  Jangan sertakan kesalahan yang bukan salah laku atau jenayah, seperti pelanggaran, atau sabitan yang berkaitan dengan kelakuan yang telah dihapuskan klasifikasi jenayahnya sejak tarikh sabitan, termasuk tetapi tidak terhad kepada kesalahan ganja.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Adakah anda telah disabitkan kesalahan atau jenayah atau dibebaskan dari penjara atau pembebasan bersyarat daripada sabitan salah laku atau jenayah dalam tempoh tujuh (7) tahun yang lalu?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -571,10 +575,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Tarikh bekerja - Dari/Hingga (BB/TT - BB/TT)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Sila Masukkan Bangunan Amazon Yang Sah",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Saya tidak mempunyai Nombor Keselamatan Sosial",

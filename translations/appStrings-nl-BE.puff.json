@@ -388,6 +388,50 @@
       "value" : "Stap {currentStep} van {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Vermeld alleen veroordelingen die openbaar zijn.</strong>  Arrestaties die in jouw voordeel zijn afgehandeld, zijn geen veroordelingen. Neem ook geen informatie op over een veroordeling in het jeugdrechtsysteem, of een zaak die wordt overwogen in of verwerkt via het jeugdrechtsysteem, of aanklachten die hebben geleid tot een alternatieve straf of zaken die zijn afgewezen, afgewezen op grond van de wet betreffende eerste overtredingen (‘first offender‘s law’), zijn verzegeld, gewist, kwijtgescholden, gerechtelijk afgewezen of anderszins door de wet worden beschouwd als zijnde geen veroordeling.  <strong>Je bent ook niet verplicht om overtredingen (‘violations/infractions’), lichte misdrijven (‘petty misdemeanors’) of overtredingen met politiestraf (‘summary offences’) bekend te maken.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Een strafblad betekent niet noodzakelijkerwijs dat je niet in aanmerking komt voor een dienstverband, voortzetting van een dienstverband of een contract als onafhankelijke contractant bij Amazon.  Deze informatie wordt alleen gebruikt in overeenstemming met de toepasselijke wetgeving en alleen om te bepalen of de veroordeling verband houdt met de functie/het contract waarop je hebt gesolliciteerd.  Als je deze vraag niet eerlijk beantwoordt of niet de gevraagde aanvullende details van de overtreding(en) opgeeft, kan dat ertoe leiden dat je sollicitatie voor een baan of aanvraag voor werk als onafhankelijke contractant niet verder wordt behandeld. Of, als je al een dienstverband of contract als onafhankelijke contractant hebt bij Amazon, kan dit ertoe leiden dat je dienstverband of contract wordt beëindigd.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Je moet de onderstaande informatie over de wetten van verschillende staten doornemen voordat je aanvullende informatie over je strafblad opgeeft.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> Vermeld geen overtredingen (‘infractions’) gerelateerd aan marihuana die niet als misdrijf zijn aangemerkt of veroordelingen voor overtredingen (‘misdemeanors’) op die meer dan 2 jaar oud zijn.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Voeg geen informatie toe over een strafblad wegens burgerlijke of militaire ongehoorzaamheid, tenzij je in die zaak schuldig hebt gepleit of bent veroordeeld door een bevoegde rechtbank.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Geef geen kopie van je strafblad.  Vermeld geen veroordelingen voor eerste overtredingen (‘first-time misdemeanor’) wegens dronkenschap, lichte mishandeling, snelheidsovertredingen, kleine verkeersovertredingen, ongeregeldheden of ordeverstoringen. Vermeld ook geen veroordelingen voor andere overtredingen waarbij de datum van veroordeling of het einde van een periode van detentie meer dan 3 jaar geleden is, tenzij er binnen die 3 jaar verdere veroordelingen zijn geweest. Een sollicitant met een strafblad dat is gewist op grond van paragraaf 100F, paragraaf 100G, paragraaf 100H of paragraaf 100K van hoofdstuk 276 van de General Laws kan antwoorden met 'geen strafblad' op een vraag hierin met betrekking tot eerdere arrestaties, voorgeleidingen bij een strafrechtbank of veroordelingen. Een sollicitant met een strafblad dat is gewist op grond van paragraaf 100F, paragraaf 100G, paragraaf 100H of paragraaf 100K van hoofdstuk 276 van de General Laws kan antwoorden met 'geen strafblad' op een vraag hierin met betrekking tot eerdere arrestaties, voorgeleidingen bij een strafrechtbank, voorgeleidingen bij een jeugdrechtbank, berechtingen of veroordelingen.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Geef geen strafzaken op die in uw voordeel zijn afgehandeld op grond van de wet op de strafvordering (‘Criminal Procedure Law’, CPL), §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Vermeld geen veroordeling voor drugsbezit als overtreding (‘misdemeanor violation’), zoals gedefinieerd in Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Vermeld geen veroordelingen die meer dan zeven (7) jaar vóór de datum van dit verzoek om informatie hebben plaatsgevonden.  <strong>Een periode van detentie telt niet mee voor de berekening van de periode van zeven jaar.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Vermeld geen veroordeling voor drugsbezit als overtreding (‘misdemeanor conviction’), zoals gedefinieerd in paragraaf 18.2-250.1 van de Code of Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Naast het onderstaande hoef je geen strafrechtelijke veroordeling te vermelden waarvoor een certificaat van reclassering is uitgegeven of een andere gelijkwaardige procedure op basis van een bevinding van de reclassering.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Ben je veroordeeld voor een misdrijf, ben je vrijgelaten uit de gevangenis of ben je voorwaardelijk vrij na veroordeling voor een misdrijf in de afgelopen zeven (7) jaar?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +443,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nee",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Welke informatie moet worden opgenomen",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Geef stad, land en staat van veroordeling, datum, aard van het misdrijf en informatie over de veroordeling op",
@@ -571,10 +619,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Data van indiensttreding - Van/Tot (MM/JJ - MM/JJ)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Voer een geldig Amazon-gebouw in",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Ik heb geen burgerservicenummer (Social Security Number)",

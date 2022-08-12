@@ -388,6 +388,10 @@
       "value" : "ഘട്ടം {totalSteps}-ല്‍ {currentStep}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "മുമ്പത്തെ ബോധ്യം വരുത്തല്‍ ചോദ്യം",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "കഴിഞ്ഞ ഏഴ് (7) വർഷങ്ങളിൽ നിങ്ങൾ ദുഷ്കൃത്യത്തിനോ കുറ്റകൃത്യത്തിനോ ശിക്ഷിക്കപ്പെട്ടിട്ടുണ്ടോ അല്ലെങ്കില്‍ ശിക്ഷിക്കപ്പെടുകയോ അത്തരം കാര്യങ്ങളെത്തുടര്‍ന്ന് ജയിലിൽ നിന്നോ പരോളില്‍ നിന്നോ മോചിപ്പിക്കപ്പെട്ട വ്യക്തിയാണോ?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -571,10 +575,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "തൊഴിൽ തീയതി - മുതല്‍/വരെ (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "ദയവായി ഒരു സാധുവായ Amazon ബിൽഡിംഗ് നൽകുക",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "എനിക്ക് ഒരു സോഷ്യൽ സെക്യൂരിറ്റി നമ്പർ ഇല്ല",

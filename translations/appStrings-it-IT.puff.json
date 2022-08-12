@@ -388,6 +388,54 @@
       "value" : "Passaggio {currentStep} di {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Domanda sulle condanne precedenti",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Elenca solo le condanne che sono di dominio pubblico.</strong>  Gli arresti risolti a tuo favore non sono condanne. Allo stesso modo, non includere alcuna informazione relativa a una condanna nel sistema giudiziario minorile, o una questione considerata o elaborata attraverso il sistema giudiziario minorile, o accuse che hanno portato a un programma di diversione o casi che sono stati archiviati, archiviati ai sensi della legge per incensurati, chiusi, cancellati, condonati, dismessi giudizialmente o altrimenti trattati come non condanna dalla legge.  <strong>Inoltre, non sei tenuto a divulgare violazioni, infrazioni, reati minori o reati sommari.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Aver avuto recedenti penali non ti impedirà necessariamente di lavorare, continuare a lavorare o iniziare un rapporto di lavoro come collaboratore indipendente con Amazon.  Queste informazioni verranno utilizzate solo in conformità con la legge applicabile e solo allo scopo di determinare se la condanna è correlata al lavoro/incarico per il quale hai fatto domanda.  La mancata risposta onesta a questa domanda o la mancata fornitura dei dettagli aggiuntivi richiesti del/i reato/i può comportare l'interruzione dell'esame della domanda di assunzione o di un incarico di appaltatore indipendente o, se si è già assunti e/o assunto come appaltatore indipendente con Amazon, il non fornire risposte oneste o dettagli richiesti può comportare la cessazione del rapporto di lavoro.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "È necessario rivedere le informazioni sulla legge statale di seguito prima di fornire ulteriori informazioni sulla propria storia criminale",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> Non includere le infrazioni non criminali legate alla marijuana o le condanne per reati minori risalenti a più di due anni fa.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Non includere informazioni relative a un record di disobbedienza civile o militare, a meno che la documentazione non abbia portato a una dichiarazione di colpevolezza o a una condanna da parte di un tribunale della giurisdizione competente.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Non fornire una copia del report sui precedenti penali.  Non identificare le condanne per reati minori per ubriachezza, semplice aggressione, eccesso di velocità, infrazioni stradali minori, rissa o disturbo della quiete pubblica. Inoltre, non identificare le condanne per altri reati per i quali la data della condanna o la fine di qualsiasi periodo di incarcerazione sia stato più di 3 anni fa, a meno che non ci siano state condanne successive entro quei 3 anni. Un richiedente un impiego con precedenti penali cancellati ai sensi della sezione 100F, sezione 100G, sezione 100H o sezione 100K del capitolo 276 delle leggi generali può rispondere \"nessun precedente penale\" in relazione a un'indagine qui contenuta in relazione a precedenti arresti, apparizioni o condanne in tribunale penale. Un richiedente un impiego con precedenti penali cancellati ai sensi della sezione 100F, sezione 100G, sezione 100H o sezione 100K del capitolo 276 delle leggi generali può rispondere \"nessun precedente penale\" a un'indagine qui contenuta relativa a precedenti arresti, apparizioni in tribunale penale, apparizioni in tribunale minorile, sentenze o condanne.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Non identificare alcuna azione che si è conclusa a tuo favore ai sensi della legge sulla procedura penale (“CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Non denunciare alcuna condanna per una sanzione amministrativa connessa alle droghe, come definito nell’Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadelfia, Pennsylvania:</strong> Non includere condanne avvenute a più di sette (7) anni dalla data di questa inchiesta.  <strong>Qualsiasi periodo di incarcerazione non dovrebbe essere incluso nel calcolo del periodo di sette anni.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Non denunciare una condanna minore per possesso di droga, come definito nella Sezione 18.2-250.1 del Codice della Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Oltre a quanto segue, è possibile escludere una condanna penale che è stata oggetto di un certificato di riabilitazione o altra procedura equivalente basata su un accertamento della riabilitazione.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Sei stato condannato per reato minore o reato penale o sei stato rilasciato dal carcere o sulla parola per una condanna per un reato minore o un reato penale negli ultimi sette (7) anni?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Quali informazioni includere",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Indica la città, il paese, lo stato di condanna, la data, la natura del reato e le informazioni sulla sentenza",
@@ -571,10 +623,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Date di impiego - da/a (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Inserisci una struttura Amazon valida",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Non ho un numero di previdenza sociale",

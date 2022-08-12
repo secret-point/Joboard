@@ -388,6 +388,10 @@
       "value" : "चरण {totalSteps} में से {currentStep}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "पिछला कन्विक्शन सवाल",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "क्या आपको दुष्कर्म या गुंडागर्दी का दोषी ठहराया गया है या पिछले सात (7) सालों में एक दुष्कर्म या गुंडागर्दी की सजा से जेल या पैरोल से रिहा किया गया है?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "नहीं",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "कौन सी जानकारी शामिल करनी है",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "सजा की जानकारी के साथ शहर, देश, सजा की स्थिति, तारीख, अपराध की प्रकृति प्रदान करें",
@@ -571,10 +579,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "रोजगार की तारीखें - से/तक (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "कृपया एक मान्य Amazon बिल्डिंग एंटर करें",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "मेरे पास सामाजिक सुरक्षा नंबर नहीं है",

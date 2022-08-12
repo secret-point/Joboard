@@ -388,6 +388,14 @@
       "value" : "Krok {currentStep} z {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Poprzednie pytanie o przekonanie",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Kalifornia:</strong> Nie uwzględniaj przestępstw, które miały miejsce więcej niż siedem (7) lat od daty wyroku, tak, aby nie uwzględniać <strong>żadnego</strong> okresu pozbawienia wolności przy obliczaniu siedmioletniego okresu_.  Nie uwzględniaj przestępstw, które nie są wykroczeniami lub przestępstwami, takich jak wykroczenia lub wyroki skazujące związane z zachowaniem, które zostało zalegalizowane od daty skazania, w tym między innymi przestępstwa związane z marihuaną.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Czy skazano Cię za wykroczenie albo przestępstwo lub zwolniono Cię z więzienia albo zwolniono warunkowo po wykroczeniu lub skazaniu za przestępstwo w ciągu ostatnich siedmiu (7) lat?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nie",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Jakie informacje należy uwzględnić",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Podaj miasto, kraj, stan skazania, datę, charakter przestępstwa, wraz z informacjami o wyrokach",
@@ -571,10 +583,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Daty zatrudnienia – Od/Do (MM/RR–MM/RR)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Wprowadź prawidłowy budynek Amazon",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Nie mam numeru ubezpieczenia społecznego",

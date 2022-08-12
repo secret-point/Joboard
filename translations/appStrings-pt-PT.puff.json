@@ -388,6 +388,54 @@
       "value" : "Passo {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pergunta de condenação anterior",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Liste apenas as condenações que constam no registo público.</strong>  Detenções resolvidas a seu favor não são condenações. Do mesmo modo, não inclua nenhuma informação relacionada a uma condenação no sistema de justiça juvenil, ou um assunto considerado ou processado através do sistema de justiça juvenil, ou acusações que levaram a um programa de intervenção pré-julgamento ou casos que foram rejeitados, rejeitados sob a lei de infrator pela primeira vez, selados, eliminados, perdoados, rejeitados judicialmente ou tratados de outra forma como não condenações por lei.  <strong>Também não é obrigado a divulgar violações, infrações, contravenções menores, ou ofensas sumárias.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Um registo criminal não irá necessariamente impedi-lo de obter emprego, emprego continuado, ou um compromisso como um contratante independente com a Amazon.  Estas informações serão usadas apenas de acordo com a lei aplicável e apenas com a finalidade de determinar se a condenação está relacionada ao trabalho/contrato para o qual se candidatou.  Não responder a esta pergunta honestamente, ou não fornecer os detalhes adicionais solicitados da(s) ofensa(s), pode resultar na descontinuação da consideração da sua candidatura de emprego, ou de contrato de contratante independente ou, se já estiver empregado e/ou contratado como um contratante independente com Amazon, tal falha pode resultar na rescisão do seu emprego ou contrato.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Deve rever as informações da lei estadual abaixo antes de fornecer informações adicionais sobre o seu registo criminal",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Califórnia:</strong> Não inclua infrações não criminais relacionadas com marijuana, ou condenações por contravenção que sejam superiores a 2 anos.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Não inclua informações sobre um registo de desobediência civil ou militar, a menos que o registo resulte numa confissão de culpabilidade ou numa condenação por um tribunal de jurisdição competente.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Não forneça uma cópia do seu relatório de registo criminal.  Não identifique condenações por contravenção pela primeira vez por embriaguez, assalto simples, excesso de velocidade, pequenas infrações de trânsito, desordem ou perturbação da paz. Também não identifique condenações por outras contravenções em que a data da condenação, ou o fim de qualquer período de encarceramento, tenha sido há mais de 3 anos, a menos que tenha havido condenações subsequentes dentro desses 3 anos. Um candidato a emprego com um registo eliminado de acordo com a secção 100F, secção 100G, secção 100H ou secção 100K do capítulo 276 das Leis Gerais, pode responder “nenhum registo” em relação a um inquérito aqui relativo a detenções anteriores, comparências em tribunais criminais ou condenações. Um candidato a emprego com um registo eliminado de acordo com a secção 100F, secção 100G, secção 100H ou secção 100K do capítulo 276 das Leis Gerais, pode responder “nenhum registo” a um inquérito aqui relativo a detenções anteriores, comparências em tribunais criminais, comparências em tribunais juvenis, julgamentos ou condenações.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>Nova Iorque:</strong> Não identifique quaisquer ações que tenham rescindido a seu favor nos termos da Lei de Processo Penal (“CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Não notifique qualquer condenação de contravenção por violação de drogas, conforme definido no Código Rev. de Ohio 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadélfia, Pensilvânia:</strong> Não inclua quaisquer condenações que ocorreram há mais de sete (7) anos a partir da data deste inquérito.  <strong>Qualquer período de encarceramento não deve ser incluído no cálculo do período de sete anos.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virgínia:</strong> Não notifique uma condenação por contravenção por porte de drogas, conforme definido na secção 18.2-250.1 do Código da Virgínia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Além do abaixo, pode excluir uma condenação criminal que tenha sido objeto de um certificado de reabilitação ou outro procedimento equivalente com base numa descoberta da reabilitação.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Foi condenado por uma contravenção ou um crime, ou foi libertado da prisão ou em liberdade condicional, devido a uma condenação por contravenção ou crime nos últimos sete (7) anos?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Não",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Que informações incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Indique a cidade, o país, o estado da condenação, a data e a natureza do crime, juntamente com informações sobre a sentença",
@@ -571,10 +623,6 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Datas de emprego - de/até (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
-    },
-    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text" : {
-      "value" : "Insira um edifício da Amazon válido",
-      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Não tenho um número de segurança social",

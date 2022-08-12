@@ -630,9 +630,9 @@
             "note": "Text for the dates of employment at Amazon input label text",
             "value": "Dates of employment - From/To (MM/YY - MM/YY)"
         },
-        "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text": {
+        "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix": {
             "note": "Text for the dates of employment at Amazon input error text",
-            "value": "Please Enter a Valid Amazon Building"
+            "value": "Please enter a valid date of Employment"
         },
         "BB-BGC-no-ssn-checkbox-label": {
             "note": "Label for the no ssn checkbox",
