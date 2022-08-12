@@ -53,7 +53,6 @@ const FormInputSelect = ( props: FormInputSelectProps ) => {
                         gridGap={"S300"}
                         dataTestId='formInputItem-renderLabel'
                         width="100%"
-                        placeholder={placeholderText || ''}
                     >
                         <Label htmlFor={id} style={{ width: '100%' }}>
                             <Row
@@ -86,6 +85,7 @@ const FormInputSelect = ( props: FormInputSelectProps ) => {
                         aria-required={required}
                         renderOption={renderOption}
                         renderNativeOption={renderNativeOption}
+                        placeholder={placeholderText || ''}
                     />
                 )}
             </InputWrapper>
