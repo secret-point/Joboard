@@ -993,7 +993,7 @@ export const SelfShouldDisplayContinue = (stepConfig: SelfIdentificationConfig):
 
     return equalOpportunity.status === COMPLETED && !equalOpportunity.editMode &&
       veteran.status === COMPLETED && !veteran.editMode &&
-      disability.status == COMPLETED && !disability.editMode
+      disability.status === COMPLETED && !disability.editMode
 }
 
 export interface DateFormatOption {
@@ -1009,10 +1009,12 @@ export const formatDate = (dateStr?: string, option: DateFormatOption = {}) => {
 };
 
 export const formatNheTimeSlotTitle = (date: string) => {
-    return formatDate(date, {
+    const res = formatDate(date, {
       defaultDateFormat: "DD/MM/yyyy",
       displayFormat: "dddd, MMM Do YYYY",
     });
+
+    return res.replace(/^\w/, (c) => c.toUpperCase());
   };
 
 export const goToCandidateDashboard = () => {
