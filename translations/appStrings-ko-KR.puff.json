@@ -392,6 +392,10 @@
       "value" : "이전 유죄 판결 질문",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>캘리포니아주 샌프란시스코:</strong> 7년 기간 계산에 투옥 기간은 <strong>전혀</strong> 포함하지 않도록 선고일로부터 7년 이상 된 범죄는 포함하지 마세요.  마리화나 범죄를 포함하되 이에 국한되지 않는 유죄 판결일 이후 비범죄화된 행위와 관련된 위반 또는 유죄 판결과 같이 경범죄나 중범죄가 아닌 범죄는 포함하지 마세요.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "지난 7년 동안 경범죄 또는 중범죄로 유죄 판결을 받았거나 경범죄 또는 중범죄 유죄 판결로 감옥에서 석방되거나 가석방된 적이 있습니까?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -1732,8 +1736,8 @@
       "value" : "계속 진행하려면 확인란을 선택하세요.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
-    "BB-bgc-ConvictionDetail-error-message" : {
-      "value" : "계속 진행하려면 확인란을 선택하세요.",
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "유죄 판결 세부 사항을 제공하세요.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

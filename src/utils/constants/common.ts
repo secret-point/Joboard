@@ -414,9 +414,9 @@ export const ConvictionDetailConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.convictionDetails',
     id: 'convictionDetails',
     type: 'textArea',
-    regex: "^(?=\\S)[a-zA-Z0-9 ]{2,500}(?<=[^\\s])$",
+    regex: `^(?=\\S)[a-zA-Z0-9 ,.]{2,500}(?<=[^\\s])$`,
     labelTranslationKey: 'BB-BGC-criminal-record-conviction-detail-label-text',
-    errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message"
+    errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message-fix"
 }
 
 export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
@@ -431,7 +431,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text',
-        regex: "^(?=\\S)[a-zA-Z ]{2,}(?<=[^\\s])$",
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
     },
     {
         hasError: false,

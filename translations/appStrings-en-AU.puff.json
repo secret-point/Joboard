@@ -388,6 +388,10 @@
       "value" : "Step {currentStep} of {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> Do not include, offences that are more than seven (7) years old from the date of sentencing, such that you should not include <strong>any</strong> period of incarceration in the calculation of the seven-year period.  Do not include offences that are not misdemeanours or felonies, such as infractions, or convictions related to conduct that has been decriminalised since the conviction date, including but not limited to marijuana offences.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Have you been convicted of a misdemeanour or felony or been released from prison or parole from a misdemeanour or felony conviction in the last seven (7) years?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -1719,10 +1723,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message" : {
-      "value" : "Please check the box to proceed.",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",
