@@ -392,9 +392,53 @@
       "value" : "Pregunta sobre la condena anterior",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Enumera solo las condenas que sean de registro público.</strong>  Los arrestos resueltos a tu favor no son condenas. Del mismo modo, no incluyas ninguna información relacionada con una condena en el sistema de justicia de menores, o un asunto considerado o procesado a través del sistema de justicia de menores, o cargos que condujeron a un programa de remisión o casos que hayan sido desestimados, desestimados bajo la ley de un primer delincuente, cerrados, eliminados, indultados, sobreseídos judicialmente o tratados de otro modo como no condenatorios por ley.  <strong>Tampoco se exige que divulgues violaciones, infracciones, faltas menores o delitos sumarios.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Los antecedentes penales no necesariamente te impedirán trabajar, continuar trabajando o comprometerte como contratista independiente en Amazon.  Esta información solo se utilizará de acuerdo con la ley aplicable y solo con el fin de determinar si la condena está relacionada con el trabajo/contratación que solicitaste.  Si no respondes a esta pregunta honestamente o no proporcionas los detalles adicionales solicitados de la(s) infracción/infracciones, puede resultar en la suspensión de la consideración de tu solicitud de empleo o de contratación como contratista independiente o, si ya estás empleado o contratado como contratista independiente con Amazon, tal incumplimiento puede dar lugar a la terminación de tu empleo o compromiso.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Debes revisar la información de la ley estatal a continuación antes de proporcionar información adicional sobre tus antecedentes penales.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> No incluyas infracciones no graves relacionadas con la marihuana ni condenas por delitos menores que tengan más de 2 años.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, California:</strong> No incluyas delitos que tengan más de siete (7) años desde la fecha de la sentencia, de modo que no debes incluir <strong> ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años_.  No incluyas delitos que no sean delitos menores o delitos graves, como infracciones, o condenas relacionadas con conductas que hayan sido despenalizadas desde la fecha de la condena, incluidos, entre otros, los delitos relacionados con la marihuana.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> No incluyas información sobre antecedentes de desobediencia civil o militar, a menos que el registro haya dado lugar a una declaración de culpabilidad o a una condena por parte de un tribunal de jurisdicción competente.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> No proporciones una copia de tu certificado de antecedentes penales.  No identifiques las primeras condenas por delitos leves por embriaguez, agresión simple, exceso de velocidad, infracciones menores de tráfico, altercados o alteración del orden público. Tampoco identifiques condenas por otros delitos leves en los que la fecha de la condena o el final de cualquier período de encarcelamiento fuese superior de 3 años, a menos que se hayan dictado condenas posteriores dentro de esos 3 años. Un solicitante de empleo con antecedentes eliminados de conformidad con la sección 100F, la sección 100G, la sección 100H o la sección 100K del capítulo 276 de las Leyes Generales puede responder «sin antecedentes» con respecto a una investigación en este documento relativa a arrestos anteriores o comparecencias o condenas en tribunales penales. Un solicitante de empleo con antecedentes eliminados de conformidad con la sección 100F, la sección 100G, la sección 100H o la sección 100K del capítulo 276 de las Leyes Generales puede responder «sin antecedentes» a una consulta en este documento relativa a arrestos anteriores, comparecencias en tribunales penales, comparecencias, resoluciones o condenas de tribunales de menores.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>Nueva York:</strong> No identifiques ninguna acción que haya concluido a tu favor de conformidad con la Ley Procesal Penal («CPL») §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> No informes sobre una condena por un delito menor de violación de la ley de drogas según se define en la Enmienda del Código 2925.11 de Ohio.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadelfia, Pensilvania:</strong> No incluyas ninguna condena que haya ocurrido más de siete (7) años a partir de la fecha de esta consulta.  <strong>No se debe incluir ningún período de encarcelamiento en el cálculo del período de siete años.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> No informes sobre una condena por posesión de drogas por un delito menor, según se define en la Sección 18.2-250.1 del Código de Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Además de lo que se indica a continuación, puedes excluir una condena penal que haya sido objeto de un certificado de rehabilitación u otro procedimiento equivalente en función de la conclusión de la rehabilitación.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Te han condenado por un delito menor o un delito grave o te han puesto en libertad o en libertad condicional por una condena por un delito menor o un delito grave en los últimos siete (7) años?",
@@ -480,7 +524,7 @@
       "value" : "Comprendo y acepto que, según lo permita la ley, Amazon puede solicitar verificaciones adicionales de mis antecedentes con fines laborales, sin mi autorización adicional, (1) durante mi empleo, si corresponde, y (2) a CRA distintos de Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Para fines laborales, y con arreglo a todas las leyes que protegen mis datos personales, también autorizo a las siguientes entidades a divulgar a los CRA cualquier información necesaria para la comprobación de antecedentes: mis empleadores anteriores o actuales, centros educativos, fuerzas del orden y otras agencias gubernamentales, incluido el registro de vehículos motorizados.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -583,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de empleo - Desde/Hasta (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Introduce una fecha de empleo válida",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un número de la Seguridad Social",

@@ -408,6 +408,14 @@
       "value" : "Σε σχέση με την αίτησή σας για απασχόληση στο Amazon.com, Inc. ή στις θυγατρικές ή ελεγχόμενες εταιρείες της («Amazon»), θα προμηθευτούμε μια αναφορά καταναλωτή για εσάς από έναν οργανισμό εκθέσεων για καταναλωτές. Αυτό είναι κοινώς γνωστό ως «έλεγχος ιστορικού».",
       "note" : "Text to explain what report need to be collected from candidate on fcra form"
     },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
+      "value" : "Ανάκληση αίτησης",
+      "note" : "Text for fcra disclosure decline modall withdraw application button text"
+    },
+    "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text" : {
+      "value" : "Η αίτησή σας θα ανακληθεί εάν αρνηθείτε να πραγματοποιήσετε τον έλεγχο ιστορικού.",
+      "note" : "Text for fcra disclosure decline modall withdraw application description text"
+    },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
       "value" : "Γνωστοποίηση δίκαιης έκθεσης πιστοληπτικής ικανότητας",
       "note" : "Text for the fcra disclosure form title"
@@ -460,7 +468,7 @@
       "value" : "Κατανοώ και συμφωνώ ότι, σύμφωνα με τον νόμο, η Amazon μπορεί να απαιτήσει πρόσθετους ελέγχους ιστορικού για εμένα για σκοπούς απασχόλησης, χωρίς περαιτέρω εξουσιοδότησή μου, (1) κατά τη διάρκεια της απασχόλησής μου, εάν υφίσταται, και (2) από οργανισμούς εκθέσεων για καταναλωτές εκτός της Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Για σκοπούς απασχόλησης και με την επιφύλαξη όλων των νόμων που προστατεύουν το πληροφοριακό μου απόρρητο, εξουσιοδοτώ επίσης τους ακόλουθους να γνωστοποιήσουν στους οργανισμούς εκθέσεων για καταναλωτές οποιαδήποτε πληροφορία απαιτείται για τον έλεγχο ιστορικού: τους προηγούμενους ή σημερινούς εργοδότες μου, τα σχολεία και τις υπηρεσίες επιβολής του νόμου και άλλες κυβερνητικές υπηρεσίες, συμπεριλαμβανομένων των υπηρεσιών μητρώου οχημάτων.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -487,6 +495,18 @@
     "BB-non-fcra-accurate-newyork-specific-notice" : {
       "value" : "<p><b>ΝΕΑ ΥΟΡΚΗ: </b>Έχετε το δικαίωμα να υποβάλετε γραπτό αίτημα στην Amazon για να μάθετε αν παραγγείλαμε μια έκθεση καταναλωτή ή μια διερευνητική έκθεση καταναλωτή για εσάς. Παραπάνω εμφανίζονται η διεύθυνση και ο αριθμός τηλεφώνου του οργανισμού εκθέσεων για καταναλωτές. Έχετε το δικαίωμα να επικοινωνήσετε με οποιονδήποτε οργανισμό εκθέσεων για καταναλωτές για να επιθεωρήσετε ή να λάβετε αντίγραφο οποιασδήποτε τέτοιας έκθεσης. Κάντε κλικ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://resources.accuratebackground.com/hubfs/New_York_Correction_Law_Article_23-A-1.pdf\">εδώ</a> για πληροφορίες σχετικά με τα δικαιώματά σας σύμφωνα με το άρθρο 23-Α του διορθωτικού νόμου της Νέας Υόρκης.</p>",
       "note" : "Text for ACCURATE non fcra New York specific notice "
+    },
+    "BB-non-fcra-fadv-newyork-specific-notice" : {
+      "value" : "<p><b>ΝΕΑ ΥΟΡΚΗ: </b>Έχετε το δικαίωμα να υποβάλετε γραπτό αίτημα στην Amazon για να μάθετε αν παραγγείλαμε την έκδοση έκθεσης καταναλωτή ή ερευνητικής έκθεσης καταναλωτή για εσάς. Παραπάνω εμφανίζονται η διεύθυνση και ο αριθμός τηλεφώνου του οργανισμού παροχής στοιχείων καταναλωτών (CRA). Έχετε το δικαίωμα να επικοινωνήσετε με οποιονδήποτε οργανισμό παροχής στοιχείων καταναλωτών για να επιθεωρήσετε ή να λάβετε αντίγραφο οποιασδήποτε τέτοιας έκθεσης. Κάντε κλικ <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fadv.com/Fadv-prod/media/Assets/FCRA%20page%20PDFs/NY_Correction_Law_Article_23-A.pdf\">εδώ</a> για πληροφορίες σχετικά με τα δικαιώματά σας σύμφωνα με το άρθρο 23-Α του Διορθωτικού νόμου της Νέας Υόρκης.</p>",
+      "note" : "Text for FADV non fcra New York specific notice "
+    },
+    "BB-non-fcra-accurate-washington-specific-notice" : {
+      "value" : "<p><b>ΟΥΑΣΙΝΓΚΤΟΝ: </b>Έχετε το δικαίωμα να ζητήσετε από τον οργανισμό παροχής στοιχείων καταναλωτών γραπτή σύνοψη των δικαιωμάτων σας βάσει του νόμου της Ουάσινγκτον περί δίκαιης αναφοράς πιστοληπτικής ικανότητας Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for ACCURATE non fcra Washington specific notice "
+    },
+    "BB-non-fcra-fadv-washington-specific-notice" : {
+      "value" : "<p><b>ΟΥΑΣΙΝΓΚΤΟΝ: </b>Έχετε το δικαίωμα να ζητήσετε από τον οργανισμό παροχής στοιχείων καταναλωτών γραπτή σύνοψη των δικαιωμάτων σας βάσει του νόμου της Ουάσινγκτον περί δίκαιης αναφοράς πιστοληπτικής ικανότητας Washington Fair Credit Reporting Act.</p>",
+      "note" : "Text for FADV non fcra Washington specific notice "
     },
     "BB-non-fcra-accurate-allstate-specific-notice" : {
       "value" : "<p><b>ΟΛΕΣ ΟΙ ΠΟΛΙΤΕΙΕΣ: </b>Θα σας δώσουμε ένα δωρεάν αντίγραφο οποιουδήποτε ελέγχου ιστορικού εάν επιλέξετε αυτό το πλαίσιο",
@@ -1259,6 +1279,10 @@
     "BB-ThankYou-nhe-appointment-details-visit-us-text" : {
       "value" : "Επισκεφθείτε μας για μια συνεδρία 30 λεπτών ανά πάσα στιγμή μεταξύ {startTime} - {endTime}.",
       "note" : "Text for the thank you page nhe appointment details visit us text"
+    },
+    "BB-ThankYou-nhe-appointment-flyout-title-text" : {
+      "value" : "Ραντεβού πριν από την πρόσληψη",
+      "note" : "Text for the thank you page nhe appointment flyout title text"
     },
     "BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text" : {
       "value" : "Λεπτομέρειες συνάντησης",

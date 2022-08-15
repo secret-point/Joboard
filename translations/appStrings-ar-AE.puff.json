@@ -388,6 +388,14 @@
       "value" : "الخطوة {currentStep} من {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "سؤال عن الإدانة السابقة",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>سان فرانسيسكو، كاليفورنيا:</strong> لا تُدرج الجرائم التي يزيد عمرها عن سبع (7) سنوات من تاريخ صدور الحكم، بحيث لا يجب تضمين <strong>أيّ</strong> فترة سجن في حساب فترة السبع سنوات_.  لا تُدرج الجرائم التي ليست جنح أو جنايات، مثل المخالفات أو الإدانات المتعلقة بالسلوك الذي تم إلغاء تجريمها منذ تاريخ الإدانة، بما في ذلك على سبيل المثال لا الحصر جرائم الماريجوانا.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "هل تمت إدانتك بارتكاب جنحة أو جناية أو تم إطلاق سراحك من السجن أو حصلت على إفراج مشروط من إدانة جنحة أو جناية في آخر سبع (7) سنوات؟",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "لا",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "المعلومات التي يجب تضمينها",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "اذكر اسم المدينة، والبلد، وحالة الإدانة، والتاريخ، ونوع الجريمة، بالإضافة إلى معلومات العقوبة",
@@ -468,7 +480,7 @@
       "value" : "أفهم وأوافق على أنه، وفقًا لما يسمح به القانون يمكن لشركة أمازون طلب فحوصات إضافية للخلفية عنّي لأغراض التوظيف، بدون الحصول على إذن إضافي، (1) أثناء وجودي في الوظيفة، إن وُجدت، (2) ومن جهات CRA بخلاف Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "لأغراض التوظيف، وشريطة الامتثال لجميع القوانين التي تحمي خصوصية معلوماتي، أسمح أيضًا للجهات التالية بالإفصاح لدى جهات CRA عن أيّ معلومات مطلوبة للتحقق من الخلفية الخاصة بي: أرباب العمل السابقون أو الحاليون، والمؤسسات التعليمية، وهيئات إنفاذ القانون وغيرها من الهيئات الحكومية، بما في ذلك هيئات تسجيل السيارات.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +583,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "تواريخ التوظيف - من/إلى (شهر/سنة - شهر/سنة)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "الرجاء إدخال تاريخ توظيف صالح",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "ليس لديّ رقم ضمان اجتماعي",

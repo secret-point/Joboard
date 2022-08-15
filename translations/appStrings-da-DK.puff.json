@@ -388,6 +388,58 @@
       "value" : "Trin {currentStep} af {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Spørgsmål om tidligere domme",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Angiv kun domfældelser, der er offentligt registrerede.</strong>  Anholdelser, der er afgjort til din fordel, er ikke domme. Angiv heller ikke oplysninger om domfældelser i ungdomsretssystemet eller sager, der er behandlet i eller gennem ungdomsretssystemet, eller tiltaler, der har ført til et behandlingsprogram, eller sager, der er afvist, afvist i henhold til lovgivning om førstegangstilfælde, forseglet, slettet, benådet, afvist af en dommer eller på anden måde behandlet som ikke-dømt i henhold til loven.  <strong>Du er heller ikke forpligtet til at oplyse om overtrædelser, forseelser, mindre forseelser eller politisager.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "En straffeattest med registreringer vil ikke nødvendigvis udelukke dig fra ansættelse, fortsat ansættelse eller ansættelse som uafhængig kontrahent hos Amazon.  Disse oplysninger vil kun blive brugt i overensstemmelse med gældende lovgivning, og kun med henblik på at fastslå, om domfældelsen er relateret til det job/den stilling, som du har søgt.  Hvis du ikke svarer ærligt på dette spørgsmål eller ikke giver de ønskede yderligere oplysninger om forseelsen/forseelserne, kan det medføre, at din ansøgning om ansættelse eller ansættelse som uafhængig kontrahent ikke længere tages i betragtning, eller hvis du allerede er ansat af og/eller ansat som uafhængig kontrahent hos Amazon, kan en sådan undladelse medføre, at din ansættelse bringes til ophør.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Du skal gennemgå nedenstående oplysninger om statslovgivningen, før du giver yderligere oplysninger om din straffeattest",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Californien:</strong> Medtag ikke ikke-kriminelle marihuanarelaterede forseelser eller domfældelser for forseelser, der er mere end 2 år gamle.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Californien:</strong> Inkluderer ikke lovovertrædelser, der er mere end syv (7) år gamle, fra datoen for dommen, således at du ikke bør inkludere <strong>nogen</strong> periode med fængselsophold, i beregningen af syvårsperioden_.  Inkluderer ikke lovovertrædelser, der ikke er forseelser eller forbrydelser, såsom overtrædelser eller domme der er relateret til adfærd, der er blevet afkriminaliseret siden domsdatoen, herunder, men ikke begrænset til, marihuana-lovovertrædelser.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Angiv ikke oplysninger om registreringer i din straffeattest for civil eller militær ulydighed, medmindre registreringen førte til en tilståelse af skyld eller en domfældelse afsagt af en kompetent domstol.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Overdrag ikke en kopi af din straffeattest.  Angiv ikke førstegangsforseelser for beruselse, simpel vold, hastighedsovertrædelser, mindre overtrædelser af færdselsreglerne, slagsmål eller forstyrrelse af ro og orden. Angiv heller ikke domme for andre forseelser, hvis datoen for dommen eller afslutningen af en eventuel fængslingsperiode ligger mere end 3 år tilbage, medmindre der har været efterfølgende domfældelser inden for disse 3 år. En ansøger til beskæftigelse med en straffeattest, der er slettet i henhold til §§ 100F, 100G, 100H eller 100K i kapitel 276 i General Laws, kan svare \"ingen registreringer\" på en forespørgsel heri vedrørende tidligere anholdelser, retsmøder i straffesager eller domfældelser. En ansøger til beskæftigelse med en straffeattest, der er slettet i henhold til §§ 100F, 100G, 100H eller 100K i kapitel 276 i General Laws, kan svare \"ingen registreringer\" på en forespørgsel heri vedrørende tidligere anholdelser, retsmøder i straffesager, retsmøder i ungdomsretter, domsafgørelser eller domfældelser.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Angiv ikke handlinger, der er afsluttet til din fordel, i henhold til Criminal Procedure Law (\"CPL\") §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Angiv ikke domfældelser for forseelser vedrørende narkotika som defineret i Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Medtag ikke domfældelser, der er afsagt mere end syv (7) år efter datoen for denne forespørgsel.  <strong>Enhver fængslingsperiode medregnes ikke i den syvårige periode.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Angiv ikke domfældelser for forseelser vedrørende narkotikabesiddelse som defineret i afsnit 18.2-250.1 i Virginias lovbog.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Ud over nedenstående kan du undlade at angive en straffedomfældelse, som har været genstand for et rehabiliteringscertifikat, eller en anden tilsvarende procedure baseret på en konstatering af rehabilitering.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Er du blevet dømt for en forseelse (misdemeanor) eller forbrydelse (felony) eller blevet løsladt fra fængsel eller prøveløsladelse fra en forseelse eller forbrydelse i de sidste syv (7) år?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nej",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Hvilke oplysninger, der skal medtages",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Angiv by, land, domsforhold, dato, lovovertrædelsens art sammen med straffeinformation",
@@ -468,7 +524,7 @@
       "value" : "Jeg forstår og accepterer, at Amazon som tilladt ved lov kan bestille yderligere baggrundskontrol om mig til ansættelsesformål, uden min yderligere tilladelse, (1) under min ansættelse, hvis der er en, og (2) fra andre kreditvurderingsbureauer end Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Med henblik på ansættelse og med forbehold af alle love, der beskytter mit privatliv, giver jeg også følgende tilladelse til at videregive oplysninger, der er nødvendige for baggrundstjekket, til kreditvurderingsbureauerne: mine tidligere eller nuværende arbejdsgivere, skoler og offentlige myndigheder og andre myndigheder, herunder myndigheder med ansvar for registrering af motorkøretøjer.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Dato for beskæftigelse - Fra/til (MM/ÅÅ - MM/ÅÅ)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Indtast venligst en gyldig ansættelsesdato",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Jeg har ikke et Social Security-nummer (CPR)",

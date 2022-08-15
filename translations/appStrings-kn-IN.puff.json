@@ -392,6 +392,54 @@
       "value" : "ಹಿಂದಿನ ಕನ್ವಿಕ್ಷನ್ ಪ್ರಶ್ನೆ",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>ದಯವಿಟ್ಟು ಸಾರ್ವಜನಿಕ ದಾಖಲೆಯ ವಿಷಯವಾಗಿರುವ ಅಪರಾಧ ನಿರ್ಣಯ‌ಗಳನ್ನು ಮಾತ್ರ ಪಟ್ಟಿ ಮಾಡಿ.</strong>  ನಿಮ್ಮ ಪರವಾಗಿ ಪರಿಹರಿಸಲಾದ ಬಂಧನಗಳು ಅಪರಾಧ ನಿರ್ಣಯವಲ್ಲ. ಅಂತೆಯೇ, ಬಾಲಾಪರಾಧಿ ನ್ಯಾಯ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಶಿಕ್ಷೆಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಅಥವಾ ಬಾಲಾಪರಾಧಿ ನ್ಯಾಯ ವ್ಯವಸ್ಥೆಯ ಮೂಲಕ ಪರಿಗಣಿಸಲಾದ ಅಥವಾ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾದ ವಿಷಯ ಅಥವಾ ತಿರುವು ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ಕಾರಣವಾದ ಆರೋಪಗಳು ಅಥವಾ ವಜಾಗೊಳಿಸಿದ ಪ್ರಕರಣಗಳಿಗೆ ಕಾರಣವಾದ ಆರೋಪಗಳನ್ನು ಒಳಗೊಂಡಿಲ್ಲ, ಮೊದಲ ಅಪರಾಧಿಯ ಕಾನೂನಿನಡಿಯಲ್ಲಿ ವಜಾ ಮಾಡಲಾಗಿದೆ, ಮೊಹರು, ಹೊರಹಾಕಲಾಗಿದೆ, ಕ್ಷಮಿಸಲಾಗಿದೆ, ನ್ಯಾಯಾಂಗವಾಗಿ ವಜಾಗೊಳಿಸಲಾಗಿದೆ ಅಥವಾ ಕಾನೂನಿನ ಪ್ರಕಾರ ಅಪರಾಧ ನಿರ್ಣಯವಲ್ಲ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.  <strong>ಉಲ್ಲಂಘನೆಗಳು, ಅತಿಕ್ರಮಣಗಳು, ಸಣ್ಣ ಅಪರಾಧಗಳು ಅಥವಾ ಸಾರಾಂಶ ಕಾನೂನು ಬಾಹಿರ ಕೃತ್ಯಗಳನ್ನು ಸಹ ನೀವು ಬಹಿರಂಗಗೊಳಿಸುವ ಅಗತ್ಯವಿಲ್ಲ.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "ಕ್ರಿಮಿನಲ್ ದಾಖಲೆಯು ನಿಮ್ಮನ್ನು ಉದ್ಯೋಗ, ಉದ್ಯೋಗವನ್ನು ಮುಂದುವರಿಸುವುದು ಅಥವಾ Amazon ಅಲ್ಲಿ ಸ್ವತಂತ್ರ ಗುತ್ತಿಗೆದಾರರಾಗಿ ಒಪ್ಪಂದ ಮಾಡಿಕೊಳ್ಳದಂತೆ ನಿಮ್ಮನ್ನು ನಿರ್ಬಂಧಿಸುವುದಿಲ್ಲ.  ಈ ಮಾಹಿತಿಯನ್ನು ಅನ್ವಯವಾಗುವ ಕಾನೂನಿಗೆ ಅನುಗುಣವಾಗಿ ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಅರ್ಜಿ ಸಲ್ಲಿಸಿದ ಕೆಲಸ/ಒಪ್ಪಂದಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಅಪರಾಧ ನಿರ್ಣಯದ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತದೆ.  ಈ ಪ್ರಶ್ನೆಗೆ ಪ್ರಾಮಾಣಿಕವಾಗಿ ಉತ್ತರಿಸಲು ವಿಫಲವಾದರೆ ಅಥವಾ ಅಪರಾಧ (ಗಳ) ವಿನಂತಿಸಿದ ಹೆಚ್ಚುವರಿ ವಿವರಗಳನ್ನು ಒದಗಿಸಲು ವಿಫಲವಾದರೆ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅಥವಾ ಸ್ವತಂತ್ರ ಗುತ್ತಿಗೆದಾರರ ಒಪ್ಪಂದಕ್ಕಾಗಿ ನಿಮ್ಮ ಅರ್ಜಿಯನ್ನು ಪರಿಗಣಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಬಹುದು ಅಥವಾ ನೀವು ಈಗಾಗಲೇ ಉದ್ಯೋಗದಲ್ಲಿದ್ದರೆ ಮತ್ತು/ಅಥವಾ Amazon ನೊಂದಿಗೆ ಸ್ವತಂತ್ರ ಗುತ್ತಿಗೆದಾರರಾಗಿ ಒಪ್ಪಂದ ಮಾಡಿಕೊಂಡಿದ್ದರೆ, ಅಂತಹ ವೈಫಲ್ಯವು ನಿಮ್ಮ ಉದ್ಯೋಗ ಅಥವಾ ಒಪ್ಪಂದದ ಮುಕ್ತಾಯಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "ನಿಮ್ಮ ಕ್ರಿಮಿನಲ್ ಇತಿಹಾಸದ ಬಗ್ಗೆ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುವ ಮೊದಲು ನೀವು ಕೆಳಗಿನ ರಾಜ್ಯ ಕಾನೂನು ಮಾಹಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಬೇಕು",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ:</strong> ಫೆಲೋನಿ ಅಲ್ಲದ ಗಾಂಜಾ ಸಂಬಂಧಿತ ಉಲ್ಲಂಘನೆ ಅಥವಾ 2 ವರ್ಷಕ್ಕಿಂತ ಹೆಚ್ಚು ಹಳೆಯದಾದ ದುಷ್ಕೃತ್ಯಗಳ ಅಪರಾಧ ನಿರ್ಣಯಗಳನ್ನು ಸೇರಿಸಬೇಡಿ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>ಸ್ಯಾನ್ ಫ್ರಾನ್ಸಿಸ್ಕೋ, ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ:</strong> ಶಿಕ್ಷೆ ವಿಧಿಸಿದ ದಿನಾಂಕದಿಂದ ಏಳು (7) ವರ್ಷಗಳಿಗಿಂತ ಹೆಚ್ಚು ವಯಸ್ಸಿನ ಅಪರಾಧಗಳನ್ನು ಸೇರಿಸಬೇಡಿ, ಅಂದರೆ ಏಳು ವರ್ಷಗಳ ಅವಧಿಯ ಲೆಕ್ಕಾಚಾರದಲ್ಲಿ ನೀವು <strong>ಯಾವುದೇ</strong> ಸೆರೆವಾಸದ ಅವಧಿಯನ್ನು ಸೇರಿಸಬಾರದು_.  ನಿರ್ಣಯಿಸಲ್ಪಟ್ಟಿರುವ ದಿನಾಂಕದಿಂದ ಅಪರಾಧಗಳು ಅಥವಾ ಘೋರ ಕೃತ್ಯಗಳನ್ನು ಒಳಗೊಂಡಿಲ್ಲ, ಉದಾಹರಣೆಗೆ ಉಲ್ಲಂಘನೆಗಳು ಅಥವಾ ಅಪರಾಧಗಳು ಅಥವಾ ನಡವಳಿಕೆಗೆ ಸಂಬಂಧಿಸಿದ ಅಪರಾಧ ನಿರ್ಣಯಗಳನ್ನು ಒಳಗೊಂಡಿಲ್ಲ, ಗಾಂಜಾ ಅಪರಾಧಗಳ ಸಹಿತ ಆದರೆ ಇಷ್ಟಕ್ಕೇ ಸೀಮಿತವಾಗಿಲ್ಲ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>ಕೊಲೊರಾಡೋ:</strong> ದಾಖಲೆಯು ತಪ್ಪಿತಸ್ಥರ ಮನವಿ ಅಥವಾ ಸಮರ್ಥ ನ್ಯಾಯವ್ಯಾಪ್ತಿಯ ನ್ಯಾಯಾಲಯವು ಶಿಕ್ಷೆಗೆ ಕಾರಣವಾಗದ ಹೊರತು ನಾಗರಿಕ ಅಥವಾ ಮಿಲಿಟರಿ ಅಸಹಕಾರತೆಯ ದಾಖಲೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಡಿ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>ಮ್ಯಾಸಚೂಸೆಟ್ಸ್:</strong> ನಿಮ್ಮ ಅಪರಾಧ ಇತಿಹಾಸ ವರದಿಯ ನಕಲನ್ನು ನೀಡಬೇಡಿ.  ಕುಡಿತ, ಹಲ್ಲೆ, ವೇಗವಾಗಿ ವಾಹನ ಚಲಾಯಿಸುವುದು, ಸಂಚಾರ ಉಲ್ಲಂಘನೆ, ಶಾಂತಿ ಭಂಗ ಅಥವಾ ಅಡಚಣೆಗಳನ್ನು ಮೊದಲ ಬಾರಿಯ ಅಪರಾಧ ನಿರ್ಣಯಗಳೊಂದಿಗೆ ಗುರುತಿಸಬೇಡಿ. ಅಪರಾಧ ನಿರ್ಣಯದ ದಿನಾಂಕ ಅಥವಾ ಯಾವುದೇ ಅವಧಿಯ ಸೆರೆವಾಸದ ಅಂತ್ಯವು 3 ವರ್ಷಗಳ ಹಿಂದಿನದ್ದಾಗಿದ್ದಲ್ಲಿ, ಆ 3 ವರ್ಷಗಳಲ್ಲಿ ಅನುಕ್ರಮ ಅಪರಾಧ ನಿರ್ಣಯಗಳು ಇಲ್ಲದಿದ್ದರೆ, ಇತರ ದುಷ್ಕೃತ್ಯಗಳಿಗೆ ಅಪರಾಧ ನಿರ್ಣಯಗಳನ್ನು ಗುರುತಿಸಬೇಡಿ. ವಿಭಾಗ 100F, ವಿಭಾಗ 100G, ವಿಭಾಗ 100H ಅಥವಾ ಸಾಮಾನ್ಯ ಕಾನೂನುಗಳ 100K ಅಧ್ಯಾಯದ 276 ಗೆ ಅನುಸಾರವಾಗಿ ತೆಗೆದು ಹಾಕಲಾದ ದಾಖಲೆಯೊಂದಿಗೆ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅರ್ಜಿದಾರನು ಹಿಂದಿನ ಬಂಧನಗಳು, ಕ್ರಿಮಿನಲ್ ನ್ಯಾಯಾಲಯದ ಹಾಜರಾತಿಗಳು ಅಥವಾ ಅಪರಾಧ ನಿರ್ಣಯಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಇಲ್ಲಿ ವಿಚಾರಣೆಗೆ ಸಂಬಂಧಿಸಿದ 'ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ' ಎಂದು ಉತ್ತರಿಸಬಹುದು. ವಿಭಾಗ 100F, ವಿಭಾಗ 100G, ವಿಭಾಗ 100H ಅಥವಾ ಸಾಮಾನ್ಯ ಕಾನೂನುಗಳ 100K ಅಧ್ಯಾಯದ 276 ಗೆ ಅನುಸಾರವಾಗಿ ತೆಗೆದು ಹಾಕಲಾದ ದಾಖಲೆಯೊಂದಿಗೆ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅರ್ಜಿದಾರನು ಹಿಂದಿನ ಬಂಧನಗಳು, ಕ್ರಿಮಿನಲ್ ನ್ಯಾಯಾಲಯದ ಹಾಜರಾತಿಗಳು, ಬಾಲಾಪರಾಧಿ ನ್ಯಾಯಾಲಯದ ಹಾಜರಾತಿಗಳು, ತೀರ್ಪುಗಳು ಅಥವಾ ಅಪರಾಧ ನಿರ್ಣಯಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಇಲ್ಲಿ ವಿಚಾರಣೆಗೆ ಸಂಬಂಧಿಸಿದ 'ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ' ಎಂದು ಉತ್ತರಿಸಬಹುದು.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>ನ್ಯೂಯಾರ್ಕ್:</strong> ಕ್ರಿಮಿನಲ್ ಪ್ರೊಸೀಜರ್ ಕಾನೂನು (\"CPL\") §160.50 ಗೆ ಅನುಗುಣವಾಗಿ ನಿಮ್ಮ ಪರವಾಗಿ ಕೊನೆಗೊಂಡ ಯಾವುದೇ ಕ್ರಮಗಳನ್ನು ಗುರುತಿಸಬೇಡಿ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ಓಹಿಯೋ:</strong> ಓಹಿಯೋ ರೆವ್. ಕೋಡ್ 2925.11 ರ ಅಡಿಯಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಲಾದ ಮಾದಕವಸ್ತು ಉಲ್ಲಂಘನೆ ಅಪರಾಧಕ್ಕಾಗಿ ಯಾವುದೇ ಅಪರಾಧ ನಿರ್ಣಯವನ್ನು ವರದಿ ಮಾಡಬೇಡಿ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ಫಿಲಡೆಲ್ಫಿಯಾ, ಪೆನ್ಸಿಲ್ವೇನಿಯಾ:</strong> ಈ ವಿಚಾರಣೆಯ ದಿನಾಂಕದಿಂದ ಏಳು (7) ವರ್ಷಗಳಿಗಿಂತ ಹೆಚ್ಚು ಹಳೆಯದಾದ ಅಪರಾಧಗಳನ್ನು ಸೇರಿಸಬೇಡಿ.  <strong>ಏಳು ವರ್ಷಗಳ ಅವಧಿಯ ಲೆಕ್ಕಾಚಾರದಲ್ಲಿ ಸೆರೆವಾಸದ ಯಾವುದೇ ಅವಧಿಯನ್ನು ಸೇರಿಸಬಾರದು.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>ವರ್ಜೀನಿಯಾ:</strong> ವರ್ಜೀನಿಯಾ ಸಂಹಿತೆಯ ವಿಭಾಗ 18.2-250.1 ಅಡಿಯಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಿರುವ ಅಪರಾಧ ಮಾದಕವಸ್ತು ಸ್ವಾಧೀನ ಅಪರಾಧ ನಿರ್ಣಯವನ್ನು ವರದಿ ಮಾಡಬೇಡಿ.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>ಸಿಯಾಟಲ್, ವಾಷಿಂಗ್ಟನ್:</strong> ಕೆಳಗಿನವುಗಳ ಜೊತೆಗೆ, ಪುನರ್ವಸತಿ ಕಂಡುಹಿಡಿಯುವಿಕೆಯ ಆಧಾರದ ಮೇಲೆ ಪುನರ್ವಸತಿ ಪ್ರಮಾಣಪತ್ರ ಅಥವಾ ಇತರ ಸಮಾನ ಕಾರ್ಯವಿಧಾನದ ವಿಷಯವಾಗಿರುವ ಕ್ರಿಮಿನಲ್ ಅಪರಾಧ ನಿರ್ಣಯವನ್ನು ನೀವು ಹೊರಗಿಡಬಹುದು.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "ಕಳೆದ ಏಳು (7) ವರ್ಷಗಳಲ್ಲಿ, ನೀವು ಎಂದಾದರೂ ದುಷ್ಕೃತ್ಯ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಶಿಕ್ಷೆಗೊಳಗಾಗಿದ್ದೀರಾ ಅಥವಾ ಅಪರಾಧ ಅಥವಾ ಅಪರಾಧಕ್ಕಾಗಿ ಜೈಲಿನಿಂದ ಅಥವಾ ಪೆರೋಲ್‌ನಲ್ಲಿ ಬಿಡುಗಡೆ ಹೊಂದಿದ್ದೀರಾ?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -476,7 +524,7 @@
       "value" : "ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ Amazon ಸಂಸ್ಥೆಯು, ನನ್ನ ಹೆಚ್ಚಿನ ಅನುಮತಿಯಿಲ್ಲದೆಯೇ, (1) ನನ್ನ ಉದ್ಯೋಗದ ಸಮಯದಲ್ಲಿ, ಯಾವುದಾದರೂ ಇದ್ದರೆ, ಮತ್ತು (2) Accurate Background ಹೊರತುಪಡಿಸಿ CRA ಗಳಿಂದ ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳಿಗಾಗಿ ಆದೇಶಿಸಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪುತ್ತೇನೆ.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "ಉದ್ಯೋಗದ ಉದ್ದೇಶಗಳಿಗಾಗಿ, ಮತ್ತು ನನ್ನ ಮಾಹಿತಿಯ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸುವ ಎಲ್ಲಾ ಕಾನೂನುಗಳಿಗೆ ಅನುಸಾರವಾಗಿ, ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಳಿಗೆ ಅಗತ್ಯವಿರುವ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು CRA ಗೆ ಬಹಿರಂಗಪಡಿಸಲು ನಾನು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ: ನನ್ನ ಹಿಂದಿನ ಅಥವಾ ಪ್ರಸ್ತುತ ಉದ್ಯೋಗದಾತರು, ಶಾಲೆಗಳು, ಕಾನೂನು ಜಾರಿ ಮತ್ತು ಇತರ ಸರ್ಕಾರಿ ಏಜೆನ್ಸಿಗಳು, ಸೇರಿದಂತೆ ಮೋಟಾರು ವಾಹನ ರೆಕಾರ್ಡಿಂಗ್ ಏಜೆನ್ಸಿಗಳು.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -579,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "ಉದ್ಯೋಗದ ದಿನಾಂಕಗಳು - ಮೊದಲ/ಕೊನೆಯ (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "ದಯವಿಟ್ಟು ಉದ್ಯೋಗದ ಮಾನ್ಯ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "ನನ್ನ ಬಳಿ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ ಇಲ್ಲ",

@@ -392,6 +392,10 @@
       "value" : "Pregunta sobre condenas previas",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> No incluir delitos que tengan más de siete (7) años contados a partir de la fecha de la sentencia, de tal manera que no se incluya <strong>ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años.  No incluir delitos que no sean faltas o delitos graves, como infracciones, o condenas relacionadas con conductas que hayan sido despenalizadas desde la fecha de la condena, incluyendo pero no limitándose a los delitos de mariguana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por un delito menor o grave o has sido liberado de prisión o libertad condicional por una condena por delito menor o grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -476,7 +480,7 @@
       "value" : "Entiendo y acepto que, según lo permita la ley, Amazon puede pedir verificaciones de antecedentes míos adicionales para fines laborales, sin mi autorización adicional, (1) durante mi trabajo, si lo hubiera, y (2) de otra CRA que no sea Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo que se revele a la CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores anteriores o actuales, escuelas y fuerzas del orden y otras agencias gubernamentales, incluyendo agencias de registro de vehículos motorizados.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -579,6 +583,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de trabajo: desde/hasta (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Ingresa una fecha de empleo válida",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un número de seguro social",

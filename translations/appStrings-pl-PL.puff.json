@@ -480,7 +480,7 @@
       "value" : "Rozumiem i zgadzam się, że zgodnie z prawem Amazon może zlecić dodatkową weryfikację mojej przeszłości do celów zatrudnienia, bez mojej dodatkowej zgody, (1) w trakcie mojego zatrudnienia, jeśli takie okoliczności zaistnieją, oraz (2) od agencji ratingowych innych niż Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Do celów zatrudnienia i z zastrzeżeniem wszystkich przepisów chroniących moją prywatność informacyjną, upoważniam również następujące podmioty do ujawnienia agencji ratingowej wszelkich informacji potrzebnych do sprawdzenia przeszłości: moich poprzednich lub obecnych pracodawców, szkoły oraz organy ścigania i inne agencje rządowe, w tym agencje rejestrujące pojazdy mechaniczne.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -583,6 +583,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Daty zatrudnienia – Od/Do (MM/RR–MM/RR)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Wpisz prawidłową datę zatrudnienia",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Nie mam numeru ubezpieczenia społecznego",

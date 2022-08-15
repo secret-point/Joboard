@@ -476,7 +476,7 @@
       "value" : "Entiendo y acepto que, según lo permitido por la ley, Amazon puede solicitar verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si aplica, y (2) a otras CRA que no sean Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Para fines laborales, y sujeto a todas las leyes que protegen mi privacidad informativa, también autorizo a las siguientes personas a revelar a las CRA cualquier información necesaria para la verificación de antecedentes: mis empleadores pasados o actuales, escuelas, fuerzas de seguridad y otras agencias gubernamentales, incluidas las agencias de registros de vehículos de motor.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -579,6 +579,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Ingresa una fecha de empleo válida",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un Número de Seguro Social",

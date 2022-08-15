@@ -388,6 +388,14 @@
       "value" : "ধাপ {totalSteps} এর মধ্যে ধাপ {currentStep}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "পূর্ববর্তী রায়ের প্রশ্নসমূহ",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>সান ফ্রান্সিস্কো, ক্যালিফোর্নিয়া:</strong> শাস্তির তারিখ থেকে সাত (7) বছরের বেশি পুরানো অপরাধগুলি অন্তর্ভুক্ত করবেন না, যেমন আপনার সাত বছরের সময়কালের গণনায় <strong>কোনও</strong> কারাবাসের সময়কাল অন্তর্ভুক্ত করা উচিত নয়_।  এমন অপরাধগুলিকে অন্তর্ভুক্ত করবেন না যা অন্যায় বা অপরাধ নয়, যেমন লঙ্ঘন, বা আচার-আচরণ সম্পর্কিত অপরাধ যা দোষী সাব্যস্ত হওয়ার তারিখ থেকে অপরাধমুক্ত করা হয়েছে, যার মধ্যে মারিজুয়ানা সম্পর্কিত অপরাধ অন্তর্ভুক্ত কিন্তু এতেই সীমাবদ্ধ নয়।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "আপনি কি গত সাত (7) বছরে অপকর্ম বা অপরাধের জন্য দোষী সাব্যস্ত হয়েছেন বা এর জন্য জেল বা প্যারোলে মুক্তি পেয়েছেন?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -472,7 +480,7 @@
       "value" : "আমি বুঝেছি এবং সম্মত হচ্ছি যে আইন দ্বারা অনুমোদিত হিসাবে Amazon পরবর্তীতে আমার অনুমোদন ছাড়াই চাকরি সম্পর্কিত কাজে, (1) আমার চাকরির সময়, যদি থাকে, এবং (2) Accurate Background ছাড়া অন্য CRA থেকে আমার সম্পর্কে অতিরিক্ত ব্যাকগ্রাউন্ড চেকের অর্ডার করতে পারবে।",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "চাকরির উদ্দেশ্যে, এবং আমার তথ্যগত গোপনীয়তা রক্ষাকারী সমস্ত আইনের সাপেক্ষে, ব্যাকগ্রাউন্ড চেক করার জন্য প্রয়োজনীয় যেকোন তথ্য CRA-এর কাছে প্রকাশ করার জন্য আমি নিম্নলিখিতগুলিকে অনুমোদন দিচ্ছি: আমার অতীত বা বর্তমান নিয়োগকর্তা, স্কুল, এবং আইন প্রয়োগকারী এবং অন্যান্য সরকারী সংস্থা যেমন মোটর সহ যানবাহন রেকর্ড সংস্থা।",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -575,6 +583,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "চাকরির মেয়াদ - থেকে/পর্যন্ত (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "অনুগ্রহ করে কর্মসংস্থানের একটি সঠিক তারিখ লিখুন",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "আমার কোনও সোশ্যাল সিকিউরিটি নাম্বার নেই",

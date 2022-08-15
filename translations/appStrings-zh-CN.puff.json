@@ -388,6 +388,58 @@
       "value" : "第 {currentStep} 步，共 {totalSteps} 步",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "先前的定罪问题",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>请仅列出有公开记录的定罪记录。</strong>  曾被捕但结果对您有利则不属于定罪。同样，不包含与青少年司法系统中的定罪、或通过青少年司法系统考虑或处理的事项、或导致司法分流的指控或被驳回的案件、根据初犯的法律被驳回、封存、消除、赦免、司法驳回或其他被视为未定罪有关的任何信息。 <strong>您也无需披露不雅行为、违规行为、轻微罪或简易治罪条例的定罪。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "犯罪记录并不一定会阻止您就业、继续就业或作为独立承包商受聘于亚马逊。 这些信息将仅根据适用的法律使用，并且仅用于确定定罪是否与您申请的职位/聘用有关。 如果不诚实地回答这个问题或不提供所要求的犯罪行为的其他详情，可能会导致停止考虑您的就业或聘用为独立承包商的申请，或者如果您已经受雇于亚马逊和/或受聘为亚马逊独立承包商，此类犯错可能会导致终止您的雇佣关系或聘用关系。",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "在提供有关您的犯罪记录的其他信息之前，您必须查看以下州法律信息",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>加利福尼亚州：</strong> 请勿包含与大麻有关的非重罪违法行为或超过 2 年的轻罪定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>加利福尼亚州旧金山：</strong> 不包括自判刑之日起超过七（7）年的犯罪, 因此，在计算七年期间时，不应包括<strong>任何</strong>监禁期。 不包括非轻罪或重罪的犯罪，例如违法行为，或与自定罪之日起非刑事行为相关的定罪，包括但不限于大麻犯罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>科罗拉多州：</strong> 请勿包含有关违反民事或军事的记录信息，除非该记录导致具有法定管辖权的法院认罪答辩或定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>马萨诸塞州：</strong> 请勿提供犯罪记录报告的副本。 请勿表明因醉酒、一般伤害罪、超速驾驶、轻微交通违法、闹事或扰乱治安而首次被定罪的轻罪。另外，请勿表明定罪日期或任何监禁期限的结束时间超过 3 年以前的其他轻罪定罪，除非在这 3 年内有后续定罪。根据《普通法》第 100F 条、第 100G 条、第 100H 条或第 276 章第 100K 条，已消除记录的求职申请人可以就此处有关先前逮捕、刑事法庭出庭或定罪的调查回答“无记录”。根据《普通法》第 100F 条、第 100G 条、第 100H 条或第 276 章第 100K 条，已消除记录的求职申请人可以就此处有关先前逮捕、刑事法庭出庭、青少年法庭出庭、裁决或定罪的调查回答“无记录”。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>纽约州：</strong> 请勿表明任何根据《刑事诉讼法》（“CPL”）§160.50 终止的有利于您的诉讼。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>俄亥俄州：</strong> 请勿报告俄亥俄州修订法典 2925.11 所定义的任何违反毒品的轻罪定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>宾夕法尼亚州费城：</strong> 请勿包含自此调查之日起发生超过七（7）年以前的任何定罪。 <strong>任何监禁期都不应计入七年期限内。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>弗吉尼亚州：</strong> 请勿报告根据《弗吉尼亚法典》第 18.2-250.1 条所定义持有毒品的轻罪定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>华盛顿州西雅图：</strong> 除以下情况外，您还可以根据改过自新的调查结果，排除已获得改过自新证明或其他同等程序的刑事定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "在过去的七（7）年中，您是否被判轻罪或重罪，或者因轻罪或重罪判刑而被释放出狱或假释？",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "无",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "包含哪些信息",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "提供城市、国家/地区、定罪情况、犯罪的性质与日期以及量刑相关信息",
@@ -468,7 +524,7 @@
       "value" : "本人理解并同意，在法律允许的情况下，亚马逊可以出于雇用目的（1）在本人受雇期间（如适用），以及（2）由 Accurate Background 以外的其他 CRA 机构按要求对本人进行以下额外的背景调查，无需本人的进一步授权。",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "出于雇用目的，在遵守保护本人个人信息隐私的所有法律的前提下，本人还授权以下各方向 CRA 公开背景调查所需的信息：本人过去或现在的雇主、学校、执法部门和其他政府机构，包括机动车信息管理机构。",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "受雇日期 - 自/至（月/年 - 月/年）",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "请输入有效的入职日期",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "本人没有社会保障号",

@@ -388,6 +388,10 @@
       "value" : "Paso {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pregunta sobre condenas anteriores",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por delito menor o delito grave o has sido liberado de prisión o de libertad condicional por una condena por delito menor o delito grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Qué información incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Proporcionar ciudad, país, estado de la condena, fecha, naturaleza del delito e información acerca de la sentencia",
@@ -468,7 +476,7 @@
       "value" : "Entiendo y acepto que, según lo permita la ley, Amazon puede ordenar verificaciones adicionales de mis antecedentes para fines laborales, sin mi autorización adicional, (1) durante mi empleo, si lo hubiera, y (2) de las CRA que no sean Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Para fines laborales, y sujeto a todas las leyes que protegen la privacidad de mi información, también autorizo a los siguientes que revelen a las CRA cualquier información necesaria para la verificación de mis antecedentes: mis empleadores pasados o presentes, escuelas, organismos de seguridad y otras agencias gubernamentales, incluyendo agencias de registro de vehículos motorizados.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +579,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Fechas de empleo - Desde/hasta (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Ingresa una fecha válida de empleo",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un Número de Seguridad Social",

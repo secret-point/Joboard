@@ -392,6 +392,50 @@
       "value" : "前回の有罪判決に関する質問",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>公的記録の問題である有罪判決のみを挙げてください。</strong>  あなたにとって有利に解決された逮捕は有罪判決ではありません。同様に、少年司法制度における有罪判決に関する情報、または少年司法制度で検討や処理された問題、または戒告処分や不起訴処分につながった事件、初犯禁止法に基づき却下された、封印、抹消、赦免された、司法的に却下された、または法律によって非有罪として扱われる含めないでください。 <strong>また、違反、反則、軽犯罪または略式違反を開示する必要もありません。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "犯罪歴があっても、必ずしも雇用、継続雇用、または独立請負業者としてのAmazonとの契約が禁止されるわけではありません。 この情報は、適用法に従ってのみ使用され、有罪判決が応募した職務/雇用契約に関連しているかどうかを判断する目的でのみ使用されます。 この質問に正直に回答しなかったり、要求された違反の詳細を提供しなかったりすると、雇用または独立請負業者の関与の申請の検討が中止される可能性があります。または、すでに独立請負業者によって雇用されているか、独立請負業者としてAmazonに従事している場合、そのような失敗は、あなたの雇用または契約の終了につながる可能性があります。",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "犯罪歴に関する追加情報を提供する前に、以下の州法情報を確認する必要があります",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>カリフォルニア州:</strong> 2年以上経過した非重罪マリファナ関連の違反行為または軽罪の有罪判決は含めないでください。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>コロラド州:</strong> 民事または軍事的不服従の記録に関する情報を含めないでください。ただし、その記録が有罪の嘆願または管轄裁判所による有罪判決につながった場合を除きます。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>マサチューセッツ州:</strong> 犯罪歴報告書のコピーは提供しないでください。 酩酊、単純暴行、スピード違反、軽度交通違反、乱闘、平和を乱す行為に対する初犯の軽犯罪の有罪判決は特定しないでください。また、有罪判決の日付または投獄期間の終了が3年以上前であった他の軽犯罪の有罪判決は特定しないでください。ただし、3年以内にその後の有罪判決があった場合を除きます。一般法第276章のセクション100F、セクション100G、セクション100H、またはセクション100Kに従って抹消された記録を持つ雇用申請者は、以前の逮捕、刑事裁判所の出頭または有罪判決に関する本書の照会に関して「記録なし」と回答することができます。一般法の第276章のセクション100F、セクション100G、セクション100Hまたはセクション100Kに従って抹消された記録を持つ雇用申請者は、以前の逮捕、刑事裁判所、少年裁判所の出頭または最終判決、有罪判決に関する本書の紹介に関して「記録なし」と回答することができます。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>ニューヨーク州:</strong> 刑事訴訟法(「CPL」)§160.50に従ってあなたに有利な形で終了した訴訟は特定しないでください。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>オハイオ州:</strong> オハイオ州改訂コード2925.11で定義されている軽犯罪の薬物違反の有罪判決は報告しないでください。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ペンシルベニア州フィラデルフィア:</strong> この調査日から7年以上経過した有罪判決は含めないでください。 <strong>7年の期間の計算には、いかなる投獄期間も含めるべきではありません。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>バージニア州:</strong> バージニア州法のセクション18.2-250.1で定義されている軽犯罪の薬物所持の有罪判決は報告しないでください。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>ワシントン州シアトル:</strong> 以下に加えて、リハビリテーションの証明書またはリハビリの所見に基づく他の同等の手続きの対象となった刑事上の有罪判決を除外することができます。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "過去7年間に軽罪または重罪で有罪判決を受けたり、軽犯罪または重罪の有罪判決から刑務所または仮釈放されたりしましたか?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -476,7 +520,7 @@
       "value" : "私は、法律で認められているとおり、Amazonが、私のさらなる許可なしに、(1)雇用中(ある場合)および(2)Accurate Background以外のCRAから、雇用目的で私に関する追加の身元調査を注文できることを理解し、同意します。",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "雇用目的のため、および私の情報プライバシーを保護するすべての法律に従って、私はまた、身元調査に必要な情報をCRAに開示することを許可します: 私の過去または現在の雇用主、学校、法執行機関、および自動車記録を含む他の政府機関代理店。",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },

@@ -408,6 +408,10 @@
       "value" : "<strong>California:</strong> Non includere le infrazioni non criminali legate alla marijuana o le condanne per reati minori risalenti a più di due anni fa.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> Non includere reati avvenuti oltre sette (7) anni prima rispetto alla data della condanna, in modo tale da non includere <strong>alcun</strong> periodo di incarcerazione nel calcolo del periodo di sette anni.  Non includere illeciti che non siano reati minori o reati, come infrazioni, o condanne relative a comportamenti che sono stati depenalizzati dalla data della condanna, inclusi ma non limitato ai reati relativi alla marijuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>Colorado:</strong> Non includere informazioni relative a un record di disobbedienza civile o militare, a meno che la documentazione non abbia portato a una dichiarazione di colpevolezza o a una condanna da parte di un tribunale della giurisdizione competente.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -520,7 +524,7 @@
       "value" : "Sottintendo e accetto che, come consentito dalla legge, Amazon può ordinare ulteriori controlli dei precedenti su di me a fini occupazionali, senza la mia ulteriore autorizzazione, (1) durante il mio eventuale impiego e (2) da agenzie di rating diverse da Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Ai fini dell'assunzione, e nel rispetto di tutte le leggi che tutelano la privacy delle mie informazioni, autorizzo inoltre i seguenti soggetti a divulgare alle agenzie di rating qualsiasi informazione necessaria per il controllo dei miei precedenti: i miei datori di lavoro passati o presenti, le scuole, le forze dell'ordine e altre agenzie governative, comprese le agenzie di registrazione dei veicoli a motore.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -623,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Date di impiego - da/a (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Inserisci una data di assunzione valida",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Non ho un numero di previdenza sociale",

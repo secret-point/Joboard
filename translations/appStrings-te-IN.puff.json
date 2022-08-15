@@ -392,6 +392,54 @@
       "value" : "మునుపటి విశ్వాస ప్రశ్న",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>దయచేసి పబ్లిక్ రికార్డ్‌కు సంబంధించిన నేరారోపణలను మాత్రమే జాబితా చేయండి.</strong>  మీకు అనుకూలంగా పరిష్కరించబడిన అరెస్టులు నేరారోపణలు కావు. అదేవిధంగా, బాల్య న్యాయ వ్యవస్థలో ఒక నేరారోపణకు సంబంధించిన ఏదైనా సమాచారం, లేదా బాల్య న్యాయ వ్యవస్థలో పరిగణనలోకి తీసుకోబడ్డ లేదా ప్రాసెస్ చేయబడ్డ విషయం, లేదా మళ్లింపు కార్యక్రమానికి దారితీసిన అభియోగాలు లేదా కొట్టివేయబడిన కేసులు, మొదటి అపరాధి చట్టం కింద తొలగించబడిన, సీలు, బహిష్కరించబడిన, క్షమాభిక్ష, న్యాయపరంగా కొట్టివేయబడింది లేదా చట్టం ప్రకారం నేరారోపణలు కాని కేసులకు సంబంధించిన ఏదైనా సమాచారాన్ని చేర్చవద్దు.  <strong>మీరు ఉల్లంఘనలు, అతిక్రమణలు‌, చిన్న దుర్వినియోగం లేదా సారాంశ నేరాలను వెల్లడించాల్సిన అవసరం లేదు.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "ఒక క్రిమినల్ రికార్డ్ తప్పనిసరిగా ఉద్యోగం, నిరంతర ఉపాధి లేదా Amazon‌తో స్వతంత్ర కాంట్రాక్టర్‌గా ఉంచడం నుండి మిమ్మల్ని నిరోధించదు.  ఈ సమాచారం వర్తించే చట్టానికి అనుగుణంగా మాత్రమే ఉపయోగించబడుతుంది మరియు మీరు దరఖాస్తు చేసుకున్న ఉద్యోగం/ఎంగేజ్‌మెంట్‌కి సంబంధించిన నేరాన్ని నిర్ధారించే ఉద్దేశ్యంతో మాత్రమే ఉపయోగించబడుతుంది.  ఈ ప్రశ్నకు నిజాయితీగా సమాధానం ఇవ్వడంలో లేదా నేరం(లు) యొక్క అభ్యర్థించబడ్డ అదనపు వివరాలను అందించడంలో విఫలం కావడం ఫలితంగా, ఉద్యోగం కొరకు లేదా ఒక స్వతంత్ర కాంట్రాక్టర్ ఎంగేజ్‌మెంట్‌ కొరకు మీ అప్లికేషన్ యొక్క పరిగణనను నిలిపివేయవచ్చు లేదా, ఒకవేళ మీరు ఇప్పటికే Amazonతో స్వతంత్ర కాంట్రాక్టర్‌గా పనిచేస్తున్నట్లయితే, అటువంటి వైఫల్యం ఫలితంగా మీ ఉద్యోగం లేదా ఎంగేజ్‌మెంట్‌ రద్దు కావొచ్చు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "మీ నేర చరిత్ర గురించి అదనపు సమాచారాన్ని అందించే ముందు మీరు తప్పనిసరిగా దిగువన ఉన్న రాష్ట్ర చట్ట సమాచారాన్ని సమీక్షించాలి",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>కాలిఫోర్నియా:</strong> నేరం కాని గంజాయి సంబంధిత ఉల్లంఘనలను లేదా 2 సంవత్సరాల కంటే ఎక్కువ వయస్సు ఉన్న దుష్ప్రవర్తన నేరారోపణలను చేర్చవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>శాన్ ఫ్రాన్సిస్కో, కాలిఫోర్నియా:</strong> శిక్ష విధించిన తేదీ నుండి ఏడు (7) సంవత్సరాల కంటే ఎక్కువ వయస్సు ఉన్న నేరాలను చేర్చవద్దు, అంటే మీరు ఏడేళ్ల వ్యవధి యొక్క గణనలో <strong>ఎలాంటి</strong> నిర్బంధ కాలాన్ని చేర్చకూడదు_.  గంజాయి నేరాలకు మాత్రమే పరిమితం కాకుండా, ఉల్లంఘనలు లేదా నేరారోపణ తేదీ నుండి నేరరహితం చేయబడిన ప్రవర్తనకు సంబంధించిన నేరారోపణలు వంటి దుష్ప్రవర్తనలు లేదా నేరాలు లేని నేరాలను చేర్చవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>కొలరాడో:</strong> రికార్డు ఫలితంగా నేరారోపణ లేదా సమర్థ న్యాయస్థానం ద్వారా నేరం రుజువైతే తప్ప, సివిల్ లేదా మిలిటరీ అవిధేయత రికార్డుకు సంబంధించిన సమాచారాన్ని చేర్చవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>మసాచుసెట్స్:</strong> మీ నేర చరిత్ర నివేదిక కాపీని అందించవద్దు.  తాగుబోతుతనం, సాధారణ దాడి, అతివేగం, చిన్నపాటి ట్రాఫిక్ ఉల్లంఘనలు, గొడవలు లేదా శాంతిభద్రతలకు భంగం కలిగించినందుకు మొదటిసారిగా నేరారోపణలను గుర్తించవద్దు. అలాగే, ఆ 3 సంవత్సరాలలోపు తదుపరి నేరారోపణలు ఉంటే తప్ప, 3 సంవత్సరాల క్రితం దోషిగా నిర్ధారించబడిన తేదీ లేదా ఏదైనా ఖైదు కాలం ముగిసిన తేదీ కంటే ఎక్కువగా ఉన్న ఇతర దుష్ప్రవర్తనలకు సంబంధించిన నేరారోపణలను కూడా గుర్తించవద్దు. సాధారణ చట్టాల 276వ అధ్యాయం యొక్క సెక్షన్ 100F, సెక్షన్ 100G, సెక్షన్ 100H లేదా సెక్షన్ 100Kకు అనుగుణంగా తొలగించబడ్డ రికార్డుతో ఉద్యోగం కొరకు దరఖాస్తుదారు ముందస్తు అరెస్టులు, క్రిమినల్ కోర్టు హాజరులు లేదా నేరారోపణలకు సంబంధించి ఇక్కడ విచారణకు సంబంధించి 'రికార్డు లేదు' అని సమాధానం ఇవ్వవచ్చు. సాధారణ చట్టాల 276వ అధ్యాయం యొక్క సెక్షన్ 100F, సెక్షన్ 100G, సెక్షన్ 100H లేదా సెక్షన్ 100Kకు అనుగుణంగా తొలగించబడ్డ రికార్డుతో ఉద్యోగం కొరకు దరఖాస్తుదారు ముందస్తు అరెస్టులు, క్రిమినల్ కోర్టు హాజరులు, బాల న్యాయస్థానం\nహాజరులు, తీర్పులు లేదా నేరారోపణలకు సంబంధించి ఇక్కడ విచారణకు 'రికార్డు లేదు' అని సమాధానం ఇవ్వవచ్చు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>న్యూయార్క్:</strong> క్రిమినల్ ప్రొసీజర్ లా (\"CPL\") §160.50 ప్రకారం మీకు అనుకూలంగా రద్దు చేయబడిన ఏ చర్యలను గుర్తించవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ఒహాయో:</strong> ఒహాయో రెవెన్యూ కోడ్ 2925.11 ప్రకారం నిర్వచించిన విధంగా ఒక దుష్ప్రవర్తన మాదకద్రవ్యాల ఉల్లంఘన కోసం ఎటువంటి నేరారోపణను నివేదించవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ఫిలడెల్ఫియా, పెన్సిల్వేనియా:</strong> ఈ విచారణ తేదీ నుండి ఏడు (7) సంవత్సరాల కంటే ఎక్కువ జరిగిన నేరారోపణలను చేర్చవద్దు.  <strong>ఏడేళ్ల కాలానికి సంబంధించిన గణనలో నిర్బంధ కాలాన్ని చేర్చకూడదు.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>వర్జీనియా:</strong> వర్జీనియా కోడ్ సెక్షన్ 18.2-250.1 కింద నిర్వచించిన విధంగా, మాదకద్రవ్యాల స్వాధీనం నేరాన్ని నివేదించవద్దు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>సియాటిల్, వాషింగ్టన్:</strong> క్రింద ఉన్న వాటికి అదనంగా, మీరు పునరావాసం యొక్క సర్టిఫికేట్ లేదా పునరావాసం యొక్క అన్వేషణ ఆధారంగా ఇతర సమానమైన ప్రక్రియకు సంబంధించిన నేరారోపణను మినహాయించవచ్చు.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "మీరు గత ఏడు (7) సంవత్సరాలలో దుష్ప్రవర్తన లేదా నేరారోపణకు పాల్పడినట్లు నిర్ధారించబడ్డారా లేదా జైలు లేదా పెరోల్ నుండి విముక్తి పొందారా?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -476,7 +524,7 @@
       "value" : "చట్టం ద్వారా అనుమతించబడినట్లుగా, నా తదుపరి అనుమతి లేకుండా, (1) నా ఉద్యోగ సమయంలో, ఏదైనా ఉంటే మరియు (2) ఖచ్చితమైన నేపథ్యం కాకుండా ఇతర CRAల నుండి ఉద్యోగ ప్రయోజనాల కోసం Amazon నా గురించి అదనపు నేపథ్య తనిఖీలను ఆర్డర్ చేయగలదని నేను అర్థం చేసుకున్నాను మరియు అంగీకరిస్తున్నాను.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "ఉపాధి ప్రయోజనాల కోసం మరియు నా సమాచార గోప్యతను రక్షించే అన్ని చట్టాలకు లోబడి, నేపథ్య తనిఖీ కోసం అవసరమైన ఏదైనా సమాచారాన్ని CRAలకు బహిర్గతం చేయడానికి నేను క్రింది వాటికి అధికారం ఇస్తున్నాను: నా గత లేదా ప్రస్తుత యజమానులు, పాఠశాలలు మరియు చట్టాన్ని అమలు చేసేవారు మరియు మోటారు వాహనాల రికార్డు ఏజెన్సీలతో సహా ఇతర ప్రభుత్వ సంస్థలు.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -579,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "ఉద్యోగ తేదీలు - నుండి/వరకు (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "దయచేసి ఉద్యోగం యొక్క చెల్లుబాటు అయ్యే తేదీని ఎంటర్ చేయండి",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "నాకు సోషల్ సెక్యూరిటీ నంబర్ లేదు",

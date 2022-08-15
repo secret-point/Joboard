@@ -404,6 +404,10 @@
       "value" : "<strong>California:</strong> Vermeld geen overtredingen (‘infractions’) gerelateerd aan marihuana die niet als misdrijf zijn aangemerkt of veroordelingen voor overtredingen (‘misdemeanors’) op die meer dan 2 jaar oud zijn.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Californië:</strong> Reken geen strafbare feiten mee die ouder zijn dan zeven (7) jaar vanaf de datum van de veroordeling, zodat je bij de berekening van de periode van zeven jaar <strong>geen</strong> periode van hechtenis moet meetellen.  Reken geen strafbare feiten mee die geen misdrijven zijn zoals overtredingen, of veroordelingen in verband met gedrag dat sinds de datum van de veroordeling gedecriminaliseerd zijn, met inbegrip van maar niet beperkt tot marihuana-overtredingen.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>Colorado:</strong> Voeg geen informatie toe over een strafblad wegens burgerlijke of militaire ongehoorzaamheid, tenzij je in die zaak schuldig hebt gepleit of bent veroordeeld door een bevoegde rechtbank.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -443,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nee",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Welke informatie moet worden opgenomen",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Geef stad, land, staat van veroordeling, datum, aard van het misdrijf, samen met informatie over de veroordeling",
@@ -512,7 +520,7 @@
       "value" : "Ik begrijp en ga ermee akkoord dat Amazon, zoals wettelijk is toegestaan, aanvullende antecedentenonderzoeken over mij kan aanvragen voor arbeidsdoeleinden, zonder mijn verdere toestemming, (1) tijdens mijn dienstverband, indien van toepassing, en (2) bij andere ratingbureaus dan Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Voor arbeidsdoeleinden, en onderworpen aan alle wetten die mijn informatieprivacy beschermen, geef ik ook het volgende toestemming om aan de ratingbureaus alle informatie bekend te maken die nodig is voor de antecedentenonderzoek: mijn vroegere of huidige werkgevers, scholen en wetshandhavers en andere overheidsinstanties, inclusief kentekenbureau‘s.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -615,6 +623,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Data van indiensttreding - Van/Tot (MM/JJ - MM/JJ)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Voer een geldige datum van tewerkstelling in",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Ik heb geen Social Security Number",

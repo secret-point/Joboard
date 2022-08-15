@@ -388,6 +388,10 @@
       "value" : "Adım {currentStep}/{totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Önceki Mahkumiyetler Sorusu",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Son yedi (7) yıl içinde kabahat veya ağır suçtan hüküm giydiniz mi veya bir kabahat veya ağır suçtan hüküm giydikten sonra hapisten veya şartlı tahliyeyle serbest bırakıldınız mı?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -472,7 +476,7 @@
       "value" : "Amazon'un, yasaların izin verdiği şekilde, daha fazla yetkim olmaksızın, (1) varsa istihdamım sırasında ve (2) Accurate Background dışındaki CRA'lardan istihdam amacıyla benim hakkımda ek özgeçmiş kontrolleri sipariş edebileceğini anlıyor ve kabul ediyorum.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "İstihdam amacıyla ve bilgi gizliliğimi koruyan tüm yasalara tabi olarak, geçmiş kontrolü için gereken her türlü bilgiyi CRA'lara ifşa etmek için aşağıdakilere de yetki veriyorum: geçmiş veya şimdiki işverenlerim, okullar ve kolluk kuvvetleri ve motorlu taşıt kayıt kurumları dahil diğer devlet kurumları.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },

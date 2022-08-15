@@ -388,6 +388,50 @@
       "value" : "Krok {currentStep} z {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Uveďte pouze odsouzení, která jsou ve veřejně přístupných záznamech.</strong>  Zatčení rozhodnutá ve Váš prospěch nepředstavují odsouzení. Stejně tak neuvádějte žádné informace týkající se odsouzení v soudním systému pro mladistvé nebo záležitost posuzovanou či zpracovanou prostřednictvím soudního systému pro mladistvé anebo obvinění, která vedla k nápravnému programu, či případy, které byly zamítnuty, zamítnuty podle zákona prvně trestaného pachatele, uzavřeny, vymazány, odpuštěny, soudně zamítnuty nebo jinak zákonem považovány jako případy bez uznání viny.  <strong>Rovněž nejste povinni zveřejňovat přestupky, nedodržení zákona, drobná provinění nebo méně závažné činy.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Záznam v trestním rejstříku Vám nemusí nutně bránit v zaměstnání, pokračování v zaměstnání nebo v zapojení jako nezávislý dodavatel u společnosti Amazon.  Tyto informace budou použity pouze v souladu s platnými právními předpisy a pouze za účelem určení, zda odsouzení souvisí s prací nebo smlouvou, o kterou se ucházíte.  Neschopnost odpovědět čestně na tuto otázku nebo poskytnout požadované další podrobnosti o přestupku může mít za následek ukončení posuzování Vaší žádosti o zaměstnání nebo zapojení jako nezávislého dodavatele, a pokud jste již zaměstnáni a/nebo jste zaměstnáni jako nezávislý dodavatel u firmy Amazon, může takové selhání vést k ukončení pracovního poměru nebo smlouvy.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Před poskytnutím dalších informací o svých trestních záznamech si musíte přečíst níže uvedené informace státního práva",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Kalifornie:</strong> Neuvádějte odsouzení za přestupky nebo přestupky související s marihuanou, které nejsou trestné činy a jsou starší více než 2 roky.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Neuvádějte informace týkající se záznamu občanské nebo vojenské neposlušnosti, pokud záznam nevedl k přiznání viny nebo k odsouzení příslušným soudem.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Neposkytujte kopii své zprávy s trestními záznamy.  Neidentifikujte první usvědčení z přestupku za opilost, prostý útok, překročení rychlosti, drobné dopravní přestupky, výtržnosti nebo narušení pořádku. Rovněž neidentifikujte odsouzení z jiných přestupků, u nichž bylo datum odsouzení nebo konce jakékoli doby uvěznění před více než 3 lety, pokud po nich nenásledovala odsouzení v rámci těchto 3 let. Žadatel o zaměstnání se záznamem vymazaným podle oddílu 100F, oddílu 100G, oddílu 100H nebo oddílu 100K kapitoly 276 všeobecného zákona může odpovědět „žádný záznam“ s ohledem na otázku v tomto dokumentu týkající se dřívějších zatčení, vystoupení u trestního soudu nebo odsouzení. Žadatel o zaměstnání se záznamem vymazaným podle oddílu 100F, oddílu 100G, oddílu 100H nebo oddílu 100K kapitoly 276 všeobecného zákona může odpovědět „žádný záznam“ u otázky v tomto dokumentu týkající se dřívějších zatčení, vystoupení u trestního soudu nebo odsouzení.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Neidentifikujte žádné akce, které byly ukončeny ve Váš prospěch podle zákona o trestním řízení (dále jen CPL), oddílu 160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Nehlaste odsouzení za přestupek za porušení předpisů ohledně drog, jak je definováno v oddíle 2925.11 upraveného zákoníku státu Ohio.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadelfie, Pensylvánie:</strong> Neuvádějte žádná odsouzení, ke kterým došlo více než sedm (7) let od data tohoto průzkumu.  <strong>Do výpočtu sedmiletého období by nemělo být zahrnuto žádné období uvěznění.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginie:</strong> Nehlaste odsouzení za přestupek za držení drog, jak je definováno v oddíle 18.2-250.1 zákoníku státu Virginie.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Kromě níže uvedeného můžete vyloučit odsouzení za trestný čin, které bylo předmětem osvědčení o rehabilitaci nebo jiného rovnocenného postupu založeného na zjištění rehabilitace.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Byli jste v posledních sedmi (7) letech odsouzeni za přestupek nebo trestný čin nebo jste byli podmínečně propuštěni z výkonu trestu za přestupek nebo trestný čin?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -468,7 +512,7 @@
       "value" : "Beru na vědomí a souhlasím s tím, že společnost Amazon si může v souladu se zákonem objednat další prověrku k mé osobě pro účely zaměstnání bez mého dalšího souhlasu, a to (1) v průběhu mého případného zaměstnání a (2) u jiných CRA agentur než Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Pro účely zaměstnání a s výhradou všech zákonů chránících mé informační soukromí také opravňuji následující subjekty k tomu, aby zpřístupnily agenturám CRA veškeré informace potřebné pro prověrku: mé dřívější nebo současné zaměstnavatele, školy, policii a bezpečnostní složky a jiné vládní agentury, včetně úřadů pro evidenci motorových vozidel.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +615,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Data zaměstnání – od/do (MM/RR – MM/RR)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Zadejte prosím platné datum zaměstnání",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Nemám číslo sociálního pojištění",

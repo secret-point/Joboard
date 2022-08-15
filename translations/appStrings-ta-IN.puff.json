@@ -472,7 +472,7 @@
       "value" : "சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, Amazon என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை, எனது கூடுதல் அங்கீகாரம் இல்லாமல், (1) எனது பணிக்காலத்தின் போது ஏதேனும் இருந்தால், மற்றும் (2) Accurate தவிர வேறு CRAகளில் இருந்து என்னைப் பற்றிய கூடுதல் பின்னணிச் சோதனைகளை ஆர்டர் செய்யலாம் என்பதை நான் புரிந்துகொண்டு ஒப்புக்கொள்கிறேன்.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "வேலை நோக்கங்களுக்காகவும், எனது தகவல் தனியுரிமையைப் பாதுகாக்கும் அனைத்துச் சட்டங்களுக்கும் உட்பட்டு, பின்புலச் சரிபார்ப்பிற்குத் தேவையான எந்தத் தகவலையும் CRAக்களுக்கு வெளிப்படுத்த நான் பின்வருவனவற்றை அங்கீகரிக்கிறேன்: எனது கடந்தகால அல்லது தற்போதைய நிறுவனங்கள், பள்ளிகள், சட்ட அமலாக்க மற்றும் மோட்டார் உட்பட பிற அரசு நிறுவனங்கள் வாகன பதிவு ஏஜென்சிகள் ஆகியோர்.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -575,6 +575,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "வேலைவாய்ப்பு தேதிகள் - முதல்/வரை (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "சரியான வேலைவாய்ப்புத் தேதியை உள்ளிடவும்",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "என்னிடம் சமூகப் பாதுகாப்பு எண் இல்லை",

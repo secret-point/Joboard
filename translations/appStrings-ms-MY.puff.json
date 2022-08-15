@@ -388,6 +388,10 @@
       "value" : "Langkah {currentStep} daripada {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Soalan Sabitan Terdahulu",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, California:</strong> Jangan sertakan, kesalahan yang berusia lebih daripada tujuh (7) tahun dari tarikh hukuman, agar anda tidak perlu memasukkan <strong>sebarang</strong> tempoh pemenjaraan dalam pengiraan tempoh tujuh tahun_.  Jangan sertakan kesalahan yang bukan salah laku atau jenayah, seperti pelanggaran, atau sabitan yang berkaitan dengan kelakuan yang telah dihapuskan klasifikasi jenayahnya sejak tarikh sabitan, termasuk tetapi tidak terhad kepada kesalahan ganja.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
@@ -403,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Tidak",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Maklumat yang perlu disertakan",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Menyediakan bandar, negara, keadaan sabitan, tarikh, sifat kesalahan, bersama dengan maklumat hukuman",
@@ -472,7 +480,7 @@
       "value" : "Saya faham dan bersetuju bahawa seperti yang dibenarkan oleh undang-undang, Amazon boleh memerintahkan pemeriksaan latar belakang tambahan tentang saya untuk tujuan pekerjaan, tanpa kebenaran saya lebih lanjut, (1) semasa saya bekerja, jika ada, dan (2) daripada CRA selain Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "Untuk tujuan pekerjaan, dan tertakluk kepada semua undang-undang yang melindungi privasi maklumat saya, saya juga membenarkan yang berikut untuk mendedahkan kepada CRA apa-apa maklumat yang diperlukan untuk pemeriksaan latar belakang: majikan masa lalu atau sekarang, sekolah, dan penguatkuasa undang-undang dan agensi kerajaan lain, termasuk rekod kenderaan bermotor agensi.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -575,6 +583,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Tarikh bekerja - Dari/Hingga (BB/TT - BB/TT)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Sila masukkan tarikh Pekerjaan yang sah",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Saya tidak mempunyai Nombor Keselamatan Sosial",

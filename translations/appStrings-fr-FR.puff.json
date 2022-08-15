@@ -388,6 +388,58 @@
       "value" : "Étape {currentStep} sur {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Question sur la condamnation précédente",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Veuillez mentionner uniquement les condamnations de notoriété publique.</strong>  Toute arrestation résolue en votre faveur ne constitue également pas une condamnation. De même, n’incluez pas d’informations relatives à une condamnation prononcée dans le système de justice pour mineurs, à une affaire ayant été prise en charge ou traitée par le système de justice pour mineurs, à des charges ayant conduit à un programme de déjudiciarisation ou à des affaires ayant été rejetées pour raison légale ou en vertu de la loi sur la première infraction, closes, effacées, renvoyées judiciairement, traités par la loi comme des non-condamnations ou bien ayant fait l’objet d’une grâce.  <strong>Vous n'êtes pas non plus tenu de divulguer les délits et infractions mineurs ou sommaires.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Un casier judiciaire ne vous empêchera pas nécessairement de travailler chez Amazon, d’y poursuivre votre emploi ou de vous engager en tant que sous-traitant indépendant auprès d'Amazon.  Ces informations ne seront utilisées que conformément à la législation applicable et uniquement dans le but de déterminer si la condamnation est liée à l'emploi pour lequel vous postulez/au partenariat que vous souhaitez établir.  Tout manque d’honnêteté ou toute omission sur la ou les infractions pourra entraîner l'abandon de l’examen de votre candidature ou de votre demande de partenariat ou, si vous êtes déjà employé chez Amazon et/ou engagé avec Amazon en tant qu'entrepreneur indépendant, la résiliation de votre contrat de travail ou du partenariat vous liant à Amazon.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Consultez les informations juridiques des différents états fédéraux mentionnées ci-dessous avant de fournir plus de détails sur vos antécédents criminels",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Californie :</strong> N’incluez pas les infractions non criminelles liées à la marijuana ou condamnations délictuelles antérieures aux 2 dernières années.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Californie :</strong> N'incluez pas les infractions qui remontent à plus de sept (7) ans à compter de la date de la condamnation, de sorte que vous ne devez inclure <strong>aucune</strong> période d'incarcération dans le calcul de la période de sept ans.  N'incluez pas les infractions qui ne sont pas des délits ou des crimes, telles que les infractions ou les condamnations liées à une conduite qui a été décriminalisée depuis la date de la condamnation, y compris, mais sans s'y limiter, les infractions liées à la marijuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado :</strong> Ne mentionnez pas d'informations concernant des faits de désobéissance civile ou militaire, sauf dans les cas où la procédure a abouti à un plaidoyer de culpabilité ou à une condamnation par un tribunal compétent.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts :</strong> Ne fournissez pas de copie de votre extrait de casier judiciaire.  Ne mentionnez pas les premières condamnations pour ébriété, voie de fait simple, excès de vitesse, infractions mineures au code de la route, rixe ou troubles à l’ordre public. Ne mentionnez pas non plus les condamnations pour tous autres délits pour lesquels la date de condamnation ou la fin de période d'incarcération remonte à plus de 3 ans, sauf condamnations ultérieures au cours de ces 3 mêmes années. Tout candidat dont le casier judiciaire a été effacé conformément à l’une des sections 100F, 100G, 100H ou 100K du chapitre 276 des Lois générales est autorisé à indiquer « aucune entrée » pour toute demande concernant des arrestations, comparutions pénales ou condamnations antérieures. Tout candidat dont le casier judiciaire a été effacé conformément à l’une des sections 100F, 100G, 100H ou 100K du chapitre 276 des Lois générales est autorisé à indiquer « aucune entrée » pour toute demande concernant des arrestations, comparutions pénales ou comparutions devant un tribunal pour enfants, jugements ou condamnations antérieures.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York :</strong> Ne mentionnez pas les procédures ayant conduit à un verdict favorable conformément au Code de procédure pénale (« CPL ») §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio :</strong> Ne déclarez pas les condamnations délictuelles relatives à la possession de drogue telles que définies dans le Code rév. 2925.11 de l'Ohio.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphie, Pennsylvanie :</strong> N’incluez pas les condamnations ayant été prononcées au cours des sept (7) années précédant cette demande  <strong>et ne prenez pas en compte les incarcérations sur la même période.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginie :</strong> Ne signalez pas les condamnations pour possession de drogue telles que définies dans la section 18.2-250.1 du Code de Virginie.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington :</strong> Outre les points ci-après, vous pouvez également exclure toute condamnation pénale ayant fait l'objet d'un certificat de réhabilitation ou d'une autre procédure équivalente sur la base d'un constat de réhabilitation.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Avez-vous été reconnu(e) coupable de délit ou de crime, ou avez-vous été libéré(e) de prison ou bénéficié d'une libération conditionnelle à la suite d'une condamnation pour délit ou crime au cours des sept (7) dernières années ?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Non",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Les informations à inclure",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Indiquez la ville, le pays, l'état de condamnation, la date, la nature de l'infraction, ainsi que des informations sur la peine",
@@ -468,7 +524,7 @@
       "value" : "Je comprends et accepte que, conformément à la loi, Amazon peut demander des vérifications supplémentaires de mes antécédents à des fins de recrutement, sans autorisation additionnelle de ma part, (1) pendant l’exécution de mon contrat de travail le cas échéant, et (2) auprès d’entreprises de vérification des antécédents autres que Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "À des fins de recrutement, et sous réserve de toutes les lois protégeant la confidentialité de mes informations, j'autorise également les personnes suivantes à communiquer aux entreprises de vérification des antécédents toute information nécessaire à la vérification des antécédents : mes employeurs passés ou présents,les  écoles, les forces de l'ordre et d'autres services gouvernementaux, y compris les services tenant des registres concernant les véhicules motorisées.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -571,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Dates d'emploi - Du/Au (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Saisissez une date d'emploi valide",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Je n'ai pas de numéro de sécurité sociale",

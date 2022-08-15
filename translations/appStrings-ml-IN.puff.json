@@ -472,7 +472,7 @@
       "value" : "നിയമം അനുശാസിക്കുന്ന പ്രകാരം, Amazon-ന് തൊഴിൽ ആവശ്യങ്ങൾക്കായി, എന്‍റെ കൂടുതൽ അനുമതി ഇല്ലാതെ, (1) എന്‍റെ ജോലി സമയത്ത്, എന്തെങ്കിലും ഉണ്ടെങ്കിൽ, (2) Accurate Background ഒഴികെയുള്ള CRA-കളിൽ നിന്ന് എന്നെക്കുറിച്ചുള്ള കൂടുതൽ പശ്ചാത്തല പരിശോധനകൾ ഓർഡർ ചെയ്യാമെന്ന് ഞാൻ മനസ്സിലാക്കുകയും അംഗീകരിക്കുകയും ചെയ്യുന്നു.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "തൊഴിൽ ആവശ്യങ്ങൾക്കും, എന്‍റെ വിവരങ്ങളുടെ സ്വകാര്യത സംരക്ഷിക്കുന്ന എല്ലാ നിയമങ്ങൾക്കും വിധേയമായി, പശ്ചാത്തല പരിശോധനയ്ക്ക് ആവശ്യമായ ഏത് വിവരവും CRA-കൾക്ക് വെളിപ്പെടുത്താൻ ഞാൻ ഇനിപ്പറയുന്നവയെ അധികാരപ്പെടുത്തുന്നു: എന്‍റെ മുന്‍കാല അല്ലെങ്കില്‍ നിലവിലുള്ള തൊഴിലുടമകൾ, സ്കൂളുകൾ, നിയമപാലകർ, മോട്ടോർ വാഹന റെക്കോർഡ് ഏജൻസികൾ ഉൾപ്പെടെയുള്ള മറ്റ് സർക്കാർ ഏജൻസികൾ.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -575,6 +575,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "തൊഴിൽ തീയതി - മുതല്‍/വരെ (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "ദയവായി സാധുതയുള്ള ഒരു തൊഴിൽ തീയതി നൽകുക",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "എനിക്ക് ഒരു സോഷ്യൽ സെക്യൂരിറ്റി നമ്പർ ഇല്ല",

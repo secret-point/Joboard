@@ -388,6 +388,54 @@
       "value" : "Step {currentStep} of {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Previous Conviction Question",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Please list only convictions that are a matter of public record.</strong>  Arrests resolved in your favour are not convictions. Similarly, do not include any information relating to a conviction in the juvenile justice system, a matter considered in or processed through the juvenile justice system or charges that led to a diversion program or cases that have been dismissed, dismissed under a first offender’s law, sealed, expunged, pardoned, judicially dismissed or otherwise treated as non-convictions by law.  <strong>You are also not required to disclose violations, infractions, petty misdemeanours or summary offences.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "A criminal record will not necessarily bar you from employment, continued employment or an engagement as an independent contractor with Amazon.  This information will only be used in accordance with applicable law and only for the purpose of determining whether the conviction is related to the job/engagement for which you applied.  Failure to answer this question honestly or to provide the requested additional details of the offence(s) may result in discontinued consideration of your application for employment or for an independent contractor engagement or, if you are already employed by and/or engaged as an independent contractor with Amazon, such failure may result in termination of your employment or engagement.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "You must review the state law information below before providing additional information about your criminal history",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> Do not include non-felony marijuana-related infractions or misdemeanour convictions that are more than 2 years old.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Do not include information regarding a record of civil or military disobedience, unless the record resulted in a plea of guilty or a conviction by a court of competent jurisdiction.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Do not provide a copy of your criminal history report.  Do not identify first-time misdemeanour convictions for drunkenness, simple assault, speeding, minor traffic violations, affray or disturbance of the peace. Also do not identify convictions for other misdemeanours where the date of conviction or the end of any period of incarceration was more than 3 years ago, unless there have been subsequent convictions within those 3 years. An applicant for employment with a record expunged pursuant to section 100F, section 100G, section 100H or section 100K of chapter 276 of the General Laws may answer ‘no record’ with respect to an inquiry herein relative to prior arrests, criminal court appearances or convictions. An applicant for employment with a record expunged pursuant to section 100F, section 100G, section 100H or section 100K of chapter 276 of the General Laws may answer 'no record' to an inquiry herein relative to prior arrests, criminal court appearances, juvenile court appearances, adjudications or convictions.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Do not identify any actions that terminated in your favour pursuant to Criminal Procedure Law (‘CPL’) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Do not report any conviction for a misdemeanour drug violation as defined under Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Do not include any convictions that occurred more than seven (7) years from the date of this inquiry.  <strong>Any period of incarceration should not be included in the calculation of the seven-year period.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Do not report a misdemeanour drug possession conviction, as defined under Section 18.2-250.1 of the Code of Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> In addition to the below, you may exclude a criminal conviction that has been the subject of a certificate of rehabilitation or other equivalent procedure based on a finding of the rehabilitation.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Have you been convicted of a misdemeanour or felony or been released from prison or parole from a misdemeanour or felony conviction in the last seven (7) years?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "What information to include",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Provide city, country, state of conviction, date and nature of the offence, along with sentencing information",
@@ -468,7 +520,7 @@
       "value" : "I understand and agree that as allowed by law, Amazon can order additional background checks about me for employment purposes, without my further authorisation, (1) during my employment, if any, and (2) from CRAs other than Accurate Background.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "For employment purposes, and subject to all laws protecting my informational privacy, I also authorise the following to disclose to the CRAs any information needed for the background check: my past or present employers, schools, law enforcement and other government agencies, including motor vehicle record agencies.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },

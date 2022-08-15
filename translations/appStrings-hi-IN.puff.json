@@ -476,7 +476,7 @@
       "value" : "मैं समझता/समझती हूं और सहमत हूं कि कानून द्वारा अनुमति के अनुसार Amazon मेरे आगे के प्राधिकरण के बिना रोजगार उद्देश्यों के लिए मेरे बारे में अतिरिक्त बैकग्राउंड जांच का ऑर्डर दे सकता है, (1) मेरे रोजगार के दौरान, अगर कोई है और (2) Accurate Background के अलावा अन्य CRA से.",
       "note" : "Text for non fcra acknowledgement number two for ACCURATE bgcVendor"
     },
-    "BB-non-fcra-fdav-acknowledgement-item-three" : {
+    "BB-non-fcra-fadv-acknowledgement-item-three" : {
       "value" : "रोजगार के उद्देश्यों के लिए और मेरी सूचनात्मक गोपनीयता की रक्षा करने वाले सभी कानूनों के अधीन, मैं बैकग्राउंड की जांच के लिए निम्नलिखित को CRA समक्ष ज़रूरी किसी भी जानकारी का खुलासा करने के लिए अधिकृत करता/करती हूं: मेरे अतीत या वर्तमान नियोक्ता, स्कूल और कानून प्रवर्तन और मोटर वाहन रिकॉर्ड एजेंसियां सहित अन्य सरकारी एजेंसियां.",
       "note" : "Text for non fcra acknowledgement number three for FADV bgcVendor"
     },
@@ -579,6 +579,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "रोजगार की तारीखें - से/तक (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "कृपया रोजगार की मान्य तारीख एंटर करें",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "मेरे पास सामाजिक सुरक्षा नंबर नहीं है",
