@@ -66,13 +66,12 @@ a {
       }
     }
   }
+}
 
-  .scheduleBannerText {
-    font-weight: 500;
-    hyphens: none;
-    text-decoration: underline;
-    color: $Blue_70;
-  }
+.scheduleBannerText {
+  font-weight: 500;
+  hyphens: none;
+  color: $Blue_70;
 }
 
 .backToJobDashboardLink {
