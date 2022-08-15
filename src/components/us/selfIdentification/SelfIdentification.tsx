@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import InfoStepCard from "../../common/InfoStepCard";
-import { SELF_IDENTIFICATION_STEPS } from "../../../utils/enums/common";
+import { PROXY_APPLICATION_STATE, SELF_IDENTIFICATION_STEPS, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
@@ -10,7 +10,7 @@ import { SelfIdentificationState } from "../../../reducers/selfIdentification.re
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import {
-  checkAndBoundGetApplication, getLocale,
+  checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale,
   handleInitiateSelfIdentificationStep,
   isSelfIdentificationInfoValid,
   SelfShouldDisplayContinue
@@ -34,6 +34,9 @@ import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundSc
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { JobState } from "../../../reducers/job.reducer";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
+import { Application } from "../../../utils/types/common";
 
 interface MapStateToProps {
   application: ApplicationState,
@@ -76,7 +79,7 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
       locale: getLocale(),
       scheduleId: scheduleId
     })
-  }, [scheduleId]);
+  }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
@@ -85,14 +88,14 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
   useEffect(() => {
     jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+  }, [jobDetail, applicationData, candidateData, scheduleDetail, pageName]);
 
   useEffect(() => {
     return () => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[])
+  },[pageName])
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
@@ -105,7 +108,14 @@ const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
     setIsSelfIdInfoValid(isSelfIdInfoValid);
 
     if(applicationData && isSelfIdInfoValid) {
-      onCompleteTaskHelper(applicationData);
+      const { SELF_IDENTIFICATION } = UPDATE_APPLICATION_API_TYPE;
+      const payload = {
+        state: PROXY_APPLICATION_STATE.SELF_IDENTIFICATION_COMPLETED
+      }
+      const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, SELF_IDENTIFICATION, payload);
+      boundUpdateApplicationDS(request, (applicationData: Application)=>{
+        onCompleteTaskHelper(applicationData);
+      });
     }
   }
 

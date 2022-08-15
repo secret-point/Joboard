@@ -111,6 +111,7 @@ export enum UPDATE_APPLICATION_API_TYPE {
     EQUAL_OPPORTUNITY_FORM = 'equal-opportunity-form',
     VETERAN_STATUS_FORM = 'veteran-status-form',
     DISABILITY_FORM = 'disability-form',
+    SELF_IDENTIFICATION = 'self-identification',
     NHE = 'nhe',
     UPDATE_SHIFT = 'update-shift',
     UPDATE_SCHEDULE = 'update-schedule',
