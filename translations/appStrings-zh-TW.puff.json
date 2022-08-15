@@ -388,6 +388,50 @@
       "value" : "步驟 {currentStep}/{totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>請僅列出屬於公共記錄的定罪。</strong>  對您有利的逮捕判決不是定罪。同樣地，請勿包括與以下事項相關的資訊：少年司法系統中的定罪；少年司法系統中審議或透過少年司法系統處理的事項；導致司法分流的指控；被駁回、根據初犯法律駁回、封存、刪除、赦免、司法駁回或以其他方式被法律視為無罪的案件。 <strong>您也不需要披露侵權行為、違規行為、輕罪或簡易程序罪行。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "犯罪記錄不一定會導致您無法受僱/繼續受僱於 Amazon，或作為獨立承包商與 Amazon 合作。 此資訊將僅根據適用法律使用，並且僅用於確定定罪是否與您申請的工作/合作有關。 未能誠實回答這個問題或提供所要求的有關罪行的額外詳細資訊，可能導致相關人員停止考慮您的就業申請或獨立承包商合作申請，如果您已經受僱於 Amazon 和/或作為獨立承包商已經與 Amazon 進行合作，可能導致您的就業或合作終止。",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "在提供有關犯罪歷史的其他資訊之前，您必須查看以下州法律資訊",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>加州：</strong> 不包括超過 2 年的非重罪大麻相關違規或輕罪定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>科羅拉多州：</strong> 請勿包括有關民事或軍事不服從記錄的資訊，除非該等記錄導致認罪或由具有司法管轄權的法院定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>麻薩諸塞州：</strong> 請勿提供您的犯罪記錄報告的副本。 不認定醉酒、簡單襲擊、超速駕駛、輕微交通違規、鬥毆或擾亂治安等首次輕罪定罪。此外，如果定罪日期或任何監禁期結束時間超過 3 年，也不認定其他輕罪的定罪，除非在這 3 年內有後續定罪。根據《一般法》第 276 章第 100F 條、第 100G 條、第 100H 條或第 100K 條刪除記錄的就業申請人，可以對此處有關先前逮捕、刑事出庭或定罪有關的調查回答「無記錄」。根據《一般法》第 276 章第 100F 條、第 100G 條、第 100H 條或第 100K 條刪除記錄的就業申請人，可以對此處有關先前逮捕、刑事出庭、少年出庭、裁決或定罪的調查回答「無記錄」。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>紐約州：</strong> 不認定任何根據《刑事訴訟法》(「CPL」) 第 160.50 條終止的對您有利的訴訟。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>俄亥俄州：</strong> 請勿報告根據俄亥俄州修訂法典 2925.11 條所定義的任何藥物違規輕罪的定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>賓夕法尼亞州費城：</strong> 請勿包括自本調查之日起超過七 (7) 年的任何定罪。 <strong>七年期限的計算不應包括任何監禁期。</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>維吉尼亞州：</strong> 請勿報告《弗吉尼亞法典》第 18.2-250.1 條所定義的持有毒品輕罪定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>華盛頓州西雅圖：</strong> 除以下內容外，您還可以根據結果排除已作為改過自新證明或其他等效程序主題的刑事定罪。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "在過去七 (7) 年內，您是否因輕罪或重罪被定罪，或者從輕罪或重罪定罪中獲釋或假釋出獄？",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -571,6 +615,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "工作日期 - 起始/結束 (月/年 - 月/年)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "請輸入有效的受僱日期",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "我沒有社會安全號碼",

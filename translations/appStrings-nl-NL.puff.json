@@ -388,6 +388,10 @@
       "value" : "Stap {currentStep} van {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Vraag over eerdere veroordeling",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-list-convictions-text" : {
       "value" : "<strong>Vermeld alleen veroordelingen die openbaar zijn.</strong>  Arrestaties die in jouw voordeel zijn afgehandeld, zijn geen veroordelingen. Neem ook geen informatie op over een veroordeling in het jeugdrechtsysteem, of een zaak die wordt overwogen in of verwerkt via het jeugdrechtsysteem, of aanklachten die hebben geleid tot een alternatieve straf of zaken die zijn afgewezen, afgewezen op grond van de wet betreffende eerste overtredingen (‘first offender‘s law’), zijn verzegeld, gewist, kwijtgescholden, gerechtelijk afgewezen of anderszins door de wet worden beschouwd als zijnde geen veroordeling.  <strong>Je bent ook niet verplicht om overtredingen (‘violations/infractions’), lichte misdrijven (‘petty misdemeanors’) of overtredingen met politiestraf (‘summary offences’) bekend te maken.</strong>",
       "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"

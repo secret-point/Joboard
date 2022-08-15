@@ -1736,6 +1736,10 @@
       "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "يرجى تقديم تفاصيل الإدانة.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- ألاباما",
       "note" : "Text for Alabama state"

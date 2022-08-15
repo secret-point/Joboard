@@ -572,6 +572,10 @@
       "value" : "Fechas de ingreso: Desde/Hasta A (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Ingresa una fecha de empleo válida",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "No tengo un Número de Seguridad Social",
       "note" : "Label for the no ssn checkbox"

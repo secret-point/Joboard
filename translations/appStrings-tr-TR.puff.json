@@ -580,6 +580,10 @@
       "value" : "İstihdam tarihleri - Başlangıç/Bitiş (AA/YY - AA/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Lütfen geçerli bir İstihdam tarihi girin",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Sosyal Güvenlik Numaram yok",
       "note" : "Label for the no ssn checkbox"

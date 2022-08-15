@@ -3,6 +3,7 @@ import { Col } from "@amzn/stencil-react-components/layout";
 import { Spinner, SpinnerSize } from "@amzn/stencil-react-components/spinner";
 import { connect } from "react-redux";
 import { uiState } from "../../reducers/ui.reducer";
+import { translate as t } from "../../utils/translator";
 
 interface MapStateToProps {
     ui: uiState
@@ -23,7 +24,7 @@ export const AppLoader = ( props: AppLoaderMergedProps) => {
         <Col
             className="AppLoader"
         >
-            <Spinner size={SpinnerSize.Large} loadingText={loaderText}/>
+            <Spinner size={SpinnerSize.Large} loadingText={loaderText || t("BB-spinner-loading-text", 'Loading...') }/>
         </Col> :
             <></>
     )

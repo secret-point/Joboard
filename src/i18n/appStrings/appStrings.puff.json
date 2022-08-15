@@ -1990,6 +1990,10 @@
             "note": "Text for Wyoming state",
             "value": "WY -- Wyoming"
         },
+        "BB-spinner-loading-text": {
+            "note": "Text for Loading spinner",
+            "value": "Loading..."
+        },
         "BB-update-wotc-status-error-message-failed-update-wotc": {
             "note": "error message when failed to update wotc status",
             "value": "Failed to update WOTC."
