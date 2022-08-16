@@ -16,6 +16,8 @@ import { connect } from "react-redux";
 import get from 'lodash/get';
 import { handleSubmitNonFcraBGC, validateNonFcraSignatures } from "../../../utils/helper";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { BGC_ACTION_TYPE } from "../../../actions/BGC_Actions/bgcActionTypes";
+import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
 
 interface MapStateToProps {
     job: JobState,
@@ -60,7 +62,10 @@ const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                 return;
             }
 
-            handleSubmitNonFcraBGC(applicationData, nonFcraAckEsign, nonFcraNoticeEsign, requestedCopyOfBGC, stepConfig);
+            //get bgc vendor name from schedule detail. otherwise default to Accurate
+            const bgcVendorType = scheduleDetail?.bgcVendorName || BGC_VENDOR_TYPE.ACCURATE;
+
+            handleSubmitNonFcraBGC(applicationData, nonFcraAckEsign, nonFcraNoticeEsign, requestedCopyOfBGC, stepConfig, bgcVendorType);
         }
     }
     return (

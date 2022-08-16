@@ -1,7 +1,7 @@
 import {
     APPLICATION_STATE,
     BACKGROUND_AGENT,
-    BGC_STEPS,
+    BGC_STEPS, BGC_VENDOR_TYPE,
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
@@ -316,7 +316,7 @@ export interface Schedule {
     postalCode: string | null;
     distance: number;
     iconUrl: string;
-    bgcVendorName: string;
+    bgcVendorName: BGC_VENDOR_TYPE;
     bonusSchedule: boolean;
     signOnBonus: number;
     briefJobDescription: string;
@@ -537,11 +537,6 @@ export interface Shifts {
     locationPostalCode: string;
     locationState: string;
     country: string;
-}
-
-export enum BGC_VENDOR_TYPE {
-    FADV = "FADV",
-    ACCURATE = "ACCURATE"
 }
 
 export interface JobReferral {

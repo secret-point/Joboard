@@ -57,6 +57,7 @@ import {
 } from "../actions/ScheduleActions/boundScheduleActions";
 import {
     BGC_STEPS,
+    BGC_VENDOR_TYPE,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
     FEATURE_FLAG,
@@ -71,11 +72,7 @@ import { PAGE_ROUTES } from "../components/pageRoutes";
 import queryString from "query-string";
 import { isArray, isBoolean } from "lodash";
 import { CS_DOMAIN_LIST } from "../constants";
-import {
-    get3rdPartyFromQueryParams,
-    jobIdSanitizer,
-    requisitionIdSanitizer
-} from "../helpers/utils";
+import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import isEmpty from "lodash/isEmpty";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
@@ -89,13 +86,11 @@ import { UpdateApplicationRequest } from "../@types/candidate-application-servic
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
-import {boundResetBannerMessage, boundSetBannerMessage} from "../actions/UiActions/boundUi";
-import { translate } from "./translator";
+import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
+import { translate, translate as t } from "./translator";
 import isNil from "lodash/isNil";
-import { translate as t } from "./translator";
 import { METRIC_NAME } from "../constants/adobe-analytics";
 import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
-import { MetricData } from "../@types/adobe-metrics";
 
 const {
     BACKGROUND_CHECK,
@@ -596,7 +591,7 @@ export const resetUnchangedFieldFromPatch = (parentObject: Object, formConfig: F
 }
 
 export const handleSubmitNonFcraBGC =
-    ( applicationData: Application, ackEsign: string, noticeEsign: string, requestedCopyOfBGC: boolean, stepConfig: BgcStepConfig ) => {
+    ( applicationData: Application, ackEsign: string, noticeEsign: string, requestedCopyOfBGC: boolean, stepConfig: BgcStepConfig, bgcVendorType: BGC_VENDOR_TYPE ) => {
         if(applicationData) {
             const updateApplicationPayload = {
                 nonFcraQuestions: {
@@ -606,7 +601,8 @@ export const handleSubmitNonFcraBGC =
                     nonFcraStateNoticeEsign: {
                         signature: noticeEsign.trim(),
                     },
-                    requestedCopyOfBackgroundCheck: requestedCopyOfBGC
+                    requestedCopyOfBackgroundCheck: requestedCopyOfBGC,
+                    bgcVendorType
                 }
             }
 

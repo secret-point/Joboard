@@ -330,3 +330,8 @@ export enum BB_UI_VERSION {
     BB_UI_OLD = "bb-ui-v1",
     BB_UI_NEW = "bb-ui-v2",
 }
+
+export enum BGC_VENDOR_TYPE {
+    FADV = "FADV",
+    ACCURATE = "ACCURATE"
+}

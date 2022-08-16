@@ -19,9 +19,9 @@ import { checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale 
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { Application, BGC_VENDOR_TYPE } from "../../../utils/types/common";
+import { Application } from "../../../utils/types/common";
 import { CommonColors } from "../../../utils/colors";
-import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import { BGC_VENDOR_TYPE, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
