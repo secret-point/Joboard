@@ -30,7 +30,7 @@ export default class JobService {
             jobId,
             applicationId,
             filter,
-            locale: 'en-us'
+            locale: getLocale()
         });
         return response.data;
     }
@@ -42,7 +42,7 @@ export default class JobService {
             jobId,
             applicationId,
             filter,
-            locale: 'en-us' //TODO to be replaced by actual Locale from Cookie when proxy started to support the new locale
+            locale: locale || getLocale()
         });
         return response.data;
     }
