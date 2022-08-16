@@ -89,7 +89,6 @@ const ReviewSubmit = (props: MapStateToProps) => {
     const isBackButton = true;
     if (applicationData) {
       onCompleteTaskHelper(applicationData, isBackButton, stepName);
-      routeToAppPageWithPath(stepName);
     }
   };
 
