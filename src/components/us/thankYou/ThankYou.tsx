@@ -53,7 +53,7 @@ interface JobReferral {
   referralInfo?: string;
 }
 
-const ThankYou = (props: MapStateToProps) => {
+export const ThankYou = (props: MapStateToProps) => {
   const { application, candidate, schedule, job } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);

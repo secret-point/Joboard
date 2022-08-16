@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SessionTimeout should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Your job position reservation has expired.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    We allow candidates up to three hours to complete their application. Unfortunately, the job position you were applying for exceeded the three hour limit. Please explore available job opportunities.
+  </Text>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      View job opportunities
+    </Button>
+  </Col>
+</Col>
+`;

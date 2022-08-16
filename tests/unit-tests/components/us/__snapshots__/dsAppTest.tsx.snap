@@ -78,7 +78,7 @@ exports[`App snapshot 1`] = `
         exact={true}
         path="/self-identification"
       >
-        <Connect(SelfIdentificationComponent) />
+        <Connect(SelfIdentification) />
       </Route>
       <Route
         exact={true}

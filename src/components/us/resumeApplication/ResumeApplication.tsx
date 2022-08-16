@@ -30,7 +30,7 @@ interface MapStateToProps {
     appConfig: AppConfigState,
 }
 
-const ResumeApplication = (props: MapStateToProps) => {
+export const ResumeApplication = (props: MapStateToProps) => {
     const { job, application, schedule, candidate, appConfig } = props;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
@@ -71,19 +71,19 @@ const ResumeApplication = (props: MapStateToProps) => {
             // resume workflow, but do not complet any task, since there is no task to complete on resume-application page
             envConfig && loadWorkflowDS(jobId, scheduleId || "", applicationId, candidateData?.candidateId || "", envConfig);
         });
-    }, [applicationData, jobDetail, jobId, scheduleId]);
+    }, [applicationData, applicationId, candidateData, envConfig, jobDetail, jobId, scheduleId]);
 
     useEffect(() => {
         jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
 
-    }, [jobDetail, applicationData, candidateData]);
+    }, [jobDetail, applicationData, candidateData, pageName]);
 
     useEffect(() => {
         return () => {
             //reset this so as it can emit new pageload event after being unmounted.
             resetIsPageMetricsUpdated(pageName);
         }
-    },[]);
+    },[pageName]);
 
     return (
       <Col minHeight="40vh"/>

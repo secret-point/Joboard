@@ -26,7 +26,7 @@ interface MapStateToProps {
   candidate: CandidateState
 }
 
-const WorkflowFailed = (props: MapStateToProps) => {
+export const WorkflowFailed = (props: MapStateToProps) => {
   const { job, application, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
@@ -53,14 +53,14 @@ const WorkflowFailed = (props: MapStateToProps) => {
     // will not emit new event on props change once it has emitted pageload event previously
     jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData]);
+  }, [jobDetail, applicationData, candidateData, pageName]);
 
   useEffect(() => {
     return () => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[])
+  },[pageName])
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

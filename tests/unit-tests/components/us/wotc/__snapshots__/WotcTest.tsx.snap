@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wotc should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T500"
+    hyphens="none"
+  >
+    Work opportunity tax credit questionnaire
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Amazon IAT testing participates in federal and or state tax credit programs. The information you give will be used to determine the company's eligibility for these programs and will in no way negatively impact any hiring, retention or promotion decisions.
+  </Text>
+</Col>
+`;

@@ -37,7 +37,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-const ReviewSubmit = (props: MapStateToProps) => {
+export const ReviewSubmit = (props: MapStateToProps) => {
   const { job, application, schedule, candidate } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
@@ -61,7 +61,7 @@ const ReviewSubmit = (props: MapStateToProps) => {
       locale: getLocale(),
       scheduleId: scheduleId
     })
-  }, [scheduleId]);
+  }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
@@ -74,14 +74,14 @@ const ReviewSubmit = (props: MapStateToProps) => {
   useEffect(() => {
     jobDetail && applicationData && candidateData && scheduleDetail && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+  }, [jobDetail, applicationData, candidateData, scheduleDetail, pageName]);
 
   useEffect(() => {
     return () => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[]);
+  },[pageName]);
 
   const handleBackToEdit = (stepName: WORKFLOW_STEP_NAME) => {
     boundResetBannerMessage();

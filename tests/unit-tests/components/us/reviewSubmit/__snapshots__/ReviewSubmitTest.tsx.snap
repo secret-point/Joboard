@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewSubmit should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Row
+    gridGap="S300"
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    />
+  </Row>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    Review and Submit
+  </Text>
+  <div>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Job Details
+      </Text>
+      <ScheduleDetails
+        scheduleDetail={
+          Object {
+            "scheduleId": "test-schedule-id",
+          }
+        }
+      />
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Background check
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Authorized
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        National ID Type:
+         
+        United States - Social Security Number
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        National ID Number:
+         
+        *****9599
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Date of birth:
+         
+        2nd Aug 1988
+      </Text>
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Pre-Hire Appointment
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Invalid date
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      />
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Hours:
+         
+         - 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        We look forward to seeing you at the time above.
+      </Text>
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Voluntary Self-identification
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Equal Opportunity:
+         
+        Male
+        , Asian (not Hispanic or Latino)
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Veteral Status:
+         
+        No
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Disability Status:
+         
+      </Text>
+    </Col>
+  </div>
+  <Col
+    gridGap="S300"
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Submit application
+    </Button>
+  </Col>
+</Col>
+`;

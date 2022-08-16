@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkflowFailed should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    Workflow Error
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    While application workflow failed.
+  </Text>
+  <Button
+    colorScheme="default"
+    iconPosition="leading"
+    onClick={[Function]}
+    shouldUseResponsiveContent={true}
+    size="default"
+    type="button"
+    variant="primary"
+  >
+    Return to dashboard
+  </Button>
+</Col>
+`;

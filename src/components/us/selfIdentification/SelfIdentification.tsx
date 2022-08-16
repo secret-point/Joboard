@@ -52,7 +52,7 @@ interface SelfIdentificationProps {
 
 type SelfIdentificationMergeProps = MapStateToProps & SelfIdentificationProps;
 
-const SelfIdentificationComponent = (props: SelfIdentificationMergeProps) => {
+export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const { selfIdentification, application, candidate, schedule, job } = props;
   const { stepConfig } = selfIdentification;
   const { search, pathname } = useLocation();
@@ -175,4 +175,4 @@ const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 
-export default connect(mapStateToProps)(SelfIdentificationComponent);
+export default connect(mapStateToProps)(SelfIdentification);

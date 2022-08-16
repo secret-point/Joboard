@@ -5,11 +5,12 @@ import { ApplicationState } from "../../src/reducers/application.reducer";
 import { Address, Candidate, NheTimeSlotLocation } from "../../src/utils/types/common";
 import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
-import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
+import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
 import { BGCState } from "../../src/reducers/bgc.reducer";
 import { NheState } from "../../src/reducers/nhe.reducer";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
+import { SelfIdentificationState } from "../../src/reducers/selfIdentification.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -432,4 +433,22 @@ export const TEST_NHE_STATE: NheState = {
       }
     ]
   }
+};
+
+export const TEST_SELF_IDENTIFICATION_STATE: SelfIdentificationState = {
+  stepConfig: {
+    completedSteps: [],
+    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: true
+    },
+    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    },
+    [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    }
+  },
 };
