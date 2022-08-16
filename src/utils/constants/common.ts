@@ -414,7 +414,7 @@ export const ConvictionDetailConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.convictionDetails',
     id: 'convictionDetails',
     type: 'textArea',
-    regex: `^(?=\\S)[a-zA-Z0-9 ,.]{2,500}(?<=[^\\s])$`,
+    regex: `^(?=\\S)[a-zA-Z0-9 /,.]{2,500}(?<=[^\\s])$`,
     labelTranslationKey: 'BB-BGC-criminal-record-conviction-detail-label-text',
     errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message-fix"
 }
