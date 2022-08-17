@@ -455,7 +455,9 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
         }
     }
 
-    if(isAdditionalBgcCompleted) {
+    // Click next of additional background information form will complete task.
+    // Prevent user from edit additional background information before isFcraCompleted and isNonFcraCompleted.
+    if(isFcraCompleted && isNonFcraCompleted && isAdditionalBgcCompleted) {
         stepConfig = {
             ...stepConfig,
             completedSteps: [...stepConfig.completedSteps, ADDITIONAL_BGC],
