@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviousWorkedAtAmazonForm should match snapshot 1`] = `
+<Col
+  gridGap={15}
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Row
+    gridGap={8}
+    width="100%"
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="bold"
+      hyphens="none"
+    >
+      Have you previously worked at an Amazon building?
+    </Text>
+    <Text
+      color="red"
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+       * 
+    </Text>
+  </Row>
+  <DetailedRadio
+    defaultChecked={false}
+    name="worked_at_Amazon-record-radio-col"
+    onChange={[Function]}
+    titleText="Yes"
+  />
+  <DetailedRadio
+    defaultChecked={true}
+    name="worked_at_Amazon-record-radio-col"
+    onChange={[Function]}
+    titleText="No"
+  />
+</Col>
+`;

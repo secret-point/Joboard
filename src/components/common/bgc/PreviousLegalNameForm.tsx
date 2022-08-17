@@ -29,7 +29,7 @@ interface PreviousLegalNameFormProps {
 
 type PreviousLegalNameFormMergedProps = MapStateToProps & PreviousLegalNameFormProps;
 
-const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
+export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
 
     const { candidate } = props;
     const { formError, candidatePatchRequest } = candidate;

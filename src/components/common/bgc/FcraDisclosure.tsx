@@ -41,7 +41,7 @@ interface FcraDisclosureProps {
 
 type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
 
-const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
+export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const { job, application, schedule, bgc } = props;
     const { stepConfig } = bgc;
     const applicationData = application.results;

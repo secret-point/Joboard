@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeRange should match snapshot 1`] = `
+<Row
+  alignItems="center"
+  gridGap={10}
+  justifyContent="space-between"
+>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "right": "S300",
+      }
+    }
+    width="100%"
+  >
+    <Label
+      color="neutral90"
+      font="primary"
+      fontSize="T200"
+      fontWeight="regular"
+      htmlFor="MONDAYTimeRange-start-time"
+      hyphens="none"
+    >
+      Start Time
+    </Label>
+    <Select
+      collapsedOptionsExpanderTitle="Selected items"
+      customSelectionOptionsLabel="Group selection options"
+      defaultOptionsLabel="Single selection options"
+      defaultValue={
+        Object {
+          "hours": 23,
+          "time": "11:00 PM",
+        }
+      }
+      disabled={false}
+      disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+      getTriggerText={[Function]}
+      id="MONDAYTimeRange-start-time"
+      layout="default"
+      noOptionsText="No options available"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "hours": 0,
+            "time": "12:00 AM",
+          },
+          Object {
+            "hours": 1,
+            "time": "01:00 AM",
+          },
+          Object {
+            "hours": 2,
+            "time": "02:00 AM",
+          },
+          Object {
+            "hours": 3,
+            "time": "03:00 AM",
+          },
+          Object {
+            "hours": 4,
+            "time": "04:00 AM",
+          },
+          Object {
+            "hours": 5,
+            "time": "05:00 AM",
+          },
+          Object {
+            "hours": 6,
+            "time": "06:00 AM",
+          },
+          Object {
+            "hours": 7,
+            "time": "07:00 AM",
+          },
+          Object {
+            "hours": 8,
+            "time": "08:00 AM",
+          },
+          Object {
+            "hours": 9,
+            "time": "09:00 AM",
+          },
+          Object {
+            "hours": 10,
+            "time": "10:00 AM",
+          },
+          Object {
+            "hours": 11,
+            "time": "11:00 AM",
+          },
+          Object {
+            "hours": 12,
+            "time": "12:00 PM",
+          },
+          Object {
+            "hours": 13,
+            "time": "01:00 PM",
+          },
+          Object {
+            "hours": 14,
+            "time": "02:00 PM",
+          },
+          Object {
+            "hours": 15,
+            "time": "03:00 PM",
+          },
+          Object {
+            "hours": 16,
+            "time": "04:00 PM",
+          },
+          Object {
+            "hours": 17,
+            "time": "05:00 PM",
+          },
+          Object {
+            "hours": 18,
+            "time": "06:00 PM",
+          },
+          Object {
+            "hours": 19,
+            "time": "07:00 PM",
+          },
+          Object {
+            "hours": 20,
+            "time": "08:00 PM",
+          },
+          Object {
+            "hours": 21,
+            "time": "09:00 PM",
+          },
+          Object {
+            "hours": 22,
+            "time": "10:00 PM",
+          },
+          Object {
+            "hours": 23,
+            "time": "11:00 PM",
+          },
+        ]
+      }
+      placeholder="Choose an option"
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      renderSelectedValue={[Function]}
+      searchFieldAriaLabel="Start typing to filter out search results"
+      selectedOptionAltText="selected"
+      valueAccessor={[Function]}
+      width="100%"
+    />
+  </Col>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "left": "S300",
+      }
+    }
+    width="100%"
+  >
+    <Label
+      color="neutral90"
+      font="primary"
+      fontSize="T200"
+      fontWeight="regular"
+      htmlFor="MONDAYTimeRange-end-time"
+      hyphens="none"
+    >
+      End Time
+    </Label>
+    <Select
+      collapsedOptionsExpanderTitle="Selected items"
+      customSelectionOptionsLabel="Group selection options"
+      defaultOptionsLabel="Single selection options"
+      defaultValue={
+        Object {
+          "hours": 12,
+          "time": "12:00 PM",
+        }
+      }
+      disabled={false}
+      disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+      getTriggerText={[Function]}
+      id="MONDAYTimeRange-end-time"
+      layout="default"
+      noOptionsText="No options available"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "hours": 0,
+            "time": "12:00 AM",
+          },
+          Object {
+            "hours": 1,
+            "time": "01:00 AM",
+          },
+          Object {
+            "hours": 2,
+            "time": "02:00 AM",
+          },
+          Object {
+            "hours": 3,
+            "time": "03:00 AM",
+          },
+          Object {
+            "hours": 4,
+            "time": "04:00 AM",
+          },
+          Object {
+            "hours": 5,
+            "time": "05:00 AM",
+          },
+          Object {
+            "hours": 6,
+            "time": "06:00 AM",
+          },
+          Object {
+            "hours": 7,
+            "time": "07:00 AM",
+          },
+          Object {
+            "hours": 8,
+            "time": "08:00 AM",
+          },
+          Object {
+            "hours": 9,
+            "time": "09:00 AM",
+          },
+          Object {
+            "hours": 10,
+            "time": "10:00 AM",
+          },
+          Object {
+            "hours": 11,
+            "time": "11:00 AM",
+          },
+          Object {
+            "hours": 12,
+            "time": "12:00 PM",
+          },
+          Object {
+            "hours": 13,
+            "time": "01:00 PM",
+          },
+          Object {
+            "hours": 14,
+            "time": "02:00 PM",
+          },
+          Object {
+            "hours": 15,
+            "time": "03:00 PM",
+          },
+          Object {
+            "hours": 16,
+            "time": "04:00 PM",
+          },
+          Object {
+            "hours": 17,
+            "time": "05:00 PM",
+          },
+          Object {
+            "hours": 18,
+            "time": "06:00 PM",
+          },
+          Object {
+            "hours": 19,
+            "time": "07:00 PM",
+          },
+          Object {
+            "hours": 20,
+            "time": "08:00 PM",
+          },
+          Object {
+            "hours": 21,
+            "time": "09:00 PM",
+          },
+          Object {
+            "hours": 22,
+            "time": "10:00 PM",
+          },
+          Object {
+            "hours": 23,
+            "time": "11:00 PM",
+          },
+          Object {
+            "hours": -1,
+            "time": "11:59 PM",
+          },
+        ]
+      }
+      placeholder="Choose an option"
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      renderSelectedValue={[Function]}
+      searchFieldAriaLabel="Start typing to filter out search results"
+      selectedOptionAltText="selected"
+      valueAccessor={[Function]}
+      width="100%"
+    />
+  </Col>
+</Row>
+`;

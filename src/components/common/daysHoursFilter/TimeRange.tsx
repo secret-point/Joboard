@@ -15,7 +15,7 @@ interface TimeRangeProps {
     endTimeHours: number;
 }
 
-const TimeRange = ( props: TimeRangeProps ) => {
+export const TimeRange = ( props: TimeRangeProps ) => {
 
     const { disabled, id, dayIndex, endTimeHours, startTimeHours, onChange } = props;
     const [startTime, setStartTime] = useState<string>(startTimeHours.toString());

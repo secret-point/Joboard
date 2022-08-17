@@ -11,7 +11,7 @@ interface NheCardProps {
   handleChange: Function
 }
 
-const NheTimeSlotCard = (props: NheCardProps) => {
+export const NheTimeSlotCard = (props: NheCardProps) => {
 
   const { nheTimeSlot, handleChange } = props;
 

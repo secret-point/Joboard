@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CriminalRecordForm should match snapshot 1`] = `
+<Col
+  gridGap={15}
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Have you been convicted of misdemeanor or felony or been released from prison or parole from a misdemeanor or felony conviction in last seven (7) years?
+  </Text>
+  <DetailedRadio
+    defaultChecked={false}
+    name="criminal-conviction-radio-col"
+    onChange={[Function]}
+    titleText="Yes."
+    value="true"
+  />
+  <DetailedRadio
+    defaultChecked={true}
+    name="criminal-conviction-radio-col"
+    onChange={[Function]}
+    titleText="NO"
+    value="false"
+  />
+</Col>
+`;

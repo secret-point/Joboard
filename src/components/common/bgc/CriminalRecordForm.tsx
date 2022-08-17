@@ -38,7 +38,7 @@ interface CriminalRecordFormProps {
 
 type CriminalRecordFormMergedProps = MapStateToProps & CriminalRecordFormProps;
 
-const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
+export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
 
     const { candidate } = props;
     const { candidatePatchRequest, formError } = candidate;

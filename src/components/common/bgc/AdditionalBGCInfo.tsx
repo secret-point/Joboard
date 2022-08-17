@@ -60,7 +60,7 @@ interface AdditionalBGCInfoProps {
 
 type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 
-const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
+export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     const { candidate, application, bgc, schedule, job, appConfig } = props;
     const { candidatePatchRequest, formError } = candidate;
     const { candidateData } = candidate.results

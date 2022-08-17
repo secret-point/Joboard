@@ -2,10 +2,10 @@ import { createHashHistory } from "history";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { CandidateState } from "../../src/reducers/candidate.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
-import { Address, Candidate, NheTimeSlotLocation } from "../../src/utils/types/common";
+import { Address, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation } from "../../src/utils/types/common";
 import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
-import { BGC_STEPS, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
+import { BGC_STEPS, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
 import { BGCState } from "../../src/reducers/bgc.reducer";
 import { NheState } from "../../src/reducers/nhe.reducer";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
@@ -452,3 +452,71 @@ export const TEST_SELF_IDENTIFICATION_STATE: SelfIdentificationState = {
     }
   },
 };
+
+export const TEST_NHE_TIME_SLOT: NHETimeSlot = {
+  timeSlotId:"VTS-0034139",
+  startTime: "10:30",
+  endTime: "11:00",
+  location: NHE_TIMESLOT_LOCATION,
+  timezone: "America/Chicago",
+  availableResources: 75,
+  appointmentsBooked: 24,
+  recruitingEventId: "",
+  timeRange: "10:30 AM - 11:00 AM",
+  date: "Thursday, Aug 11",
+  dateWithoutFormat: "11/08/2022",
+  childRequisitionId: "",
+  nheSource: "Centralization",
+};
+
+export const TEST_DAYS_HOURS_FILTER: DayHoursFilter[] = [
+  {
+    day: DAYS_OF_WEEK.MONDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-MONDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.TUESDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-TUESDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.WEDNESDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-WEDNESDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.THURSDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-THURSDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.FRIDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-FRIDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.SATURDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-SATURDAY'
+  },
+  {
+    day: DAYS_OF_WEEK.SUNDAY,
+    isActive: true,
+    startTime: '00:00',
+    endTime: '23:59',
+    dayTranslationKey: 'BB-DayName-SUNDAY'
+  }
+];

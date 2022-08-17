@@ -36,7 +36,7 @@ interface PreviousWorkedAtAmazonFormProps {
 
 type PreviousWorkedAtAmazonFormMergedProps = MapStateToProps & PreviousWorkedAtAmazonFormProps;
 
-const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps) => {
+export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps) => {
 
     const { candidate } = props;
     const { candidatePatchRequest, formError } = candidate;

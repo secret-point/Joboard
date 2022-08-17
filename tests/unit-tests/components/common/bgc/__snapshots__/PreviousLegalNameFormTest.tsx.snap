@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviousLegalNameForm should match snapshot 1`] = `
+<Col
+  gridGap={15}
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <InputWrapper
+    error={false}
+    id="previousLegalNameInput"
+    labelPosition="top"
+    labelText="Previous legal full name"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <Button
+    colorScheme="default"
+    iconPosition="leading"
+    onClick={[Function]}
+    shouldUseResponsiveContent={true}
+    size="default"
+    type="button"
+    variant="tertiary"
+  >
+    + Add / Show more previous names
+  </Button>
+</Col>
+`;

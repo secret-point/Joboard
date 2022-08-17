@@ -1,0 +1,589 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalBGCInfo should match snapshot 1`] = `
+<Col>
+  <H4
+    color="neutral90"
+    font="primary"
+    fontSize="T400"
+    fontWeight="regular"
+    hyphens="none"
+    margin={0}
+  >
+    Additional Background Information
+  </H4>
+  <Connect(CriminalRecordForm) />
+  <Connect(PreviousLegalNameForm) />
+  <Col
+    gridGap={15}
+    key="Address Line 1"
+  >
+    <FormInputText
+      defaultValue="test address line 1"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine1",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineOne",
+          "labelText": "Address Line 1",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-label-text",
+          "name": "additional BGC Address Line 1",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="Apartment, suite, .etc"
+  >
+    <FormInputText
+      defaultValue="test address line 2"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine2",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineTwo",
+          "labelText": "Apartment, suite, .etc",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-label-text",
+          "name": "Apartment, suite, .etc",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "required": false,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="City"
+  >
+    <FormInputText
+      defaultValue="Test City"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.city",
+          "errorMessage": "Please enter a valid city",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-city-error-text",
+          "hasError": false,
+          "id": "additionalBGCCity",
+          "labelText": "City",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-city-label-text",
+          "name": "City",
+          "regex": "^(?=\\\\S)[a-zA-ZÀ-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="State/province"
+  >
+    <FormInputSelect
+      defaultValue={
+        Object {
+          "code": "CA",
+          "displayValue": "CA -- California",
+          "translationKey": "BB-States-California",
+          "value": "California",
+        }
+      }
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.state",
+          "errorMessage": "Please enter a valid state/province",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-state-error-text",
+          "hasError": false,
+          "id": "additionalBGCState",
+          "labelText": "State/province",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-state-label-text",
+          "name": "State/province",
+          "placeholder": "Select a state",
+          "placeholderTranslationKey": "BB-BGC-Additional-bgc-form-state-placeholder-text",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\\\s])$",
+          "required": true,
+          "selectOptions": Array [
+            Object {
+              "code": "AL",
+              "displayValue": "AL -- Alabama",
+              "translationKey": "BB-States-Alabama",
+              "value": "Alabama",
+            },
+            Object {
+              "code": "AK",
+              "displayValue": "AK -- Alaska",
+              "translationKey": "BB-States-Alaska",
+              "value": "Alaska",
+            },
+            Object {
+              "code": "AZ",
+              "displayValue": "AZ -- Arizona",
+              "translationKey": "BB-States-Arizona",
+              "value": "Arizona",
+            },
+            Object {
+              "code": "AR",
+              "displayValue": "AR -- Arkansas",
+              "translationKey": "BB-States-Arkansas",
+              "value": "Arkansas",
+            },
+            Object {
+              "code": "CA",
+              "displayValue": "CA -- California",
+              "translationKey": "BB-States-California",
+              "value": "California",
+            },
+            Object {
+              "code": "CO",
+              "displayValue": "CO -- Colorado",
+              "translationKey": "BB-States-Colorado",
+              "value": "Colorado",
+            },
+            Object {
+              "code": "CT",
+              "displayValue": "CT -- Connecticut",
+              "translationKey": "BB-States-Connecticut",
+              "value": "Connecticut",
+            },
+            Object {
+              "code": "DE",
+              "displayValue": "DE -- Delaware",
+              "translationKey": "BB-States-Delaware",
+              "value": "Delaware",
+            },
+            Object {
+              "code": "DC",
+              "displayValue": "DC -- District of Columbia",
+              "translationKey": "BB-States-District-of-Columbia",
+              "value": "District of Columbia",
+            },
+            Object {
+              "code": "FL",
+              "displayValue": "FL -- Florida",
+              "translationKey": "BB-States-Florida",
+              "value": "Florida",
+            },
+            Object {
+              "code": "GA",
+              "displayValue": "GA -- Georgia",
+              "translationKey": "BB-States-Georgia",
+              "value": "Georgia",
+            },
+            Object {
+              "code": "HI",
+              "displayValue": "HI -- Hawaii",
+              "translationKey": "BB-States-Hawaii",
+              "value": "Hawaii",
+            },
+            Object {
+              "code": "ID",
+              "displayValue": "ID -- Idaho",
+              "translationKey": "BB-States-Idaho",
+              "value": "Idaho",
+            },
+            Object {
+              "code": "IL",
+              "displayValue": "IL -- Illinois",
+              "translationKey": "BB-States-Illinois",
+              "value": "Illinois",
+            },
+            Object {
+              "code": "IN",
+              "displayValue": "IN -- Indiana",
+              "translationKey": "BB-States-Indiana",
+              "value": "Indiana",
+            },
+            Object {
+              "code": "IA",
+              "displayValue": "IA -- Iowa",
+              "translationKey": "BB-States-Iowa",
+              "value": "Iowa",
+            },
+            Object {
+              "code": "KS",
+              "displayValue": "KS -- Kansas",
+              "translationKey": "BB-States-Kansas",
+              "value": "Kansas",
+            },
+            Object {
+              "code": "KY",
+              "displayValue": "KY -- Kentucky",
+              "translationKey": "BB-States-Kentucky",
+              "value": "Kentucky",
+            },
+            Object {
+              "code": "LA",
+              "displayValue": "LA -- Louisiana",
+              "translationKey": "BB-States-Louisiana",
+              "value": "Louisiana",
+            },
+            Object {
+              "code": "ME",
+              "displayValue": "ME -- Maine",
+              "translationKey": "BB-States-Maine",
+              "value": "Maine",
+            },
+            Object {
+              "code": "MD",
+              "displayValue": "MD -- Maryland",
+              "translationKey": "BB-States-Maryland",
+              "value": "Maryland",
+            },
+            Object {
+              "code": "MA",
+              "displayValue": "MA -- Massachusetts",
+              "translationKey": "BB-States-Massachusetts",
+              "value": "Massachusetts",
+            },
+            Object {
+              "code": "MI",
+              "displayValue": "MI -- Michigan",
+              "translationKey": "BB-States-Michigan",
+              "value": "Michigan",
+            },
+            Object {
+              "code": "MN",
+              "displayValue": "MN -- Minnesota",
+              "translationKey": "BB-States-Minnesota",
+              "value": "Minnesota",
+            },
+            Object {
+              "code": "MS",
+              "displayValue": "MS -- Mississippi",
+              "translationKey": "BB-States-Mississippi",
+              "value": "Mississippi",
+            },
+            Object {
+              "code": "MO",
+              "displayValue": "MO -- Missouri",
+              "translationKey": "BB-States-Missouri",
+              "value": "Missouri",
+            },
+            Object {
+              "code": "MT",
+              "displayValue": "MT -- Montana",
+              "translationKey": "BB-States-Montana",
+              "value": "Montana",
+            },
+            Object {
+              "code": "NE",
+              "displayValue": "NE -- Nebraska",
+              "translationKey": "BB-States-Nebraska",
+              "value": "Nebraska",
+            },
+            Object {
+              "code": "NV",
+              "displayValue": "NV -- Nevada",
+              "translationKey": "BB-States-Nevada",
+              "value": "Nevada",
+            },
+            Object {
+              "code": "NH",
+              "displayValue": "NH -- New Hampshire",
+              "translationKey": "BB-States-New-Hampshire",
+              "value": "New Hampshire",
+            },
+            Object {
+              "code": "NJ",
+              "displayValue": "NJ -- New Jersey",
+              "translationKey": "BB-States-New-Jersey",
+              "value": "New Jersey",
+            },
+            Object {
+              "code": "NM",
+              "displayValue": "NM -- New Mexico",
+              "translationKey": "BB-States-New-Mexico",
+              "value": "New Mexico",
+            },
+            Object {
+              "code": "NY",
+              "displayValue": "NY -- New York",
+              "translationKey": "BB-States-New-York",
+              "value": "New York",
+            },
+            Object {
+              "code": "NC",
+              "displayValue": "NC -- North Carolina",
+              "translationKey": "BB-States-North-Carolina",
+              "value": "North Carolina",
+            },
+            Object {
+              "code": "ND",
+              "displayValue": "ND -- North Dakota",
+              "translationKey": "BB-States-North-Dakota",
+              "value": "North Dakota",
+            },
+            Object {
+              "code": "OH",
+              "displayValue": "OH -- Ohio",
+              "translationKey": "BB-States-Ohio",
+              "value": "Ohio",
+            },
+            Object {
+              "code": "OK",
+              "displayValue": "OK -- Oklahoma",
+              "translationKey": "BB-States-Oklahoma",
+              "value": "Oklahoma",
+            },
+            Object {
+              "code": "OR",
+              "displayValue": "OR -- Oregon",
+              "translationKey": "BB-States-Oregon",
+              "value": "Oregon",
+            },
+            Object {
+              "code": "PA",
+              "displayValue": "PA -- Pennsylvania",
+              "translationKey": "BB-States-Pennsylvania",
+              "value": "Pennsylvania",
+            },
+            Object {
+              "code": "RI",
+              "displayValue": "RI -- Rhode Island",
+              "translationKey": "BB-States-Rhode-Island",
+              "value": "Rhode Island",
+            },
+            Object {
+              "code": "SC",
+              "displayValue": "SC -- South Carolina",
+              "translationKey": "BB-States-South-Carolina",
+              "value": "South Carolina",
+            },
+            Object {
+              "code": "SD",
+              "displayValue": "SD -- South Dakota",
+              "translationKey": "BB-States-South-Dakota",
+              "value": "South Dakota",
+            },
+            Object {
+              "code": "TN",
+              "displayValue": "TN -- Tennessee",
+              "translationKey": "BB-States-Tennessee",
+              "value": "Tennessee",
+            },
+            Object {
+              "code": "TX",
+              "displayValue": "TX -- Texas",
+              "translationKey": "BB-States-Texas",
+              "value": "Texas",
+            },
+            Object {
+              "code": "UT",
+              "displayValue": "UT -- Utah",
+              "translationKey": "BB-States-Utah",
+              "value": "Utah",
+            },
+            Object {
+              "code": "VT",
+              "displayValue": "VT -- Vermont",
+              "translationKey": "BB-States-Vermont",
+              "value": "Vermont",
+            },
+            Object {
+              "code": "VA",
+              "displayValue": "VA -- Virginia",
+              "translationKey": "BB-States-Virginia",
+              "value": "Virginia",
+            },
+            Object {
+              "code": "WA",
+              "displayValue": "WA -- Washington",
+              "translationKey": "BB-States-Washington",
+              "value": "Washington",
+            },
+            Object {
+              "code": "WV",
+              "displayValue": "WV -- West Virginia",
+              "translationKey": "BB-States-west-virginia",
+              "value": "West Virginia",
+            },
+            Object {
+              "code": "WI",
+              "displayValue": "WI -- Wisconsin",
+              "translationKey": "BB-States-wisconsin",
+              "value": "Wisconsin",
+            },
+            Object {
+              "code": "WY",
+              "displayValue": "WY -- Wyoming",
+              "translationKey": "BB-States-wyoming",
+              "value": "Wyoming",
+            },
+          ],
+          "type": "select",
+        }
+      }
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      valueAccessor={[Function]}
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="ZIP/Postal code"
+  >
+    <FormInputText
+      defaultValue="94458"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.zipcode",
+          "errorMessage": "Please enter a valid 5 digits zipcode",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-zipcode-error-text",
+          "hasError": false,
+          "id": "additionalBGCZipcode",
+          "labelText": "ZIP/Postal code",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-zipcode-label-text",
+          "name": "ZIP/Postal code",
+          "regex": "[0-9]{5}(?:-[0-9]{4})?$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <FormInputSelect
+    defaultValue={
+      Object {
+        "countryCode": "US",
+        "showValue": "United States",
+        "translationKey": "BB-Country-United-States",
+        "value": "United States",
+      }
+    }
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.address.country",
+        "errorMessage": "Please enter a valid country",
+        "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-country-error-text",
+        "hasError": false,
+        "id": "additionalBGC_Country",
+        "labelText": "Country",
+        "labelTranslationKey": "BB-BGC-Additional-bgc-form-country-label-text",
+        "name": "Country",
+        "required": true,
+        "selectOptions": Array [
+          Object {
+            "countryCode": "US",
+            "showValue": "United States",
+            "translationKey": "BB-Country-United-States",
+            "value": "United States",
+          },
+        ],
+        "type": "select",
+      }
+    }
+  />
+  <FormInputSelect
+    defaultValue={
+      Object {
+        "showValue": "Social Security Number",
+        "translationKey": "BB-BGC-Additional-bgc-form-national-id-options-ssn",
+        "value": "United States - Social Security Number",
+      }
+    }
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.governmentIdType",
+        "errorMessage": "Please enter a valid National ID Type",
+        "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-national-id-type-error-text",
+        "hasError": false,
+        "id": "additionalBGC_IdNumber",
+        "labelText": "National ID",
+        "labelTranslationKey": "BB-BGC-Additional-bgc-form-national-id-type-label-text-revise",
+        "name": "National ID Type",
+        "placeholderTranslationKey": "BB-BGC-Additional-bgc-form-country-national-id-type-text",
+        "required": true,
+        "selectOptions": Array [
+          Object {
+            "showValue": "Social Security Number",
+            "translationKey": "BB-BGC-Additional-bgc-form-national-id-options-ssn",
+            "value": "United States - Social Security Number",
+          },
+        ],
+        "type": "select",
+      }
+    }
+  />
+  <FormInputText
+    defaultValue="*****9599"
+    disabled={false}
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.idNumber",
+        "errorMessage": "Please enter a valid 9 digits social security number without dash",
+        "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-national-id-number-error-text",
+        "hasError": false,
+        "id": "idNumberInput",
+        "labelText": "National ID Number",
+        "labelTranslationKey": "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise",
+        "name": "idNumber",
+        "regex": "^[0-9]{9}$",
+        "required": true,
+        "type": "text",
+      }
+    }
+    inputValue=""
+  />
+  <Col
+    gridGap={15}
+    key="Date of Birth"
+  >
+    <DatePicker
+      defaultValue="1988-08-02"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.dateOfBirth",
+          "errorMessage": "Please enter a valid Date of birth",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-dob-error-text",
+          "hasError": false,
+          "id": "additionalBGCDateOfBirth",
+          "labelText": "Date of Birth",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-dob-label-text",
+          "name": "Date of Birth",
+          "regex": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "required": true,
+          "type": "datePicker",
+        }
+      }
+    />
+  </Col>
+  <Connect(PreviousWorkedAtAmazonForm) />
+  <Col
+    padding={
+      Object {
+        "bottom": "S300",
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Next
+    </Button>
+  </Col>
+</Col>
+`;

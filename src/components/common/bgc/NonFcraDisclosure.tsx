@@ -32,7 +32,7 @@ interface NonFcraDisclosureProps {
 
 type NonFcraDisclosureMergedProps = MapStateToProps & NonFcraDisclosureProps;
 
-const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
+export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
 
     const { application, schedule, bgc } = props;
     const applicationData = application.results;

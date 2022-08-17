@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FcraDisclosure should match snapshot 1`] = `
+<Col
+  className="FcraDisclosureContainer"
+  gridGap={15}
+>
+  <Col
+    gridGap="S300"
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Fair Credit Report Act Disclosure
+    </H4>
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+      In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates ('Amazon'), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a "background check".
+    </Text>
+  </Col>
+  <Col
+    gridGap="S300"
+    padding={
+      Object {
+        "top": "S200",
+      }
+    }
+  >
+    <DetailedRadio
+      defaultChecked={false}
+      key="Accept"
+      name="fcra-radio-col"
+      onChange={[Function]}
+      titleText="I AUTHORIZE Amazon to conduct this background check."
+      value="Accept"
+    />
+    <DetailedRadio
+      defaultChecked={false}
+      key="Decline"
+      name="fcra-radio-col"
+      onChange={[Function]}
+      titleText="I DECLINE to authorize Amazon this background check."
+      value="Decline"
+    />
+  </Col>
+</Col>
+`;

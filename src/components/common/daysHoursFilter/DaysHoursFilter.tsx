@@ -14,7 +14,7 @@ interface DaysHoursFilterProps {
   label: string
 }
 
-const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
+export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
 
   const { defaultFilter, onValueChange, label } = props;
   const [daysFilters, setDaysFilters] = useState<DayHoursFilter[]>(defaultFilter);
@@ -73,7 +73,7 @@ const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
         </Text>
         <Col gridGap={20}>
           {daysFilters.map(( filter, index ) => (
-              <fieldset>
+              <fieldset key={filter.day}>
                 <Col
                     key={filter.day}
                     className="container-border"
