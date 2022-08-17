@@ -388,6 +388,14 @@
       "value" : "Paso {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pregunta de convicción anterior",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> No incluyas delitos que tengan más de siete (7) años contados a partir de la fecha de la sentencia, de tal manera que no se incluya <strong>ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años_.  No incluyas delitos que no sean delitos menores o crímenes, como infracciones o condenas relacionadas con conductas que hayan sido despenalizadas desde la fecha de la condena, incluidos pero no limitados a los delitos relacionados con la mariguana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por delito menor o delito grave o has sido liberado de prisión o libertad condicional por una condena por delito menor o delito grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "No",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Qué información incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Proporciona la ciudad, país, estado de condena, fecha, naturaleza del delito, junto con información acerca de la sentencia",
@@ -1931,6 +1943,10 @@
     "BB-States-wyoming" : {
       "value" : "WY — Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Cargando...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "No se ha podido actualizar el WOTC.",

@@ -408,6 +408,10 @@
       "value" : "<strong>California:</strong> Do not include non-felony marijuana-related infractions or misdemeanour convictions that are more than 2 years old.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> Do not include, offences that are more than seven (7) years old from the date of sentencing, such that you should not include <strong>any</strong> period of incarceration in the calculation of the seven-year period.  Do not include offences that are not misdemeanours or felonies, such as infractions, or convictions related to conduct that has been decriminalized since the conviction date, including but not limited to marijuana offences.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>Colorado:</strong> Do not include information regarding a record of civil or military disobedience, unless the record resulted in a plea of guilty or a conviction by a court of competent jurisdiction.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -1771,6 +1775,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Please provide details of the conviction.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",

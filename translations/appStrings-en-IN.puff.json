@@ -388,6 +388,10 @@
       "value" : "Step {currentStep} of {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Previous Conviction Question",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-list-convictions-text" : {
       "value" : "<strong>Please list only convictions that are a matter of public record.</strong>  Arrests resolved in your favour are not convictions. Similarly, do not include any information relating to a conviction in the juvenile justice system, a matter considered in or processed through the juvenile justice system or charges that led to a diversion program or cases that have been dismissed, dismissed under a first offender’s law, sealed, expunged, pardoned, judicially dismissed or otherwise treated as non-convictions by law.  <strong>You are also not required to disclose violations, infractions, petty misdemeanours or summary offences.</strong>",
       "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
@@ -623,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Dates of employment — From/To (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Please enter a valid date of Employment",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "I do not have a Social Security Number",

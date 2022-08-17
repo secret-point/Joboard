@@ -404,6 +404,10 @@
       "value" : "<strong>Kalifornie:</strong> Neuvádějte odsouzení za přestupky nebo přestupky související s marihuanou, které nejsou trestné činy a jsou starší více než 2 roky.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Kalifornie:</strong> Neuvádějte trestné činy, které jsou starší než sedm (7) let od data odsouzení, takže byste do výpočtu sedmiletého období neměli uvádět <strong>žádnou</strong> dobu odnětí svobody_.  Neuvádějte trestné činy, které nejsou přestupky nebo trestné činy, například porušení zákona nebo odsouzení za jednání, které bylo od data odsouzení dekriminalizováno, mimo jiné včetně trestných činů souvisejících s marihuanou.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>Colorado:</strong> Neuvádějte informace týkající se záznamu občanské nebo vojenské neposlušnosti, pokud záznam nevedl k přiznání viny nebo k odsouzení příslušným soudem.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -443,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Ne",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Jaké informace zahrnout",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Uveďte město, zemi, stát odsouzení, datum, povahu trestného činu a informace o trestu",

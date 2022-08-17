@@ -392,9 +392,53 @@
       "value" : "Poprzednie pytanie o przekonanie",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Wymień tylko te wyroki skazujące, które są publicznie dostępne.</strong>  Aresztowania rozstrzygnięte na Twoją korzyść to nie wyroki skazujące. Podobnie, nie podawaj żadnych informacji związanych z wyrokiem skazującym w systemie wymiaru sprawiedliwości dla nieletnich, ani ze sprawami rozpatrywanymi przez system wymiaru sprawiedliwości dla nieletnich, ani zarzutów, które doprowadziły do programu resocjalizacji lub spraw, które zostały oddalone, oddalone z uwagi na bycie osobą dotąd niekaraną, zamknięte, wykreślone, ułaskawione, oddalone na drodze sądowej lub w inny sposób brak jest wyroku skazującego na mocy prawa.  <strong>Nie musisz również ujawniać naruszeń, wykroczeń, drobnych wykroczeń ani występków.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Przeszłość kryminalna niekoniecznie przeszkodzi Ci w zatrudnieniu, dalszej pracy, lub zleceniom jako niezależny wykonawca w Amazon.  Informacje te będą wykorzystywane wyłącznie zgodnie z obowiązującym prawem i wyłącznie w celu ustalenia, czy wyrok skazujący jest związany z pracą/zleceniem, o które się ubiegasz.  Nieudzielenie uczciwej odpowiedzi na to pytanie lub brak podania wymaganych dodatkowych szczegółów dotyczących przestępstw może skutkować zaprzestaniem rozpatrywania Twojego wniosku o zatrudnienie lub zlecenia jako niezależnego wykonawcy lub, jeśli jesteś już pracownikiem i/lub niezależnym wykonawcą w Amazon, takie nieudzielenie może skutkować rozwiązaniem stosunku pracy lub umowy zlecenia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Zanim podasz dodatkowe informacje o swojej przeszłości kryminalnej, musisz zapoznać się z poniższymi informacjami dotyczącymi prawa stanowego",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Kalifornia:</strong> Nie uwzględniaj wykroczeń związanych z marihuaną, które nie są przestępstwami, ani wyroków skazujących za wykroczenia, od których minęło więcej niż 2 lata.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, Kalifornia:</strong> Nie uwzględniaj przestępstw, które miały miejsce więcej niż siedem (7) lat od daty wyroku, tak, aby nie uwzględniać <strong>żadnego</strong> okresu pozbawienia wolności przy obliczaniu siedmioletniego okresu_.  Nie uwzględniaj przestępstw, które nie są wykroczeniami lub przestępstwami, takich jak wykroczenia lub wyroki skazujące związane z zachowaniem, które zostało zalegalizowane od daty skazania, w tym między innymi przestępstwa związane z marihuaną.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Kolorado:</strong> Nie uwzględniaj informacji dotyczących aktu niesubordynacji cywilnej lub wojskowej, chyba że akty te skutkowały przyznaniem się do winy lub skazaniem przez sąd właściwej jurysdykcji.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Nie dostarczaj kopii swojego raportu z historii kryminalnej.  Nie wskazuj wyroków skazujących za pierwsze wykroczenia za nietrzeźwość, zwykłą napaść, przekroczenie prędkości, drobne wykroczenia drogowe, awanturę lub zakłócenie spokoju. Nie wskazuj również wyroków skazujących za inne wykroczenia, w przypadku których od daty skazania lub końca jakiegokolwiek okresu pozbawienia wolności minęło ponad 3 lata, chyba że w ciągu tych 3 lat wydano kolejne wyroki skazujące. Osoba ubiegająca się o zatrudnienie, której skazanie uległo zatarciu zgodnie z sekcją 100F, sekcją 100G, sekcją 100H lub sekcją 100K rozdziału 276 Przepisów ogólnych, może odpowiedzieć „niekarany(-na)” w odniesieniu do niniejszego dochodzenia dotyczącego wcześniejszych aresztowań, stawiennictwa w postępowaniu karnym lub wyroków skazujących. Osoba ubiegająca się o zatrudnienie, której skazanie uległo zatarciu zgodnie z sekcją 100F, sekcją 100G, sekcją 100H lub sekcją 100K rozdziału 276 Przepisów ogólnych, może odpowiedzieć „niekarany(-na)” w odniesieniu do niniejszego dochodzenia dotyczącego wcześniejszych aresztowań, stawiennictwa w postępowaniu karnym lub w sprawach nieletnich, orzeczeń lub wyroków skazujących.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>Nowy Jork:</strong> Nie wskazuj żadnych działań, które zakończyły się na Twoją korzyść zgodnie z Kodeksem postępowania karnego („CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Nie zgłaszaj żadnego wyroku skazującego za wykroczenie związane z narkotykami, jak określono w Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadelfia, Pensylwania:</strong> Nie uwzględniaj żadnych wyroków skazujących, które miały miejsce więcej niż siedem (7) lat od daty niniejszego dochodzenia.  <strong>Przy obliczaniu siedmioletniego okresu nie należy uwzględniać żadnego okresu pozbawienia wolności.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Wirginia:</strong> Nie zgłaszaj skazania za wykroczenie dotyczące posiadania narkotyków, jak określono w sekcji 18.2-250.1 Kodeksu Wirginii.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Waszyngton:</strong> Oprócz poniższych, możesz wykluczyć wyrok skazujący, który był przedmiotem zaświadczenia o resocjalizacji lub innej równoważnej procedurze opartej na ustaleniu resocjalizacji.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Czy skazano Cię za wykroczenie albo przestępstwo lub zwolniono Cię z więzienia albo zwolniono warunkowo po wykroczeniu lub skazaniu za przestępstwo w ciągu ostatnich siedmiu (7) lat?",
@@ -1736,6 +1780,10 @@
       "value" : "Zaznacz to pole, aby kontynuować.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Podaj szczegóły wyroku skazującego.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL — Alabama",
       "note" : "Text for Alabama state"
@@ -1939,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY – Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Ładowanie...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Aktualizacja WOTC nie powiodła się.",

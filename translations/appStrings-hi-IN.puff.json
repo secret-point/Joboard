@@ -392,6 +392,54 @@
       "value" : "पिछला कन्विक्शन सवाल",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>कृपया केवल उन सजाओं को लिस्ट करें जो सार्वजनिक रिकॉर्ड में हैं.</strong>  आपके पक्ष में हल की गई गिरफ्तारियां सजा नहीं हैं. इसी तरह, किशोर न्याय प्रणाली में एक सजा से संबंधित कोई भी जानकारी या किशोर न्याय प्रणाली के माध्यम से विचार या संसाधित किए गए मामले या उन आरोपों को शामिल न करें जिनके कारण एक डायवर्सन कार्यक्रम या ऐसे मामले सामने आए हैं जिन्हें खारिज कर दिया गया है, पहले अपराधी के कानून के तहत खारिज कर दिया गया है, सील कर दिया गया है, निष्कासित कर दिया गया है, माफ़ किया गया, न्यायिक रूप से खारिज कर दिया गया या अन्यथा कानून द्वारा गैर-सजा के रूप में माना जाता है.  <strong>आपको उल्लंघन, क्षुद्र दुराचार या सारांश अपराधों का खुलासा करने की भी आवश्यक नहीं है.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "ज़रूरी नहीं है कि एक आपराधिक रिकॉर्ड आपको रोजगार, निरंतर रोजगार या Amazon के साथ एक स्वतंत्र कॉन्ट्रैक्टर के रूप में जुड़ने से रोक देगा.  इस जानकारी का इस्तेमाल केवल लागू कानून के अनुसार किया जाएगा और केवल यह निर्धारित करने के उद्देश्य से किया जाएगा कि क्या सजा उस नौकरी/संबंध से संबंधित है जिसके लिए आपने आवेदन किया था.  ईमानदारी से इस सवाल का जवाब देने में विफलता या अपराध के अनुरोधित अतिरिक्त डिटेल्स देने में विफलता के परिणामस्वरूप रोजगार के लिए या एक स्वतंत्र कॉन्ट्रैक्टर के रूप में जुड़ने के लिए आपके आवेदन पर विचार बंद कर दिया जा सकता है या अगर आप पहले से ही Amazon के साथ एक स्वतंत्र कॉन्ट्रैक्टर के रूप में कार्यरत हैं और/या संलग्न हैं तो इस तरह की विफलता के परिणामस्वरूप आपके रोजगार या संबंध को समाप्त किया जा सकता है.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "अपने आपराधिक इतिहास के बारे में अतिरिक्त जानकारी देने से पहले आपको नीचे दिए गए राज्य कानून की जानकारी की समीक्षा करनी चाहिए",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>कैलिफोर्निया:</strong> गैर-गुंडागर्दी वीड से संबंधित उल्लंघन या दुष्कर्म की सजाओं को शामिल न करें जो 2 साल से अधिक पुरानी हैं.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>सैन फ्रांसिस्को, कैलिफोर्निया:</strong> उन अपराधों को शामिल न करें जो सजा की तारीख से सात (7) वर्ष से अधिक पुराने हैं, जैसे कि आपको सात साल की अवधि की गणना में कैद की <strong>कोई भी</strong> अवधि_ शामिल नहीं करनी चाहिए.  ऐसे अपराधों को शामिल न करें जो दुराचार या गुंडागर्दी नहीं हैं, जैसे कि उल्लंघन या उन आचरण से संबंधित सजा जिन्हें सजा की तारीख के बाद से गैर-आपराधिक घोषित कर दिया गया है, ये वीड अपराधों तक सीमित नहीं है.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>कॉलोराडो:</strong> नागरिक या सैन्य अवज्ञा के रिकॉर्ड के बारे में जानकारी शामिल न करें, जब तक कि रिकॉर्ड के परिणामस्वरूप दोष की याचिका या सक्षम क्षेत्राधिकार की अदालत द्वारा सजा न दी गई हो.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>मासेचुसेट्स:</strong> अपनी आपराधिक इतिहास रिपोर्ट की एक प्रति प्रदान न करें.  नशे, साधारण हमले, तेज़ गाड़ी चलाना, मामूली यातायात उल्लंघन, शांति भंग करना या अशांति के लिए पहली बार दुर्व्यवहार की सजा की पहचान न करें. इसके अलावा अन्य दुराचार के लिए सजा की पहचान न करें जहां सजा की तारीख या कारावास की किसी भी अवधि का अंत 3 साल से अधिक समय पहले था, जब तक कि उन 3 वर्षों के भीतर बाद में सजा नहीं हुई हो. रोजगार के लिए एक आवेदक, धारा 100F, धारा 100G, धारा 100H या सामान्य कानूनों के अध्याय 276 की धारा 100K के अनुसार एक रिकॉर्ड के साथ पूर्व गिरफ्तारी, आपराधिक अदालत में पेशी या सजा के संबंध में एक जांच के लिए 'नो रिकॉर्ड' का जवाब दे सकता है. रोजगार के लिए एक आवेदक, धारा 100F, धारा 100G, धारा 100H या सामान्य कानूनों के अध्याय 276 की धारा 100K के अनुसार एक रिकॉर्ड के साथ पूर्व गिरफ्तारी, आपराधिक अदालत में पेशी, किशोर अदालत में पेशी, निर्णय या सजा के संबंध में एक जांच के लिए 'नो रिकॉर्ड' का जवाब दे सकता है.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>न्यू यॉर्क:</strong> आपराधिक प्रक्रिया कानून (“CPL”) §160.50 के अनुसार आपके पक्ष में समाप्त होने वाली किसी भी कार्रवाई की पहचान न करें.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ओहायो:</strong> ओहियो रेव कोड 2925.11 के तहत परिभाषित एक दुष्कर्म नशीली दवाओं के उल्लंघन के लिए किसी भी सजा को रिपोर्ट न करें.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>फिलाडेल्फिया, पेंसिल्वेनिया:</strong> इस पूछताछ की तारीख से सात (7) वर्ष से अधिक समय पहले हुई किसी भी सजा को शामिल न करें.  <strong>कैद की किसी भी अवधि को सात साल की अवधि की गणना में शामिल नहीं किया जाना चाहिए.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>वर्जीनिया:</strong> वर्जीनिया संहिता की धारा 18.2-250.1 के तहत परिभाषित एक दुष्कर्म नशीली दवाओं के कब्जे की सजा को रिपोर्ट न करें.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>सिएटल, वॉशिंगटन:</strong> नीचे दी गईं सजाओं के अलावा, आप एक ऐसी आपराधिक सजा को बाहर कर सकते हैं जो पुनर्वास के प्रमाण पत्र या पुनर्वास की खोज के आधार पर अन्य समकक्ष प्रक्रिया का विषय रही है.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "क्या आपको दुष्कर्म या गुंडागर्दी का दोषी ठहराया गया है या पिछले सात (7) सालों में एक दुष्कर्म या गुंडागर्दी की सजा से जेल या पैरोल से रिहा किया गया है?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -1939,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY — वायोमिंग",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "लोडिंग...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "WOTC अपडेट करने में विफल हुए.",

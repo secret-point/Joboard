@@ -1944,6 +1944,10 @@
       "value" : "وايومنغ - وايومنغ",
       "note" : "Text for Wyoming state"
     },
+    "BB-spinner-loading-text" : {
+      "value" : "جارٍ التحميل...",
+      "note" : "Text for Loading spinner"
+    },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "تعذر تحديث WOTC.",
       "note" : "error message when failed to update wotc status"

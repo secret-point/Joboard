@@ -392,6 +392,54 @@
       "value" : "മുമ്പത്തെ ബോധ്യം വരുത്തല്‍ ചോദ്യം",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>പൊതു രേഖകളുടെ സാരാംശമായ ശിക്ഷാവിധികൾ മാത്രം ലിസ്റ്റ് ചെയ്യുക.</strong>  നിങ്ങൾക്ക് അനുകൂലമായി തീര്‍പ്പുകൽപ്പിക്കപ്പെടുന്ന അറസ്റ്റുകൾ ശിക്ഷാവിധികള്‍ അല്ല. അതുപോലെ, ജുവനൈൽ ജസ്റ്റിസ് സിസ്റ്റത്തിലെ ഒരു ശിക്ഷയുമായി ബന്ധപ്പെട്ട ഏതെങ്കിലും വിവരങ്ങൾ, അല്ലെങ്കിൽ ജുവനൈൽ ജസ്റ്റിസ് സിസ്റ്റത്തിലൂടെ പരിഗണിക്കുകയോ പ്രോസസ്സ് ചെയ്യുകയോ ചെയ്ത ഒരു വിഷയം, അല്ലെങ്കിൽ ഒരു വഴിതിരിച്ചുവിടൽ പ്രോഗ്രാമിലേക്ക് നയിച്ച കേസുകൾ അല്ലെങ്കിൽ ഒരു ആദ്യ കുറ്റവാളിക്കുള്ള നിയമപ്രകാരം തള്ളപ്പെട്ടതോ, സീൽ ചെയ്തതോ, നീക്കം ചെയ്തതോ, മാപ്പുനൽകിയതോ, കോടതി തള്ളിക്കളയുന്നതോ അല്ലെങ്കിൽ നിയമം മൂലം ശിക്ഷിക്കപ്പെടാത്തവയായി പരിഗണിക്കപ്പെടുന്നതോ ആയ ഏതെങ്കിലും വിവരങ്ങൾ ഉൾപ്പെടുത്തരുത്.  <strong>ലംഘനങ്ങൾ, അതിക്രമങ്ങൾ, നിസ്സാര ശിക്ഷ അർഹിക്കുന്ന കുറ്റകൃത്യങ്ങൾ അല്ലെങ്കിൽ സംഗ്രഹ കുറ്റകൃത്യങ്ങൾ എന്നിവ നിങ്ങൾ വെളിപ്പെടുത്തേണ്ട ആവശ്യമില്ല.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "ഒരു ക്രിമിനൽ ചരിത്രം നിങ്ങളെ ജോലിയിൽ നിന്നോ തുടർച്ചയായ ജോലിയിൽ നിന്നോ അല്ലെങ്കിൽ Amazon-ൽ ഒരു സ്വതന്ത്ര കരാറുകാരനെന്ന നിലയിൽ പ്രവർത്തിക്കുന്നതിൽ നിന്നോ നിങ്ങളെ അവശ്യം തടയില്ല.  ബാധകമായ നിയമത്തിന് അനുസൃതമായി മാത്രമേ ഈ വിവരങ്ങൾ ഉപയോഗിക്കപ്പെടുകയുള്ളൂ, നിങ്ങൾ അപേക്ഷിച്ച ജോലി/കരാറുമായി ഈ കുറ്റം ചുമത്തുന്നത് ബന്ധപ്പെട്ടതാണോ എന്ന് നിർണ്ണയിക്കുന്നതിനുള്ള ഉദ്ദേശ്യത്തിനായി മാത്രം.  ഈ ചോദ്യത്തിന് സത്യസന്ധമായി ഉത്തരം നൽകുന്നതിൽ അല്ലെങ്കിൽ കുറ്റകൃത്യത്തിന്റെ (കുറ്റകൃത്യങ്ങളുടെ) അഭ്യർത്ഥിച്ച അധിക വിശദാംശങ്ങൾ നൽകുന്നതിലെ പരാജയം, തൊഴിലിനായുള്ള നിങ്ങളുടെ അപേക്ഷയുടെ പരിഗണന നിർത്തുന്നതിന് കാരണമായേക്കാം അല്ലെങ്കിൽ, നിങ്ങൾ Amazon-നായി ഇതിനകം ജോലിയിൽ ഏർപ്പെട്ടിരിക്കുകയും ഒപ്പം/അല്ലെങ്കിൽ ഒരു സ്വതന്ത്ര കരാറുകാരനായി പ്രവർത്തിക്കുകയാണെങ്കിൽ, അത്തരം പരാജയം നിങ്ങളുടെ ജോലി അല്ലെങ്കിൽ കരാര്‍ അവസാനിപ്പിക്കുന്നതിന് കാരണമായേക്കാം.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "നിങ്ങളുടെ ക്രിമിനൽ ചരിത്രത്തെക്കുറിച്ചുള്ള കൂടുതൽ വിവരങ്ങൾ നൽകുന്നതിന് മുമ്പ് ചുവടെയുള്ള സംസ്ഥാന നിയമ വിവരങ്ങൾ നിങ്ങൾ അവലോകനം ചെയ്യണം",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>കാലിഫോർണിയ:</strong> 2 വർഷത്തിലധികം പഴക്കമുള്ള മരിജുവാനയുമായി ബന്ധപ്പെട്ട കുറ്റകൃത്യങ്ങളല്ലാത്ത ലംഘനങ്ങളോ ശിക്ഷാര്‍ഹമായ പെരുമാറ്റമോ കുറ്റകൃത്യമോ ഉൾപ്പെടുത്തരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>സാൻ ഫ്രാൻസിസ്കോ, കാലിഫോർണിയ:</strong> ശിക്ഷ വിധിച്ച തീയതി മുതൽ ഏഴ് (7) വർഷത്തിൽ കൂടുതൽ പഴക്കമുള്ള കുറ്റകൃത്യങ്ങൾ ഉൾപ്പെടുത്തരുത്, അതായത് ഏഴ് വർഷത്തെ കാലയളവിന്റെ കണക്കുകൂട്ടലിൽ നിങ്ങൾ തടവിന്റെ <strong>ഒരു</strong> കാലയളവും ഉൾപ്പെടുത്തരുത്_.  മരിജുവാന കുറ്റകൃത്യങ്ങൾ ഉൾപ്പെടെ, എന്നാൽ അതിൽ മാത്രം പരിമിതപ്പെടുത്താതെ, ശിക്ഷിക്കപ്പെട്ട തീയതി മുതൽ കുറ്റകരമല്ലാതാക്കിയ പെരുമാറ്റവുമായി ബന്ധപ്പെട്ട ശിക്ഷാവിധികളോ ലംഘനങ്ങളോ പോലുള്ള ദുഷ്പ്രവൃത്തികളോ കുറ്റകൃത്യങ്ങളോ അല്ലാത്ത കുറ്റകൃത്യങ്ങൾ ഉൾപ്പെടുത്തരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>കൊളറാഡോ:</strong> സിവിൽ അല്ലെങ്കിൽ സൈനിക ആജ്ഞാനിഷേധത്തിന്റെ ഒരു ചരിത്രത്തെ കുറിച്ചുള്ള വിവരങ്ങൾ കുറ്റസമ്മതത്തിലോ ഒരു ഹർജിയിലോ യോഗ്യമായ അധികാരപരിധിയിലുള്ള ഒരു കോടതിയുടെ ശിക്ഷയിലോ കലാശിക്കുന്നില്ലെങ്കിൽ ഉൾപ്പെടുത്തരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>മസാച്ചുസെറ്റ്സ്:</strong> നിങ്ങളുടെ ക്രിമിനൽ പശ്ചാത്തല റിപ്പോർട്ടിന്റെ ഒരു പകർപ്പ് നൽകരുത്.  മദ്യപാനം, നിസാരമായ ആക്രമണം, അമിതവേഗത, ചെറിയ ട്രാഫിക് ലംഘനങ്ങൾ, സംഘർഷം അല്ലെങ്കിൽ സമാധാനം തകർക്കൽ എന്നിവയ്‌ക്കായി ആദ്യ തവണത്തെ ദുഷ്പ്രവണതകൾ അല്ലെങ്കിൽ കുറ്റവിചാരണകൾ തിരിച്ചറിയരുത്. ആ 3 വർഷത്തിനുള്ളിൽ തുടർന്നുള്ള കുറ്റവിചാരണകൾ ഉണ്ടായില്ലെങ്കിൽ, 3 വർഷത്തിൽ കൂടുതൽ മുമ്പ് ശിക്ഷ വിധിക്കപ്പെട്ട തീയതിയോ ഏതെങ്കിലും കാലയളവിന്റെ അവസാനമോ ഉണ്ടായിരുന്ന മറ്റ് കുറ്റങ്ങൾക്കുള്ള ശിക്ഷകൾ തിരിച്ചറിയരുത്. സെക്ഷൻ 100F, സെക്ഷൻ 100G, സെക്ഷൻ 100H അല്ലെങ്കിൽ പൊതുനിയമങ്ങളുടെ 276-ാം അധ്യായത്തിലെ സെക്ഷൻ 100K എന്നിവയ്ക്ക് അനുസൃതമായ ഒരു രേഖ നീക്കം ചെയ്ത ഉദ്യോഗാർത്ഥിക്ക്, മുൻകൂർ അറസ്റ്റുകൾ, ക്രിമിനൽ കോടതിയിലെ ഹാജരാകൽ അല്ലെങ്കിൽ ശിക്ഷകൾ എന്നിവയുടെ ഒരു അന്വേഷണവുമായി ബന്ധപ്പെട്ട് ഇവിടെ 'നോ റെക്കോർഡ്' എന്ന് ഉത്തരം നൽകാം. സെക്ഷൻ 100F, സെക്ഷൻ 100G, സെക്ഷൻ 100H അല്ലെങ്കിൽ പൊതുനിയമങ്ങളുടെ 276-ാം അധ്യായത്തിലെ സെക്ഷൻ 100K എന്നിവയ്ക്ക് അനുസൃതമായ ഒരു രേഖ നീക്കം ചെയ്ത ഉദ്യോഗാർത്ഥിക്ക്, മുൻകൂർ അറസ്റ്റുകൾ, ക്രിമിനൽ കോടതിയിലെ ഹാജരാകൽ, ജുവനൈൽ കോടതിയിലെ ഹാജരാകൽ, ന്യായവിചാരണ അല്ലെങ്കിൽ ശിക്ഷാവിധികൾ എന്നിവയുടെ ഒരു അന്വേഷണവുമായി ബന്ധപ്പെട്ട് ഇവിടെ 'നോ റെക്കോർഡ്' എന്ന് ഉത്തരം നൽകാം.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>ന്യൂയോർക്ക്:</strong> ക്രിമിനൽ നടപടിക്രമ നിയമം (\"CPL\") §160.50-ന് അനുസൃതമായി നിങ്ങൾക്ക് അനുകൂലമായി അവസാനിക്കുന്ന ഏതെങ്കിലും പ്രവർത്തനങ്ങളെ തിരിച്ചറിയരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ഒഹായോ:</strong> ഒഹായോ Rev. കോഡ് 2925.11 പ്രകാരം നിർവചിച്ചിട്ടുള്ള ഒരു ശിക്ഷാര്‍ഹമായ മയക്കുമരുന്ന് ലംഘനത്തിന് ഏതെങ്കിലും ശിക്ഷ റിപ്പോർട്ട് ചെയ്യരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ഫിലാഡൽഫിയ, പെൻസിൽവാനിയ:</strong> ഈ അന്വേഷണത്തിന്റെ തീയതി മുതൽ ഏഴ് (7) വർഷത്തിൽ കൂടുതൽ സംഭവിച്ച ശിക്ഷാവിധികൾ ഉൾപ്പെടുത്തരുത്.  <strong>ഏഴ് വർഷത്തെ കാലയളവിന്റെ കണക്കെടുപ്പിൽ തടവിന്റെ ഏതെങ്കിലും കാലയളവ് ഉൾപ്പെടുത്താൻ പാടില്ല.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>വിർജീനിയ:</strong> വിർജീനിയ കോഡിലെ സെക്ഷൻ 18.2-250.1 നിർവചിച്ചിരിക്കുന്നതുപോലെ, മയക്കുമരുന്ന് കൈവശം വയ്ക്കൽ ശിക്ഷാര്‍ഹമായ കുറ്റകൃത്യമായി റിപ്പോർട്ട് ചെയ്യരുത്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>സിയാറ്റിൽ, വാഷിംഗ്ടൺ:</strong> ഇനിപ്പറയുന്നവയ്ക്ക് പുറമേ, പുനരധിവാസത്തിന്റെ ഒരു കണ്ടെത്തലിന്റെ അടിസ്ഥാനത്തിൽ പുനരധിവാസ സർട്ടിഫിക്കറ്റിന്റെയോ മറ്റ് തത്തുല്യ നടപടിക്രമങ്ങളുടെയോ കാരണമായിട്ടുള്ള ഒരു ക്രിമിനൽ ശിക്ഷ നിങ്ങൾക്ക് ഒഴിവാക്കാവുന്നതാണ്.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "കഴിഞ്ഞ ഏഴ് (7) വർഷങ്ങളിൽ നിങ്ങൾ ദുഷ്കൃത്യത്തിനോ കുറ്റകൃത്യത്തിനോ ശിക്ഷിക്കപ്പെട്ടിട്ടുണ്ടോ അല്ലെങ്കില്‍ ശിക്ഷിക്കപ്പെടുകയോ അത്തരം കാര്യങ്ങളെത്തുടര്‍ന്ന് ജയിലിൽ നിന്നോ പരോളില്‍ നിന്നോ മോചിപ്പിക്കപ്പെട്ട വ്യക്തിയാണോ?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -403,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "ഇല്ല",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "എന്തൊക്കെ വിവരങ്ങളാണ് ഉൾപ്പെടുത്തേണ്ടത്",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "ശിക്ഷാവിധിയുടെ വിവരങ്ങളോടൊപ്പം നഗരം, രാജ്യം, കുറ്റം ചുമത്തിയ സംസ്ഥാനം, തീയതി, കുറ്റകൃത്യത്തിന്റെ സ്വഭാവം എന്നിവ നൽകുക",
@@ -1935,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- വ്യോമിംഗ്",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "ലോഡ് ചെയ്യുന്നു...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "WOTC അപ്ഡേറ്റ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.",

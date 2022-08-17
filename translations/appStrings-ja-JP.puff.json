@@ -408,6 +408,10 @@
       "value" : "<strong>カリフォルニア州:</strong> 2年以上経過した非重罪マリファナ関連の違反行為または軽罪の有罪判決は含めないでください。",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>カリフォルニア州サンフランシスコ:</strong> 判決日から7年以上経つ犯罪は含めません。よって、7年間の期間内の<strong>いかなる</strong>入所期間も計算に含めないでください。 違反行為など、軽罪や重罪ではない犯罪、または有罪判決日以降に非犯罪化された行為に関連する有罪判決（大麻犯罪を含むがこれに限定されるものではない）は含めないでください。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>コロラド州:</strong> 民事または軍事的不服従の記録に関する情報を含めないでください。ただし、その記録が有罪の嘆願または管轄裁判所による有罪判決につながった場合を除きます。",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -623,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "雇用日-から/まで（月/年-月/年）",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "有効な採用日を入力してください",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "社会保障番号を持っていない",
@@ -1979,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY — ワイオミング",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "読み込み中...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "WOTC の更新に失敗しました。",

@@ -388,6 +388,10 @@
       "value" : "Schritt {currentStep} von {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Frage zu Vorstrafen",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Wurdest du in den letzten sieben (7) Jahren wegen eines Vergehens oder eines Verbrechens verurteilt oder aus dem Gefängnis entlassen oder auf Bewährung entlassen?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nein",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Die folgenden Informationen müssen enthalten sein",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Gib Ort, Land, Bundesstaat/Bundesland der Verurteilung, Datum, Art der Straftat sowie Informationen zum Strafmaß an",

@@ -392,6 +392,10 @@
       "value" : "Pregunta sobre condenas anteriores",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, California:</strong> No incluyas delitos de más de siete (7) años desde la fecha de la sentencia; por lo que no debes incluir <strong>ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años_.  No incluyas delitos que no sean faltas o delitos graves, como infracciones o condenas relacionadas con conductas despenalizadas desde la fecha de la condena, incluyendo, entre otros, delitos de marihuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por delito menor o delito grave o has sido liberado de prisión o de libertad condicional por una condena por delito menor o delito grave en los últimos siete (7) años?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -1939,6 +1943,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Cargando...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Error al actualizar WOTC.",

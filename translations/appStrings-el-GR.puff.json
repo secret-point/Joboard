@@ -388,6 +388,58 @@
       "value" : "Βήμα {currentStep} από {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Προηγούμενη ερώτηση καταδίκης",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Υποβάλετε αναφορά μόνο για καταδίκες που είναι θέμα δημόσιου αρχείου.</strong>  Συλλήψεις που επιλύονται υπέρ σας δεν είναι καταδίκες. Ομοίως, δεν περιλαμβάνουν οποιαδήποτε πληροφορία σχετικά με μια καταδίκη στο σύστημα δικαιοσύνης ανηλίκων, ή ένα θέμα που εξετάζεται ή διεκπεραιώνεται μέσω του συστήματος δικαιοσύνης ανηλίκων, ή κατηγορίες που οδήγησαν σε ένα πρόγραμμα εκτροπής ή υποθέσεις που έχουν απορριφθεί, απορριφθεί σύμφωνα με το νόμο του πρώτου δράστη, σφραγίζονται, απαλείφθηκαν, συγχωρείται, απορρίπτεται δικαστικά ή αντιμετωπίζεται με άλλο τρόπο ως μη καταδίκες από το νόμο.  <strong>Επίσης, δεν απαιτείται να αποκαλύψετε παραβιάσεις, παραβάσεις, ασήμαντα πλημμελήματα ή συνοπτικά αδικήματα.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Ένα ποινικό μητρώο δεν θα σας αποδώσει απαραιτήτως από την απασχόληση, τη συνέχιση της απασχόλησης ή από μια δέσμευση ως ανεξάρτητος εργολάβος με την Amazon.  Αυτές οι πληροφορίες θα χρησιμοποιηθούν μόνο σύμφωνα με την ισχύουσα νομοθεσία και μόνο για τον σκοπό να διαπιστωθεί εάν η καταδίκη σχετίζεται με την εργασία/δέσμευση για την οποία υποβάλατε αίτηση.  Η αποτυχία απάντησης σε αυτή την ερώτηση με ειλικρίνεια ή παροχή των απαιτούμενων πρόσθετων στοιχείων για το αδίκημα (τα) αδικήματα μπορεί να οδηγήσει σε διακοπή της εξέτασης της αίτησής σας για απασχόληση ή για ανεξάρτητη εργασία εργολάβου ή, εάν έχετε ήδη προσληφθεί ή/και προσληφθεί ως ανεξάρτητος εργολάβος με Amazon, μια τέτοια αποτυχία μπορεί να οδηγήσει σε τερματισμό της εργασίας ή της δέσμευσής σας.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Θα πρέπει να ελέγξετε τις πληροφορίες του κρατικού νόμου παρακάτω πριν δώσετε πρόσθετες πληροφορίες σχετικά με το ποινικό σας ιστορικό",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Καλιφόρνια:</strong> Μην συμπεριλάβετε μη κακούργημα που σχετίζονται με τη μαριχουάνα παραβάσεις ή καταδίκες πλημμελήματος που είναι άνω των 2 ετών.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>Σαν Φρανσίσκο, Καλιφόρνια:</strong> Μην συμπεριλάβετε αδικήματα άνω των επτά (7) ετών από την ημερομηνία έκδοσης της ποινής, έτσι ώστε να μην περιλαμβάνεται <strong>οποιαδήποτε</strong> περίοδος φυλάκισης στον υπολογισμό της επταετούς περιόδου_.  Μην περιλαμβάνετε αδικήματα που δεν αποτελούν πλημμελήματα ή κακουργήματα, όπως παραβάσεις ή καταδίκες που σχετίζονται με συμπεριφορά που έχει αποποινικοποιηθεί από την ημερομηνία της καταδίκης, συμπεριλαμβανομένων ενδεικτικά αδικημάτων μαριχουάνας.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Κολοράντο:</strong> Να μην περιλαμβάνονται πληροφορίες σχετικά με μητρώο πολιτικής ή στρατιωτικής ανυπακοής, εκτός εάν το αρχείο οδήγησε σε δήλωση ενοχής ή καταδίκη από αρμόδιο δικαστήριο.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Μασαχουσέτη</strong> Μην παράσχετε αντίγραφο της αναφοράς του ποινικού σας ιστορικού.  Μην εντοπίζετε τις καταδίκες για πρώτη φορά πλημμέλημα για μέθη, απλή επίθεση, υπερβολική ταχύτητα, μικρές τροχαίες παραβάσεις, συμπλοκή ή διατάραξη της ειρήνης. Επίσης, δεν προσδιορίζονται καταδίκες για άλλα πλημμελήματα όταν η ημερομηνία καταδίκης ή η λήξη οποιασδήποτε περιόδου φυλάκισης ήταν πριν από περισσότερα από τρία έτη, εκτός εάν υπήρξαν μεταγενέστερες καταδίκες εντός των τριών αυτών ετών. Ο αιτών εργασία με μητρώο που έχει διαγραφεί σύμφωνα με το άρθρο 100F, το τμήμα 100G, το τμήμα 100H ή το τμήμα 100K του κεφαλαίου 276 των Γενικών Νόμων μπορεί να απαντήσει σε «μη εγγραφή» σε σχέση με έρευνα του παρόντος σχετικά με προηγούμενες συλλήψεις, εμφανίσεις σε ποινικό δικαστήριο ή καταδίκες. Ο αιτών απασχόληση με μητρώο που έχει διαγραφεί σύμφωνα με το άρθρο 100F, το τμήμα 100G, το τμήμα 100H ή το τμήμα 100K του κεφαλαίου 276 των Γενικών Νόμων μπορεί να απαντήσει «χωρίς εγγραφή» σε έρευνα του παρόντος σχετικά με προηγούμενες συλλήψεις, εμφανίσεις σε ποινικό δικαστήριο, εμφανίσεις σε δικαστήριο ανηλίκων, δικαστικές αποφάσεις ή καταδίκες.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>Νέα Υόρκη:</strong> Μην εντοπίζετε οποιεσδήποτε ενέργειες που τερματίστηκαν υπέρ σας σύμφωνα με το Δίκαιο Ποινικής Δικονομίας («CPL») §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Οχάιο:</strong> Μην καταγγείλετε καταδίκη για πλημμέλημα παραβίαση ναρκωτικών, όπως ορίζεται στον κώδικα 2925.11 του Οχάιο.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Φιλαδέλφεια, Πενσιλβανία:</strong> Να μην περιληφθούν καταδίκες που έλαβαν χώρα σε διάστημα μεγαλύτερο των επτά (7) ετών από την ημερομηνία διεξαγωγής της παρούσας έρευνας.  <strong>Οποιαδήποτε περίοδος φυλάκισης δεν θα πρέπει να λαμβάνεται υπόψη στον υπολογισμό της επταετούς περιόδου.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Βιρτζίνια:</strong> Μην αναφέρετε ένα πλημμέλημα καταδίκη κατοχή ναρκωτικών, όπως ορίζεται στην παράγραφο 18.2-250.1 του Κώδικα της Βιρτζίνια.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Σιάτλ, Ουάσινγκτον:</strong> Εκτός από τα παρακάτω, μπορείτε να αποκλείσετε ποινική καταδίκη που έχει αποτελέσει αντικείμενο πιστοποιητικού αποκατάστασης ή άλλης ισοδύναμης διαδικασίας βάσει της διαπίστωσης της αποκατάστασης.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Έχετε καταδικαστεί για πλημμέλημα ή κακούργημα ή έχετε αποφυλακιστεί ή αποφυλακιστήκατε υπό όρους μετά από καταδίκη για πλημμέλημα ή κακούργημα κατά τα τελευταία επτά (7) έτη;",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Όχι",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Ποιες πληροφορίες πρέπει να συμπεριλάβετε",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Παροχή πόλης, χώρας, πολιτείας καταδίκης, ημερομηνίας, φύσης του αδικήματος, καθώς και πληροφορίες για την καταδίκη",

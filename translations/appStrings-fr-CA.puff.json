@@ -388,6 +388,10 @@
       "value" : "Étape {currentStep} sur {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Californie :</strong> N’incluez pas les infractions dont la date de condamnation remonte à plus de sept (7) ans, afin de n’inclure <strong>aucune</strong> période d’incarcération dans le calcul de la période de sept ans_.  N’incluez pas les infractions qui ne sont pas des délits ou des crimes, comme les infractions ou les condamnations liées à la conduite, qui ont été décriminalisées depuis la date de la condamnation, y compris, mais sans s’y limiter, les infractions liées à la marijuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Avez-vous été condamné pour un délit ou un crime, ou avez-vous été libéré de prison ou remis en liberté conditionnelle après avoir été condamné pour un délit ou un crime au cours des sept (7) dernières années?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +403,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Non",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Quels renseignements inclure",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Indiquez la ville, le pays, l’État où la condamnation a eu lieu, la date, la nature de l’infraction, ainsi que les informations relatives à la peine",
@@ -1720,6 +1728,10 @@
       "value" : "Veuillez cocher la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Veuillez fournir les détails de la condamnation.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",
       "note" : "Text for Alabama state"
@@ -1923,6 +1935,10 @@
     "BB-States-wyoming" : {
       "value" : "WY – Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Chargement en cours...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Impossible de mettre à jour le WOTC.",

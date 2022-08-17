@@ -392,9 +392,53 @@
       "value" : "Soalan Sabitan Terdahulu",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Sila senaraikan hanya sabitan yang merupakan rekod awam.</strong>  Penyelesaian tangkapan yang memihak kepada anda tidak dianggap sebagai sabitan. Begitu juga, jangan masukkan sebarang maklumat yang berkaitan dengan sabitan dalam sistem keadilan juvana, atau perkara yang dipertimbangkan dalam atau diproses melalui sistem keadilan juvana, atau pertuduhan yang membawa kepada program pengalihan atau kes yang telah ditolak, ditolak di bawah undang-undang pesalah pertama, dimeterai, dimansuhkan, diampuni, dipecat secara kehakiman atau sebaliknya dianggap sebagai tidak disabitkan oleh undang-undang.  <strong>Anda juga tidak perlu mendedahkan pencabulan, pelanggaran, salah laku kecil, atau kesalahan ringkasan.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Rekod jenayah tidak semestinya akan menghalang anda daripada bekerja, meneruskan pekerjaan, atau melibatkan diri sebagai kontraktor bebas dengan Amazon.  Maklumat ini hanya akan digunakan menurut undang-undang yang terpakai dan hanya untuk tujuan menentukan sama ada sabitan itu berkaitan dengan pekerjaan/penglibatan yang anda pohon.  Kegagalan untuk menjawab soalan ini dengan jujur atau memberikan butiran tambahan yang diminta tentang kesalahan boleh mengakibatkan pertimbangan bagi permohonan anda untuk mendapatkan pekerjaan atau penglibatan sebagai kontraktor bebas dihentikan atau, jika anda sudah bekerja dan/atau terlibat sebagai kontraktor bebas dengan Amazon, kegagalan tersebut boleh mengakibatkan penamatan pekerjaan atau penglibatan anda.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Anda mesti menyemak maklumat undang-undang negeri di bawah sebelum memberikan maklumat tambahan tentang sejarah jenayah anda",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> Jangan sertakan pelanggaran berkaitan dengan ganja yang bukan feloni atau sabitan kesalahan kecil yang sudah berusia lebih daripada 2 tahun.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, California:</strong> Jangan sertakan, kesalahan yang berusia lebih daripada tujuh (7) tahun dari tarikh hukuman, agar anda tidak perlu memasukkan <strong>sebarang</strong> tempoh pemenjaraan dalam pengiraan tempoh tujuh tahun_.  Jangan sertakan kesalahan yang bukan salah laku atau jenayah, seperti pelanggaran, atau sabitan yang berkaitan dengan kelakuan yang telah dihapuskan klasifikasi jenayahnya sejak tarikh sabitan, termasuk tetapi tidak terhad kepada kesalahan ganja.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Jangan sertakan maklumat tentang rekod ketidakpatuhan sivil atau ketenteraan, melainkan rekod itu mengakibatkan pengakuan bersalah atau sabitan oleh mahkamah yang mempunyai bidang kuasa yang kompeten.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Jangan berikan salinan laporan sejarah jenayah anda.  Jangan kenal pasti sabitan salah laku kali pertama kerana mabuk, serangan mudah, memandu laju, pelanggaran lalu lintas kecil, pergaduhan atau mengganggu ketenteraman. Juga jangan kenal pasti sabitan bagi salah laku lain di mana tarikh sabitan atau akhir mana-mana tempoh pemenjaraan adalah lebih daripada 3 tahun yang lalu, melainkan terdapat sabitan berikutnya dalam tempoh 3 tahun tersebut. Pemohon untuk pekerjaan dengan rekod yang dihapuskan menurut seksyen 100F, seksyen 100G, seksyen 100H atau seksyen 100K bab 276 Undang-undang Am boleh menjawab 'tiada rekod' berkenaan dengan siasatan di sini berhubung dengan penangkapan terdahulu, kehadiran mahkamah jenayah atau sabitan. Pemohon untuk pekerjaan dengan rekod yang dihapuskan menurut seksyen 100F, seksyen 100G, seksyen 100H atau seksyen 100K bab 276 Undang-undang Am boleh menjawab 'tiada rekod' kepada siasatan di sini berkaitan dengan penangkapan terdahulu, kehadiran mahkamah jenayah, kehadiran mahkamah juvana, penghakiman atau sabitan.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Jangan mengenal pasti apa-apa tindakan yang ditamatkan memihak kepada anda menurut Undang-undang Prosedur Jenayah (“CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Jangan laporkan sebarang sabitan bagi pelanggaran salah laku dadah seperti yang ditakrifkan di bawah Kanun Rev Ohio 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Jangan sertakan sebarang sabitan yang berlaku lebih daripada tujuh (7) tahun dari tarikh siasatan ini.  <strong>Mana-mana tempoh pemenjaraan tidak boleh dimasukkan dalam pengiraan tempoh tujuh tahun tersebut.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Jangan laporkan sabitan kesalahan memiliki dadah, seperti yang ditakrifkan di bawah Seksyen 18.2-250.1 Kanun Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Sebagai tambahan kepada perkara di bawah, anda boleh mengecualikan sabitan jenayah yang telah menjadi subjek sijil pemulihan atau prosedur setara lain berdasarkan penemuan pemulihan.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Adakah anda telah disabitkan kesalahan atau jenayah atau dibebaskan dari penjara atau pembebasan bersyarat daripada sabitan salah laku atau jenayah dalam tempoh tujuh (7) tahun yang lalu?",
@@ -1943,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY — Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Memuatkan...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Gagal mengemas kini WOTC.",

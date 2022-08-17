@@ -388,6 +388,10 @@
       "value" : "步驟 {currentStep}/{totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "上一個定罪問題",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-list-convictions-text" : {
       "value" : "<strong>請僅列出屬於公共記錄的定罪。</strong>  對您有利的逮捕判決不是定罪。同樣地，請勿包括與以下事項相關的資訊：少年司法系統中的定罪；少年司法系統中審議或透過少年司法系統處理的事項；導致司法分流的指控；被駁回、根據初犯法律駁回、封存、刪除、赦免、司法駁回或以其他方式被法律視為無罪的案件。 <strong>您也不需要披露侵權行為、違規行為、輕罪或簡易程序罪行。</strong>",
       "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
@@ -403,6 +407,10 @@
     "BB-BGC-criminal-record-you-must-review-state-california-text" : {
       "value" : "<strong>加州：</strong> 不包括超過 2 年的非重罪大麻相關違規或輕罪定罪。",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>加州舊金山：</strong> 請勿包括自判刑之日起超過七 (7) 年的罪行，因此您不應在計算七年期限時包括<strong>任何</strong>監禁期_。 請勿包括輕罪或重罪以外的罪行，例如與自定罪之日起已被非刑事化的行為相關的違規或定罪，包括但不限於大麻罪行。",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
     },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>科羅拉多州：</strong> 請勿包括有關民事或軍事不服從記錄的資訊，除非該等記錄導致認罪或由具有司法管轄權的法院定罪。",
@@ -443,6 +451,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "否",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "要包括哪些資訊",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "提供城市、國家/地區、定罪狀態、日期、犯罪性質以及判刑資訊",

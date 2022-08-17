@@ -388,6 +388,14 @@
       "value" : "Etapa {currentStep} de {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Pergunta sobre antecedentes criminais",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>São Francisco, Califórnia:</strong> Não inclua delitos com mais de sete (7) anos a partir da data da sentença; dessa forma, não deve ser incluído <strong> nenhum</strong> período de encarceramento no cálculo do período de sete anos.  Não inclua delitos que não sejam contravenções ou crimes, como infrações ou condenações relacionadas a uma conduta que já esteja descriminalizada desde a data da condenação, incluindo (mas sem se limitar a) delitos envolvendo maconha.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Você foi condenado por contravenção ou crime ou foi libertado da prisão ou teve liberdade condicional de uma condenação por contravenção ou crime nos últimos sete (7) anos?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -399,6 +407,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Não",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Quais informações incluir",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Informe a cidade, país, estado de condenação, data, natureza do delito, juntamente com informações de condenação",

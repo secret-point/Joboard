@@ -408,6 +408,10 @@
       "value" : "<strong>Califórnia:</strong> Não inclua infrações não criminais relacionadas com marijuana, ou condenações por contravenção que sejam superiores a 2 anos.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>São Francisco, Califórnia:</strong> Não inclua delitos com mais de sete (7) anos a partir da data da sentença, pelo que não deve incluir <strong>nenhum</strong> período de reclusão no cálculo do período de sete anos_.  Não inclua delitos que não sejam contravenções ou crimes graves, como infrações ou condenações relacionadas com condutas que tenham sido descriminalizadas desde a data da condenação, incluindo, mas não só, delitos relacionados com marijuana.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
       "value" : "<strong>Colorado:</strong> Não inclua informações sobre um registo de desobediência civil ou militar, a menos que o registo resulte numa confissão de culpabilidade ou numa condenação por um tribunal de jurisdição competente.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
@@ -1983,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "A carregar...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Ocorreu um erro ao atualizar o WOTC.",

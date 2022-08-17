@@ -388,6 +388,14 @@
       "value" : "படி: {currentStep} / {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "முந்தைய தண்டனை பற்றிய கேள்வி",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>சான் பிரான்சிஸ்கோ, கலிபோர்னியா:</strong> தண்டனை விதிக்கப்பட்ட தேதியில் இருந்து ஏழு (7) ஆண்டுகளுக்கும் முந்தைய குற்றங்களைச் சேர்க்க வேண்டாம், அதாவது ஏழு ஆண்டு காலத்தின் கணக்கீட்டில் <strong>எந்தவொரு</strong> சிறைவாசக் காலத்தையும் நீங்கள் சேர்க்கக்கூடாது.  மரிஜுவானா குற்றங்கள் உட்பட ஆனால் அவை மட்டுமல்லாமல், தண்டனை விதிக்கப்பட்ட தேதியில் இருந்து குற்றமற்ற நடத்தை தொடர்பான மீறல்கள் அல்லது தண்டனைகள் போன்ற தவறான செயல்களோ குற்றங்களோ இல்லாதவற்றைச் சேர்க்க வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "கடந்த ஏழு (7) ஆண்டுகளில் நீங்கள் தவறான செயலுக்கு அல்லது குற்றத்திற்காகத் தண்டிக்கப்பட்டிருக்கிறீர்களா அல்லது சிறையிலிருந்து விடுவிக்கப்பட்டிருக்கிறீர்களா அல்லது ஒரு தவறான அல்லது குற்றவியல் தண்டனையிலிருந்து பரோலில் விடுவிக்கப்பட்டுள்ளீர்களா?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
