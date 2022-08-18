@@ -31,7 +31,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
           "labelText": "Address Line 1",
           "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-label-text",
           "name": "additional BGC Address Line 1",
-          "regex": "^(?=\\\\S)[a-zA-Z0-9À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
           "required": true,
           "type": "text",
         }
@@ -55,7 +55,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
           "labelText": "Apartment, suite, .etc",
           "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-label-text",
           "name": "Apartment, suite, .etc",
-          "regex": "^(?=\\\\S)[a-zA-Z0-9À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
           "required": false,
           "type": "text",
         }
@@ -79,7 +79,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
           "labelText": "City",
           "labelTranslationKey": "BB-BGC-Additional-bgc-form-city-label-text",
           "name": "City",
-          "regex": "^(?=\\\\S)[a-zA-ZÀ-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
+          "regex": "^(?=\\\\S)[a-zA-Z-!À-ÖØ-öø-ÿ ]{2,}(?<=[^\\\\s])$",
           "required": true,
           "type": "text",
         }
