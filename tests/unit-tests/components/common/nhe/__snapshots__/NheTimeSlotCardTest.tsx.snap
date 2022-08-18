@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NheTimeSlotCard should match snapshot 1`] = `
-<Col>
+<Col
+  key="VTS-0034139"
+>
   <DetailedRadio
     details="10:30 AM - 11:00 AM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327"
     name="nheTimeSlotCard"

@@ -79,19 +79,6 @@ exports[`Nhe should match snapshot 1`] = `
         }
       />
     </Col>
-    <Col>
-      <Button
-        colorScheme="default"
-        iconPosition="leading"
-        onClick={[Function]}
-        shouldUseResponsiveContent={true}
-        size="default"
-        type="button"
-        variant="primary"
-      >
-        Confirm Selection
-      </Button>
-    </Col>
   </Col>
 </Col>
 `;

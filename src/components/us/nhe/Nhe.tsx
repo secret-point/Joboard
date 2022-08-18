@@ -61,7 +61,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
     useEffect(() => {
         scheduleDetail &&jobDetail && applicationData && nheData.length && addMetricForPageLoad(pageName);
 
-    }, [jobDetail, applicationData, scheduleDetail, nheData]);
+    }, [jobDetail, applicationData, scheduleDetail, nheData, pageName]);
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -77,7 +77,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
             locale: getLocale(),
             scheduleId: scheduleId
         })
-    }, [scheduleId]);
+    }, [scheduleDetail, scheduleId]);
 
     useEffect(() => {
         scheduleDetail && fetchNheTimeSlotDs(scheduleDetail);
@@ -88,7 +88,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
             //reset this so as it can emit new pageload event after being unmounted.
             resetIsPageMetricsUpdated(pageName);
         }
-    },[])
+    },[pageName])
 
     const handleConfirmSelection = () => {
         boundResetBannerMessage();
@@ -96,7 +96,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
         if (applicationData && selectedNhe) {
             handleConfirmNHESelection(applicationData, selectedNhe);
         }
-    }
+    };
 
     const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || '';
     const displayLastName = candidateData?.lastName || '';
@@ -126,14 +126,14 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
                         ))
                     }
                 </Col>
-                <Col>
+                { selectedNhe && <Col style={{position: "sticky", bottom: "20px"}}>
                     <Button
                       variant={ButtonVariant.Primary}
                       onClick={handleConfirmSelection}
                     >
                         {t("BB-nhe-page-confirm-selection-button-text", "Confirm Selection")}
                     </Button>
-                </Col>
+                </Col> }
             </Col>
         </Col>
     )

@@ -18,7 +18,7 @@ export const NheTimeSlotCard = (props: NheCardProps) => {
   const availableTimeSlots = nheTimeSlot.availableResources - nheTimeSlot.appointmentsBooked;
 
   return (
-    <Col>
+    <Col key={nheTimeSlot.timeSlotId}>
       <DetailedRadio
         name="nheTimeSlotCard"
         titleText={formatNheTimeSlotTitle(nheTimeSlot.dateWithoutFormat)}
