@@ -47,14 +47,14 @@ const FormInputSelect = ( props: FormInputSelectProps ) => {
                 error={!!hasError}
                 footer={hasError ? errorText || undefined : undefined}
                 renderLabel={() => (
-                    <Row
-                        alignItems="center"
-                        id={`${id}-renderLabel`}
-                        gridGap={"S300"}
-                        dataTestId='formInputItem-renderLabel'
-                        width="100%"
-                    >
-                        <Label htmlFor={id} style={{ width: '100%' }}>
+                    <Label htmlFor={id}>
+                        <Row
+                            alignItems="center"
+                            id={`${id}-renderLabel`}
+                            gridGap={"S300"}
+                            dataTestId='formInputItem-renderLabel'
+                            width="100%"
+                        >
                             <Row
                                 gridGap={8}
                                 justifyContent={required ? 'flex-start' : 'space-between'}
@@ -65,8 +65,8 @@ const FormInputSelect = ( props: FormInputSelectProps ) => {
                                     {required ? <Text color='red'> * </Text> : <Text>{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>}
                                 </Row>
                             </Row>
-                        </Label>
-                    </Row>
+                        </Row>
+                    </Label>
                 )}
             >
                 {inputProps => (
