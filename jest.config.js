@@ -10,7 +10,7 @@ module.exports = {
     '!src/actions/**/*.ts',
     '!src/utils/constants/**/*.ts',
     '!src/actions/old/**.{ts,tsx,js,jsx}',
-    '!src/helpers/**/*.{ts,tsx,js,jsx}',
+    '!src/helpers/old/*.{ts,tsx,js,jsx}',
     '!src/reducers/old/**.{ts,tsx,js,jsx}',
     '!src/utils/api/**.{ts,tsx,js,jsx}',
     '!src/utils/enums/**/*.ts',

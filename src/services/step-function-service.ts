@@ -10,7 +10,7 @@ import {
   startOrResumeWorkflowDS
 } from "./../actions/WorkflowActions/workflowActions";
 import { setInterval } from "timers";
-import { log, LoggerType } from "../helpers/log-helper";
+import { log, logError, LoggerType } from "../helpers/log-helper";
 import {
   boundSetWorkflowErrorCode,
   boundWorkflowRequestEnd,
@@ -161,7 +161,7 @@ export default class StepFunctionService {
       await awaitWithTimeout(this.waitForOpenSocket(), this.CONNECTION_TIMEOUT);
       this.websocket?.send(message);
     } catch (error) {
-        console.error("[WS] Error sending message to websocket", error);
+        logError("[WS] Error sending message to websocket", error as Error);
         showErrorMessage({
           translationKey: "BB-websocket-error-message-internal-server-error",
           value: "Something went wrong with the websocket server. Please try again or refresh the browser.",

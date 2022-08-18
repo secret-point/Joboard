@@ -1,5 +1,6 @@
 import { TEST_APPLICATION_ID, TEST_PAGE_ID, TEST_REQUISITION_ID } from '../../../tests/test-utils/test-data'
-import URLParamsHelper from '../url-params-helper';
+import URLParamsHelper from '../../../src/helpers/url-params-helper';
+
 describe("Unit tests for url parameters helper", () => {
 
     beforeEach(() => {

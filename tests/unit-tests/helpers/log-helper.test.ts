@@ -1,9 +1,8 @@
-import * as helper from "../log-helper"
-import KatalLogger from "@katal/logger";
+import * as helper from "../../../src/helpers/log-helper";
 
 describe("Unit tests for log helper", () =>{
     beforeEach(() => {
-        let logger: any = helper.initLogger("url");
+        let logger: any = helper.initLogger("url", "beta");
         window.log = logger;
         window.loggerUrl = "url";
     });

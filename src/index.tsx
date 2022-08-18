@@ -39,6 +39,7 @@ declare global {
   interface Window {
     reduxStore: Store;
     Stage: string;
+    appStage: string;
     stepFunctionService: StepFunctionService;
     isCompleteTaskOnLoad: boolean | undefined;
     applicationData: Application | undefined;
@@ -196,7 +197,7 @@ getInitialData()
       domLoaded.then(() => {
         const initializationMetric = new KatalMetrics.Metric.Initialization().withMonitor();
         const initializationMetricsPublisher = initialMetricsPublisher(
-          data[0].stage,
+          data[0].appStage,
           "HVHCandidateApplication"
         ).newChildActionPublisherForInitialization();
         initializationMetricsPublisher.publish(initializationMetric);
@@ -205,7 +206,8 @@ getInitialData()
         window.applicationStartTime = Date.now();
 
         window.loggerUrl = data[0].loggerUrl;
-        window.log = initLogger(data[0].loggerUrl, queryParams);
+        window.appStage = data[0].appStage;
+        window.log = initLogger(data[0].loggerUrl, data[0].appStage, queryParams);
         window.log.addErrorListener();
 
         window.log.info("Application load with config");

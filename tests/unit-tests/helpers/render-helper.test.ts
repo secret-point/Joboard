@@ -1,4 +1,4 @@
-import * as helper from "../render-helper"
+import * as helper from "../../../src/helpers/render-helper"
 import moment from "moment";
 
 describe("Unit Tests for render helper", () => {
@@ -45,7 +45,7 @@ describe("Unit Tests for render helper", () => {
         const nineteenYearsOld = moment().utc().subtract(19,"years");
         let result = helper.validation(nineteenYearsOld.format("YYYY-MM-DD"), "DATE_OF_BIRTH");
         expect(result).toBe(true);
-        
+
         const nineYearsOld = moment().utc().subtract(9,"years");
         result = helper.validation(nineYearsOld.format("YYYY-MM-DD"), "DATE_OF_BIRTH");
         expect(result).toBe(false);
@@ -54,7 +54,7 @@ describe("Unit Tests for render helper", () => {
     test("test validation with legal name", () => {
         let result = helper.validation("John Smith", "LEGAL_NAME");
         expect(result).toBe(true);
-        
+
         result = helper.validation("", "LEGAL_NAME");
         expect(result).toBe(true);
 
@@ -65,7 +65,7 @@ describe("Unit Tests for render helper", () => {
     test("test validation with regex", () => {
         let result = helper.validation("", "REGEX", true, { });
         expect(result).toBe(true);
-        
+
         result = helper.validation("123323534", "REGEX", false, { regex: "^[0-9]*$" });
         expect(result).toBe(true);
 

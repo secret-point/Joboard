@@ -1,4 +1,4 @@
-import { convertPramsToJson, isJson, launchAuthentication, objectToQuerystring } from './../utils';
+import { convertPramsToJson, isJson, launchAuthentication, objectToQuerystring } from './../../../src/helpers/utils';
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { createHashHistory } from "history";
@@ -46,7 +46,7 @@ describe("Utils Tests: ", () => {
     // test("test convert params to json with empty string should return empty object",  () => {
     //     const result = convertPramsToJson("");
     //     expect(Object.keys(result).length).toBe(0);
-        
+
     // });
 
     // test("test isJson with valid json string should return true", () => {
@@ -80,7 +80,7 @@ describe("Utils Tests: ", () => {
     //     window.location.assign = jest.fn();
     //     window.location.hash = "/#/1234/1234/misc";
     //     launchAuthentication();
-    //     const expected = 
+    //     const expected =
     //     `https://hiring.amazon.com/app#/login?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234&misc=misc")}`;
     //     expect(window.location.assign).toBeCalledTimes(1);
     //     expect(window.location.assign).toBeCalledWith(expected);
@@ -90,7 +90,7 @@ describe("Utils Tests: ", () => {
     //     window.location.assign = jest.fn();
     //     window.location.hash = "/#/1234/1234";
     //     launchAuthentication();
-    //     const expected = 
+    //     const expected =
     //     `https://hiring.amazon.com/app#/login?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234")}`;
     //     expect(window.location.assign).toBeCalledTimes(1);
     //     expect(window.location.assign).toBeCalledWith(expected);
@@ -101,7 +101,7 @@ describe("Utils Tests: ", () => {
     //     window.location.hash = "/#/1234/1234";
     //     window.sessionStorage.setItem("query-params", "");
     //     launchAuthentication();
-    //     const expected = 
+    //     const expected =
     //     `https://hiring.amazon.com/app#/login?redirectUrl=${encodeURIComponent("http://localhost/?page=resume-application&requisitionId=1234&applicationId=1234")}`;
     //     expect(window.location.assign).toBeCalledTimes(1);
     //     expect(window.location.assign).toBeCalledWith(expected);

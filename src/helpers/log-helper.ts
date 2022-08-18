@@ -8,18 +8,36 @@ export enum LoggerType {
   WARN = "warn"
 }
 
-export const initLogger = (url?: string, context?: any) => {
+export const initLogger = (url: string, appStage: string, context?: any) => {
   return new KatalLogger({
     url: url,
-    logToConsole: process.env.NODE_ENV !== "production",
+    // log to console for non-production environments
+    logToConsole: process.env.NODE_ENV !== "production" || appStage !== "prod",
     recordMetrics: true
   });
 };
 
+const getLogger = (context: any = {}): KatalLogger | undefined => {
+  let log = window.log;
+
+  if (!log) {
+    // try to re-init the logger if it was not available
+    const { loggerUrl, appStage } = window;
+
+    if (loggerUrl && appStage) {
+      log = initLogger(loggerUrl, appStage, context);
+      window.log = log;
+    }
+  }
+
+  return log;
+};
+
 export const log = (message: string, context: any = {}, type?: LoggerType) => {
   const cid = getCookie("hvhcid");
-  let log = window.log;
+  const log = getLogger(context);
   if (!log) {
+    // can't get it from window.log and can't re-init it, just return
     return;
   }
   context = {
@@ -53,13 +71,16 @@ export const logError = (
   type?: LoggerType
 ) => {
   const cid = getCookie("hvhcid");
+  const log = getLogger(context);
+  if (!log) {
+    // can't get it from window.log and can't re-init it, just return
+    return;
+  }
   context = {
     cid,
     ...new URLParamsHelper().get(),
     ...context
   };
-  const { loggerUrl } = window;
-  const log = initLogger(loggerUrl, context);
   log.error(message, error, context);
 };
 

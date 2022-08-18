@@ -1,4 +1,4 @@
-import { validateRequiredData } from "../validate";
+import { validateRequiredData } from "../../../src/helpers/validate";
 import { TEST_PAGE_ID, TEST_APPLICATION_DATA } from "../../../tests/test-utils/test-data";
 
 describe("Validate: ", () => {

@@ -1,5 +1,6 @@
-import { COMPLETED, IN_PROGRESS } from '../../constants';
-import { getStatusForSteps } from './../steps-helper';
+import { COMPLETED, IN_PROGRESS } from '../../../src/constants';
+import { getStatusForSteps } from './../../../src/helpers/steps-helper';
+
 describe("Unit tests for steps helper", () => {
 
     test("Test getStatusForSteps with isUpdateActionExecuted false", () => {
@@ -17,7 +18,7 @@ describe("Unit tests for steps helper", () => {
         expect(statuses.length).toBe(1);
         expect(statuses[0]).toBe(IN_PROGRESS);
     })
-    
+
     test("Test getStatusForSteps with isUpdateActionExecuted true", () => {
         const data = {
             key:"value"

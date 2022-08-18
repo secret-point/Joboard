@@ -1,5 +1,5 @@
 import { filter } from 'lodash';
-import { getDataForMetrics, getDataForEventMetrics } from './../old/adobe-helper';
+import { getDataForMetrics, getDataForEventMetrics } from './../../../src/helpers/adobe-helper';
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import { createHashHistory } from "history";

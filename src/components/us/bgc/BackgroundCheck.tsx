@@ -48,6 +48,7 @@ import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowA
 import { translate as t } from "../../../utils/translator";
 import InfoStepCard from "../../common/InfoStepCard";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { log } from "../../../helpers/log-helper";
 
 interface MapStateToProps {
     job: JobState,
@@ -86,7 +87,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             locale: getLocale(),
             scheduleId: scheduleId
         })
-    }, [scheduleId]);
+    }, [scheduleDetail, scheduleId]);
 
     // Don't refetch data if id is not changing
     useEffect(() => {
@@ -102,14 +103,14 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         // will not emit new event on props change once it has emitted pageload event previously
         scheduleDetail && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
 
-    }, [jobDetail, applicationData, candidateData, scheduleDetail]);
+    }, [jobDetail, applicationData, candidateData, scheduleDetail, pageName]);
 
     useEffect(() => {
         return () => {
             //reset this so as it can emit new pageload event after being unmounted.
             resetIsPageMetricsUpdated(pageName);
         }
-    },[])
+    },[pageName])
 
     useEffect(() => {
         if(applicationData && candidateData) {
@@ -126,6 +127,13 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             }
             const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, BGC, payload);
             boundUpdateApplicationDS(request, (applicationData: Application)=>{
+                // For troubleshooting issue: https://issues.amazon.com/issues/HVHBB-1440
+                log(`Start to complete bgc workflow step for application ${applicationData.applicationId}, schedule: ${scheduleDetail?.scheduleId}`,
+                    {
+                        application: { ...applicationData },
+                        scheduleDetail: { ...scheduleDetail }
+                    }
+                );
                 onCompleteTaskHelper(applicationData);
             });
         }
