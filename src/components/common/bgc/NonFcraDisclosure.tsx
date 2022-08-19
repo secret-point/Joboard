@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import { NonFcraESignatureAcknowledgementList, US_StateSpecificNotices } from "../../../utils/constants/common";
@@ -18,6 +18,9 @@ import { handleSubmitNonFcraBGC, validateNonFcraSignatures } from "../../../util
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { BGC_ACTION_TYPE } from "../../../actions/BGC_Actions/bgcActionTypes";
 import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 
 interface MapStateToProps {
     job: JobState,
@@ -33,7 +36,6 @@ interface NonFcraDisclosureProps {
 type NonFcraDisclosureMergedProps = MapStateToProps & NonFcraDisclosureProps;
 
 export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
-
     const { application, schedule, bgc } = props;
     const applicationData = application.results;
     const scheduleDetail = schedule.results.scheduleDetail;
@@ -46,6 +48,21 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
     const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
     const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
     const [errorMessage, setErrorMessage] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
+
+    const pageName = METRIC_NAME.NON_FCRA;
+
+    useEffect(() => {
+        // Page will emit page load event once both pros are available but
+        // will not emit new event on props change once it has emitted pageload event previously
+        scheduleDetail && applicationData && addMetricForPageLoad(pageName);
+    }, [applicationData, scheduleDetail, pageName]);
+
+    useEffect(() => {
+        return () => {
+            // reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    }, [pageName]);
 
     const handleCLickNext = () => {
         boundResetBannerMessage();

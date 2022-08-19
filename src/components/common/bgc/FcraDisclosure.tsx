@@ -81,14 +81,14 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
 
     useEffect(() => {
         jobDetail && applicationData && scheduleDetail && addMetricForPageLoad(pageName);
-    }, [jobDetail, applicationData, scheduleDetail]);
+    }, [jobDetail, applicationData, scheduleDetail, pageName]);
 
     useEffect(() => {
         return () => {
             //reset this so as it can emit new pageload event after being unmounted.
             resetIsPageMetricsUpdated(pageName);
         }
-    },[]);
+    }, [pageName]);
 
     useEffect(() => {
         setFcraResponse(fcraQuestions?.bgcDisclosure);

@@ -41,9 +41,10 @@ import {
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
 import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
+import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 
 interface MapStateToProps {
     appConfig: AppConfig,
@@ -63,15 +64,17 @@ type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     const { candidate, application, bgc, schedule, job, appConfig } = props;
     const { candidatePatchRequest, formError } = candidate;
-    const { candidateData } = candidate.results
+    const { candidateData } = candidate.results;
+    const { scheduleDetail } = schedule.results;
     const { stepConfig } = bgc;
     const applicationData = application.results;
     const additionalBgc = candidateData?.additionalBackgroundInfo || {};
+    const pageName = METRIC_NAME.ADDITIONAL_BGC_INFO;
 
-  let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
-  let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
-  let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
-  let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
+    let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
+    let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
+    let isWithoutSSNDefaultValue = get(candidateData, 'additionalBackgroundInfo.isWithoutSSN');
+    let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
 
     const shouldDisplayNoSSNCheckbox = get(appConfig, 'results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable') === true &&
         !get(candidateData, 'additionalBackgroundInfo.idNumber') &&
@@ -114,7 +117,21 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             boundSetCandidatePatchRequest({});
             boundUpdateCandidateInfoError({});
         }
-    }, [])
+    }, [additionalBgc]);
+
+    useEffect(() => {
+        // Page will emit page load event once both pros are available but
+        // will not emit new event on props change once it has emitted pageload event previously
+        scheduleDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+    }, [applicationData, candidateData, scheduleDetail, pageName]);
+
+    useEffect(() => {
+        return () => {
+            // reset this so as it can emit new pageload event after being unmounted.
+            resetIsPageMetricsUpdated(pageName);
+        }
+    }, [pageName]);
+
 
     const renderFormItem = ( formItem: FormInputItem ) => {
       const hasError = get(formError, formItem.dataKey) || false;

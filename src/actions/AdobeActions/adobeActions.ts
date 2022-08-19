@@ -8,6 +8,7 @@ import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
 import { CheckBoxItem } from "../../@types";
 import { ApplicationData } from "../../@types/IPayload";
 import store from "../../store/store";
+import { log } from "../../helpers/log-helper";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
@@ -65,9 +66,8 @@ export const addMetricForPageLoad = ( pageName: string ) => {
         sendDataLayerAdobeAnalytics(dataLayer);
         isPageMetricsUpdated[pageName] = true;
         window.isPageMetricsUpdated = isPageMetricsUpdated;
-        //TODO will be removed currently used to test in beta
-        console.log("adding new metrics", dataLayer);
-        console.log("new metrics", window.dataLayerArray);
+        log(`[Evnet 'Page Load' - '${pageName}'] adding new metrics`, dataLayer);
+        log(`[Evnet 'Page Load' - '${pageName}'] new metrics`, window.dataLayerArray);
       }
     }
   }
@@ -118,7 +118,6 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
 
   sendDataLayerAdobeAnalytics(metric);
 
-  // TODO will be removed currently used to test in beta
-  console.log(`[Evnet "${name}"] adding new metrics`, metric);
-  console.log(`[Evnet "${name}"] new metrics`, window.dataLayerArray);
+  log(`[Evnet '${name}'] adding new metrics`, metric);
+  log(`[Evnet '${name}'] new metrics`, window.dataLayerArray);
 };
