@@ -298,7 +298,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
-        regex: `^(?=\\S)[a-zA-Z0-9${specialChars} ]{2,}(?<=[^\\s])$`,
+        regex: `^(?=\\S)[a-zA-Z0-9${specialChars} ]{2,}[^\\s]$`,
     },
     {
         hasError: false,
@@ -311,7 +311,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
-        regex: `^(?=\\S)[a-zA-Z0-9${specialChars} ]{2,}(?<=[^\\s])$`,
+        regex: `^(?=\\S)[a-zA-Z0-9${specialChars} ]{2,}[^\\s]$`,
     },
     {
         hasError: false,
@@ -324,7 +324,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-city-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-city-error-text',
-        regex: `^(?=\\S)[a-zA-Z${specialChars} ]{2,}(?<=[^\\s])$`,
+        regex: `^(?=\\S)[a-zA-Z${specialChars} ]{2,}[^\\s]$`,
     },
     {
         hasError: false,
@@ -340,7 +340,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
         placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-state-placeholder-text',
         placeholder: 'Select a state',
-        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}[^\\s]$",
     },
     {
         hasError: false,
@@ -389,7 +389,7 @@ export const HasPreviouslyWorkedAtAmazonRadioConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon',
     id: 'hasPreviouslyWorkedAtAmazon',
     type: 'radioButton',
-    regex: "^(?=\\S)[a-zA-Z]{4,}(?<=[^\\s])$",
+    regex: "^(?=\\S)[a-zA-Z]{4,}[^\\s]$",
     errorMessageTranslationKey: "BB-bgc-HasPreviouslyWorkedAtAmazon-error-message"
 }
 
@@ -402,7 +402,7 @@ export const ConvictionInfoRadioConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears',
     id: 'hasCriminalRecordWithinSevenYears',
     type: 'radioButton',
-    regex: "^(?=\\S)[a-zA-Z0-9 ]{4,}(?<=[^\\s])$",
+    regex: "^(?=\\S)[a-zA-Z0-9 ]{4,}[^\\s]$",
     errorMessageTranslationKey: "BB-bgc-ConvictionInfoRadio-error-message"
 }
 
@@ -415,7 +415,7 @@ export const ConvictionDetailConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.convictionDetails',
     id: 'convictionDetails',
     type: 'textArea',
-    regex: `^(?=\\S)[a-zA-Z0-9${specialChars} /,.]{2,500}(?<=[^\\s])$`,
+    regex: `^(?=\\S)[a-zA-Z0-9${specialChars} /,.]{2,500}[^\\s]$`,
     labelTranslationKey: 'BB-BGC-criminal-record-conviction-detail-label-text',
     errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message-fix"
 }
@@ -432,7 +432,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text',
-        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}(?<=[^\\s])$",
+        regex: "^(?=\\S)[a-zA-Z0-9 ]{2,}[^\\s]$",
     },
     {
         hasError: false,
@@ -445,7 +445,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix',
-        regex: "^(?=\\S)(0[1-9]|1[0-2])\\/?([0-9]{2})\\s-\\s(0[1-9]|1[0-2])\\/?([0-9]{2})(?<=[^\\s])$"
+        regex: "^(?=\\S)(0[1-9]|1[0-2])\\/?([0-9]{2})\\s-\\s(0[1-9]|1[0-2])\\/?([0-9]{2})[^\\s]$"
     }
 ]
 
@@ -697,7 +697,7 @@ export enum BusinessLineType {
     Air_Job = 'AIR'
 }
 
-export const NameRegexValidator = `^(?=\\S)[a-zA-Z${specialChars} ,.'-]{2,40}(?<=[^\\s])$`;
+export const NameRegexValidator = `^(?=\\S)[a-zA-Z${specialChars} ,.'-]{2,40}[^\\s]$`;
 
 export const UserIdValidator = "^[a-z]{4,60}$";
 
