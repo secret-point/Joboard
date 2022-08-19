@@ -388,9 +388,57 @@
       "value" : "Étape {currentStep} sur {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Question sur les condamnations antérieures",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Veuillez mentionner uniquement les condamnations qui sont de notoriété publique.</strong>  Les arrestations qui se sont soldées en votre faveur ne sont pas des condamnations. De même, n’incluez aucune information liée à une condamnation dans le cadre du système de justice pour mineurs, ou à une affaire examinée ou traitée par le système de justice pour mineurs, ou à des accusations ayant conduit à la mise en place d’un programme de déjudiciarisation, ou à des affaires ayant fait l’objet d’un non-lieu, d’un non-lieu en vertu d’une loi sur les primo-délinquants, d’un classement sous scellés, d’une effacement du casier judiciaire, d’une grâce, d’un non-lieu judiciaire ou autrement traités comme des non-condamnations par la loi.  <strong>Vous n’êtes pas non plus tenu de divulguer les violations, les infractions, les délits mineurs ou les infractions sommaires.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Un casier judiciaire ne vous empêchera pas nécessairement de travailler, de continuer à travailler ou d’être embauché en tant que travailleur indépendant par Amazon.  Ces informations ne seront utilisées que conformément à la législation applicable et uniquement dans le but de déterminer si la condamnation est liée à l’emploi/à la mission pour lequel/laquelle vous avez postulé.  Le fait de ne pas répondre honnêtement à cette question ou de ne pas fournir les détails supplémentaires demandés concernant le ou les délit(s) peut entraîner l’interruption de l’examen de votre demande d’emploi ou d’embauche en tant que travailleur indépendant ou, si vous êtes déjà employé par et/ou embauché en tant que travailleur indépendant par Amazon, ce manquement peut entraîner la résiliation de votre emploi ou de votre embauche.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Vous devez consulter les informations ci-dessous sur la législation de l’État avant de fournir des informations supplémentaires sur votre casier judiciaire",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Californie :</strong> N’incluez pas les infractions non criminelles liées à la marijuana, ni les condamnations pour des délits mineurs datant de plus de 2 ans.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, Californie :</strong> N’incluez pas les infractions dont la date de condamnation remonte à plus de sept (7) ans, afin de n’inclure <strong>aucune</strong> période d’incarcération dans le calcul de la période de sept ans_.  N’incluez pas les infractions qui ne sont pas des délits ou des crimes, comme les infractions ou les condamnations liées à la conduite, qui ont été décriminalisées depuis la date de la condamnation, y compris, mais sans s’y limiter, les infractions liées à la marijuana.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado :</strong> N’incluez pas les informations concernant un acte de désobéissance civile ou militaire, sauf si l’acte a donné lieu à un aveu de culpabilité ou à une condamnation par un tribunal compétent.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts :</strong> Ne fournissez pas de copie de votre casier judiciaire.  Ne mentionnez pas les premières condamnations pour des délits mineurs tels que l’ivresse, les voies de fait simples, les excès de vitesse, les infractions mineures au code de la route, les rixes ou les troubles à l’ordre public. Ne mentionnez pas non plus les condamnations pour d’autres délits mineurs dont la date de condamnation ou la fin de toute période d’incarcération remonte à plus de 3 ans, à moins que des condamnations subséquentes n’aient été prononcées au cours de ces 3 années. Un demandeur d’emploi dont le casier judiciaire a été effacé en vertu des dispositions de l’article 100F, de l’article 100G, de l’article 100H ou de l’article 100K du chapitre 276 des lois générales peut répondre « pas de casier judiciaire » à une question des présentes relative aux arrestations, aux comparutions devant le tribunal pénal ou aux condamnations antérieures. Un demandeur d’emploi dont le casier judiciaire a été effacé en vertu des dispositions de l’article 100F, de l’article 100G, de l’article 100H ou de l’article 100K du chapitre 276 des lois générales peut répondre « pas de casier judiciaire » à une question des présentes relative aux arrestations, aux comparutions devant le tribunal pénal, aux comparutions devant le tribunal pour enfants ou aux condamnations antérieures.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York :</strong> Ne mentionnez aucune action qui s’est terminée en votre faveur conformément à l’article 160.50 du Code de procédure pénale (CPP).",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio :</strong> Ne déclarez pas de condamnation pour une infraction à la législation sur les stupéfiants, telle que définie dans le code 2925.11 de l’Ohio Rev.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphie, Pennsylvanie :</strong> N’incluez pas les condamnations qui remontent à plus de sept (7) ans à compter de la date de la présente demande de renseignement.  <strong>Aucune période d’incarcération ne doit être incluse dans le calcul de la période de sept ans.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginie :</strong> Ne déclarez pas de condamnation pour délit mineur de possession de drogue, tel que défini par l’article 18.2-250.1 du Code de la Virginie.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington :</strong> Outre les éléments ci-dessous, vous pouvez exclure une condamnation pénale ayant fait l’objet d’un certificat de réhabilitation ou d’une autre procédure équivalente fondée sur la constatation de la réhabilitation.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Avez-vous été condamné pour un délit ou un crime, ou avez-vous été libéré de prison ou remis en liberté conditionnelle après avoir été condamné pour un délit ou un crime au cours des sept (7) dernières années?",
@@ -579,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Dates d’embauche – de/à (MM/AA – MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Veuillez saisir une date d’embauche valide",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Je n’ai pas de numéro de sécurité sociale",

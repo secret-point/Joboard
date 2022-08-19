@@ -126,7 +126,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
                         ))
                     }
                 </Col>
-                { selectedNhe && <Col style={{position: "sticky", bottom: "20px"}}>
+                { selectedNhe && <Col className="nhe-sticky-button">
                     <Button
                       variant={ButtonVariant.Primary}
                       onClick={handleConfirmSelection}

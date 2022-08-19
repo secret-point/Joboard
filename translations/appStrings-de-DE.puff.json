@@ -392,6 +392,54 @@
       "value" : "Frage zu Vorstrafen",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Bitte liste nur Verurteilungen auf, die öffentlich bekannt sind.</strong>  Zu deinen Gunsten gelöste Verhaftungen sind keine Verurteilungen. Füge auch keine Informationen in Bezug auf eine Verurteilung in der Jugendgerichtsbarkeit oder eine Angelegenheit hinzu, die in der Jugendgerichtsbarkeit geprüft oder von dieser bearbeitet wurde, oder Anklagen, die zu einem Resozialisierungsprogramm geführt haben, oder Fälle, die abgewiesen, nach dem Gesetz eines Ersttäters abgewiesen, versiegelt, gelöscht, begnadigt, gerichtlich abgewiesen oder auf andere Weise gesetzlich als Nichtverurteilungen behandelt wurden.  <strong>Du bist auch nicht verpflichtet, Verstöße, geringfügige Vergehen oder Sammeldelikte offenzulegen.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Ein Strafregister hindert dich nicht unbedingt an einer Anstellung, einer Weiterbeschäftigung oder einem Engagement als unabhängiger Auftragnehmer bei Amazon.  Diese Informationen werden nur in Übereinstimmung mit geltendem Recht und nur zu dem Zweck verwendet, festzustellen, ob die Verurteilung mit der Stelle/dem Engagement zusammenhängt, für die/das du dich beworben hast.  Wenn du diese Frage nicht ehrlich beantwortest oder nicht die angeforderten zusätzlichen Einzelheiten zu den Straftaten angibst, kann dies dazu führen, dass deine Bewerbung für eine Anstellung oder ein Engagement als unabhängiger Auftragnehmer nicht mehr geprüft wird, oder, wenn du bereits bei Amazon angestellt und/oder als unabhängiger Auftragnehmer engagiert bist, kann ein solcher Fehler zur Beendigung deines Arbeitsverhältnisses oder Engagements führen.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Du musst die folgenden Informationen zum Landesgesetz überprüfen, bevor du zusätzliche Informationen zu deiner kriminellen Vorgeschichte bereitstellst.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Kalifornien:</strong> Schließe keine Verstöße in Zusammenhang mit Marihuana oder Verurteilungen wegen Vergehen ein, die älter als 2 Jahre sind.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Kalifornien:</strong> Schließe keine Straftaten ein, die ab dem Datum der Verurteilung älter als sieben (7) Jahre sind, sodass du</strong>keine<strong> Haftdauer bei der Berechnung der Siebenjahresfrist einbeziehen solltest_.  Schließe keine Straftaten ein, bei denen es sich nicht um Vergehen oder Straftaten handelt, wie Verstöße oder Verurteilungen im Zusammenhang mit Verhaltensweisen, die seit dem Verurteilungsdatum entkriminalisiert wurden, einschließlich, aber nicht beschränkt auf, Marihuana-Straftaten.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Füge keine Informationen über Aufzeichnungen über zivilen oder militärischen Ungehorsam hinzu, es sei denn, die Aufzeichnung führte zu einem Schuldbekenntnis oder einer Verurteilung durch ein zuständiges Gericht.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Lege keine Kopie deines Strafregisterauszugs vor.  Gib keine erstmaligen Verurteilungen wegen Trunkenheit, einfacher Körperverletzung, Geschwindigkeitsüberschreitung, geringfügiger Verkehrsverstöße, Bedrängnis oder Ruhestörung an. Gib auch keine Verurteilungen für andere Vergehen an, bei denen das Datum der Verurteilung oder das Ende einer Haftdauer vor mehr als 3 Jahren liegt, es sei denn, innerhalb dieser drei Jahre gab es weitere Verurteilungen. Ein Bewerber für eine Anstellung, dessen Aufzeichnungen gemäß Abschnitt 100F, Abschnitt 100G, Abschnitt 100H oder Abschnitt 100K von Kapitel 276 der Allgemeinen Gesetze gelöscht wurden, kann in Bezug auf eine hierin enthaltene Untersuchung hinsichtlich früherer Verhaftungen, Auftritte vor Strafgerichten oder Verurteilungen „keine Aufzeichnungen“ beantworten. Ein Bewerber für eine Anstellung, dessen Aufzeichnungen gemäß Abschnitt 100F, Abschnitt 100G, Abschnitt 100H oder Abschnitt 100K von Kapitel 276 der Allgemeinen Gesetze gelöscht wurden, kann in Bezug auf eine hierin enthaltene Untersuchung hinsichtlich früherer Verhaftungen, Auftritte vor Strafgerichten oder Jugendgerichten, Urteilen oder Verurteilungen „keine Aufzeichnungen“ beantworten.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Identifiziere keine Klagen, die gemäß dem Strafprozessgesetz (Criminal Procedure Law, CPL) §160.50 zu deinen Gunsten abgeschlossen wurden.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Melde keine Verurteilung wegen eines Drogenvergehens im Sinne von Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Schließe keine Verurteilungen ein, die mehr als sieben (7) Jahre nach dem Datum dieser Fragen erfolgt sind.  <strong>Eine Inhaftierungsdauer sollte nicht in die Berechnung des Siebenjahreszeitraums einbezogen werden.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Melde keine Verurteilung wegen Drogenbesitzes im Sinne von Abschnitt 18.2-250.1 des Code of Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Darüber hinaus kannst du eine strafrechtliche Verurteilung ausschließen, die aufgrund einer Feststellung der Rehabilitation Gegenstand einer Rehabilitationsbescheinigung oder eines anderen gleichwertigen Verfahrens war.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Wurdest du in den letzten sieben (7) Jahren wegen eines Vergehens oder eines Verbrechens verurteilt oder aus dem Gefängnis entlassen oder auf Bewährung entlassen?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -579,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Beschäftigungsdaten – Von/Bis (MM/JJ–MM/JJ)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Gib ein gültiges Einstellungsdatum ein.",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Ich habe keine Sozialversicherungsnummer",

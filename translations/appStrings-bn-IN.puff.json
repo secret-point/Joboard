@@ -392,9 +392,53 @@
       "value" : "পূর্ববর্তী রায়ের প্রশ্নসমূহ",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>অনুগ্রহ করে শুধুমাত্র পাবলিক রেকর্ডের বিষয় সম্পর্কিত দোষসমূহ তালিকাভুক্ত করুন।</strong>  আপনার পক্ষে মীমাংসা হওয়া গ্রেপ্তারগুলি দোষ হিসেবে গণ্য হবে না। একইভাবে, কিশোর বিচার ব্যবস্থায় দোষী সাব্যস্ত হওয়া সংক্রান্ত কোনো তথ্য, বা কিশোর বিচার ব্যবস্থার মাধ্যমে বিবেচনা করা বা প্রক্রিয়াকৃত কোনো বিষয়, বা যে অভিযোগের কারণে একটি ডাইভারশন প্রোগ্রাম বা মামলাগুলি খারিজ করা হয়েছে, প্রথম অপরাধীর অধীনে খারিজ করা হয়েছে এমন কোনো তথ্য অন্তর্ভুক্ত করবেন না। আইন, সীলমোহর করা, বহিষ্কৃত, ক্ষমা করা, বিচারিকভাবে বরখাস্ত বা অন্যথায় আইন দ্বারা অ-প্রত্যয় হিসাবে বিবেচিত।  <strong>এছাড়াও আপনাকে কোন আইনের ভঙ্গ, লঙ্ঘন, ছোটখাটো অপকর্ম বা সংক্ষিপ্ত অপরাধসমূহ প্রকাশ করার প্রয়োজন নেই।</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "একটি অপরাধমূলক রেকর্ড অগত্যা আপনাকে চাকরিতে, বর্তমান চাকরিতে, বা Amazon-এর সাথে একজন স্বাধীন ঠিকাদার হিসাবে জড়িত হতে বাধা দেবে না।  এই তথ্যটি শুধুমাত্র প্রযোজ্য আইন অনুযায়ী এবং শুধুমাত্র আপনি যে চাকরির জন্য আবেদন করেছেন সেই চাকরি/নিযুক্তির সাথে জড়িত কিনা তা নির্ধারণ করার উদ্দেশ্যে ব্যবহার করা হবে।  সততার সাথে এই প্রশ্নের উত্তর দিতে বা অপরাধ(গুলি)-র সাথে সম্পর্কিত অনুরোধকৃত অতিরিক্ত বিস্তারিত বিবরণ প্রদান করতে ব্যর্থ হলে চাকরির জন্য বা একটি স্বাধীন ঠিকাদার নিয়োগের জন্য আপনার আবেদনের বিবেচনা স্থগিত হয়ে যেতে পারে বা, আপনি ইতিমধ্যেই Amazon-এ কর্মরত থাকলে এবং/অথবা একজন স্বাধীন ঠিকাদার হিসাবে নিযুক্ত থাকলে, এই ধরনের ব্যর্থতার ফলে আপনার চাকরি বা নিযুক্তি বাতিল হয়ে যেতে পারে।",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "আপনার অপরাধমূলক ইতিহাস সম্পর্কে অতিরিক্ত তথ্য প্রদান করার আগে আপনাকে অবশ্যই নীচের রাষ্ট্রীয় আইনের তথ্য রিভিউ করতে হবে",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>ক্যালিফোর্নিয়া:</strong> 2 বছরের বেশি পুরানো মারিজুয়ানা-সম্পর্কিত অপরাধ বা অপকর্মের দোষ অন্তর্ভুক্ত করবেন না।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>সান ফ্রান্সিস্কো, ক্যালিফোর্নিয়া:</strong> শাস্তির তারিখ থেকে সাত (7) বছরের বেশি পুরানো অপরাধগুলি অন্তর্ভুক্ত করবেন না, যেমন আপনার সাত বছরের সময়কালের গণনায় <strong>কোনও</strong> কারাবাসের সময়কাল অন্তর্ভুক্ত করা উচিত নয়_।  এমন অপরাধগুলিকে অন্তর্ভুক্ত করবেন না যা অন্যায় বা অপরাধ নয়, যেমন লঙ্ঘন, বা আচার-আচরণ সম্পর্কিত অপরাধ যা দোষী সাব্যস্ত হওয়ার তারিখ থেকে অপরাধমুক্ত করা হয়েছে, যার মধ্যে মারিজুয়ানা সম্পর্কিত অপরাধ অন্তর্ভুক্ত কিন্তু এতেই সীমাবদ্ধ নয়।",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>কলোরাডো:</strong> বেসামরিক বা সামরিক অবাধ্যতার রেকর্ড সম্পর্কিত তথ্য অন্তর্ভুক্ত করবেন না, যদি না রেকর্ডের ফলে একটি উপযুক্ত এখতিয়ারের আদালতের দ্বারা দোষী বা দোষী সাব্যস্ত হয়।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>ম্যাসাচুসেটস:</strong> আপনার অপরাধের ইতিহাস সম্পর্কিত প্রতিবেদনের কপি প্রদান করবেন না।  মাতাল, সাধারণ আক্রমণ, বেপরোয়া গতি, ছোটখাটো ট্র্যাফিক আইন লঙ্ঘন, প্রতারণা বা শান্তির ব্যাঘাতের জন্য প্রথমবারের মতো অপরাধের দোষ অন্তর্ভুক্ত করবেন না। এছাড়াও অন্যান্য অপকর্মের জন্য দোষী সাব্যস্ততা চিহ্নিত করবেন না যেখানে দোষী সাব্যস্ত হওয়ার তারিখ বা কারাবাসের মেয়াদ 3 বছরের বেশি আগে ছিল, যদি না সেই 3 বছরের মধ্যে পরবর্তী দোষী সাব্যস্ত হয়। সাধারণ আইনের অধ্যায় 276-এর ধারা 100F, ধারা 100G, ধারা 100H বা ধারা 100K অনুসারে বহিষ্কৃত রেকর্ড সহ চাকরির জন্য একজন আবেদনকারী পূর্বে গ্রেপ্তার, ফৌজদারি আদালতে হাজিরা বা দোষী সাপেক্ষে এখানে একটি তদন্তের ক্ষেত্রে 'নো রেকর্ড' উত্তর দিতে পারে। অধ্যায় 100F, বিভাগ 100G, অধ্যায় 100H বা সাধারণ আইন অধ্যায় 276 অনুচ্ছেদ 100K অনুযায়ী একটি রেকর্ড সঙ্গে কর্মসংস্থান জন্য একটি আবেদনকারী পূর্বে গ্রেপ্তার, ফৌজদারি আদালতের উপস্থিতি, কিশোর আদালতের উপস্থিতি, বিচার বা সম্পর্কিত একটি তদন্ত এখানে 'কোন রেকর্ড' উত্তর দিতে পারে দন্ডাদেশ।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>নিউইয়র্ক:</strong> ফৌজদারি কার্যবিধি আইন (“CPL”) §160.50 অনুসারে আপনার পক্ষে বাতিল হয়েছে এমন কোনো কাজকে চিহ্নিত করবেন না।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ওহিও:</strong> Ohio Rev. Code 2925.11 এর অধীনে সংজ্ঞায়িত একটি অপকর্মের ড্রাগ লঙ্ঘনের জন্য কোনো দোষী সাব্যস্ত হওয়ার রিপোর্ট করবেন না।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ফিলাডেলফিয়া, পেনসিলভানিয়া:</strong> এই তদন্তের তারিখ থেকে সাত (7) বছরের বেশি সময় ধরে ঘটেছে এমন কোনো শাস্তি অন্তর্ভুক্ত করবেন না।  <strong>সাত বছরের সময়কালের গণনায় কারাবাসের কোনো সময়কাল অন্তর্ভুক্ত করা যাবে না।</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>ভার্জিনিয়া:</strong> ভার্জিনিয়া কোডের ধারা 18.2-250.1 এর অধীনে সংজ্ঞায়িত হিসাবে, মাদকদ্রব্য দখলের অপরাধের রিপোর্ট করবেন না।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>সিয়াটেল, ওয়াশিংটন:</strong> নিম্নোক্ত ছাড়াও, আপনি একটি ফৌজদারি অপরাধ বাদ দিতে  পারেন যেটি পুনর্বাসনের সার্টিফিকেট বা পুনর্বাসনের অনুসন্ধানের ভিত্তিতে অন্যান্য সমতুল্য পদ্ধতির বিষয় ছিল।",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "আপনি কি গত সাত (7) বছরে অপকর্ম বা অপরাধের জন্য দোষী সাব্যস্ত হয়েছেন বা এর জন্য জেল বা প্যারোলে মুক্তি পেয়েছেন?",

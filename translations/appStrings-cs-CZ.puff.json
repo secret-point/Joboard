@@ -388,6 +388,10 @@
       "value" : "Krok {currentStep} z {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Otázka na předchozí soudní potrestání",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
     "BB-BGC-criminal-record-list-convictions-text" : {
       "value" : "<strong>Uveďte pouze odsouzení, která jsou ve veřejně přístupných záznamech.</strong>  Zatčení rozhodnutá ve Váš prospěch nepředstavují odsouzení. Stejně tak neuvádějte žádné informace týkající se odsouzení v soudním systému pro mladistvé nebo záležitost posuzovanou či zpracovanou prostřednictvím soudního systému pro mladistvé anebo obvinění, která vedla k nápravnému programu, či případy, které byly zamítnuty, zamítnuty podle zákona prvně trestaného pachatele, uzavřeny, vymazány, odpuštěny, soudně zamítnuty nebo jinak zákonem považovány jako případy bez uznání viny.  <strong>Rovněž nejste povinni zveřejňovat přestupky, nedodržení zákona, drobná provinění nebo méně závažné činy.</strong>",
       "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
@@ -1775,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Uveďte podrobnosti o odsouzení.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

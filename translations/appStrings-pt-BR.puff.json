@@ -392,9 +392,53 @@
       "value" : "Pergunta sobre antecedentes criminais",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Liste apenas as condenações que constem em registro público.</strong>  Prisões resolvidas em seu favor não são condenações. Da mesma forma, não inclua nenhuma informação relacionada a uma condenação no sistema de justiça de menores, ou um assunto considerado ou processado através do sistema de justiça de menores, ou acusações que levaram a uma pena alternativa ou casos que houverem sido julgados improcedentes, julgados improcedentes sob a lei de réu primário, lacrados, eliminados, perdoados, legalmente julgados improcedentes ou tratados como não condenações de outra forma por lei.  <strong>Você também não é obrigado a divulgar violações, infrações, contravenções leves ou delitos sumários.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Um registro criminal não o impedirá necessariamente de ser empregado, de ter emprego continuado ou contrato como prestador independente com a Amazon.  Essas informações só serão usadas de acordo com a lei aplicável e apenas com a finalidade de determinar se a condenação está relacionada ao trabalho/contrato para o qual você se candidatou.  Não responder honestamente a essa pergunta ou não fornecer os detalhes adicionais solicitados sobre o(s) delito(s) pode resultar na descontinuação da consideração da sua candidatura para um emprego ou para um contrato de prestador independente ou, se você já estiver empregado e/ou contratado como prestador independente com a Amazon, tal falha pode resultar na rescisão do seu contrato de trabalho ou contrato de prestador.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Você deve revisar as informações da lei estadual abaixo antes de fornecer informações adicionais sobre seu histórico criminal",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Califórnia:</strong> Não incluir infrações não criminais relacionadas à maconha ou condenações por contravenção com mais de 2 anos.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>São Francisco, Califórnia:</strong> Não inclua delitos com mais de sete (7) anos a partir da data da sentença; dessa forma, não deve ser incluído <strong> nenhum</strong> período de encarceramento no cálculo do período de sete anos.  Não inclua delitos que não sejam contravenções ou crimes, como infrações ou condenações relacionadas a uma conduta que já esteja descriminalizada desde a data da condenação, incluindo (mas sem se limitar a) delitos envolvendo maconha.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Não inclua informações relativas a um registro de desobediência civil ou militar, a menos que o registro tenha resultado em uma declaração de culpa ou condenação por um tribunal de jurisdição competente.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Não forneça uma cópia do seu relatório de antecedentes criminais.  Não identifique condenações por contravenção como réu primário por embriaguez, agressão simples, excesso de velocidade, infrações de trânsito leves, desordem ou perturbação da paz. Também não identifique condenações por outras contravenções em que a data da condenação ou o fim de qualquer período de detenção tenha sido há mais de 3 anos, a menos que tenha havido condenações subsequentes dentro desses 3 anos. Um candidato a emprego com um registro eliminado de acordo com a seção 100F, seção 100G, seção 100H ou seção 100K do capítulo 276 das Leis Gerais pode responder “sem registro” com relação a um inquérito aqui relacionado a prisões, comparecimentos a tribunais criminais ou condenações anteriores. Um candidato a emprego com um registro eliminado de acordo com a seção 100F, seção 100G, seção 100H ou seção 100K do capítulo 276 das Leis Gerais pode responder “sem registro” a um inquérito aqui relacionado a prisões, comparecimentos a tribunais criminais, comparecimentos a tribunais de menores, julgamentos ou condenações anteriores.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>Nova Iorque:</strong> Não identifique nenhuma ação que tenha sido terminada em seu favor de acordo com a Lei de Processo Penal (“CPL”) § 160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Não informe nenhuma condenação por contravenção do tipo violação relacionada a drogas, conforme definido no Código Revisado de Ohio 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadélfia, Pensilvânia:</strong> Não inclua nenhuma condenação que tenha ocorrido há mais de sete (7) anos da data deste inquérito.  <strong>Nenhum período de detenção deve ser incluído no cálculo do período de sete anos.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virgínia:</strong> Não informe uma condenação de contravenção por porte de drogas, conforme definido na Seção 18.2-250.1 do Código da Virgínia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Além do especificado abaixo, você pode excluir uma condenação criminal que tenha tido um certificado de reabilitação ou outro procedimento equivalente com base em uma constatação da reabilitação.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Você foi condenado por contravenção ou crime ou foi libertado da prisão ou teve liberdade condicional de uma condenação por contravenção ou crime nos últimos sete (7) anos?",
@@ -583,6 +627,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Datas de emprego - De/Até (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Insira uma data válida de emprego",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Eu não tenho um número de seguro social",
@@ -1731,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Marque a caixa para continuar.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Forneça os detalhes da condenação.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

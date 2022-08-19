@@ -392,6 +392,54 @@
       "value" : "Önceki Mahkumiyetler Sorusu",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Lütfen yalnızca kamusal sabıkaları listeleyin.</strong>  Lehinize sonuçlanan tutuklamalar sabıka değildir. Benzer şekilde, gayri reşit hukuk sistemindeki bir sabıkaya veya gayri reşit hukuk sisteminde değerlendirilen veya bu sistem aracılığıyla işlenen bir meseleye veya bir yönlendirme programına yol açan suçlamalar veya ilk kez hüküm giyme yasası uyarınca reddedilen, kapatılan, silinen, affedilen, yargısal olarak reddedilen veya başka bir şekilde yasa tarafından mahkumiyet dışı olarak kabul edilen davaları da dahil etmeyin.  <strong>Ayrıca ihlalleri, aykırılıkları, küçük kabahatleri veya basit suçları da eklemeniz gerekmez.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Bir sabıka kaydı istihdamınıza, çalışmaya devam etmenize veya Amazon'da bağımsız bir yüklenici olarak çalışmanıza engel olmaz.  Bu bilgiler yalnızca yürürlükteki yasalara uygun olarak ve yalnızca sabıkanın başvurduğunuz iş/sözleşmeyle ilgili olup olmadığını belirlemek amacıyla kullanılacaktır.  Bu soruyu dürüstçe yanıtlamamak veya suçların istenen ek ayrıntılarını sağlamamak, istihdam veya bağımsız bir yüklenici sözleşmesi başvurunuzun değerlendirilmesinin durdurulmasına veya halihazırda bağımsız bir çalışan adına ve/veya bu kişi olarak çalışıyorsanız,istenen bilgileri sağlamamak istihdamınızın veya sözleşmenizin feshedilmesine neden olabilir.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Sabıka geçmişiniz hakkında ek bilgi vermeden önce aşağıdaki eyalet hukuku bilgilerini gözden geçirmelisiniz",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Kaliforniya:</strong> 2 yıldan daha eski, suç olmayan esrarla ilgili ihlalleri veya kabahat sabıkalarını dahil etmeyin.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Kaliforniya:</strong> Sabıka tarihinden itibaren yedi (7) yıldan daha eski olan suçları dahil etmeyin; yani, yedi yıllık sürenin hesaplanmasına <strong>herhangi bir</strong> tutukluluk dönemini dahil etmemelisiniz_.  Esrar suçları dahil ancak bunlarla sınırlı olmamak üzere, sabıka tarihinden itibaren suç olmaktan çıkarılmış davranışlarla ilgili ihlaller veya mahkumiyetler gibi kabahat veya ağır suç olmayan suçları dahil etmeyin.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Suçun kabul edilmesi veya yetkili bir mahkeme tarafından mahkumiyet kararı verilmesiyle sonuçlanmadıkça, sivil veya askeri itaatsizlik kaydıyla ilgili bilgileri dahil etmeyin.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Sabıka geçmişi raporunuzun bir kopyasını vermeyin.  Sarhoşluk, basit saldırı, aşırı hız, küçük trafik ihlalleri, kavga veya huzuru bozmak gibi ilk kez olan kabahat sabıkalarını belirtmeyin. Ayrıca, sabıka tarihinin veya herhangi bir hapis süresinin bitişinin 3 yıldan daha önce olduğu diğer kabahatler için sabıkaları, bu 3 yıl içinde müteakip sabıkalar olmadıkça belirtmeyin. Genel Kanunlar Bölüm 100F, Bölüm 100G, Bölüm 100H veya Bölüm 100K, Bölüm 276 uyarınca kaydı silinen bir iş başvurusunda bulunan kişi, burada önceki tutuklamalar, ceza mahkemesi duruşmaları veya mahkumiyetlerle ilgili bir soruşturmayla ilgili olarak 'kayıt yok' yanıtını verebilir. Genel Kanunlar Bölüm 100F, Bölüm 100G, Bölüm 100H veya Bölüm 100K, Bölüm 276 uyarınca kaydı silinen bir iş başvurusunda bulunan kişi, burada önceki tutuklamalar, ceza mahkemesi duruşmaları,çocuk mahkemesi duruşmaları,mahkeme hükümleri veya mahkumiyet sorgulamalarına 'kayıt yok' yanıtını verebilir.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Ceza Muhakemesi Kanunu (“CPL”) §160.50 uyarınca lehinize sonlanan herhangi bir eylemi tanımlamayın.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Ohio Rev. Code 2925.11'de tanımlandığı gibi bir uyuşturucu kullanımı kabahati için herhangi bir sabıka bildirmeyin.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Bu soruşturmanın yapıldığı tarihin üstünden yedi (7) yıldan daha fazla süre geçmiş sabıkaları dahil etmeyin.  <strong>Yedi yıllık sürenin hesaplanmasına herhangi bir hapis süresi dahil edilmemelidir.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Code of Virginia Bölüm 18.2-250.1'de tanımlandığı gibi, uyuşturucu bulundurma suçunu kabahat olarak bildirmeyin.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Aşağıdakilere ek olarak, rehabilitasyon bulgusuna dayalı olarak bir rehabilitasyon sertifikası veya diğer eşdeğer prosedüre konu olmuş bir cezai sabıkayı da hariç tutabilirsiniz.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Son yedi (7) yıl içinde kabahat veya ağır suçtan hüküm giydiniz mi veya bir kabahat veya ağır suçtan hüküm giydikten sonra hapisten veya şartlı tahliyeyle serbest bırakıldınız mı?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"

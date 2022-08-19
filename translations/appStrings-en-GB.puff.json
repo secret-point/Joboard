@@ -628,6 +628,10 @@
       "value" : "Dates of employment – From/To (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Please enter a valid date of Employment",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "I do not have a Social Security Number",
       "note" : "Label for the no ssn checkbox"
@@ -1983,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Loading...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Failed to update WOTC.",

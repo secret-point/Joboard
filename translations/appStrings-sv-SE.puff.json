@@ -388,6 +388,14 @@
       "value" : "Steg {currentStep} av {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "Fråga om tidigare domar",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>San Francisco, Kalifornien:</strong> Inkludera inte brott som är mer än sju (7) år gamla från domslutets datum. Du ska inte ta med <strong>någon</strong> fängelsetid i beräkningen av sjuårsperioden_.  Inkludera inte brott som inte är förseelser eller grova brott, såsom överträdelser eller domar som är kopplade till beteende som har avkriminaliserats efter domens datum, inklusive men inte begränsat till marijuanainnehav.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Har du dömts för en förseelse eller ett brott eller släppts från fängelse eller fått villkorlig frigivning för en förseelse eller brott under de senaste sju (7) åren?",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -571,6 +579,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "Anställningsdatum – från/till (MM-ÅÅ – MM-ÅÅ)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Fyll i ett giltigt anställningsdatum",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Jag har inget socialförsäkringsnummer",
@@ -1719,6 +1731,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Markera rutan för att fortsätta.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Ange detaljer om domen.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL-Alabama",

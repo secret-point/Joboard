@@ -1988,6 +1988,10 @@
       "value" : "WY - Wyoming",
       "note" : "Text for Wyoming state"
     },
+    "BB-spinner-loading-text" : {
+      "value" : "Chargement en cours...",
+      "note" : "Text for Loading spinner"
+    },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Impossible de mettre à jour WOTC.",
       "note" : "error message when failed to update wotc status"

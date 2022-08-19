@@ -1780,6 +1780,10 @@
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Please provide details of the conviction.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",
       "note" : "Text for Alabama state"
@@ -1983,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Loading...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Failed to update WOTC.",

@@ -392,9 +392,53 @@
       "value" : "முந்தைய தண்டனை பற்றிய கேள்வி",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>பொதுப் பதிவு தொடர்பான தண்டனைகளை மட்டும் பட்டியலிடுங்கள்.</strong>  நீங்கள் கைது செய்யப்பட்டு, பிறகு குற்றவாளியல்ல என உறுதிசெய்யப்பட்டவை தண்டனைகள் அல்ல. அதுபோல், சிறார் நீதி அமைப்பில் உள்ள தண்டனை, அல்லது சிறார் நீதி அமைப்பில் பரிசீலிக்கப்பட்ட அல்லது செயலாக்கப்பட்ட ஒரு விஷயம் அல்லது திசைதிருப்பல் திட்டம் அல்லது வழக்குகளுக்கு வழிவகுத்த குற்றச்சாட்டுகள் தொடர்பான எந்த தகவல்களையும் சேர்க்க வேண்டாம். நிராகரிக்கப்பட்டவை, முதல் குற்றவாளியின் சட்டத்தின் கீழ் நிராகரிக்கப்பட்டவை, பணிநீக்கம் செய்யப்பட்டவை, சீல் வைக்கப்பட்டவை, வெளியேற்றப்பட்டவை, மன்னிக்கப்பட்டவை, நீதித்துறையில் நீக்கப்பட்டவை அல்லது சட்டத்தால் தண்டனை அல்லாதவையாக அவை கருதப்படுகின்றன.  <strong>மீறல்கள், விதி மீறல்கள், சிறிய தவறான நடத்தை அல்லது குற்றங்களின் சுருக்கத்தை நீங்கள் வெளிப்படுத்த வேண்டிய அவசியமில்லை.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "ஒரு குற்றவியல் பதிவு உங்களை வேலை வாய்ப்பிலிருந்தும், தொடர்ந்து வேலை செய்வதிலிருந்தும் அல்லது Amazon உடன் ஒரு சார்பற்ற ஒப்பந்தக்காரராக ஈடுபடுவதிலிருந்தும் உங்களைத் தடுக்காது.  இந்தத் தகவல்கள் பொருந்தக்கூடிய சட்டத்தின்படி மட்டுமே பயன்படுத்தப்படும், நீங்கள் விண்ணப்பித்த வேலை/ஒப்பந்தம் தொடர்பான தண்டனையா என்பதைத் தீர்மானிக்கும் நோக்கத்திற்காக மட்டுமே பயன்படுத்தப்படும்.  இந்தக் கேள்விக்கு நேர்மையாகப் பதிலளிக்கத் தவறினால் அல்லது குற்றங்கள் குறித்து கோரப்பட்ட கூடுதல் விவரங்களை வழங்கத் தவறினால், வேலைக்கான உங்கள் விண்ணப்பம் அல்லது சார்பற்ற ஒப்பந்ததாரர் ஈடுபாட்டிற்கான உங்கள் விண்ணப்பம் பரிசீலிக்கப்படுவதை நிறுத்தலாம், அல்லது நீங்கள் ஏற்கெனவே Amazonஇல் ஒரு சார்பற்ற ஒப்பந்ததாரராக பணிபுரிந்திருந்தால் அத்தகைய தோல்வி உங்கள் வேலை அல்லது ஒப்பந்தத்தை நிறுத்தலாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "உங்கள் குற்றவியல் வரலாறு பற்றிய கூடுதல் தகவலை வழங்குவதற்கு முன், கீழே உள்ள மாநிலச் சட்டத் தகவல்களை மதிப்பாய்வு செய்ய வேண்டும்",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>கலிஃபோர்னியா:</strong> 2 ஆண்டுகளுக்கு முந்தைய குற்றமற்ற மரிஜுவானா தொடர்பான மீறல்கள் அல்லது தண்டனைகளையும் சேர்க்க வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>சான் பிரான்சிஸ்கோ, கலிபோர்னியா:</strong> தண்டனை விதிக்கப்பட்ட தேதியில் இருந்து ஏழு (7) ஆண்டுகளுக்கும் முந்தைய குற்றங்களைச் சேர்க்க வேண்டாம், அதாவது ஏழு ஆண்டு காலத்தின் கணக்கீட்டில் <strong>எந்தவொரு</strong> சிறைவாசக் காலத்தையும் நீங்கள் சேர்க்கக்கூடாது.  மரிஜுவானா குற்றங்கள் உட்பட ஆனால் அவை மட்டுமல்லாமல், தண்டனை விதிக்கப்பட்ட தேதியில் இருந்து குற்றமற்ற நடத்தை தொடர்பான மீறல்கள் அல்லது தண்டனைகள் போன்ற தவறான செயல்களோ குற்றங்களோ இல்லாதவற்றைச் சேர்க்க வேண்டாம்.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>கொலராடோ:</strong> சிவில் அல்லது இராணுவ கீழ்ப்படியாமை பற்றிய பதிவேடு தொடர்பான தகவல்களை, அந்த பதிவின் விளைவாக ஒரு குற்ற ஒப்புதல் அல்லது தகுதியான அதிகார வரம்பிற்கு உட்பட்ட நீதிமன்றத்தால் தண்டனை விதிக்கப்படும் வரை சேர்க்க வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>மாசசூசெட்ஸ்:</strong> உங்கள் குற்றவியல் வரலாற்று அறிக்கையின் நகலை வழங்க வேண்டாம்.  குடிபோதை, எளிய தாக்குதல், வேகமாகச் செல்லுதல், சிறிய போக்குவரத்து விதிமீறல்கள், தகராறு அல்லது அமைதியைக் கெடுத்தல் போன்ற முதல்முறை தவறான குற்றங்களைப் பற்றி அடையாளப்படுத்த வேண்டாம். மேலும் 3 ஆண்டுகளுக்கு முன்பு தண்டனை விதிக்கப்பட்ட தேதி அல்லது சிறைவாசத்தின் எந்தக் காலகட்டத்தின் முடிவையும், அந்த 3 ஆண்டுகளுக்குள் அடுத்தடுத்து தண்டனைகள் இருந்தால் தவிர, பிற தவறான செயல்களுக்கான தண்டனைகளை அடையாளப்படுத்த வேண்டாம். பிரிவு 100F, பிரிவு 100G, பிரிவு 100H அல்லது பொதுச் சட்டங்களின் அத்தியாயம் 276 இன் பிரிவு 100K ஆகியவற்றின் அடிப்படையில் பணிநீக்கம் செய்யப்பட்ட பதிவோடு பணிக்கு விண்ணப்பிப்பவர், முன் கைதுகள், குற்றவியல் நீதிமன்றத்தில் ஆஜராகுதல் அல்லது தண்டனைகள் தொடர்பான விசாரணையைப் பொறுத்தவரை 'பதிவு இல்லை' என்று பதிலளிக்கலாம். பிரிவு 100F, பிரிவு 100G, பிரிவு 100H அல்லது பொதுச் சட்டங்களின் 276வது பிரிவு 100K ஆகியவற்றின் படி பணிநீக்கம் செய்யப்பட்ட பதிவோடு பணிக்கு விண்ணப்பிப்பவர், முன் கைதுகள், குற்றவியல் நீதிமன்றத்தில் ஆஜராகுதல், சிறார் நீதிமன்றத்தில் ஆஜராகுதல், தீர்ப்புகள் அல்லது தண்டனைகள் தொடர்பான விசாரணைக்கு 'பதிவு இல்லை' என்று பதிலளிக்கலாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>நியூயார்க்:</strong> குற்றவியல் நடைமுறைச் சட்டத்தின் (\"CPL\") §160.50க்கு இணங்க உங்களுக்குச் சாதகமாக நிறுத்தப்பட்ட எந்தச் செயல்களையும் அடையாளம் காண வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>ஓஹியோ:</strong> ஓஹியோ வருவாய் விதி 2925.11இன் கீழ் வரையறுக்கப்பட்டுள்ளபடி தவறான போதைப்பொருள் மீறலுக்காகப் பெற்ற எந்த தண்டனையையும் குறிப்பிட வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>ஃபிலடெல்ஃபியா, பென்சில்வேனியா:</strong> இந்த விசாரணைத் தேதியிலிருந்து ஏழு (7) ஆண்டுகளுக்கு மேல் நடந்த எந்த தண்டனையையும் சேர்க்க வேண்டாம்.  <strong>ஏழு ஆண்டு காலக் கணக்கீட்டில் சிறைவாசத்தில் இருந்த எந்தக் காலமும் சேர்க்கப்படக்கூடாது.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>விர்ஜினியா:</strong> விர்ஜினியா விதிப் பிரிவு 18.2-250.1இன் கீழ் வரையறுக்கப்பட்டுள்ளபடி, தவறான போதைப்பொருள் வைத்திருந்த குற்றத்தைக் குறிப்பிட வேண்டாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>சியாட்டில், வாஷிங்டன்:</strong> கீழே உள்ளவற்றைத் தவிர, புனர்வாழ்வுக்கான சான்றிதழ் அல்லது மறுவாழ்வு கண்டறிதலின் அடிப்படையில் பிற சமமான நடைமுறைக்கு உட்பட்ட குற்றவியல் தண்டனையை நீங்கள் சேர்க்காமல் தவிர்க்கலாம்.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "கடந்த ஏழு (7) ஆண்டுகளில் நீங்கள் தவறான செயலுக்கு அல்லது குற்றத்திற்காகத் தண்டிக்கப்பட்டிருக்கிறீர்களா அல்லது சிறையிலிருந்து விடுவிக்கப்பட்டிருக்கிறீர்களா அல்லது ஒரு தவறான அல்லது குற்றவியல் தண்டனையிலிருந்து பரோலில் விடுவிக்கப்பட்டுள்ளீர்களா?",
@@ -1736,6 +1780,10 @@
       "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "தண்டனை விவரங்களை வழங்கவும்.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- அலபாமா",
       "note" : "Text for Alabama state"
@@ -1939,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- வயோமிங்",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "ஏற்றுகிறது...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "WOTCஐப் புதுப்பிக்க முடியவில்லை.",

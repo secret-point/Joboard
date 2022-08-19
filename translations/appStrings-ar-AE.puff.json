@@ -392,9 +392,53 @@
       "value" : "سؤال عن الإدانة السابقة",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>يرجى سرد الإدانات التي تخص السجل العام فقط.</strong>  الاعتقالات التي تم تسويتها لصالحك ليست إدانات. وبالمثل، لا تدرج أيّ معلومات تتعلق بالإدانة في نظام قضاء الأحداث، أو مسألة تم النظر فيها أو معالجتها من خلال نظام قضاء الأحداث، أو التهم التي أدت إلى برنامج تحويل أو القضايا التي تم رفضها أو رفضها بموجب قانون الجاني لأول مرة، أو مختومة، أو شطبت، أو المعفو عنها أو المرفوضة قضائيا أو معاملتها بطريقة أخرى على أنها لا تمثل إدانات بموجب القانون.  <strong>لا يُطلب منك أيضًا الكشف عن الانتهاكات أو المخالفات أو الجنح الصغيرة أو الجرائم الموجزة.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "لن يمنعك السجل الجنائي بالضرورة من العمل أو الاستمرار في العمل أو المشاركة كمقاول مستقل مع أمازون.  لن يتم استخدام هذه المعلومات إلا وفقًا للقانون المعمول به وفقط لغرض تحديد ما إذا كانت الإدانة مرتبطة بالوظيفة/المشاركة التي تقدمت بطلب عليها.  قد يؤدي عدم الإجابة عن هذا السؤال بصدق أو تقديم التفاصيل الإضافية المطلوبة عن المخالفة (المخالفات) إلى وقف النظر في طلبك للتوظيف أو المشاركة كمقاول مستقل، أو إذا كنت موظفًا بالفعل و/أو مشاركًا كمقاول مستقل مع أمازون، قد يؤدي ذلك إلى إنهاء عملك أو مشاركتك.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "يجب عليك مراجعة معلومات قانون الولاية أدناه قبل تقديم معلومات إضافية حول تاريخك الجنائي",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>كاليفورنيا:</strong> لا تقم بتضمين المخالفات غير الجناية المتعلقة بالماريجوانا أو الإدانات الجنحية التي تزيد عن عامين.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>سان فرانسيسكو، كاليفورنيا:</strong> لا تُدرج الجرائم التي يزيد عمرها عن سبع (7) سنوات من تاريخ صدور الحكم، بحيث لا يجب تضمين <strong>أيّ</strong> فترة سجن في حساب فترة السبع سنوات_.  لا تُدرج الجرائم التي ليست جنح أو جنايات، مثل المخالفات أو الإدانات المتعلقة بالسلوك الذي تم إلغاء تجريمها منذ تاريخ الإدانة، بما في ذلك على سبيل المثال لا الحصر جرائم الماريجوانا.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>كولورادو:</strong> لا تقم بتضمين معلومات تتعلق بسجل العصيان المدني أو العسكري، ما لم يسفر السجل عن إقرار بالذنب أو إدانة من قِبل محكمة مختصة.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>ماساتشوستس:</strong> لا تقدم نسخة من تقرير السجل الجنائي الخاص بك.  لا تحدد إدانات الجنح لأول مرة بسبب السُكْر، أو الاعتداء البسيط، أو تجاوز السرعة، أو مخالفات مرورية طفيفة، أو الشجار أو الإخلال بالأمن. لا تحدد أيضًا الإدانات بجنح أخرى حيث كان تاريخ الإدانة أو نهاية أيّ فترة سجن أكثر من 3 منذ سنوات، ما لم تكن هناك إدانات لاحقة ضمن تلك الثلاث سنوات. يجوز لمقدم طلب العمل الذي لديه سجل شطب بموجب القسم 100F، أو القسم 100G، أو القسم 100H أو القسم 100K من الفصل 276 من القوانين العامة الإجابة بـ \"عدم وجود سجل\" فيما يتعلق بالاستفسار الوارد هنا بشأن الاعتقالات السابقة أو المثول أمام المحكمة الجنائية أو الإدانات. يجوز لمقدم طلب العمل الذي لديه سجل شطب بموجب القسم 100F، أو القسم 100G، أو القسم 100H أو القسم 100K من الفصل 276 من القوانين العامة الإجابة بـ \"عدم وجود سجل\" على الاستفسار الوارد هنا بشأن الاعتقالات السابقة أو المثول أمام المحكمة الجنائية أو المثول أمام محكمة الأحداث أو صدور أحكام قضائية أو الإدانات.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>نيويورك:</strong> لا تحدد أيّ إجراءات تم إنهاؤها لصالحك وفقًا لقانون الإجراءات الجنائية (\"CPL\") §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>أوهايو:</strong> لا تُبلغ عن أيّ إدانة لارتكاب مخالفة جنحة مخدرات على النحو المحدد في قانون Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>فيلادلفيا، بنسلفانيا:</strong> لا تقم بتضمين أيّ إدانات حدثت منذ أكثر من سبع (7) سنوات من تاريخ هذا التحقيق.  <strong>لا ينبغي إدراج أيّ فترة سجن في حساب فترة السبع سنوات.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>فيرجينيا:</strong> لا تبلغ عن إدانة جنحة حيازة مخدرات، على النحو المحدد في القسم 18.2-250.1 من قانون ولاية فرجينيا.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>سياتل، واشنطن:</strong> بالإضافة إلى ما يلي، يمكنك استبعاد الإدانة الجنائية التي كانت موضوع شهادة إعادة التأهيل أو أيّ إجراء مماثل آخر بناءً على نتيجة إعادة التأهيل.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "هل تمت إدانتك بارتكاب جنحة أو جناية أو تم إطلاق سراحك من السجن أو حصلت على إفراج مشروط من إدانة جنحة أو جناية في آخر سبع (7) سنوات؟",

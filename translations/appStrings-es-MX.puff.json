@@ -392,9 +392,53 @@
       "value" : "Pregunta de convicción anterior",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Incluye únicamente las condenas que sean materia de registro público.</strong>  Las detenciones resueltas a tu favor no son condenas. De igual manera, no incluyas ninguna información relativa a una condena en el sistema de justicia juvenil, ni a un asunto considerado o tramitado a través del sistema de justicia juvenil, ni cargos que condujeron a un programa de desvío o casos que hayan sido desestimados, desestimados en virtud de la ley de un primer infractor, sellados, expurgados, indultados, desestimados judicialmente o tratados de otra manera como no condenas por ley.  <strong>Tampoco estás obligado a revelar violaciones, infracciones, delitos menores o delitos sumarios.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Un historial criminal no necesariamente te descalificará del empleo, empleo continuo o un compromiso como contratista independiente con Amazon.  Esta información solo se utilizará de acuerdo con la ley aplicable y únicamente con el propósito de determinar si la condena está relacionada con el trabajo/compromiso para el que aplicaste.  Si no respondes a esta pregunta con sinceridad o no proporcionas los detalles adicionales solicitados de los delitos, es posible que se suspenda la consideración de tu solicitud de empleo o de un compromiso de contratista independiente o, si ya estás empleado y/o contratado como contratista independiente con Amazon. , tal falla puede resultar en la terminación de tu empleo o compromiso.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Debes revisar la información de la ley estatal a continuación antes de proporcionar información adicional sobre tus antecedentes penales",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>California:</strong> No incluyas infracciones no graves relacionadas con la marihuana o condenas por delitos menores que tengan más de 2 años.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, California:</strong> No incluyas delitos que tengan más de siete (7) años contados a partir de la fecha de la sentencia, de tal manera que no se incluya <strong>ningún</strong> periodo de encarcelamiento en el cálculo del periodo de siete años_.  No incluyas delitos que no sean delitos menores o crímenes, como infracciones o condenas relacionadas con conductas que hayan sido despenalizadas desde la fecha de la condena, incluidos pero no limitados a los delitos relacionados con la mariguana.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> No incluyas información relativa a un registro de desobediencia civil o militar, a menos que el expediente resulte en una declaración de culpabilidad o una condena por un tribunal de jurisdicción competente.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> No proporciones una copia de tu informe de antecedentes penales.  No identifiques condenas por delitos menores por primera vez por embriaguez, agresión simple, exceso de velocidad, infracciones menores de tránsito, peleas o alteración de la paz. Tampoco identifiques condenas por otros delitos menores donde la fecha de condena o el término de cualquier periodo de encarcelamiento fuera hace más de 3 años, a menos que haya habido condenas posteriores dentro de esos 3 años. El aspirante a un empleo con un expediente expurgado de conformidad con la sección 100F, la sección 100G, la sección 100H o la sección 100K del capítulo 276 de las Leyes Generales podrá responder “sin antecedentes” con respecto a una indagación en el presente documento relacionado con detenciones previas, comparecencias judiciales penales o condenas. El aspirante a un empleo con un expediente expurgado de conformidad con la sección 100F, la sección 100G, la sección 100H o la sección 100K del capítulo 276 de las Leyes Generales podrá responder “sin antecedentes” a una indagación en el presente documento relacionado con detenciones previas, comparecencias judiciales penales, comparecencias en tribunales de menores, adjudicaciones o condenas.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> No identifiques ninguna acción que concluyera a tu favor conforme a la Ley Procesal Penal (“CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> No informes ninguna condena por un delito menor por drogas según se define en el Código Revisado de Ohio 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Filadelfia, Pensilvania:</strong> No incluyas ninguna condena que haya ocurrido a más de siete (7) años contados a partir de la fecha de esta indagatoria.  <strong>Cualquier periodo de encarcelamiento no debe incluirse en el cálculo del periodo de siete años.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> No informes una condena por delito menor por posesión de drogas, tal como se define en la Sección 18.2-250.1 del Código de Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Además de lo siguiente, podrás excluir una condena penal que haya sido objeto de un certificado de rehabilitación u otro procedimiento equivalente con base en un hallazgo de la rehabilitación.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "¿Has sido condenado por delito menor o delito grave o has sido liberado de prisión o libertad condicional por una condena por delito menor o delito grave en los últimos siete (7) años?",

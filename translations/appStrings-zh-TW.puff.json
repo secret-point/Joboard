@@ -1780,6 +1780,10 @@
       "value" : "請核取方塊以繼續。",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "請提供定罪詳細內容。",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- 阿拉巴馬州",
       "note" : "Text for Alabama state"
@@ -1983,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- 懷俄明州",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "載入中...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "無法更新 WOTC。",

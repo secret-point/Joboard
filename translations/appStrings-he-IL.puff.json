@@ -388,6 +388,10 @@
       "value" : "שלב {currentStep} מתוך {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
+      "value" : "<strong>סן פרנסיסקו, קליפורניה:</strong> אין לכלול עבירות שהתרחשו למעלה משבע (7) שנים ממועד מתן פסק הדין, באופן שאין לכלול <strong>שום</strong> תקופת מאסר בחישוב התקופה בת שבע השנים_.  אין לכלול עבירות שאינן עבירות קלות או פשעים, כגון הפרות או הרשעות הקשורות להתנהלות שהפכה לחוקית מאז מועד ההרשעה, בין היתר עבירות בגין מריחואנה.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "האם הורשעת בעוון עבירה או בעבירה פלילית או שוחררת ממאסר או מאסר על תנאי בעוון עבירה או הרשעה בפלילים בשבע (7) השנים האחרונות?\n",
       "note" : "Text to ask if candidate has had criminal record within 7 years"
@@ -571,6 +575,10 @@
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
       "value" : "תאריכי העסקה - מ/עד (MM/YY - MM/YY)",
       "note" : "Text for the dates of employment at Amazon input label text"
+    },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "יש להזין תאריך העסקה חוקי",
+      "note" : "Text for the dates of employment at Amazon input error text"
     },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "אין לי מספר ביטוח לאומי",

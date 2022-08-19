@@ -628,6 +628,10 @@
       "value" : "Ημερομηνίες απασχόλησης - Από/Έως (ΜΜ/ΕΕ - ΜΜ/ΕΕ)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
+    "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
+      "value" : "Εισαγάγετε μια έγκυρη ημερομηνία απασχόλησης",
+      "note" : "Text for the dates of employment at Amazon input error text"
+    },
     "BB-BGC-no-ssn-checkbox-label" : {
       "value" : "Δεν έχω αριθμό κοινωνικής ασφάλισης",
       "note" : "Label for the no ssn checkbox"
@@ -1775,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Προσθέστε σημάδι επιλογής στο πλαίσιο για να συνεχίσετε.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Παράσχετε τις λεπτομέρειες της καταδίκης.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL — Αλαμπάμα",
