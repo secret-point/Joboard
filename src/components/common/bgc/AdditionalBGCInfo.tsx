@@ -117,7 +117,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             boundSetCandidatePatchRequest({});
             boundUpdateCandidateInfoError({});
         }
-    }, [additionalBgc]);
+    }, []);
 
     useEffect(() => {
         // Page will emit page load event once both pros are available but
