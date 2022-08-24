@@ -1081,18 +1081,19 @@ export const onAssessmentStart =  (assessmentUrl: string, applicationData: Appli
 }
 
 export const setEpicApiCallErrorMessage = (errorMessage: ApiErrorMessage, isDismissible?: boolean) => {
+    if (errorMessage) {
+        const message = translate(errorMessage.translationKey, errorMessage.value);
 
-    const message = translate(errorMessage.translationKey, errorMessage.value);
+        const alertMessage: AlertMessage = {
+            type: MessageBannerType.Error,
+            title: message,
+            visible: true,
+            isDismissible,
+        }
 
-    const alertMessage: AlertMessage = {
-        type: MessageBannerType.Error,
-        title: message,
-        visible: true,
-        isDismissible,
+        //Show Banner when error is due to unauthorized, we may extend logic to show error banner in future.
+        boundSetBannerMessage(alertMessage);
     }
-
-    //Show Banner when error is due to unauthorized, we may extend logic to show error banner in future.
-    boundSetBannerMessage(alertMessage);
 }
 
 export const isI18nSelectOption = (option: any) => {

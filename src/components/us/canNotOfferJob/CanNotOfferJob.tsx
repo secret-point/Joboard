@@ -1,40 +1,38 @@
+import React from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import React, { useEffect } from "react";
+import queryString from "query-string";
+import { useEffect } from "react";
 import { connect } from "react-redux";
+import { useLocation } from "react-router";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,
   redirectToDashboard,
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import { translate as t } from "../../../utils/translator";
-import { useLocation } from "react-router";
-import queryString from "query-string";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { getLocale } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
   job: JobState,
-  application: ApplicationState,
   candidate: CandidateState,
 }
 
 export const CanNotOfferJob = (props: MapStateToProps) => {
 
-  const { job, candidate, application } = props;
+  const { job, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const pageName = getPageNameFromPath(pathname);
-  const { jobId, applicationId } = queryParams;
+  const { jobId } = queryParams;
   const jobDetail = job.results;
-  const applicationData = application.results;
   const candidateData = candidate.results.candidateData;
 
   useEffect(() => {
@@ -46,15 +44,11 @@ export const CanNotOfferJob = (props: MapStateToProps) => {
   }, [jobDetail, jobId]);
 
   useEffect(() => {
-    checkAndBoundGetApplication(applicationId);
-  }, [applicationId]);
-
-  useEffect(() => {
     // Page will emit page load event once both pros are available but
     // will not emit new event on props change once it has emitted pageload event previously
-    jobDetail  && applicationData && candidateData && addMetricForPageLoad(pageName);
+    jobDetail && candidateData && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData]);
+  }, [jobDetail, candidateData]);
 
   useEffect(() => {
     return () => {
