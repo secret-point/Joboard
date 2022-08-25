@@ -445,7 +445,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix',
-        regex: "^(?=\\S)(0[1-9]|1[0-2])\\/?([0-9]{2})\\s-\\s(0[1-9]|1[0-2])\\/?([0-9]{2})[^\\s]$"
+        regex: "^(?=\\S)(0[1-9]|1[0-2])\\/?([0-9]{2})\\s-\\s(0[1-9]|1[0-2])\\/?([0-9]{2})$"
     }
 ]
 
