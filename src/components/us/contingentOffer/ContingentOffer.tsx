@@ -105,10 +105,10 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
         <Col gridGap={10}>
             <Col gridGap={10}>
                 <H2>{t("BB-ContingencyOffer-well-done-text","Well done so far")}{displayName ? `, ${displayName}`: ''}!</H2>
-                <Text fontSize="T200">Here is the contingent offer for the job you picked.</Text>
+                <Text fontSize="T200">{t("BB-ContingencyOffer-job-picked-title-text", "Here is the contingent offer for the job you picked.")}</Text>
             </Col>
             <Row>
-                <Popover triggerText={t("BB-ContingencyOffer-contingent-offer-meaning-popover-title", "What is a contingent offer?")}>
+                <Popover triggerText={t("BB-ContingencyOffer-contingent-offer-meaning-popover-title-text", "What is a contingent offer?")}>
                     {({ close }) => (
                         <Col gridGap="S500">
                             <Text fontSize="T200">

@@ -212,10 +212,6 @@
       "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
       "note" : "Text for job offer picked title"
     },
-    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
-      "note" : "Text for contingent offer meaning popover title"
-    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות להעסקה חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. אם זה המקרה, אתה יכול לצפות לשמוע מאיתנו בקרוב.",
       "note" : "Text for contingent offer meaning popover content"
@@ -388,9 +384,57 @@
       "value" : "שלב {currentStep} מתוך {totalSteps}",
       "note" : "Text to show step progress on bgc step card"
     },
+    "BB-BGC-criminal-record-list-previous-conviction-question-text" : {
+      "value" : "שאלה לגבי הרשעה קודמת",
+      "note" : "Text for the BGC Previous Conviction Question flyout title text"
+    },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>יש לרשום רק הרשעות בעלות עניין לציבור.</strong>  מעצרים שנפתרו לטובתך לא נחשבים להרשעות. באופן דומה, אין לכלול כל מידע הנוגע להרשעה במערכת המשפט לנוער או נושא שטופל או עובד במערכת המשפטית לנוער או האשמות שהובילו לתוכנית שיקום או תיקים שנסגרו, נסגרות במסגרת חוק עבירה ראשונה, נמחקו, בוטלו, זוכו, בוטלו משפטית או טופלו באופן שאינו הרשעה על ידי מערכת המשפט באופן אחר.  <strong>כמו כן, אין צורך לחשוף הפרות או עבירות קלות מסוג Infraction‏, Petty Misdemeanor או Summary Offense.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "רישום פלילי לא בהכרח ימנע ממך עבודה, המשך תעסוקה או התקשרות כקבלן עצמאי עם Amazon.  מידע זה ישמש אך ורק בהתאם לחוק החל ורק על מנת לקבוע אם ההרשעה קשורה לעבודה/להתקשרות שעבורה הגשת מועמדות.  אי-מתן תשובה כנה לשאלה זו או אי מסירה של הפרטים הנוספים הדרושים של העבירות עשויים לגרום להפסקה של בדיקת מועמדותך לתעסוקה או להתקשרות של קבלנות עצמאית, או אם הנך כבר מועסק/ת או קשור/ה כקבלן עצמאי עם Amazon, היעדר המענה לשאלות אלה עשוי לגרום לסיום ההעסקה או ההתקשרות שלך.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "עליך לעיין במידע על חוק המדינה שלהלן לפני הזנת מידע נוסף על ההיסטוריה הפלילית שלך",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>קליפורניה:</strong> אין לכלול עבירות או הרשעות בגין הפרות הקשורות למריחואנה שגילן מעל שנתיים.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>סן פרנסיסקו, קליפורניה:</strong> אין לכלול עבירות שהתרחשו למעלה משבע (7) שנים ממועד מתן פסק הדין, באופן שאין לכלול <strong>שום</strong> תקופת מאסר בחישוב התקופה בת שבע השנים_.  אין לכלול עבירות שאינן עבירות קלות או פשעים, כגון הפרות או הרשעות הקשורות להתנהלות שהפכה לחוקית מאז מועד ההרשעה, בין היתר עבירות בגין מריחואנה.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>קולורדו:</strong> אין לכלול מידע בנוגע לרישום של מרי אזרחי או צבאי, אלא אם הרישום הוביל להודאה באשמה או להרשעה בבית משפט בעל סמכות שיפוטית מוסמכת.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>מסצ'וסטס:</strong> אין לצרף העתק של דוח ההיסטוריה הפלילית שלך.  אין לציין הרשעות ראשונות בגין עבירות קלות של שירות, תקיפה פשוטה, נהיגה במהירות מופרזת, הפרות קלות של חוקי התנועה, תגרות או הפרעה לשלום הציבור. כמו כן, אין לציין הרשעות בגין עבירות קלות אחרות כאשר תאריך ההרשעה או סיום של תקופת מאסר כלשהי חל לפני יותר מ-3 שנים, אלא אם היו הרשעות עוקבות באותן 3 שנים. מועמד לתעסוקה עם רישום שנמחק בכפוף לסעיף 100F, סעיף 100G‏, סעיף 100H או סעיף 100K של פרק 276 של החוקים הכלליים רשאי לענות 'אין רישום' לבירור זה לגבי מעצרים קודמים, העמדה לדין פלילי או הרשעות קודמות. מועמד לתעסוקה עם רישום שנמחק בכפוף לסעיף 100F, סעיף 100G‏, סעיף 100H או סעיף 100K של פרק 276 של החוקים הכלליים רשאי לענות 'אין רישום' לבירור זה ביחס למעצרים קודמים, העמדה לדין פלילי, העמדה לדין בבית המשפט לנוער, פסיקות או הרשעות קודמות.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>ניו יורק:</strong> אין לציין פעולות שהסתיימו לטובתך על פי חוק סדר הדין הפלילי (\"CPL\") ‎§160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>אוהיו:</strong> אין לדווח על כל הרשעה בגין עבירת סמים קלה כמוגדר בקוד המתוקן של אוהיו 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>פילדלפיה, פנסילבניה:</strong> אין לכלול הרשעות שהתרחשו יותר משבע (7) שנים ממועד בירור זה.  <strong>אין לכלול כל תקופת מאסר בחישוב התקופה בת שבע (7) השנים.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>וירג'יניה:</strong> אין לדווח על הרשעה בגין עבירה קלה של אחזקת סמים כמוגדר בסעיף 18.2-250.1 בקוד וירג'יניה.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>סיאטל, וושינגטון:</strong> בנוסף לנאמר להלן, ניתן לא לכלות הרשאה פלילית שהובילה לתעודת שיקום או הליך שווה ערך המבוסס על ממצאי השיקום.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "האם הורשעת בעוון עבירה או בעבירה פלילית או שוחררת ממאסר או מאסר על תנאי בעוון עבירה או הרשעה בפלילים בשבע (7) השנים האחרונות?\n",
@@ -403,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "לא",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "איזה מידע לכלול",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "יש לספק עיר, מדינה, מצב הרשעה, תאריך, אופי העבירה, יחד עם מידע על גזר הדין",
@@ -1728,6 +1776,10 @@
       "value" : "יש לסמן את התיבה כדי להמשיך.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "יש להזין את פרטי ההרשעה.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- אלבמה",
       "note" : "Text for Alabama state"
@@ -1931,6 +1983,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- ויומינג",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "בטעינה...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "עדכון WOTC נכשל.",

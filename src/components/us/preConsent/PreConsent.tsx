@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
-import { Col } from "@amzn/stencil-react-components/layout";
+import { Col, Row, Spacer } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { CommonColors } from "../../../utils/colors";
 import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
@@ -20,6 +20,7 @@ import { useLocation } from "react-router";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
 
 interface MapStateToProps {
   job: JobState;
@@ -34,6 +35,7 @@ export const PreConsent = ( props: MapStateToProps ) => {
   const jobId = queryParams.jobId;
   const jobDetail = job.results;
   const { CONSENT } = PAGE_ROUTES;
+  const { matches } = useBreakpoints();
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -85,14 +87,14 @@ export const PreConsent = ( props: MapStateToProps ) => {
                 </Text>
                 <WithFlyout renderFlyout={renderFlyout}>
                     {( { open } ) => (
-                      <Col >
-                          <Button
-                            variant={ButtonVariant.Secondary}
-                            style={{ width: '35%' }}
-                            onClick={open}
-                          >
-                              {t("BB-PreconsentPage-preview-steps-button", "Preview Steps")}
-                          </Button>
+                      <Col>
+                        <Button
+                          className={matches.s ? "preview-steps-btn-small" : "preview-steps-btn"}
+                          variant={ButtonVariant.Secondary}
+                          onClick={open}
+                        >
+                          {t("BB-PreconsentPage-preview-steps-button", "Preview Steps")}
+                        </Button>
                       </Col>
                     )}
                 </WithFlyout>

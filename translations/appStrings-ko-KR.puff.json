@@ -212,8 +212,8 @@
       "value" : "다음은 선택한 직무에 대한 조건부 제안입니다.",
       "note" : "Text for job offer picked title"
     },
-    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "다음은 선택한 직무에 대한 조건부 제안입니다.",
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "조건부 오퍼란 무엇인가요?",
       "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
@@ -1987,6 +1987,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- 와이오밍",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "로딩 중...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "WOTC를 업데이트하지 못했습니다.",

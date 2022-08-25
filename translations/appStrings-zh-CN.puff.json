@@ -212,10 +212,6 @@
       "value" : "以下是您所挑选职位的意向书。",
       "note" : "Text for job offer picked title"
     },
-    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "以下是您所挑选职位的意向书。",
-      "note" : "Text for contingent offer meaning popover title"
-    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "在适用法律允许的情况下，能否聘用您取决于是否成功通过所需的背景调查、药物筛查（如果适用）和重新受雇资格审查（如果适用），因此完成下一页受聘前的步骤非常重要。在某些情况下，由于受聘前所需要求未及时完成，您入职的第一天可能会延迟。如果是这种情况，我们会尽快联系您。",
       "note" : "Text for contingent offer meaning popover content"
@@ -1987,6 +1983,10 @@
     "BB-States-wyoming" : {
       "value" : "WY — 怀俄明",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "加载中……",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "无法更新 WOTC。",

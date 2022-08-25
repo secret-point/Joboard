@@ -212,10 +212,6 @@
       "value" : "Här är det villkorade erbjudandet för det jobb du valde.",
       "note" : "Text for job offer picked title"
     },
-    "BB-ContingencyOffer-contingent-offer-meaning-popover-title" : {
-      "value" : "Här är det villkorade erbjudandet för det jobb du valde.",
-      "note" : "Text for contingent offer meaning popover title"
-    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Som tillåtet enligt tillämplig lag är ditt erbjudande beroende av att du genomgår den obligatoriska bakgrundskontrollen med godkänt resultat, drogscreening (om tillämpligt) och lämplighetskontroll för återanställning (om tillämpligt), så det är viktigt att du slutför de anställningsförberedande stegen på nästa sida. I vissa fall kan din första dag behöva senareläggas på grund av att kraven före anställning inte uppfylls i tid. Om så är fallet kan du förvänta dig att höra från oss snart.",
       "note" : "Text for contingent offer meaning popover content"
@@ -392,9 +388,53 @@
       "value" : "Fråga om tidigare domar",
       "note" : "Text for the BGC Previous Conviction Question flyout title text"
     },
+    "BB-BGC-criminal-record-list-convictions-text" : {
+      "value" : "<strong>Uppge endast lagföringsbeslut som är offentliga.</strong>  Frihetsberövanden som har upphört till din fördel är inte lagföringsbeslut. På liknande sätt ska du inte ta med information om lagföringsbeslut i ungdomsrättssystemet, eller ärenden som behandlats i ungdomsrättssystemet, eller åtal som har lett till ett avledningsprogram eller utredningar som har lagts ned, lagts ned enligt lagen om förstagångskriminella, avslutats, raderats, benådats, juridiskt ogillats eller på annat sätt betraktats som icke-lagförda.  <strong>Du behöver inte heller informera om överträdelser eller ringa brott.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout list convictions paragraph"
+    },
+    "BB-BGC-criminal-record-used-in-accordance-with-applicable-law-text" : {
+      "value" : "Ett belastningsregister förhindrar inte nödvändigtvis anställning, fortsatt anställning eller uppdrag som oberoende entreprenör hos Amazon.  Denna information kommer endast att användas i enlighet med tillämplig lag och endast i syfte att avgöra om lagföringsbeslutet är relaterat till det jobb/uppdrag som du har sökt.  Underlåtenhet att uppriktigt besvara denna fråga eller att lämna de begärda uppgifterna om brottet/brotten kan leda till att behandlingen av din ansökan om anställning eller entreprenörsuppdrag avbryts. Om du redan är anställd av och/eller anlitad som oberoende entreprenör hos Amazon kan sådan underlåtenhet leda till att din anställning eller ditt uppdrag avslutas.",
+      "note" : "Text for the BGC Previous Conviction Question flyout used in accordance with applicable law paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-text" : {
+      "value" : "Du måste granska informationen om statlig lag nedan innan du tillhandahåller ytterligare information om din kriminella bakgrund",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review paragraph"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-california-text" : {
+      "value" : "<strong>Kalifornien:</strong> Inkludera inte ringa marijuanarelaterade brott som är mer än 2 år gamla.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state california text"
+    },
     "BB-BGC-criminal-record-you-must-review-state-san-francisco-text" : {
       "value" : "<strong>San Francisco, Kalifornien:</strong> Inkludera inte brott som är mer än sju (7) år gamla från domslutets datum. Du ska inte ta med <strong>någon</strong> fängelsetid i beräkningen av sjuårsperioden_.  Inkludera inte brott som inte är förseelser eller grova brott, såsom överträdelser eller domar som är kopplade till beteende som har avkriminaliserats efter domens datum, inklusive men inte begränsat till marijuanainnehav.",
       "note" : "Text for the BGC Previous Conviction Question flyout you must review state san-francisco text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-colorado-text" : {
+      "value" : "<strong>Colorado:</strong> Ta inte med information om civil eller militär olydnad, såvida inte belastningsregistret har resulterat i ett erkännande eller ett lagföringsbeslut av en behörig domstol.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state colorado text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-massachusetts-text" : {
+      "value" : "<strong>Massachusetts:</strong> Tillhandahåll inte kopior av ditt belastningsregister.  Identifiera inte ringa förstagångsbrott som onykterhet, ringa misshandel, fortkörning, mindre trafikförseelser, bråk eller störande av allmän ordning. Identifiera inte heller lagföringsbeslut för andra ringa brott där datumet för lagföringsbeslut eller slutet av någon fängelseperiod inträffade för mer än 3 år sedan, såvida det inte har förekommit ny lagföring inom dessa 3 år. En sökande till en anställning med ett register som raderats i enlighet med avsnitt 100F, avsnitt 100G, avsnitt 100H eller avsnitt 100K i kapitel 276 i de allmänna lagarna får svara ”inget register” med avseende på en förfrågan häri i förhållande till tidigare frihetsberövanden, inställande i brottmålsdomstol eller lagföringsbeslut. En sökande till en anställning med ett register som raderats i enlighet med avsnitt 100F, avsnitt 100G, avsnitt 100H eller avsnitt 100K i kapitel 276 i de allmänna lagarna får svara ”inget register” på en förfrågan häri i förhållande till tidigare frihetsberövanden, inställande i brottmålsdomstol eller ungdomsdomstol eller lagföringsbeslut.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state massachusetts text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-new-york-text" : {
+      "value" : "<strong>New York:</strong> Identifiera inte några åtgärder som avslutats till din fördel enligt Criminal Procedure Law (”CPL”) §160.50.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state new york text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-ohio-text" : {
+      "value" : "<strong>Ohio:</strong> Rapportera inte lagföringsbeslut för ringa narkotikabrott enligt definitionen i Ohio Rev. Code 2925.11.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state Ohio text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-pennsylvania-text" : {
+      "value" : "<strong>Philadelphia, Pennsylvania:</strong> Inkludera inte några lagföringsbeslut som har inträffat mer än sju (7) år före datumet för den här förfrågan.  <strong>Eventuell tid i fängelse ska inte tas med i beräkningen av sjuårsperioden.</strong>",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state pennsylvania text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-virginia-text" : {
+      "value" : "<strong>Virginia:</strong> Rapportera inte lagföringsbeslut för ringa narkotikabrott, enligt definitionen i Section 18.2-250.1 i Code of Virginia.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state virginia text"
+    },
+    "BB-BGC-criminal-record-you-must-review-state-washington-text" : {
+      "value" : "<strong>Seattle, Washington:</strong> Utöver nedanstående kan du utelämna lagföringsbeslut som har varit föremål för ett rehabiliteringscertifikat eller annat likvärdigt förfarande baserat på ett beslut om rehabilitering.",
+      "note" : "Text for the BGC Previous Conviction Question flyout you must review state washington text"
     },
     "BB-BGC-criminal-record-within-seven-years-question-text" : {
       "value" : "Har du dömts för en förseelse eller ett brott eller släppts från fängelse eller fått villkorlig frigivning för en förseelse eller brott under de senaste sju (7) åren?",
@@ -407,6 +447,10 @@
     "BB-BGC-criminal-record-within-seven-years-answer-no-text" : {
       "value" : "Nej",
       "note" : "Text to No as an answer to candidate has had criminal record within 7 years"
+    },
+    "BB-BGC-criminal-record-what-information-to-include-text" : {
+      "value" : "Information som ska inkluderas",
+      "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
       "value" : "Ange ort, land, dömande delstat, datum, typ av brott, tillsammans med information om brottspåföljden",
@@ -1939,6 +1983,10 @@
     "BB-States-wyoming" : {
       "value" : "WY -- Wyoming",
       "note" : "Text for Wyoming state"
+    },
+    "BB-spinner-loading-text" : {
+      "value" : "Läser in ...",
+      "note" : "Text for Loading spinner"
     },
     "BB-update-wotc-status-error-message-failed-update-wotc" : {
       "value" : "Det gick inte att uppdatera WOTC.",
