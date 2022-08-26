@@ -53,8 +53,6 @@
     "@types/react-router-redux": "^5.0.18",
     "@types/redux-logger": "^3.0.8",
     "@types/redux-mock-store": "^1.0.2",
-    "@typescript-eslint/eslint-plugin": "^2.8.0",
-    "@typescript-eslint/parser": "^2.8.0",
     "amazon-cognito-identity-js": "^3.3.3",
     "autoprefixer": "^9.0.0",
     "aws-amplify": "^2.3.0",
@@ -81,11 +79,9 @@
     "dotenv-expand": "5.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.1.0",
     "eslint-loader": "3.0.2",
     "eslint-plugin-flowtype": "3.13.0",
-    "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.16.0",
     "eslint-plugin-react-hooks": "^1.6.1",
@@ -197,7 +193,12 @@
   "devDependencies": {
     "@amzn/brazil": "*",
     "@types/classnames": "^2.2.10",
-    "enzyme-to-json": "^3.6.2"
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint": "^8.16.0",
+    "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-plugin-import": "^2.26.0"
   },
   "babel": {
     "presets": [

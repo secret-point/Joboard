@@ -1,22 +1,22 @@
+import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import React, { useEffect } from "react";
+import queryString from "query-string";
 import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToDashboard } from "../../../helpers/utils";
 import { CandidateState } from "../../../reducers/candidate.reducer";
-import { translate as t } from "../../../utils/translator";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { getLocale } from "../../../utils/helper";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { useLocation } from "react-router";
-import queryString from "query-string";
 import { JobState } from "../../../reducers/job.reducer";
+import { getLocale } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
-  candidate: CandidateState,
-  job: JobState
+  candidate: CandidateState;
+  job: JobState;
 }
 
 export const AlreadyApplied = (props: MapStateToProps) => {
