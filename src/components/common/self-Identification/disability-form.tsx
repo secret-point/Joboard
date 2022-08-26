@@ -20,9 +20,9 @@ import DetailedRadioError from "../DetailedRadioError";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
-  application: ApplicationState,
-  candidate: CandidateState,
-  selfIdentification: SelfIdentificationState
+  application: ApplicationState;
+  candidate: CandidateState;
+  selfIdentification: SelfIdentificationState;
 }
 
 interface DisabilityFormProps {
@@ -69,7 +69,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
       <Col gridGap={3} color={CommonColors.Neutral50}>
         <Text fontSize="T200">{t('BB-SelfId-disability-form-name-text', 'Form CC-305')}</Text>
         <Text fontSize="T200">{t('BB-SelfId-disability-form-control-number-text', 'OMB Control Number 1250-0005')}</Text>
-        <Text fontSize="T200">{t('BB-SelfId-disability-form-expiration-date-textbrazil-bui','Expires 05/31/2023')}</Text>
+        <Text fontSize="T200">{t('BB-SelfId-disability-form-expiration-date-text','Expires 05/31/2023')}</Text>
       </Col>
       <Col gridGap={10}>
         <H5>{t("BB-SelfId-disability-form-why-this-form-header-text", "Why are you asked to complete this form?")}</H5>
