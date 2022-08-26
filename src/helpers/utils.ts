@@ -10,6 +10,7 @@ import { isArray, isBoolean } from "lodash";
 import store from "../store/store";
 import { Application } from "../utils/types/common";
 import { PAGE_ROUTES } from "../components/pageRoutes";
+import { getLocale } from "../utils/helper";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -41,7 +42,7 @@ export const launchAuthentication = () => {
   delete queryParams.applicationId;
   delete queryParams.jobId;
   const queryStr = isEmpty(queryParams)? "" :`&${queryString.stringify(queryParams)}`;
-  let hash = window.location.hash.substr(2).split("/");
+  const hash = window.location.hash.substr(2).split("/");
   const origin = window.location.origin;
   const state = window.reduxStore.getState();
   let currentPage;
@@ -74,9 +75,9 @@ export const launchAuthentication = () => {
     redirectUrl = `${redirectUrl}&misc=${hash[3]}`;
   }
 
-  let queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
 
-  let url = `${state.app.appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+  const url = `${state.app.appConfig.CSDomain}/app${queryStringFor3rdParty}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
 
@@ -166,7 +167,7 @@ export const DGSCandidateSelfServicePage = [
   "cancel-shift-success-ds"
 ];
 
-export const checkIfIsNonDGSCSS = (page : string) => {
+export const checkIfIsNonDGSCSS = (page: string) => {
   if (NonDGSCandidateSelfServicePage.includes(page)) {
     return true;
   } else {
@@ -174,7 +175,7 @@ export const checkIfIsNonDGSCSS = (page : string) => {
   }
 }
 
-export const checkIfIsDGSCSS = (page : string) => {
+export const checkIfIsDGSCSS = (page: string) => {
   if (DGSCandidateSelfServicePage.includes(page)) {
     return true;
   } else {
@@ -182,7 +183,7 @@ export const checkIfIsDGSCSS = (page : string) => {
   }
 }
 
-export const checkIfIsCSS = (page : string) => {
+export const checkIfIsCSS = (page: string) => {
   return checkIfIsDGSCSS(page) || checkIfIsNonDGSCSS(page);
 }
 
@@ -208,7 +209,7 @@ export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: 
 export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
   const parsedQueryParams = {...queryParams};
   Object.keys(parsedQueryParams).forEach((key: string) => {
-    let item = parsedQueryParams[key];
+    const item = parsedQueryParams[key];
     if( isArray(item) && item.length > 0){
       parsedQueryParams[key] = item[0];
     }
@@ -222,12 +223,12 @@ export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
 }
 
 export const jobIdSanitizer = (jobId: string) => {
-  let rawJobId = decodeURIComponent(jobId);
+  const rawJobId = decodeURIComponent(jobId);
   let sanitizedJobId = rawJobId;
   // Check ?
   if(rawJobId.includes("?")){
     const items = rawJobId.split("?");
-    items.forEach((item:string)=>{
+    items.forEach((item: string)=>{
       if(item.includes('JOB')){
         sanitizedJobId = item;
       }
@@ -236,7 +237,7 @@ export const jobIdSanitizer = (jobId: string) => {
   // Check &
   if(sanitizedJobId.includes("&")){
     const items = rawJobId.split("&");
-    items.forEach((item:string)=>{
+    items.forEach((item: string)=>{
       if(item.includes('JOB')){
         sanitizedJobId = item;
       }
@@ -246,7 +247,7 @@ export const jobIdSanitizer = (jobId: string) => {
 }
 
 export const requisitionIdSanitizer = (jobId: string) => {
-  let rawJobId = decodeURIComponent(jobId);
+  const rawJobId = decodeURIComponent(jobId);
   let sanitizedJobId = rawJobId;
   // Check ?
   if(rawJobId.includes("?")){
@@ -261,7 +262,7 @@ export const requisitionIdSanitizer = (jobId: string) => {
   return sanitizedJobId;
 }
 
-export const injectCsNavAndFooter = (CSDomain:string) => {
+export const injectCsNavAndFooter = (CSDomain: string) => {
   const topNav = document.createElement("div");
   topNav.className = "hvh-widget";
   topNav.setAttribute("data-hvh-position", "header")
@@ -279,7 +280,7 @@ export const injectCsNavAndFooter = (CSDomain:string) => {
   link.href=`${CSDomain}/app/main.prod.css`;
   head.appendChild(script);
   head.appendChild(link);
-  fetch(`${CSDomain}/amabot-rest?page=common&res=footer`)
+  fetch(`${CSDomain}/amabot-rest?page=common&res=footer&locale=${getLocale()}`)
     .then((res) => res.json())
     .then((body) => {
       document.getElementById("f")!.innerHTML = body.contentMap.footer.bodyContent;
@@ -308,7 +309,7 @@ export const addApplicationIdInUrl = (application?: Application) => {
   }
 }
 
-export const getPageNameFromPath = (path:string) => {
+export const getPageNameFromPath = (path: string) => {
   const { JOB_CONFIRMATION, JOB_DESCRIPTION, BACKGROUND_CHECK_FCRA } = PAGE_ROUTES;
   const isSubPath = path.includes(JOB_CONFIRMATION) || path.includes(JOB_DESCRIPTION) || path.includes(BACKGROUND_CHECK_FCRA);
   //Return subPath as pathname to send correct page name to BI
@@ -318,8 +319,8 @@ export const getPageNameFromPath = (path:string) => {
 export const redirectToLoginCSDS = () => {
   const state = store.getState();
   const CSDomain = state?.appConfig?.results?.envConfig?.CSDomain;
-  let redirectUrl = window.location.href;
-  let url = `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+  const redirectUrl = window.location.href;
+  const url = `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
   window.location.assign(url);
 };
 
