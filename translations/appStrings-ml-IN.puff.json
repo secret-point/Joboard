@@ -188,10 +188,6 @@
       "value" : "ആരംഭ സമയം",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "ആരംഭ സമയം",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "{hourNumber} മണിക്കൂർ വരെ",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "നിങ്ങള്‍ തിരഞ്ഞെടുത്ത ജോലിയില്‍ വന്നേക്കാവുന്ന ഓഫര്‍ ഇതാ.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "എന്താണ് ഒരു സോപാധിക ഓഫർ?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "ബാധകമായ നിയമം അനുവദിക്കുന്നത് പ്രകാരം, നിങ്ങളുടെ ഓഫർ ആവശ്യമായ പശ്ചാത്തല പരിശോധന, ഡ്രഗ് സ്ക്രീനിംഗ് (ബാധകമെങ്കിൽ), വീണ്ടും നിയമിക്കുന്നതിനുള്ള യോഗ്യതാ പരിശോധന (ബാധകമെങ്കിൽ) എന്നിവ വിജയകരമായി പൂര്‍ത്തീകരിക്കുന്നതിനെ ആശ്രയിച്ചിരിക്കുന്നു, അതിനാൽ അടുത്ത പേജിൽ നിങ്ങൾ ജോലിക്ക് മുമ്പുള്ള ഘട്ടങ്ങൾ പൂർത്തിയാക്കേണ്ടത് പ്രധാനമാണ്. ചില സാഹചര്യങ്ങളിൽ, ജോലിക്ക് മുമ്പുള്ള ആവശ്യകതകൾ യഥാസമയം പൂർത്തിയാക്കാത്തതിനാൽ നിങ്ങളുടെ ആദ്യ ദിവസം വൈകിയേക്കാം. അങ്ങനെയാണെങ്കിൽ, ഞങ്ങളിൽ നിന്ന് ഉടൻ കേൾക്കുമെന്ന് നിങ്ങൾക്ക് പ്രതീക്ഷിക്കാം.",

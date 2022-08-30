@@ -188,10 +188,6 @@
       "value" : "開始時間",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "開始時間",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "最大{hourNumber}時間",
       "note" : "Text for Desired Hours up to a certain hours"

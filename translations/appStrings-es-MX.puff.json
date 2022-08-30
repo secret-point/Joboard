@@ -188,10 +188,6 @@
       "value" : "Hora de inicio",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Hora de inicio",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Hasta {hourNumber} horas",
       "note" : "Text for Desired Hours up to a certain hours"

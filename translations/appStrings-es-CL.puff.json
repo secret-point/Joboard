@@ -188,10 +188,6 @@
       "value" : "Hora de inicio",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Hora de inicio",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Hasta {hourNumber} horas",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "Aquí está la oferta temporal para el trabajo que elegiste.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "¿Qué es una oferta contingente?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Según lo permita la ley aplicable, tu oferta está sujeta a aprobar con éxito la verificación de antecedentes requerida, la prueba de drogas (si aplica) y la verificación de aptitud de recontratación (si aplica), por lo que es importante que completes los pasos previos a la contratación en la página siguiente. En algunas circunstancias, tu primer día puede retrasarse si los requisitos previos al trabajo no se completan a tiempo. Si este es el caso, pronto sabrás de nosotros.",

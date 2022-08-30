@@ -188,10 +188,6 @@
       "value" : "開始時間",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "開始時間",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "最多 {hourNumber} 小時",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "這是您所選工作的有條件工作邀請。",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "什麼是臨時優惠？",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "在適用法律允許的情況下，要取得工作邀請，您必須成功通過所需的背景調查、藥物篩選 (如果適用) 和重新雇用資格檢查 (如果適用)，因此請務必完成下一頁的僱聘前步驟。某些情況下，如果未能及時滿足僱聘前要求，您的報到日可能會延遲。如果是這種情況，您很快會收到我們的訊息。",

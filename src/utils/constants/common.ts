@@ -1,4 +1,11 @@
 import {
+    APPLICATION_STEPS,
+    BACKGROUND_AGENT, DAYS_OF_WEEK,
+    DESIRED_WORK_HOURS,
+    FCRA_DISCLOSURE_TYPE,
+    SCHEDULE_FILTER_TYPE
+} from "../enums/common";
+import {
     AdditionalBgcConfig,
     ApplicationStep, DayHoursFilter,
     DetailedRadioButtonItem,
@@ -11,13 +18,6 @@ import {
     StateSelectOption,
     StateSpecificNotice
 } from "../types/common";
-import {
-    APPLICATION_STEPS,
-    BACKGROUND_AGENT, DAYS_OF_WEEK,
-    DESIRED_WORK_HOURS,
-    FCRA_DISCLOSURE_TYPE,
-    SCHEDULE_FILTER_TYPE
-} from "../enums/common";
 
 export const HVH_LOCALE = 'hvh-locale';
 
@@ -133,12 +133,12 @@ export const ScheduleSortList: ScheduleSortBy[] = [
         translationKey: 'BB-JobOpportunity-sort-schedule-by-hours-least-to-most'
     }
 ]
-export const CONSENT: string = "consent";
-export const PRE_CONSENT: string = 'pre-consent';
-export const JOB_OPPORTUNITIES: string = 'job-opportunities';
-export const JOB_CONFIRMATION: string = 'job-opportunities/job-confirmation';
-export const JOB_DESCRIPTION: string = 'job-opportunities/job-description';
-export const CONTINGENT_OFFER: string = 'contingent-offer';
+export const CONSENT = "consent";
+export const PRE_CONSENT = 'pre-consent';
+export const JOB_OPPORTUNITIES = 'job-opportunities';
+export const JOB_CONFIRMATION = 'job-opportunities/job-confirmation';
+export const JOB_DESCRIPTION = 'job-opportunities/job-description';
+export const CONTINGENT_OFFER = 'contingent-offer';
 
 export const FcraDisclosureConfigList: FcraDisclosureConfig[] = [
     {
@@ -664,7 +664,7 @@ export const DisabilityList: DisabilityItem[] = [
     }
 ];
 
-export const ProtectedVeteranDefinitionList: {title: string, titleTranslationKey: string}[] = [
+export const ProtectedVeteranDefinitionList: {title: string; titleTranslationKey: string}[] = [
     {
         title: "<b>Disabled Veteran</b>: a veteran of the U.S. military, ground, naval or air service who is entitled to compensation (or who but for the receipt of military retired pay would be entitled to compensation) under laws administered by the Secretary of Veterans Affairs; or a person who was discharged or released from active duty because of a service-connected disability.",
         titleTranslationKey: "BB-SelfId-equal-opportunity-form-protected-veteran-definition-disabled-veteran-item-text"
@@ -722,49 +722,49 @@ export const dayHoursFilterValues: DayHoursFilter[] = [
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-MONDAY"
+        dayTranslationKey: "BB-DayName-Monday"
     },
     {
         day: DAYS_OF_WEEK.TUESDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-TUESDAY"
+        dayTranslationKey: "BB-DayName-Tuesday"
     },
     {
         day: DAYS_OF_WEEK.WEDNESDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-WEDNESDAY"
+        dayTranslationKey: "BB-DayName-Wednesday"
     },
     {
         day: DAYS_OF_WEEK.THURSDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-THURSDAY"
+        dayTranslationKey: "BB-DayName-Thursday"
     },
     {
         day: DAYS_OF_WEEK.FRIDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-FRIDAY"
+        dayTranslationKey: "BB-DayName-Friday"
     },
     {
         day: DAYS_OF_WEEK.SATURDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-SATURDAY"
+        dayTranslationKey: "BB-DayName-Saturday"
     },
     {
         day: DAYS_OF_WEEK.SUNDAY,
         isActive: true,
         startTime: "00:00",
         endTime: "23:59",
-        dayTranslationKey: "BB-DayName-SUNDAY"
+        dayTranslationKey: "BB-DayName-Sunday"
     }
 ];
 

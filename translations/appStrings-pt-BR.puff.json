@@ -188,10 +188,6 @@
       "value" : "Hora de início",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Hora de início",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Até {hourNumber} horas",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "Aqui está a oferta contingente para a vaga que você escolheu.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "O que é uma oferta contingente?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Conforme permitido pela lei aplicável, sua oferta depende da aprovação na verificação de antecedentes necessária, teste de detecção de uso de drogas (se aplicável) e verificação de qualificação de recontratação (se aplicável). Por isso, é importante que você conclua as etapas de pré-contratação na próxima página. Em algumas circunstâncias, seu primeiro dia pode ser adiado devido ao fato de os requisitos de pré-contratação não serem concluídos a tempo. Se for esse o caso, você pode esperar um contato nosso em breve.",

@@ -188,10 +188,6 @@
       "value" : "Start Time",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Start Time",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Upto {hourNumber} hours",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "Here is the contingent offer for the job you picked.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "What is a contingent offer?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.",

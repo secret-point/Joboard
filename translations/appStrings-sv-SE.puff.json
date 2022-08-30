@@ -188,10 +188,6 @@
       "value" : "Starttid",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Starttid",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Upp till {hourNumber} timmar",
       "note" : "Text for Desired Hours up to a certain hours"

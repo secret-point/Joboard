@@ -188,10 +188,6 @@
       "value" : "开始时间",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "开始时间",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "最长 {hourNumber} 小时",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "以下是您所挑选职位的意向书。",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "什么是临时工作机会？",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "在适用法律允许的情况下，能否聘用您取决于是否成功通过所需的背景调查、药物筛查（如果适用）和重新受雇资格审查（如果适用），因此完成下一页受聘前的步骤非常重要。在某些情况下，由于受聘前所需要求未及时完成，您入职的第一天可能会延迟。如果是这种情况，我们会尽快联系您。",

@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import TimeRange from "./TimeRange";
 import { ToggleSwitch } from "@amzn/stencil-react-components/toggle-switch";
+import capitalize from "lodash/capitalize";
 import cloneDeep from "lodash/cloneDeep";
 import moment from "moment";
-import { DayHoursFilter } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
+import { DayHoursFilter } from "../../../utils/types/common";
+import TimeRange from "./TimeRange";
 
 interface DaysHoursFilterProps {
   defaultFilter: DayHoursFilter[];
   onValueChange: Function;
-  label: string
+  label: string;
 }
 
 export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
@@ -33,7 +34,7 @@ export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
     if (time === "23:59") {
       return -1;
     } else {
-      let dateTime = moment(`1990-01-01T${time}:00.000Z`).utc();
+      const dateTime = moment(`1990-01-01T${time}:00.000Z`).utc();
       const hour = dateTime.get("hour");
       return hour;
     }
@@ -85,7 +86,7 @@ export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
                         onChange={( e: any ) => onToggleChange(e, index)}
                         checked={filter.isActive}
                     />
-                    <Text color="accent1">{t(filter.dayTranslationKey, filter.day)}</Text>
+                    <Text>{t(filter.dayTranslationKey, capitalize(filter.day.toString()))}</Text>
                   </Row>
                   <TimeRange
                       id={`${filter.day}TimeRange`}

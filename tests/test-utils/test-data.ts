@@ -477,48 +477,48 @@ export const TEST_DAYS_HOURS_FILTER: DayHoursFilter[] = [
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-MONDAY'
+    dayTranslationKey: 'BB-DayName-Monday'
   },
   {
     day: DAYS_OF_WEEK.TUESDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-TUESDAY'
+    dayTranslationKey: 'BB-DayName-Tuesday'
   },
   {
     day: DAYS_OF_WEEK.WEDNESDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-WEDNESDAY'
+    dayTranslationKey: 'BB-DayName-Wednesday'
   },
   {
     day: DAYS_OF_WEEK.THURSDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-THURSDAY'
+    dayTranslationKey: 'BB-DayName-Thursday'
   },
   {
     day: DAYS_OF_WEEK.FRIDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-FRIDAY'
+    dayTranslationKey: 'BB-DayName-Friday'
   },
   {
     day: DAYS_OF_WEEK.SATURDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-SATURDAY'
+    dayTranslationKey: 'BB-DayName-Saturday'
   },
   {
     day: DAYS_OF_WEEK.SUNDAY,
     isActive: true,
     startTime: '00:00',
     endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-SUNDAY'
+    dayTranslationKey: 'BB-DayName-Sunday'
   }
 ];

@@ -188,10 +188,6 @@
       "value" : "מועד התחלה",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "מועד התחלה",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "עד {hourNumber} שעות",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "מהי הצעה מותנית?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות להעסקה חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. אם זה המקרה, אתה יכול לצפות לשמוע מאיתנו בקרוב.",

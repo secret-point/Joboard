@@ -188,10 +188,6 @@
       "value" : "Heure de début",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Heure de début",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Jusqu'à {hourNumber} heures",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "Voici l’offre conditionnelle pour le poste que vous avez choisi.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "Qu'est-ce qu'une offre contingente ?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Comme le permet la loi applicable, la validité de votre offre dépend de la réussite de la vérification des antécédents, du dépistage de stupéfiants (le cas échéant) et de la vérification de l'éligibilité à la réembauche (le cas échéant). Il est donc important que vous suiviez les étapes préalables au recrutement sur la page suivante. Dans certains cas, votre premier jour peut être retardé si les exigences préalables à l'embauche n'ont pas été satisfaites à temps. Si tel est le cas, vous pouvez vous attendre à recevoir très bientôt une communication de notre part.",

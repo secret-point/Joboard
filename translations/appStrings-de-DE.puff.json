@@ -188,10 +188,6 @@
       "value" : "Startzeit",
       "note" : "Text for start time select input label text"
     },
-    "BB-TimeRange-end-time-select-label-text" : {
-      "value" : "Startzeit",
-      "note" : "Text for end time select input label text"
-    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Bis zu {hourNumber} Stunden",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -211,6 +207,10 @@
     "BB-ContingencyOffer-job-picked-title-text" : {
       "value" : "Hier ist das bedingte Angebot für die von dir ausgewählte Stelle.",
       "note" : "Text for job offer picked title"
+    },
+    "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
+      "value" : "Was ist ein Kontingent-Angebot?",
+      "note" : "Text for contingent offer meaning popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Wie nach geltendem Recht zulässig, hängt dein Angebot davon ab, dass du die vorgeschriebene Hintergrundüberprüfung, den Drogentest (falls zutreffend) und die Überprüfung der Eignung für eine Wiedereinstellung (falls zutreffend) erfolgreich bestehst. Daher ist es wichtig, dass du die Schritte vor der Einstellung auf der nächsten Seite abschließt. Unter Umständen kann sich dein erster Arbeitstag verzögern, weil die Einstellungsvoraussetzungen nicht rechtzeitig erfüllt wurden. Wenn dies der Fall sein sollte, werden wir uns bald bei dir melden.",
