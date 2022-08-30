@@ -1,16 +1,15 @@
 import { createHashHistory } from "history";
-import { uiState } from "../../src/reducers/ui.reducer";
-import { CandidateState } from "../../src/reducers/candidate.reducer";
-import { ApplicationState } from "../../src/reducers/application.reducer";
-import { Address, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation } from "../../src/utils/types/common";
-import { ScheduleState } from "../../src/reducers/schedule.reducer";
-import { Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
-import { BGC_STEPS, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { BGCState } from "../../src/reducers/bgc.reducer";
-import { NheState } from "../../src/reducers/nhe.reducer";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
-import { WorkflowState } from "../../src/reducers/workflow.reducer";
+import { ApplicationState } from "../../src/reducers/application.reducer";
+import { BGCState } from "../../src/reducers/bgc.reducer";
+import { CandidateState } from "../../src/reducers/candidate.reducer";
+import { NheState } from "../../src/reducers/nhe.reducer";
+import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { SelfIdentificationState } from "../../src/reducers/selfIdentification.reducer";
+import { uiState } from "../../src/reducers/ui.reducer";
+import { WorkflowState } from "../../src/reducers/workflow.reducer";
+import { BGC_STEPS, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
+import { Address, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation , Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -153,6 +152,30 @@ export const TEST_CANDIDATE_STATE: CandidateState = {
   }
 };
 
+export const NHE_TIMESLOT_LOCATION: NheTimeSlotLocation = {
+  streetAddress: "Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place",
+  city: "Dupont",
+  state: "WA",
+  country: "US",
+  postalCode: "98327"
+};
+
+export const NHE_TIMESLOT: NHETimeSlot = {
+  timeSlotId: "VTS-1643678",
+  startTime: "13:30",
+  endTime: "14:00",
+  location: NHE_TIMESLOT_LOCATION,
+  timezone: "America/Los_Angeles",
+  availableResources: 33,
+  appointmentsBooked: 2,
+  recruitingEventId: "",
+  timeRange: "01:30 PM - 02:00 PM",
+  date: "Thursday, Aug 04",
+  dateWithoutFormat: "04/08/2022",
+  childRequisitionId: "",
+  nheSource: "Centralization",
+};
+
 export const TEST_APPLICATION: any = {
   applicationId: TEST_APPLICATION_ID,
   jobScheduleSelected: {
@@ -160,7 +183,8 @@ export const TEST_APPLICATION: any = {
     scheduleId: TEST_SCHEDULE_ID,
     scheduleDetails: null,
     jobScheduleSelectedTime: "2022-07-28T16:48:29.230756Z"
-  }
+  },
+  nheAppointment: NHE_TIMESLOT
 };
 
 export const TEST_APPLICATION_STATE: ApplicationState = {
@@ -403,34 +427,12 @@ export const TEST_BGC_STATE: BGCState = {
   }
 };
 
-export const NHE_TIMESLOT_LOCATION: NheTimeSlotLocation = {
-  streetAddress: "Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place",
-  city: "Dupont",
-  state: "WA",
-  country: "US",
-  postalCode: "98327"
-};
-
 export const TEST_NHE_STATE: NheState = {
   loading: false,
   failed: false,
   results: {
     nheData: [
-      {
-        timeSlotId: "VTS-1643678",
-        startTime: "13:30",
-        endTime: "14:00",
-        location: NHE_TIMESLOT_LOCATION,
-        timezone: "America/Los_Angeles",
-        availableResources: 33,
-        appointmentsBooked: 2,
-        recruitingEventId: "",
-        timeRange: "01:30 PM - 02:00 PM",
-        date: "Thursday, Aug 04",
-        dateWithoutFormat: "04/08/2022",
-        childRequisitionId: "",
-        nheSource: "Centralization",
-      }
+      NHE_TIMESLOT
     ]
   }
 };

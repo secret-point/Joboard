@@ -131,21 +131,23 @@ exports[`ThankYou should match snapshot 1`] = `
         fontWeight="bold"
         hyphens="none"
       >
-        Invalid date
+        Thu Aug 04
       </Text>
       <Text
         font="primary"
         fontSize="T100"
         fontWeight="bold"
         hyphens="none"
-      />
+      >
+        Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327
+      </Text>
       <Text
         color="#56616C"
         font="primary"
         fontSize="T100"
         hyphens="none"
       >
-        Visit us for a 30 minute session anytime between {startTime} - {endTime}.
+        Visit us for a 30 minute session anytime between 13:30 - 14:00.
       </Text>
       <Row
         className="border-top-row"

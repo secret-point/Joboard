@@ -1,3 +1,4 @@
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Card } from "@amzn/stencil-react-components/card";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
@@ -5,21 +6,27 @@ import { DetailedRadio } from "@amzn/stencil-react-components/form";
 import { IconArrowRight, IconSize } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import queryString from "query-string";
 import InnerHTML from "dangerously-set-html-content";
-import React, { ChangeEvent, useEffect, useState } from "react";
+import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router";
 import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
@@ -29,22 +36,15 @@ import {
   formatDate, getLocale,
   validateUserId
 } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import { Application, FormInputItem } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
-import { translate as t } from "../../../utils/translator";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { JobState } from "../../../reducers/job.reducer";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
-import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
   application: ApplicationState;
-  candidate: CandidateState,
-  schedule: ScheduleState,
+  candidate: CandidateState;
+  schedule: ScheduleState;
   job: JobState;
 }
 
@@ -60,11 +60,13 @@ export const ThankYou = (props: MapStateToProps) => {
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { applicationId, jobId, scheduleId } = queryParams;
   const applicationData = application.results;
-  const scheduleDetail = schedule.results.scheduleDetail;
-  const candidateData = candidate.results.candidateData;
+  const { scheduleDetail } = schedule.results;
+  const { candidateData } = candidate.results;
   const jobDetail = job.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
+  const startTime = nheAppointment?.startTime;
+  const endTime = nheAppointment?.endTime;
 
   const [hasReferral, setHasReferral] = useState(false);
   const [referralId, setReferralId] = useState("");
@@ -169,7 +171,7 @@ export const ThankYou = (props: MapStateToProps) => {
   };
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
+    const { value } = event.target;
     setReferralId(value);
   };
 
@@ -188,7 +190,7 @@ export const ThankYou = (props: MapStateToProps) => {
         </Text>
 
         <Text fontSize="T100" color={CommonColors.Neutral70}>
-          {t("BB-ThankYou-nhe-appointment-details-visit-us-text", "Visit us for a 30 minute session anytime between {startTime} - {endTime}.", { startTime: nheAppointment?.startTime, endTime: nheAppointment?.endTime })}
+          {t("BB-ThankYou-nhe-appointment-details-visit-us-text", `Visit us for a 30 minute session anytime between ${startTime} - ${endTime}.`, { startTime: startTime, endTime: endTime })}
         </Text>
       </>
     );
