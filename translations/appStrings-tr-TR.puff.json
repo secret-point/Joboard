@@ -188,6 +188,10 @@
       "value" : "Başlama Zamanı",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "Bitiş Saati",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "En fazla {hourNumber} saat",
       "note" : "Text for Desired Hours up to a certain hours"

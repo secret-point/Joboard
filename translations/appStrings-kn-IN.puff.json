@@ -188,6 +188,10 @@
       "value" : "ಆರಂಭದ ಸಮಯ",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "ಮುಕ್ತಾಯದ ಸಮಯ",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "{hourNumber} ಗಂಟೆಗಳವರೆಗೆ",
       "note" : "Text for Desired Hours up to a certain hours"
