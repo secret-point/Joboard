@@ -1,38 +1,40 @@
-import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
+import React, { useEffect, useRef, useState } from "react";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col } from "@amzn/stencil-react-components/layout";
-import StepHeader from "../../common/StepHeader";
 import { H4, Text } from "@amzn/stencil-react-components/text";
+import debounce from "lodash/debounce";
+import queryString from "query-string";
+import { connect } from "react-redux";
+import { useLocation } from "react-router";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { log } from "../../../helpers/log-helper";
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,
     resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import { useLocation } from "react-router";
-import queryString from "query-string";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { NheState } from "../../../reducers/nhe.reducer";
-import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
-import { NHETimeSlot } from "../../../utils/types/common";
+import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { NHETimeSlot } from "../../../utils/types/common";
+import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
+import StepHeader from "../../common/StepHeader";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    candidate: CandidateState,
-    nhe: NheState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    candidate: CandidateState;
+    nhe: NheState;
 }
 
 interface JobOpportunityProps {
@@ -49,9 +51,9 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
     const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
-    const scheduleDetail = schedule.results.scheduleDetail;
+    const {scheduleDetail} = schedule.results;
     const candidateData = candidate.results?.candidateData;
-    const nheData = nhe.results.nheData;
+    const {nheData} = nhe.results;
     const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
 
     useEffect(() => {
@@ -94,9 +96,18 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
         boundResetBannerMessage();
 
         if (applicationData && selectedNhe) {
+            log("Handing handleConfirmNHESelection: ", {
+                application: applicationData,
+                selectedNhe: selectedNhe
+            });
             handleConfirmNHESelection(applicationData, selectedNhe);
         }
     };
+
+    const debounceConfirmNheSelect = debounce(() => {
+        log("Debouncing confirm NHE select button");
+        handleConfirmSelection();
+    }, 1000)
 
     const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || '';
     const displayLastName = candidateData?.lastName || '';
@@ -129,7 +140,9 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
                 { selectedNhe && <Col className="nhe-sticky-button">
                     <Button
                       variant={ButtonVariant.Primary}
-                      onClick={handleConfirmSelection}
+                      onClick={() => {
+                        debounceConfirmNheSelect();
+                      }}
                     >
                         {t("BB-nhe-page-confirm-selection-button-text", "Confirm Selection")}
                     </Button>
