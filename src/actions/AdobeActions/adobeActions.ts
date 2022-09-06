@@ -1,14 +1,14 @@
-import { getDataForEventMetrics, getDataForMetrics } from "../../helpers/adobe-helper";
-import { AdobeMetrics, Metric, MetricData } from "../../@types/adobe-metrics";
+import findIndex from "lodash/findIndex";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
-import { EVENT_NAMES } from "../../constants/adobe-analytics";
-import findIndex from "lodash/findIndex";
-import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
 import { CheckBoxItem } from "../../@types";
+import { AdobeMetrics, Metric, MetricData } from "../../@types/adobe-metrics";
 import { ApplicationData } from "../../@types/IPayload";
-import store from "../../store/store";
+import { EVENT_NAMES } from "../../constants/adobe-analytics";
+import { getDataForEventMetrics, getDataForMetrics } from "../../helpers/adobe-helper";
 import { log } from "../../helpers/log-helper";
+import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
+import store from "../../store/store";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
@@ -17,7 +17,7 @@ export const Unspecified = "Unspecified";
 const getCmpId = () => {
   const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
   let cmpIdValue;
-  for(let key of cmpIdKeys) {
+  for(const key of cmpIdKeys) {
     const cmpId = window.sessionStorage.getItem(key);
     if(!isNil(cmpId)) {
       cmpIdValue = cmpId;
@@ -66,8 +66,8 @@ export const addMetricForPageLoad = ( pageName: string ) => {
         sendDataLayerAdobeAnalytics(dataLayer);
         isPageMetricsUpdated[pageName] = true;
         window.isPageMetricsUpdated = isPageMetricsUpdated;
-        log(`[Evnet 'Page Load' - '${pageName}'] adding new metrics`, dataLayer);
-        log(`[Evnet 'Page Load' - '${pageName}'] new metrics`, window.dataLayerArray);
+        log(`[Event 'Page Load' - '${pageName}'] adding new metrics`, dataLayer);
+        log(`[Event 'Page Load' - '${pageName}'] new metrics`, window.dataLayerArray);
       }
     }
   }
@@ -118,6 +118,6 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
 
   sendDataLayerAdobeAnalytics(metric);
 
-  log(`[Evnet '${name}'] adding new metrics`, metric);
-  log(`[Evnet '${name}'] new metrics`, window.dataLayerArray);
+  log(`[Event '${name}'] adding new metrics`, metric);
+  log(`[Event '${name}'] new metrics`, window.dataLayerArray);
 };

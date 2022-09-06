@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from "react";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
+import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
+import { FormWrapper } from "@amzn/stencil-react-components/form";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
-import { FormWrapper } from "@amzn/stencil-react-components/form";
-import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { SelfIdEthnicBackgroundItems, SelfIdGenderRadioItems } from "../../../utils/constants/common";
-import { translate as t } from "../../../utils/translator";
+import { connect } from "react-redux";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
+import { SelfIdEthnicBackgroundItems, SelfIdGenderRadioItems } from "../../../utils/constants/common";
 import { handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
-import { connect } from "react-redux";
 import DetailedRadioError from "../DetailedRadioError";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
-  application: ApplicationState,
-  candidate: CandidateState,
-  selfIdentification: SelfIdentificationState
+  application: ApplicationState;
+  candidate: CandidateState;
+  selfIdentification: SelfIdentificationState;
 }
 
 interface EqualOpportunityFormProps {
@@ -32,13 +35,14 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const candidateData = candidate.results.candidateData;
+  const {candidateData} = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [gender, setGender] = useState();
   const [ethnicity, setEthnicity] = useState();
   const [isGenderMissing, setIsGenderMissing] = useState(false);
   const [isEthnicityMissing, setIsEthnicityMissing] = useState(false);
+  const pageName = METRIC_NAME.EQUAL_OPPORTUNITY_FORM;
 
   const handleClickNext = () => {
     boundResetBannerMessage();
@@ -52,12 +56,25 @@ const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
       setIsGenderMissing(!gender);
       setIsEthnicityMissing(!ethnicity);
     }
-  }
+  };
 
   useEffect(() => {
     setEthnicity(selfIdentificationInfoData?.ethnicity);
     setGender(selfIdentificationInfoData?.gender);
-  }, [selfIdentificationInfoData])
+  }, [selfIdentificationInfoData]);
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    applicationData && candidateData && addMetricForPageLoad(pageName);
+  }, [applicationData, candidateData, pageName]);
+
+  useEffect(() => {
+    return () => {
+      // reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    };
+  }, [pageName]);
 
   return (
     <Col gridGap={15}>

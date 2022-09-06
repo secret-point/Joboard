@@ -1,31 +1,34 @@
 import React, { useEffect, useState } from "react";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
+import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
+import { FormWrapper } from "@amzn/stencil-react-components/form";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { FormWrapper } from "@amzn/stencil-react-components/form";
-import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
+import InnerHTML from "dangerously-set-html-content";
+import { connect } from "react-redux";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import {
   ProtectedVeteranDefinitionList,
   SelfIdMilitarySpouseRadioItem,
   SelfIdProtectedVeteranRadioItem,
   SelfIdVeteranStatusRadioItem
 } from "../../../utils/constants/common";
-import { translate as t } from "../../../utils/translator";
-import { DetailedRadio } from "@amzn/stencil-react-components/dist/submodules/form/detailed-radio";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
-import { connect } from "react-redux";
-import { SelfIdentificationVeteranStatus } from "../../../utils/types/common";
 import { handleSubmitSelfIdVeteranStatus } from "../../../utils/helper";
-import InnerHTML from "dangerously-set-html-content";
+import { translate as t } from "../../../utils/translator";
+import { SelfIdentificationVeteranStatus } from "../../../utils/types/common";
 import DetailedRadioError from "../DetailedRadioError";
-import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
-  application: ApplicationState,
-  candidate: CandidateState,
-  selfIdentification: SelfIdentificationState
+  application: ApplicationState;
+  candidate: CandidateState;
+  selfIdentification: SelfIdentificationState;
 }
 
 interface VeteranStatusFormProps {
@@ -38,7 +41,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const candidateData = candidate.results.candidateData;
+  const {candidateData} = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [militarySpouse, setMilitarySpouse] = useState();
@@ -47,6 +50,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
   const [isMilitarySpouseMissing, setIsMilitarySpouseMissing] = useState(false);
   const [isProtectedVeteranMissing, setIsProtectedVeteranMissing] = useState(false);
   const [isVeteranMissingMissing, setIsVeteranMissingMissing] = useState(false);
+  const pageName = METRIC_NAME.VETERAN_STATUS_FORM;
 
   const handleCLickNext = () => {
     boundResetBannerMessage();
@@ -68,6 +72,19 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
     setVeteran(selfIdentificationInfoData?.veteran);
     setMilitarySpouse(selfIdentificationInfoData?.militarySpouse);
   }, [selfIdentificationInfoData])
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    applicationData && candidateData && addMetricForPageLoad(pageName);
+  }, [applicationData, candidateData, pageName]);
+
+  useEffect(() => {
+    return () => {
+      // reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    };
+  }, [pageName]);
 
   const protectedVeteranStatement: string = t("BB-SelfId-equal-opportunity-form-protected-veteran-statement-text", "Amazon is a Federal Government contractor subject to the Vietnam Era Veterans\' Readjustment Assistance Act of 1974, as amended by the Jobs for Veterans Act of 2002, <a href='https://www.govinfo.gov/content/pkg/USCODE-2018-title38/html/USCODE-2018-title38-partIII-chap42-sec4212.htm' target='_blank' rel='noopener noreferrer'> 38 U.S.C.4212 </a> (VEVRAA), which requires Government contractors to take affirmative action to employ and advance in employment (1) disabled veterans; (2) recently separated veterans; (3) active duty wartime or campaign badge veterans; and (4) Armed Forces service medal veterans. The following invitation to self-identify your protected veteran status is made pursuant to Section 4212. Disclosure of this information is completely voluntary and refusing to provide it will not subject you to any adverse treatment.");
   const protectedVeteranStatementListTitle: string = t("BB-SelfId-equal-opportunity-form-protected-veteran-definition-list-title-text", "<b>A protected veteran</b> is any of the following:");
@@ -92,6 +109,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
               return (
                 <DetailedRadio
                   name="veteranStatus"
+                  key={titleTranslationKey}
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}
@@ -115,6 +133,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
               return (
                 <DetailedRadio
                   name="militarySpouse"
+                  key={titleTranslationKey}
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}
@@ -142,7 +161,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
               ProtectedVeteranDefinitionList.map(item => {
                 const title = t(item.titleTranslationKey, item.title);
                 return (
-                  <li>
+                  <li key={item.titleTranslationKey}>
                     <InnerHTML className="protectedVeteranStatementListItem" html={title}/>
                   </li>
                 )
@@ -161,6 +180,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
               return (
                 <DetailedRadio
                   name="protectedVeteran"
+                  key={titleTranslationKey}
                   value={value}
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || "", details) : undefined}

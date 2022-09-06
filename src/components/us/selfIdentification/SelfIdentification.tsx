@@ -1,20 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import InfoStepCard from "../../common/InfoStepCard";
-import { PROXY_APPLICATION_STATE, SELF_IDENTIFICATION_STEPS, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
-import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { connect } from "react-redux";
-import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
-import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
-import DisabilityForm from "../../common/self-Identification/disability-form";
-import {
-  checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale,
-  handleInitiateSelfIdentificationStep,
-  isSelfIdentificationInfoValid,
-  SelfShouldDisplayContinue
-} from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { useLocation } from "react-router";
@@ -25,24 +9,40 @@ import {
 } from "../../../helpers/utils";
 import queryString from "query-string";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { translate as t } from "../../../utils/translator";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { JobState } from "../../../reducers/job.reducer";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
+import { PROXY_APPLICATION_STATE, SELF_IDENTIFICATION_STEPS, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import {
+  checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale,
+  handleInitiateSelfIdentificationStep,
+  isSelfIdentificationInfoValid,
+  SelfShouldDisplayContinue
+} from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
+import InfoStepCard from "../../common/InfoStepCard";
+import DisabilityForm from "../../common/self-Identification/disability-form";
+import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
+import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 
 interface MapStateToProps {
-  application: ApplicationState,
-  candidate: CandidateState,
-  selfIdentification: SelfIdentificationState,
-  schedule: ScheduleState,
+  application: ApplicationState;
+  candidate: CandidateState;
+  selfIdentification: SelfIdentificationState;
+  schedule: ScheduleState;
   job: JobState;
 }
 
@@ -64,7 +64,7 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const selfIdentificationInfo = candidateData?.selfIdentificationInfo;
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
   const jobDetail = job.results;
-  const scheduleDetail = schedule.results.scheduleDetail;
+  const {scheduleDetail} = schedule.results;
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -95,7 +95,7 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
       //reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     }
-  },[pageName])
+  },[pageName]);
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);

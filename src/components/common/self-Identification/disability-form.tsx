@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
+import { DetailedRadio, FormWrapper } from "@amzn/stencil-react-components/form";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
-import { CommonColors } from "../../../utils/colors";
-import { DisabilityList, SelfIdDisabilityRadioItem } from "../../../utils/constants/common";
-import { translate as t } from "../../../utils/translator";
-import { DetailedRadio, FormWrapper } from "@amzn/stencil-react-components/form";
-import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employee-banner/AdditionalInfo";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { connect } from "react-redux";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
-import { SelfIdentificationDisabilityStatus } from "../../../utils/types/common";
+import { CommonColors } from "../../../utils/colors";
+import { DisabilityList, SelfIdDisabilityRadioItem } from "../../../utils/constants/common";
 import {
   handleSubmitSelfIdDisabilityStatus,
   isSelfIdentificationInfoValidBeforeDisability
 } from "../../../utils/helper";
-import { connect } from "react-redux";
+import { translate as t } from "../../../utils/translator";
+import { SelfIdentificationDisabilityStatus } from "../../../utils/types/common";
 import DetailedRadioError from "../DetailedRadioError";
-import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -35,11 +38,12 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const candidateData = candidate.results.candidateData;
+  const {candidateData} = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [disability, setDisability] = useState();
   const [isDisabilityMissing, setDisabilityMissing] = useState(false);
+  const pageName = METRIC_NAME.DISABILITY_FORM;
   let errorMessage = "Please check the box to proceed.";
 
   const handleClickNext = () => {
@@ -63,6 +67,19 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   useEffect(() => {
     setDisability(selfIdentificationInfoData?.disability);
   }, [selfIdentificationInfoData])
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    applicationData && candidateData && addMetricForPageLoad(pageName);
+  }, [applicationData, candidateData, pageName]);
+
+  useEffect(() => {
+    return () => {
+      // reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    };
+  }, [pageName]);
 
   return (
     <Col gridGap={15}>
