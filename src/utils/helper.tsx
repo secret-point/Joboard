@@ -1012,7 +1012,7 @@ export const formatNheTimeSlotTitle = (date: string) => {
       displayFormat: "dddd, MMM Do YYYY",
     });
 
-    return res.replace(/^\w/, (c) => c.toUpperCase());
+    return res.replace(/(^\w|\s\w)/g, (c) => c.toUpperCase()).replace(/º/, "");
   };
 
 export const goToCandidateDashboard = () => {
