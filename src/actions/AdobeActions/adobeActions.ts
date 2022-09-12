@@ -9,6 +9,7 @@ import { getDataForEventMetrics, getDataForMetrics } from "../../helpers/adobe-h
 import { log } from "../../helpers/log-helper";
 import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
 import store from "../../store/store";
+import { getLocale } from "../../utils/helper";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
@@ -54,6 +55,12 @@ export const sendDataLayerAdobeAnalytics = ( metric: any ) => {
   window.dataLayerArray.push(metric);
 };
 
+const addLocaleToMetric = ( metric: any = {} ) => {
+  if (metric && metric.page) {
+    metric.page.locale = getLocale();
+  }
+};
+
 export const addMetricForPageLoad = ( pageName: string ) => {
   let dataLayer: any = {};
   window.isPageMetricsUpdated = window.isPageMetricsUpdated || {};
@@ -63,6 +70,7 @@ export const addMetricForPageLoad = ( pageName: string ) => {
     if((!isEmpty(requisition) || !isEmpty(job)) && !isPageMetricsUpdated[pageName]) {
       dataLayer = getDataForMetrics(pageName);
       if(!isEmpty(dataLayer)) {
+        addLocaleToMetric(dataLayer);
         sendDataLayerAdobeAnalytics(dataLayer);
         isPageMetricsUpdated[pageName] = true;
         window.isPageMetricsUpdated = isPageMetricsUpdated;
@@ -116,6 +124,7 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
     }
   }
 
+  addLocaleToMetric(metric);
   sendDataLayerAdobeAnalytics(metric);
 
   log(`[Event '${name}'] adding new metrics`, metric);
