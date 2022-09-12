@@ -1000,10 +1000,14 @@ export interface DateFormatOption {
     locale?: Locale;
 };
 
+export const capitalizeAndReformat = (str: string): string => {
+    return str ? str.replace(/(^\w|\s\w)/g, (c) => c.toUpperCase()).replace(/º/, "") : "";
+};
+
 export const formatDate = (dateStr?: string, option: DateFormatOption = {}) => {
-    return moment(dateStr, option.defaultDateFormat).locale(option.locale || getLocale()).format(
+    return capitalizeAndReformat(moment(dateStr, option.defaultDateFormat).locale(option.locale || getLocale()).format(
         option.displayFormat || "Do MMM YYYY"
-    );
+    ));
 };
 
 export const formatNheTimeSlotTitle = (date: string) => {
@@ -1012,8 +1016,8 @@ export const formatNheTimeSlotTitle = (date: string) => {
       displayFormat: "dddd, MMM Do YYYY",
     });
 
-    return res.replace(/(^\w|\s\w)/g, (c) => c.toUpperCase()).replace(/º/, "");
-  };
+    return capitalizeAndReformat(res);
+};
 
 export const goToCandidateDashboard = () => {
     const state = store.getState();
