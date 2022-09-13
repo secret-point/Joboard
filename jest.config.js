@@ -8,7 +8,6 @@ module.exports = {
     '!src/metrics.ts',
     '!src/**/*.d.ts',
     '!src/actions/**/*.ts',
-    '!src/utils/constants/**/*.ts',
     '!src/actions/old/**.{ts,tsx,js,jsx}',
     '!src/helpers/old/*.{ts,tsx,js,jsx}',
     '!src/reducers/old/**.{ts,tsx,js,jsx}',
