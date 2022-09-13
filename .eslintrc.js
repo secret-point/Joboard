@@ -37,7 +37,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    '@typescript-eslint/no-shadow': ['warn'],
     '@typescript-eslint/member-delimiter-style': ['error'],
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
@@ -79,6 +79,7 @@ module.exports = {
     'no-plusplus': ['error', {
       'allowForLoopAfterthoughts': true
     }],
+    'object-curly-spacing': ['error', 'always'],  // add spacing for object curly spacing, e.g. { key: 'value' }
     '@typescript-eslint/type-annotation-spacing': ['warn']
   },
   settings: {
