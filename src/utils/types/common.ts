@@ -627,7 +627,7 @@ export interface FormInputItem {
     labelTranslationKey?: string;
     placeholder?: string;
     placeholderTranslationKey?: string;
-    errorMessageTranslationKey?: string
+    errorMessageTranslationKey?: string;
 }
 
 export interface FormDateInputItem extends FormInputItem {

@@ -507,6 +507,21 @@ export const verifyBasicInfo =
                 else if(itemConfig.dataKey.includes("hasCriminalRecordWithinSevenYears") || itemConfig.dataKey.includes("hasPreviouslyWorkedAtAmazon")) {
                     isValid = typeof value === "boolean";
                 }
+                else if(itemConfig.dataKey.includes("previousLegalNames")) {
+
+                    isValid = true;
+
+                    if(value && value.length) {
+                        value.forEach((name: string, index: number) => {
+                            const isNameValid = validateInput(name, required || false, regex || '');
+                            set(formError, `${dataKey}${index}`, !isNameValid);
+
+                            if(!isNameValid) {
+                                isValid = false;
+                            }
+                        })
+                    }
+                }
                 else {
                     isValid = validateInput(value, required || false, regex || '');
                 }
@@ -520,7 +535,6 @@ export const verifyBasicInfo =
             formError
         }
     }
-
 
 export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string): boolean => {
 

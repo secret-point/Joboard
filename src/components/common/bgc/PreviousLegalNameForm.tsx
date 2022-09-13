@@ -39,6 +39,10 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
 
     const [showMorePreviousLegalNames, setShowMorePreviousLegalNames] = useState(false);
     const dataKeyAccessor = 'additionalBackgroundInfo.previousLegalNames';
+    const previousLegalName0HasError = get(formError, 'additionalBackgroundInfo.previousLegalNames0');
+    const previousLegalName1HasError = get(formError, 'additionalBackgroundInfo.previousLegalNames1');
+    const previousLegalName2HasError = get(formError, 'additionalBackgroundInfo.previousLegalNames2');
+    const errorMessage = t("BB-BGC-additional-bgc-previous-legal-name-error-text", "Please enter previously used legal full name following format: First Last");
 
     const handleUpdatePreviousName = (event: ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value;
@@ -63,9 +67,9 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
                         <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                     </Row>
                 )}
-                error={false}
+                error={previousLegalName0HasError}
                 required={false}
-                // footer={t("BB-BGC-additional-bgc-previous-legal-name-error-text", "Please enter previously used legal full name following format: First Last")}
+                footer={previousLegalName0HasError ? errorMessage : undefined}
             >
                 {inputProps =>
                     <Input
@@ -99,8 +103,9 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
                                 <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                             </Row>
                         )}
-                        // error={true}
-                        // footer={t("BB-BGC-additional-bgc-previous-legal-name1-error-text", "Please enter previously used legal full name (1) following format: First Last")}
+                        error={previousLegalName1HasError}
+                        required={false}
+                        footer={previousLegalName1HasError ? errorMessage : undefined}
                     >
                         {inputProps =>
                             <Input
@@ -121,8 +126,9 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
                                 <Text fontSize="T200">{t('BB-BGC-form-optional-input-label-text', 'Optional')}</Text>
                             </Row>
                         )}
-                        error={false}
-                        // footer={t("BB-BGC-additional-bgc-previous-legal-name2-error-text", "Please enter previously used legal full name (2) following format: First Last")}
+                        error={previousLegalName2HasError}
+                        required={false}
+                        footer={previousLegalName2HasError ? errorMessage : undefined}
                     >
                         {inputProps =>
                             <Input
@@ -135,7 +141,6 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
                     </InputWrapper>
                 </Col>
             }
-
         </Col>
     )
 }

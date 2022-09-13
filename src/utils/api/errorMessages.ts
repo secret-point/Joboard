@@ -239,6 +239,10 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
     translationKey: "BB-update-application-error-message-selected-job-not-available",
     value: "The job you selected is no longer available. Please select a different option."
   },
+  [UPDATE_APPLICATION_ERROR_CODE.PREVIOUS_USED_NAME_FORMAT_INCORRECT]: {
+    translationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text",
+    value: "Please enter previously used legal full name following format: First Last"
+  }
 }
 
 export const GetJobInfoErrorMessages: { [key: string]: ApiErrorMessage } = {

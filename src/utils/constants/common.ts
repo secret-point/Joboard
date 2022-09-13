@@ -449,6 +449,19 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
     }
 ]
 
+export const PreviousLegalNameFormConfig: FormInputItem = {
+    hasError: false,
+    labelText: '',
+    errorMessage: 'Please enter previously used legal full name following format: First Last.',
+    required: false,
+    name: '',
+    dataKey: 'additionalBackgroundInfo.previousLegalNames',
+    id: 'additionalBgcPreviousLegalNames',
+    type: 'text',
+    regex: "^(?=\\S)[a-zA-Z ,.'-]{2,40}[^\\s]$",
+    errorMessageTranslationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text"
+}
+
 export const SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
     {
         title: "Male",
@@ -713,7 +726,8 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
     IdNumberBgcFormConfig,
     HasPreviouslyWorkedAtAmazonRadioConfig,
     ConvictionInfoRadioConfig,
-    ConvictionDetailConfig
+    ConvictionDetailConfig,
+    PreviousLegalNameFormConfig
 ]
 
 export const dayHoursFilterValues: DayHoursFilter[] = [

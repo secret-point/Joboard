@@ -199,7 +199,7 @@ export enum PROXY_ERROR_MESSAGE {
     FETCH_HCR_ERROR = "Unable to fetch head count request.",
     FETCH_SHIFT_PREF_ERROR = "Unable to fetch shift preferences.",
     SHIFTS_BAD_REQUEST = "Failed to retrieve jobs at the moment. Please try again after some time.",
-    SCHEDULE_NOT_AVAILABLE = "The schedule you have selected is no longer available, please select another schedule.",
+    SCHEDULE_NOT_AVAILABLE = "The schedule you have selected is no longer available, please select another schedule."
 }
 
 export enum CREATE_APPLICATION_ERROR_CODE {
@@ -258,6 +258,7 @@ export enum UPDATE_APPLICATION_ERROR_CODE {
     CANDIDATE_ALREADY_HIRED = "CANDIDATE_ALREADY_HIRED",
     FAILED_UPDATE_APPLICATION = "FAILED_UPDATE_APPLICATION",
     SELECTED_JOB_NOT_AVAILABLE = "SELECTED_JOB_NOT_AVAILABLE",
+    PREVIOUS_USED_NAME_FORMAT_INCORRECT = "PREVIOUS_USED_NAME_FORMAT_INCORRECT"
 }
 
 export enum GET_APPLICATION_ERROR_CODE {
