@@ -1781,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Fornisci i dettagli della condanna.",
+      "value" : "Fornisci i dettagli della condanna. (I caratteri speciali validi sono -!/,.()#?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

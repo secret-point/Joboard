@@ -188,6 +188,10 @@
       "value" : "开始时间",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "结束时间",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "最长 {hourNumber} 小时",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -1775,10 +1779,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "请选中该复选框以继续。",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "请提供定罪详情。",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL — 阿拉巴马州",

@@ -415,7 +415,7 @@ export const ConvictionInfoRadioConfig: FormInputItem = {
 export const ConvictionDetailConfig: FormInputItem = {
     hasError: false,
     labelText: 'Provide city, country, state of conviction, date, nature of the offense, along with sentencing information',
-    errorMessage: 'Please provide the conviction details.',
+    errorMessage: 'Please provide the conviction details. (Valid special characters are -!/,.()#?)',
     required: true,
     name: 'convictionDetails',
     dataKey: 'additionalBackgroundInfo.convictionDetails',

@@ -1784,7 +1784,7 @@
         },
         "BB-bgc-ConvictionDetail-error-message-fix": {
             "note": "Text for ConvictionDetail bgc info error message",
-            "value": "Please provide the conviction details."
+            "value": "Please provide the conviction details. (Valid special characters are -!/,.()#?)"
         },
         "BB-States-Alabama": {
             "note": "Text for Alabama state",

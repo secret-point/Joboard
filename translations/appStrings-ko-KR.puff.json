@@ -1781,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "유죄 판결 세부 사항을 제공하세요.",
+      "value" : "유죄 판결 세부 사항을 제공하세요. (유효한 특수 문자: -!/,.()#?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

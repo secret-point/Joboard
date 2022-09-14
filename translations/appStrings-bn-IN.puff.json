@@ -1781,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "অনুগ্রহ করে দোষী সাব্যস্তকরণের বিবরণ দিন।",
+      "value" : "অনুগ্রহ করে দোষী সাব্যস্তদের বিবরণ দিন। (বৈধ বিশেষ অক্ষরগুলি হল -! /,. () #?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

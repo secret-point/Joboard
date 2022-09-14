@@ -1781,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "有罪判決の詳細を提供してください。",
+      "value" : "有罪判決の詳細を提供してください。(有効な特殊文字は-!/,. () #?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

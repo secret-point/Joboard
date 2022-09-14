@@ -188,6 +188,10 @@
       "value" : "Heure de début",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "Heure de fin",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "Allant jusqu’à {hourNumber} heures",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -1775,10 +1779,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Veuillez cocher la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Veuillez fournir les détails de la condamnation.",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

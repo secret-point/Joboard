@@ -188,6 +188,10 @@
       "value" : "ప్రారంభ సమయం",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "ముగింపు సమయం",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "{hourNumber} గంటల వరకు",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -1777,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "దయచేసి నేరారోపణ వివరాలను అందించండి.",
+      "value" : "దయచేసి నేరారోపణ వివరాలను అందించండి. (చెల్లుబాటు అయ్యే ప్రత్యేక అక్షరాలు -!/,.()#?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

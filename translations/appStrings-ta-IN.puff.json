@@ -188,6 +188,10 @@
       "value" : "தொடக்க நேரம்",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "முடிவு நேரம்",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "{hourNumber} மணிநேரம் வரை",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -1777,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "தண்டனை விவரங்களை வழங்கவும்.",
+      "value" : "தண்டனை விவரங்களை வழங்கவும். (செல்லுபடியாகும் சிறப்பு எழுத்துக்குறிகள் -!/,.()#?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

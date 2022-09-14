@@ -188,6 +188,10 @@
       "value" : "प्रारंभ का समय",
       "note" : "Text for start time select input label text"
     },
+    "BB-TimeRange-end-time-select-label-text" : {
+      "value" : "समाप्ति का समय",
+      "note" : "Text for end time select input label text"
+    },
     "BB-FilterSchedule-DesiredHours-Upto-hours" : {
       "value" : "{hourNumber} घंटों तक",
       "note" : "Text for Desired Hours up to a certain hours"
@@ -1775,10 +1779,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "कृपया कन्विक्शन का विवरण दें.",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- अलबामा",

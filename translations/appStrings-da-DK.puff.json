@@ -1781,7 +1781,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Angiv venligst detaljer om dommen.",
+      "value" : "Angiv venligst detaljer om dommen. (Gyldige specialtegn er -!/,. () #?)",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
