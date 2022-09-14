@@ -3,6 +3,7 @@ import { from, Observable, of } from "rxjs";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import { actionUpdateWotcStatusFailed, actionUpdateWotcStatusSuccess } from "../actions/WotcActions/wotcActions";
 import { UpdateWotcStatusAction, WOTC_ACTION_TYPES } from "../actions/WotcActions/wotcActionTypes";
+import { log, LoggerType } from "../helpers/log-helper";
 import CandidateApplicationService from "../services/candidate-application-service";
 import { UpdateApplicationErrorMessage, UpdateWotcStatusErrorMessages } from "../utils/api/errorMessages";
 import { UpdateWotcStatusResponse } from "../utils/api/types";
@@ -21,6 +22,7 @@ export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
             return response;
           }),
           map((response: UpdateWotcStatusResponse) => {
+            log(`[Epic] UpdateWotcStatusEpic successful`, response);
             if (action.onSuccess) {
               action.onSuccess(response.data);
             }
@@ -28,6 +30,8 @@ export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
             return actionUpdateWotcStatusSuccess(response.data);
           }),
           catchError((error: any) => {
+            log(`[Epic] UpdateWotcStatusEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+
             if(action.onError){
               action.onError(error);
             }

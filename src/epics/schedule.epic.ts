@@ -1,29 +1,30 @@
-import { from, Observable, of } from "rxjs";
 import { ofType } from "redux-observable";
+import { from, Observable, of } from "rxjs";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
-import {
-  GetScheduleDetailAction,
-  GetScheduleListByJobIdAction,
-  SCHEDULE_ACTION_TYPE
-} from "../actions/ScheduleActions/scheduleActionTypes";
-import JobService from "../services/job-service";
 import {
   actionGetScheduleDetailFailed,
   actionGetScheduleDetailSuccess,
   actionGetScheduleListByJobIdFailed,
   actionGetScheduleListByJobIdSuccess
 } from "../actions/ScheduleActions/scheduleActions";
-import { GetScheduleDetailResponse, GetScheduleListResponse } from "../utils/api/types";
-import { Schedule } from "../utils/types/common";
-import { createProxyApiEpicError, epicSwitchMapHelper } from "./helper";
-import { GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE, UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
+import {
+  GetScheduleDetailAction,
+  GetScheduleListByJobIdAction,
+  SCHEDULE_ACTION_TYPE
+} from "../actions/ScheduleActions/scheduleActionTypes";
+import { PAGE_ROUTES } from "../components/pageRoutes";
+import { log, LoggerType } from "../helpers/log-helper";
+import JobService from "../services/job-service";
 import {
   GetScheduleDetailErrorMessage,
   GetScheduleListErrorMessages,
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
+import { GetScheduleDetailResponse, GetScheduleListResponse } from "../utils/api/types";
+import { GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE, UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
 import { routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
-import { PAGE_ROUTES } from "../components/pageRoutes";
+import { Schedule } from "../utils/types/common";
+import { createProxyApiEpicError, epicSwitchMapHelper } from "./helper";
 
 export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
     return action$.pipe(
@@ -33,7 +34,7 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
               .pipe(
                 switchMap(epicSwitchMapHelper),
                 switchMap(async (response: GetScheduleListResponse) => {
-                  const data = response.data;
+                  const { data } = response;
 
                   if (!data.availableSchedules || (data.availableSchedules && !data.availableSchedules.schedules)) {
                     throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.FETCH_SHIFTS_ERROR);
@@ -49,6 +50,7 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
                   return actionGetScheduleListByJobIdSuccess(data);
                 }),
                 catchError((error: any) => {
+                  log(`[Epic] GetScheduleListByJobIdEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
 
                   const errorMessage = GetScheduleListErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
 
@@ -84,6 +86,7 @@ export const GetScheduleDetailEpic = (action$: Observable<any>) => {
             return actionGetScheduleDetailSuccess(data);
           }),
           catchError((error: any) => {
+            log(`[Epic] GetScheduleDetailEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
 
             const errorMessage = GetScheduleDetailErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);
