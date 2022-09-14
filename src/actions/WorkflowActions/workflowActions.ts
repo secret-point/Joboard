@@ -1,17 +1,16 @@
+import { Application, CompleteTaskRequest, EnvConfig, Schedule, WorkflowData } from "../../utils/types/common";
+import StepFunctionService from "../../services/step-function-service";
 import moment from "moment";
-import { PAGE_ROUTES } from "../../components/pageRoutes";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
 import { getDataForEventMetrics } from "../../helpers/adobe-helper";
+import { sendDataLayerAdobeAnalytics } from "../AdobeActions/adobeActions";
 import { log, logError } from "../../helpers/log-helper";
 import { checkIfIsCSRequest, pathByDomain } from "../../helpers/utils";
-import StepFunctionService from "../../services/step-function-service";
-import store from "../../store/store";
-import { WORKFLOW_ERROR_CODE, WORKFLOW_STEP_NAME } from "../../utils/enums/common";
-import { getCurrentStepNameFromHash, loadingStatusHelper, routeToAppPageWithPath } from "../../utils/helper";
-import { Application, CompleteTaskRequest, EnvConfig, Schedule, WorkflowData } from "../../utils/types/common";
-import { sendDataLayerAdobeAnalytics } from "../AdobeActions/adobeActions";
-import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
 import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../WorkflowActions/boundWorkflowActions";
+import store from "../../store/store";
+import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
+import { getCurrentStepNameFromHash, loadingStatusHelper, routeToAppPageWithPath } from "../../utils/helper";
+import { WORKFLOW_ERROR_CODE, WORKFLOW_STEP_NAME } from "../../utils/enums/common";
 import {
   SetWorkflowErrorCodeAction,
   WORKFLOW_REQUEST,
@@ -19,6 +18,7 @@ import {
   WorkflowRequestInitAction,
   WorkflowRequestStartAction
 } from "./workflowActionTypes";
+import { PAGE_ROUTES } from "../../components/pageRoutes";
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
@@ -86,7 +86,7 @@ export const startOrResumeWorkflowDS = () => {
 };
 
 export const sendHeartBeatWorkflow = () => {
-  const { websocket } = window.stepFunctionService;
+  const websocket = window.stepFunctionService.websocket;
   if(window.hearBeatTime) {
     log("Sending the heart beat event");
     const endTime = moment();
@@ -117,7 +117,7 @@ export const sendHeartBeatWorkflow = () => {
   }
 };
 
-export const ifShouldGoToStep = (targetStepName: string, currentStepName: string): boolean => {
+export const ifShouldGoToStep = (targetStepName: string, currentStepName:string): boolean => {
   // Do not redirect if the current step is the same as the target step
   if(targetStepName === currentStepName) {
     return false;
@@ -133,14 +133,6 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
   // the user will see the `assessment-consent` page first then after a few seconds be redirected back to the next step.
   if (currentStepName === PAGE_ROUTES.ASSESSMENT_FINISHED &&
     targetStepName === WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT) {
-    return false;
-  }
-
-  // Make sure that the user stays at `wotc-complete` page when we are trying to completeTask wotc. Otherwise,
-  // the user will see the `wotc` page first then after a few seconds be redirected back to the next step, which is `supplementary-success`.
-  // Right now wotc page takes a long time (~2-5s) to load that's why we didn't see any page flickering at this time.
-  if (currentStepName === PAGE_ROUTES.WOTC_COMPLETE &&
-    targetStepName === WORKFLOW_STEP_NAME.WOTC) {
     return false;
   }
 
@@ -239,10 +231,10 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   const state = store.getState();
   const jobId = application.jobScheduleSelected?.jobId;
   const scheduleId = application.jobScheduleSelected?.scheduleId;
-  const { applicationId } = application;
-  const { candidateId } = application;
+  const applicationId = application.applicationId;
+  const candidateId = application.candidateId;
   const currentStepName = currentStep || getCurrentStepNameFromHash();
-  const { scheduleDetail } = state.schedule.results;
+  const scheduleDetail = state.schedule.results.scheduleDetail;
 
   if(isBackButton) {
     log(`[WS] Completed task on back button execution, current step is ${currentStepName} for application:`, application);
