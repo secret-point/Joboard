@@ -203,7 +203,8 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
                                 defaultValue={additionalBgc?.convictionDetails || ''}
                                 onChange={(e) => {
                                     const newCandidate = cloneDeep(candidatePatchRequest) || {} ;
-                                    set(newCandidate, 'additionalBackgroundInfo.convictionDetails', e.target.value);
+                                    const value = e.target.value || '';
+                                    set(newCandidate, 'additionalBackgroundInfo.convictionDetails', value.trim());
                                     boundSetCandidatePatchRequest(newCandidate);
                                 }}
                                 error={missingConvictionDetails}

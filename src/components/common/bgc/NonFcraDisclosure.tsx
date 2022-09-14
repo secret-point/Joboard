@@ -173,7 +173,10 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                         <Input
                             {...inputProps}
                             defaultValue={nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || ''}
-                            onChange={( e ) => setNonFcraAckEsign(e.target.value)}
+                            onChange={( e ) => {
+                              const value = e.target.value || '';
+                              setNonFcraAckEsign(value.trim());
+                            }}
                         />
                     }
                 </InputWrapper>
@@ -205,7 +208,10 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                         <Input
                             {...inputProps}
                             defaultValue={nonFcraQuestions?.nonFcraStateNoticeEsign.signature || ''}
-                            onChange={e => setNonFcraNoticeEsign(e.target.value)}
+                            onChange={e => {
+                              const value = e.target.value || '';
+                              setNonFcraNoticeEsign(value.trim());
+                            }}
                         />
                     }
                 </InputWrapper>

@@ -45,13 +45,13 @@ export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) =
     const errorMessage = t("BB-BGC-additional-bgc-previous-legal-name-error-text", "Please enter previously used legal full name following format: First Last");
 
     const handleUpdatePreviousName = (event: ChangeEvent<HTMLInputElement>) => {
-        const value = event.target.value;
+        const value = event.target.value || '';
         const name = event.target.name;
         const dataIndex = name === 'previousLegalName0' ? 0 : name === 'previousLegalName1'? 1 : name === 'previousLegalName2' ? 2 : 0;
         const newCandidate = cloneDeep(candidatePatchRequest) || {} ;
         const currentNameList = get(newCandidate, dataKeyAccessor) || [] ;
 
-        currentNameList[dataIndex] = value;
+        currentNameList[dataIndex] = value.trim();
         set(newCandidate, dataKeyAccessor, currentNameList);
         boundSetCandidatePatchRequest(newCandidate);
     }

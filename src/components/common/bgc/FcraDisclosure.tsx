@@ -199,7 +199,8 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                             <Input
                                 {...inputProps}
                                 onChange={e => {
-                                    setESignature(e.target.value);
+                                    const value = e.target.value || '';
+                                    setESignature(value.trim());
                                 }}
                                 defaultValue={fcraQuestions?.bgcDisclosureEsign?.signature || ''}
                             />

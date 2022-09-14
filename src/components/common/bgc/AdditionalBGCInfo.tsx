@@ -212,16 +212,17 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>, formItem: FormInputItem) => {
         formItem.edited = true;
-        const value = event.target.value;
+        const value = event.target.value || '';
         const newCandidate = cloneDeep(candidatePatchRequest) || {} ;
-        set(newCandidate, formItem.dataKey, value);
+        set(newCandidate, formItem.dataKey, value.trim());
         boundSetCandidatePatchRequest(newCandidate);
     }
 
     const handleDatePickerInput = (value: string, datePickerItem: FormInputItem) => {
         datePickerItem.edited = true;
+        const trimmedValue = value ? value.trim() : value;
         const newCandidate  = cloneDeep(candidatePatchRequest) || {} ;
-        set(newCandidate, datePickerItem.dataKey, value);
+        set(newCandidate, datePickerItem.dataKey, trimmedValue);
         boundSetCandidatePatchRequest(newCandidate);
     }
 
@@ -411,7 +412,10 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 defaultValue={get(candidateData, 'additionalBackgroundInfo.idNumber') || ''}
                 inputValue={get(candidatePatchRequest, 'additionalBackgroundInfo.idNumber') || ''}
                 disabled={isNoSSNChecked}
-                handleChange={(e: ChangeEvent<HTMLInputElement>) => SetNewCandidatePatchRequest([{ value: e.target.value, dataKey: 'additionalBackgroundInfo.idNumber'}])}
+                handleChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  const value = e.target.value || '';
+                  SetNewCandidatePatchRequest([{ value: value.trim(), dataKey: 'additionalBackgroundInfo.idNumber'}])
+                }}
             />
             {
                 AdditionalBGCFormConfigPart2.map(config => {

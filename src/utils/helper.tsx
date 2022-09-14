@@ -584,7 +584,7 @@ export const validateInput = (value: string, required: boolean, regex: string) =
 
     if(required && (!value || value?.length === 0)) return false;
 
-    return new RegExp(regex).test(value);
+    return new RegExp(regex).test(value.trim());
 }
 
 export const resetUnchangedFieldFromPatch = (parentObject: Object, formConfig: FormInputItem[], patchObject?: Object): Object => {

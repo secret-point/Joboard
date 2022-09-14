@@ -52,9 +52,9 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
     }
 
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>, dataKey: string) => {
-        const value = event.target.value;
+        const value = event.target.value || '';
         const newCandidate = cloneDeep(candidatePatchRequest) || {} ;
-        set(newCandidate, dataKey, value);
+        set(newCandidate, dataKey, value.trim());
         boundSetCandidatePatchRequest(newCandidate);
     }
 
