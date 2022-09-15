@@ -681,15 +681,6 @@ export const validateNonFcraSignatures = ( applicationData: Application, nonFcra
         }
     }
 
-    if((!!bgcDisclosureEsign && bgcDisclosureEsign !== nonFcraAckEsign) || (!!bgcDisclosureEsign && bgcDisclosureEsign !== nonFcraNoticeEsign)) {
-        errorStatus = {
-            ...errorStatus,
-            hasError: true,
-            noticeESignHasError: true,
-            ackESignHasError: true
-        }
-    }
-
     return errorStatus
 }
 
