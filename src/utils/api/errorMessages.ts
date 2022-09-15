@@ -108,8 +108,8 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
     value: "The schedule you have selected is no longer available, please select another schedule."
   },
   [UPDATE_APPLICATION_ERROR_CODE.MISMATCH_SIGNATURES]: {
-    translationKey: "BB-update-application-error-message-mismatch-signatures",
-    value: "eSignatures do not match. Please use the same text for each eSignature."
+    translationKey: "BB-update-application-error-message-mismatch-signatures-fix",
+    value: "eSignatures do not match. Please use the same text for eSignature in step 1 and step 2."
   },
   [UPDATE_APPLICATION_ERROR_CODE.MAX_SSN_EDITS]: {
     translationKey: "BB-update-application-error-message-max-ssn-edits",

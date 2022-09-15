@@ -1496,10 +1496,6 @@
       "value" : "तुम्ही निवडलेले शेड्यूल यापुढे उपलब्ध नाही, कृपया दुसरे शेड्यूल निवडा.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "ईसिग्नेचर्स जुळत नाही. कृपया प्रत्येक ईसिग्नेचरसाठी समान मजकूर वापरा.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "अर्जाचे अपडेट अयशस्वी झाले कारण तुम्ही तुमच्या राष्ट्रीय आयडीमधील बदलांची कमाल संख्या गाठली आहे. तुम्ही याआधी वेगळ्या ईमेल पत्त्यासह साइन अप केले असल्यास, कृपया लॉगआउट करा आणि आवश्यक असल्यास \"तुमचा वैयक्तिक पिन विसरलात?\" लिंक वापरून त्या ईमेलसह लॉग इन करण्याचा प्रयत्न करा. तुम्हाला मदत हवी असल्यास, कृपया ईमेलद्वारे आमच्याशी संपर्क साधा किंवा <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> येथे चॅट करा.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

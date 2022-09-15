@@ -1496,10 +1496,6 @@
       "value" : "El horario que has seleccionado ya no está disponible, por favor selecciona otro horario.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Las firmas electrónicas no coinciden. Usa el mismo texto para cada firma electrónica.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Falló la actualización de la solicitud porque has alcanzado la cantidad máxima de cambios en tu ID nacional. Si previamente te has registrado con una dirección de correo electrónico diferente, por favor cierra sesión e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu PIN personal?” si es necesario. Si necesitas ayuda, contáctanos por correo electrónico o por chat en <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

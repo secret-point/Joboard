@@ -1496,10 +1496,6 @@
       "value" : "Vámi zvolený rozvrh již není k dispozici, vyberte si prosím jiný.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Elektronické podpisy se neshodují. Pro každý elektronický podpis použijte stejný text.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Aktualizace žádosti se nezdařila, protože jste dosáhli maximálního počtu změn u svého dokladu totožnosti. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, odhlaste se a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste svůj osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

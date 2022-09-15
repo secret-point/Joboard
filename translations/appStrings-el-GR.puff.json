@@ -1496,10 +1496,6 @@
       "value" : "Το πρόγραμμα που επιλέξατε δεν είναι πλέον διαθέσιμο. Επιλέξτε άλλο πρόγραμμα.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Οι ηλεκτρονικές υπογραφές δεν ταιριάζουν. Χρησιμοποιήστε το ίδιο κείμενο για κάθε ηλεκτρονική υπογραφή.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Η ενημέρωση της αίτησης απέτυχε επειδή έχετε συμπληρώσει τον μέγιστο αριθμό αλλαγών στην εθνική σας ταυτότητα. Εάν είχατε εγγραφεί προηγουμένως με διαφορετική διεύθυνση email, αποσυνδεθείτε και προσπαθήστε να συνδεθείτε με αυτό το email, χρησιμοποιώντας τον σύνδεσμο «Ξεχάσατε τον προσωπικό σας κωδικό;» αν χρειαστεί. Αν χρειάζεστε βοήθεια, επικοινωνήστε μαζί μας μέσω email ή συνομιλίας στο <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

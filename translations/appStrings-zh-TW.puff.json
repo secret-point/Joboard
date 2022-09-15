@@ -1496,10 +1496,6 @@
       "value" : "您選擇的排程不再可用，請選擇其他排程。",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "電子簽章不符。請為每個電子簽章使用相同的文字。",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "更新應徵失敗，因為您的國民身分證變更次數已達到上限。如果您之前使用其他電子郵件地址註冊，請登出並嘗試使用該電子郵件登入，如果需要的話，請使用「忘記您的個人 PIN 碼？」連結。如果需要協助，請透過電子郵件或者 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> 上的聊天功能聯絡我們。",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

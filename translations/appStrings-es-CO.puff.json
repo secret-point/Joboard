@@ -1496,8 +1496,8 @@
       "value" : "El horario que has seleccionado ya no está disponible, por favor selecciona otro horario.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Las eSignature no coinciden. Usa el mismo texto para cada eSignature.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Las firmas electrónicas no coinciden. Utiliza el mismo texto para la firma electrónica en los pasos 1 y 2.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

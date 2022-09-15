@@ -1496,10 +1496,6 @@
       "value" : "您选择的时间段已经约满，请选择其他时间。",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "电子签名不匹配。请为每个电子签名使用相同的文本。",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "更新申请失败，因为您更改身份证件的次数已经达到上限。如果您之前使用其他电子邮件地址注册过，请注销，然后尝试使用该电子邮件登录，如果需要，可以使用“忘记个人 PIN 码？”链接。如果您需要帮助，请发邮件给我们或通过 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> 发起实时聊天。",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

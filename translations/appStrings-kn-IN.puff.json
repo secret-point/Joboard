@@ -1496,8 +1496,8 @@
       "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ವೇಳಾಪಟ್ಟಿ ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿಲ್ಲ, ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ವೇಳಾಪಟ್ಟಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "ಇಸಹಿಗಳು ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. ಪ್ರತಿ ಇಸಹಿಗೆ ಒಂದೇ ಪಠ್ಯವನ್ನು ಬಳಸಿ.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "ಇ-ಸಹಿಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ. ಹಂತ 1 ಮತ್ತು ಹಂತ 2 ರಲ್ಲಿ ಇ-ಸಹಿಗಾಗಿ ದಯವಿಟ್ಟು ಅದೇ ಪಠ್ಯವನ್ನು ಬಳಸಿ.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

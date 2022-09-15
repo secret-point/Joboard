@@ -1496,8 +1496,8 @@
       "value" : "आपके द्वारा चुना गया शेड्यूल अब उपलब्ध नहीं है, कृपया एक और शेड्यूल चुनें.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "ई-हस्ताक्षर मेल नहीं खाते. कृपया हर ई-हस्ताक्षर के लिए एक ही जैसे टेक्स्ट का इस्तेमाल करें.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "ई-हस्ताक्षर मेल नहीं खाते हैं. कृपया चरण 1 और चरण 2 में ई-हस्ताक्षर के लिए एक ही जैसे टेस्ट का इस्तेमाल करें.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

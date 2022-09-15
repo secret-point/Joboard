@@ -1496,10 +1496,6 @@
       "value" : "Der von dir gewählte Zeitplan ist nicht mehr verfügbar. Bitte wähle einen anderen Zeitplan aus.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Elektronische Signaturen stimmen nicht überein. Bitte verwende für jede elektronische Signatur den gleichen Text.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Die Aktualisierung der Bewerbung ist fehlgeschlagen, da du die maximale Anzahl von Änderungen an deinem Personalausweis erreicht hast. Wenn du dich zuvor mit einer anderen E-Mail-Adresse registriert hast, melde dich bitte ab und versuche, dich mit dieser E-Mail-Adresse anzumelden. Verwende dazu bei Bedarf den Link „Persönliche PIN vergessen?“ Wenn du Hilfe benötigst, kontaktiere uns bitte per E-Mail oder Chat unter <a href=`https://hiring.amazon.com/contact-us#/`> www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

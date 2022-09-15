@@ -1496,10 +1496,6 @@
       "value" : "Het schema dat je hebt geselecteerd, is niet langer beschikbaar. Selecteer een ander schema.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Elektronische handtekeningen komen niet overeen. Gebruik voor elke elektronische handtekening dezelfde tekst.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Het bijwerken van de sollicitatie is mislukt omdat je het maximale aantal wijzigingen in jouw nationale ID hebt bereikt. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

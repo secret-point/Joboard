@@ -1496,10 +1496,6 @@
       "value" : "Schemat du har valt är inte längre tillgängligt, välj ett annat schema.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "E-signaturerna matchar inte. Använd samma text för varje e-signatur.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Uppdatering av ansökan misslyckades eftersom du har nått det maximala antalet ändringar i ditt nationella ID. Om du tidigare har registrerat dig med en annan e-postadress, vänligen logga ut och försök logga in med den e-postadressen. Använd länken ”Glömt din personliga pinkod?” om det behövs. Om du behöver hjälp kan du kontakta oss via e-post eller chatt på <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

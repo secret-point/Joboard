@@ -1498,9 +1498,9 @@
             "note": "error message for update application when selected schedule is not available",
             "value": "The schedule you have selected is no longer available, please select another schedule."
         },
-        "BB-update-application-error-message-mismatch-signatures": {
+        "BB-update-application-error-message-mismatch-signatures-fix": {
             "note": "error message for update application when signatures do not match",
-            "value": "eSignatures do not match. Please use the same text for each eSignature."
+            "value": "eSignatures do not match. Please use the same text for eSignature in step 1 and step 2."
         },
         "BB-update-application-error-message-max-ssn-edits": {
             "note": "error message for update application when number of ssn edits exceed the maximum",

@@ -1496,8 +1496,8 @@
       "value" : "আপনার নির্বাচিত সময়সূচী আর পাওয়া যাচ্ছে না, দয়া করে অন্য একটি সময়সূচী নির্বাচন করুন।",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "ই-স্বাক্ষর মিলছে না। প্রতিটি ই-স্বাক্ষরের জন্য অনুগ্রহ করে একই টেক্সট ব্যবহার করুন।",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "ই-স্বাক্ষর মিলছে না। অনুগ্রহ করে ই-স্বাক্ষরের জন্য ধাপ 1 এবং ধাপ 2 এ একই লেখা ব্যবহার করুন।",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

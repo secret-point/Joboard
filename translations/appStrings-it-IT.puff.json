@@ -1496,8 +1496,8 @@
       "value" : "Il programma selezionato non è più disponibile, seleziona un altro programma.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "Le firme elettroniche non corrispondono. Usa lo stesso testo per ogni firma elettronica.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Le firme elettroniche non corrispondono. Usa lo stesso testo per la firma elettronica nei passaggi 1 e 2.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

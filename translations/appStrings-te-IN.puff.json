@@ -1496,8 +1496,8 @@
       "value" : "మీరు ఎంపిక చేసుకున్న షెడ్యూల్ ఇకపై అందుబాటులో ఉండదు, దయచేసి మరొక షెడ్యూల్‌ని ఎంపిక చేయండి.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "eSignatures సరిపోలడం లేదు. దయచేసి ప్రతి eSignature కోసం ఒకే వచనాన్ని ఉపయోగించండి.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "eSignatures సరిపోలడం లేదు. దయచేసి స్టెప్ 1 మరియు స్టెప్ 2లో eSignature కోసం అదే టెక్స్ట్‌ను ఉపయోగించండి.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

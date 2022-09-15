@@ -1496,8 +1496,8 @@
       "value" : "Seçtiğiniz program artık mevcut değil, lütfen başka bir program seçin.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "e-İmzalar eşleşmiyor. Lütfen her bir e-İmza için aynı metni kullanın.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "e-İmzalar eşleşmiyor. Lütfen 1. ve 2. adımda e-İmza için aynı metni kullanın.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

@@ -1496,10 +1496,6 @@
       "value" : "לוח הזמנים שבחרת אינו זמין עוד, יש לבחור לוח זמנים אחר.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "החתימות האלקטרוניות אינן תואמות. יש להשתמש באותו טקסט עבור כל החתימות האלקטרוניות.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "העדכון להגשת המועמדות נכשל מכיוון שהגעת למספר המרבי של שינויים בתעודת הזהות הלאומית שלך. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש להתנתק ולנסות להיכנס באמצעות דואר אלקטרוני זה, באמצעות \"שכחת את קוד הזיהוי האישי שלך?\" קישור במידת הצורך. אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

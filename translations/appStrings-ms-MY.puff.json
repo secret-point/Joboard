@@ -1496,10 +1496,6 @@
       "value" : "Jadual yang anda pilih tidak lagi tersedia, sila pilih jadual lain.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "e-Tandatangan tidak sepadan. Sila gunakan teks yang sama untuk setiap e-Tandatangan.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Kemas kini pada permohonan gagal kerana anda telah mencapai jumlah maksimum perubahan pada ID Kebangsaan anda. Jika sebelum ini anda telah mendaftar dengan alamat e-mel yang berbeza, sila log keluar dan cuba log masuk dengan e-mel tersebut, menggunakan pautan “Lupa pin peribadi anda? “ jika perlu. Jika anda memerlukan bantuan, sila hubungi kami melalui e-mel atau berbual di <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

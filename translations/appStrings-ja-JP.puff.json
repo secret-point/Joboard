@@ -1496,10 +1496,6 @@
       "value" : "選択したスケジュールは利用できません。別のスケジュールを選択してください。",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "電子署名が一致しません。各電子署名には同じテキストを使用してください。",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "国民IDの変更回数が最大数に達したため、アプリケーションの更新に失敗しました。以前に別のEメールアドレスで登録したことがある場合は、ログアウトしてそのEメールを使い、必要であれば「個人 PIN をお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href=`https://hiring.amazon.com/contact-us#/`> www.amazon.com/applicationhelp</a>からEメールまたはチャットでお問い合わせください。",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

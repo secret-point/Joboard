@@ -1496,8 +1496,8 @@
       "value" : "நீங்கள் தேர்ந்தெடுத்த காலத்திட்டம் தற்போது இல்லை, மற்றொரு காலத்திட்டத்தைத் தேர்ந்தெடுக்கவும்.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "மின்னனு கையொப்பம் பொருந்தவில்லை. அனைத்து மின்னணு கையொப்பத்திற்கும் ஒரே உரையைப் பயன்படுத்தவும்.",
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "மின்னணுக் கையொப்பம் பொருந்தவில்லை. படி 1 மற்றும் படி 2இல் மின்னணுக் கையொப்பத்திற்கு ஒரே உரையைப் பயன்படுத்தவும்.",
       "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {

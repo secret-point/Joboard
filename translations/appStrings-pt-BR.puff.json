@@ -1496,10 +1496,6 @@
       "value" : "O agendamento que você selecionou não está mais disponível, selecione outro agendamento.",
       "note" : "error message for update application when selected schedule is not available"
     },
-    "BB-update-application-error-message-mismatch-signatures" : {
-      "value" : "As assinaturas eletrônicas não coincidem. Use o mesmo texto para cada assinatura eletrônica.",
-      "note" : "error message for update application when signatures do not match"
-    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Falha ao atualizar a candidatura devido ao número máximo de alterações em sua ID nacional. Se você já se inscreveu com um endereço de e-mail diferente, saia e tente fazer login com esse e-mail, usando o link “Esqueceu seu PIN pessoal?”, se necessário. Se precisar de ajuda, fale conosco por e-mail ou chat em <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
