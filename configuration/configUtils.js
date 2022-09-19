@@ -15,6 +15,7 @@ module.exports = {
         : 'eval-cheap-module-source-map',
 
     entryFile: path.resolve(__dirname, '..', 'src', 'index.tsx'),
+    entryFileMX: path.resolve(__dirname, '..', 'src', 'components', 'mx', 'index.tsx'),
 
     webcomponentsLoader: assetUrls.urls.webcomponentsLoader,
 

@@ -38,7 +38,16 @@ const ALL_PLUGINS = [
         template: 'public/index.html',
         filename: 'index.html',
         webcomponentsLoader: configUtils.webcomponentsLoader,
-        manifest: '/public/staticbb/manifest.json'
+        manifest: '/public/staticbb/manifest.json',
+        chunks: ['us'],
+    }),
+
+    new HtmlWebpackPlugin({
+        template: 'public/index.html',
+        filename: 'mx.html',
+        webcomponentsLoader: configUtils.webcomponentsLoader,
+        manifest: '/public/staticbb/manifest.json',
+        chunks: ['mx'],
     }),
 
     new ForkTsCheckerWebpackPlugin(),
@@ -86,7 +95,10 @@ module.exports = {
 
     context: path.resolve(__dirname, '..'),
 
-    entry: configUtils.entryFile,
+    entry: {
+        us: configUtils.entryFile,
+        mx: configUtils.entryFileMX
+    },
 
     output: {
         filename: configUtils.appJsFileName,
@@ -174,12 +186,16 @@ module.exports = {
         host: '0.0.0.0',
         allowedHosts: "all",  // disableHostCheck: true,
         open: configUtils.serverMode === 'standalone',
-        historyApiFallback: true,
         port: 3000,
         onBeforeSetupMiddleware: (devServer) => {
             return katalMiddleware(devServer.app, devServer, devServer.compiler);
         },
-        proxy: { '/api': { target: 'http://localhost:8080', secure: false }  }
+        proxy: { '/api': { target: 'http://localhost:8080', secure: false }  },
+        historyApiFallback: {
+            rewrites: [
+                {from: /^\/application\/mx/, to: '/mx.html'},
+            ],
+        },
     },
 
     performance: { hints: false },
