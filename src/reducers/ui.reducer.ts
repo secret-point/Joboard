@@ -16,11 +16,13 @@ import { CANDIDATE_ACTION_TYPES } from "../actions/CandidateActions/candidateAct
 import { WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
 import { NHE_ACTION_TYPES } from "../actions/NheActions/nheActionTypes";
 import { AlertMessage } from "../utils/types/common";
+import { THANK_YOU_ACTION_TYPES } from "../actions/ThankYouActions/thankYouActionTypes";
 
 export interface uiState {
     isLoading: boolean;
-    bannerMessage?: AlertMessage,
-    wotcLoading?: boolean
+    bannerMessage?: AlertMessage;
+    wotcLoading?: boolean;
+    referralLoading?: boolean;
 }
 
 export const initUiState: uiState = {
@@ -54,7 +56,11 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 ...state,
                 wotcLoading: true
             };
-
+        case THANK_YOU_ACTION_TYPES.VALIDATE_AMAZON_LOGIN_ID:
+            return {
+                ...state,
+                referralLoading: true
+            };
         case GET_INITIAL_APP_CONFIG_TYPE.SUCCESS:
         case GET_INITIAL_APP_CONFIG_TYPE.FAILED:
         case GET_ENV_CONFIG_TYPE.SUCCESS:
@@ -92,6 +98,12 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
                 wotcLoading: false
             };
 
+        case THANK_YOU_ACTION_TYPES.VALIDATE_AMAZON_LOGIN_ID_SUCCESS:
+        case THANK_YOU_ACTION_TYPES.VALIDATE_AMAZON_LOGIN_ID_FAILED:
+            return {
+                ...state,
+                referralLoading: false
+            };
 
         case BANNER_MESSAGE_TYPE.SET_BANNER_MESSAGE:
             return {

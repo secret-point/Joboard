@@ -399,7 +399,7 @@ export const validateName = (name: string): boolean => {
     return new RegExp(NameRegexValidator).test(name);
 }
 
-export const validateUserId = (userId: string): boolean => {
+export const validateUserIdFormat = (userId: string): boolean => {
     return new RegExp(UserIdValidator).test(userId);
 }
 

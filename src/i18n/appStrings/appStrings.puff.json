@@ -1386,6 +1386,18 @@
             "note": "Text for the thank you page referral login input regex error text",
             "value": "User ID should contain only lower case letters and should be at least 4 letters long."
         },
+        "BB-ThankYou-referral-login-error-message-internal-server-error": {
+            "note": "Text for the thank you page referral login validation error - server error.",
+            "value": "We couldn't validate your referrer's login ID, please try again or refresh the page."
+        },
+        "BB-ThankYou-referral-login-error-message-invalid-login-error": {
+            "note": "Text for the thank you page referral login validation error - referrer ID is invalid.",
+            "value": "We couldn't validate your referrer's login ID, please verify with your referrer and try again."
+        },
+        "BB-ThankYou-referral-login-error-message-candidate-blocked": {
+            "note": "Text for the thank you page referral login validation error - candidate is blocked.",
+            "value": "We couldn't validate your referrer's login ID, please chat with us at www.amazon.com/applicationhelp for assistance."
+        },
         "BB-WOTC-page-title-text": {
             "note": "Text for the WOTC page title text",
             "value": "Work opportunity tax credit questionnaire"

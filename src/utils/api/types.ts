@@ -7,7 +7,8 @@ import {
     GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
     UPDATE_APPLICATION_ERROR_CODE,
     UPDATE_WORKFLOW_NAME_ERROR_CODE,
-    UPDATE_WOTC_STATUS_ERROR_CODE
+    UPDATE_WOTC_STATUS_ERROR_CODE,
+    VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
 } from "../enums/common";
 
 export interface CreateApplicationResponse {
@@ -81,4 +82,10 @@ export interface UpdateWotcStatusResponse {
     data: any;
     error: string;
     errorCode: UPDATE_WOTC_STATUS_ERROR_CODE;
+}
+
+export interface ValidateamazonLoginIDResponse {
+    data: any;
+    error: string;
+    errorCode: VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE;
 }

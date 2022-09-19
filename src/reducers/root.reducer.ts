@@ -11,6 +11,7 @@ import candidateReducer from "./candidate.reducer";
 import workflowReducer from "./workflow.reducer";
 import nheReducer from "./nhe.reducer";
 import selfIdentificationReducer from "./selfIdentification.reducer";
+import thankYouReducer from "./thankYou.reducer";
 
 const createRootReducer = ( history: any ) =>
     combineReducers({
@@ -25,6 +26,7 @@ const createRootReducer = ( history: any ) =>
         workflow: workflowReducer,
         nhe: nheReducer,
         selfIdentification: selfIdentificationReducer,
+        thankYou: thankYouReducer,
         router: connectRouter(history),
     });
 

@@ -7,9 +7,10 @@ import {
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
   UPDATE_APPLICATION_ERROR_CODE,
-  UPDATE_WOTC_STATUS_ERROR_CODE
+  UPDATE_WOTC_STATUS_ERROR_CODE,
+  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
 } from "../enums/common";
-import { ApiErrorMessage } from "../types/common";
+import { ApiErrorMessage, ErrorMessage } from "../types/common";
 
 //TODO NEED TO REFECTOR TO SUPPORT MLS
 export const CreateApplicationErrorMessage: { [key: string]: ApiErrorMessage } = {
@@ -317,4 +318,27 @@ export const UpdateWotcStatusErrorMessages: { [key: string]: ApiErrorMessage } =
     translationKey: "BB-update-wotc-status-error-message-failed-update-wotc",
     value: "Failed to update WOTC."
   }
+};
+
+export const ValidateAmazonLoginIDErrorMessages: { [key: string]: ErrorMessage } = {
+  [VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_INPUT_EMPTY]: {
+    translationKey: "BB-ThankYou-referral-login-empty-error-text",
+    value: "Please provide your referrer login ID."
+  },
+  [VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_INPUT_FORMAT_INVALID]: {
+    translationKey: "BB-ThankYou-referral-login-regex-error-text",
+    value: "User ID should contain only lower case letters and should be at least 4 letters long."
+  },
+  [VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRER_NOT_FOUND]: {
+    translationKey: "BB-ThankYou-referral-login-error-message-invalid-login-error",
+    value: "We couldn't validate your referrer's login ID, please verify with your referrer and try again."
+  },
+  [VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_VALIDATION_BLOCKED]: {
+    translationKey: "BB-ThankYou-referral-login-error-message-candidate-blocked",
+    value: "We couldn't validate your referrer's login ID, please chat with us at www.amazon.com/applicationhelp for assistance."
+  },
+  [VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_VALIDATION_ERROR]: {
+    translationKey: "BB-ThankYou-referral-login-error-message-internal-server-error",
+    value: "We couldn't validate your referrer's login ID, please try again or refresh the page."
+  },
 };

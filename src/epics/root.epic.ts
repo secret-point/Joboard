@@ -12,6 +12,7 @@ import { JobEpic } from "./job.epic";
 import { GetCandidateInfoEpic } from "./candidate.epic";
 import { GetNheTimeSlotsDs } from "./nhe.epic";
 import { UpdateWotcStatusEpic } from "./wotc.epic";
+import { ValidateAmazonLoginIDEpic } from "./thank-you.epic";
 
 const rootEpic = combineEpics(
     JobEpic,
@@ -25,7 +26,8 @@ const rootEpic = combineEpics(
     UpdateWorkflowStepNameEpic,
     GetCandidateInfoEpic,
     GetNheTimeSlotsDs,
-    UpdateWotcStatusEpic
+    UpdateWotcStatusEpic,
+    ValidateAmazonLoginIDEpic
 );
 
 export default rootEpic;

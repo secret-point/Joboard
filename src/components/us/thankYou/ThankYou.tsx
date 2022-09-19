@@ -15,6 +15,7 @@ import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/bo
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundUpdateReferralForm, boundValidateAmazonLoginId } from "../../../actions/ThankYouActions/boundThankYouActions";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
@@ -29,23 +30,25 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
-import { UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE } from "../../../utils/enums/common";
 import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
-  formatDate, getLocale,
-  validateUserId
+  formatDate, getFeatureFlagValue, getLocale,
+  validateUserIdFormat
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { Application, FormInputItem } from "../../../utils/types/common";
+import { Application } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
+import { ThankYouState } from "../../../reducers/thankYou.reducer";
 
 interface MapStateToProps {
   application: ApplicationState;
   candidate: CandidateState;
   schedule: ScheduleState;
   job: JobState;
+  thankYou: ThankYouState;
 }
 
 interface JobReferral {
@@ -54,7 +57,7 @@ interface JobReferral {
 }
 
 export const ThankYou = (props: MapStateToProps) => {
-  const { application, candidate, schedule, job } = props;
+  const { application, candidate, schedule, job, thankYou } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -70,19 +73,6 @@ export const ThankYou = (props: MapStateToProps) => {
 
   const [hasReferral, setHasReferral] = useState(false);
   const [referralId, setReferralId] = useState("");
-
-  const [formInputConfig, setFormInputConfig] = useState<FormInputItem>({
-    hasError: false,
-    labelText: "Please provide your referrer login ID (lower case letters only)",
-    labelTranslationKey: "BB-ThankYou-referral-login-label-text",
-    errorMessage: "Please provide your referrer login ID.",
-    errorMessageTranslationKey: "BB-ThankYou-referral-login-empty-error-text",
-    required: true,
-    name: "referralInfo",
-    id: "referral-employee-name",
-    dataKey: "jobReferral.referralInfo",
-    type: "text"
-  });
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -115,40 +105,7 @@ export const ThankYou = (props: MapStateToProps) => {
     }
   },[pageName])
 
-  const validateFormInput = (): boolean => {
-    if (hasReferral) {
-      let errorMessage = "";
-      let errorMessageTranslationKey = "";
-
-      if (!referralId) {
-        errorMessage = "Please provide your referrer login ID.";
-        errorMessageTranslationKey = "BB-ThankYou-referral-login-empty-error-text";
-      } else if (!validateUserId(referralId)) {
-        errorMessage = "User ID should contain only lower case letters and should be at least 4 letters long.";
-        errorMessageTranslationKey = "BB-ThankYou-referral-login-regex-error-text";
-      }
-
-      if (errorMessage && errorMessageTranslationKey) {
-        setFormInputConfig({
-          ...formInputConfig,
-          hasError: true,
-          errorMessage,
-          errorMessageTranslationKey
-        });
-
-        return false;
-      }
-    }
-
-    return true;
-  };
-
-  const handleGetStarted = () => {
-    boundResetBannerMessage();
-    if (!validateFormInput()) {
-      return;
-    }
-
+  const updateApplicationOnReferralValidationSuccess = () => {
     if (applicationData) {
       const { THANK_YOU } = UPDATE_APPLICATION_API_TYPE;
       const jobReferral: JobReferral = {
@@ -166,7 +123,27 @@ export const ThankYou = (props: MapStateToProps) => {
         onCompleteTaskHelper(applicationData);
       });
 
-      postAdobeMetrics({name: METRIC_NAME.THANK_YOU_SUBMIT});
+      postAdobeMetrics({ name: METRIC_NAME.THANK_YOU_SUBMIT });
+    }
+  }
+
+  const handleGetStarted = () => {
+    boundResetBannerMessage();
+
+    if (!hasReferral) {
+      updateApplicationOnReferralValidationSuccess();
+    } else {
+      if (!referralId) {
+        boundUpdateReferralForm(VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_INPUT_EMPTY);
+      } else if (!validateUserIdFormat(referralId)) {
+        boundUpdateReferralForm(VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE.REFERRAL_INPUT_FORMAT_INVALID);
+      } else {
+        if (getFeatureFlagValue(FEATURE_FLAG.REFERRAL_VALIDATION)) {
+          boundValidateAmazonLoginId({ loginId: referralId }, updateApplicationOnReferralValidationSuccess, boundUpdateReferralForm);
+        } else {
+          updateApplicationOnReferralValidationSuccess();
+        }
+      }
     }
   };
 
@@ -290,7 +267,7 @@ export const ThankYou = (props: MapStateToProps) => {
           {
             hasReferral &&
             <FormInputText
-              inputItem={formInputConfig}
+              inputItem={thankYou.referralFormInputConfig}
               defaultValue=""
               handleChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e)}
             />

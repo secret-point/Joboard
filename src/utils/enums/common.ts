@@ -199,7 +199,10 @@ export enum PROXY_ERROR_MESSAGE {
     FETCH_HCR_ERROR = "Unable to fetch head count request.",
     FETCH_SHIFT_PREF_ERROR = "Unable to fetch shift preferences.",
     SHIFTS_BAD_REQUEST = "Failed to retrieve jobs at the moment. Please try again after some time.",
-    SCHEDULE_NOT_AVAILABLE = "The schedule you have selected is no longer available, please select another schedule."
+    SCHEDULE_NOT_AVAILABLE = "The schedule you have selected is no longer available, please select another schedule.",
+    REFERRER_NOT_FOUND = "We couldn't validate your referrer's login ID, please verify with your referrer and try again.",
+    REFERRAL_VALIDATION_BLOCKED = "We couldn't validate your referrer's login ID, please chat with us at www.amazon.com/applicationhelp for assistance.",
+    REFERRAL_VALIDATION_ERROR = "We couldn't validate your referrer's login ID, please try again or refresh the page.",
 }
 
 export enum CREATE_APPLICATION_ERROR_CODE {
@@ -306,6 +309,14 @@ export enum UPDATE_WOTC_STATUS_ERROR_CODE {
     FAILED_UPDATE_WOTC = "FAILED_UPDATE_WOTC",
 }
 
+export enum VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE {
+    REFERRAL_INPUT_EMPTY = "REFERRAL_INPUT_EMPTY",
+    REFERRAL_INPUT_FORMAT_INVALID = "REFERRAL_INPUT_FORMAT_INVALID",
+    REFERRER_NOT_FOUND = "REFERRER_NOT_FOUND",
+    REFERRAL_VALIDATION_BLOCKED = "REFERRAL_VALIDATION_BLOCKED",
+    REFERRAL_VALIDATION_ERROR = "REFERRAL_VALIDATION_ERROR",
+}
+
 export enum WORKFLOW_ERROR_CODE {
     NOT_REHIRE_ELIGIBLE = "not-rehire-eligible",
     NOT_REHIRE_ELIGIBLE_365_DAYS = "365-days-not-rehire-eligible",
@@ -324,7 +335,8 @@ export enum FEATURE_FLAG {
     CANDIDATE_DASHBOARD = "CANDIDATE_DASHBOARD",
     HOOK = "HOOK",
     NO_SSN_CHECKBOX = "NO_SSN_CHECKBOX",
-    MLS = "MLS"
+    MLS = "MLS",
+    REFERRAL_VALIDATION = "REFERRAL_VALIDATION",
 }
 
 export enum BB_UI_VERSION {
