@@ -1776,6 +1776,10 @@
       "value" : "Veuillez cocher la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Veuillez fournir les détails de la condamnation. (Les caractères spéciaux valides sont -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",
       "note" : "Text for Alabama state"

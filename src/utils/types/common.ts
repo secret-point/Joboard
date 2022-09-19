@@ -144,6 +144,7 @@ export enum Locale {
     enGB = 'en-GB',
     enUS = 'en-US',
     esUS = 'es-US',
+    esMX = 'es-MX',
 }
 
 export interface Requisition {
@@ -327,6 +328,7 @@ export interface Schedule {
     signOnBonusL10N: string;
     firstDayOnSiteL10N: string;
     totalPayRateL10N: string;
+    requiredLanguage: string[] | null;
 }
 
 export interface HoursPerWeek {
@@ -881,3 +883,9 @@ export interface CompleteTaskRequest {
 export interface IsPageMetricsUpdated {
     [key: string]: boolean
 }
+
+export interface localeToLanguageItem {
+    translationKey: string 
+    language: string,
+    locale: Locale
+};

@@ -1776,6 +1776,10 @@
       "value" : "יש לסמן את התיבה כדי להמשיך.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "יש להזין את פרטי ההרשעה. (התווים המיוחדים שתקפים הם -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- אלבמה",
       "note" : "Text for Alabama state"

@@ -1496,6 +1496,10 @@
       "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത ഷെഡ്യൂൾ ഇനി ലഭ്യമല്ല, ദയവായി മറ്റൊരു ഷെഡ്യൂൾ തിരഞ്ഞെടുക്കുക.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "ഇ-സിഗ്നേച്ചറുകൾ പൊരുത്തപ്പെടുന്നില്ല. ഘട്ടം 1, ഘട്ടം 2 എന്നിവയിൽ ഇ-സിഗ്നേച്ചറിനായി അതേ വാചകം ഉപയോഗിക്കുക.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "നിങ്ങളുടെ ദേശീയ ID-യിൽ നൽകാവുന്ന മാറ്റങ്ങളുടെ പരമാവധി എണ്ണത്തിൽ എത്തിയതിനാൽ അപേക്ഷ അപ്ഡേറ്റ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. നിങ്ങൾ മുമ്പ് മറ്റൊരു ഇമെയിൽ വിലാസത്തിൽ സൈൻ അപ്പ് ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, ദയവായി ലോഗ് ഔട്ട് ചെയ്ത് ആ ഇമെയിൽ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യാൻ ശ്രമിക്കുക, ആവശ്യമെങ്കിൽ \"നിങ്ങളുടെ വ്യക്തിഗത പിൻ മറന്നോ?\" ലിങ്ക് ഉപയോഗിക്കുക. നിങ്ങൾക്ക് സഹായം ആവശ്യമുണ്ടെങ്കിൽ, ദയവായി ഇമെയിൽ മുഖേനയോ അല്ലെങ്കിൽ ചാറ്റ് മുഖേനയോ <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> എന്നതിൽ ഞങ്ങളെ ബന്ധപ്പെടുക.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

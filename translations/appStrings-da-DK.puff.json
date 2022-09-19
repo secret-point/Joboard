@@ -1496,6 +1496,10 @@
       "value" : "Den tidsplan, du har valgt, er ikke længere tilgængelig. Vælg en anden tidsplan.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "E-signaturer stemmer ikke overens. Brug den samme tekst til e-signatur i trin 1 og trin 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Opdateringen af ansøgningen mislykkedes, fordi du har nået det maksimale antal ændringer af dit nationale id. Hvis du tidligere har tilmeldt dig med en anden e-mailadresse, skal du logge ud og prøve at logge ind med denne e-mailadresse og om nødvendigt bruge linket \"Glemt din personlige pinkode?\". Hvis du har brug for hjælp, kan du kontakte os via e-mail eller chat på <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

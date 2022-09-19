@@ -33,6 +33,7 @@ const LocaleToWotcLangMapping: Record<Locale, string> = {
   [Locale.enGB]: 'en',
   [Locale.enUS]: 'en',
   [Locale.esUS]: 'es',
+  [Locale.esMX]: 'es',
 };
 
 export const Wotc = (props: MapStateToProps) => {

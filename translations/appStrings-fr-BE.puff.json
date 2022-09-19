@@ -1496,6 +1496,10 @@
       "value" : "L’horaire que vous avez sélectionné n’est plus disponible, sélectionnez-en un autre.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Les signatures électroniques ne correspondent pas. Veuillez utiliser le même texte pour la signature électronique à l'étape 1 et à l'étape 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "La mise à jour de la candidature a échoué car vous avez atteint le nombre maximum de modifications de votre carte d’identité nationale. Si vous vous êtes précédemment inscrit avec une adresse e-mail différente, déconnectez-vous et essayez de vous connecter avec cette adresse e-mail, en utilisant le lien « Vous avez oublié votre code PIN personnel ? » si nécessaire. Si vous avez besoin d’aide, contactez-nous par courriel ou par chat à l’adresse suivante : <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
@@ -1775,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Cochez la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Veuillez fournir les détails de la condamnation. (Les caractères spéciaux valides sont - ! /,. () # ?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",

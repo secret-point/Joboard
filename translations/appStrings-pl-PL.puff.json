@@ -1496,6 +1496,10 @@
       "value" : "Wybrany harmonogram nie jest już dostępny, wybierz inny.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Podpisy elektroniczne nie są zgodne. Użyj tego samego tekstu do podpisu elektronicznego w kroku 1 i kroku 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Aktualizacja wniosku nie powiodła się, ponieważ osiągnięto maksymalną liczbę zmian w danych dokumentu tożsamości. Jeśli wcześniej zarejestrowałeś(-łaś) się przy użyciu innego adresu e-mail, wyloguj się i spróbuj zalogować się za pomocą wcześniej użytego adresu e-mail, w razie potrzeby korzystając z linku „Nie pamiętasz osobistego kodu PIN?”. Jeśli potrzebujesz pomocy, skontaktuj się z nami za pośrednictwem poczty elektronicznej lub czatu pod adresem <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

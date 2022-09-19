@@ -1496,6 +1496,10 @@
       "value" : "The schedule you have selected is no longer available, please select another schedule.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "eSignatures do not match. Please use the same text for eSignature in step 1 and step 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please logout and try logging in with that email, using the \"Forgot your personal PIN?\" link if needed. If you need help, please contact us via email or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
@@ -1775,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Please provide the conviction details. (Valid special characters are -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

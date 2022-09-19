@@ -1414,6 +1414,18 @@
             "note": "Text for the schedule card bonus text",
             "value": "Bonus:"
         },
+        "BB-Schedule-card-languages-supported": {
+            "note": "Job Required Languages label text",
+            "value": "Languages Supported"
+        },
+        "BB-Constants-language-spanish": {
+            "note": "Job Required Language text",
+            "value": "Spanish"
+        },
+        "BB-Constants-language-english": {
+            "note": "Job Required Language text",
+            "value": "English"
+        },
         "BB-amazon-rejects-thank-you": {
             "note": "Text for the amazon rejects page thank you text",
             "value": "Thank you for your interest, but we're unable to offer you a job at this time."

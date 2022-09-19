@@ -16,7 +16,9 @@ import {
     ScheduleSortBy,
     ScheduleStateFilters,
     StateSelectOption,
-    StateSpecificNotice
+    StateSpecificNotice,
+    localeToLanguageItem,
+    Locale
 } from "../types/common";
 
 export const HVH_LOCALE = 'hvh-locale';
@@ -815,4 +817,27 @@ export const ValueToI18nKeyMap: {[key: string]: string} = {
     "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text",
     "White (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text",
     "Two or more Races (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text",
-  };
+};
+
+export const localeToLanguageList: localeToLanguageItem[] = [
+    {
+        translationKey: 'BB-Constants-language-english',
+        language: 'English',
+        locale: Locale.enUS
+    },
+    {
+        translationKey: 'BB-Constants-language-spanish',
+        language: 'Spanish',
+        locale: Locale.esUS
+    },
+    {
+        translationKey: 'BB-Constants-language-english',
+        language: 'English',
+        locale: Locale.enGB
+    },
+    {
+        translationKey: 'BB-Constants-language-spanish',
+        language: 'Spanish',
+        locale: Locale.esMX
+    },
+];
