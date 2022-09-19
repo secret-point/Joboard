@@ -1,37 +1,37 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import "./styles/index.scss";
-import store from "./store/store";
-import { Provider } from "react-redux";
-import { getInitialData } from "./services";
-import { Store } from "redux";
-import StepFunctionService from "./services/step-function-service";
 import "regenerator-runtime/runtime";
 import "core-js";
-import * as KatalMetrics from "@katal/metrics";
 import initialMetricsPublisher from "@amzn/hvh-common-ui-library/lib/metrics";
 import DeviceMetrics from "@amzn/hvh-common-ui-library/lib/metrics/device-metrics";
-import domLoaded from "dom-loaded";
-import queryString from "query-string";
-import isNil from "lodash/isNil";
-import { isEmpty } from "lodash";
-import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "./helpers/utils";
-import KatalLogger from "@katal/logger";
-import { initLogger } from "./helpers/log-helper";
 import "./i18n";
-import DragonStoneAppUS from "./components/us/dsApp";
-import { onSFLogout } from "./actions/old/application-actions";
-import { CS_PREPROD_DOMAIN } from "./constants";
-import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
-import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
-import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
-import { PageContainer } from "@amzn/stencil-react-components/page";
-import { Col } from "@amzn/stencil-react-components/layout";
 import { MainWithSkipLink } from "@amzn/stencil-react-components/a11y";
+import { StencilProvider } from "@amzn/stencil-react-components/dist/submodules/context";
+import { Col } from "@amzn/stencil-react-components/layout";
+import { PageContainer } from "@amzn/stencil-react-components/page";
+import KatalLogger from "@katal/logger";
+import * as KatalMetrics from "@katal/metrics";
+import domLoaded from "dom-loaded";
+import { isEmpty } from "lodash";
+import isNil from "lodash/isNil";
+import queryString from "query-string";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { Store } from "redux";
+import { actionGetInitialAppConfigActionSuccess } from "./actions/AppConfigActions/appConfigActions";
+import { onSFLogout } from "./actions/old/application-actions";
 import { PAGE_ROUTES } from "./components/pageRoutes";
+import DragonStoneAppUS from "./components/us/dsApp";
+import { CS_PREPROD_DOMAIN } from "./constants";
+import { initLogger } from "./helpers/log-helper";
+import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "./helpers/utils";
+import { getInitialData } from "./services";
+import StepFunctionService from "./services/step-function-service";
+import store from "./store/store";
 import { usNewBBUIPathName } from "./utils/constants/common";
 import { checkIfIsLegacy, isNewBBuiPath } from "./utils/helper";
+import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
 
 const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
 
@@ -157,6 +157,7 @@ getInitialData()
         : appHashUrl;
 
       window.location.assign(`${usNewBBUIPathName}${requestQueryString}#/${appHashUrl}`);
+      return;
     }
 
     if (!isNil(token)) {
