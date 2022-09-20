@@ -7,10 +7,17 @@ export const MAX_MINUTES_FOR_HEARTBEAT = 60;
 export const IGNORE_PAGE_TO_STORE_LOCAL: string[] = ["wotc-complete"];
 
 export const CS_DOMAIN_LIST = [
+    // US
     "https://beta-us.devo.jobsatamazon.hvh.a2z.com",
     "https://gamma-us.devo.jobsatamazon.hvh.a2z.com",
     "https://us.preprod.jobsatamazon.hvh.a2z.com",
     "https://hiring.amazon.com",
+
+    // MX
+    "https://beta-mx.devo.jobsatamazon.hvh.a2z.com",
+    "https://gamma-mx.devo.jobsatamazon.hvh.a2z.com",
+    "https://mx.preprod.jobsatamazon.hvh.a2z.com",
+    // TODO: Add mx prod endpoint
 ];
 
 export const CS_PREPROD_DOMAIN = "https://us.preprod.jobsatamazon.hvh.a2z.com";
