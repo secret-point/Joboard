@@ -18,7 +18,7 @@ export const initLogger = (url: string, appStage: string, context?: any) => {
 };
 
 const getLogger = (context: any = {}): KatalLogger | undefined => {
-  let log = window.log;
+  let { log } = window;
 
   if (!log) {
     // try to re-init the logger if it was not available
@@ -40,10 +40,17 @@ export const log = (message: string, context: any = {}, type?: LoggerType) => {
     // can't get it from window.log and can't re-init it, just return
     return;
   }
+  // wrap the context to be an object if it's not, otherwise the data will be lost during obj destructuring
+  if (!Object.keys(context).length) {
+    context = {
+      context
+    };
+  }
   context = {
     cid,
     ...new URLParamsHelper().get(),
-    ...context
+    // add one nested level to the context to make the log more readable
+    context: { ...context }
   };
   switch (type) {
     case LoggerType.DEBUG:

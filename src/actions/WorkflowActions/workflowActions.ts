@@ -165,6 +165,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
           boundWorkflowRequestEnd();
           routeToAppPageWithPath(stepName);
           log(`update workflow step in local storage as ${stepName}`, applicationData);
+          window.localStorage.setItem("page", stepName);
         }, ( ex: any ) => {
           logError("Unable to update workflow step in application", ex, applicationData);
           boundWorkflowRequestEnd();
@@ -185,8 +186,10 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
 
 export const completeTask =
     ( application?: Application, currentStep?: string, isBackButton?: boolean, targetStep?: WORKFLOW_STEP_NAME, jobId?: string, schedule?: Schedule ) => {
-      log("[WS] in completeTask, websocket is: ", window.stepFunctionService?.websocket);
-      log("[WS] in completeTask, websocket readyState is: ", window.stepFunctionService?.websocket?.readyState);
+      log("[WS] in completeTask, websocket is: ", {
+        websocket: window.stepFunctionService?.websocket,
+        readyState: window.stepFunctionService?.websocket?.readyState,
+      });
       if(window.stepFunctionService?.websocket) {
         boundWorkflowRequestStart();
         const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime || "";
