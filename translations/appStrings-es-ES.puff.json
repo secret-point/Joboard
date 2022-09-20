@@ -212,6 +212,10 @@
       "value" : "Esta es la oferta condicional para el trabajo que elegiste.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Preguntas comunes",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "¿Qué es una oferta contingente?",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Según lo permitido por la ley aplicable, tu oferta está supeditada a que se supere con éxito la comprobación de antecedentes requerida, la prueba de detección de drogas (si corresponde) y la comprobación de admisibilidad para volver a contratar (si corresponde), por lo que es importante que completes los pasos previos al empleo en la siguiente página. En algunas circunstancias, tu primer día puede retrasarse si los requisitos previos al empleo no se completan a tiempo. Si este es el caso, recibirás noticias nuestras pronto.",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "¿Qué significa duración estacional?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "No hay diferencia en las tareas laborales. La única diferencia es que este puesto está destinado a ser temporal y no dura más de 11 meses.  Si quieres unirte de forma permanente, puede que esta opción llegue a estar disponible.  De lo contrario, se te notificará cuando acabe la tarea a realizar.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "¿Cómo puedo obtener el bono de contratación?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta incluye un bono de contratación de XXXX $ según los detalles específicos mencionados anteriormente. Se paga en múltiples cuotas que pueden extenderse hasta 180 días después de comenzar. Si tienes que cambiar la fecha, es posible que esta oferta específica no esté disponible en función del nuevo puesto que elijas. Si has trabajado para Amazon en los últimos 90 días, no podrás recibir ningún bono de contratación.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Cerrar.",
@@ -1413,7 +1433,7 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/h",
+      "value" : "/hora",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
@@ -1424,17 +1444,9 @@
       "value" : "Bonificación:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Idiomas admitidos",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "Español",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "Inglés",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-hours" : {
+      "value" : "Horas",
+      "note" : "Text for the work hours text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Gracias por tu interés, pero no podemos ofrecerte trabajo en estos momentos.",

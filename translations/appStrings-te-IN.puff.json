@@ -212,6 +212,10 @@
       "value" : "మీరు ఎంచుకున్న ఉద్యోగానికి సంబంధించిన కంటింజెంట్ ఆఫర్ ఇక్కడ ఉంది.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "సాధారణ ప్రశ్నలు",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "కంటింజెంట్ ఆఫర్ అంటే ఏమిటి?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1413,7 +1417,7 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/గంటకు",
+      "value" : "/గంట",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
@@ -1423,6 +1427,30 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "బోనస్:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "ప్రారంభ తేదీ",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "షిఫ్ట్",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "చెల్లింపు రేటు",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "గంటలు",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "వ్యవధి",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "లొకేషన్",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "మీ ఆసక్తికి ధన్యవాదాలు, కానీ మేము ప్రస్తుతం మీకు ఉద్యోగ ఆఫర్‌ను ఇవ్వలేకపోతున్నాము.",

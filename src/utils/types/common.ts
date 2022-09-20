@@ -328,6 +328,7 @@ export interface Schedule {
     signOnBonusL10N: string;
     firstDayOnSiteL10N: string;
     totalPayRateL10N: string;
+    employmentTypeL10N: string;
     requiredLanguage: string[] | null;
 }
 

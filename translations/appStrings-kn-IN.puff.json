@@ -212,6 +212,10 @@
       "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಅನಿಶ್ಚಿತ ಕೊಡುಗೆ ಇಲ್ಲಿದೆ.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆಗಳು",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "ಆಕಸ್ಮಿಕ ಕೊಡುಗೆ ಎಂದರೇನು?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1401,28 +1405,20 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hr",
+      "value" : "/ಗಂಟೆ",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "hrs/wk",
+      "value" : "ಗಂಟೆಗಳು/ವಾರ",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "ಬೋನಸ್:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "ಬೆಂಬಲಿತ ಭಾಷೆಗಳು",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "ಸ್ಪ್ಯಾನಿಷ್",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "ಇಂಗ್ಲಿಷ್",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-hours" : {
+      "value" : "ಗಂಟೆಗಳು",
+      "note" : "Text for the work hours text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "ನೀವು ತೋರಿದ ಆಸಕ್ತಿಗೆ ಧನ್ಯವಾದಗಳು, ಆದರೆ ಈ ಸಮಯದಲ್ಲಿ ನಿಮಗೆ ಕೆಲಸ ನೀಡಲು ನಮಗೆ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ.",

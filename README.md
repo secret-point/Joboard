@@ -1,5 +1,11 @@
 ## BB UI -  Local Development
 
+### Command to install package
+brazil ws --create -n HVHCareersFrontendApplicationUI
+cd HVHCareersFrontendApplicationUI
+brazil ws --use -p HVHCareersFrontendApplicationUI -vs 	HVHCandidateAppWebsiteCDK/release
+cd src/HVHCareersFrontendApplicationUI
+
 ### Run ADA credentials for access resources in beta stage:
 
 `ada credentials update --account=344441347779 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`

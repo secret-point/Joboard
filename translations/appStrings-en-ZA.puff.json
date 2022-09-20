@@ -212,6 +212,10 @@
       "value" : "Here is the contingent offer for the job that you picked.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Common questions",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "What is a contingent offer?",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it is important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "What does a seasonal duration mean?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "There is no difference in job duties, the difference is in this role being intended to be temporary and no longer than 11 months.  If you are interested in joining on a permanent basis, the opportunity may become available.  Otherwise, you will be notified when your assignment will end.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "How do I get the sign on bonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "This offer includes a sign on bonus of $XXXX based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Close.",
@@ -1413,28 +1433,40 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hr",
+      "value" : "/hour",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "hrs/wk",
+      "value" : "hours/week",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Languages Supported",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "Start Date",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "Spanish",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "Shift",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "English",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Pay rate",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Hours",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Duration",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Location",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Thank you for your interest, but we are unable to offer you a job at this time.",

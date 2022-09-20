@@ -220,6 +220,22 @@
       "value" : "Conforme permitido pela lei aplicável, sua oferta depende da aprovação na verificação de antecedentes necessária, teste de detecção de uso de drogas (se aplicável) e verificação de qualificação de recontratação (se aplicável). Por isso, é importante que você conclua as etapas de pré-contratação na próxima página. Em algumas circunstâncias, seu primeiro dia pode ser adiado devido ao fato de os requisitos de pré-contratação não serem concluídos a tempo. Se for esse o caso, você pode esperar um contato nosso em breve.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "O que significa uma duração sazonal?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Não há diferença nas funções de trabalho, a diferença é que essa função deve ser temporária e não ultrapassar 11 meses.  Se você estiver interessado em ingressar de forma permanente, a oportunidade pode ficar disponível.  Caso contrário, você será notificado quando sua contratação terminar.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Como faço para obter o bônus de inscrição?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bônus de inscrição de $XXXX com base nos detalhes específicos mencionados acima. Ele será pago em várias parcelas que podem se estender até 180 dias após o início. Se você precisar reagendar, essa oferta específica pode não estar disponível com base na nova função que você escolher. Se você trabalhou recentemente para a Amazon nos últimos 90 dias, não será elegível para nenhum bônus de inscrição.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Fechar.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1401,28 +1417,16 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hora",
+      "value" : "por hora",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "horas/semana",
+      "value" : "horas por semana",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bônus:",
       "note" : "Text for the schedule card bonus text"
-    },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Idiomas compatíveis",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "Espanhol",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "Inglês",
-      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Obrigado pelo seu interesse, mas não podemos oferecer uma vaga no momento.",

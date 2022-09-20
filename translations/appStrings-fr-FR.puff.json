@@ -1412,29 +1412,33 @@
       "value" : "(ou plus tôt !)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/h",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
-    "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "heures/semaine",
-      "note" : "Text for the schedule card hours per week text"
-    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus :",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Langues prises en charge",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "Date de début",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "Espagnol",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "Quart de travail",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "Anglais",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Taux de rémunération",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Heures",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Durée",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Lieu",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Merci de l’intérêt que vous portez à Amazon. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",

@@ -212,6 +212,10 @@
       "value" : "Berikut adalah tawaran kontinjen untuk pekerjaan yang anda pilih.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Soalan lazim",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "Apakah tawaran bersyarat?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1412,17 +1416,25 @@
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Bahasa yang Disokong",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "Tarikh Mula",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "Bahasa Sepanyol",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "Syif",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "Bahasa Inggeris",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Kadar gaji",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Jangka masa",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Lokasi",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Terima kasih atas minat anda, tetapi kami tidak dapat menawarkan pekerjaan kepada anda pada masa ini.",

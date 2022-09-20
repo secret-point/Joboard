@@ -1412,17 +1412,29 @@
       "value" : "बोनस:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "सपोर्ट केलेल्या भाषा",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "सुरु होण्याची तारीख",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "स्पॅनिश",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "शिफ्ट",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "इंग्रजी",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "वेतन दर",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "तास",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "कालावधी",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "लोकेशन",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "तुमच्या स्वारस्याबद्दल धन्यवाद, परंतु आम्ही यावेळी तुम्हाला नोकरी देऊ शकत नाही.",

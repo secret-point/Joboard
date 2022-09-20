@@ -212,6 +212,10 @@
       "value" : "Esta é a eventual oferta para o emprego que escolheu.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Perguntas comuns",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "O que é uma oferta contingente?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1412,29 +1416,33 @@
       "value" : "(ou mais cedo!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/h",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
-    "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "h/sem.",
-      "note" : "Text for the schedule card hours per week text"
-    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bónus:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Idiomas suportados",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "Data de início",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "Espanhol",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "Inglês",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Salário",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Horas",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Duração",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Localização",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Agradecemos o seu interesse, mas não podemos oferecer-lhe um emprego de momento.",

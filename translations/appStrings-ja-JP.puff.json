@@ -212,6 +212,10 @@
       "value" : "こちらが選んだ仕事の条件付き求人です。",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "よくある質問",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "条件付きオファーとは何ですか？",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "適用法で認められているように、お客様の求人は、必要な身元調査、薬物スクリーニング（該当する場合）、および再雇用適格性チェック（該当する場合）に合格することを条件としているため、次のページで雇用前の手順を完了することが重要です。状況によっては、就職前の要件が間に合わないために勤務開始日が遅れる場合があります。このような場合は、すぐにご連絡いたします。",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "シーズン限定とはどういう意味ですか?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "役職に違いはありません。この役職は11か月以内に終了する臨時の仕事であるという点が異なります。 無期雇用に興味のある方には、その機会が提供される場合もあります。 それ以外の場合は、契約期間の終了時に通知されます。",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "サインオンボーナスはどうすればもらえますか？",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "このセールには、上記の具体的な詳細に基づく$XXXXのサインオンボーナスが含まれています。開始後180日に渡り、月払いによって複数回支払われる場合があります。スケジュールを変更する必要がある場合、選択した新しい役職によっては、このセールがない場合もあります。過去90日間にAmazonで働いたことがある場合は、サインオンボーナスの対象にはなりません。",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "閉じる。",
@@ -1411,6 +1431,10 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "ボーナス:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "時間",
+      "note" : "Text for the work hours text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",

@@ -212,6 +212,10 @@
       "value" : "आपके द्वारा चुनी गई नौकरी के लिए आकस्मिक पेशकश यहां दी गई है.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "सामान्य सवाल",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "एक आकस्मिक पेशकश क्या है?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1417,24 +1421,36 @@
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "घंटे/हफ़्ते",
+      "value" : "घंटे/हफ़्ता",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "बोनस:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "समर्थित भाषाएं",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "शुरू करने की तारीख़",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "स्पैनिश",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "शिफ़्ट",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "अंग्रेज़ी",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "भुगतान दर",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "घंटे",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "अवधि",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "लोकेशन",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "आपकी दिलचस्पी के लिए धन्यवाद, लेकिन हम इस समय आपको जॉब ऑफ़र करने में असमर्थ हैं.",

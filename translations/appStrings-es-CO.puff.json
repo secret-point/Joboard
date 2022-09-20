@@ -212,6 +212,10 @@
       "value" : "Aquí está la oferta contingente para el trabajo que elegiste.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Preguntas frecuentes",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "¿Qué es una oferta contingente?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1424,17 +1428,9 @@
       "value" : "Además:",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Idiomas admitidos",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "Español",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "Inglés",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-hours" : {
+      "value" : "Horas",
+      "note" : "Text for the work hours text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Gracias por tu interés, pero no podemos ofrecerte un empleo en este momento.",

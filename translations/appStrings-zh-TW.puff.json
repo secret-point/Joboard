@@ -1384,6 +1384,18 @@
       "value" : "用戶 ID 應僅包含小寫字母，且至少包含 4 個字母。",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "我們無法驗證推薦人的登入 ID，請再試一次或重新整理頁面。",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "我們無法驗證推薦人的登入 ID，請向您的推薦人驗證並再試一次。",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "我們無法驗證推薦人的登入 ID，請透過 www.amazon.com/applicationhelp 聯絡我們以尋求協助。",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "工作機會稅收抵免問卷",
       "note" : "Text for the WOTC page title text"
@@ -1400,29 +1412,29 @@
       "value" : "(可以提前！)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/小時",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
-    "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "小時/週",
-      "note" : "Text for the schedule card hours per week text"
-    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "獎勵：",
       "note" : "Text for the schedule card bonus text"
     },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "支援的語言",
-      "note" : "Job Required Languages label text"
+    "BB-Schedule-card-start-date" : {
+      "value" : "開始日期",
+      "note" : "Text for the schedule card start date text"
     },
-    "BB-Constants-language-spanish" : {
-      "value" : "西班牙文",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-shift" : {
+      "value" : "班次",
+      "note" : "Text for the schedule card shift text"
     },
-    "BB-Constants-language-english" : {
-      "value" : "英文",
-      "note" : "Job Required Language text"
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "薪資率",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "時長",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "地點",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "感謝您的關注，但我們目前無法為您提供工作。",

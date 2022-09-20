@@ -212,6 +212,10 @@
       "value" : "Voici l’offre conditionnelle pour l’emploi que vous avez choisi.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Questions fréquentes",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "Qu'est-ce qu'une offre conditionnelle?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1400,17 +1404,13 @@
       "value" : "(ou plus tôt!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/h",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
-    "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "h/sem.",
-      "note" : "Text for the schedule card hours per week text"
-    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Prime :",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Heures",
+      "note" : "Text for the work hours text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Nous vous remercions de votre intérêt, mais nous ne sommes pas en mesure de vous proposer un emploi en ce moment.",

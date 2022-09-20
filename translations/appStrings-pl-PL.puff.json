@@ -220,6 +220,22 @@
       "value" : "Zgodnie z obowiązującym prawem Twoja oferta jest uzależniona od pomyślnego przejścia wymaganej weryfikacji przeszłości, badania na obecność narkotyków (jeśli dotyczy) i sprawdzenia kwalifikowalności do ponownego zatrudnienia (jeśli dotyczy), dlatego ważne jest, aby wykonać zamieszczone na następnej stronie kroki przed zatrudnieniem. W pewnych okolicznościach Twój pierwszy dzień pracy może się opóźnić z powodu niespełnienia na czas wymagań przed zatrudnieniem. Jeżeli tak się stanie, możesz się spodziewać, że wkrótce się z Tobą skontaktujemy.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Co oznacza sezonowy czas obowiązywania stanowiska?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Nie ma różnicy w obowiązkach związanych ze stanowiskiem pracy, różnica polega na tym, że to stanowisko ma mieć charakter tymczasowy i trwać nie dłużej niż 11 miesięcy.  Jeśli interesuje Cię dołączenie na stałe, być może powstanie taka możliwość.  W przeciwnym razie powiadomimy Cię o zakończeniu przydziału.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Jak uzyskać bonus za rejestrację?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Ta oferta obejmuje bonus za rejestrację w wysokości XXXX USD w oparciu o konkretne szczegóły wymienione powyżej. Bonus jest płatny w wielu ratach, które mogą być rozłożone na okres wynoszący nawet 180 dni po rozpoczęciu pracy. Jeśli musisz zmienić termin, ta konkretna oferta może nie być dostępna na podstawie nowo wybranego przez Ciebie stanowiska. Jeśli pracowałeś(-łaś) dla Amazon w ciągu ostatnich 90 dni, nie będziesz kwalifikować się do żadnego bonusu z tytułu rejestracji.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Zamknij.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1400,17 +1416,33 @@
       "value" : "(lub wcześniej!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/godz.",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
-    "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "godz./tydz.",
-      "note" : "Text for the schedule card hours per week text"
-    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Data rozpoczęcia",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Zmiana",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Stawka wynagrodzenia",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Godziny",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Czas trwania",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Lokalizacja",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Dziękujemy za zainteresowanie, ale w tej chwili nie jesteśmy w stanie zaoferować Ci pracy.",

@@ -53,7 +53,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
             padding={{ bottom: 'S300' }}
             onClick={handleClick}
         >
-            <Row className="scheduleCardHeader" gridGap={12} padding="S300" backgroundColor={CommonColors.Neutral10}>
+            <Row className="scheduleCardHeader" gridGap={12} padding="S300" backgroundColor={CommonColors.Blue05}>
                 <Col className="scheduleCardBannerContainer" gridGap={4}>
                     <Image
                         src={image}/>
@@ -63,7 +63,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                     }
                 </Col>
                 <Col width="auto" gridGap={10}>
-                    <Text fontSize='T200'>{externalJobTitle}</Text>
+                    <Text fontSize='T200' fontWeight="bold">{externalJobTitle}</Text>
                     <Text fontSize='T100'>{tagLine}</Text>
                 </Col>
             </Row>

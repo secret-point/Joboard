@@ -220,6 +220,22 @@
       "value" : "Zoals toegestaan door de toepasselijke wetgeving, is je aanbod afhankelijk van het succesvol doorstaan van het vereiste antecedentenonderzoek, drugsscreening (indien van toepassing) en geschiktheidscontrole voor heraanwerving (indien van toepassing), dus het is belangrijk dat je de stappen vóór indiensttreding op de volgende pagina voltooit. In bepaalde omstandigheden kan je eerste dag vertraging oplopen omdat de vereisten voor indiensttreding niet op tijd zijn voltooid. Als dit het geval is, kun je verwachten snel van ons te horen.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Wat betekent een seizoensduur?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Er is geen verschil in functie, het verschil is dat deze functie bedoeld is als tijdelijk en niet langer dan 11 maanden.  Als je geïnteresseerd bent om op permanente basis lid te worden, kan de mogelijkheid zich voordoen.  Anders krijg je een melding wanneer je opdracht eindigt.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Hoe kom ik aan de aanmeldbonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Deze aanbieding omvat een aanmeldbonus van $ XXXX op basis van de specifieke details die hierboven zijn vermeld. Het is betaalbaar in meerdere termijnen, die kunnen worden verlengd tot 180 dagen na je start. Als je een nieuwe planning moet maken, is het mogelijk dat dit specifieke aanbod niet beschikbaar is op basis van de nieuwe rol die je kiest. Als je de afgelopen 90 dagen onlangs voor Amazon hebt gewerkt, kom je niet in aanmerking voor een aanmeldbonus.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Sluiten.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1413,7 +1429,7 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "per uur",
+      "value" : "/uur",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
@@ -1423,18 +1439,6 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
-    },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "Ondersteunde talen",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "Spaans",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "Engels",
-      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",

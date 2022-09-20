@@ -19,25 +19,7 @@ exports[`ContingentOffer should match snapshot 1`] = `
       , test-firstname
       !
     </H2>
-    <Text
-      font="primary"
-      fontSize="T200"
-      hyphens="none"
-    >
-      Here is the contingent offer for the job you picked.
-    </Text>
   </Col>
-  <Row>
-    <Popover
-      position="bottom-leading"
-      shouldCloseOnFocusLeave={true}
-      shouldFocusOnOpen={false}
-      triggerButtonProps={Object {}}
-      triggerText="What is a contingent offer?"
-    >
-      <Component />
-    </Popover>
-  </Row>
   <ScheduleCard
     displayOnly={true}
     scheduleDetail={
@@ -49,16 +31,61 @@ exports[`ContingentOffer should match snapshot 1`] = `
   <Col
     className="jobDescriptionContainer"
   >
-    <H3
+    <H4
       color="neutral90"
       font="primary"
-      fontSize="T500"
+      fontSize="T400"
       fontWeight="regular"
       hyphens="none"
       margin={0}
     >
-      Job requirements
-    </H3>
+      Common questions
+    </H4>
+    <Row
+      padding={
+        Object {
+          "top": "S200",
+        }
+      }
+    >
+      <Expander
+        contentSpacing="S300"
+        shouldExpandOnMount={false}
+        titleText="What is a contingent offer?"
+      >
+        <Col
+          gridGap="S500"
+        >
+          <Text
+            font="primary"
+            fontSize="T200"
+            hyphens="none"
+          >
+            As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.
+          </Text>
+        </Col>
+      </Expander>
+    </Row>
+    <Hr
+      aria-hidden={true}
+      color="neutral10"
+      size="narrow"
+    />
+    <Col
+      padding={
+        Object {
+          "top": "S400",
+        }
+      }
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        Job requirements
+      </Text>
+    </Col>
     <Col>
       <DangerouslySetHtmlContent
         className="jobDescription"

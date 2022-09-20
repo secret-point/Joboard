@@ -220,6 +220,22 @@
       "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות להעסקה חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. אם זה המקרה, אתה יכול לצפות לשמוע מאיתנו בקרוב.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "מה המשמעות של משך הזמן העונתי?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "אין הבדל בחובות התפקיד, ההבדל הוא שתפקיד זה נועד להיות זמני ולא יותר מ-11 חודשים.  אם ברצונך להצטרף על בסיס קבוע, ייתכן שההזדמנות תהיה זמינה.  אחרת, תישלח לך הודעה כאשר המשימה שלך תסתיים.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "איך אקבל את מענק החתימה?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "הצעה זו כוללת מענק חתימה של $XXXX בהתבסס על הפרטים הספציפיים שצוינו למעלה. הוא משולם במספר תשלומים, שניתן להאריך עד 180 יום לאחר ההתחלה. אם נדרש לתזמן מחדש, ייתכן שההצעה הספציפית הזו לא תהיה זמינה בהתבסס על התפקיד החדש שנבחר על ידך. אם עבדת לאחרונה עבור Amazon ב-90 הימים האחרונים אין לך זכאות למענק חתימה.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "סגירה.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1413,28 +1429,16 @@
       "note" : "Text for the schedule card possible start date or earlier text"
     },
     "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "משאבי אנוש",
+      "value" : "/שעה",
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
-      "value" : "שעות/שבועות",
+      "value" : "שעות/שבוע",
       "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "בונוס:",
       "note" : "Text for the schedule card bonus text"
-    },
-    "BB-Schedule-card-languages-supported" : {
-      "value" : "שפות נתמכות",
-      "note" : "Job Required Languages label text"
-    },
-    "BB-Constants-language-spanish" : {
-      "value" : "ספרדית",
-      "note" : "Job Required Language text"
-    },
-    "BB-Constants-language-english" : {
-      "value" : "אנגלית",
-      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
