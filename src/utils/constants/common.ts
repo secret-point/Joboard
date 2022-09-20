@@ -466,7 +466,7 @@ export const PreviousLegalNameFormConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.previousLegalNames',
     id: 'additionalBgcPreviousLegalNames',
     type: 'text',
-    regex: NameRegexValidator,
+    regex: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
     errorMessageTranslationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text"
 }
 

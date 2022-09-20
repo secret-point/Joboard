@@ -174,18 +174,20 @@ describe('common', () => {
 
           // min length
           expect(regex.test('J')).toBe(false);
-          expect(regex.test('Jo')).toBe(true);
+          expect(regex.test('Jo')).toBe(false);
 
           // spaces
-          expect(regex.test('John')).toBe(true);
+          expect(regex.test('John')).toBe(false);
           expect(regex.test('John ')).toBe(false);
           expect(regex.test(' John')).toBe(false);
           expect(regex.test('John Do')).toBe(true);
-          expect(regex.test('John  Do')).toBe(true);
+          expect(regex.test('John  Do')).toBe(false);
+          expect(regex.test('John   Do')).toBe(false);
 
           // special characters
           expect(regex.test('John!')).toBe(false);
-          expect(regex.test('John-Do')).toBe(true);
+          expect(regex.test('John-Do')).toBe(false);
+          expect(regex.test('John-Do Smith')).toBe(true);
           expect(regex.test('John! Do')).toBe(true);
           expect(regex.test('John-')).toBe(false);
           expect(regex.test('John.')).toBe(false);
@@ -193,6 +195,7 @@ describe('common', () => {
           expect(regex.test('John Dö')).toBe(true);
           expect(regex.test('Àö Do')).toBe(true);
           expect(regex.test('John Àö')).toBe(true);
+          expect(regex.test('John  Àö')).toBe(false);
 
           // correct/incorrect format
           expect(regex.test('John Do')).toBe(true);
