@@ -1496,6 +1496,10 @@
       "value" : "L’horaire que vous avez sélectionné n’est plus disponible. Veuillez sélectionner un autre horaire.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Les signatures électroniques ne correspondent pas. Veuillez utiliser le même texte pour la signature électronique à l'étape 1 et à l'étape 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "La mise à jour de la demande a échoué parce que vous avez atteint le nombre maximal de modifications apportées à votre carte d’identité nationale. Si vous vous êtes déjà inscrit(e) avec une autre adresse courriel, veuillez vous déconnecter et essayer de vous connecter avec cette même adresse courriel, en utilisant le lien « Vous avez oublié votre code PIN personnel? », si nécessaire. Si vous avez besoin d’aide, n’hésitez pas à nous contacter par courriel ou par clavardage à <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"

@@ -1384,6 +1384,18 @@
       "value" : "ব্যবহারকারী আইডিতে শুধুমাত্র ছোটহাতের অক্ষর থাকা উচিত এবং অন্তত 4 অক্ষর দীর্ঘ হওয়া উচিত।",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, অনুগ্রহ করে আবার চেষ্টা করুন বা পৃষ্ঠাটি রিফ্রেশ করুন।",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, অনুগ্রহ করে আপনার রেফারার ভেরিফাই করুন এবং আবার চেষ্টা করুন।",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, সহায়তার জন্য দয়া করে www.amazon.com/applicationhelp এ আমাদের সাথে কথা বলুন।",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "কাজের সুযোগের ট্যাক্স ক্রেডিট প্রশ্নাবলী",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "বোনাস:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "সমর্থিত ভাষাসমূহ",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "স্প্যানিশ",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ইংরেজি",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "আপনার আগ্রহের জন্য আপনাকে ধন্যবাদ, কিন্তু আমরা এই মুহূর্তে আপনাকে চাকরি দিতে অক্ষম।",

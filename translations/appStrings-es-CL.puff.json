@@ -1412,6 +1412,18 @@
       "value" : "Bono:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Idiomas compatibles",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Español",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Inglés",
+      "note" : "Job Required Language text"
+    },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Gracias por tu interés, pero en este momento no podemos ofrecerte un empleo.",
       "note" : "Text for the amazon rejects page thank you text"
@@ -1495,6 +1507,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "El horario que has seleccionado ya no está disponible, por favor selecciona otro horario.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Las firmas electrónicas no coinciden. Utiliza el mismo texto para la firma electrónica en el paso 1 y en el paso 2.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Falló la actualización de la solicitud porque has alcanzado la cantidad máxima de cambios en tu ID nacional. Si previamente te has registrado con una dirección de correo electrónico diferente, por favor cierra sesión e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu PIN personal?” si es necesario. Si necesitas ayuda, contáctanos por correo electrónico o por chat en <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",

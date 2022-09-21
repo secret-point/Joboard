@@ -1384,6 +1384,18 @@
       "value" : "De gebruikersnaam mag alleen kleine letters bevatten en moet minimaal 4 letters lang zijn.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "We konden de login-ID van je verwijzer niet valideren. Probeer het opnieuw of vernieuw de pagina.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "We konden de login-ID van je verwijzer niet valideren. Verifieer dit bij je verwijzer en probeer het opnieuw.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "We konden de inlog-ID van je verwijzer niet valideren. Neem voor hulp contact met ons op via www.amazon.com/applicationhelp.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Vragenlijst belastingkrediet voor werkmogelijkheden",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Ondersteunde talen",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spaans",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Engels",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",

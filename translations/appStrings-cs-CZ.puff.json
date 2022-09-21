@@ -1412,6 +1412,18 @@
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Podporované jazyky",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Španělština",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Angličtina",
+      "note" : "Job Required Language text"
+    },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",
       "note" : "Text for the amazon rejects page thank you text"
@@ -1495,6 +1507,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "Vámi zvolený rozvrh již není k dispozici, vyberte si prosím jiný.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Elektronické podpisy se neshodují. Použijte stejný text pro elektronický podpis v kroku 1 i 2.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Aktualizace žádosti se nezdařila, protože jste dosáhli maximálního počtu změn u svého dokladu totožnosti. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, odhlaste se a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste svůj osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
@@ -1775,6 +1791,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Zaškrtněte políčko, abyste mohli pokračovat.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Uveďte podrobnosti o odsouzení. (Platnými speciálními znaky jsou -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

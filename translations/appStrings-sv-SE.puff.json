@@ -1384,6 +1384,18 @@
       "value" : "Användar-ID bör endast innehålla små bokstäver och bör vara minst 4 bokstäver långt.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Vi kunde inte validera din hänvisares inloggnings-ID, försök igen eller uppdatera sidan.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Vi kunde inte validera din hänvisares inloggnings-ID, verifiera med din hänvisare och försök igen.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Vi kunde inte validera din hänvisares inloggnings-ID, vänligen chatta med oss på www.amazon.com/applicationhelp för att få hjälp.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Enkät för Work Opportunity Tax Credit",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Språk som stöds",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spanska",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Engelska",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Tack för ditt intresse, men vi kan inte erbjuda dig ett jobb just nu.",
@@ -1495,6 +1519,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "Schemat du har valt är inte längre tillgängligt, välj ett annat schema.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "E-signaturerna matchar inte. Använd samma text för e-signatur i steg 1 och steg 2.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Uppdatering av ansökan misslyckades eftersom du har nått det maximala antalet ändringar i ditt nationella ID. Om du tidigare har registrerat dig med en annan e-postadress, vänligen logga ut och försök logga in med den e-postadressen. Använd länken ”Glömt din personliga pinkod?” om det behövs. Om du behöver hjälp kan du kontakta oss via e-post eller chatt på <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
@@ -1775,6 +1803,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Markera rutan för att fortsätta.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Ange detaljer om domen. (Giltiga specialtecken är -! /,. () #?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL-Alabama",

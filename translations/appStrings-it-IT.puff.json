@@ -1384,6 +1384,18 @@
       "value" : "L'ID utente deve contenere solo lettere minuscole e deve essere lungo almeno 4 lettere.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, riprova o aggiorna la pagina.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, verifica con il referente e riprova.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, chatta con noi all'indirizzo www.amazon.com/applicationhelp per ricevere assistenza.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Questionario sul credito d'imposta sulle opportunità di lavoro",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Lingue supportate",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spagnolo",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Inglese",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Grazie per il tuo interesse, ma al momento non siamo in grado di offrirti un lavoro.",

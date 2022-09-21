@@ -1496,6 +1496,10 @@
       "value" : "Το πρόγραμμα που επιλέξατε δεν είναι πλέον διαθέσιμο. Επιλέξτε άλλο πρόγραμμα.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "Οι ηλεκτρονικές υπογραφές δεν ταιριάζουν. Χρησιμοποιήστε το ίδιο κείμενο για την ηλεκτρονική υπογραφή στο βήμα 1 και στο βήμα 2.",
+      "note" : "error message for update application when signatures do not match"
+    },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Η ενημέρωση της αίτησης απέτυχε επειδή έχετε συμπληρώσει τον μέγιστο αριθμό αλλαγών στην εθνική σας ταυτότητα. Εάν είχατε εγγραφεί προηγουμένως με διαφορετική διεύθυνση email, αποσυνδεθείτε και προσπαθήστε να συνδεθείτε με αυτό το email, χρησιμοποιώντας τον σύνδεσμο «Ξεχάσατε τον προσωπικό σας κωδικό;» αν χρειαστεί. Αν χρειάζεστε βοήθεια, επικοινωνήστε μαζί μας μέσω email ή συνομιλίας στο <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
       "note" : "error message for update application when number of ssn edits exceed the maximum"
@@ -1775,6 +1779,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Προσθέστε σημάδι επιλογής στο πλαίσιο για να συνεχίσετε.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Παραθέστε τα στοιχεία της καταδίκης. (Οι έγκυροι ειδικοί χαρακτήρες είναι -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL — Αλαμπάμα",

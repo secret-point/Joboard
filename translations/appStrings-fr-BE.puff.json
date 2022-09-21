@@ -1384,6 +1384,18 @@
       "value" : "L’identifiant d’utilisateur ne doit contenir que des lettres minuscules et doit comporter au moins 4 lettres.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Nous n'avons pas pu valider l'identifiant de connexion de votre parrain. Réessayez ou actualisez la page.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Nous n'avons pas pu valider l'identifiant de connexion de votre parrain. Vérifiez-le auprès de votre parrain et réessayez.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Nous n'avons pas pu valider l'identifiant de connexion de votre parrain. Contactez-nous sur www.amazon.com/applicationhelp pour obtenir de l'aide.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Questionnaire sur le crédit d’impôt pour les opportunités d’accès à l’emploi",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus :",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Langues prises en charge",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Espagnol",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Anglais",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Nous vous remercions de votre intérêt. Malheureusement, nous ne sommes pas en mesure de vous proposer un emploi pour le moment.",

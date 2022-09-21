@@ -1384,6 +1384,18 @@
       "value" : "ഉപയോക്തൃ ID-യിൽ ചെറിയ അക്ഷരങ്ങൾ മാത്രം അടങ്ങിയിരിക്കണം കൂടാതെ കുറഞ്ഞത് 4 അക്ഷരങ്ങളെങ്കിലും ദൈര്‍ഘ്യമുണ്ടായിരിക്കണം.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാനായില്ല, ദയവായി വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ പേജ് റീഫ്രഷ് ചെയ്യുക.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി നിങ്ങളുടെ റഫററുമായിപരിശോധിച്ചുറപ്പിച്ച് വീണ്ടും ശ്രമിക്കുക.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി സഹായത്തിന് www.amazon.com/applicationhelp എന്നതിൽ ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "വർക്ക് ഓപ്പർച്യുണിറ്റി ടാക്സ് ക്രെഡിറ്റ് ചോദ്യാവലി",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "ബോണസ്:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "പിന്തുണയ്ക്കുന്ന ഭാഷകൾ",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "സ്പാനിഷ്",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ഇംഗ്ലീഷ്",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "നിങ്ങളുടെ താൽപ്പര്യത്തിന് നന്ദി, എന്നാൽ ഇപ്പോൾ നിങ്ങൾക്ക് ഒരു ജോലി വാഗ്ദാനം ചെയ്യാൻ ഞങ്ങൾക്ക് കഴിയില്ല.",

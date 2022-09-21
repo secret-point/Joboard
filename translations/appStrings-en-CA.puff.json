@@ -1384,6 +1384,18 @@
       "value" : "User ID should contain only lower case letters and should be at least 4 letters long.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "We couldn't validate your referrer's login ID, please try again or refresh the page.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "We couldn't validate your referrer's login ID, please verify with your referrer and try again.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "We couldn't validate your referrer's login ID, please chat with us at www.amazon.com/applicationhelp for assistance.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Work opportunity tax credit questionnaire",
       "note" : "Text for the WOTC page title text"
@@ -1507,6 +1519,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "The schedule you have selected is no longer available, please select another schedule.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "eSignatures do not match. Please use the same text for eSignature in step 1 and step 2.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different e-mail address, please log out and try logging in with that e-mail, using the \"Forgot your personal pin?\" link if needed. If you need help, please contact us via e-mail or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",
@@ -1787,6 +1803,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Please provide the conviction details. (Valid special characters are -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

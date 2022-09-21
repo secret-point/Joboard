@@ -1384,6 +1384,18 @@
       "value" : "זיהוי המשתמש צריך להכיל אותיות קטנות בלבד ועליו להיות באורך של לפחות 4 אותיות.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לנסות שוב או לרענן את הדף.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לאמת עם המפנה ולנסות שוב.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לשוחח איתנו בכתובת www.amazon.com/applicationhelp לקבלת סיוע.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "שאלון זיכוי המס של הזדמנויות העבודה",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "בונוס:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "שפות נתמכות",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "ספרדית",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "אנגלית",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",
@@ -1495,6 +1519,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "לוח הזמנים שבחרת אינו זמין עוד, יש לבחור לוח זמנים אחר.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "החתימות האלקטרוניות אינן תואמות. יש להשתמש באותו טקסט עבור החתימה האלקטרונית בשלב 1 ובשלב 2.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "העדכון להגשת המועמדות נכשל מכיוון שהגעת למספר המרבי של שינויים בתעודת הזהות הלאומית שלך. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש להתנתק ולנסות להיכנס באמצעות דואר אלקטרוני זה, באמצעות \"שכחת את קוד הזיהוי האישי שלך?\" קישור במידת הצורך. אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>.",

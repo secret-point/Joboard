@@ -1384,6 +1384,18 @@
       "value" : "Bruger-id skal kun indeholde små bogstaver og skal være på mindst 4 bogstaver.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Vi kunne ikke validere dit henvisnings login-ID, prøv venligst igen, eller opdater siden.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Vi kunne ikke validere dit henvisnings login-ID, bekræft venligst med din henviser, og prøv igen.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Vi kunne ikke validere dit henvisnings login-ID. Chat venligst med os på www.amazon.com/applicationhelp, for at få hjælp.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Spørgeskema til skattefradrag for arbejdsmuligheder",
       "note" : "Text for the WOTC page title text"
@@ -1411,6 +1423,18 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Understøttede sprog",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spansk",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Engelsk",
+      "note" : "Job Required Language text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Tak for din interesse, men vi kan ikke tilbyde dig et job på nuværende tidspunkt.",

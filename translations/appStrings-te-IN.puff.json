@@ -1384,6 +1384,18 @@
       "value" : "వినియోగదారు IDలో చిన్న అక్షరాలు మాత్రమే ఉండాలి మరియు కనీసం 4 అక్షరాల పొడవు ఉండాలి.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "మీ రిఫరర్ లాగిన్ IDని మేము ధృవీకరించలేకపోయాము, దయచేసి మళ్ళీ ప్రయత్నించండి లేదా పేజీని రిఫ్రెష్ చేయండి.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి మీ రెఫరర్‌తో ధృవీకరించి, మళ్లీ ప్రయత్నించండి.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి సహాయం కోసం www.amazon.com/applicationhelpలో మాతో చాట్ చేయండి.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "పని అవకాశం పన్ను క్రెడిట్ ప్రశ్నాపత్రం",
       "note" : "Text for the WOTC page title text"

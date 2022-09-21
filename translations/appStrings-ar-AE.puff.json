@@ -1384,6 +1384,18 @@
       "value" : "يجب أن يحتوي معرّف المستخدم على أحرف صغيرة فقط ويجب أن يكون طوله 4 أحرف على الأقل.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى المحاولة مرة أخرى أو تحديث الصفحة.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى التحقق من ذلك مع المُحيل الخاص بك ثم المحاولة مرة أخرى.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى الدردشة معنا على www.amazon.com/applicationhelp للحصول على المساعدة.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "استبيان الائتمان الضريبي لفرص العمل",
       "note" : "Text for the WOTC page title text"

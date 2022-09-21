@@ -1412,6 +1412,18 @@
       "value" : "बोनस:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "सपोर्ट केलेल्या भाषा",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "स्पॅनिश",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "इंग्रजी",
+      "note" : "Job Required Language text"
+    },
     "BB-amazon-rejects-thank-you" : {
       "value" : "तुमच्या स्वारस्याबद्दल धन्यवाद, परंतु आम्ही यावेळी तुम्हाला नोकरी देऊ शकत नाही.",
       "note" : "Text for the amazon rejects page thank you text"
@@ -1495,6 +1507,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "तुम्ही निवडलेले शेड्यूल यापुढे उपलब्ध नाही, कृपया दुसरे शेड्यूल निवडा.",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "eSignatures जुळत नाही. कृपया पायरी 1 आणि पायरी 2 मधील eSignature साठी समान मजकूर वापरा.",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "अर्जाचे अपडेट अयशस्वी झाले कारण तुम्ही तुमच्या राष्ट्रीय आयडीमधील बदलांची कमाल संख्या गाठली आहे. तुम्ही याआधी वेगळ्या ईमेल पत्त्यासह साइन अप केले असल्यास, कृपया लॉगआउट करा आणि आवश्यक असल्यास \"तुमचा वैयक्तिक पिन विसरलात?\" लिंक वापरून त्या ईमेलसह लॉग इन करण्याचा प्रयत्न करा. तुम्हाला मदत हवी असल्यास, कृपया ईमेलद्वारे आमच्याशी संपर्क साधा किंवा <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> येथे चॅट करा.",
@@ -1775,6 +1791,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "कृपया पुढे जाण्यासाठी बॉक्स तपासा.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "कृपया खात्री तपशील प्रदान करा. (वैध विशेष वर्ण आहेत -!/,.()#?)",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- अलाबामा",

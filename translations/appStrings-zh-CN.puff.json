@@ -1384,6 +1384,18 @@
       "value" : "用户 ID 应仅包含小写字母，且长度应至少为 4 个字母。",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "我们无法验证您推荐人的登录ID，请重试或刷新页面。",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "我们无法验证您推荐人的登录ID，请与您的推荐人核实，然后重试。",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "我们无法验证您推荐人的登录ID，请通过www.amazon.com/applicationhelp与我们交谈寻求帮助。",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "工作机会税额减免问卷",
       "note" : "Text for the WOTC page title text"
@@ -1495,6 +1507,10 @@
     "BB-update-application-error-message-selected-schedule-not-available" : {
       "value" : "您选择的时间段已经约满，请选择其他时间。",
       "note" : "error message for update application when selected schedule is not available"
+    },
+    "BB-update-application-error-message-mismatch-signatures-fix" : {
+      "value" : "电子签名不匹配。请在步骤 1 和步骤 2 中为电子签名使用相同的文本。",
+      "note" : "error message for update application when signatures do not match"
     },
     "BB-update-application-error-message-max-ssn-edits" : {
       "value" : "更新申请失败，因为您更改身份证件的次数已经达到上限。如果您之前使用其他电子邮件地址注册过，请注销，然后尝试使用该电子邮件登录，如果需要，可以使用“忘记个人 PIN 码？”链接。如果您需要帮助，请发邮件给我们或通过 <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a> 发起实时聊天。",
