@@ -1,4 +1,4 @@
-import { Application, Candidate, Job, NHETimeSlot, Schedule } from "../types/common";
+import { AxiosError } from "axios";
 import {
     CREATE_APPLICATION_ERROR_CODE,
     GET_APPLICATION_ERROR_CODE,
@@ -10,6 +10,7 @@ import {
     UPDATE_WOTC_STATUS_ERROR_CODE,
     VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
 } from "../enums/common";
+import { Application, Candidate, Job, NHETimeSlot, Schedule } from "../types/common";
 
 export interface CreateApplicationResponse {
     data: Application;
@@ -40,6 +41,9 @@ export interface ProxyApiError {
     errorMessage?: string;
 }
 
+export interface ApiError extends ProxyApiError, AxiosError {
+}
+
 export interface GetJobInfoResponse {
     data: Job;
     error: string;
@@ -67,7 +71,7 @@ export interface GetNheTimeSlotsDsResponse {
 }
 
 export interface GetScheduleDetailResponse {
-    data: Schedule,
+    data: Schedule;
     error: string;
     errorCode: GET_SCHEDULE_DETAIL_ERROR_CODE;
 }

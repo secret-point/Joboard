@@ -1,4 +1,66 @@
 import React from "react";
+import "moment/locale/es";
+import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import Cookies from "js-cookie";
+import { isArray, isBoolean } from "lodash";
+import capitalize from "lodash/capitalize";
+import get from "lodash/get";
+import isEmpty from "lodash/isEmpty";
+import isNil from "lodash/isNil";
+import pick from "lodash/pick";
+import range from "lodash/range";
+import set from "lodash/set";
+import moment from "moment";
+import queryString from "query-string";
+import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
+import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
+import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
+import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
+import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
+import {
+    boundGetScheduleListByJobId,
+    boundUpdateScheduleFilters
+} from "../actions/ScheduleActions/boundScheduleActions";
+import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
+import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
+import { PAGE_ROUTES } from "../components/pageRoutes";
+import { CS_DOMAIN_LIST } from "../constants";
+import { METRIC_NAME } from "../constants/adobe-analytics";
+import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
+import { initScheduleState } from "../reducers/bgc.reducer";
+import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
+import store, { history } from "../store/store";
+import { ApiError } from "./api/types";
+import {
+    GetScheduleListByJobIdRequest,
+    SelectedScheduleForUpdateApplication,
+    UpdateApplicationRequestDS
+} from "./apiTypes";
+import {
+    AdditionalBGCFormConfig,
+    CountrySelectOptions,
+    HVH_LOCALE,
+    IdNumberBgcFormConfig,
+    initScheduleStateFilters,
+    NameRegexValidator,
+    newBBUIPathName,
+    UserIdValidator,
+    ValueToI18nKeyMap
+} from "./constants/common";
+import {
+    BGC_STEPS,
+    BGC_VENDOR_TYPE,
+    DAYS_OF_WEEK,
+    FCRA_DISCLOSURE_TYPE,
+    FEATURE_FLAG,
+    INFO_CARD_STEP_STATUS,
+    QUERY_PARAMETER_NAME,
+    SELF_IDENTIFICATION_STEPS,
+    UPDATE_APPLICATION_API_TYPE
+} from "./enums/common";
+import { translate, translate as t } from "./translator";
 import {
     AdditionalBackgroundInfoRequest,
     Address,
@@ -30,67 +92,6 @@ import {
     SelfIdEqualOpportunityStatus,
     TimeRangeHoursData
 } from "./types/common";
-import store, { history } from "../store/store";
-import Cookies from "js-cookie";
-import {
-    AdditionalBGCFormConfig,
-    CountrySelectOptions,
-    HVH_LOCALE,
-    IdNumberBgcFormConfig,
-    initScheduleStateFilters,
-    NameRegexValidator,
-    newBBUIPathName,
-    UserIdValidator,
-    ValueToI18nKeyMap
-} from "./constants/common";
-import range from "lodash/range";
-import moment from "moment";
-import "moment/locale/es";
-import {
-    GetScheduleListByJobIdRequest,
-    SelectedScheduleForUpdateApplication,
-    UpdateApplicationRequestDS
-} from "./apiTypes";
-import {
-    boundGetScheduleListByJobId,
-    boundUpdateScheduleFilters
-} from "../actions/ScheduleActions/boundScheduleActions";
-import {
-    BGC_STEPS,
-    BGC_VENDOR_TYPE,
-    DAYS_OF_WEEK,
-    FCRA_DISCLOSURE_TYPE,
-    FEATURE_FLAG,
-    INFO_CARD_STEP_STATUS,
-    QUERY_PARAMETER_NAME,
-    SELF_IDENTIFICATION_STEPS,
-    UPDATE_APPLICATION_API_TYPE
-} from "./enums/common";
-import capitalize from "lodash/capitalize";
-import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
-import { PAGE_ROUTES } from "../components/pageRoutes";
-import queryString from "query-string";
-import { isArray, isBoolean } from "lodash";
-import { CS_DOMAIN_LIST } from "../constants";
-import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
-import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
-import isEmpty from "lodash/isEmpty";
-import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
-import get from "lodash/get";
-import set from "lodash/set";
-import pick from "lodash/pick";
-import { initScheduleState } from "../reducers/bgc.reducer";
-import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
-import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
-import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
-import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
-import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
-import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
-import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
-import { translate, translate as t } from "./translator";
-import isNil from "lodash/isNil";
-import { METRIC_NAME } from "../constants/adobe-analytics";
-import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
 
 const {
     BACKGROUND_CHECK,
@@ -105,7 +106,7 @@ export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
         //get current query params and append new query parameters
         //If new parameter has same value as existing one, it will update its value
-        let newQueryParam: string = '';
+        let newQueryParam = '';
         let currentQueryParams = parseSearchParamFromHash(window.location.hash);
 
         //Allow to receive an array of query parameters at once
@@ -135,16 +136,16 @@ export const parseSearchParamFromHash = ( hashURL: string ): { [key: string]: st
 
     return url.split('&')
         .reduce(( result: { [key: string]: string }, param ) => {
-            let [key, value] = param.split("=");
+            const [key, value] = param.split("=");
             result[key] = decodeURIComponent(value);
             return result;
         }, {});
 };
 
 export const parseObjectToQueryString = ( obj: { [key: string]: any } ): string => {
-    let str = [];
+    const str = [];
 
-    for(let p in obj)
+    for(const p in obj)
         if(obj.hasOwnProperty(p)) {
             let value;
             value = typeof obj[p] === 'object' ? JSON.stringify(obj[p]) : obj[p];
@@ -331,11 +332,11 @@ export const checkIfIsLegacy = () => {
     return isLegacy;
 }
 
-export const checkIfIsCSRequest = (override? : boolean) => {
+export const checkIfIsCSRequest = (override?: boolean) => {
     if(isBoolean(override)){
         return override
     }
-    const origin = window.location.origin;
+    const { origin } = window.location;
     const isCSRequest = CS_DOMAIN_LIST.includes(origin);
     return isCSRequest;
 }
@@ -474,8 +475,8 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
 }
 
 export const verifyBasicInfo =
-    (candidate: CandidatePatchRequest, formError: CandidateInfoErrorState, formConfig: FormInputItem[]): {hasError: boolean, formError: CandidateInfoErrorState} => {
-        let hasError: boolean = false;
+    (candidate: CandidatePatchRequest, formError: CandidateInfoErrorState, formConfig: FormInputItem[]): {hasError: boolean; formError: CandidateInfoErrorState} => {
+        let hasError = false;
 
         formConfig
             .forEach(itemConfig => {
@@ -574,7 +575,7 @@ export const isDOBOverEighteen = (dateOfBirth: string) => {
     const day = date.getDate() + 1;
 
     const now = parseInt(new Date().toISOString().slice(0, 10).replace(/-/g, ''));
-    var dob = year * 10000 + month * 100 + day * 1; // Coerces strings to integers
+    const dob = year * 10000 + month * 100 + day * 1; // Coerces strings to integers
 
     return now - dob > 180000;
 }
@@ -805,7 +806,7 @@ export const loadingStatusHelper = () =>{
 }
 
 export const fetchNheTimeSlotDs = (schedule: Schedule) => {
-    let siteId = schedule.siteId;
+    let { siteId } = schedule;
     if(siteId.startsWith("SITE-")){
         siteId = siteId.replace("SITE-", "");
     }
@@ -849,7 +850,7 @@ export const  handleConfirmNHESelection = (applicationData: Application, nheTime
         boundUpdateApplicationDS(request, (applicationData: Application)=>{
             onCompleteTaskHelper(applicationData);
         });
-        postAdobeMetrics({name: METRIC_NAME.SELECT_NHE, values: {
+        postAdobeMetrics({ name: METRIC_NAME.SELECT_NHE, values: {
             NHE: {
                 apptID: nheTimeSlot.timeSlotId,
                 date: nheTimeSlot.dateWithoutFormat,
@@ -926,7 +927,7 @@ export const handleUpdateSelfIdStep =
   };
 
 export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo ) => {
-    const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse} = selfIdentificationInfo;
+    const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse } = selfIdentificationInfo;
 
     const isEqualOpportunityCompleted = !!gender && !!ethnicity;
     const isDisabilityCompleted = !!disability;
@@ -935,7 +936,7 @@ export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: Se
     const { EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM } = SELF_IDENTIFICATION_STEPS;
     const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
 
-    let stepConfig: SelfIdentificationConfig = { ...initSelfIdentificationState.stepConfig}
+    let stepConfig: SelfIdentificationConfig = { ...initSelfIdentificationState.stepConfig }
 
     if(isEqualOpportunityCompleted) {
         stepConfig = {
@@ -1003,7 +1004,7 @@ export interface DateFormatOption {
     displayFormat?: string;
     defaultDateFormat?: string;
     locale?: Locale;
-};
+}
 
 export const capitalizeAndReformat = (str: string): string => {
     return str ? str.replace(/(^\w|\s\w)/g, (c) => c.toUpperCase()).replace(/º/, "") : "";
@@ -1028,7 +1029,7 @@ export const goToCandidateDashboard = () => {
     const state = store.getState();
 
     if (state) {
-        const appConfig = state.appConfig;
+        const { appConfig } = state;
         const envConfig = appConfig?.results?.envConfig;
 
         const isCandidateDashboardEnabled = envConfig?.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
@@ -1048,7 +1049,7 @@ export const goToCandidateDashboard = () => {
 export const redirectToASHChecklist = (applicationId: string, jobId: string, requisitionId: string) => {
     const state = store.getState();
 
-    const appConfig = state.appConfig;
+    const { appConfig } = state;
     const envConfig = appConfig?.results?.envConfig;
 
     if (envConfig) {
@@ -1065,7 +1066,7 @@ export const redirectToASHChecklist = (applicationId: string, jobId: string, req
   };
 
 export const showCounterBanner = (): boolean => {
-    const hash = window.location.hash;
+    const { hash } = window.location;
     return hash.includes(CONTINGENT_OFFER) || hash.includes(BACKGROUND_CHECK) || hash.includes(NHE) || hash.includes(SELF_IDENTIFICATION) ||
       hash.includes(REVIEW_SUBMIT);
 }
@@ -1084,7 +1085,7 @@ export const processAssessmentUrl = (assessmentUrl: string, applicationId: strin
 export const onAssessmentStart =  (assessmentUrl: string, applicationData: Application, jobDetail: Job) => {
     const assessmentRedirectUrl = processAssessmentUrl(assessmentUrl, applicationData.applicationId, jobDetail.jobId);
     if (assessmentRedirectUrl) {
-        postAdobeMetrics({name: METRIC_NAME.ASSESSMENT_START});
+        postAdobeMetrics({ name: METRIC_NAME.ASSESSMENT_START });
         window.location.assign(assessmentRedirectUrl);
     }
 }
@@ -1110,7 +1111,7 @@ export const isI18nSelectOption = (option: any) => {
 }
 
 export const isNewBBuiPath = (pathName: string, newBBUIPathName: newBBUIPathName): boolean => {
-    const href = window.location.href;
+    const { href } = window.location;
     const hashPath = window.location.hash.split('?')[0];
     const pageName = hashPath ? hashPath.replace("#/", "") : '';
 
@@ -1245,9 +1246,9 @@ export const showErrorMessage = (errorMessage: ErrorMessage, isDismissible?: boo
 };
 
 export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
-    const parsedQueryParams = {...queryParams};
+    const parsedQueryParams = { ...queryParams };
     Object.keys(parsedQueryParams).forEach((key: string) => {
-        let item = parsedQueryParams[key];
+        const item = parsedQueryParams[key];
         if( isArray(item) && item.length > 0){
             parsedQueryParams[key] = item[0];
         }
@@ -1258,4 +1259,22 @@ export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
         }
     });
     return parsedQueryParams;
-}
+};
+
+export const formatLoggedApiError = (error: ApiError) => {
+    if (error?.isAxiosError) {
+      const { config, code, errorCode, errorMessage, message, request, response } = error;
+
+      return {
+        config,
+        code,
+        errorCode,
+        errorMessage,
+        message,
+        request,
+        response
+      };
+    }
+
+    return error;
+  };

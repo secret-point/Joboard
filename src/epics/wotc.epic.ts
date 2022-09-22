@@ -6,9 +6,9 @@ import { UpdateWotcStatusAction, WOTC_ACTION_TYPES } from "../actions/WotcAction
 import { log, LoggerType } from "../helpers/log-helper";
 import CandidateApplicationService from "../services/candidate-application-service";
 import { UpdateApplicationErrorMessage, UpdateWotcStatusErrorMessages } from "../utils/api/errorMessages";
-import { UpdateWotcStatusResponse } from "../utils/api/types";
+import { ApiError, UpdateWotcStatusResponse } from "../utils/api/types";
 import { UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { setEpicApiCallErrorMessage } from "../utils/helper";
+import { formatLoggedApiError, setEpicApiCallErrorMessage } from "../utils/helper";
 import { epicSwitchMapHelper } from "./helper";
 
 export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
@@ -29,8 +29,8 @@ export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
 
             return actionUpdateWotcStatusSuccess(response.data);
           }),
-          catchError((error: any) => {
-            log(`[Epic] UpdateWotcStatusEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+          catchError((error: ApiError) => {
+            log(`[Epic] UpdateWotcStatusEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
             if(action.onError){
               action.onError(error);

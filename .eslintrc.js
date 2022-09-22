@@ -69,7 +69,7 @@ module.exports = {
         'allowSingleExtends': true
       }
     ],
-    '@typescript-eslint/no-unused-vars': ['error', {
+    '@typescript-eslint/no-unused-vars': ['warn', {
       'ignoreRestSiblings': true
     }],
     'prefer-destructuring': ['warn', {

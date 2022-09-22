@@ -7,9 +7,9 @@ import { PAGE_ROUTES } from "../components/pageRoutes";
 import { log, LoggerType } from "../helpers/log-helper";
 import RequisitionService from "../services/requisition-service";
 import { GetTimeSlotsErrorMessages, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
-import { GetNheTimeSlotsDsResponse, ProxyApiError } from "../utils/api/types";
+import { ApiError, GetNheTimeSlotsDsResponse } from "../utils/api/types";
 import { UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
+import { formatLoggedApiError, routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
 import { epicSwitchMapHelper } from "./helper";
 
 export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
@@ -30,8 +30,8 @@ export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
 
             return actionGetNheTimeSlotsDsSuccess(response.data);
           }),
-          catchError((error: ProxyApiError) => {
-            log(`[Epic] GetNheTimeSlotsDs error: ${error?.errorCode}`, error, LoggerType.ERROR);
+          catchError((error: ApiError) => {
+            log(`[Epic] GetNheTimeSlotsDs error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
             const errorMessage = GetTimeSlotsErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
             setEpicApiCallErrorMessage(errorMessage);

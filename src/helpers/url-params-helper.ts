@@ -15,8 +15,8 @@ export default class URLParamsHelper {
     const state = store.getState();
 
     this.requisitionId = requisitionId || "";
-    this.jobId = jobId || state.job?.results?.jobId || "";
-    this.applicationId = applicationId || state.application?.results?.applicationId || "";
+    this.jobId = state.job?.results?.jobId || jobId || "";
+    this.applicationId = state.application?.results?.applicationId || applicationId || "";
     this.page = page || "";
     this.location = window.location.href || "";
   }

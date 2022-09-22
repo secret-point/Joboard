@@ -6,9 +6,9 @@ import { GET_JOB_DETAIL_TYPE, GetJobDetailAction } from "../actions/JobActions/j
 import { log, LoggerType } from "../helpers/log-helper";
 import JobService from "../services/job-service";
 import { GetJobInfoErrorMessages, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
-import { GetJobInfoResponse, ProxyApiError } from "../utils/api/types";
+import { ApiError, GetJobInfoResponse } from "../utils/api/types";
 import { UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { setEpicApiCallErrorMessage } from "../utils/helper";
+import { formatLoggedApiError, setEpicApiCallErrorMessage } from "../utils/helper";
 import { epicSwitchMapHelper } from "./helper";
 
 export const JobEpic = (action$: Observable<any>) => {
@@ -30,8 +30,8 @@ export const JobEpic = (action$: Observable<any>) => {
 
             return actionGetJobDetailSuccess(jobData);
           }),
-          catchError((error: ProxyApiError) => {
-            log(`[Epic] JobEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+          catchError((error: ApiError) => {
+            log(`[Epic] JobEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
             if(action.onError) {
               action.onError();

@@ -1,5 +1,4 @@
 import { combineEpics } from "redux-observable";
-import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
 import {
     CreateApplicationAndSkipScheduleDSEpic,
     CreateApplicationDSEpic,
@@ -8,9 +7,10 @@ import {
     UpdateApplicationDSEpic,
     UpdateWorkflowStepNameEpic
 } from "./application.epic";
-import { JobEpic } from "./job.epic";
 import { GetCandidateInfoEpic } from "./candidate.epic";
+import { JobEpic } from "./job.epic";
 import { GetNheTimeSlotsDs } from "./nhe.epic";
+import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
 import { UpdateWotcStatusEpic } from "./wotc.epic";
 import { ValidateAmazonLoginIDEpic } from "./thank-you.epic";
 

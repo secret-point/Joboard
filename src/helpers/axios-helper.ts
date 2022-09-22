@@ -1,5 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import isNull from "lodash/isNull";
+import { ApiError } from "../utils/api/types";
 import { BB_UI_VERSION } from "../utils/enums/common";
 import { log, LoggerType } from "./log-helper";
 import { pathByDomain, redirectToLoginCSDS } from "./utils";
@@ -67,7 +68,7 @@ export const errorHandler = (error: AxiosError) => {
     // it's only used in logging to differentiate with the normal proxy error for now
     errorCode: error.response?.data?.errorCode || "API_ERROR",
     errorMessage: error.response?.data?.errorMessage || error.message,
-  });
+  } as ApiError);
 };
 
 export const successHandler = (response: AxiosResponse) => {

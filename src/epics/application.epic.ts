@@ -45,9 +45,9 @@ import {
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
 import {
+  ApiError,
   CreateApplicationResponse,
   GetApplicationResponse,
-  ProxyApiError,
   UpdateApplicationResponse,
   UpdateWorkflowNameResponse
 } from "../utils/api/types";
@@ -62,6 +62,7 @@ import {
 } from "../utils/enums/common";
 import {
   createUpdateApplicationRequest,
+  formatLoggedApiError,
   getCurrentStepNameFromHash,
   routeToAppPageWithPath,
   sanitizeApplicationData,
@@ -90,8 +91,8 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
                       }
                         return actionGetApplicationSuccess(application);
                     }),
-                    catchError(( error: ProxyApiError ) => {
-                      log(`[Epic] GetApplicationEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+                    catchError(( error: ApiError ) => {
+                      log(`[Epic] GetApplicationEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
                       if(action.onError){
                         action.onError(error);
@@ -159,8 +160,8 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
                         }
                         return actionCreateApplicationDSSuccess(application);
                     }),
-                  catchError(( error: ProxyApiError ) => {
-                    log(`[Epic] CreateApplicationDSEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+                  catchError(( error: ApiError ) => {
+                    log(`[Epic] CreateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
                     if(action.onError){
                       action.onError(error);
@@ -201,8 +202,8 @@ export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
 
                         return actionUpdateApplicationDSSuccess(application);
                     }),
-                  catchError(( error: ProxyApiError ) => {
-                    log(`[Epic] UpdateApplicationDSEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+                  catchError(( error: ApiError ) => {
+                    log(`[Epic] UpdateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
                     if(action.onError){
                       action.onError(error);
@@ -240,8 +241,8 @@ export const UpdateWorkflowStepNameEpic = ( action$: Observable<any> ) => {
 
                         return actionUpdateWorkflowNameSuccess(application);
                     }),
-                    catchError(( error: ProxyApiError ) => {
-                      log(`[Epic] UpdateWorkflowStepNameEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+                    catchError(( error: ApiError ) => {
+                      log(`[Epic] UpdateWorkflowStepNameEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
                       if(action.onError) action.onError(error);
 
@@ -272,8 +273,8 @@ export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>)
           createApplicationAndSkipScheduleHelper(application);
           return actionCreateApplicationAndSkipScheduleDSSuccess(application);
         }),
-        catchError((error: ProxyApiError) => {
-          log(`[Epic] CreateApplicationAndSkipScheduleDSEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+        catchError((error: ApiError) => {
+          log(`[Epic] CreateApplicationAndSkipScheduleDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
           if (action.onError) {
             action.onError(error);
@@ -328,7 +329,7 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
         state.appConfig.results.envConfig
       );
     } else {
-      log(`[Epic] createApplicationAndSkipScheduleHelper error, no scheduleId`, applicationResponse, LoggerType.ERROR);
+      log(`[Epic] createApplicationAndSkipScheduleHelper error: no_scheduleId`, applicationResponse, LoggerType.ERROR);
       throw new Error("");
     }
   }, () => {

@@ -20,9 +20,9 @@ import {
   GetScheduleListErrorMessages,
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
-import { GetScheduleDetailResponse, GetScheduleListResponse } from "../utils/api/types";
+import { ApiError, GetScheduleDetailResponse, GetScheduleListResponse } from "../utils/api/types";
 import { GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE, UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
+import { formatLoggedApiError, routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
 import { Schedule } from "../utils/types/common";
 import { createProxyApiEpicError, epicSwitchMapHelper } from "./helper";
 
@@ -49,8 +49,8 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
                 map((data: Schedule[]) => {
                   return actionGetScheduleListByJobIdSuccess(data);
                 }),
-                catchError((error: any) => {
-                  log(`[Epic] GetScheduleListByJobIdEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+                catchError((error: ApiError) => {
+                  log(`[Epic] GetScheduleListByJobIdEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
                   const errorMessage = GetScheduleListErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
 
@@ -85,8 +85,8 @@ export const GetScheduleDetailEpic = (action$: Observable<any>) => {
 
             return actionGetScheduleDetailSuccess(data);
           }),
-          catchError((error: any) => {
-            log(`[Epic] GetScheduleDetailEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+          catchError((error: ApiError) => {
+            log(`[Epic] GetScheduleDetailEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
             const errorMessage = GetScheduleDetailErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);

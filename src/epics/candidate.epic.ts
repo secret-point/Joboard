@@ -9,9 +9,9 @@ import { CANDIDATE_ACTION_TYPES, GetCandidateInfoAction } from "../actions/Candi
 import { log, LoggerType } from "../helpers/log-helper";
 import CandidateApplicationService from "../services/candidate-application-service";
 import { GetCandidateErrorMessages, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
-import { GetCandidateResponse } from "../utils/api/types";
+import { ApiError, GetCandidateResponse } from "../utils/api/types";
 import { UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { setEpicApiCallErrorMessage } from "../utils/helper";
+import { formatLoggedApiError, setEpicApiCallErrorMessage } from "../utils/helper";
 import { epicSwitchMapHelper } from "./helper";
 
 export const GetCandidateInfoEpic = (action$: Observable<any>) => {
@@ -27,8 +27,8 @@ export const GetCandidateInfoEpic = (action$: Observable<any>) => {
           map((response: GetCandidateResponse) => {
             return actionGetCandidateInfoSuccess(response.data);
           }),
-          catchError((error: any) => {
-            log(`[Epic] GetCandidateInfoEpic error: ${error?.errorCode}`, error, LoggerType.ERROR);
+          catchError((error: ApiError) => {
+            log(`[Epic] GetCandidateInfoEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
             const errorMessage = GetCandidateErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);
             return of(actionGetCandidateInfoFailed(error));
