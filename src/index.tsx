@@ -24,13 +24,13 @@ import { onSFLogout } from "./actions/old/application-actions";
 import { PAGE_ROUTES } from "./components/pageRoutes";
 import DragonStoneAppUS from "./components/us/dsApp";
 import { CS_PREPROD_DOMAIN } from "./constants";
-import { initLogger } from "./helpers/log-helper";
+import { log, LoggerType } from "./helpers/log-helper";
 import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "./helpers/utils";
 import { getInitialData } from "./services";
 import StepFunctionService from "./services/step-function-service";
 import store from "./store/store";
 import { newBBUIPathName } from "./utils/constants/common";
-import { checkIfIsLegacy, isNewBBuiPath } from "./utils/helper";
+import { checkIfIsLegacy, initKatalLogger, isNewBBuiPath } from "./utils/helper";
 import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
 
 const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
@@ -65,6 +65,8 @@ getInitialData()
       pageOrder: data[1]?.pageOrder,
       countryStateConfig: data[2]
     };
+    appConfig.envConfig && initKatalLogger(appConfig.envConfig);
+
     store.dispatch(actionGetInitialAppConfigActionSuccess(appConfig));
 
     const featureList: FeatureFlagList = data[0]?.featureList;
@@ -85,6 +87,7 @@ getInitialData()
       window.parent.window.location.href = newURL;
       return;
     }
+
     // Inject CS Nav and footer when is in CS domain
     if (currentOrigin === CSDomain || "http://localhost:3000") {
       injectCsNavAndFooter(CSDomain);
@@ -142,8 +145,11 @@ getInitialData()
     if(!isNewBBFlow) {
       let appHashUrl = "";
 
+      log(`[Legacy] Calling legacy old BB UI`, { page, applicationId, queryParams }, LoggerType.WARN);
+
       if (!isNil(page)) {
         appHashUrl = `${page}`;
+        log(`[Legacy] Calling legacy old BB UI page: ${page}`, queryParams, LoggerType.WARN);
       } else {
         if (!isNil(applicationId)) {
           appHashUrl = `${RESUME_APPLICATION}`;
@@ -156,7 +162,10 @@ getInitialData()
         ? `${appHashUrl}${requestQueryString}`
         : appHashUrl;
 
-      window.location.assign(`${newBBUIPathName.US}${requestQueryString}#/${appHashUrl}`);
+      const redirectUrl = `${newBBUIPathName.US}${requestQueryString}#/${appHashUrl}`;
+      log(`[Legacy] Redirecting to new BB UI url: ${redirectUrl}`, { redirectUrl, appHashUrl, queryParams }, LoggerType.WARN);
+
+      window.location.assign(redirectUrl);
       return;
     }
 
@@ -206,11 +215,8 @@ getInitialData()
         new DeviceMetrics(initializationMetricsPublisher).publish();
         window.applicationStartTime = Date.now();
 
-        window.loggerUrl = data[0].loggerUrl;
-        window.appStage = data[0].appStage;
-        window.log = initLogger(data[0].loggerUrl, data[0].appStage, queryParams);
-        window.log.addErrorListener();
-
+        // safety check, should skip if already initialized
+        initKatalLogger(data[0]);
         window.log.info("Application load with config");
       });
     }

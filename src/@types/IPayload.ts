@@ -412,6 +412,7 @@ export interface AvailableFilter {
 
 export interface AppConfig {
   stage: string;
+  appStage: string;
   authenticationURL: string;
   dashboardUrl: string;
   stepFunctionEndpoint: string;
@@ -422,6 +423,7 @@ export interface AppConfig {
   defaultAvailableFilterDS: AvailableFilter;
   featureList?: any;
   CSDomain: string;
+  loggerUrl: string;
 }
 
 export interface PageOrder {

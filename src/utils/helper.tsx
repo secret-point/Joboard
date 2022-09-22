@@ -28,6 +28,7 @@ import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions
 import { PAGE_ROUTES } from "../components/pageRoutes";
 import { CS_DOMAIN_LIST } from "../constants";
 import { METRIC_NAME } from "../constants/adobe-analytics";
+import { initLogger } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleState } from "../reducers/bgc.reducer";
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
@@ -72,6 +73,7 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
+    EnvConfig,
     ErrorMessage,
     FeatureFlagList,
     FormInputItem,
@@ -1277,4 +1279,14 @@ export const formatLoggedApiError = (error: ApiError) => {
     }
 
     return error;
-  };
+};
+
+export const initKatalLogger = (envConfig: EnvConfig) => {
+    // Only init once
+    if (!window.log) {
+      window.loggerUrl = envConfig.loggerUrl;
+      window.appStage = envConfig.appStage;
+      window.log = initLogger(envConfig.loggerUrl, envConfig.appStage);
+      window.log.addErrorListener();
+    }
+};

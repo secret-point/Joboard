@@ -27,6 +27,7 @@ export interface AppConfig {
 
 export interface EnvConfig {
     stage: string;
+    appStage: string;
     authenticationURL: string;
     dashboardUrl: string;
     stepFunctionEndpoint: string;
@@ -37,6 +38,7 @@ export interface EnvConfig {
     defaultAvailableFilterDS: AvailableFilter;
     featureList?: FeatureFlagList;
     CSDomain: string;
+    loggerUrl: string;
 }
 
 export interface DaysHoursFilter {
