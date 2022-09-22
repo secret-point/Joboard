@@ -24,12 +24,16 @@ import { onSFLogout } from "../../actions/old/application-actions";
 import DragonStoneAppUS from "../us/dsApp";
 import { CS_PREPROD_DOMAIN } from "../../constants";
 import { initLogger } from "../../helpers/log-helper";
-import { injectCsNavAndFooter, parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
+import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
 import { getInitialData } from "../../services";
 import StepFunctionService from "../../services/step-function-service";
 import store from "../../store/store";
-import { mxNewBBUIPathName } from "../../utils/constants/common";
+import { newBBUIPathName } from "../../utils/constants/common";
 import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "../../utils/types/common";
+import { isNewBBuiPath } from "../../utils/helper";
+import { PAGE_ROUTES } from "../pageRoutes";
+
+const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
 
 declare global {
     interface Window {
@@ -121,11 +125,39 @@ getInitialData()
         }
         const agency: any = queryParams["agency"];
         const page = queryParams["page"];
+        const applicationId = queryParams["applicationId"];
         const token = queryParams["token"] as any;
         const newUrlParams = { ...queryParams };
 
         delete newUrlParams.token;
         delete newUrlParams.page;
+
+        const requestQueryString = objectToQuerystring(newUrlParams);
+
+        const isNewBBFlow = isNewBBuiPath(page, newBBUIPathName.MX);
+        //Only build new BB UI path if the entry point is different to new BB UI
+        //When a valid pageName is passed as query params. on new BB UI, we will go to that page.
+
+        if(!isNewBBFlow) {
+            let appHashUrl = "";
+
+            if (!isNil(page)) {
+                appHashUrl = `${page}`;
+            } else {
+                if (!isNil(applicationId)) {
+                    appHashUrl = `${RESUME_APPLICATION}`;
+                } else {
+                    appHashUrl = `${PRE_CONSENT}`;
+                }
+            }
+
+            appHashUrl = !isEmpty(requestQueryString)
+                ? `${appHashUrl}${requestQueryString}`
+                : appHashUrl;
+
+            window.location.assign(`${newBBUIPathName.MX}${requestQueryString}#/${appHashUrl}`);
+            return;
+        }
 
         if (!isNil(token)) {
             window.localStorage.setItem("accessToken", token);
@@ -195,11 +227,11 @@ getInitialData()
                             >
                                 <MainWithSkipLink>
                                     <Switch>
-                                        <Route path={mxNewBBUIPathName}>
+                                        <Route path={newBBUIPathName.MX}>
                                             <DragonStoneAppUS />
                                         </Route>
                                         <Route path="/" render={() => <Redirect to={{
-                                            pathname: mxNewBBUIPathName,
+                                            pathname: newBBUIPathName.MX,
                                             search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
                                         }} />} />
                                     </Switch>

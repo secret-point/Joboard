@@ -29,7 +29,7 @@ import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingl
 import { getInitialData } from "./services";
 import StepFunctionService from "./services/step-function-service";
 import store from "./store/store";
-import { usNewBBUIPathName } from "./utils/constants/common";
+import { newBBUIPathName } from "./utils/constants/common";
 import { checkIfIsLegacy, isNewBBuiPath } from "./utils/helper";
 import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
 
@@ -135,7 +135,7 @@ getInitialData()
 
     const requestQueryString = objectToQuerystring(newUrlParams);
 
-    const isNewBBFlow = isNewBBuiPath(page);
+    const isNewBBFlow = isNewBBuiPath(page, newBBUIPathName.US);
     //Only build new BB UI path if the entry point is different to new BB UI
     //When a valid pageName is passed as query params. on new BB UI, we will go to that page.
 
@@ -156,7 +156,7 @@ getInitialData()
         ? `${appHashUrl}${requestQueryString}`
         : appHashUrl;
 
-      window.location.assign(`${usNewBBUIPathName}${requestQueryString}#/${appHashUrl}`);
+      window.location.assign(`${newBBUIPathName.US}${requestQueryString}#/${appHashUrl}`);
       return;
     }
 
@@ -228,11 +228,11 @@ getInitialData()
               >
                 <MainWithSkipLink>
                   <Switch>
-                    <Route path={usNewBBUIPathName}>
+                    <Route path={newBBUIPathName.US}>
                       <DragonStoneAppUS />
                     </Route>
                     <Route path="/" render={() => <Redirect to={{
-                      pathname: usNewBBUIPathName,
+                      pathname: newBBUIPathName.US,
                       search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
                     }} />} />
                   </Switch>

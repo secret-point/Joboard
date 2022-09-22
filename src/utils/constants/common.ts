@@ -720,8 +720,10 @@ export enum BusinessLineType {
 
 export const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
-export const usNewBBUIPathName = "/application/us/";
-export const mxNewBBUIPathName = "/application/mx/";
+export enum newBBUIPathName {
+    US = "/application/us/",
+    MX = "/application/mx/"
+}
 
 //This is used for additional bgc page form validation
 export const AdditionalBGCFormConfig: FormInputItem[] = [

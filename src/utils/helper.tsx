@@ -39,8 +39,8 @@ import {
     IdNumberBgcFormConfig,
     initScheduleStateFilters,
     NameRegexValidator,
+    newBBUIPathName,
     UserIdValidator,
-    usNewBBUIPathName,
     ValueToI18nKeyMap
 } from "./constants/common";
 import range from "lodash/range";
@@ -1109,7 +1109,7 @@ export const isI18nSelectOption = (option: any) => {
     return typeof option === 'object' && option.translationKey && option.value && option.showValue;
 }
 
-export const isNewBBuiPath = (pathName: string): boolean => {
+export const isNewBBuiPath = (pathName: string, newBBUIPathName: newBBUIPathName): boolean => {
     const href = window.location.href;
     const hashPath = window.location.hash.split('?')[0];
     const pageName = hashPath ? hashPath.replace("#/", "") : '';
@@ -1118,7 +1118,7 @@ export const isNewBBuiPath = (pathName: string): boolean => {
         pathName = pageName || '';
     }
 
-    return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(usNewBBUIPathName) && href.includes(`#/${pathName}`);
+    return Object.values(PAGE_ROUTES).includes(pathName as PAGE_ROUTES) && href.includes(newBBUIPathName) && href.includes(`#/${pathName}`);
 }
 
 export const isAddressValid = (address?: Address): boolean => {
