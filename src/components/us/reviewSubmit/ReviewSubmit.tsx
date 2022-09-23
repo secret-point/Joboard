@@ -23,8 +23,8 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
-import { UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getLocale, reverseMappingTranslate, routeToAppPageWithPath } from "../../../utils/helper";
+import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
+import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getFeatureFlagValue, getLocale, reverseMappingTranslate } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
@@ -102,10 +102,15 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         scheduleId,
         scheduleDetails: JSON.stringify(scheduleDetail)
       }
-      const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
-      boundUpdateApplicationDS(request, (applicationData: Application) => {
-        onCompleteTaskHelper(applicationData);
-      });
+
+      if (getFeatureFlagValue(FEATURE_FLAG.BACKEND_HARD_RESERVE_SCHEDULE)) {
+          onCompleteTaskHelper(applicationData);
+      } else {
+        const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
+        boundUpdateApplicationDS(request, (applicationData: Application) => {
+          onCompleteTaskHelper(applicationData);
+        });
+      }
     }
   };
 
