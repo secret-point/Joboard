@@ -212,6 +212,10 @@
       "value" : "הנה ההצעה המותנית של התפקיד שבחרתם.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "שאלות נפוצות",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "מהי הצעה מותנית?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1439,6 +1443,30 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "בונוס:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "תאריך התחלה",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "משמרת",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "תעריף תשלום",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "שעות",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "משך זמן",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "מיקום",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "תודה על התעניינותך, אך איננו יכולים להציע לך עבודה בשלב זה.",

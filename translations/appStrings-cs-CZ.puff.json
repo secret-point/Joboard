@@ -1404,6 +1404,18 @@
       "value" : "ID uživatele by mělo obsahovat pouze malá písmena a mělo by být alespoň 4 písmena dlouhé.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, zkuste to prosím znovu nebo obnovte stránku.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, ověřte ho prosím se svou doporučující osobou a zkuste to znovu.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, napište nám na adrese www.amazon.com/applicationhelp a požádejte o pomoc.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Dotazník k daňovým úlevám na pracovní příležitosti",
       "note" : "Text for the WOTC page title text"

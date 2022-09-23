@@ -224,6 +224,22 @@
       "value" : "Seperti yang dibenarkan oleh undang-undang yang terpakai, tawaran anda bergantung pada kejayaan lulus semakan latar belakang yang diperlukan, pemeriksaan dadah (jika berkenaan) dan pemeriksaan kelayakan pengambilan kerja semula (jika berkenaan), jadi penting untuk anda menyelesaikan langkah-langkah pra-pekerjaan di halaman seterusnya. Dalam sesetengah keadaan, hari pertama anda mungkin ditangguhkan kerana keperluan pra-pekerjaan tidak diselesaikan tepat pada waktunya. Jika ini berlaku, anda boleh mengharapkan untuk mendengar daripada kami tidak lama lagi.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Apakah maksud jangka masa bermusim?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Tidak ada perbezaan dalam tugas pekerjaan, perbezaannya ialah peranan ini bertujuan untuk bersifat sementara dan tidak lebih dari 11 bulan.  Sekiranya anda berminat untuk menyertai secara tetap, peluang mungkin tersedia.  Jika tidak, anda akan diberitahu apabila tugasan anda akan berakhir.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Bagaimanakah cara saya mendapatkan bonus penyertaan?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak $XXXX berdasarkan butiran khusus yang dinyatakan di atas. Ia perlu dibayar melalui ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula. Jika anda perlu menjadualkan semula, tawaran khusus ini mungkin tidak tersedia berdasarkan peranan baharu yang anda pilih. Sekiranya anda baru-baru ini bekerja untuk Amazon dalam tempoh 90 hari lepas, anda tidak layak mendapat sebarang bonus penyertaan.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Tutup.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1387,6 +1403,18 @@
     "BB-ThankYou-referral-login-regex-error-text" : {
       "value" : "ID pengguna hendaklah mengandungi hanya huruf kecil dan mesti sekurang-kurangnya 4 huruf panjangnya.",
       "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Kami tidak dapat mengesahkan ID log masuk perujuk anda, sila cuba lagi atau segarkan semula halaman tersebut.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Kami tidak dapat mengesahkan ID log masuk perujuk anda, sila sahkan dengan perujuk anda dan cuba lagi.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Kami tidak dapat mengesahkan ID log masuk perujuk anda, sila bersembang dengan kami di www.amazon.com/applicationhelp untuk mendapatkan bantuan.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
     "BB-WOTC-page-title-text" : {
       "value" : "Soal selidik kredit cukai peluang kerja",

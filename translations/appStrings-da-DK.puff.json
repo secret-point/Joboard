@@ -212,6 +212,10 @@
       "value" : "Her er det betingede tilbud til det job, du valgte.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Almindelige spørgsmål",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "Hvad er et betinget tilbud?",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "Som tilladt i henhold til gældende lovgivning er dit tilbud betinget af, at du har bestået den påkrævede baggrundskontrol, narkotikascreening (hvis relevant) og genansætteleskvalificerende kontrol (hvis relevant), så det er vigtigt, at du gennemfører trinnene før ansættelse på næste side. Under nogle omstændigheder kan din første dag blive forsinket på grund af krav til forudgående ansættelse, der ikke er afsluttet i tide. Hvis dette er tilfældet, kan du forvente at høre fra os snart.",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Hvad betyder en sæsonbestemt varighed?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Der er ingen forskel i jobopgaver, forskellen er, at dette job er beregnet til at være midlertidigt og ikke længere end 11 måneder.  Hvis du er interesseret i at blive fastansat, kan muligheden blive tilgængelig.  Ellers får du besked, når din opgave slutter.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Hvordan får jeg en sign-on bonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dette tilbud inkluderer en sign-on bonus på XXXX $ baseret på de specifikke detaljer, der er nævnt ovenfor. Den betales over flere rater, der kan strække sig til 180 dage efter du starter. Hvis du er nødt til at ændre tidsplanen, kan det være, at dette specifikke tilbud ikke er tilgængeligt, afhængigt af den nye rolle, du vælger. Hvis du for nylig har arbejdet for Amazon i de sidste 90 dage, vil du ikke være kvalificeret til nogen sign-on bonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Luk.",
@@ -1412,9 +1432,41 @@
       "value" : "(eller tidligere!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/time",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "timer/uge",
+      "note" : "Text for the schedule card hours per week text"
+    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Startdato",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Vagt",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Lønsats",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Timer",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Varighed",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Placering",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Tak for din interesse, men vi kan ikke tilbyde dig et job på nuværende tidspunkt.",

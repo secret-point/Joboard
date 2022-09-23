@@ -1400,6 +1400,18 @@
       "value" : "Identyfikator użytkownika powinien zawierać tylko małe litery i składać się z co najmniej 4 liter.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Nie mogliśmy zweryfikować identyfikatora logowania osoby polecającej, spróbuj ponownie lub odśwież stronę.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Nie mogliśmy zweryfikować identyfikatora logowania osoby polecającej, zapytaj ją o poprawność identyfikatora i spróbuj ponownie.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Nie mogliśmy zweryfikować identyfikatora logowania osoby polecającej, porozmawiaj z nami pod adresem www.amazon.com/applicationhelp, aby uzyskać pomoc.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Kwestionariusz dotyczący ulgi podatkowej związanej z zatrudnieniem",
       "note" : "Text for the WOTC page title text"
@@ -1415,6 +1427,14 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(lub wcześniej!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/godz.",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "godz./tydzień",
+      "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",

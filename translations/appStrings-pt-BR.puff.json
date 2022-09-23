@@ -212,6 +212,10 @@
       "value" : "Aqui está a oferta contingente para a vaga que você escolheu.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Perguntas comuns",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "O que é uma oferta contingente?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1400,6 +1404,18 @@
       "value" : "A ID do usuário deve conter apenas letras minúsculas e deve ter pelo menos 4 letras.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Não foi possível validar a ID de login do seu referenciador. Tente novamente ou atualize a página.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Não foi possível validar a ID de login do seu referenciador. Verifique com seu referenciador e tente novamente.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Não foi possível validar a ID de login do seu referenciador. Fale conosco em www.amazon.com/applicationhelp para obter ajuda.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Questionário de crédito fiscal de oportunidade de trabalho",
       "note" : "Text for the WOTC page title text"
@@ -1427,6 +1443,30 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bônus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Data de início",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Salário",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Horas",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Duração",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Localização",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Obrigado pelo seu interesse, mas não podemos oferecer uma vaga no momento.",

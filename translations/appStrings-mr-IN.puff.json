@@ -212,6 +212,10 @@
       "value" : "तुम्ही निवडलेल्या जॉबसाठी ही काँटीन्जेन्ट ऑफर आहे.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "सामान्य प्रश्न",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "आकस्मिक ऑफर म्हणजे काय?",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "लागू असलेल्या कायद्याने परवानगी दिल्याप्रमाणे, तुमची काँटीन्जेन्ट ऑफर आवश्यक पार्श्वभूमी तपासणी, औषध तपासणी (जर लागू होत असेल) आणि रिहायर पात्रता तपासणी (जर लागू होत असेल) यशस्वीरीत्या उत्तीर्ण होण्यावर अवलंबून आहे, त्यामुळे तुम्ही पुढील पेजवरील रोजगारपूर्व स्टेप्स पूर्ण करणे महत्त्वाचे आहे. काही परिस्थितींमध्ये, रोजगारपूर्व आवश्यकता वेळेत पूर्ण न झाल्यामुळे तुमच्या पहिल्या दिवसाला उशीर होऊ शकतो. जर अशी स्थिती असेल तर तुम्ही लवकरच आमच्याकडून ऐकण्याची अपेक्षा करू शकता.",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "हंगामी कालावधी म्हणजे काय?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "नोकरीच्या कर्तव्यात कोणताही फरक नाही, फरक हा आहे की ही भूमिका तात्पुरती आहे आणि 11 महिन्यांपेक्षा जास्त नाही.  तुम्हाला कायमस्वरूपी सामील होण्यास स्वारस्य असल्यास, संधी उपलब्ध होऊ शकते.  अन्यथा, तुमची असाइनमेंट संपल्यावर तुम्हाला सूचित केले जाईल.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "मला साइन ऑन बोनस कसा मिळेल?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित $XXXX च्या साइन ऑन बोनसचा समावेश आहे. हे एकाधिक हप्त्यांवर देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत वाढू शकते. तुम्हाला पुन्हा शेड्यूल करायचे असल्यास, तुम्ही निवडलेल्या नवीन भूमिकेवर आधारित ही विशिष्ट ऑफर उपलब्ध नसेल. जर तुम्ही अलीकडेच गेल्या 90 दिवसांत Amazon साठी काम केले असेल तर तुम्ही कोणत्याही साइन ऑन बोनससाठी पात्र असणार नाही.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "बंद करा.",
@@ -1383,6 +1403,18 @@
     "BB-ThankYou-referral-login-regex-error-text" : {
       "value" : "वापरकर्ता ID मध्ये फक्त लोअर केस अक्षरे असावीत आणि तो किमान 4 अक्षरांचा असावा.",
       "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "आम्ही तुमच्या रेफररचा लॉगिन ID प्रमाणित करू शकलो नाही, कृपया पुन्हा प्रयत्न करा किंवा पेज रिफ्रेश करा.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "आम्‍ही तुमच्‍या रेफररचा लॉगिन ID प्रमाणित करू शकलो नाही, कृपया तुमच्‍या रेफररकडून सत्‍यापित करा आणि पुन्‍हा प्रयत्‍न करा.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "आम्ही तुमच्या रेफररचा लॉगिन ID प्रमाणित करू शकलो नाही, कृपया आमच्याशी www.amazon.com/applicationhelp येथे सहाय्यासाठी चॅट करा.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
     "BB-WOTC-page-title-text" : {
       "value" : "कामाची संधी कर क्रेडिट प्रश्नावली",

@@ -1404,6 +1404,18 @@
       "value" : "ユーザー ID には小文字のみを使用し、4 文字以上である必要があります。",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "リファラーのログインIDを確認できませんでした。もう一度お試しいただくか、もしくはページを再読み込みしてください。",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "リファラーのログインIDを確認できませんでした。リファラーに確認して、もう一度お試しください。",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "リファラーのログインIDを確認できませんでした。www.amazon.com/applicationhelpでチャットを通じてサポートを受けてください。",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "就労機会税額控除アンケート",
       "note" : "Text for the WOTC page title text"
@@ -1432,9 +1444,29 @@
       "value" : "ボーナス:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "開始日",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "シフト",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "給与額",
+      "note" : "Text for the pay rate text"
+    },
     "BB-Schedule-card-hours" : {
       "value" : "時間",
       "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "期間",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "場所",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "ご関心をお寄せいただきありがとうございます。しかし、現時点では求人を提供することができません。",

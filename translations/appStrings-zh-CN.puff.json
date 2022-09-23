@@ -212,6 +212,10 @@
       "value" : "以下是您所挑选职位的意向书。",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "常见问题",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "什么是临时工作机会？",
       "note" : "Text for contingent offer meaning popover title"
@@ -219,6 +223,22 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-content" : {
       "value" : "在适用法律允许的情况下，能否聘用您取决于是否成功通过所需的背景调查、药物筛查（如果适用）和重新受雇资格审查（如果适用），因此完成下一页受聘前的步骤非常重要。在某些情况下，由于受聘前所需要求未及时完成，您入职的第一天可能会延迟。如果是这种情况，我们会尽快联系您。",
       "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "季节性时长是什么意思？",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "在工作职责上并无差异，不同之处在于该职位本就是临时性的，且期限不超过 11 个月。 如果有兴趣加入固定工作的岗位，这个机会可能会有。 否则, 您会在任务终止时收到通知。",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "怎样才能获得签约奖金？",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "依据如上所述具体详情，此优惠包括$XXXX的签约奖金。可通过分期付款方式支付，偿还期限可能延长至开始后的180天。如果您必须重新排期，此特别优惠就可能无法用于您新选的职位。如果您在过去90天内为亚马逊工作过，则不符合获得签约奖金的条件。",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "关闭。",
@@ -1435,6 +1455,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "薪资",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "工时",
+      "note" : "Text for the work hours text"
     },
     "BB-Schedule-card-duration" : {
       "value" : "时长",

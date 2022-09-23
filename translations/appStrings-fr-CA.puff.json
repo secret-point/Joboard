@@ -1388,6 +1388,18 @@
       "value" : "L’identifiant de l’utilisateur doit uniquement contenir des lettres minuscules et doit avoir au moins 4 lettres.",
       "note" : "Text for the thank you page referral login input regex error text"
     },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Nous n’avons pas pu valider l’identifiant de connexion de votre référent. Veuillez réessayer ou actualiser la page.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Nous n’avons pas pu valider l’identifiant de connexion de votre référent. Veuillez vérifier auprès de votre référent et réessayer.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Nous n’avons pas pu valider l’identifiant de connexion de votre référent. Veuillez clavarder avec nous à l’adresse www.amazon.com/applicationhelp pour obtenir de l’aide.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Questionnaire relatif au crédit d’impôt pour les possibilités d’emploi",
       "note" : "Text for the WOTC page title text"

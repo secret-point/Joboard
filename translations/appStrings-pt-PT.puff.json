@@ -224,6 +224,22 @@
       "value" : "Conforme o permitido pela lei aplicável, a sua oferta depende de passar com sucesso na verificação de antecedentes, teste de deteção de drogas (se aplicável) e verificação de elegibilidade de recontratação (se aplicável), pelo que é importante que conclua as etapas de pré-contratação na próxima página. Em algumas circunstâncias, o seu primeiro dia poderá ser adiado por os requisitos de pré-contratação não terem sido concluídos a tempo. Se for esse o caso, deverá receber notícias nossas em breve.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "O que significa uma duração sazonal?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Não existem diferenças nas funções de trabalho. A diferença é que esta função é temporária e inferior a 11 meses.  Se estiver interessado em se juntar a nós de forma permanente, poderá surgir essa oportunidade.  Caso contrário, será notificado da data de término da sua função.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Como faço para obter o bónus de contratação?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bónus de contratação de XXXX $, com base nos detalhes específicos mencionados acima. Este valor é pago em prestações que poderão ser prorrogadas por até 180 dias, após o início da sua função. Se precisar de reagendar, esta oferta específica poderá não estar disponível, conforme a nova função que escolher. Se trabalhou recentemente para a Amazon, nos últimos 90 dias, não será elegível para nenhum bónus de contratação.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Fechar.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1415,6 +1431,14 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(ou mais cedo!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hora",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "horas/semana",
+      "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bónus:",

@@ -220,6 +220,22 @@
       "value" : "Όπως επιτρέπεται από την ισχύουσα νομοθεσία, η προσφορά σας εξαρτάται από την επιτυχή περάτωση του απαιτούμενου ελέγχου ιστορικού, του ελέγχου ναρκωτικών (κατά περίπτωση) και του ελέγχου καταλληλότητας για επαναπρόσληψη (κατά περίπτωση), γι' αυτό είναι σημαντικό να ολοκληρώσετε τα βήματα πριν από την πρόσληψη στην επόμενη σελίδα. Σε ορισμένες περιπτώσεις, η πρώτη σας ημέρα μπορεί να καθυστερήσει λόγω της μη έγκαιρης ολοκλήρωσης των απαιτήσεων πριν από την πρόσληψη. Σε αυτή την περίπτωση, να περιμένετε σύντομα νέα μας.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Τι σημαίνει εποχιακή διάρκεια;",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Δεν υπάρχει διαφορά στα καθήκοντα εργασίας. Η διαφορά είναι ότι ο ρόλος αυτός προορίζεται να είναι προσωρινός και όχι μεγαλύτερος από 11 μήνες.  Εάν ενδιαφέρεστε να συμμετάσχετε σε μόνιμη βάση, η ευκαιρία ενδέχεται να γίνει διαθέσιμη.  Διαφορετικά, θα ειδοποιηθείτε όταν τελειώσει η ανάθεσή σας.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Πώς μπορώ να λάβω συμμετοχή για μπόνους;",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Αυτή η προσφορά περιλαμβάνει μια συμμετοχή για μπόνους των XXXX$ με βάση τις συγκεκριμένες λεπτομέρειες που αναφέρονται παραπάνω. Είναι πληρωτέο σε πολλές δόσεις που μπορεί να φτάσουν έως και 180 ημέρες μετά την έναρξη. Εάν πρέπει να επαναπρογραμματίσετε, αυτή η συγκεκριμένη προσφορά ενδέχεται να μην είναι διαθέσιμη με βάση τον νέο ρόλο που θα επιλέξετε. Αν έχετε εργαστεί πρόσφατα για την Amazon τις τελευταίες 90 ημέρες δεν θα είστε επιλέξιμος για συμμετοχή σε μπόνους.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Κλείσιμο.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1383,6 +1399,18 @@
     "BB-ThankYou-referral-login-regex-error-text" : {
       "value" : "Το αναγνωριστικό χρήστη θα πρέπει να περιέχει μόνο πεζά γράμματα και να έχει μήκος τουλάχιστον 4 γράμματα.",
       "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-ThankYou-referral-login-error-message-internal-server-error" : {
+      "value" : "Δεν μπορέσαμε να επικυρώσουμε το αναγνωριστικό σύνδεσης του σημείου αναφοράς σας. Δοκιμάστε ξανά ή ανανεώστε τη σελίδα.",
+      "note" : "Text for the thank you page referral login validation error - server error."
+    },
+    "BB-ThankYou-referral-login-error-message-invalid-login-error" : {
+      "value" : "Δεν μπορέσαμε να επικυρώσουμε το αναγνωριστικό σύνδεσης του σημείου αναφοράς σας. Επαληθεύστε το με το σημείο αναφοράς και προσπαθήστε ξανά.",
+      "note" : "Text for the thank you page referral login validation error - referrer ID is invalid."
+    },
+    "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
+      "value" : "Δεν μπορέσαμε να επικυρώσουμε το αναγνωριστικό σύνδεσης του σημείου αναφοράς σας. Επικοινωνήστε μαζί μας στη διεύθυνση www.amazon.com/applicationhelp για βοήθεια.",
+      "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
     "BB-WOTC-page-title-text" : {
       "value" : "Ερωτηματολόγιο πίστωσης φόρου ευκαιριών εργασίας",
