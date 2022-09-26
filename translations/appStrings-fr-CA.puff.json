@@ -224,6 +224,22 @@
       "value" : "Conformément à la loi en vigueur, votre offre est conditionnée par la réussite de la vérification des antécédents, du test de dépistage de drogue (le cas échéant) et par la réussite de la vérification de l’admissibilité au réembauchage (le cas échéant). Il est donc important que vous suiviez les étapes de préalables à l’embauche à la page suivante. Dans certaines cas, votre premier jour de travail peut être retardé si les conditions de pré-embauche ne sont pas remplies à temps. Si tel est le cas, vous pouvez vous attendre à ce que nous vous contactions sous peu.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
+      "value" : "Que signifie une durée saisonnière?",
+      "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Il n'y a pas de différence dans les tâches professionnelles, la différence est que ce rôle est sensé être temporaire et ne pas dépasser 11 mois.  Si vous souhaitez rejoindre de façon permanente, l'occasion pourrait se présenter.  Sinon, vous serez informé lorsque votre affectation sera terminée.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Comment puis-je obtenir le bonus d'inscription?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend un bonus d'inscription de XXXX $ en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s'étendre jusqu'à 180 jours après le début. Si vous devez replanifier, cette offre spécifique pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d'inscription.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Fermer.",
       "note" : "Text for contingent offer meaning popover close button"
@@ -1416,13 +1432,41 @@
       "value" : "(ou plus tôt!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/heure",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "heures/semaine",
+      "note" : "Text for the schedule card hours per week text"
+    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Prime :",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Date de début",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Quart de travail",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Taux de rémunération",
+      "note" : "Text for the pay rate text"
+    },
     "BB-Schedule-card-hours" : {
       "value" : "Heures",
       "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Durée",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Emplacement",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Nous vous remercions de votre intérêt, mais nous ne sommes pas en mesure de vous proposer un emploi en ce moment.",

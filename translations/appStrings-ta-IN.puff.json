@@ -1444,6 +1444,30 @@
       "value" : "போனஸ்:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "தொடக்கத் தேதி",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "ஷிஃப்ட்",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "சம்பள விகிதம்",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "மணிநேரம்",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "கால அளவு",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "இருப்பிடம்",
+      "note" : "Text for the location of job text"
+    },
     "BB-amazon-rejects-thank-you" : {
       "value" : "உங்கள் ஆர்வத்திற்கு நன்றி, ஆனால் தற்போது எங்களால் உங்களுக்கு வேலை வழங்க முடியவில்லை.",
       "note" : "Text for the amazon rejects page thank you text"

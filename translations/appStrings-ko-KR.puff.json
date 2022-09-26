@@ -212,6 +212,10 @@
       "value" : "다음은 선택한 직무에 대한 조건부 제안입니다.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "일반적인 질문",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "조건부 오퍼란 무엇인가요?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1428,9 +1432,41 @@
       "value" : "(또는 그 이전!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/시간",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "시간/주",
+      "note" : "Text for the schedule card hours per week text"
+    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "보너스:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "시작일",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "교대 근무",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "급여",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "시간",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "근무 기간",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "위치",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "관심을 가져주셔서 감사하지만 이번에는 귀하를 채용할 수 없게 됐습니다.",

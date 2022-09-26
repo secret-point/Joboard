@@ -1432,13 +1432,41 @@
       "value" : "(أو في وقت سابق)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ ساعة",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "ساعات / الأسبوع",
+      "note" : "Text for the schedule card hours per week text"
+    },
     "BB-Schedule-card-bonus-text" : {
       "value" : "مكافأة:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "تاريخ البدء",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "مناوبة العمل",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "معدل الأجر",
+      "note" : "Text for the pay rate text"
+    },
     "BB-Schedule-card-hours" : {
       "value" : "ساعات",
       "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "المدة الزمنية",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "الموقع",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "شكرًا لك على اهتمامك، لكننا غير قادرين على تقديم وظيفة لك في هذا الوقت.",

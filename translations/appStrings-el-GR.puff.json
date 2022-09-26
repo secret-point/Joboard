@@ -212,6 +212,10 @@
       "value" : "Εδώ είναι η ενδεχόμενη προσφορά για τη δουλειά που επιλέξατε.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Συνήθεις ερωτήσεις",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "Τι είναι η προσφορά υπό αίρεση;",
       "note" : "Text for contingent offer meaning popover title"
@@ -1427,6 +1431,14 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(ή νωρίτερα!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ώρα",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-hours-per-week-text" : {
+      "value" : "ώρες/εβδομάδα",
+      "note" : "Text for the schedule card hours per week text"
     },
     "BB-Schedule-card-bonus-text" : {
       "value" : "Μπόνους:",

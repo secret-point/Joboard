@@ -212,6 +212,10 @@
       "value" : "Hier is het voorwaardelijke aanbod voor de baan die je hebt gekozen.",
       "note" : "Text for job offer picked title"
     },
+    "BB-ContingencyOffer-common-question-title-text" : {
+      "value" : "Veelgestelde vragen",
+      "note" : "Text for common question title"
+    },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-title-text" : {
       "value" : "Wat is een voorwaardelijk bod?",
       "note" : "Text for contingent offer meaning popover title"
@@ -1439,6 +1443,30 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Startdatum",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Ploeg",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Salaris",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Uur",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Duur",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Locatie",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Bedankt voor je interesse, maar we kunnen je op dit moment geen baan aanbieden.",
