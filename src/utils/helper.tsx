@@ -160,8 +160,21 @@ export const parseObjectToQueryString = ( obj: { [key: string]: any } ): string 
 export const getLocale = (): Locale => {
     const locale: string = Cookies.get(HVH_LOCALE) || '';
 
-    return locale ? locale as Locale : Locale.enUS;
+    return locale ? locale as Locale : getDefaultLocale();
 };
+
+export const getDefaultLocale = (): Locale => {
+    const countryCode = "{{Country}}" as string;
+
+    switch (countryCode){
+        case "mx":
+            return Locale.esMX
+        case "uk":
+            return Locale.enGB
+        default:
+            return Locale.enUS
+    }
+}
 
 export const parseSearchParamFromLocationSearch = (): {[key: string]: string} => {
     const searchParams = new URLSearchParams(window.location.search);
