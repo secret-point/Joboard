@@ -129,17 +129,12 @@ exports[`NonFcraDisclosure should match snapshot 1`] = `
       }
     }
   >
-    <Button
-      colorScheme="default"
-      iconPosition="leading"
+    <DebouncedButton
       onClick={[Function]}
-      shouldUseResponsiveContent={true}
-      size="default"
-      type="button"
       variant="primary"
     >
       Next
-    </Button>
+    </DebouncedButton>
   </Col>
 </Col>
 `;

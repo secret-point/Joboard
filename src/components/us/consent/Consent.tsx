@@ -29,6 +29,7 @@ import { translate as t } from "../../../utils/translator";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
     job: JobState;
@@ -152,7 +153,7 @@ export const Consent = (props: MapStateToProps) => {
                         </Button>
                     )}
                 </WithFlyout>
-                <Button
+                <DebouncedButton
                     variant={ButtonVariant.Primary}
                     style={{ width: "100%" }}
                     disabled={isCreateButtonDisabled}
@@ -174,7 +175,7 @@ export const Consent = (props: MapStateToProps) => {
                     }}
                 >
                     {t("BB-ConsentPage-create-application-button", "Create Application")}
-                </Button>
+                </DebouncedButton>
             </dl>
         </Col>
     );

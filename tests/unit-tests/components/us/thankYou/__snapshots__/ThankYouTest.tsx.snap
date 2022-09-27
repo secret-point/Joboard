@@ -99,17 +99,12 @@ exports[`ThankYou should match snapshot 1`] = `
       >
         Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.
       </Text>
-      <Button
-        colorScheme="default"
-        iconPosition="leading"
+      <DebouncedButton
         onClick={[Function]}
-        shouldUseResponsiveContent={true}
-        size="default"
-        type="button"
         variant="primary"
       >
         Let's get started
-      </Button>
+      </DebouncedButton>
     </Col>
   </Card>
   <Card

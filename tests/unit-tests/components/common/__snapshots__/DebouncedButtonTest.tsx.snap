@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DebouncedButton snapshot should match snapshot for Tertiary type 1`] = `
+<Button
+  colorScheme="default"
+  iconPosition="leading"
+  onClick={[Function]}
+  shouldUseResponsiveContent={true}
+  size="default"
+  type="button"
+  variant="tertiary"
+>
+  Test Button Tertiary
+</Button>
+`;
+
+exports[`DebouncedButton snapshot should match snapshot for primary type 1`] = `
+<Button
+  colorScheme="default"
+  iconPosition="leading"
+  onClick={[Function]}
+  shouldUseResponsiveContent={true}
+  size="default"
+  type="button"
+  variant="primary"
+>
+  Test Button Primary
+</Button>
+`;
+
+exports[`DebouncedButton snapshot should match snapshot for secondary type 1`] = `
+<Button
+  colorScheme="default"
+  iconPosition="leading"
+  shouldUseResponsiveContent={true}
+  size="default"
+  type="button"
+  variant="secondary"
+>
+  Test Button Secondary
+</Button>
+`;

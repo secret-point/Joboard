@@ -45,6 +45,7 @@ import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeAc
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import DebouncedButton from "../DebouncedButton";
 
 interface MapStateToProps {
     appConfig: AppConfig,
@@ -430,12 +431,12 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             }
             <PreviousWorkedAtAmazonForm/>
             <Col padding={{ top: 'S300', bottom: 'S300' }}>
-                <Button
+                <DebouncedButton
                     variant={ButtonVariant.Primary}
                     onClick={handleClickNext}
                 >
                     {t('BB-BGC-addition-bgc-form-next-btn','Next')}
-                </Button>
+                </DebouncedButton>
             </Col>
         </Col>
     )

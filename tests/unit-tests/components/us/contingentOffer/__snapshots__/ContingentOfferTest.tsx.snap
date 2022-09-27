@@ -129,30 +129,19 @@ exports[`ContingentOffer should match snapshot 1`] = `
       gridGap={20}
       padding="S300"
     >
-      <Button
-        colorScheme="default"
+      <DebouncedButton
         disabled={false}
-        iconPosition="leading"
         onClick={[Function]}
-        shouldUseResponsiveContent={true}
-        size="default"
-        type="button"
         variant="primary"
       >
         Accept Offer
-      </Button>
-      <Button
-        colorScheme="default"
+      </DebouncedButton>
+      <DebouncedButton
         disabled={false}
-        iconPosition="leading"
         onClick={[Function]}
-        shouldUseResponsiveContent={true}
-        size="default"
-        type="button"
-        variant="secondary"
       >
         Back to jobs
-      </Button>
+      </DebouncedButton>
     </Col>
   </Col>
 </Col>

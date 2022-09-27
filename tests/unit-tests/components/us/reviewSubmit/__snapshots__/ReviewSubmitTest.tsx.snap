@@ -256,17 +256,12 @@ exports[`ReviewSubmit should match snapshot 1`] = `
       }
     }
   >
-    <Button
-      colorScheme="default"
-      iconPosition="leading"
+    <DebouncedButton
       onClick={[Function]}
-      shouldUseResponsiveContent={true}
-      size="default"
-      type="button"
       variant="primary"
     >
       Submit application
-    </Button>
+    </DebouncedButton>
   </Col>
 </Col>
 `;

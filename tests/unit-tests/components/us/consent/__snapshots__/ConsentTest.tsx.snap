@@ -25,23 +25,18 @@ exports[`Consent should match snapshot 1`] = `
     >
       <Component />
     </WithFlyout>
-    <Button
-      colorScheme="default"
+    <DebouncedButton
       disabled={false}
-      iconPosition="leading"
       onClick={[Function]}
-      shouldUseResponsiveContent={true}
-      size="default"
       style={
         Object {
           "width": "100%",
         }
       }
-      type="button"
       variant="primary"
     >
       Create Application
-    </Button>
+    </DebouncedButton>
   </dl>
 </Col>
 `;

@@ -28,6 +28,7 @@ import { translate as t } from "../../../utils/translator";
 import { NHETimeSlot } from "../../../utils/types/common";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import StepHeader from "../../common/StepHeader";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
     job: JobState;
@@ -104,11 +105,6 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
         }
     };
 
-    const debounceConfirmNheSelect = debounce(() => {
-        log("Debouncing confirm NHE select button");
-        handleConfirmSelection();
-    }, 1000)
-
     const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || '';
     const displayLastName = candidateData?.lastName || '';
 
@@ -138,14 +134,15 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
                     }
                 </Col>
                 { selectedNhe && <Col className="nhe-sticky-button">
-                    <Button
+                    <DebouncedButton
                       variant={ButtonVariant.Primary}
                       onClick={() => {
-                        debounceConfirmNheSelect();
+                        handleConfirmSelection();
                       }}
+                      debounceTime={1000}
                     >
                         {t("BB-nhe-page-confirm-selection-button-text", "Confirm Selection")}
-                    </Button>
+                    </DebouncedButton>
                 </Col> }
             </Col>
         </Col>

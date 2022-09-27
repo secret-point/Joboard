@@ -21,6 +21,7 @@ import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import DebouncedButton from "../DebouncedButton";
 
 interface MapStateToProps {
     job: JobState,
@@ -217,12 +218,12 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                 </InputWrapper>
             </Col>
             <Col padding={{ top: 'S300', bottom: 'S300' }}>
-                <Button
+                <DebouncedButton
                     variant={ButtonVariant.Primary}
                     onClick={handleCLickNext}
                 >
                     {t("BB-BGC-non-fcra-form-page-next-button-text", "Next")}
-                </Button>
+                </DebouncedButton>
             </Col>
         </Col>
     )

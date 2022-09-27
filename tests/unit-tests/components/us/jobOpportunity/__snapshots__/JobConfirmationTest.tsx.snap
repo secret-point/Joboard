@@ -64,18 +64,13 @@ exports[`JobConfirmation should match snapshot 1`] = `
     className="selectJobButtonContainer"
     padding="S300"
   >
-    <Button
-      colorScheme="default"
+    <DebouncedButton
       disabled={false}
-      iconPosition="leading"
       onClick={[Function]}
-      shouldUseResponsiveContent={true}
-      size="default"
-      type="button"
       variant="primary"
     >
       Select this job
-    </Button>
+    </DebouncedButton>
   </Col>
 </Col>
 `;

@@ -29,6 +29,7 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -229,7 +230,10 @@ export const CaliDisclosure = (props: MapStateToProps) => {
       />
 
       {acknowledged && (
-        <Button variant={ButtonVariant.Primary} onClick={handleGoToNext}>{t("BB-cali-disclosure-page-next-button-text", "Next")}</Button>
+        <DebouncedButton
+          variant={ButtonVariant.Primary}
+          onClick={handleGoToNext}>{t("BB-cali-disclosure-page-next-button-text", "Next")}
+        </DebouncedButton>
       )}
     </Col >
   )

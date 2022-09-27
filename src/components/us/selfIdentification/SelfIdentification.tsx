@@ -37,6 +37,7 @@ import InfoStepCard from "../../common/InfoStepCard";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -159,12 +160,12 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
       <Col padding={{top: 'S300'}}>
         {
           shouldRenderContinueButton &&
-          <Button
+          <DebouncedButton
             variant={ButtonVariant.Primary}
             onClick={handleContinue}
           >
             {t('BB-SelfId-form-continue-button-text', 'Continue')}
-          </Button>
+          </DebouncedButton>
         }
       </Col>
     </Col>

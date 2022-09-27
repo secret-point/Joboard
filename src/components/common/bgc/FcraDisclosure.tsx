@@ -27,6 +27,7 @@ import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import DebouncedButton from "../DebouncedButton";
 
 interface MapStateToProps {
     job: JobState,
@@ -215,12 +216,12 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                         renderModal={renderModal}
                     >
                         {({ open }) => (
-                            <Button
+                            <DebouncedButton
                                 variant={ButtonVariant.Primary}
                                 onClick={() => handleClickNext(open)}
                             >
                                 {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
-                            </Button>
+                            </DebouncedButton>
                         )}
                     </WithModal>
                 </Col>

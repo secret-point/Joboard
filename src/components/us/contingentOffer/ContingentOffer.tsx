@@ -28,6 +28,7 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { Expander } from "@amzn/stencil-react-components/expander";
+import DebouncedButton from '../../common/DebouncedButton';
 
 interface MapStateToProps {
     job: JobState,
@@ -167,19 +168,19 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                     </Text>
                 </Col>
                 <Col gridGap={20} padding='S300'>
-                    <Button
+                    <DebouncedButton
                         disabled={!applicationData || isLoading}
                         variant={ButtonVariant.Primary}
                         onClick={() => applicationData && handleAcceptOffer(applicationData)}
                     >
                         {t("BB-ContingencyOffer-accept-offer-button-text","Accept Offer")}
-                    </Button>
-                    <Button
+                    </DebouncedButton>
+                    <DebouncedButton
                         disabled={!applicationData || isLoading}
                         onClick={handleBackToJobs}
                     >
                         {t("BB-ContingencyOffer-back-to-jobs-button-text",'Back to jobs')}
-                    </Button>
+                    </DebouncedButton>
                 </Col>
             </Col>
         </Col>

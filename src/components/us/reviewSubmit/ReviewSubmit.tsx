@@ -29,6 +29,7 @@ import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   job: JobState;
@@ -228,9 +229,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       </div>
 
       <Col gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
-        <Button variant={ButtonVariant.Primary} onClick={handleSubmitApplication}>
+        <DebouncedButton variant={ButtonVariant.Primary} onClick={handleSubmitApplication}>
           {t("BB-ReviewSubmit-submit-application-button-text", "Submit application")}
-        </Button>
+        </DebouncedButton>
       </Col>
     </Col >
   )

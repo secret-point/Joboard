@@ -42,6 +42,7 @@ import { Application } from "../../../utils/types/common";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { ThankYouState } from "../../../reducers/thankYou.reducer";
+import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -280,9 +281,9 @@ export const ThankYou = (props: MapStateToProps) => {
             {t("BB-ThankYou-fill-wotc-description-text", "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.")}
           </Text>
 
-          <Button variant={ButtonVariant.Primary} onClick={handleGetStarted}>
+          <DebouncedButton variant={ButtonVariant.Primary} onClick={handleGetStarted}>
             {t("BB-ThankYou-get-started-button-text", "Let's get started")}
-          </Button>
+          </DebouncedButton>
         </Col>
       </Card>
 
