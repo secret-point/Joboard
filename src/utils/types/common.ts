@@ -796,6 +796,13 @@ export interface GetNheTimeSlotRequestDs {
     }
 }
 
+export interface GetNheTimeSlotRequestThroughNheDS {
+    scheduleId: string,
+    locationCode: string,
+    hireStartDate: string,
+    contingencyTurnAroundDays: number | null
+}
+
 export interface DetailedRadioButtonItem {
     title: string;
     titleTranslationKey: string;

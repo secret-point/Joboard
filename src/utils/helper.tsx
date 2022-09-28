@@ -17,7 +17,7 @@ import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
 import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
-import { boundGetNheTimeSlotsDs } from "../actions/NheActions/boundNheAction";
+import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
 import {
     boundGetScheduleListByJobId,
     boundUpdateScheduleFilters
@@ -77,7 +77,7 @@ import {
     ErrorMessage,
     FeatureFlagList,
     FormInputItem,
-    GetNheTimeSlotRequestDs,
+    GetNheTimeSlotRequestDs, GetNheTimeSlotRequestThroughNheDS,
     Job,
     Locale,
     NHETimeSlot,
@@ -820,21 +820,33 @@ export const loadingStatusHelper = () =>{
     return loadingCount > 1;
 }
 
-export const fetchNheTimeSlotDs = (schedule: Schedule) => {
+export const fetchNheTimeSlotDs = (schedule: Schedule, requisitionService: boolean) => {
     let { siteId } = schedule;
     if(siteId.startsWith("SITE-")){
         siteId = siteId.replace("SITE-", "");
     }
-    const request: GetNheTimeSlotRequestDs = {
-        requisitionServiceScheduleDetails: {
+
+    if (requisitionService){
+        const request: GetNheTimeSlotRequestDs = {
+            requisitionServiceScheduleDetails: {
+                scheduleId: schedule.scheduleId,
+                locationCode: siteId,
+                hireStartDate: schedule.hireStartDate,
+                contingencyTurnAroundDays: schedule.contingencyTat
+            }
+        }
+
+        boundGetNheTimeSlotsDs(request);
+    } else {
+        const request: GetNheTimeSlotRequestThroughNheDS = {
             scheduleId: schedule.scheduleId,
             locationCode: siteId,
             hireStartDate: schedule.hireStartDate,
             contingencyTurnAroundDays: schedule.contingencyTat
         }
-    }
 
-    boundGetNheTimeSlotsDs(request);
+        boundGetNheTimeSlotsThroughNheDs(request);
+    }
 }
 
 export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string => {

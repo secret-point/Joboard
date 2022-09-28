@@ -46,6 +46,7 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
         case WORKFLOW_REQUEST.INIT:
         case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:
         case NHE_ACTION_TYPES.GET_SLOTS_DS:
+        case NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS:
             return {
                 ...state,
                 isLoading: true

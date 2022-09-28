@@ -20,6 +20,7 @@ export const initNheState: NheState = {
 export default function nheReducer( state: NheState = initNheState, action: NheTimeSlotsActions ): NheState {
   switch (action.type) {
     case NHE_ACTION_TYPES.GET_SLOTS_DS:
+    case NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS:
       return {
         ...state,
         loading: true,
