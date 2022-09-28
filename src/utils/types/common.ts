@@ -897,7 +897,8 @@ export interface IsPageMetricsUpdated {
 export interface localeToLanguageItem {
     translationKey: string
     language: string,
-    locale: Locale
+    locale: Locale,
+    languageES: string
 };
 
 export interface ValidateAmazonLoginIDRequest {

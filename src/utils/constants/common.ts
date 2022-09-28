@@ -821,26 +821,30 @@ export const ValueToI18nKeyMap: {[key: string]: string} = {
     "White (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text",
     "Two or more Races (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text",
 };
-
+// TODO: need to remove languageES once we get translation back .
 export const localeToLanguageList: localeToLanguageItem[] = [
     {
         translationKey: 'BB-Constants-language-english',
         language: 'English',
-        locale: Locale.enUS
+        locale: Locale.enUS,
+        languageES : 'Inglés'
     },
     {
         translationKey: 'BB-Constants-language-spanish',
         language: 'Spanish',
-        locale: Locale.esUS
+        locale: Locale.esUS,
+        languageES : 'Español'
     },
     {
         translationKey: 'BB-Constants-language-english',
         language: 'English',
-        locale: Locale.enGB
+        locale: Locale.enGB,
+        languageES : 'Inglés'
     },
     {
         translationKey: 'BB-Constants-language-spanish',
         language: 'Spanish',
-        locale: Locale.esMX
+        locale: Locale.esMX,
+        languageES : 'Español'
     },
 ];

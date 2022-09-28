@@ -50,7 +50,8 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconCalendarFill size={IconSize.ExtraSmall}/>
-                        <Text fontSize="T100">`{t("BB-Schedule-card-possible-start-date-text", "Possible Start Date")} : ${firstDayOnSite}`
+                        <Text fontSize="T100">
+                            {t("BB-Schedule-card-possible-start-date-text", "Possible Start Date:")} {firstDayOnSite}
                             <b>{t("BB-Schedule-card-possible-start-date-or-earlier-text", "(or earlier!)")}</b></Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">

@@ -1,16 +1,18 @@
 import React from "react";
 import {
-  IconCalendarFill, IconClock, IconHourGlass,
-  IconClockFill,
-  IconGlobe,
-  IconPaymentFill,
-  IconMail,
-  IconSize
+    IconCalendarFill,
+    IconClock,
+    IconClockFill,
+    IconGlobe,
+    IconHourGlass,
+    IconMail,
+    IconPaymentFill,
+    IconSize
 } from '@amzn/stencil-react-components/icons';
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { renderScheduleFullAddress, getFeatureFlagValue, getLocale } from "../../../utils/helper";
-import { Schedule } from "../../../utils/types/common";
+import { getFeatureFlagValue, getLocale, renderScheduleFullAddress } from "../../../utils/helper";
+import { Locale, Schedule } from "../../../utils/types/common";
 import { localeToLanguageList } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
@@ -40,12 +42,18 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
   const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N,"MMM DD, YYYY" ).locale(getLocale()).format('MMM DD, YYYY')}`: firstDayOnSite;
 
+  //TODO revert the function back once translations are in
   const renderRequiredLanguages = (schedule: Schedule): string => {
       const languageList: string[] = [];
-      localeToLanguageList.forEach((item) => requiredLanguages?.includes(item.locale) ? languageList.push(t(item.translationKey, item.language)) : null);
+      localeToLanguageList.forEach((item) => {
+          const languageValue = getLocale() === Locale.esUS ? item.languageES : item.language;
+          requiredLanguages?.includes(item.locale) ? languageList.push(languageValue) : null
+      });
 
       return languageList.join(', ');
   }
+
+  const languageSupportedKey = getLocale() === Locale.esUS ? "Idioma compatible" : "Languages Supported";
 
   return (
     <Col gridGap={8} width="95%">
@@ -84,7 +92,9 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
         { showRequiredLanguages &&
             <Row gridGap={5} alignItems="center">
                 <IconGlobe size={IconSize.ExtraSmall} />
-                <Text fontSize="T200" fontWeight='bold'>{t(`BB-Schedule-card-languages-supported`, `Languages Supported`)}: </Text>
+                {/*TODO:remove hard coded text once translations are in*/}
+                {/*<Text fontSize="T200" fontWeight='bold'>{t(`BB-Schedule-card-languages-supported`, `Languages Supported`)}: </Text>*/}
+                <Text fontSize="T200" fontWeight='bold'>{languageSupportedKey}: </Text>
                 <Text fontSize="T100">{renderRequiredLanguages(scheduleDetail)}</Text>
             </Row>
         }
