@@ -17,6 +17,7 @@ import { localeToLanguageList } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
 import moment from "moment";
+import {CommonColors} from "../../../utils/colors";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule,
@@ -102,7 +103,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       <Row gridGap={5} alignItems="center">
           <IconMail size={IconSize.ExtraSmall} />
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-location","Location")}: </Text>
-          <Text fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
+          <Text color={CommonColors.Blue70} fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
       </Row>
     </Col>
   )

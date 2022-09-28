@@ -136,7 +136,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                 </Row>: null}
                 {signOnBonus ?
                     <Row padding={{top: 'S200', bottom: 'S400'}}>
-                        <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do i get the sign on bonus?")}>
+                        <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do I get the sign on bonus?")}>
                             <Col gridGap="S500">
                                 <Text fontSize="T200">
                                     {t("BB-Schedule-card-about-how-to-sign-bonus-content", "This offer includes a sign on bonus of $XXXX based on the specific details noted above. It is payable over multiple installments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have recently worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.")}
