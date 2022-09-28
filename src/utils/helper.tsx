@@ -160,16 +160,11 @@ export const parseObjectToQueryString = ( obj: { [key: string]: any } ): string 
 export const getLocale = (): Locale => {
     const locale: string = Cookies.get(HVH_LOCALE) || '';
 
-    console.log("Locale: " + locale);
-    console.log("Locale boolean: " + !!locale);
-
     return locale ? locale as Locale : getDefaultLocale();
 };
 
 export const getDefaultLocale = (): Locale => {
     const countryCode = "{{Country}}" as string;
-
-    console.log("Country Code: " + countryCode);
 
     switch (countryCode){
         case "MX":
