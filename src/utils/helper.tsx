@@ -167,9 +167,9 @@ export const getDefaultLocale = (): Locale => {
     const countryCode = "{{Country}}" as string;
 
     switch (countryCode){
-        case "mx":
+        case "MX":
             return Locale.esMX
-        case "uk":
+        case "UK":
             return Locale.enGB
         default:
             return Locale.enUS

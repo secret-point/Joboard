@@ -57,7 +57,7 @@ const ALL_PLUGINS = [
         replacements: [
             {
                 template: '{{Country}}',
-                developmentValue: 'us',
+                developmentValue: 'US',
                 replacement: {
                     source: 'cloudformation',
                     key: 'Country',

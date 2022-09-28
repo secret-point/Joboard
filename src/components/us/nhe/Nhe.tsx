@@ -84,7 +84,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
 
     useEffect(() => {
         // only use call NHE through requisition service, others call nhe service directly
-        scheduleDetail && fetchNheTimeSlotDs(scheduleDetail, '{{Country}}' as string === 'us');
+        scheduleDetail && fetchNheTimeSlotDs(scheduleDetail, '{{Country}}' as string === 'US');
     }, [scheduleDetail]);
 
     useEffect(() => {
