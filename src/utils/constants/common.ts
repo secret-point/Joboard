@@ -848,3 +848,8 @@ export const localeToLanguageList: localeToLanguageItem[] = [
         languageES : 'Español'
     },
 ];
+
+export enum CountryCode {
+    MX = "MX",
+    US = "US",
+}

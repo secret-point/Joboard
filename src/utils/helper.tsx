@@ -40,7 +40,7 @@ import {
     UpdateApplicationRequestDS
 } from "./apiTypes";
 import {
-    AdditionalBGCFormConfig,
+    AdditionalBGCFormConfig, CountryCode,
     CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,
@@ -164,13 +164,11 @@ export const getLocale = (): Locale => {
 };
 
 export const getDefaultLocale = (): Locale => {
-    const countryCode = "{{Country}}" as string;
+    const countryCode = "{{Country}}" as CountryCode;
 
     switch (countryCode){
-        case "MX":
+        case CountryCode.MX:
             return Locale.esMX
-        case "UK":
-            return Locale.enGB
         default:
             return Locale.enUS
     }
