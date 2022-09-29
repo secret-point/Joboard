@@ -249,7 +249,7 @@
       "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de $XXXX basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta específica no esté disponible en función del nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no podrás elegible para recibir ningún bono de contratación.",
+      "value" : "Esta oferta incluye un bono de contratación de {signOnBonus} basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta específica no esté disponible en función del nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no podrás elegible para recibir ningún bono de contratación.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
