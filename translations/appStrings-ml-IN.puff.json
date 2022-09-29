@@ -232,10 +232,6 @@
       "value" : "ജോലിയുടെ ചുമതലകളിൽ വ്യത്യാസമില്ല, ഈ റോൾ താൽക്കാലികവും 11 മാസത്തിൽ കൂടാത്തതുമായിരിക്കും എന്നതാണ് വ്യത്യാസം.  സ്ഥിരാടിസ്ഥാനത്തിൽ ചേരാൻ നിങ്ങൾക്ക് താൽപ്പര്യമുണ്ടെങ്കിൽ, അവസരം ലഭ്യമായേക്കാം.  അല്ലെങ്കിൽ, നിങ്ങളുടെ അസൈൻമെന്റ് അവസാനിക്കുമ്പോൾ നിങ്ങളെ അറിയിക്കും.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "ബോണസിൽ എനിക്ക് എങ്ങനെ അടയാളം ലഭിക്കും?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "ഈ ഓഫറിൽ മുകളിൽ സൂചിപ്പിച്ചിരിക്കുന്ന നിർദ്ദിഷ്ട വിശദാംശങ്ങളെ അടിസ്ഥാനമാക്കി $XXXX എന്ന ബോണസിന്റെ ഒരു അടയാളം ഉൾപ്പെടുന്നു. നിങ്ങൾ ആരംഭിച്ചതിന് ശേഷം 180 ദിവസം വരെ നീളുന്ന ഒന്നിലധികം ഗഡുക്കളായി ഇത് അടയ്ക്കണം. നിങ്ങൾക്ക് വീണ്ടും ഷെഡ്യൂൾ ചെയ്യണമെങ്കിൽ, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന പുതിയ റോളിനെ അടിസ്ഥാനമാക്കി ഈ നിർദ്ദിഷ്ട ഓഫർ ലഭ്യമായേക്കില്ല. നിങ്ങൾ അടുത്തിടെ ആമസോണിൽ കഴിഞ്ഞ 90 ദിവസങ്ങളിൽ ജോലി ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, ബോണസിൽ ഒരു ചിഹ്നത്തിനും നിങ്ങൾക്ക് അർഹതയുണ്ടായിരിക്കില്ല.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "ഷിഫ്റ്റ്",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "പിന്തുണയ്ക്കുന്ന ഭാഷകൾ",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "സ്പാനിഷ്",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ഇംഗ്ലീഷ്",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "ശമ്പള നിരക്ക്",

@@ -224,6 +224,22 @@
       "value" : "כפי שמותר על פי החוק החל, ההצעה שלך מותנית בהצלחה לעבור את בדיקת הרקע הנדרשת, בדיקת סמים (אם רלוונטי) ובדיקת זכאות להעסקה חוזרת (אם רלוונטי), לכן חשוב שתשלים את שלבי טרום ההעסקה בעמוד הבא.\n בנסיבות מסוימות, היום הראשון שלך עשוי להתעכב בשל דרישות טרום העסקה שלא הושלמו בזמן. אם זה המקרה, אתה יכול לצפות לשמוע מאיתנו בקרוב.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "הצעה זו היא אישור לקבלתך לעבודה ב-Amazon אם בדיקת הרקע שלך, בדיקת סמים וכל פעילות אחרת הנדרשת לפני השכרה שלך יושלמו בהצלחה.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "אינך עומד בדרישות בדיקת הסמים בזמן",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "מקומות ההדרכה מתמלאים",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "אם תאריך ההתחלה שלך מתעכב, תקבל מידע נוסף בנוגע לשלבים הבאים.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "מה המשמעות של משך הזמן העונתי?",
       "note" : "Text for about seasonal duration popover title"
@@ -232,12 +248,28 @@
       "value" : "אין הבדל בחובות התפקיד, ההבדל הוא שתפקיד זה נועד להיות זמני ולא יותר מ-11 חודשים.  אם ברצונך להצטרף על בסיס קבוע, ייתכן שההזדמנות תהיה זמינה.  אחרת, תישלח לך הודעה כאשר המשימה שלך תסתיים.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "איך אקבל את מענק החתימה?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "הצעה זו כוללת מענק חתימה של $XXXX בהתבסס על הפרטים הספציפיים שצוינו למעלה. הוא משולם במספר תשלומים, שניתן להאריך עד 180 יום לאחר ההתחלה. אם נדרש לתזמן מחדש, ייתכן שההצעה הספציפית הזו לא תהיה זמינה בהתבסס על התפקיד החדש שנבחר על ידך. אם עבדת לאחרונה עבור Amazon ב-90 הימים האחרונים אין לך זכאות למענק חתימה.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "ייתכן שהצעה ספציפית זו לא תהיה זמינה אם:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "אתה מתזמן מחדש את המשמרת שלך",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "אתה מתזמן מחדש את המשמרת שלך, או",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "אתה בוחר תפקיד חדש.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "אם עבדת עבור אמזון ב-90 הימים האחרונים לא תהיה זכאי לבונוסים על הרשמה.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1451,6 +1483,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "משמרת",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "שפות נתמכות",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "ספרדית",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "אנגלית",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "תעריף תשלום",

@@ -232,10 +232,6 @@
       "value" : "কাজের দায়িত্বের মধ্যে কোন পার্থক্য নেই, পার্থক্য হল এই ভূমিকাটি অস্থায়ী এবং 11 মাসের বেশি নয়।  আপনি যদি স্থায়ীভাবে যোগদান করতে আগ্রহী হন তবে সুযোগ পাওয়া যেতে পারে।  অন্যথায়, আপনার অ্যাসাইনমেন্ট শেষ হলে আপনাকে জানানো হবে।",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "আমি কিভাবে যোগদানের বোনাস পেতে পারি?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "এই অফারে উপরে উল্লিখিত নির্দিষ্ট বিবরণের উপর ভিত্তি করে $XXXX এর যোগদান করার বোনাস অন্তর্ভুক্ত রয়েছে। এটি একাধিক মাসিক ইনস্টলমেন্ট-এ প্রদেয় যা আপনি শুরু করার পরে 180 দিন পর্যন্ত প্রসারিত হতে পারে। যদি আপনাকে সময়সূচী পুনঃনির্ধারণ করতে হয়, তাহলে এই নির্দিষ্ট অফারটি আপনার বেছে নেওয়া নতুন ভূমিকার উপর ভিত্তি করে উপলব্ধ নাও হতে পারে। আপনি যদি সম্প্রতি Amazon-এর জন্য গত 90 দিনে কাজ করে থাকেন তাহলে আপনি যোগদানের কোনো বোনাসের জন্য যোগ্য হবেন না।",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "শিফ্ট",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "সমর্থিত ভাষাসমূহ",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "স্প্যানিশ",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ইংরেজি",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "বেতনের হার",

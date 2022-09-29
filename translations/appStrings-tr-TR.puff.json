@@ -232,10 +232,6 @@
       "value" : "İş görevlerinde fark yoktur. Fark, bu rolün geçici olmasının ve 11 aydan uzun olmamasının planlanmasıdır.  Kalıcı olarak katılmakla ilgileniyorsanız fırsat ortaya çıkabilir.  Aksi takdirde atamanızın ne zaman sonlandırılacağı konusunda bilgilendirileceksiniz.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Bonus işaretini nasıl alabilirim?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre XXXX $ bonus işareti dahildir. Siz başladıktan sonra 180 güne kadar uzatılabilecek birden fazla taksitle ödenebilir. Yeniden planlamak zorunda kalırsanız bu özel teklif, seçtiğiniz yeni role göre kullanılamayabilir. Son 90 günde Amazon için çalıştıysanız herhangi bir bonus işareti için uygun olmayacaksınız.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Vardiya",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Desteklenen diller",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "İspanyolca",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "İngilizce",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Ödeme oranı",

@@ -232,9 +232,9 @@
       "value" : "Não existem diferenças nas funções de trabalho. A diferença é que esta função é temporária e inferior a 11 meses.  Se estiver interessado em se juntar a nós de forma permanente, poderá surgir essa oportunidade.  Caso contrário, será notificado da data de término da sua função.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Como faço para obter o bónus de contratação?",
-      "note" : "Text for how to sign on bonus popover title"
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "As funções sazonais e regulares têm as mesmas funções de trabalho. Contudo, as funções sazonais destinam-se a ser temporárias, com uma duração máxima de 11 meses. Se estiver interessado em ingressar na Amazon de forma permanente, futuramente poderá ficar disponível uma oportunidade.  Caso contrário, será notificado da data de término da sua função.",
+      "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Esta oferta inclui um bónus de contratação de XXXX $, com base nos detalhes específicos mencionados acima. Este valor é pago em prestações que poderão ser prorrogadas por até 180 dias, após o início da sua função. Se precisar de reagendar, esta oferta específica poderá não estar disponível, conforme a nova função que escolher. Se trabalhou recentemente para a Amazon, nos últimos 90 dias, não será elegível para nenhum bónus de contratação.",
@@ -1451,6 +1451,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Idiomas suportados",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Espanhol",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Inglês",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salário",

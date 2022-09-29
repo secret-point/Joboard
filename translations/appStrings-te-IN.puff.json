@@ -232,10 +232,6 @@
       "value" : "ఉద్యోగ విధులలో తేడా లేదు, తేడా ఏమిటంటే ఈ పాత్ర తాత్కాలికంగా మరియు 11 నెలల కంటే ఎక్కువ కాలం ఉండకూడదు.  మీరు శాశ్వత ఉద్యోగంలో చేరడానికి ఆసక్తి కలిగి ఉంటే, అవకాశం అందుబాటులోకి రావచ్చు.  లేకపోతే, మీ అసైన్‌మెంట్ ఎప్పుడు ముగుస్తుందో మీకు తెలియజేయబడుతుంది.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "నేను సైన్ ఆన్ బోనస్ ఎలా పొందగలను?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "ఈ ఆఫర్ పైన పేర్కొన్న నిర్దిష్ట వివరాల ఆధారంగా $XXXX సైన్ ఆన్ బోనస్ ఉంటుంది. మీరు ప్రారంభించిన తర్వాత 180 రోజుల వరకు పొడిగించబడే బహుళ వాయిదాలలో ఇది చెల్లించబడుతుంది. మీరు రీషెడ్యూల్ చేయాల్సి వస్తే, మీరు ఎంచుకున్న కొత్త పాత్ర ఆధారంగా ఈ నిర్దిష్ట ఆఫర్ అందుబాటులో ఉండకపోవచ్చు. మీరు ఇటీవల Amazonలో గత 90 రోజులలో పనిచేసినట్లయితే, మీరు ఎటువంటి సైన్ ఆన్ బోనస్‌కు అర్హులు కారు.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "షిఫ్ట్",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "మద్దతు ఉన్న భాషలు",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "స్పానిష్",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ఇంగ్లీష్",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "చెల్లింపు రేటు",

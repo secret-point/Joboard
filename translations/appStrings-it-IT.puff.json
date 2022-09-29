@@ -232,10 +232,6 @@
       "value" : "Non c'è differenza nelle mansioni lavorative, la differenza è che questo ruolo è destinato a essere temporaneo e non più lungo di 11 mesi.  Se sei interessato ad aderire in modo permanente, l'opportunità potrebbe diventare disponibile.  Altrimenti, riceverai una notifica quando il tuo incarico terminerà.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Come posso ottenere il bonus di accesso?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Questa offerta include un bonus di iscrizione di XXXX $ in base ai dettagli specifici sopra indicati. È pagabile in più rate che possono estendersi fino a 180 giorni dopo l'inizio. Se devi riprogrammare, questa offerta specifica potrebbe non essere disponibile in base al nuovo ruolo che scegli. Se hai recentemente lavorato per Amazon negli ultimi 90 giorni, non avrai diritto a ricevere alcun bonus di accesso.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1444,9 +1440,41 @@
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Data di inizio",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Lingue supportate",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spagnolo",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Inglese",
+      "note" : "Job Required Language text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Retribuzione",
+      "note" : "Text for the pay rate text"
+    },
     "BB-Schedule-card-hours" : {
       "value" : "Ore",
       "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Durata",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Sede",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Grazie per il tuo interesse, ma al momento non siamo in grado di offrirti un lavoro.",

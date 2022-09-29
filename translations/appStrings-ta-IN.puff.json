@@ -232,10 +232,6 @@
       "value" : "பணிக் கடமைகளில் எந்த மாற்றமும் இல்லை, ஆனால் இந்தப் பொறுப்பு தற்காலிகமானதாகும், 11 மாதங்களுக்கு மேல் நீடிக்காது என்பதே இதிலுள்ள வித்தியாசம் ஆகும்.  உங்களுக்கு நிரந்தரப் பணியில் சேர விருப்பம் இருந்தால், அதற்கான வாய்ப்பு கிடைக்கலாம்.  இல்லையெனில், உங்கள் வேலை எப்போது முடிவடையும் என்று உங்களுக்குத் தெரிவிக்கப்படும்.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "பணியில் சேர்வதற்கான போனஸை நான் எப்படிப் பெறுவது?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "மேலே குறிப்பிட்ட விவரங்களின் அடிப்படையில், பணியில் சேர்வதற்கான $XXXX போனஸும் இந்தச் சலுகையில் கிடைக்கும். நீங்கள் பணியைத் தொடங்கிய பிறகு, 180 நாட்களுக்கு நீட்டிக்கக்கூடிய பல தவணைகளில் இது செலுத்தப்படும். நீங்கள் மறுதிட்டமிட வேண்டியிருந்தால், நீங்கள் தேர்ந்தெடுக்கும் புதிய பொறுப்பின் அடிப்படையில் இந்தக் குறிப்பிட்ட சலுகை கிடைக்காமல் போகலாம். நீங்கள் சமீபத்தில் Amazonஇல் கடந்த 90 நாட்களில் பணிபுரிந்திருந்தால், பணியில் சேர்வதற்கான சலுகைக்குத் தகுதிபெற மாட்டீர்கள்.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "ஷிஃப்ட்",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "ஆதரிக்கப்படும் மொழிகள்",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "ஸ்பானிஷ்",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ஆங்கிலம்",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "சம்பள விகிதம்",

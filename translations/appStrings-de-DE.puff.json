@@ -232,10 +232,6 @@
       "value" : "Die Aufgaben unterscheiden sich nicht, der Unterschied besteht darin, dass die Stelle befristet ist und nicht länger als 11 Monate dauern soll.  Wenn du an einer Festanstellung interessiert bist, könnte sich diese Möglichkeit ergeben.  Ansonsten wirst du benachrichtigt, wenn dein Auftrag endet.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Wie erhalte ich den Anmeldebonus?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Dieses Angebot beinhaltet einen Anmeldebonus von $XXXX, basierend auf den oben genannten Details. Er ist in mehreren Raten zu zahlen, die bis zu 180 Tage nach deinem Start reichen können. Wenn du einen neuen Termin vereinbaren musst, kann es sein, dass dieses spezielle Angebot je nach der neuen Rolle, die du gewählt hast, nicht verfügbar ist. Wenn du in den letzten 90 Tagen für Amazon gearbeitet hast, hast du keinen Anspruch auf einen Anmeldebonus.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Schicht",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Unterstützte Sprachen",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spanisch",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Englisch",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Vergütungssatz",

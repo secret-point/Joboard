@@ -232,10 +232,6 @@
       "value" : "工作職責沒有區別，不同之處在於這個職位是臨時的，持續時間不超過 11 個月。 如果您有興趣長期加入，則可能會有機會。 否則，您將在任務結束時收到通知。",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "我如何獲得簽約獎金？",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "此職位邀約包括基於上述具體細節的 $XXXX 簽約獎金。可多次分期支付，期限可延長至您開始工作後的 180 天。如果您必須重新安排，則根據您選擇的新職位，此特定職位邀約可能不會提供給您。如果您在過去 90 天內剛在 Amazon 工作過，則您將不符合獲得任何簽約獎金的要求。",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "班次",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "支援的語言",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "西班牙文",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "英文",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "薪資率",

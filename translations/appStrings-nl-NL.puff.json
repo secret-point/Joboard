@@ -232,9 +232,9 @@
       "value" : "Er is geen verschil in functie, het verschil is dat deze functie bedoeld is als tijdelijk en niet langer dan 11 maanden.  Als je geïnteresseerd bent om op permanente basis lid te worden, kan de mogelijkheid zich voordoen.  Anders krijg je een melding wanneer je opdracht eindigt.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Hoe kom ik aan de aanmeldbonus?",
-      "note" : "Text for how to sign on bonus popover title"
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Seizoensrollen en reguliere rollen hebben dezelfde taken. Seizoensrollen zijn echter voor tijdelijk bedoeld en niet langer dan 11 maanden te duren. Als je geïnteresseerd bent om permanent lid te worden van Amazon, kan deze mogelijkheid in de toekomst beschikbaar komen.  Anders krijg je een melding wanneer je opdracht eindigt.",
+      "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Deze aanbieding omvat een aanmeldbonus van $ XXXX op basis van de specifieke details die hierboven zijn vermeld. Het is betaalbaar in meerdere termijnen, die kunnen worden verlengd tot 180 dagen na je start. Als je een nieuwe planning moet maken, is het mogelijk dat dit specifieke aanbod niet beschikbaar is op basis van de nieuwe rol die je kiest. Als je de afgelopen 90 dagen onlangs voor Amazon hebt gewerkt, kom je niet in aanmerking voor een aanmeldbonus.",
@@ -1451,6 +1451,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Shift",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Ondersteunde talen",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Spaans",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Engels",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salaris",

@@ -224,6 +224,22 @@
       "value" : "Comme le permet la loi applicable, la validité de votre offre dépend de la réussite de la vérification des antécédents, du dépistage de stupéfiants (le cas échéant) et de la vérification de l'éligibilité à la réembauche (le cas échéant). Il est donc important que vous suiviez les étapes préalables au recrutement sur la page suivante. Dans certains cas, votre premier jour peut être retardé si les exigences préalables à l'embauche n'ont pas été satisfaites à temps. Si tel est le cas, vous pouvez vous attendre à recevoir très bientôt une communication de notre part.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Cette offre confirme que vous serez recruté en tant qu'employé d'Amazon si vous réussissez votre formation, votre test de dépistage de drogues et toutes les autres activités requises préalables à l'embauche.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Vous ne répondez pas, dans les temps, aux exigences du test de dépistage de drogues",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Les places de formation se remplissent",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Si votre date de début est retardée, vous recevrez des informations supplémentaires concernant les prochaines étapes.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Que signifie une durée saisonnière ?",
       "note" : "Text for about seasonal duration popover title"
@@ -232,12 +248,28 @@
       "value" : "Les tâches sont identiques, la différence réside dans la durée de la mission : elle est entendue comme temporaire et ne peut pas excéder une période de 11 mois.  Si vous souhaitez nous rejoindre sur une base permanente, l'opportunité peut se présenter.  Si ce n’est pas le cas, vous serez averti de la fin de votre mission.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Comment puis-je obtenir la prime à la signature ?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Cette offre comprend une prime à la signature de XXXX $ basée sur les détails spécifiques indiqués ci-dessus. La prime peut être versée en plusieurs fois sur une période pouvant aller jusqu'à 180 jours après votre prise de poste. Si vous devez replanifier votre mission, il est possible que cette offre spécifique ne soit pas disponible selon le nouveau rôle que vous choisirez. Si vous avez travaillé pour Amazon au cours des 90 jours précédents, vous ne pourrez bénéficier d'aucune prime à la signature.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Cette offre spécifique peut ne pas être disponible dans les cas suivants :",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Vous replanifiez vos horaires de travail",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Vous replanifiez votre date de début, ou",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Vous choisissez un nouveau poste.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Si vous avez travaillé pour Amazon au cours des 90 derniers jours, vous ne pourrez bénéficier d'aucune prime à la signature.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1451,6 +1483,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Quart de travail",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Langues prises en charge",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Espagnol",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Anglais",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Taux de rémunération",

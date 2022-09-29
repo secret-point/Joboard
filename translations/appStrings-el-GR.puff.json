@@ -232,10 +232,6 @@
       "value" : "Δεν υπάρχει διαφορά στα καθήκοντα εργασίας. Η διαφορά είναι ότι ο ρόλος αυτός προορίζεται να είναι προσωρινός και όχι μεγαλύτερος από 11 μήνες.  Εάν ενδιαφέρεστε να συμμετάσχετε σε μόνιμη βάση, η ευκαιρία ενδέχεται να γίνει διαθέσιμη.  Διαφορετικά, θα ειδοποιηθείτε όταν τελειώσει η ανάθεσή σας.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Πώς μπορώ να λάβω συμμετοχή για μπόνους;",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Αυτή η προσφορά περιλαμβάνει μια συμμετοχή για μπόνους των XXXX$ με βάση τις συγκεκριμένες λεπτομέρειες που αναφέρονται παραπάνω. Είναι πληρωτέο σε πολλές δόσεις που μπορεί να φτάσουν έως και 180 ημέρες μετά την έναρξη. Εάν πρέπει να επαναπρογραμματίσετε, αυτή η συγκεκριμένη προσφορά ενδέχεται να μην είναι διαθέσιμη με βάση τον νέο ρόλο που θα επιλέξετε. Αν έχετε εργαστεί πρόσφατα για την Amazon τις τελευταίες 90 ημέρες δεν θα είστε επιλέξιμος για συμμετοχή σε μπόνους.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1443,6 +1439,42 @@
     "BB-Schedule-card-bonus-text" : {
       "value" : "Μπόνους:",
       "note" : "Text for the schedule card bonus text"
+    },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Ημερομηνία Έναρξης",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Βάρδια",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Γλώσσες που υποστηρίζονται",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Ισπανικά",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Αγγλικά",
+      "note" : "Job Required Language text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Μισθός",
+      "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-hours" : {
+      "value" : "Ωράριο",
+      "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Διάρκεια",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Τοποθεσία",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Σας ευχαριστούμε για το ενδιαφέρον σας, αλλά δεν είμαστε σε θέση να σας προσφέρουμε δουλειά αυτή τη στιγμή.",

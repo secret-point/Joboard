@@ -232,10 +232,6 @@
       "value" : "لا يوجد فرق في واجبات الوظيفة، والفرق هو أن هذا الدور يهدف إلى أن يكون مؤقتًا ولا يزيد عن 11 شهرًا.  إذا كنت مهتمًا بالانضمام على أساس دائم، فقد تصبح الفرصة متاحة.  وإلا سيتم إخطارك عندما تنتهي مهمتك.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "كيف أحصل على مكافأة تسجيل الدخول؟",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "يتضمن هذا العرض مكافأة تسجيل دخول بقيمة XXXX$ بناءً على التفاصيل المحددة المذكورة أعلاه. يتم دفعها على أقساط متعددة قد تمتد إلى 180 يومًا بعد البدء. إذا كان عليك إعادة تحديد الموعد، فقد لا يكون هذا العرض المحدد متاحًا بناءً على الدور الجديد الذي تختاره. إذا كنت قد عملت مؤخرًا لأمازون في آخر 90 يومًا، فلن تكون مؤهلاً للحصول على أي مكافأة لتسجيل الدخول.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "مناوبة العمل",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "اللغات المدعومة",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "الأسبانية",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "الإنجليزية",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "معدل الأجر",

@@ -232,10 +232,6 @@
       "value" : "Il n'y a pas de différence dans les tâches professionnelles, la différence est que ce rôle est sensé être temporaire et ne pas dépasser 11 mois.  Si vous souhaitez rejoindre de façon permanente, l'occasion pourrait se présenter.  Sinon, vous serez informé lorsque votre affectation sera terminée.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Comment puis-je obtenir le bonus d'inscription?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Cette offre comprend un bonus d'inscription de XXXX $ en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s'étendre jusqu'à 180 jours après le début. Si vous devez replanifier, cette offre spécifique pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d'inscription.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Quart de travail",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Langues prises en charge",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Espagnol",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Français",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Taux de rémunération",

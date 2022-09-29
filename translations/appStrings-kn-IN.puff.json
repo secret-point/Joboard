@@ -232,10 +232,6 @@
       "value" : "ಉದ್ಯೋಗ ಕರ್ತವ್ಯಗಳಲ್ಲಿ ಯಾವುದೇ ವ್ಯತ್ಯಾಸವಿಲ್ಲ, ವ್ಯತ್ಯಾಸವೆಂದರೆ ಈ ಪಾತ್ರವು ತಾತ್ಕಾಲಿಕವಾಗಿರಲು ಉದ್ದೇಶಿಸಲಾಗಿದೆ ಮತ್ತು 11 ತಿಂಗಳುಗಳಿಗಿಂತ ಹೆಚ್ಚಿಲ್ಲ.  ನೀವು ಶಾಶ್ವತ ಆಧಾರದ ಮೇಲೆ ಸೇರಲು ಆಸಕ್ತಿ ಹೊಂದಿದ್ದರೆ, ಅವಕಾಶವು ಲಭ್ಯವಾಗಬಹುದು.  ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ನಿಯೋಜನೆ ಯಾವಾಗ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ಎಂದು ನಿಮಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "ಬೋನಸ್‌ನಲ್ಲಿ ನಾನು ಚಿಹ್ನೆಯನ್ನು ಹೇಗೆ ಪಡೆಯುವುದು?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "ಈ ಪ್ರಸ್ತಾಪವು ಮೇಲೆ ತಿಳಿಸಿದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳ ಆಧಾರದ ಮೇಲೆ $XXXX ಬೋನಸ್ ಮೇಲೆ ಚಿಹ್ನೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ನೀವು ಪ್ರಾರಂಭಿಸಿದ ನಂತರ 180 ದಿನಗಳವರೆಗೆ ವಿಸ್ತರಿಸಬಹುದಾದ ಅನೇಕ ಕಂತುಗಳಲ್ಲಿ ಇದನ್ನು ಪಾವತಿಸಲಾಗುತ್ತದೆ. ನೀವು ಮರುಹೊಂದಿಸಬೇಕಾದರೆ, ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಹೊಸ ಪಾತ್ರದ ಆಧಾರದ ಮೇಲೆ ಈ ನಿರ್ದಿಷ್ಟ ಕೊಡುಗೆ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು. ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ ನೀವು ಇತ್ತೀಚೆಗೆ Amazon ಗಾಗಿ ಕೆಲಸ ಮಾಡಿದ್ದರೆ ಬೋನಸ್‌ನಲ್ಲಿ ಯಾವುದೇ ಚಿಹ್ನೆಗೆ ನೀವು ಅರ್ಹರಾಗುವುದಿಲ್ಲ.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "ಶಿಫ್ಟ್",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "ಬೆಂಬಲಿತ ಭಾಷೆಗಳು",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "ಸ್ಪ್ಯಾನಿಷ್",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "ಇಂಗ್ಲಿಷ್",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "ಪಾವತಿ ದರ",

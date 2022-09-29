@@ -232,10 +232,6 @@
       "value" : "नोकरीच्या कर्तव्यात कोणताही फरक नाही, फरक हा आहे की ही भूमिका तात्पुरती आहे आणि 11 महिन्यांपेक्षा जास्त नाही.  तुम्हाला कायमस्वरूपी सामील होण्यास स्वारस्य असल्यास, संधी उपलब्ध होऊ शकते.  अन्यथा, तुमची असाइनमेंट संपल्यावर तुम्हाला सूचित केले जाईल.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "मला साइन ऑन बोनस कसा मिळेल?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित $XXXX च्या साइन ऑन बोनसचा समावेश आहे. हे एकाधिक हप्त्यांवर देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत वाढू शकते. तुम्हाला पुन्हा शेड्यूल करायचे असल्यास, तुम्ही निवडलेल्या नवीन भूमिकेवर आधारित ही विशिष्ट ऑफर उपलब्ध नसेल. जर तुम्ही अलीकडेच गेल्या 90 दिवसांत Amazon साठी काम केले असेल तर तुम्ही कोणत्याही साइन ऑन बोनससाठी पात्र असणार नाही.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "शिफ्ट",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "सपोर्ट केलेल्या भाषा",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "स्पॅनिश",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "इंग्रजी",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "वेतन दर",

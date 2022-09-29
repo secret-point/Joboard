@@ -226,14 +226,42 @@
             "note": "Text for contingent offer meaning popover content",
             "value": "As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon."
         },
-            "BB-Schedule-card-about-seasonal-duration-popover-title-text": {
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities."
+        },
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "Your start time might be delayed if:"
+        },
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "The background check is not completed on time."
+        },
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "You don’t meet the drug test requirements on time"
+        },
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "Training spots fill up"
+        },
+        "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line": {
+            "note": "Text for contingent offer meaning popover content",
+            "value": "If your start date is delayed, you’ll receive additional information regarding next steps."
+        },
+        "BB-Schedule-card-about-seasonal-duration-popover-title-text": {
             "note": "Text for about seasonal duration popover title",
             "value": "What does a seasonal duration mean?"
         },
         "BB-Schedule-card-about-seasonal-duration-popover-content": {
             "note": "Text for about seasonal duration popover content",
             "value": "There is no difference in job duties, the difference is this role is intended to be temporary and no longer than 11 months.  If you are interested in joining on a permanent basis, the opportunity may become available.  Otherwise, you’ll be notified when your assignment will end."
-             },
+        },
+        "BB-Schedules-card-about-seasonal-duration-popover-content": {
+            "note": "Text for about seasonal duration popover content",
+            "value": "Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future.  Otherwise, you’ll be notified when your assignment will end."
+        },
         "BB-Schedule-card-about-how-to-sign-bonus-title-text": {
             "note": "Text for how to sign on bonus popover title",
             "value": "How do I get the sign on bonus?"
@@ -241,6 +269,30 @@
         "BB-Schedule-card-about-how-to-sign-bonus-content": {
             "note": "Text for how to sign on bonus popover content",
             "value": "This offer includes a sign on bonus of $XXXX based on the specific details noted above. It is payable over multiple installments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have recently worked for Amazon in the last 90 days you will not be eligible for any sign on bonus."
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "This offer includes a sign on bonus of {signOnBonus} based on the specific details noted above. It is payable over multiple installments that may extend to 180 days after you start."
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content-point": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "This specific offer may not be available if:"
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content-point-one": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "You reschedule your shift"
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content-point-two": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "You reschedule your start date, or"
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content-point-three": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "You choose a new role."
+        },
+        "BB-Schedules-card-about-how-to-sign-bonus-content-last-line": {
+            "note": "Text for how to sign on bonus popover content",
+            "value": "If you’ve worked for Amazon in the last 90 days you will not be eligible for any sign on bonus."
         },
         "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn": {
             "note": "Text for contingent offer meaning popover close button",
@@ -1453,6 +1505,25 @@
         "BB-Schedule-card-shift": {
             "note": "Text for the schedule card shift text",
             "value": "Shift"
+        },"BB-Schedule-card-shift-flexible": {
+            "note": "Text for the schedule card shift text",
+            "value": "Flexible"
+        },
+        "BB-Schedule-card-shift-required-dates": {
+            "note": "Text for the schedule card required training date",
+            "value": "Required training date"
+        },
+        "BB-Schedule-card-languages-supported": {
+            "note": "Job Required Languages label text",
+            "value": "Languages Supported"
+        },
+        "BB-Constants-language-spanish": {
+            "note": "Job Required Language text",
+            "value": "Spanish"
+        },
+        "BB-Constants-language-english": {
+            "note": "Job Required Language text",
+            "value": "English"
         },
         "BB-Schedule-card-pay-rate": {
             "note": "Text for the pay rate text",

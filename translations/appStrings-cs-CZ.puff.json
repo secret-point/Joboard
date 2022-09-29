@@ -232,10 +232,6 @@
       "value" : "V pracovních povinnostech není rozdíl, rozdíl je v tom, že tato pozice má být dočasná a nemá trvat déle než 11 měsíců.  Pokud máte zájem nastoupit na trvalý pracovní poměr, může se Vám tato příležitost naskytnout.  V opačném případě Vám bude oznámeno, kdy Vaše přiřazení skončí.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "Jak získám vstupní bonus?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Tato nabídka zahrnuje vstupní bonus ve výši XXXX $ na základě konkrétních údajů uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od Vašeho nástupu. Pokud budete muset přeplánovat, tato konkrétní nabídka nemusí být k dispozici v závislosti na nové roli, kterou si vyberete. Pokud jste v posledních 90 dnech pracovali pro společnost Amazon, nemáte nárok na žádný vstupní bonus.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1444,9 +1440,41 @@
       "value" : "Bonus:",
       "note" : "Text for the schedule card bonus text"
     },
+    "BB-Schedule-card-start-date" : {
+      "value" : "Datum zahájení",
+      "note" : "Text for the schedule card start date text"
+    },
+    "BB-Schedule-card-shift" : {
+      "value" : "Směna",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Podporované jazyky",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Španělština",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Angličtina",
+      "note" : "Job Required Language text"
+    },
+    "BB-Schedule-card-pay-rate" : {
+      "value" : "Výše mzdy",
+      "note" : "Text for the pay rate text"
+    },
     "BB-Schedule-card-hours" : {
       "value" : "Hodiny",
       "note" : "Text for the work hours text"
+    },
+    "BB-Schedule-card-duration" : {
+      "value" : "Doba trvání",
+      "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-location" : {
+      "value" : "Místo",
+      "note" : "Text for the location of job text"
     },
     "BB-amazon-rejects-thank-you" : {
       "value" : "Děkujeme za Váš zájem, ale v tuto chvíli Vám nemůžeme nabídnout práci.",

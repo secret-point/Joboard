@@ -224,6 +224,22 @@
       "value" : "適用法で認められているように、お客様の求人は、必要な身元調査、薬物スクリーニング（該当する場合）、および再雇用適格性チェック（該当する場合）に合格することを条件としているため、次のページで雇用前の手順を完了することが重要です。状況によっては、就職前の要件が間に合わないために勤務開始日が遅れる場合があります。このような場合は、すぐにご連絡いたします。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "このオファーは、経歴、薬物検査、その他必要な雇用前の活動をすべて無事に完了した場合に、Amazonの従業員として雇用されることを確認するものです。",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "薬物検査の要件を期日どおりに満たしていない",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "トレーニングスポットがいっぱいになる",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "開始日が遅れると、次のステップに関する追加情報が届きます。",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "シーズン限定とはどういう意味ですか?",
       "note" : "Text for about seasonal duration popover title"
@@ -232,12 +248,28 @@
       "value" : "役職に違いはありません。この役職は11か月以内に終了する臨時の仕事であるという点が異なります。 無期雇用に興味のある方には、その機会が提供される場合もあります。 それ以外の場合は、契約期間の終了時に通知されます。",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "サインオンボーナスはどうすればもらえますか？",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "このセールには、上記の具体的な詳細に基づく$XXXXのサインオンボーナスが含まれています。開始後180日に渡り、月払いによって複数回支払われる場合があります。スケジュールを変更する必要がある場合、選択した新しい役職によっては、このセールがない場合もあります。過去90日間にAmazonで働いたことがある場合は、サインオンボーナスの対象にはなりません。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "以下の場合、この特別セールはご利用いただけない場合があります。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "シフトのスケジュールを変更します",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "開始日を再スケジュールするか、",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "新しい権限を選択します。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "過去90日間にAmazonで働いていた場合は、サインオンボーナスの対象にはなりません。",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1451,6 +1483,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "シフト",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "サポートされている言語",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "スペイン語",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "英語",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "給与額",

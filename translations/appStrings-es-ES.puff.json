@@ -232,10 +232,6 @@
       "value" : "No hay diferencia en las tareas laborales. La única diferencia es que este puesto está destinado a ser temporal y no dura más de 11 meses.  Si quieres unirte de forma permanente, puede que esta opción llegue a estar disponible.  De lo contrario, se te notificará cuando acabe la tarea a realizar.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
-      "value" : "¿Cómo puedo obtener el bono de contratación?",
-      "note" : "Text for how to sign on bonus popover title"
-    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Esta oferta incluye un bono de contratación de XXXX $ según los detalles específicos mencionados anteriormente. Se paga en múltiples cuotas que pueden extenderse hasta 180 días después de comenzar. Si tienes que cambiar la fecha, es posible que esta oferta específica no esté disponible en función del nuevo puesto que elijas. Si has trabajado para Amazon en los últimos 90 días, no podrás recibir ningún bono de contratación.",
       "note" : "Text for how to sign on bonus popover content"
@@ -1451,6 +1447,18 @@
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-languages-supported" : {
+      "value" : "Idiomas admitidos",
+      "note" : "Job Required Languages label text"
+    },
+    "BB-Constants-language-spanish" : {
+      "value" : "Español",
+      "note" : "Job Required Language text"
+    },
+    "BB-Constants-language-english" : {
+      "value" : "Inglés",
+      "note" : "Job Required Language text"
     },
     "BB-Schedule-card-pay-rate" : {
       "value" : "Tarifa de pago",
