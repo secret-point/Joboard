@@ -54,7 +54,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     const jobDetail = job.results;
     const applicationData = application.results;
     const scheduleDetail = schedule.results.scheduleDetail;
-    const signOnBonus = schedule.results.scheduleDetail?.bonusSchedule;
+    const signOnBonus = schedule.results.scheduleDetail?.signOnBonus;
     const employmentType = schedule.results.scheduleDetail?.employmentType;
     const { candidateData } = candidate.results
 

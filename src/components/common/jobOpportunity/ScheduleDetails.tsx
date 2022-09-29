@@ -17,7 +17,7 @@ import { localeToLanguageList } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import { translate as t } from "../../../utils/translator";
 import moment from "moment";
-import {CommonColors} from "../../../utils/colors";
+import { CommonColors } from "../../../utils/colors";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule,
