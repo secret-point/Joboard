@@ -244,17 +244,9 @@
       "value" : "¿Qué significa una duración de temporada?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "No hay diferencia en las tareas laborales, la diferencia es que se pretende que este rol sea temporal y que no supere los 11 meses.  Si te interesa unirte de manera permanente, la oportunidad podría estar disponible.  De lo contrario, se te notificará sobre cuándo finalizará tu trabajo.",
-      "note" : "Text for about seasonal duration popover content"
-    },
-    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
-      "value" : "Los roles estacionales y los roles regulares tienen las mismas obligaciones laborales. Los roles estacionales, sin embargo, son temporales y no duran más de 11 meses. Si estás interesado en unirte a Amazon de forma permanente, es posible que tengas la oportunidad de hacerlo en el futuro.  De lo contrario, se te notificará cuándo finalizará tu trabajo.",
-      "note" : "Text for about seasonal duration popover content"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de {signOnBonus} basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta específica no esté disponible en función del nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no serás elegible para recibir ningún bono de contratación.",
-      "note" : "Text for how to sign on bonus popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "¿Cómo obtengo el incentivo de contratación?",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica puede no estar disponible si:",

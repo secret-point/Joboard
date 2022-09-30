@@ -224,16 +224,20 @@
       "value" : "적용 가능한 법률에서 허용하는 바에 따라 귀하의 오퍼는 필요한 신원 조사, 약물 검사(해당하는 경우) 및 재고용 자격 확인(해당되는 경우)을 성공적으로 통과해야 한다는 조건부이므로 다음 페이지의 채용 전 단계를 완료하는 것이 중요합니다. 경우에 따라 채용 전 요건이 제때 완료되지 않아 첫 출근이 지연될 수 있습니다. 이 경우 조만간 연락을 받으실 수 있습니다.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "다음과 같은 경우 시작 시간이 지연될 수 있습니다.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "신원 조사가 정시에 완료되지 않았습니다.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "시즌 기간제는 무슨 의미인가요?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "직무에 따른 차이는 없습니다. 차이점은 해당 역할은 임시직으로 11개월 이하라는 것입니다.  정규직에 관심이 있다면 기회를 얻을 수도 있습니다.  그렇지 않으면 보직이 종료될 때 알림을 받게 됩니다.",
-      "note" : "Text for about seasonal duration popover content"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "해당 오퍼에는 위에서 언급한 세부 정보를 기반으로 $XXXX의 입사 보너스가 포함되어 있습니다. 여러 차례 나누어 지급될 수 있으며 시작 후 180일까지 연장될 수 있습니다. 일정을 조정해야 하는 경우 선택한 새 역할에 따라 해당 특정 오퍼가 제공되지 않을 수도 있습니다. 최근 90일 동안 아마존에서 근무한 적이 있다면 입사 보너스를 받을 수 없습니다.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "이 오퍼에는 위에서 언급한 특정 세부 정보에 기반한 {signOnBonus}의 입사 보너스가 포함되어 있습니다. 여러 차례 나누어 지급될 수 있으며 시작 후 180일까지 연장될 수 있습니다.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {

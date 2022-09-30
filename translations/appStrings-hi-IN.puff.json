@@ -224,17 +224,17 @@
       "value" : "जैसे कि लागू कानून द्वारा अनुमति दी गई है, आपकी पेशकश ज़रूरी बैकग्राउंड की जांच, ड्रग स्क्रीनिंग (अगर लागू हो) और योग्यता जांच (अगर लागू हो) को सफलतापूर्वक पारित करने पर आकस्मिक है, इसलिए यह ज़रूरी है कि आप अगले पेज पर रोजगार से पहले के चरणों को पूरा करें. कुछ परिस्थितियों में, पूर्व-रोजगार ज़रूरतें समय पर पूरी नहीं होने के कारण आपके पहले दिन में देरी हो सकती है. अगर यह स्थिति है, तो हम जल्द ही आपसे संपर्क करेंगे.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "आपके प्रारंभ समय में देरी हो सकती है अगर:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "मौसमी अवधि का अर्थ क्या है?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "नौकरी के कर्तव्यों में कोई अंतर नहीं है, अंतर यह है कि इस भूमिका का उद्देश्य अस्थायी होना है और 11 महीने से अधिक नहीं है.  अगर आप स्थायी रूप से जुड़ने के इच्छुक हैं, तो अवसर उपलब्ध हो सकते हैं.  अन्यथा, आपको सूचित किया जाएगा कि आपका असाइनमेंट कब समाप्त होगा.",
-      "note" : "Text for about seasonal duration popover content"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "इस पेशकश में ऊपर दिए गए विशिष्ट डिटेल्स के आधार पर $XXXX का एक साइन ऑन बोनस शामिल है. यह कई किस्तों पर देय है जो आपके शुरूआत करने से 180 दिन बाद तक बढ़ाई जा सकती हैं. अगर आपको फिर से शेड्यूल करना है, तो हो सकता है कि यह विशिष्ट पेशकश आपके द्वारा चुनी गई नई भूमिका के आधार पर उपलब्ध न हो. अगर आपने हाल ही में पिछले 90 दिनों में Amazon के लिए काम किया है, तो आप किसी भी साइन ऑन बोनस के लिए योग्य नहीं होंगे.",
-      "note" : "Text for how to sign on bonus popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "मैं साइन ऑन बोनस कैसे हासिल करूं?",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "बंद करें.",
@@ -1446,6 +1446,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "शिफ़्ट",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "सहज",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

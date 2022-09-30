@@ -224,16 +224,52 @@
       "value" : "Conformément à la loi en vigueur, votre offre est conditionnée par la réussite de la vérification des antécédents, du test de dépistage de drogue (le cas échéant) et par la réussite de la vérification de l’admissibilité au réembauchage (le cas échéant). Il est donc important que vous suiviez les étapes de préalables à l’embauche à la page suivante. Dans certaines cas, votre premier jour de travail peut être retardé si les conditions de pré-embauche ne sont pas remplies à temps. Si tel est le cas, vous pouvez vous attendre à ce que nous vous contactions sous peu.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "La présente offre confirme que vous serez embauché comme employé d’Amazon si vous réussissez vos tests d’antécédents, votre test de dépistage de drogues et toutes les autres activités de pré-embauche requises.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Votre heure de début pourrait être retardée si :",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "vous ne répondez pas aux exigences en matière de dépistage de drogues à temps;",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "les places disponibles pour la formation s’épuisent;",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Si votre date de début est retardée, vous recevrez des informations supplémentaires sur les prochaines étapes.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Que signifie une durée saisonnière?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Il n'y a pas de différence dans les tâches professionnelles, la différence est que ce rôle est sensé être temporaire et ne pas dépasser 11 mois.  Si vous souhaitez rejoindre de façon permanente, l'occasion pourrait se présenter.  Sinon, vous serez informé lorsque votre affectation sera terminée.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Comment obtenir le bonus d’inscription?",
+      "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Cette offre comprend un bonus d'inscription de XXXX $ en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s'étendre jusqu'à 180 jours après le début. Si vous devez replanifier, cette offre spécifique pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d'inscription.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Cette offre particulière peut ne pas être disponible si :",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "vous replanifiez votre quart de travail;",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Vous replanifiez votre date de début, ou",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Vous choisissez un nouveau rôle.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Si vous avez travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d’inscription.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1446,6 +1482,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Quart de travail",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

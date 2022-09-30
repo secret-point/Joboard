@@ -224,16 +224,24 @@
       "value" : "Conforme permitido pela lei aplicável, sua oferta depende da aprovação na verificação de antecedentes necessária, teste de detecção de uso de drogas (se aplicável) e verificação de qualificação de recontratação (se aplicável). Por isso, é importante que você conclua as etapas de pré-contratação na próxima página. Em algumas circunstâncias, seu primeiro dia pode ser adiado devido ao fato de os requisitos de pré-contratação não serem concluídos a tempo. Se for esse o caso, você pode esperar um contato nosso em breve.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "A verificação de antecedentes não é concluída a tempo.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "O que significa uma duração sazonal?",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Não há diferença nas funções de trabalho, a diferença é que essa função deve ser temporária e não ultrapassar 11 meses.  Se você estiver interessado em ingressar de forma permanente, a oportunidade pode ficar disponível.  Caso contrário, você será notificado quando sua contratação terminar.",
+      "value" : "Não há diferença nas funções da vaga, porém esta vaga é temporária e não dura mais do que 11 meses. Pode haver a oportunidade de uma contratação permanente, se você tiver interesse. Caso contrário, avisaremos você quando sua contratação terminar.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta inclui um bônus de inscrição de $XXXX com base nos detalhes específicos mencionados acima. Ele será pago em várias parcelas que podem se estender até 180 dias após o início. Se você precisar reagendar, essa oferta específica pode não estar disponível com base na nova função que você escolher. Se você trabalhou recentemente para a Amazon nos últimos 90 dias, não será elegível para nenhum bônus de inscrição.",
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Vagas sazonais e regulares têm as mesmas funções profissionais. No entanto, as vagas sazonais são temporárias e não duram mais do que 11 meses. Se você quiser trabalhar na Amazon de forma permanente, a oportunidade pode ficar disponível no futuro. Caso contrário, avisaremos você quando sua contratação terminar.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bônus de contratação de {signOnBonus} com base nos detalhes específicos mencionados acima. Ele será pago em várias parcelas que podem se estender até 180 dias após o seu primeiro dia de trabalho.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1446,6 +1454,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexível",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

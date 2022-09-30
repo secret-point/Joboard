@@ -224,20 +224,44 @@
       "value" : "Conforme o permitido pela lei aplicável, a sua oferta depende de passar com sucesso na verificação de antecedentes, teste de deteção de drogas (se aplicável) e verificação de elegibilidade de recontratação (se aplicável), pelo que é importante que conclua as etapas de pré-contratação na próxima página. Em algumas circunstâncias, o seu primeiro dia poderá ser adiado por os requisitos de pré-contratação não terem sido concluídos a tempo. Se for esse o caso, deverá receber notícias nossas em breve.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Esta oferta é a confirmação de que será contratado como colaborador da Amazon, se concluir com sucesso a sua verificação de antecedentes, o teste de deteção de drogas e todas as outras atividades de pré-contratação obrigatórias .",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Não cumprir atempadamente os requisitos do teste de deteção de drogas",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "As vagas para a formação esgotarem",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Se a sua data de início for adiada, irá receber informações adicionais sobre os passos seguintes.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "O que significa uma duração sazonal?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Não existem diferenças nas funções de trabalho. A diferença é que esta função é temporária e inferior a 11 meses.  Se estiver interessado em se juntar a nós de forma permanente, poderá surgir essa oportunidade.  Caso contrário, será notificado da data de término da sua função.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Esta oferta específica poderá não estar disponível se:",
+      "note" : "Text for how to sign on bonus popover content"
     },
-    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
-      "value" : "As funções sazonais e regulares têm as mesmas funções de trabalho. Contudo, as funções sazonais destinam-se a ser temporárias, com uma duração máxima de 11 meses. Se estiver interessado em ingressar na Amazon de forma permanente, futuramente poderá ficar disponível uma oportunidade.  Caso contrário, será notificado da data de término da sua função.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Reagendar o seu turno",
+      "note" : "Text for how to sign on bonus popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta inclui um bónus de contratação de XXXX $, com base nos detalhes específicos mencionados acima. Este valor é pago em prestações que poderão ser prorrogadas por até 180 dias, após o início da sua função. Se precisar de reagendar, esta oferta específica poderá não estar disponível, conforme a nova função que escolher. Se trabalhou recentemente para a Amazon, nos últimos 90 dias, não será elegível para nenhum bónus de contratação.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Reagendar a sua data de início ou",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Escolher uma nova função.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Se trabalhou para a Amazon nos últimos 90 dias, não será elegível para nenhum bónus de contratação.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {

@@ -224,17 +224,21 @@
       "value" : "Yürürlükteki yasaların izin verdiği şekilde, teklifiniz gerekli geçmiş kontrolünü, (varsa) uyuşturucu taramasını ve (varsa) yeniden işe alınma uygunluk kontrolünü başarıyla geçmenize bağlıdır, bu nedenle bir sonraki sayfada yer alan işe alım öncesi adımları tamamlamanız önemlidir. Bazı durumlarda, işe alım öncesi gereksinimlerin zamanında tamamlanmaması nedeniyle ilk gününüz gecikebilir. Bu durumda, yakın zamanda bizden haber almayı bekleyebilirsiniz.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Şu durumlarda başlangıç zamanınız gecikebilir:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Sezonluk süre ne anlama geliyor?",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "İş görevlerinde fark yoktur. Fark, bu rolün geçici olmasının ve 11 aydan uzun olmamasının planlanmasıdır.  Kalıcı olarak katılmakla ilgileniyorsanız fırsat ortaya çıkabilir.  Aksi takdirde atamanızın ne zaman sonlandırılacağı konusunda bilgilendirileceksiniz.",
+      "value" : "İş görevlerinde fark yoktur. Fark, bu rolün geçici olarak ve 11 aydan uzun olmayacak şekilde planlanmasıdır. Kalıcı olarak katılmakla ilgileniyorsanız bu fırsat ortaya çıkabilir. Aksi takdirde görevinizin ne zaman sonlandırılacağı konusunda bilgilendirileceksiniz.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre XXXX $ bonus işareti dahildir. Siz başladıktan sonra 180 güne kadar uzatılabilecek birden fazla taksitle ödenebilir. Yeniden planlamak zorunda kalırsanız bu özel teklif, seçtiğiniz yeni role göre kullanılamayabilir. Son 90 günde Amazon için çalıştıysanız herhangi bir bonus işareti için uygun olmayacaksınız.",
-      "note" : "Text for how to sign on bonus popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "İşe başlama bonusunu nasıl alabilirim?",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Kapat.",
@@ -1446,6 +1450,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Vardiya",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Esnek",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

@@ -228,6 +228,14 @@
       "value" : "הצעה זו היא אישור לקבלתך לעבודה ב-Amazon אם בדיקת הרקע שלך, בדיקת סמים וכל פעילות אחרת הנדרשת לפני השכרה שלך יושלמו בהצלחה.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "שעת ההתחלה שלך עשויה להתעכב אם:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "בדיקת הרקע לא הושלמה בזמן.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "אינך עומד בדרישות בדיקת הסמים בזמן",
       "note" : "Text for contingent offer meaning popover content"
@@ -244,12 +252,12 @@
       "value" : "מה המשמעות של משך הזמן העונתי?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "אין הבדל בחובות התפקיד, ההבדל הוא שתפקיד זה נועד להיות זמני ולא יותר מ-11 חודשים.  אם ברצונך להצטרף על בסיס קבוע, ייתכן שההזדמנות תהיה זמינה.  אחרת, תישלח לך הודעה כאשר המשימה שלך תסתיים.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "איך אקבל את מענק החתימה?",
+      "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "הצעה זו כוללת מענק חתימה של $XXXX בהתבסס על הפרטים הספציפיים שצוינו למעלה. הוא משולם במספר תשלומים, שניתן להאריך עד 180 יום לאחר ההתחלה. אם נדרש לתזמן מחדש, ייתכן שההצעה הספציפית הזו לא תהיה זמינה בהתבסס על התפקיד החדש שנבחר על ידך. אם עבדת לאחרונה עבור Amazon ב-90 הימים האחרונים אין לך זכאות למענק חתימה.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "המבצע הזה כולל מענק חתימה בסך {signOnBonus}בהתבסס על הפרטים הספציפיים שצוינו לעיל. המענק משולם במספר תשלומים, שעשויים להתארך עד 180 יום לאחר תאריך ההתחלה.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -1482,6 +1490,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "משמרת",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "גמיש",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

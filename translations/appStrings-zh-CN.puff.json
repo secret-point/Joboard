@@ -228,6 +228,10 @@
       "value" : "此聘任书即确认，一旦您成功通过背景调查、药检、及其他所有规定的入职前活动，您将会被聘用为亚马逊员工。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "背景调查未按时完成。",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "您未准时达到药检要求",
       "note" : "Text for contingent offer meaning popover content"
@@ -245,11 +249,19 @@
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "在工作职责上并无差异，不同之处在于该职位本就是临时性的，且期限不超过 11 个月。 如果有兴趣加入固定工作的岗位，这个机会可能会有。 否则, 您会在任务终止时收到通知。",
+      "value" : "工作职责没有区别，不同之处在于该职位是临时性的，不超过11个月。如果有兴趣加入固定的工作岗位，将来可能会有工作机会。否则，您会在工作结束时收到通知。",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "依据如上所述具体详情，此优惠包括$XXXX的签约奖金。可通过分期付款方式支付，偿还期限可能延长至开始后的180天。如果您必须重新排期，此特别优惠就可能无法用于您新选的职位。如果您在过去90天内为亚马逊工作过，则不符合获得签约奖金的条件。",
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "季节性职位和常规职位的工作职责相同。但是，季节性职位是临时性的，持续时间不超过 11 个月。如果您有兴趣加入亚马逊的固定工作职位，将来可能会有工作机会。否则，您会在工作结束时收到通知。",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "怎样才能获得签约奖金？",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "依据上述具体详情，此优惠包括一份 {signOnBonus} 的签约奖金。可通过分期付款方式支付，付款期限可能延长至您开始后的 180 天。",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {

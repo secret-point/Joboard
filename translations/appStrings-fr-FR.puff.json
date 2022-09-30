@@ -228,6 +228,10 @@
       "value" : "Cette offre confirme que vous serez recruté en tant qu'employé d'Amazon si vous réussissez votre formation, votre test de dépistage de drogues et toutes les autres activités requises préalables à l'embauche.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Votre heure de début peut être retardée dans les cas suivants :",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Vous ne répondez pas, dans les temps, aux exigences du test de dépistage de drogues",
       "note" : "Text for contingent offer meaning popover content"
@@ -244,13 +248,9 @@
       "value" : "Que signifie une durée saisonnière ?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Les tâches sont identiques, la différence réside dans la durée de la mission : elle est entendue comme temporaire et ne peut pas excéder une période de 11 mois.  Si vous souhaitez nous rejoindre sur une base permanente, l'opportunité peut se présenter.  Si ce n’est pas le cas, vous serez averti de la fin de votre mission.",
-      "note" : "Text for about seasonal duration popover content"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Cette offre comprend une prime à la signature de XXXX $ basée sur les détails spécifiques indiqués ci-dessus. La prime peut être versée en plusieurs fois sur une période pouvant aller jusqu'à 180 jours après votre prise de poste. Si vous devez replanifier votre mission, il est possible que cette offre spécifique ne soit pas disponible selon le nouveau rôle que vous choisirez. Si vous avez travaillé pour Amazon au cours des 90 jours précédents, vous ne pourrez bénéficier d'aucune prime à la signature.",
-      "note" : "Text for how to sign on bonus popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Comment puis-je bénéficier de la prime à la signature ?",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre spécifique peut ne pas être disponible dans les cas suivants :",
@@ -1482,6 +1482,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Quart de travail",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

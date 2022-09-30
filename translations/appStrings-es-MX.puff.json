@@ -228,6 +228,10 @@
       "value" : "Esta oferta es una confirmación de que serás contratado como empleado de Amazon si completas con éxito tus antecedentes, prueba de drogas y todas las demás actividades requeridas previas a la contratación.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "La verificación de antecedentes no se completó a tiempo.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "No cumples con los requisitos de prueba de drogas a tiempo",
       "note" : "Text for contingent offer meaning popover content"
@@ -244,12 +248,12 @@
       "value" : "¿Qué significa duración estacional?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "No hay diferencia en las funciones laborales, la diferencia es que este rol es temporal y no mayor a 11 meses.  Si te interesa unirte de manera permanente, la oportunidad podría estar disponible más adelante.  De lo contrario, se te notificará cuándo finalizará tu asignación.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "¿Cómo obtengo el bono de contratación?",
+      "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de ${signOnBonus} basado en los detalles señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta en específico no esté disponible en función del nuevo rol que elijas. Si trabajaste recientemente para Amazon en los últimos 90 días, no serás elegible para el bono de contratación.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta incluye un bono de contratación de {signOnBonus} con base en los detalles señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de que comiences.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -1482,6 +1486,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

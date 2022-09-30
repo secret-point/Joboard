@@ -38,10 +38,24 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     scheduleText,
     employmentTypeL10N,
     totalPayRate,
-    totalPayRateL10N
+    totalPayRateL10N,
+    parsedTrainingDate
   } = scheduleDetail;
 
   const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N).locale(getLocale()).format('MMM DD, YYYY')}`: firstDayOnSite;
+
+    const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
+
+    const renderShiftDate = () => {
+        let datesList:string[] = [];
+        const shiftDate = parsedTrainingDate?.split('\n')
+        shiftDate?.forEach((item) => {
+            const dateValue = moment(item,'YYYY-MMM-DD hh:mm:A - hh:mm A').locale(getLocale()).format('MMM DD YYYY hh:mm A - hh:mm A');
+            datesList.push(dateValue)
+        });
+
+      return datesList.map( (dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>))
+    }
 
   //TODO revert the function back once translations are in
   const renderRequiredLanguages = (schedule: Schedule): string => {
@@ -70,7 +84,14 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
           <Text fontSize="T100">{scheduleText}</Text>
       </Row>
 
-      <Row gridGap={5} alignItems="center">
+        {parsedTrainingDate &&
+            <Col gridGap={5} alignItems="left" padding={{left:'S400'}} >
+            <Text fontSize="T100" style={{fontStyle:"italic"}}>{shift}</Text>
+            {renderShiftDate()}
+        </Col>
+        }
+
+        <Row gridGap={5} alignItems="center">
           <IconPaymentFill size={IconSize.ExtraSmall} />
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
           <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>

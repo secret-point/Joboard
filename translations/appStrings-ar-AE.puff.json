@@ -224,16 +224,28 @@
       "value" : "وفقًا لما يسمح به القانون المعمول به، يعد العرض الخاص بك مشروطًا باجتياز فحص الخلفية المطلوب، وفحص المخدرات (إن وُجد)، والتحقق من الأهلية لإعادة التوظيف (إن وُجد)، لذلك من المهم أن تكمل خطوات ما قبل التوظيف في الصفحة التالية. في بعض الحالات، قد يتأخر يومك الأول بسبب عدم إكمال متطلبات ما قبل التوظيف في الوقت المناسب. إذا كان هذا هو الحال، يمكنك توقع تواصلنا معك قريبًا.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "قد يتأخر وقت البدء الخاص بك إذا:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "لم يتم إكمال التحقق من الخلفية في الوقت المحدد.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "ماذا تعني المدة الموسمية؟",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "لا يوجد فرق في واجبات الوظيفة، والفرق هو أن هذا الدور يهدف إلى أن يكون مؤقتًا ولا يزيد عن 11 شهرًا.  إذا كنت مهتمًا بالانضمام على أساس دائم، فقد تصبح الفرصة متاحة.  وإلا سيتم إخطارك عندما تنتهي مهمتك.",
+      "value" : "لا يوجد فرق في الواجبات الوظيفية، والفرق هو أن هذا الدور يهدف إلى أن يكون مؤقتًا ولا يزيد عن 11 شهرًا. إذا كنت مهتمًا بالانضمام على أساس دائم، فقد تصبح الفرصة متاحة. وإلا سيتم إخطارك عندما تنتهي مهمتك.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "يتضمن هذا العرض مكافأة تسجيل دخول بقيمة XXXX$ بناءً على التفاصيل المحددة المذكورة أعلاه. يتم دفعها على أقساط متعددة قد تمتد إلى 180 يومًا بعد البدء. إذا كان عليك إعادة تحديد الموعد، فقد لا يكون هذا العرض المحدد متاحًا بناءً على الدور الجديد الذي تختاره. إذا كنت قد عملت مؤخرًا لأمازون في آخر 90 يومًا، فلن تكون مؤهلاً للحصول على أي مكافأة لتسجيل الدخول.",
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "الأدوار الموسمية والأدوار العادية تحتوي على الواجبات الوظيفية نفسها. لكن الهدف من الأدوار الموسمية يكون مؤقتًا، وهي لا تدوم أكثر من 11 شهرًا. إذا كنت مهتمًا بالانضمام إلى أمازون بشكل دائم، فقد تصبح الفرصة متاحة في المستقبل. وإلا سيتم إشعارك عندما تنتهي مهمتك.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "يتضمن هذا العرض مكافأة تسجيل دخول بقيمة {signOnBonus} بناءً على التفاصيل المحددة المذكورة أعلاه. يتم دفعها على أقساط متعددة قد تمتد إلى 180 يومًا بعد البدء.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1446,6 +1458,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "مناوبة العمل",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "مرِن",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

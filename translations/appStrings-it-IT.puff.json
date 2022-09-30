@@ -224,16 +224,28 @@
       "value" : "Come previsto dalla legge applicabile, la tua offerta è subordinata al superamento del controllo richiesto dei precedenti personali, dello screening antidroga (se è il caso) e del controllo di idoneità alla riassunzione (se è il caso), quindi è importante completare i passaggi pre-assunzione riportati nella pagina successiva. In alcune circostanze, il primo giorno di lavoro può essere posticipato a causa del mancato completamento dei requisiti di pre-assunzione in tempo utile. Se questo è il caso, puoi aspettarti di avere presto nostre notizie.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "L'orario di inizio potrebbe subire ritardi se:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Il controllo dei precedenti non è stato completato in tempo.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Cosa significa durata stagionale?",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Non c'è differenza nelle mansioni lavorative, la differenza è che questo ruolo è destinato a essere temporaneo e non più lungo di 11 mesi.  Se sei interessato ad aderire in modo permanente, l'opportunità potrebbe diventare disponibile.  Altrimenti, riceverai una notifica quando il tuo incarico terminerà.",
+      "value" : "Non c'è differenza nelle mansioni lavorative, la differenza è che questo ruolo è destinato a essere temporaneo e non più esteso di 11 mesi. Se hai interesse ad aderire in modo permanente, l'opportunità potrebbe diventare disponibile. Altrimenti, riceverai una notifica quando il tuo incarico terminerà.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Questa offerta include un bonus di iscrizione di XXXX $ in base ai dettagli specifici sopra indicati. È pagabile in più rate che possono estendersi fino a 180 giorni dopo l'inizio. Se devi riprogrammare, questa offerta specifica potrebbe non essere disponibile in base al nuovo ruolo che scegli. Se hai recentemente lavorato per Amazon negli ultimi 90 giorni, non avrai diritto a ricevere alcun bonus di accesso.",
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Come posso ottenere il bonus di iscrizione?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Questa offerta include un bonus di iscrizione di {signOnBonus} in base ai dettagli specifici sopra indicati. È pagabile in più rate che possono estendersi fino a 180 giorni dopo l'inizio.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1446,6 +1458,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flessibile",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

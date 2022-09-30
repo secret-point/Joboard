@@ -224,17 +224,25 @@
       "value" : "在適用法律允許的情況下，要取得工作邀請，您必須成功通過所需的背景調查、藥物篩選 (如果適用) 和重新雇用資格檢查 (如果適用)，因此請務必完成下一頁的僱聘前步驟。某些情況下，如果未能及時滿足僱聘前要求，您的報到日可能會延遲。如果是這種情況，您很快會收到我們的訊息。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "如遇以下情況，您的開始時間可能會延遲：",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "季節性職位的持續時間是什麼意思？",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "工作職責沒有區別，不同之處在於這個職位是臨時的，持續時間不超過 11 個月。 如果您有興趣長期加入，則可能會有機會。 否則，您將在任務結束時收到通知。",
+      "value" : "工作職責沒有區別，不同之處在於這個職位是臨時的，持續時間不超過 11 個月。如果您有興趣長期加入，則可能會有機會。否則，您將在任務結束時收到通知。",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "此職位邀約包括基於上述具體細節的 $XXXX 簽約獎金。可多次分期支付，期限可延長至您開始工作後的 180 天。如果您必須重新安排，則根據您選擇的新職位，此特定職位邀約可能不會提供給您。如果您在過去 90 天內剛在 Amazon 工作過，則您將不符合獲得任何簽約獎金的要求。",
-      "note" : "Text for how to sign on bonus popover content"
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "季節性職位和固定職位具有相同的工作職責。然而，季節性職位是臨時的，持續時間不超過 11 個月。如果您有興趣長期加入 Amazon，將來可能會有機會。否則，您將在任務結束時收到通知。",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "我如何獲得簽約獎金？",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "關閉。",
@@ -1446,6 +1454,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "班次",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "彈性",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

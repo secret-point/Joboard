@@ -228,6 +228,14 @@
       "value" : "This offer is a confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background check, drug test and all other required pre-hire activities.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Your start time might be delayed if:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "The background check is not completed on time.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "You don’t meet the drug test requirements on time",
       "note" : "Text for contingent offer meaning popover content"
@@ -245,15 +253,19 @@
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "There is no difference in job duties, the difference is this role is intended to be temporary and no longer than 11 months.  If you are interested in joining on a permanent basis, the opportunity may become available.  Otherwise, you’ll be notified when your assignment will end.",
+      "value" : "There is no difference in job duties, the difference is this role is intended to be temporary and no longer than 11 months. If you are interested in joining on a permanent basis, the opportunity may become available. Otherwise, you’ll be notified when your assignment will end.",
       "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedules-card-about-seasonal-duration-popover-content" : {
-      "value" : "Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future.  Otherwise, you’ll be notified when your assignment will end.",
+      "value" : "Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future. Otherwise, you’ll be notified when your assignment will end.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "This offer includes a sign on bonus of $XXXX based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have recently worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.",
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "How do I get the sign-on bonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "This offer includes a sign-on bonus of {signOnBonus} based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -1486,6 +1498,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Shift",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

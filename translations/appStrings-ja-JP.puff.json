@@ -228,6 +228,14 @@
       "value" : "このオファーは、経歴、薬物検査、その他必要な雇用前の活動をすべて無事に完了した場合に、Amazonの従業員として雇用されることを確認するものです。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "次の場合、開始時間が遅れる可能性があります。:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "身元調査は予定通りに完了しませんでした。",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "薬物検査の要件を期日どおりに満たしていない",
       "note" : "Text for contingent offer meaning popover content"
@@ -244,12 +252,12 @@
       "value" : "シーズン限定とはどういう意味ですか?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "役職に違いはありません。この役職は11か月以内に終了する臨時の仕事であるという点が異なります。 無期雇用に興味のある方には、その機会が提供される場合もあります。 それ以外の場合は、契約期間の終了時に通知されます。",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "サインオンボーナスはどうすればもらえますか？",
+      "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "このセールには、上記の具体的な詳細に基づく$XXXXのサインオンボーナスが含まれています。開始後180日に渡り、月払いによって複数回支払われる場合があります。スケジュールを変更する必要がある場合、選択した新しい役職によっては、このセールがない場合もあります。過去90日間にAmazonで働いたことがある場合は、サインオンボーナスの対象にはなりません。",
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "このオファーには、上記の具体的な詳細に基づく{signOnBonus}のサインオンボーナスが含まれています。開始後180日に渡り、月払いによって複数回支払われる場合があります。",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -1482,6 +1490,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "シフト",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "フレックス",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

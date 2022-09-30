@@ -332,6 +332,7 @@ export interface Schedule {
     totalPayRateL10N: string;
     employmentTypeL10N: string;
     requiredLanguage: string[] | null;
+    parsedTrainingDate: string;
 }
 
 export interface HoursPerWeek {

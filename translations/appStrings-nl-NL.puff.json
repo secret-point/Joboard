@@ -224,20 +224,64 @@
       "value" : "Zoals toegestaan door de toepasselijke wetgeving, is je aanbod afhankelijk van het succesvol doorstaan van het vereiste antecedentenonderzoek, de drugsscreening (indien van toepassing) en de geschiktheidscontrole voor heraanwerving (indien van toepassing). Dus het is belangrijk dat je de stappen vóór indiensttreding op de volgende pagina voltooit. In sommige omstandigheden kan je eerste dag vertraging oplopen omdat de vereisten voor indiensttreding niet op tijd zijn voltooid. Als dit het geval is, hoor je snel van ons.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Dit aanbod is een bevestiging dat je wordt aangenomen als werknemer van Amazon als je je achtergrond-, drugstest en alle andere vereiste activiteiten vóór de aanwerving met succes hebt afgerond.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Je starttijd kan worden uitgesteld als:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Het antecedentenonderzoek is niet op tijd voltooid.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Je voldoet niet op tijd aan de vereisten voor drugstest",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Trainingsplekken vullen zich",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Als je startdatum is uitgesteld, ontvang je aanvullende informatie over de volgende stappen.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Wat betekent een seizoensduur?",
       "note" : "Text for about seasonal duration popover title"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Er is geen verschil in functie, het verschil is dat deze functie bedoeld is als tijdelijk en niet langer dan 11 maanden.  Als je geïnteresseerd bent om op permanente basis lid te worden, kan de mogelijkheid zich voordoen.  Anders krijg je een melding wanneer je opdracht eindigt.",
+      "value" : "Er is geen verschil in functie, het verschil is dat deze rol als tijdelijk is bedoeld en niet langer dan 11 maanden. Als je geïnteresseerd bent om op permanente basis lid te worden, kan de mogelijkheid zich voordoen. Anders krijg je een melding wanneer je opdracht eindigt.",
       "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedules-card-about-seasonal-duration-popover-content" : {
-      "value" : "Seizoensrollen en reguliere rollen hebben dezelfde taken. Seizoensrollen zijn echter voor tijdelijk bedoeld en niet langer dan 11 maanden te duren. Als je geïnteresseerd bent om permanent lid te worden van Amazon, kan deze mogelijkheid in de toekomst beschikbaar komen.  Anders krijg je een melding wanneer je opdracht eindigt.",
+      "value" : "Seizoensrollen en reguliere rollen hebben dezelfde taken. Seizoensrollen zijn echter voor tijdelijk bedoeld en duren niet langer dan 11 maanden. Als je geïnteresseerd bent om permanent lid te worden van Amazon, kan deze mogelijkheid in de toekomst beschikbaar komen. Anders krijg je een melding wanneer je opdracht eindigt.",
       "note" : "Text for about seasonal duration popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Deze aanbieding omvat een aanmeldbonus van $ XXXX op basis van de specifieke details die hierboven zijn vermeld. Het is betaalbaar in meerdere termijnen, die kunnen worden verlengd tot 180 dagen na je start. Als je een nieuwe planning moet maken, is het mogelijk dat dit specifieke aanbod niet beschikbaar is op basis van de nieuwe rol die je kiest. Als je de afgelopen 90 dagen onlangs voor Amazon hebt gewerkt, kom je niet in aanmerking voor een aanmeldbonus.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Deze aanbieding omvat een aanmeldbonus van {signOnBonus} op basis van de specifieke details die hierboven zijn vermeld. Het wordt uitgekeerd in meerdere termijnen, die kunnen worden verlengd tot 180 dagen na je start.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Deze specifieke aanbieding is mogelijk niet beschikbaar als:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Je verzet je dienst",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Je verzet startdatum opnieuw, of",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Je kiest een nieuwe rol.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Als je de afgelopen 90 dagen voor Amazon hebt gewerkt, kom je niet in aanmerking voor een aanmeldbonus.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {

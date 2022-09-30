@@ -224,16 +224,44 @@
       "value" : "Seperti yang dibenarkan oleh undang-undang yang terpakai, tawaran anda bergantung pada kejayaan lulus semakan latar belakang yang diperlukan, pemeriksaan dadah (jika berkenaan) dan pemeriksaan kelayakan pengambilan kerja semula (jika berkenaan), jadi penting untuk anda menyelesaikan langkah-langkah pra-pekerjaan di halaman seterusnya. Dalam sesetengah keadaan, hari pertama anda mungkin ditangguhkan kerana keperluan pra-pekerjaan tidak diselesaikan tepat pada waktunya. Jika ini berlaku, anda boleh mengharapkan untuk mendengar daripada kami tidak lama lagi.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Tawaran ini adalah pengesahan bahawa anda akan diupah sebagai pekerja Amazon jika anda berjaya melengkapkan latar belakang anda, ujian dadah dan semua aktiviti pra-lantikan lain yang diperlukan.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Anda tidak memenuhi keperluan ujian dadah tepat pada waktunya",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Mengisi tempat latihan",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Sekiranya tarikh mula anda ditangguhkan, anda akan menerima maklumat tambahan mengenai langkah seterusnya.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Apakah maksud jangka masa bermusim?",
       "note" : "Text for about seasonal duration popover title"
     },
-    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
-      "value" : "Tidak ada perbezaan dalam tugas pekerjaan, perbezaannya ialah peranan ini bertujuan untuk bersifat sementara dan tidak lebih dari 11 bulan.  Sekiranya anda berminat untuk menyertai secara tetap, peluang mungkin tersedia.  Jika tidak, anda akan diberitahu apabila tugasan anda akan berakhir.",
-      "note" : "Text for about seasonal duration popover content"
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Tawaran khusus ini mungkin tidak tersedia jika:",
+      "note" : "Text for how to sign on bonus popover content"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak $XXXX berdasarkan butiran khusus yang dinyatakan di atas. Ia perlu dibayar melalui ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula. Jika anda perlu menjadualkan semula, tawaran khusus ini mungkin tidak tersedia berdasarkan peranan baharu yang anda pilih. Sekiranya anda baru-baru ini bekerja untuk Amazon dalam tempoh 90 hari lepas, anda tidak layak mendapat sebarang bonus penyertaan.",
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Anda menjadualkan semula syif anda",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Anda menjadualkan semula tarikh mula anda, atau",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Anda memilih peranan baharu.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Sekiranya anda telah bekerja untuk Amazon dalam 90 hari terakhir, anda tidak akan layak mendapat sebarang bonus penyertaan.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
