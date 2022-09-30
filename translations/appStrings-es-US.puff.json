@@ -249,7 +249,7 @@
       "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de {signOnBonus} basado en los detalles señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta en específico no esté disponible en función del nuevo rol que elijas. Si trabajaste recientemente para Amazon en los últimos 90 días, no serás elegible para el bono de contratación.",
+      "value" : "Esta oferta incluye un bono de contratación de ${signOnBonus} basado en los detalles señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de comenzar. Si tienes que reprogramar, es posible que esta oferta en específico no esté disponible en función del nuevo rol que elijas. Si trabajaste recientemente para Amazon en los últimos 90 días, no serás elegible para el bono de contratación.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -2227,6 +2227,10 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Se produjo un error con el servidor websocket. Inténtalo de nuevo o actualiza el navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "¿Cómo obtengo el bono de contratación?",
+      "note" : "Text for how to sign on bonus popover title"
     }
   }
 }

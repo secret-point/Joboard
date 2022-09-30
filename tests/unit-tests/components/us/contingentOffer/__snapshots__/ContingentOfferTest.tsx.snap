@@ -30,6 +30,7 @@ exports[`ContingentOffer should match snapshot 1`] = `
   />
   <Col
     className="jobDescriptionContainer"
+    gridGap={8}
   >
     <H4
       color="neutral90"
