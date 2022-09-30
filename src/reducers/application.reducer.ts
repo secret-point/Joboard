@@ -1,6 +1,6 @@
-import { Application } from "../utils/types/common";
 import { APPLICATION_ACTION_TYPES, ApplicationActionTypes } from "../actions/ApplicationActions/applicationActionTypes";
 import { sanitizeApplicationData } from "../utils/helper";
+import { Application } from "../utils/types/common";
 
 export interface ApplicationState {
     loading: boolean;
@@ -27,7 +27,9 @@ export default function applicationReducer( state: ApplicationState = initApplic
             };
         case APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS:
         case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS:
-        case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS:
+        // DO not include CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS, it will mistakenly change the application loading
+        // status while updateApplication is still loading
+        // case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS:
         case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS:
         case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_SUCCESS:
             const sanitizedApplicationData = sanitizeApplicationData(action.payload);

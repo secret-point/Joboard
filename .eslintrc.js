@@ -76,7 +76,7 @@ module.exports = {
       'object': true,
       'array': false
     }],
-    'no-plusplus': ['error', {
+    'no-plusplus': ['warn', {
       'allowForLoopAfterthoughts': true
     }],
     'object-curly-spacing': ['error', 'always'],  // add spacing for object curly spacing, e.g. { key: 'value' }

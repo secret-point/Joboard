@@ -14,7 +14,6 @@ export const DebouncedButton = (props: DebouncedButtonProps) => {
   const { debounceTime, onClick, ...restButtonProps } = props;
 
   const debouncedOnClick = debounce((event) => {
-    console.info("[level] debouncedOnClick....");
     onClick && onClick(event);
   }, debounceTime || DEFAULT_DEBOUNCE_TIME);
 

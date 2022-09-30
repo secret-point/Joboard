@@ -805,16 +805,16 @@ export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
     boundUpdateStepConfigAction(request);
 }
 
-export const loadingStatusHelper = () =>{
+export const loadingStatusHelper = () => {
     const states = store.getState();
     const loadingStates = states ? [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow, states.nhe] : [];
     let loadingCount = 0;
 
-    loadingStates.forEach(loading=>{
+    loadingStates.forEach(loading => {
         if(loading.loading === true){
-            loadingCount++
+            loadingCount++;
         }
-    })
+    });
     return loadingCount > 1;
 }
 
