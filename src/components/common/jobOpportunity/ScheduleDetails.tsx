@@ -41,7 +41,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     totalPayRateL10N
   } = scheduleDetail;
 
-  const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N,"MM DD, YYYY" ).locale(getLocale()).format('MM DD, YYYY')}`: firstDayOnSite;
+  const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N).locale(getLocale()).format('MMM DD, YYYY')}`: firstDayOnSite;
 
   //TODO revert the function back once translations are in
   const renderRequiredLanguages = (schedule: Schedule): string => {
