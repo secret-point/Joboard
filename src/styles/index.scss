@@ -368,3 +368,9 @@ div[data-test-id='SSNExplanationBanner'] {
 .preview-steps-btn-small {
   width: 100%;
 }
+
+body.no-header-footer {
+  #hvh-bb-header, #hvh-bb-footer {
+    display: none;
+  }
+}

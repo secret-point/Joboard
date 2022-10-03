@@ -1,39 +1,39 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { H4, Text } from "@amzn/stencil-react-components/text";
-import { DetailedRadio, Input, InputWrapper } from "@amzn/stencil-react-components/form";
-import { FcraDisclosureConfigList, HasPreviouslyWorkedAtAmazonRadioConfig } from "../../../utils/constants/common";
-import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { DetailedRadio, Input, InputWrapper } from "@amzn/stencil-react-components/form";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { H4, Text } from "@amzn/stencil-react-components/text";
+import queryString from "query-string";
 import { connect } from "react-redux";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { BGCState } from "../../../reducers/bgc.reducer";
-import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, handleWithdrawFcraBGC, validateName } from "../../../utils/helper";
-import { translate as t } from "../../../utils/translator";
 import { useLocation } from "react-router";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,
     resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import queryString from "query-string";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { BGCState } from "../../../reducers/bgc.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { CommonColors } from "../../../utils/colors";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
-import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { FcraDisclosureConfigList, HasPreviouslyWorkedAtAmazonRadioConfig } from "../../../utils/constants/common";
+import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
+import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, handleWithdrawFcraBGC, hideHeaderFooter, showHeaderFooter, validateName } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../DebouncedButton";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    bgc: BGCState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    bgc: BGCState;
 }
 
 interface FcraDisclosureProps {
@@ -58,7 +58,14 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
-    const scheduleDetail = schedule.results.scheduleDetail;
+    const { scheduleDetail } = schedule.results;
+
+    useEffect(() => {
+        hideHeaderFooter();
+        return () => {
+            showHeaderFooter();
+        };
+    }, []);
 
     useEffect(() => {
         boundGetCandidateInfo();

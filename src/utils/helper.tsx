@@ -1313,3 +1313,11 @@ export const initKatalLogger = (envConfig: EnvConfig) => {
       window.log.addErrorListener();
     }
 };
+
+export const hideHeaderFooter = () => {
+    document.body.classList.add('no-header-footer');
+};
+
+export const showHeaderFooter = () => {
+    document.body.classList.remove('no-header-footer');
+};

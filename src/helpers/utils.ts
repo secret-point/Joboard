@@ -1,16 +1,16 @@
-import { CheckBoxItem } from "../@types";
-import queryString from "query-string";
+import { isArray, isBoolean } from "lodash";
+import filter from "lodash/filter";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
-import filter from "lodash/filter";
-import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import propertyOf from "lodash/propertyOf";
-import { CS_DOMAIN_LIST } from "../constants";
-import { isArray, isBoolean } from "lodash";
-import store from "../store/store";
-import { Application } from "../utils/types/common";
+import queryString from "query-string";
+import { CheckBoxItem } from "../@types";
+import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import { PAGE_ROUTES } from "../components/pageRoutes";
+import { CS_DOMAIN_LIST } from "../constants";
+import store from "../store/store";
 import { getLocale } from "../utils/helper";
+import { Application } from "../utils/types/common";
 
 export const convertPramsToJson = (params: string) => {
   if (!isEmpty(params)) {
@@ -43,7 +43,7 @@ export const launchAuthentication = () => {
   delete queryParams.jobId;
   const queryStr = isEmpty(queryParams)? "" :`&${queryString.stringify(queryParams)}`;
   const hash = window.location.hash.substr(2).split("/");
-  const origin = window.location.origin;
+  const { origin } = window.location;
   const state = window.reduxStore.getState();
   let currentPage;
   const previousPage = window.localStorage.getItem("page");
@@ -131,11 +131,11 @@ export const checkIfIsLegacy = () => {
   return isLegacy;
 }
 
-export const checkIfIsCSRequest = (override? : boolean) => {
+export const checkIfIsCSRequest = (override?: boolean) => {
   if(isBoolean(override)){
     return override
   }
-  const origin = window.location.origin;
+  const { origin } = window.location;
   const isCSRequest = CS_DOMAIN_LIST.includes(origin);
   return isCSRequest;
 }
@@ -207,7 +207,7 @@ export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: 
 };
 
 export const parseQueryParamsArrayToSingleItem = (queryParams: any) => {
-  const parsedQueryParams = {...queryParams};
+  const parsedQueryParams = { ...queryParams };
   Object.keys(parsedQueryParams).forEach((key: string) => {
     const item = parsedQueryParams[key];
     if( isArray(item) && item.length > 0){
@@ -264,11 +264,12 @@ export const requisitionIdSanitizer = (jobId: string) => {
 
 export const injectCsNavAndFooter = (CSDomain: string) => {
   const topNav = document.createElement("div");
+  topNav.id = 'hvh-bb-header';
   topNav.className = "hvh-widget";
   topNav.setAttribute("data-hvh-position", "header")
   document.body.prepend(topNav);
   const footer = document.createElement("div");
-  footer.id = "f";
+  footer.id = "hvh-bb-footer";
   document.body.appendChild(footer);
   const head = document.getElementsByTagName("head")[0];
   const script = document.createElement("script");
@@ -283,7 +284,7 @@ export const injectCsNavAndFooter = (CSDomain: string) => {
   fetch(`${CSDomain}/amabot-rest?page=common&res=footer&locale=${getLocale()}`)
     .then((res) => res.json())
     .then((body) => {
-      document.getElementById("f")!.innerHTML = body.contentMap.footer.bodyContent;
+      document.getElementById("hvh-bb-footer")!.innerHTML = body.contentMap.footer.bodyContent;
     });
 }
 
