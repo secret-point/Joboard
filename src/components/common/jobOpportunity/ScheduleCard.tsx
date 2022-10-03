@@ -1,23 +1,23 @@
+import React from "react";
 import {
     IconChevronRight
 } from '@amzn/stencil-react-components/icons';
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Link } from "@amzn/stencil-react-components/link";
 import { Text } from "@amzn/stencil-react-components/text";
-import React from "react";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { CommonColors } from "../../../utils/colors";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { routeToAppPageWithPath } from "../../../utils/helper";
 import { QueryParamItem, Schedule } from "../../../utils/types/common";
+import Image from "../../common/Image";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import ScheduleCardBanner from "./ScheduleCardBanner";
 import ScheduleDetails from "./ScheduleDetails";
-import Image from "../../common/Image";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 
 interface ScheduleCardProps {
-    scheduleDetail: Schedule,
-    displayOnly?: boolean
+    scheduleDetail: Schedule;
+    displayOnly?: boolean;
 }
 
 const ScheduleCard = ( props: ScheduleCardProps ) => {
@@ -58,7 +58,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                     <Image
                         src={image}/>
                     {
-                        bonusSchedule &&
+                        signOnBonus &&
                         <ScheduleCardBanner signOnBonusL10N={signOnBonusL10N} currencyCode={currencyCode} signOnBonus={signOnBonus}/>
                     }
                 </Col>
