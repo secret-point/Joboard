@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { MessageBanner, MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import moment from "moment";
 import { connect } from "react-redux";
 import { ApplicationState } from "../../reducers/application.reducer";
-import { Col } from "@amzn/stencil-react-components/layout";
 import { routeToAppPageWithPath, showCounterBanner } from "../../utils/helper";
 import { translate as t } from "../../utils/translator";
 import { PAGE_ROUTES } from "../pageRoutes";
@@ -61,7 +61,7 @@ const CounterMessageBanner = (props: MapStateToProps) => {
     <>
       {
         applicationData && showCounterBanner() &&
-        <Col padding={{ top: "S300", bottom: "S300" }}>
+        <Col id="counter-message-banner" padding={{ top: "S300", bottom: "S300" }}>
           <MessageBanner
             type={MessageBannerType.Warning}
             aria-live="assertive"
