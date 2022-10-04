@@ -18,7 +18,7 @@ import {
 } from "../actions/WorkflowActions/boundWorkflowActions";
 import { EnvConfig } from "../utils/types/common";
 import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
-import { awaitWithTimeout, showErrorMessage } from "../utils/helper";
+import { awaitWithTimeout, routeToAppPageWithPath, showErrorMessage } from "../utils/helper";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -115,9 +115,12 @@ export default class StepFunctionService {
       //Update workflowErrorCode when page is rehire eligibility status as ew rely on errorCode to display different contents
       if (message.stepName === WORKFLOW_STEP_NAME.REHIRE_ELIGIBILITY_STATUS) {
         boundSetWorkflowErrorCode(message.errorMessageCode);
+
+        // redirect the user to the rehire eligibility status page
+        routeToAppPageWithPath(message.stepName);
       }
       // Ignore current step and wait until stepName is job-opportunities
-      if(window.hasCompleteTaskOnSkipSchedule) {
+      else if(window.hasCompleteTaskOnSkipSchedule) {
         if(message.stepName === WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES) {
           window.hasCompleteTaskOnSkipSchedule();
           window.hasCompleteTaskOnSkipSchedule = undefined;
