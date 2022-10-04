@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {
     getPageNameFromPath,

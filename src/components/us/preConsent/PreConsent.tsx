@@ -16,7 +16,7 @@ import {
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
 import { JobState } from "../../../reducers/job.reducer";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";

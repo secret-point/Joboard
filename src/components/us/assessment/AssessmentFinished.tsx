@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,

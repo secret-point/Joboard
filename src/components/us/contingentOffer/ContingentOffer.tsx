@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,

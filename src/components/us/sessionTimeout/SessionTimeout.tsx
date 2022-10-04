@@ -12,7 +12,7 @@ import {
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { JobState } from "../../../reducers/job.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";

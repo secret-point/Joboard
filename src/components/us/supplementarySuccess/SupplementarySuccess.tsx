@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import queryString from "query-string";
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { redirectToASHChecklist } from "../../../utils/helper";

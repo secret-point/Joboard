@@ -9,7 +9,7 @@ import { Text } from "@amzn/stencil-react-components/text";
 import InnerHTML from "dangerously-set-html-content";
 import queryString from "query-string";
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";

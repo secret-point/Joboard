@@ -9,7 +9,7 @@ import {
   parseQueryParamsArrayToSingleItem,
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";

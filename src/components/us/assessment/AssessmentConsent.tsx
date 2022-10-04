@@ -6,7 +6,7 @@ import { checkAndBoundGetApplication, getLocale, onAssessmentStart } from "../..
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,

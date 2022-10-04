@@ -14,9 +14,8 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import queryString from "query-string";
-import { NHETimeSlot } from "../../../utils/types/common";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { ApplicationState } from "../../../reducers/application.reducer";

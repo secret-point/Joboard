@@ -14,7 +14,7 @@ import { translate as t } from "../../../utils/translator";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import { JobState } from "../../../reducers/job.reducer";
 import { WorkflowState } from "../../../reducers/workflow.reducer";

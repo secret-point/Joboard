@@ -15,7 +15,7 @@ import {
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import queryString from "query-string";
 import { Application } from "../../../utils/types/common";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { JobState } from "../../../reducers/job.reducer";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import {

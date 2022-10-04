@@ -10,7 +10,7 @@ import {
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
 import { translate as t } from "../../../utils/translator";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,

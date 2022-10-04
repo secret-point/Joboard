@@ -3,7 +3,7 @@ import queryString from "query-string";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import IFrame from "../../common/IFrame";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,

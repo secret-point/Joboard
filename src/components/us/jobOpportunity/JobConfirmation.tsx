@@ -6,7 +6,7 @@ import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { translate as t } from "../../../utils/translator";
 import { connect } from "react-redux";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,

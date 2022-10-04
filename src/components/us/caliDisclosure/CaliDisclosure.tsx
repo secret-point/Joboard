@@ -4,7 +4,7 @@ import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import InnerHTML from 'dangerously-set-html-content';
 import { connect } from "react-redux";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,
