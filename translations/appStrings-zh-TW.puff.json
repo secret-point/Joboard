@@ -532,9 +532,13 @@
       "value" : "提供城市、國家/地區、定罪狀態、日期、犯罪性質以及判刑資訊",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "關於您在 Amazon.com, Inc. 或者其子公司或附屬公司 (統稱「Amazon」) 的工作應徵，我們將請求消費者報告機構提供您的相關消費者報告。這通常稱為「背景調查」。",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "本披露旨在通知您，在 Amazon.com, Inc.、其子公司或其附屬公司 (統稱為「Amazon」) 聘用您時，Amazon 將要求您提供關於您的消費者報告，也稱為「背景調查報告」。",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "<strong>輸入我的全名並點擊下面的「我授權」</strong>後，代表我授權 Amazon 現在以及我在 Amazon 的任何工作期間要求提供關於我的消費者報告。",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "撤回申請",
@@ -545,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "公平信用報告法案披露",
+      "value" : "公平信用報告法案消費者報告披露",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "在下方留下電子簽章，即表明我在此授權 Amazon 現在以及本人被 Amazon Corporate 聘用或參與相關工作期間，獲取上述消費者報告。",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "下一頁",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "我拒絕",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "我授權",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "我授權 Amazon 進行這項背景調查。",
@@ -565,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "請在此輸入您的全名",
+      "value" : "全名",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

@@ -264,6 +264,10 @@
       "value" : "¿Cómo obtengo el bono de contratación?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta incluye un bono de inscripción de {signOnBonus} según los detalles específicos mencionados antes. Se paga en varios plazos que pueden extenderse hasta 180 días después de que comiences. Si tienes que reprogramar, es posible que esta oferta concreta no esté disponible según el nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no podrás ser elegible para ningún bono de inscripción.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "Esta oferta incluye un premio de contratación de {signOnBonus} con base en los detalles específicos mencionados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de que comiences.",
       "note" : "Text for how to sign on bonus popover content"
@@ -528,9 +532,13 @@
       "value" : "Proporcionar ciudad, país, estado de condena, fecha y naturaleza del delito junto con información sobre la sentencia",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "En relación con tu solicitud de trabajo en Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”), obtendremos un informe del consumidor sobre ti de una agencia de informes del consumidor. Esto se conoce comúnmente como “verificación de antecedentes”.",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Esta divulgación tiene la intención de notificarte que en relación con tu oferta de empleo con Amazon.com, Inc., sus subsidiarias o sus afiliadas (colectivamente, “Amazon”), Amazon solicitará un informe del consumidor, también denominado “informe de verificación de antecedentes”, acerca de ti.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "Al <strong>escribir mi nombre completo y hacer clic en “Yo autorizo”</strong> a continuación, autorizo a Amazon a solicitar informes de consumidores acerca de mí ahora y a lo largo de cualquier empleo que pueda tener con Amazon.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Retirar solicitud",
@@ -541,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Aviso legal de la Ley de Equidad de Informes de Crédito",
+      "value" : "Aviso legal del Informe del consumidor de la Ley de Informe Justo de Crédito",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Mediante mi firma electrónica a continuación, autorizo a Amazon a obtener el informe de consumidor mencionado, ahora y a lo largo de cualquier trabajo o contrato que pueda tener con el corporativo Amazon.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Siguiente",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Yo declino",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Yo autorizo",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "AUTORIZO a Amazon a realizar esta verificación de antecedentes.",
@@ -561,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Escribe tu nombre completo aquí",
+      "value" : "Nombre completo",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

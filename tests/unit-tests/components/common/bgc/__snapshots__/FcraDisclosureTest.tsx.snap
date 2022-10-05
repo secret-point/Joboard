@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FcraDisclosure should match snapshot 1`] = `
+exports[`FcraDisclosure snapshot should match snapshot 1`] = `
 <Col
   className="FcraDisclosureContainer"
   gridGap={15}
@@ -13,48 +13,69 @@ exports[`FcraDisclosure should match snapshot 1`] = `
       }
     }
   >
-    <H4
+    <H3
       color="neutral90"
       font="primary"
-      fontSize="T400"
+      fontSize="T500"
       fontWeight="regular"
       hyphens="none"
       margin={0}
     >
-      Fair Credit Report Act Disclosure
-    </H4>
+      Fair Credit Reporting Act Consumer Report Disclosure
+    </H3>
     <Text
       font="primary"
       fontSize="T300"
       hyphens="none"
     >
-      In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates ('Amazon'), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a "background check".
+      This disclosure intends to notify you that in connection with your offer of employment with Amazon.com, Inc., its subsidiaries, or its affiliates (collectively, "Amazon"), Amazon will request a consumer report, also referred to as a "background check report," about you.
     </Text>
-  </Col>
-  <Col
-    gridGap="S300"
-    padding={
-      Object {
-        "top": "S200",
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+      <DangerouslySetHtmlContent
+        html="By <strong>typing my full name and clicking \\"I authorize\\"</strong> below, I authorize Amazon to request consumer reports about me now and throughout any employment I may have with Amazon."
+      />
+    </Text>
+    <InputWrapper
+      error={false}
+      id="fcraFullNameInput"
+      labelPosition="top"
+      labelText="Full name"
+      required={true}
+      shouldValidateNonInclusiveTerms={false}
+      warning={false}
+    >
+      <Component />
+    </InputWrapper>
+    <Col
+      gridGap="S300"
+      padding={
+        Object {
+          "bottom": "S300",
+          "top": "S300",
+        }
       }
-    }
-  >
-    <DetailedRadio
-      defaultChecked={false}
-      key="Accept"
-      name="fcra-radio-col"
-      onChange={[Function]}
-      titleText="I AUTHORIZE Amazon to conduct this background check."
-      value="Accept"
-    />
-    <DetailedRadio
-      defaultChecked={false}
-      key="Decline"
-      name="fcra-radio-col"
-      onChange={[Function]}
-      titleText="I DECLINE to authorize Amazon this background check."
-      value="Decline"
-    />
+    >
+      <Col
+        gridGap="S300"
+      >
+        <DebouncedButton
+          dataTestId="fcra-authorize-btn"
+          onClick={[Function]}
+          variant="primary"
+        >
+          I authorize
+        </DebouncedButton>
+        <WithModal
+          renderModal={[Function]}
+        >
+          <Component />
+        </WithModal>
+      </Col>
+    </Col>
   </Col>
 </Col>
 `;

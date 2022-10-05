@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, ButtonProps } from "@amzn/stencil-react-components/button";
+import { DataTestProps } from "@amzn/stencil-react-components/dist/submodules/utils";
 import debounce from "lodash/debounce";
 
-interface DebouncedButtonProps extends ButtonProps {
+interface DebouncedButtonProps extends ButtonProps, DataTestProps {
   // wait time in milliseconds
   debounceTime?: number;
 }

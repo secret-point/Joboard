@@ -528,9 +528,13 @@
       "value" : "ശിക്ഷാവിധിയുടെ വിവരങ്ങളോടൊപ്പം നഗരം, രാജ്യം, കുറ്റം ചുമത്തിയ സംസ്ഥാനം, തീയതി, കുറ്റകൃത്യത്തിന്റെ സ്വഭാവം എന്നിവ നൽകുക",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "Amazon.com, Inc. അല്ലെങ്കിൽ അതിന്‍റെ അനുബന്ധ സ്ഥാപനങ്ങൾ അല്ലെങ്കിൽ അഫിലിയേറ്റുകൾ (\"Amazon\") എന്നിവയിലെ ജോലിക്കുള്ള നിങ്ങളുടെ അപേക്ഷയുമായി ബന്ധപ്പെട്ട് ഒരു ഉപഭോക്തൃ റിപ്പോർട്ടിംഗ് ഏജൻസിയിൽ നിന്ന് ഞങ്ങൾ നിങ്ങളെക്കുറിച്ചുള്ള ഒരു ഉപഭോക്തൃ റിപ്പോർട്ട് വാങ്ങും. ഇത് സാധാരണയായി ഒരു “പശ്ചാത്തല പരിശോധന” എന്നറിയപ്പെടുന്നു.",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "ഈ വെളിപ്പെടുത്തൽ, Amazon.com, Inc., അതിന്റെ അനുബന്ധ സ്ഥാപനങ്ങൾ, അല്ലെങ്കിൽ ഉപഘടക സ്ഥാപനങ്ങൾ (മൊത്തത്തിൽ, \"Amazon\") എന്നിവയുമായുള്ള നിങ്ങളുടെ തൊഴിൽ വാഗ്ദാനവുമായി ബന്ധപ്പെട്ട്, നിങ്ങളെ കുറിച്ച് \"പശ്ചാത്തല പരിശോധന റിപ്പോർട്ട്\" എന്നും വിളിക്കപ്പെടുന്ന ഒരു ഉപഭോക്തൃ റിപ്പോർട്ട് Amazon അഭ്യർത്ഥിക്കുമെന്ന് നിങ്ങളെ അറിയിക്കാൻ ഉദ്ദേശിക്കുന്നു.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "<strong>എന്റെ പൂർണ്ണമായ പേര് ടൈപ്പ് ചെയ്‌ത് ചുവടെയുള്ള \"ഞാൻ അംഗീകരിക്കുന്നു\" ക്ലിക്ക് ചെയ്യുന്നതിലൂടെ</strong>, ഇപ്പോഴും ഉടനീളം Amazon-ൽ എനിക്കുണ്ടായേക്കാവുന്ന ഏത് ജോലിയിലും എന്നെക്കുറിച്ചുള്ള ഉപഭോക്തൃ റിപ്പോർട്ടുകൾ അഭ്യർത്ഥിക്കാൻ ഞാൻ Amazon-നെ അധികാരപ്പെടുത്തുന്നു.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "അപേക്ഷ പിൻവലിക്കുക",
@@ -541,16 +545,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ട് നിയമം വെളിപ്പെടുത്തൽ",
+      "value" : "ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് ആക്റ്റ് ഉപഭോക്തൃ റിപ്പോർട്ട് വെളിപ്പെടുത്തൽ",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "ചുവടെയുള്ള എന്‍റെ ഇ-സിഗ്നേച്ചർ മുഖേന, Amazon കോർപ്പറേറ്റുമായി എനിക്കുണ്ടായേക്കാവുന്ന ഏതെങ്കിലും തൊഴിൽ അല്ലെങ്കിൽ പങ്കാളിത്തത്തില്‍ ഉടനീളം മുകളിലുള്ള ഉപഭോക്തൃ റിപ്പോർട്ട് വാങ്ങാൻ ഞാൻ ഇതിനാൽ ഇപ്പോള്‍ Amazon-ന് അനുമതി നൽകുന്നു.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "അടുത്തത്",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "ഞാൻ നിരസിക്കുന്നു",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "ഞാൻ അധികാരപ്പെടുത്തുന്നു",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "ഈ പശ്ചാത്തല പരിശോധന നടത്താൻ ഞാൻ Amazon-ന് അനുമതി നല്‍കുന്നു.",
@@ -561,7 +569,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "നിങ്ങളുടെ മുഴുവൻ പേര് ഇവിടെ ടൈപ്പ് ചെയ്യുക",
+      "value" : "മുഴുവൻ പേര്",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

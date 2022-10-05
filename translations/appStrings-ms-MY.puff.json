@@ -228,6 +228,14 @@
       "value" : "Tawaran ini adalah pengesahan bahawa anda akan diupah sebagai pekerja Amazon jika anda berjaya melengkapkan latar belakang anda, ujian dadah dan semua aktiviti pra-lantikan lain yang diperlukan.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Masa mula anda mungkin ditangguhkan sekiranya:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Pemeriksaan latar belakang tidak diselesaikan tepat pada waktunya.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Anda tidak memenuhi keperluan ujian dadah tepat pada waktunya",
       "note" : "Text for contingent offer meaning popover content"
@@ -258,6 +266,10 @@
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Tawaran ini termasuk bonus penyertaan sebanyak {signOnBonus} berdasarkan butiran khusus yang dinyatakan di atas. Ia dibayar melalui berbilang ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula. Jika anda perlu menjadualkan semula, tawaran khusus ini mungkin tidak tersedia berdasarkan peranan baharu yang anda pilih. Sekiranya anda bekerja untuk Amazon baru-baru ini dalam tempoh 90 hari lepas, anda tidak akan layak mendapat sebarang bonus penyertaan.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak {signOnBonus} berdasarkan butiran khusus yang dinyatakan di atas. Ia perlu dibayar melalui ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -520,9 +532,13 @@
       "value" : "Menyediakan bandar, negara, keadaan sabitan, tarikh, sifat kesalahan, bersama dengan maklumat hukuman",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "Sehubungan dengan permohonan anda untuk bekerja dengan Amazon.com, Inc. atau anak syarikat atau sekutunya (\"Amazon\"), kami akan mendapatkan laporan pengguna mengenai anda daripada agensi pelaporan pengguna. Ini biasanya dikenali sebagai \"pemeriksaan latar belakang\".",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Pendedahan ini bermaksud untuk memberitahu anda bahawa berkaitan dengan tawaran pekerjaan anda dengan Amazon.com, Inc., anak syarikatnya, atau sekutunya (secara kolektif, “Amazon”), Amazon akan meminta laporan pengguna, juga disebut sebagai “laporan pemeriksaan latar belakang,” mengenai anda.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "Dengan <strong>menaip nama penuh saya dan mengklik “Saya membenarkan”</strong> di bawah, saya membenarkan Amazon untuk meminta laporan pengguna tentang saya sekarang dan sepanjang mana-mana pekerjaan yang mungkin saya miliki dengan Amazon.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Tarik balik permohonan",
@@ -533,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Pendedahan Akta Laporan Kredit Adil",
+      "value" : "Akta Laporan Kredit Adil Pendedahan Laporan Pengguna",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Dengan e-Tandatangan saya di bawah, saya dengan ini membenarkan Amazon untuk mendapatkan laporan pengguna di atas sekarang dan sepanjang mana-mana pekerjaan atau penglibatan yang mungkin saya miliki dengan Korporat Amazon.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Seterusnya",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Saya menolak",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Saya membenarkan",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "Saya MEMBENARKAN Amazon untuk menjalankan pemeriksaan latar belakang ini.",
@@ -553,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Taip nama penuh anda di sini",
+      "value" : "Nama penuh",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

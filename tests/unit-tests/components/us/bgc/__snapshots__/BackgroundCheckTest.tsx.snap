@@ -39,21 +39,21 @@ exports[`BackgroundCheck should match snapshot 1`] = `
   <Connect(InfoStepCard)
     expandedContent={
       <React.Fragment>
-        <ForwardRef
+        <Col
           gridGap={15}
         >
-          <ForwardRef
+          <Text
             color="#56616C"
             font="primary"
             fontSize="T200"
             hyphens="none"
           >
             Please answer a few questions using the link below.
-          </ForwardRef>
-          <ForwardRef
+          </Text>
+          <Col
             padding="S300"
           >
-            <ForwardRef
+            <Button
               colorScheme="default"
               iconPosition="leading"
               onClick={[Function]}
@@ -63,9 +63,9 @@ exports[`BackgroundCheck should match snapshot 1`] = `
               variant="primary"
             >
               Get Started
-            </ForwardRef>
-          </ForwardRef>
-        </ForwardRef>
+            </Button>
+          </Col>
+        </Col>
       </React.Fragment>
     }
     infoCardStepStatus={
@@ -79,7 +79,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
     title="Fair Credit Report Act Disclosure"
   />
   <Connect(InfoStepCard)
-    expandedContent={<UNDEFINED />}
+    expandedContent={<Memo(Connect(NonFcraDisclosure)) />}
     infoCardStepStatus={
       Object {
         "editMode": false,
@@ -91,7 +91,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
     title="Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check"
   />
   <Connect(InfoStepCard)
-    expandedContent={<UNDEFINED />}
+    expandedContent={<Memo(Connect(AdditionalBGCInfo)) />}
     infoCardStepStatus={
       Object {
         "editMode": true,

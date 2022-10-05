@@ -532,9 +532,13 @@
       "value" : "Provide city, country, state of conviction, date, nature of the offence, along with sentencing information",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates (‘Amazon’), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a ‘background check’.",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "This disclosure intends to notify you that, in connection with your offer of employment with Amazon.com, Inc., its subsidiaries or its affiliates (collectively, ‘Amazon’), Amazon will request a consumer report, also referred to as a ‘background check report’, about you.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "By <strong>typing my full name and clicking ‘I authorise’</strong> below, I authorise Amazon to request consumer reports about me now and throughout any employment I may have with Amazon.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Withdraw application",
@@ -545,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Fair Credit Report Act Disclosure",
+      "value" : "Fair Credit Reporting Act Consumer Report Disclosure",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "By my eSignature below, I hereby authorise Amazon to procure the above consumer report now and throughout any employment or engagement that I may have with Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Next",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "I decline",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "I authorise",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "I AUTHORISE Amazon to conduct this background check.",
@@ -565,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Type your full name here",
+      "value" : "Full name",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

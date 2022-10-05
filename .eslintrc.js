@@ -80,7 +80,8 @@ module.exports = {
       'allowForLoopAfterthoughts': true
     }],
     'object-curly-spacing': ['error', 'always'],  // add spacing for object curly spacing, e.g. { key: 'value' }
-    '@typescript-eslint/type-annotation-spacing': ['warn']
+    '@typescript-eslint/type-annotation-spacing': ['warn'],
+    "@typescript-eslint/no-empty-function": "off"
   },
   settings: {
     'react': {

@@ -14,7 +14,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "sourceMap": true
   },
   "include": ["src", "src/@types", "test/unit-tests"]
 }

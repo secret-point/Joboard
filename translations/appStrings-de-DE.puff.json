@@ -252,6 +252,14 @@
       "value" : "Was bedeutet eine saisonale Laufzeit?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Die Tätigkeitsbereiche unterscheiden sich nicht, der Unterschied besteht darin, dass die Stelle befristet ist und nicht länger als 11 Monate dauern soll. Wenn du an einer Festanstellung interessiert bist, könnte sich diese Möglichkeit ergeben. Ansonsten wirst du benachrichtigt, wenn dein Auftrag endet.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Saisonale Rollen und reguläre Rollen haben die gleichen Arbeitsaufgaben. Saisonale Rollen sind jedoch nur vorübergehend und dauern nicht länger als 11 Monate. Wenn du an einer Festanstellung bei Amazon interessiert bist, könnte sich diese Möglichkeit in Zukunft ergeben. Ansonsten wirst du benachrichtigt, wenn dein Auftrag endet.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Wie erhalte ich den Anmeldebonus?",
       "note" : "Text for how to sign on bonus popover title"
@@ -524,9 +532,13 @@
       "value" : "Gib Ort, Land, Bundesstaat/Bundesland der Verurteilung, Datum, Art der Straftat sowie Informationen zum Strafmaß an",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "Im Zusammenhang mit deiner Bewerbung um eine Stelle bei Amazon.com, Inc. oder seinen Tochtergesellschaften oder verbundenen Unternehmen („Amazon“) werden wir einen Verbraucherbericht über dich von einer Verbraucherauskunft einholen. Dies wird allgemein als „Hintergrundüberprüfung“ bezeichnet.",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Mit dieser Mitteilung möchten wir dich darüber informieren, dass Amazon im Zusammenhang mit deinem Stellenangebot bei Amazon.com, Inc., seinen Tochtergesellschaften oder verbundenen Unternehmen (zusammen „Amazon“) einen Verbraucherbericht, auch „Hintergrundprüfungs-Bericht“ genannt, über dich anfordern wird.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "Indem <strong>ich meinen vollständigen Namen eingebe und unten auf „Ich stimme zu“</strong> klicke, ermächtige ich Amazon, jetzt und während meiner Beschäftigung bei Amazon, Verbraucherberichte über mich anzufordern.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Bewerbung zurückziehen",
@@ -537,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Offenlegung gemäß Fair Credit Report Act",
+      "value" : "Gesetz über faire Kreditauskunft, Offenlegung von Verbraucherberichten",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Mit meiner nachstehenden elektronischen Signatur ermächtige ich Amazon, den oben genannten Verbraucherbericht jetzt und während meiner Beschäftigung oder Anstellung bei Amazon Corporate einzuholen.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Weiter",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Ich lehne ab.",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Ich autorisiere",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "ICH ERMÄCHTIGE Amazon, diese Hintergrundüberprüfung durchzuführen.",
@@ -557,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Gib hier deinen vollständigen Namen ein",
+      "value" : "Vollständiger Name",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

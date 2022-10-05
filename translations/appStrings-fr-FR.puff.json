@@ -252,6 +252,14 @@
       "value" : "Que signifie une durée saisonnière ?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Les tâches sont identiques, la différence réside dans la durée de la mission : elle est entendue comme temporaire et ne peut pas excéder une période de 11 mois. Si vous souhaitez nous rejoindre de façon permanente, l’opportunité pourrait se présenter. Dans le cas contraire, vous serez informé de la date de fin de votre mission.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Les postes saisonniers et les postes réguliers ont les mêmes obligations professionnelles. Les postes saisonniers sont toutefois conçus pour être temporaires et ne pas excéder 11 mois. Si vous souhaitez intégrer Amazon de manière permanente, l'occasion pourrait se présenter à l'avenir. Dans le cas contraire, vous serez informé de la date de fin de votre mission.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Comment puis-je bénéficier de la prime à la signature ?",
       "note" : "Text for how to sign on bonus popover title"
@@ -524,9 +532,13 @@
       "value" : "Indiquez la ville, le pays, l'état de condamnation, la date, la nature de l'infraction, ainsi que des informations sur la peine",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "Dans le cadre de votre candidature pour un emploi chez Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon »), nous obtiendrons un rapport sur le consommateur vous concernant auprès d'une agence d'information sur les consommateurs. C'est ce que l'on appelle communément une « vérification des antécédents ».",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Cette déclaration vise à vous informer que, dans le cadre de votre offre d'emploi auprès d'Amazon.com, Inc., de ses filiales ou de ses sociétés afficiliées (collectivement, « Amazon »), Amazon demandera un rapport client, également appelé « rapport de vérification des antécédents », vous concernant.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "En <strong>saisissant mon nom complet et en cliquant ci-dessous sur « J'autorise »</strong>, j'autorise Amazon, maintenant et tout au long de tout emploi que je pourrais avoir chez Amazon, à demander des rapports clients me concernant.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Retirer la candidature",
@@ -537,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Demande d’informations faite en vertu du Fair Credit Report Act",
+      "value" : "Divulgation du rapport sur le consommateur relatif à la loi sur le traitement adéquat de l’information relative au crédit (Fair Credit Reporting Act)",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Par ma signature électronique ci-dessous, j'autorise Amazon à obtenir le rapport sur le consommateur mentionné ci-dessus dès maintenant et durant mes engagements ou toute ma carrière chez Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Suivant",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Je refuse",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "J'autorise",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "J'AUTORISE Amazon à effectuer cette vérification des antécédents.",
@@ -557,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Saisissez vos noms et prénoms complets ici",
+      "value" : "Noms et prénoms complets",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

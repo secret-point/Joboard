@@ -260,6 +260,10 @@
       "value" : "Seizoensrollen en reguliere rollen hebben dezelfde taken. Seizoensrollen zijn echter tijdelijk bedoeld en duren niet langer dan 11 maanden. Als je geïnteresseerd bent om permanent lid te worden van Amazon, kan deze mogelijkheid in de toekomst beschikbaar komen. Anders krijg je een melding wanneer je opdracht eindigt.",
       "note" : "Text for about seasonal duration popover content"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Hoe kom ik aan de aanmeldbonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
       "value" : "Deze aanbieding omvat een aanmeldbonus van {signOnBonus} op basis van de specifieke gegevens die hierboven zijn vermeld. Het wordt uitgekeerd in meerdere termijnen, die kunnen worden verlengd tot 180 dagen na uw start. Als u een nieuwe planning moet maken, is het mogelijk dat dit specifieke aanbod niet beschikbaar is, op basis van de nieuwe rol die u kiest. Als u onlangs in de afgelopen 90 dagen voor Amazon hebt gewerkt, komt u niet in aanmerking voor een aanmeldbonus.",
       "note" : "Text for how to sign on bonus popover content"
@@ -528,9 +532,13 @@
       "value" : "Geef stad, land en staat van veroordeling, datum, aard van het misdrijf en informatie over de veroordeling op",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "In verband met je sollicitatie voor een baan bij Amazon.com, Inc. of haar dochterondernemingen of gelieerde ondernemingen (\"Amazon\"), zullen wij een screeningrapport aanvragen bij een screeningbureau. Dit staat algemeen bekend als een \"antecedentenonderzoek\".",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Deze openbaarmaking is bedoeld om je ervan op de hoogte te stellen dat Amazon in verband met je aanbod om te werken bij Amazon.com, Inc., haar dochterondernemingen of aan haar gelieerde ondernemingen (gezamenlijk “Amazon”), een consumentenrapport over jou zal opvragen, ook wel een “antecedentenonderzoekrapport” genoemd.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "Door <strong>hieronder mijn volledige naam te typen en op “Ik geef toestemming”</strong> te klikken, geef ik Amazon toestemming om nu en tijdens mijn gehele dienstverband bij Amazon consumentenrapporten over mij op te vragen.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Sollicitatie intrekken",
@@ -541,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Openbaarmaking van Fair Credit Report Act",
+      "value" : "Wet inzake eerlijke kredietrapportage - Openbaarmaking van consumentrapport",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Door mijn elektronische handtekening hieronder geef ik Amazon hierbij toestemming om het bovenstaande screeningrapport nu en tijdens elke dienstbetrekking of opdracht die ik heb bij Amazon Corporate te verkrijgen.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Volgende",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Ik geef geen toestemming",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Ik geef toestemming",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "Ik GEEF TOESTEMMING aan Amazon om dit antecedentenonderzoek uit te voeren.",
@@ -561,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Typ hier je volledige naam",
+      "value" : "Volledige naam",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

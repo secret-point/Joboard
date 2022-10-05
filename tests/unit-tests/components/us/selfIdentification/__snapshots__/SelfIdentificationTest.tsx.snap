@@ -5,7 +5,7 @@ exports[`SelfIdentification should match snapshot 1`] = `
   gridGap={15}
 >
   <Connect(InfoStepCard)
-    expandedContent={<UNDEFINED />}
+    expandedContent={<Memo(Connect(EqualOpportunityForm)) />}
     infoCardStepStatus={
       Object {
         "editMode": false,
@@ -17,7 +17,7 @@ exports[`SelfIdentification should match snapshot 1`] = `
     title="Voluntary Equal Opportunity Self-Identification Form"
   />
   <Connect(InfoStepCard)
-    expandedContent={<UNDEFINED />}
+    expandedContent={<Memo(Connect(VeteranStatusForm)) />}
     infoCardStepStatus={
       Object {
         "editMode": false,
@@ -29,7 +29,7 @@ exports[`SelfIdentification should match snapshot 1`] = `
     title="Voluntary Self-Identification of Veteran Status"
   />
   <Connect(InfoStepCard)
-    expandedContent={<UNDEFINED />}
+    expandedContent={<Memo(Connect(DisabilityForm)) />}
     infoCardStepStatus={
       Object {
         "editMode": true,

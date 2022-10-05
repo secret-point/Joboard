@@ -232,6 +232,10 @@
       "value" : "Váš start se může opozdit, pokud:",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Bezpečnostní prověrka nebyla dokončena včas.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Nesplníte včas požadavky na drogový test",
       "note" : "Text for contingent offer meaning popover content"
@@ -259,6 +263,14 @@
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Jak získám vstupní bonus?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši {signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od Vašeho nástupu. Pokud budete muset změnit plány, tato konkrétní nabídka nemusí být k dispozici v závislosti na nové roli, kterou si vyberete. Pokud jste v posledních 90 dnech pracovali pro společnost Amazon, nemáte nárok na žádný vstupní bonus.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši {signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od zahájení.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Tato konkrétní nabídka nemusí být k dispozici, pokud:",
@@ -520,9 +532,13 @@
       "value" : "Uveďte město, zemi, stát odsouzení, datum, povahu trestného činu a informace o trestu",
       "note" : "Text to Criminal record conviction details label text"
     },
-    "BB-BGC-fcra-disclosure-bgc-explanation-text" : {
-      "value" : "V souvislosti s Vaší žádostí o zaměstnání ve společnosti Amazon.com, Inc. nebo jejích dceřiných či přidružených společností (dále jen „Amazon“), si od agentury, která podává zprávy o spotřebitelích, pořídíme zprávu o spotřebiteli. Běžně se tomu říká „prověrka“.",
-      "note" : "Text to explain what report need to be collected from candidate on fcra form"
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Cílem tohoto sdělení je upozornit Vás, že v souvislosti s Vaší nabídkou zaměstnání u společnosti Amazon.com, Inc., jejích dceřiných společností nebo přidružených společností (souhrnně „Amazon“), si společnost Amazon vyžádá zprávu o Vaší osobě, označovanou také jako „prověrka“.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "<strong>Zadáním svého celého jména a kliknutím níže na „Povoluji“</strong> opravňuji společnost Amazon k tomu, aby si o mně vyžádala spotřebitelské zprávy nyní i během mého případného zaměstnání u společnosti Amazon.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
     },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Stáhnout žádost",
@@ -533,16 +549,20 @@
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
     "BB-BGC-fcra-disclosure-bgc-form-title" : {
-      "value" : "Zpřístupnění informací podle zákona o spravedlivém podávání zpráv o úvěrech",
+      "value" : "Zveřejnění zpráv o spotřebitelích podle zákona o spravedlivém úvěrovém zpravodajství",
       "note" : "Text for the fcra disclosure form title"
     },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Svým níže uvedeným elektronickým podpisem opravňuji společnost Amazon k pořízení výše uvedené zprávy o spotřebiteli nyní i v průběhu mého případného pracovního poměru nebo zaměstnání na smlouvu u společnosti Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
     },
-    "BB-BGC-fcra-disclosure-bgc-form-next-btn" : {
-      "value" : "Další",
-      "note" : "Text for the fcra disclosure form next button"
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Odmítám",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Povoluji",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "OPRAVŇUJI společnost Amazon k provedení této prověrky.",
@@ -553,7 +573,7 @@
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
     },
     "BB-BGC_fcra-disclosure-signature-input-label-text" : {
-      "value" : "Zde zadejte své celé jméno",
+      "value" : "Celé jméno",
       "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {

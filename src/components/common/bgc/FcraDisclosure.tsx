@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { DetailedRadio, Input, InputWrapper } from "@amzn/stencil-react-components/form";
+import { Input, InputWrapper } from "@amzn/stencil-react-components/form";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
-import { H4, Text } from "@amzn/stencil-react-components/text";
+import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
+import { H3, Text } from "@amzn/stencil-react-components/text";
+import InnerHTML from "dangerously-set-html-content";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -22,8 +23,6 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { CommonColors } from "../../../utils/colors";
-import { FcraDisclosureConfigList, HasPreviouslyWorkedAtAmazonRadioConfig } from "../../../utils/constants/common";
 import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
 import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, handleWithdrawFcraBGC, hideHeaderFooter, showHeaderFooter, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
@@ -51,7 +50,6 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const [fcraResponse, setFcraResponse] = useState<FCRA_DISCLOSURE_TYPE | undefined>();
     const [eSignature, setESignature] = useState(fcraQuestions?.bgcDisclosureEsign?.signature || '');
     const [isSignatureValid, setIsSignatureValid] = useState(true);
-    const [missingFcraResponse, setMissingFcraResponse] = useState(false);
 
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
@@ -59,6 +57,7 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const { scheduleDetail } = schedule.results;
+    const { matches } = useBreakpoints();
 
     useEffect(() => {
         hideHeaderFooter();
@@ -103,12 +102,8 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
         setESignature(fcraQuestions?.bgcDisclosureEsign?.signature || "");
     }, [fcraQuestions])
 
-    const handleClickNext = (modalOpen: Function) => {
+    const handleClickAuthorize = () => {
         boundResetBannerMessage();
-        if (fcraResponse && fcraResponse === FCRA_DISCLOSURE_TYPE.DECLINE) {
-            modalOpen();
-            return;
-        }
 
         const isFullNameValid = validateName(eSignature);
 
@@ -117,14 +112,14 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
             return;
         }
 
-        if(!fcraResponse) {
-            setMissingFcraResponse(true);
-            return;
-        }
-
         if(applicationData) {
-            handleSubmitFcraBGC(applicationData, stepConfig, eSignature, fcraResponse);
+            handleSubmitFcraBGC(applicationData, stepConfig, eSignature, FCRA_DISCLOSURE_TYPE.ACCEPT);
         }
+    };
+
+    const handleClickDecline = (modalOpen: Function) => {
+        boundResetBannerMessage();
+        modalOpen();
     };
 
     const handleClickWithdrawApplication = () => {
@@ -135,7 +130,8 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
         <ModalContent
             titleText=''
             buttons={[
-                <Button
+                <DebouncedButton
+                    dataTestId="withdraw-application-button"
                     key="fcra-disclosure-decline-modal-btn"
                     variant={ButtonVariant.Primary}
                     isDestructive
@@ -146,7 +142,7 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
                     }}
                 >
                     {t("BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text", "Withdraw application")}
-                </Button>
+                </DebouncedButton>
             ]}>
             <Text>
                 {t("BB-BGC-fcra-disclosure-decline-modal-withdraw-application-description-text", "Your application will be withdrawn if you decline to conduct the background check.")}
@@ -154,85 +150,77 @@ export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
         </ModalContent>
     );
 
+    const renderDeclineButton = () => (
+        <WithModal renderModal={renderModal}>
+            {({ open }) => (
+                <Button
+                    variant={ButtonVariant.Secondary}
+                    onClick={() => handleClickDecline(open)}
+                    dataTestId="fcra-decline-btn"
+                >
+                    {t("BB-BGC-fcra-disclosure-bgc-form-decline-btn", "I decline")}
+                </Button>
+            )}
+        </WithModal>
+    );
+
+    const renderAuthorizeButton = () => (
+        <DebouncedButton
+            variant={ButtonVariant.Primary}
+            onClick={() => handleClickAuthorize()}
+            dataTestId="fcra-authorize-btn"
+        >
+            {t("BB-BGC-fcra-disclosure-bgc-form-authorize-btn", "I authorize")}
+        </DebouncedButton>
+    );
+
     return (
         <Col className="FcraDisclosureContainer" gridGap={15}>
             <Col gridGap="S300" padding={{ top: 'S300' }}>
-                <H4>{t("BB-BGC-fcra-disclosure-bgc-form-title", "Fair Credit Report Act Disclosure")}</H4>
+                <H3>{t("BB-BGC-fcra-disclosure-bgc-form-title", "Fair Credit Reporting Act Consumer Report Disclosure")}</H3>
                 <Text>
-                    {t("BB-BGC-fcra-disclosure-bgc-explanation-text", "In connection with your application for employment with Amazon.com, Inc. or its subsidiaries or affiliates ('Amazon'), we will procure a consumer report on you from a consumer reporting agency. This is commonly known as a \"background check\".")}
+                    {t("BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text", "This disclosure intends to notify you that in connection with your offer of employment with Amazon.com, Inc., its subsidiaries, or its affiliates (collectively, \"Amazon\"), Amazon will request a consumer report, also referred to as a \"background check report,\" about you.")}
                 </Text>
-            </Col>
-            <Col gridGap="S300" padding={{ top: 'S200' }}>
-                {
-                    FcraDisclosureConfigList.map(fcraItem => {
-                        const defaultChecked = fcraItem.value === fcraResponse
-                        return (
-                          <DetailedRadio
-                            key={fcraItem.value}
-                            name="fcra-radio-col"
-                            value={fcraItem.value}
-                            titleText={t(fcraItem.titleTranslationKey, fcraItem.title)}
-                            onChange={event => setFcraResponse(fcraItem.value)}
-                            defaultChecked={defaultChecked}
-                          />
-                        )
-                    })
-                }
-                {
-                    missingFcraResponse &&
-                    <Row padding="S300" backgroundColor={CommonColors.RED05}>
-                        <StatusIndicator
-                          messageText={missingFcraResponse ? HasPreviouslyWorkedAtAmazonRadioConfig.errorMessage || "" : ""}
-                          status={Status.Negative}
-                          iconAriaHidden={true}
+
+                <Text>
+                    <InnerHTML html={t("BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text", "By <strong>typing my full name and clicking \"I authorize\"</strong> below, I authorize Amazon to request consumer reports about me now and throughout any employment I may have with Amazon.")}/>
+                </Text>
+
+                <InputWrapper
+                    labelText={t("BB-BGC_fcra-disclosure-signature-input-label-text", "Full name")}
+                    id="fcraFullNameInput"
+                    required
+                    error={!isSignatureValid}
+                    footer={!isSignatureValid ? t("BB-BGC_fcra-disclosure-signature-input-error-text", "Please enter a valid full name following format: First Last"): undefined}
+                >
+                    {inputProps =>
+                        <Input
+                            {...inputProps}
+                            dataTestId="fcra-full-name-input"
+                            onChange={e => {
+                                const value = e.target.value || '';
+                                setESignature(value.trim());
+                            }}
+                            defaultValue={fcraQuestions?.bgcDisclosureEsign?.signature || ''}
                         />
-                    </Row>
-                }
+                    }
+                </InputWrapper>
+
+                <Col gridGap="S300" padding={{ top: 'S300', bottom: 'S300' }}>
+                    {
+                        matches.s ?
+                            <Col gridGap="S300">
+                                {renderAuthorizeButton()}
+                                {renderDeclineButton()}
+                            </Col>
+                        :
+                            <Row justifyContent="flex-end" gridGap="S300">
+                                {renderDeclineButton()}
+                                {renderAuthorizeButton()}
+                            </Row>
+                    }
+                </Col>
             </Col>
-            {
-                fcraResponse === FCRA_DISCLOSURE_TYPE.ACCEPT &&
-                <Col gridGap={15} padding={{ top: 'S200' }}>
-                    <H4>{t("BB-BGC-fcra-provide-eSignature-form-heading-text", "Provide an e-Signature")}</H4>
-                    <Text>
-                        {t("BB-BGC-fcra-disclosure-signature-consent-notice-text", "By my eSignature below, I hereby authorize Amazon to procure the above consumer report now and throughout any employment or engagement I may have with Amazon Corporate.")}
-                    </Text>
-                    <InputWrapper
-                        labelText={t("BB-BGC_fcra-disclosure-signature-input-label-text", "Type your full name here")}
-                        id="fcraFullNameInput"
-                        required
-                        error={!isSignatureValid}
-                        footer={!isSignatureValid ? t("BB-BGC_fcra-disclosure-signature-input-error-text", "Enter full name"): undefined}
-                    >
-                        {inputProps =>
-                            <Input
-                                {...inputProps}
-                                onChange={e => {
-                                    const value = e.target.value || '';
-                                    setESignature(value.trim());
-                                }}
-                                defaultValue={fcraQuestions?.bgcDisclosureEsign?.signature || ''}
-                            />
-                        }
-                    </InputWrapper>
-                </Col>
-            }
-            {
-                fcraResponse &&
-                <Col padding={{ top: 'S300', bottom: 'S300' }}>
-                    <WithModal
-                        renderModal={renderModal}
-                    >
-                        {({ open }) => (
-                            <DebouncedButton
-                                variant={ButtonVariant.Primary}
-                                onClick={() => handleClickNext(open)}
-                            >
-                                {t("BB-BGC-fcra-disclosure-bgc-form-next-btn", "Next")}
-                            </DebouncedButton>
-                        )}
-                    </WithModal>
-                </Col>
-            }
         </Col>
     )
 }
