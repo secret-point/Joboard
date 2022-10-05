@@ -1,38 +1,38 @@
 import React from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Card } from "@amzn/stencil-react-components/card";
-import { H5, Text } from "@amzn/stencil-react-components/text";
-import { CommonColors } from "../../utils/colors";
 import {
     IconCheckCircleFill,
     IconCloseCircleFill,
     IconPadlock,
     IconPencil
 } from "@amzn/stencil-react-components/icons";
-import { INFO_CARD_STEP_STATUS, INFO_CARD_STEPS } from "../../utils/enums/common";
-import { BgcStepConfig, InfoCardStepConfig, InfoCardStepStatus } from "../../utils/types/common";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { H5, Text } from "@amzn/stencil-react-components/text";
 import { connect } from "react-redux";
-import { JobState } from "../../reducers/job.reducer";
+import { boundUpdateStepConfigAction } from "../../actions/BGC_Actions/boundBGCActions";
+import { boundUpdateSelfIdStepConfig } from "../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { ApplicationState } from "../../reducers/application.reducer";
-import { ScheduleState } from "../../reducers/schedule.reducer";
 import { BGCState } from "../../reducers/bgc.reducer";
 import { CandidateState } from "../../reducers/candidate.reducer";
-import { boundUpdateStepConfigAction } from "../../actions/BGC_Actions/boundBGCActions";
-import { translate as t } from "../../utils/translator";
+import { JobState } from "../../reducers/job.reducer";
+import { ScheduleState } from "../../reducers/schedule.reducer";
 import { SelfIdentificationState } from "../../reducers/selfIdentification.reducer";
+import { CommonColors } from "../../utils/colors";
+import { INFO_CARD_STEP_STATUS, INFO_CARD_STEPS } from "../../utils/enums/common";
 import { getPageName } from "../../utils/helper";
+import { translate as t } from "../../utils/translator";
+import { BgcStepConfig, InfoCardStepConfig, InfoCardStepStatus } from "../../utils/types/common";
 import { PAGE_ROUTES } from "../pageRoutes";
-import { boundUpdateSelfIdStepConfig } from "../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 
 const { BACKGROUND_CHECK, SELF_IDENTIFICATION } = PAGE_ROUTES;
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    bgc: BGCState
-    candidate: CandidateState,
-    selfIdentification: SelfIdentificationState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    bgc: BGCState;
+    candidate: CandidateState;
+    selfIdentification: SelfIdentificationState;
 }
 
 interface BGCStepCardProps {
@@ -41,7 +41,7 @@ interface BGCStepCardProps {
     collapsedContent?: React.ReactNode;
     stepName: INFO_CARD_STEPS;
     stepIndex: number;
-    infoCardStepStatus: InfoCardStepStatus
+    infoCardStepStatus: InfoCardStepStatus;
 }
 
 type BGCStepCardMergedProps = MapStateToProps & BGCStepCardProps;
@@ -50,7 +50,7 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
 
     const { title, collapsedContent, expandedContent, stepName, stepIndex, infoCardStepStatus, bgc, selfIdentification } = props;
     const { stepConfig: bgcStepConfig } = bgc;
-    const { stepConfig: selfIdStepConfig} = selfIdentification;
+    const { stepConfig: selfIdStepConfig } = selfIdentification;
     const { status: stepStatus, editMode } = infoCardStepStatus;
 
     const stepConfig: InfoCardStepConfig = getPageName() === BACKGROUND_CHECK ? bgcStepConfig as  InfoCardStepConfig: selfIdStepConfig as InfoCardStepConfig;
@@ -98,16 +98,16 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
                 <Col width="100%" padding="S300" gridGap={15}>
                     <Row justifyContent="space-between">
                         <Text fontSize="T200" color={CommonColors.Neutral70}>
-                            {t("BB-BGC-bgc-step-card-step-progress", `Step ${stepIndex} of ${totalStepNumber}`, {currentStep: stepIndex, totalSteps: totalStepNumber})}
+                            {t("BB-BGC-bgc-step-card-step-progress", `Step ${stepIndex} of ${totalStepNumber}`, { currentStep: stepIndex, totalSteps: totalStepNumber })}
                         </Text>
                         {stepStatus === INFO_CARD_STEP_STATUS.COMPLETED && editMode &&
                         <Row onClick={() => handleSetEditMode(false)}>
-                            <IconCloseCircleFill/>
+                            <IconCloseCircleFill aria-hidden={true} />
                         </Row>
                         }
                         {stepStatus === INFO_CARD_STEP_STATUS.LOCKED &&
                         <Row color={CommonColors.Neutral70}>
-                            <IconPadlock/>
+                            <IconPadlock aria-hidden={true} />
                         </Row>
                         }
                     </Row>
@@ -116,9 +116,9 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
                         {
                             stepStatus === INFO_CARD_STEP_STATUS.COMPLETED && !editMode &&
                             <Row gridGap={15}>
-                                <IconCheckCircleFill color={CommonColors.GREEN70}/>
+                                <IconCheckCircleFill color={CommonColors.GREEN70} aria-hidden={true} />
                                 <Col onClick={() => handleSetEditMode(true)}>
-                                    <IconPencil color={CommonColors.Blue70}/>
+                                    <IconPencil color={CommonColors.Blue70} aria-hidden={true} />
                                 </Col>
                             </Row>
                         }

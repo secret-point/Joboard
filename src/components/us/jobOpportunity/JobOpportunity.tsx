@@ -1,19 +1,4 @@
 import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import StepHeader from "../../common/StepHeader";
-import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
-import { Text } from "@amzn/stencil-react-components/text";
-import {
-  getPageNameFromPath,
-  parseQueryParamsArrayToSingleItem,
-  resetIsPageMetricsUpdated
-} from "../../../helpers/utils";
-import { useLocation } from "react-router-dom";
-import queryString from "query-string";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
@@ -36,17 +21,32 @@ import {
   WithFlyout
 } from "@amzn/stencil-react-components/flyout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import SortSchedule from "../../common/jobOpportunity/SortSchedule";
-import FilterSchedule from "../../common/jobOpportunity/FilterSchedule";
+import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
-import { CandidateState } from "../../../reducers/candidate.reducer";
+import { Text } from "@amzn/stencil-react-components/text";
+import queryString from "query-string";
+import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import FilterSchedule from "../../common/jobOpportunity/FilterSchedule";
+import SortSchedule from "../../common/jobOpportunity/SortSchedule";
+import StepHeader from "../../common/StepHeader";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    candidate: CandidateState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    candidate: CandidateState;
 }
 
 interface JobOpportunityProps {
@@ -66,7 +66,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
     const scheduleData = schedule.results.scheduleList;
     const scheduleFilters = schedule.filters;
     const { matches } = useBreakpoints();
-    const candidateData = candidate.results.candidateData;
+    const { candidateData } = candidate.results;
 
     const width = matches.s ? '100VW' : '420px';
 
@@ -181,7 +181,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
                       gridGap={5}
                       onClick={goToCandidateDashboard}
                     >
-                        <IconArrowLeft size={IconSize.ExtraSmall} fontSize='T100'/>
+                        <IconArrowLeft size={IconSize.ExtraSmall} fontSize='T100' aria-hidden={true} />
                         <Text fontWeight="medium" fontSize='T200'>
                             {t('BB-JobOpportunity-Go-To-Dashboard-Link', 'Go Back to Jobs Dashboard')}
                         </Text>
@@ -197,7 +197,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
                             >
                                 {( { open } ) => (
                                     <Row onClick={() => open()} gridGap={8} alignItems="center">
-                                        <IconHourGlass size={IconSize.ExtraSmall}/>
+                                        <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
                                         <Text fontWeight="medium" fontSize='T200'>
                                             {t('BB-JobOpportunity-filter-button', 'Filter')}
                                         </Text>
@@ -211,7 +211,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
                             <WithFlyout renderFlyout={renderSortScheduleFlyout}>
                                 {( { open } ) => (
                                     <Row onClick={() => open()} gridGap={8} alignItems="center">
-                                        <IconSort size={IconSize.ExtraSmall}/>
+                                        <IconSort size={IconSize.ExtraSmall} aria-hidden={true} />
                                         <Text fontWeight="medium" fontSize='T200'>
                                             {t('BB-JobOpportunity-sort-button', 'Sort')}
                                         </Text>

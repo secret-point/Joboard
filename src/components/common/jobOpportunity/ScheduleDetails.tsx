@@ -11,16 +11,16 @@ import {
 } from '@amzn/stencil-react-components/icons';
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { getFeatureFlagValue, getLocale, renderScheduleFullAddress } from "../../../utils/helper";
-import { Locale, Schedule } from "../../../utils/types/common";
-import { localeToLanguageList } from "../../../utils/constants/common";
-import { FEATURE_FLAG } from "../../../utils/enums/common";
-import { translate as t } from "../../../utils/translator";
 import moment from "moment";
 import { CommonColors } from "../../../utils/colors";
+import { localeToLanguageList } from "../../../utils/constants/common";
+import { FEATURE_FLAG } from "../../../utils/enums/common";
+import { getFeatureFlagValue, getLocale, renderScheduleFullAddress } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
+import { Locale, Schedule } from "../../../utils/types/common";
 
 interface ScheduleDetailsProps {
-  scheduleDetail: Schedule,
+  scheduleDetail: Schedule;
 }
 
 const ScheduleDetails = (props: ScheduleDetailsProps) => {
@@ -47,7 +47,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
 
     const renderShiftDate = () => {
-        let datesList:string[] = [];
+        const datesList: string[] = [];
         const shiftDate = parsedTrainingDate?.split('\n')
         shiftDate?.forEach((item) => {
             const dateValue = moment(item,'YYYY-MMM-DD hh:mm:A - hh:mm A').locale(getLocale()).format('MMM DD YYYY hh:mm A - hh:mm A');
@@ -70,7 +70,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
   return (
     <Col gridGap={10} width="95%">
       <Row gridGap={10} alignItems="center">
-          <IconCalendarFill size={IconSize.ExtraSmall} />
+          <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-start-date","Start Date")}: </Text>
           <Text fontSize="T100">{startDate}</Text>
@@ -78,7 +78,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       </Row>
 
       <Row gridGap={10} alignItems="center">
-          <IconClockFill size={IconSize.ExtraSmall} />
+          <IconClockFill size={IconSize.ExtraSmall} aria-hidden={true} />
           <Row gridGap={3} alignItems="center">
             <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-shift","Shift")}: </Text>
             <Text fontSize="T100">{scheduleText}</Text>
@@ -86,14 +86,14 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       </Row>
 
         {parsedTrainingDate &&
-            <Col gridGap={5} alignItems="left" padding={{left:'S400'}} >
-            <Text fontSize="T200" style={{fontStyle:"italic"}}>{shift}</Text>
+            <Col gridGap={5} alignItems="left" padding={{ left:'S400' }} >
+            <Text fontSize="T200" style={{ fontStyle:"italic" }}>{shift}</Text>
             {renderShiftDate()}
         </Col>
         }
 
         <Row gridGap={10} alignItems="center">
-          <IconPaymentFill size={IconSize.ExtraSmall} />
+          <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
           <Row gridGap={3} alignItems="center">
             <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
             <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
@@ -101,7 +101,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
 
       <Row gridGap={10} alignItems="center">
-          <IconHourGlass size={IconSize.ExtraSmall} />
+          <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
           <Row gridGap={3} alignItems="center">
             <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-hours","Hours")}: </Text>
             <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
@@ -110,7 +110,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
         {employmentTypeL10N &&
           <Row gridGap={10} alignItems="center">
-            <IconClock size={IconSize.ExtraSmall}/>
+            <IconClock size={IconSize.ExtraSmall} aria-hidden={true} />
             <Row gridGap={3} alignItems="center">
               <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-duration", "Duration")}: </Text>
               <Text fontSize="T100">{employmentTypeL10N || employmentType}</Text>
@@ -120,7 +120,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
       {showRequiredLanguages &&
       <Row gridGap={10} alignItems="center">
-        <IconGlobe size={IconSize.ExtraSmall} />
+        <IconGlobe size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">
             {t(`BB-Schedule-card-languages-supported`, `Languages Supported`)}:
@@ -131,7 +131,7 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       }
 
       <Row gridGap={10} alignItems="center">
-        <IconMail size={IconSize.ExtraSmall} />
+        <IconMail size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-location", "Location")}: </Text>
           <Text color={CommonColors.Blue70} fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>

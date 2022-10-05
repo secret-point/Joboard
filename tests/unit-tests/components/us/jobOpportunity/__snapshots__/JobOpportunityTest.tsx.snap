@@ -40,6 +40,7 @@ exports[`JobOpportunity should match snapshot 1`] = `
         onClick={[Function]}
       >
         <IconArrowLeft
+          aria-hidden={true}
           display="block"
           fontSize="T100"
           size={16}

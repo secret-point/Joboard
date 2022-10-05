@@ -1,6 +1,4 @@
 import React from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { Text } from "@amzn/stencil-react-components/text";
 import {
     IconArrowRight,
     IconCalendarFill,
@@ -10,15 +8,17 @@ import {
     IconPaymentFill,
     IconSize
 } from '@amzn/stencil-react-components/icons';
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Link } from "@amzn/stencil-react-components/link";
-import VideoContainer from "../VideoContainer";
-import { Schedule } from "../../../utils/types/common";
-import { translate as t } from "../../../utils/translator";
+import { Text } from "@amzn/stencil-react-components/text";
 import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
+import { Schedule } from "../../../utils/types/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import VideoContainer from "../VideoContainer";
 
 interface JobConfirmationCardProps {
-    schedule: Schedule
+    schedule: Schedule;
 }
 
 const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
@@ -45,25 +45,25 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
             <Row padding="S300" alignItems="center">
                 <Col gridGap={8} width="95%">
                     <Row gridGap={5} alignItems="center">
-                        <IconClockFill size={IconSize.ExtraSmall}/>
+                        <IconClockFill size={IconSize.ExtraSmall} aria-hidden={true} />
                         <Text fontSize="T100">{scheduleText}</Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
-                        <IconCalendarFill size={IconSize.ExtraSmall}/>
+                        <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden={true} />
                         <Text fontSize="T100">
                             {t("BB-Schedule-card-possible-start-date-text", "Possible Start Date:")} {firstDayOnSite}
                             <b>{t("BB-Schedule-card-possible-start-date-or-earlier-text", "(or earlier!)")}</b></Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
-                        <IconPaymentFill size={IconSize.ExtraSmall}/>
+                        <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
                         <Text fontSize="T100">{`${currencyCode}${totalPayRate} /hr`}</Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
-                        <IconDocument size={IconSize.ExtraSmall}/>
+                        <IconDocument size={IconSize.ExtraSmall} aria-hidden={true} />
                         <Text fontSize="T100">{`${hoursPerWeek}hrs/wk`}</Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
-                        <IconGlobe size={IconSize.ExtraSmall}/>
+                        <IconGlobe size={IconSize.ExtraSmall} aria-hidden={true} />
                         <Text fontSize="T100">{renderScheduleFullAddress(schedule)}</Text>
                     </Row>
                 </Col>
@@ -89,7 +89,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                 <Text fontWeight="medium">
                     {t('BB-JobOpportunity-go-to-jobDescription-link', 'Job requirement and benefits')}
                 </Text>
-                <IconArrowRight size={IconSize.ExtraSmall}/>
+                <IconArrowRight size={IconSize.ExtraSmall} aria-hidden={true} />
             </Row>
         </Col>
     )

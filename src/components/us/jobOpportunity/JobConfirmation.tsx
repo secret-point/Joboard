@@ -1,54 +1,54 @@
 import React, { useEffect } from 'react';
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import JobConfirmationCard from "../../common/jobOpportunity/JobConfirmationCard";
-import { H4, Text } from '@amzn/stencil-react-components/text';
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { translate as t } from "../../../utils/translator";
+import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { H4, Text } from '@amzn/stencil-react-components/text';
+import queryString from "query-string";
 import { connect } from "react-redux";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router-dom";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { ApplicationState } from '../../../reducers/application.reducer';
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailActions';
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,
     resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { CommonColors } from "../../../utils/colors";
-import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
-import { checkAndBoundGetApplication, getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
-import { PAGE_ROUTES } from "../../pageRoutes";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import queryString from "query-string";
-import { ApplicationState } from '../../../reducers/application.reducer';
 import { JobState } from '../../../reducers/job.reducer';
-import { boundGetJobDetail } from '../../../actions/JobActions/boundJobDetailActions';
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from '../../../reducers/ui.reducer';
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { CommonColors } from "../../../utils/colors";
+import { checkAndBoundGetApplication, getLocale, handleSubmitJobConfirmation, routeToAppPageWithPath } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
 import DebouncedButton from '../../common/DebouncedButton';
+import JobConfirmationCard from "../../common/jobOpportunity/JobConfirmationCard";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
-    application: ApplicationState
-    schedule: ScheduleState
-    job: JobState
-    ui: uiState,
-    candidate: CandidateState
+    application: ApplicationState;
+    schedule: ScheduleState;
+    job: JobState;
+    ui: uiState;
+    candidate: CandidateState;
 }
 
 export const JobConfirmation = ( props: MapStateToProps ) => {
 
     const { schedule, application, job, ui, candidate } = props;
-    const isLoading = ui.isLoading;
+    const { isLoading } = ui;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-    const scheduleDetail = schedule.results.scheduleDetail;
+    const { scheduleDetail } = schedule.results;
     const { scheduleId, applicationId, jobId } = queryParams;
     const jobDetail = job.results;
     const applicationDetail = application.results;
     const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
-    const candidateData = candidate.results.candidateData;
+    const { candidateData } = candidate.results;
 
     useEffect(() => {
         boundGetCandidateInfo();
@@ -101,7 +101,7 @@ export const JobConfirmation = ( props: MapStateToProps ) => {
                 }}
                 style={{ cursor: 'pointer' }}
             >
-                <IconArrowLeft size={IconSize.ExtraSmall}/>
+                <IconArrowLeft size={IconSize.ExtraSmall} aria-hidden={true} />
                 <Text fontSize="T100" fontWeight="medium">
                     {
                         t('BB-JobOpportunity-back-to-indexPage-link', 'View Jobs')

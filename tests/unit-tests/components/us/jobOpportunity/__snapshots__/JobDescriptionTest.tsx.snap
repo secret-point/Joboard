@@ -16,6 +16,7 @@ exports[`JobDescription should match snapshot 1`] = `
     width="fit-content"
   >
     <IconArrowLeft
+      aria-hidden={true}
       display="block"
       size={16}
     />

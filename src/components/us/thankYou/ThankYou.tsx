@@ -16,7 +16,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundUpdateReferralForm, boundValidateAmazonLoginId } from "../../../actions/ThankYouActions/boundThankYouActions";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import {
@@ -28,6 +28,7 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { ThankYouState } from "../../../reducers/thankYou.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE } from "../../../utils/enums/common";
@@ -39,10 +40,9 @@ import {
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
+import DebouncedButton from "../../common/DebouncedButton";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
-import { ThankYouState } from "../../../reducers/thankYou.reducer";
-import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -305,7 +305,7 @@ export const ThankYou = (props: MapStateToProps) => {
                       gridGap={8}
                       alignItems="center">
                       {t("BB-ThankYou-get-pre-hire-appointment-details-text", "Pre-hire appointment details")}
-                      <IconArrowRight size={IconSize.ExtraSmall} />
+                      <IconArrowRight size={IconSize.ExtraSmall} aria-hidden={true} />
                     </Row>
                   </Text>
                 </Col>

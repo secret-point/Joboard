@@ -68,7 +68,7 @@ const ScheduleCard = ( props: ScheduleCardProps ) => {
                 <ScheduleDetails scheduleDetail={scheduleDetail} />
                 {!displayOnly &&
                 <Col>
-                    <IconChevronRight/>
+                    <IconChevronRight aria-hidden={true} />
                 </Col>}
             </Row>
             {

@@ -1,9 +1,9 @@
+import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { IconPencil } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
-import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -11,6 +11,7 @@ import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/bo
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import {
   getPageNameFromPath,
@@ -27,9 +28,8 @@ import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from ".
 import { checkAndBoundGetApplication, createUpdateApplicationRequest, formatDate, getFeatureFlagValue, getLocale, reverseMappingTranslate } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
-import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import DebouncedButton from "../../common/DebouncedButton";
+import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
 
 interface MapStateToProps {
   job: JobState;
@@ -142,7 +142,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
+          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>
@@ -176,7 +176,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
+          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>
@@ -208,7 +208,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-selfId-section-title-text", "Voluntary Self-identification")}
           </Text>
 
-          <Button icon={<IconPencil />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
+          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>

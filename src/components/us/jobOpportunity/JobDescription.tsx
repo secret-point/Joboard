@@ -1,32 +1,32 @@
 import React, { useEffect } from 'react';
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import InnerHTML from 'dangerously-set-html-content';
-import { connect } from "react-redux";
-import { JobState } from "../../../reducers/job.reducer";
-import { CommonColors } from "../../../utils/colors";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { translate as t } from "../../../utils/translator";
-import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
-import { PAGE_ROUTES } from "../../pageRoutes";
+import InnerHTML from 'dangerously-set-html-content';
+import queryString from "query-string";
+import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import queryString from "query-string";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { useLocation } from "react-router-dom";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { JobState } from "../../../reducers/job.reducer";
+import { CommonColors } from "../../../utils/colors";
+import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { translate as t } from "../../../utils/translator";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    candidate: CandidateState
+    job: JobState;
+    application: ApplicationState;
+    candidate: CandidateState;
 }
 
 export const JobDescription = (props: MapStateToProps) => {
@@ -39,7 +39,7 @@ export const JobDescription = (props: MapStateToProps) => {
     const jobDetail = job.results;
     const applicationData = application.results;
     const { JOB_CONFIRMATION } = PAGE_ROUTES;
-    const candidateData = candidate.results.candidateData;
+    const { candidateData } = candidate.results;
 
     useEffect(() => {
       boundGetCandidateInfo();
@@ -52,7 +52,7 @@ export const JobDescription = (props: MapStateToProps) => {
 
     useEffect(() => {
         checkAndBoundGetApplication(applicationId);
-    }, [applicationId]);;
+    }, [applicationId]);
 
     useEffect(()=>{
       applicationData && jobDetail && candidateData && addMetricForPageLoad(pageName);
@@ -79,7 +79,7 @@ export const JobDescription = (props: MapStateToProps) => {
                 }}
                 style={{ cursor: 'pointer' }}
             >
-                <IconArrowLeft size={IconSize.ExtraSmall}/>
+                <IconArrowLeft size={IconSize.ExtraSmall} aria-hidden={true} />
                 <Text fontSize="T100" fontWeight="medium">
                     {
                         t('BB-JobOpportunity-back-to-jobConfirmation-link','Back')

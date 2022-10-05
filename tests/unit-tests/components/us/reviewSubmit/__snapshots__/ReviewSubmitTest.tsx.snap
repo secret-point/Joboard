@@ -67,6 +67,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
         colorScheme="default"
         icon={
           <IconPencil
+            aria-hidden={true}
             display="block"
           />
         }
@@ -136,6 +137,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
         colorScheme="default"
         icon={
           <IconPencil
+            aria-hidden={true}
             display="block"
           />
         }
@@ -202,6 +204,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
         colorScheme="default"
         icon={
           <IconPencil
+            aria-hidden={true}
             display="block"
           />
         }
