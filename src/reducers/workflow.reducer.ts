@@ -5,7 +5,7 @@ import { WORKFLOW_ERROR_CODE } from "../utils/enums/common";
 export interface WorkflowState {
     loading: boolean;
     failed: boolean;
-    workflowErrorCode: WORKFLOW_ERROR_CODE
+    workflowErrorCode: WORKFLOW_ERROR_CODE;
 }
 
 export const initJobState: WorkflowState = {
@@ -14,7 +14,7 @@ export const initJobState: WorkflowState = {
     workflowErrorCode: WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE
 }
 
-export default function workflowReducer( state: WorkflowState = initJobState, action: WORKFLOW_ACTIONS ):WorkflowState {
+export default function workflowReducer( state: WorkflowState = initJobState, action: WORKFLOW_ACTIONS ): WorkflowState {
     switch (action.type) {
         case WORKFLOW_REQUEST.INIT:
         case WORKFLOW_REQUEST.START:

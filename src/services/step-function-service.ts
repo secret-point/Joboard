@@ -1,6 +1,15 @@
-import { getAccessToken } from "./../helpers/axios-helper";
+import { setInterval } from "timers";
 import isString from "lodash/isString";
+import {
+  boundSetWorkflowErrorCode,
+  boundWorkflowRequestEnd,
+  boundWorkflowRequestStart
+} from "../actions/WorkflowActions/boundWorkflowActions";
+import { log, logError, LoggerType } from "../helpers/log-helper";
 import { isJson } from "../helpers/utils";
+import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
+import { awaitWithTimeout, routeToAppPageWithPath, showErrorMessage } from "../utils/helper";
+import { EnvConfig } from "../utils/types/common";
 import {
   completeTask,
   goToStep,
@@ -9,16 +18,7 @@ import {
   startOrResumeWorkflow,
   startOrResumeWorkflowDS
 } from "./../actions/WorkflowActions/workflowActions";
-import { setInterval } from "timers";
-import { log, logError, LoggerType } from "../helpers/log-helper";
-import {
-  boundSetWorkflowErrorCode,
-  boundWorkflowRequestEnd,
-  boundWorkflowRequestStart
-} from "../actions/WorkflowActions/boundWorkflowActions";
-import { EnvConfig } from "../utils/types/common";
-import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
-import { awaitWithTimeout, routeToAppPageWithPath, showErrorMessage } from "../utils/helper";
+import { getAccessToken } from "./../helpers/axios-helper";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -31,9 +31,9 @@ export default class StepFunctionService {
   stepFunctionEndpoint: string | undefined;
   isCompleteTaskOnLoad: boolean | undefined;
   interval: any;
-  SECONDS: number = 60000;
-  MINUTES: number = 5;
-  CONNECTION_TIMEOUT: number = 5000;
+  SECONDS = 60000;
+  MINUTES = 5;
+  CONNECTION_TIMEOUT = 5000;
 
   constructor( applicationId: string, candidateId: string, appConfig: EnvConfig, requisitionId?: string, jobId?: string, scheduleId?: string ) {
     this.applicationId = applicationId;
@@ -117,6 +117,7 @@ export default class StepFunctionService {
         boundSetWorkflowErrorCode(message.errorMessageCode);
 
         // redirect the user to the rehire eligibility status page
+        boundWorkflowRequestEnd();
         routeToAppPageWithPath(message.stepName);
       }
       // Ignore current step and wait until stepName is job-opportunities

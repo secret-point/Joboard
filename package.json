@@ -165,7 +165,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.tsx'",
-    "clean": "rm -rf build node_modules lib",
+    "clean": "rm -rf build/* && rm -rf build",
     "prepublishOnly": "CI=false npm run build",
     "arb-tools": "arb-tools compile",
     "panther": "panther translate",
