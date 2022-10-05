@@ -224,6 +224,30 @@
       "value" : "Wie nach geltendem Recht zulässig, hängt dein Angebot davon ab, dass du die vorgeschriebene Hintergrundüberprüfung, den Drogentest (falls zutreffend) und die Überprüfung der Eignung für eine Wiedereinstellung (falls zutreffend) erfolgreich bestehst. Daher ist es wichtig, dass du die Schritte vor der Einstellung auf der nächsten Seite abschließt. Unter Umständen kann sich dein erster Arbeitstag verzögern, weil die Einstellungsvoraussetzungen nicht rechtzeitig erfüllt wurden. Wenn dies der Fall sein sollte, werden wir uns bald bei dir melden.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Dieses Angebot ist eine Bestätigung, dass du als Mitarbeiter von Amazon eingestellt wirst, wenn du den Hintergrundtest, den Drogentest und alle anderen erforderlichen Aktivitäten vor der Einstellung erfolgreich absolvierst.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Deine Startzeit kann sich verzögern, wenn:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Die Hintergrundüberprüfung wurde nicht rechtzeitig abgeschlossen.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Du erfüllst die Anforderungen des Drogentests nicht rechtzeitig",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Ausbildungsplätze füllen sich",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "sich dein Starttermin verzögert, du erhälst weitere Informationen über die nächsten Schritte.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Was bedeutet eine saisonale Laufzeit?",
       "note" : "Text for about seasonal duration popover title"
@@ -231,6 +255,34 @@
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Wie erhalte ich den Anmeldebonus?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dieses Angebot beinhaltet einen Anmeldebonus von {signOnBonus} basierend auf den oben genannten Details. Es ist in mehreren Raten zahlbar, die sich auf bis zu 180 Tage nach dem Start erstrecken können. Wenn du einen neuen Termin vereinbaren musst, kann es sein, dass dieses spezielle Angebot je nach der von dir gewählten neuen Rolle nicht verfügbar ist. Wenn du in den letzten 90 Tagen für Amazon gearbeitet hast, hast du keinen Anspruch auf den Anmeldebonus.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dieses Angebot beinhaltet einen Anmeldebonus von {signOnBonus} basierend auf den oben genannten Details. Es ist in mehreren Raten zu zahlen, die sich bis zu 180 Tage nach deinem Start erstrecken können.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Dieses spezielle Angebot ist möglicherweise nicht verfügbar, wenn:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Du verschiebst deine Schicht",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "du dein Startdatum verschiebst, oder",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "du eine neue Rolle wählst.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Wenn du in den letzten 90 Tagen für Amazon gearbeitet hast, hast du keinen Anspruch auf einen Anmeldebonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Schließen.",
@@ -1443,6 +1495,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "Schicht",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexibel",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Erforderliche Schulungstermine",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Unterstützte Sprachen",

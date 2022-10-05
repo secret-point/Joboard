@@ -57,74 +57,85 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       return datesList.map( (dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>))
     }
 
-  //TODO revert the function back once translations are in
-  const renderRequiredLanguages = (schedule: Schedule): string => {
-      const languageList: string[] = [];
-      localeToLanguageList.forEach((item) => {
-          const languageValue = getLocale() === Locale.esUS ? item.languageES : item.language;
-          requiredLanguages?.includes(item.locale) ? languageList.push(languageValue) : null
-      });
+  const renderRequiredLanguages = (): string => {
+    const languageList: string[] = [];
 
-      return languageList.join(', ');
-  }
+    localeToLanguageList.forEach((item) => {
+      requiredLanguages?.includes(item.locale) ? languageList.push(t(item.translationKey, item.language)) : null;
+    });
 
-  const languageSupportedKey = getLocale() === Locale.esUS ? "Idioma compatible" : "Languages Supported";
+    return languageList.join(", ");
+  };
 
   return (
-    <Col gridGap={8} width="95%">
-      <Row gridGap={5} alignItems="center">
+    <Col gridGap={10} width="95%">
+      <Row gridGap={10} alignItems="center">
           <IconCalendarFill size={IconSize.ExtraSmall} />
+        <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-start-date","Start Date")}: </Text>
           <Text fontSize="T100">{startDate}</Text>
+        </Row>
       </Row>
 
-      <Row gridGap={5} alignItems="center">
+      <Row gridGap={10} alignItems="center">
           <IconClockFill size={IconSize.ExtraSmall} />
-          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-shift","Shift")}: </Text>
-          <Text fontSize="T100">{scheduleText}</Text>
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-shift","Shift")}: </Text>
+            <Text fontSize="T100">{scheduleText}</Text>
+          </Row>
       </Row>
 
         {parsedTrainingDate &&
             <Col gridGap={5} alignItems="left" padding={{left:'S400'}} >
-            <Text fontSize="T100" style={{fontStyle:"italic"}}>{shift}</Text>
+            <Text fontSize="T200" style={{fontStyle:"italic"}}>{shift}</Text>
             {renderShiftDate()}
         </Col>
         }
 
-        <Row gridGap={5} alignItems="center">
+        <Row gridGap={10} alignItems="center">
           <IconPaymentFill size={IconSize.ExtraSmall} />
-          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
-          <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
-      </Row>
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
+            <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
+          </Row>
+        </Row>
 
-      <Row gridGap={5} alignItems="center">
+      <Row gridGap={10} alignItems="center">
           <IconHourGlass size={IconSize.ExtraSmall} />
-          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-hours","Hours")}: </Text>
-          <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-hours","Hours")}: </Text>
+            <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
+          </Row>
       </Row>
 
-        {employmentTypeL10N ?
-            <Row gridGap={5} alignItems="center">
-                <IconClock size={IconSize.ExtraSmall}/>
-                <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-duration", "Duration")}: </Text>
-                <Text fontSize="T100">{employmentTypeL10N || employmentType}</Text>
-            </Row> : null
-        }
-
-        { showRequiredLanguages &&
-            <Row gridGap={5} alignItems="center">
-                <IconGlobe size={IconSize.ExtraSmall} />
-                {/*TODO:remove hard coded text once translations are in*/}
-                {/*<Text fontSize="T200" fontWeight='bold'>{t(`BB-Schedule-card-languages-supported`, `Languages Supported`)}: </Text>*/}
-                <Text fontSize="T200" fontWeight='bold'>{languageSupportedKey}: </Text>
-                <Text fontSize="T100">{renderRequiredLanguages(scheduleDetail)}</Text>
+        {employmentTypeL10N &&
+          <Row gridGap={10} alignItems="center">
+            <IconClock size={IconSize.ExtraSmall}/>
+            <Row gridGap={3} alignItems="center">
+              <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-duration", "Duration")}: </Text>
+              <Text fontSize="T100">{employmentTypeL10N || employmentType}</Text>
             </Row>
+          </Row>
         }
 
-      <Row gridGap={5} alignItems="center">
-          <IconMail size={IconSize.ExtraSmall} />
-          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-location","Location")}: </Text>
+      {showRequiredLanguages &&
+      <Row gridGap={10} alignItems="center">
+        <IconGlobe size={IconSize.ExtraSmall} />
+        <Row gridGap={3} alignItems="center">
+          <Text fontSize="T200" fontWeight="bold">
+            {t(`BB-Schedule-card-languages-supported`, `Languages Supported`)}:
+          </Text>
+          <Text fontSize="T100">{renderRequiredLanguages()}</Text>
+        </Row>
+      </Row>
+      }
+
+      <Row gridGap={10} alignItems="center">
+        <IconMail size={IconSize.ExtraSmall} />
+        <Row gridGap={3} alignItems="center">
+          <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-location", "Location")}: </Text>
           <Text color={CommonColors.Blue70} fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>
+        </Row>
       </Row>
     </Col>
   )

@@ -55,15 +55,75 @@ exports[`ContingentOffer should match snapshot 1`] = `
         titleText="What is a contingent offer?"
       >
         <Col
-          gridGap="S500"
+          gridGap={8}
         >
           <Text
             font="primary"
-            fontSize="T200"
+            fontSize="T300"
             hyphens="none"
           >
-            As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.
+            This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities.
           </Text>
+          <Row
+            padding={
+              Object {
+                "bottom": "S200",
+                "top": "S200",
+              }
+            }
+          >
+            <Text
+              font="primary"
+              fontSize="T300"
+              hyphens="none"
+            >
+              Your start time might be delayed if:
+            </Text>
+          </Row>
+          <Col
+            padding={
+              Object {
+                "left": "S300",
+              }
+            }
+          >
+            <Text
+              font="primary"
+              fontSize="T300"
+              hyphens="none"
+            >
+              <li>
+                The background check is not completed on time
+              </li>
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T300"
+              hyphens="none"
+            >
+              <li>
+                You don’t meet the drug test requirements on time
+              </li>
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T300"
+              hyphens="none"
+            >
+              <li>
+                Training spots fill up.
+              </li>
+            </Text>
+          </Col>
+          <Row>
+            <Text
+              font="primary"
+              fontSize="T300"
+              hyphens="none"
+            >
+              If your start date is delayed, you’ll receive additional information regarding next steps.
+            </Text>
+          </Row>
         </Col>
       </Expander>
     </Row>

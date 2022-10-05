@@ -1496,6 +1496,14 @@
       "value" : "Shift",
       "note" : "Text for the schedule card shift text"
     },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexibel",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Vereiste trainingsdata",
+      "note" : "Text for the schedule card required training date"
+    },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Ondersteunde talen",
       "note" : "Job Required Languages label text"

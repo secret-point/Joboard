@@ -1504,6 +1504,10 @@
       "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
     },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Required training dates",
+      "note" : "Text for the schedule card required training date"
+    },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Languages Supported",
       "note" : "Job Required Languages label text"

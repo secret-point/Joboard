@@ -224,17 +224,69 @@
       "value" : "প্রযোজ্য আইন দ্বারা অনুমোদিত হিসেবে, আপনার অফারটি প্রয়োজনীয় ব্যাকগ্রাউন্ড চেক, ড্রাগ স্ক্রিনিং (যদি প্রযোজ্য হয়) এবং পুনরায় নিয়োগের যোগ্যতা পরীক্ষা (যদি প্রযোজ্য হয়) সফলভাবে উত্তীর্ণ হওয়ার উপর নির্ভরশীল, তাই পরবর্তী পৃষ্ঠায় আপনার প্রাক-নিয়োগ পদক্ষেপগুলি সম্পূর্ণ করা গুরুত্বপূর্ণ। কিছু ক্ষেত্রে, প্রাক-নিয়োগের শর্তাবলী সময়মতো সম্পূর্ণ না হওয়ার কারণে আপনার প্রথম দিন বিলম্বিত হতে পারে। এই ক্ষেত্রে, আপনি শীঘ্রই আমাদের কাছ থেকে শোনার আশা করতে পারেন।",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "এই অফারটি নিশ্চিত করে যে আপনাকে Amazon-এর কর্মী হিসাবে নিয়োগ দেওয়া হবে যদি আপনি সফলভাবে আপনার ব্যাকগ্রাউন্ড, ড্রাগ টেস্ট এবং অন্যান্য যেকোনো প্রয়োজনীয় নিয়োগ-পূর্ব কার্যক্রম সম্পূর্ণ করে থাকেন।",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
       "value" : "আপনার শুরুর সময় বিলম্বিত হতে পারে যদি:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "ব্যাকগ্রাউন্ড পরীক্ষা সময়মত সম্পন্ন করা হয় নি।",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "আপনি সময়মতো ড্রাগ টেস্টের প্রয়োজনীয়তা পূরণ করেন নি।",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "প্রশিক্ষণ স্পট পরিপূর্ণ হয়ে গেছে",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "আপনার শুরুর তারিখ বিলম্বিত হলে, আপনি পরবর্তী পদক্ষেপের বিষয়ে অতিরিক্ত তথ্য পাবেন।",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "একটি মৌসুমি সময়সীমা মানে কি?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "সাময়িক ভূমিকা এবং নিয়মিত ভূমিকায় একই চাকরির দায়িত্ব রয়েছে। সাময়িক ভূমিকাগুলি, অবশ্য, অস্থায়ী এবং 11 মাসের বেশি থাকবেনা। আপনি যদি স্থায়ী ভিত্তিতে Amazon এ যোগদান করতে আগ্রহী হন, তাহলে সুযোগটি ভবিষ্যতে উপলভ্য হতে পারে। অন্যথায়, আপনার অ্যাসাইনমেন্ট শেষ হলে আপনাকে জানানো হবে।",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "আমি কিভাবে বোনাসে এই সাইন পেতে পারি?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "এই অফারটিতে উপরে উল্লেখিত সুনির্দিষ্ট বিস্তারিত বিবরণের উপর ভিত্তি করে একটি {signOnBonus}-এর সাইন অন বোনাস রয়েছে। এটি একাধিক মাসিক ইনস্টলমেন্ট-এ প্রদেয় যা আপনি শুরু করার পরে 180 দিন পর্যন্ত বাড়তে পারে। আপনাকে সময়সূচী পুনঃনির্ধারণ করতে হলে, এই নির্দিষ্ট অফারটি আপনার বেছে নেওয়া নতুন ভূমিকার উপর ভিত্তি করে উপলভ্য নাও হতে পারে। গত 90 দিনের মধ্যে আপনি Amazon-এর জন্য কাজ করে থাকলে, আপনি কোনও সাইন অন বোনাস পাওয়ার জন্য যোগ্য হবেন না।",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "এই অফারে উপরে উল্লিখিত নির্দিষ্ট বিবরণের উপর {signOnBonus} ভিত্তি করে বোনাসের একটি চিহ্ন অন্তর্ভুক্ত রয়েছে। এটি একাধিক মাসিক কিস্তিতে প্রদেয় যা আপনি শুরু করার পরে 180 দিন পর্যন্ত প্রসারিত হতে পারে।",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "এই নির্দিষ্ট অফারটি উপলভ্য নাও হতে পারে যদি:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "আপনি আপনার স্থানান্তর পুনরায় নির্ধারণ করেছেন",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "আপনি আপনার শুরুর তারিখ পুনঃনির্ধারণ করেছেন, অথবা",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "আপনি একটি নতুন ভূমিকা নির্বাচন করেছেন।",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "গত 90 দিনের মধ্যে Amazon-এর জন্য কাজ করে থাকলে, আপনি কোনও সাইন অন বোনাস পাওয়ার যোগ্য হবেন না।",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "বন্ধ করুন।",
@@ -1451,6 +1503,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "নমনীয়",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "প্রয়োজনীয় প্রশিক্ষণের তারিখ সমূহ",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "সমর্থিত ভাষাসমূহ",

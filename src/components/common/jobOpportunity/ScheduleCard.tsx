@@ -1,9 +1,6 @@
 import React from "react";
-import {
-    IconChevronRight
-} from '@amzn/stencil-react-components/icons';
+import { IconChevronRight } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { Link } from "@amzn/stencil-react-components/link";
 import { Text } from "@amzn/stencil-react-components/text";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { CommonColors } from "../../../utils/colors";

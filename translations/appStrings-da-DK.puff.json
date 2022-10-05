@@ -228,6 +228,14 @@
       "value" : "Dette tilbud er en bekræftelse på, at du bliver ansat som medarbejder hos Amazon, hvis du fuldfører din baggrundskontrol, narkotikatest samt alle andre nødvendige aktiviteter, inden ansættelse.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Din starttidspunkt kan blive udskudt, hvis:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Baggrundskontrollen er ikke afsluttet til tiden.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Du ikke opfylder ikke kravene til narkotikatest til tiden",
       "note" : "Text for contingent offer meaning popover content"
@@ -244,9 +252,25 @@
       "value" : "Hvad betyder en sæsonbestemt varighed?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Der er ingen forskel i jobopgaver, forskellen er, at dette job er beregnet til at være midlertidigt og ikke længere end 11 måneder. Hvis du er interesseret i at blive fastansat, kan muligheden blive tilgængelig. Ellers får du besked, når din opgave slutter.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Sæsonstillinger og helårsstillinger har de samme opgaver. Dog er sæsonstillinger beregnet til at være midlertidige og ikke vare længere end 11 måneder. Hvis du er interesseret i at arbejde fast for Amazon, kan det blive muligt i fremtiden. Ellers får du besked, når din opgave slutter.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Hvordan får jeg en tilmeldingsbonus?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dette tilbud inkluderer en startbonus på {signOnBonus}, baseret på de specifikke detaljer, der er nævnt ovenfor. Den betales over flere rater, der kan strække sig, op til 180 dage efter du starter. Hvis du er nødt til at ændre tidsplanen, kan det være, at dette specifikke tilbud ikke er tilgængeligt, afhængig af den nye rolle du vælger. Hvis du for nylig har arbejdet for Amazon, indenfor de sidste 90 dage, vil du ikke være kvalificeret til en startbonus.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dette tilbud omfatter startbonus på {signOnBonus}, baseret på de specifikke oplysninger, der er anført ovenfor. Den betales i flere rater, der kan strække sig til 180 dage efter, at du er startet.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Dette specifikke tilbud er muligvis ikke tilgængeligt, hvis:",
@@ -1483,6 +1507,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "Fleksibel",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Obligatoriske træningsdatoer",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Understøttede sprog",

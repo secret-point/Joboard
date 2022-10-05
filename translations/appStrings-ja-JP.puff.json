@@ -252,9 +252,21 @@
       "value" : "シーズン限定とはどういう意味ですか?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "職務に違いはありません。違うのは、この役職は臨時のものであり、11ヵ月以内に終了するという点です。無期雇用に興味のある方には、その機会が提供される場合もあります。それ以外の場合は、契約期間の終了時に通知されます。",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "シーズン的な役割と通常の役割の職務は同じです。ただし、シーズン的な役割は一時的なもので、11か月以内に終了することを意図しています。Amazonでの無期雇用に興味のある場合、将来的にその機会が訪れる可能性もあります。それ以外の場合は、契約期間の終了時に通知されます。",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "サインオンボーナスはどうすればもらえますか？",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "このオファーには、上記の具体的な詳細に基づく{signOnBonus}のサインオンボーナスが含まれています。このボーナスは勤務開始後180日までの間に、月払いによって分割で支払われる場合があります。スケジュールを変更する場合、選択した新しい役職によっては、このオファーがない場合もあります。過去90日間にAmazonで働いたことがある場合は、サインオンボーナスの対象にはなりません。",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "このオファーには、上記の具体的な詳細に基づく{signOnBonus}のサインオンボーナスが含まれています。開始後180日に渡り、月払いによって複数回支払われる場合があります。",
@@ -1495,6 +1507,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "フレックス",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "必要なトレーニング日程",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "サポートされている言語",

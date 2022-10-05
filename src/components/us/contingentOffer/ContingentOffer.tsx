@@ -117,19 +117,48 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                 </H4>
                 <Row padding={{top: 'S200'}}>
                     <Expander titleText={t("BB-ContingencyOffer-contingent-offer-meaning-popover-title-text", "What is a contingent offer?")}>
-                        <Col gridGap="S500">
-                            <Text fontSize="T200">
-                                {t("BB-ContingencyOffer-contingent-offer-meaning-popover-content", "As permitted by applicable law, your offer is contingent on successfully passing the required background check, drug screening (if applicable) and rehire eligibility check (if applicable), so it’s important that you complete the pre-employment steps on the next page. In some circumstances, your first day may be delayed due to pre-employment requirements not being completed in time. If this is the case, you can expect to hear from us soon.")}
+                        <Col gridGap={8}>
+                            <Text>
+                                {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content", "This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities.")}
                             </Text>
+                            <Row padding={{top: "S200", bottom: "S200"}}>
+                                <Text>
+                                    {
+                                        t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line", "Your start time might be delayed if:")
+                                    }
+                                </Text>
+                            </Row>
+                            <Col padding={{left: "S300"}}>
+                                <Text>
+                                    <li>
+                                        {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one", "The background check is not completed on time")}
+                                    </li>
+                                </Text>
+                                <Text>
+                                    <li>
+                                        {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two", "You don’t meet the drug test requirements on time")}
+                                    </li>
+                                </Text>
+                                <Text>
+                                    <li>
+                                        {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three", "Training spots fill up.")}
+                                    </li>
+                                </Text>
+                            </Col>
+                            <Row>
+                                <Text>
+                                    {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line", "If your start date is delayed, you’ll receive additional information regarding next steps.")}
+                                </Text>
+                            </Row>
                         </Col>
                     </Expander>
                 </Row>
-                {employmentType === "Seasonal"? <Row padding={{top: 'S200'}}>
+                {employmentType === "Seasonal" ? <Row padding={{top: 'S200'}}>
                     <Expander
                         titleText={t("BB-Schedule-card-about-seasonal-duration-popover-title-text", "What does a seasonal duration mean?")}>
                         <Col gridGap="S500">
                             <Text fontSize="T200">
-                                {t("BB-Schedule-card-about-seasonal-duration-popover-content", "There is no difference in job duties, the difference is this role is intended to be temporary and no longer than 11 months.  If you are interested in joining on a permanent basis, the opportunity may become available.  Otherwise, you’ll be notified when your assignment will end.")}
+                                {t("BB-Schedules-card-about-seasonal-duration-popover-content", 'Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future.  Otherwise, you’ll be notified when your assignment will end.')}
                             </Text>
                         </Col>
                     </Expander>
@@ -137,10 +166,39 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                 {signOnBonus ?
                     <Row padding={{top: 'S200', bottom: 'S400'}}>
                         <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do I get the sign on bonus?")}>
-                            <Col gridGap="S500">
-                                <Text fontSize="T200">
-                                    {t("BB-Schedule-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of $${signOnBonus} based on the specific details noted above. It is payable over multiple installments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have recently worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.`, {signOnBonus})}
+                            <Col gridGap={8}>
+                                <Text>
+                                    {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of ${signOnBonus} based on the specific details noted above. It’s payable over multiple installments that may extend to 180 days after your start.`, {signOnBonus})}
                                 </Text>
+                                <Row padding={{top: "S200", bottom: "S200"}}>
+                                    <Text>
+                                        {
+                                            t("BB-Schedules-card-about-how-to-sign-bonus-content-point", "This specific offer may not be available if:")
+                                        }
+                                    </Text>
+                                </Row>
+                                <Col padding={{left: "S300"}}>
+                                    <Text>
+                                        <li>
+                                            {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-one", "You reschedule your shift")}
+                                        </li>
+                                    </Text>
+                                    <Text>
+                                        <li>
+                                            {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-two", "You reschedule your start date, or")}
+                                        </li>
+                                    </Text>
+                                    <Text>
+                                        <li>
+                                            {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-three", "You choose a new role.")}
+                                        </li>
+                                    </Text>
+                                </Col>
+                                <Row>
+                                    <Text>
+                                        {t("BB-Schedules-card-about-how-to-sign-bonus-content-last-line", "If you’ve worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.")}
+                                    </Text>
+                                </Row>
                             </Col>
                         </Expander>
                     </Row>: null

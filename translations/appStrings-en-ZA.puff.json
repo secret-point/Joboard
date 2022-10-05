@@ -252,6 +252,10 @@
       "value" : "What does a seasonal duration mean?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "There is no difference in job duties, the difference is that this role is intended to be temporary and no longer than 11 months. If you are interested in joining on a permanent basis, the opportunity may become available. Otherwise, you will be notified when your assignment will end.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedules-card-about-seasonal-duration-popover-content" : {
       "value" : "Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future. Otherwise, you’ll be notified when your assignment will end.",
       "note" : "Text for about seasonal duration popover content"
@@ -259,6 +263,10 @@
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "How do I get the sign-on bonus?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "This offer includes a sign-on bonus of {signOnBonus} based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have worked for Amazon in the last 90 days, you will not be eligible for any sign-on bonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "This offer includes a sign-on bonus of {signOnBonus} based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start.",
@@ -1499,6 +1507,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Required training dates",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Languages Supported",

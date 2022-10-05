@@ -224,12 +224,28 @@
       "value" : "ಅನ್ವಯವಾಗುವ ಕಾನೂನಿನಿಂದ ಅನುಮತಿಸಿದಂತೆ, ನಿಮ್ಮ ಉದ್ಯೋಗ ಪ್ರಸ್ತಾಪವು ಅಗತ್ಯವಿರುವ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ, ಡ್ರಗ್ ಸ್ಕ್ರೀನಿಂಗ್ (ಅನ್ವಯಿಸಿದರೆ) ಮತ್ತು ಅರ್ಹತಾ ಪರಿಶೀಲನೆಯನ್ನು (ಅನ್ವಯಿಸಿದರೆ) ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸುವವರೆಗೆ ಅನಿಶ್ಚಿತವಾಗಿರುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ಮುಂದಿನ ಪುಟದಲ್ಲಿ ಉದ್ಯೋಗ-ಪೂರ್ವ ಹಂತಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸುವುದು ಮುಖ್ಯವಾಗಿದೆ. ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ, ಉದ್ಯೋಗ-ಪೂರ್ವದ ಅವಶ್ಯಕತೆಗಳನ್ನು ಸಮಯಕ್ಕೆ ಪೂರ್ಣಗೊಳಿಸದ ಕಾರಣ, ನಿಮ್ಮ ಮೊದಲ ದಿನವು ವಿಳಂಬವಾಗಬಹುದು. ಒಂದು ವೇಳೆ ಹಾಗಾದಲ್ಲಿ, ನೀವು ಶೀಘ್ರದಲ್ಲೇ ನಮ್ಮಿಂದ ಕರೆಯನ್ನು ನಿರೀಕ್ಷಿಸಬಹುದು.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "ನಿಮ್ಮ ಹಿನ್ನೆಲೆ, ಔಷಧ ಪರೀಕ್ಷೆ ಮತ್ತು ಅಗತ್ಯವಿರುವ ಎಲ್ಲ ಪೂರ್ವ-ಬಾಡಿಗೆ ಚಟುವಟಿಕೆಗಳನ್ನು ನೀವು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದರೆ ನೀವು Amazon ಇನ ಉದ್ಯೋಗಿಯಾಗಿ ನೇಮಕಗೊಳ್ಳುತ್ತೀರಿ ಎಂದು ಈ ಪ್ರಸ್ತಾಪವು ದೃಢೀಕರಣವಾಗಿದೆ.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
       "value" : "ನಿಮ್ಮ ಪ್ರಾರಂಭದ ಸಮಯ ವಿಳಂಬವಾಗಬಹುದು, ಒಂದುವೇಳೆ:",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
       "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ಸಮಯಕ್ಕೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "ನೀವು ಸಮಯಕ್ಕೆ ಔಷಧ ಪರೀಕ್ಷೆಯ ಅವಶ್ಯಕತೆಗಳನ್ನು ಪೂರೈಸುವುದಿಲ್ಲ",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "ತರಬೇತಿ ತಾಣಗಳು ತುಂಬುತ್ತವೆ",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "ನಿಮ್ಮ ಪ್ರಾರಂಭದ ದಿನಾಂಕ ವಿಳಂಬವಾಗಿದ್ದರೆ, ಮುಂದಿನ ಹಂತಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ನೀವು ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
@@ -242,6 +258,26 @@
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "ಈ ಕೊಡುಗೆಯು ಮೇಲೆ ನಮೂದಿಸಿದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳ ಆಧಾರದ ಮೇಲೆ ಬೋನಸ್{signOnBonus} ನ ಚಿಹ್ನೆಯನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ನೀವು ಪ್ರಾರಂಭಿಸಿದ ನಂತರ 180 ದಿನಗಳವರೆಗೆ ವಿಸ್ತರಿಸಬಹುದಾದ ಅನೇಕ ಕಂತುಗಳಲ್ಲಿ ಇದನ್ನು ಪಾವತಿಸಲಾಗುತ್ತದೆ.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "ಹೀಗಿದ್ದಾಗ ಈ ನಿರ್ದಿಷ್ಟ ಕೊಡುಗೆ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "ನಿಮ್ಮ ಶಿಫ್ಟ್ ಅನ್ನು ನೀವು ಮರುಹೊಂದಿಸುತ್ತೀರಿ",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "ನಿಮ್ಮ ಪ್ರಾರಂಭದ ದಿನಾಂಕವನ್ನು ನೀವು ಮರುಹೊಂದಿಸುತ್ತೀರಿ, ಅಥವಾ",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "ನೀವು ಹೊಸ ಪಾತ್ರವನ್ನು ಆರಿಸಿಕೊಳ್ಳುತ್ತೀರಿ.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "ನೀವು ಕೊನೆಯ 90 ದಿನಗಳಲ್ಲಿ Amazonಗಾಗಿ ಕೆಲಸ ಮಾಡಿದ್ದರೆ ಬೋನಸ್‌ನಲ್ಲಿ ಯಾವುದೇ ಚಿಹ್ನೆಗೆ ನೀವು ಅರ್ಹರಾಗುವುದಿಲ್ಲ.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1459,6 +1495,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "ಹೊಂದಿಕೊಳ್ಳುವ",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "ಅಗತ್ಯವಿರುವ ತರಬೇತಿ ದಿನಾಂಕಗಳು",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "ಬೆಂಬಲಿತ ಭಾಷೆಗಳು",

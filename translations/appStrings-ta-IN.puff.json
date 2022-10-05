@@ -224,9 +224,69 @@
       "value" : "பொருந்தக்கூடிய சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி, உங்கள் ஆஃபர், தேவையான பின்னணிச் சோதனை, மருந்துப் பரிசோதனை (பொருந்தினால்) மற்றும் தகுதிச் சரிபார்ப்பு (பொருந்தினால்) ஆகியவற்றை வெற்றிகரமாகச் செய்வதன் மூலம் தொடர்ந்து இருக்கும். எனவே அடுத்த பக்கத்தில் நீங்கள் முன்கூட்டிய-பணியமர்த்தல் நடவடிக்கைகளை முடிக்க வேண்டியது அவசியம். சில சூழ்நிலைகளில், பணிக்கு முந்தைய தேவைகள் சரியான நேரத்தில் முடிக்கப்படாததால், உங்கள் முதல் நாள் தாமதமாகலாம். இந்த நிலை ஏற்பட்டால், விரைவில் எங்களிடமிருந்து இதுகுறித்த அறிவிப்பை எதிர்பார்க்கலாம்.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "உங்களின் பின்னணி சரிபார்ப்பு, போதை மருந்து பரிசோதனை மற்றும் பணியமா்த்தலுக்கு முன்பு செய்ய வேண்டிய வேறு ஏதேனும் நடவடிக்கைகள் போன்றவற்றை வெற்றிகரமாக முடித்தால், நீங்கள் Amazon பணியாளராகப் பணியமர்த்தப்படுவீர்கள் என்பதை இந்த ஆஃபர் உறுதிப்படுத்துகிறது.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "பின்வரும் பட்சத்தில் உங்கள் தொடக்க நேரம் தாமதமாகியிருக்கலாம்:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "பின்னணிச் சரிபார்ப்பு உரிய நேரத்தில் நிறைவு செய்யப்படவில்லை.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "நீங்கள் உரிய நேரத்தில் போதை மருந்துப் பரிசோதனைத் தேவைகளை பூர்த்தி செய்யவில்லை",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "பயிற்சி இடங்கள் நிரப்பப்படுகின்றன",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "உங்கள் தொடக்கத் தேதி தாமதமாகிறது எனில், அடுத்த படிகள் பற்றிய கூடுதல் தகவல்களைப் பெறுவீர்கள்.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "குறிப்பிட்ட கால அளவுப் பணி என்றால் என்ன?",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "பணிக் கடமைகளில் எந்த மாற்றமும் இல்லை, ஆனால் இந்தப் பொறுப்பு தற்காலிகமானதாகும், 11 மாதங்களுக்கு மேல் நீடிக்காது என்பதே இதிலுள்ள வித்தியாசம் ஆகும். உங்களுக்கு நிரந்தரப் பணியில் சேர விருப்பம் இருந்தால், அதற்கான வாய்ப்பு கிடைக்கலாம். இல்லையெனில், உங்கள் வேலை எப்போது முடிவடையும் என்று உங்களுக்குத் தெரிவிக்கப்படும்.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "பணியில் சேர்வதற்கான போனஸை நான் எப்படிப் பெறுவது?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "மேலே குறிப்பிட்டுள்ள விவரங்களின் அடிப்படையில், பதிவுசெய்தலுக்காக கிடைக்கும் {signOnBonus} போனஸும் இந்த ஆஃபரில் அடங்கும். நீங்கள் தொடங்கிய பிறகு, பல தவணைகளில் இது செலுத்தப்படும், செலுத்துதல் 180 நாட்கள் வரை நீட்டிக்கப்படலாம். நீங்கள் மறுதிட்டமிட வேண்டியிருந்தால், நீங்கள் தேர்ந்தெடுக்கும் புதிய பொறுப்பின் அடிப்படையில் இந்தக் குறிப்பிட்ட ஆஃபர் கிடைக்காமல் போகலாம். நீங்கள் சமீபமாக, கடந்த 90 நாட்களில் Amazon இல் பணிபுரிந்திருந்தால், பதிவுசெய்தலுக்கான போனஸுக்குத் தகுதிபெற மாட்டீர்கள்.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "மேலே குறிப்பிட்டுள்ள விவரங்களின் அடிப்படையில், பதிவுசெய்தலுக்கான {signOnBonus} போனஸும் இந்தச் சலுகையில் கிடைக்கும். நீங்கள் பணியைத் தொடங்கிய பிறகு, 180 நாட்களுக்கு நீட்டிக்கக்கூடிய பல தவணைகளில் இது செலுத்தப்படும்.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "பின்வரும் சந்தர்ப்பங்களில் இந்த குறிப்பிட்ட ஆஃபர் கிடைக்காமல் போகலாம்:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "உங்கள் ஷிப்ட்டை மறு திட்டமிடுகிறீர்கள்",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "உங்கள் தொடக்கத் தேதியை மறு திட்டமிடுகிறீர்கள் அல்லது",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "நீங்கள் ஒரு புதிய பொறுப்பைத் தேர்வு செய்கிறீர்கள்.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "கடந்த 90 நாட்களில் நீங்கள் Amazon நிறுவனத்தில் பணிபுரிந்திருந்தால், பணியில் சேர்வதற்கான போனஸுக்கு நீங்கள் தகுதி பெற மாட்டீர்கள்.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "மூடுக.",
@@ -1439,6 +1499,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "ஷிஃப்ட்",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "மாற்றிக்கொள்ளக்கூடியது",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "தேவையான பயிற்சித் தேதிகள்",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "ஆதரிக்கப்படும் மொழிகள்",

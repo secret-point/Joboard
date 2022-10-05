@@ -244,6 +244,22 @@
       "value" : "Apakah maksud jangka masa bermusim?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Tidak ada perbezaan dalam tugas pekerjaan, perbezaannya ialah peranan ini bertujuan untuk bersifat sementara dan tidak lebih dari 11 bulan. Sekiranya anda berminat untuk menyertai secara tetap, peluang mungkin tersedia. Jika tidak, anda akan diberitahu apabila tugasan anda akan berakhir.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Peranan Bermusim dan Peranan Tetap mempunyai tugas pekerjaan yang sama. Walau bagaimanapun, peranan bermusim bertujuan untuk bersifat sementara dan bertahan tidak lebih dari 11 bulan. Sekiranya anda berminat untuk menyertai Amazon secara tetap, peluang itu mungkin tersedia pada masa akan datang. Jika tidak, anda akan diberitahu apabila tugasan anda akan berakhir.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Bagaimanakah cara saya mendapatkan bonus penyertaan?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak {signOnBonus} berdasarkan butiran khusus yang dinyatakan di atas. Ia dibayar melalui berbilang ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula. Jika anda perlu menjadualkan semula, tawaran khusus ini mungkin tidak tersedia berdasarkan peranan baharu yang anda pilih. Sekiranya anda bekerja untuk Amazon baru-baru ini dalam tempoh 90 hari lepas, anda tidak akan layak mendapat sebarang bonus penyertaan.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Tawaran khusus ini mungkin tidak tersedia jika:",
       "note" : "Text for how to sign on bonus popover content"
@@ -1475,6 +1491,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "Syif",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Fleksibel",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Tarikh latihan yang diperlukan",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Bahasa yang Disokong",

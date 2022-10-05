@@ -228,6 +228,14 @@
       "value" : "Esta oferta é a confirmação de que será contratado como colaborador da Amazon, se concluir com sucesso a sua verificação de antecedentes, o teste de deteção de drogas e todas as outras atividades de pré-contratação obrigatórias .",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "A sua data de início pode ser atrasada se:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "A verificação de antecedentes não foi concluída atempadamente.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Não cumprir atempadamente os requisitos do teste de deteção de drogas",
       "note" : "Text for contingent offer meaning popover content"
@@ -243,6 +251,26 @@
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "O que significa uma duração sazonal?",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Não existem diferenças nas funções de trabalho. A diferença é que esta função é temporária e inferior a 11 meses. Se estiver interessado em juntar-se a nós de forma permanente, poderá surgir essa oportunidade. Caso contrário, será notificado da data de término da sua função.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "As funções sazonais e regulares têm as mesmas funções de trabalho. Contudo, as funções sazonais destinam-se a ser temporárias, com uma duração máxima de 11 meses. Se estiver interessado em ingressar na Amazon de forma permanente, futuramente poderá ficar disponível uma oportunidade. Caso contrário, será notificado da data de término da sua função.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Como faço para obter o bónus de contratação?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bónus de contratação de {signOnBonus}, com base nos detalhes específicos mencionados acima. Este valor é pago em prestações que podem prolongar-se até 180 dias após a contratação. Se precisar de reagendar, esta oferta específica poderá não estar disponível, conforme a nova função que escolher. Se trabalhou recentemente para a Amazon, nos últimos 90 dias, não será elegível para nenhum bónus de contratação.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bónus de contratação de {signOnBonus}, com base nos detalhes específicos mencionados acima. Este valor é pago em prestações que podem prolongar-se até 180 dias após a contratação.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica poderá não estar disponível se:",
@@ -1475,6 +1503,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "Turno",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexível",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Datas de formações necessárias",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Idiomas suportados",

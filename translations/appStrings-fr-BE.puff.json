@@ -248,9 +248,17 @@
       "value" : "Que signifie une durée saisonnière ?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Les rôles saisonniers et les rôles réguliers ont les mêmes obligations professionnelles. Les rôles saisonniers sont toutefois conçus pour être temporaires et ne pas excéder 11 mois. Sachez, si cela vous intéresse, que l’occasion d’intégrer Amazon de manière permanente pourrait se présenter se présenter à l'avenir. Dans le cas contraire, vous serez informé de la date de fin de votre mission.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Comment puis-je obtenir la prime à la signature ?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend une prime à la signature de {signOnBonus} basée sur les détails spécifiques indiqués ci-dessus. La prime peut être versée en plusieurs fois sur une période pouvant aller jusqu'à 180 jours après votre prise de poste. Si vous devez replanifier votre mission, il est possible que cette offre spécifique ne soit pas disponible selon le nouveau rôle que vous choisirez. Si vous avez travaillé pour Amazon au cours des 90 jours précédents, vous ne pourrez bénéficier d'aucune prime à la signature.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre spécifique peut ne pas être disponible dans les cas suivants :",
@@ -1483,6 +1491,10 @@
     "BB-Schedule-card-shift" : {
       "value" : "Quart de travail",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Dates de formation requises",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Langues prises en charge",

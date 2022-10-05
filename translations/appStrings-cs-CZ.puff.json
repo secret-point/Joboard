@@ -224,9 +224,61 @@
       "value" : "V souladu s platnými právními předpisy je nabídka pro Vás podmíněna úspěšným absolvováním požadované prověrky, kontroly na přítomnost drog (pokud je to relevantní) a kontroly způsobilosti pro opětovné přijetí (pokud je to relevantní), proto je důležité, abyste splnili kroky před nástupem do zaměstnání uvedené na následující stránce. Za určitých okolností může být Váš první den zpožděn z důvodu, že požadavky před nástupem do zaměstnání nebyly splněny včas. V takovém případě můžete očekávat, že se Vám brzy ozveme.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Tato nabídka je potvrzením, že budete přijati jako zaměstnanci společnosti Amazon, pokud úspěšně absolvujete ověření údajů, test na drogy a všechny další požadované činnosti před přijetím.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Váš start se může opozdit, pokud:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Nesplníte včas požadavky na drogový test",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Místa na školení se zaplní",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Pokud se datum nástupu opozdí, obdržíte další informace týkající se dalších kroků.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Co znamená sezónní trvání?",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "V pracovních povinnostech není rozdíl. Rozdíl je v tom, že tato pozice má být dočasná a nemá trvat déle než 11 měsíců. Pokud máte zájem nastoupit na trvalý pracovní poměr, může se Vám taková příležitost naskytnout. V opačném případě Vám bude oznámeno, kdy Vaše práce skončí.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Sezónní role a stálé role mají stejné pracovní povinnosti. Sezónní role jsou nicméně zamýšleny jako dočasné a netrvají déle než 11 měsíců. Pokud máte zájem nastoupit do společnosti Amazon na trvalý pracovní poměr, může se Vám taková příležitost v budoucnosti naskytnout. V opačném případě Vám bude oznámeno, kdy Vaše práce skončí.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Jak získám vstupní bonus?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Tato konkrétní nabídka nemusí být k dispozici, pokud:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Přeplánujete si směnu",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Přeplánujete datum nástupu, nebo",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Vyberete si novou roli.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Pokud jste v posledních 90 dnech pracovali pro společnost Amazon, nemáte nárok na žádný vstupní bonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Zavřít.",
@@ -1439,6 +1491,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "Směna",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexibilní",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Požadované termíny školení",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Podporované jazyky",

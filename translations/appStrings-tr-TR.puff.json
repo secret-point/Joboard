@@ -224,8 +224,28 @@
       "value" : "Yürürlükteki yasaların izin verdiği şekilde, teklifiniz gerekli geçmiş kontrolünü, (varsa) uyuşturucu taramasını ve (varsa) yeniden işe alınma uygunluk kontrolünü başarıyla geçmenize bağlıdır, bu nedenle bir sonraki sayfada yer alan işe alım öncesi adımları tamamlamanız önemlidir. Bazı durumlarda, işe alım öncesi gereksinimlerin zamanında tamamlanmaması nedeniyle ilk gününüz gecikebilir. Bu durumda, yakın zamanda bizden haber almayı bekleyebilirsiniz.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Bu teklif; kişisel geçmişiniz, uyuşturucu testiniz ve diğer tüm gerekli işe alma öncesi çalışmaları başarıyla tamamlarsanız Amazon çalışanı olarak işe alınacağınızın onayıdır.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
       "value" : "Şu durumlarda başlangıç zamanınız gecikebilir:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Geçmiş sorgulaması zamanında tamamlanmadı.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Uyuşturucu testi gereksinimlerini zamanında karşılamazsanız",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Eğitim noktaları dolduysa",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "İşe başlama tarihiniz ertelenirse sonraki adımlarla ilgili ek bilgiler alacaksınız.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
@@ -236,9 +256,41 @@
       "value" : "İş görevlerinde fark yoktur. Fark, bu rolün geçici olarak ve 11 aydan uzun olmayacak şekilde planlanmasıdır. Kalıcı olarak katılmakla ilgileniyorsanız bu fırsat ortaya çıkabilir. Aksi takdirde görevinizin ne zaman sonlandırılacağı konusunda bilgilendirileceksiniz.",
       "note" : "Text for about seasonal duration popover content"
     },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Sezonluk Roller ve Kadrolu Roller aynı iş görevlerine sahiptir. Bununla birlikte, sezonluk rollerin geçici olması ve 11 aydan uzun sürmemesi amaçlanmıştır. Amazon'a kalıcı olarak katılmakla ilgileniyorsanız, bu fırsat ileride geçerli olabilir. Aksi takdirde, görevinizin ne zaman sonlandırılacağı hakkında bilgilendirileceksiniz.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "İşe başlama bonusunu nasıl alabilirim?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Bu teklifte, yukarıda belirtilen özel ayrıntılara göre {signOnBonus} işe alınma bonusu vardır. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitte ödenebilir. Yeniden planlamak zorunda kalırsanız bu özel teklif, seçtiğiniz yeni role göre kullanılamayabilir. Son 90 günde Amazon için çalıştıysanız işe alınma bonusu için uygun olmayacaksınız.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre {signOnBonus} işe alınma bonusu dahildir. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitle ödenebilir.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Bu özel teklif şu durumlarda mevcut olmayabilir:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Vardiyanızı yeniden planlayın",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Başlangıç tarihinizi yeniden planlayın veya",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Yeni bir rol seçin.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Son 90 gün içinde Amazon için çalıştıysanız herhangi bir işe alınma bonusu almaya uygun olmayacaksınız.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Kapat.",
@@ -1455,6 +1507,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "Esnek",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Gerekli eğitim tarihleri",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Desteklenen diller",

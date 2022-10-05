@@ -248,9 +248,17 @@
       "value" : "Que signifie une durée saisonnière?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Les rôles saisonniers et les rôles réguliers ont les mêmes fonctions. Toutefois, les rôles saisonniers sont destinés à être temporaires et ne durent pas plus de 11 mois. Si vous souhaitez rejoindre Amazon de façon permanente, l’occasion pourrait se présenter à l’avenir. Sinon, vous serez informé lorsque votre affectation sera terminée.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Comment obtenir le bonus d’inscription?",
       "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend une prime d’inscription de {signOnBonus} en fonction des détails précis mentionnés ci-dessus. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début. Si vous devez changer de date, cette offre particulière pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d'inscription.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre particulière peut ne pas être disponible si :",
@@ -1487,6 +1495,10 @@
     "BB-Schedule-card-shift-flexible" : {
       "value" : "Flexible",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Dates de formation requises",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Langues prises en charge",

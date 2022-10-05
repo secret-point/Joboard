@@ -826,26 +826,22 @@ export const localeToLanguageList: localeToLanguageItem[] = [
     {
         translationKey: 'BB-Constants-language-english',
         language: 'English',
-        locale: Locale.enUS,
-        languageES : 'Inglés'
+        locale: Locale.enUS
     },
     {
         translationKey: 'BB-Constants-language-spanish',
         language: 'Spanish',
-        locale: Locale.esUS,
-        languageES : 'Español'
+        locale: Locale.esUS
     },
     {
         translationKey: 'BB-Constants-language-english',
         language: 'English',
-        locale: Locale.enGB,
-        languageES : 'Inglés'
+        locale: Locale.enGB
     },
     {
         translationKey: 'BB-Constants-language-spanish',
         language: 'Spanish',
-        locale: Locale.esMX,
-        languageES : 'Español'
+        locale: Locale.esMX
     },
 ];
 

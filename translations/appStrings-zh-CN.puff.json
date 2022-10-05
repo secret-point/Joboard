@@ -228,6 +228,10 @@
       "value" : "此聘任书即确认，一旦您成功通过背景调查、药检、及其他所有规定的入职前活动，您将会被聘用为亚马逊员工。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "如果出现以下情况，您的入职时间可能会推迟：",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
       "value" : "背景调查未按时完成。",
       "note" : "Text for contingent offer meaning popover content"
@@ -1495,6 +1499,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "班次",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "灵活的",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "必修培训日期",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "支持的语言",

@@ -228,6 +228,10 @@
       "value" : "Ta oferta jest potwierdzeniem, że zatrudnimy Cię jako pracownika Amazon, jeśli pomyślnie przejdziesz weryfikację swojej przeszłości, test narkotykowy i wszystkie inne wymagane czynności przed zatrudnieniem.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Data rozpoczęcia może być opóźniona, jeśli:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
       "value" : "Weryfikacja przeszłości nie zostanie zakończona na czas.",
       "note" : "Text for contingent offer meaning popover content"
@@ -247,6 +251,14 @@
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Co oznacza sezonowy czas obowiązywania stanowiska?",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Nie ma różnicy w obowiązkach związanych z tym stanowiskiem pracy, różnica polega na tym, że to stanowisko ma mieć charakter tymczasowy i nie może trwać dłużej niż 11 miesięcy. Jeśli interesuje Cię dołączenie na stałe, być może powstanie taka możliwość. W przeciwnym razie powiadomimy Cię o zakończeniu przydziału.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Stanowiska sezonowe i stanowiska regularne mają te same obowiązki. Jednakże stanowiska sezonowe są tymczasowe, a zatrudnienie trwa nie dłużej niż 11 miesięcy. Jeśli interesuje Cię dołączenie do Amazon na stałe, być może powstanie taka możliwość. W przeciwnym razie powiadomimy Cię o zakończeniu zatrudnienia.",
+      "note" : "Text for about seasonal duration popover content"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Jak uzyskać bonus za rejestrację?",
@@ -1487,6 +1499,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "Zmiana",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Elastyczny",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "Terminy wymaganych szkoleń",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "Języki obsługiwane",

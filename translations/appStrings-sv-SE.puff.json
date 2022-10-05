@@ -224,9 +224,69 @@
       "value" : "Som tillåtet enligt tillämplig lag är ditt erbjudande beroende av att du genomgår den obligatoriska bakgrundskontrollen med godkänt resultat, drogscreening (om tillämpligt) och lämplighetskontroll för återanställning (om tillämpligt), så det är viktigt att du slutför de anställningsförberedande stegen på nästa sida. I vissa fall kan din första dag behöva senareläggas på grund av att kraven före anställning inte uppfylls i tid. Om så är fallet kan du förvänta dig att höra från oss snart.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "Detta erbjudande är en bekräftelse på att du kommer att anställas hos Amazon efter att du med godkänt resultat genomfört bakgrundskontroll, drogtest och alla eventuella andra obligatoriska steg i nyanställningsprocessen.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Din starttid kan försenas om:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Bakgrundskontrollen slutfördes inte i tid.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "Du inte uppfyller drogtestkraven i tid",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "Det blir ont om utbildningstillfällen",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "Om ditt startdatum försenas får du ytterligare information om nästa steg.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Vad menas med en säsongsanställning?",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Det är ingen skillnad på arbetsuppgifterna. Skillnaden är att denna roll är tänkt att vara en tidsbegränsad anställning och inte längre än 11 månader. En tillsvidareanställning kan bli aktuell om du är intresserad av det. Annars får du ett meddelande när ditt uppdrag avslutas.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Säsongsroller och vanliga roller har samma arbetsuppgifter. Säsongsroller är dock avsedda att vara tidsbegränsade och varar inte längre än 11 månader. Om du är intresserad av en tillsvidareanställning hos Amazon kan möjligheten bli tillgänglig i framtiden. Annars får du ett meddelande när ditt uppdrag avslutas.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Hur får jag registreringsbonusen?",
+      "note" : "Text for how to sign on bonus popover title"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Erbjudandet inkluderar en registreringsbonus på {signOnBonus} baserat på ovanstående specifika information. Bonusen betalas ut i form av flera månadsbetalningar som kan fortsätta i upp till 180 dagar efter starten.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "Detta specifika erbjudande kanske inte är tillgängligt om:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "Du bokar om ditt skift",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "Du bokar om ditt startdatum, eller",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "Du väljer en ny tjänst.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "Om du har arbetat för Amazon under de senaste 90 dagarna kommer du inte att vara berättigad till någon anställningsbonus.",
+      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Stäng.",
@@ -1438,6 +1498,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Skift",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Flexibel",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

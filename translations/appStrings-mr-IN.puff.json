@@ -224,8 +224,28 @@
       "value" : "लागू असलेल्या कायद्याने परवानगी दिल्याप्रमाणे, तुमची काँटीन्जेन्ट ऑफर आवश्यक पार्श्वभूमी तपासणी, औषध तपासणी (जर लागू होत असेल) आणि रिहायर पात्रता तपासणी (जर लागू होत असेल) यशस्वीरीत्या उत्तीर्ण होण्यावर अवलंबून आहे, त्यामुळे तुम्ही पुढील पेजवरील रोजगारपूर्व स्टेप्स पूर्ण करणे महत्त्वाचे आहे. काही परिस्थितींमध्ये, रोजगारपूर्व आवश्यकता वेळेत पूर्ण न झाल्यामुळे तुमच्या पहिल्या दिवसाला उशीर होऊ शकतो. जर अशी स्थिती असेल तर तुम्ही लवकरच आमच्याकडून ऐकण्याची अपेक्षा करू शकता.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content" : {
+      "value" : "तुम्ही तुमची पार्श्वभूमी, औषध चाचणी आणि इतर सर्व आवश्यक प्री-हायर अ‍ॅक्टिव्हिटी यशस्वीरित्या पूर्ण केल्यास तुम्हाला Amazon चे कर्मचारी म्हणून नियुक्त केले जाईल याचे ही ऑफर कन्फर्मेशन आहे.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "तुमच्या प्रारंभ वेळेला विलंब होऊ शकतो जर:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
       "value" : "पार्श्वभूमी तपासणी वेळेवर पूर्ण झाली नाही.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
+      "value" : "तुम्ही वेळेवर औषध चाचणी आवश्यकता पूर्ण केली नाही",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three" : {
+      "value" : "प्रशिक्षण स्पॉट्स भरले",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line" : {
+      "value" : "तुमच्या प्रारंभ तारखेला उशीर झाल्यास, तुम्हाला पुढील चरणांबाबत अतिरिक्त माहिती मिळेल.",
       "note" : "Text for contingent offer meaning popover content"
     },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
@@ -242,6 +262,26 @@
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित {signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त हप्त्यांद्वारे देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
+      "value" : "ही विशिष्ट ऑफर उपलब्ध नसू शकते जर:",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-one" : {
+      "value" : "तुम्ही तुमची शिफ्ट रीशेड्युल केली",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-two" : {
+      "value" : "तुम्ही तुमची प्रारंभ तारीख रीशेड्यूल केली, किंवा",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-point-three" : {
+      "value" : "तुम्ही एक नवीन भूमिका निवडली.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content-last-line" : {
+      "value" : "तुम्ही गेल्या 90 दिवसांमध्ये Amazon साठी काम केले असल्यास, तुम्ही बोनसवर कोणत्याही साइनसाठी पात्र असणार नाही.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
@@ -1455,6 +1495,14 @@
     "BB-Schedule-card-shift" : {
       "value" : "शिफ्ट",
       "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "फ्लेक्सिबल",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-required-dates" : {
+      "value" : "आवश्यक प्रशिक्षण तारखा",
+      "note" : "Text for the schedule card required training date"
     },
     "BB-Schedule-card-languages-supported" : {
       "value" : "सपोर्ट केलेल्या भाषा",
