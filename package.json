@@ -196,6 +196,7 @@
     "@types/classnames": "^2.2.10",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
+    "axios-mock-adapter": "^1.21.2",
     "enzyme-to-json": "^3.6.2",
     "eslint": "^8.16.0",
     "eslint-import-resolver-typescript": "^3.3.0",

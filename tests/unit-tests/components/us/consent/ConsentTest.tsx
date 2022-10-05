@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import routeData from 'react-router';
+import { useLocation } from 'react-router-dom';
 import { Consent } from "../../../../../src/components/us/consent/Consent";
 import { TestInitUiState, TEST_JOB_ID, TEST_JOB_STATE, TEST_SCHEDULE_ID, TEST_SCHEDULE_STATE } from "../../../../test-utils/test-data";
 
@@ -11,10 +11,10 @@ describe("Consent", () => {
     hash: '',
     state: null
   };
+  const mockUseLocation = useLocation as jest.Mock;
+  mockUseLocation.mockReturnValue(mockLocation);
 
   it("should match snapshot", () => {
-    jest.spyOn(routeData, 'useLocation').mockReturnValue(mockLocation);
-
     const shallowWrapper = shallow(
       <Consent
         job={TEST_JOB_STATE}

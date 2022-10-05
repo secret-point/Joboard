@@ -1,20 +1,27 @@
 import React from "react";
 import { StencilProvider } from "@amzn/stencil-react-components/context";
+import axios from "axios";
+import MockAdapter from "axios-mock-adapter";
 import { mount, ReactWrapper, shallow } from "enzyme";
 import { act } from "react-dom/test-utils";
 import { Provider } from "react-redux";
-import routeData from "react-router";
+import { useLocation } from "react-router-dom";
 import * as boundApplicationActions from '../../../../../src/actions/ApplicationActions/boundApplicationActions';
 import { FcraDisclosure } from "../../../../../src/components/common/bgc/FcraDisclosure";
 import store from "../../../../../src/store/store";
 import {
+  TEST_APPLICATION,
   TEST_APPLICATION_ID,
   TEST_APPLICATION_STATE, TEST_BGC_STATE,
+  TEST_CANDIDATE,
+  TEST_JOB,
   TEST_JOB_ID,
   TEST_JOB_STATE,
+  TEST_SCHEDULE,
   TEST_SCHEDULE_ID,
   TEST_SCHEDULE_STATE
 } from "../../../../test-utils/test-data";
+import { mockGetApplicationApi, mockGetCandidateApi, mockGetJobApi, mockGetScheduleDetailsApi } from "../../../../test-utils/test-helper";
 
 const boundUpdateApplicationDSSpy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
 
@@ -27,11 +34,11 @@ describe("FcraDisclosure", () => {
     hash: "",
     state: null
   };
+  const mockUseLocation = useLocation as jest.Mock;
+  mockUseLocation.mockReturnValue(mockLocation);
 
   describe("snapshot", () => {
     it("should match snapshot", () => {
-      jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation);
-
       const shallowWrapper = shallow(
         <FcraDisclosure
           job={TEST_JOB_STATE}
@@ -46,14 +53,17 @@ describe("FcraDisclosure", () => {
   });
 
   describe("when rendering", () => {
+    const apiMock = new MockAdapter(axios);
     let wrapper: ReactWrapper;
     let declineButton: ReactWrapper;
     let authorizeButton: ReactWrapper;
     let fullNameInput: ReactWrapper;
 
     beforeEach(async () => {
-      jest.spyOn(routeData, "useLocation").mockReturnValue(mockLocation);
-      boundUpdateApplicationDSSpy.mockReset();
+      mockGetCandidateApi(apiMock, TEST_CANDIDATE);
+      mockGetApplicationApi(apiMock, TEST_APPLICATION);
+      mockGetScheduleDetailsApi(apiMock, TEST_SCHEDULE);
+      mockGetJobApi(apiMock, TEST_JOB);
 
       wrapper = mount(<Provider store={store}>
         <StencilProvider>
@@ -72,6 +82,8 @@ describe("FcraDisclosure", () => {
     });
 
     afterEach(() => {
+      apiMock.reset();
+      boundUpdateApplicationDSSpy.mockReset();
       wrapper.unmount();
     });
 

@@ -42,7 +42,9 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
         '**/*Test.tsx',
-        '**/*test.ts',
+        '**/*Test.ts',
+        '**/*test*.tsx',
+        '**/*test*.ts',
       ],
     }],
     'import/order': [

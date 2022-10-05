@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import routeData from 'react-router';
+import { useLocation } from 'react-router-dom';
 import { SupplementarySuccess } from "../../../../../src/components/us/supplementarySuccess/SupplementarySuccess";
 
 describe("SupplementarySuccess", () => {
@@ -10,10 +10,10 @@ describe("SupplementarySuccess", () => {
     hash: '',
     state: null
   };
+  const mockUseLocation = useLocation as jest.Mock;
+  mockUseLocation.mockReturnValue(mockLocation);
 
   it("should match snapshot", () => {
-    jest.spyOn(routeData, 'useLocation').mockReturnValue(mockLocation);
-
     const shallowWrapper = shallow(
       <SupplementarySuccess />);
 

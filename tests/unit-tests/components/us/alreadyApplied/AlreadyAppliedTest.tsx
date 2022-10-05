@@ -1,10 +1,9 @@
 import React from "react";
-import { ReactWrapper, shallow } from "enzyme";
 import { mountWithStencil } from "@amzn/stencil-react-components/tests";
+import { ReactWrapper, shallow } from "enzyme";
 import { createMemoryHistory } from "history";
 import { Provider } from "react-redux";
-import { Router } from "react-router";
-import routeData from 'react-router';
+import { Router, useLocation } from "react-router-dom";
 import { AlreadyApplied } from "../../../../../src/components/us/alreadyApplied/AlreadyApplied";
 import store from "../../../../../src/store/store";
 import { TEST_APP_CONFIG, TEST_CANDIDATE_STATE, TEST_JOB2_ID, TEST_JOB_STATE } from "../../../../test-utils/test-data";
@@ -21,6 +20,8 @@ describe("AlreadyApplied", () => {
     hash: '',
     state: null
   };
+  const mockUseLocation = useLocation as jest.Mock;
+  mockUseLocation.mockReturnValue(mockLocation);
 
   beforeEach(() => {
     window.location.assign = jest.fn();
@@ -52,8 +53,6 @@ describe("AlreadyApplied", () => {
   });
 
   it("should match snapshot", () => {
-    // mock useLocation instead of using Router history to generate better snapshot
-    jest.spyOn(routeData, 'useLocation').mockReturnValue(mockLocation);
     const shallowWrapper = shallow(<AlreadyApplied candidate={TEST_CANDIDATE_STATE} job={TEST_JOB_STATE} />);
 
     expect(shallowWrapper).toMatchSnapshot();

@@ -1,6 +1,6 @@
-import { shallow } from "enzyme";
 import React from "react";
-import routeData from 'react-router';
+import { shallow } from "enzyme";
+import { useLocation } from 'react-router-dom';
 import { AssessmentFinished } from "../../../../../src/components/us/assessment/AssessmentFinished";
 import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST_JOB_ID, TEST_JOB_STATE } from "../../../../test-utils/test-data";
 
@@ -11,10 +11,10 @@ describe("AssessmentFinished", () => {
     hash: '',
     state: null
   };
+  const mockUseLocation = useLocation as jest.Mock;
+  mockUseLocation.mockReturnValue(mockLocation);
 
   it("should match snapshot", () => {
-    jest.spyOn(routeData, 'useLocation').mockReturnValue(mockLocation);
-
     const shallowWrapper = shallow(
       <AssessmentFinished
         candidate={TEST_CANDIDATE_STATE}
