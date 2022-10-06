@@ -168,7 +168,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                         <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do I get the sign on bonus?")}>
                             <Col gridGap={8}>
                                 <Text>
-                                    {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of ${signOnBonus} based on the specific details noted above. It’s payable over multiple installments that may extend to 180 days after your start.`, {signOnBonus})}
+                                    {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of $${signOnBonus} based on the specific details noted above. It’s payable over multiple installments that may extend to 180 days after your start.`, {signOnBonus})}
                                 </Text>
                                 <Row padding={{top: "S200", bottom: "S200"}}>
                                     <Text>

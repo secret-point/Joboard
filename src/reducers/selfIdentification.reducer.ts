@@ -4,27 +4,15 @@ import {
   SELF_IDENTIFICATION_ACTION_TYPE,
   SelfIdentificationStepConfigActions
 } from "../actions/SelfIdentitifactionActions/selfIdentificationActionTypes";
+import { SelfIdentificationConfigStepCountryMap } from "../utils/constants/common";
+import { getCountryCode } from "../utils/helper";
 
 export interface SelfIdentificationState {
   stepConfig: SelfIdentificationConfig
 }
 
 export const initSelfIdentificationState: SelfIdentificationState = {
-  stepConfig: {
-    completedSteps: [],
-    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: {
-      status: INFO_CARD_STEP_STATUS.ACTIVE,
-      editMode: false
-    },
-    [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: {
-      status: INFO_CARD_STEP_STATUS.LOCKED,
-      editMode: false
-    },
-    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: {
-      status: INFO_CARD_STEP_STATUS.LOCKED,
-      editMode: false
-    },
-  }
+  stepConfig: SelfIdentificationConfigStepCountryMap['MX']
 }
 
 export default function selfIdentificationReducer( state: SelfIdentificationState = initSelfIdentificationState, action: SelfIdentificationStepConfigActions ): SelfIdentificationState {

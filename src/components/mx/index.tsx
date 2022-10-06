@@ -22,7 +22,7 @@ import { Store } from "redux";
 import { actionGetInitialAppConfigActionSuccess } from "../../actions/AppConfigActions/appConfigActions";
 import { onSFLogout } from "../../actions/old/application-actions";
 import { CS_PREPROD_DOMAIN } from "../../constants";
-import { initLogger, log, LoggerType } from "../../helpers/log-helper";
+import { log, LoggerType } from "../../helpers/log-helper";
 import { injectCsNavAndFooter, objectToQuerystring, parseQueryParamsArrayToSingleItem } from "../../helpers/utils";
 import { getInitialData } from "../../services";
 import StepFunctionService from "../../services/step-function-service";
@@ -31,7 +31,7 @@ import { newBBUIPathName } from "../../utils/constants/common";
 import { initKatalLogger, isNewBBuiPath } from "../../utils/helper";
 import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "../../utils/types/common";
 import { PAGE_ROUTES } from "../pageRoutes";
-import DragonStoneAppUS from "../us/dsApp";
+import DragonStoneAppMX from "./dspApp";
 
 const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
 
@@ -235,7 +235,7 @@ getInitialData()
                                 <MainWithSkipLink>
                                     <Switch>
                                         <Route path={newBBUIPathName.MX}>
-                                            <DragonStoneAppUS />
+                                            <DragonStoneAppMX />
                                         </Route>
                                         <Route path="/" render={() => <Redirect to={{
                                             pathname: newBBUIPathName.MX,

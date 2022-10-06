@@ -40,7 +40,8 @@ import {
     UpdateApplicationRequestDS
 } from "./apiTypes";
 import {
-    AdditionalBGCFormConfig, CountryCode,
+    AdditionalBGCFormConfig,
+    CountryCode,
     CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,
@@ -77,7 +78,8 @@ import {
     ErrorMessage,
     FeatureFlagList,
     FormInputItem,
-    GetNheTimeSlotRequestDs, GetNheTimeSlotRequestThroughNheDS,
+    GetNheTimeSlotRequestDs,
+    GetNheTimeSlotRequestThroughNheDS,
     Job,
     Locale,
     NHETimeSlot,
@@ -893,7 +895,7 @@ export const handleSubmitSelfIdEqualOpportunity =
       };
 
       const { EQUAL_OPPORTUNITY_FORM } = UPDATE_APPLICATION_API_TYPE;
-      const { EQUAL_OPPORTUNITY, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS;
+      const { EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM } = SELF_IDENTIFICATION_STEPS;
 
       const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, EQUAL_OPPORTUNITY_FORM, payload);
       boundUpdateApplicationDS(request, () => {
@@ -953,7 +955,7 @@ export const handleUpdateSelfIdStep =
 
 export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo ) => {
     const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse } = selfIdentificationInfo;
-
+    const countryCode= getCountryCode();
     const isEqualOpportunityCompleted = !!gender && !!ethnicity;
     const isDisabilityCompleted = !!disability;
     const isVeteranCompleted = !!protectedVeteran && !!veteran && !!militarySpouse;
@@ -970,29 +972,36 @@ export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: Se
             [EQUAL_OPPORTUNITY]: {
                 status: COMPLETED,
                 editMode: false
-            }
-        }
-    }
-    if(isVeteranCompleted) {
-        stepConfig = {
-            ...stepConfig,
-            completedSteps: [...stepConfig.completedSteps, VETERAN_FORM],
-            [VETERAN_FORM]: {
-                status: COMPLETED,
-                editMode: false
             },
             [DISABILITY_FORM]: {
-                status: ACTIVE,
-                editMode: false
+                status: COMPLETED,
+                editMode: countryCode === CountryCode.MX
             }
         }
     }
-    else {
-        stepConfig = {
-            ...stepConfig,
-            [VETERAN_FORM]: {
-                status: ACTIVE,
-                editMode: false
+
+    if(countryCode=== CountryCode.US) {
+        if(isVeteranCompleted && countryCode) {
+            stepConfig = {
+                ...stepConfig,
+                completedSteps: [...stepConfig.completedSteps, VETERAN_FORM],
+                [VETERAN_FORM]: {
+                    status: COMPLETED,
+                    editMode: false
+                },
+                [DISABILITY_FORM]: {
+                    status: ACTIVE,
+                    editMode: false
+                }
+            }
+        }
+        else {
+            stepConfig = {
+                ...stepConfig,
+                [VETERAN_FORM]: {
+                    status: ACTIVE,
+                    editMode: false
+                }
             }
         }
     }
@@ -1020,9 +1029,13 @@ export const SelfShouldDisplayContinue = (stepConfig: SelfIdentificationConfig):
     const veteran = stepConfig[VETERAN_FORM];
     const disability = stepConfig[DISABILITY_FORM];
 
-    return equalOpportunity.status === COMPLETED && !equalOpportunity.editMode &&
-      veteran.status === COMPLETED && !veteran.editMode &&
-      disability.status === COMPLETED && !disability.editMode
+    if(getCountryCode() === CountryCode.MX) {
+        return equalOpportunity?.status === COMPLETED && !equalOpportunity.editMode &&
+          disability?.status === COMPLETED && !disability.editMode;
+    }
+
+    return equalOpportunity?.status === COMPLETED && !equalOpportunity.editMode && veteran?.status === COMPLETED &&
+      !veteran.editMode && disability?.status === COMPLETED && !disability.editMode;
 }
 
 export interface DateFormatOption {
@@ -1188,6 +1201,10 @@ export const isSelfIdentificationInfoValidBeforeDisability = (selfIdInfo?: SelfI
 
     const { ethnicity, gender, militarySpouse, protectedVeteran, veteran } = selfIdInfo;
 
+    if(getCountryCode() === CountryCode.MX) {
+        return !!ethnicity && !!gender;
+    }
+
     return  !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
 }
 
@@ -1321,3 +1338,8 @@ export const hideHeaderFooter = () => {
 export const showHeaderFooter = () => {
     document.body.classList.remove('no-header-footer');
 };
+
+export const getCountryCode = (): CountryCode => {
+
+    return "{{Country}}" as CountryCode || CountryCode.US;
+}

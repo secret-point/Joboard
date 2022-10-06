@@ -1,24 +1,29 @@
 import {
     APPLICATION_STEPS,
-    BACKGROUND_AGENT, DAYS_OF_WEEK,
+    BACKGROUND_AGENT,
+    DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
-    SCHEDULE_FILTER_TYPE
+    INFO_CARD_STEP_STATUS,
+    SCHEDULE_FILTER_TYPE,
+    SELF_IDENTIFICATION_STEPS
 } from "../enums/common";
 import {
     AdditionalBgcConfig,
-    ApplicationStep, DayHoursFilter,
+    ApplicationStep,
+    DayHoursFilter,
     DetailedRadioButtonItem,
     DisabilityItem,
     FcraDisclosureConfig,
     FormInputItem,
+    Locale,
+    localeToLanguageItem,
     NonFcraESignatureAcknowledgement,
     ScheduleSortBy,
     ScheduleStateFilters,
+    SelfIdentificationConfig,
     StateSelectOption,
-    StateSpecificNotice,
-    localeToLanguageItem,
-    Locale
+    StateSpecificNotice
 } from "../types/common";
 
 export const HVH_LOCALE = 'hvh-locale';
@@ -848,4 +853,38 @@ export const localeToLanguageList: localeToLanguageItem[] = [
 export enum CountryCode {
     MX = "MX",
     US = "US",
+}
+
+export const US_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
+    completedSteps: [],
+    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: {
+        status: INFO_CARD_STEP_STATUS.ACTIVE,
+        editMode: false
+    },
+    [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: {
+        status: INFO_CARD_STEP_STATUS.LOCKED,
+        editMode: false
+    },
+    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: {
+        status: INFO_CARD_STEP_STATUS.LOCKED,
+        editMode: false
+    },
+}
+
+export const MX_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
+    completedSteps: [],
+    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: {
+        status: INFO_CARD_STEP_STATUS.ACTIVE,
+        editMode: false
+    },
+
+    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: {
+        status: INFO_CARD_STEP_STATUS.LOCKED,
+        editMode: false
+    },
+}
+
+export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: SelfIdentificationConfig }  = {
+    [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
+    [CountryCode.US]: US_SelfIdentificationConfigSteps
 }

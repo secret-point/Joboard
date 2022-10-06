@@ -648,11 +648,11 @@ export interface BgcStepConfig {
     [BGC_STEPS.NON_FCRA]: InfoCardStepStatus
 }
 
-export interface SelfIdentificationConfig {
+type SelfIdentificationStepType = {[key in SELF_IDENTIFICATION_STEPS]: InfoCardStepStatus};
+
+export interface SelfIdentificationConfig extends Partial<SelfIdentificationStepType> {
     completedSteps: SELF_IDENTIFICATION_STEPS[];
-    [SELF_IDENTIFICATION_STEPS.DISABILITY_FORM]: InfoCardStepStatus;
-    [SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY]: InfoCardStepStatus;
-    [SELF_IDENTIFICATION_STEPS.VETERAN_FORM]: InfoCardStepStatus;
+
 }
 
 export type InfoCardStepConfig = BgcStepConfig & SelfIdentificationConfig;
