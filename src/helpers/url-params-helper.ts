@@ -6,6 +6,7 @@ export default class URLParamsHelper {
   page = "";
   jobId = "";
   location = "";
+  referrer = "";
   constructor() {
     const requisitionId = window.sessionStorage.getItem("requisitionId");
     const jobId = window.sessionStorage.getItem("jobId");
@@ -19,6 +20,7 @@ export default class URLParamsHelper {
     this.applicationId = state.application?.results?.applicationId || applicationId || "";
     this.page = page || "";
     this.location = window.location.href || "";
+    this.referrer = window.document.referrer || "";
   }
 
   get() {
@@ -28,6 +30,7 @@ export default class URLParamsHelper {
       applicationId: this.applicationId,
       page: this.page,
       location: this.location,
+      referrer: this.referrer,
     };
   }
 }
