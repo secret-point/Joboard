@@ -264,12 +264,8 @@
       "value" : "¿Cómo obtengo el incentivo de contratación?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de {signOnBonus} con base en los detalles específicos mencionados arriba. Se paga en múltiples cuotas que pueden extenderse hasta 180 días después de que comiences. Si tienes que reprogramar, es posible que esta oferta específica no esté disponible en función del nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no serás elegible para recibir ningún bono de contratación.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye una bonificación de inscripción de {signOnBonus} basada en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de que comiences.",
+      "value" : "Esta oferta incluye un bono de contratación de ${signOnBonus} basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de que comiences.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {

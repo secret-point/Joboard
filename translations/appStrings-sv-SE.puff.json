@@ -264,8 +264,12 @@
       "value" : "Hur får jag registreringsbonusen?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Baserat på de specifika detaljerna ovan inkluderar erbjudandet en signeringsbonus på ${signOnBonus}. Bonusen betalas ut i flera delbetalningar som kan sträcka sig över upp till 180 dagar efter att du har börjat. Om du måste omboka kanske det här specifika erbjudandet inte är tillgängligt för den nyvalda rollen. Om du nyligen har arbetat för Amazon under de senaste 90 dagarna kommer du inte att vara berättigad till någon signeringsbonus.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Erbjudandet inkluderar en registreringsbonus på {signOnBonus} baserat på ovanstående specifika information. Bonusen betalas ut i form av flera månadsbetalningar som kan fortsätta i upp till 180 dagar efter starten.",
+      "value" : "Baserat på de specifika detaljerna ovan inkluderar erbjudandet en signeringsbonus på ${signOnBonus}. Bonusen betalas ut i flera delbetalningar som kan sträcka sig över upp till 180 dagar efter att du har börjat.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {

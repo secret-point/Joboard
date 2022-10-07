@@ -264,12 +264,8 @@
       "value" : "İşe başlama bonusunu nasıl alabilirim?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Bu teklifte, yukarıda belirtilen özel ayrıntılara göre {signOnBonus} işe alınma bonusu vardır. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitte ödenebilir. Yeniden planlamak zorunda kalırsanız bu özel teklif, seçtiğiniz yeni role göre kullanılamayabilir. Son 90 günde Amazon için çalıştıysanız işe alınma bonusu için uygun olmayacaksınız.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre {signOnBonus} işe alınma bonusu dahildir. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitle ödenebilir.",
+      "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre ${signOnBonus} işe alınma bonusu dâhildir. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitle ödenebilir.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {

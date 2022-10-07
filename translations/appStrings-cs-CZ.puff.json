@@ -265,11 +265,11 @@
       "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši {signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od Vašeho nástupu. Pokud budete muset změnit plány, tato konkrétní nabídka nemusí být k dispozici v závislosti na nové roli, kterou si vyberete. Pokud jste v posledních 90 dnech pracovali pro společnost Amazon, nemáte nárok na žádný vstupní bonus.",
+      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši ${signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od zahájení. Pokud budete muset změnit plány, tato konkrétní nabídka nemusí být k dispozici v závislosti na nové roli, kterou si vyberete. Pokud jste v posledních 90 dnech pracovali pro společnost Amazon, nemáte nárok na žádný vstupní bonus.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši {signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od zahájení.",
+      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši ${signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od zahájení.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {

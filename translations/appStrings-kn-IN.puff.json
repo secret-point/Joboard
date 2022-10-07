@@ -252,17 +252,17 @@
       "value" : "ಕಾಲೋಚಿತ ಅವಧಿಯ ಅರ್ಥವೇನು?",
       "note" : "Text for about seasonal duration popover title"
     },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "ಉದ್ಯೋಗ ಕರ್ತವ್ಯಗಳಲ್ಲಿ ಯಾವುದೇ ವ್ಯತ್ಯಾಸವಿಲ್ಲ, ವ್ಯತ್ಯಾಸವೆಂದರೆ ಈ ಪಾತ್ರವು ತಾತ್ಕಾಲಿಕವಾಗಿರಲು ಉದ್ದೇಶಿಸಲಾಗಿದೆ ಮತ್ತು 11 ತಿಂಗಳುಗಳಿಗಿಂತ ಹೆಚ್ಚಿಲ್ಲ. ನೀವು ಶಾಶ್ವತ ಆಧಾರದ ಮೇಲೆ ಸೇರಲು ಆಸಕ್ತಿ ಹೊಂದಿದ್ದರೆ, ಅವಕಾಶವು ಲಭ್ಯವಾಗಬಹುದು. ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ನಿಯೋಜನೆ ಯಾವಾಗ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ಎಂದು ನಿಮಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "ಕಾಲೋಚಿತ ಪಾತ್ರಗಳು ಮತ್ತು ನಿಯಮಿತ ಪಾತ್ರಗಳು ಒಂದೇ ಕೆಲಸದ ಕರ್ತವ್ಯಗಳನ್ನು ಹೊಂದಿವೆ. ಆದಾಗ್ಯೂ, ಕಾಲೋಚಿತ ಪಾತ್ರಗಳು ತಾತ್ಕಾಲಿಕವಾಗಿರಲು ಉದ್ದೇಶಿಸಿವೆ ಮತ್ತು 11 ತಿಂಗಳುಗಳಿಗಿಂತ ಹೆಚ್ಚು ಕಾಲ ಉಳಿಯುವುದಿಲ್ಲ. ಶಾಶ್ವತ ಆಧಾರದ ಮೇಲೆ Amazon ಗೆ ಸೇರಲು ನೀವು ಆಸಕ್ತಿ ಹೊಂದಿದ್ದರೆ, ಭವಿಷ್ಯದಲ್ಲಿ ಅವಕಾಶವು ಲಭ್ಯವಾಗಬಹುದು. ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ನಿಯೋಜನೆ ಯಾವಾಗ ಕೊನೆಗೊಳ್ಳುತ್ತದೆ ಎಂದು ನಿಮಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ.",
+      "note" : "Text for about seasonal duration popover content"
+    },
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "ಬೋನಸ್‌ನಲ್ಲಿ ನಾನು ಚಿಹ್ನೆಯನ್ನು ಹೇಗೆ ಪಡೆಯುವುದು?",
       "note" : "Text for how to sign on bonus popover title"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "ಈ ಕೊಡುಗೆಯು ಮೇಲೆ ನಮೂದಿಸಿದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳ ಆಧಾರದ ಮೇಲೆ ಬೋನಸ್{signOnBonus} ನ ಚಿಹ್ನೆಯನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ನೀವು ಪ್ರಾರಂಭಿಸಿದ ನಂತರ 180 ದಿನಗಳವರೆಗೆ ವಿಸ್ತರಿಸಬಹುದಾದ ಅನೇಕ ಕಂತುಗಳಲ್ಲಿ ಇದನ್ನು ಪಾವತಿಸಬಹುದಾಗಿದೆ. ನೀವು ಮರುಹೊಂದಿಸಬೇಕಾದರೆ, ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಹೊಸ ಪಾತ್ರದ ಆಧಾರದ ಮೇಲೆ ಈ ನಿರ್ದಿಷ್ಟ ಕೊಡುಗೆ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು. ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ ನೀವು ಇತ್ತೀಚೆಗೆ Amazon ಗಾಗಿ ಕೆಲಸ ಮಾಡಿದ್ದರೆ ಬೋನಸ್‌ನಲ್ಲಿ ಯಾವುದೇ ಚಿಹ್ನೆಗೆ ನೀವು ಅರ್ಹರಾಗುವುದಿಲ್ಲ.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "ಈ ಕೊಡುಗೆಯು ಮೇಲೆ ನಮೂದಿಸಿದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳ ಆಧಾರದ ಮೇಲೆ ಬೋನಸ್{signOnBonus} ನ ಚಿಹ್ನೆಯನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ನೀವು ಪ್ರಾರಂಭಿಸಿದ ನಂತರ 180 ದಿನಗಳವರೆಗೆ ವಿಸ್ತರಿಸಬಹುದಾದ ಅನೇಕ ಕಂತುಗಳಲ್ಲಿ ಇದನ್ನು ಪಾವತಿಸಲಾಗುತ್ತದೆ.",
-      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ಹೀಗಿದ್ದಾಗ ಈ ನಿರ್ದಿಷ್ಟ ಕೊಡುಗೆ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು:",
@@ -524,6 +524,14 @@
       "value" : "ನಗರ, ದೇಶ, ಅಪರಾಧದ ಸ್ಥಿತಿ, ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "ಈ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯು Amazon.com, Inc., ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳೊಂದಿಗೆ (ಒಟ್ಟಾರೆಯಾಗಿ, “Amazon”) ಉದ್ಯೋಗದ ಪ್ರಸ್ತಾಪಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ, Amazon ಗ್ರಾಹಕರ ವರದಿಯನ್ನು ವಿನಂತಿಸುತ್ತದೆ, ಇದನ್ನು ನಿಮ್ಮ ಬಗ್ಗೆ “ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ವರದಿ” ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "<strong>ನನ್ನ ಪೂರ್ಣ ಹೆಸರನ್ನು ಟೈಪ್ ಮಾಡುವ ಮೂಲಕ ಮತ್ತು ಕೆಳಗೆ “ನಾನು ಅಧಿಕೃತಗೊಳಿಸುತ್ತೇನೆ” ಕ್ಲಿಕ್ ಮಾಡುವ</strong> ಮೂಲಕ, ಈಗ ನನ್ನ ಬಗ್ಗೆ ಗ್ರಾಹಕ ವರದಿಗಳನ್ನು ವಿನಂತಿಸಲು ಮತ್ತು Amazon ನೊಂದಿಗೆ ನಾನು ಹೊಂದಿರಬಹುದಾದ ಯಾವುದೇ ಉದ್ಯೋಗದ ಉದ್ದಕ್ಕೂ ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
+    },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "ಅಪ್ಲಿಕೇಶನ್ ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ",
       "note" : "Text for fcra disclosure decline modall withdraw application button text"
@@ -539,6 +547,14 @@
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "ಕೆಳಗಿನ ನನ್ನ ಇ-ಸಹಿಯ ಮೂಲಕ, ಮೇಲಿನ ಬಳಕೆದಾರ ವರದಿಯನ್ನು, ಈಗ ಮತ್ತು Amazon ಕಾರ್ಪೊರೇಟ್‌ನೊಂದಿಗೆ ನಾನು ಹೊಂದಿರುವ ಯಾವುದೇ ಉದ್ಯೋಗ ಅಥವಾ ಒಡಂಬಡಿಕೆಯ ಉದ್ದಕ್ಕೂ, ಸಂಗ್ರಹಿಸಲು ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",
       "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "ನಾನು ನಿರಾಕರಿಸುತ್ತೇನೆ",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "ನಾನು ಅಧಿಕೃತಗೊಳಿಸುತ್ತೇನೆ",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "ಈ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ನಡೆಸಲು ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",

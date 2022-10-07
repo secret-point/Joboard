@@ -228,6 +228,14 @@
       "value" : "Αυτή η προσφορά αποτελεί επιβεβαίωση ότι θα προσληφθείτε ως υπάλληλος της Amazon, εφόσον ολοκληρώσετε επιτυχώς τον έλεγχο ιστορικού, το τεστ ουσιών και όλες τις άλλες απαιτούμενες ενέργειες πριν από την πρόσληψη.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line" : {
+      "value" : "Η ώρα έναρξής σας μπορεί να καθυστερήσει εάν:",
+      "note" : "Text for contingent offer meaning popover content"
+    },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "Ο έλεγχος ιστορικού δεν ολοκληρώθηκε εγκαίρως.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "Δεν ολοκληρώσετε εγκαίρως τις απαιτήσεις του τεστ ουσιών",
       "note" : "Text for contingent offer meaning popover content"
@@ -243,6 +251,18 @@
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Τι σημαίνει εποχιακή διάρκεια;",
       "note" : "Text for about seasonal duration popover title"
+    },
+    "BB-Schedule-card-about-seasonal-duration-popover-content" : {
+      "value" : "Δεν υπάρχει διαφορά στα καθήκοντα εργασίας. Η διαφορά είναι ότι αυτή η θέση είναι προσωρινή με διάρκεια που δεν ξεπερνά τους 11 μήνες. Εάν ενδιαφέρεστε να ενταχθείτε σε μόνιμη βάση, η ευκαιρία μπορεί να γίνει διαθέσιμη. Διαφορετικά, θα ειδοποιηθείτε όταν τελειώσει η ανάθεση εργασίας σας.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedules-card-about-seasonal-duration-popover-content" : {
+      "value" : "Οι εποχιακές θέσεις εργασίας και οι τακτικές θέσεις εργασίας έχουν τα ίδια καθήκοντα. Οι εποχιακές θέσεις, ωστόσο, προορίζονται να είναι προσωρινές και να μην διαρκούν περισσότερο από 11 μήνες. Εάν ενδιαφέρεστε να ενταχθείτε στην Amazon σε μόνιμη βάση, η ευκαιρία μπορεί να γίνει διαθέσιμη στο μέλλον. Διαφορετικά, θα ειδοποιηθείτε όταν λήξει η ανάθεση εργασίας σας.",
+      "note" : "Text for about seasonal duration popover content"
+    },
+    "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
+      "value" : "Πώς μπορώ να λάβω το μπόνους υπογραφής;",
+      "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Η συγκεκριμένη προσφορά μπορεί να μην είναι διαθέσιμη εάν:",
@@ -504,6 +524,14 @@
       "value" : "Παροχή πόλης, χώρας, πολιτείας καταδίκης, ημερομηνίας, φύσης του αδικήματος, καθώς και πληροφορίες για την καταδίκη",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
+      "value" : "Αυτή η γνωστοποίηση σκοπεύει να σας ενημερώσει ότι σε σχέση με την προσφορά εργασίας σας στην Amazon.com, Inc., τις συνδεδεμένες εταιρείες της ή τις θυγατρικές της (συλλογικά, «Amazon»), η Amazon θα ζητήσει μια αναφορά καταναλωτή, η οποία αναφέρεται επίσης ως «αναφορά ελέγχου ιστορικού», σχετικά με εσάς.",
+      "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
+    },
+    "BB-BGC-fcra-disclosure-bgc-explanation-paragraph2-text" : {
+      "value" : "<strong>Πληκτρολογώντας το πλήρες όνομά μου και κάνοντας κλικ στην επιλογή «Εξουσιοδοτώ»</strong> παρακάτω, εξουσιοδοτώ την Amazon να ζητήσει αναφορές καταναλωτών για μένα τώρα και καθ' όλη τη διάρκεια οποιασδήποτε εργασίας που μπορεί να έχω με την Amazon.",
+      "note" : "Paragraph2 text to explain what report need to be collected from candidate on fcra form"
+    },
     "BB-BGC-fcra-disclosure-decline-modal-withdraw-application-btn-text" : {
       "value" : "Ανάκληση αίτησης",
       "note" : "Text for fcra disclosure decline modall withdraw application button text"
@@ -512,9 +540,21 @@
       "value" : "Η αίτησή σας θα ανακληθεί εάν αρνηθείτε να πραγματοποιήσετε τον έλεγχο ιστορικού.",
       "note" : "Text for fcra disclosure decline modall withdraw application description text"
     },
+    "BB-BGC-fcra-disclosure-bgc-form-title" : {
+      "value" : "Γνωστοποίηση έκθεσης καταναλωτή του Νόμου περί δίκαιης αναφοράς πιστοληπτικής ικανότητας (Fair Credit Reporting Act)",
+      "note" : "Text for the fcra disclosure form title"
+    },
     "BB-BGC-fcra-disclosure-signature-consent-notice-text" : {
       "value" : "Με την ηλεκτρονική υπογραφή μου παρακάτω, εξουσιοδοτώ την Amazon να λάβει την ανωτέρω έκθεση καταναλωτή τώρα και καθ' όλη τη διάρκεια οποιασδήποτε απασχόλησης ή δέσμευσης που μπορεί να έχω με την Amazon Corporate.",
       "note" : "Text for the fcra disclosure signature consent text"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-decline-btn" : {
+      "value" : "Δεν αποδέχομαι",
+      "note" : "Text for the fcra disclosure form decline button"
+    },
+    "BB-BGC-fcra-disclosure-bgc-form-authorize-btn" : {
+      "value" : "Εξουσιοδοτώ",
+      "note" : "Text for the fcra disclosure form authorize button"
     },
     "BB-BGC_fcra-disclosure-authorize-amazon-conduct-bgc-radio" : {
       "value" : "ΕΞΟΥΣΙΟΔΟΤΩ την Amazon να πραγματοποιήσει αυτόν τον έλεγχο ιστορικού.",
@@ -1462,6 +1502,10 @@
     },
     "BB-Schedule-card-shift" : {
       "value" : "Βάρδια",
+      "note" : "Text for the schedule card shift text"
+    },
+    "BB-Schedule-card-shift-flexible" : {
+      "value" : "Ευέλικτη",
       "note" : "Text for the schedule card shift text"
     },
     "BB-Schedule-card-languages-supported" : {

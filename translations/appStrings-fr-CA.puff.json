@@ -232,6 +232,10 @@
       "value" : "Votre heure de début pourrait être retardée si :",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one" : {
+      "value" : "La vérification des antécédents n’est pas terminée à temps.",
+      "note" : "Text for contingent offer meaning popover content"
+    },
     "BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two" : {
       "value" : "vous ne répondez pas aux exigences en matière de dépistage de drogues à temps;",
       "note" : "Text for contingent offer meaning popover content"
@@ -259,10 +263,6 @@
     "BB-Schedule-card-about-how-to-sign-bonus-title-text" : {
       "value" : "Comment obtenir le bonus d’inscription?",
       "note" : "Text for how to sign on bonus popover title"
-    },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Cette offre comprend une prime d’inscription de {signOnBonus} en fonction des détails précis mentionnés ci-dessus. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début. Si vous devez changer de date, cette offre particulière pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d'inscription.",
-      "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre particulière peut ne pas être disponible si :",

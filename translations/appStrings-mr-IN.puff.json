@@ -265,7 +265,7 @@
       "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित {signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त हप्त्यांद्वारे देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते.",
+      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित ${signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त मासिक हप्त्यांद्वारे देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते.",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
@@ -567,6 +567,10 @@
     "BB-BGC_fcra-disclosure-decline-amazon-conduct-bgc-radio" : {
       "value" : "ही पार्श्वभूमी तपासणी करण्यासाठी मी Amazon ला नकार देतो.",
       "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-BGC_fcra-disclosure-signature-input-label-text" : {
+      "value" : "पूर्ण नाव",
+      "note" : "Text for the fcra signature input label text"
     },
     "BB-BGC_fcra-disclosure-signature-input-error-text" : {
       "value" : "कृपया खालील स्वरूपाचे वैध पूर्ण नाव प्रविष्ट करा: नाव आडनाव",

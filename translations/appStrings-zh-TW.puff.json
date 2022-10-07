@@ -265,11 +265,11 @@
       "note" : "Text for how to sign on bonus popover title"
     },
     "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "此錄取包括基於上述具體細節的 {signOnBonus} 簽約獎金。獎金可多次分期支付，期限可延長至您開始工作後的 180 天。如果您必須重新安排，則視乎您選擇的新職位，此特定錄取可能不適用。如果您在過去 90 天內剛在 Amazon 工作過，您將不符合獲得任何簽約獎金的要求。",
+      "value" : "此錄用包括基於上述具體細節的 ${signOnBonus} 簽約獎金。獎金可多次分期支付，期限可延長至您開始工作後的 180 天。如果您必須重新安排，則根據您選擇的新職位，此特定職位邀約可能不會提供給您。如果您在過去 90 天內曾為 Amazon 服務，您將不符合獲得任何簽約獎金的要求。",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "此工作邀約包括基於上述具體細節的 {signOnBonus} 簽約獎金。可多次分期支付，期限可延長至您開始工作後的 180 天。",
+      "value" : "此錄用包括基於上述具體細節的 ${signOnBonus} 簽約獎金。獎金可多次分期支付，期限可延長至您開始工作後的 180 天。",
       "note" : "Text for how to sign on bonus popover content"
     },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
