@@ -1343,3 +1343,23 @@ export const getCountryCode = (): CountryCode => {
 
     return "{{Country}}" as CountryCode || CountryCode.US;
 }
+
+export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
+
+    if(!flexibleDate) {
+        return "";
+    }
+
+    const dateRegex = new RegExp("^[0-9]{4}-[0-9]{2}-[0-9]{2}");
+    const dateValue = flexibleDate.match(dateRegex);
+    const formattedDate = dateValue ? moment(dateValue[0]).locale(getLocale()).format("MMM DD, YYYY") : '';
+    const rangeValue = flexibleDate.replace(dateRegex, "");
+
+    const formattedTime = rangeValue ?
+      rangeValue.trim()
+        .split("-")
+        .map(item => moment(item.trim(), 'hh:mm A').locale(getLocale()).format('hh:mm A'))
+        .join(" - ") : '';
+
+    return formattedDate && formattedTime ? `${formattedDate} ${formattedTime}` : "";
+};

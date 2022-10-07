@@ -1,5 +1,11 @@
 import Cookies from "js-cookie";
-import { awaitWithTimeout, AWAIT_TIMEOUT, getCountryCodeByCountryName, processAssessmentUrl } from "../../../src/utils/helper";
+import {
+  AWAIT_TIMEOUT,
+  awaitWithTimeout,
+  formatFlexibleTrainingDate,
+  getCountryCodeByCountryName,
+  processAssessmentUrl
+} from "../../../src/utils/helper";
 import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID } from "../../test-utils/test-data";
 
 describe('processAssessmentUrl', () => {
@@ -62,3 +68,15 @@ describe('awaitWithTimeout', () => {
       .toBeUndefined();
   });
 });
+
+describe("formatFlexibleTrainingDate", () => {
+  expect(formatFlexibleTrainingDate("2022-10-10 3:30 AM - 8:30 AM")).toEqual("Oct 10, 2022 03:30 AM - 08:30 AM");
+  expect(formatFlexibleTrainingDate("2022-10-11 8:30 PM - 9:30 PM")).toEqual("Oct 11, 2022 08:30 PM - 09:30 PM");
+  expect(formatFlexibleTrainingDate("2022-10-11 10:30 PM - 11:30 PM")).toEqual("Oct 11, 2022 10:30 PM - 11:30 PM");
+  expect(formatFlexibleTrainingDate("")).toEqual("");
+  expect(formatFlexibleTrainingDate("2022-10-1 8:30 PM - 9:30 PM")).toEqual("");
+  expect(formatFlexibleTrainingDate("2022-10-1 8:30 PM 9:30 PM")).toEqual("");
+  expect(formatFlexibleTrainingDate("2022-10-1")).toEqual("");
+  expect(formatFlexibleTrainingDate("8:30 PM 9:30 PM")).toEqual("");
+  expect(formatFlexibleTrainingDate("8:30 PM - 9:30 PM")).toEqual("");
+})

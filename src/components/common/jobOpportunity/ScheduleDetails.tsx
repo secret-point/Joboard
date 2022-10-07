@@ -1,23 +1,28 @@
 import React from "react";
 import {
-    IconCalendarFill,
-    IconClock,
-    IconClockFill,
-    IconGlobe,
-    IconHourGlass,
-    IconMail,
-    IconPaymentFill,
-    IconSize
-} from '@amzn/stencil-react-components/icons';
+  IconCalendarFill,
+  IconClock,
+  IconClockFill,
+  IconGlobe,
+  IconHourGlass,
+  IconMail,
+  IconPaymentFill,
+  IconSize
+} from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import moment from "moment";
 import { CommonColors } from "../../../utils/colors";
 import { localeToLanguageList } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
-import { getFeatureFlagValue, getLocale, renderScheduleFullAddress } from "../../../utils/helper";
+import {
+  formatFlexibleTrainingDate,
+  getFeatureFlagValue,
+  getLocale,
+  renderScheduleFullAddress
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { Locale, Schedule } from "../../../utils/types/common";
+import { Schedule } from "../../../utils/types/common";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule;
@@ -44,13 +49,13 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
   const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N).locale(getLocale()).format('MMM DD, YYYY')}`: firstDayOnSite;
 
-    const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
+  const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
 
     const renderShiftDate = () => {
         const datesList: string[] = [];
         const shiftDate = parsedTrainingDate?.split('\n')
         shiftDate?.forEach((item) => {
-            const dateValue = moment(item,'YYYY-MMM-DD hh:mm:A - hh:mm A').locale(getLocale()).format('MMM DD YYYY hh:mm A - hh:mm A');
+            const dateValue = formatFlexibleTrainingDate(item)
             datesList.push(dateValue)
         });
 
