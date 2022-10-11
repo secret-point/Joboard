@@ -264,6 +264,10 @@
       "value" : "Come posso ottenere il bonus di iscrizione?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Questa offerta include un bonus di benvenuto di ${signOnBonus} in base ai dettagli specifici sopra indicati. È pagabile in più rate che possono estendersi fino a 180 giorni dopo l'inizio. Se devi riprogrammare, questa offerta specifica potrebbe non essere disponibile in base al nuovo ruolo che scegli. Se hai recentemente lavorato per Amazon negli ultimi 90 giorni non sarai idoneo per il bonus di benvenuto.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "Questa offerta include un bonus di iscrizione di ${signOnBonus} basato sui dettagli specifici sopra indicati. È pagabile in più rate che possono estendersi fino a 180 giorni dopo l'inizio.",
       "note" : "Text for how to sign on bonus popover content"
@@ -2259,6 +2263,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Si è verificato un problema con il server websocket. Riprova o aggiorna il browser.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nome e cognome precedente:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

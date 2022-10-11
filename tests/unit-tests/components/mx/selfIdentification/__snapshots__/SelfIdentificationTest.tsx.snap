@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelfIdentification should match snapshot 1`] = `
+<Col
+  gridGap={15}
+>
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(EqualOpportunityForm)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "ACTIVE",
+      }
+    }
+    maxStepNumber={2}
+    stepIndex={1}
+    stepName="EQUAL_OPPORTUNITY_FORM"
+    title="Voluntary Equal Opportunity Self-Identification Form"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(DisabilityForm)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": true,
+        "status": "ACTIVE",
+      }
+    }
+    maxStepNumber={2}
+    stepIndex={2}
+    stepName="DISABILITY_FORM"
+    title="Voluntary Self-Identification of Disability"
+  />
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  />
+</Col>
+`;

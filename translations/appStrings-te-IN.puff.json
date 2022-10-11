@@ -264,6 +264,14 @@
       "value" : "నేను సైన్ ఆన్ బోనస్ ఎలా పొందగలను?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "ఈ ఆఫర్‌లో పైన పేర్కొన్న నిర్దిష్ట వివరాల ఆధారంగా ${signOnBonus} సైన్ ఆన్ బోనస్ ఉంటుంది. మీరు ప్రారంభించిన తర్వాత 180 రోజుల వరకు పొడిగించబడే అనేక వాయిదాలలో ఇది చెల్లించబడుతుంది. మీరు రీషెడ్యూల్ చేయాల్సి వస్తే, మీరు ఎంచుకున్న కొత్త పాత్ర ఆధారంగా ఈ నిర్దిష్ట ఆఫర్ అందుబాటులో ఉండకపోవచ్చు. మీరు ఇటీవల Amazonలో గత 90 రోజుల్లో పనిచేసినట్లయితే, మీరు ఎటువంటి సైన్ ఆన్ బోనస్‌కు అర్హులు కారు.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "ఈ ఆఫర్‌లో పైన పేర్కొన్న నిర్దిష్ట వివరాల ఆధారంగా ${signOnBonus} సైన్ ఆన్ బోనస్ ఉంటుంది. మీరు ప్రారంభించిన తర్వాత 180 రోజుల వరకు పొడిగించబడే అనేక వాయిదాలలో ఇది చెల్లించబడుతుంది.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ఈ నిర్దిష్ట ఆఫర్ అందుబాటులో ఉండకపోవచ్చు ఒకవేళ :",
       "note" : "Text for how to sign on bonus popover content"
@@ -2255,6 +2263,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "వెబ్‌సాకెట్ సర్వర్‌లో ఏదో తప్పు జరిగింది. దయచేసి మళ్లీ ప్రయత్నించండి లేదా బ్రౌజర్‌ను రిఫ్రెష్ చేయండి.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "మునుపటి పూర్తి పేరు:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

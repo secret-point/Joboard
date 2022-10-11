@@ -31,7 +31,7 @@ import {
 } from "../../../utils/enums/common";
 import {
   checkAndBoundGetApplication,
-  createUpdateApplicationRequest, getCountryCode,
+  createUpdateApplicationRequest,
   getLocale,
   handleInitiateSelfIdentificationStep,
   isSelfIdentificationInfoValid,
@@ -42,7 +42,6 @@ import { Application } from "../../../utils/types/common";
 import InfoStepCard from "../../common/InfoStepCard";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
-import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {

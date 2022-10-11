@@ -264,6 +264,14 @@
       "value" : "איך אקבל את מענק החתימה?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "מבצע זה כולל מענק חתימה בסך ${signOnBonus} בהתבסס על הפרטים הספציפיים שצוינו למעלה. המענק משולם במספר תשלומים, שעשויים להתארך עד 180 יום לאחר ההתחלה. אם עליך לתזמן מחדש, ייתכן שהמבצע הספציפי הזה לא יהיה זמין בהתבסס על התפקיד החדש שבחרת. לא עמדת בדרישות למענק חתימה אם עבדת עבור Amazon ב-90 הימים האחרונים.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "מבצע זה כולל מענק חתימה בסך ${signOnBonus} בהתבסס על הפרטים הספציפיים שצוינו למעלה. המענק משולם במספר תשלומים, שעשויים להתארך עד 180 יום לאחר ההתחלה.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ייתכן שהצעה ספציפית זו לא תהיה זמינה אם:",
       "note" : "Text for how to sign on bonus popover content"

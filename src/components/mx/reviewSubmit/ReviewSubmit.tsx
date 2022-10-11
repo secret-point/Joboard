@@ -122,6 +122,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
     }
   };
 
+  const fullName = `${candidateData?.firstName || ''}${candidateData?.lastName ? ` ${candidateData?.lastName}`: ''}`
+
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
       <Row gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
@@ -159,16 +161,12 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
           </Text>
 
-          {applicationData?.nonFcraQuestions?.requestedCopyOfBackgroundCheck && <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text", "Send free copy of background check")}
-          </Text>}
-
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {reverseMappingTranslate(candidateData?.additionalBackgroundInfo.governmentIdType)}
+            {t("BB-ReviewSubmit-previous-full-name-text", "Previous full name:")} {fullName}
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-national-id-number-text", "National ID Number:")} {candidateData?.additionalBackgroundInfo.idNumber}
+            {t("BB-ReviewSubmit-curp-id-text", `CURP ID:`)} {candidateData?.additionalBackgroundInfo.idNumber}
           </Text>
 
           <Text fontSize="T100">
@@ -223,10 +221,6 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           <Text fontSize="T100">
             {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender)}
             {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity)}` : ""}
-          </Text>
-
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran)}
           </Text>
 
           <Text fontSize="T100">

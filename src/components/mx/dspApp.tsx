@@ -1,45 +1,45 @@
 import React from "react";
-import { BackToTopButton } from "@amzn/stencil-react-components/back-to-top-button";
-import { Col } from "@amzn/stencil-react-components/layout";
 import { connect } from "react-redux";
+import { BackToTopButton } from "@amzn/stencil-react-components/back-to-top-button";
 import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import PreConsentPage from "../us/preConsent/PreConsent";
+import ConsentPage from "../us/consent/Consent";
 import { AppConfig } from "../../@types/IPayload";
-import { uiState } from "../../reducers/ui.reducer";
-import AppLoader from "../common/AppLoader";
-import { BannerMessage } from "../common/BannerMessage";
-import FcraDisclosure from "../common/bgc/FcraDisclosure";
-import CounterMessageBanner from "../common/CounterMessageBanner";
 import { PAGE_ROUTES } from "../pageRoutes";
-import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
-import AmazonRejects from "../us/amazonRejects/AmazonRejects";
-import AmazonWithdraws from "../us/amazonWithdraws/AmazonWithdraws";
-import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
-import AssessmentConsent from "../us/assessment/AssessmentConsent";
-import AssessmentFinished from "../us/assessment/AssessmentFinished";
-import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
-import BackgroundCheck from "../us/bgc/BackgroundCheck";
-import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";
-import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
-import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
-import ContingencyOffer from "../us/contingentOffer/ContingentOffer";
+import JobOpportunity from "../us/jobOpportunity/JobOpportunity";
+import { Col } from "@amzn/stencil-react-components/layout";
+import AppLoader from "../common/AppLoader";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
-import JobOpportunity from "../us/jobOpportunity/JobOpportunity";
-import Nhe from "../us/nhe/Nhe";
-import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
-import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
-import PreConsentPage from "../us/preConsent/PreConsent";
-import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
+import ContingencyOffer from "../us/contingentOffer/ContingentOffer";
+import BackgroundCheck from "../us/bgc/BackgroundCheck";
+import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
-import ReviewSubmit from "../us/reviewSubmit/ReviewSubmit";
-import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
-import SupplementarySuccess from "../us/supplementarySuccess/SupplementarySuccess";
+import Nhe from "../us/nhe/Nhe";
+import SelfIdentification from "./selfIdentification/SelfIdentification";
+import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
 import ThankYou from "../us/thankYou/ThankYou";
-import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
+import CounterMessageBanner from "../common/CounterMessageBanner";
+import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
-import ConsentPage from "./consent/Consent";
-import SelfIdentification from "./selfIdentification/SelfIdentification";
+import AssessmentConsent from "../us/assessment/AssessmentConsent";
+import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
+import AssessmentFinished from "../us/assessment/AssessmentFinished";
+import { BannerMessage } from "../common/BannerMessage";
+import { uiState } from "../../reducers/ui.reducer";
+import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";
+import AmazonRejects from "../us/amazonRejects/AmazonRejects";
+import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
+import AmazonWithdraws from "../us/amazonWithdraws/AmazonWithdraws";
+import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
+import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
+import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
+import SupplementarySuccess from "../us/supplementarySuccess/SupplementarySuccess";
+import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
+import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
+import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
+import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -55,6 +55,7 @@ const {
   BACKGROUND_CHECK_FCRA,
   CANDIDATE_WITHDRAWS,
   CONSENT,
+  REVIEW_SUBMIT,
   CONTINGENT_OFFER,
   JOB_CONFIRMATION,
   JOB_DESCRIPTION,
@@ -62,7 +63,6 @@ const {
   NHE,
   PRE_CONSENT,
   RESUME_APPLICATION,
-  REVIEW_SUBMIT,
   SELF_IDENTIFICATION,
   SESSION_TIMEOUT,
   THANK_YOU,

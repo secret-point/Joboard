@@ -2264,6 +2264,14 @@
         "BB-websocket-error-message-internal-server-error" : {
             "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
             "note" : "Text for websocket internal server error message"
+        },
+        "BB-ReviewSubmit-previous-full-name-text" : {
+            "note" : "Text for previous full name title",
+            "value" : "Previous full name:"
+        },
+        "BB-ReviewSubmit-curp-id-text" : {
+            "note" : "Text for CRUP title",
+            "value" : "CURP ID:"
         }
     }
 }

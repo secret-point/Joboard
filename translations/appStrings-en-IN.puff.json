@@ -268,6 +268,10 @@
       "value" : "This offer includes a sign-on bonus of ${signOnBonus} based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start. If you have to reschedule, this specific offer may not be available based on the new role you choose. If you have worked for Amazon in the last 90 days, you will not be eligible for any sign-on bonus.",
       "note" : "Text for how to sign on bonus popover content"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "This offer includes a sign on bonus of ${signOnBonus} based on the specific details noted above. It is payable over multiple instalments that may extend to 180 days after you start.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "This specific offer may not be available if:",
       "note" : "Text for how to sign on bonus popover content"
@@ -2259,6 +2263,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Previous full name:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

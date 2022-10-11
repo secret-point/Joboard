@@ -264,6 +264,14 @@
       "value" : "Bagaimanakah cara saya mendapatkan bonus penyertaan?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak ${signOnBonus} berdasarkan butiran khusus yang dinyatakan di atas. Ia perlu dibayar melalui ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula. Jika anda perlu menjadualkan semula, tawaran khusus ini mungkin tidak tersedia berdasarkan peranan baharu yang anda pilih. Sekiranya anda bekerja untuk Amazon baru-baru ini dalam tempoh 90 hari lepas, anda tidak akan layak mendapat sebarang bonus penyertaan.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tawaran ini termasuk bonus penyertaan sebanyak ${signOnBonus} berdasarkan butiran khusus yang dinyatakan di atas. Ia perlu dibayar dalam beberapa ansuran bulanan yang boleh dilanjutkan sehingga 180 hari selepas anda bermula.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Tawaran khusus ini mungkin tidak tersedia jika:",
       "note" : "Text for how to sign on bonus popover content"
