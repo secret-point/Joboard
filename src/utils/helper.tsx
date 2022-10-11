@@ -106,6 +106,26 @@ const {
     SELF_IDENTIFICATION
 } = PAGE_ROUTES;
 
+export const reloadAppPageWithSchedule = (applicationData: Application, queryParams:any) => {
+    const attachedScheduleId = applicationData.jobScheduleSelected?.scheduleId;
+    if(!attachedScheduleId) {
+        // goto error page, application has loaded but there is no schedule bound to it
+        return routeToAppPageWithPath(PAGE_ROUTES.APPLICATIONID_NULL);
+    }
+    const mergedQueryParams = {
+        ...queryParams,
+        scheduleId:attachedScheduleId,
+    };
+    const mergedQueryParamItems = Object.values(QUERY_PARAMETER_NAME)
+        .filter(paramName=>mergedQueryParams[paramName])
+        .map(paramName=>({
+            paramName,
+            paramValue:mergedQueryParams[paramName],
+        }));
+
+    return routeToAppPageWithPath(PAGE_ROUTES.SELF_IDENTIFICATION, mergedQueryParamItems);
+}
+
 export const routeToAppPageWithPath =
     ( pathname: string, queryParams?: QueryParamItem[] ) => {
         //get current query params and append new query parameters

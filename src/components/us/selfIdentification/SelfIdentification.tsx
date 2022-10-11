@@ -8,12 +8,13 @@ import {
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
 import queryString from "query-string";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import { connect } from "react-redux";
+import { PAGE_ROUTES } from "../../pageRoutes";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { JobState } from "../../../reducers/job.reducer";
@@ -24,12 +25,18 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
-import { PROXY_APPLICATION_STATE, SELF_IDENTIFICATION_STEPS, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import {
+  PROXY_APPLICATION_STATE,
+  QUERY_PARAMETER_NAME,
+  SELF_IDENTIFICATION_STEPS,
+  UPDATE_APPLICATION_API_TYPE
+} from "../../../utils/enums/common";
 import {
   checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale,
   handleInitiateSelfIdentificationStep,
   isSelfIdentificationInfoValid,
-  SelfShouldDisplayContinue
+  SelfShouldDisplayContinue,
+  routeToAppPageWithPath, reloadAppPageWithSchedule
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -76,11 +83,15 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   }, [applicationData]);
 
   useEffect(() => {
+    // load scheduleId from the application if it isn't in the url
+    if(!scheduleId && applicationData) {
+      reloadAppPageWithSchedule(applicationData,queryParams);
+    }
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
     })
-  }, [scheduleDetail, scheduleId]);
+  }, [scheduleDetail, scheduleId, applicationData]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
