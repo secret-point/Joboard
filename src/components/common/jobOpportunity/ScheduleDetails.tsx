@@ -19,7 +19,8 @@ import {
   formatFlexibleTrainingDate,
   getFeatureFlagValue,
   getLocale,
-  renderScheduleFullAddress
+  renderScheduleFullAddress,
+  getLocaleDateFormatFix
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
@@ -47,20 +48,23 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     parsedTrainingDate
   } = scheduleDetail;
 
-  const startDate = firstDayOnSiteL10N ? `${moment(firstDayOnSiteL10N).locale(getLocale()).format('MMM DD, YYYY')}`: firstDayOnSite;
+  const renderStartDate = () => {
+    const startDate = `${moment(firstDayOnSiteL10N || firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;
+    return getLocaleDateFormatFix(startDate);
+  }
 
   const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
 
-    const renderShiftDate = () => {
-        const datesList: string[] = [];
-        const shiftDate = parsedTrainingDate?.split('\n')
-        shiftDate?.forEach((item) => {
-            const dateValue = formatFlexibleTrainingDate(item)
-            datesList.push(dateValue)
-        });
+  const renderShiftDate = () => {
+    const datesList: string[] = [];
+    const shiftDate = parsedTrainingDate?.split('\n')
+    shiftDate?.forEach((item) => {
+      const dateValue = formatFlexibleTrainingDate(item)
+      datesList.push(dateValue)
+    });
 
-      return datesList.map( (dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>))
-    }
+    return datesList.map( (dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>))
+  }
 
   const renderRequiredLanguages = (): string => {
     const languageList: string[] = [];
@@ -75,53 +79,53 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
   return (
     <Col gridGap={10} width="95%">
       <Row gridGap={10} alignItems="center">
-          <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden={true} />
+        <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-start-date","Start Date")}: </Text>
-          <Text fontSize="T100">{startDate}</Text>
+          <Text fontSize="T100">{renderStartDate()}</Text>
         </Row>
       </Row>
 
       <Row gridGap={10} alignItems="center">
-          <IconClockFill size={IconSize.ExtraSmall} aria-hidden={true} />
-          <Row gridGap={3} alignItems="center">
-            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-shift","Shift")}: </Text>
-            <Text fontSize="T100">{scheduleText}</Text>
-          </Row>
+        <IconClockFill size={IconSize.ExtraSmall} aria-hidden={true} />
+        <Row gridGap={3} alignItems="center">
+          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-shift","Shift")}: </Text>
+          <Text fontSize="T100">{scheduleText}</Text>
+        </Row>
       </Row>
 
-        {parsedTrainingDate &&
-            <Col gridGap={5} alignItems="left" padding={{ left:'S400' }} >
-            <Text fontSize="T200" style={{ fontStyle:"italic" }}>{shift}</Text>
-            {renderShiftDate()}
+      {parsedTrainingDate &&
+        <Col gridGap={5} alignItems="left" padding={{ left:'S400' }} >
+          <Text fontSize="T200" style={{ fontStyle:"italic" }}>{shift}</Text>
+          {renderShiftDate()}
         </Col>
-        }
-
-        <Row gridGap={10} alignItems="center">
-          <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
-          <Row gridGap={3} alignItems="center">
-            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
-            <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
-          </Row>
-        </Row>
+      }
 
       <Row gridGap={10} alignItems="center">
-          <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
-          <Row gridGap={3} alignItems="center">
-            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-hours","Hours")}: </Text>
-            <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
-          </Row>
+        <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
+        <Row gridGap={3} alignItems="center">
+          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
+          <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
+        </Row>
       </Row>
 
-        {employmentTypeL10N &&
-          <Row gridGap={10} alignItems="center">
-            <IconClock size={IconSize.ExtraSmall} aria-hidden={true} />
-            <Row gridGap={3} alignItems="center">
-              <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-duration", "Duration")}: </Text>
-              <Text fontSize="T100">{employmentTypeL10N || employmentType}</Text>
-            </Row>
+      <Row gridGap={10} alignItems="center">
+        <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
+        <Row gridGap={3} alignItems="center">
+          <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-hours","Hours")}: </Text>
+          <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
+        </Row>
+      </Row>
+
+      {employmentTypeL10N &&
+        <Row gridGap={10} alignItems="center">
+          <IconClock size={IconSize.ExtraSmall} aria-hidden={true} />
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-duration", "Duration")}: </Text>
+            <Text fontSize="T100">{employmentTypeL10N || employmentType}</Text>
           </Row>
-        }
+        </Row>
+      }
 
       {showRequiredLanguages &&
       <Row gridGap={10} alignItems="center">

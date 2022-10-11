@@ -1364,6 +1364,10 @@ export const getCountryCode = (): CountryCode => {
     return "{{Country}}" as CountryCode || CountryCode.US;
 }
 
+export const getLocaleDateFormatFix = (date: String) => {
+    return getLocale().substring(0, 2) === 'es' ? date.charAt(0).toUpperCase() + date.slice(1).replace('.', '') : date;
+}
+
 export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
 
     if(!flexibleDate) {
@@ -1381,5 +1385,5 @@ export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
         .map(item => moment(item.trim(), 'hh:mm A').locale(getLocale()).format('hh:mm A'))
         .join(" - ") : '';
 
-    return formattedDate && formattedTime ? `${formattedDate} ${formattedTime}` : "";
+    return formattedDate && formattedTime ? `${getLocaleDateFormatFix(formattedDate)} ${formattedTime}` : "";
 };
