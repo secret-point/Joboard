@@ -206,7 +206,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                 }
                 <Hr />
                 <Col padding={{top: 'S400'}}>
-                    <Text fontSize='T200'>
+                    <Text>
                         {t("BB-ContingencyOffer-job-requirement-Section-title", "Job requirements")}
                     </Text>
                 </Col>

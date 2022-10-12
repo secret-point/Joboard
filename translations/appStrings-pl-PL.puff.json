@@ -296,10 +296,6 @@
       "value" : "Zamknij.",
       "note" : "Text for contingent offer meaning popover close button"
     },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Wymagania dotyczące stanowiska.",
-      "note" : "Text for job requirement section on contingent offer page"
-    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Pozostałe kroki",
       "note" : "Text for the remaining steps container title text"
@@ -2263,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Coś poszło nie tak z serwerem websocket. Spróbuj ponownie lub odśwież przeglądarkę.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Poprzednia pełna nazwa:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

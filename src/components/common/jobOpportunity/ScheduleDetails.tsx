@@ -5,7 +5,6 @@ import {
   IconClockFill,
   IconGlobe,
   IconHourGlass,
-  IconMail,
   IconPaymentFill,
   IconSize
 } from "@amzn/stencil-react-components/icons";
@@ -24,6 +23,7 @@ import {
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
+import { LocationIcon } from "../../../images";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule;
@@ -140,7 +140,9 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
       }
 
       <Row gridGap={10} alignItems="center">
-        <IconMail size={IconSize.ExtraSmall} aria-hidden={true} />
+        <Row>
+          <img src={LocationIcon} height="20px" width="20px"/>
+        </Row>
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-location", "Location")}: </Text>
           <Text color={CommonColors.Blue70} fontSize="T100">{renderScheduleFullAddress(scheduleDetail)}</Text>

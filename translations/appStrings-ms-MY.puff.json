@@ -296,10 +296,6 @@
       "value" : "Tutup.",
       "note" : "Text for contingent offer meaning popover close button"
     },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Keperluan pekerjaan.",
-      "note" : "Text for job requirement section on contingent offer page"
-    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Langkah-langkah selebihnya",
       "note" : "Text for the remaining steps container title text"
@@ -2263,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Sesuatu yang tidak kena telah berlaku dengan pelayan soket web. Sila cuba lagi atau segarkan semula pelayar.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nama penuh sebelumnya:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

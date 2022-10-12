@@ -264,6 +264,10 @@
       "value" : "मला साइन ऑन बोनस कसा मिळतो?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित ${signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त हप्त्यांद्वारे देय आहे, जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते. तुम्हाला रीशेड्यूल करायचे असल्यास, तुम्ही निवडलेल्या नवीन भूमिकेवर आधारित ही विशिष्ट ऑफर उपलब्ध नसू शकते. जर तुम्ही अलीकडेच गेल्या 90 दिवसांत Amazon साठी काम केले असेल, तर तुम्ही कोणत्याही साइन ऑन बोनससाठी पात्र असणार नाही.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content" : {
       "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित ${signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त मासिक हप्त्यांद्वारे देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते.",
       "note" : "Text for how to sign on bonus popover content"
@@ -291,10 +295,6 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "बंद करा.",
       "note" : "Text for contingent offer meaning popover close button"
-    },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "नोकरीची आवश्यकता.",
-      "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "उर्वरित स्टेप्स",

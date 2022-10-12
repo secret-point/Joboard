@@ -296,10 +296,6 @@
       "value" : "Close.",
       "note" : "Text for contingent offer meaning popover close button"
     },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Job requirements.",
-      "note" : "Text for job requirement section on contingent offer page"
-    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Remaining steps",
       "note" : "Text for the remaining steps container title text"
@@ -2263,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Previous full name:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CRUP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

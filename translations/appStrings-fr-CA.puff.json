@@ -264,6 +264,14 @@
       "value" : "Comment obtenir le bonus d’inscription?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend un bonus d’inscription de ${signOnBonus} en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début. Si vous devez replanifier, cette offre particulière pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d’inscription.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend un bonus d’inscription de ${signOnBonus} en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre particulière peut ne pas être disponible si :",
       "note" : "Text for how to sign on bonus popover content"
@@ -287,10 +295,6 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Fermer.",
       "note" : "Text for contingent offer meaning popover close button"
-    },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Exigences du poste.",
-      "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Étapes restantes",
@@ -2255,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Quelque chose s'est mal passé avec le serveur websocket. Veuillez réessayer ou actualiser le navigateur.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nom complet précédent :",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID CURP :",
+      "note" : "Text for CRUP title"
     }
   }
 }

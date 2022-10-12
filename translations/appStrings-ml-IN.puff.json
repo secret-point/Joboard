@@ -296,10 +296,6 @@
       "value" : "അടയ്ക്കുക.",
       "note" : "Text for contingent offer meaning popover close button"
     },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "ജോലി ആവശ്യകതകൾ.",
-      "note" : "Text for job requirement section on contingent offer page"
-    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "ശേഷിക്കുന്ന ഘട്ടങ്ങൾ",
       "note" : "Text for the remaining steps container title text"
@@ -2263,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "വെബ്സോക്കറ്റ് സെർവറിൽ എന്തോ കുഴപ്പം സംഭവിച്ചു. ദയവായി വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ ബ്രൗസർ റീഫ്രഷ് ചെയ്യുക.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "മുമ്പത്തെ മുഴുവൻ പേര്:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

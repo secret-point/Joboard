@@ -268,6 +268,10 @@
       "value" : "Dieses Angebot beinhaltet einen Anmeldebonus von ${signOnBonus} basierend auf den oben genannten Details. Es ist in mehreren Raten zahlbar, die sich auf bis zu 180 Tage nach dem Start erstrecken können. Wenn du einen neuen Termin vereinbaren musst, kann es sein, dass dieses spezielle Angebot je nach der von dir gewählten neuen Rolle nicht verfügbar ist. Wenn du in den letzten 90 Tagen für Amazon gearbeitet hast, hast du keinen Anspruch auf den Anmeldebonus.",
       "note" : "Text for how to sign on bonus popover content"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dieses Angebot beinhaltet einen Anmeldebonus von ${signOnBonus} basierend auf den oben genannten Details. Es ist in mehreren Raten zahlbar, die sich auf bis zu 180 Tage nach dem Start erstrecken können.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Dieses spezielle Angebot ist möglicherweise nicht verfügbar, wenn:",
       "note" : "Text for how to sign on bonus popover content"
@@ -291,10 +295,6 @@
     "BB-ContingencyOffer-contingent-offer-meaning-popover-close-btn" : {
       "value" : "Schließen.",
       "note" : "Text for contingent offer meaning popover close button"
-    },
-    "BB-ContingencyOffer-job-requirement-Section-title" : {
-      "value" : "Stellenanforderungen.",
-      "note" : "Text for job requirement section on contingent offer page"
     },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Verbleibende Schritte",
