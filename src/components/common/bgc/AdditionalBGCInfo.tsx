@@ -46,6 +46,7 @@ import { METRIC_NAME } from "../../../constants/adobe-analytics";
 import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
 import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 import DebouncedButton from "../DebouncedButton";
+import omit from "lodash/omit";
 
 interface MapStateToProps {
     appConfig: AppConfig,
@@ -112,7 +113,11 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }, [isNoSSNChecked])
 
     useEffect(() => {
-        boundSetCandidatePatchRequest({additionalBackgroundInfo: additionalBgc});
+        // For consistence, we use idNumber + governmentIdType rather than primaryNationalId field.
+        // Since we don't maintain primaryNationalId field, we don't send candidate's primaryNationalId to backend.
+        boundSetCandidatePatchRequest({
+            additionalBackgroundInfo: omit(additionalBgc, ['primaryNationalId'])
+        });
 
         return () => {
             boundSetCandidatePatchRequest({});
