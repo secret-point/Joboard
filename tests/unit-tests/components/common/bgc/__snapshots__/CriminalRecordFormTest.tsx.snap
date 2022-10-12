@@ -18,13 +18,15 @@ exports[`CriminalRecordForm should match snapshot 1`] = `
   </Text>
   <DetailedRadio
     defaultChecked={false}
+    key="Yes"
     name="criminal-conviction-radio-col"
     onChange={[Function]}
-    titleText="Yes."
+    titleText="Yes"
     value="true"
   />
   <DetailedRadio
     defaultChecked={true}
+    key="NO"
     name="criminal-conviction-radio-col"
     onChange={[Function]}
     titleText="NO"

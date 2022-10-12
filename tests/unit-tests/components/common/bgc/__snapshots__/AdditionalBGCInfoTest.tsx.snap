@@ -550,7 +550,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
       inputItem={
         Object {
           "dataKey": "additionalBackgroundInfo.dateOfBirth",
-          "errorMessage": "Please enter a valid Date of birth",
+          "errorMessage": "Please enter a valid Date of birth.",
           "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-dob-error-text",
           "hasError": false,
           "id": "additionalBGCDateOfBirth",

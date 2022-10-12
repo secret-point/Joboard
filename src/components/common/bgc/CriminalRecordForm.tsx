@@ -120,6 +120,7 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
                 CriminalConvictionConfigList.map(item => (
                     <DetailedRadio
                         name="criminal-conviction-radio-col"
+                        key={item.title}
                         value={`${item.value}`}
                         titleText={t(item.titleTranslationKey, item.title)}
                         onChange={() => {

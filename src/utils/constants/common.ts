@@ -162,7 +162,7 @@ export const FcraDisclosureConfigList: FcraDisclosureConfig[] = [
 
 export const CriminalConvictionConfigList: AdditionalBgcConfig[] = [
     {
-        title: 'Yes.',
+        title: 'Yes',
         value: true,
         dataKey: 'additionalBackgroundInfo.hasCriminalRecordWithinSevenYears',
         titleTranslationKey: 'BB-BGC-criminal-record-within-seven-years-answer-yes-text'
@@ -374,7 +374,7 @@ export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
     {
         hasError: false,
         labelText: 'Date of Birth',
-        errorMessage: 'Please enter a valid Date of birth',
+        errorMessage: 'Please enter a valid Date of birth.',
         required: true,
         name: 'Date of Birth',
         dataKey: 'additionalBackgroundInfo.dateOfBirth',

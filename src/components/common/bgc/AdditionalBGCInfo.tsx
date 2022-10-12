@@ -39,7 +39,7 @@ import {
   boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
-import { handleSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/helper";
+import { handleSubmitAdditionalBgc, isDOBOverEighteen, isValidDOB } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
@@ -149,10 +149,16 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       if (formItem.dataKey.includes("dateOfBirth") && !hasError && value) {
         const dob = get(candidatePatchRequest, formItem.dataKey);
         const isOver18 = isDOBOverEighteen(dob);
+        const isDateOfBirthValid = isValidDOB(dob);
         const legacyErrorMessage = formItem.errorMessage;
         const legacyErrorTranslationKey = formItem.errorMessageTranslationKey;
 
-        if (!isOver18) {
+        if(!isDateOfBirthValid) {
+          formItem.hasError = true;
+          formItem.errorMessage = "Please enter a valid Date of birth.";
+          formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-error-text';
+        }
+        else if(!isOver18) {
           formItem.hasError = true;
           formItem.errorMessage = "You need to be above 18 years old.";
           formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-below18-error-text';
