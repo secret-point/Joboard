@@ -19,6 +19,13 @@ exports[`ContingentOffer should match snapshot 1`] = `
       , test-firstname
       !
     </H2>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Here is the contingent offer for the job you picked.
+    </Text>
   </Col>
   <ScheduleCard
     displayOnly={true}

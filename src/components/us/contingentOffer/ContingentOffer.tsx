@@ -108,6 +108,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
         <Col gridGap={10}>
             <Col gridGap={10}>
                 <H2>{t("BB-ContingencyOffer-well-done-text","Well done so far")}{displayName ? `, ${displayName}`: ''}!</H2>
+                <Text fontSize="T200">{t("BB-ContingencyOffer-job-picked-title-text", "Here is the contingent offer for the job you picked.")}</Text>
             </Col>
 
             {scheduleDetail && <ScheduleCard scheduleDetail={scheduleDetail} displayOnly={true}/>}
