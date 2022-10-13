@@ -163,7 +163,8 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|bmp|svg)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[contenthash:8].[ext]'
+                    name: '[name].[contenthash:8].[ext]',
+                    outputPath: './newstaticbb/img'
                 }
             },
             {
