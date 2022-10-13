@@ -296,6 +296,10 @@
       "value" : "बंद करा.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "नोकरी आवश्यकता",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "उर्वरित स्टेप्स",
       "note" : "Text for the remaining steps container title text"
@@ -1484,10 +1488,6 @@
       "value" : "(किंवा त्यापूर्वी!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/तास",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "तास/आठवडा",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "वेतन दर",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "एक-वेळचा साइन ऑन बोनस",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "तास",

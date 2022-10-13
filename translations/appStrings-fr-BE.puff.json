@@ -296,6 +296,10 @@
       "value" : "Fermer.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Exigences relatives au poste",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Étapes restantes",
       "note" : "Text for the remaining steps container title text"
@@ -1484,10 +1488,6 @@
       "value" : "(ou plus tôt !)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/heure",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "heures/semaine",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Taux de rémunération",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Prime à l’embauche unique",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Heures",
@@ -2255,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Un problème est survenu avec le serveur WebSocket. Réessayez ou actualisez la page de votre navigateur.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nom complet précédent :",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID du CURP :",
+      "note" : "Text for CRUP title"
     }
   }
 }

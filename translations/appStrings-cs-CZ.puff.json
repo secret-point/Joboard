@@ -48,6 +48,10 @@
       "value" : "Spojené státy",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "Mexiko",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Podáním žádosti potvrzujete, že:",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "Prověrka",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Souhlas s prověrkou v zaměstnání",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Uveďte prosím oprávnění a informace potřebné k prověrce.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Potvrzení a oprávnění k ověření důvěryhodnosti údajů podle zákona o nespravedlivém podávání zpráv o úvěrech",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Oprávnění k prověrce, lékařské prohlídce a testu na drogy",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Doplňující informace k základním údajům",
@@ -428,8 +440,16 @@
       "value" : "Číslo dokladu totožnosti",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Zadejte prosím platné devítimístné číslo sociálního pojištění bez pomlčky",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Zadejte prosím platné 18místné CURP ID bez pomlčky",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Jak jsem uvedl/a a schválil/a v samostatném dokumentu Zpřístupnění informací podle zákona o spravedlivém podávání zpráv o úvěrech, společnost Amazon.com, Inc. nebo její dceřiné či přidružené společnosti (\"Amazon\") provede prověrku mé osoby.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. nebo její dceřiné či přidružené společnosti („Amazon“) provede prověrku mé osoby.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Níže uvedeným elektronickým podpisem potvrzuji, že jsem si přečetl/a, porozuměl/a a souhlasím se všemi prohlášeními uvedenými v tomto Potvrzení a oprávnění k ověření důvěryhodnosti údajů podle zákona o nespravedlivém podávání zpráv o úvěrech. Svůj souhlas prosím vyjádřete zadáním požadovaných údajů do níže uvedených polí.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Níže uvedeným elektronickým podpisem potvrzuji, že jsem si přečetl/a, porozuměl/a a souhlasím se všemi prohlášeními uvedenými v tomto dokumentu Oprávnění k prověrce, lékařské prohlídce a testu na přítomnost drog. Svůj souhlas prosím vyjádřete zadáním požadovaných údajů do níže uvedených polí.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Jako elektronický podpis napište své celé jméno",
@@ -1488,10 +1516,6 @@
       "value" : "(nebo dříve)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hod.",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "hod./týden",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Výše mzdy",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Jednorázový vstupní bonus",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Hodiny",

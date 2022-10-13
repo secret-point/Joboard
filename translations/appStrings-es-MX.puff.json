@@ -1488,10 +1488,6 @@
       "value" : "(¡o antes!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hora",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",
       "note" : "Text for the schedule card hours per week text"
@@ -2259,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Se produjo un error con el servidor websocket. Por favor, inténtalo de nuevo o actualiza el navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nombre completo anterior:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID de CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

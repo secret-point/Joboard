@@ -268,6 +268,10 @@
       "value" : "Αυτή η προσφορά περιλαμβάνει ένα μπόνους υπογραφής ύψους ${signOnBonus} με βάση τις συγκεκριμένες λεπτομέρειες που αναφέρονται παραπάνω. Καταβάλλεται σε πολλές μηνιαίες δόσεις που μπορεί να φτάσουν έως και 180 ημέρες μετά την έναρξη. Εάν πρέπει να επαναπρογραμματίσετε, αυτή η συγκεκριμένη προσφορά ενδέχεται να μην είναι διαθέσιμη με βάση τον νέο ρόλο που θα επιλέξετε. Αν έχετε εργαστεί πρόσφατα για την Amazon τις τελευταίες 90 ημέρες, δεν δικαιούστε μπόνους υπογραφής.",
       "note" : "Text for how to sign on bonus popover content"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Αυτή η προσφορά περιλαμβάνει ένα μπόνους υπογραφής ύψους ${signOnBonus} με βάση τις συγκεκριμένες λεπτομέρειες που αναφέρονται παραπάνω. Πληρώνεται σε πολλές μηνιαίες δόσεις που μπορεί να φτάσουν έως και 180 ημέρες μετά την έναρξη.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Η συγκεκριμένη προσφορά μπορεί να μην είναι διαθέσιμη εάν:",
       "note" : "Text for how to sign on bonus popover content"
@@ -1479,10 +1483,6 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(ή νωρίτερα!)",
       "note" : "Text for the schedule card possible start date or earlier text"
-    },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/ώρα",
-      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ώρες/εβδομάδα",

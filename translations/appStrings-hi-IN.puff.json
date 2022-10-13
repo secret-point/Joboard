@@ -48,6 +48,10 @@
       "value" : "संयुक्त राज्य अमेरिका",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "मेक्सिको",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "आवेदन करके आप पुष्टि करते हैं कि:",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "बैकग्राउंड जांच",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "रोजगार जांच के लिए सहमति",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "कृपया बॅकग्राउंड की जांच के लिए ज़रूरी प्राधिकरण और जानकारी प्रदान करें.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "बैकग्राउंड की जांच के लिए नॉन-फेयर क्रेडिट रिपोर्टिंग अधिनियम की स्वीकृतियां और प्राधिकरण",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "बैकग्राउंड चेक, मेडिकल चेक और ड्रग टेस्ट के लिए प्राधिकरण",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "बैकग्राउंड की अतिरिक्त जानकारी",
@@ -428,8 +440,16 @@
       "value" : "राष्ट्रीय ID नंबर",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "कृपया डैश के बिना एक मान्य 9 अंकों का सामाजिक सुरक्षा नंबर एंटर करें",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "कृपया डैश के बिना एक वैध 18 अंकों का CURP ID दर्ज करें",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "जैसा कि अलग फेयर क्रेडिट रिपोर्टिंग अधिनियम डिस्क्लोजर और ऑथराइजेशन दस्तावेज़ में मेरे द्वारा खुलासा और अधिकृत किया गया है, Amazon.com, Inc. या इसकी सहायक कंपनियां या सहयोगी (\"Amazon\") मेरे बारे में बैकग्राउंड की जांच करेंगे.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. या इसकी सहायक कंपनियां या सहयोगी (\"Amazon\") मेरे बारे में बैकग्राउंड की जांच करेंगे.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "नीचे दिए गए मेरे ई-हस्ताक्षर द्वारा, मैं प्रमाणित करता/करती हूं कि मैंने इस गैर-निष्पक्ष क्रेडिट रिपोर्टिंग अधिनियम और बैकग्राउंड की जांच के लिए प्राधिकरण के सभी बयानों को पढ़ा, समझा और स्वीकार किया है. कृपया नीचे दिए गए फ़ील्ड में मांगी गई जानकारी एंटर करके अपनी स्वीकृति इंगित करें.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "नीचे दिए गए मेरे eSignature द्वारा, मैं प्रमाणित करता हूं कि मैंने बैकग्राउंड चेक, मेडिकल चेक और ड्रग टेस्ट के लिए इस प्राधिकरण के सभी कथनों को पढ़ा, समझा और स्वीकार किया है. कृपया नीचे दिए गए फ़ील्ड में मांगी गई जानकारी एंटर करके अपनी स्वीकृति इंगित करें.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "कृपया अपना पूरा नाम ई-हस्ताक्षर के रूप में टाइप करें",
@@ -1488,10 +1516,6 @@
       "value" : "(या इससे पहले!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/घंटा",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "घंटे/हफ़्ता",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "भुगतान दर",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "एक बार का साइन ऑन बोनस",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "घंटे",
@@ -2259,6 +2287,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Websocket सर्वर के साथ कुछ गलत हो गया. कृपया फिर से कोशिश करें या ब्राउज़र को रीफ़्रेश करें.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "पिछला पूरा नाम:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

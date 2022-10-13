@@ -317,10 +317,10 @@ export interface Schedule {
     city: string | null;
     state: string | null;
     postalCode: string | null;
-    distance: number;
+    distance?: number;
     iconUrl: string;
     bgcVendorName: BGC_VENDOR_TYPE;
-    bonusSchedule: boolean;
+    bonusSchedule?: boolean;
     signOnBonus: number;
     briefJobDescription: string;
     jobDescription: string;
@@ -332,7 +332,7 @@ export interface Schedule {
     totalPayRateL10N: string;
     employmentTypeL10N: string;
     requiredLanguage: string[] | null;
-    parsedTrainingDate: string;
+    parsedTrainingDate: string | null;
 }
 
 export interface HoursPerWeek {

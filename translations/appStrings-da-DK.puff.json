@@ -296,6 +296,10 @@
       "value" : "Luk.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Jobkrav",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Resterende trin",
       "note" : "Text for the remaining steps container title text"
@@ -1483,10 +1487,6 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(eller tidligere!)",
       "note" : "Text for the schedule card possible start date or earlier text"
-    },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/time",
-      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "timer/uge",

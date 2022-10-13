@@ -1488,10 +1488,6 @@
       "value" : "(o prima!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/ora",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ore/settimana",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Retribuzione",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bonus di iscrizione una tantum",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Ore",

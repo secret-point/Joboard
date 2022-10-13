@@ -2,6 +2,14 @@
     "dir": "ltr",
     "note": "",
     "resources": {
+        "BB-Common-month": {
+            "note": "Text for the commont text month",
+            "value": "month"
+        },
+        "BB-Common-hour": {
+            "note": "Text for the common text hour",
+            "value": "hour"
+        },
         "BB-PreConsentPage-banner-journey-starts": {
             "note": "Text for PreConsentPage banner text",
             "value": "Your journey to becoming an Amazon Associate starts here."
@@ -1522,10 +1530,6 @@
             "note": "Text for the schedule card possible start date or earlier text",
             "value": "(or earlier!)"
         },
-        "BB-Schedule-card-total-pay-per-hour-text": {
-            "note": "Text for the schedule card total pay per hour text",
-            "value": "/hour"
-        },
         "BB-Schedule-card-hours-per-week-text": {
             "note": "Text for the schedule card hours per week text",
             "value": "hours/week"
@@ -1564,6 +1568,10 @@
         "BB-Schedule-card-pay-rate": {
             "note": "Text for the pay rate text",
             "value": "Pay rate"
+        },
+        "BB-Schedule-card-sign-on-bonus": {
+            "note": "Text for the one-time sign on bonus text",
+            "value": "One-time sign on bonus"
         },
         "BB-Schedule-card-hours": {
             "note": "Text for the work hours text",

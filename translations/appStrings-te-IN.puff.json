@@ -296,6 +296,10 @@
       "value" : "మూసివేయండి.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "ఉద్యోగ అవసరాలు",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "మిగిలిన దశలు",
       "note" : "Text for the remaining steps container title text"
@@ -1484,10 +1488,6 @@
       "value" : "(లేదా అంతకుముందు!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/గంట",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "గంటలు/వారం",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "చెల్లింపు రేటు",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "ఒక్కసారి సైన్ అప్ బోనస్",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "గంటలు",

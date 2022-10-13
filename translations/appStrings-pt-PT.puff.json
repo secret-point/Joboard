@@ -1488,10 +1488,6 @@
       "value" : "(ou mais cedo!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hora",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salário",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bónus único de registo",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Horas",
@@ -2259,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Ocorreu um erro com o servidor websocket. Tente novamente ou atualize o navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nome completo anterior:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

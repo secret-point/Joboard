@@ -48,6 +48,10 @@
       "value" : "미국",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "멕시코",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "지원하면 다음을 확인하게 됩니다.",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "신원 조사",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "채용 관련 조회에 대한 동의",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "신원 조사에 필요한 승인 및 정보를 제공하세요.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "불공정 신용 보고법 승인서 및 신원 조사 승인서",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "신원 조회, 건강 검진 및 약물 검사에 대한 승인",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "추가 신원 정보",
@@ -428,8 +440,16 @@
       "value" : "국가 신분증 번호",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "대시 기호를 제외하고 유효한 9자리 사회 보장 번호(SSN)를 입력하세요.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "유효한 18자리 CURP ID를 대시 없이 입력해주세요.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "별도의 공정 신용 보고법 공시 및 승인 문서에서 본인이 공개하고 승인한 대로 Amazon.com, Inc. 또는 그 자회사 또는 계열사(‘아마존’)가 본인에 대한 신원 조사를 수행합니다.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. 또는 그 자회사 또는 계열사(‘아마존’)가 본인에 대한 신원 조회를 실시합니다.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "본인은 아래의 전자 서명을 통해, 본 불공정 신용 보고법 승인서 및 신원 조사 승인서의 모든 진술을 읽고 이해했으며 수락했음을 증명합니다. 아래 필드에 요청된 정보를 입력하여 수락함을 표시하세요.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "본인은 아래의 전자 서명을 통해 신원 조회, 건강 검진 및 약물 검사에 대한 본 승인의 모든 내용을 읽고 이해하며 수락했음을 증명합니다. 아래 필드에 요청된 정보를 입력하여 동의를 표명하세요.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "전자 서명으로 전체 이름을 입력하세요.",
@@ -1487,10 +1515,6 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(또는 그 이전!)",
       "note" : "Text for the schedule card possible start date or earlier text"
-    },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/시간",
-      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "시간/주",

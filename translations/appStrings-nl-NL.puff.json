@@ -296,6 +296,10 @@
       "value" : "Sluiten",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Functievereisten",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Resterende stappen",
       "note" : "Text for the remaining steps container title text"
@@ -1483,10 +1487,6 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(of eerder!)",
       "note" : "Text for the schedule card possible start date or earlier text"
-    },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/uur",
-      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "uur/week",

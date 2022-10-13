@@ -1488,10 +1488,6 @@
       "value" : "(അല്ലെങ്കിൽ നേരത്തെ!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/മണിക്കൂർ",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "മണിക്കൂർ/ആഴ്ച",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "ശമ്പള നിരക്ക്",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "ഒറ്റ ത്തവണ സൈൻ ഓൺ ബോണസ്",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "മണിക്കൂർ",

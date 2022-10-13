@@ -1,5 +1,5 @@
-import { createHashHistory } from "history";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import { createHashHistory } from "history";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
 import { BGCState } from "../../src/reducers/bgc.reducer";
@@ -9,8 +9,8 @@ import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { SelfIdentificationState } from "../../src/reducers/selfIdentification.reducer";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
-import { BGC_STEPS, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { Address, AlertMessage, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation , Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
+import { BGC_STEPS, BGC_VENDOR_TYPE, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
+import { Address, AlertMessage, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation, Schedule } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -241,8 +241,42 @@ export const TEST_APPLICATION_DATA: any = {
   shiftPageFactor: 0
 };
 
-export const TEST_SCHEDULE: any = {
+export const TEST_SCHEDULE: Schedule = {
   scheduleId: TEST_SCHEDULE_ID,
+  jobId: TEST_JOB_ID,
+  dataSource: "Dragonstone",
+  language: "English",
+  externalJobTitle: "Amazon Grocery Shopper",
+  basePay: 6,
+  totalPayRate: 8.9,
+  currencyCode: "USD",
+  scheduleText: "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
+  hoursPerWeek: 16,
+  firstDayOnSite: "2022-10-29",
+  scheduleBannerText: "Additional 5$ bonus schedule and 9$ Surge pay",
+  scheduleType: "PART_TIME",
+  employmentType: "Regular",
+  tagLine: "In-store shopping for customer grocery orders.",
+  image: "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
+  jobPreviewVideo: "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
+  address: "38811 Cherry Street",
+  city: "Newark",
+  state: "CA",
+  postalCode: "94560",
+  iconUrl: "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
+  bgcVendorName: BGC_VENDOR_TYPE.FADV,
+  signOnBonus: 5,
+  briefJobDescription: "briefJobDescription briefJobDescription",
+  jobDescription: "jobDescription jobDescription",
+  siteId: "SITE-OAK5",
+  hireStartDate: "2022-11-04",
+  contingencyTat: 0,
+  signOnBonusL10N: "$5.00",
+  firstDayOnSiteL10N: "2022-10-29",
+  totalPayRateL10N: "$8.90",
+  employmentTypeL10N: "Regular",
+  requiredLanguage:["en-US", "es-US"],
+  parsedTrainingDate: null,
 };
 
 export const TEST_SCHEDULE_STATE: ScheduleState = {
@@ -250,10 +284,10 @@ export const TEST_SCHEDULE_STATE: ScheduleState = {
   failed: false,
   filters: {
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT,
-    maxHoursPerWeek:DESIRED_WORK_HOURS.THIRTY,
+    maxHoursPerWeek: DESIRED_WORK_HOURS.THIRTY,
     daysHoursFilter: []
   },
-  results:{
+  results: {
     scheduleList: [],
     scheduleDetail: TEST_SCHEDULE,
   },
@@ -464,7 +498,7 @@ export const TEST_SELF_IDENTIFICATION_STATE: SelfIdentificationState = {
 };
 
 export const TEST_NHE_TIME_SLOT: NHETimeSlot = {
-  timeSlotId:"VTS-0034139",
+  timeSlotId: "VTS-0034139",
   startTime: "10:30",
   endTime: "11:00",
   location: NHE_TIMESLOT_LOCATION,

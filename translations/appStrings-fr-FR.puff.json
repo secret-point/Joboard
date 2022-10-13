@@ -48,6 +48,10 @@
       "value" : "États-Unis",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "Mexique",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "En postulant, vous confirmez que :",
       "note" : "Text for application qualification criteria"
@@ -296,6 +300,10 @@
       "value" : "Fermer.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Exigences relatives au poste",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Étapes restantes",
       "note" : "Text for the remaining steps container title text"
@@ -316,6 +324,10 @@
       "value" : "Vérification des antécédents",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentement relatifs aux contrôles préalables à l’embauche",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Donnez votre autorisation et fournissez les informations nécessaires pour la vérification des antécédents.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -323,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Admissions et autorisations concernant la vérification des antécédents en vertu du Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorisations relatives à la vérification des antécédents, le contrôle du dossier médical et le test de dépistage de drogues",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informations supplémentaires relatives aux antécédents",
@@ -424,8 +440,16 @@
       "value" : "Numéro de carte d'identité nationale",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Identifiant CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Saisissez un numéro de sécurité sociale valide à 9 chiffres sans tiret",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Saisissez un identifiant CURP valide à 18 chiffres sans tiret",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -574,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Comme indiqué et autorisé par ma personne dans le document distinct de communication d’informations et d'autorisation relatif au Fair Credit Reporting Act, Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon ») procéderont à une vérification de mes antécédents.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon ») procéderont à une vérification de mes antécédents.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -759,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Par ma signature électronique ci-dessous, je certifie avoir lu, compris et accepté toutes les déclarations des admissions et autorisations concernant la vérification des antécédents en vertu du Non-Fair Credit Reporting Act. Donnez votre consentement en saisissant les informations demandées dans les champs ci-dessous.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Par ma signature électronique ci-dessous, je certifie avoir lu, compris et accepté toutes les déclarations relatives à ces autorisations concernant la vérification des antécédents, le contrôle du dossier médical et le test de dépistage de drogues. Merci de donner votre consentement en saisissant les informations demandées dans les champs ci-dessous.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Saisissez vos noms et prénoms complets comme signature électronique",
@@ -1484,10 +1516,6 @@
       "value" : "(ou plus tôt !)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/heure",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "heures/semaine",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Taux de rémunération",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Prime unique à l’embauche",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Heures",
@@ -2255,6 +2287,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Un problème s'est produit avec le serveur WebSocket. Réessayez ou actualisez le navigateur.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nom complet précédent :",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "IDENTIFIANT DU CURP :",
+      "note" : "Text for CRUP title"
     }
   }
 }

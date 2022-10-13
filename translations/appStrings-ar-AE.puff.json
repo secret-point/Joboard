@@ -1488,10 +1488,6 @@
       "value" : "(أو في وقت سابق)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/ ساعة",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ساعات / الأسبوع",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "معدل الأجر",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "مكافأة تسجيل الدخول لمرة واحدة",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "ساعات",

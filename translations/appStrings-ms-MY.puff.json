@@ -296,6 +296,10 @@
       "value" : "Tutup.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Keperluan pekerjaan",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Langkah-langkah selebihnya",
       "note" : "Text for the remaining steps container title text"
@@ -1484,10 +1488,6 @@
       "value" : "(atau lebih awal!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/jam",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "jam/minggu",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1527,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Kadar gaji",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bonus daftar satu kali",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Jam",

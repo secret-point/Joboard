@@ -11,25 +11,26 @@ import {
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import moment from "moment";
+import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
-import { localeToLanguageList } from "../../../utils/constants/common";
+import { CountryCode, localeToLanguageList } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import {
   formatFlexibleTrainingDate,
   getFeatureFlagValue,
   getLocale,
   renderScheduleFullAddress,
-  getLocaleDateFormatFix
+  getLocaleDateFormatFix,
+  getCountryCode
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
-import { LocationIcon } from "../../../images";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule;
 }
 
-const ScheduleDetails = (props: ScheduleDetailsProps) => {
+export const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
   const { scheduleDetail } = props;
   const requiredLanguages = scheduleDetail.requiredLanguage || [];
@@ -45,8 +46,11 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     employmentTypeL10N,
     totalPayRate,
     totalPayRateL10N,
-    parsedTrainingDate
+    parsedTrainingDate,
+    signOnBonusL10N,
   } = scheduleDetail;
+
+  const countryCode = getCountryCode();
 
   const renderStartDate = () => {
     const startDate = `${moment(firstDayOnSiteL10N || firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;
@@ -74,6 +78,16 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
     });
 
     return languageList.join(", ");
+  };
+
+  const displayPayRate = () => {
+    switch (countryCode) {
+      case CountryCode.MX:
+        // TODO: Check with backend which field has the total monthly pay
+        return <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} /{t("BB-Common-month", "month")}</Text>;
+      default:
+        return <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} /{t("BB-Common-hour", "hour")}</Text>;
+    }
   };
 
   return (
@@ -105,9 +119,23 @@ const ScheduleDetails = (props: ScheduleDetailsProps) => {
         <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
-          <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} {t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text>
+          {displayPayRate()}
         </Row>
       </Row>
+
+      {/* MX specific, only visible on MX */}
+      {countryCode === CountryCode.MX && signOnBonusL10N &&
+        <Row gridGap={10} alignItems="center">
+          <Row>
+            <img src={LightningIcon} height="20px" width="20px"/>
+          </Row>
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-sign-on-bonus", "One-time sign on bonus")}: </Text>
+            {/* TODO: Check with backend which field has the monthly pay for sign up bonus */}
+            <Text fontSize="T100">MXN{signOnBonusL10N}</Text>
+          </Row>
+        </Row>
+      }
 
       <Row gridGap={10} alignItems="center">
         <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Consent should match snapshot 1`] = `
+<Col
+  gridGap="m"
+  padding="n"
+>
+  <h1>
+    By applying, you confirm that:
+  </h1>
+  <ul />
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    TODO: Waiting on copy from legal for whatsapp consent language
+  </Text>
+  <dl>
+    <Text
+      color="gray"
+      font="primary"
+      fontSize="0.8em"
+      hyphens="none"
+      textAlign="center"
+    >
+      By applying, you read and agree to the
+    </Text>
+    <WithFlyout
+      flyoutPosition="trailing"
+      renderFlyout={[Function]}
+    >
+      <Component />
+    </WithFlyout>
+    <DebouncedButton
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+      variant="primary"
+    >
+      Create Application
+    </DebouncedButton>
+  </dl>
+</Col>
+`;

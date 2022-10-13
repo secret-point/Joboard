@@ -48,6 +48,10 @@
       "value" : "Estados Unidos",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "México",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Al solicitarlo el puesto, confirmas que:",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "comprobación de antecedentes",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentimiento para la evaluación de empleo",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Proporciona la autorización y la información necesaria para una comprobación de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconocimientos y autorizaciones para la comprobación de antecedentes fuera de la Ley de Informe Justo de Crédito.",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorizaciones para la comprobación de antecedentes, la evaluación médica y el test de drogas",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Información adicional de antecedentes",
@@ -428,8 +440,16 @@
       "value" : "Número del documento nacional de identidad",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID de CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Introduce un número de la Seguridad Social válido de 9 dígitos sin guion",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Introduce un ID de CURP válido de 18 dígitos sin guión",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Según revelé y autoricé en el Documento de Autorización y Comunicación de la Ley de Informe Justo de Crédito, Amazon.com, Inc. o sus subsidiarias o afiliadas (“Amazon”) realizarán una comprobación de mis antecedentes.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”) realizarán una comprobación de mis antecedentes.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Mediante mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones y autorizaciones para la comprobación de antecedentes fuera de la Ley de Informe Justo de Crédito. Introduce la información solicitada en los campos siguientes para confirmar tu aceptación.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Mediante mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones y autorizaciones para la comprobación de antecedentes, la evaluación médica y el test de drogas. Introduce la información solicitada en los siguientes campos para confirmar tu aceptación.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Escribe tu nombre completo como firma electrónica",
@@ -1488,10 +1516,6 @@
       "value" : "(¡o antes!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hora",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Tarifa de pago",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bonificación única por inicio de sesión",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Horas",
@@ -2259,6 +2287,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Algo ha ido mal con el servidor de websocket. Inténtalo de nuevo o actualiza el navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nombre completo anterior:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID de CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

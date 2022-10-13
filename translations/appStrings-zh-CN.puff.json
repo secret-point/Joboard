@@ -48,6 +48,10 @@
       "value" : "美国",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "墨西哥",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "确定申请即表明您确认：",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "背景调查",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "同意接受招聘筛选",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "请提供背景调查所需的授权和信息。",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "《Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check（用于背景调查的非公平信用报告法的确认书和授权书）》",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "背景调查、体检和药检授权书",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "其他背景信息",
@@ -428,8 +440,16 @@
       "value" : "身份证件编号",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "请输入有效的 9 位数社会保障号，不带破折号",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "请输入有效的 18 位数 CURP ID（不含短划线）",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "正如本人分别在《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》和《Authorization Document（授权文件）》中所公示并授权一样，本人公示并授权 Amazon.com, Inc.或其子公司或附属公司（“亚马逊”）将对本人进行背景调查。",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc.或其子公司或附属公司（“亚马逊”）将对本人进行背景调查。",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "确定在下方进行电子签名即表示本人特此证明本人已阅读、理解并接受这份《Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check（用于背景调查的非公平信用报告法的确认书和授权书）》中的所有声明。请在以下栏中输入所需信息以表示您接受。",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "在下方进行电子签名即表示我证明我已阅读、理解并接受本背景调查、体检和药检授权书中的所有声明。请在下面的字段中输入所需信息以表示您接受。",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "请输入您的全名作为电子签名",
@@ -1488,10 +1516,6 @@
       "value" : "（或更早！）",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/小时",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "小时/周",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "薪资",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "一次性入职奖金",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "工时",
@@ -2259,6 +2287,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "websocket 服务器出现了问题。请重试或刷新浏览器。",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "此前所用全名：",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

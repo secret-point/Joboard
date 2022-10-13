@@ -1404,6 +1404,10 @@
       "value" : "আপনার প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের আগে, কাজের সুযোগের ট্যাক্স ক্রেডিট প্রশ্নাবলী পূরণ করুন।",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "আপনার প্রাক-নিয়োগ সাক্ষাৎকারের আগে, আপনাকে প্রাক-নিয়োগ কার্যক্রমের একটি সিরিজ সম্পূর্ণ করতে হবে।",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "চলুন শুরু করা যাক",
       "note" : "Text for the thank you page let's get started button text"
@@ -1488,10 +1492,6 @@
       "value" : "(বা তার আগে!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/ঘন্টা",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ঘন্টা/সপ্তাহ",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1531,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "বেতনের হার",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "এককালীন সাইন অন বোনাস",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "ঘণ্টা",

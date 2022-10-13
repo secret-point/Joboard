@@ -296,6 +296,10 @@
       "value" : "Close.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Job requirements",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Remaining steps",
       "note" : "Text for the remaining steps container title text"
@@ -1400,6 +1404,10 @@
       "value" : "Before your pre-hire appointment, fill out the Work Opportunities Tax Credit Questionnaire.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Before your pre-hire appointment, you will need to complete a series of pre-hire activities.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Let's get started",
       "note" : "Text for the thank you page let's get started button text"
@@ -1484,10 +1492,6 @@
       "value" : "(or earlier!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
-    "BB-Schedule-card-total-pay-per-hour-text" : {
-      "value" : "/hour",
-      "note" : "Text for the schedule card total pay per hour text"
-    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "hours/week",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1531,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Pay rate",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "One-time sign on bonus",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Hours",

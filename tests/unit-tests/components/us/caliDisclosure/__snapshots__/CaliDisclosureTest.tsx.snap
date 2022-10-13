@@ -24,6 +24,105 @@ exports[`CaliDisclosure should match snapshot 1`] = `
   >
     In connection with my possible employment with Amazon.com, Inc. or its subsidiaries or affiliates ("Amazon"), Amazon may procure an investigative consumer report ("Report"), also known as a background check, about me from the following consumer reporting agency:
   </Text>
+  <Col
+    color="#232f3e"
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      First Advantage
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      1 Concourse Parkway NE, Suite 200.
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Atlanta, GA 30328
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      1-800-845-6004
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      <DangerouslySetHtmlContent
+        html="<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>"
+      />
+    </Text>
+  </Col>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    I understand that:
+  </Text>
+  <ul
+    className="ul-list"
+  >
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        To the extent a Report is requested from First Advantage, information contained in such Report will be used solely to determine my eligibility for employment.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        Information obtained by First Advantage, and included in any Report, may be obtained through a variety of means, including inspection of lawfully available documents and information and/or direct or indirect contact and interviews with former employers, schools, financial institutions, landlords, public agencies, and others such as my neighbors, friends, and associates with whom I am acquainted and who may have such knowledge.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        Investigation(s) to be conducted by First Advantage, the results of which may be included in any Report provided to Amazon, may include various types of information about me regarding my character, general reputation, personal characteristics or mode of living, employment and work history, education, driving record, and criminal record, subject to any limitations imposed by applicable federal and state law.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        Per California Civil Code § 1785 et seq. and § 1786 et seq., if any Report is requested by Amazon on me, I may view the file First Advantage maintains on me during its regular office hours. I understand that I also may (1) obtain a copy of this file, upon submitting proper identification and paying the copying costs, by certified mail or by appearing at First Advantage’s offices in person during its regular office hours after providing reasonable advance notice of my planned appearance; and (2) receive a summary of this file from First Advantage over the telephone, at my expense, upon submitting proper identification and a written request to First Advantage for telephone disclosure. I understand that First Advantage has trained personnel available to explain its file to me, including any coded information, and, if I appear in person at First Advantage’s offices, I may be accompanied by one other person so long as that person furnishes proper identification to First Advantage.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        <DangerouslySetHtmlContent
+          html="Information about First Advantage's privacy practices is available at <a href='https://fadv.com/privacy-policy/' target='_blank' rel='noopener noreferrer'>https://fadv.com/privacy-policy/</a>."
+        />
+      </Text>
+    </li>
+  </ul>
   <DetailedCheckbox
     checked={false}
     onChange={[Function]}
