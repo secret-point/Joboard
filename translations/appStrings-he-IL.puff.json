@@ -296,6 +296,10 @@
       "value" : "סגירה.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "דרישות המשרה",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "צעדים שנותרו",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "יש לספק את הרשאת הגישה והמידע הדרושים לבדיקת רקע.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "גילוי חוק אשראי הוגן",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "אישורים והרשאות של חוק דיווח אשראי לא הוגן ואישורים לבדיקת רקע",
@@ -2259,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "משהו השתבש עם שרת websocket. יש לנסות שוב או לרענן את הדפדפן.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "שם מלא קודם:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "מזהה CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

@@ -296,6 +296,10 @@
       "value" : "閉じる。",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "職務要件",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "残りのステップ",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "身元調査に必要な承認と情報を提供してください。",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "公正信用報告法の開示",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "非公正信用報告法の承認と身元調査の承認",
@@ -2259,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Websocketサーバーに問題が発生しました。もう一度やり直すか、ブラウザを更新してください。",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "以前のフルネーム:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

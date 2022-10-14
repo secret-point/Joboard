@@ -320,10 +320,6 @@
       "value" : "Please provide authorisation and information needed for a background check.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Fair Credit Report Act Disclosure",
-      "note" : "Text for the FCRA step card title"
-    },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Non-Fair Credit Reporting Act Acknowledgments and Authorisations for Background Check",
       "note" : "Text for the NON-FCRA step card title"
@@ -2259,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Something went wrong with the websocket server. Please try again or refresh the browser.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Previous full name:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

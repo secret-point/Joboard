@@ -320,10 +320,6 @@
       "value" : "कृपया पार्श्वभूमी तपासणीसाठी आवश्यक असलेली अधिकृतता आणि माहिती प्रदान करा.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "फेअर क्रेडिट रिपोर्ट अ‍ॅक्ट डीसक्लोजर",
-      "note" : "Text for the FCRA step card title"
-    },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "नॉन-फेअर क्रेडिट रिपोर्टिंग अ‍ॅक्ट पोचपावती आणि पार्श्वभूमी तपासणीसाठी अधिकृतता",
       "note" : "Text for the NON-FCRA step card title"
@@ -2259,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "वेबसॉकेट सर्व्हरमध्ये काहीतरी गडबड झाली. कृपया पुन्हा प्रयत्न करा किंवा ब्राउझर रीफ्रेश करा.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "मागील पूर्ण नाव:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

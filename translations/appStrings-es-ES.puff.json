@@ -296,6 +296,10 @@
       "value" : "Cerrar.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Requisitos laborales",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Pasos restantes",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Proporciona la autorización y la información necesaria para una comprobación de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Comunicación de la Ley de Informe Justo de Crédito",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconocimientos y autorizaciones para la comprobación de antecedentes fuera de la Ley de Informe Justo de Crédito.",

@@ -296,6 +296,10 @@
       "value" : "Cerrar.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "Requisitos del empleo",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Pasos restantes",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Proporciona la autorización e información necesarias para una verificación de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Divulgación según la Ley de Informe Justo de Crédito",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Documentos de Aceptación y Autorizaciones para verificación de antecedentes según la Ley de Informe Justo de Crédito que no se usan para crédito o empleo",
@@ -2259,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Algo salió mal con el servidor websocket. Inténtalo de nuevo o actualiza el navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nombre completo anterior:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID de CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

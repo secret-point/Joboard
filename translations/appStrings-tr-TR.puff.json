@@ -296,6 +296,10 @@
       "value" : "Kapat.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "İş gereksinimleri",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "Kalan adımlar",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Lütfen geçmiş kontrolü için gerekli yetki ve bilgileri sağlayın.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Adil Kredi Raporu Yasası Açıklaması",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Adil Olmayan Kredi Raporlama Yasası Onayları ve Geçmiş Kontrolü için Yetkiler",
@@ -2259,6 +2259,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Websocket sunucusunda bir sorun oluştu. Lütfen tekrar deneyin veya tarayıcıyı yenileyin.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Önceki tam adı:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

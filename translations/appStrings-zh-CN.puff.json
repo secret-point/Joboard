@@ -296,6 +296,10 @@
       "value" : "关闭。",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "职位要求",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "剩下的步骤",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "请提供背景调查所需的授权和信息。",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "《Fair Credit Report Act Disclosure（公平信用报告法公开内容）》",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "《Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check（用于背景调查的非公平信用报告法的确认书和授权书）》",

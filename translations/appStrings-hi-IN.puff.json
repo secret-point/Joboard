@@ -296,6 +296,10 @@
       "value" : "बंद करें.",
       "note" : "Text for contingent offer meaning popover close button"
     },
+    "BB-ContingencyOffer-job-requirement-Section-title" : {
+      "value" : "नौकरी की जरूरतें",
+      "note" : "Text for job requirement section on contingent offer page"
+    },
     "BB-ContingencyOffer-remaining-steps-container-title" : {
       "value" : "शेष चरण",
       "note" : "Text for the remaining steps container title text"
@@ -319,10 +323,6 @@
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "कृपया बॅकग्राउंड की जांच के लिए ज़रूरी प्राधिकरण और जानकारी प्रदान करें.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
-    },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "फेयर क्रेडिट रिपोर्ट अधिनियम डिस्क्लोजर",
-      "note" : "Text for the FCRA step card title"
     },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "बैकग्राउंड की जांच के लिए नॉन-फेयर क्रेडिट रिपोर्टिंग अधिनियम की स्वीकृतियां और प्राधिकरण",

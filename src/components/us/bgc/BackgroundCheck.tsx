@@ -178,7 +178,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
             </Col>
 
             <InfoStepCard
-                title={t('BB-BGC-page-fcra-step-card-title', 'Fair Credit Report Act Disclosure')}
+                title={t('BB-BGC-fcra-disclosure-bgc-form-title', 'Fair Credit Reporting Act Consumer Report Disclosure')}
                 expandedContent={renderFCRAExpandedContent()}
                 stepName={BGC_STEPS.FCRA}
                 infoCardStepStatus={stepConfig[BGC_STEPS.FCRA]}

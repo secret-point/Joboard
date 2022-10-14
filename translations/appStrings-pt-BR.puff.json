@@ -320,10 +320,6 @@
       "value" : "Forneça a autorização e as informações necessárias para uma verificação de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Declaração da Lei de Relatórios de Crédito Justo",
-      "note" : "Text for the FCRA step card title"
-    },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconhecimentos e autorizações da Lei de Relatórios de Crédito Não Justo para verificação de antecedentes",
       "note" : "Text for the NON-FCRA step card title"
@@ -2259,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Ocorreu um erro com o servidor websocket. Tente novamente ou atualize o navegador.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Nome completo anterior:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "ID DO CURP:",
+      "note" : "Text for CRUP title"
     }
   }
 }

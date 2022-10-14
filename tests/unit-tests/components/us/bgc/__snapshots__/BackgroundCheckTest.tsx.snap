@@ -76,7 +76,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
     }
     stepIndex={1}
     stepName="FCRA"
-    title="Fair Credit Report Act Disclosure"
+    title="Fair Credit Reporting Act Consumer Report Disclosure"
   />
   <Connect(InfoStepCard)
     expandedContent={<Memo(Connect(NonFcraDisclosure)) />}

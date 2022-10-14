@@ -320,10 +320,6 @@
       "value" : "Angiv tilladelse og de nødvendige oplysninger til en baggrundskontrol.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
     },
-    "BB-BGC-page-fcra-step-card-title" : {
-      "value" : "Oplysning om Fair Credit Report Act",
-      "note" : "Text for the FCRA step card title"
-    },
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Anerkendelser og tilladelser til baggrundsundersøgelse i henhold til Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
@@ -2259,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Noget gik galt med websocket-serveren. Prøv igen, eller opdater browseren.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Tidligere fulde navn:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP-ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }
