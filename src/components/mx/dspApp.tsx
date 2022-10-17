@@ -12,7 +12,7 @@ import AppLoader from "../common/AppLoader";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
 import ContingencyOffer from "../us/contingentOffer/ContingentOffer";
-import BackgroundCheck from "../us/bgc/BackgroundCheck";
+import BackgroundCheck from "../mx/bgc/BackgroundCheck";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
 import Nhe from "../us/nhe/Nhe";

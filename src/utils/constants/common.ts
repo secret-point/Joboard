@@ -290,6 +290,19 @@ export const IdNumberBgcFormConfig: FormInputItem = {
     errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-national-id-number-error-text',
 }
 
+export const MXIdNumberBgcFormConfig: FormInputItem = {
+    labelText: "CURP ID",
+    dataKey: 'additionalBackgroundInfo.idNumber',
+    required: true,
+    type: 'text',
+    regex: '^[A-Za-z0-9]{18}$',
+    id: "idNumberInput",
+    name: 'idNumber',
+    errorMessage: 'Please enter a valid 18 digits CURP ID without dash',
+    labelTranslationKey: 'BB-BGC-MX-Additional-bgc-form-national-id-number-label-text',
+    errorMessageTranslationKey: 'BB-BGC-MX-Additional-bgc-form-national-id-number-error-text',
+}
+
 export const accentedChars = "À-ÖØ-öø-ÿ";  // for Spanish
 export const specialChars = `-!${accentedChars}`;  // allow - and ! for the moment
 export const digits = "0-9";  // same as \d
@@ -710,9 +723,14 @@ export const ProtectedVeteranDefinitionList: {title: string; titleTranslationKey
 ]
 
 export const SocialSecurityNumberValue = 'United States - Social Security Number'
+export const MXCRUPValue = 'Mexico - CURP'
 
 export const CountrySelectOptions = [
     { showValue: 'United States', value: 'United States', translationKey: 'BB-Country-United-States', countryCode: 'US' }
+]
+
+export const MXCountrySelectOptions = [
+    { showValue: 'Mexico', value: 'Mexico', translationKey: 'BB-Country-Mexico', countryCode: 'MX' }
 ]
 
 export const NationIdTypeSelectOptions = [
@@ -739,6 +757,15 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
     HasPreviouslyWorkedAtAmazonRadioConfig,
     ConvictionInfoRadioConfig,
     ConvictionDetailConfig,
+    PreviousLegalNameFormConfig
+]
+
+export const MXAdditionalBGCFormConfig: FormInputItem[] = [
+    ...AdditionalBGCFormConfigPart1,
+    ...AdditionalBGCFormConfigPart2,
+    ...PreviousWorkedAtAmazonBGCFormConfig,
+    MXIdNumberBgcFormConfig,
+    HasPreviouslyWorkedAtAmazonRadioConfig,
     PreviousLegalNameFormConfig
 ]
 

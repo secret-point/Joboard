@@ -648,6 +648,14 @@ export interface BgcStepConfig {
     [BGC_STEPS.NON_FCRA]: InfoCardStepStatus
 }
 
+export interface BgcMXStepConfig {
+    completedSteps: BGC_STEPS[];
+    [BGC_STEPS.ADDITIONAL_BGC]: InfoCardStepStatus;
+    [BGC_STEPS.NON_FCRA]: InfoCardStepStatus
+}
+
+export type BgcStepConfigType = BgcStepConfig | BgcMXStepConfig
+
 type SelfIdentificationStepType = {[key in SELF_IDENTIFICATION_STEPS]: InfoCardStepStatus};
 
 export interface SelfIdentificationConfig extends Partial<SelfIdentificationStepType> {
@@ -786,7 +794,7 @@ export interface InfoCardStepStatus {
 export interface NonFcraFormErrorStatus {
     hasError: boolean;
     ackESignHasError: boolean;
-    noticeESignHasError: boolean;
+    noticeESignHasError?: boolean;
 }
 export interface GetNheTimeSlotRequestDs {
     requisitionServiceScheduleDetails: {

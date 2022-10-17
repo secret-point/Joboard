@@ -30,7 +30,7 @@ import { CS_DOMAIN_LIST } from "../constants";
 import { METRIC_NAME } from "../constants/adobe-analytics";
 import { initLogger } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
-import { initScheduleState } from "../reducers/bgc.reducer";
+import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
 import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import store, { history } from "../store/store";
 import { ApiError } from "./api/types";
@@ -45,7 +45,7 @@ import {
     CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,
-    initScheduleStateFilters,
+    initScheduleStateFilters, MXAdditionalBGCFormConfig, MXCountrySelectOptions,
     NameRegexValidator,
     newBBUIPathName,
     UserIdValidator,
@@ -68,7 +68,7 @@ import {
     Address,
     AlertMessage,
     ApiErrorMessage,
-    Application,
+    Application, BgcMXStepConfig,
     BgcStepConfig,
     Candidate,
     CandidateInfoErrorState,
@@ -439,6 +439,56 @@ export const validateUserIdFormat = (userId: string): boolean => {
     return new RegExp(UserIdValidator).test(userId);
 }
 
+export const handleUInitiateMXBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
+    const isDspEnabled = applicationData?.dspEnabled;
+    const applicationAdditionalBgcInfo = applicationData.additionalBackgroundInfo;
+    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions);
+    let isAdditionalBgcCompleted: boolean;
+    const { NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
+    const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
+
+    if(isDspEnabled) {
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo);
+    }
+    else {
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) && isAdditionalBgcInfoValid(applicationAdditionalBgcInfo);
+    }
+
+    let stepConfig: BgcMXStepConfig = { ...initScheduleMXState.stepConfig as BgcMXStepConfig }
+
+    if(isNonFcraCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [...stepConfig.completedSteps, NON_FCRA],
+            [NON_FCRA]: {
+                status: COMPLETED,
+                editMode: false
+            },
+            [ADDITIONAL_BGC]: {
+                status: ACTIVE,
+                editMode: false
+            }
+        }
+    }
+
+    // Click next of additional background information form will complete task.
+    // Prevent user from edit additional background information before isFcraCompleted and isNonFcraCompleted.
+    if(isNonFcraCompleted && isAdditionalBgcCompleted) {
+        stepConfig = {
+            ...stepConfig,
+            completedSteps: [...stepConfig.completedSteps, ADDITIONAL_BGC],
+            [ADDITIONAL_BGC]: {
+                status: COMPLETED,
+                editMode: false
+            }
+        }
+    }
+
+    const request: BgcMXStepConfig = stepConfig;
+
+    boundUpdateStepConfigAction(request);
+}
+
 export const handleUInitiateBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
     const isDspEnabled = applicationData?.dspEnabled;
     const applicationAdditionalBgcInfo = applicationData.additionalBackgroundInfo;
@@ -455,7 +505,7 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
         isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) && isAdditionalBgcInfoValid(applicationAdditionalBgcInfo);
     }
 
-    let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig }
+    let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig as BgcStepConfig }
 
     if(isFcraCompleted) {
         stepConfig = {
@@ -673,9 +723,46 @@ export const handleSubmitNonFcraBGC =
         }
     }
 
+export const handleMXSubmitNonFcraBGC =
+    ( applicationData: Application, ackEsign: string, requestedCopyOfBGC: boolean, stepConfig: BgcMXStepConfig, bgcVendorType: BGC_VENDOR_TYPE ) => {
+        if(applicationData) {
+            const updateApplicationPayload = {
+                nonFcraQuestions: {
+                    nonFcraAcknowledgementEsign: {
+                        signature: ackEsign.trim(),
+                    },
+                    requestedCopyOfBackgroundCheck: requestedCopyOfBGC,
+                    bgcVendorType
+                }
+            }
+
+            const updateApplicationRequest = createUpdateApplicationRequest(applicationData, UPDATE_APPLICATION_API_TYPE.NON_FCRA_BGC, updateApplicationPayload);
+            boundUpdateApplicationDS(updateApplicationRequest, () => {
+                handleMXUpdateNonFCRABGCStep(stepConfig);
+            })
+        }
+    }
+
 export const handleUpdateNonFCRABGCStep = (stepConfig: BgcStepConfig) => {
     const { completedSteps } = stepConfig;
     const request: BgcStepConfig = {
+        ...stepConfig,
+        completedSteps: [...completedSteps, BGC_STEPS.NON_FCRA],
+        [BGC_STEPS.NON_FCRA]: {
+            status: INFO_CARD_STEP_STATUS.COMPLETED,
+            editMode: false
+        },
+        [BGC_STEPS.ADDITIONAL_BGC]: {
+            status: INFO_CARD_STEP_STATUS.ACTIVE,
+            editMode: false
+        }
+    }
+    boundUpdateStepConfigAction(request);
+}
+
+export const handleMXUpdateNonFCRABGCStep = (stepConfig: BgcMXStepConfig) => {
+    const { completedSteps } = stepConfig;
+    const request: BgcMXStepConfig = {
         ...stepConfig,
         completedSteps: [...completedSteps, BGC_STEPS.NON_FCRA],
         [BGC_STEPS.NON_FCRA]: {
@@ -728,6 +815,23 @@ export const validateNonFcraSignatures = ( applicationData: Application, nonFcra
     return errorStatus
 }
 
+export const validateMXNonFcraSignatures = ( applicationData: Application, nonFcraAckEsign: string ): NonFcraFormErrorStatus => {
+    let errorStatus: NonFcraFormErrorStatus = {
+        hasError: false,
+        ackESignHasError: false,
+    }
+
+    if(!validateName(nonFcraAckEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            ackESignHasError: true
+        }
+    }
+
+    return errorStatus
+}
+
 export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => {
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { COMPLETED } = INFO_CARD_STEP_STATUS;
@@ -737,6 +841,16 @@ export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => 
 
     return fcraStatus.status === COMPLETED && !fcraStatus.editMode &&
         nonFcraStatus.status === COMPLETED && !nonFcraStatus.editMode &&
+        addBgcStatus.status === COMPLETED && !addBgcStatus.editMode
+}
+
+export const bgcMXShouldDisplayContinue = (stepConfig: BgcMXStepConfig): boolean => {
+    const { NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
+    const { COMPLETED } = INFO_CARD_STEP_STATUS;
+    const nonFcraStatus = stepConfig[NON_FCRA];
+    const addBgcStatus = stepConfig[ADDITIONAL_BGC];
+
+    return nonFcraStatus.status === COMPLETED && !nonFcraStatus.editMode &&
         addBgcStatus.status === COMPLETED && !addBgcStatus.editMode
 }
 
@@ -822,11 +936,53 @@ export const handleSubmitAdditionalBgc =
         }
     }
 
+export const handleMXSubmitAdditionalBgc =
+    ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState, stepConfig: BgcMXStepConfig ) => {
+        const { ADDITIONAL_BGC } = UPDATE_APPLICATION_API_TYPE;
+
+        if(candidatePatchRequest.additionalBackgroundInfo?.address) {
+            const countryName = candidatePatchRequest.additionalBackgroundInfo.address?.country || "";
+            candidatePatchRequest.additionalBackgroundInfo.address.countryCode = getMXCountryCodeByCountryName(countryName);
+        }
+
+        const patch: CandidatePatchRequest = { ...candidatePatchRequest };
+        const verifyInfo = verifyBasicInfo(patch, formError, MXAdditionalBGCFormConfig);
+        boundUpdateCandidateInfoError(verifyInfo.formError);
+        const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
+        const isOver18 = isDOBOverEighteen(dob);
+        if(!verifyInfo.hasError && isOver18) {
+            //Bound update additional info all
+            const payload = {
+                candidate: candidatePatchRequest.additionalBackgroundInfo
+            }
+            const request: UpdateApplicationRequestDS =
+                createUpdateApplicationRequest(applicationData, ADDITIONAL_BGC, payload);
+            boundUpdateApplicationDS(request, (applicationData: Application) => {
+                onCompleteTaskHelper(applicationData);
+                handleMXUpdateAdditionalBGCStep(stepConfig);
+            })
+        }
+    }
+
 export const handleUpdateAdditionalBGCStep = (stepConfig: BgcStepConfig) => {
     const { completedSteps } = stepConfig;
     const request: BgcStepConfig = {
         ...stepConfig,
         completedSteps: [...completedSteps, BGC_STEPS.FCRA, BGC_STEPS.ADDITIONAL_BGC],
+        [BGC_STEPS.NON_FCRA]: {
+            status: INFO_CARD_STEP_STATUS.COMPLETED,
+            editMode: false
+        }
+    }
+
+    boundUpdateStepConfigAction(request);
+}
+
+export const handleMXUpdateAdditionalBGCStep = (stepConfig: BgcMXStepConfig) => {
+    const { completedSteps } = stepConfig;
+    const request: BgcMXStepConfig = {
+        ...stepConfig,
+        completedSteps: [...completedSteps, BGC_STEPS.ADDITIONAL_BGC],
         [BGC_STEPS.NON_FCRA]: {
             status: INFO_CARD_STEP_STATUS.COMPLETED,
             editMode: false
@@ -1274,6 +1430,11 @@ export const reverseMappingTranslate = (value: string | undefined) => {
 
 export const getCountryCodeByCountryName = (countryName: string): string => {
     const country = CountrySelectOptions.filter(country => country.value === countryName);
+    return country.length ? country[0].countryCode : "";
+}
+
+export const getMXCountryCodeByCountryName = (countryName: string): string => {
+    const country = MXCountrySelectOptions.filter(country => country.value === countryName);
     return country.length ? country[0].countryCode : "";
 }
 

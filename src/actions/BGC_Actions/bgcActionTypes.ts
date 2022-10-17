@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { BgcStepConfig } from "../../utils/types/common";
+import { BgcStepConfigType } from "../../utils/types/common";
 
 export enum BGC_ACTION_TYPE {
     UPDATE_STEP_CONFIG = "UPDATE_STEP_CONFIG"
@@ -7,7 +7,7 @@ export enum BGC_ACTION_TYPE {
 
 export interface UpdateStepConfigAction extends Action {
     type: BGC_ACTION_TYPE.UPDATE_STEP_CONFIG,
-    payload: BgcStepConfig
+    payload: BgcStepConfigType
 }
 
 export type BGCStepConfigActions =

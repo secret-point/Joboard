@@ -27,6 +27,7 @@ import { FCRA_DISCLOSURE_TYPE } from "../../../utils/enums/common";
 import { checkAndBoundGetApplication, getLocale, handleSubmitFcraBGC, handleWithdrawFcraBGC, hideHeaderFooter, showHeaderFooter, validateName } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../DebouncedButton";
+import { BgcStepConfig } from "../../../utils/types/common";
 
 interface MapStateToProps {
     job: JobState;
@@ -43,7 +44,7 @@ type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
 
 export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
     const { job, application, schedule, bgc } = props;
-    const { stepConfig } = bgc;
+    const stepConfig = bgc.stepConfig as BgcStepConfig;
     const applicationData = application.results;
     const fcraQuestions = applicationData?.fcraQuestions;
 

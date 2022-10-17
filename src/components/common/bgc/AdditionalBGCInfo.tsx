@@ -19,7 +19,7 @@ import {
   NationIdTypeSelectOptions,
   SocialSecurityNumberValue
 } from "../../../utils/constants/common";
-import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
+import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption, BgcStepConfig } from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -68,7 +68,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     const { candidatePatchRequest, formError } = candidate;
     const { candidateData } = candidate.results;
     const { scheduleDetail } = schedule.results;
-    const { stepConfig } = bgc;
+    const stepConfig = bgc.stepConfig as BgcStepConfig;
     const applicationData = application.results;
     const additionalBgc = candidateData?.additionalBackgroundInfo || {};
     const pageName = METRIC_NAME.ADDITIONAL_BGC_INFO;
