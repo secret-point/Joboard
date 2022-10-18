@@ -36,13 +36,15 @@ import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate, getFeatureFlagValue, getLocale,
-  validateUserIdFormat
+  validateUserIdFormat,
+  getCountryCode
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
+import { thankYouPageRedirectTextBanner } from "../../../countryExpansionConfig";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -278,7 +280,7 @@ export const ThankYou = (props: MapStateToProps) => {
             {t("BB-ThankYou-start-pre-hire-activities-title-text", "Get started on pre-hire activities")}
           </Text>
           <Text fontSize="T100">
-            {t("BB-ThankYou-fill-wotc-description-text", "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.")}
+            {t(thankYouPageRedirectTextBanner[getCountryCode()].translationKey, thankYouPageRedirectTextBanner[getCountryCode()].defaultString)}
           </Text>
 
           <DebouncedButton variant={ButtonVariant.Primary} onClick={handleGetStarted}>

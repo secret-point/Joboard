@@ -3,6 +3,8 @@ import { shallow } from "enzyme";
 import { useLocation } from 'react-router-dom';
 import { ThankYou } from "../../../../../src/components/us/thankYou/ThankYou";
 import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST_JOB_ID, TEST_JOB_STATE, TEST_SCHEDULE_ID, TEST_SCHEDULE_STATE } from "../../../../test-utils/test-data";
+import * as helper from '../../../../../src/utils/helper'
+import { CountryCode } from "../../../../../src/utils/constants/common";
 
 describe("ThankYou", () => {
   const mockLocation = {
@@ -13,6 +15,10 @@ describe("ThankYou", () => {
   };
   const mockUseLocation = useLocation as jest.Mock;
   mockUseLocation.mockReturnValue(mockLocation);
+
+  // Unit test can't get Katal {{Country}} development value.
+  const mockGetCountryCode = jest.spyOn(helper, 'getCountryCode')
+  mockGetCountryCode.mockReturnValue(CountryCode.US);
 
   it("should match snapshot", () => {
     const shallowWrapper = shallow(
