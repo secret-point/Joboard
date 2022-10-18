@@ -1,4 +1,5 @@
 import { createHashHistory } from "history";
+import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
 import { BGCState } from "../../src/reducers/bgc.reducer";
@@ -9,7 +10,7 @@ import { SelfIdentificationState } from "../../src/reducers/selfIdentification.r
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
 import { BGC_STEPS, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { Address, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation , Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
+import { Address, AlertMessage, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation , Schedule, ScheduleStateFilters } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -39,6 +40,13 @@ export const TEST_CANDIDATE_ADDRESS: Address = {
   country: "United States",
   zipcode: "94458",
   countryCode: "US"
+};
+
+export const TEST_BANNER_MESSAGE: AlertMessage = {
+  title: "TEST_TITLE",
+  isDismissible: true,
+  visible: true,
+  type: MessageBannerType.Informational
 };
 
 export const TEST_CANDIDATE: Candidate = {
