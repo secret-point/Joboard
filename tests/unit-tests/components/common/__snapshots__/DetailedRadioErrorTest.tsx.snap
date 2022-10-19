@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailedRadioError should match snapshot 1`] = `
+<Row
+  backgroundColor="#fef0ef"
+  padding="S300"
+>
+  <StatusIndicator
+    colorScheme="default"
+    iconAriaHidden={true}
+    messageText="Please check the box to proceed."
+    size="small"
+    status="negative"
+  />
+</Row>
+`;

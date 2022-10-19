@@ -19,7 +19,7 @@ interface MapStateToProps {
 let myInterval: any = null;
 let reserveTime: number;
 
-const CounterMessageBanner = (props: MapStateToProps) => {
+export const CounterMessageBanner = (props: MapStateToProps) => {
   const { application } = props;
 
   const [minutes, setMinutes] = useState(0);

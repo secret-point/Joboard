@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IFrame should match snapshot 1`] = `
+<Col
+  id="wotcIframeContainer"
+>
+  <iframe
+    className="iframe"
+    id="wotcIframe"
+    src="https://hiring.amazon.com/#/"
+    title="IFrame Test"
+  />
+</Col>
+`;

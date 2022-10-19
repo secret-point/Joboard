@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLoader should match snapshot 1`] = `
+<Col
+  className="AppLoader"
+>
+  <Spinner
+    colorScheme="default"
+    fontSize="T100"
+    loadingText="Loading..."
+    margin={0}
+    showText={false}
+    size="l"
+  />
+</Col>
+`;

@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplicationSteps should match snapshot 1`] = `
+<div
+  data-testid="applicationStepContainer"
+  id="applicationStepContainer"
+>
+  <div
+    className="steps steps-vertical"
+  >
+    <div
+      className="steps-item"
+      data-testid="step-0"
+      key="0"
+    >
+      <div
+        className="steps-item-container"
+      >
+        <div
+          className="steps-item-tail"
+        />
+        <div
+          className="steps-item-icon"
+        >
+          <span
+            className="steps-icon"
+          >
+            1
+          </span>
+        </div>
+        <div
+          className="steps-item-content"
+        >
+          <div
+            className="steps-item-title"
+          >
+            Select Job
+          </div>
+          <div
+            className="steps-item-description"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="steps-item"
+      data-testid="step-1"
+      key="1"
+    >
+      <div
+        className="steps-item-container"
+      >
+        <div
+          className="steps-item-tail"
+        />
+        <div
+          className="steps-item-icon"
+        >
+          <span
+            className="steps-icon"
+          >
+            2
+          </span>
+        </div>
+        <div
+          className="steps-item-content"
+        >
+          <div
+            className="steps-item-title"
+          >
+            Complete required documents
+          </div>
+          <div
+            className="steps-item-description"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="steps-item"
+      data-testid="step-2"
+      key="2"
+    >
+      <div
+        className="steps-item-container"
+      >
+        <div
+          className="steps-item-tail"
+        />
+        <div
+          className="steps-item-icon"
+        >
+          <span
+            className="steps-icon"
+          >
+            3
+          </span>
+        </div>
+        <div
+          className="steps-item-content"
+        >
+          <div
+            className="steps-item-title"
+          >
+            Schedule pre-hire appointment
+          </div>
+          <div
+            className="steps-item-description"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
