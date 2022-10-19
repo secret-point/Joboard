@@ -723,7 +723,7 @@ export const ProtectedVeteranDefinitionList: {title: string; titleTranslationKey
 ]
 
 export const SocialSecurityNumberValue = 'United States - Social Security Number'
-export const MXCRUPValue = 'Mexico - CURP'
+export const MXCRUPValue = 'Mexico - Unique Population Registry Key'
 
 export const CountrySelectOptions = [
     { showValue: 'United States', value: 'United States', translationKey: 'BB-Country-United-States', countryCode: 'US' }
