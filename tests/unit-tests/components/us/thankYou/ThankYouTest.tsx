@@ -2,9 +2,9 @@ import React from "react";
 import { shallow } from "enzyme";
 import { useLocation } from 'react-router-dom';
 import { ThankYou } from "../../../../../src/components/us/thankYou/ThankYou";
-import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST_JOB_ID, TEST_JOB_STATE, TEST_SCHEDULE_ID, TEST_SCHEDULE_STATE } from "../../../../test-utils/test-data";
 import * as helper from '../../../../../src/utils/helper'
 import { CountryCode } from "../../../../../src/utils/constants/common";
+import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST_JOB_ID, TEST_JOB_STATE, TEST_SCHEDULE_ID, TEST_SCHEDULE_STATE, TEST_THANK_YOU_STATE } from "../../../../test-utils/test-data";
 
 describe("ThankYou", () => {
   const mockLocation = {
@@ -27,6 +27,7 @@ describe("ThankYou", () => {
         job={TEST_JOB_STATE}
         application={TEST_APPLICATION_STATE}
         schedule={TEST_SCHEDULE_STATE}
+        thankYou={TEST_THANK_YOU_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
