@@ -277,7 +277,9 @@ export const TEST_SCHEDULE: Schedule = {
   totalPayRateL10N: "$8.90",
   employmentTypeL10N: "Regular",
   requiredLanguage:["en-US", "es-US"],
-  parsedTrainingDate: null,
+  parsedTrainingDate: '01-01-2023',
+  monthlyBasePay: 1000,
+  monthlyBasePayL10N: null,
 };
 
 export const TEST_SCHEDULE_STATE: ScheduleState = {

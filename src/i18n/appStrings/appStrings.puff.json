@@ -1530,6 +1530,18 @@
             "note": "Text for the schedule card possible start date or earlier text",
             "value": "(or earlier!)"
         },
+        "BB-Schedule-card-total-pay-per-hour-text": {
+            "note": "Text for the schedule card total pay per hour text",
+            "value": "/hour"
+        },
+        "BB-Schedule-card-total-pay-per-month-text": {
+            "note": "Text for the schedule card total pay per month text",
+            "value": "Up to {formattedMonthlyRate}/month"
+        },
+        "BB-Schedule-card-not-applicable": {
+            "note": "Text for the schedule card when no pay rate is provided",
+            "value": "N/A"
+        },
         "BB-Schedule-card-hours-per-week-text": {
             "note": "Text for the schedule card hours per week text",
             "value": "hours/week"

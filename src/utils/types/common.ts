@@ -333,6 +333,8 @@ export interface Schedule {
     employmentTypeL10N: string;
     requiredLanguage: string[] | null;
     parsedTrainingDate: string | null;
+    monthlyBasePay?: number | null;
+    monthlyBasePayL10N?: string | null;
 }
 
 export interface HoursPerWeek {

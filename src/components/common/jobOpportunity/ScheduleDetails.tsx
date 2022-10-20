@@ -13,15 +13,17 @@ import { Text } from "@amzn/stencil-react-components/text";
 import moment from "moment";
 import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
-import { CountryCode, localeToLanguageList } from "../../../utils/constants/common";
+import { localeToLanguageList, CountryCode, PayRateType } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import {
   formatFlexibleTrainingDate,
   getFeatureFlagValue,
   getLocale,
   renderScheduleFullAddress,
-  getLocaleDateFormatFix,
-  getCountryCode
+  getSpanishLocaleDateFormatter,
+  getPayRateCountryConfig,
+  getCountryCode,
+  formatMonthlyBasePayHelper
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
@@ -48,13 +50,15 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     totalPayRateL10N,
     parsedTrainingDate,
     signOnBonusL10N,
+    monthlyBasePay,
+    monthlyBasePayL10N
   } = scheduleDetail;
 
   const countryCode = getCountryCode();
 
   const renderStartDate = () => {
     const startDate = `${moment(firstDayOnSiteL10N || firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;
-    return getLocaleDateFormatFix(startDate);
+    return getSpanishLocaleDateFormatter(startDate);
   }
 
   const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
@@ -80,14 +84,15 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     return languageList.join(", ");
   };
 
-  const displayPayRate = () => {
-    switch (countryCode) {
-      case CountryCode.MX:
-        // TODO: Check with backend which field has the total monthly pay
-        return <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} /{t("BB-Common-month", "month")}</Text>;
-      default:
-        return <Text fontSize="T100">{totalPayRateL10N || `${currencyCode}${totalPayRate}`} /{t("BB-Common-hour", "hour")}</Text>;
+  const renderPayRateByLocale = () => {
+    if (getPayRateCountryConfig(getCountryCode()).payRateType === PayRateType.monthMax) {
+      const monthlyRate = monthlyBasePayL10N ? monthlyBasePayL10N : formatMonthlyBasePayHelper(monthlyBasePay, currencyCode);
+      const formattedMonthlyRate = currencyCode && monthlyRate ? `${currencyCode}${monthlyRate}` : null;
+      return formattedMonthlyRate ? t(`BB-Schedule-card-total-pay-per-month-text`, `Up to ${formattedMonthlyRate}/month`, {formattedMonthlyRate}) : t(`BB-Schedule-card-not-applicable`, `N/A`);
+    } else {
+      return `${totalPayRateL10N || currencyCode + totalPayRate} ${t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}`
     }
+ 
   };
 
   return (
@@ -111,7 +116,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
       {parsedTrainingDate &&
         <Col gridGap={5} alignItems="left" padding={{ left:'S400' }} >
           <Text fontSize="T200" style={{ fontStyle:"italic" }}>{shift}</Text>
-          {renderShiftDate()}
+          <Text fontSize="T100">{renderShiftDate()}</Text>
         </Col>
       }
 
@@ -119,24 +124,22 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight='bold'>{t("BB-Schedule-card-pay-rate","Pay rate")}: </Text>
-          {displayPayRate()}
+          <Text fontSize="T100">{renderPayRateByLocale()}</Text>
         </Row>
       </Row>
 
-      {/* MX specific, only visible on MX */}
-      {countryCode === CountryCode.MX && signOnBonusL10N &&
+      {getPayRateCountryConfig(getCountryCode()).payRateType === PayRateType.monthMax && signOnBonusL10N &&
         <Row gridGap={10} alignItems="center">
           <Row>
             <img src={LightningIcon} height="20px" width="20px"/>
           </Row>
           <Row gridGap={3} alignItems="center">
             <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-sign-on-bonus", "One-time sign on bonus")}: </Text>
-            {/* TODO: Check with backend which field has the monthly pay for sign up bonus */}
-            <Text fontSize="T100">MXN{signOnBonusL10N}</Text>
+            <Text fontSize="T100">{currencyCode + signOnBonusL10N}</Text>
           </Row>
         </Row>
       }
-
+      
       <Row gridGap={10} alignItems="center">
         <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
@@ -166,7 +169,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       </Row>
       }
-
+      
       <Row gridGap={10} alignItems="center">
         <Row>
           <img src={LocationIcon} height="20px" width="20px"/>
