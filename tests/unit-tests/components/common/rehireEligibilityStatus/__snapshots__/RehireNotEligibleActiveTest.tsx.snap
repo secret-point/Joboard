@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RehireNotEligibleActive should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    We appreciate your recent job application! Unfortunately, you are not eligible for this particular position since you are already employed by Amazon.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    The good news? There are plenty of open opportunities that you can browse and apply for online. Here are a few of the ways you can explore your future career growth:
+  </Text>
+  <ul>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        For Agency or Seasonal conversions, visit amazon.com/conversions (http://amazon.com/conversions)
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        To request shift or location changes, reach out to your onsite team
+      </Text>
+    </li>
+  </ul>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Your local HR team or the Employee Resource Center (ERC) are the best resource for any questions. You can reach the ERC team 24/7 at 1-888-892-7180 (tel:18888927180).
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer!
+  </Text>
+</Col>
+`;

@@ -9,14 +9,14 @@ exports[`NotRehireEligible should match snapshot 1`] = `
     fontSize="T300"
     hyphens="none"
   >
-    Thank you for your interest in this position. Our records indicate you previously worked at Amazon and are not eligible for rehire based upon your previous Amazon employment record. As a result, we are unable to move forward with your candidacy at this time.
+    Thank you for your recent job application to Amazon. After careful consideration, we will not be moving forward with your job application.
   </Text>
   <Text
     font="primary"
     fontSize="T300"
     hyphens="none"
   >
-    Due to the termination reason, you can reapply 90 days after your last day worked at Amazon.
+    We value your time and wish you the best of luck in the future.
   </Text>
 </Col>
 `;

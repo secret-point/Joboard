@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import NotRehireEligible from "../../../../../src/components/common/rehireEligibilityStatus/Days365NotRehireEligible";
+import NotRehireEligible from "../../../../../src/components/common/rehireEligibilityStatus/NotRehireEligible";
 
 
 describe("NotRehireEligible", () => {
