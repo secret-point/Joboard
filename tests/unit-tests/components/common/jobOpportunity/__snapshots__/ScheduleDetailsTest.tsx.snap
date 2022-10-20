@@ -67,6 +67,40 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
       </Text>
     </Row>
   </Row>
+  <Col
+    alignItems="left"
+    gridGap={5}
+    padding={
+      Object {
+        "left": "S400",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Required training dates
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+        key=""
+      />
+    </Text>
+  </Col>
   <Row
     alignItems="center"
     gridGap={10}
@@ -94,9 +128,7 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
         fontSize="T100"
         hyphens="none"
       >
-        $8.90
-         /
-        month
+        Up to USD$1,000/month
       </Text>
     </Row>
   </Row>
@@ -129,8 +161,7 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
         fontSize="T100"
         hyphens="none"
       >
-        MXN
-        $5.00
+        USD$5.00
       </Text>
     </Row>
   </Row>
@@ -302,6 +333,40 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
       </Text>
     </Row>
   </Row>
+  <Col
+    alignItems="left"
+    gridGap={5}
+    padding={
+      Object {
+        "left": "S400",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Required training dates
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+        key=""
+      />
+    </Text>
+  </Col>
   <Row
     alignItems="center"
     gridGap={10}
@@ -329,9 +394,7 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
         fontSize="T100"
         hyphens="none"
       >
-        $8.90
-         /
-        hour
+        $8.90 /hour
       </Text>
     </Row>
   </Row>

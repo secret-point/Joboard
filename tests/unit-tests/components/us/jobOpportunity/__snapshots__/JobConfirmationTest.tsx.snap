@@ -82,7 +82,9 @@ exports[`JobConfirmation should match snapshot 1`] = `
         "jobId": "JOB-US-0000001234",
         "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
         "language": "English",
-        "parsedTrainingDate": null,
+        "monthlyBasePay": 1000,
+        "monthlyBasePayL10N": null,
+        "parsedTrainingDate": "01-01-2023",
         "postalCode": "94560",
         "requiredLanguage": Array [
           "en-US",

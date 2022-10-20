@@ -49,7 +49,9 @@ import {
     NameRegexValidator,
     newBBUIPathName,
     UserIdValidator,
-    ValueToI18nKeyMap
+    ValueToI18nKeyMap,
+    countryConfig,
+    countryConfigType
 } from "./constants/common";
 import {
     BGC_STEPS,
@@ -1534,7 +1536,7 @@ export const getCountryCode = (): CountryCode => {
     return "{{Country}}" as CountryCode || CountryCode.US;
 }
 
-export const getLocaleDateFormatFix = (date: String) => {
+export const getSpanishLocaleDateFormatter = (date: String) => {
     return getLocale().substring(0, 2) === 'es' ? date.charAt(0).toUpperCase() + date.slice(1).replace('.', '') : date;
 }
 
@@ -1555,5 +1557,21 @@ export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
         .map(item => moment(item.trim(), 'hh:mm A').locale(getLocale()).format('hh:mm A'))
         .join(" - ") : '';
 
-    return formattedDate && formattedTime ? `${getLocaleDateFormatFix(formattedDate)} ${formattedTime}` : "";
+    return formattedDate && formattedTime ? `${getSpanishLocaleDateFormatter(formattedDate)} ${formattedTime}` : "";
 };
+
+export const getPayRateCountryConfig = (countryCode: CountryCode): countryConfigType => {
+    return countryConfig[countryCode] || countryConfig[CountryCode.US]; 
+};
+
+export const formatMonthlyBasePayHelper = (monthlyBasePay?: number | null, currencyCode?: string | null) => {
+    const formattedMonthlyRate = currencyCode && monthlyBasePay ? new Intl.NumberFormat(getLocale(), {
+        style: 'currency',
+        currency: currencyCode,
+        minimumFractionDigits: monthlyBasePay % 1 === 0 ? 0 : 2,
+        currencyDisplay: 'narrowSymbol'
+      }).format(monthlyBasePay): null;
+    
+    return formattedMonthlyRate;
+}
+

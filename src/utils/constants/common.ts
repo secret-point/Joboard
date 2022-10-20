@@ -915,3 +915,19 @@ export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: Sel
     [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
     [CountryCode.US]: US_SelfIdentificationConfigSteps
 }
+
+export enum PayRateType {
+    hourMin = 'hourMin',
+    hourMax = 'hourMax',
+    monthMin = 'monthMin',
+    monthMax = 'monthMax'
+}
+  
+export interface countryConfigType {
+    payRateType: PayRateType
+}
+
+export const countryConfig: { [key: string]: countryConfigType } = {
+    [CountryCode.US] : {payRateType: PayRateType.hourMax},
+    [CountryCode.MX] : {payRateType: PayRateType.monthMax}, 
+};
