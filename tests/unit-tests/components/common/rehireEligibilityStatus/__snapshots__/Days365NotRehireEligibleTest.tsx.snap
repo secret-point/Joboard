@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Days365NotRehireEligible should match snapshot with jobDetail 1`] = `
+<Col
+  gridGap="S300"
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Thank you for your interest in the {jobTitle} position. Our records indicate you previously worked at Amazon and are not eligible for rehire based upon your previous Amazon employment record. As a result, we are unable to move forward with your candidacy at this time.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Due to the termination reason, you can reapply 90 days after your last day worked at Amazon.
+  </Text>
+</Col>
+`;
+
+exports[`Days365NotRehireEligible should match snapshot without jobDetail 1`] = `
+<Col
+  gridGap="S300"
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Thank you for your interest in this position. Our records indicate you previously worked at Amazon and are not eligible for rehire based upon your previous Amazon employment record. As a result, we are unable to move forward with your candidacy at this time.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Due to the termination reason, you can reapply 90 days after your last day worked at Amazon.
+  </Text>
+</Col>
+`;

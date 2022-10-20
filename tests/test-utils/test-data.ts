@@ -10,7 +10,7 @@ import { SelfIdentificationState } from "../../src/reducers/selfIdentification.r
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
 import { BGC_STEPS, BGC_VENDOR_TYPE, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { Address, AlertMessage, Candidate, DayHoursFilter, NHETimeSlot, NheTimeSlotLocation, Schedule } from "../../src/utils/types/common";
+import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule } from "../../src/utils/types/common";
 import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -150,6 +150,39 @@ export const TEST_CANDIDATE: Candidate = {
       assessmentStatusDateTime: "2022-07-15T22:26:38.546Z"
     }
   }
+};
+
+export const TEST_JOB2: Job = {
+  availableSchedules: { schedules: [] },
+  language: "eng",
+  dataSource: "",
+  requisitionType: "",
+  jobIdNumber: "001",
+  jobTitle: "Test Title",
+  jobType: "salaried",
+  employmentType: "full",
+  fullAddress: "",
+  country: "US",
+  city: "Seattle",
+  postalCode: "",
+  totalPayRateMin: 15,
+  totalPayRateMax: 35,
+  currencyCode: "USD",
+  tagLine: "",
+  letterOfIntent: "",
+  image: "",
+  jobPreviewVideo: "",
+  limitedTimeOffer: "",
+  featuredJob: false,
+  bonusJob: false,
+  jobQualification: "",
+  careerPortalURL: "",
+  blackbirdPortalURL: "",
+  postingStatus: "",
+  qualificationCriteria: [""],
+  assessmentType: "",
+  jobDescription: "",
+  jobId: TEST_JOB_ID
 };
 
 export const TEST_CANDIDATE_STATE: CandidateState = {
