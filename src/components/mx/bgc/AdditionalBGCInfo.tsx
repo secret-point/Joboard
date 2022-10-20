@@ -7,7 +7,7 @@ import {
 } from "@amzn/stencil-react-components/form";
 import PreviousLegalNameForm from "../../common/bgc/PreviousLegalNameForm";
 import {
-    AdditionalBGCFormConfigPart1,
+    MXAdditionalBGCFormConfigPart1,
     AdditionalBGCFormConfigPart2,
     MXCountrySelectOptions,
     MXCRUPValue,
@@ -227,7 +227,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         <Col>
             <PreviousLegalNameForm/>
             {
-                AdditionalBGCFormConfigPart1.map(config => {
+                MXAdditionalBGCFormConfigPart1.map(config => {
                     return (
                         <Col key={config.labelText} gridGap={15}>
                             {

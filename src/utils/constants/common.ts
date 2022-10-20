@@ -123,6 +123,41 @@ export const StatesSelectOptions: StateSelectOption[] = [
     { displayValue: 'WY -- Wyoming', value: 'Wyoming', translationKey: 'BB-States-wyoming', code: 'WY' },
 ]
 
+export const MXStatesSelectOptions: StateSelectOption[] = [
+    { displayValue: 'AGU -- Aguascalientes', value: 'Aguascalientes', translationKey: 'BB-MX-States-AGU', code: 'AGU' },
+    { displayValue: 'BCN -- Baja California', value: 'Baja California', translationKey: 'BB-MX-States-BCN', code: 'BCN' },
+    { displayValue: 'BCS -- Baja California Sur', value: 'Baja California Sur', translationKey: 'BB-MX-States-BCS', code: 'BCS' },
+    { displayValue: 'CAM -- Campeche', value: 'Campeche', translationKey: 'BB-MX-States-CAM', code: 'CAM' },
+    { displayValue: 'CHP -- Chiapas', value: 'Chiapas', translationKey: 'BB-MX-States-CHP', code: 'CHP' },
+    { displayValue: 'CHH -- Chihuahua', value: 'Chihuahua', translationKey: 'BB-MX-States-CHH', code: 'CHH' },
+    { displayValue: 'COA -- Coahuila', value: 'Coahuila', translationKey: 'BB-MX-States-COA', code: 'COA' },
+    { displayValue: 'COL -- Colima', value: 'Colima', translationKey: 'BB-MX-States-COL', code: 'COL' },
+    { displayValue: 'CMX -- Ciudad de México', value: 'Ciudad de México', translationKey: 'BB-MX-States-CMX', code: 'CMX' },
+    { displayValue: 'DUR -- Durango', value: 'Durango', translationKey: 'BB-MX-States-DUR', code: 'DUR' },
+    { displayValue: 'MEX -- Estado de México', value: 'Estado de México', translationKey: 'BB-MX-States-MEX', code: 'MEX' },
+    { displayValue: 'GUA -- Guanajuato', value: 'Guanajuato', translationKey: 'BB-MX-States-GUA', code: 'GUA' },
+    { displayValue: 'GRO -- Guerrero', value: 'Guerrero', translationKey: 'BB-MX-States-GRO', code: 'GRO' },
+    { displayValue: 'HID -- Hildago', value: 'Hildago', translationKey: 'BB-MX-States-HID', code: 'HID' },
+    { displayValue: 'JAL -- Jalisco', value: 'Jalisco', translationKey: 'BB-MX-States-JAL', code: 'JAL' },
+    { displayValue: 'MIC -- Michoacán', value: 'Michoacán', translationKey: 'BB-MX-States-MIC', code: 'MIC' },
+    { displayValue: 'MOR -- Morelos', value: 'Morelos', translationKey: 'BB-MX-States-MOR', code: 'MOR' },
+    { displayValue: 'NAY -- Nayarit', value: 'Nayarit', translationKey: 'BB-MX-States-NAY', code: 'NAY' },
+    { displayValue: 'NLE - Nuevo León', value: 'Nuevo León', translationKey: 'BB-MX-States-NLE', code: 'NLE' },
+    { displayValue: 'OAX -- Oaxaca', value: 'Oaxaca', translationKey: 'BB-MX-States-OAX', code: 'OAX' },
+    { displayValue: 'PUE -- Puebla', value: 'Puebla', translationKey: 'BB-MX-States-PUE', code: 'PUE' },
+    { displayValue: 'QUE -- Querétaro', value: 'Querétaro', translationKey: 'BB-MX-States-QUE', code: 'QUE' },
+    { displayValue: 'ROO -- Quintana Roo', value: 'Quintana Roo', translationKey: 'BB-MX-States-Roo', code: 'ROO' },
+    { displayValue: 'SLP -- San Luis Potosí', value: 'San Luis Potosí', translationKey: 'BB-MX-States-SLP', code: 'SLP' },
+    { displayValue: 'SIN -- Sinaloa', value: 'Sinaloa', translationKey: 'BB-MX-States-SIN', code: 'SIN' },
+    { displayValue: 'SON -- Sonora', value: 'Sonora', translationKey: 'BB-MX-States-SON', code: 'SON' },
+    { displayValue: 'TAB -- Tabasco', value: 'Tabasco', translationKey: 'BB-MX-States-TAB', code: 'TAB' },
+    { displayValue: 'TAM -- Tamaulipas', value: 'Tamaulipas', translationKey: 'BB-MX-States-TAM', code: 'TAM' },
+    { displayValue: 'TLA -- Tlaxcala', value: 'Tlaxcala', translationKey: 'BB-MX-States-TLA', code: 'TLA' },
+    { displayValue: 'VER -- Veracruz', value: 'Veracruz', translationKey: 'BB-MX-States-VER', code: 'VER' },
+    { displayValue: 'YUC -- Yucatán', value: 'Yucatán', translationKey: 'BB-MX-States-YUC', code: 'YUC' },
+    { displayValue: 'ZAC -- Zacatecas', value: 'Zacatecas', translationKey: 'BB-MX-States-ZAC', code: 'ZAC' },
+]
+
 export const ScheduleSortList: ScheduleSortBy[] = [
     {
         title: "Pay rate - Highest to Lowest",
@@ -381,7 +416,28 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-zipcode-error-text',
     },
-];
+]
+
+export const MXAdditionalBGCFormConfigPart1: FormInputItem[] = [
+    ...AdditionalBGCFormConfigPart1.slice(0, 3),
+    {
+        hasError: false,
+        labelText: 'State/province',
+        errorMessage: 'Please enter a valid state/province',
+        required: true,
+        name: 'State/province',
+        dataKey: 'additionalBackgroundInfo.address.state',
+        id: 'additionalBGCState',
+        type: 'select',
+        selectOptions: MXStatesSelectOptions,
+        labelTranslationKey: 'BB-BGC-Additional-bgc-form-state-label-text',
+        errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
+        placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-state-placeholder-text',
+        placeholder: 'Select a state',
+        regex: `^(?=\\S)[${alphanumeric} ]{1,}[${alphanumeric}]$`,
+    },
+    ...AdditionalBGCFormConfigPart1.slice(4)
+]
 
 export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
     {
@@ -760,8 +816,9 @@ export const AdditionalBGCFormConfig: FormInputItem[] = [
     PreviousLegalNameFormConfig
 ]
 
+//This is used for additional bgc page form validation
 export const MXAdditionalBGCFormConfig: FormInputItem[] = [
-    ...AdditionalBGCFormConfigPart1,
+    ...MXAdditionalBGCFormConfigPart1,
     ...AdditionalBGCFormConfigPart2,
     ...PreviousWorkedAtAmazonBGCFormConfig,
     MXIdNumberBgcFormConfig,
