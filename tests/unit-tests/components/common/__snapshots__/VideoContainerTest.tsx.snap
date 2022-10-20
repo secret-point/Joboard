@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoContainer should match snapshot 1`] = `
+<VideoContainer
+  id="TEST-ID"
+  onClick={[MockFunction]}
+  poster="Test User"
+  src="https://v.amazon.com"
+>
+  <div
+    className="video-container"
+    data-testid="video"
+  >
+    <div
+      className="videoPlayButton"
+    >
+      <button
+        data-testid="play-button"
+        onClick={[Function]}
+      >
+        <img
+          src="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/video_play_button.svg"
+        />
+      </button>
+    </div>
+    <video
+      controls={false}
+      data-testid="video-TEST-ID"
+      playsInline={true}
+      poster="Test User"
+      preload="metadata"
+    >
+      <source
+        src="https://v.amazon.com#t=0.1"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</VideoContainer>
+`;
