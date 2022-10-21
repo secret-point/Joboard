@@ -42,6 +42,14 @@
             "note": "Text for the button to select or confirm job",
             "value": "Select this job"
         },
+        "BB-JobOpportunity-pay-rate-month": {
+            "note": "Text for monthly pay rate per month suffix",
+            "value": "month"
+        },
+        "BB-JobOpportunity-pay-rate-hr": {
+            "note": "Text for monthly pay rate per hr suffix",
+            "value": "hr"
+        },
         "BB-StepHeader-view-progress-button": {
             "note": "Text for the button to select or confirm job",
             "value": "View progress"

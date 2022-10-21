@@ -11,11 +11,12 @@ import {
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Link } from "@amzn/stencil-react-components/link";
 import { Text } from "@amzn/stencil-react-components/text";
-import { renderScheduleFullAddress, routeToAppPageWithPath } from "../../../utils/helper";
+import { renderScheduleFullAddress, routeToAppPageWithPath, getPayRateCountryConfig, getCountryCode, formatMonthlyBasePayHelper } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import VideoContainer from "../VideoContainer";
+import { PayRateType } from "../../../utils/constants/common";
 
 interface JobConfirmationCardProps {
     schedule: Schedule;
@@ -32,8 +33,21 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
         scheduleText,
         totalPayRate,
         jobPreviewVideo,
-        scheduleBannerText
+        scheduleBannerText,
+        monthlyBasePay,
+        monthlyBasePayL10N,
+        totalPayRateL10N
     } = schedule;
+
+    const renderPayRateByLocale = () => {
+        if (getPayRateCountryConfig(getCountryCode()).payRateType === PayRateType.monthMax) {
+            const monthlyRate = monthlyBasePayL10N ? monthlyBasePayL10N : formatMonthlyBasePayHelper(monthlyBasePay, currencyCode);
+            const formattedMonthlyRate = currencyCode && monthlyRate ? `${currencyCode}${monthlyRate}` : null;
+            return formattedMonthlyRate ? `${formattedMonthlyRate}/${t(`BB-JobOpportunity-pay-rate-month`, `month`, {formattedMonthlyRate})}` : t(`BB-Schedule-card-not-applicable`, `N/A`);
+        } else {
+            return `${totalPayRateL10N || currencyCode + totalPayRate} /${t("BB-JobOpportunity-pay-rate-hr", "hr")}`;
+        }
+    };
 
     return (
         <Col className="jobConfirmationCardContainer">
@@ -56,7 +70,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconPaymentFill size={IconSize.ExtraSmall} aria-hidden={true} />
-                        <Text fontSize="T100">{`${currencyCode}${totalPayRate} /hr`}</Text>
+                        <Text fontSize="T100">{renderPayRateByLocale()}</Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconDocument size={IconSize.ExtraSmall} aria-hidden={true} />

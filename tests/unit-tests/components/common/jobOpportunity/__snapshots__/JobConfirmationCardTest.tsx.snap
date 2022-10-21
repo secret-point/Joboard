@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleDetails country code MX should match snapshot 1`] = `
+<Col
+  className="jobConfirmationCardContainer"
+>
+  <Row
+    className="jobConfirmationHeader"
+    gridGap={12}
+  >
+    <VideoContainer
+      id="jobVideo"
+      src="https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4"
+    />
+  </Row>
+  <Row
+    alignItems="center"
+    padding="S300"
+  >
+    <Col
+      gridGap={8}
+      width="95%"
+    >
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconClockFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconCalendarFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Possible Start Date: 2022-10-29 
+          <b>
+            (or earlier!)
+          </b>
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconPaymentFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          USD$1,000/month
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconDocument
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          16hrs/wk
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconGlobe
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          38811 Cherry Street, Newark, CA 94560
+        </Text>
+      </Row>
+    </Col>
+  </Row>
+  <Row
+    className="scheduleBannerText"
+    padding={
+      Object {
+        "bottom": "S300",
+        "left": "S300",
+        "right": "S300",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      Additional 5$ bonus schedule and 9$ Surge pay
+    </Text>
+  </Row>
+  <Row
+    alignItems="center"
+    className="jobDetailLink"
+    gridGap={8}
+    onClick={[Function]}
+    padding="S200"
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="medium"
+      hyphens="none"
+    >
+      Job requirement and benefits
+    </Text>
+    <IconArrowRight
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+  </Row>
+</Col>
+`;
+
+exports[`ScheduleDetails country code US should match snapshot 1`] = `
+<Col
+  className="jobConfirmationCardContainer"
+>
+  <Row
+    className="jobConfirmationHeader"
+    gridGap={12}
+  >
+    <VideoContainer
+      id="jobVideo"
+      src="https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4"
+    />
+  </Row>
+  <Row
+    alignItems="center"
+    padding="S300"
+  >
+    <Col
+      gridGap={8}
+      width="95%"
+    >
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconClockFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconCalendarFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Possible Start Date: 2022-10-29 
+          <b>
+            (or earlier!)
+          </b>
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconPaymentFill
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          $8.90 /hr
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconDocument
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          16hrs/wk
+        </Text>
+      </Row>
+      <Row
+        alignItems="center"
+        gridGap={5}
+      >
+        <IconGlobe
+          aria-hidden={true}
+          display="block"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          38811 Cherry Street, Newark, CA 94560
+        </Text>
+      </Row>
+    </Col>
+  </Row>
+  <Row
+    className="scheduleBannerText"
+    padding={
+      Object {
+        "bottom": "S300",
+        "left": "S300",
+        "right": "S300",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      Additional 5$ bonus schedule and 9$ Surge pay
+    </Text>
+  </Row>
+  <Row
+    alignItems="center"
+    className="jobDetailLink"
+    gridGap={8}
+    onClick={[Function]}
+    padding="S200"
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="medium"
+      hyphens="none"
+    >
+      Job requirement and benefits
+    </Text>
+    <IconArrowRight
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+  </Row>
+</Col>
+`;
