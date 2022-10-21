@@ -320,7 +320,7 @@ export const ThankYou = (props: MapStateToProps) => {
   )
 }
 
-const mapStateToProps = (state: MapStateToProps) => {
+export const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 
