@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "月",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "小时",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "您成为亚马逊员工之旅从这里开始。",
       "note" : "Text for PreConsentPage banner text"
@@ -1432,6 +1440,10 @@
       "value" : "在参加入职前面谈之前，请填写工作机会税额减免问卷。",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "在您预入职约谈之前，有一系列入职前活动需要完成。",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "马上开始吧",
       "note" : "Text for the thank you page let's get started button text"
@@ -1515,6 +1527,10 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "（或更早！）",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/小时",
+      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "小时/周",

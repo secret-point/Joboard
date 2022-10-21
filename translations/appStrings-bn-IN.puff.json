@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "মাস",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "ঘণ্টা",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazon Associate হওয়ার জন্য আপনার যাত্রা এখান থেকে শুরু।",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "মার্কিন যুক্তরাষ্ট্র",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "মেক্সিকো",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "আবেদন করার মাধ্যেম, আপনি কনফার্ম করছেন যে:",
@@ -320,6 +332,10 @@
       "value" : "ব্যাকগ্রাউন্ড চেক",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "কর্মসংস্থানের জন্য স্ক্রীনিং করার ব্যাপারে সম্মতি",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "একটি ব্যাকগ্রাউন্ড চেকের জন্য প্রয়োজনীয় অনুমোদন এবং তথ্য প্রদান করুন।",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "ব্যাকগ্রাউন্ড চেকের জন্য নন-ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট স্বীকৃতি এবং অনুমোদন",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "ব্যাকগ্রাউন্ড চেক, মেডিকেল চেক, এবং ড্রাগ টেস্ট-এর জন্য অনুমোদন",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "অতিরিক্ত ব্যাকগ্রাউন্ডের তথ্য",
@@ -428,8 +448,16 @@
       "value" : "জাতীয় পরিচয়পত্র নম্বর",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ড্যাশ ছাড়া একটি সঠিক 9 সংখ্যার সোশ্যাল সিকিউরিটি নাম্বার লিখুন",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ড্যাশ ছাড়া একটি কার্যকর 18 সংখ্যার CURP ID লিখুন",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : " আমার দ্বারা পৃথকভাবে প্রকাশিত এবং অনুমোদিত ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট-এর প্রকাশ এবং অনুমোদনের নথি হিসাবে, Amazon.com, Inc. বা এর সহযোগী সংস্থাগুলি বা সহযোগী সংস্থাগুলি (\"Amazon\") আমার উপর একটি ব্যাকগ্রাউন্ড চেক পরিচালনা করবে।",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. বা এর অধীনস্থ সংস্থাগুলি বা সহযোগী সংস্থাগুলি (\"Amazon\") আমার উপর একটি ব্যাকগ্রাউন্ড চেক পরিচালনা করবে।",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "নীচের আমার ই-স্বাক্ষরের মাধ্যমে, আমি প্রত্যয়ন করছি যে আমি এই নন-ফেয়ার ক্রেডিট রিপোর্টিং অ্যাক্ট এবং ব্যাকগ্রাউন্ড চেকের জন্য অনুমোদনের সমস্ত বিবৃতি পড়েছি, বুঝেছি এবং গ্রহণ করেছি। অনুগ্রহ করে নীচের ক্ষেত্রগুলিতে অনুরোধ করা তথ্যপ্রদান করে আপনার গ্রহণযোগ্যতা নির্দেশ করুন।",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "নীচের আমার ই-স্বাক্ষরের মাধ্যমে, আমি প্রত্যয়ন করছি যে আমি পড়েছি, বুঝতে পেরেছি এবং ব্যাকগ্রাউন্ড চেক, মেডিকেল চেক এবং ড্রাগ টেস্টের জন্য এই অনুমোদনের সমস্ত বিবৃতি মেনে নিয়েছি। অনুগ্রহ করে নীচের ক্ষেত্রগুলিতে অনুরোধ করা তথ্য প্রদান করে আপনি যে গ্রহন করেছেন সেটা নির্দেশ করুন।",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "অনুগ্রহ করে আপনার পুরো নামটি ই-স্বাক্ষর হিসাবে লিখুন",
@@ -1491,6 +1527,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(বা তার আগে!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ঘন্টা",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "{formattedMonthlyRate}/মাস পর্যন্ত",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "প্রযোজ্য নয়",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ঘন্টা/সপ্তাহ",

@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "月",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "時間",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazonアソシエイトになるための旅はここから始まります。",
       "note" : "Text for PreConsentPage banner text"
@@ -1404,6 +1412,10 @@
       "value" : "雇用前予約の前に、就労機会税額控除アンケートに記入してください。",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "雇用前予約を行う前に、一連の事前雇用活動を完了する必要があります。",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "さあ始めましょう",
       "note" : "Text for the thank you page let's get started button text"
@@ -1488,6 +1500,18 @@
       "value" : "(またはそれよりも早く)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/時間",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "最大{formattedMonthlyRate} /月",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "該当なし",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "時間/週",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1551,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "給与額",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "1回限りのサインオンボーナス",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "時間",

@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "maand",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "uur",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Je reis om een Amazon Partner te worden, begint hier.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "Verenigde Staten",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexico",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Door je aan te melden, bevestig je dat:",
@@ -320,6 +332,10 @@
       "value" : "Antecedentenonderzoek",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Toestemming voor indiensttredingsonderzoek",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Geef toestemming en informatie die nodig is voor een antecedentenonderzoek.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Erkenningen en autorisaties voor antecedentenonderzoek in het kader van de Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorisaties voor antecedentenonderzoek, medische controle en drugstest",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Aanvullende achtergrondinformatie",
@@ -428,8 +448,16 @@
       "value" : "Nationaal ID-nummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP-ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldig burgerservicenummer van 9 cijfers in zonder streepje",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Voer een geldige CURP-ID van 18 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Zoals bekendgemaakt en geautoriseerd door mij in het afzonderlijke Fair Credit Reporting Act Disclosure and Authorization Document, zal Amazon.com, Inc. of haar dochterondernemingen of gelieerde ondernemingen (\"Amazon\") een antecedentenonderzoek over mij uitvoeren.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. of haar dochterondernemingen of gelieerde ondernemingen (‘Amazon’) een antecedentenonderzoek over mij uitvoeren.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Met mijn elektronische handtekening hieronder verklaar ik dat ik alle verklaringen in de Non-Fair Credit Reporting Act in het kader van de erkenningen en autorisaties voor het antecedentenonderzoek heb gelezen, begrepen en aanvaard. Geef aan dat je akkoord gaat door de gevraagde informatie in de onderstaande velden in te voeren.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Met mijn elektronische handtekening hieronder verklaar ik dat ik alle verklaringen in deze autorisaties voor antecedentenonderzoek, medische controle en drugstest heb gelezen, begrepen en aanvaard. Geef aan dat u akkoord gaat door de gevraagde informatie in de onderstaande velden in te voeren.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Typ je volledige naam als elektronische handtekening",
@@ -1404,6 +1440,10 @@
       "value" : "Voordat je een afspraak maakt, vul je de vragenlijst voor belastingkrediet voor werkmogelijkheden in.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Vóór je afspraak voorafgaand aan de indiensttreding moet je voorafgaand aan de indiensttreding een reeks activiteiten voltooien.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Laten we aan de slag gaan",
       "note" : "Text for the thank you page let's get started button text"
@@ -1487,6 +1527,10 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(of eerder!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/uur",
+      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "uur/week",

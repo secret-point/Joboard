@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "month",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "hour",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Your journey to becoming an Amazon Associate starts here.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "United States",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexico",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "By applying, you confirm that:",
@@ -320,6 +332,10 @@
       "value" : "Background Check",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consent to employment screening",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Please provide authorisation and information needed for a background check.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Non-Fair Credit Reporting Act Acknowledgments and Authorisations for Background Check",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Authorisations for Background Check, Medical Check, and Drug Test",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Additional background information",
@@ -428,8 +448,16 @@
       "value" : "National ID Number",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Please enter a valid 9-digit social security number without dashes",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Please enter a valid 18-digit CURP ID without dash",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "As disclosed and authorised by me in the separate Fair Credit Reporting Act Disclosure and Authorisation Document, Amazon.com, Inc. or its subsidiaries or affiliates (“Amazon”) will conduct a background check on me.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. or its subsidiaries or affiliates (“Amazon”) will conduct a background check on me.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "By my eSignature below, I certify that I have read, understand and accept all statements in this Non-Fair Credit Reporting Act Acknowledgments and Authorisations For Background Check. Please signify your acceptance by entering the information requested in the fields below.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "By my eSignature below, I certify that I have read, understand and accept all statements in this Authorisations For Background Check, Medical Check and Drug Test. Please signify your acceptance by entering the information requested in the fields below.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Please type your full name as an eSignature",
@@ -1491,6 +1527,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(or earlier!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hour",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Up to {formattedMonthlyRate}/month",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "N/A",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "hours/week",

@@ -48,6 +48,10 @@
       "value" : "USA",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "Mexiko",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Genom att ansöka bekräftar du att:",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "Bakgrundskontroll",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Samtycke till screening av jobbsökande",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Vänligen lämna tillstånd och den information som behövs för en bakgrundskontroll.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Information om och tillåtelse till bakgrundskontroll ej grundad i Fair Credit Reporting Act (lag om skäliga personupplysningar)",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Tillåtelse till bakgrundskontroll, medicinsk undersökning och drogtest",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Ytterligare bakgrundsinformation",
@@ -428,8 +440,16 @@
       "value" : "Nationellt ID-nummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP-ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ange ett giltigt, 9-siffrigt socialförsäkringsnummer utan bindestreck",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ange ett giltigt 18-siffrigt CURP-ID utan bindestreck",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +598,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Som meddelats och godkänts av mig i den separata upplysningen enligt lagen om skälig kreditupplysning och dess tillåtelse (Fair Credit Reporting Act Disclosure and Authorization Document), kommer Amazon.com, Inc. eller dess filialer eller dotterbolag (”Amazon”) att genomföra en bakgrundskontroll av mig.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. eller dess filialer eller dotterbolag (”Amazon”) kommer att genomföra en bakgrundskontroll av mig.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +787,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Genom min e-signatur nedan intygar jag att jag har läst, förstått och accepterar alla redogörelser i detta meddelande om information om och tillåtelse till bakgrundskontroll ej grundad i Fair Credit Reporting Act (lag om skäliga personupplysningar). Vänligen uttryck ditt godkännande genom att ange den information som begärs i fälten nedan.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Genom min e-signatur nedan intygar jag att jag har läst, förstått och accepterar alla redogörelser i denna tillåtelse till bakgrundskontroll, medicinsk undersökning och drogtest. Vänligen uttryck ditt godkännande genom att ange den information som begärs i fälten nedan.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Vänligen skriv ditt fullständiga namn som e-signatur",
@@ -1488,6 +1516,18 @@
       "value" : "(eller tidigare!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/timme",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Upp till {formattedMonthlyRate}/månad",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "Ej tillämpligt",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "timmar/vecka",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1567,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Lön",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Engångsbonus vid signering",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Timmar",

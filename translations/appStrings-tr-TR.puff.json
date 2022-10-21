@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "Ay.",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "Saat.",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazon Çalışanı olma yolculuğunuz burada başlıyor.",
       "note" : "Text for PreConsentPage banner text"
@@ -1487,6 +1495,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(veya daha erken!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/saat",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Aylık {formattedMonthlyRate} tutarına kadar",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "Geçerli değil",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "saat/hafta",

@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "mês",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "hora",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "A sua jornada para se tornar um associado da Amazon começa aqui.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "Estados Unidos",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "México",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Ao candidatar-se, confirma que:",
@@ -320,6 +332,10 @@
       "value" : "Verificação de antecedentes",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentimento para verificação de informações para efeitos laborais",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Forneça a autorização e as informações necessárias para uma verificação de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconhecimentos e autorizações independentes da Fair Credit Reporting Act (lei de relatórios de crédito justo) para verificação de antecedentes",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorizações para verificação de antecedentes, verificação médica e teste de despiste de drogas",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informações adicionais de antecedentes",
@@ -428,8 +448,16 @@
       "value" : "Número de ID nacional",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira um número de segurança social com 9 dígitos válidos, sem um travessão",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Introduza uma ID CURP de 18 dígitos válida sem um travessão",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Conforme divulgado e autorizado por mim no documento, em separado, de divulgação e autorização da Fair Credit Reporting Act (lei de relatórios de crédito justo), a Amazon.com, Inc. ou suas subsidiárias ou afiliadas (“Amazon”) realizarão uma verificação de antecedentes sobre mim.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. ou suas subsidiárias ou afiliadas (“Amazon”) realizarão uma verificação de antecedentes sobre mim.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Através da minha assinatura eletrónica abaixo, certifico que li, compreendi e aceitei todas as declarações neste documento de reconhecimentos e autorizações independentes da Fair Credit Reporting Act (lei de relatórios de crédito justo) para verificação de antecedentes. Indique a sua aceitação ao inserir as informações solicitadas nos campos abaixo.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Pela minha assinatura eletrónica abaixo, certifico que li, compreendo e aceito todas as declarações contidas neste documento de autorizações para verificação de antecedentes, verificação médica e teste de despiste de drogas. Indique a sua aceitação ao inserir as informações solicitadas nos campos abaixo.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Insira o seu nome completo como assinatura eletrónica",
@@ -1404,6 +1440,10 @@
       "value" : "Antes da sua entrevista de pré-contratação, preencha o questionário de crédito fiscal das oportunidades de emprego.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Antes da sua entrevista de pré-contratação, terá de realizar algumas atividades de pré-contratação.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Vamos começar",
       "note" : "Text for the thank you page let's get started button text"
@@ -1487,6 +1527,10 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(ou mais cedo!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hora",
+      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",

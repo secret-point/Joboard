@@ -701,7 +701,7 @@
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de ingreso: Desde/Hasta A (MM/AA a MM/AA)",
+      "value" : "Fechas de ingreso: Desde/Hasta A (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
@@ -1488,6 +1488,10 @@
       "value" : "(¡o antes!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hora",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1531,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salario",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bonificación única de inscripción",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Horas",

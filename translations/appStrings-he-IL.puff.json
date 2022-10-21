@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "חודש",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "שעה",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "המסע שלך להפוך לשותף של Amazon מתחיל כאן.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "ארצות הברית",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "מקסיקו",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "בהגשת מועמדותך, אתה מאשר כי:",
@@ -320,6 +332,10 @@
       "value" : "בדיקת רקע",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "הסכמה לבדיקת סינון לתעסוקה",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "יש לספק את הרשאת הגישה והמידע הדרושים לבדיקת רקע.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "אישורים והרשאות של חוק דיווח אשראי לא הוגן ואישורים לבדיקת רקע",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "אישורים לבדיקת רקע, בדיקה רפואית ובדיקת סמים",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "מידע רקע נוסף",
@@ -428,8 +448,16 @@
       "value" : "מספר זהות לאומי",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "מזהה CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "יש להזין מספר ביטוח לאומי חוקי בעל 9 ספרות ללא מקף",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "יש להזין מזהה CURP חוקי בן 18 ספרות ללא מקפים",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "כפי שסוכם ואושר על ידי לי במסמך הגילוי והאישור הנפרד של חוק אשראי הוגן, Amazon.com, Inc. או חברות הבת או החברות השותפות שלה (\"Amazon\") יערכו אודותיי בדיקת רקע.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "‎Amazon.com, Inc. או חברות הבת או החברות השותפות שלה (\"Amazon\") יערכו אודותיי בדיקת רקע.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "בחתימתי האלקטרונית להלן, אני מאשר כי קראתי, הבנתי ואישרתי את כל ההצהרות המופיעות באישורים ובהרשאות של חוק דיווח אשראי לא הוגן זה לצורך בדיקת רקע. יש לסמן הסכמתך על ידי הזנת המידע המבוקש בשדות שלהלן. ",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "חתימתי באמצעות eSigNature להלן, מהווה אישור כי קראתי, הבנתי וכי קיבלתי את כל ההצהרות המופיעות בטופס ׳אישורים לבדיקת רקע, בדיקה רפואית ובדיקת סמים׳ זה. יש לאשר את הסכמתך על ידי הזנת המידע המבוקש בשדות שלהלן.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "יש להקליד את השם המלא כחתימה אלקטרונית",
@@ -1404,6 +1440,10 @@
       "value" : "לפני פגישת טרום ההעסקה שלך, יש למלא את 'שאלון זיכוי המס של הזדמנויות העבודה'.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "לפני פגישת טרום העסקה, יש להשלים סדרה של פעילויות טרום העסקה.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "מתחילים",
       "note" : "Text for the thank you page let's get started button text"
@@ -1488,6 +1528,18 @@
       "value" : "(או מוקדם יותר!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/שעה",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "עד {formattedMonthlyRate} לחודש",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "לא רלוונטי",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "שעות/שבוע",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1579,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "תעריף תשלום",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "בונוס הרשמה חד פעמי",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "שעות",

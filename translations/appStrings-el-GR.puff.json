@@ -1484,6 +1484,10 @@
       "value" : "(ή νωρίτερα!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/ώρα",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ώρες/εβδομάδα",
       "note" : "Text for the schedule card hours per week text"
@@ -2251,6 +2255,14 @@
     "BB-websocket-error-message-internal-server-error" : {
       "value" : "Κάτι πήγε στραβά με τον εξυπηρετητή websocket. Προσπαθήστε ξανά ή ανανεώστε το πρόγραμμα περιήγησης.",
       "note" : "Text for websocket internal server error message"
+    },
+    "BB-ReviewSubmit-previous-full-name-text" : {
+      "value" : "Προηγούμενο ονοματεπώνυμο:",
+      "note" : "Text for previous full name title"
+    },
+    "BB-ReviewSubmit-curp-id-text" : {
+      "value" : "CURP ID:",
+      "note" : "Text for CRUP title"
     }
   }
 }

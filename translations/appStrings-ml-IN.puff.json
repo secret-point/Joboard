@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "മാസം",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "മണിക്കൂർ",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "ഒരു Amazon associate ആകുന്നതിനുള്ള നിങ്ങളുടെ യാത്ര ഇവിടെ ആരംഭിക്കുന്നു.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "യുണൈറ്റഡ് സ്റ്റേറ്റ്സ്",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "മെക്സിക്കോ",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "ആപേക്ഷിക്കുന്നതിലൂടെ, നിങ്ങൾ ഇത് സ്ഥിരീകരിക്കുന്നു:",
@@ -320,6 +332,10 @@
       "value" : "പശ്ചാത്തല പരിശോധന",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "തൊഴിൽ പരിശോധനയ്ക്കുള്ള സമ്മതം",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "ദയവായി ഒരു പശ്ചാത്തല പരിശോധനയ്ക്ക് ആവശ്യമായ അനുമതിയും വിവരങ്ങളും നൽകുക.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "പശ്ചാത്തല പരിശോധനയ്ക്കുള്ള നോൺ-ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് ആക്റ്റ് അംഗീകാരങ്ങളും അനുമതികളും",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "പശ്ചാത്തല പരിശോധന, മെഡിക്കൽ പരിശോധന, ഡ്രഗ് പരിശോധന എന്നിവയ്ക്കുള്ള അംഗീകാരങ്ങൾ",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "അധിക പശ്ചാത്തല വിവരങ്ങൾ",
@@ -428,8 +448,16 @@
       "value" : "ദേശീയ ID നമ്പർ",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ഡാഷ് ഇല്ലാതെ സാധുവായ 9 അക്ക സാമൂഹിക സുരക്ഷാ നമ്പർ നൽകുക",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ദയവായി ഡാഷ് ഇല്ലാതെ സാധുവായ 18 അക്കങ്ങളുള്ള CURP ID നൽകുക",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "പ്രത്യേക ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് ആക്റ്റ് ഡിസ്‌ക്ലോഷർ ആൻഡ് ഓതറൈസേഷൻ ഡോക്യുമെന്‍റിൽ ഞാൻ വെളിപ്പെടുത്തിയതും അധികാരപ്പെടുത്തിയതും പോലെ, Amazon.com, Inc. അല്ലെങ്കിൽ അതിന്‍റെ അനുബന്ധ സ്ഥാപനങ്ങളോ അഫിലിയേറ്റുകളോ (\"Amazon\") എന്നെക്കുറിച്ച് ഒരു പശ്ചാത്തല പരിശോധന നടത്തും.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. അല്ലെങ്കിൽ അതിന്‍റെ അനുബന്ധ സ്ഥാപനങ്ങളോ അഫിലിയേറ്റുകളോ (\"Amazon\") എന്നെക്കുറിച്ച് ഒരു പശ്ചാത്തല പരിശോധന നടത്തും.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "പശ്ചാത്തല പരിശോധനയ്ക്കുള്ള അംഗീകാരത്തിനും അനുമതിക്കുമായി ഈ നോൺ-ഫെയർ ക്രെഡിറ്റ് റിപ്പോർട്ടിംഗ് നിയമത്തിലെ എല്ലാ പ്രസ്താവനകളും ഞാൻ വായിക്കുകയും മനസ്സിലാക്കുകയും അംഗീകരിക്കുകയും ചെയ്തുവെന്ന് താഴെയുള്ള എന്‍റെ ഇ-സിഗ്നേച്ചർ മുഖേന ഞാൻ സാക്ഷ്യപ്പെടുത്തുന്നു. ചുവടെയുള്ള ഫീൽഡുകളിൽ ആവശ്യപ്പെട്ടിട്ടുള്ള വിവരങ്ങൾ നൽകി നിങ്ങളുടെ സ്വീകാര്യത അറിയിക്കുക.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "പശ്ചാത്തല പരിശോധന, മെഡിക്കൽ പരിശോധന, ഡ്രഗ് പരിശോധന എന്നിവയ്ക്കുള്ള അംഗീകാരത്തിന് ഇതിലെ എല്ലാ പ്രസ്താവനകളും ഞാൻ വായിക്കുകയും മനസ്സിലാക്കുകയും അംഗീകരിക്കുകയും ചെയ്‌തുവെന്ന് താഴെയുള്ള എന്റെ ഇ-സിഗ്നേച്ചർ മുഖേന ഞാൻ സാക്ഷ്യപ്പെടുത്തുന്നു. ദയവായി ചുവടെയുള്ള ഫീൽഡുകളിൽ ആവശ്യപ്പെട്ടിട്ടുള്ള വിവരങ്ങൾ നൽകി നിങ്ങളുടെ സ്വീകാര്യത അറിയിക്കുക.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "ദയവായി നിങ്ങളുടെ മുഴുവൻ പേര് ഇ-സിഗ്നേച്ചര്‍ പോലെ ടൈപ്പ് ചെയ്യുക",
@@ -1487,6 +1523,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(അല്ലെങ്കിൽ നേരത്തെ!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/മണിക്കൂർ",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "{formattedMonthlyRate}/മാസം വരെ",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "ബാധകമല്ല",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "മണിക്കൂർ/ആഴ്ച",

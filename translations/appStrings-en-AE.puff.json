@@ -1440,6 +1440,10 @@
       "value" : "Before your pre-hire appointment, please fill out the Work Opportunities Tax Credit Questionnaire.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Before your pre-hire appointment, you will need to complete a series of pre-hire activities.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Let’s get started",
       "note" : "Text for the thank you page let's get started button text"
@@ -1523,6 +1527,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(or earlier!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hour",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Up to {formattedMonthlyRate}/month",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "N/A",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "hours/week",

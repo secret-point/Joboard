@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "mes",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "hora",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Tu travesía para convertirte en empleado de Amazon comienza aquí.",
       "note" : "Text for PreConsentPage banner text"
@@ -1488,6 +1496,10 @@
       "value" : "(¡o antes!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/hora",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas/semana",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1539,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salario",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bonificación única de inscripción",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Horas",

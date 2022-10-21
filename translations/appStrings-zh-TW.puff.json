@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "月",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "小時",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "您成為 Amazon 新員工的旅程從這裡開始。",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "美國",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "墨西哥",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "透過應徵，您確認：",
@@ -320,6 +332,10 @@
       "value" : "背景調查",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "聘僱篩選同意書",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "請提供背景調查所需的授權和資訊。",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "非公平信用報告法案背景調查確認和授權",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "對背景調查、醫療檢查和藥物測試的授權",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "其他背景資訊",
@@ -428,8 +448,16 @@
       "value" : "國民身分證號碼",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "請輸入不含破折號的有效 9 位數社會安全號碼",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "請輸入有效的 18 位數 CURP ID，不含破折號",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "正如我在單獨的「公平信用報告法案披露和授權文件」中所披露和授權的，Amazon.com, Inc. 或者其子公司或附屬公司 (統稱「Amazon」) 將對我進行背景調查。",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc.或是其子公司或附屬公司 (統稱「Amazon」) 將對我進行背景調查。",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "在下方留下電子簽章，即表明我證實自己已閱讀、理解並接受此「非公平信用報告法案背景調查確認和授權」中的所有聲明。請在以下欄位中輸入要求的資訊，表示您已同意。",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "在下方留下電子簽名，即表明本人證實已閱讀、理解並接受此「背景調查、醫療檢查和藥物測試授權」中的所有聲明。請在以下欄位中輸入要求的資訊，表明您已同意。",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "請輸入您的全名作為電子簽章",
@@ -1404,6 +1440,10 @@
       "value" : "在您的聘前約見之前，請填寫工作機會稅收抵免問卷。",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "在您的聘前約見之前，您需要完成一系列的聘前活動。",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "我們開始吧",
       "note" : "Text for the thank you page let's get started button text"
@@ -1488,6 +1528,10 @@
       "value" : "(可以提前！)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/小時",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "小時/週",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1571,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "薪資率",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "一次性簽約獎金",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "營業時間",

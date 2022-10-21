@@ -1488,6 +1488,10 @@
       "value" : "(eller tidligere!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/time",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "timer/uge",
       "note" : "Text for the schedule card hours per week text"

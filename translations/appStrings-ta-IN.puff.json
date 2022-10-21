@@ -1404,6 +1404,10 @@
       "value" : "உங்கள் முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்கு முன்பு, வேலை வாய்ப்புகள் வரிக் கிரெடிட் கேள்வித்தாளை நிரப்பவும்.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "பணியமர்த்துவதற்கு முந்தைய சந்திப்பிற்கு முன்பு, நீங்கள் பணியமர்த்துவதற்கு முன்பான தொடர் செயல்பாடுகளை நீங்கள் நிறைவுசெய்ய வேண்டியிருக்கும்.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "தொடங்குவோம்",
       "note" : "Text for the thank you page let's get started button text"
@@ -1488,6 +1492,10 @@
       "value" : "(அல்லது அதற்கும் முந்தைய தேதியில்!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/மணிநேரம்",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "மணிநேரம்/வாரம்",
       "note" : "Text for the schedule card hours per week text"
@@ -1527,6 +1535,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "சம்பள விகிதம்",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "ஒரு முறை உள்நுழைவு போனஸ்",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "மணிநேரம்",

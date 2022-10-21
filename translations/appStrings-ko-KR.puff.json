@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "월",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "시간",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "아마존 어소시에이트가 되는 여정은 여기서 시작됩니다.",
       "note" : "Text for PreConsentPage banner text"
@@ -1432,6 +1440,10 @@
       "value" : "채용 전 약속 시간 전에 취업 기회 세액 공제 설문지를 작성하세요.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "고용 전 미팅 참석 전에 일련의 고용 준비 활동을 완료하셔야 합니다.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "시작하겠습니다.",
       "note" : "Text for the thank you page let's get started button text"
@@ -1516,6 +1528,18 @@
       "value" : "(또는 그 이전!)",
       "note" : "Text for the schedule card possible start date or earlier text"
     },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/시간",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "최대 {formattedMonthlyRate}/월",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "해당 사항 없음",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "시간/주",
       "note" : "Text for the schedule card hours per week text"
@@ -1555,6 +1579,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "급여",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "일회성 가입 보너스",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "시간",

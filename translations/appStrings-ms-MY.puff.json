@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "bulan",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "jam",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Perjalanan anda untuk menjadi Sekutu Amazon bermula di sini.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "Amerika Syarikat",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexico",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Dengan memohon, anda mengesahkan bahawa:",
@@ -320,6 +332,10 @@
       "value" : "Pemeriksaan Latar Belakang",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Persetujuan untuk saringan pekerjaan",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Sila berikan kebenaran dan maklumat yang diperlukan untuk pemeriksaan latar belakang.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Akta Pelaporan Kredit Tidak Adil Pengakuan Dan Kebenaran Untuk Pemeriksaan Latar Belakang",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Kebenaran untuk Pemeriksaan Latar Belakang, Pemeriksaan Perubatan, dan Ujian Dadah",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Maklumat latar belakang tambahan",
@@ -428,8 +448,16 @@
       "value" : "Nombor ID Kebangsaan",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Sila masukkan nombor keselamatan sosial 9 digit yang sah tanpa tanda sengkang",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Sila masukkan ID CURP 18 digit yang sah tanpa tanda sengkang",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Seperti yang didedahkan dan diberi kuasa oleh saya dalam Dokumen Pendedahan dan Kebenaran Akta Pelaporan Kredit Adil yang berasingan, Amazon.com, Inc. atau anak-anak syarikat atau sekutunya (\"Amazon\") akan melakukan pemeriksaan latar belakang ke atas saya.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. atau anak syarikat atau sekutunya (\"Amazon\") akan melakukan pemeriksaan latar belakang terhadap saya.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Dengan e-Tandatangan saya di bawah, saya mengesahkan bahawa saya telah membaca, memahami dan menerima semua kenyataan dalam Akta Pelaporan Kredit Tidak Adil ini Pengakuan Dan Kebenaran Untuk Pemeriksaan Latar Belakang. Sila nyatakan penerimaan anda dengan memasukkan maklumat yang diminta dalam medan di bawah.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Dengan e-Tandatangan saya di bawah, saya mengesahkan bahawa saya telah membaca, memahami dan menerima semua kenyataan dalam Kebenaran Untuk Pemeriksaan Latar Belakang, Pemeriksaan Perubatan dan Ujian Dadah ini. Sila nyatakan penerimaan anda dengan memasukkan maklumat yang diminta dalam medan di bawah.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Sila taip nama penuh anda sebagai e-Tandatangan",
@@ -1404,6 +1440,10 @@
       "value" : "Sebelum janji temu pra-pengambilan pekerja anda, isikan Soal Selidik Kredit Cukai Peluang Kerja.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Sebelum janji temu pra-pengambilan pekerja anda, anda perlu melengkapkan satu siri aktiviti pra-pengambilan pekerja.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Mari kita mulakan",
       "note" : "Text for the thank you page let's get started button text"
@@ -1487,6 +1527,18 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(atau lebih awal!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/jam",
+      "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Sehingga {formattedMonthlyRate}/bulan",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "T/B",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "jam/minggu",

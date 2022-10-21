@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "నెల",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "గంట",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazon Associate కావడానికి మీ ప్రయాణం ఇక్కడ ప్రారంభమవుతుంది.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "యునైటెడ్ స్టేట్స్",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "మెక్సికో",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "దరఖాస్తు చేయడం ద్వారా, మీరు దీనిని ధృవీకరిస్తారు:",
@@ -320,6 +332,10 @@
       "value" : "బ్యాక్‌గ్రౌండ్ తనిఖీ",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "ఎంప్లాయి‌మెంట్ స్క్రీనింగ్‌కు సమ్మతి",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "దయచేసి నేపథ్య తనిఖీ కోసం అవసరమైన అధికారం మరియు సమాచారాన్ని అందించండి.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "నాన్-ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ అక్నాలెడ్జ్‌మెంట్ మరియు ఆథరైజేషన్ కోసం బ్యాక్‌గ్రౌండ్ తనిఖీ",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ చెక్, మెడికల్ చెక్ మరియు డ్రగ్ టెస్ట్ కోసం అధికారాలు",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "అదనపు నేపథ్య సమాచారం",
@@ -428,8 +448,16 @@
       "value" : "జాతీయ ID నంబర్",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "దయచేసి డాష్ లేకుండా చెల్లుబాటు అయ్యే 9 అంకెల సామాజిక భద్రతా నంబర్‌ను నమోదు చేయండి",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "దయచేసి డ్యాష్ లేకుండా చెల్లుబాటు అయ్యే 18 అంకెలు CURP IDని ఎంటర్ చేయండి",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "నేను వెల్లడించిన మరియు అధికారం ఇచ్చినట్లుగా ప్రత్యేక ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్ డిస్‌క్లోజర్ మరియు ఆథరైజేషన్ డాక్యుమెంట్, Amazon.com, Inc. లేదా దాని అనుబంధ సంస్థలు లేదా అనుబంధ సంస్థలు (“Amazon”) నాపై నేపథ్య తనిఖీని నిర్వహిస్తాయి.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. లేదా దాని సబ్సిడరీలు లేదా అనుబంధ సంస్థలు (\"Amazon\") నాపై బ్యాక్‌గ్రౌండ్ చెక్ నిర్వహిస్తాయి.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "దిగువ నా సంతకం ద్వారా, నేను ఈ నాన్-ఫెయిర్ క్రెడిట్ రిపోర్టింగ్ యాక్ట్‌లోని అన్ని స్టేట్‌మెంట్‌లను చదివానని, అర్థం చేసుకున్నానని మరియు ఆమోదించానని ధృవీకరిస్తున్నాను మరియు నేపథ్య తనిఖీ కోసం ఆథరైజేషన్. దయచేసి దిగువ ఫీల్డ్‌లలో అభ్యర్థించిన సమాచారాన్ని నమోదు చేయడం ద్వారా మీ అంగీకారాన్ని సూచించండి.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "దిగువన ఉన్న నా eSignature ద్వారా, నేను బ్యాక్‌గ్రౌండ్ చెక్, మెడికల్ చెక్ మరియు డ్రగ్ టెస్ట్ కోసం ఈ ఆథరైజేషన్‌ల్లోని అన్ని స్టేట్‌మెంట్‌లను చదివానని, అర్థం చేసుకున్నానని, ఆమోదించానని ధృవీకరిస్తున్నాను. దయచేసి దిగువ ఫీల్డ్‌లలో అభ్యర్థించిన సమాచారాన్ని ఎంటర్ చేయడం ద్వారా మీ అంగీకారాన్ని సూచించండి.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "దయచేసి మీ పూర్తి పేరును eSignatureగా టైప్ చేయండి",
@@ -1404,6 +1440,10 @@
       "value" : "మీ ముందస్తు నియామక అపాయింట్‌మెంట్‌కు ముందు, పని అవకాశాల పన్ను క్రెడిట్ ప్రశ్నాపత్రాన్ని పూరించండి.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "మీ ప్రీ-హైర్ అపాయింట్‌మెంట్‌కు ముందు, మీరు ప్రీ-హైర్ కార్యకలాపాల శ్రేణిని పూర్తి చేయాలి.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "ఇక ప్రారంభిద్దాం",
       "note" : "Text for the thank you page let's get started button text"
@@ -1487,6 +1527,10 @@
     "BB-Schedule-card-possible-start-date-or-earlier-text" : {
       "value" : "(లేదా అంతకుముందు!)",
       "note" : "Text for the schedule card possible start date or earlier text"
+    },
+    "BB-Schedule-card-total-pay-per-hour-text" : {
+      "value" : "/గంట",
+      "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "గంటలు/వారం",
