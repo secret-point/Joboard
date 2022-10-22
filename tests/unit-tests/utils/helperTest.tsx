@@ -4,9 +4,24 @@ import {
   awaitWithTimeout,
   formatFlexibleTrainingDate,
   getCountryCodeByCountryName,
-  processAssessmentUrl
+  processAssessmentUrl,
+  formatMonthlyBasePayHelper,
+  parseQueryParamsArrayToSingleItem,
+  showErrorMessage,
+  reverseMappingTranslate,
+  checkAndBoundGetApplication,
+  isSelfIdentificationInfoValidBeforeDisability,
+  isSelfIdentificationInfoValid,
+  isAdditionalBgcInfoValid,
+  isAddressValid,
+  isNewBBuiPath,
+  isI18nSelectOption,
+  setEpicApiCallErrorMessage
 } from "../../../src/utils/helper";
-import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID } from "../../test-utils/test-data";
+import { newBBUIPathName } from "../../../src/utils/constants/common";
+import * as boundUi from "../../../src/actions//UiActions/boundUi";
+import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions"
+import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID, TEST_SELF_IDENTIFICATION, TEST_BACKGROUND_INFO, TEST_CANDIDATE_ADDRESS } from "../../test-utils/test-data";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -79,4 +94,141 @@ describe("formatFlexibleTrainingDate", () => {
   expect(formatFlexibleTrainingDate("2022-10-1")).toEqual("");
   expect(formatFlexibleTrainingDate("8:30 PM 9:30 PM")).toEqual("");
   expect(formatFlexibleTrainingDate("8:30 PM - 9:30 PM")).toEqual("");
+});
+
+describe("formatMonthlyBasePayHelper", ()=>{
+
+  it("should return correct format with no decimals", ()=>{
+    expect(formatMonthlyBasePayHelper(55, 'USD')).toEqual('$55');
+  });
+
+  it("should return correct format with decimals", ()=>{
+    expect(formatMonthlyBasePayHelper(40.10, 'USD')).toEqual('$40.10');
+  });
+
+  it("should return null", ()=>{
+    expect(formatMonthlyBasePayHelper(null, 'USD')).toEqual(null);
+    expect(formatMonthlyBasePayHelper(54)).toEqual(null);
+    expect(formatMonthlyBasePayHelper()).toEqual(null);
+  });
+});
+
+describe("parseQueryParamsArrayToSingleItem", ()=>{
+
+  it("should parse query items to single param", ()=>{
+    const queryParams = {
+      "jobId": ["JOB-1234"],
+      "requisitionId": "Req-000"
+    };
+    expect(parseQueryParamsArrayToSingleItem(queryParams)).toEqual({ jobId: 'JOB-1234', requisitionId: 'Req-000' });
+  });
+});
+
+describe("showErrorMessage", ()=>{
+  it("should call boundSetBannerMessage", ()=>{
+    const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
+
+    showErrorMessage({
+      translationKey: "BB-websocket-error-message-internal-server-error",
+      value: "Something went wrong with the websocket server. Please try again or refresh the browser.",
+    });
+
+    expect(spy).toHaveBeenCalled();
+  });
+});
+
+describe("reverseMappingTranslate", ()=>{
+  it("should return empty string with undefined or empty string passed", ()=>{
+    expect(reverseMappingTranslate(undefined)).toEqual("");
+    expect(reverseMappingTranslate("")).toEqual("");
+  })
+
+  it("should return empty string with invalid key", ()=>{
+    expect(reverseMappingTranslate("test-key")).toEqual("");
+  })
+
+  it("should return correct value", ()=>{
+    expect(reverseMappingTranslate("I choose not to self-identify")).toEqual("I choose not to self-identify");
+  })
+})
+
+describe("checkAndBoundGetApplication", ()=>{
+  it("should call boundGetApplication", ()=>{
+    const spy = jest.spyOn(boundApplicationActions, "boundGetApplication");
+
+    checkAndBoundGetApplication("TEST-ID-0001");
+
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("isSelfIdentificationInfoValidBeforeDisability", ()=>{
+  
+  it("should return false", ()=>{
+    expect(isSelfIdentificationInfoValidBeforeDisability()).toEqual(false)
+  })
+
+  it("should return true", ()=>{
+
+    expect(isSelfIdentificationInfoValidBeforeDisability(TEST_SELF_IDENTIFICATION)).toEqual(true)
+  })
+})
+
+describe("isSelfIdentificationInfoValid", ()=>{
+  it("should return false", ()=>{
+    expect(isSelfIdentificationInfoValid()).toEqual(false);
+  })
+
+  it("should return true", ()=>{
+    expect(isSelfIdentificationInfoValid(TEST_SELF_IDENTIFICATION)).toEqual(true);
+  })
+})
+
+describe("isAdditionalBgcInfoValid", ()=>{
+  it("returns false", ()=>{
+    expect(isAdditionalBgcInfoValid()).toEqual(false);
+  })
+
+  it("returns true", ()=>{
+    expect(isAdditionalBgcInfoValid(TEST_BACKGROUND_INFO)).toEqual(true);
+  })
+});
+
+describe("isAddressValid", ()=>{
+
+  it("should return false", ()=>{
+    expect(isAddressValid()).toEqual(false);
+  })
+
+  it("should return true", ()=>{
+    expect(isAddressValid(TEST_CANDIDATE_ADDRESS)).toEqual(true);
+  })
+})
+
+describe("isNewBBuiPath", ()=>{
+
+  it("returns false", ()=>{
+    expect(isNewBBuiPath("", newBBUIPathName.US )).toEqual(false);
+  })
+
+})
+
+describe("isI18nSelectOption", ()=>{
+  it("return true", ()=>{
+    expect(isI18nSelectOption({translationKey: 'testkey', value: 'test', showValue: true})).toBeTruthy();
+  })
+})
+
+describe("setEpicApiCallErrorMessage", ()=>{
+  it("should call boundSetBannerMessage", ()=>{
+    const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
+
+    setEpicApiCallErrorMessage({
+      translationKey: "BB-get-application-error-message-internal-server-error",
+      value: "Something went wrong with the server. Please try again or refresh the browser."
+    });
+
+    expect(spy).toHaveBeenCalled()
+
+  })
 })

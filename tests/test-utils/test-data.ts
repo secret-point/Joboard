@@ -10,7 +10,7 @@ import { SelfIdentificationState } from "../../src/reducers/selfIdentification.r
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
 import { BGC_STEPS, BGC_VENDOR_TYPE, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule } from "../../src/utils/types/common";
+import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule, SelfIdentificationInfo } from "../../src/utils/types/common";
 import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -48,6 +48,42 @@ export const TEST_BANNER_MESSAGE: AlertMessage = {
   isDismissible: true,
   visible: true,
   type: MessageBannerType.Informational
+};
+
+export const TEST_SELF_IDENTIFICATION: SelfIdentificationInfo = {
+  highestDegree: "",
+  nationalId: "",
+  nationalIdType: "",
+  citizenship: "",
+  document: "",
+  driverLicence: "",
+  gender: "Male",
+  ethnicity: "Asian (not Hispanic or Latino)",
+  ethnicitySubGroup: "",
+  ethnicityOther: "",
+  militarySpouse: "No",
+  veteran: "No",
+  protectedVeteran:
+    "No, I do not believe one or more of the above categories apply to me",
+  disability: "NO, I DON'T HAVE A DISABILITY",
+  disabilityDate: "2022-07-20T01:12:29.985Z",
+  religion: "",
+  otherReligion: "",
+  sexualOrientation: ""
+};
+
+export const TEST_BACKGROUND_INFO = {
+  hasCriminalRecordWithinSevenYears: false,
+  convictionDetails: "",
+  hasPreviouslyWorkedAtAmazon: false,
+  mostRecentBuildingWorkedAtAmazon: "",
+  mostRecentTimePeriodWorkedAtAmazon: "",
+  previousLegalNames: [],
+  governmentIdType: "United States - Social Security Number",
+  idNumber: "*****9599",
+  dateOfBirth: "1988-08-02",
+  address: TEST_CANDIDATE_ADDRESS,
+  isWithoutSSN: false
 };
 
 export const TEST_CANDIDATE: Candidate = {
