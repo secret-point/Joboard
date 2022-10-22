@@ -56,6 +56,10 @@
       "value" : "संयुक्त राष्ट्रे",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "मेक्सिको",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "अर्ज करून, तुम्ही हे कन्फर्म करता:",
       "note" : "Text for application qualification criteria"
@@ -328,6 +332,10 @@
       "value" : "पार्श्वभूमी तपासणी",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "रोजगार तपासणीसाठी संमती",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "कृपया पार्श्वभूमी तपासणीसाठी आवश्यक असलेली अधिकृतता आणि माहिती प्रदान करा.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "नॉन-फेअर क्रेडिट रिपोर्टिंग अ‍ॅक्ट पोचपावती आणि पार्श्वभूमी तपासणीसाठी अधिकृतता",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "पार्श्वभूमी तपासणी, वैद्यकीय तपासणी आणि औषध चाचणीसाठी अधिकृतता",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "अतिरिक्त पार्श्वभूमी माहिती",
@@ -436,8 +448,16 @@
       "value" : "राष्ट्रीय ID क्रमांक",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "कृपया डॅशशिवाय वैध 9 अंकी सोशल सिक्युरिटी नंबर प्रविष्ट करा",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "कृपया डॅशशिवाय वैध 18 अंकी CURP ID प्रविष्ट करा",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "मी वेगळ्या फेअर क्रेडिट रिपोर्टिंग अ‍ॅक्ट डिस्क्लोजर आणि ऑथोरायझेशन डॉक्युमेंटमध्ये खुलासा आणि अधिकृत केल्याप्रमाणे Amazon.com, Inc. किंवा त्यांच्या उपकंपन्या किंवा संलग्न संस्था (“Amazon”) माझी पार्श्वभूमी तपासणी करतील.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. किंवा त्यांच्या उपकंपन्या किंवा संलग्न संस्था (“Amazon”) माझी पार्श्वभूमी तपासणी करतील.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "खाली माझ्या ईसिग्नेचरद्वारे, मी प्रमाणित करतो की मी पार्श्वभूमी तपासणीसाठी या नॉन-फेअर क्रेडिट रिपोर्टिंग अ‍ॅक्ट पोचपावती आणि अधिकृतता मधील सर्व विधाने वाचली, समजून घेतली आहेत आणि स्वीकारली आहेत. कृपया खालील फील्डमध्ये विनंती केलेली माहिती प्रविष्ट करून तुमची स्वीकृती सूचित करा.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "खाली दिलेल्या माझ्या ईसिग्नेचरद्वारे, मी प्रमाणित करतो की मी पार्श्वभूमी तपासणी, वैद्यकीय तपासणी आणि औषध चाचणीसाठी या अधिकृततेमधील सर्व विधाने वाचली आहेत, समजून घेतली आहेत आणि स्वीकारली आहेत. कृपया खालील फील्डमध्ये विनंती केलेली माहिती प्रविष्ट करून तुमची स्वीकृती सूचित करा.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "कृपया तुमचे पूर्ण नाव ईसिग्नेचर म्हणून टाइप करा",
@@ -1412,6 +1440,10 @@
       "value" : "तुमच्या प्री-हायर अपॉइंटमेंटपूर्वी, कामाच्या संधी कर क्रेडिट प्रश्नावली भरा.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "तुमच्‍या प्री-हायर अपॉइंटमेंटच्‍या आधी, तुम्‍हाला प्री-हायर अ‍ॅक्टिव्हिटीजची मालिका पूर्ण करणे आवश्‍यक असेल.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "चला सुरुवात करूया",
       "note" : "Text for the thank you page let's get started button text"
@@ -1499,6 +1531,14 @@
     "BB-Schedule-card-total-pay-per-hour-text" : {
       "value" : "/तास",
       "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "सुमारे {formattedMonthlyRate}/महिना",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "लागू नाही",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "तास/आठवडा",

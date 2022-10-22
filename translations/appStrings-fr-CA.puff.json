@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "mois",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "heure",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Votre parcours pour devenir un partenaire Amazon commence ici.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "États-Unis",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexique",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "En postulant, vous confirmez que :",
@@ -320,6 +332,10 @@
       "value" : "Vérification des antécédents",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentement aux vérifications préemplois",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Veuillez fournir l’autorisation et les informations nécessaires pour une vérification des antécédents.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Accusés de réception et autorisations pour la vérification des autorisations en vertu de la Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorisations de vérification des antécédents, vérification médicale et test antidopage",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informations générales complémentaires",
@@ -428,8 +448,16 @@
       "value" : "Numéro de carte d’identité nationale",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Veuillez saisir un numéro de sécurité sociale à 9 chiffres valide et ne contenant aucun tiret",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Veuillez saisir un ID CURP valide à 18 chiffres sans tiret",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Comme je l’ai indiqué et autorisé dans le document distinct de divulgation et d’autorisation relatif au Fair Credit Reporting Act, Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon ») effectueront une vérification de mes antécédents.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. ou ses filiales ou sociétés affiliées (« Amazon ») effectueront une vérification de mes antécédents.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "En apposant ma signature électronique ci-dessous, je certifie que j’ai lu, compris et accepté toutes les déclarations contenues dans le document Accusés de réception et autorisations de vérification des antécédents conformément à la loi Non-Fair Credit Reporting Act. Veuillez marquer votre accord en saisissant les informations demandées dans les champs ci-dessous.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "En apposant ma signature électronique ci-dessous, je certifie que j’ai lu, compris et accepté toutes les déclarations contenues dans le document Autorisations de vérification des antécédents, vérification médicale et test antidopage. Veuillez marquer votre accord en saisissant les informations demandées dans les champs ci-dessous.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Veuillez saisir votre nom complet en guise de signature électronique",
@@ -1404,6 +1440,10 @@
       "value" : "Avant votre rendez-vous de pré-embauche, remplissez le questionnaire relatif au crédit d’impôt pour les possibilités d’emploi.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Avant votre rendez-vous de pré-embauche, vous devrez accomplir une série d’activités préliminaires.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Commençons",
       "note" : "Text for the thank you page let's get started button text"
@@ -1531,6 +1571,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Taux de rémunération",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Prime d'inscription unique",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Heures",
@@ -2267,6 +2311,50 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "ID CURP :",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Masculin",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Féminin",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Autre",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Je préfère ne pas répondre",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Il",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Elle",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "ils/elles",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Je préfère ne pas répondre",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Autochtone",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Autre",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Je préfère ne pas répondre",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

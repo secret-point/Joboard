@@ -40,6 +40,14 @@
       "value" : "Sélectionner ce poste",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "mois",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "h",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Afficher la progression",
       "note" : "Text for the button to select or confirm job"
@@ -1531,6 +1539,14 @@
     "BB-Schedule-card-total-pay-per-hour-text" : {
       "value" : "/heure",
       "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Jusqu'à {formattedMonthlyRate}/mois",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "S.O.",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "heures/semaine",

@@ -1,7 +1,7 @@
 import { BgcStepConfig, BgcMXStepConfig } from "../utils/types/common";
 import { BGC_STEPS, INFO_CARD_STEP_STATUS } from "../utils/enums/common";
 import { BGC_ACTION_TYPE, BGCStepConfigActions } from "../actions/BGC_Actions/bgcActionTypes";
-import { CountryCode } from "../utils/constants/common";
+import { CountryCode } from "../utils/enums/common";
 
 export interface BGCState {
     stepConfig: BgcStepConfig | BgcMXStepConfig

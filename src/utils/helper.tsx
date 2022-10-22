@@ -41,21 +41,23 @@ import {
 } from "./apiTypes";
 import {
     AdditionalBGCFormConfig,
-    CountryCode,
+    countryConfig,
+    countryConfigType,
     CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,
-    initScheduleStateFilters, MXAdditionalBGCFormConfig, MXCountrySelectOptions,
+    initScheduleStateFilters,
+    MXAdditionalBGCFormConfig,
+    MXCountrySelectOptions,
     NameRegexValidator,
     newBBUIPathName,
     UserIdValidator,
-    ValueToI18nKeyMap,
-    countryConfig,
-    countryConfigType
+    ValueToI18nKeyMap
 } from "./constants/common";
 import {
     BGC_STEPS,
     BGC_VENDOR_TYPE,
+    CountryCode,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
     FEATURE_FLAG,
@@ -70,7 +72,8 @@ import {
     Address,
     AlertMessage,
     ApiErrorMessage,
-    Application, BgcMXStepConfig,
+    Application,
+    BgcMXStepConfig,
     BgcStepConfig,
     Candidate,
     CandidateInfoErrorState,

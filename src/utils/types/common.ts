@@ -831,6 +831,7 @@ export interface SelfIdentificationVeteranStatus {
 export interface SelfIdEqualOpportunityStatus {
     gender: string;
     ethnicity: string;
+    pronoun?: string;
 }
 
 export interface SelfIdentificationDisabilityStatus {

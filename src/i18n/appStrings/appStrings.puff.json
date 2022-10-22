@@ -2328,6 +2328,54 @@
         "BB-ReviewSubmit-curp-id-text" : {
             "note" : "Text for CRUP title",
             "value" : "CURP ID:"
+        },
+        "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+            "note" : "Text for Self Identification gender: Male",
+            "value" : "Male"
+        },
+        "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+            "note" : "Text for Self Identification gender: Female",
+            "value" : "Female"
+        },
+        "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+            "note" : "Text for Self Identification gender: other ",
+            "value" : "Other"
+        },
+        "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+            "note" : "Text for Self Identification gender: prefer not to say",
+            "value" : "Prefer not to say"
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+            "note" : "Text for Self Identification Pronouns: He",
+            "value" : "He"
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+            "note" : "Text for Self Identification Pronouns: She",
+            "value" : "She"
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+            "note" : "Text for Self Identification Pronouns: They",
+            "value" : "They"
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+            "note" : "Text for Self Identification Pronouns: Other",
+            "value" : "Other"
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+            "note" : "Text for Self Identification Pronouns: Prefer not to say",
+            "value" : "Prefer not to say"
+        },
+        "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+            "note" : "Text for Self Identification MX Ethnicity: Indigenous",
+            "value" : "Indigenous"
+        },
+        "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+            "note" : "Text for Self Identification MX Ethnicity: other",
+            "value" : "Other"
+        },
+        "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+            "note" : "Text for Self Identification MX Ethnicity: Prefer not to say",
+            "value" : "Prefer not to say"
         }
     }
 }

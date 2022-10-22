@@ -56,6 +56,10 @@
       "value" : "Estados Unidos",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "México",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Ao se candidatar, você confirma que:",
       "note" : "Text for application qualification criteria"
@@ -328,6 +332,10 @@
       "value" : "Verificação de antecedentes",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentimento à triagem para emprego",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Forneça a autorização e as informações necessárias para uma verificação de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconhecimentos e autorizações da Lei de Relatórios de Crédito Não Justo para verificação de antecedentes",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorizações para verificação de antecedentes, exame médico e teste de drogas",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informações adicionais de antecedentes",
@@ -436,8 +448,16 @@
       "value" : "Número de ID nacional",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID DE CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira um número de seguro social válido de 9 dígitos sem traços",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Insira uma ID de CURP válida de 18 dígitos sem traço",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Conforme divulgado e autorizado por mim no Documento de Autorização e Declaração da Lei de Relatórios de Crédito Justo separado, Amazon.com, Inc. ou suas subsidiárias ou afiliadas (“Amazon”) realizará uma verificação de antecedentes sobre mim.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "A Amazon.com, Inc. ou suas subsidiárias ou afiliadas (“Amazon”) realizarão uma verificação de antecedentes sobre mim.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Pela minha assinatura eletrônica abaixo, certifico que li, compreendi e aceito todas as declarações destes Reconhecimentos e autorizações da Lei de Relatórios de Crédito Não Justo para verificação de antecedentes. Indique sua aceitação inserindo as informações solicitadas nos campos abaixo.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Por meio da minha assinatura eletrônica abaixo, certifico que li, compreendi e aceito todas as declarações nesta Autorização para verificação de antecedentes, exames médicos e teste de drogas. Indique sua aceitação inserindo as informações solicitadas nos campos abaixo.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Digite seu nome completo como assinatura eletrônica",
@@ -1412,6 +1440,10 @@
       "value" : "Antes da sua reunião de pré-contratação, preencha o Questionário de crédito fiscal de oportunidades de trabalho.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Antes de sua consulta de pré-contratação, você precisará concluir uma série de atividades de pré-contratação.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Vamos começar",
       "note" : "Text for the thank you page let's get started button text"
@@ -1539,6 +1571,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Salário",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Bônus de login único",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Horas",

@@ -32,6 +32,14 @@
       "value" : "இந்த வேலையைத் தேர்ந்தெடுக்கவும்",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "மாதம்",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "ம.நே",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "செயல்நிலையைக் காண்க",
       "note" : "Text for the button to select or confirm job"

@@ -56,6 +56,10 @@
       "value" : "الولايات المتحدة",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "المكسيك",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "يعني التقديم أنك تؤكد ما يلي:",
       "note" : "Text for application qualification criteria"
@@ -328,6 +332,10 @@
       "value" : "فحص الخلفية",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "الموافقة على فحص التوظيف",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "يرجى تقديم التفويض والمعلومات اللازمة لفحص الخلفية.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص الخلفية",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "تصاريح فحص الخلفية والفحص الطبي واختبار المخدرات",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "معلومات خلفية إضافية",
@@ -436,8 +448,16 @@
       "value" : "رقم الهوية الوطنية",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "رمز تسجيل السكان الفريد (CURP)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "يرجى إدخال رقم ضمان اجتماعي صالح يتألّف من 9 أرقام بدون شرطة",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "يرجى إدخال رمز تسجيل السكان الفريد (CURP) على أن يكون صالحًا ومكونًا من 18 رقمًا بدون فاصلة خطية قصيرة",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "وفقًا لما أفصحتُ عنه وأذنتُ به في وثيقة الإفصاح والتفويض المنفصلة لقانون الإبلاغ عن الائتمان العادل، فإن شركة Amazon.com, Inc.‎ أو الشركات الفرعية أو الشركات التابعة لها (\"أمازون\") ستجري فحصًا للخلفية عني.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc.‎ أو الشركات الفرعية أو التابعة لها (\"أمازون\") ستجري فحصًا للخلفية عني.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "من خلال التوقيع الإلكتروني الخاص بي أدناه، أقرّ بأنني قد قرأت وفهمت وقبلت جميع البيانات الواردة في إقرارات وتفويضات قانون الإبلاغ عن الائتمان غير العادل لفحص الخلفية. يرجى تأكيد موافقتك عن طريق إدخال المعلومات المطلوبة في الحقول أدناه.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "من خلال توقيعي الإلكتروني أدناه، أقرّ بأنني قد قرأت وفهمت وقبلت جميع البيانات الواردة في هذه التفويضات لفحص الخلفية والفحص الطبي واختبار المخدرات. يرجى تأكيد موافقتك عن طريق إدخال المعلومات المطلوبة في الحقول أدناه.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "يرجى كتابة اسمك الكامل بصيغة توقيع إلكتروني",
@@ -1503,6 +1531,14 @@
     "BB-Schedule-card-total-pay-per-hour-text" : {
       "value" : "/ ساعة",
       "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "ما يصل إلى {formattedMonthlyRate}/الشهر",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "لا ينطبق",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ساعات / الأسبوع",
@@ -2283,6 +2319,50 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "معرف CURP:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "ذكر",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "أنثى",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "غير ذلك",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "أفضّل عدم التحديد",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "هو",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "هي",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "هم",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "أفضّل عدم التحديد",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "من السكان الأصليين",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "غير ذلك",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "أفضّل عدم التحديد",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

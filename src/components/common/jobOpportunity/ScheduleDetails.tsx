@@ -13,7 +13,7 @@ import { Text } from "@amzn/stencil-react-components/text";
 import moment from "moment";
 import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
-import { localeToLanguageList, CountryCode, PayRateType } from "../../../utils/constants/common";
+import { localeToLanguageList, PayRateType } from "../../../utils/constants/common";
 import { FEATURE_FLAG } from "../../../utils/enums/common";
 import {
   formatFlexibleTrainingDate,
@@ -53,8 +53,6 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     monthlyBasePay,
     monthlyBasePayL10N
   } = scheduleDetail;
-
-  const countryCode = getCountryCode();
 
   const renderStartDate = () => {
     const startDate = `${moment(firstDayOnSiteL10N || firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;

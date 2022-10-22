@@ -21,13 +21,14 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList, CountryCode } from "../../../utils/constants/common";
+import { ApplicationStepList } from "../../../utils/constants/common";
 import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { NHETimeSlot } from "../../../utils/types/common";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import StepHeader from "../../common/StepHeader";
 import DebouncedButton from "../../common/DebouncedButton";
+import { CountryCode } from "../../../utils/enums/common";
 
 interface MapStateToProps {
     job: JobState;

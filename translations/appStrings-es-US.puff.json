@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "mes",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "hora",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Tu recorrido para convertirte en un afiliado de Amazon comienza aquí.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "Estados Unidos",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "México",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Al presentar tu solicitud, confirmas que:",
@@ -320,6 +332,10 @@
       "value" : "Verificación de antecedentes",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consentimiento para la evaluación para el empleo",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Proporciona la autorización y la información necesaria para una verificación de antecedentes.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorizaciones para la verificación de antecedentes, el chequeo médico y la prueba de drogas",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Información adicional de antecedentes",
@@ -428,8 +448,16 @@
       "value" : "Número de identificación nacional",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID de CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ingresa un número de seguro social válido de 9 dígitos sin guión",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ingresa un ID de CURP válido de 18 dígitos sin guiones",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Tal y como he indicado y autorizado en el documento de Divulgación y autorización de la Ley de Informe Justo de Crédito por separado, Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”) realizarán una verificación de mis antecedentes.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. o sus subsidiarias o filiales (“Amazon”) realizarán una verificación de mis antecedentes.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Con mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones contenidas en este documento de reconocimiento y autorización de la Ley de Informe No Justo de Crédito para la verificación de antecedentes. Indica tu aceptación ingresando la información solicitada en los campos siguientes.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Por medio de mi firma electrónica a continuación, certifico que he leído, entiendo y acepto todas las declaraciones en estas autorizaciones para la verificación de antecedentes, el chequeo médico y la prueba de drogas. Indica tu aceptación ingresando la información solicitada en los campos siguientes.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Escribe tu nombre completo como firma electrónica",

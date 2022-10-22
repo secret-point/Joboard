@@ -40,6 +40,14 @@
       "value" : "Seleziona questo lavoro",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "mese",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "ora",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Visualizza avanzamento",
       "note" : "Text for the button to select or confirm job"
@@ -55,6 +63,10 @@
     "BB-Country-United-States" : {
       "value" : "Stati Uniti",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Messico",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Effettuando la tua candidatura, confermi che:",
@@ -328,6 +340,10 @@
       "value" : "Controllo dell’esperienza professionale",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Consenso allo screening del percorso lavorativo",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Fornisci l'autorizzazione e le informazioni necessarie per un controllo dei precedenti.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +351,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Accettazioni e autorizzazioni del Non-Fair Credit Reporting Act per il controllo dei precedenti",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorizzazioni per il controllo dei precedenti, il controllo medico e il test antidroga",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informazioni aggiuntive sui precedenti",
@@ -436,8 +456,16 @@
       "value" : "Numero di documento di identità",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "ID CURP",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Inserisci un numero di previdenza sociale valido di 9 cifre senza trattino",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Inserisci un ID CURP valido di 18 cifre senza trattino",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +614,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Come da me comunicato e autorizzato nel documento separato Fair Credit Reporting Act Disclosure and Authorization, Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”) effettueranno un controllo dei miei precedenti.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. o le sue consociate o affiliate (“Amazon”) effettueranno un controllo dei miei precedenti.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +803,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Con la mia firma elettronica qui sotto, certifico di aver letto, sottinteso e accettato tutte le dichiarazioni contenute nel presente documento di accettazioni e autorizzazioni sul Non-Fair Credit Reporting Act per il controllo dei precedenti. Indica il tuo assenso inserendo le informazioni richieste nei campi sottostanti.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Con la firma elettronica della seguente, dichiaro di aver letto, compreso e accettato tutte le dichiarazioni contenute nelle presenti Autorizzazioni per il controllo dei precedenti, il controllo medico e il test antidroga. Indica il tuo assenso inserendo le informazioni richieste nei campi sottostanti.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Digita il tuo nome e cognome come firma elettronica",

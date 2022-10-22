@@ -349,3 +349,8 @@ export enum BGC_VENDOR_TYPE {
     FADV = "FADV",
     ACCURATE = "ACCURATE"
 }
+
+export enum CountryCode {
+    MX = "MX",
+    US = "US",
+}

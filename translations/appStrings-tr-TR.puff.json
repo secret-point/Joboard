@@ -40,6 +40,14 @@
       "value" : "Bu işi seç",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "ay",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "sa",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "İlerlemeyi görüntüle",
       "note" : "Text for the button to select or confirm job"
@@ -55,6 +63,10 @@
     "BB-Country-United-States" : {
       "value" : "Amerika Birleşik Devletleri",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Meksika.",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Başvurarak şunları onaylarsınız:",
@@ -328,6 +340,10 @@
       "value" : "Geçmiş Sorgulaması",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "İstihdam taraması onayı.",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Lütfen geçmiş kontrolü için gerekli yetki ve bilgileri sağlayın.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +351,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Adil Olmayan Kredi Raporlama Yasası Onayları ve Geçmiş Kontrolü için Yetkiler",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Geçmiş kontrolü, tıbbi kontrol ve uyuşturucu testi yetkilendirmeleri.",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Ek geçmiş kontrolü bilgileri",
@@ -436,8 +456,16 @@
       "value" : "Ulusal Kimlik Numarası",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ki̇mli̇ği̇.",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Lütfen 9 basamaklı geçerli bir sosyal güvenlik numarası girin (kısa çizgi olmadan)",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Lütfen geçerli, 18 basamaklı, kısa çizgisiz olmadan CURP kimliğini girin.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +614,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Ayrı Adil Kredi Raporlama Yasası Açıklama ve Yetkilendirme Belgesinde açıklandığı ve tarafımdan yetkilendirildiği üzere, Amazon.com, Inc. veya yan kuruluşları veya bağlı kuruluşları (\"Amazon\") benim hakkımda bir geçmiş kontrolü yapacaktır.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. veya yan kuruluşları veya bağlı kuruluşları (\"Amazon\") benim hakkımda geçmiş kontrolü yapacaktır.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +803,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Aşağıdaki e-İmzam ile, bu Adil Olmayan Kredi Raporlama Yasası Teşekkür ve Geçmiş Kontrolü için Yetkilerdeki tüm ifadeleri okuduğumu, anladığımı ve kabul ettiğimi onaylıyorum. Lütfen aşağıdaki alanlara istenen bilgileri girerek kabul ettiğinizi belirtin.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Aşağıdaki e-imzam ile geçmiş kontrolü, tıbbi kontrol ve uyuşturucu testi yetkilendirmelerindeki tüm ifadeleri okuduğumu, anladığımı ve kabul ettiğimi onaylıyorum. Lütfen aşağıdaki alanlara istenen bilgileri girerek kabul ettiğinizi belirtin.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Lütfen tam adınızı e-İmza olarak yazın",
@@ -1411,6 +1447,10 @@
     "BB-ThankYou-fill-wotc-description-text" : {
       "value" : "İşe alım öncesi randevunuzdan önce İş Fırsatları Vergi Kredisi Anketini doldurun.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
+    },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Mülakat randevunuzdan önce bir dizi mülakat öncesi işlemi tamamlamanız gerekecek.",
+      "note" : "Text for the thank you page redirect to ash description text"
     },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Hemen başlayın",
@@ -2287,6 +2327,50 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Erkek.",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Kadın.",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Diğer.",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Söylememeyi tercih ederim.",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Erkek.",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Kadın.",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "Ne erkek ne kadın.",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Söylememeyi tercih ederim.",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Yerli.",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Diğer.",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Söylememeyi tercih ederim.",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

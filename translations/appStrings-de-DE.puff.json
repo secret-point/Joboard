@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "Monat",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "Stunde",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Dein Weg zum Amazon-Mitarbeiter beginnt hier.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "USA",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexiko",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Mit deiner Bewerbung bestätigst du, dass:",
@@ -320,6 +332,10 @@
       "value" : "Hintergrundüberprüfung",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Zustimmung zum Beschäftigungs-Screening",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Bitte gib die Genehmigung und die für eine Hintergrundüberprüfung erforderlichen Informationen an.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Nicht-Fair Credit Reporting Act (FCRA) Bestätigungen und Autorisierungen für Hintergrundüberprüfung",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Autorisierungen für Hintergrundüberprüfungen, medizinische Untersuchungen und Drogentests",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Zusätzliche Hintergrundinformationen",
@@ -428,8 +448,16 @@
       "value" : "Personalausweisnummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP-ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Bitte gib eine gültige 9-stellige Sozialversicherungsnummer ohne Bindestrich ein",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Bitte gib eine gültige 18-stellige CURP-ID ohne Bindestrich ein",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Wie in dem separaten Offenlegungs- und Genehmigungsdokument des Fair Credit Reporting Act offengelegt und von mir genehmigt, wird Amazon.com, Inc. oder seine Tochtergesellschaften oder verbundenen Unternehmen („Amazon“) eine Hintergrundüberprüfung über mich durchführen.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. oder seine Tochtergesellschaften oder verbundenen Unternehmen („Amazon“) werden eine Hintergrundüberprüfung über mich durchführen.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Mit meiner nachstehenden elektronischen Signatur bestätige ich, dass ich alle Erklärungen in diesen Nicht-Fair Credit Reporting Act Bestätigungen und Autorisierungen für Hintergrundüberprüfung gelesen, verstanden und akzeptiert habe. Bitte bestätige dein Einverständnis, indem du die geforderten Informationen in die nachstehenden Felder einträgst.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Mit meiner nachstehenden elektronischen Signatur bestätige ich, dass ich alle Erklärungen in diesen Autorisierungen für Hintergrundüberprüfungen, medizinische Untersuchungen und Drogentests gelesen, verstanden und akzeptiert habe. Bitte bestätige dein Einverständnis, indem du die geforderten Informationen in die nachstehenden Felder einträgst.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Bitte gib deinen vollständigen Namen als elektronische Signatur ein",
@@ -1404,6 +1440,10 @@
       "value" : "Fülle für deinen Termin vor der Einstellung den Fragebogen zu den Steuergutschriften für Arbeitsmöglichkeiten (WOTC) aus.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Vor deinem Voreinstellungstermin musst du eine Reihe von Aktivitäten absolvieren, die der Einstellung vorausgehen.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Fangen wir an",
       "note" : "Text for the thank you page let's get started button text"
@@ -1531,6 +1571,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Vergütungssatz",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Einmaliger Anmeldebonus",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Stunden",

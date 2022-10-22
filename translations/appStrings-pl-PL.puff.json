@@ -40,6 +40,14 @@
       "value" : "Wybierz to stanowisko",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "miesiąc",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "godz.",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Zobacz postęp",
       "note" : "Text for the button to select or confirm job"
@@ -55,6 +63,10 @@
     "BB-Country-United-States" : {
       "value" : "Stany Zjednoczone",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Meksyk",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Składając wniosek, potwierdzasz, że:",
@@ -328,6 +340,10 @@
       "value" : "Weryfikacja przeszłości",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Zgoda na selekcję pracowników do pracy",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Zapewnij upoważnienie i informacje potrzebne do weryfikacji przeszłości.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +351,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Uznania i upoważnienia do weryfikacji przeszłości związane z ustawą o nieuczciwej sprawozdawczości kredytowej (Non-Fair Credit Reporting Act)",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Zezwolenia na weryfikację przeszłości, badanie lekarskie i test narkotykowy",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Dodatkowe informacje dotyczące przeszłości",
@@ -436,8 +456,16 @@
       "value" : "Numer dowodu tożsamości",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Wprowadź prawidłowy 9-cyfrowy numer ubezpieczenia społecznego bez myślnika",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Wprowadź prawidłowy 18-cyfrowy CURP ID bez myślnika",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -586,6 +614,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Jak ujawniam i upoważniam w odrębnym dokumencie Fair Credit Reporting Act Disclosure and Authorization Document (deklaracja zgodnie z ustawą o uczciwej sprawozdawczości kredytowej), Amazon.com, Inc. lub jej spółki zależne lub stowarzyszone („Amazon”) przeprowadzą weryfikację mojej przeszłości.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. lub jej spółki zależne lub stowarzyszone („Amazon”) przeprowadzą weryfikację mojej przeszłości.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +803,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Składając podpis elektroniczny poniżej, oświadczam, że znam, rozumiem i akceptuję wszelkie oświadczenia zawarte w ustawie o nieuczciwej sprawozdawczości kredytowej (Non-Fair Credit Reporting Act) oraz uznania i upoważnienia do weryfikacji przeszłości. Prosimy o wyrażenie zgody, wprowadzając wymagane informacje w poniższych polach.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Składając poniższy podpis elektroniczny, oświadczam, że przeczytałem(-am), zrozumiałem(-am) i akceptuję wszystkie oświadczenia zawarte w niniejszym upoważnieniu do przeprowadzenia weryfikacji przeszłości, badania lekarskiego i testu narkotykowego. Wyraź zgodę, wpisując wymagane informacje w poniższych polach.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Wpisz swoje imię i nazwisko jako podpis elektroniczny",

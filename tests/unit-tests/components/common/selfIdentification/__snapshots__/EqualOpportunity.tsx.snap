@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Equal Opportunity Form Country MX should match snapshot when country is MX 1`] = `
+<Col
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Amazon values all forms of diversity and is subject to certain nondiscrimination and affirmative action recordkeeping and reporting requirements which require us to invite candidates and employees to voluntarily self-identify their gender and race/ethnicity. Submission of this information is voluntary and refusal to provide it will not subject you to any adverse treatment. The information obtained will be kept confidential and may only be used in accordance with the provisions of applicable federal laws, executive orders, and regulations, including those which require the information to be summarized and reported to the Federal Government for civil rights enforcement purposes. If you choose not to self-identify your gender or race/ethnicity at this time, the federal government requires us to determine this information for employees by visual survey and /or other available information.
+  </Text>
+  <Col
+    gridGap={15}
+  >
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your gender?
+         * 
+      </LabelText>
+      <DetailedRadio
+        defaultChecked={true}
+        key="Male"
+        name="gender"
+        onChange={[Function]}
+        titleText="Male"
+        value="Male"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Female"
+        name="gender"
+        onChange={[Function]}
+        titleText="Female"
+        value="Female"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Other"
+        name="gender"
+        onChange={[Function]}
+        titleText="Other"
+        value="Other"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Prefer not to say"
+        name="gender"
+        onChange={[Function]}
+        titleText="Prefer not to say"
+        value="Prefer not to say"
+      />
+    </FormWrapper>
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your pronoun?
+         * 
+      </LabelText>
+      <DetailedRadio
+        defaultChecked={false}
+        key="He"
+        name="pronoun"
+        onChange={[Function]}
+        titleText="He"
+        value="He"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="She"
+        name="pronoun"
+        onChange={[Function]}
+        titleText="She"
+        value="She"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="They"
+        name="pronoun"
+        onChange={[Function]}
+        titleText="They"
+        value="They"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Other"
+        name="pronoun"
+        onChange={[Function]}
+        titleText="Other"
+        value="Other"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Prefer not to say"
+        name="pronoun"
+        onChange={[Function]}
+        titleText="Prefer not to say"
+        value="Prefer not to say"
+      />
+    </FormWrapper>
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your race/ethnic background?
+         * 
+      </LabelText>
+      <DetailedRadio
+        defaultChecked={false}
+        key="Indigenous"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Indigenous"
+        value="Indigenous"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Other"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Other"
+        value="Other"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Prefer not to say"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Prefer not to say"
+        value="Prefer not to say"
+      />
+    </FormWrapper>
+  </Col>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Next
+    </Button>
+  </Col>
+</Col>
+`;
+
+exports[`Equal Opportunity Form Country US should match snapshot when country is US 1`] = `
+<Col
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Amazon values all forms of diversity and is subject to certain nondiscrimination and affirmative action recordkeeping and reporting requirements which require us to invite candidates and employees to voluntarily self-identify their gender and race/ethnicity. Submission of this information is voluntary and refusal to provide it will not subject you to any adverse treatment. The information obtained will be kept confidential and may only be used in accordance with the provisions of applicable federal laws, executive orders, and regulations, including those which require the information to be summarized and reported to the Federal Government for civil rights enforcement purposes. If you choose not to self-identify your gender or race/ethnicity at this time, the federal government requires us to determine this information for employees by visual survey and /or other available information.
+  </Text>
+  <Col
+    gridGap={15}
+  >
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your gender?
+         * 
+      </LabelText>
+      <DetailedRadio
+        defaultChecked={true}
+        key="Male"
+        name="gender"
+        onChange={[Function]}
+        titleText="Male"
+        value="Male"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="Female"
+        name="gender"
+        onChange={[Function]}
+        titleText="Female"
+        value="Female"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="I choose not to self-identify"
+        name="gender"
+        onChange={[Function]}
+        titleText="I choose not to self-identify"
+        value="I choose not to self-identify"
+      />
+    </FormWrapper>
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your pronoun?
+         * 
+      </LabelText>
+    </FormWrapper>
+    <FormWrapper
+      columnGap={10}
+    >
+      <LabelText
+        color="neutral70"
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        What is your race/ethnic background?
+         * 
+      </LabelText>
+      <DetailedRadio
+        defaultChecked={false}
+        details="Persons having origins in any of the original peoples of North and South America, (including Central America), and who maintain tribal affiliation or community attachment"
+        key="American Indian/Alaska Native (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="American Indian/Alaska Native (not Hispanic or Latino)"
+        value="American Indian/Alaska Native"
+      />
+      <DetailedRadio
+        defaultChecked={true}
+        details="Persons having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian Subcontinent; including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand and Vietnam"
+        key="Asian (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Asian (not Hispanic or Latino)"
+        value="Asian (not Hispanic or Latino)"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        details="Persons having origins in any of the Black racial groups of Africa"
+        key="Black/African American (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Black/African American (not Hispanic or Latino)"
+        value="Black/African American"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        details="Persons of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race"
+        key="Hispanic/Latino"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Hispanic/Latino"
+        value="Hispanic/Latino"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        details="Persons having origins in any of the peoples of Hawaii, Guam, Samoa, or other Pacific Islands"
+        key="Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+        value="Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        details="Persons having origins in any of the original peoples of Europe, the Middle East or North Africa"
+        key="White (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="White (not Hispanic or Latino)"
+        value="White (not Hispanic or Latino)"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        details="Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander, (5) American Indian/Alaska Native"
+        key="Two or more Races (not Hispanic or Latino)"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="Two or more Races (not Hispanic or Latino)"
+        value="Two or more Races (not Hispanic or Latino)"
+      />
+      <DetailedRadio
+        defaultChecked={false}
+        key="I choose not to self-identify"
+        name="ethnicity"
+        onChange={[Function]}
+        titleText="I choose not to self-identify"
+        value="I choose not to Self-Identify"
+      />
+    </FormWrapper>
+  </Col>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Next
+    </Button>
+  </Col>
+</Col>
+`;

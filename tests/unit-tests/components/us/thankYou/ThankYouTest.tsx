@@ -1,12 +1,21 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { act } from "react-dom/test-utils";
-import { ThankYou, mapStateToProps } from "../../../../../src/components/us/thankYou/ThankYou";
-import * as helper from '../../../../../src/utils/helper'
-import { CountryCode } from "../../../../../src/utils/constants/common";
+import { mapStateToProps, ThankYou } from "../../../../../src/components/us/thankYou/ThankYou";
+import * as helper from "../../../../../src/utils/helper";
+import { CountryCode } from "../../../../../src/utils/enums/common";
 import * as boundUi from "../../../../../src/actions/UiActions/boundUi";
-import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST_JOB_ID, TEST_JOB_STATE, TEST_SCHEDULE_ID, TEST_SCHEDULE_STATE, TEST_THANK_YOU_STATE } from "../../../../test-utils/test-data";
+import {
+  TEST_APPLICATION_ID,
+  TEST_APPLICATION_STATE,
+  TEST_CANDIDATE_STATE,
+  TEST_JOB_ID,
+  TEST_JOB_STATE,
+  TEST_SCHEDULE_ID,
+  TEST_SCHEDULE_STATE,
+  TEST_THANK_YOU_STATE
+} from "../../../../test-utils/test-data";
 
 describe("ThankYou", () => {
   const mockLocation = {

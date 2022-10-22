@@ -1,6 +1,7 @@
 import {
     APPLICATION_STEPS,
     BACKGROUND_AGENT,
+    CountryCode,
     DAYS_OF_WEEK,
     DESIRED_WORK_HOURS,
     FCRA_DISCLOSURE_TYPE,
@@ -562,6 +563,34 @@ export const SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
     }
 ]
 
+export const MX_SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
+    {
+        title: "Male",
+        value: "Male",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-mx-male-text"
+    },
+    {
+        title: "Female",
+        value: "Female",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-mx-female-text"
+    },
+    {
+        title: "Other",
+        value: "Other",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-mx-other-text"
+    },
+    {
+        title: "Prefer not to say",
+        value: "Prefer not to say",
+        titleTranslationKey: "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text"
+    }
+]
+
+export const SelfIdGenderRadioItemsMap: {[key in CountryCode]: DetailedRadioButtonItem[]} = {
+    [CountryCode.MX]: MX_SelfIdGenderRadioItems,
+    [CountryCode.US]: SelfIdGenderRadioItems
+}
+
 export const SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
     {
         title: "American Indian/Alaska Native (not Hispanic or Latino)",
@@ -636,6 +665,62 @@ export const SelfIdVeteranStatusRadioItem: DetailedRadioButtonItem[] = [
         titleTranslationKey: "BB-SelfId-equal-opportunity-form-veteran-status-option-choose-not-to-identify-text"
     }
 ]
+
+export const MX_SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
+    {
+        title: "Indigenous",
+        value: "Indigenous",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text',
+    },
+    {
+        title: "Other",
+        value: "Other",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text',
+    },
+    {
+        title: "Prefer not to say",
+        value: "Prefer not to say",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text',
+    }
+]
+
+export const SelfIdEthnicBackgroundItemsMap: {[Key in CountryCode]: DetailedRadioButtonItem[]} = {
+    [CountryCode.US]: SelfIdEthnicBackgroundItems,
+    [CountryCode.MX]: MX_SelfIdEthnicBackgroundItems
+}
+
+export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
+    {
+        title: "He",
+        value: "He",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text',
+    },
+    {
+        title: "She",
+        value: "She",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text',
+    },
+    {
+        title: "They",
+        value: "They",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text',
+    },
+    {
+        title: "Other",
+        value: "Other",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text',
+    },
+    {
+        title: "Prefer not to say",
+        value: "Prefer not to say",
+        titleTranslationKey: 'BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text',
+    },
+]
+
+export const SelfIdPronounsItemsMap: {[Key in CountryCode]: DetailedRadioButtonItem[]} = {
+    [CountryCode.MX]: MX_SelfIdPronounsItems,
+    [CountryCode.US]: []
+}
 
 export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
     {
@@ -933,11 +1018,6 @@ export const localeToLanguageList: localeToLanguageItem[] = [
         locale: Locale.esMX
     },
 ];
-
-export enum CountryCode {
-    MX = "MX",
-    US = "US",
-}
 
 export const US_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
     completedSteps: [],

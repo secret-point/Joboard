@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "ತಿಂಗಳು",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "ಗಂಟೆ",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazon associate ಆಗುವ ನಿಮ್ಮ ಪ್ರಯಾಣ ಇಲ್ಲಿ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "ಮೆಕ್ಸಿಕೊ",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "ಅಪ್ಲೈ ಮಾಡುವ ಮೂಲಕ, ನೀವು ಅದನ್ನು ಖಚಿತಪಡಿಸುತ್ತೀರಿ:",
@@ -320,6 +332,10 @@
       "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "ಉದ್ಯೋಗ ಸ್ಕ್ರೀನಿಂಗ್‌ಗೆ ಒಪ್ಪಿಗೆ",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "ದಯವಿಟ್ಟು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗೆ ಅಗತ್ಯವಿರುವ ದೃಢೀಕರಣ ಮತ್ತು ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿ.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "ನಾನ್-ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆಕ್ಟ್ ಸ್ವೀಕೃತಿ ಮತ್ತು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗಾಗಿ ಅಧಿಕಾರ",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ, ವೈದ್ಯಕೀಯ ತಪಾಸಣೆ ಮತ್ತು ಡ್ರಗ್ ಟೆಸ್ಟ್‌ಗೆ ಅಧಿಕಾರ ನೀಡುವಿಕೆಗಳು",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "ಹೆಚ್ಚುವರಿ ಹಿನ್ನೆಲೆ ಮಾಹಿತಿ",
@@ -428,8 +448,16 @@
       "value" : "ರಾಷ್ಟ್ರೀಯ ID ಸಂಖ್ಯೆ",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ಡ್ಯಾಶ್ ಗುರುತು ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 9 ಅಂಕಿಗಳ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ಡ್ಯಾಶ್ ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 18 ಡಿಜಿಟ್‌ನ CURP ID ಅನ್ನು ನಮೂದಿಸಿ",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "ಪ್ರತ್ಯೇಕ ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆ್ಯಕ್ಟ್ ಡಿಸ್‌ಕ್ಲೋಸರ್ ಮತ್ತು ಆಥರೈಸೇಶನ್ ಡಾಕ್ಯುಮೆಂಟ್, Amazon.com, Inc ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಫಿಲಿಯೇಟ್‍‌ಗಳಲ್ಲಿ (\"Amazon\") ನಾನು ಬಹಿರಂಗಪಡಿಸಿದಂತೆ ಮತ್ತು ಅಧಿಕೃತಗೊಳಿಸಿದಂತೆ, ನನ್ನ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ನಡೆಸುತ್ತವೆ.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅಫಿಲಿಯೇಟ್‌ಗಳು (\"Amazon\") ನನ್ನ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ನಡೆಸುತ್ತವೆ.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "ಕೆಳಗಿನ ನನ್ನ ಇ-ಸಹಿಯ ಮೂಲಕ, ನಾನು ಈ ನಾನ್-ಫೇರ್ ಕ್ರೆಡಿಟ್ ರಿಪೋರ್ಟಿಂಗ್ ಆ್ಯಕ್ಟ್ ದೃಢೀಕರಣ ಮತ್ತು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ದೃಢೀಕರಣದಲ್ಲಿನ ಎಲ್ಲಾ ಹೇಳಿಕೆಗಳನ್ನು ಓದಿದ್ದೇನೆ, ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಸ್ವೀಕರಿಸಿದ್ದೇನೆ ಎಂದು ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇನೆ. ಕೆಳಗಿನ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ವಿನಂತಿಸಿದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಅಂಗೀಕಾರವನ್ನು ಸೂಚಿಸಿ.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "ಕೆಳಗೆ ನನ್ನ ಇ-ಸಹಿ ಮಾಡುವ ಮೂಲಕ, ನಾನು ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ, ವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆ ಮತ್ತು ಡ್ರಗ್ ಟೆಸ್ಟ್‌ಗೆ ದೃಢೀಕರಣದಲ್ಲಿನ ಎಲ್ಲಾ ಹೇಳಿಕೆಗಳನ್ನು ಓದಿದ್ದೇನೆ, ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಒಪ್ಪಿಕೊಂಡಿದ್ದೇನೆ ಎಂದು ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇನೆ. ಕೆಳಗಿನ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ವಿನಂತಿಸಿದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಅಂಗೀಕಾರವನ್ನು ಸೂಚಿಸಿ.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ಇ-ಸಹಿಯ ರೂಪದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ",
@@ -1404,6 +1440,10 @@
       "value" : "ನೀವು ಪ್ರಿ-ಹೈರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟಿನ ಮೊದಲು, ದಯವಿಟ್ಟು ಉದ್ಯೋಗ ಅವಕಾಶಗಳ ತೆರಿಗೆ ಕ್ರೆಡಿಟ್ ಪ್ರಶ್ನಾವಳಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "ನಿಮ್ಮ ಪ್ರೀ-ಹೈಯರ್ ಅಪಾಯಿಂಟ್ಮೆಂಟ್‌ಗೂ ಮೊದಲು, ನೀವು ಪ್ರೀ-ಹೈಯರ್ ಚಟುವಟಿಕೆಗಳ ಕ್ರಮವನ್ನು ಪೂರ್ಣಗೊಳಿಸಬೇಕಾಗುತ್ತದೆ.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "ನಾವೀಗ ಆರಂಭಿಸೋಣ",
       "note" : "Text for the thank you page let's get started button text"
@@ -1531,6 +1571,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "ಪಾವತಿ ದರ",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "ಬೋನಸ್‌ನಲ್ಲಿ ಒಂದು-ಬಾರಿ ಸೈನ್ ಇನ್",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "ಗಂಟೆಗಳು",

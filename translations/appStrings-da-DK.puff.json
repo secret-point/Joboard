@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "måned",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "time",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Din rejse mod at blive Amazon-partner begynder her.",
       "note" : "Text for PreConsentPage banner text"
@@ -47,6 +55,10 @@
     "BB-Country-United-States" : {
       "value" : "USA",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "Mexico",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Ved at ansøge bekræfter du, at:",
@@ -320,6 +332,10 @@
       "value" : "Baggrundstjek",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Samtykke til screening af beskæftigelse",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Angiv tilladelse og de nødvendige oplysninger til en baggrundskontrol.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +343,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Anerkendelser og tilladelser til baggrundsundersøgelse i henhold til Non-Fair Credit Reporting Act",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Tilladelse til Baggrundstjek, Medicinsk tjek og Stoftest",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Yderligere baggrundsinformation",
@@ -428,8 +448,16 @@
       "value" : "Nationalt id-nummer",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP-ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Indtast et gyldigt 9-cifret Social Security-nummer (CPR) uden bindestreg",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Indtast venligst et gyldigt 18 cifre CURP-ID uden bindestreg",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -578,6 +606,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Som beskrevet og godkendt af mig i det separate Fair Credit Reporting Act Disclosure and Authorization Document, vil Amazon.com, Inc. eller dets datterselskaber eller tilknyttede selskaber („Amazon“) foretage en baggrundskontrol af mig.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. eller dets datterselskaber, eller tilknyttede selskaber (“Amazon“), vil foretage en baggrundskontrol af mig.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -763,6 +795,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Ved min e-signatur nedenfor bekræfter jeg, at jeg har læst, forstået og accepteret alle erklæringer i denne Non-Fair Credit Reporting Act Acknowledgments And Authorizations For Background Check. Angiv din accept ved at indtaste de ønskede oplysninger i felterne nedenfor.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Med min e-signatur nedenfor, bekræfter jeg, at jeg har læst, forstået og accepteret alle udsagn i denne Tilladelse til Baggrundstjek, Medicinsk tjek og Stoftest. Angiv din accept, ved at indtaste de ønskede oplysninger i felterne nedenfor.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Indtast dit fulde navn som eSignature",
@@ -1404,6 +1440,10 @@
       "value" : "Forud for din ansættelsessamtale skal du udfylde spørgeskemaet om skattefradrag for arbejdsmuligheder.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "Inden din forudlejeaftale, bliver du nødt til at gennemføre en række aktiviteter for forudleje.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "Lad os komme i gang",
       "note" : "Text for the thank you page let's get started button text"
@@ -1492,6 +1532,14 @@
       "value" : "/time",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Op til{formattedMonthlyRate}/måned",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "IKKE RELEVANT",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "timer/uge",
       "note" : "Text for the schedule card hours per week text"
@@ -1531,6 +1579,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Lønsats",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Engangsskilt på bonus",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Timer",
