@@ -472,10 +472,6 @@
       "value" : "出生日期",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "請輸入有效的出生日期。",
-      "note" : "Text for the additional bgc form date of birth error message text."
-    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "您必須年滿 18 歲。",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -2355,6 +2351,10 @@
     "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
       "value" : "他們",
       "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "其他",
+      "note" : "Text for Self Identification Pronouns: Other"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "不願表明",

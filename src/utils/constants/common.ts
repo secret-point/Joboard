@@ -444,7 +444,7 @@ export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
     {
         hasError: false,
         labelText: 'Date of Birth',
-        errorMessage: 'Please enter a valid Date of birth.',
+        errorMessage: 'Please enter a valid date of birth.',
         required: true,
         name: 'Date of Birth',
         dataKey: 'additionalBackgroundInfo.dateOfBirth',

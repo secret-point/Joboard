@@ -472,10 +472,6 @@
       "value" : "Data de nascimento",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Insira uma data de nascimento válida.",
-      "note" : "Text for the additional bgc form date of birth error message text."
-    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "É necessário ter mais de 18 anos de idade.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -2327,6 +2323,54 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "ID CURP:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Masculino",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Feminino",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Outros",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Prefiro não dizer",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Ele",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Ela",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "Eles",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Outros",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Prefiro não dizer",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Indígena",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Outros",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Prefiro não dizer",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

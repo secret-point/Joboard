@@ -40,6 +40,14 @@
       "value" : "Vælg dette job",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "måned",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "t",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Se fremskridt",
       "note" : "Text for the button to select or confirm job"
@@ -463,10 +471,6 @@
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Fødselsdato",
       "note" : "Text for the additional bgc form  date of birth label text"
-    },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Indtast en gyldig fødselsdato.",
-      "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "Du skal være over 18 år gammel.",
@@ -2319,6 +2323,54 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP-ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Mand",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Kvinde",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Andet",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Foretrækker ikke at svare",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Han",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Hun",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "De",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Andet",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Foretrækker ikke at svare",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Indfødte",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Andet",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Foretrækker ikke at svare",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

@@ -678,12 +678,15 @@ export const isDOBOverEighteen = (dateOfBirth: string) => {
     return now - dob > 180000;
 }
 
-export const isValidDOB = (dateOfBirth: string): boolean => {
+export const isDOBLessThan100 = (dateOfBirth: string): boolean => {
     if(!dateOfBirth) {
         return false;
     }
 
-    return moment(dateOfBirth) >= moment('1700-01-01');
+    const today = moment();
+    const diff = today.diff(moment(dateOfBirth), 'year');
+
+    return diff <= 100;
 }
 
 export const validateInput = (value: string, required: boolean, regex: string) => {
@@ -934,7 +937,7 @@ export const handleSubmitAdditionalBgc =
         boundUpdateCandidateInfoError(verifyInfo.formError);
         const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
         const isOver18 = isDOBOverEighteen(dob);
-        const isDateValid = isValidDOB(dob);
+        const isDateValid = isDOBLessThan100(dob);
         if(!verifyInfo.hasError && isOver18 && isDateValid) {
             //Bound update additional info all
             const payload = {

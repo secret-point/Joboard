@@ -473,7 +473,7 @@
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Ange ett giltigt födelsedatum.",
+      "value" : "Vänligen fyll i ett giltigt födelsedatum.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
@@ -2356,6 +2356,10 @@
       "value" : "De",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Annat",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "Jag föredrar att inte säga",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2371,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "Jag föredrar att inte säga",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Vänligen fyll i ditt födelsedatum.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Du måste vara under 100 år gammal.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

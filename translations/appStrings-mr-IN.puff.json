@@ -465,7 +465,7 @@
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "कृपया वैध जन्मतारीख प्रविष्ट करा.",
+      "value" : "कृपया वैध जन्मतारीख एंटर करा.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
@@ -2319,6 +2319,18 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "इतर",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "कृपया तुमची जन्मतारीख एंटर करा.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "तुमचे वय 100 वर्षांपेक्षा कमी असणे आवश्यक आहे.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

@@ -9,6 +9,7 @@ import {
   getKeyMapFromDetailedRadioItemList,
   isAdditionalBgcInfoValid,
   isAddressValid,
+  isDOBLessThan100,
   isI18nSelectOption,
   isNewBBuiPath,
   isSelfIdentificationInfoValid,
@@ -28,7 +29,6 @@ import {
   getMXCountryCodeByCountryName,
   onAssessmentStart,
   validateInput,
-  isValidDOB,
   isDOBOverEighteen
 } from "../../../src/utils/helper";
 import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
@@ -376,20 +376,6 @@ describe("validateInput", () => {
   })
 })
 
-describe("isValidDOB", () => {
-  it("should return true", () => {
-    expect(isValidDOB("1970-01-01")).toEqual(true);
-  })
-
-  it("should return false", () => {
-    expect(isValidDOB("")).toEqual(false);
-  })
-
-  it("should return false", () => {
-    expect(isValidDOB("1980-13-13")).toEqual(false);
-  })
-})
-
 describe("isDOBOverEighteen", () => {
   it("should return false", () => {
     expect(isDOBOverEighteen("")).toEqual(false)
@@ -402,4 +388,13 @@ describe("isDOBOverEighteen", () => {
   it("should return true", () => {
     expect(isDOBOverEighteen("2004-01-01")).toEqual(true)
   })
+})
+
+test("isDOBLessThan100", () => {
+  expect(isDOBLessThan100("05-10-1999")).toBeTruthy();
+  expect(isDOBLessThan100("1999-05-10")).toBeTruthy();
+  expect(isDOBLessThan100("15-10-1199")).toBeFalsy();
+  expect(isDOBLessThan100("18-89-4586")).toBeFalsy();
+  expect(isDOBLessThan100("")).toBeFalsy();
+  expect(isDOBLessThan100("15-10-1922")).toBeFalsy();
 })

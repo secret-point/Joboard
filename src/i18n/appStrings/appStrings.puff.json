@@ -476,7 +476,7 @@
         },
         "BB-BGC-Additional-bgc-form-dob-error-text": {
             "note": "Text for the additional bgc form date of birth error message text.",
-            "value": "Please enter a valid Date of Birth."
+            "value": "Please enter a valid date of Birth."
         },
         "BB-BGC-Additional-bgc-form-dob-below18-error-text": {
             "note": "Text for the additional bgc form date of birth below 18 years error message text.",
@@ -2376,6 +2376,14 @@
         "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
             "note" : "Text for Self Identification MX Ethnicity: Prefer not to say",
             "value" : "Prefer not to say"
+        },
+        "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+            "note" : "Text for additional bgc when date of birth is empty",
+            "value" : "Please enter your date of birth."
+        },
+        "BB-BGC-Additional-bgc-form-dob-above100-text": {
+            "note" : "Text for additional bgc when date of birth is above 100",
+            "value" : "You need to be below 100 years old."
         }
     }
 }

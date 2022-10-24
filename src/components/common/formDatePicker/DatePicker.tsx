@@ -7,7 +7,7 @@ import moment from "moment";
 import { FormInputItem } from "../../../utils/types/common";
 import { PopoverPosition } from "@amzn/stencil-react-components/popover";
 import { translate as t } from "../../../utils/translator";
-import { getLocale } from "../../../utils/helper";
+import { getLocale, isDOBLessThan100 } from "../../../utils/helper";
 
 type RenderPopupContentProps = {
     calendar: React.ReactNode;
@@ -124,6 +124,7 @@ const DatePicker = ( props: DatePickerProps ) => {
                             width: "100%",
                             error: hasError,
                         }}
+                        isDateDisabled={(value) => !isDOBLessThan100(value)}
                     />
                 )}
             </InputWrapper>

@@ -40,6 +40,14 @@
       "value" : "ഈ ജോലി തിരഞ്ഞെടുക്കുക",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "മാസം",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "മണിക്കൂർ",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "പുരോഗതി കാണുക",
       "note" : "Text for the button to select or confirm job"
@@ -465,7 +473,7 @@
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "ദയവായി സാധുതയുള്ള ജനന തിയതി നൽകുക.",
+      "value" : "ദയവായി സാധുവായ ജനനത്തീയതി നൽകുക.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
@@ -1440,6 +1448,10 @@
       "value" : "നിങ്ങളുടെ പ്രീ-ഹയർ അപ്പോയിന്‍മെന്‍റിന് മുമ്പ്, വർക്ക് ഓപ്പർച്യുണിറ്റീസ് ടാക്സ് ക്രെഡിറ്റ് ചോദ്യാവലി പൂരിപ്പിക്കുക.",
       "note" : "Text for the thank you page fill wotc (Work Opportunities Tax Credit) Questionnaire description text"
     },
+    "BB-ThankYou-redirect-to-ash-text" : {
+      "value" : "നിങ്ങളുടെ നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റിന് മുമ്പ്, നിങ്ങൾ നിയമനത്തിന് മുമ്പുള്ള പ്രവർത്തനങ്ങളുടെ ഒരു പരമ്പര പൂർത്തിയാക്കേണ്ടതുണ്ട്.",
+      "note" : "Text for the thank you page redirect to ash description text"
+    },
     "BB-ThankYou-get-started-button-text" : {
       "value" : "നമുക്ക് ആരംഭിക്കാം",
       "note" : "Text for the thank you page let's get started button text"
@@ -2344,6 +2356,10 @@
       "value" : "അവർ",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "മറ്റുള്ളവ",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "പറയാതിരിക്കാനാണ് ഇഷ്ടം",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2359,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "പറയാതിരിക്കാനാണ് ഇഷ്ടം",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "ദയവായി നിങ്ങളുടെ ജനനത്തീയതി നൽകുക.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "നിങ്ങൾ 100 വയസ്സിൽ താഴെയായിരിക്കണം.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

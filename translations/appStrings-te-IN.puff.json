@@ -2327,6 +2327,10 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "ఇతర",
+      "note" : "Text for Self Identification Pronouns: Other"
     }
   }
 }

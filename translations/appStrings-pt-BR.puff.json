@@ -40,6 +40,14 @@
       "value" : "Selecionar esta vaga",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "mês",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "hora",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Ver andamento",
       "note" : "Text for the button to select or confirm job"
@@ -463,10 +471,6 @@
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Data de nascimento",
       "note" : "Text for the additional bgc form  date of birth label text"
-    },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Insira uma data de nascimento válida.",
-      "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "Você precisa ter mais de 18 anos.",
@@ -1532,6 +1536,14 @@
       "value" : "por hora",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Até {formattedMonthlyRate}/mês",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "N/D",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "horas por semana",
       "note" : "Text for the schedule card hours per week text"
@@ -2311,6 +2323,10 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "ID DO CURP:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Outro",
+      "note" : "Text for Self Identification Pronouns: Other"
     }
   }
 }

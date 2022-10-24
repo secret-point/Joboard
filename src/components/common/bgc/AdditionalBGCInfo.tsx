@@ -19,7 +19,13 @@ import {
   NationIdTypeSelectOptions,
   SocialSecurityNumberValue
 } from "../../../utils/constants/common";
-import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption, BgcStepConfig } from "../../../utils/types/common";
+import {
+  AppConfig,
+  BgcStepConfig,
+  FormInputItem,
+  i18nSelectOption,
+  StateSelectOption
+} from "../../../utils/types/common";
 import FormInputText from "../FormInputText";
 import DatePicker from "../formDatePicker/DatePicker";
 import FormInputSelect from "../FormInputSelect";
@@ -39,11 +45,11 @@ import {
   boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
-import { handleSubmitAdditionalBgc, isDOBOverEighteen, isValidDOB } from "../../../utils/helper";
+import { handleSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
 import DebouncedButton from "../DebouncedButton";
 import omit from "lodash/omit";
@@ -149,13 +155,18 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       if (formItem.dataKey.includes("dateOfBirth") && !hasError && value) {
         const dob = get(candidatePatchRequest, formItem.dataKey);
         const isOver18 = isDOBOverEighteen(dob);
-        const isDateOfBirthValid = isValidDOB(dob);
+        const isDateOfBirthLessThan100 = isDOBLessThan100(dob);
         const legacyErrorMessage = formItem.errorMessage;
         const legacyErrorTranslationKey = formItem.errorMessageTranslationKey;
 
-        if(!isDateOfBirthValid) {
+        if(!dob) {
           formItem.hasError = true;
-          formItem.errorMessage = "Please enter a valid Date of birth.";
+          formItem.errorMessage = "Please enter your date of birth.";
+          formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-empty-text';
+        }
+        else if(!isDateOfBirthLessThan100) {
+          formItem.hasError = true;
+          formItem.errorMessage = "Please enter a valid date of birth.";
           formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-error-text';
         }
         else if(!isOver18) {

@@ -1,5 +1,13 @@
 {
   "resources" : {
+    "BB-Common-month" : {
+      "value" : "மாதம்",
+      "note" : "Text for the commont text month"
+    },
+    "BB-Common-hour" : {
+      "value" : "மணிநேரம்",
+      "note" : "Text for the common text hour"
+    },
     "BB-PreConsentPage-banner-journey-starts" : {
       "value" : "Amazon Associate ஆவதற்கான உங்கள் பயணம் இங்கே தொடங்குகிறது.",
       "note" : "Text for PreConsentPage banner text"
@@ -55,6 +63,10 @@
     "BB-Country-United-States" : {
       "value" : "அமெரிக்கா",
       "note" : "United States as country name our application supports"
+    },
+    "BB-Country-Mexico" : {
+      "value" : "மெக்ஸிகோ",
+      "note" : "Mexico as country name our application supports"
     },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றை உறுதிப்படுத்துகிறீர்கள்:",
@@ -328,6 +340,10 @@
       "value" : "பின்னணிச் சரிபார்ப்பு",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "வேலைவாய்ப்பு மதிப்பிடலுக்கான ஒப்புதல்",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "பின்புலச் சரிபார்ப்புக்குத் தேவையான அங்கீகாரத்தையும் தகவலையும் வழங்கவும்.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -335,6 +351,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "பின்னணி சரிபார்ப்புக்கான நியாயமான கடன் அறிக்கையிடல் சட்டம் ஒப்புதல்கள் மற்றும் அங்கீகாரங்கள்",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "பின்னணி சரிபார்ப்பு, மருத்துவப் பரிசோதனை மற்றும் போதை மருந்துப் பரிசோதனைக்கான அங்கீகாரங்கள்",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "கூடுதல் பின்னணித் தகவல்கள்",
@@ -436,17 +456,21 @@
       "value" : "தேசிய அடையாள எண்",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ஐடி",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "கோடு இல்லாமல் சரியான 9 இலக்க சமூகப் பாதுகாப்பு எண்ணை உள்ளிடவும்",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "சரியான 18 இலக்கங்கள் கொண்ட CURP ஐடியை இடைக்கோடு இல்லாமல் உள்ளிடவும்",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "பிறந்த தேதி",
       "note" : "Text for the additional bgc form  date of birth label text"
-    },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "சரியான பிறந்த தேதியை உள்ளிடவும்.",
-      "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "நீங்கள் 18 வயதுக்கு மேல் இருக்க வேண்டும்.",
@@ -586,6 +610,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "தனி நியாயமான கடன் அறிக்கையிடல் சட்டத்தின் வெளிப்படுத்தல் மற்றும் அங்கீகார ஆவணத்தில் நான் வெளிப்படுத்தி அங்கீகரித்துள்ளபடி, Amazon.com, Inc. அல்லது அதன் துணை நிறுவனங்கள் அல்லது இணை நிறுவனங்கள் (\"Amazon\") என்னைப் பற்றிய பின்னணிச் சோதனையை நடத்தும்.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Amazon.com, Inc. அல்லது அதன் துணை நிறுவனங்கள் அல்லது இணை நிறுவனங்கள் (\"Amazon\"), என்னைப் பற்றிய பின்னணிச் சோதனையை நடத்தும்.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -771,6 +799,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "கீழே உள்ள எனது மின்னணு கையொப்பத்தின் மூலம், பின்னணி சரிபார்ப்புக்காக நான் இந்த நியாயமற்ற கடன் அறிக்கையிடல் சட்ட ஒப்புதல்கள் மற்றும் அங்கீகாரங்களில் உள்ள அனைத்து அறிக்கைகளையும் படித்து, புரிந்துகொண்டு ஏற்றுக்கொண்டேன் என்று சான்றளிக்கிறேன். கீழே உள்ள புலங்களில் கோரப்பட்ட தகவல்களை உள்ளிடுவதன் மூலம் உங்கள் ஏற்பைக் குறிப்பிடவும்.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "கீழே உள்ள எனது இ-கையொப்பத்தின் மூலம், பின்னணிச் சரிபார்ப்பு, மருத்துவப் பரிசோதனை மற்றும் போதை மருந்துப் பரிசோதனைக்கான இந்த அங்கீகாரங்களில் உள்ள அனைத்து அறிக்கைகளையும் படித்து, புரிந்துகொண்டு ஏற்றுக்கொண்டேன் என்று சான்றளிக்கிறேன். கீழே உள்ள புலங்களில் கோரப்பட்ட தகவல்களை உள்ளிடுவதன் மூலம் உங்கள் ஒப்புதலைக் குறிப்பிடவும்.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "மின்னணு கையொப்பத்தில் உள்ளபடி உங்கள் முழுப் பெயரை உள்ளிடவும்",
@@ -1503,6 +1535,14 @@
     "BB-Schedule-card-total-pay-per-hour-text" : {
       "value" : "/மணிநேரம்",
       "note" : "Text for the schedule card total pay per hour text"
+    },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "மாதக் கட்டணம் {formattedMonthlyRate} வரை",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "N/A",
+      "note" : "Text for the schedule card when no pay rate is provided"
     },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "மணிநேரம்/வாரம்",
@@ -2283,6 +2323,54 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "ஆண்",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "பெண்",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "வேறு",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "கூற விரும்பவில்லை",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "ஆண்",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "பெண்",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "அவர்கள்",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "மற்றவை",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "கூற விரும்பவில்லை",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "சுதேசம்",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "வேறு",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "கூற விரும்பவில்லை",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

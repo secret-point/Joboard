@@ -40,6 +40,14 @@
       "value" : "בחירה במשרה זו",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "חודש",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "שעה",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "הצגת ההתקדמות",
       "note" : "Text for the button to select or confirm job"
@@ -463,10 +471,6 @@
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "תאריך לידה",
       "note" : "Text for the additional bgc form  date of birth label text"
-    },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "יש להזין תאריך לידה חוקי.",
-      "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "אתה צריך להיות מעל גיל 18.",
@@ -2347,6 +2351,10 @@
     "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
       "value" : "הם",
       "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "אחר",
+      "note" : "Text for Self Identification Pronouns: Other"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "מעדיף/ה לא לומר",

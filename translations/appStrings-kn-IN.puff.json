@@ -40,6 +40,14 @@
       "value" : "ಈ ಉದ್ಯೋಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "ತಿಂಗಳು",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "ಗಂಟೆ",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "ಪ್ರಗತಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
       "note" : "Text for the button to select or confirm job"
@@ -465,7 +473,7 @@
       "note" : "Text for the additional bgc form  date of birth label text"
     },
     "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "ಒಂದು ಮಾನ್ಯತೆ ಹೊಂದಿರುವ ಹುಟ್ಟಿದ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ.",
+      "value" : "ಮಾನ್ಯವಾದ ಜನ್ಮ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ.",
       "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
@@ -1532,6 +1540,14 @@
       "value" : "/ಗಂಟೆ",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "ಗರಿಷ್ಠ {formattedMonthlyRate}/ತಿಂಗಳಿಗೆ",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "ಅನ್ವಯವಾಗುವುದಿಲ್ಲ",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "ಗಂಟೆಗಳು/ವಾರ",
       "note" : "Text for the schedule card hours per week text"
@@ -2311,6 +2327,62 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "ಗಂಡು",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "ಹೆಣ್ಣು",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "ಇತರೆ",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "ತಿಳಿಸದಿರಲು ಬಯಸುತ್ತೇನೆ",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "ಅವನು",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "ಅವಳು",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "ಅವರು",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "ಇತರೆ",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "ತಿಳಿಸದಿರಲು ಬಯಸುತ್ತೇನೆ",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "ದೇಶೀಯ",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "ಇತರೆ",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "ತಿಳಿಸದಿರಲು ಬಯಸುತ್ತೇನೆ",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "ನಿಮ್ಮ ಜನ್ಮ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "ನೀವು 100 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನವರಾಗಿರಬೇಕು.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

@@ -2356,6 +2356,10 @@
       "value" : "그들",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "기타",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "답변하고 싶지 않음",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2371,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "답변하고 싶지 않음",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "생년월일을 입력하세요.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "만 100세 미만이어야 합니다.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

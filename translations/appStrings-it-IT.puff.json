@@ -2327,6 +2327,62 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "ID CURP:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Maschile",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Femminile",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Altro",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Preferisco non rispondere",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Lui",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Lei",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "Loro",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Altro",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Preferisco non rispondere",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Indigeno",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Altro",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Preferisco non rispondere",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Inserisci la tua data di nascita.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Occorre avere meno di 100 anni.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

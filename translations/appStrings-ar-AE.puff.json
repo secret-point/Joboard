@@ -40,6 +40,14 @@
       "value" : "تحديد هذه الوظيفة",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "شهر",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "ساعة",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "عرض مستوى التقدم",
       "note" : "Text for the button to select or confirm job"
@@ -2348,6 +2356,10 @@
       "value" : "هم",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "غير ذلك",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "أفضّل عدم التحديد",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2363,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "أفضّل عدم التحديد",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "يرجى إدخال تاريخ ميلادك.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "يجب أن يكون عمرك أقل من 100 عام.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

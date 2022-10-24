@@ -40,6 +40,14 @@
       "value" : "Selecteer deze vacature",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "maand",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "uur",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "Voortgang bekijken",
       "note" : "Text for the button to select or confirm job"
@@ -463,10 +471,6 @@
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Geboortedatum",
       "note" : "Text for the additional bgc form  date of birth label text"
-    },
-    "BB-BGC-Additional-bgc-form-dob-error-text" : {
-      "value" : "Voer een geldige geboortedatum in.",
-      "note" : "Text for the additional bgc form date of birth error message text."
     },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "Je moet ouder zijn dan 18 jaar.",
@@ -1532,6 +1536,14 @@
       "value" : "/uur",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-total-pay-per-month-text" : {
+      "value" : "Tot {formattedMonthlyRate}/maand",
+      "note" : "Text for the schedule card total pay per month text"
+    },
+    "BB-Schedule-card-not-applicable" : {
+      "value" : "Niet van toepassing",
+      "note" : "Text for the schedule card when no pay rate is provided"
+    },
     "BB-Schedule-card-hours-per-week-text" : {
       "value" : "uur/week",
       "note" : "Text for the schedule card hours per week text"
@@ -2311,6 +2323,54 @@
     "BB-ReviewSubmit-curp-id-text" : {
       "value" : "CURP-ID:",
       "note" : "Text for CRUP title"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "Mannelijk",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "Vrouwelijk",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "Andere",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "Ik zeg het liever niet",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "Hij",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "Ze",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "Zij",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "Andere",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "Ik zeg het liever niet",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "Autochtoon",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "Andere",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "Ik zeg het liever niet",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

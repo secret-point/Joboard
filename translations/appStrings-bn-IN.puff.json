@@ -2356,6 +2356,10 @@
       "value" : "তারা",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "অন্যান্য",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "বলতে ইচ্ছুক না",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2371,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "বলতে ইচ্ছুক না",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "অনুগ্রহ করে আপনার জন্ম তারিখ লিখুন।",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "আপনার বয়স 100 বছরের নীচে হতে হবে।",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

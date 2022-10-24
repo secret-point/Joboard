@@ -40,6 +40,14 @@
       "value" : "यह नौकरी चुनें",
       "note" : "Text for the button to select or confirm job"
     },
+    "BB-JobOpportunity-pay-rate-month" : {
+      "value" : "महीना",
+      "note" : "Text for monthly pay rate per month suffix"
+    },
+    "BB-JobOpportunity-pay-rate-hr" : {
+      "value" : "घंटा",
+      "note" : "Text for monthly pay rate per hr suffix"
+    },
     "BB-StepHeader-view-progress-button" : {
       "value" : "प्रगति देखें",
       "note" : "Text for the button to select or confirm job"
@@ -2348,6 +2356,10 @@
       "value" : "वे",
       "note" : "Text for Self Identification Pronouns: They"
     },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
+      "value" : "अन्य",
+      "note" : "Text for Self Identification Pronouns: Other"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
       "value" : "कुछ नहीं कहना चाहूंगा/चाहूंगी",
       "note" : "Text for Self Identification Pronouns: Prefer not to say"
@@ -2363,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "कुछ नहीं कहना चाहूंगा/चाहूंगी",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "कृपया अपनी जन्मतिथि दर्ज़ करें.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "आपकी आयु 100 वर्ष से कम होनी चाहिए.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

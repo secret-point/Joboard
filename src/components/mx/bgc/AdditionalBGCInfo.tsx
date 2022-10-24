@@ -32,7 +32,7 @@ import {
     boundSetCandidatePatchRequest,
     boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
-import { handleMXSubmitAdditionalBgc, isDOBOverEighteen } from "../../../utils/helper";
+import { handleMXSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
@@ -119,10 +119,21 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         if (formItem.dataKey.includes("dateOfBirth") && !hasError && value) {
             const dob = get(candidatePatchRequest, formItem.dataKey);
             const isOver18 = isDOBOverEighteen(dob);
+            const isDateOfBirthLessThan100 = isDOBLessThan100(dob);
             const legacyErrorMessage = formItem.errorMessage;
             const legacyErrorTranslationKey = formItem.errorMessageTranslationKey;
 
-            if (!isOver18) {
+            if(!dob) {
+                formItem.hasError = true;
+                formItem.errorMessage = "Please enter your date of birth.";
+                formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-empty-text';
+            }
+            else if(!isDateOfBirthLessThan100) {
+                formItem.hasError = true;
+                formItem.errorMessage = "Please enter a valid date of birth.";
+                formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-error-text';
+            }
+            else if (!isOver18) {
                 formItem.hasError = true;
                 formItem.errorMessage = "You need to be above 18 years old.";
                 formItem.errorMessageTranslationKey = 'BB-BGC-Additional-bgc-form-dob-below18-error-text';
