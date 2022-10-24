@@ -51,6 +51,13 @@ import {
     MXCountrySelectOptions,
     NameRegexValidator,
     newBBUIPathName,
+    SelfIdDisabilityRadioItem,
+    SelfIdEthnicBackgroundItemsMap,
+    SelfIdGenderRadioItemsMap,
+    SelfIdMilitarySpouseRadioItem,
+    SelfIdPronounsItemsMap,
+    SelfIdProtectedVeteranRadioItem,
+    SelfIdVeteranStatusRadioItem,
     UserIdValidator,
     ValueToI18nKeyMap
 } from "./constants/common";
@@ -79,6 +86,7 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
+    DetailedRadioButtonItem,
     EnvConfig,
     ErrorMessage,
     FeatureFlagList,
@@ -1418,12 +1426,44 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
     return false;
 }
 
-export const reverseMappingTranslate = (value: string | undefined) => {
+export const getKeyMapFromDetailedRadioItemList = (radioButtonItemList: DetailedRadioButtonItem[]): {[key: string]: string} => {
+    let keyMap = {};
+    if(radioButtonItemList?.length > 0) {
+        radioButtonItemList.forEach(item => {
+            const temp = {[item.value]: item.titleTranslationKey}
+            keyMap = {
+                ...keyMap,
+                ...temp
+            }
+        })
+    }
+
+    return keyMap;
+}
+
+export const reverseMappingTranslate = (value: string | undefined, countryCode?: CountryCode) => {
     if (!value) {
         return "";
     }
 
-    const key = ValueToI18nKeyMap[value];
+    // Keep these values dynamic as it may change per country level
+    const SelfIdPronounsItems = SelfIdPronounsItemsMap[countryCode || getCountryCode()];
+    const SelfIdGenderRadioItems = SelfIdGenderRadioItemsMap[countryCode || getCountryCode()];
+    const SelfIdEthnicBackgroundItems = SelfIdEthnicBackgroundItemsMap[countryCode || getCountryCode()];
+
+    const keyMap = {
+        ...getKeyMapFromDetailedRadioItemList(SelfIdPronounsItems),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdGenderRadioItems),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdEthnicBackgroundItems),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdDisabilityRadioItem),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdVeteranStatusRadioItem),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdVeteranStatusRadioItem),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdProtectedVeteranRadioItem),
+        ...getKeyMapFromDetailedRadioItemList(SelfIdMilitarySpouseRadioItem),
+        ...ValueToI18nKeyMap
+    }
+
+    const key = keyMap[value];
 
     if (!key) {
         console.warn('No key/translation found for value: ', value);

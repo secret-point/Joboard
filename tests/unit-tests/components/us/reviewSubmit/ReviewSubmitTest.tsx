@@ -6,6 +6,10 @@ import { TEST_APPLICATION_ID, TEST_APPLICATION_STATE, TEST_CANDIDATE_STATE, TEST
 import { act } from "react-dom/test-utils";
 import * as boundUi from "../../../../../src/actions/UiActions/boundUi";
 import * as workflowActions from "../../../../../src/actions/WorkflowActions/workflowActions";
+import { CountryCode } from "../../../../../src/utils/enums/common";
+import * as utilHelpers from "../../../../../src/utils/helper";
+
+const getCountryCodeSpy = jest.spyOn(utilHelpers, "getCountryCode");
 
 describe("ReviewSubmit", () => {
   const mockLocation = {
@@ -14,6 +18,11 @@ describe("ReviewSubmit", () => {
     hash: '',
     state: null
   };
+
+  beforeEach(() => {
+    getCountryCodeSpy.mockReturnValue(CountryCode.US);
+  })
+
   const mockUseLocation = useLocation as jest.Mock;
   mockUseLocation.mockReturnValue(mockLocation);
 

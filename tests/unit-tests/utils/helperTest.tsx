@@ -2,26 +2,35 @@ import Cookies from "js-cookie";
 import {
   AWAIT_TIMEOUT,
   awaitWithTimeout,
-  formatFlexibleTrainingDate,
-  getCountryCodeByCountryName,
-  processAssessmentUrl,
-  formatMonthlyBasePayHelper,
-  parseQueryParamsArrayToSingleItem,
-  showErrorMessage,
-  reverseMappingTranslate,
   checkAndBoundGetApplication,
-  isSelfIdentificationInfoValidBeforeDisability,
-  isSelfIdentificationInfoValid,
+  formatFlexibleTrainingDate,
+  formatMonthlyBasePayHelper,
+  getCountryCodeByCountryName,
+  getKeyMapFromDetailedRadioItemList,
   isAdditionalBgcInfoValid,
   isAddressValid,
-  isNewBBuiPath,
   isI18nSelectOption,
-  setEpicApiCallErrorMessage
+  isNewBBuiPath,
+  isSelfIdentificationInfoValid,
+  isSelfIdentificationInfoValidBeforeDisability,
+  parseQueryParamsArrayToSingleItem,
+  processAssessmentUrl,
+  reverseMappingTranslate,
+  setEpicApiCallErrorMessage,
+  showErrorMessage
 } from "../../../src/utils/helper";
-import { newBBUIPathName } from "../../../src/utils/constants/common";
+import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
 import * as boundUi from "../../../src/actions//UiActions/boundUi";
-import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions"
-import { TEST_APPLICATION_ID, TEST_ASSESSMENT_URL, TEST_JOB_ID, TEST_SELF_IDENTIFICATION, TEST_BACKGROUND_INFO, TEST_CANDIDATE_ADDRESS } from "../../test-utils/test-data";
+import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
+import {
+  TEST_APPLICATION_ID,
+  TEST_ASSESSMENT_URL,
+  TEST_BACKGROUND_INFO,
+  TEST_CANDIDATE_ADDRESS,
+  TEST_JOB_ID,
+  TEST_SELF_IDENTIFICATION
+} from "../../test-utils/test-data";
+import { CountryCode } from "../../../src/utils/enums/common";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -138,6 +147,7 @@ describe("showErrorMessage", ()=>{
 });
 
 describe("reverseMappingTranslate", ()=>{
+
   it("should return empty string with undefined or empty string passed", ()=>{
     expect(reverseMappingTranslate(undefined)).toEqual("");
     expect(reverseMappingTranslate("")).toEqual("");
@@ -148,7 +158,9 @@ describe("reverseMappingTranslate", ()=>{
   })
 
   it("should return correct value", ()=>{
-    expect(reverseMappingTranslate("I choose not to self-identify")).toEqual("I choose not to self-identify");
+    expect(reverseMappingTranslate("I choose not to self-identify", CountryCode.US)).toEqual("I choose not to self-identify");
+    //TODO might need to update when translations come back
+    expect(reverseMappingTranslate("She", CountryCode.MX)).toEqual("She");
   })
 })
 
@@ -231,4 +243,20 @@ describe("setEpicApiCallErrorMessage", ()=>{
     expect(spy).toHaveBeenCalled()
 
   })
+})
+
+test("getKeyMapFromDetailedRadioItemList", () => {
+  expect(getKeyMapFromDetailedRadioItemList(MX_SelfIdPronounsItems)).toEqual({
+    "He": "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text",
+    "She": "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text",
+    "They": "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text",
+    "Other": "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text",
+    "Prefer not to say": "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text"
+  });
+
+  expect(getKeyMapFromDetailedRadioItemList(SelfIdGenderRadioItems)).toEqual({
+    "Male": "BB-SelfId-equal-opportunity-form-gender-male-text",
+    "Female": "BB-SelfId-equal-opportunity-form-gender-female-text",
+    "I choose not to self-identify": "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text"
+  });
 })

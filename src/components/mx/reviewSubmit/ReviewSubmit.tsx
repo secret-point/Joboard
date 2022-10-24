@@ -29,6 +29,7 @@ import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
+  getCountryCode,
   getFeatureFlagValue,
   getLocale,
   reverseMappingTranslate
@@ -59,6 +60,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const applicationData = application.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
+  const countryCode = getCountryCode();
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -219,8 +221,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         </Row>
         <Col gridGap="S300">
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender)}
-            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity)}` : ""}
+            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender, countryCode)}
+            {candidateData?.selfIdentificationInfo?.pronoun ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.pronoun, countryCode)}` : ""}
+            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity, countryCode)}` : ""}
           </Text>
 
           <Text fontSize="T100">

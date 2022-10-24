@@ -965,35 +965,8 @@ export const dayHoursFilterValues: DayHoursFilter[] = [
 
 // Related SIM: https://issues.amazon.com/MLS_Defect-169
 export const ValueToI18nKeyMap: {[key: string]: string} = {
-    // Shared by gender, veteran and ethnicity
-    "I choose not to self-identify": "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text",
-    // Used in ethnicity
-    "I choose not to Self-Identify": "BB-SelfId-equal-opportunity-form-ethinicity-choose-not-to-identify-title-text",
-
     // National Id type
     "United States - Social Security Number": "BB-ReverseMapping-candidate-nationalId-US-SSN",
-
-    // Disablity
-    "YES, I HAVE A DISABILITY (or previously had a disability)": "BB-ReverseMapping-candidate-disability-yes",
-    "NO, I DON’T HAVE A DISABILITY": "BB-ReverseMapping-candidate-disability-no",
-    "I DON’T WISH TO ANSWER": "BB-ReverseMapping-candidate-disability-dont-wish-to-answer",
-
-    // Gender
-    "Male": "BB-SelfId-equal-opportunity-form-gender-male-text",
-    "Female": "BB-SelfId-equal-opportunity-form-gender-female-text",
-
-    // Veteran
-    "Yes": "BB-SelfId-equal-opportunity-form-veteran-status-option-yes-text",
-    "No": "BB-SelfId-equal-opportunity-form-veteran-status-option-no-text",
-
-    // Ethnicity
-    "American Indian/Alaska Native": "BB-ReverseMapping-candidate-ethnicity-american-indian-alaska-native",
-    "Asian (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-Asian-title-text",
-    "Black/African American": "BB-ReverseMapping-candidate-ethnicity-black-african-american",
-    "Hispanic/Latino": "BB-SelfId-equal-opportunity-form-ethinicity-hispanic-or-latino-title-text",
-    "Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-native-hawaiian-title-text",
-    "White (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-white-title-text",
-    "Two or more Races (not Hispanic or Latino)": "BB-SelfId-equal-opportunity-form-ethinicity-two-or-more-race-title-text",
 };
 // TODO: need to remove languageES once we get translation back .
 export const localeToLanguageList: localeToLanguageItem[] = [

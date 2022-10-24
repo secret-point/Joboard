@@ -760,7 +760,7 @@ export interface AdditionalBackgroundInfoRequest {
 }
 
 export interface SelfIdentificationInfo {
-    [key: string]: string;
+    [key: string]: string | undefined;
     highestDegree: string;
     nationalId: string;
     nationalIdType: string;
@@ -778,6 +778,7 @@ export interface SelfIdentificationInfo {
     religion: string;
     otherReligion: string;
     sexualOrientation: string;
+    pronoun?: string;
 }
 
 export interface CandidatePatchRequest {

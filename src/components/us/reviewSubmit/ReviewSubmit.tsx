@@ -29,6 +29,7 @@ import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
+  getCountryCode,
   getFeatureFlagValue,
   getLocale,
   reverseMappingTranslate
@@ -59,6 +60,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const applicationData = application.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
+  const countryCode = getCountryCode();
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -164,7 +166,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           </Text>}
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {reverseMappingTranslate(candidateData?.additionalBackgroundInfo.governmentIdType)}
+            {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {reverseMappingTranslate(candidateData?.additionalBackgroundInfo.governmentIdType, countryCode)}
           </Text>
 
           <Text fontSize="T100">
@@ -221,16 +223,16 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         </Row>
         <Col gridGap="S300">
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender)}
-            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity)}` : ""}
+            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender, countryCode)}
+            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity, countryCode)}` : ""}
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran)}
+            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran, countryCode)}
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.disability)}
+            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.disability, countryCode)}
           </Text>
         </Col>
       </div>
