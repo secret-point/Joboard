@@ -267,7 +267,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 inputValue={get(candidatePatchRequest, 'additionalBackgroundInfo.idNumber') || ''}
                 handleChange={(e: ChangeEvent<HTMLInputElement>) => {
                     const value = e.target.value || '';
-                    SetNewCandidatePatchRequest([{ value: value.trim(), dataKey: 'additionalBackgroundInfo.idNumber'}])
+                    SetNewCandidatePatchRequest([{ value: value.trim().toUpperCase(), dataKey: 'additionalBackgroundInfo.idNumber'}])
                 }}
             />
             {

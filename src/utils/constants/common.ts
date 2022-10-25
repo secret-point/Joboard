@@ -331,7 +331,7 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.idNumber',
     required: true,
     type: 'text',
-    regex: '^[A-Za-z0-9]{18}$',
+    regex: '^[A-Z0-9]{18}$',
     id: "idNumberInput",
     name: 'idNumber',
     errorMessage: 'Please enter a valid 18 digits CURP ID without dash',
