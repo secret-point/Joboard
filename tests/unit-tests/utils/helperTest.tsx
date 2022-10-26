@@ -17,20 +17,32 @@ import {
   processAssessmentUrl,
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
-  showErrorMessage
+  showErrorMessage,
+  handleInitiateSelfIdentificationStep,
+  handleUpdateSelfIdStep,
+  handleSubmitSelfIdVeteranStatus,
+  handleSubmitSelfIdDisabilityStatus,
+  handleSubmitSelfIdEqualOpportunity,
+  handleConfirmNHESelection,
+  renderNheTimeSlotFullAddress
 } from "../../../src/utils/helper";
 import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
 import * as boundUi from "../../../src/actions//UiActions/boundUi";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
+import * as boundSelfIdentificationActions from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
 import {
+  TEST_APPLICATION_DATA,
   TEST_APPLICATION_ID,
   TEST_ASSESSMENT_URL,
   TEST_BACKGROUND_INFO,
   TEST_CANDIDATE_ADDRESS,
   TEST_JOB_ID,
-  TEST_SELF_IDENTIFICATION
+  TEST_SELF_IDENTIFICATION,
+  NHE_TIMESLOT
 } from "../../test-utils/test-data";
-import { CountryCode } from "../../../src/utils/enums/common";
+import { CountryCode, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
+import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -105,26 +117,26 @@ describe("formatFlexibleTrainingDate", () => {
   expect(formatFlexibleTrainingDate("8:30 PM - 9:30 PM")).toEqual("");
 });
 
-describe("formatMonthlyBasePayHelper", ()=>{
+describe("formatMonthlyBasePayHelper", () => {
 
-  it("should return correct format with no decimals", ()=>{
+  it("should return correct format with no decimals", () => {
     expect(formatMonthlyBasePayHelper(55, 'USD')).toEqual('$55');
   });
 
-  it("should return correct format with decimals", ()=>{
+  it("should return correct format with decimals", () => {
     expect(formatMonthlyBasePayHelper(40.10, 'USD')).toEqual('$40.10');
   });
 
-  it("should return null", ()=>{
+  it("should return null", () => {
     expect(formatMonthlyBasePayHelper(null, 'USD')).toEqual(null);
     expect(formatMonthlyBasePayHelper(54)).toEqual(null);
     expect(formatMonthlyBasePayHelper()).toEqual(null);
   });
 });
 
-describe("parseQueryParamsArrayToSingleItem", ()=>{
+describe("parseQueryParamsArrayToSingleItem", () => {
 
-  it("should parse query items to single param", ()=>{
+  it("should parse query items to single param", () => {
     const queryParams = {
       "jobId": ["JOB-1234"],
       "requisitionId": "Req-000"
@@ -133,8 +145,8 @@ describe("parseQueryParamsArrayToSingleItem", ()=>{
   });
 });
 
-describe("showErrorMessage", ()=>{
-  it("should call boundSetBannerMessage", ()=>{
+describe("showErrorMessage", () => {
+  it("should call boundSetBannerMessage", () => {
     const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
 
     showErrorMessage({
@@ -146,26 +158,26 @@ describe("showErrorMessage", ()=>{
   });
 });
 
-describe("reverseMappingTranslate", ()=>{
+describe("reverseMappingTranslate", () => {
 
-  it("should return empty string with undefined or empty string passed", ()=>{
+  it("should return empty string with undefined or empty string passed", () => {
     expect(reverseMappingTranslate(undefined)).toEqual("");
     expect(reverseMappingTranslate("")).toEqual("");
   })
 
-  it("should return empty string with invalid key", ()=>{
+  it("should return empty string with invalid key", () => {
     expect(reverseMappingTranslate("test-key")).toEqual("");
   })
 
-  it("should return correct value", ()=>{
+  it("should return correct value", () => {
     expect(reverseMappingTranslate("I choose not to self-identify", CountryCode.US)).toEqual("I choose not to self-identify");
     //TODO might need to update when translations come back
     expect(reverseMappingTranslate("She", CountryCode.MX)).toEqual("She");
   })
 })
 
-describe("checkAndBoundGetApplication", ()=>{
-  it("should call boundGetApplication", ()=>{
+describe("checkAndBoundGetApplication", () => {
+  it("should call boundGetApplication", () => {
     const spy = jest.spyOn(boundApplicationActions, "boundGetApplication");
 
     checkAndBoundGetApplication("TEST-ID-0001");
@@ -174,65 +186,65 @@ describe("checkAndBoundGetApplication", ()=>{
   })
 })
 
-describe("isSelfIdentificationInfoValidBeforeDisability", ()=>{
-  
-  it("should return false", ()=>{
+describe("isSelfIdentificationInfoValidBeforeDisability", () => {
+
+  it("should return false", () => {
     expect(isSelfIdentificationInfoValidBeforeDisability()).toEqual(false)
   })
 
-  it("should return true", ()=>{
+  it("should return true", () => {
 
     expect(isSelfIdentificationInfoValidBeforeDisability(TEST_SELF_IDENTIFICATION)).toEqual(true)
   })
 })
 
-describe("isSelfIdentificationInfoValid", ()=>{
-  it("should return false", ()=>{
+describe("isSelfIdentificationInfoValid", () => {
+  it("should return false", () => {
     expect(isSelfIdentificationInfoValid()).toEqual(false);
   })
 
-  it("should return true", ()=>{
+  it("should return true", () => {
     expect(isSelfIdentificationInfoValid(TEST_SELF_IDENTIFICATION)).toEqual(true);
   })
 })
 
-describe("isAdditionalBgcInfoValid", ()=>{
-  it("returns false", ()=>{
+describe("isAdditionalBgcInfoValid", () => {
+  it("returns false", () => {
     expect(isAdditionalBgcInfoValid()).toEqual(false);
   })
 
-  it("returns true", ()=>{
+  it("returns true", () => {
     expect(isAdditionalBgcInfoValid(TEST_BACKGROUND_INFO)).toEqual(true);
   })
 });
 
-describe("isAddressValid", ()=>{
+describe("isAddressValid", () => {
 
-  it("should return false", ()=>{
+  it("should return false", () => {
     expect(isAddressValid()).toEqual(false);
   })
 
-  it("should return true", ()=>{
+  it("should return true", () => {
     expect(isAddressValid(TEST_CANDIDATE_ADDRESS)).toEqual(true);
   })
 })
 
-describe("isNewBBuiPath", ()=>{
+describe("isNewBBuiPath", () => {
 
-  it("returns false", ()=>{
-    expect(isNewBBuiPath("", newBBUIPathName.US )).toEqual(false);
+  it("returns false", () => {
+    expect(isNewBBuiPath("", newBBUIPathName.US)).toEqual(false);
   })
 
 })
 
-describe("isI18nSelectOption", ()=>{
-  it("return true", ()=>{
-    expect(isI18nSelectOption({translationKey: 'testkey', value: 'test', showValue: true})).toBeTruthy();
+describe("isI18nSelectOption", () => {
+  it("return true", () => {
+    expect(isI18nSelectOption({ translationKey: 'testkey', value: 'test', showValue: true })).toBeTruthy();
   })
 })
 
-describe("setEpicApiCallErrorMessage", ()=>{
-  it("should call boundSetBannerMessage", ()=>{
+describe("setEpicApiCallErrorMessage", () => {
+  it("should call boundSetBannerMessage", () => {
     const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
 
     setEpicApiCallErrorMessage({
@@ -259,4 +271,64 @@ test("getKeyMapFromDetailedRadioItemList", () => {
     "Female": "BB-SelfId-equal-opportunity-form-gender-female-text",
     "I choose not to self-identify": "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text"
   });
+})
+
+describe("handleInitiateSelfIdentificationStep", () => {
+
+  it("should call boundUpdateSelfIdStepConfig", () => {
+    const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
+
+    handleInitiateSelfIdentificationStep(TEST_SELF_IDENTIFICATION);
+
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("handleUpdateSelfIdStep", () => {
+  it("shoudl call boundUpdateSelfIdStepConfig", () => {
+    const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
+    handleUpdateSelfIdStep({ ...initSelfIdentificationState.stepConfig }, SELF_IDENTIFICATION_STEPS.DISABILITY_FORM, SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY);
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("handleSubmitSelfIdVeteranStatus", () => {
+  it("should call boundUpdateApplicationDS", () => {
+    const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
+    handleSubmitSelfIdVeteranStatus(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("handleSubmitSelfIdDisabilityStatus", () => {
+  it("should call boundUpdateApplicationDS", () => {
+    const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
+    handleSubmitSelfIdDisabilityStatus(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("handleSubmitSelfIdEqualOpportunity", () => {
+  it("should call boundUpdateApplicationDS", () => {
+    const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
+    handleSubmitSelfIdEqualOpportunity(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("handleConfirmNHESelection", () => {
+
+  it("should call postAdobeMetrics", () => {
+    const spy = jest.spyOn(adobeActions, "postAdobeMetrics");
+
+    handleConfirmNHESelection(TEST_APPLICATION_DATA, NHE_TIMESLOT);
+
+    expect(spy).toHaveBeenCalled();
+  })
+})
+
+describe("renderNheTimeSlotFullAddress", () => {
+  it("should match", () => {
+    expect(renderNheTimeSlotFullAddress(NHE_TIMESLOT)).toEqual("01:30 PM - 02:00 PM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327");
+  })
 })
