@@ -14,7 +14,7 @@ import moment from "moment";
 import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
 import { localeToLanguageList, PayRateType } from "../../../utils/constants/common";
-import { FEATURE_FLAG } from "../../../utils/enums/common";
+import { CountryCode, FEATURE_FLAG } from "../../../utils/enums/common";
 import {
   formatFlexibleTrainingDate,
   getFeatureFlagValue,
@@ -23,7 +23,8 @@ import {
   getSpanishLocaleDateFormatter,
   getPayRateCountryConfig,
   getCountryCode,
-  formatMonthlyBasePayHelper
+  formatMonthlyBasePayHelper,
+  showRequiredLanguageByCountry
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
@@ -86,11 +87,11 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     if (getPayRateCountryConfig(getCountryCode()).payRateType === PayRateType.monthMax) {
       const monthlyRate = monthlyBasePayL10N ? monthlyBasePayL10N : formatMonthlyBasePayHelper(monthlyBasePay, currencyCode);
       const formattedMonthlyRate = currencyCode && monthlyRate ? `${currencyCode}${monthlyRate}` : null;
-      return formattedMonthlyRate ? t(`BB-Schedule-card-total-pay-per-month-text`, `Up to ${formattedMonthlyRate}/month`, {formattedMonthlyRate}) : t(`BB-Schedule-card-not-applicable`, `N/A`);
+      return formattedMonthlyRate ? t(`BB-Schedule-card-total-pay-per-month-text`, `Up to ${formattedMonthlyRate}/month`, { formattedMonthlyRate }) : t(`BB-Schedule-card-not-applicable`, `N/A`);
     } else {
       return `${totalPayRateL10N || currencyCode + totalPayRate} ${t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}`
     }
- 
+
   };
 
   return (
@@ -137,7 +138,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
           </Row>
         </Row>
       }
-      
+
       <Row gridGap={10} alignItems="center">
         <IconHourGlass size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
@@ -156,7 +157,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       }
 
-      {showRequiredLanguages &&
+      {showRequiredLanguages && showRequiredLanguageByCountry(getCountryCode()) &&
       <Row gridGap={10} alignItems="center">
         <IconGlobe size={IconSize.ExtraSmall} aria-hidden={true} />
         <Row gridGap={3} alignItems="center">
@@ -167,7 +168,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       </Row>
       }
-      
+
       <Row gridGap={10} alignItems="center">
         <Row>
           <img src={LocationIcon} height="20px" width="20px"/>

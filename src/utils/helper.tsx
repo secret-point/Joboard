@@ -119,7 +119,7 @@ const {
     SELF_IDENTIFICATION
 } = PAGE_ROUTES;
 
-export const reloadAppPageWithSchedule = (applicationData: Application, queryParams:any) => {
+export const reloadAppPageWithSchedule = (applicationData: Application, queryParams: any) => {
     const attachedScheduleId = applicationData.jobScheduleSelected?.scheduleId;
     if(!attachedScheduleId) {
         // goto error page, application has loaded but there is no schedule bound to it
@@ -1430,7 +1430,7 @@ export const getKeyMapFromDetailedRadioItemList = (radioButtonItemList: Detailed
     let keyMap = {};
     if(radioButtonItemList?.length > 0) {
         radioButtonItemList.forEach(item => {
-            const temp = {[item.value]: item.titleTranslationKey}
+            const temp = { [item.value]: item.titleTranslationKey }
             keyMap = {
                 ...keyMap,
                 ...temp
@@ -1579,7 +1579,7 @@ export const getCountryCode = (): CountryCode => {
     return "{{Country}}" as CountryCode || CountryCode.US;
 }
 
-export const getSpanishLocaleDateFormatter = (date: String) => {
+export const getSpanishLocaleDateFormatter = (date: string) => {
     return getLocale().substring(0, 2) === 'es' ? date.charAt(0).toUpperCase() + date.slice(1).replace('.', '') : date;
 }
 
@@ -1604,7 +1604,22 @@ export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
 };
 
 export const getPayRateCountryConfig = (countryCode: CountryCode): countryConfigType => {
-    return countryConfig[countryCode] || countryConfig[CountryCode.US]; 
+    return countryConfig[countryCode] || countryConfig[CountryCode.US];
+};
+
+export const showRequiredLanguageByCountry = (countryCode: CountryCode): boolean => {
+    let show = true;
+    switch(countryCode) {
+        case CountryCode.MX:
+            show = false;
+            break;
+        case CountryCode.US:
+            show = true;
+            break;
+        default:
+            show = true;
+    }
+    return show;
 };
 
 export const formatMonthlyBasePayHelper = (monthlyBasePay?: number | null, currencyCode?: string | null) => {
@@ -1614,7 +1629,7 @@ export const formatMonthlyBasePayHelper = (monthlyBasePay?: number | null, curre
         minimumFractionDigits: monthlyBasePay % 1 === 0 ? 0 : 2,
         currencyDisplay: 'narrowSymbol'
       }).format(monthlyBasePay): null;
-    
+
     return formattedMonthlyRate;
 }
 

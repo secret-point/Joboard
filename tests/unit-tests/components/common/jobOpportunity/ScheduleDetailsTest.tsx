@@ -7,11 +7,13 @@ import { Schedule } from "../../../../../src/utils/types/common";
 import { TEST_SCHEDULE } from "../../../../test-utils/test-data";
 
 const getCountryCodeSpy = jest.spyOn(helpers, "getCountryCode");
+const getFeatureFlagValueSpy = jest.spyOn(helpers, "getFeatureFlagValue");
 
 describe("ScheduleDetails", () => {
   describe("country code US", () => {
     beforeEach(() => {
       getCountryCodeSpy.mockReturnValue(CountryCode.US);
+      getFeatureFlagValueSpy.mockReturnValue(true);
     });
 
     it("should match snapshot", () => {

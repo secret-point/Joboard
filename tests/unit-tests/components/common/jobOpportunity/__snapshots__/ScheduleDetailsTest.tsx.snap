@@ -466,6 +466,37 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
     alignItems="center"
     gridGap={10}
   >
+    <IconGlobe
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Languages Supported
+        :
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        English, Spanish
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
     <Row>
       <img
         height="20px"

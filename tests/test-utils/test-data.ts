@@ -7,11 +7,11 @@ import { CandidateState } from "../../src/reducers/candidate.reducer";
 import { NheState } from "../../src/reducers/nhe.reducer";
 import { ScheduleState } from "../../src/reducers/schedule.reducer";
 import { SelfIdentificationState } from "../../src/reducers/selfIdentification.reducer";
+import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
 import { BGC_STEPS, BGC_VENDOR_TYPE, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
 import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule, SelfIdentificationInfo } from "../../src/utils/types/common";
-import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -345,7 +345,7 @@ export const TEST_SCHEDULE: Schedule = {
   firstDayOnSiteL10N: "2022-10-29",
   totalPayRateL10N: "$8.90",
   employmentTypeL10N: "Regular",
-  requiredLanguage:["en-US", "es-US"],
+  requiredLanguage: ["en-US", "es-US"],
   parsedTrainingDate: '01-01-2023',
   monthlyBasePay: 1000,
   monthlyBasePayL10N: null,
