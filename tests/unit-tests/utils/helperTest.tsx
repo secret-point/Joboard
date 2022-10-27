@@ -1,4 +1,12 @@
 import Cookies from "js-cookie";
+import * as boundUi from "../../../src/actions//UiActions/boundUi";
+import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
+import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
+import * as boundSelfIdentificationActions from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
+import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
+import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
+import { CountryCode, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
 import {
   AWAIT_TIMEOUT,
   awaitWithTimeout,
@@ -29,13 +37,9 @@ import {
   getMXCountryCodeByCountryName,
   onAssessmentStart,
   validateInput,
-  isDOBOverEighteen
+  isDOBOverEighteen,
+  getQueryFromSearchAndHash
 } from "../../../src/utils/helper";
-import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
-import * as boundUi from "../../../src/actions//UiActions/boundUi";
-import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
-import * as boundSelfIdentificationActions from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
-import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
 import {
   TEST_APPLICATION_DATA,
   TEST_APPLICATION_ID,
@@ -47,9 +51,6 @@ import {
   NHE_TIMESLOT,
   TEST_JOB
 } from "../../test-utils/test-data";
-import { CountryCode, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
-import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
-import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -398,3 +399,32 @@ test("isDOBLessThan100", () => {
   expect(isDOBLessThan100("")).toBeFalsy();
   expect(isDOBLessThan100("15-10-1922")).toBeFalsy();
 })
+describe("getQueryFromSearchAndHash", () => {
+  beforeEach(() => {
+    window.location.search = "";
+    window.location.hash = "";
+  });
+
+  it("should return correct query string", () => {
+    expect(getQueryFromSearchAndHash("?query1=q1", "#/page-name?hash1=h1"))
+    .toEqual("hash1=h1&query1=q1");
+
+    expect(getQueryFromSearchAndHash("?query1=q1&query2=q2", "#/page-name?hash1=h1&hash2=h2"))
+      .toEqual("hash1=h1&hash2=h2&query1=q1&query2=q2");
+  });
+
+  it("should return correct query string for empty location.search", () => {
+    expect(getQueryFromSearchAndHash("", "#/page-name?hash1=h1&hash2=h2"))
+      .toEqual("hash1=h1&hash2=h2");
+  });
+
+  it("should return correct query string for empty location.hash", () => {
+    expect(getQueryFromSearchAndHash("?query1=q1&query2=q2", ""))
+      .toEqual("query1=q1&query2=q2");
+  });
+
+  it("should return correct query string for empty search and hash", () => {
+    expect(getQueryFromSearchAndHash("", ""))
+      .toEqual("");
+  });
+});

@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import { AppConfig } from "../../@types/IPayload";
 import { uiState } from "../../reducers/ui.reducer";
+import { PRE_CONSENT } from "../../utils/constants/common";
+import { getQueryFromSearchAndHash } from "../../utils/helper";
 import AppLoader from "../common/AppLoader";
 import { BannerMessage } from "../common/BannerMessage";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
@@ -26,7 +28,6 @@ import JobOpportunity from "../us/jobOpportunity/JobOpportunity";
 import Nhe from "../us/nhe/Nhe";
 import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
-import PreConsentPage from "../us/preConsent/PreConsent";
 import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
 import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
@@ -63,7 +64,6 @@ const {
   JOB_DESCRIPTION,
   JOB_OPPORTUNITIES,
   NHE,
-  PRE_CONSENT,
   RESUME_APPLICATION,
   SELF_IDENTIFICATION,
   SESSION_TIMEOUT,
@@ -93,10 +93,11 @@ export const DragonStoneAppMX = ( props: MapStateToProps ) => {
       {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage}/>}
       <Router>
         <Switch>
-          <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>
-          <Route path={`/${PRE_CONSENT}`} exact>
-            <PreConsentPage/>
-          </Route>
+          <Route exact path='/' render={() => <Redirect to={CONSENT}/>}/>
+          <Route exact path={`/${PRE_CONSENT}`} render={() => <Redirect to={{
+            pathname: CONSENT,
+            search: getQueryFromSearchAndHash()
+          }} />} />
           <Route path={`/${CONSENT}`} exact>
             <ConsentPage/>
           </Route>

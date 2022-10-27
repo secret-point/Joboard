@@ -162,6 +162,19 @@ export const routeToAppPageWithPath =
         history.push({ pathname: `/${pathname}`, search: newQueryParam });
     };
 
+export const getQueryFromSearchAndHash = (searchOverride?: string, hashOverride?: string) => {
+    const search = searchOverride || window.location.search;
+    const hash = hashOverride || window.location.hash;
+
+    const hashParam = hash.split("?").slice(1).join("&");
+    const urlParams = search.length > 0
+        ? `${search}&${hashParam}`
+        : `?${hashParam}`;
+
+    const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(urlParams));
+    return !isEmpty(queryParams) ? queryString.stringify(queryParams) : "";
+};
+
 export const parseSearchParamFromHash = ( hashURL: string ): { [key: string]: string } => {
     let url = hashURL.split("#")[1];
 
