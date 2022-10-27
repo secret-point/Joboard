@@ -809,10 +809,8 @@ export interface GetNheTimeSlotRequestDs {
 }
 
 export interface GetNheTimeSlotRequestThroughNheDS {
-    scheduleId: string,
     locationCode: string,
-    hireStartDate: string,
-    contingencyTurnAroundDays: number | null
+    applicationId: string
 }
 
 export interface DetailedRadioButtonItem {

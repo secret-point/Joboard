@@ -28,7 +28,6 @@ import { NHETimeSlot } from "../../../utils/types/common";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import StepHeader from "../../common/StepHeader";
 import DebouncedButton from "../../common/DebouncedButton";
-import { CountryCode } from "../../../utils/enums/common";
 
 interface MapStateToProps {
     job: JobState;
@@ -84,7 +83,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
 
     useEffect(() => {
         // only use call NHE through requisition service, others call nhe service directly
-        scheduleDetail && fetchNheTimeSlotDs(scheduleDetail, '{{Country}}' as CountryCode === CountryCode.US);
+        scheduleDetail && fetchNheTimeSlotDs(scheduleDetail, applicationId, false);
     }, [scheduleDetail]);
 
     useEffect(() => {

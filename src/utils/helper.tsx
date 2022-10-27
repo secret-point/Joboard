@@ -1018,7 +1018,7 @@ export const loadingStatusHelper = () => {
     return loadingCount > 1;
 }
 
-export const fetchNheTimeSlotDs = (schedule: Schedule, requisitionService: boolean) => {
+export const fetchNheTimeSlotDs = (schedule: Schedule, applicationId: string, requisitionService: boolean) => {
     let { siteId } = schedule;
     if(siteId.startsWith("SITE-")){
         siteId = siteId.replace("SITE-", "");
@@ -1037,10 +1037,8 @@ export const fetchNheTimeSlotDs = (schedule: Schedule, requisitionService: boole
         boundGetNheTimeSlotsDs(request);
     } else {
         const request: GetNheTimeSlotRequestThroughNheDS = {
-            scheduleId: schedule.scheduleId,
             locationCode: siteId,
-            hireStartDate: schedule.hireStartDate,
-            contingencyTurnAroundDays: schedule.contingencyTat
+            applicationId
         }
 
         boundGetNheTimeSlotsThroughNheDs(request);
