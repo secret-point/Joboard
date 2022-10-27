@@ -24,7 +24,12 @@ import {
   handleSubmitSelfIdDisabilityStatus,
   handleSubmitSelfIdEqualOpportunity,
   handleConfirmNHESelection,
-  renderNheTimeSlotFullAddress
+  renderNheTimeSlotFullAddress,
+  getMXCountryCodeByCountryName,
+  onAssessmentStart,
+  validateInput,
+  isValidDOB,
+  isDOBOverEighteen
 } from "../../../src/utils/helper";
 import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
 import * as boundUi from "../../../src/actions//UiActions/boundUi";
@@ -39,10 +44,12 @@ import {
   TEST_CANDIDATE_ADDRESS,
   TEST_JOB_ID,
   TEST_SELF_IDENTIFICATION,
-  NHE_TIMESLOT
+  NHE_TIMESLOT,
+  TEST_JOB
 } from "../../test-utils/test-data";
 import { CountryCode, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
 import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
+import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -330,5 +337,69 @@ describe("handleConfirmNHESelection", () => {
 describe("renderNheTimeSlotFullAddress", () => {
   it("should match", () => {
     expect(renderNheTimeSlotFullAddress(NHE_TIMESLOT)).toEqual("01:30 PM - 02:00 PM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327");
+  })
+})
+
+describe("getMXCountryCodeByCountryName", () => {
+  it("should return MX", () => {
+    expect(getMXCountryCodeByCountryName("Mexico")).toEqual("MX")
+  })
+
+  it("should return empty string", () => {
+    expect(getMXCountryCodeByCountryName("USA")).toEqual("")
+  })
+})
+
+describe("onAssessmentStart", () => {
+  it("should call", () => {
+    const spy = jest.spyOn(adobeActions, "postAdobeMetrics");
+    onAssessmentStart("https://hiring.amazon.com/#/", TEST_APPLICATION_DATA, TEST_JOB)
+    expect(spy).toHaveBeenCalledWith({ name: METRIC_NAME.ASSESSMENT_START });
+  })
+})
+
+describe("validateInput", () => {
+  it("should return false", () => {
+    expect(validateInput("", true, "")).toEqual(false);
+  })
+
+  it("should return true", () => {
+    expect(validateInput("", false, "")).toEqual(true);
+  })
+
+  it("should return true", () => {
+    expect(validateInput("45689", false, "^[0-9]*$")).toEqual(true);
+  })
+
+  it("should return false", () => {
+    expect(validateInput("45A689", true, "^[0-9]*$")).toEqual(false);
+  })
+})
+
+describe("isValidDOB", () => {
+  it("should return true", () => {
+    expect(isValidDOB("1970-01-01")).toEqual(true);
+  })
+
+  it("should return false", () => {
+    expect(isValidDOB("")).toEqual(false);
+  })
+
+  it("should return false", () => {
+    expect(isValidDOB("1980-13-13")).toEqual(false);
+  })
+})
+
+describe("isDOBOverEighteen", () => {
+  it("should return false", () => {
+    expect(isDOBOverEighteen("")).toEqual(false)
+  })
+
+  it("should return false", () => {
+    expect(isDOBOverEighteen("2020-01-01")).toEqual(false)
+  })
+
+  it("should return true", () => {
+    expect(isDOBOverEighteen("2004-01-01")).toEqual(true)
   })
 })
