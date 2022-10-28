@@ -9,7 +9,7 @@ import { getDataForEventMetrics, getDataForMetrics } from "../../helpers/adobe-h
 import { log } from "../../helpers/log-helper";
 import { getCheckBoxListLabels, getMetricValues } from "../../helpers/utils";
 import store from "../../store/store";
-import { getLocale } from "../../utils/helper";
+import { getCountryCode, getLocale } from "../../utils/helper";
 
 export const JOB_OPPORTUNITIES = "job-opportunities";
 export const CONSENT = "consent";
@@ -61,6 +61,10 @@ const addLocaleToMetric = ( metric: any = {} ) => {
   }
 };
 
+const addCountryCodeToMetric = ( metric: any = {} ) => {
+  return metric.countryCode = getCountryCode().toLowerCase();
+};
+
 export const addMetricForPageLoad = ( pageName: string ) => {
   let dataLayer: any = {};
   window.isPageMetricsUpdated = window.isPageMetricsUpdated || {};
@@ -71,6 +75,7 @@ export const addMetricForPageLoad = ( pageName: string ) => {
       dataLayer = getDataForMetrics(pageName);
       if(!isEmpty(dataLayer)) {
         addLocaleToMetric(dataLayer);
+        addCountryCodeToMetric(dataLayer);
         sendDataLayerAdobeAnalytics(dataLayer);
         isPageMetricsUpdated[pageName] = true;
         window.isPageMetricsUpdated = isPageMetricsUpdated;
