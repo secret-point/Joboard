@@ -1688,6 +1688,10 @@
       "value" : "మీరు ఎంపిక చేసుకున్న షెడ్యూల్ ఇకపై అందుబాటులో ఉండదు, దయచేసి మరొక షెడ్యూల్‌ని ఎంపిక చేయండి.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "మీరు ఎంచుకున్న ఉద్యోగం ఇకపై అందుబాటులో లేదు. దయచేసి వేరే ఆప్షన్‌ని ఎంపిక చేసుకోండి.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "eSignatures సరిపోలడం లేదు. దయచేసి స్టెప్ 1 మరియు స్టెప్ 2లో eSignature కోసం అదే టెక్స్ట్‌ను ఉపయోగించండి.",
       "note" : "error message for update application when signatures do not match"
@@ -2328,9 +2332,53 @@
       "value" : "CURP ID:",
       "note" : "Text for CRUP title"
     },
+    "BB-SelfId-equal-opportunity-form-gender-mx-male-text" : {
+      "value" : "మగ",
+      "note" : "Text for Self Identification gender: Male"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-female-text" : {
+      "value" : "మహిళ",
+      "note" : "Text for Self Identification gender: Female"
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-other-text" : {
+      "value" : "ఇతర",
+      "note" : "Text for Self Identification gender: other "
+    },
+    "BB-SelfId-equal-opportunity-form-gender-mx-prefer-not-to-say-text" : {
+      "value" : "చెప్పడానికి ఇష్టపడలేదు",
+      "note" : "Text for Self Identification gender: prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-he-title-text" : {
+      "value" : "అతడు",
+      "note" : "Text for Self Identification Pronouns: He"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-she-title-text" : {
+      "value" : "ఆమె",
+      "note" : "Text for Self Identification Pronouns: She"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
+      "value" : "వారు",
+      "note" : "Text for Self Identification Pronouns: They"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
       "value" : "ఇతర",
       "note" : "Text for Self Identification Pronouns: Other"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-mx-prefer-not-to-say-title-text" : {
+      "value" : "చెప్పడానికి ఇష్టపడలేదు",
+      "note" : "Text for Self Identification Pronouns: Prefer not to say"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-indigenous-title-text" : {
+      "value" : "స్వదేశీ",
+      "note" : "Text for Self Identification MX Ethnicity: Indigenous"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-other-title-text" : {
+      "value" : "ఇతర",
+      "note" : "Text for Self Identification MX Ethnicity: other"
+    },
+    "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
+      "value" : "చెప్పడానికి ఇష్టపడలేదు",
+      "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
     }
   }
 }

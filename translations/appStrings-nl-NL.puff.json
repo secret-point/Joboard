@@ -472,6 +472,10 @@
       "value" : "Geboortedatum",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "Voer een geldige geboortedatum in.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "Je moet ouder zijn dan 18 jaar.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -2371,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "Ik zeg het liever niet",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Voer je geboortedatum in.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Je moet jonger zijn dan 100 jaar.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }
