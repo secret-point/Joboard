@@ -52,6 +52,7 @@ import {
     NameRegexValidator,
     newBBUIPathName,
     SelfIdDisabilityRadioItem,
+    SelfIdentificationConfigStepCountryMap,
     SelfIdEthnicBackgroundItemsMap,
     SelfIdGenderRadioItemsMap,
     SelfIdMilitarySpouseRadioItem,
@@ -1165,17 +1166,61 @@ export const handleUpdateSelfIdStep =
       boundUpdateSelfIdStepConfig(request);
   };
 
-export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo ) => {
-    const { gender, ethnicity, protectedVeteran, veteran, disability, militarySpouse } = selfIdentificationInfo;
-    const countryCode= getCountryCode();
-    const isEqualOpportunityCompleted = !!gender && !!ethnicity;
-    const isDisabilityCompleted = !!disability;
-    const isVeteranCompleted = !!protectedVeteran && !!veteran && !!militarySpouse;
+export const isSelfIdEqualOpportunityStepCompleted = (selfIdInfo: SelfIdentificationInfo, countryCode?: CountryCode) => {
+    const { gender, ethnicity, pronoun } = selfIdInfo;
+    const country = countryCode ? countryCode : getCountryCode();
+    switch (country) {
+        case CountryCode.US:
+            return !!gender && !!ethnicity;
+        case CountryCode.MX:
+            return !!gender && !!ethnicity && !!pronoun;
+
+        default:
+            return !!gender && !!ethnicity;
+    }
+}
+
+export const isSelfIdDisabilityStepCompleted = (selfIdInfo: SelfIdentificationInfo, countryCode?: CountryCode) => {
+    const { disability } = selfIdInfo;
+    const country = countryCode ? countryCode : getCountryCode();
+    switch (country) {
+        case CountryCode.US:
+            return !!disability;
+        case CountryCode.MX:
+            return !!disability;
+
+        default:
+            return !!disability;
+    }
+}
+
+export const isSelfIdVeteranStepCompleted = (selfIdInfo: SelfIdentificationInfo, countryCode?: CountryCode) => {
+    const { protectedVeteran, veteran, militarySpouse } = selfIdInfo;
+    const country = countryCode ? countryCode : getCountryCode();
+    switch (country) {
+        case CountryCode.US:
+            return !!protectedVeteran && !!veteran && !!militarySpouse;
+
+        default:
+            return !!protectedVeteran && !!veteran && !!militarySpouse;
+    }
+}
+
+export const GetSelfIdentificationConfigStep = (countryCode?: CountryCode): SelfIdentificationConfig => {
+    const country = countryCode ? countryCode : getCountryCode();
+    return SelfIdentificationConfigStepCountryMap[country];
+}
+
+export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: SelfIdentificationInfo, country?: CountryCode) => {
+    const countryCode= country ? country: getCountryCode();
+    const isEqualOpportunityCompleted = isSelfIdEqualOpportunityStepCompleted(selfIdentificationInfo, country);
+    const isDisabilityCompleted = isSelfIdDisabilityStepCompleted(selfIdentificationInfo, country);
+    const isVeteranCompleted = isSelfIdVeteranStepCompleted(selfIdentificationInfo, country);
 
     const { EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM } = SELF_IDENTIFICATION_STEPS;
-    const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
+    const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
 
-    let stepConfig: SelfIdentificationConfig = { ...initSelfIdentificationState.stepConfig }
+    let stepConfig: SelfIdentificationConfig = { ...GetSelfIdentificationConfigStep(countryCode) };
 
     if(isEqualOpportunityCompleted) {
         stepConfig = {
@@ -1186,14 +1231,14 @@ export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: Se
                 editMode: false
             },
             [DISABILITY_FORM]: {
-                status: COMPLETED,
+                status: countryCode === CountryCode.MX ? ACTIVE : LOCKED,
                 editMode: countryCode === CountryCode.MX
             }
         }
     }
 
     if(countryCode=== CountryCode.US) {
-        if(isVeteranCompleted && countryCode) {
+        if(isVeteranCompleted) {
             stepConfig = {
                 ...stepConfig,
                 completedSteps: [...stepConfig.completedSteps, VETERAN_FORM],
@@ -1207,11 +1252,11 @@ export const handleInitiateSelfIdentificationStep = ( selfIdentificationInfo: Se
                 }
             }
         }
-        else {
+        else if(isEqualOpportunityCompleted) {
             stepConfig = {
                 ...stepConfig,
                 [VETERAN_FORM]: {
-                    status: ACTIVE,
+                    status:  ACTIVE,
                     editMode: false
                 }
             }
@@ -1395,14 +1440,26 @@ export const isAdditionalBgcInfoValid = (additionBgc?: AdditionalBackgroundInfoR
     return addressValid && !isNil(dateOfBirth) && !isNil(governmentIdType) && !isNil(hasCriminalRecordWithinSevenYears) && !isNil(hasPreviouslyWorkedAtAmazon) && !isNil(idNumber);
 }
 
-export const isSelfIdentificationInfoValid = (selfIdInfo?: SelfIdentificationInfo): boolean => {
+export const isSelfIdentificationInfoValid = (selfIdInfo?: SelfIdentificationInfo, countryCode?: CountryCode): boolean => {
     if(!selfIdInfo) {
         return false;
     }
 
-    const { disability, ethnicity, gender, militarySpouse, protectedVeteran, veteran } = selfIdInfo;
+    const country = countryCode ? countryCode : getCountryCode();
+    const isVeteranCompleted = isSelfIdVeteranStepCompleted(selfIdInfo, country);
+    const isDisabilityCompleted = isSelfIdDisabilityStepCompleted(selfIdInfo, country);
+    const isEqualOpportunityCompleted = isSelfIdEqualOpportunityStepCompleted(selfIdInfo, country);
 
-    return !!disability && !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
+    switch (country) {
+        case CountryCode.US:
+            return isVeteranCompleted && isDisabilityCompleted && isEqualOpportunityCompleted;
+
+        case CountryCode.MX:
+            return isDisabilityCompleted && isEqualOpportunityCompleted;
+
+        default:
+            return isVeteranCompleted && isDisabilityCompleted && isEqualOpportunityCompleted;
+    }
 }
 
 //This wil be used to check if first two steps are filled correctly before submitting in step 3
@@ -1647,3 +1704,31 @@ export const formatMonthlyBasePayHelper = (monthlyBasePay?: number | null, curre
     return formattedMonthlyRate;
 }
 
+//use this helper instead of initializing in reducer
+export const initSelfIdStepConfig = (config: SelfIdentificationConfig, countryCode?: CountryCode): SelfIdentificationConfig => {
+    const country = countryCode ? countryCode : getCountryCode();
+    const initSelfIdConfig = SelfIdentificationConfigStepCountryMap[country];
+    const { DISABILITY_FORM, EQUAL_OPPORTUNITY_FORM, VETERAN_FORM } = config;
+    let initConfig = config;
+
+    switch (country) {
+        case CountryCode.US:
+            if(!DISABILITY_FORM && !EQUAL_OPPORTUNITY_FORM && !VETERAN_FORM) {
+                initConfig = initSelfIdConfig;
+            }
+            break;
+
+        case CountryCode.MX:
+            if(!DISABILITY_FORM && !EQUAL_OPPORTUNITY_FORM) {
+                initConfig = initSelfIdConfig;
+            }
+            break;
+
+        default:
+            if(!DISABILITY_FORM && !EQUAL_OPPORTUNITY_FORM && !VETERAN_FORM) {
+                initConfig = initSelfIdConfig;
+            }
+    }
+
+    return initConfig;
+}

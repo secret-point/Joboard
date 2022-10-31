@@ -662,7 +662,6 @@ type SelfIdentificationStepType = {[key in SELF_IDENTIFICATION_STEPS]: InfoCardS
 
 export interface SelfIdentificationConfig extends Partial<SelfIdentificationStepType> {
     completedSteps: SELF_IDENTIFICATION_STEPS[];
-
 }
 
 export type InfoCardStepConfig = BgcStepConfig & SelfIdentificationConfig;

@@ -4,15 +4,15 @@ import {
   SELF_IDENTIFICATION_ACTION_TYPE,
   SelfIdentificationStepConfigActions
 } from "../actions/SelfIdentitifactionActions/selfIdentificationActionTypes";
-import { SelfIdentificationConfigStepCountryMap } from "../utils/constants/common";
-import { getCountryCode } from "../utils/helper";
 
 export interface SelfIdentificationState {
   stepConfig: SelfIdentificationConfig
 }
 
 export const initSelfIdentificationState: SelfIdentificationState = {
-  stepConfig: SelfIdentificationConfigStepCountryMap['MX']
+  stepConfig: {
+    completedSteps: []
+  }
 }
 
 export default function selfIdentificationReducer( state: SelfIdentificationState = initSelfIdentificationState, action: SelfIdentificationStepConfigActions ): SelfIdentificationState {

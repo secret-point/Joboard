@@ -34,6 +34,7 @@ import {
   createUpdateApplicationRequest,
   getLocale,
   handleInitiateSelfIdentificationStep,
+  initSelfIdStepConfig,
   isSelfIdentificationInfoValid,
   SelfShouldDisplayContinue
 } from "../../../utils/helper";
@@ -43,6 +44,7 @@ import InfoStepCard from "../../common/InfoStepCard";
 import DisabilityForm from "../../common/self-Identification/disability-form";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
 import DebouncedButton from "../../common/DebouncedButton";
+import { boundUpdateSelfIdStepConfig } from "../../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -71,6 +73,11 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
   const jobDetail = job.results;
   const {scheduleDetail} = schedule.results;
+
+  useEffect(() => {
+    const selfIdStepConfig = initSelfIdStepConfig(stepConfig);
+    boundUpdateSelfIdStepConfig(selfIdStepConfig);
+  },[])
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);

@@ -2,11 +2,29 @@ import Cookies from "js-cookie";
 import * as boundUi from "../../../src/actions//UiActions/boundUi";
 import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
-import * as boundSelfIdentificationActions from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import * as boundSelfIdentificationActions
+  from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
 import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
-import { MX_SelfIdPronounsItems, newBBUIPathName, SelfIdGenderRadioItems } from "../../../src/utils/constants/common";
-import { CountryCode, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
+import {
+  MX_SelfIdentificationConfigSteps,
+  MX_SelfIdPronounsItems,
+  newBBUIPathName,
+  SelfIdGenderRadioItems,
+  US_SelfIdentificationConfigSteps
+} from "../../../src/utils/constants/common";
+import { CountryCode, INFO_CARD_STEP_STATUS, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
+import {
+  NHE_TIMESLOT,
+  TEST_APPLICATION_DATA,
+  TEST_APPLICATION_ID,
+  TEST_ASSESSMENT_URL,
+  TEST_BACKGROUND_INFO,
+  TEST_CANDIDATE_ADDRESS,
+  TEST_JOB,
+  TEST_JOB_ID,
+  TEST_SELF_IDENTIFICATION
+} from "../../test-utils/test-data";
 import {
   AWAIT_TIMEOUT,
   awaitWithTimeout,
@@ -15,42 +33,36 @@ import {
   formatMonthlyBasePayHelper,
   getCountryCodeByCountryName,
   getKeyMapFromDetailedRadioItemList,
+  getMXCountryCodeByCountryName,
+  getQueryFromSearchAndHash,
+  GetSelfIdentificationConfigStep,
+  handleConfirmNHESelection,
+  handleInitiateSelfIdentificationStep,
+  handleSubmitSelfIdDisabilityStatus,
+  handleSubmitSelfIdEqualOpportunity,
+  handleSubmitSelfIdVeteranStatus,
+  handleUpdateSelfIdStep,
+  initSelfIdStepConfig,
   isAdditionalBgcInfoValid,
   isAddressValid,
   isDOBLessThan100,
+  isDOBOverEighteen,
   isI18nSelectOption,
   isNewBBuiPath,
+  isSelfIdDisabilityStepCompleted,
   isSelfIdentificationInfoValid,
   isSelfIdentificationInfoValidBeforeDisability,
+  isSelfIdEqualOpportunityStepCompleted,
+  isSelfIdVeteranStepCompleted,
+  onAssessmentStart,
   parseQueryParamsArrayToSingleItem,
   processAssessmentUrl,
+  renderNheTimeSlotFullAddress,
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
   showErrorMessage,
-  handleInitiateSelfIdentificationStep,
-  handleUpdateSelfIdStep,
-  handleSubmitSelfIdVeteranStatus,
-  handleSubmitSelfIdDisabilityStatus,
-  handleSubmitSelfIdEqualOpportunity,
-  handleConfirmNHESelection,
-  renderNheTimeSlotFullAddress,
-  getMXCountryCodeByCountryName,
-  onAssessmentStart,
-  validateInput,
-  isDOBOverEighteen,
-  getQueryFromSearchAndHash
+  validateInput
 } from "../../../src/utils/helper";
-import {
-  TEST_APPLICATION_DATA,
-  TEST_APPLICATION_ID,
-  TEST_ASSESSMENT_URL,
-  TEST_BACKGROUND_INFO,
-  TEST_CANDIDATE_ADDRESS,
-  TEST_JOB_ID,
-  TEST_SELF_IDENTIFICATION,
-  NHE_TIMESLOT,
-  TEST_JOB
-} from "../../test-utils/test-data";
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -211,8 +223,54 @@ describe("isSelfIdentificationInfoValid", () => {
     expect(isSelfIdentificationInfoValid()).toEqual(false);
   })
 
-  it("should return true", () => {
-    expect(isSelfIdentificationInfoValid(TEST_SELF_IDENTIFICATION)).toEqual(true);
+  describe("US", () => {
+    it("should return true: US", () => {
+      expect(isSelfIdentificationInfoValid(TEST_SELF_IDENTIFICATION, CountryCode.US)).toEqual(true);
+    })
+
+    it("should return true: US - equal opportunity is not complete", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        ethnicity: ""
+      }, CountryCode.US)).toEqual(false);
+    })
+
+    it("should return true: US - disability is not complete", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        disability: ""
+      }, CountryCode.US)).toEqual(false);
+    })
+
+    it("should return true: US - veteran status  is not complete", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        veteran: ""
+      }, CountryCode.US)).toEqual(false);
+    })
+  })
+
+  describe("MX", () => {
+    it("should return true: MX", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        pronoun: "Her"
+      }, CountryCode.MX)).toEqual(true);
+    })
+
+    it("should return true: MX - equal opportunity is not complete", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        ethnicity: ""
+      }, CountryCode.MX)).toEqual(false);
+    })
+
+    it("should return true: MX - disability is not complete", () => {
+      expect(isSelfIdentificationInfoValid({
+        ...TEST_SELF_IDENTIFICATION,
+        disability: ""
+      }, CountryCode.MX)).toEqual(false);
+    })
   })
 })
 
@@ -282,13 +340,181 @@ test("getKeyMapFromDetailedRadioItemList", () => {
 })
 
 describe("handleInitiateSelfIdentificationStep", () => {
+  const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
 
-  it("should call boundUpdateSelfIdStepConfig", () => {
-    const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
+  beforeEach(() => {
+    spy.mockReset();
+  })
 
-    handleInitiateSelfIdentificationStep(TEST_SELF_IDENTIFICATION);
+  const { EQUAL_OPPORTUNITY, DISABILITY_FORM, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS
 
-    expect(spy).toHaveBeenCalled();
+  describe("US", () => {
+    it("should call boundUpdateSelfIdStepConfig: US and no step completed", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        militarySpouse: "",
+        veteran: "",
+        disability: "",
+        protectedVeteran: "",
+        gender: "",
+        ethnicity: "",
+      }, CountryCode.US);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.ACTIVE,
+          editMode: false
+        },
+        [VETERAN_FORM]: {
+          status: INFO_CARD_STEP_STATUS.LOCKED,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.LOCKED,
+          editMode: false
+        },
+      });
+    })
+
+    it("should call boundUpdateSelfIdStepConfig: US and only equal opportunity complete", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        militarySpouse: "",
+        veteran: "",
+        disability: "",
+        protectedVeteran: ""
+      }, CountryCode.US);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [EQUAL_OPPORTUNITY],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [VETERAN_FORM]: {
+          status: INFO_CARD_STEP_STATUS.ACTIVE,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.LOCKED,
+          editMode: false
+        },
+      });
+    })
+
+    it("should call boundUpdateSelfIdStepConfig: US and only equal opportunity and veteran complete", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        disability: ""
+      }, CountryCode.US);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [EQUAL_OPPORTUNITY, VETERAN_FORM],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [VETERAN_FORM]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.ACTIVE,
+          editMode: false
+        },
+      });
+    })
+
+    it("should call boundUpdateSelfIdStepConfig: US and all step complete", () => {
+
+      handleInitiateSelfIdentificationStep(TEST_SELF_IDENTIFICATION, CountryCode.US);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [EQUAL_OPPORTUNITY, VETERAN_FORM, DISABILITY_FORM],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [VETERAN_FORM]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+      });
+    })
+  })
+
+  describe("MX", () => {
+    it("should call boundUpdateSelfIdStepConfig: MX and no step completed", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        disability: "",
+        gender: "",
+        ethnicity: "",
+        pronoun: ""
+      }, CountryCode.MX);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.ACTIVE,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.LOCKED,
+          editMode: false
+        },
+      });
+    })
+
+    it("should call boundUpdateSelfIdStepConfig: MX and only equal opportunity complete", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        disability: "",
+        pronoun: 'Her'
+      }, CountryCode.MX);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [EQUAL_OPPORTUNITY],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.ACTIVE,
+          editMode: true
+        },
+      });
+    })
+
+    it("should call boundUpdateSelfIdStepConfig: MX and all step complete", () => {
+
+      handleInitiateSelfIdentificationStep({
+        ...TEST_SELF_IDENTIFICATION,
+        pronoun: 'Her'
+      }, CountryCode.MX);
+
+      expect(spy).toHaveBeenCalledWith({
+        completedSteps: [EQUAL_OPPORTUNITY, DISABILITY_FORM],
+        [EQUAL_OPPORTUNITY]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+        [DISABILITY_FORM]: {
+          status: INFO_CARD_STEP_STATUS.COMPLETED,
+          editMode: false
+        },
+      });
+    })
   })
 })
 
@@ -428,3 +654,84 @@ describe("getQueryFromSearchAndHash", () => {
       .toEqual("");
   });
 });
+
+
+test("isSelfIdVeteranStepCompleted", () => {
+  expect(isSelfIdVeteranStepCompleted({
+    ...TEST_SELF_IDENTIFICATION
+  }, CountryCode.US)).toBeTruthy();
+
+  expect(isSelfIdVeteranStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    veteran: ""
+  }, CountryCode.US)).toBeFalsy();
+})
+
+test("isSelfIdEqualOpportunityStepCompleted", () => {
+  expect(isSelfIdEqualOpportunityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION
+  }, CountryCode.US)).toBeTruthy();
+
+  expect(isSelfIdEqualOpportunityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    pronoun: "Her"
+  }, CountryCode.MX)).toBeTruthy();
+
+  expect(isSelfIdEqualOpportunityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    gender: ""
+  }, CountryCode.US)).toBeFalsy();
+
+  expect(isSelfIdEqualOpportunityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    gender: ""
+  }, CountryCode.MX)).toBeFalsy();
+});
+
+test("GetSelfIdentificationConfigStep", () => {
+  expect(GetSelfIdentificationConfigStep(CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
+  expect(GetSelfIdentificationConfigStep(CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
+})
+
+
+test("isSelfIdEqualOpportunityStepCompleted", () => {
+  expect(isSelfIdDisabilityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION
+  }, CountryCode.US)).toBeTruthy();
+
+  expect(isSelfIdDisabilityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+  }, CountryCode.MX)).toBeTruthy();
+
+  expect(isSelfIdDisabilityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    disability: ""
+  }, CountryCode.US)).toBeFalsy();
+
+  expect(isSelfIdDisabilityStepCompleted({
+    ...TEST_SELF_IDENTIFICATION,
+    disability: ""
+  }, CountryCode.MX)).toBeFalsy();
+})
+
+describe("initSelfIdStepConfig", () => {
+  describe("US", () => {
+    test("init config without self step map", () => {
+      expect(initSelfIdStepConfig({completedSteps: []}, CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
+    });
+
+    test("init config with self Id step map", () => {
+      expect(initSelfIdStepConfig(US_SelfIdentificationConfigSteps, CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
+    })
+  });
+
+  describe("MX", () => {
+    test("init config without self step map", () => {
+      expect(initSelfIdStepConfig({completedSteps: []}, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
+    });
+
+    test("init config with self Id step map", () => {
+      expect(initSelfIdStepConfig(MX_SelfIdentificationConfigSteps, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
+    })
+  })
+})

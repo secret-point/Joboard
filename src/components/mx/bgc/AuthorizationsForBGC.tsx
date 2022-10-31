@@ -131,9 +131,6 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
                             <Text fontSize="T200">
                                 {`${t("BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text", "Please type your full name as eSignature")} *`}
                             </Text>
-                            <Text color={CommonColors.Neutral70} fontSize="T200">
-                                2/3
-                            </Text>
                         </Row>
                     )}
                 >

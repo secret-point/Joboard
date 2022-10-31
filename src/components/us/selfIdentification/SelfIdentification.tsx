@@ -14,11 +14,10 @@ import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowA
 import { CommonColors } from "../../../utils/colors";
 import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
 import { connect } from "react-redux";
-import { PAGE_ROUTES } from "../../pageRoutes";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { JobState } from "../../../reducers/job.reducer";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { ApplicationState } from "../../../reducers/application.reducer";
@@ -27,16 +26,18 @@ import { SelfIdentificationState } from "../../../reducers/selfIdentification.re
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import {
   PROXY_APPLICATION_STATE,
-  QUERY_PARAMETER_NAME,
   SELF_IDENTIFICATION_STEPS,
   UPDATE_APPLICATION_API_TYPE
 } from "../../../utils/enums/common";
 import {
-  checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale,
+  checkAndBoundGetApplication,
+  createUpdateApplicationRequest,
+  getLocale,
   handleInitiateSelfIdentificationStep,
+  initSelfIdStepConfig,
   isSelfIdentificationInfoValid,
-  SelfShouldDisplayContinue,
-  routeToAppPageWithPath, reloadAppPageWithSchedule
+  reloadAppPageWithSchedule,
+  SelfShouldDisplayContinue
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -45,6 +46,7 @@ import DisabilityForm from "../../common/self-Identification/disability-form";
 import EqualOpportunityForm from "../../common/self-Identification/Equal-opportunity-form";
 import VeteranStatusForm from "../../common/self-Identification/veteran-status-form";
 import DebouncedButton from "../../common/DebouncedButton";
+import { boundUpdateSelfIdStepConfig } from "../../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -73,6 +75,11 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
   const jobDetail = job.results;
   const {scheduleDetail} = schedule.results;
+
+  useEffect(() => {
+    const selfIdStepConfig = initSelfIdStepConfig(stepConfig);
+    boundUpdateSelfIdStepConfig(selfIdStepConfig);
+  }, [])
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
