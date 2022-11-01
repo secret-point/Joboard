@@ -114,7 +114,6 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
   }, [candidateData, applicationData, selfIdentificationInfo])
 
-
   const handleContinue = () => {
     boundResetBannerMessage();
     const isSelfIdInfoValid = isSelfIdentificationInfoValid(selfIdentificationInfo);
@@ -157,7 +156,7 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
         shouldRenderContinueButton && !isSelfIdInfoValid &&
         <Row padding="S300" backgroundColor={CommonColors.RED05}>
           <StatusIndicator
-            messageText={"Please check all required boxes in previous steps to proceed."}
+            messageText={t("BB-SelfIdentification-check-required-field-error-message", "Please check all required boxes in previous steps to proceed.")}
             status={Status.Negative}
             iconAriaHidden={true}
           />

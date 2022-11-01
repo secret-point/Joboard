@@ -2387,6 +2387,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "100 yaşın altında olmalısınız.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Devam etmek için lütfen önceki adımlarda gerekli tüm kutuları işaretleyin.",
+      "note" : "Error message to check required fields on the self Identification"
     }
   }
 }

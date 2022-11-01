@@ -2387,6 +2387,14 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "നിങ്ങൾ 100 വയസ്സിൽ താഴെയായിരിക്കണം.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "നിങ്ങളുടെ സർവനാമം എന്താണ്?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "ദയവായി താഴെ കൊടുത്തിരിക്കുന്ന ബോക്‌സുകളിലൊന്നിൽ ശരി അടയാളമിടുക",
+      "note" : "Label for disability checkbox"
     }
   }
 }

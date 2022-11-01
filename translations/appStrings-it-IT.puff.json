@@ -2387,6 +2387,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Occorre avere meno di 100 anni.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Seleziona tutte le caselle richieste nei passaggi precedenti per procedere.",
+      "note" : "Error message to check required fields on the self Identification"
     }
   }
 }

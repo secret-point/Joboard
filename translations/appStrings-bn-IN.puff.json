@@ -2387,6 +2387,14 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "আপনার বয়স 100 বছরের নীচে হতে হবে।",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "আপনার প্রোনাউন বা সর্বনাম কি?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "অনুগ্রহ করে নিচের বাক্সগুলির মধ্যে একটি চেক করুন",
+      "note" : "Label for disability checkbox"
     }
   }
 }

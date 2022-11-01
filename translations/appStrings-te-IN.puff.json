@@ -2387,6 +2387,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "మీకు 100 సంవత్సరాల కంటే తక్కువ వయస్సు ఉండాలి.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "దయచేసి కొనసాగడానికి మునుపటి దశల్లో అవసరమైన అన్ని బాక్స్‌లను తనిఖీ చేయండి.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "మీ సర్వనామం ఏమిటి?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "దయచేసి కింది బాక్స్‌లలో ఒక దానిని ఎంచుకోండి",
+      "note" : "Label for disability checkbox"
     }
   }
 }

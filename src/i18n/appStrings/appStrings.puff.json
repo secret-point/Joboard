@@ -2388,6 +2388,18 @@
         "BB-BGC-Additional-bgc-form-dob-above100-text": {
             "note" : "Text for additional bgc when date of birth is above 100",
             "value" : "You need to be below 100 years old."
+        },
+        "BB-SelfIdentification-check-required-field-error-message": {
+            "note" : "Error message to check required fields on the self Identification",
+            "value" : "Please check all required boxes in previous steps to proceed."
+        },
+        "BB-SelfId-equal-opportunity-form-pronoun-label-text": {
+            "note" : "Label for equal opportunity pronoun checkbox",
+            "value" : "What is your pronoun?"
+        },
+        "BB-SelfId-disability-form-disability-checkbox-label-text": {
+            "note" : "Label for disability checkbox",
+            "value" : "Please check one of the boxes below"
         }
     }
 }
