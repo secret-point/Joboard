@@ -1688,6 +1688,10 @@
       "value" : "Jadual yang anda pilih tidak lagi tersedia, sila pilih jadual lain.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "Kerja yang anda pilih tidak lagi tersedia. Sila pilih pilihan yang lain.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "e-Tandatangan tidak sepadan. Sila gunakan teks yang sama untuk e-Tandatangan dalam langkah 1 dan langkah 2.",
       "note" : "error message for update application when signatures do not match"
@@ -2375,6 +2379,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "Lebih suka untuk tidak mengatakan",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Sila masukkan tarikh lahir anda.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Anda perlu berumur di bawah 100 tahun.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

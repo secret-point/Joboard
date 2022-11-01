@@ -1688,6 +1688,10 @@
       "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത ഷെഡ്യൂൾ ഇനി ലഭ്യമല്ല, ദയവായി മറ്റൊരു ഷെഡ്യൂൾ തിരഞ്ഞെടുക്കുക.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത ജോലി നിലവിൽ ലഭ്യമല്ല. ദയവായി മറ്റൊരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "ഇ-സിഗ്നേച്ചറുകൾ പൊരുത്തപ്പെടുന്നില്ല. ഘട്ടം 1, ഘട്ടം 2 എന്നിവയിൽ ഇ-സിഗ്നേച്ചറിനായി അതേ വാചകം ഉപയോഗിക്കുക.",
       "note" : "error message for update application when signatures do not match"

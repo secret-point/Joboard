@@ -472,6 +472,10 @@
       "value" : "Fødselsdato",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "Indtast en gyldig fødselsdato.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "Du skal være over 18 år gammel.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -2371,6 +2375,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "Foretrækker ikke at svare",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Indtast venligst din fødselsdato.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Du skal være under 100 år gammel.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

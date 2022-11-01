@@ -472,6 +472,10 @@
       "value" : "பிறந்த தேதி",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "சரியான பிறந்த தேதியை உள்ளிடவும்.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "நீங்கள் 18 வயதுக்கு மேல் இருக்க வேண்டும்.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -1684,6 +1688,10 @@
       "value" : "நீங்கள் தேர்ந்தெடுத்த காலத்திட்டம் தற்போது இல்லை, மற்றொரு காலத்திட்டத்தைத் தேர்ந்தெடுக்கவும்.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்த வேலை தற்போது இல்லை. வேறு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "மின்னணுக் கையொப்பம் பொருந்தவில்லை. படி 1 மற்றும் படி 2இல் மின்னணுக் கையொப்பத்திற்கு ஒரே உரையைப் பயன்படுத்தவும்.",
       "note" : "error message for update application when signatures do not match"
@@ -2371,6 +2379,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "கூற விரும்பவில்லை",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "உங்கள் பிறந்த தேதியை உள்ளிடவும்.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "நீங்கள் 100 வயதுக்குக் கீழுள்ளவராக இருக்க வேண்டும்.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

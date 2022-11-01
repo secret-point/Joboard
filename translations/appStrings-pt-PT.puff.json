@@ -472,6 +472,10 @@
       "value" : "Data de nascimento",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "Insira uma data de nascimento válida.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "É necessário ter mais de 18 anos de idade.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -1684,6 +1688,10 @@
       "value" : "O horário que selecionou já não está disponível. Selecione outro horário.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "O trabalho selecionado já não está disponível. Selecione outra opção.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "As assinaturas eletrónicas não correspondem. Utilize o mesmo texto para a assinatura eletrónica nos passos 1 e 2.",
       "note" : "error message for update application when signatures do not match"
@@ -2371,6 +2379,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "Prefiro não dizer",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "Insira a sua data de nascimento.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "Precisa de ter menos de 100 anos de idade.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

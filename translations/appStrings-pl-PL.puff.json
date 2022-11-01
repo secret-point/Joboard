@@ -1688,6 +1688,10 @@
       "value" : "Wybrany harmonogram nie jest już dostępny, wybierz inny.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "Wybrane stanowisko nie jest już dostępne. Wybierz inną opcję.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "Podpisy elektroniczne nie są zgodne. Użyj tego samego tekstu do podpisu elektronicznego w kroku 1 i kroku 2.",
       "note" : "error message for update application when signatures do not match"

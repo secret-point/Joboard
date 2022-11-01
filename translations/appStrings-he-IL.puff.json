@@ -472,6 +472,10 @@
       "value" : "תאריך לידה",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "יש להזין תאריך לידה תקין.",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "אתה צריך להיות מעל גיל 18.",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."

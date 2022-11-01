@@ -1688,6 +1688,10 @@
       "value" : "Het schema dat je hebt geselecteerd, is niet langer beschikbaar. Selecteer een ander schema.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "De door jou geselecteerde vacature is niet langer beschikbaar. Selecteer een andere optie.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "Elektronische handtekeningen komen niet overeen. Gebruik dezelfde tekst voor eSignature in stap 1 en stap 2.",
       "note" : "error message for update application when signatures do not match"

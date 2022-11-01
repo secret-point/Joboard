@@ -472,6 +472,10 @@
       "value" : "出生日期",
       "note" : "Text for the additional bgc form  date of birth label text"
     },
+    "BB-BGC-Additional-bgc-form-dob-error-text" : {
+      "value" : "請輸入有效的出生日期。",
+      "note" : "Text for the additional bgc form date of birth error message text."
+    },
     "BB-BGC-Additional-bgc-form-dob-below18-error-text" : {
       "value" : "您必須年滿 18 歲。",
       "note" : "Text for the additional bgc form date of birth below 18 years error message text."
@@ -2375,6 +2379,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "不願表明",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "請輸入您的出生日期。",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "年齡必須在 100 歲以下。",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }

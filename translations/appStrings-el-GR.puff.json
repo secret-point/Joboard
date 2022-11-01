@@ -48,6 +48,10 @@
       "value" : "Ηνωμένες Πολιτείες",
       "note" : "United States as country name our application supports"
     },
+    "BB-Country-Mexico" : {
+      "value" : "Μεξικό",
+      "note" : "Mexico as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Με την υποβολή αίτησης, επιβεβαιώνετε ότι:",
       "note" : "Text for application qualification criteria"
@@ -320,6 +324,10 @@
       "value" : "Έλεγχος ιστορικού",
       "note" : "Text for BGC page title"
     },
+    "BB-MX-BGC-page-content-title" : {
+      "value" : "Συγκατάθεση για τον έλεγχο απασχόλησης",
+      "note" : "Text for MX BGC page title"
+    },
     "BB-BGC-page-provide-authorization-and-information-notice" : {
       "value" : "Δώστε την εξουσιοδότηση και τις πληροφορίες που απαιτούνται για τον έλεγχο ιστορικού.",
       "note" : "Text for notice to let candidate provide authorization and information needed for bgc"
@@ -327,6 +335,10 @@
     "BB-BGC-page-nonfcra-step-card-title" : {
       "value" : "Αναγνωρίσεις και εξουσιοδοτήσεις για έλεγχο ιστορικού για αθέμιτη αναφορά πιστοληπτικής ικανότητας",
       "note" : "Text for the NON-FCRA step card title"
+    },
+    "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
+      "value" : "Εξουσιοδοτήσεις για έλεγχο ιστορικού, ιατρικό έλεγχο και εξέταση για ναρκωτικά",
+      "note" : "Text for the Authorizations for background check step card title"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Πρόσθετες βασικές πληροφορίες",
@@ -428,8 +440,16 @@
       "value" : "Αριθμός εθνικής ταυτότητας",
       "note" : "Text for the additional bgc form  national id number label text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "CURP ID",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Εισάγαγετε έναν έγκυρο 9ψήφιο αριθμό κοινωνικής ασφάλισης χωρίς παύλα",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Εισαγάγετε ένα έγκυρο CURP ID 18 ψηφίων χωρίς παύλα",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -574,6 +594,10 @@
     },
     "BB-BGC_non-fcra-amazon-conduct-bgc-reminder-text" : {
       "value" : "Όπως γνωστοποιείται και εγκρίνεται από εμένα στο ξεχωριστό έγγραφο γνωστοποίησης και εξουσιοδότησης του Νόμου περί Δίκαιης Πιστοληπτικής Αναφοράς, η Amazon.com, Inc. ή οι θυγατρικές ή ελεγχόμενες εταιρείες της («Amazon») θα πραγματοποιήσουν έλεγχο του ιστορικού μου.",
+      "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
+    },
+    "BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text" : {
+      "value" : "Η Amazon.com, Inc. ή οι θυγατρικές ή ελεγχόμενες εταιρείες της («Amazon») θα πραγματοποιήσουν έλεγχο του ιστορικού μου.",
       "note" : "Text for reminding candidate disclosure and authorization granted to Amazon to conduct bgc on them"
     },
     "BB-BGC_fcra-eSignature-acknowledgement-title-text" : {
@@ -759,6 +783,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-text" : {
       "value" : "Με την ηλεκτρονική υπογραφή μου παρακάτω, πιστοποιώ ότι έχω διαβάσει, κατανοήσει και αποδεχθεί όλες τις δηλώσεις του παρόντος νόμου περί Αναγνωρίσεων και εξουσιοδοτήσεων για έλεγχο ιστορικού για αθέμιτη αναφορά πιστοληπτικής ικανότητας. Δηλώστε την αποδοχή σας εισάγοντας τα στοιχεία που ζητούνται στα παρακάτω πεδία.",
       "note" : "Text for the non fcra acknowledgement and authorization text"
+    },
+    "BB-BGC-authorization-text" : {
+      "value" : "Με την ηλεκτρονική υπογραφή μου παρακάτω, πιστοποιώ ότι έχω διαβάσει, κατανοήσει και αποδεχθεί όλες τις δηλώσεις σε αυτές τις εξουσιοδοτήσεις για έλεγχο ιστορικού, ιατρικό έλεγχο και εξέταση για ναρκωτικά. Δηλώστε την αποδοχή σας εισάγοντας τα στοιχεία που ζητούνται στα παρακάτω πεδία.",
+      "note" : "Text for general acknowledgement and authorization text"
     },
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text" : {
       "value" : "Πληκτρολογήστε το ονοματεπώνυμό σας ως ηλεκτρονική υπογραφή",
@@ -1527,6 +1555,10 @@
     "BB-Schedule-card-pay-rate" : {
       "value" : "Μισθός",
       "note" : "Text for the pay rate text"
+    },
+    "BB-Schedule-card-sign-on-bonus" : {
+      "value" : "Εφάπαξ μπόνους υπογραφής",
+      "note" : "Text for the one-time sign on bonus text"
     },
     "BB-Schedule-card-hours" : {
       "value" : "Ωράριο",

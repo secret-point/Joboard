@@ -2379,6 +2379,14 @@
     "BB-SelfId-equal-opportunity-form-ethnicity-mx-prefer-not-to-say-title-text" : {
       "value" : "చెప్పడానికి ఇష్టపడలేదు",
       "note" : "Text for Self Identification MX Ethnicity: Prefer not to say"
+    },
+    "BB-BGC-Additional-bgc-form-dob-empty-text" : {
+      "value" : "దయచేసి మీ పుట్టిన తేదీని ఎంటర్ చేయండి.",
+      "note" : "Text for additional bgc when date of birth is empty"
+    },
+    "BB-BGC-Additional-bgc-form-dob-above100-text" : {
+      "value" : "మీకు 100 సంవత్సరాల కంటే తక్కువ వయస్సు ఉండాలి.",
+      "note" : "Text for additional bgc when date of birth is above 100"
     }
   }
 }
