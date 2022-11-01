@@ -86,6 +86,8 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
     };
   }, [pageName]);
 
+  const SelfIdPronounsItemList = SelfIdPronounsItemsMap[getCountryCode()];
+
   return (
     <Col gridGap={15}>
       <Text fontSize="T200">
@@ -116,28 +118,31 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
           isGenderMissing && <DetailedRadioError/>
         }
 
-        <FormWrapper columnGap={10}>
-          <LabelText>{t("BB-SelfId-equal-opportunity-form-pronoun-label-text", "What is your pronoun?")} * </LabelText>
-          {
-            SelfIdPronounsItemsMap[getCountryCode()].map(radioItem => {
-              const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
-              return (
-                <DetailedRadio
-                  name="pronoun"
-                  value={value}
-                  titleText={t(titleTranslationKey, title)}
-                  details={details ? t(detailsTranslationKey || '', details) : undefined}
-                  key={title}
-                  defaultChecked={selfIdentificationInfoData?.pronoun === value}
-                  onChange={() => setPronoun(value)}
-                />
-              );
-            })
-          }
-        </FormWrapper>
+        {
+          SelfIdPronounsItemList?.length > 0 &&
+          <FormWrapper columnGap={10}>
+            <LabelText>{t("BB-SelfId-equal-opportunity-form-pronoun-label-text", "What is your pronoun?")} * </LabelText>
+            {
+              SelfIdPronounsItemsMap[getCountryCode()].map(radioItem => {
+                const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
+                return (
+                  <DetailedRadio
+                    name="pronoun"
+                    value={value}
+                    titleText={t(titleTranslationKey, title)}
+                    details={details ? t(detailsTranslationKey || "", details) : undefined}
+                    key={title}
+                    defaultChecked={selfIdentificationInfoData?.pronoun === value}
+                    onChange={() => setPronoun(value)}
+                  />
+                );
+              })
+            }
+          </FormWrapper>
+        }
 
         {
-          isPronounMissing && <DetailedRadioError/>
+          SelfIdPronounsItemList?.length > 0 && isPronounMissing && <DetailedRadioError/>
         }
 
         <FormWrapper columnGap={10}>

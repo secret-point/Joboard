@@ -232,19 +232,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         fontSize="T200"
         hyphens="none"
       >
-        What is your pronoun?
-         * 
-      </LabelText>
-    </FormWrapper>
-    <FormWrapper
-      columnGap={10}
-    >
-      <LabelText
-        color="neutral70"
-        font="primary"
-        fontSize="T200"
-        hyphens="none"
-      >
         What is your race/ethnic background?
          * 
       </LabelText>
