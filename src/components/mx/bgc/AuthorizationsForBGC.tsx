@@ -95,26 +95,10 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
                 {t("BB-BGC_background-authorizations-amazon-conduct-bgc-reminder-text","Amazon.com, Inc. or its subsidiaries or affiliates (\"Amazon\") will conduct a background check on me.")}
             </Text>
             <H4>{t("BB-BGC_fcra-eSignature-acknowledgement-title-text", "By my eSignature below, I acknowledge as follows:")}</H4>
-            <Col gridGap={5}>
-                <ul>
-                    {
-                        NonFcraESignatureAcknowledgementList.map(nonFcraESignatureItem => {
-                            const { dataKeyDependency, dependencyValue, translationKey, title } = nonFcraESignatureItem;
-                            const canDisplay = dataKeyDependency && dependencyValue ? get(scheduleDetail, dataKeyDependency) === dependencyValue.toString() : true;
-
-                            return (
-                                <>
-                                    {
-                                        canDisplay &&
-                                        <li>
-                                            <Text fontSize="T200">{t(translationKey, title)}</Text>
-                                        </li>
-                                    }
-                                </>
-                            )
-                        })
-                    }
-                </ul>
+            <Col padding="S300">
+                <Text fontSize="T200" lineHeight={1.5}>
+                    <InnerHTML html={t("BB-MX-BGC-page-authorizations-for-background-check-content", "I hereby authorize <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (hereinafter the “Company”) to obtain information regarding my educational, medical (including illegal drug and/or alcohol testing), family, credit, criminal in case the same are necessary according to the position that I have applied for and employment background (hereinafter the “Background Check”), in virtue of the recruitment and selection process in which I am a candidate, either by itself or through third party companies or any other individual or entity acting in the name and pursuant to the instructions of the Company, so that it can be able to evaluate my experience, knowledge, health, aptitudes and skills to guarantee that I can safely develop the functions required for the position for which I am applying. In virtue of the above, I understand and accept that any offer of employment and/or hiring if such is the case is subject to the verification of the information provided by me or third parties in the course of my recruitment and selection process to the satisfaction of the Company and I hereby authorize such third parties including former employers, to provide the required information and/or documents.  Likewise, I hereby accept and acknowledge that this Background Check may be performed at any time after I grant my authorization and, in case of being hired, during my labor relationship with the Company.")}/>
+                </Text>
             </Col>
             <Col className="eSignatureContainer" gridGap={15}>
                 <Text fontSize="T200">
