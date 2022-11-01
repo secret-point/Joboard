@@ -435,7 +435,6 @@ export const MXAdditionalBGCFormConfigPart1: FormInputItem[] = [
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-state-error-text',
         placeholderTranslationKey: 'BB-BGC-Additional-bgc-form-state-placeholder-text',
         placeholder: 'Select a state',
-        regex: `^(?=\\S)[${alphanumeric} ]{1,}[${alphanumeric}]$`,
     },
     ...AdditionalBGCFormConfigPart1.slice(4)
 ]
@@ -1032,12 +1031,12 @@ export enum PayRateType {
     monthMin = 'monthMin',
     monthMax = 'monthMax'
 }
-  
+
 export interface countryConfigType {
-    payRateType: PayRateType
+    payRateType: PayRateType;
 }
 
 export const countryConfig: { [key: string]: countryConfigType } = {
-    [CountryCode.US] : {payRateType: PayRateType.hourMax},
-    [CountryCode.MX] : {payRateType: PayRateType.monthMax}, 
+    [CountryCode.US] : { payRateType: PayRateType.hourMax },
+    [CountryCode.MX] : { payRateType: PayRateType.monthMax },
 };
