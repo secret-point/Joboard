@@ -2388,6 +2388,10 @@
       "value" : "আপনার বয়স 100 বছরের নীচে হতে হবে।",
       "note" : "Text for additional bgc when date of birth is above 100"
     },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "এগিয়ে যাওয়ার জন্য অনুগ্রহ করে পূর্ববর্তী পদক্ষেপগুলিতে সকল প্রয়োজনীয় বক্স টিক দিন।",
+      "note" : "Error message to check required fields on the self Identification"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "আপনার প্রোনাউন বা সর্বনাম কি?",
       "note" : "Label for equal opportunity pronoun checkbox"

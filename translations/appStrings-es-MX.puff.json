@@ -1541,7 +1541,7 @@
       "note" : "Text for the schedule card total pay per hour text"
     },
     "BB-Schedule-card-total-pay-per-month-text" : {
-      "value" : "Hasta {formattedMonthlyRate} al mes",
+      "value" : "Hasta {formattedMonthlyRate}/mes",
       "note" : "Text for the schedule card total pay per month text"
     },
     "BB-Schedule-card-not-applicable" : {
