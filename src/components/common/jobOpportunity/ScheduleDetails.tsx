@@ -11,9 +11,10 @@ import {
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import moment from "moment";
+import { PayRateType } from "../../../countryExpansionConfig";
 import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
-import { localeToLanguageList, PayRateType } from "../../../utils/constants/common";
+import { localeToLanguageList } from "../../../utils/constants/common";
 import { CountryCode, FEATURE_FLAG } from "../../../utils/enums/common";
 import {
   formatFlexibleTrainingDate,

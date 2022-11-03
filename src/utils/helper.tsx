@@ -28,6 +28,7 @@ import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions
 import { PAGE_ROUTES } from "../components/pageRoutes";
 import { CS_DOMAIN_LIST } from "../constants";
 import { METRIC_NAME } from "../constants/adobe-analytics";
+import { countryConfig, countryConfigType } from "../countryExpansionConfig";
 import { initLogger } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
@@ -41,8 +42,6 @@ import {
 } from "./apiTypes";
 import {
     AdditionalBGCFormConfig,
-    countryConfig,
-    countryConfigType,
     CountrySelectOptions,
     HVH_LOCALE,
     IdNumberBgcFormConfig,

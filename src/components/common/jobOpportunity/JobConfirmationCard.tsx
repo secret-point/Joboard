@@ -11,12 +11,12 @@ import {
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Link } from "@amzn/stencil-react-components/link";
 import { Text } from "@amzn/stencil-react-components/text";
+import { PayRateType } from "../../../countryExpansionConfig";
 import { renderScheduleFullAddress, routeToAppPageWithPath, getPayRateCountryConfig, getCountryCode, formatMonthlyBasePayHelper } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import VideoContainer from "../VideoContainer";
-import { PayRateType } from "../../../utils/constants/common";
 
 interface JobConfirmationCardProps {
     schedule: Schedule;
@@ -43,7 +43,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
         if (getPayRateCountryConfig(getCountryCode()).payRateType === PayRateType.monthMax) {
             const monthlyRate = monthlyBasePayL10N ? monthlyBasePayL10N : formatMonthlyBasePayHelper(monthlyBasePay, currencyCode);
             const formattedMonthlyRate = currencyCode && monthlyRate ? `${currencyCode}${monthlyRate}` : null;
-            return formattedMonthlyRate ? `${formattedMonthlyRate}/${t(`BB-JobOpportunity-pay-rate-month`, `month`, {formattedMonthlyRate})}` : t(`BB-Schedule-card-not-applicable`, `N/A`);
+            return formattedMonthlyRate ? `${formattedMonthlyRate}/${t(`BB-JobOpportunity-pay-rate-month`, `month`, { formattedMonthlyRate })}` : t(`BB-Schedule-card-not-applicable`, `N/A`);
         } else {
             return `${totalPayRateL10N || currencyCode + totalPayRate} /${t("BB-JobOpportunity-pay-rate-hr", "hr")}`;
         }

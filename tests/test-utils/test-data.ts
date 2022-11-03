@@ -1,5 +1,6 @@
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { createHashHistory } from "history";
+import { getDesiredWorkHoursByCountryCode } from "../../src/countryExpansionConfig";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
 import { BGCState } from "../../src/reducers/bgc.reducer";
@@ -10,7 +11,7 @@ import { SelfIdentificationState } from "../../src/reducers/selfIdentification.r
 import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
-import { BGC_STEPS, BGC_VENDOR_TYPE, DAYS_OF_WEEK, DESIRED_WORK_HOURS, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
+import { BGC_STEPS, BGC_VENDOR_TYPE, CountryCode, DAYS_OF_WEEK, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
 import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule, SelfIdentificationInfo } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -356,7 +357,7 @@ export const TEST_SCHEDULE_STATE: ScheduleState = {
   failed: false,
   filters: {
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT,
-    maxHoursPerWeek: DESIRED_WORK_HOURS.THIRTY,
+    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().THIRTY,
     daysHoursFilter: []
   },
   results: {

@@ -1,15 +1,15 @@
 import React from "react";
+import { Select } from "@amzn/stencil-react-components/form";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Label, Text } from "@amzn/stencil-react-components/text";
-import { Select } from "@amzn/stencil-react-components/form";
+import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { getDesiredWorkHoursByCountryCode } from "../../../countryExpansionConfig";
 import { translate as t } from "../../../utils/translator";
 import { DayHoursFilter, ScheduleStateFilters } from "../../../utils/types/common";
 import DaysHoursFilter from "../daysHoursFilter/DaysHoursFilter";
-import { DESIRED_WORK_HOURS } from "../../../utils/enums/common";
-import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/boundScheduleActions";
 
 interface FilterScheduleProps {
-    filters: ScheduleStateFilters
+    filters: ScheduleStateFilters;
 }
 
 const FilterSchedule = ( props: FilterScheduleProps ) => {
@@ -17,7 +17,7 @@ const FilterSchedule = ( props: FilterScheduleProps ) => {
     const { filters } = props;
     const { daysHoursFilter, maxHoursPerWeek } = filters;
 
-    const updateMaxHoursPerWeek = ( key: DESIRED_WORK_HOURS ) => {
+    const updateMaxHoursPerWeek = ( key: string ) => {
         const newFilters = { ...filters };
         newFilters.maxHoursPerWeek = key;
         boundUpdateScheduleFilters(newFilters);
@@ -38,7 +38,7 @@ const FilterSchedule = ( props: FilterScheduleProps ) => {
                 <Select
                     id="desiredHoursSelect"
                     onChange={( option ) => updateMaxHoursPerWeek(option)}
-                    options={Object.values(DESIRED_WORK_HOURS)}
+                    options={Object.values(getDesiredWorkHoursByCountryCode())}
                     renderOption={option => (
                         <Row width='100%'>
                             <Text>{t('BB-FilterSchedule-DesiredHours-Upto-hours', "Upto {hourNumber} hours", { hourNumber: option })}</Text>

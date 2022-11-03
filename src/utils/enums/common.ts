@@ -23,11 +23,11 @@ export enum SCHEDULE_FILTER_TYPE {
     DEFAULT = "DEFAULT"
 }
 
-export enum DESIRED_WORK_HOURS {
-    TEN = "10",
-    TWENTY = "20",
-    THIRTY = "30",
-    FORTY = "40"
+export interface DESIRED_WORK_HOURS {
+    TEN: string;
+    TWENTY: string;
+    THIRTY: string;
+    FORTY: string;
 }
 
 export enum DAYS_OF_WEEK {

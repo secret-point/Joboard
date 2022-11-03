@@ -668,7 +668,7 @@ export type InfoCardStepConfig = BgcStepConfig & SelfIdentificationConfig;
 
 export interface ScheduleStateFilters {
     sortKey: SCHEDULE_FILTER_TYPE,
-    maxHoursPerWeek:DESIRED_WORK_HOURS,
+    maxHoursPerWeek: string,
     daysHoursFilter: DayHoursFilter[]
 };
 

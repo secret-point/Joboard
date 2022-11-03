@@ -1,3 +1,4 @@
+import { getDesiredWorkHoursByCountryCode } from "../../countryExpansionConfig";
 import {
     APPLICATION_STEPS,
     BACKGROUND_AGENT,
@@ -456,7 +457,7 @@ export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
 ]
 
 export const initScheduleStateFilters: ScheduleStateFilters = {
-    maxHoursPerWeek: DESIRED_WORK_HOURS.FORTY,
+    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().FORTY,
     daysHoursFilter: [],
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT
 }
@@ -1024,19 +1025,3 @@ export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: Sel
     [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
     [CountryCode.US]: US_SelfIdentificationConfigSteps
 }
-
-export enum PayRateType {
-    hourMin = 'hourMin',
-    hourMax = 'hourMax',
-    monthMin = 'monthMin',
-    monthMax = 'monthMax'
-}
-
-export interface countryConfigType {
-    payRateType: PayRateType;
-}
-
-export const countryConfig: { [key: string]: countryConfigType } = {
-    [CountryCode.US] : { payRateType: PayRateType.hourMax },
-    [CountryCode.MX] : { payRateType: PayRateType.monthMax },
-};
