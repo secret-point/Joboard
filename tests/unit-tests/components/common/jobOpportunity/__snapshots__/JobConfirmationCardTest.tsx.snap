@@ -89,7 +89,9 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
           fontSize="T100"
           hyphens="none"
         >
-          16hrs/wk
+          16
+           
+          hours/week
         </Text>
       </Row>
       <Row
@@ -242,7 +244,9 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
           fontSize="T100"
           hyphens="none"
         >
-          16hrs/wk
+          16
+           
+          hours/week
         </Text>
       </Row>
       <Row

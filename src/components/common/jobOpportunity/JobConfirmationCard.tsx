@@ -74,7 +74,7 @@ const JobConfirmationCard = ( props: JobConfirmationCardProps ) => {
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconDocument size={IconSize.ExtraSmall} aria-hidden={true} />
-                        <Text fontSize="T100">{`${hoursPerWeek}hrs/wk`}</Text>
+                        <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
                     </Row>
                     <Row gridGap={5} alignItems="center">
                         <IconGlobe size={IconSize.ExtraSmall} aria-hidden={true} />
