@@ -1,38 +1,37 @@
 import React, { useEffect, useState } from "react";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { DetailedCheckbox, Input, InputWrapper } from "@amzn/stencil-react-components/form";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
-import { NonFcraESignatureAcknowledgementList, US_StateSpecificNotices } from "../../../utils/constants/common";
-import { translate as t } from "../../../utils/translator";
 import InnerHTML from 'dangerously-set-html-content';
-import { DetailedCheckbox, Input, InputWrapper } from "@amzn/stencil-react-components/form";
-import { CommonColors } from "../../../utils/colors";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { NonFcraFormErrorStatus } from "../../../utils/types/common";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { BGCState } from "../../../reducers/bgc.reducer";
-import { connect } from "react-redux";
 import get from 'lodash/get';
+import { connect } from "react-redux";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { BGCState } from "../../../reducers/bgc.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
+import { CommonColors } from "../../../utils/colors";
+import { NonFcraESignatureAcknowledgementList, US_StateSpecificNotices } from "../../../utils/constants/common";
+import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
 import {
     handleMXSubmitNonFcraBGC,
     handleSubmitNonFcraBGC,
     validateMXNonFcraSignatures,
     validateNonFcraSignatures
 } from "../../../utils/helper";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
-import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
-import { METRIC_NAME } from "../../../constants/adobe-analytics";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import { translate as t } from "../../../utils/translator";
+import { NonFcraFormErrorStatus , BgcMXStepConfig } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
-import { BgcMXStepConfig } from "../../../utils/types/common";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    bgc: BGCState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    bgc: BGCState;
 }
 
 interface NonFcraDisclosureProps {
@@ -44,7 +43,7 @@ type NonFcraDisclosureMergedProps = MapStateToProps & NonFcraDisclosureProps;
 export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
     const { application, schedule, bgc } = props;
     const applicationData = application.results;
-    const scheduleDetail = schedule.results.scheduleDetail;
+    const { scheduleDetail } = schedule.results;
     const stepConfig = bgc.stepConfig as BgcMXStepConfig;
     const nonFcraQuestions = applicationData?.nonFcraQuestions;
 
@@ -52,7 +51,7 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
     const [nonFcraAckEsign, setNonFcraAckEsign] = useState(nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || '');
     const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
     const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
-    const [errorMessage, setErrorMessage] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
+    const [errorMessage, setErrorMessage] = useState(t("BB-BGC-MX-authorization-eSignature-input-error-text", "Please enter a valid full name following format: First Last"));
 
     const pageName = METRIC_NAME.NON_FCRA;
 

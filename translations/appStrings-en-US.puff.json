@@ -828,6 +828,10 @@
       "value" : "eSignatures do not match. Please use the same text for each eSignature.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Please enter a valid full name following format: First Last",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Next",
       "note" : "Text for the non fcra form page next button text"
