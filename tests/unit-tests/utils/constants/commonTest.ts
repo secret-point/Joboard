@@ -268,9 +268,12 @@ describe('common', () => {
           expect(regex.test('Yvr-')).toBe(false);
           expect(regex.test('Yvr.')).toBe(false);
           expect(regex.test('Yvr!')).toBe(false);
-          expect(regex.test('Yvr Dö')).toBe(false);
-          expect(regex.test('Àö Do')).toBe(false);
-          expect(regex.test('Yvr Àö')).toBe(false);
+          expect(regex.test('Yvr Dö')).toBe(true);
+          expect(regex.test('UNIÖN Building')).toBe(true);
+          expect(regex.test('UNIÖN-Building')).toBe(true);
+          expect(regex.test('UNIÖN Building-')).toBe(false);
+          expect(regex.test('Àö Do')).toBe(true);
+          expect(regex.test('Yvr Àö')).toBe(true);
 
           // correct/incorrect format
           expect(regex.test('Yvr 11')).toBe(true);

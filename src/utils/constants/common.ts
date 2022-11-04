@@ -515,7 +515,7 @@ export const PreviousWorkedAtAmazonBGCFormConfig: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-label-text',
         errorMessageTranslationKey: 'BB-BGC-additional-bgc-most-recent-building-at-Amazon-error-text',
-        regex: `^(?=\\S)[${alphanumeric}- ]{1,}[${alphanumeric}]$`,
+        regex: `^(?=\\S)[${alphanumeric}${accentedChars}- ]{1,}[${alphanumeric}${accentedChars}]$`,
     },
     {
         hasError: false,
