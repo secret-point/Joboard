@@ -91,34 +91,8 @@ export const Consent = (props: MapStateToProps) => {
         >
             <Col gridGap={15}>
                 <Text>
-                    <InnerHTML html={t("BB-ConsentPage-flyout-user-data-policy-paragraph1-text", "Amazon is committed to a diverse and inclusive workplace. Amazon is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>")} />
+                    {t("BB-ConsentPage-flyout-mx-user-data-policy-text", "I am aware that all information gathered may be transferred pursuant to the Federal Law on the Protection of Personal Data in the Possession of Private Parties and its regulations, guidelines and other applicable provisions on data privacy, as well as in terms of the Privacy Notice of the Company for Employees and/or Candidates.")}
                 </Text>
-                <Text fontSize="T100">
-                    <InnerHTML html={t("BB-ConsentPage-flyout-user-data-policy-paragraph2-text", "Amazon takes your personal data protection seriously and will only process your personal data in accordance with the law. In particular, we do not share your personal data with any third party without your prior consent, unless compelled by law to do so. Unless you express otherwise, the hiring Amazon company will store your personal data in the electronic database maintained by Amazon.com in the USA or one of its affiliates. For full information on how Amazon stores and processes your personal data, please click here <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>")} />
-                </Text>
-                <Text fontSize="T100">
-                    {t("BB-ConsentPage-flyout-user-data-policy-paragraph3-text", "In addition to the role you applied for today, we may have other positions that require the same or similar job functions. These roles may be full-time, reduced-time, part-time, seasonal, and/or temporary positions that are available at this location or other nearby Amazon locations. You are under no obligation to accept any role with Amazon or our partners, however, by completing your application you agree to be considered for same level, hourly roles within a 30 mile radius of your application site. This includes sharing your applicant information with our partners (staffing agencies) that hire for both our regular and temporary associate needs.")}
-                </Text>
-                <Text fontSize="T100">
-                    {t("BB-ConsentPage-flyout-user-data-policy-by-applying-text", "By applying, you:")}
-                </Text>
-                <ul className="ul-list">
-                    <li>
-                        <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item1-text", "are acknowledging that you have read the job description for the position you are applying for and that you understand the basic requirements needed to perform the job;")}
-                        </Text>
-                    </li>
-                    <li>
-                        <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item2-text", "consent to the processing, analyzing and assessment of your personal data by Amazon, salesforce.com or any other third party for the purposes of your application and for any other legitimate purposes of Amazon. For the avoidance of doubt, the \"processing\" of your personal data will include but not restricted to collecting, receiving, recording, organizing, collating, storing, updating, altering, using, disseminating, distributing, merging, linking, blocking, degrading, erasing or destroying of your personal data;")}
-                        </Text>
-                    </li>
-                    <li>
-                        <Text fontSize="T100">
-                            {t("BB-ConsentPage-flyout-user-data-policy-applying-acknowledging-item3-text", "consent to Amazon retaining your personal data after the application process, in order to assist it with the effective monitoring of its job application processes and to your personal data being stored in an electronic database in the USA.")}
-                        </Text>
-                    </li>
-                </ul>
             </Col>
         </FlyoutContent>
     )
