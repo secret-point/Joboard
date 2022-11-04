@@ -7,7 +7,7 @@ import queryString from "query-string";
 import { CheckBoxItem } from "../@types";
 import { Metric, MetricData, MetricsValue } from "../@types/adobe-metrics";
 import { PAGE_ROUTES } from "../components/pageRoutes";
-import { CS_DOMAIN_LIST } from "../constants";
+import { CS_DOMAIN_LIST } from "../countryExpansionConfig";
 import store from "../store/store";
 import { getLocale } from "../utils/helper";
 import { Application } from "../utils/types/common";

@@ -26,7 +26,7 @@ import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActio
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import { PAGE_ROUTES } from "../components/pageRoutes";
-import { CS_DOMAIN_LIST } from "../constants";
+import { CS_DOMAIN_LIST } from "../countryExpansionConfig";
 import { METRIC_NAME } from "../constants/adobe-analytics";
 import { countryConfig, countryConfigType } from "../countryExpansionConfig";
 import { initLogger } from "../helpers/log-helper";

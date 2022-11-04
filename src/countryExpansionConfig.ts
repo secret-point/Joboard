@@ -38,6 +38,20 @@ export const countryConfig: { [key: string]: countryConfigType } = {
     },
 };
 
+export const CS_DOMAIN_LIST = [
+    // US
+    "https://beta-us.devo.jobsatamazon.hvh.a2z.com",
+    "https://gamma-us.devo.jobsatamazon.hvh.a2z.com",
+    "https://us.preprod.jobsatamazon.hvh.a2z.com",
+    "https://hiring.amazon.com",
+
+    // MX
+    "https://beta-mx.devo.jobsatamazon.hvh.a2z.com",
+    "https://gamma-mx.devo.jobsatamazon.hvh.a2z.com",
+    "https://mx.preprod.jobsatamazon.hvh.a2z.com",
+    "https://trabaja.amazon.com.mx"
+];
+
 export const getCountryCode = (): CountryCode => {
     return "{{Country}}" as CountryCode || CountryCode.US;
 };
