@@ -2388,6 +2388,10 @@
       "value" : "You need to be below 100 years old.",
       "note" : "Text for additional bgc when date of birth is above 100"
     },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Please check all required boxes in previous steps to proceed.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "What is your pronoun?",
       "note" : "Label for equal opportunity pronoun checkbox"

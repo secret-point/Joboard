@@ -2387,6 +2387,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "يجب أن يكون عمرك أقل من 100 عام.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "يرجى وضع علامة على جميع الخانات المطلوبة في المراحل السابقة للمتابعة.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "ما هو الضمير الخاص بك؟",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "يرجى تحديد أحد المربعات أدناه",
+      "note" : "Label for disability checkbox"
     }
   }
 }

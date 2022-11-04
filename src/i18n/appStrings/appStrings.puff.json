@@ -74,6 +74,10 @@
             "note": "Text for application qualification criteria",
             "value": "By applying, you confirm that:"
         },
+        "BB-ConsentPage-whatsapp-consent-text": {
+            "note": "Text for application whatsapp consent",
+            "value": "I authorize Amazon to contact me via phone, text message or WhatsApp to provide information about my application, selection and hiring process."
+        },
         "BB-ConsentPage-data-policy-header-text": {
             "note": "Text for the user data policy agreement title",
             "value": "By applying, you read and agree to the"

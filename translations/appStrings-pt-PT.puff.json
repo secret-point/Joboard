@@ -356,6 +356,10 @@
       "value" : "Autorizações para verificação de antecedentes, verificação médica e teste de despiste de drogas",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Autorizo a <b> Servicios Comerciales Amazon México, S. de R.L. de C.V.</b> (doravante a “Empresa”) a obter informações relativas à minha formação, médicas (incluindo testes a drogas ilegais e/ou álcool), familiares, de crédito e criminais, caso as mesmas sejam necessárias de acordo com o cargo a que me candidatei, e antecedentes de emprego (doravante a “Verificação de Antecedentes”), em virtude do processo de recrutamento e seleção em que sou candidato, quer por si mesmo, quer através de empresas terceiras ou quaisquer outras pessoas singulares ou entidades que atuem em nome e de acordo com as instruções da Empresa, para que seja possível avaliar a minha experiência, os meus conhecimentos, a minha saúde e as minhas aptidões e competências de modo a garantir que posso desenvolver as funções necessárias para o cargo a que me candidato com segurança. Em virtude do acima exposto, compreendo e aceito que qualquer oferta de emprego e/ou contratação, caso seja esse o caso, está sujeita à verificação das informações prestadas por mim ou por terceiros no decurso do meu processo de recrutamento e seleção a contento da Empresa, e autorizo, através do presente, tais terceiros, incluindo antigos empregadores, a fornecer as informações e/ou documentos exigidos.  Da mesma forma, aceito que esta Verificação de Antecedentes poderá ser realizada a qualquer momento após conceder a minha autorização e, no caso de ser contratado, durante a minha relação laboral com a Empresa.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informações adicionais de antecedentes",
       "note" : "Text for the Additional bgc information step card title"
@@ -2387,6 +2391,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Precisa de ter menos de 100 anos de idade.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Assinale todas as caixas obrigatórias nos passos anteriores para continuar.",
+      "note" : "Error message to check required fields on the self Identification"
     }
   }
 }

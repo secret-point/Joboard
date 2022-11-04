@@ -2391,6 +2391,14 @@
     "BB-SelfIdentification-check-required-field-error-message" : {
       "value" : "Devam etmek için lütfen önceki adımlarda gerekli tüm kutuları işaretleyin.",
       "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Size nasıl hitap edelim?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Lütfen aşağıdaki kutulardan birini işaretleyin.",
+      "note" : "Label for disability checkbox"
     }
   }
 }

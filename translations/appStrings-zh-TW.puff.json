@@ -356,6 +356,10 @@
       "value" : "對背景調查、醫療檢查和藥物測試的授權",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "我在此授權 <b>Servicios Comerciales Amazon Mexico, S.de R.L.de C.V.</b> (以下簡稱「公司」) 根據我申請的職位和工作背景 (以下簡稱「背景調查」)，以獲取有關我的教育、醫療 (包括非法藥物和/或酒精測試)、家庭、信用、犯罪等資訊；藉助我作為候選人的招聘和甄選過程，無論是單獨或通過第三方公司或以公司名義並按公司指示行事的任何其他個人或實體，以便公司能夠評估我的經驗、知識、健康、能力和技能，以保證我能夠安全地發揮我所申請職位所需的職能。鑒於上述情況，本人理解並接受任何工作和/或聘用要約 (如屬此情況)，均需對招聘和甄選過程中由本人或第三方提供的資訊進行核實，以確保公司滿意。本人特此授權包括前僱主在內的第三方提供所需資訊和/或文件。 同樣，我特此接受並承認，在我授權後，以及如果被僱傭，在我與公司的勞動關係期間，可以隨時進行背景調查。",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "其他背景資訊",
       "note" : "Text for the Additional bgc information step card title"
@@ -2387,6 +2391,14 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "年齡必須在 100 歲以下。",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "您的代詞是什麼？",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "請核取下列其中一個方塊",
+      "note" : "Label for disability checkbox"
     }
   }
 }

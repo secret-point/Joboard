@@ -2388,6 +2388,10 @@
       "value" : "നിങ്ങൾ 100 വയസ്സിൽ താഴെയായിരിക്കണം.",
       "note" : "Text for additional bgc when date of birth is above 100"
     },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "തുടരുന്നതിനായി മുമ്പത്തെ ഘട്ടങ്ങളിൽ ആവശ്യമായ എല്ലാ ബോക്സുകളിലും ശരി എന്ന് അടയാളപ്പെടുത്തുക.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "നിങ്ങളുടെ സർവനാമം എന്താണ്?",
       "note" : "Label for equal opportunity pronoun checkbox"

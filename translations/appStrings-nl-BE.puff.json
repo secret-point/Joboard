@@ -356,6 +356,10 @@
       "value" : "Autorisaties voor antecedentenonderzoek, medische controle en drugstest",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Hierbij autoriseer ik <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (hierna het „Bedrijf”) om informatie te verkrijgen over mijn opleiding, medische (inclusief illegale drugs- en/of alcoholtests), familie, krediet, crimineel voor het geval dat hetzelfde nodig is op basis van de functie waarnaar ik heb gesolliciteerd en werkachtergrond (hierna de „Achtergrondcontrole”), op grond van het wervings- en selectieproces waarin ik kandidaat ben, hetzij op zichzelf, hetzij via derde bedrijven of enige andere persoon of entiteit die in naam en volgens de instructies van het bedrijf handelt, zodat deze in staat is mijn ervaring, kennis, gezondheid, vaardigheden en skills om te garanderen dat ik op een veilige manier de functies kan ontwikkelen die nodig zijn voor de functie waarvoor ik solliciteer. Op grond van het bovenstaande begrijp en accepteer ik dat elk aanbod van werk en/of aanwerving, indien het geval is, afhankelijk is van de verificatie van de informatie die door mij of derden is verstrekt tijdens mijn wervings- en selectieproces tot tevredenheid van het bedrijf en ik geef hierbij toestemming voor dergelijke derden, waaronder voormalige werkgevers, om de vereiste informatie en/of documenten te verstrekken.  Evenzo aanvaard en erken ik hierbij dat deze antecedentenonderzoek op elk moment kan worden uitgevoerd nadat ik mijn toestemming heb verleend en, in geval van aanwerving, tijdens mijn arbeidsrelatie met het bedrijf.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Aanvullende achtergrondinformatie",
       "note" : "Text for the Additional bgc information step card title"
@@ -2387,6 +2391,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Je moet jonger zijn dan 100 jaar.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Vink in de vorige stappen alle vereiste vakjes aan om verder te gaan.",
+      "note" : "Error message to check required fields on the self Identification"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "Wat is je voornaamwoord?",

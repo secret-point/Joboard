@@ -356,6 +356,10 @@
       "value" : "Autorizações para verificação de antecedentes, exame médico e teste de drogas",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Eu autorizo <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b>(doravante denominada “Empresa”) a obter informações sobre minha formação educacional, saúde (incluindo testes de drogas ilícitas e/ou álcool), família, crédito, histórico criminal, caso as mesmas sejam necessárias de acordo com o cargo para o qual me candidatei e histórico profissional (doravante denominada “Verificação de antecedentes”), em virtude do processo de recrutamento e seleção no qual sou candidato, por si ou por meio de empresas terceirizadas ou qualquer outro indivíduo ou entidade atuando em nome e de acordo com as instruções da Empresa, para que ela possa avaliar minha experiência, conhecimento, saúde, aptidões e habilidades para garantir que eu possa exercer com segurança as funções necessárias para o cargo para o qual estou me candidatando. Em virtude do exposto acima, entendo e aceito que qualquer oferta de emprego e/ou contratação, se for o caso, está sujeita à verificação das informações fornecidas por mim ou por terceiros no decorrer do meu processo de recrutamento e seleção a contento da Empresa e eu autorizo tais terceiros, incluindo ex-empregadores, a fornecer as informações e/ou documentos necessários.  Da mesma forma, aceito e reconheço que esta Verificação de antecedentes pode ser realizada a qualquer momento após eu conceder minha autorização e, no caso de ser contratado, durante minha relação de trabalho com a Empresa.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informações adicionais de antecedentes",
       "note" : "Text for the Additional bgc information step card title"
@@ -2387,6 +2391,14 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Você precisa ter menos de 100 anos.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Qual pronome você prefere?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Marque uma das caixas abaixo",
+      "note" : "Label for disability checkbox"
     }
   }
 }

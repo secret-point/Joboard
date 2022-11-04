@@ -1688,6 +1688,10 @@
       "value" : "선택하신 일정을 더 이상 사용할 수 없습니다. 다른 일정을 선택하세요.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "선택한 직책은 더 이상 유효하지 않습니다. 다른 옵션을 선택하세요.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "전자 서명이 일치하지 않습니다. 1단계와 2단계 전자 서명에 동일한 텍스트를 사용하세요.",
       "note" : "error message for update application when signatures do not match"

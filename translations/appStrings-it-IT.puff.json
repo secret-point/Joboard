@@ -2391,6 +2391,14 @@
     "BB-SelfIdentification-check-required-field-error-message" : {
       "value" : "Seleziona tutte le caselle richieste nei passaggi precedenti per procedere.",
       "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Qual è il tuo pronome?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Seleziona una delle caselle qui sotto",
+      "note" : "Label for disability checkbox"
     }
   }
 }

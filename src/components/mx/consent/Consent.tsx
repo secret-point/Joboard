@@ -135,7 +135,9 @@ export const Consent = (props: MapStateToProps) => {
                     ))
                 }
             </ul>
-            <Text>TODO: Waiting on copy from legal for whatsapp consent language</Text>
+            <Text>
+                {t("BB-ConsentPage-whatsapp-consent-text", "I authorize Amazon to contact me via phone, text message or WhatsApp to provide information about my application, selection and hiring process.")}
+            </Text>
             <dl>
                 <Text textAlign="center" color="gray" fontSize="0.8em">
                     {t("BB-ConsentPage-data-policy-header-text", "By applying, you read and agree to the")}

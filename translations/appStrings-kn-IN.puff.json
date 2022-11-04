@@ -1688,6 +1688,10 @@
       "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ವೇಳಾಪಟ್ಟಿ ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿಲ್ಲ, ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ವೇಳಾಪಟ್ಟಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
       "note" : "error message for update application when selected schedule is not available"
     },
+    "BB-update-application-error-message-selected-job-not-available" : {
+      "value" : "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಕೆಲಸ ಇನ್ನು ಮುಂದೆ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಬೇರೊಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "note" : "error message for update application when selected job is not available"
+    },
     "BB-update-application-error-message-mismatch-signatures-fix" : {
       "value" : "ಇ-ಸಹಿಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ. ಹಂತ 1 ಮತ್ತು ಹಂತ 2 ರಲ್ಲಿ ಇ-ಸಹಿಗಾಗಿ ದಯವಿಟ್ಟು ಅದೇ ಪಠ್ಯವನ್ನು ಬಳಸಿ.",
       "note" : "error message for update application when signatures do not match"
@@ -2383,6 +2387,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "ನೀವು 100 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನವರಾಗಿರಬೇಕು.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "ಮುಂದುವರಿಸಲು ಹಿಂದಿನ ಹಂತಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಎಲ್ಲಾ ಬಾಕ್ಸ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "ನಿಮ್ಮ ಸರ್ವನಾಮ ಏನು?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನಲ್ಲಿನ ಒಂದು ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತುಹಾಕಿ",
+      "note" : "Label for disability checkbox"
     }
   }
 }

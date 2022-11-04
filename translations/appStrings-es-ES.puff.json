@@ -356,6 +356,10 @@
       "value" : "Autorizaciones para la comprobación de antecedentes, la evaluación médica y el test de drogas",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Por la presente autorizo a<b> Servicios Comerciales Amazon México, S. de R.L. de C.V.</b>(en adelante, la «Compañía») a obtener datos sobre mi formación, datos médicos (incluidas las pruebas de drogas ilegales y alcohol), datos familiares, datos crediticios y penales, en caso de que sea necesario hacerlo de conformidad con el puesto que he solicitado, así como mis antecedentes laborales (en adelante, la «Verificación de antecedentes»), en virtud del proceso de contratación y selección del que soy candidato, ya sea por sí mismo o a través de empresas de terceros o cualquier otra persona o entidad que actúe en nombre y de conformidad con las instrucciones de la Compañía, para que pueda evaluar mi experiencia, conocimientos, salud, aptitudes y habilidades para garantizar que pueda desarrollar de manera segura las funciones requeridas para el puesto al que me postulo. En virtud de lo anterior, comprendo y acepto que cualquier oferta de empleo o contratación, si tal es el caso, deberá cumplir con la verificación de la información proporcionada por mí o por terceros en el transcurso de mi proceso de contratación y selección para satisfacción de la Compañía y, por la presente, autorizo a tales terceros, incluidos los antiguos empleadores, a proporcionar la información o los documentos pertinentes.  Del mismo modo, acepto y reconozco que esta verificación de antecedentes se puede realizar en cualquier momento después de conceder mi autorización y, en caso de contratación, durante el plazo que dure mi relación laboral con la Compañía.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Información adicional de antecedentes",
       "note" : "Text for the Additional bgc information step card title"
