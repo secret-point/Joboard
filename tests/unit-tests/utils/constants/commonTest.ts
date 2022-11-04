@@ -303,6 +303,8 @@ describe('common', () => {
 
           // correct/incorrect format
           expect(regex.test('09/21 - 08/22')).toBe(true);
+          expect(regex.test('0921 - 0822')).toBe(false);
+          expect(regex.test('0921-0822')).toBe(false);
           expect(regex.test('09/21 ')).toBe(false);
           expect(regex.test(' 09/21')).toBe(false);
           expect(regex.test('09/21  - 08/22')).toBe(false);
