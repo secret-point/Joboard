@@ -353,4 +353,5 @@ export enum BGC_VENDOR_TYPE {
 export enum CountryCode {
     MX = "MX",
     US = "US",
+    CA = "CA",
 }

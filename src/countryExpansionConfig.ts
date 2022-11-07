@@ -3,6 +3,7 @@ import { CountryCode, DESIRED_WORK_HOURS } from "./utils/enums/common";
 export const thankYouPageRedirectTextBanner = {
     US: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." },
     MX: { translationKey: "BB-ThankYou-redirect-to-ash-text", defaultString: "Before your pre-hire appointment, you will need to complete a series of pre-hire activities." },
+    CA: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." } // TODO: set to correct values once they're available
 }
 
 export enum PayRateType {
@@ -34,6 +35,16 @@ export const countryConfig: { [key: string]: countryConfigType } = {
             TWENTY: '24',
             THIRTY: '36',
             FORTY: '48'
+        },
+    },
+    // TODO: set to correct values once they're available
+    [CountryCode.CA] : {
+        payRateType: PayRateType.hourMax,
+        desiredWorkHours: {
+            TEN: '10',
+            TWENTY: '20',
+            THIRTY: '30',
+            FORTY: '40'
         },
     },
 };

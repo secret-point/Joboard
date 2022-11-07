@@ -588,7 +588,8 @@ export const MX_SelfIdGenderRadioItems: DetailedRadioButtonItem[] = [
 
 export const SelfIdGenderRadioItemsMap: {[key in CountryCode]: DetailedRadioButtonItem[]} = {
     [CountryCode.MX]: MX_SelfIdGenderRadioItems,
-    [CountryCode.US]: SelfIdGenderRadioItems
+    [CountryCode.US]: SelfIdGenderRadioItems,
+    [CountryCode.CA]: SelfIdGenderRadioItems, // TODO: set to correct values once they're available
 }
 
 export const SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
@@ -686,7 +687,8 @@ export const MX_SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
 
 export const SelfIdEthnicBackgroundItemsMap: {[Key in CountryCode]: DetailedRadioButtonItem[]} = {
     [CountryCode.US]: SelfIdEthnicBackgroundItems,
-    [CountryCode.MX]: MX_SelfIdEthnicBackgroundItems
+    [CountryCode.MX]: MX_SelfIdEthnicBackgroundItems,
+    [CountryCode.CA]: SelfIdEthnicBackgroundItems, // TODO: set to correct values once they're available
 }
 
 export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
@@ -719,7 +721,8 @@ export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
 
 export const SelfIdPronounsItemsMap: {[Key in CountryCode]: DetailedRadioButtonItem[]} = {
     [CountryCode.MX]: MX_SelfIdPronounsItems,
-    [CountryCode.US]: []
+    [CountryCode.US]: [],
+    [CountryCode.CA]: [] // TODO: set to correct values once they're available
 }
 
 export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
@@ -1023,5 +1026,6 @@ export const MX_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
 
 export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: SelfIdentificationConfig }  = {
     [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
-    [CountryCode.US]: US_SelfIdentificationConfigSteps
+    [CountryCode.US]: US_SelfIdentificationConfigSteps,
+    [CountryCode.CA]: US_SelfIdentificationConfigSteps, // TODO: set to correct values once they're available
 }
