@@ -756,16 +756,19 @@ export const handleMXSubmitNonFcraBGC =
     ( applicationData: Application, ackEsign: string, requestedCopyOfBGC: boolean, stepConfig: BgcMXStepConfig, bgcVendorType: BGC_VENDOR_TYPE ) => {
         if(applicationData) {
             const updateApplicationPayload = {
-                nonFcraQuestions: {
-                    nonFcraAcknowledgementEsign: {
-                        signature: ackEsign.trim(),
-                    },
-                    requestedCopyOfBackgroundCheck: requestedCopyOfBGC,
-                    bgcVendorType
+                consentsMap: {
+                    BGCMedicalDrugTestConsent: {
+                        consentVendorType: bgcVendorType,
+                        isConsentDisclosureAccepted: true,
+                        acknowledgementsElectronicSignature: {
+                            signature: ackEsign.trim(),
+                            timestamp: new Date().toISOString()
+                        }
+                    }
                 }
             }
 
-            const updateApplicationRequest = createUpdateApplicationRequest(applicationData, UPDATE_APPLICATION_API_TYPE.NON_FCRA_BGC, updateApplicationPayload);
+            const updateApplicationRequest = createUpdateApplicationRequest(applicationData, UPDATE_APPLICATION_API_TYPE.CONSENTS_MAP, updateApplicationPayload);
             boundUpdateApplicationDS(updateApplicationRequest, () => {
                 handleMXUpdateNonFCRABGCStep(stepConfig);
             })

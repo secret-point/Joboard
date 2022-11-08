@@ -105,6 +105,7 @@ export enum UPDATE_APPLICATION_API_TYPE {
     CONTINGENT_OFFER = 'contingent-offer',
     BGC = 'bgc',
     NON_FCRA_BGC = 'non-fcra',
+    CONSENTS_MAP = 'consents-map',
     FCRA_BGC = 'fcra',
     ADDITIONAL_BGC = 'additional-bgc-info',
     CALI_DISCLOSURE = 'cali-disclosure',
