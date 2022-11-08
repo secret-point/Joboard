@@ -357,7 +357,7 @@ export const TEST_SCHEDULE_STATE: ScheduleState = {
   failed: false,
   filters: {
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT,
-    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().THIRTY,
+    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().RANGE3,
     daysHoursFilter: []
   },
   results: {

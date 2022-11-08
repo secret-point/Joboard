@@ -23,11 +23,13 @@ export enum SCHEDULE_FILTER_TYPE {
     DEFAULT = "DEFAULT"
 }
 
+// Omit the RANGE0 if it is 0
 export interface DESIRED_WORK_HOURS {
-    TEN: string;
-    TWENTY: string;
-    THIRTY: string;
-    FORTY: string;
+    RANGE0?: string;
+    RANGE1: string;
+    RANGE2: string;
+    RANGE3: string;
+    RANGE4: string;
 }
 
 export enum DAYS_OF_WEEK {

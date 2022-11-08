@@ -30,10 +30,10 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
     [CountryCode.US] : {
         payRateType: PayRateType.hourMax,
         desiredWorkHours: {
-            TEN: '10',
-            TWENTY: '20',
-            THIRTY: '30',
-            FORTY: '40'
+            RANGE1: '10',
+            RANGE2: '20',
+            RANGE3: '30',
+            RANGE4: '40'
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
@@ -41,10 +41,11 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
     [CountryCode.MX] : {
         payRateType: PayRateType.monthMax,
         desiredWorkHours: {
-            TEN: '12',
-            TWENTY: '24',
-            THIRTY: '36',
-            FORTY: '48'
+            RANGE0: '24',
+            RANGE1: '30',
+            RANGE2: '36',
+            RANGE3: '42',
+            RANGE4: '48'
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,99}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,49}\\s[${alphabet}${specialChars},.'-]{1,49}$`,
@@ -53,10 +54,10 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
     [CountryCode.CA] : {
         payRateType: PayRateType.hourMax,
         desiredWorkHours: {
-            TEN: '10',
-            TWENTY: '20',
-            THIRTY: '30',
-            FORTY: '40'
+            RANGE1: '10',
+            RANGE2: '20',
+            RANGE3: '30',
+            RANGE4: '40'
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,

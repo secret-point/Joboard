@@ -451,7 +451,7 @@ export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
 ]
 
 export const initScheduleStateFilters: ScheduleStateFilters = {
-    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().FORTY,
+    maxHoursPerWeek: getDesiredWorkHoursByCountryCode().RANGE4,
     daysHoursFilter: [],
     sortKey: SCHEDULE_FILTER_TYPE.DEFAULT
 }
