@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { DetailedCheckbox, Input, InputWrapper } from "@amzn/stencil-react-components/form";
+import { ButtonVariant } from "@amzn/stencil-react-components/button";
+import { Input, InputWrapper } from "@amzn/stencil-react-components/form";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import InnerHTML from 'dangerously-set-html-content';
-import get from 'lodash/get';
 import { connect } from "react-redux";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
@@ -14,14 +13,10 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { BGCState } from "../../../reducers/bgc.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { CommonColors } from "../../../utils/colors";
-import { NonFcraESignatureAcknowledgementList, US_StateSpecificNotices } from "../../../utils/constants/common";
 import { BGC_VENDOR_TYPE } from "../../../utils/enums/common";
 import {
     handleMXSubmitNonFcraBGC,
-    handleSubmitNonFcraBGC,
     validateMXNonFcraSignatures,
-    validateNonFcraSignatures
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { NonFcraFormErrorStatus , BgcMXStepConfig } from "../../../utils/types/common";
@@ -45,12 +40,11 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
     const applicationData = application.results;
     const { scheduleDetail } = schedule.results;
     const stepConfig = bgc.stepConfig as BgcMXStepConfig;
-    const nonFcraQuestions = applicationData?.nonFcraQuestions;
+    const BGCMedicalDrugTestConsent = applicationData?.consentsMap?.BGCMedicalDrugTestConsent;
 
-    const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(!!nonFcraQuestions?.requestedCopyOfBackgroundCheck);
-    const [nonFcraAckEsign, setNonFcraAckEsign] = useState(nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || '');
+    const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(!!BGCMedicalDrugTestConsent?.isCopyRequested);
+    const [nonFcraAckEsign, setNonFcraAckEsign] = useState(BGCMedicalDrugTestConsent?.acknowledgementsElectronicSignature?.signature || '');
     const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
-    const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
     const [errorMessage, setErrorMessage] = useState(t("BB-BGC-MX-authorization-eSignature-input-error-text", "Please enter a valid full name following format: First Last"));
 
     const pageName = METRIC_NAME.NON_FCRA;
@@ -120,7 +114,7 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
                     {inputProps =>
                         <Input
                             {...inputProps}
-                            defaultValue={nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || ''}
+                            defaultValue={BGCMedicalDrugTestConsent?.acknowledgementsElectronicSignature?.signature || ''}
                             onChange={( e ) => {
                                 const value = e.target.value || '';
                                 setNonFcraAckEsign(value.trim());

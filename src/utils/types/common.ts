@@ -431,6 +431,23 @@ export enum APPLICATION_SUB_STEP {
     HIRED_ADMIN_TERM = "Hired - Admin Term"
 }
 
+export interface ConsentsMap {
+    FCRAQuestions?: Consent;
+    NonFCRAQuestions?: Consent;
+    LocalConsent?: Consent;
+    BGCMedicalDrugTestConsent?: Consent;
+}
+
+export interface Consent {
+    consentVendorType?: BGC_VENDOR_TYPE;
+    isConsentDisclosureAccepted?: boolean;
+    isCopyRequested?: boolean;
+    acknowledgementsElectronicSignature: {
+        signature: string;
+        timestamp: string;
+    };
+}
+
 export interface Application {
     active: boolean;
     submitted: boolean;
@@ -447,6 +464,7 @@ export interface Application {
     contingentOffer: ContingentOffer;
     fcraQuestions: FCRAQuestions;
     nonFcraQuestions: NonFCRAQuestions;
+    consentsMap: ConsentsMap;
     nheAppointment: any;
     nhePreference: NHEPreferences;
     firstAvailableStartDate: number;

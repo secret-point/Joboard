@@ -468,7 +468,7 @@ export const validateUserIdFormat = (userId: string): boolean => {
 export const handleUInitiateMXBGCStep = ( applicationData: Application, candidateData: Candidate ) => {
     const isDspEnabled = applicationData?.dspEnabled;
     const applicationAdditionalBgcInfo = applicationData.additionalBackgroundInfo;
-    const isNonFcraCompleted = !isEmpty(applicationData?.nonFcraQuestions);
+    const isNonFcraCompleted = !isEmpty(applicationData?.consentsMap?.BGCMedicalDrugTestConsent?.acknowledgementsElectronicSignature?.signature);
     let isAdditionalBgcCompleted: boolean;
     const { NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED } = INFO_CARD_STEP_STATUS;
