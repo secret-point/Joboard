@@ -23,6 +23,7 @@ import {
   TEST_CANDIDATE_ADDRESS,
   TEST_JOB,
   TEST_JOB_ID,
+  TEST_SCHEDULE,
   TEST_SELF_IDENTIFICATION
 } from "../../test-utils/test-data";
 import {
@@ -61,7 +62,11 @@ import {
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
   showErrorMessage,
-  validateInput
+  validateInput,
+  checkIfIsLegacy,
+  renderScheduleFullAddress,
+  populateTimeRangeHourData,
+  parseObjectToQueryString
 } from "../../../src/utils/helper";
 
 describe('processAssessmentUrl', () => {
@@ -633,7 +638,7 @@ describe("getQueryFromSearchAndHash", () => {
 
   it("should return correct query string", () => {
     expect(getQueryFromSearchAndHash("?query1=q1", "#/page-name?hash1=h1"))
-    .toEqual("hash1=h1&query1=q1");
+      .toEqual("hash1=h1&query1=q1");
 
     expect(getQueryFromSearchAndHash("?query1=q1&query2=q2", "#/page-name?hash1=h1&hash2=h2"))
       .toEqual("hash1=h1&hash2=h2&query1=q1&query2=q2");
@@ -717,7 +722,7 @@ test("isSelfIdEqualOpportunityStepCompleted", () => {
 describe("initSelfIdStepConfig", () => {
   describe("US", () => {
     test("init config without self step map", () => {
-      expect(initSelfIdStepConfig({completedSteps: []}, CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
+      expect(initSelfIdStepConfig({ completedSteps: [] }, CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
     });
 
     test("init config with self Id step map", () => {
@@ -727,11 +732,101 @@ describe("initSelfIdStepConfig", () => {
 
   describe("MX", () => {
     test("init config without self step map", () => {
-      expect(initSelfIdStepConfig({completedSteps: []}, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
+      expect(initSelfIdStepConfig({ completedSteps: [] }, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
     });
 
     test("init config with self Id step map", () => {
       expect(initSelfIdStepConfig(MX_SelfIdentificationConfigSteps, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
     })
+  })
+})
+
+describe("checkIfLegacy", () => {
+  it("should return true", () => {
+
+    const url = "https://hiring.amazon.com/application/";
+
+    Object.defineProperty(window, "location", {
+      value: new URL(url)
+    });
+
+    expect(checkIfIsLegacy()).toBeTruthy();
+  })
+
+  it("should return false", () => {
+
+    const url = "https://hiring.amazon.com/application/?candidateId=abcde&jobId=546987";
+
+    Object.defineProperty(window, "location", {
+      value: new URL(url)
+    });
+
+    expect(checkIfIsLegacy()).toBeFalsy();
+  })
+})
+
+describe("renderScheduleFullAddress", () => {
+  let schedule = { ...TEST_SCHEDULE };
+  
+  beforeEach(()=>{
+    schedule = { ...TEST_SCHEDULE }
+  })
+
+  it("with State", () => {
+    expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, CA 94560");
+  })
+
+  it("without State", () => {
+    schedule.state = "";
+    expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, 94560");
+  })
+
+  it("without City", () => {
+    schedule.city = "";
+    expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, CA 94560");
+  })
+
+  it("without Zipcode", () => {
+    schedule.postalCode = "";
+    expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, CA");
+  })
+
+  it("without Address", () => {
+    schedule.address = "";
+    expect(renderScheduleFullAddress(schedule)).toEqual("Newark, CA 94560");
+  })
+})
+
+describe("populateTimeRangeHourData", () => {
+
+  it("when isThisEndTime set to true", () => {
+    expect(populateTimeRangeHourData("8", true)[0]).toEqual({ time: '09:00 AM', hours: 9 });
+  })
+
+  it("when isThisEndTime set to false", () => {
+    expect(populateTimeRangeHourData("8", false)[0]).toEqual({ time: '12:00 AM', hours: 0 });
+  })
+})
+
+describe("parseObjectToQueryString", () => {
+  it("should return expected string", () => {
+
+    const testObj = {
+      firstName: "test first name",
+      lastName: "test last name",
+      address: {
+        state: "WA",
+        city: "Seattle"
+      }
+    }
+
+    expect(parseObjectToQueryString(testObj)).toEqual("firstName=test%20first%20name&lastName=test%20last%20name&address=%7B%22state%22%3A%22WA%22%2C%22city%22%3A%22Seattle%22%7D")
+  })
+
+  it("should return empty string", () => {
+
+    const emptyObj = {};
+    
+    expect(parseObjectToQueryString(emptyObj)).toEqual("")
   })
 })
