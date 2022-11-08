@@ -1,4 +1,4 @@
-import { getDesiredWorkHoursByCountryCode } from "../../countryExpansionConfig";
+import { accentedChars, alphabet, alphanumeric, getCountryCode, getCountryConfig, getDesiredWorkHoursByCountryCode, specialChars } from "../../countryExpansionConfig";
 import {
     APPLICATION_STEPS,
     BACKGROUND_AGENT,
@@ -340,13 +340,7 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
     errorMessageTranslationKey: 'BB-BGC-MX-Additional-bgc-form-national-id-number-error-text',
 }
 
-export const accentedChars = "À-ÖØ-öø-ÿ";  // for Spanish
-export const specialChars = `-!${accentedChars}`;  // allow - and ! for the moment
-export const digits = "0-9";  // same as \d
-export const alphabet = "a-zA-Z";
-export const alphanumeric = `${alphabet}${digits}`;  // different with \w, no `_`
-
-export const NameRegexValidator = `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`;
+export const NameRegexValidator = getCountryConfig(getCountryCode()).nameRegexValidator;
 export const UserIdValidator = "^[a-z]{4,60}$";
 
 export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
@@ -541,7 +535,7 @@ export const PreviousLegalNameFormConfig: FormInputItem = {
     dataKey: 'additionalBackgroundInfo.previousLegalNames',
     id: 'additionalBgcPreviousLegalNames',
     type: 'text',
-    regex: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+    regex: getCountryConfig(getCountryCode()).previousLegalNameRegexValidator,
     errorMessageTranslationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text"
 }
 

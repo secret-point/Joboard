@@ -16,9 +16,17 @@ export enum PayRateType {
 export interface countryConfigType {
     payRateType: PayRateType;
     desiredWorkHours: DESIRED_WORK_HOURS;
+    nameRegexValidator: string;
+    previousLegalNameRegexValidator: string;
 }
 
-export const countryConfig: { [key: string]: countryConfigType } = {
+export const accentedChars = "À-ÖØ-öø-ÿ";  // for Spanish
+export const specialChars = `-!${accentedChars}`;  // allow - and ! for the moment
+export const digits = "0-9";  // same as \d
+export const alphabet = "a-zA-Z";
+export const alphanumeric = `${alphabet}${digits}`;  // different with \w, no `_`
+
+export const countryConfig: { [key in CountryCode]: countryConfigType } = {
     [CountryCode.US] : {
         payRateType: PayRateType.hourMax,
         desiredWorkHours: {
@@ -27,6 +35,8 @@ export const countryConfig: { [key: string]: countryConfigType } = {
             THIRTY: '30',
             FORTY: '40'
         },
+        nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
+        previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
     },
     [CountryCode.MX] : {
         payRateType: PayRateType.monthMax,
@@ -36,6 +46,8 @@ export const countryConfig: { [key: string]: countryConfigType } = {
             THIRTY: '36',
             FORTY: '48'
         },
+        nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,99}[${alphabet}${accentedChars}]$`,
+        previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,49}\\s[${alphabet}${specialChars},.'-]{1,49}$`,
     },
     // TODO: set to correct values once they're available
     [CountryCode.CA] : {
@@ -46,6 +58,8 @@ export const countryConfig: { [key: string]: countryConfigType } = {
             THIRTY: '30',
             FORTY: '40'
         },
+        nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
+        previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
     },
 };
 
