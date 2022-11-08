@@ -88,6 +88,10 @@
       "value" : "వినియోగదారు డేటా విధానం",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "సేకరించబడ్డ మొత్తం సమాచారం కూడా ప్రైవేట్ పార్టీల ఆధీనంలో వ్యక్తిగత డేటా యొక్క సంరక్షణపై ఫెడరల్ చట్టం మరియు డేటా గోప్యతపై దాని నిబంధనలు, మార్గదర్శకాలు మరియు ఇతర వర్తించే నిబంధనలకు అనుగుణంగా అదేవిధంగా ఉద్యోగులు మరియు/లేదా అభ్యర్థుల కొరకు కంపెనీ యొక్క గోప్యతా నోటీస్ పరంగా బదిలీ చేయబడుతుందని నాకు తెలుసు.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "విభిన్నమైన మరియు సమగ్రమైన కార్యాలయానికి Amazon కట్టుబడి ఉంది. Amazon సమాన అవకాశాల యజమాని మరియు జాతి, జాతీయ మూలం, లింగం, లింగ గుర్తింపు, లైంగిక ధోరణి, రక్షిత మాజీ సైనికుల స్థితి, వైకల్యం, వయస్సు లేదా ఇతర చట్టబద్ధంగా రక్షిత హోదా ఆధారంగా వివక్ష చూపదు. వసతిని అభ్యర్థించాలనుకునే వైకల్యాలున్న వ్యక్తుల కోసం, దయచేసి <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>ని సందర్శించండి",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -815,6 +819,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "eSignatures సరిపోలడం లేదు. దయచేసి ప్రతి eSignature కోసం ఒకే వచనాన్ని ఉపయోగించండి.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "దయచేసి కింది ఫార్మాట్‌లో చెల్లుబాటు అయ్యే పూర్తి పేరును నమోదు చేయండి: మొదటిది చివరిది",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "తర్వాత",
@@ -1799,10 +1807,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "పేలోడ్‌లో BGC కాలిఫోర్నియా డిస్‌క్లోజర్‌ అక్నౌలెడ్జెడ్ మిస్ అయింది.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "మీరు ఎంటర్ చేసిన SSN లేదా జాతీయ గుర్తింపు సంఖ్య ఇప్పటికే మా సిస్టమ్‌లోని మరొక ఇమెయిల్ చిరునామాతో అనుబంధించబడింది. మీరు ఇంతకు ముందు వేరే ఇమెయిల్ చిరునామాతో సైన్ అప్ చేసి ఉంటే, దయచేసి [లాగ్ అవుట్ చేసి] (/అప్లికేషన్/లాగ్అవుట్) మరియు ఆ ఇమెయిల్‌తో లాగిన్ అవ్వడానికి ప్రయత్నించండి, అవసరమైతే \"మీ వ్యక్తిగత పిన్‌ను మర్చిపోయారా?\" లింక్‌ను ఉపయోగించండి. మీకు సహాయం అవసరమైతే, దయచేసి ఇమెయిల్ ద్వారా మమ్మల్ని సంప్రదించండి లేదా <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> ద్వారా చాట్ చేయండి.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "ఉద్యోగం పొందడం సాధ్యపడదు.",

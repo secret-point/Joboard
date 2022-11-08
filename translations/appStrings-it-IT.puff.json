@@ -72,6 +72,10 @@
       "value" : "Effettuando la tua candidatura, confermi che:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Autorizzo Amazon a contattarmi tramite telefono, SMS o WhatsApp per fornire informazioni sulla mia candidatura, sulla mia procedura di selezione e assunzione.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Effettuando la candidatura, leggi e accetti il",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Informativa sui dati degli utenti",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Sono consapevole che tutte le informazioni raccolte possono essere trasferite ai sensi della legge federale sulla protezione dei dati personali in possesso di parti private e dei suoi regolamenti, linee guida e altre disposizioni applicabili sulla privacy dei dati, nonché secondo quanto disposto dall'Informativa sulla privacy della Società per i dipendenti e/o candidati.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon si impegna per un ambiente di lavoro diversificato e inclusivo. Amazon è un datore di lavoro che sostiene le pari opportunità e non discrimina in base a etnia, origine nazionale, sesso, identità di genere, orientamento sessuale, stato di veterano protetto, disabilità, età o altro stato legalmente protetto. Per le persone con disabilità che vogliono richiedere un alloggio, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -815,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "Le firme elettroniche non corrispondono. Usa lo stesso testo per ogni firma elettronica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Inserisci un nome e cognome validi nel seguente formato: Nome Cognome",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Avanti",
@@ -1799,10 +1811,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged non è presente nel payload.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Il numero di documento di identità o SSN inserito è già associato a un altro indirizzo e-mail nel nostro sistema. Se in precedenza ti sei registrato con un indirizzo e-mail diverso, [Esci](/application/logout) e prova ad accedere con quell'e-mail, usando il link “Hai dimenticato il tuo PIN personale?” se necessario. Se hai bisogno di aiuto, contattaci via e-mail o tramite chat all'indirizzo <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Impossibile recuperare l’offerta di lavoro.",

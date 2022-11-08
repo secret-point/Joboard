@@ -72,6 +72,10 @@
       "value" : "בהגשת מועמדותך, אתה מאשר כי:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "נתתי את אישורי ל-Amazon ליצור איתי קשר בטלפון, בהודעת טקסט או בוואטסאפ כדי לספק מידע על הגשת מועמדות, הבחירה ותהליך הגיוס שלי.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "על ידי הגשת מועמדות, אתה קורא ומסכים",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "מדיניות נתוני משתמשים",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "ידוע לי שכל המידע שנאסף עשוי להיות מועבר בהתאם לחוק הפדרלי להגנה על נתונים אישיים ברשותם של צדדים פרטיים והתקנות, ההנחיות והוראות רלוונטיות אחרות בנושא פרטיות נתונים, כמו גם במונחים של הודעה בנושא פרטיות של החברה לעובדים ו/או מועמדים.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon מתחייבת למקום עבודה מגוון וכוללני. Amazon בעד שוויון הזדמנויות ואינה מפלה על בסיס גזע, מוצא לאומי, מין, זהות מגדרית, נטייה מינית, מצב מוגן של  יוצא צבא, מוגבלות, גיל או מעמד אחר המוגן מבחינה משפטית. עבור אנשים עם מוגבלויות המעוניינים לבקש מקום לינה, יש לבקר בכתובת <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -819,6 +827,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "החתימות האלקטרוניות אינן תואמות. יש להשתמש באותו טקסט עבור כל החתימות האלקטרוניות.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "יש להזין שם חוקי מלא בפורמט הבא: שם פרטי שם משפחה",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "הבא",
@@ -1803,10 +1815,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged חסר בתוכן.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "מספר ה-SSN או מספר הזהות הלאומי שהזנת כבר משויך לכתובת דואר אלקטרוני אחרת במערכת שלנו. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש [להתנתק] (/יישום/התנתקות) ולנסות להיכנס באמצעות דואר אלקטרוני זה, באמצעות \"שכחת את הקוד האישי שלך? \" קישור במידת הצורך. אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או צ'אט בכתובת <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "לא ניתן להביא את העבודה.",

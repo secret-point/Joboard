@@ -72,6 +72,10 @@
       "value" : "Ao candidatar-se, confirma que:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Autorizo a Amazon a contactar-me via telefone, mensagem de texto ou WhatsApp para fornecer informações sobre a minha candidatura, seleção e processo de contratação.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Ao candidatar-se, lê e concorda com o",
       "note" : "Text for the user data policy agreement title"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "As assinaturas eletrónicas não correspondem. Use o mesmo texto para cada assinatura eletrónica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Insira um nome completo válido com o seguinte formato: Nome próprio Apelido",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Seguinte",
@@ -1804,10 +1812,6 @@
       "value" : "A informação hasBGCCaliforniaDisclosureAcknowledged está em falta na carga útil.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "O NISS ou o número de identidade nacional que inseriu já se encontra associado a outro endereço de e-mail no nosso sistema. Se se registou com um endereço de e-mail diferente anteriormente, [Log Out] ((/application/logout) e tente iniciar sessão com esse e-mail, através do link “esqueceu-se do seu PIN pessoal?”, se necessário. Se precisar de ajuda, contacte-nos por e-mail ou chat em <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Não foi possível obter o emprego.",
       "note" : "error message when unable to fetch job information"
@@ -2395,6 +2399,14 @@
     "BB-SelfIdentification-check-required-field-error-message" : {
       "value" : "Assinale todas as caixas obrigatórias nos passos anteriores para continuar.",
       "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Qual é o seu pronome?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Selecione uma das opções abaixo",
+      "note" : "Label for disability checkbox"
     }
   }
 }

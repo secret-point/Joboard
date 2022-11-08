@@ -72,6 +72,10 @@
       "value" : "আবেদন করার মাধ্যেম, আপনি কনফার্ম করছেন যে:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "আমি Amazon কে ফোন কল, পাঠ্য বার্তা বা WhatsApp এর মাধ্যমে আমাকে আমার আবেদন, নির্বাচন এবং নিয়োগের প্রক্রিয়ার সম্পর্কে তথ্য প্রদানের অনুমোদন দিচ্ছি।",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "আবেদন করার মাধ্যমে, আপনি পড়ে সম্মত হচ্ছেন যে",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "ব্যবহারকারীর তথ্য নীতিমালা",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "আমি জানি যে সমস্ত সংগ্রহকৃত তথ্য ব্যক্তিগত পক্ষের সম্পত্তি এবং তার প্রবিধান, নির্দেশিকা এবং তথ্যের গোপনীয়তার উপর অন্যান্য প্রযোজ্য বিধান, ব্যক্তিগত তথ্য সুরক্ষা ফেডারেল আইন অনুযায়ী স্থানান্তর করা যেতে পারে, এর পাশাপাশি কর্মচারীদের এবং/অথবা প্রার্থীদের জন্য কোম্পানির গোপনীয়তা বিজ্ঞপ্তির উপর ভিত্তি করে।",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon একটি বৈচিত্র্যময় এবং সার্বজনীন কর্মক্ষেত্রের প্রতি প্রতিশ্রুতিবদ্ধ। Amazon একটি সমান সুযোগে বিশ্বাসী নিয়োগকর্তা এবং জাতি, পূর্বপুরুষের দেশ, লিঙ্গ, লিঙ্গ পরিচয়, যৌন অভিমুখীতা, সুরক্ষিত প্রাক্তন সৈনিক স্ট্যাটাস, প্রতিবন্ধিতা, বয়স, বা অন্যান্য আইনত সুরক্ষিত অবস্থার ভিত্তিতে বৈষম্য করে না। প্রতিবন্ধী ব্যক্তি হিসাবে সহযোগীতার জন্য অনুরোধ করতে চাইলে, অনুগ্রহ করে <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>-এ ভিজিট করুন",
@@ -355,6 +363,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "ব্যাকগ্রাউন্ড চেক, মেডিকেল চেক, এবং ড্রাগ টেস্ট-এর জন্য অনুমোদন",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "আমি এতদ্দ্বারা <b> Servicios Comerciales Amazon Mexico, S-এ অনুমোদন দিচ্ছি R.L. C.V.</b> (অর্থাৎ “কোম্পানি”) আমার শিক্ষাগত, চিকিৎসা সংক্রান্ত তথ্য (অবৈধ মাদক এবং/অথবা এলকোহল পরীক্ষা সহ), পরিবার, ক্রেডিট, অপরাধ-এর ক্ষেত্রে যে পদের জন্য আমি আবেদন করেছি যদি তাতে প্রয়োজন হয় এবং কর্মসংস্থান সংক্রান্ত ব্যাকগ্রাউন্ড (অর্থাৎ “ব্যাকগ্রাউন্ড যাচাই”), যার জন্য আমি একজন প্রার্থী তার নিয়োগ এবং নির্বাচন প্রক্রিয়ার খাতিরে, নিজে বা তৃতীয় পক্ষের সংস্থাগুলির মাধ্যমে বা অন্য কোনও ব্যক্তি বা এবং কোম্পানির নির্দেশাবলী অনুসারে সত্তার নামে কাজ করে, যাতে এটি আমার অভিজ্ঞতা, জ্ঞান, স্বাস্থ্য, দক্ষতা এবং মূল্যায়ন করতে সক্ষম হতে পারে এবং দক্ষতার গ্যারান্টি দিতে পারে যেসব কাজের জন্য আমি আবেদন করছি তার প্রয়োজনে আমি প্রয়োজনীয় কাজের পদ্ধতি নিরাপদে আয়ত্ব করতে পারব সে সম্পর্কে তথ্য সংগ্রহ করতে পারবে। উপরোক্ত কারণের জন্য, আমি বুঝেছি এবং স্বীকার করছি যে আমার নিয়োগ পক্রিয়া এবং কোম্পানির সন্তষ্টির জন্য যদি কোন কর্মসংস্থানের অফার এবং/বা নিয়োগ আমার দ্বারা বা তৃতীয় পক্ষের দ্বারা প্রদত্ত তথ্যের উপর নির্ভর করে তাহলে আমি এতদ্বারা সেরকম তৃতীয় পক্ষ, যেমন আগের চাকুরীদাতাকে প্রয়োজনীয় তথ্য সরবরাহের অনুমোদন দিচ্ছি।  অনুরূপভাবে, আমি এতদ্দ্বারা গ্রহন করছি এবং স্বীকার করছি যে এই ব্যাকগ্রাউন্ড যাচাইটি আমার অনুমোদন দেওয়ার পরে যে কোনও সময়ে সঞ্চালিত হতে পারে এবং নিয়োগের পর কোম্পানির সাথে আমার শ্রম সম্পর্কের সময় করা হতে পারে।",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "অতিরিক্ত ব্যাকগ্রাউন্ডের তথ্য",
@@ -815,6 +827,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "ই-স্বাক্ষর মিলছে না। প্রতিটি ই-স্বাক্ষরের জন্য অনুগ্রহ করে একই টেক্সট ব্যবহার করুন।",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "অনুগ্রহ করে নিচের বিন্যাসে একটি সঠিক পুরো নাম লিখুন: প্রথম শেষ",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "পরবর্তী",
@@ -1799,10 +1815,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "পেলোড-এ hasBGCCaliforniaDisclosureAcknowledged অনুপস্থিত।",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "আপনার দেওয়া SSN বা জাতীয় পরিচয় নম্বরটি ইতিমধ্যেই আমাদের সিস্টেমে অন্য একটি ইমেইল ঠিকানার সাথে যুক্ত। আপনি যদি আগে একটি ভিন্ন ইমেইল ঠিকানা দিয়ে সাইন আপ করে থাকেন, অনুগ্রহ করে [লগ আউট করুন](/আবেদন/লগআউট) এবং প্রয়োজন হলে \"আপনার ব্যক্তিগত পিন ভুলে গেছেন?\" লিঙ্ক ব্যবহার করে সেই ইমেইল দিয়ে লগ ইন করার চেষ্টা করুন। আপনার যদি সাহায্যের প্রয়োজন হয়, অনুগ্রহ করে আমাদের সাথে ইমেইলের মাধ্যমে যোগাযোগ করুন বা <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> এ চ্যাট করুন।",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "চাকরি আনতে অক্ষম।",

@@ -72,6 +72,10 @@
       "value" : "आवेदन करके आप पुष्टि करते हैं कि:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "मैं Amazon को अपने आवेदन, चयन और काम पर रखने की प्रक्रिया के बारे में जानकारी देने के लिए फ़ोन, टेक्स्ट संदेश या व्हाट्सएप के माध्यम से मुझसे संपर्क करने के लिए अधिकृत करता हूं.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "आवेदन करके, आप पढ़ते हैं और इससे सहमत होते हैं",
       "note" : "Text for the user data policy agreement title"
@@ -1804,10 +1808,6 @@
       "value" : "‘BGC कैलिफ़ोर्निया प्रकटीकरण स्वीकार किया गया है’ पेलोड से गायब है.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "आपके द्वारा एंटर किया SSN या राष्ट्रीय पहचान संख्या पहले से ही हमारे सिस्टम में किसी अन्य ईमेल पते से जुड़ी हुई है. अगर आपने पहले एक अलग ईमेल पते के साथ साइन अप किया है, तो कृपया [लॉग आउट करें] (/ऐप्लिकेशन/लॉगआउट) और उस ईमेल के साथ लॉग इन करने की कोशिश करें, अगर ज़रूरी हो तो \"अपना व्यक्तिगत PIN भूल गए हैं?\" लिंक का इस्तेमाल करें. अगर आपको मदद की ज़रूरत है, तो कृपया ईमेल के माध्यम से हमसे संपर्क करें या <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp </a> पर चैट करें.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "जॉब दिखाने में असमर्थ हैं.",
       "note" : "error message when unable to fetch job information"
@@ -2391,6 +2391,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "आपकी आयु 100 वर्ष से कम होनी चाहिए.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "कृपया आगे बढ़ने के लिए पिछले चरणों में सभी आवश्यक बॉक्स चेक करे.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "आपका सर्वनाम क्या है?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "कृपया नीचे दिए गए बॉक्स में से एक चिन्हित करें",
+      "note" : "Label for disability checkbox"
     }
   }
 }

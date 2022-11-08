@@ -1800,10 +1800,6 @@
       "value" : "有效负载中缺少已同意的 BGC California Disclosure（加州披露报告）。",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "您输入的 SSN 或身份证件编号已与我们系统中的另一个电子邮件地址相关联。如果您之前使用其他电子邮件地址注册过，请[注销]/application/logout，然后尝试使用该电子邮件登录。如果需要，可以使用“忘记个人 PIN 码？”链接。如果您需要帮助，请发邮件给我们或通过 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 发起实时聊天。",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "无法获取职位。",
       "note" : "error message when unable to fetch job information"
@@ -2391,6 +2387,14 @@
     "BB-SelfIdentification-check-required-field-error-message" : {
       "value" : "请勾选之前步骤中的所有必选框以继续下一步。",
       "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "您使用的称呼是什么？",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "请勾选下列选项之一",
+      "note" : "Label for disability checkbox"
     }
   }
 }

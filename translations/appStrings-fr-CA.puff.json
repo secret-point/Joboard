@@ -88,6 +88,10 @@
       "value" : "Politique relative aux données des utilisateurs",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Je suis conscient que tous les informations recueillies peuvent être transférées conformément à la Loi fédérale sur la protection des données personnelles en la possession de parties privées et à ses règlements, lignes directrices et autres dispositions applicables en matière de confidentialité des données, ainsi qu'aux termes de la Déclaration de confidentialité de la Société pour les employés et/ou les candidats.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon s’engage à offrir un environnement de travail diversifié et inclusif. Amazon est un employeur qui offre l’égalité des chances à tous et ne fait aucune discrimination basée sur la race, la nationalité, le sexe, l’identité de genre, l’orientation sexuelle, le statut d’ancien combattant protégé, le handicap, l’âge ou tout autre statut protégé par la loi. Pour les personnes qui ont un handicap et qui souhaitent demander des mesures d’adaptation, veuillez consulter <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -355,6 +359,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "Autorisations de vérification des antécédents, vérification médicale et test antidopage",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "J'autorise par la présente<b> Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b>(ci-après la « Société ») afin d'obtenir des informations concernant mes études, mes soins médicaux (y compris les tests de dépistage de drogues illégales et/ou d'alcool), ma famille, mes crédits, mes antécédents criminels au cas où ils seraient nécessaires selon le poste auquel j'ai postulé et mes antécédents professionnels (ci-après la « vérification des antécédents »), en vertu du processus de recrutement et de sélection dans lequel je suis candidat, soit par lui-même, soit par l'intermédiaire de sociétés tierces ou de toute autre personne ou entité agissant au nom et conformément aux instructions de la Société, afin qu'elle puisse évaluer mon expérience, mes connaissances, ma santé, mes aptitudes et mes compétences pour m'assurer que je peux développer en toute sécurité les fonctions requises pour le poste auquel je postule. En vertu de ce qui précède, je comprends et accepte que toute offre d'emploi et/ou d'embauche, si tel est le cas, est sujette à la vérification des informations fournies par moi ou par des tiers dans le cadre de mon processus de recrutement et de sélection à la satisfaction de la Société et j'autorise par la présente cette offre des tiers, y compris les anciens employeurs,à fournir les informations ou les documents requis.  De même, j'accepte et reconnais par la présente que cette vérification des antécédents peut être effectuée en tout temps après que j'ai accordé mon autorisation et, en cas d'embauche, pendant ma relation de travail avec la société.",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informations générales complémentaires",
@@ -1800,10 +1808,6 @@
       "value" : "Il manque l’accusé de réception BGC de la loi californienne sur la divulgation dans la charge utile.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Le numéro SSN ou le numéro d’identité nationale que vous avez saisi est déjà associé à une autre adresse courriel dans notre système. Si vous vous êtes déjà inscrit(e) avec une autre adresse courriel, veuillez [vous déconnecter] (/demande/déconnexion) et essayer de vous connecter avec le même courriel, en utilisant le lien « Vous avez oublié votre code PIN personnel? », si nécessaire. Si vous avez besoin d’aide, veuillez nous contacter par courriel ou par clavardage à <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Impossible de chercher un emploi.",
       "note" : "error message when unable to fetch job information"
@@ -2387,6 +2391,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Vous devez avoir moins de 100 ans.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Veuillez cocher toutes les cases requises lors des étapes précédentes pour continuer.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Quels pronoms souhaitez-vous que nous utilisions?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Veuillez cocher l’une des cases ci-dessous",
+      "note" : "Label for disability checkbox"
     }
   }
 }

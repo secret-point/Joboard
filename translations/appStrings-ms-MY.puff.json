@@ -356,6 +356,10 @@
       "value" : "Kebenaran untuk Pemeriksaan Latar Belakang, Pemeriksaan Perubatan, dan Ujian Dadah",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Saya dengan ini memberi kuasa kepada <b> Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (selepas ini “Syarikat”) untuk mendapatkan maklumat tentang pendidikan, perubatan (termasuk dadah haram dan/atau ujian alkohol), keluarga, kredit, jenayah saya sekiranya perkara yang sama diperlukan mengikut jawatan yang telah saya mohon dan latar belakang pekerjaan (selepas ini “Pemeriksaan Latar Belakang”), berdasarkan proses pengambilan dan pemilihan di mana saya adalah calon, sama ada dengan sendirinya atau melalui syarikat pihak ketiga atau mana-mana individu atau entiti lain yang bertindak atas nama dan menurut arahan Syarikat, supaya ia dapat menilai pengalaman, pengetahuan, kesihatan, kebolehan dan kemahiran saya untuk menjamin bahawa saya dapat mengembangkan fungsi yang diperlukan untuk jawatan yang saya mohon dengan selamat. Berkenaan dengan perkara di atas, saya memahami dan menerima bahawa sebarang tawaran pekerjaan dan/atau pengambilan bekerja sekiranya berlaku adalah tertakluk kepada pengesahan maklumat yang diberikan oleh saya atau pihak ketiga dalam proses pengambilan dan pemilihan saya sehingga memuaskan Syarikat dan saya dengan ini memberi kuasa kepada pihak ketiga tersebut termasuk bekas majikan, untuk memberikan maklumat dan/atau dokumen yang diperlukan.  Begitu juga, saya dengan ini menerima dan mengakui bahawa Pemeriksaan Latar Belakang ini boleh dilakukan pada bila-bila masa selepas saya memberikan kebenaran saya dan, sekiranya diambil bekerja, semasa hubungan buruh saya dengan Syarikat.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Maklumat latar belakang tambahan",
       "note" : "Text for the Additional bgc information step card title"
@@ -1799,10 +1803,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "mempunyaiPendedahanCaliforniaBGCDiperakui hilang dalam muatan.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "SSN atau Nombor Identiti Kebangsaan yang anda masukkan sudah dikaitkan dengan alamat e-mel lain dalam sistem kami. Jika sebelum ini anda telah mendaftar dengan alamat e-mel yang berbeza, sila [Log Keluar] (/permohonan/logkeluar) dan cuba log masuk dengan e-mel itu, menggunakan pautan “Lupa pin peribadi anda?“ jika perlu. Jika anda memerlukan bantuan, sila hubungi kami melalui e-mel atau berbual di <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Tidak dapat mengambil kerja.",

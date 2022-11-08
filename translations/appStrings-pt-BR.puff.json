@@ -1804,10 +1804,6 @@
       "value" : "A confirmação da Declaração da Califórnia não foi inserida no preenchimento.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "O SSN ou número de identidade nacional que você inseriu já está associado a outro endereço de e-mail em nosso sistema. Se você já se inscreveu com um endereço de e-mail diferente, [Saia] (/application/logout) e tente fazer login com esse e-mail, usando o link “Esqueceu seu PIN pessoal?” se necessário. Se precisar de ajuda, fale conosco por e-mail ou chat em <a href='https://hiring.amazon.com/contact-us#/'> www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Não foi possível buscar vagas.",
       "note" : "error message when unable to fetch job information"
@@ -2391,6 +2387,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Você precisa ter menos de 100 anos.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Marque todas as caixas obrigatórias nas etapas anteriores para continuar.",
+      "note" : "Error message to check required fields on the self Identification"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "Qual pronome você prefere?",

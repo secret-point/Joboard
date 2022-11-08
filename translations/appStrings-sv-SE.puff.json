@@ -356,6 +356,10 @@
       "value" : "Tillåtelse till bakgrundskontroll, medicinsk undersökning och drogtest",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Jag godkänner härmed att <b> Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (nedan kallat ”Företaget”) får information om min utbildning, medicinska (inklusive prov för olaglig droger och/eller alkohol), familj, kredit, kriminalitet i fall detta krävs i enlighet med den position som jag har ansökt om samt anställningsbakgrund (nedan kallad ”Bakgrundskontroll”), i kraft av den rekryterings- och urvalsprocess där jag är en kandidat, antingen själva eller genom tredjepartsföretag eller någon annan person eller enhet som agerar för företagets räkning och i enlighet med Företagets instruktioner, så att företaget kan utvärdera min erfarenhet, kunskap, hälsa, fallenhet och färdigheter för att garantera att jag på ett säkert sätt kan utveckla de funktioner som krävs för den tjänst som jag ansöker om. I kraft av ovanstående förstår jag och accepterar att ett erbjudande om anställning och/eller anlitande om så är fallet, är föremål för verifiering av informationen som tillhandahålles av mig eller en tredje part under min rekryterings- och urvalsprocess till Företagets tillfredsställelse och jag godkänner härmed att sådan tredje part, inklusive tidigare arbetsgivare, tillhandahåller den nödvändiga informationen och/eller de nödvändiga dokumenten.  Likaså accepterar jag och intygar härmed att denna Bakgrundskontroll kan utföras när som helst efter det att jag ger mitt godkännande och, om jag anställs, under min arbetsförhållande med Företaget.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Ytterligare bakgrundsinformation",
       "note" : "Text for the Additional bgc information step card title"
@@ -1799,10 +1803,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged saknas i nyttolast.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Personnumret eller det nationella identitetsnumret du angav är redan kopplat till en annan e-postadress i vårt system. Om du tidigare har registrerat dig med en annan e-postadress, vänligen [Logga ut](/ansökan/utloggning) och försök logga in med den e-postadressen. Använd länken ”Glömt din personliga pinkod?” om det behövs. Om du behöver hjälp kan du kontakta oss via e-post eller chatt på <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Det gick inte att hämta jobb.",

@@ -356,6 +356,10 @@
       "value" : "Zezwolenia na weryfikację przeszłości, badanie lekarskie i test narkotykowy",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Niniejszym upoważniam spółkę <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (zwaną dalej „Spółką”) do uzyskania informacji na temat mojego wykształcenia, stanu zdrowia (w tym badań na obecność narkotyków i/lub alkoholu), rodziny, zadłużenia, karalności w przypadku gdy są one wymagane na stanowisku, o które się ubiegam, oraz historii zatrudnienia (zwanego dalej „weryfikacją przeszłości”) w związku z procesem rekrutacji i wyboru kandydatów, w którym biorę udział, samodzielnie albo za pośrednictwem firm zewnętrznych albo jakichkolwiek innych osób lub podmiotów działających w imieniu Spółki i zgodnie z jej poleceniami, aby mogła ona ocenić moje doświadczenie, wiedzę, stan zdrowia, zdolności i umiejętności w celu zagwarantowania, że mogę w sposób bezpieczny rozwijać funkcje wymagane na stanowisku, o które się ubiegam. W związku z powyższym rozumiem i akceptuję, że jakakolwiek propozycja zatrudnienia na stałe i/lub tymczasowo, o ile będzie miała miejsce, będzie podlegała wymogowi weryfikacji informacji przekazanych przeze mnie lub osoby trzecie w trakcie procesu rekrutacji i wyboru w sposób zadowalający Spółkę, i niniejszym upoważniam takie osoby trzecie, w tym byłych pracodawców, do przekazania wymaganych informacji i/lub dokumentów.  Ponadto, niniejszym akceptuję i przyjmuję do wiadomości, że weryfikacja przeszłości może zostać przeprowadzona w dowolnym momencie po udzieleniu przeze mnie upoważnienia oraz, w przypadku zatrudnienia, w trakcie mojego stosunku pracy ze Spółką.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Dodatkowe informacje dotyczące przeszłości",
       "note" : "Text for the Additional bgc information step card title"
@@ -1800,10 +1804,6 @@
       "value" : "Brakuje informacji HasbgccaliforniaDisclosureAgnged.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Wprowadzony numer SSN lub krajowy numer identyfikacyjny jest już powiązany z innym adresem e-mail w naszym systemie. Jeśli wcześniej zarejestrowałeś(-łaś) się przy użyciu innego adresu e-mail, [Wyloguj się] (/application/logout) i spróbuj zalogować się za pomocą wcześniej użytego adresu e-mail, w razie potrzeby korzystając z linku „Nie pamiętasz osobistego kodu PIN?”. Jeśli potrzebujesz pomocy, skontaktuj się z nami za pośrednictwem poczty elektronicznej lub czatu pod adresem <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Nie można pobrać pracy.",
       "note" : "error message when unable to fetch job information"
@@ -2387,6 +2387,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Musisz mieć mniej niż 100 lat.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Aby kontynuować, zaznacz wszystkie wymagane pola w poprzednich krokach.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Jakim zaimkiem się określasz?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Zaznacz jedno z poniższych pól",
+      "note" : "Label for disability checkbox"
     }
   }
 }

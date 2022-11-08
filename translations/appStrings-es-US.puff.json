@@ -741,7 +741,7 @@
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de empleo: Desde/Hasta (MM/AA - MM/AA)",
+      "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
@@ -1800,10 +1800,6 @@
       "value" : "Falta hasBGCCaliforniaDisclosureAcknowledged en la carga útil.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "El SSN o Número de Identidad Nacional que ingresaste ya está asociado a otra dirección de correo electrónico en nuestro sistema. Si previamente te has registrado con una dirección de correo electrónico diferente, por favor [Log Out](/application/logout) e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu pin personal?” si es necesario. Si necesitas ayuda, comunícate con nosotros por correo electrónico o chat en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "No se pudo encontrar el trabajo.",
       "note" : "error message when unable to fetch job information"
@@ -2387,6 +2383,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Necesitas tener menos de 100 años.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Marca todas las casillas requeridas en los pasos anteriores para continuar.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "¿Cuál es tu pronombre?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Marca una de las siguientes casillas",
+      "note" : "Label for disability checkbox"
     }
   }
 }

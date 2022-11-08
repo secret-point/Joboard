@@ -88,6 +88,10 @@
       "value" : "Beleid inzake gebruikersgegevens",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Ik ben me ervan bewust dat alle verzamelde informatie kan worden overgedragen op grond van de federale wet inzake de bescherming van persoonsgegevens in het bezit van particuliere partijen en de bijbehorende voorschriften, richtlijnen en andere toepasselijke bepalingen inzake gegevensprivacy, evenals in termen van de privacyverklaring van het bedrijf voor werknemers en/of kandidaten.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon zet zich in voor een diverse en inclusieve werkplek. Amazon is een werkgever die gelijke kansen biedt en niet discrimineert op basis van ras, nationale afkomst, geslacht, genderidentiteit, seksuele geaardheid, beschermde veteranenstatus, handicap, leeftijd of een andere wettelijk beschermde status. Voor personen met een handicap die een aanpassing willen aanvragen, ga naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -1803,10 +1807,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "\"Heeft BGC de California Disclosure erkend\" ontbreekt in de sollicitatie.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Het SSN-nummer of nationale identiteitsnummer dat je hebt ingevoerd, is al gekoppeld aan een ander e-mailadres in ons systeem. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op<a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Kan vacature niet ophalen.",

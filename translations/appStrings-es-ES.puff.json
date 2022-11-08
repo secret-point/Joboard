@@ -72,6 +72,10 @@
       "value" : "Al solicitarlo el puesto, confirmas que:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Autorizo a Amazon a ponerse en contacto conmigo por teléfono, mensaje de texto o WhatsApp para proporcionarme información sobre mi proceso de solicitud, selección y contratación.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Al presentar la solicitud, lees y aceptas lo siguiente:",
       "note" : "Text for the user data policy agreement title"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "Las firmas electrónicas no coinciden. Utiliza el mismo texto para cada firma electrónica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Introduce un nombre completo válido con el siguiente formato: Nombre Apellidos",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Siguiente",
@@ -1803,10 +1811,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "Falta la aceptación de la Divulgación de California BGC en la carga útil.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "El SSN o el número nacional de identidad que introdujiste ya está asociado a otra dirección de correo electrónico en nuestro sistema. Si ya te habías registrado con una dirección de correo electrónico diferente, [cierra sesión] (/solicitud/cerrar sesión) y, de ser necesario, intenta iniciar sesión con ese correo electrónico en el enlace “¿Olvidaste tu PIN personal?”. Si necesitas ayuda, ponte en contacto con nosotros por correo electrónico o chat en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "No se puede obtener el trabajo.",

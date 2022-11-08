@@ -72,6 +72,10 @@
       "value" : "अर्ज करून, तुम्ही हे कन्फर्म करता:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "माझा अर्ज, निवड आणि नियुक्ती प्रक्रियेबद्दल माहिती देण्यासाठी मी Amazon ला फोन, मजकूर संदेश किंवा WhatsApp द्वारे माझ्याशी संपर्क साधण्यासाठी अधिकृत करतो.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "अर्ज करून, तुम्ही हे वाचले आणि याच्याशी सहमत आहात",
       "note" : "Text for the user data policy agreement title"
@@ -355,6 +359,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "पार्श्वभूमी तपासणी, वैद्यकीय तपासणी आणि औषध चाचणीसाठी अधिकृतता",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "मी याद्वारे<b> Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b>(यापुढे “कंपनी”) माझे शिक्षण, वैद्यकीय (बेकायदेशीर औषध आणि/किंवा दारू चाचणी समावेश), कुटुंबीय, क्रेडिट, गुन्हेगारी जर मी ज्यासाठी अर्ज केला आहे त्या स्थानासाठी आवश्यकता असेल तर आणि रोजगार पार्श्वभूमी (यापुढे “पार्श्वभूमी तपासणी”) संबंधित माहिती प्राप्त करण्यासाठी अधिकृत करतो, ज्या भरती आणि निवड प्रक्रियेच्या आधारे मी उमेदवार आहे, एकतर स्वत: हून किंवा तृतीय पक्षाच्या कंपन्यांद्वारे किंवा इतर कोणत्याही व्यक्तीद्वारे किंवा कंपनीच्या निर्देशांनुसार काम करणाऱ्या आणि कंपनीच्या सूचनांनुसार, जेणेकरून मी ज्या पदासाठी अर्ज करत आहे त्या पदासाठी आवश्यक कार्ये मी सुरक्षितपणे विकसित करू शकेन याची हमी देण्यासाठी ते माझ्या अनुभवाचे, ज्ञानाचे, आरोग्याचे, योग्यतेचे आणि कौशल्यांचे मूल्यमापन करण्यास सक्षम असतील. वरील गोष्टींनुसार, मी हे समजतो आणि स्वीकारतो की रोजगाराची कोणतीही ऑफर आणि/किंवा अशी परिस्थिती असल्यास नोकरीची कोणतीही ऑफर कंपनीचे समाधान होईपर्यंत माझ्या भर्ती आणि निवड प्रक्रियेच्या ओघात माझ्या किंवा तृतीय पक्षाद्वारे दिलेल्या माहितीच्या पडताळणीच्या अधीन आहे आणि मी याद्वारे तृतीय पक्षांना ज्यात माजी नियोक्त्यांचा समावेश आहे अशी आवश्यक माहिती आणि/किंवा दस्तऐवज देऊ करण्यासाठी अधिकृत करतो..  त्याचप्रमाणे, मी याद्वारे हे स्वीकारतो आणि मान्य करतो की मी माझी अधिकृतता मंजूर केल्यानंतर आणि जर मला नोकरीवर ठेवल्यास कंपनीशी असलेल्या माझ्या कामगार संबंधांदरम्यान कोणत्याही वेळी ही पार्श्वभूमी तपासणी केली जाऊ शकते.",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "अतिरिक्त पार्श्वभूमी माहिती",
@@ -815,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "ईसिग्नेचर्स जुळत नाही. कृपया प्रत्येक ईसिग्नेचरसाठी समान मजकूर वापरा.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "कृपया खालील स्वरूपात वैध पूर्ण नाव एंटर करा: नाव आडनाव",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "पुढील",
@@ -1800,10 +1812,6 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged पेलोडमध्ये गहाळ आहे.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "तुम्ही प्रविष्ट केलेला SSN किंवा राष्ट्रीय ओळख क्रमांक आमच्या सिस्टममधील दुसर्‍या ईमेल पत्त्याशी आधीपासूनच संबंधित आहे. तुम्ही पूर्वी वेगळ्या ईमेल पत्त्यावर साइन अप केले असल्यास, कृपया [लॉग आउट करा](/application/logout) आणि आवश्यक असल्यास \"तुमचा वैयक्तिक पिन विसरलात?\" लिंक वापरून त्या ईमेलसह लॉग इन करण्याचा प्रयत्न करा. तुम्हाला मदत हवी असल्यास, कृपया ईमेलद्वारे आमच्याशी संपर्क साधा किंवा <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> येथे चॅट करा.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "नोकरी प्राप्त करण्यात अक्षम.",
       "note" : "error message when unable to fetch job information"
@@ -2391,6 +2399,14 @@
     "BB-SelfIdentification-check-required-field-error-message" : {
       "value" : "कृपया पुढे जाण्यासाठी मागील चरणांमधील सर्व आवश्यक बॉक्सवर खूण करा.",
       "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "तुमचे लिंग काय आहे?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "कृपया खालील बॉक्सपैकी एकावर खूण करा",
+      "note" : "Label for disability checkbox"
     }
   }
 }

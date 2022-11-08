@@ -816,6 +816,10 @@
       "value" : "ഇ-സിഗ്നേച്ചറുകൾ പൊരുത്തപ്പെടുന്നില്ല. ഓരോ ഇ-സിഗ്നേച്ചറിനും സമാന ടെക്സ്റ്റ് ഉപയോഗിക്കുക.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "ദയവായി ഇനിപ്പറയുന്ന ഫോർമാറ്റിൽ ഒരു സാധുവായ മുഴുവന്‍ പേര് നൽകുക: ആദ്യത്തെ അവസാനത്തെ",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "അടുത്തത്",
       "note" : "Text for the non fcra form page next button text"
@@ -1799,10 +1803,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged പേലോഡിൽ കാണുന്നില്ല.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "നിങ്ങൾ നൽകിയ SSN അല്ലെങ്കിൽ ദേശീയ ഐഡന്റിറ്റി നമ്പർ ഞങ്ങളുടെ സിസ്റ്റത്തിലെ മറ്റൊരു ഇമെയിൽ വിലാസവുമായി ഇതിനകം ബന്ധപ്പെട്ടിരിക്കുന്നു. നിങ്ങൾ മുമ്പ് മറ്റൊരു ഇമെയിൽ വിലാസത്തിൽ സൈൻ അപ്പ് ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, ദയവായി [ലോഗ് ഔട്ട് ചെയ്ത്](/application/logout) ആ ഇമെയിൽ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യാൻ ശ്രമിക്കുക, ആവശ്യമെങ്കിൽ \"നിങ്ങളുടെ വ്യക്തിഗത പിൻ മറന്നോ?\" ലിങ്ക് ഉപയോഗിക്കുക. നിങ്ങൾക്ക് സഹായം ആവശ്യമുണ്ടെങ്കിൽ, ദയവായി ഇമെയിൽ മുഖേനയോ അല്ലെങ്കിൽ ചാറ്റ് മുഖേനയോ <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> എന്നതിൽ ഞങ്ങളെ ബന്ധപ്പെടുക.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "ജോലി ലഭ്യമാക്കാനാവുന്നില്ല.",

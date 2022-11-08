@@ -72,6 +72,10 @@
       "value" : "Podáním žádosti potvrzujete, že:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Povoluji společnosti Amazon, aby mě kontaktovala telefonicky, textovou zprávou nebo přes aplikaci WhatsApp a poskytla mi informace o mé žádosti, výběru a přijímacím řízení.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Podáním žádosti jste si přečetli a souhlasíte s",
       "note" : "Text for the user data policy agreement title"
@@ -1799,10 +1803,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "V datovém obsahu chybí potvrzení BGCC zpřístupnění informací v Kalifornii.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Zadané číslo sociálního pojištění nebo dokladu totožnosti je již v našem systému přiřazeno k jiné e-mailové adrese. Pokud jste se dříve zaregistrovali pod jinou e-mailovou adresou, [odhlaste se]  (/application/logout) a zkuste se přihlásit pod touto e-mailovou adresou a v případě potřeby použijte odkaz „Zapomněli jste svůj osobní PIN?“. Pokud potřebujete pomoc, kontaktujte nás prostřednictvím e-mailu nebo chatu na adrese <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Pracovní pozici nelze načíst.",

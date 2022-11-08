@@ -1800,10 +1800,6 @@
       "value" : "\"hasBGCCaliforniaDisclosureAcknowledged\" مفقود في البيانات الأساسية.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "رقم \"SSN\" أو رقم الهوية الوطنية الذي أدخلته مرتبط بالفعل بعنوان بريد إلكتروني آخر في نظامنا. إذا كنت قد قمت بتسجيل الاشتراك مسبقًا باستخدام عنوان بريد إلكتروني مختلف، فيرجى [تسجيل الخروج] (/application/logout) وحاول تسجيل الدخول باستخدام هذا البريد الإلكتروني، باستخدام رابط \"هل نسيت رقم التعريف الشخصي (PIN) الخاص بك؟\" إذا لزم الأمر. إذا كنت بحاجة إلى مساعدة، يرجى الاتصال بنا عبر البريد الإلكتروني أو الدردشة على <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "تعذَّر جلب وظيفة.",
       "note" : "error message when unable to fetch job information"

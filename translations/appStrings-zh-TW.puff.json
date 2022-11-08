@@ -820,6 +820,10 @@
       "value" : "電子簽章不符。請為每個電子簽章使用相同的文字。",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "請按以下格式輸入有效的全名：名字 姓氏",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "下一頁",
       "note" : "Text for the non fcra form page next button text"
@@ -1804,10 +1808,6 @@
       "value" : "有效載荷中缺少加利福尼亞州 BGC 披露已確認資訊。",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "您輸入的 SSN 或國民身分證號碼已關聯我們系統中的另一個電子郵件地址。如果您之前使用過其他電子郵件地址註冊，請 [登出] (/application/logout)，然後嘗試使用該用電子郵件登入，如果需要的話，請使用「忘記您的個人 PIN 碼？」連結。如果需要協助，請透過電子郵件或者 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 上的聊天功能聯絡我們。",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "無法擷取工作。",
       "note" : "error message when unable to fetch job information"
@@ -2391,6 +2391,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "年齡必須在 100 歲以下。",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "請在之前的步驟中勾選所有必填方塊以繼續。",
+      "note" : "Error message to check required fields on the self Identification"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "您的代詞是什麼？",

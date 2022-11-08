@@ -88,6 +88,10 @@
       "value" : "Kullanıcı Veri Politikası",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Toplanan tüm bilgilerin, hem Özel Tarafların Mülkiyetindeki Kişisel Verilerin Korunması Hakkında Federal Kanun ve onun düzenlemeleri, yönergeleri ve veri gizliliğine ilişkin diğer geçerli hükümlerine uygun olarak hem de Şirketin Çalışanlar ve/veya Adaylar için Gizlilik Bildirimi doğrultusunda aktarılabileceğinin farkındayım.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon, çeşitlilik içeren ve kapsayıcı bir çalışma ortamına kendini adamıştır. Amazon, fırsat eşitliği sağlayan bir işverendir ve ırk, ulusal köken, cinsiyet, cinsel kimlik, cinsel yönelim, gazilik durumu, engellilik, yaş veya yasal olarak korunan diğer durumlar temelinde ayrımcılık yapmaz. Konaklama talebinde bulunmak isteyen engelli bireyler <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> adresini ziyaret edin",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -355,6 +359,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "Geçmiş kontrolü, tıbbi kontrol ve uyuşturucu testi yetkilendirmeleri.",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "İşbu belgeyle <b> Servicios Comerciales Amazon Mexico. S. de R.L. de C.V.’ye</b>(bundan böyle “Şirket” olarak anılacaktır), eğitimim, sağlığım (yasa dışı uyuşturucu ve/veya alkol testi dahil), ailem, kredim, başvurduğum pozisyon için gerekli olması halinde sabıka kaydım hakkında bilgi edinmesi (bundan böyle “Özgeçmiş Kontrolü” olarak anılacaktır), aday olduğum işe alım ve seçim süreci nedeniyle, gerek kendi başına gerekse üçüncü taraf şirketler veya Şirket adına ve Şirket’in talimatlarına uygun olarak hareket eden diğer herhangi bir kişi veya kuruluş aracılığıyla, başvurduğum pozisyon için gerekli işlevleri güvenli bir şekilde geliştirebileceğimi garanti etmek için deneyimimi, bilgimi, sağlığımı, yeteneklerimi ve becerilerimi değerlendirmesi için yetki veriyorum. Yukarıdakilere dayanarak, herhangi bir iş ve/veya hizmet alma teklifinin, o noktada benim tarafımdan veya üçüncü şahıslar tarafından sağlanan bilgilerin, işe alım ve seçim sürecim sırasında Şirket için tatmin edici bir şekilde doğrulanmasına tabi olduğunu anlıyor ve kabul ediyorum ve işbu belge ile önceki işverenler de dahil olmak üzere bu tür üçüncü şahıslara gerekli bilgi ve/veya belgeleri sağlama konusunda yetki veriyorum.  Aynı şekilde, bu Özgeçmiş Kontrolü’nün, yetki vermem sonrasındaki herhangi bir zamanda ve işe alınmam durumunda Şirket ile olan iş ilişkim sırasında gerçekleştirilebileceğini kabul ve beyan ederim.",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Ek geçmiş kontrolü bilgileri",
@@ -815,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "e-İmzalar eşleşmiyor. Lütfen her bir e-İmza için aynı metni kullanın.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Lütfen aşağıdaki formatta geçerli bir tam ad girin: Adı Soyadı",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "İleri",
@@ -1799,10 +1811,6 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "Yükte hasBGCCaliforniaDisclosureAcknowledged eksik.",
       "note" : "error message for update application with california disclosure information missing"
-    },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Girdiğiniz SSN veya Ulusal Kimlik Numarası zaten sistemimizdeki başka bir e-posta adresiyle ilişkilendirilmiştir. Daha önce farklı bir e-posta adresiyle kaydolduysanız, lütfen [Oturumu Kapat] (/uygulama/çıkış) ve gerekirse bu e-postayla, “Kişisel pininizi mi unuttunuz?’’ bağlantısından giriş yapmayı deneyin. Yardıma ihtiyacınız varsa, lütfen bizimle e-posta yoluyla iletişime geçin veya <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> üzerinden sohbet edin.",
-      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "İş getirilemiyor.",

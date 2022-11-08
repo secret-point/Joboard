@@ -1764,10 +1764,6 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged λείπει στο ωφέλιμο φορτίο.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Ο SSN ή ο Αριθμός Εθνικής Ταυτότητας που πληκτρολογήσατε είναι ήδη συνδεδεμένος με άλλη διεύθυνση email στο σύστημά μας. Εάν είχατε εγγραφεί προηγουμένως με διαφορετική διεύθυνση email, επιλέξτε [Αποσύνδεση](/application/logout) και προσπαθήστε να συνδεθείτε με αυτό το email, χρησιμοποιώντας τον σύνδεσμο «Ξεχάσατε τον προσωπικό σας κωδικό;» αν χρειαστεί. Αν χρειάζεστε βοήθεια, επικοινωνήστε μαζί μας μέσω email ή συνομιλίας στο <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Δεν είναι δυνατή η ανάκτηση της εργασίας.",
       "note" : "error message when unable to fetch job information"

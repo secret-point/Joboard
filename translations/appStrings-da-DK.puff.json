@@ -356,6 +356,10 @@
       "value" : "Tilladelse til Baggrundstjek, Medicinsk tjek og Stoftest",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Jeg giver hermed<b> Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b>(i det følgende benævnt “Virksomheden”) tilladelse til at indhente oplysninger om min uddannelsesmæssige, medicinske (herunder test for ulovlige stoffer og/eller alkohol), familiemæssige, kreditmæssige og straffeattestmæssige situation, i det omfang det er nødvendigt i forhold til den stilling, jeg har ansøgt om, og undersøge min beskæftigelsesbaggrund (i det følgende benævnt “Baggrundskontrol“), som led i den rekrutterings- og udvælgelsesproces, hvor jeg er kandidat. Virksomheden kan indhente disse oplysninger selv eller gennem tredjepartsvirksomheder eller gennem enhver anden person eller enhed, der handler på vegne af og i henhold til virksomhedens anvisninger. Formålet er udelukkende at evaluere min erfaring, viden, sundhed, evner og færdigheder med henblik på at sikre, at jeg kan varetage de påkrævede funktioner i den stilling, som jeg søger. I kraft af ovenstående forstår og accepterer jeg, at ethvert tilbud om ansættelse er underlagt verifikation af og virksomhedens accept af de oplysninger, som jeg eller tredjeparter fremlægger i løbet af min rekrutterings- og udvælgelsesproces, og jeg godkender hermed, at sådanne tredjeparter, herunder tidligere arbejdsgivere, tilvejebringer de påkrævede oplysninger og/eller dokumenter.  Ligeledes accepterer og anerkender jeg hermed, at denne baggrundskontrol kan udføres når som helst, efter at jeg har givet min tilladelse og, hvis jeg bliver ansat, under løbetiden af min ansættelseskontrakt i virksomheden.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Yderligere baggrundsinformation",
       "note" : "Text for the Additional bgc information step card title"
@@ -815,6 +819,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "E-signaturer stemmer ikke overens. Brug den samme tekst til hver e-signatur.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Indtast et gyldigt fuldt navn i følgende format: Fornavn Efternavn",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Næste",
@@ -1800,10 +1808,6 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged mangler i payload.",
       "note" : "error message for update application with california disclosure information missing"
     },
-    "BB-update-application-error-message-duplication-ssn" : {
-      "value" : "Det SSN eller nationale identitetsnummer, du indtastede, er allerede knyttet til en anden e-mailadresse i vores system. Hvis du tidligere har tilmeldt dig med en anden e-mailadresse, skal du [Log ud](/application/logout) og prøve at logge ind med den pågældende e-mailadresse ved at bruge linket \"Glemt din personlige pinkode?\", hvis det er nødvendigt. Hvis du har brug for hjælp, kan du kontakte os via e-mail eller chat på <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
-      "note" : "error message for update application with duplicate ssn"
-    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Kunne ikke hente job.",
       "note" : "error message when unable to fetch job information"
@@ -2387,6 +2391,18 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Du skal være under 100 år gammel.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Kontrollér alle nødvendige felter i de foregående trin, før du fortsættet.",
+      "note" : "Error message to check required fields on the self Identification"
+    },
+    "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
+      "value" : "Hvad er dit pronomen?",
+      "note" : "Label for equal opportunity pronoun checkbox"
+    },
+    "BB-SelfId-disability-form-disability-checkbox-label-text" : {
+      "value" : "Kryds venligst et af felterne af nedenfor",
+      "note" : "Label for disability checkbox"
     }
   }
 }
