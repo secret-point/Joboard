@@ -828,6 +828,10 @@
       "value" : "Les signatures électroniques ne correspondent pas. Veuillez utiliser le même texte pour chaque signature électronique.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Veuillez saisir un nom complet valide en respectant le format suivant : Prénom Nom de famille",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Suivante",
       "note" : "Text for the non fcra form page next button text"
@@ -1811,6 +1815,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "Il manque l’accusé de réception BGC de la loi californienne sur la divulgation dans la charge utile.",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Le numéro d’identité nationale que vous avez saisi est déjà associé à une autre adresse courriel dans notre système. Si vous vous êtes déjà inscrit(e) avec une autre adresse courriel, veuillez [vous déconnecter] (/demande/déconnexion) et essayer de vous connecter avec le même courriel, en utilisant le lien « Vous avez oublié votre code PIN personnel? », si nécessaire. Si vous avez besoin d’aide, veuillez nous contacter par courriel ou par clavardage à <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Impossible de chercher un emploi.",

@@ -1816,6 +1816,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged חסר בתוכן.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "מספר הזהות שהזנת כבר משויך לכתובת דואר אלקטרוני אחרת במערכת שלנו. אם נרשמת בעבר עם כתובת דואר אלקטרוני אחרת, יש [להתנתק] (/application/logout) ולנסות להיכנס באמצעות דואר אלקטרוני זה, ובמידת הצורך להשתמש בקישור \"שכחת את הקוד האישי שלך?\" אם יש לך צורך בעזרה, יש ליצור איתנו קשר באמצעות דואר אלקטרוני או שיחת צ'אט בכתובת <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "לא ניתן להביא את העבודה.",
       "note" : "error message when unable to fetch job information"
@@ -2307,6 +2311,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "יש לסמן את התיבה כדי להמשיך.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "יש לבחור כדי להמשיך.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "ארצות הברית - מספר ביטוח לאומי",

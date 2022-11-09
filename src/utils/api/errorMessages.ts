@@ -114,7 +114,7 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   },
   [UPDATE_APPLICATION_ERROR_CODE.MAX_SSN_EDITS]: {
     translationKey: "BB-update-application-error-message-max-ssn-edits",
-    value: 'Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please [Log Out](/logout) and try logging in with that email, using the "Forgot your personal pin?" link if needed. If you need help, please contact us via email or chat at <a href="https://hiring.amazon.com/contact-us#/">www.amazon.com/applicationhelp</a>.'
+    value: "Update to application failed because you have reached the maximum number of changes to your National ID. If you have previously signed up with a different email address, please [Log Out](/logout) and try logging in with that email, using the \"Forgot your personal pin?\" link if needed. If you need help, please contact us via email or chat at <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>."
   },
   [UPDATE_APPLICATION_ERROR_CODE.INVALID_SSN]: {
     translationKey: "BB-update-application-error-message-invalid-ssn",
@@ -218,7 +218,7 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   },
   [UPDATE_APPLICATION_ERROR_CODE.DUPLICATE_SSN]: {
     translationKey: "BB-update-application-error-message-duplication-ssn",
-    value: 'The National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the "Forgot yourpersonal pin ?" link if needed. If you need help, please contact us via email or chat at <a href="https://hiring.amazon.com/contact-us#/">www.amazon.com/applicationhelp</a>."'
+    value: "The National Identity Number you entered is already associated with another email address in our system. If you have previously signed up with a different email address, please [Log Out](/application/logout) and try logging in with that email, using the \"Forgot yourpersonal pin ?\" link if needed. If you need help, please contact us via email or chat at <a href=`https://hiring.amazon.com/contact-us#/`>www.amazon.com/applicationhelp</a>."
   },
   [UPDATE_APPLICATION_ERROR_CODE.CAN_NOT_CREATE_APPLICATION]: {
     translationKey: "BB-update-application-error-message-can-not-create-application",

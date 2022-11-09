@@ -2308,6 +2308,10 @@
       "value" : "続行するにはチェックボックスをオンにしてください。",
       "note" : "Text for the detailed radio button error."
     },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "選択して次に進む。",
+      "note" : "Text for the detailed radio button error for Mexico."
+    },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "米国-社会保障番号",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"

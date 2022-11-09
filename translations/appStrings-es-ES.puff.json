@@ -92,6 +92,10 @@
       "value" : "Política de datos de usuario",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Acepto que toda la información recopilada pueda comunicarse o transferirse de conformidad con la Ley Federal sobre Protección de Datos Personales en Posesión de Entidades Privadas y sus reglamentos, directrices y disposiciones pertinentes de otra naturaleza en materia de protección de datos, además de en las disposiciones pertinentes del Aviso de privacidad relativas a trabajadores y postulantes.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon se compromete a crear un lugar de trabajo diverso e inclusivo. Amazon es una empresa que ofrece igualdad de oportunidades y no discrimina por motivos de raza, nacionalidad, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición de protección legal. Para las personas con discapacidades que quieran solicitar una adaptación, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"

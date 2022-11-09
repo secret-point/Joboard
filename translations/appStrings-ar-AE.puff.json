@@ -88,6 +88,10 @@
       "value" : "سياسة بيانات المستخدم",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "أدرك أن جميع المعلومات التي تم جمعها قد يتم نقلها وفقًا للقانون الاتحادي بشأن حماية البيانات الشخصية في حوزة الأطراف الخاصة ولوائحه وإرشاداته العامة وأحكامه الأخرى المعمول بها بشأن خصوصية البيانات، وكذلك وفقًا لإشعار الخصوصية الخاص بالشركة للموظفين و/أو المرشحين.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "تلتزم أمازون بتوفير مكان عمل متنوع وشامل. أمازون هي جهة توفّر فرص عمل متكافئة، وليس لديها تمييز على أساس العرق، أو الأصل الوطني، أو الجنس، أو الهوية الجنسية، أو الميل الجنسي، أو حالة المحاربين القدامى الذين يتمتعون بحماية، أو الإعاقة، أو العمر، أو أي حالة أخرى تتمتع بحماية قانونية. بالنسبة للأفراد ذوي الإعاقة الذين يرغبون في طلب سكن، يرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"

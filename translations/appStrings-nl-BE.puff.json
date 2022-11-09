@@ -828,6 +828,10 @@
       "value" : "Elektronische handtekeningen komen niet overeen. Gebruik voor elke elektronische handtekening dezelfde tekst.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Voer een geldige volledige naam in met de volgende notatie: Voornaam Achternaam",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Volgende",
       "note" : "Text for the non fcra form page next button text"
