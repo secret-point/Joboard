@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dspAppTest should match snapshot 1`] = `
+<Col
+  minHeight="40vh"
+  padding="S300"
+>
+  <Connect(AppLoader) />
+  <Connect(CounterMessageBanner) />
+  <BannerMessage
+    bannerMessage={
+      Object {
+        "isDismissible": true,
+        "title": "TEST_TITLE",
+        "type": "informational",
+        "visible": true,
+      }
+    }
+  />
+  <HashRouter>
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/pre-consent"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/consent"
+      >
+        <Connect(Consent) />
+      </Route>
+      <Route
+        exact={true}
+        path="/job-opportunities"
+      >
+        <Connect(JobOpportunity) />
+      </Route>
+      <Route
+        exact={true}
+        path="/job-opportunities/job-confirmation"
+      >
+        <Connect(JobConfirmation) />
+      </Route>
+      <Route
+        exact={true}
+        path="/job-opportunities/job-description"
+      >
+        <Connect(JobDescription) />
+      </Route>
+      <Route
+        exact={true}
+        path="/contingent-offer"
+      >
+        <Connect(ContingentOffer) />
+      </Route>
+      <Route
+        exact={true}
+        path="/bgc"
+      >
+        <Connect(BackgroundCheck) />
+      </Route>
+      <Route
+        exact={true}
+        path="/bgc/fcra"
+      >
+        <Connect(FcraDisclosure) />
+      </Route>
+      <Route
+        exact={true}
+        path="/resume-application"
+      >
+        <Connect(ResumeApplication) />
+      </Route>
+      <Route
+        exact={true}
+        path="/nhe"
+      >
+        <Connect(Nhe) />
+      </Route>
+      <Route
+        exact={true}
+        path="/self-identification"
+      >
+        <Connect(SelfIdentification) />
+      </Route>
+      <Route
+        exact={true}
+        path="/already-applied"
+      >
+        <Connect(AlreadyApplied) />
+      </Route>
+      <Route
+        exact={true}
+        path="/review-submit"
+      >
+        <Connect(ReviewSubmit) />
+      </Route>
+      <Route
+        exact={true}
+        path="/thank-you"
+      >
+        <Connect(ThankYou) />
+      </Route>
+      <Route
+        exact={true}
+        path="/wotc"
+      >
+        <Connect(Wotc) />
+      </Route>
+      <Route
+        exact={true}
+        path="/wotc-complete"
+      >
+        <Connect(WotcComplete) />
+      </Route>
+      <Route
+        exact={true}
+        path="/session-timeout"
+      >
+        <Connect(SessionTimeout) />
+      </Route>
+      <Route
+        exact={true}
+        path="/assessment-consent"
+      >
+        <Connect(AssessmentConsent) />
+      </Route>
+      <Route
+        exact={true}
+        path="/assessment-not-eligible"
+      >
+        <Connect(AssessmentNotEligible) />
+      </Route>
+      <Route
+        exact={true}
+        path="/assessment-finished"
+      >
+        <Connect(AssessmentFinished) />
+      </Route>
+      <Route
+        exact={true}
+        path="/candidate-withdraws"
+      >
+        <Connect(CandidateWithdraws) />
+      </Route>
+      <Route
+        exact={true}
+        path="/cali-disclosure"
+      >
+        <Connect(CaliDisclosure) />
+      </Route>
+      <Route
+        exact={true}
+        path="/amazon-rejects"
+      >
+        <Connect(AmazonRejects) />
+      </Route>
+      <Route
+        exact={true}
+        path="/workflow-failed"
+      >
+        <Connect(WorkflowFailed) />
+      </Route>
+      <Route
+        exact={true}
+        path="/amazon-withdraws"
+      >
+        <Connect(AmazonWithdraws) />
+      </Route>
+      <Route
+        exact={true}
+        path="/no-available-time-slots"
+      >
+        <Connect(NoAvailableTimeSlots) />
+      </Route>
+      <Route
+        exact={true}
+        path="/can-not-offer-job"
+      >
+        <Connect(CanNotOfferJob) />
+      </Route>
+      <Route
+        exact={true}
+        path="/supplementary-success"
+      >
+        <Connect(SupplementarySuccess) />
+      </Route>
+      <Route
+        exact={true}
+        path="/rehire-eligibility-status"
+      >
+        <Connect(RehireEligibilityStatus) />
+      </Route>
+      <Route
+        exact={true}
+        path="/no-available-shift"
+      >
+        <Connect(NoAvailableShift) />
+      </Route>
+      <Route
+        exact={true}
+        path="/applicationId-null"
+      >
+        <Connect(ApplicationIdNull) />
+      </Route>
+    </Switch>
+  </HashRouter>
+  <BackToTopButton
+    altText="Back to top"
+    bottom="32px"
+    scrollOffset={250}
+    trailing="24px"
+  />
+</Col>
+`;
