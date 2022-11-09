@@ -18,7 +18,7 @@ import {
   SelfIdGenderRadioItemsMap,
   SelfIdPronounsItemsMap
 } from "../../../utils/constants/common";
-import { getCountryCode, handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
+import { getCountryCode, getDetailedRadioErrorMap, handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
 import DetailedRadioError from "../DetailedRadioError";
@@ -50,6 +50,8 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
   const [isEthnicityMissing, setIsEthnicityMissing] = useState(false);
   const [isPronounMissing, setIsPronounMissing] = useState(false);
   const pageName = METRIC_NAME.EQUAL_OPPORTUNITY_FORM;
+  const countryCode = getCountryCode();
+  const { errorMessage, errorMessageTranslationKey } = getDetailedRadioErrorMap(countryCode);
 
   const handleClickNext = () => {
     boundResetBannerMessage();
@@ -115,7 +117,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         </FormWrapper>
 
         {
-          isGenderMissing && <DetailedRadioError/>
+          isGenderMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
         }
 
         {
@@ -142,7 +144,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         }
 
         {
-          SelfIdPronounsItemList?.length > 0 && isPronounMissing && <DetailedRadioError/>
+          SelfIdPronounsItemList?.length > 0 && isPronounMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
         }
 
         <FormWrapper columnGap={10}>
@@ -166,7 +168,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         </FormWrapper>
       </Col>
       {
-        isEthnicityMissing && <DetailedRadioError/>
+        isEthnicityMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
       }
       <Col padding={{ top: "S300" }}>
         <Button

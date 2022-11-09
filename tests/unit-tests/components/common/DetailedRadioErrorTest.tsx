@@ -8,4 +8,10 @@ describe("DetailedRadioError", () => {
     
         expect(shallowWrapper).toMatchSnapshot();
     });
+
+    it("should match snapshot with errorMessage", () => {
+        const shallowWrapper = shallow(<DetailedRadioError errorMessageTranslationKey="error-message-key" errorMessage="error message"/>);
+
+        expect(shallowWrapper).toMatchSnapshot();
+    });
 });

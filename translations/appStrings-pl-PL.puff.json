@@ -820,6 +820,10 @@
       "value" : "Podpisy elektroniczne nie są zgodne. Użyj tego samego tekstu do każdego podpisu elektronicznego.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Wpisz poprawne imię i nazwisko w następującym formacie: Imię Nazwisko",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Dalej",
       "note" : "Text for the non fcra form page next button text"

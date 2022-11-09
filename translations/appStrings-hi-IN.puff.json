@@ -92,6 +92,10 @@
       "value" : "यूज़र डेटा पॉलिसी",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "मुझे पता है कि एकत्रित की गई सभी जानकारी निजी पक्षों के कब्जे में व्यक्तिगत डेटा की सुरक्षा पर संघीय कानून और डेटा गोपनीयता पर इसके नियमों, दिशानिर्देशों और अन्य लागू प्रावधानों के साथ-साथ कर्मचारियों के लिए कंपनी की गोपनीयता सूचना के संदर्भ में स्थानांतरित की जा सकती है। और/या उम्मीदवार.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon एक विविध और समावेशी कार्यस्थल के लिए प्रतिबद्ध है. Amazon एक समान अवसर नियोक्ता है और जाती, राष्ट्रीय मूल, लिंग, लिंग पहचान, सेक्शूअल ओरिएंटेशन, संरक्षित वेटरन स्थिति, विकलांगता, उम्र या अन्य कानूनी रूप से संरक्षित स्थिति के आधार पर भेदभाव नहीं करता है. विकलांग व्यक्तियों के लिए जो आवास का अनुरोध करना चाहते हैं, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> पर जाएं",
       "note" : "Text for the flyout user data policy paragraph 1 text"

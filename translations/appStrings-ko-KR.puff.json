@@ -1816,6 +1816,10 @@
       "value" : "페이로드에서 BGC 캘리포니아 공개 승인이 누락되었습니다.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "입력하신 국가 신분증 번호가 이미 당사 시스템의 다른 이메일 주소와 연결되어 있습니다. 이전에 다른 이메일 주소로 가입한 적이 있는 경우 [로그아웃](/application/logout)하고 필요한 경우 “개인 PIN을 잊으셨습니까?” 링크를 사용하여 해당 이메일로 로그인해 보세요. 도움이 필요하면 이메일을 보내거나 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>에서 채팅을 통해 고객 서비스 문의를 이용하세요.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "채용 정보를 가져올 수 없습니다.",
       "note" : "error message when unable to fetch job information"

@@ -931,3 +931,8 @@ export interface localeToLanguageItem {
 export interface ValidateAmazonLoginIDRequest {
     loginId: string;
 }
+
+export interface DetailedRadioErrorType {
+    errorMessage?: string,
+    errorMessageTranslationKey?: string
+}

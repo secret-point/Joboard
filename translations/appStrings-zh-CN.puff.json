@@ -356,6 +356,10 @@
       "value" : "背景调查、体检和药检授权书",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "本人特此授权<b> Servicios Comerciales Amazon Mexico, S.de R.L.de C.V.</b>（以下简称“公司”）出于本人作为候选人的招聘和甄选流程的需要，根据本人申请的职位和工作背景获取必要的、有关本人的教育、医疗（包括非法药物使用和/或酒精测试情况）、家庭、信用、犯罪情况的信息（以下简称“背景调查”），无论是公司自行还是通过以公司名义并根据公司指示行事的第三方公司或任何其他个人或实体获取，以便公司能够评估本人的经验、知识、健康状况、才能和技能，从而确保本人能够安全地履行本人所申请的职位所要求的职责。根据上述授权，本人理解并接受，本人或第三方在本人的招聘和甄选流程中提供的信息的验证结果是否令公司满意将对聘用意向和/或招聘流程（视具体情况而定）造成影响，并且本人特此授权此类第三方，包括前雇主，提供所需的信息和/或文件。 同样，本人在此接受并确认，此背景调查可以在本人授权后的任何时候进行，如果被录用，也可以在本人与公司的劳动关系存续期间进行。",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "其他背景信息",
       "note" : "Text for the Additional bgc information step card title"

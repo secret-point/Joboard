@@ -820,6 +820,10 @@
       "value" : "As assinaturas eletrônicas não coincidem. Use o mesmo texto para cada assinatura eletrônica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Insira um nome completo válido no seguinte formato: Primeiro Último",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Próximo",
       "note" : "Text for the non fcra form page next button text"

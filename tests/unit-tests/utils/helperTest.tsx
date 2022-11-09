@@ -33,6 +33,7 @@ import {
   formatFlexibleTrainingDate,
   formatMonthlyBasePayHelper,
   getCountryCodeByCountryName,
+  getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
   getQueryFromSearchAndHash,
@@ -767,7 +768,7 @@ describe("checkIfLegacy", () => {
 
 describe("renderScheduleFullAddress", () => {
   let schedule = { ...TEST_SCHEDULE };
-  
+
   beforeEach(()=>{
     schedule = { ...TEST_SCHEDULE }
   })
@@ -826,7 +827,17 @@ describe("parseObjectToQueryString", () => {
   it("should return empty string", () => {
 
     const emptyObj = {};
-    
+
     expect(parseObjectToQueryString(emptyObj)).toEqual("")
   })
 })
+
+test("getDetailedRadioErrorMap", () => {
+  expect(getDetailedRadioErrorMap(CountryCode.US)).toEqual({});
+  expect(getDetailedRadioErrorMap("" as CountryCode)).toEqual({});
+  expect(getDetailedRadioErrorMap(CountryCode.MX)).toEqual({
+    errorMessage: "Make a selection to continue.",
+    errorMessageTranslationKey: "BB-Detailed-button-error-text-message-mx"
+  })
+})
+

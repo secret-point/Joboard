@@ -1812,6 +1812,10 @@
       "value" : "A informação hasBGCCaliforniaDisclosureAcknowledged está em falta na carga útil.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "O número de identificação nacional que inseriu já se encontra associado a outro endereço de e-mail no nosso sistema. Se anteriormente se registou com um endereço de e-mail diferente, [termine a sessão] (/application/logout) e tente iniciar sessão com esse e-mail, através do link \"Esqueceu-se do seu PIN pessoal?\", se necessário. Se precisar de ajuda, contacte-nos por e-mail ou chat, através de <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Não foi possível obter o emprego.",
       "note" : "error message when unable to fetch job information"

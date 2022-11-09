@@ -32,7 +32,6 @@ import { countryConfig, countryConfigType } from "../countryExpansionConfig";
 import { initLogger } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
-import { initSelfIdentificationState } from "../reducers/selfIdentification.reducer";
 import store, { history } from "../store/store";
 import { ApiError } from "./api/types";
 import {
@@ -86,7 +85,7 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
-    DetailedRadioButtonItem,
+    DetailedRadioButtonItem, DetailedRadioErrorType,
     EnvConfig,
     ErrorMessage,
     FeatureFlagList,
@@ -1733,4 +1732,16 @@ export const initSelfIdStepConfig = (config: SelfIdentificationConfig, countryCo
     }
 
     return initConfig;
+}
+
+export const getDetailedRadioErrorMap = (countryCode: CountryCode): DetailedRadioErrorType => {
+    switch (countryCode) {
+        case CountryCode.MX:
+            return {
+                errorMessage: "Make a selection to continue.",
+                errorMessageTranslationKey: "BB-Detailed-button-error-text-message-mx"
+            }
+
+        default: return {};
+    }
 }

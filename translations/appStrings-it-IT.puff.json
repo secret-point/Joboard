@@ -364,6 +364,10 @@
       "value" : "Autorizzazioni per il controllo dei precedenti, il controllo medico e il test antidroga",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Autorizzo <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (di seguito la “Società”) ad ottenere informazioni riguardanti la mia istruzione, la mia salute (compresi i test per l’assunzione di alcol e/o sostanze illegali), la mia famiglia, il credito e i precedenti penali nel caso in cui le stesse siano necessarie in conformità alla posizione per la quale ho fatto domanda e al mio background lavorativo (di seguito il “Controllo dei precedenti”), in virtù del processo di reclutamento e selezione in cui sono candidato, da solo o tramite società terze o qualsiasi altra persona fisica o giuridica che agisca in nome e secondo le istruzioni della Società, in modo che possa essere in grado di valutare la mia esperienza, conoscenza, salute, attitudini e competenze per garantire di poter sviluppare in sicurezza le funzioni richieste per la posizione per la quale mi candido. In virtù di quanto sopra, comprendo e accetto che qualsiasi offerta di lavoro e/o assunzione, se del caso, è soggetta alla verifica delle informazioni fornite da me o da terzi nel corso del mio processo di reclutamento e selezione con soddisfazione della Società, e autorizzo tali terze parti, compresi ex datori di lavoro, a fornire le informazioni e/o i documenti richiesti.  Allo stesso modo, accetto e riconosco che il suddetto controllo dei precedenti può essere eseguito in qualsiasi momento dopo aver concesso la mia autorizzazione e, in caso di assunzione, durante il mio rapporto di lavoro con la Società.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Informazioni aggiuntive sui precedenti",
       "note" : "Text for the Additional bgc information step card title"

@@ -14,3 +14,18 @@ exports[`DetailedRadioError should match snapshot 1`] = `
   />
 </Row>
 `;
+
+exports[`DetailedRadioError should match snapshot with errorMessage 1`] = `
+<Row
+  backgroundColor="#fef0ef"
+  padding="S300"
+>
+  <StatusIndicator
+    colorScheme="default"
+    iconAriaHidden={true}
+    messageText="error message"
+    size="small"
+    status="negative"
+  />
+</Row>
+`;

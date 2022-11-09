@@ -92,6 +92,10 @@
       "value" : "ユーザーデータポリシー",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "収集されたすべての情報は、私的当事者が所有する個人データの保護に関する連邦法、データプライバシーに関する規制、ガイドライン、その他の該当する規定、および会社の従業員や、または候補者向けプライバシー通知の観点から転送される可能性があることを認識しています。",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazonは、多様で包括的な職場を目指しています。Amazonは機会均等雇用者であり、人種、国籍、性別、性同一性、性的指向、保護された退役軍人の地位、障がい、年齢、またはその他の法的に保護されている地位に基づく差別を行っていません。宿泊施設をリクエストしたい障がい者の方は、<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>にアクセスしてください",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -359,6 +363,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "身元調査、健康診断、薬物検査の承認",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "私は、<b>Servicios Comerciales Amazon Mexico, S.de R.L.De C.V</b>( 以下「同社」) が、私の学歴、医療( 違法薬物および/またはアルコール検査を含む) 、家族、信用、犯罪歴に関して、私が応募した職種および職歴に応じて必要な場合は、私自身が候補者となる採用および選考プロセスに基づいて、同社自体で、または第三者の会社、または同社の指示に従って行動するその他の個人または団体を通じて、私の経験、知識、健康状態、適性、スキルを評価して、応募する職種に必要な属性を安全な形で身に付けることができるようにするため、それらの情報を取得すること（以下「身元調査」）を許可します。　      　　　　以上のことから、私は、雇用および/または雇用の申し出があった場合、同社が満足できるように、採用および選考プロセスの過程で、私または第三者から提供された情報の検証が必要となることを理解、また承諾し、よって私は、元雇用者を含む第三者が必要な情報および/または書類を提供することをここに承認します。 同様に、私は、この身元調査は、私がその調査の許可を与えた後、また同社によって採用された場合は、同社との労使関係中にいつでも実施される可能性があることを受け入れ、認めます。",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "その他の経歴情報",

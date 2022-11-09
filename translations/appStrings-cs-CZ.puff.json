@@ -92,6 +92,10 @@
       "value" : "Zásady ochrany uživatelských údajů",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Jsem si vědom toho, že veškeré získané informace mohou být převáděny v souladu s Federálním zákonem o ochraně osobních údajů v držení soukromých stran a jeho předpisy, směrnicemi a dalšími platnými ustanovení o ochraně osobních údajů, jakož i ve smyslu Oznámení o ochraně osobních údajů společnosti pro zaměstnance a/nebo uchazeče.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Společnost Amazon se zavázala k rozmanitému a inkluzivnímu pracovnímu prostředí. Společnost Amazon je zaměstnavatelem s rovnými příležitostmi a nediskriminuje na základě rasy, národnosti, pohlaví, genderové identity, sexuální orientace, statusu chráněného veterána, zdravotního postižení, věku nebo jiného zákonem chráněného statusu. Osoby se zdravotním postižením, které chtějí požádat o přizpůsobení, mohou navštívit stránky <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us </a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -359,6 +363,10 @@
     "BB-BGC-page-authorizations-for-background-check-step-card-title" : {
       "value" : "Oprávnění k prověrce, lékařské prohlídce a testu na drogy",
       "note" : "Text for the Authorizations for background check step card title"
+    },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Tímto zmocňuji <b>Servicios Comerciales Amazon Mexico, S. de R.L. de C.V.</b> (dále jen „Společnost“) k získání informací o mém vzdělání, zdravotním stavu (včetně testů na přítomnost nelegálních drog a/nebo alkoholu), rodinném stavu, úvěrové způsobilosti, trestní minulosti, pokud jsou tyto informace nezbytné vzhledem k pozici, o kterou se ucházím, a pracovní minulosti (dále jen „prověrka“), a to vzhledem k náboru a výběrovému řízení, v němž se o pozici ucházím. Společnost tyto informace může získat buď sama nebo prostřednictvím společností třetích stran či jiných jednotlivců nebo subjektů jednajících jménem společnosti a v souladu s jejími pokyny, aby mohla posoudit mé zkušenosti, znalosti, zdravotní stav, dispozice a dovednosti zaručující, že mohu bezpečně vykonávat úkoly požadované na pozici, o kterou se ucházím. Na základě výše uvedeného beru na vědomí a souhlasím s tím, že jakákoli nabídka zaměstnání a/nebo přijetí do zaměstnání, pokud se tak stane, je podmíněna ověřením informací poskytnutých mnou nebo třetími stranami v průběhu mého náboru a výběrového řízení ke spokojenosti společnosti, a tímto zmocňuji tyto třetí strany, včetně bývalých zaměstnavatelů, k poskytnutí požadovaných informací a/nebo dokumentů.  Stejně tak tímto akceptuji a beru na vědomí, že tato prověrka může být provedena kdykoli poté, co jsem zmocnění udělil, a v případě přijetí do zaměstnání i v průběhu mého pracovního poměru u společnosti.",
+      "note" : "Content for the Authorizations for background check"
     },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Doplňující informace k základním údajům",
@@ -819,6 +827,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "Elektronické podpisy se neshodují. Pro každý elektronický podpis použijte stejný text.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Zadejte prosím platné celé jméno v následujícím formátu: Jméno Příjmení",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Další",
