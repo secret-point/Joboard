@@ -1,8 +1,34 @@
-import { AdditionalBGCFormConfigPart1, ConvictionDetailConfig, PreviousLegalNameFormConfig, PreviousWorkedAtAmazonBGCFormConfig } from "../../../../src/utils/constants/common";
+import {
+  AdditionalBGCFormConfigPart1,
+  ConvictionDetailConfig,
+  PreviousLegalNameFormConfig,
+  PreviousWorkedAtAmazonBGCFormConfig,
+  MXIdNumberBgcFormConfig
+} from "../../../../src/utils/constants/common";
 
 describe('common', () => {
 
   describe('regex', () => {
+    describe('MX CURP ID number', () => {
+      const regex = new RegExp(MXIdNumberBgcFormConfig.regex as string);
+
+      it('should return expected match result', () => {
+        // at least one letter
+        expect(regex.test('123456789012345678')).toBe(false);
+
+        // at least one number
+        expect(regex.test('ABCDEFGHIJKLMNOPQR')).toBe(false);
+
+        // only accept uppercase
+        expect(regex.test('ABCDEFGHIJKLMNOPQr')).toBe(false);
+
+        // match exact 18 digits
+        expect(regex.test('A1CD3FGHIJKLMNOPQR1')).toBe(false);
+        expect(regex.test('A1CD3FGHIJKLMNOPQ')).toBe(false);
+        expect(regex.test('A1CD3FGHIJKLMNOPQR')).toBe(true);
+      });
+    })
+
     describe('AdditionalBGCFormConfigPart1', () => {
 
       describe('Address Line 1', () => {
