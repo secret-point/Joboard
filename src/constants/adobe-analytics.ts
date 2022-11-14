@@ -43,17 +43,17 @@ export const PAGE_NAME: any = {
   "assessment-consent": "BB - pre-assessment",
   assessment: "BB - assessment",
   "assessment-finished": "BB - assessment finished",
-  "job-opportunities": "view jobs",
-  "job-confirmation": "selected shift",
+  "job-opportunities": "Shift Select",
+  "job-confirmation": "Shift Preview",
   "job-description": "job description",
   "job-roles": "job roles",
-  "contingent-offer": "BB-contingent offer",
-  bgc: "background check",
-  fcra: "BGC: FCRA disclosure",
-  nhe: "pre-hire appointment",
-  "review-submit": "review and submit",
-  "thank-you": "thank you / prehire activities",
-  "self-identification": "voluntary self-identification",
+  "contingent-offer": "Accept Offer",
+  bgc: "Fair Credit Report Act Disclosure",
+  fcra: "Fair Credit Report Act Disclosure, Accept",
+  nhe: "Schedule pre-hire appointment",
+  "review-submit": "Review and Submit",
+  "thank-you": "App Complete - Thank you for applying to Amazon",
+  "self-identification": "Voluntary Self-Identification",
   wotc: "BB - WOTC",
   "supplementary-success": "supplementary forms thank you",
 
@@ -68,12 +68,12 @@ export const PAGE_NAME: any = {
   "no-available-shift": "no-shifts-available",
   "session-timeout": "session-timeout",
 
-  "equal-opportunity-form": "self ID: equal opportunity",
+  "equal-opportunity-form": "Voluntary Self-Identification - Veteran Status",
   "veteran-status-form": "self ID: veteran status",
-  "disability-form": "self ID: disability disclosure",
+  "disability-form": "Voluntary Self-Identification - Disability Disclosure",
 
-  "additional-bgc-info": "BGC: additional bgc info",
-  "non-fcra": "BGC: non-fcra",
+  "additional-bgc-info": "Additional Background Information",
+  "non-fcra": "Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check",
   "cali-disclosure": "BGC: california disclosure",
   "job-preferences-thank-you": "shift preference submitted",
   "job-preferences": "shift preference",
@@ -86,7 +86,7 @@ export const PAGE_NAME: any = {
   "update-shift": "update-shift",
   "view-shift": "view-shift",
 
-  "no-nhe-appointments": "no-available-time-slots"
+  "no-nhe-appointments": "NHE Unavailable"
 };
 
 export const PAGE_TITLE: Set<string> = new Set(
