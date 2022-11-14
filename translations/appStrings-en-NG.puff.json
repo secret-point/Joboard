@@ -476,10 +476,6 @@
       "value" : "Please enter a valid 9-digit social security number without dashes",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Please enter a valid 18-digit CURP ID without dashes",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Date of Birth",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -2311,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Please tick the box to proceed.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Make a selection to continue.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "United States – Social Security Number",

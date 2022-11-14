@@ -476,10 +476,6 @@
       "value" : "ഡാഷ് ഇല്ലാതെ സാധുവായ 9 അക്ക സാമൂഹിക സുരക്ഷാ നമ്പർ നൽകുക",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "ദയവായി ഡാഷ് ഇല്ലാതെ സാധുവായ 18 അക്കങ്ങളുള്ള CURP ID നൽകുക",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "ജനന തീയതി",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1816,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged പേലോഡിൽ കാണുന്നില്ല.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "നിങ്ങൾ നൽകിയ ദേശീയ ഐഡന്റിറ്റി നമ്പർ ഞങ്ങളുടെ സിസ്റ്റത്തിലെ മറ്റൊരു ഇമെയിൽ വിലാസവുമായി ഇതിനകം ബന്ധിപ്പിച്ചിട്ടുണ്ട്. നിങ്ങൾ മുമ്പ് മറ്റൊരു ഇമെയിൽ വിലാസത്തിൽ സൈനപ്പ് ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, ദയവായി [ലോഗ് ഔട്ട് ചെയ്ത്](/application/logout) ആ ഇമെയിൽ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യാൻ ശ്രമിക്കുക, ആവശ്യമെങ്കിൽ \"നിങ്ങളുടെ വ്യക്തിഗത പിൻ മറന്നോ?\" എന്ന ലിങ്ക് ഉപയോഗിക്കുക. നിങ്ങൾക്ക് സഹായം ആവശ്യമുണ്ടെങ്കിൽ, ദയവായി ഇമെയിൽ മുഖേന ഞങ്ങളെ ബന്ധപ്പെടുക അല്ലെങ്കിൽ <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> എന്നതിൽ ചാറ്റ് ചെയ്യുക.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "ജോലി ലഭ്യമാക്കാനാവുന്നില്ല.",
       "note" : "error message when unable to fetch job information"
@@ -2307,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "ദയവായി തുടരുന്നതിന് ബോക്‌സിൽ ശരി അടയാളപ്പെടുത്തുക.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "തുടരാൻ ഒരു തിരഞ്ഞെടുപ്പ് നടത്തുക.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "യുണൈറ്റഡ് സ്റ്റേറ്റ്സ് - സോഷ്യൽ സെക്യൂരിറ്റി നമ്പർ",

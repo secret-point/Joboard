@@ -72,6 +72,10 @@
       "value" : "Al solicitar, confirmas que:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Autorizo a Amazon a ponerse en contacto conmigo por teléfono, mensaje de texto o WhatsApp para proporcionar información sobre mi solicitud, selección y proceso de contratación.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Al presentar la solicitud, lees y aceptas la",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de datos de usuario",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Tengo conocimiento de que toda la información recopilada podrá ser transferida de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de Particulares y su reglamento, lineamientos y demás disposiciones aplicables en materia de privacidad de datos, así como en términos del Aviso de Privacidad de la Empresa para Empleados o Candidatos.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon está comprometida con un lugar de trabajo diverso e inclusivo. Amazon ofrece empleos con igualdad de oportunidades y no discrimina por motivos de raza, nacionalidad, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición protegida por la ley. En el caso de las personas con discapacidad que deseen solicitar una adaptación, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -356,6 +364,10 @@
       "value" : "Autorizaciones para la verificación de antecedentes, el chequeo médico y la prueba de drogas",
       "note" : "Text for the Authorizations for background check step card title"
     },
+    "BB-MX-BGC-page-authorizations-for-background-check-content" : {
+      "value" : "Por el presente autorizo a <b>Servicios Comerciales Amazon México, S. de R.L. de C.V.</b> (en adelante la “Empresa”) para obtener información relacionada con mis antecedentes educativos, médicos (incluidas las pruebas de drogas ilegales o alcohol), familiares, crediticios, penales en caso de que los mismos sean necesarios de acuerdo con el puesto que he solicitado y laboral (en adelante la “Comprobación de antecedentes”), en virtud del proceso de reclutamiento y selección en el que soy candidato, ya sea por sí misma o a través de terceras empresas o cualquier otra persona física o jurídica que actúe en nombre y por encargo de la Empresa, para que esta pueda evaluar mi experiencia, conocimientos, salud, aptitudes y habilidades para garantizar que puedo desarrollar con seguridad las funciones requeridas para el puesto al que postulo. En virtud de lo anterior, entiendo y acepto que cualquier oferta de empleo o contratación si es el caso, está sujeta a la verificación de la información proporcionada por mí o por terceros en el curso de mi proceso de reclutamiento y selección a satisfacción de la Empresa y por la presente autorizo a dichos terceros, incluidos los antiguos empleadores, a proporcionar la información o documentos requeridos.  Asimismo, acepto y reconozco que esta verificación de antecedentes puede ser realizada en cualquier momento después de otorgar mi autorización y, en caso de ser contratado, durante mi relación laboral con la Empresa.",
+      "note" : "Content for the Authorizations for background check"
+    },
     "BB-BGC-page-additional-bgc-step-card-title" : {
       "value" : "Información adicional de antecedentes",
       "note" : "Text for the Additional bgc information step card title"
@@ -462,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ingresa un número de seguridad social válido de 9 dígitos sin guion",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Ingresa un ID de CURP válido de 18 dígitos sin guiones",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -815,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "Las eSignature no coinciden. Usa el mismo texto para cada eSignature.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Ingresa un nombre completo válido siguiendo el formato: nombre apellido",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Siguiente",
@@ -1800,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged falta en la carga útil.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "El Número nacional de identidad que ingresaste ya está asociado a otra dirección de correo electrónico en nuestro sistema. Si te has registrado previamente con una dirección de correo electrónico diferente, [Log Out](/application/logout) e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu PIN personal?” si es necesario. Si necesitas ayuda, contáctanos por correo electrónico o chat en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "No se puede recuperar el trabajo.",
       "note" : "error message when unable to fetch job information"
@@ -2291,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Marca la casilla para continuar.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Haz una selección para continuar.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Estados Unidos - Número de Seguro Social",

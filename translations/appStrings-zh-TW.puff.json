@@ -92,6 +92,10 @@
       "value" : "用戶資料政策",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "我知道，索取的所有資訊都可能根據《關於保護私人擁有之個人資料的聯邦法》(Federal Law on the Protection of Personal Data in the Possession of Private Parties) 及其條例、準則和其他適用的資料隱私規定，以及公司對員工和/或應聘者的隱私聲明轉移。",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon 致力於建立多元包容的工作場所。Amazon 是倡導機會平等的雇主，不會基於種族、國籍、性別、性別認同、性取向、受保護的退伍軍人身份、身障、年齡或其他受法律保護的身份進行歧視。對於想要求住宿的身障人士，請造訪 <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -470,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "請輸入不含破折號的有效 9 位數社會安全號碼",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "請輸入有效的 18 位數 CURP ID，不含破折號",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1812,6 +1812,10 @@
       "value" : "有效載荷中缺少加利福尼亞州 BGC 披露已確認資訊。",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "您輸入的國民身分號碼已與我們系統中的另一個電子郵件地址建立關聯。如果您之前使用過其他電子郵件地址註冊，請 [登出](/application/logout)，然後嘗試使用該電子郵件登入，如果需要的話，請使用「忘記您的個人 PIN 碼？」連結。如果需要協助，請透過電子郵件或者 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 上的聊天功能聯絡我們。",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "無法擷取工作。",
       "note" : "error message when unable to fetch job information"
@@ -2303,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "請核取方塊以繼續。",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "進行選擇以繼續。",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "美國 - 社會安全號碼",

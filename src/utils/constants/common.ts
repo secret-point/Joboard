@@ -335,7 +335,7 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
     regex: '^(?=.*[0-9])(?=.*[A-Z])([A-Z0-9]{18})$', // 18 digits with at least one number and one letter
     id: "idNumberInput",
     name: 'idNumber',
-    errorMessage: 'Please enter a valid 18 digits CURP ID without dash',
+    errorMessage: 'Please enter a valid 18 character alphanumeric CURP ID without hyphens.',
     labelTranslationKey: 'BB-BGC-MX-Additional-bgc-form-national-id-number-label-text',
     errorMessageTranslationKey: 'BB-BGC-MX-Additional-bgc-form-national-id-number-error-text',
 }

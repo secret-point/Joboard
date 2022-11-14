@@ -476,10 +476,6 @@
       "value" : "कृपया डॅशशिवाय वैध 9 अंकी सोशल सिक्युरिटी नंबर प्रविष्ट करा",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "कृपया डॅशशिवाय वैध 18 अंकी CURP ID प्रविष्ट करा",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "जन्म तारीख",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1816,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged पेलोडमध्ये गहाळ आहे.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "तुम्ही एंटर केलेला राष्ट्रीय ओळख क्रमांक आमच्या सिस्टममधील दुसर्‍या ईमेल पत्त्याशी आधीपासूनच जोडलेला आहे. तुम्ही मागे वेगळ्या ईमेल पत्त्यासह साइन अप केले असल्यास, कृपया [लॉग आउट करा](/application/logout) आणि आवश्यक असल्यास \"तुमचा वैयक्तिक पिन विसरलात?\" लिंक वापरून त्या ईमेलसह लॉग इन करण्याचा प्रयत्न करा. तुम्हाला मदत हवी असल्यास, कृपया ईमेलद्वारे आमच्याशी संपर्क साधा किंवा <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> येथे चॅट करा.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "नोकरी प्राप्त करण्यात अक्षम.",
       "note" : "error message when unable to fetch job information"
@@ -2307,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "कृपया पुढे जाण्यासाठी बॉक्स चेक करा.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "सुरू ठेवण्यासाठी निवड करा.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "युनायटेड स्टेट्स - सोशल सिक्युरिटी नंबर",

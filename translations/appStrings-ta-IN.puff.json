@@ -72,6 +72,10 @@
       "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றை உறுதிப்படுத்துகிறீர்கள்:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "எனது விண்ணப்பம், தேர்வு, பணியமர்த்தல் செயல்முறை போன்ற தகவல்களை வழங்குவதற்கு மொபைல், மெசேஜ் அல்லது WhatsApp மூலம் என்னைத் தொடர்புகொள்ள Amazonக்கு அங்கீகாரம் அளிக்கிறேன்.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றைப் படித்து ஒப்புக்கொள்கிறீர்கள்",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "பயனர் தரவுக் கொள்கை",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "சேகரிக்கப்பட்ட அனைத்து தகவல்களும், ‘தனிப்பட்ட தரவைப் பாதுகாப்பதற்கான கூட்டாட்சி சட்டத்தின்படி’ தனிப்பட்ட தரப்புகள் மற்றும் அதன் ஒழுங்குமுறைகள், வழிகாட்டுதல்கள் மற்றும் தரவு தனியுரிமை தொடர்பான பிற பொருந்தக்கூடிய விதிகள் மற்றும் பணியாளர்கள் மற்றும்/அல்லது விண்ணப்பதாரர்களுக்கான நிறுவனத்தின் தனியுரிமை அறிக்கைக்கு இணங்க மாற்றப்படலாம் என்பதை நான் அறிவேன்.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon ஒரு பன்முகத்தன்மையுள்ள மற்றும் அனைவருக்கும் ஏற்ற பணியிடத்தைத் தருவதற்கு உறுதிபூண்டுள்ளது. Amazon ஒரு சம வாய்ப்பளிக்கும் நிறுவனமாகும். இனம், தேசிய தோற்றம், பாலினம், பாலின அடையாளம், பாலியல் நோக்குநிலை, பாதுகாக்கப்பட்ட படைவீரர் நிலை, மாற்றுத்திறன், வயது அல்லது பிற சட்டப்பூர்வமாக பாதுகாக்கப்பட்ட நிலை ஆகியவற்றின் அடிப்படையில் இங்கு பாகுபாடு இருக்காது. தங்குமிடத்தைக் கோர விரும்பும் மாற்றுத்திறனாளிகள் இங்குப் பார்வையிடவும்:<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -468,10 +476,6 @@
       "value" : "கோடு இல்லாமல் சரியான 9 இலக்க சமூகப் பாதுகாப்பு எண்ணை உள்ளிடவும்",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "சரியான 18 இலக்கங்கள் கொண்ட CURP ஐடியை இடைக்கோடு இல்லாமல் உள்ளிடவும்",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "பிறந்த தேதி",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "மின்னனு கையொப்பம் பொருந்தவில்லை. ஒவ்வொரு மின்னணு கையொப்பத்திற்கும் ஒரே உரையைப் பயன்படுத்தவும்.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "செல்லுபடியாகும் முழுப்பெயரை பின்வரும் வடிவத்தில் உள்ளிடவும்: பெயரின் முற்பகுதி பெயரின் பிற்பகுதி",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "அடுத்து",
@@ -1804,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged தகவல்கள் பேலோடில் விடுபட்டுள்ளன.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "நீங்கள் உள்ளிட்ட தேசிய அடையாள எண் ஏற்கெனவே எங்கள் சிஸ்டத்தில் உள்ள மற்றொரு மின்னஞ்சல் முகவரியுடன் இணைக்கப்பட்டுள்ளது. நீங்கள் முன்னர் வேறு மின்னஞ்சல் முகவரி மூலம் பதிவுசெய்திருந்தால், இதிலிருந்து [வெளியேறி](/application/logout) அந்த மின்னஞ்சல் முகவரி மூலம் உள்நுழைய முயலவும், தேவைப்பட்டால் “உங்கள் தனிப்பட்ட பின் மறந்துவிட்டதா?“ என்ற இணைப்பைப் பயன்படுத்தவும். உங்களுக்கு உதவி தேவைப்பட்டால், மின்னஞ்சல் வழியாக எங்களைத் தொடர்புகொள்ளவும் அல்லது <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> எனும் பக்கத்தில் எங்களுடன் உரையாடவும்.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "வேலைத் தகவல்கலைப் பெற முடியவில்லை.",
       "note" : "error message when unable to fetch job information"
@@ -2295,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "தொடர, தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "அமெரிக்கா - சமூகப் பாதுகாப்பு எண்",

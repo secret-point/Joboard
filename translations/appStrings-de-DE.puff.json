@@ -72,6 +72,10 @@
       "value" : "Mit deiner Bewerbung bestätigst du, dass:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Ich ermächtige Amazon, mich per Telefon, SMS oder WhatsApp zu kontaktieren, um Informationen über meinen Bewerbungs-, Auswahl- und Einstellungsprozess bereitzustellen.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Mit deiner Bewerbung erklärst du dich einverstanden mit der",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Richtlinie für Benutzerdaten",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Mir ist bewusst, dass alle erfassten Daten gemäß dem Bundesgesetz über den Schutz personenbezogener Daten im Besitz privater Parteien und seiner Vorschriften, Richtlinien und anderer anwendbarer Bestimmungen zum Datenschutz sowie in Bezug auf die Datenschutzerklärung des Unternehmens für Mitarbeiter und/oder Bewerber übertragen werden können.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon setzt sich für einen vielfältigen und integrativen Arbeitsplatz ein. Amazon ist ein Arbeitgeber der Chancengleichheit und diskriminiert nicht aufgrund von Ethnie, nationaler Herkunft, Geschlecht, Geschlechtsidentität, sexueller Orientierung, geschütztem Veteranenstatus, Behinderung, Alter oder einem anderen gesetzlich geschützten Status. Menschen mit Behinderungen, die angemessene Vorkehrungen beantragen möchten, besuchen bitte <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -468,10 +476,6 @@
       "value" : "Bitte gib eine gültige 9-stellige Sozialversicherungsnummer ohne Bindestrich ein",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Bitte gib eine gültige 18-stellige CURP-ID ohne Bindestrich ein",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Geburtsdatum",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "Elektronische Signaturen stimmen nicht überein. Bitte verwende für jede elektronische Signatur den gleichen Text.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Bitte gib einen gültigen vollständigen Namen im folgenden Format ein: Vorname Nachname",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Weiter",
@@ -1803,6 +1811,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged fehlt.",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Die von dir eingegebene Nationale Personalausweisnummer ist bereits mit einer anderen E-Mail-Adresse in unserem System verknüpft. Wenn du dich zuvor mit einer anderen E-Mail-Adresse registriert hast, [melde dich ab](/application/logout) und versuche, dich mit dieser E-Mail-Adresse anzumelden. Verwende dazu bei Bedarf den Link „Persönliche PIN vergessen?“ Wenn du Hilfe benötigst, kontaktiere uns bitte per E-Mail oder Chat unter <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Job konnte nicht abgerufen werden.",

@@ -72,6 +72,10 @@
       "value" : "Ved at ansøge bekræfter du, at:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Jeg autoriserer Amazon til at kontakte mig via telefon, sms eller WhatsApp for at give mig oplysninger om min ansøgning, udvælgelses- og ansættelsesproces.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Ved at ansøge har du læst og acceptere",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Politik om brugerdata",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Jeg er opmærksom på, at alle indsamlede oplysninger kan overføres i henhold til den føderale lov om beskyttelse af personoplysninger i besiddelse af private parter og dens regler, retningslinjer og andre gældende bestemmelser om databeskyttelse, samt i form af fortrolighedserklæring for virksomheden for medarbejdere og/eller kandidater.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon er dedikeret til en mangfoldig og inkluderende arbejdsplads. Amazon er en arbejdsgiver med lige muligheder og diskriminerer ikke på grundlag af race, national oprindelse, køn, kønsidentitet, seksuel orientering, beskyttet veteranstatus, handicap, alder eller anden juridisk beskyttet status. For personer med handicap, der gerne vil anmode om en bolig, kan du besøge <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -466,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Indtast et gyldigt 9-cifret Social Security-nummer (CPR) uden bindestreg",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Indtast venligst et gyldigt 18 cifre CURP-ID uden bindestreg",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1808,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged mangler i payload.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Det nationale identitetsnummer, som du indtastede, er allerede knyttet til en anden e-mailadresse i vores system. Hvis du tidligere har tilmeldt dig med en anden e-mailadresse, skal du [Logge ud](/application/logout) og prøve at logge ind med den pågældende e-mailadresse ved at bruge linket \"Glemt din personlige pinkode?\", hvis det er nødvendigt. Hvis du har brug for hjælp, kan du kontakte os via e-mail eller chat på <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Kunne ikke hente job.",
       "note" : "error message when unable to fetch job information"
@@ -2299,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Sæt hak i feltet for at fortsætte.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Foretag et valg for at fortsætte.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "USA - Social Security Number",

@@ -72,6 +72,10 @@
       "value" : "ಅಪ್ಲೈ ಮಾಡುವ ಮೂಲಕ, ನೀವು ಅದನ್ನು ಖಚಿತಪಡಿಸುತ್ತೀರಿ:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "ನನ್ನ ಅರ್ಜಿ, ಆಯ್ಕೆ ಮತ್ತು ನೇಮಕ ಪ್ರಕ್ರಿಯೆಯ ಕುರಿತಂತೆೆ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಲು ಫೋನ್, ಪಠ್ಯ ಸಂದೇಶ ಅಥವಾ WhatsApp ಮೂಲಕ ನನ್ನನ್ನು ಸಂಪರ್ಕಿಸಲು ನಾನು Amazon ಗೆ ಅಧಿಕಾರ ನೀಡುತ್ತೇನೆ.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "ಅನ್ವಯಿಸುವ ಮೂಲಕ, ನೀವು ಇದನ್ನು ಓದುತ್ತೀರಿ ಮತ್ತು ಒಪ್ಪುತ್ತೀರಿ",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "ಬಳಕೆದಾರ ಡೇಟಾ ನೀತಿ",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "ಖಾಸಗಿ ವ್ಯಕ್ತಿಗಳು ಹೊಂದಿರುವ ವೈಯಕ್ತಿಕ ಡೇಟಾದ ರಕ್ಷಣೆಯ ಕುರಿತ ಫೆಡರಲ್ ಕಾಯಿದೆ ಮತ್ತು ಅದರ ನಿಬಂಧನೆಗಳು, ಮಾರ್ಗಸೂಚಿಗಳು ಮತ್ತು ಡೇಟಾ ಗೌಪ್ಯತೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಇತರ ಅನ್ವಯವಾಗುವ ನಿಬಂಧನೆಗಳ ಅನುಸಾರವಾಗಿ ಹಾಗೆಯೇ ಉದ್ಯೋಗಿಗಳು ಮತ್ತು/ಅಥವಾ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಕಂಪನಿಯ ಗೌಪ್ಯತೆ ಪ್ರಕಟಣೆ ಪ್ರಕಾರ, ಸಂಗ್ರಹಿಸಲಾದ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ವರ್ಗಾಯಿಸಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon ವೈವಿಧ್ಯಮಯ ಮತ್ತು ಅಂತರ್ಗತ ಕಾರ್ಯಸ್ಥಳವನ್ನು ಹೊಂದಿರಲು ಬದ್ಧವಾಗಿದೆ. Amazon ಸಮಾನ ಅವಕಾಶ ಉದ್ಯೋಗದಾತರಾಗಿದ್ದು, ಜನಾಂಗ, ರಾಷ್ಟ್ರೀಯ ಮೂಲ, ಲಿಂಗ, ಲಿಂಗ ಗುರುತಿಸುವಿಕೆ, ಲೈಂಗಿಕ ದೃಷ್ಟಿಕೋನ, ಸಂರಕ್ಷಿತ ವೆಟರನ್ ಸ್ಥಿತಿ, ಅಂಗವೈಕಲ್ಯ, ವಯಸ್ಸು ಅಥವಾ ಇತರ ಕಾನೂನುಬದ್ಧವಾಗಿ ಸಂರಕ್ಷಿತ ಸ್ಥಿತಿಯ ಆಧಾರದ ಮೇಲೆ ತಾರತಮ್ಯ ಮಾಡುವುದಿಲ್ಲ. ವಸತಿಗಾಗಿ ವಿನಂತಿಸಲು ಬಯಸುವ ವಿಕಲಾಂಗ ವ್ಯಕ್ತಿಗಳಿಗೆ, ದಯವಿಟ್ಟು <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> ಗೆ ಭೇಟಿ ನೀಡಿ",
@@ -468,10 +476,6 @@
       "value" : "ಡ್ಯಾಶ್ ಗುರುತು ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 9 ಅಂಕಿಗಳ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "ಡ್ಯಾಶ್ ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 18 ಡಿಜಿಟ್‌ನ CURP ID ಅನ್ನು ನಮೂದಿಸಿ",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "ಹುಟ್ಟಿದ ದಿನಾಂಕ",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "ಇ-ಸಹಿಗಳು ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. ಪ್ರತಿ ಇ-ಸಹಿಗೆ ಒಂದೇ ಪಠ್ಯವನ್ನು ಬಳಸಿ.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಪೂರ್ಣ ಹೆಸರನ್ನು ಈ ಕೆಳಗಿನ ಸ್ವರೂಪವನ್ನು ನಮೂದಿಸಿ: ಮೊದಲನೆಯದು ಕೊನೆಯದು",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "ಮುಂದೆ",
@@ -1803,6 +1811,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged ಪೇಲೋಡ್ನಲ್ಲಿ ಕಾಣೆಯಾಗಿದೆ.",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "ನೀವು ನಮೂದಿಸಿರುವ ರಾಷ್ಟ್ರೀಯ ಗುರುತಿನ ಸಂಖ್ಯೆ ಈಗಾಗಲೇ ನಮ್ಮ ಸಿಸ್ಟಮ್‌ನಲ್ಲಿರುವ ಮತ್ತೊಂದು ಇಮೇಲ್ ವಿಳಾಸದ ಜೊತೆಗೆ ಸಂಯೋಜಿತವಾಗಿದೆ. ನೀವು ಈ ಹಿಂದೆ ಬೇರೊಂದು ಇಮೇಲ್ ವಿಳಾಸದ ಮೂಲಕ ಸೈನ್ ಅಪ್ ಮಾಡಿದ್ದರೆ, ದಯವಿಟ್ಟು [Log Out](/application/logout) ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ \"ನಿಮ್ಮ ವೈಯ್ತಕಿ ಪಿನ್‌ ಮರೆತುಹೋಯಿತೇ?\" ಲಿಂಕ್ ಬಳಸಿ, ಆ ಇಮೇಲ್ ಮೂಲಕ ಲಾಗ್ ಇನ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ. ನಿಮಗೆ ಸಹಾಯ ಬೇಕಾದರೆ, ದಯವಿಟ್ಟು ಇಮೇಲ್ ಮೂಲಕ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಅಥವಾ <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ.",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "ಕೆಲಸ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.",

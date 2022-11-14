@@ -480,7 +480,7 @@
         },
         "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text": {
             "note": "Text for the additional bgc form national id number error message text",
-            "value": "Please enter a valid 18 digits CURP ID without dash"
+            "value": "Please enter a valid 18 character alphanumeric CURP ID without hyphens."
         },
         "BB-BGC-Additional-bgc-form-dob-label-text": {
             "note": "Text for the additional bgc form  date of birth label text",

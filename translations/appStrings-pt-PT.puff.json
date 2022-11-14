@@ -92,6 +92,10 @@
       "value" : "Política de dados do utilizador",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Estou ciente de que todas as informações recolhidas podem ser transferidas nos termos da Lei Federal de Proteção de Dados Pessoais na Posse de Privados e respetivos regulamentos, diretrizes e outras disposições aplicáveis em matéria de privacidade de dados, bem como nos termos do Aviso de Privacidade da Empresa para Colaboradores e/ou Candidatos.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "A Amazon está empenhada em criar locais de trabalho diversificados e inclusivos. A Amazon é uma entidade empregadora que oferece igualdade de oportunidades e não discrimina com base na etnia, nacionalidade, género, identidade de género, orientação sexual, estatuto de veterano protegido, incapacidade, idade ou outro estatuto legalmente protegido. Para pessoas com incapacidade que pretendam solicitar alojamento, visite <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -470,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira um número de segurança social com 9 dígitos válidos, sem um travessão",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Introduza uma ID CURP de 18 dígitos válida sem um travessão",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -2307,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Assinale a caixa para continuar.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Faça uma seleção para continuar.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Estados Unidos - Número de Segurança Social",

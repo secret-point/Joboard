@@ -72,6 +72,10 @@
       "value" : "Ao se candidatar, você confirma que:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Autorizo a Amazon a entrar em contato comigo por telefone, mensagem de texto ou WhatsApp para fornecer informações sobre meu processo de inscrição, seleção e contratação.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Ao se candidatar, você lê e concorda com o",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de dados do usuário",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Estou ciente de que todas as informações coletadas podem ser transferidas de acordo com a Lei federal sobre a Proteção de dados pessoais na posse de partes privadas e seus regulamentos, diretrizes e outras disposições aplicáveis sobre privacidade de dados, bem como nos termos da Notificação de privacidade da empresa para funcionários e/ou candidatos.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "A Amazon está comprometida com um local de trabalho diversificado e inclusivo. A Amazon é um empregador de oportunidades iguais e não discrimina com base em raça, nacionalidade, gênero, identidade de gênero, orientação sexual, condição de veterano protegido, deficiência, idade ou outra condição legalmente protegida. Para pessoas com deficiência que gostariam de solicitar atendimento especial, acessar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -466,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira um número de seguro social válido de 9 dígitos sem traços",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Insira uma ID de CURP válida de 18 dígitos sem traço",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1808,6 +1812,10 @@
       "value" : "A confirmação da Declaração da Califórnia não foi inserida no preenchimento.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "O Número de identidade nacional que você inseriu já está associado a outro endereço de e-mail em nosso sistema. Se você já se inscreveu com outro endereço de e-mail, [Saia] (/application/logout) e tente fazer login com esse e-mail, usando o link “Esqueceu seu PIN pessoal?” se necessário. Se precisar de ajuda, fale conosco por e-mail ou chat em <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Não foi possível buscar vagas.",
       "note" : "error message when unable to fetch job information"
@@ -2299,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Marque a caixa para continuar.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Faça uma seleção para continuar.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Estados Unidos - Número da previdência social",

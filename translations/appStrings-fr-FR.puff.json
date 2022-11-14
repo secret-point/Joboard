@@ -476,10 +476,6 @@
       "value" : "Saisissez un numéro de sécurité sociale valide à 9 chiffres sans tiret",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Saisissez un identifiant CURP valide à 18 chiffres sans tiret",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Date de naissance",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1815,6 +1811,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "L’objet hasBGCCaliforniaDisclosureAcknowledged est manquant.",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Le numéro d'identité national que vous avez saisi est déjà associé à une autre adresse e-mail dans notre système. Si vous vous êtes précédemment inscrit avec une adresse e-mail différente, déconnectez-vous [Log Out](/application/logout) et essayez de vous connecter avec cette adresse e-mail, en utilisant le lien « Vous avez oublié votre code PIN personnel ? » si nécessaire. Si vous avez besoin d’aide, contactez-nous par e-mail ou par chat à l’adresse suivante : <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Impossible de récupérer l’emploi.",

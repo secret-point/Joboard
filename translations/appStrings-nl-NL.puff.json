@@ -476,10 +476,6 @@
       "value" : "Voer een geldig Social Security Number van 9 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Voer een geldige CURP-ID van 18 cijfers in zonder streepje",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Geboortedatum",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1816,6 +1812,10 @@
       "value" : "\"Heeft BGC de California Disclosure erkend\" ontbreekt in de sollicitatie.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Het nationale identiteitsnummer dat je hebt ingevoerd, is al gekoppeld aan een ander e-mailadres in ons systeem. Als je je eerder hebt aangemeld met een ander e-mailadres, log dan uit en probeer in te loggen met dat e-mailadres. Indien nodig kun je gebruik maken van de link \"Je persoonlijke pincode vergeten?\". Als je hulp nodig hebt, neem dan contact met ons op via e-mail of chat op <a href='https://hiring.amazon.com/contact-us#/'> www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Kan vacature niet ophalen.",
       "note" : "error message when unable to fetch job information"
@@ -2307,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Vink het vakje aan om verder te gaan.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Maak een keuze om verder te gaan.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Verenigde Staten - Rijksregisternummer",

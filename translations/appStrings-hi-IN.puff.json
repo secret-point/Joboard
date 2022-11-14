@@ -476,10 +476,6 @@
       "value" : "कृपया डैश के बिना एक मान्य 9 अंकों का सामाजिक सुरक्षा नंबर एंटर करें",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "कृपया डैश के बिना एक वैध 18 अंकों का CURP ID दर्ज करें",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "जन्म की तारीख",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -827,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "ई-हस्ताक्षर मेल नहीं खाते. कृपया हर ई-हस्ताक्षर के लिए एक ही जैसे टेक्स्ट का इस्तेमाल करें.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "कृपया एक मान्य पूरा नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "अगला",
@@ -1812,6 +1812,10 @@
       "value" : "‘BGC कैलिफ़ोर्निया प्रकटीकरण स्वीकार किया गया है’ पेलोड से गायब है.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "आपके द्वारा एंटर की गई राष्ट्रीय पहचान संख्या पहले से ही हमारे सिस्टम में किसी अन्य ईमेल पते से संबंधित हैं. अगर आपने पहले किसी अलग ईमेल पते के साथ साइन अप किया है, तो कृपया [लॉग आउट करें](/application/logout) और ज़रूरत हो तो \"अपना व्यक्तिगत PIN भूल गए हैं?\" लिंक का इस्तेमाल करके उस ईमेल के साथ लॉग इन करने की कोशिश करें. अगर आपको मदद की ज़रूरत है, तो कृपया ईमेल के माध्यम से हमसे संपर्क करें या <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> पर चैट करें.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "जॉब दिखाने में असमर्थ हैं.",
       "note" : "error message when unable to fetch job information"
@@ -2303,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "जारी रखने के लिए एक चयन करें.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "संयुक्त राज्य अमेरिका - सामाजिक सुरक्षा नंबर",

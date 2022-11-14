@@ -476,10 +476,6 @@
       "value" : "有効な9桁の社会保障番号をダッシュなしで入力してください",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "ダッシュなしで有効な18桁のCURP IDを入力してください",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "生年月日",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1815,6 +1811,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "BGCカリフォルニア州の開示承認がペイロードにありません。",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "入力された国民識別番号は、システム内の別のEメールアドレスに既に関連付けられています。以前に別のEメールアドレスで登録したことがある場合は、「ログアウト」(/application/logout) してそのEメールを使い、必要であれば「個人PINをお忘れですか?」リンクでログインを試してください。ヘルプが必要な場合は、<a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>にアクセスし、Eメールまたはチャットでお問い合わせください。",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "ジョブを読み取れません。",

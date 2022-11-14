@@ -72,6 +72,10 @@
       "value" : "Składając wniosek, potwierdzasz, że:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "Upoważniam Amazon do skontaktowania się ze mną przez telefon, SMS lub WhatsApp w celu przekazania informacji o mojej aplikacji, procesie selekcji i rekrutacji.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "Składając podanie, znasz i akceptujesz",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Zasady dotyczące danych użytkownika",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Mam świadomość, że wszystkie pozyskane informacje mogą być przekazywane zgodnie z Federalną ustawą o ochronie danych osobowych będących w posiadaniu podmiotów prywatnych oraz jej postanowieniami uzupełniającymi, wytycznymi i innymi obowiązującymi zapisami dotyczącymi ochrony danych, a także w zakresie Informacji Spółki o prywatności w odniesieniu do Pracowników i/lub Kandydatów.",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon prowadzi działania na rzecz zróżnicowanego i integracyjnego miejsca pracy. Amazon jest pracodawcą, który zapewnia równe szanse i nie dyskryminuje nikogo ze względu na rasę, pochodzenie narodowe, płeć, tożsamość płciową, orientację seksualną, chroniony status weterana, niepełnosprawność, wiek ani inny prawnie chroniony status. Osoby z niepełnosprawnościami, które chciałyby poprosić o dostosowanie, mogą w tym celu odwiedzić stronę <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
@@ -466,10 +474,6 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Wprowadź prawidłowy 9-cyfrowy numer ubezpieczenia społecznego bez myślnika",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Wprowadź prawidłowy 18-cyfrowy CURP ID bez myślnika",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1808,6 +1812,10 @@
       "value" : "Brakuje informacji HasbgccaliforniaDisclosureAgnged.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Wpisany krajowy numer identyfikacyjny jest już powiązany z innym adresem e-mail w naszym systemie. Jeśli wcześniej zarejestrowałeś(-łaś) się przy użyciu innego adresu e-mail, [Wyloguj się](/application/logout) spróbuj zalogować się za pomocą wcześniej użytego adresu e-mail, w razie potrzeby korzystając z linku „Nie pamiętasz osobistego kodu PIN?”. Jeśli potrzebujesz pomocy, skontaktuj się z nami za pośrednictwem poczty elektronicznej lub czatu pod adresem <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Nie można pobrać pracy.",
       "note" : "error message when unable to fetch job information"
@@ -2299,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Zaznacz to pole, aby kontynuować.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Dokonaj wyboru, aby kontynuować.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Stany Zjednoczone – Numer ubezpieczenia społecznego",

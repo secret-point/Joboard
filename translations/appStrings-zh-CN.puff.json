@@ -72,6 +72,10 @@
       "value" : "确定申请即表明您确认：",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "我授权亚马逊通过电话、短信或 WhatsApp 与我联系，提供有关我的申请、甄选和招聘流程的信息。",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "确定申请即表示您已阅读并同意",
       "note" : "Text for the user data policy agreement title"
@@ -87,6 +91,10 @@
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "用户数据政策",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "我了解，收集的所有信息均可根据《保护私人持有个人数据的联邦法律（Federal Law on the Protection of Personal Data in the Possession of Private Parties）》及其规章、准则和其他有关数据隐私的适用条款，以及按照公司员工和/或候选人隐私声明进行转移。",
+      "note" : "Text for the flyout MX user data policy body text"
     },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "亚马逊致力于打造多元化和包容性的工作场所。亚马逊是一家机会均等的雇主，不会基于种族、出身国、性别、性别认同、性取向、受保护的退伍军人身份、残疾、年龄或其他受法律保护的身份进行歧视。对于希望申请便利设施的残障人士，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>",
@@ -468,10 +476,6 @@
       "value" : "请输入有效的 9 位数社会保障号，不带破折号",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "请输入有效的 18 位数 CURP ID（不含短划线）",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "出生日期",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -819,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "电子签名不匹配。请为每个电子签名使用相同的文本。",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "请按以下格式输入有效全名：名字 姓氏",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "下一步",
@@ -1804,6 +1812,10 @@
       "value" : "有效负载中缺少已同意的 BGC California Disclosure（加州披露报告）。",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "您输入的身份证件编号已与我们系统中的另一个电子邮件地址相关联。如果您之前使用其他电子邮件地址注册过，请[退出登录]（/application/logout），然后尝试使用该电子邮件登录。如有需要，可以使用“是否忘记个人 PIN 码？”链接。如果您需要帮助，请通过电子邮件联系我们或通过 <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a> 发起实时交谈。",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "无法获取职位。",
       "note" : "error message when unable to fetch job information"
@@ -2295,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "请选中该复选框以继续。",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "选择后继续。",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "美国 - 社会保障号码",

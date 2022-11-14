@@ -72,6 +72,10 @@
       "value" : "يعني التقديم أنك تؤكد ما يلي:",
       "note" : "Text for application qualification criteria"
     },
+    "BB-ConsentPage-whatsapp-consent-text" : {
+      "value" : "أفوض أمازون بالاتصال بي عبر الهاتف أو الرسائل النصية أو تطبيق واتساب لتقديم معلومات حول طلبي، والاختيار وعملية التوظيف.",
+      "note" : "Text for application whatsapp consent"
+    },
     "BB-ConsentPage-data-policy-header-text" : {
       "value" : "يعني التقديم أنك قرأت وتوافق على",
       "note" : "Text for the user data policy agreement title"
@@ -472,10 +476,6 @@
       "value" : "يرجى إدخال رقم ضمان اجتماعي صالح يتألّف من 9 أرقام بدون شرطة",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "يرجى إدخال رمز تسجيل السكان الفريد (CURP) على أن يكون صالحًا ومكونًا من 18 رقمًا بدون فاصلة خطية قصيرة",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "تاريخ الميلاد",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -823,6 +823,10 @@
     "BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text" : {
       "value" : "لا تتطابق التوقيعات الإلكترونية. يرجى استخدام النص نفسه في كل توقيع إلكتروني.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
+    },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "يرجى إدخال اسم كامل وصالح بالتنسيق التالي: الاسم الأول الاسم الأخير",
+      "note" : "Text for the MX eSignature authorization input error text"
     },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "التالي",
@@ -1808,6 +1812,10 @@
       "value" : "\"hasBGCCaliforniaDisclosureAcknowledged\" مفقود في البيانات الأساسية.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "رقم الهوية الوطنية الذي أدخلته مرتبط بالفعل بعنوان بريد إلكتروني آخر في نظامنا. إذا سبق لك تسجيل اشتراكك باستخدام عنوان بريد إلكتروني مختلف، فيرجى [تسجيل الخروج](/application/logout) ومحاولة تسجيل الدخول باستخدام ذلك العنوان، من خلال رابط \"هل نسيت رقم التعريف الشخصي (PIN)؟\" إذا لزم الأمر. إذا كنت بحاجة إلى مساعدة، يرجى الاتصال بنا عبر البريد الإلكتروني أو المحادثة على <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "تعذَّر جلب وظيفة.",
       "note" : "error message when unable to fetch job information"
@@ -2299,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "قم بتحديد اختيار للمتابعة.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "الولايات المتحدة - رقم الضمان الاجتماعي",

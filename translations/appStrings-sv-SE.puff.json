@@ -476,10 +476,6 @@
       "value" : "Ange ett giltigt, 9-siffrigt socialförsäkringsnummer utan bindestreck",
       "note" : "Text for the additional bgc form national id number error message text"
     },
-    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
-      "value" : "Ange ett giltigt 18-siffrigt CURP-ID utan bindestreck",
-      "note" : "Text for the additional bgc form national id number error message text"
-    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Födelsedatum",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -1816,6 +1812,10 @@
       "value" : "hasBGCCaliforniaDisclosureAcknowledged saknas i nyttolast.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "Det nationella identitetsnumret du angav är redan kopplat till en annan e-postadress i vårt system. Om du tidigare har registrerat dig med en annan e-postadress, vänligen [Logga ut](/ansökan/utloggning) och försök logga in med den e-postadressen. Använd länken ”Glömt din personliga pinkod?” om det behövs. Om du behöver hjälp kan du kontakta oss via e-post eller chatt på <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "Det gick inte att hämta jobb.",
       "note" : "error message when unable to fetch job information"
@@ -2308,6 +2308,10 @@
       "value" : "Markera rutan för att fortsätta.",
       "note" : "Text for the detailed radio button error."
     },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Gör ett val för att fortsätta.",
+      "note" : "Text for the detailed radio button error for Mexico."
+    },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "USA - Personnummer",
       "note" : "Text for the reverse mapping candidate nationalId type US SSN"
@@ -2399,6 +2403,10 @@
     "BB-BGC-Additional-bgc-form-dob-above100-text" : {
       "value" : "Du måste vara under 100 år gammal.",
       "note" : "Text for additional bgc when date of birth is above 100"
+    },
+    "BB-SelfIdentification-check-required-field-error-message" : {
+      "value" : "Vänligen markera alla obligatoriska rutor i föregående steg för att fortsätta.",
+      "note" : "Error message to check required fields on the self Identification"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-label-text" : {
       "value" : "Vad är ditt pronomen?",
