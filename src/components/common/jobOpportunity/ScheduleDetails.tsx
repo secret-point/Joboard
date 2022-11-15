@@ -43,7 +43,6 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
   const {
     hoursPerWeek,
     firstDayOnSite,
-    firstDayOnSiteL10N,
     currencyCode,
     employmentType,
     scheduleText,
@@ -57,7 +56,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
   } = scheduleDetail;
 
   const renderStartDate = () => {
-    const startDate = `${moment(firstDayOnSiteL10N || firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;
+    const startDate = `${moment(firstDayOnSite).locale(getLocale()).format('MMM DD, YYYY')}`;
     return getSpanishLocaleDateFormatter(startDate);
   }
 
