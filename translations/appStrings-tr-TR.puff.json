@@ -476,6 +476,10 @@
       "value" : "Lütfen 9 basamaklı geçerli bir sosyal güvenlik numarası girin (kısa çizgi olmadan)",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Lütfen kısa çizgi içermeyen geçerli bir 18 karakterli alfanümerik CURP kimlik numarası girin.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Doğum Tarihi",
       "note" : "Text for the additional bgc form  date of birth label text"

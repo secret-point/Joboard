@@ -476,6 +476,10 @@
       "value" : "請輸入不含破折號的有效 9 位數社會安全號碼",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "請輸入有效的 18 個字元的英數 CURP ID，不含連字號。",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "出生日期",
       "note" : "Text for the additional bgc form  date of birth label text"

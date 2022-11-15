@@ -476,6 +476,10 @@
       "value" : "దయచేసి డాష్ లేకుండా చెల్లుబాటు అయ్యే 9 అంకెల సామాజిక భద్రతా నంబర్‌ను నమోదు చేయండి",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "దయచేసి హైఫన్‌లు లేకుండా చెల్లుబాటు అయ్యే 18 అక్షరాల ఆల్ఫాన్యూమరిక్ CURP IDని ఎంటర్ చేయండి.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "పుట్టిన తేదీ",
       "note" : "Text for the additional bgc form  date of birth label text"

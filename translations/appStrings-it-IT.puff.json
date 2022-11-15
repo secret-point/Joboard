@@ -476,6 +476,10 @@
       "value" : "Inserisci un numero di previdenza sociale valido di 9 cifre senza trattino",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Inserisci un ID CURP alfanumerico valido di 18 caratteri senza trattini.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Data di nascita",
       "note" : "Text for the additional bgc form  date of birth label text"

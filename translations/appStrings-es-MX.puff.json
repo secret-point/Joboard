@@ -824,6 +824,10 @@
       "value" : "Las firmas electrónicas no coinciden. Usa el mismo texto para cada firma electrónica.",
       "note" : "Text for the non fcra acknowledgement and authorization input error text"
     },
+    "BB-BGC-MX-authorization-eSignature-input-error-text" : {
+      "value" : "Ingresa un nombre completo válido con el siguiente formato: Nombre Apellido",
+      "note" : "Text for the MX eSignature authorization input error text"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Siguiente",
       "note" : "Text for the non fcra form page next button text"
@@ -1808,6 +1812,10 @@
       "value" : "falta hasBGCCaliforniaDisclosureAcknowledged en la carga útil.",
       "note" : "error message for update application with california disclosure information missing"
     },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "El Número nacional de identidad que ingresaste ya está asociado a otra dirección de correo electrónico en nuestro sistema. Si previamente te has registrado con una dirección de correo electrónico diferente, [Log Out](/application/logout) e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu PIN personal?” si es necesario. Si necesitas ayuda, ponte en contacto con nosotros por correo electrónico o por chat en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
+    },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "No se puede encontrar el trabajo.",
       "note" : "error message when unable to fetch job information"
@@ -2299,6 +2307,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "Marca la casilla para continuar.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "Haz una selección para continuar.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "Estados Unidos - Número de Seguro Social",

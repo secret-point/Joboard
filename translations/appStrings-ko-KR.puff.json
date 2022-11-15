@@ -476,6 +476,10 @@
       "value" : "대시 기호를 제외하고 유효한 9자리 사회 보장 번호(SSN)를 입력하세요.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "유효한 18자 영숫자 CURP ID를 하이픈 없이 입력하세요.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "생년월일",
       "note" : "Text for the additional bgc form  date of birth label text"

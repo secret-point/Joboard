@@ -92,6 +92,10 @@
       "value" : "Política sobre datos de usuario",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
+      "value" : "Tengo conocimiento de que toda la información recopilada podrá ser transferida de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de Particulares y su reglamento, lineamientos y demás disposiciones aplicables en materia de privacidad de datos, así como en términos del Aviso de Privacidad de la Empresa para Empleados o Candidatos.",
+      "note" : "Text for the flyout MX user data policy body text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
       "value" : "Amazon tiene el compromiso de ser un lugar de trabajo diverso e inclusivo. Amazon es un empleador que ofrece igualdad de oportunidades y no discrimina por motivos de raza, origen nacional, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otro estado legalmente protegido. Para personas con discapacidad que quieran solicitar alojamiento, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
       "note" : "Text for the flyout user data policy paragraph 1 text"
@@ -1807,6 +1811,10 @@
     "BB-update-application-error-message-cali-disclosure-missing" : {
       "value" : "hasBGCCaliforniaDisclosureAcknowledged falta en la carga útil.",
       "note" : "error message for update application with california disclosure information missing"
+    },
+    "BB-update-application-error-message-duplication-ssn" : {
+      "value" : "El Número nacional de identidad que ingresaste ya está asociado a otra dirección de correo electrónico en nuestro sistema. Si previamente te has registrado con una dirección de correo electrónico diferente, [Log Out](/application/logout) e intenta iniciar sesión con ese correo electrónico, usando el enlace “¿Olvidaste tu PIN personal?” si es necesario. Si necesitas ayuda, contáctanos por correo electrónico o por chat en <a href='https://hiring.amazon.com/contact-us#/'>www.amazon.com/applicationhelp</a>.",
+      "note" : "error message for update application with duplicate ssn"
     },
     "BB-get-job-error-message-unable-fetch-job" : {
       "value" : "No se pudo recuperar la información de trabajos.",

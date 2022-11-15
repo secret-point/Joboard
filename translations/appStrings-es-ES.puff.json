@@ -476,6 +476,10 @@
       "value" : "Introduce un número de la Seguridad Social válido de 9 dígitos sin guion",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Introduce una ID de CURP válida de 18 caracteres alfanuméricos sin guiones.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Fecha de nacimiento",
       "note" : "Text for the additional bgc form  date of birth label text"
