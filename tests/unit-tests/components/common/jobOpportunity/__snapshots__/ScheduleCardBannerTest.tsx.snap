@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleCardBanner country code CA should match snapshot 1`] = `
+<Row
+  className="scheduleCardBanner"
+>
+  <div>
+    Bonus:
+     
+    $5.00
+  </div>
+</Row>
+`;
+
+exports[`ScheduleCardBanner country code MX should match snapshot 1`] = `
+<Row
+  className="scheduleCardBanner"
+>
+  <div>
+    Bonus:
+     
+    MXN$5.00
+  </div>
+</Row>
+`;
+
+exports[`ScheduleCardBanner country code US should match snapshot 1`] = `
+<Row
+  className="scheduleCardBanner"
+>
+  <div>
+    Bonus:
+     
+    $5.00
+  </div>
+</Row>
+`;

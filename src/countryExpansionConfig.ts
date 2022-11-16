@@ -18,6 +18,7 @@ export interface countryConfigType {
     desiredWorkHours: DESIRED_WORK_HOURS;
     nameRegexValidator: string;
     previousLegalNameRegexValidator: string;
+    renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => string;
 }
 
 export const accentedChars = "À-ÖØ-öø-ÿ";  // for Spanish
@@ -37,6 +38,9 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+        renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
+            return signOnBonusL10N || `${currencyCode}${signOnBonus}`;
+        },
     },
     [CountryCode.MX] : {
         payRateType: PayRateType.monthMax,
@@ -49,6 +53,9 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,99}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,49}\\s[${alphabet}${specialChars},.'-]{1,49}$`,
+        renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
+            return `${currencyCode}${signOnBonusL10N}`;
+        },
     },
     // TODO: set to correct values once they're available
     [CountryCode.CA] : {
@@ -61,6 +68,9 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+        renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
+            return signOnBonusL10N || `${currencyCode}${signOnBonus}`;
+        },
     },
 };
 
