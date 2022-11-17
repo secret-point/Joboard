@@ -374,3 +374,11 @@ body.no-header-footer {
     display: none;
   }
 }
+
+// Short term solution before Stencil fixed the issue: https://t.corp.amazon.com/P74586751
+// Related QA issue: https://issues.amazon.com/issues/MX_DGS_QA_BUG-40
+div[data-test-component="StencilPopupDatePicker"] {
+  h2[data-test-component="MonthYearText"] {
+    white-space: normal;
+  }
+}
