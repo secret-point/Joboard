@@ -476,6 +476,10 @@
       "value" : "कृपया डैश के बिना एक मान्य 9 अंकों का सामाजिक सुरक्षा नंबर एंटर करें",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "कृपया हाइफ़न के बिना एक मान्य 18 वर्ण अक्षरांकीय\n CURP ID दर्ज करें.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "जन्म की तारीख",
       "note" : "Text for the additional bgc form  date of birth label text"

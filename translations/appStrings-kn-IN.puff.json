@@ -476,6 +476,10 @@
       "value" : "ಡ್ಯಾಶ್ ಗುರುತು ಇಲ್ಲದೆ ಮಾನ್ಯವಾದ 9 ಅಂಕಿಗಳ ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಹೈಫನ್‌ಗಳಿಲ್ಲದೆ ಮಾನ್ಯ 18 ಅಕ್ಷರ ಆಲ್ಫಾನ್ಯೂಮರಿಕ್ CURP ID ಯನ್ನು ನಮೂದಿಸಿ.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "ಹುಟ್ಟಿದ ದಿನಾಂಕ",
       "note" : "Text for the additional bgc form  date of birth label text"
@@ -2307,6 +2311,10 @@
     "BB-Detailed-button-error-text-message" : {
       "value" : "ಮುಂದುವರೆಯಲು ದಯವಿಟ್ಟು ಬಾಕ್ಸ್‌ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
       "note" : "Text for the detailed radio button error."
+    },
+    "BB-Detailed-button-error-text-message-mx" : {
+      "value" : "ಮುಂದುವರಿಸಲು ಆಯ್ಕೆ ಮಾಡಿ.",
+      "note" : "Text for the detailed radio button error for Mexico."
     },
     "BB-ReverseMapping-candidate-nationalId-US-SSN" : {
       "value" : "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ - ಸಾಮಾಜಿಕ ಭದ್ರತೆ ಸಂಖ್ಯೆ",

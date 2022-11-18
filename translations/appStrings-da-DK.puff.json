@@ -476,6 +476,10 @@
       "value" : "Indtast et gyldigt 9-cifret Social Security-nummer (CPR) uden bindestreg",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Indtast venligst et gyldigt 18-tegns alfanumerisk CURP-ID uden bindestreger.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Fødselsdato",
       "note" : "Text for the additional bgc form  date of birth label text"

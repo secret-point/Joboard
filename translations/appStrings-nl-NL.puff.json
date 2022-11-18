@@ -476,6 +476,10 @@
       "value" : "Voer een geldig Social Security Number van 9 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Voer een geldige alfanumerieke CURP-ID van 18 tekens in zonder koppeltekens.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Geboortedatum",
       "note" : "Text for the additional bgc form  date of birth label text"

@@ -476,6 +476,10 @@
       "value" : "Saisissez un numéro de sécurité sociale valide à 9 chiffres sans tiret",
       "note" : "Text for the additional bgc form national id number error message text"
     },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Saisissez un identifiant CURP valide de 18 caractères alphanumériques sans trait d'union.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
       "value" : "Date de naissance",
       "note" : "Text for the additional bgc form  date of birth label text"
