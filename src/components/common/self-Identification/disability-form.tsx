@@ -4,6 +4,7 @@ import { LabelText } from "@amzn/stencil-react-components/dist/submodules/employ
 import { DetailedRadio, FormWrapper } from "@amzn/stencil-react-components/form";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
+import InnerHTML from "dangerously-set-html-content";
 import { connect } from "react-redux";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
@@ -38,7 +39,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const {candidateData} = candidate.results;
+  const { candidateData } = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [disability, setDisability] = useState();
@@ -53,7 +54,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
     const isSelfIdValid = isSelfIdentificationInfoValidBeforeDisability(selfIdentificationInfoData);
 
     if (isFormValid && isSelfIdValid) {
-      const payload: SelfIdentificationDisabilityStatus = {disability};
+      const payload: SelfIdentificationDisabilityStatus = { disability };
       applicationData && handleSubmitSelfIdDisabilityStatus(applicationData, payload, stepConfig);
     }
     else if (isFormValid && !isSelfIdValid){
@@ -94,7 +95,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
           {t("BB-SelfId-disability-form-why-this-form-content-paragraph1-text", "We are a federal contractor or subcontractor required by law to provide equal employment opportunity to qualified people with disabilities. We are also required to measure our progress toward having at least 7% ofour workforce be individuals with disabilities. To do this, we must ask applicants and employees if they have a disability or have ever had a disability. Because a person may become disabled at any time, we ask all of our employees to update their information at least every five years.")}
         </Text>
         <Text fontSize="T200">
-          {t("BB-SelfId-disability-form-why-this-form-content-paragraph2-text", "Identifying yourself as an individual with a disability is voluntary, and we hope that you will choose to do so. Your answer will be maintained confidentially and not be seen by selecting officials or anyone else involved in making personnel decisions. Completing the form will not negatively impact you in any way, regardless of whether you have self-identified in the past. For more information about this form or the equal employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S. Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.")}
+          <InnerHTML html={t("BB-SelfId-disability-form-why-this-form-content-paragraph2-text", "Identifying yourself as an individual with a disability is voluntary, and we hope that you will choose to do so. Your answer will be maintained confidentially and not be seen by selecting officials or anyone else involved in making personnel decisions. Completing the form will not negatively impact you in any way, regardless of whether you have self-identified in the past. For more information about this form or the equal employment obligations of federal contractors under Section 503 of the Rehabilitation Act, visit the U.S. Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at <a href='https://www.dol.gov/agencies/ofccp' target='_blank' rel='noopener noreferrer'>www.dol.gov/ofccp</a>.")} />
         </Text>
       </Col>
       <Col className="disabilityListContainer" gridGap={15}>
