@@ -1,6 +1,7 @@
 import {reloadAppPageWithSchedule} from "../../../src/utils/helper";
 import  { history } from "../../../src/store/store";
 import {Application, JobScheduleSelected} from "../../../src/utils/types/common";
+import { convertPramsToJson, isJson, objectToQuerystring } from "../../../src/helpers/utils";
 
 jest.mock('../../../src/store/store',()=>({
   history:[],
@@ -39,3 +40,47 @@ describe("Utils Tests: ", () => {
     });
   });
 });
+
+describe("convertPramsToJson", () => {
+  it("with valid params", () => {
+    const params = "?id=1456&name=Tester&referred=true";
+
+    expect(convertPramsToJson(params)).toEqual({ id: '1456', name: 'Tester', referred: 'true' })
+  })
+
+  it("with empty params", () => {
+    const params = "";
+
+    expect(convertPramsToJson(params)).toEqual({})
+  })
+})
+
+describe("isJson", () => {
+  it("with valid JSON", () => {
+    const testObj = {
+      name: "Test",
+      city: "Seattle",
+      state: "WA"
+    }
+    expect(isJson(JSON.stringify(testObj))).toBeTruthy();
+  })
+
+  it("with regular string", () => {
+    expect(isJson("abcdefg")).toBeFalsy();
+  })
+})
+
+describe("objectToQuerystring", () => {
+  it("with valid object", () => {
+    const testObj = {
+      name: "Test",
+      city: "Seattle",
+      state: "WA"
+    }
+    expect(objectToQuerystring(testObj)).toEqual("?name=Test&city=Seattle&state=WA");
+  })
+
+  it("with empty object", () => {
+    expect(objectToQuerystring({})).toEqual("");
+  })
+})
