@@ -34,7 +34,6 @@ import {
   formatFlexibleTrainingDate,
   formatMonthlyBasePayHelper,
   getCountryCodeByCountryName,
-  getCountryFullName,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
@@ -843,26 +842,16 @@ test("getDetailedRadioErrorMap", () => {
   })
 })
 
-test("getCountryFullName", () => {
-  expect(getCountryFullName(CountryCode.US)).toEqual("United States");
-  expect(getCountryFullName(CountryCode.CA)).toEqual("Canada");
-  expect(getCountryFullName(CountryCode.MX)).toEqual("Mexico");
-})
-
 test("shouldPrefillAdditionalBgcInfo", () => {
   //USA
-  expect(shouldPrefillAdditionalBgcInfo("United States", CountryCode.CA)).toBeFalsy();
-  expect(shouldPrefillAdditionalBgcInfo("United States", CountryCode.US)).toBeTruthy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.US, CountryCode.CA)).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.US, CountryCode.US)).toBeTruthy();
 
   //Canada
-  expect(shouldPrefillAdditionalBgcInfo("Canada", CountryCode.CA)).toBeTruthy();
-  expect(shouldPrefillAdditionalBgcInfo("Canada", CountryCode.US)).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.CA, CountryCode.CA)).toBeTruthy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.CA, CountryCode.US)).toBeFalsy();
 
   //Mexico
-  expect(shouldPrefillAdditionalBgcInfo("Mexico", CountryCode.CA)).toBeFalsy();
-  expect(shouldPrefillAdditionalBgcInfo("Mexico", CountryCode.MX)).toBeTruthy();
-
-  //Default
-  expect(shouldPrefillAdditionalBgcInfo("Mexico")).toBeFalsy();
-  expect(shouldPrefillAdditionalBgcInfo("United States")).toBeTruthy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.CA)).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.MX)).toBeTruthy();
 })

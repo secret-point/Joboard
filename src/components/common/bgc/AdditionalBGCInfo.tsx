@@ -125,17 +125,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }, [isNoSSNChecked])
 
     useEffect(() => {
-      //adding this logic to support multiple address for Canada.
-      //If country is Canada (not United States ) we will no prefill additional bgc ingo
-      const countryName = additionalBgc?.address?.country;
-      const shouldPrefillBgcInfo = shouldPrefillAdditionalBgcInfo(countryName);
-      const defaultBgcInfo = shouldPrefillBgcInfo ? omit(additionalBgc, ['primaryNationalId']) : {};
-
-        // For consistence, we use idNumber + governmentIdType rather than primaryNationalId field.
-        // Since we don't maintain primaryNationalId field, we don't send candidate's primaryNationalId to backend.
-        boundSetCandidatePatchRequest({
-            additionalBackgroundInfo: defaultBgcInfo
-        });
+      setupDefaultBgcInfoByCountry();
 
         return () => {
             boundSetCandidatePatchRequest({});
@@ -156,6 +146,19 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         }
     }, [pageName]);
 
+    const setupDefaultBgcInfoByCountry = () => {
+      //adding this logic to support multiple address for Canada.
+      //If country is Canada (not United States ) we will no prefill additional bgc ingo
+      const countryCode = additionalBgc?.address?.countryCode;
+      const shouldPrefillBgcInfo = shouldPrefillAdditionalBgcInfo(countryCode);
+      const defaultBgcInfo = shouldPrefillBgcInfo ? omit(additionalBgc, ['primaryNationalId']) : {};
+
+      // For consistence, we use idNumber + governmentIdType rather than primaryNationalId field.
+      // Since we don't maintain primaryNationalId field, we don't send candidate's primaryNationalId to backend.
+      boundSetCandidatePatchRequest({
+        additionalBackgroundInfo: defaultBgcInfo
+      });
+    }
 
     const renderFormItem = ( formItem: FormInputItem ) => {
       const hasError = get(formError, formItem.dataKey) || false;

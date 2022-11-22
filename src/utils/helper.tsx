@@ -63,7 +63,6 @@ import {
     BGC_STEPS,
     BGC_VENDOR_TYPE,
     CountryCode,
-    CountryFullNameMap,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
     FEATURE_FLAG,
@@ -523,15 +522,15 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
     let isAdditionalBgcCompleted: boolean;
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
-    const countryName = candidateData?.additionalBackgroundInfo?.address?.country;
+    const countryCode = candidateData?.additionalBackgroundInfo?.address?.countryCode;
+    const shouldPrefillBgcInfo = shouldPrefillAdditionalBgcInfo(countryCode);
+
+    isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) &&
+      isAdditionalBgcInfoValid(applicationAdditionalBgcInfo) && shouldPrefillBgcInfo;
 
     if (isDspEnabled) {
         isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) &&
-          shouldPrefillAdditionalBgcInfo(countryName);
-    }
-    else {
-        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) &&
-          isAdditionalBgcInfoValid(applicationAdditionalBgcInfo) && shouldPrefillAdditionalBgcInfo(countryName);
+          shouldPrefillBgcInfo;
     }
 
     let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig as BgcStepConfig }
@@ -1750,29 +1749,12 @@ export const getDetailedRadioErrorMap = (countryCode: CountryCode): DetailedRadi
     }
 }
 
-export const getCountryFullName = (override?: CountryCode): string => {
-    const countryCode = override ? override : getCountryCode();
+export const shouldPrefillAdditionalBgcInfo = (countryCode?: string, overrideCountryCode?: CountryCode): boolean => {
+    const systemCountryCode = overrideCountryCode ? overrideCountryCode : getCountryCode();
 
-    return CountryFullNameMap[countryCode];
-}
-
-export const shouldPrefillAdditionalBgcInfo = (countryName?: string, overrideCountryCode?: CountryCode): boolean => {
-    const countryCode = overrideCountryCode ? overrideCountryCode : getCountryCode();
-    if(!countryName) {
+    if(!countryCode) {
         return true;
     }
 
-    switch (countryCode) {
-        case CountryCode.US:
-            return countryName === getCountryFullName(CountryCode.US);
-
-        case CountryCode.CA:
-            return countryName === getCountryFullName(CountryCode.CA);
-
-        case CountryCode.MX:
-            return countryName === getCountryFullName(CountryCode.MX);
-
-        default:
-            return countryName === getCountryFullName(CountryCode.US);
-    }
+    return countryCode === systemCountryCode;
 }
