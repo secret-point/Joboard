@@ -1,6 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BackgroundCheck should match snapshot 1`] = `
+exports[`BackgroundCheck should match snapshot  - if address country is Canada 1`] = `
+<Col
+  className="bgcContainer"
+  gridGap={15}
+>
+  <StepHeader
+    jobTitle=""
+    step={
+      Object {
+        "stepNumber": 2,
+        "title": "Complete required documents",
+        "titleTranslationKey": "BB-ApplicationSteps-complete-required-document-text",
+      }
+    }
+  />
+  <Col
+    gridGap={15}
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Background Check
+    </H4>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Please provide authorization and information needed for a background check.
+    </Text>
+  </Col>
+  <Connect(InfoStepCard)
+    expandedContent={
+      <React.Fragment>
+        <Col
+          gridGap={15}
+        >
+          <Text
+            color="#56616C"
+            font="primary"
+            fontSize="T200"
+            hyphens="none"
+          >
+            Please answer a few questions using the link below.
+          </Text>
+          <Col
+            padding="S300"
+          >
+            <Button
+              colorScheme="default"
+              iconPosition="leading"
+              onClick={[Function]}
+              shouldUseResponsiveContent={true}
+              size="default"
+              type="button"
+              variant="primary"
+            >
+              Get Started
+            </Button>
+          </Col>
+        </Col>
+      </React.Fragment>
+    }
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "ACTIVE",
+      }
+    }
+    stepIndex={1}
+    stepName="FCRA"
+    title="Fair Credit Reporting Act Consumer Report Disclosure"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(NonFcraDisclosure)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "ACTIVE",
+      }
+    }
+    stepIndex={2}
+    stepName="NON_FCRA"
+    title="Non-Fair Credit Reporting Act Acknowledgments and Authorizations for Background Check"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(AdditionalBGCInfo)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": true,
+        "status": "ACTIVE",
+      }
+    }
+    stepIndex={3}
+    stepName="ADDITIONAL_BGC"
+    title="Additional Background Information"
+  />
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  />
+</Col>
+`;
+
+exports[`BackgroundCheck should match snapshot  - if address country is USA 1`] = `
 <Col
   className="bgcContainer"
   gridGap={15}

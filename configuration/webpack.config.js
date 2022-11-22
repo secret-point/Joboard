@@ -65,7 +65,7 @@ const ALL_PLUGINS = [
             },
             {
                 template: '{{Stage}}',
-                developmentValue: 'beta',
+                developmentValue: 'gamma',
                 replacement: {
                     source: 'cloudformation',
                     key: 'Stage',

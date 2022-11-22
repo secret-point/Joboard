@@ -358,3 +358,9 @@ export enum CountryCode {
     US = "US",
     CA = "CA",
 }
+
+export const CountryFullNameMap: {[key in CountryCode]: string} = {
+    [CountryCode.US]: "United States",
+    [CountryCode.CA]: "Canada",
+    [CountryCode.MX]: "Mexico"
+}

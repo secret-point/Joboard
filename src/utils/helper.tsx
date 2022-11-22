@@ -26,9 +26,8 @@ import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActio
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import { PAGE_ROUTES } from "../components/pageRoutes";
-import { CS_DOMAIN_LIST } from "../countryExpansionConfig";
+import { countryConfig, countryConfigType, CS_DOMAIN_LIST } from "../countryExpansionConfig";
 import { METRIC_NAME } from "../constants/adobe-analytics";
-import { countryConfig, countryConfigType } from "../countryExpansionConfig";
 import { initLogger } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
@@ -64,6 +63,7 @@ import {
     BGC_STEPS,
     BGC_VENDOR_TYPE,
     CountryCode,
+    CountryFullNameMap,
     DAYS_OF_WEEK,
     FCRA_DISCLOSURE_TYPE,
     FEATURE_FLAG,
@@ -85,7 +85,8 @@ import {
     CandidateInfoErrorState,
     CandidatePatchRequest,
     DayHoursFilter,
-    DetailedRadioButtonItem, DetailedRadioErrorType,
+    DetailedRadioButtonItem,
+    DetailedRadioErrorType,
     EnvConfig,
     ErrorMessage,
     FeatureFlagList,
@@ -522,12 +523,15 @@ export const handleUInitiateBGCStep = ( applicationData: Application, candidateD
     let isAdditionalBgcCompleted: boolean;
     const { FCRA, NON_FCRA, ADDITIONAL_BGC } = BGC_STEPS;
     const { ACTIVE, COMPLETED, LOCKED } = INFO_CARD_STEP_STATUS;
+    const countryName = candidateData?.additionalBackgroundInfo?.address?.country;
 
-    if(isDspEnabled) {
-        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo);
+    if (isDspEnabled) {
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) &&
+          shouldPrefillAdditionalBgcInfo(countryName);
     }
     else {
-        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) && isAdditionalBgcInfoValid(applicationAdditionalBgcInfo);
+        isAdditionalBgcCompleted = isAdditionalBgcInfoValid(candidateData?.additionalBackgroundInfo) &&
+          isAdditionalBgcInfoValid(applicationAdditionalBgcInfo) && shouldPrefillAdditionalBgcInfo(countryName);
     }
 
     let stepConfig: BgcStepConfig = { ...initScheduleState.stepConfig as BgcStepConfig }
@@ -1743,5 +1747,32 @@ export const getDetailedRadioErrorMap = (countryCode: CountryCode): DetailedRadi
             }
 
         default: return {};
+    }
+}
+
+export const getCountryFullName = (override?: CountryCode): string => {
+    const countryCode = override ? override : getCountryCode();
+
+    return CountryFullNameMap[countryCode];
+}
+
+export const shouldPrefillAdditionalBgcInfo = (countryName?: string, overrideCountryCode?: CountryCode): boolean => {
+    const countryCode = overrideCountryCode ? overrideCountryCode : getCountryCode();
+    if(!countryName) {
+        return true;
+    }
+
+    switch (countryCode) {
+        case CountryCode.US:
+            return countryName === getCountryFullName(CountryCode.US);
+
+        case CountryCode.CA:
+            return countryName === getCountryFullName(CountryCode.CA);
+
+        case CountryCode.MX:
+            return countryName === getCountryFullName(CountryCode.MX);
+
+        default:
+            return countryName === getCountryFullName(CountryCode.US);
     }
 }

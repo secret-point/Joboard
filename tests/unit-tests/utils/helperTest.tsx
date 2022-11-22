@@ -30,9 +30,11 @@ import {
   AWAIT_TIMEOUT,
   awaitWithTimeout,
   checkAndBoundGetApplication,
+  checkIfIsLegacy,
   formatFlexibleTrainingDate,
   formatMonthlyBasePayHelper,
   getCountryCodeByCountryName,
+  getCountryFullName,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
@@ -57,17 +59,17 @@ import {
   isSelfIdEqualOpportunityStepCompleted,
   isSelfIdVeteranStepCompleted,
   onAssessmentStart,
+  parseObjectToQueryString,
   parseQueryParamsArrayToSingleItem,
+  populateTimeRangeHourData,
   processAssessmentUrl,
   renderNheTimeSlotFullAddress,
+  renderScheduleFullAddress,
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
+  shouldPrefillAdditionalBgcInfo,
   showErrorMessage,
-  validateInput,
-  checkIfIsLegacy,
-  renderScheduleFullAddress,
-  populateTimeRangeHourData,
-  parseObjectToQueryString
+  validateInput
 } from "../../../src/utils/helper";
 
 describe('processAssessmentUrl', () => {
@@ -841,3 +843,26 @@ test("getDetailedRadioErrorMap", () => {
   })
 })
 
+test("getCountryFullName", () => {
+  expect(getCountryFullName(CountryCode.US)).toEqual("United States");
+  expect(getCountryFullName(CountryCode.CA)).toEqual("Canada");
+  expect(getCountryFullName(CountryCode.MX)).toEqual("Mexico");
+})
+
+test("shouldPrefillAdditionalBgcInfo", () => {
+  //USA
+  expect(shouldPrefillAdditionalBgcInfo("United States", CountryCode.CA)).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo("United States", CountryCode.US)).toBeTruthy();
+
+  //Canada
+  expect(shouldPrefillAdditionalBgcInfo("Canada", CountryCode.CA)).toBeTruthy();
+  expect(shouldPrefillAdditionalBgcInfo("Canada", CountryCode.US)).toBeFalsy();
+
+  //Mexico
+  expect(shouldPrefillAdditionalBgcInfo("Mexico", CountryCode.CA)).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo("Mexico", CountryCode.MX)).toBeTruthy();
+
+  //Default
+  expect(shouldPrefillAdditionalBgcInfo("Mexico")).toBeFalsy();
+  expect(shouldPrefillAdditionalBgcInfo("United States")).toBeTruthy();
+})

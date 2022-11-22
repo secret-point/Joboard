@@ -20,6 +20,7 @@ import {
   SocialSecurityNumberValue
 } from "../../../utils/constants/common";
 import {
+  AdditionalBackgroundInfoRequest,
   AppConfig,
   BgcStepConfig,
   FormInputItem,
@@ -45,7 +46,12 @@ import {
   boundUpdateCandidateInfoError
 } from "../../../actions/CandidateActions/boundCandidateActions";
 import { ModalContent, WithModal } from "@amzn/stencil-react-components/modal";
-import { handleSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
+import {
+  handleSubmitAdditionalBgc,
+  isDOBLessThan100,
+  isDOBOverEighteen,
+  shouldPrefillAdditionalBgcInfo
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
@@ -76,7 +82,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     const { scheduleDetail } = schedule.results;
     const stepConfig = bgc.stepConfig as BgcStepConfig;
     const applicationData = application.results;
-    const additionalBgc = candidateData?.additionalBackgroundInfo || {};
+    const additionalBgc: Partial<AdditionalBackgroundInfoRequest> = candidateData?.additionalBackgroundInfo || {};
     const pageName = METRIC_NAME.ADDITIONAL_BGC_INFO;
 
     let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
@@ -119,10 +125,16 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }, [isNoSSNChecked])
 
     useEffect(() => {
+      //adding this logic to support multiple address for Canada.
+      //If country is Canada (not United States ) we will no prefill additional bgc ingo
+      const countryName = additionalBgc?.address?.country;
+      const shouldPrefillBgcInfo = shouldPrefillAdditionalBgcInfo(countryName);
+      const defaultBgcInfo = shouldPrefillBgcInfo ? omit(additionalBgc, ['primaryNationalId']) : {};
+
         // For consistence, we use idNumber + governmentIdType rather than primaryNationalId field.
         // Since we don't maintain primaryNationalId field, we don't send candidate's primaryNationalId to backend.
         boundSetCandidatePatchRequest({
-            additionalBackgroundInfo: omit(additionalBgc, ['primaryNationalId'])
+            additionalBackgroundInfo: defaultBgcInfo
         });
 
         return () => {
@@ -186,13 +198,13 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
             case 'text':
                 return <FormInputText
                     inputItem={formItem}
-                    defaultValue={get(candidateData, formItem.dataKey) || ''}
+                    defaultValue={get(candidatePatchRequest, formItem.dataKey) || ''}
                     handleChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e,  formItem)}
                 />;
             case 'datePicker':
                 return <DatePicker
                     inputItem={formItem}
-                    defaultValue={get(candidateData, formItem.dataKey) || ''}
+                    defaultValue={get(candidatePatchRequest, formItem.dataKey) || ''}
                     handleChange={(value: string) => handleDatePickerInput(value, formItem)}
                 />
 
@@ -216,7 +228,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 }
               }
               else {
-                defaultValue = get(candidateData, formItem.dataKey) || '';
+                defaultValue = get(candidatePatchRequest, formItem.dataKey) || '';
                 handleChange = (value: string) => handleSelectChange(value, formItem)
               }
                 return <FormInputSelect
