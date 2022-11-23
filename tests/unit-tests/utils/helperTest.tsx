@@ -48,6 +48,7 @@ import {
   initSelfIdStepConfig,
   isAdditionalBgcInfoValid,
   isAddressValid,
+  isBrokenApplicationFeatureEnabled,
   isDOBLessThan100,
   isDOBOverEighteen,
   isI18nSelectOption,
@@ -70,6 +71,8 @@ import {
   showErrorMessage,
   validateInput
 } from "../../../src/utils/helper";
+
+
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -106,6 +109,133 @@ test("getCountryCodeByCountryName", () => {
   expect(getCountryCodeByCountryName("United States")).toEqual("US");
   expect(getCountryCodeByCountryName("custom")).toEqual("");
 });
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_undefinedFeatureFlagMap_systemError", () => {
+  const flagsMap = undefined;
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeFalsy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
+});
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_noMatchCountry_systemError", () => {
+  const flagsMap = {
+    "FR": {
+      isAvailable: true,
+      jobIdAllowList: "(JOB-FR-1234567891)|(JOB-FR-0000000001)"
+    }
+  }
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeFalsy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
+});
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_invalidRegex_systemError", () => {
+  const flagsMap = {
+    "US": {
+      isAvailable: true,
+      jobIdAllowList: "^((JOB-US-.*)$"
+    },
+    "MX": {
+      isAvailable: true,
+      jobIdAllowList: "^((JOB-MX-.*)$"
+    }
+  }
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeFalsy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
+});
+
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_withTwoUSJobsEnabled", () => {
+  const flagsMap = {
+    "US": {
+      isAvailable: true,
+      jobIdAllowList: "(JOB-US-1234567891)|(JOB-US-0000000001)"
+    },
+    "MX": {
+      isAvailable: true,
+      jobIdAllowList: "^(JOB-MX-.*)$"
+    }
+  }
+  expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeTruthy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567893", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-8943758471", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-3478347831", CountryCode.US, flagsMap)).toBeFalsy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeTruthy();
+});
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_withUSJobsEndWithOneEnabled", () => {
+  const flagsMap = {
+    "US": {
+      isAvailable: true,
+      jobIdAllowList: "^(JOB-US-.*1)$"
+    },
+    "MX": {
+      isAvailable: true,
+      jobIdAllowList: "^(JOB-MX-.*)$"
+    }
+  }
+  expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-8943758471", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-3478347831", CountryCode.US, flagsMap)).toBeTruthy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567893", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567894", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234568497", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234568499", CountryCode.US, flagsMap)).toBeFalsy();
+
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeTruthy();
+});
+
+
+// test getting the feature flag result by regex.
+test("isBrokenApplicationFeatureEnabled_withAllJobsEnabled", () => {
+  const flagsMap = {
+    "US": {
+      isAvailable: true,
+      jobIdAllowList: "^(JOB-US-.*)$"
+    },
+    "MX": {
+      isAvailable: true,
+      jobIdAllowList: "^(JOB-MX-.*)$"
+    }
+  }
+  expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567893", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-8943758471", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-US-3478347831", CountryCode.US, flagsMap)).toBeTruthy();
+  expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeTruthy();
+});
+
+
 
 describe('awaitWithTimeout', () => {
   let promise: Promise<any>;

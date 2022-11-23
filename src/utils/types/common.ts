@@ -897,10 +897,19 @@ export interface UpdateWotcStatusRequest {
     status: string;
 }
 
-export type FeatureFlagList = {
-    [key in FEATURE_FLAG]: {
+export type FeatureFlag = {
+    isAvailable: boolean;
+}
+
+export type FeatureFlagsMapByCountry = {
+    [country: string]: {
         isAvailable: boolean;
-    };
+        jobIdAllowList?: string;
+    }
+}
+
+export type FeatureFlagList = {
+    [key in FEATURE_FLAG]: FeatureFlag | FeatureFlagsMapByCountry;
 };
 
 export interface CompleteTaskRequest {

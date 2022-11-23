@@ -28,7 +28,7 @@ import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions
 import { PAGE_ROUTES } from "../components/pageRoutes";
 import { countryConfig, countryConfigType, CS_DOMAIN_LIST } from "../countryExpansionConfig";
 import { METRIC_NAME } from "../constants/adobe-analytics";
-import { initLogger } from "../helpers/log-helper";
+import {initLogger, log, logError} from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
 import store, { history } from "../store/store";
@@ -88,7 +88,9 @@ import {
     DetailedRadioErrorType,
     EnvConfig,
     ErrorMessage,
+    FeatureFlag,
     FeatureFlagList,
+    FeatureFlagsMapByCountry,
     FormInputItem,
     GetNheTimeSlotRequestDs,
     GetNheTimeSlotRequestThroughNheDS,
@@ -1495,9 +1497,14 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
     const featureFlagList: FeatureFlagList | undefined = envConfig?.featureList;
 
     if(featureFlagList){
-        return featureFlagList[featureFlag]?.isAvailable || false;
-    }
+        const featureResult = (featureFlagList[featureFlag] as FeatureFlag)?.isAvailable || false;
 
+        // not print the feature flag value for MLS, since there are too many invocations.
+        if (featureFlag !== FEATURE_FLAG.MLS) {
+            log(`logging the featureFlagName: ${featureFlag}, featureFlagResult: ${featureResult}`, {featureFlagValue: featureFlagList[featureFlag]})
+        }
+        return featureResult;
+    }
     return false;
 }
 
@@ -1514,6 +1521,36 @@ export const getKeyMapFromDetailedRadioItemList = (radioButtonItemList: Detailed
     }
 
     return keyMap;
+}
+
+export const getCountryMappedFeatureFlag = (featureFlag: FEATURE_FLAG): FeatureFlagsMapByCountry | undefined => {
+    const state = store.getState();
+    const envConfig = state.appConfig.results?.envConfig;
+    const featureFlagList: FeatureFlagList | undefined = envConfig?.featureList;
+    if(featureFlagList) {
+        const featureFlagsCountryMap = featureFlagList[featureFlag] as FeatureFlagsMapByCountry || undefined;
+        log(`loading brokenApplication feature flag for all countries: `, {featureFlagsCountryMap: featureFlagsCountryMap})
+        return featureFlagsCountryMap;
+    }
+    return undefined;
+}
+
+export const isBrokenApplicationFeatureEnabled = (jobId: string, countryCode: CountryCode, featureFlagsCountryMap?: FeatureFlagsMapByCountry) : boolean => {
+    let isFeatureEnabled = false;
+    const featureFlagForCountry = featureFlagsCountryMap?.[countryCode];
+    try {
+        if(featureFlagForCountry?.isAvailable && featureFlagForCountry?.jobIdAllowList){
+            const regex = new RegExp(featureFlagForCountry?.jobIdAllowList);
+            isFeatureEnabled = regex.test(jobId);
+        }
+        log(`calculating the broken applications feature flag for countryCode = ${countryCode}, jobId = ${jobId}, isFeatureEnabled = ${isFeatureEnabled},`
+          +`jobAllowList = ${featureFlagForCountry?.jobIdAllowList}, `, {featureFlagForCountry: featureFlagForCountry});
+    } catch (e) {
+        logError(`exception happened when do the regex match for countryCode = ${countryCode}, jobId = ${jobId}, `
+          +`jobAllowList = ${featureFlagForCountry?.jobIdAllowList}, therefore the isFeatureEnabled = ${isFeatureEnabled}.`,
+          e, {featureFlagForCountry: featureFlagForCountry});
+    }
+    return isFeatureEnabled;
 }
 
 export const reverseMappingTranslate = (value: string | undefined, countryCode?: CountryCode) => {
