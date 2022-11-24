@@ -45,7 +45,6 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
     const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(!!BGCMedicalDrugTestConsent?.isCopyRequested);
     const [nonFcraAckEsign, setNonFcraAckEsign] = useState(BGCMedicalDrugTestConsent?.acknowledgementsElectronicSignature?.signature || '');
     const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
-    const [errorMessage, setErrorMessage] = useState(t("BB-BGC-MX-authorization-eSignature-input-error-text", "Please enter a valid full name following format: First Last"));
 
     const pageName = METRIC_NAME.NON_FCRA;
 
@@ -102,7 +101,7 @@ export const AuthorizationForBGC = ( props: NonFcraDisclosureMergedProps ) => {
                     id="fcraFullNameInputOne"
                     required
                     error={!isAckSignatureValid}
-                    footer={!isAckSignatureValid ? errorMessage: undefined}
+                    footer={!isAckSignatureValid ? t("BB-BGC-MX-authorization-eSignature-input-error-text", "Please enter a valid full name following format: First Last") : undefined}
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
