@@ -292,14 +292,6 @@
       "value" : "איך אקבל את מענק החתימה?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "מבצע זה כולל מענק חתימה בסך ${signOnBonus} בהתבסס על הפרטים הספציפיים שצוינו למעלה. המענק משולם במספר תשלומים, שעשויים להתארך עד 180 יום לאחר ההתחלה. אם עליך לתזמן מחדש, ייתכן שהמבצע הספציפי הזה לא יהיה זמין בהתבסס על התפקיד החדש שבחרת. לא עמדת בדרישות למענק חתימה אם עבדת עבור Amazon ב-90 הימים האחרונים.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "מבצע זה כולל מענק חתימה בסך ${signOnBonus} בהתבסס על הפרטים הספציפיים שצוינו למעלה. המענק משולם במספר תשלומים, שעשויים להתארך עד 180 יום לאחר ההתחלה.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ייתכן שהצעה ספציפית זו לא תהיה זמינה אם:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "יש להזין מספר ביטוח לאומי חוקי בעל 9 ספרות ללא מקף",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "יש להזין מזהה CURP אלפאנומרי חוקי בן 18 תווים ללא מקפים.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

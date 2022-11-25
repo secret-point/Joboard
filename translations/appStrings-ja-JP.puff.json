@@ -292,14 +292,6 @@
       "value" : "サインオンボーナスはどうすればもらえますか？",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "このオファーには、上記の具体的な詳細に基づく${signOnBonus}のサインオンボーナスが含まれています。このボーナスは勤務開始後180日までの間に、月払いによって分割で支払われる場合があります。スケジュールを変更する必要がある場合、選択した新しい役職によっては、この特別オファーをご利用いただけないことがあります。過去90日間にAmazonで勤務経験がある方は、サインオンボーナスの対象にはなりません。",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "このオファーには、上記の具体的な内容に基づく${signOnBonus}のサインオンボーナスが含まれています。このボーナスは、開始後、最大180日間にわたる複数回の分割月払いとなります。",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "以下の場合、この特別セールはご利用いただけない場合があります。",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "有効な9桁の社会保障番号をダッシュなしで入力してください",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "有効な18文字の英数字のCURP IDをハイフンなしで入力してください。",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

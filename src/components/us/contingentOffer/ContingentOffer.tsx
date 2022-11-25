@@ -1,41 +1,41 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { Expander } from "@amzn/stencil-react-components/expander";
 import { Col, Hr, Row } from "@amzn/stencil-react-components/layout";
+import { H2, H3, H4, Text } from '@amzn/stencil-react-components/text';
+import InnerHTML from 'dangerously-set-html-content';
+import queryString from "query-string";
 import { connect } from "react-redux";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { useLocation } from "react-router-dom";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { onCompleteTaskHelper } from '../../../actions/WorkflowActions/workflowActions';
 import {
     getPageNameFromPath,
     parseQueryParamsArrayToSingleItem,
     resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
-import queryString from "query-string";
-import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
-import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { H2, H3, H4, Text } from '@amzn/stencil-react-components/text';
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
-import InnerHTML from 'dangerously-set-html-content';
-import ApplicationSteps from "../../common/ApplicationSteps";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { onCompleteTaskHelper } from '../../../actions/WorkflowActions/workflowActions';
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from '../../../reducers/ui.reducer';
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
-import { CandidateState } from "../../../reducers/candidate.reducer";
+import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
-import { Expander } from "@amzn/stencil-react-components/expander";
+import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from '../../common/DebouncedButton';
+import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    ui: uiState,
-    candidate: CandidateState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    ui: uiState;
+    candidate: CandidateState;
 }
 
 interface ContingentOfferProps {
@@ -46,15 +46,16 @@ type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
 
 export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     const { job, application, schedule, ui, candidate } = props;
-    const isLoading = ui.isLoading;
+    const { isLoading } = ui;
     const { search, pathname } = useLocation();
     const pageName = getPageNameFromPath(pathname);
     const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
     const { applicationId, jobId, scheduleId } = queryParams;
     const jobDetail = job.results;
     const applicationData = application.results;
-    const scheduleDetail = schedule.results.scheduleDetail;
+    const { scheduleDetail } = schedule.results;
     const signOnBonus = schedule.results.scheduleDetail?.signOnBonus;
+    const displayCurrency = "$";
     const employmentType = schedule.results.scheduleDetail?.employmentType;
     const { candidateData } = candidate.results
 
@@ -116,20 +117,20 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                 <H4>
                     {t("BB-ContingencyOffer-common-question-title-text", "Common questions")}
                 </H4>
-                <Row padding={{top: 'S200'}}>
+                <Row padding={{ top: 'S200' }}>
                     <Expander titleText={t("BB-ContingencyOffer-contingent-offer-meaning-popover-title-text", "What is a contingent offer?")}>
                         <Col gridGap={8}>
                             <Text>
                                 {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content", "This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities.")}
                             </Text>
-                            <Row padding={{top: "S200", bottom: "S200"}}>
+                            <Row padding={{ top: "S200", bottom: "S200" }}>
                                 <Text>
                                     {
                                         t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line", "Your start time might be delayed if:")
                                     }
                                 </Text>
                             </Row>
-                            <Col padding={{left: "S300"}}>
+                            <Col padding={{ left: "S300" }}>
                                 <Text>
                                     <li>
                                         {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one", "The background check is not completed on time")}
@@ -154,7 +155,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                         </Col>
                     </Expander>
                 </Row>
-                {employmentType === "Seasonal" ? <Row padding={{top: 'S200'}}>
+                {employmentType === "Seasonal" ? <Row padding={{ top: 'S200' }}>
                     <Expander
                         titleText={t("BB-Schedule-card-about-seasonal-duration-popover-title-text", "What does a seasonal duration mean?")}>
                         <Col gridGap="S500">
@@ -165,20 +166,20 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                     </Expander>
                 </Row>: null}
                 {signOnBonus ?
-                    <Row padding={{top: 'S200', bottom: 'S400'}}>
+                    <Row padding={{ top: 'S200', bottom: 'S400' }}>
                         <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do I get the sign on bonus?")}>
                             <Col gridGap={8}>
                                 <Text>
-                                    {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of $${signOnBonus} based on the specific details noted above. It’s payable over multiple installments that may extend to 180 days after your start.`, {signOnBonus})}
+                                    {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of ${displayCurrency}${signOnBonus} based on the specific details noted above. It's payable over multiple installments that may extend to 180 days after your start.`, { displayCurrency, signOnBonus })}
                                 </Text>
-                                <Row padding={{top: "S200", bottom: "S200"}}>
+                                <Row padding={{ top: "S200", bottom: "S200" }}>
                                     <Text>
                                         {
                                             t("BB-Schedules-card-about-how-to-sign-bonus-content-point", "This specific offer may not be available if:")
                                         }
                                     </Text>
                                 </Row>
-                                <Col padding={{left: "S300"}}>
+                                <Col padding={{ left: "S300" }}>
                                     <Text>
                                         <li>
                                             {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-one", "You reschedule your shift")}
@@ -205,7 +206,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
                     </Row>: null
                 }
                 <Hr />
-                <Col padding={{top: 'S400'}}>
+                <Col padding={{ top: 'S400' }}>
                     <Text>
                         {t("BB-ContingencyOffer-job-requirement-Section-title", "Job requirements")}
                     </Text>
@@ -217,7 +218,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
             <Col
                 className="contingencyOfferFooter"
                 gridGap={15}
-                padding={{top: 'S400', bottom: 'S400', left: 'S300', right: 'S300'}}
+                padding={{ top: 'S400', bottom: 'S400', left: 'S300', right: 'S300' }}
             >
                 <H4>{t("BB-ContingencyOffer-remaining-steps-container-title", "Remaining Steps")}</H4>
                 <ApplicationSteps/>

@@ -292,14 +292,6 @@
       "value" : "मला साइन ऑन बोनस कसा मिळतो?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित ${signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त हप्त्यांद्वारे देय आहे, जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते. तुम्हाला रीशेड्यूल करायचे असल्यास, तुम्ही निवडलेल्या नवीन भूमिकेवर आधारित ही विशिष्ट ऑफर उपलब्ध नसू शकते. जर तुम्ही अलीकडेच गेल्या 90 दिवसांत Amazon साठी काम केले असेल, तर तुम्ही कोणत्याही साइन ऑन बोनससाठी पात्र असणार नाही.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित ${signOnBonus} च्या साइन ऑन बोनसचा समावेश आहे. हे एकापेक्षा जास्त मासिक हप्त्यांद्वारे देय आहे जे तुम्ही सुरू केल्यानंतर 180 दिवसांपर्यंत जाऊ शकते.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ही विशिष्ट ऑफर उपलब्ध नसू शकते जर:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "कृपया डॅशशिवाय वैध 9 अंकी सोशल सिक्युरिटी नंबर प्रविष्ट करा",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "कृपया वैध 18 वर्णांचा अल्फान्यूमेरिक CURP ID हायफनशिवाय एंटर करा.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

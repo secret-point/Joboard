@@ -292,14 +292,6 @@
       "value" : "Comment obtenir le bonus d’inscription?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Cette offre comprend un bonus d’inscription de ${signOnBonus} en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début. Si vous devez replanifier, cette offre particulière pourrait ne pas être disponible en fonction du nouveau rôle que vous choisissez. Si vous avez récemment travaillé pour Amazon au cours des 90 derniers jours, vous ne serez admissible à aucun bonus d’inscription.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Cette offre comprend un bonus d’inscription de ${signOnBonus} en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après le début.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre particulière peut ne pas être disponible si :",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Veuillez saisir un numéro de sécurité sociale à 9 chiffres valide et ne contenant aucun tiret",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Veuillez saisir un identifiant CURP valide de 18 caractères alphanumériques sans trait d'union.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

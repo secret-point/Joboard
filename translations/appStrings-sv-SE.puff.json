@@ -292,14 +292,6 @@
       "value" : "Hur får jag registreringsbonusen?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Baserat på de specifika detaljerna ovan inkluderar erbjudandet en signeringsbonus på ${signOnBonus}. Bonusen betalas ut i flera delbetalningar som kan sträcka sig över upp till 180 dagar efter att du har börjat. Om du måste omboka kanske det här specifika erbjudandet inte är tillgängligt för den nyvalda rollen. Om du nyligen har arbetat för Amazon under de senaste 90 dagarna kommer du inte att vara berättigad till någon signeringsbonus.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Baserat på de specifika detaljerna ovan inkluderar erbjudandet en signeringsbonus på ${signOnBonus}. Bonusen betalas ut i flera delbetalningar som kan sträcka sig över upp till 180 dagar efter att du har börjat.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Detta specifika erbjudande kanske inte är tillgängligt om:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ange ett giltigt, 9-siffrigt socialförsäkringsnummer utan bindestreck",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ange ett giltigt alfanumeriskt CURP-ID med 18 tecken utan bindestreck.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

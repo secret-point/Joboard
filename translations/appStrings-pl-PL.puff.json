@@ -292,14 +292,6 @@
       "value" : "Jak uzyskać bonus za rejestrację?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Ta oferta obejmuje bonus za rejestrację w wysokości ${signOnBonus} w oparciu o konkretne szczegóły wymienione powyżej. Bonus jest płatny w wielu ratach, które mogą być rozłożone na okres wynoszący nawet 180 dni po rozpoczęciu pracy. Jeśli musisz zmienić termin, ta konkretna oferta może nie być dostępna na podstawie nowo wybranego przez Ciebie stanowiska. Jeśli pracowałeś(-łaś) dla Amazon w ciągu ostatnich 90 dni, nie będziesz kwalifikować się do żadnego bonusu z tytułu rejestracji.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Ta oferta obejmuje bonus za rejestrację w wysokości ${signOnBonus} w oparciu o szczegółowe informacje wymienione powyżej. Jest płatny w ratach, które mogą być rozłożone na okres wynoszący do 180 dni po rozpoczęciu.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Ta konkretna oferta może nie być dostępna, jeśli:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Wprowadź prawidłowy 9-cyfrowy numer ubezpieczenia społecznego bez myślnika",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Wpisz prawidłowy ID CURP o długości 18 znaków alfanumerycznych bez łączników.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

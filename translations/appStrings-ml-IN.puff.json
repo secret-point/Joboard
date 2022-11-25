@@ -292,14 +292,6 @@
       "value" : "ബോണസിൽ എനിക്ക് എങ്ങനെ അടയാളം ലഭിക്കും?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "ഈ ഓഫറിൽ മുകളിൽ സൂചിപ്പിച്ചിരിക്കുന്ന നിർദ്ദിഷ്ട വിശദാംശങ്ങളെ അടിസ്ഥാനമാക്കി ${signOnBonus} എന്ന ബോണസിന്റെ ഒരു അടയാളം ഉൾപ്പെടുന്നു. നിങ്ങൾ ആരംഭിച്ചതിന് ശേഷം 180 ദിവസം വരെ ദൈര്‍ഘ്യമുള്ള ഒന്നിലധികം ഗഡുക്കളായി ഇത് അടയ്ക്കണം. നിങ്ങൾക്ക് വീണ്ടും ഷെഡ്യൂൾ ചെയ്യണമെങ്കിൽ, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന പുതിയ റോളിനെ അടിസ്ഥാനമാക്കി ഈ നിർദ്ദിഷ്ട ഓഫർ ലഭ്യമായേക്കില്ല. കഴിഞ്ഞ 90 ദിവസങ്ങളിൽ നിങ്ങൾ Amazon-ല്‍ ജോലി ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, യാതൊരു സൈൻ-ഓൺ ബോണസിനും നിങ്ങൾക്ക് അർഹതയുണ്ടായിരിക്കില്ല.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "ഈ ഓഫറിൽ മുകളിൽ സൂചിപ്പിച്ചിരിക്കുന്ന നിർദ്ദിഷ്ട വിശദാംശങ്ങളെ അടിസ്ഥാനമാക്കി ${signOnBonus} എന്ന ബോണസിന്റെ ഒരു അടയാളം ഉൾപ്പെടുന്നു. നിങ്ങൾ ആരംഭിച്ചതിന് ശേഷം 180 ദിവസം വരെ ദൈര്‍ഘ്യമുള്ള ഒന്നിലധികം ഗഡുക്കളായി ഇത് അടയ്ക്കണം.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ഇനിപ്പറയുന്നവയാണെങ്കിൽ ഈ നിർദ്ദിഷ്ട ഓഫർ ലഭ്യമായേക്കില്ല:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ഡാഷ് ഇല്ലാതെ സാധുവായ 9 അക്ക സാമൂഹിക സുരക്ഷാ നമ്പർ നൽകുക",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ഹൈഫണുകളില്ലാതെ സാധുവായ 18 പ്രതീകങ്ങളുള്ള ഒരു ആൽഫാന്യൂമെറിക് CURP ID നൽകുക.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

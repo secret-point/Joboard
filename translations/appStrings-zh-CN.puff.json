@@ -292,14 +292,6 @@
       "value" : "怎样才能获得签约奖金？",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "依据上文所述之具体详情，此聘任书包含一份金额为 ${signOnBonus} 的签约奖金。奖金将以分期形式支付，支付期限可延长至您就职后的 180 天。如果您不得不重新安排时间，则此聘任书可能无法适用于您新选的职位。如果您在过去 90 天内曾在亚马逊工作过，则不符合获得签约奖金的条件。",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "依据上文所述之具体详情，此聘任书包含一份金额为 ${signOnBonus} 的签约奖金。奖金将以分期形式支付，支付期限可延长至您就职后的 180 天。",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "在以下情况下，此聘任书可能无效：",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "请输入有效的 9 位数社会保障号，不带破折号",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "请输入有效的 CURP ID，它必须为 18 个字母数字字符，且不能有连字符。",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

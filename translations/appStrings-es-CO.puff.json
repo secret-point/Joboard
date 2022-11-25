@@ -292,14 +292,6 @@
       "value" : "¿Cómo obtengo el incentivo de contratación?",
       "note" : "Text for how to sign on bonus popover title"
     },
-    "BB-Schedule-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de ${signOnBonus} basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse hasta 180 días después de que comiences. Si tienes que reprogramar, es posible que esta oferta específica no esté disponible en función del nuevo rol que elijas. Si has trabajado para Amazon en los últimos 90 días no serás elegible para recibir ningún bono de contratación.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
-    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
-      "value" : "Esta oferta incluye un bono de contratación de ${signOnBonus} basado en los detalles específicos señalados anteriormente. Se paga en múltiples cuotas que pueden extenderse a 180 días después de que comiences.",
-      "note" : "Text for how to sign on bonus popover content"
-    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica puede no estar disponible si:",
       "note" : "Text for how to sign on bonus popover content"
@@ -474,6 +466,10 @@
     },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ingresa un número de seguridad social válido de 9 dígitos sin guion",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ingresa una ID de CURP alfanumérica válida de 18 caracteres sin guiones.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
