@@ -1,8 +1,9 @@
 import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import ICU from 'i18next-icu';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { initReactI18next } from 'react-i18next';
-import ICU from 'i18next-icu';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import { getDefaultLocale } from './utils/helper';
 
 // Whether initialization is complete
 let isInitialized = false;
@@ -11,7 +12,7 @@ let initializationError: string | undefined;
 
 type I18nCallback = (err?: string) => void;
 // Registered callbacks for when i18n initialization completes
-let i18nInitializationCallbacks: I18nCallback[] = [];
+const i18nInitializationCallbacks: I18nCallback[] = [];
 
 i18n.use(resourcesToBackend((language, namespace, callback) => {
         import(`./i18n/translations/${namespace}-${language.substring(0, 2)}.json`)
@@ -28,7 +29,7 @@ i18n.use(resourcesToBackend((language, namespace, callback) => {
     .init(
         {
             debug: process.env.NODE_ENV !== 'production',
-            fallbackLng: 'en-US',
+            fallbackLng: getDefaultLocale() || 'en-US',
             interpolation: {
                 // not needed for react as it escapes by default
                 escapeValue: false
