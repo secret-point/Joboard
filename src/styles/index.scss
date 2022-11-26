@@ -224,11 +224,14 @@ a {
               background-color: #5c7274;
               z-index: -99;
             }
-            .steps-item-content {
-              display: block;
-              min-height: 48px;
-              overflow: hidden;
-            }
+          }
+        }
+
+        .steps-item-container {
+          .steps-item-content {
+            display: block;
+            min-height: 48px;
+            overflow: hidden;
           }
         }
 
