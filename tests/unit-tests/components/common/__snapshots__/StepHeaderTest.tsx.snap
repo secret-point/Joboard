@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepHeader should match snapshot 1`] = `
+<Col
+  gridGap={5}
+  id="stepHeaderContainer"
+  padding="S300"
+  style={
+    Object {
+      "background": "#EBF5FD",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Test Job Title
+  </Text>
+  <WithFlyout
+    flyoutPosition="trailing"
+    renderFlyout={[Function]}
+  >
+    <Component />
+  </WithFlyout>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    1. Select Job
+  </Text>
+</Col>
+`;

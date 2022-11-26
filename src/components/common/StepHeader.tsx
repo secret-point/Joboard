@@ -1,38 +1,37 @@
 import React from 'react';
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import { translate as t } from "../../utils/translator";
 import { CommonColors } from "../../utils/colors";
-import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import ApplicationSteps from "./ApplicationSteps";
+import { translate as t } from "../../utils/translator";
 import { ApplicationStep } from "../../utils/types/common";
+import ApplicationSteps from "./ApplicationSteps";
 
 interface StepHeaderProps {
     jobTitle: string;
-    step: ApplicationStep
+    step: ApplicationStep;
 }
-const StepHeader = (props: StepHeaderProps) => {
+export const StepHeader = (props: StepHeaderProps) => {
 
-    const { jobTitle, step} = props;
+    const { jobTitle, step } = props;
 
     const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
         <FlyoutContent
             titleText={t('BB-StepHeader-view-progress-flyout-title', 'View progress')}
             onCloseButtonClick={close}
             buttons={[
-                <Button onClick={close} variant={ButtonVariant.Primary}>
+                <Button onClick={close} variant={ButtonVariant.Primary} key="done">
                     {t('BB-StepHeader-view-progress-flyout-close-button', 'Done')}
                 </Button>
             ]}
-            maxWidth='40vw'
         >
             <ApplicationSteps/>
         </FlyoutContent>
     )
 
     return (
-        <Col id="stepHeaderContainer" gridGap={5} padding='S300' style={{background: `${CommonColors.Blue05}`}}>
+        <Col id="stepHeaderContainer" gridGap={5} padding='S300' style={{ background: `${CommonColors.Blue05}` }}>
             <Text>{jobTitle}</Text>
             <WithFlyout renderFlyout={renderFlyout}>
                 {( { open } ) => (
@@ -40,7 +39,7 @@ const StepHeader = (props: StepHeaderProps) => {
                         <Text
                             fontSize='T100'
                             color={CommonColors.Blue70}
-                            style={{cursor: 'pointer'}}
+                            style={{ cursor: 'pointer' }}
                             onClick={() => open()}
                             fontWeight='medium'
                         >
