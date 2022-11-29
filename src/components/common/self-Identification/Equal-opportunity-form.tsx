@@ -108,7 +108,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || '', details) : undefined}
                   key={title}
-                  defaultChecked={selfIdentificationInfoData?.gender === value}
+                  {...(selfIdentificationInfoData?.gender === value ? { defaultChecked: true } : {})}
                   onChange={() => setGender(value)}
                 />
               );
@@ -134,7 +134,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
                     titleText={t(titleTranslationKey, title)}
                     details={details ? t(detailsTranslationKey || "", details) : undefined}
                     key={title}
-                    defaultChecked={selfIdentificationInfoData?.pronoun === value}
+                    {...(selfIdentificationInfoData?.pronoun === value ? { defaultChecked: true } : {})}
                     onChange={() => setPronoun(value)}
                   />
                 );
@@ -159,7 +159,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
                   titleText={t(titleTranslationKey, title)}
                   details={details ? t(detailsTranslationKey || '', details) : undefined}
                   key={title}
-                  defaultChecked={selfIdentificationInfoData?.ethnicity === value}
+                  {...(selfIdentificationInfoData?.ethnicity === value ? { defaultChecked: true } : {})}
                   onChange={() => setEthnicity(value)}
                 />
               );

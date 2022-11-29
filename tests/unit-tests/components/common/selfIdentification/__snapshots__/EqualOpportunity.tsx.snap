@@ -35,7 +35,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Male"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Female"
         name="gender"
         onChange={[Function]}
@@ -43,7 +42,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Female"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Other"
         name="gender"
         onChange={[Function]}
@@ -51,7 +49,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Other"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Prefer not to say"
         name="gender"
         onChange={[Function]}
@@ -72,7 +69,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
          * 
       </LabelText>
       <DetailedRadio
-        defaultChecked={false}
         key="He"
         name="pronoun"
         onChange={[Function]}
@@ -80,7 +76,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="He"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="She"
         name="pronoun"
         onChange={[Function]}
@@ -88,7 +83,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="She"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="They"
         name="pronoun"
         onChange={[Function]}
@@ -96,7 +90,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="They"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Other"
         name="pronoun"
         onChange={[Function]}
@@ -104,7 +97,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Other"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Prefer not to say"
         name="pronoun"
         onChange={[Function]}
@@ -125,7 +117,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
          * 
       </LabelText>
       <DetailedRadio
-        defaultChecked={false}
         key="Indigenous"
         name="ethnicity"
         onChange={[Function]}
@@ -133,7 +124,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Indigenous"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Other"
         name="ethnicity"
         onChange={[Function]}
@@ -141,7 +131,6 @@ exports[`Equal Opportunity Form Country MX should match snapshot when country is
         value="Other"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Prefer not to say"
         name="ethnicity"
         onChange={[Function]}
@@ -207,7 +196,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Male"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="Female"
         name="gender"
         onChange={[Function]}
@@ -215,7 +203,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Female"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="I choose not to self-identify"
         name="gender"
         onChange={[Function]}
@@ -236,7 +223,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
          * 
       </LabelText>
       <DetailedRadio
-        defaultChecked={false}
         details="Persons having origins in any of the original peoples of North and South America, (including Central America), and who maintain tribal affiliation or community attachment"
         key="American Indian/Alaska Native (not Hispanic or Latino)"
         name="ethnicity"
@@ -254,7 +240,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Asian (not Hispanic or Latino)"
       />
       <DetailedRadio
-        defaultChecked={false}
         details="Persons having origins in any of the Black racial groups of Africa"
         key="Black/African American (not Hispanic or Latino)"
         name="ethnicity"
@@ -263,7 +248,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Black/African American"
       />
       <DetailedRadio
-        defaultChecked={false}
         details="Persons of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race"
         key="Hispanic/Latino"
         name="ethnicity"
@@ -272,7 +256,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Hispanic/Latino"
       />
       <DetailedRadio
-        defaultChecked={false}
         details="Persons having origins in any of the peoples of Hawaii, Guam, Samoa, or other Pacific Islands"
         key="Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
         name="ethnicity"
@@ -281,7 +264,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Native Hawaiian/Other Pacific Islander (not Hispanic or Latino)"
       />
       <DetailedRadio
-        defaultChecked={false}
         details="Persons having origins in any of the original peoples of Europe, the Middle East or North Africa"
         key="White (not Hispanic or Latino)"
         name="ethnicity"
@@ -290,7 +272,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="White (not Hispanic or Latino)"
       />
       <DetailedRadio
-        defaultChecked={false}
         details="Non-Hispanic persons who identify with more than one of the following five races: (1) White, (2) Black, (3) Asian, (4) Native Hawaiian/Other Pacific Islander, (5) American Indian/Alaska Native"
         key="Two or more Races (not Hispanic or Latino)"
         name="ethnicity"
@@ -299,7 +280,6 @@ exports[`Equal Opportunity Form Country US should match snapshot when country is
         value="Two or more Races (not Hispanic or Latino)"
       />
       <DetailedRadio
-        defaultChecked={false}
         key="I choose not to self-identify"
         name="ethnicity"
         onChange={[Function]}

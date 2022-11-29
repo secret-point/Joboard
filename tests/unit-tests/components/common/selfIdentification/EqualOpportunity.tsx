@@ -1,13 +1,13 @@
-import * as utilHelpers from "../../../../../src/utils/helper";
-import { CountryCode } from "../../../../../src/utils/enums/common";
+import React from "react";
 import { shallow } from "enzyme";
 import { EqualOpportunityForm } from "../../../../../src/components/common/self-Identification/Equal-opportunity-form";
+import { CountryCode } from "../../../../../src/utils/enums/common";
+import * as utilHelpers from "../../../../../src/utils/helper";
 import {
   TEST_APPLICATION_STATE,
   TEST_CANDIDATE_STATE,
   TEST_SELF_IDENTIFICATION_STATE
 } from "../../../../test-utils/test-data";
-import React from "react";
 
 const getCountryCodeSpy = jest.spyOn(utilHelpers, "getCountryCode");
 
