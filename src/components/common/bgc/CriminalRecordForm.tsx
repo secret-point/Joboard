@@ -1,35 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { Label, Text } from "@amzn/stencil-react-components/text";
+import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { DetailedRadio, InputWrapper, TextAreaWithRecommendedLength } from "@amzn/stencil-react-components/form";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
+import { Label, Text } from "@amzn/stencil-react-components/text";
 import InnerHTML from "dangerously-set-html-content";
+import cloneDeep from "lodash/cloneDeep";
+import get from "lodash/get";
+import isNil from "lodash/isNil";
+import set from "lodash/set";
+import { connect } from "react-redux";
+import { boundSetCandidatePatchRequest } from "../../../actions/CandidateActions/boundCandidateActions";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { BGCState } from "../../../reducers/bgc.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { CommonColors } from "../../../utils/colors";
 import {
     ConvictionDetailConfig,
     ConvictionInfoRadioConfig,
     CriminalConvictionConfigList
 } from "../../../utils/constants/common";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { BGCState } from "../../../reducers/bgc.reducer";
-import { connect } from "react-redux";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import set from "lodash/set";
-import { boundSetCandidatePatchRequest } from "../../../actions/CandidateActions/boundCandidateActions";
-import cloneDeep from "lodash/cloneDeep";
 import { translate as t } from "../../../utils/translator";
-import isNil from "lodash/isNil";
-import get from "lodash/get";
-import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-indicator";
-import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 
 interface MapStateToProps {
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    bgc: BGCState
-    candidate: CandidateState
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    bgc: BGCState;
+    candidate: CandidateState;
 }
 
 interface CriminalRecordFormProps {
@@ -112,7 +112,7 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
     );
 
     return (
-        <Col gridGap={15} padding={{top: "S300"}}>
+        <Col gridGap={15} padding={{ top: "S300" }}>
             <Text>
                 {t('BB-BGC-criminal-record-within-seven-years-question-text', 'Have you been convicted of misdemeanor or felony or been released from prison or parole from a misdemeanor or felony conviction in last seven (7) years?')}
             </Text>
@@ -200,7 +200,10 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
                         {textAreaProps => (
                             <TextAreaWithRecommendedLength
                                 {...textAreaProps}
-                                recommendedWordCount={500}
+                                recommendedCharacterCount={500}
+                                getRecommendedCharactersText={({ characterCount, recommendedCharacterCount }) =>
+                                    t('BB-BGC-criminal-record-recommended-character-count-text', `${characterCount} characters entered. You can enter up to ${recommendedCharacterCount}.`, { characterCount, recommendedCharacterCount })
+                                }
                                 defaultValue={additionalBgc?.convictionDetails || ''}
                                 onChange={(e) => {
                                     const newCandidate = cloneDeep(candidatePatchRequest) || {} ;

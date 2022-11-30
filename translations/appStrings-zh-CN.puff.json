@@ -292,6 +292,10 @@
       "value" : "怎样才能获得签约奖金？",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "依据以上具体细节所述，此聘任书包含一份金额为 {displayCurrency}{signOnBonus} 的签约奖金。奖金将以分期形式支付，支付期限可延长至您就职后的 180 天。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "在以下情况下，此聘任书可能无效：",
       "note" : "Text for how to sign on bonus popover content"
