@@ -292,6 +292,10 @@
       "value" : "Comment puis-je bénéficier de la prime à la signature ?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend une prime à la signature de {signOnBonus} {displayCurrency} basée sur les détails spécifiques indiqués ci-dessus. La prime peut être versée en plusieurs fois sur une période pouvant aller jusqu'à 180 jours après votre prise de poste.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre spécifique peut ne pas être disponible dans les cas suivants :",
       "note" : "Text for how to sign on bonus popover content"

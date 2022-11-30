@@ -292,6 +292,10 @@
       "value" : "我如何獲得簽約獎金？",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "此錄用包括基於上述具體細節的 {displayCurrency}{signOnBonus} 簽約獎金。獎金可多次分期支付，期限可延長至您開始工作後的 180 天。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "在以下情況下，此特定錄用通知可能不適用：",
       "note" : "Text for how to sign on bonus popover content"

@@ -292,6 +292,10 @@
       "value" : "Como faço para obter o bónus de contratação?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bónus de contratação de {signOnBonus} {displayCurrency}, com base nos detalhes específicos indicados acima. Este valor é pago em várias prestações que poderão prolongar-se até 180 dias, após o início da sua função.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica poderá não estar disponível se:",
       "note" : "Text for how to sign on bonus popover content"

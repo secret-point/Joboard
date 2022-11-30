@@ -292,6 +292,10 @@
       "value" : "Hoe kom ik aan de aanmeldbonus?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Deze aanbieding omvat een aanmeldbonus van {displayCurrency}{signOnBonus} op basis van de specifieke gegevens die hierboven zijn vermeld. Deze wordt uitgekeerd in meerdere termijnen, die kunnen worden verlengd tot 180 dagen nadat je bent gestart.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Deze specifieke aanbieding is mogelijk niet beschikbaar als:",
       "note" : "Text for how to sign on bonus popover content"

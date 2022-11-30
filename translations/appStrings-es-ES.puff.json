@@ -292,6 +292,10 @@
       "value" : "¿Cómo puedo obtener el bono de contratación?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta incluye un bono de contratación de {displayCurrency}{signOnBonus} según los detalles específicos mencionados anteriormente. Se puede pagar en varias cuotas que pueden prolongarse hasta 180 días después de que te incorpores.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Es posible que esta oferta específica no esté disponible si:",
       "note" : "Text for how to sign on bonus popover content"

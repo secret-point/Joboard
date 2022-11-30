@@ -292,6 +292,10 @@
       "value" : "¿Cómo recibo el bono de contratación?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta incluye un bono de contratación de {displayCurrency}{signOnBonus} según las especificaciones detalladas anteriormente. Se paga en varios plazos que pueden extenderse a 180 días después de comenzar.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica puede no estar disponible si:",
       "note" : "Text for how to sign on bonus popover content"
@@ -745,7 +749,7 @@
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de empleo: Desde/Hasta (MM/AA a MM/AA)",
+      "value" : "Fechas de empleo: Desde/Hasta (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {

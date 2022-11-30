@@ -292,6 +292,10 @@
       "value" : "كيف أحصل على مكافأة التسجيل؟",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "يتضمن هذا العرض مكافأة عند توقيع بدء العمل تصل إلى {displayCurrency}{signOnBonus} بناءً على التفاصيل المحددة أعلاه. يتم دفعها على أقساط متعددة قد تمتد إلى 180 يومًا بعد بدئك بالعمل.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "قد لا يكون هذا العرض المحدد متاحًا في الحالات التالية:",
       "note" : "Text for how to sign on bonus popover content"

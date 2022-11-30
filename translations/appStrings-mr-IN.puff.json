@@ -292,6 +292,10 @@
       "value" : "मला साइन ऑन बोनस कसा मिळतो?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "या ऑफरमध्ये वर नमूद केलेल्या विशिष्ट तपशीलांवर आधारित {displayCurrency}{signOnBonus} एवढ्या साइन ऑन बोनसचा समावेश आहे. हे एकाहून अधिक हप्त्यांवर देय आहे जे तुमच्या प्रारंभानंतर 180 दिवसांपर्यंत असू शकते.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ही विशिष्ट ऑफर उपलब्ध नसू शकते जर:",
       "note" : "Text for how to sign on bonus popover content"

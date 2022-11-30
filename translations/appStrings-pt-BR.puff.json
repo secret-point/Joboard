@@ -292,6 +292,10 @@
       "value" : "Como faço para obter o bônus de inscrição?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Esta oferta inclui um bônus de contratação de {displayCurrency} {signOnBonus} com base nos detalhes específicos mencionados acima. Você pagá-lo em várias parcelas, que podem se estender até 180 dias após o início.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Esta oferta específica pode não estar disponível se:",
       "note" : "Text for how to sign on bonus popover content"
