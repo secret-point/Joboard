@@ -15,14 +15,15 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import {
   SelfIdEthnicBackgroundItemsMap,
+  SelfIdEthnicValidValuesMap,
   SelfIdGenderRadioItemsMap,
   SelfIdPronounsItemsMap
 } from "../../../utils/constants/common";
+import { CountryCode } from "../../../utils/enums/common";
 import { getCountryCode, getDetailedRadioErrorMap, handleSubmitSelfIdEqualOpportunity } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { SelfIdEqualOpportunityStatus } from "../../../utils/types/common";
 import DetailedRadioError from "../DetailedRadioError";
-import { CountryCode } from "../../../utils/enums/common";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -40,7 +41,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const {candidateData} = candidate.results;
+  const { candidateData } = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [gender, setGender] = useState();
@@ -59,7 +60,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
     const isFormValid = !!gender && !!ethnicity && isPronounValid;
 
     if(isFormValid) {
-      const payload: SelfIdEqualOpportunityStatus = {gender, ethnicity, pronoun};
+      const payload: SelfIdEqualOpportunityStatus = { gender, ethnicity, pronoun };
       applicationData && handleSubmitSelfIdEqualOpportunity(applicationData, payload, stepConfig);
     }
     else {
@@ -70,7 +71,9 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
   };
 
   useEffect(() => {
-    setEthnicity(selfIdentificationInfoData?.ethnicity);
+    if (selfIdentificationInfoData?.ethnicity && SelfIdEthnicValidValuesMap[getCountryCode()].includes(selfIdentificationInfoData?.ethnicity)) {
+      setEthnicity(selfIdentificationInfoData?.ethnicity);
+    }
     setGender(selfIdentificationInfoData?.gender);
     setPronoun(selfIdentificationInfoData?.pronoun);
   }, [selfIdentificationInfoData]);

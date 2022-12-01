@@ -685,6 +685,16 @@ export const SelfIdEthnicBackgroundItemsMap: {[Key in CountryCode]: DetailedRadi
     [CountryCode.CA]: SelfIdEthnicBackgroundItems, // TODO: set to correct values once they're available
 }
 
+export const SelfIdEthnicValidValues: string[] = SelfIdEthnicBackgroundItems.map(item => item.value);
+
+export const MX_SelfIdEthnicValidValues: string[] = MX_SelfIdEthnicBackgroundItems.map(item => item.value);
+
+export const SelfIdEthnicValidValuesMap: {[Key in CountryCode]: string[]} = {
+    [CountryCode.US]: SelfIdEthnicValidValues,
+    [CountryCode.MX]: MX_SelfIdEthnicValidValues,
+    [CountryCode.CA]: SelfIdEthnicValidValues, // TODO: set to correct values once they're available
+}
+
 export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
     {
         title: "He",
