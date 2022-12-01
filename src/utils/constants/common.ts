@@ -139,7 +139,7 @@ export const MXStatesSelectOptions: StateSelectOption[] = [
     { displayValue: 'MEX -- Estado de México', value: 'Estado de México', translationKey: 'BB-MX-States-MEX', code: 'MEX' },
     { displayValue: 'GUA -- Guanajuato', value: 'Guanajuato', translationKey: 'BB-MX-States-GUA', code: 'GUA' },
     { displayValue: 'GRO -- Guerrero', value: 'Guerrero', translationKey: 'BB-MX-States-GRO', code: 'GRO' },
-    { displayValue: 'HID -- Hildago', value: 'Hildago', translationKey: 'BB-MX-States-HID', code: 'HID' },
+    { displayValue: 'HID -- Hidalgo', value: 'Hidalgo', translationKey: 'BB-MX-States-HID', code: 'HID' },
     { displayValue: 'JAL -- Jalisco', value: 'Jalisco', translationKey: 'BB-MX-States-JAL', code: 'JAL' },
     { displayValue: 'MIC -- Michoacán', value: 'Michoacán', translationKey: 'BB-MX-States-MIC', code: 'MIC' },
     { displayValue: 'MOR -- Morelos', value: 'Morelos', translationKey: 'BB-MX-States-MOR', code: 'MOR' },
