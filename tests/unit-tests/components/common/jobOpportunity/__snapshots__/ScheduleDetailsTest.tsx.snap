@@ -97,8 +97,10 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
         font="primary"
         fontSize="T100"
         hyphens="none"
-        key=""
-      />
+        key="01-01-2023"
+      >
+        01-01-2023
+      </Text>
     </Text>
   </Col>
   <Row
@@ -363,8 +365,10 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
         font="primary"
         fontSize="T100"
         hyphens="none"
-        key=""
-      />
+        key="01-01-2023"
+      >
+        01-01-2023
+      </Text>
     </Text>
   </Col>
   <Row

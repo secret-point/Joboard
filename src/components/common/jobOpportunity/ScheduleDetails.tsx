@@ -63,14 +63,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
   const shift = t("BB-Schedule-card-shift-required-dates","Required training dates");
 
   const renderShiftDate = () => {
-    const datesList: string[] = [];
-    const shiftDate = parsedTrainingDate?.split('\n')
-    shiftDate?.forEach((item) => {
-      const dateValue = formatFlexibleTrainingDate(item)
-      datesList.push(dateValue)
-    });
-
-    return datesList.map( (dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>))
+    return parsedTrainingDate?.split('\n').map((dateItem) => (<Text fontSize="T100" key={dateItem}>{dateItem}</Text>));
   }
 
   const renderRequiredLanguages = (): string => {
