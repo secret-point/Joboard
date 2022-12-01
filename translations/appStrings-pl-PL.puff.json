@@ -292,6 +292,10 @@
       "value" : "Jak uzyskać bonus za rejestrację?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Ta oferta obejmuje bonus za rejestrację w wysokości {signOnBonus} {displayCurrency} w oparciu o konkretne informacje wymienione powyżej. Bonus jest płatny w wielu ratach, które mogą być rozłożone na okres wynoszący nawet 180 dni po rozpoczęciu.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Ta konkretna oferta może nie być dostępna, jeśli:",
       "note" : "Text for how to sign on bonus popover content"

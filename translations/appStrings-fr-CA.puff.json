@@ -292,6 +292,10 @@
       "value" : "Comment obtenir le bonus d’inscription?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Cette offre comprend un bonus d’inscription de {displayCurrency}{signOnBonus} en fonction des détails précis susmentionnés. Il est payable en plusieurs versements qui peuvent s’étendre jusqu’à 180 jours après votre date d’embauche.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Cette offre particulière peut ne pas être disponible si :",
       "note" : "Text for how to sign on bonus popover content"

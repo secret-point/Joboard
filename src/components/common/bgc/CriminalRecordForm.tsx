@@ -202,7 +202,7 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
                                 {...textAreaProps}
                                 recommendedCharacterCount={500}
                                 getRecommendedCharactersText={({ characterCount, recommendedCharacterCount }) =>
-                                    t('BB-BGC-criminal-record-recommended-character-count-text', `${characterCount} characters entered. You can enter up to ${recommendedCharacterCount}.`, { characterCount, recommendedCharacterCount })
+                                    t('BB-BGC-criminal-record-recommended-character-count-text', `${characterCount} characters entered (max ${recommendedCharacterCount} characters)`, { characterCount, recommendedCharacterCount })
                                 }
                                 defaultValue={additionalBgc?.convictionDetails || ''}
                                 onChange={(e) => {

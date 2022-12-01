@@ -292,6 +292,10 @@
       "value" : "איך אקבל את מענק החתימה?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "מבצע זה כולל מענק חתימה בסך {displayCurrency}{signOnBonus} בהתבסס על הפרטים הספציפיים שצוינו למעלה. המענק ישולם במספר תשלומים בתהליך שעשוי לארוך עד כ-180 יום.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ייתכן שהצעה ספציפית זו לא תהיה זמינה אם:",
       "note" : "Text for how to sign on bonus popover content"

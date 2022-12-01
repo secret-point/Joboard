@@ -292,6 +292,10 @@
       "value" : "İşe başlama bonusunu nasıl alabilirim?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Bu teklife, yukarıda belirtilen özel ayrıntılara göre {displayCurrency}{signOnBonus} işe başlama ikramiyesi dahildir. Bu, siz başladıktan sonra 180 güne kadar uzayabilecek şekilde birden fazla taksitle ödenebilir.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Bu özel teklif şu durumlarda mevcut olmayabilir:",
       "note" : "Text for how to sign on bonus popover content"

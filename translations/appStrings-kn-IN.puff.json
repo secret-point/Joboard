@@ -292,6 +292,10 @@
       "value" : "ಬೋನಸ್‌ನಲ್ಲಿ ನಾನು ಚಿಹ್ನೆಯನ್ನು ಹೇಗೆ ಪಡೆಯುವುದು?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "ಈ ಕೊಡುಗೆಯು, ಮೇಲೆ ನಮೂದಿಸಿದ ನಿರ್ದಿಷ್ಟ ವಿವರಗಳ ಆಧಾರದ ಮೇಲೆ {displayCurrency}{signOnBonus} ನ ಬೋನಸ್ ಮೇಲೆ ಸೈನ್ ಅನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ನೀವು ಪ್ರಾರಂಭಿಸಿದ ನಂತರ 180 ದಿನಗಳವರೆಗೆ ವಿಸ್ತರಿಸಬಹುದಾದ ಹಲವು ಕಂತುಗಳಲ್ಲಿ ಇದನ್ನು ಪಾವತಿಸಬಹುದಾಗಿದೆ.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "ಹೀಗಿದ್ದಾಗ ಈ ನಿರ್ದಿಷ್ಟ ಕೊಡುಗೆ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು:",
       "note" : "Text for how to sign on bonus popover content"

@@ -292,6 +292,10 @@
       "value" : "Hur får jag registreringsbonusen?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Det här erbjudandet inkluderar en signeringsbonus på {displayCurrency}{signOnBonus} enligt nedanstående detaljer. Bonusen betalas ut i flera delbetalningar som kan sträcka sig över upp till 180 dagar efter att du har börjat.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Detta specifika erbjudande kanske inte är tillgängligt om:",
       "note" : "Text for how to sign on bonus popover content"

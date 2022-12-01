@@ -292,6 +292,10 @@
       "value" : "Hvordan får jeg en tilmeldingsbonus?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Dette tilbud omfatter en startbonus på {displayCurrency}{signOnBonus}, baseret på de specifikke oplysninger, der er anført ovenfor. Den betales over flere rater, der kan strække sig op til 180 dage efter du starter.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Dette specifikke tilbud er muligvis ikke tilgængeligt, hvis:",
       "note" : "Text for how to sign on bonus popover content"

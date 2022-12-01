@@ -292,6 +292,10 @@
       "value" : "サインオンボーナスはどうすればもらえますか？",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "このオファーには、上記の具体的な詳細に基づく{displayCurrency}{signOnBonus}のサインオンボーナスが含まれています。ボーナスの支払いは複数回の月払いで行われ、勤務開始から180日までかかることがあります。",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "以下の場合、この特別セールはご利用いただけない場合があります。",
       "note" : "Text for how to sign on bonus popover content"

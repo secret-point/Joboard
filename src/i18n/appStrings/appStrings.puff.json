@@ -576,7 +576,7 @@
         },
         "BB-BGC-criminal-record-recommended-character-count-text": {
             "note": "Text for criminal record conviction details recommended character count text",
-            "value": "{characterCount} characters entered. You can enter up to ${recommendedCharacterCount}."
+            "value": "{characterCount} characters entered (max {recommendedCharacterCount} characters)"
         },
         "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text": {
             "note": "Paragraph1 text to explain what report need to be collected from candidate on fcra form",

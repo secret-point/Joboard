@@ -573,7 +573,7 @@
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
-      "value" : "{characterCount} characters entered. You can enter up to ${recommendedCharacterCount}.",
+      "value" : "{characterCount} characters entered (max {recommendedCharacterCount} characters)",
       "note" : "Text for criminal record conviction details recommended character count text"
     },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {

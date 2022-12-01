@@ -292,6 +292,10 @@
       "value" : "Jak získám vstupní bonus?",
       "note" : "Text for how to sign on bonus popover title"
     },
+    "BB-Schedules-card-about-how-to-sign-bonus-content" : {
+      "value" : "Tato nabídka zahrnuje vstupní bonus ve výši {displayCurrency}{signOnBonus} na základě konkrétních podrobností uvedených výše. Ten je splatný v několika splátkách, které se mohou protáhnout až na 180 dní od Vašeho nástupu.",
+      "note" : "Text for how to sign on bonus popover content"
+    },
     "BB-Schedules-card-about-how-to-sign-bonus-content-point" : {
       "value" : "Tato konkrétní nabídka nemusí být k dispozici, pokud:",
       "note" : "Text for how to sign on bonus popover content"
