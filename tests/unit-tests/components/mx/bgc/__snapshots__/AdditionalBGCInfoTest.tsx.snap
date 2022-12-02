@@ -105,7 +105,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "BCN",
               "displayValue": "BCN -- Baja California",
               "translationKey": "BB-MX-States-BCN",
-              "value": "Baja California",
+              "value": "Baja California Norte",
             },
             Object {
               "code": "BCS",
@@ -147,7 +147,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "CMX",
               "displayValue": "CMX -- Ciudad de México",
               "translationKey": "BB-MX-States-CMX",
-              "value": "Ciudad de México",
+              "value": "Federal District",
             },
             Object {
               "code": "DUR",
@@ -159,7 +159,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "MEX",
               "displayValue": "MEX -- Estado de México",
               "translationKey": "BB-MX-States-MEX",
-              "value": "Estado de México",
+              "value": "Estado de Mexico",
             },
             Object {
               "code": "GUA",
@@ -189,7 +189,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "MIC",
               "displayValue": "MIC -- Michoacán",
               "translationKey": "BB-MX-States-MIC",
-              "value": "Michoacán",
+              "value": "Michoacan",
             },
             Object {
               "code": "MOR",
@@ -225,7 +225,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "QUE",
               "displayValue": "QUE -- Querétaro",
               "translationKey": "BB-MX-States-QUE",
-              "value": "Querétaro",
+              "value": "Queretaro",
             },
             Object {
               "code": "ROO",
@@ -279,7 +279,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
               "code": "YUC",
               "displayValue": "YUC -- Yucatán",
               "translationKey": "BB-MX-States-YUC",
-              "value": "Yucatán",
+              "value": "Yucatan",
             },
             Object {
               "code": "ZAC",
