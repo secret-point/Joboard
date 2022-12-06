@@ -572,6 +572,10 @@
       "value" : "నగరం, దేశం, నేరారోపణ జరిగిన రాష్ట్రం, తేదీ, నేరం యొక్క స్వభావం, శిక్షా సమాచారంతో పాటు అందించండి",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "నమోదు చేయబడిన అక్షరాలు {characterCount} (గరిష్టం {recommendedCharacterCount} అక్షరాలు)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Amazon.com, Inc., దాని అనుబంధ సంస్థలు లేదా దాని అనుబంధ సంస్థలతో(సమిష్టిగా, \"Amazon\") మీ ఉద్యోగ ఆఫర్‌కు సంబంధించి, Amazon మీ గురించి \"బ్యాక్‌గ్రౌండ్ చెక్ రిపోర్ట్\"గా సూచించబడే వినియోగదారు నివేదికను అభ్యర్థిస్తుందని ఈ బహిర్గతం మీకు తెలియజేస్తుంది.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

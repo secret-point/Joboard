@@ -572,6 +572,10 @@
       "value" : "Ange ort, land, dömande delstat, datum, typ av brott, tillsammans med information om brottspåföljden",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} inmatade tecken (max {recommendedCharacterCount} tecken)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Denna upplysning är avsedd att informera dig om att Amazon, i samband med ditt erbjudande om anställning hos Amazon.com, Inc. eller dess dotterbolag (kollektivt ”Amazon”), kommer att begära en konsumentrapport, även kallad en ”bakgrundskontroll” om dig.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

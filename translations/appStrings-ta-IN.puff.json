@@ -572,6 +572,10 @@
       "value" : "தண்டனை குறித்த தகவல்களுடன் நகரம், நாடு, தண்டனை நிலை, தேதி, குற்றத்தின் தன்மை ஆகியவற்றை வழங்கவும்",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} எழுத்துகள் உள்ளிடப்பட்டுள்ளன (அதிகபட்சம் {recommendedCharacterCount} எழுத்துகள்)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "இந்த வெளிப்பாடு Amazon.com, Inc., அதன் துணை நிறுவனங்கள் அல்லது அதன் இணை நிறுவனங்கள் (ஒட்டுமொத்தமாக, \"Amazon\") உடனான உங்கள் வேலை வாய்ப்பு தொடர்பாக, உங்களைப் பற்றிய \"பின்னணி சரிபார்ப்பு அறிக்கை\" என்று குறிப்பிடப்படும் நுகர்வோர் அறிக்கையை Amazon கோரும் என்பதை உங்களுக்குத் தெரிவிக்க விரும்புகிறது.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

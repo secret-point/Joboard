@@ -572,6 +572,10 @@
       "value" : "市、国、有罪判決の状態、日付、犯罪の性質、判決情報を提供する",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "入力文字数{characterCount} (最大文字数{recommendedCharacterCount})",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "この開示により、Amazon.com, Inc.、その子会社、またはその関連会社（総称して「Amazon」）での採用にあたって、Amazonがあなたに関する消費者レポート（「経歴調査レポート」とも呼ばれる）を請求することを通知します。",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

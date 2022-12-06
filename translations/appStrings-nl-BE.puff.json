@@ -572,6 +572,10 @@
       "value" : "Geef stad, land en staat van veroordeling, datum, aard van het misdrijf en informatie over de veroordeling op",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} tekens ingevoerd (max.{recommendedCharacterCount} tekens)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Deze openbaarmaking is bedoeld om je ervan op de hoogte te stellen dat Amazon in verband met je aanbod om te werken bij Amazon.com, Inc., haar dochterondernemingen of aan haar gelieerde ondernemingen (gezamenlijk “Amazon”), een consumentenrapport over jou zal opvragen, ook wel een “antecedentenonderzoekrapport” genoemd.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

@@ -572,6 +572,10 @@
       "value" : "ശിക്ഷാവിധിയുടെ വിവരങ്ങളോടൊപ്പം നഗരം, രാജ്യം, കുറ്റം ചുമത്തിയ സംസ്ഥാനം, തീയതി, കുറ്റകൃത്യത്തിന്റെ സ്വഭാവം എന്നിവ നൽകുക",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} പ്രതീകങ്ങൾ നൽകി (പരമാവധി {recommendedCharacterCount} പ്രതീകങ്ങൾ)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "ഈ വെളിപ്പെടുത്തൽ, Amazon.com, Inc., അതിന്റെ അനുബന്ധ സ്ഥാപനങ്ങൾ, അല്ലെങ്കിൽ ഉപഘടക സ്ഥാപനങ്ങൾ (മൊത്തത്തിൽ, \"Amazon\") എന്നിവയുമായുള്ള നിങ്ങളുടെ തൊഴിൽ വാഗ്ദാനവുമായി ബന്ധപ്പെട്ട്, നിങ്ങളെ കുറിച്ച് \"പശ്ചാത്തല പരിശോധന റിപ്പോർട്ട്\" എന്നും വിളിക്കപ്പെടുന്ന ഒരു ഉപഭോക്തൃ റിപ്പോർട്ട് Amazon അഭ്യർത്ഥിക്കുമെന്ന് നിങ്ങളെ അറിയിക്കാൻ ഉദ്ദേശിക്കുന്നു.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

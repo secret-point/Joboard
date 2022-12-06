@@ -572,6 +572,10 @@
       "value" : "Ceza bilgisi ile birlikte şehir, ülke, mahkumiyet durumu, tarih, suçun niteliğini sağlayın",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} karakter girildi (maksimum {recommendedCharacterCount} karakter)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Bu açıklama size, Amazon.com, Inc., yan kuruluşları veya bağlı kuruluşları (topluca “Amazon”) ile yaptığınız iş teklifiyle bağlantılı olarak, Amazon’un, hakkınızda “geçmiş kontrolü raporu” olarak da adlandırılan bir tüketici raporu isteyeceğini bildirmeyi amaçlamaktadır.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

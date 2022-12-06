@@ -572,6 +572,10 @@
       "value" : "יש לספק עיר, מדינה, מצב הרשעה, תאריך, אופי העבירה, יחד עם מידע על גזר הדין",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} תווים שהוזנו (מקסימום {recommendedCharacterCount} תווים)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "מטרתו של גילוי זה להודיע לך כי בהקשר להצעת העבודה שלך עם .Amazon.com, Inc., חברות הבת שלה או החברות המסונפות אליה (ביחד, \"Amazon\"), חברת Amazon תבקש דוח צרכנים, המכונה גם \"דוח בדיקת רקע\", אודותיך.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

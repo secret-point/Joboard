@@ -572,6 +572,10 @@
       "value" : "اذكر اسم المدينة، والبلد، وحالة الإدانة، والتاريخ، ونوع الجريمة، بالإضافة إلى معلومات العقوبة",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount}عدد الرموز التي تم إدخالها (الحد الأقصى {recommendedCharacterCount} رموز/رمزًا)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "يهدف هذا الكشف إلى إعلامك بأنه فيما يتعلق بعرضك للتوظيف مع Amazon.com, Inc. أو شركاتها الفرعية أو الشركات التابعة لها (يُشار إليها مجتمعة باسم «Amazon»)، ستطلب أمازون تقريرًا للمستهلك، يشار إليه أيضًا باسم «تقرير فحص الخلفية»، عنك.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

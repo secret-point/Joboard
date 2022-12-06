@@ -572,6 +572,10 @@
       "value" : "शिक्षेच्या माहितीसह शहर, देश, दोषी ठरवण्याची स्थिती, तारीख, गुन्ह्याचे स्वरूप प्रदान करा",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount}वर्ण प्रविष्ट केले (कमाल{recommendedCharacterCount} वर्ण)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "या डीसक्लोजरचा तुम्‍हाला सूचित करण्‍याचा उद्देश आहे की Amazon.com, Inc., त्यांच्या उपकंपनी किंवा त्यांच्या सहयोगी (एकत्रितपणे, \"Amazon\") सोबतच्‍या तुमच्‍या नोकरीच्‍या ऑफरच्‍या संदर्भात Amazon तुमच्यासंबंधित ग्राहक अहवालाची विनंती करेल, जे \"पार्श्वभूमी तपासणी अहवाल\" म्‍हणून देखील ओळखले जाते.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

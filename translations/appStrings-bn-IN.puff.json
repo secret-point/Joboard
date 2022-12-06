@@ -572,6 +572,10 @@
       "value" : "শহর, দেশ, দোষী সাব্যস্ত হওয়ার রাজ্য, তারিখ, অপরাধের প্রকৃতিসহ সাজা সংক্রান্ত তথ্য প্রদান করুন",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount}টি অক্ষর লিখা হয়েছে (সর্বোচ্চ {recommendedCharacterCount} অক্ষর)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "এই প্রকাশটি আপনাকে জানানোর জন্য যে Amazon.com, Inc., এর সহায়ক সংস্থাগুলি বা তার সহযোগীদের (সমষ্টিগতভাবে, “Amazon”) সাথে আপনার কর্মসংস্থানের প্রস্তাবের সাথে, Amazon একটি গ্রাহক প্রতিবেদনের অনুরোধ করবে, যা আপনার সম্পর্কে “ব্যাকগ্রাউন্ড চেক রিপোর্ট” হিসাবেও উল্লেখ করা হবে।",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

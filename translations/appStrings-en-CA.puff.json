@@ -572,6 +572,10 @@
       "value" : "Provide city, country, state of conviction, date and nature of the offence, along with sentencing information",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} characters entered (max {recommendedCharacterCount} characters)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "This disclosure intends to notify you that, in connection with your offer of employment with Amazon.com, Inc., its subsidiaries or its affiliates (collectively, \"Amazon\"), Amazon will request a consumer report, also referred to as a \"background check report\", about you.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

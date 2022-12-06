@@ -572,6 +572,10 @@
       "value" : "Uveďte město, zemi, stát odsouzení, datum, povahu trestného činu a informace o trestu",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "Počet zadaných znaků: {characterCount} (max. počet znaků: {recommendedCharacterCount})",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Cílem tohoto sdělení je upozornit Vás, že v souvislosti s Vaší nabídkou zaměstnání u společnosti Amazon.com, Inc., jejích dceřiných společností nebo přidružených společností (souhrnně „Amazon“), si společnost Amazon vyžádá zprávu o Vaší osobě, označovanou také jako „prověrka“.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
