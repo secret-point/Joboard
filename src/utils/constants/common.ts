@@ -783,6 +783,8 @@ export const SelfIdDisabilityRadioItem: DetailedRadioButtonItem[] = [
     }
 ]
 
+export const SelfIdDisabilityValidValues: string[] = SelfIdDisabilityRadioItem.map(item => item.value);
+
 export const DisabilityList: DisabilityItem[] = [
     {
         title: "Autism",

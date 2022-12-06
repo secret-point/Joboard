@@ -14,7 +14,7 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { SelfIdentificationState } from "../../../reducers/selfIdentification.reducer";
 import { CommonColors } from "../../../utils/colors";
-import { DisabilityList, SelfIdDisabilityRadioItem } from "../../../utils/constants/common";
+import { DisabilityList, SelfIdDisabilityRadioItem, SelfIdDisabilityValidValues } from "../../../utils/constants/common";
 import {
   handleSubmitSelfIdDisabilityStatus,
   isSelfIdentificationInfoValidBeforeDisability
@@ -66,7 +66,9 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   }
 
   useEffect(() => {
-    setDisability(selfIdentificationInfoData?.disability);
+    if (selfIdentificationInfoData?.disability && SelfIdDisabilityValidValues.includes(selfIdentificationInfoData?.disability)) {
+      setDisability(selfIdentificationInfoData?.disability);
+    }
   }, [selfIdentificationInfoData])
 
   useEffect(() => {
@@ -124,7 +126,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
                 titleText={t(titleTranslationKey, title)}
                 details={details ? t(detailsTranslationKey || "", details) : undefined}
                 key={title}
-                defaultChecked={selfIdentificationInfoData?.disability === value}
+                {...(selfIdentificationInfoData?.disability === value ? { defaultChecked: true } : {})}
                 onChange={() => setDisability(value)}
               />
             );

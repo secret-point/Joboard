@@ -26,9 +26,9 @@ import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActio
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
 import { PAGE_ROUTES } from "../components/pageRoutes";
-import { countryConfig, countryConfigType, CS_DOMAIN_LIST } from "../countryExpansionConfig";
 import { METRIC_NAME } from "../constants/adobe-analytics";
-import {initLogger, log, logError} from "../helpers/log-helper";
+import { countryConfig, countryConfigType, CS_DOMAIN_LIST } from "../countryExpansionConfig";
+import { initLogger, log, logError } from "../helpers/log-helper";
 import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
 import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
 import store, { history } from "../store/store";
@@ -49,6 +49,7 @@ import {
     NameRegexValidator,
     newBBUIPathName,
     SelfIdDisabilityRadioItem,
+    SelfIdDisabilityValidValues,
     SelfIdentificationConfigStepCountryMap,
     SelfIdEthnicBackgroundItemsMap,
     SelfIdGenderRadioItemsMap,
@@ -1191,12 +1192,12 @@ export const isSelfIdDisabilityStepCompleted = (selfIdInfo: SelfIdentificationIn
     const country = countryCode ? countryCode : getCountryCode();
     switch (country) {
         case CountryCode.US:
-            return !!disability;
+            return !!disability && SelfIdDisabilityValidValues.includes(disability);
         case CountryCode.MX:
-            return !!disability;
+            return !!disability && SelfIdDisabilityValidValues.includes(disability);
 
         default:
-            return !!disability;
+            return !!disability && SelfIdDisabilityValidValues.includes(disability);
     }
 }
 
@@ -1501,7 +1502,7 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
 
         // not print the feature flag value for MLS, since there are too many invocations.
         if (featureFlag !== FEATURE_FLAG.MLS) {
-            log(`logging the featureFlagName: ${featureFlag}, featureFlagResult: ${featureResult}`, {featureFlagValue: featureFlagList[featureFlag]})
+            log(`logging the featureFlagName: ${featureFlag}, featureFlagResult: ${featureResult}`, { featureFlagValue: featureFlagList[featureFlag] })
         }
         return featureResult;
     }
@@ -1529,13 +1530,13 @@ export const getCountryMappedFeatureFlag = (featureFlag: FEATURE_FLAG): FeatureF
     const featureFlagList: FeatureFlagList | undefined = envConfig?.featureList;
     if(featureFlagList) {
         const featureFlagsCountryMap = featureFlagList[featureFlag] as FeatureFlagsMapByCountry || undefined;
-        log(`loading brokenApplication feature flag for all countries: `, {featureFlagsCountryMap: featureFlagsCountryMap})
+        log(`loading brokenApplication feature flag for all countries: `, { featureFlagsCountryMap: featureFlagsCountryMap })
         return featureFlagsCountryMap;
     }
     return undefined;
 }
 
-export const isBrokenApplicationFeatureEnabled = (jobId: string, countryCode: CountryCode, featureFlagsCountryMap?: FeatureFlagsMapByCountry) : boolean => {
+export const isBrokenApplicationFeatureEnabled = (jobId: string, countryCode: CountryCode, featureFlagsCountryMap?: FeatureFlagsMapByCountry): boolean => {
     let isFeatureEnabled = false;
     const featureFlagForCountry = featureFlagsCountryMap?.[countryCode];
     try {
@@ -1544,11 +1545,11 @@ export const isBrokenApplicationFeatureEnabled = (jobId: string, countryCode: Co
             isFeatureEnabled = regex.test(jobId);
         }
         log(`calculating the broken applications feature flag for countryCode = ${countryCode}, jobId = ${jobId}, isFeatureEnabled = ${isFeatureEnabled},`
-          +`jobAllowList = ${featureFlagForCountry?.jobIdAllowList}, `, {featureFlagForCountry: featureFlagForCountry});
+          +`jobAllowList = ${featureFlagForCountry?.jobIdAllowList}, `, { featureFlagForCountry: featureFlagForCountry });
     } catch (e) {
         logError(`exception happened when do the regex match for countryCode = ${countryCode}, jobId = ${jobId}, `
           +`jobAllowList = ${featureFlagForCountry?.jobIdAllowList}, therefore the isFeatureEnabled = ${isFeatureEnabled}.`,
-          e, {featureFlagForCountry: featureFlagForCountry});
+          e, { featureFlagForCountry: featureFlagForCountry });
     }
     return isFeatureEnabled;
 }

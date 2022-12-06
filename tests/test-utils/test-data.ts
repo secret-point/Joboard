@@ -66,7 +66,7 @@ export const TEST_SELF_IDENTIFICATION: SelfIdentificationInfo = {
   veteran: "No",
   protectedVeteran:
     "No, I do not believe one or more of the above categories apply to me",
-  disability: "NO, I DON'T HAVE A DISABILITY",
+  disability: "NO, I DON’T HAVE A DISABILITY",
   disabilityDate: "2022-07-20T01:12:29.985Z",
   religion: "",
   otherReligion: "",
