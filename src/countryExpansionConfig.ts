@@ -18,6 +18,7 @@ export interface countryConfigType {
     desiredWorkHours: DESIRED_WORK_HOURS;
     nameRegexValidator: string;
     previousLegalNameRegexValidator: string;
+    addressRegexValidator: string;
     renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => string;
 }
 
@@ -38,6 +39,7 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+        addressRegexValidator: `^(?=\\S)[${alphanumeric}${specialChars} ]{1,}[${alphanumeric}${accentedChars}]$`,
         renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
             return signOnBonusL10N || `${currencyCode}${signOnBonus}`;
         },
@@ -53,6 +55,7 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,99}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,49}\\s[${alphabet}${specialChars},.'-]{1,49}$`,
+        addressRegexValidator: `^(?=\\S)[${alphanumeric}${specialChars},. ]{1,}[${alphanumeric}${accentedChars},.]$`,
         renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
             return `${currencyCode}${signOnBonusL10N}`;
         },
@@ -68,6 +71,7 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
         },
         nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
         previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+        addressRegexValidator: `^(?=\\S)[${alphanumeric}${specialChars} ]{1,}[${alphanumeric}${accentedChars}]$`,
         renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
             return signOnBonusL10N || `${currencyCode}${signOnBonus}`;
         },

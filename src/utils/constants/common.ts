@@ -355,7 +355,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-one-error-text',
-        regex: `^(?=\\S)[${alphanumeric}${specialChars} ]{1,}[${alphanumeric}${accentedChars}]$`,
+        regex: getCountryConfig(getCountryCode()).addressRegexValidator,
     },
     {
         hasError: false,
@@ -368,7 +368,7 @@ export const AdditionalBGCFormConfigPart1: FormInputItem[] = [
         type: 'text',
         labelTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-label-text',
         errorMessageTranslationKey: 'BB-BGC-Additional-bgc-form-address-line-two-error-text',
-        regex: `^(?=\\S)[${alphanumeric}${specialChars} ]{1,}[${alphanumeric}${accentedChars}]$`,
+        regex: getCountryConfig(getCountryCode()).addressRegexValidator,
     },
     {
         hasError: false,
