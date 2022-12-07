@@ -347,6 +347,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
   />
   <FormInputText
     defaultValue="*****9599"
+    handleBlur={[Function]}
     handleChange={[Function]}
     inputItem={
       Object {

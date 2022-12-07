@@ -1,11 +1,29 @@
-import React, { ChangeEvent, useEffect } from "react";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import React, { ChangeEvent, FocusEvent, useEffect } from "react";
+import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import {
     RenderNativeOptionFunction,
     RenderOptionFunction,
     ValueAccessor
 } from "@amzn/stencil-react-components/form";
-import PreviousLegalNameForm from "../../common/bgc/PreviousLegalNameForm";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import cloneDeep from "lodash/cloneDeep";
+import get from "lodash/get";
+import omit from "lodash/omit";
+import set from "lodash/set";
+import { connect } from "react-redux";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import {
+    boundSetCandidatePatchRequest,
+    boundUpdateCandidateInfoError
+} from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
+import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { BGCState } from "../../../reducers/bgc.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { JobState } from "../../../reducers/job.reducer";
+import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {
     MXAdditionalBGCFormConfigPart1,
     AdditionalBGCFormConfigPart2,
@@ -13,41 +31,23 @@ import {
     MXCRUPValue,
     MXIdNumberBgcFormConfig
 } from "../../../utils/constants/common";
-import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
-import FormInputText from "../../common/FormInputText";
-import DatePicker from "../../common/formDatePicker/DatePicker";
-import FormInputSelect from "../../common/FormInputSelect";
-import PreviousWorkedAtAmazonForm from "../../common/bgc/PreviousWorkedAtAmazonForm";
-import { ButtonVariant } from "@amzn/stencil-react-components/button";
-import { JobState } from "../../../reducers/job.reducer";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { BGCState } from "../../../reducers/bgc.reducer";
-import { CandidateState } from "../../../reducers/candidate.reducer";
-import { connect } from "react-redux";
-import get from "lodash/get";
-import cloneDeep from "lodash/cloneDeep";
-import set from "lodash/set";
-import {
-    boundSetCandidatePatchRequest,
-    boundUpdateCandidateInfoError
-} from "../../../actions/CandidateActions/boundCandidateActions";
 import { handleMXSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { METRIC_NAME } from "../../../constants/adobe-analytics";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
-import { resetIsPageMetricsUpdated } from "../../../helpers/utils";
+import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
+import PreviousLegalNameForm from "../../common/bgc/PreviousLegalNameForm";
+import PreviousWorkedAtAmazonForm from "../../common/bgc/PreviousWorkedAtAmazonForm";
 import DebouncedButton from "../../common/DebouncedButton";
-import omit from "lodash/omit";
+import DatePicker from "../../common/formDatePicker/DatePicker";
+import FormInputSelect from "../../common/FormInputSelect";
+import FormInputText from "../../common/FormInputText";
 
 interface MapStateToProps {
-    appConfig: AppConfig,
-    job: JobState,
-    application: ApplicationState,
-    schedule: ScheduleState,
-    bgc: BGCState
-    candidate: CandidateState
+    appConfig: AppConfig;
+    job: JobState;
+    application: ApplicationState;
+    schedule: ScheduleState;
+    bgc: BGCState;
+    candidate: CandidateState;
 }
 
 interface AdditionalBGCInfoProps {
@@ -68,7 +68,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
     let countryDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.country');
     let nationIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.governmentIdType');
-    let stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
+    const stateIdTypeDefaultValue = get(candidateData, 'additionalBackgroundInfo.address.state');
 
     // TODO: customized based on country
     if (!countryDefaultValue){
@@ -221,7 +221,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     }
 
     // TODO: handleSelectChange, handleDatePickerInput, handleInputChange to be replaced by this function
-    const SetNewCandidatePatchRequest = (patches: { dataKey: string, value: any }[]) => {
+    const SetNewCandidatePatchRequest = (patches: { dataKey: string; value: any }[]) => {
         const newCandidate  = cloneDeep(candidatePatchRequest) || {};
         patches.forEach(patch => set(newCandidate, patch.dataKey, patch.value));
         boundSetCandidatePatchRequest(newCandidate);
@@ -278,7 +278,11 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 inputValue={get(candidatePatchRequest, 'additionalBackgroundInfo.idNumber') || ''}
                 handleChange={(e: ChangeEvent<HTMLInputElement>) => {
                     const value = e.target.value || '';
-                    SetNewCandidatePatchRequest([{ value: value.trim().toUpperCase(), dataKey: 'additionalBackgroundInfo.idNumber'}])
+                    SetNewCandidatePatchRequest([{ value: value.trim(), dataKey: 'additionalBackgroundInfo.idNumber' }])
+                }}
+                handleBlur={(e: FocusEvent<HTMLInputElement>) => {
+                    const value = e.target.value || '';
+                    SetNewCandidatePatchRequest([{ value: value.trim().toUpperCase(), dataKey: 'additionalBackgroundInfo.idNumber' }])
                 }}
             />
             {
