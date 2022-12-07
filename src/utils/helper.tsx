@@ -44,6 +44,7 @@ import {
     HVH_LOCALE,
     IdNumberBgcFormConfig,
     initScheduleStateFilters,
+    localeToLanguageMap,
     MXAdditionalBGCFormConfig,
     MXCountrySelectOptions,
     NameRegexValidator,
@@ -1069,6 +1070,12 @@ export const fetchNheTimeSlotDs = (schedule: Schedule, applicationId: string, re
     }
 }
 
+export const renderNheSpokenLanguages = ( nheTimeSlot: NHETimeSlot ): string[][] => {
+    const supportedLanguages = Array.from(nheTimeSlot.spokenLanguageAlternatives, locale => localeToLanguageMap[locale as Locale || getDefaultLocale()]);
+
+    return supportedLanguages;
+}
+
 export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string => {
     const timeRange = nheTimeSlot.timeRange || '';
     const state = nheTimeSlot.location.state || '';
@@ -1796,3 +1803,30 @@ export const shouldPrefillAdditionalBgcInfo = (countryCode?: string, overrideCou
 
     return countryCode === systemCountryCode;
 }
+
+export const nheGroupByLanguage = (nheData: NHETimeSlot[]) => {
+    const nheGroups = new Map<String, NHETimeSlot[]>([
+        ['current', []],
+        ['other', []]
+    ]);
+
+    if (!nheData) {
+        return nheGroups;
+    }
+
+    nheData.forEach((nheItem) => {
+        if (!nheItem.spokenLanguageAlternatives || nheItem.spokenLanguageAlternatives.length <= 0) {
+            if (getLocale() === getDefaultLocale()) {
+                nheGroups.set('current', [...(nheGroups.get('current') ?? []), nheItem]);
+            } else {
+                nheGroups.set('other', [...(nheGroups.get('other') ?? []), nheItem]);
+            }
+        } else if (nheItem.spokenLanguageAlternatives.includes(getLocale())) {
+            nheGroups.set('current', [...(nheGroups.get('current') ?? []), nheItem]);
+        } else {
+            nheGroups.set('other', [...(nheGroups.get('other') ?? []), nheItem]);
+        }
+    });
+
+    return nheGroups;
+};

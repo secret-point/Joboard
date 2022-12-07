@@ -21,13 +21,15 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList } from "../../../utils/constants/common";
-import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getLocale, handleConfirmNHESelection } from "../../../utils/helper";
+import { ApplicationStepList, localeToLanguageMap } from "../../../utils/constants/common";
+import { checkAndBoundGetApplication, fetchNheTimeSlotDs, getDefaultLocale, getLocale, handleConfirmNHESelection, nheGroupByLanguage } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { NHETimeSlot } from "../../../utils/types/common";
+import { Locale, NHETimeSlot } from "../../../utils/types/common";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import StepHeader from "../../common/StepHeader";
 import DebouncedButton from "../../common/DebouncedButton";
+import { getCountryConfig } from "../../../countryExpansionConfig";
+import { CountryCode } from "../../../utils/enums/common";
 
 interface MapStateToProps {
     job: JobState;
@@ -54,6 +56,9 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
     const {scheduleDetail} = schedule.results;
     const candidateData = candidate.results?.candidateData;
     const {nheData} = nhe.results;
+    const nheGroups = nheGroupByLanguage(nheData);
+    const nheGroupsCurrentLanguageCount = nheGroups.get('current')?.length || 0;
+    const nheGroupsOtherLanguageCount = nheGroups.get('other')?.length || 0;
     const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
 
     useEffect(() => {
@@ -125,11 +130,29 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
                 </Col>
                 <Col padding={{top: 'S400'}} gridGap={15}>
                     {
-                        nheData.map(nheItem => (
-                          <NheTimeSlotCard
-                            nheTimeSlot={nheItem} key={nheItem.timeSlotId}
-                            handleChange={(nheSlotTIme: NHETimeSlot) => setSelectedNhe(nheSlotTIme)}
-                          />
+                        nheGroupsCurrentLanguageCount > 0 && nheGroupsOtherLanguageCount > 0 && <H4 className="nheGroupingHeader">
+                            {`${t(`BB-nhe-time-slots-available-in-language-${nheGroupsCurrentLanguageCount == 1 ? 'singular' : 'plural'}`, `${nheGroupsCurrentLanguageCount} time slot${nheGroupsCurrentLanguageCount == 1 ? '' : 's'} available in ${t(...localeToLanguageMap[getLocale()])}`, {numberOfAppointments:nheGroupsCurrentLanguageCount, currentLanguage: t(...localeToLanguageMap[getLocale()])})}`}
+                        </H4>
+                    }
+                    {
+                        nheGroups.get('current')?.map(nheItem => (
+                            <NheTimeSlotCard
+                                nheTimeSlot={nheItem} key={nheItem.timeSlotId}
+                                handleChange={(nheSlotTime: NHETimeSlot) => setSelectedNhe(nheSlotTime)}
+                            />
+                        ))
+                    }
+                    {
+                        nheGroupsCurrentLanguageCount > 0 && nheGroupsOtherLanguageCount > 0 && <H4 className="nheGroupingHeader">
+                            {`${t(`BB-nhe-time-slots-in-other-languages-${nheGroupsOtherLanguageCount == 1 ? 'singular' : 'plural'}`, `${nheGroupsOtherLanguageCount} time slot${nheGroupsOtherLanguageCount == 1 ? '' : 's'} available in other languages`, {numberOfAppointments: nheGroupsOtherLanguageCount})}`}
+                        </H4>
+                    }
+                    {
+                        nheGroups.get('other')?.map(nheItem => (
+                            <NheTimeSlotCard
+                                nheTimeSlot={nheItem} key={nheItem.timeSlotId}
+                                handleChange={(nheSlotTime: NHETimeSlot) => setSelectedNhe(nheSlotTime)}
+                            />
                         ))
                     }
                 </Col>

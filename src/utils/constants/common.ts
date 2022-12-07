@@ -1030,8 +1030,15 @@ export const MX_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
     },
 }
 
-export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: SelfIdentificationConfig }  = {
+export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: SelfIdentificationConfig } = {
     [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
     [CountryCode.US]: US_SelfIdentificationConfigSteps,
     [CountryCode.CA]: US_SelfIdentificationConfigSteps, // TODO: set to correct values once they're available
+}
+
+export const localeToLanguageMap: { [key in Locale]: [string, string] } = {
+    "en-GB": ['BB-Constants-language-english', 'English'],
+    "en-US": ['BB-Constants-language-english', 'English'],
+    "es-US": ['BB-Constants-language-spanish', 'Spanish'],
+    "es-MX": ['BB-Constants-language-spanish', 'Spanish'],
 }

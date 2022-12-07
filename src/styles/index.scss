@@ -50,6 +50,16 @@ a {
   }
 }
 
+#jobOpportunityContainer .nheGroupingHeader {
+  margin-top: 1rem;
+}
+
+[data-test-id="nheTimeSlotCard"] {
+  .nheSpokenLanguage {
+    margin-bottom: 12px;
+  }
+}
+
 .scheduleListContainer {
   width: 100%;
 

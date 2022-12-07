@@ -572,6 +572,10 @@
       "value" : "ನಗರ, ದೇಶ, ಅಪರಾಧದ ಸ್ಥಿತಿ, ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಲಾಗಿದೆ (ಗರಿಷ್ಠ {recommendedCharacterCount} ಅಕ್ಷರಗಳು)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "ಈ ಬಹಿರಂಗಪಡಿಸುವಿಕೆಯು Amazon.com, Inc., ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳು ಅಥವಾ ಅದರ ಅಂಗಸಂಸ್ಥೆಗಳೊಂದಿಗೆ (ಒಟ್ಟಾರೆಯಾಗಿ, “Amazon”) ಉದ್ಯೋಗದ ಪ್ರಸ್ತಾಪಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ, Amazon ಗ್ರಾಹಕರ ವರದಿಯನ್ನು ವಿನಂತಿಸುತ್ತದೆ, ಇದನ್ನು ನಿಮ್ಮ ಬಗ್ಗೆ “ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆ ವರದಿ” ಎಂದೂ ಕರೆಯಲಾಗುತ್ತದೆ.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

@@ -572,6 +572,10 @@
       "value" : "Indique a cidade, o país, o estado da condenação, a data e a natureza do crime, juntamente com informações sobre a sentença",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} carateres inseridos ({recommendedCharacterCount} carateres no máx.)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Esta divulgação pretende notificá-lo de que, em relação à sua oferta de emprego na Amazon.com, Inc., suas subsidiárias ou suas afiliadas (coletivamente, \"Amazon\"), a Amazon solicitará um relatório de consumidor, também referido como \"relatório de verificação de antecedentes\", sobre si.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"

@@ -173,6 +173,7 @@ export interface NHETimeSlot {
     dateWithoutFormat: string;
     childRequisitionId: string;
     nheSource: string;
+    spokenLanguageAlternatives: string[];
 }
 
 export interface NheTimeSlotLocation {

@@ -253,6 +253,7 @@ export const NHE_TIMESLOT: NHETimeSlot = {
   dateWithoutFormat: "04/08/2022",
   childRequisitionId: "",
   nheSource: "Centralization",
+  spokenLanguageAlternatives: ["en-US", "es-US"],
 };
 
 export const TEST_APPLICATION: any = {
@@ -599,6 +600,7 @@ export const TEST_NHE_TIME_SLOT: NHETimeSlot = {
   dateWithoutFormat: "11/08/2022",
   childRequisitionId: "",
   nheSource: "Centralization",
+  spokenLanguageAlternatives: ["en-US", "es-US"],
 };
 
 export const TEST_DAYS_HOURS_FILTER: DayHoursFilter[] = [

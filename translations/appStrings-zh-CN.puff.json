@@ -572,6 +572,10 @@
       "value" : "提供城市、国家/地区、定罪情况、犯罪的性质与日期以及量刑相关信息",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "已输入 {characterCount} 个字符（最多 {recommendedCharacterCount} 个字符）",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "公开此信息旨在通知您，在您获得 Amazon.com, Inc.、其子公司或其附属公司（统称为“亚马逊”）的入职通知时，亚马逊会获取一份您的消费者报告，也称为“背景调查报告”。",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
