@@ -69,7 +69,8 @@ import {
   setEpicApiCallErrorMessage,
   shouldPrefillAdditionalBgcInfo,
   showErrorMessage,
-  validateInput
+  validateInput,
+  validateNonFcraSignatures,
 } from "../../../src/utils/helper";
 
 
@@ -985,3 +986,46 @@ test("shouldPrefillAdditionalBgcInfo", () => {
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.CA)).toBeFalsy();
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.MX)).toBeTruthy();
 })
+
+describe("validateNonFcraSignatures()",()=>{
+  it("catches an invalid acknowledgment signature",()=>{
+    expect(validateNonFcraSignatures("m","cool")).toEqual({
+      hasError:true,
+      ackESignHasError:true,
+      noticeESignHasError:false,
+      mismatchError:true,
+    });
+  });
+  it("catches an invalid state notice signature",()=>{
+    expect(validateNonFcraSignatures("mittens","")).toEqual({
+      hasError:true,
+      ackESignHasError:false,
+      noticeESignHasError:true,
+      mismatchError:true,
+    });
+  });
+  it("catches both invalid acknowledgement and state notice signatures",()=>{
+    expect(validateNonFcraSignatures("m","m")).toEqual({
+      hasError:true,
+      ackESignHasError:true,
+      noticeESignHasError:true,
+      mismatchError:false,
+    });
+  });
+  it("catches a mismatch signature",()=>{
+    expect(validateNonFcraSignatures("ma","ca")).toEqual({
+      hasError:true,
+      ackESignHasError:false,
+      noticeESignHasError:false,
+      mismatchError:true,
+    });
+  });
+  it("allows through valid signatures",()=>{
+    expect(validateNonFcraSignatures("mittens","mittens")).toEqual({
+      hasError:false,
+      ackESignHasError:false,
+      noticeESignHasError:false,
+      mismatchError:false,
+    });
+  });
+});
