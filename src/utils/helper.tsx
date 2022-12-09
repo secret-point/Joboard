@@ -814,15 +814,40 @@ export const handleMXUpdateNonFCRABGCStep = (stepConfig: BgcMXStepConfig) => {
     boundUpdateStepConfigAction(request);
 }
 
-export const validateNonFcraSignatures = ( nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
+export const validateNonFcraSignatures = ( applicationData: Application, nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
     let errorStatus: NonFcraFormErrorStatus = {
         hasError: false,
-        ackESignHasError: !validateName(nonFcraAckEsign),
-        noticeESignHasError: !validateName(nonFcraNoticeEsign),
-        mismatchError: nonFcraNoticeEsign !== nonFcraAckEsign,
+        ackESignHasError: false,
+        noticeESignHasError: false
     }
 
-    errorStatus.hasError = errorStatus.ackESignHasError || errorStatus.noticeESignHasError === true || errorStatus.mismatchError === true;
+    const fcraQuestions = applicationData?.fcraQuestions;
+    const bgcDisclosureEsign = fcraQuestions?.bgcDisclosureEsign.signature;
+
+    if(!validateName(nonFcraAckEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            ackESignHasError: true
+        }
+    }
+
+    if(!validateName(nonFcraNoticeEsign)) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            noticeESignHasError: true
+        }
+    }
+
+    //first check if there two signature are equal
+    if(nonFcraNoticeEsign !== nonFcraAckEsign) {
+        errorStatus = {
+            ...errorStatus,
+            hasError: true,
+            noticeESignHasError: true
+        }
+    }
 
     return errorStatus
 }

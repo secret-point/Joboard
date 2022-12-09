@@ -45,13 +45,9 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
     const [requestedCopyOfBGC, setRequestedCopyOfBGC] = useState(!!nonFcraQuestions?.requestedCopyOfBackgroundCheck);
     const [nonFcraAckEsign, setNonFcraAckEsign] = useState(nonFcraQuestions?.nonFcraAcknowledgementEsign.signature || '');
     const [nonFcraNoticeEsign, setNonFcraNoticeEsign] = useState(nonFcraQuestions?.nonFcraStateNoticeEsign.signature || '');
-
-    const [errorMessageAckSignature,setErrorMessageAckSignature] = useState<string|undefined>();
-    const [errorMessageNoticeSignature, setErrorMessageNoticeSignature] = useState<string|undefined>();
-
-    // intentionally re-using the fcra input error text instead of creating a new error message
-    const [errorMessageSignatureInvalid] = useState(t('BB-BGC_fcra-disclosure-signature-input-error-text','Please enter a valid full name following format: First Last'));
-    const [errorMessageSignatureMismatch] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
+    const [isAckSignatureValid, setIsAckSignatureValid] = useState(true);
+    const [isNoticeSignatureValid, setIsNoticeSignatureValid] = useState(true);
+    const [errorMessage, setErrorMessage] = useState(t('BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-error-text','eSignatures do not match. Please use the same text for each eSignature.'));
 
     const pageName = METRIC_NAME.NON_FCRA;
 
@@ -72,19 +68,12 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
         boundResetBannerMessage();
         if(applicationData) {
             const errorStatus: NonFcraFormErrorStatus =
-                validateNonFcraSignatures(nonFcraAckEsign.trim(), nonFcraNoticeEsign.trim());
+                validateNonFcraSignatures(applicationData, nonFcraAckEsign.trim(), nonFcraNoticeEsign.trim());
 
-            const { hasError, ackESignHasError, noticeESignHasError, mismatchError } = errorStatus;
+            const { hasError, ackESignHasError, noticeESignHasError } = errorStatus;
 
-            let errorMessageAckSignature = ackESignHasError ? errorMessageSignatureInvalid : undefined;
-            let errorMessageNoticeSignature = noticeESignHasError ? errorMessageSignatureInvalid : undefined;
-            if(mismatchError){
-                errorMessageAckSignature = errorMessageSignatureMismatch;
-                errorMessageNoticeSignature = errorMessageSignatureMismatch;
-            }
-
-            setErrorMessageNoticeSignature(errorMessageNoticeSignature);
-            setErrorMessageAckSignature(errorMessageAckSignature);
+            setIsNoticeSignatureValid(!noticeESignHasError);
+            setIsAckSignatureValid(!ackESignHasError);
 
             if(hasError) {
                 return;
@@ -167,8 +156,8 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     labelText={`${t("BB-BGC-non-fcra-acknowledgement-and-authorization-eSignature-input-label-text", "Please type your full name as eSignature")} *`}
                     id="fcraFullNameInputOne"
                     required
-                    error={!!errorMessageAckSignature}
-                    footer={errorMessageAckSignature}
+                    error={!isAckSignatureValid}
+                    footer={!isAckSignatureValid ? errorMessage: undefined}
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">
@@ -202,8 +191,8 @@ export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
                     labelText={`${t("BB-BGC-non-fcra-applicable-notice-signature-input-label-text", "Please type your full name as eSignature")} *`}
                     id="fcraFullNameInputTwo"
                     required
-                    error={!!errorMessageNoticeSignature}
-                    footer={errorMessageNoticeSignature}
+                    error={!isNoticeSignatureValid}
+                    footer={!isNoticeSignatureValid ? errorMessage : undefined}
                     renderLabel={() => (
                         <Row justifyContent="space-between" style={{ fontWeight: 400 }}>
                             <Text fontSize="T200">

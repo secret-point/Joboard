@@ -815,7 +815,6 @@ export interface NonFcraFormErrorStatus {
     hasError: boolean;
     ackESignHasError: boolean;
     noticeESignHasError?: boolean;
-    mismatchError?: boolean;
 }
 export interface GetNheTimeSlotRequestDs {
     requisitionServiceScheduleDetails: {
