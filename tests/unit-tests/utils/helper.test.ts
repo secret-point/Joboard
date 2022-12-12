@@ -36,7 +36,7 @@ import {
   getCountryCodeByCountryName,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
-  getMXCountryCodeByCountryName,
+  getMXCountryCodeByCountryName, getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
   GetSelfIdentificationConfigStep,
   handleConfirmNHESelection,
@@ -69,7 +69,7 @@ import {
   setEpicApiCallErrorMessage,
   shouldPrefillAdditionalBgcInfo,
   showErrorMessage,
-  validateInput
+  validateInput, validateNonFcraSignatures
 } from "../../../src/utils/helper";
 
 
@@ -984,4 +984,63 @@ test("shouldPrefillAdditionalBgcInfo", () => {
   //Mexico
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.CA)).toBeFalsy();
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.MX)).toBeTruthy();
-})
+});
+
+describe("validateNonFcraSignatures()",()=>{
+  it("catches an invalid acknowledgment signature",()=>{
+    expect(validateNonFcraSignatures("m","cool")).toEqual({
+      hasError:true,
+      ackESignHasError:true,
+      noticeESignHasError:false,
+      mismatchError:true,
+    });
+  });
+  it("catches an invalid state notice signature",()=>{
+    expect(validateNonFcraSignatures("mittens","")).toEqual({
+      hasError:true,
+      ackESignHasError:false,
+      noticeESignHasError:true,
+      mismatchError:true,
+    });
+  });
+  it("catches both invalid acknowledgement and state notice signatures",()=>{
+    expect(validateNonFcraSignatures("m","m")).toEqual({
+      hasError:true,
+      ackESignHasError:true,
+      noticeESignHasError:true,
+      mismatchError:false,
+    });
+  });
+  it("catches a mismatch signature",()=>{
+    expect(validateNonFcraSignatures("ma","ca")).toEqual({
+      hasError:true,
+      ackESignHasError:false,
+      noticeESignHasError:false,
+      mismatchError:true,
+    });
+  });
+  it("allows through valid signatures",()=>{
+    expect(validateNonFcraSignatures("mittens","mittens")).toEqual({
+      hasError:false,
+      ackESignHasError:false,
+      noticeESignHasError:false,
+      mismatchError:false,
+    });
+  });
+});
+
+describe("getNonFcraSignatureErrorMessages()",()=>{
+  test.each([
+    {ack:"a",notice:"b",ackError:"signature invalid",noticeError:"signature invalid"},
+    {ack:"a",notice:"a",ackError:"signature invalid",noticeError:"signature invalid"},
+    {ack:"a",notice:"good",ackError:"signature invalid",noticeError:undefined},
+    {ack:"good",notice:"a",ackError:undefined,noticeError:"signature invalid"},
+    {ack:"bad",notice:"mismatch",ackError:"signature mismatch",noticeError:"signature mismatch"},
+    {ack:"good",notice:"good",ackError:undefined,noticeError:undefined},
+  ])("it correctly handles %p",({ack,notice,ackError,noticeError})=>{
+    expect(getNonFcraSignatureErrorMessages(validateNonFcraSignatures(ack,notice),"signature invalid","signature mismatch")).toEqual({
+      errorMessageAckSignature:ackError,
+      errorMessageNoticeSignature:noticeError,
+    });
+  });
+});

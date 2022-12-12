@@ -815,42 +815,41 @@ export const handleMXUpdateNonFCRABGCStep = (stepConfig: BgcMXStepConfig) => {
     boundUpdateStepConfigAction(request);
 }
 
-export const validateNonFcraSignatures = ( applicationData: Application, nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
+export const validateNonFcraSignatures = ( nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
     let errorStatus: NonFcraFormErrorStatus = {
         hasError: false,
-        ackESignHasError: false,
-        noticeESignHasError: false
+        ackESignHasError: !validateName(nonFcraAckEsign),
+        noticeESignHasError: !validateName(nonFcraNoticeEsign),
+        mismatchError: nonFcraNoticeEsign !== nonFcraAckEsign,
     }
 
-    const fcraQuestions = applicationData?.fcraQuestions;
-    const bgcDisclosureEsign = fcraQuestions?.bgcDisclosureEsign.signature;
-
-    if(!validateName(nonFcraAckEsign)) {
-        errorStatus = {
-            ...errorStatus,
-            hasError: true,
-            ackESignHasError: true
-        }
-    }
-
-    if(!validateName(nonFcraNoticeEsign)) {
-        errorStatus = {
-            ...errorStatus,
-            hasError: true,
-            noticeESignHasError: true
-        }
-    }
-
-    //first check if there two signature are equal
-    if(nonFcraNoticeEsign !== nonFcraAckEsign) {
-        errorStatus = {
-            ...errorStatus,
-            hasError: true,
-            noticeESignHasError: true
-        }
-    }
+    errorStatus.hasError = errorStatus.ackESignHasError || errorStatus.noticeESignHasError === true || errorStatus.mismatchError === true;
 
     return errorStatus
+}
+
+export const getNonFcraSignatureErrorMessages = (errorStatus:NonFcraFormErrorStatus,errorMessageSignatureInvalid:string,errorMessageSignatureMismatch:string)=>{
+    const {ackESignHasError, noticeESignHasError, mismatchError } = errorStatus;
+
+    let errorMessageAckSignature = undefined;
+    let errorMessageNoticeSignature = undefined;
+
+    if(ackESignHasError  && noticeESignHasError){
+        errorMessageAckSignature = errorMessageSignatureInvalid;
+        errorMessageNoticeSignature = errorMessageSignatureInvalid;
+    } else if(ackESignHasError && !noticeESignHasError){
+        errorMessageAckSignature = errorMessageSignatureInvalid;
+    } else if(noticeESignHasError && !ackESignHasError){
+        errorMessageNoticeSignature = errorMessageSignatureInvalid;
+    } else if(mismatchError){
+        errorMessageAckSignature = errorMessageSignatureMismatch;
+        errorMessageNoticeSignature = errorMessageSignatureMismatch;
+    }
+
+    return {
+        errorMessageAckSignature,
+        errorMessageNoticeSignature,
+    }
 }
 
 export const validateMXNonFcraSignatures = ( applicationData: Application, nonFcraAckEsign: string ): NonFcraFormErrorStatus => {
