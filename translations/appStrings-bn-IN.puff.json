@@ -1288,9 +1288,29 @@
       "value" : "প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের সময়সূচী নির্ধারণ করুন",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments}টি টাইম স্লট {currentLanguage}তে উপলভ্য",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments}টি টাইম স্লট অন্যান্য ভাষায় উপলভ্য",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments}টি টাইম স্লট {currentLanguage} তে উপলভ্য",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments}টি টাইম স্লট অন্যান্য ভাষায় উপলভ্য",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "খুব কম জায়গা অবশিষ্ট রয়েছে",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "কথ্য ভাষা",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "ভেটেরান স্ট্যাটাসের স্বেচ্ছায় স্ব-পরিচয়",

@@ -1865,6 +1865,10 @@
             "note": "error message when fetch head count request failed",
             "value": "Unable to fetch head count request."
         },
+        "BB-proxy-error-message-user-unauthorized": {
+            "note": "error message when user is unauthorized",
+            "value": "User is unauthorized."
+        },
         "BB-get-time-slots-error-message-all-shift-filled": {
             "note": "error message when all appointment time slots are filled",
             "value": "All Shifts Filled."

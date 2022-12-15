@@ -1288,9 +1288,29 @@
       "value" : "安排聘前約見",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{currentLanguage} 的 {numberOfAppointments} 個時段可用",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "其他語言的 {numberOfAppointments} 個時段可用",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{currentLanguage} 的 {numberOfAppointments} 個時段可用",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "其他語言的 {numberOfAppointments} 個時段可用",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "剩下的名額很少",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "口說語言",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "自願進行退伍軍人身份自我鑑定",

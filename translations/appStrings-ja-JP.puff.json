@@ -1288,9 +1288,29 @@
       "value" : "雇用前予約をスケジュールする",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments}{currentLanguage}で利用可能なタイムスロット",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments}他の言語で利用可能なタイムスロット",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments}{currentLanguage}で利用可能なタイムスロット",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments}他の言語で利用可能なタイムスロット",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "残っているスポットはごくわずかです",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "話し言語",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "任意による退役軍人ステータスの自己識別",

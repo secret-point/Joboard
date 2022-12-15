@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
 import isNull from "lodash/isNull";
 import { ApiError } from "../utils/api/types";
-import { BB_UI_VERSION } from "../utils/enums/common";
+import { BB_UI_VERSION, PROXY_ERROR_MESSAGE } from "../utils/enums/common";
 import { log, LoggerType } from "./log-helper";
 import { pathByDomain, redirectToLoginCSDS } from "./utils";
 
@@ -37,6 +37,16 @@ export const requestHandler = (config: AxiosRequestConfig) => {
   return config;
 };
 
+const getErrorCode = (error: AxiosError): string => {
+  if (error.response?.data?.errorCode) {
+    return error.response?.data?.errorCode;
+  }
+  if (error.response?.status === 401) {
+    return PROXY_ERROR_MESSAGE.USER_UNAUTHORIZED;
+  }
+  return "API_ERROR";
+};
+
 export const errorHandler = (error: AxiosError) => {
   console.error(error);
   if (isHandlerEnabled(error.config)) {
@@ -66,7 +76,7 @@ export const errorHandler = (error: AxiosError) => {
     ...error,
     // no API_ERROR in the error mapping, so they will fall back to the default error code and message
     // it's only used in logging to differentiate with the normal proxy error for now
-    errorCode: error.response?.data?.errorCode || "API_ERROR",
+    errorCode: getErrorCode(error),
     errorMessage: error.response?.data?.errorMessage || error.message,
   } as ApiError);
 };

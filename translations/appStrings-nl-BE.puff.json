@@ -1288,9 +1288,29 @@
       "value" : "Afspraak vóór indiensttreding plannen",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments} tijdslot beschikbaar in {currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments} tijdslot beschikbaar in andere talen",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments} tijdvakken beschikbaar in {currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments} tijdvakken beschikbaar in andere talen",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "Nog maar heel weinig plekken over",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "Gesproken taal",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "Vrijwillige zelfidentificatie van veteranenstatus",

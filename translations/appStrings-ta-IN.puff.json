@@ -1288,9 +1288,29 @@
       "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்குத் திட்டமிடுதல்",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{currentLanguage} மொழியில் {numberOfAppointments} நேர ஸ்லாட் உள்ளது",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "மற்ற மொழிகளில் {numberOfAppointments} நேர ஸ்லாட் உள்ளது",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{currentLanguage} மொழியில் {numberOfAppointments} நேர ஸ்லாட்டுகள் உள்ளன",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "மற்ற மொழிகளில் {numberOfAppointments} நேர ஸ்லாட்டுகள் உள்ளன",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "மிகக் குறைவான இடங்களே எஞ்சியுள்ளன",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "பேசும் மொழி",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "படைவீரர் அந்தஸ்தின் தன்னார்வ சுய-அடையாளம்",

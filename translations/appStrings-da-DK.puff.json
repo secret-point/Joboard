@@ -572,6 +572,10 @@
       "value" : "Angiv by, land, domsforhold, dato, lovovertrædelsens art sammen med straffeinformation",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} indtastede tegn (højst {recommendedCharacterCount} tegn)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Denne oplysning har til hensigt at underrette dig om, at Amazon i forbindelse med dit tilbud om ansættelse hos Amazon.com, Inc., dets datterselskaber eller dets tilknyttede selskaber (samlet „Amazon“) vil anmode om en forbrugerrapport, også kaldet en „baggrundstjek-rapport“ om dig.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
@@ -1283,6 +1287,22 @@
     "BB-nhe-page-header-text" : {
       "value" : "Book aftale før ansættelse",
       "note" : "Text for the nhe page header text"
+    },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments} tidsinterval tilgængelig i {currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments} tidsinterval tilgængelig på andre sprog",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments} tidsintervaller tilgængelige i {currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments} tidsintervaller tilgængelige på andre sprog",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
     },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "Meget få pladser tilbage",

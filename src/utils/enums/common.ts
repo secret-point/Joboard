@@ -175,6 +175,7 @@ export enum PROXY_APPLICATION_STATE {
 }
 
 export enum PROXY_ERROR_MESSAGE {
+    USER_UNAUTHORIZED = "USER_UNAUTHORIZED",
     //application
     BGC_VALIDATION_FAILED = "Additional background information is not valid, Please update all required fields",
     MISSING_REFERRAL_INFORMATION = "Missing referral information",

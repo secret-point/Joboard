@@ -572,6 +572,10 @@
       "value" : "सजा की जानकारी के साथ शहर, देश, सजा की स्थिति, तारीख, अपराध की प्रकृति प्रदान करें",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "डाले गए {characterCount} वर्ण (अधिकतम {recommendedCharacterCount} वर्ण)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "यह प्रकटीकरण का इरादा आपको सूचित करना है कि Amazon.com, Inc., इसकी सहायक कंपनियों या इसके सहयोगियों (सामूहिक रूप से, “Amazon”) के साथ आपके रोजगार की पेशकश के संबंध में, Amazon एक उपभोक्ता रिपोर्ट का अनुरोध करेगा, जिसे आपके बारे में “बैकग्राउंड चेक रिपोर्ट” भी कहा जाता है.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
@@ -1287,6 +1291,10 @@
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "बहुत कम स्पॉट बाकी हैं",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "बोली जाने वाली भाषा",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "वेटरन स्टेटस की स्वैच्छिक स्व-पहचान",

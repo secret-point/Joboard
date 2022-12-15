@@ -6,6 +6,7 @@ import {
   GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
+  PROXY_ERROR_MESSAGE,
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
@@ -276,6 +277,10 @@ export const GetScheduleDetailErrorMessage: { [key: string]: ApiErrorMessage } =
   [GET_SCHEDULE_DETAIL_ERROR_CODE.FETCH_HCR_ERROR]: {
     translationKey: "BB-get-schedule-detail-error-message-fetch-hch-error",
     value: "Unable to fetch head count request."
+  },
+  [PROXY_ERROR_MESSAGE.USER_UNAUTHORIZED]: {
+    translationKey: "BB-proxy-error-message-user-unauthorized",
+    value: "User is unauthorized."
   }
 }
 

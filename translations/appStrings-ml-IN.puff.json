@@ -1288,9 +1288,29 @@
       "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ് ഷെഡ്യൂള്‍ ചെയ്യുക",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{currentLanguage}-ൽ {numberOfAppointments} ടൈം സ്ലോട്ട് ലഭ്യമാണ്",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "മറ്റ് ഭാഷകളിൽ {numberOfAppointments} ടൈം സ്ലോട്ട് ലഭ്യമാണ്",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{currentLanguage}-ൽ {numberOfAppointments} ടൈം സ്ലോട്ടുകൾ ലഭ്യമാണ്",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "മറ്റ് ഭാഷകളിൽ {numberOfAppointments} ടൈം സ്ലോട്ടുകൾ ലഭ്യമാണ്",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "വളരെ കുറച്ച് അവസരങ്ങൾ അവശേഷിക്കുന്നു",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "സംസാര ഭാഷ",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "വെറ്ററൻ സ്റ്റാറ്റസിന്‍റെ സ്വമേധയായുള്ള സ്വയം തിരിച്ചറിയൽ",

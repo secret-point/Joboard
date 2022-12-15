@@ -572,6 +572,10 @@
       "value" : "Gib Ort, Land, Bundesstaat/Bundesland der Verurteilung, Datum, Art der Straftat sowie Informationen zum Strafmaß an",
       "note" : "Text to Criminal record conviction details label text"
     },
+    "BB-BGC-criminal-record-recommended-character-count-text" : {
+      "value" : "{characterCount} Zeichen eingegeben (max. {recommendedCharacterCount} Zeichen)",
+      "note" : "Text for criminal record conviction details recommended character count text"
+    },
     "BB-BGC-fcra-disclosure-bgc-explanation-paragraph1-text" : {
       "value" : "Mit dieser Mitteilung möchten wir dich darüber informieren, dass Amazon im Zusammenhang mit deinem Stellenangebot bei Amazon.com, Inc., seinen Tochtergesellschaften oder verbundenen Unternehmen (zusammen „Amazon“) einen Verbraucherbericht, auch „Hintergrundprüfungs-Bericht“ genannt, über dich anfordern wird.",
       "note" : "Paragraph1 text to explain what report need to be collected from candidate on fcra form"
@@ -1284,9 +1288,29 @@
       "value" : "Einen Termin vor der Einstellung vereinbaren",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments} Termin verfügbar in{currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments} Termin in anderen Sprachen verfügbar",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments} Termine verfügbar in{currentLanguage}",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments} Termine in anderen Sprachen verfügbar",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "Sehr wenige Plätze verbleibend",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "Gesprochene Sprache",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "Freiwillige Selbstauskunft zum Veteranenstatus",

@@ -1288,9 +1288,29 @@
       "value" : "प्री-हायर अपॉइंटमेंट शेड्यूल करा",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{numberOfAppointments}वेळ स्लॉट उपलब्ध{currentLanguage}मध्ये",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "{numberOfAppointments}इतर भाषांमध्ये वेळ स्लॉट उपलब्ध",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{numberOfAppointments}वेळ स्लॉट उपलब्ध{currentLanguage}मध्ये",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "{numberOfAppointments}वेळ स्लॉट इतर भाषांमध्ये उपलब्ध",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "फार कमी जागा शिल्लक आहेत",
       "note" : "Text for the nhe page few spots remaining text"
+    },
+    "BB-nhe-spoken-language" : {
+      "value" : "बोलली जाणारी भाषा",
+      "note" : "Text for the spoken languages in interview appointment"
     },
     "BB-SelfId-veteran-status-title-text" : {
       "value" : "व्हेटेरन स्थितीची ऐच्छिक स्व-ओळख",
