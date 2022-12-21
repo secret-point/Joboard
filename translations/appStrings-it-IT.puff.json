@@ -1864,6 +1864,10 @@
       "value" : "Impossibile recuperare la richiesta di conteggio degli effettivi.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "L'utente non è autorizzato.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Tutti i turni sono pieni.",
       "note" : "error message when all appointment time slots are filled"

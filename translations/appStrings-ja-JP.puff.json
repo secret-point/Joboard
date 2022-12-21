@@ -1864,6 +1864,10 @@
       "value" : "採用可能数リクエストを取得できません。",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "ユーザーは権限がありません。",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "すべてのシフトが埋まっています。",
       "note" : "error message when all appointment time slots are filled"

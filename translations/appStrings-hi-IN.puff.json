@@ -1288,6 +1288,22 @@
       "value" : "प्री-हायर अपॉइंटमेंट शेड्यूल करें",
       "note" : "Text for the nhe page header text"
     },
+    "BB-nhe-time-slots-available-in-language-singular" : {
+      "value" : "{currentLanguage} में {numberOfAppointments} टाइम स्लॉट उपलब्ध हैं",
+      "note" : "Text for list of nhe appointments available in the current selected language when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-in-other-languages-singular" : {
+      "value" : "अन्य भाषाओं में {numberOfAppointments} टाइम स्लॉट उपलब्ध हैं",
+      "note" : "Text for list of nhe appointments available in other languages when only 1 slot is available"
+    },
+    "BB-nhe-time-slots-available-in-language-plural" : {
+      "value" : "{currentLanguage} में {numberOfAppointments} टाइम स्लॉट उपलब्ध हैं",
+      "note" : "Text for list of nhe appointments available in the current selected language when 0 or more slots are available"
+    },
+    "BB-nhe-time-slots-in-other-languages-plural" : {
+      "value" : "अन्य भाषाओं में {numberOfAppointments} टाइम स्लॉट उपलब्ध हैं",
+      "note" : "Text for list of nhe appointments available in other languages when 0 or more slots are available"
+    },
     "BB-nhe-few-spots-remaining-text" : {
       "value" : "बहुत कम स्पॉट बाकी हैं",
       "note" : "Text for the nhe page few spots remaining text"
@@ -1847,6 +1863,10 @@
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
       "value" : "हेड काउंट अनुरोध प्राप्त करने में असमर्थ हैं.",
       "note" : "error message when fetch head count request failed"
+    },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "उपयोगकर्ता अनधिकृत है.",
+      "note" : "error message when user is unauthorized"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "सभी शिफ्ट भर गई हैं.",

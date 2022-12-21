@@ -1864,6 +1864,10 @@
       "value" : "ഹെഡ് കൗണ്ട് അഭ്യർത്ഥന ലഭ്യമാക്കാൻ കഴിയുന്നില്ല.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "അംഗീകാരമില്ലാത്ത ഉപയോക്താവാണ്.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "എല്ലാ ഷിഫ്റ്റുകളും നിറഞ്ഞു.",
       "note" : "error message when all appointment time slots are filled"

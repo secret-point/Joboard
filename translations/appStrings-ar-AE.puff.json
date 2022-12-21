@@ -1864,6 +1864,10 @@
       "value" : "غير قادر على جلب طلب عدد الأشخاص.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "المستخدم غير مصرح به.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "تم ملء جميع المناوبات.",
       "note" : "error message when all appointment time slots are filled"

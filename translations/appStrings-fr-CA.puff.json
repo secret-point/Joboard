@@ -1864,6 +1864,10 @@
       "value" : "Impossible de chercher la demande avec cet effectif.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "L'utilisateur n'est pas autorisé.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Tous les quarts de travail sont occupés.",
       "note" : "error message when all appointment time slots are filled"

@@ -1864,6 +1864,10 @@
       "value" : "நபர்களின் எண்ணிக்கை குறித்த கோரிக்கையைப் பெற முடியவில்லை.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "பயனர் அங்கீகரிக்கப்படவில்லை.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "அனைத்து ஷிஃப்ட்களும் நிரம்பிவிட்டன.",
       "note" : "error message when all appointment time slots are filled"

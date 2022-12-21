@@ -1864,6 +1864,10 @@
       "value" : "हेड काऊंट विनंती आणण्यात अक्षम.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "वापरकर्ता अनधिकृत आहे.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "सर्व शिफ्ट्स भरले.",
       "note" : "error message when all appointment time slots are filled"

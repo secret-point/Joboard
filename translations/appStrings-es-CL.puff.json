@@ -1864,6 +1864,10 @@
       "value" : "No se puede obtener la solicitud del recuento de cabezas.",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "El usuario no está autorizado.",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Todos los turnos están completos.",
       "note" : "error message when all appointment time slots are filled"

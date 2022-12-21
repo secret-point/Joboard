@@ -1864,6 +1864,10 @@
       "value" : "মাথা গণনার অনুরোধ আনা যাচ্ছে না।",
       "note" : "error message when fetch head count request failed"
     },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "ব্যবহারকারী অননুমোদিত।",
+      "note" : "error message when user is unauthorized"
+    },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "সব শিফট পূরণ করা হয়েছে।",
       "note" : "error message when all appointment time slots are filled"
