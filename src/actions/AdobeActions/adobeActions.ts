@@ -61,6 +61,13 @@ const addLocaleToMetric = ( metric: any = {} ) => {
   }
 };
 
+const addIttkToMetric = ( metric: any = {}, pageName: string ) => {
+  metric.page.ittk = Unspecified;
+  if (metric && metric.page && (pageName === 'contingent-offer' || pageName === 'thank-you')) {
+    metric.page.ittk = new URLSearchParams(window.location.href).get('ittk') || Unspecified;
+  }
+};
+
 const addCountryCodeToMetric = ( metric: any = {} ) => {
   return metric.countryCode = getCountryCode().toLowerCase();
 };
@@ -76,6 +83,7 @@ export const addMetricForPageLoad = ( pageName: string ) => {
       if(!isEmpty(dataLayer)) {
         addLocaleToMetric(dataLayer);
         addCountryCodeToMetric(dataLayer);
+        addIttkToMetric(dataLayer, pageName);
         sendDataLayerAdobeAnalytics(dataLayer);
         isPageMetricsUpdated[pageName] = true;
         window.isPageMetricsUpdated = isPageMetricsUpdated;
