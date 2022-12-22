@@ -825,7 +825,7 @@ export const DisabilityList: DisabilityItem[] = [
     },
     {
         title: "Diabetes",
-        translationKeyTitle: "BB-SelfId-disability-form-disability-item-depression-or-anxiety-text"
+        translationKeyTitle: "BB-SelfId-disability-form-disability-item-diabetes-text"
     },
     {
         title: "Epilepsy",
