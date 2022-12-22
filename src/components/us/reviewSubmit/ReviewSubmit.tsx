@@ -233,7 +233,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           </Text>
 
           <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-veteral-status-text", "Veteral Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran, countryCode)}
+            {t("BB-ReviewSubmit-selfId-section-veteran-status-text", "Veteran Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.veteran, countryCode)}
           </Text>
 
           <Text fontSize="T100">

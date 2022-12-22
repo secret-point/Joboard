@@ -1440,10 +1440,6 @@
       "value" : "Igualdad de oportunidades:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
-    "BB-ReviewSubmit-selfId-section-veteral-status-text" : {
-      "value" : "Condición de veterano:",
-      "note" : "Text for the voluntary self-identification section veteral status text"
-    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Condición de discapacidad:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1863,6 +1859,10 @@
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
       "value" : "No se puede obtener la solicitud de número de trabajadores.",
       "note" : "error message when fetch head count request failed"
+    },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "El usuario no está autorizado.",
+      "note" : "error message when user is unauthorized"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Todos los turnos completos.",

@@ -29,12 +29,6 @@ var endpointMap = {
 	"de-DE": {
 		appStrings: "translation-de.json"
 	},
-	el: {
-		appStrings: "translation-el.json"
-	},
-	"el-GR": {
-		appStrings: "translation-el.json"
-	},
 	en: {
 		appStrings: "translation-en.json"
 	},
@@ -142,12 +136,6 @@ var endpointMap = {
 	},
 	"mr-IN": {
 		appStrings: "translation-mr.json"
-	},
-	ms: {
-		appStrings: "translation-ms.json"
-	},
-	"ms-MY": {
-		appStrings: "translation-ms.json"
 	},
 	nl: {
 		appStrings: "translation-nl.json"
