@@ -119,7 +119,7 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   },
   [UPDATE_APPLICATION_ERROR_CODE.INVALID_SSN]: {
     translationKey: "BB-update-application-error-message-invalid-ssn",
-    value: "Update to application failed because provided National Identity Number is invalid. Please enter correct and complete National Identity Number before proceeding."
+    value: "The format of the National Identity Number is invalid. Please enter the correct format to proceed."
   },
   [UPDATE_APPLICATION_ERROR_CODE.TYPE_OF_REQUEST_MISSING]: {
     translationKey: "BB-update-application-error-message-type-of-request-missing",

@@ -177,6 +177,19 @@ export const Consent = (props: MapStateToProps) => {
                     {t("BB-ConsentPage-create-application-button", "Create Application")}
                 </DebouncedButton>
             </dl>
+            <Col
+                className="consentDisabilityAccommodationText"
+                gridGap={15}
+                padding={{ top: 'S400', bottom: 'S400', left: 'S300', right: 'S300' }}
+            >
+                <Text fontSize="T100">
+                    <InnerHTML html={t("BB-ConsentPage-consent-disability-accommodation-text", "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and require an accommodation during the application and hiring process, please contact the Applicant-Candidate Accommodation Team (ACAT) at 888-435-9287, Monday through Friday 6 AM to 4 PM Pacific Time. For more information, please visit <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",{
+                        // https://github.com/i18next/react-i18next/issues/387 - colons don't work right without this
+                        nsSeparator: false,
+                        keySeparator: false,
+                    })} />
+                </Text>
+            </Col>
         </Col>
     );
 };

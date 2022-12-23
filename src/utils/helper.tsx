@@ -1,8 +1,8 @@
 import React from "react";
 import "moment/locale/es";
-import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import {MessageBannerType} from "@amzn/stencil-react-components/message-banner";
 import Cookies from "js-cookie";
-import { isArray, isBoolean } from "lodash";
+import {isArray, isBoolean} from "lodash";
 import capitalize from "lodash/capitalize";
 import get from "lodash/get";
 import isEmpty from "lodash/isEmpty";
@@ -12,27 +12,24 @@ import range from "lodash/range";
 import set from "lodash/set";
 import moment from "moment";
 import queryString from "query-string";
-import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
-import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
-import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
-import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
-import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
-import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
-import {
-    boundGetScheduleListByJobId,
-    boundUpdateScheduleFilters
-} from "../actions/ScheduleActions/boundScheduleActions";
-import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
-import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
-import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
-import { PAGE_ROUTES } from "../components/pageRoutes";
-import { METRIC_NAME } from "../constants/adobe-analytics";
-import { countryConfig, countryConfigType, CS_DOMAIN_LIST } from "../countryExpansionConfig";
-import { initLogger, log, logError } from "../helpers/log-helper";
-import { get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer } from "../helpers/utils";
-import { initScheduleMXState, initScheduleState } from "../reducers/bgc.reducer";
-import store, { history } from "../store/store";
-import { ApiError } from "./api/types";
+import {UpdateApplicationRequest} from "../@types/candidate-application-service-requests";
+import {postAdobeMetrics} from "../actions/AdobeActions/adobeActions";
+import {boundGetApplication, boundUpdateApplicationDS} from "../actions/ApplicationActions/boundApplicationActions";
+import {boundUpdateStepConfigAction} from "../actions/BGC_Actions/boundBGCActions";
+import {boundUpdateCandidateInfoError} from "../actions/CandidateActions/boundCandidateActions";
+import {boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs} from "../actions/NheActions/boundNheAction";
+import {boundGetScheduleListByJobId, boundUpdateScheduleFilters} from "../actions/ScheduleActions/boundScheduleActions";
+import {boundUpdateSelfIdStepConfig} from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import {boundResetBannerMessage, boundSetBannerMessage} from "../actions/UiActions/boundUi";
+import {onCompleteTaskHelper} from "../actions/WorkflowActions/workflowActions";
+import {PAGE_ROUTES} from "../components/pageRoutes";
+import {METRIC_NAME} from "../constants/adobe-analytics";
+import {countryConfig, countryConfigType, CS_DOMAIN_LIST} from "../countryExpansionConfig";
+import {initLogger, log, logError} from "../helpers/log-helper";
+import {get3rdPartyFromQueryParams, jobIdSanitizer, requisitionIdSanitizer} from "../helpers/utils";
+import {initScheduleMXState, initScheduleState} from "../reducers/bgc.reducer";
+import store, {history} from "../store/store";
+import {ApiError} from "./api/types";
 import {
     GetScheduleListByJobIdRequest,
     SelectedScheduleForUpdateApplication,
@@ -73,7 +70,7 @@ import {
     SELF_IDENTIFICATION_STEPS,
     UPDATE_APPLICATION_API_TYPE
 } from "./enums/common";
-import { translate, translate as t } from "./translator";
+import {translate, translate as t} from "./translator";
 import {
     AdditionalBackgroundInfoRequest,
     Address,
@@ -674,12 +671,29 @@ export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: bool
     if(newSSN && newSSN.includes("***") && newSSN === oldSNN){
         return true;
     }
-    else if( newSSN && validateInput(newSSN, required, regex)){
-        return true;
+    else if(newSSN){
+        if(getFeatureFlagValue(FEATURE_FLAG.VALIDATE_SSN_EXTRA)) {
+            if (new RegExp(regex).test(newSSN.trim())) {
+                // apply even more validations
+                if (newSSN === "123456789") {
+                    return false;
+                }
+                if (newSSN.startsWith("666")) {
+                    return false;
+                }
+                if (newSSN.startsWith("9")) {
+                    return false;
+                }
+                if (newSSN.endsWith("0000")) {
+                    return false;
+                }
+                return true;
+            }
+        } else if(validateInput(newSSN, required, regex)){
+            return true;
+        }
     }
-    else {
-        return false;
-    }
+    return false;
 }
 
 export const isDOBOverEighteen = (dateOfBirth: string) => {
@@ -1506,8 +1520,8 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
     if(featureFlagList){
         const featureResult = (featureFlagList[featureFlag] as FeatureFlag)?.isAvailable || false;
 
-        // not print the feature flag value for MLS, since there are too many invocations.
-        if (featureFlag !== FEATURE_FLAG.MLS) {
+        // don't print the feature flag for these, it will pollute the logs
+        if ([FEATURE_FLAG.MLS,FEATURE_FLAG.VALIDATE_SSN_EXTRA].includes(featureFlag)) {
             log(`logging the featureFlagName: ${featureFlag}, featureFlagResult: ${featureResult}`, { featureFlagValue: featureFlagList[featureFlag] })
         }
         return featureResult;

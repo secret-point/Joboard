@@ -57,7 +57,7 @@ import {
   isSelfIdentificationInfoValid,
   isSelfIdentificationInfoValidBeforeDisability,
   isSelfIdEqualOpportunityStepCompleted,
-  isSelfIdVeteranStepCompleted,
+  isSelfIdVeteranStepCompleted, isSSNValid,
   onAssessmentStart,
   parseObjectToQueryString,
   parseQueryParamsArrayToSingleItem,
@@ -71,8 +71,11 @@ import {
   showErrorMessage,
   validateInput, validateNonFcraSignatures
 } from "../../../src/utils/helper";
+import store from "../../../src/store/store";
+import Mock = jest.Mock;
+import SpyInstance = jest.SpyInstance;
 
-
+jest.mock("../../../src/helpers/log-helper");
 
 describe('processAssessmentUrl', () => {
   const locale = 'en-US';
@@ -1042,5 +1045,160 @@ describe("getNonFcraSignatureErrorMessages()",()=>{
       errorMessageAckSignature:ackError,
       errorMessageNoticeSignature:noticeError,
     });
+  });
+});
+
+describe("isSSNValid()",()=>{
+  let storeGetStateSpy:SpyInstance;
+  beforeEach(()=>{
+    storeGetStateSpy = jest.spyOn(store,"getState");
+  })
+  afterEach(()=>{
+    storeGetStateSpy.mockReset();
+  })
+  it("returns false when patchCandidate payload is empty",()=>{
+    expect(isSSNValid(null,false,"")).toEqual(false);
+  });
+  it("returns true when isWithoutSSN=true and newSSN is empty",()=>{
+    storeGetStateSpy.mockReturnValueOnce({});
+    expect(isSSNValid({
+      additionalBackgroundInfo:{
+        idNumber:"",
+        isWithoutSSN:true,
+      }
+    },true,"")).toEqual(true);
+    expect(storeGetStateSpy).toHaveBeenCalled();
+  });
+  it("returns true when the prefilled ssn from the candidate matches the current ssn",()=>{
+    storeGetStateSpy.mockReturnValueOnce({
+      candidate:{
+        results:{
+          candidateData:{
+            additionalBackgroundInfo:{
+              idNumber:"*****1234"
+            }
+          }
+        }
+      }
+    });
+    expect(isSSNValid({
+      additionalBackgroundInfo:{
+        idNumber:"*****1234",
+      }
+    },true,"")).toEqual(true);
+    expect(storeGetStateSpy).toHaveBeenCalled();
+  });
+  it("returns false when isWithoutSSN=false and newSSN is empty",()=>{
+    storeGetStateSpy.mockReturnValueOnce({});
+    expect(isSSNValid({
+      additionalBackgroundInfo:{
+        idNumber:"",
+        isWithoutSSN:false,
+      }
+    },true,"")).toEqual(false);
+    expect(storeGetStateSpy).toHaveBeenCalled();
+  });
+  describe("when VALIDATE_SSN_EXTRA is disabled",()=>{
+    it("returns true when the ssn matches the regex",()=>{
+      storeGetStateSpy
+          .mockReturnValueOnce({})
+          .mockReturnValueOnce({
+            appConfig:{
+              results:{
+                envConfig:{
+                  featureList:{
+                    // feature flag doesn't even exist yet
+                  }
+                }
+              }
+            }
+          });
+      expect(isSSNValid({
+        additionalBackgroundInfo:{
+          idNumber:"  123456789   "
+        }
+      },true,"^[0-9]{9}$")).toEqual(true);
+      expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
+    });
+    it("returns false when the ssn doesn't match the regex",()=>{
+      storeGetStateSpy
+          .mockReturnValueOnce({})
+          .mockReturnValueOnce({
+            appConfig:{
+              results:{
+                envConfig:{
+                  featureList:{
+                    // feature flag doesn't even exist yet
+                  }
+                }
+              }
+            }
+          });
+      expect(isSSNValid({
+        additionalBackgroundInfo:{
+          idNumber:"12345678"
+        }
+      },true,"^[0-9]{9}$")).toEqual(false);
+      expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
+    });
+  });
+  describe("when VALIDATE_SSN_EXTRA is enabled",()=>{
+    it.each([
+      "12345678",
+      "123456789",
+      "666789987",
+      "914523478",
+      "456120000"
+    ])("returns false when the ssn is %s",(ssn)=>{
+      storeGetStateSpy
+          .mockReturnValueOnce({})
+          .mockReturnValueOnce({
+            appConfig:{
+              results:{
+                envConfig:{
+                  featureList:{
+                    VALIDATE_SSN_EXTRA:{
+                      isAvailable:true,
+                    }
+                  }
+                }
+              }
+            }
+          });
+      expect(isSSNValid({
+        additionalBackgroundInfo:{
+          idNumber:ssn,
+        }
+      },true,"^[0-9]{9}$")).toEqual(false);
+      expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
+    });
+    it.each([
+      "876543219",
+      "123456788",
+      "667891234",
+      "145612000"
+    ])("returns true when the ssn is %s",(ssn)=>{
+      storeGetStateSpy
+          .mockReturnValueOnce({})
+          .mockReturnValueOnce({
+            appConfig:{
+              results:{
+                envConfig:{
+                  featureList:{
+                    VALIDATE_SSN_EXTRA:{
+                      isAvailable:true,
+                    }
+                  }
+                }
+              }
+            }
+          });
+      expect(isSSNValid({
+        additionalBackgroundInfo:{
+          idNumber:ssn,
+        }
+      },true,"^[0-9]{9}$")).toEqual(true);
+      expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
+    })
   });
 });
