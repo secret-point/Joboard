@@ -124,6 +124,10 @@
       "value" : "acconsenti che Amazon conservi i tuoi dati personali dopo la procedura di candidatura, al fine di assisterla nel monitoraggio efficace dei suoi processi di candidatura e l'archiviazione dei tuoi dati personali in un database elettronico negli Stati Uniti.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "La nostra cultura inclusiva consente agli Amazonian di fornire ai nostri clienti i risultati migliori. Se hai una disabilità e hai bisogno di un trattamento particolare durante il processo di candidatura e assunzione, contatta il team trattamenti speciali candidati (ACAT) al numero 888-435-9287, dal lunedì al venerdì dalle 6:00 alle 16:00, ora del Pacifico. Per ulteriori informazioni, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Visualizza avanzamento",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Pari opportunità:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Status di veterano:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Stato di disabilità:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Aggiornamento della candidatura non riuscito perché il numero di documento di identità fornito non è valido. Inserisci il numero di documento di identità corretto e completo prima di procedere.",
+      "value" : "Il formato del numero di identità nazionale non è valido. Inserisci il formato corretto per procedere.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

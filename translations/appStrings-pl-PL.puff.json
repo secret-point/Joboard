@@ -124,6 +124,10 @@
       "value" : "wyrażenie zgody na przechowywanie przez firmę Amazon Twoich danych osobowych po zakończeniu procesu rekrutacji w celu ułatwienia jej skutecznego monitorowania procesów składania podania o pracę oraz przechowywania Twoich danych osobowych w elektronicznej bazie danych w USA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nasza kultura inkluzji społecznej umożliwia pracownikom Amazon osiąganie najlepszych wyników dla naszych klientów. Jeśli jesteś osobą niepełnosprawną i potrzebujesz dostosowania środowiska w trakcie składania wniosku i procesu rekrutacji, skontaktuj się z zespołem ds. dostosowania środowiska dla kandydatów (ACAT) pod numerem 888-435-9287, od poniedziałku do piątku w godzinach od 6:00 do 16:00 czasu pacyficznego. Aby uzyskać więcej informacji, odwiedź witrynę <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Zobacz postęp",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Równość szans:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Status weterana:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Status niepełnosprawności:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Aktualizacja wniosku nie powiodła się, ponieważ podany krajowy numer identyfikacyjny jest nieprawidłowy. Przed kontynuowaniem wprowadź poprawny i pełny krajowy numer identyfikacyjny.",
+      "value" : "Format krajowego numeru identyfikacyjnego (NIN) jest nieprawidłowy. Wpisz w poprawnym formacie, aby kontynuować.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

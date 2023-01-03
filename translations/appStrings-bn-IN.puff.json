@@ -124,6 +124,10 @@
       "value" : "আবেদন প্রক্রিয়ার পরে Amazon-কে আপনার ব্যক্তিগত তথ্য ধরে রাখতে সম্মতি দিন, যার মাধমে আপনি Amazon-কে চাকরির আবেদন প্রক্রিয়াগুলির কার্যকর পর্যবেক্ষণে এবং মার্কিন যুক্তরাষ্ট্রে একটি ইলেকট্রনিক ডাটাবেসে আপনার ব্যক্তিগত তথ্য সংরক্ষণে সহায়তা করতে পারবেন।",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "আমাদের অভ্যন্তরীণ সংস্কৃতি Amazonian-দের আমাদের গ্রাহকদের জন্য সেরা ফলাফল প্রদান করতে ক্ষমতা প্রদান করে। আপনার যদি অক্ষমতা থাকে এবং আবেদন ও নিয়োগ প্রক্রিয়া চলাকালীন কোনো সুবিধার প্রয়োজন হয়, অনুগ্রহ করে 888-435-9287 নম্বরে আবেদনকারী-প্রার্থী সুবিধা দলের (ACAT) সাথে যোগাযোগ করুন, সোমবার থেকে শুক্রবার সকাল 6 AM থেকে 4 PM প্যাসিফিক সময়। আরও তথ্যের জন্য, অনুগ্রহ করে <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>-এ ভিজিট করুন",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "অগ্রগতি দেখুন",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "সমান সুযোগ:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "প্রাক্তন সৈনিক স্ট্যাটাস:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "প্রতিবন্ধিতার অবস্থা:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "আবেদনের আপডেট ব্যর্থ হয়েছে কারণ প্রদত্ত জাতীয় পরিচয় নম্বরটি অবৈধ। অনুগ্রহ করে এগিয়ে যাওয়ার আগে সঠিক এবং সম্পূর্ণ জাতীয় পরিচয় নম্বর লিখুন।",
+      "value" : "জাতীয় পরিচয় নম্বরের ফর্ম্যাটটি ভুল। অগ্রসর হওয়ার জন্য অনুগ্রহ করে সঠিক ফর্ম্যাটটি লিখুন।",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

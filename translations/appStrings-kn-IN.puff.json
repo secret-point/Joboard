@@ -124,6 +124,10 @@
       "value" : "ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಯ ನಂತರ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು Amazon ಗೆ ಸಮ್ಮತಿಸಿ. ಇದು ಸಂಸ್ಥೆಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಮತ್ತು ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್‌ನಲ್ಲಿ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಡೇಟಾಬೇಸ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "ನಮ್ಮ ಅಂತರ್ಗತ ಸಂಸ್ಕೃತಿಯು, Amazonian ರಿಗೆ ನಮ್ಮ ಗ್ರಾಹಕರಿಗೆ ಅತ್ಯುತ್ತಮ ಫಲಿತಾಂಶಗಳನ್ನು ನೀಡುವ ಸಾಮರ್ಥ್ಯವನ್ನು ನೀಡುತ್ತದೆ. ನೀವು ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿದ್ದರೆ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಮತ್ತು ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯ ಸಂದರ್ಭದಲ್ಲಿ ನಿಮಗೆ ವಸತಿ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ, ದಯವಿಟ್ಟು ಅರ್ಜಿದಾರ-ಅಭ್ಯರ್ಥಿ ವಸತಿ ತಂಡವನ್ನು (ACAT) 888-435-9287 ರಲ್ಲಿ, ಸೋಮವಾರದಿಂದ ಶುಕ್ರವಾರದವರೆಗೆ 6 AM ನಿಂದ 4 PM ಪೆಸಿಫಿಕ್ ಸಮಯದ ಅವಧಿಯಲ್ಲಿ ಸಂಪರ್ಕಿಸಿ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ, ದಯವಿಟ್ಟು<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> ಗೆ ಭೇಟಿ ನೀಡಿ",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "ಪ್ರಗತಿಯನ್ನು ವೀಕ್ಷಿಸಿ",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "ಸಮಾನ ಅವಕಾಶ:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "ವೆಟರನ್ ಸ್ಥಿತಿ:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "ಅಂಗವೈಕಲ್ಯ ಸ್ಥಿತಿ:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "ಒದಗಿಸಿದ ರಾಷ್ಟ್ರೀಯ ಗುರುತು ಸಂಖ್ಯೆ ಅಮಾನ್ಯವಾಗಿದ್ದರಿಂದ ಅಪ್ಲಿಕೇಶನ್ಗೆ ಅಪ್ಡೇಟ್ ವಿಫಲವಾಗಿದೆ. ಮುಂದುವರಿಯುವ ಮೊದಲು ದಯವಿಟ್ಟು ಸರಿಯಾದ ಮತ್ತು ಸಂಪೂರ್ಣ ರಾಷ್ಟ್ರೀಯ ಗುರುತು ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ.",
+      "value" : "ರಾಷ್ಟ್ರೀಯ ಗುರುತು ಸಂಖ್ಯೆಯ ಫಾರ್ಮ್ಯಾಟ್ ಅಮಾನ್ಯವಾಗಿದೆ. ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ಸರಿಯಾದ ಫಾರ್ಮ್ಯಾಟ್ ನಮೂದಿಸಿ.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

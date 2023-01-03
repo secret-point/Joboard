@@ -124,6 +124,10 @@
       "value" : "consentir que a Amazon retenha seus dados pessoais após o processo de candidatura, a fim de auxiliá-la no monitoramento efetivo de seus processos de candidatura à vaga e para que seus dados pessoais sejam armazenados em um banco de dados eletrônico nos EUA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nossa cultura inclusiva capacita os Amazonians a oferecerem os melhores resultados a nossos clientes. Se você tiver uma deficiência e precisar de acomodação durante o processo de inscrição e contratação, entre em contato com a Equipe de acomodação de candidatos inscritos (ACAT) pelo telefone 888-435-9287, de segunda a sexta, das 6h às 16h, horário do Pacífico. Para obter mais informações, acesse <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver andamento",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Oportunidades iguais:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Status do veterano:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Estado de deficiência:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Não foi possível atualizar a candidatura. O número de identidade nacional fornecido é inválido. Insira o número de identidade nacional correto e completo antes de continuar.",
+      "value" : "O formato do número de identidade nacional é inválido. Insira o formato correto para continuar.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

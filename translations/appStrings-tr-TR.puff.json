@@ -124,6 +124,10 @@
       "value" : "ve kişisel verilerinizin ABD'de elektronik bir veritabanında saklanmasına yardımcı olmak için, başvuru sürecinden sonra kişisel verilerinizi saklamasına izin vererek daha önce çalıştığınız Amazon binasını tanımlayın.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Kapsayıcı kültürümüz, Amazonian’lara müşterilerimiz için en iyi sonuçları sunma konusunda yetki verir. Bir engeliniz varsa ve başvuru ile işe alma sürecinde yardım talep ediyorsanız lütfen 888-435-9287 telefon numarasını arayarak hafta içi her gün saat 06.00-16.00 (PT) arasında Başvuran-Aday Yardım Ekibi (ACAT) ile iletişime geçin. Daha fazla bilgi için lütfen <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> adresini ziyaret edin.",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "İlerlemeyi görüntüle",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Fırsat Eşitliği:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Gazilik durumu:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Engellilik Durumu:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Ulusal Kimlik Numarası geçersiz olduğu için uygulama güncellemesi başarısız oldu. Lütfen devam etmeden önce doğru ve eksiksiz Ulusal Kimlik Numarasını girin.",
+      "value" : "Ulusal kimlik numarasının formatı geçersiz. Devam etmek için lütfen doğru formatı girin.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

@@ -124,6 +124,10 @@
       "value" : "consent to Amazon retaining your personal data after the application process, in order to assist it with the effective monitoring of its job application processes and to your personal data being stored in an electronic database in the USA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and require an accommodation during the application and hiring process, please contact the Applicant-Candidate Accommodation Team (ACAT) at 888-435-9287, Monday through Friday 06:00 to 16:00 Pacific Time. For more information, please visit <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "View progress",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Equal Opportunity:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Veteran Status:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Disability Status:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Update to application failed because provided National Identity Number is invalid. Please enter correct and complete National Identity Number before proceeding.",
+      "value" : "The format of the National Insurance Number is invalid. Please enter the correct format to proceed.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

@@ -124,6 +124,10 @@
       "value" : "consentir à ce qu’Amazon conserve vos informations personnelles après la procédure d’embauche, afin de l’aider à contrôler efficacement ses procédures de demande d’emploi, et à ce que vos données personnelles soient stockées dans une base de données électronique aux États-Unis.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Notre culture inclusive confère aux Amazoniens les moyens nécessaires pour fournir les meilleurs résultats à nos clients. Si en raison de votre handicap vous nécessitez une mesure d’adaptation pendant le processus de demande et d’embauche, veuillez contacter l’Équipe d’adaptation des candidats (ACATA) au 888-435-9287, du lundi au vendredi, de 6 h à 16 h, heure du Pacifique. Pour de plus amples informations, veuillez vous rendre sur le site <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Afficher la progression",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Égalité des chances :",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Statut d'ancien combattant :",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Statut du handicap :",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "La mise à jour de la demande a échoué, car le numéro d’identité nationale fourni n’est pas valide. Veuillez saisir un numéro d’identité national correct et complet avant de continuer.",
+      "value" : "Le format du numéro d’identité nationale est invalide. Veuillez saisir le format approprié pour poursuivre.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

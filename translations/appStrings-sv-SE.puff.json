@@ -124,6 +124,10 @@
       "value" : "samtycker du till att Amazon behåller dina personuppgifter efter ansökningsprocessen för att underlätta effektiv hantering av jobbansökningsprocesserna och att dina personuppgifter lagras i en elektronisk databas i USA.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Vår inkluderande kultur ger Amazonians möjligheten att leverera bästa möjliga resultat till våra kunder. Om du har ett funktionshinder och behöver ett boende under ansöknings- och anställningsprocessen, kontakta Applicant-Candidate Accommodation Team (ACAT) på 888-435-9287, måndag till fredag 06.00 till 16.00 Stillahavstid. För mer information, besök <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Visa framsteg",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Lika möjligheter:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Veteranstatus:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Status för funktionshinder:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Uppdateringen av ansökningen misslyckades eftersom det nationella identitetsnumret är ogiltigt. Ange korrekt och fullständigt nationellt identitetsnummer innan du fortsätter.",
+      "value" : "Formatet för det nationella identitetsnumret är ogiltigt. Ange rätt format för att fortsätta.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
@@ -1859,6 +1867,10 @@
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
       "value" : "Det gick inte att hämta begäran om sammanräkning.",
       "note" : "error message when fetch head count request failed"
+    },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "Användaren är obehörig.",
+      "note" : "error message when user is unauthorized"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Alla skift fyllda.",

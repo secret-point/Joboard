@@ -124,6 +124,10 @@
       "value" : "जॉब अ‍ॅप्लिकेशन प्रक्रियेचे प्रभावी निरीक्षण करण्यासाठी आणि USA मधील इलेक्ट्रॉनिक डेटाबेसमध्ये तुमचा वैयक्तिक डेटा साठवण्यात मदत करण्यासाठी Amazon ला अर्ज प्रक्रियेनंतर तुमचा वैयक्तिक डेटा साठवून ठेवण्यास संमती द्या.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "आमची सर्वसमावेशक संस्कृती Amazonians ला आमच्या ग्राहकांसाठी सर्वोत्तम परिणाम देण्यासाठी सक्षम करते. तुम्हाला अपंगत्व असल्यास आणि अर्ज आणि नियुक्ती प्रक्रियेदरम्यान निवासाची आवश्यकता असल्यास, कृपया अर्जदार-उमेदवार निवास संघशी (ACAT) 888-435-9287, सोमवार ते शुक्रवार पॅसिफिक वेळेनुसार सकाळी 6 ते संध्याकाळी 4 पर्यंत संपर्क साधा. अधिक माहितीसाठी, कृपया<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a> ला भेट द्या",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "प्रगती पहा",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "समान संधी:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "सुरक्षा दलातून निवृत्तीची स्थिती:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "अपंगत्व स्थिती:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "अर्जाचे अपडेट अयशस्वी झाले कारण प्रदान केलेला राष्ट्रीय ओळख क्रमांक अवैध आहे. पुढे जाण्यापूर्वी योग्य आणि पूर्ण राष्ट्रीय ओळख क्रमांक प्रविष्ट करा.",
+      "value" : "राष्ट्रीय ओळख क्रमांकाचे स्वरूप अवैध आहे. कृपया पुढे जाण्यासाठी योग्य स्वरूप प्रविष्ट करा.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

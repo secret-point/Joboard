@@ -124,6 +124,10 @@
       "value" : "توافق على احتفاظ أمازون ببياناتك الشخصية بعد عملية تقديم الطلب، من أجل مساعدتها في المراقبة الفعالة لعملياتها المتعلقة بطلبات الوظائف ولتخزين بياناتك الشخصية في قاعدة بيانات إلكترونية في الولايات المتحدة الأمريكية.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "إن ثقافتنا الشاملة والداعمة تُمكِّن موظفي أمازون من تقديم أفضل الخدمات لعملائنا. إذا كنت تعاني من إعاقة وتحتاج إلى إقامة أثناء عملية تقديم الطلب والتوظيف، فيرجى الاتصال بفريق إقامة المتقدمين والمرشحين (ACAT) على 888-435-9287، من الاثنين إلى الجمعة من الساعة 6 صباحًا حتى 4 مساءً بتوقيت المحيط الهادئ. لمزيد من المعلومات، يرجى زيارة<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "عرض مستوى التقدم",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "فرص متساوية:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "حالة المحاربين القدامى:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "حالة الإعاقة:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "فشل التحديث إلى الطلب لأن رقم الهوية الوطنية المُقدم غير صالح. يرجى إدخال رقم الهوية الوطنية الصحيح والكامل قبل المتابعة.",
+      "value" : "صيغة رقم الهوية الوطنية غير صالحة. يرجى إدخال الصيغة الصحيحة للمتابعة.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

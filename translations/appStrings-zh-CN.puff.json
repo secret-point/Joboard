@@ -124,6 +124,10 @@
       "value" : "同意亚马逊在申请流程结束后保留您的个人数据，以帮助其有效监控其职位申请流程，并将您的个人数据存储在美国境内的电子数据库中。",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "我们的包容文化使得亚马逊员工能够为客户提供最好的成果。如果您是残障人士且在应聘和招聘过程中需要便利设施，请在太平洋时间周一至周五上午 6 点至下午 4 点致电 888-435-9287 与申请人-候选人便利设施团队 (ACAT) 联系。了解更多信息，请访问 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "查看进度",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "机会均等：",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "退伍军人身份：",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "残障状况：",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "更新申请失败，因为提供的身份证件编号无效。请输入正确且完整的身份证件编号，然后再继续。",
+      "value" : "国民身份证号码的格式无效。请输入正确的格式以继续。",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
@@ -1859,6 +1867,10 @@
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
       "value" : "无法获取人数统计请求。",
       "note" : "error message when fetch head count request failed"
+    },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "用户未获授权。",
+      "note" : "error message when user is unauthorized"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "所有班次已满。",

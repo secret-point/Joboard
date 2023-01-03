@@ -124,6 +124,10 @@
       "value" : "求人応募プロセスを効果的に監視し、あなたの個人データが米国の電子データベースに保存されるのを支援するために、Amazonが応募プロセス後も個人データを保持することに同意します。",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Amazonの包括的な文化は、お客様のために最高の成果を提供する力をAmazonの社員に与えています。障がいをお持ちで、応募および採用の手続き中に宿泊施設を必要とされる場合は、月曜日～金曜日の午前6時～午後4時（太平洋標準時）まで、応募者-候補者宿泊チーム（ACAT）（888-435-9287）までご連絡ください。詳細情報については、<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/ </a>をご覧ください。",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "進捗状況を表示",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "機会均等:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "退役軍人ステータス:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "障がいステータス:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "指定された国民識別番号が無効なため、アプリケーションの更新に失敗しました。続行する前に、正確で完全な国民識別番号を入力してください。",
+      "value" : "国民識別番号のフォーマットが無効です。続行するには、正しいフォーマットで入力してください。",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

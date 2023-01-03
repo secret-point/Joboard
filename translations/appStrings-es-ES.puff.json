@@ -124,6 +124,10 @@
       "value" : "autorizas a Amazon a conservar tus datos personales tras el proceso de solicitud, a fin de ayudar a supervisar eficazmente sus procesos de solicitud de empleo, y a que tus datos personales se almacenen en una base de datos electrónica en",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nuestra cultura empresarial inclusiva permite a los empleados de Amazon ofrecer los mejores resultados a nuestros clientes. Si tienes una discapacidad y necesitas una adaptación durante el proceso de solicitud y contratación, ponte en contacto con el equipo de adaptaciones para solicitantes y candidatos (ACAT) al 888-435-9287, de lunes a viernes de 6 a 16 h, hora del Pacífico. Para obtener más información, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver progreso",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Igualdad de oportunidades:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Estatus de veterano:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Estado de discapacidad:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "No se pudo actualizar la solicitud porque el número nacional de identidad proporcionado no es válido. Introduce el número nacional de identidad correcto y completo antes de continuar.",
+      "value" : "El formato del número de identidad nacional no es válido. Introduce el formato correcto para continuar.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

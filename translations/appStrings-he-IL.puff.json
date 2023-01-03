@@ -124,6 +124,10 @@
       "value" : "הסכמתך לכך ש-Amazon תשמור את הנתונים האישיים שלך לאחר תהליך הגשת המועמדות, כדי לסייע לה לעקוב ביעילות אחרי תהליכי הגשת העבודה והנתונים האישיים שלך השמורים במאגר נתונים אלקטרוני בארה\"ב.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "התרבות הייחודית שלנו מעצימה כל Amazonian לספק את התוצאות הטובות ביותר ללקוחותינו. אם יש לך מוגבלות ויש לך צורך בהתאמות במהלך תהליך הגשת המועמדות והגיוס, יש ליצור קשר עם צוות התיאום של מועמדי העבודה (ACAT) בטלפון 888-435-9287, בימים שני עד שישי מ-6:00 עד 16:00 אזור הזמן הפסיפי. לקבלת מידע נוסף, ניתן לבקר בכתובת <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "הצגת ההתקדמות",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "שוויון הזדמנויות:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "מעמד יוצא צבא:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "מצב מוגבלות:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "עדכון הגשת המועמדות נכשל מכיוון שמספר הזהות הלאומי שסופק אינו חוקי. יש להזין מספר זהות לאומי נכון ומלא לפני שממשיכים.",
+      "value" : "הפורמט של מספר הזהות הלאומי אינו חוקי. יש להזין את הפורמט הנכון כדי להמשיך.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

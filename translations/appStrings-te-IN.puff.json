@@ -124,6 +124,10 @@
       "value" : "అప్లికేషన్ ప్రాసెస్ తర్వాత Amazon మీ వ్యక్తిగత డేటాను ఉంచుకోవడానికి సమ్మతిస్తుంది, దాని జాబ్ అప్లికేషన్ ప్రాసెస్‌లను సమర్థవంతంగా పర్యవేక్షించడంలో మరియు USAలోని ఎలక్ట్రానిక్ డేటాబేస్‌లో స్టోర్ చేయబడే మీ వ్యక్తిగత డేటాకు సహాయపడటానికి.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "మా సమ్మిళిత సంస్కృతి మా కస్టమర్‌లకు ఉత్తమ ఫలితాలను అందించడానికి Amazoniansకు అధికారం ఇస్తుంది. మీకు వైకల్యం ఉంటే మరియు దరఖాస్తు మరియు నియామక ప్రాసెస్ సమయంలో వసతి అవసరమైతే, దయచేసి దరఖాస్తుదారు-అభ్యర్థి వసతి బృందాన్ని (ACAT) 888-435-9287లో, సోమవారం నుండి శుక్రవారం వరకు 6 AM నుండి 4 PM పసిఫిక్ సమయం వరకు కాంటాక్ట్ చేయండి. మరింత సమాచారం కోసం, దయచేసి <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>ను సందర్శించండి",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "పురోగతిని చూడండి",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "సమాన అవకాశం:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "మాజీ సైనికుని స్థితి:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "అంగవైకల్యం స్థితి:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "అప్లికేషన్‌ను అప్‌డేట్ చేయడం విఫలమైంది ఎందుకంటే అందించిన జాతీయ గుర్తింపు సంఖ్య చెల్లదు. కొనసాగే ముందు దయచేసి సరైన మరియు పూర్తి జాతీయ గుర్తింపు సంఖ్యను ఎంటర్ చేయండి.",
+      "value" : "జాతీయ గుర్తింపు సంఖ్య ఫార్మాట్ చెల్లదు. దయచేసి కొనసాగడానికి సరైన ఫార్మాట్‌ను ఎంటర్ చేయండి.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

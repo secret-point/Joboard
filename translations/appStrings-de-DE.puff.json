@@ -124,6 +124,10 @@
       "value" : "erklärst du dich damit einverstanden, dass Amazon deine personenbezogenen Daten nach dem Bewerbungsverfahren aufbewahrt, um ihm bei der effektiven Überwachung seiner Bewerbungsverfahren zu unterstützen, und dass deine personenbezogenen Daten in einer elektronischen Datenbank in den USA gespeichert werden.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Unsere integrative Kultur befähigt Amazonier dazu, die besten Ergebnisse für unsere Kundschaft zu erzielen. Wenn du eine Behinderung hast und während des Bewerbungs- und Einstellungsverfahrens eine Unterkunft benötigst, wende dich bitte an das Applicant-Candidate Accommodation Team (ACAT) unter 888-435-9287, Montag bis Freitag von 6 bis 16 Uhr (Pazifische Zeit). Weitere Informationen findest du unter <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Fortschritt anzeigen",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Chancengleichheit:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Veteranenstatus:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Status der Behinderung:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Die Aktualisierung der Bewerbung ist fehlgeschlagen, da die angegebene Nationale Personalausweisnummer ungültig ist. Bitte gib die korrekte und vollständige Nationale Personalausweisnummer ein, bevor du fortfährst.",
+      "value" : "Das Format der nationalen Identifikationsnummer ist ungültig. Bitte gib das richtige Format ein, um fortzufahren.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
@@ -1859,6 +1867,10 @@
     "BB-get-schedule-detail-error-message-fetch-hch-error" : {
       "value" : "Die Anfrage zum Personalstand konnte nicht abgerufen werden.",
       "note" : "error message when fetch head count request failed"
+    },
+    "BB-proxy-error-message-user-unauthorized" : {
+      "value" : "Nutzer ist nicht autorisiert.",
+      "note" : "error message when user is unauthorized"
     },
     "BB-get-time-slots-error-message-all-shift-filled" : {
       "value" : "Alle Schichten sind vergeben.",

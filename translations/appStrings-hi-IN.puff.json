@@ -124,6 +124,10 @@
       "value" : "आवेदन प्रक्रिया के बाद Amazon को आपके व्यक्तिगत डेटा को बनाए रखने के लिए सहमति, ताकि इसकी नौकरी आवेदन प्रक्रियाओं की प्रभावी निगरानी और USA में इलेक्ट्रॉनिक डेटाबेस में आपके व्यक्तिगत डेटा को संग्रहित करने में मदद मिल सके.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "हमारी समावेशी संस्कृति Amazonians को हमारे ग्राहकों के लिए सर्वोत्तम परिणाम देने का अधिकार देती है. अगर आप विकलांग हैं और आवेदन और भर्ती प्रक्रिया के दौरान आवास की आवश्यकता है, तो कृपया आवेदक-उम्मीदवार आवास टीम (ACAT) से 888-435-9287 पर, सोमवार से शुक्रवार 6 AM से 4 PM प्रशांत समय तक संपर्क करें. अधिक जानकारी के लिए, कृपया <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> पर जाएं",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "प्रगति देखें",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "समान अवसर:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "वेटरन स्थिति:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "विकलांगता स्थिति:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "आवेदन में अपडेट विफल रहा क्योंकि दी गई राष्ट्रीय पहचान संख्या अमान्य है. कृपया आगे बढ़ने से पहले सही और पूर्ण राष्ट्रीय पहचान नंबर एंटर करें.",
+      "value" : "राष्ट्रीय पहचान संख्या का फ़ॉर्मेट अमान्य है. आगे बढ़ने के लिए कृपया सही फ़ॉर्मेट एंटर करें.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

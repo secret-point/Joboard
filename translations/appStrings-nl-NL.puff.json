@@ -124,6 +124,10 @@
       "value" : "stemt ermee in dat Amazon je persoonlijke gegevens bewaart na de sollicitatieprocedure, om het te helpen bij de effectieve monitoring van zijn sollicitatieprocessen en om je persoonlijke gegevens op te slaan in een elektronische database in de VS.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Onze inclusieve cultuur stelt Amazonians in staat om de beste resultaten te leveren voor onze klanten. Als je een beperking hebt en een accommodatie nodig hebt tijdens het sollicitatie- en wervingsproces, neem dan contact op met het Applicant-Candidate Accommodation Team (ACAT) op 888-435-9287, van maandag tot en met vrijdag van 06.00 tot 16.00 uur Pacific Time. Ga voor meer informatie naar <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Voortgang bekijken",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "Gelijke kansen:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "Veteranenstatus:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "Status van handicap:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "Het bijwerken van de sollicitatie is mislukt omdat het opgegeven nationale identiteitsnummer ongeldig is. Voer het juiste en volledige nationale identiteitsnummer in voordat je doorgaat.",
+      "value" : "Het formaat van het nationale identiteitsnummer is ongeldig. Voer het juiste formaat in om verder te gaan.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {

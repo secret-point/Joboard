@@ -124,6 +124,10 @@
       "value" : "Amazon தனது வேலை விண்ணப்பச் செயல்முறைகளை திறம்பட கண்காணிப்பதற்கும், அமெரிக்காவில் உள்ள மின்னணு தரவுத்தளத்தில் சேமிக்கப்படும் உங்களின் தனிப்பட்ட தரவுகளுக்கு உதவுவதற்கும், விண்ணப்பச் செயல்முறைக்குப் பிறகு உங்கள் தனிப்பட்ட தரவைத் தக்கவைத்துக் கொள்வதற்கு Amazonக்கு ஒப்புதல் அளிக்கவும்.",
       "note" : "Text for the flyout user data policy applying acknowledging item 3 text"
     },
+    "BB-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "பல சாராரையும் உள்ளடக்கிய எங்களது கலாச்சாரமானது வாடிக்கையாளர்களுக்குச் சிறந்த முடிவுகளை வழங்க Amazonianகளுக்கு அதிகாரம் அளிக்கிறது. உங்களுக்கு ஒரு மாற்றுத்திறன் இருந்து அதன் காரணமாக விண்ணப்பம் மற்றும் மதிப்பீட்டுச் செயல்முறையின்போது ஒரு தங்குமிடம் தேவையெனில் Applicant-Candidate Accommodation Teamஐ (ACAT) 888-435-9287 என்ற எண்ணில் தொடர்புகொள்ளவும், திங்கள் - வெள்ளி 6 AM - 4 PM பசிஃபிக் நேரம். மேலும் தகவல்களுக்கு, <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> பார்க்கவும்",
+      "note" : "Text for displaying disability accommodations on consents page"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "செயல்நிலையைக் காண்க",
       "note" : "Text for view progress flyout title"
@@ -1440,6 +1444,10 @@
       "value" : "சமமான வாய்ப்பு:",
       "note" : "Text for the voluntary self-identification section equal opportunity text"
     },
+    "BB-ReviewSubmit-selfId-section-veteran-status-text" : {
+      "value" : "ராணுவ வீரர் நிலை:",
+      "note" : "Text for the voluntary self-identification section veteran status text"
+    },
     "BB-ReviewSubmit-selfId-section-disability-status-text" : {
       "value" : "மாற்றுத்திறன் நிலை:",
       "note" : "Text for the voluntary self-identification section disability status text"
@@ -1733,7 +1741,7 @@
       "note" : "error message for update application when number of ssn edits exceed the maximum"
     },
     "BB-update-application-error-message-invalid-ssn" : {
-      "value" : "வழங்கப்பட்ட தேசிய அடையாள எண் தவறானது என்பதால் விண்ணப்பத்தைப் புதுப்பிக்க முடியவில்லை. தொடர்வதற்கு முன்னர் சரியான மற்றும் முழுமையான தேசிய அடையாள எண்ணை உள்ளிடவும்.",
+      "value" : "தேசிய அடையாள எண்ணின் வடிவம் தவறானது. தொடர, சரியான வடிவமைப்பில் வழங்கவும்.",
       "note" : "error message for update application when ssn is invalid"
     },
     "BB-update-application-error-message-type-of-request-missing" : {
