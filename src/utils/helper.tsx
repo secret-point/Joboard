@@ -1521,7 +1521,7 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
         const featureResult = (featureFlagList[featureFlag] as FeatureFlag)?.isAvailable || false;
 
         // don't print the feature flag for these, it will pollute the logs
-        if ([FEATURE_FLAG.MLS,FEATURE_FLAG.VALIDATE_SSN_EXTRA].includes(featureFlag)) {
+        if (![FEATURE_FLAG.MLS,FEATURE_FLAG.VALIDATE_SSN_EXTRA].includes(featureFlag)) {
             log(`logging the featureFlagName: ${featureFlag}, featureFlagResult: ${featureResult}`, { featureFlagValue: featureFlagList[featureFlag] })
         }
         return featureResult;
