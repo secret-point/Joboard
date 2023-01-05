@@ -324,6 +324,9 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
                 <Text>
                     {t('BB-BGC-no-ssn-modal-content-second-paragraph', 'I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.')}
                 </Text>
+                <Text>
+                    {t('BB-BGC-no-ssn-modal-content-third-paragraph', 'Furthermore, by indicating that you do not have an SSN, you acknowledge that you will not be eligible for the Wisely Pay Card as a means of receiving your pay until you obtain an SSN, and will only be able to receive pay via direct deposit or physical checks.')}
+                </Text>
                 <Row alignItems="center" gridGap="S200">
                     <Checkbox
                         id="noSSNModalConsentBox"
