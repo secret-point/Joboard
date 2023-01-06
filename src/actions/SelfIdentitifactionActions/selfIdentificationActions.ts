@@ -5,5 +5,5 @@ export const actionUpdateSelfIdStepConfig = (payload: SelfIdentificationConfig):
   return {
     type: SELF_IDENTIFICATION_ACTION_TYPE.UPDATE_STEP_CONFIG,
     payload
-  }
-}
+  };
+};

@@ -8,7 +8,7 @@ interface ImageProps {
   isContainsOverlay?: boolean;
   imgStyles?: any;
   id?: string;
-};
+}
 
 const Image = (props: ImageProps) => {
   const { src, isContainsOverlay, imgStyles, overlayText = "", id } = props;

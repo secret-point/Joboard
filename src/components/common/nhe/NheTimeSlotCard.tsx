@@ -1,14 +1,14 @@
-import { DetailedRadio, InputFooter } from '@amzn/stencil-react-components/form';
-import { Col } from '@amzn/stencil-react-components/layout';
-import React from 'react';
-import { localeToLanguageMap, MINIMUM_AVAILABLE_TIME_SLOTS } from '../../../utils/constants/common';
+import { DetailedRadio, InputFooter } from "@amzn/stencil-react-components/form";
+import { Col } from "@amzn/stencil-react-components/layout";
+import React from "react";
+import { localeToLanguageMap, MINIMUM_AVAILABLE_TIME_SLOTS } from "../../../utils/constants/common";
 import { formatNheTimeSlotTitle, getCountryCode, renderNheSpokenLanguages, renderNheTimeSlotFullAddress } from "../../../utils/helper";
 import { Locale, NHETimeSlot } from "../../../utils/types/common";
 import { translate as t } from "../../../utils/translator";
 
 interface NheCardProps {
-  nheTimeSlot: NHETimeSlot,
-  handleChange: Function
+  nheTimeSlot: NHETimeSlot;
+  handleChange: Function;
 }
 
 export const NheTimeSlotCard = (props: NheCardProps) => {
@@ -19,7 +19,7 @@ export const NheTimeSlotCard = (props: NheCardProps) => {
 
   const supportedLanguages = Array.from(renderNheSpokenLanguages(nheTimeSlot), language => {
     return t(...language as [string, string]);
-  }).join(', ');
+  }).join(", ");
 
   const countryHasMultipleLanguages = (localeMap: { [key in Locale]: [string, string] }, country: string) => Object.getOwnPropertyNames(localeMap).filter(locale => locale.includes(country)).length > 1;
 
@@ -29,23 +29,25 @@ export const NheTimeSlotCard = (props: NheCardProps) => {
         name="nheTimeSlotCard"
         dataTestId="nheTimeSlotCard"
         titleText={formatNheTimeSlotTitle(nheTimeSlot.dateWithoutFormat)}
-        details={
+        details={(
           <>
             { 
-              countryHasMultipleLanguages(localeToLanguageMap, getCountryCode()) && <div className="nheSpokenLanguage">{`${t('BB-nhe-spoken-language', 'Spoken Language')}: ${supportedLanguages}`}</div>
+              countryHasMultipleLanguages(localeToLanguageMap, getCountryCode()) && <div className="nheSpokenLanguage">{`${t("BB-nhe-spoken-language", "Spoken Language")}: ${supportedLanguages}`}</div>
             }
             <div>{renderNheTimeSlotFullAddress(nheTimeSlot)}</div>
           </>
-        }
+        )}
         onChange={() => handleChange(nheTimeSlot)}
       />
-      {(availableTimeSlots <= MINIMUM_AVAILABLE_TIME_SLOTS) && <InputFooter
-        warning={true}
-      >
-        {t("BB-nhe-few-spots-remaining-text", "Very few spots remaining")}
-      </InputFooter>}
+      {(availableTimeSlots <= MINIMUM_AVAILABLE_TIME_SLOTS) && (
+        <InputFooter
+          warning
+        >
+          {t("BB-nhe-few-spots-remaining-text", "Very few spots remaining")}
+        </InputFooter>
+      )}
     </Col>
-  )
-}
+  );
+};
 
 export default NheTimeSlotCard;

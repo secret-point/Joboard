@@ -24,16 +24,16 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 
 interface MapStateToProps {
   application: ApplicationState;
-  job: JobState,
-  candidate: CandidateState,
-  schedule: ScheduleState,
+  job: JobState;
+  candidate: CandidateState;
+  schedule: ScheduleState;
 }
 
 const LocaleToWotcLangMapping: Record<Locale, string> = {
-  [Locale.enGB]: 'en',
-  [Locale.enUS]: 'en',
-  [Locale.esUS]: 'es',
-  [Locale.esMX]: 'es',
+  [Locale.enGB]: "en",
+  [Locale.enUS]: "en",
+  [Locale.esUS]: "es",
+  [Locale.esMX]: "es",
 };
 
 export const Wotc = (props: MapStateToProps) => {
@@ -49,7 +49,7 @@ export const Wotc = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  }, [])
+  }, []);
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -59,11 +59,11 @@ export const Wotc = (props: MapStateToProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -73,10 +73,10 @@ export const Wotc = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const wotcLocalizedUrl = (wotcUrl: string): string => {
     if (!wotcUrl) {
@@ -99,8 +99,8 @@ export const Wotc = (props: MapStateToProps) => {
         <IFrame src={wotcLocalizedUrl(applicationData?.wotcScreening?.wotcUrl)} />
       )}
     </Col>
-  )
-}
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

@@ -22,7 +22,7 @@ export default class RequisitionService {
 
   async getChildRequisitions( requisitionId: string, getAllRequisitions?: boolean ) {
     let url = `/child-requisitions/${requisitionId}`;
-    if(getAllRequisitions) {
+    if (getAllRequisitions) {
       url = `${url}/${getAllRequisitions}`;
     }
     const response = await this.axiosInstance.get(url);
@@ -43,13 +43,13 @@ export default class RequisitionService {
   }
 
   async availableTimeSlots( payload: GetNheTimeSlotRequestDs ) {
-    const response = await this.axiosInstance.post(`/available-time-slots`, payload);
+    const response = await this.axiosInstance.post("/available-time-slots", payload);
 
     return response.data;
   }
 
   async getAllAvailableShifts( requisitionId: string, applicationId?: string, payload?: AvailableFilter ) {
-    const response = await this.axiosInstance.post(`/get-all-available-shifts`, {
+    const response = await this.axiosInstance.post("/get-all-available-shifts", {
       requisitionId,
       applicationId,
       payload
@@ -77,7 +77,7 @@ export default class RequisitionService {
   }
 
   async getAllAvailableShiftsWithTrainingAvailability( requisitionId: string, applicationId?: string, payload?: AvailableFilter ) {
-    const response = await this.axiosInstance.post(`/get-all-available-shifts-with-training-availability`, {
+    const response = await this.axiosInstance.post("/get-all-available-shifts-with-training-availability", {
       requisitionId,
       applicationId,
       payload

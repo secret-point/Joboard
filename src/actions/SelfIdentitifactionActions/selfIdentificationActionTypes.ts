@@ -6,8 +6,8 @@ export enum SELF_IDENTIFICATION_ACTION_TYPE {
 }
 
 export interface UpdateSelfIdStepConfigAction extends Action {
-  type: SELF_IDENTIFICATION_ACTION_TYPE.UPDATE_STEP_CONFIG,
-  payload: SelfIdentificationConfig
+  type: SELF_IDENTIFICATION_ACTION_TYPE.UPDATE_STEP_CONFIG;
+  payload: SelfIdentificationConfig;
 }
 
 export type SelfIdentificationStepConfigActions =

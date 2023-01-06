@@ -30,7 +30,7 @@ import { getInitialData } from "./services";
 import StepFunctionService from "./services/step-function-service";
 import store from "./store/store";
 import { newBBUIPathName } from "./utils/constants/common";
-import { checkIfIsLegacy, initKatalLogger, isNewBBuiPath } from "./utils/helper";
+import { initKatalLogger, isNewBBuiPath } from "./utils/helper";
 import { AppConfig, Application, FeatureFlagList, IsPageMetricsUpdated } from "./utils/types/common";
 
 const { PRE_CONSENT, RESUME_APPLICATION } = PAGE_ROUTES;
@@ -95,7 +95,7 @@ getInitialData()
       injectCsNavAndFooter(CS_PREPROD_DOMAIN);
     }
 
-    /********** Disable back button for HVHBB-Backlog-3812 ***********
+    /** ******** Disable back button for HVHBB-Backlog-3812 ***********
      * This manipulates the browser history to disable the back button because
      * it can create unexpected results. It would be better to carefully manage
      * the browser state throughout but that is out of scope for now.
@@ -117,11 +117,10 @@ getInitialData()
         window.history.pushState({ back: false }, window.document.title, window.location.href);
       }
     };
-    /*****************************************************************/
+    /** ***************************************************************/
 
-    const isLegacy = checkIfIsLegacy();
     const requisitionId = queryParams["requisitionId"];
-    //TODO know how to deal with requisitionId without JOB as prefix ( Legacy system )
+    // TODO know how to deal with requisitionId without JOB as prefix ( Legacy system )
     if (requisitionId?.indexOf("JOB") === 0) {
       /* jobId passed as requisitionId; forward */
       delete queryParams["requisitionId"];
@@ -139,13 +138,13 @@ getInitialData()
     const requestQueryString = objectToQuerystring(newUrlParams);
 
     const isNewBBFlow = isNewBBuiPath(page, newBBUIPathName.US);
-    //Only build new BB UI path if the entry point is different to new BB UI
-    //When a valid pageName is passed as query params. on new BB UI, we will go to that page.
+    // Only build new BB UI path if the entry point is different to new BB UI
+    // When a valid pageName is passed as query params. on new BB UI, we will go to that page.
 
-    if(!isNewBBFlow) {
+    if (!isNewBBFlow) {
       let appHashUrl = "";
 
-      log(`[Legacy] Calling legacy old BB UI`, { page, applicationId, queryParams }, LoggerType.WARN);
+      log("[Legacy] Calling legacy old BB UI", { page, applicationId, queryParams }, LoggerType.WARN);
 
       if (!isNil(page)) {
         appHashUrl = `${page}`;
@@ -237,10 +236,14 @@ getInitialData()
                     <Route path={newBBUIPathName.US}>
                       <DragonStoneAppUS />
                     </Route>
-                    <Route path="/" render={() => <Redirect to={{
-                      pathname: newBBUIPathName.US,
-                      search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
-                    }} />} />
+                    <Route path="/" render={() => (
+                      <Redirect to={{
+                        pathname: newBBUIPathName.US,
+                        search: !isEmpty(queryParams) ? queryString.stringify(queryParams) : ""
+                      }}
+                      />
+                    )}
+                    />
                   </Switch>
                 </MainWithSkipLink>
               </PageContainer>

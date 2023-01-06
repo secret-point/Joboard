@@ -5,8 +5,8 @@ import { createEpicMiddleware } from "redux-observable";
 import createRootReducer from "../reducers/root.reducer";
 import rootEpic from "../epics/root.epic";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { persistReducer, persistStore } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'
+import { persistReducer, persistStore } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
 /* TODO remove any from functions */
 const logger = () => (next: any) => (action: any) => {
@@ -21,9 +21,9 @@ const logger = () => (next: any) => (action: any) => {
 export const history = createHashHistory();
 
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage, // defaults to localStorage for web
-  whitelist: ['request']
+  whitelist: ["request"]
 };
 
 export const configureStore = (preloadedState: any) => {

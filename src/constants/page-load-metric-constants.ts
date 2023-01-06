@@ -16,7 +16,7 @@ const candidatePayloadDefault = {
       value: "candidate.results.candidateData.candidateId"
     }
   ]
-}
+};
 
 const candidateOnThankYouPayloadDefault = {
   key: "candidate",
@@ -42,7 +42,7 @@ const candidateOnThankYouPayloadDefault = {
       value: "application.results.jobReferral.referralInfo"
     }
   ]
-}
+};
 
 const jobPayloadDefault = {
   key: "job",
@@ -663,7 +663,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  [METRIC_NAME.ASSESSMENT_START]:{
+  [METRIC_NAME.ASSESSMENT_START]: {
     eventPayload: {
       event: EVENT.START_ASSESSMENT,
       page: {
@@ -769,7 +769,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
-  [METRIC_NAME.JOB_CONFIRMATION] : {
+  [METRIC_NAME.JOB_CONFIRMATION]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
       page: {
@@ -785,7 +785,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault
     ]
   },
-  [METRIC_NAME.START_SPECIFIC_JOB_VIDEO] : {
+  [METRIC_NAME.START_SPECIFIC_JOB_VIDEO]: {
     eventPayload: {
       event: EVENT.START_JOB_VIDEO,
       page: {
@@ -801,7 +801,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       dragonstoneJobPayloadDefault
     ]
   },
-  [METRIC_NAME.FINISH_SPECIFIC_JOB_VIDEO] : {
+  [METRIC_NAME.FINISH_SPECIFIC_JOB_VIDEO]: {
     eventPayload: {
       event: EVENT.FINISH_JOB_VIDEO,
       page: {
@@ -1835,7 +1835,7 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault
     ]
   },
-  [METRIC_NAME.SKIP_SCHEDULE]:{
+  [METRIC_NAME.SKIP_SCHEDULE]: {
     eventPayload: {
       event: EVENT.SKIP_SCHEDULE_SELECTION,
       page: {

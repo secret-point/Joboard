@@ -72,12 +72,12 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const selfIdentificationInfo = candidateData?.selfIdentificationInfo;
   const [isSelfIdInfoValid, setIsSelfIdInfoValid] = useState(true);
   const jobDetail = job.results;
-  const {scheduleDetail} = schedule.results;
+  const { scheduleDetail } = schedule.results;
 
   useEffect(() => {
     const selfIdStepConfig = initSelfIdStepConfig(stepConfig);
     boundUpdateSelfIdStepConfig(selfIdStepConfig);
-  },[])
+  }, []);
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -91,11 +91,11 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -105,31 +105,31 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName]);
+    };
+  }, [pageName]);
 
   useEffect(() => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
-  }, [candidateData, applicationData, selfIdentificationInfo])
+  }, [candidateData, applicationData, selfIdentificationInfo]);
 
   const handleContinue = () => {
     boundResetBannerMessage();
     const isSelfIdInfoValid = isSelfIdentificationInfoValid(selfIdentificationInfo);
     setIsSelfIdInfoValid(isSelfIdInfoValid);
 
-    if(applicationData && isSelfIdInfoValid) {
+    if (applicationData && isSelfIdInfoValid) {
       const { SELF_IDENTIFICATION } = UPDATE_APPLICATION_API_TYPE;
       const payload = {
         state: PROXY_APPLICATION_STATE.SELF_IDENTIFICATION_COMPLETED
-      }
+      };
       const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, SELF_IDENTIFICATION, payload);
-      boundUpdateApplicationDS(request, (applicationData: Application)=>{
+      boundUpdateApplicationDS(request, (applicationData: Application) => {
         onCompleteTaskHelper(applicationData);
       });
     }
-  }
+  };
 
   const shouldRenderContinueButton = SelfShouldDisplayContinue(stepConfig);
 
@@ -153,25 +153,25 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
         maxStepNumber={2}
       />
       {
-        shouldRenderContinueButton && !isSelfIdInfoValid &&
-        <Row padding="S300" backgroundColor={CommonColors.RED05}>
-          <StatusIndicator
-            messageText={t("BB-SelfIdentification-check-required-field-error-message", "Please check all required boxes in previous steps to proceed.")}
-            status={Status.Negative}
-            iconAriaHidden={true}
-          />
-        </Row>
-      }
-      <Col padding={{top: 'S300'}}>
+        shouldRenderContinueButton && !isSelfIdInfoValid && (
+          <Row padding="S300" backgroundColor={CommonColors.RED05}>
+            <StatusIndicator
+              messageText={t("BB-SelfIdentification-check-required-field-error-message", "Please check all required boxes in previous steps to proceed.")}
+              status={Status.Negative}
+              iconAriaHidden
+            />
+          </Row>
+        )}
+      <Col padding={{ top: "S300" }}>
         {
-          shouldRenderContinueButton &&
-          <DebouncedButton
-            variant={ButtonVariant.Primary}
-            onClick={handleContinue}
-          >
-            {t('BB-SelfId-form-continue-button-text', 'Continue')}
-          </DebouncedButton>
-        }
+          shouldRenderContinueButton && (
+            <DebouncedButton
+              variant={ButtonVariant.Primary}
+              onClick={handleContinue}
+            >
+              {t("BB-SelfId-form-continue-button-text", "Continue")}
+            </DebouncedButton>
+          )}
       </Col>
     </Col>
   );

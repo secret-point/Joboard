@@ -31,10 +31,10 @@ export const AlreadyApplied = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  }, [])
+  }, []);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -43,25 +43,25 @@ export const AlreadyApplied = (props: MapStateToProps) => {
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text>
-        {firstName ? `${firstName}, `: ''}
+        {firstName ? `${firstName}, `: ""}
         {t("BB-already-applied", "You have already started and / or completed an application for this job.")}
       </Text>
       <Text fontSize="T100">
         {t("BB-already-applied-description", "Return to the dashboard resume your application or view application and new hire appointment details, and your next steps.")}
       </Text>
-      <Col padding={{top: "S300"}}>
+      <Col padding={{ top: "S300" }}>
         <Button dataTestId="button-dashboard" variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
           {t("BB-already-applied-button-text", "Return to dashboard")}
         </Button>
       </Col>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

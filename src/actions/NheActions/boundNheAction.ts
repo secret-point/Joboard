@@ -3,7 +3,7 @@ import { GetNheTimeSlotRequestDs, GetNheTimeSlotRequestThroughNheDS } from "../.
 import { actionGetNheTimeSlotsDs, actionGetNheTimeSlotsThroughNheDs } from "./nheActions";
 
 export const boundGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs) =>
-    store.dispatch(actionGetNheTimeSlotsDs(payload));
+  store.dispatch(actionGetNheTimeSlotsDs(payload));
 
 export const boundGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS) =>
-    store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload));
+  store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload));

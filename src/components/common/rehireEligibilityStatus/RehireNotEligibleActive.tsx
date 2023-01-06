@@ -15,12 +15,12 @@ const RehireNotEligibleActive = () => {
       <ul>
         <li>
           <Text>
-            {t("BB-rehire-not-eligible-active-text-open-opportunities-list-item-one",  "For Agency or Seasonal conversions, visit amazon.com/conversions (http://amazon.com/conversions)")}
+            {t("BB-rehire-not-eligible-active-text-open-opportunities-list-item-one", "For Agency or Seasonal conversions, visit amazon.com/conversions (http://amazon.com/conversions)")}
           </Text>
         </li>
         <li>
           <Text>
-            {t("BB-rehire-not-eligible-active-text-open-opportunities-list-item-two",  "To request shift or location changes, reach out to your onsite team")}
+            {t("BB-rehire-not-eligible-active-text-open-opportunities-list-item-two", "To request shift or location changes, reach out to your onsite team")}
           </Text>
         </li>
       </ul>
@@ -28,10 +28,10 @@ const RehireNotEligibleActive = () => {
         {t("BB-rehire-not-eligible-active-content-text-one", "Your local HR team or the Employee Resource Center (ERC) are the best resource for any questions. You can reach the ERC team 24/7 at 1-888-892-7180 (tel:18888927180).")}
       </Text>
       <Text>
-        {t("BB-rehire-not-eligible-active-content-text-two",  "Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer!",)}
+        {t("BB-rehire-not-eligible-active-content-text-two", "Thanks for being a part of the amazing team at Amazon! We are continually striving to provide you with the best possible employee resources, benefits, pay and flexible schedules — all supporting our efforts to become Earth’s Greatest Employer!",)}
       </Text>
     </Col>
-  )
-}
+  );
+};
 
 export default RehireNotEligibleActive;

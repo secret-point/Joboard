@@ -132,7 +132,7 @@ export enum EVENT_NAMES {
   SELECT_JOB_ROLE = "SELECT_JOB_ROLE",
   SELECT_NHE = "SELECT_NHE",
   SUBMIT_SHIFT_PREFERENCES = "SUBMIT_SHIFT_PREFERENCES"
-};
+}
 
 export enum METRIC_NAME {
   PRE_CONSENT = "pre-consent",
@@ -208,4 +208,4 @@ export enum METRIC_NAME {
   SKIP_SCHEDULE = "skip-schedule",
   THANK_YOU_SUBMIT = "thank-you-submit",
   NO_AVAILABLE_TIME_SLOTS = "no-available-time-slots",
-};
+}

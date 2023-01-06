@@ -1,5 +1,5 @@
 import { SelfIdentificationInfo } from "./candidate-application-service-requests";
-import {Shifts} from "./IPayload";
+import { Shifts } from "./IPayload";
 
 export interface ContingentOffer {
   offerAcceptedTime: string;
@@ -72,9 +72,10 @@ export default interface ICandidateApplication {
     scheduleId: string;
     scheduleDetails: any;
     jobScheduleSelectedTime: string;
-  }
-  dspEnabled?: boolean
-}
+  };
+  dspEnabled?: boolean;
+
+};
 export interface Candidate {
   candidateId: string;
   candidateSFId: string;

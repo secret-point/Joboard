@@ -21,8 +21,8 @@ import { getLocale } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
-  job: JobState,
-  candidate: CandidateState,
+  job: JobState;
+  candidate: CandidateState;
 }
 
 export const CanNotOfferJob = (props: MapStateToProps) => {
@@ -33,7 +33,7 @@ export const CanNotOfferJob = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const { jobId } = queryParams;
   const jobDetail = job.results;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -52,17 +52,17 @@ export const CanNotOfferJob = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text fontSize="T400">
         {t("BB-can-not-offer-job-title-text", "Thank you for your interest, but we're unable to offer you a job at this time.")}
       </Text>
@@ -72,9 +72,9 @@ export const CanNotOfferJob = (props: MapStateToProps) => {
       <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
         {t("BB-can-not-offer-job-return-to-dashboard-text", "Return to dashboard")}
       </Button>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

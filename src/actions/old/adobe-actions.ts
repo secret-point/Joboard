@@ -16,7 +16,7 @@ export const Unspecified = "Unspecified";
 const getCmpId = () => {
   const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
   let cmpIdValue;
-  for (let key of cmpIdKeys) {
+  for (const key of cmpIdKeys) {
     const cmpId = window.sessionStorage.getItem(key);
     if (!isNil(cmpId)) {
       cmpIdValue = cmpId;
@@ -28,15 +28,15 @@ const getCmpId = () => {
 
 const getItemFromSessionStorageByKey = (key: string) => {
   return window.sessionStorage.getItem(key);
-}
+};
 
 export const sendDataLayerAdobeAnalytics = (metric: any) => {
   const cmpId = getCmpId();
-  const ikey = getItemFromSessionStorageByKey('ikey');
-  const akey = getItemFromSessionStorageByKey('akey');
-  const pandocampaignid = getItemFromSessionStorageByKey('pandocampaignid');
-  const pandocandidateid = getItemFromSessionStorageByKey('pandocandidateid');
-  const tid = getItemFromSessionStorageByKey('tid');
+  const ikey = getItemFromSessionStorageByKey("ikey");
+  const akey = getItemFromSessionStorageByKey("akey");
+  const pandocampaignid = getItemFromSessionStorageByKey("pandocampaignid");
+  const pandocandidateid = getItemFromSessionStorageByKey("pandocandidateid");
+  const tid = getItemFromSessionStorageByKey("tid");
 
   metric = {
     ...metric,
@@ -48,7 +48,7 @@ export const sendDataLayerAdobeAnalytics = (metric: any) => {
       ...(!!pandocandidateid && { pandocandidateid }),
       ...(!!tid && { tid })
     }
-  }
+  };
 
   window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
@@ -61,7 +61,7 @@ export const addMetricForPageLoad = () => {
     if ((!isEmpty(state.requisition) || !isEmpty(state.job)) && !window.isPageMetricsUpdated) {
       dataLayer = getDataForMetrics();
       // @ts-ignore
-      //Legacy code not used anywhere
+      // Legacy code not used anywhere
       window.isPageMetricsUpdated = true;
       if (!isEmpty(dataLayer)) {
         sendDataLayerAdobeAnalytics(dataLayer);

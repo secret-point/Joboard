@@ -22,9 +22,9 @@ import {
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
-      if(!window?.stepFunctionService?.websocket) {
+      if (!window?.stepFunctionService?.websocket) {
 
-        if(isCompleteTaskOnLoad) {
+        if (isCompleteTaskOnLoad) {
           window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
           window.applicationData = applicationData;
         }
@@ -36,9 +36,9 @@ export const loadWorkflow =
 
 export const loadWorkflowDS =
     ( jobId: string, scheduleId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
-      if(!window?.stepFunctionService?.websocket) {
+      if (!window?.stepFunctionService?.websocket) {
 
-        if(isCompleteTaskOnLoad) {
+        if (isCompleteTaskOnLoad) {
           window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
           window.applicationData = applicationData;
         }
@@ -79,7 +79,7 @@ export const startOrResumeWorkflowDS = () => {
 
   window.stepFunctionService.sendMessage(payload);
 
-  if(window.hasCompleteTask) {
+  if (window.hasCompleteTask) {
     window.hasCompleteTask();
     window.hasCompleteTask = undefined;
   }
@@ -87,30 +87,27 @@ export const startOrResumeWorkflowDS = () => {
 
 export const sendHeartBeatWorkflow = () => {
   const { websocket } = window.stepFunctionService;
-  if(window.hearBeatTime) {
+  if (window.hearBeatTime) {
     log("Sending the heart beat event");
     const endTime = moment();
     const startTime = moment(window.hearBeatTime);
     const duration = moment.duration(endTime.diff(startTime));
 
-    if(duration.asMinutes() < MAX_MINUTES_FOR_HEARTBEAT && websocket?.OPEN === websocket?.readyState) {
+    if (duration.asMinutes() < MAX_MINUTES_FOR_HEARTBEAT && websocket?.OPEN === websocket?.readyState) {
       const payload: string = JSON.stringify({ action: "heartbeat" });
       window.stepFunctionService.sendMessage(payload);
-    }
-    else {
+    } else {
       log("Websocket timed out, moved to timed out page");
       window.location.assign(`${pathByDomain()}/#/timeout`);
     }
-  }
-  else {
+  } else {
     window.hearBeatTime = moment().toISOString();
 
-    if(websocket?.OPEN === websocket?.readyState) {
+    if (websocket?.OPEN === websocket?.readyState) {
       log("Sending the heart beat event");
       const payload: string = JSON.stringify({ action: "heartbeat" });
       window.stepFunctionService.sendMessage(payload);
-    }
-    else {
+    } else {
       log("Websocket timed out, moved to timed out page");
       window.location.assign(`${pathByDomain()}/#/timeout`);
     }
@@ -119,7 +116,7 @@ export const sendHeartBeatWorkflow = () => {
 
 export const ifShouldGoToStep = (targetStepName: string, currentStepName: string): boolean => {
   // Do not redirect if the current step is the same as the target step
-  if(targetStepName === currentStepName) {
+  if (targetStepName === currentStepName) {
     return false;
   }
 
@@ -155,30 +152,29 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
 
   log("Received data from step function", { workflowData, currentStepName: currentStepName, goToStepName: stepName });
 
-  if(stepName && applicationData && ifShouldGoToStep(stepName, currentStepName)) {
+  if (stepName && applicationData && ifShouldGoToStep(stepName, currentStepName)) {
     boundWorkflowRequestStart();
 
     log(`current step name (${currentStepName}) and go to step name (${stepName}) is not matched`);
     log("updating workflow step name in application", { applicationId: applicationData.applicationId, stepName });
 
     boundUpdateWorkflowName({ applicationId: applicationData.applicationId, workflowStepName: stepName }, () => {
-          boundWorkflowRequestEnd();
-          routeToAppPageWithPath(stepName);
-          log(`update workflow step in local storage as ${stepName}`, applicationData);
-          window.localStorage.setItem("page", stepName);
-        }, ( ex: any ) => {
-          logError("Unable to update workflow step in application", ex, applicationData);
-          boundWorkflowRequestEnd();
-        }
-    )
+      boundWorkflowRequestEnd();
+      routeToAppPageWithPath(stepName);
+      log(`update workflow step in local storage as ${stepName}`, applicationData);
+      window.localStorage.setItem("page", stepName);
+    }, ( ex: any ) => {
+      logError("Unable to update workflow step in application", ex, applicationData);
+      boundWorkflowRequestEnd();
+    }
+    );
 
-    if(workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS || workflowData.stepName === WORKFLOW_STEP_NAME.THANK_YOU) {
+    if (workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS || workflowData.stepName === WORKFLOW_STEP_NAME.THANK_YOU) {
       const metric = window.MetricsPublisher.newChildActionPublisherForMethod("ApplicationCompleteTime");
       const metricName = workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS ? "Completed" : "PreHireStepsCompleted";
       metric.publishTimerMonitor(metricName, Date.now() - window.applicationStartTime);
     }
-  }
-  else {
+  } else {
     log(`Received target step name: ${stepName}, current step name ${currentStepName}. Stay on current step.`);
     boundWorkflowRequestEnd();
   }
@@ -190,7 +186,7 @@ export const completeTask =
         websocket: window.stepFunctionService?.websocket,
         readyState: window.stepFunctionService?.websocket?.readyState,
       });
-      if(window.stepFunctionService?.websocket) {
+      if (window.stepFunctionService?.websocket) {
         boundWorkflowRequestStart();
         const jobSelectedOn = application?.jobSelected?.jobSelectedOn || application?.jobScheduleSelected?.jobScheduleSelectedTime || "";
         const state = schedule?.state || "";
@@ -218,19 +214,18 @@ export const completeTask =
     };
 
 export const onTimeOut = () => {
-  if(window.hearBeatTime) {
+  if (window.hearBeatTime) {
     const endTime = moment();
     const startTime = moment(window.hearBeatTime);
     const duration = moment.duration(endTime.diff(startTime));
 
-    if(duration.asMinutes() > MAX_MINUTES_FOR_HEARTBEAT) {
+    if (duration.asMinutes() > MAX_MINUTES_FOR_HEARTBEAT) {
       boundWorkflowRequestEnd();
       const adobeDataLayer = getDataForEventMetrics("session-timeout");
       sendDataLayerAdobeAnalytics(adobeDataLayer);
       window.location.assign(`${pathByDomain()}/#/timeout`);
     }
-  }
-  else {
+  } else {
     boundWorkflowRequestEnd();
     const adobeDataLayer = getDataForEventMetrics("session-timeout");
     sendDataLayerAdobeAnalytics(adobeDataLayer);
@@ -247,41 +242,39 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   const currentStepName = currentStep || getCurrentStepNameFromHash();
   const { scheduleDetail } = state.schedule.results;
 
-  if(isBackButton) {
+  if (isBackButton) {
     log(`[WS] Completed task on back button execution, current step is ${currentStepName} for application:`, application);
-  }
-  else {
+  } else {
     log(`[WS] Completed task on ${currentStepName} for application:`, application);
   }
 
-  if(!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
+  if (!window?.stepFunctionService?.websocket && state.appConfig.results?.envConfig) {
     log("[WS] No websocket connection, add hasCompleteTaskOnWorkflowConnect and load workflow");
     window.hasCompleteTaskOnWorkflowConnect = () => {
       completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
-    }
+    };
     boundWorkflowRequestStart();
     loadWorkflowDS(jobId || "", scheduleId || "", applicationId, candidateId, state.appConfig.results.envConfig);
-  }
-  else {
+  } else {
     completeTask(application, currentStepName, isBackButton, targetStep, jobId, scheduleDetail);
   }
 };
 
 export const actionWorkflowRequestInit = (): WorkflowRequestInitAction => {
-  return { type: WORKFLOW_REQUEST.INIT }
+  return { type: WORKFLOW_REQUEST.INIT };
 };
 
 export const actionWorkflowRequestStart = (): WorkflowRequestStartAction => {
-  return { type: WORKFLOW_REQUEST.START }
+  return { type: WORKFLOW_REQUEST.START };
 };
 
 export const actionWorkflowRequestEnd = (): WorkflowRequestEndAction => {
-  return { type: WORKFLOW_REQUEST.END, loadingStatus: loadingStatusHelper() }
+  return { type: WORKFLOW_REQUEST.END, loadingStatus: loadingStatusHelper() };
 };
 
 export const actionSetWorkflowErrorCode = (payload: WORKFLOW_ERROR_CODE): SetWorkflowErrorCodeAction => {
   return {
     type: WORKFLOW_REQUEST.SET_WORKFLOW_ERROR_CODE,
     payload
-  }
-}
+  };
+};

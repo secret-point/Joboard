@@ -22,13 +22,12 @@ export const DebouncedButton = (props: DebouncedButtonProps) => {
     onClick ? (
       <Button
         {...restButtonProps}
-        onClick={(evt) => debouncedOnClick(evt)}>
-      </Button>
+        onClick={(evt) => debouncedOnClick(evt)}
+      />
     ) : (
-      <Button {...restButtonProps}>
-      </Button>
+      <Button {...restButtonProps} />
     )
   );
-}
+};
 
 export default DebouncedButton;

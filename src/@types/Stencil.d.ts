@@ -1,1 +1,1 @@
-declare module '@stencil-react/*';
+declare module "@stencil-react/*";

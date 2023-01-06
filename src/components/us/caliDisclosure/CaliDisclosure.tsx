@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
-import InnerHTML from 'dangerously-set-html-content';
+import InnerHTML from "dangerously-set-html-content";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import {
@@ -13,7 +13,7 @@ import {
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { translate as t } from "../../../utils/translator";
 import { DetailedCheckbox } from "@amzn/stencil-react-components/form";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { checkAndBoundGetApplication, createUpdateApplicationRequest, getLocale } from "../../../utils/helper";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
@@ -28,14 +28,14 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import DebouncedButton from "../../common/DebouncedButton";
 
 interface MapStateToProps {
   application: ApplicationState;
   schedule: ScheduleState;
-  candidate: CandidateState,
-  job: JobState,
+  candidate: CandidateState;
+  job: JobState;
 }
 
 export const CaliDisclosure = (props: MapStateToProps) => {
@@ -46,7 +46,7 @@ export const CaliDisclosure = (props: MapStateToProps) => {
   const { applicationId, scheduleId, jobId } = queryParams;
   const applicationData = application.results;
   const jobDetail = job.results;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
   const { scheduleDetail } = schedule.results;
 
   const hasBGCCaliforniaDisclosureAcknowledged = !!applicationData?.hasBGCCaliforniaDisclosureAcknowledged;
@@ -55,18 +55,18 @@ export const CaliDisclosure = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  }, []);
 
   useEffect(() => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   // Don't refetch data if id is not changing
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
 
@@ -85,10 +85,10 @@ export const CaliDisclosure = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToNext = () => {
     boundResetBannerMessage();
@@ -97,7 +97,7 @@ export const CaliDisclosure = (props: MapStateToProps) => {
       const { CALI_DISCLOSURE } = UPDATE_APPLICATION_API_TYPE;
       const payload = {
         hasBGCCaliforniaDisclosureAcknowledged: acknowledged,
-      }
+      };
       const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, CALI_DISCLOSURE, payload);
       boundUpdateApplicationDS(request, (applicationData: Application) => {
         onCompleteTaskHelper(applicationData);
@@ -131,7 +131,7 @@ export const CaliDisclosure = (props: MapStateToProps) => {
               {t("BB-cali-disclosure-page-vendor-accurate-phone-text", "1-800-216-8024")}
             </Text>
             <Text fontSize="T200">
-              <InnerHTML html={t("BB-cali-disclosure-page-vendor-accurate-url-text", "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>")}/>
+              <InnerHTML html={t("BB-cali-disclosure-page-vendor-accurate-url-text", "<a href='https://accuratebackground.com/' target='_blank' rel='noopener noreferrer'>www.accuratebackground.com</a>")} />
             </Text>
           </Col>
 
@@ -185,7 +185,7 @@ export const CaliDisclosure = (props: MapStateToProps) => {
               {t("BB-cali-disclosure-page-vendor-fadv-phone-text", "1-800-845-6004")}
             </Text>
             <Text fontSize="T200">
-              <InnerHTML html={t("BB-cali-disclosure-page-vendor-fadv-url-text", "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>")}/>
+              <InnerHTML html={t("BB-cali-disclosure-page-vendor-fadv-url-text", "<a href='https://fadv.com/' target='_blank' rel='noopener noreferrer'>www.fadv.com</a>")} />
             </Text>
           </Col>
 
@@ -232,12 +232,13 @@ export const CaliDisclosure = (props: MapStateToProps) => {
       {acknowledged && (
         <DebouncedButton
           variant={ButtonVariant.Primary}
-          onClick={handleGoToNext}>{t("BB-cali-disclosure-page-next-button-text", "Next")}
+          onClick={handleGoToNext}
+        >{t("BB-cali-disclosure-page-next-button-text", "Next")}
         </DebouncedButton>
       )}
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

@@ -22,9 +22,9 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
-  job: JobState,
-  application: ApplicationState,
-  candidate: CandidateState,
+  job: JobState;
+  application: ApplicationState;
+  candidate: CandidateState;
 }
 
 export const AssessmentFinished = (props: MapStateToProps) => {
@@ -37,7 +37,7 @@ export const AssessmentFinished = (props: MapStateToProps) => {
   const applicationData = application.results;
   const jobId = applicationData?.jobScheduleSelected.jobId;
   const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -45,7 +45,7 @@ export const AssessmentFinished = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[]);
+  }, []);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -56,10 +56,10 @@ export const AssessmentFinished = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName])
+    };
+  }, [pageName]);
 
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() }, () => {
@@ -69,23 +69,23 @@ export const AssessmentFinished = (props: MapStateToProps) => {
           paramValue: jobId
         }
       ];
-      //Add schedule Id if exist in application
+      // Add schedule Id if exist in application
       if (scheduleId) {
         queryParamItems.push({
           paramValue: scheduleId,
           paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID
         });
       }
-      //force route to the same page to append query params ( jobId and schedule Id)
+      // force route to the same page to append query params ( jobId and schedule Id)
       routeToAppPageWithPath(PAGE_ROUTES.ASSESSMENT_FINISHED, queryParamItems);
-      postAdobeMetrics({name: METRIC_NAME.ASSESSMENT_FINISHED});
-      //call workflow service to update step
+      postAdobeMetrics({ name: METRIC_NAME.ASSESSMENT_FINISHED });
+      // call workflow service to update step
       applicationData && onCompleteTaskHelper(applicationData, false, undefined, WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT);
     });
   }, [applicationData, jobDetail, jobId, scheduleId]);
 
   return (
-    <Col minHeight="40vh"/>
+    <Col minHeight="40vh" />
   );
 };
 

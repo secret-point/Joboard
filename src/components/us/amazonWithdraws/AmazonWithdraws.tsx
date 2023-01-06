@@ -23,9 +23,9 @@ import { getLocale } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
-  candidate: CandidateState,
-  job: JobState,
-  schedule: ScheduleState
+  candidate: CandidateState;
+  job: JobState;
+  schedule: ScheduleState;
 }
 
 export const AmazonWithdraws = (props: MapStateToProps) => {
@@ -35,8 +35,8 @@ export const AmazonWithdraws = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const { jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
-  const candidateData = candidate.results.candidateData;
-  const scheduleDetail = schedule.results.scheduleDetail;
+  const { candidateData } = candidate.results;
+  const { scheduleDetail } = schedule.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -50,7 +50,7 @@ export const AmazonWithdraws = (props: MapStateToProps) => {
     scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   useEffect(() => {
@@ -62,10 +62,10 @@ export const AmazonWithdraws = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

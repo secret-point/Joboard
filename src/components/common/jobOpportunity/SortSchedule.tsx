@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { DetailedRadio } from "@amzn/stencil-react-components/form";
 import { translate as t } from "../../../utils/translator";
@@ -8,35 +8,36 @@ import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/bou
 import { ScheduleStateFilters } from "../../../utils/types/common";
 
 interface SortScheduleProps {
-    filters: ScheduleStateFilters
+  filters: ScheduleStateFilters;
 }
 
 const SortSchedule = (props: SortScheduleProps) => {
 
-    const { filters } = props;
-    const { sortKey } = filters;
+  const { filters } = props;
+  const { sortKey } = filters;
 
-    const updateSortKey = (key: SCHEDULE_FILTER_TYPE) => {
-        const newFilters = { ...filters };
-        newFilters.sortKey = key;
-        boundUpdateScheduleFilters(newFilters);
-    }
+  const updateSortKey = (key: SCHEDULE_FILTER_TYPE) => {
+    const newFilters = { ...filters };
+    newFilters.sortKey = key;
+    boundUpdateScheduleFilters(newFilters);
+  };
 
-    return (
-        <Col gridGap="S300" className="sortScheduleContainer">
-            {
-                ScheduleSortList.map(sortItem => (
-                    <DetailedRadio
-                        name={`sort-schedule-by`}
-                        value={sortItem.value}
-                        titleText={t(sortItem.translationKey, sortItem.title)}
-                        onChange={e => updateSortKey(sortItem.value)}
-                        checked={sortItem.value === sortKey}
-                    />
-                ))
-            }
-        </Col>
-    )
-}
+  return (
+    <Col gridGap="S300" className="sortScheduleContainer">
+      {
+        ScheduleSortList.map(sortItem => (
+          <DetailedRadio
+            key={sortItem.value}
+            name={"sort-schedule-by"}
+            value={sortItem.value}
+            titleText={t(sortItem.translationKey, sortItem.title)}
+            onChange={() => updateSortKey(sortItem.value)}
+            checked={sortItem.value === sortKey}
+          />
+        ))
+      }
+    </Col>
+  );
+};
 
 export default SortSchedule;

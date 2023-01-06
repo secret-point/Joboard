@@ -21,8 +21,8 @@ import { getLocale } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 
 interface MapStateToProps {
-  candidate: CandidateState,
-  job: JobState,
+  candidate: CandidateState;
+  job: JobState;
 }
 
 export const CandidateWithdraws = (props: MapStateToProps) => {
@@ -32,7 +32,7 @@ export const CandidateWithdraws = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const { jobId } = queryParams;
   const jobDetail = job.results;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -51,10 +51,10 @@ export const CandidateWithdraws = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

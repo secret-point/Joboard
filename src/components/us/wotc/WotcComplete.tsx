@@ -19,7 +19,6 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import { Application, UpdateWotcStatusRequest } from "../../../utils/types/common";
 
@@ -45,7 +44,7 @@ export const WotcComplete = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  }, [])
+  }, []);
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -55,11 +54,11 @@ export const WotcComplete = (props: MapStateToProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -69,10 +68,10 @@ export const WotcComplete = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[]);
+    };
+  }, []);
 
   useEffect(() => {
     if (candidateData) {
@@ -83,6 +82,7 @@ export const WotcComplete = (props: MapStateToProps) => {
       };
 
       // TODO: remove any
+      /* eslint-disable  @typescript-eslint/no-unused-vars */
       boundUpdateWotcStatus(request, (data: any) => {
         // get the latest application data and update the application state, then complete the step
         boundGetApplication({ applicationId: applicationId, locale: getLocale() }, (app: Application) => {
@@ -100,9 +100,9 @@ export const WotcComplete = (props: MapStateToProps) => {
 
 
   return (
-    <Col minHeight="40vh"></Col>
-  )
-}
+    <Col minHeight="40vh" />
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

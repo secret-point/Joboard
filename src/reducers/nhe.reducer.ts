@@ -4,7 +4,7 @@ import { NHE_ACTION_TYPES, NheTimeSlotsActions } from "../actions/NheActions/nhe
 export interface NheState {
   loading: boolean;
   results: {
-    nheData: NHETimeSlot[]
+    nheData: NHETimeSlot[];
   };
   failed?: boolean;
 }
@@ -15,7 +15,7 @@ export const initNheState: NheState = {
   results: {
     nheData: []
   }
-}
+};
 
 export default function nheReducer( state: NheState = initNheState, action: NheTimeSlotsActions ): NheState {
   switch (action.type) {
@@ -25,7 +25,7 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         ...state,
         loading: true,
         failed: false
-      }
+      };
 
     case NHE_ACTION_TYPES.GET_SLOTS_DS_SUCCESS:
       return {
@@ -35,7 +35,7 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         results: {
           nheData: action.payload
         }
-      }
+      };
 
     case NHE_ACTION_TYPES.GET_SLOTS_DS_FAILED:
       return {
@@ -45,7 +45,7 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         results: {
           nheData: []
         }
-      }
+      };
 
     default:
       return state;

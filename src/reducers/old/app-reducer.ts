@@ -117,7 +117,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       let stateList: any[] = [];
       let theCountry: any = {};
       theCountry = find(countries, { code3: "USA" });
-      let emptyState: any = {
+      const emptyState: any = {
         value: "",
         text: "Select a state"
       };
@@ -275,7 +275,7 @@ const AppReducer = (state = initialState, action: IAction) => {
       const newJobInfo = {
         consentInfo: payload,
         jobDescription: payload,
-      }
+      };
       const updatedJob = merge(job, newJobInfo);
       return updateState(state, {
         data: {
@@ -443,11 +443,11 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case GET_APPLICATION: {
-      let application = payload.application;
+      let { application } = payload;
       if (state?.data?.application?.schedule) {
         const schedule = cloneDeep(state.data.application.schedule);
         const shift = cloneDeep(state.data.application.shift);
-        application = { schedule, shift, ...payload.application};
+        application = { schedule, shift, ...payload.application };
       }
       return updateState(state, {
         data: {
@@ -467,7 +467,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     case UPDATE_APPLICATION: {
       const schedule = cloneDeep(state.data.application.schedule);
       const shift = cloneDeep(state.data.application.shift);
-      const application = { schedule, shift, ...payload.application};
+      const application = { schedule, shift, ...payload.application };
       return updateState(state, {
         data: {
           application: {
@@ -491,12 +491,12 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case ON_GET_CANDIDATE: {
-      const candidate = {...payload, loginStatus:true};
+      const candidate = { ...payload, loginStatus: true };
 
       const { preferredFirstName, preferredLastName, firstName, lastName } = candidate;
       const isPreferredNameEnabled = state.appConfig?.featureList?.PREFERRED_NAME?.isAvailable;
 
-      //add shown name value to be displayed in config between preferred names, legal names
+      // add shown name value to be displayed in config between preferred names, legal names
       candidate.shownFirstName = preferredFirstName && isPreferredNameEnabled ? preferredFirstName : firstName;
       candidate.shownLastName = preferredLastName && isPreferredNameEnabled ? preferredLastName : lastName;
 
@@ -638,12 +638,12 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case REMOVE_CANCELLATION_RESCHEDULE_QUESTION: {
-      let page = state.pageConfig.id;
-      let components = cloneDeep(state.pageConfig.content.components);
+      const page = state.pageConfig.id;
+      const components = cloneDeep(state.pageConfig.content.components);
       if ((checkIfIsDGSCSS(page) && isNil(state?.data?.application?.jobScheduleSelected?.scheduleId))
           || (checkIfIsNonDGSCSS(page) && isNil(state?.data?.application?.jobSelected?.headCountRequestId))) {
         for (let i = components.length - 1; i >= 0; i--) {
-          let component = components[i];
+          const component = components[i];
           if (component.properties.id === "cancellation-reschedule-reason") {
             components.splice(i, 1);
             return updateState(state, {
@@ -662,10 +662,10 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case DISABLE_CONFIRMATION_BUTTON: {
-      let components = cloneDeep(state.pageConfig.content.components);
+      const components = cloneDeep(state.pageConfig.content.components);
 
       for (let i = components.length - 1; i >= 0; i--) {
-        let component = components[i];
+        const component = components[i];
         if (component.properties.id === "Select-job") {
           component.properties.disabled = true;
           return updateState(state, {
@@ -723,7 +723,7 @@ const AppReducer = (state = initialState, action: IAction) => {
     }
 
     case RESET_PAGE_OUTPUT: {
-      let data = cloneDeep(state.data);
+      const data = cloneDeep(state.data);
       data.output = {};
       delete data.requisition.nheTimeSlots;
       delete data.requisition.shifts;

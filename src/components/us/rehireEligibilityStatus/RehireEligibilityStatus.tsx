@@ -34,36 +34,36 @@ export const RehireEligibilityStatus = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[]);
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   const renderRehireEligibility = () => {
     switch (workflowErrorCode) {
       case WORKFLOW_ERROR_CODE.ACTIVE:
-        return <RehireNotEligibleActive/>
+        return <RehireNotEligibleActive />;
 
       case WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE_365_DAYS:
-        return <Days365NotRehireEligible/>;
+        return <Days365NotRehireEligible />;
 
       case WORKFLOW_ERROR_CODE.SEASONAL_ONLY:
-        return <RehireNotEligibleSeasonalOnly/>;
+        return <RehireNotEligibleSeasonalOnly />;
 
       case WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE:
-        return <NotRehireEligible/>;
+        return <NotRehireEligible />;
 
       default:
-        return <NotRehireEligible/>;
+        return <NotRehireEligible />;
     }
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       {
         renderRehireEligibility()
       }
@@ -72,9 +72,9 @@ export const RehireEligibilityStatus = (props: MapStateToProps) => {
           {t("BB-rehire-eligibility-status-back-to-dashboard-button-text", "Return to dashboard")}
         </Button>
       </Col>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

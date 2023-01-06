@@ -16,8 +16,8 @@ import { log, logError } from "./../../helpers/log-helper";
 import i18n from "./../../i18n";
 import { checkIfIsCSRequest, checkIfIsLegacy, get3rdPartyFromQueryParams } from "./../../helpers/utils";
 import queryString from "query-string";
-import {REMOVE_MESSAGE} from "./requisition-actions";
-import {REMOVE_CANCELLATION_RESCHEDULE_QUESTION} from "./application-actions";
+import { REMOVE_MESSAGE } from "./requisition-actions";
+import { REMOVE_CANCELLATION_RESCHEDULE_QUESTION } from "./application-actions";
 
 export const UPDATE_VALUE_CHANGE = "UPDATE_VALUE_CHANGE";
 export const UPDATE_OUTPUT = "UPDATE_OUTPUT";
@@ -89,7 +89,7 @@ export const onRedirectToASHChecklist = (payload: IPayload): void => {
   const isLegacy = checkIfIsLegacy();
   const isCSRequest = checkIfIsCSRequest();
   const ASHUrl = isCSRequest? payload.appConfig.ASHChecklistURLCS : payload.appConfig.ASHChecklistURL;
-  const { requisitionId, jobId } = payload.urlParams
+  const { requisitionId, jobId } = payload.urlParams;
   const ASHChecklistURL = ASHUrl.replace(
     "{applicationId}",
     payload.urlParams.applicationId
@@ -187,10 +187,10 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
         : pageName;
     
     // Don't go to new assessment page if hook feature flag is not enabled
-    if(!isHookEnabled && pageName === "pre-consent-ds") {
-      pageName = "pre-consent"
-    } else if (!isHookEnabled && pageName === "assessment-consent-ds"){
-      pageName = "assessment-consent"
+    if (!isHookEnabled && pageName === "pre-consent-ds") {
+      pageName = "pre-consent";
+    } else if (!isHookEnabled && pageName === "assessment-consent-ds") {
+      pageName = "assessment-consent";
     }
   
     const pageConfig = await new PageService().getPageConfig(`${pageName}.json`);
@@ -245,7 +245,7 @@ export const onUpdatePageId = (page: string, errorCode?: string) => async (
     onUpdateError("Unable to load page configuration")(dispatch);
     metric?.publishTimerMonitor(`${page}-load-time`, Date.now() - responseTime);
     metric?.publishCounterMonitor(`${page}-load-failed`, 1);
-    metric?.publishCounterMonitor(`page-config-load-failed`, 1);
+    metric?.publishCounterMonitor("page-config-load-failed", 1);
   }
 };
 
@@ -300,14 +300,14 @@ export const onGoToDashboard = (payload: IPayload) => (dispatch: Function) => {
   const queryParams = queryParamsInSession
     ? JSON.parse(queryParamsInSession)
     : {};
-  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams,'?');
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams, "?");
   const candidateDashboardUrl = `${appConfig.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
   window.location.assign(isCandidateDashboardEnabled? candidateDashboardUrl : appConfig.dashboardUrl);
 };
 
 export const onGoToDashboardOrASH = (payload: IPayload) => (dispatch: Function) => {
   const source = window.sessionStorage.getItem("source") as string;
-  if (source === 'ASH') {
+  if (source === "ASH") {
     onGoToASH(payload);
   } else {
     onGoToDashboard(payload);
@@ -336,7 +336,7 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
   dispatch: Function
 ) => {
   const { application } = payload.data;
-  const options = payload.options;
+  const { options } = payload;
   onResetPageOutput()(dispatch);
   if (!isEmpty(options?.stepName)) {
     const currentStepName =
@@ -344,10 +344,10 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
     log(
       `Completed task on back button execution, current step is ${currentStepName}`
     );
-    if(options?.stepName === "job-opportunities"){
-      if(!checkIfIsLegacy()){
-        const jobId = payload.urlParams.jobId;
-        const applicationId = payload.urlParams.applicationId;
+    if (options?.stepName === "job-opportunities") {
+      if (!checkIfIsLegacy()) {
+        const { jobId } = payload.urlParams;
+        const { applicationId } = payload.urlParams;
         // Remove schedule Id before go to contingent-offer page
         window.history.replaceState(
           {},
@@ -361,10 +361,10 @@ export const onBackButtonCompleteTask = (payload: IPayload) => (
 };
 
 export const onGoToSelfServicePageDS = (payload: IPayload) => (
-    dispatch: Function
+  dispatch: Function
 ) => {
   const isLegacy = checkIfIsLegacy();
-  console.log('=========isLegacy=========onGoToSelfServicePageDS==================', isLegacy);
+  console.log("=========isLegacy=========onGoToSelfServicePageDS==================", isLegacy);
   const { requisitionId, applicationId, jobId } = payload.urlParams;
   const { hasShiftSelected } = payload.options;
   const { noShiftSelected } = payload.options;
@@ -398,42 +398,29 @@ export const onShowNavbar = () => (dispatch: Function) => {
   });
 };
 
-export const onLogVideoMetrics = (payload: IPayload) => (
-  dispatch: Function
-) => {
+export const onLogVideoMetrics = (payload: IPayload) => () => {
   const { data, options } = payload;
   const selectedRequisition =
     data.requisition.childRequisitions[options.selectedRequisitionIndex];
   console.log(options);
   const eventName = options.started ? "start-job-video" : "finish-job-video";
   const metrics = getDataForEventMetrics(eventName);
-  metrics.job = {
-    ...metrics.job,
-    role: selectedRequisition.jobTitle
-  };
+  metrics.job = { ...metrics.job, role: selectedRequisition.jobTitle };
 
   sendDataLayerAdobeAnalytics(metrics);
 };
 
-export const onLogSpecificJobVideoMetrics = (payload: IPayload) => (
-    dispatch: Function
-  ) => {
-    const { options } = payload;
-    console.log(options);
-    const eventName = options.started ? "start-specific-job-video" : "finish-specific-job-video";
-    const metrics = getDataForEventMetrics(eventName);
-    sendDataLayerAdobeAnalytics(metrics);
-  };
+export const onLogSpecificJobVideoMetrics = (payload: IPayload) => () => {
+  const { options } = payload;
+  console.log(options);
+  const eventName = options.started ? "start-specific-job-video" : "finish-specific-job-video";
+  const metrics = getDataForEventMetrics(eventName);
+  sendDataLayerAdobeAnalytics(metrics);
+};
 
-export const onClearWarningMessage = (payload: IPayload) => (
-    dispatch: Function
-) => {
-  dispatch({
-    type: REMOVE_MESSAGE
-  });
-  dispatch({
-    type: REMOVE_CANCELLATION_RESCHEDULE_QUESTION
-  });
+export const onClearWarningMessage = (payload: IPayload) => (dispatch: Function) => {
+  dispatch({ type: REMOVE_MESSAGE });
+  dispatch({ type: REMOVE_CANCELLATION_RESCHEDULE_QUESTION });
 };
 
 export const DsPages: { [key: string]: string } = {
@@ -454,12 +441,12 @@ export const DsPages: { [key: string]: string } = {
   "rehire-not-eligible": "rehire-not-eligible-ds",
   "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only-ds",
   "assessment-consent": "assessment-consent-ds",
-  "pre-consent" : "pre-consent-ds"
-}
+  "pre-consent": "pre-consent-ds"
+};
 
 export const CsPages: { [key: string]: string } = {
   "duplicate-national-id": "duplicate-national-id-cs",
-}
+};
 
 export const onNheAppointmentsUnavailable = () => () => {
   addMetricForPageLoad();
@@ -467,5 +454,5 @@ export const onNheAppointmentsUnavailable = () => () => {
 
 export const goToCSHomePage = () => {
   // redirect to homepage
-      window.location.assign(`/app#/jobSearch`);
-}
+  window.location.assign("/app#/jobSearch");
+};

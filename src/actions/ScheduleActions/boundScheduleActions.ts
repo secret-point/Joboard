@@ -4,10 +4,10 @@ import { actionGetScheduleDetail, actionGetScheduleListByJobId, actionUpdateSche
 import { ScheduleStateFilters } from "../../utils/types/common";
 
 export const boundGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ) =>
-    store.dispatch(actionGetScheduleListByJobId(payload));
+  store.dispatch(actionGetScheduleListByJobId(payload));
 
 export const boundGetScheduleDetail = ( payload: GetScheduleDetailRequest, onSuccess?: Function, onError?: Function ) =>
-    store.dispatch(actionGetScheduleDetail(payload, onSuccess, onError));
+  store.dispatch(actionGetScheduleDetail(payload, onSuccess, onError));
 
 export const boundUpdateScheduleFilters = (payload: ScheduleStateFilters) =>
-    store.dispatch(actionUpdateScheduleFilters(payload));
+  store.dispatch(actionUpdateScheduleFilters(payload));

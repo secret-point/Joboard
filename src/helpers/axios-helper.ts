@@ -30,7 +30,7 @@ export const requestHandler = (config: AxiosRequestConfig) => {
   }
 
   // add custom header to differentiate request from old BB UI and new BB UI
-  config.headers['bb-ui-version'] = BB_UI_VERSION.BB_UI_NEW;
+  config.headers["bb-ui-version"] = BB_UI_VERSION.BB_UI_NEW;
 
   log(`[Axios] Request (API ${getApiDetails(config)}):`, config);
 

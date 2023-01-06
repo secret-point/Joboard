@@ -5,7 +5,7 @@ import {
   actionGetCandidateInfoFailed,
   actionGetCandidateInfoSuccess
 } from "../actions/CandidateActions/candidateActions";
-import { CANDIDATE_ACTION_TYPES, GetCandidateInfoAction } from "../actions/CandidateActions/candidateActionTypes";
+import { CANDIDATE_ACTION_TYPES } from "../actions/CandidateActions/candidateActionTypes";
 import { log, LoggerType } from "../helpers/log-helper";
 import CandidateApplicationService from "../services/candidate-application-service";
 import { GetCandidateErrorMessages, UpdateApplicationErrorMessage } from "../utils/api/errorMessages";
@@ -17,7 +17,7 @@ import { epicSwitchMapHelper } from "./helper";
 export const GetCandidateInfoEpic = (action$: Observable<any>) => {
   return action$.pipe(
     ofType(CANDIDATE_ACTION_TYPES.GET_CANDIDATE),
-    switchMap((action: GetCandidateInfoAction) =>
+    switchMap(() =>
       from(new CandidateApplicationService().getCandidate())
         .pipe(
           switchMap(epicSwitchMapHelper),

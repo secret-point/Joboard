@@ -14,20 +14,20 @@ import selfIdentificationReducer from "./selfIdentification.reducer";
 import thankYouReducer from "./thankYou.reducer";
 
 const createRootReducer = ( history: any ) =>
-    combineReducers({
-        appConfig: appConfigReducer,
-        ui: uiReducer,
-        job: jobReducer,
-        application: applicationReducer,
-        requisition: requisitionReducer,
-        schedule: scheduleReducer,
-        bgc: bgcReducer,
-        candidate: candidateReducer,
-        workflow: workflowReducer,
-        nhe: nheReducer,
-        selfIdentification: selfIdentificationReducer,
-        thankYou: thankYouReducer,
-        router: connectRouter(history),
-    });
+  combineReducers({
+    appConfig: appConfigReducer,
+    ui: uiReducer,
+    job: jobReducer,
+    application: applicationReducer,
+    requisition: requisitionReducer,
+    schedule: scheduleReducer,
+    bgc: bgcReducer,
+    candidate: candidateReducer,
+    workflow: workflowReducer,
+    nhe: nheReducer,
+    selfIdentification: selfIdentificationReducer,
+    thankYou: thankYouReducer,
+    router: connectRouter(history),
+  });
 
 export default createRootReducer;

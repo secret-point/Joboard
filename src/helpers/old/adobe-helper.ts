@@ -3,7 +3,6 @@ import { ADOBE_PAGE_LOAD_METRICS } from "../../constants/page-load-metric-consta
 import { isArray } from "lodash";
 import isEmpty from "lodash/isEmpty";
 import moment from "moment";
-import { Metric } from "../../@types/adobe-metrics";
 
 const WORKFLOW = "BB NACF Tier-1 Node Workflow";
 
@@ -31,8 +30,8 @@ export const getDataForMetrics = () => {
           if (v.key === "workflow") {
             metricData[d.key][v.key] = WORKFLOW;
           } else if (v.key === "day1Date") {
-            //add day1Date, day1Week for page load
-            let day1Date = formatDate(propertyOf(app.data)(v.value));
+            // add day1Date, day1Week for page load
+            const day1Date = formatDate(propertyOf(app.data)(v.value));
             metricData[d.key][v.key] = day1Date;
             metricData[d.key].daysUntilDay1 = getDaysUntilDay1(day1Date);
           } else if (d.key === "NHE" && v.key === "count") {
@@ -42,8 +41,8 @@ export const getDataForMetrics = () => {
                 ? "zero"
                 : propertyOf(app.data)(v.value).length;
           } else if (d.key === "shifts" && v.key === "list") {
-            //filter shifts list
-            let filteredShifts: any[] = [];
+            // filter shifts list
+            const filteredShifts: any[] = [];
             propertyOf(app.data)(v.value)?.forEach((element: any) => {
               filteredShifts.push(element.headCountRequestId);
             });
@@ -81,9 +80,9 @@ export const getDataForEventMetrics = (eventName: any) => {
           if (v.key === "workflow") {
             metricData[d.key][v.key] = WORKFLOW;
           } else if (v.key === "day1Date") {
-            //add day1Date, daysUntilDay1 for event
-            let day1Date = formatDate(propertyOf(app.data)(v.value));
-            let daysUntilDay1 = getDaysUntilDay1(day1Date);
+            // add day1Date, daysUntilDay1 for event
+            const day1Date = formatDate(propertyOf(app.data)(v.value));
+            const daysUntilDay1 = getDaysUntilDay1(day1Date);
             metricData[d.key][v.key] = day1Date;
             metricData[d.key].daysUntilDay1 = daysUntilDay1;
           } else {
@@ -93,7 +92,7 @@ export const getDataForEventMetrics = (eventName: any) => {
       });
     });
 
-    //dataPayload: using data from app.appConfig
+    // dataPayload: using data from app.appConfig
     metricObject.appConfigPayload?.forEach((d: any) => {
       metricData[d.key] = {};
       if (isArray(d.values)) {
@@ -115,7 +114,7 @@ const formatDate = (ISODate: string) => {
 };
 
 const getDaysUntilDay1 = (day: string) => {
-  let currentDate = moment();
-  let dayOne = moment(day);
+  const currentDate = moment();
+  const dayOne = moment(day);
   return dayOne.diff(currentDate, "days");
 };

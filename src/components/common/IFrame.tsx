@@ -8,8 +8,9 @@ interface IFrameProps {
   title?: string;
 }
 
-const IFrame: React.FC<IFrameProps> = ({ src, title }) => {
+const IFrame: React.FC<IFrameProps> = (props: IFrameProps) => {
   const iframeRef = useRef<any>(null);
+  const { src, title } = props;
 
   useEffect(() => {
     boundShowAppLoader();
@@ -23,15 +24,15 @@ const IFrame: React.FC<IFrameProps> = ({ src, title }) => {
   return (
     <Col id="wotcIframeContainer">
       {
-        !isEmpty(src) &&
-        <iframe
-          ref={iframeRef}
-          className="iframe"
-          src={src}
-          title={title}
-          id="wotcIframe"
-        />
-      }
+        !isEmpty(src) && (
+          <iframe
+            ref={iframeRef}
+            className="iframe"
+            src={src}
+            title={title}
+            id="wotcIframe"
+          />
+        )}
     </Col>
   );
 };

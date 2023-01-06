@@ -5,7 +5,6 @@ import {
   CreateApplicationRequestDS,
   UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
-import { Application } from "../utils/types/common";
 import { CreateApplicationResponse } from "../utils/api/types";
 
 export default class CandidateApplicationService {
@@ -18,10 +17,10 @@ export default class CandidateApplicationService {
 
   async getApplication( applicationId: string ) {
     const response = await this.axiosInstance.get(`/applications/${applicationId}`, {
-          headers: {
-            "Cache-Control": "no-cache"
-          }
-        }
+      headers: {
+        "Cache-Control": "no-cache"
+      }
+    }
     );
     return response.data;
   }
@@ -42,7 +41,7 @@ export default class CandidateApplicationService {
   }
 
   async getCandidate() {
-    const response = await this.axiosInstance.get(`/candidate`);
+    const response = await this.axiosInstance.get("/candidate");
     return response.data;
   }
 
@@ -52,12 +51,12 @@ export default class CandidateApplicationService {
   }
 
   async updateWOTCStatus( applicationId: string, candidateId: string, status: string ) {
-    const response = await this.axiosInstance.put(`/update-wotc-status`, { applicationId, candidateId, status });
+    const response = await this.axiosInstance.put("/update-wotc-status", { applicationId, candidateId, status });
     return response.data;
   }
 
   async updateWorkflowStepName( applicationId: string, workflowStepName: string ) {
-    const response = await this.axiosInstance.put(`/update-workflow-step-name`, { applicationId, workflowStepName });
+    const response = await this.axiosInstance.put("/update-workflow-step-name", { applicationId, workflowStepName });
     return response.data;
   }
 

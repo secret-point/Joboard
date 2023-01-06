@@ -24,7 +24,7 @@ export const JobEpic = (action$: Observable<any>) => {
           map((response: GetJobInfoResponse) => {
             const jobData = response.data;
 
-            if(action.onSuccess) {
+            if (action.onSuccess) {
               action.onSuccess(jobData);
             }
 
@@ -33,7 +33,7 @@ export const JobEpic = (action$: Observable<any>) => {
           catchError((error: ApiError) => {
             log(`[Epic] JobEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-            if(action.onError) {
+            if (action.onError) {
               action.onError();
             }
 

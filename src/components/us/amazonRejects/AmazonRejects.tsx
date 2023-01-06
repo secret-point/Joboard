@@ -1,7 +1,7 @@
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import {
   getPageNameFromPath,
@@ -23,10 +23,10 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
-  job: JobState,
-  application: ApplicationState,
-  schedule: ScheduleState,
-  candidate: CandidateState
+  job: JobState;
+  application: ApplicationState;
+  schedule: ScheduleState;
+  candidate: CandidateState;
 }
 
 export const AmazonRejects = (props: MapStateToProps) => {
@@ -37,15 +37,15 @@ export const AmazonRejects = (props: MapStateToProps) => {
   const { applicationId, jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const scheduleDetail = schedule.results.scheduleDetail;
+  const { scheduleDetail } = schedule.results;
   const candidateData = candidate.results?.candidateData;
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  }, []);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const AmazonRejects = (props: MapStateToProps) => {
     scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   useEffect(() => {
@@ -68,17 +68,17 @@ export const AmazonRejects = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text fontSize="T400">
         {t("BB-amazon-rejects-thank-you", "Thank you for your interest, but we're unable to offer you a job at this time.")}
       </Text>
@@ -88,9 +88,9 @@ export const AmazonRejects = (props: MapStateToProps) => {
       <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
         {t("BB-amazon-rejects-return-to-dashboard", "Return to dashboard")}
       </Button>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

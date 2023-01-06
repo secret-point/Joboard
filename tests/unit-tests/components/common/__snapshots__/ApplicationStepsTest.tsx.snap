@@ -11,7 +11,7 @@ exports[`ApplicationSteps should match snapshot 1`] = `
     <div
       className="steps-item"
       data-testid="step-0"
-      key="0"
+      key="Select Job"
     >
       <div
         className="steps-item-container"
@@ -45,7 +45,7 @@ exports[`ApplicationSteps should match snapshot 1`] = `
     <div
       className="steps-item"
       data-testid="step-1"
-      key="1"
+      key="Complete required documents"
     >
       <div
         className="steps-item-container"
@@ -79,7 +79,7 @@ exports[`ApplicationSteps should match snapshot 1`] = `
     <div
       className="steps-item"
       data-testid="step-2"
-      key="2"
+      key="Schedule pre-hire appointment"
     >
       <div
         className="steps-item-container"

@@ -41,7 +41,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
 
   const { candidate, application, selfIdentification } = props;
   const { stepConfig } = selfIdentification;
-  const {candidateData} = candidate.results;
+  const { candidateData } = candidate.results;
   const selfIdentificationInfoData = candidateData?.selfIdentificationInfo;
   const applicationData = application.results;
   const [militarySpouse, setMilitarySpouse] = useState();
@@ -56,22 +56,21 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
     boundResetBannerMessage();
     const isFormValid = !!militarySpouse && !!protectedVeteran && !!veteran;
 
-    if(isFormValid) {
-      const payload: SelfIdentificationVeteranStatus = {militarySpouse, protectedVeteran, veteran};
+    if (isFormValid) {
+      const payload: SelfIdentificationVeteranStatus = { militarySpouse, protectedVeteran, veteran };
       applicationData && handleSubmitSelfIdVeteranStatus(applicationData, payload, stepConfig);
-    }
-    else {
+    } else {
       setIsVeteranMissingMissing(!veteran);
       setIsProtectedVeteranMissing(!protectedVeteran);
       setIsMilitarySpouseMissing(!militarySpouse);
     }
-  }
+  };
 
   useEffect(() => {
     setProtectedVeteran(selfIdentificationInfoData?.protectedVeteran);
     setVeteran(selfIdentificationInfoData?.veteran);
     setMilitarySpouse(selfIdentificationInfoData?.militarySpouse);
-  }, [selfIdentificationInfoData])
+  }, [selfIdentificationInfoData]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -122,11 +121,11 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isVeteranMissingMissing && <DetailedRadioError/>
+          isVeteranMissingMissing && <DetailedRadioError />
         }
 
         <FormWrapper columnGap={10}>
-          <LabelText>{t("BB-SelfId-equal-opportunity-form-military-spouse-label-text","Are you a military spouse?")} * </LabelText>
+          <LabelText>{t("BB-SelfId-equal-opportunity-form-military-spouse-label-text", "Are you a military spouse?")} * </LabelText>
           {
             SelfIdMilitarySpouseRadioItem.map(radioItem => {
               const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
@@ -146,15 +145,15 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isMilitarySpouseMissing && <DetailedRadioError/>
+          isMilitarySpouseMissing && <DetailedRadioError />
         }
 
         <Col gridGap={5} className="protectedVetContainer">
           <Text>
-            <InnerHTML className="protectedVeteranStatement" html={protectedVeteranStatement}/>
+            <InnerHTML className="protectedVeteranStatement" html={protectedVeteranStatement} />
           </Text>
           <Text>
-            <InnerHTML className="protectedVeteranStatementListTitle" html={protectedVeteranStatementListTitle}/>
+            <InnerHTML className="protectedVeteranStatementListTitle" html={protectedVeteranStatementListTitle} />
           </Text>
           <ol>
             {
@@ -162,9 +161,9 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
                 const title = t(item.titleTranslationKey, item.title);
                 return (
                   <li key={item.titleTranslationKey}>
-                    <InnerHTML className="protectedVeteranStatementListItem" html={title}/>
+                    <InnerHTML className="protectedVeteranStatementListItem" html={title} />
                   </li>
-                )
+                );
               })
             }
           </ol>
@@ -193,7 +192,7 @@ const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
         </FormWrapper>
 
         {
-          isProtectedVeteranMissing && <DetailedRadioError/>
+          isProtectedVeteranMissing && <DetailedRadioError />
         }
 
       </Col>

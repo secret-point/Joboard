@@ -18,9 +18,9 @@ export const Unspecified = "Unspecified";
 const getCmpId = () => {
   const cmpIdKeys = ["CMPID", "cmpid", "cmpID", "cmpId"];
   let cmpIdValue;
-  for(const key of cmpIdKeys) {
+  for (const key of cmpIdKeys) {
     const cmpId = window.sessionStorage.getItem(key);
-    if(!isNil(cmpId)) {
+    if (!isNil(cmpId)) {
       cmpIdValue = cmpId;
       break;
     }
@@ -30,15 +30,15 @@ const getCmpId = () => {
 
 const getItemFromSessionStorageByKey = ( key: string ) => {
   return window.sessionStorage.getItem(key);
-}
+};
 
 export const sendDataLayerAdobeAnalytics = ( metric: any ) => {
   const cmpId = getCmpId();
-  const ikey = getItemFromSessionStorageByKey('ikey');
-  const akey = getItemFromSessionStorageByKey('akey');
-  const pandocampaignid = getItemFromSessionStorageByKey('pandocampaignid');
-  const pandocandidateid = getItemFromSessionStorageByKey('pandocandidateid');
-  const tid = getItemFromSessionStorageByKey('tid');
+  const ikey = getItemFromSessionStorageByKey("ikey");
+  const akey = getItemFromSessionStorageByKey("akey");
+  const pandocampaignid = getItemFromSessionStorageByKey("pandocampaignid");
+  const pandocandidateid = getItemFromSessionStorageByKey("pandocandidateid");
+  const tid = getItemFromSessionStorageByKey("tid");
 
   metric = {
     ...metric,
@@ -50,7 +50,7 @@ export const sendDataLayerAdobeAnalytics = ( metric: any ) => {
       ...(!!pandocandidateid && { pandocandidateid }),
       ...(!!tid && { tid })
     }
-  }
+  };
   window.dataLayerArray = window.dataLayerArray || [];
   window.dataLayerArray.push(metric);
 };
@@ -63,8 +63,8 @@ const addLocaleToMetric = ( metric: any = {} ) => {
 
 const addIttkToMetric = ( metric: any = {}, pageName: string ) => {
   metric.page.ittk = Unspecified;
-  if (metric && metric.page && (pageName === 'contingent-offer' || pageName === 'thank-you')) {
-    metric.page.ittk = new URLSearchParams(window.location.href).get('ittk') || Unspecified;
+  if (metric && metric.page && (pageName === "contingent-offer" || pageName === "thank-you")) {
+    metric.page.ittk = new URLSearchParams(window.location.href).get("ittk") || Unspecified;
   }
 };
 
@@ -78,9 +78,9 @@ export const addMetricForPageLoad = ( pageName: string ) => {
   try {
     const { job, requisition } = store.getState();
     const isPageMetricsUpdated = window.isPageMetricsUpdated || {};
-    if((!isEmpty(requisition) || !isEmpty(job)) && !isPageMetricsUpdated[pageName]) {
+    if ((!isEmpty(requisition) || !isEmpty(job)) && !isPageMetricsUpdated[pageName]) {
       dataLayer = getDataForMetrics(pageName);
-      if(!isEmpty(dataLayer)) {
+      if (!isEmpty(dataLayer)) {
         addLocaleToMetric(dataLayer);
         addCountryCodeToMetric(dataLayer);
         addIttkToMetric(dataLayer, pageName);
@@ -91,18 +91,18 @@ export const addMetricForPageLoad = ( pageName: string ) => {
         log(`[Event 'Page Load' - '${pageName}'] new metrics`, window.dataLayerArray);
       }
     }
-  }
-  catch(ex) {
+  } catch (ex) {
     console.log(ex);
     console.log("unable to update metrics");
   }
 };
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: string]: object } | MetricData = {}, appData?: ApplicationData ) => {
   const { name, values = {}, metricsValues = {} } = adobeMetrics;
   let metric: Metric = getDataForEventMetrics(name);
 
-  switch(name) {
+  switch (name) {
     case EVENT_NAMES.SUBMIT_NHE_PREFERENCES: {
       const metricData: { [key: string]: string[] } = { possibleNHEDates: [], possibleNHETimeSlots: [] };
       metricData.possibleNHEDates = getCheckBoxListLabels(data.possibleNHEDates as CheckBoxItem[]);
@@ -114,9 +114,9 @@ export const postAdobeMetrics = ( adobeMetrics: AdobeMetrics, data: { [key: stri
 
     case EVENT_NAMES.SELECT_NHE: {
       // add old method getMetricValues as a fallback for now, this can be revisited and removed later.
-      const selectNheMetricValue = {...getMetricValues(metricsValues, metric, data as MetricData), ...values};
+      const selectNheMetricValue = { ...getMetricValues(metricsValues, metric, data as MetricData), ...values };
       const { nhe } = store.getState();
-      if(nhe) {
+      if (nhe) {
         const { nheData } = nhe.results;
         selectNheMetricValue["NHE"]["count"] = nheData.length;
         const appId = selectNheMetricValue["NHE"]["apptID"] as string;

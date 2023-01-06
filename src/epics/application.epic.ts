@@ -74,186 +74,184 @@ import { epicSwitchMapHelper } from "./helper";
 const { CONSENT } = PAGE_ROUTES;
 
 export const GetApplicationEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION),
-        switchMap(( action: GetApplicationAction ) =>
-            from(new CandidateApplicationService().getApplication(action.payload.applicationId))
-                .pipe(
-                    switchMap(epicSwitchMapHelper),
-                    switchMap(async ( response ) => {
-                        return response
-                    }),
-                    map(( response: GetApplicationResponse ) => {
-                      const application: Application = response.data;
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION),
+    switchMap(( action: GetApplicationAction ) =>
+      from(new CandidateApplicationService().getApplication(action.payload.applicationId))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map(( response: GetApplicationResponse ) => {
+            const application: Application = response.data;
 
-                      if (action.onSuccess) {
-                        action.onSuccess(application)
-                      }
-                        return actionGetApplicationSuccess(application);
-                    }),
-                    catchError(( error: ApiError ) => {
-                      log(`[Epic] GetApplicationEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+            if (action.onSuccess) {
+              action.onSuccess(application);
+            }
+            return actionGetApplicationSuccess(application);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] GetApplicationEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-                      if(action.onError){
-                        action.onError(error);
-                      }
+            if (action.onError) {
+              action.onError(error);
+            }
 
-                      const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
-                      setEpicApiCallErrorMessage(errorMessage);
+            const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            setEpicApiCallErrorMessage(errorMessage);
 
-                        return of(actionGetApplicationFailed(error));
-                    })
-                )
+            return of(actionGetApplicationFailed(error));
+          })
         )
     )
+  );
 };
 
 export const GetApplicationSuccessEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS),
-        map(( action ) => {
-            const applicationData: Application = sanitizeApplicationData(action.payload);
-            const state = store.getState();
-            // Dont initiate Workflow when workflowStepName is in STEPS_NOT_CONNECT_WORKFLOW_SERVICE
-            // Dont initiate Workflow when currentState is in APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE
-            if(
-                APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationData.currentState) ||
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS),
+    map(( action ) => {
+      const applicationData: Application = sanitizeApplicationData(action.payload);
+      const state = store.getState();
+      // Dont initiate Workflow when workflowStepName is in STEPS_NOT_CONNECT_WORKFLOW_SERVICE
+      // Dont initiate Workflow when currentState is in APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE
+      if (
+        APPLICATION_STATE_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationData.currentState) ||
                 STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationData.workflowStepName)
-            ) {
-                const stepName = STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationData.workflowStepName)
-                    ? applicationData.workflowStepName
-                    : APPLICATION_STATE_TO_STEP_NAME[applicationData.currentState];
+      ) {
+        const stepName = STEPS_NOT_CONNECT_WORKFLOW_SERVICE.includes(applicationData.workflowStepName)
+          ? applicationData.workflowStepName
+          : APPLICATION_STATE_TO_STEP_NAME[applicationData.currentState];
 
-                routeToAppPageWithPath(stepName);
-            }
-            else {
-                if(state.appConfig.results?.envConfig && !window?.stepFunctionService?.websocket) {
-                    const { jobScheduleSelected, applicationId, candidateId } = applicationData;
-                    loadWorkflowDS(jobScheduleSelected.jobId || "", jobScheduleSelected.scheduleId || "", applicationId, candidateId, state.appConfig.results.envConfig);
-                    return actionWorkflowRequestInit();
-                }
-                else {
-                    const currentStepName = getCurrentStepNameFromHash();
-                    if (PagesControlledByWorkFlowService.includes(currentStepName as PAGE_ROUTES)) startOrResumeWorkflowDS()
+        routeToAppPageWithPath(stepName);
+      } else {
+        if (state.appConfig.results?.envConfig && !window?.stepFunctionService?.websocket) {
+          const { jobScheduleSelected, applicationId, candidateId } = applicationData;
+          loadWorkflowDS(jobScheduleSelected.jobId || "", jobScheduleSelected.scheduleId || "", applicationId, candidateId, state.appConfig.results.envConfig);
+          return actionWorkflowRequestInit();
+        }
+                
+        const currentStepName = getCurrentStepNameFromHash();
+        if (PagesControlledByWorkFlowService.includes(currentStepName as PAGE_ROUTES)) startOrResumeWorkflowDS();
 
-                    return actionWorkflowRequestEnd();
-                }
-            }
-        })
-    );
+        return actionWorkflowRequestEnd();
+                
+      }
+    })
+  );
 };
 
 export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.CREATE_APPLICATION),
-        switchMap(( action: CreateApplicationActionDS ) =>
-            from(new CandidateApplicationService().createApplicationDS(action.payload))
-                .pipe(
-                    switchMap(epicSwitchMapHelper),
-                    switchMap(async ( response ) => {
-                        return response
-                    }),
-                    map((response: CreateApplicationResponse) => {
-                      const application = response.data;
-                        if (action.onSuccess) {
-                          action.onSuccess(application)
-                        }
-                        return actionCreateApplicationDSSuccess(application);
-                    }),
-                  catchError(( error: ApiError ) => {
-                    log(`[Epic] CreateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.CREATE_APPLICATION),
+    switchMap(( action: CreateApplicationActionDS ) =>
+      from(new CandidateApplicationService().createApplicationDS(action.payload))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map((response: CreateApplicationResponse) => {
+            const application = response.data;
+            if (action.onSuccess) {
+              action.onSuccess(application);
+            }
+            return actionCreateApplicationDSSuccess(application);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] CreateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-                    if(action.onError){
-                      action.onError(error);
-                    }
+            if (action.onError) {
+              action.onError(error);
+            }
 
-                    const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
+            const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
 
-                    if(error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
-                      routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
-                    }
-                    else {
-                      setEpicApiCallErrorMessage(errorMessage);
-                    }
+            if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
+              routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
+            } else {
+              setEpicApiCallErrorMessage(errorMessage);
+            }
 
-                    return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
-                  })
-                )
+            return of(actionCreateApplicationAndSkipScheduleDSFailed(error));
+          })
         )
     )
+  );
 };
 
 export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.UPDATE_APPLICATION),
-        switchMap(( action: UpdateApplicationActionDS ) =>
-            from(new CandidateApplicationService().updateApplication(action.payload))
-                .pipe(
-                    switchMap(epicSwitchMapHelper),
-                    switchMap(async ( response ) => {
-                        return response
-                    }),
-                    map((response: UpdateApplicationResponse) => {
-                      const application: Application = response.data;
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.UPDATE_APPLICATION),
+    switchMap(( action: UpdateApplicationActionDS ) =>
+      from(new CandidateApplicationService().updateApplication(action.payload))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map((response: UpdateApplicationResponse) => {
+            const application: Application = response.data;
 
-                        if (action.onSuccess) {
-                          action.onSuccess(application);
-                        }
+            if (action.onSuccess) {
+              action.onSuccess(application);
+            }
 
-                        return actionUpdateApplicationDSSuccess(application);
-                    }),
-                  catchError(( error: ApiError ) => {
-                    log(`[Epic] UpdateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+            return actionUpdateApplicationDSSuccess(application);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] UpdateApplicationDSEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-                    if(action.onError){
-                      action.onError(error);
-                    }
+            if (action.onError) {
+              action.onError(error);
+            }
 
-                    const errorKey = error.errorCode || UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR;
-                    const errorMessage = UpdateApplicationErrorMessage[errorKey] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            const errorKey = error.errorCode || UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR;
+            const errorMessage = UpdateApplicationErrorMessage[errorKey] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
 
-                    setEpicApiCallErrorMessage(errorMessage);
+            setEpicApiCallErrorMessage(errorMessage);
 
-                    return of(actionUpdateApplicationDSFailed(error));
-                  })
-                )
+            return of(actionUpdateApplicationDSFailed(error));
+          })
         )
     )
+  );
 };
 
 export const UpdateWorkflowStepNameEpic = ( action$: Observable<any> ) => {
-    return action$.pipe(
-        ofType(APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME),
-        switchMap(( action: UpdateWorkflowStepNameAction ) =>
-            from(new CandidateApplicationService().updateWorkflowStepName(action.payload.applicationId, action.payload.workflowStepName))
-                .pipe(
-                    switchMap(epicSwitchMapHelper),
-                    switchMap(async ( response ) => {
-                        return response
-                    }),
-                    map(( response: UpdateWorkflowNameResponse ) => {
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME),
+    switchMap(( action: UpdateWorkflowStepNameAction ) =>
+      from(new CandidateApplicationService().updateWorkflowStepName(action.payload.applicationId, action.payload.workflowStepName))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map(( response: UpdateWorkflowNameResponse ) => {
 
-                      const application = response.data;
+            const application = response.data;
 
-                        if(action.onSuccess) {
-                          action.onSuccess(application);
-                        }
+            if (action.onSuccess) {
+              action.onSuccess(application);
+            }
 
-                        return actionUpdateWorkflowNameSuccess(application);
-                    }),
-                    catchError(( error: ApiError ) => {
-                      log(`[Epic] UpdateWorkflowStepNameEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+            return actionUpdateWorkflowNameSuccess(application);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] UpdateWorkflowStepNameEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-                      if(action.onError) action.onError(error);
+            if (action.onError) action.onError(error);
 
-                      const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
-                      setEpicApiCallErrorMessage(errorMessage);
+            const errorMessage = UpdateApplicationErrorMessage[error.errorCode] || UpdateApplicationErrorMessage[CREATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            setEpicApiCallErrorMessage(errorMessage);
 
-                      return of(actionUpdateWorkflowNameFailed(error));
-                    })
-                )
+            return of(actionUpdateWorkflowNameFailed(error));
+          })
         )
     )
+  );
 };
 
 export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>) => {
@@ -330,7 +328,7 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
         state.appConfig.results.envConfig
       );
     } else {
-      log(`[Epic] createApplicationAndSkipScheduleHelper error: no_scheduleId`, applicationResponse, LoggerType.ERROR);
+      log("[Epic] createApplicationAndSkipScheduleHelper error: no_scheduleId", applicationResponse, LoggerType.ERROR);
       throw new Error("");
     }
   }, () => {

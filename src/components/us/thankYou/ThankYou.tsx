@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Card } from "@amzn/stencil-react-components/card";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import { DetailedRadio } from "@amzn/stencil-react-components/form";
@@ -15,7 +15,10 @@ import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/bo
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { boundUpdateReferralForm, boundValidateAmazonLoginId } from "../../../actions/ThankYouActions/boundThankYouActions";
+import {
+  boundUpdateReferralForm,
+  boundValidateAmazonLoginId
+} from "../../../actions/ThankYouActions/boundThankYouActions";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { METRIC_NAME } from "../../../constants/adobe-analytics";
@@ -31,13 +34,19 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ThankYouState } from "../../../reducers/thankYou.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
-import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE } from "../../../utils/enums/common";
+import {
+  FEATURE_FLAG,
+  UPDATE_APPLICATION_API_TYPE,
+  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
+} from "../../../utils/enums/common";
 import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
-  formatDate, getFeatureFlagValue, getLocale,
-  validateUserIdFormat,
-  getCountryCode
+  formatDate,
+  getCountryCode,
+  getFeatureFlagValue,
+  getLocale,
+  validateUserIdFormat
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -55,7 +64,7 @@ interface MapStateToProps {
 }
 
 interface JobReferral {
-  hasReferral: 'yes' | 'no';
+  hasReferral: "yes" | "no";
   referralInfo?: string;
 }
 
@@ -79,7 +88,7 @@ export const ThankYou = (props: MapStateToProps) => {
 
   useEffect(() => {
     boundGetCandidateInfo();
-  }, [])
+  }, []);
 
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -89,11 +98,11 @@ export const ThankYou = (props: MapStateToProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -103,10 +112,10 @@ export const ThankYou = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName])
+    };
+  }, [pageName]);
 
   const updateApplicationOnReferralValidationSuccess = () => {
     if (applicationData) {
@@ -128,7 +137,7 @@ export const ThankYou = (props: MapStateToProps) => {
 
       postAdobeMetrics({ name: METRIC_NAME.THANK_YOU_SUBMIT });
     }
-  }
+  };
 
   const handleGetStarted = () => {
     boundResetBannerMessage();
@@ -205,17 +214,17 @@ export const ThankYou = (props: MapStateToProps) => {
         </ul>
 
         <Text fontSize="T100">
-          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text", "Click <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.")}/>
+          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-acceptable-documents-text", "Click <a href='https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.")} />
         </Text>
 
         <Text fontSize="T300">
           {t("BB-ThankYou-nhe-appointment-flyout-special-assistance-text", "Special assistance")}
         </Text>
         <Text fontSize="T100">
-          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text", "If you require any accommodations, such as an ASL interpreter for the hiring event, please go to <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> and chat with us to request an interpreter. Please contact us immediately upon scheduling your appointment. We need at least 48 hours prior to your appointment to make arrangements.")}/>
+          <InnerHTML html={t("BB-ThankYou-nhe-appointment-flyout-accommodations-assistance-text", "If you require any accommodations, such as an ASL interpreter for the hiring event, please go to <a href='https://www.amazon.com/accommodations' target='_blank' rel='noopener noreferrer'>www.amazon.com/accommodations</a> and chat with us to request an interpreter. Please contact us immediately upon scheduling your appointment. We need at least 48 hours prior to your appointment to make arrangements.")} />
         </Text>
       </Col>
-    </FlyoutContent >
+    </FlyoutContent>
   );
 
   return (
@@ -243,7 +252,7 @@ export const ThankYou = (props: MapStateToProps) => {
         {t("BB-ThankYou-look-forward-next-steps-text", "We look forward to seeing you. Here are your next steps:")}
       </Text>
 
-      <Card width="100%" padding="S300" isElevated={true}>
+      <Card width="100%" padding="S300" isElevated>
         <Col width="100%" padding="S300" gridGap={15}>
           <Text fontSize="T300" fontWeight="bold">
             {t("BB-ThankYou-referral-details-title-text", "Please provide referral details (if applicable)")}
@@ -268,13 +277,13 @@ export const ThankYou = (props: MapStateToProps) => {
           />
 
           {
-            hasReferral &&
-            <FormInputText
-              inputItem={thankYou.referralFormInputConfig}
-              defaultValue=""
-              handleChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e)}
-            />
-          }
+            hasReferral && (
+              <FormInputText
+                inputItem={thankYou.referralFormInputConfig}
+                defaultValue=""
+                handleChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e)}
+              />
+            )}
 
           <Text fontSize="T300" fontWeight="bold">
             {t("BB-ThankYou-start-pre-hire-activities-title-text", "Get started on pre-hire activities")}
@@ -289,7 +298,7 @@ export const ThankYou = (props: MapStateToProps) => {
         </Col>
       </Card>
 
-      <Card width="100%" padding="S300" isElevated={true}>
+      <Card width="100%" padding="S300" isElevated>
         <Col width="100%" padding="S300" gridGap={15}>
           {renderNheAppointmentDetails()}
 
@@ -305,9 +314,10 @@ export const ThankYou = (props: MapStateToProps) => {
                   >
                     <Row
                       gridGap={8}
-                      alignItems="center">
+                      alignItems="center"
+                    >
                       {t("BB-ThankYou-get-pre-hire-appointment-details-text", "Pre-hire appointment details")}
-                      <IconArrowRight size={IconSize.ExtraSmall} aria-hidden={true} />
+                      <IconArrowRight size={IconSize.ExtraSmall} aria-hidden />
                     </Row>
                   </Text>
                 </Col>
@@ -316,9 +326,9 @@ export const ThankYou = (props: MapStateToProps) => {
           </Row>
         </Col>
       </Card>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 export const mapStateToProps = (state: MapStateToProps) => {
   return state;

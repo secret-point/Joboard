@@ -21,9 +21,9 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
-  job: JobState,
-  application: ApplicationState,
-  candidate: CandidateState
+  job: JobState;
+  application: ApplicationState;
+  candidate: CandidateState;
 }
 
 export const NoAvailableShift = (props: MapStateToProps) => {
@@ -35,14 +35,14 @@ export const NoAvailableShift = (props: MapStateToProps) => {
   const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  }, []);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -58,17 +58,17 @@ export const NoAvailableShift = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text fontSize="T400">
         {t("BB-no-available-shift-all-shifts-filled-text", "Currently all shifts have been filled.")}
       </Text>
@@ -78,9 +78,9 @@ export const NoAvailableShift = (props: MapStateToProps) => {
       <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
         {t("BB-no-available-shift-return-to-dashboard", "Return to dashboard")}
       </Button>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

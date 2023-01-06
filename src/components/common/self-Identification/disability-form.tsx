@@ -45,6 +45,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   const [disability, setDisability] = useState();
   const [isDisabilityMissing, setDisabilityMissing] = useState(false);
   const pageName = METRIC_NAME.DISABILITY_FORM;
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   let errorMessage = "Please check the box to proceed.";
 
   const handleClickNext = () => {
@@ -56,20 +57,18 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
     if (isFormValid && isSelfIdValid) {
       const payload: SelfIdentificationDisabilityStatus = { disability };
       applicationData && handleSubmitSelfIdDisabilityStatus(applicationData, payload, stepConfig);
-    }
-    else if (isFormValid && !isSelfIdValid){
-      errorMessage = "Please check all required boxes in previous steps to proceed."
-    }
-    else {
+    } else if (isFormValid && !isSelfIdValid) {
+      errorMessage = "Please check all required boxes in previous steps to proceed.";
+    } else {
       setDisabilityMissing(!disability);
     }
-  }
+  };
 
   useEffect(() => {
     if (selfIdentificationInfoData?.disability && SelfIdDisabilityValidValues.includes(selfIdentificationInfoData?.disability)) {
       setDisability(selfIdentificationInfoData?.disability);
     }
-  }, [selfIdentificationInfoData])
+  }, [selfIdentificationInfoData]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -87,9 +86,9 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
   return (
     <Col gridGap={15}>
       <Col gridGap={3} color={CommonColors.Neutral50}>
-        <Text fontSize="T200">{t('BB-SelfId-disability-form-name-text', 'Form CC-305')}</Text>
-        <Text fontSize="T200">{t('BB-SelfId-disability-form-control-number-text', 'OMB Control Number 1250-0005')}</Text>
-        <Text fontSize="T200">{t('BB-SelfId-disability-form-expiration-date-text','Expires 05/31/2023')}</Text>
+        <Text fontSize="T200">{t("BB-SelfId-disability-form-name-text", "Form CC-305")}</Text>
+        <Text fontSize="T200">{t("BB-SelfId-disability-form-control-number-text", "OMB Control Number 1250-0005")}</Text>
+        <Text fontSize="T200">{t("BB-SelfId-disability-form-expiration-date-text", "Expires 05/31/2023")}</Text>
       </Col>
       <Col gridGap={10}>
         <H5>{t("BB-SelfId-disability-form-why-this-form-header-text", "Why are you asked to complete this form?")}</H5>
@@ -135,7 +134,7 @@ const DisabilityForm = (props: DisabilityFormMergedProps) => {
       </FormWrapper>
 
       {
-        isDisabilityMissing && <DetailedRadioError/>
+        isDisabilityMissing && <DetailedRadioError />
       }
 
       <Col gridGap={15}>

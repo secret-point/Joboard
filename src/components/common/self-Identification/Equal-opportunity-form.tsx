@@ -59,11 +59,10 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
     const isPronounValid = getCountryCode() === CountryCode.MX ? !!pronoun : true;
     const isFormValid = !!gender && !!ethnicity && isPronounValid;
 
-    if(isFormValid) {
+    if (isFormValid) {
       const payload: SelfIdEqualOpportunityStatus = { gender, ethnicity, pronoun };
       applicationData && handleSubmitSelfIdEqualOpportunity(applicationData, payload, stepConfig);
-    }
-    else {
+    } else {
       setIsGenderMissing(!gender);
       setIsEthnicityMissing(!ethnicity);
       setIsPronounMissing(!pronoun);
@@ -109,7 +108,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
                   name="gender"
                   value={value}
                   titleText={t(titleTranslationKey, title)}
-                  details={details ? t(detailsTranslationKey || '', details) : undefined}
+                  details={details ? t(detailsTranslationKey || "", details) : undefined}
                   key={title}
                   {...(selfIdentificationInfoData?.gender === value ? { defaultChecked: true } : {})}
                   onChange={() => setGender(value)}
@@ -120,34 +119,34 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         </FormWrapper>
 
         {
-          isGenderMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
+          isGenderMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey} />
         }
 
         {
-          SelfIdPronounsItemList?.length > 0 &&
-          <FormWrapper columnGap={10}>
-            <LabelText>{t("BB-SelfId-equal-opportunity-form-pronoun-label-text", "What is your pronoun?")} * </LabelText>
-            {
-              SelfIdPronounsItemsMap[getCountryCode()].map(radioItem => {
-                const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
-                return (
-                  <DetailedRadio
-                    name="pronoun"
-                    value={value}
-                    titleText={t(titleTranslationKey, title)}
-                    details={details ? t(detailsTranslationKey || "", details) : undefined}
-                    key={title}
-                    {...(selfIdentificationInfoData?.pronoun === value ? { defaultChecked: true } : {})}
-                    onChange={() => setPronoun(value)}
-                  />
-                );
-              })
-            }
-          </FormWrapper>
-        }
+          SelfIdPronounsItemList?.length > 0 && (
+            <FormWrapper columnGap={10}>
+              <LabelText>{t("BB-SelfId-equal-opportunity-form-pronoun-label-text", "What is your pronoun?")} * </LabelText>
+              {
+                SelfIdPronounsItemsMap[getCountryCode()].map(radioItem => {
+                  const { value, title, titleTranslationKey, detailsTranslationKey, details } = radioItem;
+                  return (
+                    <DetailedRadio
+                      name="pronoun"
+                      value={value}
+                      titleText={t(titleTranslationKey, title)}
+                      details={details ? t(detailsTranslationKey || "", details) : undefined}
+                      key={title}
+                      {...(selfIdentificationInfoData?.pronoun === value ? { defaultChecked: true } : {})}
+                      onChange={() => setPronoun(value)}
+                    />
+                  );
+                })
+              }
+            </FormWrapper>
+          )}
 
         {
-          SelfIdPronounsItemList?.length > 0 && isPronounMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
+          SelfIdPronounsItemList?.length > 0 && isPronounMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey} />
         }
 
         <FormWrapper columnGap={10}>
@@ -160,7 +159,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
                   name="ethnicity"
                   value={value}
                   titleText={t(titleTranslationKey, title)}
-                  details={details ? t(detailsTranslationKey || '', details) : undefined}
+                  details={details ? t(detailsTranslationKey || "", details) : undefined}
                   key={title}
                   {...(selfIdentificationInfoData?.ethnicity === value ? { defaultChecked: true } : {})}
                   onChange={() => setEthnicity(value)}
@@ -171,7 +170,7 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         </FormWrapper>
       </Col>
       {
-        isEthnicityMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey}/>
+        isEthnicityMissing && <DetailedRadioError errorMessage={errorMessage} errorMessageTranslationKey={errorMessageTranslationKey} />
       }
       <Col padding={{ top: "S300" }}>
         <Button
@@ -182,8 +181,8 @@ export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => 
         </Button>
       </Col>
     </Col>
-  )
-}
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

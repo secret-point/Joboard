@@ -83,110 +83,114 @@ const {
 } = PAGE_ROUTES;
 
 export const DragonStoneAppMX = ( props: MapStateToProps ) => {
-  const { appConfig, ui } = props;
+  const { ui } = props;
   const { bannerMessage } = ui;
 
   return (
-    <Col padding='S300' minHeight="40vh">
-      <AppLoader/>
-      <CounterMessageBanner/>
-      {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage}/>}
+    <Col padding="S300" minHeight="40vh">
+      <AppLoader />
+      <CounterMessageBanner />
+      {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage} />}
       <Router>
         <Switch>
-          <Route exact path='/' render={() => <Redirect to={CONSENT}/>}/>
-          <Route exact path={`/${PRE_CONSENT}`} render={() => <Redirect to={{
-            pathname: CONSENT,
-            search: getQueryFromSearchAndHash()
-          }} />} />
+          <Route exact path="/" render={() => <Redirect to={CONSENT} />} />
+          <Route exact path={`/${PRE_CONSENT}`} render={() => (
+            <Redirect to={{
+              pathname: CONSENT,
+              search: getQueryFromSearchAndHash()
+            }}
+            />
+          )}
+          />
           <Route path={`/${CONSENT}`} exact>
-            <ConsentPage/>
+            <ConsentPage />
           </Route>
           <Route path={`/${JOB_OPPORTUNITIES}`} exact>
-            <JobOpportunity/>
+            <JobOpportunity />
           </Route>
           <Route path={`/${JOB_CONFIRMATION}`} exact>
-            <JobConfirmation/>
+            <JobConfirmation />
           </Route>
           <Route path={`/${JOB_DESCRIPTION}`} exact>
-            <JobDescription/>
+            <JobDescription />
           </Route>
           <Route path={`/${CONTINGENT_OFFER}`} exact>
-            <ContingencyOffer/>
+            <ContingencyOffer />
           </Route>
           <Route path={`/${BACKGROUND_CHECK}`} exact>
-            <BackgroundCheck/>
+            <BackgroundCheck />
           </Route>
           <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
-            <FcraDisclosure/>
+            <FcraDisclosure />
           </Route>
           <Route path={`/${RESUME_APPLICATION}`} exact>
-            <ResumeApplication/>
+            <ResumeApplication />
           </Route>
           <Route path={`/${NHE}`} exact>
-            <Nhe/>
+            <Nhe />
           </Route>
           <Route path={`/${SELF_IDENTIFICATION}`} exact>
-            <SelfIdentification/>
+            <SelfIdentification />
           </Route>
           <Route path={`/${ALREADY_APPLIED}`} exact>
-            <AlreadyApplied/>
+            <AlreadyApplied />
           </Route>
           <Route path={`/${REVIEW_SUBMIT}`} exact>
-            <ReviewSubmit/>
+            <ReviewSubmit />
           </Route>
           <Route path={`/${THANK_YOU}`} exact>
-            <ThankYou/>
+            <ThankYou />
           </Route>
           <Route path={`/${WOTC}`} exact>
-            <Wotc/>
+            <Wotc />
           </Route>
           <Route path={`/${WOTC_COMPLETE}`} exact>
-            <WotcComplete/>
+            <WotcComplete />
           </Route>
           <Route path={`/${SESSION_TIMEOUT}`} exact>
-            <SessionTimeout/>
+            <SessionTimeout />
           </Route>
           <Route path={`/${ASSESSMENT_CONSENT}`} exact>
-            <AssessmentConsent/>
+            <AssessmentConsent />
           </Route>
           <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
-            <AssessmentNotEligible/>
+            <AssessmentNotEligible />
           </Route>
           <Route path={`/${ASSESSMENT_FINISHED}`} exact>
-            <AssessmentFinished/>
+            <AssessmentFinished />
           </Route>
           <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
-            <CandidateWithdraws/>
+            <CandidateWithdraws />
           </Route>
           <Route path={`/${CALI_DISCLOSURE}`} exact>
-            <CaliDisclosure/>
+            <CaliDisclosure />
           </Route>
           <Route path={`/${AMAZON_REJECTS}`} exact>
-            <AmazonRejects/>
+            <AmazonRejects />
           </Route>
           <Route path={`/${WORKFLOW_FAILED}`} exact>
-            <WorkflowFailed/>
+            <WorkflowFailed />
           </Route>
           <Route path={`/${AMAZON_WITHDRAWS}`} exact>
-            <AmazonWithdraws/>
+            <AmazonWithdraws />
           </Route>
           <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
-            <NoAvailableTimeSlots/>
+            <NoAvailableTimeSlots />
           </Route>
           <Route path={`/${CAN_NOT_OFFER_JOB}`} exact>
-            <CanNotOfferJob/>
+            <CanNotOfferJob />
           </Route>
           <Route path={`/${SUPPLEMENTARY_SUCCESS}`} exact>
-            <SupplementarySuccess/>
+            <SupplementarySuccess />
           </Route>
           <Route path={`/${REHIRE_ELIGIBILITY_STATUS}`} exact>
-            <RehireEligibilityStatus/>
+            <RehireEligibilityStatus />
           </Route>
           <Route path={`/${NO_AVAILABLE_SHIFT}`} exact>
-            <NoAvailableShift/>
+            <NoAvailableShift />
           </Route>
           <Route path={`/${APPLICATIONID_NULL}`} exact>
-            <ApplicationIdNull/>
+            <ApplicationIdNull />
           </Route>
         </Switch>
       </Router>

@@ -13,7 +13,7 @@ import {
 } from "../enums/common";
 import { ApiErrorMessage, ErrorMessage } from "../types/common";
 
-//TODO NEED TO REFECTOR TO SUPPORT MLS
+// TODO NEED TO REFECTOR TO SUPPORT MLS
 export const CreateApplicationErrorMessage: { [key: string]: ApiErrorMessage } = {
   [CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST]: {
     translationKey: "BB-create-application-error-message-application-exist",
@@ -43,7 +43,7 @@ export const CreateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
     translationKey: "BB-create-application-error-message-default",
     value: "Unable to create application."
   }
-}
+};
 
 export const GetApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
   [GET_APPLICATION_ERROR_CODE.MISSING_REQUIRED_FIELDS]: {
@@ -62,7 +62,7 @@ export const GetApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
     translationKey: "BB-get-application-error-message-internal-server-error",
     value: "Something went wrong with the server. Please try again or refresh the browser."
   }
-}
+};
 
 export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } = {
   [UPDATE_APPLICATION_ERROR_CODE.APPLICATION_ID_DOES_NOT_MATCH]: {
@@ -245,19 +245,19 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
     translationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text",
     value: "Please enter previously used legal full name following format: First Last"
   }
-}
+};
 
 export const GetJobInfoErrorMessages: { [key: string]: ApiErrorMessage } = {
   [GET_JOB_INFO_ERROR_CODE.FETCH_JOB_ERROR]: {
     translationKey: "BB-get-job-error-message-unable-fetch-job",
     value: "Unable to fetch job."
   }
-}
+};
 
 export const GetScheduleListErrorMessages: { [key: string]: ApiErrorMessage } = {
   [GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND]: {
     translationKey: "BB-get-schedule-list-error-message-no-schedule-found",
-    value:  "All Shifts Filled."
+    value: "All Shifts Filled."
   },
   [GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.FETCH_SHIFTS_ERROR]: {
     translationKey: "BB-get-schedule-list-error-message-fetch-shifts-failed",
@@ -271,7 +271,7 @@ export const GetScheduleListErrorMessages: { [key: string]: ApiErrorMessage } = 
     translationKey: "BB-get-schedule-list-error-message-all-shift-filled",
     value: "All Shifts Filled."
   },
-}
+};
 
 export const GetScheduleDetailErrorMessage: { [key: string]: ApiErrorMessage } = {
   [GET_SCHEDULE_DETAIL_ERROR_CODE.FETCH_HCR_ERROR]: {
@@ -282,7 +282,7 @@ export const GetScheduleDetailErrorMessage: { [key: string]: ApiErrorMessage } =
     translationKey: "BB-proxy-error-message-user-unauthorized",
     value: "User is unauthorized."
   }
-}
+};
 
 export const GetTimeSlotsErrorMessages: { [key: string]: ApiErrorMessage } = {
   [GET_NHE_TIME_SLOT_LIST_ERROR_CODE.ALL_SHIFT_FILLED]: {

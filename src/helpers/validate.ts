@@ -46,13 +46,13 @@ const isComponentRendered = (
     );
     if (filter.type === "object") {
       return !isEmpty(value);
-    } else {
-      return value === filter.value;
-    }
-  } else {
-    // show component if show component properties are empty.
-    return true;
-  }
+    } 
+    return value === filter.value;
+    
+  } 
+  // show component if show component properties are empty.
+  return true;
+  
 };
 
 export const validateRequiredData = (
@@ -72,7 +72,7 @@ export const validateRequiredData = (
         return obj;
       }
     });
-    let validComponents: any = {};
+    const validComponents: any = {};
     let result = true;
     requiredDataForComponents.forEach((component: any) => {
       const dataKey = propertyOf(component)("properties.dataKey");
@@ -80,7 +80,7 @@ export const validateRequiredData = (
         "properties.requiredErrorMessage"
       );
       let componentRendered = true;
-      let dataKeyOutputValue = getValue(
+      const dataKeyOutputValue = getValue(
         output,
         dataKey,
         pageId,
@@ -98,7 +98,7 @@ export const validateRequiredData = (
       const validationProps = propertyOf(component)(
         "properties.validationProps"
       );
-      let dataKeyValidate = validation(
+      const dataKeyValidate = validation(
         dataKeyOutputValue,
         validationType,
         isOptional,
@@ -122,7 +122,7 @@ export const validateRequiredData = (
         });
         result = false;
       } else if (isValidation && !dataKeyValidate && componentRendered) {
-        //if the component need value validation and validation failed
+        // if the component need value validation and validation failed
         set(validComponents, dataKey, {
           hasError: true,
           errorMessage: validationErrorMessage
@@ -139,9 +139,9 @@ export const validateRequiredData = (
       valid: result,
       validComponents
     };
-  } else {
-    return {
-      valid: true
-    };
-  }
+  } 
+  return {
+    valid: true
+  };
+  
 };

@@ -1,7 +1,7 @@
 import ICandidateApplication, { Candidate } from "./ICandidateApplication";
 import { History } from "history";
 import { ChildRequisition } from "./shift-preferences";
-import { type } from "ramda";
+
 export interface Consent {}
 
 export interface WorkflowData {
@@ -79,7 +79,7 @@ export interface ApplicationData {
   showPreviousNames: string;
   selectedShift: any;
   selectedSchedule: any;
-  loadingSchedules:boolean;
+  loadingSchedules: boolean;
   loadingShifts: boolean;
   shiftsEmptyOnFilter: boolean;
   schedulesEmptyOnFilter?: boolean;
@@ -98,33 +98,33 @@ export interface JobDescriptor {
 export interface Job {
   jobId: string;
   availableSchedules: { schedules: AvailableSchedule[] };
-  language: string,
-  dataSource: string,
-  requisitionType: string,
-  jobIdNumber: string,
-  jobTitle: string,
-  jobType: string,
-  employmentType: string,
-  fullAddress: string,
-  country: string,
-  city: string,
-  postalCode: string,
-  totalPayRateMin: number,
-  totalPayRateMax: number,
-  currencyCode: string,
-  tagLine: string,
-  letterOfIntent: string,
-  image: string,
-  jobPreviewVideo: string,
-  limitedTimeOffer: string,
-  featuredJob: boolean,
-  bonusJob: boolean,
-  jobDescription: string,
-  jobQualification: string,
-  careerPortalURL: string,
-  blackbirdPortalURL: string,
-  postingStatus: string,
-  dspEnabled?: boolean | null,
+  language: string;
+  dataSource: string;
+  requisitionType: string;
+  jobIdNumber: string;
+  jobTitle: string;
+  jobType: string;
+  employmentType: string;
+  fullAddress: string;
+  country: string;
+  city: string;
+  postalCode: string;
+  totalPayRateMin: number;
+  totalPayRateMax: number;
+  currencyCode: string;
+  tagLine: string;
+  letterOfIntent: string;
+  image: string;
+  jobPreviewVideo: string;
+  limitedTimeOffer: string;
+  featuredJob: boolean;
+  bonusJob: boolean;
+  jobDescription: string;
+  jobQualification: string;
+  careerPortalURL: string;
+  blackbirdPortalURL: string;
+  postingStatus: string;
+  dspEnabled?: boolean | null;
 }
 
 export interface AvailableSchedule {
@@ -456,14 +456,10 @@ export default interface Payload {
   selectedRequisitionId: string;
   selectedRequisitionIndex: number;
   history: History;
-}
-export interface AvailableShifts {
-  shifts: Shifts[];
-  total: any;
-}
+};
 
 export interface AvailableShifts {
-  schedules: Schedules[];
+  shifts: Shifts[];
   total: any;
 }
 

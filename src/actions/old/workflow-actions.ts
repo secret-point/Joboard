@@ -1,7 +1,7 @@
-import { WorkflowData, AppConfig, JobDescriptor } from "./../../@types/IPayload";
+import { AppConfig, JobDescriptor, WorkflowData } from "./../../@types/IPayload";
 import StepFunctionService from "./../../services/step-function-service";
 import ICandidateApplication from "./../../@types/ICandidateApplication";
-import { setWorkflowLoading, onUpdatePageId } from "./actions";
+import { onUpdatePageId, setWorkflowLoading } from "./actions";
 import CandidateApplicationService from "./../../services/candidate-application-service";
 import { UPDATE_APPLICATION } from "./application-actions";
 import { push } from "react-router-redux";
@@ -10,7 +10,6 @@ import { MAX_MINUTES_FOR_HEARTBEAT } from "./../../constants";
 import { getDataForEventMetrics } from "./../../helpers/adobe-helper";
 import { sendDataLayerAdobeAnalytics } from "./adobe-actions";
 import { log, logError } from "./../../helpers/log-helper";
-import _get from "lodash/get";
 import { addApplicationIdInUrl, checkIfIsCSRequest, checkIfIsLegacy, pathByDomain } from "./../../helpers/utils";
 import { Application } from "../../utils/types/common";
 
@@ -93,14 +92,14 @@ export const startOrResumeWorkflowDS = () => {
       isCsDomain: checkIfIsCSRequest()
     })
   );
-  if(window.hasCompleteTask){
+  if (window.hasCompleteTask) {
     window.hasCompleteTask();
     window.hasCompleteTask = undefined;
   }
 };
 
 export const sendHeartBeatWorkflow = () => {
-  const websocket = window.stepFunctionService.websocket;
+  const { websocket } = window.stepFunctionService;
   if (window.hearBeatTime) {
     log("Sending the heart beat event");
     const endTime = moment();
@@ -137,7 +136,7 @@ export const sendHeartBeatWorkflow = () => {
 
 export const goToStep = async (workflowData: WorkflowData) => {
   const { app } = window.reduxStore.getState();
-  const application = app.data.application;
+  const { application } = app.data;
   const storedPageId = window.localStorage.getItem("page");
   const { stepName } = workflowData;
   log("Received data from step function", {

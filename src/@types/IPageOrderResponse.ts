@@ -5,4 +5,4 @@ interface PageOrder {
 
 export default interface IPageOrderResponse {
   pageOrders: PageOrder[];
-}
+};

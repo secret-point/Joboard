@@ -71,11 +71,11 @@ export const ReviewSubmit = (props: MapStateToProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -89,10 +89,10 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName]);
+    };
+  }, [pageName]);
 
   const handleBackToEdit = (stepName: WORKFLOW_STEP_NAME) => {
     boundResetBannerMessage();
@@ -112,14 +112,14 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         jobId,
         scheduleId,
         scheduleDetails: JSON.stringify(scheduleDetail)
-      }
+      };
 
 
       const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
       const countryCode = getCountryCode();
-      const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap)
+      const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);
       if (isFeatureEnabled) {
-          onCompleteTaskHelper(applicationData);
+        onCompleteTaskHelper(applicationData);
       } else {
         const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
         boundUpdateApplicationDS(request, (applicationData: Application) => {
@@ -156,7 +156,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
           </Text>
 
-          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
+          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>
@@ -166,9 +166,11 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
           </Text>
 
-          {applicationData?.nonFcraQuestions?.requestedCopyOfBackgroundCheck && <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text", "Send free copy of background check")}
-          </Text>}
+          {applicationData?.nonFcraQuestions?.requestedCopyOfBackgroundCheck && (
+            <Text fontSize="T100">
+              {t("BB-ReviewSubmit-job-details-section-send-free-copy-of-background-check-text", "Send free copy of background check")}
+            </Text>
+          )}
 
           <Text fontSize="T100">
             {t("BB-ReviewSubmit-job-details-section-national-id-type-text", "National ID Type:")} {reverseMappingTranslate(candidateData?.additionalBackgroundInfo.governmentIdType, countryCode)}
@@ -190,7 +192,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
           </Text>
 
-          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
+          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>
@@ -222,7 +224,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             {t("BB-ReviewSubmit-selfId-section-title-text", "Voluntary Self-identification")}
           </Text>
 
-          <Button icon={<IconPencil aria-hidden={true} />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
+          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
             {t("BB-ReviewSubmit-edit-button-text", "Edit")}
           </Button>
         </Row>
@@ -247,9 +249,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           {t("BB-ReviewSubmit-submit-application-button-text", "Submit application")}
         </DebouncedButton>
       </Col>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

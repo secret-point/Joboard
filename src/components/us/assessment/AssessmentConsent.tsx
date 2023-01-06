@@ -17,13 +17,13 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import { JobState } from "../../../reducers/job.reducer";
 import { translate as t } from "../../../utils/translator";
-import InnerHTML from 'dangerously-set-html-content';
+import InnerHTML from "dangerously-set-html-content";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 
 interface MapStateToProps {
-  application: ApplicationState,
-  candidate: CandidateState,
-  job: JobState,
+  application: ApplicationState;
+  candidate: CandidateState;
+  job: JobState;
 }
 
 interface AssessmentConsentProps {
@@ -38,19 +38,19 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId, jobId, scheduleId } = queryParams;
+  const { applicationId, jobId } = queryParams;
   const applicationData = application.results;
   const jobDetail = job.results;
   const { candidateData } = candidate.results;
 
-  const [assessmentUrl, setAssessmentUrl] = useState<string>('');
+  const [assessmentUrl, setAssessmentUrl] = useState<string>("");
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  }, []);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -66,10 +66,10 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   useEffect(() => {
     if (candidateData && jobDetail) {
@@ -104,10 +104,10 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
           {t("BB-assessment-consent-accommodation-heading-text", "Accommodations")}
         </H4>
         <Text fontSize="T200">
-          <InnerHTML className="diversityAndDisabilityText" html={diversityAndDisabilityText}/>
+          <InnerHTML className="diversityAndDisabilityText" html={diversityAndDisabilityText} />
         </Text>
         <Text fontSize="T200">
-          <InnerHTML html={assessmentPaceAndSectionHeadingText} className="assessmentPaceAndSectionHeadingText"/>
+          <InnerHTML html={assessmentPaceAndSectionHeadingText} className="assessmentPaceAndSectionHeadingText" />
         </Text>
         <ul>
           <li>

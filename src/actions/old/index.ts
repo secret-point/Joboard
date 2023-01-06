@@ -46,7 +46,7 @@ export const onExecuteMultipleActions = (payload: IPayload) => async (
   );
   const { options } = payload;
   if (!options.async) {
-    log(`Executed multiple actions in synchronous`);
+    log("Executed multiple actions in synchronous");
     for (const actionObject of options.actions) {
       UIExecutedActionsMetrics.publishCounterMonitor(actionObject.action, 1);
       await actionMap[actionObject.action]({
@@ -56,7 +56,7 @@ export const onExecuteMultipleActions = (payload: IPayload) => async (
       log(`${actionObject.action} is executed at multiple actions`);
     }
   } else {
-    log(`Executed multiple actions in asynchronous`);
+    log("Executed multiple actions in asynchronous");
     for (const actionObject of options.actions) {
       UIExecutedActionsMetrics.publishCounterMonitor(actionObject.action, 1);
       actionMap[actionObject.action]({
@@ -72,7 +72,7 @@ export const onInitialLoadActions = (
   initialLoadActions: InitialLoadActions,
   payload: IPayload
 ) => async (dispatch: Function) => {
-  log(`Executed initial load actions`);
+  log("Executed initial load actions");
   const UIInitialLoadActionsMetrics = (window as any).MetricsPublisher.newChildActionPublisherForMethod(
     "UIInitialLoadActions"
   );

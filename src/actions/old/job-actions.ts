@@ -44,7 +44,6 @@ export const RESET_FILTERS_SELF_SERVICE_DS = "RESET_FILTERS_SELF_SERVICE_DS";
 export const CLEAR_SELECTED_SCHEDULE = "CLEAR_SELECTED_SCHEDULE";
 const SORT_KEY_DEFAULT = "DEFAULT";
 const MAX_HOURS_PER_WEEK_DEFAULT = "40";
-const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
 export const onGetJobInfo = (payload: IPayload) => async (
   dispatch: Function
@@ -111,7 +110,7 @@ export const onGetScheduleDetails = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   let { application } = payload.data;
-  const applicationId = payload.urlParams.applicationId;
+  const { applicationId } = payload.urlParams;
   if (!application || isEmpty(application)) {
     application = await new CandidateApplicationService().getApplication(
       applicationId
@@ -121,7 +120,7 @@ export const onGetScheduleDetails = (payload: IPayload) => async (
     ? application.jobScheduleSelected.scheduleId
     : payload.urlParams.scheduleId;
 
-  if(scheduleId){
+  if (scheduleId) {
     await onSelectedSchedule(scheduleId as string)(
       dispatch
     );
@@ -162,7 +161,7 @@ export const onGetAllSchedules = (payload: IPayload) => async (
       log(`getting all available shifts for job ${jobId}`);
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
-      const locale = 'en-us' as Locale; //TODO to be removed or replaced by actual Locale from Cookie
+      const locale = "en-us" as Locale; // TODO to be removed or replaced by actual Locale from Cookie
       const response = await new JobService().getAllSchedules({
         jobId,
         applicationId,
@@ -203,7 +202,7 @@ export const onGetAllSchedules = (payload: IPayload) => async (
         ? errorMessage
         : "CLIENT_ERROR: something went wrong while fetching shifts";
 
-      //send the error message to Adobe Analytics
+      // send the error message to Adobe Analytics
       let dataLayer: any = {};
       dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error");
       dataLayer.schedules.errorMessage = errorMessage;
@@ -272,7 +271,7 @@ const constructFilterPayloadDS = (payload: IPayload) => {
     "job-opportunities.maxHoursPerWeek"
   );
 
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "job-opportunities.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
@@ -372,7 +371,7 @@ export const onApplyFilterDS = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
 
   const activeDays: any[] = [];
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "job-opportunities.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
   daysHoursFilter.forEach(filter => {
@@ -426,7 +425,7 @@ export const onApplyFilterDS = (payload: IPayload) => async (
           });
           filter = constructFilterPayloadDS(payload);
         }
-        const locale = 'en-us' as Locale; //TODO to be removed or replaced by actual Locale from Cookie
+        const locale = "en-us" as Locale; // TODO to be removed or replaced by actual Locale from Cookie
         const response = await new JobService().getAllSchedules({
           jobId,
           applicationId,
@@ -547,7 +546,7 @@ export const onGetJobDescriptionDS = (payload: IPayload) => async (
 };
 
 export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   const { options } = payload;
   onRemoveError()(dispatch);
@@ -558,8 +557,8 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
 
   const activeDays: any[] = [];
-  let daysHoursFilter = (propertyOf(payload.data.output)(
-      "update-shift-ds.daysHoursFilter"
+  const daysHoursFilter = (propertyOf(payload.data.output)(
+    "update-shift-ds.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
   daysHoursFilter.forEach(filter => {
     if (filter.isActive) {
@@ -625,8 +624,8 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
           filter: JSON.stringify(filter)
         });
         availableSchedules = applySortOnSchedules(
-            response.availableSchedules,
-            filter
+          response.availableSchedules,
+          filter
         );
       }
       dispatch({
@@ -635,8 +634,8 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
           availableSchedules,
           pageFactor,
           schedulesEmptyOnFilter: isEmpty(availableSchedules.schedules)
-              ? true
-              : false
+            ? true
+            : false
         }
       });
       log("Updated shifts in state while applying filter");
@@ -645,7 +644,7 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
       log("Error while applying filter", ex);
       setLoading(false)(dispatch);
       if (
-          ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
+        ex?.response?.status === HTTPStatusCodes.NOT_FOUND ||
           ex?.response?.status === HTTPStatusCodes.BAD_REQUEST
       ) {
         dispatch({
@@ -660,7 +659,7 @@ export const onApplyFilterSelfServiceDS = (payload: IPayload) => async (
         });
       } else {
         onUpdateError(
-            ex?.response?.data?.errorMessage || "Unable to get schedules"
+          ex?.response?.data?.errorMessage || "Unable to get schedules"
         )(dispatch);
       }
     }
@@ -672,11 +671,11 @@ const constructFilterPayloadSelfService = (payload: IPayload) => {
       propertyOf(payload.data.output)("update-shift-ds.sortKey") || "FEATURED";
 
   const maxHoursPerWeek = propertyOf(payload.data.output)(
-      "update-shift-ds.maxHoursPerWeek"
+    "update-shift-ds.maxHoursPerWeek"
   );
 
-  let daysHoursFilter = (propertyOf(payload.data.output)(
-      "update-shift-ds.daysHoursFilter"
+  const daysHoursFilter = (propertyOf(payload.data.output)(
+    "update-shift-ds.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
   const defaultFilter = payload.appConfig.defaultAvailableFilter;
@@ -695,14 +694,14 @@ const constructFilterPayloadSelfService = (payload: IPayload) => {
   defaultFilter.sortBy = selectedSortKey;
   if (maxHoursPerWeek) {
     defaultFilter.filter.range.HOURS_PER_WEEK.maximumValue = parseInt(
-        maxHoursPerWeek
+      maxHoursPerWeek
     );
   }
   return defaultFilter;
 };
 
 export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   dispatch({
     type: SET_LOADING_SCHEDULES,
@@ -718,9 +717,9 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
     try {
       log(`getting all available shifts for job ${jobId}`);
       console.log(
-          "========onGetAllSchedules============jobId",
-          jobId,
-          applicationId
+        "========onGetAllSchedules============jobId",
+        jobId,
+        applicationId
       );
       onRemoveError()(dispatch);
       setLoading(true)(dispatch);
@@ -758,14 +757,14 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
       logError("Error while fetching available shits", ex);
       setLoading(false)(dispatch);
       let errorMessage = ex?.response?.data?.errorMessage
-          ? ex?.response?.data?.errorMessage
-          : ex?.message;
+        ? ex?.response?.data?.errorMessage
+        : ex?.message;
 
       errorMessage = errorMessage
-          ? errorMessage
-          : "CLIENT_ERROR: something went wrong while fetching shifts";
+        ? errorMessage
+        : "CLIENT_ERROR: something went wrong while fetching shifts";
 
-      //send the error message to Adobe Analytics
+      // send the error message to Adobe Analytics
       let dataLayer: any = {};
       dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error");
       dataLayer.schedules.errorMessage = errorMessage;
@@ -777,7 +776,7 @@ export const onGetAllSchedulesSelfService = (payload: IPayload) => async (
 };
 
 export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
@@ -800,9 +799,9 @@ export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => asyn
         filter: JSON.stringify(filter)
       });
       const response = await new RequisitionService().getAllAvailableShifts(
-          jobId,
-          applicationId,
-          filter
+        jobId,
+        applicationId,
+        filter
       );
 
       log(`loaded available shifts for requisition ${jobId} in incremental`, {
@@ -812,8 +811,8 @@ export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => asyn
       });
       if (response.availableShifts.total > 0) {
         const availableShifts = applySortOnSchedules(
-            response.availableShifts,
-            filter
+          response.availableShifts,
+          filter
         );
         dispatch({
           type: MERGE_SHIFTS,
@@ -839,7 +838,7 @@ export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => asyn
       if (ex?.response?.status === HTTPStatusCodes.NOT_FOUND) {
       } else {
         onUpdateError(
-            ex?.response?.data?.errorMessage || "Unable to get shifts"
+          ex?.response?.data?.errorMessage || "Unable to get shifts"
         )(dispatch);
       }
     }
@@ -847,7 +846,7 @@ export const onSchedulesIncrementalLoadSelfService = (payload: IPayload) => asyn
 };
 
 export const onResetFiltersSelfServiceDS = (payload: IPayload) => async (
-    dispatch: Function
+  dispatch: Function
 ) => {
   const sortKey = SORT_KEY_DEFAULT;
   const maxHoursPerWeek = MAX_HOURS_PER_WEEK_DEFAULT;
@@ -876,13 +875,13 @@ export const onCheckIfSkipScheduleSelection = ( payload: IPayload ) => async (
   dispatch: Function
 ) => {
   setLoading(true)(dispatch);
-  const scheduleId = payload.urlParams.scheduleId;
-  const jobId = payload.urlParams.jobId;
-  const applicationId = payload.urlParams.applicationId;
-  if(jobId && applicationId && scheduleId){
+  const { scheduleId } = payload.urlParams;
+  const { jobId } = payload.urlParams;
+  const { applicationId } = payload.urlParams;
+  if (jobId && applicationId && scheduleId) {
     goTo("skip-schedule", payload.urlParams)(dispatch);
   }
-}
+};
 
 export const onSkipScheduleSelection = ( payload: IPayload ) => async (
   dispatch: Function
@@ -891,10 +890,10 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
   onRemoveError()(dispatch);
   // set current page to job-opportunities so it wont go back to this skip-schedule page when click back botton
   window.localStorage.setItem("page", "job-opportunities");
-  const scheduleId = payload.urlParams.scheduleId;
-  const jobId = payload.urlParams.jobId;
-  const applicationId = payload.urlParams.applicationId;
-  if(jobId && applicationId && scheduleId){
+  const { scheduleId } = payload.urlParams;
+  const { jobId } = payload.urlParams;
+  const { applicationId } = payload.urlParams;
+  if (jobId && applicationId && scheduleId) {
     try {
       const getApplication = new CandidateApplicationService().getApplication(applicationId);
       const getJob = new JobService().getJobInfo(jobId);
@@ -923,7 +922,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
           jobId: jobId,
           scheduleId: scheduleId,
           scheduleDetails: JSON.stringify(selectedSchedule),
-        }
+        };
 
         const response = await new CandidateApplicationService().updateApplication({
           type: "job-confirm",
@@ -943,25 +942,25 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
         });
 
         log(
-          `Updated application at skip-schedule and update application data in state`,
+          "Updated application at skip-schedule and update application data in state",
           {
             selectedSchedule: JSON.stringify(selectedSchedule)
           }
         );
         log(
-          `After updating schedule selection, application is redirecting to contingent-offer`
+          "After updating schedule selection, application is redirecting to contingent-offer"
         );
-        delete payload.urlParams.scheduleId
+        delete payload.urlParams.scheduleId;
 
         log(
-          `Complete task event initiated on action job-confirm and current page is skip-schedule`
+          "Complete task event initiated on action job-confirm and current page is skip-schedule"
         );
         const jobPayload: JobDescriptor = {
           consentInfo: job,
           jobDescription: job,
           availableSchedules: [],
           selectedChildSchedule: selectedSchedule
-        }
+        };
         if (payload.options?.adobeMetrics) {
           postAdobeMetrics(payload.options.adobeMetrics, {});
         }
@@ -971,7 +970,7 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
 
     } catch (ex) {
       setWorkflowLoading(false)(dispatch);
-      logError(`Failed while updating schedule selection`, ex);
+      logError("Failed while updating schedule selection", ex);
       if (ex?.message === NO_APPLICATION_ID) {
         window.localStorage.setItem("page", "applicationId-null");
         onUpdatePageId("applicationId-null")(dispatch);
@@ -991,13 +990,8 @@ export const onSkipScheduleSelection = ( payload: IPayload ) => async (
     );
     goTo("job-opportunities", payload.urlParams)(dispatch);
   }
-}
+};
 
-export const onClearSelectedSchedule = (payload: IPayload) => async (
-  dispatch: Function
-) => {
-  dispatch({
-    type: CLEAR_SELECTED_SCHEDULE,
-    payload: {}
-  });
-}
+export const onClearSelectedSchedule = () => async (dispatch: Function) => {
+  dispatch({ type: CLEAR_SELECTED_SCHEDULE, payload: {} });
+};

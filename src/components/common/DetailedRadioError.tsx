@@ -5,30 +5,30 @@ import { Status, StatusIndicator } from "@amzn/stencil-react-components/status-i
 import { translate as t } from "../../utils/translator";
 
 interface DetailedRadioErrorProps {
-  errorMessage?: string,
-  errorMessageTranslationKey?: string
+  errorMessage?: string;
+  errorMessageTranslationKey?: string;
 }
 
 const DetailedRadioError = (props: DetailedRadioErrorProps) => {
   const { errorMessage, errorMessageTranslationKey } = props;
 
   const renderErrorMessage = () => {
-    if(errorMessageTranslationKey && errorMessage) {
+    if (errorMessageTranslationKey && errorMessage) {
       return t(errorMessageTranslationKey, errorMessage);
     }
 
     return t("BB-Detailed-button-error-text-message", "Please check the box to proceed.");
-  }
+  };
 
   return (
     <Row padding="S300" backgroundColor={CommonColors.RED05}>
       <StatusIndicator
         messageText={renderErrorMessage()}
         status={Status.Negative}
-        iconAriaHidden={true}
+        iconAriaHidden
       />
     </Row>
-  )
-}
+  );
+};
 
 export default DetailedRadioError;

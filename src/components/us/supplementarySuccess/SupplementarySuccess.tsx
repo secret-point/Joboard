@@ -10,7 +10,7 @@ import { redirectToASHChecklist } from "../../../utils/helper";
 interface MapStateToProps {
 }
 
-export const SupplementarySuccess = (props: MapStateToProps) => {
+export const SupplementarySuccess = () => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -24,12 +24,12 @@ export const SupplementarySuccess = (props: MapStateToProps) => {
     if (applicationId && (jobId || requisitionId)) {
       redirectToASHChecklist(applicationId, jobId, requisitionId);
     }
-}, [applicationId, jobId, requisitionId]);
+  }, [applicationId, jobId, requisitionId]);
 
   return (
-    <Col minHeight="40vh"></Col>
-  )
-}
+    <Col minHeight="40vh" />
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

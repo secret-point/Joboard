@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { Row } from "@amzn/stencil-react-components/layout";
-import { getCountryCode, getCountryConfig } from '../../../countryExpansionConfig';
+import { getCountryCode, getCountryConfig } from "../../../countryExpansionConfig";
 import { translate as t } from "../../../utils/translator";
 
 interface ScheduleCardBannerProps {
@@ -20,7 +20,7 @@ export const ScheduleCardBanner = (props: ScheduleCardBannerProps) => {
         {t("BB-Schedule-card-bonus-text", "Bonus:")} {renderScheduleCardBanner(currencyCode, signOnBonus, signOnBonusL10N)}
       </div>
     </Row>
-  )
-}
+  );
+};
 
 export default ScheduleCardBanner;

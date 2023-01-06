@@ -13,7 +13,7 @@ const NotRehireEligible = () => {
         {t("BB-not-rehire-eligible-content-text", "We value your time and wish you the best of luck in the future.")}
       </Text>
     </Col>
-  )
-}
+  );
+};
 
 export default NotRehireEligible;

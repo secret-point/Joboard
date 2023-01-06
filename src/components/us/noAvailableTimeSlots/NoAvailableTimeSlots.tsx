@@ -28,11 +28,11 @@ import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundSc
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
-  candidate: CandidateState,
-  job: JobState,
-  application: ApplicationState,
-  appConfig: AppConfigState,
-  schedule: ScheduleState
+  candidate: CandidateState;
+  job: JobState;
+  application: ApplicationState;
+  appConfig: AppConfigState;
+  schedule: ScheduleState;
 }
 
 export const NoAvailableTimeSlots = (props: MapStateToProps) => {
@@ -43,8 +43,8 @@ export const NoAvailableTimeSlots = (props: MapStateToProps) => {
   const { applicationId, jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const scheduleDetail = schedule.results.scheduleDetail;
-  const candidateData = candidate.results.candidateData;
+  const { scheduleDetail } = schedule.results;
+  const { candidateData } = candidate.results;
   const envConfig = appConfig.results?.envConfig;
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export const NoAvailableTimeSlots = (props: MapStateToProps) => {
     scheduleId && scheduleId!== scheduleDetail?.scheduleId && boundGetScheduleDetail({
       locale: getLocale(),
       scheduleId: scheduleId
-    })
+    });
   }, [scheduleId]);
 
   useEffect(() => {
@@ -75,10 +75,10 @@ export const NoAvailableTimeSlots = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[])
+    };
+  }, []);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();

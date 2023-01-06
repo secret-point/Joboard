@@ -6,32 +6,33 @@ import { uiState } from "../../reducers/ui.reducer";
 import { translate as t } from "../../utils/translator";
 
 interface MapStateToProps {
-    ui: uiState
+  ui: uiState;
 }
 
 interface AppLoaderProps {
-    loaderText?: string
+  loaderText?: string;
 }
 
 type AppLoaderMergedProps = MapStateToProps & AppLoaderProps;
 
 export const AppLoader = ( props: AppLoaderMergedProps) => {
 
-    const { ui, loaderText } = props;
+  const { ui, loaderText } = props;
 
-    return (
-        ui.isLoading || ui.wotcLoading || ui.referralLoading ?
-        <Col
-            className="AppLoader"
-        >
-            <Spinner size={SpinnerSize.Large} loadingText={loaderText || t("BB-spinner-loading-text", 'Loading...') }/>
-        </Col> :
-            <></>
-    )
-}
+  return (
+    ui.isLoading || ui.wotcLoading || ui.referralLoading ? (
+      <Col
+        className="AppLoader"
+      >
+        <Spinner size={SpinnerSize.Large} loadingText={loaderText || t("BB-spinner-loading-text", "Loading...") } />
+      </Col>
+    ) :
+      <></>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
-    return state
+  return state;
 };
 
 export default connect(mapStateToProps)(AppLoader);

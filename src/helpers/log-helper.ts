@@ -8,6 +8,7 @@ export enum LoggerType {
   WARN = "warn"
 }
 
+/* eslint-disable  @typescript-eslint/no-unused-vars */
 export const initLogger = (url: string, appStage: string, context?: any) => {
   return new KatalLogger({
     url: url,
@@ -71,12 +72,8 @@ export const log = (message: string, context: any = {}, type?: LoggerType) => {
   }
 };
 
-export const logError = (
-  message: string,
-  error: Error,
-  context: any = {},
-  type?: LoggerType
-) => {
+/* eslint-disable  @typescript-eslint/no-unused-vars */
+export const logError = (message: string, error: Error, context: any = {}, type?: LoggerType) => {
   const cid = getCookie("hvhcid");
   const log = getLogger(context);
   if (!log) {

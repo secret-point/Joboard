@@ -22,7 +22,7 @@ export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
             return response;
           }),
           map((response: UpdateWotcStatusResponse) => {
-            log(`[Epic] UpdateWotcStatusEpic successful`, response);
+            log("[Epic] UpdateWotcStatusEpic successful", response);
             if (action.onSuccess) {
               action.onSuccess(response.data);
             }
@@ -32,7 +32,7 @@ export const UpdateWotcStatusEpic = (action$: Observable<any>) => {
           catchError((error: ApiError) => {
             log(`[Epic] UpdateWotcStatusEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
 
-            if(action.onError){
+            if (action.onError) {
               action.onError(error);
             }
 

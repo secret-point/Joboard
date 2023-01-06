@@ -20,12 +20,12 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import queryString from "query-string";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
-import {boundResetBannerMessage} from "../../../actions/UiActions/boundUi";
+import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 
 interface MapStateToProps {
-  candidate: CandidateState,
-  job: JobState,
-  application: ApplicationState
+  candidate: CandidateState;
+  job: JobState;
+  application: ApplicationState;
 }
 
 export const SessionTimeout = (props: MapStateToProps) => {
@@ -36,7 +36,7 @@ export const SessionTimeout = (props: MapStateToProps) => {
   const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const candidateData = candidate.results.candidateData;
+  const { candidateData } = candidate.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -59,10 +59,10 @@ export const SessionTimeout = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName])
+    };
+  }, [pageName]);
 
   const handleGoToJobOpportunities = () => {
     boundResetBannerMessage();

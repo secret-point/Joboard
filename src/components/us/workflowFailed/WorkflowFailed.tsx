@@ -21,9 +21,9 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
-  job: JobState,
-  application: ApplicationState,
-  candidate: CandidateState
+  job: JobState;
+  application: ApplicationState;
+  candidate: CandidateState;
 }
 
 export const WorkflowFailed = (props: MapStateToProps) => {
@@ -31,17 +31,17 @@ export const WorkflowFailed = (props: MapStateToProps) => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId, jobId, scheduleId } = queryParams;
+  const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
   const candidateData = candidate.results?.candidateData;
 
   useEffect(() => {
     boundGetCandidateInfo();
-  },[])
+  }, []);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() })
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -57,17 +57,17 @@ export const WorkflowFailed = (props: MapStateToProps) => {
 
   useEffect(() => {
     return () => {
-      //reset this so as it can emit new pageload event after being unmounted.
+      // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
-    }
-  },[pageName])
+    };
+  }, [pageName]);
 
   const handleGoToDashboard = () => {
     redirectToDashboard();
-  }
+  };
 
   return (
-    <Col gridGap="S300" padding={{ top: 'S300' }}>
+    <Col gridGap="S300" padding={{ top: "S300" }}>
       <Text fontSize="T400">
         {t("BB-workflow-failed-title-text", "Workflow Error")}
       </Text>
@@ -77,9 +77,9 @@ export const WorkflowFailed = (props: MapStateToProps) => {
       <Button variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
         {t("BB-workflow-failed-return-to-dashboard-text", "Return to dashboard")}
       </Button>
-    </Col >
-  )
-}
+    </Col>
+  );
+};
 
 const mapStateToProps = (state: MapStateToProps) => {
   return state;

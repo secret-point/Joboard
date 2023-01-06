@@ -1,14 +1,9 @@
 import { ShiftPreferenceResponse } from "./../../@types/shift-preferences";
 import RequisitionService from "./../../services/requisition-service";
 import isEmpty from "lodash/isEmpty";
-import IPayload, {AvailableFilter, AvailableShifts, DaysHoursFilter} from "./../../@types/IPayload";
-import {
-  setLoading,
-  onUpdatePageId,
-  onUpdateChange,
-  onGoToAction
-} from "./actions";
-import { onUpdateError, onRemoveError } from "./error-actions";
+import IPayload, { AvailableFilter, AvailableShifts, DaysHoursFilter } from "./../../@types/IPayload";
+import { onGoToAction, onUpdateChange, onUpdatePageId, setLoading } from "./actions";
+import { onRemoveError, onUpdateError } from "./error-actions";
 import find from "lodash/find";
 import HTTPStatusCodes from "./../../constants/http-status-codes";
 import propertyOf from "lodash/propertyOf";
@@ -18,14 +13,13 @@ import { push } from "react-router-redux";
 import { sendDataLayerAdobeAnalytics } from "./adobe-actions";
 import { getDataForEventMetrics } from "./../../helpers/adobe-helper";
 import moment from "moment";
-import { sortWith, ascend, descend, prop } from "ramda";
+import { ascend, descend, prop, sortWith } from "ramda";
 import { log, logError } from "./../../helpers/log-helper";
 import cloneDeep from "lodash/cloneDeep";
 import removeFromObject from "lodash/remove";
 import { EVENT_NAMES } from "./../../constants/adobe-analytics";
 import { sendAdobeAnalytics } from "./application-actions";
 import JobService from "./../../services/job-service";
-import queryString from "query-string";
 import { ShiftType } from "./../../constants/shift-type";
 import { GetNheTimeSlotRequestDs } from "../../utils/types/common";
 
@@ -234,12 +228,12 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
   const requisitionId = payload.urlParams?.requisitionId;
   const applicationId = payload.urlParams?.applicationId;
 
-  log(`get NHE slots request payload: `, payload);
+  log("get NHE slots request payload: ", payload);
   if (requisitionId) {
     try {
       let { application } = payload.data;
       if (!application || isEmpty(application)) {
-        log(`getting application in NHE if application not exits in state`);
+        log("getting application in NHE if application not exits in state");
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
@@ -267,7 +261,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
         response.forEach((slot: any) => {
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
-          //format the date with
+          // format the date with
           nheSlot.title = moment(slot.dateWithoutFormat, "DD/MM/yyyy").format(
             "dddd, MMM Do YYYY"
           );
@@ -303,7 +297,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
             nehTimeSlotsTotalCount: nheSlots.length
           }
         });
-        log(`sanitized and updated state with time slots`);
+        log("sanitized and updated state with time slots");
       } else {
         log(`load time slots for HCR ${jobSelected?.headCountRequestId}`, {
           timeSlotsCount: response?.length
@@ -312,7 +306,7 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
       }
       setLoading(false)(dispatch);
     } catch (ex) {
-      logError(`Unable to get NHE time slots`, ex);
+      logError("Unable to get NHE time slots", ex);
       setLoading(false)(dispatch);
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get NHE time slots",
@@ -323,13 +317,13 @@ export const onGetNHETimeSlots = (payload: IPayload) => async (
 };
 
 export interface NHETimeslotRequestDS {
-  parentRequisitionId: null,
+  parentRequisitionId: null;
   requisitionServiceScheduleDetails: {
     scheduleId: string;
     locationCode: string;
     hireStartDate: string;
     contingencyTurnAroundDays: number;
-  }
+  };
 }
 
 export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
@@ -342,12 +336,12 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
   let job = payload.data?.job;
   let schedule = payload.data?.job?.selectedChildSchedule;
 
-  log(`get NHE slots request payload: `, payload);
+  log("get NHE slots request payload: ", payload);
   if (jobId) {
     try {
       let { application } = payload.data;
       if (!application || isEmpty(application)) {
-        log(`getting application in NHE if application not exits in state`);
+        log("getting application in NHE if application not exits in state");
         application = await new CandidateApplicationService().getApplication(
           applicationId
         );
@@ -376,8 +370,8 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
         }
       }
 
-      let siteId = schedule.siteId;
-      if(siteId.startsWith("SITE-")){
+      let { siteId } = schedule;
+      if (siteId.startsWith("SITE-")) {
         siteId = siteId.replace("SITE-", "");
       }
 
@@ -388,7 +382,7 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
           hireStartDate: schedule.hireStartDate,
           contingencyTurnAroundDays: schedule.contingencyTat
         }
-      }
+      };
 
       const response = await new RequisitionService().availableTimeSlots(timeslotRequest);
 
@@ -397,7 +391,7 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
         response.forEach((slot: any) => {
           const nheSlot: any = {};
           nheSlot.value = JSON.stringify(slot);
-          //format the date with
+          // format the date with
           nheSlot.title = moment(slot.dateWithoutFormat, "DD/MM/yyyy").format(
             "dddd, MMM Do YYYY"
           );
@@ -433,14 +427,14 @@ export const onGetNHETimeSlotsDS = (payload: IPayload) => async (
             nehTimeSlotsTotalCount: nheSlots.length
           }
         });
-        log(`sanitized and updated state with time slots`);
+        log("sanitized and updated state with time slots");
       } else {
         log(`Empty response loading time slots for ${JSON.stringify(timeslotRequest)}`);
         onUpdatePageId("no-available-time-slots")(dispatch);
       }
       setLoading(false)(dispatch);
     } catch (ex) {
-      logError(`Unable to get NHE time slots`, ex);
+      logError("Unable to get NHE time slots", ex);
       setLoading(false)(dispatch);
       onUpdateError(
         ex?.response?.data?.errorMessage || "Unable to get NHE time slots"
@@ -479,7 +473,7 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
         availableShiftsCount: response.availableShifts.total
       });
 
-      if (application != null && application.jobSelected != null) {
+      if (application !== null && application.jobSelected !== null) {
         filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
       }
 
@@ -516,7 +510,7 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
         ? errorMessage
         : "CLIENT_ERROR: something went wrong while fetching shifts";
 
-      //send the error message to Adobe Analytics
+      // send the error message to Adobe Analytics
       let dataLayer: any = {};
       dataLayer = getDataForEventMetrics(
         "get-all-avaliable-shift-error-self-service"
@@ -529,10 +523,10 @@ export const onGetAllAvailableShiftsSelfService = (payload: IPayload) => async (
   }
 };
 
-const filterOutCurrentShift = (availableShifts : AvailableShifts, currentHCRId : string) => {
-  let shifts =  availableShifts.shifts;
+const filterOutCurrentShift = (availableShifts: AvailableShifts, currentHCRId: string) => {
+  const { shifts } = availableShifts;
   for (let i = shifts.length - 1; i >= 0; i--) {
-    let shift = shifts[i];
+    const shift = shifts[i];
     if (shift.shiftType === ShiftType.REGULAR && shift.headCountRequestId === currentHCRId) {
       shifts.splice(i, 1);
     }
@@ -597,7 +591,7 @@ export const onGetAllAvailableShifts = (payload: IPayload) => async (
         ? errorMessage
         : "CLIENT_ERROR: something went wrong while fetching shifts";
 
-      //send the error message to Adobe Analytics
+      // send the error message to Adobe Analytics
       let dataLayer: any = {};
       dataLayer = getDataForEventMetrics("get-all-avaliable-shift-error");
       dataLayer.shifts.errorMessage = errorMessage;
@@ -668,7 +662,7 @@ const constructFilterPayload = (payload: IPayload) => {
     "job-opportunities.maxHoursPerWeek"
   );
 
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "job-opportunities.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
@@ -702,7 +696,7 @@ const constructFilterPayloadSelfService = (payload: IPayload) => {
     "update-shift.maxHoursPerWeek"
   );
 
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "update-shift.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
 
@@ -829,7 +823,7 @@ export const onShiftsIncrementalLoadSelfService = (payload: IPayload) => async (
         filter
       );
 
-      if (application != null && application.jobSelected != null) {
+      if (application !== null && application.jobSelected !== null) {
         filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
       }
 
@@ -890,7 +884,7 @@ export const onApplyFilter = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
 
   const activeDays: any[] = [];
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "job-opportunities.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
   daysHoursFilter.forEach(filter => {
@@ -1006,7 +1000,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
   const applicationId = payload.urlParams?.applicationId;
 
   const activeDays: any[] = [];
-  let daysHoursFilter = (propertyOf(payload.data.output)(
+  const daysHoursFilter = (propertyOf(payload.data.output)(
     "update-shift.daysHoursFilter"
   ) || payload.appConfig.defaultDaysHoursFilter) as DaysHoursFilter[];
   daysHoursFilter.forEach(filter => {
@@ -1066,7 +1060,7 @@ export const onApplyFilterSelfService = (payload: IPayload) => async (
           filter
         );
 
-        if (application != null && application.jobSelected != null) {
+        if (application !== null && application.jobSelected !== null) {
           filterOutCurrentShift(response.availableShifts, application.jobSelected.headCountRequestId);
         }
 
@@ -1264,7 +1258,7 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (
   dispatch: Function
 ) => {
   const hcrId = payload.data.application.jobSelected.headCountRequestId;
-  const applicationId = payload.data.application.applicationId;
+  const { applicationId } = payload.data.application;
   onRemoveError()(dispatch);
   setLoading(true)(dispatch);
 

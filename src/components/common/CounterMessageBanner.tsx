@@ -60,20 +60,20 @@ export const CounterMessageBanner = (props: MapStateToProps) => {
   return (
     <>
       {
-        applicationData && showCounterBanner() &&
-        <Col id="counter-message-banner" padding={{ top: "S300", bottom: "S300" }}>
-          <MessageBanner
-            type={MessageBannerType.Warning}
-            aria-live="assertive"
-            iconAltText="warn"
-          >
-            {t("BB-counter-message-banner-text", `We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to complete the remaining steps.`, {
-              hours,
-              minutes
-            })}
-          </MessageBanner>
-        </Col>
-      }
+        applicationData && showCounterBanner() && (
+          <Col id="counter-message-banner" padding={{ top: "S300", bottom: "S300" }}>
+            <MessageBanner
+              type={MessageBannerType.Warning}
+              aria-live="assertive"
+              iconAltText="warn"
+            >
+              {t("BB-counter-message-banner-text", `We are holding a spot for you for the next ${hours} hours and ${minutes} minutes to complete the remaining steps.`, {
+                hours,
+                minutes
+              })}
+            </MessageBanner>
+          </Col>
+        )}
     </>
   );
 };

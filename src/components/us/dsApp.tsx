@@ -42,8 +42,8 @@ import NoAvailableShift from "./noAvailableShift/NoAvailableShift";
 import ApplicationIdNull from "./applicationIdNull/ApplicationIdNull";
 
 interface MapStateToProps {
-  appConfig: AppConfig,
-  ui: uiState
+  appConfig: AppConfig;
+  ui: uiState;
 }
 
 const {
@@ -81,7 +81,7 @@ const {
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUS = ( props: MapStateToProps ) => {
-  const { appConfig, ui } = props;
+  const { ui } = props;
   const { bannerMessage } = ui;
 
   // Will review and refacoter this logic later
@@ -97,110 +97,110 @@ export const DragonStoneAppUS = ( props: MapStateToProps ) => {
   // };
 
   return (
-      <Col padding='S300' minHeight="40vh">
-        <AppLoader/>
-        <CounterMessageBanner/>
-        {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage}/>}
-        <Router>
-          <Switch>
-            <Route exact path='/' render={() => <Redirect to={PRE_CONSENT}/>}/>
-            <Route path={`/${PRE_CONSENT}`} exact>
-              <PreConsentPage/>
-            </Route>
-            <Route path={`/${CONSENT}`} exact>
-              <ConsentPage/>
-            </Route>
-            <Route path={`/${JOB_OPPORTUNITIES}`} exact>
-              <JobOpportunity/>
-            </Route>
-            <Route path={`/${JOB_CONFIRMATION}`} exact>
-              <JobConfirmation/>
-            </Route>
-            <Route path={`/${JOB_DESCRIPTION}`} exact>
-              <JobDescription/>
-            </Route>
-            <Route path={`/${CONTINGENT_OFFER}`} exact>
-              <ContingencyOffer/>
-            </Route>
-            <Route path={`/${BACKGROUND_CHECK}`} exact>
-              <BackgroundCheck/>
-            </Route>
-            <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
-              <FcraDisclosure/>
-            </Route>
-            <Route path={`/${RESUME_APPLICATION}`} exact>
-              <ResumeApplication/>
-            </Route>
-            <Route path={`/${NHE}`} exact>
-              <Nhe/>
-            </Route>
-            <Route path={`/${SELF_IDENTIFICATION}`} exact>
-              <SelfIdentification/>
-            </Route>
-            <Route path={`/${ALREADY_APPLIED}`} exact>
-              <AlreadyApplied/>
-            </Route>
-            <Route path={`/${REVIEW_SUBMIT}`} exact>
-              <ReviewSubmit/>
-            </Route>
-            <Route path={`/${THANK_YOU}`} exact>
-              <ThankYou/>
-            </Route>
-            <Route path={`/${WOTC}`} exact>
-              <Wotc/>
-            </Route>
-            <Route path={`/${WOTC_COMPLETE}`} exact>
-              <WotcComplete/>
-            </Route>
-            <Route path={`/${SESSION_TIMEOUT}`} exact>
-              <SessionTimeout/>
-            </Route>
-            <Route path={`/${ASSESSMENT_CONSENT}`} exact>
-              <AssessmentConsent/>
-            </Route>
-            <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
-              <AssessmentNotEligible/>
-            </Route>
-            <Route path={`/${ASSESSMENT_FINISHED}`} exact>
-              <AssessmentFinished/>
-            </Route>
-            <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
-              <CandidateWithdraws/>
-            </Route>
-            <Route path={`/${CALI_DISCLOSURE}`} exact>
-              <CaliDisclosure/>
-            </Route>
-            <Route path={`/${AMAZON_REJECTS}`} exact>
-              <AmazonRejects/>
-            </Route>
-            <Route path={`/${WORKFLOW_FAILED}`} exact>
-              <WorkflowFailed/>
-            </Route>
-            <Route path={`/${AMAZON_WITHDRAWS}`} exact>
-              <AmazonWithdraws/>
-            </Route>
-            <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
-              <NoAvailableTimeSlots/>
-            </Route>
-            <Route path={`/${CAN_NOT_OFFER_JOB}`} exact>
-              <CanNotOfferJob/>
-            </Route>
-            <Route path={`/${SUPPLEMENTARY_SUCCESS}`} exact>
-              <SupplementarySuccess/>
-            </Route>
-            <Route path={`/${REHIRE_ELIGIBILITY_STATUS}`} exact>
-              <RehireEligibilityStatus/>
-            </Route>
-            <Route path={`/${NO_AVAILABLE_SHIFT}`} exact>
-              <NoAvailableShift/>
-            </Route>
-            <Route path={`/${APPLICATIONID_NULL}`} exact>
-              <ApplicationIdNull/>
-            </Route>
-          </Switch>
-        </Router>
-        <BackToTopButton />
-      </Col>
+    <Col padding="S300" minHeight="40vh">
+      <AppLoader />
+      <CounterMessageBanner />
+      {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage} />}
+      <Router>
+        <Switch>
+          <Route exact path="/" render={() => <Redirect to={PRE_CONSENT} />} />
+          <Route path={`/${PRE_CONSENT}`} exact>
+            <PreConsentPage />
+          </Route>
+          <Route path={`/${CONSENT}`} exact>
+            <ConsentPage />
+          </Route>
+          <Route path={`/${JOB_OPPORTUNITIES}`} exact>
+            <JobOpportunity />
+          </Route>
+          <Route path={`/${JOB_CONFIRMATION}`} exact>
+            <JobConfirmation />
+          </Route>
+          <Route path={`/${JOB_DESCRIPTION}`} exact>
+            <JobDescription />
+          </Route>
+          <Route path={`/${CONTINGENT_OFFER}`} exact>
+            <ContingencyOffer />
+          </Route>
+          <Route path={`/${BACKGROUND_CHECK}`} exact>
+            <BackgroundCheck />
+          </Route>
+          <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
+            <FcraDisclosure />
+          </Route>
+          <Route path={`/${RESUME_APPLICATION}`} exact>
+            <ResumeApplication />
+          </Route>
+          <Route path={`/${NHE}`} exact>
+            <Nhe />
+          </Route>
+          <Route path={`/${SELF_IDENTIFICATION}`} exact>
+            <SelfIdentification />
+          </Route>
+          <Route path={`/${ALREADY_APPLIED}`} exact>
+            <AlreadyApplied />
+          </Route>
+          <Route path={`/${REVIEW_SUBMIT}`} exact>
+            <ReviewSubmit />
+          </Route>
+          <Route path={`/${THANK_YOU}`} exact>
+            <ThankYou />
+          </Route>
+          <Route path={`/${WOTC}`} exact>
+            <Wotc />
+          </Route>
+          <Route path={`/${WOTC_COMPLETE}`} exact>
+            <WotcComplete />
+          </Route>
+          <Route path={`/${SESSION_TIMEOUT}`} exact>
+            <SessionTimeout />
+          </Route>
+          <Route path={`/${ASSESSMENT_CONSENT}`} exact>
+            <AssessmentConsent />
+          </Route>
+          <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
+            <AssessmentNotEligible />
+          </Route>
+          <Route path={`/${ASSESSMENT_FINISHED}`} exact>
+            <AssessmentFinished />
+          </Route>
+          <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
+            <CandidateWithdraws />
+          </Route>
+          <Route path={`/${CALI_DISCLOSURE}`} exact>
+            <CaliDisclosure />
+          </Route>
+          <Route path={`/${AMAZON_REJECTS}`} exact>
+            <AmazonRejects />
+          </Route>
+          <Route path={`/${WORKFLOW_FAILED}`} exact>
+            <WorkflowFailed />
+          </Route>
+          <Route path={`/${AMAZON_WITHDRAWS}`} exact>
+            <AmazonWithdraws />
+          </Route>
+          <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
+            <NoAvailableTimeSlots />
+          </Route>
+          <Route path={`/${CAN_NOT_OFFER_JOB}`} exact>
+            <CanNotOfferJob />
+          </Route>
+          <Route path={`/${SUPPLEMENTARY_SUCCESS}`} exact>
+            <SupplementarySuccess />
+          </Route>
+          <Route path={`/${REHIRE_ELIGIBILITY_STATUS}`} exact>
+            <RehireEligibilityStatus />
+          </Route>
+          <Route path={`/${NO_AVAILABLE_SHIFT}`} exact>
+            <NoAvailableShift />
+          </Route>
+          <Route path={`/${APPLICATIONID_NULL}`} exact>
+            <ApplicationIdNull />
+          </Route>
+        </Switch>
+      </Router>
+      <BackToTopButton />
+    </Col>
   );
 };
 
