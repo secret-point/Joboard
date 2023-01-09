@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewSubmit should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Row
+    gridGap="S300"
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    />
+  </Row>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    Review and Submit
+  </Text>
+  <div>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Job Details
+      </Text>
+      <ScheduleDetails
+        scheduleDetail={
+          Object {
+            "address": "38811 Cherry Street",
+            "basePay": 6,
+            "bgcVendorName": "FADV",
+            "briefJobDescription": "briefJobDescription briefJobDescription",
+            "city": "Newark",
+            "contingencyTat": 0,
+            "currencyCode": "USD",
+            "dataSource": "Dragonstone",
+            "employmentType": "Regular",
+            "employmentTypeL10N": "Regular",
+            "externalJobTitle": "Amazon Grocery Shopper",
+            "firstDayOnSite": "2022-10-29",
+            "firstDayOnSiteL10N": "2022-10-29",
+            "hireStartDate": "2022-11-04",
+            "hoursPerWeek": 16,
+            "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
+            "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
+            "jobDescription": "jobDescription jobDescription",
+            "jobId": "JOB-US-0000001234",
+            "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
+            "language": "English",
+            "monthlyBasePay": 1000,
+            "monthlyBasePayL10N": null,
+            "parsedTrainingDate": "01-01-2023",
+            "postalCode": "94560",
+            "requiredLanguage": Array [
+              "en-US",
+              "es-US",
+            ],
+            "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
+            "scheduleId": "test-schedule-id",
+            "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
+            "scheduleType": "PART_TIME",
+            "signOnBonus": 5,
+            "signOnBonusL10N": "$5.00",
+            "siteId": "SITE-OAK5",
+            "state": "CA",
+            "tagLine": "In-store shopping for customer grocery orders.",
+            "totalPayRate": 8.9,
+            "totalPayRateL10N": "$8.90",
+          }
+        }
+      />
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Background check
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            aria-hidden={true}
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Authorized
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Previous full name:
+         
+        test-firstname test-lastname
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        CURP ID:
+         
+        *****9599
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Date of birth:
+         
+        2nd Aug 1988
+      </Text>
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Pre-Hire Appointment
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            aria-hidden={true}
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Thursday, Aug 4th 2022
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Hours:
+         
+        13:30
+         - 
+        14:00
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        We look forward to seeing you at the time above.
+      </Text>
+    </Col>
+  </div>
+  <div>
+    <Row
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Voluntary Self-identification
+      </Text>
+      <Button
+        colorScheme="default"
+        icon={
+          <IconPencil
+            aria-hidden={true}
+            display="block"
+          />
+        }
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="default"
+        type="button"
+        variant="tertiary"
+      >
+        Edit
+      </Button>
+    </Row>
+    <Col
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Equal Opportunity:
+         
+        Male
+        , He
+        , Indigenous
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Disability Status:
+         
+      </Text>
+    </Col>
+  </div>
+  <Col
+    gridGap="S300"
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <DebouncedButton
+      onClick={[Function]}
+      variant="primary"
+    >
+      Submit application
+    </DebouncedButton>
+  </Col>
+</Col>
+`;

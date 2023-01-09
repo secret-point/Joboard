@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionalBGCInfo should match snapshot 1`] = `
+<Col>
+  <Connect(PreviousLegalNameForm) />
+  <Col
+    gridGap={15}
+    key="Address Line 1"
+  >
+    <FormInputText
+      defaultValue="test address line 1"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine1",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineOne",
+          "labelText": "Address Line 1",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-label-text",
+          "name": "additional BGC Address Line 1",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{1,}[a-zA-Z0-9À-ÖØ-öø-ÿ]$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="Apartment, suite, .etc"
+  >
+    <FormInputText
+      defaultValue="test address line 2"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine2",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineTwo",
+          "labelText": "Apartment, suite, .etc",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-label-text",
+          "name": "Apartment, suite, .etc",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{1,}[a-zA-Z0-9À-ÖØ-öø-ÿ]$",
+          "required": false,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="City"
+  >
+    <FormInputText
+      defaultValue="Test City"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.city",
+          "errorMessage": "Please enter a valid city",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-city-error-text",
+          "hasError": false,
+          "id": "additionalBGCCity",
+          "labelText": "City",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-city-label-text",
+          "name": "City",
+          "regex": "^(?=\\\\S)[a-zA-Z-!À-ÖØ-öø-ÿ ]{1,}[a-zA-ZÀ-ÖØ-öø-ÿ]$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="State/province"
+  >
+    <FormInputSelect
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.state",
+          "errorMessage": "Please enter a valid state/province",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-state-error-text",
+          "hasError": false,
+          "id": "additionalBGCState",
+          "labelText": "State/province",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-state-label-text",
+          "name": "State/province",
+          "placeholder": "Select a state",
+          "placeholderTranslationKey": "BB-BGC-Additional-bgc-form-state-placeholder-text",
+          "required": true,
+          "selectOptions": Array [
+            Object {
+              "code": "AGU",
+              "displayValue": "AGU -- Aguascalientes",
+              "translationKey": "BB-MX-States-AGU",
+              "value": "Aguascalientes",
+            },
+            Object {
+              "code": "BCN",
+              "displayValue": "BCN -- Baja California",
+              "translationKey": "BB-MX-States-BCN",
+              "value": "Baja California Norte",
+            },
+            Object {
+              "code": "BCS",
+              "displayValue": "BCS -- Baja California Sur",
+              "translationKey": "BB-MX-States-BCS",
+              "value": "Baja California Sur",
+            },
+            Object {
+              "code": "CAM",
+              "displayValue": "CAM -- Campeche",
+              "translationKey": "BB-MX-States-CAM",
+              "value": "Campeche",
+            },
+            Object {
+              "code": "CHP",
+              "displayValue": "CHP -- Chiapas",
+              "translationKey": "BB-MX-States-CHP",
+              "value": "Chiapas",
+            },
+            Object {
+              "code": "CHH",
+              "displayValue": "CHH -- Chihuahua",
+              "translationKey": "BB-MX-States-CHH",
+              "value": "Chihuahua",
+            },
+            Object {
+              "code": "COA",
+              "displayValue": "COA -- Coahuila",
+              "translationKey": "BB-MX-States-COA",
+              "value": "Coahuila",
+            },
+            Object {
+              "code": "COL",
+              "displayValue": "COL -- Colima",
+              "translationKey": "BB-MX-States-COL",
+              "value": "Colima",
+            },
+            Object {
+              "code": "CMX",
+              "displayValue": "CMX -- Ciudad de México",
+              "translationKey": "BB-MX-States-CMX",
+              "value": "Federal District",
+            },
+            Object {
+              "code": "DUR",
+              "displayValue": "DUR -- Durango",
+              "translationKey": "BB-MX-States-DUR",
+              "value": "Durango",
+            },
+            Object {
+              "code": "MEX",
+              "displayValue": "MEX -- Estado de México",
+              "translationKey": "BB-MX-States-MEX",
+              "value": "Estado de Mexico",
+            },
+            Object {
+              "code": "GUA",
+              "displayValue": "GUA -- Guanajuato",
+              "translationKey": "BB-MX-States-GUA",
+              "value": "Guanajuato",
+            },
+            Object {
+              "code": "GRO",
+              "displayValue": "GRO -- Guerrero",
+              "translationKey": "BB-MX-States-GRO",
+              "value": "Guerrero",
+            },
+            Object {
+              "code": "HID",
+              "displayValue": "HID -- Hidalgo",
+              "translationKey": "BB-MX-States-HID",
+              "value": "Hidalgo",
+            },
+            Object {
+              "code": "JAL",
+              "displayValue": "JAL -- Jalisco",
+              "translationKey": "BB-MX-States-JAL",
+              "value": "Jalisco",
+            },
+            Object {
+              "code": "MIC",
+              "displayValue": "MIC -- Michoacán",
+              "translationKey": "BB-MX-States-MIC",
+              "value": "Michoacan",
+            },
+            Object {
+              "code": "MOR",
+              "displayValue": "MOR -- Morelos",
+              "translationKey": "BB-MX-States-MOR",
+              "value": "Morelos",
+            },
+            Object {
+              "code": "NAY",
+              "displayValue": "NAY -- Nayarit",
+              "translationKey": "BB-MX-States-NAY",
+              "value": "Nayarit",
+            },
+            Object {
+              "code": "NLE",
+              "displayValue": "NLE - Nuevo León",
+              "translationKey": "BB-MX-States-NLE",
+              "value": "Nuevo León",
+            },
+            Object {
+              "code": "OAX",
+              "displayValue": "OAX -- Oaxaca",
+              "translationKey": "BB-MX-States-OAX",
+              "value": "Oaxaca",
+            },
+            Object {
+              "code": "PUE",
+              "displayValue": "PUE -- Puebla",
+              "translationKey": "BB-MX-States-PUE",
+              "value": "Puebla",
+            },
+            Object {
+              "code": "QUE",
+              "displayValue": "QUE -- Querétaro",
+              "translationKey": "BB-MX-States-QUE",
+              "value": "Queretaro",
+            },
+            Object {
+              "code": "ROO",
+              "displayValue": "ROO -- Quintana Roo",
+              "translationKey": "BB-MX-States-Roo",
+              "value": "Quintana Roo",
+            },
+            Object {
+              "code": "SLP",
+              "displayValue": "SLP -- San Luis Potosí",
+              "translationKey": "BB-MX-States-SLP",
+              "value": "San Luis Potosí",
+            },
+            Object {
+              "code": "SIN",
+              "displayValue": "SIN -- Sinaloa",
+              "translationKey": "BB-MX-States-SIN",
+              "value": "Sinaloa",
+            },
+            Object {
+              "code": "SON",
+              "displayValue": "SON -- Sonora",
+              "translationKey": "BB-MX-States-SON",
+              "value": "Sonora",
+            },
+            Object {
+              "code": "TAB",
+              "displayValue": "TAB -- Tabasco",
+              "translationKey": "BB-MX-States-TAB",
+              "value": "Tabasco",
+            },
+            Object {
+              "code": "TAM",
+              "displayValue": "TAM -- Tamaulipas",
+              "translationKey": "BB-MX-States-TAM",
+              "value": "Tamaulipas",
+            },
+            Object {
+              "code": "TLA",
+              "displayValue": "TLA -- Tlaxcala",
+              "translationKey": "BB-MX-States-TLA",
+              "value": "Tlaxcala",
+            },
+            Object {
+              "code": "VER",
+              "displayValue": "VER -- Veracruz",
+              "translationKey": "BB-MX-States-VER",
+              "value": "Veracruz",
+            },
+            Object {
+              "code": "YUC",
+              "displayValue": "YUC -- Yucatán",
+              "translationKey": "BB-MX-States-YUC",
+              "value": "Yucatan",
+            },
+            Object {
+              "code": "ZAC",
+              "displayValue": "ZAC -- Zacatecas",
+              "translationKey": "BB-MX-States-ZAC",
+              "value": "Zacatecas",
+            },
+          ],
+          "type": "select",
+        }
+      }
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      valueAccessor={[Function]}
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="ZIP/Postal code"
+  >
+    <FormInputText
+      defaultValue="94458"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.zipcode",
+          "errorMessage": "Please enter a valid 5 digits zipcode",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-zipcode-error-text",
+          "hasError": false,
+          "id": "additionalBGCZipcode",
+          "labelText": "ZIP/Postal code",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-zipcode-label-text",
+          "name": "ZIP/Postal code",
+          "regex": "^(?=\\\\S)[0-9]{5}(?:-[0-9]{4})?$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <FormInputSelect
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.address.country",
+        "errorMessage": "Please enter a valid country",
+        "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-country-error-text",
+        "hasError": false,
+        "id": "additionalBGC_Country",
+        "labelText": "Country",
+        "labelTranslationKey": "BB-BGC-Additional-bgc-form-country-label-text",
+        "name": "Country",
+        "required": true,
+        "selectOptions": Array [
+          Object {
+            "countryCode": "MX",
+            "showValue": "Mexico",
+            "translationKey": "BB-Country-Mexico",
+            "value": "Mexico",
+          },
+        ],
+        "type": "select",
+      }
+    }
+  />
+  <FormInputText
+    defaultValue="*****9599"
+    handleBlur={[Function]}
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.idNumber",
+        "errorMessage": "Please enter a valid 18 character alphanumeric CURP ID without hyphens.",
+        "errorMessageTranslationKey": "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text",
+        "hasError": false,
+        "id": "idNumberInput",
+        "labelText": "CURP ID",
+        "labelTranslationKey": "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text",
+        "name": "idNumber",
+        "regex": "^(?=.*[0-9])(?=.*[A-Z])([A-Z0-9]{18})$",
+        "required": true,
+        "type": "text",
+      }
+    }
+    inputValue=""
+  />
+  <Col
+    gridGap={15}
+    key="Date of Birth"
+  >
+    <DatePicker
+      defaultValue="1988-08-02"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.dateOfBirth",
+          "errorMessage": "Please enter a valid date of birth.",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-dob-error-text",
+          "hasError": false,
+          "id": "additionalBGCDateOfBirth",
+          "labelText": "Date of Birth",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-dob-label-text",
+          "name": "Date of Birth",
+          "regex": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "required": true,
+          "type": "datePicker",
+        }
+      }
+    />
+  </Col>
+  <Connect(PreviousWorkedAtAmazonForm) />
+  <Col
+    padding={
+      Object {
+        "bottom": "S300",
+        "top": "S300",
+      }
+    }
+  >
+    <DebouncedButton
+      onClick={[Function]}
+      variant="primary"
+    >
+      Next
+    </DebouncedButton>
+  </Col>
+</Col>
+`;

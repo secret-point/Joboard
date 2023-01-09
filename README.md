@@ -10,17 +10,20 @@ cd src/HVHCareersFrontendApplicationUI
 
 * **Gamma MX:** `ada credentials update --account=735199862045 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`
 * **Gamma US:** `ada credentials update --account=388028644549 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`
+* **Gamma UK:** `ada credentials update --account=155563236030 --provider=conduit --role=HVH-CA-EcsService-gamma-d-EcsTaskInstanceRoleE38DB-1VHQEM26PBLYO`
 
 ### Build Packages
     
 * HVHCandidateApplicationWebsite
     * **Gamma US:** `brazil-build start:gamma:us`
     * **Gamma MX:** `brazil-build start:gamma:mx`
+    * **Gamma UK:** `brazil-build start:gamma:uk`
 
 * HVHCareersFrontendApplicationUI
     * Go to configuration>webpack.config.js > KatalWebpackPlugin
         * **For MX:** Change {{Country}} developmentValue to `MX`
         * **For US:** Change {{Country}} developmentValue to `US`
+        * **For UK:** Change {{Country}} developmentValue to `UK`
     * Run  `brazil-build start`
 
 ### Run locally 

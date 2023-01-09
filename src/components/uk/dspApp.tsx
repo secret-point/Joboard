@@ -6,6 +6,7 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import { AppConfig } from "../../@types/IPayload";
 import { uiState } from "../../reducers/ui.reducer";
 import { PRE_CONSENT } from "../../utils/constants/common";
+import { getQueryFromSearchAndHash } from "../../utils/helper";
 import AppLoader from "../common/AppLoader";
 import { BannerMessage } from "../common/BannerMessage";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
@@ -42,7 +43,6 @@ import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
-import PreConsent from "../us/preConsent/PreConsent";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -82,7 +82,7 @@ const {
   APPLICATIONID_NULL
 } = PAGE_ROUTES;
 
-export const DragonStoneAppMX = ( props: MapStateToProps ) => {
+export const DragonStoneAppUK = ( props: MapStateToProps ) => {
   const { ui } = props;
   const { bannerMessage } = ui;
 
@@ -94,9 +94,14 @@ export const DragonStoneAppMX = ( props: MapStateToProps ) => {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <Redirect to={CONSENT} />} />
-          <Route exact path={`/${PRE_CONSENT}`}>
-            <PreConsent />
-          </Route>
+          <Route exact path={`/${PRE_CONSENT}`} render={() => (
+            <Redirect to={{
+              pathname: CONSENT,
+              search: getQueryFromSearchAndHash()
+            }}
+            />
+          )}
+          />
           <Route path={`/${CONSENT}`} exact>
             <ConsentPage />
           </Route>
@@ -198,4 +203,4 @@ const mapStateToProps = ( state: MapStateToProps ) => {
   return state;
 };
 
-export default connect(mapStateToProps)(DragonStoneAppMX);
+export default connect(mapStateToProps)(DragonStoneAppUK);

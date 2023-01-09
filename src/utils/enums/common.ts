@@ -355,4 +355,5 @@ export enum CountryCode {
   MX = "MX",
   US = "US",
   CA = "CA",
+  UK = "UK"
 }

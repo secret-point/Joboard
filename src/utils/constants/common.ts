@@ -591,6 +591,7 @@ export const SelfIdGenderRadioItemsMap: {[key in CountryCode]: DetailedRadioButt
   [CountryCode.MX]: MX_SelfIdGenderRadioItems,
   [CountryCode.US]: SelfIdGenderRadioItems,
   [CountryCode.CA]: SelfIdGenderRadioItems, // TODO: set to correct values once they're available
+  [CountryCode.UK]: [],
 };
 
 export const SelfIdEthnicBackgroundItems: DetailedRadioButtonItem[] = [
@@ -690,6 +691,7 @@ export const SelfIdEthnicBackgroundItemsMap: {[Key in CountryCode]: DetailedRadi
   [CountryCode.US]: SelfIdEthnicBackgroundItems,
   [CountryCode.MX]: MX_SelfIdEthnicBackgroundItems,
   [CountryCode.CA]: SelfIdEthnicBackgroundItems, // TODO: set to correct values once they're available
+  [CountryCode.UK]: [],
 };
 
 export const SelfIdEthnicValidValues: string[] = SelfIdEthnicBackgroundItems.map(item => item.value);
@@ -700,6 +702,7 @@ export const SelfIdEthnicValidValuesMap: {[Key in CountryCode]: string[]} = {
   [CountryCode.US]: SelfIdEthnicValidValues,
   [CountryCode.MX]: MX_SelfIdEthnicValidValues,
   [CountryCode.CA]: SelfIdEthnicValidValues, // TODO: set to correct values once they're available
+  [CountryCode.UK]: [],
 };
 
 export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
@@ -733,7 +736,8 @@ export const MX_SelfIdPronounsItems: DetailedRadioButtonItem[] = [
 export const SelfIdPronounsItemsMap: {[Key in CountryCode]: DetailedRadioButtonItem[]} = {
   [CountryCode.MX]: MX_SelfIdPronounsItems,
   [CountryCode.US]: [],
-  [CountryCode.CA]: [] // TODO: set to correct values once they're available
+  [CountryCode.CA]: [], // TODO: set to correct values once they're available,[CountryCode.US]: [],
+  [CountryCode.UK]: [],
 };
 
 export const SelfIdMilitarySpouseRadioItem: DetailedRadioButtonItem[] = [
@@ -902,7 +906,8 @@ export const MINIMUM_AVAILABLE_TIME_SLOTS = 3;
 
 export enum newBBUIPathName {
   US = "/application/us/",
-  MX = "/application/mx/"
+  MX = "/application/mx/",
+  UK= "/application/uk/"
 }
 
 // This is used for additional bgc page form validation
@@ -1040,7 +1045,8 @@ export const MX_SelfIdentificationConfigSteps: SelfIdentificationConfig = {
 export const SelfIdentificationConfigStepCountryMap: { [key in CountryCode]: SelfIdentificationConfig } = {
   [CountryCode.MX]: MX_SelfIdentificationConfigSteps,
   [CountryCode.US]: US_SelfIdentificationConfigSteps,
-  [CountryCode.CA]: US_SelfIdentificationConfigSteps, // TODO: set to correct values once they're available
+  [CountryCode.CA]: US_SelfIdentificationConfigSteps, // TODO: set to correct values once they're available,
+  [CountryCode.UK]: US_SelfIdentificationConfigSteps,
 };
 
 export const localeToLanguageMap: { [key in Locale]: [string, string] } = {

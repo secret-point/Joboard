@@ -3,7 +3,8 @@ import { CountryCode, DESIRED_WORK_HOURS } from "./utils/enums/common";
 export const thankYouPageRedirectTextBanner = {
   US: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." },
   MX: { translationKey: "BB-ThankYou-redirect-to-ash-text", defaultString: "Before your pre-hire appointment, you will need to complete a series of pre-hire activities." },
-  CA: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." } // TODO: set to correct values once they're available
+  CA: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." }, // TODO: set to correct values once they're available
+  UK: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." },
 };
 
 export enum PayRateType {
@@ -62,6 +63,21 @@ export const countryConfig: { [key in CountryCode]: countryConfigType } = {
   },
   // TODO: set to correct values once they're available
   [CountryCode.CA]: {
+    payRateType: PayRateType.hourMax,
+    desiredWorkHours: {
+      RANGE1: "10",
+      RANGE2: "20",
+      RANGE3: "30",
+      RANGE4: "40"
+    },
+    nameRegexValidator: `^(?=\\S)[${alphabet}${specialChars} ,.'-]{1,39}[${alphabet}${accentedChars}]$`,
+    previousLegalNameRegexValidator: `^(?=\\S)[${alphabet}${specialChars},.'-]{1,19}\\s[${alphabet}${specialChars},.'-]{1,19}$`,
+    addressRegexValidator: `^(?=\\S)[${alphanumeric}${specialChars} ]{1,}[${alphanumeric}${accentedChars}]$`,
+    renderScheduleCardBanner: (currencyCode: string, signOnBonus: number, signOnBonusL10N: string) => {
+      return signOnBonusL10N || `${currencyCode}${signOnBonus}`;
+    },
+  },
+  [CountryCode.UK]: {
     payRateType: PayRateType.hourMax,
     desiredWorkHours: {
       RANGE1: "10",
