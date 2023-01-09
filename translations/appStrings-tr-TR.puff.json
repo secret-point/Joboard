@@ -772,14 +772,6 @@
       "value" : "Sosyal Güvenlik Numaranız (SSN) olmadan devam etmek istediğinizden emin misiniz?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "SSN'niz varsa bunu girmeniz gerekir. Bunu yapmamak işe alım sürecinde gecikmelere neden olabilir ve bu da başlangıç tarihinizi kaçırmanıza ve seçtiğiniz vardiyayı kaybetmenize neden olabilir.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Devam ederek, bir Sosyal Güvenlik Numaram olmadığını onaylıyorum.  İşe alım sürecinde veya işim sırasında SSN'mi değiştirirsem veya güncellersem, Amazon'un yasaların izin verdiği şekilde benim hakkımda yeni geçmiş kontrolü yapacağını anlıyorum.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ayrıca, SSN'min kasıtlı olarak yanlış beyan edilmesinin Amazon tarafından dikkate alınacağını ve iş teklifimin iptaline veya işe alınırsam işimin feshedilmesine yol açabileceğini de kabul ediyorum.",
       "note" : "Content in the no SSN modal"

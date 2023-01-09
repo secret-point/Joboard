@@ -91,9 +91,9 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
   const stateIdTypeDefaultValue = get(candidateData, "additionalBackgroundInfo.address.state");
 
   const shouldDisplayNoSSNCheckbox = get(appConfig, "results.envConfig.featureList.NO_SSN_CHECKBOX.isAvailable") === true &&
-        !get(candidateData, "additionalBackgroundInfo.idNumber") &&
-        get(schedule, "results.scheduleDetail.businessLine") !== BusinessLineType.Air_Job &&
-        get(job, "results.dspEnabled") === true;
+      !get(candidateData, "additionalBackgroundInfo.idNumber") &&
+      get(schedule, "results.scheduleDetail.businessLine") !== BusinessLineType.Air_Job &&
+      get(job, "results.dspEnabled") === true;
 
   // TODO: customized based on country
   if (!countryDefaultValue) {
@@ -321,16 +321,13 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       <Col gridGap="S400">
         <H4>{t("BB-BGC-no-ssn-modal-title", "Are you sure you would like to proceed without a Social Security Number (SSN)?")}</H4>
         <MessageBanner type={MessageBannerType.Warning} icon={<></>}>
-          {t("BB-BGC-no-ssn-modal-warning-banner", "If you have a SSN, you are required to provide it. Failing to do so can cause delays in the hiring process which may lead to missing your start date and losing your selected shift.")}
+          {t("BB-BGC-no-ssn-modal-warning-banner", "If you have an SSN, you are required to provide it. Failing to do so can cause delays in the hiring process which may lead to missing your start date and losing your selected shift.")}
         </MessageBanner>
         <Text>
-          {t("BB-BGC-no-ssn-modal-content-first-paragraph", "By continuing, I am confirming that I do not have a SSN.  I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the onboarding process or during my employment.")}
+          {t("BB-BGC-no-ssn-modal-content-first-paragraph", "By indicating that I don't have an SSN, I acknowledge that I won't be eligible for the Wisely Pay Card as a means of receiving my pay until I obtain an SSN, and will only be able to receive pay via direct deposit or physical checks. By continuing, I am confirming that I do not have an SSN. I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the onboarding process or during my employment.")}
         </Text>
         <Text>
           {t("BB-BGC-no-ssn-modal-content-second-paragraph", "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.")}
-        </Text>
-        <Text>
-          {t("BB-BGC-no-ssn-modal-content-third-paragraph", "Furthermore, by indicating that you do not have an SSN, you acknowledge that you will not be eligible for the Wisely Pay Card as a means of receiving your pay until you obtain an SSN, and will only be able to receive pay via direct deposit or physical checks.")}
         </Text>
         <Row alignItems="center" gridGap="S200">
           <Checkbox
@@ -410,7 +407,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       />
       {
         nationalIdType === SocialSecurityNumberValue &&
-                shouldDisplayNoSSNCheckbox && (
+            shouldDisplayNoSSNCheckbox && (
           <>
             <MessageBanner dataTestId="SSNExplanationBanner" type={MessageBannerType.Informational}>
               {t("BB-BGC-Additional-bgc-form-ssn-explanationBanner-banner", "In the United States, a Social Security Number (SSN) is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents.")}

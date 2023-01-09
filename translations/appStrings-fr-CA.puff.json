@@ -772,14 +772,6 @@
       "value" : "Voulez-vous vraiment continuer sans numéro de sécurité sociale (SSN)?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "Si vous avez un SSN, vous êtes invité à le fournir. Le refus de le faire peut entraîner des retards dans le processus d’embauche, ce qui peut vous faire rater votre date de début et vous faire perdre le quart de travail sélectionné.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "En continuant, je confirme que je n’ai pas de numéro de sécurité sociale (SSN).  Je comprends que, conformément à la loi, Amazon procédera à une vérification complémentaire de mes antécédents si je modifie ou mets à jour mon SSN au cours du processus d’accueil et d’intégration des nouveaux employés ou au cours de mon embauche.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon SSN sera prise en compte par Amazon et peut entraîner la révocation de mon offre d’emploi ou, si je suis embauché, mon licenciement.",
       "note" : "Content in the no SSN modal"

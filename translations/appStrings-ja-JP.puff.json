@@ -772,14 +772,6 @@
       "value" : "社会保障番号 (SSN) なしで続行してもよろしいですか?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "SSNをお持ちの場合は、SSNを提供する必要があります。しない場合、採用プロセスが遅れ、開始日を逃したり、選択したシフトを失う可能性があります。",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "続けることで、SSNがないことを確認しています。 新人研修プロセス中または雇用中にSSNを変更または更新した場合、法律で認められているように、Amazonがフォローアップの身元調査を行うことを私は理解しています。",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "また、SSNの意図的な虚偽の表示は、Amazonによって検討され、私の求人の取り消し、または採用された場合は雇用終了につながる可能性があることを認めます。",
       "note" : "Content in the no SSN modal"

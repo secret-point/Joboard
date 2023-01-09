@@ -772,14 +772,6 @@
       "value" : "사회 보장 번호(SSN) 없이 진행하시겠습니까?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "SSN이 있는 경우 제공하셔야 합니다. 그렇게 하지 않으면 채용 절차가 지연되어 시작 날짜를 놓치고 선택한 근무조를 잃을 수 있습니다.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "계속 진행함으로써 본인은 SSN이 없음을 확인합니다.  본인은 법에서 허용하는 바에 따라 온보딩 절차 중 또는 고용 기간 중에 SSN을 변경하거나 업데이트하는 경우 아마존이 본인에 대한 후속 신원 조사를 실시한다는 것을 이해합니다.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "본인은 또한 본인의 SSN에 대한 의도적인 허위 진술은 아마존에 의해 고려되며, 고용 오퍼가 취소되거나 고용된 경우 고용이 종료될 수 있음을 인정합니다.",
       "note" : "Content in the no SSN modal"

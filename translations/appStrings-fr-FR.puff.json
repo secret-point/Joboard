@@ -772,14 +772,6 @@
       "value" : "Êtes-vous sûr(e) de vouloir continuer sans numéro de sécurité sociale (SSN) ?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "Si vous avez un numéro de sécurité sociale (SSN), vous devez le fournir. Si vous ne le fournissez pas, cela peut entraîner des retards dans le processus de recrutement, et pourrait vous faire rater votre date de prise de poste ou vous empêcher de respecter les horaires de travail que vous avez sélectionnés.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "En continuant, je confirme que je n'ai pas de numéro de sécurité sociale (SSN).  Je comprends que, conformément à la loi, Amazon procédera à une vérification de suivi de mes antécédents si je change ou mets à jour mon numéro de sécurité sociale (SSN) pendant le processus de recrutement ou pendant l’exécution de mon contrat de travail.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon numéro de sécurité sociale (SSN) sera prise en compte par Amazon et pourra entraîner la révocation de mon offre d'emploi ou, si je suis recruté(e), la résiliation de mon contrat de travail.",
       "note" : "Content in the no SSN modal"

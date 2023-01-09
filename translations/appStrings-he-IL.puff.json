@@ -772,14 +772,6 @@
       "value" : "האם אתה בטוח שתרצה להמשיך ללא מספר ביטוח לאומי (SSN)?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "אם יש לך SSN, אתה נדרש לספק אותו. אם לא ייעשה כך, הדבר עלול לגרום לעיכובים בתהליך ההעסקה, מה שעלול להוביל להחמצת תאריך ההתחלה ולאובדן המשמרת שנבחרה.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "באם אני ממשיך, אני מאשר כי אין לי SSN.  אני מבין שככל המותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "אני גם מכיר בכך שכל הצגה לא נכונה באופן מכוון של ה-SSN שלי זה יילקח בחשבון על ידי Amazon ויוכל להוביל לביטול הצעת העבודה שלי או, אם אני מועסק, לסיום העסקתי.",
       "note" : "Content in the no SSN modal"

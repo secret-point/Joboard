@@ -772,14 +772,6 @@
       "value" : "Are you sure that you would like to proceed without a Social Security Number (SSN)?",
       "note" : "Title for the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-warning-banner" : {
-      "value" : "If you have a SSN, you are required to provide it. Failing to do so can cause delays in the hiring process, which may lead to missing your start date and losing your selected shift.",
-      "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "By continuing, I am confirming that I do not have an SSN.  I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the hiring process or during my employment.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon and can lead to the revocation of my offer of employment or, if I am hired, termination of my employment.",
       "note" : "Content in the no SSN modal"
