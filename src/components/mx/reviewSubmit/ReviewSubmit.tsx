@@ -29,9 +29,8 @@ import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
-  getCountryCode,
-  getFeatureFlagValue,
-  getLocale,
+  getCountryCode, getCountryMappedFeatureFlag,
+  getLocale, isBrokenApplicationFeatureEnabled,
   reverseMappingTranslate
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
@@ -113,7 +112,10 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         scheduleDetails: JSON.stringify(scheduleDetail)
       };
 
-      if (getFeatureFlagValue(FEATURE_FLAG.BACKEND_HARD_RESERVE_SCHEDULE)) {
+      const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
+      const countryCode = getCountryCode();
+      const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);
+      if (isFeatureEnabled) {
         onCompleteTaskHelper(applicationData);
       } else {
         const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
