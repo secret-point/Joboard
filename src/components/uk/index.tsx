@@ -57,8 +57,6 @@ declare global {
     hasCompleteTaskOnWorkflowConnect: Function | undefined;
   }
 }
-
-console.log("loading uk config");
 getInitialData()
   .then((data: any) => {
     const appConfig: AppConfig = {

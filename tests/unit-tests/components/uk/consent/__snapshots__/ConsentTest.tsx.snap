@@ -2,21 +2,72 @@
 
 exports[`Consent should match snapshot 1`] = `
 <Col
-  gridGap="m"
+  gridGap="S300"
   padding="n"
 >
   <h1>
     By applying, you confirm that:
   </h1>
-  <ul />
-  <Text
-    font="primary"
-    fontSize="T300"
-    hyphens="none"
+  <ul>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You are 18 years or above.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You are the sole applicant and shall be personally completing each step unless you receive any assistance from Amazon to complete this application.
+      </Text>
+    </li>
+    <li>
+      <Row
+        gridGap={4}
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          You have
+        </Text>
+        <WithFlyout
+          flyoutPosition="trailing"
+          renderFlyout={[Function]}
+        >
+          <Component />
+        </WithFlyout>
+      </Row>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You are willing to complete a pre-employment medical test, if applicable.
+      </Text>
+    </li>
+    <li>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You consent to a pre-employment background check.
+      </Text>
+    </li>
+  </ul>
+  <Col
+    gridGap={8}
   >
-    I authorize Amazon to contact me via phone, text message or WhatsApp to provide information about my application, selection and hiring process.
-  </Text>
-  <dl>
     <Text
       color="gray"
       font="primary"
@@ -33,7 +84,6 @@ exports[`Consent should match snapshot 1`] = `
       <Component />
     </WithFlyout>
     <DebouncedButton
-      disabled={false}
       onClick={[Function]}
       style={
         Object {
@@ -42,8 +92,35 @@ exports[`Consent should match snapshot 1`] = `
       }
       variant="primary"
     >
-      Create Application
+      Start Application
     </DebouncedButton>
-  </dl>
+    <Col
+      className="consentDisabilityAccommodationText"
+      gridGap={15}
+      margin={
+        Object {
+          "top": "S400",
+        }
+      }
+      padding={
+        Object {
+          "bottom": "S400",
+          "left": "S300",
+          "right": "S300",
+          "top": "S400",
+        }
+      }
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        <DangerouslySetHtmlContent
+          html="Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1."
+        />
+      </Text>
+    </Col>
+  </Col>
 </Col>
 `;

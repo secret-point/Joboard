@@ -27,8 +27,9 @@ exports[`dspAppTest should match snapshot 1`] = `
       <Route
         exact={true}
         path="/pre-consent"
-        render={[Function]}
-      />
+      >
+        <Connect(PreConsent) />
+      </Route>
       <Route
         exact={true}
         path="/consent"

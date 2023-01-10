@@ -88,9 +88,17 @@
       "value" : "Create Application",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Start Application",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "User Data Policy",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK Candidate Privacy Notice",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "I am aware that all information gathered may be transferred pursuant to the Federal Law on the Protection of Personal Data in the Possession of Private Parties and its regulations, guidelines and other applicable provisions on data privacy, as well as in terms of the Privacy Notice of the Company for Employees and/or Candidates.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and require an accommodation during the application and hiring process, please contact the Applicant-Candidate Accommodation Team (ACAT) at 888-435-9287, Monday through Friday 6 AM to 4 PM Pacific Time. For more information, please visit <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "View progress",
@@ -2447,6 +2459,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Please check one of the boxes below",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Right To Work documentation",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK Right to Work Check",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "UIn order to begin your employment, Amazon must check your original document(s) proving your right to work in the UK. Right to Work document examples include, but are not limited to",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "British Passport",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Permanent Residence Card",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Indefinite Leave to Remain stamps",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometric Residence Permit",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "For more information and details of all acceptable Right to Work Documents, please see our <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK Employee Work Authorisation Guide</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "You are 18 years or above.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "You are the sole applicant and shall be personally completing each step unless you receive any assistance from Amazon to complete this application.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "You have",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "the right to work documentation",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "You are willing to complete a pre-employment medical test, if applicable.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "You consent to a pre-employment background check.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

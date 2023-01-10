@@ -772,6 +772,14 @@
       "value" : "Czy na pewno chcesz kontynuować bez numeru ubezpieczenia społecznego (SSN)?",
       "note" : "Title for the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Jeśli posiadasz SSN, musisz go podać. Niezastosowanie się do tego może spowodować opóźnienia w procesie rekrutacji, co może prowadzić do anulowania daty rozpoczęcia i utraty wybranej zmiany.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Informując, że nie posiadam SSN, potwierdzam, że nie będę kwalifikować się do karty Wisely Pay jako sposobu otrzymania mojej wypłaty, dopóki nie zdobędę SSN i będę mógł/mogła otrzymywać wypłatę tylko za pośrednictwem bezpośredniej wpłaty na konto lub czeków fizycznych. Kontynuując, potwierdzam, że nie posiadam SSN. Rozumiem, że zgodnie z prawem firma Amazon przeprowadzi dalszą weryfikację mojej przeszłości, jeśli zmienię lub zaktualizuję mój SSN podczas procesu zatrudniania lub w trakcie mojego zatrudnienia.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Przyjmuję również do wiadomości, że wszelkie celowe błędne podanie mojego SSN zostanie rozpatrzone przez Amazon i może prowadzić do odwołania mojej oferty pracy lub, jeśli jestem osobą zatrudnioną, do rozwiązania mojego stosunku pracy.",
       "note" : "Content in the no SSN modal"

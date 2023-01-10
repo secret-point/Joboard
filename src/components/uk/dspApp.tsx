@@ -6,7 +6,6 @@ import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom"
 import { AppConfig } from "../../@types/IPayload";
 import { uiState } from "../../reducers/ui.reducer";
 import { PRE_CONSENT } from "../../utils/constants/common";
-import { getQueryFromSearchAndHash } from "../../utils/helper";
 import AppLoader from "../common/AppLoader";
 import { BannerMessage } from "../common/BannerMessage";
 import FcraDisclosure from "../common/bgc/FcraDisclosure";
@@ -43,6 +42,7 @@ import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
+import PreConsent from "../us/preConsent/PreConsent";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -94,14 +94,9 @@ export const DragonStoneAppUK = ( props: MapStateToProps ) => {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <Redirect to={CONSENT} />} />
-          <Route exact path={`/${PRE_CONSENT}`} render={() => (
-            <Redirect to={{
-              pathname: CONSENT,
-              search: getQueryFromSearchAndHash()
-            }}
-            />
-          )}
-          />
+          <Route exact path={`/${PRE_CONSENT}`}>
+            <PreConsent />
+          </Route>
           <Route path={`/${CONSENT}`} exact>
             <ConsentPage />
           </Route>

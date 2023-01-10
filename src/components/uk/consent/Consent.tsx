@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
-import { Col } from "@amzn/stencil-react-components/layout";
-import { Text } from "@amzn/stencil-react-components/text";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { H3, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -29,6 +29,8 @@ import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import InnerHTML from "dangerously-set-html-content";
+import { Link } from "@amzn/stencil-react-components/link";
 
 interface MapStateToProps {
   job: JobState;
@@ -41,8 +43,7 @@ interface RenderFlyoutFunctionParams {
 }
 
 export const Consent = (props: MapStateToProps) => {
-  const { job, ui, schedule } = props;
-  const { isLoading } = ui;
+  const { job, schedule } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { jobId } = queryParams;
@@ -50,12 +51,7 @@ export const Consent = (props: MapStateToProps) => {
   const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
-  const qualificationCriteria = jobDetail?.qualificationCriteria || [];
   const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
-
-  const isCreateButtonDisabled = scheduleId
-    ? !(jobDetail && scheduleDetail && !isLoading)
-    : !(jobDetail && !isLoading);
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -85,7 +81,7 @@ export const Consent = (props: MapStateToProps) => {
 
   const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
     <FlyoutContent
-      titleText={t("BB-ConsentPage-flyout-user-data-policy-title-text", "User Data Policy")}
+      titleText={t("BB-Kondo-ConsentPage-flyout-user-data-policy-title-text", "EU/UK Candidate Privacy Notice")}
       onCloseButtonClick={close}
     >
       <Col gridGap={15}>
@@ -95,23 +91,94 @@ export const Consent = (props: MapStateToProps) => {
       </Col>
     </FlyoutContent>
   );
+  const renderRightToWorkFlyout = ({ close }: RenderFlyoutFunctionParams ) => (
+    <FlyoutContent
+      titleText={t("BB-Kondo-ConsentPage-flyout-right-to-work-title-text", "Right To Work documentation")}
+      onCloseButtonClick={close}
+    >
+      <Col gridGap={15}>
+        <H3 fontWeight="bold">
+          {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text", "UK Right to Work Check")}
+        </H3>
+        <Text>
+          {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text", "In order to begin your employment, Amazon must check your original document(s) proving your right to work in the UK. Right to Work document examples include, but are not limited to")}:
+        </Text>
+        <ul>
+          <li>
+            <Text>
+              {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text", "British Passport")}
+            </Text>
+          </li>
+          <li>
+            <Text>
+              {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text", "Permanent Residence Card")}
+            </Text>
+          </li>
+          <li>
+            <Text>
+              {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text", "Indefinite Leave to Remain stamps")}
+            </Text>
+          </li>
+          <li>
+            <Text>
+              {t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text", "Biometric Residence Permit")}
+            </Text>
+          </li>
+        </ul>
+        <Text>
+          <InnerHTML html={t("BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text", "For more information and details of all acceptable Right to Work Documents, please see our <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK Employee Work Authorisation Guide</a>")} />
+        </Text>
+      </Col>
+    </FlyoutContent>
+  );
 
   return (
-    <Col gridGap="m" padding="n">
+    <Col gridGap="S300" padding="n">
       <h1>
         {t("BB-ConsentPage-qualification-criteria-header-text", "By applying, you confirm that:")}
       </h1>
       <ul>
-        {
-          qualificationCriteria.map(item => (
-            <li key={item}>{item}</li>
-          ))
-        }
+        <li>
+          <Text fontSize="T200">
+            {t("BB-Kondo-qualification-criteria-above18", "You are 18 years or above.")}
+          </Text>
+        </li>
+        <li>
+          <Text fontSize="T200">
+            {t("BB-Kondo-qualificationCriteria-should-complete-all-steps", "You are the sole applicant and shall be personally completing each step unless you receive any assistance from Amazon to complete this application.")}
+          </Text>
+        </li>
+        <li>
+          <Row gridGap={4}>
+            <Text fontSize="T200">
+              {t("BB-Kondo-qualification-criteria-right-to-work-part1", "You have")}
+            </Text>
+            <WithFlyout renderFlyout={renderRightToWorkFlyout}>
+              {({ open }) => (
+                <Link
+                  onClick={() => open()}
+                  style={{
+                    margin: "2px 0px 0 0",
+                  }}
+                >
+                  {t("BB-Kondo-qualificationCriteria-right-to-work-part2", "the right to work documentation")}
+                </Link>
+              )}
+            </WithFlyout>
+          </Row>
+        </li>
+        <li>
+          <Text fontSize="T200">
+            {t("BB-Kondo-qualificationCriteria-medical-test", "You are willing to complete a pre-employment medical test, if applicable.")}
+          </Text>
+        </li>
+        <li>
+          <Text fontSize="T200">
+            {t("BB-Kondo-qualificationCriteria-employment-bgc-consent", "You consent to a pre-employment background check.")}
+          </Text>
+        </li>
       </ul>
-      <Text>
-        {t("BB-ConsentPage-whatsapp-consent-text", "I authorize Amazon to contact me via phone, text message or WhatsApp to provide information about my application, selection and hiring process.")}
-      </Text>
-      <dl>
+      <Col gridGap={8}>
         <Text textAlign="center" color="gray" fontSize="0.8em">
           {t("BB-ConsentPage-data-policy-header-text", "By applying, you read and agree to the")}
         </Text>
@@ -125,14 +192,13 @@ export const Consent = (props: MapStateToProps) => {
               }}
               onClick={() => open()}
             >
-              {t("BB-ConsentPage-user-data-Policy-button", "User Data Policy")}
+              {t("BB-Kondo-ConsentPage-flyout-user-data-policy-title-text", "EU/UK Candidate Privacy Notice")}
             </Button>
           )}
         </WithFlyout>
         <DebouncedButton
           variant={ButtonVariant.Primary}
           style={{ width: "100%" }}
-          disabled={isCreateButtonDisabled}
           onClick={() => {
             boundResetBannerMessage();
             if (scheduleId) {
@@ -150,9 +216,19 @@ export const Consent = (props: MapStateToProps) => {
             }
           }}
         >
-          {t("BB-ConsentPage-create-application-button", "Create Application")}
+          {t("BB-kondo-ConsentPage-start-application-button", "Start Application")}
         </DebouncedButton>
-      </dl>
+        <Col
+          className="consentDisabilityAccommodationText"
+          gridGap={15}
+          padding={{ top: "S400", bottom: "S400", left: "S300", right: "S300" }}
+          margin={{ top: "S400" }}
+        >
+          <Text fontSize="T100">
+            <InnerHTML html={t("BB-Kondo-ConsentPage-consent-disability-accommodation-text", "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1.")} />
+          </Text>
+        </Col>
+      </Col>
     </Col>
   );
 };

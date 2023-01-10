@@ -42,7 +42,7 @@ import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
-import PreConsent from "../us/preConsent/PreConsent";
+import { getQueryFromSearchAndHash } from "../../utils/helper";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -94,9 +94,14 @@ export const DragonStoneAppMX = ( props: MapStateToProps ) => {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <Redirect to={CONSENT} />} />
-          <Route exact path={`/${PRE_CONSENT}`}>
-            <PreConsent />
-          </Route>
+          <Route exact path={`/${PRE_CONSENT}`} render={() => (
+            <Redirect to={{
+              pathname: CONSENT,
+              search: getQueryFromSearchAndHash()
+            }}
+            />
+          )}
+          />
           <Route path={`/${CONSENT}`} exact>
             <ConsentPage />
           </Route>
