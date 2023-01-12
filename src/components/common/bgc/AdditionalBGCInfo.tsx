@@ -223,6 +223,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           defaultValue = formItem.selectOptions && formItem.selectOptions.find(state => state.value === stateIdTypeDefaultValue);
           valueAccessor = option => option.value;
           renderNativeOptionFunction = option => t(option.translationKey, option.displayValue);
+          // eslint-disable-next-line
           renderOption = (option: StateSelectOption) => <Row>{t(option.translationKey, option.displayValue)}</Row>;
 
           handleChange = (option: any) => {
@@ -324,7 +325,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           {t("BB-BGC-no-ssn-modal-warning-banner", "If you have an SSN, you are required to provide it. Failing to do so can cause delays in the hiring process which may lead to missing your start date and losing your selected shift.")}
         </MessageBanner>
         <Text>
-          {t("BB-BGC-no-ssn-modal-content-first-paragraph", "By indicating that I don't have an SSN, I acknowledge that I won't be eligible for the Wisely Pay Card as a means of receiving my pay until I obtain an SSN, and will only be able to receive pay via direct deposit or physical checks. By continuing, I am confirming that I do not have an SSN. I understand that, as allowed by law, Amazon will conduct a follow-up background check about me if I change or update my SSN during the onboarding process or during my employment.")}
+          {t("BB-BGC-no-ssn-modal-content-first-paragraph-v2", "By indicating that I don't have an SSN, I acknowledge that I won't be eligible for the Wisely Pay Card as a means of receiving my pay until I obtain an SSN, and will only be able to receive pay via direct deposit or physical checks. Additionally, I understand that, as allowed by law, Amazon will conduct a follow-up background check if I change or update my SSN during the onboarding process or during my employment.")}
         </Text>
         <Text>
           {t("BB-BGC-no-ssn-modal-content-second-paragraph", "I also acknowledge that any intentional misrepresentation of my SSN will be considered by Amazon, and can lead to revocation of my offer of employment or, if I am hired, termination of my employment.")}

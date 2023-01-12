@@ -172,6 +172,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           defaultValue = formItem.selectOptions && formItem.selectOptions.find(state => state.value === stateIdTypeDefaultValue);
           valueAccessor = option => option.value;
           renderNativeOptionFunction = option => t(option.translationKey, option.displayValue);
+          // eslint-disable-next-line
           renderOption = (option: StateSelectOption) => <Row>{t(option.translationKey, option.displayValue)}</Row>;
 
           handleChange = (option: any) => {
