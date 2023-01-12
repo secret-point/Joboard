@@ -314,6 +314,17 @@ export const TEST_APPLICATION_DATA: any = {
 };
 
 export const TEST_SCHEDULE: Schedule = {
+  basePayL10N: "",
+  distanceL10N: "",
+  financeWeekStartDate: "",
+  financeWeekStartDateL10N: "",
+  geoClusterId: "",
+  geoClusterName: "",
+  hireEndDate: "",
+  laborDemandAvailableCount: 0,
+  priorityRank: 0,
+  scheduleTypeL10N: "",
+  surgePay: 0,
   scheduleId: TEST_SCHEDULE_ID,
   jobId: TEST_JOB_ID,
   dataSource: "Dragonstone",
@@ -348,9 +359,9 @@ export const TEST_SCHEDULE: Schedule = {
   totalPayRateL10N: "$8.90",
   employmentTypeL10N: "Regular",
   requiredLanguage: ["en-US", "es-US"],
-  parsedTrainingDate: '01-01-2023',
+  parsedTrainingDate: "01-01-2023",
   monthlyBasePay: 1000,
-  monthlyBasePayL10N: null,
+  monthlyBasePayL10N: null
 };
 
 export const TEST_SCHEDULE_STATE: ScheduleState = {
@@ -369,16 +380,16 @@ export const TEST_SCHEDULE_STATE: ScheduleState = {
 
 export const TEST_THANK_YOU_STATE: ThankYouState = {
   referralFormInputConfig: {
-      hasError: false,
-      labelText: "Please provide your referrer login ID (lower case letters only)",
-      labelTranslationKey: "BB-ThankYou-referral-login-label-text",
-      errorMessage: "Please provide your referrer login ID.",
-      errorMessageTranslationKey: "BB-ThankYou-referral-login-empty-error-text",
-      required: true,
-      name: "referralInfo",
-      id: "referral-employee-name",
-      dataKey: "jobReferral.referralInfo",
-      type: "text"
+    hasError: false,
+    labelText: "Please provide your referrer login ID (lower case letters only)",
+    labelTranslationKey: "BB-ThankYou-referral-login-label-text",
+    errorMessage: "Please provide your referrer login ID.",
+    errorMessageTranslationKey: "BB-ThankYou-referral-login-empty-error-text",
+    required: true,
+    name: "referralInfo",
+    id: "referral-employee-name",
+    dataKey: "jobReferral.referralInfo",
+    type: "text"
   }
 };
 
@@ -523,7 +534,7 @@ export const TEST_WORKFLOW_STATE: WorkflowState = {
   workflowErrorCode: WORKFLOW_ERROR_CODE.ACTIVE
 };
 
-//util functions
+// util functions
 export const hasAction = (actions: any[], actionToCheck: string) => {
   let result = false;
   actions.forEach(element => {
@@ -607,50 +618,50 @@ export const TEST_DAYS_HOURS_FILTER: DayHoursFilter[] = [
   {
     day: DAYS_OF_WEEK.MONDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Monday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Monday"
   },
   {
     day: DAYS_OF_WEEK.TUESDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Tuesday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Tuesday"
   },
   {
     day: DAYS_OF_WEEK.WEDNESDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Wednesday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Wednesday"
   },
   {
     day: DAYS_OF_WEEK.THURSDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Thursday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Thursday"
   },
   {
     day: DAYS_OF_WEEK.FRIDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Friday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Friday"
   },
   {
     day: DAYS_OF_WEEK.SATURDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Saturday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Saturday"
   },
   {
     day: DAYS_OF_WEEK.SUNDAY,
     isActive: true,
-    startTime: '00:00',
-    endTime: '23:59',
-    dayTranslationKey: 'BB-DayName-Sunday'
+    startTime: "00:00",
+    endTime: "23:59",
+    dayTranslationKey: "BB-DayName-Sunday"
   }
 ];

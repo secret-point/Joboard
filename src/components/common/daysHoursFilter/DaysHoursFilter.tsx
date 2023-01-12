@@ -13,11 +13,12 @@ interface DaysHoursFilterProps {
   defaultFilter: DayHoursFilter[];
   onValueChange: Function;
   label: string;
+  displayMilitaryTime?: boolean;
 }
 
 export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
 
-  const { defaultFilter, onValueChange, label } = props;
+  const { defaultFilter, onValueChange, label, displayMilitaryTime } = props;
   const [daysFilters, setDaysFilters] = useState<DayHoursFilter[]>(defaultFilter);
 
   const onToggleChange = ( e: any, index: number ) => {
@@ -94,6 +95,7 @@ export const DaysHoursFilter = ( props: DaysHoursFilterProps ) => {
                 onChange={onTimeChange}
                 startTimeHours={getHours(filter.startTime)}
                 endTimeHours={getHours(filter.endTime)}
+                displayMilitaryTime={displayMilitaryTime}
               />
             </Col>
           </fieldset>

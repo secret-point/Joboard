@@ -36,7 +36,8 @@ import {
   getCountryCodeByCountryName,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
-  getMXCountryCodeByCountryName, getNonFcraSignatureErrorMessages,
+  getMXCountryCodeByCountryName,
+  getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
   GetSelfIdentificationConfigStep,
   handleConfirmNHESelection,
@@ -57,7 +58,8 @@ import {
   isSelfIdentificationInfoValid,
   isSelfIdentificationInfoValidBeforeDisability,
   isSelfIdEqualOpportunityStepCompleted,
-  isSelfIdVeteranStepCompleted, isSSNValid,
+  isSelfIdVeteranStepCompleted,
+  isSSNValid,
   onAssessmentStart,
   parseObjectToQueryString,
   parseQueryParamsArrayToSingleItem,
@@ -69,35 +71,35 @@ import {
   setEpicApiCallErrorMessage,
   shouldPrefillAdditionalBgcInfo,
   showErrorMessage,
-  validateInput, validateNonFcraSignatures
+  validateInput,
+  validateNonFcraSignatures
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
-import Mock = jest.Mock;
 import SpyInstance = jest.SpyInstance;
 
 jest.mock("../../../src/helpers/log-helper");
 
-describe('processAssessmentUrl', () => {
-  const locale = 'en-US';
+describe("processAssessmentUrl", () => {
+  const locale = "en-US";
 
   beforeEach(() => {
     Cookies.get = jest.fn().mockImplementationOnce(() => locale);
   });
 
-  it('should return empty string if assessment url is empty', () => {
+  it("should return empty string if assessment url is empty", () => {
     const url = processAssessmentUrl("", TEST_APPLICATION_ID, TEST_JOB_ID);
     expect(url).toBe("");
   });
 
-  it('should return the correct assessment url', () => {
+  it("should return the correct assessment url", () => {
     const url = processAssessmentUrl(TEST_ASSESSMENT_URL, TEST_APPLICATION_ID, TEST_JOB_ID);
 
     const redirectStr = `applicationId=${TEST_APPLICATION_ID}&jobId=${TEST_JOB_ID}`;
     expect(url).toEqual(`${TEST_ASSESSMENT_URL}?locale=${locale}&redirect=${encodeURIComponent(redirectStr)}`);
   });
 
-  it('should return the correct assessment url with 3rd party query param', () => {
-    const thridPartyQueryParam = 'cmpid=cpm-test-id&tid=t-test-id';
+  it("should return the correct assessment url with 3rd party query param", () => {
+    const thridPartyQueryParam = "cmpid=cpm-test-id&tid=t-test-id";
     window.location.hash = `#/test-page-name?${thridPartyQueryParam}&no_3rd_party=test`;
     const testUrl = `${TEST_ASSESSMENT_URL}`;
     const url = processAssessmentUrl(testUrl, TEST_APPLICATION_ID, TEST_JOB_ID);
@@ -133,7 +135,7 @@ test("isBrokenApplicationFeatureEnabled_noMatchCountry_systemError", () => {
       isAvailable: true,
       jobIdAllowList: "(JOB-FR-1234567891)|(JOB-FR-0000000001)"
     }
-  }
+  };
 
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeFalsy();
@@ -154,7 +156,7 @@ test("isBrokenApplicationFeatureEnabled_invalidRegex_systemError", () => {
       isAvailable: true,
       jobIdAllowList: "^((JOB-MX-.*)$"
     }
-  }
+  };
 
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeFalsy();
@@ -162,7 +164,6 @@ test("isBrokenApplicationFeatureEnabled_invalidRegex_systemError", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
 });
-
 
 
 // test getting the feature flag result by regex.
@@ -176,7 +177,7 @@ test("isBrokenApplicationFeatureEnabled_withTwoUSJobsEnabled", () => {
       isAvailable: true,
       jobIdAllowList: "^(JOB-MX-.*)$"
     }
-  }
+  };
   expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeTruthy();
@@ -201,7 +202,7 @@ test("isBrokenApplicationFeatureEnabled_withUSJobsEndWithOneEnabled", () => {
       isAvailable: true,
       jobIdAllowList: "^(JOB-MX-.*)$"
     }
-  }
+  };
   expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-0000000001", CountryCode.US, flagsMap)).toBeTruthy();
@@ -229,7 +230,7 @@ test("isBrokenApplicationFeatureEnabled_withAllJobsEnabled", () => {
       isAvailable: true,
       jobIdAllowList: "^(JOB-MX-.*)$"
     }
-  }
+  };
   expect(isBrokenApplicationFeatureEnabled("", CountryCode.US, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567891", CountryCode.US, flagsMap)).toBeTruthy();
   expect(isBrokenApplicationFeatureEnabled("JOB-US-1234567893", CountryCode.US, flagsMap)).toBeTruthy();
@@ -239,26 +240,25 @@ test("isBrokenApplicationFeatureEnabled_withAllJobsEnabled", () => {
 });
 
 
-
-describe('awaitWithTimeout', () => {
+describe("awaitWithTimeout", () => {
   let promise: Promise<any>;
 
   beforeEach(() => {
-    promise = new Promise((res) => setTimeout(() => res('result'), 100));
+    promise = new Promise((res) => setTimeout(() => res("result"), 100));
   });
 
-  it('should return promise result if not timeout', async () => {
+  it("should return promise result if not timeout", async () => {
     const res = await awaitWithTimeout(promise, 1000);
-    expect(res).toEqual('result');
+    expect(res).toEqual("result");
   });
 
-  it('should throw timeout error if timeout', async () => {
+  it("should throw timeout error if timeout", async () => {
     await expect(awaitWithTimeout(promise, 10))
       .rejects
       .toThrow(AWAIT_TIMEOUT);
   });
 
-  it('should not throw timeout error if suppressed', async () => {
+  it("should not throw timeout error if suppressed", async () => {
     await expect(awaitWithTimeout(promise, 10, true))
       .resolves
       .toBeUndefined();
@@ -280,15 +280,15 @@ describe("formatFlexibleTrainingDate", () => {
 describe("formatMonthlyBasePayHelper", () => {
 
   it("should return correct format with no decimals", () => {
-    expect(formatMonthlyBasePayHelper(55, 'USD')).toEqual('$55');
+    expect(formatMonthlyBasePayHelper(55, "USD")).toEqual("$55");
   });
 
   it("should return correct format with decimals", () => {
-    expect(formatMonthlyBasePayHelper(40.10, 'USD')).toEqual('$40.10');
+    expect(formatMonthlyBasePayHelper(40.10, "USD")).toEqual("$40.10");
   });
 
   it("should return null", () => {
-    expect(formatMonthlyBasePayHelper(null, 'USD')).toEqual(null);
+    expect(formatMonthlyBasePayHelper(null, "USD")).toEqual(null);
     expect(formatMonthlyBasePayHelper(54)).toEqual(null);
     expect(formatMonthlyBasePayHelper()).toEqual(null);
   });
@@ -301,13 +301,13 @@ describe("parseQueryParamsArrayToSingleItem", () => {
       "jobId": ["JOB-1234"],
       "requisitionId": "Req-000"
     };
-    expect(parseQueryParamsArrayToSingleItem(queryParams)).toEqual({ jobId: 'JOB-1234', requisitionId: 'Req-000' });
+    expect(parseQueryParamsArrayToSingleItem(queryParams)).toEqual({ jobId: "JOB-1234", requisitionId: "Req-000" });
   });
 });
 
 describe("showErrorMessage", () => {
   it("should call boundSetBannerMessage", () => {
-    const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
+    const spy = jest.spyOn(boundUi, "boundSetBannerMessage");
 
     showErrorMessage({
       translationKey: "BB-websocket-error-message-internal-server-error",
@@ -323,18 +323,18 @@ describe("reverseMappingTranslate", () => {
   it("should return empty string with undefined or empty string passed", () => {
     expect(reverseMappingTranslate(undefined)).toEqual("");
     expect(reverseMappingTranslate("")).toEqual("");
-  })
+  });
 
   it("should return empty string with invalid key", () => {
     expect(reverseMappingTranslate("test-key")).toEqual("");
-  })
+  });
 
   it("should return correct value", () => {
     expect(reverseMappingTranslate("I choose not to self-identify", CountryCode.US)).toEqual("I choose not to self-identify");
-    //TODO might need to update when translations come back
+    // TODO might need to update when translations come back
     expect(reverseMappingTranslate("She", CountryCode.MX)).toEqual("She");
-  })
-})
+  });
+});
 
 describe("checkAndBoundGetApplication", () => {
   it("should call boundGetApplication", () => {
@@ -343,52 +343,52 @@ describe("checkAndBoundGetApplication", () => {
     checkAndBoundGetApplication("TEST-ID-0001");
 
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("isSelfIdentificationInfoValidBeforeDisability", () => {
 
   it("should return false", () => {
-    expect(isSelfIdentificationInfoValidBeforeDisability()).toEqual(false)
-  })
+    expect(isSelfIdentificationInfoValidBeforeDisability()).toEqual(false);
+  });
 
   it("should return true", () => {
 
-    expect(isSelfIdentificationInfoValidBeforeDisability(TEST_SELF_IDENTIFICATION)).toEqual(true)
-  })
-})
+    expect(isSelfIdentificationInfoValidBeforeDisability(TEST_SELF_IDENTIFICATION)).toEqual(true);
+  });
+});
 
 describe("isSelfIdentificationInfoValid", () => {
   it("should return false", () => {
     expect(isSelfIdentificationInfoValid()).toEqual(false);
-  })
+  });
 
   describe("US", () => {
     it("should return true: US", () => {
       expect(isSelfIdentificationInfoValid(TEST_SELF_IDENTIFICATION, CountryCode.US)).toEqual(true);
-    })
+    });
 
     it("should return true: US - equal opportunity is not complete", () => {
       expect(isSelfIdentificationInfoValid({
         ...TEST_SELF_IDENTIFICATION,
         ethnicity: ""
       }, CountryCode.US)).toEqual(false);
-    })
+    });
 
     it("should return true: US - disability is not complete", () => {
       expect(isSelfIdentificationInfoValid({
         ...TEST_SELF_IDENTIFICATION,
         disability: ""
       }, CountryCode.US)).toEqual(false);
-    })
+    });
 
     it("should return true: US - veteran status  is not complete", () => {
       expect(isSelfIdentificationInfoValid({
         ...TEST_SELF_IDENTIFICATION,
         veteran: ""
       }, CountryCode.US)).toEqual(false);
-    })
-  })
+    });
+  });
 
   describe("MX", () => {
     it("should return true: MX", () => {
@@ -396,72 +396,72 @@ describe("isSelfIdentificationInfoValid", () => {
         ...TEST_SELF_IDENTIFICATION,
         pronoun: "Her"
       }, CountryCode.MX)).toEqual(true);
-    })
+    });
 
     it("should return true: MX - equal opportunity is not complete", () => {
       expect(isSelfIdentificationInfoValid({
         ...TEST_SELF_IDENTIFICATION,
         ethnicity: ""
       }, CountryCode.MX)).toEqual(false);
-    })
+    });
 
     it("should return true: MX - disability is not complete", () => {
       expect(isSelfIdentificationInfoValid({
         ...TEST_SELF_IDENTIFICATION,
         disability: ""
       }, CountryCode.MX)).toEqual(false);
-    })
-  })
-})
+    });
+  });
+});
 
 describe("isAdditionalBgcInfoValid", () => {
   it("returns false", () => {
     expect(isAdditionalBgcInfoValid()).toEqual(false);
-  })
+  });
 
   it("returns true", () => {
     expect(isAdditionalBgcInfoValid(TEST_BACKGROUND_INFO)).toEqual(true);
-  })
+  });
 });
 
 describe("isAddressValid", () => {
 
   it("should return false", () => {
     expect(isAddressValid()).toEqual(false);
-  })
+  });
 
   it("should return true", () => {
     expect(isAddressValid(TEST_CANDIDATE_ADDRESS)).toEqual(true);
-  })
-})
+  });
+});
 
 describe("isNewBBuiPath", () => {
 
   it("returns false", () => {
     expect(isNewBBuiPath("", newBBUIPathName.US)).toEqual(false);
-  })
+  });
 
-})
+});
 
 describe("isI18nSelectOption", () => {
   it("return true", () => {
-    expect(isI18nSelectOption({ translationKey: 'testkey', value: 'test', showValue: true })).toBeTruthy();
-  })
-})
+    expect(isI18nSelectOption({ translationKey: "testkey", value: "test", showValue: true })).toBeTruthy();
+  });
+});
 
 describe("setEpicApiCallErrorMessage", () => {
   it("should call boundSetBannerMessage", () => {
-    const spy = jest.spyOn(boundUi, 'boundSetBannerMessage');
+    const spy = jest.spyOn(boundUi, "boundSetBannerMessage");
 
     setEpicApiCallErrorMessage({
       translationKey: "BB-get-application-error-message-internal-server-error",
       value: "Something went wrong with the server. Please try again or refresh the browser."
     });
 
-    expect(spy).toHaveBeenCalled()
+    expect(spy).toHaveBeenCalled();
 
-  })
-})
+  });
+});
 
 test("getKeyMapFromDetailedRadioItemList", () => {
   expect(getKeyMapFromDetailedRadioItemList(MX_SelfIdPronounsItems)).toEqual({
@@ -477,16 +477,16 @@ test("getKeyMapFromDetailedRadioItemList", () => {
     "Female": "BB-SelfId-equal-opportunity-form-gender-female-text",
     "I choose not to self-identify": "BB-SelfId-equal-opportunity-form-gender-choose-not-to-identify-text"
   });
-})
+});
 
 describe("handleInitiateSelfIdentificationStep", () => {
   const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
 
   beforeEach(() => {
     spy.mockReset();
-  })
+  });
 
-  const { EQUAL_OPPORTUNITY, DISABILITY_FORM, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS
+  const { EQUAL_OPPORTUNITY, DISABILITY_FORM, VETERAN_FORM } = SELF_IDENTIFICATION_STEPS;
 
   describe("US", () => {
     it("should call boundUpdateSelfIdStepConfig: US and no step completed", () => {
@@ -516,7 +516,7 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
+    });
 
     it("should call boundUpdateSelfIdStepConfig: US and only equal opportunity complete", () => {
 
@@ -543,7 +543,7 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
+    });
 
     it("should call boundUpdateSelfIdStepConfig: US and only equal opportunity and veteran complete", () => {
 
@@ -567,7 +567,7 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
+    });
 
     it("should call boundUpdateSelfIdStepConfig: US and all step complete", () => {
 
@@ -588,8 +588,8 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
-  })
+    });
+  });
 
   describe("MX", () => {
     it("should call boundUpdateSelfIdStepConfig: MX and no step completed", () => {
@@ -613,14 +613,14 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
+    });
 
     it("should call boundUpdateSelfIdStepConfig: MX and only equal opportunity complete", () => {
 
       handleInitiateSelfIdentificationStep({
         ...TEST_SELF_IDENTIFICATION,
         disability: "",
-        pronoun: 'Her'
+        pronoun: "Her"
       }, CountryCode.MX);
 
       expect(spy).toHaveBeenCalledWith({
@@ -634,13 +634,13 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: true
         },
       });
-    })
+    });
 
     it("should call boundUpdateSelfIdStepConfig: MX and all step complete", () => {
 
       handleInitiateSelfIdentificationStep({
         ...TEST_SELF_IDENTIFICATION,
-        pronoun: 'Her'
+        pronoun: "Her"
       }, CountryCode.MX);
 
       expect(spy).toHaveBeenCalledWith({
@@ -654,41 +654,41 @@ describe("handleInitiateSelfIdentificationStep", () => {
           editMode: false
         },
       });
-    })
-  })
-})
+    });
+  });
+});
 
 describe("handleUpdateSelfIdStep", () => {
   it("shoudl call boundUpdateSelfIdStepConfig", () => {
     const spy = jest.spyOn(boundSelfIdentificationActions, "boundUpdateSelfIdStepConfig");
     handleUpdateSelfIdStep({ ...initSelfIdentificationState.stepConfig }, SELF_IDENTIFICATION_STEPS.DISABILITY_FORM, SELF_IDENTIFICATION_STEPS.EQUAL_OPPORTUNITY);
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("handleSubmitSelfIdVeteranStatus", () => {
   it("should call boundUpdateApplicationDS", () => {
     const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
     handleSubmitSelfIdVeteranStatus(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("handleSubmitSelfIdDisabilityStatus", () => {
   it("should call boundUpdateApplicationDS", () => {
     const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
     handleSubmitSelfIdDisabilityStatus(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("handleSubmitSelfIdEqualOpportunity", () => {
   it("should call boundUpdateApplicationDS", () => {
     const spy = jest.spyOn(boundApplicationActions, "boundUpdateApplicationDS");
     handleSubmitSelfIdEqualOpportunity(TEST_APPLICATION_DATA, TEST_SELF_IDENTIFICATION, { ...initSelfIdentificationState.stepConfig });
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("handleConfirmNHESelection", () => {
 
@@ -698,64 +698,64 @@ describe("handleConfirmNHESelection", () => {
     handleConfirmNHESelection(TEST_APPLICATION_DATA, NHE_TIMESLOT);
 
     expect(spy).toHaveBeenCalled();
-  })
-})
+  });
+});
 
 describe("renderNheTimeSlotFullAddress", () => {
   it("should match", () => {
     expect(renderNheTimeSlotFullAddress(NHE_TIMESLOT)).toEqual("01:30 PM - 02:00 PM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327");
-  })
-})
+  });
+});
 
 describe("getMXCountryCodeByCountryName", () => {
   it("should return MX", () => {
-    expect(getMXCountryCodeByCountryName("Mexico")).toEqual("MX")
-  })
+    expect(getMXCountryCodeByCountryName("Mexico")).toEqual("MX");
+  });
 
   it("should return empty string", () => {
-    expect(getMXCountryCodeByCountryName("USA")).toEqual("")
-  })
-})
+    expect(getMXCountryCodeByCountryName("USA")).toEqual("");
+  });
+});
 
 describe("onAssessmentStart", () => {
   it("should call", () => {
     const spy = jest.spyOn(adobeActions, "postAdobeMetrics");
-    onAssessmentStart("https://hiring.amazon.com/#/", TEST_APPLICATION_DATA, TEST_JOB)
+    onAssessmentStart("https://hiring.amazon.com/#/", TEST_APPLICATION_DATA, TEST_JOB);
     expect(spy).toHaveBeenCalledWith({ name: METRIC_NAME.ASSESSMENT_START });
-  })
-})
+  });
+});
 
 describe("validateInput", () => {
   it("should return false", () => {
     expect(validateInput("", true, "")).toEqual(false);
-  })
+  });
 
   it("should return true", () => {
     expect(validateInput("", false, "")).toEqual(true);
-  })
+  });
 
   it("should return true", () => {
     expect(validateInput("45689", false, "^[0-9]*$")).toEqual(true);
-  })
+  });
 
   it("should return false", () => {
     expect(validateInput("45A689", true, "^[0-9]*$")).toEqual(false);
-  })
-})
+  });
+});
 
 describe("isDOBOverEighteen", () => {
   it("should return false", () => {
-    expect(isDOBOverEighteen("")).toEqual(false)
-  })
+    expect(isDOBOverEighteen("")).toEqual(false);
+  });
 
   it("should return false", () => {
-    expect(isDOBOverEighteen("2020-01-01")).toEqual(false)
-  })
+    expect(isDOBOverEighteen("2020-01-01")).toEqual(false);
+  });
 
   it("should return true", () => {
-    expect(isDOBOverEighteen("2004-01-01")).toEqual(true)
-  })
-})
+    expect(isDOBOverEighteen("2004-01-01")).toEqual(true);
+  });
+});
 
 test("isDOBLessThan100", () => {
   expect(isDOBLessThan100("05-10-1999")).toBeTruthy();
@@ -764,7 +764,7 @@ test("isDOBLessThan100", () => {
   expect(isDOBLessThan100("18-89-4586")).toBeFalsy();
   expect(isDOBLessThan100("")).toBeFalsy();
   expect(isDOBLessThan100("15-10-1922")).toBeFalsy();
-})
+});
 describe("getQueryFromSearchAndHash", () => {
   beforeEach(() => {
     window.location.search = "";
@@ -805,7 +805,7 @@ test("isSelfIdVeteranStepCompleted", () => {
     ...TEST_SELF_IDENTIFICATION,
     veteran: ""
   }, CountryCode.US)).toBeFalsy();
-})
+});
 
 test("isSelfIdEqualOpportunityStepCompleted", () => {
   expect(isSelfIdEqualOpportunityStepCompleted({
@@ -831,7 +831,7 @@ test("isSelfIdEqualOpportunityStepCompleted", () => {
 test("GetSelfIdentificationConfigStep", () => {
   expect(GetSelfIdentificationConfigStep(CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
   expect(GetSelfIdentificationConfigStep(CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
-})
+});
 
 
 test("isSelfIdEqualOpportunityStepCompleted", () => {
@@ -852,7 +852,7 @@ test("isSelfIdEqualOpportunityStepCompleted", () => {
     ...TEST_SELF_IDENTIFICATION,
     disability: ""
   }, CountryCode.MX)).toBeFalsy();
-})
+});
 
 describe("initSelfIdStepConfig", () => {
   describe("US", () => {
@@ -862,7 +862,7 @@ describe("initSelfIdStepConfig", () => {
 
     test("init config with self Id step map", () => {
       expect(initSelfIdStepConfig(US_SelfIdentificationConfigSteps, CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
-    })
+    });
   });
 
   describe("MX", () => {
@@ -872,9 +872,9 @@ describe("initSelfIdStepConfig", () => {
 
     test("init config with self Id step map", () => {
       expect(initSelfIdStepConfig(MX_SelfIdentificationConfigSteps, CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
-    })
-  })
-})
+    });
+  });
+});
 
 describe("checkIfLegacy", () => {
   it("should return true", () => {
@@ -886,7 +886,7 @@ describe("checkIfLegacy", () => {
     });
 
     expect(checkIfIsLegacy()).toBeTruthy();
-  })
+  });
 
   it("should return false", () => {
 
@@ -897,51 +897,59 @@ describe("checkIfLegacy", () => {
     });
 
     expect(checkIfIsLegacy()).toBeFalsy();
-  })
-})
+  });
+});
 
 describe("renderScheduleFullAddress", () => {
   let schedule = { ...TEST_SCHEDULE };
 
-  beforeEach(()=>{
-    schedule = { ...TEST_SCHEDULE }
-  })
+  beforeEach(() => {
+    schedule = { ...TEST_SCHEDULE };
+  });
 
   it("with State", () => {
     expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, CA 94560");
-  })
+  });
 
   it("without State", () => {
     schedule.state = "";
     expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, 94560");
-  })
+  });
 
   it("without City", () => {
     schedule.city = "";
     expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, CA 94560");
-  })
+  });
 
   it("without Zipcode", () => {
     schedule.postalCode = "";
     expect(renderScheduleFullAddress(schedule)).toEqual("38811 Cherry Street, Newark, CA");
-  })
+  });
 
   it("without Address", () => {
     schedule.address = "";
     expect(renderScheduleFullAddress(schedule)).toEqual("Newark, CA 94560");
-  })
-})
+  });
+});
 
 describe("populateTimeRangeHourData", () => {
 
-  it("when isThisEndTime set to true", () => {
-    expect(populateTimeRangeHourData("8", true)[0]).toEqual({ time: '09:00 AM', hours: 9 });
-  })
+  it("when isThisEndTime set to true: without Military enabled", () => {
+    expect(populateTimeRangeHourData("8", false, true)[0]).toEqual({ time: "09:00 AM", hours: 9 });
+  });
 
-  it("when isThisEndTime set to false", () => {
-    expect(populateTimeRangeHourData("8", false)[0]).toEqual({ time: '12:00 AM', hours: 0 });
-  })
-})
+  it("when isThisEndTime set to false without Military enabled", () => {
+    expect(populateTimeRangeHourData("8", false, false)[0]).toEqual({ time: "12:00 AM", hours: 0 });
+  });
+
+  it("when isThisEndTime set to true: with Military enabled", () => {
+    expect(populateTimeRangeHourData("8", true, true)[0]).toEqual({ time: "09:00", hours: 9 });
+  });
+
+  it("when isThisEndTime set to false with Military enabled", () => {
+    expect(populateTimeRangeHourData("8", true, false)[0]).toEqual({ time: "00:00", hours: 0 });
+  });
+});
 
 describe("parseObjectToQueryString", () => {
   it("should return expected string", () => {
@@ -953,18 +961,18 @@ describe("parseObjectToQueryString", () => {
         state: "WA",
         city: "Seattle"
       }
-    }
+    };
 
-    expect(parseObjectToQueryString(testObj)).toEqual("firstName=test%20first%20name&lastName=test%20last%20name&address=%7B%22state%22%3A%22WA%22%2C%22city%22%3A%22Seattle%22%7D")
-  })
+    expect(parseObjectToQueryString(testObj)).toEqual("firstName=test%20first%20name&lastName=test%20last%20name&address=%7B%22state%22%3A%22WA%22%2C%22city%22%3A%22Seattle%22%7D");
+  });
 
   it("should return empty string", () => {
 
     const emptyObj = {};
 
-    expect(parseObjectToQueryString(emptyObj)).toEqual("")
-  })
-})
+    expect(parseObjectToQueryString(emptyObj)).toEqual("");
+  });
+});
 
 test("getDetailedRadioErrorMap", () => {
   expect(getDetailedRadioErrorMap(CountryCode.US)).toEqual({});
@@ -972,233 +980,252 @@ test("getDetailedRadioErrorMap", () => {
   expect(getDetailedRadioErrorMap(CountryCode.MX)).toEqual({
     errorMessage: "Make a selection to continue.",
     errorMessageTranslationKey: "BB-Detailed-button-error-text-message-mx"
-  })
-})
+  });
+});
 
 test("shouldPrefillAdditionalBgcInfo", () => {
-  //USA
+  // USA
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.US, CountryCode.CA)).toBeFalsy();
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.US, CountryCode.US)).toBeTruthy();
 
-  //Canada
+  // Canada
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.CA, CountryCode.CA)).toBeTruthy();
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.CA, CountryCode.US)).toBeFalsy();
 
-  //Mexico
+  // Mexico
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.CA)).toBeFalsy();
   expect(shouldPrefillAdditionalBgcInfo(CountryCode.MX, CountryCode.MX)).toBeTruthy();
 });
 
-describe("validateNonFcraSignatures()",()=>{
-  it("catches an invalid acknowledgment signature",()=>{
-    expect(validateNonFcraSignatures("m","cool")).toEqual({
-      hasError:true,
-      ackESignHasError:true,
-      noticeESignHasError:false,
-      mismatchError:true,
+describe("validateNonFcraSignatures()", () => {
+  it("catches an invalid acknowledgment signature", () => {
+    expect(validateNonFcraSignatures("m", "cool")).toEqual({
+      hasError: true,
+      ackESignHasError: true,
+      noticeESignHasError: false,
+      mismatchError: true,
     });
   });
-  it("catches an invalid state notice signature",()=>{
-    expect(validateNonFcraSignatures("mittens","")).toEqual({
-      hasError:true,
-      ackESignHasError:false,
-      noticeESignHasError:true,
-      mismatchError:true,
+
+  it("catches an invalid state notice signature", () => {
+    expect(validateNonFcraSignatures("mittens", "")).toEqual({
+      hasError: true,
+      ackESignHasError: false,
+      noticeESignHasError: true,
+      mismatchError: true,
     });
   });
-  it("catches both invalid acknowledgement and state notice signatures",()=>{
-    expect(validateNonFcraSignatures("m","m")).toEqual({
-      hasError:true,
-      ackESignHasError:true,
-      noticeESignHasError:true,
-      mismatchError:false,
+
+  it("catches both invalid acknowledgement and state notice signatures", () => {
+    expect(validateNonFcraSignatures("m", "m")).toEqual({
+      hasError: true,
+      ackESignHasError: true,
+      noticeESignHasError: true,
+      mismatchError: false,
     });
   });
-  it("catches a mismatch signature",()=>{
-    expect(validateNonFcraSignatures("ma","ca")).toEqual({
-      hasError:true,
-      ackESignHasError:false,
-      noticeESignHasError:false,
-      mismatchError:true,
+
+  it("catches a mismatch signature", () => {
+    expect(validateNonFcraSignatures("ma", "ca")).toEqual({
+      hasError: true,
+      ackESignHasError: false,
+      noticeESignHasError: false,
+      mismatchError: true,
     });
   });
-  it("allows through valid signatures",()=>{
-    expect(validateNonFcraSignatures("mittens","mittens")).toEqual({
-      hasError:false,
-      ackESignHasError:false,
-      noticeESignHasError:false,
-      mismatchError:false,
+
+  it("allows through valid signatures", () => {
+    expect(validateNonFcraSignatures("mittens", "mittens")).toEqual({
+      hasError: false,
+      ackESignHasError: false,
+      noticeESignHasError: false,
+      mismatchError: false,
     });
   });
 });
 
-describe("getNonFcraSignatureErrorMessages()",()=>{
+describe("getNonFcraSignatureErrorMessages()", () => {
   test.each([
-    {ack:"a",notice:"b",ackError:"signature invalid",noticeError:"signature invalid"},
-    {ack:"a",notice:"a",ackError:"signature invalid",noticeError:"signature invalid"},
-    {ack:"a",notice:"good",ackError:"signature invalid",noticeError:undefined},
-    {ack:"good",notice:"a",ackError:undefined,noticeError:"signature invalid"},
-    {ack:"bad",notice:"mismatch",ackError:"signature mismatch",noticeError:"signature mismatch"},
-    {ack:"good",notice:"good",ackError:undefined,noticeError:undefined},
-  ])("it correctly handles %p",({ack,notice,ackError,noticeError})=>{
-    expect(getNonFcraSignatureErrorMessages(validateNonFcraSignatures(ack,notice),"signature invalid","signature mismatch")).toEqual({
-      errorMessageAckSignature:ackError,
-      errorMessageNoticeSignature:noticeError,
+    { ack: "a", notice: "b", ackError: "signature invalid", noticeError: "signature invalid" },
+    { ack: "a", notice: "a", ackError: "signature invalid", noticeError: "signature invalid" },
+    { ack: "a", notice: "good", ackError: "signature invalid", noticeError: undefined },
+    { ack: "good", notice: "a", ackError: undefined, noticeError: "signature invalid" },
+    { ack: "bad", notice: "mismatch", ackError: "signature mismatch", noticeError: "signature mismatch" },
+    { ack: "good", notice: "good", ackError: undefined, noticeError: undefined },
+  ])("it correctly handles %p", ({ ack, notice, ackError, noticeError }) => {
+    expect(getNonFcraSignatureErrorMessages(validateNonFcraSignatures(ack, notice), "signature invalid", "signature mismatch")).toEqual({
+      errorMessageAckSignature: ackError,
+      errorMessageNoticeSignature: noticeError,
     });
   });
 });
 
-describe("isSSNValid()",()=>{
-  let storeGetStateSpy:SpyInstance;
-  beforeEach(()=>{
-    storeGetStateSpy = jest.spyOn(store,"getState");
-  })
-  afterEach(()=>{
-    storeGetStateSpy.mockReset();
-  })
-  it("returns false when patchCandidate payload is empty",()=>{
-    expect(isSSNValid(null,false,"")).toEqual(false);
+describe("isSSNValid()", () => {
+  let storeGetStateSpy: SpyInstance;
+
+  beforeEach(() => {
+    storeGetStateSpy = jest.spyOn(store, "getState");
   });
-  it("returns true when isWithoutSSN=true and newSSN is empty",()=>{
+
+  afterEach(() => {
+    storeGetStateSpy.mockReset();
+  });
+
+  it("returns false when patchCandidate payload is empty", () => {
+    expect(isSSNValid(null, false, "")).toEqual(false);
+  });
+
+  it("returns true when isWithoutSSN=true and newSSN is empty", () => {
     storeGetStateSpy.mockReturnValueOnce({});
     expect(isSSNValid({
-      additionalBackgroundInfo:{
-        idNumber:"",
-        isWithoutSSN:true,
+      additionalBackgroundInfo: {
+        idNumber: "",
+        isWithoutSSN: true,
       }
-    },true,"")).toEqual(true);
+    }, true, "")).toEqual(true);
     expect(storeGetStateSpy).toHaveBeenCalled();
   });
-  it("returns true when the prefilled ssn from the candidate matches the current ssn",()=>{
+
+  it("returns true when the prefilled ssn from the candidate matches the current ssn", () => {
     storeGetStateSpy.mockReturnValueOnce({
-      candidate:{
-        results:{
-          candidateData:{
-            additionalBackgroundInfo:{
-              idNumber:"*****1234"
+      candidate: {
+        results: {
+          candidateData: {
+            additionalBackgroundInfo: {
+              idNumber: "*****1234"
             }
           }
         }
       }
     });
+
     expect(isSSNValid({
-      additionalBackgroundInfo:{
-        idNumber:"*****1234",
+      additionalBackgroundInfo: {
+        idNumber: "*****1234",
       }
-    },true,"")).toEqual(true);
+    }, true, "")).toEqual(true);
     expect(storeGetStateSpy).toHaveBeenCalled();
   });
-  it("returns false when isWithoutSSN=false and newSSN is empty",()=>{
+
+  it("returns false when isWithoutSSN=false and newSSN is empty", () => {
     storeGetStateSpy.mockReturnValueOnce({});
     expect(isSSNValid({
-      additionalBackgroundInfo:{
-        idNumber:"",
-        isWithoutSSN:false,
+      additionalBackgroundInfo: {
+        idNumber: "",
+        isWithoutSSN: false,
       }
-    },true,"")).toEqual(false);
+    }, true, "")).toEqual(false);
     expect(storeGetStateSpy).toHaveBeenCalled();
   });
-  describe("when VALIDATE_SSN_EXTRA is disabled",()=>{
-    it("returns true when the ssn matches the regex",()=>{
+
+  describe("when VALIDATE_SSN_EXTRA is disabled", () => {
+    it("returns true when the ssn matches the regex", () => {
       storeGetStateSpy
-          .mockReturnValueOnce({})
-          .mockReturnValueOnce({
-            appConfig:{
-              results:{
-                envConfig:{
-                  featureList:{
-                    // feature flag doesn't even exist yet
-                  }
+        .mockReturnValueOnce({})
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  // feature flag doesn't even exist yet
                 }
               }
             }
-          });
+          }
+        });
       expect(isSSNValid({
-        additionalBackgroundInfo:{
-          idNumber:"  123456789   "
+        additionalBackgroundInfo: {
+          idNumber: "  123456789   "
         }
-      },true,"^[0-9]{9}$")).toEqual(true);
+      }, true, "^[0-9]{9}$")).toEqual(true);
       expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
     });
-    it("returns false when the ssn doesn't match the regex",()=>{
+
+    it("returns false when the ssn doesn't match the regex", () => {
       storeGetStateSpy
-          .mockReturnValueOnce({})
-          .mockReturnValueOnce({
-            appConfig:{
-              results:{
-                envConfig:{
-                  featureList:{
-                    // feature flag doesn't even exist yet
-                  }
+        .mockReturnValueOnce({})
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  // feature flag doesn't even exist yet
                 }
               }
             }
-          });
+          }
+        });
       expect(isSSNValid({
-        additionalBackgroundInfo:{
-          idNumber:"12345678"
+        additionalBackgroundInfo: {
+          idNumber: "12345678"
         }
-      },true,"^[0-9]{9}$")).toEqual(false);
+      }, true, "^[0-9]{9}$")).toEqual(false);
       expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
     });
   });
-  describe("when VALIDATE_SSN_EXTRA is enabled",()=>{
+
+  describe("when VALIDATE_SSN_EXTRA is enabled", () => {
     it.each([
       "12345678",
       "123456789",
       "666789987",
       "914523478",
       "456120000"
-    ])("returns false when the ssn is %s",(ssn)=>{
+    ])("returns false when the ssn is %s", (ssn) => {
       storeGetStateSpy
-          .mockReturnValueOnce({})
-          .mockReturnValueOnce({
-            appConfig:{
-              results:{
-                envConfig:{
-                  featureList:{
-                    VALIDATE_SSN_EXTRA:{
-                      isAvailable:true,
-                    }
+        .mockReturnValueOnce({})
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  VALIDATE_SSN_EXTRA: {
+                    isAvailable: true,
                   }
                 }
               }
             }
-          });
+          }
+        });
+
       expect(isSSNValid({
-        additionalBackgroundInfo:{
-          idNumber:ssn,
+        additionalBackgroundInfo: {
+          idNumber: ssn,
         }
-      },true,"^[0-9]{9}$")).toEqual(false);
+      }, true, "^[0-9]{9}$")).toEqual(false);
+
       expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
     });
+
     it.each([
       "876543219",
       "123456788",
       "667891234",
       "145612000"
-    ])("returns true when the ssn is %s",(ssn)=>{
+    ])("returns true when the ssn is %s", (ssn) => {
       storeGetStateSpy
-          .mockReturnValueOnce({})
-          .mockReturnValueOnce({
-            appConfig:{
-              results:{
-                envConfig:{
-                  featureList:{
-                    VALIDATE_SSN_EXTRA:{
-                      isAvailable:true,
-                    }
+        .mockReturnValueOnce({})
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  VALIDATE_SSN_EXTRA: {
+                    isAvailable: true,
                   }
                 }
               }
             }
-          });
+          }
+        });
+
       expect(isSSNValid({
-        additionalBackgroundInfo:{
-          idNumber:ssn,
+        additionalBackgroundInfo: {
+          idNumber: ssn,
         }
-      },true,"^[0-9]{9}$")).toEqual(true);
+      }, true, "^[0-9]{9}$")).toEqual(true);
+
       expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
-    })
+    });
   });
 });

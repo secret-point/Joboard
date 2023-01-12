@@ -10,7 +10,7 @@ cd src/HVHCareersFrontendApplicationUI
 
 * **Gamma MX:** `ada credentials update --account=735199862045 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`
 * **Gamma US:** `ada credentials update --account=388028644549 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`
-* **Gamma UK:** `ada credentials update --account=155563236030 --provider=conduit --role=HVH-CA-EcsService-gamma-d-EcsTaskInstanceRoleE38DB-1VHQEM26PBLYO`
+* **Gamma UK:** `ada credentials update --account=155563236030 --provider=conduit --role=IibsAdminAccess-DO-NOT-DELETE`
 
 ### Build Packages
     

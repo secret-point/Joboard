@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobOpportunity should match snapshot 1`] = `
+<Col
+  id="jobOpportunityContainer"
+>
+  <StepHeader
+    jobTitle=""
+    step={
+      Object {
+        "stepNumber": 1,
+        "title": "Select Job",
+        "titleTranslationKey": "BB-ApplicationSteps-select-job-text",
+      }
+    }
+  />
+  <Col
+    id="jobOpportunityHeaderImageContainer"
+  >
+    <Image
+      aria-hidden="true"
+      id="jobOpportunityHeaderImage"
+      src="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/20170525PrimeNowUWA2_15-min.jpg"
+    />
+    <Col
+      id="jobOpportunityHeaderImageOverlay"
+    />
+  </Col>
+  <Col>
+    <Row
+      padding={
+        Object {
+          "top": "S400",
+        }
+      }
+    >
+      <Row
+        className="backToJobDashboardLink"
+        gridGap={5}
+        onClick={[Function]}
+      >
+        <IconArrowLeft
+          aria-hidden={true}
+          display="block"
+          fontSize="T100"
+          size={16}
+        />
+        <Text
+          font="primary"
+          fontSize="T200"
+          fontWeight="medium"
+          hyphens="none"
+        >
+          Go Back to Jobs Dashboard
+        </Text>
+      </Row>
+    </Row>
+    <Col
+      className="scheduleListContainer"
+      padding={
+        Object {
+          "top": "S500",
+        }
+      }
+    >
+      <Row
+        className="scheduleListActionContainer"
+      >
+        <Row
+          className="scheduleListActionItem"
+          gridGap={5}
+        >
+          <WithFlyout
+            flyoutPosition="leading"
+            renderFlyout={[Function]}
+          >
+            <Component />
+          </WithFlyout>
+        </Row>
+        <Row
+          className="scheduleListActionItem"
+        >
+          <WithFlyout
+            flyoutPosition="trailing"
+            renderFlyout={[Function]}
+          >
+            <Component />
+          </WithFlyout>
+        </Row>
+      </Row>
+      <ShiftPreferenceCard />
+    </Col>
+  </Col>
+</Col>
+`;

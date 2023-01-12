@@ -30,7 +30,8 @@ export enum PAGE_ROUTES {
   SUPPLEMENTARY_SUCCESS = "supplementary-success",
   REHIRE_ELIGIBILITY_STATUS = "rehire-eligibility-status",
   NO_AVAILABLE_SHIFT = "no-available-shift",
-  APPLICATIONID_NULL = "applicationId-null"
+  APPLICATIONID_NULL = "applicationId-null",
+  SHIFT_PREFERENCE = "shift-preference"
 }
 
 // Reference: https://code.amazon.com/packages/HVHStepFunctionDefinitions/blobs/ad75b9869a017bc84a9e03920e835a6b2cec7063/--/configuration/nacf_tier_1_node_workflow/defintion.json#L186
@@ -53,5 +54,6 @@ export const PagesControlledByWorkFlowService = [
   PAGE_ROUTES.CANDIDATE_WITHDRAWS,
   PAGE_ROUTES.AMAZON_REJECTS,
   PAGE_ROUTES.WORKFLOW_FAILED,
-  PAGE_ROUTES.RESUME_APPLICATION
+  PAGE_ROUTES.RESUME_APPLICATION,
+  PAGE_ROUTES.SHIFT_PREFERENCE
 ];

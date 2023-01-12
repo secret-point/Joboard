@@ -107,7 +107,7 @@ import {
   SelfIdentificationDisabilityStatus,
   SelfIdentificationInfo,
   SelfIdentificationVeteranStatus,
-  SelfIdEqualOpportunityStatus,
+  SelfIdEqualOpportunityStatus, ShiftPreferenceWorkHour,
   TimeRangeHoursData
 } from "./types/common";
 
@@ -274,21 +274,22 @@ export const renderScheduleFullAddress = ( schedule: Schedule ): string => {
   return `${address}${city && address && ", "}${city}${stateAndPostal && (city || address) && ", "}${stateAndPostal}`;
 };
 
-export const populateTimeRangeHourData = ( startTime: string, isThisEndTime?: boolean ): TimeRangeHoursData[] => {
+export const populateTimeRangeHourData = ( startTime: string, militaryTimeFormat?: boolean, isThisEndTime?: boolean ): TimeRangeHoursData[] => {
   const hoursData: TimeRangeHoursData[] = [];
   const startPos = isThisEndTime ? parseInt(startTime) + 1 : 0;
+  const timeFormat = militaryTimeFormat ? "HH:mm" : "hh:mm A";
 
   range(startPos, 24, 60 / 60).map(( i ) => {
     const dateTime = moment("1990-01-01T00:00:00.000Z").utc().add("h", i);
     hoursData.push({
-      time: dateTime.format("hh:mm A"),
+      time: dateTime.format(timeFormat),
       hours: i,
     });
   });
 
   if (isThisEndTime) {
     hoursData.push({
-      time: "11:59 PM",
+      time: militaryTimeFormat ? "23:59" : "11:59 PM",
       hours: -1,
     });
   }
@@ -710,6 +711,17 @@ export const isDOBLessThan100 = (dateOfBirth: string): boolean => {
   const diff = today.diff(moment(dateOfBirth), "year");
 
   return diff <= 100;
+};
+
+export const isDateGreaterThanToday = (date: string): boolean => {
+  if (!date || !moment(date).isValid()) {
+    return false;
+  }
+
+  const today = moment();
+  const diff = today.diff(moment(date), "days");
+
+  return diff < 0;
 };
 
 export const validateInput = (value: string, required: boolean, regex: string) => {

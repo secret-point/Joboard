@@ -23,7 +23,7 @@ import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
 import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
-import JobOpportunity from "../us/jobOpportunity/JobOpportunity";
+import JobOpportunity from "../uk/jobOpportunity/JobOpportunity";
 import Nhe from "../us/nhe/Nhe";
 import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
@@ -35,6 +35,7 @@ import ThankYou from "../us/thankYou/ThankYou";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
+import ShiftPreference from "../common/jobOpportunity/ShiftPreference";
 
 // Pages that have been migrated to MX
 import BackgroundCheck from "./bgc/BackgroundCheck";
@@ -79,7 +80,8 @@ const {
   SUPPLEMENTARY_SUCCESS,
   REHIRE_ELIGIBILITY_STATUS,
   NO_AVAILABLE_SHIFT,
-  APPLICATIONID_NULL
+  APPLICATIONID_NULL,
+  SHIFT_PREFERENCE
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = ( props: MapStateToProps ) => {
@@ -186,6 +188,9 @@ export const DragonStoneAppUK = ( props: MapStateToProps ) => {
           </Route>
           <Route path={`/${APPLICATIONID_NULL}`} exact>
             <ApplicationIdNull />
+          </Route>
+          <Route path={`/${SHIFT_PREFERENCE}`} exact>
+            <ShiftPreference />
           </Route>
         </Switch>
       </Router>

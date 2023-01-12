@@ -10,11 +10,12 @@ import DaysHoursFilter from "../daysHoursFilter/DaysHoursFilter";
 
 interface FilterScheduleProps {
   filters: ScheduleStateFilters;
+  displayMilitaryTime?: boolean;
 }
 
 const FilterSchedule = ( props: FilterScheduleProps ) => {
 
-  const { filters } = props;
+  const { filters, displayMilitaryTime } = props;
   const { daysHoursFilter, maxHoursPerWeek } = filters;
 
   const updateMaxHoursPerWeek = ( key: string ) => {
@@ -55,6 +56,7 @@ const FilterSchedule = ( props: FilterScheduleProps ) => {
         defaultFilter={daysHoursFilter}
         label={t("BB-DaysHoursFilter-title-text", "Filter Schedules")}
         onValueChange={updateDaysHourFilter}
+        displayMilitaryTime={displayMilitaryTime}
       />
     </Col>
   );

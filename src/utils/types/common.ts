@@ -1,7 +1,8 @@
 import {
   APPLICATION_STATE,
   BACKGROUND_AGENT,
-  BGC_STEPS, BGC_VENDOR_TYPE,
+  BGC_STEPS,
+  BGC_VENDOR_TYPE,
   DAYS_OF_WEEK,
   DESIRED_WORK_HOURS,
   FCRA_DISCLOSURE_TYPE,
@@ -303,6 +304,7 @@ export interface Schedule {
   language: string;
   externalJobTitle: string;
   basePay: number;
+  basePayL10N: string;
   totalPayRate: number;
   currencyCode: string;
   scheduleText: string;
@@ -336,6 +338,23 @@ export interface Schedule {
   parsedTrainingDate: string | null;
   monthlyBasePay?: number | null;
   monthlyBasePayL10N?: string | null;
+  shiftDifferential?: number;
+  hoursPerWeekDecimal?: number;
+  scheduleTypeL10N: string;
+  geoClusterId: string;
+  geoClusterName: string;
+  distanceL10N: string;
+  featuredSchedule?: string;
+  isPrivateSchedule?: boolean;
+  scheduleBusinessCategory?: string;
+  scheduleBusinessCategoryL10N?: string;
+  priorityRank: number;
+  surgePay: number;
+  financeWeekStartDate: string;
+  financeWeekStartDateL10N: string;
+  laborDemandAvailableCount: number;
+  employeeClass?: string;
+  hireEndDate: string;
 }
 
 export interface HoursPerWeek {
@@ -689,6 +708,9 @@ export interface ScheduleStateFilters {
   sortKey: SCHEDULE_FILTER_TYPE;
   maxHoursPerWeek: string;
   daysHoursFilter: DayHoursFilter[];
+  startDateBegin?: string;
+  startDateEnd?: string;
+  city?: string[];
 };
 
 export interface Assessment {
@@ -946,4 +968,27 @@ export interface ValidateAmazonLoginIDRequest {
 export interface DetailedRadioErrorType {
   errorMessage?: string;
   errorMessageTranslationKey?: string;
+}
+
+export interface ShiftPreferenceWorkHour {
+  minimumValue: number;
+  maximumvalue: number;
+}
+
+export interface ShiftPreferenceWorkHourConfig {
+  displayValue: string;
+  translationKey: string;
+  value: ShiftPreferenceWorkHour;
+}
+
+export interface ShiftPreferenceWeekDaysConfig {
+  displayValue: string;
+  translationKey: string;
+  value: string;
+}
+
+export interface ShiftPreferenceShiftPatternConfig {
+  displayValue: string;
+  translationKey: string;
+  value: string;
 }

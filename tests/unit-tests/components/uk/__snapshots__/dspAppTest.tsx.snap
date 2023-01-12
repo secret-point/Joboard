@@ -210,6 +210,12 @@ exports[`dspAppTest should match snapshot 1`] = `
       >
         <Connect(ApplicationIdNull) />
       </Route>
+      <Route
+        exact={true}
+        path="/shift-preference"
+      >
+        <ShiftPreference />
+      </Route>
     </Switch>
   </HashRouter>
   <BackToTopButton

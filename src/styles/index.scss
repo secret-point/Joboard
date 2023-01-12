@@ -84,7 +84,7 @@ a {
   color: $Blue_70;
 }
 
-.backToJobDashboardLink {
+.backToJobDashboardLink, .shiftPreferenceLink {
   color: $Blue_70;
   cursor: pointer;
 
@@ -127,6 +127,21 @@ a {
         margin: auto;
       }
     }
+  }
+}
+
+.schedulePreferenceCard {
+    width: 100%;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    box-shadow: rgba(22, 30, 45, 0.3) 0px 0px 10px 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: $Neutral_10;
+    cursor: pointer;
+
+  .shiftPreferenceLink {
+
   }
 }
 

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShiftPreference Card should match snapshot 1`] = `
+<Col
+  className="schedulePreferenceCard"
+  gridGap={8}
+  padding="S300"
+>
+  <H4
+    color="neutral90"
+    font="primary"
+    fontSize="T400"
+    fontWeight="regular"
+    hyphens="none"
+    margin={0}
+  >
+    Don't see a shift that works for you?
+  </H4>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    You can submit your shift preferences and we'll contact you when we find a shift that works for you.
+  </Text>
+  <Row
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Row
+      className="shiftPreferenceLink"
+      gridGap={5}
+      onClick={[Function]}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="medium"
+        hyphens="none"
+      >
+        Select your shift preferences
+      </Text>
+      <IconArrowRight
+        aria-hidden={true}
+        display="block"
+        fontSize="T100"
+        size={24}
+      />
+    </Row>
+  </Row>
+</Col>
+`;

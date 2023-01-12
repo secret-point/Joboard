@@ -13,17 +13,18 @@ interface TimeRangeProps {
   id?: string;
   startTimeHours: number;
   endTimeHours: number;
+  displayMilitaryTime?: boolean;
 }
 
 export const TimeRange = ( props: TimeRangeProps ) => {
 
-  const { disabled, id, dayIndex, endTimeHours, startTimeHours, onChange } = props;
+  const { disabled, id, dayIndex, endTimeHours, startTimeHours, onChange, displayMilitaryTime } = props;
   const [startTime, setStartTime] = useState<string>(startTimeHours.toString());
   /* eslint-disable  @typescript-eslint/no-unused-vars */
   const [endTime, setEndTime] = useState<string>(endTimeHours.toString());
 
-  const startTimeOptions = populateTimeRangeHourData(startTime);
-  const endTimeOptions = populateTimeRangeHourData(startTime, true);
+  const startTimeOptions = populateTimeRangeHourData(startTime, displayMilitaryTime);
+  const endTimeOptions = populateTimeRangeHourData(startTime, displayMilitaryTime, true);
   const defaultStartTime = startTimeHours >= 0 ? startTimeOptions[startTimeHours] : startTimeOptions[startTimeOptions.length - 1];
   const defaultEndTime = endTimeHours >= 0 ? endTimeOptions[endTimeHours] : endTimeOptions[endTimeOptions.length - 1];
 

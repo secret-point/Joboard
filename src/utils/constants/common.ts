@@ -31,6 +31,9 @@ import {
   ScheduleSortBy,
   ScheduleStateFilters,
   SelfIdentificationConfig,
+  ShiftPreferenceShiftPatternConfig,
+  ShiftPreferenceWeekDaysConfig,
+  ShiftPreferenceWorkHourConfig,
   StateSelectOption,
   StateSpecificNotice
 } from "../types/common";
@@ -1055,3 +1058,29 @@ export const localeToLanguageMap: { [key in Locale]: [string, string] } = {
   "es-US": ["BB-Constants-language-spanish", "Spanish"],
   "es-MX": ["BB-Constants-language-spanish", "Spanish"],
 };
+
+export const shiftPreferenceWorkHour: ShiftPreferenceWorkHourConfig[] = [
+  { displayValue: "36 - 40hrs/wk", value: { minimumValue: 35, maximumvalue: 40 }, translationKey: "BB-kondo-shift-work-hour-36-to-40" },
+  { displayValue: "25 - 35hrs/wk", value: { minimumValue: 25, maximumvalue: 35 }, translationKey: "BB-kondo-shift-work-hour-25-to-35" },
+  { displayValue: "15 - 24hrs/wk", value: { minimumValue: 15, maximumvalue: 24 }, translationKey: "BB-kondo-shift-work-hour-15-to-24" },
+  { displayValue: "15 or less", value: { minimumValue: 0, maximumvalue: 15 }, translationKey: "BB-kondo-shift-work-hour-15-or-less" }
+];
+
+export const shiftPreferenceWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
+  { displayValue: "Saturday", value: "Saturday", translationKey: "BB-kondo-shift-weekend-days-Saturday" },
+  { displayValue: "Sunday", value: "Sunday", translationKey: "BB-kondo-shift-weekend-days-Sunday" }
+];
+
+export const shiftPreferenceWeekDays: ShiftPreferenceWeekDaysConfig[] = [
+  { displayValue: "Monday", value: "Monday", translationKey: "BB-kondo-shift-week-days-Monday" },
+  { displayValue: "Tuesday", value: "Tuesday", translationKey: "BB-kondo-shift-week-days-Tuesday" },
+  { displayValue: "Wednesday", value: "Wednesday", translationKey: "BB-kondo-shift-week-days-Wednesday" },
+  { displayValue: "Thursday", value: "Thursday", translationKey: "BB-kondo-shift-week-days-Thursday" },
+  { displayValue: "Friday", value: "Friday", translationKey: "BB-kondo-shift-week-days-Friday" }
+];
+
+export const shiftPreferenceShiftPattern: ShiftPreferenceShiftPatternConfig[] = [
+  { displayValue: "Any", value: "Any", translationKey: "BB-kondo-shift-shift-pattern-Any" },
+  { displayValue: "Days", value: "Days", translationKey: "BB-kondo-shift-shift-pattern-Days" },
+  { displayValue: "Nights", value: "Nights", translationKey: "BB-kondo-shift-shift-pattern-Nights" }
+];

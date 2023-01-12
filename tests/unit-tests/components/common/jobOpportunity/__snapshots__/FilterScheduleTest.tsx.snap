@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShiftPreference Card should match snapshot - with Military display 1`] = `
+<Col
+  gridGap={20}
+>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "right": "S300",
+      }
+    }
+    width="100%"
+  >
+    <Label
+      color="neutral90"
+      font="primary"
+      fontSize="T200"
+      fontWeight="regular"
+      htmlFor="desiredHoursSelect"
+      hyphens="none"
+    >
+      Desired hours per week
+    </Label>
+    <Select
+      collapsedOptionsExpanderTitle="Selected items"
+      customSelectionOptionsLabel="Group selection options"
+      defaultOptionsLabel="Single selection options"
+      defaultValue="40"
+      disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+      getTriggerText={[Function]}
+      id="desiredHoursSelect"
+      layout="default"
+      noOptionsText="No options available"
+      onChange={[Function]}
+      options={
+        Array [
+          "10",
+          "20",
+          "30",
+          "40",
+        ]
+      }
+      placeholder="Select Desired Hours"
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      renderSelectedValue={[Function]}
+      searchFieldAriaLabel="Start typing to filter out search results"
+      selectedOptionAltText="selected"
+      valueAccessor={[Function]}
+      width="100%"
+    />
+  </Col>
+  <DaysHoursFilter
+    defaultFilter={
+      Array [
+        Object {
+          "day": "MONDAY",
+          "dayTranslationKey": "BB-DayName-Monday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "TUESDAY",
+          "dayTranslationKey": "BB-DayName-Tuesday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "WEDNESDAY",
+          "dayTranslationKey": "BB-DayName-Wednesday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "THURSDAY",
+          "dayTranslationKey": "BB-DayName-Thursday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "FRIDAY",
+          "dayTranslationKey": "BB-DayName-Friday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "SATURDAY",
+          "dayTranslationKey": "BB-DayName-Saturday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "SUNDAY",
+          "dayTranslationKey": "BB-DayName-Sunday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+      ]
+    }
+    displayMilitaryTime={true}
+    label="Filter Schedules"
+    onValueChange={[Function]}
+  />
+</Col>
+`;
+
+exports[`ShiftPreference Card should match snapshot - without Military display 1`] = `
+<Col
+  gridGap={20}
+>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "right": "S300",
+      }
+    }
+    width="100%"
+  >
+    <Label
+      color="neutral90"
+      font="primary"
+      fontSize="T200"
+      fontWeight="regular"
+      htmlFor="desiredHoursSelect"
+      hyphens="none"
+    >
+      Desired hours per week
+    </Label>
+    <Select
+      collapsedOptionsExpanderTitle="Selected items"
+      customSelectionOptionsLabel="Group selection options"
+      defaultOptionsLabel="Single selection options"
+      defaultValue="40"
+      disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+      getTriggerText={[Function]}
+      id="desiredHoursSelect"
+      layout="default"
+      noOptionsText="No options available"
+      onChange={[Function]}
+      options={
+        Array [
+          "10",
+          "20",
+          "30",
+          "40",
+        ]
+      }
+      placeholder="Select Desired Hours"
+      renderNativeOption={[Function]}
+      renderOption={[Function]}
+      renderSelectedValue={[Function]}
+      searchFieldAriaLabel="Start typing to filter out search results"
+      selectedOptionAltText="selected"
+      valueAccessor={[Function]}
+      width="100%"
+    />
+  </Col>
+  <DaysHoursFilter
+    defaultFilter={
+      Array [
+        Object {
+          "day": "MONDAY",
+          "dayTranslationKey": "BB-DayName-Monday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "TUESDAY",
+          "dayTranslationKey": "BB-DayName-Tuesday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "WEDNESDAY",
+          "dayTranslationKey": "BB-DayName-Wednesday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "THURSDAY",
+          "dayTranslationKey": "BB-DayName-Thursday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "FRIDAY",
+          "dayTranslationKey": "BB-DayName-Friday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "SATURDAY",
+          "dayTranslationKey": "BB-DayName-Saturday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+        Object {
+          "day": "SUNDAY",
+          "dayTranslationKey": "BB-DayName-Sunday",
+          "endTime": "23:59",
+          "isActive": true,
+          "startTime": "00:00",
+        },
+      ]
+    }
+    displayMilitaryTime={false}
+    label="Filter Schedules"
+    onValueChange={[Function]}
+  />
+</Col>
+`;
