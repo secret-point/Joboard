@@ -88,9 +88,17 @@
       "value" : "إنشاء طلب",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "ابدأ الطلب",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "سياسة بيانات المستخدم",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "إشعار خصوصية المرشح في EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "أدرك أن جميع المعلومات التي تم جمعها قد يتم نقلها وفقًا للقانون الاتحادي بشأن حماية البيانات الشخصية في حوزة الأطراف الخاصة ولوائحه وإرشاداته العامة وأحكامه الأخرى المعمول بها بشأن خصوصية البيانات، وكذلك وفقًا لإشعار الخصوصية الخاص بالشركة للموظفين و/أو المرشحين.",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "هل ترغب بالتأكيد في المتابعة بدون رقم الضمان الاجتماعي (SSN)؟",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "إذا كان لديك رقم وبطاقة الضمان الاجتماعي (SSN)، فأنت مطالَب بتقديمه. يمكن أن يؤدي عدم القيام بذلك إلى تأخير عملية التوظيف، ما قد يؤدي إلى فوات تاريخ البدء الخاص بك وفوات مناوبة العمل التي حددتها.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "أقرّ أيضًا بأن أيّ تزييف متعمد لرقم الضمان الاجتماعي الخاص بي (SSN) سوف تنظر فيه أمازون، الأمر الذي قد يؤدي إلى إلغاء عرض العمل الخاص بي، أو إنهاء عملي إذا ما كان قد تم تعييني.",

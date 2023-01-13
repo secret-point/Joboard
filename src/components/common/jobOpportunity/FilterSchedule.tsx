@@ -42,12 +42,12 @@ const FilterSchedule = ( props: FilterScheduleProps ) => {
           options={Object.values(getDesiredWorkHoursByCountryCode())}
           renderOption={option => (
             <Row width="100%">
-              <Text>{t("BB-FilterSchedule-DesiredHours-Upto-hours", "Upto {hourNumber} hours", { hourNumber: option })}</Text>
+              <Text>{t("BB-FilterSchedule-DesiredHours-Upto-hours", `Upto ${option} hours`, { hourNumber: option })}</Text>
             </Row>
           )}
           defaultValue={maxHoursPerWeek}
-          renderNativeOption={option => t("BB-FilterSchedule-DesiredHours-Upto-hours", "Upto {hourNumber} hours", { hourNumber: option })}
-          renderSelectedValue={option => t("BB-FilterSchedule-DesiredHours-Upto-hours", "Upto {hourNumber} hours", { hourNumber: option })}
+          renderNativeOption={option => t("BB-FilterSchedule-DesiredHours-Upto-hours", `Upto ${option} hours`, { hourNumber: option })}
+          renderSelectedValue={option => t("BB-FilterSchedule-DesiredHours-Upto-hours", `Upto ${option} hours`, { hourNumber: option })}
           valueAccessor={option => option}
           placeholder={t("BB-FilterSchedule-desired-hour-select-place-holder", "Select Desired Hours")}
         />

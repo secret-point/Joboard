@@ -92,6 +92,10 @@
       "value" : "Zásady ochrany uživatelských údajů",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Oznámení o ochraně osobních údajů kandidátů EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
+    },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Jsem si vědom toho, že veškeré získané informace mohou být převáděny v souladu s Federálním zákonem o ochraně osobních údajů v držení soukromých stran a jeho předpisy, směrnicemi a dalšími platnými ustanovení o ochraně osobních údajů, jakož i ve smyslu Oznámení o ochraně osobních údajů společnosti pro zaměstnance a/nebo uchazeče.",
       "note" : "Text for the flyout MX user data policy body text"
@@ -775,10 +779,6 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Pokud máte SSN, musíte ho uvést. Pokud tak neučiníte, může dojít ke zpoždění náborového procesu, což může vést ke zmeškání data nástupu a ztrátě vybrané směny.",
       "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Uvedením, že nemám SSN, beru na vědomí, že dokud nezískám SSN, nebudu mít nárok na kartu Wisely Pay jako prostředek pro příjem mzdy a budu moci dostávat mzdu pouze prostřednictvím přímého vkladu nebo fyzických šeků. Pokračováním potvrzuji, že nemám SSN. Beru na vědomí, že v souladu se zákonem společnost Amazon provede následnou prověrku, pokud během přijímacího procesu nebo v průběhu zaměstnání změním nebo aktualizuji své SSN.",
-      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Rovněž beru na vědomí, že jakékoli úmyslné uvedení nesprávného údaje o mém SSN bude společností Amazon zváženo a může vést k odvolání nabídky zaměstnání nebo, pokud budu přijat/a, k ukončení pracovního poměru.",
@@ -2447,6 +2447,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Zaškrtněte prosím jedno z níže uvedených políček",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Dokumenty týkající se pracovního povolení",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Kontrola pracovního povolení ve Spojeném království",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Aby bylo možné začít pracovat, Amazon musí zkontrolovat původní doklady prokazující Vaše právo pracovat ve Spojeném království. Příklady dokumentů týkajících se pracovního povolení zahrnují, ale nejsou omezeny na",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Britský pas",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Karta trvalého pobytu",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Razítka neomezeného povolení k pobytu",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometrické povolení k pobytu",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Další informace a podrobnosti o všech přijatelných dokumentech týkajícího se pracovního povolení najdete v našem <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>průvodci povolením práce zaměstnanců ve Spojeném království</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Je Vám 18 let nebo více.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Jste jediným žadatelem a budete osobně provádět každý krok, pokud od společnosti Amazon neobdržíte pomoc s dokončením této žádosti.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Máte",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "dokumenty týkající se pracovního povolení",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Jste ochotni absolvovat lékařský test před nástupem do zaměstnání, je-li to relevantní.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Souhlasíte s ověřením údajů před nástupem do zaměstnání.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

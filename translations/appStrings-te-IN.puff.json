@@ -88,9 +88,17 @@
       "value" : "అప్లికేషన్ సృష్టించండి",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "అప్లికేషన్ ప్రారంభించండి",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "వినియోగదారు డేటా విధానం",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK అభ్యర్థి గోప్యతా నోటీసు",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "సేకరించబడ్డ మొత్తం సమాచారం కూడా ప్రైవేట్ పార్టీల ఆధీనంలో వ్యక్తిగత డేటా యొక్క సంరక్షణపై ఫెడరల్ చట్టం మరియు డేటా గోప్యతపై దాని నిబంధనలు, మార్గదర్శకాలు మరియు ఇతర వర్తించే నిబంధనలకు అనుగుణంగా అదేవిధంగా ఉద్యోగులు మరియు/లేదా అభ్యర్థుల కొరకు కంపెనీ యొక్క గోప్యతా నోటీస్ పరంగా బదిలీ చేయబడుతుందని నాకు తెలుసు.",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "మీరు ఖచ్చితంగా సోషల్ సెక్యూరిటీ నంబర్ (SSN) లేకుండానే కొనసాగించాలనుకుంటున్నారా?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "మీరు SSNని కలిగి ఉంటే, దాన్ని మీరు అందించాలి. అలా చేయడంలో విఫలమైతే నియామక ప్రక్రియలో జాప్యం జరగవచ్చు, దీని వలన మీ ప్రారంభ తేదీని కోల్పోవచ్చు మరియు మీరు ఎంచుకున్న షిఫ్ట్‌ను కోల్పోవచ్చు.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "నా SSN గురించి ఏదైనా ఉద్దేశపూర్వకంగా తప్పుగా సూచించడం Amazon ద్వారా పరిగణించబడుతుందని మరియు నా ఉపాధి ఆఫర్‌ను ఉపసంహరించుకోవచ్చు లేదా నన్ను నియమించినట్లయితే, నా ఉద్యోగాన్ని రద్దు చేయవచ్చు అని నేను అంగీకరిస్తున్నాను.",

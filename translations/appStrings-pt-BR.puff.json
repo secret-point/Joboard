@@ -88,9 +88,17 @@
       "value" : "Criar candidatura",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Iniciar inscrição",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de dados do usuário",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Notificação de privacidade para candidatos de EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Estou ciente de que todas as informações coletadas podem ser transferidas de acordo com a Lei federal sobre a Proteção de dados pessoais na posse de partes privadas e seus regulamentos, diretrizes e outras disposições aplicáveis sobre privacidade de dados, bem como nos termos da Notificação de privacidade da empresa para funcionários e/ou candidatos.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Nossa cultura inclusiva capacita os Amazonians a oferecerem os melhores resultados a nossos clientes. Se você tiver uma deficiência e precisar de acomodação durante o processo de inscrição e contratação, entre em contato com a Equipe de acomodação de candidatos inscritos (ACAT) pelo telefone 888-435-9287, de segunda a sexta, das 6h às 16h, horário do Pacífico. Para obter mais informações, acesse <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nossa cultura inclusiva capacita os Amazonians a oferecerem os melhores resultados a nossos clientes. Se você tiver uma deficiência e precisar de uma adaptação durante o processo de inscrição e contratação, incluindo suporte para a entrevista ou processo de integração, entre em contato com a Equipe de Adaptação de Inscrição de Candidatos (ACAT), de segunda a sexta-feira, das 7h GMT às 16h GMT. Se estiver ligando diretamente do Reino Unido, ligue para +44 800 086 9884. Se estiver ligando da Irlanda, ligue para +353 1800 851 489. Você também pode entrar em contato conosco se precisar de uma adaptação em sua nova função e quiser adiantar uma solicitação antes do seu primeiro dia de trabalho.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver andamento",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Tem certeza de que gostaria de continuar sem um Número de Seguro Social (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Se você tiver um SSN, será necessário informá-lo. Se não o fizer, pode causar atrasos no processo de contratação, o que pode levar à perda da data de início e à perda do turno selecionado.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Também reconheço que qualquer declaração falsa intencional do meu SSN será considerada pela Amazon e pode levar à revogação da minha oferta de emprego ou, se eu for contratado, à rescisão do meu contrato de trabalho.",

@@ -88,9 +88,17 @@
       "value" : "Sollicitatie aanmaken",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Sollicitatie starten",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Beleid inzake gebruikersgegevens",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Privacyverklaring voor kandidaten in de EU en het VK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Ik ben me ervan bewust dat alle verzamelde informatie kan worden overgedragen op grond van de federale wet inzake de bescherming van persoonsgegevens in het bezit van particuliere partijen en de bijbehorende voorschriften, richtlijnen en andere toepasselijke bepalingen inzake gegevensprivacy, evenals in termen van de privacyverklaring van het bedrijf voor werknemers en/of kandidaten.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Onze inclusieve cultuur stelt Amazonians in staat om de beste resultaten te leveren voor onze klanten. Als je een beperking hebt en een accommodatie nodig hebt tijdens het sollicitatie- en wervingsproces, neem dan contact op met het Applicant-Candidate Accommodation Team (ACAT) op 888-435-9287, van maandag tot en met vrijdag van 06.00 tot 16.00 uur Pacific Time. Ga voor meer informatie naar <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Onze inclusieve cultuur stelt Amazonians in staat om de beste resultaten te leveren voor onze klanten. Als je een beperking hebt en een aanpassing nodig hebt tijdens het sollicitatie- en wervingsproces, inclusief ondersteuning bij het sollicitatiegesprek of het inwerkproces, neem dan contact op met het team voor de huisvesting van sollicitanten en kandidaten (ACAT), van maandag tot en met vrijdag van 7.00 uur GMT tot 16.00 uur GMT. Als je rechtstreeks vanuit het Verenigd Koninkrijk belt, bel dan +44 800 086 9884. Als je vanuit Ierland belt, bel dan +353 1800 851 489. Je kunt ook contact met ons opnemen als je misschien een aanpassing nodig hebt in je nieuwe functie en als je een aanvraag wilt indienen voordat je aan dag 1 begint.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Voortgang bekijken",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Weet je zeker dat je verder wilt gaan zonder een Social Security Number (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Als je een SSN hebt, moet je dat opgeven. Doe je dat niet, dan kan dat leiden tot vertragingen in het wervingsproces, wat kan leiden tot het missen van je startdatum en het verliezen van je geselecteerde dienst.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ik erken ook dat elke opzettelijke verkeerde voorstelling van mijn SSN door Amazon in overweging zal worden genomen en kan leiden tot intrekking van mijn aanbod van werk of, als ik word aangenomen, beëindiging van mijn dienstverband.",
@@ -2439,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Vink een van de onderstaande vakjes aan",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documentatie over Recht op Werk",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Controle ‘Recht op werk’ VK",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Om in dienst te kunnen treden, moet Amazon je originele document (en) controleren waaruit blijkt dat je recht hebt om in het VK te werken. Voorbeelden van Recht op Werkdocumenten omvatten, maar zijn niet beperkt tot",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Brits paspoort",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Permanente verblijfskaart",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Leave to Remain-stempels voor onbepaalde tijd",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometrische verblijfsvergunning",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Voor meer informatie en informatie over alle aanvaardbare documenten over het recht om te werken, zie onze<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> Britse werkautorisatiegids voor werknemers</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Je bent 18 jaar of ouder.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Je bent de enige sollicitant en moet elke stap persoonlijk voltooien, tenzij je hulp van Amazon krijgt om deze aanvraag te voltooien.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Je hebt",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "de Recht op Werkdocumentatie",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Je bent bereid om een medische test vóór indiensttreding af te leggen, indien van toepassing.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Je stemt in met een antecedentenonderzoek voorafgaand aan indiensttreding.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

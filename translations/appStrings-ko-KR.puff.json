@@ -88,9 +88,17 @@
       "value" : "지원서 생성",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "지원 시작",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "사용자 데이터 정책",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK 지원자 개인정보보호방침",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "본인은 수집된 모든 정보가 개인 소유의 개인 데이터 보호에 관한 연방법 및 해당 규정, 데이터 개인정보 보호에 관한 지침 및 기타 적용 가능한 조항, 그리고 직원 및/또는 입사 후보자에 대한 회사의 개인정보보호방침에 따라 전송될 수 있음을 알고 있습니다.",

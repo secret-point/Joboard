@@ -772,6 +772,10 @@
       "value" : "您確定要在沒有社會安全號碼 (SSN) 的情況下繼續嗎？",
       "note" : "Title for the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "如果您有 SSN，則需提供該資訊。如未提供，可能會造成聘僱流程出現延遲，進而導致您錯過開工日並失去所選的工作班次。",
+      "note" : "Warning banner in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "我同時承認，Amazon 會將我對 SSN 的任何故意虛假陳述納入考量，這可能導致我的工作邀請被撤銷，如果我已被錄用，我將被解雇。",
       "note" : "Content in the no SSN modal"

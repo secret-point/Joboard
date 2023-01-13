@@ -88,9 +88,17 @@
       "value" : "Criar candidatura",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Iniciar a candidatura",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de dados do utilizador",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Aviso de Privacidade dos Candidatos da UE e do Reino Unido",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Estou ciente de que todas as informações recolhidas podem ser transferidas nos termos da Lei Federal de Proteção de Dados Pessoais na Posse de Privados e respetivos regulamentos, diretrizes e outras disposições aplicáveis em matéria de privacidade de dados, bem como nos termos do Aviso de Privacidade da Empresa para Colaboradores e/ou Candidatos.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "A nossa cultura inclusiva incentiva todos os Amazonianos a conseguirem os melhores resultados para os nossos clientes. Caso tenha alguma deficiência e precise de alojamento durante o processo de candidatura e contratação, contacte a equipa de alojamento para participantes e candidatos (ACAT) através do número 888-435-9287, de segunda a sexta das 6h às 16h, hora do Pacífico. Para obter mais informações, aceda a <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "A nossa cultura inclusiva incentiva todos os Amazonianos a conseguirem os melhores resultados para os nossos clientes. Caso tenha alguma incapacidade e necessite de adaptação durante o processo de candidatura e de contratação, incluindo apoio para a entrevista ou o processo de integração, contacte a equipa de adaptação para candidatos (ACAT), de segunda a sexta-feira das 7h00 GMT às 16h00 GMT. Se telefonar diretamente do Reino Unido, ligue para+44 800 086 9884. Se telefonar da Irlanda, ligue para +353 1800 851 489. Também poderá contactar-nos caso precise de uma adaptação para a sua nova função e se pretender iniciar um pedido antes do seu primeiro dia de trabalho.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver progresso",
@@ -771,6 +783,14 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Tem a certeza de que pretende de continuar sem um número de segurança social (NISS)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Se tiver um NISS, é obrigatório fornecê-lo. Se não o fizer, poderão ocorrer atrasos no processo de contratação, o que poderá levar ao incumprimento da sua data de início e à perda do turno selecionado.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Ao indicar que não tenho um NISS, reconheço que não serei elegível para o cartão de pagamento Wisely, como forma de receber o meu pagamento, até obter um NISS, e que apenas poderei receber o pagamento através de depósito direto ou cheques físicos. Também compreendo que, conforme permitido por lei, a Amazon irá realizar uma verificação de antecedentes de seguimento sobre mim, se eu alterar ou atualizar o meu NISS, durante o processo de integração ou durante o meu período de emprego.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Também reconheço que qualquer deturpação intencional do meu NISS será tida em consideração pela Amazon e pode levar à revogação da minha oferta de emprego ou, no caso de ter sido contratado, à rescisão do meu emprego.",

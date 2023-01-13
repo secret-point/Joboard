@@ -776,10 +776,6 @@
       "value" : "Om du har ett SSN måste du ange det. Att inte göra det kan det orsaka förseningar i anställningsprocessen, vilket kan leda till att du missar ditt startdatum och förlorar ditt valda skift.",
       "note" : "Warning banner in the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Genom att ange att jag inte har ett SSN erkänner jag att jag inte kommer att vara berättigad till Wisely Pay-kortet som ett sätt att ta emot min lön förrän jag får ett SSN, och kommer endast att kunna ta emot betalning via direktinsättning eller fysiska checkar. Genom att fortsätta bekräftar jag att jag inte har ett SSN. Jag förstår att Amazon, som tillåtet enligt lag, kommer att genomföra en uppföljande bakgrundskontroll av mig om jag ändrar eller uppdaterar mitt SSN under introduktionsprocessen eller under min anställning.",
-      "note" : "Content in the no SSN modal"
-    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Jag godkänner också att all avsiktlig, felaktig framställning av mitt SSN kommer att tas i beaktande av Amazon och kan leda till återkallande av mitt anställningserbjudande eller, om jag är anställd, uppsägning av min anställning.",
       "note" : "Content in the no SSN modal"

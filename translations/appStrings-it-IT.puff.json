@@ -88,9 +88,17 @@
       "value" : "Crea candidatura",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Avvia candidatura",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Informativa sui dati degli utenti",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Informativa sulla privacy dei candidati di UE/Regno Unito",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Sono consapevole che tutte le informazioni raccolte possono essere trasferite ai sensi della legge federale sulla protezione dei dati personali in possesso di parti private e dei suoi regolamenti, linee guida e altre disposizioni applicabili sulla privacy dei dati, nonché secondo quanto disposto dall'Informativa sulla privacy della Società per i dipendenti e/o candidati.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "La nostra cultura inclusiva consente agli Amazonian di fornire ai nostri clienti i risultati migliori. Se hai una disabilità e hai bisogno di un trattamento particolare durante il processo di candidatura e assunzione, contatta il team trattamenti speciali candidati (ACAT) al numero 888-435-9287, dal lunedì al venerdì dalle 6:00 alle 16:00, ora del Pacifico. Per ulteriori informazioni, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "La nostra cultura inclusiva consente a coloro che lavorano in Amazon di fornire ai nostri clienti i risultati migliori. Se hai una disabilità e hai bisogno di un adeguamento durante il processo di candidatura e assunzione, incluso il supporto per il colloquio o il processo di onboarding, contatta il Richiedent-Candidate Accommodation Team (ACAT), dal lunedì al venerdì, dalle 7:00 GMT alle 16:00 GMT. Se chiami direttamente dal Regno Unito, componi il numero +44 800 086 9884. Se chiami dall'Irlanda, componi il numero +353 1800 851 489. Puoi anche contattarci se hai bisogno di un adeguamento nel tuo nuovo ruolo e desideri avviare una richiesta prima di iniziare il tuo primo giorno.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Visualizza avanzamento",

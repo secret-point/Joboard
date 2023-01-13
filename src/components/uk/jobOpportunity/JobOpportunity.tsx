@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
-import { goToCandidateDashboard, handleApplyScheduleFilters, handleResetScheduleFilters } from "../../../utils/helper";
+import {
+  goToCandidateDashboard,
+  handleApplyScheduleFilters,
+  handleResetScheduleFilters,
+  routeToAppPageWithPath
+} from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import Image from "../../common/Image";
@@ -11,11 +16,11 @@ import {
   RenderFlyoutFunctionParams,
   WithFlyout
 } from "@amzn/stencil-react-components/flyout";
-import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { Button, ButtonSize, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { IconArrowLeft, IconHourGlass, IconSize, IconSort } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
-import { Text } from "@amzn/stencil-react-components/text";
+import { H5, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -27,6 +32,8 @@ import SortSchedule from "../../common/jobOpportunity/SortSchedule";
 import StepHeader from "../../common/StepHeader";
 import FilterScheduleUK from "./FilterScheduleUK";
 import ShiftPreferenceCard from "../../common/jobOpportunity/ShiftPreferenceCard";
+import InactivityModal from "../../common/InactivityModal";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -217,6 +224,23 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
           <ShiftPreferenceCard />
         </Col>
       </Col>
+      <InactivityModal millisecondsToTimeout={300000}>
+        <Col
+          padding={{ top: "S400" }}
+          gridGap="S500"
+        >
+          <H5 fontWeight="bold">
+            {t("BB-JobOpportunity-inactivity-modal-title", "Don't see a shift that works for you?")}
+          </H5>
+          <Button
+            onClick={() => routeToAppPageWithPath(PAGE_ROUTES.SHIFT_PREFERENCE)}
+            variant={ButtonVariant.Primary}
+            size={ButtonSize.Small}
+          >
+            {t("BB-JobOpportunity-inactivity-button-text", "Enter shift preferences to continue")}
+          </Button>
+        </Col>
+      </InactivityModal>
     </Col>
   );
 };

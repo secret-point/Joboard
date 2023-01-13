@@ -56,7 +56,7 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
     <Col gridGap={20}>
       <Col gridGap={10} width="100%" padding={{ right: "S300" }}>
         <Text textAlign="center">
-          {t("BB-FilterSchedule-schedule-found-counter-text", "1 Schedule Found")}
+          {t("BB-FilterSchedule-schedule-found-counter-text", `${1} Schedule Found`, { scheduleCount: 1 })}
         </Text>
         <Col gridGap={8}>
           <Text>Cities</Text>
@@ -84,7 +84,7 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
           </Row>
         </Col>
         <Col gridGap={8} padding={{ top: "S300" }}>
-          <Text>Start date between</Text>
+          <Text>{t("BB-FilterScheduleUk-start-date-between-title", "Start date between")}</Text>
           <Col padding={{ top: "S200" }}>
             <PopupDatePicker
               inputProps={{ width: "100%", error: !isStartDateValid }}
@@ -93,9 +93,11 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
               onChange={updateStartDate}
               id="startDateBegin"
             />
-            {!isStartDateValid &&
-              <InputFooter error={!isStartDateValid}>Please select a valid date</InputFooter>
-            }
+            {!isStartDateValid && (
+              <InputFooter error={!isStartDateValid} id="startDateBeginErrorMessage">
+                {t("BB-FilterScheduleUk-start-date-between-error-text", "Please select a valid date")}
+              </InputFooter>
+            )}
           </Col>
           <Col padding={{ top: "S200" }}>
             <PopupDatePicker
@@ -105,9 +107,11 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
               onChange={updateEndDate}
               id="startDateEnd"
             />
-            {!isEndDateValid &&
-              <InputFooter error={!isEndDateValid}>Please select a valid date</InputFooter>
-            }
+            {!isEndDateValid && (
+              <InputFooter error={!isEndDateValid} id="startDateEndErrorMessage">
+                {t("BB-FilterScheduleUk-end-date-between-error-text", "Please select a valid date")}
+              </InputFooter>
+            )}
           </Col>
         </Col>
       </Col>

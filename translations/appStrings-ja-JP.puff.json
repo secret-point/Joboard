@@ -88,9 +88,17 @@
       "value" : "アプリケーションを作成",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "アプリケーションを起動",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "ユーザーデータポリシー",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK 候補者プライバシー規約",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "収集されたすべての情報は、私的当事者が所有する個人データの保護に関する連邦法、データプライバシーに関する規制、ガイドライン、その他の該当する規定、および会社の従業員や、または候補者向けプライバシー通知の観点から転送される可能性があることを認識しています。",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "社会保障番号 (SSN) なしで続行してもよろしいですか?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "SSNをお持ちの場合は、SSNを提供する必要があります。そうしないと、採用プロセスが遅れ、開始日を逃したり、選択したシフトを失う可能性があります。",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "また、SSNの意図的な虚偽の表示は、Amazonによって検討され、私の求人の取り消し、または採用された場合は雇用終了につながる可能性があることを認めます。",
@@ -2439,6 +2451,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "以下のボックスの1つにチェックを入れてください",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "就労権に関する書類",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK就労権確認書",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "雇用を開始するために、Amazonは英国で働く権利を証明する原本を確認する必要があります。就労権に関する書類の例には以下が含まれますが、これらに限定されません",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "英国パスポート",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "永住カード",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "無期限の残留許可印",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "バイオメトリック在留許可",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "受理可能な就労権書類についての情報および詳細については、<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK従業員就労許可ガイド</a>をご覧ください",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "あなたは18歳以上です。",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "申請者はお客様単独であり、このアプリケーションを完了するためにAmazonから何らかの支援を受けない限り、各ステップを個人で完了する必要があります。",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "以下が必要です: ",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "就労権に関する書類",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "該当する場合は、雇用前の健康診断を受けるつもりです。",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "雇用前の身元調査に同意します。",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

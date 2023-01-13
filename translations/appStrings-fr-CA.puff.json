@@ -88,9 +88,17 @@
       "value" : "Créer une demande",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Commencer la demande",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Politique relative aux données des utilisateurs",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Déclaration de confidentialité des candidats EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Je suis conscient que tous les informations recueillies peuvent être transférées conformément à la Loi fédérale sur la protection des données personnelles en la possession de parties privées et à ses règlements, lignes directrices et autres dispositions applicables en matière de confidentialité des données, ainsi qu'aux termes de la Déclaration de confidentialité de la Société pour les employés et/ou les candidats.",

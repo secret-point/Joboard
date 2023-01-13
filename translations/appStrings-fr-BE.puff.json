@@ -88,9 +88,17 @@
       "value" : "Créer une candidature",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Démarrer l'application",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Politique relative aux données utilisateur",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Déclaration de confidentialité relative aux candidats de l'Union européenne/Royaume-Uni",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Je suis conscient que toutes les informations collectées peuvent être transférées conformément à la loi fédérale sur la protection des données personnelles détenues par des parties privées et à ses règlements, directives et autres dispositions applicables en matière de confidentialité des données, ainsi qu'en vertu des conditions de la déclaration de confidentialité de la société pour les employés et/ou candidats.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "La culture inclusive de l’entreprise permet aux Amazoniens de servir au mieux les clients. Si vous souffrez d'un handicap et avez besoin d'un aménagement particulier pendant le processus de candidature et d'embauche, contactez l'équipe chargée des mesures d'adaptation pour les candidats (ACAT) au 888-435-9287, du lundi au vendredi, de 6 heures à 16 heures, heure du Pacifique. Pour plus d'informations, rendez-vous sur <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Notre culture inclusive permet aux Amazoniens de servir au mieux nos clients. Si vous souffrez d’un handicap et avez besoin d'un ajustement pendant le processus de candidature et d'embauche, y compris si vous avez besoin d’aide pour l'entretien ou le processus d'intégration, contactez l'équipe chargée des adaptations pour les candidats (ACAT), disponible du lundi au vendredi de 7 h 00 à 16 h 00 GMT. Si vous appelez directement depuis le Royaume-Uni, composez le +44 800 086 9884. Si vous appelez depuis l'Irlande, composez le +353 1800 851 489. Vous pouvez également nous contacter si vous avez besoin d'un ajustement pour votre nouveau poste et souhaitez faire cette demande avant votre premier jour.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Afficher la progression",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Êtes-vous sûr(e) de vouloir continuer sans numéro de sécurité sociale (SSN) ?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Si vous avez un numéro de sécurité sociale (SSN), vous devez le fournir. Si vous ne le fournissez pas, cela peut entraîner des retards dans le processus de recrutement, ce qui pourrait vous faire rater votre date de prise de poste ou vous empêcher de respecter les horaires de travail que vous avez sélectionnés.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon numéro de sécurité sociale (SSN) sera prise en compte par Amazon et pourra entraîner la révocation de mon offre d'emploi ou, si je suis recruté(e), la résiliation de mon contrat de travail.",

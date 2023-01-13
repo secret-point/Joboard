@@ -88,9 +88,17 @@
       "value" : "আবেদন তৈরি করুন",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "আবেদন শুরু করুন",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "ব্যবহারকারীর তথ্য নীতিমালা",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK প্রার্থীর গোপনীয়তা বিজ্ঞপ্তি",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "আমি জানি যে সমস্ত সংগ্রহকৃত তথ্য ব্যক্তিগত পক্ষের সম্পত্তি এবং তার প্রবিধান, নির্দেশিকা এবং তথ্যের গোপনীয়তার উপর অন্যান্য প্রযোজ্য বিধান, ব্যক্তিগত তথ্য সুরক্ষা ফেডারেল আইন অনুযায়ী স্থানান্তর করা যেতে পারে, এর পাশাপাশি কর্মচারীদের এবং/অথবা প্রার্থীদের জন্য কোম্পানির গোপনীয়তা বিজ্ঞপ্তির উপর ভিত্তি করে।",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "আমাদের অভ্যন্তরীণ সংস্কৃতি Amazonian-দের আমাদের গ্রাহকদের জন্য সেরা ফলাফল প্রদান করতে ক্ষমতা প্রদান করে। আপনার যদি অক্ষমতা থাকে এবং আবেদন ও নিয়োগ প্রক্রিয়া চলাকালীন কোনো সুবিধার প্রয়োজন হয়, অনুগ্রহ করে 888-435-9287 নম্বরে আবেদনকারী-প্রার্থী সুবিধা দলের (ACAT) সাথে যোগাযোগ করুন, সোমবার থেকে শুক্রবার সকাল 6 AM থেকে 4 PM প্যাসিফিক সময়। আরও তথ্যের জন্য, অনুগ্রহ করে <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>-এ ভিজিট করুন",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "আমাদের সর্বব্যাপী সংস্কৃতি আমাদের গ্রাহকদের জন্য সেরা ফলাফল প্রদান করতে Amazonian-দের সক্ষম করে। যদি আপনার কোনো বিকলাঙ্গতা থাকে এবং ইন্টারভিউ বা অনবোর্ডিং প্রক্রিয়াকরণের জন্য সহায়তা সহ আবেদন ও নিয়োগের প্রক্রিয়াকরণের সময় একটি সামঞ্জ্যসতা প্রয়োজন হয়, তাহলে অনুগ্রহ করে অ্যাপ্লিকেন্ট-ক্যান্ডিডেট অ্যাকোমোডেশন টিম (ACAT) এর সাথে, সোমবার থেকে শুক্রবার 7:00am GMT - 4:00pm GMT-এর মধ্যে যোগাযোগ করুন। যুক্তরাজ্য থেকে সরাসরি কল করলে, অনুগ্রহ করে +44 800 086 9884 ডায়াল করুন। আয়ারল্যান্ড থেকে কল করলে, অনুগ্রহ করে +353 1800 851 489 ডায়াল করুন। এছাড়াও যদি আপনার নতুন পদে কোনো সামঞ্জ্যসতার প্রয়োজন হয় এবং আপনার দিন 1 শুরু করার আগে একটি অনুরোধ শুরু করতে চান তাহলে আপনি আমাদের সাথে যোগাযোগ করতে পারবেন।",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "অগ্রগতি দেখুন",
@@ -776,8 +788,8 @@
       "value" : "আপনার একটি SSN থাকলে, আপনাকে সেটি প্রদান করতে হবে। তা করতে ব্যর্থ হলে নিয়োগ প্রক্রিয়ায় বিলম্ব হতে পারে যার ফলে আপনার শুরুর তারিখ চলে যেতে পারে এবং আপনার নির্বাচিত শিফট হারাতে পারে।",
       "note" : "Warning banner in the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "আমার কাছে SSN নেই তা নির্দেশ করে, আমি স্বীকার করি যে আমি SSN প্রাপ্ত না হওয়া পর্যন্ত আমার বেতন গ্রহণের মাধ্যম হিসাবে Wisely Pay কার্ডের জন্য যোগ্য হবো না এবং শুধুমাত্র সরাসরি ডিপোজিট বা ফিজিক্যাল চেকের মাধ্যমে অর্থ গ্রহণ করতে পারব। চালিয়ে যাওয়ার মাধ্যমে, আমি নিশ্চিত করছি যে আমার কোনো SSN নেই। আমি বুঝতে পেরেছি যে, আইন দ্বারা অনুমোদিত হিসেবে, আমি অনবোর্ডিং প্রক্রিয়াকরণ চলাকালীন বা আমার চাকরির সময় আমার SSN পরিবর্তন বা আপডেট করলে Amazon আমার সম্পর্কে একটি ফলো-আপ ব্যাকগ্রাউন্ড চেক পরিচালনা করবে।",
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "আমার কাছে SSN নেই তা নির্দেশ করে, আমি স্বীকার করি যে আমি SSN প্রাপ্ত না হওয়া পর্যন্ত আমার বেতন গ্রহণের মাধ্যম হিসাবে Wisely Pay কার্ডের জন্য যোগ্য হবো না এবং শুধুমাত্র সরাসরি ডিপোজিট বা ফিজিক্যাল চেকের মাধ্যমে অর্থ গ্রহণ করতে পারবো। উপরন্তু, আমি বুঝতে পেরেছি যে, আইন দ্বারা অনুমোদিত হিসেবে, আমি অনবোর্ডিং প্রক্রিয়াকরণ চলাকালীন বা আমার চাকরির সময় আমার SSN পরিবর্তন বা আপডেট করলে Amazon একটি ফলো-আপ ব্যাকগ্রাউন্ড চেক পরিচালনা করবে।",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
@@ -2447,6 +2459,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "অনুগ্রহ করে নিচের বাক্সগুলির মধ্যে একটি চেক করুন",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "কাজের অধিকারের ডকুমেন্টেশন",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK কাজের অধিকার চেক",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "আপনার কর্মসংস্থান শুরু করার জন্য, Amazon-কে আপনার মূল ডকুমেন্ট(গুলি) চেক করতে হবে যা আপনার UK তে কাজ করার অধিকার প্রমাণ করবে। কাজের অধিকারের ডকুমেন্টের উদাহরণগুলিতে অন্তর্ভুক্ত রয়েছে, কিন্তু এতেই সীমাবদ্ধ নয়",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "ব্রিটিশ পাসপোর্ট",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "স্থায়ী রেসিডেন্স কার্ড",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Indefinite Leave to Remain stamps",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "বায়োমেট্রিক রেসিডেন্স পারমিট",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "আরও তথ্যের জন্য এবং সমস্ত গ্রহণযোগ্য কাজের অধিকারের ডকুমেন্টের বিবরণের জন্য, অনুগ্রহ করে আমাদের <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK কর্মচারী কাজের অনুমোদন নির্দেশিকা</a> দেখুন",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "আপনার বয়স 18 বছর বা তার উপরে।",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "আপনি একমাত্র আবেদনকারী এবং আপনি ব্যক্তিগতভাবে প্রতিটি ধাপ সম্পূর্ণ করবেন যদি না আপনি এই আবেদনটি সম্পূর্ণ করার জন্য Amazon থেকে কোনো সহায়তা পান।",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "আপনার আছে",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "কাজের অধিকারের ডকুমেন্টেশন",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "প্রযোজ্য হলে, আপনি একটি প্রাক-কর্মসংস্থান মেডিকেল পরীক্ষা সম্পূর্ণ করতে ইচ্ছুক।",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "আপনি একটি প্রাক-কর্মসংস্থান ব্যাকগ্রাউন্ড চেক করতে সম্মত হচ্ছেন।",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

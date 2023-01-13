@@ -14,10 +14,10 @@ const ShiftPreferenceCard = () => {
       gridGap={8}
     >
       <H4>
-        {"Don't see a shift that works for you?"}
+        {t("BB-ShiftPreferenceCard-title-text", "Don't see a shift that works for you?")}
       </H4>
       <Text fontSize="T200">
-        {"You can submit your shift preferences and we'll contact you when we find a shift that works for you."}
+        {t("BB-ShiftPreferenceCard-content-text", "You can submit your shift preferences and we'll contact you when we find a shift that works for you.")}
       </Text>
       <Row padding={{ top: "S400" }}>
         <Row
@@ -28,7 +28,7 @@ const ShiftPreferenceCard = () => {
           }}
         >
           <Text fontWeight="medium" fontSize="T200">
-            {t("BB-JobOpportunity-Go-To-Dashboard-Link", "Select your shift preferences")}
+            {t("BB-JobOpportunity-Go-To-shift-preference-Link", "Select your shift preferences")}
           </Text>
           <IconArrowRight size={IconSize.Medium} fontSize="T100" aria-hidden />
         </Row>

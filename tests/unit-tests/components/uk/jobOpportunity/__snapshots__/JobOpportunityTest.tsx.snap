@@ -91,5 +91,39 @@ exports[`JobOpportunity should match snapshot 1`] = `
       <ShiftPreferenceCard />
     </Col>
   </Col>
+  <InactivityModal
+    millisecondsToTimeout={300000}
+  >
+    <Col
+      gridGap="S500"
+      padding={
+        Object {
+          "top": "S400",
+        }
+      }
+    >
+      <H5
+        color="neutral90"
+        font="primary"
+        fontSize="T300"
+        fontWeight="bold"
+        hyphens="none"
+        margin={0}
+      >
+        Don't see a shift that works for you?
+      </H5>
+      <Button
+        colorScheme="default"
+        iconPosition="leading"
+        onClick={[Function]}
+        shouldUseResponsiveContent={true}
+        size="small"
+        type="button"
+        variant="primary"
+      >
+        Enter shift preferences to continue
+      </Button>
+    </Col>
+  </InactivityModal>
 </Col>
 `;

@@ -772,6 +772,10 @@
       "value" : "האם אתה בטוח שתרצה להמשיך ללא מספר ביטוח לאומי (SSN)?",
       "note" : "Title for the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "בכך שציינתי שאין לי SSN, ניתנת הסכמתי כי לא אעמוד בדרישות לכרטיס Wisely Pay כאמצעי לקבלת השכר שלי עד שאקבל SSN, וכי אוכל לקבל תשלום רק באמצעות הפקדה ישירה או צ׳ק פיזי. בנוסף, ברור לי שכפי שמותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "אני גם מכיר בכך שכל הצגה לא נכונה באופן מכוון של ה-SSN שלי זה יילקח בחשבון על ידי Amazon ויוכל להוביל לביטול הצעת העבודה שלי או, אם אני מועסק, לסיום העסקתי.",
       "note" : "Content in the no SSN modal"

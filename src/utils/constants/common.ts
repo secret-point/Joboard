@@ -1067,16 +1067,16 @@ export const shiftPreferenceWorkHour: ShiftPreferenceWorkHourConfig[] = [
 ];
 
 export const shiftPreferenceWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
-  { displayValue: "Saturday", value: "Saturday", translationKey: "BB-kondo-shift-weekend-days-Saturday" },
-  { displayValue: "Sunday", value: "Sunday", translationKey: "BB-kondo-shift-weekend-days-Sunday" }
+  { displayValue: "Saturday", value: "Saturday", translationKey: "BB-weekend-days-Saturday" },
+  { displayValue: "Sunday", value: "Sunday", translationKey: "BB-weekend-days-Sunday" }
 ];
 
 export const shiftPreferenceWeekDays: ShiftPreferenceWeekDaysConfig[] = [
-  { displayValue: "Monday", value: "Monday", translationKey: "BB-kondo-shift-week-days-Monday" },
-  { displayValue: "Tuesday", value: "Tuesday", translationKey: "BB-kondo-shift-week-days-Tuesday" },
-  { displayValue: "Wednesday", value: "Wednesday", translationKey: "BB-kondo-shift-week-days-Wednesday" },
-  { displayValue: "Thursday", value: "Thursday", translationKey: "BB-kondo-shift-week-days-Thursday" },
-  { displayValue: "Friday", value: "Friday", translationKey: "BB-kondo-shift-week-days-Friday" }
+  { displayValue: "Monday", value: "Monday", translationKey: "BB-weekend-days-Monday" },
+  { displayValue: "Tuesday", value: "Tuesday", translationKey: "BB-weekend-days-Tuesday" },
+  { displayValue: "Wednesday", value: "Wednesday", translationKey: "BB-weekend-days-Wednesday" },
+  { displayValue: "Thursday", value: "Thursday", translationKey: "BB-weekend-days-Thursday" },
+  { displayValue: "Friday", value: "Friday", translationKey: "BB-weekend-days-Friday" }
 ];
 
 export const shiftPreferenceShiftPattern: ShiftPreferenceShiftPatternConfig[] = [

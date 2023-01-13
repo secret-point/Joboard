@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShiftPreference Card should match snapshot 1`] = `
+<Col
+  gridGap={20}
+>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "right": "S300",
+      }
+    }
+    width="100%"
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+      textAlign="center"
+    >
+      1 Schedule Found
+    </Text>
+    <Col
+      gridGap={8}
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Cities
+      </Text>
+      <Row
+        gridGap={10}
+      >
+        <Row
+          alignItems="end"
+          gridGap={8}
+          key="Bolton"
+        >
+          <InputWrapper
+            error={false}
+            id="checkbox-city-Bolton"
+            labelPosition="top"
+            labelText=""
+            required={false}
+            shouldValidateNonInclusiveTerms={false}
+            warning={false}
+          >
+            <Component />
+          </InputWrapper>
+          <Label
+            color="neutral90"
+            font="primary"
+            fontSize="T200"
+            fontWeight="regular"
+            htmlFor="checkbox-city-Bolton"
+            hyphens="none"
+          >
+            Bolton
+          </Label>
+        </Row>
+        <Row
+          alignItems="end"
+          gridGap={8}
+          key="Newcastle"
+        >
+          <InputWrapper
+            error={false}
+            id="checkbox-city-Newcastle"
+            labelPosition="top"
+            labelText=""
+            required={false}
+            shouldValidateNonInclusiveTerms={false}
+            warning={false}
+          >
+            <Component />
+          </InputWrapper>
+          <Label
+            color="neutral90"
+            font="primary"
+            fontSize="T200"
+            fontWeight="regular"
+            htmlFor="checkbox-city-Newcastle"
+            hyphens="none"
+          >
+            Newcastle
+          </Label>
+        </Row>
+      </Row>
+    </Col>
+    <Col
+      gridGap={8}
+      padding={
+        Object {
+          "top": "S300",
+        }
+      }
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Start date between
+      </Text>
+      <Col
+        padding={
+          Object {
+            "top": "S200",
+          }
+        }
+      >
+        <PopupDatePicker
+          calendarButtonAltText="Calendar"
+          collapsedCloseButtonAltText="Close date picker"
+          collapsedTitleText="Select a date"
+          id="startDateBegin"
+          inputProps={
+            Object {
+              "error": false,
+              "width": "100%",
+            }
+          }
+          isDateDisabled={[Function]}
+          onChange={[Function]}
+          popoverProps={
+            Object {
+              "position": "bottom-trailing",
+            }
+          }
+          renderPopupContent={[Function]}
+        />
+      </Col>
+      <Col
+        padding={
+          Object {
+            "top": "S200",
+          }
+        }
+      >
+        <PopupDatePicker
+          calendarButtonAltText="Calendar"
+          collapsedCloseButtonAltText="Close date picker"
+          collapsedTitleText="Select a date"
+          id="startDateEnd"
+          inputProps={
+            Object {
+              "error": false,
+              "width": "100%",
+            }
+          }
+          isDateDisabled={[Function]}
+          onChange={[Function]}
+          popoverProps={
+            Object {
+              "position": "bottom-trailing",
+            }
+          }
+          renderPopupContent={[Function]}
+        />
+      </Col>
+    </Col>
+  </Col>
+  <FilterSchedule
+    displayMilitaryTime={true}
+    filters={
+      Object {
+        "daysHoursFilter": Array [
+          Object {
+            "day": "MONDAY",
+            "dayTranslationKey": "BB-DayName-Monday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "TUESDAY",
+            "dayTranslationKey": "BB-DayName-Tuesday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "WEDNESDAY",
+            "dayTranslationKey": "BB-DayName-Wednesday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "THURSDAY",
+            "dayTranslationKey": "BB-DayName-Thursday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "FRIDAY",
+            "dayTranslationKey": "BB-DayName-Friday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "SATURDAY",
+            "dayTranslationKey": "BB-DayName-Saturday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+          Object {
+            "day": "SUNDAY",
+            "dayTranslationKey": "BB-DayName-Sunday",
+            "endTime": "23:59",
+            "isActive": true,
+            "startTime": "00:00",
+          },
+        ],
+        "maxHoursPerWeek": "40",
+        "sortKey": "DEFAULT",
+      }
+    }
+  />
+</Col>
+`;

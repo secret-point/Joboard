@@ -88,6 +88,10 @@
       "value" : "创建申请",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "启动应用",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "用户数据政策",
       "note" : "Text for the flyout user data policy title text"
@@ -771,6 +775,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "您确定要在没有社会保障号（SSN）的情况下继续吗？",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "如果您有 SSN，则需要提供 SSN。否则可能会造成招聘流程延迟，从而可能导致错过开始工作的日期和失去所选的班次。",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "本人也知悉，任何亚马逊认为是故意虚报 SSN 的情况都可能会导致撤销本人的聘用，或者如果本人已受雇，则可能会终止与本人的雇佣关系。",

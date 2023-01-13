@@ -31,13 +31,17 @@ const ShiftPreference = () => {
   const updateHoursPerWeek = (value: ShiftPreferenceWorkHour) => {
     const newHoursPerWeek = hoursPerWeek || [];
 
-    newHoursPerWeek.forEach((item, index) => {
-      if (item.maximumvalue === value.maximumvalue && item.minimumValue === value.minimumValue) {
-        newHoursPerWeek.splice(index, 1);
-      } else {
-        newHoursPerWeek.push(value);
-      }
-    });
+    if (newHoursPerWeek.length > 0) {
+      newHoursPerWeek.forEach((item, index) => {
+        if (item.maximumvalue === value.maximumvalue && item.minimumValue === value.minimumValue) {
+          newHoursPerWeek.splice(index, 1);
+        } else {
+          newHoursPerWeek.push(value);
+        }
+      });
+    } else {
+      newHoursPerWeek.push(value);
+    }
 
     setHoursPerWeek(newHoursPerWeek);
   };
@@ -83,15 +87,16 @@ const ShiftPreference = () => {
       </Row>
       <Col padding={{ top: "S300" }} gridGap={8}>
         <H5>
-          Specify your job preferences
+          {t("BB-shiftPreference-title-text", "Specify your job preferences")}
         </H5>
         <Col padding={{ top: "S200" }}>
           <InputWrapper
             id="startDateEnd"
-            labelText="Select the earliest start date"
+            labelText={t("BB-ShiftPreference-start-date-label-text", "Select the earliest start date")}
             required
             error={!startDateValid}
-            footer={!startDateValid ? "Please select a start date in the future" : undefined}
+            footer={!startDateValid ?
+              t("BB-shiftPreference-start-date-error-text", "Please select a start date in the future") : undefined}
           >
             {inputProps => (
               <PopupDatePicker
@@ -105,17 +110,17 @@ const ShiftPreference = () => {
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
         <Text fontSize="T200" color={!hourPerWeekValid ? CommonColors.RED70 : "auto"}>
-          Select the number of hours that you are able to work per week *
+          {t("BB-ShiftPreference-hours-per-week-label-text", "Select the number of hours that you are able to work per week")} *
         </Text>
         <Text fontSize="T100" color={CommonColors.Neutral70}>
-          Your visa may restrict the number of hours per week that you are legally authorised to work. If this is the case, choose the options that correspond to your visa restrictions.
+          {t("BB-ShiftPreference-hours-per-week-label-text2", "Your visa may restrict the number of hours per week that you are legally authorised to work. If this is the case, choose the options that correspond to your visa restrictions.")}
         </Text>
         <Col gridGap={10} padding={{ top: "S300" }}>
           {
             shiftPreferenceWorkHour.map(workHour => (
               <InputWrapper
                 id={`shiftWorkHour-${workHour.displayValue}`}
-                labelText={workHour.displayValue}
+                labelText={t(workHour.translationKey, workHour.displayValue)}
                 labelPosition={LabelPosition.Trailing}
                 key={workHour.displayValue}
               >
@@ -132,25 +137,27 @@ const ShiftPreference = () => {
         </Col>
         {!hourPerWeekValid && (
           <InputFooter error={!hourPerWeekValid} id="hoursPerWeekErrorContainer">
-            Please select at least one option for the number of hours you are able to work per week.
+            {t("BB-ShiftPreference-hours-per-week-error-text", "Please select at least one option for the number of hours you are able to work per week.")}
           </InputFooter>
         )}
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
         <Text fontSize="T200" color={!workDaysValid ? CommonColors.RED70 : "auto"}>
-          Select all the days of the week that you are able to work *
+          {t("BB-ShiftPreference-workDays-label-text", "Select all the days of the week that you are able to work")} *
         </Text>
         <Text fontSize="T100" color={CommonColors.Neutral70}>
-          Please note, most of our shift patterns will include at least one day of the weekend and shift preferences are not guaranteed
+          {t("BB-ShiftPreference-workDays-label-text2", "Please note, most of our shift patterns will include at least one day of the weekend and shift preferences are not guaranteed.")}
         </Text>
         <Col padding={{ top: "S200" }} gridGap={10}>
-          <Text fontSize="T100" color={CommonColors.Neutral70}>WEEKENDS</Text>
+          <Text fontSize="T100" color={CommonColors.Neutral70}>
+            {t("BB-Weekends-text", "WEEKENDS")}
+          </Text>
           <Col gridGap={10}>
             {
               shiftPreferenceWeekendDays.map(day => (
                 <InputWrapper
                   id={`shiftWeekendDays-${day.displayValue}`}
-                  labelText={day.displayValue}
+                  labelText={t(day.translationKey, day.displayValue)}
                   labelPosition={LabelPosition.Trailing}
                   key={day.displayValue}
                 >
@@ -167,13 +174,15 @@ const ShiftPreference = () => {
           </Col>
         </Col>
         <Col padding={{ top: "S200" }} gridGap={10}>
-          <Text fontSize="T100" color={CommonColors.Neutral70}>WEEKDAYS</Text>
+          <Text fontSize="T100" color={CommonColors.Neutral70}>
+            {t("BB-Weekdays-text", "WEEKDAYS")}
+          </Text>
           <Col gridGap={10}>
             {
               shiftPreferenceWeekDays.map(day => (
                 <InputWrapper
                   id={`shiftWeekdays-${day.displayValue}`}
-                  labelText={day.displayValue}
+                  labelText={t(day.translationKey, day.displayValue)}
                   labelPosition={LabelPosition.Trailing}
                   key={day.displayValue}
                 >
@@ -191,20 +200,20 @@ const ShiftPreference = () => {
         </Col>
         {!workDaysValid && (
           <InputFooter error={!workDaysValid} id="worDaysErrorContainer">
-            Please select at least one day of the week that you are able to work.
+            {t("BB-ShiftPreference-wordDays-error-text", "Please select at least one day of the week that you are able to work.")}
           </InputFooter>
         )}
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
         <Text fontSize="T200" color={!shiftPatternValid ? CommonColors.RED70 : "auto"}>
-          Select the shift pattern that you are able to work *
+          {t("BB-ShiftPreference-shift-pattern-label-text", "Select the shift pattern that you are able to work")} *
         </Text>
         <Col gridGap={10}>
           {
             shiftPreferenceShiftPattern.map(shiftPattern => (
               <InputWrapper
                 id={`shiftWeekendDays-${shiftPattern.displayValue}`}
-                labelText={shiftPattern.displayValue}
+                labelText={t(shiftPattern.translationKey, shiftPattern.displayValue)}
                 labelPosition={LabelPosition.Trailing}
                 key={shiftPattern.displayValue}
               >
@@ -220,7 +229,7 @@ const ShiftPreference = () => {
           }
           {!shiftPatternValid && (
             <InputFooter error={!shiftPatternValid} id="shiftPatternErrorContainer">
-              Select at least one option.
+              {t("BB-ShiftPreference-shiftPattern-error-text", "Select at least one option.")}
             </InputFooter>
           )}
         </Col>

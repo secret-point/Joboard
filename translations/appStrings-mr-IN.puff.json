@@ -88,9 +88,17 @@
       "value" : "‍अर्ज तयार करा",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "अर्ज सुरू करा",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "वापरकर्ता डेटा धोरण",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK उमेदवार गोपनीयता नोटीस",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "मला माहीत आहे की, एकत्रित केलेली सर्व माहिती खाजगी पक्षांच्या ताब्यात असलेल्या वैयक्तिक डेटाच्या संरक्षणासंबंधी फेडरल कायद्यानुसार आणि डेटा गोपनीयतेविषयीचे त्यांचे नियम, मार्गदर्शक तत्त्वे आणि इतर लागू तरतुदी तसेच कंपनीच्या कर्मचाऱ्यांसाठी आणि/किंवा उमेदवारासाठी कंपनीच्या गोपनीयता नोटीस नुसार हस्तांतरित केली जाऊ शकते.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "आमची सर्वसमावेशक संस्कृती Amazonians ला आमच्या ग्राहकांसाठी सर्वोत्तम परिणाम देण्यासाठी सक्षम करते. तुम्हाला अपंगत्व असल्यास आणि अर्ज आणि नियुक्ती प्रक्रियेदरम्यान निवासाची आवश्यकता असल्यास, कृपया अर्जदार-उमेदवार निवास संघशी (ACAT) 888-435-9287, सोमवार ते शुक्रवार पॅसिफिक वेळेनुसार सकाळी 6 ते संध्याकाळी 4 पर्यंत संपर्क साधा. अधिक माहितीसाठी, कृपया<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a> ला भेट द्या",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "आमची सर्वसमावेशक संस्कृती Amazonians ला आमच्या ग्राहकांसाठी सर्वोत्तम परिणाम देण्यासाठी सक्षम करते. तुम्हाला अपंगत्व असल्यास आणि मुलाखतीसाठी किंवा ऑनबोर्डिंग प्रक्रियेसाठी सपोर्टसह अर्ज आणि नियुक्ती प्रक्रियेदरम्यान समायोजन आवश्यक असल्यास, कृपया अर्जदार-उमेदवार सोय संघाशी (ACAT), सोमवार ते शुक्रवार सकाळी 7:00 GMT - संध्याकाळी 4:00 GMT दरम्यान संपर्क साधा. युनायटेड किंगडममधून थेट कॉल करत असल्यास, कृपया +44 800 086 9884 डायल करा. आयर्लंडमधून कॉल करत असल्यास, कृपया +353 1800 851 489 डायल करा. तुम्‍हाला तुमच्‍या नवीन भूमिकेमध्‍ये समायोजनाची आवश्‍यकता असल्‍यास आणि तुमचा दिवस 1 सुरू करण्‍यापूर्वी विनंती सुरू करू इच्छित असल्यास तुम्‍ही आमच्याशी संपर्क साधू शकता.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "प्रगती पहा",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "तुम्हाला खात्री आहे की तुम्ही सोशल सिक्युरिटी नंबर (SSN) शिवाय पुढे जाऊ इच्छिता?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "तुमच्याकडे SSN असल्यास, तुम्हाला तो देणे आवश्यक आहे. असे करण्यात अयशस्वी झाल्यास नियुक्ती प्रक्रियेत विलंब होऊ शकतो ज्यामुळे तुमची काम सुरू करण्याची तारीख चुकू शकते आणि तुम्ही निवडलेली शिफ्ट गमावू शकता.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "मी हे देखील कबूल करतो की माझ्या SSN चे कोणतेही हेतुपुरस्सररित्या केलेले चुकीचे वर्णन Amazon द्वारे विचारात घेतले जाईल आणि त्यामुळे माझी नोकरीची ऑफर रद्द केली जाऊ शकते किंवा, मला कामावर ठेवल्यास, माझी नोकरी संपुष्टात येऊ शकते.",

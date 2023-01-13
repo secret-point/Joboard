@@ -212,7 +212,7 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/shift-preference"
+        path="/job-opportunities/shift-preference"
       >
         <ShiftPreference />
       </Route>

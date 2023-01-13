@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inactivity Modal should match snapshot 1`] = `
+<Modal
+  close={[Function]}
+  isOpen={false}
+  isScrollable={true}
+  shouldCloseOnClickOutside={true}
+>
+  <Col
+    alignItems="center"
+    backgroundColor="neutral0"
+    padding={
+      Object {
+        "bottom": "S600",
+        "left": "S600",
+        "top": "S400",
+      }
+    }
+  >
+    <Col
+      alignItems="flex-end"
+      padding={
+        Object {
+          "right": "S400",
+        }
+      }
+      width="100%"
+    >
+      <Row
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        <IconCross
+          color="#1768C9"
+          display="block"
+          size={32}
+          title="Close Modal"
+        />
+      </Row>
+    </Col>
+    <Col
+      padding={
+        Object {
+          "right": "S600",
+        }
+      }
+      width="100%"
+    >
+      <div>
+        Modal content
+      </div>
+    </Col>
+  </Col>
+</Modal>
+`;

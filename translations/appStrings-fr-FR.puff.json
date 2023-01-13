@@ -88,9 +88,17 @@
       "value" : "Créer une candidature",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Démarrer l'application",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Politique relative aux données utilisateur",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Déclaration de confidentialité relative aux candidats de l'Union européenne/Royaume-Uni",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Je suis conscient que toutes les informations collectées peuvent être transférées conformément à la loi fédérale sur la protection des données personnelles détenues par des parties privées et à ses règlements, directives et autres dispositions applicables en matière de confidentialité des données, ainsi qu'en vertu des conditions de la déclaration de confidentialité de la société pour les employés et/ou candidats.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Notre culture inclusive permet aux Amazoniens de servir au mieux nos clients. Si vous souffrez d'un handicap et avez besoin d'un aménagement particulier pendant le processus de candidature et d'embauche, contactez l'équipe chargée des mesures d'adaptation pour les candidats (ACAT) au 888-435-9287, du lundi au vendredi, de 6 heures à 16 heures, heure du Pacifique. Pour plus d'informations, rendez-vous sur <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Notre culture inclusive permet aux Amazoniens de servir au mieux nos clients. Si vous souffrez d’un handicap et avez besoin d'un ajustement pendant le processus de candidature et d'embauche, y compris si vous avez besoin d’aide pour l'entretien ou le processus d'intégration, contactez l'équipe chargée des adaptations pour les candidats (ACAT), disponible du lundi au vendredi de 7 h 00 à 16 h 00 GMT. Si vous appelez directement depuis le Royaume-Uni, composez le +44 800 086 9884. Si vous appelez depuis l'Irlande, composez le +353 1800 851 489. Vous pouvez également nous contacter si vous avez besoin d'un ajustement pour votre nouveau poste et souhaitez faire cette demande avant votre premier jour.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Afficher la progression",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Êtes-vous sûr(e) de vouloir continuer sans numéro de sécurité sociale (SSN) ?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Si vous avez un numéro de sécurité sociale (SSN), vous devez le fournir. Si vous ne le fournissez pas, cela peut entraîner des retards dans le processus de recrutement, ce qui pourrait vous faire rater votre date de prise de poste ou vous empêcher de respecter les horaires de travail que vous avez sélectionnés.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon numéro de sécurité sociale (SSN) sera prise en compte par Amazon et pourra entraîner la révocation de mon offre d'emploi ou, si je suis recruté(e), la résiliation de mon contrat de travail.",
@@ -2439,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Cochez l'une des cases ci-dessous",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documents donnant le droit de travailler",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Vérification du droit de travailler au Royaume-Uni",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Afin que vous puissiez commencer à travailler, Amazon doit vérifier votre ou vos documents originaux prouvant que vous avez le droit de travailler au Royaume-Uni. Exemples de documents vous autorisant à travailler (cette liste n’est pas exhaustive) :",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Passeport britannique",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Carte de résidence permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Tampons accordant un droit de séjour indéfini",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Permis de séjour biométrique",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Pour plus d'informations et de détails concernant tous les documents acceptés vous accordant le droit de travailler, consultez notre <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guide d’autorisation au travail pour le Royaume-Uni</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Vous avez au moins 18 ans.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Vous êtes candidat unique, vous devez effectuer chaque étape vous-même à moins que vous ne receviez une aide de la part d'Amazon pour envoyer cette candidature.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Vous avez",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "les documents donnant le droit de travailler",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Le cas échéant, vous acceptez de passer un examen médical préalable au recrutement.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Vous consentez à une vérification de vos antécédents préalable à l'embauche.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

@@ -88,9 +88,17 @@
       "value" : "Utwórz wniosek",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Rozpocznij składanie wniosku",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Zasady dotyczące danych użytkownika",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Informacja o prywatności dla kandydatów z UE/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Mam świadomość, że wszystkie pozyskane informacje mogą być przekazywane zgodnie z Federalną ustawą o ochronie danych osobowych będących w posiadaniu podmiotów prywatnych oraz jej postanowieniami uzupełniającymi, wytycznymi i innymi obowiązującymi zapisami dotyczącymi ochrony danych, a także w zakresie Informacji Spółki o prywatności w odniesieniu do Pracowników i/lub Kandydatów.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Nasza kultura inkluzji społecznej umożliwia pracownikom Amazon osiąganie najlepszych wyników dla naszych klientów. Jeśli jesteś osobą niepełnosprawną i potrzebujesz dostosowania środowiska w trakcie składania wniosku i procesu rekrutacji, skontaktuj się z zespołem ds. dostosowania środowiska dla kandydatów (ACAT) pod numerem 888-435-9287, od poniedziałku do piątku w godzinach od 6:00 do 16:00 czasu pacyficznego. Aby uzyskać więcej informacji, odwiedź witrynę <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nasza integracyjna kultura upoważnia pracowników Amazon do dostarczania najlepszych wyników dla naszych klientów. Jeśli jesteś osobą niepełnosprawną i potrzebujesz dostosowań podczas procesu składania wniosku i zatrudniania, w tym pomocy podczas rozmowy kwalifikacyjnej lub procesu wdrażania, skontaktuj się z Zespołem ds. dostosowań dla kandydata (ACAT), od poniedziałku do piątku w godzinach 7:00 GMT - 16:00 GMT. Jeśli dzwonisz bezpośrednio z Wielkiej Brytanii, wybierz numer +44 800 086 9884. Jeśli dzwonisz z Irlandii, wybierz numer +353 1800 851 489. Możesz również skontaktować się z nami, jeśli możesz potrzebować dostosowania w swojej nowej roli i chciałbyś zainicjować prośbę przed rozpoczęciem swojego pierwszego dnia.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Zobacz postęp",
@@ -776,8 +788,8 @@
       "value" : "Jeśli posiadasz SSN, musisz go podać. Niezastosowanie się do tego może spowodować opóźnienia w procesie rekrutacji, co może prowadzić do anulowania daty rozpoczęcia i utraty wybranej zmiany.",
       "note" : "Warning banner in the no SSN modal"
     },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Informując, że nie posiadam SSN, potwierdzam, że nie będę kwalifikować się do karty Wisely Pay jako sposobu otrzymania mojej wypłaty, dopóki nie zdobędę SSN i będę mógł/mogła otrzymywać wypłatę tylko za pośrednictwem bezpośredniej wpłaty na konto lub czeków fizycznych. Kontynuując, potwierdzam, że nie posiadam SSN. Rozumiem, że zgodnie z prawem firma Amazon przeprowadzi dalszą weryfikację mojej przeszłości, jeśli zmienię lub zaktualizuję mój SSN podczas procesu zatrudniania lub w trakcie mojego zatrudnienia.",
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Informując, że nie posiadam SSN, potwierdzam, że nie będę kwalifikować się do karty Wisely Pay jako sposobu otrzymania mojej wypłaty, dopóki nie zdobędę SSN i będę mógł/mogła otrzymywać wypłatę tylko za pośrednictwem bezpośredniej wpłaty na konto lub czeków fizycznych. Ponadto, rozumiem, że zgodnie z prawem, Amazon przeprowadzi dalsze badanie mojej osoby, jeśli zmienię lub zaktualizuję swój SSN podczas procesu przyjmowania do pracy lub w trakcie zatrudnienia.",
       "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
@@ -2447,6 +2459,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Zaznacz jedno z poniższych pól",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Dokumentacja prawa do pracy",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Kontrola prawa do pracy w Wielkiej Brytanii",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Aby rozpocząć pracę, Amazon musi sprawdzić oryginalne dokumenty potwierdzające Twoje prawo do pracy w Wielkiej Brytanii. Przykłady dokumentów związanych z prawem do pracy obejmują między innymi",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Brytyjski paszport",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Karta stałego pobytu",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Stemple z pozwoleniem na pobyt na czas nieokreślony",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometryczne zezwolenie na pobyt",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Aby uzyskać więcej informacji i szczegółów na temat wszystkich dopuszczalnych dokumentów dotyczących prawa do pracy, zapoznaj się z naszym <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Przewodnikiem dotyczącym autoryzacji pracy pracownika w Wielkiej Brytanii</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Masz 18 lat lub więcej.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Jesteś jedynym wnioskodawcą i osobiście wypełniasz każdy krok, chyba że otrzymasz pomoc od Amazon w wypełnieniu tego wniosku.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Masz",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "dokumentacja prawa do pracy",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Chcesz ukończyć test medyczny przed zatrudnieniem, jeśli dotyczy.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Wyrażasz zgodę na sprawdzenie przeszłości przed zatrudnieniem.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

@@ -88,9 +88,17 @@
       "value" : "Uygulama Oluştur",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Uygulamayı başlat.",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Kullanıcı Veri Politikası",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "AB/Birleşik Krallık Aday Gizlilik Bildirimi",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Toplanan tüm bilgilerin, hem Özel Tarafların Mülkiyetindeki Kişisel Verilerin Korunması Hakkında Federal Kanun ve onun düzenlemeleri, yönergeleri ve veri gizliliğine ilişkin diğer geçerli hükümlerine uygun olarak hem de Şirketin Çalışanlar ve/veya Adaylar için Gizlilik Bildirimi doğrultusunda aktarılabileceğinin farkındayım.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Kapsayıcı kültürümüz, Amazonian’lara müşterilerimiz için en iyi sonuçları sunma konusunda yetki verir. Bir engeliniz varsa ve başvuru ile işe alma sürecinde yardım talep ediyorsanız lütfen 888-435-9287 telefon numarasını arayarak hafta içi her gün saat 06.00-16.00 (PT) arasında Başvuran-Aday Yardım Ekibi (ACAT) ile iletişime geçin. Daha fazla bilgi için lütfen <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> adresini ziyaret edin.",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Kapsayıcı kültürümüz, Amazonian’lara müşterilerimiz için en iyi sonuçları sunma konusunda yetki verir. Bir engeliniz var ve başvuru ve işe alım sürecinde mülakat veya işe alım süreci için destek de dahil olmak üzere bir ayarlamaya ihtiyaç duyuyorsanız lütfen pazartesi-cuma günleri 07.00-16.00 GMT saatleri arasında Başvuru Sahibi-Aday Destekleme Ekibi (AKAT) ile iletişime geçin. Doğrudan Birleşik Krallık'tan arıyorsanız lütfen +44 800 086 9884 numaralı telefonu arayın. İrlanda'dan arıyorsanız lütfen +353 1800 851 489 numaralı telefonu arayın. Yeni iş rolünüzde bir ayarlamaya ihtiyacınız var ve ilk gününüze başlamadan önce bir istek başlatmak istiyorsanız bizimle iletişime de geçebilirsiniz.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "İlerlemeyi görüntüle",
@@ -771,6 +783,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Sosyal Güvenlik Numaranız (SSN) olmadan devam etmek istediğinizden emin misiniz?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Bir SSN'nız varsa bunu vermeniz gerekir. Bunu yapmamak, işe alım sürecinde gecikmelere neden olabilir ve bu da başlangıç tarihinizi kaçırmanıza ve seçtiğiniz vardiyayı kaybetmenize yol açabilir.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ayrıca, SSN'min kasıtlı olarak yanlış beyan edilmesinin Amazon tarafından dikkate alınacağını ve iş teklifimin iptaline veya işe alınırsam işimin feshedilmesine yol açabileceğini de kabul ediyorum.",

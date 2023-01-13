@@ -88,9 +88,17 @@
       "value" : "അപേക്ഷ സൃഷ്ടിക്കുക",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "അപ്ലിക്കേഷൻ ആരംഭിക്കുക",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "ഉപയോക്തൃ ഡാറ്റ നയം",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK ഉദ്യോഗാര്‍ത്ഥികള്‍ക്കുള്ള സ്വകാര്യതാ അറിയിപ്പ്",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "ശേഖരിക്കുന്ന എല്ലാ വിവരങ്ങളും സ്വകാര്യ കക്ഷികളുടെ കൈവശമുള്ള വ്യക്തിഗത ഡാറ്റയുടെ പരിരക്ഷ സംബന്ധിച്ച ഫെഡറൽ നിയമത്തിനും ഡാറ്റാ സ്വകാര്യതയെക്കുറിച്ചുള്ള അതിന്റെ നിയന്ത്രണങ്ങൾ, മാർഗ്ഗനിർദ്ദേശങ്ങൾ, മറ്റ് ബാധകമായ വ്യവസ്ഥകൾ, അതുപോലെ ജീവനക്കാർക്കും കൂടാതെ/അല്ലെങ്കിൽ ഉദ്യോഗാർത്ഥികൾക്കും വേണ്ടിയുള്ള കമ്പനിയുടെ സ്വകാര്യതാ അറിയിപ്പ് എന്നിവ അനുസരിച്ച് കൈമാറ്റം ചെയ്യപ്പെട്ടേക്കാമെന്ന് എനിക്കറിയാം.",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "ഒരു സോഷ്യൽ സെക്യൂരിറ്റി നമ്പർ (SSN) ഇല്ലാതെ തുടരാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെന്ന് തീർച്ചയാണോ?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "നിങ്ങൾക്ക് ഒരു SSN ഉണ്ടെങ്കിൽ, നിങ്ങൾ അത് നൽകേണ്ടതുണ്ട്. അങ്ങനെ ചെയ്യുന്നതിൽ പരാജയപ്പെടുന്നത് നിയമന പ്രക്രിയയിൽ കാലതാമസമുണ്ടാക്കും, അത് നിങ്ങളുടെ ആരംഭ തീയതി നഷ്‌ടപ്പെടുന്നതിനും തിരഞ്ഞെടുത്ത ഷിഫ്റ്റ് നഷ്‌ടപ്പെടുന്നതിനും ഇടയാക്കിയേക്കാം.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "എന്റെ SSN-നെ മനഃപൂർവം തെറ്റായി ചിത്രീകരിക്കുന്നത് Amazon പരിഗണിക്കുമെന്നും അത് എന്‍റെ തൊഴിൽ ഓഫർ അസാധുവാക്കുന്നതിലേക്കോ എന്നെ നിയമിക്കുന്നപക്ഷം എന്‍റെ ജോലി റദ്ദാക്കുക്കുന്നതിലേക്കോ നയിച്ചേക്കാമെന്നും ഞാൻ സമ്മതിക്കുന്നു.",

@@ -84,7 +84,8 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
       fontSize="T200"
       hyphens="none"
     >
-      Select the number of hours that you are able to work per week *
+      Select the number of hours that you are able to work per week
+       *
     </Text>
     <Text
       color="#56616C"
@@ -166,7 +167,8 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
       fontSize="T200"
       hyphens="none"
     >
-      Select all the days of the week that you are able to work *
+      Select all the days of the week that you are able to work
+       *
     </Text>
     <Text
       color="#56616C"
@@ -174,7 +176,7 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
       fontSize="T100"
       hyphens="none"
     >
-      Please note, most of our shift patterns will include at least one day of the weekend and shift preferences are not guaranteed
+      Please note, most of our shift patterns will include at least one day of the weekend and shift preferences are not guaranteed.
     </Text>
     <Col
       gridGap={10}
@@ -317,7 +319,8 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
       fontSize="T200"
       hyphens="none"
     >
-      Select the shift pattern that you are able to work *
+      Select the shift pattern that you are able to work
+       *
     </Text>
     <Col
       gridGap={10}

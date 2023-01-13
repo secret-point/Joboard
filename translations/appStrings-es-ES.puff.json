@@ -88,9 +88,17 @@
       "value" : "Crear solicitud",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Iniciar aplicación",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de datos de usuario",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Aviso de privacidad para candidatos de la UE/Reino Unido",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Acepto que toda la información recopilada pueda comunicarse o transferirse de conformidad con la Ley Federal sobre Protección de Datos Personales en Posesión de Entidades Privadas y sus reglamentos, directrices y disposiciones pertinentes de otra naturaleza en materia de protección de datos, además de en las disposiciones pertinentes del Aviso de privacidad relativas a trabajadores y postulantes.",
@@ -775,10 +783,6 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Si tienes un número de la Seguridad Social, debes proporcionarlo. Si no lo haces, puedes provocar retrasos en el proceso de contratación, lo que puede hacer que no se cumpla la fecha de inicio y pierdas el turno seleccionado.",
       "note" : "Warning banner in the no SSN modal"
-    },
-    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
-      "value" : "Al indicar que no tengo un número de la Seguridad Social, reconozco que no podré recibir mi pago con la tarjeta Wisely Pay hasta que lo obtenga y que solo podré recibir el pago mediante depósito directo o cheques físicos. Al continuar, confirmo que no tengo un número de la Seguridad Social. Comprendo que, según lo permita la ley, Amazon realizará una comprobación posterior de mis antecedentes si cambio o actualizo mi número de la Seguridad Social durante el proceso de incorporación o durante mi empleo.",
-      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "También reconozco que Amazon tendrá en cuenta cualquier tergiversación intencional de mi número de la Seguridad Social y que esto puede dar lugar a la revocación de mi oferta de empleo o, si me contratan, a la terminación de mi empleo.",
