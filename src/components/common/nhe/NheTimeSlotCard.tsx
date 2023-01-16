@@ -32,7 +32,7 @@ export const NheTimeSlotCard = (props: NheCardProps) => {
         details={(
           <>
             { 
-              countryHasMultipleLanguages(localeToLanguageMap, getCountryCode()) && <div className="nheSpokenLanguage">{`${t("BB-nhe-spoken-language", "Spoken Language")}: ${supportedLanguages}`}</div>
+              countryHasMultipleLanguages(localeToLanguageMap, getCountryCode()) && supportedLanguages.length > 0 && <div className="nheSpokenLanguage">{`${t("BB-nhe-spoken-language", "Spoken Language")}: ${supportedLanguages}`}</div>
             }
             <div>{renderNheTimeSlotFullAddress(nheTimeSlot)}</div>
           </>

@@ -1086,7 +1086,8 @@ export const fetchNheTimeSlotDs = (schedule: Schedule, applicationId: string, re
 };
 
 export const renderNheSpokenLanguages = ( nheTimeSlot: NHETimeSlot ): string[][] => {
-  const supportedLanguages = Array.from(nheTimeSlot.spokenLanguageAlternatives, locale => localeToLanguageMap[locale as Locale || getDefaultLocale()]);
+  const spokenLanguagesExists = nheTimeSlot.spokenLanguageAlternatives && nheTimeSlot.spokenLanguageAlternatives.length > 0;
+  const supportedLanguages = spokenLanguagesExists ? Array.from(nheTimeSlot.spokenLanguageAlternatives, locale => localeToLanguageMap[locale as Locale || getDefaultLocale()]) : [];
 
   return supportedLanguages;
 };
