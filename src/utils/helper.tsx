@@ -1873,3 +1873,10 @@ export const UpdateHoursPerWeekHelper = (hoursPerWeek: ShiftPreferenceWorkHour[]
 
   return newHoursPerWeek;
 };
+
+export const getSupportedCitiesFromScheduleList = (scheduleList: Schedule[]): string[] => {
+  const supportedCities: Set<string> = new Set<string>();
+  scheduleList?.forEach(schedule => schedule.city && supportedCities.add(schedule.city));
+
+  return Array.from(supportedCities);
+};

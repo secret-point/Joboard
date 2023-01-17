@@ -94,8 +94,9 @@ export enum WORKFLOW_STEP_NAME {
   REHIRE_ELIGIBILITY_STATUS = "rehire-eligibility-status",
   CAN_NOT_OFFER_JOB = "can-not-offer-job",
   CALI_DISCLOSURE = "cali-disclosure",
-  ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
   DUPLICATE_WINDOW = "duplicate-window",
+  ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
+  ADDITIONAL_INFORMATION = "additional-information"
 }
 
 export enum UPDATE_APPLICATION_API_TYPE {

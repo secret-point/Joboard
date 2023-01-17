@@ -35,7 +35,7 @@ import queryString from "query-string";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { DAYS_OF_WEEK, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import { DAYS_OF_WEEK, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { connect } from "react-redux";
 import moment from "moment";
@@ -139,9 +139,8 @@ export const ShiftPreferences = (props: MapStateToProps) => {
         }
       };
 
-      // TODO need to ensure that after saving shift preference, UI complete contingent-offer step on candidate's behalf or workflow service returns the correct page
       boundUpdateApplicationDS(request, (applicationData: Application) => {
-        onCompleteTaskHelper(applicationData);
+        onCompleteTaskHelper(applicationData, true, WORKFLOW_STEP_NAME.ADDITIONAL_INFORMATION);
       });
     }
   };

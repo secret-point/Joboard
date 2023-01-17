@@ -8,10 +8,13 @@ describe("ShiftPreference Card", () => {
 
   it("should match snapshot", () => {
     const shallowWrapper = shallow(
-      <FilterScheduleUK filters={{
-        ...initScheduleStateFilters,
-        daysHoursFilter: dayHoursFilterValues
-      }}
+      <FilterScheduleUK
+        filters={{
+          ...initScheduleStateFilters,
+          daysHoursFilter: dayHoursFilterValues
+        }}
+        scheduleCount={5}
+        supportedCities={["test1", "test2"]}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
@@ -19,10 +22,13 @@ describe("ShiftPreference Card", () => {
 
   it("should show error message on invalid date on startDate", () => {
     let wrapper = mountWithStencil(
-      <FilterScheduleUK filters={{
-        ...initScheduleStateFilters,
-        daysHoursFilter: dayHoursFilterValues
-      }}
+      <FilterScheduleUK
+        filters={{
+          ...initScheduleStateFilters,
+          daysHoursFilter: dayHoursFilterValues
+        }}
+        scheduleCount={5}
+        supportedCities={["test1", "test2"]}
       />);
     const dateInput = wrapper.find("input#startDateBegin");
     dateInput.simulate("change", { target: { value: "20/20/20000" } });
@@ -34,10 +40,13 @@ describe("ShiftPreference Card", () => {
 
   it("should show error message on invalid date on startEndDate", () => {
     let wrapper = mountWithStencil(
-      <FilterScheduleUK filters={{
-        ...initScheduleStateFilters,
-        daysHoursFilter: dayHoursFilterValues
-      }}
+      <FilterScheduleUK
+        filters={{
+          ...initScheduleStateFilters,
+          daysHoursFilter: dayHoursFilterValues
+        }}
+        scheduleCount={5}
+        supportedCities={["test1", "test2"]}
       />);
     const dateInput = wrapper.find("input#startDateEnd");
     dateInput.simulate("change", { target: { value: "20/20/20000" } });

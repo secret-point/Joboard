@@ -19,7 +19,7 @@ exports[`ShiftPreference Card should match snapshot 1`] = `
       hyphens="none"
       textAlign="center"
     >
-      1 Schedule Found
+      5 Schedule Found
     </Text>
     <Col
       gridGap={8}
@@ -37,11 +37,11 @@ exports[`ShiftPreference Card should match snapshot 1`] = `
         <Row
           alignItems="end"
           gridGap={8}
-          key="Bolton"
+          key="test1"
         >
           <InputWrapper
             error={false}
-            id="checkbox-city-Bolton"
+            id="checkbox-city-test1"
             labelPosition="top"
             labelText=""
             required={false}
@@ -55,20 +55,20 @@ exports[`ShiftPreference Card should match snapshot 1`] = `
             font="primary"
             fontSize="T200"
             fontWeight="regular"
-            htmlFor="checkbox-city-Bolton"
+            htmlFor="checkbox-city-test1"
             hyphens="none"
           >
-            Bolton
+            test1
           </Label>
         </Row>
         <Row
           alignItems="end"
           gridGap={8}
-          key="Newcastle"
+          key="test2"
         >
           <InputWrapper
             error={false}
-            id="checkbox-city-Newcastle"
+            id="checkbox-city-test2"
             labelPosition="top"
             labelText=""
             required={false}
@@ -82,10 +82,10 @@ exports[`ShiftPreference Card should match snapshot 1`] = `
             font="primary"
             fontSize="T200"
             fontWeight="regular"
-            htmlFor="checkbox-city-Newcastle"
+            htmlFor="checkbox-city-test2"
             hyphens="none"
           >
-            Newcastle
+            test2
           </Label>
         </Row>
       </Row>

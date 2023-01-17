@@ -4,6 +4,7 @@ import { translate as t } from "../../../utils/translator";
 import {
   checkAndBoundGetApplication,
   getLocale,
+  getSupportedCitiesFromScheduleList,
   goToCandidateDashboard,
   handleApplyScheduleFilters,
   handleResetScheduleFilters,
@@ -109,7 +110,6 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
-
   const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
     <Col width={width} height="100vh">
       <FlyoutContent
@@ -132,7 +132,6 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
       </FlyoutContent>
     </Col>
   );
-
   const renderFilterScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
     <Col width={width} height="100vh">
       <FlyoutContent
@@ -160,7 +159,11 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
           </Button>
         ]}
       >
-        <FilterScheduleUK filters={scheduleFilters} />
+        <FilterScheduleUK
+          filters={scheduleFilters}
+          supportedCities={getSupportedCitiesFromScheduleList(scheduleData || [])}
+          scheduleCount={scheduleData?.length || 0}
+        />
       </FlyoutContent>
     </Col>
   );

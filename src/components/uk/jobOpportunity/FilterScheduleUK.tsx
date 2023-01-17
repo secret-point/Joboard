@@ -11,16 +11,16 @@ import { boundUpdateScheduleFilters } from "../../../actions/ScheduleActions/bou
 
 interface FilterScheduleProps {
   filters: ScheduleStateFilters;
+  supportedCities: string[];
+  scheduleCount: number;
 }
 
 const FilterScheduleUK = ( props: FilterScheduleProps ) => {
 
-  const { filters } = props;
+  const { filters, supportedCities, scheduleCount } = props;
   const { city } = filters;
   const [startEndDate, setStartEndDate] = useState<string|undefined>(undefined);
   const [startBeginDate, setStartBeginDate] = useState<string|undefined>(undefined);
-  // TODO to be replaced with API data
-  const cities = ["Bolton", "Newcastle"];
   const isStartDateValid = startBeginDate ? isDateGreaterThanToday(startBeginDate) : true;
   const isEndDateValid = startEndDate ? isDateGreaterThanToday(startEndDate) : true;
 
@@ -56,13 +56,13 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
     <Col gridGap={20}>
       <Col gridGap={10} width="100%" padding={{ right: "S300" }}>
         <Text textAlign="center">
-          {t("BB-FilterSchedule-schedule-found-counter-text", `${1} Schedule Found`, { scheduleCount: 1 })}
+          {t("BB-FilterSchedule-schedule-found-counter-text", `${scheduleCount} Schedule Found`, { scheduleCount: scheduleCount })}
         </Text>
         <Col gridGap={8}>
           <Text>Cities</Text>
           <Row gridGap={10}>
             {
-              cities?.map(cityItem => (
+              supportedCities?.map(cityItem => (
                 <Row alignItems="end" key={cityItem} gridGap={8}>
                   <InputWrapper
                     labelText={""}

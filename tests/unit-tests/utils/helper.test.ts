@@ -39,7 +39,7 @@ import {
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
-  GetSelfIdentificationConfigStep,
+  GetSelfIdentificationConfigStep, getSupportedCitiesFromScheduleList,
   handleConfirmNHESelection,
   handleInitiateSelfIdentificationStep,
   handleSubmitSelfIdDisabilityStatus,
@@ -1247,4 +1247,11 @@ test("UpdateHoursPerWeekHelper", () => {
       { minimumValue: 0, maximumValue: 19 },
       { minimumValue: 31, maximumValue: 40 }
     ]);
+});
+
+test("getSupportedCitiesFromScheduleList", () => {
+  expect(getSupportedCitiesFromScheduleList([])).toEqual([]);
+  expect(getSupportedCitiesFromScheduleList([TEST_SCHEDULE])).toEqual([TEST_SCHEDULE.city]);
+  expect(getSupportedCitiesFromScheduleList([{ ...TEST_SCHEDULE }, { ...TEST_SCHEDULE }])).toEqual([TEST_SCHEDULE.city]);
+  expect(getSupportedCitiesFromScheduleList([{ ...TEST_SCHEDULE, city: "test1" }, { ...TEST_SCHEDULE }])).toEqual(["test1", TEST_SCHEDULE.city]);
 });
