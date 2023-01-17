@@ -137,6 +137,7 @@ export interface Job {
   dspEnabled?: boolean | null;
   qualificationCriteria: string[];
   assessmentType: string;
+  bypassAssessment: boolean;
 }
 
 export interface AvailableSchedule {

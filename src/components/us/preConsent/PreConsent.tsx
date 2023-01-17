@@ -26,7 +26,7 @@ interface MapStateToProps {
   job: JobState;
 }
 
-export const PreConsent = ( props: MapStateToProps ) => {
+export const PreConsent = (props: MapStateToProps) => {
 
   const { job } = props;
   const { search, pathname } = useLocation();
@@ -70,7 +70,7 @@ export const PreConsent = ( props: MapStateToProps ) => {
       ]}
       maxWidth="40vw"
     >
-      <ApplicationSteps />
+      <ApplicationSteps withAssessment={!jobDetail?.bypassAssessment} />
     </FlyoutContent>
   );
 
@@ -86,7 +86,7 @@ export const PreConsent = ( props: MapStateToProps ) => {
           {t("BB-PreConsentPage-banner-journey-starts", "Your journey to becoming an Amazon Associate starts here.")}
         </Text>
         <WithFlyout renderFlyout={renderFlyout}>
-          {( { open } ) => (
+          {({ open }) => (
             <Col>
               <Button
                 className={matches.s ? "preview-steps-btn-small" : "preview-steps-btn"}
@@ -120,7 +120,7 @@ export const PreConsent = ( props: MapStateToProps ) => {
   );
 };
 
-const mapStateToProps = ( state: MapStateToProps ) => {
+const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 

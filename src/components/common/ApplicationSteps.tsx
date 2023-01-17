@@ -1,11 +1,11 @@
 import React from "react";
 import isEmpty from "lodash/isEmpty";
 import { MessageBanner } from "@amzn/stencil-react-components/message-banner";
-import { ApplicationStepList } from "../../utils/constants/common";
+import { ApplicationStepList, ApplicationWithAssessmentStepList } from "../../utils/constants/common";
 import { translate as t } from "../../utils/translator";
 
-const ApplicationSteps = () => {
-  const steps = ApplicationStepList;
+const ApplicationSteps = ({ withAssessment = false }: { withAssessment?: boolean }) => {
+  const steps = withAssessment ? ApplicationWithAssessmentStepList : ApplicationStepList;
 
   return (
     <div id="applicationStepContainer" data-testid="applicationStepContainer">
