@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
 import {
+  checkAndBoundGetApplication,
+  getLocale,
   goToCandidateDashboard,
   handleApplyScheduleFilters,
   handleResetScheduleFilters,
@@ -24,7 +26,11 @@ import { H5, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
@@ -34,6 +40,11 @@ import FilterScheduleUK from "./FilterScheduleUK";
 import ShiftPreferenceCard from "../../common/jobOpportunity/ShiftPreferenceCard";
 import InactivityModal from "../../common/InactivityModal";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
+import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 
 interface MapStateToProps {
   job: JobState;
@@ -65,37 +76,37 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const width = matches.s ? "100VW" : "420px";
 
   useEffect(() => {
-    // boundGetCandidateInfo();
+    boundGetCandidateInfo();
   }, []);
 
   useEffect(() => {
-    // const request: GetScheduleListByJobIdRequest = {
-    //   jobId,
-    //   applicationId,
-    //   locale: getLocale()
-    // };
-    // boundGetScheduleListByJobId(request);
+    const request: GetScheduleListByJobIdRequest = {
+      jobId,
+      applicationId,
+      locale: getLocale()
+    };
+    boundGetScheduleListByJobId(request);
   }, [applicationId, jobId]);
 
   useEffect(() => {
-    // jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
   useEffect(() => {
-    // checkAndBoundGetApplication(applicationId);
+    checkAndBoundGetApplication(applicationId);
   }, [applicationId]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
     // will not emit new event on props change once it has emitted pageload event previously
-    // scheduleData && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+    scheduleData && jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
 
   }, [jobDetail, applicationData, candidateData, scheduleData]);
 
   useEffect(() => {
     return () => {
       // reset this so as it can emit new pageload event after being unmounted.
-      // resetIsPageMetricsUpdated(pageName);
+      resetIsPageMetricsUpdated(pageName);
     };
   }, []);
 

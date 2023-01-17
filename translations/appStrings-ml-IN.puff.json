@@ -136,6 +136,10 @@
       "value" : "ഞങ്ങളുടെ ഉപഭോക്താക്കൾ‌ക്ക് ഏറ്റവും മികച്ച ഫലങ്ങൾ‌ നൽ‌കുന്നതിന്, എല്ലാ വിഭാഗക്കാരെയും ഉൾക്കൊള്ളുന്ന ഞങ്ങളുടെ സംസ്കാരം Amazonians-നെ ശാക്തീകരിക്കുന്നു. നിങ്ങൾ ഭിന്നശേഷിയുള്ള ആളാണെങ്കിൽ, അപേക്ഷാ വേളയിലും നിയമന പ്രക്രിയയുടെ സമയത്തും താമസസൗകര്യം ആവശ്യമായി വരുന്നപക്ഷം‍, 888-435-9287 എന്ന നമ്പറിൽ ആപ്ലിക്കന്‍റ്-കാൻഡിഡേറ്റ് അക്കോമഡേഷൻ ടീമിനെ (ACAT) തിങ്കൾ മുതൽ വെള്ളി വരെ പസഫിക് സമയം 6 AM-നും 4 PM-നും ഇടയ്ക്ക് കോൺടാക്‌റ്റ് ചെയ്യാം. കൂടുതൽ വിവരങ്ങൾക്ക്, ദയവായി <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> സന്ദർശിക്കുക",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "ഞങ്ങളുടെ ഉപഭോക്താക്കൾ‌ക്ക് ഏറ്റവും മികച്ച ഫലങ്ങൾ‌ നൽ‌കുന്നതിന്, എല്ലാ വിഭാഗക്കാരെയും ഉൾക്കൊള്ളുന്ന ഞങ്ങളുടെ സംസ്കാരം Amazonians-നെ ശാക്തീകരിക്കുന്നു. നിങ്ങൾക്ക് ഒരു വൈകല്യമുണ്ടെങ്കിൽ, അഭിമുഖത്തിനോ ഓൺബോർഡിംഗ് പ്രക്രിയയിൽ പിന്തുണ ഉൾപ്പെടെ, അപേക്ഷയിലും നിയമന പ്രക്രിയയിലും ഒരു മാറ്റം ആവശ്യമുണ്ടെങ്കിൽ, ആപ്ലിക്കൻ്റ്-കാൻഡിഡേറ്റ് അക്കോമഡേഷൻ ടീമിനെ (ACAT) ബന്ധപ്പെടുക, തിങ്കൾ മുതൽ വെള്ളി വരെ 7:00am GMT - 4:00pm GMT. യുണൈറ്റഡ് കിംഗ്ഡത്തിൽ നിന്ന് നേരിട്ട് വിളിക്കുകയാണെങ്കിൽ, +44 800 086 9884 ഡയൽ ചെയ്യുക. അയർലൻഡിൽ നിന്നാണ് വിളിക്കുന്നതെങ്കിൽ, +353 1800 851 489 ഡയൽ ചെയ്യുക. നിങ്ങളുടെ പുതിയ റോളിൽ നിങ്ങൾക്ക് ഒരു മാറ്റം ആവശ്യമുണ്ടെങ്കിൽ, നിങ്ങളുടെ ആദ്യ ദിവസം ആരംഭിക്കുന്നതിന് മുമ്പ് ഒരു അഭ്യർത്ഥന നടത്താൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ നിങ്ങൾക്ക് ഞങ്ങളെ ബന്ധപ്പെടാം.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "പുരോഗതി കാണുക",
       "note" : "Text for view progress flyout title"
@@ -2451,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "ദയവായി താഴെ കൊടുത്തിരിക്കുന്ന ബോക്‌സുകളിലൊന്നിൽ ശരി അടയാളമിടുക",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "തൊഴിൽ അവകാശ ഡോക്യുമെന്‍റേഷൻ",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK-ല്‍ തൊഴിൽ ചെയ്യുന്നതിനുള്ള അവകാശ പരിശോധന",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "നിങ്ങളുടെ തൊഴിൽ ആരംഭിക്കുന്നതിന്, UK-ൽ തൊഴിൽ ചെയ്യാനുള്ള നിങ്ങളുടെ അവകാശം തെളിയിക്കുന്ന നിങ്ങളുടെ യഥാർത്ഥ രേഖ(കള്‍) Amazon പരിശോധിക്കേണ്ടതുണ്ട്. തൊഴിൽ അവകാശ പ്രമാണ ഉദാഹരണങ്ങളിൽ ഉൾപ്പെടുന്നു, എന്നാല്‍ ഇനിപ്പറയുന്നവയിൽ മാത്രം പരിമിതപ്പെടുന്നില്ല",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "ബ്രിട്ടീഷ് പാസ്പോർട്ട്",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "സ്ഥിര താമസ കാർഡ്",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "തുടരുവാനുള്ള അനിശ്ചിതകാല അവധി നല്‍കുന്ന സ്റ്റാമ്പുകള്‍",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "ബയോമെട്രിക് റസിഡൻസ് പെർമിറ്റ്",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "സ്വീകാര്യമായ എല്ലാ തൊഴിൽ അവകാശ രേഖകളുടെയും കൂടുതൽ വിവരങ്ങൾക്കും വിശദാംശങ്ങൾക്കും, ദയവായി ഞങ്ങളുടെ <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK എംപ്ലോയി വർക്ക് ഓതറൈസേഷൻ ഗൈഡ്</a> കാണുക",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "നിങ്ങൾ 18 വയസ്സോ അതിൽ കൂടുതലോ ആണ്.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "നിങ്ങളാണ് ഏക അപേക്ഷകൻ, ഈ അപേക്ഷ പൂർത്തിയാക്കാൻ Amazon-ൽ നിന്ന് എന്തെങ്കിലും സഹായം ലഭിക്കാത്ത പക്ഷം ഓരോ ഘട്ടവും വ്യക്തിപരമായി പൂർത്തിയാക്കണം.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "നിങ്ങൾക്ക് ഉണ്ട്",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "തൊഴിൽ അവകാശ ഡോക്യുമെന്‍റേഷൻ",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "ബാധകമെങ്കിൽ പ്രീ-എംപ്ലോയ്മെന്റ് മെഡിക്കൽ ടെസ്റ്റ് പൂർത്തിയാക്കാൻ നിങ്ങൾ തയ്യാറാണ്.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "പ്രീ-എംപ്ലോയ്മെന്റ് പശ്ചാത്തല പരിശോധനയ്ക്ക് നിങ്ങൾ സമ്മതിക്കുന്നു.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

@@ -136,6 +136,10 @@
       "value" : "మా సమ్మిళిత సంస్కృతి మా కస్టమర్‌లకు ఉత్తమ ఫలితాలను అందించడానికి Amazoniansకు అధికారం ఇస్తుంది. మీకు వైకల్యం ఉంటే మరియు దరఖాస్తు మరియు నియామక ప్రాసెస్ సమయంలో వసతి అవసరమైతే, దయచేసి దరఖాస్తుదారు-అభ్యర్థి వసతి బృందాన్ని (ACAT) 888-435-9287లో, సోమవారం నుండి శుక్రవారం వరకు 6 AM నుండి 4 PM పసిఫిక్ సమయం వరకు కాంటాక్ట్ చేయండి. మరింత సమాచారం కోసం, దయచేసి <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>ను సందర్శించండి",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "మా సమ్మిళిత సంస్కృతి మా కస్టమర్‌లకు ఉత్తమ ఫలితాలను అందించడానికి Amazoniansకు అధికారం ఇస్తుంది. మీకు వైకల్యం ఉన్నట్లయితే మరియు ఇంటర్వ్యూ లేదా ఆన్‌బోర్డింగ్ ప్రక్రియకు సపోర్ట్‌తో సహా అప్లికేషన్ మరియు నియామక ప్రక్రియ సమయంలో సర్దుబాటు అవసరం అయితే, దయచేసి దరఖాస్తుదారు-అభ్యర్థి వసతి బృందం (ACAT)ను సోమవారం నుండి శుక్రవారం వరకు ఉదయం 7:00 GMT - సాయంత్రం 4:00 GMT మధ్య సంప్రదించండి. యునైటెడ్ కింగ్ డమ్ నుండి నేరుగా కాల్ చేస్తే, దయచేసి +44 800 086 9884కు డయల్ చేయండి. ఐర్లాండ్ నుండి కాల్ చేస్తే, దయచేసి +353 1800 851 489కు డయల్ చేయండి. మీ కొత్త పాత్రలో మీకు సర్దుబాటు అవసరమైతే మరియు మీ రోజు 1 ప్రారంభించడానికి ముందు అభ్యర్థనను ప్రారంభించాలని అనుకుంటే మీరు మమ్మల్ని సంప్రదించవచ్చు.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "పురోగతిని చూడండి",
       "note" : "Text for view progress flyout title"
@@ -783,6 +787,10 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "మీరు SSNని కలిగి ఉంటే, దాన్ని మీరు అందించాలి. అలా చేయడంలో విఫలమైతే నియామక ప్రక్రియలో జాప్యం జరగవచ్చు, దీని వలన మీ ప్రారంభ తేదీని కోల్పోవచ్చు మరియు మీరు ఎంచుకున్న షిఫ్ట్‌ను కోల్పోవచ్చు.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "నాకు SSN లేదని సూచించడం ద్వారా, నేను SSNను పొందే వరకు నా చెల్లింపును స్వీకరించే మార్గంగా నేను Wisely Pay కార్డుకు అర్హత పొందలేనని గుర్తించాను మరియు నేరుగా డిపాజిట్ లేదా భౌతిక చెక్‌ల ద్వారా మాత్రమే చెల్లింపును స్వీకరించగలనని నేను అంగీకరిస్తున్నాను. కొనసాగించడం ద్వారా, నాకు SSN లేదని నేను ధృవీకరిస్తున్నాను. నేను ఆన్‌బోర్డింగ్ ప్రక్రియలో లేదా నా ఉద్యోగ సమయంలో నా SSNను మార్చినా లేదా అప్‌డేట్ చేసినా, చట్టం ద్వారా అనుమతించినట్లుగా, Amazon నా గురించి ఫాలో-అప్ బ్యాక్‌గ్రౌండ్ తనిఖీ నిర్వహిస్తుందని నేను అర్థం చేసుకున్నాను.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "నా SSN గురించి ఏదైనా ఉద్దేశపూర్వకంగా తప్పుగా సూచించడం Amazon ద్వారా పరిగణించబడుతుందని మరియు నా ఉపాధి ఆఫర్‌ను ఉపసంహరించుకోవచ్చు లేదా నన్ను నియమించినట్లయితే, నా ఉద్యోగాన్ని రద్దు చేయవచ్చు అని నేను అంగీకరిస్తున్నాను.",
@@ -2451,6 +2459,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "దయచేసి కింది బాక్స్‌లలో ఒక దానిని ఎంచుకోండి",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "పని హక్కు డాక్యుమెంటేషన్",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK పని చేసే హక్కు తనిఖీ",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "మీ ఉద్యోగాన్ని ప్రారంభించడం కొరకు, UKలో పనిచేసే మీ హక్కును రుజువు చేసే మీ ఒరిజినల్ పత్రం(లు)ని Amazon తనిఖీ చేయాలి. పని హక్కు పత్రం ఉదాహరణల్లో ఇవి ఉంటాయి, అయితే వీటికి మాత్రమే పరిమితం కావు",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "బ్రిటిష్ పాస్‌పోర్ట్",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "శాశ్వత నివాసం కార్డు",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "ఉండటానికి నిరవధికంగా విడిచిపెట్టడం స్టాంప్‌లు",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "బయోమెట్రిక్ నివాస అనుమతి",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "అన్ని ఆమోదయోగ్యమైన పని పత్రాల యొక్క మరింత సమాచారం మరియు వివరాల కోసం, దయచేసి మా<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK ఉద్యోగి వర్క్ ఆథరైజేషన్ గైడ్‌ను చూడండి</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "మీకు 18 సంవత్సరాలు లేదా అంతకంటే ఎక్కువ.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "మీరు ఏకైక దరఖాస్తుదారు మరియు ఈ అప్లికేషన్‌ను పూర్తి చేయడానికి మీరు Amazon నుండి ఏదైనా సహాయం పొందకపోతే ప్రతి దశను వ్యక్తిగతంగా పూర్తి చేస్తారు.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "మీకు",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "పని హక్కు డాక్యుమెంటేషన్ ఉంది",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "వర్తించినట్లయితే, మీరు ప్రీ-ఎంప్లాయిమెంట్ మెడికల్ టెస్ట్ పూర్తి చేయడానికి సిద్ధంగా ఉన్నారు.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "మీరు ప్రీ-ఎంప్లాయిమెంట్ నేపథ్య తనిఖీకి సమ్మతిస్తున్నారు.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

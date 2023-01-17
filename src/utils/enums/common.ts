@@ -357,3 +357,9 @@ export enum CountryCode {
   CA = "CA",
   UK = "UK"
 }
+
+export enum SHIFT_PATTERN {
+  NIGHTS = "Nights",
+  DAYS = "Days",
+  ANY = "Any"
+}

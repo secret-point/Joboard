@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { H5, Text } from "@amzn/stencil-react-components/text";
 import { translate as t } from "../../../utils/translator";
 import { IconArrowLeft, IconSize } from "@amzn/stencil-react-components/icons";
 import { PopupDatePicker } from "@amzn/stencil-react-components/date-picker";
-import { isDateGreaterThanToday, routeToAppPageWithPath } from "../../../utils/helper";
+import {
+  checkAndBoundGetApplication,
+  getLocale,
+  isDateGreaterThanToday,
+  routeToAppPageWithPath,
+  UpdateHoursPerWeekHelper
+} from "../../../utils/helper";
 import { Checkbox, InputFooter, InputWrapper, LabelPosition, Radio } from "@amzn/stencil-react-components/form";
 import { CommonColors } from "../../../utils/colors";
 import {
@@ -15,38 +21,84 @@ import {
 } from "../../../utils/constants/common";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { PAGE_ROUTES } from "../../pageRoutes";
-import { ShiftPreferenceWorkHour } from "../../../utils/types/common";
+import { Application, ShiftPreferenceWorkHour } from "../../../utils/types/common";
+import { JobState } from "../../../reducers/job.reducer";
+import { ApplicationState } from "../../../reducers/application.reducer";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import { useLocation } from "react-router-dom";
+import {
+  getPageNameFromPath,
+  parseQueryParamsArrayToSingleItem,
+  resetIsPageMetricsUpdated
+} from "../../../helpers/utils";
+import queryString from "query-string";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
+import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { DAYS_OF_WEEK, UPDATE_APPLICATION_API_TYPE } from "../../../utils/enums/common";
+import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
+import { connect } from "react-redux";
+import moment from "moment";
+import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 
-const ShiftPreference = () => {
+interface MapStateToProps {
+  job: JobState;
+  application: ApplicationState;
+  candidate: CandidateState;
+}
+export const ShiftPreferences = (props: MapStateToProps) => {
+
+  const { job, application, candidate } = props;
+  const { search, pathname } = useLocation();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const pageName = getPageNameFromPath(pathname);
+  const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
+  const { applicationId, jobId } = queryParams;
+  const jobDetail = job.results;
+  const applicationData = application.results;
+  const { candidateData } = candidate.results;
+
+  useEffect(() => {
+    boundGetCandidateInfo();
+  }, []);
+
+  useEffect(() => {
+    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+  }, [jobDetail, jobId]);
+
+  useEffect(() => {
+    checkAndBoundGetApplication(applicationId);
+  }, [applicationId]);
+
+  useEffect(() => {
+    // Page will emit page load event once both pros are available but
+    // will not emit new event on props change once it has emitted pageload event previously
+    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+
+  }, [jobDetail, applicationData, candidateData]);
+
+  useEffect(() => {
+    return () => {
+      // reset this so as it can emit new pageload event after being unmounted.
+      resetIsPageMetricsUpdated(pageName);
+    };
+  }, []);
 
   const [startDate, setStartDate] = useState();
   const [hoursPerWeek, setHoursPerWeek] = useState<ShiftPreferenceWorkHour[]>([]);
-  const [workDays, setWorkDays] = useState<string[]>([]);
+  const [workDays, setWorkDays] = useState<DAYS_OF_WEEK[]>([]);
   const [shiftPattern, setShiftPattern] = useState();
   const [startDateValid, setStartDateValid] = useState(true);
   const [shiftPatternValid, setShiftPatternValid] = useState(true);
-  const [hourPerWeekValid, setHourserWeekValid] = useState(true);
+  const [hourPerWeekValid, setHourPerWeekValid] = useState(true);
   const [workDaysValid, setWorkDaysValid] = useState(true);
 
   const updateHoursPerWeek = (value: ShiftPreferenceWorkHour) => {
-    const newHoursPerWeek = hoursPerWeek || [];
-
-    if (newHoursPerWeek.length > 0) {
-      newHoursPerWeek.forEach((item, index) => {
-        if (item.maximumvalue === value.maximumvalue && item.minimumValue === value.minimumValue) {
-          newHoursPerWeek.splice(index, 1);
-        } else {
-          newHoursPerWeek.push(value);
-        }
-      });
-    } else {
-      newHoursPerWeek.push(value);
-    }
-
-    setHoursPerWeek(newHoursPerWeek);
+    setHoursPerWeek(UpdateHoursPerWeekHelper(hoursPerWeek || [], value));
   };
 
-  const updateWorkDays = (value: string) => {
+  const updateWorkDays = (value: DAYS_OF_WEEK) => {
     const newWorkDays = workDays || [];
 
     if (newWorkDays.indexOf(value) > -1) {
@@ -60,12 +112,38 @@ const ShiftPreference = () => {
 
   const handleSavePreference = () => {
     // Validate start date and shift pattern as they are required
-    setStartDateValid(isDateGreaterThanToday(startDate));
-    setShiftPatternValid(!!shiftPattern);
-    setHourserWeekValid(hoursPerWeek.length > 0);
-    setWorkDaysValid(workDays.length > 0);
+    const isStartDateValid = isDateGreaterThanToday(startDate);
+    const isShiftPatternValid = !!shiftPattern;
+    const isHourPerWeekValid = hoursPerWeek.length > 0;
+    const isWorkDaysValid = workDays.length > 0;
+    const formIsValid = isShiftPatternValid && isWorkDaysValid && isHourPerWeekValid && isStartDateValid;
 
-    // Bound update application
+    setStartDateValid(isStartDateValid);
+    setShiftPatternValid(isShiftPatternValid);
+    setHourPerWeekValid(isHourPerWeekValid);
+    setWorkDaysValid(isWorkDaysValid);
+
+    if (formIsValid) {
+      const request: UpdateApplicationRequestDS = {
+        applicationId: applicationId,
+        type: UPDATE_APPLICATION_API_TYPE.JOB_PREFERENCES,
+        payload: {
+          shiftPreference: {
+            hoursPerWeek: hoursPerWeek,
+            earliestStartDate: moment(startDate).format("DD/MM/YYYY"),
+            jobRoles: [],
+            shiftTimePattern: shiftPattern,
+            candidateTimezone: candidateData?.timezone || "",
+            daysOfWeek: workDays
+          },
+        }
+      };
+
+      // TODO need to ensure that after saving shift preference, UI complete contingent-offer step on candidate's behalf or workflow service returns the correct page
+      boundUpdateApplicationDS(request, (applicationData: Application) => {
+        onCompleteTaskHelper(applicationData);
+      });
+    }
   };
 
   return (
@@ -165,7 +243,7 @@ const ShiftPreference = () => {
                     <Checkbox
                       name={day.displayValue}
                       {...inputProps}
-                      onChange={() => updateWorkDays(day.value)}
+                      onChange={() => updateWorkDays(day.value as DAYS_OF_WEEK)}
                     />
                   )}
                 </InputWrapper>
@@ -190,7 +268,7 @@ const ShiftPreference = () => {
                     <Checkbox
                       name={day.displayValue}
                       {...inputProps}
-                      onChange={() => updateWorkDays(day.value)}
+                      onChange={() => updateWorkDays(day.value as DAYS_OF_WEEK)}
                     />
                   )}
                 </InputWrapper>
@@ -248,4 +326,8 @@ const ShiftPreference = () => {
   );
 };
 
-export default ShiftPreference;
+export const mapStateToProps = (state: MapStateToProps) => {
+  return state;
+};
+
+export default connect(mapStateToProps)(ShiftPreferences);

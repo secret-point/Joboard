@@ -788,6 +788,10 @@
       "value" : "तुमच्याकडे SSN असल्यास, तुम्हाला तो देणे आवश्यक आहे. असे करण्यात अयशस्वी झाल्यास नियुक्ती प्रक्रियेत विलंब होऊ शकतो ज्यामुळे तुमची काम सुरू करण्याची तारीख चुकू शकते आणि तुम्ही निवडलेली शिफ्ट गमावू शकता.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "माझ्याकडे SSN नाही हे दर्शवून, मी मान्य करतो की मी SSN प्राप्त करेपर्यंत माझे वेतन प्राप्त करण्याचे साधन म्हणून मी Wisely पे कार्डसाठी पात्र असणार नाही आणि फक्त थेट ठेव किंवा प्रत्यक्ष चेकद्वारे वेतन प्राप्त करण्यास सक्षम असेन. पुढे चालू ठेवून, मी कन्फर्म करत आहे की माझ्याकडे SSN नाही. मला समजते की, कायद्याने परवानगी दिल्याप्रमाणे, मी ऑनबोर्डिंग प्रक्रियेदरम्यान किंवा माझ्या नोकरीदरम्यान माझा SSN बदलल्यास किंवा अपडेट केल्यास Amazon माझ्याबद्दल फॉलो-अप पार्श्वभूमी तपासणी करेल.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "मी हे देखील कबूल करतो की माझ्या SSN चे कोणतेही हेतुपुरस्सररित्या केलेले चुकीचे वर्णन Amazon द्वारे विचारात घेतले जाईल आणि त्यामुळे माझी नोकरीची ऑफर रद्द केली जाऊ शकते किंवा, मला कामावर ठेवल्यास, माझी नोकरी संपुष्टात येऊ शकते.",
       "note" : "Content in the no SSN modal"
@@ -2455,6 +2459,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "कृपया खालील बॉक्सपैकी एकावर खूण करा",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "कार्य करण्याचा अधिकार दस्तऐवजीकरण",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK मध्ये काम करण्याचा अधिकार तपासा",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "तुमचा रोजगार सुरू करण्यासाठी, Amazon ने UK मध्ये काम करण्याचा तुमचा अधिकार सिद्ध करणारे तुमचे मूळ दस्तऐवज तपासणे आवश्यक आहे. कार्य करण्याचा अधिकार दस्तऐवजाच्या उदाहरणांमध्ये समाविष्ट आहे, परंतु मर्यादित नाही",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "ब्रिटिश पासपोर्ट",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "कायमस्वरुपी निवास कार्ड",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "अनिश्चित काळासाठी राहू शकता याचे स्टॅम्प्स",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "बायोमेट्रिक निवास परवाना",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "कार्य करण्याच्या सर्व स्वीकारार्ह अधिकाराच्या कागदपत्रांच्या अधिक माहितीसाठी आणि तपशीलांसाठी, कृपया आमचे<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य अधिकृतता मार्गदर्शक पहा</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "तुम्ही 18 वर्षे किंवा त्यापेक्षा जास्त वयाचे आहात.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "तुम्ही एकमेव अर्जदार आहात आणि प्रत्येक चरण वैयक्तिकरित्या पूर्ण करीत आहात यास अपवाद म्हणजे हा अर्ज पूर्ण करण्यासाठी तुम्हाला Amazon कडून मिळालेली कोणतीही मदत.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "तुमच्याकडे आहे",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "कार्य करण्याचा अधिकार दस्तऐवजीकरण",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "लागू असल्यास तुम्ही पूर्व-रोजगाराची वैद्यकीय चाचणी पूर्ण करण्यास तयार आहात.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "तुम्ही पूर्व-रोजगार पार्श्वभूमी तपासणीस सहमती देता.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

@@ -8,7 +8,6 @@ import { uiState } from "../../reducers/ui.reducer";
 import { PRE_CONSENT } from "../../utils/constants/common";
 import AppLoader from "../common/AppLoader";
 import { BannerMessage } from "../common/BannerMessage";
-import FcraDisclosure from "../common/bgc/FcraDisclosure";
 import CounterMessageBanner from "../common/CounterMessageBanner";
 import { PAGE_ROUTES } from "../pageRoutes";
 import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
@@ -35,10 +34,10 @@ import ThankYou from "../us/thankYou/ThankYou";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
-import ShiftPreference from "../common/jobOpportunity/ShiftPreference";
+import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
 
 // Pages that have been migrated to MX
-import BackgroundCheck from "./bgc/BackgroundCheck";
+import AdditionalInformation from "./bgc/BackgroundCheck";
 import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
@@ -55,8 +54,6 @@ const {
   ASSESSMENT_CONSENT,
   ASSESSMENT_FINISHED,
   ASSESSMENT_NOT_ELIGIBLE,
-  BACKGROUND_CHECK,
-  BACKGROUND_CHECK_FCRA,
   CANDIDATE_WITHDRAWS,
   CONSENT,
   REVIEW_SUBMIT,
@@ -81,7 +78,8 @@ const {
   REHIRE_ELIGIBILITY_STATUS,
   NO_AVAILABLE_SHIFT,
   APPLICATIONID_NULL,
-  SHIFT_PREFERENCE
+  SHIFT_PREFERENCE,
+  ADDITIONAL_INFORMATION
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = ( props: MapStateToProps ) => {
@@ -114,11 +112,8 @@ export const DragonStoneAppUK = ( props: MapStateToProps ) => {
           <Route path={`/${CONTINGENT_OFFER}`} exact>
             <ContingencyOffer />
           </Route>
-          <Route path={`/${BACKGROUND_CHECK}`} exact>
-            <BackgroundCheck />
-          </Route>
-          <Route path={`/${BACKGROUND_CHECK_FCRA}`} exact>
-            <FcraDisclosure />
+          <Route path={`/${ADDITIONAL_INFORMATION}`} exact>
+            <AdditionalInformation />
           </Route>
           <Route path={`/${RESUME_APPLICATION}`} exact>
             <ResumeApplication />
@@ -190,7 +185,7 @@ export const DragonStoneAppUK = ( props: MapStateToProps ) => {
             <ApplicationIdNull />
           </Route>
           <Route path={`/${SHIFT_PREFERENCE}`} exact>
-            <ShiftPreference />
+            <ShiftPreferences />
           </Route>
         </Switch>
       </Router>

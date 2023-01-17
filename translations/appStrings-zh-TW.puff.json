@@ -88,9 +88,17 @@
       "value" : "建立應徵",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "開始申請",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "用戶資料政策",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK 求職者隱私聲明",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "我知道，索取的所有資訊都可能根據《關於保護私人擁有之個人資料的聯邦法》(Federal Law on the Protection of Personal Data in the Possession of Private Parties) 及其條例、準則和其他適用的資料隱私規定，以及公司對員工和/或應聘者的隱私聲明轉移。",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Amazon 的包容性文化讓 Amazonian 能夠為客戶提供最好的成果。如果您是身障人士，且在申請和僱用流程中需要住宿，請在太平洋時間週一至週五的早上 6 時至下午 4 時之間撥打 888-435-9287 聯絡應徵候選人住宿團隊 (ACAT)。欲了解更多資訊，請造訪 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "我們的包容性文化讓 Amazonian 能夠為我們的客戶提供最好的成果。如果您是有障礙人士並且在申請和招聘過程中需要進行調整，包括面試或入職過程的支援，請聯繫候選求職者調解團隊（ACAT），時間為格林威治標準時間星期一至星期五上午 7:00 至下午 4:00。如果直接從英國致電，請撥打 +44 800 086 9884。如果是從愛爾蘭致電，請撥打 +353 1800 851 489。如果您有需要在新職位上作出調整，並希望在第一天工作前提出請求，也可以聯絡我們。",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "檢視進度",
@@ -2443,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "請核取下列其中一個方塊",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "工作權文件",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "英國工作權檢查",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "為了開始就業，Amazon 必須檢查您的原始文件，證明您有權在英國工作。工作權文件範例包括但不限於",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "英國護照",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "永久居留卡",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "無限期居留印章",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "生物識別居住證",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "有關所有可接受的工作權文件的更多資訊和詳細內容，請參閱我們的<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>英國僱員工作授權指南</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "您年滿 18 歲以上。",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "您是唯一的申請人，除非您獲得 Amazon 的協助完成此次申請，否則您必須親自完成每個步驟。",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "您有",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "工作權文件",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "如果適用，您願意完成就業前醫療檢查。",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "您同意接受就業前的背景調查。",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

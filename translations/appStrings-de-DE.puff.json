@@ -88,9 +88,17 @@
       "value" : "Bewerbung erstellen",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Bewerbung starten",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Richtlinie für Benutzerdaten",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Datenschutzerklärung für Kandidaten in der EU/in GB.",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Mir ist bewusst, dass alle erfassten Daten gemäß dem Bundesgesetz über den Schutz personenbezogener Daten im Besitz privater Parteien und seiner Vorschriften, Richtlinien und anderer anwendbarer Bestimmungen zum Datenschutz sowie in Bezug auf die Datenschutzerklärung des Unternehmens für Mitarbeiter und/oder Bewerber übertragen werden können.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Unsere integrative Kultur befähigt Amazonier dazu, die besten Ergebnisse für unsere Kundschaft zu erzielen. Wenn du eine Behinderung hast und während des Bewerbungs- und Einstellungsverfahrens eine Unterkunft benötigst, wende dich bitte an das Applicant-Candidate Accommodation Team (ACAT) unter 888-435-9287, Montag bis Freitag von 6 bis 16 Uhr (Pazifische Zeit). Weitere Informationen findest du unter <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Unsere integrative Kultur befähigt Amazonier dazu, die besten Ergebnisse für unsere Kundschaft zu erzielen. Wenn du eine Behinderung hast und während des Bewerbungs- und Einstellungsprozesses eine Anpassung benötigst, einschließlich Unterstützung beim Vorstellungsgespräch oder beim Onboarding-Prozess, wende dich bitte montags bis freitags von 7.00 Uhr GMT bis 16.00 Uhr GMT an das Applicant Candidate Accommodation Team (ACAT). Wenn du direkt aus Großbritannien anrufst, wähle bitte +44 800 086 9884. Wenn du aus Irland anrufst, wähle bitte +353 1800 851 489. Du kannst uns auch kontaktieren, wenn du möglicherweise eine Anpassung in deiner neuen Rolle benötigst und vor Beginn deines ersten Tages eine Anfrage stellen möchtest.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Fortschritt anzeigen",
@@ -775,6 +787,14 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Wenn du eine SSN hast, musst du diese angeben. Andernfalls kann es zu Verzögerungen im Einstellungsprozess kommen, die dazu führen können, dass dein Startdatum verpasst wird und deine ausgewählte Schicht verloren geht.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Indem ich angebe, dass ich keine SSN habe, erkenne ich an, dass ich nicht für die Wisely Pay Card als Mittel zum Erhalt meines Gehalts in Betracht komme, bis ich eine SSN erhalte, und dass ich mein Gehalt nur durch direkte Überweisung oder physische Schecks erhalten kann. Indem ich fortfahre, bestätige ich, dass ich keine SSN habe. Ich verstehe, dass Amazon im Rahmen der gesetzlichen Bestimmungen eine erneute Überprüfung meines Hintergrunds durchführen wird, wenn ich meine SSN während des Einstellungsprozesses oder während meiner Beschäftigung ändere oder aktualisiere.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Indem ich angebe, dass ich keine SSN habe, erkenne ich an, dass ich nicht für die Wisely Pay Card als Mittel zum Erhalt meines Gehalts in Betracht komme, bis ich eine SSN erhalte, und dass ich mein Gehalt nur durch direkte Überweisung oder physische Schecks erhalten kann. Weiterhin verstehe ich, dass Amazon im Rahmen der gesetzlichen Bestimmungen eine erneute Überprüfung meines Hintergrunds durchführen wird, wenn ich meine SSN während des Einstellungsprozesses oder während meiner Beschäftigung ändere oder aktualisiere.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ich erkenne außerdem an, dass jede absichtliche Falschangabe meiner SSN von Amazon geprüft wird und zum Widerruf meines Stellenangebots oder, falls ich eingestellt werde, zur Kündigung meines Arbeitsverhältnisses führen kann.",
@@ -2443,6 +2463,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Bitte kreuze eines der folgenden Kästchen an",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Dokumente zur Arbeitsgenehmigung",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Überprüfung der Arbeitsgenehmigung für die UK",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Um deine Anstellung beginnen zu können, muss Amazon deine Originaldokumente überprüfen, die dein Recht belegen, im Vereinigten Königreich zu arbeiten. Dokumente zur Arbeitsgenehmigung sind unter anderem, aber nicht beschränkt auf",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Britischer Reisepass",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Daueraufenthaltsgenehmigung",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Stempel für unbefristete Aufenthaltserlaubnis",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometrische Aufenthaltserlaubnis",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Weitere Informationen und Einzelheiten zu allen akzeptablen Dokumenten zur Arbeitsgenehmigung findest du in unserem<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Leitfaden zur Arbeitsgenehmigung für britische Arbeitnehmer</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Du bist 18 Jahre oder älter.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Du bist der alleinige Antragsteller und musst jeden Schritt persönlich abschließen, sofern du keine Unterstützung von Amazon beim Ausfüllen dieses Antrags erhältst.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Du hast",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "die Dokumente zur Arbeitsgenehmigung",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Du bist bereit, dich gegebenenfalls vor der Einstellung einem medizinischen Test zu unterziehen.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Du erklärst dich mit einer Hintergrundüberprüfung vor der Einstellung einverstanden.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

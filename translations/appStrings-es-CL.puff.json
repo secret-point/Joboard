@@ -88,6 +88,10 @@
       "value" : "Crear solicitud",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Iniciar solicitud",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política sobre datos de usuario",
       "note" : "Text for the flyout user data policy title text"
@@ -771,6 +775,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "¿Estás seguro de que te gustaría proceder sin un número de seguro social (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Si tienes un número de seguro social (SSN), estás obligado a proporcionarlo. No hacerlo puede causar retrasos en el proceso de contratación que pueden llevar a perder tu fecha de inicio y tu turno seleccionado.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "También reconozco que Amazon considerará cualquier tergiversación intencional de mi número de seguro social y puede llevar a la revocación de mi oferta de trabajo o, si me contratan, a la terminación del empleo.",

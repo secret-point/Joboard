@@ -788,6 +788,10 @@
       "value" : "Se tiver um NISS, é obrigatório fornecê-lo. Se não o fizer, poderão ocorrer atrasos no processo de contratação, o que poderá levar ao incumprimento da sua data de início e à perda do turno selecionado.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Ao indicar que não tenho um NISS, reconheço que não serei elegível para o cartão de pagamento Wisely, como forma de receber o meu pagamento, até obter um NISS, e que apenas poderei receber o pagamento através de depósito direto ou cheques físicos. Ao continuar, confirmo que não tenho um NISS. Compreendo que, conforme permitido por lei, a Amazon irá realizar uma verificação de antecedentes de seguimento sobre mim, se eu alterar ou atualizar o meu NISS, durante o processo de integração ou durante o meu período de emprego.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
       "value" : "Ao indicar que não tenho um NISS, reconheço que não serei elegível para o cartão de pagamento Wisely, como forma de receber o meu pagamento, até obter um NISS, e que apenas poderei receber o pagamento através de depósito direto ou cheques físicos. Também compreendo que, conforme permitido por lei, a Amazon irá realizar uma verificação de antecedentes de seguimento sobre mim, se eu alterar ou atualizar o meu NISS, durante o processo de integração ou durante o meu período de emprego.",
       "note" : "Content in the no SSN modal"
@@ -2459,6 +2463,194 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Selecione uma das opções abaixo",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documentos de direito a trabalhar",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Verificação do direito a trabalhar no Reino Unido",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Para iniciar a sua contratação, a Amazon terá de verificar os seus documentos originais que comprovam o seu direito a trabalhar no Reino Unido. Os exemplos de documentos de direito a trabalhar incluem, entre outros",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Passaporte britânico",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Cartão de residência permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Carimbos de licença de permanência indefinida",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Dados biométricos da autorização de residência",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para mais informações e detalhes sobre todos os documentos aceitáveis de direito a trabalhar, consulte o nosso <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guia de autorização de trabalho de funcionários no Reino Unido</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Tem 18 anos ou mais.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "É o único candidato e concluirá pessoalmente cada passo, a menos que receba assistência da Amazon para concluir esta candidatura.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Tem",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "documentos de direito a trabalhar",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Está disposto a fazer um teste médico anterior à contratação, se aplicável.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Concorda com uma verificação de antecedentes anterior à contratação.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36-40 h/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25-35 h/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15-24 h/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 ou menos",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Sábado",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Domingo",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Segunda-feira",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Terça-feira",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Quarta-feira",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Quinta-feira",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Sexta-feira",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Qualquer",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Dias",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Noites",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Voltar para a seleção de turno",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Especifique as suas preferências de emprego",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Selecione a primeira data de início",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Selecione uma data de início no futuro",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Selecione o número de horas que pode trabalhar por semana",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "O seu visto poderá restringir o número de horas semanais que está legalmente autorizado a trabalhar. Se for o caso, escolha as opções que correspondem às suas restrições de visto.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Selecione pelo menos uma opção para o número de horas que pode trabalhar por semana.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Selecione todos os dias da semana em que pode trabalhar",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Tenha em atenção que a maioria dos nossos padrões de turnos incluirá pelo menos um dia do fim de semana e as preferências de turnos não são garantidas.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "DIAS DA SEMANA",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "FINS DE SEMANA",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Selecione pelo menos um dia da semana em que pode trabalhar.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Selecione o padrão de turnos em que pode trabalhar",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Selecione pelo menos uma opção.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Selecione as suas preferências de turno",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Pode enviar as suas preferências de turnos e entraremos em contacto consigo quando encontrarmos um turno que funcione para si.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Não vê um turno que funcione para si?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Insira as preferências de turno para continuar",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Não vê um turno que funcione para si?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

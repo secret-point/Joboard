@@ -15,7 +15,7 @@ import {
   FCRA_DISCLOSURE_TYPE,
   INFO_CARD_STEP_STATUS,
   SCHEDULE_FILTER_TYPE,
-  SELF_IDENTIFICATION_STEPS
+  SELF_IDENTIFICATION_STEPS, SHIFT_PATTERN
 } from "../enums/common";
 import {
   AdditionalBgcConfig,
@@ -1060,27 +1060,27 @@ export const localeToLanguageMap: { [key in Locale]: [string, string] } = {
 };
 
 export const shiftPreferenceWorkHour: ShiftPreferenceWorkHourConfig[] = [
-  { displayValue: "36 - 40hrs/wk", value: { minimumValue: 35, maximumvalue: 40 }, translationKey: "BB-kondo-shift-work-hour-36-to-40" },
-  { displayValue: "25 - 35hrs/wk", value: { minimumValue: 25, maximumvalue: 35 }, translationKey: "BB-kondo-shift-work-hour-25-to-35" },
-  { displayValue: "15 - 24hrs/wk", value: { minimumValue: 15, maximumvalue: 24 }, translationKey: "BB-kondo-shift-work-hour-15-to-24" },
-  { displayValue: "15 or less", value: { minimumValue: 0, maximumvalue: 15 }, translationKey: "BB-kondo-shift-work-hour-15-or-less" }
+  { displayValue: "36 - 40hrs/wk", value: { minimumValue: 35, maximumValue: 40 }, translationKey: "BB-kondo-shift-work-hour-36-to-40" },
+  { displayValue: "25 - 35hrs/wk", value: { minimumValue: 25, maximumValue: 35 }, translationKey: "BB-kondo-shift-work-hour-25-to-35" },
+  { displayValue: "15 - 24hrs/wk", value: { minimumValue: 15, maximumValue: 24 }, translationKey: "BB-kondo-shift-work-hour-15-to-24" },
+  { displayValue: "15 or less", value: { minimumValue: 0, maximumValue: 15 }, translationKey: "BB-kondo-shift-work-hour-15-or-less" }
 ];
 
 export const shiftPreferenceWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
-  { displayValue: "Saturday", value: "Saturday", translationKey: "BB-weekend-days-Saturday" },
-  { displayValue: "Sunday", value: "Sunday", translationKey: "BB-weekend-days-Sunday" }
+  { displayValue: "Saturday", value: DAYS_OF_WEEK.SATURDAY, translationKey: "BB-weekend-days-Saturday" },
+  { displayValue: "Sunday", value: DAYS_OF_WEEK.SUNDAY, translationKey: "BB-weekend-days-Sunday" }
 ];
 
 export const shiftPreferenceWeekDays: ShiftPreferenceWeekDaysConfig[] = [
-  { displayValue: "Monday", value: "Monday", translationKey: "BB-weekend-days-Monday" },
-  { displayValue: "Tuesday", value: "Tuesday", translationKey: "BB-weekend-days-Tuesday" },
-  { displayValue: "Wednesday", value: "Wednesday", translationKey: "BB-weekend-days-Wednesday" },
-  { displayValue: "Thursday", value: "Thursday", translationKey: "BB-weekend-days-Thursday" },
-  { displayValue: "Friday", value: "Friday", translationKey: "BB-weekend-days-Friday" }
+  { displayValue: "Monday", value: DAYS_OF_WEEK.MONDAY, translationKey: "BB-weekend-days-Monday" },
+  { displayValue: "Tuesday", value: DAYS_OF_WEEK.TUESDAY, translationKey: "BB-weekend-days-Tuesday" },
+  { displayValue: "Wednesday", value: DAYS_OF_WEEK.WEDNESDAY, translationKey: "BB-weekend-days-Wednesday" },
+  { displayValue: "Thursday", value: DAYS_OF_WEEK.THURSDAY, translationKey: "BB-weekend-days-Thursday" },
+  { displayValue: "Friday", value: DAYS_OF_WEEK.FRIDAY, translationKey: "BB-weekend-days-Friday" }
 ];
 
 export const shiftPreferenceShiftPattern: ShiftPreferenceShiftPatternConfig[] = [
-  { displayValue: "Any", value: "Any", translationKey: "BB-kondo-shift-shift-pattern-Any" },
-  { displayValue: "Days", value: "Days", translationKey: "BB-kondo-shift-shift-pattern-Days" },
-  { displayValue: "Nights", value: "Nights", translationKey: "BB-kondo-shift-shift-pattern-Nights" }
+  { displayValue: SHIFT_PATTERN.ANY, value: SHIFT_PATTERN.ANY, translationKey: "BB-kondo-shift-shift-pattern-Any" },
+  { displayValue: SHIFT_PATTERN.DAYS, value: SHIFT_PATTERN.DAYS, translationKey: "BB-kondo-shift-shift-pattern-Days" },
+  { displayValue: SHIFT_PATTERN.NIGHTS, value: SHIFT_PATTERN.NIGHTS, translationKey: "BB-kondo-shift-shift-pattern-Nights" }
 ];

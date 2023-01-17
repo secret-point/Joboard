@@ -788,6 +788,14 @@
       "value" : "Si vous avez un numéro de sécurité sociale (SSN), vous devez le fournir. Si vous ne le fournissez pas, cela peut entraîner des retards dans le processus de recrutement, ce qui pourrait vous faire rater votre date de prise de poste ou vous empêcher de respecter les horaires de travail que vous avez sélectionnés.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "En indiquant que je n'ai pas de numéro de sécurité sociale (SSN), je reconnais que je ne serai pas éligible à la carte Wisely Pay pour recevoir mon salaire tant que je n'aurai pas obtenu un numéro de sécurité sociale (SSN), et que je ne pourrai recevoir le versement de mon salaire que par versement direct ou par chèques physiques. En continuant, je confirme que je n'ai pas de numéro de sécurité sociale (SSN). Je comprends que, conformément à la loi, Amazon procédera à une vérification de suivi de mes antécédents si je change ou mets à jour mon numéro de sécurité sociale (SSN) pendant le processus de recrutement ou pendant l’exécution de mon contrat de travail.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "En indiquant que je n'ai pas de numéro de sécurité sociale (SSN), je reconnais que je ne serai pas éligible à la carte Wisely Pay pour recevoir mon salaire tant que je n'aurai pas obtenu un numéro de sécurité sociale (SSN), et que je ne pourrai recevoir le versement de mon salaire que par versement direct ou par chèques physiques. Je comprends que, conformément à la loi, Amazon procédera à une vérification de suivi de mes antécédents si je change ou mets à jour mon numéro de sécurité sociale (SSN) pendant le processus de recrutement ou pendant l’exécution de mon contrat de travail.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon numéro de sécurité sociale (SSN) sera prise en compte par Amazon et pourra entraîner la révocation de mon offre d'emploi ou, si je suis recruté(e), la résiliation de mon contrat de travail.",
       "note" : "Content in the no SSN modal"
@@ -2455,6 +2463,194 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Cochez l’une des cases ci-dessous",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documentation donnant le droit de travailler",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Contrôle du droit de travailler au Royaume-Uni",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Afin de commencer le processus de recrutement, Amazon doit vérifier le ou les documents originaux prouvant votre droit de travailler au Royaume-Uni. Les exemples de documents donnant le droit de travailler incluent, sans toutefois s'y limiter",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Passeport britannique",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Carte de résidence permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Tampons d'autorisation de séjour pour congé à durée indéfinie",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Titre de séjour biométrique",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Pour plus d'informations et de détails sur tous les documents acceptés donnant le droit de travailler, consultez notre <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>guide d'autorisation de travail des employés au Royaume-Uni</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Vous êtes âgé de 18 ans ou plus.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Vous êtes candidat unique et devez effectuer personnellement chaque étape, à moins que vous ne receviez une assistance de la part d'Amazon pour compléter cette candidature.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Vous avez",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "la documentation sur le droit au travail",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Vous acceptez de passer un examen médical préalable au recrutement, le cas échéant.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Vous consentez à une vérification de vos antécédents avant l'embauche.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 à 40 heures par semaine",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 à 35 heures par semaine",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 à 24 h par semaine",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 heures ou moins",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Samedi",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Dimanche",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Lundi",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Mardi",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Mercredi",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Jeudi",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Vendredi",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Tout",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Jours",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Nuits",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Revenir à la sélection des quarts de travail",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Spécifiez vos préférences en matière de postes",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Sélectionnez la date de début la plus proche",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Sélectionnez une date de début dans le futur",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Sélectionnez le nombre d'heures de travail hebdomadaires que vous pouvez effectuer",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Votre visa peut limiter le nombre d'heures de travail par semaine que vous êtes légalement autorisé à effectuer. Si tel est le cas, choisissez les options qui correspondent aux restrictions de votre visa.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Sélectionnez au moins une option pour le nombre d'heures de travail que vous pouvez effectuer par semaine.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Sélectionnez tous les jours de la semaine pendant lesquels vous pouvez travailler",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Remarque : la plupart des modèles de quarts de travail à assurer incluent au moins un jour du week-end et l’attribution des quarts de travail sélectionnés ne peut pas être garantie.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "JOURS DE LA SEMAINE",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "WEEK-ENDS",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Sélectionnez au moins un jour de la semaine pendant lequel vous pouvez travailler.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Sélectionnez le modèle de créneaux horaires que vous êtes capable d’honorer",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Sélectionnez au moins une option.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Sélectionnez vos préférences en matière de quarts de travail",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Vous pouvez envoyer vos préférences en matière de créneaux horaires et nous vous contacterons dès que nous trouverons un créneau horaire qui vous convient.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Vous ne trouvez pas un quart de travail qui vous convient ?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Saisissez vos préférences en matière d’horaires pour continuer",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Vous ne trouvez pas un quart de travail qui vous convient ?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

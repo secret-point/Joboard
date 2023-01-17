@@ -88,9 +88,17 @@
       "value" : "விண்ணப்பத்தை உருவாக்கு",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "விண்ணப்பத்தைத் தொடங்குக",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "பயனர் தரவுக் கொள்கை",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK விண்ணப்பதாரருக்கான தனியுரிமை அறிக்கை",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "சேகரிக்கப்பட்ட அனைத்து தகவல்களும், ‘தனிப்பட்ட தரவைப் பாதுகாப்பதற்கான கூட்டாட்சி சட்டத்தின்படி’ தனிப்பட்ட தரப்புகள் மற்றும் அதன் ஒழுங்குமுறைகள், வழிகாட்டுதல்கள் மற்றும் தரவு தனியுரிமை தொடர்பான பிற பொருந்தக்கூடிய விதிகள் மற்றும் பணியாளர்கள் மற்றும்/அல்லது விண்ணப்பதாரர்களுக்கான நிறுவனத்தின் தனியுரிமை அறிக்கைக்கு இணங்க மாற்றப்படலாம் என்பதை நான் அறிவேன்.",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "நீங்கள் சமூகப் பாதுகாப்பு எண் (SSN) இல்லாமல் தொடர விரும்புகிறீர்களா?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "உங்களிடம் SSN இருந்தால், அதை வழங்க வேண்டும். அவ்வாறு செய்யத் தவறினால் பணியமர்த்தல் செயல்முறையில் தாமதம் ஏற்படலாம், இதனால் உங்கள் தொடக்கத் தேதியையும் நீங்கள் தேர்ந்தெடுத்த ஷிஃப்ட் நேரத்தையும் இழக்க நேரிடலாம்.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "எனது SSNஐ வேண்டுமென்றே தவறாகக் குறிப்பிடுவது Amazonஆல் பரிசீலிக்கப்பட்டு இதனால் எனது வேலை வாய்ப்பு திரும்பப் பெறப்படலாம் அல்லது நான் பணியமர்த்தப்பட்டால், நான் வேலையிலிருந்து நீக்கப்படலாம் என்பதையும் நான் ஒப்புக்கொள்கிறேன்,.",

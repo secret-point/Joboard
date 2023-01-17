@@ -88,6 +88,10 @@
       "value" : "Crear solicitud",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Iniciar aplicación",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Política de datos de usuario",
       "note" : "Text for the flyout user data policy title text"
@@ -127,6 +131,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Nuestra cultura inclusiva permite a los Amazonians dar los mejores resultados para nuestros clientes. Si tienes una discapacidad y requieres una adaptación especial durante el proceso de solicitud y contratación, ponte en contacto con el equipo de adaptaciones especiales de postulantes y candidatos (ACAT) al 888-435-9287, de lunes a viernes de 6 a. m. a 4 p. m., hora del Pacífico. Para más información, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nuestra cultura inclusiva permite a los Amazonians dar los mejores resultados para nuestros clientes. Si tienes una discapacidad y requieres una adaptación durante el proceso de solicitud y contratación, incluido el soporte para la entrevista o proceso de incorporación, ponte en contacto con el Equipo de Adaptación del Candidato Aspirante (ACAT), de lunes a viernes de 7:00 am GMT a 4:00 pm GMT. Si llamas desde el Reino Unido, por favor marca al +44 800 086 9884. Si llamas desde Irlanda, por favor marca al +353 1800 851 489. También puedes contactarnos si necesitas una adaptación en tu nuevo rol y quieres iniciar una solicitud antes de comenzar tu primer día.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver progreso",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "¿Estás seguro de que deseas proceder sin un Número de Seguridad Social (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Si tienes un SSN, estás obligado a proporcionarlo. No hacerlo puede causar retrasos en el proceso de contratación que pueden llevar a perder tu fecha de inicio y perder tu turno seleccionado.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "También reconozco que cualquier tergiversación intencional de mi SSN será considerada por Amazon, y puede llevar a la revocación de mi oferta de empleo o, si me contratan, a la cancelación de mi empleo.",

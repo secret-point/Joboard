@@ -88,9 +88,17 @@
       "value" : "आवेदन बनाएं",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "ऐप्लिकेशन शुरू करें",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "यूज़र डेटा पॉलिसी",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK उम्मीदवार की गोपनीयता सूचना",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "मुझे पता है कि एकत्रित की गई सभी जानकारी निजी पक्षों के कब्जे में व्यक्तिगत डेटा की सुरक्षा पर संघीय कानून और डेटा गोपनीयता पर इसके नियमों, दिशानिर्देशों और अन्य लागू प्रावधानों के साथ-साथ कर्मचारियों के लिए कंपनी की गोपनीयता सूचना के संदर्भ में स्थानांतरित की जा सकती है। और/या उम्मीदवार.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "हमारी समावेशी संस्कृति Amazonians को हमारे ग्राहकों के लिए सर्वोत्तम परिणाम देने का अधिकार देती है. अगर आप विकलांग हैं और आवेदन और भर्ती प्रक्रिया के दौरान आवास की आवश्यकता है, तो कृपया आवेदक-उम्मीदवार आवास टीम (ACAT) से 888-435-9287 पर, सोमवार से शुक्रवार 6 AM से 4 PM प्रशांत समय तक संपर्क करें. अधिक जानकारी के लिए, कृपया <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> पर जाएं",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "हमारी समावेशी संस्कृति Amazonians को हमारे ग्राहकों के लिए सर्वोत्तम परिणाम देने में सक्षम बनाती है. अगर आप विकलांग हैं और साक्षात्कार या ऑनबोर्डिंग प्रक्रिया के लिए समर्थन सहित आवेदन और भर्ती प्रक्रिया के दौरान समायोजन की ज़रूरत है, तो कृपया आवेदक-उम्मीदवार आवास टीम (ACAT) से संपर्क करें, सोमवार से शुक्रवार 7:00 am GMT - 4:00 pm GMT. अगर यूनाइटेड किंगडम से सीधे कॉल कर रहे हैं तो, कृपया +44 800 086 9884 डायल करें. अगर आयरलैंड से कॉल कर रहे हैं तो, कृपया +353 1800 851 489 डायल करें. अगर आपको अपनी नई भूमिका में समायोजन की ज़रूरत होती है और आप अपना पहला दिन शुरू करने से पहले अनुरोध करना चाहते हैं, तो आप हमसे संपर्क भी कर सकते हैं.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "प्रगति देखें",
@@ -2443,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "कृपया नीचे दिए गए बॉक्स में से एक चिन्हित करें",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "काम करने के अधिकार का दस्तावेज़ीकरण",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK काम करने का अधिकार जांच",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "अपना रोज़गार शुरू करने के लिए, Amazon को आपके UK में काम करने के अधिकार को साबित करने वाले आपके मूल दस्तावेज़ (दस्तावेज़ों) की जांच जरूर करता है. काम करने के अधिकार का दस्तावेज़ के उदाहरणों में शामिल हैं, लेकिन इन तक सीमित नहीं हैं",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "ब्रिटिश पासपोर्ट",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "स्थायी निवास कार्ड",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "स्टैम्प बने रहने के लिए अनिश्चितकालीन अवकाश",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "बायोमेट्रिक आवास परमिट",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "काम करने के अधिकार के सभी स्वीकार्य दस्तावेज़ों की अधिक जानकारी और विवरण के लिए, कृपया हमारी<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य मान्यता गाइड</a> देखें.",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "आपकी आयु 18 वर्ष या उससे अधिक है.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "आप एकमात्र आवेदक हैं और व्यक्तिगत रूप से प्रत्येक चरण को पूरा करेंगे जब तक कि आपको इस आवेदन को पूरा करने के लिए Amazon से कोई सहायता न मिले.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "आपके पास हैं",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "काम करने के अधिकार का दस्तावेज़ीकरण",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "अगर लागू हो, तो आप रोज़गार से पूर्व मेडिकल टेस्ट पूरा करने के लिए तैयार हैं.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "आप पूर्व-रोज़गार पृष्ठभूमि की जांच के लिए सहमति देते हैं.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

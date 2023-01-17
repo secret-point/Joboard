@@ -784,6 +784,10 @@
       "value" : "Sei sicuro di voler procedere senza un numero di previdenza sociale (SSN)?",
       "note" : "Title for the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Se hai un SSN, sei tenuto a fornirlo. In caso contrario, il processo di assunzione potrebbe subire dei ritardi, con il rischio di perdere la data di inizio e il turno prescelto.",
+      "note" : "Warning banner in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Riconosco inoltre che qualsiasi dichiarazione mendace intenzionale del mio SSN sarà presa in esame da Amazon e può comportare la revoca della mia offerta di lavoro o, in caso di assunzione, la cessazione del rapporto di lavoro.",
       "note" : "Content in the no SSN modal"

@@ -88,6 +88,10 @@
       "value" : "Vytvořit žádost",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Začít se žádostí",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Zásady ochrany uživatelských údajů",
       "note" : "Text for the flyout user data policy title text"
@@ -131,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Naše inkluzivní kultura umožňuje zaměstnancům společnosti Amazon poskytovat našim zákazníkům ty nejlepší služby. Pokud máte zdravotní postižení a potřebujete během procesu podávání přihlášek a přijímacího procesu přizpůsobit podmínky, kontaktujte prosím tým pro přizpůsobení podmínek uchazečů (ACAT) na telefonním čísle 888-435-9287, od pondělí do pátku od 6:00 do 16:00 pacifického času. Další informace najdete na stránce <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Naše inkluzivní kultura umožňuje zaměstnancům společnosti Amazon poskytovat našim zákazníkům ty nejlepší výsledky. Pokud máte zdravotní postižení a potřebujete úpravu během procesu žádosti a náboru, včetně podpory pro pohovor nebo proces nástupu, kontaktujte prosím tým pro ubytování žadatelů a kandidátů (ACAT) od pondělí do pátku od 7:00 do 16:00 GMT. Pokud voláte přímo ze Spojeného království, vytočte číslo +44 800 086 9884. Pokud voláte z Irska, vytočte číslo +353 1800 851 489. Můžete nás také kontaktovat, pokud budete potřebovat úpravu ve své nové roli a chtěli byste iniciovat žádost před zahájením svého prvního dne.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Zobrazit postup",
@@ -779,6 +787,10 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Pokud máte SSN, musíte ho uvést. Pokud tak neučiníte, může dojít ke zpoždění náborového procesu, což může vést ke zmeškání data nástupu a ztrátě vybrané směny.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Uvedením, že nemám SSN, beru na vědomí, že dokud nezískám SSN, nebudu mít nárok na kartu Wisely Pay jako prostředek pro příjem mzdy a budu moci dostávat mzdu pouze prostřednictvím přímého vkladu nebo fyzických šeků. Pokračováním potvrzuji, že nemám SSN. Beru na vědomí, že v souladu se zákonem společnost Amazon provede následnou prověrku, pokud během přijímacího procesu nebo v průběhu zaměstnání změním nebo aktualizuji své SSN.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Rovněž beru na vědomí, že jakékoli úmyslné uvedení nesprávného údaje o mém SSN bude společností Amazon zváženo a může vést k odvolání nabídky zaměstnání nebo, pokud budu přijat/a, k ukončení pracovního poměru.",

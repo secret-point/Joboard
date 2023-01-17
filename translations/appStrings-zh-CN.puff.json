@@ -96,6 +96,10 @@
       "value" : "用户数据政策",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "欧盟/英国应聘者隐私声明",
+      "note" : "Text for the flyout Kondo user data policy title text"
+    },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "我了解，收集的所有信息均可根据《保护私人持有个人数据的联邦法律（Federal Law on the Protection of Personal Data in the Possession of Private Parties）》及其规章、准则和其他有关数据隐私的适用条款，以及按照公司员工和/或候选人隐私声明进行转移。",
       "note" : "Text for the flyout MX user data policy body text"
@@ -131,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "我们的包容文化使得亚马逊员工能够为客户提供最好的成果。如果您是残障人士且在应聘和招聘过程中需要便利设施，请在太平洋时间周一至周五上午 6 点至下午 4 点致电 888-435-9287 与申请人-候选人便利设施团队 (ACAT) 联系。了解更多信息，请访问 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "我们的包容文化使得亚马逊员工能够为客户提供最好的成果。如果您患有残疾，并且需要在申请和招聘流程中进行调整，包括在面试或入职流程中需要帮助，请在格林尼治标准时间周一至周五上午 7:00 至下午 4:00 联系残障应聘者帮助团队 (ACAT)。如果是在英国境内，请拨打 +44 800 086 9884。如果是在爱尔兰，请拨打 +353 1800 851 489。如果您需要调整新职务，并且想在入职第一天前提出申请，也可以联系我们。",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "查看进度",
@@ -779,6 +787,10 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "如果您有 SSN，则需要提供 SSN。否则可能会造成招聘流程延迟，从而可能导致错过开始工作的日期和失去所选的班次。",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "确认没有 SSN 即表示我知晓在获得 SSN 之前，我将无法使用 Wisely Pay 卡收款，并且我的收入只能通过直接存款或实物支票支付。确定继续即表示本人确认没有 SSN。本人理解，如果本人在入职流程或受雇期间更改或更新本人的社会保障号（SSN），在法律允许的情况下，亚马逊将对本人进行进一步的背景调查。",
+      "note" : "Old deprecated version of the content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "本人也知悉，任何亚马逊认为是故意虚报 SSN 的情况都可能会导致撤销本人的聘用，或者如果本人已受雇，则可能会终止与本人的雇佣关系。",

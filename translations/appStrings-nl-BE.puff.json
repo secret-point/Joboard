@@ -788,6 +788,10 @@
       "value" : "Als je een SSN hebt, moet je dat opgeven. Doe je dat niet, dan kan dat leiden tot vertragingen in het wervingsproces, wat kan leiden tot het missen van je startdatum en het verliezen van je geselecteerde dienst.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Door aan te geven dat ik geen SSN heb, erken ik dat ik, totdat ik een SSN heb verkregen, niet in aanmerking kom voor de Wisely Pay Card als middel om mijn salaris te ontvangen en dat ik alleen salaris kan ontvangen via directe aanbetaling of fysieke cheques. Ik begrijp dat Amazon, zoals wettelijk is toegestaan, een achtergrondcontrole naar mij zal uitvoeren als ik mijn SSN wijzig of bijwerk tijdens het indiensttredingsproces of tijdens mijn dienstverband.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ik erken ook dat elke opzettelijke verkeerde voorstelling van mijn SSN door Amazon in overweging zal worden genomen en kan leiden tot intrekking van de jobaanbieding of, als ik word aangenomen, beëindiging van mijn dienstverband.",
       "note" : "Content in the no SSN modal"

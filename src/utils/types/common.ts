@@ -11,6 +11,8 @@ import {
   QUERY_PARAMETER_NAME,
   SCHEDULE_FILTER_TYPE,
   SELF_IDENTIFICATION_STEPS,
+  SHIFT_PATTERN,
+  UPDATE_APPLICATION_API_TYPE,
   WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
@@ -63,6 +65,9 @@ export interface Filter {
   schedulePreferences: SchedulePreference;
   in: In;
   eq: Eq;
+  startDateBegin?: string;
+  startDateEnd?: string;
+  city?: string[];
 }
 
 export interface SchedulePreference {
@@ -973,7 +978,7 @@ export interface DetailedRadioErrorType {
 
 export interface ShiftPreferenceWorkHour {
   minimumValue: number;
-  maximumvalue: number;
+  maximumValue: number;
 }
 
 export interface ShiftPreferenceWorkHourConfig {
@@ -992,4 +997,16 @@ export interface ShiftPreferenceShiftPatternConfig {
   displayValue: string;
   translationKey: string;
   value: string;
+}
+export interface ShiftPreferenceRequest {
+  shiftPreference: {
+    candidateTimezone: string;
+    daysOfWeek: DAYS_OF_WEEK[];
+    hoursPerWeek: ShiftPreferenceWorkHour[];
+    earliestStartDate: string;
+    jobRoles: string[];
+    city?: string[];
+    shiftTimePattern: SHIFT_PATTERN;
+  };
+  type: UPDATE_APPLICATION_API_TYPE;
 }

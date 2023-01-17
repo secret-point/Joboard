@@ -88,9 +88,17 @@
       "value" : "Opret ansøgning",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Start ansøgning",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Politik om brugerdata",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Fortrolighedserklæring for EU/UK-kandidater",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Jeg er opmærksom på, at alle indsamlede oplysninger kan overføres i henhold til den føderale lov om beskyttelse af personoplysninger i besiddelse af private parter og dens regler, retningslinjer og andre gældende bestemmelser om databeskyttelse, samt i form af fortrolighedserklæring for virksomheden for medarbejdere og/eller kandidater.",
@@ -771,6 +779,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "Er du sikker på, at du gerne vil fortsætte uden et SSN-nummer (CPR)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Hvis du har et SSN, er du forpligtet til at oplyse det. Hvis du ikke gør det, kan det medføre forsinkelser i ansættelsesprocessen, hvilket kan føre til, at du går glip af din startdato, og mister din valgte vagt.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Jeg anerkender også, at enhver forsætlig vildledning i forbindelse med mit SSN (CPR) vil blive taget i betragtning af Amazon og kan føre til tilbagekaldelse af mit jobtilbud eller, hvis jeg bliver ansat, til opsigelse af min ansættelse.",

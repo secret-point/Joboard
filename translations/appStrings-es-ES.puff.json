@@ -136,6 +136,10 @@
       "value" : "Nuestra cultura empresarial inclusiva permite a los empleados de Amazon ofrecer los mejores resultados a nuestros clientes. Si tienes una discapacidad y necesitas una adaptación durante el proceso de solicitud y contratación, ponte en contacto con el equipo de adaptaciones para solicitantes y candidatos (ACAT) al 888-435-9287, de lunes a viernes de 6 a 16 h, hora del Pacífico. Para obtener más información, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Nuestra cultura empresarial inclusiva permite a los empleados de Amazon ofrecer los mejores resultados a nuestros clientes. Si tienes una discapacidad y necesitas un ajuste durante el proceso de postulación y contratación, incluido el apoyo para la entrevista o el proceso de incorporación, ponte en contacto con el equipo de adaptación de postulantes y candidatos (ACAT) de lunes a viernes, de 7:00 a 16:00 h GMT. Si llamas directamente desde el Reino Unido, llama al +44 800 086 9884. Si llamas desde Irlanda, llama al +353 1800 851 489. También puedes contactarnos si necesitas un ajuste en tu nueva función y deseas iniciar una solicitud antes de empezar el primer día.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Ver progreso",
       "note" : "Text for view progress flyout title"
@@ -2451,6 +2455,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Marca una de las siguientes casillas",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documentación sobre el derecho a trabajar",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Verificación del derecho a trabajar en Reino Unido",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Para empezar a trabajar, Amazon debe comprobar el(los) documento(s) original(es) que acredite(n) tu derecho a trabajar en el Reino Unido. Entre los ejemplos de documentos sobre el derecho a trabajar se encuentra, entre otros",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Pasaporte británico",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Tarjeta de residencia permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Sellos de permiso de residencia indefinido",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Permiso de residencia biométrico",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para obtener más información y detalles sobre todos los documentos aceptables sobre el derecho a trabajar, consulta nuestra <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización a trabajar para empleados de Reino Unido</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Tienes 18 años o más.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Eres el único postulante y deberás completar personalmente cada paso, a menos que recibas ayuda de Amazon para completar esta postulación.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Tienes",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "la documentación sobre el derecho a trabajar",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Estás dispuesto a completar un examen médico previo al empleo, si procede.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Aceptas una verificación de antecedentes previa al empleo.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

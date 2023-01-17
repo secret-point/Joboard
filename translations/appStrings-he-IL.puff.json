@@ -88,9 +88,17 @@
       "value" : "יצירת טופס מועמדות",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "התחלת הגשת מועמדות",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "מדיניות נתוני משתמשים",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "הודעה בנושא פרטיות של מועמד ה-EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "ידוע לי שכל המידע שנאסף עשוי להיות מועבר בהתאם לחוק הפדרלי להגנה על נתונים אישיים ברשותם של צדדים פרטיים והתקנות, ההנחיות והוראות רלוונטיות אחרות בנושא פרטיות נתונים, כמו גם במונחים של הודעה בנושא פרטיות של החברה לעובדים ו/או מועמדים.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "התרבות הייחודית שלנו מעצימה כל Amazonian לספק את התוצאות הטובות ביותר ללקוחותינו. אם יש לך מוגבלות ויש לך צורך בהתאמות במהלך תהליך הגשת המועמדות והגיוס, יש ליצור קשר עם צוות התיאום של מועמדי העבודה (ACAT) בטלפון 888-435-9287, בימים שני עד שישי מ-6:00 עד 16:00 אזור הזמן הפסיפי. לקבלת מידע נוסף, ניתן לבקר בכתובת <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "התרבות הייחודית שלנו מעצימה כל Amazonian לספק את התוצאות הטובות ביותר ללקוחותינו. אם יש לך מוגבלות ונדרשת התאמה במהלך תהליך הגשת המועמדות וההעסקה, כולל תמיכה בתהליך הראיון או העלייה למטוס, יש ליצור קשר עם צוות אירוח המועמד (ACAT), בימים שני עד שישי בין השעות 7:00 GMT - 16:00 GMT. כשמתקשרים ישירות מבריטניה, יש לחייג +44 800 086 9884. כשמתקשרים מאירלנד, יש לחייג +353 1800 851 489. ניתן גם ליצור איתנו קשר אם ייתכן שנדרשת התאמה בתפקידך החדש וברצונך ליזום בקשה לפני תחילת היום הראשון שלך.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "הצגת ההתקדמות",
@@ -771,6 +783,14 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "האם אתה בטוח שתרצה להמשיך ללא מספר ביטוח לאומי (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "אם יש לך SSN, יידרש ממך לספק אותו. אם לא, הדבר עלול לגרום לעיכובים בתהליך ההעסקה, מה שעלול להוביל להחמצת תאריך ההתחלה ולאבדן המשמרת שבחרת.",
+      "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "בכך שציינתי שאין לי SSN, אני נותן/ת הסכמתי לכך שלא אהיה זכאי לכרטיס Wisely Pay כאמצעי לקבלת השכר שלי עד שאקבל SSN, וכי אוכל לקבל תשלום רק באמצעות הפקדה ישירה או צ׳קים פיזיים. בכך שאני ממשיך/ה, אני מאשר/ת כי אין לי SSN. אני מבין/ה שככל המותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
       "value" : "בכך שציינתי שאין לי SSN, ניתנת הסכמתי כי לא אעמוד בדרישות לכרטיס Wisely Pay כאמצעי לקבלת השכר שלי עד שאקבל SSN, וכי אוכל לקבל תשלום רק באמצעות הפקדה ישירה או צ׳ק פיזי. בנוסף, ברור לי שכפי שמותר בחוק, Amazon תערוך בדיקת רקע מעודכנת אודותיי אם אשנה או אעדכן את ה-SSN שלי במהלך תהליך הקליטה או במהלך העסקתי.",
@@ -2443,6 +2463,194 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "יש לסמן את אחת התיבות להלן",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "מסמכי אישור עבודה",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "בדיקת אישור עבודה בבריטניה",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "כדי להתחיל בהעסקתך, Amazon חייבת לבדוק את המסמכים המקוריים שלך המוכיחים את זכותך לעבוד בבריטניה. דוגמאות למסמכי הזכות לעבוד כוללות, אך אינן מוגבלות ל-",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "דרכון בריטי",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "תעודת תושבות קבע",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "חותמות Indefinite Leave to Remain (תכנית הגירה בריטית)",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "היתר שהייה ביומטרי",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "למידע נוסף ופרטים על כל המסמכים המקובלים לאישור עבודה, באפשרותך לעיין<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> במדריך לאישור העבודה לעובדים בבריטניה</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "גילך 18 ומעלה.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "אתם מגישי המועמדות הבלעדיים ותמלאו אישית כל שלב אלא אם תקבלו סיוע כלשהו מ-Amazon להשלמת טופס הגשת מועמדות הזה.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "יש לך",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "תיעוד של הזכות לעבוד",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "אם רלוונטי, אתם נותנים את הסכמתכם לבדיקה רפואית טרום העסקה.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "הסכמתך לבדיקת רקע לפני העסקתך.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36-40 שעות שבועיות",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25-35 שעות שבועיות",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15-24 שעות שבועיות",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 או פחות",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "יום שבת",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "יום ראשון",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "יום שני",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "יום שלישי",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "יום רביעי",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "יום חמישי",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "יום שישי",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "הכול",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "ימים",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "ערבים",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "חזרה לבחירת משמרת",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "יש לציין את העדפות המשרה שלך",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "יש לבחור את תאריך ההתחלה המוקדם ביותר",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "יש לבחור תאריך התחלה בעתיד",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "יש לבחור את מספר השעות שבהן באפשרותך לעבוד בשבוע",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "הוויזה שלך עשויה להגביל את מספר השעות השבועיות בהן באפשרותך לעבוד על פי חוק. אם זה המקרה, יש לבחור באפשרויות התואמות להגבלות הוויזה שלך.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "יש לבחור לפחות אפשרות אחת עבור מספר השעות שבאפשרותך לעבוד בשבוע.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "יש לבחור את כל ימי השבוע שבהם באפשרותך לעבוד",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "לתשומת לבך, רוב דפוסי המשמרת שלנו כוללים לפחות יום אחד בסוף השבוע והעדפות המשמרות אינן מובטחות.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "ימי חול",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "סופי שבוע",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "יש לבחור לפחות יום אחד בשבוע שבו באפשרותך לעבוד.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "יש לבחור את דפוס המשמרת שלפיו באפשרותך לעבוד",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "יש לבחור אפשרות אחת לפחות.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "יש לבחור את העדפות המשמרת שלך",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "באפשרותך לשלוח את העדפות המשמרת שלך ואנחנו ניצור איתך קשר כאשר נמצא משמרת שמתאימה לך.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "אינך רואה משמרת שמתאימה לך?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "יש להזין את העדפות המשמרת כדי להמשיך",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "אינך רואה משמרת שמתאימה לך?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

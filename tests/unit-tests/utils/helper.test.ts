@@ -70,7 +70,7 @@ import {
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
   shouldPrefillAdditionalBgcInfo,
-  showErrorMessage,
+  showErrorMessage, UpdateHoursPerWeekHelper,
   validateInput,
   validateNonFcraSignatures
 } from "../../../src/utils/helper";
@@ -1228,4 +1228,23 @@ describe("isSSNValid()", () => {
       expect(storeGetStateSpy).toHaveBeenCalledTimes(2);
     });
   });
+});
+
+test("UpdateHoursPerWeekHelper", () => {
+  const testHourPerWeek = [{ minimumValue: 20, maximumValue: 30 }, { minimumValue: 0, maximumValue: 19 }];
+  expect(UpdateHoursPerWeekHelper([], { minimumValue: 20, maximumValue: 30 }))
+    .toEqual([{ minimumValue: 20, maximumValue: 30 }]);
+
+  expect(UpdateHoursPerWeekHelper([...testHourPerWeek], { minimumValue: 20, maximumValue: 30 }))
+    .toEqual([{ minimumValue: 0, maximumValue: 19 }]);
+
+  expect(UpdateHoursPerWeekHelper([...testHourPerWeek], { minimumValue: 0, maximumValue: 19 }))
+    .toEqual([{ minimumValue: 20, maximumValue: 30 }]);
+
+  expect(UpdateHoursPerWeekHelper([...testHourPerWeek], { minimumValue: 31, maximumValue: 40 }))
+    .toEqual([
+      { minimumValue: 20, maximumValue: 30 },
+      { minimumValue: 0, maximumValue: 19 },
+      { minimumValue: 31, maximumValue: 40 }
+    ]);
 });

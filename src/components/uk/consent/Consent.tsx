@@ -210,7 +210,7 @@ export const Consent = (props: MapStateToProps) => {
             } else {
               const payload: CreateApplicationRequestDS = {
                 jobId,
-                dspEnabled: job.results?.dspEnabled,
+                // dspEnabled: job.results?.dspEnabled, // TODO will need to enabled this in future once dspEnabled is enabled in UK
               };
               boundCreateApplicationDS(payload, (application: Application) => routeToAppPageWithPath(JOB_OPPORTUNITIES, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]));
             }

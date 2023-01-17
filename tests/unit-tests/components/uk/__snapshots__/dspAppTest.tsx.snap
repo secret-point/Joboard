@@ -62,15 +62,9 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/bgc"
+        path="/additional-information"
       >
         <Connect(BackgroundCheck) />
-      </Route>
-      <Route
-        exact={true}
-        path="/bgc/fcra"
-      >
-        <Connect(FcraDisclosure) />
       </Route>
       <Route
         exact={true}
@@ -212,9 +206,9 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/job-opportunities/shift-preference"
+        path="/job-opportunities/shift-preferences"
       >
-        <ShiftPreference />
+        <Connect(ShiftPreferences) />
       </Route>
     </Switch>
   </HashRouter>

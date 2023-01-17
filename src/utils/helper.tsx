@@ -19,7 +19,10 @@ import { boundGetApplication, boundUpdateApplicationDS } from "../actions/Applic
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
-import { boundGetScheduleListByJobId, boundUpdateScheduleFilters } from "../actions/ScheduleActions/boundScheduleActions";
+import {
+  boundGetScheduleListByJobId,
+  boundUpdateScheduleFilters
+} from "../actions/ScheduleActions/boundScheduleActions";
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
@@ -217,6 +220,8 @@ export const getDefaultLocale = (): Locale => {
   switch (countryCode) {
     case CountryCode.MX:
       return Locale.esMX;
+    case CountryCode.UK:
+      return Locale.enGB;
     default:
       return Locale.enUS;
   }
@@ -332,6 +337,9 @@ export const handleApplyScheduleFilters = ( scheduleFilters: ScheduleStateFilter
         schedulePreferences,
         eq: {},
         in: {},
+        city: scheduleFilters.city,
+        startDateBegin: scheduleFilters.startDateBegin,
+        startDateEnd: scheduleFilters.startDateEnd
       },
       locale: getLocale(),
       pageFactor: 1,
@@ -1844,4 +1852,24 @@ export const nheGroupByLanguage = (nheData: NHETimeSlot[]) => {
   });
 
   return nheGroups;
+};
+
+export const UpdateHoursPerWeekHelper = (hoursPerWeek: ShiftPreferenceWorkHour[], value: ShiftPreferenceWorkHour): ShiftPreferenceWorkHour[] => {
+  const newHoursPerWeek = hoursPerWeek || [];
+
+  if (newHoursPerWeek.length > 0) {
+    const existingIndex= newHoursPerWeek.findIndex((item, index) => {
+      return item.maximumValue === value.maximumValue && item.minimumValue === value.minimumValue;
+    });
+
+    if (existingIndex > -1) {
+      newHoursPerWeek.splice(existingIndex, 1);
+    } else {
+      newHoursPerWeek.push(value);
+    }
+  } else {
+    newHoursPerWeek.push(value);
+  }
+
+  return newHoursPerWeek;
 };

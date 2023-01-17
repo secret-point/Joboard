@@ -92,6 +92,10 @@
       "value" : "Política de datos de usuario",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Aviso de privacidad para candidatos de EU/UK",
+      "note" : "Text for the flyout Kondo user data policy title text"
+    },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Tengo conocimiento de que toda la información recopilada podrá ser transferida de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de Particulares y su reglamento, lineamientos y demás disposiciones aplicables en materia de privacidad de datos, así como en términos del Aviso de Privacidad de la Empresa para Empleados o Candidatos.",
       "note" : "Text for the flyout MX user data policy body text"
@@ -771,6 +775,10 @@
     "BB-BGC-no-ssn-modal-title" : {
       "value" : "¿Estás seguro de que te gustaría proceder sin un Número de Seguridad Social (SSN)?",
       "note" : "Title for the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-warning-banner" : {
+      "value" : "Si tienes un número de seguro social (SSN), estás obligado a proporcionarlo. No hacerlo puede causar retrasos en el proceso de contratación que pueden llevar a perder tu fecha de inicio y perder tu turno seleccionado.",
+      "note" : "Warning banner in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "También reconozco que cualquier tergiversación intencional de mi SSN será tomada en cuenta por Amazon y puede llevar a la revocación de mi oferta de trabajo o, si me contratan, a la terminación de mi contrato de trabajo.",
@@ -2439,6 +2447,62 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Marca una de las siguientes casillas",
       "note" : "Label for disability checkbox"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Documentos relacionados con el derecho a trabajar",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Verificación del derecho a trabajar en UK",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Para que puedas comenzar a trabajar, Amazon debe revisar tus documentos originales que acrediten que tienes derecho a trabajar en UK. Los ejemplos de documentos relacionados con el derecho a trabajar incluyen, pero no se limitan a",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Pasaporte británico",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Tarjeta de residencia permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Sellos del permiso de residencia indefinido",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Permiso de residencia biométrico",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para obtener más información y detalles de todos los documentos aceptables relacionados con el derecho a trabajar, consulta nuestra <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización de trabajo en UK para empleados</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Tienes 18 años o más.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Eres el único solicitante y deberás completar personalmente cada paso a menos que recibas asistencia de Amazon para llenar esta solicitud.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Tienes",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "documentos relacionados con el derecho a trabajar",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Estás dispuesto a someterte a un examen médico previo a la contratación, si aplica.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Das tu consentimiento para que se lleve a cabo una verificación de antecedentes previa a la contratación.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }
