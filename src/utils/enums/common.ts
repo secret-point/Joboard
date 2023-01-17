@@ -94,7 +94,8 @@ export enum WORKFLOW_STEP_NAME {
   REHIRE_ELIGIBILITY_STATUS = "rehire-eligibility-status",
   CAN_NOT_OFFER_JOB = "can-not-offer-job",
   CALI_DISCLOSURE = "cali-disclosure",
-  ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible"
+  ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
+  DUPLICATE_WINDOW = "duplicate-window",
 }
 
 export enum UPDATE_APPLICATION_API_TYPE {
@@ -321,7 +322,8 @@ export enum WORKFLOW_ERROR_CODE {
   NOT_REHIRE_ELIGIBLE = "not-rehire-eligible",
   NOT_REHIRE_ELIGIBLE_365_DAYS = "365-days-not-rehire-eligible",
   ACTIVE = "active",
-  SEASONAL_ONLY = "seasonal-only"
+  SEASONAL_ONLY = "seasonal-only",
+  DUPLICATE_WINDOW = "duplicate-window",
 }
 
 export enum FEATURE_FLAG {

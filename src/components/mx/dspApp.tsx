@@ -35,6 +35,7 @@ import ThankYou from "../us/thankYou/ThankYou";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
+import DuplicateWindowError from "../common/DuplicateWindowError";
 
 // Pages that have been migrated to MX
 import BackgroundCheck from "./bgc/BackgroundCheck";
@@ -89,6 +90,7 @@ export const DragonStoneAppMX = ( props: MapStateToProps ) => {
   return (
     <Col padding="S300" minHeight="40vh">
       <AppLoader />
+      <DuplicateWindowError />
       <CounterMessageBanner />
       {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage} />}
       <Router>

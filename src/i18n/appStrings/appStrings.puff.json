@@ -2465,6 +2465,22 @@
             "note" : "Label for disability checkbox",
             "value" : "Please check one of the boxes below"
         },
+        "BB-duplicate-window-error-return-to-dashboard-text": {
+            "note": "Button to return to dashboard when application is open in multiple tabs",
+            "value": "Return to dashboard"
+        },
+        "BB-duplicate-window-error-continue-application-text": {
+            "note": "Button to continue the application in the current tab when application is open in multiple tabs",
+            "value": "Continue application"
+        },
+        "BB-duplicate-window-error-body": {
+            "note": "Error body displayed when application is open in multiple tabs",
+            "value": "Do you want to continue your application here?"
+        },
+        "BB-duplicate-window-error-title": {
+            "note": "Error title displayed when application is open in multiple tabs",
+            "value": "You're currently working on this application on a different window."
+        },
         "BB-Kondo-ConsentPage-flyout-right-to-work-title-text": {
             "note" : "Title for right to work flyout",
             "value" : "Right To Work documentation"

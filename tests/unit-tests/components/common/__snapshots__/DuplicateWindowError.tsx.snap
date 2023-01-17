@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DuplicateWindowError should render nothing when there is no step function error code 1`] = `
+<Modal
+  aria-labelledby="duplicate-window-modal-title"
+  close={[Function]}
+  isOpen={false}
+  isScrollable={true}
+  shouldCloseOnClickOutside={false}
+>
+  <ModalContent
+    buttons={
+      Array [
+        <DebouncedButton
+          dataTestId="go-to-dashboard-button"
+          onClick={[Function]}
+          variant="secondary"
+        >
+          Return to dashboard
+        </DebouncedButton>,
+        <DebouncedButton
+          dataTestId="refresh-page-button"
+          onClick={[Function]}
+          variant="primary"
+        >
+          Continue application
+        </DebouncedButton>,
+      ]
+    }
+    maxWidth={544}
+    titleText=""
+  >
+    <Col
+      gridGap="S400"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="regular"
+        hyphens="none"
+        id="duplicate-window-modal-title"
+        margin={0}
+      >
+        You're currently working on this application on a different window.
+      </H4>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Do you want to continue your application here?
+      </Text>
+    </Col>
+  </ModalContent>
+</Modal>
+`;
+
+exports[`DuplicateWindowError should render the multiple tabs error modal when the step function error is duplicate-window 1`] = `
+<Modal
+  aria-labelledby="duplicate-window-modal-title"
+  close={[Function]}
+  isOpen={true}
+  isScrollable={true}
+  shouldCloseOnClickOutside={false}
+>
+  <ModalContent
+    buttons={
+      Array [
+        <DebouncedButton
+          dataTestId="go-to-dashboard-button"
+          onClick={[Function]}
+          variant="secondary"
+        >
+          Return to dashboard
+        </DebouncedButton>,
+        <DebouncedButton
+          dataTestId="refresh-page-button"
+          onClick={[Function]}
+          variant="primary"
+        >
+          Continue application
+        </DebouncedButton>,
+      ]
+    }
+    maxWidth={544}
+    titleText=""
+  >
+    <Col
+      gridGap="S400"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="regular"
+        hyphens="none"
+        id="duplicate-window-modal-title"
+        margin={0}
+      >
+        You're currently working on this application on a different window.
+      </H4>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        Do you want to continue your application here?
+      </Text>
+    </Col>
+  </ModalContent>
+</Modal>
+`;

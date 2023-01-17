@@ -40,6 +40,7 @@ import SupplementarySuccess from "./supplementarySuccess/SupplementarySuccess";
 import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireEligibilityStatus";
 import NoAvailableShift from "./noAvailableShift/NoAvailableShift";
 import ApplicationIdNull from "./applicationIdNull/ApplicationIdNull";
+import DuplicateWindowError from "../common/DuplicateWindowError";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -99,6 +100,7 @@ export const DragonStoneAppUS = ( props: MapStateToProps ) => {
   return (
     <Col padding="S300" minHeight="40vh">
       <AppLoader />
+      <DuplicateWindowError />
       <CounterMessageBanner />
       {!!bannerMessage && <BannerMessage bannerMessage={bannerMessage} />}
       <Router>

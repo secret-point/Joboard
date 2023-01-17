@@ -7,7 +7,7 @@ import {
 } from "../actions/WorkflowActions/boundWorkflowActions";
 import { log, logError, LoggerType } from "../helpers/log-helper";
 import { isJson } from "../helpers/utils";
-import { WORKFLOW_STEP_NAME } from "../utils/enums/common";
+import { WORKFLOW_ERROR_CODE, WORKFLOW_STEP_NAME } from "../utils/enums/common";
 import { awaitWithTimeout, routeToAppPageWithPath, showErrorMessage } from "../utils/helper";
 import { EnvConfig } from "../utils/types/common";
 import {
@@ -29,11 +29,11 @@ export default class StepFunctionService {
   scheduleId: string | undefined;
   appConfig: any;
   stepFunctionEndpoint: string | undefined;
-  isCompleteTaskOnLoad: boolean | undefined;
   interval: any;
   SECONDS = 60000;
   MINUTES = 5;
   CONNECTION_TIMEOUT = 5000;
+  disableTimeout = false;
 
   constructor( applicationId: string, candidateId: string, appConfig: EnvConfig, requisitionId?: string, jobId?: string, scheduleId?: string ) {
     this.applicationId = applicationId;
@@ -59,6 +59,8 @@ export default class StepFunctionService {
         websocketURL = `${websocketURL}&authToken=${encodeURIComponent(token)}`;
       }
 
+      this.message = this.message.bind(this);
+      this.close = this.close.bind(this);
       this.stepFunctionEndpoint = websocketURL;
       this.websocket = new WebSocket(this.stepFunctionEndpoint);
       this.websocket.onopen = ( event ) => this.connect(event);
@@ -95,10 +97,12 @@ export default class StepFunctionService {
   }
 
   close( event: any ) {
-    window.setTimeout(() => {
-      log("Websocket closed event executed", event);
-      onTimeOut();
-    }, 10000);
+    if (!this.disableTimeout) {
+      window.setTimeout(() => {
+        log("Websocket closed event executed", event);
+        onTimeOut();
+      }, 10000);
+    }
   }
 
   async message( event: MessageEvent ) {
@@ -112,8 +116,22 @@ export default class StepFunctionService {
 
     log("workflow service message", message);
     if (!isString(message)) {
-      // Update workflowErrorCode when page is rehire eligibility status as ew rely on errorCode to display different contents
-      if (message.stepName === WORKFLOW_STEP_NAME.REHIRE_ELIGIBILITY_STATUS) {
+      // if the user has opened multiple tabs on the same application, then the old tab should display an error message,
+      // allowing them to either take back control in that tab or to go back to the dashboard
+      if (message.stepName === WORKFLOW_STEP_NAME.DUPLICATE_WINDOW) {
+        // display the duplicate tab error modal
+        boundSetWorkflowErrorCode(WORKFLOW_ERROR_CODE.DUPLICATE_WINDOW);
+
+        // close the websocket - we don't want any more messages coming through. the user can either refresh the page,
+        // giving them a new websocket, or they can return to the dashboard
+        if (this.websocket) {
+
+          // we don't want this treated as a timeout, this is a legitimate reason for closing the websocket forever
+          this.disableTimeout = true;
+          this.websocket.close();
+        }
+      } else if (message.stepName === WORKFLOW_STEP_NAME.REHIRE_ELIGIBILITY_STATUS) {
+        // Update workflowErrorCode when page is rehire eligibility status as we rely on errorCode to display different contents
         boundSetWorkflowErrorCode(message.errorMessageCode);
         // redirect the user to the rehire eligibility status page
         boundWorkflowRequestEnd();

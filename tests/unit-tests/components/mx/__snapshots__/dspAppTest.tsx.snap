@@ -6,6 +6,7 @@ exports[`dspAppTest should match snapshot 1`] = `
   padding="S300"
 >
   <Connect(AppLoader) />
+  <Connect(DuplicateWindowError) />
   <Connect(CounterMessageBanner) />
   <BannerMessage
     bannerMessage={
