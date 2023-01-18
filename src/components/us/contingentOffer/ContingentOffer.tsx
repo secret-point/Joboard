@@ -23,12 +23,14 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from "../../../reducers/ui.reducer";
-import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
+import { APP_CAST_EVENT_NUMBER, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
+import { PandoicTracking } from "../../customerTracking/Pandoic";
+import { pushAppCastEvent } from "../../customerTracking/appCast";
 
 interface MapStateToProps {
   job: JobState;
@@ -65,7 +67,10 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
 
   // Don't refetch data if id is not changing
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+    if (jobId) {
+      jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+      pushAppCastEvent(APP_CAST_EVENT_NUMBER.CONTINGENT_OFFER, jobId);
+    }
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -247,6 +252,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
           </DebouncedButton>
         </Col>
       </Col>
+      <PandoicTracking />
     </Col>
   );
 };

@@ -348,5 +348,6 @@ exports[`ContingentOffer should match snapshot 1`] = `
       </DebouncedButton>
     </Col>
   </Col>
+  <PandoicTracking />
 </Col>
 `;

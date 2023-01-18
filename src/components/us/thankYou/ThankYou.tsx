@@ -35,6 +35,7 @@ import { ThankYouState } from "../../../reducers/thankYou.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import {
+  APP_CAST_EVENT_NUMBER,
   FEATURE_FLAG,
   UPDATE_APPLICATION_API_TYPE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
@@ -54,6 +55,8 @@ import DebouncedButton from "../../common/DebouncedButton";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { thankYouPageRedirectTextBanner } from "../../../countryExpansionConfig";
+import { pushAppCastEvent } from "../../customerTracking/appCast";
+import PandoicTracking from "../../customerTracking/Pandoic";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -102,7 +105,10 @@ export const ThankYou = (props: MapStateToProps) => {
   }, [scheduleDetail, scheduleId]);
 
   useEffect(() => {
-    jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+    if (jobId) {
+      jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
+      pushAppCastEvent(APP_CAST_EVENT_NUMBER.THANK_YOU, jobId);
+    }
   }, [jobDetail, jobId]);
 
   useEffect(() => {
@@ -326,6 +332,7 @@ export const ThankYou = (props: MapStateToProps) => {
           </Row>
         </Col>
       </Card>
+      <PandoicTracking />
     </Col>
   );
 };

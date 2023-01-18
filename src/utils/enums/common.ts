@@ -366,3 +366,8 @@ export enum SHIFT_PATTERN {
   DAYS = "Days",
   ANY = "Any"
 }
+
+export enum APP_CAST_EVENT_NUMBER {
+  CONTINGENT_OFFER = 2,
+  THANK_YOU = 3
+}

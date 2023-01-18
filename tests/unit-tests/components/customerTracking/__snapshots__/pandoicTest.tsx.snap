@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pandoic should match snapshot on bb 1`] = `
+<PandoicTracking>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <SideEffect(NullComponent)
+      defer={true}
+      encodeSpecialCharacters={true}
+      script={
+        Array [
+          Object {
+            "async": true,
+            "src": "https://tracking.pandoiq.com/8950",
+          },
+        ]
+      }
+    >
+      <NullComponent
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "async": true,
+              "src": "https://tracking.pandoiq.com/8950",
+            },
+          ]
+        }
+      />
+    </SideEffect(NullComponent)>
+  </HelmetWrapper>
+</PandoicTracking>
+`;
