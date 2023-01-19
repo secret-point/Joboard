@@ -11,7 +11,7 @@ import ApplicationSteps from "./ApplicationSteps";
 interface StepHeaderProps {
   jobTitle: string;
   step: ApplicationStep;
-  withAssessment?: boolean,
+  withAssessment?: boolean;
 
 }
 export const StepHeader = (props: StepHeaderProps) => {

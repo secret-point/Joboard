@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssessmentConsent should match snapshot 1`] = `
+<Fragment>
+  <Col
+    gridGap="S300"
+    padding="0"
+  >
+    <StepHeader
+      jobTitle=""
+      step={
+        Object {
+          "stepNumber": 1,
+          "title": "Complete an assessment (~15 min)",
+          "titleTranslationKey": "BB-ApplicationSteps-complete-assessment-text",
+        }
+      }
+      withAssessment={true}
+    />
+    <H1
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Assessment
+    </H1>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Evaluate your fit at Amazon.
+    </Text>
+    <VideoContainer
+      id="assessment-video"
+      poster="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/AssessmentPoster.jpg"
+      src="https://static-assets.associate.amazondelivers.jobs/media-assets/Blackbird_Assessment_Intro_20200928.mp4"
+    />
+    <Expander
+      contentSpacing="S300"
+      shouldExpandOnMount={false}
+      titleText="Read assessment instructions"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        You are about to complete an assessment that is part of the application process.
+      </Text>
+      <ul>
+        <li>
+          <Text
+            font="primary"
+            fontSize="T300"
+            hyphens="none"
+          >
+            We recommend that you find a quiet place to avoid distractions.
+          </Text>
+        </li>
+        <li>
+          <Text
+            font="primary"
+            fontSize="T300"
+            hyphens="none"
+          >
+            After you finish the assessment, you will be returned to your application process.
+          </Text>
+        </li>
+      </ul>
+    </Expander>
+    <Row
+      gridGap={4}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        By beginning the assessment, you agree to the
+      </Text>
+      <WithFlyout
+        flyoutPosition="trailing"
+        renderFlyout={[Function]}
+      >
+        <Component />
+      </WithFlyout>
+    </Row>
+    <Col
+      gridGap={8}
+    >
+      <DebouncedButton
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+        variant="primary"
+      >
+        Start Assessment
+      </DebouncedButton>
+    </Col>
+  </Col>
+</Fragment>
+`;

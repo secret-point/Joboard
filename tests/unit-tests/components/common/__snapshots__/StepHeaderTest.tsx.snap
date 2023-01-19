@@ -18,18 +18,24 @@ exports[`StepHeader should match snapshot 1`] = `
   >
     Test Job Title
   </Text>
-  <WithFlyout
-    flyoutPosition="trailing"
-    renderFlyout={[Function]}
+  <Flex
+    flexDirection="row"
+    gridGap="S300"
+    justifyContent="space-between"
   >
-    <Component />
-  </WithFlyout>
-  <Text
-    font="primary"
-    fontSize="T100"
-    hyphens="none"
-  >
-    1. Select Job
-  </Text>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      1. Select Job
+    </Text>
+    <WithFlyout
+      flyoutPosition="trailing"
+      renderFlyout={[Function]}
+    >
+      <Component />
+    </WithFlyout>
+  </Flex>
 </Col>
 `;
