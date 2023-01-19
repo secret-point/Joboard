@@ -14,7 +14,7 @@ import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
 import AmazonRejects from "../us/amazonRejects/AmazonRejects";
 import AmazonWithdraws from "../us/amazonWithdraws/AmazonWithdraws";
 import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
-import AssessmentConsent from "../us/assessment/AssessmentConsent";
+import AssessmentConsent from "../uk/assessmentConsent/AssessmentConsent";
 import AssessmentFinished from "../us/assessment/AssessmentFinished";
 import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
 import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";
@@ -82,7 +82,7 @@ const {
   ADDITIONAL_INFORMATION
 } = PAGE_ROUTES;
 
-export const DragonStoneAppUK = ( props: MapStateToProps ) => {
+export const DragonStoneAppUK = (props: MapStateToProps) => {
   const { ui } = props;
   const { bannerMessage } = ui;
 
@@ -194,7 +194,7 @@ export const DragonStoneAppUK = ( props: MapStateToProps ) => {
   );
 };
 
-const mapStateToProps = ( state: MapStateToProps ) => {
+const mapStateToProps = (state: MapStateToProps) => {
   return state;
 };
 
