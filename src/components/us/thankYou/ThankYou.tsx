@@ -56,7 +56,7 @@ import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { thankYouPageRedirectTextBanner } from "../../../countryExpansionConfig";
 import { pushAppCastEvent } from "../../customerTracking/appCast";
-import PandoicTracking from "../../customerTracking/Pandoic";
+import ThirdPartyTracking from "../../customerTracking/Pandoic";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -332,7 +332,7 @@ export const ThankYou = (props: MapStateToProps) => {
           </Row>
         </Col>
       </Card>
-      <PandoicTracking />
+      <ThirdPartyTracking />
     </Col>
   );
 };
