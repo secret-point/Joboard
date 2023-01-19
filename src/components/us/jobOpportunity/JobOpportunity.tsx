@@ -161,10 +161,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   );
 
   return (
-    <Col id="jobOpportunityContainer">
-      {
-        // TODO need to align how each application workflow is related to app steps
-      }
+    <Col className="pageContainerWithMarginTop" margin={{ top: "S300" }}>
       <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[0]} />
       <Col id="jobOpportunityHeaderImageContainer">
         <Image

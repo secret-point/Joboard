@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Hittar du inte ett skift som fungerar för dig?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Du är nästan klar, {displayFirstName} {displayLastName}! Välj önskat datum och tid för att boka ett förhandsmöte där vi kontrollerar dina arbetstillståndsdokument.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Mötet före anställning är en virtuell händelse",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Mötet före anställning kommer att ske via en videokonferens. När du har valt ett datum och en tid för att kontakta oss kommer vi att skicka ett e-postmeddelande till dig med mötesdetaljer och länk. Om du har några frågor eller tekniska problem, vänligen kontakta oss.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Stäng",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Välj mötesdatum",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Välj mötestid",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Alla mötestider visas i lokal tid för Storbritannien. Varje möte tar upp till {maxNheSlotLength} minuter.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Bekräfta val",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

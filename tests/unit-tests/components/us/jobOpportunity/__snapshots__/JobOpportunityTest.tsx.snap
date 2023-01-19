@@ -2,7 +2,12 @@
 
 exports[`JobOpportunity should match snapshot 1`] = `
 <Col
-  id="jobOpportunityContainer"
+  className="pageContainerWithMarginTop"
+  margin={
+    Object {
+      "top": "S300",
+    }
+  }
 >
   <StepHeader
     jobTitle=""

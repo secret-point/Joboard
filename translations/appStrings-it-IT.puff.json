@@ -2667,6 +2667,10 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Non vedi un turno adatto a te?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Tutti gli slot per gli appuntamenti vengono visualizzati nell'ora locale del Regno Unito. Ogni appuntamento ha una durata massima di {maxNheSlotLength} minuti.",
+      "note" : "Text for nhe time slot duration notice"
     }
   }
 }

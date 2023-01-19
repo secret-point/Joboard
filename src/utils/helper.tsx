@@ -99,7 +99,7 @@ import {
   GetNheTimeSlotRequestThroughNheDS,
   Job,
   Locale,
-  NHETimeSlot,
+  NHETimeSlot, NHETimeSlotUK, NHETimeSlotUS,
   NonFcraFormErrorStatus,
   QueryParamItem,
   Range,
@@ -1093,14 +1093,14 @@ export const fetchNheTimeSlotDs = (schedule: Schedule, applicationId: string, re
   }
 };
 
-export const renderNheSpokenLanguages = ( nheTimeSlot: NHETimeSlot ): string[][] => {
+export const renderUSNheSpokenLanguages = ( nheTimeSlot: NHETimeSlotUS ): string[][] => {
   const spokenLanguagesExists = nheTimeSlot.spokenLanguageAlternatives && nheTimeSlot.spokenLanguageAlternatives.length > 0;
   const supportedLanguages = spokenLanguagesExists ? Array.from(nheTimeSlot.spokenLanguageAlternatives, locale => localeToLanguageMap[locale as Locale || getDefaultLocale()]) : [];
 
   return supportedLanguages;
 };
 
-export const renderNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlot ): string => {
+export const renderUSNheTimeSlotFullAddress = ( nheTimeSlot: NHETimeSlotUS ): string => {
   const timeRange = nheTimeSlot.timeRange || "";
   const state = nheTimeSlot.location.state || "";
   const city = nheTimeSlot.location.city || "";
@@ -1117,7 +1117,7 @@ export const getPageName = () => {
   return hash.split("?")[0]?.split("/")[1] || "";
 };
 
-export const handleConfirmNHESelection = (applicationData: Application, nheTimeSlot: NHETimeSlot) => {
+export const handleConfirmUSNHESelection = (applicationData: Application, nheTimeSlot: NHETimeSlotUS) => {
   const payload = {
     nheAppointment: nheTimeSlot
   };
@@ -1139,6 +1139,30 @@ export const handleConfirmNHESelection = (applicationData: Application, nheTimeS
   }
 };
 
+// TODO merge uk and US helper
+export const handleConfirmUKNHESelection = (applicationData: Application, nheTimeSlot: NHETimeSlotUK) => {
+  const payload = {
+    nheAppointment: nheTimeSlot
+  };
+  const { NHE } = UPDATE_APPLICATION_API_TYPE;
+
+  if (applicationData) {
+    const request: UpdateApplicationRequest = createUpdateApplicationRequest(applicationData, NHE, payload);
+    boundUpdateApplicationDS(request, (applicationData: Application) => {
+      onCompleteTaskHelper(applicationData);
+    });
+
+    // TODO discuss the actual UK Bi metric payload
+    // postAdobeMetrics({ name: METRIC_NAME.SELECT_NHE, values: {
+    //     NHE: {
+    //       apptID: nheTimeSlot.timeSlotId,
+    //       date: nheTimeSlot.dateWithoutFormat,
+    //       hours: nheTimeSlot.timeRange
+    //     }
+    //   }
+    // });
+  }
+};
 export const handleSubmitSelfIdEqualOpportunity =
   (applicationData: Application, equalOpportunityStatus: SelfIdEqualOpportunityStatus, stepConfig: SelfIdentificationConfig) => {
     const payload = {
@@ -1827,8 +1851,8 @@ export const shouldPrefillAdditionalBgcInfo = (countryCode?: string, overrideCou
   return countryCode === systemCountryCode;
 };
 
-export const nheGroupByLanguage = (nheData: NHETimeSlot[]) => {
-  const nheGroups = new Map<string, NHETimeSlot[]>([
+export const groupUSNheByLanguage = (nheData: NHETimeSlotUS[]): Map<string, NHETimeSlotUS[]> => {
+  const nheGroups = new Map<string, NHETimeSlotUS[]>([
     ["current", []],
     ["other", []]
   ]);
@@ -1879,4 +1903,19 @@ export const getSupportedCitiesFromScheduleList = (scheduleList: Schedule[]): st
   scheduleList?.forEach(schedule => schedule.city && supportedCities.add(schedule.city));
 
   return Array.from(supportedCities);
+};
+
+export const getUKNHEMaxSlotLength = (timeSlotList: NHETimeSlotUK[], scheduleId: string): number => {
+  if (!timeSlotList) {
+    return 0;
+  }
+
+  const slotsLengths= timeSlotList.map(slot => slot.timeSlotLengthInMinutes);
+  const maxTime = slotsLengths.length ? Math.max(...slotsLengths) : 0;
+
+  log(
+    `Kondo - NHE slots for this schedule ${scheduleId} have a maximun duration of ${maxTime} mins`
+  );
+
+  return maxTime;
 };

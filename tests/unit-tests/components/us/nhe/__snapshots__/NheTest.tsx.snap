@@ -58,7 +58,11 @@ exports[`Nhe multiple language nhe cards should match snapshot 1`] = `
         fontSize="T400"
         fontWeight="regular"
         hyphens="none"
-        margin={0}
+        margin={
+          Object {
+            "top": "S300",
+          }
+        }
       >
         1 time slot available in English
       </H4>
@@ -100,7 +104,11 @@ exports[`Nhe multiple language nhe cards should match snapshot 1`] = `
         fontSize="T400"
         fontWeight="regular"
         hyphens="none"
-        margin={0}
+        margin={
+          Object {
+            "top": "S300",
+          }
+        }
       >
         1 time slot available in other languages
       </H4>

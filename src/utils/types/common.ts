@@ -166,7 +166,9 @@ export interface Requisition {
   nheTimeSlots: NHETimeSlot[];
 }
 
-export interface NHETimeSlot {
+export type NHETimeSlot = NHETimeSlotUS | NHETimeSlotUK;
+
+export interface NHETimeSlotUS {
   timeSlotId: string;
   startTime: string;
   endTime: string;
@@ -181,6 +183,32 @@ export interface NHETimeSlot {
   childRequisitionId: string;
   nheSource: string;
   spokenLanguageAlternatives: string[];
+}
+
+export interface NHETimeSlotUK {
+  nheDirect?: boolean;
+  title: string;
+  details?: string;
+  address?: {
+    addressLine1: string;
+    addressLine2: string;
+    city: string;
+    state: string;
+    country: string;
+    zipCode: string;
+  };
+  venueId?: string;
+  venueName?: string;
+  timeSlotLengthInMinutes: number;
+  timeZone?: string;
+  startTimestamp?: number;
+  endTimestamp?: number;
+  timeSlotId: string;
+  date: string;
+  startTime: string;
+  endTime: string;
+  hireStartDate?: string;
+  contingencyTat?: string;
 }
 
 export interface NheTimeSlotLocation {
@@ -303,7 +331,9 @@ export interface Schedules {
   country: string;
 }
 
-export interface Schedule {
+export type Schedule = ScheduleUK | ScheduleUS;
+
+export interface ScheduleUS {
   scheduleId: string;
   jobId: string;
   dataSource: string;
@@ -361,6 +391,101 @@ export interface Schedule {
   laborDemandAvailableCount: number;
   employeeClass?: string;
   hireEndDate: string;
+}
+
+export interface ScheduleUK {
+  scheduleId: string;
+  language: string;
+  dataSource: string;
+  geoClusterId: string;
+  geoClusterName: string;
+  region: string;
+  zone: string;
+  currencyCode: string;
+  countryGroup: string;
+  siteId: string;
+  businessLine: string;
+  address: string;
+  city: string;
+  county: string;
+  locationCode: string;
+  msa: null;
+  state: string;
+  postalCode: string;
+  companyCode: string;
+  contingencyTat: number;
+  internalJobCode: string;
+  internalJobTitle: string;
+  basePay: number;
+  signOnBonus: number;
+  surgePay: number;
+  basePayL10N: string;
+  signOnBonusL10N: string;
+  surgePayL10N: string;
+  shiftDifferential: number;
+  shiftDifferentialL10N: string;
+  employeeClass: string;
+  employmentType: string;
+  employmentTypeL10N: string;
+  agencyName: string;
+  standardShiftCode: string;
+  externalJobTitle: string;
+  tagLine: string;
+  jobPreviewVideo: string;
+  jobDescription: string;
+  detailedJobDescription: string;
+  briefJobDescription: string;
+  image: string;
+  isPrivateSchedule: string;
+  financeWeekStartDate: string;
+  financeWeekEndDate: string;
+  scheduleBannerText: string;
+  scheduleType: string;
+  phoneToolTitle: string;
+  scheduleText: string;
+  parsedTrainingDate: string | null;
+  hoursPerWeek: number;
+  hoursPerWeekL10N: string;
+  hoursPerWeekDecimal: number;
+  hoursPerWeekCapped: number;
+  financeWeek: number;
+  alpsCode: string;
+  departmentCode: string;
+  managerLogin: string;
+  managerName: string | null;
+  managerEmployeeId: string | null;
+  trainingShiftCode: string | null;
+  crsCode: string | null;
+  nhoType: string;
+  trainingDate: string;
+  hireStartDate: string;
+  hireEndDate: string;
+  firstDayOnSite: string;
+  firstDayOnSiteL10N: string;
+  startTime: string;
+  startTimeL10N: string;
+  laborOrderId: string;
+  laborDemandId: string | null;
+  laborOrderCount: number;
+  laborDemandCount: number;
+  laborDemandOpenCount: number;
+  laborDemandFillCount: number;
+  laborDemandAvailableCount: number;
+  laborDemandSoftMatchCount: number;
+  laborDemandHardMatchCount: number;
+  startDateDemandCount: number;
+  startDateFillCount: number;
+  startDateAvailableCount: number;
+  startDateDeniedCount: number;
+  cssmString: string | null;
+  totalPayRate: number;
+  totalPayRateL10N: string;
+  requiredLanguage: string | null;
+  monthlyBasePay: number | null;
+  monthlyBasePayL10N: string | null;
+  esl: string | null;
+  iconUrl: string;
+  bgcVendorName: BGC_VENDOR_TYPE;
 }
 
 export interface HoursPerWeek {
@@ -855,11 +980,19 @@ export interface GetNheTimeSlotRequestDs {
   };
 }
 
-export interface GetNheTimeSlotRequestThroughNheDS {
+export interface GetNheTimeSlotRequestThroughNheDS_US {
   locationCode: string;
   applicationId: string;
 }
 
+export interface GetNheTimeSlotRequestThroughNheDS_UK {
+  endDate: string;
+  locale: string;
+  siteId: string;
+  startDate: string;
+}
+
+export type GetNheTimeSlotRequestThroughNheDS = GetNheTimeSlotRequestThroughNheDS_UK | GetNheTimeSlotRequestThroughNheDS_US;
 export interface DetailedRadioButtonItem {
   title: string;
   titleTranslationKey: string;

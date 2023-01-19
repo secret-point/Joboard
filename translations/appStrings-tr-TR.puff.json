@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Size uygun bir vardiya görmüyor musunuz?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Neredeyse bitti, {displayFirstName} {displayLastName}! Çalışma izni belgelerinizi kontrol edeceğimiz bir işe alım öncesi randevu planlamak için tercih ettiğiniz tarih ve saati seçin.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "İşe alım öncesi randevu sanal bir etkinliktir.",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "İşe alım öncesi randevu video konferans üzerinden yapılacaktır. Bizimle bağlantı kurmak için bir tarih ve saat seçtiğinizde size randevu ayrıntılarını ve bağlantısını e-posta ile göndereceğiz. Herhangi bir sorunuz veya teknik sorununuz varsa lütfen bizimle iletişime geçin.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Kapat",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Randevu tarihini seçin",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Randevu saatini seçin",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Tüm randevu aralıkları İngiltere yerel saatinde görüntülenir. Her randevu en fazla {maxNheSlotLength} dakika uzunluğundadır.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Seçimi onayla",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "ご希望に合ったシフトが見つかりませんか?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "{displayFirstName}{displayLastName}様、もう少しで完了します。 ご希望の日時を選択して、就労許可書類を確認する雇用前のアポイントメントをご予約ください。",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "雇用前のアポイントメントはバーチャルイベントです",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "入社前のアポイントメントはビデオ会議で行われます。連絡する日時を選択すると、アポイントメントの詳細とリンクがEメールで送信されます。ご質問や技術的な問題がございましたら、お問い合わせください。",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "閉じる",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "アポイントメント日を選択",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "アポイントメント時間を選択してください",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "すべてのアポイントメントスロットはUKの現地時間で表示されます。各アポイントメントの長さは最大{maxNheSlotLength}分です。",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "選択を確認",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

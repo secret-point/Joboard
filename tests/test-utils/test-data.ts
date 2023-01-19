@@ -11,8 +11,27 @@ import { SelfIdentificationState } from "../../src/reducers/selfIdentification.r
 import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
-import { BGC_STEPS, BGC_VENDOR_TYPE, CountryCode, DAYS_OF_WEEK, INFO_CARD_STEP_STATUS, SCHEDULE_FILTER_TYPE, SELF_IDENTIFICATION_STEPS, WORKFLOW_ERROR_CODE } from "../../src/utils/enums/common";
-import { Address, AlertMessage, Candidate, DayHoursFilter, Job, NHETimeSlot, NheTimeSlotLocation, Schedule, SelfIdentificationInfo } from "../../src/utils/types/common";
+import {
+  BGC_STEPS,
+  BGC_VENDOR_TYPE,
+  DAYS_OF_WEEK,
+  INFO_CARD_STEP_STATUS,
+  SCHEDULE_FILTER_TYPE,
+  SELF_IDENTIFICATION_STEPS,
+  WORKFLOW_ERROR_CODE
+} from "../../src/utils/enums/common";
+import {
+  Address,
+  AlertMessage,
+  Candidate,
+  DayHoursFilter,
+  Job,
+  NHETimeSlot,
+  NheTimeSlotLocation, NHETimeSlotUK,
+  NHETimeSlotUS,
+  Schedule,
+  SelfIdentificationInfo
+} from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
 export const TEST_APPLICATION_ID = "test-app-id";
@@ -239,7 +258,7 @@ export const NHE_TIMESLOT_LOCATION: NheTimeSlotLocation = {
   postalCode: "98327"
 };
 
-export const NHE_TIMESLOT: NHETimeSlot = {
+export const NHE_TIMESLOT: NHETimeSlotUS = {
   timeSlotId: "VTS-1643678",
   startTime: "13:30",
   endTime: "14:00",
@@ -256,6 +275,29 @@ export const NHE_TIMESLOT: NHETimeSlot = {
   spokenLanguageAlternatives: ["en-US", "es-US"],
 };
 
+export const TIME_SLOT_UK: NHETimeSlotUK = {
+  nheDirect: true,
+  title: "Friday, Jan 20th 2023",
+  details: "09:00 - 09:10 Europe/London\nJohn lane, Test city, UK, UK, WD171GA",
+  address: {
+    addressLine1: "John lane",
+    addressLine2: "",
+    city: "Test city",
+    state: "UK",
+    country: "UK",
+    zipCode: "WD171GA"
+  },
+  venueId: "V-UK-0000400",
+  venueName: "TestVenue",
+  timeSlotLengthInMinutes: 10,
+  timeSlotId: "VTS-UK-0067328",
+  timeZone: "Europe/London",
+  date: "20/01/2023",
+  startTimestamp: 1674205200000,
+  endTimestamp: 1674205800000,
+  startTime: "09:00",
+  endTime: "09:10"
+};
 export const TEST_APPLICATION: any = {
   applicationId: TEST_APPLICATION_ID,
   jobScheduleSelected: {
@@ -579,6 +621,100 @@ export const TEST_NHE_STATE: NheState = {
   }
 };
 
+export const TEST_NHE_DATA_UK: NHETimeSlotUK[] = [
+  {
+    nheDirect: true,
+    title: "Friday, Jan 20th 2023",
+    details: "09:00 - 09:10 Europe/London\nJohn lane, Test city, UK, UK, WD171GA",
+    address: {
+      addressLine1: "John lane",
+      addressLine2: "",
+      city: "Test city",
+      state: "UK",
+      country: "UK",
+      zipCode: "WD171GA"
+    },
+    venueId: "V-UK-0000400",
+    venueName: "TestVenue",
+    timeSlotLengthInMinutes: 10,
+    timeSlotId: "VTS-UK-0067328",
+    timeZone: "Europe/London",
+    date: "20/01/2023",
+    startTimestamp: 1674205200000,
+    endTimestamp: 1674205800000,
+    startTime: "09:00",
+    endTime: "09:10"
+  },
+  {
+    nheDirect: true,
+    title: "Friday, Jan 20th 2023",
+    details: "10:00 - 10:10 Europe/London\nJohn lane, Test city, UK, UK, WD171GA",
+    address: {
+      addressLine1: "John lane",
+      addressLine2: "",
+      city: "Test city",
+      state: "UK",
+      country: "UK",
+      zipCode: "WD171GA"
+    },
+    venueId: "V-UK-0000400",
+    venueName: "TestVenue",
+    timeSlotLengthInMinutes: 180,
+    timeSlotId: "VTS-UK-0067329",
+    timeZone: "Europe/London",
+    date: "20/01/2023",
+    startTimestamp: 1674208800000,
+    endTimestamp: 1674209400000,
+    startTime: "10:00",
+    endTime: "10:10"
+  },
+  {
+    nheDirect: true,
+    title: "Saturday, Jan 21st 2023",
+    details: "09:00 - 09:10 Europe/London\nJohn lane, Test city, UK, UK, WD171GA",
+    address: {
+      addressLine1: "John lane",
+      addressLine2: "",
+      city: "Test city",
+      state: "UK",
+      country: "UK",
+      zipCode: "WD171GA"
+    },
+    venueId: "V-UK-0000400",
+    venueName: "TestVenue",
+    timeSlotLengthInMinutes: 108,
+    timeSlotId: "VTS-UK-0067330",
+    timeZone: "Europe/London",
+    date: "21/01/2023",
+    startTimestamp: 1674291600000,
+    endTimestamp: 1674292200000,
+    startTime: "09:00",
+    endTime: "09:10"
+  },
+  {
+    nheDirect: true,
+    title: "Saturday, Jan 21st 2023",
+    details: "10:00 - 10:10 Europe/London\nJohn lane, Test city, UK, UK, WD171GA",
+    address: {
+      addressLine1: "John lane",
+      addressLine2: "",
+      city: "Test city",
+      state: "UK",
+      country: "UK",
+      zipCode: "WD171GA"
+    },
+    venueId: "V-UK-0000400",
+    venueName: "TestVenue",
+    timeSlotLengthInMinutes: 10,
+    timeSlotId: "VTS-UK-0067331",
+    timeZone: "Europe/London",
+    date: "21/01/2023",
+    startTimestamp: 1674295200000,
+    endTimestamp: 1674295800000,
+    startTime: "10:00",
+    endTime: "10:10"
+  }
+];
 export const TEST_SELF_IDENTIFICATION_STATE: SelfIdentificationState = {
   stepConfig: {
     completedSteps: [],

@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Nie widzisz zmiany, która Ci odpowiada?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Już prawie gotowe, {displayFirstName} {displayLastName}! Wybierz preferowaną datę i godzinę, aby umówić się na spotkanie przed zatrudnieniem, podczas którego sprawdzamy dokumenty zezwolenia na pracę.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Spotkanie przed zatrudnieniem jest wydarzeniem wirtualnym",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Spotkanie przed zatrudnieniem odbędzie się w formie wideokonferencji. Po wybraniu daty i godziny połączenia z nami wyślemy Ci e-mailem szczegóły spotkania i link. Jeśli masz jakiekolwiek pytania lub problemy techniczne, skontaktuj się z nami.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Zamknij",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Wybierz datę spotkania",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Wybierz czas spotkania",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Wszystkie przedziały czasowe spotkań są wyświetlane w czasie lokalnym w Wielkiej Brytanii. Każde spotkanie trwa do {maxNheSlotLength} minut.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Potwierdź wybór",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

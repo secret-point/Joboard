@@ -2667,6 +2667,10 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Zie je geen ploegendienst die bij je past?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Alle tijdsvakken voor afspraken worden weergegeven in de plaatselijke tijd van het Verenigd Koninkrijk. Elke afspraak duurt maximaal {maxNheSlotLength} minuten.",
+      "note" : "Text for nhe time slot duration notice"
     }
   }
 }

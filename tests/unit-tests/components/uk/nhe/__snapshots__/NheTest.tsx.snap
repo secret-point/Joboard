@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nhe should match snapshot 1`] = `
+<Col
+  className="pageContainerWithMarginTop"
+  margin={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <StepHeader
+    jobTitle=""
+    step={
+      Object {
+        "stepNumber": 3,
+        "title": "Schedule pre-hire appointment",
+        "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
+      }
+    }
+  />
+  <Col
+    gridGap={20}
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Col
+      gridGap={10}
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="regular"
+        hyphens="none"
+        margin={0}
+      >
+        Schedule pre-hire appointment
+      </H4>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        You are almost there, test-firstname test-lastname! Select your preferred date and time to schedule a pre-hire appointment where we check your work authorisation documents.
+      </Text>
+    </Col>
+    <Row>
+      <Popover
+        position="bottom-leading"
+        shouldCloseOnFocusLeave={false}
+        shouldFocusOnOpen={false}
+        triggerButtonProps={Object {}}
+        triggerText="Pre-hire appointment is a virtual event"
+      >
+        <Component />
+      </Popover>
+    </Row>
+    <Col
+      gridGap="S400"
+    >
+      <Col
+        gridGap={12}
+      >
+        <Label
+          color="neutral90"
+          font="primary"
+          fontSize="T200"
+          fontWeight="regular"
+          htmlFor="nheDateSelect"
+          hyphens="none"
+          id="nheDateLabel"
+        >
+          Choose appointment date
+           *
+        </Label>
+        <Select
+          collapsedOptionsExpanderTitle="Selected items"
+          customSelectionOptionsLabel="Group selection options"
+          defaultOptionsLabel="Single selection options"
+          defaultValue="Friday, Jan 20th 2023"
+          disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+          getTriggerText={[Function]}
+          id="nheDateSelect"
+          layout="default"
+          noOptionsText="No options available"
+          onChange={[Function]}
+          options={
+            Array [
+              "Friday, Jan 20th 2023",
+              "Saturday, Jan 21st 2023",
+            ]
+          }
+          placeholder="Choose an option"
+          searchFieldAriaLabel="Start typing to filter out search results"
+          selectedOptionAltText="selected"
+          value="Friday, Jan 20th 2023"
+          valueAccessor="value"
+          width="100%"
+        />
+      </Col>
+      <Col
+        gridGap={12}
+      >
+        <Label
+          color="neutral90"
+          font="primary"
+          fontSize="T200"
+          fontWeight="regular"
+          htmlFor="nheTimeSelect"
+          hyphens="none"
+          id="nheTimeLabel"
+        >
+          Choose appointment time
+           *
+        </Label>
+        <Select
+          collapsedOptionsExpanderTitle="Selected items"
+          customSelectionOptionsLabel="Group selection options"
+          defaultOptionsLabel="Single selection options"
+          defaultValue="09:00"
+          disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+          getTriggerText={[Function]}
+          id="nheTimeSelect"
+          layout="default"
+          noOptionsText="No options available"
+          onChange={[Function]}
+          options={
+            Array [
+              "09:00",
+              "10:00",
+            ]
+          }
+          placeholder="Choose an option"
+          searchFieldAriaLabel="Start typing to filter out search results"
+          selectedOptionAltText="selected"
+          value="09:00"
+          valueAccessor="value"
+          width="100%"
+        />
+      </Col>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        All appointments slots are displayed in UK local time. Each appointment is up to 180 minutes long.
+      </Text>
+    </Col>
+    <Col
+      className="nhe-sticky-button"
+      padding={
+        Object {
+          "top": "S300",
+        }
+      }
+    >
+      <DebouncedButton
+        debounceTime={1000}
+        onClick={[Function]}
+        variant="primary"
+      >
+        Confirm Selection
+      </DebouncedButton>
+    </Col>
+  </Col>
+</Col>
+`;

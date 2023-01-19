@@ -2667,6 +2667,10 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "আপনার জন্য কাজ করে এমন একটি শিফট দেখতে পাচ্ছেন না?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "সকল অ্যাপয়েন্টমেন্ট স্লটে UK-এর স্থানীয় সময় প্রদর্শিত হয়। প্রতিটি অ্যাপয়েন্টমেন্ট {maxNheSlotLength} মিনিট পর্যন্ত দীর্ঘ।",
+      "note" : "Text for nhe time slot duration notice"
     }
   }
 }

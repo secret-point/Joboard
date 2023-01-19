@@ -26,11 +26,11 @@ import {
   checkAndBoundGetApplication,
   fetchNheTimeSlotDs,
   getLocale,
-  handleConfirmNHESelection,
-  nheGroupByLanguage
+  groupUSNheByLanguage,
+  handleConfirmUSNHESelection
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { NHETimeSlot } from "../../../utils/types/common";
+import { NHETimeSlotUS } from "../../../utils/types/common";
 import NheTimeSlotCard from "../../common/nhe/NheTimeSlotCard";
 import StepHeader from "../../common/StepHeader";
 import DebouncedButton from "../../common/DebouncedButton";
@@ -60,10 +60,10 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
   const { scheduleDetail } = schedule.results;
   const candidateData = candidate.results?.candidateData;
   const { nheData } = nhe.results;
-  const nheGroups = nheGroupByLanguage(nheData);
+  const nheGroups = groupUSNheByLanguage(nheData as NHETimeSlotUS[]);
   const nheGroupsCurrentLanguageCount = nheGroups.get("current")?.length || 0;
   const nheGroupsOtherLanguageCount = nheGroups.get("other")?.length || 0;
-  const [selectedNhe, setSelectedNhe] = useState<NHETimeSlot>();
+  const [selectedNhe, setSelectedNhe] = useState<NHETimeSlotUS>();
 
   useEffect(() => {
     applicationId && checkAndBoundGetApplication(applicationId);
@@ -110,7 +110,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
         application: applicationData,
         selectedNhe: selectedNhe
       });
-      handleConfirmNHESelection(applicationData, selectedNhe);
+      handleConfirmUSNHESelection(applicationData, selectedNhe);
     }
   };
 
@@ -119,9 +119,6 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
 
   return (
     <Col id="jobOpportunityContainer">
-      {
-        // TODO need to align how each application workflow is related to app steps
-      }
       <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[2]} />
       <Col padding={{ top: "S400" }} gridGap={20}>
         <Col gridGap={10}>
@@ -135,7 +132,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
         <Col padding={{ top: "S400" }} gridGap={15}>
           {
             nheGroupsCurrentLanguageCount > 0 && nheGroupsOtherLanguageCount > 0 && (
-              <H4 className="nheGroupingHeader">
+              <H4 className="nheGroupingHeader" margin={{ top: "S300" }}>
                 {`${t(`BB-nhe-time-slots-available-in-language-${nheGroupsCurrentLanguageCount === 1 ? "singular" : "plural"}`, `${nheGroupsCurrentLanguageCount} time slot${nheGroupsCurrentLanguageCount === 1 ? "" : "s"} available in ${t(...localeToLanguageMap[getLocale()])}`, { numberOfAppointments: nheGroupsCurrentLanguageCount, currentLanguage: t(...localeToLanguageMap[getLocale()]) })}`}
               </H4>
             )
@@ -144,13 +141,13 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
             nheGroups.get("current")?.map(nheItem => (
               <NheTimeSlotCard
                 nheTimeSlot={nheItem} key={nheItem.timeSlotId}
-                handleChange={(nheSlotTime: NHETimeSlot) => setSelectedNhe(nheSlotTime)}
+                handleChange={(nheSlotTime: NHETimeSlotUS) => setSelectedNhe(nheSlotTime)}
               />
             ))
           }
           {
             nheGroupsCurrentLanguageCount > 0 && nheGroupsOtherLanguageCount > 0 && (
-              <H4 className="nheGroupingHeader">
+              <H4 className="nheGroupingHeader" margin={{ top: "S300" }}>
                 {`${t(`BB-nhe-time-slots-in-other-languages-${nheGroupsOtherLanguageCount === 1 ? "singular" : "plural"}`, `${nheGroupsOtherLanguageCount} time slot${nheGroupsOtherLanguageCount === 1 ? "" : "s"} available in other languages`, { numberOfAppointments: nheGroupsOtherLanguageCount })}`}
               </H4>
             )
@@ -159,7 +156,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
             nheGroups.get("other")?.map(nheItem => (
               <NheTimeSlotCard
                 nheTimeSlot={nheItem} key={nheItem.timeSlotId}
-                handleChange={(nheSlotTime: NHETimeSlot) => setSelectedNhe(nheSlotTime)}
+                handleChange={(nheSlotTime: NHETimeSlotUS) => setSelectedNhe(nheSlotTime)}
               />
             ))
           }

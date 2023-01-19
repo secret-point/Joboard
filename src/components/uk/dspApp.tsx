@@ -23,7 +23,7 @@ import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
 import JobOpportunity from "../uk/jobOpportunity/JobOpportunity";
-import Nhe from "../us/nhe/Nhe";
+import Nhe from "../uk/nhe/Nhe";
 import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
 import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";

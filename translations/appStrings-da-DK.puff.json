@@ -788,6 +788,10 @@
       "value" : "Hvis du har et SSN, er du forpligtet til at oplyse det. Hvis du ikke gør det, kan det medføre forsinkelser i ansættelsesprocessen, hvilket kan føre til, at du går glip af din startdato, og mister din valgte vagt.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Ved at angive, at jeg ikke har et SSN, anerkender jeg, at jeg ikke er berettiget til Wisely Pay-kortet, som et middel til at modtage min løn, før jeg får et SSN, og kun vil kunne modtage betaling via direkte indbetaling eller fysiske checks. Ved at fortsætte bekræfter jeg, at jeg ikke har et SSN. Jeg er klar over, at Amazon i henhold til loven vil foretage en opfølgende baggrundskontrol af mig, hvis jeg ændrer eller opdaterer mit SSN-nummer i forbindelse med onboardingprocessen eller i løbet af min ansættelse.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
       "value" : "Ved at angive, at jeg ikke har et SSN, anerkender jeg, at jeg ikke er kvalificeret til Wisely Pay-kortet, som et middel til at modtage min løn, før jeg får et SSN, og vil kun være i stand til at modtage betaling, via direkte indbetaling eller fysiske checks. Jeg er klar over, at Amazon, i henhold til loven, vil foretage en opfølgende baggrundskontrol af mig, hvis jeg ændrer eller opdaterer mit SSN-nummer, i forbindelse med onboarding-processen eller i løbet af min ansættelse.",
       "note" : "Content in the no SSN modal"
@@ -2531,6 +2535,166 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "Du giver dit samtykke til et baggrundstjek før ansættelse.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 timer/uge",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/uge",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/uge",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 eller mindre",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Lørdag",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Søndag",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Mandag",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Tirsdag",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Onsdag",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Torsdag",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Fredag",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Alle",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Dage",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Nætter",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Gå tilbage til valg af skift",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Angiv dine jobpræferencer",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Vælg den tidligste startdato",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Vælg en startdato i fremtiden",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Vælg det antal timer, du er i stand til at arbejde om ugen",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Dit visum kan begrænse antallet af timer om ugen, som du rent juridisk har ret til at arbejde. Hvis dette er tilfældet, skal du vælge de muligheder, der svarer til dine visumbegrænsninger.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Vælg mindst en mulighed for det antal timer, du er i stand til at arbejde om ugen.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Vælg alle de dage i ugen, du er i stand til at arbejde",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Bemærk venligst, de fleste af vores skiftmønstre inkluderer mindst en dag i weekenden, og skiftpræferencer er ikke garanteret.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "HVERDAGE",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "WEEKENDER",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Vælg mindst en ugedag, du er i stand til at arbejde.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Vælg det skiftmønster, som du er i stand til at arbejde",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Vælg mindst én mulighed.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Vælg dine skiftpræferencer",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Du kan indsende dine skiftpræferencer, og vi kontakter dig, når vi finder et skift, der fungerer for dig.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Kan du ikke se et skift, der fungerer for dig?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Indtast skiftpræferencer for at fortsætte",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Kan du ikke se et skift, der fungerer for dig?",
+      "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Du er der næsten, {displayFirstName} {displayLastName}! Vælg din foretrukne dato og tidspunkt for at planlægge en aftale forud for ansættelse, hvor vi kontrollerer dine arbejdsgodkendelsesdokumenter.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Aftale forud for ansættelse er en virtuel begivenhed",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Aftale forud for ansættelse vil blive afholdt over videokonference. Når du har valgt en dato og et klokkeslæt for at oprette forbindelse til os, sender vi dig en e-mail med aftaleoplysninger og link. Hvis du har spørgsmål eller tekniske problemer, bedes du kontakte os.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Luk",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Vælg dato for aftale",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Vælg aftaletidspunkt",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Bekræft valg",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

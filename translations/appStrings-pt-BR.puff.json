@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Não vê um turno que seja adequado para você?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Você está quase lá, {displayFirstName} {displayLastName}! Selecione a data e hora de sua preferência para fazer um agendamento de pré-contratação, no qual verificamos seus documentos de autorização de trabalho.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "O agendamento de pré-contratação é um evento virtual",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "O agendamento de pré-contratação será realizado por videoconferência. Depois de escolher uma data e hora para se conectar conosco, enviaremos um e-mail com os detalhes e o link do agendamento. Se você tiver alguma dúvida ou problema técnico, entre em contato conosco.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Fechar",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Escolha a data do agendamento",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Escolha o horário do agendamento",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Todos os horários de reunião são exibidos no horário local do Reino Unido. Cada reunião dura até {maxNheSlotLength} minutos.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Confirmar seleção",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Siehst du keine Schicht, die für dich passt?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Du hast es fast geschafft, {displayFirstName} {displayLastName}! Wähle dein bevorzugtes Datum und deine bevorzugte Uhrzeit aus, um einen Termin vor der Einstellung zu vereinbaren, bei dem wir deine Arbeitserlaubnisdokumente überprüfen.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Der Termin vor der Einstellung ist eine virtuelle Veranstaltung.",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Der Termin vor der Einstellung wird per Videokonferenz abgehalten. Sobald du ein Datum und eine Uhrzeit für die Verbindung mit uns ausgewählt hast, senden wir dir eine E-Mail mit den Termindetails und einem Link. Wenn du Fragen oder technische Probleme hast, kontaktiere uns bitte.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Schließen",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Wähle das Datum des Termins",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Wähle den Zeitpunkt des Termins",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Alle Termine werden in britischer Ortszeit angezeigt. Jeder Termin dauert bis zu {maxNheSlotLength} Minuten.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Auswahl bestätigen",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

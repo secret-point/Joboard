@@ -2667,6 +2667,10 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "자신에게 맞는 근무조를 찾을 수 없으신가요?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "모든 예약 시간은 영국 현지 시간으로 표시됩니다. 각 예약 시간은 최대 {maxNheSlotLength}분입니다.",
+      "note" : "Text for nhe time slot duration notice"
     }
   }
 }

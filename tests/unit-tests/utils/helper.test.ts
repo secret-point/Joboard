@@ -23,6 +23,7 @@ import {
   TEST_CANDIDATE_ADDRESS,
   TEST_JOB,
   TEST_JOB_ID,
+  TEST_NHE_DATA_UK,
   TEST_SCHEDULE,
   TEST_SELF_IDENTIFICATION
 } from "../../test-utils/test-data";
@@ -39,8 +40,10 @@ import {
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
-  GetSelfIdentificationConfigStep, getSupportedCitiesFromScheduleList,
-  handleConfirmNHESelection,
+  GetSelfIdentificationConfigStep,
+  getSupportedCitiesFromScheduleList,
+  getUKNHEMaxSlotLength,
+  handleConfirmUSNHESelection,
   handleInitiateSelfIdentificationStep,
   handleSubmitSelfIdDisabilityStatus,
   handleSubmitSelfIdEqualOpportunity,
@@ -65,12 +68,13 @@ import {
   parseQueryParamsArrayToSingleItem,
   populateTimeRangeHourData,
   processAssessmentUrl,
-  renderNheTimeSlotFullAddress,
   renderScheduleFullAddress,
+  renderUSNheTimeSlotFullAddress,
   reverseMappingTranslate,
   setEpicApiCallErrorMessage,
   shouldPrefillAdditionalBgcInfo,
-  showErrorMessage, UpdateHoursPerWeekHelper,
+  showErrorMessage,
+  UpdateHoursPerWeekHelper,
   validateInput,
   validateNonFcraSignatures
 } from "../../../src/utils/helper";
@@ -690,12 +694,12 @@ describe("handleSubmitSelfIdEqualOpportunity", () => {
   });
 });
 
-describe("handleConfirmNHESelection", () => {
+describe("handleConfirmUSNHESelection", () => {
 
   it("should call postAdobeMetrics", () => {
     const spy = jest.spyOn(adobeActions, "postAdobeMetrics");
 
-    handleConfirmNHESelection(TEST_APPLICATION_DATA, NHE_TIMESLOT);
+    handleConfirmUSNHESelection(TEST_APPLICATION_DATA, NHE_TIMESLOT);
 
     expect(spy).toHaveBeenCalled();
   });
@@ -703,7 +707,7 @@ describe("handleConfirmNHESelection", () => {
 
 describe("renderNheTimeSlotFullAddress", () => {
   it("should match", () => {
-    expect(renderNheTimeSlotFullAddress(NHE_TIMESLOT)).toEqual("01:30 PM - 02:00 PM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327");
+    expect(renderUSNheTimeSlotFullAddress(NHE_TIMESLOT)).toEqual("01:30 PM - 02:00 PM Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place, Dupont, WA 98327");
   });
 });
 
@@ -1254,4 +1258,8 @@ test("getSupportedCitiesFromScheduleList", () => {
   expect(getSupportedCitiesFromScheduleList([TEST_SCHEDULE])).toEqual([TEST_SCHEDULE.city]);
   expect(getSupportedCitiesFromScheduleList([{ ...TEST_SCHEDULE }, { ...TEST_SCHEDULE }])).toEqual([TEST_SCHEDULE.city]);
   expect(getSupportedCitiesFromScheduleList([{ ...TEST_SCHEDULE, city: "test1" }, { ...TEST_SCHEDULE }])).toEqual(["test1", TEST_SCHEDULE.city]);
+});
+test("getUKNHEMaxSlotLength", () => {
+  expect(getUKNHEMaxSlotLength([...TEST_NHE_DATA_UK], "SCH")).toEqual(180);
+  expect(getUKNHEMaxSlotLength([], "SCH")).toEqual(0);
 });

@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "ನಿಮಗೆ ಸೂಕ್ತವೆನಿಸುವ ಶಿಫ್ಟ್ ಕಾಣಿಸುತ್ತಿಲ್ಲವೇ?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "ನೀವು ಬಹುತೇಕ ಮುಗಿಸಿದ್ದೀರಿ, {displayFirstName} {displayLastName}! ಪೂರ್ವ-ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯನ್ನು ನಿಗದಿಪಡಿಸಲು ನಿಮ್ಮ ಆದ್ಯತೆಯ ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ, ಅಲ್ಲಿ ನಿಮ್ಮ ಕೆಲಸದ ದೃಢೀಕರಣ ದಾಖಲೆಗಳನ್ನು ನಾವು ಪರಿಶೀಲಿಸುತ್ತೇವೆ.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "ಪೂರ್ವ-ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆ ಎಂಬುದು ಒಂದು ವರ್ಚುವಲ್ ಈವೆಂಟ್ ಆಗಿದೆ",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "ಪೂರ್ವ-ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯು ವೀಡಿಯೊ ಕಾನ್ಫರೆನ್ಸ್ ಮೂಲಕ ನಡೆಯಲಿದೆ. ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ನೀವು ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ, ನಾವು ನಿಮಗೆ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ವಿವರಗಳು ಮತ್ತು ಲಿಂಕ್ ಅನ್ನು ಇಮೇಲ್ ಮಾಡುತ್ತೇವೆ. ನಿಮ್ಮಲ್ಲಿ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ ಅಥವಾ ತಾಂತ್ರಿಕ ಸಮಸ್ಯೆಗಳನ್ನು ಎದುರಿಸುತ್ತಿದ್ದರೆ, ದಯವಿಟ್ಟು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "ಮುಚ್ಚಿ",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ದಿನಾಂಕವನ್ನು ಆರಿಸಿ",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಸಮಯವನ್ನು ಆರಿಸಿ",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "ಆಯ್ಕೆಯನ್ನು ದೃಢೀಕರಿಸಿ",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

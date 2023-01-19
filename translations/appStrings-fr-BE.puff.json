@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Vous ne trouvez pas un quart de travail qui vous convient ?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Vous y êtes presque {displayFirstName} {displayLastName} ! Sélectionnez la date et l'heure de votre choix pour fixer un rendez-vous de pré-recrutement au cours duquel nous vérifierons vos documents vous autorisant à travailler.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Le rendez-vous de pré-recrutement est un événement virtuel",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Le rendez-vous de pré-recrutement aura lieu en vidéoconférence. Une fois que vous aurez choisi une date et une heure pour que nous puissions apprendre à nous connaître, nous vous enverrons un e-mail contenant les détails du rendez-vous et le lien pour participer à la vidéoconférence. Si vous avez des questions ou rencontrez des problèmes techniques, n’hésitez pas à nous contacter.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Fermer",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Choisissez la date du rendez-vous",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Choisissez l'heure du rendez-vous",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Confirmer la sélection",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

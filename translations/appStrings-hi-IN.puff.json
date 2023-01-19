@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "ऐसा कोई शिफ़्ट नहीं दिख रहा है जो आपके मुताबिक काम करे?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "बस लगभग हो गया, {displayFirstName} {displayLastName}! प्री-हायर अपॉइंटमेंट शेड्यूल करने के लिए अपनी पसंदीदा तारीख और समय का चयन करें, जहां हम आपके कार्य प्राधिकरण दस्तावेज़ों की जांच करते हैं.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "प्री-हायर अपॉइंटमेंट एक वर्चुअल इवेंट है",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "प्री-हायर अपॉइंटमेंट वीडियो कॉन्फ्रेंस के माध्यम से आयोजित किया जाएगा. एक बार जब आप हमारे साथ जुड़ने के लिए तारीख और समय चुनते हैं, तो हम आपको अपॉइंटमेंट विवरण और लिंक ईमेल करेंगे. अगर आपके कोई प्रश्न या तकनीकी समस्याएं हैं, तो कृपया हमसे संपर्क करें.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "बंद करें",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "अपॉइंटमेंट की तारीख चुनें",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "अपॉइंटमेंट का समय चुनें",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "सभी अपॉइंटमेंट स्लॉट UK के स्थानीय समय में प्रदर्शित किए जाते हैं. प्रत्येक अपॉइंटमेंट {maxNheSlotLength} मिनटों तक का होता है.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "चुनाव की पुष्टि करें",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "ألا تجد مناوبة عمل تناسبك؟",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "لقد أوشكت على الانتهاء، {displayFirstName} {displayLastName}. حدد التاريخ والوقت المفضلين لديك لتحديد موعد ما قبل التوظيف حيث نتحقق من مستندات ترخيص العمل الخاصة بك.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "موعد ما قبل التوظيف هو فعالية افتراضية",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "سيتم تحديد موعد ما قبل التوظيف عبر مؤتمر الفيديو. بمجرد اختيار التاريخ والوقت للتواصل معنا، سنرسل لك تفاصيل الموعد والرابط عبر البريد الإلكتروني. إذا كانت لديك أي أسئلة أو مشكلات فنية، فيرجى الاتصال بنا.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "إغلاق",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "اختر تاريخ الموعد",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "اختر وقت الموعد",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "يتم عرض جميع خانات المواعيد بالتوقيت المحلي للمملكة المتحدة. تصل مدة كل موعد إلى {maxNheSlotLength} من الدقائق.",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "تأكيد التحديد",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

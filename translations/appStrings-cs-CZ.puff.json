@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Nevidíte směnu, která by Vám vyhovovala?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Už máte téměř hotovo, {displayFirstName} {displayLastName}! Vyberte si preferované datum a čas a naplánujte si schůzku před přijetím do zaměstnání, na které zkontrolujeme Vaše doklady o pracovním povolení.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "Schůzka před přijetím do zaměstnání je virtuální událost",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "Schůzka před přijetím do zaměstnání se uskuteční prostřednictvím videokonference. Jakmile si vyberete datum a čas, kdy se s námi chcete spojit, zašleme Vám e-mailem podrobnosti o schůzce a odkaz. Pokud máte jakékoli dotazy nebo technické problémy, kontaktujte nás prosím.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Zavřít",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Vyberte datum schůzky",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Vyberte čas schůzky",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Všechny termíny se zobrazují v britském místním čase. Každá schůzka trvá asi {maxNheSlotLength} minut(y).",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Potvrdit výběr",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

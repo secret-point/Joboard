@@ -2667,6 +2667,10 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "Vous ne voyez pas un quart de travail qui fonctionne pour vous?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Tous les créneaux horaires de rendez-vous sont affichés en heure locale du Royaume-Uni. Chaque rendez-vous dure au plus {maxNheSlotLength} minutes.",
+      "note" : "Text for nhe time slot duration notice"
     }
   }
 }
