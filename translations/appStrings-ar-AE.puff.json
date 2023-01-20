@@ -788,6 +788,14 @@
       "value" : "إذا كان لديك رقم وبطاقة الضمان الاجتماعي (SSN)، فأنت مطالَب بتقديمه. يمكن أن يؤدي عدم القيام بذلك إلى تأخير عملية التوظيف، ما قد يؤدي إلى فوات تاريخ البدء الخاص بك وفوات مناوبة العمل التي حددتها.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "من خلال الإشارة إلى أنني لا أملك رقم وبطاقة الضمان الاجتماعي (SSN)، أقر بأنني لن أكون مؤهلاً للحصول على بطاقة Wisely Pay كوسيلة لاستلام راتبي حتى أحصل على رقم وبطاقة الضمان الاجتماعي (SSN)، ولن أتمكن من تلقي الدفعات إلا عن طريق الإيداع المباشر أو الشيكات الورقية. بالاستمرار، أؤكد أنه ليس لديّ رقم وبطاقة الضمان الاجتماعي (SSN). أفهم أنه، وفقًا لما يسمح به القانون، ستُجري أمازون فحصًا للخلفية الخاصة بي على سبيل المتابعة إذا قمت بتغيير أو تحديث رقم وبطاقة الضمان الاجتماعي الخاص بي (SSN) أثناء عملية الإعداد أو أثناء شغلي للمنصب.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "من خلال الإشارة إلى أنني لا أملك رقم وبطاقة الضمان الاجتماعي (SSN)، أقر بأنني لن أكون مؤهلاً للحصول على بطاقة Wisely Pay كوسيلة لاستلام الدفع حتى أحصل على رقم وبطاقة الضمان الاجتماعي (SSN)، ولن أتمكن من استلام الدفع إلا عن طريق الإيداع المباشر أو الشيكات الورقية. بالإضافة إلى ذلك ووفقًا لما يسمح به القانون، أفهم أن أمازون ستُجري فحصًا أمنيًا لي على سبيل المتابعة إذا قمت بتغيير أو تحديث رقم وبطاقة الضمان الاجتماعي الخاص بي (SSN) أثناء عملية التأهيل والإعداد أو أثناء وجودي في الوظيفة.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "أقرّ أيضًا بأن أيّ تزييف متعمد لرقم الضمان الاجتماعي الخاص بي (SSN) سوف تنظر فيه أمازون، الأمر الذي قد يؤدي إلى إلغاء عرض العمل الخاص بي، أو إنهاء عملي إذا ما كان قد تم تعييني.",
       "note" : "Content in the no SSN modal"
@@ -2455,6 +2463,210 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "يرجى تحديد أحد المربعات أدناه",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "رجوع إلى لوحة السجل",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "متابعة الطلب",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "هل تريد متابعة طلبك هنا؟",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "أنت تعمل حاليًا على هذا الطلب في نافذة مختلفة.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "وثائق الحق في العمل",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "التحقق من الحق في العمل بالمملكة المتحدة",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "لبدء عملك، يجب على أمازون التحقق من المستند (المستندات) الأصلي الذي يثبت حقك في العمل في المملكة المتحدة. تتضمن أمثلة مستندات الحق في العمل، على سبيل المثال لا الحصر",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "جواز سفر بريطاني",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "بطاقة الإقامة الدائمة",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "أختام الإقامة الدائمة",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "تصريح الإقامة البيومتري",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "لمزيد من المعلومات والتفاصيل حول جميع مستندات الحق في العمل المقبولة، يرجى الاطلاع على <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>دليل ترخيص عمل الموظف في المملكة المتحدة</a> الخاص بنا",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "عمرك 18 عامًا أو أكبر.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "أنت مقدم الطلب الوحيد ويجب عليك إكمال كل خطوة شخصيًا ما لم تتلقى أي مساعدة من أمازون لإكمال هذا الطلب.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "لديك",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "مستندات الحق في العمل",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "أنت على استعداد لإكمال الاختبار الطبي قبل التوظيف، إن أمكن.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "أنت توافق على فحص الخلفية قبل التوظيف.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36-40 ساعة/أسبوعيًا",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35 ساعة/أسبوعيًا",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24 ساعة/أسبوعيًا",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 أو أقل",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "السبت",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "الأحد",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "الإثنين",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "الثلاثاء",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "الأربعاء",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "الخميس",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "الجمعة",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "أي منها",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "أيام",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "ليالٍ",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "رجوع إلى تحديد مناوبة العمل",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "حدد تفضيلات وظيفتك",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "حدد أقرب تاريخ بدء",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "يُرجى تحديد تاريخ بدء في المستقبل",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "حدِّد عدد الساعات التي يمكنك العمل فيها أسبوعيًا",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "قد تقيد تأشيرتك عدد الساعات في الأسبوع التي يُسمح لك قانونًا بالعمل فيها. إذا كانت هذه هي الحالة، فاختر الخيارات التي تتوافق مع قيود تأشيرتك.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "يُرجى تحديد خيار واحد على الأقل لعدد الساعات التي يمكنك العمل فيها أسبوعيًا.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "حدد جميع أيام الأسبوع التي يمكنك العمل فيها",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "يُرجى الملاحظة أن معظم أنماط مناوبات العمل لدينا ستشمل يوم عطلة نهاية أسبوع واحد على الأقل ولا يتم ضمان تفضيلات مناوبات العمل.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "أيام الأسبوع",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "عطلات نهاية الأسبوع",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "يُرجى تحديد يوم واحد على الأقل من الأسبوع يمكنك العمل فيه.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "حدد نمط مناوبة العمل الذي يمكنك العمل فيه",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "حدد خيارًا واحدًا على الأقل.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "حدد تفضيلاتك لمناوبة العمل",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "يمكنك إرسال تفضيلاتك لمناوبة العمل وسنتواصل معك عندما نجد مناوبة العمل التي تناسبك.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "ألا تجد مناوبة عمل تناسبك؟",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "أدخل تفضيلات مناوبة العمل للمتابعة",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "ألا تجد مناوبة عمل تناسبك؟",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

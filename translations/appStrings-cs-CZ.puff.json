@@ -792,6 +792,10 @@
       "value" : "Uvedením, že nemám SSN, beru na vědomí, že dokud nezískám SSN, nebudu mít nárok na kartu Wisely Pay jako prostředek pro příjem mzdy a budu moci dostávat mzdu pouze prostřednictvím přímého vkladu nebo fyzických šeků. Pokračováním potvrzuji, že nemám SSN. Beru na vědomí, že v souladu se zákonem společnost Amazon provede následnou prověrku, pokud během přijímacího procesu nebo v průběhu zaměstnání změním nebo aktualizuji své SSN.",
       "note" : "Old deprecated version of the content in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Uvedu-li, že nemám SSN, beru na vědomí, že dokud nezískám SSN, nebudu mít nárok na kartu Wisely Pay sloužící pro příjem výplaty a budu moci dostávat výplatu pouze prostřednictvím přímého vkladu nebo fyzických šeků. Dále beru na vědomí, že společnost Amazon provede v souladu se zákonem navazující ověření, pokud během přijímacího procesu nebo v průběhu zaměstnání změním nebo aktualizuji své SSN.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Rovněž beru na vědomí, že jakékoli úmyslné uvedení nesprávného údaje o mém SSN bude společností Amazon zváženo a může vést k odvolání nabídky zaměstnání nebo, pokud budu přijat/a, k ukončení pracovního poměru.",
       "note" : "Content in the no SSN modal"
@@ -2460,6 +2464,22 @@
       "value" : "Zaškrtněte prosím jedno z níže uvedených políček",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Pokračovat v žádosti",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Chcete ve své žádosti pokračovat zde?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Aktuálně pracujete na této žádosti v jiném okně.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "Dokumenty týkající se pracovního povolení",
       "note" : "Title for right to work flyout"
@@ -2515,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "Souhlasíte s ověřením údajů před nástupem do zaměstnání.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36–⁠40 hod./týd.",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25–⁠35/týd.",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15–⁠24/týd.",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 nebo méně",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Sobota",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Neděle",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Pondělí",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Úterý",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Středa",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Čtvrtek",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Pátek",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Jakýkoli",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Dny",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Noci",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Vrátit se zpět k výběru směn",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Upřesněte své preference ohledně práce",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Vyberte nejbližší datum zahájení",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Vyberte prosím datum zahájení v budoucnosti",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Vyberte počet hodin, které můžete týdně odpracovat",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Vaše vízum může omezovat počet hodin týdně, které můžete podle zákona odpracovat. V takovém případě vyberte možnosti, které odpovídají Vašim vízovým omezením.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Vyberte prosím alespoň jednu možnost počtu hodin, které můžete týdně odpracovat.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Vyberte všechny dny v týdnu, kdy můžete pracovat",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Upozorňujeme, že většina našich směn zahrnuje alespoň jeden den o víkendu a preference směn nejsou zaručeny.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "DNY V TÝDNU",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "VÍKENDY",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Vyberte prosím alespoň jeden den v týdnu, kdy můžete pracovat.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Vyberte vzorec směn, podle kterého můžete pracovat",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Vyberte alespoň jednu možnost.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Vyberte své preference ohledně směn",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Můžete nám zaslat své preference ohledně směn a my Vás budeme kontaktovat, až najdeme směnu, která Vám bude vyhovovat.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Nevidíte směnu, která by Vám vyhovovala?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Chcete-li pokračovat, zadejte preference ohledně směn",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Nevidíte směnu, která by Vám vyhovovala?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

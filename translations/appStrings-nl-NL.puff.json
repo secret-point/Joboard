@@ -788,6 +788,10 @@
       "value" : "Als je een SSN hebt, moet je dat opgeven. Doe je dat niet, dan kan dat leiden tot vertragingen in het wervingsproces, wat kan leiden tot het missen van je startdatum en het verliezen van je geselecteerde dienst.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Door aan te geven dat ik geen SSN heb, erken ik dat ik niet in aanmerking kom voor de Wisely Pay Card als middel om mijn salaris te ontvangen totdat ik een SSN heb verkregen, en alleen salaris kan ontvangen via directe storting of fysieke cheques. Door verder te gaan, bevestig ik dat ik geen SSN heb. Ik begrijp dat Amazon, zoals wettelijk is toegestaan, een vervolg-antecedentenonderzoek naar mij zal uitvoeren als ik mijn SSN wijzig of update tijdens het indiensttredingsproces of tijdens mijn dienstverband.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
       "value" : "Door aan te geven dat ik geen SSN heb, erken ik dat ik, totdat ik een SSN heb verkregen, niet in aanmerking kom voor de Wisely Pay Card als middel om mijn salaris te ontvangen en dat ik alleen salaris kan ontvangen via directe aanbetaling of fysieke cheques. Ik begrijp dat Amazon, zoals wettelijk is toegestaan, een achtergrondcontrole naar mij zal uitvoeren als ik mijn SSN wijzig of update tijdens het indiensttredingsproces of tijdens mijn dienstverband.",
       "note" : "Content in the no SSN modal"
@@ -2460,6 +2464,22 @@
       "value" : "Vink een van de onderstaande vakjes aan",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Doorgaan met aanvragen",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Wil je je aanvraag hier voortzetten?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Je werkt momenteel in een ander venster aan deze aanvraag.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "Documentatie over Recht op Werk",
       "note" : "Title for right to work flyout"
@@ -2515,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "Je stemt in met een antecedentenonderzoek voorafgaand aan indiensttreding.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 uur/week",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35 uur/week",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24 uur/week",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 uur of minder",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Zaterdag",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Zondag",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Maandag",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Dinsdag",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Woensdag",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Donderdag",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Vrijdag",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Willekeurig",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Dagen",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Nachtwerk",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Ga terug naar selectie van ploegendienst",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Geef je functievoorkeuren aan",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Selecteer de vroegste startdatum",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Selecteer een startdatum in de toekomst",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Selecteer het aantal uren dat je per week kunt werken",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Het is mogelijk dat je visum het aantal uren per week dat je wettelijk mag werken beperkt. Als dit het geval is, kies dan de opties die overeenkomen met je visumbeperkingen.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Selecteer ten minste één optie voor het aantal uren dat je per week kunt werken.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Selecteer alle dagen van de week waarop je kunt werken",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Houd er rekening mee dat de meeste van onze ploegendiensten ten minste één dag hebben die in het weekend valt en dat voorkeuren voor bepaalde ploegendiensten niet kunnen worden gegarandeerd.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "WEEKDAGEN",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "WEEKENDEN",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Selecteer ten minste één dag van de week waarop je kunt werken.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Selecteer het patroon van de ploegendienst waarin je kunt werken",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Selecteer minstens één optie.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Selecteer je voorkeur voor een ploegendienst",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Geef je voorkeur voor een ploegendienst door en we nemen contact met je op als we een dienst hebben gevonden die bij je past.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Zie je geen ploegendienst die bij je past?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Voer je voorkeur voor een ploegendienst in om door te gaan",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Zie je geen ploegendienst die bij je past?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

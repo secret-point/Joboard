@@ -788,6 +788,14 @@
       "value" : "Bir SSN'nız varsa bunu vermeniz gerekir. Bunu yapmamak, işe alım sürecinde gecikmelere neden olabilir ve bu da başlangıç tarihinizi kaçırmanıza ve seçtiğiniz vardiyayı kaybetmenize yol açabilir.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "SSN’m olmadığını belirterek, bir SSN alana kadar ödememi almamın bir yöntemi olan Wisely Pay Kartı için uygun olmayacağımı ve yalnızca doğrudan yatırılan para veya fiziksel çekler yoluyla ödeme alabileceğimi kabul ediyorum. Devam ederek, bir SSN’m olmadığını onaylıyorum. İşe alım sürecinde veya çalışmam esnasında SSN'mı değiştirir veya güncellersem Amazon'un, yasaların izin verdiği şekilde, benim hakkımda yeni bir geçmiş kontrolü yapacağını anlıyorum.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Bir SSN’na sahip olmadığımı belirterek, bir SSN alana kadar, maaşımı almamın bir yöntemi olan Wisely Pay kartı için uygun olmayacağımı ve yalnızca doğrudan para yatırma veya fiziksel çekler yoluyla ödeme alabileceğimi kabul ediyorum. Buna ek olarak, işe alıştırma sürecinde veya istihdamım boyunca SSN’mı değiştirmem veya güncellemem halinde Amazon’un, yasaların izin verdiği şekilde bir takip geçmiş kontrolü yapacağını anlıyorum.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Ayrıca, SSN'min kasıtlı olarak yanlış beyan edilmesinin Amazon tarafından dikkate alınacağını ve iş teklifimin iptaline veya işe alınırsam işimin feshedilmesine yol açabileceğini de kabul ediyorum.",
       "note" : "Content in the no SSN modal"
@@ -2455,6 +2463,210 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Lütfen aşağıdaki kutulardan birini işaretleyin.",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Panele geri dön",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Başvuruya devam et",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Başvurunuza buradan devam etmek istiyor musunuz?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Şu anda farklı bir pencerede bu başvuru üzerinde çalışıyorsunuz.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Çalışma İzni belgeleri",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK Çalışma İzni Kontrolü",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "İşe başlayabilmeniz için Amazon’un, Birleşik Krallık’ta çalışma izniniz olduğunu kanıtlayan orijinal belgelerinizi kontrol etmesi gerekmektedir. Çalışma izni belgesi örnekleri, bunlarla sınırlı olmamakla birlikte aşağıdakileri içerir:",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "İngiliz Pasaportu",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Kalıcı Oturum Kartı",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Süresiz Oturma İzni damgaları",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biyometrik Oturma İzni",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Kabul edilebilir tüm çalışma izni belgeleri hakkında daha fazla bilgi ve ayrıntı için, lütfen <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Birleşik Krallık Çalışanı Çalışma İzni Kılavuzumuza</a> bakın.",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "18 yaşında veya daha büyüksünüz.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Tek başvuru sahibi sizsiniz ve bu başvuruyu tamamlamak için Amazon’dan herhangi bir yardım almadığınız sürece her adımı kişisel olarak tamamlayacaksınız.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Aşağıdakilere sahipsiniz:",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "Çalışma izni belgeleri",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Mevcut ise, istihdam öncesi tıbbi testi tamamlamaya hazırsınız.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "İstihdam öncesi geçmiş kontrolüne izin veriyorsunuz.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 saat/hafta",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/hafta",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/hafta",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 veya daha az",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Cumartesi",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Pazar",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Pazartesi",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Salı",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Çarşamba",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Perşembe",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Cuma",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Herhangi biri",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Günler",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Geceleri",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Vardiya seçimine geri dönün",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "İş tercihlerinizi belirtin.",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "En erken başlangıç tarihini seçin.",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Lütfen gelecekteki bir başlangıç tarihi seçin.",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Haftada çalışabileceğiniz saat sayısını seçin.",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Vizeniz, yasal olarak çalışmaya yetkili olduğunuz haftalık saat sayısını kısıtlayabilir. Bu durumda, vize kısıtlamalarınıza karşılık gelen seçenekleri seçin.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Lütfen haftalık çalışabileceğiniz saat sayısı için en az bir seçenek seçin.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Haftanın çalışabileceğiniz tüm günlerini seçin.",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Lütfen, vardiya modellerimizin çoğunun hafta sonunun en az bir gününü içereceğini ve vardiya tercihlerinin garanti edilmediğini unutmayın.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "Hafta içi",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "Hafta sonları",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Lütfen haftada çalışabileceğiniz en az bir gün seçin.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Çalışabileceğiniz vardiya düzenini seçin.",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "En az bir seçenek seçin.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Vardiya tercihlerinizi seçin.",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Vardiya tercihlerinizi gönderebilirsiniz ve size uygun bir vardiya bulduğumuzda sizinle iletişime geçeceğiz.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Size uygun bir vardiya görmüyor musunuz?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Devam etmek için vardiya tercihlerini girin.",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Size uygun bir vardiya görmüyor musunuz?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

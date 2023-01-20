@@ -136,6 +136,10 @@
       "value" : "Vores inkluderende kultur gør Amazonians i stand til at levere de bedste resultater til vores kunder. Hvis du har et handicap og har brug for tilpasning under ansøgnings- og ansættelsesprocessen, bedes du kontakte Applicant-Candidate Accommodation Team (ACAT) på 888-435-9287, mandag til fredag fra kl. 6.00 til 16.00 Pacific Time. For mere information, gå til <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Vores inkluderende kultur, gør Amazonians i stand til at levere de bedste resultater til vores kunder. Hvis du har et handicap, og har brug for en justering under ansøgnings- og ansættelsesprocessen, herunder support til interviewet eller onboarding-processen, bedes du kontakte Ansøgerkandidat Tilpasningsteamet (ACAT) mandag til fredag fra 7:00 GMT - 16:00 GMT. Hvis du ringer direkte fra Storbrittanien, skal du ringe til +44 800 086 9884. Hvis du ringer fra Irland, skal du ringe til +353 1800 851 489. Du kan også kontakte os, hvis du muligvis har brug for en justering i din nye rolle, og gerne vil starte en anmodning, inden du starter din 1. dag.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Se fremskridt",
       "note" : "Text for view progress flyout title"
@@ -783,6 +787,10 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Hvis du har et SSN, er du forpligtet til at oplyse det. Hvis du ikke gør det, kan det medføre forsinkelser i ansættelsesprocessen, hvilket kan føre til, at du går glip af din startdato, og mister din valgte vagt.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Ved at angive, at jeg ikke har et SSN, anerkender jeg, at jeg ikke er kvalificeret til Wisely Pay-kortet, som et middel til at modtage min løn, før jeg får et SSN, og vil kun være i stand til at modtage betaling, via direkte indbetaling eller fysiske checks. Jeg er klar over, at Amazon, i henhold til loven, vil foretage en opfølgende baggrundskontrol af mig, hvis jeg ændrer eller opdaterer mit SSN-nummer, i forbindelse med onboarding-processen eller i løbet af min ansættelse.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Jeg anerkender også, at enhver forsætlig vildledning i forbindelse med mit SSN (CPR) vil blive taget i betragtning af Amazon og kan føre til tilbagekaldelse af mit jobtilbud eller, hvis jeg bliver ansat, til opsigelse af min ansættelse.",
@@ -2451,6 +2459,78 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Kryds venligst et af felterne af nedenfor",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Tilbage til oversigt",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Fortsæt ansøgning",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Vil du fortsætte din ansøgning her?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Du arbejder i øjeblikket på denne ansøgning i et andet vindue.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Arbejdstilladelsesdokumentation",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Britisk arbejdstilladelseskontrol",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "For at begynde din ansættelse, skal Amazon kontrollere dit originale dokument(er) der bekræfter, at du har tilladelse til at arbejde i Storbritannien. Eksempler på et arbejdstilladelsesdokument inkluderer, men er ikke begrænset til",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Britisk pas",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Permanent opholdstilladelse",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Stempler til tidsubegrænset opholdstilladelse",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Opholdstilladelse med biometri",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Du kan finde flere oplysninger og detaljer om alle acceptable arbejdstilladelsesdokumenter i vores <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Vejledning om arbejdstilladelse for britiske medarbejdere</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Du er 18 år eller derover.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Du er den eneste ansøger og skal selv udfylde hvert enkelt trin, medmindre du får hjælp fra Amazon til at udfylde denne ansøgning.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Du har",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "Arbejdstilladelsesdokumentation",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Du er villig til at gennemføre en lægetest før ansættelse, hvis relevant.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Du giver dit samtykke til et baggrundstjek før ansættelse.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     }
   }
 }

@@ -2464,6 +2464,22 @@
       "value" : "Cochez l'une des cases ci-dessous",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Continuer la demande",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Voulez-vous continuer votre demande ici ?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Vous travaillez actuellement sur cette demande dans une autre fenêtre.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "Documents donnant le droit de travailler",
       "note" : "Title for right to work flyout"

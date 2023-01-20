@@ -788,6 +788,14 @@
       "value" : "Si tienes un número de la Seguridad Social, debes proporcionarlo. Si no lo haces, puedes provocar retrasos en el proceso de contratación, lo que puede hacer que no se cumpla la fecha de inicio y pierdas el turno seleccionado.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Al indicar que no tengo un número de la Seguridad Social, reconozco que no podré recibir mi pago con la tarjeta Wisely Pay hasta que lo obtenga y que solo podré recibir el pago mediante depósito directo o cheques físicos. Al continuar, confirmo que no tengo un número de la Seguridad Social. Comprendo que, según lo permita la ley, Amazon llevará un seguimiento posterior de mis antecedentes si cambio o actualizo mi número de la Seguridad Social durante el proceso de incorporación o durante mi empleo.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Al indicar que no tengo un número de la Seguridad Social reconozco que no podré recibir mi pago con la tarjeta Wisely Pay hasta que lo obtenga y que solo podré recibir el pago mediante depósito directo o cheques físicos. Comprendo que, según lo permita la ley, Amazon realizará una comprobación posterior de mis antecedentes si cambio o actualizo mi número de la Seguridad Social durante el proceso de incorporación o durante mi empleo.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "También reconozco que Amazon tendrá en cuenta cualquier tergiversación intencional de mi número de la Seguridad Social y que esto puede dar lugar a la revocación de mi oferta de empleo o, si me contratan, a la terminación de mi empleo.",
       "note" : "Content in the no SSN modal"
@@ -2456,6 +2464,22 @@
       "value" : "Marca una de las siguientes casillas",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Volver al panel",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Continuar con la solicitud",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "¿Deseas continuar con tu solicitud aquí?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Estás trabajando en esta solicitud en otra ventana.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "Documentación sobre el derecho a trabajar",
       "note" : "Title for right to work flyout"
@@ -2511,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "Aceptas una verificación de antecedentes previa al empleo.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36-40 horas/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25-35 horas/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15-24 horas/semana",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 o menos",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Sábado",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Domingo",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Lunes",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Martes",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Miércoles",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Jueves",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Viernes",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Cualquiera",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Días",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Noches",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Volver a la selección de turnos",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Especifica tus preferencias laborales",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Selecciona la fecha de inicio más temprana",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Selecciona una fecha de inicio en el futuro",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Selecciona el número de horas que puedes trabajar a la semana",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Tu visado puede restringir la cantidad de horas a la semana en las que estás legalmente autorizado a trabajar. Si este es el caso, elige las opciones que se correspondan con las restricciones de tu visado.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Selecciona al menos una opción para el número de horas que puedes trabajar a la semana.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Selecciona todos los días de la semana en los que puedes trabajar",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Ten en cuenta que la mayoría de nuestros patrones de turnos incluirán al menos un día del fin de semana y las preferencias de turnos no están garantizadas.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "DÍAS DE LA SEMANA",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "FINES DE SEMANA",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Selecciona al menos un día de la semana en el que puedas trabajar.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Selecciona el patrón de turnos en el que puedes trabajar",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Selecciona al menos una opción.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Selecciona tus preferencias de turno",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Puedes enviar tus preferencias de turno y nos pondremos en contacto contigo cuando encontremos un turno adecuado para ti.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "¿No ves ningún turno que sea adecuado para ti?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Introduce tus preferencias de turno para continuar",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "¿No ves ningún turno que sea adecuado para ti?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

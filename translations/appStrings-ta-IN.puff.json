@@ -136,6 +136,10 @@
       "value" : "பல சாராரையும் உள்ளடக்கிய எங்களது கலாச்சாரமானது வாடிக்கையாளர்களுக்குச் சிறந்த முடிவுகளை வழங்க Amazonianகளுக்கு அதிகாரம் அளிக்கிறது. உங்களுக்கு ஒரு மாற்றுத்திறன் இருந்து அதன் காரணமாக விண்ணப்பம் மற்றும் மதிப்பீட்டுச் செயல்முறையின்போது ஒரு தங்குமிடம் தேவையெனில் Applicant-Candidate Accommodation Teamஐ (ACAT) 888-435-9287 என்ற எண்ணில் தொடர்புகொள்ளவும், திங்கள் - வெள்ளி 6 AM - 4 PM பசிஃபிக் நேரம். மேலும் தகவல்களுக்கு, <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> பார்க்கவும்",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "பல சாராரையும் உள்ளடக்கிய எங்களது கலாச்சாரமானது வாடிக்கையாளர்களுக்குச் சிறந்த முடிவுகளை வழங்க Amazonianகளுக்கு அதிகாரம் அளிக்கிறது. உங்களுக்கு ஒரு மாற்றுத்திறன் இருந்து, விண்ணப்பச் செயல்முறையின்போதோ பணிக்கான ஆளெடுப்புச் செயல்முறையின்போதோ ஏதேனும் உதவி தேவைப்பட்டால் (நேர்காணல் அல்லது ஆன்போர்டிங் செயல்முறையிலான உதவி உட்பட), விண்ணப்பதாரர் வசதிக் குழுவினரை (ACAT) தொடர்புகொள்ளவும். இந்தக் குழுவினரை, திங்கள் முதல் வெள்ளி வரை GMT நேரப்படி காலை 7.00 மணி முதல் GMT நேரப்படி மாலை 4.00 மணி வரை தொடர்புகொள்ளலாம். நீங்கள் யுனைடெட் கிங்டமில் இருந்து நேரடியாக அழைத்தால், +44 800 086 9884 என்ற எண்ணைத் தொடர்புகொள்ளுங்கள். அயர்லாந்தில் இருந்து அழைத்தால், +353 1800 851 489 என்ற எண்ணைத் தொடர்புகொள்ளுங்கள். உங்கள் புதிய பொறுப்பில் ஏதேனும் உதவி தேவைப்பட்டால் மற்றும் நீங்கள் பணியின் முதல் நாளுக்கு முன்பே கோரிக்கையைச் சமர்ப்பிக்க விரும்பினால், நீங்கள் எங்களையும் தொடர்புகொள்ளலாம்.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "செயல்நிலையைக் காண்க",
       "note" : "Text for view progress flyout title"
@@ -783,6 +787,14 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "உங்களிடம் SSN இருந்தால், அதை வழங்க வேண்டும். அவ்வாறு செய்யத் தவறினால் பணியமர்த்தல் செயல்முறையில் தாமதம் ஏற்படலாம், இதனால் உங்கள் தொடக்கத் தேதியையும் நீங்கள் தேர்ந்தெடுத்த ஷிஃப்ட் நேரத்தையும் இழக்க நேரிடலாம்.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "என்னிடம் SSN இல்லை என்பதைக் குறிப்பிடுவதன் மூலம், நான் ஒரு SSNஐப் பெறும் வரை எனது ஊதியத்தைப் பெறுவதற்கான வழிமுறையாக Wisely Pay கார்டுக்கு நான் தகுதிபெறமாட்டேன் என்பதையும், நேரடி டெபாசிட் அல்லது நேரடிக் காசோலைகள் மூலமாக மட்டுமே ஊதியத்தைப் பெற முடியும் என்பதையும் ஒப்புக்கொள்கிறேன். தொடர்வதன் மூலம், என்னிடம் SSN இல்லை என்பதை உறுதிப்படுத்துகிறேன். ஆன்போர்டிங் செயல்முறையின்போது அல்லது எனது பணிக்காலத்தின்போது எனது SSNஐ நான் மாற்றினாலோ புதுப்பித்தாலோ, சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி என்னைப் பற்றிய ‘மேற்கொண்டு செயலாற்றுதலுக்கான பின்னணிச் சோதனையை’ Amazon மேற்கொள்ளும் என்பதை நான் புரிந்துகொள்கிறேன்.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "என்னிடம் SSN இல்லை என்பதைக் குறிப்பிடுவதன் மூலம், நான் ஒரு SSNஐப் பெறும் வரை எனது பேமெண்டைப் பெறுவதற்கான வழிமுறையாக Wisely Pay கார்டுக்குத் தகுதி பெறமாட்டேன் என்பதையும், நேரடி டெபாசிட் அல்லது நேரடிக் காசோலைகள் மூலமாக மட்டுமே பேமெண்டைப் பெற முடியும் என்பதையும் ஒப்புக்கொள்கிறேன். கூடுதலாக, நான் எனது SSNஐ மாற்றினாலோ புதுப்பித்தாலோ, மேற்கொண்டு செயலாற்றுதல் பின்னணிச் சோதனையைச் சட்டத்தால் அனுமதிக்கப்பட்டுள்ளபடி Amazon மேற்கொள்ளும் என்பதைப் புரிந்துகொள்கிறேன்.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "எனது SSNஐ வேண்டுமென்றே தவறாகக் குறிப்பிடுவது Amazonஆல் பரிசீலிக்கப்பட்டு இதனால் எனது வேலை வாய்ப்பு திரும்பப் பெறப்படலாம் அல்லது நான் பணியமர்த்தப்பட்டால், நான் வேலையிலிருந்து நீக்கப்படலாம் என்பதையும் நான் ஒப்புக்கொள்கிறேன்,.",
@@ -2451,6 +2463,210 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "கீழே உள்ள பெட்டிகளில் ஒன்றைத் தேர்ந்தெடுக்கவும்",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "விண்ணப்பத்தைத் தொடர்க",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "உங்கள் விண்ணப்பத்தை இங்கே தொடர விரும்புகிறீர்களா?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "நீங்கள் தற்போது வேறொரு சாளரத்தில் இந்த விண்ணப்பத்தைத் தொடர்கிறீர்கள்.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "வேலை செய்வதற்கான உரிமை ஆவணங்கள்",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UKஇல் வேலை செய்வதற்கான உரிமை சரிபார்ப்பு",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "உங்கள் வேலையைத் தொடங்குவதற்கு, UKஇல் வேலை செய்வதற்கான உங்கள் உரிமையை நிரூபிக்கும் அசல் ஆவணங்களை Amazon சரிபார்க்க வேண்டும். வேலை செய்வதற்கான உரிமை ஆவண எடுத்துக்காட்டுகளில் இவை அடங்கும்",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "பிரிட்டிஷ் கடவுச்சீட்டு",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "நிரந்தரக் குடியுரிமை அட்டை",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "காலவரையின்றி வசித்தல்/வேலைசெய்தல் நிலைக்கான ஸ்டாம்ப்கள்",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "பயோமெட்ரிக் குடியுரிமை அனுமதி",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "ஏற்றுக்கொள்ளக்கூடிய அனைத்து, வேலை செய்வதற்கான உரிமை ஆவணங்களையும் பற்றிய கூடுதல் தகவல்கள் மற்றும் விவரங்களுக்கு, எங்கள் <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK பணியாளர் வேலை அங்கீகார வழிகாட்டியைப்</a> பார்க்கவும்",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "நீங்கள் 18 அல்லது அதற்கு மேற்பட்ட வயதுடையவர்.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "நீங்கள்தான் தனி விண்ணப்பதாரர், இந்த விண்ணப்பத்தை முடிக்க Amazonஇல் இருந்து ஏதேனும் உதவி பெற்றால் தவிர, இதன் ஒவ்வொரு படியையும் தனிப்பட்ட முறையில் நீங்களே முடிக்க வேண்டும்.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "உங்களிடம் இருக்க வேண்டியவை:",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "வேலை செய்வதற்கான உரிமை ஆவணம்",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "பொருந்தும்பட்சத்தில், வேலைவாய்ப்புக்கு முந்தைய மருத்துவப் பரிசோதனையை முடிக்க நீங்கள் தயாராக உள்ளீர்கள்.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "வேலைவாய்ப்புக்கு முந்தைய பின்னணிச் சோதனைக்கு நீங்கள் ஒப்புக்கொள்கிறீர்கள்.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 ம.நே./வாரம்",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/வாரம்",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/வாரம்",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 மணிநேரம் அல்லது அதற்கும் குறைவு",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "சனிக்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "ஞாயிற்றுக்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "திங்கட்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "செவ்வாய்க்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "புதன்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "வியாழக்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "வெள்ளிக்கிழமை",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "ஏதேனும்",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "நாட்கள்",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "இரவுகள்",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "ஷிஃப்ட் தேர்வுக்குத் திரும்பிச் செல்க",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "வேலை தொடர்பான உங்கள் விருப்பத்தேர்வுகளைக் குறிப்பிடவும்",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "தொடக்கத் தேதியை விரைவில் வரும் நாளில் இருந்து தேர்ந்தெடுக்கவும்",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "தொடக்கத் தேதியை எதிர்காலத்தில் உள்ளவாறு தேர்ந்தெடுக்கவும்",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "ஒரு வாரத்திற்கு எவ்வளவு மணிநேரம் நீங்கள் வேலை செய்ய முடியும் என்பதைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "நீங்கள் ஒரு வாரத்தில் வேலை செய்வதற்கான சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட மணிநேரங்களின் எண்ணிக்கையை உங்கள் விசா கட்டுப்படுத்தக்கூடும். இதுதான் சூழல் எனில், உங்கள் விசா கட்டுப்பாடுகளுடன் தொடர்புடைய விருப்பங்களைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "ஒரு வாரத்திற்கு எவ்வளவு மணிநேரம் நீங்கள் வேலை செய்ய முடியும் என்பதைக் குறிக்கும் வகையில் குறைந்தபட்சம் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "வாரத்தில் நீங்கள் வேலை செய்யக்கூடிய அனைத்து நாட்களையும் தேர்ந்தெடுக்கவும்",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "எங்கள் பெரும்பாலான ஷிஃப்ட் முறைகளில் குறைந்தது ஒரு வார இறுதி நாளாவது இருக்கும், மேலும் ஷிஃப்ட் விருப்பத்தேர்வுகளுக்கு உத்தரவாதம் இல்லை என்பதைக் கவனத்தில்கொள்ளவும்.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "வார நாட்கள்",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "வார இறுதி நாட்கள்",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "வாரத்தில் நீங்கள் வேலை செய்யக்கூடிய, ஒரு நாளையாவது தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "நீங்கள் வேலை செய்யக்கூடிய ஷிஃப்ட் முறையைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "குறைந்தபட்சம் ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "உங்கள் ஷிஃப்ட் விருப்பத்தேர்வுகளைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "உங்களுக்குப் பொருத்தமான ஷிஃப்ட் விருப்பத்தேர்வுகளை நீங்கள் சமர்ப்பிக்கலாம், உங்களுக்கு வசதியான ஷிஃப்ட்டைக் கண்டறியும்போது உங்களைத் தொடர்புகொள்வோம்.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "உங்களுக்கு வசதியான ஷிஃப்ட் இல்லையா?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "தொடர்வதற்கு, ஷிஃப்ட் விருப்பத்தேர்வுகளை உள்ளிடவும்",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "உங்களுக்கு வசதியான ஷிஃப்ட் இல்லையா?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

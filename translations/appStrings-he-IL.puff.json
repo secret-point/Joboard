@@ -2464,6 +2464,22 @@
       "value" : "יש לסמן את אחת התיבות להלן",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "חזרה ללוח הבקרה",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "להמשיך בהגשת המועמדות",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "האם ברצונך להמשיך את בקשתך כאן?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "הגשת מועמדות זו פעילה עבורך בחלון אחר כעת.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "מסמכי אישור עבודה",
       "note" : "Title for right to work flyout"

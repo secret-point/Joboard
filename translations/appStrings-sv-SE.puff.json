@@ -88,9 +88,17 @@
       "value" : "Skapa ansökan",
       "note" : "Text for the create application button"
     },
+    "BB-kondo-ConsentPage-start-application-button" : {
+      "value" : "Starta ansökan",
+      "note" : "Text for the start application button"
+    },
     "BB-ConsentPage-flyout-user-data-policy-title-text" : {
       "value" : "Policy för användardata",
       "note" : "Text for the flyout user data policy title text"
+    },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "Sekretesspolicy för kandidater från EU och Storbritannien",
+      "note" : "Text for the flyout Kondo user data policy title text"
     },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "Jag är medveten om att all information som samlas in kan överföras i enlighet med den Federala lagen om skydd av personuppgifter i privata parters besittning (Federal Law on the Protection of Personal Data in the Possession of Private Parties) och dess föreskrifter, riktlinjer och andra tillämpliga bestämmelser om datasekretess, såväl som när det gäller företagets sekretesspolicy till anställda och/eller kandidater.",
@@ -127,6 +135,10 @@
     "BB-ConsentPage-consent-disability-accommodation-text" : {
       "value" : "Vår inkluderande kultur ger Amazonians möjligheten att leverera bästa möjliga resultat till våra kunder. Om du har ett funktionshinder och behöver ett boende under ansöknings- och anställningsprocessen, kontakta Applicant-Candidate Accommodation Team (ACAT) på 888-435-9287, måndag till fredag 06.00 till 16.00 Stillahavstid. För mer information, besök <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
+    },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Vår inkluderande kultur ger Amazonians möjligheten att leverera bästa möjliga resultat till våra kunder. Om du har en funktionsnedsättning och har behov för behöver en anpassad ansöknings- och anställningsprocess, inklusive stöd under intervjun eller introduktionsprocessen kan du kontakta ACAT (Applicant-Candidate Accommodation Team), måndag till fredag mellan 07:00 GMT–16:00 GMT. Om du ringer från Storbritannien, ring +44 800 086 9884. Om du ringer från Irland, ring +353 1800 851 489. Du kan också kontakta oss om du behöver en anpassning i din nya roll och vill göra en begäran om detta innan du har din första jobbdag.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
     },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Visa framsteg",
@@ -775,6 +787,14 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "Om du har ett SSN måste du ange det. Att inte göra det kan det orsaka förseningar i anställningsprocessen, vilket kan leda till att du missar ditt startdatum och förlorar ditt valda skift.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "Genom att ange att jag inte har ett SSN bekräftar jag att jag inte kommer att vara berättigad till Wisely Pay-kortet som ett sätt att ta emot min lön förrän jag får ett SSN, och kommer endast att kunna ta emot betalning via direktinsättning eller fysiska checkar. Genom att fortsätta bekräftar jag att jag inte har ett SSN. Jag förstår att Amazon, som tillåtet enligt lag, kommer att genomföra en uppföljande bakgrundskontroll av mig om jag ändrar eller uppdaterar mitt SSN under introduktionsprocessen eller under min anställning.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "Genom att ange att jag inte har ett SSN bekräftar jag att jag inte kommer att vara berättigad till Wisely Pay-kortet som ett sätt att ta emot min lön förrän jag får ett SSN, och kommer endast att kunna ta emot betalning via direktinsättning eller fysiska checkar. Jag förstår att Amazon, enligt vad som tillåts enligt lag, kommer att genomföra en uppföljande bakgrundskontroll av mig om jag ändrar eller uppdaterar mitt SSN under introduktionsprocessen eller under min anställning.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Jag godkänner också att all avsiktlig, felaktig framställning av mitt SSN kommer att tas i beaktande av Amazon och kan leda till återkallande av mitt anställningserbjudande eller, om jag är anställd, uppsägning av min anställning.",
@@ -2443,6 +2463,210 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Vänligen markera en av rutorna nedan",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Återgå till kontrollpanelen",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Fortsätt ansökan",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Vill du fortsätta din ansökan här?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Du arbetar för närvarande med den här ansökan i ett annat fönster.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Dokumentation om rätt att arbeta",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Kontroll av Rätt att arbeta i UK",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "Innan du kan börja din anställning måste Amazon kontrollera dina originaldokument som styrker din rätt att arbeta i UK. Exempel på dokument som ger dig rätt att arbeta inkluderar, men är inte begränsade till",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Brittiskt pass",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Permanent uppehållstillstånd",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Stämplar för permanent uppehållstillstånd",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Biometriskt uppehållstillstånd",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Om du vill ha mer information och detaljer om alla acceptabla dokument om Rätt att arbeta kan du se vår <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guide för arbetstillstånd för anställda i UK</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Du är 18 år eller äldre.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Du är den enda sökanden och måste själv slutföra varje steg, såvida du inte får hjälp av Amazon med att slutföra denna ansökan.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Du har",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "dokumentation om rätt att arbeta",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Om tillämpligt är du är villig att genomgå ett medicinskt test före anställning.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Du samtycker till en bakgrundskontroll före anställning.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36-40 timmar/vecka",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25-35 timmar/vecka",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15-24 timmar/vecka",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 eller mindre",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "Lördag",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "Söndag",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "Måndag",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "Tisdag",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "Onsdag",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "Torsdag",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "Fredag",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "Alla",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "Dagar",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "Nätter",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "Gå tillbaka till val av skift",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "Ange dina jobbpreferenser",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "Välj det tidigaste startdatumet",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "Välj ett startdatum i framtiden",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "Välj antalet timmar som du kan arbeta per vecka",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "Ditt visum kan begränsa antalet timmar per vecka som du har laglig behörighet att arbeta. Om så är fallet, välj det alternativ som motsvarar dina visumrestriktioner.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "Välj minst ett alternativ för antalet timmar du kan arbeta per vecka.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "Välj alla veckodagar som du kan arbeta",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "Vänligen notera, de flesta av våra skiftmönster kommer att innehålla minst en dag på helgen och skiftpreferenser garanteras inte.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "VARDAGAR",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "HELGER",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "Välj minst en veckodag som du kan arbeta.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "Välj det skiftmönster som du kan arbeta",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "Välj minst ett alternativ.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "Välj dina skiftinställningar",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "Du kan skicka in dina skiftpreferenser så kontaktar vi dig när vi hittar ett skift som fungerar för dig.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "Hittar du inte ett skift som fungerar för dig?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "Fyll i skiftinställningar för att fortsätta",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "Hittar du inte ett skift som fungerar för dig?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

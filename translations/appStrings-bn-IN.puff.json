@@ -2464,6 +2464,22 @@
       "value" : "অনুগ্রহ করে নিচের বাক্সগুলির মধ্যে একটি চেক করুন",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "আবেদন চালিয়ে যান",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "আপনি কি এখানে আপনার আবেদন চালিয়ে যেতে চান?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "আপনি বর্তমানে একটি ভিন্ন উইন্ডোতে এই অ্যাপ্লিকেশনে কাজ করছেন।",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "কাজের অধিকারের ডকুমেন্টেশন",
       "note" : "Title for right to work flyout"
@@ -2519,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "আপনি একটি প্রাক-কর্মসংস্থান ব্যাকগ্রাউন্ড চেক করতে সম্মত হচ্ছেন।",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40ঘণ্টা/সপ্তাহ",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/সপ্তাহ",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/সপ্তাহ",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 বা তার কম",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "শনিবার",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "রবিবার",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "সোমবার",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "মঙ্গলবার",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "বুধবার",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "বৃহস্পতিবার",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "শুক্রবার",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "যেকোনো",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "দিন",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "রাত",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "শিফট নির্বাচন করতে ফিরে যান",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "আপনার কাজের পছন্দগুলি নির্দিষ্ট করুন",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "প্রারম্ভিক তারিখ নির্বাচন করুন",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "অনুগ্রহ করে ভবিষ্যতের একটি সূচনা তারিখ নির্বাচন করুন",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "আপনি প্রতি সপ্তাহে কত ঘন্টা কাজ করতে পারবেন তা নির্বাচন করুন",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "আপনার ভিসা প্রতি সপ্তাহে ঘন্টার সংখ্যা সীমাবদ্ধ করতে পারে যেগুলি আপনি কাজ করার জন্য আইনত অনুমোদিত। যদি এই ক্ষেত্রে হয়, আপনার ভিসা সীমাবদ্ধতার সাথে সম্পর্কিত অপশনগুলি বাছাই করুন।",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "আপনি প্রতি সপ্তাহে কত ঘন্টা কাজ করতে পারবেন তার জন্য অনুগ্রহ করে অন্তত একটি অপশন নির্বাচন করুন।",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "সপ্তাহের সকল দিন নির্বাচন করুন যেগুলিতে আপনি কাজ করতে পারবেন",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "অনুগ্রহ করে নোট করুন, আমাদের বেশিরভাগ শিফট প্যাটার্নে সপ্তাহান্তের অন্তত একটি দিন অন্তর্ভুক্ত থাকবে এবং শিফট পছন্দের নিশ্চয়তা নেই।",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "সপ্তাহের দিনগুলি",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "সপ্তাহের ছুটির দিন",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "অনুগ্রহ করে সপ্তাহের অন্তত একটি দিন নির্বাচন করুন যেদিন আপনি কাজ করতে সক্ষম।",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "আপনি যে শিফট প্যাটার্নে কাজ করতে সক্ষম তা নির্বাচন করুন",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "অন্তত একটি অপশন নির্বাচন করুন।",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "আপনার শিফট পছন্দগুলি নির্বাচন করুন",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "আপনি আপনার শিফট পছন্দগুলি জমা দিতে পারেন এবং আমরা যখন আপনার জন্য কাজ করে এমন একটি শিফট খুঁজে পাই তখন আমরা আপনার সাথে যোগাযোগ করবো।",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "আপনার জন্য কাজ করে এমন একটি শিফট দেখতে পাচ্ছেন না?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "চালিয়ে যেতে পরিবর্তনের পছন্দগুলি লিখুন",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "আপনার জন্য কাজ করে এমন একটি শিফট দেখতে পাচ্ছেন না?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

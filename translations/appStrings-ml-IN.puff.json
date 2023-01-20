@@ -788,6 +788,14 @@
       "value" : "നിങ്ങൾക്ക് ഒരു SSN ഉണ്ടെങ്കിൽ, നിങ്ങൾ അത് നൽകേണ്ടതുണ്ട്. അങ്ങനെ ചെയ്യുന്നതിൽ പരാജയപ്പെടുന്നത് നിയമന പ്രക്രിയയിൽ കാലതാമസമുണ്ടാക്കും, അത് നിങ്ങളുടെ ആരംഭ തീയതി നഷ്‌ടപ്പെടുന്നതിനും തിരഞ്ഞെടുത്ത ഷിഫ്റ്റ് നഷ്‌ടപ്പെടുന്നതിനും ഇടയാക്കിയേക്കാം.",
       "note" : "Warning banner in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "എനിക്ക് ഒരു SSN ഇല്ല എന്ന് സൂചിപ്പിക്കുന്നതിലൂടെ, ഞാൻ ഒരു SSN നേടുന്നത് വരെ എന്റെ ശമ്പളം സ്വീകരിക്കുന്നതിനുള്ള മാർഗമായി Wisely Pay കാർഡ് ഉപയോഗിക്കാന്‍ ‍എനിക്ക് യോഗ്യതയില്ലെന്നും ഈ സാഹചര്യത്തിൽ നേരിട്ടുള്ള നിക്ഷേപിക്കല്‍ അല്ലെങ്കിൽ ചെക്കുകൾ വഴി മാത്രമേ ശമ്പളം സ്വീകരിക്കാനാകൂ എന്നും ഞാൻ സമ്മതിക്കുന്നു. തുടരുന്നതിലൂടെ, എനിക്ക് ഒരു SSN ഇല്ലെന്ന് ഞാൻ സ്ഥിരീകരിക്കുന്നു. നിയമം അനുവദിക്കുന്ന പ്രകാരം, ഓൺ‌ബോർഡിംഗ് പ്രക്രിയയിലോ ജോലിയ്‌ക്കിടെയോ ഞാൻ എന്‍റെ SSN മാറ്റുകയോ അപ്‌ഡേറ്റ് ചെയ്യുകയോ ചെയ്‌താൽ, Amazon എന്നെക്കുറിച്ചുള്ള ഒരു ഫോളോ-അപ്പ് പശ്ചാത്തല പരിശോധന നടത്തുമെന്ന് ഞാൻ മനസ്സിലാക്കുന്നു.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "എനിക്ക് ഒരു SSN ഇല്ല എന്ന് സൂചിപ്പിക്കുന്നതിലൂടെ, ഞാൻ ഒരു SSN നേടുന്നത് വരെ എന്റെ ശമ്പളം സ്വീകരിക്കുന്നതിനുള്ള മാർഗമായി Wisely Pay കാർഡ് ഉപയോഗിക്കാന്‍ ‍എനിക്ക് യോഗ്യതയില്ലെന്നും ഈ സാഹചര്യത്തിൽ നേരിട്ടുള്ള നിക്ഷേപിക്കല്‍ അല്ലെങ്കിൽ ചെക്കുകൾ വഴി മാത്രമേ ശമ്പളം സ്വീകരിക്കാനാകൂ എന്നും ഞാൻ സമ്മതിക്കുന്നു. കൂടാതെ, നിയമം അനുവദിക്കുന്ന പ്രകാരം, ഓൺ‌ബോർഡിംഗ് പ്രക്രിയയിലോ ജോലിയ്‌ക്കിടെയോ ഞാൻ എന്‍റെ SSN മാറ്റുകയോ അപ്‌ഡേറ്റ് ചെയ്യുകയോ ചെയ്‌താൽ, Amazon ഒരു ഫോളോ-അപ്പ് പശ്ചാത്തല പരിശോധന നടത്തുമെന്ന് ഞാൻ മനസ്സിലാക്കുന്നു.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "എന്റെ SSN-നെ മനഃപൂർവം തെറ്റായി ചിത്രീകരിക്കുന്നത് Amazon പരിഗണിക്കുമെന്നും അത് എന്‍റെ തൊഴിൽ ഓഫർ അസാധുവാക്കുന്നതിലേക്കോ എന്നെ നിയമിക്കുന്നപക്ഷം എന്‍റെ ജോലി റദ്ദാക്കുക്കുന്നതിലേക്കോ നയിച്ചേക്കാമെന്നും ഞാൻ സമ്മതിക്കുന്നു.",
       "note" : "Content in the no SSN modal"
@@ -2456,6 +2464,22 @@
       "value" : "ദയവായി താഴെ കൊടുത്തിരിക്കുന്ന ബോക്‌സുകളിലൊന്നിൽ ശരി അടയാളമിടുക",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "ഡാഷ് ബോർഡിലേക്ക് മടങ്ങുക",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "ആപ്ലിക്കേഷൻ തുടരുക",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "നിങ്ങളുടെ ആപ്ലിക്കേഷൻ ഇവിടെ തുടരാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "നിങ്ങൾ നിലവിൽ മറ്റൊരു വിൻഡോയിൽ ഈ ആപ്ലിക്കേഷനിൽ പ്രവർത്തിക്കുന്നു.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "തൊഴിൽ അവകാശ ഡോക്യുമെന്‍റേഷൻ",
       "note" : "Title for right to work flyout"
@@ -2511,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "പ്രീ-എംപ്ലോയ്മെന്റ് പശ്ചാത്തല പരിശോധനയ്ക്ക് നിങ്ങൾ സമ്മതിക്കുന്നു.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 മണിക്കൂര്‍/ആഴ്ച",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/ആഴ്ച",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/ആഴ്ച",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 അല്ലെങ്കിൽ അതിൽ കുറവ്",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "ശനി",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "ഞായർ",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "തിങ്കള്‍",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "ചൊവ്വ",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "ബുധൻ",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "വ്യാഴം",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "വെള്ളി",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "ഏതെങ്കിലും",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "പകലുകള്‍",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "രാത്രികള്‍",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "ഷിഫ്റ്റ് തിരഞ്ഞെടുക്കലിലേക്ക് മടങ്ങുക",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "നിങ്ങളുടെ ജോലി മുൻഗണനകൾ വ്യക്തമാക്കുക",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "ആദ്യകാല ആരംഭ തീയതി തിരഞ്ഞെടുക്കുക",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "ദയവായി ഭാവിയിലുള്ള ഒരു ആരംഭ തീയതി തിരഞ്ഞെടുക്കുക",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "നിങ്ങൾക്ക് ആഴ്ചയിൽ എത്ര മണിക്കൂര്‍ ജോലി ചെയ്യാൻ കഴിയുമെന്നത് തിരഞ്ഞെടുക്കുക",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "നിങ്ങൾക്ക് നിയമപരമായി ജോലി ചെയ്യാൻ അനുമതിയുള്ള പ്രതിവാര മണിക്കൂറുകള്‍ എത്രയെന്ന് നിങ്ങളുടെ വിസ നിയന്ത്രിച്ചേക്കാം. അങ്ങനെയാണെങ്കിൽ, നിങ്ങളുടെ വിസ നിയന്ത്രണങ്ങൾക്ക് അനുയോജ്യമായ ഓപ്ഷനുകൾ തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "നിങ്ങൾക്ക് ആഴ്‌ചയിൽ എത്ര മണിക്കൂർ ജോലി ചെയ്യാൻ കഴിയും എന്നതിന് കുറഞ്ഞത് ഒരു ഓപ്‌ഷനെങ്കിലും ദയവായി തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "നിങ്ങൾക്ക് ജോലി ചെയ്യാൻ കഴിയുന്ന ആഴ്‌ചയിലെ എല്ലാ ദിവസവും തിരഞ്ഞെടുക്കുക",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "ദയവായി ശ്രദ്ധിക്കുക, ഞങ്ങളുടെ മിക്ക ഷിഫ്റ്റ് പാറ്റേണുകളിലും വാരാന്ത്യത്തിലെ ഒരു ദിവസമെങ്കിലും ഉൾപ്പെടും, ഷിഫ്റ്റ് മുൻഗണനകൾ ഉറപ്പുനൽകുന്നില്ല.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "പ്രവൃത്തിദിനങ്ങൾ",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "വാരാന്ത്യങ്ങൾ",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "നിങ്ങൾക്ക് ജോലി ചെയ്യാൻ കഴിയുന്ന, ആഴ്‌ചയില്‍ ഒരു ദിവസമെങ്കിലും ദയവായി തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "നിങ്ങൾക്ക് പ്രവർത്തിക്കാൻ കഴിയുന്ന ഷിഫ്റ്റ് പാറ്റേൺ തിരഞ്ഞെടുക്കുക",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "കുറഞ്ഞത് ഒരു ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ തിരഞ്ഞെടുക്കുക",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ സമർപ്പിക്കാൻ കഴിയും, നിങ്ങൾക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ് കണ്ടെത്തുമ്പോൾ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "നിങ്ങള്‍ക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ്‌ കാണുന്നില്ലേ?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "തുടരാൻ ഷിഫ്റ്റ് മുൻഗണനകൾ നൽകുക",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "നിങ്ങള്‍ക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ്‌ കാണുന്നില്ലേ?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

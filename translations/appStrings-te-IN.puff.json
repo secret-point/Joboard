@@ -792,6 +792,10 @@
       "value" : "నాకు SSN లేదని సూచించడం ద్వారా, నేను SSNను పొందే వరకు నా చెల్లింపును స్వీకరించే మార్గంగా నేను Wisely Pay కార్డుకు అర్హత పొందలేనని గుర్తించాను మరియు నేరుగా డిపాజిట్ లేదా భౌతిక చెక్‌ల ద్వారా మాత్రమే చెల్లింపును స్వీకరించగలనని నేను అంగీకరిస్తున్నాను. కొనసాగించడం ద్వారా, నాకు SSN లేదని నేను ధృవీకరిస్తున్నాను. నేను ఆన్‌బోర్డింగ్ ప్రక్రియలో లేదా నా ఉద్యోగ సమయంలో నా SSNను మార్చినా లేదా అప్‌డేట్ చేసినా, చట్టం ద్వారా అనుమతించినట్లుగా, Amazon నా గురించి ఫాలో-అప్ బ్యాక్‌గ్రౌండ్ తనిఖీ నిర్వహిస్తుందని నేను అర్థం చేసుకున్నాను.",
       "note" : "Old deprecated version of the content in the no SSN modal"
     },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "నాకు SSN లేదని సూచించడం ద్వారా, నేను ఒక SSN పొందే వరకు నా చెల్లింపు స్వీకరించే సాధనంగా తెలివిగా చెల్లింపు కార్డుకు అర్హత పొందలేనని నేను గుర్తించాను మరియు ప్రత్యక్ష డిపాజిట్ లేదా భౌతిక తనిఖీల ద్వారా మాత్రమే చెల్లించగలను. అదనంగా, నేను ఆన్‌బోర్డింగ్ ప్రక్రియలో లేదా నా ఉద్యోగ సమయంలో నా SSNని మార్చినా లేదా అప్‌డేట్ చేసినా, చట్టం ద్వారా అనుమతించబడినట్లుగా, Amazon ఫాలో-అప్ బ్యాక్‌గ్రౌండ్ తనిఖీ నిర్వహిస్తుందని నేను అర్థం చేసుకున్నాను.",
+      "note" : "Content in the no SSN modal"
+    },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "నా SSN గురించి ఏదైనా ఉద్దేశపూర్వకంగా తప్పుగా సూచించడం Amazon ద్వారా పరిగణించబడుతుందని మరియు నా ఉపాధి ఆఫర్‌ను ఉపసంహరించుకోవచ్చు లేదా నన్ను నియమించినట్లయితే, నా ఉద్యోగాన్ని రద్దు చేయవచ్చు అని నేను అంగీకరిస్తున్నాను.",
       "note" : "Content in the no SSN modal"
@@ -2460,6 +2464,22 @@
       "value" : "దయచేసి కింది బాక్స్‌లలో ఒక దానిని ఎంచుకోండి",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "అప్లికేషన్‌ను కొనసాగించండి",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "మీరు మీ అప్లికేషన్‌ను ఇక్కడ కొనసాగించాలనుకుంటున్నారా?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "మీరు ప్రస్తుతం వేరొక విండోలో ఈ అప్లికేషన్‌లో పని చేస్తున్నారు.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "పని హక్కు డాక్యుమెంటేషన్",
       "note" : "Title for right to work flyout"
@@ -2515,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "మీరు ప్రీ-ఎంప్లాయిమెంట్ నేపథ్య తనిఖీకి సమ్మతిస్తున్నారు.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 గంటలు/వారం",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/వారం",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/వారం",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 లేదా అంతకంటే తక్కువ",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "శనివారం",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "ఆదివారం",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "సోమవారం",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "మంగళవారం",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "బుధవారం",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "గురువారం",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "శుక్రవారం",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "ఏదైనా",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "రోజులు",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "రాత్రులు",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "షిఫ్ట్ ఎంపికకు తిరిగి వెళ్లండి",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "మీ ఉద్యోగ ప్రాధాన్యతలను పేర్కొనండి",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "ముందస్తు ప్రారంభ తేదీని ఎంపిక చేసుకోండి",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "దయచేసి భవిష్యత్తులో ప్రారంభ తేదీని ఎంపిక చేసుకోండి",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "మీరు వారానికి ఎన్ని గంటలపాటు పని చేయగలరో ఎంపిక చేసుకోండి",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "మీ వీసా మీరు పని చేయడానికి చట్టబద్ధంగా అధికారం పొందిన వారానికి గంటల సంఖ్యను పరిమితం చేయవచ్చు. ఇదే జరిగితే, మీ వీసా పరిమితులకు అనుగుణంగా ఉండే ఎంపికలను ఎంచుకోండి.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "దయచేసి మీరు వారానికి ఎన్ని గంటలు పని చేయగలరు అనే దాని కోసం కనీసం ఒక ఎంపికను ఎంచుకోండి.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "మీరు పని చేయగల వారంలోని అన్ని రోజులను ఎంపిక చేసుకోండి",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "దయచేసి గమనించండి, మా షిఫ్ట్ ప్యాటర్న్‌లలో చాలా వరకు వారాంతంలో కనీసం ఒక రోజు ఉంటుంది మరియు షిఫ్ట్ ప్రాధాన్యతలకు హామీ ఇవ్వబడదు.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "వారపు రోజులు",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "వారాంతాలు",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "దయచేసి మీరు పని చేయగల వారంలో కనీసం ఒక రోజునైనా ఎంపిక చేసుకోండి.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "మీరు పని చేయగల షిఫ్ట్ ప్యాటర్న్‌ను ఎంపిక చేసుకోండి",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "కనీసం ఒక ఎంపికను ఎంచుకోండి.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "మీ షిఫ్ట్ ప్రాధాన్యతలను ఎంపిక చేసుకోండి",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "మీరు మీ షిఫ్ట్ ప్రాధాన్యతలను సమర్పించవచ్చు మరియు మీ కోసం పని చేసే షిఫ్ట్‌ను మేము కనుగొన్నప్పుడు మేము మిమ్మల్ని సంప్రదిస్తాము.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "మీ కోసం పని చేసే షిఫ్ట్ కనిపించలేదా?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "కొనసాగించడానికి షిఫ్ట్ ప్రాధాన్యతలను ఎంటర్ చేయండి",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "మీ కోసం పని చేసే షిఫ్ట్ కనిపించలేదా?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

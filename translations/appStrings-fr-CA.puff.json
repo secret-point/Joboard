@@ -136,6 +136,10 @@
       "value" : "Notre culture inclusive confère aux Amazoniens les moyens nécessaires pour fournir les meilleurs résultats à nos clients. Si en raison de votre handicap vous nécessitez une mesure d’adaptation pendant le processus de demande et d’embauche, veuillez contacter l’Équipe d’adaptation des candidats (ACATA) au 888-435-9287, du lundi au vendredi, de 6 h à 16 h, heure du Pacifique. Pour de plus amples informations, veuillez vous rendre sur le site <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "Notre culture inclusive confère aux employés d’Amazon les moyens nécessaires pour fournir les meilleurs résultats à nos clients. Si vous avez un handicap et avez besoin d’une mesure d’adaptation lors du processus de candidature et d’embauche, y compris d’une assistance pour le processus d’entrevue ou d’accueil, veuillez contacter l’Équipe d’adaptation du postulant-candidat (ACAT), du lundi au vendredi, de 7 h à 16 h GMT. Si vous appelez directement du Royaume-Uni, veuillez composer le +44 800 086 9884. Si vous appelez depuis l’Irlande, veuillez composer le +353 1800 851 489. Vous pouvez également nous contacter si vous avez besoin d’une mesure d’adaptation dans votre nouveau rôle et si vous souhaitez initier une demande avant de commencer votre Jour 1.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "Afficher la progression",
       "note" : "Text for view progress flyout title"
@@ -787,6 +791,10 @@
     "BB-BGC-no-ssn-modal-content-first-paragraph" : {
       "value" : "En indiquant que je n’ai pas de SSN, je reconnais que je ne pourrai pas bénéficier de la carte Wisely Pay comme moyen de recevoir mon salaire jusqu’à ce que j’obtienne un SSN, et que je ne pourrai recevoir mon salaire que par dépôt direct ou par chèques physiques. En continuant, je confirme que je n’ai pas de SSN. Je comprends que, conformément à la loi, Amazon procédera à une vérification complémentaire de mes antécédents si je modifie ou mets à jour mon SSN au cours du processus d’accueil et d’intégration des nouveaux employés ou au cours de mon embauche.",
       "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "En indiquant que je n’ai pas de SSN, je reconnais que je ne pourrai pas bénéficier de la carte Wisely Pay comme moyen de recevoir mon salaire jusqu’à ce que j’obtienne un SSN, et que je ne pourrai recevoir mon salaire que par dépôt direct ou par chèque physique. En outre, je comprends que, conformément à la loi, Amazon procédera à une vérification complémentaire de mes antécédents si je modifie ou mets à jour mon SSN au cours du processus d’accueil et d’intégration des nouveaux employés ou au cours de mon embauche.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "Je reconnais également que toute fausse déclaration intentionnelle de mon SSN sera prise en compte par Amazon et peut entraîner la révocation de mon offre d’emploi ou, si je suis embauché, mon licenciement.",
@@ -2455,6 +2463,78 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "Veuillez cocher l’une des cases ci-dessous",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "Continuer la demande",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "Voulez-vous continuer votre demande ici?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "Vous travaillez actuellement sur cette application dans une autre fenêtre.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "Autorisation de travail",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "Vérification de l’autorisation de travailler au Royaume-Uni",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "En préambule au début de votre emploi, Amazon doit vérifier votre/vos document(s) original(aux) prouvant votre autorisation de travailler au Royaume-Uni. Les exemples de documents justificatifs d’une autorisation de travailler comprennent, sans toutefois s’y limiter",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "Passeport britannique",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "Carte de résidence permanente",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "Droit de séjour permanent",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "Permis de résidence biométrique",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Pour plus d’informations et de détails sur tous les justificatifs acceptables d’autorisation de travail, veuillez consulter notre <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guide d’autorisation de travail des employés du Royaume-Uni</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "Vous avez 18 ans ou plus.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "Vous êtes le seul demandeur et vous devez remplir personnellement chaque étape, à moins que vous ne receviez une assistance d’Amazon pour remplir cette demande.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "Vous avez",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "l’autorisation de travailler",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "Vous êtes prêt à subir un examen médical pré-emploi, le cas échéant.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "Vous consentez à une vérification des antécédents avant l'embauche.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
     },
     "BB-kondo-shift-work-hour-36-to-40" : {
       "value" : "36 à 40 h/sem",

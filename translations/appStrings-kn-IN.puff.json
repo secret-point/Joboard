@@ -96,6 +96,10 @@
       "value" : "ಬಳಕೆದಾರ ಡೇಟಾ ನೀತಿ",
       "note" : "Text for the flyout user data policy title text"
     },
+    "BB-Kondo-ConsentPage-flyout-user-data-policy-title-text" : {
+      "value" : "EU/UK ಅಭ್ಯರ್ಥಿ ಗೌಪ್ಯತಾ ಸೂಚನೆ",
+      "note" : "Text for the flyout Kondo user data policy title text"
+    },
     "BB-ConsentPage-flyout-mx-user-data-policy-text" : {
       "value" : "ಖಾಸಗಿ ವ್ಯಕ್ತಿಗಳು ಹೊಂದಿರುವ ವೈಯಕ್ತಿಕ ಡೇಟಾದ ರಕ್ಷಣೆಯ ಕುರಿತ ಫೆಡರಲ್ ಕಾಯಿದೆ ಮತ್ತು ಅದರ ನಿಬಂಧನೆಗಳು, ಮಾರ್ಗಸೂಚಿಗಳು ಮತ್ತು ಡೇಟಾ ಗೌಪ್ಯತೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಇತರ ಅನ್ವಯವಾಗುವ ನಿಬಂಧನೆಗಳ ಅನುಸಾರವಾಗಿ ಹಾಗೆಯೇ ಉದ್ಯೋಗಿಗಳು ಮತ್ತು/ಅಥವಾ ಅಭ್ಯರ್ಥಿಗಳಿಗೆ ಕಂಪನಿಯ ಗೌಪ್ಯತೆ ಪ್ರಕಟಣೆ ಪ್ರಕಾರ, ಸಂಗ್ರಹಿಸಲಾದ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ವರ್ಗಾಯಿಸಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
       "note" : "Text for the flyout MX user data policy body text"
@@ -783,6 +787,14 @@
     "BB-BGC-no-ssn-modal-warning-banner" : {
       "value" : "ನೀವು ಒಂದು SSN ಅನ್ನು ಹೊಂದಿದ್ದರೆ, ಅದನ್ನು ಒದಗಿಸಬೇಕಾಗುತ್ತದೆ. ಹಾಗೆ ಮಾಡಲು ವಿಫಲವಾದರೆ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ವಿಳಂಬವನ್ನು ಉಂಟುಮಾಡಬಹುದು, ಇದು ನಿಮ್ಮ ಪ್ರಾರಂಭದ ದಿನಾಂಕವನ್ನು ಕಳೆದುಕೊಳ್ಳಬಹುದು ಮತ್ತು ನಿಮ್ಮ ಆಯ್ಕೆಮಾಡಿದ ಶಿಫ್ಟ್ ಅನ್ನು ಕಳೆದುಕೊಳ್ಳಬಹುದು.",
       "note" : "Warning banner in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph" : {
+      "value" : "ನಾನು SSN ಹೊಂದಿಲ್ಲ ಎಂದು ಸೂಚಿಸುವ ಮೂಲಕ, ನಾನು SSN ಪಡೆಯುವವರೆಗೆ ನನ್ನ ವೇತನವನ್ನು ಪಡೆಯುವ ವಿಧಾನವಾಗಿ Wisely Pay ಕಾರ್ಡ್‌ಗೆ ನಾನು ಅರ್ಹನಾಗುವುದಿಲ್ಲ ಮತ್ತು ನೇರ ಠೇವಣಿ ಅಥವಾ ಭೌತಿಕ ತಪಾಸಣೆ ಮೂಲಕ ಮಾತ್ರವೇ ಪಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ ಎಂದು ನಾನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ. ಮುಂದುವರಿಸುವ ಮೂಲಕ, ನಾನು SSN ಹೊಂದಿಲ್ಲ ಎಂದು ದೃಢೀಕರಿಸುತ್ತಿದ್ದೇನೆ. ನಾನು ಆನ್‌ಬೋರ್ಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಅಥವಾ ಕೆಲಸದಲ್ಲಿರುವಾಗ ನನ್ನ SSN ಅನ್ನು ಬದಲಾಯಿಸಿದರೆ ಅಥವಾ ನವೀಕರಿಸಿದರೆ, ಕಾನೂನಿನ ಅನುಮತಿಯಂತೆ, Amazon ನನ್ನ ಮೇಲೆ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯನ್ನು ನಡೆಸುತ್ತದೆ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "Old deprecated version of the content in the no SSN modal"
+    },
+    "BB-BGC-no-ssn-modal-content-first-paragraph-v2" : {
+      "value" : "ನಾನು SSN ಅನ್ನು ಹೊಂದಿಲ್ಲ ಎಂದು ಸೂಚಿಸುವ ಮೂಲಕ, ನಾನು SSN ಅನ್ನು ಪಡೆಯುವವರೆಗೆ ನನ್ನ ವೇತನವನ್ನು ಪಡೆಯುವ ವಿಧಾನವಾಗಿ Wisely Pay ಕಾರ್ಡ್‌ಗೆ ನಾನು ಅರ್ಹವಾಗುವುದಿಲ್ಲ ಮತ್ತು ನೇರ ಠೇವಣಿ ಅಥವಾ ಭೌತಿಕ ತಪಾಸಣೆಗಳ ಮೂಲಕ ಮಾತ್ರ ಪಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ ಎಂದು ನಾನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ. ಹೆಚ್ಚುವರಿಯಾಗಿ, ನಾನು ಆನ್‌ಬೋರ್ಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಅಥವಾ ಕೆಲಸದಲ್ಲಿರುವಾಗ ನನ್ನ SSN ಅನ್ನು ಬದಲಾಯಿಸಿದರೆ ಅಥವಾ ನವೀಕರಿಸಿದರೆ, ಕಾನೂನಿನ ಅನುಮತಿಯಂತೆ, Amazon ಈ ಕುರಿತು ಫಾಲೋ-ಅಪ್ ಹಿನ್ನಲೆ ಪರಿಶೀಲನೆಯನ್ನು ನಡೆಸುತ್ತದೆ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.",
+      "note" : "Content in the no SSN modal"
     },
     "BB-BGC-no-ssn-modal-content-second-paragraph" : {
       "value" : "ನನ್ನ SSN ನ ಯಾವುದೇ ಉದ್ದೇಶಪೂರ್ವಕ ತಪ್ಪು ನಿರೂಪಣೆಯನ್ನು Amazon ಪರಿಗಣಿಸುತ್ತದೆ ಮತ್ತು ಅದು ನನ್ನ ಉದ್ಯೋಗದ ಪ್ರಸ್ತಾಪವನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳಲು ಕಾರಣವಾಗಬಹುದು ಅಥವಾ ನಾನು ನೇಮಕಗೊಂಡರೆ, ನನ್ನ ಉದ್ಯೋಗವನ್ನು ಮುಕ್ತಾಯಗೊಳಿಸಬಹುದು ಎಂದು ನಾನು ಅಂಗೀಕರಿಸುತ್ತೇನೆ.",
@@ -2451,6 +2463,210 @@
     "BB-SelfId-disability-form-disability-checkbox-label-text" : {
       "value" : "ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನಲ್ಲಿನ ಒಂದು ಬಾಕ್ಸ್ ಅನ್ನು ಗುರುತುಹಾಕಿ",
       "note" : "Label for disability checkbox"
+    },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "ಡ್ಯಾಶ್‍‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್ ಮುಂದುವರಿಸಿ",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಇಲ್ಲಿ ಮುಂದುವರಿಸಲು ಬಯಸುವಿರಾ?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "ನೀವು ಪ್ರಸ್ತುತವಾಗಿ ಬೇರೊಂದು ವಿಂಡೋದಲ್ಲಿ ಈ ಅಪ್ಲಿಕೇಶನ್ ತೆರೆದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದ್ದೀರಿ.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
+    "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
+      "value" : "ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕಿನ ಡಾಕ್ಯುಮೆಂಟೇಶನ್",
+      "note" : "Title for right to work flyout"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-content-title-text" : {
+      "value" : "UK ನ ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕು ಪರಿಶೀಲನೆ",
+      "note" : "Title for right to work flyout content"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part1-text" : {
+      "value" : "ನಿಮ್ಮ ಉದ್ಯೋಗವನ್ನು ಪ್ರಾರಂಭಿಸಲು, Amazon ನಿಮ್ಮ ಮೂಲ ದಾಖಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸಬೇಕು) UK ಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುವ ನಿಮ್ಮ ಹಕ್ಕನ್ನು ಸಾಬೀತುಪಡಿಸುತ್ತದೆ. ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕು ಡಾಕ್ಯುಮೆಂಟ್ ಉದಾಹರಣೆಗಳು ಸೇರಿವೆ, ಆದರೆ ಅವುಗಳಿಗೆ ಸೀಮಿತವಾಗಿಲ್ಲ",
+      "note" : "Text for Kondo right to work documentation content section 1"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-passport-text" : {
+      "value" : "ಬ್ರಿಟಿಷ್ ಪಾಸ್‌ಪೋರ್ಟ್",
+      "note" : "Text for right to work document item - passport"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-residence-card-text" : {
+      "value" : "ಖಾಯಂ ನಿವಾಸ ಕಾರ್ಡ್",
+      "note" : "Text for right to work document item - permanent residence card"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-indefinite-leave-stamp-text" : {
+      "value" : "ಉಳಿಯಲು ಅನಿರ್ದಿಷ್ಟಾವಧಿ ರಜೆ ಸ್ಟ್ಯಾಂಪ್‌ಗಳು",
+      "note" : "Text for right to work document item - Indefinite Leave to Remain stamps"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
+      "value" : "ಬಯೋಮೆಟ್ರಿಕ್ ನಿವಾಸ ಪರವಾನಗಿ",
+      "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "ಎಲ್ಲಾ ಸ್ವೀಕಾರಾರ್ಹ ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕಿಗೆ ಸಂಬಂಧಿಸಿದ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಮತ್ತು ವಿವರಗಳಿಗಾಗಿ, ನಮ್ಮ <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK ಉದ್ಯೋಗಿ ಕೆಲಸದ ಅಧಿಕಾರ ನೀಡುವಿಕೆ ಮಾರ್ಗದರ್ಶಿ</a> ಅನ್ನು ನೋಡಿ",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
+    "BB-Kondo-qualification-criteria-above18" : {
+      "value" : "ನೀವು 18 ವರ್ಷ ಅಥವಾ ಮೇಲ್ಪಟ್ಟವರಾಗಿದ್ದೀರಿ.",
+      "note" : "Application Qualification Criteria - above 18 years old"
+    },
+    "BB-Kondo-qualificationCriteria-should-complete-all-steps" : {
+      "value" : "ನೀವು ಏಕೈಕ ಅರ್ಜಿದಾರರು ಮತ್ತು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ನೀವು Amazon ನಿಂದ ಯಾವುದೇ ಸಹಾಯವನ್ನು ಪಡೆಯದ ಹೊರತು ವೈಯಕ್ತಿಕವಾಗಿ ಪ್ರತಿ ಹಂತವನ್ನು ಪೂರ್ಣಗೊಳಿಸುತ್ತೀರಿ.",
+      "note" : "Application Qualification Criteria - candidate should complete all steps"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part1" : {
+      "value" : "ನೀವು ಹೊಂದಿದ್ದೀರಿ",
+      "note" : "Application Qualification Criteria - candidate right to work part 1"
+    },
+    "BB-Kondo-qualificationCriteria-right-to-work-part2" : {
+      "value" : "ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕಿನ್ ಡಾಕ್ಯುಮೆಂಟೇಶನ್",
+      "note" : "Application Qualification Criteria - candidate right to work part 2"
+    },
+    "BB-Kondo-qualificationCriteria-medical-test" : {
+      "value" : "ಅನ್ವಯಿಸಿದರೆ, ಉದ್ಯೋಗ ಪೂರ್ವ ವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ನೀವು ಸಿದ್ಧರಿದ್ದೀರಿ.",
+      "note" : "Application Qualification Criteria - medical test"
+    },
+    "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
+      "value" : "ನೀವು ಉದ್ಯೋಗ-ಪೂರ್ವದ ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಗೆ ಸಮ್ಮತಿಸುತ್ತೀರಿ.",
+      "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36 - 40 ಗಂಟೆಗಳು/ವಾರಕ್ಕೆ",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25 - 35/ವಾರ",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15 - 24/ವಾರ",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15 ಅಥವಾ ಅದಕ್ಕಿಂತ ಕಡಿಮೆ",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "ಶನಿವಾರ",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "ಭಾನುವಾರ",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "ಸೋಮವಾರ",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "ಮಂಗಳವಾರ",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "ಬುಧವಾರ",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "ಗುರುವಾರ",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "ಶುಕ್ರವಾರ",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "ಯಾವುದಾದರು",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "ದಿನಗಳು",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "ರಾತ್ರಿಗಳು",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "ಶಿಫ್ಟ್ ಆಯ್ಕೆಗೆ ಹಿಂತಿರುಗಿ",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "ನಿಮ್ಮ ಉದ್ಯೋಗದ ಆದ್ಯತೆಗಳನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "ಹಿಂದಿನ ಆರಂಭಿಕ ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಮುಂಬರುವ ಪ್ರಾರಂಭ ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "ನೀವು ವಾರದಲ್ಲಿ ಎಷ್ಟು ಗಂಟೆಗಳ ಕಾಲ ಕೆಲಸ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "ನೀವು ಪ್ರತಿ ವಾರಕ್ಕೆ ಕಾನೂನುಬದ್ಧವಾಗಿ ಕೆಲಸ ಮಾಡಲು ಅಧಿಕಾರ ಹೊಂದಿರುವ ಕೆಲಸದ ಅವಧಿಯನ್ನು ನಿಮ್ಮ ವೀಸಾ ನಿರ್ಬಂಧಿಸಬಹುದು. ಇದು ಸಮಸ್ಯೆಯಾಗಿದ್ದರೆ, ನಿಮ್ಮ ವೀಸಾ ನಿರ್ಬಂಧಗಳಿಗೆ ಅನುಗುಣವಾದ ಆಯ್ಕೆಗಳನ್ನು ಆರಿಸಿ.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ನೀವು ವಾರದಲ್ಲಿ ಎಷ್ಟು ಗಂಟೆಗಳ ಕಾಲ ಕೆಲಸ ಮಾಡುತ್ತೀರಿ ಎಂಬುದಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಕನಿಷ್ಠ ಒಂದು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "ನೀವು ಕೆಲಸ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವ ವಾರದ ಎಲ್ಲಾ ದಿನಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "ನಮ್ಮ ಹೆಚ್ಚಿನ ಶಿಫ್ಟ್ ಮಾದರಿಗಳಲ್ಲಿ ವಾರಾಂತ್ಯದಲ್ಲಿ ಕನಿಷ್ಠ ಒಂದು ದಿನವಾದರೂ ಕೆಲಸ ಮಾಡಬೇಕು ಮತ್ತು ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳ ಕುರಿತು ಖಾತರಿ ಇರುವುದಿಲ್ಲ ಎಂಬುದು ನಿಮ್ಮ ಗಮನದಲ್ಲಿರಲಿ.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "ವಾರದ ದಿನಗಳು",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "ವಾರಾಂತ್ಯಗಳು",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "ನೀವು ಕೆಲಸ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವ ವಾರದ ಕನಿಷ್ಠ ಒಂದು ದಿನವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "ನೀವು ಕೆಲಸ ಮಾಡಲು ಸಾಧ್ಯವಾಗುವ ಶಿಫ್ಟ್ ಮಾದರಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "ಕನಿಷ್ಠ ಒಂದು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "ನಿಮ್ಮ ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "ನೀವು ನಿಮ್ಮ ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳನ್ನು ಸಲ್ಲಿಸಬಹುದು ಮತ್ತು ನಿಮಗೆ ಸೂಕ್ತವೆನಿಸುವ ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳು ಕಂಡುಬಂದಲ್ಲಿ ನಾವು ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "ನಿಮಗೆ ಸೂಕ್ತವೆನಿಸುವ ಶಿಫ್ಟ್ ಕಾಣಿಸುತ್ತಿಲ್ಲವೇ?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "ಮುಂದುವರಿಸಲು ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳನ್ನು ನಮೂದಿಸಿ",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "ನಿಮಗೆ ಸೂಕ್ತವೆನಿಸುವ ಶಿಫ್ಟ್ ಕಾಣಿಸುತ್ತಿಲ್ಲವೇ?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }

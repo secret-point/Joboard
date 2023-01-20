@@ -136,6 +136,10 @@
       "value" : "아마존은 포용적인 문화를 통해 고객에게 최상의 결과를 제공할 수 있도록 Amazonian에게 동기를 부여하고 있습니다. 장애가 있어 지원 및 채용 과정에서 편의 시설이 필요한 경우, 월요일~금요일 오전 6시부터 오후 4시(태평양 표준시)까지 888-435-9287번으로 지원자-후보자 편의 지원팀(ACAT)으로 문의하시기 바랍니다. 자세한 내용은<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>을 참조하세요.",
       "note" : "Text for displaying disability accommodations on consents page"
     },
+    "BB-Kondo-ConsentPage-consent-disability-accommodation-text" : {
+      "value" : "아마존은 포괄적인 문화를 통해 고객에게 최상의 결과를 제공할 수 있도록 Amazonian에게 자신감을 부여합니다. 장애가 있어 지원 및 채용 과정에서 인터뷰 또는 온보딩 과정에 대한 지원을 포함하여 조정이 필요한 경 월~금, 오전 7시~오후 4시(그리니치 표준시)에 신청자-지원자 시설 팀(ACAT) 에 문의하시기 바랍니다. 영국에서 직통으로 전화를 거는 경우 +44 800 086 9884로 전화하세요. 아일랜드에서 전화하는 경우 +353 1800 851 489로 전화하세요. 새로운 역할에 대한 조정이 필요하고 첫날 근무를 시작하기 전에 요청을 시작하려는 경우 우리에게 문의해주세요.",
+      "note" : "Text for displaying disability accommodations on consents page on Kondo"
+    },
     "BB-StepHeader-view-progress-flyout-title" : {
       "value" : "진행률 보기",
       "note" : "Text for view progress flyout title"
@@ -2460,6 +2464,22 @@
       "value" : "아래 상자 중 하나를 선택하세요.",
       "note" : "Label for disability checkbox"
     },
+    "BB-duplicate-window-error-return-to-dashboard-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Button to return to dashboard when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-continue-application-text" : {
+      "value" : "지원 계속하기",
+      "note" : "Button to continue the application in the current tab when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-body" : {
+      "value" : "여기서 지원을 계속하시겠습니까?",
+      "note" : "Error body displayed when application is open in multiple tabs"
+    },
+    "BB-duplicate-window-error-title" : {
+      "value" : "현재 다른 창에서 이 지원을 작업 중입니다.",
+      "note" : "Error title displayed when application is open in multiple tabs"
+    },
     "BB-Kondo-ConsentPage-flyout-right-to-work-title-text" : {
       "value" : "근로권 서류",
       "note" : "Title for right to work flyout"
@@ -2515,6 +2535,138 @@
     "BB-Kondo-qualificationCriteria-employment-bgc-consent" : {
       "value" : "고용 전 신원 조사에 동의합니다.",
       "note" : "Application Qualification Criteria - pre-employment background check consent"
+    },
+    "BB-kondo-shift-work-hour-36-to-40" : {
+      "value" : "36~40시간/주",
+      "note" : "Text for Kondo shift preference work per week hour range: 36 to 40 hours per week"
+    },
+    "BB-kondo-shift-work-hour-25-to-35" : {
+      "value" : "25~35시간/주",
+      "note" : "Text for Kondo shift preference work per week hour range: 25 to 35 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-to-24" : {
+      "value" : "15~24시간/주",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 to 24 hours per week"
+    },
+    "BB-kondo-shift-work-hour-15-or-less" : {
+      "value" : "15시간 이하",
+      "note" : "Text for Kondo shift preference work per week hour range: 15 or less hours per week"
+    },
+    "BB-kondo-shift-weekend-days-Saturday" : {
+      "value" : "토요일",
+      "note" : "Text for Kondo shift preference work days: Saturday"
+    },
+    "BB-kondo-shift-weekend-days-Sunday" : {
+      "value" : "일요일",
+      "note" : "Text for Kondo shift preference work days: Sunday"
+    },
+    "BB-kondo-shift-weekend-days-Monday" : {
+      "value" : "월요일",
+      "note" : "Text for Kondo shift preference work days: Monday"
+    },
+    "BB-kondo-shift-weekend-days-Tuesday" : {
+      "value" : "화요일",
+      "note" : "Text for Kondo shift preference work days: Tuesday"
+    },
+    "BB-kondo-shift-weekend-days-Wednesday" : {
+      "value" : "수요일",
+      "note" : "Text for Kondo shift preference work days: Wednesday"
+    },
+    "BB-kondo-shift-weekend-days-Thursday" : {
+      "value" : "목요일",
+      "note" : "Text for Kondo shift preference work days: Thursday"
+    },
+    "BB-kondo-shift-weekend-days-Friday" : {
+      "value" : "금요일",
+      "note" : "Text for Kondo shift preference work days: Friday"
+    },
+    "BB-kondo-shift-shift-pattern-Any" : {
+      "value" : "모두",
+      "note" : "Text for Kondo shift shift pattern: Any"
+    },
+    "BB-kondo-shift-shift-pattern-Days" : {
+      "value" : "일",
+      "note" : "Text for Kondo shift shift pattern: Days"
+    },
+    "BB-kondo-shift-shift-pattern-Nights" : {
+      "value" : "야간",
+      "note" : "Text for Kondo shift shift pattern: Nights"
+    },
+    "BB-JobOpportunity-Go-To-shift-selection-Link" : {
+      "value" : "근무조 선택으로 돌아가기",
+      "note" : "Text go back to shift selection link"
+    },
+    "BB-shiftPreference-title-text" : {
+      "value" : "직무 선호 사항 지정",
+      "note" : "Text shift preference title"
+    },
+    "BB-ShiftPreference-start-date-label-text" : {
+      "value" : "가장 빠른 시작 날짜를 선택하세요.",
+      "note" : "Text shift preference Label"
+    },
+    "BB-shiftPreference-start-date-error-text" : {
+      "value" : "향후 시작 날짜를 선택하세요.",
+      "note" : "Text shift preference error text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text" : {
+      "value" : "주당 일할 수 있는 시간을 선택하세요.",
+      "note" : "Text shift preference hours per week label text"
+    },
+    "BB-ShiftPreference-hours-per-week-label-text2" : {
+      "value" : "귀하의 비자는 합법적으로 일할 수 있는 주당 근무 시간을 제한할 수 있습니다. 이러한 경우 비자 제한 사항에 해당하는 옵션을 선택하세요.",
+      "note" : "Text shift preference hours per week label text 2"
+    },
+    "BB-ShiftPreference-hours-per-week-error-text" : {
+      "value" : "주당 일할 수 있는 시간에 대한 옵션을 하나 이상 선택하세요.",
+      "note" : "Text shift preference hours per week error text"
+    },
+    "BB-ShiftPreference-workDays-label-text" : {
+      "value" : "근무할 수 있는 요일을 모두 선택하세요.",
+      "note" : "Text shift preference work days label text"
+    },
+    "BB-ShiftPreference-workDays-label-text2" : {
+      "value" : "대부분의 근무조 패턴에는 주말 중 하루 이상이 포함되며 근무조 선호 사항이 보장되지는 않습니다.",
+      "note" : "Text shift preference work days label text 2"
+    },
+    "BB-Weekdays-text" : {
+      "value" : "평일",
+      "note" : "Text for Weekdays"
+    },
+    "BB-Weekends-text" : {
+      "value" : "주말",
+      "note" : "Text for Weekend"
+    },
+    "BB-ShiftPreference-wordDays-error-text" : {
+      "value" : "일주일 중 일할 수 있는 요일을 하나 이상 선택하세요.",
+      "note" : "Text for work days error text"
+    },
+    "BB-ShiftPreference-shift-pattern-label-text" : {
+      "value" : "근무할 수 있는 근무조 패턴 을 선택하세요.",
+      "note" : "Text for shift pattern label text"
+    },
+    "BB-ShiftPreference-shiftPattern-error-text" : {
+      "value" : "옵션을 하나 이상 선택하세요.",
+      "note" : "Text for shift pattern error text"
+    },
+    "BB-JobOpportunity-Go-To-shift-preference-Link" : {
+      "value" : "근무조 선호 사항을 선택하세요.",
+      "note" : "Text for go to shift preference link"
+    },
+    "BB-ShiftPreferenceCard-content-text" : {
+      "value" : "근무조 선호 사항을 제출할 수 있으며 귀하에게 적합한 근무조를 찾으면 연락드리겠습니다.",
+      "note" : "Text for shift preference card content text"
+    },
+    "BB-ShiftPreferenceCard-title-text" : {
+      "value" : "자신에게 맞는 근무조를 찾을 수 없으신가요?",
+      "note" : "Text for shift preference card title text"
+    },
+    "BB-JobOpportunity-inactivity-button-text" : {
+      "value" : "계속하려면 근무조 선호 사항을 입력하세요.",
+      "note" : "Text for job opportunity inactivity text"
+    },
+    "BB-JobOpportunity-inactivity-modal-title" : {
+      "value" : "자신에게 맞는 근무조를 찾을 수 없으신가요?",
+      "note" : "Text for job opportunity inactivity modal title text"
     }
   }
 }
