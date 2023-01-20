@@ -120,7 +120,11 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
   const handleContinue = () => {
     boundResetBannerMessage();
-    if (applicationData) {
+    // see https://issues.amazon.com/issues/HVHBB-1440
+    // confirmed that schedule detail was missing for one of the applications with the california disclosure check
+    // we need schedule detail because it has the state, which is used to determine if the california disclosure check
+    // page is shown
+    if (applicationData && scheduleDetail) {
       const { BGC } = UPDATE_APPLICATION_API_TYPE;
       const payload = {
         state: PROXY_APPLICATION_STATE.ADDITIONAL_BACKGROUND_INFO_SAVED
