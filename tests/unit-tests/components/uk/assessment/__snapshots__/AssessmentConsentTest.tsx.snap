@@ -72,23 +72,24 @@ exports[`AssessmentConsent should match snapshot 1`] = `
         </li>
       </ul>
     </Expander>
-    <Row
-      gridGap={4}
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+      margin={
+        Object {
+          "bottom": "S400",
+        }
+      }
     >
-      <Text
-        font="primary"
-        fontSize="T200"
-        hyphens="none"
-      >
-        By beginning the assessment, you agree to the
-      </Text>
+      By beginning the assessment, you agree to the
       <WithFlyout
         flyoutPosition="trailing"
         renderFlyout={[Function]}
       >
         <Component />
       </WithFlyout>
-    </Row>
+    </Text>
     <Col
       gridGap={8}
     >

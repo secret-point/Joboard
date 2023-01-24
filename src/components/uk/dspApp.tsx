@@ -14,7 +14,7 @@ import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
 import AmazonRejects from "../us/amazonRejects/AmazonRejects";
 import AmazonWithdraws from "../us/amazonWithdraws/AmazonWithdraws";
 import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
-import AssessmentConsent from "../uk/assessmentConsent/AssessmentConsent";
+import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentFinished from "../us/assessment/AssessmentFinished";
 import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
 import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";

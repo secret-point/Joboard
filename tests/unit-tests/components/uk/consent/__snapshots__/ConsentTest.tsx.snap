@@ -28,23 +28,19 @@ exports[`Consent should match snapshot 1`] = `
       </Text>
     </li>
     <li>
-      <Row
-        gridGap={4}
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
       >
-        <Text
-          font="primary"
-          fontSize="T200"
-          hyphens="none"
-        >
-          You have
-        </Text>
+        You have
         <WithFlyout
           flyoutPosition="trailing"
           renderFlyout={[Function]}
         >
           <Component />
         </WithFlyout>
-      </Row>
+      </Text>
     </li>
     <li>
       <Text
