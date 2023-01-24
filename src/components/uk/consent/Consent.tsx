@@ -91,7 +91,7 @@ export const Consent = (props: MapStateToProps) => {
       </Col>
     </FlyoutContent>
   );
-  const renderRightToWorkFlyout = ({ close }: RenderFlyoutFunctionParams ) => (
+  const renderRightToWorkFlyout = ({ close }: RenderFlyoutFunctionParams) => (
     <FlyoutContent
       titleText={t("BB-Kondo-ConsentPage-flyout-right-to-work-title-text", "Right To Work documentation")}
       onCloseButtonClick={close}
@@ -149,23 +149,21 @@ export const Consent = (props: MapStateToProps) => {
           </Text>
         </li>
         <li>
-          <Row gridGap={4}>
-            <Text fontSize="T200">
-              {t("BB-Kondo-qualification-criteria-right-to-work-part1", "You have")}
-            </Text>
+          <Text fontSize="T200">
+            {t("BB-Kondo-qualification-criteria-right-to-work-part1", "You have")}
             <WithFlyout renderFlyout={renderRightToWorkFlyout}>
               {({ open }) => (
                 <Link
                   onClick={() => open()}
-                  style={{
-                    margin: "2px 0px 0 0",
+                  margin={{
+                    left: "S100"
                   }}
                 >
                   {t("BB-Kondo-qualificationCriteria-right-to-work-part2", "the right to work documentation")}
                 </Link>
               )}
             </WithFlyout>
-          </Row>
+          </Text>
         </li>
         <li>
           <Text fontSize="T200">

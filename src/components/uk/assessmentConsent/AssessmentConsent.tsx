@@ -151,24 +151,21 @@ export const AssessmentConsent = (props: MapStateToProps) => {
           </ul>
 
         </Expander>
-
-        <Row gridGap={4}>
-          <Text fontSize="T200">
-            {t("BB-AssessmentConsentPage-title-text-introduction", "By beginning the assessment, you agree to the")}
-          </Text>
+        <Text margin={{ bottom: "S400" }} fontSize="T200">
+          {t("BB-AssessmentConsentPage-title-text-introduction", "By beginning the assessment, you agree to the")}
           <WithFlyout renderFlyout={renderAssessmentPolicyFlyout}>
             {({ open }) => (
               <Link
                 onClick={() => open()}
-                style={{
-                  margin: "2px 0px 0 0",
+                margin={{
+                  left: "S100"
                 }}
               >
                 {t("BB-AssessmentConsentPage-assessment-policy-flyout-buttonLabel", "Assessment Policy")}
               </Link>
             )}
           </WithFlyout>
-        </Row>
+        </Text>
         <Col gridGap={8}>
           <DebouncedButton
             variant={ButtonVariant.Primary}
