@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { H3, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
