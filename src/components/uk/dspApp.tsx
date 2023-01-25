@@ -43,6 +43,7 @@ import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
 import PreConsent from "../us/preConsent/PreConsent";
+import Assessment from "./assessment/Assessment";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -54,6 +55,7 @@ const {
   ASSESSMENT_CONSENT,
   ASSESSMENT_FINISHED,
   ASSESSMENT_NOT_ELIGIBLE,
+  ASSESSMENT,
   CANDIDATE_WITHDRAWS,
   CONSENT,
   REVIEW_SUBMIT,
@@ -144,6 +146,9 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
           </Route>
           <Route path={`/${ASSESSMENT_CONSENT}`} exact>
             <AssessmentConsent />
+          </Route>
+          <Route path={`/${ASSESSMENT}`} exact>
+            <Assessment />
           </Route>
           <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
             <AssessmentNotEligible />
