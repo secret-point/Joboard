@@ -128,12 +128,6 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/assessment"
-      >
-        <Connect(Assessment) />
-      </Route>
-      <Route
-        exact={true}
         path="/assessment-not-eligible"
       >
         <Connect(AssessmentNotEligible) />
