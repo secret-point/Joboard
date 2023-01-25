@@ -17,6 +17,7 @@ export enum PAGE_ROUTES {
   SESSION_TIMEOUT = "session-timeout",
   WOTC = "wotc",
   WOTC_COMPLETE = "wotc-complete",
+  ASSESSMENT = "assessment",
   ASSESSMENT_CONSENT = "assessment-consent",
   ASSESSMENT_NOT_ELIGIBLE = "assessment-not-eligible",
   ASSESSMENT_FINISHED = "assessment-finished",
@@ -39,6 +40,7 @@ export enum PAGE_ROUTES {
 export const PagesControlledByWorkFlowService = [
   PAGE_ROUTES.JOB_OPPORTUNITIES,
   PAGE_ROUTES.ASSESSMENT_CONSENT,
+  PAGE_ROUTES.ASSESSMENT,
   PAGE_ROUTES.CONTINGENT_OFFER,
   PAGE_ROUTES.BACKGROUND_CHECK,
   PAGE_ROUTES.CAN_NOT_OFFER_JOB,
