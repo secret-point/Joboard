@@ -74,7 +74,7 @@ export const Assessment = (props: MapStateToProps) => {
     <>
       <Col gridGap="S300" padding="0">
         <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationWithAssessmentStepList[0]} withAssessment />
-        {assessment?.assessmentUrl && <IFrame src={ assessment?.assessmentUrl} />}
+        {assessment?.assessmentUrl && <IFrame src={ assessment.assessmentUrl} />}
       </Col>
     </>
   );
