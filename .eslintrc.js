@@ -58,7 +58,7 @@ module.exports = {
     "no-console": "off",
     "no-else-return": "error",
     "no-eval": "error",
-    "no-multiple-empty-lines": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
     "radix": ["error", "as-needed"],
     "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
     "quotes": ["error", "double", { "avoidEscape": true }],
