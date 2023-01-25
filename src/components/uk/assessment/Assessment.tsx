@@ -35,6 +35,7 @@ export const Assessment = (props: MapStateToProps) => {
   const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
+  const { assessment } = application?.results || {};
  
 
   // Don't refetch data if id is not changing
@@ -73,7 +74,7 @@ export const Assessment = (props: MapStateToProps) => {
     <>
       <Col gridGap="S300" padding="0">
         <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationWithAssessmentStepList[0]} withAssessment />
-        {application.results?.assessment?.assessmentUrl && <IFrame src={ application.results?.assessment?.assessmentUrl} />}
+        {assessment?.assessmentUrl && <IFrame src={ assessment?.assessmentUrl} />}
       </Col>
     </>
   );
