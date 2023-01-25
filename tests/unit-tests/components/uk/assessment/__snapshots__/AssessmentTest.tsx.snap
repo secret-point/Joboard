@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Assessment should match snapshot 1`] = `
+<Fragment>
+  <Col
+    gridGap="S300"
+    padding="0"
+  >
+    <StepHeader
+      jobTitle=""
+      step={
+        Object {
+          "stepNumber": 1,
+          "title": "Complete an assessment (~15 min)",
+          "titleTranslationKey": "BB-ApplicationSteps-complete-assessment-text",
+        }
+      }
+      withAssessment={true}
+    />
+  </Col>
+</Fragment>
+`;
