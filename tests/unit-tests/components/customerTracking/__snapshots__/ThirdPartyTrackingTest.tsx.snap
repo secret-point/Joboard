@@ -15,11 +15,6 @@ exports[`ThirdPartyTracking should match snapshot on bb 1`] = `
             "async": true,
             "src": "https://tracking.pandoiq.com/8950",
           },
-          Object {
-            "id": "appCastScript",
-            "src": "https://click.appcast.io/pixels/wfs-8984.js?ent=387",
-            "type": "text/javascript",
-          },
         ]
       }
     >
@@ -31,11 +26,6 @@ exports[`ThirdPartyTracking should match snapshot on bb 1`] = `
             Object {
               "async": true,
               "src": "https://tracking.pandoiq.com/8950",
-            },
-            Object {
-              "id": "appCastScript",
-              "src": "https://click.appcast.io/pixels/wfs-8984.js?ent=387",
-              "type": "text/javascript",
             },
           ]
         }
