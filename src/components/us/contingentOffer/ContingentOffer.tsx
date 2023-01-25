@@ -29,7 +29,7 @@ import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
-import { ThirdPartyTracking } from "../../customerTracking/Pandoic";
+import { ThirdPartyTracking } from "../../customerTracking/ThirdPartyTracking";
 import { pushAppCastEvent } from "../../customerTracking/appCast";
 
 interface MapStateToProps {

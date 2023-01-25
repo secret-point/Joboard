@@ -1,4 +1,6 @@
 import { AppCastEventType } from "./types";
+import { log, LoggerType } from "../../../helpers/log-helper";
+
 const pushAppCastDataLayer = (event: AppCastEventType) => {
   if (process.env.NODE_ENV === "development") {
     console.log("appCast event", event);
@@ -23,5 +25,9 @@ export const pushAppCastEvent = (event: number, jobId: string, jobSeekerId?: str
     appCastEvent.jsid = jobSeekerId;
   }
 
-  pushAppCastDataLayer(appCastEvent);
+  window.addEventListener("appCastReady", () => {
+    log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
+    console.log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
+    pushAppCastDataLayer(appCastEvent);
+  });
 };

@@ -1,11 +1,10 @@
 import React from "react";
-import Pandoic from "../../../../src/components/customerTracking/Pandoic";
-import { mountWithStencil } from "@amzn/stencil-react-components/tests";
+import ThirdPartyTracking from "../../../../src/components/customerTracking/ThirdPartyTracking";
 import { mount } from "enzyme";
 
 const getItemSpy = jest.spyOn(window.localStorage, "getItem");
 
-describe("Pandoic", () => {
+describe("ThirdPartyTracking", () => {
 
   beforeEach(() => {
     getItemSpy.mockReset();
@@ -17,7 +16,7 @@ describe("Pandoic", () => {
       value: new URL(url)
     } );
     getItemSpy.mockReturnValue("nhe");
-    const wrapper = mount(<Pandoic />);
+    const wrapper = mount(<ThirdPartyTracking />);
     expect(wrapper).toMatchSnapshot();
   });
 });

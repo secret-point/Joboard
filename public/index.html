@@ -34,6 +34,36 @@
       async
     ></script> -->
     <title>Amazon Jobs.</title>
+    <script id="testScript">
+      const appCastEvent = new CustomEvent('appCastReady', {detail: {}});
+
+      window.addEventListener('load', () => {
+        const targetNode = document.querySelectorAll("body")[0];
+
+        // Options for the observer (which mutations to observe)
+        const config = { attributes: true, childList: true, subtree: true };
+
+        // Callback function to execute when mutations are observed
+        const callback = (entries, observer) => {
+          for (const mutation of entries) {
+            if(mutation.type === 'childList') {
+              mutation.addedNodes.forEach(node => {
+                if ( node.nodeName.toLowerCase() === 'script' && node.getAttribute("id") === "appCastScript") {
+                  window.dispatchEvent(appCastEvent);
+                  observer.disconnect();
+                }
+              })
+            }
+          }
+        };
+
+        // Create an observer instance linked to the callback function
+        const observer = new MutationObserver(callback);
+
+        // Start observing the target node for configured mutations
+        observer.observe(targetNode, config);
+      })
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

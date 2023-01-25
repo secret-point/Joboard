@@ -56,8 +56,7 @@ import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { thankYouPageRedirectTextBanner } from "../../../countryExpansionConfig";
 import { pushAppCastEvent } from "../../customerTracking/appCast";
-import ThirdPartyTracking from "../../customerTracking/Pandoic";
-
+import ThirdPartyTracking from "../../customerTracking/ThirdPartyTracking";
 interface MapStateToProps {
   application: ApplicationState;
   candidate: CandidateState;
