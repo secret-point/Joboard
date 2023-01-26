@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NhePreference Component should match snapshot 1`] = `
+<Col
+  gridGap={10}
+>
+  <Row
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Row
+      className="nhePreferenceLink"
+      gridGap={8}
+      onClick={[Function]}
+    >
+      <IconArrowLeft
+        aria-hidden={true}
+        display="block"
+        fontSize="T100"
+        size={24}
+      />
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="medium"
+        hyphens="none"
+      >
+        Back
+      </Text>
+    </Row>
+  </Row>
+  <Col
+    gridGap={8}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Col
+      gridGap={20}
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="regular"
+        hyphens="none"
+        margin={0}
+      >
+        Specify your pre-hire appointment availability
+      </H4>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+        You can select a location, date and time frame that you are available on. We will reach out to you within 1 business day confirming your appointment. Please arrive at the pre-hire event location on date and time specified in appointment confirmation communication. We look forward to seeing you soon.
+      </Text>
+    </Col>
+    <Col
+      gridGap="S300"
+      padding={
+        Object {
+          "top": "S200",
+        }
+      }
+    >
+      <Label
+        color="inherit"
+        font="primary"
+        fontSize="T200"
+        fontWeight="regular"
+        htmlFor="nheLocationSelectInput"
+        hyphens="none"
+      >
+        Location
+         *
+      </Label>
+      <Select
+        collapsedOptionsExpanderTitle="Selected items"
+        customSelectionOptionsLabel="Group selection options"
+        defaultOptionsLabel="Single selection options"
+        disabledTagsHiddenText="The options in this list are not dismissible because the input is disabled"
+        getTriggerText={[Function]}
+        id="nheSelectLocationInput"
+        layout="default"
+        noOptionsText="No options available"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "checked": false,
+              "label": "Templeton bridge",
+              "value": "Templeton bridge",
+            },
+            Object {
+              "checked": false,
+              "label": "Test city",
+              "value": "Test city",
+            },
+          ]
+        }
+        placeholder="Choose an option"
+        renderOption={[Function]}
+        searchFieldAriaLabel="Start typing to filter out search results"
+        selectedOptionAltText="selected"
+        valueAccessor="value"
+        width="100%"
+      />
+    </Col>
+  </Col>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <fieldset
+      className="borderlessFieldset"
+    >
+      <legend>
+        <Text
+          color="inherit"
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Date
+           *
+        </Text>
+      </legend>
+      <FormWrapper>
+        <InputWrapper
+          error={false}
+          id="nhePreferenceDate-Wednesday, Jan 25th 2023"
+          key="Wednesday, Jan 25th 2023"
+          labelPosition="trailing"
+          labelText="Wednesday, Jan 25th 2023"
+          required={false}
+          shouldValidateNonInclusiveTerms={false}
+          warning={false}
+        >
+          <Component />
+        </InputWrapper>
+      </FormWrapper>
+    </fieldset>
+  </Col>
+  <Col
+    gridGap={10}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <fieldset
+      className="borderlessFieldset"
+    >
+      <legend>
+        <Text
+          color="inherit"
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Time
+           *
+        </Text>
+      </legend>
+      <FormWrapper>
+        <InputWrapper
+          error={false}
+          id="nhePreferenceTimeRange-6:00 AM - 10:00 AM"
+          key="6:00 AM - 10:00 AM"
+          labelPosition="trailing"
+          labelText="6:00 AM - 10:00 AM"
+          required={false}
+          shouldValidateNonInclusiveTerms={false}
+          warning={false}
+        >
+          <Component />
+        </InputWrapper>
+        <InputWrapper
+          error={false}
+          id="nhePreferenceTimeRange-10:00 AM - 2:00 PM"
+          key="10:00 AM - 2:00 PM"
+          labelPosition="trailing"
+          labelText="10:00 AM - 2:00 PM"
+          required={false}
+          shouldValidateNonInclusiveTerms={false}
+          warning={false}
+        >
+          <Component />
+        </InputWrapper>
+        <InputWrapper
+          error={false}
+          id="nhePreferenceTimeRange-2:00 PM - 6:00 PM"
+          key="2:00 PM - 6:00 PM"
+          labelPosition="trailing"
+          labelText="2:00 PM - 6:00 PM"
+          required={false}
+          shouldValidateNonInclusiveTerms={false}
+          warning={false}
+        >
+          <Component />
+        </InputWrapper>
+        <InputWrapper
+          error={false}
+          id="nhePreferenceTimeRange-6:00 PM - 10:00 PM"
+          key="6:00 PM - 10:00 PM"
+          labelPosition="trailing"
+          labelText="6:00 PM - 10:00 PM"
+          required={false}
+          shouldValidateNonInclusiveTerms={false}
+          warning={false}
+        >
+          <Component />
+        </InputWrapper>
+      </FormWrapper>
+    </fieldset>
+  </Col>
+  <Col
+    gridGap={20}
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      iconPosition="leading"
+      id="saveNhePreference"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+      type="button"
+      variant="primary"
+    >
+      Save Preferences
+    </Button>
+    <Row
+      alignItems="center"
+      alignSelf="center"
+      gridGap={5}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+        textAlign="center"
+      >
+        If you would like to go back to the previous page and select an available slot
+        ,
+      </Text>
+      <Row
+        className="nhePreferenceBackLink"
+        onClick={[Function]}
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          click here.
+        </Text>
+      </Row>
+    </Row>
+  </Col>
+</Col>
+`;

@@ -216,6 +216,12 @@ exports[`dspAppTest should match snapshot 1`] = `
       >
         <Connect(ShiftPreferences) />
       </Route>
+      <Route
+        exact={true}
+        path="/nhe/nhe-preferences"
+      >
+        <Connect(NhePreferences) />
+      </Route>
     </Switch>
   </HashRouter>
   <BackToTopButton

@@ -79,7 +79,7 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
     }
   >
     <Text
-      color="auto"
+      color="inherit"
       font="primary"
       fontSize="T200"
       hyphens="none"
@@ -162,7 +162,7 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
     }
   >
     <Text
-      color="auto"
+      color="inherit"
       font="primary"
       fontSize="T200"
       hyphens="none"
@@ -314,7 +314,7 @@ exports[`ShiftPreference Component should match snapshot 1`] = `
     }
   >
     <Text
-      color="auto"
+      color="inherit"
       font="primary"
       fontSize="T200"
       hyphens="none"

@@ -22,6 +22,7 @@ import { sendAdobeAnalytics } from "./application-actions";
 import JobService from "./../../services/job-service";
 import { ShiftType } from "./../../constants/shift-type";
 import { GetNheTimeSlotRequestDs } from "../../utils/types/common";
+import NheService from "../../services/nhe-service";
 
 export const GET_REQUISITION_HEADER_INFO = "GET_REQUISITION_HEADER_INFO";
 export const UPDATE_REQUISITION = "UPDATE_REQUISITION";
@@ -1271,10 +1272,8 @@ export const onGetPossibleNHEDates = (payload: IPayload) => async (
       }
     });
 
-    const response = await new RequisitionService().getPossibleNHEDates(
-      applicationId,
-      hcrId
-    );
+    const response = await new NheService().getPossibleNHEDates({ applicationId,
+      scheduleId: hcrId});
 
     dispatch({
       type: UPDATE_POSSIBLE_NHE_DATES,

@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NhePreference Card should match snapshot 1`] = `
+<Col
+  className="nhePreferenceCard"
+  gridGap={8}
+  padding="S300"
+>
+  <H4
+    color="neutral90"
+    font="primary"
+    fontSize="T400"
+    fontWeight="regular"
+    hyphens="none"
+    margin={0}
+  >
+    Don't see an option that works for you?
+  </H4>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    You can submit your event preferences and we'll contact you when we find a time that works for you.
+  </Text>
+  <Row
+    padding={
+      Object {
+        "top": "S400",
+      }
+    }
+  >
+    <Row
+      className="nhePreferenceLink"
+      gridGap={8}
+      onClick={[Function]}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="medium"
+        hyphens="none"
+      >
+        Select your pre-hire event preferences
+      </Text>
+      <Row
+        padding={
+          Object {
+            "top": "S100",
+          }
+        }
+      >
+        <IconArrowRight
+          aria-hidden={true}
+          display="block"
+          fontSize="T100"
+          size={24}
+        />
+      </Row>
+    </Row>
+  </Row>
+</Col>
+`;

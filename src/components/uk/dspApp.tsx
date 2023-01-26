@@ -35,6 +35,7 @@ import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
 import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
+import NhePreferences from "../common/nhe/NhePreferences";
 
 // Pages that have been migrated to MX
 import AdditionalInformation from "./bgc/BackgroundCheck";
@@ -81,7 +82,8 @@ const {
   NO_AVAILABLE_SHIFT,
   APPLICATIONID_NULL,
   SHIFT_PREFERENCE,
-  ADDITIONAL_INFORMATION
+  ADDITIONAL_INFORMATION,
+  NHE_PREFERENCES
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = (props: MapStateToProps) => {
@@ -191,6 +193,9 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
           </Route>
           <Route path={`/${SHIFT_PREFERENCE}`} exact>
             <ShiftPreferences />
+          </Route>
+          <Route path={`/${NHE_PREFERENCES}`} exact>
+            <NhePreferences />
           </Route>
         </Switch>
       </Router>

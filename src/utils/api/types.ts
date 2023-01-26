@@ -3,14 +3,16 @@ import {
   CREATE_APPLICATION_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
-  GET_NHE_TIME_SLOT_LIST_ERROR_CODE, GET_SCHEDULE_DETAIL_ERROR_CODE,
+  GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
+  GET_POSSIBLE_NHE_PREFERENCES,
+  GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WORKFLOW_NAME_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
 } from "../enums/common";
-import { Application, Candidate, Job, NHETimeSlot, Schedule } from "../types/common";
+import { Application, Candidate, Job, NHETimeSlot, PossibleNhePreferenceConfig, Schedule } from "../types/common";
 
 export interface CreateApplicationResponse {
   data: Application;
@@ -92,4 +94,10 @@ export interface ValidateamazonLoginIDResponse {
   data: any;
   error: string;
   errorCode: VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE;
+}
+
+export interface GetPossibleNhePreferenceResponse {
+  data: PossibleNhePreferenceConfig;
+  error: string;
+  errorCode: GET_POSSIBLE_NHE_PREFERENCES;
 }

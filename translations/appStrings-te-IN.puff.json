@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "మీ కోసం పని చేసే షిఫ్ట్ కనిపించలేదా?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "మీరు దాదాపుగా పూర్తిచేసారు, {displayFirstName} {displayLastName}! ప్రీ-హైర్ అపాయింట్‌మెంట్‌ను షెడ్యూల్ చేయడానికి మీ ప్రాధాన్య తేదీ మరియు సమయాన్ని ఎంచుకోండి, ఇక్కడ మేము మీ వర్క్ ఆథరైజేషన్ డాక్యుమెంట్‌లను తనిఖీ చేస్తాము.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "ప్రీ-హైర్ అపాయింట్‌మెంట్ అనేది వర్చువల్ ఈవెంట్",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "ప్రీ-హైర్ అపాయింట్‌మెంట్ వీడియో కాన్ఫరెన్స్ ద్వారా నిర్వహించబడుతుంది. మీరు మాతో కనెక్ట్ కావడానికి తేదీ మరియు సమయాన్ని ఎంచుకున్న తర్వాత, మేము మీకు అపాయింట్‌మెంట్ వివరాలు మరియు లింక్‌ను ఇమెయిల్ చేస్తాము. మీకు ఏవైనా ప్రశ్నలు లేదా సాంకేతిక సమస్యలు ఉంటే, దయచేసి మమ్మల్ని సంప్రదించండి.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "మూసివేయండి",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "అపాయింట్‌మెంట్ తేదీని ఎంచుకోండి",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "అపాయింట్‌మెంట్ సమయాన్ని ఎంచుకోండి",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "ఎంపికను నిర్ధారించండి",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

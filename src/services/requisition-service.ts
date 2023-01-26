@@ -57,15 +57,8 @@ export default class RequisitionService {
 
     return response.data;
   }
-
   async getHeadCountRequest( hcrId: string ) {
     const response = await this.axiosInstance.get(`/get-head-count-request/${hcrId}`);
-
-    return response.data;
-  }
-
-  async getPossibleNHEDates( applicationId: string, hcrId: string ) {
-    const response = await this.axiosInstance.get(`/get-possible-nhe-dates/${applicationId}/${hcrId}`);
 
     return response.data;
   }

@@ -99,8 +99,10 @@ import {
   GetNheTimeSlotRequestThroughNheDS,
   Job,
   Locale,
-  NHETimeSlot, NHETimeSlotUK, NHETimeSlotUS,
+  NHETimeSlotUK,
+  NHETimeSlotUS,
   NonFcraFormErrorStatus,
+  PossibleNhePreferenceItem,
   QueryParamItem,
   Range,
   Schedule,
@@ -110,7 +112,8 @@ import {
   SelfIdentificationDisabilityStatus,
   SelfIdentificationInfo,
   SelfIdentificationVeteranStatus,
-  SelfIdEqualOpportunityStatus, ShiftPreferenceWorkHour,
+  SelfIdEqualOpportunityStatus,
+  ShiftPreferenceWorkHour,
   TimeRangeHoursData
 } from "./types/common";
 
@@ -1917,4 +1920,41 @@ export const getUKNHEMaxSlotLength = (timeSlotList: NHETimeSlotUK[], scheduleId:
   );
 
   return maxTime;
+};
+
+export const selectPossibleNhePreference = (possibleNhePreference: PossibleNhePreferenceItem[], option: PossibleNhePreferenceItem, singleSelection?: boolean): PossibleNhePreferenceItem[] => {
+  return possibleNhePreference
+    .map(item => {
+      if (singleSelection) {
+        item.checked = false;
+      }
+      if (item.label === option.label) {
+        item.checked = option.checked;
+      }
+      return item;
+    });
+};
+
+export const getUKNHEAppointmentTitleList = (nheData: NHETimeSlotUK[]): string[] => {
+  const result = new Set<string>();
+  nheData.forEach(nhe => result.add(nhe.title));
+
+  return Array.from(result);
+};
+
+export const getUKNHEAppointmentTimeMap = (nheData: NHETimeSlotUK[]): Map<string, string[]> => {
+  const result = new Map<string, string[]>();
+  nheData.forEach(nhe => {
+    const tempTimeList: string[] = result.get(nhe.title) || [];
+    if (tempTimeList.indexOf(nhe.startTime) === -1) {
+      tempTimeList.push(nhe.startTime);
+    }
+    result.set(nhe.title, tempTimeList);
+  });
+
+  return result;
+};
+
+export const getDefaultUkNheApptTimeFromMap = (timeMap: Map<string, string[]>, mapKey: string): string[] => {
+  return timeMap.get(mapKey) || [];
 };

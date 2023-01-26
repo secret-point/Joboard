@@ -34,14 +34,14 @@ import {
   checkIfIsLegacy,
   formatFlexibleTrainingDate,
   formatMonthlyBasePayHelper,
-  getCountryCodeByCountryName,
+  getCountryCodeByCountryName, getDefaultUkNheApptTimeFromMap,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
   GetSelfIdentificationConfigStep,
-  getSupportedCitiesFromScheduleList,
+  getSupportedCitiesFromScheduleList, getUKNHEAppointmentTimeMap, getUKNHEAppointmentTitleList,
   getUKNHEMaxSlotLength,
   handleConfirmUSNHESelection,
   handleInitiateSelfIdentificationStep,
@@ -1262,4 +1262,26 @@ test("getSupportedCitiesFromScheduleList", () => {
 test("getUKNHEMaxSlotLength", () => {
   expect(getUKNHEMaxSlotLength([...TEST_NHE_DATA_UK], "SCH")).toEqual(180);
   expect(getUKNHEMaxSlotLength([], "SCH")).toEqual(0);
+});
+
+test("getUKNHEAppointmentTitleList", () => {
+  expect(getUKNHEAppointmentTitleList(TEST_NHE_DATA_UK)).toEqual(["Friday, Jan 20th 2023", "Saturday, Jan 21st 2023"]);
+  expect(getUKNHEAppointmentTitleList([])).toEqual([]);
+});
+
+test("getUKNHEAppointmentTimeMap", () => {
+  const map = new Map<string, string[]>();
+  map.set("Friday, Jan 20th 2023", ["09:00", "10:00"]);
+  map.set("Saturday, Jan 21st 2023", ["09:00", "10:00"]);
+
+  expect(getUKNHEAppointmentTimeMap(TEST_NHE_DATA_UK)).toEqual(map);
+});
+
+test("getDefaultUkNheApptTimeFromMap", () => {
+
+  const map = new Map<string, string[]>();
+  map.set("Friday, Jan 20th 2023", ["09:00", "10:00"]);
+  map.set("Saturday, Jan 21st 2023", ["09:00", "10:00"]);
+
+  expect(getDefaultUkNheApptTimeFromMap(map, "Friday, Jan 20th 2023")).toEqual(["09:00", "10:00"]);
 });

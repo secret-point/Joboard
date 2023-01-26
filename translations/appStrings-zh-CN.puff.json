@@ -2667,6 +2667,38 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "是否没找到适合您的班次？",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "{displayLastName}{displayFirstName}，马上就好了！ 选择您方便的日期和时间安排入职前面谈，面谈时我们会查看您的工作许可文件。",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "入职前面谈将在线上举行",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "入职前面谈将通过视频会议进行。一旦您选择了面谈的日期和时间，我们将通过电子邮件向您发送面谈的详情和会议链接。如果您有任何疑问或遇到技术问题，请联系我们。",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "关闭",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "选择面谈日期",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "选择面谈时间",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "显示的所有预约时段均为英国当地时间。每次预约最长为 {maxNheSlotLength} 分钟。",
+      "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "确认选择",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

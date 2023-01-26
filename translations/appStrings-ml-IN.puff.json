@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "നിങ്ങള്‍ക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ്‌ കാണുന്നില്ലേ?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "നിങ്ങൾ ഏതാണ്ട് അവിടെ എത്തിയിരിക്കുന്നു, {displayFirstName} {displayLastName}! നിങ്ങളുടെ ജോലി അംഗീകാര രേഖകൾ ഞങ്ങൾ പരിശോധിക്കുന്ന ഒരു നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ് ഷെഡ്യൂൾ ചെയ്യുന്നതിന് നിങ്ങൾ താല്‍പ്പര്യപ്പെടുന്ന തീയതിയും സമയവും തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ് ഒരു വെർച്വൽ ഇവന്റാണ്",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ് വീഡിയോ കോൺഫറൻസ് വഴി നടത്തും. ഞങ്ങളുമായി ബന്ധപ്പെടാൻ നിങ്ങൾ ഒരു തീയതിയും സമയവും തിരഞ്ഞെടുത്തുകഴിഞ്ഞാൽ, ഞങ്ങൾ നിങ്ങൾക്ക് അപ്പോയിന്‍മെന്‍റ് വിശദാംശങ്ങളും ലിങ്കും ഇമെയിൽ ചെയ്യും. നിങ്ങൾക്ക് എന്തെങ്കിലും ചോദ്യങ്ങളോ സാങ്കേതിക പ്രശ്നങ്ങളോ ഉണ്ടെങ്കിൽ, ദയവായി ഞങ്ങളെ ബന്ധപ്പെടുക.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "അവസാനിപ്പിക്കുക",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "അപ്പോയിന്‍മെന്‍റ് തീയതി തിരഞ്ഞെടുക്കുക",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "അപ്പോയിന്‍മെന്‍റ് സമയം തിരഞ്ഞെടുക്കുക",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "തിരഞ്ഞെടുക്കൽ സ്ഥിരീകരിക്കുക",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

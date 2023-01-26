@@ -2692,6 +2692,10 @@
       "value" : "Choisissez l'heure du rendez-vous",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Tous les créneaux pour les rendez-vous sont affichés à l’heure locale du Royaume-Uni. Chaque rendez-vous dure jusqu'à {maxNheSlotLength} minutes.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmer la sélection",
       "note" : "Text for nhe appointment confirm selection button"

@@ -1143,3 +1143,29 @@ export interface ShiftPreferenceRequest {
   };
   type: UPDATE_APPLICATION_API_TYPE;
 }
+
+export interface PossibleTimeSlotConfig {
+  from: string;
+  to: string;
+}
+export interface PossibleNhePreferenceItem {
+  label: string;
+  value: PossibleTimeSlotConfig | string;
+  checked: boolean;
+}
+
+export interface PossibleNhePreferenceConfig {
+  dates: PossibleNhePreferenceItem[];
+  timeslots: PossibleNhePreferenceItem[];
+  cityPass: PossibleNhePreferenceItem[];
+}
+
+export interface SavePossibleNhePreferenceRequest {
+  possibleNHEDates: PossibleNhePreferenceItem[];
+  possibleNHETimeSlots: PossibleNhePreferenceItem[];
+  possibleCities: PossibleNhePreferenceItem[];
+}
+export interface GetPossibleNhePreferenceRequest {
+  applicationId: string;
+  scheduleId: string;
+}

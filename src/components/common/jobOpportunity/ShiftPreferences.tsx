@@ -186,7 +186,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
         </Col>
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
-        <Text fontSize="T200" color={!hourPerWeekValid ? CommonColors.RED70 : "auto"}>
+        <Text fontSize="T200" color={!hourPerWeekValid ? CommonColors.RED70 : "inherit"}>
           {t("BB-ShiftPreference-hours-per-week-label-text", "Select the number of hours that you are able to work per week")} *
         </Text>
         <Text fontSize="T100" color={CommonColors.Neutral70}>
@@ -219,7 +219,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
         )}
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
-        <Text fontSize="T200" color={!workDaysValid ? CommonColors.RED70 : "auto"}>
+        <Text fontSize="T200" color={!workDaysValid ? CommonColors.RED70 : "inherit"}>
           {t("BB-ShiftPreference-workDays-label-text", "Select all the days of the week that you are able to work")} *
         </Text>
         <Text fontSize="T100" color={CommonColors.Neutral70}>
@@ -282,7 +282,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
         )}
       </Col>
       <Col gridGap={10} padding={{ top: "S300" }}>
-        <Text fontSize="T200" color={!shiftPatternValid ? CommonColors.RED70 : "auto"}>
+        <Text fontSize="T200" color={!shiftPatternValid ? CommonColors.RED70 : "inherit"}>
           {t("BB-ShiftPreference-shift-pattern-label-text", "Select the shift pattern that you are able to work")} *
         </Text>
         <Col gridGap={10}>

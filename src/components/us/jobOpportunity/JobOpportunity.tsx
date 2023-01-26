@@ -161,7 +161,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   );
 
   return (
-    <Col className="pageContainerWithMarginTop" margin={{ top: "S300" }}>
+    <Col margin={{ top: "S300" }}>
       <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[0]} />
       <Col id="jobOpportunityHeaderImageContainer">
         <Image

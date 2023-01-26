@@ -2692,6 +2692,10 @@
       "value" : "Vælg aftaletidspunkt",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Alle aftaler vises i GMT. Hver aftale er op til{maxNheSlotLength} minutter lange.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Bekræft valg",
       "note" : "Text for nhe appointment confirm selection button"

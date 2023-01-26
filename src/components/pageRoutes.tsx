@@ -33,6 +33,7 @@ export enum PAGE_ROUTES {
   NO_AVAILABLE_SHIFT = "no-available-shift",
   APPLICATIONID_NULL = "applicationId-null",
   SHIFT_PREFERENCE = "job-opportunities/shift-preferences",
+  NHE_PREFERENCES = "nhe/nhe-preferences",
   ADDITIONAL_INFORMATION = "additional-information"
 }
 

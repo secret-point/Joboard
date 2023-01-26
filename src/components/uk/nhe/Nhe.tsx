@@ -20,7 +20,10 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
 import {
   checkAndBoundGetApplication,
+  getDefaultUkNheApptTimeFromMap,
   getLocale,
+  getUKNHEAppointmentTimeMap,
+  getUKNHEAppointmentTitleList,
   getUKNHEMaxSlotLength,
   handleConfirmUKNHESelection
 } from "../../../utils/helper";
@@ -36,6 +39,8 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { boundGetNheTimeSlotsThroughNheDs } from "../../../actions/NheActions/boundNheAction";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import moment from "moment";
+import NhePreferenceCard from "../../common/nhe/NhePreferenceCard";
+import { NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES } from "../../../utils/enums/common";
 
 interface MapStateToProps {
   job: JobState;
@@ -56,6 +61,22 @@ export const Nhe = ( props: MapStateToProps ) => {
   const scheduleDetail = schedule.results.scheduleDetail as ScheduleUK;
   const candidateData = candidate.results?.candidateData;
   const nheData = nhe.results.nheData as NHETimeSlotUK[];
+  const showNhePreferenceCard = nheData.length <= NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES;
+  const appointmentDateList = getUKNHEAppointmentTitleList(nheData);
+  const appointmentTimeMap = getUKNHEAppointmentTimeMap(nheData);
+
+  const [selectedNheDate, setSelectedNheDate] = useState<string>("");
+  const [selectedNheTime, setSelectedNheTime] = useState<string>("");
+  const maxNheSlotLength = nheData.length > 0 ? getUKNHEMaxSlotLength(nheData, scheduleId) : 0;
+
+  const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || "";
+  const displayLastName = candidateData?.lastName || "";
+
+  useEffect(() => {
+    const defaultAptTime = getDefaultUkNheApptTimeFromMap(appointmentTimeMap, appointmentDateList[0]);
+    setSelectedNheDate(appointmentDateList[0]);
+    setSelectedNheTime(defaultAptTime[0]);
+  }, [nheData]);
 
   useEffect(() => {
     applicationId && checkAndBoundGetApplication(applicationId);
@@ -118,39 +139,6 @@ export const Nhe = ( props: MapStateToProps ) => {
     }
   };
 
-  const getAppointmentDateList = (): string[] => {
-    const result = new Set<string>();
-    nheData.forEach(nhe => result.add(nhe.title));
-
-    return Array.from(result);
-  };
-
-  const getAppointmentTimeMap = (): Map<string, string[]> => {
-    const result = new Map<string, string[]>();
-    nheData.forEach(nhe => {
-      const tempTimeList: string[] = result.get(nhe.title) || [];
-      if (tempTimeList.indexOf(nhe.startTime) === -1) {
-        tempTimeList.push(nhe.startTime);
-      }
-      result.set(nhe.title, tempTimeList);
-    });
-
-    return result;
-  };
-
-  const getDefaultTimeFromMap = (timeMap: Map<string, string[]>, mapKey: string): string[] => {
-    return timeMap.get(mapKey) || [];
-  };
-
-  const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || "";
-  const displayLastName = candidateData?.lastName || "";
-  const appointmentDateList = getAppointmentDateList();
-  const appointmentTimeMap = getAppointmentTimeMap();
-
-  const [selectedNheDate, setSelectedNheDate] = useState<string>(appointmentDateList[0]);
-  const [selectedNheTime, setSelectedNheTime] = useState<string>(getDefaultTimeFromMap(appointmentTimeMap, appointmentDateList[0])[0]);
-  const maxNheSlotLength = nheData.length > 0 ? getUKNHEMaxSlotLength(nheData, scheduleId) : 0;
-
   return (
     <Col className="pageContainerWithMarginTop" margin={{ top: "S300" }}>
       <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[2]} />
@@ -189,7 +177,7 @@ export const Nhe = ( props: MapStateToProps ) => {
               id="nheDateSelect"
               onChange={( option ) => {
                 setSelectedNheDate(option);
-                setSelectedNheTime(getDefaultTimeFromMap(appointmentTimeMap, option)[0]);
+                setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
               }}
               options={appointmentDateList}
               defaultValue={appointmentDateList[0]}
@@ -207,7 +195,7 @@ export const Nhe = ( props: MapStateToProps ) => {
                 setSelectedNheTime(option);
               }}
               options={appointmentTimeMap.get(selectedNheDate) || []}
-              defaultValue={getDefaultTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
+              defaultValue={getDefaultUkNheApptTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
               value={selectedNheTime}
             />
           </Col>
@@ -232,6 +220,9 @@ export const Nhe = ( props: MapStateToProps ) => {
             {t("BB-kondo-nhe-page-confirm-selection-button-text", "Confirm Selection")}
           </DebouncedButton>
         </Col>
+        {
+          showNhePreferenceCard && <NhePreferenceCard />
+        }
       </Col>
     </Col>
   );

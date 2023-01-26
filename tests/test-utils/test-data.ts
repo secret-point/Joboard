@@ -27,8 +27,11 @@ import {
   DayHoursFilter,
   Job,
   NHETimeSlot,
-  NheTimeSlotLocation, NHETimeSlotUK,
+  NheTimeSlotLocation,
+  NHETimeSlotUK,
   NHETimeSlotUS,
+  PossibleNhePreferenceConfig,
+  SavePossibleNhePreferenceRequest,
   Schedule,
   SelfIdentificationInfo
 } from "../../src/utils/types/common";
@@ -209,6 +212,7 @@ export const TEST_CANDIDATE: Candidate = {
 };
 
 export const TEST_JOB2: Job = {
+  bypassAssessment: false,
   availableSchedules: { schedules: [] },
   language: "eng",
   dataSource: "",
@@ -611,16 +615,129 @@ export const TEST_BGC_STATE: BGCState = {
   }
 };
 
+export const TestSavePossibleNheDateRequest: SavePossibleNhePreferenceRequest = {
+  possibleCities: [
+    {
+      label: "Templeton bridge",
+      value: "Templeton bridge",
+      checked: false
+    },
+    {
+      label: "Test city",
+      value: "Test city",
+      checked: false
+    }
+  ],
+  possibleNHEDates: [
+    {
+      label: "Wednesday, Jan 25th 2023",
+      value: "Wednesday, Jan 25th 2023",
+      checked: false
+    }
+  ],
+  possibleNHETimeSlots: [
+    {
+      label: "6:00 AM - 10:00 AM",
+      value: {
+        from: "6:00 AM",
+        to: "10:00 AM"
+      },
+      checked: false
+    },
+    {
+      label: "10:00 AM - 2:00 PM",
+      value: {
+        from: "10:00 AM",
+        to: "2:00 PM"
+      },
+      checked: false
+    },
+    {
+      label: "2:00 PM - 6:00 PM",
+      value: {
+        from: "2:00 PM",
+        to: "6:00 PM"
+      },
+      checked: false
+    },
+    {
+      label: "6:00 PM - 10:00 PM",
+      value: {
+        from: "6:00 PM",
+        to: "10:00 PM"
+      },
+      checked: false
+    }
+  ]
+};
+
+export const TestPossibleNheDates: PossibleNhePreferenceConfig = {
+  cityPass: [
+    {
+      label: "Templeton bridge",
+      value: "Templeton bridge",
+      checked: true
+    },
+    {
+      label: "Test city",
+      value: "Test city",
+      checked: false
+    }
+  ],
+  dates: [
+    {
+      label: "Wednesday, Jan 25th 2023",
+      value: "Wednesday, Jan 25th 2023",
+      checked: false
+    }
+  ],
+  timeslots: [
+    {
+      label: "6:00 AM - 10:00 AM",
+      value: {
+        from: "6:00 AM",
+        to: "10:00 AM"
+      },
+      checked: false
+    },
+    {
+      label: "10:00 AM - 2:00 PM",
+      value: {
+        from: "10:00 AM",
+        to: "2:00 PM"
+      },
+      checked: false
+    },
+    {
+      label: "2:00 PM - 6:00 PM",
+      value: {
+        from: "2:00 PM",
+        to: "6:00 PM"
+      },
+      checked: false
+    },
+    {
+      label: "6:00 PM - 10:00 PM",
+      value: {
+        from: "6:00 PM",
+        to: "10:00 PM"
+      },
+      checked: false
+    }
+  ]
+};
+
 export const TEST_NHE_STATE: NheState = {
   loading: false,
   failed: false,
   results: {
     nheData: [
       NHE_TIMESLOT
-    ]
-  }
+    ],
+    possibleNhePreferences: TestPossibleNheDates
+  },
+  nhePreferenceRequest: TestSavePossibleNheDateRequest
 };
-
 export const TEST_NHE_DATA_UK: NHETimeSlotUK[] = [
   {
     nheDirect: true,

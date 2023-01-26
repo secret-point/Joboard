@@ -2668,9 +2668,37 @@
       "value" : "আপনার জন্য কাজ করে এমন একটি শিফট দেখতে পাচ্ছেন না?",
       "note" : "Text for job opportunity inactivity modal title text"
     },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "আপনি প্রায় পৌঁছে গেছেন, {displayFirstName} {displayLastName}! নিয়োগ-পূর্ব অ্যাপয়েন্টমেন্ট নির্ধারণের জন্য আপনার পছন্দের তারিখ এবং সময় নির্বাচন করুন যেখানে আমরা আপনার কাজের অনুমোদনের ডকুমেন্টগুলি পরীক্ষা করি।",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "নিয়োগ-পূর্ব অ্যাপয়েন্টমেন্ট একটি ভার্চুয়াল ইভেন্ট",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "নিয়োগ-পূর্ব অ্যাপয়েন্টমেন্ট ভিডিও সম্মেলনে অনুষ্ঠিত হবে। একবার আপনি আমাদের সাথে যোগাযোগ করার জন্য একটি তারিখ এবং সময় বাছাই করলে, আমরা আপনাকে অ্যাপয়েন্টমেন্টের বিবরণ এবং লিংক ইমেল করবো। যদি আপনার কোনো প্রশ্ন বা প্রযুক্তিগত সমস্যা থাকে, তাহলে অনুগ্রহ করে আমাদের সঙ্গে যোগাযোগ করুন।",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "বন্ধ করুন",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "সাক্ষাৎকারের তারিখ বাছাই করুন",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "অ্যাপয়েন্টমেন্টের সময় বাছাই করুন",
+      "note" : "Text for nhe appointment time input label"
+    },
     "BB-kondo-nhe-nhe-slot-duration-notice" : {
       "value" : "সকল অ্যাপয়েন্টমেন্ট স্লটে UK-এর স্থানীয় সময় প্রদর্শিত হয়। প্রতিটি অ্যাপয়েন্টমেন্ট {maxNheSlotLength} মিনিট পর্যন্ত দীর্ঘ।",
       "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "নির্বাচন নিশ্চিত করুন",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

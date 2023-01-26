@@ -1,10 +1,21 @@
-import { GetNheTimeSlotRequestDs, GetNheTimeSlotRequestThroughNheDS, NHETimeSlot } from "../../utils/types/common";
+import {
+  GetNheTimeSlotRequestDs,
+  GetNheTimeSlotRequestThroughNheDS,
+  GetPossibleNhePreferenceRequest,
+  NHETimeSlot,
+  PossibleNhePreferenceConfig,
+  SavePossibleNhePreferenceRequest
+} from "../../utils/types/common";
 import {
   GetNheTimeSlotsDsAction,
   GetNheTimeSlotsDsFailedAction,
   GetNheTimeSlotsDsSuccessAction,
   GetNheTimeSlotsThroughNheDsAction,
-  NHE_ACTION_TYPES
+  GetPossibleNhePreferencesAction,
+  GetPossibleNhePreferencesFailedAction,
+  GetPossibleNhePreferencesSuccessAction,
+  NHE_ACTION_TYPES,
+  SetPossibleNhePreferenceRequestAction
 } from "./nheActionTypes";
 
 export const actionGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS): GetNheTimeSlotsThroughNheDsAction => {
@@ -34,3 +45,31 @@ export const actionGetNheTimeSlotsDsFailed = (payload: any): GetNheTimeSlotsDsFa
     payload
   };
 };
+
+export const actionGetPossibleNhePreference = (payload: GetPossibleNhePreferenceRequest): GetPossibleNhePreferencesAction => {
+  return {
+    type: NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES,
+    payload
+  };
+};
+
+export const actionGetPossibleNhePreferenceSuccess = (payload: PossibleNhePreferenceConfig): GetPossibleNhePreferencesSuccessAction => {
+  return {
+    type: NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_SUCCESS,
+    payload
+  };
+};
+
+export const actionGetPossibleNhePreferenceFailed = (payload: any): GetPossibleNhePreferencesFailedAction => {
+  return {
+    type: NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_FAILED,
+    payload
+  };
+};
+export const actionSetPossibleNhePreferenceRequest = (payload: SavePossibleNhePreferenceRequest): SetPossibleNhePreferenceRequestAction => {
+  return {
+    type: NHE_ACTION_TYPES.SET_POSSIBLE_NHE_PREFERENCE_REQUEST,
+    payload
+  };
+};
+

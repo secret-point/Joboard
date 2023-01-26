@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "¿No ves ningún turno que se ajuste a tus necesidades?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "¡Ya casi terminas, {displayFirstName} {displayLastName}! Selecciona tu fecha y hora preferidas para programar una cita previa a la contratación donde revisamos tus documentos de autorización de trabajo.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "La cita previa a la contratación es un evento virtual",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "La cita previa a la contratación se realizará a través de videoconferencia. Una vez que elijas una fecha y hora para contactarnos, te enviaremos por correo electrónico los detalles de la cita y el enlace. Si tienes alguna duda o problema técnico, contáctanos.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Cerrar",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Elegir fecha de cita",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Elegir horario de cita",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Confirmar selección",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

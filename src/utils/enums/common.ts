@@ -120,7 +120,7 @@ export enum UPDATE_APPLICATION_API_TYPE {
   CANCEL_SCHEDULE = "cancel-schedule",
   THANK_YOU = "thank-you",
   JOB_PREFERENCES = "job-preferences",
-  NHE_PREFERENCES = "nhe=preferences",
+  NHE_PREFERENCES = "nhe-preferences",
   DEFAULT = "Update type is missing"
 }
 
@@ -371,3 +371,9 @@ export enum APP_CAST_EVENT_NUMBER {
   CONTINGENT_OFFER = 2,
   THANK_YOU = 3
 }
+
+export enum GET_POSSIBLE_NHE_PREFERENCES {
+
+}
+
+export const NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES = 3;

@@ -9,7 +9,7 @@ import {
 } from "./application.epic";
 import { GetCandidateInfoEpic } from "./candidate.epic";
 import { JobEpic } from "./job.epic";
-import { GetNheTimeSlotsDs, GetNheTimeSlotsThroughNheDs } from "./nhe.epic";
+import { GetNheTimeSlotsDs, GetNheTimeSlotsThroughNheDs, GetPossibleNhePreferences } from "./nhe.epic";
 import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
 import { UpdateWotcStatusEpic } from "./wotc.epic";
 import { ValidateAmazonLoginIDEpic } from "./thank-you.epic";
@@ -28,7 +28,8 @@ const rootEpic = combineEpics(
   GetNheTimeSlotsDs,
   GetNheTimeSlotsThroughNheDs,
   UpdateWotcStatusEpic,
-  ValidateAmazonLoginIDEpic
+  ValidateAmazonLoginIDEpic,
+  GetPossibleNhePreferences
 );
 
 export default rootEpic;

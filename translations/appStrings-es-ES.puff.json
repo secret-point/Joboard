@@ -2692,6 +2692,10 @@
       "value" : "Elige la hora de la cita",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Todas las franjas horarias de las citas se muestran en hora local del Reino Unido. La duración máxima de la cita es de {maxNheSlotLength} minutos.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmar selección",
       "note" : "Text for nhe appointment confirm selection button"

@@ -169,7 +169,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   );
 
   return (
-    <Col className="pageContainerWithMarginTop" margin={{ top: "S300" }}>
+    <Col margin={{ top: "S300" }}>
       {
         // TODO need to align how each application workflow is related to app steps
       }

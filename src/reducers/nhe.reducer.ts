@@ -1,11 +1,13 @@
-import { NHETimeSlot } from "../utils/types/common";
+import { NHETimeSlot, PossibleNhePreferenceConfig, SavePossibleNhePreferenceRequest } from "../utils/types/common";
 import { NHE_ACTION_TYPES, NheTimeSlotsActions } from "../actions/NheActions/nheActionTypes";
 
 export interface NheState {
   loading: boolean;
   results: {
     nheData: NHETimeSlot[];
+    possibleNhePreferences: PossibleNhePreferenceConfig;
   };
+  nhePreferenceRequest: SavePossibleNhePreferenceRequest;
   failed?: boolean;
 }
 
@@ -13,7 +15,17 @@ export const initNheState: NheState = {
   loading: false,
   failed: false,
   results: {
-    nheData: []
+    nheData: [],
+    possibleNhePreferences: {
+      dates: [],
+      timeslots: [],
+      cityPass: []
+    }
+  },
+  nhePreferenceRequest: {
+    possibleCities: [],
+    possibleNHETimeSlots: [],
+    possibleNHEDates: []
   }
 };
 
@@ -33,7 +45,8 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         loading: false,
         failed: false,
         results: {
-          nheData: action.payload
+          ...state.results,
+          nheData: action.payload,
         }
       };
 
@@ -43,8 +56,45 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         loading: false,
         failed: true,
         results: {
+          ...state.results,
           nheData: []
         }
+      };
+
+    case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        failed: false,
+        results: {
+          nheData: {
+            ...state.results.nheData
+          },
+          possibleNhePreferences: action.payload
+        }
+      };
+
+    case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_FAILED:
+      return {
+        ...state,
+        loading: false,
+        failed: true,
+        results: {
+          nheData: {
+            ...state.results.nheData
+          },
+          possibleNhePreferences: {
+            dates: [],
+            timeslots: [],
+            cityPass: []
+          }
+        }
+      };
+
+    case NHE_ACTION_TYPES.SET_POSSIBLE_NHE_PREFERENCE_REQUEST:
+      return {
+        ...state,
+        nhePreferenceRequest: action.payload
       };
 
     default:

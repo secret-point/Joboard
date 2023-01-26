@@ -2668,9 +2668,37 @@
       "value" : "자신에게 맞는 근무조를 찾을 수 없으신가요?",
       "note" : "Text for job opportunity inactivity modal title text"
     },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "거의 끝나갑니다, {displayFirstName} {displayLastName} 님! 원하는 날짜와 시간을 선택하여 취업 허가 서류를 확인하는 채용 전 면담을 예약하세요.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "채용 전 면담은 가상 이벤트입니다.",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "채용 전 면담은 화상 회의를 통해 진행됩니다. 연락할 날짜와 시간을 선택하시면 면담 세부 정보와 링크를 이메일로 보내드립니다. 궁금한 사항이나 기술적인 문제가 있으면 문의해주세요.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "닫기",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "면담 날짜 선택",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "면담 시간 선택",
+      "note" : "Text for nhe appointment time input label"
+    },
     "BB-kondo-nhe-nhe-slot-duration-notice" : {
       "value" : "모든 예약 시간은 영국 현지 시간으로 표시됩니다. 각 예약 시간은 최대 {maxNheSlotLength}분입니다.",
       "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "선택 확인",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

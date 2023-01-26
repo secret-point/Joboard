@@ -80,7 +80,7 @@ a {
   color: $Blue_70;
 }
 
-.backToJobDashboardLink, .shiftPreferenceLink {
+.backToJobDashboardLink, .shiftPreferenceLink, .nhePreferenceLink, .nhePreferenceBackLink {
   color: $Blue_70;
   cursor: pointer;
 
@@ -126,7 +126,7 @@ a {
   }
 }
 
-.schedulePreferenceCard {
+.schedulePreferenceCard, .nhePreferenceCard {
     width: 100%;
     margin-top: 1em !important;
     margin-bottom: 0.5em !important;
@@ -409,4 +409,10 @@ div[data-test-component="StencilPopupDatePicker"] {
   h2[data-test-component="MonthYearText"] {
     white-space: normal;
   }
+}
+
+
+.borderlessFieldset {
+  border: none;
+  padding: inherit;
 }

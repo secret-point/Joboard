@@ -2667,6 +2667,34 @@
     "BB-JobOpportunity-inactivity-modal-title" : {
       "value" : "உங்களுக்கு வசதியான ஷிஃப்ட் இல்லையா?",
       "note" : "Text for job opportunity inactivity modal title text"
+    },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "{displayFirstName} {displayLastName}, நீங்கள் கிட்டத்தட்ட முடித்துவிட்டீர்கள்! உங்கள் பணி அங்கீகார ஆவணங்களை நாங்கள் சரிபார்க்க, நியமனத்திற்கு முன்னதான சந்திப்பைத் திட்டமிட உங்களுக்கு விருப்பமான தேதியையும் நேரத்தையும் தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "நியமனத்திற்கு முன்னதான சந்திப்பு ஒரு மெய்நிகர் சந்திப்பாகும்",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "நியமனத்திற்கு முன்னதான சந்திப்பு, வீடியோ கான்ஃபெரன்ஸ் மூலம் நடைபெறும். நீங்கள் எங்களுடன் இணைவதற்கான ஒரு தேதியையும் நேரத்தையும் தேர்வு செய்தவுடன், சந்திப்பு விவரங்கள் மற்றும் இணைப்பை மின்னஞ்சலில் உங்களுக்கு அனுப்புவோம். உங்களுக்கு ஏதேனும் கேள்விகள் அல்லது தொழில்நுட்பச் சிக்கல்கள் இருந்தால், எங்களைத் தொடர்பு கொள்ளுங்கள்.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "மூடு",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "சந்திப்பு தேதியைத் தேர்வு செய்க",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "சந்திப்பு நேரத்தைத் தேர்வு செய்க",
+      "note" : "Text for nhe appointment time input label"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "தேர்வை உறுதிப்படுத்துக",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }

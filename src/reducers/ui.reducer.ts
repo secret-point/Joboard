@@ -47,6 +47,7 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
     case CANDIDATE_ACTION_TYPES.GET_CANDIDATE:
     case NHE_ACTION_TYPES.GET_SLOTS_DS:
     case NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS:
+    case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES:
       return {
         ...state,
         isLoading: true
@@ -88,6 +89,8 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
     case CANDIDATE_ACTION_TYPES.GET_CANDIDATE_FAILED:
     case NHE_ACTION_TYPES.GET_SLOTS_DS_FAILED:
     case NHE_ACTION_TYPES.GET_SLOTS_DS_SUCCESS:
+    case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_SUCCESS:
+    case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_FAILED:
       return {
         ...state,
         isLoading: action.loadingStatus? action.loadingStatus : false
