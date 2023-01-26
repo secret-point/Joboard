@@ -3,7 +3,6 @@ import { ThankYouActions, THANK_YOU_ACTION_TYPES } from "../actions/ThankYouActi
 import { ValidateAmazonLoginIDErrorMessages } from "../utils/api/errorMessages";
 import { VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE } from "../utils/enums/common";
 
-
 export interface ThankYouState {
   referralFormInputConfig: FormInputItem;
 }

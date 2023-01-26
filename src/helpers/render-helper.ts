@@ -70,7 +70,6 @@ export const validation = (
         return true;
       } 
       return false;
-        
       
     }
     case "REGEX": {
@@ -84,7 +83,6 @@ export const validation = (
         return regExp.test(value);
       } 
       return true;
-        
       
     }
     case "AT_LEAST_ONE": {

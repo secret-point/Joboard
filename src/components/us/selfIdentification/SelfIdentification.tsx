@@ -120,7 +120,6 @@ export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
     selfIdentificationInfo && handleInitiateSelfIdentificationStep(selfIdentificationInfo);
   }, [candidateData, applicationData, selfIdentificationInfo]);
 
-
   const handleContinue = () => {
     boundResetBannerMessage();
     const isSelfIdInfoValid = isSelfIdentificationInfoValid(selfIdentificationInfo);

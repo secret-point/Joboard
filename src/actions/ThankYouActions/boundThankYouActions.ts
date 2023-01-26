@@ -6,6 +6,5 @@ import { actionUpdateReferralForm, actionValidateAmazonLoginId } from "./thankYo
 export const boundValidateAmazonLoginId = (payload: ValidateAmazonLoginIDRequest, onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionValidateAmazonLoginId(payload, onSuccess, onError));
 
-
 export const boundUpdateReferralForm = (errorCode: VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE) =>
   store.dispatch(actionUpdateReferralForm(errorCode));

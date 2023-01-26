@@ -82,7 +82,6 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
       return formattedMonthlyRate ? t("BB-Schedule-card-total-pay-per-month-text", `Up to ${formattedMonthlyRate}/month`, { formattedMonthlyRate }) : t("BB-Schedule-card-not-applicable", "N/A");
     } 
     return `${totalPayRateL10N || currencyCode + totalPayRate} ${t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}`;
-    
 
   };
 

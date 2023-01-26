@@ -69,7 +69,6 @@ export const CaliDisclosure = (props: MapStateToProps) => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
-
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
 

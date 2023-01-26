@@ -57,7 +57,6 @@ export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) =
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
 
-
   useEffect(() => {
     // Page will emit page load event once both pros are available but
     // will not emit new event on props change once it has emitted pageload event previously

@@ -108,7 +108,6 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     };
   }, [pageName]);
 
-
   const renderFormItem = ( formItem: FormInputItem ) => {
     const hasError = get(formError, formItem.dataKey) || false;
     formItem.hasError = hasError;

@@ -12,7 +12,6 @@ export const initRequisitionState: RequisitionState = {
   failed: false
 };
 
-
 export default function requisitionReducer( state: RequisitionState = initRequisitionState, action: GET_REQUISITION_ACTIONS ): RequisitionState {
   switch (action.type) {
     case GET_REQUISITION_TYPE.GET:

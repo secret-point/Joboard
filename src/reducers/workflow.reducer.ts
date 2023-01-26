@@ -1,7 +1,6 @@
 import { WORKFLOW_ACTIONS, WORKFLOW_REQUEST } from "../actions/WorkflowActions/workflowActionTypes";
 import { WORKFLOW_ERROR_CODE } from "../utils/enums/common";
 
-
 export interface WorkflowState {
   loading: boolean;
   failed: boolean;

@@ -10,7 +10,6 @@ import { H4, Text } from "@amzn/stencil-react-components/text";
 import { redirectToDashboard } from "../../helpers/utils";
 import { Col } from "@amzn/stencil-react-components/layout";
 
-
 interface MapStateToProps {
   workflow: WorkflowState;
 }

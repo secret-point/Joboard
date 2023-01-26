@@ -114,7 +114,6 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         scheduleDetails: JSON.stringify(scheduleDetail)
       };
 
-
       const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
       const countryCode = getCountryCode();
       const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);

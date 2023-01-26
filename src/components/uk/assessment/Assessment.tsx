@@ -25,7 +25,6 @@ interface MapStateToProps {
   application: ApplicationState;
 }
 
-
 export const Assessment = (props: MapStateToProps) => {
   const { job, schedule, application } = props;
   const { search, pathname } = useLocation();
@@ -36,7 +35,6 @@ export const Assessment = (props: MapStateToProps) => {
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
   const { assessment } = application?.results || {};
- 
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -49,7 +47,6 @@ export const Assessment = (props: MapStateToProps) => {
       scheduleId: scheduleId
     });
   }, [scheduleId]);
-
   
   useEffect(() => {
     checkAndBoundGetApplication(applicationId);
@@ -61,14 +58,12 @@ export const Assessment = (props: MapStateToProps) => {
     }
   }, [jobDetail, scheduleDetail]);
 
-
   useEffect(() => {
     return () => {
       // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
-
 
   return (
     <>

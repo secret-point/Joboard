@@ -98,7 +98,6 @@ export const WotcComplete = (props: MapStateToProps) => {
 
   }, [applicationId, candidateData]);
 
-
   return (
     <Col minHeight="40vh" />
   );

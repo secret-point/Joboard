@@ -454,7 +454,6 @@ export const handleAcceptOffer = ( applicationData: Application ) => {
   });
 };
 
-
 export const createUpdateApplicationRequest = (application: Application, apiType: UPDATE_APPLICATION_API_TYPE, payload: any): UpdateApplicationRequestDS => {
   const updateApplicationRequest: UpdateApplicationRequestDS = {
     applicationId: application.applicationId,

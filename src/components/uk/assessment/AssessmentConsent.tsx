@@ -48,7 +48,6 @@ export const AssessmentConsent = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const applicationData = application.results;
 
-
   // Don't refetch data if id is not changing
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
@@ -74,7 +73,6 @@ export const AssessmentConsent = (props: MapStateToProps) => {
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
-
 
   const handleConsentToAssessment = () => {
     applicationData && onCompleteTaskHelper(applicationData);
@@ -129,7 +127,6 @@ export const AssessmentConsent = (props: MapStateToProps) => {
         </Text>
 
         <VideoContainer src="https://static-assets.associate.amazondelivers.jobs/media-assets/Blackbird_Assessment_Intro_20200928.mp4" id="assessment-video" poster="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/AssessmentPoster.jpg" />
-
 
         <Expander titleText={t("B-AssessmentConsentPage-conditions-title-text-expanderTitle", "Read assessment instructions")}>
 
