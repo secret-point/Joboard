@@ -16,6 +16,23 @@
       rel="apple-touch-icon"
       href="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/logo192.png"
     />
+
+    <script>
+      const appCastEvent = new CustomEvent("appCastLoaded");
+
+      window.addEventListener('load', () => {
+        const appCastScript = document.createElement("script");
+        appCastScript.async = true;
+        appCastScript.src ="https://click.appcast.io/pixels/wfs-8984.js?ent=387";
+        appCastScript.type = "text/javascript";
+
+        appCastScript.onload = () => {
+          window.dispatchEvent(appCastEvent);
+        }
+
+        document.body.appendChild(appCastScript);
+      })
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -48,6 +65,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script id="appCastScript" type="text/javascript" src="https://click.appcast.io/pixels/wfs-8984.js?ent=387" />
   </body>
 </html>

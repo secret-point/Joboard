@@ -24,8 +24,9 @@ export const pushAppCastEvent = (event: number, jobId: string, jobSeekerId?: str
   if (jobSeekerId) {
     appCastEvent.jsid = jobSeekerId;
   }
-  log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
-  console.log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
-  
-  pushAppCastDataLayer(appCastEvent);
+  window.addEventListener("appCastLoaded", () => {
+    log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
+
+    pushAppCastDataLayer(appCastEvent);
+  });
 };
