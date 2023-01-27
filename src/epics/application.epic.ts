@@ -6,6 +6,8 @@ import {
   actionCreateApplicationAndSkipScheduleDSSuccess,
   actionCreateApplicationDSSuccess,
   actionGetApplicationFailed,
+  actionGetApplicationListFailed,
+  actionGetApplicationListSuccess,
   actionGetApplicationSuccess,
   actionUpdateApplicationDSFailed,
   actionUpdateApplicationDSSuccess,
@@ -17,6 +19,7 @@ import {
   CreateApplicationActionDS,
   CreateApplicationAndSkipScheduleActionDS,
   GetApplicationAction,
+  GetApplicationListAction,
   UpdateApplicationActionDS,
   UpdateWorkflowStepNameAction
 } from "../actions/ApplicationActions/applicationActionTypes";
@@ -47,6 +50,7 @@ import {
 import {
   ApiError,
   CreateApplicationResponse,
+  GetApplicationListResponse,
   GetApplicationResponse,
   UpdateApplicationResponse,
   UpdateWorkflowNameResponse
@@ -340,4 +344,39 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
       onCompleteTaskHelper(createApplicationResponse);
     }
   });
+};
+
+export const GetApplicationListEpic = ( action$: Observable<any> ) => {
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST),
+    switchMap(( action: GetApplicationListAction ) =>
+      from(new CandidateApplicationService().getCandidateApplicationList(action.payload))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map(( response: GetApplicationListResponse ) => {
+            const applicationList: Application[] = response.data;
+
+            if (action.onSuccess) {
+              action.onSuccess(applicationList);
+            }
+            return actionGetApplicationListSuccess(applicationList);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] GetCandidateApplicationListEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+
+            if (action.onError) {
+              action.onError(error);
+            }
+
+            const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            setEpicApiCallErrorMessage(errorMessage);
+
+            return of(actionGetApplicationListFailed(error));
+          })
+        )
+    )
+  );
 };

@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { FlyoutContent, WithFlyout } from "@amzn/stencil-react-components/flyout";
-import { Col } from "@amzn/stencil-react-components/layout";
-import { H3, Text } from "@amzn/stencil-react-components/text";
+import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { H3, H4, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import {
   boundCreateApplicationAndSkipScheduleDS,
-  boundCreateApplicationDS
+  boundCreateApplicationDS,
+  boundGetApplicationList
 } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
@@ -24,18 +25,22 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from "../../../reducers/ui.reducer";
 import { CreateApplicationAndSkipScheduleRequestDS, CreateApplicationRequestDS } from "../../../utils/apiTypes";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { getLocale, goToCandidateDashboard, routeToAppPageWithPath } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import InnerHTML from "dangerously-set-html-content";
 import { Link } from "@amzn/stencil-react-components/link";
+import { CandidateState } from "../../../reducers/candidate.reducer";
+import CustomModal from "../../common/CustomModal";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 
 interface MapStateToProps {
   job: JobState;
   schedule: ScheduleState;
   ui: uiState;
+  candidate: CandidateState;
 }
 
 interface RenderFlyoutFunctionParams {
@@ -43,20 +48,26 @@ interface RenderFlyoutFunctionParams {
 }
 
 export const Consent = (props: MapStateToProps) => {
-  const { job, schedule } = props;
+  const { job, schedule, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { jobId } = queryParams;
   const jobDetail = job.results;
   const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
+  const { candidateData } = candidate.results;
   const pageName = getPageNameFromPath(pathname);
-  const { JOB_OPPORTUNITIES } = PAGE_ROUTES;
+
+  const [showExistingAppModal, setShowExistingAppModal] = useState(false);
 
   // Don't refetch data if id is not changing
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobId]);
+
+  useEffect(() => {
+    boundGetCandidateInfo();
+  }, []);
 
   useEffect(() => {
     scheduleId && boundGetScheduleDetail({
@@ -78,6 +89,38 @@ export const Consent = (props: MapStateToProps) => {
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
+
+  const handleStartApplication = () => {
+    boundResetBannerMessage();
+    const candidateId = candidateData?.candidateId;
+    if (candidateId) {
+      boundGetApplicationList({ candidateId, status: "active" }, (applicationList: Application[]) => {
+        const applicationLength = applicationList.length;
+        if (applicationLength > 0) {
+          setShowExistingAppModal(true);
+        } else {
+          executeCreateApplication();
+          setShowExistingAppModal(false);
+        }
+      });
+    }
+  };
+
+  const executeCreateApplication = () => {
+    if (scheduleId) {
+      const payload: CreateApplicationAndSkipScheduleRequestDS = {
+        jobId,
+        dspEnabled: job.results?.dspEnabled,
+      };
+      boundCreateApplicationAndSkipScheduleDS(payload);
+    } else {
+      const payload: CreateApplicationRequestDS = {
+        jobId,
+        // dspEnabled: job.results?.dspEnabled, // TODO will need to enabled this in future once dspEnabled is enabled in UK
+      };
+      boundCreateApplicationDS(payload, (application: Application) => routeToAppPageWithPath(PAGE_ROUTES.JOB_OPPORTUNITIES, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]));
+    }
+  };
 
   const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
     <FlyoutContent
@@ -133,7 +176,7 @@ export const Consent = (props: MapStateToProps) => {
   );
 
   return (
-    <Col gridGap="S300" padding="n">
+    <Col gridGap="S300" padding="S300">
       <h1>
         {t("BB-ConsentPage-qualification-criteria-header-text", "By applying, you confirm that:")}
       </h1>
@@ -197,22 +240,8 @@ export const Consent = (props: MapStateToProps) => {
         <DebouncedButton
           variant={ButtonVariant.Primary}
           style={{ width: "100%" }}
-          onClick={() => {
-            boundResetBannerMessage();
-            if (scheduleId) {
-              const payload: CreateApplicationAndSkipScheduleRequestDS = {
-                jobId,
-                dspEnabled: job.results?.dspEnabled,
-              };
-              boundCreateApplicationAndSkipScheduleDS(payload);
-            } else {
-              const payload: CreateApplicationRequestDS = {
-                jobId,
-                // dspEnabled: job.results?.dspEnabled, // TODO will need to enabled this in future once dspEnabled is enabled in UK
-              };
-              boundCreateApplicationDS(payload, (application: Application) => routeToAppPageWithPath(JOB_OPPORTUNITIES, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]));
-            }
-          }}
+          onClick={handleStartApplication}
+          id="startApplicationButton"
         >
           {t("BB-kondo-ConsentPage-start-application-button", "Start Application")}
         </DebouncedButton>
@@ -227,6 +256,39 @@ export const Consent = (props: MapStateToProps) => {
           </Text>
         </Col>
       </Col>
+      <CustomModal shouldOpen={showExistingAppModal} setShouldOpen={setShowExistingAppModal}>
+        <Col gridGap="S300" width="100%" alignSelf="center">
+          <H4 fontWeight="bold" textAlign="center">
+            {t("BB-consent-existing-application-notice-title", "You Have an active job application")}
+          </H4>
+          <Col gridGap="S300" padding={{ top: "S300" }}>
+            <Text>
+              {t("BB-consent-existing-application-notice-text1", "You already have an active job application. You can have only one active application at a time. If you submit this application, your existing application will be withdrawn.")}
+            </Text>
+            <Text>
+              {t("BB-consent-existing-application-notice-text2", "To resume or see your application, click on \"Go to dashboard\". To continue with this application, click \"Continue\"")}
+            </Text>
+          </Col>
+          <Row justifyContent="flex-end" gridGap="S300" alignItems="center">
+            <Row>
+              <Link onClick={() => {
+                goToCandidateDashboard();
+                setShowExistingAppModal(false);
+              }}
+              >
+                {t("BB-consent-existing-app-go-to-dashboard-link", "Go to dashboard")}
+              </Link>
+            </Row>
+            <Button onClick={() => {
+              executeCreateApplication();
+              setShowExistingAppModal(false);
+            }}
+            >
+              {t("BB-consent-existing-app-continue-btn", "Continue")}
+            </Button>
+          </Row>
+        </Col>
+      </CustomModal>
     </Col>
   );
 };

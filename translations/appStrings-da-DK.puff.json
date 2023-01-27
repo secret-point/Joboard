@@ -2699,6 +2699,18 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Bekræft valg",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Kan du ikke se en mulighed, der fungerer for dig?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Du kan indsende dine arrangementspræferencer, og vi kontakter dig, når vi finder et tidspunkt, der fungerer for dig.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Vælg dine præferencer for arrangement forud for ansættelse",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

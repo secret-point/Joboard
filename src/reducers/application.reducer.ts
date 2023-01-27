@@ -5,6 +5,7 @@ import { Application } from "../utils/types/common";
 export interface ApplicationState {
   loading: boolean;
   results?: Application;
+  applicationList?: Application[];
   failed?: boolean;
 }
 
@@ -20,6 +21,7 @@ export default function applicationReducer( state: ApplicationState = initApplic
     case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE:
     case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION:
     case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME:
+    case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST:
       return {
         ...state,
         loading: true,
@@ -50,6 +52,20 @@ export default function applicationReducer( state: ApplicationState = initApplic
         ...state,
         loading: false,
         failed: true
+      };
+    case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        failed: false,
+        applicationList: action.payload
+      };
+    case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED:
+      return {
+        ...state,
+        loading: false,
+        failed: true,
+        applicationList: undefined
       };
     default:
       return state;

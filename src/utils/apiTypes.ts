@@ -11,6 +11,11 @@ export interface GetApplicationRequest {
   applicationId: string;
 }
 
+export interface GetApplicationListRequest {
+  status: string;
+  candidateId: string;
+}
+
 export interface GetRequisitionRequest {
   requisitionId: string;
 }

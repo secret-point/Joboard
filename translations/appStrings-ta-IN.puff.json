@@ -2692,6 +2692,10 @@
       "value" : "சந்திப்பு நேரத்தைத் தேர்வு செய்க",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "அனைத்துச் சந்திப்புகள் ஸ்லாட்டுகளும் UK உள்ளூர் நேரத்தில் காட்டப்படும். ஒவ்வொரு சந்திப்பும் {maxNheSlotLength} நிமிடங்கள் வரை இருக்கும்.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "தேர்வை உறுதிப்படுத்துக",
       "note" : "Text for nhe appointment confirm selection button"

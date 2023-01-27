@@ -2692,6 +2692,10 @@
       "value" : "അപ്പോയിന്‍മെന്‍റ് സമയം തിരഞ്ഞെടുക്കുക",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "എല്ലാ അപ്പോയിൻ്റ്‌മെൻ്റ് സ്ലോട്ടുകളും യുകെ പ്രാദേശിക സമയം പ്രദർശിപ്പിച്ചിരിക്കുന്നു. ഓരോ അപ്പോയിൻ്റ്‌മെൻ്റും {maxNheSlotLength} മിനിറ്റ് വരെ നീളമുള്ളതാണ്.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "തിരഞ്ഞെടുക്കൽ സ്ഥിരീകരിക്കുക",
       "note" : "Text for nhe appointment confirm selection button"

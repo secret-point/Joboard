@@ -2692,6 +2692,10 @@
       "value" : "Elige horario de cita",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "Todos los espacios para citas se muestran en la hora local del Reino Unido. Cada cita dura hasta {maxNheSlotLength} minutos.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmar selección",
       "note" : "Text for nhe appointment confirm selection button"

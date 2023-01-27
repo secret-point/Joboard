@@ -2692,9 +2692,25 @@
       "value" : "ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಸಮಯವನ್ನು ಆರಿಸಿ",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "ಎಲ್ಲಾ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಸ್ಲಾಟ್‍ಗಳನ್ನು UK ಸ್ಥಳೀಯ ಕಾಲಮಾನದಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ. ಪ್ರತಿ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ {maxNheSlotLength} ನಿಮಿಷಗಳವರೆಗೆ ಇರುತ್ತದೆ.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "ಆಯ್ಕೆಯನ್ನು ದೃಢೀಕರಿಸಿ",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುವ ಆಯ್ಕೆಯನ್ನು ನೋಡುತ್ತಿಲ್ಲವೇ?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "ನಿಮ್ಮ ಈವೆಂಟ್ ಆದ್ಯತೆಗಳನ್ನು ನೀವು ಸಲ್ಲಿಸಬಹುದು ಮತ್ತು ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುವ ಸಮಯವನ್ನು ನಾವು ಕಂಡುಕೊಂಡಾಗ ನಾವು ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "ನಿಮ್ಮ ಪ್ರಿ-ಹೈರ್ ಈವೆಂಟ್ ಆದ್ಯತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

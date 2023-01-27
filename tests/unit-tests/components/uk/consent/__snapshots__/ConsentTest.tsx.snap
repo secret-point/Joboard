@@ -3,7 +3,7 @@
 exports[`Consent should match snapshot 1`] = `
 <Col
   gridGap="S300"
-  padding="n"
+  padding="S300"
 >
   <h1>
     By applying, you confirm that:
@@ -80,6 +80,7 @@ exports[`Consent should match snapshot 1`] = `
       <Component />
     </WithFlyout>
     <DebouncedButton
+      id="startApplicationButton"
       onClick={[Function]}
       style={
         Object {
@@ -118,5 +119,79 @@ exports[`Consent should match snapshot 1`] = `
       </Text>
     </Col>
   </Col>
+  <CustomModal
+    setShouldOpen={[Function]}
+    shouldOpen={false}
+  >
+    <Col
+      alignSelf="center"
+      gridGap="S300"
+      width="100%"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="bold"
+        hyphens="none"
+        margin={0}
+        textAlign="center"
+      >
+        You Have an active job application
+      </H4>
+      <Col
+        gridGap="S300"
+        padding={
+          Object {
+            "top": "S300",
+          }
+        }
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          You already have an active job application. You can have only one active application at a time. If you submit this application, your existing application will be withdrawn.
+        </Text>
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          To resume or see your application, click on "Go to dashboard". To continue with this application, click "Continue"
+        </Text>
+      </Col>
+      <Row
+        alignItems="center"
+        gridGap="S300"
+        justifyContent="flex-end"
+      >
+        <Row>
+          <Link
+            color="primary70"
+            fontWeight="medium"
+            iconPosition="trailing"
+            iconVerticalAlign="text-top"
+            onClick={[Function]}
+            textDecoration="underline"
+          >
+            Go to dashboard
+          </Link>
+        </Row>
+        <Button
+          colorScheme="default"
+          iconPosition="leading"
+          onClick={[Function]}
+          shouldUseResponsiveContent={true}
+          size="default"
+          type="button"
+          variant="secondary"
+        >
+          Continue
+        </Button>
+      </Row>
+    </Col>
+  </CustomModal>
 </Col>
 `;

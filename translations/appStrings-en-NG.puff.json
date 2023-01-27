@@ -2699,6 +2699,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirm Selection",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Back",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Specify your pre-hire appointment availability",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "You can select a location, date and time frame during which you are available. We will reach out to you within 1 working day to confirm your appointment. Please arrive at the pre-hire event location on the date and time specified in the appointment confirmation communication. We look forward to seeing you soon.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Location",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Please select the location.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Date",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Please select at least one date.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Time",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Please select at least one time range.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Save Preferences",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "If you would like to, go back to the previous page and select an available slot",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "click here.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Don't see an option that works for you?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "You can submit your event preferences and we'll contact you when we find a time that works for you.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Select your pre-hire event preferences",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

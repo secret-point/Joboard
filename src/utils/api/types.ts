@@ -26,6 +26,11 @@ export interface GetApplicationResponse {
   errorCode: GET_APPLICATION_ERROR_CODE;
 }
 
+export interface GetApplicationListResponse {
+  data: Application[];
+  error: string;
+  errorCode: GET_APPLICATION_ERROR_CODE;
+}
 export interface UpdateApplicationResponse {
   data: Application;
   error: string;

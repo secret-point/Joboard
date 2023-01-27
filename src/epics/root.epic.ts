@@ -3,6 +3,7 @@ import {
   CreateApplicationAndSkipScheduleDSEpic,
   CreateApplicationDSEpic,
   GetApplicationEpic,
+  GetApplicationListEpic,
   GetApplicationSuccessEpic,
   UpdateApplicationDSEpic,
   UpdateWorkflowStepNameEpic
@@ -29,7 +30,8 @@ const rootEpic = combineEpics(
   GetNheTimeSlotsThroughNheDs,
   UpdateWotcStatusEpic,
   ValidateAmazonLoginIDEpic,
-  GetPossibleNhePreferences
+  GetPossibleNhePreferences,
+  GetApplicationListEpic
 );
 
 export default rootEpic;

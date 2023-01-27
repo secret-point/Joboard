@@ -2699,6 +2699,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmar a seleção",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Voltar",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Especifique a sua disponibilidade para a marcação de pré-contratação",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Pode selecionar uma localização, uma data e um período no qual esteja disponível. Iremos entrar em contacto consigo, no prazo de 1 dia útil, a confirmar a sua marcação. Chegue ao local do evento de pré-contratação na data e hora especificadas na comunicação de confirmação da marcação. Esperamos encontrar-nos consigo em breve.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Localização",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Selecione a localização.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Data",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Selecione, pelo menos, uma data.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Hora",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Selecione, pelo menos, um intervalo de tempo.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Guardar as preferências",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Se quiser voltar à página anterior e selecionar um intervalo disponível",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "clique aqui.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Não vê uma opção que funcione para si?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Pode enviar as suas preferências de eventos e entraremos em contacto consigo quando encontrarmos um horário que funcione para si.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Selecione as preferências do seu evento de pré-contratação",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

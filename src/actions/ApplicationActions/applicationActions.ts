@@ -2,6 +2,7 @@ import { Application } from "../../utils/types/common";
 import {
   CreateApplicationAndSkipScheduleRequestDS,
   CreateApplicationRequestDS,
+  GetApplicationListRequest,
   GetApplicationRequest,
   UpdateApplicationRequestDS,
   UpdateWorkflowNameRequest
@@ -16,13 +17,16 @@ import {
   CreateApplicationSuccessActionDS,
   GetApplicationAction,
   GetApplicationFailedAction,
+  GetApplicationListAction,
+  GetApplicationListFailedAction,
+  GetApplicationListSuccessAction,
   GetApplicationSuccessAction,
   UpdateApplicationActionDS,
   UpdateApplicationFailedActionDS,
   UpdateApplicationSuccessActionDS,
   UpdateWorkflowStepNameAction,
   UpdateWorkflowStepNameFailedAction,
-  UpdateWorkflowStepNameSuccessAction,
+  UpdateWorkflowStepNameSuccessAction
 } from "./applicationActionTypes";
 import { loadingStatusHelper } from "../../utils/helper";
 import { ProxyApiError } from "../../utils/api/types";
@@ -89,4 +93,16 @@ export const actionCreateApplicationAndSkipScheduleDSSuccess = ( payload: Applic
 
 export const actionCreateApplicationAndSkipScheduleDSFailed = ( payload: ProxyApiError ): CreateApplicationAndSkipScheduleFailedActionDS => {
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED, payload };
+};
+
+export const actionGetApplicationList = ( payload: GetApplicationListRequest, onSuccess?: Function, onError?: Function ): GetApplicationListAction => {
+  return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST, payload, onSuccess, onError };
+};
+
+export const actionGetApplicationListSuccess = ( payload: Application[] ): GetApplicationListSuccessAction => {
+  return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
+};
+
+export const actionGetApplicationListFailed = ( payload: any ): GetApplicationListFailedAction => {
+  return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED, payload };
 };

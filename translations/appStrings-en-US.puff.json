@@ -2759,6 +2759,26 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Select your pre-hire event preferences",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "You Have an active job application",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "You already have an active job application. You can have only one active application at a time. If you submit this application, your existing application will be withdrawn.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "To resume or see your application, click on \"Go to dashboard\". To continue with this application, click \"Continue\"",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Go to dashboard",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Continue",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

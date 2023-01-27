@@ -2692,6 +2692,10 @@
       "value" : "選擇約見時間",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "所有約見時段均以英國當地時間顯示。每次約見最長 {maxNheSlotLength} 分鐘。",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "確認選擇",
       "note" : "Text for nhe appointment confirm selection button"

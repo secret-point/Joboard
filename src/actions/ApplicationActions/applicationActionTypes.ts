@@ -3,6 +3,7 @@ import { Application } from "../../utils/types/common";
 import {
   CreateApplicationAndSkipScheduleRequestDS,
   CreateApplicationRequestDS,
+  GetApplicationListRequest,
   GetApplicationRequest,
   UpdateApplicationRequestDS,
   UpdateWorkflowNameRequest
@@ -24,7 +25,10 @@ export enum APPLICATION_ACTION_TYPES {
   UPDATE_WORKFLOW_NAME_FAILED = "UPDATE_APPLICATION_WORKFLOW_NAME_FAILED",
   CREATE_APPLICATION_AND_SKIP_SCHEDULE ="CREATE_APPLICATION_AND_SKIP_SCHEDULE",
   CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS = "CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS",
-  CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED = "CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED"
+  CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED = "CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED",
+  GET_APPLICATION_LIST = "GET_APPLICATION_LIST",
+  GET_APPLICATION_LIST_SUCCESS = "GET_APPLICATION_LIST_SUCCESS",
+  GET_APPLICATION_LIST_FAILED = "GET_APPLICATION_LIST_FAILED",
 }
 
 export interface GetApplicationAction extends Action {
@@ -122,6 +126,24 @@ export interface UpdateWorkflowStepNameFailedAction extends Action {
   payload: any;
 }
 
+export interface GetApplicationListAction extends Action {
+  type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST;
+  payload: GetApplicationListRequest;
+  onSuccess?: Function;
+  onError?: Function;
+}
+
+export interface GetApplicationListSuccessAction extends Action {
+  type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_SUCCESS;
+  payload: Application[];
+  loadingStatus: boolean;
+}
+
+export interface GetApplicationListFailedAction extends Action {
+  type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED;
+  payload: any;
+}
+
 export type ApplicationActionTypes =
     UpdateWorkflowStepNameAction |
     UpdateWorkflowStepNameSuccessAction |
@@ -138,4 +160,7 @@ export type ApplicationActionTypes =
     GetApplicationAction |
     GetApplicationSuccessAction |
     GetApplicationFailedAction |
-    ResetApplicationAction;
+    ResetApplicationAction |
+    GetApplicationListAction |
+    GetApplicationListSuccessAction |
+    GetApplicationListFailedAction;

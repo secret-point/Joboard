@@ -6,6 +6,7 @@ import {
   UpdateApplicationRequest
 } from "../@types/candidate-application-service-requests";
 import { CreateApplicationResponse } from "../utils/api/types";
+import { GetApplicationListRequest } from "../utils/apiTypes";
 
 export default class CandidateApplicationService {
 
@@ -65,5 +66,47 @@ export default class CandidateApplicationService {
       headers: { "Cache-Control": "no-cache" }
     });
     return response.data;
+  }
+
+  async getCandidateApplicationList(request: GetApplicationListRequest) {
+    const { candidateId, status = "active" } = request;
+    const pageSize = 25;
+    const startPage = 1;
+    const fetchPage = async (page: number) => {
+      try {
+        const response = await this.axiosInstance.get(
+          `/applications?candidateId=${candidateId}&status=${status}&pageSize=${pageSize}&page=${page}`,
+          {
+            headers: {
+              "Cache-Control": "no-cache"
+            }
+          }
+        );
+
+        return response.data;
+      } catch (err) {
+        console.error("error response", err);
+        return err;
+      }
+    };
+
+    let candidateApplications = [] as any[];
+    const responseData = await fetchPage(startPage);
+    const initialData = responseData.data;
+    const appList = initialData.items || [];
+    candidateApplications = [...candidateApplications, ...appList];
+
+    const { totalPages } = initialData;
+
+    for (let page = initialData.page + 1; page <= totalPages; page++) {
+      const tempData = await fetchPage(page);
+      const { data } = tempData;
+
+      candidateApplications = [...candidateApplications, ...data.items];
+    }
+
+    return {
+      data: candidateApplications
+    };
   }
 }

@@ -2699,6 +2699,18 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirm Selection",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Don't see an option that works for you?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "You can submit your event preferences and we'll contact you when we find a time that works for you.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Select your pre-hire event preferences",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

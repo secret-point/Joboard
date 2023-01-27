@@ -2692,9 +2692,73 @@
       "value" : "בחירת זמן פגישה",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "כל זמני הפגישות מוצגים בזמן מקומי בריטניה. כל פגישה באורך של עד {maxNheSlotLength} דקות.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "אישור הבחירה",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "חזרה",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "יש לציין את הזמינות לפגישת טרום העסקה שלך",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "באפשרותך לבחור מיקום, תאריך ומסגרת זמן בהתאם לזמינות שלך. אנו נפנה אליך תוך יום עסקים אחד עם אישור הפגישה שלך. נא להגיע למיקום אירוע טרום העסקה בתאריך ובשעה המפורטים בהודעה לאישור הפגישה. מצפים לראות אותך בקרוב.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "מיקום",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "יש לבחור את המיקום.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "תאריך",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "יש לבחור לפחות תאריך אחד.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "שעה",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "יש לבחור לפחות טווח זמן אחד.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "שמירת העדפות",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "אם ברצונך לחזור לדף הקודם ולבחור משבצת זמינה",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "יש ללחוץ כאן.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "לא רואה אפשרות שמתאימה בשבילך?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "ניתן לשלוח את העדפות האירוע שלך ואנחנו ניצור איתך קשר כאשר אנו נמצא זמן שמתאים לך.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "יש לבחור את העדפות האירוע טרום גיוס עובדים",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

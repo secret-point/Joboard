@@ -2692,6 +2692,10 @@
       "value" : "అపాయింట్‌మెంట్ సమయాన్ని ఎంచుకోండి",
       "note" : "Text for nhe appointment time input label"
     },
+    "BB-kondo-nhe-nhe-slot-duration-notice" : {
+      "value" : "అన్ని అపాయింట్‌మెంట్‌ల స్లాట్‌లలో UK స్థానిక సమయం కనిపిస్తుంది. ప్రతి అపాయింట్‌మెంట్ {maxNheSlotLength} నిమిషాల నిడివి వరకు ఉంటుంది.",
+      "note" : "Text for nhe time slot duration notice"
+    },
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "ఎంపికను నిర్ధారించండి",
       "note" : "Text for nhe appointment confirm selection button"

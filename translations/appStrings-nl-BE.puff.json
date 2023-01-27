@@ -2668,9 +2668,37 @@
       "value" : "Zie je geen ploegendienst die bij je past?",
       "note" : "Text for job opportunity inactivity modal title text"
     },
+    "BB-kondo-nhe-page-title-text" : {
+      "value" : "Je bent er bijna, {displayFirstName} {displayLastName}! Selecteer je voorkeursdatum en -tijd voor het plannen van een afspraak voorafgaand aan de indienstneming, waarbij we de documenten met betrekking tot je werkvergunning controleren.",
+      "note" : "Text for the nhe page title Kondo"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-title" : {
+      "value" : "De afspraak voorafgaand aan de indienstneming is een virtuele aangelegenheid",
+      "note" : "Text for pre hire appointment description popover title"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-content" : {
+      "value" : "De afspraak voorafgaand aan de indienstneming vindt plaats via een videoconferentie. Zodra je een datum en tijd hebt gekozen om met ons in contact te komen, mailen we je de gegevens met betrekking tot de afspraak en de link. Als je vragen hebt of technische problemen ondervindt, neem dan contact met ons op.",
+      "note" : "Text for pre hire appointment description popover content"
+    },
+    "BB-Kondo-pre-hire-appointment-description-popover-close-button" : {
+      "value" : "Sluiten",
+      "note" : "Text for pre hire appointment description popover close button"
+    },
+    "BB-Kondo-nhe-appointment-input-date-label" : {
+      "value" : "Kies een datum voor de afspraak",
+      "note" : "Text for nhe appointment date input label"
+    },
+    "BB-Kondo-nhe-appointment-input-time-label" : {
+      "value" : "Kies een tijd voor de afspraak",
+      "note" : "Text for nhe appointment time input label"
+    },
     "BB-kondo-nhe-nhe-slot-duration-notice" : {
       "value" : "Alle tijdsvakken voor afspraken worden weergegeven in de plaatselijke tijd van het Verenigd Koninkrijk. Elke afspraak duurt maximaal {maxNheSlotLength} minuten.",
       "note" : "Text for nhe time slot duration notice"
+    },
+    "BB-kondo-nhe-page-confirm-selection-button-text" : {
+      "value" : "Selectie bevestigen",
+      "note" : "Text for nhe appointment confirm selection button"
     }
   }
 }
