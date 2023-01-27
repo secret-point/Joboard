@@ -292,6 +292,62 @@
       "value" : "আপনার শুরুর তারিখ বিলম্বিত হলে, আপনি পরবর্তী পদক্ষেপের বিষয়ে অতিরিক্ত তথ্য পাবেন।",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "আপনি মূল্যায়নে পাস করেছেন। আপনি যে চাকরিটি বেছে নিয়েছেন তার জন্য এখানে কর্মসংস্থানের শর্তসাপেক্ষ অফার রয়েছে",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "কর্মসংস্থানের একটি শর্তসাপেক্ষ অফার কি?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "চাকরির বিবরণ দেখুন",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "চাকরির বর্ণনা",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "কর্মসংস্থানের একটি শর্তসাপেক্ষ অফার কি?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "এই অফারটি আপনার উপর শর্তাধীন:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "নিবন্ধন ডকুমেন্ট সম্পন্ন করা(যেখানে প্রযোজ্য)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "সফলভাবে একটি ব্যাকগ্রাউন্ড চেক সম্পন্ন করা",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "সফলভাবে একটি মেডিকেল পরীক্ষা সম্পন্ন করা(যেখানে প্রযোজ্য)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "পুনরায় নিয়োগের যোগ্যতা সফলভাবে সম্পন্ন করা (যেখানে প্রযোজ্য)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UK-তে কাজ করার অধিকার থাকা এবং প্রয়োজনীয় প্রমাণ প্রদান করা",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "কর্মসংস্থানের চুক্তি স্বাক্ষর এবং ফেরত",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "স্বাস্থ্য ও নিরাপত্তা মূল্যায়ন সহ ইনডাকশন ট্রেনিং/দিন 0 সফলভাবে অংশগ্রহণ করা এবং সম্পূর্ণ করা",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "আপনার পছন্দের শিফটের জন্য আপনার শুরুর তারিখটি এবং/অথবা ঘন্টা, সময়সূচী এবং অবস্থানের জন্য ব্যবসায়িক চাহিদার সাপেক্ষে পরিবর্তিত হতে পারে।",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "একটি মৌসুমি সময়সীমা মানে কি?",
       "note" : "Text for about seasonal duration popover title"
@@ -2699,6 +2755,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "নির্বাচন নিশ্চিত করুন",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "ফিরে যান",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "আপনার প্রি-হায়ার সাক্ষাৎকারের প্রাপ্যতা নির্দিষ্ট করুন",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "আপনি আপনার উপলভ্যতা অনুসারে একটি অবস্থান, তারিখ এবং টাইম ফ্রেম নির্বাচন করতে পারেন। আপনার সাক্ষাৎকার নিশ্চিত করার জন্য আমরা 1 কর্মদিবসের মধ্যে আপনার সাথে যোগাযোগ করবো। সাক্ষাৎকারের কনফার্মেশন কমিউনিকেশনে উল্লেখিত তারিখ এবং সময়ে প্রি-হায়ার ইভেন্ট অবস্থানে অনুগ্রহ করে পৌঁছান। শীঘ্রই আপনার সাথে দেখা হবে।",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "অবস্থান",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "অনুগ্রহ করে অবস্থান নির্বাচন করুন।",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "তারিখ",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "অনুগ্রহ করে অন্তত একটি তারিখ নির্বাচন করুন।",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "সময়",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "অনুগ্রহ করে অন্তত একটি সময় সীমা নির্বাচন করুন।",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "পছন্দগুলি সংরক্ষণ করুন",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "আপনি যদি আগের পেজে ফিরে যেতে এবং একটি উপলভ্য স্লট নির্বাচন করতে চান",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "এখানে ক্লিক করুন।",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "আপনার সুবিধামত কোনো অপশন দেখতে পাচ্ছেন না?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "আপনি আপনার ইভেন্ট পছন্দগুলি জমা দিতে পারেন এবং আমরা যখন আপনার জন্য উপযুক্ত সময় খুঁজে পাব তখন আমরা আপনার সাথে যোগাযোগ করব৷",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "আপনার প্রাক-হায়ার করা ইভেন্ট পছন্দগুলি নির্বাচন করুন",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

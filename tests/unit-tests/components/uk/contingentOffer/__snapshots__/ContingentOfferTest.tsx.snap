@@ -24,9 +24,15 @@ exports[`ContingentOffer should match snapshot 1`] = `
       fontSize="T200"
       hyphens="none"
     >
-      Here is the contingent offer for the job you picked.
+      You have passed the assessment. Here is the conditional offer of employment for the job you picked
     </Text>
   </Col>
+  <WithFlyout
+    flyoutPosition="trailing"
+    renderFlyout={[Function]}
+  >
+    <Component />
+  </WithFlyout>
   <ScheduleCard
     displayOnly={true}
     scheduleDetail={
@@ -89,192 +95,6 @@ exports[`ContingentOffer should match snapshot 1`] = `
     className="jobDescriptionContainer"
     gridGap={8}
   >
-    <H4
-      color="neutral90"
-      font="primary"
-      fontSize="T400"
-      fontWeight="regular"
-      hyphens="none"
-      margin={0}
-    >
-      Common questions
-    </H4>
-    <Row
-      padding={
-        Object {
-          "top": "S200",
-        }
-      }
-    >
-      <Expander
-        contentSpacing="S300"
-        shouldExpandOnMount={false}
-        titleText="What is a contingent offer?"
-      >
-        <Col
-          gridGap={8}
-        >
-          <Text
-            font="primary"
-            fontSize="T300"
-            hyphens="none"
-          >
-            This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities.
-          </Text>
-          <Row
-            padding={
-              Object {
-                "bottom": "S200",
-                "top": "S200",
-              }
-            }
-          >
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              Your start time might be delayed if:
-            </Text>
-          </Row>
-          <Col
-            padding={
-              Object {
-                "left": "S300",
-              }
-            }
-          >
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                The background check is not completed on time
-              </li>
-            </Text>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                You don’t meet the drug test requirements on time
-              </li>
-            </Text>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                Training spots fill up.
-              </li>
-            </Text>
-          </Col>
-          <Row>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              If your start date is delayed, you’ll receive additional information regarding next steps.
-            </Text>
-          </Row>
-        </Col>
-      </Expander>
-    </Row>
-    <Row
-      padding={
-        Object {
-          "bottom": "S400",
-          "top": "S200",
-        }
-      }
-    >
-      <Expander
-        contentSpacing="S300"
-        shouldExpandOnMount={false}
-        titleText="How do I get the sign on bonus?"
-      >
-        <Col
-          gridGap={8}
-        >
-          <Text
-            font="primary"
-            fontSize="T300"
-            hyphens="none"
-          >
-            This offer includes a sign on bonus of MXN$5 based on the specific details noted above. It's payable over multiple installments that may extend to 180 days after your start.
-          </Text>
-          <Row
-            padding={
-              Object {
-                "bottom": "S200",
-                "top": "S200",
-              }
-            }
-          >
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              This specific offer may not be available if:
-            </Text>
-          </Row>
-          <Col
-            padding={
-              Object {
-                "left": "S300",
-              }
-            }
-          >
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                You reschedule your shift
-              </li>
-            </Text>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                You reschedule your start date, or
-              </li>
-            </Text>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              <li>
-                You choose a new role.
-              </li>
-            </Text>
-          </Col>
-          <Row>
-            <Text
-              font="primary"
-              fontSize="T300"
-              hyphens="none"
-            >
-              If you’ve worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.
-            </Text>
-          </Row>
-        </Col>
-      </Expander>
-    </Row>
-    <Hr
-      aria-hidden={true}
-      color="neutral10"
-      size="narrow"
-    />
     <Col
       padding={
         Object {
@@ -282,19 +102,12 @@ exports[`ContingentOffer should match snapshot 1`] = `
         }
       }
     >
-      <Text
-        font="primary"
-        fontSize="T300"
-        hyphens="none"
+      <WithFlyout
+        flyoutPosition="trailing"
+        renderFlyout={[Function]}
       >
-        Job requirements
-      </Text>
-    </Col>
-    <Col>
-      <DangerouslySetHtmlContent
-        className="jobDescription"
-        html="jobDescription jobDescription"
-      />
+        <Component />
+      </WithFlyout>
     </Col>
   </Col>
   <Col

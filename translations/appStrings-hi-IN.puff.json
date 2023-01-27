@@ -2699,6 +2699,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "चुनाव की पुष्टि करें",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "पीछे जाएं",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "अपनी प्री-हायर अपॉइंटमेंट उपलब्धता निर्दिष्ट करें",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "आप वह जगह, दिनांक और समय सीमा चुन सकते हैं, जिसमें आप उपलब्ध हैं. हम आपकी नियुक्ति की पुष्टि करते हुए 1 बिज़नेस दिवस के भीतर आपसे संपर्क करेंगे. कृपया अपॉइंटमेंट पुष्टिकरण पत्राचार में निर्दिष्ट तिथि और समय पर प्री-हायर ईवेंट की जगह पर पहुंचें. हम आपसे शीघ्र ही मिलने के लिए उत्साहित हैं.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "लोकेशन",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "कृपया जगह चुनें.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "तारीख़",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "कृपया कम से कम एक तारीख चुनें.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "समय",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "कृपया कम से कम एक समय सीमा चुनें.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "प्राथमिकताएं सेव करें",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "यदि आप पिछले पेज पर वापस जाना चाहते हैं और उपलब्ध स्लॉट चुनना चाहते हैं",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "यहां क्लिक करें.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "ऐसा कोई विकल्प नहीं मिल रहा है जो आपके लिए सही रहेगा?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "आप अपनी ईवेंट प्राथमिकताएं हमें बता सकते हैं और जब हमें आपके लिए उपयुक्त समय मिलेगा तब हम आपसे संपर्क करेंगे.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "अपनी प्री-हायर ईवेंट प्राथमिकताएं चुनें",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

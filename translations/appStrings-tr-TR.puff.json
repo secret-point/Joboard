@@ -2699,6 +2699,74 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Seçimi onayla",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Geri",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Kiralama öncesi randevu için müsaitliğinizi belirtin.",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Müsait olduğunuz bir konum, tarih ve zaman dilimi seçebilirsiniz. Randevunuzu onaylamak için 1 iş günü içinde size ulaşacağız. Lütfen randevu onay bildiriminde belirtilen tarih ve saatte kiralama öncesi etkinlik mekanında olunuz. Yakında görüşmek dileğiyle.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Konum",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Lütfen konumu seçin.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Tarih",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Lütfen en az bir tarih seçin.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Saat",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Lütfen en az bir zaman aralığı seçin.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Tercihleri kaydet",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Bir önceki sayfaya geri dönmek ve uygun bir zaman dilimi seçmek isterseniz",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "Buraya tıklayın.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Aktif bir iş başvurunuz var.",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Zaten aktif bir iş başvurunuz var. Bir seferde yalnızca bir aktif başvuruya sahip olabilirsiniz. Bu başvuruyu gönderirseniz mevcut başvurunuz geri çekilecektir.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Başvurunuzu devam ettirmek veya görmek için “Panele git”i tıklayın. Bu başvuruya devam etmek için “Devam et”i tıklayın.",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Panele git.",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Devam et.",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

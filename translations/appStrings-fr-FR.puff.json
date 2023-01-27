@@ -2699,6 +2699,54 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmer la sélection",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Retour",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Indiquez une disponibilité pour votre rendez-vous de pré-recrutement",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Vous pouvez sélectionner un lieu, une date et une plage horaire en fonction de vos disponibilités. Nous vous contacterons dans un délai d'un jour ouvrable pour confirmer votre rendez-vous. Présentez-vous au lieu, à la date et à l'heure spécifiés dans la confirmation de rendez-vous de pré-recrutement. Nous avons hâte de vous rencontrer.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Lieu",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Sélectionnez le lieu.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Date",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Sélectionnez au moins une date.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Heure",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Sélectionnez au moins une plage horaire.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Enregistrer les préférences",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Si vous souhaitez revenir à la page précédente et sélectionner un créneau disponible",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "cliquez ici.",
+      "note" : "Text for nhe preference click here link"
     }
   }
 }

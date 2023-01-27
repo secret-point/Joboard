@@ -294,6 +294,62 @@
             "note": "Text for contingent offer meaning popover content",
             "value": "If your start date is delayed, you’ll receive additional information regarding next steps."
         },
+        "BB-Kondo-ContingencyOffer-job-picked-title-text": {
+            "note": "Text for Kondo job offer picked title",
+            "value": "You have passed the assessment. Here is the conditional offer of employment for the job you picked"
+        },
+        "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text": {
+            "note": "Text for Kondo contingency offers page what is conditional offer text",
+            "value": "What is a conditional offer of employment?"
+        },
+        "BB-Kondo-ContingencyOffer-view-job-description-text": {
+            "note": "Text for Kondo contingency offers page view job description text",
+            "value": "View Job description"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-job-description-title-text": {
+            "note": "Text for Kondo contingency offers page flyout job description title text",
+            "value": "Job description"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer title text",
+            "value": "What is a conditional offer of employment?"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer paragraph1 text",
+            "value": "This offer is conditional on you:"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list1 text",
+            "value": "completing registration documents (where applicable)"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list2 text",
+            "value": "successfully completing a background check"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list3 text",
+            "value": "successfully completing a medical test (where applicable)"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list4 text",
+            "value": "successfully completing rehire eligibility (where applicable)"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list5 text",
+            "value": "having the right to work in the UK and providing the required evidence"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list6 text",
+            "value": "signing and returning the contract of employment"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer list7 text",
+            "value": "successfully attending and completing induction training/Day 0, including a health and safety assessment"
+        },
+        "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text": {
+            "note": "Text for Kondo contingency offers page flyout conditional offer paragraph2 text",
+            "value": "Your start date for your preferred shift and/or number of hours, schedule and location could change subject to business demand."
+        },
         "BB-Schedule-card-about-seasonal-duration-popover-title-text": {
             "note": "Text for about seasonal duration popover title",
             "value": "What does a seasonal duration mean?"

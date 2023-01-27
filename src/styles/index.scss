@@ -411,8 +411,19 @@ div[data-test-component="StencilPopupDatePicker"] {
   }
 }
 
-
 .borderlessFieldset {
   border: none;
   padding: inherit;
+}
+
+.contingent-offer-flyout-btn {
+  margin: 0.5em 0;
+  width: 100%;
+  text-align: left !important;
+  justify-content: start !important;
+}
+
+.contingent-offer-conditional-ul-list {
+  margin: 20px 0;
+  padding-left: 20px;
 }

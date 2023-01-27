@@ -2759,6 +2759,26 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "יש לבחור את העדפות האירוע טרום גיוס עובדים",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "יש לך הגשת מועמדות פעילה לעבודה",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "כבר יש לך הגשת מועמדות פעילה לעבודה. ניתן לקבל רק הגשת מועמדות פעילה אחת בכל פעם. שליחת הגשת מועמדות זו, תבטל את הגשת המועמדות הקיימת שלך.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "כדי להמשיך או לראות את הגשת המועמדות שלך, יש ללחוץ על \"מעבר ללוח הבקרה\". כדי להמשיך בהגשת מועמדות זו, יש ללחוץ על \"המשך\"",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "מעבר אל לוח הבקרה",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "המשך",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

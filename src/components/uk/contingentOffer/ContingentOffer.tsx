@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { ButtonVariant } from "@amzn/stencil-react-components/button";
-import { Expander } from "@amzn/stencil-react-components/expander";
-import { Col, Hr, Row } from "@amzn/stencil-react-components/layout";
+import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
+import { Col } from "@amzn/stencil-react-components/layout";
 import { H2, H4, Text } from "@amzn/stencil-react-components/text";
 import InnerHTML from "dangerously-set-html-content";
 import queryString from "query-string";
@@ -29,6 +28,7 @@ import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
+import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 
 interface MapStateToProps {
   job: JobState;
@@ -39,7 +39,6 @@ interface MapStateToProps {
 }
 
 interface ContingentOfferProps {
-
 }
 
 type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
@@ -54,9 +53,6 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   const jobDetail = job.results;
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
-  const signOnBonus = schedule.results.scheduleDetail?.signOnBonus;
-  const displayCurrency = "MXN$";
-  const employmentType = schedule.results.scheduleDetail?.employmentType;
   const { candidateData } = candidate.results;
 
   useEffect(() => {
@@ -103,120 +99,88 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
     applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
   };
 
+  const renderConditionalOfferFlyout = ({ close }: RenderFlyoutFunctionParams) => (
+    <FlyoutContent
+      titleText={t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text", "What is a conditional offer of employment?")}
+      onCloseButtonClick={close}
+    >
+      <Col>
+        <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text", "This offer is conditional on you:")}</Text>
+        <ul className="contingent-offer-conditional-ul-list">
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text", "completing registration documents (where applicable)")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text", "successfully completing a background check")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text", "successfully completing a medical test (where applicable)")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text", "successfully completing rehire eligibility (where applicable)")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text", "having the right to work in the UK and providing the required evidence")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text", "signing and returning the contract of employment")}</Text>
+          </li>
+          <li>
+            <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text", "successfully attending and completing induction training/Day 0, including a health and safety assessment")}</Text>
+          </li>
+        </ul>
+        <Text>{t("BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text", "Your start date for your preferred shift and/or number of hours, schedule and location could change subject to business demand.")}</Text>
+      </Col>
+    </FlyoutContent>
+  );
+
+  const renderJobDescriptionFlyout = ({ close }: RenderFlyoutFunctionParams) => (
+    <FlyoutContent
+      titleText={t("BB-Kondo-ContingencyOffer-flyout-job-description-title-text", "Job description")}
+      onCloseButtonClick={close}
+    >
+      <Col>
+        <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription || ""} />
+      </Col>
+    </FlyoutContent>
+  );
+
   const displayName = candidateData?.preferredFirstName || candidateData?.firstName || "";
 
   return (
     <Col gridGap={10}>
       <Col gridGap={10}>
         <H2>{t("BB-ContingencyOffer-well-done-text", "Well done so far")}{displayName ? `, ${displayName}`: ""}!</H2>
-        <Text fontSize="T200">{t("BB-ContingencyOffer-job-picked-title-text", "Here is the contingent offer for the job you picked.")}</Text>
+        <Text fontSize="T200">
+          {t("BB-Kondo-ContingencyOffer-job-picked-title-text", "You have passed the assessment. Here is the conditional offer of employment for the job you picked")}
+        </Text>
       </Col>
 
+      <WithFlyout renderFlyout={renderConditionalOfferFlyout}>
+        {({ open }) => (
+          <Button
+            variant={ButtonVariant.Tertiary}
+            className="contingent-offer-flyout-btn"
+            onClick={() => open()}
+          >
+            {t("BB-Kondo-ContingencyOffer-what-is-conditional-offer-text", "What is a conditional offer of employment?")}
+          </Button>
+        )}
+      </WithFlyout>
       {scheduleDetail && <ScheduleCard scheduleDetail={scheduleDetail} displayOnly />}
       <Col className="jobDescriptionContainer" gridGap={8}>
-        <H4>
-          {t("BB-ContingencyOffer-common-question-title-text", "Common questions")}
-        </H4>
-        <Row padding={{ top: "S200" }}>
-          <Expander titleText={t("BB-ContingencyOffer-contingent-offer-meaning-popover-title-text", "What is a contingent offer?")}>
-            <Col gridGap={8}>
-              <Text>
-                {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content", "This offer is confirmation that you’ll be hired as an employee of Amazon if you successfully complete your background, drug test and all any other required pre-hire activities.")}
-              </Text>
-              <Row padding={{ top: "S200", bottom: "S200" }}>
-                <Text>
-                  {
-                    t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-next-line", "Your start time might be delayed if:")
-                  }
-                </Text>
-              </Row>
-              <Col padding={{ left: "S300" }}>
-                <Text>
-                  <li>
-                    {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-one", "The background check is not completed on time")}
-                  </li>
-                </Text>
-                <Text>
-                  <li>
-                    {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-two", "You don’t meet the drug test requirements on time")}
-                  </li>
-                </Text>
-                <Text>
-                  <li>
-                    {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-point-three", "Training spots fill up.")}
-                  </li>
-                </Text>
-              </Col>
-              <Row>
-                <Text>
-                  {t("BB-ContingencyOffers-contingent-offer-meaning-popover-content-last-line", "If your start date is delayed, you’ll receive additional information regarding next steps.")}
-                </Text>
-              </Row>
-            </Col>
-          </Expander>
-        </Row>
-        {employmentType === "Seasonal" ? (
-          <Row padding={{ top: "S200" }}>
-            <Expander
-              titleText={t("BB-Schedule-card-about-seasonal-duration-popover-title-text", "What does a seasonal duration mean?")}
-            >
-              <Col gridGap="S500">
-                <Text fontSize="T200">
-                  {t("BB-Schedules-card-about-seasonal-duration-popover-content", "Seasonal Roles and Regular Roles have the same job duties. Seasonal roles, however, are intended to be temporary and last no longer than 11 months. If you’re interested in joining Amazon on a permanent basis, the opportunity may become available in the future.  Otherwise, you’ll be notified when your assignment will end.")}
-                </Text>
-              </Col>
-            </Expander>
-          </Row>
-        ): null}
-        {signOnBonus ? (
-          <Row padding={{ top: "S200", bottom: "S400" }}>
-            <Expander titleText={t("BB-Schedule-card-about-how-to-sign-bonus-title-text", "How do I get the sign on bonus?")}>
-              <Col gridGap={8}>
-                <Text>
-                  {t("BB-Schedules-card-about-how-to-sign-bonus-content", `This offer includes a sign on bonus of ${displayCurrency}${signOnBonus} based on the specific details noted above. It's payable over multiple installments that may extend to 180 days after your start.`, { displayCurrency, signOnBonus })}
-                </Text>
-                <Row padding={{ top: "S200", bottom: "S200" }}>
-                  <Text>
-                    {
-                      t("BB-Schedules-card-about-how-to-sign-bonus-content-point", "This specific offer may not be available if:")
-                    }
-                  </Text>
-                </Row>
-                <Col padding={{ left: "S300" }}>
-                  <Text>
-                    <li>
-                      {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-one", "You reschedule your shift")}
-                    </li>
-                  </Text>
-                  <Text>
-                    <li>
-                      {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-two", "You reschedule your start date, or")}
-                    </li>
-                  </Text>
-                  <Text>
-                    <li>
-                      {t("BB-Schedules-card-about-how-to-sign-bonus-content-point-three", "You choose a new role.")}
-                    </li>
-                  </Text>
-                </Col>
-                <Row>
-                  <Text>
-                    {t("BB-Schedules-card-about-how-to-sign-bonus-content-last-line", "If you’ve worked for Amazon in the last 90 days you will not be eligible for any sign on bonus.")}
-                  </Text>
-                </Row>
-              </Col>
-            </Expander>
-          </Row>
-        ): null
-        }
-        <Hr />
         <Col padding={{ top: "S400" }}>
-          <Text>
-            {t("BB-ContingencyOffer-job-requirement-Section-title", "Job requirements")}
-          </Text>
-        </Col>
-        <Col>
-          <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription || ""} />
+          <WithFlyout renderFlyout={renderJobDescriptionFlyout}>
+            {({ open }) => (
+              <Button
+                variant={ButtonVariant.Tertiary}
+                className="contingent-offer-flyout-btn"
+                onClick={() => open()}
+              >
+                {t("BB-Kondo-ContingencyOffer-view-job-description-text", "View Job description")}
+              </Button>
+            )}
+          </WithFlyout>
         </Col>
       </Col>
       <Col

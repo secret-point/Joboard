@@ -2699,6 +2699,26 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "選択を確認",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "有効なアプリケーションがあります",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "すでに有効なアプリケーションがあります。一度にできる有効なアプリケーションは1件のみです。このアプリケーションを送信すると、既存のアプリケーションは取り消されます。",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "アプリケーションを再開または確認するには、「ダッシュボードに移動する」をクリックします。このアプリケーションを続けるには「次に進む」をクリックします",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "ダッシュボードに移動する",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "次に進む",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

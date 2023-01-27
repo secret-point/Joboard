@@ -2700,6 +2700,54 @@
       "value" : "Bekræft valg",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Tilbage",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Angiv din tilgængelighed for en aftale forud for ansættelse",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Du kan vælge en placering, dato og tidsramme, som du er tilgængelig på. Vi kontakter dig inden for 1 hverdag, med en bekræftelse af din aftale. Ankom venligst til lokationen for arrangementet forud for ansættelse på den dato og det klokkeslæt, der er angivet i bekræftelsen af aftalen. Vi ser frem til at se dig snart.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Lokation",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Vælg placeringen.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Dato",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Vælg mindst en dato.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Tid",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Vælg mindst et tidsinterval.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Gem præferencer",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Hvis du vil gå tilbage til den forrige side og vælge en ledig plads",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "klik her.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "Kan du ikke se en mulighed, der fungerer for dig?",
       "note" : "Text for nhe preference card title"

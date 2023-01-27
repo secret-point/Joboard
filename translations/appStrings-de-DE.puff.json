@@ -292,6 +292,62 @@
       "value" : "sich dein Starttermin verzögert, du erhälst weitere Informationen über die nächsten Schritte.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Du hast das Assessment bestanden. Hier ist das bedingte Stellenangebot für den von dir ausgewählten Job.",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Was ist ein bedingtes Stellenangebot?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Stellenbeschreibung anzeigen",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "Stellenbeschreibung",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Was ist ein bedingtes Stellenangebot?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Dieses Angebot ist an folgende Bedingungen geknüpft:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "Ausfüllen der Registrierungsunterlagen (falls zutreffend)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "Erfolgreicher Abschluss einer Zuverlässigkeitsüberprüfung",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "Erfolgreicher Abschluss eines medizinischen Tests (falls zutreffend)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "Erfolgreiche Erfüllung der Wiedereinstellungsvoraussetzungen (falls zutreffend)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "Berechtigt sein, in Großbritannien zu arbeiten und Vorlegen der erforderlichen Nachweise",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "Unterzeichnen und Übermitteln des Arbeitsvertrags",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "Erfolgreicher Besuch und Abschluss einer Einführungsschulung/Tag 0, einschließlich einer Gesundheits- und Sicherheitsbeurteilung",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Dein Startdatum für deine bevorzugte Schicht und/oder die Anzahl der Stunden, dein Zeitplan und dein Standort können sich je nach Geschäftsnachfrage ändern.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Was bedeutet eine saisonale Laufzeit?",
       "note" : "Text for about seasonal duration popover title"
@@ -2699,6 +2755,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Auswahl bestätigen",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Zurück",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Gib deine Verfügbarkeit für den Termin vor der Einstellung an",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Du kannst einen Standort, ein Datum und einen Zeitrahmen auswählen, in dem du verfügbar bist. Wir setzen uns innerhalb 1 Werktages mit dir in Verbindung, um deinen Termin zu bestätigen. Bitte finde dich an dem Datum und zu der Uhrzeit, die in der Terminbestätigung angegeben sind, am Standort für die Veranstaltung vor der Einstellung ein. Wir freuen uns auf dich.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Standort",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Bitte wähle den Standort aus.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Datum",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Bitte wähle mindestens ein Datum aus.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Uhrzeit",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Bitte wähle mindestens einen Zeitraum aus.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Einstellungen speichern",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Wenn du zur vorherigen Seite zurückkehren und ein verfügbares Zeitfenster auswählen möchtest,",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "Hier klicken",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Ist keine passende Option für dich dabei?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Du kannst deine Veranstaltungspräferenzen angeben und wir werden uns mit dir in Verbindung setzen, wenn wir eine Zeit finden, die für dich geeignet ist.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Wähle deine Veranstaltungspräferenzen vor der Einstellung",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

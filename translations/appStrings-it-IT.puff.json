@@ -2700,6 +2700,54 @@
       "value" : "Conferma la selezione",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Indietro",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Specifica la tua disponibilità per l’appuntamento pre-assunzione",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Puoi selezionare una località, una data e un periodo di tempo in cui sei disponibile. Ti contatteremo entro 1 giorno lavorativo per confermare il tuo appuntamento. Arriva al luogo dell’evento pre-assunzione nella data e all'ora specificate nella comunicazione di conferma dell’appuntamento. Non vediamo l’ora di incontrarti.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Sede",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Seleziona la sede.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Data",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Seleziona almeno una data.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Orario",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Seleziona almeno un intervallo di tempo.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Salva le preferenze",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Se vuoi tornare alla pagina precedente e selezionare una fascia oraria disponibile",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "fai clic qui.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "Non trovi un'opzione adatta a te?",
       "note" : "Text for nhe preference card title"
@@ -2711,6 +2759,26 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Seleziona le tue preferenze per l’evento pre-assunzione",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Hai una candidatura attiva",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Hai già una candidatura attiva. È possibile avere una sola candidatura attiva alla volta. Se invii questa candidatura, quella esistente verrà ritirata.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Per riprendere o visualizzare la candidatura, fai clic su “Vai alla dashboard”. Per continuare con questa candidatura, fai clic su “Continua”",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Vai alla dashboard",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Continua",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

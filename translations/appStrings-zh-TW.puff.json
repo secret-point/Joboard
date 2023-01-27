@@ -2699,6 +2699,18 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "確認選擇",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "沒有看到適合您的選項嗎？",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "您可以提交您的活動偏好，當我們找到適合您的時間會與您聯絡。",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "選擇您的聘前活動偏好",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

@@ -2699,6 +2699,86 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "تأكيد التحديد",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "رجوع",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "حدد مدى توفرك لموعد المقابلة السابقة للتعيين",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "يمكنك تحديد الموقع والتاريخ والإطار الزمني الذي تكون متاحًا فيه. سنتواصل معك في غضون يوم عمل واحد لتأكيد موعدك. يُرجى الوصول إلى موقع فعالية المقابلة السابقة للتعيين في التاريخ والوقت المحددين في رسالة تأكيد الموعد. نتطلع إلى رؤيتك قريبًا.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "الموقع",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "يُرجى تحديد الموقع.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "التاريخ",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "يُرجى تحديد تاريخ واحد على الأقل.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "الوقت",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "يُرجى تحديد نطاق زمني واحد على الأقل.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "حفظ التفضيلات",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "إذا كنت ترغب في العودة إلى الصفحة السابقة وتحديد الفترة الزمنية المتاحة",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "انقر هنا.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "ألا تجد خيارًا يناسبك؟",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "يمكنك إرسال تفضيلاتك للفعالية وسنتصل بك عندما نجد الوقت الذي يناسبك.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "تحديد تفضيلات فعالية ما قبل التوظيف",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "لديك طلب وظيفة فعّال",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "لديك بالفعل طلب وظيفة فعّال. يمكنك الحصول على طلب فعّال واحد فقط في كل مرة. إذا أرسلت هذا الطلب، فسيتم سحب طلبك الحالي.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "لاستئناف طلبك أو مشاهدته، انقر فوق \"الانتقال إلى لوحة السجل\". للمتابعة مع هذا الطلب، انقر فوق \"متابعة\"",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "انتقل إلى لوحة السجل",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "متابعة",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

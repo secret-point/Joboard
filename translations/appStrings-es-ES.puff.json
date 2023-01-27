@@ -2699,6 +2699,86 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmar selección",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Volver",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Especifica la disponibilidad de tu cita previa a la contratación",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Puedes seleccionar la ubicación, la fecha y el intervalo de tiempo en los que estés disponible. Nos pondremos en contacto contigo en un plazo de 1 día laborable para confirmarte la cita. Llega a la ubicación del evento previo a la contratación en la fecha y la hora especificadas en la comunicación de confirmación de la cita. Esperamos verte pronto.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Ubicación",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Selecciona la ubicación.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Fecha",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Selecciona al menos una fecha.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Hora",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Selecciona al menos una franja horaria.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Guardar preferencias",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Puedes volver a la página anterior y seleccionar una franja horaria disponible",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "haz clic aquí.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "¿No ves ninguna opción adecuada para ti?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Puedes enviar tus preferencias de eventos y nos pondremos en contacto contigo cuando encontremos un horario adecuado para ti.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Selecciona tus preferencias para el evento previo a la contratación",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Tienes una solicitud de empleo activa",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Ya tienes una solicitud de empleo activa. Solo puedes tener una solicitud activa a la vez. Si envías esta solicitud, se retirará tu solicitud actual.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Para reanudar o ver tu solicitud, haz clic en “Ir al panel”. Para continuar con esta solicitud, haz clic en “Continuar”",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Ir al panel de control",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Continuar",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

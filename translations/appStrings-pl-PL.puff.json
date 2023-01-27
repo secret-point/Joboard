@@ -2699,6 +2699,38 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Potwierdź wybór",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Nie widzisz opcji, która Ci odpowiada?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Możesz przesłać swoje preferencje dotyczące wydarzenia, a my skontaktujemy się z Tobą, gdy znajdziemy czas, który Ci odpowiada.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Wybierz swoje preferencje dotyczące wydarzenia poprzedzającego zatrudnienie",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Masz aktywne podanie o pracę",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Masz już aktywne podanie o pracę. Możesz mieć tylko jedno aktywne podanie naraz. Jeśli prześlesz to podanie, Twoje istniejące podanie zostanie wycofane.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Aby wznowić lub zobaczyć swoje podanie, kliknij „Przejdź do panelu”. Aby kontynuować ten wniosek, kliknij „Kontynuuj”",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Przejdź do panelu",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Kontynuuj",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

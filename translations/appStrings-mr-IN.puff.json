@@ -2699,6 +2699,54 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "निवड कन्फर्म करा",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "मागे जा",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "तुमची प्री-हायर अपॉइंटमेंट उपलब्धता निर्दिष्ट करा",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "तुम्ही उपलब्ध असलेले स्थान, तारीख आणि टाइमफ्रेम निवडू शकता. तुमची अपॉइंटमेंट कन्फर्म करून आम्ही 1 व्यावसायिक दिवसात तुमच्याशी संपर्क साधू. कृपया अपॉइंटमेंट कन्फर्मेशन कम्युनिकेशनमध्ये नमूद केलेल्या तारखेला आणि वेळेवर प्री-हायर इव्हेंटच्या ठिकाणी या. आम्ही तुम्हाला लवकरच भेटण्यास उत्सुक आहोत.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "स्थान",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "कृपया स्थान निवडा.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "तारीख",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "कृपया किमान एक तारीख निवडा.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "वेळ",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "कृपया किमान एक वेळ श्रेणी निवडा.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "प्राधान्ये सेव्ह करा",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "जर तुम्हाला मागील पृष्ठावर परत जायचे असेल आणि उपलब्ध स्लॉट निवडायचा असेल",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "येथे क्लिक करा.",
+      "note" : "Text for nhe preference click here link"
     }
   }
 }

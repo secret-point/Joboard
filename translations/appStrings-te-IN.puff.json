@@ -2699,6 +2699,38 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "ఎంపికను నిర్ధారించండి",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "మీ కోసం పని చేసే ఎంపిక కనిపించలేదా?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "మీరు మీ ఈవెంట్ ప్రాధాన్యతలను సమర్పించవచ్చు మరియు మేము మీ కోసం పని చేసే సమయాన్ని కనుగొన్నప్పుడు మేము మిమ్మల్ని సంప్రదిస్తాము.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "మీ ముందస్తు నియామక ఈవెంట్ ప్రాధాన్యతలను ఎంచుకోండి",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "మీకు యాక్టివ్ జాబ్ అప్లికేషన్ ఉంది",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "మీరు ఇప్పటికే యాక్టివ్ జాబ్ అప్లికేషన్‌ని కలిగి ఉన్నారు. మీరు ఒకేసారి ఒక యాక్టివ్ అప్లికేషన్‌ను మాత్రమే కలిగి ఉండవచ్చు. మీరు ఈ దరఖాస్తును సమర్పించినట్లయితే, మీ ప్రస్తుత దరఖాస్తు ఉపసంహరించబడుతుంది.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "మీ అప్లికేషన్‌ను మళ్ళీ ప్రారంభించడానికి లేదా చూడటానికి, \"డాష్‌బోర్డ్‌కి వెళ్లు\"పై క్లిక్ చేయండి. ఈ అప్లికేషన్‌తో కొనసాగడానికి, \"కొనసాగించు\"పై క్లిక్ చేయండి",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "డాష్‌బోర్డ్‌కి వెళ్లండి",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "కొనసాగించండి",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

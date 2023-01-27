@@ -2700,6 +2700,54 @@
       "value" : "Confirmez la sélection",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Retour",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Précisez la disponibilité de votre rendez-vous de préembauche",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Vous pouvez sélectionner un emplacement, une date et une plage horaire pour lesquels vous êtes disponible. Nous vous contacterons dans un délai d’un jour ouvrable pour confirmer votre rendez-vous. Veuillez vous présenter au lieu de l’événement de préembauche à la date et à l’heure indiquées dans le message de confirmation du rendez-vous. Nous avons hâte de vous revoir bientôt.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Emplacement",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Veuillez sélectionner l’emplacement.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Date",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Veuillez sélectionner au moins une date.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Heure",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Veuillez sélectionner au moins une plage horaire.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Enregistrer les préférences",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Si vous souhaitez revenir à la page précédente et sélectionner un créneau horaire disponible",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "cliquez ici.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "Aucune option ne vous convient?",
       "note" : "Text for nhe preference card title"
@@ -2711,6 +2759,26 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Sélectionnez vos préférences relatives à l’événement avant l’embauche",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Vous avez une demande d’emploi active",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Vous avez déjà une demande d’emploi active. Vous ne pouvez avoir qu’une seule demande active à la fois. Si vous soumettez cette demande, votre demande existante sera retirée.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Pour reprendre ou voir votre demande, cliquez sur « Accéder au tableau de bord ». Pour continuer avec cette demande, cliquez sur « Continuer »",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Accéder au tableau de bord",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Continuer",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

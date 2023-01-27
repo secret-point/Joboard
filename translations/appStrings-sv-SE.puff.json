@@ -2699,6 +2699,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Bekräfta val",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Tillbaka",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Ange när du är tillgänglig för inför-anställning",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Du kan välja en plats, ett datum och en tidsperiod där du är tillgänglig. Vi kommer att kontakta dig inom 1 arbetsdag och bekräfta din bokning. Var god ankom till platsen för evenemanget inför-anställning på utsatt datum och tid som anges i bekräftelsemeddelandet. Vi ser fram emot att träffa dig snart.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Plats",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Välj plats.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Datum",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Välj minst ett datum.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Tid",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Välj minst ett tidsintervall.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Spara preferenser",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Om du vill gå tillbaka till föregående sida och välja en ledig tid",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "klicka här.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Ser du inte något alternativ som passar dig?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Du kan skicka in dina evenemangspreferenser så kontaktar vi dig när vi hittar en tid som passar dig.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Välj dina preferenser för evenemanget inför anställning",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

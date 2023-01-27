@@ -2699,6 +2699,18 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmer la sélection",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Vous ne trouvez pas d’option qui vous convient ?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Vous pouvez envoyer vos préférences en matière d’événements, et nous vous contacterons dès que nous trouverons une heure qui vous convient.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Sélectionnez vos préférences en matière d’événements préalables à l’embauche",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

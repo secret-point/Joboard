@@ -2711,6 +2711,26 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "채용 전 이벤트 선호 사항 선택",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "활성 상태인 입사 지원서가 있습니다.",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "이미 활성 상태인 입사 지원서가 있습니다. 한 번에 하나의 지원서만 활성화할 수 있습니다. 이 지원서를 제출하면 기존의 지원서는 철회됩니다.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "지원서를 다시 작성하거나 보려면 “대시보드로 이동”을 클릭하세요. 이 지원서 작성을 계속하려면 “계속”을 클릭하세요.",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "대시보드로 이동",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "계속",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

@@ -2699,6 +2699,54 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Confirmar selección",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Volver",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Especifica tu disponibilidad para la cita previa a la contratación",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Puedes seleccionar una ubicación, fecha y plazo en el que estés disponible. Nos comunicaremos contigo dentro de 1 día hábil para confirmar tu cita. Llega a la ubicación del evento previo a la contratación en la fecha y hora especificadas en la comunicación de confirmación de la cita. Esperamos verte pronto.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Ubicación",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Selecciona la ubicación.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Fecha",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Selecciona al menos una fecha.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Hora",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Selecciona al menos un intervalo.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Guardar preferencias",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Si quieres volver a la página anterior y seleccionar un horario disponible,",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "haz clic aquí.",
+      "note" : "Text for nhe preference click here link"
     }
   }
 }

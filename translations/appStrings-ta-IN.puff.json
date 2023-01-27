@@ -2699,6 +2699,66 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "தேர்வை உறுதிப்படுத்துக",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "பின்செல்",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "நேர்காணலுக்கு ஏற்ற நேரத்தைக் குறிப்பிடுங்கள்",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "உங்களுக்கு ஏற்ற இடம், தேதி மற்றும் கால வரம்பை நீங்கள் தேர்ந்தெடுக்கலாம். உங்கள் முன்பதிவை உறுதிசெய்து 1 வணிக நாளுக்குள் உங்களைத் தொடர்புகொள்வோம். முன்பதிவை உறுதிப்படுத்தி நாங்கள் அனுப்பிய தகவல்தொடர்பிலுள்ள தேதி மற்றும் நேரத்தில் நேர்காணல் நடைபெறும் இடத்திற்கு வரவும். விரைவில் சந்திப்போம்.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "இடம்",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "இடத்தைத் தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "தேதி",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "குறைந்தது ஒரு தேதியையாவது தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "நேரம்",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "குறைந்தது ஒரு நேர வரம்பையாவது தேர்ந்தெடுக்கவும்.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "விருப்பத்தேர்வுகளைச் சேமி",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "முந்தைய பக்கத்திற்குச் செல்ல விரும்பினால், உங்களுக்கு ஏற்ற நேர வரம்பைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "இங்கே கிளிக் செய்யவும்.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "உங்களுக்கு ஏற்ற நேரம் காட்டப்படவில்லையா?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "உங்களுக்குச் சரிபட்டுவரும் நேரத்தையும் நீங்கள் சமர்ப்பிக்கலாம். உங்களுக்குப் பொருத்தமான நேரத்தை நாங்கள் கண்டறியும்போது உங்களைத் தொடர்புகொள்வோம்.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "பணியமர்த்தலுக்கு முன்பான நிகழ்வுக்கான நேரத்தைத் தேர்ந்தெடுக்கவும்",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }
