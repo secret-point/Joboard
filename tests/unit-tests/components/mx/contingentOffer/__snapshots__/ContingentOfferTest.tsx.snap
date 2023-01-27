@@ -348,6 +348,9 @@ exports[`ContingentOffer should match snapshot 1`] = `
       </DebouncedButton>
     </Col>
   </Col>
-  <ThirdPartyTracking />
+  <ThirdPartyTracking
+    appCastEventId={2}
+    jobId="JOB-US-0000001234"
+  />
 </Col>
 `;

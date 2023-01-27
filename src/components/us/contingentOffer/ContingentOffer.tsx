@@ -30,7 +30,6 @@ import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { ThirdPartyTracking } from "../../customerTracking/ThirdPartyTracking";
-import { pushAppCastEvent } from "../../customerTracking/appCast";
 
 interface MapStateToProps {
   job: JobState;
@@ -69,7 +68,6 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   useEffect(() => {
     if (jobId) {
       jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
-      pushAppCastEvent(APP_CAST_EVENT_NUMBER.CONTINGENT_OFFER, jobId);
     }
   }, [jobDetail, jobId]);
 
@@ -252,7 +250,8 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
           </DebouncedButton>
         </Col>
       </Col>
-      <ThirdPartyTracking />
+      {jobDetail &&
+        <ThirdPartyTracking jobId={jobDetail.jobId} appCastEventId={APP_CAST_EVENT_NUMBER.CONTINGENT_OFFER} />}
     </Col>
   );
 };

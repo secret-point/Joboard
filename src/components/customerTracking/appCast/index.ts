@@ -6,6 +6,8 @@ const pushAppCastDataLayer = (event: AppCastEventType) => {
     console.log("appCast event", event);
   }
 
+  log("[3Pixels] appCast script load, pushing event", event, LoggerType.INFO);
+
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   window.acDataLayer = window.acDataLayer || [];
@@ -24,9 +26,22 @@ export const pushAppCastEvent = (event: number, jobId: string, jobSeekerId?: str
   if (jobSeekerId) {
     appCastEvent.jsid = jobSeekerId;
   }
-  window.addEventListener("appCastLoaded", () => {
-    log("[3Pixels] appCast script load, pushing event", appCastEvent, LoggerType.INFO);
 
+  const script = document.querySelector("#appCastScript");
+
+  if (!script) {
+    const appCastScript = document.createElement("script");
+    appCastScript.async = true;
+    appCastScript.src ="https://click.appcast.io/pixels/wfs-8984.js?ent=387";
+    appCastScript.type = "text/javascript";
+    appCastScript.id = "appCastScript";
+
+    appCastScript.onload = () => {
+      pushAppCastDataLayer(appCastEvent);
+    };
+    document.body.appendChild(appCastScript);
+  } else {
     pushAppCastDataLayer(appCastEvent);
-  });
+  }
 };
+

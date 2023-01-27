@@ -156,6 +156,9 @@ exports[`ThankYou should match snapshot 1`] = `
       </Row>
     </Col>
   </Card>
-  <ThirdPartyTracking />
+  <ThirdPartyTracking
+    appCastEventId={3}
+    jobId="JOB-US-0000001234"
+  />
 </Col>
 `;

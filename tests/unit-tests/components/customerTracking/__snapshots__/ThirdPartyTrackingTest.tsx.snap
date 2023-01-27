@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThirdPartyTracking should match snapshot on bb 1`] = `
-<ThirdPartyTracking>
+<ThirdPartyTracking
+  appCastEventId={2}
+  jobId="JOB-US-0000001234"
+>
   <HelmetWrapper
     defer={true}
     encodeSpecialCharacters={true}

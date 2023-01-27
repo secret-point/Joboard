@@ -55,8 +55,8 @@ import DebouncedButton from "../../common/DebouncedButton";
 import FormInputText from "../../common/FormInputText";
 import Image from "../../common/Image";
 import { thankYouPageRedirectTextBanner } from "../../../countryExpansionConfig";
-import { pushAppCastEvent } from "../../customerTracking/appCast";
 import ThirdPartyTracking from "../../customerTracking/ThirdPartyTracking";
+
 interface MapStateToProps {
   application: ApplicationState;
   candidate: CandidateState;
@@ -106,7 +106,6 @@ export const ThankYou = (props: MapStateToProps) => {
   useEffect(() => {
     if (jobId) {
       jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
-      pushAppCastEvent(APP_CAST_EVENT_NUMBER.THANK_YOU, jobId);
     }
   }, [jobDetail, jobId]);
 
@@ -331,7 +330,9 @@ export const ThankYou = (props: MapStateToProps) => {
           </Row>
         </Col>
       </Card>
-      <ThirdPartyTracking />
+      {jobDetail &&
+        <ThirdPartyTracking jobId={jobDetail.jobId} appCastEventId={APP_CAST_EVENT_NUMBER.THANK_YOU} />
+      }
     </Col>
   );
 };
