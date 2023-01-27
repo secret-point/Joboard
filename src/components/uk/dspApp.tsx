@@ -22,8 +22,6 @@ import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
 import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
-import JobOpportunity from "../uk/jobOpportunity/JobOpportunity";
-import Nhe from "../uk/nhe/Nhe";
 import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
 import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
@@ -37,7 +35,7 @@ import WotcComplete from "../us/wotc/WotcComplete";
 import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
 import NhePreferences from "../common/nhe/NhePreferences";
 
-// Pages that have been migrated to MX
+// Pages that have been migrated to UK
 import AdditionalInformation from "./bgc/BackgroundCheck";
 import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
@@ -45,6 +43,8 @@ import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
 import PreConsent from "../us/preConsent/PreConsent";
 import Assessment from "./assessment/Assessment";
+import JobOpportunity from "./jobOpportunity/JobOpportunity";
+import Nhe from "./nhe/Nhe";
 
 interface MapStateToProps {
   appConfig: AppConfig;
