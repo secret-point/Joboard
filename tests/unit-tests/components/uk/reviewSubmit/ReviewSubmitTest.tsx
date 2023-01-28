@@ -14,6 +14,7 @@ import {
 } from "../../../../test-utils/test-data";
 import * as utilHelpers from "../../../../../src/utils/helper";
 import { CountryCode } from "../../../../../src/utils/enums/common";
+import { Application } from "../../../../../src/utils/types/common";
 
 const getCountryCodeSpy = jest.spyOn(utilHelpers, "getCountryCode");
 
@@ -46,6 +47,38 @@ describe("ReviewSubmit", () => {
         candidate={candidateState}
         job={TEST_JOB_STATE}
         application={TEST_APPLICATION_STATE}
+        schedule={TEST_SCHEDULE_STATE}
+      />);
+
+    expect(shallowWrapper).toMatchSnapshot();
+  });
+
+  it("should match snapshot - with nhe preference", () => {
+    const candidateState: any = TEST_CANDIDATE_STATE;
+    candidateState.results.candidateData.selfIdentificationInfo = {
+      ...TEST_CANDIDATE.selfIdentificationInfo,
+      pronoun: "He",
+      ethnicity: "Indigenous",
+      gender: "Male"
+    };
+
+    // @ts-ignore
+    const shallowWrapper = shallow(
+      <ReviewSubmit
+        candidate={candidateState}
+        job={TEST_JOB_STATE}
+        application={{
+          ...TEST_APPLICATION_STATE,
+          results: {
+            ...TEST_APPLICATION_STATE.results,
+            nhePreference: {
+              locations: ["test location"],
+              preferredNHETimeIntervals: ["4AM-9AM", "9AM-10AM"],
+              preferredNHEDates: ["Wednesday Jan 15th 2022", "Friday April 18 2000"]
+            },
+            nheAppointment: null
+          } as Application
+        }}
         schedule={TEST_SCHEDULE_STATE}
       />);
 

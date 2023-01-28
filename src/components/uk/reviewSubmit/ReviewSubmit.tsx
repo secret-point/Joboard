@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { IconPencil } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { Text } from "@amzn/stencil-react-components/text";
+import { H5, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -29,9 +29,10 @@ import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
-  getCountryCode, getCountryMappedFeatureFlag,
-  getLocale, isBrokenApplicationFeatureEnabled,
-  reverseMappingTranslate
+  getCountryCode,
+  getCountryMappedFeatureFlag,
+  getLocale,
+  isBrokenApplicationFeatureEnabled
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -59,7 +60,6 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const applicationData = application.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
-  const countryCode = getCountryCode();
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -126,8 +126,6 @@ export const ReviewSubmit = (props: MapStateToProps) => {
     }
   };
 
-  const fullName = `${candidateData?.firstName || ""}${candidateData?.lastName ? ` ${candidateData?.lastName}`: ""}`;
-
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
       <Row gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
@@ -140,101 +138,167 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         {t("BB-ReviewSubmit-header-title-text", "Review and Submit")}
       </Text>
 
-      <div>
-        <Col gridGap="S300">
-          <Text fontSize="T300">
-            {t("BB-ReviewSubmit-job-details-section-title-text", "Job Details")}
-          </Text>
-          {scheduleDetail && <ScheduleDetails scheduleDetail={scheduleDetail} />}
-        </Col>
-      </div>
+      <Col gridGap="S400">
+        <div>
+          <Col gridGap="S300" id="jobDetailSection">
+            <Text fontSize="T300">
+              {t("BB-ReviewSubmit-job-details-section-title-text", "Job Details")}
+            </Text>
+            {scheduleDetail && <ScheduleDetails scheduleDetail={scheduleDetail} />}
+          </Col>
+        </div>
 
-      <div>
-        <Row alignItems="center" justifyContent="space-between">
-          <Text fontSize="T300">
-            {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
-          </Text>
+        <div id="additionalInfoSection">
+          <Row alignItems="center" justifyContent="space-between">
+            <Text fontSize="T300">
+              {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
+            </Text>
 
-          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
-            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
-          </Button>
-        </Row>
+            <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
+              {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+            </Button>
+          </Row>
 
-        <Col gridGap="S300">
-          <Text fontSize="T100" fontWeight="bold">
-            {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
-          </Text>
+          <Col gridGap="S300">
+            <Text fontSize="T100" fontWeight="bold">
+              {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
+            </Text>
 
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-previous-full-name-text", "Previous full name:")} {fullName}
-          </Text>
+            {candidateData?.additionalBackgroundInfo && (
+              <>
+                <Text fontSize="S100">
+                  {`Address: ${candidateData.additionalBackgroundInfo.address.addressLine1}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`City: ${candidateData.additionalBackgroundInfo.address.city}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`Postal code: ${candidateData.additionalBackgroundInfo.address.zipcode}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`Country: ${candidateData.additionalBackgroundInfo.address.country}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`National ID Type: ${candidateData.additionalBackgroundInfo.governmentIdType}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`National ID Number: ${candidateData.additionalBackgroundInfo.idNumber}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`Date of birth: ${candidateData.additionalBackgroundInfo.dateOfBirth}`}
+                </Text>
+                <Text fontSize="S100">
+                  {`Have you worked with Amazon in the past?: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}
+                </Text>
+              </>
+            )}
+            <Text color={CommonColors.Neutral70} fontSize="S100">
+              {"* If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\"."}
+            </Text>
+          </Col>
+        </div>
 
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-curp-id-text", "CURP ID:")} {candidateData?.additionalBackgroundInfo.idNumber}
-          </Text>
+        {
+          applicationData?.nheAppointment && (
+            <div id="nheAppointmentSection">
+              <Row alignItems="center" justifyContent="space-between">
+                <Text fontSize="T300">
+                  {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
+                </Text>
 
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-job-details-section-date-of-birth-text", "Date of birth:")} {formatDate(candidateData?.additionalBackgroundInfo.dateOfBirth, { displayFormat: "Do MMM YYYY" })}
-          </Text>
-        </Col>
-      </div>
+                <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
+                  {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+                </Button>
+              </Row>
+              <Col gridGap="S300">
+                <Row gridGap={5}>
+                  <Text fontSize="T100">Date:</Text>
+                  <Text fontSize="T100">
+                    {formatDate(nheAppointment?.dateWithoutFormat, {
+                      defaultDateFormat: "DD/MM/yyyy",
+                      displayFormat: "dddd, MMM Do YYYY"
+                    })}
+                  </Text>
+                </Row>
+                <Row gridGap={5}>
+                  <Text fontSize="T100">Time:</Text>
+                  <Text fontSize="T100">
+                    {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
+                  </Text>
+                </Row>
 
-      <div>
-        <Row alignItems="center" justifyContent="space-between">
-          <Text fontSize="T300">
-            {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
-          </Text>
+                <Row gridGap={5}>
+                  <Text fontSize="T100">Meeting details:</Text>
+                  <Text fontSize="T100">
+                    {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
+                  </Text>
+                </Row>
+                <Row padding={{ top: "S100" }}>
+                  <Text fontSize="T100">
+                    {t("BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text", "We look forward to seeing you at the time above.")}
+                  </Text>
+                </Row>
+              </Col>
+            </div>
+          )
+        }
+        {
+          applicationData?.nhePreference && (
+            <div id="nhePreferenceSection">
+              <Row alignItems="center" justifyContent="space-between">
+                <Text fontSize="T300">
+                  {t("BB-ReviewSubmit-nhe-preference-section-title-text", "Your pre-hire appointment availability")}
+                </Text>
 
-          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
-            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
-          </Button>
-        </Row>
-        <Col gridGap="S300">
-          <Text>
-            {formatDate(nheAppointment?.dateWithoutFormat, {
-              defaultDateFormat: "DD/MM/yyyy",
-              displayFormat: "dddd, MMM Do YYYY"
-            })}
-          </Text>
+                <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.NHE)}>
+                  {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+                </Button>
+              </Row>
+              <Col gridGap="S300">
+                <Col>
+                  <H5 fontWeight="bold" fontSize="S100">City</H5>
+                  <ul>
+                    {
+                      applicationData.nhePreference?.locations.map(location => (
+                        <li key={location}>
+                          <Text fontSize="S100">{location}</Text>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </Col>
+                <Col>
+                  <H5 fontWeight="bold" fontSize="S100">Dates</H5>
+                  <ul>
+                    {
+                      applicationData.nhePreference?.preferredNHEDates.map(date => (
+                        <li key={date}>
+                          <Text fontSize="S100">{date}</Text>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </Col>
 
-          <Text fontSize="T100">
-            {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}`}
-          </Text>
+                <Col>
+                  <H5 fontWeight="bold" fontSize="S100">Time</H5>
+                  <ul>
+                    {
+                      applicationData.nhePreference?.preferredNHETimeIntervals.map(timeSlot => (
+                        <li key={timeSlot}>
+                          <Text fontSize="S100">{timeSlot}</Text>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </Col>
+              </Col>
+            </div>
+          )
+        }
+      </Col>
 
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
-          </Text>
-
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text", "We look forward to seeing you at the time above.")}
-          </Text>
-        </Col>
-      </div>
-
-      <div>
-        <Row alignItems="center" justifyContent="space-between">
-          <Text fontSize="T300">
-            {t("BB-ReviewSubmit-selfId-section-title-text", "Voluntary Self-identification")}
-          </Text>
-
-          <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.SELF_IDENTIFICATION)}>
-            {t("BB-ReviewSubmit-edit-button-text", "Edit")}
-          </Button>
-        </Row>
-        <Col gridGap="S300">
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-equal-opportunity-text", "Equal Opportunity:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.gender, countryCode)}
-            {candidateData?.selfIdentificationInfo?.pronoun ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.pronoun, countryCode)}` : ""}
-            {candidateData?.selfIdentificationInfo.ethnicity ? `, ${reverseMappingTranslate(candidateData?.selfIdentificationInfo.ethnicity, countryCode)}` : ""}
-          </Text>
-
-          <Text fontSize="T100">
-            {t("BB-ReviewSubmit-selfId-section-disability-status-text", "Disability Status:")} {reverseMappingTranslate(candidateData?.selfIdentificationInfo.disability)}
-          </Text>
-        </Col>
-      </div>
-
-      <Col gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
+      <Col margin={{ top: "S300" }} gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
         <DebouncedButton variant={ButtonVariant.Primary} onClick={handleSubmitApplication}>
           {t("BB-ReviewSubmit-submit-application-button-text", "Submit application")}
         </DebouncedButton>

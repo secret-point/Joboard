@@ -674,6 +674,7 @@ export interface NHEPreferences {
   preferredNHEDates: string[];
   preferredNHETimeIntervals: string[];
   preferenceSelectedOn: string;
+  locations: string[];
 }
 
 export interface JobSelected {
