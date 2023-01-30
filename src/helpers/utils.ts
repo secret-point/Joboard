@@ -261,6 +261,27 @@ export const requisitionIdSanitizer = (jobId: string) => {
   return sanitizedJobId;
 };
 
+/*
+For external access to Career Site testing stage (API Call or UI redirect),
+Add bypasscorp = true to url parameter to avoid WAF rule blocking.
+- return parameter string if parameter exists in url, and need to carry over.
+- return null if parameter doesn't exist in url.
+
+Design doc: https://quip-amazon.com/Wpz8AdYEjbu8/Block-careersiteTest-stages-traffic-from-public-access
+ */
+const getBypassCropParam = (notationOverride?: string): string | null => {
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession ? JSON.parse(queryParamsInSession) : {};
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams);
+  const bypassString = "&bypasscorp=true";
+  const match = queryStringFor3rdParty.match(bypassString);
+
+  if (!match) return null;
+  if (notationOverride) return `${notationOverride}${bypassString.substring(1)}`;
+
+  return bypassString;
+};
+
 export const injectCsNavAndFooter = (CSDomain: string) => {
   const topNav = document.createElement("div");
   topNav.id = "hvh-bb-header";
@@ -280,7 +301,13 @@ export const injectCsNavAndFooter = (CSDomain: string) => {
   link.href=`${CSDomain}/app/main.prod.css`;
   head.appendChild(script);
   head.appendChild(link);
-  fetch(`${CSDomain}/amabot-rest?page=common&res=footer&locale=${getLocale()}`)
+
+  let footerUrl = `${CSDomain}/amabot-rest?page=common&res=footer&locale=${getLocale()}`;
+
+  const bypassCorp = getBypassCropParam();
+  if (bypassCorp) footerUrl += bypassCorp;
+
+  fetch(footerUrl)
     .then((res) => res.json())
     .then((body) => {
       document.getElementById("hvh-bb-footer")!.innerHTML = body.contentMap.footer.bodyContent;
@@ -321,15 +348,9 @@ export const redirectToLoginCSDS = () => {
   const CSDomain = state?.appConfig?.results?.envConfig?.CSDomain;
   const redirectUrl = window.location.href;
 
-  // To pass bypasscorp parameter to career site login.
-  const queryParamsInSession = window.sessionStorage.getItem("query-params");
-  const queryParams = queryParamsInSession ? JSON.parse(queryParamsInSession) : {};
-  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams, "?");
-  const bypassString = "bypasscorp=true";
-  const match = queryStringFor3rdParty.match(bypassString);
-
-  const url = match ?
-    `${CSDomain}/app?${bypassString}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}` :
+  const bypassCorp = getBypassCropParam("?");
+  const url = bypassCorp ?
+    `${CSDomain}/app${bypassCorp}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}` :
     `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
 
   window.location.assign(url);
