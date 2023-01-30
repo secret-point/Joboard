@@ -190,7 +190,7 @@ export const get3rdPartyFromQueryParams = (queryParams: any, notationOverride?: 
   let queryString = "";
 
   // These keys are 3rd Party params we allowed to pass with redirectUrl after login.
-  const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "pandocandidateid", "piq_source", "ikey", "akey", "tid"];
+  const includedKeyList = ["cmpid", "ccuid", "ccid", "etd", "piq_uuid", "pandocampaignid", "pandocandidateid", "piq_source", "ikey", "akey", "tid", "bypasscorp"];
 
   Object.keys(queryParams).forEach((key) => {
     if (includedKeyList.includes(key)) {
@@ -320,7 +320,18 @@ export const redirectToLoginCSDS = () => {
   const state = store.getState();
   const CSDomain = state?.appConfig?.results?.envConfig?.CSDomain;
   const redirectUrl = window.location.href;
-  const url = `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+
+  // To pass bypasscorp parameter to career site login.
+  const queryParamsInSession = window.sessionStorage.getItem("query-params");
+  const queryParams = queryParamsInSession ? JSON.parse(queryParamsInSession) : {};
+  const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams, "?");
+  const bypassString = "bypasscorp=true";
+  const match = queryStringFor3rdParty.match(bypassString);
+
+  const url = match ?
+    `${CSDomain}/app?${bypassString}#/login?redirectUrl=${encodeURIComponent(redirectUrl)}` :
+    `${CSDomain}/app#/login?redirectUrl=${encodeURIComponent(redirectUrl)}`;
+
   window.location.assign(url);
 };
 
