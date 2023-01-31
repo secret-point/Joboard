@@ -45,6 +45,7 @@ import store from "../store/store";
 import {
   CreateApplicationErrorMessage,
   GetApplicationErrorMessage,
+  GetApplicationsByCandidateIdErrorMessage,
   UpdateApplicationErrorMessage
 } from "../utils/api/errorMessages";
 import {
@@ -58,6 +59,7 @@ import {
 import { SelectedScheduleForUpdateApplication } from "../utils/apiTypes";
 import {
   CREATE_APPLICATION_ERROR_CODE,
+  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
   QUERY_PARAMETER_NAME,
   UPDATE_APPLICATION_API_TYPE,
@@ -371,7 +373,7 @@ export const GetApplicationListEpic = ( action$: Observable<any> ) => {
               action.onError(error);
             }
 
-            const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            const errorMessage = GetApplicationsByCandidateIdErrorMessage[error.errorCode] || GetApplicationsByCandidateIdErrorMessage[GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE.UNABLE_TO_GET_APPLICATIONS];
             setEpicApiCallErrorMessage(errorMessage);
 
             return of(actionGetApplicationListFailed(error));

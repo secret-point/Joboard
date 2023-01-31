@@ -2763,7 +2763,7 @@
         },
         "BB-consent-existing-application-notice-title": {
             "note" : "Text for consent existing application notice title",
-            "value" : "You Have an active job application"
+            "value" : "You have an active job application"
         },
         "BB-consent-existing-application-notice-text1": {
             "note" : "Text for consent existing application notice text1",
@@ -2780,6 +2780,18 @@
         "BB-consent-existing-app-continue-btn": {
             "note" : "Text for consent existing application continue button",
             "value" : "Continue"
+        },
+        "BB-get-applications-by-candidate-id-error-message-missing-fields": {
+            "note": "Error message when trying to get a list of applications without passing candidate Id",
+            "value":  "Candidate Id is required to get a list of applications."
+        },
+        "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized": {
+            "note": "Error message when candidate is trying to get a list of applications of another candidate",
+            "value": "You have no access to get a list of applications for this user."
+        },
+        "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications": {
+            "note": "Error message when get applications by candidate Id can not list applications",
+            "value": "Unable to list applications."
         }
     }
 }

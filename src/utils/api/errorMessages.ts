@@ -1,5 +1,6 @@
 import {
   CREATE_APPLICATION_ERROR_CODE,
+  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
   GET_CANDIDATE_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
@@ -62,6 +63,20 @@ export const GetApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
     translationKey: "BB-get-application-error-message-internal-server-error",
     value: "Something went wrong with the server. Please try again or refresh the browser."
   }
+};
+export const GetApplicationsByCandidateIdErrorMessage: {[key: string]: ApiErrorMessage} = {
+  [GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE.MISSING_REQUIRED_FIELDS]: {
+    translationKey: "BB-get-applications-by-candidate-id-error-message-missing-fields",
+    value: "Candidate Id is required to get a list of applications."
+  },
+  [GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE.CANDIDATE_NOT_AUTHORIZED]: {
+    translationKey: "BBB-get-applications-by-candidate-id-error-message-candidate-not-authorized",
+    value: "You have no  access to get a list of applications for this user."
+  },
+  [GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE.UNABLE_TO_GET_APPLICATIONS]: {
+    translationKey: "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications",
+    value: "Unable to list applications."
+  },
 };
 
 export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } = {
