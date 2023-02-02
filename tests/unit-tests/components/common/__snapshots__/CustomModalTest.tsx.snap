@@ -7,52 +7,40 @@ exports[`Custom Modal should match spanshot with modal close 1`] = `
   isScrollable={true}
   shouldCloseOnClickOutside={true}
 >
-  <Col
-    alignItems="center"
-    backgroundColor="neutral0"
-    padding={
-      Object {
-        "bottom": "S600",
-        "left": "S600",
-        "top": "S400",
-      }
-    }
+  <ModalContent
+    maxWidth="50vw"
+    titleText=""
   >
     <Col
-      alignItems="flex-end"
-      padding={
-        Object {
-          "right": "S400",
-        }
-      }
+      backgroundColor="neutral0"
       width="100%"
     >
-      <Row
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        tabIndex={0}
+      <Col
+        alignItems="flex-end"
+        width="100%"
       >
-        <IconCross
-          color="#1768C9"
-          display="block"
-          size={32}
-          title="Close Modal"
-        />
-      </Row>
+        <Row
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          <IconCross
+            color="#1768C9"
+            display="block"
+            size={32}
+            title="Close Modal"
+          />
+        </Row>
+      </Col>
+      <Col
+        width="100%"
+      >
+        <div>
+          Child props
+        </div>
+      </Col>
     </Col>
-    <Col
-      padding={
-        Object {
-          "right": "S600",
-        }
-      }
-      width="100%"
-    >
-      <div>
-        Child props
-      </div>
-    </Col>
-  </Col>
+  </ModalContent>
 </Modal>
 `;
 
@@ -63,51 +51,39 @@ exports[`Custom Modal should match spnashot with modal open 1`] = `
   isScrollable={true}
   shouldCloseOnClickOutside={true}
 >
-  <Col
-    alignItems="center"
-    backgroundColor="neutral0"
-    padding={
-      Object {
-        "bottom": "S600",
-        "left": "S600",
-        "top": "S400",
-      }
-    }
+  <ModalContent
+    maxWidth="50vw"
+    titleText=""
   >
     <Col
-      alignItems="flex-end"
-      padding={
-        Object {
-          "right": "S400",
-        }
-      }
+      backgroundColor="neutral0"
       width="100%"
     >
-      <Row
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        tabIndex={0}
+      <Col
+        alignItems="flex-end"
+        width="100%"
       >
-        <IconCross
-          color="#1768C9"
-          display="block"
-          size={32}
-          title="Close Modal"
-        />
-      </Row>
+        <Row
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          <IconCross
+            color="#1768C9"
+            display="block"
+            size={32}
+            title="Close Modal"
+          />
+        </Row>
+      </Col>
+      <Col
+        width="100%"
+      >
+        <div>
+          Child props
+        </div>
+      </Col>
     </Col>
-    <Col
-      padding={
-        Object {
-          "right": "S600",
-        }
-      }
-      width="100%"
-    >
-      <div>
-        Child props
-      </div>
-    </Col>
-  </Col>
+  </ModalContent>
 </Modal>
 `;

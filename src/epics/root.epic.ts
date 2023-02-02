@@ -6,7 +6,8 @@ import {
   GetApplicationListEpic,
   GetApplicationSuccessEpic,
   UpdateApplicationDSEpic,
-  UpdateWorkflowStepNameEpic
+  UpdateWorkflowStepNameEpic,
+  WithdrawApplicationEpic
 } from "./application.epic";
 import { GetCandidateInfoEpic } from "./candidate.epic";
 import { JobEpic } from "./job.epic";
@@ -31,7 +32,8 @@ const rootEpic = combineEpics(
   UpdateWotcStatusEpic,
   ValidateAmazonLoginIDEpic,
   GetPossibleNhePreferences,
-  GetApplicationListEpic
+  GetApplicationListEpic,
+  WithdrawApplicationEpic
 );
 
 export default rootEpic;

@@ -49,6 +49,7 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
     case NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS:
     case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES:
     case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST:
+    case APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION:
       return {
         ...state,
         isLoading: true
@@ -94,6 +95,7 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
     case NHE_ACTION_TYPES.GET_POSSIBLE_NHE_PREFERENCES_FAILED:
     case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_SUCCESS:
     case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED:
+    case APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_FAILED:
       return {
         ...state,
         isLoading: action.loadingStatus? action.loadingStatus : false

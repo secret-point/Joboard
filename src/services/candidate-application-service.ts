@@ -7,6 +7,7 @@ import {
 } from "../@types/candidate-application-service-requests";
 import { CreateApplicationResponse } from "../utils/api/types";
 import { GetApplicationListRequest } from "../utils/apiTypes";
+import { Application } from "../utils/types/common";
 
 export default class CandidateApplicationService {
 
@@ -107,6 +108,29 @@ export default class CandidateApplicationService {
 
     return {
       data: candidateApplications
+    };
+  }
+
+  async withdrawApplication(applicationList: Application[]) {
+    const withdrawnApps: Application[] = [];
+    try {
+      for (const application of applicationList) {
+        const response = await this.axiosInstance.put(
+          `/withdraw-application/${application.applicationId}`
+        );
+
+        if (response.data.errorCode || !response.data.data) {
+          return response.data;
+        }
+        withdrawnApps.push(response.data.data);
+      }
+    } catch (err) {
+      console.error("error response", err);
+      return err;
+    }
+
+    return {
+      data: withdrawnApps
     };
   }
 }

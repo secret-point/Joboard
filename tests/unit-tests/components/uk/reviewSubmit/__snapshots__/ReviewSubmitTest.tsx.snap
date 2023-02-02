@@ -34,78 +34,78 @@ exports[`ReviewSubmit should match snapshot - with nhe preference 1`] = `
   <Col
     gridGap="S400"
   >
-    <div>
-      <Col
-        gridGap="S300"
-        id="jobDetailSection"
+    <Col
+      gridGap="S300"
+      id="jobDetailSection"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
       >
-        <Text
-          font="primary"
-          fontSize="T300"
-          hyphens="none"
-        >
-          Job Details
-        </Text>
-        <ScheduleDetails
-          scheduleDetail={
-            Object {
-              "address": "38811 Cherry Street",
-              "basePay": 6,
-              "basePayL10N": "",
-              "bgcVendorName": "FADV",
-              "briefJobDescription": "briefJobDescription briefJobDescription",
-              "city": "Newark",
-              "contingencyTat": 0,
-              "currencyCode": "USD",
-              "dataSource": "Dragonstone",
-              "distanceL10N": "",
-              "employmentType": "Regular",
-              "employmentTypeL10N": "Regular",
-              "externalJobTitle": "Amazon Grocery Shopper",
-              "financeWeekStartDate": "",
-              "financeWeekStartDateL10N": "",
-              "firstDayOnSite": "2022-10-29",
-              "firstDayOnSiteL10N": "2022-10-29",
-              "geoClusterId": "",
-              "geoClusterName": "",
-              "hireEndDate": "",
-              "hireStartDate": "2022-11-04",
-              "hoursPerWeek": 16,
-              "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
-              "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
-              "jobDescription": "jobDescription jobDescription",
-              "jobId": "JOB-US-0000001234",
-              "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
-              "laborDemandAvailableCount": 0,
-              "language": "English",
-              "monthlyBasePay": 1000,
-              "monthlyBasePayL10N": null,
-              "parsedTrainingDate": "01-01-2023",
-              "postalCode": "94560",
-              "priorityRank": 0,
-              "requiredLanguage": Array [
-                "en-US",
-                "es-US",
-              ],
-              "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
-              "scheduleId": "test-schedule-id",
-              "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
-              "scheduleType": "PART_TIME",
-              "scheduleTypeL10N": "",
-              "signOnBonus": 5,
-              "signOnBonusL10N": "$5.00",
-              "siteId": "SITE-OAK5",
-              "state": "CA",
-              "surgePay": 0,
-              "tagLine": "In-store shopping for customer grocery orders.",
-              "totalPayRate": 8.9,
-              "totalPayRateL10N": "$8.90",
-            }
+        Job Details
+      </Text>
+      <ScheduleCard
+        displayOnly={true}
+        scheduleDetail={
+          Object {
+            "address": "38811 Cherry Street",
+            "basePay": 6,
+            "basePayL10N": "",
+            "bgcVendorName": "FADV",
+            "briefJobDescription": "briefJobDescription briefJobDescription",
+            "city": "Newark",
+            "contingencyTat": 0,
+            "currencyCode": "USD",
+            "dataSource": "Dragonstone",
+            "distanceL10N": "",
+            "employmentType": "Regular",
+            "employmentTypeL10N": "Regular",
+            "externalJobTitle": "Amazon Grocery Shopper",
+            "financeWeekStartDate": "",
+            "financeWeekStartDateL10N": "",
+            "firstDayOnSite": "2022-10-29",
+            "firstDayOnSiteL10N": "2022-10-29",
+            "geoClusterId": "",
+            "geoClusterName": "",
+            "hireEndDate": "",
+            "hireStartDate": "2022-11-04",
+            "hoursPerWeek": 16,
+            "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
+            "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
+            "jobDescription": "jobDescription jobDescription",
+            "jobId": "JOB-US-0000001234",
+            "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
+            "laborDemandAvailableCount": 0,
+            "language": "English",
+            "monthlyBasePay": 1000,
+            "monthlyBasePayL10N": null,
+            "parsedTrainingDate": "01-01-2023",
+            "postalCode": "94560",
+            "priorityRank": 0,
+            "requiredLanguage": Array [
+              "en-US",
+              "es-US",
+            ],
+            "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
+            "scheduleId": "test-schedule-id",
+            "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
+            "scheduleType": "PART_TIME",
+            "scheduleTypeL10N": "",
+            "signOnBonus": 5,
+            "signOnBonusL10N": "$5.00",
+            "siteId": "SITE-OAK5",
+            "state": "CA",
+            "surgePay": 0,
+            "tagLine": "In-store shopping for customer grocery orders.",
+            "totalPayRate": 8.9,
+            "totalPayRateL10N": "$8.90",
           }
-        />
-      </Col>
-    </div>
-    <div
+        }
+      />
+    </Col>
+    <Col
+      gridGap="S300"
       id="additionalInfoSection"
     >
       <Row
@@ -117,7 +117,7 @@ exports[`ReviewSubmit should match snapshot - with nhe preference 1`] = `
           fontSize="T300"
           hyphens="none"
         >
-          Background check
+          Additional information
         </Text>
         <Button
           colorScheme="default"
@@ -137,84 +137,93 @@ exports[`ReviewSubmit should match snapshot - with nhe preference 1`] = `
           Edit
         </Button>
       </Row>
-      <Col
-        gridGap="S300"
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
       >
-        <Text
-          font="primary"
-          fontSize="T100"
-          fontWeight="bold"
-          hyphens="none"
+        <Col
+          gridGap="S300"
         >
-          Authorized
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Address: test address line 1
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          City: Test City
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Postal code: 94458
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Country: United States
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          National ID Type: United States - Social Security Number
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          National ID Number: *****9599
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Date of birth: 1988-08-02
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Have you worked with Amazon in the past?: No
-        </Text>
-        <Text
-          color="#56616C"
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          * If you have entered "NO NI" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: "TNDDMMYY".
-        </Text>
-      </Col>
-    </div>
-    <div
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Address: test address line 1
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            City: Test City
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Postal code: 94458
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Country: United States
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Type: United States - Social Security Number
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Number: *****9599
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Date of birth: 1988-08-02
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Have you worked with Amazon in the past?: No
+          </Text>
+          <Row
+            padding={
+              Object {
+                "top": "S300",
+              }
+            }
+          >
+            <Text
+              color="#56616C"
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              * If you have entered "NO NI" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: "TNDDMMYY".
+            </Text>
+          </Row>
+        </Col>
+      </Card>
+    </Col>
+    <Col
+      gridGap="S300"
       id="nhePreferenceSection"
     >
       <Row
@@ -246,109 +255,602 @@ exports[`ReviewSubmit should match snapshot - with nhe preference 1`] = `
           Edit
         </Button>
       </Row>
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
+      >
+        <Col
+          gridGap="S200"
+        >
+          <Col>
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              City
+            </Text>
+            <ul>
+              <li
+                className="review-submit-list-item"
+                key="test location"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  test location
+                </Text>
+              </li>
+            </ul>
+          </Col>
+          <Col>
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Dates
+            </Text>
+            <ul>
+              <li
+                className="review-submit-list-item"
+                key="Wednesday Jan 15th 2022"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  Wednesday Jan 15th 2022
+                </Text>
+              </li>
+              <li
+                className="review-submit-list-item"
+                key="Friday April 18 2000"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  Friday April 18 2000
+                </Text>
+              </li>
+            </ul>
+          </Col>
+          <Col>
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Time
+            </Text>
+            <ul>
+              <li
+                className="review-submit-list-item"
+                key="4AM-9AM"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  4AM-9AM
+                </Text>
+              </li>
+              <li
+                className="review-submit-list-item"
+                key="9AM-10AM"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  9AM-10AM
+                </Text>
+              </li>
+            </ul>
+          </Col>
+        </Col>
+      </Card>
+    </Col>
+  </Col>
+  <CustomModal
+    setShouldOpen={[Function]}
+    shouldOpen={false}
+  >
+    <Col
+      gridGap="S300"
+      padding="S300"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="bold"
+        hyphens="none"
+        margin={0}
+        textAlign="center"
+      >
+        Withdraw existing application?
+      </H4>
       <Col
         gridGap="S300"
+        padding={
+          Object {
+            "top": "S300",
+          }
+        }
       >
-        <Col>
-          <H5
-            color="neutral90"
-            font="primary"
-            fontSize="S100"
-            fontWeight="bold"
-            hyphens="none"
-            margin={0}
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?
+        </Text>
+        <Col
+          gridGap="S400"
+          padding={
+            Object {
+              "top": "S400",
+            }
+          }
+        >
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="secondary"
           >
-            City
-          </H5>
-          <ul>
-            <li
-              key="test location"
-            >
-              <Text
-                font="primary"
-                fontSize="S100"
-                hyphens="none"
-              >
-                test location
-              </Text>
-            </li>
-          </ul>
-        </Col>
-        <Col>
-          <H5
-            color="neutral90"
-            font="primary"
-            fontSize="S100"
-            fontWeight="bold"
-            hyphens="none"
-            margin={0}
+            No, go to existing application
+          </Button>
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="primary"
           >
-            Dates
-          </H5>
-          <ul>
-            <li
-              key="Wednesday Jan 15th 2022"
-            >
-              <Text
-                font="primary"
-                fontSize="S100"
-                hyphens="none"
-              >
-                Wednesday Jan 15th 2022
-              </Text>
-            </li>
-            <li
-              key="Friday April 18 2000"
-            >
-              <Text
-                font="primary"
-                fontSize="S100"
-                hyphens="none"
-              >
-                Friday April 18 2000
-              </Text>
-            </li>
-          </ul>
-        </Col>
-        <Col>
-          <H5
-            color="neutral90"
-            font="primary"
-            fontSize="S100"
-            fontWeight="bold"
-            hyphens="none"
-            margin={0}
-          >
-            Time
-          </H5>
-          <ul>
-            <li
-              key="4AM-9AM"
-            >
-              <Text
-                font="primary"
-                fontSize="S100"
-                hyphens="none"
-              >
-                4AM-9AM
-              </Text>
-            </li>
-            <li
-              key="9AM-10AM"
-            >
-              <Text
-                font="primary"
-                fontSize="S100"
-                hyphens="none"
-              >
-                9AM-10AM
-              </Text>
-            </li>
-          </ul>
+            Yes, Submit new application
+          </Button>
         </Col>
       </Col>
-    </div>
+    </Col>
+  </CustomModal>
+  <Col
+    gridGap="S300"
+    margin={
+      Object {
+        "top": "S300",
+      }
+    }
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <DebouncedButton
+      onClick={[Function]}
+      variant="primary"
+    >
+      Submit application
+    </DebouncedButton>
   </Col>
+</Col>
+`;
+
+exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Row
+    gridGap="S300"
+    padding="S500"
+    style={
+      Object {
+        "background": "#EBF5FD",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    />
+  </Row>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    Review and Submit
+  </Text>
+  <Col
+    gridGap="S400"
+  >
+    <Col
+      gridGap="S300"
+      id="shiftPreferenceSection"
+    >
+      <Row
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          Shift preferences
+        </Text>
+        <Button
+          colorScheme="default"
+          icon={
+            <IconPencil
+              aria-hidden={true}
+              display="block"
+            />
+          }
+          iconPosition="leading"
+          onClick={[Function]}
+          shouldUseResponsiveContent={true}
+          size="default"
+          type="button"
+          variant="tertiary"
+        >
+          Edit
+        </Button>
+      </Row>
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
+      >
+        <Col>
+          <Row
+            alignItems="center"
+            gridGap="S300"
+            padding={
+              Object {
+                "bottom": "S400",
+              }
+            }
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Earliest start date: 
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              02 Aug 2023
+            </Text>
+          </Row>
+          <Col>
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Hours per week:
+            </Text>
+            <ul>
+              <li
+                className="review-submit-list-item"
+                key="25 - 35"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  25 - 35
+                </Text>
+              </li>
+              <li
+                className="review-submit-list-item"
+                key="15 - 24"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  15 - 24
+                </Text>
+              </li>
+            </ul>
+          </Col>
+          <Col>
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Days of week:
+            </Text>
+            <ul>
+              <li
+                className="review-submit-list-item"
+                key="WEDNESDAY"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  WEDNESDAY
+                </Text>
+              </li>
+              <li
+                className="review-submit-list-item"
+                key="SUNDAY"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  SUNDAY
+                </Text>
+              </li>
+              <li
+                className="review-submit-list-item"
+                key="THURSDAY"
+              >
+                <Text
+                  font="primary"
+                  fontSize="T100"
+                  hyphens="none"
+                >
+                  THURSDAY
+                </Text>
+              </li>
+            </ul>
+          </Col>
+          <Row
+            alignItems="center"
+            gridGap="S300"
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              fontWeight="bold"
+              hyphens="none"
+            >
+              Time pattern: 
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Days
+            </Text>
+          </Row>
+        </Col>
+      </Card>
+    </Col>
+    <Col
+      gridGap="S300"
+      id="additionalInfoSection"
+    >
+      <Row
+        alignItems="center"
+        justifyContent="space-between"
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          Additional information
+        </Text>
+        <Button
+          colorScheme="default"
+          icon={
+            <IconPencil
+              aria-hidden={true}
+              display="block"
+            />
+          }
+          iconPosition="leading"
+          onClick={[Function]}
+          shouldUseResponsiveContent={true}
+          size="default"
+          type="button"
+          variant="tertiary"
+        >
+          Edit
+        </Button>
+      </Row>
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
+      >
+        <Col
+          gridGap="S300"
+        >
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Address: test address line 1
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            City: Test City
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Postal code: 94458
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Country: United States
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Type: United States - Social Security Number
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Number: *****9599
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Date of birth: 1988-08-02
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Have you worked with Amazon in the past?: No
+          </Text>
+          <Row
+            padding={
+              Object {
+                "top": "S300",
+              }
+            }
+          >
+            <Text
+              color="#56616C"
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              * If you have entered "NO NI" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: "TNDDMMYY".
+            </Text>
+          </Row>
+        </Col>
+      </Card>
+    </Col>
+  </Col>
+  <CustomModal
+    setShouldOpen={[Function]}
+    shouldOpen={false}
+  >
+    <Col
+      gridGap="S300"
+      padding="S300"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="bold"
+        hyphens="none"
+        margin={0}
+        textAlign="center"
+      >
+        Withdraw existing application?
+      </H4>
+      <Col
+        gridGap="S300"
+        padding={
+          Object {
+            "top": "S300",
+          }
+        }
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
+        >
+          You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?
+        </Text>
+        <Col
+          gridGap="S400"
+          padding={
+            Object {
+              "top": "S400",
+            }
+          }
+        >
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="secondary"
+          >
+            No, go to existing application
+          </Button>
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="primary"
+          >
+            Yes, Submit new application
+          </Button>
+        </Col>
+      </Col>
+    </Col>
+  </CustomModal>
   <Col
     gridGap="S300"
     margin={
@@ -407,78 +909,78 @@ exports[`ReviewSubmit should match snapshot 1`] = `
   <Col
     gridGap="S400"
   >
-    <div>
-      <Col
-        gridGap="S300"
-        id="jobDetailSection"
+    <Col
+      gridGap="S300"
+      id="jobDetailSection"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
       >
-        <Text
-          font="primary"
-          fontSize="T300"
-          hyphens="none"
-        >
-          Job Details
-        </Text>
-        <ScheduleDetails
-          scheduleDetail={
-            Object {
-              "address": "38811 Cherry Street",
-              "basePay": 6,
-              "basePayL10N": "",
-              "bgcVendorName": "FADV",
-              "briefJobDescription": "briefJobDescription briefJobDescription",
-              "city": "Newark",
-              "contingencyTat": 0,
-              "currencyCode": "USD",
-              "dataSource": "Dragonstone",
-              "distanceL10N": "",
-              "employmentType": "Regular",
-              "employmentTypeL10N": "Regular",
-              "externalJobTitle": "Amazon Grocery Shopper",
-              "financeWeekStartDate": "",
-              "financeWeekStartDateL10N": "",
-              "firstDayOnSite": "2022-10-29",
-              "firstDayOnSiteL10N": "2022-10-29",
-              "geoClusterId": "",
-              "geoClusterName": "",
-              "hireEndDate": "",
-              "hireStartDate": "2022-11-04",
-              "hoursPerWeek": 16,
-              "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
-              "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
-              "jobDescription": "jobDescription jobDescription",
-              "jobId": "JOB-US-0000001234",
-              "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
-              "laborDemandAvailableCount": 0,
-              "language": "English",
-              "monthlyBasePay": 1000,
-              "monthlyBasePayL10N": null,
-              "parsedTrainingDate": "01-01-2023",
-              "postalCode": "94560",
-              "priorityRank": 0,
-              "requiredLanguage": Array [
-                "en-US",
-                "es-US",
-              ],
-              "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
-              "scheduleId": "test-schedule-id",
-              "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
-              "scheduleType": "PART_TIME",
-              "scheduleTypeL10N": "",
-              "signOnBonus": 5,
-              "signOnBonusL10N": "$5.00",
-              "siteId": "SITE-OAK5",
-              "state": "CA",
-              "surgePay": 0,
-              "tagLine": "In-store shopping for customer grocery orders.",
-              "totalPayRate": 8.9,
-              "totalPayRateL10N": "$8.90",
-            }
+        Job Details
+      </Text>
+      <ScheduleCard
+        displayOnly={true}
+        scheduleDetail={
+          Object {
+            "address": "38811 Cherry Street",
+            "basePay": 6,
+            "basePayL10N": "",
+            "bgcVendorName": "FADV",
+            "briefJobDescription": "briefJobDescription briefJobDescription",
+            "city": "Newark",
+            "contingencyTat": 0,
+            "currencyCode": "USD",
+            "dataSource": "Dragonstone",
+            "distanceL10N": "",
+            "employmentType": "Regular",
+            "employmentTypeL10N": "Regular",
+            "externalJobTitle": "Amazon Grocery Shopper",
+            "financeWeekStartDate": "",
+            "financeWeekStartDateL10N": "",
+            "firstDayOnSite": "2022-10-29",
+            "firstDayOnSiteL10N": "2022-10-29",
+            "geoClusterId": "",
+            "geoClusterName": "",
+            "hireEndDate": "",
+            "hireStartDate": "2022-11-04",
+            "hoursPerWeek": 16,
+            "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
+            "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
+            "jobDescription": "jobDescription jobDescription",
+            "jobId": "JOB-US-0000001234",
+            "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
+            "laborDemandAvailableCount": 0,
+            "language": "English",
+            "monthlyBasePay": 1000,
+            "monthlyBasePayL10N": null,
+            "parsedTrainingDate": "01-01-2023",
+            "postalCode": "94560",
+            "priorityRank": 0,
+            "requiredLanguage": Array [
+              "en-US",
+              "es-US",
+            ],
+            "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
+            "scheduleId": "test-schedule-id",
+            "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
+            "scheduleType": "PART_TIME",
+            "scheduleTypeL10N": "",
+            "signOnBonus": 5,
+            "signOnBonusL10N": "$5.00",
+            "siteId": "SITE-OAK5",
+            "state": "CA",
+            "surgePay": 0,
+            "tagLine": "In-store shopping for customer grocery orders.",
+            "totalPayRate": 8.9,
+            "totalPayRateL10N": "$8.90",
           }
-        />
-      </Col>
-    </div>
-    <div
+        }
+      />
+    </Col>
+    <Col
+      gridGap="S300"
       id="additionalInfoSection"
     >
       <Row
@@ -490,7 +992,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
           fontSize="T300"
           hyphens="none"
         >
-          Background check
+          Additional information
         </Text>
         <Button
           colorScheme="default"
@@ -510,84 +1012,93 @@ exports[`ReviewSubmit should match snapshot 1`] = `
           Edit
         </Button>
       </Row>
-      <Col
-        gridGap="S300"
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
       >
-        <Text
-          font="primary"
-          fontSize="T100"
-          fontWeight="bold"
-          hyphens="none"
+        <Col
+          gridGap="S300"
         >
-          Authorized
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Address: test address line 1
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          City: Test City
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Postal code: 94458
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Country: United States
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          National ID Type: United States - Social Security Number
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          National ID Number: *****9599
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Date of birth: 1988-08-02
-        </Text>
-        <Text
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          Have you worked with Amazon in the past?: No
-        </Text>
-        <Text
-          color="#56616C"
-          font="primary"
-          fontSize="S100"
-          hyphens="none"
-        >
-          * If you have entered "NO NI" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: "TNDDMMYY".
-        </Text>
-      </Col>
-    </div>
-    <div
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Address: test address line 1
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            City: Test City
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Postal code: 94458
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Country: United States
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Type: United States - Social Security Number
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            National ID Number: *****9599
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Date of birth: 1988-08-02
+          </Text>
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            Have you worked with Amazon in the past?: No
+          </Text>
+          <Row
+            padding={
+              Object {
+                "top": "S300",
+              }
+            }
+          >
+            <Text
+              color="#56616C"
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              * If you have entered "NO NI" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: "TNDDMMYY".
+            </Text>
+          </Row>
+        </Col>
+      </Card>
+    </Col>
+    <Col
+      gridGap="S300"
       id="nheAppointmentSection"
     >
       <Row
@@ -619,85 +1130,161 @@ exports[`ReviewSubmit should match snapshot 1`] = `
           Edit
         </Button>
       </Row>
+      <Card
+        backgroundColor="neutral0"
+        display="flex"
+        isElevated={true}
+        padding="S400"
+        status="default"
+      >
+        <Col
+          gridGap="S300"
+        >
+          <Row
+            gridGap={5}
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Date:
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Thursday, Aug 4th 2022
+            </Text>
+          </Row>
+          <Row
+            gridGap={5}
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Time:
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Hours:
+               
+              13:30
+               - 
+              14:00
+            </Text>
+          </Row>
+          <Row
+            gridGap={5}
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Meeting details:
+            </Text>
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327, US
+            </Text>
+          </Row>
+          <Row
+            padding={
+              Object {
+                "top": "S100",
+              }
+            }
+          >
+            <Text
+              font="primary"
+              fontSize="T100"
+              hyphens="none"
+            >
+              We look forward to seeing you at the time above.
+            </Text>
+          </Row>
+        </Col>
+      </Card>
+    </Col>
+  </Col>
+  <CustomModal
+    setShouldOpen={[Function]}
+    shouldOpen={false}
+  >
+    <Col
+      gridGap="S300"
+      padding="S300"
+    >
+      <H4
+        color="neutral90"
+        font="primary"
+        fontSize="T400"
+        fontWeight="bold"
+        hyphens="none"
+        margin={0}
+        textAlign="center"
+      >
+        Withdraw existing application?
+      </H4>
       <Col
         gridGap="S300"
+        padding={
+          Object {
+            "top": "S300",
+          }
+        }
       >
-        <Row
-          gridGap={5}
+        <Text
+          font="primary"
+          fontSize="T300"
+          hyphens="none"
         >
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Date:
-          </Text>
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Thursday, Aug 4th 2022
-          </Text>
-        </Row>
-        <Row
-          gridGap={5}
-        >
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Time:
-          </Text>
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Hours:
-             
-            13:30
-             - 
-            14:00
-          </Text>
-        </Row>
-        <Row
-          gridGap={5}
-        >
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Meeting details:
-          </Text>
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
-          >
-            Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327, US
-          </Text>
-        </Row>
-        <Row
+          You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?
+        </Text>
+        <Col
+          gridGap="S400"
           padding={
             Object {
-              "top": "S100",
+              "top": "S400",
             }
           }
         >
-          <Text
-            font="primary"
-            fontSize="T100"
-            hyphens="none"
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="secondary"
           >
-            We look forward to seeing you at the time above.
-          </Text>
-        </Row>
+            No, go to existing application
+          </Button>
+          <Button
+            colorScheme="default"
+            iconPosition="leading"
+            onClick={[Function]}
+            shouldUseResponsiveContent={true}
+            size="default"
+            type="button"
+            variant="primary"
+          >
+            Yes, Submit new application
+          </Button>
+        </Col>
       </Col>
-    </div>
-  </Col>
+    </Col>
+  </CustomModal>
   <Col
     gridGap="S300"
     margin={

@@ -10,7 +10,8 @@ import {
   TEST_JOB_ID,
   TEST_JOB_STATE,
   TEST_SCHEDULE_ID,
-  TEST_SCHEDULE_STATE
+  TEST_SCHEDULE_STATE,
+  TEST_SHIFT_PREFERENCE
 } from "../../../../test-utils/test-data";
 import * as utilHelpers from "../../../../../src/utils/helper";
 import { CountryCode } from "../../../../../src/utils/enums/common";
@@ -80,6 +81,39 @@ describe("ReviewSubmit", () => {
           } as Application
         }}
         schedule={TEST_SCHEDULE_STATE}
+      />);
+
+    expect(shallowWrapper).toMatchSnapshot();
+  });
+
+  it("should match snapshot - with shift preference", () => {
+    const candidateState: any = TEST_CANDIDATE_STATE;
+    candidateState.results.candidateData.selfIdentificationInfo = {
+      ...TEST_CANDIDATE.selfIdentificationInfo,
+      pronoun: "He",
+      ethnicity: "Indigenous",
+      gender: "Male"
+    };
+
+    const shallowWrapper = shallow(
+      <ReviewSubmit
+        candidate={candidateState}
+        job={TEST_JOB_STATE}
+        application={{
+          ...TEST_APPLICATION_STATE,
+          results: {
+            ...TEST_APPLICATION_STATE.results,
+            shiftPreference: TEST_SHIFT_PREFERENCE,
+            nheAppointment: null,
+          } as Application
+        }}
+        schedule={{
+          ...TEST_SCHEDULE_STATE,
+          results: {
+            ...TEST_SCHEDULE_STATE.results,
+            scheduleDetail: undefined
+          }
+        }}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

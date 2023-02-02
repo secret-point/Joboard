@@ -1,7 +1,7 @@
 import {
   CREATE_APPLICATION_ERROR_CODE,
-  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
+  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   GET_CANDIDATE_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
   GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
@@ -10,7 +10,8 @@ import {
   PROXY_ERROR_MESSAGE,
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
-  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
+  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
+  WITHDRAW_APPLICATION_ERROR_CODE
 } from "../enums/common";
 import { ApiErrorMessage, ErrorMessage } from "../types/common";
 
@@ -63,6 +64,21 @@ export const GetApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
     translationKey: "BB-get-application-error-message-internal-server-error",
     value: "Something went wrong with the server. Please try again or refresh the browser."
   }
+};
+
+export const WithdrawApplicationErrorMessage: {[key: string]: ApiErrorMessage} = {
+  [WITHDRAW_APPLICATION_ERROR_CODE.APPLICATION_NOT_FOUND]: {
+    translationKey: "BB-get-application-error-message-missing-fields",
+    value: "ApplicationId is required to get application data."
+  },
+  [WITHDRAW_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR]: {
+    translationKey: "BB-withdraw-application-error-message-internal-server-error",
+    value: "Something went wrong with the server. Please try again or refresh the browser."
+  },
+  [WITHDRAW_APPLICATION_ERROR_CODE.FAILED_WITHDRAW_APPLICATION]: {
+    translationKey: "BB-withdraw-application-error-message-failed-withdraw-application-error",
+    value: "Failed to withdraw application"
+  },
 };
 export const GetApplicationsByCandidateIdErrorMessage: {[key: string]: ApiErrorMessage} = {
   [GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE.MISSING_REQUIRED_FIELDS]: {

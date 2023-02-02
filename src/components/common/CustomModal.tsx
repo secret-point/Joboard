@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Modal } from "@amzn/stencil-react-components/modal";
+import { Modal, ModalContent } from "@amzn/stencil-react-components/modal";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { IconCross, IconSize } from "@amzn/stencil-react-components/icons";
 import { CommonColors } from "../../utils/colors";
@@ -19,34 +19,35 @@ const CustomModal = (props: CustomModalProps) => {
 
   return (
     <Modal isOpen={shouldOpen} close={close}>
-      <Col
-        backgroundColor="neutral0"
-        padding={{ top: "S400", bottom: "S600", left: "S600" }}
-        alignItems="center"
-      >
-        <Col alignItems="flex-end" width="100%" padding={{ right: "S400" }}>
-          <Row
-            onClick={() => {
-              setShouldOpen(false);
-            }}
-            tabIndex={0}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.keyCode === 32) {
+      <ModalContent maxWidth="50vw" titleText="">
+        <Col
+          backgroundColor="neutral0"
+          width="100%"
+        >
+          <Col alignItems="flex-end" width="100%">
+            <Row
+              onClick={() => {
                 setShouldOpen(false);
-              }
-            }}
-          >
-            <IconCross
-              title="Close Modal"
-              size={IconSize.Large}
-              color={CommonColors.Blue70}
-            />
-          </Row>
+              }}
+              tabIndex={0}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.keyCode === 32) {
+                  setShouldOpen(false);
+                }
+              }}
+            >
+              <IconCross
+                title="Close Modal"
+                size={IconSize.Large}
+                color={CommonColors.Blue70}
+              />
+            </Row>
+          </Col>
+          <Col width="100%">
+            {children}
+          </Col>
         </Col>
-        <Col padding={{ right: "S600" }} width="100%">
-          {children}
-        </Col>
-      </Col>
+      </ModalContent>
     </Modal>
   );
 };

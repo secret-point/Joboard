@@ -18,6 +18,7 @@ import {
   INFO_CARD_STEP_STATUS,
   SCHEDULE_FILTER_TYPE,
   SELF_IDENTIFICATION_STEPS,
+  SHIFT_PATTERN,
   WORKFLOW_ERROR_CODE
 } from "../../src/utils/enums/common";
 import {
@@ -33,7 +34,8 @@ import {
   PossibleNhePreferenceConfig,
   SavePossibleNhePreferenceRequest,
   Schedule,
-  SelfIdentificationInfo
+  SelfIdentificationInfo,
+  ShiftPreferenceData
 } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -313,6 +315,35 @@ export const TEST_APPLICATION: any = {
   nheAppointment: NHE_TIMESLOT
 };
 
+export const TEST_SHIFT_PREFERENCE: ShiftPreferenceData = {
+  jobRoles: [
+  ],
+  locations: undefined,
+  hoursPerWeek: [
+    {
+      maximumValue: 35,
+      minimumValue: 25
+    },
+    {
+      maximumValue: 24,
+      minimumValue: 15
+    }
+  ],
+  daysOfWeek: [
+    DAYS_OF_WEEK.WEDNESDAY,
+    DAYS_OF_WEEK.SUNDAY,
+    DAYS_OF_WEEK.THURSDAY
+  ],
+  shiftTimeIntervals: undefined,
+  candidateTimezone: "(GMT+00:00) Greenwich Mean Time (Europe/London)",
+  preferenceSelectedOn: "2023-02-01T23:54:33.928Z",
+  earliestStartDate: "08/02/2023",
+  shiftTimePattern: SHIFT_PATTERN.DAYS,
+  hoursPerWeekStrList: [
+    "25 - 35",
+    "15 - 24"
+  ]
+};
 export const TEST_APPLICATION_STATE: ApplicationState = {
   loading: false,
   failed: false,

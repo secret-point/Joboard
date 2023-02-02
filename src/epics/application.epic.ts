@@ -12,7 +12,9 @@ import {
   actionUpdateApplicationDSFailed,
   actionUpdateApplicationDSSuccess,
   actionUpdateWorkflowNameFailed,
-  actionUpdateWorkflowNameSuccess
+  actionUpdateWorkflowNameSuccess,
+  actionWithdrawApplicationFailed,
+  actionWithdrawApplicationSuccess
 } from "../actions/ApplicationActions/applicationActions";
 import {
   APPLICATION_ACTION_TYPES,
@@ -21,7 +23,8 @@ import {
   GetApplicationAction,
   GetApplicationListAction,
   UpdateApplicationActionDS,
-  UpdateWorkflowStepNameAction
+  UpdateWorkflowStepNameAction,
+  WithdrawApplicationAction
 } from "../actions/ApplicationActions/applicationActionTypes";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
@@ -46,7 +49,8 @@ import {
   CreateApplicationErrorMessage,
   GetApplicationErrorMessage,
   GetApplicationsByCandidateIdErrorMessage,
-  UpdateApplicationErrorMessage
+  UpdateApplicationErrorMessage,
+  WithdrawApplicationErrorMessage
 } from "../utils/api/errorMessages";
 import {
   ApiError,
@@ -54,16 +58,18 @@ import {
   GetApplicationListResponse,
   GetApplicationResponse,
   UpdateApplicationResponse,
-  UpdateWorkflowNameResponse
+  UpdateWorkflowNameResponse,
+  WithdrawApplicationResponse
 } from "../utils/api/types";
 import { SelectedScheduleForUpdateApplication } from "../utils/apiTypes";
 import {
   CREATE_APPLICATION_ERROR_CODE,
-  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
+  GET_APPLICATIONS_BY_CANDIDATE_ID_ERROR_CODE,
   QUERY_PARAMETER_NAME,
   UPDATE_APPLICATION_API_TYPE,
   UPDATE_APPLICATION_ERROR_CODE,
+  WITHDRAW_APPLICATION_ERROR_CODE,
   WORKFLOW_STEP_NAME
 } from "../utils/enums/common";
 import {
@@ -377,6 +383,41 @@ export const GetApplicationListEpic = ( action$: Observable<any> ) => {
             setEpicApiCallErrorMessage(errorMessage);
 
             return of(actionGetApplicationListFailed(error));
+          })
+        )
+    )
+  );
+};
+
+export const WithdrawApplicationEpic = ( action$: Observable<any> ) => {
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION),
+    switchMap(( action: WithdrawApplicationAction ) =>
+      from(new CandidateApplicationService().withdrawApplication(action.payload))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map(( response: WithdrawApplicationResponse ) => {
+            const applicationList: Application[] = response.data;
+
+            if (action.onSuccess) {
+              action.onSuccess(applicationList);
+            }
+            return actionWithdrawApplicationSuccess(applicationList);
+          }),
+          catchError(( error: ApiError ) => {
+            log(`[Epic] WithdrawApplicationEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+
+            if (action.onError) {
+              action.onError(error);
+            }
+
+            const errorMessage = WithdrawApplicationErrorMessage[error.errorCode] || WithdrawApplicationErrorMessage[WITHDRAW_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
+            setEpicApiCallErrorMessage(errorMessage);
+
+            return of(actionWithdrawApplicationFailed(error));
           })
         )
     )

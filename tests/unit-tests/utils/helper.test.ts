@@ -1,7 +1,6 @@
 import Cookies from "js-cookie";
 import * as boundUi from "../../../src/actions//UiActions/boundUi";
 import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
-import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
 import * as boundSelfIdentificationActions
   from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
@@ -13,9 +12,15 @@ import {
   SelfIdGenderRadioItems,
   US_SelfIdentificationConfigSteps
 } from "../../../src/utils/constants/common";
-import { CountryCode, INFO_CARD_STEP_STATUS, SELF_IDENTIFICATION_STEPS } from "../../../src/utils/enums/common";
+import {
+  CountryCode,
+  INFO_CARD_STEP_STATUS,
+  SELF_IDENTIFICATION_STEPS,
+  WITHDRAW_REASON_CASE
+} from "../../../src/utils/enums/common";
 import {
   NHE_TIMESLOT,
+  TEST_APPLICATION,
   TEST_APPLICATION_DATA,
   TEST_APPLICATION_ID,
   TEST_ASSESSMENT_URL,
@@ -25,23 +30,31 @@ import {
   TEST_JOB_ID,
   TEST_NHE_DATA_UK,
   TEST_SCHEDULE,
-  TEST_SELF_IDENTIFICATION
+  TEST_SELF_IDENTIFICATION,
+  TEST_SHIFT_PREFERENCE
 } from "../../test-utils/test-data";
 import {
+  applicationHasScheduleId,
+  applicationHasShiftPreferences,
   AWAIT_TIMEOUT,
   awaitWithTimeout,
+  bulkWithdrawAndSubmitApplication,
   checkAndBoundGetApplication,
   checkIfIsLegacy,
   formatFlexibleTrainingDate,
   formatMonthlyBasePayHelper,
-  getCountryCodeByCountryName, getDefaultUkNheApptTimeFromMap,
+  getApplicationWithdrawalReason,
+  getCountryCodeByCountryName,
+  getDefaultUkNheApptTimeFromMap,
   getDetailedRadioErrorMap,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
   getQueryFromSearchAndHash,
   GetSelfIdentificationConfigStep,
-  getSupportedCitiesFromScheduleList, getUKNHEAppointmentTimeMap, getUKNHEAppointmentTitleList,
+  getSupportedCitiesFromScheduleList,
+  getUKNHEAppointmentTimeMap,
+  getUKNHEAppointmentTitleList,
   getUKNHEMaxSlotLength,
   handleConfirmUSNHESelection,
   handleInitiateSelfIdentificationStep,
@@ -53,6 +66,7 @@ import {
   isAdditionalBgcInfoValid,
   isAddressValid,
   isBrokenApplicationFeatureEnabled,
+  isCandidateApplyingToTheSameJobId,
   isDOBLessThan100,
   isDOBOverEighteen,
   isI18nSelectOption,
@@ -79,7 +93,9 @@ import {
   validateNonFcraSignatures
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
+import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
 import SpyInstance = jest.SpyInstance;
+import { Application } from "../../../src/utils/types/common";
 
 jest.mock("../../../src/helpers/log-helper");
 
@@ -119,7 +135,6 @@ test("getCountryCodeByCountryName", () => {
   expect(getCountryCodeByCountryName("custom")).toEqual("");
 });
 
-
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_undefinedFeatureFlagMap_systemError", () => {
   const flagsMap = undefined;
@@ -130,7 +145,6 @@ test("isBrokenApplicationFeatureEnabled_undefinedFeatureFlagMap_systemError", ()
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
 });
-
 
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_noMatchCountry_systemError", () => {
@@ -147,7 +161,6 @@ test("isBrokenApplicationFeatureEnabled_noMatchCountry_systemError", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
 });
-
 
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_invalidRegex_systemError", () => {
@@ -168,7 +181,6 @@ test("isBrokenApplicationFeatureEnabled_invalidRegex_systemError", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeFalsy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeFalsy();
 });
-
 
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_withTwoUSJobsEnabled", () => {
@@ -193,7 +205,6 @@ test("isBrokenApplicationFeatureEnabled_withTwoUSJobsEnabled", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeTruthy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeTruthy();
 });
-
 
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_withUSJobsEndWithOneEnabled", () => {
@@ -222,7 +233,6 @@ test("isBrokenApplicationFeatureEnabled_withUSJobsEndWithOneEnabled", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000438932", CountryCode.MX, flagsMap)).toBeTruthy();
 });
 
-
 // test getting the feature flag result by regex.
 test("isBrokenApplicationFeatureEnabled_withAllJobsEnabled", () => {
   const flagsMap = {
@@ -242,7 +252,6 @@ test("isBrokenApplicationFeatureEnabled_withAllJobsEnabled", () => {
   expect(isBrokenApplicationFeatureEnabled("JOB-US-3478347831", CountryCode.US, flagsMap)).toBeTruthy();
   expect(isBrokenApplicationFeatureEnabled("JOB-MX-0000000002", CountryCode.MX, flagsMap)).toBeTruthy();
 });
-
 
 describe("awaitWithTimeout", () => {
   let promise: Promise<any>;
@@ -799,7 +808,6 @@ describe("getQueryFromSearchAndHash", () => {
   });
 });
 
-
 test("isSelfIdVeteranStepCompleted", () => {
   expect(isSelfIdVeteranStepCompleted({
     ...TEST_SELF_IDENTIFICATION
@@ -836,7 +844,6 @@ test("GetSelfIdentificationConfigStep", () => {
   expect(GetSelfIdentificationConfigStep(CountryCode.US)).toEqual(US_SelfIdentificationConfigSteps);
   expect(GetSelfIdentificationConfigStep(CountryCode.MX)).toEqual(MX_SelfIdentificationConfigSteps);
 });
-
 
 test("isSelfIdEqualOpportunityStepCompleted", () => {
   expect(isSelfIdDisabilityStepCompleted({
@@ -1284,4 +1291,185 @@ test("getDefaultUkNheApptTimeFromMap", () => {
   map.set("Saturday, Jan 21st 2023", ["09:00", "10:00"]);
 
   expect(getDefaultUkNheApptTimeFromMap(map, "Friday, Jan 20th 2023")).toEqual(["09:00", "10:00"]);
+});
+
+describe("getApplicationWithdrawalReason", () => {
+  test("WITHDRAW_REASON_CASE.CASE_1", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      },
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_1);
+  });
+
+  test("WITHDRAW_REASON_CASE.CASE_4", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      }
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_4);
+  });
+
+  test("WITHDRAW_REASON_CASE.CASE_5", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      },
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_5);
+  });
+
+  test("WITHDRAW_REASON_CASE.CASE_6", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected
+      },
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_6);
+  });
+
+  test("WITHDRAW_REASON_CASE.CASE_2", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected
+      },
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_2);
+  });
+
+  test("WITHDRAW_REASON_CASE.CASE_3", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        jobId: "TEST_JOB"
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(WITHDRAW_REASON_CASE.CASE_3);
+  });
+
+  test("Null case - 1", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: null
+      },
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(null);
+  });
+
+  test("Null case - 2", () => {
+    const prevApp = {
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected
+      }
+    };
+    const currentApp = {
+      ...TEST_APPLICATION,
+      shiftPreference: TEST_SHIFT_PREFERENCE
+    };
+
+    expect(getApplicationWithdrawalReason(currentApp, prevApp)).toEqual(null);
+  });
+
+});
+
+test("applicationHasScheduleId", () => {
+  expect(applicationHasScheduleId(TEST_APPLICATION)).toBeTruthy();
+  expect(applicationHasScheduleId({
+    ...TEST_APPLICATION,
+    jobScheduleSelected: {
+      ...TEST_APPLICATION.jobScheduleSelected,
+      scheduleId: null
+    }
+  })).toBeFalsy();
+});
+
+test("applicationHasShiftPreferences", () => {
+  expect(applicationHasShiftPreferences(TEST_APPLICATION)).toBeFalsy();
+  expect(applicationHasShiftPreferences({
+    ...TEST_APPLICATION,
+    shiftPreference: TEST_SHIFT_PREFERENCE
+  })).toBeTruthy();
+});
+
+test("isCandidateApplyingToTheSameJobId", () => {
+  expect(isCandidateApplyingToTheSameJobId(TEST_APPLICATION, TEST_APPLICATION)).toBeTruthy();
+  expect(isCandidateApplyingToTheSameJobId(TEST_APPLICATION, {
+    ...TEST_APPLICATION,
+    jobScheduleSelected: {
+      ...TEST_APPLICATION.jobScheduleSelected,
+      jobId: "TEST_JOB"
+    }
+  })).toBeFalsy();
+});
+
+test("bulkWithdrawAndSubmitApplication", () => {
+  const callback = jest.fn();
+  const boundWithdrawApplicationSpy = jest.spyOn(boundApplicationActions, "boundWithdrawApplication");
+  bulkWithdrawAndSubmitApplication([TEST_APPLICATION, TEST_APPLICATION], callback);
+
+  expect(boundWithdrawApplicationSpy).toHaveBeenCalledWith([TEST_APPLICATION, TEST_APPLICATION], expect.any(Function));
 });

@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { IconPencil } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
-import { H5, Text } from "@amzn/stencil-react-components/text";
+import { H4, Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
+import {
+  boundGetApplicationList,
+  boundUpdateApplicationDS
+} from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
@@ -24,20 +27,31 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
-import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import {
+  FEATURE_FLAG,
+  UPDATE_APPLICATION_API_TYPE,
+  WITHDRAW_REASON_CASE,
+  WORKFLOW_STEP_NAME
+} from "../../../utils/enums/common";
+import {
+  bulkWithdrawAndSubmitApplication,
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
+  getApplicationWithdrawalReason,
   getCountryCode,
   getCountryMappedFeatureFlag,
   getLocale,
+  goToCandidateDashboard,
   isBrokenApplicationFeatureEnabled
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
-import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
+import { Card } from "@amzn/stencil-react-components/card";
+import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
+import CustomModal from "../../common/CustomModal";
+import moment from "moment";
 
 interface MapStateToProps {
   job: JobState;
@@ -52,12 +66,15 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { applicationId, jobId, scheduleId } = queryParams;
+  const [showWithDrawModal, setShowWithdrawModal] = useState(false);
+  const [activeApplicationTobeWithdrawn, setActiveApplicationToBeWithdrawn] = useState<Application[]>([]);
 
   const jobDetail = job.results;
   const { candidateData } = candidate.results;
   const { scheduleDetail } = schedule.results;
 
   const applicationData = application.results;
+  const activeApplicationList = application.applicationList;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
 
@@ -92,6 +109,10 @@ export const ReviewSubmit = (props: MapStateToProps) => {
     };
   }, [pageName]);
 
+  useEffect(() => {
+    candidateData?.candidateId && boundGetApplicationList({ candidateId: candidateData.candidateId, status: "active" });
+  }, [candidateData]);
+
   const handleBackToEdit = (stepName: WORKFLOW_STEP_NAME) => {
     boundResetBannerMessage();
 
@@ -100,32 +121,56 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       onCompleteTaskHelper(applicationData, isBackButton, stepName);
     }
   };
-
+  const submitApplication = (applicationData: Application) => {
+    const { REVIEW_SUBMIT } = UPDATE_APPLICATION_API_TYPE;
+    const payload = {
+      jobId,
+      scheduleId,
+      scheduleDetails: JSON.stringify(scheduleDetail)
+    };
+    
+    const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
+    const countryCode = getCountryCode();
+    const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);
+    if (isFeatureEnabled) {
+      onCompleteTaskHelper(applicationData);
+    } else {
+      const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
+      boundUpdateApplicationDS(request, (applicationData: Application) => {
+        onCompleteTaskHelper(applicationData);
+      });
+    }
+  };
   const handleSubmitApplication = () => {
     boundResetBannerMessage();
 
     if (applicationData) {
-      const { REVIEW_SUBMIT } = UPDATE_APPLICATION_API_TYPE;
-      const payload = {
-        jobId,
-        scheduleId,
-        scheduleDetails: JSON.stringify(scheduleDetail)
-      };
+      const activeApplicationToWithdraw = activeApplicationList ? activeApplicationList.
+        filter(application => {
+          return application.applicationId !== applicationData?.applicationId && application.submitted && application.active;
+        }) : [];
 
-      const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
-      const countryCode = getCountryCode();
-      const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);
-      if (isFeatureEnabled) {
-        onCompleteTaskHelper(applicationData);
+      setActiveApplicationToBeWithdrawn(activeApplicationToWithdraw);
+
+      if (activeApplicationToWithdraw.length=== 0) {
+        submitApplication(applicationData);
       } else {
-        const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
-        boundUpdateApplicationDS(request, (applicationData: Application) => {
-          onCompleteTaskHelper(applicationData);
+        const withdrawReasons = activeApplicationToWithdraw.map(app => getApplicationWithdrawalReason(applicationData, app));
+        const shouldWarningShowModal = withdrawReasons.some(reason => Boolean(reason));
+        const shouldWidthdrawWithoutWarning = shouldWarningShowModal && withdrawReasons.some(reason => {
+          return reason === WITHDRAW_REASON_CASE.CASE_2;
         });
+
+        if (shouldWidthdrawWithoutWarning) {
+          bulkWithdrawAndSubmitApplication(activeApplicationToWithdraw, () => {
+            submitApplication(applicationData);
+          });
+        } else {
+          setShowWithdrawModal(shouldWarningShowModal);
+        }
       }
     }
   };
-
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
       <Row gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
@@ -139,68 +184,123 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       </Text>
 
       <Col gridGap="S400">
-        <div>
+        {scheduleDetail && (
           <Col gridGap="S300" id="jobDetailSection">
             <Text fontSize="T300">
               {t("BB-ReviewSubmit-job-details-section-title-text", "Job Details")}
             </Text>
-            {scheduleDetail && <ScheduleDetails scheduleDetail={scheduleDetail} />}
+            <ScheduleCard scheduleDetail={scheduleDetail} displayOnly />
           </Col>
-        </div>
+        )}
 
-        <div id="additionalInfoSection">
-          <Row alignItems="center" justifyContent="space-between">
-            <Text fontSize="T300">
-              {t("BB-ReviewSubmit-job-details-section-background-check-text", "Background check")}
-            </Text>
+        {
+          applicationData?.shiftPreference && (
+            <Col id="shiftPreferenceSection" gridGap="S300">
+              <Row alignItems="center" justifyContent="space-between">
+                <Text fontSize="T300">
+                  {t("BB-ReviewSubmit-shift-preference-section-title-text", "Shift preferences")}
+                </Text>
 
-            <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.BGC)}>
-              {t("BB-ReviewSubmit-edit-button-text", "Edit")}
-            </Button>
-          </Row>
+                <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary} onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES)}>
+                  {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+                </Button>
+              </Row>
+              <Card isElevated padding="S400">
+                <Col>
+                  <Row gridGap="S300" alignItems="center" padding={{ bottom: "S400" }}>
+                    <Text fontWeight="bold" fontSize="T100">Earliest start date: </Text>
+                    <Text fontSize="T100">
+                      {moment(applicationData.shiftPreference.earliestStartDate).locale(getLocale()).format("DD MMM YYYY")}
+                    </Text>
+                  </Row>
+                  <Col>
+                    <Text fontWeight="bold" fontSize="T100">Hours per week:</Text>
+                    <ul>
+                      {
+                        applicationData.shiftPreference?.hoursPerWeekStrList.map(hourPerWeek => (
+                          <li key={hourPerWeek} className="review-submit-list-item">
+                            <Text fontSize="T100">{hourPerWeek}</Text>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Col>
+                  <Col>
+                    <Text fontWeight="bold" fontSize="T100">Days of week:</Text>
+                    <ul>
+                      {
+                        applicationData.shiftPreference?.daysOfWeek.map(day => (
+                          <li key={day} className="review-submit-list-item">
+                            <Text fontSize="T100">{day}</Text>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Col>
+                  <Row gridGap="S300" alignItems="center">
+                    <Text fontWeight="bold" fontSize="T100">Time pattern: </Text>
+                    <Text fontSize="T100">
+                      {applicationData.shiftPreference.shiftTimePattern}
+                    </Text>
+                  </Row>
+                </Col>
+              </Card>
+            </Col>
+          )
+        }
 
-          <Col gridGap="S300">
-            <Text fontSize="T100" fontWeight="bold">
-              {t("BB-ReviewSubmit-job-details-section-authorized-text", "Authorized")}
-            </Text>
+        {candidateData?.additionalBackgroundInfo && (
+          <Col id="additionalInfoSection" gridGap="S300">
+            <Row alignItems="center" justifyContent="space-between">
+              <Text fontSize="T300">
+                {t("BB-ReviewSubmit-job-details-section-background-check-text", "Additional information")}
+              </Text>
 
-            {candidateData?.additionalBackgroundInfo && (
-              <>
-                <Text fontSize="S100">
+              <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary}
+                onClick={() => handleBackToEdit(WORKFLOW_STEP_NAME.ADDITIONAL_INFORMATION)}
+              >
+                {t("BB-ReviewSubmit-edit-button-text", "Edit")}
+              </Button>
+            </Row>
+            <Card isElevated padding="S400">
+              <Col gridGap="S300">
+                <Text fontSize="T100">
                   {`Address: ${candidateData.additionalBackgroundInfo.address.addressLine1}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`City: ${candidateData.additionalBackgroundInfo.address.city}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`Postal code: ${candidateData.additionalBackgroundInfo.address.zipcode}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`Country: ${candidateData.additionalBackgroundInfo.address.country}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`National ID Type: ${candidateData.additionalBackgroundInfo.governmentIdType}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`National ID Number: ${candidateData.additionalBackgroundInfo.idNumber}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`Date of birth: ${candidateData.additionalBackgroundInfo.dateOfBirth}`}
                 </Text>
-                <Text fontSize="S100">
+                <Text fontSize="T100">
                   {`Have you worked with Amazon in the past?: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}
                 </Text>
-              </>
-            )}
-            <Text color={CommonColors.Neutral70} fontSize="S100">
-              {"* If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\"."}
-            </Text>
+                <Row padding={{ top: "S300" }}>
+                  <Text color={CommonColors.Neutral70} fontSize="T100">
+                    {"* If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\"."}
+                  </Text>
+                </Row>
+              </Col>
+            </Card>
           </Col>
-        </div>
+        )}
 
         {
           applicationData?.nheAppointment && (
-            <div id="nheAppointmentSection">
+            <Col id="nheAppointmentSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">
                   {t("BB-ReviewSubmit-pre-hire-appointment-section-title-text", "Pre-Hire Appointment")}
@@ -210,41 +310,43 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                   {t("BB-ReviewSubmit-edit-button-text", "Edit")}
                 </Button>
               </Row>
-              <Col gridGap="S300">
-                <Row gridGap={5}>
-                  <Text fontSize="T100">Date:</Text>
-                  <Text fontSize="T100">
-                    {formatDate(nheAppointment?.dateWithoutFormat, {
-                      defaultDateFormat: "DD/MM/yyyy",
-                      displayFormat: "dddd, MMM Do YYYY"
-                    })}
-                  </Text>
-                </Row>
-                <Row gridGap={5}>
-                  <Text fontSize="T100">Time:</Text>
-                  <Text fontSize="T100">
-                    {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
-                  </Text>
-                </Row>
+              <Card isElevated padding="S400">
+                <Col gridGap="S300">
+                  <Row gridGap={5}>
+                    <Text fontSize="T100">Date:</Text>
+                    <Text fontSize="T100">
+                      {formatDate(nheAppointment?.dateWithoutFormat, {
+                        defaultDateFormat: "DD/MM/yyyy",
+                        displayFormat: "dddd, MMM Do YYYY"
+                      })}
+                    </Text>
+                  </Row>
+                  <Row gridGap={5}>
+                    <Text fontSize="T100">Time:</Text>
+                    <Text fontSize="T100">
+                      {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
+                    </Text>
+                  </Row>
 
-                <Row gridGap={5}>
-                  <Text fontSize="T100">Meeting details:</Text>
-                  <Text fontSize="T100">
-                    {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
-                  </Text>
-                </Row>
-                <Row padding={{ top: "S100" }}>
-                  <Text fontSize="T100">
-                    {t("BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text", "We look forward to seeing you at the time above.")}
-                  </Text>
-                </Row>
-              </Col>
-            </div>
+                  <Row gridGap={5}>
+                    <Text fontSize="T100">Meeting details:</Text>
+                    <Text fontSize="T100">
+                      {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
+                    </Text>
+                  </Row>
+                  <Row padding={{ top: "S100" }}>
+                    <Text fontSize="T100">
+                      {t("BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text", "We look forward to seeing you at the time above.")}
+                    </Text>
+                  </Row>
+                </Col>
+              </Card>
+            </Col>
           )
         }
         {
           applicationData?.nhePreference && (
-            <div id="nhePreferenceSection">
+            <Col id="nhePreferenceSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">
                   {t("BB-ReviewSubmit-nhe-preference-section-title-text", "Your pre-hire appointment availability")}
@@ -254,50 +356,85 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                   {t("BB-ReviewSubmit-edit-button-text", "Edit")}
                 </Button>
               </Row>
-              <Col gridGap="S300">
-                <Col>
-                  <H5 fontWeight="bold" fontSize="S100">City</H5>
-                  <ul>
-                    {
-                      applicationData.nhePreference?.locations.map(location => (
-                        <li key={location}>
-                          <Text fontSize="S100">{location}</Text>
-                        </li>
-                      ))
-                    }
-                  </ul>
+              <Card isElevated padding="S400">
+                <Col gridGap="S200">
+                  <Col>
+                    <Text fontWeight="bold" fontSize="T100">City</Text>
+                    <ul>
+                      {
+                        applicationData.nhePreference?.locations.map(location => (
+                          <li key={location} className="review-submit-list-item">
+                            <Text fontSize="T100">{location}</Text>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Col>
+                  <Col>
+                    <Text fontWeight="bold" fontSize="T100">Dates</Text>
+                    <ul>
+                      {
+                        applicationData.nhePreference?.preferredNHEDates.map(date => (
+                          <li key={date} className="review-submit-list-item">
+                            <Text fontSize="T100">{date}</Text>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Col>
+                  <Col>
+                    <Text fontWeight="bold" fontSize="T100">Time</Text>
+                    <ul>
+                      {
+                        applicationData.nhePreference?.preferredNHETimeIntervals.map(timeSlot => (
+                          <li key={timeSlot} className="review-submit-list-item">
+                            <Text fontSize="T100">{timeSlot}</Text>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </Col>
                 </Col>
-                <Col>
-                  <H5 fontWeight="bold" fontSize="S100">Dates</H5>
-                  <ul>
-                    {
-                      applicationData.nhePreference?.preferredNHEDates.map(date => (
-                        <li key={date}>
-                          <Text fontSize="S100">{date}</Text>
-                        </li>
-                      ))
-                    }
-                  </ul>
-                </Col>
-
-                <Col>
-                  <H5 fontWeight="bold" fontSize="S100">Time</H5>
-                  <ul>
-                    {
-                      applicationData.nhePreference?.preferredNHETimeIntervals.map(timeSlot => (
-                        <li key={timeSlot}>
-                          <Text fontSize="S100">{timeSlot}</Text>
-                        </li>
-                      ))
-                    }
-                  </ul>
-                </Col>
-              </Col>
-            </div>
+              </Card>
+            </Col>
           )
         }
       </Col>
-
+      <CustomModal shouldOpen={showWithDrawModal} setShouldOpen={setShowWithdrawModal}>
+        <Col padding="S300" gridGap="S300">
+          <H4 fontWeight="bold" textAlign="center">
+            Withdraw existing application?
+          </H4>
+          <Col padding={{ top: "S300" }} gridGap="S300">
+            <Text>
+              You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?
+            </Text>
+            <Col
+              padding={{ top: "S400" }}
+              gridGap="S400"
+            >
+              <Button onClick={() => {
+                goToCandidateDashboard();
+                setShowWithdrawModal(false);
+              }}
+              >
+                No, go to existing application
+              </Button>
+              <Button
+                variant={ButtonVariant.Primary}
+                onClick={() => {
+                  bulkWithdrawAndSubmitApplication(activeApplicationTobeWithdrawn, () => {
+                    applicationData && submitApplication(applicationData);
+                  });
+                  setShowWithdrawModal(false);
+                }}
+              >
+                Yes, Submit new application
+              </Button>
+            </Col>
+          </Col>
+        </Col>
+      </CustomModal>
       <Col margin={{ top: "S300" }} gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
         <DebouncedButton variant={ButtonVariant.Primary} onClick={handleSubmitApplication}>
           {t("BB-ReviewSubmit-submit-application-button-text", "Submit application")}

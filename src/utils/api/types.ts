@@ -10,7 +10,8 @@ import {
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WORKFLOW_NAME_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
-  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE
+  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
+  WITHDRAW_APPLICATION_ERROR_CODE
 } from "../enums/common";
 import { Application, Candidate, Job, NHETimeSlot, PossibleNhePreferenceConfig, Schedule } from "../types/common";
 
@@ -24,6 +25,12 @@ export interface GetApplicationResponse {
   data: Application;
   error: string;
   errorCode: GET_APPLICATION_ERROR_CODE;
+}
+
+export interface WithdrawApplicationResponse {
+  data: Application[];
+  error: string;
+  errorCode: WITHDRAW_APPLICATION_ERROR_CODE;
 }
 
 export interface GetApplicationListResponse {

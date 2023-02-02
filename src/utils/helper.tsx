@@ -15,7 +15,11 @@ import moment from "moment";
 import queryString from "query-string";
 import { UpdateApplicationRequest } from "../@types/candidate-application-service-requests";
 import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
-import { boundGetApplication, boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import {
+  boundGetApplication,
+  boundUpdateApplicationDS,
+  boundWithdrawApplication
+} from "../actions/ApplicationActions/boundApplicationActions";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
@@ -72,7 +76,8 @@ import {
   INFO_CARD_STEP_STATUS,
   QUERY_PARAMETER_NAME,
   SELF_IDENTIFICATION_STEPS,
-  UPDATE_APPLICATION_API_TYPE
+  UPDATE_APPLICATION_API_TYPE,
+  WITHDRAW_REASON_CASE
 } from "./enums/common";
 import { translate, translate as t } from "./translator";
 import {
@@ -1957,4 +1962,43 @@ export const getUKNHEAppointmentTimeMap = (nheData: NHETimeSlotUK[]): Map<string
 
 export const getDefaultUkNheApptTimeFromMap = (timeMap: Map<string, string[]>, mapKey: string): string[] => {
   return timeMap.get(mapKey) || [];
+};
+
+export const applicationHasScheduleId = (app: Application) =>
+  app.jobScheduleSelected?.scheduleId !== null;
+
+export const applicationHasShiftPreferences = (app: Application) =>
+  app.shiftPreference !== undefined && app.shiftPreference !== null;
+
+export const isCandidateApplyingToTheSameJobId = (thisApp: Application, prevApp: Application) => {
+  return prevApp.jobScheduleSelected?.jobId === thisApp.jobScheduleSelected?.jobId;
+};
+
+export const getApplicationWithdrawalReason = (currentApp: Application, prevApp: Application): WITHDRAW_REASON_CASE | null => {
+  let withdrawlReason = null;
+
+  if (!applicationHasScheduleId(prevApp) && !applicationHasScheduleId(currentApp) && !applicationHasShiftPreferences(prevApp)) {
+
+    withdrawlReason = !applicationHasShiftPreferences(currentApp) ? WITHDRAW_REASON_CASE.CASE_4 : WITHDRAW_REASON_CASE.CASE_5;
+  } else if (!applicationHasScheduleId(prevApp) && applicationHasScheduleId(currentApp) && !applicationHasShiftPreferences(prevApp)) {
+
+    withdrawlReason = WITHDRAW_REASON_CASE.CASE_6;
+  } else if (applicationHasShiftPreferences(currentApp) && applicationHasShiftPreferences(prevApp) && !applicationHasScheduleId(prevApp)) {
+
+    withdrawlReason = WITHDRAW_REASON_CASE.CASE_1;
+  } else if (applicationHasShiftPreferences(prevApp) && applicationHasScheduleId(currentApp)) {
+
+    withdrawlReason = WITHDRAW_REASON_CASE.CASE_2;
+  } else if (!isCandidateApplyingToTheSameJobId(currentApp, prevApp) && (applicationHasScheduleId(prevApp) && applicationHasScheduleId(currentApp))) {
+    withdrawlReason = WITHDRAW_REASON_CASE.CASE_3;
+  }
+
+  return withdrawlReason;
+};
+
+export const bulkWithdrawAndSubmitApplication = (applicationList: Application[], callback: Function) => {
+  boundWithdrawApplication(applicationList, () => {
+    // call the callback when the last application is withdrawn successfully
+    callback();
+  });
 };

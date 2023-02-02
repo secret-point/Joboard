@@ -383,4 +383,18 @@ export enum GET_POSSIBLE_NHE_PREFERENCES {
 
 }
 
+export enum WITHDRAW_APPLICATION_ERROR_CODE {
+  APPLICATION_NOT_FOUND = "APPLICATION_NOT_FOUND",
+  INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR",
+  FAILED_WITHDRAW_APPLICATION = "FAILED_WITHDRAW_APPLICATION"
+}
+export enum WITHDRAW_REASON_CASE {
+  CASE_1 = "Withdrawing previous application because both current and previous applications have SHIFT_PREFERENCES set",
+  CASE_2 = "Withdrawing previous application because current application has SCHEDULE_ID and previous application has SHIFT_PREFERENCES",
+  CASE_3 = "Withdrawing previous application because current and previous application have both SCHEDULE_ID - for different jobs",
+  CASE_4 = "Withdrawing previous application because current and previous application does not have SCHEDULE_ID or SHIFT_PREFERENCES",
+  CASE_5 = "Withdrawing previous application because previous application is without SHIFT_PREFERENCES and SCHEDULE_ID while current application has SHIFT_PREFERENCES",
+  CASE_6 = "Withdrawing previous application because previous application is without SHIFT_PREFERENCES and SCHEDULE_ID or at shift selection while current application has SCHEDULE_ID"
+}
+
 export const NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES = 3;

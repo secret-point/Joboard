@@ -640,6 +640,7 @@ export interface Application {
   dspEnabled?: boolean;
   applicationSignature: ElectronicSignature;
   additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
+  shiftPreference?: ShiftPreferenceData;
 }
 
 export interface JobScheduleSelected {
@@ -1131,6 +1132,20 @@ export interface ShiftPreferenceShiftPatternConfig {
   displayValue: string;
   translationKey: string;
   value: string;
+}
+
+export interface ShiftPreferenceData {
+  candidateTimezone: string;
+  daysOfWeek: DAYS_OF_WEEK[];
+  hoursPerWeek: ShiftPreferenceWorkHour[];
+  earliestStartDate: string;
+  jobRoles: string[];
+  locations?: string[];
+  shiftTimePattern: SHIFT_PATTERN;
+  hoursPerWeekStrList: string[];
+  shiftTimeIntervals?: string;
+  preferenceSelectedOn?: string;
+
 }
 export interface ShiftPreferenceRequest {
   shiftPreference: {

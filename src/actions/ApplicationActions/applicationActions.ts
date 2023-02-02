@@ -26,7 +26,10 @@ import {
   UpdateApplicationSuccessActionDS,
   UpdateWorkflowStepNameAction,
   UpdateWorkflowStepNameFailedAction,
-  UpdateWorkflowStepNameSuccessAction
+  UpdateWorkflowStepNameSuccessAction,
+  WithdrawApplicationAction,
+  WithdrawApplicationFailedAction,
+  WithdrawApplicationSuccessAction
 } from "./applicationActionTypes";
 import { loadingStatusHelper } from "../../utils/helper";
 import { ProxyApiError } from "../../utils/api/types";
@@ -105,4 +108,15 @@ export const actionGetApplicationListSuccess = ( payload: Application[] ): GetAp
 
 export const actionGetApplicationListFailed = ( payload: any ): GetApplicationListFailedAction => {
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED, payload };
+};
+
+export const actionWithdrawApplication = (payload: Application[], onSuccess?: Function, onError?: Function): WithdrawApplicationAction => {
+  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION, payload, onSuccess, onError };
+};
+export const actionWithdrawApplicationSuccess = (payload: Application[]): WithdrawApplicationSuccessAction => {
+  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_SUCCESS, payload };
+};
+
+export const actionWithdrawApplicationFailed = (payload: any): WithdrawApplicationFailedAction => {
+  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_FAILED, payload };
 };

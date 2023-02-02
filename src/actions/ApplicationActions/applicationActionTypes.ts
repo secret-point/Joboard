@@ -29,6 +29,9 @@ export enum APPLICATION_ACTION_TYPES {
   GET_APPLICATION_LIST = "GET_APPLICATION_LIST",
   GET_APPLICATION_LIST_SUCCESS = "GET_APPLICATION_LIST_SUCCESS",
   GET_APPLICATION_LIST_FAILED = "GET_APPLICATION_LIST_FAILED",
+  WIDHDRAW_APPLICATION = "WIDHDRAW_APPLICATION",
+  WIDHDRAW_APPLICATION_SUCCESS = "WIDHDRAW_APPLICATION_SUCCESS",
+  WIDHDRAW_APPLICATION_FAILED = "WIDHDRAW_APPLICATION_FAILED"
 }
 
 export interface GetApplicationAction extends Action {
@@ -144,6 +147,23 @@ export interface GetApplicationListFailedAction extends Action {
   payload: any;
 }
 
+export interface WithdrawApplicationAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION;
+  payload: Application[];
+  onSuccess?: Function;
+  onError?: Function;
+}
+
+export interface WithdrawApplicationSuccessAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_SUCCESS;
+  payload: Application[];
+}
+
+export interface WithdrawApplicationFailedAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_FAILED;
+  payload: any;
+}
+
 export type ApplicationActionTypes =
     UpdateWorkflowStepNameAction |
     UpdateWorkflowStepNameSuccessAction |
@@ -163,4 +183,7 @@ export type ApplicationActionTypes =
     ResetApplicationAction |
     GetApplicationListAction |
     GetApplicationListSuccessAction |
-    GetApplicationListFailedAction;
+    GetApplicationListFailedAction |
+    WithdrawApplicationSuccessAction |
+    WithdrawApplicationFailedAction |
+    WithdrawApplicationAction;
