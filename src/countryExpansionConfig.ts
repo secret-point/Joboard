@@ -105,7 +105,13 @@ export const CS_DOMAIN_LIST = [
   "https://beta-mx.devo.jobsatamazon.hvh.a2z.com",
   "https://gamma-mx.devo.jobsatamazon.hvh.a2z.com",
   "https://mx.preprod.jobsatamazon.hvh.a2z.com",
-  "https://trabaja.amazon.com.mx"
+  "https://trabaja.amazon.com.mx",
+
+  // UK
+  "https://beta.devo.jobsatamazon.hvh.a2z.com",
+  "https://gamma.devo.jobsatamazon.hvh.a2z.com",
+  "https://uk.preprod.jobsatamazon.hvh.a2z.com",
+  "https://www.jobsatamazon.co.uk"
 ];
 
 export const getCountryCode = (): CountryCode => {
