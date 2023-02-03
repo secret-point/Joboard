@@ -292,6 +292,62 @@
       "value" : "यदि आपकी आरंभ तिथि में देरी हो रही है, तो आपको अगले चरणों के बारे में अतिरिक्त जानकारी प्राप्त होगी.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "आपने मूल्यांकन पास कर लिया है. आपके द्वारा चुनी गई नौकरी के लिए रोजगार का कंडीशन आधारित ऑफ़र यहां दिया गया है",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "रोजगार का कंडिशन आधारित ऑफ़र क्या है?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "नौकरी का विवरण देखें",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "नौकरी का विवरण",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "रोजगार का कंडिशन आधारित ऑफ़र क्या है?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "यह ऑफ़र आपके लिए कंडीशन आधारित है:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "दस्तावेजों का रजिस्ट्रेशन पूरा करना (जहां लागू हो)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "बैकग्राउंड चेक को सफलतापूर्वक पूरा करना",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "मेडिकल टेस्ट को सफलतापूर्वक पूरा करना (जहां लागू हो)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "पुनः भर्ती योग्यता को सफलतापूर्वक पूरा करना (जहां लागू हो)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UK में काम करने का अधिकार होना और आवश्यक साक्ष्य प्रदान करना",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "रोजगार के अनुबंध पर हस्ताक्षर करना और वापस करना",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "स्वास्थ्य और सुरक्षा मूल्यांकन सहित इंडक्शन ट्रेनिंग/दिन 0 में सफलतापूर्वक भाग लेना और पूरा करना",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "आपकी पसंदीदा शिफ़्ट के लिए आपकी आरंभ तिथि और/या घंटों की संख्या, शेड्यूल और लोकेशन बिज़नेस की मांग के अधीन बदल सकते हैं.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "मौसमी अवधि का अर्थ क्या है?",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,6 +2815,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "अपनी प्री-हायर ईवेंट प्राथमिकताएं चुनें",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "आपके पास पहले से ही नौकरी का एक सक्रिय आवेदन है. आपके पास एक समय में केवल एक ही सक्रिय आवेदन हो सकता है. अगर आप यह आवेदन सबमिट करते हैं, तो आपका मौजूदा आवेदन वापस ले लिया जाएगा.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "अपना आवेदन फिर से शुरू करने या देखने के लिए, \"डैशबोर्ड पर जाएं\" पर क्लिक करें. इस आवेदन के साथ जारी रखने के लिए, “जारी रखें” पर क्लिक करें",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "डैशबोर्ड पर जाएं",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "जारी रखें",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

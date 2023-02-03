@@ -2815,6 +2815,38 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Wähle deine Veranstaltungspräferenzen vor der Einstellung",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Du hast eine aktive Bewerbung",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Du hast bereits eine aktive Bewerbung. Du kannst immer nur eine aktive Bewerbung haben. Wenn du diese Bewerbung einreichst, wird deine bestehende Bewerbung zurückgezogen.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Klicke auf „Gehe zum Dashboard“, um deine Bewerbung fortzusetzen oder anzuzeigen. Klicke auf „Weiter“, um mit dieser Bewerbung fortzufahren",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Gehe zum Dashboard",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Weiter",
+      "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "Die Kandidaten-ID ist erforderlich, um eine Liste der Bewerbungen zu erhalten.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Du hast keinen Zugriff auf eine Liste der Bewerbungen für diesen Benutzer.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Die Bewerbungen können nicht aufgelistet werden.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

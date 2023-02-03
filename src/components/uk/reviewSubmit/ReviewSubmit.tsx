@@ -67,7 +67,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { applicationId, jobId, scheduleId } = queryParams;
   const [showWithDrawModal, setShowWithdrawModal] = useState(false);
-  const [activeApplicationTobeWithdrawn, setActiveApplicationToBeWithdrawn] = useState<Application[]>([]);
+  const [activeApplicationsTobeWithdrawn, setActiveApplicationToBeWithdrawn] = useState<Application[]>([]);
 
   const jobDetail = job.results;
   const { candidateData } = candidate.results;
@@ -145,24 +145,24 @@ export const ReviewSubmit = (props: MapStateToProps) => {
     boundResetBannerMessage();
 
     if (applicationData) {
-      const activeApplicationToWithdraw = activeApplicationList ? activeApplicationList.
+      const activeApplicationsToWithdraw = activeApplicationList ? activeApplicationList.
         filter(application => {
           return application.applicationId !== applicationData?.applicationId && application.submitted && application.active;
         }) : [];
 
-      setActiveApplicationToBeWithdrawn(activeApplicationToWithdraw);
+      setActiveApplicationToBeWithdrawn(activeApplicationsToWithdraw);
 
-      if (activeApplicationToWithdraw.length=== 0) {
+      if (activeApplicationsToWithdraw.length=== 0) {
         submitApplication(applicationData);
       } else {
-        const withdrawReasons = activeApplicationToWithdraw.map(app => getApplicationWithdrawalReason(applicationData, app));
+        const withdrawReasons = activeApplicationsToWithdraw.map(app => getApplicationWithdrawalReason(applicationData, app));
         const shouldWarningShowModal = withdrawReasons.some(reason => Boolean(reason));
         const shouldWidthdrawWithoutWarning = shouldWarningShowModal && withdrawReasons.some(reason => {
           return reason === WITHDRAW_REASON_CASE.CASE_2;
         });
 
         if (shouldWidthdrawWithoutWarning) {
-          bulkWithdrawAndSubmitApplication(activeApplicationToWithdraw, () => {
+          bulkWithdrawAndSubmitApplication(activeApplicationsToWithdraw, () => {
             submitApplication(applicationData);
           });
         } else {
@@ -208,13 +208,17 @@ export const ReviewSubmit = (props: MapStateToProps) => {
               <Card isElevated padding="S400">
                 <Col>
                   <Row gridGap="S300" alignItems="center" padding={{ bottom: "S400" }}>
-                    <Text fontWeight="bold" fontSize="T100">Earliest start date: </Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-rev-ew-submit-shift-preference-earliest-start-date-label", "Earliest start date")}:
+                    </Text>
                     <Text fontSize="T100">
                       {moment(applicationData.shiftPreference.earliestStartDate).locale(getLocale()).format("DD MMM YYYY")}
                     </Text>
                   </Row>
                   <Col>
-                    <Text fontWeight="bold" fontSize="T100">Hours per week:</Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-rev-ew-submit-shift-preference-hours-per-week-label", "Hours per week")}:
+                    </Text>
                     <ul>
                       {
                         applicationData.shiftPreference?.hoursPerWeekStrList.map(hourPerWeek => (
@@ -226,7 +230,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </ul>
                   </Col>
                   <Col>
-                    <Text fontWeight="bold" fontSize="T100">Days of week:</Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-rev-ew-submit-shift-preference-days-of-week-label", "Days of week")}:
+                    </Text>
                     <ul>
                       {
                         applicationData.shiftPreference?.daysOfWeek.map(day => (
@@ -238,7 +244,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </ul>
                   </Col>
                   <Row gridGap="S300" alignItems="center">
-                    <Text fontWeight="bold" fontSize="T100">Time pattern: </Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-rev-ew-submit-shift-preference-time-pattern-label", "Time pattern")}:
+                    </Text>
                     <Text fontSize="T100">
                       {applicationData.shiftPreference.shiftTimePattern}
                     </Text>
@@ -253,7 +261,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           <Col id="additionalInfoSection" gridGap="S300">
             <Row alignItems="center" justifyContent="space-between">
               <Text fontSize="T300">
-                {t("BB-ReviewSubmit-job-details-section-background-check-text", "Additional information")}
+                {t("BB-ReviewSubmit-additional-info-section-title-text", "Additional information")}
               </Text>
 
               <Button icon={<IconPencil aria-hidden />} variant={ButtonVariant.Tertiary}
@@ -265,32 +273,32 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             <Card isElevated padding="S400">
               <Col gridGap="S300">
                 <Text fontSize="T100">
-                  {`Address: ${candidateData.additionalBackgroundInfo.address.addressLine1}`}
+                  {`${t("BB-review-submit-additional-info-address-label", "Address")}: ${candidateData.additionalBackgroundInfo.address.addressLine1}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`City: ${candidateData.additionalBackgroundInfo.address.city}`}
+                  {`${t("BB-review-submit-additional-info-city-label", "City")}: ${candidateData.additionalBackgroundInfo.address.city}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`Postal code: ${candidateData.additionalBackgroundInfo.address.zipcode}`}
+                  {`${t("BB-review-submit-additional-info-postal-code-label", "Postal code")}: ${candidateData.additionalBackgroundInfo.address.zipcode}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`Country: ${candidateData.additionalBackgroundInfo.address.country}`}
+                  {`${t("BB-review-submit-additional-info-country-label", "Country")}: ${candidateData.additionalBackgroundInfo.address.country}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`National ID Type: ${candidateData.additionalBackgroundInfo.governmentIdType}`}
+                  {`${t("BB-review-submit-additional-info-national-id-type-label", "National ID Type")}: ${candidateData.additionalBackgroundInfo.governmentIdType}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`National ID Number: ${candidateData.additionalBackgroundInfo.idNumber}`}
+                  {`${t("BB-review-submit-additional-info-national-id-number-label", "National ID Number")}: ${candidateData.additionalBackgroundInfo.idNumber}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`Date of birth: ${candidateData.additionalBackgroundInfo.dateOfBirth}`}
+                  {`${t("BB-review-submit-additional-info-dob-label", "Date of birth")}: ${candidateData.additionalBackgroundInfo.dateOfBirth}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`Have you worked with Amazon in the past?: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}
+                  {`${t("BB-review-submit-additional-info-previous-worked-at-amazon-label", "Have you worked with Amazon in the past?")}: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}
                 </Text>
                 <Row padding={{ top: "S300" }}>
                   <Text color={CommonColors.Neutral70} fontSize="T100">
-                    {"* If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\"."}
+                    {`* ${t("BB-review-submit-additional-info-temporary-id-number-notice", "If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\".")}`}
                   </Text>
                 </Row>
               </Col>
@@ -313,7 +321,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
               <Card isElevated padding="S400">
                 <Col gridGap="S300">
                   <Row gridGap={5}>
-                    <Text fontSize="T100">Date:</Text>
+                    <Text fontSize="T100">
+                      {t("BB-ReviewSubmit-pre-hire-appointment-date-label", "Date")}:
+                    </Text>
                     <Text fontSize="T100">
                       {formatDate(nheAppointment?.dateWithoutFormat, {
                         defaultDateFormat: "DD/MM/yyyy",
@@ -324,12 +334,14 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                   <Row gridGap={5}>
                     <Text fontSize="T100">Time:</Text>
                     <Text fontSize="T100">
-                      {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-text", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
+                      {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-label", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
                     </Text>
                   </Row>
 
                   <Row gridGap={5}>
-                    <Text fontSize="T100">Meeting details:</Text>
+                    <Text fontSize="T100">
+                      {t("BB-ReviewSubmit-pre-hire-appointment-meeting-details-label", "Meeting details")}:
+                    </Text>
                     <Text fontSize="T100">
                       {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
                     </Text>
@@ -359,7 +371,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
               <Card isElevated padding="S400">
                 <Col gridGap="S200">
                   <Col>
-                    <Text fontWeight="bold" fontSize="T100">City</Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-review-submit-pre-hire-appointment-city-label", "City")}
+                    </Text>
                     <ul>
                       {
                         applicationData.nhePreference?.locations.map(location => (
@@ -371,7 +385,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </ul>
                   </Col>
                   <Col>
-                    <Text fontWeight="bold" fontSize="T100">Dates</Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-review-submit-pre-hire-appointment-dates-label", "Dates")}
+                    </Text>
                     <ul>
                       {
                         applicationData.nhePreference?.preferredNHEDates.map(date => (
@@ -383,7 +399,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </ul>
                   </Col>
                   <Col>
-                    <Text fontWeight="bold" fontSize="T100">Time</Text>
+                    <Text fontWeight="bold" fontSize="T100">
+                      {t("BB-review-submit-pre-hire-appointment-time-label", "Time")}
+                    </Text>
                     <ul>
                       {
                         applicationData.nhePreference?.preferredNHETimeIntervals.map(timeSlot => (
@@ -403,11 +421,11 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       <CustomModal shouldOpen={showWithDrawModal} setShouldOpen={setShowWithdrawModal}>
         <Col padding="S300" gridGap="S300">
           <H4 fontWeight="bold" textAlign="center">
-            Withdraw existing application?
+            {t("BB-review-submit-withdraw-existing-application-notice-title", "Withdraw existing application?")}
           </H4>
           <Col padding={{ top: "S300" }} gridGap="S300">
             <Text>
-              You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?
+              {t("BB-review-submit-withdraw-existing-application-notice-content-text", "You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?")}
             </Text>
             <Col
               padding={{ top: "S400" }}
@@ -418,18 +436,18 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                 setShowWithdrawModal(false);
               }}
               >
-                No, go to existing application
+                {t("BB-review-submit-withdraw-existing-application-go-to-dashboard-button", "No, go to existing application")}
               </Button>
               <Button
                 variant={ButtonVariant.Primary}
                 onClick={() => {
-                  bulkWithdrawAndSubmitApplication(activeApplicationTobeWithdrawn, () => {
+                  bulkWithdrawAndSubmitApplication(activeApplicationsTobeWithdrawn, () => {
                     applicationData && submitApplication(applicationData);
                   });
                   setShowWithdrawModal(false);
                 }}
               >
-                Yes, Submit new application
+                {t("BB-review-submit-withdraw-existing-application-notice-submit-application-button", "Yes, Submit new application")}
               </Button>
             </Col>
           </Col>

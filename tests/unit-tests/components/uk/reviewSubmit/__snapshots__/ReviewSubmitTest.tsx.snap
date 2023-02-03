@@ -547,7 +547,8 @@ exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
               fontWeight="bold"
               hyphens="none"
             >
-              Earliest start date: 
+              Earliest start date
+              :
             </Text>
             <Text
               font="primary"
@@ -564,7 +565,8 @@ exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
               fontWeight="bold"
               hyphens="none"
             >
-              Hours per week:
+              Hours per week
+              :
             </Text>
             <ul>
               <li
@@ -600,7 +602,8 @@ exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
               fontWeight="bold"
               hyphens="none"
             >
-              Days of week:
+              Days of week
+              :
             </Text>
             <ul>
               <li
@@ -651,7 +654,8 @@ exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
               fontWeight="bold"
               hyphens="none"
             >
-              Time pattern: 
+              Time pattern
+              :
             </Text>
             <Text
               font="primary"
@@ -1148,7 +1152,8 @@ exports[`ReviewSubmit should match snapshot 1`] = `
               fontSize="T100"
               hyphens="none"
             >
-              Date:
+              Date
+              :
             </Text>
             <Text
               font="primary"
@@ -1188,7 +1193,8 @@ exports[`ReviewSubmit should match snapshot 1`] = `
               fontSize="T100"
               hyphens="none"
             >
-              Meeting details:
+              Meeting details
+              :
             </Text>
             <Text
               font="primary"

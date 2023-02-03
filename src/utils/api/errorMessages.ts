@@ -72,12 +72,12 @@ export const WithdrawApplicationErrorMessage: {[key: string]: ApiErrorMessage} =
     value: "ApplicationId is required to get application data."
   },
   [WITHDRAW_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR]: {
-    translationKey: "BB-withdraw-application-error-message-internal-server-error",
+    translationKey: "BB-get-application-error-message-internal-server-error",
     value: "Something went wrong with the server. Please try again or refresh the browser."
   },
   [WITHDRAW_APPLICATION_ERROR_CODE.FAILED_WITHDRAW_APPLICATION]: {
     translationKey: "BB-withdraw-application-error-message-failed-withdraw-application-error",
-    value: "Failed to withdraw application"
+    value: "Failed to withdraw application."
   },
 };
 export const GetApplicationsByCandidateIdErrorMessage: {[key: string]: ApiErrorMessage} = {

@@ -292,6 +292,62 @@
       "value" : "Se la data di inizio viene posticipata, riceverai ulteriori informazioni sui passaggi successivi.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Hai superato la valutazione. Ecco l'offerta di lavoro condizionale per il lavoro che hai scelto",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Cos'è un'offerta di lavoro condizionale?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Visualizza la descrizione del lavoro",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "Descrizione del lavoro",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Cos'è un'offerta di lavoro condizionale?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Questa offerta è condizionata a:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "compilazione dei documenti di registrazione (ove applicabile)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "completamento con successo di una verifica della tua esperienza professionale",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "completare con successo un test medico (ove applicabile)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "completamento con successo della tua idoneità alla riassunzione (ove applicabile)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "avere il diritto di lavorare nel Regno Unito e fornire le prove richieste",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "firma e restituzione da parte tua del contratto di lavoro",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "aver partecipato e completato con successo la formazione introduttiva/giorno 0, inclusa una valutazione relativa a salute e sicurezza",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "La data di inizio del turno e/o il numero di ore, l'orario e la sede di tua preferenza, potrebbero cambiare in base alle necessità aziendali.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Cosa significa durata stagionale?",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,10 +2815,6 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Seleziona le tue preferenze per l’evento pre-assunzione",
       "note" : "Text for nhe preference card go to nhe link"
-    },
-    "BB-consent-existing-application-notice-title" : {
-      "value" : "Hai una candidatura attiva",
-      "note" : "Text for consent existing application notice title"
     },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "Hai già una candidatura attiva. È possibile avere una sola candidatura attiva alla volta. Se invii questa candidatura, quella esistente verrà ritirata.",

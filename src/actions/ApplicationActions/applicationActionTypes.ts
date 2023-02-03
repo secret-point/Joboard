@@ -8,6 +8,7 @@ import {
   UpdateApplicationRequestDS,
   UpdateWorkflowNameRequest
 } from "../../utils/apiTypes";
+import { ApiError } from "../../utils/api/types";
 
 export enum APPLICATION_ACTION_TYPES {
   GET_APPLICATION = "GET_APPLICATION",
@@ -29,9 +30,9 @@ export enum APPLICATION_ACTION_TYPES {
   GET_APPLICATION_LIST = "GET_APPLICATION_LIST",
   GET_APPLICATION_LIST_SUCCESS = "GET_APPLICATION_LIST_SUCCESS",
   GET_APPLICATION_LIST_FAILED = "GET_APPLICATION_LIST_FAILED",
-  WIDHDRAW_APPLICATION = "WIDHDRAW_APPLICATION",
-  WIDHDRAW_APPLICATION_SUCCESS = "WIDHDRAW_APPLICATION_SUCCESS",
-  WIDHDRAW_APPLICATION_FAILED = "WIDHDRAW_APPLICATION_FAILED"
+  WITHDRAW_MULTIPLE_APPLICATION = "WITHDRAW_MULTIPLE_APPLICATION",
+  WITHDRAW_MULTIPLE_APPLICATION_SUCCESS = "WITHDRAW_MULTIPLE_APPLICATION_SUCCESS",
+  WITHDRAW_MULTIPLE_APPLICATION_FAILED = "WITHDRAW_MULTIPLE_APPLICATION_FAILED"
 }
 
 export interface GetApplicationAction extends Action {
@@ -49,7 +50,7 @@ export interface GetApplicationSuccessAction extends Action {
 
 export interface GetApplicationFailedAction extends Action {
   type: APPLICATION_ACTION_TYPES.GET_APPLICATION_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
 export interface ResetApplicationAction extends Action {
@@ -72,7 +73,7 @@ export interface CreateApplicationSuccessActionDS extends Action {
 
 export interface CreateApplicationFailedActionDS extends Action {
   type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
 export interface UpdateApplicationActionDS extends Action {
@@ -90,7 +91,7 @@ export interface UpdateApplicationSuccessActionDS extends Action {
 
 export interface UpdateApplicationFailedActionDS extends Action {
   type: APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
 export interface CreateApplicationAndSkipScheduleActionDS extends Action {
@@ -108,7 +109,7 @@ export interface CreateApplicationAndSkipScheduleSuccessActionDS extends Action 
 
 export interface CreateApplicationAndSkipScheduleFailedActionDS extends Action {
   type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
 export interface UpdateWorkflowStepNameAction extends Action {
@@ -126,7 +127,7 @@ export interface UpdateWorkflowStepNameSuccessAction extends Action {
 
 export interface UpdateWorkflowStepNameFailedAction extends Action {
   type: APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
 export interface GetApplicationListAction extends Action {
@@ -144,24 +145,24 @@ export interface GetApplicationListSuccessAction extends Action {
 
 export interface GetApplicationListFailedAction extends Action {
   type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED;
-  payload: any;
+  payload: ApiError;
 }
 
-export interface WithdrawApplicationAction extends Action {
-  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION;
+export interface WithdrawMultipleApplicationAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION;
   payload: Application[];
   onSuccess?: Function;
   onError?: Function;
 }
 
-export interface WithdrawApplicationSuccessAction extends Action {
-  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_SUCCESS;
+export interface WithdrawMultipleApplicationSuccessAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_SUCCESS;
   payload: Application[];
 }
 
-export interface WithdrawApplicationFailedAction extends Action {
-  type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_FAILED;
-  payload: any;
+export interface WithdrawMultipleApplicationFailedAction extends Action {
+  type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_FAILED;
+  payload: ApiError;
 }
 
 export type ApplicationActionTypes =
@@ -184,6 +185,6 @@ export type ApplicationActionTypes =
     GetApplicationListAction |
     GetApplicationListSuccessAction |
     GetApplicationListFailedAction |
-    WithdrawApplicationSuccessAction |
-    WithdrawApplicationFailedAction |
-    WithdrawApplicationAction;
+    WithdrawMultipleApplicationSuccessAction |
+    WithdrawMultipleApplicationFailedAction |
+    WithdrawMultipleApplicationAction;

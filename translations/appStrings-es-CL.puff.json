@@ -2747,6 +2747,18 @@
     "BB-nhe-preference-click-here-text" : {
       "value" : "haz clic aquí.",
       "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "¿No encuentras una opción que te convenga?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Puedes enviar tus preferencias de eventos y nos pondremos en contacto contigo cuando encontremos un horario que funcione para ti.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Selecciona tus preferencias de eventos previos a la contratación",
+      "note" : "Text for nhe preference card go to nhe link"
     }
   }
 }

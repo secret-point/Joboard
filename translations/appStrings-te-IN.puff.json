@@ -292,6 +292,62 @@
       "value" : "మీ ప్రారంభ తేదీ ఆలస్యమైతే, మీరు తదుపరి దశల గురించి అదనపు సమాచారాన్ని అందుకుంటారు.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "మీరు అసెస్‌మెంట్‌లో ఉత్తీర్ణులయ్యారు. మీరు ఎంచుకున్న ఉద్యోగానికి సంబంధించిన షరతులతో కూడిన ఉపాధి ఆఫర్ ఇక్కడ ఉంది",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "షరతులతో కూడిన ఉపాధి ఆఫర్ అంటే ఏమిటి?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "ఉద్యోగ వివరణను వీక్షించండి",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "ఉద్యోగ వివరణ",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "షరతులతో కూడిన ఉపాధి ఆఫర్ అంటే ఏమిటి?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "ఈ ఆఫర్ మీకు షరతులతో అందించబడుతుంది:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "రిజిస్ట్రేషన్ డాక్యుమెంట్‌లను పూర్తి చేయడం (వర్తించే చోట)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "బ్యాక్‌గ్రౌండ్ చెక్‌ని విజయవంతంగా పూర్తి చేయడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "వైద్య పరీక్షను (వర్తించే చోట) విజయవంతంగా పూర్తి చేయడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "రీహైర్ అర్హత (వర్తించే చోట) విజయవంతంగా పూర్తి చేయడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UKలో పని చేసే హక్కును కలిగి ఉండటం మరియు అవసరమైన సాక్ష్యాలను అందించడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "ఉద్యోగ ఒప్పందంపై సంతకం చేసి తిరిగి ఇవ్వడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "ఆరోగ్యం మరియు భద్రత అంచనాతో సహా ఇండక్షన్ శిక్షణ/రోజు 0కి విజయవంతంగా హాజరు కావడం మరియు పూర్తి చేయడం",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "మీరు ఇష్టపడే షిఫ్ట్ మరియు/లేదా గంటల సంఖ్య, షెడ్యూల్ మరియు లొకేషన్ కోసం మీ ప్రారంభ తేదీ వ్యాపార డిమాండ్‌కు లోబడి మారవచ్చు.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "కాలానుగుణ వ్యవధి అంటే ఏమిటి?",
       "note" : "Text for about seasonal duration popover title"
@@ -2700,6 +2756,54 @@
       "value" : "ఎంపికను నిర్ధారించండి",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "వెనుకకు",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "మీ ప్రీ-హైర్ అపాయింట్‌మెంట్ లభ్యతను పేర్కొనండి",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "మీరు అందుబాటులో ఉన్న లొకేషన్, తేదీ మరియు టైమ్ ఫ్రేమ్‌ను ఎంచుకోవచ్చు. మేము మీ అపాయింట్‌మెంట్‌ను నిర్ధారిస్తూ 1 పని దినం లోపల మిమ్మల్ని సంప్రదిస్తాము. దయచేసి అపాయింట్‌మెంట్ నిర్ధారణ కమ్యూనికేషన్‌లో పేర్కొన్న తేదీ మరియు సమయానికి ప్రీ-హైర్ ఈవెంట్ లొకేషన్‌కు చేరుకోండి. త్వరలో మిమ్మల్ని చూడాలని మేము ఎదురుచూస్తున్నాము.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "లొకేషన్",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "దయచేసి లొకేషన్‌ను ఎంచుకోండి.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "తేదీ",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "దయచేసి కనీసం ఒక తేదీనైనా ఎంచుకోండి.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "సమయం",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "దయచేసి కనీసం ఒక సమయ పరిధిని ఎంపిక చేయండి.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "ప్రాధాన్యతలను సేవ్ చేయండి",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "మీరు మునుపటి పేజీకి తిరిగి వెళ్లి అందుబాటులో ఉన్న స్లాట్‌ను ఎంచుకోవాలని అనుకుంటే",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "ఇక్కడ క్లిక్ చేయండి.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "మీ కోసం పని చేసే ఎంపిక కనిపించలేదా?",
       "note" : "Text for nhe preference card title"
@@ -2713,7 +2817,7 @@
       "note" : "Text for nhe preference card go to nhe link"
     },
     "BB-consent-existing-application-notice-title" : {
-      "value" : "మీకు యాక్టివ్ జాబ్ అప్లికేషన్ ఉంది",
+      "value" : "మీరు యాక్టివ్ జాబ్ అప్లికేషన్‌ని కలిగి ఉన్నారు",
       "note" : "Text for consent existing application notice title"
     },
     "BB-consent-existing-application-notice-text1" : {
@@ -2731,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "కొనసాగించండి",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "అప్లికేషన్‌ల జాబితాను పొందడానికి అభ్యర్థి Id అవసరం.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "ఈ వినియోగదారు కోసం అప్లికేషన్‌ల జాబితాను పొందేందుకు మీకు యాక్సెస్ లేదు.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "అప్లికేషన్‌లను జాబితా చేయడం సాధ్యపడలేదు.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

@@ -292,6 +292,62 @@
       "value" : "Om ditt startdatum försenas får du ytterligare information om nästa steg.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Du har klarat bedömningen. Här är det villkorliga anställningserbjudandet för det jobb du valt",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Vad är ett villkorligt anställningserbjudande?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Visa jobbeskrivning",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "Jobbeskrivning",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Vad är ett villkorligt anställningserbjudande?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "För att vara berättigad till erbjudandet måste du",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "fylla i registreringsdokument (i förekommande fall)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "framgångsrikt slutföra en bakgrundskontroll",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "framgångsrikt slutföra ett medicinskt test (i förekommande fall)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "framgångsrikt slutföra kontroll av behörighet för återanställning (i förekommande fall)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "ha rätt att arbeta i Storbritannien och tillhandahålla erforderliga bevis",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "underteckna och återlämna anställningsavtalet",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "framgångsrikt delta i och slutföra introduktionsutbildningen/Dag 0 samt en hälso- och säkerhetsbedömning",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Ditt startdatum för önskat skift och/eller antal timmar, schema och plats kan ändras med förbehåll för affärsbehov.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Vad menas med en säsongsanställning?",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,6 +2815,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Välj dina preferenser för evenemanget inför anställning",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Du har redan en aktiv jobbansökan. Du kan bara ha en aktiv ansökan åt gången. Om du skickar in denna ansökan kommer din befintliga ansökan att dras tillbaka.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "För att fortsätta eller se din ansökan, klicka på ”Gå till kontrollpanel”. Klicka på ”Fortsätt” för att fortsätta med denna ansökan",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Gå till kontrollpanelen",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Fortsätt",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

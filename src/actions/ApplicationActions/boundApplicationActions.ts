@@ -14,7 +14,7 @@ import {
   actionGetApplicationList,
   actionUpdateApplicationDS,
   actionUpdateWorkflowName,
-  actionWithdrawApplication
+  actionWithdrawMultipleApplication
 } from "./applicationActions";
 import { Application } from "../../utils/types/common";
 
@@ -36,5 +36,5 @@ export const boundCreateApplicationAndSkipScheduleDS = (payload: CreateApplicati
 export const boundGetApplicationList = (payload: GetApplicationListRequest, onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionGetApplicationList(payload, onSuccess, onError));
 
-export const boundWithdrawApplication = (payload: Application[], onSuccess?: Function, onError?: Function) =>
-  store.dispatch(actionWithdrawApplication(payload, onSuccess, onError));
+export const boundWithdrawMultipleApplication = (payload: Application[], onSuccess?: Function, onError?: Function) =>
+  store.dispatch(actionWithdrawMultipleApplication(payload, onSuccess, onError));

@@ -95,7 +95,6 @@ import {
 import store from "../../../src/store/store";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
 import SpyInstance = jest.SpyInstance;
-import { Application } from "../../../src/utils/types/common";
 
 jest.mock("../../../src/helpers/log-helper");
 
@@ -1468,7 +1467,7 @@ test("isCandidateApplyingToTheSameJobId", () => {
 
 test("bulkWithdrawAndSubmitApplication", () => {
   const callback = jest.fn();
-  const boundWithdrawApplicationSpy = jest.spyOn(boundApplicationActions, "boundWithdrawApplication");
+  const boundWithdrawApplicationSpy = jest.spyOn(boundApplicationActions, "boundWithdrawMultipleApplication");
   bulkWithdrawAndSubmitApplication([TEST_APPLICATION, TEST_APPLICATION], callback);
 
   expect(boundWithdrawApplicationSpy).toHaveBeenCalledWith([TEST_APPLICATION, TEST_APPLICATION], expect.any(Function));

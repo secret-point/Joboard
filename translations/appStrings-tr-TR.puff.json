@@ -292,6 +292,62 @@
       "value" : "İşe başlama tarihiniz ertelenirse sonraki adımlarla ilgili ek bilgiler alacaksınız.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Değerlendirmeyi geçtiniz. İşte seçtiğiniz iş için koşullu istihdam teklifi",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Koşullu istihdam teklifi nedir?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "İş tanımını görüntüle",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "İş tanımı",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Koşullu istihdam teklifi nedir?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Bu teklif size bağlıdır:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "kayıt belgelerinin tamamlanması (uygulanabildiği yerde)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "bir geçmiş sorgulamasını başarıyla tamamlama",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "tıbbi testi başarıyla tamamlama (uygulanabildiği yerde)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "yeniden işe alma uygunluğunu başarıyla tamamlama (uygulanabildiği yerde)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "Birleşik Krallık'ta çalışma hakkına sahip olmak ve gerekli kanıtları sağlamak",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "istihdam sözleşmesinin imzalanması ve iade edilmesi",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "bir sağlık ve güvenlik değerlendirmesi dahil başlangıç ​​eğitimi/0. güne başarılı katılım ve tamamlama",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Tercih ettiğiniz vardiya ve/veya saat sayısı için başlangıç tarihiniz, program ve konum iş talebine bağlı olarak değişebilir.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Sezonluk süre ne anlama geliyor?",
       "note" : "Text for about seasonal duration popover title"
@@ -2748,8 +2804,20 @@
       "value" : "Buraya tıklayın.",
       "note" : "Text for nhe preference click here link"
     },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Size uyan bir seçenek görmüyor musunuz?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Etkinlik tercihlerinizi gönderebilirsiniz, size uyan bir zaman bulduğumuzda sizinle iletişime geçeceğiz.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "İşe alım öncesi etkinlik tercihlerinizi seçin",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
     "BB-consent-existing-application-notice-title" : {
-      "value" : "Aktif bir iş başvurunuz var.",
+      "value" : "Aktif bir iş başvurunuz var",
       "note" : "Text for consent existing application notice title"
     },
     "BB-consent-existing-application-notice-text1" : {
@@ -2767,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "Devam et.",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "Başvuru listesini almak için aday kimliği gereklidir.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Bu kullanıcı adına başvuru listesi almak için erişiminiz yok.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Başvurular listelenemiyor.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

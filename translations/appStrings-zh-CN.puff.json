@@ -292,6 +292,62 @@
       "value" : "如果您的开始日期延迟，您会另外收到有关后续步骤的信息。",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "您已通过评估。这是您申请的职位的有条件聘用通知",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "什么是有条件聘用通知？",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "查看职位描述",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "职位描述",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "什么是有条件聘用通知？",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "这是向您提供的有条件聘用通知：",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "填写注册文件（如适用）",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "成功完成背景调查",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "成功完成体检（如适用）",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "成功完成重新聘用资格（如适用）",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "有权在英国工作并提供所需的证明",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "签订并返还聘用合同",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "成功参加并完成入职培训/报到，包括健康和安全评估",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "您的首选班次的开始日期和/或工时、工作时间表和工作地点可能会因业务需求而发生变化。",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "季节性时长是什么意思？",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,10 +2815,6 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "选择您的聘用前活动的首选项",
       "note" : "Text for nhe preference card go to nhe link"
-    },
-    "BB-consent-existing-application-notice-title" : {
-      "value" : "您有一个有效的职位申请",
-      "note" : "Text for consent existing application notice title"
     },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "您已有一个有效的职位申请。同一时间您只能有一个有效的申请。如果您提交此申请，您的现有申请将被撤回。",

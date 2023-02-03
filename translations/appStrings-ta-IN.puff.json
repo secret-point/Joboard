@@ -292,6 +292,62 @@
       "value" : "உங்கள் தொடக்கத் தேதி தாமதமாகிறது எனில், அடுத்த படிகள் பற்றிய கூடுதல் தகவல்களைப் பெறுவீர்கள்.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "மதிப்பீட்டில் தேர்ச்சி பெற்றுவிட்டீர்கள். நீங்கள் தேர்ந்தெடுத்த வேலைக்கான நிபந்தனையுடன் கூடிய வேலை வாய்ப்பு இதோ",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "நிபந்தனையுடன் கூடிய வேலை வாய்ப்பு என்றால் என்ன?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "வேலை விவரத்தைக் காண்க",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "வேலை குறித்த விளக்கம்",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "நிபந்தனையுடன் கூடிய வேலை வாய்ப்பு என்றால் என்ன?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "நிபந்தனைக்குட்பட்டு இந்தச் சலுகை உங்களுக்கு வழங்கப்படுகிறது:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "பதிவு ஆவணங்களை நிறைவு செய்தல் (பொருந்தக்கூடிய இடங்களில்)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "பின்னணிச் சரிபார்ப்பை வெற்றிகரமாக நிறைவு செய்தல்",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "மருத்துவப் பரிசோதனையை வெற்றிகரமாக முடித்தல் (பொருந்தக்கூடிய இடங்களில்)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "மீண்டும் பணியமர்த்தல் தகுதியை வெற்றிகரமாக முடித்தல் (பொருந்தக்கூடிய இடங்களில்)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UKஇல் பணிபுரிவதற்கான உரிமை மற்றும் தேவையான சான்றுகளை வழங்குதல்",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "வேலை ஒப்பந்தத்தில் கையொப்பமிட்டு திருப்பியனுப்புதல்",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "சுகாதாரம் மற்றும் பாதுகாப்பு மதிப்பீடு உட்பட, வேலையின் ஆரம்பக்கட்டப் பயிற்சி/நாள் 0 இல் வெற்றிகரமாகக் கலந்துகொண்டு நிறைவு செய்தல்",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "உங்கள் விருப்பமான ஷிஃப்ட்டிற்கான தொடக்கத் தேதி மற்றும்/அல்லது மணிநேரம், திட்ட அட்டவணை, இருப்பிடம் ஆகியவை வணிகத் தேவைக்கு உட்பட்டு மாறலாம்.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "குறிப்பிட்ட கால அளவுப் பணி என்றால் என்ன?",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,6 +2815,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "பணியமர்த்தலுக்கு முன்பான நிகழ்வுக்கான நேரத்தைத் தேர்ந்தெடுக்கவும்",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "உங்களின் ஒரு வேலை விண்ணப்பம் ஏற்கெனவே செயலில் உள்ளது. ஒரு நேரத்தில் ஒரு செயலிலுள்ள விண்ணப்பம் மட்டுமே உங்களிடம் இருக்க முடியும். இந்த விண்ணப்பத்தைச் சமர்ப்பித்தால், ஏற்கெனவே உள்ள விண்ணப்பம் திரும்பப் பெறப்படும்.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "உங்கள் விண்ணப்பத்தை மீண்டும் தொடங்க அல்லது பார்க்க, \"டாஷ்போர்டுக்குச் செல்க\" என்பதைக் கிளிக் செய்யவும். இந்த விண்ணப்பத்தைத் தொடர, \"தொடர்க\" என்பதைக் கிளிக் செய்யவும்",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "டாஷ்போர்டுக்குச் செல்க",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "தொடர்க",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

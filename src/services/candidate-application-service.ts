@@ -111,7 +111,7 @@ export default class CandidateApplicationService {
     };
   }
 
-  async withdrawApplication(applicationList: Application[]) {
+  async withdrawMultipleApplication(applicationList: Application[]) {
     const withdrawnApps: Application[] = [];
     try {
       for (const application of applicationList) {

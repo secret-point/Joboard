@@ -292,6 +292,62 @@
       "value" : "Als je startdatum is uitgesteld, ontvang je aanvullende informatie over de volgende stappen.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Je bent geslaagd voor de beoordeling. Hier is het voorwaardelijke aanbod van een baan voor de functie die je hebt gekozen",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Wat is een voorwaardelijk aanbod voor een baan?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Functieomschrijving bekijken",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "Functieomschrijving",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Wat is een voorwaardelijk aanbod voor een baan?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Dit aanbod is afhankelijk van:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "het invullen van registratiedocumenten (indien van toepassing)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "geslaagde afronding van een antecedentenonderzoek",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "geslaagde afronding van een medische test (indien van toepassing)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "geslaagde afronding van de geschiktheid voor een nieuwe werving (indien van toepassing)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "of je het recht hebt om in het VK te werken en hiervoor het vereiste bewijs kunt leveren",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "het ondertekenen en terugsturen van de arbeidsovereenkomst",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "geslaagde deelname aan en afronding van de introductietraining/dag 0, inclusief een gezondheids- en veiligheidsbeoordeling",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Je startdatum voor je favoriete ploegendienst en/of het aantal uren, uurrooster en locatie kunnen worden gewijzigd indien het bedrijf dit wenst.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Wat betekent een seizoensduur?",
       "note" : "Text for about seasonal duration popover title"
@@ -2699,6 +2755,82 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Selectie bevestigen",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Terug",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Specificeer de beschikbaarheid van je afspraak vóór indiensttreding",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Je kunt een locatie, datum en tijdsbestek selecteren waarop je beschikbaar bent. We nemen binnen 1 werkdag contact met je op om je afspraak te bevestigen. Gelieve op de locatie van het vóór-indiensttredingsevenement te zijn op de datum en tijd die zijn vermeld in de bevestiging van de afspraak. We kijken ernaar uit om je binnenkort te zien.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Locatie",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Selecteer de locatie.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Datum",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Selecteer ten minste één datum.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Tijd",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Selecteer ten minste één tijdspanne.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Voorkeuren opslaan",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Als je terug wilt gaan naar de vorige pagina en een beschikbaar slot wilt selecteren",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "klik hier.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Zie je geen optie die jou uitkomt?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Je kunt je evenementvoorkeuren opgeven en we nemen contact met je op als we een tijdstip hebben gevonden dat bij je past.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Selecteer je voorkeuren voor evenementen voorafgaand aan de verhuur",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Je hebt al een actieve sollicitatie. Je kunt maar één actieve sollicitatie tegelijk hebben. Als je deze sollicitatie indient, wordt je bestaande sollicitatie ingetrokken.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Om je sollicitatie te hervatten of te bekijken, klik op 'Naar het dashboard gaan'. Klik op 'Doorgaan' om door te gaan met deze sollicitatie",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Naar het dashboard gaan",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Doorgaan",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

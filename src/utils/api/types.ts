@@ -27,7 +27,7 @@ export interface GetApplicationResponse {
   errorCode: GET_APPLICATION_ERROR_CODE;
 }
 
-export interface WithdrawApplicationResponse {
+export interface WithdrawMultipleApplicationResponse {
   data: Application[];
   error: string;
   errorCode: WITHDRAW_APPLICATION_ERROR_CODE;

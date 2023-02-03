@@ -292,6 +292,62 @@
       "value" : "אם תאריך ההתחלה שלך מתעכב, תקבל מידע נוסף בנוגע לשלבים הבאים.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "עברת את ההערכה. הנה ההצעה המותנית של תעסוקה לתפקיד שבחרת",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "מהי הצעה מותנית של תעסוקה?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "הצגת תיאור המשרה",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "תיאור התפקיד",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "מהי הצעה מותנית של תעסוקה?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "הצעה זו מותנית בך:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "השלמת מסמכי הרישום (במידת הצורך)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "השלמת בדיקת רקע התבצעה בהצלחה",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "השלמת בדיקה רפואית בהצלחה (במידת הצורך)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "השלמת הזכאות לעבודה מחדש עברה בהצלחה (במקרים רלוונטים)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "בעל זכות לעבוד בבריטניה ואספקת הראיות הנדרשות",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "חתימה והחזרת חוזה ההעסקה",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "השתתפות בהצלחה והשלמת אימון אינדוקציה/יום 0, כולל הערכת בריאות ובטיחות",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "תאריך ההתחלה שלך למשמרת המועדפת עליך ו/או מספר השעות, לוח הזמנים והמיקום שלך עשויים להשתנות בכפוף לביקוש העסקי.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "מה המשמעות של משך הזמן העונתי?",
       "note" : "Text for about seasonal duration popover title"
@@ -2761,7 +2817,7 @@
       "note" : "Text for nhe preference card go to nhe link"
     },
     "BB-consent-existing-application-notice-title" : {
-      "value" : "יש לך הגשת מועמדות פעילה לעבודה",
+      "value" : "יש לך הגשת מועמדות פעילה",
       "note" : "Text for consent existing application notice title"
     },
     "BB-consent-existing-application-notice-text1" : {
@@ -2779,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "המשך",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "יש להזין את מזהה המועמד כדי לקבל רשימת הגשות מועמדות.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "אין לך גישה לקבלת רשימה של הגשות מועמדות עבור משתמש זה.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "לא ניתן לרשום הגשות מועמדות.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

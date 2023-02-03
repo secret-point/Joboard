@@ -27,12 +27,12 @@ import {
   UpdateWorkflowStepNameAction,
   UpdateWorkflowStepNameFailedAction,
   UpdateWorkflowStepNameSuccessAction,
-  WithdrawApplicationAction,
-  WithdrawApplicationFailedAction,
-  WithdrawApplicationSuccessAction
+  WithdrawMultipleApplicationAction,
+  WithdrawMultipleApplicationFailedAction,
+  WithdrawMultipleApplicationSuccessAction
 } from "./applicationActionTypes";
 import { loadingStatusHelper } from "../../utils/helper";
-import { ProxyApiError } from "../../utils/api/types";
+import { ApiError } from "../../utils/api/types";
 
 export const actionGetApplication = ( payload: GetApplicationRequest, onSuccess?: Function, onError?: Function ): GetApplicationAction => {
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION, payload, onSuccess, onError };
@@ -42,7 +42,7 @@ export const actionGetApplicationSuccess = ( payload: Application ): GetApplicat
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionGetApplicationFailed = ( payload: any ): GetApplicationFailedAction => {
+export const actionGetApplicationFailed = ( payload: ApiError ): GetApplicationFailedAction => {
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_FAILED, payload };
 };
 
@@ -55,7 +55,7 @@ export const actionCreateApplicationDSSuccess = ( payload: Application, ): Creat
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionCreateApplicationDSFailed = ( payload: any ): CreateApplicationFailedActionDS => {
+export const actionCreateApplicationDSFailed = ( payload: ApiError ): CreateApplicationFailedActionDS => {
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED, payload };
 };
 
@@ -68,7 +68,7 @@ export const actionUpdateApplicationDSSuccess = ( payload: Application, ): Updat
   return { type: APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionUpdateApplicationDSFailed = ( payload: any ): UpdateApplicationFailedActionDS => {
+export const actionUpdateApplicationDSFailed = ( payload: ApiError ): UpdateApplicationFailedActionDS => {
   return { type: APPLICATION_ACTION_TYPES.UPDATE_APPLICATION_FAILED, payload };
 };
 
@@ -94,7 +94,7 @@ export const actionCreateApplicationAndSkipScheduleDSSuccess = ( payload: Applic
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionCreateApplicationAndSkipScheduleDSFailed = ( payload: ProxyApiError ): CreateApplicationAndSkipScheduleFailedActionDS => {
+export const actionCreateApplicationAndSkipScheduleDSFailed = ( payload: ApiError ): CreateApplicationAndSkipScheduleFailedActionDS => {
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_AND_SKIP_SCHEDULE_FAILED, payload };
 };
 
@@ -106,17 +106,17 @@ export const actionGetApplicationListSuccess = ( payload: Application[] ): GetAp
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionGetApplicationListFailed = ( payload: any ): GetApplicationListFailedAction => {
+export const actionGetApplicationListFailed = ( payload: ApiError ): GetApplicationListFailedAction => {
   return { type: APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST_FAILED, payload };
 };
 
-export const actionWithdrawApplication = (payload: Application[], onSuccess?: Function, onError?: Function): WithdrawApplicationAction => {
-  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION, payload, onSuccess, onError };
+export const actionWithdrawMultipleApplication = (payload: Application[], onSuccess?: Function, onError?: Function): WithdrawMultipleApplicationAction => {
+  return { type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION, payload, onSuccess, onError };
 };
-export const actionWithdrawApplicationSuccess = (payload: Application[]): WithdrawApplicationSuccessAction => {
-  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_SUCCESS, payload };
+export const actionWithdrawMultipleApplicationSuccess = (payload: Application[]): WithdrawMultipleApplicationSuccessAction => {
+  return { type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_SUCCESS, payload };
 };
 
-export const actionWithdrawApplicationFailed = (payload: any): WithdrawApplicationFailedAction => {
-  return { type: APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION_FAILED, payload };
+export const actionWithdrawMultipleApplicationFailed = (payload: ApiError): WithdrawMultipleApplicationFailedAction => {
+  return { type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_FAILED, payload };
 };

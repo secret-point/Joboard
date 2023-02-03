@@ -2815,6 +2815,38 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "আপনার প্রাক-হায়ার করা ইভেন্ট পছন্দগুলি নির্বাচন করুন",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "আপনার একটি সক্রিয় চাকরির আবেদন আছে",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "আপনার ইতিমধ্যে একটি সক্রিয় চাকরির আবেদন আছে। আপনার একটি সময়ে শুধুমাত্র একটি সক্রিয় আবেদন থাকতে পারবে। আপনি যদি এই আবেদনপত্র জমা দেন, তবে আপনার বিদ্যমান আবেদন প্রত্যাহার করা হবে।",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "আপনার আবেদন পুনরায় চালু করতে বা দেখতে, “ড্যাশবোর্ডে যান” এ ক্লিক করুন। এই আবেদনটি চালিয়ে যেতে, “চালিয়ে যান”-এ ক্লিক করুন",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "ড্যাশবোর্ডে যান",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "চালিয়ে যান",
+      "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "আবেদনের তালিকা পেতে প্রার্থীর আইডি প্রয়োজন।",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "এই ব্যবহারকারীর জন্য আবেদনগুলির একটি তালিকা পেতে আপনার কাছে কোনো অ্যাক্সেস নেই।",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "আবেদন তালিকা করতে অক্ষম।",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

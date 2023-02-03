@@ -18,7 +18,7 @@ import { postAdobeMetrics } from "../actions/AdobeActions/adobeActions";
 import {
   boundGetApplication,
   boundUpdateApplicationDS,
-  boundWithdrawApplication
+  boundWithdrawMultipleApplication
 } from "../actions/ApplicationActions/boundApplicationActions";
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
@@ -1997,7 +1997,7 @@ export const getApplicationWithdrawalReason = (currentApp: Application, prevApp:
 };
 
 export const bulkWithdrawAndSubmitApplication = (applicationList: Application[], callback: Function) => {
-  boundWithdrawApplication(applicationList, () => {
+  boundWithdrawMultipleApplication(applicationList, () => {
     // call the callback when the last application is withdrawn successfully
     callback();
   });

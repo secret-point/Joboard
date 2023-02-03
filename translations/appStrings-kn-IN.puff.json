@@ -2700,6 +2700,54 @@
       "value" : "ಆಯ್ಕೆಯನ್ನು ದೃಢೀಕರಿಸಿ",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "ಹಿಂದೆ",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "ನಿಮ್ಮ ಪ್ರಿ-ಹೈರ್ ನೇಮಕಾತಿ ಲಭ್ಯತೆಯನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "ನೀವು ಲಭ್ಯವಿರುವ ಸ್ಥಳ, ದಿನಾಂಕ ಮತ್ತು ಸಮಯದ ಮಿತಿಯನ್ನು ನೀವು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ನಿಮ್ಮ ನೇಮಕಾತಿಯನ್ನು ದೃಢೀಕರಿಸುವ 1 ವ್ಯವಹಾರ ದಿನದೊಳಗೆ ನಾವು ನಿಮ್ಮನ್ನು ತಲುಪುತ್ತೇವೆ. ನೇಮಕಾತಿ ದೃಢೀಕರಣ ಸಂವಹನದಲ್ಲಿ ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ದಿನಾಂಕ ಮತ್ತು ಸಮಯಕ್ಕೆ ದಯವಿಟ್ಟು ಪ್ರಿ-ಹೈರ್ ಈವೆಂಟ್ ಸ್ಥಳಕ್ಕೆ ಆಗಮಿಸಿ. ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮನ್ನು ನೋಡಲು ನಾವು ಕಾತುರರಾಗಿದ್ದೇವೆ.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "ಸ್ಥಳ",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಸ್ಥಳವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "ದಿನಾಂಕ",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "ಸಮಯ",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಬಾರಿ ಸಮಯ ಸಮಯದ ಮಿತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "ಆದ್ಯತೆಗಳನ್ನು ಉಳಿಸಿ",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "ನೀವು ಹಿಂದಿನ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ ಮತ್ತು ಲಭ್ಯವಿರುವ ಸ್ಲಾಟ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಬಯಸಿದರೆ",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುವ ಆಯ್ಕೆಯನ್ನು ನೋಡುತ್ತಿಲ್ಲವೇ?",
       "note" : "Text for nhe preference card title"
@@ -2711,6 +2759,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "ನಿಮ್ಮ ಪ್ರಿ-ಹೈರ್ ಈವೆಂಟ್ ಆದ್ಯತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "ನೀವು ಈಗಾಗಲೇ ಸಕ್ರಿಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಒಂದು ಸಮಯದಲ್ಲಿ ಕೇವಲ ಒಂದು ಸಕ್ರಿಯ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿರಬಹುದು. ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಲ್ಲಿಸಿದರೆ, ನಿಮ್ಮ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂಪಡೆಯಲಾಗುತ್ತದೆ.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್‌ ಅನ್ನು ಪುನರಾರಂಭಿಸಲು ಅಥವಾ ನೋಡಲು, \"ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹೋಗಿ\" ಕ್ಲಿಕ್ ಮಾಡಿ. ಈ ಅಪ್ಲಿಕೇಶನ್‍‌ನೊಂದಿಗೆ ಮುಂದುವರಿಯಲು, \"ಮುಂದುವರಿಸಿ\" ಕ್ಲಿಕ್ ಮಾಡಿ",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹೋಗಿ",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "ಮುಂದುವರಿಸಿ",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

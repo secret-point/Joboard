@@ -2848,6 +2848,114 @@
         "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications": {
             "note": "Error message when get applications by candidate Id can not list applications",
             "value": "Unable to list applications."
+        },
+        "BB-review-submit-withdraw-existing-application-notice-submit-application-button": {
+            "note": "Text for submit application button in withdraw existing application modal notice",
+            "value": "Yes, Submit new application"
+        },
+        "BB-review-submit-withdraw-existing-application-go-to-dashboard-button": {
+            "note": "Text for go to dashboard button in withdraw existing application modal notice",
+            "value": "No, go to existing application"
+        },
+        "BB-review-submit-withdraw-existing-application-notice-content-text": {
+            "note": "Text content for withdraw existing application modal notice",
+            "value": "You already have other active job application(s). If you submit this job application, your other job application(s) will be withdrawn. Would you like to submit this job application and withdraw other job application(s)?"
+        },
+        "BB-review-submit-withdraw-existing-application-notice-title": {
+            "note": "Text for withdraw existing application modal notice title",
+            "value": "Withdraw existing application?"
+        },
+        "BB-review-submit-pre-hire-appointment-time-label": {
+            "note": "Text for prehire appointment time label",
+            "value": "Time"
+        },
+        "BB-review-submit-pre-hire-appointment-dates-label": {
+            "note": "Text for prehire appointment dates label",
+            "value": "Dates"
+        },
+        "BB-review-submit-pre-hire-appointment-city-label": {
+            "note": "Text for prehire appointment city label",
+            "value": "City"
+        },
+        "BB-ReviewSubmit-nhe-preference-section-title-text": {
+            "note": "Text for review-submit nhe preference section title",
+            "value": "Your pre-hire appointment availability"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label": {
+            "note": "Text for review-submit nhe appointment section meeting details",
+            "value": "Meeting details"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-section-hours-label": {
+            "note": "Text for review-submit nhe appointment section Hours",
+            "value": "Hours"
+        },
+        "BB-ReviewSubmit-pre-hire-appointment-date-label": {
+            "note": "Text for review-submit nhe appointment section date",
+            "value": "Date"
+        },
+        "BB-review-submit-additional-info-temporary-id-number-notice": {
+            "note": "Text for review-submit additional information temporary id notice",
+            "value": "If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\"."
+        },
+        "BB-review-submit-additional-info-previous-worked-at-amazon-label": {
+            "note": "Text for review-submit additional information have worked at Amazon label",
+            "value": "Have you worked with Amazon in the past?"
+        },
+        "BB-review-submit-additional-info-dob-label": {
+            "note": "Text for review-submit additional information date of birth label",
+            "value": "Date of birth"
+        },
+        "BB-review-submit-additional-info-national-id-number-label": {
+            "note": "Text for review-submit additional information id number label",
+            "value": "National ID Number"
+        },
+        "BB-review-submit-additional-info-national-id-type-label": {
+            "note": "Text for review-submit additional information id type label",
+            "value": "National ID Type"
+        },
+        "BB-review-submit-additional-info-country-label": {
+            "note": "Text for review-submit additional information country label",
+            "value": "Country"
+        },
+        "BB-review-submit-additional-info-postal-code-label": {
+            "note": "Text for review-submit additional information postal code label",
+            "value": "Postal code"
+        },
+        "BB-review-submit-additional-info-city-label": {
+            "note": "Text for review-submit additional information city label",
+            "value": "City"
+        },
+        "BB-review-submit-additional-info-address-label": {
+            "note": "Text for review-submit additional information Address label",
+            "value": "Address"
+        },
+        "BB-ReviewSubmit-additional-info-section-title-text": {
+            "note": "Text for review-submit additional information section title",
+            "value": "Additional information"
+        },
+        "BB-rev-ew-submit-shift-preference-time-pattern-label": {
+            "note": "Text for review-submit shift preference time pattern label",
+            "value": "Time pattern"
+        },
+        "BB-rev-ew-submit-shift-preference-days-of-week-label": {
+            "note": "Text for review-submit shift preference days of week label",
+            "value": "Days of week"
+        },
+        "BB-rev-ew-submit-shift-preference-hours-per-week-label": {
+            "note": "Text for review-submit shift preference Hours per week label",
+            "value": "Hours per week"
+        },
+        "BB-rev-ew-submit-shift-preference-earliest-start-date-label": {
+            "note": "Text for review-submit shift preference Earliest start date label",
+            "value": "Earliest start date"
+        },
+        "BB-ReviewSubmit-shift-preference-section-title-text": {
+            "note": "Text for review-submit shift preference section title",
+            "value": "Shift preferences"
+        },
+        "BB-withdraw-application-error-message-failed-withdraw-application-error": {
+            "note": "Text for withdraw multiple application failure error message",
+            "value": "Failed to withdraw application."
         }
     }
 }

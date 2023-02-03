@@ -292,6 +292,62 @@
       "value" : "Pokud se datum nástupu opozdí, obdržíte další informace týkající se dalších kroků.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Úspěšně jste prošli hodnocením. Zde je podmíněná nabídka zaměstnání pro pracovní místo, které jste si vybrali",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Co je podmíněná nabídka zaměstnání?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Zobrazit popis pracovní pozice",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "O pozici",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Co je podmíněná nabídka zaměstnání?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Tato nabídka je podmíněna:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "vyplněním registračních dokumentů (v případě potřeby)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "úspěšným absolvováním prověrky",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "úspěšným absolvováním lékařské prohlídky (v případě potřeby)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "úspěšným splněním podmínek pro opětovné přijetí do zaměstnání (v příslušných případech)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "povolením k práci ve Spojeném království a předložením požadovaných dokladů",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "podepsáním a vrácením pracovní smlouvy",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "úspěšným absolvováním úvodního školení/dne 0, včetně hodnocení bezpečnosti a ochrany zdraví při práci",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Datum nástupu na Vámi preferovanou směnu a/nebo počet hodin, rozvrh a lokalita se mohou změnit v závislosti na poptávce firmy.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Co znamená sezónní trvání?",
       "note" : "Text for about seasonal duration popover title"
@@ -2699,6 +2755,82 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "Potvrdit výběr",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "Zpět",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "Uveďte Vaše časové možnosti pro schůzku před přijetím",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "Můžete vybrat místo, datum a časové rozmezí, ve kterém jste k dispozici. Během 1 pracovního dne Vás budeme kontaktovat s potvrzením Vaší schůzky. Dostavte se prosím na místo schůzky před přijetím v den a čas uvedený ve sdělení potvrzujícím schůzku. Těšíme se, že se brzy uvidíme.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "Místo",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "Vyberte prosím místo.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "Datum",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "Vyberte prosím alespoň jedno datum.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "Čas",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "Vyberte prosím alespoň jedno časové rozmezí.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "Uložit předvolby",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "Pokud se chcete vrátit na předchozí stránku a vybrat dostupný slot",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "klikněte sem.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "Nevidíte možnost, která by Vám vyhovovala?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "Můžete zadat své předvolby pro událost a my Vás budeme kontaktovat, jakmile najdeme čas, který Vám bude vyhovovat.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "Vyberte předvolby pro událost před přijetím",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Již máte aktivní žádost o zaměstnání. V jednu chvíli můžete mít aktivní pouze jednu žádost. Pokud tuto žádost podáte, bude Vaše stávající žádost stažena.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "Chcete-li obnovit nebo zobrazit svou žádost, klikněte na možnost „Přejít na řídicí panel“. Chcete-li v této žádosti pokračovat, klikněte na možnost „Pokračovat“",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Přejít na řídicí panel",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Pokračovat",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

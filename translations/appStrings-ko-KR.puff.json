@@ -292,6 +292,62 @@
       "value" : "시작일이 지연되는 경우 다음 단계에 대한 추가 정보를 받게 됩니다.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "평가를 통과했습니다. 선택한 직무에 대한 조건부 고용 오퍼는 다음과 같습니다.",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "조건부 고용 오퍼란 무엇인가요?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "직무 설명 보기",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "직무 설명",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "조건부 고용 오퍼란 무엇인가요?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "이 오퍼는 귀하를 대상으로 하는 조건부입니다.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "등록 문서 작성 완료(해당하는 경우)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "신원 조사 성공적으로 완료",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "건강 검진을 성공적으로 완료(해당하는 경우)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "재고용 자격을 성공적으로 완료(해당하는 경우)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UK에서 일할 권리가 있으며 필수 증빙 자료를 제공",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "고용 계약서 서명 및 반환",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "건강 및 안전 평가를 포함한 신규 교육/0일차에 성공적으로 참여 및 완료",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "원하는 교대 근무 시작 날짜 및/또는 근무 시간, 일정 및 지점은 비즈니스 수요에 따라 변경될 수 있습니다.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "시즌 기간제는 무슨 의미인가요?",
       "note" : "Text for about seasonal duration popover title"
@@ -2700,6 +2756,54 @@
       "value" : "선택 확인",
       "note" : "Text for nhe appointment confirm selection button"
     },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "뒤로",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "채용 전 면담 참석 가능 여부를 지정하세요.",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "사용 가능한 위치, 날짜 및 기간을 선택할 수 있습니다. 예약을 확인하기 위해 영업일 기준 1일 이내에 연락을 드리겠습니다. 예약 확인 안내문에 명시된 날짜 및 시간에 채용 전 면담 장소에 도착해주시기를 바랍니다. 그럼 곧 뵙겠습니다.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "위치",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "위치를 선택하세요.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "날짜",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "날짜를 하나 이상 선택하세요.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "시간",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "시간 범위를 하나 이상 선택하세요.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "기본 설정 저장",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "이전 페이지로 돌아가서 이용 가능한 슬롯을 선택하려면",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "여기를 클릭하세요.",
+      "note" : "Text for nhe preference click here link"
+    },
     "BB-nhe-preference-card-title-text" : {
       "value" : "본인에게 맞는 선택 조건을 찾을 수 없나요?",
       "note" : "Text for nhe preference card title"
@@ -2731,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "계속",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "지원서 목록을 받으려면 후보자 ID가 필요합니다.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "이 사용자의 지원서 목록을 가져올 수 있는 권한이 없습니다.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "지원서를 나열할 수 없습니다.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

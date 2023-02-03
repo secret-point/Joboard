@@ -292,6 +292,62 @@
       "value" : "നിങ്ങളുടെ ആരംഭ തീയതി വൈകിയാൽ, അടുത്ത ഘട്ടങ്ങൾ സംബന്ധിച്ച കൂടുതൽ വിവരങ്ങൾ നിങ്ങൾക്ക് ലഭിക്കും.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "നിങ്ങൾ വിലയിരുത്തലിൽ വിജയിച്ചു. നിങ്ങൾ തിരഞ്ഞെടുത്ത ജോലിക്കുള്ള ഉപാധികളോടെയുള്ള തൊഴിൽ ഓഫർ ഇതാ",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "ഉപാധികളോടെയുള്ള തൊഴിൽ ഓഫർ എന്നാല്‍ എന്താണ്?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "ജോലി വിവരണം കാണുക",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "ജോലി വിവരണം",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "ഉപാധികളോടെയുള്ള തൊഴിൽ ഓഫർ എന്നാല്‍ എന്താണ്?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "ഈ ഓഫർ നിങ്ങൾക്ക് ഉപാധികളോടെയുള്ളതാണ്:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "രജിസ്ട്രേഷൻ രേഖകൾ പൂർത്തിയാക്കുന്നു (ബാധകമാകുന്നിടത്ത്)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "ഒരു പശ്ചാത്തല പരിശോധന വിജയകരമായി പൂർത്തിയാക്കുന്നു",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "ഒരു മെഡിക്കൽ ടെസ്റ്റ് വിജയകരമായി പൂർത്തിയാക്കുന്നു (ബാധകമാകുന്നിടത്ത്)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "റീഹയര്‍ യോഗ്യത വിജയകരമായി പൂർത്തിയാക്കുന്നു (ബാധകമാകുന്നിടത്ത്)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UK-ൽ ജോലി ചെയ്യാനുള്ള അവകാശം നേടുന്നതിനും ആവശ്യമായ തെളിവുകൾ നൽകാനും",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "തൊഴിൽ കരാർ ഒപ്പിടുകയും തിരികെ നൽകുകയും ചെയ്യുന്നു",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "ആരോഗ്യ സുരക്ഷാ വിലയിരുത്തൽ ഉൾപ്പെടെ, ഇൻഡക്ഷൻ പരിശീലനം/ദിവസം 0 വിജയകരമായി പങ്കെടുക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുന്നു",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത ഷിഫ്റ്റിന്റെ ആരംഭ തീയതി കൂടാതെ/അല്ലെങ്കിൽ സമയ ദൈര്‍ഘ്യം, ഷെഡ്യൂൾ, ലൊക്കേഷൻ എന്നിവ ബിസിനസ്സ് ഡിമാൻഡിന് വിധേയമായി മാറിയേക്കാം.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "ഒരു സീസണൽ ദൈർഘ്യം എന്താണ് അർത്ഥമാക്കുന്നത്?",
       "note" : "Text for about seasonal duration popover title"
@@ -2699,6 +2755,82 @@
     "BB-kondo-nhe-page-confirm-selection-button-text" : {
       "value" : "തിരഞ്ഞെടുക്കൽ സ്ഥിരീകരിക്കുക",
       "note" : "Text for nhe appointment confirm selection button"
+    },
+    "BB-kondo-Go-To-nhe-Link" : {
+      "value" : "മടങ്ങുക",
+      "note" : "Text for nhe preference back button"
+    },
+    "BB-nhePreference-title-text" : {
+      "value" : "നിങ്ങളുടെ മുൻ‌കൂർ നിയമന അപ്പോയിന്‍മെന്‍റ് ലഭ്യത വ്യക്തമാക്കുക",
+      "note" : "Text for nhe preference page title"
+    },
+    "BB-nhe-preference-notice-text" : {
+      "value" : "നിങ്ങൾ ലഭ്യമാകുന്ന സ്ഥലവും തീയതിയും സമയപരിധിയും നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം. നിങ്ങളുടെ അപ്പോയിന്റ്മെന്റ് സ്ഥിരീകരിച്ച് ഒരു പ്രവൃത്തി ദിവസത്തിനുള്ളിൽ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും. അപ്പോയിന്റ്മെന്റ് സ്ഥിരീകരണ ആശയവിനിമയത്തിൽ വ്യക്തമാക്കിയ തീയതിയിലും സമയത്തിലും മുൻ‌കൂർ നിയമന ഇവന്റ് ലൊക്കേഷനിൽ ദയവായി എത്തിച്ചേരുക. നിങ്ങളെ താമസിയാതെ കാണുമെന്ന പ്രതീക്ഷയോടെ ഞങ്ങൾ കാത്തിരിക്കുകയാണ്.",
+      "note" : "Text for nhe preference selection notice"
+    },
+    "BB-nhePreference-location-input-label-text" : {
+      "value" : "ലൊക്കേഷൻ",
+      "note" : "Text for nhe preference location input label"
+    },
+    "BB-nhePreference-location-error-text" : {
+      "value" : "ദയവായി ലൊക്കേഷൻ തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for nhe preference location error"
+    },
+    "BB-nhePreference-date-label-text" : {
+      "value" : "തീയതി",
+      "note" : "Text for nhe preference date checklist label"
+    },
+    "BB-nhePreference-date-error-text" : {
+      "value" : "ദയവായി കുറഞ്ഞത് ഒരു തീയതിയെങ്കിലും തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhePreference-timeslot-label-text" : {
+      "value" : "സമയം",
+      "note" : "Text for nhe preference timeslot checklist label"
+    },
+    "BB-nhePreference-timeslot-error-text" : {
+      "value" : "ദയവായി കുറഞ്ഞത് ഒരു സമയ ശ്രേണിയെങ്കിലും തിരഞ്ഞെടുക്കുക.",
+      "note" : "Text for nhe preference date error"
+    },
+    "BB-nhe-preference-save-button" : {
+      "value" : "മുൻഗണനകൾ സംരക്ഷിക്കുക",
+      "note" : "Text for nhe preference save button"
+    },
+    "BB-nhe-preference-go-to-nhe-notice-text" : {
+      "value" : "നിങ്ങൾക്ക് മുമ്പത്തെ പേജിലേക്ക് തിരികെ പോയി ലഭ്യമായ ഒരു സ്ലോട്ട് തിരഞ്ഞെടുക്കാൻ താൽപ്പര്യമുണ്ടെങ്കിൽ",
+      "note" : "Text for nhe preference go to nhe page notice"
+    },
+    "BB-nhe-preference-click-here-text" : {
+      "value" : "ഇവിടെ ക്ലിക്ക് ചെയ്യുക.",
+      "note" : "Text for nhe preference click here link"
+    },
+    "BB-nhe-preference-card-title-text" : {
+      "value" : "നിങ്ങള്‍ക്ക് അനുയോജ്യമായ ഒരു ഓപ്ഷൻ‌ കാണുന്നില്ലേ?",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-content-text" : {
+      "value" : "നിങ്ങളുടെ ഇവന്റ് മുൻഗണനകൾ സമർപ്പിക്കാൻ കഴിയും, നിങ്ങൾക്ക് അനുയോജ്യമായ ഒരു സമയം കണ്ടെത്തുമ്പോൾ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "Text for nhe preference card title"
+    },
+    "BB-nhe-preference-card-go-to-nhe-preference-link" : {
+      "value" : "നിങ്ങളുടെ നിയമനത്തിന് മുമ്പുള്ള ഇവന്റ് മുൻഗണനകൾ തിരഞ്ഞെടുക്കുക",
+      "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "നിങ്ങൾക്ക് ഇതിനകം ഒരു സജീവമായ തൊഴിൽ അപേക്ഷ ഉണ്ട്. നിങ്ങൾക്ക് ഒരു സമയം ഒരു സജീവമായ അപേക്ഷ മാത്രമേ ഉണ്ടാകൂ. നിങ്ങൾ ഈ അപേക്ഷ സമർപ്പിക്കുകയാണെങ്കിൽ, നിങ്ങളുടെ നിലവിലുള്ള അപേക്ഷ പിൻവലിക്കും.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "നിങ്ങളുടെ അപേക്ഷ പുനരാരംഭിക്കുന്നതിനോ അല്ലെങ്കിൽ കാണുന്നതിനോ, “ഡാഷ് ബോർഡിലേക്ക് പോകുക” എന്നതിൽ ക്ലിക്ക് ചെയ്യുക. ഈ അപേക്ഷയിൽ തുടരുന്നതിന്, “തുടരുക” എന്നത് ക്ലിക്ക് ചെയ്യുക.",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "ഡാഷ് ബോർഡിലേക്ക് പോകുക",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "തുടരുക",
+      "note" : "Text for consent existing application continue button"
     }
   }
 }

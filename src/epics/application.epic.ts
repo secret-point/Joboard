@@ -13,8 +13,8 @@ import {
   actionUpdateApplicationDSSuccess,
   actionUpdateWorkflowNameFailed,
   actionUpdateWorkflowNameSuccess,
-  actionWithdrawApplicationFailed,
-  actionWithdrawApplicationSuccess
+  actionWithdrawMultipleApplicationFailed,
+  actionWithdrawMultipleApplicationSuccess
 } from "../actions/ApplicationActions/applicationActions";
 import {
   APPLICATION_ACTION_TYPES,
@@ -24,7 +24,7 @@ import {
   GetApplicationListAction,
   UpdateApplicationActionDS,
   UpdateWorkflowStepNameAction,
-  WithdrawApplicationAction
+  WithdrawMultipleApplicationAction
 } from "../actions/ApplicationActions/applicationActionTypes";
 import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
@@ -59,7 +59,7 @@ import {
   GetApplicationResponse,
   UpdateApplicationResponse,
   UpdateWorkflowNameResponse,
-  WithdrawApplicationResponse
+  WithdrawMultipleApplicationResponse
 } from "../utils/api/types";
 import { SelectedScheduleForUpdateApplication } from "../utils/apiTypes";
 import {
@@ -389,23 +389,23 @@ export const GetApplicationListEpic = ( action$: Observable<any> ) => {
   );
 };
 
-export const WithdrawApplicationEpic = ( action$: Observable<any> ) => {
+export const WithdrawMultipleApplicationEpic = ( action$: Observable<any> ) => {
   return action$.pipe(
-    ofType(APPLICATION_ACTION_TYPES.WIDHDRAW_APPLICATION),
-    switchMap(( action: WithdrawApplicationAction ) =>
-      from(new CandidateApplicationService().withdrawApplication(action.payload))
+    ofType(APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION),
+    switchMap(( action: WithdrawMultipleApplicationAction ) =>
+      from(new CandidateApplicationService().withdrawMultipleApplication(action.payload))
         .pipe(
           switchMap(epicSwitchMapHelper),
           switchMap(async ( response ) => {
             return response;
           }),
-          map(( response: WithdrawApplicationResponse ) => {
+          map(( response: WithdrawMultipleApplicationResponse ) => {
             const applicationList: Application[] = response.data;
 
             if (action.onSuccess) {
               action.onSuccess(applicationList);
             }
-            return actionWithdrawApplicationSuccess(applicationList);
+            return actionWithdrawMultipleApplicationSuccess(applicationList);
           }),
           catchError(( error: ApiError ) => {
             log(`[Epic] WithdrawApplicationEpic error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
@@ -417,7 +417,7 @@ export const WithdrawApplicationEpic = ( action$: Observable<any> ) => {
             const errorMessage = WithdrawApplicationErrorMessage[error.errorCode] || WithdrawApplicationErrorMessage[WITHDRAW_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
             setEpicApiCallErrorMessage(errorMessage);
 
-            return of(actionWithdrawApplicationFailed(error));
+            return of(actionWithdrawMultipleApplicationFailed(error));
           })
         )
     )
