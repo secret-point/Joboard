@@ -30,6 +30,7 @@ import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundSc
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import DebouncedButton from "../../common/DebouncedButton";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 
 interface MapStateToProps {
   job: JobState;
@@ -57,6 +58,11 @@ export const Consent = (props: MapStateToProps) => {
   const isCreateButtonDisabled = scheduleId
     ? !(jobDetail && scheduleDetail && !isLoading)
     : !(jobDetail && !isLoading);
+
+  // Load candidate so that we can log candidateId if application already exists error happens
+  useEffect(() => {
+    boundGetCandidateInfo();
+  }, []);
 
   // Don't refetch data if id is not changing
   useEffect(() => {

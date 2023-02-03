@@ -65,6 +65,7 @@ export const Consent = (props: MapStateToProps) => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobId]);
 
+  // Load candidate so that we can log candidateId if application already exists error happens
   useEffect(() => {
     boundGetCandidateInfo();
   }, []);
