@@ -90,11 +90,15 @@ import {
   showErrorMessage,
   UpdateHoursPerWeekHelper,
   validateInput,
-  validateNonFcraSignatures
+  validateNonFcraSignatures,
+  getPageName,
+  verifyBasicInfo,
+  handleSubmitAdditionalBgc
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
 import SpyInstance = jest.SpyInstance;
+import { CandidateInfoErrorState, CandidatePatchRequest, FormInputItem } from "../../../src/utils/types/common";
 
 jest.mock("../../../src/helpers/log-helper");
 
@@ -1472,3 +1476,243 @@ test("bulkWithdrawAndSubmitApplication", () => {
 
   expect(boundWithdrawApplicationSpy).toHaveBeenCalledWith([TEST_APPLICATION, TEST_APPLICATION], expect.any(Function));
 });
+
+test("getPageName", () => {
+  window.location.hash = "#/test-page-name"
+  expect(getPageName()).toEqual("test-page-name");
+});
+
+describe("verifyBasicInfo", () => {
+  let storeGetStateSpy: SpyInstance;
+
+  beforeEach(() => {
+    storeGetStateSpy = jest.spyOn(store, "getState");
+  });
+
+  afterEach(() => {
+    storeGetStateSpy.mockReset();
+  });
+
+  it("National ID Number", () => {
+    storeGetStateSpy.mockReturnValueOnce({
+      candidate: {
+      }
+    });
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: ""}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "National ID Number",
+      dataKey: "additionalBackgroundInfo.idNumber",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "idNumberInput",
+      name: "idNumber",
+      errorMessage: "Please enter a valid 9 digits social security number without dash",
+      labelTranslationKey: "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise",
+      errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-national-id-number-error-text",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  });
+
+  it("mostRecentBuildingWorkedAtAmazon", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentBuildingWorkedAtAmazon: 'ABC'}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "mostRecentBuildingWorkedAtAmazon",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+
+  it("mostRecentTimePeriodWorkedAtAmazon", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "mostRecentTimePeriodWorkedAtAmazon",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+
+  it("hasPreviouslyWorkedAtAmazon false", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: false, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "mostRecentTimePeriodWorkedAtAmazon",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
+  })
+
+  it("convictionDetails", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.convictionDetails",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+
+  it("convictionDetails false", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: false}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.convictionDetails",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
+  })
+
+  it("hasCriminalRecordWithinSevenYears falsy", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.hasCriminalRecordWithinSevenYears",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
+  })
+
+  it("hasCriminalRecordWithinSevenYears truthy", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasPreviouslyWorkedAtAmazon: undefined}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+
+  it("previousLegalNames falsy", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: undefined}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.previousLegalNames",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
+  })
+
+  it("previousLegalNames truthy", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: ["tester"]}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.previousLegalNames",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+
+  it("dateOfBirth", () => {
+
+    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", dateOfBirth: ""}};
+    const formError: CandidateInfoErrorState = {};
+    const formConfig: FormInputItem[] = [{
+      labelText: "",
+      dataKey: "additionalBackgroundInfo.dateOfBirth",
+      required: true,
+      type: "text",
+      regex: "^[0-9]{9}$",
+      id: "",
+      name: "idNumber",
+      errorMessage: "Error",
+      labelTranslationKey: "",
+      errorMessageTranslationKey: "",
+    }];
+
+    expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  })
+})
