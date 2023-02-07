@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "無法列出申請。",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "是，提交新申請",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "否，前往現有的工作申請",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "您已經有其他有效的工作申請。如果您提交此工作申請，您的其他工作申請將被撤回。您想提交此工作申請並撤回其他工作申請嗎？",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "是否撤回現有申請？",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "時間",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "日期",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "城市",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "您可否安排聘前約見",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "會面詳細內容",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "小時",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "日期",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "如果您已輸入「NO NI」作為您的 NI 號碼，系統會根據您的出生日期，以下列格式分配一個臨時 NI 號碼：「TNDMMMYY」。",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "您過去曾與 Amazon 合作嗎？",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "出生日期",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "國民 ID 號碼",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "國民 ID 類型",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "國家/地區",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "郵遞區號",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "城市",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "地址",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "額外資訊",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "時間模式",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "一週的天數",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "每週時數",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "最早開始日期",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "輪班偏好",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "未能撤回申請。",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

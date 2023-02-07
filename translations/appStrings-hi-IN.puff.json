@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "आवेदनों को लिस्ट करने में असमर्थ.",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "हां, नया आवेदन सबमिट करें",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "नहीं, मौजूदा आवेदन पर जाएं",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "आपके पास पहले से ही नौकरी के अन्य सक्रिय आवेदन हैं. अगर आप इस नौकरी के लिए आवेदन जमा करते हैं, तो आपके नौकरी के अन्य आवेदन वापस ले लिए जायेंगे. क्या आप इस नौकरी के लिए आवेदन जमा करना चाहते हैं और नौकरी के अन्य आवेदन वापस लेना चाहते हैं?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "मौजूदा आवेदन वापस लें?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "समय",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "तारीख़",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "शहर",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "आपकी प्री-हायर अपॉइंटमेंट उपलब्धता",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "मीटिंग की डिटेल्स",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "घंटे",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "तारीख़",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "अगर आपने अपने NI नंबर के रूप में “NO NI” दर्ज किया है, तो निम्नलिखित फ़ॉर्मेट में आपकी जन्म तिथि के आधार पर एक अस्थायी NI नंबर असाइन किया जाता है: “TNDDMMYY\".",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "क्या आपने पहले भी Amazon के साथ काम किया है?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "जन्म तिथि",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "राष्ट्रीय ID नंबर",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "राष्ट्रीय ID का प्रकार",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "देश",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "पोस्टल कोड",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "शहर",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "पता",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "अतिरिक्त जानकारी",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "टाइम पैटर्न",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "सप्ताह के दिन",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "घंटे प्रति हफ़्ते",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "सबसे जल्दी शुरूआती तारीख़",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "शिफ़्ट प्राथमिकताएं",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "आवेदन वापस लेने में असफल रहे.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

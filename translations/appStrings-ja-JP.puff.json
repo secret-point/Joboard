@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "アプリケーションを一覧表示できません。",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "はい、新規に応募します",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "いいえ、既存の応募に移動します",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "すでに現在応募中の求人があります。この求人に応募すると、他の求人への応募は取り下げられます。この求人に応募し、他の求人への応募を取り下げますか?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "既存の応募を取り下げますか?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "時間",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "日程",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "都市",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "雇用前予約の状況",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "会議の詳細",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "時間",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "日付",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "NI番号として「NO NI」と入力した場合、生年月日に基づいて「TNDDMMYY」という形式で一時的なNI番号が割り当てられます。",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "過去にAmazonで働いたことはありますか?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "生年月日",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "国民ID番号",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "国民IDタイプ",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "国",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "郵便番号",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "都市",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "住所",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "追加情報",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "時間パターン",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "曜日",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "週あたりの時間数",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "最も早い勤務開始日",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "シフトのカスタマイズ設定",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "応募を取り下げることができませんでした。",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

@@ -1632,6 +1632,26 @@
       "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לשוחח איתנו בכתובת www.amazon.com/applicationhelp לקבלת סיוע.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "יש ללחוץ <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>כאן</a> כדי לקבל רשימה מלאה של מסמכים מקובלים.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "אם יש לך מוגבלות ולדעתך יש לך צורך בהתאמה לתהליך הגיוס של Amazon, יש לפנות אלינו כדי לדון בכך בטלפון ‎0808 164 9427 או באמצעות דואר אלקטרוני בכתובת myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "יישלח אליך דואר אלקטרוני מאיתנו שמספק מידע נוסף לגבי השלבים הבאים בהגשת מועמדות שלך. אנו מצפים לראות אותך בפגישת טרום העסקה.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "לפרטים נוספים",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "חזרה ללוח הבקרה",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "שאלון זיכוי המס של הזדמנויות העבודה",
       "note" : "Text for the WOTC page title text"

@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThankYou should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Image
+    aria-hidden="true"
+    imgStyles={
+      Object {
+        "width": "100%",
+      }
+    }
+    src="https://m.media-amazon.com/images/G/01/HVH-Kirin/BB/images/smiley_face.png"
+  />
+  <Image
+    aria-hidden="true"
+    imgStyles={
+      Object {
+        "style": Object {
+          "display": "block",
+          "margin": "auto",
+        },
+      }
+    }
+    src="https://m.media-amazon.com/images/G/01/HVH-Kirin/BB/images/Icon1.png"
+  />
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+    textAlign="center"
+  >
+    Thank you for applying to Amazon!
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+    textAlign="center"
+  >
+    We look forward to seeing you. Here are your next steps:
+  </Text>
+  <Card
+    backgroundColor="neutral0"
+    display="flex"
+    isElevated={true}
+    padding="S300"
+    status="default"
+    width="100%"
+  >
+    <Col
+      gridGap={15}
+      padding="S300"
+      width="100%"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Please provide referral details (if applicable)
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T200"
+        hyphens="none"
+      >
+        Were you referred by an existing Amazon employee?
+      </Text>
+      <DetailedRadio
+        name="has_referral-radio-col"
+        onChange={[Function]}
+        titleText="Yes"
+      />
+      <DetailedRadio
+        name="has_referral-radio-col"
+        onChange={[Function]}
+        titleText="No"
+      />
+      <Text
+        font="primary"
+        fontSize="T300"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Get started on pre-hire activities
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire.
+      </Text>
+      <DebouncedButton
+        onClick={[Function]}
+        variant="primary"
+      >
+        Let's get started
+      </DebouncedButton>
+    </Col>
+  </Card>
+  <Card
+    backgroundColor="neutral0"
+    display="flex"
+    isElevated={true}
+    padding="S300"
+    status="default"
+    width="100%"
+  >
+    <Col
+      gridGap={15}
+      padding="S300"
+      width="100%"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Thu Aug 04
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327
+      </Text>
+      <Text
+        color="#56616C"
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Visit us for a 30 minute session anytime between 13:30 - 14:00.
+      </Text>
+      <Row
+        className="border-top-row"
+      >
+        <WithFlyout
+          flyoutPosition="trailing"
+          renderFlyout={[Function]}
+        >
+          <Component />
+        </WithFlyout>
+      </Row>
+    </Col>
+  </Card>
+  <ThirdPartyTracking
+    appCastEventId={3}
+    jobId="JOB-US-0000001234"
+  />
+</Col>
+`;

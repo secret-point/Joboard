@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "ಅಪ್ಲಿಕೇಶನ್‍‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "ಹೌದು, ಹೊಸ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಲ್ಲಿಸಿ",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "ಇಲ್ಲ, ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಹೋಗಿ",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "ನೀವು ಈಗಾಗಲೇ ಇತರ ಸಕ್ರಿಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್(ಗಳನ್ನು) ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಈ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಲ್ಲಿಸಿದರೆ, ನಿಮ್ಮ ಇತರ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್(ಗಳನ್ನು) ಹಿಂತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ. ನೀವು ಈ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಲ್ಲಿಸಲು ಮತ್ತು ಇತರ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್(ಗಳನ್ನು) ಹಿಂಪಡೆಯಲು ಬಯಸುವಿರಾ?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳುವುದೇ?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "ಸಮಯ",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "ದಿನಾಂಕಗಳು",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "ನಗರ",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "ನಿಮ್ಮ ಪೂರ್ವ-ನೇಮಕದ ನೇಮಕಾತಿ ಲಭ್ಯತೆ\n",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "ಸಭೆಯ ವಿವರಗಳು",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "ಗಂಟೆಗಳು",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "ದಿನಾಂಕ",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "ನಿಮ್ಮ NI ಸಂಖ್ಯೆಯಂತೆ ನೀವು “NO NI” ಅನ್ನು ನಮೂದಿಸಿದ್ದರೆ, ಈ ಕೆಳಗಿನ ಸ್ವರೂಪದಲ್ಲಿ ನಿಮ್ಮ ಹುಟ್ಟಿದ ದಿನಾಂಕದ ಆಧಾರದ ಮೇಲೆ ತಾತ್ಕಾಲಿಕ NI ಸಂಖ್ಯೆಯನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿದೆ: “TNDDMMYY”.",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "ನೀವು ಈ ಹಿಂದೆ Amazon‌ ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "ಜನ್ಮ ದಿನಾಂಕ",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "ರಾಷ್ಟ್ರೀಯ ID ಸಂಖ್ಯೆ",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "ರಾಷ್ಟ್ರೀಯ ID ಪ್ರಕಾರ",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "ದೇಶ",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "ಪಿನ್ ಕೋಡ್",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "ನಗರ",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "ವಿಳಾಸ",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "ಸಮಯದ ಮಾದರಿ",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "ವಾರದ ದಿನಗಳು",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "ಪ್ರತಿ ವಾರಕ್ಕೆ ಗಂಟೆಗಳು:",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "ಆರಂಭಿಕ ಪ್ರಾರಂಭ ದಿನಾಂಕ",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳು",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

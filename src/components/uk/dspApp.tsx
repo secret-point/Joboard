@@ -28,7 +28,6 @@ import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibi
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
 import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
 import SupplementarySuccess from "../us/supplementarySuccess/SupplementarySuccess";
-import ThankYou from "../us/thankYou/ThankYou";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
 import Wotc from "../us/wotc/Wotc";
 import WotcComplete from "../us/wotc/WotcComplete";
@@ -45,6 +44,7 @@ import PreConsent from "../us/preConsent/PreConsent";
 import Assessment from "./assessment/Assessment";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import Nhe from "./nhe/Nhe";
+import ThankYou from "./thankYou/ThankYou";
 
 interface MapStateToProps {
   appConfig: AppConfig;

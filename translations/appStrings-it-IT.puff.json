@@ -2816,6 +2816,10 @@
       "value" : "Seleziona le tue preferenze per l’evento pre-assunzione",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Hai una candidatura attiva",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "Hai già una candidatura attiva. È possibile avere una sola candidatura attiva alla volta. Se invii questa candidatura, quella esistente verrà ritirata.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "Continua",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "L'ID candidato è necessario per ottenere un elenco di candidature.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Non disponi di accesso a un elenco di candidature per questo utente.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Impossibile elencare le candidature.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     },
     "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
       "value" : "Sì, invia una nuova candidatura",

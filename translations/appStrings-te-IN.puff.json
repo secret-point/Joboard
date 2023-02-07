@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "అప్లికేషన్‌లను జాబితా చేయడం సాధ్యపడలేదు.",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "అవును, కొత్త అప్లికేషన్‌ను సమర్పించండి",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "లేదు, ఇప్పటికే ఉన్న అప్లికేషన్‌కు వెళ్లండి",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "మీరు ఇప్పటికే మరొక యాక్టివ్ జాబ్ అప్లికేషన్‌(ల)ను కలిగి ఉన్నారు. మీరు ఈ జాబ్ అప్లికేషన్‌ను సమర్పించినట్లయితే, మీ ఇతర జాబ్ అప్లికేషన్(లు) ఉపసంహరించబడతాయి. మీరు ఈ జాబ్ అప్లికేషన్‌ను సమర్పించి, ఇతర జాబ్ అప్లికేషన్(ల)ను ఉపసంహరించుకోవాలనుకుంటున్నారా?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "ఇప్పటికే ఉన్న అప్లికేషన్‌ను ఉపసంహరించుకోవాలా?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "సమయం",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "తేదీలు",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "నగరం",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "మీ ప్రీ-హైర్ అపాయింట్‌మెంట్ లభ్యత",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "మీటింగ్ వివరాలు",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "గంటలు",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "తేదీ",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "మీరు మీ NI నంబర్‌గా \"NO NI\"ని ఎంటర్ చేసినట్లయితే, కింది ఫార్మాట్‌లో మీ పుట్టిన తేదీ ఆధారంగా తాత్కాలిక NI నంబర్ కేటాయించబడుతుంది: \"TNDDMMYY\".",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "మీరు గతంలో Amazonలో పనిచేశారా?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "పుట్టిన తేదీ",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "జాతీయ ID నంబర్",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "జాతీయ ID రకం",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "దేశం",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "పోస్టల్ కోడ్",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "నగరం",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "చిరునామా",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "అదనపు సమాచారం",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "సమయ నమూనా",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "వారం రోజులు",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "వారానికి గంటలు",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "ముందస్తు ప్రారంభ తేదీ",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "షిఫ్ట్ ప్రాధాన్యతలు",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "అప్లికేషన్‌ను ఉపసంహరించుకోవడంలో విఫలమైంది.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

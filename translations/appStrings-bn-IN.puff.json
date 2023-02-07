@@ -1632,6 +1632,26 @@
       "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, সহায়তার জন্য দয়া করে www.amazon.com/applicationhelp এ আমাদের সাথে কথা বলুন।",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "গ্রহণযোগ্য ডকুমেন্টের সম্পূর্ণ তালিকার জন্য <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>এখানে</a> ক্লিক করুন।",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "যদি আপনার কোনও বিকলঙ্গতা থাকে এবং আপনি মনে করেন যে আপনার Amazon-এর নিয়োগ প্রক্রিয়ায় সমন্বয়ের প্রয়োজন হতে পারে, তাহলে আলোচনার জন্য অনুগ্রহ করে আমাদের সাথে 0808 164 9427 -এ যোগাযোগ করুন বা myapplication@amazon.co.uk -এ ইমেল করুন",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "আপনার আবেদনের পরবর্তী পদক্ষেপসমূহ নিয়ে আরও তথ্য সম্বলিত একটি ইমেল আপনি আমাদের কাছ থেকে পাবেন। আমরা আপনার প্রাক-নিয়োগ অ্যাপয়েন্টমেন্ট- এ আপনাকে দেখার প্রত্যাশা করি।",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "আরও বিস্তারিত",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "কাজের সুযোগের ট্যাক্স ক্রেডিট প্রশ্নাবলী",
       "note" : "Text for the WOTC page title text"

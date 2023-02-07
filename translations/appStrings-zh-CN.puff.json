@@ -2816,6 +2816,10 @@
       "value" : "选择您的聘用前活动的首选项",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "您有一项进行中的职位申请",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "您已有一个有效的职位申请。同一时间您只能有一个有效的申请。如果您提交此申请，您的现有申请将被撤回。",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "继续",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "必须提供候选人 ID，才能获取申请列表。",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "您无权获取此用户的申请列表。",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "无法列出申请。",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }
