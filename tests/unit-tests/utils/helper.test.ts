@@ -1485,6 +1485,19 @@ test("getPageName", () => {
 describe("verifyBasicInfo", () => {
   let storeGetStateSpy: SpyInstance;
 
+  const baseFormConfigItem = {
+    labelText: "",
+    dataKey: "",
+    required: true,
+    type: "text",
+    regex: "^[0-9]{9}$",
+    id: "",
+    name: "",
+    errorMessage: "Please enter a valid 9 digits social security number without dash",
+    labelTranslationKey: "",
+    errorMessageTranslationKey: ""
+  };
+
   beforeEach(() => {
     storeGetStateSpy = jest.spyOn(store, "getState");
   });
@@ -1501,16 +1514,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: ""}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "National ID Number",
-      dataKey: "additionalBackgroundInfo.idNumber",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "idNumberInput",
-      name: "idNumber",
-      errorMessage: "Please enter a valid 9 digits social security number without dash",
-      labelTranslationKey: "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise",
-      errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-national-id-number-error-text",
+      ...baseFormConfigItem,
+      id: "idNumberInput"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
@@ -1541,16 +1546,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
+      ...baseFormConfigItem,
       dataKey: "mostRecentTimePeriodWorkedAtAmazon",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
@@ -1561,16 +1558,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: false, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "mostRecentTimePeriodWorkedAtAmazon",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "mostRecentTimePeriodWorkedAtAmazon"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
@@ -1581,16 +1570,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.convictionDetails",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.convictionDetails"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
@@ -1601,16 +1582,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: false}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.convictionDetails",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.convictionDetails"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
@@ -1621,16 +1594,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.hasCriminalRecordWithinSevenYears",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.hasCriminalRecordWithinSevenYears"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
@@ -1641,16 +1606,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasPreviouslyWorkedAtAmazon: undefined}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
@@ -1661,16 +1618,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: undefined}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.previousLegalNames",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.previousLegalNames"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
@@ -1681,16 +1630,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: ["tester"]}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.previousLegalNames",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.previousLegalNames"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
@@ -1701,16 +1642,8 @@ describe("verifyBasicInfo", () => {
     const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", dateOfBirth: ""}};
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
-      labelText: "",
-      dataKey: "additionalBackgroundInfo.dateOfBirth",
-      required: true,
-      type: "text",
-      regex: "^[0-9]{9}$",
-      id: "",
-      name: "idNumber",
-      errorMessage: "Error",
-      labelTranslationKey: "",
-      errorMessageTranslationKey: "",
+      ...baseFormConfigItem,
+      dataKey: "additionalBackgroundInfo.dateOfBirth"
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
