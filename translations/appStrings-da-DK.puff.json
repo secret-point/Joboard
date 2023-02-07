@@ -292,6 +292,62 @@
       "value" : "Hvis din startdato er forsinket, vil du modtage yderligere oplysninger om de næste trin.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "Du har bestået vurderingen. Her er det betingede tilbud om beskæftigelse for det job, du valgte",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "Hvad er et betinget tilbud om beskæftigelse?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "Se jobbeskrivelse",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "Jobbeskrivelse",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "Hvad er et betinget tilbud om beskæftigelse?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "Dette tilbud er betinget af din:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "udfyldelse af registreringsdokumenter (hvis relevant)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "fuldførelse af en baggrundskontrol",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "fuldførelse af en medicinsk test (hvis relevant)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "fuldførelse af kvalifikation til genansættelse (hvis relevant)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "ret til at arbejde i Storbritannien og fremlæggelse af den krævede dokumentation",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "underskrivelse og returnering af ansættelseskontrakten",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "succesfulde deltagelse i og gennemførelse af induktionstræning/Dag 0, herunder en sundheds- og sikkerhedsvurdering",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "Din startdato for dit foretrukne skift og/eller antal timer, tidsplan og placering kan ændre sig alt efter forretningsefterspørgsel.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "Hvad betyder en sæsonbestemt varighed?",
       "note" : "Text for about seasonal duration popover title"
@@ -2759,6 +2815,146 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Vælg dine præferencer for arrangement forud for ansættelse",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Du har en aktiv jobansøgning",
+      "note" : "Text for consent existing application notice title"
+    },
+    "BB-consent-existing-application-notice-text1" : {
+      "value" : "Du har allerede en aktiv jobansøgning. Du kan kun have én aktiv ansøgning ad gangen. Hvis du indsender denne ansøgning, trækkes din eksisterende ansøgning tilbage.",
+      "note" : "Text for consent existing application notice text1"
+    },
+    "BB-consent-existing-application-notice-text2" : {
+      "value" : "For at genoptage eller se din ansøgning skal du klikke på \"Gå til oversigt\". For at fortsætte med denne ansøgning skal du klikke på \"Fortsæt\"",
+      "note" : "Text for consent existing application notice text2"
+    },
+    "BB-consent-existing-app-go-to-dashboard-link" : {
+      "value" : "Gå til oversigt",
+      "note" : "Text for consent existing application go to dashboard link"
+    },
+    "BB-consent-existing-app-continue-btn" : {
+      "value" : "Fortsæt",
+      "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "Kandidat-id kræves for at få en liste over ansøgninger.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Du har ikke adgang til at få en liste over ansøgninger til denne bruger.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Kan ikke liste programmer.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "Ja, indsend den nye ansøgning",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "Nej, gå til den eksisterende ansøgning",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "Du har allerede andre aktive jobansøgning(er). Hvis du indsender denne jobansøgning, trækkes dine andre jobansøgning(er) tilbage. Ønsker du at indsende denne jobansøgning, og trække andre jobansøgning(er) tilbage?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "Tilbagekald den eksisterende ansøgning?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "Tid",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "Datoer",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "By",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "Din før-ansættelsessamtale tilgængelighed",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "Mødedetaljer",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "Timer",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "Dato",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "Hvis du har indtastet \"NO NI“ som dit NI-nummer, bliver et midlertidigt NI-nummer tildelt, baseret på din fødselsdato i følgende format: \"TNDDMMYY“.",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "Har du arbejdet med Amazon tidligere?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "Fødselsdato",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "Nationalt ID-nummer",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "Nationalt ID-type",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "Land",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "Postnummer",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "By",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "Adresse",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "Yderligere information",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "Tidsmønster",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "Ugedage",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "Timer pr. uge",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "Tidligste startdato",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "Skift præferencer",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "Det lykkedes ikke at trække ansøgningen tilbage.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

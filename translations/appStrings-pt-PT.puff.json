@@ -2816,6 +2816,10 @@
       "value" : "Selecione as preferências do seu evento de pré-contratação",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Tem uma candidatura de emprego ativa",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "Já tem uma candidatura de emprego ativa. Só pode ter uma candidatura ativa de cada vez. Se enviar esta candidatura, a sua candidatura já existente será anulada.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,126 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "Continuar",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "É necessária a ID do candidato para obter uma lista de candidaturas.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Não tem acesso para obter uma lista de candidaturas para este utilizador.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Não é possível listar as candidaturas.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "Sim, enviar nova candidatura",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "Não, ir para a candidatura existente",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "Já tem outra(s) candidatura(s) de emprego ativa(s). Se enviar esta candidatura de emprego, a(s) outra(s) candidatura(s) de emprego será(ão) retirada(s). Gostaria de enviar esta candidatura de emprego e anular a(s) outra(s) candidatura(s)?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "Retirar a candidatura existente?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "Hora",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "Datas",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "Cidade",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "Disponibilidade para a sua entrevista de pré-contratação",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "Detalhes da reunião",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "Horas",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "Data",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "Se inseriu \"NO NI\" como o seu número NI, é atribuído um número NI temporário com base na sua data de nascimento no seguinte formato: \"TNDDMMAA\".",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "Já trabalhou com a Amazon no passado?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "Data de nascimento",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "Número de ID nacional",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "Tipo de ID nacional",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "País",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "Código postal",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "Cidade",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "Morada",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "Informações adicionais",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "Padrão de tempo",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "Dias da semana",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "Horas semanais",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "Data de início mais antiga",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "Preferências de turno",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "Falha ao retirar a candidatura.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

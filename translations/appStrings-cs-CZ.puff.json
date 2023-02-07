@@ -2816,6 +2816,10 @@
       "value" : "Vyberte předvolby pro událost před přijetím",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Máte aktivní žádost o zaměstnání",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "Již máte aktivní žádost o zaměstnání. V jednu chvíli můžete mít aktivní pouze jednu žádost. Pokud tuto žádost podáte, bude Vaše stávající žádost stažena.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,126 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "Pokračovat",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "Pro získání seznamu žádostí je vyžadováno ID kandidáta.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Nemáte přístup k získání seznamu žádostí pro tohoto uživatele.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Nelze zobrazit seznam žádostí.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "Ano, odeslat novou žádost",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "Ne, přejít na stávající žádost",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "Již máte jiné aktivní žádosti o zaměstnání. Pokud podáte tuto žádost o zaměstnání, budou Vaše ostatní žádosti staženy. Chcete podat tuto žádost o zaměstnání a stáhnout ostatní žádosti?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "Stáhnout stávající žádost?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "Čas",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "Data",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "Město",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "Vaše časové možnosti pro schůzku před přijetím",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "Podrobnosti schůzky",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "Hodiny",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "Datum",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "Pokud jste jako číslo NI zadali „BEZ NI“, bude Vám na základě Vašeho data narození dočasné přiřazeno číslo NI v následujícím formátu: „TNDDMMRR“.",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "Pracovali jste v minulosti u společnosti Amazon?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "Datum narození",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "Číslo dokladu totožnosti",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "Typ dokladu totožnosti",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "Země",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "PSČ",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "Město",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "Adresa",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "Další informace",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "Časové schéma",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "Dny v týdnu",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "Hodiny za týden",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "Nejbližší datum nástupu",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "Předvolby směn",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "Žádost se nepodařilo stáhnout.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

@@ -2816,6 +2816,10 @@
       "value" : "अपनी प्री-हायर ईवेंट प्राथमिकताएं चुनें",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "आपके पास नौकरी का एक सक्रिय आवेदन है",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "आपके पास पहले से ही नौकरी का एक सक्रिय आवेदन है. आपके पास एक समय में केवल एक ही सक्रिय आवेदन हो सकता है. अगर आप यह आवेदन सबमिट करते हैं, तो आपका मौजूदा आवेदन वापस ले लिया जाएगा.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "जारी रखें",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "आवेदनों की सूची प्राप्त करने के लिए उम्मीदवार ID की आवश्यकता होती है.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "इस उपयोगकर्ता के लिए आवेदनों की सूची प्राप्त करने के लिए आपके पास कोई पहुंच नहीं है.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "आवेदनों को लिस्ट करने में असमर्थ.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

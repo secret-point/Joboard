@@ -2816,6 +2816,10 @@
       "value" : "Sélectionnez vos préférences en matière d’événements préalables à l’embauche",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "Vous avez une candidature active",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "Vous avez déjà une candidature active. Vous ne pouvez avoir qu'une seule candidature active à la fois. Si vous soumettez cette candidature, votre candidature actuelle sera retirée.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "Continuer",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "L'identifiant candidat est requis pour obtenir la liste de candidatures.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "Vous n'avez pas accès à la liste des candidatures pour cet utilisateur.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "Impossible de lister les candidatures.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

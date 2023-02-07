@@ -292,6 +292,62 @@
       "value" : "ನಿಮ್ಮ ಪ್ರಾರಂಭದ ದಿನಾಂಕ ವಿಳಂಬವಾಗಿದ್ದರೆ, ಮುಂದಿನ ಹಂತಗಳಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ನೀವು ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ.",
       "note" : "Text for contingent offer meaning popover content"
     },
+    "BB-Kondo-ContingencyOffer-job-picked-title-text" : {
+      "value" : "ನೀವು ಮೌಲ್ಯಮಾಪನದಲ್ಲಿ ಉತ್ತೀರ್ಣರಾಗಿದ್ದೀರಿ. ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಉದ್ಯೋಗಕ್ಕಾಗಿ ಉದ್ಯೋಗದ ಷರತ್ತುಬದ್ಧ ಕೊಡುಗೆ ಇಲ್ಲಿದೆ",
+      "note" : "Text for Kondo job offer picked title"
+    },
+    "BB-Kondo-ContingencyOffer-what-is-conditional-offer-text" : {
+      "value" : "ಉದ್ಯೋಗದ ಷರತ್ತುಬದ್ಧ ಕೊಡುಗೆ ಎಂದರೇನು?",
+      "note" : "Text for Kondo contingency offers page what is conditional offer text"
+    },
+    "BB-Kondo-ContingencyOffer-view-job-description-text" : {
+      "value" : "ಉದ್ಯೋಗ ವಿವರಣೆಯನ್ನು ವೀಕ್ಷಿಸಿ",
+      "note" : "Text for Kondo contingency offers page view job description text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-job-description-title-text" : {
+      "value" : "ಉದ್ಯೋಗ ವಿವರಣೆ",
+      "note" : "Text for Kondo contingency offers page flyout job description title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-title-text" : {
+      "value" : "ಉದ್ಯೋಗದ ಷರತ್ತುಬದ್ಧ ಕೊಡುಗೆ ಎಂದರೇನು?",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer title text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph1-text" : {
+      "value" : "ಈ ಕೊಡುಗೆ ನಿಮ್ಮ ಮೇಲೆ ಷರತ್ತುಬದ್ಧವಾಗಿದೆ:",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list1-text" : {
+      "value" : "ನೋಂದಣಿ ದಾಖಲೆಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸುವುದು (ಅನ್ವಯವಾಗುವ ಸ್ಥಳದಲ್ಲಿ)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list1 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list2-text" : {
+      "value" : "ಹಿನ್ನೆಲೆ ಪರಿಶೀಲನೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಲಾಗುತ್ತಿದೆ",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list2 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list3-text" : {
+      "value" : "ವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸುವುದು (ಅನ್ವಯವಾಗುವ ಸ್ಥಳದಲ್ಲಿ)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list3 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list4-text" : {
+      "value" : "ರಿಹೈರ್ ಅರ್ಹತೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸುವುದು (ಅನ್ವಯವಾಗುವಲ್ಲಿ)",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list4 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list5-text" : {
+      "value" : "UK ಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕನ್ನು ಹೊಂದಿರುವುದು ಮತ್ತು ಅಗತ್ಯವಾದ ಪುರಾವೆಗಳನ್ನು ಒದಗಿಸುವುದು",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list5 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list6-text" : {
+      "value" : "ಉದ್ಯೋಗದ ಒಪ್ಪಂದಕ್ಕೆ ಸಹಿ ಮತ್ತು ಹಿಂದಿರುಗುವುದು",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list6 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-list7-text" : {
+      "value" : "ಆರೋಗ್ಯ ಮತ್ತು ಸುರಕ್ಷತಾ ಮೌಲ್ಯಮಾಪನ ಸೇರಿದಂತೆ ಇಂಡಕ್ಷನ್ ತರಬೇತಿ/ದಿನ 0 ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹಾಜರಾಗುವುದು ಮತ್ತು ಪೂರ್ಣಗೊಳಿಸುವುದು",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer list7 text"
+    },
+    "BB-Kondo-ContingencyOffer-flyout-conditional-offer-paragraph2-text" : {
+      "value" : "ನಿಮ್ಮ ಆದ್ಯತೆಯ ಶಿಫ್ಟ್ ಮತ್ತು/ಅಥವಾ ಗಂಟೆಗಳ ಸಂಖ್ಯೆ, ವೇಳಾಪಟ್ಟಿ ಮತ್ತು ಸ್ಥಳಕ್ಕಾಗಿ ನಿಮ್ಮ ಪ್ರಾರಂಭ ದಿನಾಂಕವು ವ್ಯಾಪಾರದ ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ ಬದಲಾಗಬಹುದು.",
+      "note" : "Text for Kondo contingency offers page flyout conditional offer paragraph2 text"
+    },
     "BB-Schedule-card-about-seasonal-duration-popover-title-text" : {
       "value" : "ಕಾಲೋಚಿತ ಅವಧಿಯ ಅರ್ಥವೇನು?",
       "note" : "Text for about seasonal duration popover title"
@@ -2760,6 +2816,10 @@
       "value" : "ನಿಮ್ಮ ಪ್ರಿ-ಹೈರ್ ಈವೆಂಟ್ ಆದ್ಯತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "ನೀವು ಒಂದು ಸಕ್ರಿಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿದ್ದೀರಿ",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "ನೀವು ಈಗಾಗಲೇ ಸಕ್ರಿಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿದ್ದೀರಿ. ನೀವು ಒಂದು ಸಮಯದಲ್ಲಿ ಕೇವಲ ಒಂದು ಸಕ್ರಿಯ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿರಬಹುದು. ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಲ್ಲಿಸಿದರೆ, ನಿಮ್ಮ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂಪಡೆಯಲಾಗುತ್ತದೆ.",
       "note" : "Text for consent existing application notice text1"
@@ -2775,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "ಮುಂದುವರಿಸಿ",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್‍‌ಗಳ ಪಟ್ಟಿಯನ್ನು ಪಡೆಯಲು ಅಭ್ಯರ್ಥಿಯ ID ಅಗತ್ಯವಿದೆ.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "ಈ ಬಳಕೆದಾರರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಪಟ್ಟಿಯನ್ನು ಪಡೆಯಲು ನೀವು ಯಾವುದೇ ಪ್ರವೇಶವನ್ನು ಹೊಂದಿಲ್ಲ.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "ಅಪ್ಲಿಕೇಶನ್‍‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

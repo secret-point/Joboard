@@ -2816,6 +2816,10 @@
       "value" : "നിങ്ങളുടെ നിയമനത്തിന് മുമ്പുള്ള ഇവന്റ് മുൻഗണനകൾ തിരഞ്ഞെടുക്കുക",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-consent-existing-application-notice-title" : {
+      "value" : "നിങ്ങൾക്ക് ഒരു സജീവമായ തൊഴിൽ അപേക്ഷ ഉണ്ട്",
+      "note" : "Text for consent existing application notice title"
+    },
     "BB-consent-existing-application-notice-text1" : {
       "value" : "നിങ്ങൾക്ക് ഇതിനകം ഒരു സജീവമായ തൊഴിൽ അപേക്ഷ ഉണ്ട്. നിങ്ങൾക്ക് ഒരു സമയം ഒരു സജീവമായ അപേക്ഷ മാത്രമേ ഉണ്ടാകൂ. നിങ്ങൾ ഈ അപേക്ഷ സമർപ്പിക്കുകയാണെങ്കിൽ, നിങ്ങളുടെ നിലവിലുള്ള അപേക്ഷ പിൻവലിക്കും.",
       "note" : "Text for consent existing application notice text1"
@@ -2831,6 +2835,18 @@
     "BB-consent-existing-app-continue-btn" : {
       "value" : "തുടരുക",
       "note" : "Text for consent existing application continue button"
+    },
+    "BB-get-applications-by-candidate-id-error-message-missing-fields" : {
+      "value" : "അപേക്ഷകളുടെ ഒരു ലിസ്റ്റ് ലഭിക്കുന്നതിന് കാൻഡിഡേറ്റ് ID ആവശ്യമാണ്.",
+      "note" : "Error message when trying to get a list of applications without passing candidate Id"
+    },
+    "BB-get-applications-by-candidate-id-error-message-candidate-not-authorized" : {
+      "value" : "ഈ ഉപയോക്താവിനു വേണ്ടി അപേക്ഷകളുടെ ഒരു ലിസ്റ്റ് ലഭിക്കുന്നതിന് നിങ്ങൾക്ക് ആക്സസ് ഇല്ല.",
+      "note" : "Error message when candidate is trying to get a list of applications of another candidate"
+    },
+    "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
+      "value" : "അപേക്ഷകൾ ലിസ്റ്റ് ചെയ്യാൻ കഴിയുന്നില്ല.",
+      "note" : "Error message when get applications by candidate Id can not list applications"
     }
   }
 }

@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 import { useLocation } from "react-router-dom";
 import { Consent } from "../../../../../src/components/uk/consent/Consent";
 import {
+  TEST_APP_CONFIG_STATE,
   TEST_CANDIDATE_STATE,
   TEST_JOB_ID,
   TEST_JOB_STATE,
@@ -29,6 +30,7 @@ describe("Consent", () => {
         schedule={TEST_SCHEDULE_STATE}
         ui={TestInitUiState}
         candidate={TEST_CANDIDATE_STATE}
+        appConfig={TEST_APP_CONFIG_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

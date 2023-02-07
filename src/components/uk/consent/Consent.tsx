@@ -35,12 +35,16 @@ import { Link } from "@amzn/stencil-react-components/link";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import CustomModal from "../../common/CustomModal";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { boundWorkflowRequestStart } from "../../../actions/WorkflowActions/boundWorkflowActions";
+import { loadWorkflowDS } from "../../../actions/WorkflowActions/workflowActions";
+import { AppConfigState } from "../../../reducers/appConfig.reducer";
 
 interface MapStateToProps {
   job: JobState;
   schedule: ScheduleState;
   ui: uiState;
   candidate: CandidateState;
+  appConfig: AppConfigState;
 }
 
 interface RenderFlyoutFunctionParams {
@@ -48,7 +52,7 @@ interface RenderFlyoutFunctionParams {
 }
 
 export const Consent = (props: MapStateToProps) => {
-  const { job, schedule, candidate } = props;
+  const { job, schedule, candidate, appConfig } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { jobId } = queryParams;
@@ -56,6 +60,7 @@ export const Consent = (props: MapStateToProps) => {
   const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
+  const envConfig = appConfig.results?.envConfig;
   const pageName = getPageNameFromPath(pathname);
 
   const [showExistingAppModal, setShowExistingAppModal] = useState(false);
@@ -119,7 +124,20 @@ export const Consent = (props: MapStateToProps) => {
         jobId,
         // dspEnabled: job.results?.dspEnabled, // TODO will need to enabled this in future once dspEnabled is enabled in UK
       };
-      boundCreateApplicationDS(payload, (application: Application) => routeToAppPageWithPath(PAGE_ROUTES.JOB_OPPORTUNITIES, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]));
+      boundCreateApplicationDS(payload, (application: Application) => {
+        const { applicationId, candidateId } = application;
+
+        // Reload consent page with applicationId and wait for workflow service to return next page before continue the application
+        routeToAppPageWithPath(PAGE_ROUTES.CONSENT, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]);
+        boundWorkflowRequestStart();
+        envConfig && loadWorkflowDS(
+          jobId || "",
+          scheduleId || "",
+          applicationId,
+          candidateId,
+          envConfig
+        );
+      });
     }
   };
 
