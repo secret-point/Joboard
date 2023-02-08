@@ -7,27 +7,26 @@ import {
 } from "../@types/candidate-application-service-requests";
 import { CreateApplicationResponse } from "../utils/api/types";
 import { GetApplicationListRequest } from "../utils/apiTypes";
-import { Application } from "../utils/types/common";
+import { Application, GetAssessmentElegibilityRequest } from "../utils/types/common";
 
 export default class CandidateApplicationService {
-
   private readonly axiosInstance: AxiosInstance;
 
   constructor() {
     this.axiosInstance = axiosHelper("/api/candidate-application");
   }
 
-  async getApplication( applicationId: string ) {
+  async getApplication(applicationId: string) {
     const response = await this.axiosInstance.get(`/applications/${applicationId}`, {
-      headers: {
-        "Cache-Control": "no-cache"
+        headers: {
+          "Cache-Control": "no-cache"
+        }
       }
-    }
     );
     return response.data;
   }
 
-  async createApplication( payload: CreateApplicationRequest ) {
+  async createApplication(payload: CreateApplicationRequest) {
     const response = await this.axiosInstance.post("/create-application", payload);
     return response.data;
   }
@@ -37,7 +36,7 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async updateApplication( payload: UpdateApplicationRequest ) {
+  async updateApplication(payload: UpdateApplicationRequest) {
     const response = await this.axiosInstance.put("/update-application", payload);
     return response.data;
   }
@@ -47,7 +46,7 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async terminateApplication( applicationId: string, state: string ) {
+  async terminateApplication(applicationId: string, state: string) {
     const response = await this.axiosInstance.put(`/terminate-application/${applicationId}/${state}`);
     return response.data;
   }
@@ -62,10 +61,23 @@ export default class CandidateApplicationService {
     return response.data;
   }
 
-  async getApplicationSelfServiceDS( applicationId: string ) {
-    const response = await this.axiosInstance.get(`/applications/reserved/${applicationId}`, {
-      headers: { "Cache-Control": "no-cache" }
-    });
+  async getApplicationSelfServiceDS(applicationId: string) {
+    const response = await this.axiosInstance.get(
+      `/applications/reserved/${applicationId}`,
+      {
+        headers: { "Cache-Control": "no-cache" }
+      }
+    );
+    return response.data;
+  }
+
+  async getAssessmentEligibility(payload: GetAssessmentElegibilityRequest) {
+
+    const response = await this.axiosInstance.post(
+      "/assessment-eligibility",
+      payload
+    );
+
     return response.data;
   }
 

@@ -15,6 +15,7 @@ import { GetNheTimeSlotsDs, GetNheTimeSlotsThroughNheDs, GetPossibleNhePreferenc
 import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
 import { UpdateWotcStatusEpic } from "./wotc.epic";
 import { ValidateAmazonLoginIDEpic } from "./thank-you.epic";
+import { GetAsssessmentElegibilityEpic } from "./assessment.epic";
 
 const rootEpic = combineEpics(
   JobEpic,
@@ -33,7 +34,8 @@ const rootEpic = combineEpics(
   ValidateAmazonLoginIDEpic,
   GetPossibleNhePreferences,
   GetApplicationListEpic,
-  WithdrawMultipleApplicationEpic
+  WithdrawMultipleApplicationEpic,
+  GetAsssessmentElegibilityEpic
 );
 
 export default rootEpic;

@@ -16,6 +16,7 @@ import {
   WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import { ProxyApiError } from "../api/types";
 
 export interface QueryParamItem {
   paramName?: QUERY_PARAMETER_NAME;
@@ -1184,4 +1185,19 @@ export interface SavePossibleNhePreferenceRequest {
 export interface GetPossibleNhePreferenceRequest {
   applicationId: string;
   scheduleId: string;
+} 
+export interface GetAssessmentElegibilityRequest {
+  applicationId: Application["applicationId"];
+  candidateId: Candidate["candidateId"];
+  jobId?: Job["jobId"];
+  requisitionId?: string;
+}
+
+// Maybe this should be in the assessmentTypes?
+export interface GetAssessmentElegibilitySucccessResponse {
+  assessmentElegibility: boolean;
+}
+
+export interface GetAssessmentElegibilityErrorState extends ProxyApiError {
+ 
 }

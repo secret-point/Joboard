@@ -47,3 +47,7 @@ export interface SelfIdentificationInfo {
   otherReligion: string;
   sexualOrientation: string;
 }
+
+export interface GetAssessmentElegibilityResponse {
+  assessmentEligibility: boolean;
+}
