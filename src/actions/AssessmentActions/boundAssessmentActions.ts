@@ -1,5 +1,6 @@
 import store from "../../store/store";
-import { GetAssessmentElegibilityErrorState, GetAssessmentElegibilityRequest, GetAssessmentElegibilitySucccessResponse } from "../../utils/types/common";
+import { ProxyApiError } from "../../utils/api/types";
+import { GetAssessmentElegibilityRequest, GetAssessmentElegibilitySucccessResponse } from "../../utils/types/common";
 
 import {
   actionGetAssessmentElegibility, actionGetAssessmentElegibilityFailed, actionGetAssessmentElegibilitySuccess
@@ -11,5 +12,5 @@ export const boundGetAssessmentElegibility = (payload: GetAssessmentElegibilityR
 export const boundGetAssessmentElegibilitySuccess = (payload: GetAssessmentElegibilitySucccessResponse, ) =>
   store.dispatch(actionGetAssessmentElegibilitySuccess(payload));
 
-export const boundGetAssessmentElegibilityFailed = (payload: GetAssessmentElegibilityErrorState, ) =>
+export const boundGetAssessmentElegibilityFailed = (payload: ProxyApiError, ) =>
   store.dispatch(actionGetAssessmentElegibilityFailed(payload));

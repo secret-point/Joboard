@@ -1,5 +1,6 @@
 import { Action } from "redux";
-import { GetAssessmentElegibilityErrorState, GetAssessmentElegibilityRequest, GetAssessmentElegibilitySucccessResponse } from "../../utils/types/common";
+import { ProxyApiError } from "../../utils/api/types";
+import { GetAssessmentElegibilityRequest, GetAssessmentElegibilitySucccessResponse } from "../../utils/types/common";
 
 export enum ASSESSMENT_ACTION_TYPES {
 
@@ -23,7 +24,7 @@ export interface GetAssessmentElegibilitySuccessAction extends Action {
 
 export interface GetAssessmentElegibilityFailedAction extends Action {
   type: ASSESSMENT_ACTION_TYPES.GET_ASSESSMENT_ELEGIBILITY_FAILED;
-  payload: GetAssessmentElegibilityErrorState;
+  payload: ProxyApiError;
 }
 
 export type AssessmentActionTypes =
