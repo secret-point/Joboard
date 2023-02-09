@@ -1,5 +1,6 @@
 import { AxiosError } from "axios";
 import {
+  ASSESSMENT_ELIGIBILITY_ERROR_CODE,
   CREATE_APPLICATION_ERROR_CODE,
   GET_APPLICATION_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
@@ -19,6 +20,12 @@ export interface CreateApplicationResponse {
   data: Application;
   error: string;
   errorCode: CREATE_APPLICATION_ERROR_CODE;
+}
+
+export interface GetAssessmentElegibilityResponse {
+  data: any;
+  error: string;
+  errorCode: ASSESSMENT_ELIGIBILITY_ERROR_CODE;
 }
 
 export interface GetApplicationResponse {
@@ -53,10 +60,9 @@ export interface UpdateWorkflowNameResponse {
 export interface ProxyApiError {
   errorCode: string;
   errorMessage?: string;
+  
 }
-
-export interface ApiError extends ProxyApiError, AxiosError {
-}
+export interface ApiError extends ProxyApiError, AxiosError {}
 
 export interface GetJobInfoResponse {
   data: Job;

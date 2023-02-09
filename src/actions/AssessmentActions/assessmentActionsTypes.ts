@@ -1,6 +1,5 @@
 import { Action } from "redux";
 import { GetAssessmentElegibilityErrorState, GetAssessmentElegibilityRequest, GetAssessmentElegibilitySucccessResponse } from "../../utils/types/common";
-import { ApiError } from "../../utils/api/types";
 
 export enum ASSESSMENT_ACTION_TYPES {
 

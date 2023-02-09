@@ -397,4 +397,9 @@ export enum WITHDRAW_REASON_CASE {
   CASE_6 = "Withdrawing previous application because previous application is without SHIFT_PREFERENCES and SCHEDULE_ID or at shift selection while current application has SCHEDULE_ID"
 }
 
+export enum ASSESSMENT_ELIGIBILITY_ERROR_CODE {
+  CANDIDATE_NOT_AUTHORIZED = "CANDIDATE_NOT_AUTHORIZED",
+  UNABLE_TO_CHECK_ASSESSMENT_ELEGIBILITY = "UNABLE_TO_CHECK_ASSESSMENT_ELEGIBILITY",
+}
+
 export const NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES = 3;
