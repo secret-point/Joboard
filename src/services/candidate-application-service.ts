@@ -17,9 +17,7 @@ export default class CandidateApplicationService {
   }
 
   async getApplication(applicationId: string) {
-    const response = await this.axiosInstance.get(
-      `/applications/${applicationId}`,
-      {
+    const response = await this.axiosInstance.get(`/applications/${applicationId}`, {
         headers: {
           "Cache-Control": "no-cache"
         }
@@ -29,28 +27,17 @@ export default class CandidateApplicationService {
   }
 
   async createApplication(payload: CreateApplicationRequest) {
-    const response = await this.axiosInstance.post(
-      "/create-application",
-      payload
-    );
+    const response = await this.axiosInstance.post("/create-application", payload);
     return response.data;
   }
 
-  async createApplicationDS(
-    payload: CreateApplicationRequestDS
-  ): Promise<CreateApplicationResponse> {
-    const response = await this.axiosInstance.post(
-      "/ds/create-application/",
-      payload
-    );
+  async createApplicationDS( payload: CreateApplicationRequestDS ): Promise<CreateApplicationResponse> {
+    const response = await this.axiosInstance.post("/ds/create-application/", payload);
     return response.data;
   }
 
   async updateApplication(payload: UpdateApplicationRequest) {
-    const response = await this.axiosInstance.put(
-      "/update-application",
-      payload
-    );
+    const response = await this.axiosInstance.put("/update-application", payload);
     return response.data;
   }
 
@@ -60,33 +47,17 @@ export default class CandidateApplicationService {
   }
 
   async terminateApplication(applicationId: string, state: string) {
-    const response = await this.axiosInstance.put(
-      `/terminate-application/${applicationId}/${state}`
-    );
+    const response = await this.axiosInstance.put(`/terminate-application/${applicationId}/${state}`);
     return response.data;
   }
 
-  async updateWOTCStatus(
-    applicationId: string,
-    candidateId: string,
-    status: string
-  ) {
-    const response = await this.axiosInstance.put("/update-wotc-status", {
-      applicationId,
-      candidateId,
-      status
-    });
+  async updateWOTCStatus( applicationId: string, candidateId: string, status: string ) {
+    const response = await this.axiosInstance.put("/update-wotc-status", { applicationId, candidateId, status });
     return response.data;
   }
 
-  async updateWorkflowStepName(
-    applicationId: string,
-    workflowStepName: string
-  ) {
-    const response = await this.axiosInstance.put(
-      "/update-workflow-step-name",
-      { applicationId, workflowStepName }
-    );
+  async updateWorkflowStepName( applicationId: string, workflowStepName: string ) {
+    const response = await this.axiosInstance.put("/update-workflow-step-name", { applicationId, workflowStepName });
     return response.data;
   }
 
