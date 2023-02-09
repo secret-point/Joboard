@@ -16,7 +16,6 @@ import {
   WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
-import { ProxyApiError } from "../api/types";
 
 export interface QueryParamItem {
   paramName?: QUERY_PARAMETER_NAME;

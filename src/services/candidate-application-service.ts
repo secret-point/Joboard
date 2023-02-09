@@ -18,10 +18,10 @@ export default class CandidateApplicationService {
 
   async getApplication(applicationId: string) {
     const response = await this.axiosInstance.get(`/applications/${applicationId}`, {
-        headers: {
-          "Cache-Control": "no-cache"
-        }
+      headers: {
+        "Cache-Control": "no-cache"
       }
+    }
     );
     return response.data;
   }
