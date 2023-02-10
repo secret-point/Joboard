@@ -25,16 +25,11 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {
-  MXAdditionalBGCFormConfigPart1,
-  AdditionalBGCFormConfigPart2,
-  MXCountrySelectOptions,
-  MXCRUPValue,
-  MXIdNumberBgcFormConfig
+  AdditionalBGCFormConfigPart2, UKAdditionalBGCFormConfigPart1, UKCountrySelectOptions, UKIdNumberBgcFormConfig, UKNINValue
 } from "../../../utils/constants/common";
-import { handleMXSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
+import { handleUKSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
-import PreviousLegalNameForm from "../../common/bgc/PreviousLegalNameForm";
 import PreviousWorkedAtAmazonForm from "../../common/bgc/PreviousWorkedAtAmazonForm";
 import DebouncedButton from "../../common/DebouncedButton";
 import DatePicker from "../../common/formDatePicker/DatePicker";
@@ -51,17 +46,15 @@ interface MapStateToProps {
 }
 
 interface AdditionalBGCInfoProps {
-
 }
 
 type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 
 export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
-  const { candidate, application, bgc, schedule } = props;
+  const { candidate, application, schedule } = props;
   const { candidatePatchRequest, formError } = candidate;
   const { candidateData } = candidate.results;
   const { scheduleDetail } = schedule.results;
-  const { stepConfig } = bgc;
   const applicationData = application.results;
   const additionalBgc = candidateData?.additionalBackgroundInfo || {};
   const pageName = METRIC_NAME.ADDITIONAL_BGC_INFO;
@@ -72,20 +65,20 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
   // TODO: customized based on country
   if (!countryDefaultValue) {
-    countryDefaultValue = MXCountrySelectOptions[0].value;
+    countryDefaultValue = UKCountrySelectOptions[0].value;
     set(additionalBgc, "address.country", countryDefaultValue);
-    set(additionalBgc, "address.countryCode", MXCountrySelectOptions[0].countryCode);
+    set(additionalBgc, "address.countryCode", UKCountrySelectOptions[0].countryCode);
   }
 
   if (!nationIdTypeDefaultValue) {
-    nationIdTypeDefaultValue = MXCRUPValue;
+    nationIdTypeDefaultValue = UKNINValue;
     set(additionalBgc, "governmentIdType", nationIdTypeDefaultValue);
   }
 
   useEffect(() => {
     // For consistence, we use idNumber + governmentIdType rather than primaryNationalId field.
     // Since we don't maintain primaryNationalId field, we don't send candidate's primaryNationalId to backend.
-    boundSetCandidatePatchRequest({
+    candidateData && additionalBgc && boundSetCandidatePatchRequest({
       additionalBackgroundInfo: omit(additionalBgc, ["primaryNationalId"])
     });
 
@@ -93,7 +86,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       boundSetCandidatePatchRequest({});
       boundUpdateCandidateInfoError({});
     };
-  }, []);
+  }, [candidateData]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -232,15 +225,14 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
   const handleClickNext = () => {
     boundResetBannerMessage();
     if (candidatePatchRequest && candidateData && applicationData) {
-      handleMXSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
+      handleUKSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError);
     }
   };
 
   return (
     <Col>
-      <PreviousLegalNameForm />
       {
-        MXAdditionalBGCFormConfigPart1.map(config => {
+        UKAdditionalBGCFormConfigPart1.map(config => {
           return (
             <Col key={config.labelText} gridGap={15}>
               {
@@ -260,11 +252,11 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           dataKey: "additionalBackgroundInfo.address.country",
           id: "additionalBGC_Country",
           type: "select",
-          selectOptions: MXCountrySelectOptions,
+          selectOptions: UKCountrySelectOptions,
           labelTranslationKey: "BB-BGC-Additional-bgc-form-country-label-text",
           errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-country-error-text",
         }}
-        defaultValue={MXCountrySelectOptions.find(option => option.value === countryDefaultValue)}
+        defaultValue={UKCountrySelectOptions.find(option => option.value === countryDefaultValue)}
         handleChange={(option: i18nSelectOption) => {
           SetNewCandidatePatchRequest([
             { value: option.value, dataKey: "additionalBackgroundInfo.address.country" }
@@ -273,18 +265,17 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       />
       <FormInputText
         inputItem={{
-          ...MXIdNumberBgcFormConfig,
-          hasError: get(formError, MXIdNumberBgcFormConfig.dataKey) || false,
+          ...UKIdNumberBgcFormConfig,
+          hasError: get(formError, UKIdNumberBgcFormConfig.dataKey) || false,
         }}
         defaultValue={get(candidateData, "additionalBackgroundInfo.idNumber") || ""}
-        inputValue={get(candidatePatchRequest, "additionalBackgroundInfo.idNumber") || ""}
         handleChange={(e: ChangeEvent<HTMLInputElement>) => {
           const value = e.target.value || "";
-          SetNewCandidatePatchRequest([{ value: value.trim(), dataKey: "additionalBackgroundInfo.idNumber" }]);
+          SetNewCandidatePatchRequest([{ value: value, dataKey: "additionalBackgroundInfo.idNumber" }]);
         }}
         handleBlur={(e: FocusEvent<HTMLInputElement>) => {
           const value = e.target.value || "";
-          SetNewCandidatePatchRequest([{ value: value.trim().toUpperCase(), dataKey: "additionalBackgroundInfo.idNumber" }]);
+          SetNewCandidatePatchRequest([{ value: value.trim(), dataKey: "additionalBackgroundInfo.idNumber" }]);
         }}
       />
       {
@@ -298,7 +289,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           );
         })
       }
-      <PreviousWorkedAtAmazonForm />
+      <PreviousWorkedAtAmazonForm isDisplayPreviousWorkedForm={false} />
       <Col padding={{ top: "S300", bottom: "S300" }}>
         <DebouncedButton
           variant={ButtonVariant.Primary}

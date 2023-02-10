@@ -1632,6 +1632,26 @@
       "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, napište nám na adrese www.amazon.com/applicationhelp a požádejte o pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Pro zobrazení úplného seznamu přijatelných dokumentů klikněte <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>sem</a>.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Pokud máte zdravotní postižení a domníváte se, že můžete potřebovat přizpůsobení náborového procesu společnosti Amazon, kontaktujte nás a proberte to s námi na čísle 0808 164 9427 nebo e-mailem na adrese myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Obdržíte od nás e-mail s dalšími informacemi ohledně následujícího postupu v rámci Vaší žádosti. Těšíme se, až se s Vámi setkáme na schůzce před přijetím.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Další podrobnosti",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Dotazník k daňovým úlevám na pracovní příležitosti",
       "note" : "Text for the WOTC page title text"
@@ -2955,6 +2975,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Žádost se nepodařilo stáhnout.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Další směny jsou na cestě!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Pracovní nabídky zveřejňujeme často, takže nám zašlete své preference ohledně směn a my Vás budeme kontaktovat, až najdeme směnu, která Vám bude vyhovovat.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Odešlete své preference ohledně směn",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

@@ -540,6 +540,10 @@
       "value" : "CURP ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Additional information",
+      "note" : "Text for the BGC additional information title text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Please enter a valid 9 digits social security number without dash",
       "note" : "Text for the additional bgc form national id number error message text"

@@ -31,14 +31,14 @@ interface MapStateToProps {
 }
 
 interface PreviousWorkedAtAmazonFormProps {
-
+  isDisplayPreviousWorkedForm?: boolean;
 }
 
 type PreviousWorkedAtAmazonFormMergedProps = MapStateToProps & PreviousWorkedAtAmazonFormProps;
 
 export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMergedProps) => {
 
-  const { candidate } = props;
+  const { candidate, isDisplayPreviousWorkedForm = true } = props;
   const { candidatePatchRequest, formError } = candidate;
   const { candidateData } = candidate.results;
   const additionalBgc = candidateData?.additionalBackgroundInfo;
@@ -62,7 +62,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
     setHasWorkedAtAmazon(additionalBgc?.hasPreviouslyWorkedAtAmazon);
   }, [JSON.stringify(additionalBgc)]);
 
-  const missingHasPreviouslyWorkedAtAmazon = get(formError, HasPreviouslyWorkedAtAmazonRadioConfig.dataKey) && isNil(hasWorkedAtAmazon);
+  const missingHasPreviouslyWorkedAtAmazon = get(formError, HasPreviouslyWorkedAtAmazonRadioConfig.dataKey) && isNil(hasWorkedAtAmazon) && isDisplayPreviousWorkedForm;
   return (
     <Col gridGap={15} padding={{ top: "S300" }}>
       <Row
@@ -82,7 +82,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
           handleCheckRadio(true);
         }}
         error={missingHasPreviouslyWorkedAtAmazon}
-        defaultChecked={additionalBgc?.hasPreviouslyWorkedAtAmazon === true}
+        defaultChecked={hasWorkedAtAmazon}
       />
 
       <DetailedRadio
@@ -93,7 +93,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
           handleCheckRadio(false);
         }}
         error={missingHasPreviouslyWorkedAtAmazon}
-        defaultChecked={additionalBgc?.hasPreviouslyWorkedAtAmazon === false}
+        defaultChecked={!hasWorkedAtAmazon}
       />
       {
         missingHasPreviouslyWorkedAtAmazon && (
@@ -106,7 +106,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
           </Row>
         )}
       {
-        hasWorkedAtAmazon && (
+        isDisplayPreviousWorkedForm && hasWorkedAtAmazon && (
           <Col gridGap={15}>
             <Row>
               <Text

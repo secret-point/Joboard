@@ -70,6 +70,10 @@
             "note": "Mexico as country name our application supports",
             "value": "Mexico"
         },
+        "BB-Country-United-Kingdom": {
+            "note": "United Kingdom as country name our application supports",
+            "value": "United Kingdom"
+        },
         "BB-ConsentPage-qualification-criteria-header-text": {
             "note": "Text for application qualification criteria",
             "value": "By applying, you confirm that:"
@@ -506,6 +510,10 @@
             "note": "Text for the additional bgc form zipcode error message text",
             "value": "Please enter a valid 5 digits zipcode"
         },
+        "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text": {
+            "note": "Text for the Kondo additional bgc form zipcode error message text",
+            "value": "Please input the UK postcode"
+        },
         "BB-BGC-Additional-bgc-form-country-label-text": {
             "note": "Text for the additional bgc form  country label text",
             "value": "Country"
@@ -542,6 +550,14 @@
             "note": "Text for the additional bgc form national id number label text",
             "value": "CURP ID"
         },
+        "BB-Kondo-BGC-additional-information-title-text": {
+            "note": "Text for the BGC additional information title text",
+            "value": "Additional information"
+        },
+        "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text": {
+            "note": "Text for the additional bgc form national id number label text",
+            "value": "UK National Insurance Number (If you do not have one, enter \"No NI\")"
+        },
         "BB-BGC-Additional-bgc-form-national-id-number-error-text": {
             "note": "Text for the additional bgc form national id number error message text",
             "value": "Please enter a valid 9 digits social security number without dash"
@@ -549,6 +565,10 @@
         "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text": {
             "note": "Text for the additional bgc form national id number error message text",
             "value": "Please enter a valid 18 character alphanumeric CURP ID without hyphens."
+        },
+        "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text": {
+            "note": "Text for the additional bgc form national id number error message text",
+            "value": "Enter government issued identification number or \"No NI\""
         },
         "BB-BGC-Additional-bgc-form-dob-label-text": {
             "note": "Text for the additional bgc form  date of birth label text",

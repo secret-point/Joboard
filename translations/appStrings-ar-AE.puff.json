@@ -68,6 +68,10 @@
       "value" : "المكسيك",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "المملكة المتحدة",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "يعني التقديم أنك تؤكد ما يلي:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "يرجى إدخال رمز بريدي صالح يتألّف من 5 أرقام",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "يرجى إدخال الرمز البريدي في المملكة المتحدة",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "البلد",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "رمز تسجيل السكان الفريد (CURP)",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "معلومات إضافية",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "رقم التأمين الوطني في المملكة المتحدة (إذا لم يكن لديك رقم، فأدخل \"No NI\")",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "يرجى إدخال رقم ضمان اجتماعي صالح يتألّف من 9 أرقام بدون شرطة",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "يرجى إدخال مُعرّف CURP أبجدي رقمي صالح مكون من 18 حرفًا بدون واصلات.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "أدخل رقم بطاقة الهوية الصادرة عن الحكومة أو \"No NI\"",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1631,6 +1651,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى الدردشة معنا على www.amazon.com/applicationhelp للحصول على المساعدة.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "انقر <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>هنا</a> للحصول على قائمة كاملة بالوثائق المقبولة.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "إذا كنت تعاني من إعاقة وتعتقد أنك قد تحتاج إلى تعديل عملية التوظيف في أمازون، يُرجى الاتصال بنا للمناقشة على الرقم 0808 164 9427 أو عبر البريد الإلكتروني على myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "سوف تتلقى رسالة بريد إلكتروني منا تقدم مزيدًا من المعلومات حول الخطوات التالية في طلبك. نتطلع إلى رؤيتك في موعد ما قبل التوظيف.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "مزيد من التفاصيل",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "رجوع إلى لوحة السجل",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "استبيان الائتمان الضريبي لفرص العمل",

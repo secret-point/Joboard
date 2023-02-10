@@ -68,6 +68,10 @@
       "value" : "Meksika.",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Birleşik Krallık",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Başvurarak şunları onaylarsınız:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Lütfen 5 basamaklı geçerli bir posta kodu girin",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Lütfen Bileşik Krallık posta kodu girin.",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Ülke",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP ki̇mli̇ği̇.",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Ek bilgiler",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Birleşik Krallık Ulusal Sigorta Numarası (numaranız yoksa “NI yok” girin)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Lütfen 9 basamaklı geçerli bir sosyal güvenlik numarası girin (kısa çizgi olmadan)",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Lütfen kısa çizgi içermeyen geçerli bir 18 karakterli alfanümerik CURP kimlik numarası girin.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Devlet tarafından düzenlenmiş kimlik numarası veya “NI yok” girin.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1631,6 +1651,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Yönlendiricinizin giriş kimliğini doğrulayamadık, lütfen yardım için www.amazon.com/applicationhelp adresinden bizimle sohbet edin.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Kabul edilebilir belgelerin tam listesi için <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>burayı</a> tıklayın.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Engeliniz varsa ve Amazon'un işe alma sürecinde ayarlama yapılması gerekebileceğini düşünüyorsanız lütfen 0808 164 9427 numaralı telefonu arayarak veya myapplication@amazon.co.uk adresinden e-posta göndererek görüşmek üzere bizimle iletişime geçin.",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Bizden, başvurunuzun sonraki adımları hakkında daha fazla bilgi veren bir e-posta alacaksınız. Sizi işe alma öncesi randevunuzda görmeyi dört gözle bekliyoruz.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Daha fazla detay",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Panele dönün.",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "İş fırsatı vergi kredisi anketi",

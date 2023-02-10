@@ -18,56 +18,21 @@ exports[`BackgroundCheck should match snapshot 1`] = `
   <Col
     gridGap={15}
   >
-    <H4
+    <H3
       color="neutral90"
       font="primary"
-      fontSize="T400"
+      fontSize="T500"
       fontWeight="regular"
       hyphens="none"
       margin={0}
     >
-      Consent to employment screening
-    </H4>
-    <Text
-      font="primary"
-      fontSize="T200"
-      hyphens="none"
-    >
-      Please provide authorization and information needed for a background check.
-    </Text>
+      Additional information
+    </H3>
   </Col>
-  <Connect(InfoStepCard)
-    expandedContent={<Memo(Connect(AuthorizationForBGC)) />}
-    infoCardStepStatus={
-      Object {
-        "editMode": false,
-        "status": "ACTIVE",
-      }
-    }
-    maxStepNumber={2}
-    stepIndex={1}
-    stepName="NON_FCRA"
-    title="Authorizations for Background Check, Medical Check, and Drug Test"
-  />
-  <Connect(InfoStepCard)
-    expandedContent={<Memo(Connect(AdditionalBGCInfo)) />}
-    infoCardStepStatus={
-      Object {
-        "editMode": true,
-        "status": "ACTIVE",
-      }
-    }
-    maxStepNumber={2}
-    stepIndex={2}
-    stepName="ADDITIONAL_BGC"
-    title="Additional Background Information"
-  />
-  <Col
-    padding={
-      Object {
-        "top": "S300",
-      }
-    }
-  />
+  <Suspense
+    fallback={<React.Fragment />}
+  >
+    <Connect(AdditionalBGCInfo) />
+  </Suspense>
 </Col>
 `;

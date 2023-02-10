@@ -344,11 +344,24 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
   required: true,
   type: "text",
   regex: "^(?=.*[0-9])(?=.*[A-Z])([A-Z0-9]{18})$", // 18 digits with at least one number and one letter
-  id: "idNumberInput",
+  id: "idNumberInput-mx",
   name: "idNumber",
   errorMessage: "Please enter a valid 18 character alphanumeric CURP ID without hyphens.",
   labelTranslationKey: "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text",
   errorMessageTranslationKey: "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text",
+};
+
+export const UKIdNumberBgcFormConfig: FormInputItem = {
+  labelText: 'UK National Insurance Number (If you do not have one, enter "No NI")',
+  dataKey: "additionalBackgroundInfo.idNumber",
+  required: true,
+  type: "text",
+  regex: "", // use isValidUKNationalInsuranceNumber instead
+  id: "idNumberInput-uk",
+  name: "idNumber",
+  errorMessage: 'Enter government issued identification number or "No NI"',
+  labelTranslationKey: "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text",
+  errorMessageTranslationKey: "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text",
 };
 
 export const NameRegexValidator = getCountryConfig(getCountryCode()).nameRegexValidator;
@@ -443,6 +456,23 @@ export const MXAdditionalBGCFormConfigPart1: FormInputItem[] = [
     placeholder: "Select a state",
   },
   ...AdditionalBGCFormConfigPart1.slice(4)
+];
+
+export const UKAdditionalBGCFormConfigPart1: FormInputItem[] = [
+  ...AdditionalBGCFormConfigPart1.slice(0, 3),
+  {
+    hasError: false,
+    labelText: "ZIP/Postal code",
+    errorMessage: "Please input the UK postcode",
+    required: true,
+    name: "ZIP/Postal code",
+    dataKey: "additionalBackgroundInfo.address.zipcode",
+    id: "additionalBGCZipcode",
+    regex: /^(([A-Z][A-HJ-Y]?\d[A-Z\d]?|ASCN|STHL|TDCU|BBND|[BFS]IQQ|PCRN|TKCA) ?\d[A-Z]{2}|BFPO ?\d{1,4}|(KY\d|MSR|VG|AI)[ -]?\d{4}|[A-Z]{2} ?\d{2}|GE ?CX|GIR ?0A{2}|SAN ?TA1)$/,
+    type: "text",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-zipcode-label-text",
+    errorMessageTranslationKey: "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text",
+  },
 ];
 
 export const AdditionalBGCFormConfigPart2: FormInputItem[] = [
@@ -889,6 +919,7 @@ export const ProtectedVeteranDefinitionList: {title: string; titleTranslationKey
 
 export const SocialSecurityNumberValue = "United States - Social Security Number";
 export const MXCRUPValue = "Mexico - Unique Population Registry Key";
+export const UKNINValue = "United Kingdom - Temp National Insurance Number";
 
 export const CountrySelectOptions = [
   { showValue: "United States", value: "United States", translationKey: "BB-Country-United-States", countryCode: "US" }
@@ -896,6 +927,10 @@ export const CountrySelectOptions = [
 
 export const MXCountrySelectOptions = [
   { showValue: "Mexico", value: "Mexico", translationKey: "BB-Country-Mexico", countryCode: "MX" }
+];
+
+export const UKCountrySelectOptions = [
+  { showValue: "United Kingdom", value: "United Kingdom", translationKey: "BB-Country-United-Kingdom", countryCode: "GB" }
 ];
 
 export const NationIdTypeSelectOptions = [
@@ -934,6 +969,14 @@ export const MXAdditionalBGCFormConfig: FormInputItem[] = [
   MXIdNumberBgcFormConfig,
   HasPreviouslyWorkedAtAmazonRadioConfig,
   PreviousLegalNameFormConfig
+];
+
+// This is used for additional bgc page form validation
+export const UKAdditionalBGCFormConfig: FormInputItem[] = [
+  ...UKAdditionalBGCFormConfigPart1,
+  ...AdditionalBGCFormConfigPart2,
+  UKIdNumberBgcFormConfig,
+  HasPreviouslyWorkedAtAmazonRadioConfig,
 ];
 
 export const dayHoursFilterValues: DayHoursFilter[] = [

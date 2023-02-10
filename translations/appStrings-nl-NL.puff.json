@@ -540,6 +540,10 @@
       "value" : "CURP-ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Aanvullende informatie",
+      "note" : "Text for the BGC additional information title text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldig Social Security Number van 9 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
@@ -1631,6 +1635,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "We konden de inlog-ID van je verwijzer niet valideren. Neem voor hulp contact met ons op via www.amazon.com/applicationhelp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klik <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>hier</a> voor een volledige lijst van acceptabele documenten.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Als je een beperking hebt en van mening bent dat je misschien een aanpassing nodig hebt in het wervingsproces van Amazon, neem dan contact met ons op om dit te bespreken op 0808 164 9427 of per e-mail op myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Je ontvangt van ons een e-mail met meer informatie over de volgende stappen in je aanvraag. We kijken ernaar uit je te zien op je afspraak vóór de huurperiode.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Meer gegevens",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "Vragenlijst belastingkrediet voor werkmogelijkheden",

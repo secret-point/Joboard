@@ -68,6 +68,10 @@
       "value" : "মেক্সিকো",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "যুক্তরাজ্য",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "আবেদন করার মাধ্যেম, আপনি কনফার্ম করছেন যে:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "অনুগ্রহ করে একটি কার্যকর 5 সংখ্যার জিপ কোড লিখুন",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "অনুগ্রহ করে UK পোস্টকোড ইনপুট করুন",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "দেশ",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "অতিরিক্ত তথ্য",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK-এর ন্যাশনাল ইন্স্যুরেন্স নম্বর (যদি আপনার না থাকে তবে \"No NI\" লিখুন)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ড্যাশ ছাড়া একটি সঠিক 9 সংখ্যার সোশ্যাল সিকিউরিটি নাম্বার লিখুন",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "হাইফেন ছাড়া একটি বৈধ 18 অক্ষরের আলফানিউমেরিক CURP ID লিখুন।",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "সরকারের জারি করা সনাক্তকরণ নম্বর বা \"No NI\" লিখুন",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -2975,6 +2995,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "আবেদন প্রত্যাহার করতে ব্যর্থ।",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "আরও শিফট আসছে!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "আমরা প্রায়ই চাকরি পোস্ট করি তাই আপনার শিফট পছন্দগুলি জমা দিন এবং আমরা আপনার জন্য কাজ করে এমন একটি শিফট পেলে আমরা আপনার সাথে যোগাযোগ করব।",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "আপনার শিফটের পছন্দগুলি জমা দিন",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

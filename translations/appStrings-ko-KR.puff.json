@@ -68,6 +68,10 @@
       "value" : "멕시코",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "영국",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "지원하면 다음을 확인하게 됩니다.",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "유효한 5자리 우편 번호를 입력하세요.",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "영국 우편번호를 입력하세요.",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "국가",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "추가 정보",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "영국 국민 보험 번호(없는 경우 “No NI”를 입력하세요).",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "대시 기호를 제외하고 유효한 9자리 사회 보장 번호(SSN)를 입력하세요.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "유효한 18자 영숫자 CURP ID를 하이픈 없이 입력하세요.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "정부에서 발행한 신분증 번호 또는 “No NI”를 입력하세요.",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1631,6 +1651,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "추천인의 로그인 ID를 확인할 수 없습니다. www.amazon.com/applicationhelp에서 채팅을 통해 도움을 받으시기 바랍니다.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "허용되는 문서의 전체 목록을 보려면 <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>여기</a>를 클릭하세요.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "장애가 있고 아마존의 채용 절차에 조정이 필요하다고 생각되는 경우 논의를 위해 0808 164 9427번으로 문의하거나 myapplication@amazon.co.uk로 이메일을 보내주세요.",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "지원의 다음 단계에 대한 추가 정보가 포함된 이메일을 받게 됩니다. 채용 전 면담에서 만나 뵙기를 고대합니다.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "기타 세부 사항",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "취업 기회 세액 공제 설문지",
@@ -2955,6 +2995,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "지원서 철회에 실패했습니다.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "더 많은 교대 업무가 게시 중입니다!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "채용 공고가 자주 게시되므로 선호하는 교대 업무를 제출해주시면 적합한 교대 업무를 찾아 연락드리겠습니다.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "교대 업무 선호 사항 제출",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

@@ -795,7 +795,7 @@ export interface FormInputItem {
   defaultValue?: string;
   selectOptions?: any[] | i18nSelectOption[] | StateSelectOption[]; // TODO unify these two types into one
   required?: boolean;
-  regex?: string;
+  regex?: string | RegExp;
   id: string;
   errorMessage?: string;
   name?: string;

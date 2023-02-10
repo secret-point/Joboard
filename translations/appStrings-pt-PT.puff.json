@@ -68,6 +68,10 @@
       "value" : "México",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Reino Unido",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Ao candidatar-se, confirma que:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Insira um código postal de 5 dígitos válido",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Insira um código postal do Reino Unido",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "País",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,20 @@
       "value" : "ID CURP",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Número nacional de seguro do Reino Unido (se não tiver um, insira \"No NI\")",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira um número de segurança social com 9 dígitos válidos, sem um travessão",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Insira uma ID CURP alfanumérica válida de 18 carateres sem hífenes.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Insira o número de identificação emitido pelos serviços oficiais ou \"No NI\"",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

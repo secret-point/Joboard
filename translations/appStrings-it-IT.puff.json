@@ -68,6 +68,10 @@
       "value" : "Messico",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Regno Unito",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Effettuando la tua candidatura, confermi che:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Inserisci un codice postale valido di 5 cifre",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Inserisci il codice postale del Regno Unito",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Paese",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "ID CURP",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Informazioni aggiuntive",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Numero di previdenza nazionale del Regno Unito (se non ne hai uno, inserisci “Nessun NI”)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Inserisci un numero di previdenza sociale valido di 9 cifre senza trattino",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Inserisci un ID CURP alfanumerico valido di 18 caratteri senza trattini.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Inserisci il numero identificativo rilasciato dal governo o “Nessun NI”",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {

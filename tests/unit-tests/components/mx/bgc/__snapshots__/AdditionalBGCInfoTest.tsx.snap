@@ -355,7 +355,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
         "errorMessage": "Please enter a valid 18 character alphanumeric CURP ID without hyphens.",
         "errorMessageTranslationKey": "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text",
         "hasError": false,
-        "id": "idNumberInput",
+        "id": "idNumberInput-mx",
         "labelText": "CURP ID",
         "labelTranslationKey": "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text",
         "name": "idNumber",

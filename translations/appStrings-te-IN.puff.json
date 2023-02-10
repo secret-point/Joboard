@@ -68,6 +68,10 @@
       "value" : "మెక్సికో",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "యునైటెడ్ కింగ్‌డమ్",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "దరఖాస్తు చేయడం ద్వారా, మీరు దీనిని ధృవీకరిస్తారు:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "దయచేసి చెల్లుబాటు అయ్యే 5 అంకెల జిప్ కోడ్‌ను నమోదు చేయండి",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "దయచేసి UK పిన్‌కోడ్‌ను ఇన్‌పుట్ చేయండి",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "దేశం",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "అదనపు సమాచారం",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK నేషనల్ ఇన్సూరెన్స్ నెంబరు (మీకు లేనట్లయితే, \" NI లేదు\" నమోదు చేయండి)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "దయచేసి డాష్ లేకుండా చెల్లుబాటు అయ్యే 9 అంకెల సామాజిక భద్రతా నంబర్‌ను నమోదు చేయండి",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "దయచేసి హైఫన్‌లు లేకుండా చెల్లుబాటు అయ్యే 18 అక్షరాల ఆల్ఫాన్యూమరిక్ CURP IDని ఎంటర్ చేయండి.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "ప్రభుత్వం జారీ చేసిన గుర్తింపు నెంబరు లేదా \"NI లేదు\" ఎంటర్ చేయండి",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1631,6 +1651,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి సహాయం కోసం www.amazon.com/applicationhelpలో మాతో చాట్ చేయండి.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "ఆమోదయోగ్యమైన పత్రాల పూర్తి జాబితా కోసం <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>ఇక్కడ</a> క్లిక్ చేయండి.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "మీకు వైకల్యం ఉన్నట్లయితే మరియు మీకు Amazon యొక్క రిక్రూట్‌మెంట్ ప్రాసెస్‌కు సర్దుబాటు అవసరమని భావించినట్లయితే, దయచేసి 0808 164 9427 పై లేదా myapplication@amazon.co.uk ద్వారా చర్చించడానికి ఇమెయిల్ ద్వారా మమ్మల్ని సంప్రదించండి",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "మీ అప్లికేషన్‌లో తదుపరి దశలపై మరింత సమాచారాన్ని అందిస్తూ మీరు మా నుండి ఇమెయిల్ అందుకుంటారు. మీ ప్రీ-హైర్ అపాయింట్‌మెంట్ వద్ద మిమ్మల్ని చూడటానికి మేము ఎదురుచూస్తున్నాము.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "మరిన్ని వివరాలు",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "పని అవకాశం పన్ను క్రెడిట్ ప్రశ్నాపత్రం",

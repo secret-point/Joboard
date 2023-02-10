@@ -121,7 +121,8 @@ export enum UPDATE_APPLICATION_API_TYPE {
   THANK_YOU = "thank-you",
   JOB_PREFERENCES = "job-preferences",
   NHE_PREFERENCES = "nhe-preferences",
-  DEFAULT = "Update type is missing"
+  DEFAULT = "Update type is missing",
+  ADDITIONAL_INFORMATION = "additional-information"
 }
 
 export enum BACKGROUND_AGENT {

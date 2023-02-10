@@ -68,6 +68,10 @@
       "value" : "Mexico",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Verenigd Koninkrijk",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Door je aan te melden, bevestig je dat:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Voer een geldige postcode van 5 cijfers in",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Voer de UK postcode in",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Land",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP-ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Aanvullende informatie",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK nationale verzekeringsnummer (als je er geen hebt, voer dan ‘Geen NI’ in)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldig burgerservicenummer van 9 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldige alfanumerieke CURP-ID van 18 tekens in zonder koppeltekens.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Voer een door de overheid uitgegeven identificatienummer of ‘Geen NI’ in",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1631,6 +1651,26 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "We konden de inlog-ID van je verwijzer niet valideren. Neem contact met ons op via www.amazon.com/applicationhelp voor hulp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klik <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>hier</a> voor een volledige lijst van acceptabele documenten.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Als je een beperking hebt en van mening bent dat je misschien een aanpassing nodig hebt in het wervingsproces van Amazon, neem dan contact met ons op om dit te bespreken op 0808 164 9427 of per e-mail op myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Je ontvangt van ons een e-mail met meer informatie over de volgende stappen in je aanvraag. We kijken ernaar uit je te zien op je afspraak vóór de huurperiode.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Meer gegevens",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Terug naar dashboard",
+      "note" : "Text for the thank you page return to dashboard text"
     },
     "BB-WOTC-page-title-text" : {
       "value" : "Vragenlijst belastingkrediet voor werkmogelijkheden",

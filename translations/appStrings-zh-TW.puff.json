@@ -1632,6 +1632,26 @@
       "value" : "我們無法驗證推薦人的登入 ID，請透過 www.amazon.com/applicationhelp 聯絡我們以尋求協助。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "請點擊<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>此處</a>以取得可接受文件的完整清單。",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "如果您有殘疾，並認為 Amazon 的招聘流程可能需要調整，請致電 0808 164 9427 或傳送電子郵件至 myapplication@amazon.co.uk 聯絡我們進行討論",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "您將收到我們傳送的電子郵件，提供有關您申請後續步驟的更多資訊。我們期待在聘前約見時與您見面。",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "更多詳細內容",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "返回控制面板",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "工作機會稅收抵免問卷",
       "note" : "Text for the WOTC page title text"

@@ -63,6 +63,9 @@ import {
   SelfIdPronounsItemsMap,
   SelfIdProtectedVeteranRadioItem,
   SelfIdVeteranStatusRadioItem,
+  UKAdditionalBGCFormConfig,
+  UKCountrySelectOptions,
+  UKIdNumberBgcFormConfig,
   UserIdValidator,
   ValueToI18nKeyMap
 } from "./constants/common";
@@ -271,9 +274,8 @@ export const getQueryParamStringFromURLFor3rdParty = (notationOverride?: string)
 
   if (notationOverride) {
     return `${notationOverride}${queryString.substring(1)}`;
-  } 
+  }
   return queryString;
-    
 };
 
 export const renderScheduleFullAddress = ( schedule: Schedule ): string => {
@@ -613,6 +615,8 @@ export const verifyBasicInfo =
           const value = get(candidate, itemConfig.dataKey);
           if (itemConfig.id === IdNumberBgcFormConfig.id) {
             isValid = isSSNValid(candidate, required || false, regex || "");
+          } else if (itemConfig.id === UKIdNumberBgcFormConfig.id) {
+            isValid = isValidUKNationalInsuranceNumber(candidate, required || false, regex || "");
           } else if (itemConfig.dataKey.includes("mostRecentBuildingWorkedAtAmazon") || itemConfig.dataKey.includes("mostRecentTimePeriodWorkedAtAmazon")) {
             const hasWorkedAtAmazonPreviously = get(candidate, "additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon");
             if (hasWorkedAtAmazonPreviously === true) {
@@ -658,7 +662,49 @@ export const verifyBasicInfo =
       };
     };
 
-export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string): boolean => {
+const UK_NATIONAL_INSURANCE_PASS_VALUE = "NO NI";
+
+const validateUKNationalInsuranceNumber = (value: string): boolean => {
+  if (!value) return false;
+  if (value.toUpperCase() === UK_NATIONAL_INSURANCE_PASS_VALUE) return true;
+
+  /*
+   The regexes follow this guidance on the National Insurance Number formatting: https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim39110 with a small adjustment to
+   allow for an 8 character NIN type used from SF in addition to the 9 character type. (hence ? to the last group of nationalInsuranceNumberMask).
+  */
+  const maskedInsuranceNumberRegex = /(^[*]{5}\d{3}[A-Z]$)|(^[*]{4}\d{4}$)/i;
+  const nationalInsuranceNumberRegex = /^(?:(?!TN)[A-Z]{2})([0-9]{6})([A-Z]{1})?$/i;
+  const temporaryNationalInsuranceNumberRegex = /^TN\d{6}$/;
+
+  const sanitizedValue = value.replace(/\s/g, "").toUpperCase();
+
+  return (
+    maskedInsuranceNumberRegex.test(value) ||
+    temporaryNationalInsuranceNumberRegex.test(sanitizedValue) ||
+    nationalInsuranceNumberRegex.test(sanitizedValue)
+  );
+};
+
+const isValidUKNationalInsuranceNumber = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string | RegExp): boolean => {
+  if (!patchCandidate) {
+    return false;
+  }
+
+  const states = store.getState();
+
+  const candidate = states.candidate?.results?.candidateData || null;
+  const newId = get(patchCandidate, "additionalBackgroundInfo.idNumber");
+  const oldId = get(candidate, IdNumberBgcFormConfig.dataKey);
+
+  if (newId && newId.includes("***") && newId === oldId) {
+    return true;
+  } else if (validateUKNationalInsuranceNumber(newId)) {
+    return true;
+  }
+  return false;
+};
+
+export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string | RegExp): boolean => {
 
   if (!patchCandidate) {
     return false;
@@ -678,6 +724,7 @@ export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: bool
   if (newSSN && newSSN.includes("***") && newSSN === oldSNN) {
     return true;
   } else if (newSSN) {
+
     if (getFeatureFlagValue(FEATURE_FLAG.VALIDATE_SSN_EXTRA)) {
       if (new RegExp(regex).test(newSSN.trim())) {
         // apply even more validations
@@ -739,7 +786,7 @@ export const isDateGreaterThanToday = (date: string): boolean => {
   return diff < 0;
 };
 
-export const validateInput = (value: string, required: boolean, regex: string) => {
+export const validateInput = (value: string, required: boolean, regex: string | RegExp) => {
   if (!required && (!value || value?.length === 0)) return true;
 
   if (required && (!value || value?.length === 0)) return false;
@@ -1028,6 +1075,34 @@ export const handleMXSubmitAdditionalBgc =
         boundUpdateApplicationDS(request, (applicationData: Application) => {
           onCompleteTaskHelper(applicationData);
           handleMXUpdateAdditionalBGCStep(stepConfig);
+        });
+      }
+    };
+
+export const handleUKSubmitAdditionalBgc =
+    ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState ) => {
+      const { ADDITIONAL_INFORMATION } = UPDATE_APPLICATION_API_TYPE;
+
+      if (candidatePatchRequest.additionalBackgroundInfo?.address) {
+        const countryName = candidatePatchRequest.additionalBackgroundInfo.address?.country || "";
+        candidatePatchRequest.additionalBackgroundInfo.address.countryCode = getUKCountryCodeByCountryName(countryName);
+      }
+
+      const patch: CandidatePatchRequest = { ...candidatePatchRequest };
+      const verifyInfo = verifyBasicInfo(patch, formError, UKAdditionalBGCFormConfig);
+      boundUpdateCandidateInfoError(verifyInfo.formError);
+      const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
+      const isOver18 = isDOBOverEighteen(dob);
+      const isDateValid = isDOBLessThan100(dob);
+      if (!verifyInfo.hasError && isOver18 && isDateValid) {
+        // Bound update additional info all
+        const payload = {
+          candidate: candidatePatchRequest.additionalBackgroundInfo
+        };
+        const request: UpdateApplicationRequestDS =
+                createUpdateApplicationRequest(applicationData, ADDITIONAL_INFORMATION, payload);
+        boundUpdateApplicationDS(request, (applicationData: Application) => {
+          onCompleteTaskHelper(applicationData);
         });
       }
     };
@@ -1654,6 +1729,11 @@ export const getCountryCodeByCountryName = (countryName: string): string => {
 
 export const getMXCountryCodeByCountryName = (countryName: string): string => {
   const country = MXCountrySelectOptions.filter(country => country.value === countryName);
+  return country.length ? country[0].countryCode : "";
+};
+
+export const getUKCountryCodeByCountryName = (countryName: string): string => {
+  const country = UKCountrySelectOptions.filter(country => country.value === countryName);
   return country.length ? country[0].countryCode : "";
 };
 
