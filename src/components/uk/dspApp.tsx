@@ -22,7 +22,7 @@ import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
 import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
-import NoAvailableShift from "../us/noAvailableShift/NoAvailableShift";
+import NoAvailableShift from "../uk/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
 import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";

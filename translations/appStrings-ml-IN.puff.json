@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "അപേക്ഷകൾ ലിസ്റ്റ് ചെയ്യാൻ കഴിയുന്നില്ല.",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "അതെ, പുതിയ അപേക്ഷ സമർപ്പിക്കുക",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "ഇല്ല, നിലവിലുള്ള അപേക്ഷയിലേക്ക് പോകുക",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "നിങ്ങൾക്ക് ഇതിനകം തന്നെ മറ്റ് സജീവ തൊഴിൽ ആപേക്ഷ(കൾ) ഉണ്ട്. നിങ്ങൾ ഈ തൊഴിൽ അപേക്ഷ സമർപ്പിക്കുകയാണെങ്കിൽ, നിങ്ങളുടെ മറ്റ് തൊഴിൽ അപേക്ഷ(കൾ) പിൻവലിക്കപെടും. ഈ തൊഴിൽ അപേക്ഷ സമർപ്പിച്ച് മറ്റ് തൊഴിൽ അപേക്ഷ(കൾ) പിൻവലിക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "നിലവിലുള്ള അപേക്ഷ പിൻവലിക്കണോ?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "സമയം",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "തീയതികൾ",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "നഗരം",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "നിങ്ങളുടെ മുൻ‌കൂർ നിയമന അപ്പോയിന്‍മെന്‍റ് ലഭ്യത",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "മീറ്റിംഗ് വിശദാംശങ്ങൾ",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "മണിക്കൂർ",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "തീയതി",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "നിങ്ങളുടെ NI നമ്പറായി നിങ്ങൾ \"NO NI\" നൽകിയിട്ടുണ്ടെങ്കിൽ, ഇനിപ്പറയുന്ന ഫോർമാറ്റിൽ നിങ്ങളുടെ ജനനത്തീയതിയെ അടിസ്ഥാനമാക്കി ഒരു താൽക്കാലിക NI നമ്പർ അസൈൻ ചെയ്യപ്പെടും: \"TNDDMMYY\".",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "നിങ്ങൾ മുമ്പ് Amazon-ൽ ജോലി ചെയ്തിട്ടുണ്ടോ?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "ജനന തീയതി",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "ദേശീയ ID നമ്പർ",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "ദേശീയ ID തരം",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "രാജ്യം",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "തപാൽ കോഡ്",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "നഗരം",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "വിലാസം",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "കൂടുതൽ വിവരങ്ങൾ",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "സമയക്രമം",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "ആഴ്ചയിലെ ദിവസങ്ങൾ",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "പ്രതിവാര മണിക്കൂര്‍",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "ആദ്യകാല ആരംഭ തീയതി",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "ഷിഫ്റ്റ് മുൻഗണനകൾ",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "അപേക്ഷ പിൻവലിക്കുന്നതിൽ പരാജയപ്പെട്ടു.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }

@@ -1632,6 +1632,26 @@
       "value" : "Vi kunne ikke validere dit henvisnings login-ID. Chat venligst med os på www.amazon.com/applicationhelp, for at få hjælp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klik <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>her</a> for en komplet liste over accepterede dokumenter.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Hvis du har et handicap og mener, at du måske har brug for en tilpasning af Amazons rekrutteringsproces, bedes du kontakte os på 0808 164 9427 eller via e-mail på myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Du modtager en e-mail fra os med yderligere oplysninger om de næste trin i din ansøgning. Vi glæder os til at se dig til din aftale før ansættelsen.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Flere detaljer",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Tilbage til oversigt",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Spørgeskema til skattefradrag for arbejdsmuligheder",
       "note" : "Text for the WOTC page title text"

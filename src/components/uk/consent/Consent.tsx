@@ -127,8 +127,6 @@ export const Consent = (props: MapStateToProps) => {
       boundCreateApplicationDS(payload, (application: Application) => {
         const { applicationId, candidateId } = application;
 
-        // Reload consent page with applicationId and wait for workflow service to return next page before continue the application
-        routeToAppPageWithPath(PAGE_ROUTES.CONSENT, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]);
         boundWorkflowRequestStart();
         envConfig && loadWorkflowDS(
           jobId || "",
@@ -137,6 +135,8 @@ export const Consent = (props: MapStateToProps) => {
           candidateId,
           envConfig
         );
+        // Reload consent page with applicationId and wait for workflow service to return next page before continue the application
+        routeToAppPageWithPath(PAGE_ROUTES.CONSENT, [{ paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: application.applicationId }]);
       });
     }
   };

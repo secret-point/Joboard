@@ -1632,6 +1632,26 @@
       "value" : "Não foi possível validar a ID de início de sessão da sua entidade referenciadora. Contacte-nos através de www.amazon.com/applicationhelp para obter ajuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Clique <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>aqui</a> para obter uma lista completa dos documentos aceitáveis.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Se tiver uma incapacidade e acredita que poderá necessitar de uma adaptação no processo de recrutamento da Amazon, contacte-nos através do número 0808 164 9427 ou por e-mail para myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Receberá um e-mail nosso com mais informações sobre os próximos passos da sua candidatura. Estamos ansiosos para vê-lo na sua entrevista de pré-contratação.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Mais detalhes",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Voltar para o painel",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Questionário de crédito fiscal das oportunidades de emprego",
       "note" : "Text for the WOTC page title text"

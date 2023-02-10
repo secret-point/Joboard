@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoAvailableShift should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T400"
+    hyphens="none"
+  >
+    More shift are on the way!
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    We post jobs often so submit your shift preferences and we will contact you when we find a shift that works for you.
+  </Text>
+  <Button
+    colorScheme="default"
+    iconPosition="leading"
+    onClick={[Function]}
+    shouldUseResponsiveContent={true}
+    size="default"
+    type="button"
+    variant="primary"
+  >
+    Submit your shift preferences
+  </Button>
+</Col>
+`;

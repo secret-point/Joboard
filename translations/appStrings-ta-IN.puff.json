@@ -2847,6 +2847,114 @@
     "BB-get-applications-by-candidate-id-error-message-unable-to-list-applications" : {
       "value" : "விண்ணப்பங்களைப் பட்டியலிட முடியவில்லை.",
       "note" : "Error message when get applications by candidate Id can not list applications"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-submit-application-button" : {
+      "value" : "ஆம், புதிய விண்ணப்பத்தைச் சமர்ப்பி",
+      "note" : "Text for submit application button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-go-to-dashboard-button" : {
+      "value" : "இல்லை, தற்போதுள்ள விண்ணப்பத்திற்குச் செல்",
+      "note" : "Text for go to dashboard button in withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-content-text" : {
+      "value" : "உங்களின் இதர விண்ணப்பம்(கள்) ஏற்கனவே செயலிலுள்ளது. இந்தப் பணிக்கான விண்ணப்பத்தை நீங்கள் சமர்ப்பித்தால், உங்களின் இதர பணி விண்ணப்பம்(கள்) திரும்பப் பெறப்படும். இந்தப் பணிக்கான விண்ணப்பத்தைச் சமர்ப்பித்து இதர பணிக்கான விண்ணப்பத்தை(களை) திரும்பப் பெற விரும்புகிறீர்களா?",
+      "note" : "Text content for withdraw existing application modal notice"
+    },
+    "BB-review-submit-withdraw-existing-application-notice-title" : {
+      "value" : "ஏற்கனவே உள்ள விண்ணப்பத்தைத் திரும்பப் பெற வேண்டுமா?",
+      "note" : "Text for withdraw existing application modal notice title"
+    },
+    "BB-review-submit-pre-hire-appointment-time-label" : {
+      "value" : "நேரம்",
+      "note" : "Text for prehire appointment time label"
+    },
+    "BB-review-submit-pre-hire-appointment-dates-label" : {
+      "value" : "தேதிகள்",
+      "note" : "Text for prehire appointment dates label"
+    },
+    "BB-review-submit-pre-hire-appointment-city-label" : {
+      "value" : "நகரம்",
+      "note" : "Text for prehire appointment city label"
+    },
+    "BB-ReviewSubmit-nhe-preference-section-title-text" : {
+      "value" : "உங்களின் பணியமர்த்தலுக்கு முந்தைய நேர்காணலுக்கான ஏற்ற நேரம்",
+      "note" : "Text for review-submit nhe preference section title"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-meeting-details-label" : {
+      "value" : "சந்திப்பு விவரங்கள்",
+      "note" : "Text for review-submit nhe appointment section meeting details"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-hours-label" : {
+      "value" : "மணிநேரம்",
+      "note" : "Text for review-submit nhe appointment section Hours"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-date-label" : {
+      "value" : "தேதி",
+      "note" : "Text for review-submit nhe appointment section date"
+    },
+    "BB-review-submit-additional-info-temporary-id-number-notice" : {
+      "value" : "உங்கள் NI எண்ணாக நீங்கள் “NO NIஐ” உள்ளிட்டிருந்தால், பின்வரும் வடிவமைப்பில் “TNDDMMYY” உங்களின் பிறந்த தேதியின் அடிப்படையில் ஒரு தற்காலிக NI எண் ஒதுக்கப்படும்.",
+      "note" : "Text for review-submit additional information temporary id notice"
+    },
+    "BB-review-submit-additional-info-previous-worked-at-amazon-label" : {
+      "value" : "நீங்கள் ஏற்கனவே Amazonஇல் பணி புரிந்துள்ளீர்களா?",
+      "note" : "Text for review-submit additional information have worked at Amazon label"
+    },
+    "BB-review-submit-additional-info-dob-label" : {
+      "value" : "பிறந்த தேதி",
+      "note" : "Text for review-submit additional information date of birth label"
+    },
+    "BB-review-submit-additional-info-national-id-number-label" : {
+      "value" : "தேசிய ID எண்",
+      "note" : "Text for review-submit additional information id number label"
+    },
+    "BB-review-submit-additional-info-national-id-type-label" : {
+      "value" : "தேசிய ID வகை",
+      "note" : "Text for review-submit additional information id type label"
+    },
+    "BB-review-submit-additional-info-country-label" : {
+      "value" : "நாடு",
+      "note" : "Text for review-submit additional information country label"
+    },
+    "BB-review-submit-additional-info-postal-code-label" : {
+      "value" : "அஞ்சல் குறியீடு",
+      "note" : "Text for review-submit additional information postal code label"
+    },
+    "BB-review-submit-additional-info-city-label" : {
+      "value" : "நகரம்",
+      "note" : "Text for review-submit additional information city label"
+    },
+    "BB-review-submit-additional-info-address-label" : {
+      "value" : "முகவரி",
+      "note" : "Text for review-submit additional information Address label"
+    },
+    "BB-ReviewSubmit-additional-info-section-title-text" : {
+      "value" : "கூடுதல் தகவல்கள்",
+      "note" : "Text for review-submit additional information section title"
+    },
+    "BB-rev-ew-submit-shift-preference-time-pattern-label" : {
+      "value" : "நேர முறை",
+      "note" : "Text for review-submit shift preference time pattern label"
+    },
+    "BB-rev-ew-submit-shift-preference-days-of-week-label" : {
+      "value" : "வாரத்தின் நாட்கள்",
+      "note" : "Text for review-submit shift preference days of week label"
+    },
+    "BB-rev-ew-submit-shift-preference-hours-per-week-label" : {
+      "value" : "ஒரு வாரத்திற்கான மணிநேரம்",
+      "note" : "Text for review-submit shift preference Hours per week label"
+    },
+    "BB-rev-ew-submit-shift-preference-earliest-start-date-label" : {
+      "value" : "ஆரம்பக்காலத் தொடக்கத் தேதி",
+      "note" : "Text for review-submit shift preference Earliest start date label"
+    },
+    "BB-ReviewSubmit-shift-preference-section-title-text" : {
+      "value" : "ஷிஃப்ட் விருப்பத்தேர்வுகள்",
+      "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
+      "value" : "விண்ணப்பத்தைத் திரும்பப் பெற முடியவில்லை.",
+      "note" : "Text for withdraw multiple application failure error message"
     }
   }
 }
