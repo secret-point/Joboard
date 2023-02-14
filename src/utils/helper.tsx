@@ -80,7 +80,8 @@ import {
   QUERY_PARAMETER_NAME,
   SELF_IDENTIFICATION_STEPS,
   UPDATE_APPLICATION_API_TYPE,
-  WITHDRAW_REASON_CASE
+  WITHDRAW_REASON_CASE,
+  WORKFLOW_STEP_NAME
 } from "./enums/common";
 import { translate, translate as t } from "./translator";
 import {
@@ -1094,6 +1095,7 @@ export const handleUKSubmitAdditionalBgc =
       const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
       const isOver18 = isDOBOverEighteen(dob);
       const isDateValid = isDOBLessThan100(dob);
+      const shouldSkipNhePage = !applicationData.jobScheduleSelected.scheduleId; // we skip nhe if there is no schedule selected
       if (!verifyInfo.hasError && isOver18 && isDateValid) {
         // Bound update additional info all
         const payload = {
@@ -1102,7 +1104,11 @@ export const handleUKSubmitAdditionalBgc =
         const request: UpdateApplicationRequestDS =
                 createUpdateApplicationRequest(applicationData, ADDITIONAL_INFORMATION, payload);
         boundUpdateApplicationDS(request, (applicationData: Application) => {
-          onCompleteTaskHelper(applicationData);
+          if (shouldSkipNhePage) {
+            onCompleteTaskHelper(applicationData, true, WORKFLOW_STEP_NAME.REVIEW_SUBMIT);
+          } else {
+            onCompleteTaskHelper(applicationData);
+          }
         });
       }
     };

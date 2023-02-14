@@ -8,17 +8,18 @@ interface CustomModalProps {
   shouldOpen: boolean;
   children: React.ReactNode;
   setShouldOpen: Function;
+  shouldCloseOnClickOutside?: boolean;
 }
 const CustomModal = (props: CustomModalProps) => {
 
-  const { children, shouldOpen, setShouldOpen } = props;
+  const { children, shouldOpen, setShouldOpen, shouldCloseOnClickOutside } = props;
 
   useEffect(() => {
 
   }, [shouldOpen]);
 
   return (
-    <Modal isOpen={shouldOpen} close={close}>
+    <Modal isOpen={shouldOpen} close={close} shouldCloseOnClickOutside={shouldCloseOnClickOutside || false}>
       <ModalContent maxWidth="50vw" titleText="">
         <Col
           backgroundColor="neutral0"
