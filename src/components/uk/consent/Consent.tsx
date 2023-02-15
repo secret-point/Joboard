@@ -122,7 +122,7 @@ export const Consent = (props: MapStateToProps) => {
     } else {
       const payload: CreateApplicationRequestDS = {
         jobId,
-        // dspEnabled: job.results?.dspEnabled, // TODO will need to enabled this in future once dspEnabled is enabled in UK
+        dspEnabled: job.results?.dspEnabled,
       };
       boundCreateApplicationDS(payload, (application: Application) => {
         const { applicationId, candidateId } = application;
