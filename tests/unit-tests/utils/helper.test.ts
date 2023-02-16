@@ -76,6 +76,7 @@ import {
   isSelfIdentificationInfoValidBeforeDisability,
   isSelfIdEqualOpportunityStepCompleted,
   isSelfIdVeteranStepCompleted,
+  validateUKNationalInsuranceNumber,
   isSSNValid,
   onAssessmentStart,
   parseObjectToQueryString,
@@ -1072,6 +1073,60 @@ describe("getNonFcraSignatureErrorMessages()", () => {
       errorMessageNoticeSignature: noticeError,
     });
   });
+});
+
+describe("validateUKNationalInsuranceNumber()", () => {
+  // 9-character NIN as in SF
+  expect(validateUKNationalInsuranceNumber("AE123456D")).toBe(true);
+  // NIN as in SF
+  expect(validateUKNationalInsuranceNumber("AE123456")).toBe(true);
+  // NIN with lowercase
+  expect(validateUKNationalInsuranceNumber("ae123456D")).toBe(true);
+  // NIN with spacing as on the NIN physical card
+  expect(validateUKNationalInsuranceNumber("AE 12 34 56 D")).toBe(true);
+  // NIN with chaotic spacing
+  expect(validateUKNationalInsuranceNumber("AE 1 234 5 6 D ")).toBe(true);
+  expect(validateUKNationalInsuranceNumber("AE123456 ")).toBe(true);
+
+  expect(validateUKNationalInsuranceNumber("badssn")).toBe(false);
+
+  for (const letter of ["D", "F", "I", "Q", "U", "V"]) {
+    expect(validateUKNationalInsuranceNumber(`${letter}E123456D`)).toBe(true);
+    expect(validateUKNationalInsuranceNumber(`E${letter}123456D`)).toBe(true);
+  }
+
+  expect(validateUKNationalInsuranceNumber("AO123456D")).toBe(true);
+  expect(validateUKNationalInsuranceNumber("AE12346D")).toBe(false);
+  expect(validateUKNationalInsuranceNumber("AE123456DD")).toBe(false);
+  expect(validateUKNationalInsuranceNumber("AE1234567")).toBe(false);
+  expect(validateUKNationalInsuranceNumber("AE123456G")).toBe(true);
+  for (const duplet of ["BG", "GB", "NK", "KN", "NT", "ZZ"]) {
+    expect(validateUKNationalInsuranceNumber(`${duplet}123456D`)).toBe(true);
+  }
+
+  // Temporary National Insurance Number
+  expect(validateUKNationalInsuranceNumber("TN123456")).toBe(true);
+
+  expect(validateUKNationalInsuranceNumber("tn123456")).toBe(true);
+
+  expect(validateUKNationalInsuranceNumber(" TN1  2 34 5 6 ")).toBe(true);
+
+  expect(validateUKNationalInsuranceNumber("TN123456F")).toBe(false);
+
+  // Masked National Insurance Number of any kind
+  expect(validateUKNationalInsuranceNumber("*****123A")).toBe(true);
+  expect(validateUKNationalInsuranceNumber("****1234")).toBe(true);
+  expect(validateUKNationalInsuranceNumber("*******1234")).toBe(false);
+
+  expect(validateUKNationalInsuranceNumber("")).toBe(false);
+
+  // Skip NIN value is true
+  const noNICombinations = ["no NI", "NO NI", "no ni", "No NI"];
+
+  const allResults = noNICombinations.map(e =>
+    validateUKNationalInsuranceNumber(e)
+  );
+  expect(allResults.every(e => Boolean(e))).toBe(true);
 });
 
 describe("isSSNValid()", () => {

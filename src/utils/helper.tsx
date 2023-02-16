@@ -665,7 +665,7 @@ export const verifyBasicInfo =
 
 const UK_NATIONAL_INSURANCE_PASS_VALUE = "NO NI";
 
-const validateUKNationalInsuranceNumber = (value: string): boolean => {
+export const validateUKNationalInsuranceNumber = (value: string): boolean => {
   if (!value) return false;
   if (value.toUpperCase() === UK_NATIONAL_INSURANCE_PASS_VALUE) return true;
 
@@ -686,7 +686,7 @@ const validateUKNationalInsuranceNumber = (value: string): boolean => {
   );
 };
 
-const isValidUKNationalInsuranceNumber = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string | RegExp): boolean => {
+export const isValidUKNationalInsuranceNumber = (patchCandidate: CandidatePatchRequest, required: boolean, regex: string | RegExp): boolean => {
   if (!patchCandidate) {
     return false;
   }
