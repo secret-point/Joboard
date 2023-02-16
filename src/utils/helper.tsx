@@ -732,6 +732,9 @@ export const isSSNValid = (patchCandidate: CandidatePatchRequest, required: bool
         if (newSSN === "123456789") {
           return false;
         }
+        if (newSSN === "078051120") {
+          return false;
+        }
         if (newSSN.startsWith("666")) {
           return false;
         }

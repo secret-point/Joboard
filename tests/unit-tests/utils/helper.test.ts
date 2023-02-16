@@ -1182,6 +1182,7 @@ describe("isSSNValid()", () => {
     it.each([
       "12345678",
       "123456789",
+      "078051120",
       "666789987",
       "914523478",
       "456120000"
@@ -1478,7 +1479,7 @@ test("bulkWithdrawAndSubmitApplication", () => {
 });
 
 test("getPageName", () => {
-  window.location.hash = "#/test-page-name"
+  window.location.hash = "#/test-page-name";
   expect(getPageName()).toEqual("test-page-name");
 });
 
@@ -1511,7 +1512,7 @@ describe("verifyBasicInfo", () => {
       candidate: {
       }
     });
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: ""}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "" } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1523,7 +1524,7 @@ describe("verifyBasicInfo", () => {
 
   it("mostRecentBuildingWorkedAtAmazon", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentBuildingWorkedAtAmazon: 'ABC'}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentBuildingWorkedAtAmazon: "ABC" } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       labelText: "",
@@ -1539,11 +1540,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
+  });
 
   it("mostRecentTimePeriodWorkedAtAmazon", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", hasPreviouslyWorkedAtAmazon: true, mostRecentTimePeriodWorkedAtAmazon: "ABC" } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1551,11 +1552,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
+  });
 
   it("hasPreviouslyWorkedAtAmazon false", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", hasPreviouslyWorkedAtAmazon: false, mostRecentTimePeriodWorkedAtAmazon: 'ABC'}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", hasPreviouslyWorkedAtAmazon: false, mostRecentTimePeriodWorkedAtAmazon: "ABC" } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1563,11 +1564,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
-  })
+  });
 
   it("convictionDetails", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1575,11 +1576,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
+  });
 
   it("convictionDetails false", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: false}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: false } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1587,11 +1588,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
-  })
+  });
 
   it("hasCriminalRecordWithinSevenYears falsy", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", hasCriminalRecordWithinSevenYears: true } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1599,11 +1600,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
-  })
+  });
 
   it("hasCriminalRecordWithinSevenYears truthy", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", hasPreviouslyWorkedAtAmazon: undefined}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", hasPreviouslyWorkedAtAmazon: undefined } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1611,11 +1612,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
+  });
 
   it("previousLegalNames falsy", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: undefined}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", previousLegalNames: undefined } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1623,11 +1624,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeFalsy();
-  })
+  });
 
   it("previousLegalNames truthy", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", previousLegalNames: ["tester"]}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", previousLegalNames: ["tester"] } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1635,11 +1636,11 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
+  });
 
   it("dateOfBirth", () => {
 
-    const candidate: CandidatePatchRequest = {additionalBackgroundInfo:{idNumber: "", convictionDetails: "", dateOfBirth: ""}};
+    const candidate: CandidatePatchRequest = { additionalBackgroundInfo: { idNumber: "", convictionDetails: "", dateOfBirth: "" } };
     const formError: CandidateInfoErrorState = {};
     const formConfig: FormInputItem[] = [{
       ...baseFormConfigItem,
@@ -1647,5 +1648,5 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
-  })
-})
+  });
+});

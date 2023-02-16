@@ -359,7 +359,7 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
         "labelText": "CURP ID",
         "labelTranslationKey": "BB-BGC-MX-Additional-bgc-form-national-id-number-label-text",
         "name": "idNumber",
-        "regex": "^(?=.*[0-9])(?=.*[A-Z])([A-Z0-9]{18})$",
+        "regex": "^([A-Za-z]{4})([0-9]{6})([A-Za-z]{6})([A-Za-z0-9]{2})$",
         "required": true,
         "type": "text",
       }

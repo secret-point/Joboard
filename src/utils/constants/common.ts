@@ -330,7 +330,8 @@ export const IdNumberBgcFormConfig: FormInputItem = {
   dataKey: "additionalBackgroundInfo.idNumber",
   required: true,
   type: "text",
-  regex: "^[0-9]{9}$",
+  // Match the regex used for SSN in CDS: https://tiny.amazon.com/11fh3fjbk/HVHCandidateDomainServiceCommon/mainline/NationalIdValidatorConstants.java#L16
+  regex: "^(?!666|000|9\\d{2})\\d{3}(?!00)\\d{2}(?!0{4})\\d{4}$",
   id: "idNumberInput",
   name: "idNumber",
   errorMessage: "Please enter a valid 9 digits social security number without dash",
@@ -343,7 +344,8 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
   dataKey: "additionalBackgroundInfo.idNumber",
   required: true,
   type: "text",
-  regex: "^(?=.*[0-9])(?=.*[A-Z])([A-Z0-9]{18})$", // 18 digits with at least one number and one letter
+  // Match the regex used for CURP ID in CDS: https://tiny.amazon.com/181i266c8/HVHCandidateDomainServiceCommon/mainline/NationalIdValidatorConstants.java#L17
+  regex: "^([A-Za-z]{4})([0-9]{6})([A-Za-z]{6})([A-Za-z0-9]{2})$",
   id: "idNumberInput-mx",
   name: "idNumber",
   errorMessage: "Please enter a valid 18 character alphanumeric CURP ID without hyphens.",

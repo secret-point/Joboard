@@ -533,7 +533,7 @@ exports[`AdditionalBGCInfo should match snapshot - if address country is Canada 
         "labelText": "National ID Number",
         "labelTranslationKey": "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise",
         "name": "idNumber",
-        "regex": "^[0-9]{9}$",
+        "regex": "^(?!666|000|9\\\\d{2})\\\\d{3}(?!00)\\\\d{2}(?!0{4})\\\\d{4}$",
         "required": true,
         "type": "text",
       }
@@ -1116,7 +1116,7 @@ exports[`AdditionalBGCInfo should match snapshot - if address country is USA 1`]
         "labelText": "National ID Number",
         "labelTranslationKey": "BB-BGC-Additional-bgc-form-national-id-number-label-text-revise",
         "name": "idNumber",
-        "regex": "^[0-9]{9}$",
+        "regex": "^(?!666|000|9\\\\d{2})\\\\d{3}(?!00)\\\\d{2}(?!0{4})\\\\d{4}$",
         "required": true,
         "type": "text",
       }
