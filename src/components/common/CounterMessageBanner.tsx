@@ -60,7 +60,8 @@ export const CounterMessageBanner = (props: MapStateToProps) => {
   return (
     <>
       {
-        applicationData && showCounterBanner() && (
+        // we don't show this counter in shift preference flow: https://sim.amazon.com/issues/Kondo_QA_Issue-67
+        applicationData && showCounterBanner() && !applicationData.shiftPreference && (
           <Col id="counter-message-banner" padding={{ top: "S300", bottom: "S300" }}>
             <MessageBanner
               type={MessageBannerType.Warning}

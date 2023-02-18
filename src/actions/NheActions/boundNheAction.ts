@@ -15,8 +15,8 @@ import {
 export const boundGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs) =>
   store.dispatch(actionGetNheTimeSlotsDs(payload));
 
-export const boundGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS) =>
-  store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload));
+export const boundGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData = true) =>
+  store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload, redirectWhenNoData));
 
 export const boundGetPossibleNhePreference = (payload: GetPossibleNhePreferenceRequest) =>
   store.dispatch(actionGetPossibleNhePreference(payload));

@@ -18,9 +18,10 @@ import {
   SetPossibleNhePreferenceRequestAction
 } from "./nheActionTypes";
 
-export const actionGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS): GetNheTimeSlotsThroughNheDsAction => {
+export const actionGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData: boolean): GetNheTimeSlotsThroughNheDsAction => {
   return {
     type: NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS,
+    redirectWhenNoData,
     payload
   };
 };

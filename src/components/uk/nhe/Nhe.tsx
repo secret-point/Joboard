@@ -115,7 +115,8 @@ export const Nhe = ( props: MapStateToProps ) => {
           .format("YYYY-MM-DD")
       };
 
-      boundGetNheTimeSlotsThroughNheDs(request);
+      // We don't redirect to no Nhe found when there is no NHE
+      boundGetNheTimeSlotsThroughNheDs(request, false);
     }
   }, [scheduleDetail]);
 

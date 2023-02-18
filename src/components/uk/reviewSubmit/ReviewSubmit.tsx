@@ -194,7 +194,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
         )}
 
         {
-          applicationData?.shiftPreference && (
+          // do not show shift preference if there is shift details
+          applicationData?.shiftPreference && !scheduleDetail && (
             <Col id="shiftPreferenceSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">

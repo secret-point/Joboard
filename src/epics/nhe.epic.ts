@@ -64,7 +64,8 @@ export const GetNheTimeSlotsThroughNheDs = (action$: Observable<any>) => {
           }),
           map((response: GetNheTimeSlotsDsResponse) => {
 
-            if (response.data.length === 0) {
+            // ensure that we don't redirect to no Nhe when not needed in certain countries like UK: https://sim.amazon.com/issues/Kondo_QA_Issue-61
+            if (response.data.length === 0 && action.redirectWhenNoData) {
               routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
             }
 

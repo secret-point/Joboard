@@ -25,6 +25,7 @@ export interface GetNheTimeSlotsDsAction extends Action {
 
 export interface GetNheTimeSlotsThroughNheDsAction extends Action {
   type: NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS;
+  redirectWhenNoData: boolean;
   payload: GetNheTimeSlotRequestThroughNheDS;
 }
 

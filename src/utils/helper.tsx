@@ -132,7 +132,8 @@ const {
   JOB_CONFIRMATION,
   NHE,
   REVIEW_SUBMIT,
-  SELF_IDENTIFICATION
+  SELF_IDENTIFICATION,
+  ADDITIONAL_INFORMATION
 } = PAGE_ROUTES;
 
 export const reloadAppPageWithSchedule = (applicationData: Application, queryParams: any) => {
@@ -1515,7 +1516,7 @@ export const redirectToASHChecklist = (applicationId: string, jobId: string, req
 export const showCounterBanner = (): boolean => {
   const { hash } = window.location;
   return hash.includes(CONTINGENT_OFFER) || hash.includes(BACKGROUND_CHECK) || hash.includes(NHE) || hash.includes(SELF_IDENTIFICATION) ||
-      hash.includes(REVIEW_SUBMIT);
+      hash.includes(REVIEW_SUBMIT) || hash.includes(ADDITIONAL_INFORMATION);
 };
 
 export const processAssessmentUrl = (assessmentUrl: string, applicationId: string, jobId: string): string => {
