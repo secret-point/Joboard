@@ -67,9 +67,9 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         loading: false,
         failed: false,
         results: {
-          nheData: {
+          nheData: [
             ...state.results.nheData
-          },
+          ],
           possibleNhePreferences: action.payload
         }
       };
@@ -80,9 +80,9 @@ export default function nheReducer( state: NheState = initNheState, action: NheT
         loading: false,
         failed: true,
         results: {
-          nheData: {
+          nheData: [
             ...state.results.nheData
-          },
+          ],
           possibleNhePreferences: {
             dates: [],
             timeslots: [],
