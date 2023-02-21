@@ -5,7 +5,7 @@ import InactivityModal from "../../../../src/components/common/InactivityModal";
 describe("Inactivity Modal", () => {
   it("should match snapshot", () => {
     const shallowWrapper = shallow(
-      <InactivityModal secondsToTimeout={2000}>
+      <InactivityModal millisecondsToTimeout={2000}>
         <div>Modal content</div>
       </InactivityModal>
     );
