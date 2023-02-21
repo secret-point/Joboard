@@ -24,21 +24,28 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
-import { FEATURE_FLAG, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
+import {
+  FEATURE_FLAG,
+  QUERY_PARAMETER_NAME,
+  UPDATE_APPLICATION_API_TYPE,
+  WORKFLOW_STEP_NAME
+} from "../../../utils/enums/common";
 import {
   checkAndBoundGetApplication,
   createUpdateApplicationRequest,
   formatDate,
   getCountryCode,
-  getLocale,
   getCountryMappedFeatureFlag,
+  getLocale,
   isBrokenApplicationFeatureEnabled,
-  reverseMappingTranslate
+  reverseMappingTranslate,
+  routeToAppPageWithPath
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { Application } from "../../../utils/types/common";
+import { Application, QueryParamItem } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleDetails from "../../common/jobOpportunity/ScheduleDetails";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -62,6 +69,18 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
   const countryCode = getCountryCode();
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData?.jobScheduleSelected.scheduleId) {
+      const customParams: QueryParamItem = {
+        paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+        paramValue: applicationData?.jobScheduleSelected.scheduleId
+      };
+
+      routeToAppPageWithPath(PAGE_ROUTES.REVIEW_SUBMIT, [customParams]);
+    }
+  }, []);
 
   useEffect(() => {
     boundGetCandidateInfo();

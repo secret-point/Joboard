@@ -213,7 +213,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                       {t("BB-rev-ew-submit-shift-preference-earliest-start-date-label", "Earliest start date")}:
                     </Text>
                     <Text fontSize="T100">
-                      {moment(applicationData.shiftPreference.earliestStartDate).locale(getLocale()).format("DD MMM YYYY")}
+                      {moment(applicationData.shiftPreference.earliestStartDate, "DD MMM YYYY").locale(getLocale()).format("DD MMM YYYY")}
                     </Text>
                   </Row>
                   <Col>
@@ -358,7 +358,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           )
         }
         {
-          applicationData?.nhePreference && (
+          applicationData?.nhePreference && !applicationData?.nheAppointment && (
             <Col id="nhePreferenceSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">

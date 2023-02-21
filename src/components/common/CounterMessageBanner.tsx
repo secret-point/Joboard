@@ -7,6 +7,7 @@ import { ApplicationState } from "../../reducers/application.reducer";
 import { routeToAppPageWithPath, showCounterBanner } from "../../utils/helper";
 import { translate as t } from "../../utils/translator";
 import { PAGE_ROUTES } from "../pageRoutes";
+import scheduleDetails from "./jobOpportunity/ScheduleDetails";
 
 const HOUR_IN_SECONDS = 3600;
 const MIN_IN_SECONDS = 60;
@@ -57,11 +58,13 @@ export const CounterMessageBanner = (props: MapStateToProps) => {
     }
   };
 
+  const showBanner = applicationData && showCounterBanner() && !applicationData.shiftPreference && scheduleDetails;
+
   return (
     <>
       {
         // we don't show this counter in shift preference flow: https://sim.amazon.com/issues/Kondo_QA_Issue-67
-        applicationData && showCounterBanner() && !applicationData.shiftPreference && (
+        showBanner && (
           <Col id="counter-message-banner" padding={{ top: "S300", bottom: "S300" }}>
             <MessageBanner
               type={MessageBannerType.Warning}

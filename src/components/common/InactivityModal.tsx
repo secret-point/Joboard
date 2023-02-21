@@ -48,7 +48,7 @@ const InactivityModal = (props: InactivityModalProps) => {
   };
 
   return (
-    <Modal isOpen={isOpen} close={close}>
+    <Modal isOpen={isOpen} close={close} shouldCloseOnClickOutside={false}>
       <Col
         backgroundColor="neutral0"
         padding={{ top: "S400", bottom: "S600", left: "S600" }}

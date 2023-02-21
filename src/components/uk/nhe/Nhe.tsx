@@ -169,58 +169,62 @@ export const Nhe = ( props: MapStateToProps ) => {
             )}
           </Popover>
         </Row>
-        <Col gridGap="S400">
-          <Col gridGap={12}>
-            <Label htmlFor="nheDateSelect" id="nheDateLabel">
-              {t("BB-Kondo-nhe-appointment-input-date-label", "Choose appointment date")} *
-            </Label>
-            <Select
-              id="nheDateSelect"
-              onChange={( option ) => {
-                setSelectedNheDate(option);
-                setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
-              }}
-              options={appointmentDateList}
-              defaultValue={appointmentDateList[0]}
-              value={selectedNheDate}
-            />
+        {nheData?.length > 0 && (
+          <Col>
+            <Col gridGap="S400">
+              <Col gridGap={12}>
+                <Label htmlFor="nheDateSelect" id="nheDateLabel">
+                  {t("BB-Kondo-nhe-appointment-input-date-label", "Choose appointment date")} *
+                </Label>
+                <Select
+                  id="nheDateSelect"
+                  onChange={(option) => {
+                    setSelectedNheDate(option);
+                    setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
+                  }}
+                  options={appointmentDateList}
+                  defaultValue={appointmentDateList[0]}
+                  value={selectedNheDate}
+                />
+              </Col>
+
+              <Col gridGap={12}>
+                <Label htmlFor="nheTimeSelect" id="nheTimeLabel">
+                  {t("BB-Kondo-nhe-appointment-time-input-label", "Choose appointment time")} *
+                </Label>
+                <Select
+                  id="nheTimeSelect"
+                  onChange={(option) => {
+                    setSelectedNheTime(option);
+                  }}
+                  options={appointmentTimeMap.get(selectedNheDate) || []}
+                  defaultValue={getDefaultUkNheApptTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
+                  value={selectedNheTime}
+                />
+              </Col>
+
+              {
+                !!maxNheSlotLength && (
+                  <Text fontSize="T100">
+                    {t("BB-kondo-nhe-nhe-slot-duration-notice", `All appointments slots are displayed in UK local time. Each appointment is up to ${maxNheSlotLength} minutes long.`, { maxNheSlotLength })}
+                  </Text>
+                )
+              }
+
+            </Col>
+            <Col className="nhe-sticky-button" padding={{ top: "S300" }}>
+              <DebouncedButton
+                variant={ButtonVariant.Primary}
+                onClick={() => {
+                  handleConfirmSelection();
+                }}
+                debounceTime={1000}
+              >
+                {t("BB-kondo-nhe-page-confirm-selection-button-text", "Confirm Selection")}
+              </DebouncedButton>
+            </Col>
           </Col>
-
-          <Col gridGap={12}>
-            <Label htmlFor="nheTimeSelect" id="nheTimeLabel">
-              {t("BB-Kondo-nhe-appointment-time-input-label", "Choose appointment time")} *
-            </Label>
-            <Select
-              id="nheTimeSelect"
-              onChange={( option ) => {
-                setSelectedNheTime(option);
-              }}
-              options={appointmentTimeMap.get(selectedNheDate) || []}
-              defaultValue={getDefaultUkNheApptTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
-              value={selectedNheTime}
-            />
-          </Col>
-
-          {
-            !!maxNheSlotLength && (
-              <Text fontSize="T100">
-                {t("BB-kondo-nhe-nhe-slot-duration-notice", `All appointments slots are displayed in UK local time. Each appointment is up to ${maxNheSlotLength} minutes long.`, { maxNheSlotLength })}
-              </Text>
-            )
-          }
-
-        </Col>
-        <Col className="nhe-sticky-button" padding={{ top: "S300" }}>
-          <DebouncedButton
-            variant={ButtonVariant.Primary}
-            onClick={() => {
-              handleConfirmSelection();
-            }}
-            debounceTime={1000}
-          >
-            {t("BB-kondo-nhe-page-confirm-selection-button-text", "Confirm Selection")}
-          </DebouncedButton>
-        </Col>
+        )}
         {
           showNhePreferenceCard && <NhePreferenceCard />
         }
