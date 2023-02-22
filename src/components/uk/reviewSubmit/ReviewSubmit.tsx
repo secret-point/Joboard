@@ -184,7 +184,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       </Text>
 
       <Col gridGap="S400">
-        {scheduleDetail && (
+        {scheduleDetail && applicationData?.jobScheduleSelected?.scheduleId && (
           <Col gridGap="S300" id="jobDetailSection">
             <Text fontSize="T300">
               {t("BB-ReviewSubmit-job-details-section-title-text", "Job Details")}
@@ -195,7 +195,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
         {
           // do not show shift preference if there is shift details
-          applicationData?.shiftPreference && !scheduleDetail && (
+          applicationData?.shiftPreference && !applicationData?.jobScheduleSelected?.scheduleId && (
             <Col id="shiftPreferenceSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">
