@@ -1656,6 +1656,34 @@
       "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, napište nám na adrese www.amazon.com/applicationhelp a požádejte o pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Uveďte prosím své přihlašovací ID doporučující osoby (pouze malá písmena)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Uveďte prosím přihlašovací ID doporučující osoby.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ID uživatele by mělo obsahovat pouze malá písmena a mělo by být alespoň 4 písmena dlouhé.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Uveďte prosím podrobnosti k doporučení (je-li relevantní)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Byli jste doporučeni stávajícím zaměstnancem společnosti Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Ano",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Ne",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Pokud máte zdravotní postižení a domníváte se, že můžete potřebovat přizpůsobení náborového procesu společnosti Amazon, kontaktujte nás a proberte to s námi na čísle 0808 164 9427 nebo e-mailem na adrese myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

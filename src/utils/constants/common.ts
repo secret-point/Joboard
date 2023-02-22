@@ -61,13 +61,13 @@ export const ApplicationStepListUK: ApplicationStep[] = [
     title: APPLICATION_STEPS.COMPLETE_AN_ASSESSMENT,
     titleTranslationKey: "BB-ApplicationSteps-complete-assessment-text"
   },
-  { 
+  {
     title: APPLICATION_STEPS.SELECT_JOB,
     titleTranslationKey: "BB-ApplicationSteps-select-job-text"
   },
   {
     title: APPLICATION_STEPS.ENTER_REQUIRED_INFORMATION,
-    
+
     titleTranslationKey: "BB-Applic2ationSteps-enter-required-information-text"
   },
   {
@@ -79,7 +79,7 @@ export const ApplicationStepListUK: ApplicationStep[] = [
 export const ApplicationStepListMap: {[Key in CountryCode]: ApplicationStep[]} = {
   [CountryCode.US]: ApplicationStepListDefault,
   [CountryCode.UK]: ApplicationStepListUK,
-  [CountryCode.CA]: ApplicationStepListDefault, 
+  [CountryCode.CA]: ApplicationStepListDefault,
   [CountryCode.MX]: ApplicationStepListDefault,
 
 };
@@ -366,6 +366,19 @@ export const UKIdNumberBgcFormConfig: FormInputItem = {
   errorMessage: 'Enter government issued identification number or "No NI"',
   labelTranslationKey: "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text",
   errorMessageTranslationKey: "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text",
+};
+
+export const UKReferralFormInputConfig: FormInputItem = {
+  hasError: false,
+  labelText: "Please provide your referrer login ID (lower case letters only)",
+  labelTranslationKey: "BB-Kondo-referral-login-label-text",
+  errorMessage: "Please provide your referrer login ID.",
+  errorMessageTranslationKey: "BB-Kondo-referral-login-empty-error-text",
+  required: true,
+  name: "referralInfo",
+  id: "referral-employee-name",
+  dataKey: "jobReferral.referralInfo",
+  type: "text",
 };
 
 export const NameRegexValidator = getCountryConfig(getCountryCode()).nameRegexValidator;

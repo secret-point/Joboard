@@ -1644,6 +1644,34 @@
       "value" : "ನಿಮ್ಮ ರೆಫರ‌‌‌‌‌‌ರ್‌ನ ಲಾಗಿನ್ ID ಯನ್ನು ನಾವು ಮೌಲ್ಯೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಸಹಾಯಕ್ಕಾಗಿ www.amazon.com/applicationhelp ನಲ್ಲಿ ದಯವಿಟ್ಟು ನಮ್ಮೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೆಫರರ್ ಲಾಗಿನ್ ID (ಲೋವರ್ ಕೇಸ್ ಅಕ್ಷರಗಳು ಮಾತ್ರ) ಅನ್ನು ಒದಗಿಸಿ",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "ನಿಮ್ಮ ರೆಫರರ್ ಲಾಗಿನ್ ID ಯನ್ನು ಒದಗಿಸಿ.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "User ID ಕೇವಲ ಲೋವರ್ ಕೇಸ್ ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿರಬೇಕು ಮತ್ತು ಕನಿಷ್ಠ 4 ಅಕ್ಷರಗಳ ಉದ್ದವಿರಬೇಕು.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "ದಯವಿಟ್ಟು ರೆಫರಲ್ ವಿವರಗಳನ್ನು ಒದಗಿಸಿ (ಅನ್ವಯವಾದರೆ)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ Amazon ಉದ್ಯೋಗಿಯಿಂದ ನಿಮ್ಮನ್ನು ರೆಫರ್ ಮಾಡಲಾಗಿದೆಯೇ?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "ಹೌದು",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "ಇಲ್ಲ",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "ನೀವು ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿದ್ದರೆ ಮತ್ತು Amazon ನ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯ ಜೊತೆಗೆ ಹೊಂದಿಕೊಳ್ಳುವ ಅಗತ್ಯವಿದೆ ಎಂದು ಪರಿಗಣಿಸಿದರೆ, 0808 164 9427 ನಲ್ಲಿ ಅಥವಾ myapplication@amazon.co.uk ನಲ್ಲಿ ಇಮೇಲ್ ಮೂಲಕ ಚರ್ಚಿಸಲು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

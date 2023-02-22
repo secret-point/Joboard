@@ -1,6 +1,7 @@
-import React, { ChangeEvent, FocusEvent, useEffect } from "react";
+import React, { ChangeEvent, FocusEvent, useEffect, useState } from "react";
 import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import {
+  DetailedRadio,
   RenderNativeOptionFunction,
   RenderOptionFunction,
   ValueAccessor
@@ -25,16 +26,17 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {
-  AdditionalBGCFormConfigPart2, UKAdditionalBGCFormConfigPart1, UKCountrySelectOptions, UKIdNumberBgcFormConfig, UKNINValue
+  AdditionalBGCFormConfigPart2, UKAdditionalBGCFormConfigPart1, UKCountrySelectOptions, UKIdNumberBgcFormConfig, UKNINValue, UKReferralFormInputConfig
 } from "../../../utils/constants/common";
-import { handleUKSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen } from "../../../utils/helper";
+import { handleUKSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen, validateReferralForm } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { AppConfig, FormInputItem, i18nSelectOption, StateSelectOption } from "../../../utils/types/common";
+import { AppConfig, FormInputItem, i18nSelectOption, JobReferral, StateSelectOption } from "../../../utils/types/common";
 import PreviousWorkedAtAmazonForm from "../../common/bgc/PreviousWorkedAtAmazonForm";
 import DebouncedButton from "../../common/DebouncedButton";
 import DatePicker from "../../common/formDatePicker/DatePicker";
 import FormInputSelect from "../../common/FormInputSelect";
 import FormInputText from "../../common/FormInputText";
+import { Text } from "@amzn/stencil-react-components/text";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -51,13 +53,19 @@ interface AdditionalBGCInfoProps {
 type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
 
 export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
-  const { candidate, application, schedule } = props;
+  const { candidate, application, schedule, job } = props;
   const { candidatePatchRequest, formError } = candidate;
   const { candidateData } = candidate.results;
   const { scheduleDetail } = schedule.results;
+  const jobDetail = job.results;
   const applicationData = application.results;
   const additionalBgc = candidateData?.additionalBackgroundInfo || {};
   const pageName = METRIC_NAME.ADDITIONAL_BGC_INFO;
+
+  const [hasReferral, setHasReferral] = useState(false);
+  const [referralId, setReferralId] = useState("");
+
+  const [referralFormInputConfig, setReferralFormInputConfig] = useState(UKReferralFormInputConfig);
 
   let countryDefaultValue = get(candidateData, "additionalBackgroundInfo.address.country");
   let nationIdTypeDefaultValue = get(candidateData, "additionalBackgroundInfo.governmentIdType");
@@ -87,6 +95,13 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
       boundUpdateCandidateInfoError({});
     };
   }, [candidateData]);
+
+  useEffect(() => {
+    if (applicationData) {
+      setHasReferral(get(applicationData, "jobReferral.hasReferral") || false);
+      setReferralId(get(applicationData, "jobReferral.referralInfo") || "");
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -222,10 +237,23 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     boundSetCandidatePatchRequest(newCandidate);
   };
 
+  const handleReferralInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setReferralId(value);
+  };
+
   const handleClickNext = () => {
     boundResetBannerMessage();
     if (candidatePatchRequest && candidateData && applicationData) {
-      handleUKSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError);
+      const jobReferral: JobReferral = {
+        hasReferral: hasReferral ? "yes" : "no",
+      };
+      if (hasReferral) {
+        jobReferral.referralInfo = referralId;
+      }
+      validateReferralForm(jobReferral, referralFormInputConfig, setReferralFormInputConfig);
+
+      handleUKSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, jobReferral, formError);
     }
   };
 
@@ -290,6 +318,51 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
         })
       }
       <PreviousWorkedAtAmazonForm isDisplayPreviousWorkedForm={false} />
+
+      {
+        jobDetail?.activateReferralIncentive && (
+          <Col gridGap={15} padding={{ top: "S300" }}>
+            <Text fontSize="T300">
+              {t("BB-Kondo-referral-details-title-text", "Please provide referral details (if applicable)")}
+            </Text>
+            <Row
+              gridGap={8}
+              width="100%"
+            >
+              <Text fontWeight="bold">
+                {t("BB-Kondo-referral-details-description-text", "Were you referred by an existing Amazon employee?")}
+              </Text>
+              <Text color="red"> * </Text>
+            </Row>
+            <DetailedRadio
+              name="has_referral-radio-col"
+              titleText={t("BB-Kondo-referral-details-yes-text", "Yes")}
+              onChange={() => {
+                setHasReferral(true);
+              }}
+              checked={hasReferral}
+            />
+            <DetailedRadio
+              name="has_referral-radio-col"
+              titleText={t("BB-Kondo-referral-details-no-text", "No")}
+              onChange={() => {
+                setHasReferral(false);
+              }}
+              checked={!hasReferral}
+            />
+
+            {
+              hasReferral && (
+                <FormInputText
+                  inputItem={referralFormInputConfig}
+                  defaultValue={get(applicationData, "jobReferral.referralInfo") || ""}
+                  handleChange={(e: ChangeEvent<HTMLInputElement>) => handleReferralInputChange(e)}
+                />
+              )
+            }
+          </Col>
+        )
+      }
       <Col padding={{ top: "S300", bottom: "S300" }}>
         <DebouncedButton
           variant={ButtonVariant.Primary}

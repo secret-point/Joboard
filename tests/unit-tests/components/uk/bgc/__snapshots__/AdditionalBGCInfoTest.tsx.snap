@@ -187,3 +187,240 @@ exports[`AdditionalBGCInfo should match snapshot 1`] = `
   </Col>
 </Col>
 `;
+
+exports[`AdditionalBGCInfo should match snapshot when job activateReferralIncentive is true 1`] = `
+<Col>
+  <Col
+    gridGap={15}
+    key="Address Line 1"
+  >
+    <FormInputText
+      defaultValue="test address line 1"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine1",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineOne",
+          "labelText": "Address Line 1",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-one-label-text",
+          "name": "additional BGC Address Line 1",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{1,}[a-zA-Z0-9À-ÖØ-öø-ÿ]$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="Apartment, suite, .etc"
+  >
+    <FormInputText
+      defaultValue="test address line 2"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.addressLine2",
+          "errorMessage": "Please enter a valid address",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-error-text",
+          "hasError": false,
+          "id": "additionalBGCAddressLineTwo",
+          "labelText": "Apartment, suite, .etc",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-address-line-two-label-text",
+          "name": "Apartment, suite, .etc",
+          "regex": "^(?=\\\\S)[a-zA-Z0-9-!À-ÖØ-öø-ÿ ]{1,}[a-zA-Z0-9À-ÖØ-öø-ÿ]$",
+          "required": false,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="City"
+  >
+    <FormInputText
+      defaultValue="Test City"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.city",
+          "errorMessage": "Please enter a valid city",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-city-error-text",
+          "hasError": false,
+          "id": "additionalBGCCity",
+          "labelText": "City",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-city-label-text",
+          "name": "City",
+          "regex": "^(?=\\\\S)[a-zA-Z-!À-ÖØ-öø-ÿ ]{1,}[a-zA-ZÀ-ÖØ-öø-ÿ]$",
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <Col
+    gridGap={15}
+    key="ZIP/Postal code"
+  >
+    <FormInputText
+      defaultValue="94458"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.address.zipcode",
+          "errorMessage": "Please input the UK postcode",
+          "errorMessageTranslationKey": "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text",
+          "hasError": false,
+          "id": "additionalBGCZipcode",
+          "labelText": "ZIP/Postal code",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-zipcode-label-text",
+          "name": "ZIP/Postal code",
+          "regex": /\\^\\(\\(\\[A-Z\\]\\[A-HJ-Y\\]\\?\\\\d\\[A-Z\\\\d\\]\\?\\|ASCN\\|STHL\\|TDCU\\|BBND\\|\\[BFS\\]IQQ\\|PCRN\\|TKCA\\) \\?\\\\d\\[A-Z\\]\\{2\\}\\|BFPO \\?\\\\d\\{1,4\\}\\|\\(KY\\\\d\\|MSR\\|VG\\|AI\\)\\[ -\\]\\?\\\\d\\{4\\}\\|\\[A-Z\\]\\{2\\} \\?\\\\d\\{2\\}\\|GE \\?CX\\|GIR \\?0A\\{2\\}\\|SAN \\?TA1\\)\\$/,
+          "required": true,
+          "type": "text",
+        }
+      }
+    />
+  </Col>
+  <FormInputSelect
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.address.country",
+        "errorMessage": "Please enter a valid country",
+        "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-country-error-text",
+        "hasError": false,
+        "id": "additionalBGC_Country",
+        "labelText": "Country",
+        "labelTranslationKey": "BB-BGC-Additional-bgc-form-country-label-text",
+        "name": "Country",
+        "required": true,
+        "selectOptions": Array [
+          Object {
+            "countryCode": "GB",
+            "showValue": "United Kingdom",
+            "translationKey": "BB-Country-United-Kingdom",
+            "value": "United Kingdom",
+          },
+        ],
+        "type": "select",
+      }
+    }
+  />
+  <FormInputText
+    defaultValue="*****9599"
+    handleBlur={[Function]}
+    handleChange={[Function]}
+    inputItem={
+      Object {
+        "dataKey": "additionalBackgroundInfo.idNumber",
+        "errorMessage": "Enter government issued identification number or \\"No NI\\"",
+        "errorMessageTranslationKey": "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text",
+        "hasError": false,
+        "id": "idNumberInput-uk",
+        "labelText": "UK National Insurance Number (If you do not have one, enter \\"No NI\\")",
+        "labelTranslationKey": "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text",
+        "name": "idNumber",
+        "regex": "",
+        "required": true,
+        "type": "text",
+      }
+    }
+  />
+  <Col
+    gridGap={15}
+    key="Date of Birth"
+  >
+    <DatePicker
+      defaultValue="1988-08-02"
+      handleChange={[Function]}
+      inputItem={
+        Object {
+          "dataKey": "additionalBackgroundInfo.dateOfBirth",
+          "errorMessage": "Please enter a valid date of birth.",
+          "errorMessageTranslationKey": "BB-BGC-Additional-bgc-form-dob-error-text",
+          "hasError": false,
+          "id": "additionalBGCDateOfBirth",
+          "labelText": "Date of Birth",
+          "labelTranslationKey": "BB-BGC-Additional-bgc-form-dob-label-text",
+          "name": "Date of Birth",
+          "regex": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "required": true,
+          "type": "datePicker",
+        }
+      }
+    />
+  </Col>
+  <Connect(PreviousWorkedAtAmazonForm)
+    isDisplayPreviousWorkedForm={false}
+  />
+  <Col
+    gridGap={15}
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+      Please provide referral details (if applicable)
+    </Text>
+    <Row
+      gridGap={8}
+      width="100%"
+    >
+      <Text
+        font="primary"
+        fontSize="T300"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Were you referred by an existing Amazon employee?
+      </Text>
+      <Text
+        color="red"
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
+         * 
+      </Text>
+    </Row>
+    <DetailedRadio
+      checked={false}
+      name="has_referral-radio-col"
+      onChange={[Function]}
+      titleText="Yes"
+    />
+    <DetailedRadio
+      checked={true}
+      name="has_referral-radio-col"
+      onChange={[Function]}
+      titleText="No"
+    />
+  </Col>
+  <Col
+    padding={
+      Object {
+        "bottom": "S300",
+        "top": "S300",
+      }
+    }
+  >
+    <DebouncedButton
+      onClick={[Function]}
+      variant="primary"
+    >
+      Next
+    </DebouncedButton>
+  </Col>
+</Col>
+`;

@@ -1660,6 +1660,34 @@
       "value" : "リファラーのログインIDを確認できませんでした。www.amazon.com/applicationhelpでチャットを通じてサポートを受けてください。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "リファラーログイン ID (小文字のみ) を入力してください",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "リファラーのログイン ID を入力してください。",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ユーザー ID には小文字のみを使用し、4 文字以上である必要があります。",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "紹介の詳細を記入してください (該当する場合)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Amazonの既存の従業員から紹介されましたか?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "はい",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "いいえ",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "障がいをお持ちで、Amazonの採用プロセスの調整が必要だと考えられる場合は、0808 164 9427までご連絡いただくか、myapplication@amazon.co.ukまでEメールでお問い合わせください。",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

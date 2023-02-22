@@ -1648,6 +1648,34 @@
       "value" : "Nie mogliśmy zweryfikować identyfikatora logowania osoby polecającej, porozmawiaj z nami pod adresem www.amazon.com/applicationhelp, aby uzyskać pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Podaj swój identyfikator logowania polecającego (tylko małe litery)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Podaj swój identyfikator logowania polecającego.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "Identyfikator użytkownika powinien zawierać tylko małe litery i składać się z co najmniej 4 liter.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Proszę podać szczegóły polecenia (jeśli dotyczy)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Czy polecił Cię obecny pracownik firmy Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Tak",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Nie",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Kliknij <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>tutaj</a>, aby uzyskać pełną listę dopuszczalnych dokumentów.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"

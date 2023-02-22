@@ -1652,6 +1652,34 @@
       "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി സഹായത്തിന് www.amazon.com/applicationhelp എന്നതിൽ ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "ദയവായി നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID നൽകുക (ചെറിയ അക്ഷരങ്ങൾ മാത്രം)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "ദയവായി നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID നൽകുക.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ഉപയോക്തൃ ID-യിൽ ചെറിയ അക്ഷരങ്ങൾ മാത്രം അടങ്ങിയിരിക്കണം കൂടാതെ കുറഞ്ഞത് 4 അക്ഷരങ്ങളെങ്കിലും ദൈര്‍ഘ്യമുണ്ടായിരിക്കണം.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "ദയവായി റഫറൽ വിശദാംശങ്ങൾ നൽകുക (ബാധകമെങ്കിൽ)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "നിലവിൽ Amazon-ൽ ഉള്ള ഒരു ജീവനക്കാരനാണോ നിങ്ങളെ റഫർ ചെയ്തത്?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "അതെ",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "ഇല്ല",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "നിങ്ങൾക്ക് ഒരു വൈകല്യമുണ്ടെങ്കിൽ, ഒപ്പം Amazon-ന്റെ റിക്രൂട്ട്മെന്റ് പ്രക്രിയയിലേക്ക് നിങ്ങൾക്ക് ഒരു ക്രമീകരണം ആവശ്യമായി വന്നേക്കാമെന്ന് കരുതുന്നുവെങ്കിൽ, 0808 164 9427 എന്ന നമ്പറിലോ myapplication@amazon.co.uk എന്ന ഇമെയിൽ വിലാസത്തിലോ ചർച്ച ചെയ്യാൻ ഞങ്ങളെ ബന്ധപ്പെടുക",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

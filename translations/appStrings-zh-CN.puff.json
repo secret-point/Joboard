@@ -1644,6 +1644,34 @@
       "value" : "我们无法验证您推荐人的登录ID，请通过www.amazon.com/applicationhelp与我们交谈寻求帮助。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "请提供您的推荐人登录 ID（仅限小写字母）",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "请提供您的推荐人登录 ID。",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "用户 ID 应仅包含小写字母，且长度应至少为 4 个字母。",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "请提供推荐详情（如果适用）",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "是亚马逊在职员工推荐的您吗？",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "是",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "否",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "如果您患有残疾，并且认为您可能需要对亚马逊招聘流程进行调整，请致电 0808-164-9427 或发送电子邮件至 myapplication@amazon.co.uk，以联系我们进行商讨",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

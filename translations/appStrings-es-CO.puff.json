@@ -1644,6 +1644,34 @@
       "value" : "No pudimos validar la ID de inicio de sesión de tu remitente, chatea con nosotros en www.amazon.com/applicationhelp para recibir ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Proporciona el ID de inicio de sesión de quien te refirió (solo letras minúsculas)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Proporciona el ID de inicio de sesión de quien te refirió.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "El ID de usuario debe tener solo letras minúsculas y al menos 4 letras de largo.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Proporciona los detalles de la referencia (si corresponde)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "¿Te refirió un empleado de Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Sí",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "No",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes alguna discapacidad y consideras que quizá requieras una adaptación al proceso de reclutamiento de Amazon, contáctanos para que hablemos al respecto llamando al 0808 164 9427 o por correo electrónico a myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

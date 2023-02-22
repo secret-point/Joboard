@@ -1656,6 +1656,34 @@
       "value" : "Vi kunne ikke validere dit henvisnings login-ID. Chat venligst med os på www.amazon.com/applicationhelp, for at få hjælp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Angiv dit henvisnings-login-id (kun små bogstaver)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Angiv dit henvisnings-login-id.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "Bruger-id skal kun indeholde små bogstaver og skal være på mindst 4 bogstaver.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Angiv henvisningsoplysninger (hvis relevant)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Blev du henvist af en eksisterende Amazon-medarbejder?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Ja",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Nej",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Hvis du har et handicap og mener, at du måske har brug for en tilpasning af Amazons rekrutteringsproces, bedes du kontakte os på 0808 164 9427 eller via e-mail på myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

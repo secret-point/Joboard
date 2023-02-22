@@ -1644,6 +1644,34 @@
       "value" : "Nous n'avons pas pu valider l'identifiant de connexion de votre parrain. Contactez-nous sur www.amazon.com/applicationhelp pour obtenir de l'aide.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Fournissez votre identifiant de connexion référent (lettres minuscules uniquement)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Indiquez votre identifiant de connexion référent.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "L’ID d'utilisateur ne doit contenir que des lettres minuscules et doit comporter au moins 4 lettres.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Indiquez les coordonnées de la personne qui vous recommande (le cas échéant)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Un employé d'Amazon a-t-il émis une recommandation à votre sujet ?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Oui",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Non",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si vous souffrez d’un handicap et pensez qu’une adaptation du processus de recrutement d'Amazon est nécessaire, contactez-nous par téléphone au 0808 164 9427 ou par e-mail à l'adresse myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

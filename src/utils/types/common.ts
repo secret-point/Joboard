@@ -112,6 +112,7 @@ interface PageOrder {
 
 export interface Job {
   jobId: string;
+  activateReferralIncentive?: boolean;
   availableSchedules: { schedules: AvailableSchedule[] };
   language: string;
   dataSource: string;
@@ -720,7 +721,7 @@ export interface Shifts {
 
 export interface JobReferral {
   hasReferral: boolean | string;
-  referralInfo: string;
+  referralInfo?: string;
 }
 
 export interface ApplicationStep {

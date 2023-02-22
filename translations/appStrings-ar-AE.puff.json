@@ -1652,6 +1652,34 @@
       "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى الدردشة معنا على www.amazon.com/applicationhelp للحصول على المساعدة.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "يُرجى تقديم معرّف تسجيل دخول مسئول التحويلات الخاص بك (بأحرف صغيرة فقط)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "يُرجى تقديم معرّف تسجيل دخول مسئول التحويلات الخاص بك.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "يجب أن يحتوي معرّف المستخدم على أحرف صغيرة فقط ويجب أن يكون طوله 4 أحرف على الأقل.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "يُرجى تقديم تفاصيل الإحالة (إذا كان هذا قابلاً للتطبيق)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "هل تمت إحالتك من قِبَل موظف حالي في أمازون؟",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "نعم",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "لا",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "إذا كنت تعاني من إعاقة وتعتقد أنك قد تحتاج إلى تعديل عملية التوظيف في أمازون، يُرجى الاتصال بنا للمناقشة على الرقم 0808 164 9427 أو عبر البريد الإلكتروني على myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

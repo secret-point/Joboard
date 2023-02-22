@@ -107,6 +107,7 @@ import {
   GetNheTimeSlotRequestDs,
   GetNheTimeSlotRequestThroughNheDS,
   Job,
+  JobReferral,
   Locale,
   NHETimeSlotUK,
   NHETimeSlotUS,
@@ -791,6 +792,54 @@ export const isDateGreaterThanToday = (date: string): boolean => {
   return diff < 0;
 };
 
+export const isReferralIdValid = (referralId: string): boolean => {
+  return referralId.match("^[a-z]{4,60}$") !== null;
+};
+
+export const isJobReferralValid = (jobReferral: JobReferral): boolean => {
+  if (jobReferral.hasReferral) {
+    if (jobReferral.referralInfo && isReferralIdValid(jobReferral.referralInfo)) {
+      return true;
+    }
+    return false;
+  }
+  return true;
+};
+
+export const validateReferralForm = (
+  jobReferral: JobReferral,
+  referralFormInputConfig: FormInputItem,
+  setReferralFormInputConfig: React.Dispatch<React.SetStateAction<FormInputItem>>
+): void => {
+  const { hasReferral, referralInfo: referralId } = jobReferral;
+
+  if (hasReferral) {
+    if (!referralId) {
+      setReferralFormInputConfig({
+        ...referralFormInputConfig,
+        hasError: true,
+        errorMessage: "Please provide your referrer login ID.",
+        errorMessageTranslationKey: "BB-Kondo-referral-login-empty-error-text",
+      });
+    } else if (!isReferralIdValid(referralId)) {
+      setReferralFormInputConfig({
+        ...referralFormInputConfig,
+        hasError: true,
+        errorMessage: "User ID should contain only lower case letters and should be at least 4 letters long.",
+        errorMessageTranslationKey: "BB-Kondo-referral-login-regex-error-text",
+      });
+    } else {
+      // Reset config to original value
+      setReferralFormInputConfig({
+        ...referralFormInputConfig,
+        hasError: false,
+        errorMessage: "Please provide your referrer login ID.",
+        errorMessageTranslationKey: "BB-Kondo-referral-login-empty-error-text",
+      });
+    }
+  }
+};
+
 export const validateInput = (value: string, required: boolean, regex: string | RegExp) => {
   if (!required && (!value || value?.length === 0)) return true;
 
@@ -1085,7 +1134,7 @@ export const handleMXSubmitAdditionalBgc =
     };
 
 export const handleUKSubmitAdditionalBgc =
-    ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, formError: CandidateInfoErrorState ) => {
+    ( candidateData: Candidate, applicationData: Application, candidatePatchRequest: CandidatePatchRequest, jobReferral: JobReferral, formError: CandidateInfoErrorState ) => {
       const { ADDITIONAL_INFORMATION } = UPDATE_APPLICATION_API_TYPE;
 
       if (candidatePatchRequest.additionalBackgroundInfo?.address) {
@@ -1099,11 +1148,13 @@ export const handleUKSubmitAdditionalBgc =
       const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
       const isOver18 = isDOBOverEighteen(dob);
       const isDateValid = isDOBLessThan100(dob);
+      const isReferralValid = isJobReferralValid(jobReferral);
       const shouldSkipNhePage = !applicationData.jobScheduleSelected.scheduleId; // we skip nhe if there is no schedule selected
-      if (!verifyInfo.hasError && isOver18 && isDateValid) {
+      if (!verifyInfo.hasError && isOver18 && isDateValid && isReferralValid) {
         // Bound update additional info all
         const payload = {
-          candidate: candidatePatchRequest.additionalBackgroundInfo
+          candidate: candidatePatchRequest.additionalBackgroundInfo,
+          jobReferral
         };
         const request: UpdateApplicationRequestDS =
                 createUpdateApplicationRequest(applicationData, ADDITIONAL_INFORMATION, payload);

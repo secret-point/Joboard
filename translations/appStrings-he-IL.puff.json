@@ -1660,6 +1660,34 @@
       "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לשוחח איתנו בכתובת www.amazon.com/applicationhelp לקבלת סיוע.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "יש לספק את מזהה ההתחברות של המפנה שלך (אותיות קטנות בלבד)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "יש לספק את מזהה ההתחברות של המפנה שלך.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "זיהוי המשתמש צריך להכיל אותיות קטנות בלבד ועליו להיות באורך של לפחות 4 אותיות.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "יש לספק את פרטי הפניה (אם רלוונטי)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "האם הופנית על ידי עובד Amazon קיים?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "כן",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "לא",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "אם יש לך מוגבלות ולדעתך יש לך צורך בהתאמה לתהליך הגיוס של Amazon, יש לפנות אלינו כדי לדון בכך בטלפון ‎0808 164 9427 או באמצעות דואר אלקטרוני בכתובת myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"

@@ -1660,6 +1660,34 @@
       "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, সহায়তার জন্য দয়া করে www.amazon.com/applicationhelp এ আমাদের সাথে কথা বলুন।",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যিনি রেফার করেছেন তার লগইন আইডি প্রদান করুন (শুধুমাত্র ছোট হাতের অক্ষর)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যে রেফার করেছে তার লগইন আইডি প্রদান করুন।",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ব্যবহারকারী আইডিতে শুধুমাত্র ছোটহাতের অক্ষর থাকা উচিত এবং অন্তত 4 অক্ষর দীর্ঘ হওয়া উচিত।",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "অনুগ্রহ করে রেফারেল বিবরণ প্রদান করুন (প্রযোজ্য হলে)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "আপনাকে কি কোনও বর্তমান Amazon এর কর্মচারী রেফার করেছেন?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "না",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "গ্রহণযোগ্য ডকুমেন্টের সম্পূর্ণ তালিকার জন্য <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>এখানে</a> ক্লিক করুন।",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"

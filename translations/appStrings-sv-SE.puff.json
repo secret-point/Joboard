@@ -1644,6 +1644,34 @@
       "value" : "Vi kunde inte validera din hänvisares inloggnings-ID, vänligen chatta med oss på www.amazon.com/applicationhelp för att få hjälp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Ange ditt hänvisnings-ID (endast små bokstäver)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Ange ditt hänvisnings-ID.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "Användar-ID bör endast innehålla små bokstäver och bör vara minst 4 bokstäver långt.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Ange hänvisningsuppgifter (om tillämpligt)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Hänvisades du av en befintlig Amazon-anställd?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Ja",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Nej",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Om du har ett funktionshinder och anser att du kan behöva en anpassning till Amazons rekryteringsprocess, vänligen kontakta oss för att berätta mer på 0808 164 9427 eller via e-post på myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
