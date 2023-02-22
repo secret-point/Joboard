@@ -62,7 +62,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
     setHasWorkedAtAmazon(additionalBgc?.hasPreviouslyWorkedAtAmazon);
   }, [JSON.stringify(additionalBgc)]);
 
-  const missingHasPreviouslyWorkedAtAmazon = get(formError, HasPreviouslyWorkedAtAmazonRadioConfig.dataKey) && isNil(hasWorkedAtAmazon) && isDisplayPreviousWorkedForm;
+  const missingHasPreviouslyWorkedAtAmazon = get(formError, HasPreviouslyWorkedAtAmazonRadioConfig.dataKey) && isNil(hasWorkedAtAmazon);
   return (
     <Col gridGap={15} padding={{ top: "S300" }}>
       <Row
@@ -82,7 +82,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
           handleCheckRadio(true);
         }}
         error={missingHasPreviouslyWorkedAtAmazon}
-        defaultChecked={hasWorkedAtAmazon}
+        defaultChecked={additionalBgc?.hasPreviouslyWorkedAtAmazon === true}
       />
 
       <DetailedRadio
@@ -93,7 +93,7 @@ export const PreviousWorkedAtAmazonForm = (props: PreviousWorkedAtAmazonFormMerg
           handleCheckRadio(false);
         }}
         error={missingHasPreviouslyWorkedAtAmazon}
-        defaultChecked={!hasWorkedAtAmazon}
+        defaultChecked={additionalBgc?.hasPreviouslyWorkedAtAmazon === false}
       />
       {
         missingHasPreviouslyWorkedAtAmazon && (
