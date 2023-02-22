@@ -28,7 +28,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
 import { CommonColors } from "../../../utils/colors";
 import {
-  FEATURE_FLAG,
+  FEATURE_FLAG, QUERY_PARAMETER_NAME,
   UPDATE_APPLICATION_API_TYPE,
   WITHDRAW_REASON_CASE,
   WORKFLOW_STEP_NAME
@@ -43,15 +43,16 @@ import {
   getCountryMappedFeatureFlag,
   getLocale,
   goToCandidateDashboard,
-  isBrokenApplicationFeatureEnabled
+  isBrokenApplicationFeatureEnabled, routeToAppPageWithPath
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { Application } from "../../../utils/types/common";
+import { Application, QueryParamItem } from "../../../utils/types/common";
 import DebouncedButton from "../../common/DebouncedButton";
 import { Card } from "@amzn/stencil-react-components/card";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import CustomModal from "../../common/CustomModal";
 import moment from "moment";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -77,6 +78,18 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const activeApplicationList = application.applicationList;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData?.jobScheduleSelected.scheduleId) {
+      const customParams: QueryParamItem = {
+        paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+        paramValue: applicationData?.jobScheduleSelected.scheduleId
+      };
+
+      routeToAppPageWithPath(PAGE_ROUTES.REVIEW_SUBMIT, [customParams]);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     boundGetCandidateInfo();

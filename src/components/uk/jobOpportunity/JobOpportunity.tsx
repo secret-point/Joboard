@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { translate as t } from "../../../utils/translator";
 import {
@@ -73,6 +73,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const scheduleFilters = schedule.filters;
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
+  const [showInactiveModal, setShowInactiveModal] = useState(false);
 
   const width = matches.s ? "100VW" : "420px";
 
@@ -238,7 +239,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
           <ShiftPreferenceCard />
         </Col>
       </Col>
-      <InactivityModal millisecondsToTimeout={300000}>
+      <InactivityModal millisecondsToTimeout={300000} isOpen={showInactiveModal} setIsOpen={setShowInactiveModal}>
         <Col
           padding={{ top: "S400" }}
           gridGap="S500"
@@ -247,7 +248,10 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
             {t("BB-JobOpportunity-inactivity-modal-title", "Don't see a shift that works for you?")}
           </H5>
           <Button
-            onClick={() => routeToAppPageWithPath(PAGE_ROUTES.SHIFT_PREFERENCE)}
+            onClick={ () => {
+              setShowInactiveModal(false);
+              routeToAppPageWithPath(PAGE_ROUTES.SHIFT_PREFERENCE);
+            }}
             variant={ButtonVariant.Primary}
             size={ButtonSize.Small}
           >

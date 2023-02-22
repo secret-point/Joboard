@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Modal } from "@amzn/stencil-react-components/modal";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { IconCross, IconSize } from "@amzn/stencil-react-components/icons";
@@ -7,12 +7,17 @@ import { CommonColors } from "../../utils/colors";
 interface InactivityModalProps {
   millisecondsToTimeout?: number;
   children: React.ReactNode;
+  isOpen: boolean;
+  setIsOpen: Function;
 }
 const InactivityModal = (props: InactivityModalProps) => {
 
-  const { children, millisecondsToTimeout } = props;
-  const [isOpen, setIsOpen] = useState(false);
+  const { children, millisecondsToTimeout, isOpen, setIsOpen } = props;
   const timer = useRef<any>();
+
+  useEffect(() => {
+
+  }, [isOpen]);
 
   useEffect(() => {
     inactivityTime();

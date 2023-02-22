@@ -96,7 +96,9 @@ exports[`JobOpportunity should match snapshot 1`] = `
     </Col>
   </Col>
   <InactivityModal
+    isOpen={false}
     millisecondsToTimeout={300000}
+    setIsOpen={[Function]}
   >
     <Col
       gridGap="S500"
