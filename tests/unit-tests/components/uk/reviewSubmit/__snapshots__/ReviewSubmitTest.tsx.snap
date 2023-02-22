@@ -194,7 +194,7 @@ exports[`ReviewSubmit should match snapshot - with nhe preference 1`] = `
             fontSize="T100"
             hyphens="none"
           >
-            Date of birth: 1988-08-02
+            Date of birth: 02 Aug 1988
           </Text>
           <Text
             font="primary"
@@ -581,7 +581,7 @@ exports[`ReviewSubmit should match snapshot - with shift preference 1`] = `
             fontSize="T100"
             hyphens="none"
           >
-            Date of birth: 1988-08-02
+            Date of birth: 02 Aug 1988
           </Text>
           <Text
             font="primary"
@@ -896,7 +896,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
             fontSize="T100"
             hyphens="none"
           >
-            Date of birth: 1988-08-02
+            Date of birth: 02 Aug 1988
           </Text>
           <Text
             font="primary"

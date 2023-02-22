@@ -80,12 +80,6 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/self-identification"
-      >
-        <Connect(SelfIdentification) />
-      </Route>
-      <Route
-        exact={true}
         path="/already-applied"
       >
         <Connect(AlreadyApplied) />

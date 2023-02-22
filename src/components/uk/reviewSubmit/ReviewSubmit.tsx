@@ -222,7 +222,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                       {t("BB-rev-ew-submit-shift-preference-earliest-start-date-label", "Earliest start date")}:
                     </Text>
                     <Text fontSize="T100">
-                      {moment(applicationData.shiftPreference.earliestStartDate, "DD MMM YYYY").locale(getLocale()).format("DD MMM YYYY")}
+                      {moment(applicationData.shiftPreference.earliestStartDate, "DD/MM/YYYY").locale(getLocale()).format("DD MMM YYYY")}
                     </Text>
                   </Row>
                   <Col>
@@ -301,7 +301,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                   {`${t("BB-review-submit-additional-info-national-id-number-label", "National ID Number")}: ${candidateData.additionalBackgroundInfo.idNumber}`}
                 </Text>
                 <Text fontSize="T100">
-                  {`${t("BB-review-submit-additional-info-dob-label", "Date of birth")}: ${candidateData.additionalBackgroundInfo.dateOfBirth}`}
+                  {`${t("BB-review-submit-additional-info-dob-label", "Date of birth")}: ${moment(candidateData.additionalBackgroundInfo.dateOfBirth, "YYYY-MM-DD").locale(getLocale()).format("DD MMM YYYY")}`}
                 </Text>
                 <Text fontSize="T100">
                   {`${t("BB-review-submit-additional-info-previous-worked-at-amazon-label", "Have you worked with Amazon in the past?")}: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}

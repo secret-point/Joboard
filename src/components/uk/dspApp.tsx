@@ -39,7 +39,6 @@ import AdditionalInformation from "./bgc/BackgroundCheck";
 import ConsentPage from "./consent/Consent";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
-import SelfIdentification from "./selfIdentification/SelfIdentification";
 import PreConsent from "../us/preConsent/PreConsent";
 import Assessment from "./assessment/Assessment";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
@@ -66,7 +65,6 @@ const {
   JOB_OPPORTUNITIES,
   NHE,
   RESUME_APPLICATION,
-  SELF_IDENTIFICATION,
   SESSION_TIMEOUT,
   THANK_YOU,
   WOTC,
@@ -124,9 +122,6 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
           </Route>
           <Route path={`/${NHE}`} exact>
             <Nhe />
-          </Route>
-          <Route path={`/${SELF_IDENTIFICATION}`} exact>
-            <SelfIdentification />
           </Route>
           <Route path={`/${ALREADY_APPLIED}`} exact>
             <AlreadyApplied />
