@@ -17,7 +17,6 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList } from "../../../utils/constants/common";
 import {
   checkAndBoundGetApplication,
   getDefaultUkNheApptTimeFromMap,
@@ -25,8 +24,7 @@ import {
   getUKNHEAppointmentTimeMap,
   getUKNHEAppointmentTitleList,
   getUKNHEMaxSlotLength,
-  handleConfirmUKNHESelection,
-  initiateScheduleDetailOnPageLoad
+  handleConfirmUKNHESelection
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { GetNheTimeSlotRequestThroughNheDS, NHETimeSlotUK, ScheduleUK } from "../../../utils/types/common";
@@ -41,8 +39,11 @@ import { boundGetNheTimeSlotsThroughNheDs } from "../../../actions/NheActions/bo
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import moment from "moment";
 import NhePreferenceCard from "../../common/nhe/NhePreferenceCard";
-import { NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES } from "../../../utils/enums/common";
-import { PAGE_ROUTES } from "../../pageRoutes";
+import { APPLICATION_STEPS as STEPS, NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES } from "../../../utils/enums/common";
+import { boundGetAssessmentElegibility } from "../../../actions/AssessmentActions/boundAssessmentActions";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -50,10 +51,11 @@ interface MapStateToProps {
   schedule: ScheduleState;
   candidate: CandidateState;
   nhe: NheState;
+  assessment: AssessmentState;
 }
 
 export const Nhe = ( props: MapStateToProps ) => {
-  const { job, application, schedule, candidate, nhe } = props;
+  const { job, application, schedule, candidate, nhe, assessment } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -66,6 +68,9 @@ export const Nhe = ( props: MapStateToProps ) => {
   const showNhePreferenceCard = nheData.length <= NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES;
   const appointmentDateList = getUKNHEAppointmentTitleList(nheData);
   const appointmentTimeMap = getUKNHEAppointmentTimeMap(nheData);
+  const withAssessment = assessment.results.assessmentElegibility ;
+  const applicationSteps = withAssessment ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
+  const headerStep = getStepsByTitle(applicationSteps, STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT)[0]; 
 
   const [selectedNheDate, setSelectedNheDate] = useState<string>("");
   const [selectedNheTime, setSelectedNheTime] = useState<string>("");
@@ -73,13 +78,6 @@ export const Nhe = ( props: MapStateToProps ) => {
 
   const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || "";
   const displayLastName = candidateData?.lastName || "";
-
-  useEffect(() => {
-    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
-    if (!scheduleId && applicationData) {
-      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.NHE);
-    }
-  }, [applicationData]);
 
   useEffect(() => {
     const defaultAptTime = getDefaultUkNheApptTimeFromMap(appointmentTimeMap, appointmentDateList[0]);
@@ -99,6 +97,13 @@ export const Nhe = ( props: MapStateToProps ) => {
   useEffect(() => {
     boundGetCandidateInfo();
   }, []);
+
+  useEffect(() => {
+    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+      applicationId,
+      candidateId: candidateData.candidateId, 
+      jobId });
+  }, [jobId, applicationId, candidateData?.candidateId]);
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -151,7 +156,7 @@ export const Nhe = ( props: MapStateToProps ) => {
 
   return (
     <Col className="pageContainerWithMarginTop" margin={{ top: "S300" }}>
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[2]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={applicationSteps} />
       <Col padding={{ top: "S400" }} gridGap={20}>
         <Col gridGap={10}>
           <H4>

@@ -13,7 +13,8 @@ import {
   TEST_SCHEDULE_ID,
   TEST_SCHEDULE_STATE,
   TestPossibleNheDates,
-  TestSavePossibleNheDateRequest
+  TestSavePossibleNheDateRequest,
+  TEST_ASSESSMENT_STATE
 } from "../../../../test-utils/test-data";
 
 describe("Nhe", () => {
@@ -42,6 +43,7 @@ describe("Nhe", () => {
           nhePreferenceRequest: TestSavePossibleNheDateRequest
         }
         }
+        assessment={TEST_ASSESSMENT_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
@@ -62,6 +64,7 @@ describe("Nhe", () => {
           nhePreferenceRequest: TestSavePossibleNheDateRequest
         }
         }
+        assessment={TEST_ASSESSMENT_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

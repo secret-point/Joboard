@@ -132,7 +132,22 @@ exports[`ContingentOffer should match snapshot 1`] = `
     >
       Remaining Steps
     </H4>
-    <ApplicationSteps />
+    <ApplicationSteps
+      steps={
+        Array [
+          Object {
+            "customIndex": 2,
+            "title": "Enter required information",
+            "titleTranslationKey": "BB-Applic2ationSteps-enter-required-information-text",
+          },
+          Object {
+            "customIndex": 3,
+            "title": "Schedule pre-hire appointment",
+            "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
+          },
+        ]
+      }
+    />
     <Col>
       <Text
         font="primary"

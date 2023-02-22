@@ -7,16 +7,19 @@ import { CommonColors } from "../../utils/colors";
 import { translate as t } from "../../utils/translator";
 import { ApplicationStep } from "../../utils/types/common";
 import ApplicationSteps from "./ApplicationSteps";
+import { ApplicationStepListMap } from "../../utils/constants/common";
+import { CountryCode } from "../../utils/enums/common";
 
 interface StepHeaderProps {
   jobTitle: string;
   step: ApplicationStep;
-  withAssessment?: boolean;
-
+  steps?: ApplicationStep[]; // This is to allow overwriting the default steps per country
 }
 export const StepHeader = (props: StepHeaderProps) => {
 
-  const { jobTitle, step, withAssessment = false } = props;
+  const { jobTitle, step, steps = ApplicationStepListMap[CountryCode.US] } = props;
+  const stepTitles = steps?.map(item => item.title );
+  const stepNumber = (stepTitles.indexOf(step.title)) + 1 ;
 
   const renderFlyout = ({ close }: RenderFlyoutFunctionParams) => (
     <FlyoutContent
@@ -28,7 +31,7 @@ export const StepHeader = (props: StepHeaderProps) => {
         </Button>
       ]}
     >
-      <ApplicationSteps withAssessment={withAssessment} />
+      <ApplicationSteps steps={steps} />
     </FlyoutContent>
   );
 
@@ -37,7 +40,7 @@ export const StepHeader = (props: StepHeaderProps) => {
       <Text>{jobTitle}</Text>
 
       <Flex flexDirection="row" gridGap="S300" justifyContent="space-between">
-        <Text fontSize="T100">{`${step.stepNumber}. ${t(step.titleTranslationKey, step.title)}`}</Text>
+        <Text fontSize="T100">{`${stepNumber}. ${t(step.titleTranslationKey, step.title)}`}</Text>
         <WithFlyout renderFlyout={renderFlyout}>
           {({ open }) => (
             <Col alignItems="flex-end">

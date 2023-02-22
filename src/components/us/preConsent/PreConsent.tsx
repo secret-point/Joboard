@@ -5,7 +5,7 @@ import { translate as t } from "../../../utils/translator";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
 import { CommonColors } from "../../../utils/colors";
-import { getLocale, routeToAppPageWithPath } from "../../../utils/helper";
+import { getCountryCode, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
 import ApplicationSteps from "../../common/ApplicationSteps";
@@ -21,6 +21,7 @@ import queryString from "query-string";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
+import { ApplicationStepListMap } from "../../../utils/constants/common";
 
 interface MapStateToProps {
   job: JobState;
@@ -70,7 +71,7 @@ export const PreConsent = (props: MapStateToProps) => {
       ]}
       maxWidth="40vw"
     >
-      <ApplicationSteps withAssessment={!jobDetail?.bypassAssessment} />
+      <ApplicationSteps steps={ApplicationStepListMap[getCountryCode()]} />
     </FlyoutContent>
   );
 

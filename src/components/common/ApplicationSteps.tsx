@@ -1,12 +1,12 @@
 import React from "react";
 import isEmpty from "lodash/isEmpty";
 import { MessageBanner } from "@amzn/stencil-react-components/message-banner";
-import { ApplicationStepList, ApplicationWithAssessmentStepList } from "../../utils/constants/common";
+import { ApplicationStepListMap } from "../../utils/constants/common";
 import { translate as t } from "../../utils/translator";
+import { CountryCode } from "../../utils/enums/common";
+import { ApplicationStep } from "../../utils/types/common";
 
-const ApplicationSteps = ({ withAssessment = false }: { withAssessment?: boolean }) => {
-  const steps = withAssessment ? ApplicationWithAssessmentStepList : ApplicationStepList;
-
+const ApplicationSteps = ({ steps = ApplicationStepListMap[CountryCode.US] }: {steps?: ApplicationStep[]}) => {
   return (
     <div id="applicationStepContainer" data-testid="applicationStepContainer">
       {isEmpty(steps) && <MessageBanner>Steps are missing</MessageBanner>}
@@ -20,7 +20,7 @@ const ApplicationSteps = ({ withAssessment = false }: { withAssessment?: boolean
             <div className="steps-item-container">
               <div className="steps-item-tail" />
               <div className="steps-item-icon">
-                <span className="steps-icon">{step.stepNumber}</span>
+                <span className="steps-icon">{step?.customIndex ?? index + 1}</span>
               </div>
               <div className="steps-item-content">
                 <div className="steps-item-title">

@@ -724,11 +724,11 @@ export interface JobReferral {
 }
 
 export interface ApplicationStep {
-  stepNumber: number;
   title: string;
   description?: string;
   titleTranslationKey: string;
   descriptionTranslationKey?: string;
+  customIndex?: number;
 }
 
 export interface ScheduleSortBy {

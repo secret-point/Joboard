@@ -9,7 +9,6 @@ exports[`BackgroundCheck should match snapshot  - if address country is Canada 1
     jobTitle=""
     step={
       Object {
-        "stepNumber": 2,
         "title": "Complete required documents",
         "titleTranslationKey": "BB-ApplicationSteps-complete-required-document-text",
       }
@@ -121,7 +120,6 @@ exports[`BackgroundCheck should match snapshot  - if address country is USA 1`] 
     jobTitle=""
     step={
       Object {
-        "stepNumber": 2,
         "title": "Complete required documents",
         "titleTranslationKey": "BB-ApplicationSteps-complete-required-document-text",
       }

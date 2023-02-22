@@ -15,9 +15,11 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
 import StepHeader from "../../common/StepHeader";
-import { ApplicationWithAssessmentStepList } from "../../../utils/constants/common";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import IFrame from "../../common/IFrame";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 
 interface MapStateToProps {
   job: JobState;
@@ -35,6 +37,7 @@ export const Assessment = (props: MapStateToProps) => {
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
   const { assessment } = application?.results || {};
+  const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0]; 
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -68,7 +71,7 @@ export const Assessment = (props: MapStateToProps) => {
   return (
     <>
       <Col gridGap="S300" padding="0">
-        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationWithAssessmentStepList[0]} withAssessment />
+        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} />
         {assessment?.assessmentUrl && <IFrame src={ assessment.assessmentUrl} />}
       </Col>
     </>

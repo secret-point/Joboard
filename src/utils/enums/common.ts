@@ -9,7 +9,8 @@ export enum APPLICATION_STEPS {
   SELECT_JOB = "Select Job",
   COMPLETE_REQUIRED_DOCUMENTS = "Complete required documents",
   SCHEDULE_PRE_HIRE_APPOINTMENT = "Schedule pre-hire appointment",
-  COMPLETE_AN_ASSESSMENT = "Complete an assessment (~15 min)"
+  COMPLETE_AN_ASSESSMENT = "Complete an assessment (~15 min)",
+  ENTER_REQUIRED_INFORMATION = "Enter required information"
 }
 
 export enum SCHEDULE_FILTER_TYPE {

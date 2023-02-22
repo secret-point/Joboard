@@ -21,11 +21,13 @@ import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../../common/DebouncedButton";
 import { Link } from "@amzn/stencil-react-components/link";
 import StepHeader from "../../common/StepHeader";
-import { ApplicationWithAssessmentStepList } from "../../../utils/constants/common";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
 import VideoContainer from "../../common/VideoContainer";
 import { Expander } from "@amzn/stencil-react-components/expander";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { ApplicationState } from "../../../reducers/application.reducer";
+import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -47,6 +49,7 @@ export const AssessmentConsent = (props: MapStateToProps) => {
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
   const applicationData = application.results;
+  const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0]; 
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -116,7 +119,7 @@ export const AssessmentConsent = (props: MapStateToProps) => {
   return (
     <>
       <Col gridGap="S300" padding="0">
-        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationWithAssessmentStepList[0]} withAssessment />
+        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} />
 
         <H1 fontSize="T400" fontWeight="regular">
           {t("BB-AssessmentConsentPage-title-text", "Assessment")}

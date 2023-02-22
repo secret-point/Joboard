@@ -12,7 +12,7 @@ import {
   handleResetScheduleFilters,
 } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList } from "../../../utils/constants/common";
+import { ApplicationStepListDefault } from "../../../utils/constants/common";
 import Image from "../../common/Image";
 import {
   FlyoutContent,
@@ -162,7 +162,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
 
   return (
     <Col margin={{ top: "S300" }}>
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[0]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepListDefault[0]} />
       <Col id="jobOpportunityHeaderImageContainer">
         <Image
           id="jobOpportunityHeaderImage"

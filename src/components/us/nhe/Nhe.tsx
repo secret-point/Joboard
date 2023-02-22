@@ -21,7 +21,7 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList, localeToLanguageMap } from "../../../utils/constants/common";
+import { ApplicationStepListDefault, localeToLanguageMap } from "../../../utils/constants/common";
 import {
   checkAndBoundGetApplication,
   fetchNheTimeSlotDs,
@@ -119,7 +119,7 @@ export const Nhe = ( props: JobOpportunityMergedProps ) => {
 
   return (
     <Col id="jobOpportunityContainer">
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[2]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepListDefault[2]} />
       <Col padding={{ top: "S400" }} gridGap={20}>
         <Col gridGap={10}>
           <H4>

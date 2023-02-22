@@ -8,7 +8,6 @@ exports[`Nhe multiple language nhe cards should match snapshot 1`] = `
     jobTitle=""
     step={
       Object {
-        "stepNumber": 3,
         "title": "Schedule pre-hire appointment",
         "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
       }
@@ -155,7 +154,6 @@ exports[`Nhe should match snapshot 1`] = `
     jobTitle=""
     step={
       Object {
-        "stepNumber": 3,
         "title": "Schedule pre-hire appointment",
         "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
       }

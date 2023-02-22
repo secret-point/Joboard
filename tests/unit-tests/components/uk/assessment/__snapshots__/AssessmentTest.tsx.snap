@@ -10,12 +10,10 @@ exports[`Assessment should match snapshot 1`] = `
       jobTitle=""
       step={
         Object {
-          "stepNumber": 1,
           "title": "Complete an assessment (~15 min)",
           "titleTranslationKey": "BB-ApplicationSteps-complete-assessment-text",
         }
       }
-      withAssessment={true}
     />
   </Col>
 </Fragment>

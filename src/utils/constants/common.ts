@@ -41,46 +41,48 @@ import {
 
 export const HVH_LOCALE = "hvh-locale";
 
-export const ApplicationStepList: ApplicationStep[] = [
+export const ApplicationStepListDefault: ApplicationStep[] = [
   {
-    stepNumber: 1,
     title: APPLICATION_STEPS.SELECT_JOB,
     titleTranslationKey: "BB-ApplicationSteps-select-job-text"
   },
   {
     title: APPLICATION_STEPS.COMPLETE_REQUIRED_DOCUMENTS,
-    stepNumber: 2,
     titleTranslationKey: "BB-ApplicationSteps-complete-required-document-text"
   },
   {
-    stepNumber: 3,
     title: APPLICATION_STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT,
     titleTranslationKey: "BB-ApplicationSteps-schedule-preHire-appt-text"
   }
 ];
 
-export const ApplicationWithAssessmentStepList: ApplicationStep[] = [
+export const ApplicationStepListUK: ApplicationStep[] = [
   {
     title: APPLICATION_STEPS.COMPLETE_AN_ASSESSMENT,
-    stepNumber: 1,
     titleTranslationKey: "BB-ApplicationSteps-complete-assessment-text"
   },
-  {
-    stepNumber: 2,
+  { 
     title: APPLICATION_STEPS.SELECT_JOB,
     titleTranslationKey: "BB-ApplicationSteps-select-job-text"
   },
   {
-    title: APPLICATION_STEPS.COMPLETE_REQUIRED_DOCUMENTS,
-    stepNumber: 3,
-    titleTranslationKey: "BB-ApplicationSteps-complete-required-document-text"
+    title: APPLICATION_STEPS.ENTER_REQUIRED_INFORMATION,
+    
+    titleTranslationKey: "BB-Applic2ationSteps-enter-required-information-text"
   },
   {
-    stepNumber: 4,
     title: APPLICATION_STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT,
     titleTranslationKey: "BB-ApplicationSteps-schedule-preHire-appt-text"
   }
 ];
+
+export const ApplicationStepListMap: {[Key in CountryCode]: ApplicationStep[]} = {
+  [CountryCode.US]: ApplicationStepListDefault,
+  [CountryCode.UK]: ApplicationStepListUK,
+  [CountryCode.CA]: ApplicationStepListDefault, 
+  [CountryCode.MX]: ApplicationStepListDefault,
+
+};
 
 export const StatesSelectOptions: StateSelectOption[] = [
   { displayValue: "AL -- Alabama", value: "Alabama", translationKey: "BB-States-Alabama", code: "AL" },
@@ -1129,4 +1131,76 @@ export const shiftPreferenceShiftPattern: ShiftPreferenceShiftPatternConfig[] = 
   { displayValue: SHIFT_PATTERN.ANY, value: SHIFT_PATTERN.ANY, translationKey: "BB-kondo-shift-shift-pattern-Any" },
   { displayValue: SHIFT_PATTERN.DAYS, value: SHIFT_PATTERN.DAYS, translationKey: "BB-kondo-shift-shift-pattern-Days" },
   { displayValue: SHIFT_PATTERN.NIGHTS, value: SHIFT_PATTERN.NIGHTS, translationKey: "BB-kondo-shift-shift-pattern-Nights" }
+];
+
+export const AdditionalInformationFormUKAddress: FormInputItem[] = [
+  {
+    hasError: false,
+    labelText: "Address Line 1",
+    errorMessage: "Please enter a valid address",
+    required: true,
+    name: "additional BGC Address Line 1",
+    dataKey: "additionalBackgroundInfo.address.addressLine1",
+    id: "additionalBGCAddressLineOne",
+    type: "text",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-address-line-one-label-text",
+    errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-address-line-one-error-text",
+    regex: getCountryConfig(getCountryCode()).addressRegexValidator,
+  },
+  {
+    hasError: false,
+    labelText: "Address Line 2 (Apartment, suite, .etc)",
+    errorMessage: "Please enter a valid address",
+    required: false,
+    name: "Apartment, suite, .etc",
+    dataKey: "additionalBackgroundInfo.address.addressLine2",
+    id: "additionalBGCAddressLineTwo",
+    type: "text",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-address-line-two-label-text",
+    errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-address-line-two-error-text",
+    regex: getCountryConfig(getCountryCode()).addressRegexValidator,
+  },
+  {
+    hasError: false,
+    labelText: "City",
+    errorMessage: "Please enter a valid city",
+    required: true,
+    name: "City",
+    dataKey: "additionalBackgroundInfo.address.city",
+    id: "additionalBGCCity",
+    type: "text",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-city-label-text",
+    errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-city-error-text",
+    regex: `^(?=\\S)[${alphabet}${specialChars} ]{1,}[${alphabet}${accentedChars}]$`,
+  },
+];
+
+export const ukPostalCode= {
+  hasError: false,
+  labelText: "Uk postal code",
+  errorMessage: "Please enter a valid 5 digits zipcode",
+  required: true,
+  name: "ZIP/Postal code",
+  dataKey: "additionalBackgroundInfo.address.zipcode",
+  id: "additionalBGCZipcode",
+  regex: "^(([A-Z][A-HJ-Y]?\d[A-Z\d]?|ASCN|STHL|TDCU|BBND|[BFS]IQQ|PCRN|TKCA) ?\d[A-Z]{2}|BFPO ?\d{1,4}|(KY\d|MSR|VG|AI)[ -]?\d{4}|[A-Z]{2} ?\d{2}|GE ?CX|GIR ?0A{2}|SAN ?TA1)$",
+  type: "text",
+  labelTranslationKey: "BB-BGC-Additional-bgc-form-uk-postal-code-label-text",
+  errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-zipcode-error-text",
+};
+
+export const dateOfBirthFormField: FormInputItem[] = [
+  {
+    hasError: false,
+    labelText: "Date of Birth",
+    errorMessage: "Please enter a valid date of birth.",
+    required: true,
+    name: "Date of Birth",
+    dataKey: "additionalBackgroundInfo.dateOfBirth",
+    id: "additionalBGCDateOfBirth",
+    type: "datePicker",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-dob-label-text",
+    errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-dob-error-text",
+    regex: "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+  }
 ];

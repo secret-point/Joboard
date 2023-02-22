@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { StepHeader } from "../../../../src/components/common/StepHeader";
-import { ApplicationStepList } from "../../../../src/utils/constants/common";
+import { ApplicationStepListDefault } from "../../../../src/utils/constants/common";
 
 describe("StepHeader", () => {
 
@@ -10,7 +10,7 @@ describe("StepHeader", () => {
     const shallowWrapper = shallow(
       <StepHeader
         jobTitle="Test Job Title"
-        step = {ApplicationStepList[0]}
+        step = {ApplicationStepListDefault[0]}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

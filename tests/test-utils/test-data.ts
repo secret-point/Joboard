@@ -949,3 +949,10 @@ export const TEST_DAYS_HOURS_FILTER: DayHoursFilter[] = [
     dayTranslationKey: "BB-DayName-Sunday"
   }
 ];
+export const TEST_ASSESSMENT_STATE = {
+  loading: false,
+  failed: false,
+  results: {
+    assessmentElegibility: false
+  }
+};

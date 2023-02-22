@@ -11,7 +11,7 @@ import {
   routeToAppPageWithPath
 } from "../../../utils/helper";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList } from "../../../utils/constants/common";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
 import Image from "../../common/Image";
 import {
   FlyoutContent,
@@ -46,12 +46,17 @@ import { GetScheduleListByJobIdRequest } from "../../../utils/apiTypes";
 import { boundGetScheduleListByJobId } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { boundGetAssessmentElegibility } from "../../../actions/AssessmentActions/boundAssessmentActions";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
   application: ApplicationState;
   schedule: ScheduleState;
   candidate: CandidateState;
+  assessment: AssessmentState;
 }
 
 interface JobOpportunityProps {
@@ -61,7 +66,7 @@ interface JobOpportunityProps {
 type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
 
 export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
-  const { job, application, schedule, candidate } = props;
+  const { job, application, schedule, candidate, assessment } = props;
   const { search, pathname } = useLocation();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const pageName = getPageNameFromPath(pathname);
@@ -74,6 +79,9 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
   const [showInactiveModal, setShowInactiveModal] = useState(false);
+  const withAssessment = assessment.results.assessmentElegibility ;
+  const applicationSteps = withAssessment ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
+  const headerStep = getStepsByTitle(applicationSteps, STEPS.SELECT_JOB)[0]; 
 
   const width = matches.s ? "100VW" : "420px";
 
@@ -111,6 +119,14 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
+
+  useEffect(() => {
+    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+      applicationId,
+      candidateId: candidateData.candidateId, 
+      jobId });
+  }, [jobId, applicationId, candidateData?.candidateId]);
+
   const renderSortScheduleFlyout = ( { close }: RenderFlyoutFunctionParams ) => (
     <Col width={width} height="100vh">
       <FlyoutContent
@@ -174,7 +190,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
       {
         // TODO need to align how each application workflow is related to app steps
       }
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[0]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={applicationSteps} />
       <Col id="jobOpportunityHeaderImageContainer">
         <Image
           id="jobOpportunityHeaderImage"

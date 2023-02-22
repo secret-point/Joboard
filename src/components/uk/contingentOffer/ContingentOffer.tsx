@@ -22,19 +22,17 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from "../../../reducers/ui.reducer";
-import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import {
-  checkAndBoundGetApplication,
-  getLocale,
-  handleAcceptOffer,
-  initiateScheduleDetailOnPageLoad
-} from "../../../utils/helper";
+import { APPLICATION_STEPS as STEPS, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
+import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
-import { PAGE_ROUTES } from "../../pageRoutes";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
+import { boundGetAssessmentElegibility } from "../../../actions/AssessmentActions/boundAssessmentActions";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -42,6 +40,7 @@ interface MapStateToProps {
   schedule: ScheduleState;
   ui: uiState;
   candidate: CandidateState;
+  assessment: AssessmentState;
 }
 
 interface ContingentOfferProps {
@@ -50,7 +49,7 @@ interface ContingentOfferProps {
 type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
 
 export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
-  const { job, application, schedule, ui, candidate } = props;
+  const { job, application, schedule, ui, candidate, assessment } = props;
   const { isLoading } = ui;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
@@ -60,14 +59,20 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
+  const isWithAssessment = assessment.results.assessmentElegibility;
+  const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
+  const stepTitles = applicationSteps.map(step => step.title);
 
-  useEffect(() => {
-    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
-    if (!scheduleId && applicationData) {
-      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.CONTINGENT_OFFER);
-    }
-  }, [applicationData]);
-
+  const partialApplicationSteps = [
+    { 
+      ...getStepsByTitle(applicationSteps, STEPS.ENTER_REQUIRED_INFORMATION)[0], 
+      customIndex: (stepTitles.indexOf(STEPS.ENTER_REQUIRED_INFORMATION)) + 1
+    },
+    {
+      ...getStepsByTitle(applicationSteps, STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT )[0],
+      customIndex: (stepTitles.indexOf(STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT)) + 1 }
+  ];
+  
   useEffect(() => {
     boundGetCandidateInfo();
   }, []);
@@ -101,6 +106,13 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
       resetIsPageMetricsUpdated(pageName);
     };
   }, []);
+
+  useEffect(() => {
+    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+      applicationId,
+      candidateId: candidateData.candidateId, 
+      jobId });
+  }, [jobId, applicationId, candidateData?.candidateId]);
 
   const handleBackToJobs = () => {
     boundResetBannerMessage();
@@ -202,7 +214,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
         padding={{ top: "S400", bottom: "S400", left: "S300", right: "S300" }}
       >
         <H4>{t("BB-ContingencyOffer-remaining-steps-container-title", "Remaining Steps")}</H4>
-        <ApplicationSteps />
+        <ApplicationSteps steps={partialApplicationSteps} />
         <Col>
           <Text fontSize="T200">
             {t("BB-ContingencyOffer-understanding-accept-offer-requirement-confirm-text", "By accepting this offer, you confirm that you understand the requirements of this position.")}

@@ -12,7 +12,6 @@ exports[`JobOpportunity should match snapshot 1`] = `
     jobTitle=""
     step={
       Object {
-        "stepNumber": 1,
         "title": "Select Job",
         "titleTranslationKey": "BB-ApplicationSteps-select-job-text",
       }

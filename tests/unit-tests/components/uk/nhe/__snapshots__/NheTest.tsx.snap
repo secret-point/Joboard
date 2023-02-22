@@ -13,10 +13,25 @@ exports[`Nhe should match snapshot with NHE Preference Card 1`] = `
     jobTitle=""
     step={
       Object {
-        "stepNumber": 3,
         "title": "Schedule pre-hire appointment",
         "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
       }
+    }
+    steps={
+      Array [
+        Object {
+          "title": "Select Job",
+          "titleTranslationKey": "BB-ApplicationSteps-select-job-text",
+        },
+        Object {
+          "title": "Enter required information",
+          "titleTranslationKey": "BB-Applic2ationSteps-enter-required-information-text",
+        },
+        Object {
+          "title": "Schedule pre-hire appointment",
+          "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
+        },
+      ]
     }
   />
   <Col
@@ -179,10 +194,25 @@ exports[`Nhe should match snapshot without NHE Preference Card 1`] = `
     jobTitle=""
     step={
       Object {
-        "stepNumber": 3,
         "title": "Schedule pre-hire appointment",
         "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
       }
+    }
+    steps={
+      Array [
+        Object {
+          "title": "Select Job",
+          "titleTranslationKey": "BB-ApplicationSteps-select-job-text",
+        },
+        Object {
+          "title": "Enter required information",
+          "titleTranslationKey": "BB-Applic2ationSteps-enter-required-information-text",
+        },
+        Object {
+          "title": "Schedule pre-hire appointment",
+          "titleTranslationKey": "BB-ApplicationSteps-schedule-preHire-appt-text",
+        },
+      ]
     }
   />
   <Col

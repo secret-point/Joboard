@@ -18,12 +18,16 @@ import { BGCState } from "../../../reducers/bgc.reducer";
 import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { ApplicationStepList } from "../../../utils/constants/common";
-import { checkAndBoundGetApplication, getLocale, initiateScheduleDetailOnPageLoad } from "../../../utils/helper";
+import { ApplicationStepListUK } from "../../../utils/constants/common";
+import {
+  checkAndBoundGetApplication, getLocale
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import StepHeader from "../../common/StepHeader";
 import AdditionalBGCInfo from "./AdditionalBGCInfo";
-import { PAGE_ROUTES } from "../../pageRoutes";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { APPLICATION_STEPS as STEPS, } from "../../../utils/enums/common";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -31,6 +35,7 @@ interface MapStateToProps {
   schedule: ScheduleState;
   bgc: BGCState;
   candidate: CandidateState;
+  assessment: AssessmentState;
 }
 
 interface BackgroundCheckProps {
@@ -40,7 +45,7 @@ type BackgroundCheckMergedProps = MapStateToProps & BackgroundCheckProps;
 
 export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
-  const { job, application, schedule, candidate } = props;
+  const { job, application, schedule, candidate, assessment } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -49,13 +54,9 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
-
-  useEffect(() => {
-    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
-    if (!scheduleId && applicationData) {
-      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.ADDITIONAL_INFORMATION);
-    }
-  }, [applicationData]);
+  const isWithAssessment = assessment.results.assessmentElegibility;
+  const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
+  const headerStep = getStepsByTitle(applicationSteps, STEPS.ENTER_REQUIRED_INFORMATION)[0]; 
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -92,7 +93,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
   return (
     <Col className="bgcContainer" gridGap={15}>
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[1]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={applicationSteps} />
       <Col gridGap={15}>
         <H3>{t("BB-Kondo-BGC-additional-information-title-text", "Additional information")}</H3>
       </Col>

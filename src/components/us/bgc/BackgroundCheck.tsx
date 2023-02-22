@@ -25,7 +25,7 @@ import {
 } from "../../../utils/helper";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { ApplicationStepList } from "../../../utils/constants/common";
+import { ApplicationStepListDefault } from "../../../utils/constants/common";
 import { connect } from "react-redux";
 import { H4, Text } from "@amzn/stencil-react-components/text";
 import { BGCState } from "../../../reducers/bgc.reducer";
@@ -175,7 +175,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
   return (
     <Col className="bgcContainer" gridGap={15}>
-      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepList[1]} />
+      <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={ApplicationStepListDefault[1]} />
       <Col gridGap={15}>
         <H4>{t("BB-BGC-page-content-title", "Background Check")}</H4>
         <Text fontSize="T200">

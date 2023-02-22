@@ -2,6 +2,8 @@ import { IN_PROGRESS, PENDING, COMPLETED } from "../constants";
 import propertyOf from "lodash/propertyOf";
 import isEmpty from "lodash/isEmpty";
 import isNull from "lodash/isNull";
+import { ApplicationStep } from "../utils/types/common";
+import { APPLICATION_STEPS } from "../utils/enums/common";
 
 export const getStatusForSteps = (
   data: any,
@@ -33,3 +35,5 @@ export const getStatusForSteps = (
   }
   return statuses;
 };
+
+export const getStepsByTitle = (steps: ApplicationStep[], title: APPLICATION_STEPS, includeTitle = true) => steps.filter((step) => (step.title === title ) === includeTitle );
