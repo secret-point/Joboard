@@ -89,11 +89,14 @@ export const addMetricForPageLoad = ( pageName: string ) => {
         window.isPageMetricsUpdated = isPageMetricsUpdated;
         log(`[Event 'Page Load' - '${pageName}'] adding new metrics`, dataLayer);
         log(`[Event 'Page Load' - '${pageName}'] new metrics`, window.dataLayerArray);
+      } else {
+        log(`[Event 'Page Load' - no data layer found for page '${pageName}'] while adding new metrics`);
       }
+    } else {
+      log(`[Event 'Page Load' - unable to update metrics '${pageName}'] while adding new metrics. job/requisition is empty or isPageMetricsUpdated already exist`);
     }
   } catch (ex) {
-    console.log(ex);
-    console.log("unable to update metrics");
+    log(`[Event 'Page Load' - unable to update metrics '${pageName}'] while adding new metrics`, ex);
   }
 };
 
