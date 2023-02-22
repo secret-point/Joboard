@@ -23,12 +23,18 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from "../../../reducers/ui.reducer";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
+import {
+  checkAndBoundGetApplication,
+  getLocale,
+  handleAcceptOffer,
+  initiateScheduleDetailOnPageLoad
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
 import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import { FlyoutContent, RenderFlyoutFunctionParams, WithFlyout } from "@amzn/stencil-react-components/flyout";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -54,6 +60,13 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.CONTINGENT_OFFER);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     boundGetCandidateInfo();

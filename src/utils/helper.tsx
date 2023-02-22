@@ -2092,3 +2092,15 @@ export const bulkWithdrawAndSubmitApplication = (applicationList: Application[],
     callback();
   });
 };
+
+export const initiateScheduleDetailOnPageLoad = (application: Application, targetPage: PAGE_ROUTES) => {
+  // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+  if (application?.jobScheduleSelected.scheduleId) {
+    const customParams: QueryParamItem = {
+      paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID,
+      paramValue: application?.jobScheduleSelected.scheduleId
+    };
+
+    routeToAppPageWithPath(targetPage, [customParams]);
+  }
+};

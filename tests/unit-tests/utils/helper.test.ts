@@ -50,6 +50,7 @@ import {
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
+  getPageName,
   getQueryFromSearchAndHash,
   GetSelfIdentificationConfigStep,
   getSupportedCitiesFromScheduleList,
@@ -62,6 +63,7 @@ import {
   handleSubmitSelfIdEqualOpportunity,
   handleSubmitSelfIdVeteranStatus,
   handleUpdateSelfIdStep,
+  initiateScheduleDetailOnPageLoad,
   initSelfIdStepConfig,
   isAdditionalBgcInfoValid,
   isAddressValid,
@@ -76,7 +78,6 @@ import {
   isSelfIdentificationInfoValidBeforeDisability,
   isSelfIdEqualOpportunityStepCompleted,
   isSelfIdVeteranStepCompleted,
-  validateUKNationalInsuranceNumber,
   isSSNValid,
   onAssessmentStart,
   parseObjectToQueryString,
@@ -92,14 +93,14 @@ import {
   UpdateHoursPerWeekHelper,
   validateInput,
   validateNonFcraSignatures,
-  getPageName,
-  verifyBasicInfo,
-  handleSubmitAdditionalBgc
+  validateUKNationalInsuranceNumber,
+  verifyBasicInfo
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
-import SpyInstance = jest.SpyInstance;
 import { CandidateInfoErrorState, CandidatePatchRequest, FormInputItem } from "../../../src/utils/types/common";
+import { PAGE_ROUTES } from "../../../src/components/pageRoutes";
+import SpyInstance = jest.SpyInstance;
 
 jest.mock("../../../src/helpers/log-helper");
 
@@ -1703,5 +1704,32 @@ describe("verifyBasicInfo", () => {
     }];
 
     expect(verifyBasicInfo(candidate, formError, formConfig).hasError).toBeTruthy();
+  });
+});
+
+describe("initiateScheduleDetailOnPageLoad", () => {
+  beforeEach(() => {
+    window.location.href = "http://test.com/#/test?applicationId=applicationId";
+  });
+
+  test("nhe - with scheduleId", () => {
+    initiateScheduleDetailOnPageLoad(TEST_APPLICATION, PAGE_ROUTES.NHE);
+    expect(window.location.href).toEqual("http://test.com/#/nhe?applicationId=applicationId&scheduleId=test-schedule-id");
+  });
+
+  test("bgc - with scheduleId", () => {
+    initiateScheduleDetailOnPageLoad(TEST_APPLICATION, PAGE_ROUTES.ADDITIONAL_INFORMATION);
+    expect(window.location.href).toEqual("http://test.com/#/additional-information?applicationId=applicationId&scheduleId=test-schedule-id");
+  });
+
+  test("nhe - with no scheduleId", () => {
+    initiateScheduleDetailOnPageLoad({
+      ...TEST_APPLICATION,
+      jobScheduleSelected: {
+        ...TEST_APPLICATION.jobScheduleSelected,
+        scheduleId: undefined
+      }
+    }, PAGE_ROUTES.NHE);
+    expect(window.location.href).toEqual("http://test.com/#/test?applicationId=applicationId");
   });
 });

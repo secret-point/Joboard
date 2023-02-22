@@ -25,10 +25,14 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { CommonColors } from "../../../utils/colors";
 import {
-  checkAndBoundGetApplication, formatDate, getLocale
+  checkAndBoundGetApplication,
+  formatDate,
+  getLocale,
+  initiateScheduleDetailOnPageLoad
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../../common/DebouncedButton";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -51,6 +55,13 @@ export const ThankYou = (props: MapStateToProps) => {
   const location = applicationData?.nheAppointment?.location;
   const startTime = nheAppointment?.startTime;
   const endTime = nheAppointment?.endTime;
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.THANK_YOU);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     boundGetCandidateInfo();

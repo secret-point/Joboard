@@ -19,12 +19,11 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepList } from "../../../utils/constants/common";
-import {
-  checkAndBoundGetApplication, getLocale
-} from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, initiateScheduleDetailOnPageLoad } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import StepHeader from "../../common/StepHeader";
 import AdditionalBGCInfo from "./AdditionalBGCInfo";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -50,6 +49,13 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.ADDITIONAL_INFORMATION);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     boundGetCandidateInfo();
