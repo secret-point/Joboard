@@ -3045,25 +3045,17 @@
             "note": "kondo shift not available page - go to shift preference buttob",
             "value": "Submit your shift preferences"
         },
-        "BB-get-candidate-error-message-user-unauthorized": {
-            "note": "Text for user not authorized banner message",
-            "value": "User unauthorized"
+        "BB-uk-generic-error-title-text": {
+            "note": "Title for the Generic error page in the UK application",
+            "value": "Thank You for applying!"
         },
-        "BB-access-denied-page-title": {
-            "note": "Text access denied page title",
-            "value": "Access denied"
+        "BB-uk-generic-error-content-text": {
+            "note": "Content for the Generic error page in the UK application",
+            "value": "We are currently evaluating your application and will contact you using the email address you have provided soon."
         },
-        "BB-session-access-denied-description": {
-            "note": "Text access denied page description",
-            "value": "You are not authorized to view the information you requested."
-        },
-        "BB-timeout-page-description": {
-            "note": "Text timeout page description",
-            "value": "Due to inactivity, your session is expired, Please return to dashboard and resume the application."
-        },
-        "BB-timeout-page-title": {
-            "note": "Text timeout page title",
-            "value": "Session expired"
+        "BB-uk-generic-error-return-to-dashboard-button-label": {
+            "note": "return to dashboar button label in the Generic error page",
+            "value": "Return to dashboard"
         }
     }
 }
