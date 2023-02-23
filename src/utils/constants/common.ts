@@ -530,8 +530,9 @@ export const ConvictionInfoRadioConfig: FormInputItem = {
 
 export const ConvictionDetailConfig: FormInputItem = {
   hasError: false,
-  labelText: "Provide city, country, state of conviction, date, nature of the offense, along with sentencing information",
-  errorMessage: "Please provide the conviction details. (Valid special characters are -!/,.()#?)",
+  labelText: "Please provide the state and county of conviction. Also include the date, nature of the offense, and sentencing information.",
+  secondaryLabelText: "(Only write one paragraph and don't press enter while typing.)",
+  errorMessage: "Please enter the conviction details using only the following special characters (-!/,.()#?). Only write one paragraph and don't press enter while typing.",
   required: true,
   name: "convictionDetails",
   dataKey: "additionalBackgroundInfo.convictionDetails",
@@ -539,6 +540,7 @@ export const ConvictionDetailConfig: FormInputItem = {
   type: "textArea",
   regex: `^(?=\\S)[${alphanumeric}${specialChars} /,.()#!?]{1,499}[${alphanumeric}${specialChars} /,.()#!?]$`,
   labelTranslationKey: "BB-BGC-criminal-record-conviction-detail-label-text",
+  secondaryLabelTranslationKey: "BB-BGC-criminal-record-conviction-detail-secondary-label-text",
   errorMessageTranslationKey: "BB-bgc-ConvictionDetail-error-message-fix"
 };
 

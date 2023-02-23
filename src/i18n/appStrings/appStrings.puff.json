@@ -668,7 +668,11 @@
         },
         "BB-BGC-criminal-record-conviction-detail-label-text": {
             "note": "Text to Criminal record conviction details label text",
-            "value": "Provide city, country, state of conviction, date, nature of the offense, along with sentencing information"
+            "value": "Please provide the state and county of conviction. Also include the date, nature of the offense, and sentencing information."
+        },
+        "BB-BGC-criminal-record-conviction-detail-secondary-label-text": {
+            "note": "Text to Criminal record conviction details label text",
+            "value": "(Only write one paragraph and don't press enter while typing.)"
         },
         "BB-BGC-criminal-record-recommended-character-count-text": {
             "note": "Text for criminal record conviction details recommended character count text",
@@ -1472,7 +1476,7 @@
         },
         "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text": {
             "note": "Text for the assessment pace and sections of the assessments list header text",
-            "value": "<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:"
+            "value": "All sections of this assessment:"
         },
         "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text": {
             "note": "Text for the assessment pace and sections of the assessments list item 1",
@@ -2139,7 +2143,7 @@
         },
         "BB-bgc-ConvictionDetail-error-message-fix": {
             "note": "Text for ConvictionDetail bgc info error message",
-            "value": "Please provide the conviction details. (Valid special characters are -!/,.()#?)"
+            "value": "Please enter the conviction details using only the following special characters (-!/,.()#?). Only write one paragraph and don't press enter while typing."
         },
         "BB-States-Alabama": {
             "note": "Text for Alabama state",

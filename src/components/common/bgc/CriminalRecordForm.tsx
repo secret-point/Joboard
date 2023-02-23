@@ -171,17 +171,17 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
               labelText={t(ConvictionDetailConfig.labelTranslationKey || "", ConvictionDetailConfig.labelText)}
               error={missingConvictionDetails}
               renderLabel={() => (
-                <Row
-                  alignItems="center"
-                  id={"criminal-record-renderLabel"}
-                  gridGap={"S300"}
-                  dataTestId="formInputItem-renderLabel"
-                  width="100%"
-                >
-                  <Label htmlFor="criminal-record-renderLabel-label" style={{ width: "100%" }}>
+                <Label htmlFor="criminal-record-renderLabel-label" style={{ width: "100%" }}>
+                  <Row
+                    alignItems="center"
+                    id={"criminal-record-renderLabel"}
+                    gridGap={"S300"}
+                    dataTestId="formInputItem-renderLabel"
+                    width="100%"
+                  >
                     <Row
                       gridGap={8}
-                      justifyContent="space-between"
+                      justifyContent={ConvictionDetailConfig.required ? "flex-start" : "space-between"}
                       width="100%"
                     >
                       <Text fontWeight="bold">
@@ -194,8 +194,14 @@ export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
                           </Row>
                         )}
                     </Row>
-                  </Label>
-                </Row>
+                    {
+                      ConvictionDetailConfig.secondaryLabelText && (
+                        <Label className="conviction-detail-secondary-label">
+                          {t(ConvictionDetailConfig.secondaryLabelTranslationKey || "", ConvictionDetailConfig.secondaryLabelText || "")}
+                        </Label>
+                      )}
+                  </Row>
+                </Label>
               )}
             >
               {textAreaProps => (

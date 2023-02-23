@@ -81,7 +81,7 @@ export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
   }, [candidateData, jobDetail]);
 
   const diversityAndDisabilityText = t("BB-assessment-consent-diversity-and-disability-accommodation-notice-text", "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>");
-  const assessmentPaceAndSectionHeadingText = t("BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text", "<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:");
+  const assessmentPaceAndSectionHeadingText = t("BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text", "All sections of this assessment:");
   return (
     <Col gridGap={15}>
       <Col gridGap={10}>

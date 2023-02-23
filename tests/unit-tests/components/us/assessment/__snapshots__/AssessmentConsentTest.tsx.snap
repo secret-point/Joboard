@@ -66,7 +66,7 @@ exports[`AssessmentConsent should match snapshot 1`] = `
     >
       <DangerouslySetHtmlContent
         className="assessmentPaceAndSectionHeadingText"
-        html="<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:"
+        html="All sections of this assessment:"
       />
     </Text>
     <ul>

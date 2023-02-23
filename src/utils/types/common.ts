@@ -807,6 +807,8 @@ export interface FormInputItem {
   placeholder?: string;
   placeholderTranslationKey?: string;
   errorMessageTranslationKey?: string;
+  secondaryLabelText?: string;
+  secondaryLabelTranslationKey?: string;
 }
 
 export interface FormDateInputItem extends FormInputItem {
