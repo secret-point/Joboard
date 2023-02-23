@@ -1644,34 +1644,6 @@
       "value" : "Não foi possível validar a ID de início de sessão da sua entidade referenciadora. Contacte-nos através de www.amazon.com/applicationhelp para obter ajuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-referral-login-label-text" : {
-      "value" : "Forneça a sua ID de início de sessão de referência (apenas letras minúsculas)",
-      "note" : "Text for the thank you page referral login input label text"
-    },
-    "BB-Kondo-referral-login-empty-error-text" : {
-      "value" : "Forneça a sua ID de início de sessão de referência.",
-      "note" : "Text for the thank you page referral login input empty error text"
-    },
-    "BB-Kondo-referral-login-regex-error-text" : {
-      "value" : "A ID do utilizador deverá conter apenas letras minúsculas e deverá ter no mínimo 4 letras.",
-      "note" : "Text for the thank you page referral login input regex error text"
-    },
-    "BB-Kondo-referral-details-title-text" : {
-      "value" : "Forneça detalhes de referência (se aplicável)",
-      "note" : "Text for the thank you page referral details input title text"
-    },
-    "BB-Kondo-referral-details-description-text" : {
-      "value" : "Recebeu uma referência de um colaborador da Amazon?",
-      "note" : "Text for the thank you page referral details description text"
-    },
-    "BB-Kondo-referral-details-yes-text" : {
-      "value" : "Sim",
-      "note" : "Text for the thank you page referral details radio button 'yes' text"
-    },
-    "BB-Kondo-referral-details-no-text" : {
-      "value" : "Não",
-      "note" : "Text for the thank you page referral details radio button 'no' text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Se tiver uma incapacidade e acredita que poderá necessitar de uma adaptação no processo de recrutamento da Amazon, contacte-nos através do número 0808 164 9427 ou por e-mail para myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2147,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Assinale a opção na caixa para continuar.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Insira os detalhes da condenação utilizando apenas os seguintes carateres especiais: -!/,.()#?. Escreva apenas um parágrafo e não pressione a tecla Enter enquanto escreve.",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",

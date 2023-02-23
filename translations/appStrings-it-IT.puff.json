@@ -1652,34 +1652,6 @@
       "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, chatta con noi all'indirizzo www.amazon.com/applicationhelp per ricevere assistenza.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-referral-login-label-text" : {
-      "value" : "Fornisci il tuo ID di accesso del referente (solo lettere minuscole)",
-      "note" : "Text for the thank you page referral login input label text"
-    },
-    "BB-Kondo-referral-login-empty-error-text" : {
-      "value" : "Fornisci l’ID di accesso del tuo referente.",
-      "note" : "Text for the thank you page referral login input empty error text"
-    },
-    "BB-Kondo-referral-login-regex-error-text" : {
-      "value" : "L'ID utente deve contenere solo lettere minuscole e deve essere lungo almeno 4 lettere.",
-      "note" : "Text for the thank you page referral login input regex error text"
-    },
-    "BB-Kondo-referral-details-title-text" : {
-      "value" : "Fornisci i dettagli del riferimento (se è il caso)",
-      "note" : "Text for the thank you page referral details input title text"
-    },
-    "BB-Kondo-referral-details-description-text" : {
-      "value" : "Sei stato segnalato da un attuale dipendente Amazon?",
-      "note" : "Text for the thank you page referral details description text"
-    },
-    "BB-Kondo-referral-details-yes-text" : {
-      "value" : "Sì",
-      "note" : "Text for the thank you page referral details radio button 'yes' text"
-    },
-    "BB-Kondo-referral-details-no-text" : {
-      "value" : "No",
-      "note" : "Text for the thank you page referral details radio button 'no' text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Fai clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>qui</a> per avere un elenco completo dei documenti accettabili.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"

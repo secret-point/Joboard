@@ -160,10 +160,6 @@
       "value" : "అవసరమైన పత్రాలను పూర్తి చేయండి",
       "note" : "Text for complete required documents application step"
     },
-    "BB-ApplicationSteps-enter-required-information-text" : {
-      "value" : "అవసరమైన సమాచారాన్ని నమోదు చేయండి",
-      "note" : "Text for complete the required information form step"
-    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ షెడ్యూల్ చేయండి",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -663,14 +659,6 @@
     "BB-BGC-criminal-record-what-information-to-include-text" : {
       "value" : "ఏ సమాచారాన్ని చేర్చాలి",
       "note" : "Text for what information to include label text"
-    },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "దయచేసి నేరారోపణ చేసిన రాష్ట్రం మరియు కౌంటీని అందించండి. తేదీ, నేరం యొక్క స్వభావం మరియు శిక్షా సమాచారాన్ని కూడా చేర్చండి.",
-      "note" : "Text to Criminal record conviction details label text"
-    },
-    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
-      "value" : "(ఒక పేరా మాత్రమే వ్రాయండి మరియు టైప్ చేసేటప్పుడు ఎంటర్ నొక్కకండి.)",
-      "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "నమోదు చేయబడిన అక్షరాలు {characterCount} (గరిష్టం {recommendedCharacterCount} అక్షరాలు)",
@@ -1660,34 +1648,6 @@
       "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి సహాయం కోసం www.amazon.com/applicationhelpలో మాతో చాట్ చేయండి.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-referral-login-label-text" : {
-      "value" : "దయచేసి మీ రిఫరర్ లాగిన్ IDని అందించండి (చిన్న అక్షరాలు మాత్రమే)",
-      "note" : "Text for the thank you page referral login input label text"
-    },
-    "BB-Kondo-referral-login-empty-error-text" : {
-      "value" : "దయచేసి మీ రిఫరర్ లాగిన్ IDని అందించండి.",
-      "note" : "Text for the thank you page referral login input empty error text"
-    },
-    "BB-Kondo-referral-login-regex-error-text" : {
-      "value" : "వినియోగదారు IDలో చిన్న అక్షరాలు మాత్రమే ఉండాలి మరియు కనీసం 4 అక్షరాల పొడవు ఉండాలి.",
-      "note" : "Text for the thank you page referral login input regex error text"
-    },
-    "BB-Kondo-referral-details-title-text" : {
-      "value" : "దయచేసి రిఫెరల్ వివరాలను అందించండి (వర్తిస్తే)",
-      "note" : "Text for the thank you page referral details input title text"
-    },
-    "BB-Kondo-referral-details-description-text" : {
-      "value" : "మీరు ఇప్పటికే ఉన్న Amazon ఉద్యోగి ద్వారా సూచించబడ్డారా?",
-      "note" : "Text for the thank you page referral details description text"
-    },
-    "BB-Kondo-referral-details-yes-text" : {
-      "value" : "అవును",
-      "note" : "Text for the thank you page referral details radio button 'yes' text"
-    },
-    "BB-Kondo-referral-details-no-text" : {
-      "value" : "లేదు",
-      "note" : "Text for the thank you page referral details radio button 'no' text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "మీకు వైకల్యం ఉన్నట్లయితే మరియు మీకు Amazon యొక్క రిక్రూట్‌మెంట్ ప్రాసెస్‌కు సర్దుబాటు అవసరమని భావించినట్లయితే, దయచేసి 0808 164 9427 పై లేదా myapplication@amazon.co.uk ద్వారా చర్చించడానికి ఇమెయిల్ ద్వారా మమ్మల్ని సంప్రదించండి",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2163,10 +2123,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "దయచేసి కొనసాగడానికి బాక్స్‌ను ఎంచుకోండి.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "దయచేసి ఈ క్రింది ప్రత్యేక అక్షరాలను మాత్రమే ఉపయోగించి కన్విక్షన్‌ వివరాలను నమోదు చేయండి (-! /,. () #?). ఒక పేరా మాత్రమే వ్రాయండి మరియు టైప్ చేస్తున్నప్పుడు ఎంటర్ నొక్కకండి.",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- అలబామా",
