@@ -24,7 +24,8 @@ import {
   getUKNHEAppointmentTimeMap,
   getUKNHEAppointmentTitleList,
   getUKNHEMaxSlotLength,
-  handleConfirmUKNHESelection
+  handleConfirmUKNHESelection,
+  initiateScheduleDetailOnPageLoad
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { GetNheTimeSlotRequestThroughNheDS, NHETimeSlotUK, ScheduleUK } from "../../../utils/types/common";
@@ -44,6 +45,7 @@ import { boundGetAssessmentElegibility } from "../../../actions/AssessmentAction
 import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { ApplicationStepListUK } from "../../../utils/constants/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -78,6 +80,13 @@ export const Nhe = ( props: MapStateToProps ) => {
 
   const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || "";
   const displayLastName = candidateData?.lastName || "";
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.NHE);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     const defaultAptTime = getDefaultUkNheApptTimeFromMap(appointmentTimeMap, appointmentDateList[0]);

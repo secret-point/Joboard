@@ -23,7 +23,12 @@ import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { uiState } from "../../../reducers/ui.reducer";
 import { APPLICATION_STEPS as STEPS, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { checkAndBoundGetApplication, getLocale, handleAcceptOffer } from "../../../utils/helper";
+import {
+  checkAndBoundGetApplication,
+  getLocale,
+  handleAcceptOffer,
+  initiateScheduleDetailOnPageLoad
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import ApplicationSteps from "../../common/ApplicationSteps";
 import DebouncedButton from "../../common/DebouncedButton";
@@ -33,6 +38,7 @@ import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { ApplicationStepListUK } from "../../../utils/constants/common";
 import { boundGetAssessmentElegibility } from "../../../actions/AssessmentActions/boundAssessmentActions";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -72,7 +78,14 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
       ...getStepsByTitle(applicationSteps, STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT )[0],
       customIndex: (stepTitles.indexOf(STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT)) + 1 }
   ];
-  
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.CONTINGENT_OFFER);
+    }
+  }, [applicationData]);
+
   useEffect(() => {
     boundGetCandidateInfo();
   }, []);

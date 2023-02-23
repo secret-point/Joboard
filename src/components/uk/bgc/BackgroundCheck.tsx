@@ -19,15 +19,14 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { ApplicationStepListUK } from "../../../utils/constants/common";
-import {
-  checkAndBoundGetApplication, getLocale
-} from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, initiateScheduleDetailOnPageLoad } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import StepHeader from "../../common/StepHeader";
 import AdditionalBGCInfo from "./AdditionalBGCInfo";
 import { AssessmentState } from "../../../reducers/assessment.reducer";
-import { APPLICATION_STEPS as STEPS, } from "../../../utils/enums/common";
+import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   job: JobState;
@@ -56,7 +55,14 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const { candidateData } = candidate.results;
   const isWithAssessment = assessment.results.assessmentElegibility;
   const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
-  const headerStep = getStepsByTitle(applicationSteps, STEPS.ENTER_REQUIRED_INFORMATION)[0]; 
+  const headerStep = getStepsByTitle(applicationSteps, STEPS.ENTER_REQUIRED_INFORMATION)[0];
+
+  useEffect(() => {
+    // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
+    if (!scheduleId && applicationData) {
+      initiateScheduleDetailOnPageLoad(applicationData, PAGE_ROUTES.ADDITIONAL_INFORMATION);
+    }
+  }, [applicationData]);
 
   useEffect(() => {
     boundGetCandidateInfo();
