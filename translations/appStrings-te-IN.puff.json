@@ -1652,10 +1652,6 @@
       "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి సహాయం కోసం www.amazon.com/applicationhelpలో మాతో చాట్ చేయండి.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "ఆమోదయోగ్యమైన పత్రాల పూర్తి జాబితా కోసం <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>ఇక్కడ</a> క్లిక్ చేయండి.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "మీకు వైకల్యం ఉన్నట్లయితే మరియు మీకు Amazon యొక్క రిక్రూట్‌మెంట్ ప్రాసెస్‌కు సర్దుబాటు అవసరమని భావించినట్లయితే, దయచేసి 0808 164 9427 పై లేదా myapplication@amazon.co.uk ద్వారా చర్చించడానికి ఇమెయిల్ ద్వారా మమ్మల్ని సంప్రదించండి",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2604,10 +2600,6 @@
       "value" : "బయోమెట్రిక్ నివాస అనుమతి",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "అన్ని ఆమోదయోగ్యమైన పని పత్రాల యొక్క మరింత సమాచారం మరియు వివరాల కోసం, దయచేసి మా<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK ఉద్యోగి వర్క్ ఆథరైజేషన్ గైడ్‌ను చూడండి</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "మీకు 18 సంవత్సరాలు లేదా అంతకంటే ఎక్కువ.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2995,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "అప్లికేషన్‌ను ఉపసంహరించుకోవడంలో విఫలమైంది.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "మరిన్ని షిఫ్ట్‌లు రాబోతున్నాయి!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "మేము ఉద్యోగాలను తరచుగా పోస్ట్ చేస్తాము కాబట్టి మీ షిఫ్ట్ ప్రాధాన్యతలను సమర్పించండి మరియు మీకు సరిపోయే షిఫ్ట్‌ను మేము కనుగొన్నప్పుడు మిమ్మల్ని సంప్రదిస్తాము.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "మీ షిఫ్ట్ ప్రాధాన్యతలను సమర్పించండి",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

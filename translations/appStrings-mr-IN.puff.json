@@ -68,6 +68,10 @@
       "value" : "मेक्सिको",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "युनायटेड किंगडम",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "अर्ज करून, तुम्ही हे कन्फर्म करता:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "कृपया वैध 5 अंकी झिपकोड प्रविष्ट करा",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "कृपया UK पोस्टकोड इनपुट करा",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "देश",
       "note" : "Text for the additional bgc form  country label text"
@@ -544,12 +552,20 @@
       "value" : "अतिरिक्त माहिती",
       "note" : "Text for the BGC additional information title text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK राष्ट्रीय विमा क्रमांक (तुमच्याकडे नसेल तर, “NI नाही” भरा)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "कृपया डॅशशिवाय वैध 9 अंकी सोशल सिक्युरिटी नंबर प्रविष्ट करा",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "कृपया वैध 18 वर्णांचा अल्फान्यूमेरिक CURP ID हायफनशिवाय एंटर करा.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "सरकारने जारी केलेला ओळख क्रमांक किंवा “NI नाही” भरा",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1636,10 +1652,6 @@
       "value" : "आम्ही तुमच्या रेफररचा लॉगिन ID प्रमाणित करू शकलो नाही, कृपया आमच्याशी www.amazon.com/applicationhelp येथे सहाय्यासाठी चॅट करा.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "स्वीकारार्ह कागदपत्रांच्या संपूर्ण यादीसाठी <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>येथे</a> क्लिक करा.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "तुम्ही दिव्यांग असल्यास आणि तुम्हाला Amazon च्या भरती प्रक्रियेत समायोजन करण्याची आवश्यकता भासू शकते असे वाटल्यास, कृपया 0808 164 9427 वर किंवा ईमेलद्वारे myapplication@amazon.co.uk येथे चर्चा करण्यासाठी आमच्याशी संपर्क साधा",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2588,10 +2600,6 @@
       "value" : "बायोमेट्रिक निवास परवाना",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "कार्य करण्याच्या सर्व स्वीकारार्ह अधिकाराच्या कागदपत्रांच्या अधिक माहितीसाठी आणि तपशीलांसाठी, कृपया आमचे<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य अधिकृतता मार्गदर्शक पहा</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "तुम्ही 18 वर्षे किंवा त्यापेक्षा जास्त वयाचे आहात.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2979,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "अर्ज मागे घेण्यात अयशस्वी.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "अधिक शिफ्ट्स मार्गावर आहेत!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "आम्ही बर्‍याचदा नोकर्‍या पोस्ट करतो म्हणून तुमची शिफ्ट प्राधान्ये सबमिट करा आणि आम्हाला तुमच्यासाठी उपयुक्त अशी शिफ्ट सापडल्यावर तुमच्याशी संपर्क साधू.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "तुमची शिफ्ट प्राधान्ये सबमिट करा",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

@@ -1652,10 +1652,6 @@
       "value" : "We couldn't validate your referrer's login ID. Please chat with us at www.amazon.com/applicationhelp for assistance.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Click <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "If you have a disability and consider that you may require an adjustment to Amazon's recruitment process, please contact us to discuss at 0808 164 9427 or by email at myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2604,10 +2600,6 @@
       "value" : "Biometric Residence Permit",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "For more information and details of all acceptable Right to Work Documents, please see our <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK Employee Work Authorisation Guide</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "You are 18 years or above.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2995,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Failed to withdraw application.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "More shifts are on the way.",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "We post jobs often so submit your shift preferences and we will contact you when we find a shift that works for you.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Submit your shift preferences",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

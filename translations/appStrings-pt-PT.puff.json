@@ -548,6 +548,10 @@
       "value" : "ID CURP",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Informações adicionais",
+      "note" : "Text for the BGC additional information title text"
+    },
     "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
       "value" : "Número nacional de seguro do Reino Unido (se não tiver um, insira \"No NI\")",
       "note" : "Text for the additional bgc form national id number label text"
@@ -1648,10 +1652,6 @@
       "value" : "Não foi possível validar a ID de início de sessão da sua entidade referenciadora. Contacte-nos através de www.amazon.com/applicationhelp para obter ajuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Clique <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>aqui</a> para obter uma lista completa dos documentos aceitáveis.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Se tiver uma incapacidade e acredita que poderá necessitar de uma adaptação no processo de recrutamento da Amazon, contacte-nos através do número 0808 164 9427 ou por e-mail para myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2600,10 +2600,6 @@
       "value" : "Dados biométricos da autorização de residência",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Para mais informações e detalhes sobre todos os documentos aceitáveis de direito a trabalhar, consulte o nosso <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guia de autorização de trabalho de funcionários no Reino Unido</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tem 18 anos ou mais.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2991,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Falha ao retirar a candidatura.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Estão a chegar mais turnos!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Publicamos trabalhos com frequência, por isso pode enviar as suas preferências de turnos e entraremos em contacto consigo quando encontrarmos um turno que se adeque a si.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Enviar as suas preferências de turnos",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

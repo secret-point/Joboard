@@ -1652,10 +1652,6 @@
       "value" : "Wir konnten die Anmelde-ID deines Empfehlungsgebers nicht validieren. Bitte kontaktiere uns im Chat unter www.amazon.com/applicationhelp, um Hilfe zu erhalten.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Klicke <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>hier</a>, um eine vollständige Liste der zulässigen Dokumente anzuzeigen.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Wenn du eine Behinderung hast und der Meinung bist, dass du möglicherweise eine Anpassung des Einstellungsverfahrens von Amazon benötigst, kontaktiere uns bitte unter 0808 164 9427 oder per E-Mail an myapplication@amazon.co.uk, um dies zu besprechen.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2603,10 +2599,6 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Biometrische Aufenthaltserlaubnis",
       "note" : "Text for right to work document item - Biometric Residence Permit"
-    },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Weitere Informationen und Einzelheiten zu allen akzeptablen Dokumenten zur Arbeitsgenehmigung findest du in unserem<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Leitfaden zur Arbeitsgenehmigung für britische Arbeitnehmer</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du bist 18 Jahre oder älter.",

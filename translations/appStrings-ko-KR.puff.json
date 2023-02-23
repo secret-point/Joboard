@@ -1652,10 +1652,6 @@
       "value" : "추천인의 로그인 ID를 확인할 수 없습니다. www.amazon.com/applicationhelp에서 채팅을 통해 도움을 받으시기 바랍니다.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "허용되는 문서의 전체 목록을 보려면 <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>여기</a>를 클릭하세요.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "장애가 있고 아마존의 채용 절차에 조정이 필요하다고 생각되는 경우 논의를 위해 0808 164 9427번으로 문의하거나 myapplication@amazon.co.uk로 이메일을 보내주세요.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2603,10 +2599,6 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "생체 인식 체류 허가증",
       "note" : "Text for right to work document item - Biometric Residence Permit"
-    },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "허용되는 모든 근로권 서류에 대한 자세한 정보 및 세부 사항은 <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>영국 직원 취업 허가 가이드</a>를 참조하세요.",
-      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "만 18세 이상입니다.",

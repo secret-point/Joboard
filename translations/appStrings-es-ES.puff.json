@@ -1652,10 +1652,6 @@
       "value" : "No hemos podido validar el identificador de inicio de sesión de la persona que te ha recomendado. Ponte en contacto con nosotros en el chat de www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Haz clic <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de los documentos aceptables.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes una discapacidad y crees que puedes necesitar una adaptación durante el proceso de contratación de Amazon, contáctanos para hablar de ello en el 0808 164 9427 o por correo electrónico en myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2604,10 +2600,6 @@
       "value" : "Permiso de residencia biométrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Para obtener más información y detalles sobre todos los documentos aceptables sobre el derecho a trabajar, consulta nuestra <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización a trabajar para empleados de Reino Unido</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tienes 18 años o más.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2995,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "No se pudo retirar la solicitud.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "¡Hay más turnos en camino!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Publicamos ofertas de trabajo con frecuencia, así que envíanos tus preferencias de turno y nos pondremos en contacto contigo cuando encontremos un turno adecuado para ti.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Envía tus preferencias de turno",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

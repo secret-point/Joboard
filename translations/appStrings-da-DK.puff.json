@@ -68,6 +68,10 @@
       "value" : "Mexico",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Storbritannien",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Ved at ansøge bekræfter du, at:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Indtast et gyldigt postnummer på 5 cifre",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Indtast venligst UK postnummer",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Land",
       "note" : "Text for the additional bgc form  country label text"
@@ -544,12 +552,20 @@
       "value" : "Yderligere information",
       "note" : "Text for the BGC additional information title text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK National Insurance Number (Hvis du ikke har et, indtast \"No NI\")",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Indtast et gyldigt 9-cifret Social Security-nummer (CPR) uden bindestreg",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Indtast venligst et gyldigt 18-tegns alfanumerisk CURP-ID uden bindestreger.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Indtast myndighedsudstedt identifikationsnummer eller \"No NI\"",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1636,10 +1652,6 @@
       "value" : "Vi kunne ikke validere dit henvisnings login-ID. Chat venligst med os på www.amazon.com/applicationhelp, for at få hjælp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Klik <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>her</a> for en komplet liste over accepterede dokumenter.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Hvis du har et handicap og mener, at du måske har brug for en tilpasning af Amazons rekrutteringsproces, bedes du kontakte os på 0808 164 9427 eller via e-mail på myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2587,10 +2599,6 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Opholdstilladelse med biometri",
       "note" : "Text for right to work document item - Biometric Residence Permit"
-    },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Du kan finde flere oplysninger og detaljer om alle acceptable arbejdstilladelsesdokumenter i vores <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Vejledning om arbejdstilladelse for britiske medarbejdere</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du er 18 år eller derover.",

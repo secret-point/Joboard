@@ -68,6 +68,10 @@
       "value" : "Mexiko",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Storbritannien",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Genom att ansöka bekräftar du att:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Ange ett giltigt, 5-siffrigt postnummer",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Ange det brittiska postnumret",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Land",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP-ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Ytterligare information",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Nationellt försäkringsnummer i Storbritannien (om du inte har ett, ange ”Inget NI”)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ange ett giltigt, 9-siffrigt socialförsäkringsnummer utan bindestreck",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ange ett giltigt alfanumeriskt CURP-ID med 18 tecken utan bindestreck.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ange statligt utfärdat identifikationsnummer eller ”Inget NI”",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1632,6 +1652,22 @@
       "value" : "Vi kunde inte validera din hänvisares inloggnings-ID, vänligen chatta med oss på www.amazon.com/applicationhelp för att få hjälp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "Om du har ett funktionshinder och anser att du kan behöva en anpassning till Amazons rekryteringsprocess, vänligen kontakta oss för att berätta mer på 0808 164 9427 eller via e-post på myapplication@amazon.co.uk",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "Du kommer att få ett e-postmeddelande från oss med ytterligare information om nästa steg i din ansökan. Vi ser fram emot att träffa dig på ditt anställningsmöte.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "Mer information",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "Återgå till kontrollpanelen",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "Enkät för Work Opportunity Tax Credit",
       "note" : "Text for the WOTC page title text"
@@ -2564,10 +2600,6 @@
       "value" : "Biometriskt uppehållstillstånd",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Om du vill ha mer information och detaljer om alla acceptabla dokument om Rätt att arbeta kan du se vår <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guide för arbetstillstånd för anställda i UK</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du är 18 år eller äldre.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2955,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Det gick inte att återkalla ansökan.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Fler skift är på väg!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Vi publicerar jobb ofta, så du kan skicka in dina skiftpreferenser så kontaktar vi dig när vi hittar ett skift som passar dig.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Skicka in dina skiftpreferenser",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

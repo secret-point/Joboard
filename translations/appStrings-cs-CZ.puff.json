@@ -68,6 +68,10 @@
       "value" : "Mexiko",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Spojené království",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Podáním žádosti potvrzujete, že:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Zadejte prosím platné pětimístné PSČ",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Zadejte prosím PSČ Spojeného království",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Země",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "CURP ID",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Další informace",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Číslo britského národního pojištění (pokud jej nemáte, zadejte „Žádné NI“)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Zadejte prosím platné devítimístné číslo sociálního pojištění bez pomlčky",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Zadejte prosím platné 18ti znakové alfanumerické CURP ID bez pomlčky.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Zadejte identifikační číslo vydané vládou nebo „Žádné NI“",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1632,10 +1652,6 @@
       "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, napište nám na adrese www.amazon.com/applicationhelp a požádejte o pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Pro zobrazení úplného seznamu přijatelných dokumentů klikněte <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>sem</a>.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Pokud máte zdravotní postižení a domníváte se, že můžete potřebovat přizpůsobení náborového procesu společnosti Amazon, kontaktujte nás a proberte to s námi na čísle 0808 164 9427 nebo e-mailem na adrese myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2583,10 +2599,6 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Biometrické povolení k pobytu",
       "note" : "Text for right to work document item - Biometric Residence Permit"
-    },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Další informace a podrobnosti o všech přijatelných dokumentech týkajícího se pracovního povolení najdete v našem <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>průvodci povolením práce zaměstnanců ve Spojeném království</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Je Vám 18 let nebo více.",

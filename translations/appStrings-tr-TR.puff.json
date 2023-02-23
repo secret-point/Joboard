@@ -1652,10 +1652,6 @@
       "value" : "Yönlendiricinizin giriş kimliğini doğrulayamadık, lütfen yardım için www.amazon.com/applicationhelp adresinden bizimle sohbet edin.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Kabul edilebilir belgelerin tam listesi için <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>burayı</a> tıklayın.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Engeliniz varsa ve Amazon'un işe alma sürecinde ayarlama yapılması gerekebileceğini düşünüyorsanız lütfen 0808 164 9427 numaralı telefonu arayarak veya myapplication@amazon.co.uk adresinden e-posta göndererek görüşmek üzere bizimle iletişime geçin.",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2604,10 +2600,6 @@
       "value" : "Biyometrik Oturma İzni",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Kabul edilebilir tüm çalışma izni belgeleri hakkında daha fazla bilgi ve ayrıntı için, lütfen <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Birleşik Krallık Çalışanı Çalışma İzni Kılavuzumuza</a> bakın.",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "18 yaşında veya daha büyüksünüz.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2995,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Başvuru geri çekilemedi.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Daha fazla vardiya yakında.",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "İşleri sıklıkla yayınlıyoruz, bu nedenle vardiya tercihlerinizi gönderin ve sizin için uygun bir vardiya bulduğumuzda sizinle iletişime geçelim.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Vardiya tercihlerinizi gönderin",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

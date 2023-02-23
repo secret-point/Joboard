@@ -1652,10 +1652,6 @@
       "value" : "リファラーのログインIDを確認できませんでした。www.amazon.com/applicationhelpでチャットを通じてサポートを受けてください。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "受理可能な書類の完全なリストについては、<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>こちら</a>をクリックしてください。",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "障がいをお持ちで、Amazonの採用プロセスの調整が必要だと考えられる場合は、0808 164 9427までご連絡いただくか、myapplication@amazon.co.ukまでEメールでお問い合わせください。",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2604,10 +2600,6 @@
       "value" : "バイオメトリック在留許可",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "受理可能な就労権書類についての情報および詳細については、<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK従業員就労許可ガイド</a>をご覧ください",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "あなたは18歳以上です。",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2995,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "応募を取り下げることができませんでした。",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "さらにシフトが追加される予定です。",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "求人情報は頻繁に掲載しておりますので、ご希望のシフトをご送信ください。ご希望に合ったシフトが見つかり次第、ご連絡いたします。",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "シフトの希望を送信する",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

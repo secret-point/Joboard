@@ -68,6 +68,10 @@
       "value" : "Mexico",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Verenigd Koninkrijk",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Door je aan te melden, bevestig je dat:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Voer een geldige postcode van 5 cijfers in",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Voer de Britse postcode in",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "Land",
       "note" : "Text for the additional bgc form  country label text"
@@ -544,12 +552,20 @@
       "value" : "Aanvullende informatie",
       "note" : "Text for the BGC additional information title text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Brits nationaal verzekeringsnummer (als je er geen hebt, voer dan \"Geen NI\" in)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldig Social Security Number van 9 cijfers in zonder streepje",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Voer een geldige alfanumerieke CURP-ID van 18 tekens in zonder koppeltekens.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Voer een door de overheid uitgegeven identificatienummer of \"Geen NI\" in",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1636,10 +1652,6 @@
       "value" : "We konden de inlog-ID van je verwijzer niet valideren. Neem voor hulp contact met ons op via www.amazon.com/applicationhelp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Klik <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>hier</a> voor een volledige lijst van acceptabele documenten.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Als je een beperking hebt en van mening bent dat je misschien een aanpassing nodig hebt in het wervingsproces van Amazon, neem dan contact met ons op om dit te bespreken op 0808 164 9427 of per e-mail op myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2588,10 +2600,6 @@
       "value" : "Biometrische verblijfsvergunning",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Voor meer informatie en informatie over alle aanvaardbare documenten over het recht om te werken, zie onze<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> Britse werkautorisatiegids voor werknemers</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Je bent 18 jaar of ouder.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2979,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Intrekken van de sollicitatie is mislukt.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "Er zijn meer werktijden onderweg.",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "We posten vaak vacatures, dus dien je voorkeuren voor werktijden in en we nemen contact met je op als we een dienst vinden die voor jou werkt.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Dien je voorkeuren voor werktijden in",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

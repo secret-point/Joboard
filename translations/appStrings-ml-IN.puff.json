@@ -68,6 +68,10 @@
       "value" : "മെക്സിക്കോ",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "യുണൈറ്റഡ് കിംഗ്ഡം",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "ആപേക്ഷിക്കുന്നതിലൂടെ, നിങ്ങൾ ഇത് സ്ഥിരീകരിക്കുന്നു:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "സാധുവായ 5 അക്ക സിപ്കോഡ് നൽകുക",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "ദയവായി UK-യിലെ പോസ്റ്റ് കോഡ് നൽകുക",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "രാജ്യം",
       "note" : "Text for the additional bgc form  country label text"
@@ -544,12 +552,20 @@
       "value" : "കൂടുതൽ വിവരങ്ങൾ",
       "note" : "Text for the BGC additional information title text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK നാഷണൽ ഇൻഷുറൻസ് നമ്പർ (നിങ്ങൾക്ക് ഒരെണ്ണം ഇല്ലെങ്കിൽ, “NO NI” എന്ന് നൽകുക)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ഡാഷ് ഇല്ലാതെ സാധുവായ 9 അക്ക സാമൂഹിക സുരക്ഷാ നമ്പർ നൽകുക",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "ഹൈഫണുകളില്ലാതെ സാധുവായ 18 പ്രതീകങ്ങളുള്ള ഒരു ആൽഫാന്യൂമെറിക് CURP ID നൽകുക.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "സർക്കാർ ഇഷ്യൂ ചെയ്ത തിരിച്ചറിയൽ നമ്പർ നൽകുക അല്ലെങ്കിൽ \"No NI\" നൽകുക",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1636,10 +1652,6 @@
       "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി സഹായത്തിന് www.amazon.com/applicationhelp എന്നതിൽ ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "സ്വീകാര്യമായ രേഖകളുടെ പൂർണ്ണമായ ലിസ്റ്റിനായി <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>ഇവിടെ</a> ക്ലിക്ക് ചെയ്യുക.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "നിങ്ങൾക്ക് ഒരു വൈകല്യമുണ്ടെങ്കിൽ, ഒപ്പം Amazon-ന്റെ റിക്രൂട്ട്മെന്റ് പ്രക്രിയയിലേക്ക് നിങ്ങൾക്ക് ഒരു ക്രമീകരണം ആവശ്യമായി വന്നേക്കാമെന്ന് കരുതുന്നുവെങ്കിൽ, 0808 164 9427 എന്ന നമ്പറിലോ myapplication@amazon.co.uk എന്ന ഇമെയിൽ വിലാസത്തിലോ ചർച്ച ചെയ്യാൻ ഞങ്ങളെ ബന്ധപ്പെടുക",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2588,10 +2600,6 @@
       "value" : "ബയോമെട്രിക് റസിഡൻസ് പെർമിറ്റ്",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "സ്വീകാര്യമായ എല്ലാ തൊഴിൽ അവകാശ രേഖകളുടെയും കൂടുതൽ വിവരങ്ങൾക്കും വിശദാംശങ്ങൾക്കും, ദയവായി ഞങ്ങളുടെ <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK എംപ്ലോയി വർക്ക് ഓതറൈസേഷൻ ഗൈഡ്</a> കാണുക",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "നിങ്ങൾ 18 വയസ്സോ അതിൽ കൂടുതലോ ആണ്.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2979,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "അപേക്ഷ പിൻവലിക്കുന്നതിൽ പരാജയപ്പെട്ടു.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "കൂടുതൽ ഷിഫ്റ്റുകൾ ഉടൻ ലഭ്യമാകും!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "ഞങ്ങൾ ഇടയ്ക്കിടെ ജോലികൾ പോസ്റ്റ് ചെയ്യാറുണ്ട്, അതിനാൽ നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ സമർപ്പിക്കുക, നിങ്ങൾക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ് കണ്ടെത്തുമ്പോൾ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ സമർപ്പിക്കുക",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

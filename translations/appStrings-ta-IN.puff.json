@@ -68,6 +68,10 @@
       "value" : "மெக்ஸிகோ",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "யுனைடெட் கிங்டம்",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "விண்ணப்பிப்பதன் மூலம், நீங்கள் இவற்றை உறுதிப்படுத்துகிறீர்கள்:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "சரியான 5 இலக்க அஞ்சல் குறியீட்டை உள்ளிடவும்",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "UK அஞ்சல் குறியீட்டை உள்ளிடவும்",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "நாடு",
       "note" : "Text for the additional bgc form  country label text"
@@ -544,12 +552,20 @@
       "value" : "கூடுதல் தகவல்",
       "note" : "Text for the BGC additional information title text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "UK தேசியக் காப்பீட்டு எண் (உங்களிடம் இல்லை என்றால், \"No NI\" என உள்ளிடவும்)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "கோடு இல்லாமல் சரியான 9 இலக்க சமூகப் பாதுகாப்பு எண்ணை உள்ளிடவும்",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "கோடுகள் இல்லாமல் சரியான 18 எழுத்து ஆல்ஃபாநியூமரிக் CURP ஐடியை உள்ளிடவும்.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "அரசாங்கம் வழங்கிய அடையாள எண் அல்லது \"No NI\" என உள்ளிடவும்",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1636,6 +1652,22 @@
       "value" : "உங்களைப் பரிந்துரைத்தவரின் உள்நுழைவு ID ஐ எங்களால் சரிபார்க்க முடியவில்லை, உதவிக்காக, www.amazon.com/applicationhelp தளத்தில் அரட்டை மூலமாக எங்களைத் தொடர்புகொள்ளவும்.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
+      "value" : "உங்களுக்கு உடல் இயலாமை இருந்து, Amazon ஆட்சேர்ப்புச் செயல்முறையில் ஏதேனும் மாற்றங்கள் செய்ய வேண்டியிருந்தால், 0808 164 9427 என்ற எண்ணை அழைத்து அல்லது myapplication@amazon.co.uk என்ற முகவரிக்கு மின்னஞ்சல் அனுப்பி எங்களுடன் கலந்துரையாடுங்கள்",
+      "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
+    },
+    "BB-Kondo-ThankYou-description-text" : {
+      "value" : "உங்கள் விண்ணப்பத்தின் அடுத்த படிகள் குறித்த கூடுதல் தகவல்களுடன் எங்களிடமிருந்து ஒரு மின்னஞ்சலைப் பெறுவீர்கள். பணியமர்த்தலுக்கு முந்தைய நியமன சந்திப்பில் உங்களைச் சந்திக்க ஆர்வமாக உள்ளோம்.",
+      "note" : "Text for the thank you page body description text"
+    },
+    "BB-Kondo-ThankYou-more-details-text" : {
+      "value" : "கூடுதல் விவரங்கள்",
+      "note" : "Text for the thank you page more details text"
+    },
+    "BB-Kondo-ThankYou-return-to-dashboard-text" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்பு",
+      "note" : "Text for the thank you page return to dashboard text"
+    },
     "BB-WOTC-page-title-text" : {
       "value" : "வேலை வாய்ப்பு வரிக் கிரெடிட் கேள்வித்தாள்",
       "note" : "Text for the WOTC page title text"
@@ -2568,10 +2600,6 @@
       "value" : "பயோமெட்ரிக் குடியுரிமை அனுமதி",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "ஏற்றுக்கொள்ளக்கூடிய அனைத்து, வேலை செய்வதற்கான உரிமை ஆவணங்களையும் பற்றிய கூடுதல் தகவல்கள் மற்றும் விவரங்களுக்கு, எங்கள் <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>UK பணியாளர் வேலை அங்கீகார வழிகாட்டியைப்</a> பார்க்கவும்",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "நீங்கள் 18 அல்லது அதற்கு மேற்பட்ட வயதுடையவர்.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2959,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "விண்ணப்பத்தைத் திரும்பப் பெற முடியவில்லை.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "இன்னும் பல ஷிஃப்ட்கள் வரவுள்ளன!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "உங்கள் ஷிஃப்ட் விருப்பத்தேர்வுகளைச் சமர்ப்பியுங்கள். நாங்கள் அடிக்கடி வேலைகளை இடுகையிடுவோம் என்பதால், உங்களுக்குப் பொருத்தமான ஷிஃப்ட்டைக் கண்டறியும்போது உங்களைத் தொடர்பு கொள்வோம்.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "ஷிஃப்ட் விருப்பத்தேர்வுகளைச் சமர்ப்பியுங்கள்",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

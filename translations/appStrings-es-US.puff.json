@@ -68,6 +68,10 @@
       "value" : "México",
       "note" : "Mexico as country name our application supports"
     },
+    "BB-Country-United-Kingdom" : {
+      "value" : "Reino Unido",
+      "note" : "United Kingdom as country name our application supports"
+    },
     "BB-ConsentPage-qualification-criteria-header-text" : {
       "value" : "Al presentar tu solicitud, confirmas que:",
       "note" : "Text for application qualification criteria"
@@ -504,6 +508,10 @@
       "value" : "Ingresa un código postal válido de 5 dígitos",
       "note" : "Text for the additional bgc form zipcode error message text"
     },
+    "BB-Kondo-BGC-Additional-bgc-form-zipcode-error-text" : {
+      "value" : "Ingresa el código postal de UK",
+      "note" : "Text for the Kondo additional bgc form zipcode error message text"
+    },
     "BB-BGC-Additional-bgc-form-country-label-text" : {
       "value" : "País",
       "note" : "Text for the additional bgc form  country label text"
@@ -540,12 +548,24 @@
       "value" : "ID de CURP",
       "note" : "Text for the additional bgc form national id number label text"
     },
+    "BB-Kondo-BGC-additional-information-title-text" : {
+      "value" : "Información adicional",
+      "note" : "Text for the BGC additional information title text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-label-text" : {
+      "value" : "Número de seguro nacional de UK (Si no tienes uno, ingresa “No NI”)",
+      "note" : "Text for the additional bgc form national id number label text"
+    },
     "BB-BGC-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ingresa un número de seguro social válido de 9 dígitos sin guión",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-MX-Additional-bgc-form-national-id-number-error-text" : {
       "value" : "Ingresa una ID de CURP alfanumérica válida de 18 caracteres sin guiones.",
+      "note" : "Text for the additional bgc form national id number error message text"
+    },
+    "BB-Kondo-BGC-Additional-bgc-form-national-id-number-error-text" : {
+      "value" : "Ingresa el número de identificación emitido por el gobierno o “No NI”",
       "note" : "Text for the additional bgc form national id number error message text"
     },
     "BB-BGC-Additional-bgc-form-dob-label-text" : {
@@ -1632,10 +1652,6 @@
       "value" : "No pudimos validar el ID de inicio de sesión de tu referencia, inicia un chat con nosotros en www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "Haz clic <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de la documentación aceptable.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes alguna discapacidad y consideras que puedes requerir alguna adaptación para el proceso de reclutamiento de Amazon, contáctanos llamando al 0808 164 9427 o por correo electrónico a myapplication@amazon.co.uk para hablar al respecto",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2584,10 +2600,6 @@
       "value" : "Permiso de residencia biométrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "Para obtener más información y detalles de todos los documentos del Derecho al trabajo aceptables, consulta nuestra <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización de trabajo para empleados del Reino Unido</a>",
-      "note" : "Text for Kondo right to work documentation content section 2"
-    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tienes 18 años o más.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2975,6 +2987,18 @@
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "No se pudo retirar la solicitud.",
       "note" : "Text for withdraw multiple application failure error message"
+    },
+    "BB-kondo-no-available-shift-all-shifts-filled-text" : {
+      "value" : "¡Pronto habrá más turnos!",
+      "note" : "Title for kondo shift not available page"
+    },
+    "BB-kondo-no-available-shift-return-dashboard-to-apply-text" : {
+      "value" : "Publicamos empleos regularmente, así que envía tus preferencias de turno y nos pondremos en contacto contigo cuando encontremos un turno que te convenga.",
+      "note" : "text content for kondo shift not available page"
+    },
+    "BB-no-available-shift-submit-shift-preferences" : {
+      "value" : "Envía tus preferencias de turno",
+      "note" : "kondo shift not available page - go to shift preference buttob"
     }
   }
 }

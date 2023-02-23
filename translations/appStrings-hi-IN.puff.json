@@ -1652,10 +1652,6 @@
       "value" : "हम आपके रेफ़रर की लॉगिन ID को सत्यापित नहीं कर सके, कृपया सहायता के लिए www.amazon.com/applicationhelp पर हमसे चैट करें.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
-    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
-      "value" : "स्वीकार करने योग्य दस्तावेजों की पूरी सूची के लिए <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>यहां</a> क्लिक करें.",
-      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
-    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "यदि आपकी कोई विकलांगता है और आपको लगता है कि आपको Amazon की भर्ती प्रक्रिया में समायोजन की आवश्यकता हो सकती है, तो कृपया 0808 164 9427 पर चर्चा करने के लिए या myapplication@amazon.co.uk पर ईमेल द्वारा हमसे संपर्क करें",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2603,10 +2599,6 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "बायोमेट्रिक आवास परमिट",
       "note" : "Text for right to work document item - Biometric Residence Permit"
-    },
-    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
-      "value" : "काम करने के अधिकार के सभी स्वीकार्य दस्तावेज़ों की अधिक जानकारी और विवरण के लिए, कृपया हमारी<a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य मान्यता गाइड</a> देखें.",
-      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "आपकी आयु 18 वर्ष या उससे अधिक है.",
