@@ -11,26 +11,16 @@ import { BannerMessage } from "../common/BannerMessage";
 import CounterMessageBanner from "../common/CounterMessageBanner";
 import { PAGE_ROUTES } from "../pageRoutes";
 import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
-import AmazonRejects from "../us/amazonRejects/AmazonRejects";
-import AmazonWithdraws from "../us/amazonWithdraws/AmazonWithdraws";
 import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
 import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentFinished from "../us/assessment/AssessmentFinished";
-import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
-import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";
-import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
-import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
 import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
 import NoAvailableShift from "../uk/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";
-import RehireEligibilityStatus from "../us/rehireEligibilityStatus/RehireEligibilityStatus";
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
 import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
-import SupplementarySuccess from "../us/supplementarySuccess/SupplementarySuccess";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
-import Wotc from "../us/wotc/Wotc";
-import WotcComplete from "../us/wotc/WotcComplete";
 import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
 import NhePreferences from "../common/nhe/NhePreferences";
 
@@ -44,8 +34,7 @@ import Assessment from "./assessment/Assessment";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import Nhe from "./nhe/Nhe";
 import ThankYou from "./thankYou/ThankYou";
-import TimeoutPage from "../us/timeout/Timeout";
-import AccessDenied from "../us/AccessDenied/AccessDenied";
+import GenericError from "./genericError/GenericError";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -69,23 +58,16 @@ const {
   RESUME_APPLICATION,
   SESSION_TIMEOUT,
   THANK_YOU,
-  WOTC,
-  WOTC_COMPLETE,
-  CALI_DISCLOSURE,
   AMAZON_REJECTS,
   WORKFLOW_FAILED,
   AMAZON_WITHDRAWS,
   NO_AVAILABLE_TIME_SLOTS,
-  CAN_NOT_OFFER_JOB,
-  SUPPLEMENTARY_SUCCESS,
-  REHIRE_ELIGIBILITY_STATUS,
   NO_AVAILABLE_SHIFT,
   APPLICATIONID_NULL,
   SHIFT_PREFERENCE,
   ADDITIONAL_INFORMATION,
   NHE_PREFERENCES,
-  TIMEOUT,
-  ACCESS_DENIED
+  REHIRE_NOT_ELIGIBLE
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = (props: MapStateToProps) => {
@@ -136,12 +118,6 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
           <Route path={`/${THANK_YOU}`} exact>
             <ThankYou />
           </Route>
-          <Route path={`/${WOTC}`} exact>
-            <Wotc />
-          </Route>
-          <Route path={`/${WOTC_COMPLETE}`} exact>
-            <WotcComplete />
-          </Route>
           <Route path={`/${SESSION_TIMEOUT}`} exact>
             <SessionTimeout />
           </Route>
@@ -152,37 +128,28 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
             <Assessment />
           </Route>
           <Route path={`/${ASSESSMENT_NOT_ELIGIBLE}`} exact>
-            <AssessmentNotEligible />
+            <GenericError />
           </Route>
           <Route path={`/${ASSESSMENT_FINISHED}`} exact>
             <AssessmentFinished />
           </Route>
           <Route path={`/${CANDIDATE_WITHDRAWS}`} exact>
-            <CandidateWithdraws />
-          </Route>
-          <Route path={`/${CALI_DISCLOSURE}`} exact>
-            <CaliDisclosure />
+            <GenericError />
           </Route>
           <Route path={`/${AMAZON_REJECTS}`} exact>
-            <AmazonRejects />
+            <GenericError />
           </Route>
           <Route path={`/${WORKFLOW_FAILED}`} exact>
             <WorkflowFailed />
           </Route>
           <Route path={`/${AMAZON_WITHDRAWS}`} exact>
-            <AmazonWithdraws />
+            <GenericError />
           </Route>
           <Route path={`/${NO_AVAILABLE_TIME_SLOTS}`} exact>
             <NoAvailableTimeSlots />
           </Route>
-          <Route path={`/${CAN_NOT_OFFER_JOB}`} exact>
-            <CanNotOfferJob />
-          </Route>
-          <Route path={`/${SUPPLEMENTARY_SUCCESS}`} exact>
-            <SupplementarySuccess />
-          </Route>
-          <Route path={`/${REHIRE_ELIGIBILITY_STATUS}`} exact>
-            <RehireEligibilityStatus />
+          <Route path={`/${REHIRE_NOT_ELIGIBLE}`} exact>
+            <GenericError />
           </Route>
           <Route path={`/${NO_AVAILABLE_SHIFT}`} exact>
             <NoAvailableShift />

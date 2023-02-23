@@ -98,18 +98,6 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/wotc"
-      >
-        <Connect(Wotc) />
-      </Route>
-      <Route
-        exact={true}
-        path="/wotc-complete"
-      >
-        <Connect(WotcComplete) />
-      </Route>
-      <Route
-        exact={true}
         path="/session-timeout"
       >
         <Connect(SessionTimeout) />
@@ -130,7 +118,7 @@ exports[`dspAppTest should match snapshot 1`] = `
         exact={true}
         path="/assessment-not-eligible"
       >
-        <Connect(AssessmentNotEligible) />
+        <Connect(GenericError) />
       </Route>
       <Route
         exact={true}
@@ -142,19 +130,13 @@ exports[`dspAppTest should match snapshot 1`] = `
         exact={true}
         path="/candidate-withdraws"
       >
-        <Connect(CandidateWithdraws) />
-      </Route>
-      <Route
-        exact={true}
-        path="/cali-disclosure"
-      >
-        <Connect(CaliDisclosure) />
+        <Connect(GenericError) />
       </Route>
       <Route
         exact={true}
         path="/amazon-rejects"
       >
-        <Connect(AmazonRejects) />
+        <Connect(GenericError) />
       </Route>
       <Route
         exact={true}
@@ -166,7 +148,7 @@ exports[`dspAppTest should match snapshot 1`] = `
         exact={true}
         path="/amazon-withdraws"
       >
-        <Connect(AmazonWithdraws) />
+        <Connect(GenericError) />
       </Route>
       <Route
         exact={true}
@@ -176,21 +158,9 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/can-not-offer-job"
+        path="/rehire-not-eligibile"
       >
-        <Connect(CanNotOfferJob) />
-      </Route>
-      <Route
-        exact={true}
-        path="/supplementary-success"
-      >
-        <Connect(SupplementarySuccess) />
-      </Route>
-      <Route
-        exact={true}
-        path="/rehire-eligibility-status"
-      >
-        <Connect(RehireEligibilityStatus) />
+        <Connect(GenericError) />
       </Route>
       <Route
         exact={true}
