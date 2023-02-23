@@ -661,7 +661,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Proporciona la ciudad, el país, el estado de la condena, la fecha y la naturaleza de la infracción, junto con la información sobre la sentencia",
+      "value" : "Indica el estado y el condado de la condena. Incluye también la fecha, la naturaleza del delito e información sobre la sentencia.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Escribe solo un párrafo y no presiones la tecla enter mientras escribes.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1469,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Ninguna de las partes de la evaluación tiene límite de tiempo</b>: puedes trabajar a tu propio ritmo. Todas las secciones de esta evaluación:",
+      "value" : "Todas las secciones de esta evaluación:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1651,6 +1655,10 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "No hemos podido validar el identificador de inicio de sesión de la persona que te ha recomendado. Ponte en contacto con nosotros en el chat de www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Haz clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de los documentos aceptables.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes una discapacidad y crees que puedes necesitar una adaptación durante el proceso de contratación de Amazon, contáctanos para hablar de ello en el 0808 164 9427 o por correo electrónico en myapplication@amazon.co.uk",
@@ -2129,7 +2137,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Indica los detalles de la condena. (Los caracteres especiales válidos son -!/,.()#?)",
+      "value" : "Introduce los detalles de la condena. Si usas caracteres especiales, emplea solo los siguientes: -! /,. () #?. Escribe solo un párrafo y no presiones la tecla enter mientras escribes.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

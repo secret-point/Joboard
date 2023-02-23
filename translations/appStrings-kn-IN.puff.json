@@ -660,10 +660,6 @@
       "value" : "ಯಾವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಕು",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "ನಗರ, ದೇಶ, ಅಪರಾಧದ ಸ್ಥಿತಿ, ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಲಾಗಿದೆ (ಗರಿಷ್ಠ {recommendedCharacterCount} ಅಕ್ಷರಗಳು)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "Amazon ನಲ್ಲಿ, ನಾವು ನಮ್ಮ ಕಾರ್ಯಪಡೆಯ ವೈವಿಧ್ಯತೆ ಮತ್ತು ನಾವು ಕೆಲಸ ಮಾಡುವ ವೈವಿಧ್ಯಮಯ ವಿಧಾನಗಳನ್ನು ಆಚರಿಸುತ್ತೇವೆ. ನೀವು ಅಂಗವ್ಯೆಕಲ್ಯ ಹೊಂದಿದ್ದರೆ ಮತ್ತು ಮೌಲ್ಯಮಾಪನವನ್ನು ಒಳಗೊಂಡಂತೆ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯ ಸಂದರ್ಭದಲ್ಲಿ ವಸತಿ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ, <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon ವಸತಿಗೆ ಭೇಟಿ ನೀಡಿ.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>ಮೌಲ್ಯಮಾಪನದ ಯಾವುದೇ ಭಾಗಕ್ಕೆ ಸಮಯದ ಮಿತಿ ಇಲ್ಲ</b> – ನೀವು ನಿಮ್ಮ ಸ್ವಂತ ವೇಗದಲ್ಲಿ ಕೆಲಸ ಮಾಡಬಹುದು. ಈ ಮೌಲ್ಯಮಾಪನದ ಎಲ್ಲಾ ವಿಭಾಗಗಳು:",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "ಕೆಳಗಿನ ಸ್ಕ್ರೀನ್ ರೀಡರ್‌ಗಳಿಗಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ: VoiceOver (Mac) ಮತ್ತು NVDA (Windows), Firefox, Chrome, ಮತ್ತು Edge (Windows) ನಲ್ಲಿ.",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2127,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ಪೆಟ್ಟಿಗೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "ದಯವಿಟ್ಟು ಅಪರಾಧ ನಿರ್ಣಯ ವಿವರಗಳನ್ನು ನೀಡಿ. (ಮಾನ್ಯ ವಿಶೇಷ ಅಕ್ಷರಗಳು -! /,. () #?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- ಅಲಬಾಮಾ",

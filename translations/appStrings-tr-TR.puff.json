@@ -660,10 +660,6 @@
       "value" : "Hangi Bilgiler dahil edilmeli?",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Ceza bilgisi ile birlikte şehir, ülke, mahkumiyet durumu, tarih, suçun niteliğini sağlayın",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} karakter girildi (maksimum {recommendedCharacterCount} karakter)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1465,7 +1461,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Değerlendirmenin hiçbir kısmı zaman kısıtlamalı değildir</b>, kendi hızınızda çalışabilirsiniz. Bu değerlendirmenin tüm bölümleri:",
+      "value" : "Bu değerlendirmenin tüm bölümleri:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1651,6 +1647,10 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Yönlendiricinizin giriş kimliğini doğrulayamadık, lütfen yardım için www.amazon.com/applicationhelp adresinden bizimle sohbet edin.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Kabul edilebilir belgelerin tam listesi için <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>burayı</a> tıklayın.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Engeliniz varsa ve Amazon'un işe alma sürecinde ayarlama yapılması gerekebileceğini düşünüyorsanız lütfen 0808 164 9427 numaralı telefonu arayarak veya myapplication@amazon.co.uk adresinden e-posta göndererek görüşmek üzere bizimle iletişime geçin.",
@@ -2129,7 +2129,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Lütfen görüşün ayrıntılarını sağlayın. (Geçerli özel karakterler -! /,. () #?)",
+      "value" : "Lütfen mahkumiyet ayrıntılarını yalnızca takip eden özel karakterleri kullanarak girin: (-!/,.()#?). Sadece bir paragraf yazın ve yazarken “enter”a basmayın.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
@@ -2599,6 +2599,10 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Biyometrik Oturma İzni",
       "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Kabul edilebilir tüm çalışma izni belgeleri hakkında daha fazla bilgi ve ayrıntı için lütfen <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Birleşik Krallık Çalışanı Çalışma İzni Kılavuzu’muza</a> bakın.",
+      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "18 yaşında veya daha büyüksünüz.",

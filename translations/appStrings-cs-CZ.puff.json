@@ -661,7 +661,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Uveďte město, zemi, stát odsouzení, datum, povahu trestného činu a informace o trestu",
+      "value" : "Uveďte prosím stát a okres odsouzení. Uveďte také datum, povahu trestného činu a informace o odsouzení.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Napište pouze jeden odstavec a během psaní nemačkejte Enter.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1469,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b> Žádná část posouzení není časově omezena</b> – můžete pracovat vlastním tempem. Všechny části tohoto posouzení:",
+      "value" : "Všechny části tohoto posouzení:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2133,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Uveďte podrobnosti o odsouzení. (Platnými speciálními znaky jsou -!/,.()#?)",
+      "value" : "Zadejte prosím podrobnosti o odsouzení pouze pomocí následujících speciálních znaků (-!/,.()#?). Napište pouze jeden odstavec a během psaní nemačkejte Enter.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

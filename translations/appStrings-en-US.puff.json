@@ -160,6 +160,10 @@
       "value" : "Complete required documents",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Enter required information",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Schedule pre-hire appointment",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -661,7 +665,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Provide city, country, state of conviction, date, nature of the offense, along with sentencing information",
+      "value" : "Please provide the state and county of conviction. Also include the date, nature of the offense, and sentencing information.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Only write one paragraph and don't press enter while typing.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1473,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>No part of the assessment is timed</b> – you can work at your own pace. All sections of this assessment:",
+      "value" : "All sections of this assessment:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2133,7 +2141,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Please provide the conviction details. (Valid special characters are -!/,.()#?)",
+      "value" : "Please enter the conviction details using only the following special characters (-!/,.()#?). Only write one paragraph and don't press enter while typing.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
@@ -3007,6 +3015,10 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Submit your shift preferences",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-get-candidate-error-message-user-unauthorized" : {
+      "value" : "User unauthorized",
+      "note" : "Text for user not authorized banner message"
     }
   }
 }

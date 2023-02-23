@@ -660,10 +660,6 @@
       "value" : "包含哪些信息",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "提供城市、国家/地区、定罪情况、犯罪的性质与日期以及量刑相关信息",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "已输入 {characterCount} 个字符（最多 {recommendedCharacterCount} 个字符）",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要提供便利，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>亚马逊便利。</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>评估的所有环节都没有时间限制</b>，您可以按照自己的节奏进行评估。此评估的所有环节：",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "针对以下屏幕阅读器进行了优化：Firefox、Chrome 和 Edge（Windows）上的 VoiceOver（Mac）和 NVDA（Windows）。",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2127,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "请选中该复选框以继续。",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "请提供定罪详情。（有效的特殊字符为 -!/,.()#?）",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL — 阿拉巴马州",

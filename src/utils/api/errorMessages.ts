@@ -275,6 +275,10 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   [UPDATE_APPLICATION_ERROR_CODE.PREVIOUS_USED_NAME_FORMAT_INCORRECT]: {
     translationKey: "BB-BGC-additional-bgc-previous-legal-name-error-text",
     value: "Please enter previously used legal full name following format: First Last"
+  },
+  [UPDATE_APPLICATION_ERROR_CODE.USER_UNAUTHORIZED]: {
+    translationKey: "BB-get-candidate-error-message-user-unauthorized",
+    value: "User unauthorized"
   }
 };
 
@@ -346,6 +350,10 @@ export const GetCandidateErrorMessages: { [key: string]: ApiErrorMessage } = {
   [GET_CANDIDATE_ERROR_CODE.NO_ACCESS_TO_APPLICATION]: {
     translationKey: "BB-get-candidate-error-message-no-access-to-application",
     value: "You can not access this application."
+  },
+  [GET_CANDIDATE_ERROR_CODE.USER_UNAUTHORIZED]: {
+    translationKey: "BB-get-candidate-error-message-user-unauthorized",
+    value: "User unauthorized"
   }
 };
 

@@ -660,10 +660,6 @@
       "value" : "Die folgenden Informationen müssen enthalten sein",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Gib Ort, Land, Bundesstaat/Bundesland der Verurteilung, Datum, Art der Straftat sowie Informationen zum Strafmaß an",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} Zeichen eingegeben (max. {recommendedCharacterCount} Zeichen)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "Bei Amazon feiern wir die Vielfalt unserer Belegschaft und vielfältige Arbeitsweisen. Wenn du während des Einstellungsverfahrens, einschließlich der Beurteilung, aufgrund einer Behinderung besondere Unterstützung erforderst, rufe bitte <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation auf.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Kein Teil der Beurteilung ist zeitlich begrenzt</b> – du kannst in deinem eigenen Tempo arbeiten. Alle Abschnitte dieser Beurteilung:",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Sind für die folgenden Screenreader optimiert: VoiceOver (Mac) und NVDA (Windows) auf Firefox, Chrome und Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2128,10 +2120,6 @@
       "value" : "Bitte aktiviere das Kontrollkästchen, um fortzufahren.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Bitte die Einzelheiten zur Verurteilung angeben. (Gültige Sonderzeichen sind -! /,.()#?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
-    },
     "BB-States-Alabama" : {
       "value" : "AL — Alabama",
       "note" : "Text for Alabama state"
@@ -2599,6 +2587,10 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Biometrische Aufenthaltserlaubnis",
       "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Weitere Informationen und Einzelheiten zu allen zulässigen Dokumenten zur Arbeitsgenehmigung findest du in unserem <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Leitfaden zur Arbeitsgenehmigung für britische Arbeitnehmer</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du bist 18 Jahre oder älter.",

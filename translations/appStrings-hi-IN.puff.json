@@ -660,10 +660,6 @@
       "value" : "कौन सी जानकारी शामिल करनी है",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "सजा की जानकारी के साथ शहर, देश, सजा की स्थिति, तारीख, अपराध की प्रकृति प्रदान करें",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "डाले गए {characterCount} वर्ण (अधिकतम {recommendedCharacterCount} वर्ण)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1465,7 +1461,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>असेसमेंट का कोई भी हिस्सा समयबद्ध नहीं है</b> – आप अपनी गति से काम कर सकते हैं. इस असेसमेंट के सभी सेक्शन:",
+      "value" : "इस असेसमेंट के सभी सेक्शन:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2127,10 +2123,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "कृपया कन्विक्शन विवरण प्रदान करें. (मान्य विशेष वर्ण हैं -!/,.()#?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- अलबामा",

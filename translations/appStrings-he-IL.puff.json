@@ -160,6 +160,10 @@
       "value" : "יש להשלים את המסמכים הדרושים",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "יש להזין את המידע הנדרש",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "קביעת פגישת טרום העסקה",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -661,7 +665,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "יש לספק עיר, מדינה, מצב הרשעה, תאריך, אופי העבירה, יחד עם מידע על גזר הדין",
+      "value" : "יש לספק את המדינה ואת מחוז ההרשעה. יש לכלול גם את התאריך, אופי העבירה ומידע על גזר הדין.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(יש לכתוב רק פסקה אחת ולא ללחוץ על אישור במהלך ההקלדה.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1473,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>אין הגבלת זמן על אף חלק בהערכה</b> - באפשרותך לעבוד בקצב שלך. כל הסעיפים של הערכה זו:",
+      "value" : "כל סעיפי הערכה זו:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2137,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "יש להזין את פרטי ההרשעה. (התווים המיוחדים שתקפים הם -!/,.()#?)",
+      "value" : "יש להזין את פרטי ההרשעה באמצעות התווים המיוחדים הבאים בלבד (-!/,.()#?). יש לכתוב רק פסקה אחת ולא ללחוץ על אישור במהלך ההקלדה.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

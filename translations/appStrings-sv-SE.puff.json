@@ -660,10 +660,6 @@
       "value" : "Information som ska inkluderas",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Ange ort, land, dömande delstat, datum, typ av brott, tillsammans med information om brottspåföljden",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} inmatade tecken (max {recommendedCharacterCount} tecken)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "På Amazon firar vi mångfalden i vår arbetskraft och de olika sätten vi arbetar på. Om du har ett funktionshinder och behöver assistans under anställningsprocessen, inklusive bedömningen, besök <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Ingen del av bedömningen är tidsbestämd</b> – du kan arbeta i din egen takt. Alla avsnitt i denna bedömning:",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Optimeras för följande skärmläsare: VoiceOver (Mac) och NVDA (Windows) i Firefox, Chrome och Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2127,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Markera rutan för att fortsätta.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Ange detaljer om domen. (Giltiga specialtecken är -! /,. () #?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL-Alabama",

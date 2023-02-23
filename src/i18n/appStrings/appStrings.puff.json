@@ -3016,6 +3016,10 @@
         "BB-no-available-shift-submit-shift-preferences": {
             "note": "kondo shift not available page - go to shift preference buttob",
             "value": "Submit your shift preferences"
+        },
+        "BB-get-candidate-error-message-user-unauthorized": {
+            "note": "Text for user not authorized banner message",
+            "value": "User unauthorized"
         }
     }
 }

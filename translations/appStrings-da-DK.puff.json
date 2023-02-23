@@ -661,7 +661,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Angiv by, land, domsforhold, dato, lovovertrædelsens art sammen med straffeinformation",
+      "value" : "Angiv den stat og det amt, hvor dommen er afsagt. Inkluder også datoen, lovovertrædelsens art, og strafudmålingsinformation.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Skriv kun et afsnit, og tryk ikke på enter, mens du skriver.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1469,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Ingen del af evalueringen er tidsbestemt</b> — du kan arbejde i dit eget tempo. Alle afsnit i denne evaluering:",
+      "value" : "Alle afsnit af denne evaluering:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2133,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Angiv venligst detaljer om dommen. (Gyldige specialtegn er -!/,. () #?)",
+      "value" : "Indtast overbevisningsdetaljerne ved kun at bruge følgende specialtegn (-!/,.()#?). Skriv kun et afsnit, og tryk ikke på enter, mens du skriver.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

@@ -660,10 +660,6 @@
       "value" : "कोणती माहिती समाविष्ट करावी",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "शिक्षेच्या माहितीसह शहर, देश, दोषी ठरवण्याची स्थिती, तारीख, गुन्ह्याचे स्वरूप प्रदान करा",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount}वर्ण प्रविष्ट केले (कमाल{recommendedCharacterCount} वर्ण)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "Amazon मध्ये, आम्ही आमच्या कर्मचार्‍यांची विविधता आणि आमच्या काम करण्याच्या विविध पद्धतींचा उत्सव साजरा करतो. तुम्‍हाला अपंगत्व असल्‍यास आणि मूल्यांकनासह कामावर ठेवण्‍याच्‍या प्रक्रियेदरम्यान, निवासाची आवश्‍यकता असल्‍यास, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon अकोमोडेशनला भेट द्या.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>मूल्यांकनाचा कोणताही भाग कालबद्ध नाही</b> – तुम्ही तुमच्या स्वत:च्या गतीने काम करू शकता. या मूल्यांकनाचे सर्व विभाग:",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "खालील स्क्रीन वाचकांसाठी ऑप्टिमाइझ केले आहे: Firefox, Chrome आणि Edge (Windows) वर व्हॉइसओव्हर (Mac) आणि NVDA (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2127,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "कृपया पुढे जाण्यासाठी बॉक्स तपासा.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "कृपया खात्री तपशील प्रदान करा. (वैध विशेष वर्ण आहेत -!/,.()#?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- अलाबामा",

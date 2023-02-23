@@ -160,6 +160,10 @@
       "value" : "必要書類を完成させます",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "必要な情報を入力します",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "雇用前予約をスケジュールする",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -661,7 +665,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "市、国、有罪判決の状態、日付、犯罪の性質、判決情報を提供する",
+      "value" : "有罪判決を受けた州と郡を入力してください。また、日付、犯罪の種類、判決情報も含めてください。",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(一段落だけを記載し、入力中はEnterキーを押さないでください。)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1473,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>アセスメントのどの部分にも時間制限はありません</b>。自分のペースで作業できます。このアセスメントのすべてのセクション:",
+      "value" : "このアセスメントのすべてのセクション:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2137,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "有罪判決の詳細を提供してください。(有効な特殊文字は-!/,. () #?)",
+      "value" : "有罪判決の詳細は、次の特殊文字のみを使用して入力してください (-!/,. () #?)。一段落だけを記載し、入力中はEnterキーを押さないでください。",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

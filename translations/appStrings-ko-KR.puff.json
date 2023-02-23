@@ -661,7 +661,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "선고 정보와 함께 도시, 국가, 유죄 판결 상태, 날짜, 범죄 유형을 제공해 주세요.",
+      "value" : "유죄 판결을 받은 주 및 시 도를 입력하세요. 또한 날짜, 범죄의 성격 및 판결 정보도 포함하세요.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(한 문단만 작성하고 입력하는 동안 입력 키를 누르지 마세요.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1469,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>평가의 어떤 부분도 시간이 정해져 있지 않습니다.</b> 자신의 속도에 맞게 받으실 수 있습니다. 이 평가의 모든 섹션:",
+      "value" : "이 평가의 모든 섹션:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1651,6 +1655,10 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "추천인의 로그인 ID를 확인할 수 없습니다. www.amazon.com/applicationhelp에서 채팅을 통해 도움을 받으시기 바랍니다.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "양호 문서의 전체 목록을 보려면 <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>여기</a>를 클릭하세요.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "장애가 있고 아마존의 채용 절차에 조정이 필요하다고 생각되는 경우 논의를 위해 0808 164 9427번으로 문의하거나 myapplication@amazon.co.uk로 이메일을 보내주세요.",
@@ -2129,7 +2137,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "유죄 판결 세부 사항을 제공하세요. (유효한 특수 문자: -!/,.()#?)",
+      "value" : "다음 특수 문자 (-!/,.()#?)만 사용하여 유죄 판결 세부 사항을 입력하세요. 한 문단만 작성하고 입력하는 동안 입력 키를 누르지 마세요.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
@@ -2599,6 +2607,10 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "생체 인식 체류 허가증",
       "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "모든 양호 노동권 서류에 대한 자세한 정보 및 세부 사항은 <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK 직원 근로 허가 지침</a>을 참조하세요.",
+      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "만 18세 이상입니다.",

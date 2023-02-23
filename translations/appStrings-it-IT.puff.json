@@ -160,6 +160,10 @@
       "value" : "Compila i documenti richiesti",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Inserisci le informazioni richieste",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Programma un appuntamento pre-assunzione",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -659,10 +663,6 @@
     "BB-BGC-criminal-record-what-information-to-include-text" : {
       "value" : "Quali informazioni includere",
       "note" : "Text for what information to include label text"
-    },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Indica la città, il paese, lo stato di condanna, la data, la natura del reato e le informazioni sulla sentenza",
-      "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caratteri inseriti (max {recommendedCharacterCount} caratteri)",
@@ -1465,7 +1465,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Nessuna parte della valutazione è cronometrata</b>: puoi lavorare secondo i tuoi ritmi. Tutte le sezioni di questa valutazione:",
+      "value" : "Tutte le sezioni di questa valutazione:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -1651,6 +1651,10 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, chatta con noi all'indirizzo www.amazon.com/applicationhelp per ricevere assistenza.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Fai clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>qui</a> per avere un elenco completo dei documenti accettabili.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Se hai una disabilità e ritieni di aver bisogno di una modifica del processo di reclutamento di Amazon, contattaci per discuterne al numero 0808 164 9427 o via e-mail all'indirizzo myapplication@amazon.co.uk",
@@ -2129,7 +2133,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Fornisci i dettagli della condanna. (I caratteri speciali validi sono -!/,.()#?)",
+      "value" : "Inserisci i dettagli della condanna usando solo i seguenti caratteri speciali (-!/,.()#?). Scrivi solo un paragrafo e non premere invio durante la digitazione.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
@@ -2599,6 +2603,10 @@
     "BB-Kondo-ConsentPage-flyout-uk-right-to-work-document-item-biometric-residence-permit-text" : {
       "value" : "Permesso di soggiorno biometrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
+    },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Per ulteriori informazioni e dettagli su tutti i documenti accettabili sul diritto al lavoro, consulta la nostra <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Guida all'autorizzazione al lavoro dei lavoratori dipendenti nel Regno Unito</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
     },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Hai almeno 18 anni.",

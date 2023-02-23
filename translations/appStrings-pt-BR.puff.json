@@ -660,10 +660,6 @@
       "value" : "Quais informações incluir",
       "note" : "Text for what information to include label text"
     },
-    "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "Informe a cidade, país, estado de condenação, data, natureza do delito, juntamente com informações de condenação",
-      "note" : "Text to Criminal record conviction details label text"
-    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caracteres inseridos (máximo de {recommendedCharacterCount} caracteres)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1464,10 +1460,6 @@
       "value" : "Na Amazon, celebramos a diversidade da nossa força de trabalho e as diversas formas como trabalhamos. Se você for uma pessoa com deficiência e precisar de atendimento especial durante o processo de contratação, inclusive na avaliação, acesse o Atendimento especial da Amazon em <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
-    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>Nenhuma parte da avaliação é cronometrada</b> - você pode fazer no seu próprio ritmo. Todas as seções desta avaliação:",
-      "note" : "Text for the assessment pace and sections of the assessments list header text"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "São otimizados para os seguintes leitores de tela: VoiceOver (Mac) e NVDA (Windows) no Firefox, Chrome e Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2127,10 +2119,6 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Marque a caixa para continuar.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
-    },
-    "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "Forneça os detalhes da condenação. (Os caracteres especiais válidos são -!/,.()#?)",
-      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

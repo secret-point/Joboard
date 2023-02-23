@@ -160,6 +160,10 @@
       "value" : "అవసరమైన పత్రాలను పూర్తి చేయండి",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "అవసరమైన సమాచారాన్ని నమోదు చేయండి",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ షెడ్యూల్ చేయండి",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -661,7 +665,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "నగరం, దేశం, నేరారోపణ జరిగిన రాష్ట్రం, తేదీ, నేరం యొక్క స్వభావం, శిక్షా సమాచారంతో పాటు అందించండి",
+      "value" : "దయచేసి నేరారోపణ చేసిన రాష్ట్రం మరియు కౌంటీని అందించండి. తేదీ, నేరం యొక్క స్వభావం మరియు శిక్షా సమాచారాన్ని కూడా చేర్చండి.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(ఒక పేరా మాత్రమే వ్రాయండి మరియు టైప్ చేసేటప్పుడు ఎంటర్ నొక్కకండి.)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1473,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>అసెస్‌మెంట్‌లోని ఏ భాగమూ సమయానుకూలంగా లేదు</b>- మీరు మీ స్వంత వేగంతో పని చేయవచ్చు. ఈ అసెస్‌మెంట్‌లోని అన్ని విభాగాలు:",
+      "value" : "ఈ అసెస్‌మెంట్‌లోని అన్ని విభాగాలు:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2137,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "దయచేసి నేరారోపణ వివరాలను అందించండి. (చెల్లుబాటు అయ్యే ప్రత్యేక అక్షరాలు -!/,.()#?)",
+      "value" : "దయచేసి ఈ క్రింది ప్రత్యేక అక్షరాలను మాత్రమే ఉపయోగించి కన్విక్షన్‌ వివరాలను నమోదు చేయండి (-! /,. () #?). ఒక పేరా మాత్రమే వ్రాయండి మరియు టైప్ చేస్తున్నప్పుడు ఎంటర్ నొక్కకండి.",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {

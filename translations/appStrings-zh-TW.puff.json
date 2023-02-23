@@ -661,7 +661,11 @@
       "note" : "Text for what information to include label text"
     },
     "BB-BGC-criminal-record-conviction-detail-label-text" : {
-      "value" : "提供城市、國家/地區、定罪狀態、日期、犯罪性質以及判刑資訊",
+      "value" : "請提供定罪的州和縣。還包括日期、犯罪性質和判刑資訊。",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(只寫一個段落，輸入時不要按 Enter 鍵。)",
       "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
@@ -1465,7 +1469,7 @@
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
-      "value" : "<b>評估的任何部分都不計時</b> – 您可以按照自己的節奏完成。此評估的所有部分：",
+      "value" : "此評估的所有部分：",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
@@ -2129,7 +2133,7 @@
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
     "BB-bgc-ConvictionDetail-error-message-fix" : {
-      "value" : "請提供定罪詳細內容。(有效的特殊字元為 -!/,.()#?）",
+      "value" : "請僅使用以下特殊字元 (- ! / , . () # ?) 輸入定罪詳細內容。只寫一個段落，輸入時請勿按 Enter 鍵。",
       "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
