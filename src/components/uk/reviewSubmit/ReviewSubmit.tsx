@@ -39,12 +39,10 @@ import {
   createUpdateApplicationRequest,
   formatDate,
   getApplicationWithdrawalReason,
-  getCountryCode,
-  getCountryMappedFeatureFlag,
+  getFeatureFlagValue,
   getLocale,
   goToCandidateDashboard,
   initiateScheduleDetailOnPageLoad,
-  isBrokenApplicationFeatureEnabled
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -137,10 +135,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       scheduleId,
       scheduleDetails: JSON.stringify(scheduleDetail)
     };
-    
-    const brokenApplicationFeatureFlagCountryMap = getCountryMappedFeatureFlag(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
-    const countryCode = getCountryCode();
-    const isFeatureEnabled = isBrokenApplicationFeatureEnabled(jobId, countryCode, brokenApplicationFeatureFlagCountryMap);
+
+    const isFeatureEnabled = getFeatureFlagValue(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
     if (isFeatureEnabled) {
       onCompleteTaskHelper(applicationData);
     } else {
