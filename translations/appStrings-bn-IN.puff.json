@@ -160,6 +160,10 @@
       "value" : "প্রয়োজনীয় নথি সম্পূর্ণ করুন",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "প্রয়োজনীয় তথ্য লিখুন",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "প্রাক-নিয়োগ সাক্ষাৎকারের সময়সূচী নির্ধারণ করুন",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1656,6 +1660,50 @@
       "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, সহায়তার জন্য দয়া করে www.amazon.com/applicationhelp এ আমাদের সাথে কথা বলুন।",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যিনি রেফার করেছেন তার লগইন আইডি প্রদান করুন (শুধুমাত্র ছোট হাতের অক্ষর)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "অনুগ্রহ করে আপনাকে যে রেফার করেছে তার লগইন আইডি প্রদান করুন।",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ব্যবহারকারী আইডিতে শুধুমাত্র ছোটহাতের অক্ষর থাকা উচিত এবং অন্তত 4 অক্ষর দীর্ঘ হওয়া উচিত।",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "অনুগ্রহ করে রেফারেল বিবরণ প্রদান করুন (প্রযোজ্য হলে)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "আপনাকে কি কোনও বর্তমান Amazon এর কর্মচারী রেফার করেছেন?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "হ্যাঁ",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "না",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "আপনার শিফটের পছন্দ জমা দেওয়ার জন্য ধন্যবাদ!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "আমরা আপনার নির্বাচিত পছন্দগুলির সাথে আপনার জন্য কাজ করে এমন একটি শিফট খুঁজে পাওয়ার সাথে সাথেই আপনার সাথে যোগাযোগ করবো।",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "আপনার প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের পছন্দ জমা দেওয়ার জন্য ধন্যবাদ!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "আমরা আপনার নির্বাচিত পছন্দগুলির সাথে আপনার জন্য কাজ করে এমন একটি প্রাক-নিয়োগ অ্যাপয়েন্টমেন্ট খুঁজে পাওয়ার সাথে সাথেই আমরা আপনার সাথে যোগাযোগ করব ।",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "গ্রহণযোগ্য ডকুমেন্টের সম্পূর্ণ তালিকার জন্য <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>এখানে</a> ক্লিক করুন।",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2860,6 +2908,22 @@
       "value" : "আপনার প্রাক-হায়ার করা ইভেন্ট পছন্দগুলি নির্বাচন করুন",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের পছন্দসমূহ",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "পছন্দের শহর",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "পছন্দের তারিখ(গুলি)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "পছন্দের সময়(গুলি)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "আপনার একটি সক্রিয় চাকরির আবেদন আছে",
       "note" : "Text for consent existing application notice title"
@@ -3011,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "আপনার শিফটের পছন্দগুলি জমা দিন",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "আবেদন করার জন্য আপনাকে ধন্যবাদ!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "আমরা বর্তমানে আপনার আবেদনটি মূল্যায়ন করছি এবং শীঘ্রই আপনি যে ইমেল ঠিকানাটি দিয়েছেন তা ব্যবহার করে আপনার সাথে যোগাযোগ করব।",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

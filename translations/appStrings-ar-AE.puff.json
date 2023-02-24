@@ -664,6 +664,14 @@
       "value" : "المعلومات التي يجب تضمينها",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "يُرجى تقديم ولاية ومقاطعة الإدانة. قم أيضًا بتضمين تاريخ وطبيعة الجريمة وتفاصيل الحكم والعقوبة.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(اكتب فقرة واحدة فقط ولا تضغط على Enter أثناء الكتابة.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount}عدد الرموز التي تم إدخالها (الحد الأقصى {recommendedCharacterCount} رموز/رمزًا)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1680,6 +1688,26 @@
       "value" : "لا",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "شكرًا لك على إرسال تفضيلات مناوبة عملك.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "سنتصل بك بمجرد أن نجد مناوبة العمل التي تناسبك وفقًا للتفضيلات التي اخترتها.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "شكرًا لك على إرسال تفضيلاتك فيما يخص موعد ما قبل التوظيف.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "سنتصل بك بمجرد أن نجد موعد ما قبل التوظيف الذي يناسبك وفقًا للتفضيلات التي اخترتها.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "انقر <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>هنا</a> للحصول على قائمة كاملة بالمستندات المقبولة.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "إذا كنت تعاني من إعاقة وتعتقد أنك قد تحتاج إلى تعديل عملية التوظيف في أمازون، يُرجى الاتصال بنا للمناقشة على الرقم 0808 164 9427 أو عبر البريد الإلكتروني على myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2155,6 +2183,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "يرجى وضع علامة تحديد بالمربع للمتابعة.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "يُرجى إدخال تفاصيل الإدانة باستخدام الرموز الخاصة التالية فقط (-!/,.()#?). اكتب فقرة واحدة فقط ولا تضغط على Enter أثناء الكتابة.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- ألاباما",
@@ -2876,6 +2908,22 @@
       "value" : "تحديد تفضيلات فعالية ما قبل التوظيف",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "تفضيلات موعد ما قبل التوظيف",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "المدينة المفضلة",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "التاريخ (التواريخ) المفضل(ة)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "الوقت (الأوقات) المفضل(ة)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "لديك طلب وظيفة فعّال",
       "note" : "Text for consent existing application notice title"
@@ -3027,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "أرسل تفضيلات المناوبة الخاصة بك",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "شكرًا لك على التقديم.",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "نعمل حاليًا على تقييم طلبك وسنتواصل معك على عنوان البريد الإلكتروني الذي قدمته قريبًا.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "رجوع إلى لوحة السجل",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

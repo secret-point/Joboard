@@ -160,6 +160,10 @@
       "value" : "Udfyld nødvendige dokumenter",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Indtast de påkrævede oplysninger",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Book aftale før ansættelse",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1684,6 +1688,26 @@
       "value" : "Nej",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Tak fordi du indsendte dine skiftpræferencer!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Vi kontakter dig, så snart vi finder et skift, der fungerer for dig med dine valgte præferencer.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Tak, fordi du indsendte dine præferencer for før-ansættelsessamtale!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Vi kontakter dig, så snart vi finder en aftale for før-ansættelsessamtale, der fungerer for dig med dine valgte præferencer.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klik <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>her</a> for en komplet liste over acceptable dokumenter.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Hvis du har et handicap og mener, at du måske har brug for en tilpasning af Amazons rekrutteringsproces, bedes du kontakte os på 0808 164 9427 eller via e-mail på myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2632,6 +2656,10 @@
       "value" : "Opholdstilladelse med biometri",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Du kan finde mere information og detaljer om alle acceptable arbejdstilladelsesdokumenter i vores <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Vejledning om arbejdstilladelse for UK medarbejdere</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du er 18 år eller derover.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2880,6 +2908,22 @@
       "value" : "Vælg dine præferencer for arrangement forud for ansættelse",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Præferencer for før-ansættelsessamtale",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Foretrukken by",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Foretruken (ne) dato (er)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Foretruken (ne) tidspunkt (er)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Du har en aktiv jobansøgning",
       "note" : "Text for consent existing application notice title"
@@ -3031,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Indsend dine skift-præferencer",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Tak for din ansøgning!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Vi evaluerer i øjeblikket din ansøgning og kontakter dig snart ved brug af den mail-adresse, du har angivet.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Tilbage til oversigt",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

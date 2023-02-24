@@ -660,6 +660,14 @@
       "value" : "ಯಾವ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸಬೇಕು",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "ದಯವಿಟ್ಟು ಅಪರಾಧ ನಿರ್ಣಯ ಮಾಡಲಾದ ರಾಜ್ಯ ಮತ್ತು ಕೌಂಟಿಯ ಹೆಸರನ್ನು ಒದಗಿಸಿ. ದಿನಾಂಕ, ಅಪರಾಧದ ಸ್ವರೂಪ ಮತ್ತು ಶಿಕ್ಷೆಯ ಮಾಹಿತಿಯನ್ನು ಸಹ ನೀಡಿರಿ.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(ಕೇವಲ ಒಂದು ಪ್ಯಾರಾಗ್ರಾಫ್ ಅನ್ನು ಮಾತ್ರ ಬರೆಯಿರಿ ಮತ್ತು ಟೈಪ್ ಮಾಡುವಾಗ ಎಂಟರ್ ಒತ್ತಬೇಡಿ.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಲಾಗಿದೆ (ಗರಿಷ್ಠ {recommendedCharacterCount} ಅಕ್ಷರಗಳು)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Amazon ನಲ್ಲಿ, ನಾವು ನಮ್ಮ ಕಾರ್ಯಪಡೆಯ ವೈವಿಧ್ಯತೆ ಮತ್ತು ನಾವು ಕೆಲಸ ಮಾಡುವ ವೈವಿಧ್ಯಮಯ ವಿಧಾನಗಳನ್ನು ಆಚರಿಸುತ್ತೇವೆ. ನೀವು ಅಂಗವ್ಯೆಕಲ್ಯ ಹೊಂದಿದ್ದರೆ ಮತ್ತು ಮೌಲ್ಯಮಾಪನವನ್ನು ಒಳಗೊಂಡಂತೆ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯ ಸಂದರ್ಭದಲ್ಲಿ ವಸತಿ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ, <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon ವಸತಿಗೆ ಭೇಟಿ ನೀಡಿ.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "ಈ ಮೌಲ್ಯಮಾಪನದ ಎಲ್ಲಾ ವಿಭಾಗಗಳು:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "ಕೆಳಗಿನ ಸ್ಕ್ರೀನ್ ರೀಡರ್‌ಗಳಿಗಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ: VoiceOver (Mac) ಮತ್ತು NVDA (Windows), Firefox, Chrome, ಮತ್ತು Edge (Windows) ನಲ್ಲಿ.",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,10 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "ಇಲ್ಲ",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "ಸ್ವೀಕಾರಾರ್ಹ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿಗಾಗಿ <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>ಇಲ್ಲಿ</a> ಕ್ಲಿಕ್ ಮಾಡಿ.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "ನೀವು ಅಂಗವೈಕಲ್ಯವನ್ನು ಹೊಂದಿದ್ದರೆ ಮತ್ತು Amazon ನ ನೇಮಕಾತಿ ಪ್ರಕ್ರಿಯೆಯ ಜೊತೆಗೆ ಹೊಂದಿಕೊಳ್ಳುವ ಅಗತ್ಯವಿದೆ ಎಂದು ಪರಿಗಣಿಸಿದರೆ, 0808 164 9427 ನಲ್ಲಿ ಅಥವಾ myapplication@amazon.co.uk ನಲ್ಲಿ ಇಮೇಲ್ ಮೂಲಕ ಚರ್ಚಿಸಲು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
@@ -2148,6 +2164,10 @@
       "value" : "ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ಪೆಟ್ಟಿಗೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "ದಯವಿಟ್ಟು ಕೆಳಗಿನ ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿಕೊಂಡು ಅಪರಾಧ ನಿರ್ಣಯದ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ (-! /,. () #?). ಕೇವಲ ಒಂದು ಪ್ಯಾರಾಗ್ರಾಫ್ ಅನ್ನು ಮಾತ್ರ ಬರೆಯಿರಿ ಮತ್ತು ಟೈಪ್ ಮಾಡುವಾಗ ಎಂಟರ್ ಒತ್ತಬೇಡಿ.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- ಅಲಬಾಮಾ",
       "note" : "Text for Alabama state"
@@ -2616,6 +2636,10 @@
       "value" : "ಬಯೋಮೆಟ್ರಿಕ್ ನಿವಾಸ ಪರವಾನಗಿ",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "ಎಲ್ಲಾ ಸ್ವೀಕಾರಾರ್ಹ ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕಿಗೆ ಸಂಬಂಧಿಸಿದ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳ ಕುರಿತ ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಮತ್ತು ವಿವರಗಳಿಗಾಗಿ, ನಮ್ಮ <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK ಉದ್ಯೋಗಿ ಕೆಲಸದ ಅಧಿಕಾರ ನೀಡುವಿಕೆ ಮಾರ್ಗದರ್ಶಿ</a>ಯನ್ನು ನೋಡಿ",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "ನೀವು 18 ವರ್ಷ ಅಥವಾ ಮೇಲ್ಪಟ್ಟವರಾಗಿದ್ದೀರಿ.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2864,6 +2888,22 @@
       "value" : "ನಿಮ್ಮ ಪ್ರಿ-ಹೈರ್ ಈವೆಂಟ್ ಆದ್ಯತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "ಪ್ರೀ-ಹೈರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಆದ್ಯತೆಗಳು",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "ಆದ್ಯತೆಯ ನಗರ",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "ಆದ್ಯತೆಯ ದಿನಾಂಕ(ಗಳು)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "ಆದ್ಯತೆಯ ಸಮಯ(ಗಳು)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "ನೀವು ಒಂದು ಸಕ್ರಿಯ ಉದ್ಯೋಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೊಂದಿದ್ದೀರಿ",
       "note" : "Text for consent existing application notice title"
@@ -3015,6 +3055,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "ನಿಮ್ಮ ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳನ್ನು ಸಲ್ಲಿಸಿ",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "ಅರ್ಜಿ ಸಲ್ಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "ನಾವು ಪ್ರಸ್ತುತ ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡುತ್ತಿದ್ದೇವೆ ಮತ್ತು ನೀವು ಒದಗಿಸಿದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಬಳಸಿಕೊಂಡು ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ಡ್ಯಾಶ್‍‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

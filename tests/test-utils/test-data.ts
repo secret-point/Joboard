@@ -27,6 +27,7 @@ import {
   Candidate,
   DayHoursFilter,
   Job,
+  NHEPreferences,
   NHETimeSlot,
   NheTimeSlotLocation,
   NHETimeSlotUK,
@@ -756,6 +757,13 @@ export const TestPossibleNheDates: PossibleNhePreferenceConfig = {
       checked: false
     }
   ]
+};
+
+export const TestNhePreference: NHEPreferences = {
+  preferredNHEDates: ["Thursday, Mar 9th 2023", "Thursday, Mar 23rd 2023"],
+  preferredNHETimeIntervals: ["6:00 AM - 10:00 AM", "10:00 AM - 2:00 PM", "2:00 PM - 6:00 PM", "6:00 PM - 10:00 PM"],
+  preferenceSelectedOn: "2023-02-22T04:02:02.902Z",
+  locations: ["Virtual"],
 };
 
 export const TEST_NHE_STATE: NheState = {

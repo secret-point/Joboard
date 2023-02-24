@@ -660,6 +660,14 @@
       "value" : "Die folgenden Informationen müssen enthalten sein",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Bitte gib das Bundesland und den Bezirk der Verurteilung an. Gib auch das Datum, die Art der Straftat und das Strafmaß an.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Schreibe nur einen Absatz und drücke beim Tippen nicht die Eingabetaste).",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} Zeichen eingegeben (max. {recommendedCharacterCount} Zeichen)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Bei Amazon feiern wir die Vielfalt unserer Belegschaft und vielfältige Arbeitsweisen. Wenn du während des Einstellungsverfahrens, einschließlich der Beurteilung, aufgrund einer Behinderung besondere Unterstützung erforderst, rufe bitte <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation auf.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Alle Abschnitte dieser Beurteilung:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Sind für die folgenden Screenreader optimiert: VoiceOver (Mac) und NVDA (Windows) auf Firefox, Chrome und Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "Nein",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Vielen Dank, dass du uns deine Schichtpräferenzen übermittelt hast!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Wir werden uns mit dir in Verbindung setzen, sobald wir eine Schicht gefunden haben, die deinen Einstellungen entspricht.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Vielen Dank, dass du uns deine Präferenzen für einen Termin vor der Einstellung übermittelt hast!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Wir werden uns mit dir in Verbindung setzen, sobald wir einen Termin vor der Einstellung gefunden haben, der den von dir gewählten Einstellungen entspricht.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klicke <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>hier</a>, um eine vollständige Liste der zulässigen Dokumente anzuzeigen.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Wenn du eine Behinderung hast und der Meinung bist, dass du möglicherweise eine Anpassung des Einstellungsverfahrens von Amazon benötigst, kontaktiere uns bitte unter 0808 164 9427 oder per E-Mail an myapplication@amazon.co.uk, um dies zu besprechen.",
@@ -2147,6 +2179,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Bitte aktiviere das Kontrollkästchen, um fortzufahren.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Bitte gib die Verurteilungsdaten nur mit den folgenden Sonderzeichen ein (-!/,.()#?). Schreibe nur einen Absatz und drücke beim Tippen nicht die Eingabetaste.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL — Alabama",
@@ -2868,6 +2904,22 @@
       "value" : "Wähle deine Veranstaltungspräferenzen vor der Einstellung",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Präferenzen für einen Termin vor der Einstellung",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Bevorzugter Ort",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Bevorzugtes Datum/bevorzugte Daten",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Bevorzugte Uhrzeit(en)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Du hast eine aktive Bewerbung",
       "note" : "Text for consent existing application notice title"
@@ -3019,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Deine Schichtpräferenzen einreichen",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Vielen Dank für deine Bewerbung!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Wir prüfen derzeit deine Bewerbung und werden dich in Kürze unter der von dir angegebenen E-Mail-Adresse kontaktieren.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Zurück zum Dashboard",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

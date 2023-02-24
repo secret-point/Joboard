@@ -660,6 +660,14 @@
       "value" : "What Information to include",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Please provide the emirate and district of conviction. Also include the date, nature of the offense and sentencing information.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Only write one paragraph and do not press enter while typing.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} characters entered (max {recommendedCharacterCount} characters)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "All sections of this assessment:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Are optimised for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome and Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,22 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "No",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Thank you for submitting your shift preferences!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "We'll contact you as soon as we find a shift that works for you with your chosen preferences.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Thank you for submitting your pre-hire appointment preferences!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "We'll contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences.",
+      "note" : "Text for the thank you page with nhe preference title text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "If you have a disability and consider that you may require an adjustment to Amazon's recruitment process, please contact us to discuss at 0808 164 9427 or by email at myapplication@amazon.co.uk",
@@ -2147,6 +2175,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Please check the box to proceed.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Please enter the conviction details using only the following special characters (-!/,.()#?). Only write one paragraph and do not press enter while typing.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",

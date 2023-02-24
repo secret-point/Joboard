@@ -660,6 +660,14 @@
       "value" : "Les informations à inclure",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Veuillez indiquer l’État et la région de condamnation. Incluez également la date, la nature de l’infraction et les informations sur la peine.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Écrivez un seul paragraphe et n’appuyez pas sur Entrée pendant la saisie.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caractères saisis (maximum {recommendedCharacterCount} caractères)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Chez Amazon, nous célébrons la diversité de notre personnel de nos méthodes de travail. Si vous êtes en situation de handicap et avez besoin d'un aménagement au cours du processus de recrutement, y compris lors de l'évaluation, rendez-vous sur <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Toutes les sections de cette évaluation :",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Sont optimisés pour les lecteurs d'écran suivants : VoiceOver (Mac) et NVDA (Windows) sur Firefox, Chrome et Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "Non",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Merci d'avoir soumis vos préférences en matière de période de travail.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Nous vous contacterons dès que nous aurons trouvé une période de travail qui vous convient et qui correspond à vos préférences.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Merci d'avoir soumis vos préférences en matière de rendez-vous de pré-embauche.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Nous vous contacterons dès que nous aurons trouvé un rendez-vous de pré-embauche qui vous convient et qui correspond à vos préférences.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Cliquez <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>ici</a> pour consulter la liste complète des documents acceptés.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si vous souffrez d’un handicap et pensez qu’une adaptation du processus de recrutement d'Amazon est nécessaire, contactez-nous par téléphone au 0808 164 9427 ou par e-mail à l'adresse myapplication@amazon.co.uk",
@@ -2147,6 +2179,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Cochez la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Saisissez les détails de la condamnation en utilisant uniquement les caractères spéciaux suivants (- ! /,. () # ?). Écrivez un seul paragraphe et n’appuyez pas sur Entrée pendant la saisie.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",
@@ -2863,6 +2899,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Sélectionnez vos préférences en matière d'événements de pré-recrutement",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Préférences relatives au rendez-vous avant l'embauche",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Ville préférée",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Date(s) préférée(s)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Heure(s) préférée(s)",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Vous avez une candidature active",

@@ -660,6 +660,14 @@
       "value" : "Les informations à inclure",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Veuillez indiquer l’État et la région de condamnation. Incluez également la date, la nature de l’infraction et les informations sur la peine.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Écrivez un seul paragraphe et n’appuyez pas sur Entrée pendant la saisie.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caractères saisis (maximum {recommendedCharacterCount} caractères)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Chez Amazon, nous célébrons la diversité de notre personnel et de nos méthodes de travail. Si vous souffrez d’un handicap et que vous avez besoin que des mesures d’aménagement soient prises pendant le processus de recrutement, y compris l’évaluation, rendez-vous sur <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Toutes les sections de cette évaluation :",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Sont optimisés pour les lecteurs d’écran suivants : VoiceOver (Mac) et NVDA (Windows) sur Firefox, Chrome et Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -2147,6 +2159,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Cochez la case pour continuer.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Saisissez les détails de la condamnation en utilisant uniquement les caractères spéciaux suivants (- ! /,. () # ?). Écrivez un seul paragraphe et n’appuyez pas sur Entrée pendant la saisie.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",
@@ -2863,6 +2879,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Sélectionnez vos préférences en matière d’événements préalables à l’embauche",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Préférences relatives au rendez-vous de pré-recrutement",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Ville préférée",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Date(s) préférée(s)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Heure(s) préférée(s)",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Vous avez une candidature active",

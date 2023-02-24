@@ -33,6 +33,7 @@ import {
 import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../../common/DebouncedButton";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import NhePreferenceReview from "../../common/nhe/NhePreferenceReview";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -166,56 +167,71 @@ export const ThankYou = (props: MapStateToProps) => {
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
 
-      { !scheduleDetail && applicationData?.shiftPreference ? (
+      {/* when shift preference selected and no shift selected, https://sim.amazon.com/issues/Kondo_QA_Issue-51 */}
+      { !scheduleDetail && applicationData?.shiftPreference && (
         <Col gridGap="S300">
           <Text fontSize="T400">
-            {t("BB-ThankYou-with-shift-preference-thank-you-title-text", "Thank you for submitting your shift preferences!")}
+            {t("BB-Kondo-ThankYou-with-shift-preference-title-text", "Thank you for submitting your shift preferences!")}
           </Text>
           <Text>
-            {t("BB-kondo-thankyou-with-preference-content-text", "We'll contact you as soon as we find a shift that works for you with your chosen preferences.")}
+            {t("BB-Kondo-ThankYou-with-shift-preference-content-text", "We'll contact you as soon as we find a shift that works for you with your chosen preferences.")}
           </Text>
         </Col>
-      )
-        :
-        (
-          <Col gridGap="S300">
-            <Text fontSize="T400">
-              {t("BB-ThankYou-thank-you-title-text", "Thank you for applying to Amazon!")}
-            </Text>
-            <Text fontSize="T200">
-              {t("BB-Kondo-ThankYou-description-text", "You will receive an email from us providing further information on the next steps in your application. We look forward to seeing you at your pre-hire appointment.")}
-            </Text>
+      )}
 
-            <Card width="100%" padding="S300" isElevated>
-              <Col width="100%" padding="S300" gridGap={15}>
-                {renderNheAppointmentDetails()}
+      {/* when shift is selected and nhePreference selected */}
+      { scheduleDetail && applicationData?.nhePreference && !applicationData?.nheAppointment && (
+        <Col gridGap="S300">
+          <Text fontSize="T400">
+            {t("BB-Kondo-ThankYou-with-nhe-preference-title-text", "Thank you for submitting your pre-hire appointment preferences!")}
+          </Text>
+          <Text fontSize="T200">
+            {t("BB-Kondo-ThankYou-with-nhe-preference-content-text", "We'll contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences.")}
+          </Text>
+          <NhePreferenceReview nhePreference={applicationData?.nhePreference} />
+        </Col>
+      )}
 
-                <Row className="border-top-row">
-                  <WithFlyout renderFlyout={renderFlyout}>
-                    {({ open }) => (
-                      <Col alignItems="flex-start">
-                        <Text
-                          color={CommonColors.Blue70}
-                          style={{ cursor: "pointer" }}
-                          fontWeight="bold"
-                          onClick={open}
+      {/* when shift is selected and nhe appointment is selected */}
+      { scheduleDetail && applicationData?.nheAppointment && (
+        <Col gridGap="S300">
+          <Text fontSize="T400">
+            {t("BB-ThankYou-thank-you-title-text", "Thank you for applying to Amazon!")}
+          </Text>
+          <Text fontSize="T200">
+            {t("BB-Kondo-ThankYou-description-text", "You will receive an email from us providing further information on the next steps in your application. We look forward to seeing you at your pre-hire appointment.")}
+          </Text>
+
+          <Card width="100%" padding="S300" isElevated>
+            <Col width="100%" padding="S300" gridGap={15}>
+              {renderNheAppointmentDetails()}
+
+              <Row className="border-top-row">
+                <WithFlyout renderFlyout={renderFlyout}>
+                  {({ open }) => (
+                    <Col alignItems="flex-start">
+                      <Text
+                        color={CommonColors.Blue70}
+                        style={{ cursor: "pointer" }}
+                        fontWeight="bold"
+                        onClick={open}
+                      >
+                        <Row
+                          gridGap={8}
+                          alignItems="center"
                         >
-                          <Row
-                            gridGap={8}
-                            alignItems="center"
-                          >
-                            {t("BB-Kondo-ThankYou-more-details-text", "More details")}
-                            <IconArrowRight size={IconSize.ExtraSmall} aria-hidden />
-                          </Row>
-                        </Text>
-                      </Col>
-                    )}
-                  </WithFlyout>
-                </Row>
-              </Col>
-            </Card>
-          </Col>
-        )}
+                          {t("BB-Kondo-ThankYou-more-details-text", "More details")}
+                          <IconArrowRight size={IconSize.ExtraSmall} aria-hidden />
+                        </Row>
+                      </Text>
+                    </Col>
+                  )}
+                </WithFlyout>
+              </Row>
+            </Col>
+          </Card>
+        </Col>
+      )}
 
       <DebouncedButton variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
         {t("BB-Kondo-ThankYou-return-to-dashboard-text", "Return to dashboard")}

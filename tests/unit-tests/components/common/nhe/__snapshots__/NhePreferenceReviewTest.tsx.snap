@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NhePreference Review should match snapshot 1`] = `
+<Card
+  backgroundColor="neutral0"
+  display="flex"
+  isElevated={true}
+  padding="S300"
+  status="default"
+  width="100%"
+>
+  <Col
+    gridGap={15}
+    padding="S300"
+    width="100%"
+  >
+    <Text
+      font="primary"
+      fontSize="T400"
+      fontWeight="bold"
+      hyphens="none"
+    >
+      Pre-hire appointment preferences
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="bold"
+      hyphens="none"
+    >
+      Preferred city
+    </Text>
+    <ul
+      className="ul-list"
+    >
+      <li
+        key="Virtual"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Virtual
+        </Text>
+      </li>
+    </ul>
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="bold"
+      hyphens="none"
+    >
+      Preferred date(s)
+    </Text>
+    <ul
+      className="ul-list"
+    >
+      <li
+        key="Thursday, Mar 9th 2023"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Thursday, Mar 9th 2023
+        </Text>
+      </li>
+      <li
+        key="Thursday, Mar 23rd 2023"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          Thursday, Mar 23rd 2023
+        </Text>
+      </li>
+    </ul>
+    <Text
+      font="primary"
+      fontSize="T300"
+      fontWeight="bold"
+      hyphens="none"
+    >
+      Preferred time(s)
+    </Text>
+    <ul
+      className="ul-list"
+    >
+      <li
+        key="6:00 AM - 10:00 AM"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          6:00 AM - 10:00 AM
+        </Text>
+      </li>
+      <li
+        key="10:00 AM - 2:00 PM"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          10:00 AM - 2:00 PM
+        </Text>
+      </li>
+      <li
+        key="2:00 PM - 6:00 PM"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          2:00 PM - 6:00 PM
+        </Text>
+      </li>
+      <li
+        key="6:00 PM - 10:00 PM"
+      >
+        <Text
+          font="primary"
+          fontSize="T200"
+          hyphens="none"
+        >
+          6:00 PM - 10:00 PM
+        </Text>
+      </li>
+    </ul>
+  </Col>
+</Card>
+`;

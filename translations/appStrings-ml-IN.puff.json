@@ -664,6 +664,14 @@
       "value" : "എന്തൊക്കെ വിവരങ്ങളാണ് ഉൾപ്പെടുത്തേണ്ടത്",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "ശിക്ഷിക്കപ്പെട്ട സംസ്ഥാനവും കൗണ്ടിയും ദയവായി നൽകുക. തീയതി, കുറ്റകൃത്യത്തിന്റെ സ്വഭാവം, ശിക്ഷയുടെ വിവരങ്ങൾ എന്നിവയും ഉൾപ്പെടുത്തുക.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(ഒരു ഖണ്ഡിക മാത്രം എഴുതുക, ടൈപ്പ് ചെയ്യുമ്പോൾ എന്റർ അമർത്തരുത്.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} പ്രതീകങ്ങൾ നൽകി (പരമാവധി {recommendedCharacterCount} പ്രതീകങ്ങൾ)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1680,6 +1688,26 @@
       "value" : "ഇല്ല",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ സമർപ്പിച്ചതിന് നന്ദി!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത മുൻഗണനകളനുസരിച്ച് നിങ്ങൾക്ക് അനുയോജ്യമായ ഒരു ഷിഫ്റ്റ്‌ കണ്ടെത്തിയാലുടൻ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "നിങ്ങളുടെ നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്റ്മെന്റ് മുൻഗണനകൾ സമർപ്പിച്ചതിന് നന്ദി!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "നിങ്ങൾ തിരഞ്ഞെടുത്ത മുൻഗണനകളനുസരിച്ച് നിങ്ങൾക്ക് അനുയോജ്യമായ, നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്റ്മെന്റ് കണ്ടെത്തിയാലുടൻ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "സ്വീകാര്യമായ രേഖകളുടെ പൂർണ്ണമായ ലിസ്റ്റിനായി <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>ഇവിടെ</a> ക്ലിക്ക് ചെയ്യുക.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "നിങ്ങൾക്ക് ഒരു വൈകല്യമുണ്ടെങ്കിൽ, ഒപ്പം Amazon-ന്റെ റിക്രൂട്ട്മെന്റ് പ്രക്രിയയിലേക്ക് നിങ്ങൾക്ക് ഒരു ക്രമീകരണം ആവശ്യമായി വന്നേക്കാമെന്ന് കരുതുന്നുവെങ്കിൽ, 0808 164 9427 എന്ന നമ്പറിലോ myapplication@amazon.co.uk എന്ന ഇമെയിൽ വിലാസത്തിലോ ചർച്ച ചെയ്യാൻ ഞങ്ങളെ ബന്ധപ്പെടുക",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2156,6 +2184,10 @@
       "value" : "ദയവായി തുടരുന്നതിന് ബോക്‌സിൽ ശരി അടയാളപ്പെടുത്തുക.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "ഇനിപ്പറയുന്ന പ്രത്യേക പ്രതീകങ്ങൾ മാത്രം ഉപയോഗിച്ച് ശിക്ഷാനടപടിയുടെ വിശദാംശങ്ങൾ നൽകുക (-!/,.()#?). ഒരു ഖണ്ഡിക മാത്രം എഴുതുക, ടൈപ്പ് ചെയ്യുമ്പോൾ എന്റർ അമർത്തരുത്.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- അലബാമ",
       "note" : "Text for Alabama state"
@@ -2624,6 +2656,10 @@
       "value" : "ബയോമെട്രിക് റസിഡൻസ് പെർമിറ്റ്",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "സ്വീകാര്യമായ എല്ലാ തൊഴിൽ അവകാശ രേഖകളുടെയും കൂടുതൽ വിവരത്തിനും വിശദാംശങ്ങൾക്കും, ദയവായി ഞങ്ങളുടെ <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK എംപ്ലോയി വർക്ക് ഓതറൈസേഷൻ ഗൈഡ്</a> കാണുക",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "നിങ്ങൾ 18 വയസ്സോ അതിൽ കൂടുതലോ ആണ്.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2872,6 +2908,22 @@
       "value" : "നിങ്ങളുടെ നിയമനത്തിന് മുമ്പുള്ള ഇവന്റ് മുൻഗണനകൾ തിരഞ്ഞെടുക്കുക",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്‍മെന്‍റ് മുൻഗണനകൾ",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "തിരഞ്ഞെടുത്ത നഗരം",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "തിരഞ്ഞെടുത്ത തീയതി(കൾ)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "തിരഞ്ഞെടുത്ത സമയം(ങ്ങൾ)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "നിങ്ങൾക്ക് ഒരു സജീവമായ തൊഴിൽ അപേക്ഷ ഉണ്ട്",
       "note" : "Text for consent existing application notice title"
@@ -3023,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "നിങ്ങളുടെ ഷിഫ്റ്റ് മുൻഗണനകൾ സമർപ്പിക്കുക",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "അപേക്ഷിച്ചതിന് നന്ദി!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "ഞങ്ങൾ നിലവിൽ നിങ്ങളുടെ അപേക്ഷ വിലയിരുത്തുകയാണ്, നിങ്ങൾ നൽകിയ ഇമെയിൽ വിലാസം ഉപയോഗിച്ച് ഉടൻ നിങ്ങളെ ബന്ധപ്പെടും.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ഡാഷ് ബോർഡിലേക്ക് മടങ്ങുക",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

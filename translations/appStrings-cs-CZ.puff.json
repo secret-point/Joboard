@@ -660,6 +660,14 @@
       "value" : "Jaké informace zahrnout",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Uveďte prosím stát a okres odsouzení. Uveďte také datum, povahu trestného činu a informace o odsouzení.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Napište pouze jeden odstavec a během psaní nemačkejte Enter.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "Počet zadaných znaků: {characterCount} (max. počet znaků: {recommendedCharacterCount})",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1648,6 +1656,54 @@
       "value" : "Nepodařilo se nám ověřit přihlašovací ID Vaší doporučující osoby, napište nám na adrese www.amazon.com/applicationhelp a požádejte o pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Uveďte prosím své přihlašovací ID doporučující osoby (pouze malá písmena)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Uveďte prosím přihlašovací ID doporučující osoby.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "ID uživatele by mělo obsahovat pouze malá písmena a mělo by být alespoň 4 písmena dlouhé.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Uveďte prosím podrobnosti k doporučení (je-li relevantní)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Byli jste doporučeni stávajícím zaměstnancem společnosti Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Ano",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Ne",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Děkujeme Vám za odeslání předvoleb směn.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Jakmile najdeme směnu, která se bude shodovat s Vašimi vybranými předvolbami, budeme Vás kontaktovat.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Děkujeme Vám za odeslání předvoleb schůzky před přijetím.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Jakmile najdeme schůzku před přijetím, která se bude shodovat s Vašimi vybranými předvolbami, budeme Vás kontaktovat.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Pro zobrazení úplného seznamu přijatelných dokumentů klikněte <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>sem</a>.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Pokud máte zdravotní postižení a domníváte se, že můžete potřebovat přizpůsobení náborového procesu společnosti Amazon, kontaktujte nás a proberte to s námi na čísle 0808 164 9427 nebo e-mailem na adrese myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2596,6 +2652,10 @@
       "value" : "Biometrické povolení k pobytu",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Další informace a podrobnosti o všech přijatelných dokumentech týkajících se pracovního povolení najdete v našem <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>průvodci získáním pracovního povolení pro zaměstnání ve Spojeném království</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Je Vám 18 let nebo více.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2844,6 +2904,22 @@
       "value" : "Vyberte předvolby pro událost před přijetím",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Předvolby schůzky před přijetím",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Preferované město",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Preferované termíny",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Preferované časy",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Máte aktivní žádost o zaměstnání",
       "note" : "Text for consent existing application notice title"
@@ -2995,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Odešlete své preference ohledně směn",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Děkujeme za Vaši žádost!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "V současné době Vaši žádost vyhodnocujeme a brzy Vás budeme kontaktovat na Vámi zadanou e-mailovou adresu.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

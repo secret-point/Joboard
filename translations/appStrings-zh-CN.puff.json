@@ -160,6 +160,10 @@
       "value" : "完成所需文件",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "输入必填信息",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "安排入职前面谈",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -659,6 +663,14 @@
     "BB-BGC-criminal-record-what-information-to-include-text" : {
       "value" : "包含哪些信息",
       "note" : "Text for what information to include label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "请提供定罪的州和郡。还需要包括日期、犯罪性质和量刑信息。",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "（只写一个段落，输入时不要按回车键。）",
+      "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "已输入 {characterCount} 个字符（最多 {recommendedCharacterCount} 个字符）",
@@ -1460,6 +1472,10 @@
       "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要提供便利，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>亚马逊便利。</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "此评估的所有部分：",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "针对以下屏幕阅读器进行了优化：Firefox、Chrome 和 Edge（Windows）上的 VoiceOver（Mac）和 NVDA（Windows）。",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1687,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "否",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "感谢您提交您的班次首选项！",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "一旦找到符合您首选项的班次，我们会尽快与您联系。",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "感谢您提交您的入职前面谈预约时间首选项！",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "一旦找到符合您首选项的入职前面谈预约时间，我们会尽快与您联系。",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "点击<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>此处</a>查看可接受文档的完整列表。",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "如果您患有残疾，并且认为您可能需要对亚马逊招聘流程进行调整，请致电 0808-164-9427 或发送电子邮件至 myapplication@amazon.co.uk，以联系我们进行商讨",
@@ -2148,6 +2184,10 @@
       "value" : "请选中该复选框以继续。",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "在输入定罪详情时，请仅使用以下特殊字符 (-!/,.()#?)。请用一个段落进行描写，输入时请勿按回车键。",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL — 阿拉巴马州",
       "note" : "Text for Alabama state"
@@ -2616,6 +2656,10 @@
       "value" : "生物识别居留许可",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "有关所有可接受的工作权力文件的更多信息和详情，请参阅我们的<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>英国员工工作授权指南</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "您已年满 18 周岁。",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2864,6 +2908,22 @@
       "value" : "选择您的聘用前活动的首选项",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "入职前面谈预约首选项",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "首选城市",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "首选日期",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "首选次数",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "您有一项进行中的职位申请",
       "note" : "Text for consent existing application notice title"
@@ -3015,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "提交您的轮班偏好",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "感谢您的申请！",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "我们目前正在评估您的申请，并将很快通过您提供的电子邮件地址与您联系。",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "返回控制面板",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

@@ -160,6 +160,10 @@
       "value" : "Completa los documentos requeridos",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Introduce la información solicitada",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Programar cita previa a la contratación",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1656,6 +1660,50 @@
       "value" : "No hemos podido validar el identificador de inicio de sesión de la persona que te ha recomendado. Ponte en contacto con nosotros en el chat de www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Proporciona tu ID de inicio de sesión de referente (solo letras minúsculas)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Proporciona tu ID de inicio de sesión de referente.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "El ID de usuario debe contener solo letras minúsculas y tener al menos 4 letras.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Proporciona los detalles de la referencia (si procede)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "¿Te ha recomendado un empleado actual de Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Sí",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "No",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias de turno.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos un turno que se adapte a tus preferencias.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias de citas previas a la contratación.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos una cita previa a la contratación que se adapte a tus preferencias.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Haz clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de los documentos aceptables.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2608,6 +2656,10 @@
       "value" : "Permiso de residencia biométrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para obtener más información y detalles sobre todos los documentos aceptables sobre el derecho a trabajar, consulta nuestra <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización a trabajar para empleados de Reino Unido</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tienes 18 años o más.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2856,6 +2908,22 @@
       "value" : "Selecciona tus preferencias para el evento previo a la contratación",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferencias de citas previas a la contratación",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Ciudad preferida",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Fecha(s) preferida(s)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Horario(s) preferido(s)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Tienes una solicitud de empleo activa",
       "note" : "Text for consent existing application notice title"
@@ -3007,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Envía tus preferencias de turno",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Gracias por presentar tu solicitud.",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Estamos evaluando tu solicitud y en breve nos pondremos en contacto contigo a través de la dirección de correo electrónico que nos has proporcionado.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Volver al panel de control",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

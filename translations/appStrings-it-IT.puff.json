@@ -664,6 +664,14 @@
       "value" : "Quali informazioni includere",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Indica lo stato e la provincia della condanna. Includi anche la data, la natura del reato e le informazioni sulla condanna.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Scrivi solo un paragrafo e non premere Invio mentre scrivi.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caratteri inseriti (max {recommendedCharacterCount} caratteri)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1651,6 +1659,50 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Non siamo riusciti a convalidare l'ID di accesso del tuo referente, chatta con noi all'indirizzo www.amazon.com/applicationhelp per ricevere assistenza.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Fornisci il tuo ID di accesso del referente (solo lettere minuscole)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Fornisci l’ID di accesso del tuo referente.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "L'ID utente deve contenere solo lettere minuscole e deve essere lungo almeno 4 lettere.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Fornisci i dettagli del riferimento (se è il caso)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Sei stato segnalato da un attuale dipendente Amazon?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Sì",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "No",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Grazie per aver inviato le tue preferenze relative ai turni!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Ti contatteremo non appena troveremo un turno adatto a te con le preferenze che hai scelto.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Grazie per aver inviato le tue preferenze per gli appuntamenti pre-assunzione!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Ti contatteremo non appena troveremo un appuntamento pre-assunzione adatto a te con le preferenze che hai scelto.",
+      "note" : "Text for the thank you page with nhe preference title text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Fai clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>qui</a> per avere un elenco completo dei documenti accettabili.",
@@ -2856,6 +2908,22 @@
       "value" : "Seleziona le tue preferenze per l’evento pre-assunzione",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferenze per l’appuntamento pre-assunzione",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Città preferita",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Date preferite",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Orari preferiti",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Hai una candidatura attiva",
       "note" : "Text for consent existing application notice title"
@@ -3007,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Invia le tue preferenze relative ai turni",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Grazie per la tua candidatura!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Al momento stiamo valutando la tua candidatura e ti contatteremo al più presto mediante l'indirizzo e-mail che ci hai fornito.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Torna alla dashboard",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

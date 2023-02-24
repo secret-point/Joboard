@@ -1684,6 +1684,26 @@
       "value" : "否",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "感謝您提交輪班偏好設定！",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "一旦找到符合您所選偏好的班次，我們將盡快與您聯絡。",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "感謝您提交您的聘前約見偏好設定！",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "一旦找到符合您所選偏好的聘前約見，我們將盡快與您聯絡。",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "請點擊<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>此處</a>以取得可接受文件的完整清單。",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "如果您有殘疾，並認為 Amazon 的招聘流程可能需要調整，請致電 0808 164 9427 或傳送電子郵件至 myapplication@amazon.co.uk 聯絡我們進行討論",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2632,6 +2652,10 @@
       "value" : "生物識別居住證",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "有關所有可接受的工作權檔案的更多資訊和詳細內容，請參閱我們的 <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'> 英國僱員工作授權指南 </a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "您年滿 18 歲以上。",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2880,6 +2904,22 @@
       "value" : "選擇您的聘前活動偏好",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "聘前約見偏好",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "偏好城市",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "偏好日期",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "偏好時間",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "您有一個有效的工作申請",
       "note" : "Text for consent existing application notice title"
@@ -3031,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "提交您的輪班偏好",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "感謝您的申請！",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "我們目前正在評估您的申請，並將盡快使用您提供的電子郵件地址與您聯絡。",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "返回控制面板",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

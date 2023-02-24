@@ -660,6 +660,14 @@
       "value" : "Qué información incluir",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Proporciona el estado y la región de la condena. Incluye también la fecha, naturaleza del delito e información sobre la sentencia.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Solo escribe un párrafo y no presiones la tecla Enter mientras escribes).",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "Caracteres ingresados: {characterCount} (máximo de{recommendedCharacterCount} caracteres)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "En Amazon, honramos la diversidad de nuestra fuerza laboral y las diversas formas en que trabajamos. Si tienes una discapacidad y requieres algún ajuste durante el proceso de contratación, incluida la evaluación, visita <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Todas las secciones de esta evaluación:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Están optimizados para los siguientes lectores de pantalla: VoiceOver (Mac) y NVDA (Windows) en Firefox, Chrome y Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "No",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias de turno.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos un turno que funcione para ti con las preferencias que elegiste.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias para la cita previa a la contratación.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos una cita previa a la contratación que funcione para ti con las preferencias que elegiste.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Haz clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener la lista completa de la documentación aceptable.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes alguna discapacidad y consideras que quizá requieras una adaptación al proceso de reclutamiento de Amazon, contáctanos para que hablemos al respecto llamando al 0808 164 9427 o por correo electrónico a myapplication@amazon.co.uk",
@@ -2148,6 +2180,10 @@
       "value" : "Por favor, marca la casilla para continuar.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Ingresa los datos de la condena usando solo los siguientes caracteres especiales (-!/,.()#?). Solo escribe un párrafo y no presiones la tecla Enter mientras escribes.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",
       "note" : "Text for Alabama state"
@@ -2616,6 +2652,10 @@
       "value" : "Permiso de residencia biométrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para obtener más información y detalles de todos los documentos aceptables relacionados con el derecho a trabajar, consulta nuestra <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización de trabajo en UK para empleados</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tienes 18 años o más.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2863,6 +2903,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Selecciona tus preferencias de eventos previos a la contratación",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferencias de cita previa a la contratación",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Preferencia de ciudad",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Preferencia de fecha",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Preferencia horaria",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Tienes una solicitud de empleo activa",

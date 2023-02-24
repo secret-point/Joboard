@@ -160,6 +160,10 @@
       "value" : "필수 서류 작성",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "필수 정보 입력",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "채용 전 약속 시간 예약",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1656,6 +1660,50 @@
       "value" : "추천인의 로그인 ID를 확인할 수 없습니다. www.amazon.com/applicationhelp에서 채팅을 통해 도움을 받으시기 바랍니다.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "추천인 로그인 ID를 입력하세요(소문자만 사용).",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "추천인 로그인 ID를 입력하세요.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "사용자 ID는 소문자만 포함해야 하며 4자 이상이어야 합니다.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "추천 세부 정보를 제공하세요(해당하는 경우).",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "기존 아마존 직원으로부터 추천을 받았습니까?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "예",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "아니요",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "근무조 선호 사항을 제출해 주셔서 감사합니다!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "선택하신 선호 사항에 맞는 근무조를 찾으면 바로 연락드리겠습니다.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "채용 전 면담 선호 사항을 제출해 주셔서 감사합니다!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "선택하신 선호 사항에 맞는 채용 전 면담 시간을 찾으면 바로 연락드리겠습니다.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "양호 문서의 전체 목록을 보려면 <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>여기</a>를 클릭하세요.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2860,6 +2908,22 @@
       "value" : "채용 전 이벤트 선호 사항 선택",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "채용 전 면담 선호 사항",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "선호 도시",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "선호 날짜",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "선호 시간",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "활성 상태인 입사 지원서가 있습니다.",
       "note" : "Text for consent existing application notice title"
@@ -3011,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "교대 업무 선호 사항 제출",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "지원해 주셔서 감사합니다!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "현재 귀하의 지원서를 검토 중이며 제공해 주신 이메일 주소로 곧 연락드리겠습니다.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "대시보드로 돌아가기",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

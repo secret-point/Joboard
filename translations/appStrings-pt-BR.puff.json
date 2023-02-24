@@ -660,6 +660,14 @@
       "value" : "Quais informações incluir",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Forneça o estado e a região da condenação. Inclua também a data, a natureza da infração e as informações contidas na sentença.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Escreva apenas um parágrafo e não pressione enter enquanto digita.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} caracteres inseridos (máximo de {recommendedCharacterCount} caracteres)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Na Amazon, celebramos a diversidade da nossa força de trabalho e as diversas formas como trabalhamos. Se você for uma pessoa com deficiência e precisar de atendimento especial durante o processo de contratação, inclusive na avaliação, acesse o Atendimento especial da Amazon em <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Todas as seções desta avaliação:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "São otimizados para os seguintes leitores de tela: VoiceOver (Mac) e NVDA (Windows) no Firefox, Chrome e Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1671,6 +1683,22 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "Não",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Agradecemos por enviar suas preferências de turno.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Entraremos em contato com você assim que encontrarmos o melhor turno para você de acordo com as preferências escolhidas.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Agradecemos por enviar suas preferências de entrevista de pré-contratação.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Entraremos em contato com você assim que encontrarmos o melhor horário para você para a entrevista de pré-contratação, de acordo com as preferências escolhidas.",
+      "note" : "Text for the thank you page with nhe preference title text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Se você tem uma deficiência e considera que pode precisar de um ajuste no processo de recrutamento da Amazon, fale conosco a esse respeito no 0808 164 9427 ou pelo e-mail myapplication@amazon.co.uk",
@@ -2147,6 +2175,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Marque a caixa para continuar.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Insira os detalhes da condenação usando apenas os seguintes caracteres especiais (-!/,.()#?). Escreva apenas um parágrafo e não pressione enter enquanto digita.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL – Alabama",

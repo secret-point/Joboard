@@ -1468,6 +1468,10 @@
       "value" : "At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "All sections of this assessment:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Are optimised for the following screen readers: VoiceOver (Mac) and NVDA (Windows) on Firefox, Chrome, and Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1679,6 +1683,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "No",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Thank you for submitting your shift preferences!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "We will contact you as soon as we find a shift that works for you with your chosen preferences.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Thank you for submitting your pre-hire appointment preferences.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "We will contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Click <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "If you have a disability and consider that you may require an adjustment to Amazon's recruitment process, please contact us to discuss at 0808 164 9427 or by email at myapplication@amazon.co.uk",
@@ -2628,6 +2652,10 @@
       "value" : "Biometric Residence Permit",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "For more information and details about all acceptable Right to Work Documents, please see our <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK Employee Work Authorisation Guide</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "You are 18 years or above.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2875,6 +2903,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Select your pre-hire event preferences",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Pre-hire appointment preferences",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Preferred city",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Preferred date(s)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Preferred time(s)",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "You have an active job application",

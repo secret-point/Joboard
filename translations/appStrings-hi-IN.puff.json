@@ -660,6 +660,14 @@
       "value" : "कौन सी जानकारी शामिल करनी है",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "कृपया स्टेट और काउंटी कन्विक्शन प्रदान करें. इसके अलावा तारीख़, अपराध की प्रकृति और सज़ा की जानकारी शामिल करें.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(केवल एक पैराग्राफ़ लिखें और टाइप करते समय एंटर न दबाएं.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "डाले गए {characterCount} वर्ण (अधिकतम {recommendedCharacterCount} वर्ण)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -2151,6 +2159,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "कृपया आगे बढ़ने के लिए बॉक्स कि जांच करें.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "कृपया केवल निम्नलिखित विशेष वर्ण का इस्तेमाल करके कन्विक्शन डिटेल्स एंटर करें (-! /,. () #?). केवल एक पैराग्राफ़ लिखें और टाइप करते समय एंटर न दबाएं.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- अलबामा",

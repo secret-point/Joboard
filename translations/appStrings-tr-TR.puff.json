@@ -660,6 +660,14 @@
       "value" : "Hangi Bilgiler dahil edilmeli?",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Lütfen hüküm giydiğiniz ülke ve ili belirtin. Ayrıca tarihi, suçun niteliğini ve ceza bilgilerini de ekleyin.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Sadece bir paragraf yazın ve yazarken enter tuşuna basmayın.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} karakter girildi (maksimum {recommendedCharacterCount} karakter)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1648,6 +1656,50 @@
       "value" : "Yönlendiricinizin giriş kimliğini doğrulayamadık, lütfen yardım için www.amazon.com/applicationhelp adresinden bizimle sohbet edin.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "Lütfen yönlendiren giriş kimliğinizi girin (yalnızca küçük harfler)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "Lütfen yönlendiren giriş kimliğinizi sağlayın.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "Kullanıcı kimliği yalnızca küçük harflerden oluşmalı ve en az 4 harf uzunluğunda olmalıdır.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "Lütfen yönlendiren bilgilerini sağlayın (varsa)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Mevcut bir Amazon çalışanı tarafından mı yönlendirildiniz?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "Evet",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "Hayır",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Vardiya tercihlerinizi gönderdiğiniz için teşekkür ederiz.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Seçtiğiniz tercihlerle size uygun bir vardiya bulur bulmaz sizinle iletişim kuracağız.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "İşe alım öncesi randevu tercihlerinizi gönderdiğiniz için teşekkür ederiz.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Seçtiğiniz tercihlerle size uygun bir işe alım öncesi randevusu bulur bulmaz sizinle iletişim kuracağız.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Kabul edilebilir belgelerin tam listesi için <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>burayı</a> tıklayın.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2127,6 +2179,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Devam etmek için lütfen kutuyu işaretleyin.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Lütfen mahkumiyet ayrıntılarını yalnızca takip eden özel karakterleri kullanarak girin: (-!/,.()#?). Sadece bir paragraf yazın ve yazarken “enter”a basmayın.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : "AL -- Alabama",
@@ -2848,6 +2904,22 @@
       "value" : "İşe alım öncesi etkinlik tercihlerinizi seçin",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "İşe alım öncesi randevu tercihleri",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Tercih edilen şehir",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Tercih edilen tarih/tarihler",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Tercih edilen zaman/zamanlar",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Aktif bir iş başvurunuz var",
       "note" : "Text for consent existing application notice title"
@@ -2999,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Vardiya tercihlerinizi gönderin",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Başvurduğunuz için teşekkür ederiz.",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Şu anda başvurunuzu değerlendiriyoruz ve verdiğiniz e-posta adresini kullanarak yakında sizinle iletişime geçeceğiz.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Panele geri dön",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

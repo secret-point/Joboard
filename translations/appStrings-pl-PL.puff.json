@@ -160,6 +160,10 @@
       "value" : "Wypełnij wymagane dokumenty",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Wprowadź wymagane informacje",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Zaplanuj spotkanie przed zatrudnieniem",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -659,6 +663,14 @@
     "BB-BGC-criminal-record-what-information-to-include-text" : {
       "value" : "Jakie informacje należy uwzględnić",
       "note" : "Text for what information to include label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Podaj stan i hrabstwo, w którym doszło do skazania. Uwzględnij również datę, charakter przestępstwa i informacje o wyroku.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Napisz tylko jeden akapit i nie naciskaj klawisza Enter w trakcie pisania.)",
+      "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "Wpisane znaki: {characterCount} (maks. liczba znaków: {recommendedCharacterCount})",
@@ -1676,6 +1688,22 @@
       "value" : "Nie",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Dziękujemy za przesłanie preferencji dotyczących zmiany!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Skontaktujemy się, gdy znajdziemy zmianę odpowiadającą Twoim wybranym preferencjom.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Dziękujemy za przesłanie preferencji dotyczących spotkania poprzedzającego zatrudnienie!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Skontaktujemy się, gdy znajdziemy spotkanie poprzedzające zatrudnienie odpowiadające Twoim wybranym preferencjom.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Kliknij <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>tutaj</a>, aby uzyskać pełną listę dopuszczalnych dokumentów.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2628,6 +2656,10 @@
       "value" : "Biometryczne zezwolenie na pobyt",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Aby uzyskać więcej informacji i szczegółów na temat wszystkich dopuszczalnych dokumentów potwierdzających prawo do podjęcia pracy, zapoznaj się z naszym <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Przewodnikiem dotyczącym pozwolenia na pracę dla pracowników w Wielkiej Brytanii</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Masz 18 lat lub więcej.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2876,6 +2908,22 @@
       "value" : "Wybierz swoje preferencje dotyczące wydarzenia poprzedzającego zatrudnienie",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferencje dotyczące spotkania poprzedzającego zatrudnienie",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Preferowane miasto",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Preferowane daty",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Preferowane godziny",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Masz aktywne podanie o pracę",
       "note" : "Text for consent existing application notice title"
@@ -3027,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Prześlij swoje preferencje dotyczące zmian",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Dziękujemy za przesłanie zgłoszenia!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Obecnie oceniamy Twoje podanie i wkrótce skontaktujemy się z Tobą za pośrednictwem podanego adresu e-mail.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Powrót do panelu",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

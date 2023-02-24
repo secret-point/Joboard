@@ -660,6 +660,14 @@
       "value" : "कोणती माहिती समाविष्ट करावी",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "कृपया गुन्हा सिद्ध जिथे झाला ते राज्य आणि देश सांगा. तारीख, गुन्ह्याचे स्वरूप आणि शिक्षेची माहिती देखील समाविष्ट करा.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(केवळ एक परिच्छेद लिहा आणि टाइप करताना एंटर दाबू नका.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount}वर्ण प्रविष्ट केले (कमाल{recommendedCharacterCount} वर्ण)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1671,6 +1679,22 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "नाही",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "तुमची शिफ्ट प्राधान्ये सबमिट केल्याबद्दल धन्यवाद!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "तुम्ही निवडलेल्या प्राधान्यांसह तुमच्यासाठी योग्य शिफ्ट सापडताच आम्ही तुमच्याशी संपर्क साधू.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "तुमची प्री-हायर अपॉइंटमेंटची प्राधान्ये सबमिट केल्याबद्दल धन्यवाद!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "तुम्ही निवडलेल्या प्राधान्यांसह तुमच्यासाठी योग्य प्री-हायर अपॉइंटमेंट सापडताच आम्ही तुमच्याशी संपर्क साधू.",
+      "note" : "Text for the thank you page with nhe preference title text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "तुम्ही दिव्यांग असल्यास आणि तुम्हाला Amazon च्या भरती प्रक्रियेत समायोजन करण्याची आवश्यकता भासू शकते असे वाटल्यास, कृपया 0808 164 9427 वर किंवा ईमेलद्वारे myapplication@amazon.co.uk येथे चर्चा करण्यासाठी आमच्याशी संपर्क साधा",

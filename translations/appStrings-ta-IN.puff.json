@@ -160,6 +160,10 @@
       "value" : "தேவையான ஆவணங்களை நிறைவுசெய்யவும்",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "தேவையான தகவலை உள்ளிடவும்",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "முன்கூட்டிய பணியமர்த்தல் நியமனத்திற்குத் திட்டமிடுதல்",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -659,6 +663,14 @@
     "BB-BGC-criminal-record-what-information-to-include-text" : {
       "value" : "என்ன தகவலைச் சேர்க்க வேண்டும்",
       "note" : "Text for what information to include label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "குற்றவாளி எனத் தீர்ப்பளிக்கப்பட்ட மாநிலத்தையும் கவுண்டியையும் வழங்கவும். மேலும் தேதி, குற்றத்தின் தன்மை, தண்டனையைப் பற்றிய தகவல்கள் ஆகியவற்றையும் சேர்க்கவும்.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(ஒரு பத்தி மட்டும் எழுதவும், மேலும் உள்ளிடும்போது enter விசையை அழுத்த வேண்டாம்.)",
+      "note" : "Text to Criminal record conviction details label text"
     },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} எழுத்துகள் உள்ளிடப்பட்டுள்ளன (அதிகபட்சம் {recommendedCharacterCount} எழுத்துகள்)",
@@ -1648,6 +1660,50 @@
       "value" : "உங்களைப் பரிந்துரைத்தவரின் உள்நுழைவு ID ஐ எங்களால் சரிபார்க்க முடியவில்லை, உதவிக்காக, www.amazon.com/applicationhelp தளத்தில் அரட்டை மூலமாக எங்களைத் தொடர்புகொள்ளவும்.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-referral-login-label-text" : {
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு ஐடியை வழங்கவும் (சிற்றெழுத்துகளில் மட்டும்)",
+      "note" : "Text for the thank you page referral login input label text"
+    },
+    "BB-Kondo-referral-login-empty-error-text" : {
+      "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு ஐடியை வழங்கவும்.",
+      "note" : "Text for the thank you page referral login input empty error text"
+    },
+    "BB-Kondo-referral-login-regex-error-text" : {
+      "value" : "பயனர் IDஇல் சிற்றெழுத்துகள் மட்டுமே இருக்க வேண்டும், அதில் குறைந்தது 4 எழுத்துகளாவது இருக்க வேண்டும்.",
+      "note" : "Text for the thank you page referral login input regex error text"
+    },
+    "BB-Kondo-referral-details-title-text" : {
+      "value" : "பரிந்துரையாளர் விவரங்களை வழங்கவும் (பொருந்தும்பட்சத்தில்)",
+      "note" : "Text for the thank you page referral details input title text"
+    },
+    "BB-Kondo-referral-details-description-text" : {
+      "value" : "Amazonஇல் வேலைசெய்யும் பணியாளரால் நீங்கள் பரிந்துரைக்கப்பட்டீர்களா?",
+      "note" : "Text for the thank you page referral details description text"
+    },
+    "BB-Kondo-referral-details-yes-text" : {
+      "value" : "ஆம்",
+      "note" : "Text for the thank you page referral details radio button 'yes' text"
+    },
+    "BB-Kondo-referral-details-no-text" : {
+      "value" : "வேண்டாம்",
+      "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "உங்கள் ஷிப்ட் விருப்பத்தேர்வுகளைச் சமர்ப்பித்ததற்கு நன்றி!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்துள்ள விருப்பத்தேர்வுகளில் உங்களுக்கு உகுந்த ஒரு ஷிஃப்ட்டைக் கண்டறிந்தவுடன் உங்களைத் தொடர்புகொள்வோம்.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "உங்கள் பணியமர்த்தலுக்கு முந்தைய நேர்காணல் விருப்பத்தேர்வுகளைச் சமர்ப்பித்ததற்கு நன்றி!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "நீங்கள் தேர்ந்தெடுத்துள்ள விருப்பத்தேர்வுகளில், உங்கள் பணியமர்த்தலுக்கு முந்தைய நேர்காணலுக்கான உகந்த நேரத்தைக் கண்டறிந்தவுடன் உங்களைத் தொடர்புகொள்வோம்.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "ஏற்றுக்கொள்ளக்கூடிய ஆவணங்களின் முழுமையான பட்டியலுக்கு <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>இங்கே</a> கிளிக் செய்யவும்.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -2128,6 +2184,10 @@
       "value" : "தொடர்வதற்கு, பெட்டியைத் தேர்வுசெய்யவும்.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "பின்வரும் சிறப்பு எழுத்துகளை (-!/,.()#?) மட்டும் பயன்படுத்தி தண்டனை விவரங்களை உள்ளிடவும். ஒரு பத்தியை மட்டும் எழுதவும், உள்ளிடும்போது enter விசையை அழுத்த வேண்டாம்.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- அலபாமா",
       "note" : "Text for Alabama state"
@@ -2596,6 +2656,10 @@
       "value" : "பயோமெட்ரிக் குடியுரிமை அனுமதி",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "வேலை செய்வதற்கான உரிமை தொடர்பான ஆவணங்களில் என்னென்ன ஆவணங்கள் ஏற்கப்படுகின்றன என்பதைப் பற்றிய கூடுதல் தகவல்கள் மற்றும் விவரங்களுக்கு, எங்கள் <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK பணியாளர் வேலை அங்கீகார வழிகாட்டியைப்</a> பார்க்கவும்",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "நீங்கள் 18 அல்லது அதற்கு மேற்பட்ட வயதுடையவர்.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2844,6 +2908,22 @@
       "value" : "பணியமர்த்தலுக்கு முன்பான நிகழ்வுக்கான நேரத்தைத் தேர்ந்தெடுக்கவும்",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "முன்கூட்டிய பணியமர்த்தல் நியமன விருப்பத்தேர்வுகள்",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "விருப்பமான நகரம்",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "விருப்பமான தேதி(கள்)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "விருப்பமான நேரம்(கள்)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "உங்களின் பணி விண்ணப்பம் ஒன்று செயலில் உள்ளது",
       "note" : "Text for consent existing application notice title"
@@ -2995,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "ஷிஃப்ட் விருப்பத்தேர்வுகளைச் சமர்ப்பியுங்கள்",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "விண்ணப்பித்ததற்கு நன்றி!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "உங்கள் விண்ணப்பத்தைத் தற்போது மதிப்பாய்வு செய்து வருகிறோம். நீங்கள் வழங்கிய மின்னஞ்சல் முகவரியில் விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

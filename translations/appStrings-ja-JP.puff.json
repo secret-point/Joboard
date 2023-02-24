@@ -1688,6 +1688,26 @@
       "value" : "いいえ",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "シフト設定を送信していただきありがとうございます。",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "ご希望のシフトが見つかり次第、折り返しご連絡いたします。",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "雇用前の予約設定を送信していただきありがとうございます。",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "ご希望に沿った雇用前の予約が見つかり次第、折り返しご連絡を差し上げます。",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "受理可能な書類の完全なリストについては、<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>こちら</a>をクリックしてください。",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "障がいをお持ちで、Amazonの採用プロセスの調整が必要だと考えられる場合は、0808 164 9427までご連絡いただくか、myapplication@amazon.co.ukまでEメールでお問い合わせください。",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2636,6 +2656,10 @@
       "value" : "バイオメトリック在留許可",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "受理可能な就労権書類についての情報および詳細については、<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>UK従業員就労許可ガイド</a>をご覧ください",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "あなたは18歳以上です。",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2884,6 +2908,22 @@
       "value" : "雇用前イベントのカスタマイズ設定を選択してください",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "雇用前の予約の設定",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "優先都市",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "希望日",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "希望時間",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "有効なアプリケーションがあります",
       "note" : "Text for consent existing application notice title"
@@ -3035,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "シフトの希望を送信する",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "ご応募ありがとうございました。",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "現在、応募書類に基づき、選考を進めております。ご入力いただいたEメールアドレス宛に追ってご連絡を差し上げます。",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ダッシュボードに戻る",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

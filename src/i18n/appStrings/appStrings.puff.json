@@ -1690,6 +1690,22 @@
             "note": "Text for the thank you page referral details radio button 'no' text",
             "value": "No"
         },
+        "BB-Kondo-ThankYou-with-shift-preference-title-text": {
+            "note": "Text for the thank you page with shift preference title text",
+            "value": "Thank you for submitting your shift preferences!"
+        },
+        "BB-Kondo-ThankYou-with-shift-preference-content-text": {
+            "note": "Text for the thank you page with shift preference title text",
+            "value": "We'll contact you as soon as we find a shift that works for you with your chosen preferences."
+        },
+        "BB-Kondo-ThankYou-with-nhe-preference-title-text": {
+            "note": "Text for the thank you page with nhe preference title text",
+            "value": "Thank you for submitting your pre-hire appointment preferences!"
+        },
+        "BB-Kondo-ThankYou-with-nhe-preference-content-text": {
+            "note": "Text for the thank you page with nhe preference title text",
+            "value": "We'll contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences."
+        },
         "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text": {
             "note": "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text",
             "value": "Click <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents."
@@ -2892,6 +2908,22 @@
         "BB-nhe-preference-card-go-to-nhe-preference-link": {
             "note" : "Text for nhe preference card go to nhe link",
             "value" : "Select your pre-hire event preferences"
+        },
+        "BB-nhe-preference-review-title-text": {
+            "note" : "Text for nhe preference review title",
+            "value" : "Pre-hire appointment preferences"
+        },
+        "BB-nhe-preference-review-preferred-city-text": {
+            "note" : "Text for nhe preference review prefferred city title",
+            "value" : "Preferred city"
+        },
+        "BB-nhe-preference-review-preferred-dates-text": {
+            "note" : "Text for nhe preference review prefferred dates title",
+            "value" : "Preferred date(s)"
+        },
+        "BB-nhe-preference-review-preferred-times-text": {
+            "note" : "Text for nhe preference review prefferred times title",
+            "value" : "Preferred time(s)"
         },
         "BB-consent-existing-application-notice-title": {
             "note" : "Text for consent existing application notice title",

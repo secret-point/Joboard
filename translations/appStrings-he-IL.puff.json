@@ -1688,6 +1688,26 @@
       "value" : "לא",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "תודה ששלחת את העדפות המשמרת שלך!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "ניצור איתך קשר ברגע שנמצא משמרת שתתאים לך עם ההעדפות שבחרת.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "תודה ששלחת את ההעדפות שלך לפגישות טרום העסקה!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "ניצור איתך קשר ברגע שנמצא פגישת טרום העסקה שתתאים לך עם ההעדפות שבחרת.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "יש ללחוץ <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>כאן</a> כדי לקבל רשימה מלאה של מסמכים מקובלים.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "אם יש לך מוגבלות ולדעתך יש לך צורך בהתאמה לתהליך הגיוס של Amazon, יש לפנות אלינו כדי לדון בכך בטלפון ‎0808 164 9427 או באמצעות דואר אלקטרוני בכתובת myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2636,6 +2656,10 @@
       "value" : "היתר שהייה ביומטרי",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "למידע נוסף ופרטים על כל המסמכים המקובלים לאישור עבודה, באפשרותך לעיין <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>במדריך לאישור העבודה לעובדים בבריטניה</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "גילך 18 ומעלה.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2884,6 +2908,22 @@
       "value" : "יש לבחור את העדפות האירוע טרום גיוס עובדים",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "העדפות פגישת טרום ההעסקה",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "עיר מועדפת",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "תאריכים מועדפים",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "מועדים מועדפים",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "יש לך הגשת מועמדות פעילה",
       "note" : "Text for consent existing application notice title"
@@ -3035,6 +3075,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "שליחת העדפות המשמרת שלך",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "תודה לך על שליחת הבקשה!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "אנו בוחנים כעת את בקשתך וניצור איתך קשר בקרוב באמצעות כתובת הדואר האלקטרוני שסיפקת.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "חזרה ללוח הבקרה",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }
