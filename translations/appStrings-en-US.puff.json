@@ -3019,6 +3019,22 @@
     "BB-get-candidate-error-message-user-unauthorized" : {
       "value" : "User unauthorized",
       "note" : "Text for user not authorized banner message"
+    },
+    "BB-access-denied-page-title" : {
+      "value" : "Access denied",
+      "note" : "Text access denied page title"
+    },
+    "BB-session-access-denied-description" : {
+      "value" : "You are not authorized to view the information you requested.",
+      "note" : "Text access denied page description"
+    },
+    "BB-timeout-page-description" : {
+      "value" : "Due to inactivity, your session is expired, Please return to dashboard and resume the application.",
+      "note" : "Text timeout page description"
+    },
+    "BB-timeout-page-title" : {
+      "value" : "Session expired",
+      "note" : "Text timeout page title"
     }
   }
 }

@@ -34,7 +34,9 @@ export enum PAGE_ROUTES {
   APPLICATIONID_NULL = "applicationId-null",
   SHIFT_PREFERENCE = "job-opportunities/shift-preferences",
   NHE_PREFERENCES = "nhe/nhe-preferences",
-  ADDITIONAL_INFORMATION = "additional-information"
+  ADDITIONAL_INFORMATION = "additional-information",
+  TIMEOUT = "timeout",
+  ACCESS_DENIED = "error-404"
 }
 
 // Reference: https://code.amazon.com/packages/HVHStepFunctionDefinitions/blobs/ad75b9869a017bc84a9e03920e835a6b2cec7063/--/configuration/nacf_tier_1_node_workflow/defintion.json#L186

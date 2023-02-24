@@ -1,15 +1,13 @@
 import moment from "moment";
 import { PAGE_ROUTES } from "../../components/pageRoutes";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
-import { getDataForEventMetrics } from "../../helpers/adobe-helper";
 import { log, logError } from "../../helpers/log-helper";
-import { checkIfIsCSRequest, pathByDomain } from "../../helpers/utils";
+import { checkIfIsCSRequest } from "../../helpers/utils";
 import StepFunctionService from "../../services/step-function-service";
 import store from "../../store/store";
 import { WORKFLOW_ERROR_CODE, WORKFLOW_STEP_NAME } from "../../utils/enums/common";
 import { getCurrentStepNameFromHash, loadingStatusHelper, routeToAppPageWithPath } from "../../utils/helper";
 import { Application, CompleteTaskRequest, EnvConfig, Schedule, WorkflowData } from "../../utils/types/common";
-import { sendDataLayerAdobeAnalytics } from "../AdobeActions/adobeActions";
 import { boundUpdateWorkflowName } from "../ApplicationActions/boundApplicationActions";
 import { boundWorkflowRequestEnd, boundWorkflowRequestStart } from "../WorkflowActions/boundWorkflowActions";
 import {
@@ -98,7 +96,7 @@ export const sendHeartBeatWorkflow = () => {
       window.stepFunctionService.sendMessage(payload);
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign(`${pathByDomain()}/#/timeout`);
+      routeToAppPageWithPath(PAGE_ROUTES.TIMEOUT);
     }
   } else {
     window.hearBeatTime = moment().toISOString();
@@ -109,7 +107,7 @@ export const sendHeartBeatWorkflow = () => {
       window.stepFunctionService.sendMessage(payload);
     } else {
       log("Websocket timed out, moved to timed out page");
-      window.location.assign(`${pathByDomain()}/#/timeout`);
+      routeToAppPageWithPath(PAGE_ROUTES.TIMEOUT);
     }
   }
 };
@@ -220,16 +218,16 @@ export const onTimeOut = () => {
     const duration = moment.duration(endTime.diff(startTime));
 
     if (duration.asMinutes() > MAX_MINUTES_FOR_HEARTBEAT) {
+      log("Websocket timed out, moved to timed out page");
+
       boundWorkflowRequestEnd();
-      const adobeDataLayer = getDataForEventMetrics("session-timeout");
-      sendDataLayerAdobeAnalytics(adobeDataLayer);
-      window.location.assign(`${pathByDomain()}/#/timeout`);
+      routeToAppPageWithPath(PAGE_ROUTES.TIMEOUT);
     }
   } else {
+    log("Websocket timed out, moved to timed out page");
+
     boundWorkflowRequestEnd();
-    const adobeDataLayer = getDataForEventMetrics("session-timeout");
-    sendDataLayerAdobeAnalytics(adobeDataLayer);
-    window.location.assign(`${pathByDomain()}/#/timeout`);
+    routeToAppPageWithPath(PAGE_ROUTES.TIMEOUT);
   }
 };
 

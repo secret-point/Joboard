@@ -41,6 +41,8 @@ import RehireEligibilityStatus from "./rehireEligibilityStatus/RehireEligibility
 import NoAvailableShift from "./noAvailableShift/NoAvailableShift";
 import ApplicationIdNull from "./applicationIdNull/ApplicationIdNull";
 import DuplicateWindowError from "../common/DuplicateWindowError";
+import TimeoutPage from "../us/timeout/Timeout";
+import AccessDenied from "./AccessDenied/AccessDenied";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -78,7 +80,9 @@ const {
   SUPPLEMENTARY_SUCCESS,
   REHIRE_ELIGIBILITY_STATUS,
   NO_AVAILABLE_SHIFT,
-  APPLICATIONID_NULL
+  APPLICATIONID_NULL,
+  TIMEOUT,
+  ACCESS_DENIED
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUS = ( props: MapStateToProps ) => {
@@ -198,6 +202,12 @@ export const DragonStoneAppUS = ( props: MapStateToProps ) => {
           </Route>
           <Route path={`/${APPLICATIONID_NULL}`} exact>
             <ApplicationIdNull />
+          </Route>
+          <Route path={`/${TIMEOUT}`} exact>
+            <TimeoutPage />
+          </Route>
+          <Route path={`/${ACCESS_DENIED}`} exact>
+            <AccessDenied />
           </Route>
         </Switch>
       </Router>

@@ -44,6 +44,8 @@ import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import ReviewSubmit from "./reviewSubmit/ReviewSubmit";
 import SelfIdentification from "./selfIdentification/SelfIdentification";
 import { getQueryFromSearchAndHash } from "../../utils/helper";
+import TimeoutPage from "../us/timeout/Timeout";
+import AccessDenied from "../us/AccessDenied/AccessDenied";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -80,7 +82,9 @@ const {
   SUPPLEMENTARY_SUCCESS,
   REHIRE_ELIGIBILITY_STATUS,
   NO_AVAILABLE_SHIFT,
-  APPLICATIONID_NULL
+  APPLICATIONID_NULL,
+  TIMEOUT,
+  ACCESS_DENIED
 } = PAGE_ROUTES;
 
 export const DragonStoneAppMX = ( props: MapStateToProps ) => {
@@ -193,6 +197,12 @@ export const DragonStoneAppMX = ( props: MapStateToProps ) => {
           </Route>
           <Route path={`/${APPLICATIONID_NULL}`} exact>
             <ApplicationIdNull />
+          </Route>
+          <Route path={`/${TIMEOUT}`} exact>
+            <TimeoutPage />
+          </Route>
+          <Route path={`/${ACCESS_DENIED}`} exact>
+            <AccessDenied />
           </Route>
         </Switch>
       </Router>

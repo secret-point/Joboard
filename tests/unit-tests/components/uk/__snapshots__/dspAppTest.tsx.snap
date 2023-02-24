@@ -216,6 +216,18 @@ exports[`dspAppTest should match snapshot 1`] = `
       >
         <Connect(NhePreferences) />
       </Route>
+      <Route
+        exact={true}
+        path="/timeout"
+      >
+        <Connect(TimeoutPage) />
+      </Route>
+      <Route
+        exact={true}
+        path="/error-404"
+      >
+        <Connect(AccessDenied) />
+      </Route>
     </Switch>
   </HashRouter>
   <BackToTopButton

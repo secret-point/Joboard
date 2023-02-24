@@ -44,6 +44,8 @@ import Assessment from "./assessment/Assessment";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import Nhe from "./nhe/Nhe";
 import ThankYou from "./thankYou/ThankYou";
+import TimeoutPage from "../us/timeout/Timeout";
+import AccessDenied from "../us/AccessDenied/AccessDenied";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -81,7 +83,9 @@ const {
   APPLICATIONID_NULL,
   SHIFT_PREFERENCE,
   ADDITIONAL_INFORMATION,
-  NHE_PREFERENCES
+  NHE_PREFERENCES,
+  TIMEOUT,
+  ACCESS_DENIED
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = (props: MapStateToProps) => {
@@ -191,6 +195,12 @@ export const DragonStoneAppUK = (props: MapStateToProps) => {
           </Route>
           <Route path={`/${NHE_PREFERENCES}`} exact>
             <NhePreferences />
+          </Route>
+          <Route path={`/${TIMEOUT}`} exact>
+            <TimeoutPage />
+          </Route>
+          <Route path={`/${ACCESS_DENIED}`} exact>
+            <AccessDenied />
           </Route>
         </Switch>
       </Router>

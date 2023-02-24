@@ -660,6 +660,14 @@
       "value" : "Hangi Bilgiler dahil edilmeli?",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Lütfen hüküm giydiğiniz ülke ve ili belirtin. Ayrıca tarihi, suçun niteliğini ve ceza bilgilerini de ekleyin.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Sadece bir paragraf yazın ve yazarken enter tuşuna basmayın.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} karakter girildi (maksimum {recommendedCharacterCount} karakter)",
       "note" : "Text for criminal record conviction details recommended character count text"
