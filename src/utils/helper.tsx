@@ -77,6 +77,7 @@ import {
   FCRA_DISCLOSURE_TYPE,
   FEATURE_FLAG,
   INFO_CARD_STEP_STATUS,
+  JOB_REFERRAL_VALUE,
   QUERY_PARAMETER_NAME,
   SELF_IDENTIFICATION_STEPS,
   UPDATE_APPLICATION_API_TYPE,
@@ -654,7 +655,6 @@ export const verifyBasicInfo =
           } else {
             isValid = validateInput(value, required || false, regex || "");
           }
-
           set(formError, dataKey, !isValid);
           if (!isValid && !hasError) hasError = true;
         });
@@ -792,13 +792,17 @@ export const isDateGreaterThanToday = (date: string): boolean => {
   return diff < 0;
 };
 
-export const isReferralIdValid = (referralId: string): boolean => {
+export const isReferralIdValid = (referralId?: string): boolean => {
+  if (!referralId) {
+    return false;
+  }
   return referralId.match("^[a-z]{4,60}$") !== null;
 };
 
 export const isJobReferralValid = (jobReferral: JobReferral): boolean => {
-  if (jobReferral.hasReferral) {
-    if (jobReferral.referralInfo && isReferralIdValid(jobReferral.referralInfo)) {
+
+  if (jobReferral && (jobReferral?.hasReferral === JOB_REFERRAL_VALUE.YES || jobReferral.hasReferral === true)) {
+    if (isReferralIdValid(jobReferral?.referralInfo)) {
       return true;
     }
     return false;
@@ -1091,6 +1095,7 @@ export const handleSubmitAdditionalBgc =
       const dob = get(candidatePatchRequest, "additionalBackgroundInfo.dateOfBirth");
       const isOver18 = isDOBOverEighteen(dob);
       const isDateValid = isDOBLessThan100(dob);
+
       if (!verifyInfo.hasError && isOver18 && isDateValid) {
         // Bound update additional info all
         const payload = {
@@ -1150,6 +1155,7 @@ export const handleUKSubmitAdditionalBgc =
       const isDateValid = isDOBLessThan100(dob);
       const isReferralValid = isJobReferralValid(jobReferral);
       const shouldSkipNhePage = !applicationData.jobScheduleSelected.scheduleId; // we skip nhe if there is no schedule selected
+
       if (!verifyInfo.hasError && isOver18 && isDateValid && isReferralValid) {
         // Bound update additional info all
         const payload = {
@@ -1165,6 +1171,8 @@ export const handleUKSubmitAdditionalBgc =
             onCompleteTaskHelper(applicationData);
           }
         });
+      } else {
+        log("[bgc] candidate bgc info not verified", patch);
       }
     };
 

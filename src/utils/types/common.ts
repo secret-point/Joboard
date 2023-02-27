@@ -8,6 +8,7 @@ import {
   FCRA_DISCLOSURE_TYPE,
   FEATURE_FLAG,
   INFO_CARD_STEP_STATUS,
+  JOB_REFERRAL_VALUE,
   QUERY_PARAMETER_NAME,
   SCHEDULE_FILTER_TYPE,
   SELF_IDENTIFICATION_STEPS,
@@ -720,7 +721,7 @@ export interface Shifts {
 }
 
 export interface JobReferral {
-  hasReferral: boolean | string;
+  hasReferral: boolean | JOB_REFERRAL_VALUE;
   referralInfo?: string;
 }
 

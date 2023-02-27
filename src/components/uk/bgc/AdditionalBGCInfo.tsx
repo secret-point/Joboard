@@ -26,17 +26,34 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {
-  AdditionalBGCFormConfigPart2, UKAdditionalBGCFormConfigPart1, UKCountrySelectOptions, UKIdNumberBgcFormConfig, UKNINValue, UKReferralFormInputConfig
+  AdditionalBGCFormConfigPart2,
+  UKAdditionalBGCFormConfigPart1,
+  UKCountrySelectOptions,
+  UKIdNumberBgcFormConfig,
+  UKNINValue,
+  UKReferralFormInputConfig
 } from "../../../utils/constants/common";
-import { handleUKSubmitAdditionalBgc, isDOBLessThan100, isDOBOverEighteen, validateReferralForm } from "../../../utils/helper";
+import {
+  handleUKSubmitAdditionalBgc,
+  isDOBLessThan100,
+  isDOBOverEighteen,
+  validateReferralForm
+} from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { AppConfig, FormInputItem, i18nSelectOption, JobReferral, StateSelectOption } from "../../../utils/types/common";
+import {
+  AppConfig,
+  FormInputItem,
+  i18nSelectOption,
+  JobReferral,
+  StateSelectOption
+} from "../../../utils/types/common";
 import PreviousWorkedAtAmazonForm from "../../common/bgc/PreviousWorkedAtAmazonForm";
 import DebouncedButton from "../../common/DebouncedButton";
 import DatePicker from "../../common/formDatePicker/DatePicker";
 import FormInputSelect from "../../common/FormInputSelect";
 import FormInputText from "../../common/FormInputText";
 import { Text } from "@amzn/stencil-react-components/text";
+import { JOB_REFERRAL_VALUE } from "../../../utils/enums/common";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -246,7 +263,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
     boundResetBannerMessage();
     if (candidatePatchRequest && candidateData && applicationData) {
       const jobReferral: JobReferral = {
-        hasReferral: hasReferral ? "yes" : "no",
+        hasReferral: hasReferral ? JOB_REFERRAL_VALUE.YES : JOB_REFERRAL_VALUE.NO,
       };
       if (hasReferral) {
         jobReferral.referralInfo = referralId;

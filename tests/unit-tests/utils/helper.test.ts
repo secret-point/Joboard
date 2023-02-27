@@ -15,6 +15,7 @@ import {
 import {
   CountryCode,
   INFO_CARD_STEP_STATUS,
+  JOB_REFERRAL_VALUE,
   SELF_IDENTIFICATION_STEPS,
   WITHDRAW_REASON_CASE
 } from "../../../src/utils/enums/common";
@@ -72,6 +73,7 @@ import {
   isDOBLessThan100,
   isDOBOverEighteen,
   isI18nSelectOption,
+  isJobReferralValid,
   isNewBBuiPath,
   isSelfIdDisabilityStepCompleted,
   isSelfIdentificationInfoValid,
@@ -98,7 +100,12 @@ import {
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
-import { CandidateInfoErrorState, CandidatePatchRequest, FormInputItem } from "../../../src/utils/types/common";
+import {
+  CandidateInfoErrorState,
+  CandidatePatchRequest,
+  FormInputItem,
+  JobReferral
+} from "../../../src/utils/types/common";
 import { PAGE_ROUTES } from "../../../src/components/pageRoutes";
 import SpyInstance = jest.SpyInstance;
 
@@ -1732,4 +1739,15 @@ describe("initiateScheduleDetailOnPageLoad", () => {
     }, PAGE_ROUTES.NHE);
     expect(window.location.href).toEqual("http://test.com/#/test?applicationId=applicationId");
   });
+});
+
+test("isJobReferralValid", () => {
+  expect(isJobReferralValid({ hasReferral: true, referralInfo: "test" })).toBeTruthy();
+  expect(isJobReferralValid({ hasReferral: false, referralInfo: "test" })).toBeTruthy();
+  expect(isJobReferralValid({ hasReferral: JOB_REFERRAL_VALUE.YES, referralInfo: "test" })).toBeTruthy();
+  expect(isJobReferralValid({ hasReferral: true, referralInfo: undefined })).toBeFalsy();
+  expect(isJobReferralValid({ hasReferral: JOB_REFERRAL_VALUE.YES, referralInfo: undefined })).toBeFalsy();
+  expect(isJobReferralValid(null as unknown as JobReferral )).toBeTruthy();
+  expect(isJobReferralValid({ hasReferral: false, referralInfo: undefined })).toBeTruthy();
+  expect(isJobReferralValid({ hasReferral: JOB_REFERRAL_VALUE.NO, referralInfo: undefined })).toBeTruthy();
 });

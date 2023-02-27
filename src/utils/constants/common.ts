@@ -356,6 +356,7 @@ export const MXIdNumberBgcFormConfig: FormInputItem = {
 };
 
 export const UKIdNumberBgcFormConfig: FormInputItem = {
+  hasError: false,
   labelText: 'UK National Insurance Number (If you do not have one, enter "No NI")',
   dataKey: "additionalBackgroundInfo.idNumber",
   required: true,
