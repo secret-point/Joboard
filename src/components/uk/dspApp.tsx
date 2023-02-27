@@ -35,6 +35,8 @@ import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import Nhe from "./nhe/Nhe";
 import ThankYou from "./thankYou/ThankYou";
 import GenericError from "./genericError/GenericError";
+import TimeoutPage from "../us/timeout/Timeout";
+import AccessDenied from "../us/AccessDenied/AccessDenied";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -67,7 +69,9 @@ const {
   SHIFT_PREFERENCE,
   ADDITIONAL_INFORMATION,
   NHE_PREFERENCES,
-  REHIRE_NOT_ELIGIBLE
+  REHIRE_NOT_ELIGIBLE,
+  TIMEOUT,
+  ACCESS_DENIED
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = (props: MapStateToProps) => {
