@@ -39,6 +39,7 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
   <Row
     alignItems="center"
     gridGap={10}
+    justifyContent="flex-start"
   >
     <IconClockFill
       aria-hidden={true}
@@ -171,11 +172,15 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
     alignItems="center"
     gridGap={10}
   >
-    <IconHourGlass
-      aria-hidden={true}
-      display="block"
-      size={16}
-    />
+    <div
+      className="scheduleCardDetails__icon--aligmentFix"
+    >
+      <IconHourGlass
+        aria-hidden={true}
+        display="block"
+        size={16}
+      />
+    </div>
     <Row
       alignItems="center"
       gridGap={3}
@@ -237,9 +242,9 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
   >
     <Row>
       <img
-        height="20px"
+        height={16}
         src=""
-        width="20px"
+        width={16}
       />
     </Row>
     <Row
@@ -268,7 +273,7 @@ exports[`ScheduleDetails country code MX should match snapshot 1`] = `
 </Col>
 `;
 
-exports[`ScheduleDetails country code US should match snapshot 1`] = `
+exports[`ScheduleDetails country code UK should match snapshot 1`] = `
 <Col
   gridGap={10}
   width="95%"
@@ -306,7 +311,44 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
   </Row>
   <Row
     alignItems="center"
+    data-testid="schedule-details-duration"
     gridGap={10}
+  >
+    <div
+      className="scheduleCardDetails__icon--aligmentFix"
+    >
+      <IconHourGlass
+        aria-hidden={true}
+        display="block"
+        size={16}
+      />
+    </div>
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Duration
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        test
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+    justifyContent="flex-start"
   >
     <IconClockFill
       aria-hidden={true}
@@ -406,11 +448,15 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
     alignItems="center"
     gridGap={10}
   >
-    <IconHourGlass
-      aria-hidden={true}
-      display="block"
-      size={16}
-    />
+    <div
+      className="scheduleCardDetails__icon--aligmentFix"
+    >
+      <IconHourGlass
+        aria-hidden={true}
+        display="block"
+        size={16}
+      />
+    </div>
     <Row
       alignItems="center"
       gridGap={3}
@@ -503,9 +549,280 @@ exports[`ScheduleDetails country code US should match snapshot 1`] = `
   >
     <Row>
       <img
-        height="20px"
+        height={16}
         src=""
-        width="20px"
+        width={16}
+      />
+    </Row>
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Location
+        : 
+      </Text>
+      <Text
+        color="#1768C9"
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        38811 Cherry Street, Newark, CA 94560
+      </Text>
+    </Row>
+  </Row>
+</Col>
+`;
+
+exports[`ScheduleDetails country code US should match snapshot 1`] = `
+<Col
+  gridGap={10}
+  width="95%"
+>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <IconCalendarFill
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Start Date
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Oct 29, 2022
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+    justifyContent="flex-start"
+  >
+    <IconClockFill
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Shift
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM
+      </Text>
+    </Row>
+  </Row>
+  <Col
+    alignItems="left"
+    gridGap={5}
+    padding={
+      Object {
+        "left": "S400",
+      }
+    }
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Required training dates
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+        key="01-01-2023"
+      >
+        01-01-2023
+      </Text>
+    </Text>
+  </Col>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <IconPaymentFill
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Pay rate
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        $8.90 /hour
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <div
+      className="scheduleCardDetails__icon--aligmentFix"
+    >
+      <IconHourGlass
+        aria-hidden={true}
+        display="block"
+        size={16}
+      />
+    </div>
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Hours
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        16
+         
+        hours/week
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <IconClock
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Duration
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Regular
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <IconGlobe
+      aria-hidden={true}
+      display="block"
+      size={16}
+    />
+    <Row
+      alignItems="center"
+      gridGap={3}
+    >
+      <Text
+        font="primary"
+        fontSize="T200"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Languages Supported
+        :
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        English, Spanish
+      </Text>
+    </Row>
+  </Row>
+  <Row
+    alignItems="center"
+    gridGap={10}
+  >
+    <Row>
+      <img
+        height={16}
+        src=""
+        width={16}
       />
     </Row>
     <Row
