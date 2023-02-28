@@ -50,6 +50,8 @@ import { boundGetAssessmentElegibility } from "../../../actions/AssessmentAction
 import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { getScheduleDuration } from "../../../helpers/job-helpers";
+import { getLocalizedDate, get12hrTimeStringLocalized } from "../../../helpers/localization-helpers";
 
 interface MapStateToProps {
   job: JobState;
@@ -59,11 +61,7 @@ interface MapStateToProps {
   assessment: AssessmentState;
 }
 
-interface JobOpportunityProps {
-
-}
-
-type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
+type JobOpportunityMergedProps = MapStateToProps ;
 
 export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const { job, application, schedule, candidate, assessment } = props;
@@ -75,6 +73,16 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const jobDetail = job.results;
   const applicationData = application.results;
   const scheduleData = schedule.results.scheduleList;
+  const scheduleDataUk = scheduleData?.map((schedule) => {
+    return {
+      ...schedule,
+      firstDayOnSite: schedule.hireStartDate || schedule.firstDayOnSite,
+      duration: getScheduleDuration({ ...schedule, applicationId }),
+      hireEndDate: schedule?.hireEndDate && getLocalizedDate(schedule.hireEndDate),
+      scheduleText: schedule?.scheduleText && get12hrTimeStringLocalized(schedule.scheduleText)
+
+    };
+  });
   const scheduleFilters = schedule.filters;
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
@@ -197,9 +205,6 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
           src="https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/20170525PrimeNowUWA2_15-min.jpg"
           aria-hidden="true"
         />
-        <Col id="jobOpportunityHeaderImageOverlay">
-          {/* May need to add overlay content in future*/}
-        </Col>
       </Col>
 
       <Col>
@@ -248,9 +253,8 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
               </WithFlyout>
             </Row>
           </Row>
-
           {
-            scheduleData && scheduleData.map(scheduleItem => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
+            scheduleDataUk && scheduleDataUk.map(scheduleItem => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
           }
           <ShiftPreferenceCard />
         </Col>
