@@ -1809,6 +1809,10 @@
             "note": "Text for the duration of job text",
             "value": "Duration"
         },
+        "BB-Schedule-card-end-date": {
+            "note": "",
+            "value": "End Date"
+        },
         "BB-Schedule-card-location": {
             "note": "Text for the location of job text",
             "value": "Location"
@@ -3093,17 +3097,17 @@
             "note": "return to dashboard button label in the Generic error page",
             "value": "Return to dashboard"
         },
-        "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1": {
-            "note": "Assessment condition number 1",
-            "value": "We recommend that you find a quiet place to avoid distractions."
+        "BB-schedule-card-duration-permanent": {
+            "note": "",
+            "value": "Permanent"
         },
-        "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2": {
-            "note": "Assessment condition number 2",
-            "value": "After you finish the assessment, you will be returned to your application process."
+        "BB-schedule-card-duration-fixed-term-contract": {
+            "note": "",
+            "value": "Fixed term contract"
         },
-        "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3": {
-            "note": "Assessment condition number 3",
-            "value": "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1."
+        "BB-schedule-card-duration-fixed-term-contract-with-end-date": {
+            "note": "",
+            "value": "Fixed term contract until"
         }
     }
 }

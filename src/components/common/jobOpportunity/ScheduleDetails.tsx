@@ -10,7 +10,6 @@ import {
 } from "@amzn/stencil-react-components/icons";
 import { Col, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
-import moment from "moment";
 import { PayRateType } from "../../../countryExpansionConfig";
 import { LightningIcon, LocationIcon } from "../../../images";
 import { CommonColors } from "../../../utils/colors";
@@ -28,6 +27,7 @@ import {
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
+import { getLocalizedDate } from "../../../helpers/localization-helpers";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule;
@@ -51,12 +51,16 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     parsedTrainingDate,
     signOnBonusL10N,
     monthlyBasePay,
-    monthlyBasePayL10N
+    monthlyBasePayL10N,
+    hireEndDate,
+    
   } = scheduleDetail;
 
+  const duration = "duration" in scheduleDetail ? scheduleDetail.duration : null ;
+
   const renderStartDate = () => {
-    const startDate = `${moment(firstDayOnSite).locale(getLocale()).format("MMM DD, YYYY")}`;
-    return getSpanishLocaleDateFormatter(startDate);
+    const localizedDate = getLocalizedDate(firstDayOnSite);
+    return getLocale().substring(0, 2) === "es" ? getSpanishLocaleDateFormatter(localizedDate) : localizedDate;
   };
 
   const shift = t("BB-Schedule-card-shift-required-dates", "Required training dates");
@@ -95,7 +99,32 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       </Row>
 
-      <Row gridGap={10} alignItems="center">
+      {(hireEndDate && !duration) && (
+        <Row gridGap={10} alignItems="center" data-testid="schedule-details-hire-end-date">
+          <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden />
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-end-date", "End Date")}: </Text>
+            <Text fontSize="T100">
+              {hireEndDate}
+            </Text>
+          </Row>
+        </Row>
+      )}
+      {duration && (
+        <Row gridGap={10} alignItems="center" data-testid="schedule-details-duration">
+          <div className="scheduleCardDetails__icon--aligmentFix">
+            <IconHourGlass size={IconSize.ExtraSmall} aria-hidden />
+          </div>
+          <Row gridGap={3} alignItems="center">
+            <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-duration", "Duration")}: </Text>
+            <Text fontSize="T100">
+              {duration}
+            </Text>
+          </Row>
+        </Row>
+      )}
+
+      <Row gridGap={10} alignItems="center" justifyContent="flex-start">
         <IconClockFill size={IconSize.ExtraSmall} aria-hidden />
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-shift", "Shift")}: </Text>
@@ -131,7 +160,8 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
       )}
 
       <Row gridGap={10} alignItems="center">
-        <IconHourGlass size={IconSize.ExtraSmall} aria-hidden />
+        <div className="scheduleCardDetails__icon--aligmentFix"><IconHourGlass size={IconSize.ExtraSmall} aria-hidden />
+        </div>
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-hours", "Hours")}: </Text>
           <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
@@ -162,7 +192,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
 
       <Row gridGap={10} alignItems="center">
         <Row>
-          <img src={LocationIcon} height="20px" width="20px" />
+          <img src={LocationIcon} height={IconSize.ExtraSmall} width={IconSize.ExtraSmall} />
         </Row>
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-location", "Location")}: </Text>

@@ -26,7 +26,7 @@ describe("ScheduleDetails", () => {
     });
   });
 
-  describe('country code MX', () => {
+  describe("country code MX", () => {
     beforeEach(() => {
       getCountryCodeSpy.mockReturnValue(CountryCode.MX);
     });
@@ -35,6 +35,20 @@ describe("ScheduleDetails", () => {
       const shallowWrapper = shallow(
         <ScheduleDetails
           scheduleDetail={TEST_SCHEDULE as Schedule}
+        />);
+
+      expect(shallowWrapper).toMatchSnapshot();
+    });
+  });
+  describe("country code UK", () => {
+    beforeEach(() => {
+      getCountryCodeSpy.mockReturnValue(CountryCode.UK);
+    });
+
+    it("should match snapshot", () => {
+      const shallowWrapper = shallow(
+        <ScheduleDetails
+          scheduleDetail={{ ...TEST_SCHEDULE, duration: "test" } as Schedule}
         />);
 
       expect(shallowWrapper).toMatchSnapshot();
