@@ -13,6 +13,8 @@ import {
   SCHEDULE_ACTION_TYPE
 } from "../actions/ScheduleActions/scheduleActionTypes";
 import { PAGE_ROUTES } from "../components/pageRoutes";
+import { getScheduleDuration } from "../helpers/job-helpers";
+import { get12hrTimeStringLocalized, getLocalizedDate } from "../helpers/localization-helpers";
 import { log, LoggerType } from "../helpers/log-helper";
 import JobService from "../services/job-service";
 import {
@@ -22,8 +24,8 @@ import {
 } from "../utils/api/errorMessages";
 import { ApiError, GetScheduleDetailResponse, GetScheduleListResponse } from "../utils/api/types";
 import { GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE, UPDATE_APPLICATION_ERROR_CODE } from "../utils/enums/common";
-import { formatLoggedApiError, routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
-import { Schedule } from "../utils/types/common";
+import { formatLoggedApiError, getLocale, routeToAppPageWithPath, setEpicApiCallErrorMessage } from "../utils/helper";
+import { Locale, Schedule } from "../utils/types/common";
 import { createProxyApiEpicError, epicSwitchMapHelper } from "./helper";
 
 export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
@@ -44,7 +46,22 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
               throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND);
             }
 
-            return data.availableSchedules.schedules;
+            const { schedules } = data.availableSchedules;
+
+            if (getLocale()=== Locale.enGB) {
+              return schedules?.map((schedule) => {
+                return {
+                  ...schedule,
+                  // if hireStartDate is present this is considered the firstDayOnSite in the UK
+                  firstDayOnSite: schedule.hireStartDate || schedule.firstDayOnSite,
+                  duration: getScheduleDuration({ ...schedule }),
+                  hireEndDate: schedule?.hireEndDate && getLocalizedDate(schedule.hireEndDate),
+                  scheduleText: schedule?.scheduleText && get12hrTimeStringLocalized(schedule.scheduleText)
+                };
+              });
+            } 
+           
+            return schedules;
           }),
           map((data: Schedule[]) => {
             return actionGetScheduleListByJobIdSuccess(data);

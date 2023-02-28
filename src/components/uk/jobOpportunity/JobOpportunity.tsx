@@ -50,8 +50,6 @@ import { boundGetAssessmentElegibility } from "../../../actions/AssessmentAction
 import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
-import { getScheduleDuration } from "../../../helpers/job-helpers";
-import { getLocalizedDate, get12hrTimeStringLocalized } from "../../../helpers/localization-helpers";
 
 interface MapStateToProps {
   job: JobState;
@@ -73,16 +71,6 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const jobDetail = job.results;
   const applicationData = application.results;
   const scheduleData = schedule.results.scheduleList;
-  const scheduleDataUk = scheduleData?.map((schedule) => {
-    return {
-      ...schedule,
-      firstDayOnSite: schedule.hireStartDate || schedule.firstDayOnSite,
-      duration: getScheduleDuration({ ...schedule, applicationId }),
-      hireEndDate: schedule?.hireEndDate && getLocalizedDate(schedule.hireEndDate),
-      scheduleText: schedule?.scheduleText && get12hrTimeStringLocalized(schedule.scheduleText)
-
-    };
-  });
   const scheduleFilters = schedule.filters;
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
@@ -254,7 +242,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
             </Row>
           </Row>
           {
-            scheduleDataUk && scheduleDataUk.map(scheduleItem => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
+            scheduleData && scheduleData.map(scheduleItem => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
           }
           <ShiftPreferenceCard />
         </Col>
