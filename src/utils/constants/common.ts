@@ -1220,3 +1220,34 @@ export const dateOfBirthFormField: FormInputItem[] = [
     regex: "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
   }
 ];
+
+// Formats as they come from JMS
+export const DEFAULT_INPUT_DATE_FORMAT = "YYYY-MM-DD";
+export const DEFAULT_INPUT_TIME_FORMAT = "h:mm A";
+
+export const DEFAULT_OUTPUT_DATE_FORMAT = "MMM DD, YYYY";
+export const DEFAULT_OUTPUT_TIME_FORMAT = "hh:mm A";
+export const DEFAULT_TIME_ZONE = "GMT";
+
+export const LOCALE_CONFIG = {
+  [Locale.enGB]: {
+    DATE_FORMAT: "dddd, D MMM YYYY", // Example:  Sunday, 17 Oct 2021
+    TIME_FORMAT: "HH:mm", // Example: 13:30
+    TIME_ZONE: "Europe/London"
+  },
+  [Locale.enUS]: {
+    DATE_FORMAT: DEFAULT_OUTPUT_DATE_FORMAT, // Example: 10/17/2021
+    TIME_FORMAT: "h:mm A", // Example: 1:30 PM
+    TIME_ZONE: DEFAULT_TIME_ZONE
+  },
+  [Locale.esUS]: {
+    DATE_FORMAT: DEFAULT_OUTPUT_DATE_FORMAT, // Example: 10/17/2021
+    TIME_FORMAT: "h:mm A", // Example: 1:30 PM
+    TIME_ZONE: DEFAULT_TIME_ZONE
+  },
+  [Locale.esMX]: {
+    DATE_FORMAT: DEFAULT_OUTPUT_DATE_FORMAT, // Example: 10/17/2021
+    TIME_FORMAT: "h:mm A", // Example: 1:30 PM
+    TIME_ZONE: DEFAULT_TIME_ZONE
+  }
+};

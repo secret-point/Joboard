@@ -1,5 +1,5 @@
 import moment from "moment";
-import { DEFAULT_INPUT_DATE_FORMAT, DEFAULT_INPUT_TIME_FORMAT, LOCALE_CONFIG } from "../utils/constants/common";
+import { DEFAULT_OUTPUT_DATE_FORMAT, DEFAULT_INPUT_DATE_FORMAT, DEFAULT_INPUT_TIME_FORMAT, DEFAULT_OUTPUT_TIME_FORMAT, DEFAULT_TIME_ZONE, LOCALE_CONFIG } from "../utils/constants/common";
 import { getLocale } from "../utils/helper";
 import { Locale } from "../utils/types/common";
 import { log } from "./log-helper";
@@ -8,10 +8,10 @@ const DATE = "date";
 const TIME = "time";
 
 export const getLocalizedDateFormat = (locale: Locale) =>
-  LOCALE_CONFIG[locale]?.DATE_FORMAT || LOCALE_CONFIG.DEFAULT.DATE_FORMAT;
+  LOCALE_CONFIG[locale]?.DATE_FORMAT || DEFAULT_OUTPUT_DATE_FORMAT;
 
 export const getLocalizedTimeFormat = (locale: Locale) =>
-  LOCALE_CONFIG[locale]?.TIME_FORMAT || LOCALE_CONFIG.DEFAULT.TIME_FORMAT;
+  LOCALE_CONFIG[locale]?.TIME_FORMAT || DEFAULT_OUTPUT_TIME_FORMAT;
 
 const localizeDateOrTimeString = (
   input: string,
@@ -59,4 +59,4 @@ export const get12hrTimeStringLocalized = (text: string) => {
 };
 
 export const getLocalizedTimezone = (locale: Locale) =>
-  LOCALE_CONFIG[locale]?.TIME_ZONE || LOCALE_CONFIG.DEFAULT.TIME_ZONE;
+  LOCALE_CONFIG[locale]?.TIME_ZONE || DEFAULT_TIME_ZONE;

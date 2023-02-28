@@ -1,6 +1,6 @@
 import { get12hrTimeStringLocalized, getLocalizedDateFormat, getLocalizedTimeFormat, getLocalizedDate, getLocalizedTime, getLocalizedTimezone } from "../../../src/helpers/localization-helpers";
 import { log } from "../../../src/helpers/log-helper";
-import { HVH_LOCALE, LOCALE_CONFIG } from "../../../src/utils/constants/common";
+import { DEFAULT_OUTPUT_DATE_FORMAT, DEFAULT_OUTPUT_TIME_FORMAT, HVH_LOCALE } from "../../../src/utils/constants/common";
 import { Locale } from "../../../src/utils/types/common";
 
 jest.mock("../../../src/helpers/log-helper", () => {
@@ -77,7 +77,7 @@ describe("localization-helper functions", () => {
     const defaultDateFormatIfLocaleInvalid = getLocalizedDateFormat("ar-LB" as Locale);
 
     expect(defaultDateFormatIfLocaleInvalid).toEqual(
-      LOCALE_CONFIG.DEFAULT.DATE_FORMAT
+      DEFAULT_OUTPUT_DATE_FORMAT
     );
     expect(getLocalizedDateFormat(Locale.enGB)).toEqual("dddd, D MMM YYYY");
   });
@@ -86,7 +86,7 @@ describe("localization-helper functions", () => {
     const defaultFormatIfLocaleInvalid = getLocalizedTimeFormat(INVALID_LOCALE as Locale);
 
     expect(defaultFormatIfLocaleInvalid).toEqual(
-      LOCALE_CONFIG.DEFAULT.TIME_FORMAT
+      DEFAULT_OUTPUT_TIME_FORMAT
     );
 
     expect(getLocalizedTimeFormat(Locale.enUS)).toEqual("h:mm A");
