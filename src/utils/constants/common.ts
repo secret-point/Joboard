@@ -68,7 +68,7 @@ export const ApplicationStepListUK: ApplicationStep[] = [
   {
     title: APPLICATION_STEPS.ENTER_REQUIRED_INFORMATION,
 
-    titleTranslationKey: "BB-Applic2ationSteps-enter-required-information-text"
+    titleTranslationKey: "BB-ApplicationSteps-enter-required-information-text"
   },
   {
     title: APPLICATION_STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT,
