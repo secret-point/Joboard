@@ -1,4 +1,4 @@
-import { translate as t } from "../utils/translator";
+// import { translate as t } from "../utils/translator";
 import { log } from "./log-helper";
 
 // TODO: Use the translated strings
