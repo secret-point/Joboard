@@ -101,7 +101,11 @@ export const Consent = (props: MapStateToProps) => {
     const candidateId = candidateData?.candidateId;
     if (candidateId) {
       boundGetApplicationList({ candidateId, status: "active" }, (applicationList: Application[]) => {
-        const applicationLength = applicationList.length;
+        // exclude application whose jobId is the same as the current jobId
+        const applicationLength = applicationList
+          .filter(app => app.jobScheduleSelected.jobId !== jobId)
+          .length;
+
         if (applicationLength > 0) {
           setShowExistingAppModal(true);
         } else {

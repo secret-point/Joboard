@@ -338,9 +338,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </Text>
                   </Row>
                   <Row gridGap={5}>
-                    <Text fontSize="T100">Time:</Text>
                     <Text fontSize="T100">
-                      {t("BB-ReviewSubmit-pre-hire-appointment-section-hours-label", "Hours:")} {nheAppointment?.startTime} - {nheAppointment?.endTime}
+                      {t("BB-ReviewSubmit-pre-hire-appointment-section-time-label", "Time:")} {moment(nheAppointment?.startTime, "hh:mm A").locale(getLocale()).format("HH:mm")} - {moment(nheAppointment?.endTime, "hh:mm A").locale(getLocale()).format("HH:mm")}
                     </Text>
                   </Row>
 
