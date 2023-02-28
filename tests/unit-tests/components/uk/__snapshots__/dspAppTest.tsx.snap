@@ -158,7 +158,7 @@ exports[`dspAppTest should match snapshot 1`] = `
       </Route>
       <Route
         exact={true}
-        path="/rehire-not-eligibile"
+        path="/rehire-not-eligible"
       >
         <Connect(GenericError) />
       </Route>
