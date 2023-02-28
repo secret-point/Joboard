@@ -1,15 +1,19 @@
 import { translate as t } from "../utils/translator";
 import { log } from "./log-helper";
 
-export const PERMANENT_CONTRACT_STRING = t(
-  "BB-schedule-card-duration-permanent", "Permanent"
-);
-export const FIXED_TERM_CONTRACT_STRING = t(
-  "BB-schedule-card-duration-fixed-term-contract", "Fixed term contract"
-);
-export const FIXED_TERM_CONTRACT_WITH_END_DATE_STRING = t(
-  "BB-schedule-card-duration-fixed-term-contract-with-end-date", "Fixed term contract until"
-);
+// TODO: Use the translated strings
+// export const PERMANENT_CONTRACT_STRING = t(
+//   "BB-schedule-card-duration-permanent", "Permanent"
+// );
+// export const FIXED_TERM_CONTRACT_STRING = t(
+//   "BB-schedule-card-duration-fixed-term-contract", "Fixed term contract"
+// );
+// export const FIXED_TERM_CONTRACT_WITH_END_DATE_STRING = t(
+//   "BB-schedule-card-duration-fixed-term-contract-with-end-date", "Fixed term contract until"
+// );
+export const PERMANENT_CONTRACT_STRING = "Permanent";
+export const FIXED_TERM_CONTRACT_STRING = "Fixed term contract";
+export const FIXED_TERM_CONTRACT_WITH_END_DATE_STRING = "Fixed term contract until";
 
 interface iScheduleDureationFn {
   employmentType: string;
