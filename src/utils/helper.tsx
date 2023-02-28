@@ -1903,7 +1903,7 @@ export const getCountryCode = (): CountryCode => {
 };
 
 export const getSpanishLocaleDateFormatter = (date: string) => {
-  return getLocale().substring(0, 2) === "es" ? date.charAt(0).toUpperCase() + date.slice(1).replace(".", "") : date;
+  return date.charAt(0).toUpperCase() + date.slice(1).replace(".", "");
 };
 
 export const formatFlexibleTrainingDate = (flexibleDate: string): string => {
@@ -2163,3 +2163,5 @@ export const initiateScheduleDetailOnPageLoad = (application: Application, targe
     routeToAppPageWithPath(targetPage, [customParams]);
   }
 };
+
+// TODO: should we break this file into multiple helper files by purpose? it's currentlu over 2k lines long which will make it harder to test
