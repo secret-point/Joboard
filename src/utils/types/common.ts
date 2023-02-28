@@ -488,6 +488,7 @@ export interface ScheduleUK {
   esl: string | null;
   iconUrl: string;
   bgcVendorName: BGC_VENDOR_TYPE;
+  duration?: string | null;
 }
 
 export interface HoursPerWeek {
