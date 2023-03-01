@@ -53,11 +53,11 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     monthlyBasePay,
     monthlyBasePayL10N,
     hireEndDate,
-    
+    displayHireEndDate = false, 
+    displayEmploymentType = true,
+    duration = null
   } = scheduleDetail;
-
-  const duration = "duration" in scheduleDetail ? scheduleDetail.duration : null ;
-
+ 
   const renderStartDate = () => {
     const localizedDate = getLocalizedDate(firstDayOnSite);
     return getLocale().substring(0, 2) === "es" ? getSpanishLocaleDateFormatter(localizedDate) : localizedDate;
@@ -99,7 +99,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       </Row>
 
-      {(hireEndDate && !duration) && (
+      {(hireEndDate && displayHireEndDate) && (
         <Row gridGap={10} alignItems="center" data-testid="schedule-details-hire-end-date">
           <IconCalendarFill size={IconSize.ExtraSmall} aria-hidden />
           <Row gridGap={3} alignItems="center">
