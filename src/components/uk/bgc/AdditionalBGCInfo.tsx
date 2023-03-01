@@ -53,7 +53,7 @@ import DatePicker from "../../common/formDatePicker/DatePicker";
 import FormInputSelect from "../../common/FormInputSelect";
 import FormInputText from "../../common/FormInputText";
 import { Text } from "@amzn/stencil-react-components/text";
-import { JOB_REFERRAL_VALUE } from "../../../utils/enums/common";
+import { HIDE_REHIRE_QUESTION_VALUE, JOB_REFERRAL_VALUE } from "../../../utils/enums/common";
 
 interface MapStateToProps {
   appConfig: AppConfig;
@@ -334,7 +334,10 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
           );
         })
       }
-      <PreviousWorkedAtAmazonForm isDisplayPreviousWorkedForm={false} />
+      {
+        applicationData?.hideRehireQuestions !== HIDE_REHIRE_QUESTION_VALUE.YES &&
+        <PreviousWorkedAtAmazonForm isDisplayPreviousWorkedForm={false} />
+      }
 
       {
         jobDetail?.activateReferralIncentive && (

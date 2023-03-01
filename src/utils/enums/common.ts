@@ -410,4 +410,9 @@ export enum JOB_REFERRAL_VALUE {
   YES = "yes",
   NO = "no"
 }
+
+export enum HIDE_REHIRE_QUESTION_VALUE {
+  YES = "yes",
+  NO = "no"
+}
 export const NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES = 3;

@@ -7,6 +7,7 @@ import {
   DESIRED_WORK_HOURS,
   FCRA_DISCLOSURE_TYPE,
   FEATURE_FLAG,
+  HIDE_REHIRE_QUESTION_VALUE,
   INFO_CARD_STEP_STATUS,
   JOB_REFERRAL_VALUE,
   QUERY_PARAMETER_NAME,
@@ -650,6 +651,7 @@ export interface Application {
   applicationSignature: ElectronicSignature;
   additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
   shiftPreference?: ShiftPreferenceData;
+  hideRehireQuestions?: HIDE_REHIRE_QUESTION_VALUE;
 }
 
 export interface JobScheduleSelected {
