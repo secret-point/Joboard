@@ -148,6 +148,11 @@ export const AssessmentConsent = (props: MapStateToProps) => {
                 {t("BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2", "After you finish the assessment, you will be returned to your application process.")}
               </Text>
             </li>
+            <li>
+              <Text>
+                {t("BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3", "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1.")}
+              </Text>
+            </li>
           </ul>
 
         </Expander>
