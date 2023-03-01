@@ -71,7 +71,7 @@ export const Assessment = (props: MapStateToProps) => {
   return (
     <>
       <Col gridGap="S300" padding="0">
-        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} />
+        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={ApplicationStepListUK} />
         {assessment?.assessmentUrl && <IFrame src={ assessment.assessmentUrl} />}
       </Col>
     </>

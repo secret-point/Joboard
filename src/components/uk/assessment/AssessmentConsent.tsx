@@ -119,7 +119,7 @@ export const AssessmentConsent = (props: MapStateToProps) => {
   return (
     <>
       <Col gridGap="S300" padding="0">
-        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} />
+        <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={ApplicationStepListUK} />
 
         <H1 fontSize="T400" fontWeight="regular">
           {t("BB-AssessmentConsentPage-title-text", "Assessment")}

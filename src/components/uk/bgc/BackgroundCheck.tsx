@@ -54,7 +54,11 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const { scheduleDetail } = schedule.results;
   const { candidateData } = candidate.results;
   const isWithAssessment = assessment.results.assessmentElegibility;
-  const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
+  const isShiftPreferencesJourney = !applicationData?.jobScheduleSelected.scheduleId ;
+  
+  let applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
+  applicationSteps = !isShiftPreferencesJourney ? applicationSteps : getStepsByTitle(applicationSteps, STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT, false );
+
   const headerStep = getStepsByTitle(applicationSteps, STEPS.ENTER_REQUIRED_INFORMATION)[0];
 
   useEffect(() => {

@@ -22,6 +22,8 @@ import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailAct
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
 import { ApplicationStepListMap } from "../../../utils/constants/common";
+import { APPLICATION_STEPS } from "../../../utils/enums/common";
+import { getStepsByTitle } from "../../../helpers/steps-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -37,6 +39,9 @@ export const PreConsent = (props: MapStateToProps) => {
   const jobDetail = job.results;
   const { CONSENT } = PAGE_ROUTES;
   const { matches } = useBreakpoints();
+  const withAssessment = !job.results?.bypassAssessment;
+  const steps = ApplicationStepListMap[getCountryCode()];
+  const applicationSteps = withAssessment ? steps : getStepsByTitle(steps, APPLICATION_STEPS.COMPLETE_AN_ASSESSMENT, false );
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -71,7 +76,7 @@ export const PreConsent = (props: MapStateToProps) => {
       ]}
       maxWidth="40vw"
     >
-      <ApplicationSteps steps={ApplicationStepListMap[getCountryCode()]} />
+      <ApplicationSteps steps={applicationSteps} />
     </FlyoutContent>
   );
 
