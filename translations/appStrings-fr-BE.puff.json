@@ -1804,6 +1804,10 @@
       "value" : "Durée",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Date de fin",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "Emplacement",
       "note" : "Text for the location of job text"
@@ -3075,6 +3079,14 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Soumettez vos préférences de quart de services",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Merci pour votre candidature.",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Nous évaluons actuellement votre candidature et vous contacterons bientôt à l'adresse e-mail que vous avez fournie.",
+      "note" : "Content for the Generic error page in the UK application"
     }
   }
 }

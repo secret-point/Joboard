@@ -660,6 +660,14 @@
       "value" : "Welke informatie moet worden opgenomen",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Vermeld de staat en de deelstaat van de veroordeling. Vermeld ook de datum, de aard van het misdrijf en de informatie over de veroordeling.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Schrijf slechts één alinea en druk niet op Enter tijdens het typen.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} tekens ingevoerd (max.{recommendedCharacterCount} tekens)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -1460,6 +1468,10 @@
       "value" : "Bij Amazon vieren we de diversiteit van ons personeelsbestand en de verschillende manieren waarop we werken. Als je een handicap hebt en assistentie nodig hebt tijdens het aanwervingsproces, inclusief de beoordeling, ga dan naar Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Alle onderdelen van deze beoordeling:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Zijn geoptimaliseerd voor de volgende schermlezers: VoiceOver (Mac) en NVDA (Windows) in Firefox, Chrome en Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1672,6 +1684,22 @@
       "value" : "Nee",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Bedankt voor het indienen van je voorkeuren voor een ploegendienst.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "We nemen contact met je op zodra we een ploegendienst hebben gevonden die bij de door jou gekozen voorkeuren past.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Hartelijk dank voor het indienen van je voorkeuren voor een afspraak vóór indiensttreding.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "We nemen contact met je op zodra we een afspraak vóór indiensttreding hebben gevonden die bij de door jou gekozen voorkeuren past.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Klik <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>hier</a> voor een volledige lijst van acceptabele documenten.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -1771,6 +1799,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "Duur",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Einddatum",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "Locatie",
@@ -2624,6 +2656,10 @@
       "value" : "Biometrische verblijfsvergunning",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Voor meer informatie en informatie over alle acceptabele documenten over het recht om te werken, zie onze<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'> Britse werkautorisatiegids voor werknemers</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Je bent 18 jaar of ouder.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2872,6 +2908,22 @@
       "value" : "Selecteer je voorkeuren voor evenementen voorafgaand aan de verhuur",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Voorkeuren voor een afspraak vóór indiensttreding",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Gewenste plaats",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Gewenste datum(s)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Gewenste tijd(en)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Je hebt een actieve sollicitatie",
       "note" : "Text for consent existing application notice title"
@@ -3023,6 +3075,14 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Dien je voorkeuren voor werktijden in",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Bedankt voor je sollicitatie!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "We zijn momenteel je sollicitatie aan het beoordelen en nemen binnenkort contact met je op via het e-mailadres dat je hebt opgegeven.",
+      "note" : "Content for the Generic error page in the UK application"
     }
   }
 }

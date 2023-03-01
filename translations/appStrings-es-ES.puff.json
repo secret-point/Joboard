@@ -1532,6 +1532,10 @@
       "value" : "Horas:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Hora:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Esperamos verte en el momento indicado arriba.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "Duración",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Fecha de finalización",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "Ubicación",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Estamos evaluando tu solicitud y en breve nos pondremos en contacto contigo a través de la dirección de correo electrónico que nos has proporcionado.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "Volver al panel de control",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

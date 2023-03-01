@@ -1532,6 +1532,10 @@
       "value" : "시간:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "시간:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "위 시간에 뵙겠습니다.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "근무 기간",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "종료 날짜",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "위치",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "현재 귀하의 지원서를 검토 중이며 제공해 주신 이메일 주소로 곧 연락드리겠습니다.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "대시보드로 돌아가기",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

@@ -1532,6 +1532,10 @@
       "value" : "営業時間:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "時刻:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "上記の時間にお会いできるのを楽しみにしています。",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "期間",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "終了日",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "場所",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "現在、応募書類に基づき、選考を進めております。ご入力いただいたEメールアドレス宛に追ってご連絡を差し上げます。",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "ダッシュボードに戻る",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

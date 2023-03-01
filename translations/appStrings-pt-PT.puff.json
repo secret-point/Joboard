@@ -1804,6 +1804,10 @@
       "value" : "Duração",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Data de fim",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "Localização",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Neste momento, estamos a avaliar a sua candidatura e entraremos em contacto consigo em breve, através do endereço de e-mail que forneceu.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "Voltar para o painel",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

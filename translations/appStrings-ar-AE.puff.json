@@ -1532,6 +1532,10 @@
       "value" : "ساعات:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "الوقت:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "نتطلع إلى رؤيتك في الوقت المحدد أعلاه.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "المدة الزمنية",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "تاريخ الانتهاء",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "الموقع",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "نعمل حاليًا على تقييم طلبك وسنتواصل معك على عنوان البريد الإلكتروني الذي قدمته قريبًا.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "رجوع إلى لوحة السجل",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

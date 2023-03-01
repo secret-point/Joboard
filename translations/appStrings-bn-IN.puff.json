@@ -1532,6 +1532,10 @@
       "value" : "ঘণ্টা:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "সময়:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "আমরা উপরের সময়ে আপনাকে দেখার প্রত্যাশা রাখি।",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "মেয়াদ",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "শেষ তারিখ",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "অবস্থান",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "আমরা বর্তমানে আপনার আবেদনটি মূল্যায়ন করছি এবং শীঘ্রই আপনি যে ইমেল ঠিকানাটি দিয়েছেন তা ব্যবহার করে আপনার সাথে যোগাযোগ করব।",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "ড্যাশবোর্ডে ফিরে যান",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

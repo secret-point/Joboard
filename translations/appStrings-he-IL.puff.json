@@ -1804,6 +1804,10 @@
       "value" : "משך זמן",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "תאריך סיום",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "מיקום",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "אנו בוחנים כעת את בקשתך וניצור איתך קשר בקרוב באמצעות כתובת הדואר האלקטרוני שסיפקת.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "חזרה ללוח הבקרה",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

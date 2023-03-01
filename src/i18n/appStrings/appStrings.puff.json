@@ -966,6 +966,42 @@
             "note": "Text for aleady applied job return to dashboard button text",
             "value": "Return to dashboard"
         },
+        "BB-already-applied-v2": {
+            "note": "Text for already applied job text",
+            "value": "You have already submitted an application for the role:"
+        },
+        "BB-already-applied-description-v2": {
+            "note": "Text for already applied job description text",
+            "value": "You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'."
+        },
+        "BB-already-applied-button-text-v2": {
+            "note": "Text for already applied job return to dashboard button text",
+            "value": "Go to dashboard"
+        },
+        "BB-already-applied-but-can-be-reset": {
+            "note": "Text for already applied job but can be reset",
+            "value": "You already have an active application for the role:"
+        },
+        "BB-already-applied-but-can-be-reset-dashboard-description": {
+            "note": "Text for already applied job but can be reset description to go back to dashboard",
+            "value": "If you proceed with this new application, your existing one will be withdrawn. To view or resume your existing application, click 'Go to dashboard'."
+        },
+        "BB-already-applied-but-can-be-reset-continue-description": {
+            "note": "Text for already applied job but can be reset description to continue new application",
+            "value": "To proceed with new application, click 'Continue with application'."
+        },
+        "BB-already-applied-but-continue-button-text": {
+            "note": "Text for already applied job but can continue with new application button",
+            "value": "Continue with new application"
+        },
+        "BB-new-application": {
+            "note": "Text for new application",
+            "value": "New application:"
+        },
+        "BB-existing-application": {
+            "note": "Text for existing application",
+            "value": "Existing application:"
+        },
         "BB-SelfId-disability-form-name-text": {
             "note": "Text for Self Identification form name",
             "value": "Form CC-305"

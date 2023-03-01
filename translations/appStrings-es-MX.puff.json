@@ -160,6 +160,10 @@
       "value" : "Completar los documentos requeridos",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Ingresa la información requerida",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Programar cita previa a la contratación",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1800,6 +1804,10 @@
       "value" : "Duración",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Fecha de finalización",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "Ubicación",
       "note" : "Text for the location of job text"
@@ -3079,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "En este momento estamos evaluando tu solicitud, en breve nos pondremos en contacto contigo a través de la dirección de correo electrónico que nos proporcionaste.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "Volver al panel de control",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

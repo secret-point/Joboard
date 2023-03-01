@@ -160,6 +160,10 @@
       "value" : "Gerekli belgeleri tamamlayın",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Gerekli bilgileri girin.",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "İşe alım öncesi randevusunu planlayın",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1528,6 +1532,10 @@
       "value" : "Saat:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Saat:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Sizi yukarıdaki saatte görmek için sabırsızlanıyoruz.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1799,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "Süre",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Bitiş tarihi",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "Konum",
@@ -3079,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Şu anda başvurunuzu değerlendiriyoruz ve verdiğiniz e-posta adresini kullanarak yakında sizinle iletişime geçeceğiz.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "Panele geri dön",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

@@ -1804,6 +1804,10 @@
       "value" : "Varighed",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Slutdato",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "Placering",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Vi evaluerer i øjeblikket din ansøgning og kontakter dig snart ved brug af den mail-adresse, du har angivet.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "Tilbage til oversigt",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

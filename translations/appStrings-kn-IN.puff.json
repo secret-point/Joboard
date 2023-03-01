@@ -1804,6 +1804,10 @@
       "value" : "ಅವಧಿ",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "ಮುಕ್ತಾಯ ದಿನಾಂಕ",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "ಸ್ಥಳ",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "ನಾವು ಪ್ರಸ್ತುತ ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡುತ್ತಿದ್ದೇವೆ ಮತ್ತು ನೀವು ಒದಗಿಸಿದ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಬಳಸಿಕೊಂಡು ಶೀಘ್ರದಲ್ಲೇ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "ಡ್ಯಾಶ್‍‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

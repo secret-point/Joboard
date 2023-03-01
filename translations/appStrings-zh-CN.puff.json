@@ -1804,6 +1804,10 @@
       "value" : "时长",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "结束日期",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "位置",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "我们目前正在评估您的申请，并将很快通过您提供的电子邮件地址与您联系。",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "返回控制面板",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

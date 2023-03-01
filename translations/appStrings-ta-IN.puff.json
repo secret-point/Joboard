@@ -1804,6 +1804,10 @@
       "value" : "கால அளவு",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "முடிவுத் தேதி",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "இருப்பிடம்",
       "note" : "Text for the location of job text"
@@ -3083,10 +3087,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "உங்கள் விண்ணப்பத்தைத் தற்போது மதிப்பாய்வு செய்து வருகிறோம். நீங்கள் வழங்கிய மின்னஞ்சல் முகவரியில் விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "டாஷ்போர்டுக்குத் திரும்புக",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

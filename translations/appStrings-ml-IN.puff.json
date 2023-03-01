@@ -1532,6 +1532,10 @@
       "value" : "മണിക്കൂറുകൾ:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "സമയം:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "മുകളിലുള്ള സമയത്ത് നിങ്ങളെ കാണുമെന്ന പ്രതീക്ഷയോടെ ഞങ്ങൾ കാത്തിരിക്കുകയാണ്.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "ദൈര്‍ഘ്യം",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "അവസാന തീയതി",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "ലൊക്കേഷൻ",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "ഞങ്ങൾ നിലവിൽ നിങ്ങളുടെ അപേക്ഷ വിലയിരുത്തുകയാണ്, നിങ്ങൾ നൽകിയ ഇമെയിൽ വിലാസം ഉപയോഗിച്ച് ഉടൻ നിങ്ങളെ ബന്ധപ്പെടും.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "ഡാഷ് ബോർഡിലേക്ക് മടങ്ങുക",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

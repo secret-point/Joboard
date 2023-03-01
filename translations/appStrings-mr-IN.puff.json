@@ -1792,6 +1792,10 @@
       "value" : "कालावधी",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "समाप्ती दिनांक",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "लोकेशन",
       "note" : "Text for the location of job text"
@@ -3039,6 +3043,14 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "तुमची शिफ्ट प्राधान्ये सबमिट करा",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "अर्ज केल्याबद्दल धन्यवाद!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "आम्ही सध्या तुमच्या अर्जाचे मूल्यमापन करत आहोत आणि तुम्ही दिलेल्या ईमेल पत्त्याचा वापर करून लवकरच तुमच्याशी संपर्क साधू.",
+      "note" : "Content for the Generic error page in the UK application"
     }
   }
 }

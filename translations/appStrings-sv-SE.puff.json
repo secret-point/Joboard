@@ -160,6 +160,10 @@
       "value" : "Fyll i nödvändiga dokument",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "Ange obligatorisk information",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "Boka nyanställningsmöte",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -1768,6 +1772,10 @@
       "value" : "Varaktighet",
       "note" : "Text for the duration of job text"
     },
+    "BB-Schedule-card-end-date" : {
+      "value" : "Slutdatum",
+      "note" : ""
+    },
     "BB-Schedule-card-location" : {
       "value" : "Plats",
       "note" : "Text for the location of job text"
@@ -3015,6 +3023,14 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Skicka in dina skiftpreferenser",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Tack för din ansökan!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "Vi utvärderar för närvarande din ansökan och kommer snart att kontakta dig på den e-postadress du har angett.",
+      "note" : "Content for the Generic error page in the UK application"
     }
   }
 }

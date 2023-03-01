@@ -1532,6 +1532,10 @@
       "value" : "గంటలు:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "సమయం:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "పై సమయంలో మిమ్మల్ని చూడాలని మేము ఎదురుచూస్తున్నాము.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1803,6 +1807,10 @@
     "BB-Schedule-card-duration" : {
       "value" : "వ్యవధి",
       "note" : "Text for the duration of job text"
+    },
+    "BB-Schedule-card-end-date" : {
+      "value" : "చివరి తేది",
+      "note" : ""
     },
     "BB-Schedule-card-location" : {
       "value" : "లొకేషన్",
@@ -3083,10 +3091,6 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "మేము ప్రస్తుతం మీ దరఖాస్తును అంచనా వేస్తున్నాము మరియు మీరు త్వరలో అందించిన ఇమెయిల్ చిరునామాను ఉపయోగించి మిమ్మల్ని సంప్రదిస్తాము.",
       "note" : "Content for the Generic error page in the UK application"
-    },
-    "BB-uk-generic-error-return-to-dashboard-button-label" : {
-      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
-      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }
