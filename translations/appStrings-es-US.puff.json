@@ -1700,6 +1700,10 @@
       "value" : "Nos pondremos en contacto contigo en cuanto encontremos una cita previa a la contratación que funcione para ti de acuerdo con tus preferencias elegidas.",
       "note" : "Text for the thank you page with nhe preference title text"
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Haz clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de documentos aceptables.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Si tienes alguna discapacidad y consideras que puedes requerir alguna adaptación para el proceso de reclutamiento de Amazon, contáctanos llamando al 0808 164 9427 o por correo electrónico a myapplication@amazon.co.uk para hablar al respecto",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2648,6 +2652,10 @@
       "value" : "Permiso de residencia biométrico",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "Para obtener más información y detalles de todos los documentos del Derecho al trabajo aceptables, consulta nuestra <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Guía de autorización de trabajo para empleados del Reino Unido</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Tienes 18 años o más.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2895,6 +2903,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "Selecciona tus preferencias para el evento previo a la contratación",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferencias para la cita previa a la contratación",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Ciudad preferida",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Fechas preferidas",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Horas preferidas",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Tienes una solicitud de empleo activa",

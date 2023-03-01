@@ -14,7 +14,7 @@ import {
 } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { boundGetScheduleDetail } from "../../../actions/ScheduleActions/boundScheduleActions";
-import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { boundHidePageLoader, boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
 import {
   getPageNameFromPath,
   parseQueryParamsArrayToSingleItem,
@@ -107,6 +107,7 @@ export const Consent = (props: MapStateToProps) => {
           .length;
 
         if (applicationLength > 0) {
+          boundHidePageLoader();
           setShowExistingAppModal(true);
         } else {
           executeCreateApplication();

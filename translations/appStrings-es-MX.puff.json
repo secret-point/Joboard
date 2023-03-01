@@ -1684,6 +1684,22 @@
       "value" : "No",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias de turno.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos un turno que funcione para ti con las preferencias que elegiste.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Gracias por enviar tus preferencias para la cita previa a la contratación.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Nos pondremos en contacto contigo en cuanto encontremos una cita previa a la contratación que funcione para ti con las preferencias que elegiste.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
       "value" : "Haz clic <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>aquí</a> para obtener una lista completa de documentos aceptables.",
       "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
@@ -3055,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Envía tus preferencias de turno",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "¡Gracias por postular!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "En este momento estamos evaluando tu solicitud, en breve nos pondremos en contacto contigo a través de la dirección de correo electrónico que nos proporcionaste.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Volver al panel de control",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

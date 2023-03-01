@@ -43,7 +43,6 @@ export const GetNheTimeSlotsDs = (action$: Observable<any>) => {
           catchError((error: ApiError) => {
             log(`[Epic] GetNheTimeSlotsDs error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
             const errorMessage = GetTimeSlotsErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
-            routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
             setEpicApiCallErrorMessage(errorMessage);
             return of(actionGetNheTimeSlotsDsFailed(error));
           })
@@ -74,7 +73,11 @@ export const GetNheTimeSlotsThroughNheDs = (action$: Observable<any>) => {
           catchError((error: ApiError) => {
             log(`[Epic] GetNheTimeSlotsDs error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
             const errorMessage = GetTimeSlotsErrorMessages[error.errorCode] || UpdateApplicationErrorMessage[UPDATE_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];
-            routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
+
+            if (action.redirectWhenNoData) {
+              routeToAppPageWithPath(PAGE_ROUTES.NO_AVAILABLE_TIME_SLOTS);
+            }
+            
             setEpicApiCallErrorMessage(errorMessage);
             return of(actionGetNheTimeSlotsDsFailed(error));
           })

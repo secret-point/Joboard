@@ -5,9 +5,11 @@ import {
   GetCountryStateConfigAction,
   GetCountryStateConfigSuccessAction,
   HideAppLoaderAction,
+  HidePageLoaderAction,
   ResetBannerMessage,
   SetBannerMessage,
   ShowAppLoaderAction,
+  ShowPageLoaderAction,
   UI_STATE_TYPES
 } from "./uiActionTypes";
 
@@ -48,6 +50,18 @@ export const actionShowAppLoader = (): ShowAppLoaderAction => {
 export const actionHideAppLoader = (): HideAppLoaderAction => {
   return {
     type: UI_STATE_TYPES.HIDE_WOTC_LOADER
+  };
+};
+
+export const actionHidePageLoader = (): HidePageLoaderAction => {
+  return {
+    type: UI_STATE_TYPES.HIDE_LOADER
+  };
+};
+
+export const actionShowPageLoader = (): ShowPageLoaderAction => {
+  return {
+    type: UI_STATE_TYPES.SHOW_LOADER
   };
 };
 

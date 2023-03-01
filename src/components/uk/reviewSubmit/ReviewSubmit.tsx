@@ -42,7 +42,7 @@ import {
   getFeatureFlagValue,
   getLocale,
   goToCandidateDashboard,
-  initiateScheduleDetailOnPageLoad,
+  initiateScheduleDetailOnPageLoad
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
 import { Application } from "../../../utils/types/common";
@@ -171,7 +171,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
             submitApplication(applicationData);
           });
         } else {
-          setShowWithdrawModal(shouldWarningShowModal);
+          setShowWithdrawModal(true);
         }
       }
     }

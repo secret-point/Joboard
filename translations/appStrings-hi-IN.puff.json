@@ -3031,6 +3031,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "अपनी शिफ्ट प्राथमिकताएं सबमिट करें",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "आवेदन करने के लिए धन्यवाद!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "हम फ़िलहाल आपके आवेदन का आकलन कर रहे हैं और आपके द्वारा दिए गए ईमेल एड्रेस का इस्तेमाल करके आपसे ज़ल्द ही संपर्क करेंगे.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }

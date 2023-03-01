@@ -20,7 +20,9 @@ export enum BANNER_MESSAGE_TYPE {
 
 export enum UI_STATE_TYPES {
   SHOW_WOTC_LOADER= "SHOW_WOTC_APP_LOADER",
-  HIDE_WOTC_LOADER = "HIDE_WOTC_APP_LOADER"
+  HIDE_WOTC_LOADER = "HIDE_WOTC_APP_LOADER",
+  SHOW_LOADER = "SHOW_LOADER",
+  HIDE_LOADER = "HIDE_LOADER"
 }
 
 export interface GetCountryStateConfigAction extends Action {
@@ -69,6 +71,14 @@ export interface HideAppLoaderAction extends Action {
   type: UI_STATE_TYPES.HIDE_WOTC_LOADER;
 }
 
+export interface ShowPageLoaderAction extends Action {
+  type: UI_STATE_TYPES.SHOW_LOADER;
+}
+
+export interface HidePageLoaderAction extends Action {
+  type: UI_STATE_TYPES.HIDE_LOADER;
+}
+
 export type UI_ACTION =
   GetCountryStateConfigAction |
   GetCountryStateConfigSuccessAction |
@@ -79,4 +89,6 @@ export type UI_ACTION =
   SetBannerMessage |
   ResetBannerMessage |
   HideAppLoaderAction |
-  ShowAppLoaderAction ;
+  ShowAppLoaderAction |
+  ShowPageLoaderAction |
+  HidePageLoaderAction;

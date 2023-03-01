@@ -168,7 +168,7 @@ export const ThankYou = (props: MapStateToProps) => {
     <Col gridGap="S300" padding={{ top: "S300" }}>
 
       {/* when shift preference selected and no shift selected, https://sim.amazon.com/issues/Kondo_QA_Issue-51 */}
-      { !scheduleDetail && applicationData?.shiftPreference && (
+      { !applicationData?.jobScheduleSelected.scheduleId && applicationData?.shiftPreference && (
         <Col gridGap="S300">
           <Text fontSize="T400">
             {t("BB-Kondo-ThankYou-with-shift-preference-title-text", "Thank you for submitting your shift preferences!")}

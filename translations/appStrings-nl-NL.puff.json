@@ -1672,6 +1672,10 @@
       "value" : "Nee",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klik <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>hier</a> voor een volledige lijst van acceptabele documenten.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Als je een beperking hebt en van mening bent dat je misschien een aanpassing nodig hebt in het wervingsproces van Amazon, neem dan contact met ons op om dit te bespreken op 0808 164 9427 of per e-mail op myapplication@amazon.co.uk",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2147,6 +2151,10 @@
     "BB-bgc-ConvictionInfoRadio-error-message" : {
       "value" : "Vink het vakje aan om verder te gaan.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
+    },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Voer de gegevens van de veroordeling in met alleen de volgende speciale tekens (-! /,. () #?). Schrijf slechts één alinea en druk niet op Enter tijdens het typen.",
+      "note" : "Text for ConvictionDetail bgc info error message"
     },
     "BB-States-Alabama" : {
       "value" : " AL -- Alabama",

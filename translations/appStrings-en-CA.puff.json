@@ -3071,6 +3071,18 @@
     "BB-no-available-shift-submit-shift-preferences" : {
       "value" : "Submit your shift preferences",
       "note" : "kondo shift not available page - go to shift preference buttob"
+    },
+    "BB-uk-generic-error-title-text" : {
+      "value" : "Thank You for Applying!",
+      "note" : "Title for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-content-text" : {
+      "value" : "We are currently evaluating your application and will contact you soon, using the email address you have provided.",
+      "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Return to dashboard",
+      "note" : "return to dashboar button label in the Generic error page"
     }
   }
 }
