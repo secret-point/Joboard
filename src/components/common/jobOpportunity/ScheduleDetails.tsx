@@ -168,7 +168,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </Row>
       </Row>
 
-      {employmentTypeL10N && (
+      {employmentTypeL10N && displayEmploymentType && (
         <Row gridGap={10} alignItems="center">
           <IconClock size={IconSize.ExtraSmall} aria-hidden />
           <Row gridGap={3} alignItems="center">
