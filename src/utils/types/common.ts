@@ -333,7 +333,7 @@ export interface Schedules {
   country: string;
 }
 
-export type Schedule = ScheduleUK | ScheduleUS;
+export type Schedule = (ScheduleUK | ScheduleUS) & ScheduleExtraProps;
 
 export interface ScheduleUS {
   scheduleId: string;
@@ -488,8 +488,14 @@ export interface ScheduleUK {
   esl: string | null;
   iconUrl: string;
   bgcVendorName: BGC_VENDOR_TYPE;
-  duration?: string | null;
 }
+
+interface ScheduleExtraProps {
+  duration?: string | null;
+  displayHireEndDate?: boolean; 
+  displayEmploymentType?: boolean;
+  useScheduleCardDetails?: boolean;
+};
 
 export interface HoursPerWeek {
   maximumValue: number;

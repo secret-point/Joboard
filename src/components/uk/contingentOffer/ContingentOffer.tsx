@@ -39,6 +39,7 @@ import { ApplicationStepListUK } from "../../../utils/constants/common";
 import { boundGetAssessmentElegibility } from "../../../actions/AssessmentActions/boundAssessmentActions";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import { getScheduleInUKFormat } from "../../../helpers/schedule-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -63,7 +64,8 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   const { applicationId, jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const { scheduleDetail } = schedule.results;
+  let { scheduleDetail } = schedule.results;
+  scheduleDetail = scheduleDetail && getScheduleInUKFormat(scheduleDetail);
   const { candidateData } = candidate.results;
   const isWithAssessment = assessment.results.assessmentElegibility;
   const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);

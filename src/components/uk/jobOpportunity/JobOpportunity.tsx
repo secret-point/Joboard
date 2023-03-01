@@ -50,6 +50,8 @@ import { boundGetAssessmentElegibility } from "../../../actions/AssessmentAction
 import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { getScheduleInUKFormat } from "../../../helpers/schedule-helper";
+import { Schedule } from "../../../utils/types/common";
 
 interface MapStateToProps {
   job: JobState;
@@ -64,13 +66,13 @@ type JobOpportunityMergedProps = MapStateToProps ;
 export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const { job, application, schedule, candidate, assessment } = props;
   const { search, pathname } = useLocation();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
   const scheduleData = schedule.results.scheduleList;
+  const scheduleDataUK = scheduleData && scheduleData.map(schedule => getScheduleInUKFormat(schedule)) ;
   const scheduleFilters = schedule.filters;
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
@@ -242,7 +244,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
             </Row>
           </Row>
           {
-            scheduleData && scheduleData.map(scheduleItem => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
+            scheduleDataUK && scheduleDataUK.map((scheduleItem: Schedule) => <ScheduleCard key={scheduleItem.scheduleId} scheduleDetail={scheduleItem} />)
           }
           <ShiftPreferenceCard />
         </Col>

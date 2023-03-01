@@ -52,6 +52,7 @@ import ScheduleCard from "../../common/jobOpportunity/ScheduleCard";
 import CustomModal from "../../common/CustomModal";
 import moment from "moment";
 import { PAGE_ROUTES } from "../../pageRoutes";
+import { getScheduleInUKFormat } from "../../../helpers/schedule-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -71,8 +72,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
   const jobDetail = job.results;
   const { candidateData } = candidate.results;
-  const { scheduleDetail } = schedule.results;
-
+  let { scheduleDetail } = schedule.results;
+  scheduleDetail = scheduleDetail && getScheduleInUKFormat(scheduleDetail);
   const applicationData = application.results;
   const activeApplicationList = application.applicationList;
   const nheAppointment = applicationData?.nheAppointment;
