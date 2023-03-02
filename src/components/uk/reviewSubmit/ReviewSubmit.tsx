@@ -53,6 +53,7 @@ import CustomModal from "../../common/CustomModal";
 import moment from "moment";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { getScheduleInUKFormat } from "../../../helpers/schedule-helper";
+import { log } from "../../../helpers/log-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -156,22 +157,39 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           return application.applicationId !== applicationData?.applicationId && application.submitted && application.active;
         }) : [];
 
+      log(`[review-submit][Submit-application]  starting submit application of id: ${applicationData.applicationId} - active application"`, activeApplicationsToWithdraw);
+
       setActiveApplicationToBeWithdrawn(activeApplicationsToWithdraw);
 
       if (activeApplicationsToWithdraw.length=== 0) {
         submitApplication(applicationData);
       } else {
-        const withdrawReasons = activeApplicationsToWithdraw.map(app => getApplicationWithdrawalReason(applicationData, app));
+        const applicationWithWithdrawReason: Application[] = [];
+        const withdrawReasons = activeApplicationsToWithdraw.map(app => {
+          const withdrawReason = getApplicationWithdrawalReason(applicationData, app);
+          // only widthdraw application with withdraw reason
+          if (!!withdrawReason) {
+            applicationWithWithdrawReason.push(app);
+          }
+          return withdrawReason;
+        });
         const shouldWarningShowModal = withdrawReasons.some(reason => Boolean(reason));
-        const shouldWidthdrawWithoutWarning = shouldWarningShowModal && withdrawReasons.some(reason => {
+        const shouldWidthdrawWithoutWarning = withdrawReasons.some(reason => {
           return reason === WITHDRAW_REASON_CASE.CASE_2;
         });
 
-        if (shouldWidthdrawWithoutWarning) {
-          bulkWithdrawAndSubmitApplication(activeApplicationsToWithdraw, () => {
+        if (!shouldWarningShowModal) {
+          log("[review-submit][Submit-application] not showing withdraw warning modal -- no withdraw at all -- withdraw reasons", withdrawReasons);
+          submitApplication(applicationData);
+        } else if (shouldWidthdrawWithoutWarning) {
+          log("[review-submit][Submit-application]  not showing withdraw warning modal -- withdraw without warning -- withdraw reasons", withdrawReasons);
+          log("[review-submit][Submit-application]  not showing withdraw warning modal -- withdraw without warning -- application to withdraw reasons", applicationWithWithdrawReason);
+
+          bulkWithdrawAndSubmitApplication(applicationWithWithdrawReason, () => {
             submitApplication(applicationData);
           });
         } else {
+          log("[review-submit][Submit-application]  showing withdraw warning modal -- withdraw reasons", withdrawReasons);
           setShowWithdrawModal(true);
         }
       }

@@ -15,12 +15,13 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { useLocation } from "react-router-dom";
 import { JobState } from "../../../reducers/job.reducer";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
-import { checkAndBoundGetApplication, getLocale } from "../../../utils/helper";
+import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import { ApplicationState } from "../../../reducers/application.reducer";
 import queryString from "query-string";
 import { WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
 import { boundResetBannerMessage } from "../../../actions/UiActions/boundUi";
+import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {
   candidate: CandidateState;
@@ -69,6 +70,7 @@ export const SessionTimeout = (props: MapStateToProps) => {
     const isBackButton = true;
     const targetPageToGoBack = WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES;
     applicationData && onCompleteTaskHelper(applicationData, isBackButton, targetPageToGoBack);
+    routeToAppPageWithPath(PAGE_ROUTES.JOB_OPPORTUNITIES);
   };
 
   return (
