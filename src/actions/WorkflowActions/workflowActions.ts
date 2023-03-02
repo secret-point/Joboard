@@ -1,5 +1,5 @@
 import moment from "moment";
-import { PAGE_ROUTES } from "../../components/pageRoutes";
+import { PAGE_ROUTES, PagesControlledByWorkFlowService } from "../../components/pageRoutes";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
 import { log, logError } from "../../helpers/log-helper";
 import { checkIfIsCSRequest } from "../../helpers/utils";
@@ -113,33 +113,44 @@ export const sendHeartBeatWorkflow = () => {
 };
 
 export const ifShouldGoToStep = (targetStepName: string, currentStepName: string): boolean => {
-  // Do not redirect if the current step is the same as the target step
   if (targetStepName === currentStepName) {
-    return false;
-  }
+    // Do not redirect if the current step is the same as the target step
 
-  // Do not redirect to `assessment-consent` if the current step is `assessment-finished`.
-  //
-  // There is a race condition on `assessment-finished` page, when HOOK redirect back to us, since the whole domain and url change it's a
-  // page refresh. BB UI will reconnect websocket which will returns the step `assessment-consent`, since there is a mismatch between the
-  // current step and the current page, BB UI will try to redirect the user to the `assessment-consent` page the WS response indicates.
-  //
-  // We want to make sure that the user stays at `assessment-finished` page when we are trying to completeTask assessment-consent. Otherwise,
-  // the user will see the `assessment-consent` page first then after a few seconds be redirected back to the next step.
-  if (currentStepName === PAGE_ROUTES.ASSESSMENT_FINISHED &&
+    return false;
+  } else if (currentStepName === PAGE_ROUTES.ASSESSMENT_FINISHED &&
     targetStepName === WORKFLOW_STEP_NAME.ASSESSMENT_CONSENT) {
-    return false;
-  }
 
-  // Make sure that the user stays at `wotc-complete` page when we are trying to completeTask wotc. Otherwise,
-  // the user will see the `wotc` page first then after a few seconds be redirected back to the next step, which is `supplementary-success`.
-  // Right now wotc page takes a long time (~2-5s) to load that's why we didn't see any page flickering at this time.
-  if (currentStepName === PAGE_ROUTES.WOTC_COMPLETE &&
+    // Do not redirect to `assessment-consent` if the current step is `assessment-finished`.
+    //
+    // There is a race condition on `assessment-finished` page, when HOOK redirect back to us, since the whole domain and url change it's a
+    // page refresh. BB UI will reconnect websocket which will returns the step `assessment-consent`, since there is a mismatch between the
+    // current step and the current page, BB UI will try to redirect the user to the `assessment-consent` page the WS response indicates.
+    //
+    // We want to make sure that the user stays at `assessment-finished` page when we are trying to completeTask assessment-consent. Otherwise,
+    // the user will see the `assessment-consent` page first then after a few seconds be redirected back to the next step.
+
+    return false;
+  } else if (currentStepName === PAGE_ROUTES.WOTC_COMPLETE &&
     targetStepName === WORKFLOW_STEP_NAME.WOTC) {
-    return false;
-  }
 
+    // Make sure that the user stays at `wotc-complete` page when we are trying to completeTask wotc. Otherwise,
+    // the user will see the `wotc` page first then after a few seconds be redirected back to the next step, which is `supplementary-success`.
+    // Right now wotc page takes a long time (~2-5s) to load that's why we didn't see any page flickering at this time.
+
+    return false;
+  } else if (Object.values(PAGE_ROUTES).includes(currentStepName as PAGE_ROUTES) &&
+    !Object.values(PagesControlledByWorkFlowService).includes(currentStepName as PAGE_ROUTES)) {
+    // this is to address the infinite redirection for any error page that fetch application from proxy. https://sim.amazon.com/issues/Kondo_QA_Issue-121
+    // Typically if an error page get application detail and trigger GetApplicationSuccessEpic if there is no websocket connection setup,
+    // it will start workflow connection, once workflow connection is started it will return the nextStep which is different to error page
+    // as error pages are not managed by workflow service. In this scenario, we redirect to the page returned by workflow service which shouldn't be the right one
+    // With this change, we will check if a page is a valid route and is not managed by workflow service, then we don't have to redirect to the targeted page from workflow service
+    // instead we stay on this error page to avoid probable infinite loop
+    // If a page is invalid route, or is managed by workflow service, we rely on it
+    return false;
+  } 
   return true;
+  
 };
 
 export const goToStep = async ( workflowData: WorkflowData ) => {
