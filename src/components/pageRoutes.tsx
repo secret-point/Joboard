@@ -64,3 +64,7 @@ export const PagesControlledByWorkFlowService = [
   PAGE_ROUTES.RESUME_APPLICATION,
   PAGE_ROUTES.ADDITIONAL_INFORMATION
 ];
+
+export const PagesNeedToUseWorkflowRedirection = [
+  PAGE_ROUTES.CONSENT
+];

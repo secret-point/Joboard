@@ -1,5 +1,9 @@
 import moment from "moment";
-import { PAGE_ROUTES, PagesControlledByWorkFlowService } from "../../components/pageRoutes";
+import {
+  PAGE_ROUTES,
+  PagesControlledByWorkFlowService,
+  PagesNeedToUseWorkflowRedirection
+} from "../../components/pageRoutes";
 import { MAX_MINUTES_FOR_HEARTBEAT } from "../../constants";
 import { log, logError } from "../../helpers/log-helper";
 import { checkIfIsCSRequest } from "../../helpers/utils";
@@ -139,7 +143,8 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
 
     return false;
   } else if (Object.values(PAGE_ROUTES).includes(currentStepName as PAGE_ROUTES) &&
-    !Object.values(PagesControlledByWorkFlowService).includes(currentStepName as PAGE_ROUTES)) {
+    !Object.values(PagesControlledByWorkFlowService).includes(currentStepName as PAGE_ROUTES)
+    && !Object.values(PagesNeedToUseWorkflowRedirection).includes(currentStepName as PAGE_ROUTES)) {
     // this is to address the infinite redirection for any error page that fetch application from proxy. https://sim.amazon.com/issues/Kondo_QA_Issue-121
     // Typically if an error page get application detail and trigger GetApplicationSuccessEpic if there is no websocket connection setup,
     // it will start workflow connection, once workflow connection is started it will return the nextStep which is different to error page
@@ -147,6 +152,7 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
     // With this change, we will check if a page is a valid route and is not managed by workflow service, then we don't have to redirect to the targeted page from workflow service
     // instead we stay on this error page to avoid probable infinite loop
     // If a page is invalid route, or is managed by workflow service, we rely on it
+    // we should exclude consent page to ensure that redirection to job opportunity or assessment works.
     return false;
   } 
   return true;
