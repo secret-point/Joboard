@@ -35,6 +35,7 @@ export interface CreateApplicationRequestDS {
   jobId: string;
   scheduleId?: string;
   dspEnabled?: boolean | null;
+  jobAssessmentToggle?: boolean;
 }
 
 export interface CreateApplicationResponseDS {
@@ -45,6 +46,7 @@ export interface CreateApplicationAndSkipScheduleRequestDS {
   jobId: string;
   dspEnabled?: boolean | null;
   // No schedule Id needed for create application. Will fail make BB backend skip reserving schedule in NHE.
+  jobAssessmentToggle?: boolean;
 }
 
 export interface UpdateApplicationRequestDS {

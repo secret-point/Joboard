@@ -38,6 +38,7 @@ import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCa
 import { boundWorkflowRequestStart } from "../../../actions/WorkflowActions/boundWorkflowActions";
 import { loadWorkflowDS } from "../../../actions/WorkflowActions/workflowActions";
 import { AppConfigState } from "../../../reducers/appConfig.reducer";
+import { log } from "../../../helpers/log-helper";
 
 interface MapStateToProps {
   job: JobState;
@@ -118,19 +119,36 @@ export const Consent = (props: MapStateToProps) => {
   };
 
   const executeCreateApplication = () => {
+    const dspEnabled = job.results?.dspEnabled;
+    const jobAssessmentToggle = job.results?.bypassAssessment || false;
+
     if (scheduleId) {
       const payload: CreateApplicationAndSkipScheduleRequestDS = {
         jobId,
-        dspEnabled: job.results?.dspEnabled,
+        dspEnabled,
+        jobAssessmentToggle,
       };
+
+      log(
+        `[Create DS application][skipSchedule] jobId:'${jobId}' with jobAssessmentToggle set to ${jobAssessmentToggle} and dspEnabled set to ${dspEnabled}`
+      );
+
       boundCreateApplicationAndSkipScheduleDS(payload);
     } else {
       const payload: CreateApplicationRequestDS = {
         jobId,
-        dspEnabled: job.results?.dspEnabled,
+        dspEnabled,
+        jobAssessmentToggle
       };
+
+      log(
+        `[Create DS application]: jobId:'${jobId}' with jobAssessmentToggle set to ${jobAssessmentToggle} and dspEnabled set to ${dspEnabled}`
+      );
+
       boundCreateApplicationDS(payload, (application: Application) => {
         const { applicationId, candidateId } = application;
+
+        log("[Create DS application]: created ds application successfully, createApplication response:", application);
 
         boundWorkflowRequestStart();
         envConfig && loadWorkflowDS(
