@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Col, } from "@amzn/stencil-react-components/layout";
+import React, { useEffect, useState } from "react";
+import { Col } from "@amzn/stencil-react-components/layout";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -20,24 +20,43 @@ import { ApplicationState } from "../../../reducers/application.reducer";
 import IFrame from "../../common/IFrame";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
+import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
   job: JobState;
   schedule: ScheduleState;
   application: ApplicationState;
+  candidate: CandidateState;
 }
 
 export const Assessment = (props: MapStateToProps) => {
-  const { job, schedule, application } = props;
+  const { job, schedule, application, candidate } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { jobId, applicationId } = queryParams;
   const jobDetail = job.results;
   const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
+  const { candidateData } = candidate.results;
+  const applicationData = application.results;
   const pageName = getPageNameFromPath(pathname);
-  const { assessment } = application?.results || {};
-  const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0]; 
+  const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0];
+  const [assessmentUrl, setAssessmentUrl] = useState<string>("");
+
+  // Load candidate so that we can log candidateId if application already exists error happens
+  useEffect(() => {
+    boundGetCandidateInfo();
+  }, []);
+
+  useEffect(() => {
+    if (candidateData && jobDetail) {
+      const assessmentType = jobDetail?.assessmentType;
+      if (assessmentType && candidateData.assessmentsTaken) {
+        setAssessmentUrl(candidateData.assessmentsTaken[assessmentType]?.assessmentUrl);
+      }
+    }
+  }, [candidateData, jobDetail]);
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -56,10 +75,10 @@ export const Assessment = (props: MapStateToProps) => {
   }, [applicationId]);
 
   useEffect(() => {
-    if (jobDetail && ((scheduleId && scheduleDetail) || (!scheduleId))) {
+    if (applicationData && jobDetail && ((scheduleId && scheduleDetail) || (!scheduleId))) {
       addMetricForPageLoad(pageName);
     }
-  }, [jobDetail, scheduleDetail]);
+  }, [jobDetail, scheduleDetail, applicationData]);
 
   useEffect(() => {
     return () => {
@@ -72,7 +91,7 @@ export const Assessment = (props: MapStateToProps) => {
     <>
       <Col gridGap="S300" padding="0">
         <StepHeader jobTitle={jobDetail?.jobTitle || ""} step={headerStep} steps={ApplicationStepListUK} />
-        {assessment?.assessmentUrl && <IFrame src={ assessment.assessmentUrl} />}
+        {assessmentUrl && <IFrame src={assessmentUrl} />}
       </Col>
     </>
   );

@@ -4,12 +4,14 @@ import { Assessment } from "../../../../../src/components/uk/assessment/Assessme
 import {
   TEST_APPLICATION_ID,
   TEST_APPLICATION_STATE,
+  TEST_CANDIDATE_STATE,
   TEST_JOB_ID,
   TEST_JOB_STATE,
   TEST_SCHEDULE_ID,
   TEST_SCHEDULE_STATE
 } from "../../../../test-utils/test-data";
 import { useLocation } from "react-router-dom";
+
 describe("Assessment", () => {
 
   const mockLocation = {
@@ -27,6 +29,7 @@ describe("Assessment", () => {
         job={TEST_JOB_STATE}
         application={TEST_APPLICATION_STATE}
         schedule={TEST_SCHEDULE_STATE}
+        candidate={TEST_CANDIDATE_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
