@@ -144,7 +144,7 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
     return false;
   } else if (Object.values(PAGE_ROUTES).includes(currentStepName as PAGE_ROUTES) &&
     !Object.values(PagesControlledByWorkFlowService).includes(currentStepName as PAGE_ROUTES)
-    && !Object.values(PagesNeedToUseWorkflowRedirection).includes(currentStepName as PAGE_ROUTES)) {
+    && !Object.values(PagesNeedToUseWorkflowRedirection).includes(currentStepName as PAGE_ROUTES) && !window.hasTargetStep) {
     // this is to address the infinite redirection for any error page that fetch application from proxy. https://sim.amazon.com/issues/Kondo_QA_Issue-121
     // Typically if an error page get application detail and trigger GetApplicationSuccessEpic if there is no websocket connection setup,
     // it will start workflow connection, once workflow connection is started it will return the nextStep which is different to error page
@@ -153,8 +153,11 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
     // instead we stay on this error page to avoid probable infinite loop
     // If a page is invalid route, or is managed by workflow service, we rely on it
     // we should exclude consent page to ensure that redirection to job opportunity or assessment works.
+    // check if it has targetStep to ensure that when we are on error page and try to go to workflow service managed page, this case we can rely on workflow service nextStep from response
     return false;
-  } 
+  }
+  // reset hasTarget to ensure next page will be redirected correctly by relying on workflow service nextStep if it's on a UI controlled page
+  window.hasTargetStep = undefined;
   return true;
   
 };
@@ -256,6 +259,10 @@ export const onCompleteTaskHelper = ( application: Application, isBackButton?: b
   const { candidateId } = application;
   const currentStepName = currentStep || getCurrentStepNameFromHash();
   const { scheduleDetail } = state.schedule.results;
+
+  if (targetStep) {
+    window.hasTargetStep = true;
+  }
 
   if (isBackButton) {
     log(`[WS] Completed task on back button execution, current step is ${currentStepName} for application:`, application);

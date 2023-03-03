@@ -55,6 +55,7 @@ declare global {
     hasCompleteTask: Function | undefined;
     hasCompleteTaskOnSkipSchedule: Function | undefined;
     hasCompleteTaskOnWorkflowConnect: Function | undefined;
+    hasTargetStep: boolean | undefined;
   }
 }
 
