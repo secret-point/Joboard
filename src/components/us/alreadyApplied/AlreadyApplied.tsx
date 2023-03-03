@@ -13,6 +13,7 @@ import { CandidateState } from "../../../reducers/candidate.reducer";
 import { JobState } from "../../../reducers/job.reducer";
 import { getLocale } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
+import { DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY } from "../../../utils/constants/common";
 
 interface MapStateToProps {
   candidate: CandidateState;
@@ -42,6 +43,7 @@ export const AlreadyApplied = (props: MapStateToProps) => {
   }, [jobDetail, pageName]);
 
   const handleGoToDashboard = () => {
+    localStorage.setItem(DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY, jobId);
     redirectToDashboard();
   };
 
