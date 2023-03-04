@@ -80,6 +80,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const activeApplicationList = application.applicationList;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
+  const jobReferral = applicationData?.jobReferral;
 
   useEffect(() => {
     // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
@@ -337,6 +338,22 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                 <Text fontSize="T100">
                   {`${t("BB-review-submit-additional-info-previous-worked-at-amazon-label", "Have you worked with Amazon in the past?")}: ${candidateData.additionalBackgroundInfo.hasPreviouslyWorkedAtAmazon ? "Yes" : "No"}`}
                 </Text>
+                {jobDetail?.activateReferralIncentive && (
+                  <Col gridGap="S300">
+                    <Text fontSize="T100" fontWeight="bold">
+                      {t("BB-Kondo-ReviewSubmit-referral-details-title-text", "Referral Details")}
+                    </Text>
+                    <Text fontSize="T100">
+                      {`${t("BB-Kondo-ReviewSubmit-referral-were-you-referred-label", "Were you referred by an existing Amazon employee?")} ${jobReferral?.hasReferral ? "Yes" : "No"}`}
+                    </Text>
+                    {jobReferral?.hasReferral && jobReferral?.referralInfo && (
+                      <Text fontSize="T100">
+                        {`${t("BB-Kondo-ReviewSubmit-referral-login-id-label", "Referral login ID")}: ${jobReferral?.referralInfo}`}
+                      </Text>
+                    )}
+                  </Col>
+                )}
+
                 <Row padding={{ top: "S300" }}>
                   <Text color={CommonColors.Neutral70} fontSize="T100">
                     {`* ${t("BB-review-submit-additional-info-temporary-id-number-notice", "If you have entered \"NO NI\" as your NI number, a temporary NI number is assigned based on your date of birth in the following format: \"TNDDMMYY\".")}`}

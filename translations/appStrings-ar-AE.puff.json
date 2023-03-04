@@ -192,6 +192,10 @@
       "value" : "الترتيب حسب",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "المميزة",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "معدل الأجر - من الأعلى إلى الأدنى",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -3067,6 +3071,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "تفضيلات مناوبة العمل",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "تفاصيل الإحالة",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "هل تمت إحالتك من قِبَل موظف حالي في أمازون؟",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "معرف تسجيل الدخول الخاص بالإحالة",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "فشلت عملية سحب الطلب.",

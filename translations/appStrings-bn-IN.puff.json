@@ -192,6 +192,10 @@
       "value" : "সাজানোর ক্রম",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "ফিচার করা হয়েছে",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "বেতনের হার - সর্বোচ্চ থেকে সর্বনিম্ন",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -3115,6 +3119,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "শিফট পছন্দসমূহ",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "রেফারেল বিবরণ",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "আপনাকে কি কোনও বর্তমান Amazon এর কর্মচারী রেফার করেছেন?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "রেফারেল লগইন আইডি",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "আবেদন প্রত্যাহার করতে ব্যর্থ।",

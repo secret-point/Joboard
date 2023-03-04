@@ -3120,6 +3120,18 @@
       "value" : "Shift preferences",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Referral Details",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Were you referred by an existing Amazon employee?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "Referral login ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Failed to withdraw application.",
       "note" : "Text for withdraw multiple application failure error message"

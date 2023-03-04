@@ -3087,6 +3087,22 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "No momento, estamos avaliando sua inscrição e entraremos em contato com você em breve pelo endereço de e-mail que você forneceu.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Voltar ao painel",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Recomendamos encontrar um local tranquilo para evitar distrações.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Depois de concluir a avaliação, você retornará ao processo de inscrição.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Nossa cultura inclusiva capacita os Amazonians a oferecerem os melhores resultados aos nossos clientes. Se você tiver uma deficiência e precisar de uma adaptação durante o processo de inscrição e contratação, incluindo suporte para a entrevista ou processo de integração, entre em contato com a Equipe de Adaptação de Inscrição de Candidatos (ACAT), de segunda a sexta-feira, das 7h às 16h GMT. Se estiver ligando diretamente do Reino Unido, ligue para +44 800 086 9884. Se estiver ligando da Irlanda, ligue para +353 1800 851 489. Você também pode entrar em contato conosco se precisar de uma adaptação em sua nova função e quiser adiantar uma solicitação antes do seu primeiro dia de trabalho.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

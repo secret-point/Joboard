@@ -3116,6 +3116,18 @@
       "value" : "Schichtpräferenzen",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Angaben zur Empfehlung",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Wurdest du von einem bestehenden Amazon-Mitarbeitenden empfohlen?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "Anmelde-ID für Empfehlungen",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Die Bewerbung konnte nicht zurückgezogen werden.",
       "note" : "Text for withdraw multiple application failure error message"

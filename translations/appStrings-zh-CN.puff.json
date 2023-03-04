@@ -3116,6 +3116,18 @@
       "value" : "工作班次首选项",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "推荐详情",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "您是否由亚马逊在职员工推荐？",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "推荐登录 ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "撤回申请失败。",
       "note" : "Text for withdraw multiple application failure error message"

@@ -3068,6 +3068,18 @@
       "value" : "シフトのカスタマイズ設定",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "紹介の詳細",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Amazonの既存の従業員から紹介されましたか？",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "紹介ログインID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "応募を取り下げることができませんでした。",
       "note" : "Text for withdraw multiple application failure error message"

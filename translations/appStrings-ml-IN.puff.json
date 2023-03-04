@@ -3116,6 +3116,18 @@
       "value" : "ഷിഫ്റ്റ് മുൻഗണനകൾ",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "റഫറൽ വിശദാംശങ്ങൾ",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "നിലവിലുള്ള ഒരു Amazon ജീവനക്കാരനാണോ നിങ്ങളെ റഫർ ചെയ്തത്?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "റഫറൽ ലോഗിൻ ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "അപേക്ഷ പിൻവലിക്കുന്നതിൽ പരാജയപ്പെട്ടു.",
       "note" : "Text for withdraw multiple application failure error message"

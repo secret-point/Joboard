@@ -3076,6 +3076,18 @@
       "value" : "근무조 선호 사항",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "추천 세부 정보",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "기존 아마존 직원으로부터 추천을 받으셨나요?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "추천 로그인 ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "지원서 철회에 실패했습니다.",
       "note" : "Text for withdraw multiple application failure error message"

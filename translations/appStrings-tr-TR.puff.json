@@ -3076,6 +3076,18 @@
       "value" : "Vardiya tercihleri",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Yönlendirme ayrıntıları",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Mevcut bir Amazon çalışanı tarafından mı yönlendirildiniz?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "Yönlendirme giriş kimliği",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Başvuru geri çekilemedi.",
       "note" : "Text for withdraw multiple application failure error message"
