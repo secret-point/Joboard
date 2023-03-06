@@ -964,6 +964,14 @@
       "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "మీరు Amazonకి దరఖాస్తు చేసుకున్నందుకు ధన్యవాదాలు!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "మీరు ఇప్పటికే ఈ ఉద్యోగానికి దరఖాస్తు చేసుకున్నారు. మీ అప్లికేషన్‌ను చూడటానికి డాష్‌బోర్డ్‌కు తిరిగి వెళ్ళండి.",
+      "note" : "Text for already applied job description text"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "ఫారమ్ CC-305",
       "note" : "Text for Self Identification form name"
@@ -3091,6 +3099,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "మేము ప్రస్తుతం మీ దరఖాస్తును అంచనా వేస్తున్నాము మరియు మీరు త్వరలో అందించిన ఇమెయిల్ చిరునామాను ఉపయోగించి మిమ్మల్ని సంప్రదిస్తాము.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "డాష్‌బోర్డ్‌కు తిరిగి వెళ్లండి",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "పర్మినెంట్",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "ఫిక్స్డ్ టర్మ్ ఒప్పందం",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "ఇప్పటివరకు ఫిక్స్డ్ టర్మ్ ఒప్పందం",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "పరధ్యానాన్ని నివారించడానికి మీరు నిశ్శబ్ద స్థలాన్ని కనుగొనాలని మేము సిఫార్సు చేస్తున్నాము.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "మీరు అసెస్‌మెంట్‌ను పూర్తి చేసిన తర్వాత, మీరు మీ అప్లికేషన్ ప్రాసెస్‍కు తిరిగి వస్తారు.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "మా సమ్మిళిత సంస్కృతి మా కస్టమర్‌లకు ఉత్తమ ఫలితాలను అందించడానికి Amazoniansకు అధికారం ఇస్తుంది. మీకు వైకల్యం ఉన్నట్లయితే మరియు ఇంటర్వ్యూ లేదా ఆన్‌బోర్డింగ్ ప్రాసెస్‍కు సపోర్ట్‌తో సహా అప్లికేషన్ మరియు నియామక ప్రాసెస్‍ సమయంలో సర్దుబాటు అవసరం అయితే, దయచేసి దరఖాస్తుదారు-అభ్యర్థి వసతి బృందం (ACAT)ను సోమవారం నుండి శుక్రవారం వరకు ఉదయం 7:00 GMT - సాయంత్రం 4:00 GMT మధ్య సంప్రదించండి. యునైటెడ్ కింగ్‌డమ్ నుండి నేరుగా కాల్ చేస్తే, దయచేసి +44 800 086 9884కు డయల్ చేయండి. ఐర్లాండ్ నుండి కాల్ చేస్తే, దయచేసి +353 1800 851 489కు డయల్ చేయండి. మీ కొత్త పాత్రలో మీకు సర్దుబాటు అవసరమైతే మరియు మీ రోజు 1 ప్రారంభించడానికి ముందు అభ్యర్థనను ప్రారంభించాలని అనుకుంటే మీరు మమ్మల్ని సంప్రదించవచ్చు.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

@@ -3091,6 +3091,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "نعمل حاليًا على تقييم طلبك وسنتواصل معك على عنوان البريد الإلكتروني الذي قدمته قريبًا.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "رجوع إلى لوحة السجل",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "دائم",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "عقد محدد المدة",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "عقد محدد المدة حتى",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "نوصيك بالبحث عن مكان هادئ لتجنب عوامل تشتيت الانتباه.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "بعد الانتهاء من التقييم، ستتم إعادتك إلى عملية تقديم الطلب الخاص بك.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "إن ثقافتنا القائمة على استيعاب وتقبل الجميع تُمكِّن موظفي أمازون من تقديم أفضل الخدمات لعملائنا. فإذا كنت تعاني من إعاقة وتحتاج إلى تعديل أثناء عملية تقديم الطلب والتوظيف، بما في ذلك الدعم أثناء إجراء المقابلة أو عملية التأهيل لبدء العمل، فيُرجى الاتصال بفريق خدمات المتقدمين والمرشحين للوظائف (ACAT)، من الإثنين إلى الجمعة من الساعة 7:00 صباحًا بتوقيت غرينتش إلى 4:00 مساءً بتوقيت غرينتش. في حالة الاتصال مباشرةً من المملكة المتحدة، فيُرجى الاتصال بالرقم +44 800 086 9884. في حالة الاتصال من أيرلندا، فيُرجى الاتصال بالرقم +353 1800 851 489. ويمكنك أيضًا الاتصال بنا إذا كنت بحاجة إلى إجراء تعديل في دورك الجديد وترغب في بدء تقديم طلب قبل بداية يومك الأول في العمل.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

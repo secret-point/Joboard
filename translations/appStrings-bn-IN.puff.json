@@ -964,6 +964,54 @@
       "value" : "ড্যাশবোর্ডে ফিরে যান",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Amazon-এ আবেদন করার জন্য আপনাকে ধন্যবাদ!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "আপনি ইতিমধ্যে এই চাকরির জন্য আবেদন করেছেন। আপনার আবেদন দেখতে ড্যাশবোর্ডে ফিরে যান।",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "ড্যাশবোর্ডে যান",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "আপনি ইতিমধ্যে এই ভূমিকার জন্য একটি আবেদন জমা দিয়েছেন:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "এই কাজের Id-এর জন্য আপনার শুধুমাত্র একটি সক্রিয় আবেদন থাকতে পারবে। আপনার বর্তমান আবেদনটি দেখতে এবং আরও বিকল্প দেখতে, 'ড্যাশবোর্ডে যান' -এ ক্লিক করুন।",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "ড্যাশবোর্ডে যান",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "আপনার ইতিমধ্যে এই ভূমিকার জন্য একটি সক্রিয় আবেদন আছে:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "আপনি যদি এই নতুন আবেদন সহকারে এগিয়ে যান, আপনার বিদ্যমান একটি প্রত্যাহার করা হবে। আপনার বিদ্যমান আবেদন দেখতে বা পুনরায় চালু করতে, 'ড্যাশবোর্ডে যান’ -এ ক্লিক করুন।",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "নতুন আবেদন সহকারে এগিয়ে যেতে, 'আবেদন সহকারে চালিয়ে যান' -এ ক্লিক করুন।",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "নতুন আবেদন সহকারে চালিয়ে যান",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "নতুন আবেদন:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "বিদ্যমান আবেদন:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "ফর্ম CC-305",
       "note" : "Text for Self Identification form name"
@@ -3091,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "আমরা বর্তমানে আপনার আবেদনটি মূল্যায়ন করছি এবং শীঘ্রই আপনি যে ইমেল ঠিকানাটি দিয়েছেন তা ব্যবহার করে আপনার সাথে যোগাযোগ করব।",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ড্যাশবোর্ডে ফিরে যান",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "স্থায়ী",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "স্থায়ী মেয়াদের চুক্তি",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "স্থায়ী মেয়াদের চুক্তি যে পর্যন্ত না",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "বিভ্রান্তি এড়াতে আমরা আপনাকে একটি নিরিবিলি স্থান খুঁজে নিতে পরামর্শ দিচ্ছি।",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "আপনি মূল্যায়ন শেষ করার পরে, আপনাকে আপনার আবেদন প্রক্রিয়াতে ফেরত নেয়া হবে।",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "আমাদের সর্বব্যাপী সংস্কৃতি আমাদের গ্রাহকদের জন্য সেরা ফলাফল প্রদান করতে Amazonian-দের সক্ষম করে। যদি আপনার কোনো বিকলাঙ্গতা থাকে এবং ইন্টারভিউ বা অনবোর্ডিং প্রক্রিয়াকরণের জন্য সহায়তা সহ আবেদন ও নিয়োগের প্রক্রিয়াকরণের সময় একটি সামঞ্জ্যসতা প্রয়োজন হয়, তাহলে অনুগ্রহ করে অ্যাপ্লিকেন্ট-ক্যান্ডিডেট অ্যাকোমোডেশন টিম (ACAT) এর সাথে, সোমবার থেকে শুক্রবার 7:00am GMT - 4:00pm GMT-এর মধ্যে যোগাযোগ করুন। যুক্তরাজ্য থেকে সরাসরি কল করলে, অনুগ্রহ করে +44 800 086 9884-এ ডায়াল করুন। আয়ারল্যান্ড থেকে কল করলে, অনুগ্রহ করে +353 1800 851 489- এ ডায়াল করুন। এছাড়াও যদি আপনার নতুন ভূমিকাতে কোনো সামঞ্জ্যসতার প্রয়োজন হয় এবং আপনার 1 দিন শুরু করার আগে একটি অনুরোধ শুরু করতে চান তাহলে আপনি আমাদের সাথে যোগাযোগ করতে পারবেন।",
+      "note" : "Assessment condition number 3"
     }
   }
 }

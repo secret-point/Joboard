@@ -964,6 +964,54 @@
       "value" : "返回控制面板",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "感谢您申请亚马逊职位！",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "您已经申请了这份工作。返回控制面板查看您的申请。",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "转至控制面板",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "您已经提交了该职位的申请：",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "此职位 ID 只能有一个有效的申请。要查看您当前的申请和了解更多选项，请点击“转至控制面板”。",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "转至控制面板",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "您已经有该职位的有效申请：",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "如果您继续此新申请，您的现有申请将被撤回。要查看或继续您的现有申请，请点击“转至控制面板”。",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "要继续新的申请，请单击“继续申请”。",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "继续新的申请",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "新的申请：",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "现有申请：",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "表格 CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1579,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "小时：",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "时间：",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "我们期待在上述时间与您见面。",
@@ -3087,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "我们目前正在评估您的申请，并将很快通过您提供的电子邮件地址与您联系。",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "返回控制面板",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "永久",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "固定期限合同",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "固定期限合同至",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "我们建议您寻找一个安静的地方，以免分散注意力。",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "完成评估后，您将返回应聘流程。",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "我们的包容文化使得亚马逊员工能够为客户提供最好的成果。如果您患有残疾，并且在应聘和聘用流程中需要调整，包括在面试或入职流程中需要帮助，请在格林尼治标准时间周一至周五上午 7:00 至下午 4:00 联系残障应聘者帮助团队 (ACAT)。如果您在英国，请拨打 +44 800 086 9884。如果您在爱尔兰，请拨打 +353 1800 851 489。如果您需要调整新职务，并且想在入职第一天前提出申请，您也可以联系我们。",
+      "note" : "Assessment condition number 3"
     }
   }
 }

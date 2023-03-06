@@ -960,6 +960,46 @@
       "value" : "डॅशबोर्डवर परत जा",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "डॅशबोर्डवर जा",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "तुम्ही यापूर्वीच या भूमिकेसाठी अर्ज सबमिट केला आहे:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "या जॉब Id साठी तुमच्याकडे केवळ एक सक्रिय अर्ज असू शकतो. तुमचा सध्याचा अर्ज पाहण्यासाठी आणि अधिक पर्याय पाहण्यासाठी, 'डॅशबोर्डवर जा' वर क्लिक करा.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "डॅशबोर्डवर जा",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "तुमच्याकडे आधीपासूनच या भूमिकेसाठी सक्रिय अर्ज आहे:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "तुम्ही या नवीन अर्जासह पुढे गेल्यास, तुमचा विद्यमान अर्ज मागे घेतला जाईल. तुमचा विद्यमान अर्ज पाहण्यासाठी किंवा पुन्हा सुरू करण्यासाठी, 'डॅशबोर्डवर जा' वर क्लिक करा.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "नवीन अर्जासह पुढे जाण्यासाठी, 'अर्जासह सुरू ठेवा' वर क्लिक करा.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "नवीन अर्जासह सुरू ठेवा",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "नविन अर्ज:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "विद्यमान अर्ज:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "फॉर्म CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,6 +1508,10 @@
       "value" : "Amazon मध्ये, आम्ही आमच्या कर्मचार्‍यांची विविधता आणि आमच्या काम करण्याच्या विविध पद्धतींचा उत्सव साजरा करतो. तुम्‍हाला अपंगत्व असल्‍यास आणि मूल्यांकनासह कामावर ठेवण्‍याच्‍या प्रक्रियेदरम्यान, निवासाची आवश्‍यकता असल्‍यास, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon अकोमोडेशनला भेट द्या.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "या मूल्यांकनाचे सर्व विभाग:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "खालील स्क्रीन वाचकांसाठी ऑप्टिमाइझ केले आहे: Firefox, Chrome आणि Edge (Windows) वर व्हॉइसओव्हर (Mac) आणि NVDA (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1695,6 +1739,10 @@
     "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
       "value" : "तुम्ही निवडलेल्या प्राधान्यांसह तुमच्यासाठी योग्य प्री-हायर अपॉइंटमेंट सापडताच आम्ही तुमच्याशी संपर्क साधू.",
       "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "स्वीकारार्ह कागदपत्रांच्या संपूर्ण लिस्टसाठी <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>येथे</a> क्लिक करा.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "तुम्ही दिव्यांग असल्यास आणि तुम्हाला Amazon च्या भरती प्रक्रियेत समायोजन करण्याची आवश्यकता भासू शकते असे वाटल्यास, कृपया 0808 164 9427 वर किंवा ईमेलद्वारे myapplication@amazon.co.uk येथे चर्चा करण्यासाठी आमच्याशी संपर्क साधा",
@@ -2176,6 +2224,10 @@
       "value" : "कृपया पुढे जाण्यासाठी बॉक्स तपासा.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "कृपया फक्त खालील विशेष वर्ण वापरून गुन्हा सिद्धीचे तपशील भरा (-! /,. () #?). केवळ एक परिच्छेद लिहा आणि टाइप करताना एंटर दाबू नका.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL -- अलाबामा",
       "note" : "Text for Alabama state"
@@ -2644,6 +2696,10 @@
       "value" : "बायोमेट्रिक निवास परवाना",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "सर्व स्वीकारार्ह कार्य करण्याचा अधिकार कागदपत्रांच्या अधिक माहितीसाठी आणि तपशीलांसाठी, कृपया आमचे<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य अधिकृतता मार्गदर्शक </a> पहा",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "तुम्ही 18 वर्षे किंवा त्यापेक्षा जास्त वयाचे आहात.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2891,6 +2947,22 @@
     "BB-nhe-preference-card-go-to-nhe-preference-link" : {
       "value" : "तुमच्या प्री-हायर इव्हेंटची प्राधान्ये निवडा",
       "note" : "Text for nhe preference card go to nhe link"
+    },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "प्री-हायर अपॉइंटमेंटची प्राधान्ये",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "पसंतीचे शहर",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "पसंतीची(च्या) तारीख(खा)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "पसंतीची वेळ",
+      "note" : "Text for nhe preference review prefferred times title"
     },
     "BB-consent-existing-application-notice-title" : {
       "value" : "तुमच्याकडे सक्रिय जॉब ‍अ‍ॅप्लिकेशन आहे",

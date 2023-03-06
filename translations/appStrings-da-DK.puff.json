@@ -964,6 +964,54 @@
       "value" : "Tilbage til oversigt",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Tak for din ansøgning til Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Du har allerede ansøgt om dette job. Gå tilbage til oversigten for at se din ansøgning.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Gå til oversigt",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Du har allerede indsendt en ansøgning til rollen:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Du kan kun have én aktiv ansøgning til dette job-id. For at se din aktuelle ansøgning og flere muligheder, klik på \"Gå til oversigt\".",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Gå til oversigt",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Du har allerede en aktiv ansøgning til rollen:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Hvis du fortsætter med denne nye ansøgning, vil din eksisterende trækkes tilbage. Hvis du vil se eller genoptage din eksisterende ansøgning, skal du klikke på \"Gå til oversigt\".",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "For at fortsætte med en ny ansøgning skal du klikke på \"Fortsæt med ansøgning\".",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Fortsæt med ny ansøgning",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Ny ansøgning:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Eksisterende ansøgning:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formular CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1579,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Timer:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Tidspunkt:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Vi ser frem til at se dig på tidspunktet ovenfor.",
@@ -3087,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Vi evaluerer i øjeblikket din ansøgning og kontakter dig snart ved brug af den mail-adresse, du har angivet.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Tilbage til oversigt",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Permanent",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Tidsbegrænset kontrakt",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Tidsbegrænset kontrakt indtil",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Vi anbefaler, at du finder et roligt sted for at undgå distraktioner.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Når du er færdig med evalueringen, bliver du sendt tilbage til din ansøgningsproces.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Vores inkluderende kultur sætter medarbejderne hos Amazon i stand til at levere de bedste resultater til vores kunder. Hvis du har et handicap og har brug for en særlig indretning under ansøgnings- og ansættelsesprocessen, herunder support til interviewet eller onboarding-processen, bedes du kontakte ACAT-teamet (Applicant-Candidate Accomodation Team) mandag til fredag mellem kl. 7:00 og 16:00 GMT. Hvis du ringer direkte fra Storbritannien, skal du ringe på +44 800 086 9884. Hvis du ringer fra Irland, skal du ringe på +353 1800 851 489. Du kan også kontakte os, hvis du muligvis har brug for en særlig indretning i din nye rolle, og gerne vil starte en anmodning inden din 1. dag.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

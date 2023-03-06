@@ -1688,6 +1688,26 @@
       "value" : "नहीं",
       "note" : "Text for the thank you page referral details radio button 'no' text"
     },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "अपनी शिफ़्ट प्राथमिकताएं सबमिट करने के लिए धन्यवाद!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "जैसे ही हमें आपकी चुनी हुई प्राथमिकताओं के साथ आपके लिए काम करने वाली शिफ़्ट का पता चलेगा, हम आपसे संपर्क करेंगे.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "अपनी प्री-हायर अपॉइंटमेंट प्राथमिकताएं सबमिट करने के लिए धन्यवाद!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "जैसे ही हमें ऐसा प्री-हायर अपॉइंटमेंट मिलेगा, जो आपकी चुनी हुई प्राथमिकताओं के साथ आपके लिए काम करता हो, हम आपसे संपर्क करेंगे.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "स्वीकार करने योग्य दस्तावेज़ों की पूरी सूची के लिए <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>यहां</a> क्लिक करें.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
+    },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "यदि आपकी कोई विकलांगता है और आपको लगता है कि आपको Amazon की भर्ती प्रक्रिया में समायोजन की आवश्यकता हो सकती है, तो कृपया 0808 164 9427 पर चर्चा करने के लिए या myapplication@amazon.co.uk पर ईमेल द्वारा हमसे संपर्क करें",
       "note" : "Text for the thank you page nhe appointment details flyout accommodations assistance text"
@@ -2640,6 +2660,10 @@
       "value" : "बायोमेट्रिक आवास परमिट",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "काम करने के अधिकार के सभी स्वीकार करने योग्य दस्तावेज़ों की अधिक जानकारी और विवरण के लिए, कृपया हमारी<a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'> UK कर्मचारी कार्य अनुमति गाइड</a> देखें",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "आपकी आयु 18 वर्ष या उससे अधिक है.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2888,6 +2912,22 @@
       "value" : "अपनी प्री-हायर ईवेंट प्राथमिकताएं चुनें",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "प्री-हायर अपॉइंटमेंट प्राथमिकताएं",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "पसंदीदा शहर",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "पसंदीदा तारीख (तारीखें)",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "पसंदीदा समय",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "आपके पास नौकरी का एक सक्रिय आवेदन है",
       "note" : "Text for consent existing application notice title"
@@ -3047,6 +3087,18 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "हम फ़िलहाल आपके आवेदन का आकलन कर रहे हैं और आपके द्वारा दिए गए ईमेल एड्रेस का इस्तेमाल करके आपसे ज़ल्द ही संपर्क करेंगे.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "स्थायी",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "फ़िक्स्ड टर्म कॉन्ट्रैक्ट",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "तब तक के लिए फ़िक्स्ड टर्म कॉन्ट्रैक्ट",
+      "note" : ""
     }
   }
 }

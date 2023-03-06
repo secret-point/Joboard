@@ -10,7 +10,7 @@ import AppLoader from "../common/AppLoader";
 import { BannerMessage } from "../common/BannerMessage";
 import CounterMessageBanner from "../common/CounterMessageBanner";
 import { PAGE_ROUTES } from "../pageRoutes";
-import AlreadyApplied from "../us/alreadyApplied/AlreadyApplied";
+import AlreadyApplied from "../uk/alreadyApplied/AlreadyApplied";
 import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
 import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentFinished from "../us/assessment/AssessmentFinished";

@@ -964,6 +964,46 @@
       "value" : "返回控制面板",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "前往控制面板",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "您已提交此職位的申請：",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "此工作 ID 只能有一個有效的申請。要檢視當前申請並查看更多選項，請點擊「前往控制面板」。",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "前往控制面板",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "您已有一個此職位的有效申請：",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "如果您繼續進行此新申請，您現有的申請將被撤回。要檢視或恢復現有申請，請點擊「前往控制面板」。",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "要繼續新申請，請點擊「繼續申請」。",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "繼續新申請",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "新申請：",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "現有申請：",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "表單 CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1571,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "時間：",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "時間：",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "我們期待在上述時間與您見面。",
@@ -3087,6 +3131,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "我們目前正在評估您的申請，並將盡快使用您提供的電子郵件地址與您聯絡。",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "返回控制面板",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "永久",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "固定期限合約",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "固定期限合約直至",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "我們建議您找一個安靜的地方，以避免受到干擾。",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "結束評估後，您將返回申請流程。",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "我們的包容性文化使 Amazonian 能夠為客戶提供最好的成果。如果您是有障礙人士並且在申請和招聘流程中需要進行調整，包括面試或入職過程的支援，請聯絡候選求職者調解團隊 (ACAT)，時間為格林威治標準時間星期一至星期五上午 7:00 至下午 4:00。如果直接從英國致電，請撥打 +44 800 086 9884。如果是從愛爾蘭致電，請撥打 +353 1800 851 489。如果您有需要在新職位上作出調整並希望在第 1 天工作前提出請求，也可以聯絡我們。",
+      "note" : "Assessment condition number 3"
     }
   }
 }

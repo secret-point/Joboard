@@ -964,6 +964,54 @@
       "value" : "Powrót do pulpitu nawigacyjnego",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Dziękujemy za złożenie podania o pracę w firmie Amazon.",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Podanie o pracę na tym stanowisku zostało już przez Ciebie złożone. Wróć do panelu, aby wyświetlić swoje podanie o pracę.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Przejdź do panelu",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Złożono już podanie na to stanowisko:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Możesz mieć tylko jedno aktywne podanie dla tego identyfikatora stanowiska. Aby wyświetlić bieżące podanie i zobaczyć więcej opcji, kliknij opcję „Przejdź do panelu”.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Przejdź do panelu",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Masz już aktywne podanie na stanowisko:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Jeśli będziesz kontynuować składanie nowego podania, Twoje istniejące podanie zostanie wycofane. Aby wyświetlić lub wznowić istniejące podanie, kliknij opcję „Przejdź do panelu”.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Aby kontynuować składanie nowego podania, kliknij opcję „Kontynuuj składanie podania”.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Kontynuuj składanie nowego podania",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nowe podanie:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Istniejące podanie:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formularz CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1579,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Godziny:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Godzina:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Będziemy na Ciebie czekać o godzinie podanej powyżej.",
@@ -3087,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Obecnie oceniamy Twoje podanie i wkrótce skontaktujemy się z Tobą za pośrednictwem podanego adresu e-mail.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Powrót do panelu",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Na czas nieokreślony",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Umowa na czas określony",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Umowa na czas określony do",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Zalecamy znalezienie spokojnego miejsca, aby uniknąć rozpraszania uwagi.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Po zakończeniu oceny powrócisz do procesu składania wniosku.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Nasza kultura sprzyjająca włączeniu społecznemu umożliwia Amazończykom osiąganie najlepszych wyników z korzyścią dla klientów. Jeśli jesteś osobą z niepełnosprawnością i potrzebujesz dostosowań podczas procesu składania wniosku i zatrudniania, w tym pomocy podczas rozmowy kwalifikacyjnej lub procesu wdrażania, skontaktuj się z Zespołem ds. dostosowań dla kandydatów, od poniedziałku do piątku w godzinach 7:00–16:00 czasu GMT. Jeśli dzwonisz bezpośrednio z Wielkiej Brytanii, wybierz numer +44 800 086 9884. Jeśli dzwonisz z Irlandii, wybierz numer +353 1800 851 489. Możesz również skontaktować się z nami, jeśli możesz potrzebować dostosowania w swojej nowej roli i chcesz zainicjować prośbę przed rozpoczęciem swojego pierwszego dnia.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

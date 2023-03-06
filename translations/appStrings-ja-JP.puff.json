@@ -3091,6 +3091,18 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "現在、応募書類に基づき、選考を進めております。ご入力いただいたEメールアドレス宛に追ってご連絡を差し上げます。",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "無期契約",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "定期契約",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "以下までの定期契約",
+      "note" : ""
     }
   }
 }

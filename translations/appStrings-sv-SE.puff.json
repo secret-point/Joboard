@@ -664,6 +664,14 @@
       "value" : "Information som ska inkluderas",
       "note" : "Text for what information to include label text"
     },
+    "BB-BGC-criminal-record-conviction-detail-label-text" : {
+      "value" : "Vänligen ange staten och region för den fällande domen. Inkludera också datumet, brottets art, och dömningsinformation.",
+      "note" : "Text to Criminal record conviction details label text"
+    },
+    "BB-BGC-criminal-record-conviction-detail-secondary-label-text" : {
+      "value" : "(Skriv bara ett stycke och tryck inte på enter medan du skriver.)",
+      "note" : "Text to Criminal record conviction details label text"
+    },
     "BB-BGC-criminal-record-recommended-character-count-text" : {
       "value" : "{characterCount} inmatade tecken (max {recommendedCharacterCount} tecken)",
       "note" : "Text for criminal record conviction details recommended character count text"
@@ -955,6 +963,54 @@
     "BB-already-applied-button-text" : {
       "value" : "Återgå till översikten",
       "note" : "Text for aleady applied job return to dashboard button text"
+    },
+    "BB-already-applied-UK" : {
+      "value" : "Tack för din ansökan till Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Du har redan sökt det här jobbet. Gå tillbaka till kontrollpanelen för att se din ansökan.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Gå till kontrollpanelen",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Du har redan skickat in en ansökan till tjänsten:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Du kan bara ha en aktiv ansökan för detta jobb-ID. För att se din befintliga ansökan och fler alternativ kan du klicka på Gå till kontrollpanelen.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Gå till kontrollpanelen",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Du har redan en aktiv ansökan till tjänsten:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Om du fortsätter med den nya ansökan kommer din befintliga ansökan att dras tillbaka. Om du vill se eller återuppta din befintliga ansökan kan du klicka på Gå till kontrollpanelen.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "För att fortsätta med en ny ansökan klickar du på Fortsätt med ansökan.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Fortsätt med ny ansökan",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Ny ansökan:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Befintlig ansökan:",
+      "note" : "Text for existing application"
     },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Blankett CC-305",
@@ -1464,6 +1520,10 @@
       "value" : "På Amazon firar vi mångfalden i vår arbetskraft och de olika sätten vi arbetar på. Om du har ett funktionshinder och behöver assistans under anställningsprocessen, inklusive bedömningen, besök <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
       "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
+    "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
+      "value" : "Alla avsnitt i denna bedömning:",
+      "note" : "Text for the assessment pace and sections of the assessments list header text"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-item1-text" : {
       "value" : "Optimeras för följande skärmläsare: VoiceOver (Mac) och NVDA (Windows) i Firefox, Chrome och Edge (Windows).",
       "note" : "Text for the assessment pace and sections of the assessments list item 1"
@@ -1519,6 +1579,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Timmar:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Tid:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Vi ser fram emot att träffa dig vid tiden ovan.",
@@ -1675,6 +1739,26 @@
     "BB-Kondo-referral-details-no-text" : {
       "value" : "Nej",
       "note" : "Text for the thank you page referral details radio button 'no' text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-title-text" : {
+      "value" : "Tack för att du skickade in dina skiftpreferenser!",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-shift-preference-content-text" : {
+      "value" : "Vi kontaktar dig så snart vi hittar ett skift som fungerar för dig, med dina valda preferenser.",
+      "note" : "Text for the thank you page with shift preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-title-text" : {
+      "value" : "Tack för att du skickade in dina preferenser före anställningen!",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-with-nhe-preference-content-text" : {
+      "value" : "Vi kontaktar dig så snart vi hittar ett möte inför anställningen som fungerar för dig, med dina valda preferenser.",
+      "note" : "Text for the thank you page with nhe preference title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text" : {
+      "value" : "Klicka <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>här</a> för en fullständig lista över acceptabla dokument.",
+      "note" : "Text for the thank you page nhe appointment details flyout completed list of acceptable doucments text"
     },
     "BB-Kondo-ThankYou-nhe-appointment-flyout-accommodations-assistance-text" : {
       "value" : "Om du har ett funktionshinder och anser att du kan behöva en anpassning till Amazons rekryteringsprocess, vänligen kontakta oss för att berätta mer på 0808 164 9427 eller via e-post på myapplication@amazon.co.uk",
@@ -2156,6 +2240,10 @@
       "value" : "Markera rutan för att fortsätta.",
       "note" : "Text for ConvictionInfoRadio button bgc info error message"
     },
+    "BB-bgc-ConvictionDetail-error-message-fix" : {
+      "value" : "Fyll i den fällande domens detaljer med endast följande specialtecken (-!/,.() #?). Skriv bara ett stycke och tryck inte på enter när du skriver.",
+      "note" : "Text for ConvictionDetail bgc info error message"
+    },
     "BB-States-Alabama" : {
       "value" : "AL-Alabama",
       "note" : "Text for Alabama state"
@@ -2624,6 +2712,10 @@
       "value" : "Biometriskt uppehållstillstånd",
       "note" : "Text for right to work document item - Biometric Residence Permit"
     },
+    "BB-Kondo-ConsentPage-flyout-uk-right-to-work-part2-text" : {
+      "value" : "För mer information och detaljer om alla acceptabla dokument om Rätt att arbeta se vår <a href='https://walpub.s3.us-west-2.amazonaws.com/EmployeeGuides/EMEA-MENA/UK/index.html' target='_blank' rel='noopener noreferrer'>Guide för arbetstillstånd för anställda i Storbritannien</a>",
+      "note" : "Text for Kondo right to work documentation content section 2"
+    },
     "BB-Kondo-qualification-criteria-above18" : {
       "value" : "Du är 18 år eller äldre.",
       "note" : "Application Qualification Criteria - above 18 years old"
@@ -2872,6 +2964,22 @@
       "value" : "Välj dina preferenser för evenemanget inför anställning",
       "note" : "Text for nhe preference card go to nhe link"
     },
+    "BB-nhe-preference-review-title-text" : {
+      "value" : "Preferenser om möte inför anställning",
+      "note" : "Text for nhe preference review title"
+    },
+    "BB-nhe-preference-review-preferred-city-text" : {
+      "value" : "Föredragen ort",
+      "note" : "Text for nhe preference review prefferred city title"
+    },
+    "BB-nhe-preference-review-preferred-dates-text" : {
+      "value" : "Föredraget datum",
+      "note" : "Text for nhe preference review prefferred dates title"
+    },
+    "BB-nhe-preference-review-preferred-times-text" : {
+      "value" : "Föredragen tid(er)",
+      "note" : "Text for nhe preference review prefferred times title"
+    },
     "BB-consent-existing-application-notice-title" : {
       "value" : "Du har en aktiv jobbansökan",
       "note" : "Text for consent existing application notice title"
@@ -3031,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Vi utvärderar för närvarande din ansökan och kommer snart att kontakta dig på den e-postadress du har angett.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Återgå till kontrollpanelen",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Permanent",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Visstidskontrakt",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Visstidskontrakt fram till",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Vi rekommenderar att du hittar en lugn plats för att undvika distraktioner.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "När du är klar med testet tas du tillbaka till din ansökan.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Vår inkluderande kultur ger Amazonians möjligheten att leverera bästa möjliga resultat till våra kunder. Om du har en funktionsnedsättning och har behov av en individanpassad ansöknings- och anställningsprocess, till exempel med stöd under intervjun eller introduktionen, kan du kontakta ACAT (Applicant-Candidate Accommodation Team), som har öppet måndag till fredag, kl. 07.00–16.00 GMT. Inom Storbritannien ringer du +44 800 086 9884. Från Irland ringer du +353 1800 851 489. Du kan också kontakta oss om du behöver anpassa din nya roll och vill begära detta innan din första arbetsdag.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

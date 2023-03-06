@@ -964,6 +964,46 @@
       "value" : "Vrátit na řídicí panel",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Přejít na řídicí panel",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Již jste si podali žádost na pozici:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "U práce s tímto ID můžete mít pouze jednu aktivní žádost. Pro zobrazení aktuální žádosti a dalších možností klikněte na „Přejít na řídicí panel“.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Přejít na řídicí panel",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Již máte aktivní žádost na pozici:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Pokud budete pokračovat s touto novou žádostí, Vaše stávající žádost bude stažena. Pro zobrazení nebo pokračování se stávající žádosti klikněte na „Přejít na řídicí panel“.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Pro pokračování s novou žádostí klikněte na tlačítko „Pokračovat s žádostí“.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Pokračovat s novou žádostí",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nová žádost:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Stávající žádost:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulář CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1571,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Hodiny:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Čas:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Těšíme se na Vás ve výše uvedeném čase.",
@@ -3087,6 +3131,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "V současné době Vaši žádost vyhodnocujeme a brzy Vás budeme kontaktovat na Vámi zadanou e-mailovou adresu.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Zpět na řídicí panel",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Na dobu neurčitou",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Smlouva na dobu určitou",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Smlouva na dobu určitou do",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Doporučujeme Vám najít si klidné místo, aby Vás nic nerozptylovalo.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Po dokončení posouzení budete vráceni do procesu podání žádosti.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Naše inkluzivní kultura umožňuje zaměstnancům společnosti Amazon poskytovat našim zákazníkům ty nejlepší výsledky. Pokud máte zdravotní postižení a potřebujete přizpůsobit podmínky během procesu podání žádosti a náboru, včetně podpory pro pohovor nebo proces nástupu, kontaktujte prosím tým pro přizpůsobení podmínek uchazečům (ACAT) od pondělí do pátku od 7:00 do 16:00 GMT. Pokud voláte přímo ze Spojeného království, vytočte číslo +44 800 086 9884. Pokud voláte z Irska, vytočte číslo +353 1800 851 489. Můžete nás také kontaktovat, pokud budete potřebovat přizpůsobit podmínky ve své nové roli a chtěli byste žádost iniciovat před svým prvním dnem v práci.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

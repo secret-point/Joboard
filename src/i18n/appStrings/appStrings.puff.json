@@ -966,6 +966,18 @@
             "note": "Text for aleady applied job return to dashboard button text",
             "value": "Return to dashboard"
         },
+        "BB-already-applied-UK": {
+            "note": "Text for already applied job text",
+            "value": "Thank you for applying to Amazon!"
+        },
+        "BB-already-applied-description-UK": {
+            "note": "Text for already applied job description text",
+            "value": "You have already applied to this job. Return to the dashboard to view your application."
+        },
+        "BB-already-applied-button-text-UK": {
+            "note": "Text for already applied job return to dashboard button text",
+            "value": "Go to dashboard"
+        },
         "BB-already-applied-v2": {
             "note": "Text for already applied job text",
             "value": "You have already submitted an application for the role:"

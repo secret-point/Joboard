@@ -964,6 +964,54 @@
       "value" : "Zurück zum Dashboard",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Vielen Dank für deine Bewerbung bei Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Du hast dich bereits für diese Stelle beworben. Kehre zum Dashboard zurück, um deine Bewerbung anzusehen.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Zum Dashboard gehen",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Du hast bereits eine Bewerbung für folgende Rolle eingereicht:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Du kannst nur eine aktive Bewerbung für diese Job-ID einreichen. Um deine aktuelle Bewerbung und weitere Optionen anzuzeigen, klicke auf „Zum Dashboard gehen“.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Zum Dashboard gehen",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Du hast bereits eine aktive Bewerbung für folgende Rolle:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Wenn du mit dieser neuen Bewerbung fortfährst, wird deine bestehende Bewerbung zurückgezogen. Um deine bestehende Bewerbung anzuzeigen oder fortzusetzen, klicke auf „Zum Dashboard gehen“.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Um mit der neuen Bewerbung fortzufahren, klicke auf „Mit der Bewerbung fortfahren“.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Mit der neuen Bewerbung fortfahren",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Neue Bewerbung:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Bestehende Bewerbung:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formular CC-305",
       "note" : "Text for Self Identification form name"
@@ -1531,6 +1579,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Stunden:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Uhrzeit:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Wir freuen uns darauf, dich zu der oben genannten Zeit zu sehen.",
@@ -3087,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Wir prüfen derzeit deine Bewerbung und werden dich in Kürze unter der von dir angegebenen E-Mail-Adresse kontaktieren.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Zurück zum Dashboard",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Festanstellung",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Befristeter Vertrag",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Befristeter Vertrag bis",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Wir empfehlen dir, einen ruhigen Ort zu finden, um Ablenkungen zu vermeiden.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Nachdem du die Prüfung abgeschlossen hast, kehrst du zu deinem Bewerbungsprozess zurück.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Unsere integrative Kultur befähigt Amazonier dazu, die besten Ergebnisse für unsere Kunden zu erzielen. Wenn du eine Behinderung hast und während des Bewerbungs- und Einstellungsprozesses Unterstützung benötigst, einschließlich Unterstützung beim Vorstellungsgespräch oder beim Onboarding-Prozess, wende dich bitte montags bis freitags von 7:00 Uhr GMT bis 16:00 Uhr GMT an das Applicant Candidate Accommodation Team (ACAT). Wenn du direkt aus Großbritannien anrufst, wähle bitte +44 800 086 9884. Wenn du aus Irland anrufst, wähle bitte +353 1800 851 489. Du kannst uns auch kontaktieren, wenn du möglicherweise eine Anpassung in deiner neuen Rolle benötigst und vor Beginn deines ersten Tages eine Anfrage stellen möchtest.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

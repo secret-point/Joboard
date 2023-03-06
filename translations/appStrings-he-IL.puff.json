@@ -1532,6 +1532,10 @@
       "value" : "שעות:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "שעה:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "נשמח לראותך בזמן המצוין לעיל.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -3087,6 +3091,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "אנו בוחנים כעת את בקשתך וניצור איתך קשר בקרוב באמצעות כתובת הדואר האלקטרוני שסיפקת.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "חזרה ללוח הבקרה",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "קבוע",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "חוזה לתקופה קצובה",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "חוזה לתקופה קצובה של עד",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "אנו ממליצים לך למצוא מקום שקט כדי למנוע הסחות דעת.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "עם סיום ההערכה, תתבצע חזרה לתהליך הגשת המועמדות שלך.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "התרבות הכוללת שלנו מעצימה כל Amazonian לספק את התוצאות הטובות ביותר ללקוחותינו. אם יש לך מוגבלות ונדרשת התאמה במהלך תהליך הגשת המועמדות וההעסקה, כולל תמיכה בתהליך הראיון או ההצטרפות, יש ליצור קשר עם צוות אירוח המועמד (ACAT), בימים שני עד שישי בין השעות 07:00 - 16:00 שעון גריניץ'. כשמתקשרים ישירות מבריטניה, יש לחייג‎ +44 800 086 9884. כשמתקשרים מאירלנד, יש לחייג ‏‎+353 1800 851 489. באפשרותך גם ליצור איתנו קשר אם תידרש לך התאמה בתפקידך החדש וברצונך ליזום בקשה לפני תחילת היום הראשון שלך.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

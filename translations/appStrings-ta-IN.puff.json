@@ -1532,6 +1532,10 @@
       "value" : "மணிநேரம்:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "நேரம்:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "மேலே குறிப்பிட்டுள்ள நேரத்தில் உங்களைப் பார்க்க ஆவலுடன் காத்திருக்கிறோம்.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -3087,6 +3091,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "உங்கள் விண்ணப்பத்தைத் தற்போது மதிப்பாய்வு செய்து வருகிறோம். நீங்கள் வழங்கிய மின்னஞ்சல் முகவரியில் விரைவில் உங்களைத் தொடர்புகொள்வோம்.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "டாஷ்போர்டுக்குச் செல்க",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "நிரந்தரம்",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "நிலையான கால ஒப்பந்தம்",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "நிலையான கால ஒப்பந்தத்தின் முடிவுத் தேதி:",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "கவனச்சிதறல்களைத் தவிர்க்க அமைதியான இடத்திற்குச் செல்லுமாறு பரிந்துரைக்கிறோம்.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "நீங்கள் மதிப்பீட்டுச் செயல்முறையை முடித்த பிறகு, உங்கள் விண்ணப்பச் செயல்முறைக்குச் செல்வீர்கள்.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "பல சாராரையும் உள்ளடக்கிய எங்களது கலாச்சாரமானது வாடிக்கையாளர்களுக்குச் சிறந்த முடிவுகளை வழங்க Amazonianகளுக்கு அதிகாரம் அளிக்கிறது. உங்களுக்கு ஒரு மாற்றுத்திறன் இருந்து, விண்ணப்பச் செயல்முறையின்போதோ பணிக்கான ஆட்தேர்வுச் செயல்முறையின்போதோ ஏதேனும் உதவி தேவைப்பட்டால் (நேர்காணல் அல்லது ஆன்போர்டிங் செயல்முறைக்கான உதவி உட்பட), விண்ணப்பதாரர் வசதிக் குழுவினரை (ACAT) தொடர்புகொள்ளவும். இந்தக் குழுவினரை, திங்கள் முதல் வெள்ளி வரை GMT நேரப்படி காலை 7.00 மணி முதல் மாலை 4.00 மணி வரை தொடர்புகொள்ளலாம். நீங்கள் யுனைடெட் கிங்டமில் இருந்து நேரடியாக அழைத்தால், +44 800 086 9884 என்ற எண்ணைத் தொடர்புகொள்ளுங்கள். அயர்லாந்தில் இருந்து அழைத்தால், +353 1800 851 489 என்ற எண்ணைத் தொடர்புகொள்ளுங்கள். உங்கள் புதிய பொறுப்பில் ஏதேனும் உதவி தேவைப்பட்டாலும், உங்கள் பணியின் முதல் நாளுக்கு முன்பே கோரிக்கையைச் சமர்ப்பிக்க விரும்பினாலும், நீங்கள் எங்களைத் தொடர்புகொள்ளலாம்.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

@@ -964,6 +964,54 @@
       "value" : "Torna alla dashboard",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Grazie per esserti candidato per lavorare con Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Ti sei già candidato per questo lavoro. Torna alla dashboard per visualizzare la tua candidatura.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Vai alla dashboard",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Hai già inviato una candidatura per il ruolo:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Puoi mantenere una sola candidatura attiva per questo ID lavoro. Per visualizzare la candidatura attuale e vedere altre opzioni, fai clic su \"Vai alla dashboard\".",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Vai alla dashboard",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Hai già una candidatura attiva per il ruolo:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Se procedi con questa nuova candidatura, quella esistente verrà ritirata. Per visualizzare o riprendere la candidatura esistente, fai clic su \"Vai alla dashboard\".",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Per procedere con la nuova candidatura, fai clic su \"Continua con la candidatura\".",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Continua con la nuova candidatura",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nuova candidatura:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Candidatura esistente:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Modulo CC-305",
       "note" : "Text for Self Identification form name"
@@ -3091,6 +3139,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Al momento stiamo valutando la tua candidatura e ti contatteremo al più presto mediante l'indirizzo e-mail che ci hai fornito.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Torna alla dashboard",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "A tempo indeterminato",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Contratto a tempo determinato",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Contratto a tempo determinato fino al",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Ti consigliamo di trovare un posto tranquillo per evitare distrazioni.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Dopo aver completato la valutazione, verrai riportato al processo di candidatura.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "La nostra cultura inclusiva consente agli Amazonian di fornire ai nostri clienti i risultati migliori. Se hai una disabilità e hai bisogno di un trattamento speciale durante il processo di candidatura e assunzione, incluso il supporto per il colloquio o il processo di onboarding, contatta l’Applicant-Candidate Accommodation Team (ACAT), dal lunedì al venerdì, dalle 7:00 GMT alle 16:00 GMT. Se chiami direttamente dal Regno Unito, componi il numero +44 800 086 9884. Se chiami dall'Irlanda, componi il numero +353 1800 851 489. Puoi anche contattarci se hai bisogno di un adeguamento nel tuo nuovo ruolo e vuoi avviare una richiesta prima di iniziare il tuo primo giorno di lavoro.",
+      "note" : "Assessment condition number 3"
     }
   }
 }
