@@ -194,6 +194,10 @@
             "note": "Text for sorting schedule flyout title",
             "value": "Sort By"
         },
+        "BB-JobOpportunity-sort-schedule-by-featured": {
+            "note": "Text for sort schedule by payRate from highest to lowest",
+            "value": "Featured"
+        },
         "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least": {
             "note": "Text for sort schedule by payRate from highest to lowest",
             "value": "Pay rate - highest to lowest"

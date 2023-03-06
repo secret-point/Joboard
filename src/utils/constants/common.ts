@@ -29,7 +29,6 @@ import {
   Locale,
   localeToLanguageItem,
   NonFcraESignatureAcknowledgement,
-  ScheduleSortBy,
   ScheduleStateFilters,
   SelfIdentificationConfig,
   ShiftPreferenceShiftPatternConfig,
@@ -174,23 +173,6 @@ export const MXStatesSelectOptions: StateSelectOption[] = [
   { displayValue: "ZAC -- Zacatecas", value: "Zacatecas", translationKey: "BB-MX-States-ZAC", code: "ZAC" },
 ];
 
-export const ScheduleSortList: ScheduleSortBy[] = [
-  {
-    title: "Pay rate - Highest to Lowest",
-    value: SCHEDULE_FILTER_TYPE.PAY_RATE,
-    translationKey: "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least"
-  },
-  {
-    title: "Hours - Most to Least",
-    value: SCHEDULE_FILTER_TYPE.HOURS_DESC,
-    translationKey: "BB-JobOpportunity-sort-schedule-by-hours-most-to-least"
-  },
-  {
-    title: "Hours - Least to Most",
-    value: SCHEDULE_FILTER_TYPE.HOURS_ASC,
-    translationKey: "BB-JobOpportunity-sort-schedule-by-hours-least-to-most"
-  }
-];
 export const CONSENT = "consent";
 export const PRE_CONSENT = "pre-consent";
 export const JOB_OPPORTUNITIES = "job-opportunities";

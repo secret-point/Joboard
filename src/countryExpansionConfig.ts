@@ -1,4 +1,5 @@
-import { CountryCode, DESIRED_WORK_HOURS } from "./utils/enums/common";
+import { CountryCode, DESIRED_WORK_HOURS, SCHEDULE_FILTER_TYPE } from "./utils/enums/common";
+import { ScheduleSortBy } from "./utils/types/common";
 
 export const thankYouPageRedirectTextBanner = {
   US: { translationKey: "BB-ThankYou-fill-wotc-description-text", defaultString: "Before your pre-hire appointment, fill out Work Opportunities Tax Credit Questionnaire." },
@@ -124,4 +125,39 @@ export const getCountryConfig = (countryCode: CountryCode) => {
 
 export const getDesiredWorkHoursByCountryCode = (countryCodeOverride?: CountryCode) => {
   return getCountryConfig(countryCodeOverride || getCountryCode()).desiredWorkHours;
+};
+
+export const getScheduleSortList = () => {
+  const ScheduleSortList: ScheduleSortBy[] = [
+    {
+      title: "Pay rate - Highest to Lowest",
+      value: SCHEDULE_FILTER_TYPE.PAY_RATE,
+      translationKey: "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least"
+    },
+    {
+      title: "Hours - Most to Least",
+      value: SCHEDULE_FILTER_TYPE.HOURS_DESC,
+      translationKey: "BB-JobOpportunity-sort-schedule-by-hours-most-to-least"
+    },
+    {
+      title: "Hours - Least to Most",
+      value: SCHEDULE_FILTER_TYPE.HOURS_ASC,
+      translationKey: "BB-JobOpportunity-sort-schedule-by-hours-least-to-most"
+    }
+  ];
+
+  switch (getCountryCode()) {
+    case CountryCode.UK:
+      ScheduleSortList.unshift({
+        title: "Featured",
+        value: SCHEDULE_FILTER_TYPE.FEATURED,
+        translationKey: "BB-JobOpportunity-sort-schedule-by-featured"
+      });
+      break;
+  
+    default:
+      break;
+  }
+
+  return ScheduleSortList;
 };
