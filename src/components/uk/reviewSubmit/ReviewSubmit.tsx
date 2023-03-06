@@ -162,6 +162,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       setActiveApplicationToBeWithdrawn(activeApplicationsToWithdraw);
 
       if (activeApplicationsToWithdraw.length=== 0) {
+        log("[review-submit][Submit-application] no withdraw reasons", activeApplicationsToWithdraw);
         submitApplication(applicationData);
       } else {
         const applicationWithWithdrawReason: Application[] = [];
