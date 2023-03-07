@@ -1712,6 +1712,22 @@
       "value" : "No hemos podido validar el identificador de inicio de sesión de la persona que te ha recomendado. Ponte en contacto con nosotros en el chat de www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Detalles de la cita previa a la contratación",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Fecha",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Hora",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Detalles de la reunión",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Proporciona tu ID de inicio de sesión de referente (solo letras minúsculas)",
       "note" : "Text for the thank you page referral login input label text"

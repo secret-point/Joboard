@@ -1716,6 +1716,22 @@
       "value" : "আমরা আপনার রেফারারের লগইন ID যাচাই করতে পারিনি, সহায়তার জন্য দয়া করে www.amazon.com/applicationhelp এ আমাদের সাথে কথা বলুন।",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "প্রাক-নিয়োগ অ্যাপয়েন্টমেন্টের বিবরণ",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "তারিখ",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "সময়",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "মিটিংয়ের বিবরণ",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "অনুগ্রহ করে আপনাকে যিনি রেফার করেছেন তার লগইন আইডি প্রদান করুন (শুধুমাত্র ছোট হাতের অক্ষর)",
       "note" : "Text for the thank you page referral login input label text"

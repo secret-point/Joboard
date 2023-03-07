@@ -1664,6 +1664,22 @@
       "value" : "לא הצלחנו לאמת את מזהה הכניסה של המפנה שלך, יש לשוחח איתנו בכתובת www.amazon.com/applicationhelp לקבלת סיוע.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "פרטי פגישת טרום העסקה",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "תאריך",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "זמן",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "פרטי פגישה",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "יש לספק את מזהה ההתחברות של המפנה שלך (אותיות קטנות בלבד)",
       "note" : "Text for the thank you page referral login input label text"

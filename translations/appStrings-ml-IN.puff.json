@@ -1712,6 +1712,22 @@
       "value" : "നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID ഞങ്ങൾക്ക് സാധൂകരിക്കാൻ കഴിഞ്ഞില്ല, ദയവായി സഹായത്തിന് www.amazon.com/applicationhelp എന്നതിൽ ഞങ്ങളുമായി ചാറ്റ് ചെയ്യുക.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "നിയമനത്തിന് മുമ്പുള്ള അപ്പോയിന്റ്മെന്റിന്റെ വിശദാംശങ്ങൾ",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "തീയതി",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "സമയം",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "മീറ്റിംഗ് വിശദാംശങ്ങൾ",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "ദയവായി നിങ്ങളുടെ റഫററുടെ ലോഗിൻ ID നൽകുക (ചെറിയ അക്ഷരങ്ങൾ മാത്രം)",
       "note" : "Text for the thank you page referral login input label text"

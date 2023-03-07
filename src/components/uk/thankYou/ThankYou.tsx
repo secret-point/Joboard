@@ -105,18 +105,20 @@ export const ThankYou = (props: MapStateToProps) => {
     return (
       <>
         <Text fontSize="T300" fontWeight="bold">
-          {formatDate(nheAppointment?.dateWithoutFormat, {
+          {t("BB-Kondo-ThankYou-nhe-appointment-details-title-text", "Pre-hire appointment details")}
+        </Text>
+
+        <Text fontSize="T100">
+          {t("BB-Kondo-ThankYou-nhe-appointment-details-date-label", "Date")}: {formatDate(nheAppointment?.dateWithoutFormat, {
             defaultDateFormat: "DD/MM/yyyy",
-            displayFormat: "ddd MMM DD"
+            displayFormat: "dddd, D MMM"
           })}
         </Text>
-
-        <Text fontSize="T100" fontWeight="bold">
-          {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}`}
+        <Text fontSize="T100">
+          {t("BB-Kondo-ThankYou-nhe-appointment-details-time-label", "Time")}: {`${startTime} - ${endTime}`}
         </Text>
-
-        <Text fontSize="T100" color={CommonColors.Neutral70}>
-          {t("BB-ThankYou-nhe-appointment-details-visit-us-text", `Visit us for a 30 minute session anytime between ${startTime} - ${endTime}.`, { startTime: startTime, endTime: endTime })}
+        <Text fontSize="T100">
+          {t("BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label", "Meeting details")}: {location && `${location.streetAddress} ${location.city} ${location.postalCode}, United Kingdom`}
         </Text>
       </>
     );
@@ -128,13 +130,9 @@ export const ThankYou = (props: MapStateToProps) => {
       onCloseButtonClick={close}
     >
       <Col width="100%" padding="S300" gridGap={15}>
-        <Text fontSize="T200">
-          {t("BB-ThankYou-nhe-appointment-flyout-appointment-details-title-text", "Appointment details")}
-        </Text>
-
         {renderNheAppointmentDetails()}
 
-        <Text fontSize="T300">
+        <Text fontSize="T300" fontWeight="bold">
           {t("BB-ThankYou-nhe-appointment-flyout-things-to-bring-text", "Things to bring")}
         </Text>
         <ul className="ul-list">
@@ -154,7 +152,7 @@ export const ThankYou = (props: MapStateToProps) => {
           <InnerHTML html={t("BB-Kondo-ThankYou-nhe-appointment-flyout-acceptable-documents-text", "Click <a href='https://glspub.s3-us-west-2.amazonaws.com/Work+Authorization/UK+Employee+Guide/index.html' target='_blank' rel='noopener noreferrer'>here</a> for a complete list of acceptable documents.")} />
         </Text>
 
-        <Text fontSize="T300">
+        <Text fontSize="T300" fontWeight="bold">
           {t("BB-ThankYou-nhe-appointment-flyout-special-assistance-text", "Special assistance")}
         </Text>
         <Text fontSize="T100">

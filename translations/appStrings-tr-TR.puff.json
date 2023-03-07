@@ -1672,6 +1672,22 @@
       "value" : "Yönlendiricinizin giriş kimliğini doğrulayamadık, lütfen yardım için www.amazon.com/applicationhelp adresinden bizimle sohbet edin.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "İşe alım öncesi randevusunun ayrıntıları",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Tarih",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Saat",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Toplantı detayları",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Lütfen yönlendiren giriş kimliğinizi girin (yalnızca küçük harfler)",
       "note" : "Text for the thank you page referral login input label text"

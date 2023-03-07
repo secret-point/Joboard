@@ -1676,6 +1676,22 @@
       "value" : "మేము మీ రిఫరర్ లాగిన్ IDని ధృవీకరించలేకపోయాము, దయచేసి సహాయం కోసం www.amazon.com/applicationhelpలో మాతో చాట్ చేయండి.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "ముందస్తు నియామక అపాయింట్‌మెంట్ వివరాలు",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "తేదీ",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "సమయం",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "మీటింగ్ వివరాలు",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "దయచేసి మీ రిఫరర్ లాగిన్ IDని అందించండి (చిన్న అక్షరాలు మాత్రమే)",
       "note" : "Text for the thank you page referral login input label text"

@@ -1672,6 +1672,22 @@
       "value" : "추천인의 로그인 ID를 확인할 수 없습니다. www.amazon.com/applicationhelp에서 채팅을 통해 도움을 받으시기 바랍니다.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "채용 전 면담 세부 사항",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "날짜",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "시간",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "회의 세부 사항",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "추천인 로그인 ID를 입력하세요(소문자만 사용).",
       "note" : "Text for the thank you page referral login input label text"

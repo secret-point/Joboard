@@ -1712,6 +1712,22 @@
       "value" : "Nie mogliśmy zweryfikować identyfikatora logowania osoby polecającej, porozmawiaj z nami pod adresem www.amazon.com/applicationhelp, aby uzyskać pomoc.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Szczegóły spotkania poprzedzającego zatrudnienie",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Data",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Godzina",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Szczegóły spotkania",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Podaj swój identyfikator logowania polecającego (tylko małe litery)",
       "note" : "Text for the thank you page referral login input label text"

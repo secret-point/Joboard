@@ -1718,6 +1718,22 @@
             "note": "Text for the thank you page referral login validation error - candidate is blocked.",
             "value": "We couldn't validate your referrer's login ID, please chat with us at www.amazon.com/applicationhelp for assistance."
         },
+        "BB-Kondo-ThankYou-nhe-appointment-details-title-text": {
+            "note": "Text for the thank you page nhe appointment details title text",
+            "value": "Pre-hire appointment details"
+        },
+        "BB-Kondo-ThankYou-nhe-appointment-details-date-label": {
+            "note": "Text for the thank you page nhe appointment details date label text",
+            "value": "Date"
+        },
+        "BB-Kondo-ThankYou-nhe-appointment-details-time-label": {
+            "note": "Text for the thank you page nhe appointment details time label text",
+            "value": "Time"
+        },
+        "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label": {
+            "note": "Text for the thank you page nhe appointment details meeting details label text",
+            "value": "Meeting details"
+        },
         "BB-Kondo-referral-login-label-text": {
             "note": "Text for the thank you page referral login input label text",
             "value": "Please provide your referrer login ID (lower case letters only)"
