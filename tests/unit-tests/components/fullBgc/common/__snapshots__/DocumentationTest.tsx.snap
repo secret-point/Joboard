@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Documentation should match snapshot 1`] = `
+<Col
+  className="documentation-container"
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Documentation Component
+  </Text>
+  ...
+  <DebouncedButton
+    onClick={[Function]}
+    variant="secondary"
+  >
+    Next
+  </DebouncedButton>
+</Col>
+`;

@@ -3,6 +3,7 @@ import { createHashHistory } from "history";
 import { getDesiredWorkHoursByCountryCode } from "../../src/countryExpansionConfig";
 import { AppConfigState } from "../../src/reducers/appConfig.reducer";
 import { ApplicationState } from "../../src/reducers/application.reducer";
+import { FullBgcState } from "../../src/reducers/fullBgc.reducer";
 import { BGCState } from "../../src/reducers/bgc.reducer";
 import { CandidateState } from "../../src/reducers/candidate.reducer";
 import { NheState } from "../../src/reducers/nhe.reducer";
@@ -12,6 +13,7 @@ import { ThankYouState } from "../../src/reducers/thankYou.reducer";
 import { uiState } from "../../src/reducers/ui.reducer";
 import { WorkflowState } from "../../src/reducers/workflow.reducer";
 import {
+  FULL_BGC_STEPS,
   BGC_STEPS,
   BGC_VENDOR_TYPE,
   DAYS_OF_WEEK,
@@ -644,6 +646,32 @@ export const TEST_BGC_STATE: BGCState = {
       status: INFO_CARD_STEP_STATUS.ACTIVE,
       editMode: false
     }
+  }
+};
+
+export const TEST_FULL_BGC_STATE: FullBgcState = {
+  stepConfig: {
+    completedSteps: [],
+    [FULL_BGC_STEPS.CONSENT]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.BACKGROUND_INFO]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.ADDRESS_HISTORY]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.BIRTH_HISTORY]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.DOCUMENTATION]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
   }
 };
 

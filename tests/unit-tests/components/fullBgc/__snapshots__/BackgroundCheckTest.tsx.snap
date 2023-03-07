@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundCheck should match snapshot 1`] = `
+<Col
+  className="bgcContainer"
+  gridGap={15}
+>
+  <Col
+    gridGap={15}
+  >
+    <H4
+      color="neutral90"
+      font="primary"
+      fontSize="T400"
+      fontWeight="regular"
+      hyphens="none"
+      margin={0}
+    >
+      Provide background check information
+    </H4>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      Please provide authorization and information needed for a background check.
+    </Text>
+  </Col>
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(BackgroundCheckConsent)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "ACTIVE",
+      }
+    }
+    maxStepNumber={5}
+    stepIndex={1}
+    stepName="CONSENT"
+    title="Background check consent"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(BackgroundInformation)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={5}
+    stepIndex={2}
+    stepName="BACKGROUND_INFO"
+    title="Background information"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(AddressHistory)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={5}
+    stepIndex={3}
+    stepName="ADDRESS_HISTORY"
+    title="Address history"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(BirthHistory)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={5}
+    stepIndex={4}
+    stepName="BIRTH_HISTORY"
+    title="Birth history"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(Documentation)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={5}
+    stepIndex={5}
+    stepName="DOCUMENTATION"
+    title="Documentation"
+  />
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  />
+</Col>
+`;

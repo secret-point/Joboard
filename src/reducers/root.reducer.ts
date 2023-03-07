@@ -13,6 +13,7 @@ import nheReducer from "./nhe.reducer";
 import selfIdentificationReducer from "./selfIdentification.reducer";
 import thankYouReducer from "./thankYou.reducer";
 import assessmentReducer from "./assessment.reducer";
+import fullBgcReducer from "./fullBgc.reducer";
 
 const createRootReducer = ( history: any ) =>
   combineReducers({
@@ -23,6 +24,7 @@ const createRootReducer = ( history: any ) =>
     requisition: requisitionReducer,
     schedule: scheduleReducer,
     bgc: bgcReducer,
+    fullBgc: fullBgcReducer,
     candidate: candidateReducer,
     workflow: workflowReducer,
     nhe: nheReducer,

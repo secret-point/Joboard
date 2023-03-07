@@ -10,6 +10,7 @@ import {
   HIDE_REHIRE_QUESTION_VALUE,
   INFO_CARD_STEP_STATUS,
   JOB_REFERRAL_VALUE,
+  FULL_BGC_STEPS,
   QUERY_PARAMETER_NAME,
   SCHEDULE_FILTER_TYPE,
   SELF_IDENTIFICATION_STEPS,
@@ -493,7 +494,7 @@ export interface ScheduleUK {
 
 interface ScheduleExtraProps {
   duration?: string | null;
-  displayHireEndDate?: boolean; 
+  displayHireEndDate?: boolean;
   displayEmploymentType?: boolean;
   useScheduleCardDetails?: boolean;
 };
@@ -840,7 +841,18 @@ export interface BgcMXStepConfig {
   [BGC_STEPS.NON_FCRA]: InfoCardStepStatus;
 }
 
-export type BgcStepConfigType = BgcStepConfig | BgcMXStepConfig
+export interface FullBgcStepConfig {
+  completedSteps: FULL_BGC_STEPS[];
+  [FULL_BGC_STEPS.CONSENT]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.BACKGROUND_INFO]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.ADDRESS_HISTORY]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.BIRTH_HISTORY]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.DOCUMENTATION]: InfoCardStepStatus;
+}
+
+export type BgcStepConfigType = BgcStepConfig | BgcMXStepConfig;
+
+export type FullBgcStepConfigType = FullBgcStepConfig;
 
 type SelfIdentificationStepType = {[key in SELF_IDENTIFICATION_STEPS]: InfoCardStepStatus};
 
@@ -848,7 +860,7 @@ export interface SelfIdentificationConfig extends Partial<SelfIdentificationStep
   completedSteps: SELF_IDENTIFICATION_STEPS[];
 }
 
-export type InfoCardStepConfig = BgcStepConfig & SelfIdentificationConfig;
+export type InfoCardStepConfig = BgcStepConfig & FullBgcStepConfig & SelfIdentificationConfig;
 
 export interface ScheduleStateFilters {
   sortKey: SCHEDULE_FILTER_TYPE;

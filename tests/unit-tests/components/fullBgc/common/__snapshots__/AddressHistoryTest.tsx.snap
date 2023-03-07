@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressHistory should match snapshot 1`] = `
+<Col
+  className="address-history-container"
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Address History Component
+  </Text>
+  ...
+  <DebouncedButton
+    onClick={[Function]}
+    variant="secondary"
+  >
+    Next
+  </DebouncedButton>
+</Col>
+`;

@@ -70,6 +70,7 @@ import {
   ValueToI18nKeyMap
 } from "./constants/common";
 import {
+  FULL_BGC_STEPS,
   BGC_STEPS,
   BGC_VENDOR_TYPE,
   CountryCode,
@@ -92,6 +93,7 @@ import {
   AlertMessage,
   ApiErrorMessage,
   Application,
+  FullBgcStepConfig,
   BgcMXStepConfig,
   BgcStepConfig,
   Candidate,
@@ -128,6 +130,7 @@ import {
   ShiftPreferenceWorkHour,
   TimeRangeHoursData
 } from "./types/common";
+import { boundUpdateFullBgcStepConfigAction } from "../actions/FullBgcActions/boundFullBgcActions";
 
 const {
   BACKGROUND_CHECK,
@@ -952,6 +955,23 @@ export const handleMXUpdateNonFCRABGCStep = (stepConfig: BgcMXStepConfig) => {
   boundUpdateStepConfigAction(request);
 };
 
+export const goToNextFullBgcStep = (stepConfig: FullBgcStepConfig, currentStep: FULL_BGC_STEPS, nextStep: FULL_BGC_STEPS) => {
+  const { completedSteps } = stepConfig;
+  const request: FullBgcStepConfig = {
+    ...stepConfig,
+    completedSteps: [...completedSteps, currentStep],
+    [currentStep]: {
+      status: INFO_CARD_STEP_STATUS.COMPLETED,
+      editMode: false
+    },
+    [nextStep]: {
+      status: INFO_CARD_STEP_STATUS.ACTIVE,
+      editMode: false
+    }
+  };
+  boundUpdateFullBgcStepConfigAction(request);
+};
+
 export const validateNonFcraSignatures = ( nonFcraAckEsign: string, nonFcraNoticeEsign: string ): NonFcraFormErrorStatus => {
   const errorStatus: NonFcraFormErrorStatus = {
     hasError: false,
@@ -1016,6 +1036,22 @@ export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => 
   return fcraStatus.status === COMPLETED && !fcraStatus.editMode &&
         nonFcraStatus.status === COMPLETED && !nonFcraStatus.editMode &&
         addBgcStatus.status === COMPLETED && !addBgcStatus.editMode;
+};
+
+export const ashBgcShouldDisplayContinue = (stepConfig: FullBgcStepConfig): boolean => {
+  const { CONSENT, BACKGROUND_INFO, ADDRESS_HISTORY, BIRTH_HISTORY, DOCUMENTATION } = FULL_BGC_STEPS;
+  const { COMPLETED } = INFO_CARD_STEP_STATUS;
+  const consentStatus = stepConfig[CONSENT];
+  const bgInfoStatus = stepConfig[BACKGROUND_INFO];
+  const addressHistoryStatus = stepConfig[ADDRESS_HISTORY];
+  const birthHistoryStatus = stepConfig[BIRTH_HISTORY];
+  const documentationStatus = stepConfig[DOCUMENTATION];
+
+  return consentStatus.status === COMPLETED && !consentStatus.editMode &&
+        bgInfoStatus.status === COMPLETED && !bgInfoStatus.editMode &&
+        addressHistoryStatus.status === COMPLETED && !addressHistoryStatus.editMode &&
+        birthHistoryStatus.status === COMPLETED && !birthHistoryStatus.editMode &&
+        documentationStatus.status === COMPLETED && !documentationStatus.editMode;
 };
 
 export const bgcMXShouldDisplayContinue = (stepConfig: BgcMXStepConfig): boolean => {

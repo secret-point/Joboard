@@ -18,11 +18,13 @@ import { ScheduleState } from "../../reducers/schedule.reducer";
 import { BGCState } from "../../reducers/bgc.reducer";
 import { CandidateState } from "../../reducers/candidate.reducer";
 import { boundUpdateStepConfigAction } from "../../actions/BGC_Actions/boundBGCActions";
+import { boundUpdateFullBgcStepConfigAction } from "../../actions/FullBgcActions/boundFullBgcActions";
 import { translate as t } from "../../utils/translator";
 import { SelfIdentificationState } from "../../reducers/selfIdentification.reducer";
 import { getPageName } from "../../utils/helper";
 import { PAGE_ROUTES } from "../pageRoutes";
 import { boundUpdateSelfIdStepConfig } from "../../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
+import { FullBgcState } from "../../reducers/fullBgc.reducer";
 
 const { BACKGROUND_CHECK, SELF_IDENTIFICATION } = PAGE_ROUTES;
 
@@ -31,6 +33,7 @@ interface MapStateToProps {
   application: ApplicationState;
   schedule: ScheduleState;
   bgc: BGCState;
+  fullBgc: FullBgcState;
   candidate: CandidateState;
   selfIdentification: SelfIdentificationState;
 }
@@ -49,21 +52,33 @@ type BGCStepCardMergedProps = MapStateToProps & BGCStepCardProps;
 
 const InfoStepCard = (props: BGCStepCardMergedProps ) => {
 
-  const { title, collapsedContent, expandedContent, stepName, stepIndex, infoCardStepStatus, bgc, selfIdentification, maxStepNumber } = props;
+  const { title, collapsedContent, expandedContent, stepName, stepIndex, infoCardStepStatus, bgc, fullBgc, selfIdentification, maxStepNumber } = props;
   const { stepConfig: bgcStepConfig } = bgc;
+  const { stepConfig: fullBgcStepConfig } = fullBgc;
   const { stepConfig: selfIdStepConfig } = selfIdentification;
   const { status: stepStatus, editMode } = infoCardStepStatus || {};
 
-  const stepConfig: InfoCardStepConfig = getPageName() === BACKGROUND_CHECK ? bgcStepConfig as InfoCardStepConfig: selfIdStepConfig as InfoCardStepConfig;
+  let stepConfig: InfoCardStepConfig;
+  switch (getPageName()) {
+    case BACKGROUND_CHECK:
+      stepConfig = bgcStepConfig as InfoCardStepConfig;
+      break;
+    case SELF_IDENTIFICATION:
+      stepConfig = selfIdStepConfig as InfoCardStepConfig;
+      break;
+    default:
+      stepConfig = fullBgcStepConfig as InfoCardStepConfig;
+      break;
+  }
 
   const getContentToDisplay = (): React.ReactNode => {
 
     if (stepStatus === INFO_CARD_STEP_STATUS.ACTIVE || (editMode && stepStatus === INFO_CARD_STEP_STATUS.COMPLETED)) {
       return expandedContent;
     }
-        
+
     return collapsedContent || <></>;
-        
+
   };
 
   const handleSetEditMode = (editMode: boolean) => {
@@ -77,12 +92,17 @@ const InfoStepCard = (props: BGCStepCardMergedProps ) => {
     };
 
     const pageName = getPageName();
-    if (pageName === BACKGROUND_CHECK) {
-      boundUpdateStepConfigAction(payload);
-    }
 
-    if (pageName === SELF_IDENTIFICATION) {
-      boundUpdateSelfIdStepConfig(payload);
+    switch (pageName) {
+      case BACKGROUND_CHECK:
+        boundUpdateStepConfigAction(payload);
+        break;
+      case SELF_IDENTIFICATION:
+        boundUpdateSelfIdStepConfig(payload);
+        break;
+      default:
+        boundUpdateFullBgcStepConfigAction(payload);
+        break;
     }
   };
 

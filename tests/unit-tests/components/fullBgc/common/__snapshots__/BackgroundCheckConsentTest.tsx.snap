@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundCheckConsent should match snapshot 1`] = `
+<Col
+  className="bgc-consent-container"
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    Background Check Consent Component
+  </Text>
+  ...
+  <DebouncedButton
+    onClick={[Function]}
+    variant="secondary"
+  >
+    Next
+  </DebouncedButton>
+</Col>
+`;

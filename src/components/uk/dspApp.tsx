@@ -71,7 +71,7 @@ const {
   NHE_PREFERENCES,
   REHIRE_NOT_ELIGIBLE,
   TIMEOUT,
-  ACCESS_DENIED
+  ACCESS_DENIED,
 } = PAGE_ROUTES;
 
 export const DragonStoneAppUK = (props: MapStateToProps) => {
