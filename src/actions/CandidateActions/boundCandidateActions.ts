@@ -2,9 +2,10 @@ import store from "../../store/store";
 import {
   actionGetCandidateInfo,
   actionSetCandidatePatchRequest,
-  actionUpdateCandidateInfoError
+  actionUpdateCandidateInfoError, actionUpdateCandidateShiftPreferencesRequest
 } from "./candidateActions";
 import { CandidateInfoErrorState, CandidatePatchRequest } from "../../utils/types/common";
+import { ShiftPreferences } from "../../@types/shift-preferences";
 
 export const boundGetCandidateInfo = () => store.dispatch(actionGetCandidateInfo());
 
@@ -13,3 +14,7 @@ export const boundSetCandidatePatchRequest = (candidate: CandidatePatchRequest) 
 
 export const boundUpdateCandidateInfoError = (payload: CandidateInfoErrorState) =>
   store.dispatch(actionUpdateCandidateInfoError(payload));
+
+export const boundUpdateCandidateShiftPreferencesRequest = (payload: ShiftPreferences, onSuccess?: Function, onError?: Function) => {
+  store.dispatch(actionUpdateCandidateShiftPreferencesRequest(payload, onSuccess, onError));
+};

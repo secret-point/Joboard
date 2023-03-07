@@ -8,12 +8,11 @@ import {
   UpdateWorkflowNameRequest
 } from "../../utils/apiTypes";
 import {
-  APPLICATION_ACTION_TYPES,
+  APPLICATION_ACTION_TYPES, CalculateInclinedValueAction, CalculateInclinedValueResultAction,
   CreateApplicationActionDS,
   CreateApplicationAndSkipScheduleActionDS,
   CreateApplicationAndSkipScheduleFailedActionDS,
   CreateApplicationAndSkipScheduleSuccessActionDS,
-  CreateApplicationFailedActionDS,
   CreateApplicationSuccessActionDS,
   GetApplicationAction,
   GetApplicationFailedAction,
@@ -55,8 +54,16 @@ export const actionCreateApplicationDSSuccess = ( payload: Application, ): Creat
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
 };
 
-export const actionCreateApplicationDSFailed = ( payload: ApiError ): CreateApplicationFailedActionDS => {
-  return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED, payload };
+export const actionCalculateInclinedValue = ( applicationId: string, onResult?: Function): CalculateInclinedValueAction => {
+  return {
+    type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE,
+    onResult,
+    applicationId,
+  };
+};
+
+export const actionCalculateInclinedValueResult = ( onResult?: Function): CalculateInclinedValueResultAction => {
+  return { type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE_RESULT, onResult, loadingStatus: loadingStatusHelper() };
 };
 
 export const actionUpdateApplicationDS =

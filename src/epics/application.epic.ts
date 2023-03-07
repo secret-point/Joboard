@@ -2,6 +2,7 @@ import { ofType } from "redux-observable";
 import { from, Observable, of } from "rxjs";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import {
+  actionCalculateInclinedValueResult,
   actionCreateApplicationAndSkipScheduleDSFailed,
   actionCreateApplicationAndSkipScheduleDSSuccess,
   actionCreateApplicationDSSuccess,
@@ -18,6 +19,7 @@ import {
 } from "../actions/ApplicationActions/applicationActions";
 import {
   APPLICATION_ACTION_TYPES,
+  CalculateInclinedValueAction,
   CreateApplicationActionDS,
   CreateApplicationAndSkipScheduleActionDS,
   GetApplicationAction,
@@ -225,6 +227,35 @@ export const UpdateApplicationDSEpic = ( action$: Observable<any> ) => {
             setEpicApiCallErrorMessage(errorMessage);
 
             return of(actionUpdateApplicationDSFailed(error));
+          })
+        )
+    )
+  );
+};
+
+export const CalculateInclinedValueEpic = ( action$: Observable<any> ) => {
+  return action$.pipe(
+    ofType(APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE),
+    switchMap(( action: CalculateInclinedValueAction ) =>
+      from(new CandidateApplicationService().calculateInclinedValue(action.applicationId))
+        .pipe(
+          switchMap(epicSwitchMapHelper),
+          switchMap(async ( response ) => {
+            return response;
+          }),
+          map(() => {
+            if (action.onResult) {
+              action.onResult();
+            }
+            return actionCalculateInclinedValueResult();
+          }),
+          catchError(( error: ApiError ) => {
+            // even on failure, we still want to submit the application, so log but eat the error
+            log(`[Epic] UpdateCalculateInclinedValue error: ${error?.errorCode}`, formatLoggedApiError(error), LoggerType.ERROR);
+            if (action.onResult) {
+              action.onResult();
+            }
+            return of(actionCalculateInclinedValueResult());
           })
         )
     )

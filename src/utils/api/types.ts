@@ -8,13 +8,14 @@ import {
   GET_POSSIBLE_NHE_PREFERENCES,
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
-  UPDATE_APPLICATION_ERROR_CODE,
+  UPDATE_APPLICATION_ERROR_CODE, UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE,
   UPDATE_WORKFLOW_NAME_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
   WITHDRAW_APPLICATION_ERROR_CODE
 } from "../enums/common";
 import { Application, Candidate, Job, NHETimeSlot, PossibleNhePreferenceConfig, Schedule } from "../types/common";
+import { ShiftPreferences } from "../../@types/shift-preferences";
 
 export interface CreateApplicationResponse {
   data: Application;
@@ -100,6 +101,12 @@ export interface GetCandidateResponse {
   data: Candidate;
   error: string;
   errorCode: GET_SCHEDULE_DETAIL_ERROR_CODE;
+}
+
+export interface UpdateCandidateShiftPreferencesResponse {
+  data: ShiftPreferences;
+  error: string;
+  errorCode: UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE;
 }
 
 export interface UpdateWotcStatusResponse {

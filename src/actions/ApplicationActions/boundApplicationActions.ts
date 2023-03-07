@@ -8,6 +8,7 @@ import {
   UpdateWorkflowNameRequest
 } from "../../utils/apiTypes";
 import {
+  actionCalculateInclinedValue,
   actionCreateApplicationAndSkipScheduleDS,
   actionCreateApplicationDS,
   actionGetApplication,
@@ -26,6 +27,9 @@ export const boundCreateApplicationDS = (payload: CreateApplicationRequestDS, on
 
 export const boundUpdateApplicationDS = (payload: UpdateApplicationRequestDS, onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionUpdateApplicationDS(payload, onSuccess, onError));
+
+export const boundCalculateInclinedValue = (applicationId: string, onResult?: Function) =>
+  store.dispatch(actionCalculateInclinedValue(applicationId, onResult));
 
 export const boundUpdateWorkflowName = (payload: UpdateWorkflowNameRequest, onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionUpdateWorkflowName(payload, onSuccess, onError));

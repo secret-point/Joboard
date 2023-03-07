@@ -32,7 +32,9 @@ export enum APPLICATION_ACTION_TYPES {
   GET_APPLICATION_LIST_FAILED = "GET_APPLICATION_LIST_FAILED",
   WITHDRAW_MULTIPLE_APPLICATION = "WITHDRAW_MULTIPLE_APPLICATION",
   WITHDRAW_MULTIPLE_APPLICATION_SUCCESS = "WITHDRAW_MULTIPLE_APPLICATION_SUCCESS",
-  WITHDRAW_MULTIPLE_APPLICATION_FAILED = "WITHDRAW_MULTIPLE_APPLICATION_FAILED"
+  WITHDRAW_MULTIPLE_APPLICATION_FAILED = "WITHDRAW_MULTIPLE_APPLICATION_FAILED",
+  CALCULATE_INCLINED_VALUE = "CALCULATE_INCLINED_VALUE",
+  CALCULATE_INCLINED_VALUE_RESULT = "CALCULATE_INCLINED_VALUE_RESULT",
 }
 
 export interface GetApplicationAction extends Action {
@@ -81,6 +83,18 @@ export interface UpdateApplicationActionDS extends Action {
   payload: UpdateApplicationRequestDS;
   onSuccess?: Function;
   onError?: Function;
+}
+
+export interface CalculateInclinedValueAction extends Action {
+  type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE;
+  applicationId: string;
+  onResult?: Function;
+}
+
+export interface CalculateInclinedValueResultAction extends Action {
+  type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE_RESULT;
+  onResult?: Function;
+  loadingStatus: boolean;
 }
 
 export interface UpdateApplicationSuccessActionDS extends Action {
@@ -187,4 +201,7 @@ export type ApplicationActionTypes =
     GetApplicationListFailedAction |
     WithdrawMultipleApplicationSuccessAction |
     WithdrawMultipleApplicationFailedAction |
-    WithdrawMultipleApplicationAction;
+    WithdrawMultipleApplicationAction |
+    CalculateInclinedValueAction |
+    CalculateInclinedValueResultAction;
+

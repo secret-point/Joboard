@@ -8,7 +8,7 @@ import {
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
   PROXY_ERROR_MESSAGE,
-  UPDATE_APPLICATION_ERROR_CODE,
+  UPDATE_APPLICATION_ERROR_CODE, UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
   WITHDRAW_APPLICATION_ERROR_CODE
@@ -279,6 +279,17 @@ export const UpdateApplicationErrorMessage: { [key: string]: ApiErrorMessage } =
   [UPDATE_APPLICATION_ERROR_CODE.USER_UNAUTHORIZED]: {
     translationKey: "BB-get-candidate-error-message-user-unauthorized",
     value: "User unauthorized"
+  }
+};
+
+export const UpdateCandidateShiftPreferencesErrorMessages: {[key: string]: ApiErrorMessage} = {
+  [UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE.FAILED_UPDATE_SHIFT_PREFERENCES]: {
+    translationKey: "BB-update-candidate-shift-preferences-error-message-unable-to-update-shift-preferences",
+    value: "Unable to update candidate shift preferences",
+  },
+  [UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE.INVALID_REQUEST]: {
+    translationKey: "BB-update-candidate-shift-preferences-error-message-invalid-request",
+    value: "Invalid request to update candidate shift preferences",
   }
 };
 

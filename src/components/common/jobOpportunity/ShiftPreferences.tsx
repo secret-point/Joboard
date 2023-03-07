@@ -32,15 +32,21 @@ import {
   resetIsPageMetricsUpdated
 } from "../../../helpers/utils";
 import queryString from "query-string";
-import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
+import {
+  boundGetCandidateInfo,
+  boundUpdateCandidateShiftPreferencesRequest
+} from "../../../actions/CandidateActions/boundCandidateActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { DAYS_OF_WEEK, UPDATE_APPLICATION_API_TYPE, WORKFLOW_STEP_NAME } from "../../../utils/enums/common";
-import { UpdateApplicationRequestDS } from "../../../utils/apiTypes";
+import {
+  DAYS_OF_WEEK,
+  SHIFT_PATTERN,
+  WORKFLOW_STEP_NAME
+} from "../../../utils/enums/common";
 import { connect } from "react-redux";
 import moment from "moment";
-import { boundUpdateApplicationDS } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowActions";
+import { ShiftPreferences as ShiftPreferencesType } from "../../../@types/shift-preferences";
 
 interface MapStateToProps {
   job: JobState;
@@ -57,7 +63,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
   const { applicationId, jobId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const { candidateData } = candidate.results;
+  const { shiftPreferencesData } = candidate.results;
 
   useEffect(() => {
     boundGetCandidateInfo();
@@ -74,9 +80,9 @@ export const ShiftPreferences = (props: MapStateToProps) => {
   useEffect(() => {
     // Page will emit page load event once both pros are available but
     // will not emit new event on props change once it has emitted pageload event previously
-    jobDetail && applicationData && candidateData && addMetricForPageLoad(pageName);
+    jobDetail && applicationData && shiftPreferencesData && addMetricForPageLoad(pageName);
 
-  }, [jobDetail, applicationData, candidateData]);
+  }, [jobDetail, applicationData, shiftPreferencesData]);
 
   useEffect(() => {
     return () => {
@@ -85,10 +91,11 @@ export const ShiftPreferences = (props: MapStateToProps) => {
     };
   }, []);
 
-  const [startDate, setStartDate] = useState();
-  const [hoursPerWeek, setHoursPerWeek] = useState<ShiftPreferenceWorkHour[]>([]);
-  const [workDays, setWorkDays] = useState<DAYS_OF_WEEK[]>([]);
-  const [shiftPattern, setShiftPattern] = useState();
+  const [earliestStartDate, setEarliestStartDate] = useState(shiftPreferencesData?.earliestStartDate);
+  const [preferredDaysToWork, setPreferredDaysToWork] = useState<DAYS_OF_WEEK[]>(shiftPreferencesData?.preferredDaysToWork ?? []);
+  const [hoursPerWeek, setHoursPerWeek] = useState<ShiftPreferenceWorkHour[]>(shiftPreferencesData?.hoursPerWeek ?? []);
+  const [shiftTimePattern, setShiftTimePattern] = useState(shiftPreferencesData?.shiftTimePattern);
+
   const [startDateValid, setStartDateValid] = useState(true);
   const [shiftPatternValid, setShiftPatternValid] = useState(true);
   const [hourPerWeekValid, setHourPerWeekValid] = useState(true);
@@ -99,7 +106,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
   };
 
   const updateWorkDays = (value: DAYS_OF_WEEK) => {
-    const newWorkDays = workDays || [];
+    const newWorkDays = preferredDaysToWork ?? [];
 
     if (newWorkDays.indexOf(value) > -1) {
       newWorkDays.splice(newWorkDays.indexOf(value), 1);
@@ -107,15 +114,15 @@ export const ShiftPreferences = (props: MapStateToProps) => {
       newWorkDays.push(value);
     }
 
-    setWorkDays(newWorkDays);
+    setPreferredDaysToWork(preferredDaysToWork);
   };
 
   const handleSavePreference = () => {
     // Validate start date and shift pattern as they are required
-    const isStartDateValid = isDateGreaterThanToday(startDate);
-    const isShiftPatternValid = !!shiftPattern;
+    const isStartDateValid = isDateGreaterThanToday(earliestStartDate as any);
+    const isShiftPatternValid = !!shiftTimePattern;
     const isHourPerWeekValid = hoursPerWeek.length > 0;
-    const isWorkDaysValid = workDays.length > 0;
+    const isWorkDaysValid = preferredDaysToWork.length > 0;
     const formIsValid = isShiftPatternValid && isWorkDaysValid && isHourPerWeekValid && isStartDateValid;
 
     setStartDateValid(isStartDateValid);
@@ -124,22 +131,14 @@ export const ShiftPreferences = (props: MapStateToProps) => {
     setWorkDaysValid(isWorkDaysValid);
 
     if (formIsValid) {
-      const request: UpdateApplicationRequestDS = {
-        applicationId: applicationId,
-        type: UPDATE_APPLICATION_API_TYPE.JOB_PREFERENCES,
-        payload: {
-          shiftPreference: {
-            hoursPerWeek: hoursPerWeek,
-            earliestStartDate: moment(startDate).format("DD/MM/YYYY"),
-            jobRoles: [],
-            shiftTimePattern: shiftPattern,
-            candidateTimezone: candidateData?.timezone || "",
-            daysOfWeek: workDays
-          },
-        }
+      const request: ShiftPreferencesType = {
+        earliestStartDate: moment(earliestStartDate).format("DD/MM/YYYY"),
+        preferredDaysToWork,
+        hoursPerWeek,
+        shiftTimePattern: shiftTimePattern as any as SHIFT_PATTERN,
       };
 
-      boundUpdateApplicationDS(request, (applicationData: Application) => {
+      boundUpdateCandidateShiftPreferencesRequest(request, (applicationData: Application) => {
         onCompleteTaskHelper(applicationData, true, WORKFLOW_STEP_NAME.ADDITIONAL_INFORMATION);
       });
     }
@@ -179,7 +178,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
               <PopupDatePicker
                 inputProps={{ ...inputProps, width: "100%" }}
                 isDateDisabled={value => !isDateGreaterThanToday(value)}
-                onChange={setStartDate}
+                onChange={setEarliestStartDate}
               />
             )}
           </InputWrapper>
@@ -298,7 +297,7 @@ export const ShiftPreferences = (props: MapStateToProps) => {
                   <Radio
                     name="shift-pattern"
                     {...inputProps}
-                    onChange={() => setShiftPattern(shiftPattern.value)}
+                    onChange={() => setShiftTimePattern(shiftPattern.value as SHIFT_PATTERN)}
                   />
                 )}
               </InputWrapper>

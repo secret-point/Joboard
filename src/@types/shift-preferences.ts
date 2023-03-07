@@ -1,3 +1,5 @@
+import { DAYS_OF_WEEK, SHIFT_PATTERN } from "../utils/enums/common";
+
 export interface QuestionSet {
   SHIFT_PREFERENCES: string;
   DISQUALIFICATION: string;
@@ -100,6 +102,7 @@ export interface ShiftPreferenceResponse {
   locations: Location[];
 }
 
+// Old, on a deprecation path, stored inside the application object
 export interface ShiftPreference {
   jobRoles?: string[];
   locations?: string[];
@@ -108,4 +111,12 @@ export interface ShiftPreference {
   shiftTimeIntervals?: ShiftTimeInterval[];
   candidateTimezone?: string;
   preferenceSelectedOn?: string;
+}
+
+// New, stored inside candidate object
+export interface ShiftPreferences {
+  earliestStartDate: string;
+  preferredDaysToWork: DAYS_OF_WEEK[];
+  hoursPerWeek: { maximumValue: number; minimumValue: number }[];
+  shiftTimePattern: SHIFT_PATTERN;
 }

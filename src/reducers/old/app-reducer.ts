@@ -418,7 +418,6 @@ const AppReducer = (state = initialState, action: IAction) => {
     case SET_SELECTED_SCHEDULE: {
       const application = { ...state.data.application };
       application.schedule = payload;
-      console.log(application);
       return updateState(state, {
         data: {
           selectedSchedule: {
