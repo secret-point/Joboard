@@ -21,7 +21,7 @@ import AssessmentNotEligible from "../us/assessment/AssessmentNotEligible";
 import CaliDisclosure from "../us/caliDisclosure/CaliDisclosure";
 import CandidateWithdraws from "../us/candidateWithdraws/CandidateWithdraws";
 import CanNotOfferJob from "../us/canNotOfferJob/CanNotOfferJob";
-import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
+import JobConfirmation from "../common/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
 import JobOpportunity from "../us/jobOpportunity/JobOpportunity";
 import Nhe from "../us/nhe/Nhe";

@@ -29,8 +29,8 @@ import {
   routeToAppPageWithPath
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import DebouncedButton from "../../common/DebouncedButton";
-import JobConfirmationCard from "../../common/jobOpportunity/JobConfirmationCard";
+import DebouncedButton from "../DebouncedButton";
+import JobConfirmationCard from "./JobConfirmationCard";
 import { PAGE_ROUTES } from "../../pageRoutes";
 
 interface MapStateToProps {

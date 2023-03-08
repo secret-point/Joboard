@@ -9,7 +9,7 @@ import { PAGE_ROUTES } from "../pageRoutes";
 import JobOpportunity from "./jobOpportunity/JobOpportunity";
 import { Col } from "@amzn/stencil-react-components/layout";
 import AppLoader from "../common/AppLoader";
-import JobConfirmation from "./jobOpportunity/JobConfirmation";
+import JobConfirmation from "../common/jobOpportunity/JobConfirmation";
 import JobDescription from "./jobOpportunity/JobDescription";
 import ContingencyOffer from "./contingentOffer/ContingentOffer";
 import BackgroundCheck from "./bgc/BackgroundCheck";

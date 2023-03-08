@@ -67,8 +67,8 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   let { scheduleDetail } = schedule.results;
   scheduleDetail = scheduleDetail && getScheduleInUKFormat(scheduleDetail);
   const { candidateData } = candidate.results;
-  const isWithAssessment = assessment.results.assessmentElegibility;
-  const applicationSteps = isWithAssessment? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
+  const { assessmentElegibility } = assessment.results;
+  const applicationSteps = assessmentElegibility? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false);
   const stepTitles = applicationSteps.map(step => step.title);
 
   const partialApplicationSteps = [
@@ -123,7 +123,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   }, []);
 
   useEffect(() => {
-    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+    jobId && applicationId && candidateData?.candidateId && assessmentElegibility === null && boundGetAssessmentElegibility({
       applicationId,
       candidateId: candidateData.candidateId, 
       jobId });

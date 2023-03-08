@@ -77,10 +77,11 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const { matches } = useBreakpoints();
   const { candidateData } = candidate.results;
   const [showInactiveModal, setShowInactiveModal] = useState(false);
-  const withAssessment = assessment.results.assessmentElegibility ;
-  const applicationSteps = withAssessment ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
+  const { assessmentElegibility } = assessment.results ;
+  const applicationSteps = assessmentElegibility ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
   const headerStep = getStepsByTitle(applicationSteps, STEPS.SELECT_JOB)[0]; 
 
+  // TODO: move this to a constants file so we can reuse this values consistently accross the UI
   const width = matches.s ? "100VW" : "420px";
 
   useEffect(() => {
@@ -119,7 +120,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   }, []);
 
   useEffect(() => {
-    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+    jobId && applicationId && candidateData?.candidateId && assessmentElegibility === null && boundGetAssessmentElegibility({
       applicationId,
       candidateId: candidateData.candidateId, 
       jobId });

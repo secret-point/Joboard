@@ -14,7 +14,7 @@ import AlreadyApplied from "../uk/alreadyApplied/AlreadyApplied";
 import ApplicationIdNull from "../us/applicationIdNull/ApplicationIdNull";
 import AssessmentConsent from "./assessment/AssessmentConsent";
 import AssessmentFinished from "../us/assessment/AssessmentFinished";
-import JobConfirmation from "../us/jobOpportunity/JobConfirmation";
+import JobConfirmation from "../common/jobOpportunity/JobConfirmation";
 import JobDescription from "../us/jobOpportunity/JobDescription";
 import NoAvailableShift from "../uk/noAvailableShift/NoAvailableShift";
 import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlots";

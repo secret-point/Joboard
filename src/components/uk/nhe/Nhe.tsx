@@ -70,8 +70,8 @@ export const Nhe = ( props: MapStateToProps ) => {
   const showNhePreferenceCard = nheData.length <= NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES;
   const appointmentDateList = getUKNHEAppointmentTitleList(nheData);
   const appointmentTimeMap = getUKNHEAppointmentTimeMap(nheData);
-  const withAssessment = assessment.results.assessmentElegibility ;
-  const applicationSteps = withAssessment ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
+  const { assessmentElegibility } = assessment.results ;
+  const applicationSteps = assessmentElegibility ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
   const headerStep = getStepsByTitle(applicationSteps, STEPS.SCHEDULE_PRE_HIRE_APPOINTMENT)[0]; 
 
   const [selectedNheDate, setSelectedNheDate] = useState<string>("");
@@ -108,7 +108,7 @@ export const Nhe = ( props: MapStateToProps ) => {
   }, []);
 
   useEffect(() => {
-    jobId && applicationId && candidateData?.candidateId && boundGetAssessmentElegibility({
+    jobId && applicationId && candidateData?.candidateId && assessmentElegibility === null && boundGetAssessmentElegibility({
       applicationId,
       candidateId: candidateData.candidateId, 
       jobId });
