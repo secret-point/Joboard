@@ -39,7 +39,7 @@ const ALL_PLUGINS = [
     filename: "index.html",
     webcomponentsLoader: configUtils.webcomponentsLoader,
     manifest: "/public/staticbb/manifest.json",
-    chunks: ["us"],
+    chunks: ["us"]
   }),
 
   new HtmlWebpackPlugin({
@@ -47,7 +47,7 @@ const ALL_PLUGINS = [
     filename: "mx.html",
     webcomponentsLoader: configUtils.webcomponentsLoader,
     manifest: "/public/staticbb/manifest.json",
-    chunks: ["mx"],
+    chunks: ["mx"]
   }),
 
   new HtmlWebpackPlugin({
@@ -55,7 +55,15 @@ const ALL_PLUGINS = [
     filename: "uk.html",
     webcomponentsLoader: configUtils.webcomponentsLoader,
     manifest: "/public/staticbb/manifest.json",
-    chunks: ["uk"],
+    chunks: ["uk"]
+  }),
+
+  new HtmlWebpackPlugin({
+    template: "public/index.html",
+    filename: "bgc.html",
+    webcomponentsLoader: configUtils.webcomponentsLoader,
+    manifest: "/public/staticbb/manifest.json",
+    chunks: ["bgc"]
   }),
 
   new ForkTsCheckerWebpackPlugin(),
@@ -68,25 +76,25 @@ const ALL_PLUGINS = [
         developmentValue: "US",
         replacement: {
           source: "cloudformation",
-          key: "Country",
-        },
+          key: "Country"
+        }
       },
       {
         template: "{{Stage}}",
         developmentValue: "gamma",
         replacement: {
           source: "cloudformation",
-          key: "Stage",
-        },
+          key: "Stage"
+        }
       },
       {
         template: "{{Env}}",
         developmentValue: "development",
         replacement: {
           source: "cloudformation",
-          key: "Stage",
-        },
-      },
+          key: "Stage"
+        }
+      }
     ]
   })
 ];
@@ -106,7 +114,8 @@ module.exports = {
   entry: {
     us: configUtils.entryFile,
     mx: configUtils.entryFileMX,
-    uk: configUtils.entryFileUK
+    uk: configUtils.entryFileUK,
+    bgc: configUtils.entryFileBGC
   },
 
   output: {
@@ -121,7 +130,7 @@ module.exports = {
       src: path.resolve(__dirname, "..", "src")
     },
     extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"],
-    fallback: { "timers": require.resolve("timers-browserify") }
+    fallback: { timers: require.resolve("timers-browserify") }
   },
 
   optimization: {
@@ -160,9 +169,9 @@ module.exports = {
         use: [
           configUtils.isProdBuild
             ? MiniCssExtractPlugin.loader
-          // In development, style-loader is used instead of
-          // MiniCssExtractPlugin so that css changes are hot reloaded.
-            : "style-loader",
+            : // In development, style-loader is used instead of
+              // MiniCssExtractPlugin so that css changes are hot reloaded.
+              "style-loader",
           "css-loader",
           "postcss-loader",
           "sass-loader"
@@ -181,7 +190,7 @@ module.exports = {
         resolve: {
           fullySpecified: false
         }
-      },
+      }
     ]
   },
 
@@ -191,13 +200,13 @@ module.exports = {
     hot: true,
     compress: true,
     client: {
-      overlay: true,
+      overlay: true
     },
     host: "0.0.0.0",
     allowedHosts: "all", // disableHostCheck: true,
     open: configUtils.serverMode === "standalone",
     port: 3000,
-    onBeforeSetupMiddleware: (devServer) => {
+    onBeforeSetupMiddleware: devServer => {
       return katalMiddleware(devServer.app, devServer, devServer.compiler);
     },
     proxy: { "/api": { target: "http://localhost:8080", secure: false } },
@@ -205,9 +214,10 @@ module.exports = {
       rewrites: [
         { from: /^\/application\/mx/, to: "/mx.html" },
         { from: /^\/application\/uk/, to: "/uk.html" },
-      ],
-    },
+        { from: /^\/application\/bgc/, to: "/bgc.html" }
+      ]
+    }
   },
 
-  performance: { hints: false },
+  performance: { hints: false }
 };

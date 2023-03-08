@@ -17,6 +17,7 @@ module.exports = {
   entryFile: path.resolve(__dirname, "..", "src", "index.tsx"),
   entryFileMX: path.resolve(__dirname, "..", "src", "components", "mx", "index.tsx"),
   entryFileUK: path.resolve(__dirname, "..", "src", "components", "uk", "index.tsx"),
+  entryFileBGC: path.resolve(__dirname, "..", "src", "components", "bgc", "index.tsx"),
 
   webcomponentsLoader: assetUrls.urls.webcomponentsLoader,
 
