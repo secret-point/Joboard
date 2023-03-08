@@ -108,10 +108,6 @@
       "value" : "Ik ben me ervan bewust dat alle verzamelde informatie kan worden overgedragen op grond van de federale wet inzake de bescherming van persoonsgegevens in het bezit van particuliere partijen en de bijbehorende voorschriften, richtlijnen en andere toepasselijke bepalingen inzake gegevensprivacy, evenals in termen van de privacyverklaring van het bedrijf voor werknemers en/of kandidaten.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon zet zich in voor een diverse en inclusieve werkplek. Amazon is een werkgever die gelijke kansen biedt en niet discrimineert op basis van ras, nationale afkomst, geslacht, genderidentiteit, seksuele geaardheid, beschermde veteranenstatus, handicap, leeftijd of een andere wettelijk beschermde status. Voor personen met een handicap die een aanpassing willen aanvragen, ga naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon neemt de bescherming van je persoonlijke gegevens serieus en zal je persoonlijke gegevens alleen verwerken in overeenstemming met de wet. In het bijzonder delen wij je persoonlijke gegevens niet met derden zonder je voorafgaande toestemming, tenzij wij daartoe wettelijk verplicht zijn. Tenzij je anders aangeeft, slaat het Amazon-bedrijf waarvoor je gaat werken je persoonlijke gegevens op in de elektronische database die wordt onderhouden door Amazon.com in de VS of door een van haar gelieerde ondernemingen. Klik op <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a> voor volledige informatie over hoe Amazon je persoonlijke gegevens opslaat en verwerkt.",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -964,6 +960,54 @@
       "value" : "Terug naar dashboard",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Bedankt voor je sollicitatie bij Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Je hebt al gesolliciteerd voor deze functie. Ga terug naar het dashboard om je sollicitatie te bekijken.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Ga naar dashboard",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Je hebt al een sollicitatie ingediend voor de functie:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Je kunt maar één actieve sollicitatie voor deze Job-ID hebben. Klik op 'Ga naar dashboard' om je openstaande sollicitatie te bekijken en voor meer opties.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Ga naar dashboard",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Je hebt al een actieve sollicitatie voor de functie:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Als je doorgaat met deze nieuwe sollicitatie, wordt je bestaande sollicitatie ingetrokken. Om je bestaande sollicitatie te bekijken of te hervatten, klik je op 'Ga naar dashboard'.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Om door te gaan met een nieuwe sollicitatie klik je op 'Doorgaan met sollicitatie'.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Doorgaan met een nieuwe sollicitatie",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nieuwe sollicitatie:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Bestaande sollicitatie:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulier CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,10 +1512,6 @@
       "value" : "Assistentie",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Bij Amazon vieren we de diversiteit van ons personeelsbestand en de verschillende manieren waarop we werken. Als je een handicap hebt en assistentie nodig hebt tijdens het aanwervingsproces, inclusief de beoordeling, ga dan naar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>Amazon Accommodation.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Alle onderdelen van deze beoordeling:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1531,6 +1571,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Uren:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Tijd:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "We kijken ernaar uit je te zien op het bovenstaand tijdstip.",
@@ -3087,6 +3131,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "We zijn momenteel je aanvraag aan het beoordelen en nemen binnenkort contact met je op via het e-mailadres dat je hebt opgegeven.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Terug naar dashboard",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Vast",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Contract voor bepaalde tijd",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Contract voor bepaalde tijd tot",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "We raden je aan een rustige plek te zoeken om afleiding te voorkomen.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Nadat je de beoordeling voltooit, wordt je teruggestuurd naar je aanvraagprocedure.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Onze inclusieve cultuur stelt Amazonians in staat om onze klanten de beste resultaten te leveren. Als je een beperking hebt en een aanpassing nodig hebt tijdens het sollicitatie- en wervingsproces, inclusief ondersteuning bij het sollicitatiegesprek of het inwerkproces, neem dan contact op met het team voor de begeleiding van sollicitanten en kandidaten (ACAT), van maandag tot en met vrijdag van 7:00 uur GMT tot 16:00 uur GMT. Als je rechtstreeks vanuit het Verenigd Koninkrijk belt, bel dan +44 800 086 9884. Als je vanuit Ierland belt, bel dan +353 1800 851 489. Je kunt ook contact met ons opnemen als je misschien een aanpassing nodig hebt in je nieuwe functie en als je een aanvraag wilt indienen voordat je begint te werken.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

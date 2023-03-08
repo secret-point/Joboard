@@ -108,10 +108,6 @@
       "value" : "Mam świadomość, że wszystkie pozyskane informacje mogą być przekazywane zgodnie z Federalną ustawą o ochronie danych osobowych będących w posiadaniu podmiotów prywatnych oraz jej postanowieniami uzupełniającymi, wytycznymi i innymi obowiązującymi zapisami dotyczącymi ochrony danych, a także w zakresie Informacji Spółki o prywatności w odniesieniu do Pracowników i/lub Kandydatów.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon prowadzi działania na rzecz zróżnicowanego i integracyjnego miejsca pracy. Amazon jest pracodawcą, który zapewnia równe szanse i nie dyskryminuje nikogo ze względu na rasę, pochodzenie narodowe, płeć, tożsamość płciową, orientację seksualną, chroniony status weterana, niepełnosprawność, wiek ani inny prawnie chroniony status. Osoby z niepełnosprawnościami, które chciałyby poprosić o dostosowanie, mogą w tym celu odwiedzić stronę <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon poważnie traktuje ochronę danych osobowych i będzie przetwarzać Twoje dane osobowe wyłącznie zgodnie z prawem. W szczególności nie udostępniamy Twoich danych osobowych żadnym stronom trzecim bez Twojej uprzedniej zgody, chyba że jest to wymagane przez prawo. O ile nie wyrazisz sprzeciwu, oddział przeprowadzający rekrutację w Amazon będzie przechowywać Twoje dane osobowe w elektronicznej bazie danych prowadzonej przez Amazon.com w USA lub w jednym z jej podmiotów stowarzyszonych. Aby uzyskać pełne informacje na temat sposobu, w jaki Amazon przechowuje i przetwarza Twoje dane osobowe, kliknij tutaj <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "Sortuj według",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "Polecane",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Stawka – od najwyższej do najniższej",
@@ -1515,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Udogodnienia",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "W Amazon celebrujemy różnorodność naszych pracowników, ale także różnorodne sposoby pracy. Jeśli jesteś osobą z niepełnosprawnością i potrzebujesz pewnych udogodnień podczas procesu rekrutacji, w tym z wypełnieniem oceny, odwiedź stronę <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Wszystkie sekcje tej oceny:",
@@ -3131,6 +3127,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "Preferencje dotyczące zmian",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Szczegóły polecenia",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Czy polecił Cię obecny pracownik firmy Amazon?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "Identyfikator loginu polecającego",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Nie udało się wycofać podania.",

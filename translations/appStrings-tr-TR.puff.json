@@ -108,10 +108,6 @@
       "value" : "Toplanan tüm bilgilerin, hem Özel Tarafların Mülkiyetindeki Kişisel Verilerin Korunması Hakkında Federal Kanun ve onun düzenlemeleri, yönergeleri ve veri gizliliğine ilişkin diğer geçerli hükümlerine uygun olarak hem de Şirketin Çalışanlar ve/veya Adaylar için Gizlilik Bildirimi doğrultusunda aktarılabileceğinin farkındayım.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon, çeşitlilik içeren ve kapsayıcı bir çalışma ortamına kendini adamıştır. Amazon, fırsat eşitliği sağlayan bir işverendir ve ırk, ulusal köken, cinsiyet, cinsel kimlik, cinsel yönelim, gazilik durumu, engellilik, yaş veya yasal olarak korunan diğer durumlar temelinde ayrımcılık yapmaz. Konaklama talebinde bulunmak isteyen engelli bireyler <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> adresini ziyaret edin",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon, kişisel veri korumanızı ciddiye alır ve kişisel verilerinizi yalnızca yasalara uygun olarak işleyecektir. Özellikle, kanunen zorunlu olmadıkça, kişisel verilerinizi önceden onayınız olmadan herhangi bir üçüncü şahısla paylaşmayız. Aksi belirtmediğiniz sürece, işe alınan Amazon şirketi, kişisel verilerinizi Amazon.com'un ABD'de veya bağlı kuruluşlarından birinde muhafaza ettiği elektronik veri tabanında saklayacaktır. Amazon'un kişisel verilerinizi nasıl depoladığı ve işlediğine dair tam bilgi için lütfen buraya tıklayın <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "Sıralama Ölçütü",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "Öne çıkanlar",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Ücret oranı - En yüksekten en düşüğe",
@@ -972,6 +972,46 @@
       "value" : "Bu işe zaten başvurmuşsunuz. Başvurunuzu görüntülemek için panele dönün.",
       "note" : "Text for already applied job description text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Panele git",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Bu rol için zaten bir başvuru gönderdiniz:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Bu iş kimliği için yalnızca bir aktif başvurunuz olabilir. Mevcut başvurunuzu görüntülemek ve daha fazla seçenek görmek için “Panele git”e tıklayın.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Panele git",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Bu rol için zaten aktif bir başvurunuz var:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Bu yeni başvuruya devam ederseniz mevcut başvurunuz geri çekilecektir. Mevcut başvurunuzu görüntülemek veya devam ettirmek için “Panele git”e tıklayın.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Yeni başvuruya devam etmek için “Başvuruya devam et”e tıklayın.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Yeni başvuruyla devam et",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Yeni başvuru:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Mevcut başvuru:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "CC-305 Formu",
       "note" : "Text for Self Identification form name"
@@ -1475,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Konaklamalar",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazon'da, iş gücümüzün ve çalışma yollarımızın çeşitliliğinden gurur duyarız. Bir engeliniz varsa ve değerlendirme de dahil olmak üzere işe alım sürecinde konaklamaya ihtiyacınız varsa, lütfen <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation’ı ziyaret edin.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Bu değerlendirmenin tüm bölümleri:",

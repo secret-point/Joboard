@@ -108,10 +108,6 @@
       "value" : "సేకరించబడ్డ మొత్తం సమాచారం కూడా ప్రైవేట్ పార్టీల ఆధీనంలో వ్యక్తిగత డేటా యొక్క సంరక్షణపై ఫెడరల్ చట్టం మరియు డేటా గోప్యతపై దాని నిబంధనలు, మార్గదర్శకాలు మరియు ఇతర వర్తించే నిబంధనలకు అనుగుణంగా అదేవిధంగా ఉద్యోగులు మరియు/లేదా అభ్యర్థుల కొరకు కంపెనీ యొక్క గోప్యతా నోటీస్ పరంగా బదిలీ చేయబడుతుందని నాకు తెలుసు.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "విభిన్నమైన మరియు సమగ్రమైన కార్యాలయానికి Amazon కట్టుబడి ఉంది. Amazon సమాన అవకాశాల యజమాని మరియు జాతి, జాతీయ మూలం, లింగం, లింగ గుర్తింపు, లైంగిక ధోరణి, రక్షిత మాజీ సైనికుల స్థితి, వైకల్యం, వయస్సు లేదా ఇతర చట్టబద్ధంగా రక్షిత హోదా ఆధారంగా వివక్ష చూపదు. వసతిని అభ్యర్థించాలనుకునే వైకల్యాలున్న వ్యక్తుల కోసం, దయచేసి <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>ని సందర్శించండి",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon మీ వ్యక్తిగత డేటా రక్షణను తీవ్రంగా పరిగణిస్తుంది మరియు చట్టానికి అనుగుణంగా మీ వ్యక్తిగత డేటాను మాత్రమే ప్రాసెస్ చేస్తుంది. ప్రత్యేకించి, మేము మీ వ్యక్తిగత డేటాను మీ ముందస్తు అనుమతి లేకుండా ఏ మూడవ పక్షంతోనూ భాగస్వామ్యం చేయము, చట్టం ద్వారా బలవంతం చేస్తే తప్ప. మీరు వేరే విధంగా వ్యక్తం చేయకపోతే, నియామకం చేసే Amazon కంపెనీ USAలో Amazon.com లేదా దాని అనుబంధ సంస్థల్లో నిర్వహించే ఎలక్ట్రానిక్ డేటాబేస్‌లో మీ వ్యక్తిగత డేటాను స్టోర్ చేస్తుంది. Amazon మీ వ్యక్తిగత డేటాను ఎలా నిల్వ చేస్తుంది మరియు ప్రాసెస్ చేస్తుంది అనే పూర్తి సమాచారం కోసం, దయచేసి ఇక్కడ క్లిక్ చేయండి <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -976,6 +972,46 @@
       "value" : "మీరు ఇప్పటికే ఈ ఉద్యోగానికి దరఖాస్తు చేసుకున్నారు. మీ అప్లికేషన్‌ను చూడటానికి డాష్‌బోర్డ్‌కు తిరిగి వెళ్ళండి.",
       "note" : "Text for already applied job description text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "డాష్‌బోర్డ్‌కి వెళ్లండి",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "మీరు ఇప్పటికే బాధ్యత కోసం ఒక అప్లికేషన్‌ను సమర్పించారు:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "మీరు ఈ జాబ్ ఐడి కోసం ఒక యాక్టివ్ అప్లికేషన్ మాత్రమే కలిగి ఉంటారు. మీ ప్రస్తుత అప్లికేషన్‌ను చూడటానికి మరియు మరిన్ని ఎంపికలను చూడటానికి, 'డాష్‌బోర్డ్‌కు వెళ్లండి'ని క్లిక్ చేయండి.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "డాష్‌బోర్డ్‌కి వెళ్లండి",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "మీరు ఇప్పటికే బాధ్యత కోసం యాక్టివ్ అప్లికేషన్‌ను కలిగి ఉన్నారు:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "మీరు ఈ కొత్త అప్లికేషన్‌తో కొనసాగుతుంటే, మీ ప్రస్తుతమున్నది ఉపసంహరించబడుతుంది. మీ ప్రస్తుత అప్లికేషన్‌ను చూడటానికి లేదా తిరిగి ప్రారంభించడానికి, 'డాష్‌బోర్డ్‌కు వెళ్లండి'ని క్లిక్ చేయండి.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "కొత్త అప్లికేషన్‌తో కొనసాగడానికి, 'అప్లికేషన్‌తో కొనసాగించండి'ని క్లిక్ చేయండి.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "కొత్త అప్లికేషన్‌తో కొనసాగించండి",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "కొత్త అప్లికేషన్:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "ఇప్పటికే ఉన్న అప్లికేషన్:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "ఫారమ్ CC-305",
       "note" : "Text for Self Identification form name"
@@ -1479,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "వసతులు",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazonలో, మేము మా వర్క్‌ఫోర్స్ యొక్క వైవిధ్యాన్ని మరియు మేము పని చేసే విభిన్న మార్గాలను జరుపుకుంటాము. మీకు వైకల్యం ఉంటే మరియు నియామక ప్రక్రియ సమయంలో అసెస్‌మెంట్‌తో సహా వసతి అవసరమైతే, దయచేసి <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodationని సందర్శించండి.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "ఈ అసెస్‌మెంట్‌లోని అన్ని విభాగాలు:",

@@ -108,10 +108,6 @@
       "value" : "Estou ciente de que todas as informações recolhidas podem ser transferidas nos termos da Lei Federal de Proteção de Dados Pessoais na Posse de Privados e respetivos regulamentos, diretrizes e outras disposições aplicáveis em matéria de privacidade de dados, bem como nos termos do Aviso de Privacidade da Empresa para Colaboradores e/ou Candidatos.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "A Amazon está empenhada em criar locais de trabalho diversificados e inclusivos. A Amazon é uma entidade empregadora que oferece igualdade de oportunidades e não discrimina com base na etnia, nacionalidade, género, identidade de género, orientação sexual, estatuto de veterano protegido, incapacidade, idade ou outro estatuto legalmente protegido. Para pessoas com incapacidade que pretendam solicitar alojamento, visite <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "A Amazon leva a sua proteção de dados pessoais a sério e apenas tratará os seus dados pessoais de acordo com a lei. Ou seja, não partilhamos os seus dados pessoais com entidades terceiras sem o seu consentimento prévio, a menos que sejamos obrigados por lei a fazê-lo. A menos que o utilizador expresse o desejo em contrário, a empresa contratante Amazon armazenará os seus dados pessoais na base de dados eletrónica mantida pela Amazon.com nos EUA ou numa das suas afiliadas. Para obter informações completas sobre como a Amazon armazena e processa os seus dados pessoais, clique aqui <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "Ordenar por",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "Em destaque",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Salário - do mais alto ao mais baixo",
@@ -1515,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Serviços",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Na Amazon, celebramos a diversidade da nossa equipa de trabalho e as diferentes maneiras como trabalhamos. Se possui uma incapacidade e precisa de acolhimento durante o processo de contratação, incluindo a avaliação, visite o <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> acolhimento da Amazon.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Todas as secções desta avaliação:",
@@ -3131,6 +3127,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "Preferências de turno",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Detalhes da recomendação",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Foi recomendado por um colaborador existente da Amazon?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "ID de início de sessão da recomendação",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Falha ao retirar a candidatura.",

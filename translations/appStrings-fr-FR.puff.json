@@ -108,10 +108,6 @@
       "value" : "Je suis conscient que toutes les informations collectées peuvent être transférées conformément à la loi fédérale sur la protection des données personnelles détenues par des parties privées et à ses règlements, directives et autres dispositions applicables en matière de confidentialité des données, ainsi qu'en vertu des conditions de la déclaration de confidentialité de la société pour les employés et/ou candidats.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon s'engage à créer un environnement de travail inclusif et respectueux de la diversité. Amazon est un employeur garantissant l'égalité des chances et qui ne fait aucune discrimination fondée sur la race, l'origine nationale, le sexe, l'identité de genre, l'orientation sexuelle, le statut d'ancien combattant protégé, le handicap, l'âge ou tout autre statut légalement protégé. Pour les personnes handicapées qui souhaitent demander l’application de mesures d’aménagement, visitez la page suivante <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon prend au sérieux la protection de vos données personnelles et les traitera uniquement au regard de la loi. Plus particulièrement, nous ne partageons pas vos données personnelles avec des tiers sans votre consentement préalable, sauf si la loi nous y oblige. Sauf indication contraire de votre part, l’entreprise Amazon qui recrute stockera vos données personnelles dans la base de données électronique gérée par Amazon.com aux États-Unis ou l'une de ses filiales. Pour plus d'informations sur la manière dont Amazon stocke et traite vos données personnelles, cliquez ici <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -964,6 +960,54 @@
       "value" : "Retour au tableau de bord",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Merci d’avoir postulé chez Amazon !",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Vous avez déjà postulé à ce poste. Revenez au tableau de bord pour consulter votre candidature.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Accéder au tableau de bord",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Vous avez déjà soumis une candidature pour le rôle :",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Vous ne pouvez avoir qu'une seule candidature active pour cet identifiant de poste. Pour consulter votre candidature actuelle et voir plus d'options, cliquez sur « Accéder au tableau de bord ».",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Accéder au tableau de bord",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Vous avez déjà une candidature active pour le rôle :",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Si vous poursuivez cette nouvelle candidature, votre candidature existante sera retirée. Pour consulter ou reprendre votre candidature existante, cliquez sur « Accéder au tableau de bord ».",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Pour poursuivre la nouvelle candidature, cliquez sur « Continuer la candidature ».",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Poursuivre la nouvelle candidature",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nouvelle candidature :",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Candidature existante :",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulaire CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,10 +1512,6 @@
       "value" : "Hébergement",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Chez Amazon, nous célébrons la diversité de notre personnel de nos méthodes de travail. Si vous êtes en situation de handicap et avez besoin d'un aménagement au cours du processus de recrutement, y compris lors de l'évaluation, rendez-vous sur <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>Amazon Accommodation.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Toutes les sections de cette évaluation :",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1531,6 +1571,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Heures :",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Heure :",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Nous sommes impatients de faire votre connaissance à l’heure susmentionnée.",
@@ -3087,6 +3131,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "Nous évaluons actuellement votre candidature et vous contacterons bientôt à l'adresse e-mail que vous avez fournie.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "Retour au tableau de bord",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Permanent",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Contrat à durée déterminée",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Contrat à durée déterminée jusqu'au",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "Nous vous recommandons de trouver un endroit calme pour éviter toutes distractions.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "Une fois l'évaluation terminée, vous serez redirigé vers votre processus de candidature.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Notre culture inclusive permet aux Amazoniens de servir au mieux nos clients. Si vous souffrez d’un handicap et avez besoin d'un ajustement pendant le processus de candidature et d'embauche, y compris de l’aide pour l'entretien ou le processus d'intégration, contactez l'équipe chargée des adaptations pour les candidats (ACAT) disponible du lundi au vendredi de 7 h 00 à 16 h 00 GMT. Si vous appelez directement depuis le Royaume-Uni, composez le +44 800 086 9884. Si vous appelez depuis l'Irlande, composez le +353 1800 851 489. Vous pouvez également nous contacter si vous avez besoin d'un ajustement pour votre nouveau poste et souhaitez faire cette demande avant votre premier jour.",
+      "note" : "Assessment condition number 3"
     }
   }
 }

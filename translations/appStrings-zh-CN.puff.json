@@ -108,10 +108,6 @@
       "value" : "我了解，收集的所有信息均可根据《保护私人持有个人数据的联邦法律（Federal Law on the Protection of Personal Data in the Possession of Private Parties）》及其规章、准则和其他有关数据隐私的适用条款，以及按照公司员工和/或候选人隐私声明进行转移。",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "亚马逊致力于打造多元化和包容性的工作场所。亚马逊是一家机会均等的雇主，不会基于种族、出身国、性别、性别认同、性取向、受保护的退伍军人身份、残疾、年龄或其他受法律保护的身份进行歧视。对于希望申请便利设施的残障人士，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "亚马逊非常重视您的个人数据保护，只会依法处理您的个人数据。特别是，除非法律强制，否则未经您事先同意，我们不会与任何第三方共享您的个人数据。除非您另有说明，否则招聘的亚马逊公司会将您的个人数据存储在由 Amazon.com 在美国或其附属公司之一维护的电子数据库中。有关亚马逊如何存储和处理您的个人数据的完整信息，请点击此处<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "排序按",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "精选",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "工资标准 - 从最高到最低",
@@ -1516,10 +1516,6 @@
       "value" : "便利",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要提供便利，请访问<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>亚马逊便利。</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "此评估的所有部分：",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1711,6 +1707,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "我们无法验证您推荐人的登录ID，请通过www.amazon.com/applicationhelp与我们交谈寻求帮助。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "入职前面谈详情",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "日期",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "时间",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "会议详情",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "请提供您的推荐人登录 ID（仅限小写字母）",

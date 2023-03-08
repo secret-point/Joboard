@@ -108,10 +108,6 @@
       "value" : "मुझे पता है कि एकत्रित की गई सभी जानकारी निजी पक्षों के कब्जे में व्यक्तिगत डेटा की सुरक्षा पर संघीय कानून और डेटा गोपनीयता पर इसके नियमों, दिशानिर्देशों और अन्य लागू प्रावधानों के साथ-साथ कर्मचारियों के लिए कंपनी की गोपनीयता सूचना के संदर्भ में स्थानांतरित की जा सकती है। और/या उम्मीदवार.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon एक विविध और समावेशी कार्यस्थल के लिए प्रतिबद्ध है. Amazon एक समान अवसर नियोक्ता है और जाती, राष्ट्रीय मूल, लिंग, लिंग पहचान, सेक्शूअल ओरिएंटेशन, संरक्षित वेटरन स्थिति, विकलांगता, उम्र या अन्य कानूनी रूप से संरक्षित स्थिति के आधार पर भेदभाव नहीं करता है. विकलांग व्यक्तियों के लिए जो आवास का अनुरोध करना चाहते हैं, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> पर जाएं",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon आपकी व्यक्तिगत डेटा सुरक्षा को गंभीरता से लेता है और सिर्फ़ कानून के अनुसार आपके व्यक्तिगत डेटा को संसाधित करेगा. विशेष रूप से, हम आपकी पूर्व सहमति के बिना आपके व्यक्तिगत डेटा को किसी तीसरे पक्ष के साथ साझा नहीं करते हैं, जब तक कि ऐसा करने के लिए कानून द्वारा मजबूर नहीं किया जाता है. जब तक आप अन्यथा व्यक्त नहीं करते हैं, तब तक हायरिंग Amazon कंपनी आपके व्यक्तिगत डेटा को संयुक्त राज्य अमेरिका या उसके किसी सहयोगी कंपनी में Amazon.com द्वारा बनाए गए इलेक्ट्रॉनिक डेटाबेस में संग्रहित करेगी. Amazon आपके व्यक्तिगत डेटा को कैसे स्टोर और संसाधित करता है, इस बारे में पूरी जानकारी के लिए कृपया यहां क्लिक करें <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -964,6 +960,46 @@
       "value" : "डैशबोर्ड पर वापस जाएं",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "डैशबोर्ड पर जाएं",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "आपने भूमिका के लिए पहले ही एक आवेदन सबमिट कर दिया है:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "इस जॉब Id के लिए आपके पास केवल एक ऐक्टिव आवेदन हो सकता है. अपने मौजूदा आवेदन को देखने के साथ-साथ और विकल्प देखने के लिए, 'डैशबोर्ड पर जाएं' पर क्लिक करें.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "डैशबोर्ड पर जाएं",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "भूमिका के लिए आपके पास पहले से ही एक ऐक्टिव आवेदन है:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "अगर आप इस नए आवेदन के साथ आगे बढ़ते हैं, तो आपके मौजूदा आवेदन को वापस ले लिया जाएगा. अपने मौजूदा आवेदन को देखने या फिर से शुरू करने के लिए, 'डैशबोर्ड पर जाएं' पर क्लिक करें.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "नए आवेदन के साथ आगे बढ़ने के लिए, 'आवेदन के साथ जारी रखें' पर क्लिक करें.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "नए आवेदन के साथ जारी रखें",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "नया आवेदन:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "मौजूदा आवेदन:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "फ़ॉर्म CC-305",
       "note" : "Text for Self Identification form name"
@@ -1467,10 +1503,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "आवास",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazon में, हम अपने कार्यबल की विविधता और हमारे द्वारा काम करने के विभिन्न तरीकों का जश्न मनाते हैं. अगर आपको विकलांगता है और असेसमेंट सहित हायरिंग प्रक्रिया के दौरान आवास की ज़रूरत है, तो कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon आवास पर विज़िट करें.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "इस असेसमेंट के सभी सेक्शन:",

@@ -56,7 +56,7 @@ exports[`AssessmentConsent should match snapshot 1`] = `
     >
       <DangerouslySetHtmlContent
         className="diversityAndDisabilityText"
-        html="At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>"
+        html="At Amazon, we celebrate the diversity of our workforce and the diverse ways we work. If you have a disability and require an accommodation during the hiring process, including the assessment, please visit <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>"
       />
     </Text>
     <Text

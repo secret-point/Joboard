@@ -108,10 +108,6 @@
       "value" : "Jeg er opmærksom på, at alle indsamlede oplysninger kan overføres i henhold til den føderale lov om beskyttelse af personoplysninger i besiddelse af private parter og dens regler, retningslinjer og andre gældende bestemmelser om databeskyttelse, samt i form af fortrolighedserklæring for virksomheden for medarbejdere og/eller kandidater.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon er dedikeret til en mangfoldig og inkluderende arbejdsplads. Amazon er en arbejdsgiver med lige muligheder og diskriminerer ikke på grundlag af race, national oprindelse, køn, kønsidentitet, seksuel orientering, beskyttet veteranstatus, handicap, alder eller anden juridisk beskyttet status. For personer med handicap, der gerne vil anmode om en bolig, kan du besøge <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon tager din personlige databeskyttelse alvorligt og behandler kun dine personlige data i overensstemmelse med loven. Vi deler især ikke dine personlige data med nogen tredjepart uden dit forudgående samtykke, medmindre vi ved lov er tvunget til at gøre det. Medmindre du udtrykker andet, vil det ansættende Amazon-firma gemme dine personlige data i den elektroniske database, der vedligeholdes af Amazon.com i USA eller et af dets datterselskaber. Du kan finde de fulde oplysninger om, hvordan Amazon gemmer og behandler dine personlige data, ved at klikke her <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,10 +1511,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Hjælpemidler",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Hos Amazon fejrer vi mangfoldigheden i vores arbejdsstyrke og de forskellige måder, vi arbejder på. Hvis du har et handicap og har brug for hjælpemidler under ansættelsesprocessen, inklusive vurderingen, så skal du gå til <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Alle afsnit af denne evaluering:",

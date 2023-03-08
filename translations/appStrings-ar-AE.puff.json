@@ -108,10 +108,6 @@
       "value" : "أدرك أن جميع المعلومات التي تم جمعها قد يتم نقلها وفقًا للقانون الاتحادي بشأن حماية البيانات الشخصية في حوزة الأطراف الخاصة ولوائحه وإرشاداته العامة وأحكامه الأخرى المعمول بها بشأن خصوصية البيانات، وكذلك وفقًا لإشعار الخصوصية الخاص بالشركة للموظفين و/أو المرشحين.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "تلتزم أمازون بتوفير مكان عمل متنوع وشامل. أمازون هي جهة توفّر فرص عمل متكافئة، وليس لديها تمييز على أساس العرق، أو الأصل الوطني، أو الجنس، أو الهوية الجنسية، أو الميل الجنسي، أو حالة المحاربين القدامى الذين يتمتعون بحماية، أو الإعاقة، أو العمر، أو أي حالة أخرى تتمتع بحماية قانونية. بالنسبة للأفراد ذوي الإعاقة الذين يرغبون في طلب سكن، يرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "تأخذ أمازون حماية بياناتك الشخصية على محمل الجد ولن تعالج بياناتك الشخصية إلا وفقًا للقانون. على وجه الخصوص، نحن لا نشارك بياناتك الشخصية مع أيّ طرف ثالث بدون موافقتك المسبقة، ما لم يُلزمنا القانون بفعل ذلك. ما لم تصرِّح بخلاف ذلك، ستقوم شركة التوظيف التابعة لأمازون بتخزين بياناتك الشخصية في قاعدة البيانات الإلكترونية التي تحتفظ بها Amazon.com في الولايات المتحدة الأمريكية أو إحدى الشركات التابعة لها. للحصول على معلومات كاملة حول كيفية قيام أمازون بحفظ ومعالجة بياناتك الشخصية، يرجى النقر على هذا الرابط <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -968,6 +964,54 @@
       "value" : "الرجوع إلى لوحة السجل",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "نشكرك على التقدم بطلب التوظيف لدى أمازون.",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "لقد تقدمت بالفعل لهذه الوظيفة. ارجع إلى لوحة السجل لعرض طلب التقدم الخاص بك.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "الانتقال إلى لوحة السجل",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "لقد قمت بالفعل بإرسال طلب للدور:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "يمكنك الحصول على طلب نشط واحد فقط لمعرّف الوظيفة هذا. لعرض طلبك الحالي ومشاهدة المزيد من الخيارات، انقر \"الانتقال إلى لوحة السجل\".",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "الانتقال إلى لوحة السجل",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "لديك بالفعل طلب نشط للدور:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "إذا تابعت مع هذا الطلب الجديد، فسيتم سحب طلبك الموجود حاليًا. لعرض طلبك الموجود حاليًا أو استئنافه، انقر \"الانتقال إلى لوحة السجل\".",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "للمتابعة مع طلب جديد، انقر على \"متابعة مع الطلب\".",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "متابعة مع الطلب الجديد",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "طلب جديد:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "طلب موجود:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "نموذج CC-305",
       "note" : "Text for Self Identification form name"
@@ -1472,10 +1516,6 @@
       "value" : "أماكن الإقامة",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "في أمازون، نحتفي بتنوع القوى العاملة لدينا والطرق المتنوعة التي نعمل بها. إذا كنت تعاني من إعاقة وتحتاج إلى سكن أثناء عملية التوظيف، بما في ذلك التقييم، فيرجى زيارة <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> إقامة أمازون.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "جميع أقسام هذا التقييم:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1667,6 +1707,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "لم نتمكن من التحقق من صحة معرّف تسجيل دخول المُحيل الخاص بك، يرجى الدردشة معنا على www.amazon.com/applicationhelp للحصول على المساعدة.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "تفاصيل موعد ما قبل التوظيف",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "التاريخ",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "الوقت",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "تفاصيل الاجتماع",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "يُرجى تقديم معرّف تسجيل دخول مسئول التحويلات الخاص بك (بأحرف صغيرة فقط)",

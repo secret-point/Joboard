@@ -108,10 +108,6 @@
       "value" : "Estou ciente de que todas as informações coletadas podem ser transferidas de acordo com a Lei federal sobre a Proteção de dados pessoais na posse de partes privadas e seus regulamentos, diretrizes e outras disposições aplicáveis sobre privacidade de dados, bem como nos termos da Notificação de privacidade da empresa para funcionários e/ou candidatos.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "A Amazon está comprometida com um local de trabalho diversificado e inclusivo. A Amazon é um empregador de oportunidades iguais e não discrimina com base em raça, nacionalidade, gênero, identidade de gênero, orientação sexual, condição de veterano protegido, deficiência, idade ou outra condição legalmente protegida. Para pessoas com deficiência que gostariam de solicitar atendimento especial, acessar <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "A Amazon leva a sério a proteção de seus dados pessoais e só os processará de acordo com a lei. Em particular, não compartilhamos seus dados pessoais com terceiros sem o seu consentimento prévio, a menos que sejamos obrigados por lei a fazê-lo. A menos que você expresse o contrário, a empresa contratante da Amazon armazenará seus dados pessoais no banco de dados eletrônico mantido pela Amazon.com nos EUA ou em uma de suas afiliadas. Para obter informações completas sobre como a Amazon armazena e processa seus dados pessoais, clique aqui <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1468,10 +1464,6 @@
       "value" : "Atendimentos especiais",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Na Amazon, celebramos a diversidade da nossa força de trabalho e as diversas formas como trabalhamos. Se você for uma pessoa com deficiência e precisar de atendimento especial durante o processo de contratação, inclusive na avaliação, acesse o Atendimento especial da Amazon em <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Todas as seções desta avaliação:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1531,6 +1523,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Horas:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Hora:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Esperamos vê-lo no horário acima.",
@@ -3091,6 +3087,18 @@
     "BB-uk-generic-error-return-to-dashboard-button-label" : {
       "value" : "Voltar ao painel",
       "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Permanente",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Contrato de prazo fixo",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Contrato de prazo fixo até",
+      "note" : ""
     },
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
       "value" : "Recomendamos encontrar um local tranquilo para evitar distrações.",

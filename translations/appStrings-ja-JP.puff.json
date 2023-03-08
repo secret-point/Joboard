@@ -108,10 +108,6 @@
       "value" : "収集されたすべての情報は、私的当事者が所有する個人データの保護に関する連邦法、データプライバシーに関する規制、ガイドライン、その他の該当する規定、および会社の従業員や、または候補者向けプライバシー通知の観点から転送される可能性があることを認識しています。",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazonは、多様で包括的な職場を目指しています。Amazonは機会均等雇用者であり、人種、国籍、性別、性同一性、性的指向、保護された退役軍人の地位、障がい、年齢、またはその他の法的に保護されている地位に基づく差別を行っていません。宿泊施設をリクエストしたい障がい者の方は、<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> https://www.amazon.jobs/en/disability/us</a>にアクセスしてください",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazonは個人データ保護を真剣に受け止め、法律に従ってのみ個人データを処理します。特に、法律によって強制されない限り、お客様の事前の同意なしに、個人データを第三者と共有することはありません。別段の表明をしない限り、雇用しているAmazon会社は、米国のAmazon.comまたはその関連会社の1つが管理する電子データベースにお客様の個人データを保存します。Amazonが個人データをどのように保存および処理するかについての完全な情報については、こちらをクリックしてください<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "並べ替え:",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "おすすめ",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "給与-昇順",
@@ -964,6 +964,54 @@
       "value" : "ダッシュボードに戻る",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Amazonにご応募いただき、ありがとうございます。",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "この仕事にはすでに応募済みです。ダッシュボードに戻ってアプリケーションを確認してください。",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "ダッシュボードに移動する",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "この役割へのアプリケーションはすでに送信されています:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "このジョブIDへの有効なアプリケーションは1件だけです。現在のアプリケーションを表示し、その他のオプションを確認するには、「ダッシュボードに移動」をクリックします。",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "ダッシュボードに移動する",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "この役割にはすでに有効なアプリケーションがあります:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "新規アプリケーションを進めると、既存のものは取り消されます。既存のアプリケーションを表示または再開するには、「ダッシュボードに移動」をクリックします。",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "新規アプリケーションを進めるには、「アプリケーションを続ける」をクリックします。",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "新規アプリケーションを続ける",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "新規アプリケーション:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "既存のアプリケーション:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "フォーム CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,10 +1516,6 @@
       "value" : "宿泊施設",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazonでは、従業員の多様性と多様な働き方を称えています。障がいがあり、アセスメントを含む採用プロセス中に宿泊施設が必要な場合は、<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation にアクセスしてください。</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "このアセスメントのすべてのセクション:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1663,6 +1707,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "リファラーのログインIDを確認できませんでした。www.amazon.com/applicationhelpでチャットを通じてサポートを受けてください。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "雇用前予定の詳細",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "日付",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "時間",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "会議の詳細",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "リファラーログイン ID (小文字のみ) を入力してください",
@@ -3104,6 +3164,10 @@
       "value" : "現在、応募書類に基づき、選考を進めております。ご入力いただいたEメールアドレス宛に追ってご連絡を差し上げます。",
       "note" : "Content for the Generic error page in the UK application"
     },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "ダッシュボードに戻る",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
     "BB-schedule-card-duration-permanent" : {
       "value" : "無期契約",
       "note" : ""
@@ -3115,6 +3179,18 @@
     "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
       "value" : "以下までの定期契約",
       "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "集中力を乱されないように、静かな場所を見つけることをお勧めします。",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "評価が完了すると、応募プロセスに戻ります。",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "Amazonの包括的な文化は、Amazonで働く従業員がお客様のために最高の成果をもたらせるよう支援するものです。障がいをお持ちで、面接やオンボーディングプロセスのサポートを含め、応募およびアプリケーションプロセス中に調整が必要な場合は、月曜日〜金曜日の午前7時（GMT）〜午後4時（GMT）まで、応募者・候補者対応チーム（ACAT）までご連絡ください。イギリスから直接お電話される場合は、+44 800 086 9884にダイヤルしてください。アイルランドからお電話される場合は、+353 1800 851 489にダイヤルしてください。また、新しい役割で調整が必要な場合、もしくは初日の開始前にリクエストしたいことがある場合は、お問い合わせください。",
+      "note" : "Assessment condition number 3"
     }
   }
 }

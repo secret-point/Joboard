@@ -108,10 +108,6 @@
       "value" : "Je suis conscient que tous les informations recueillies peuvent être transférées conformément à la Loi fédérale sur la protection des données personnelles en la possession de parties privées et à ses règlements, lignes directrices et autres dispositions applicables en matière de confidentialité des données, ainsi qu'aux termes de la Déclaration de confidentialité de la Société pour les employés et/ou les candidats.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon s’engage à offrir un environnement de travail diversifié et inclusif. Amazon est un employeur qui offre l’égalité des chances à tous et ne fait aucune discrimination basée sur la race, la nationalité, le sexe, l’identité de genre, l’orientation sexuelle, le statut d’ancien combattant protégé, le handicap, l’âge ou tout autre statut protégé par la loi. Pour les personnes qui ont un handicap et qui souhaitent demander des mesures d’adaptation, veuillez consulter <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon prend la protection de vos données personnelles au sérieux et les traite uniquement en conformité avec la loi. En effet, nous ne partageons pas vos données personnelles avec des tiers sans votre consentement préalable, sauf si la loi nous y oblige. Sauf indication contraire de votre part, la société Amazon qui vous embauche stockera vos données personnelles dans la base de données électronique gérée par Amazon.com aux États-Unis ou par l’une de ses affiliées. Pour des informations complètes sur le stockage et le traitement de vos données personnelles par Amazon, veuillez cliquer sur <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -964,6 +960,54 @@
       "value" : "Retour au tableau de bord",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Merci d’avoir postulé chez Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Vous avez déjà postulé à cette offre d’emploi. Retournez au tableau de bord pour afficher votre candidature.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Aller au tableau de bord",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Vous avez déjà soumis une candidature pour cet emploi :",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Vous ne pouvez avoir qu'une seule candidature active pour cet emploi. Pour afficher votre candidature actuelle et afficher d'autres options, cliquez sur « Aller au tableau de bord ».",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Aller au tableau de bord",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Vous avez déjà une candidature active pour cet emploi :",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Si vous allez de l'avant avec cette nouvelle candidature, votre candidature existante sera retirée. Pour afficher ou reprendre votre candidature existante, cliquez sur « Aller au tableau de bord ».",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Pour aller de l’avant avec la nouvelle candidature, cliquez sur « Continuer avec la candidature ».",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Continuer avec la nouvelle candidature",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nouvelle candidature :",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Candidature existante :",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulaire CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,10 +1512,6 @@
       "value" : "Mesures d’adaptation",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Chez Amazon, nous valorisons aussi bien la diversité de notre personnel que de nos méthodes de travail. Si vous avez un handicap et souhaitez bénéficier des mesures d’adaptation pendant le processus d’embauche, notamment pendant l’évaluation, veuillez consulter la page <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Toutes les parties de la présente évaluation :",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1531,6 +1571,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "Horaire :",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "Heure :",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "Nous sommes impatients de vous voir à l’heure indiquée ci-dessus.",
@@ -1659,6 +1703,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Nous n’avons pas pu valider l’identifiant de connexion de votre référent. Veuillez clavarder avec nous à l’adresse www.amazon.com/applicationhelp pour obtenir de l’aide.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Détails du rendez-vous de pré-embauche",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Date",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Heure",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Détails de la réunion",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Veuillez fournir l’identifiant de connexion de votre référent (en lettres minuscules uniquement)",
@@ -3064,6 +3124,18 @@
       "value" : "Préférences de quarts",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Détails de la recommandation",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Avez-vous été recommandé par un employé d’Amazon?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "ID de connexion du référent",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Échec du retrait de la demande.",
       "note" : "Text for withdraw multiple application failure error message"
@@ -3091,6 +3163,18 @@
     "BB-uk-generic-error-return-to-dashboard-button-label" : {
       "value" : "Retour au tableau de bord",
       "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "Permanent",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "Contrat à durée déterminée",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "Contrat à durée déterminée jusqu'au",
+      "note" : ""
     },
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
       "value" : "Nous vous recommandons de trouver un endroit tranquille pour éviter les distractions.",

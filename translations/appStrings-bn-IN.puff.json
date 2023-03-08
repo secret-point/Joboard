@@ -108,10 +108,6 @@
       "value" : "আমি জানি যে সমস্ত সংগ্রহকৃত তথ্য ব্যক্তিগত পক্ষের সম্পত্তি এবং তার প্রবিধান, নির্দেশিকা এবং তথ্যের গোপনীয়তার উপর অন্যান্য প্রযোজ্য বিধান, ব্যক্তিগত তথ্য সুরক্ষা ফেডারেল আইন অনুযায়ী স্থানান্তর করা যেতে পারে, এর পাশাপাশি কর্মচারীদের এবং/অথবা প্রার্থীদের জন্য কোম্পানির গোপনীয়তা বিজ্ঞপ্তির উপর ভিত্তি করে।",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon একটি বৈচিত্র্যময় এবং সার্বজনীন কর্মক্ষেত্রের প্রতি প্রতিশ্রুতিবদ্ধ। Amazon একটি সমান সুযোগে বিশ্বাসী নিয়োগকর্তা এবং জাতি, পূর্বপুরুষের দেশ, লিঙ্গ, লিঙ্গ পরিচয়, যৌন অভিমুখীতা, সুরক্ষিত প্রাক্তন সৈনিক স্ট্যাটাস, প্রতিবন্ধিতা, বয়স, বা অন্যান্য আইনত সুরক্ষিত অবস্থার ভিত্তিতে বৈষম্য করে না। প্রতিবন্ধী ব্যক্তি হিসাবে সহযোগীতার জন্য অনুরোধ করতে চাইলে, অনুগ্রহ করে <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>-এ ভিজিট করুন",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon আপনার ব্যক্তিগত তথ্যের সুরক্ষাকে গুরুত্ব সহকারে নেয় এবং শুধুমাত্র আইন অনুযায়ী আপনার ব্যক্তিগত তথ্য প্রক্রিয়া করবে। বিশেষ করে, আমরা আপনার পূর্ব সম্মতি ব্যতীত কোনো তৃতীয় পক্ষের সাথে আপনার ব্যক্তিগত তথ্য শেয়ার করি না, যদি না আইন দ্বারা তা করতে বাধ্য করা হয়। আপনি অন্যভাবে উল্ল্যেখ না করলে, নিয়োগকারী Amazon কোম্পানি আপনার ব্যক্তিগত তথ্য USA-তে Amazon.com দ্বারা রক্ষণাবেক্ষণ করা ইলেকট্রনিক ডাটাবেসে বা এর কোনো সহযোগীর ডাটাবেসে সংরক্ষণ করবে। Amazon কীভাবে আপনার ব্যক্তিগত তথ্য সংরক্ষন করে এবং প্রক্রিয়া করে সে সম্পর্কে সম্পূর্ণ তথ্যের জন্য, অনুগ্রহ করে এখানে ক্লিক করুন <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1519,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "বিশেষ ব্যবস্থা",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazon-এ, আমরা আমাদের জনশক্তির বৈচিত্র্য এবং আমাদের কাজ করার উপায়ের ভিন্নতা উদযাপন করি। যদি আপনার কোনও অক্ষমতা থাকে এবং মূল্যায়ন সহ নিয়োগের প্রক্রিয়ার সময় একটি বিশেষ ব্যবস্থার প্রয়োজন হয় তবে দয়া করে <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodation দেখুন।</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "এই মূল্যায়নের সমস্ত বিভাগ:",

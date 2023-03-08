@@ -108,10 +108,6 @@
       "value" : "ידוע לי שכל המידע שנאסף עשוי להיות מועבר בהתאם לחוק הפדרלי להגנה על נתונים אישיים ברשותם של צדדים פרטיים והתקנות, ההנחיות והוראות רלוונטיות אחרות בנושא פרטיות נתונים, כמו גם במונחים של הודעה בנושא פרטיות של החברה לעובדים ו/או מועמדים.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon מתחייבת למקום עבודה מגוון וכוללני. Amazon בעד שוויון הזדמנויות ואינה מפלה על בסיס גזע, מוצא לאומי, מין, זהות מגדרית, נטייה מינית, מצב מוגן של  יוצא צבא, מוגבלות, גיל או מעמד אחר המוגן מבחינה משפטית. עבור אנשים עם מוגבלויות המעוניינים לבקש מקום לינה, יש לבקר בכתובת <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon מתייחסת ברצינות להגנה על הנתונים האישיים שלך ותעבד את הנתונים האישיים שלך רק בהתאם לחוק. בפרט, איננו משתפים את הנתונים האישיים שלך עם צד שלישי כלשהו ללא הסכמתך מראש, אלא אם כן נאלצנו לעשות זאת על פי חוק. אלא אם תביע רצון אחר, חברת Amazon המעסיקה תשמור את הנתונים האישיים שלך במאגר הנתונים האלקטרוני המנוהל על ידי Amazon.com בארה\"ב או באחת החברות השותפות שלה. לקבלת מידע מלא על האופן שבו Amazon שומרת ומעבדת את הנתונים האישיים שלך, יש ללחוץ כאן <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -191,6 +187,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "מיון לפי",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "מומלצים",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "תעריף תשלום - מהגבוה לנמוך",
@@ -964,6 +964,54 @@
       "value" : "חזרה ללוח הבקרה",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "תודה על הגשת מועמדותך ל-Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "כבר הגשת מועמדות לעבודה זו. יש לחזור ללוח הבקרה כדי לצפות בטופס המועמדות שלך.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "מעבר אל דשבורד",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "כבר הגשת בקשה למועמדות לתפקיד:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "רק מועמדות אחת יכולה להיות פעילה עבור מזהה עבודה זה. כדי להציג את המועמדות הנוכחית שלך ולראות אפשרויות נוספות, יש ללחוץ על 'מעבר לדשבורד'.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "מעבר אל דשבורד",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "כבר יש לך מועמדות פעילה לתפקיד:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "אם תמשיך עם המועמדות החדשה הזו, המועמדות הקיימת שלך תוסר. כדי להציג או לחדש את המועמדות הקיימת שלך, יש ללחוץ על 'מעבר לדשבורד'.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "כדי להמשיך במועמדות חדשה, יש ללחוץ על 'להמשיך עם המועמדות'.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "להמשיך עם מועמדות חדשה",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "מועמדות חדשה:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "מועמדות קיימת:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "טופס CC-305",
       "note" : "Text for Self Identification form name"
@@ -1467,10 +1515,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "התאמות",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "ב-Amazon, אנחנו חוגגים את הגיוון של כוח העבודה שלנו ואת הדרכים המגוונות בהן אנחנו עובדים. אם יש לך מוגבלות כלשהי ויש לך צורך בלינה במהלך תהליך ההעסקה, כולל בזמן תהליך ההערכה עצמו, יש לבקר <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>באתר האירוח של Amazon.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "כל סעיפי הערכה זו:",
@@ -3083,6 +3127,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "העדפות משמרת",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "פרטי הפניה",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "האם הופנית על ידי עובד אמזון קיים?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "מזהה כניסה להפניה",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "לא הצלחנו לבטל את הגשת המועמדות.",

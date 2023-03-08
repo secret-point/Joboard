@@ -108,10 +108,6 @@
       "value" : "சேகரிக்கப்பட்ட அனைத்து தகவல்களும், ‘தனிப்பட்ட தரவைப் பாதுகாப்பதற்கான கூட்டாட்சி சட்டத்தின்படி’ தனிப்பட்ட தரப்புகள் மற்றும் அதன் ஒழுங்குமுறைகள், வழிகாட்டுதல்கள் மற்றும் தரவு தனியுரிமை தொடர்பான பிற பொருந்தக்கூடிய விதிகள் மற்றும் பணியாளர்கள் மற்றும்/அல்லது விண்ணப்பதாரர்களுக்கான நிறுவனத்தின் தனியுரிமை அறிக்கைக்கு இணங்க மாற்றப்படலாம் என்பதை நான் அறிவேன்.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon ஒரு பன்முகத்தன்மையுள்ள மற்றும் அனைவருக்கும் ஏற்ற பணியிடத்தைத் தருவதற்கு உறுதிபூண்டுள்ளது. Amazon ஒரு சம வாய்ப்பளிக்கும் நிறுவனமாகும். இனம், தேசிய தோற்றம், பாலினம், பாலின அடையாளம், பாலியல் நோக்குநிலை, பாதுகாக்கப்பட்ட படைவீரர் நிலை, மாற்றுத்திறன், வயது அல்லது பிற சட்டப்பூர்வமாக பாதுகாக்கப்பட்ட நிலை ஆகியவற்றின் அடிப்படையில் இங்கு பாகுபாடு இருக்காது. தங்குமிடத்தைக் கோர விரும்பும் மாற்றுத்திறனாளிகள் இங்குப் பார்வையிடவும்:<a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a>",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon உங்கள் தனிப்பட்ட தரவுப் பாதுகாப்பை தீவிரமாக எடுத்துக்கொள்கிறது மற்றும் சட்டப்படி மட்டுமே உங்கள் தனிப்பட்ட தரவைப் பயண்படுத்தும். குறிப்பாக, சட்டத்தின் நிர்பந்தமின்றி அல்லது உங்களின் முன் அனுமதியின்றி உங்கள் தனிப்பட்ட தரவை எந்தவொரு மூன்றாம் தரப்பினருடனும் நாங்கள் பகிர மாட்டோம். நீங்கள் இதைக் குறிப்பிட்டு வெளிப்படுத்தாவிட்டால், பணியமர்த்தப்படும் Amazon நிறுவனம் உங்கள் தனிப்பட்ட தரவை அமெரிக்காவில் Amazon.com அல்லது அதன் துணை நிறுவனங்களில் பராமரிக்கும் மின்னணு தரவுத்தளத்தில் சேமிக்கும். உங்கள் தனிப்பட்ட தரவை Amazon எவ்வாறு சேமித்து செயலாக்குகிறது என்பது பற்றிய முழுத் தகவல்களுக்கு, இங்கே கிளிக் செய்யவும்: <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -964,6 +960,54 @@
       "value" : "டாஷ்போர்டுக்குத் திரும்புக",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Amazonக்கு விண்ணப்பித்ததற்கு நன்றி!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "நீங்கள் ஏற்கெனவே இந்த வேலைக்கு விண்ணப்பித்திருக்கிறீர்கள். உங்கள் விண்ணப்பத்தைப் பார்வையிட டாஷ்போர்டுக்குத் திரும்பவும்.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "டாஷ்போர்டுக்குச் செல்",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "பின்வரும் பொறுப்புக்கான விண்ணப்பத்தை நீங்கள் ஏற்கெனவே சமர்ப்பித்துள்ளீர்கள்:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "இந்த வேலை ஐடிக்குச் செயலிலுள்ள ஒரு விண்ணப்பத்தை மட்டுமே நீங்கள் வைத்திருக்க முடியும். உங்கள் தற்போதைய விண்ணப்பத்தைப் பார்ப்பதற்கும் மேலும் விருப்பங்களைப் பார்ப்பதற்கும், 'டாஷ்போர்டுக்குச் செல்' என்பதைக் கிளிக் செய்யவும்.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "டாஷ்போர்டுக்குச் செல்",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "பின்வரும் பொறுப்புக்கான உங்கள் விண்ணப்பம் ஏற்கெனவே செயலிலுள்ளது:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "இந்தப் புதிய விண்ணப்பத்தைத் தொடர்ந்தால், ஏற்கெனவே உள்ள விண்ணப்பம் திரும்பப் பெறப்படும். உங்களிடம் ஏற்கெனவே உள்ள விண்ணப்பத்தைப் பார்க்க அல்லது மீண்டும் தொடங்க, 'டாஷ்போர்டுற்குச் செல்' என்பதைக் கிளிக் செய்யவும்.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "புதிய விண்ணப்பத்தைத் தொடர, 'விண்ணப்பத்தைத் தொடர்க' என்பதைக் கிளிக் செய்யவும்.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "புதிய விண்ணப்பத்தைத் தொடர்க",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "புதிய விண்ணப்பம்:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "ஏற்கெனவே உள்ள விண்ணப்பம்:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "படிவம் CC-305",
       "note" : "Text for Self Identification form name"
@@ -1468,10 +1512,6 @@
       "value" : "தங்குமிடங்கள்",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazonஇல், எங்கள் பணியாளர்களின் பன்முகத்தன்மையையும் நாங்கள் வேலை செய்யும் பல்வேறு வழிகளையும் கொண்டாடுகிறோம். நீங்கள் மாற்றுத்திறனாளியாக இருந்து, மதிப்பாய்வு உட்பட பணியமர்த்தல் செயல்முறையின்போது உங்களுக்கு உதவி தேவைப்பட்டால், <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon Accommodationஐப் பார்வையிடவும்.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
-    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "இந்த மதிப்பீட்டின் அனைத்துப் பிரிவுகளும்:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1663,6 +1703,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "உங்களைப் பரிந்துரைத்தவரின் உள்நுழைவு ID ஐ எங்களால் சரிபார்க்க முடியவில்லை, உதவிக்காக, www.amazon.com/applicationhelp தளத்தில் அரட்டை மூலமாக எங்களைத் தொடர்புகொள்ளவும்.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "பணியமர்த்துவதற்கு முந்தைய சந்திப்பு விவரங்கள்",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "தேதி",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "நேரம்",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "சந்திப்பு விவரங்கள்",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "உங்கள் பரிந்துரையாளர் உள்நுழைவு ஐடியை வழங்கவும் (சிற்றெழுத்துகளில் மட்டும்)",
@@ -3067,6 +3123,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "ஷிஃப்ட் விருப்பத்தேர்வுகள்",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "பரிந்துரை விவரங்கள்",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Amazonஇல் வேலைசெய்யும் பணியாளரால் நீங்கள் பரிந்துரைக்கப்பட்டீர்களா?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "பரிந்துரை உள்நுழைவு ID",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "விண்ணப்பத்தைத் திரும்பப் பெற முடியவில்லை.",

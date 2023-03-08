@@ -108,10 +108,6 @@
       "value" : "मला माहीत आहे की, एकत्रित केलेली सर्व माहिती खाजगी पक्षांच्या ताब्यात असलेल्या वैयक्तिक डेटाच्या संरक्षणासंबंधी फेडरल कायद्यानुसार आणि डेटा गोपनीयतेविषयीचे त्यांचे नियम, मार्गदर्शक तत्त्वे आणि इतर लागू तरतुदी तसेच कंपनीच्या कर्मचाऱ्यांसाठी आणि/किंवा उमेदवारासाठी कंपनीच्या गोपनीयता नोटीस नुसार हस्तांतरित केली जाऊ शकते.",
       "note" : "Text for the flyout MX user data policy body text"
     },
-    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
-      "value" : "Amazon वैविध्यपूर्ण आणि सर्वसमावेशक कार्यस्थळासाठी वचनबद्ध आहे. Amazon एक समान संधी नियोक्ता आहे आणि वंश, राष्ट्रीय मूळ, लिंग, लिंग ओळख, लैंगिक अभिमुखता, प्रोटेक्टेड व्हेटरन स्थिती, अपंगत्व, वय किंवा इतर कायदेशीररित्या संरक्षित स्थितीच्या आधारावर भेदभाव करत नाही. अपंग व्यक्तींसाठी ज्यांना निवासाची विनंती करायची आहे, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'>https://www.amazon.jobs/en/disability/us</a> ला भेट द्या",
-      "note" : "Text for the flyout user data policy paragraph 1 text"
-    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon तुमचे वैयक्तिक डेटा संरक्षण गांभीर्याने घेते आणि केवळ कायद्यानुसारच तुमच्या वैयक्तिक डेटावर प्रक्रिया करेल. विशेषतः, कायद्याने असे करण्यास भाग पाडल्याशिवाय आम्ही तुमचा वैयक्तिक डेटा तुमच्या पूर्व संमतीशिवाय कोणत्याही तृतीय पक्षासह शेअर करत नाही. तुम्ही अन्यथा व्यक्त केल्याशिवाय, नियुक्ती करणारी Amazon कंपनी तुमचा वैयक्तिक डेटा USA मधील Amazon.com द्वारे राखलेल्या इलेक्ट्रॉनिक डेटाबेसमध्ये किंवा तिच्या संलग्नांपैकी एकामध्ये साठवेल. Amazon तुमचा वैयक्तिक डेटा कसा साठवतो आणि त्यावर प्रक्रिया करतो याबद्दल संपूर्ण माहितीसाठी, कृपया येथे क्लिक करा <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1503,10 +1499,6 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "राहण्याची सोय",
       "note" : "Text for the assessment consent page accommodation heading text"
-    },
-    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
-      "value" : "Amazon मध्ये, आम्ही आमच्या कर्मचार्‍यांची विविधता आणि आमच्या काम करण्याच्या विविध पद्धतींचा उत्सव साजरा करतो. तुम्‍हाला अपंगत्व असल्‍यास आणि मूल्यांकनासह कामावर ठेवण्‍याच्‍या प्रक्रियेदरम्यान, निवासाची आवश्‍यकता असल्‍यास, कृपया <a href='https://www.amazon.jobs/en/disability/us' target='_blank' rel='noopener noreferrer'> Amazon अकोमोडेशनला भेट द्या.</a>",
-      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "या मूल्यांकनाचे सर्व विभाग:",
@@ -3123,6 +3115,34 @@
     "BB-uk-generic-error-content-text" : {
       "value" : "आम्ही सध्या तुमच्या अर्जाचे मूल्यमापन करत आहोत आणि तुम्ही दिलेल्या ईमेल पत्त्याचा वापर करून लवकरच तुमच्याशी संपर्क साधू.",
       "note" : "Content for the Generic error page in the UK application"
+    },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "डॅशबोर्डवर परत जा",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
+    "BB-schedule-card-duration-permanent" : {
+      "value" : "कायमस्वरूपी",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract" : {
+      "value" : "निश्चित मुदत करार",
+      "note" : ""
+    },
+    "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
+      "value" : "पर्यंत निश्चित मुदत करार",
+      "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "आम्ही शिफारस करतो की तुम्ही व्यत्यय टाळण्यासाठी शांत जागा शोधा.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "तुम्ही मूल्यांकन पूर्ण केल्यानंतर, तुमच्या अर्ज प्रक्रियेत परत याल.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "आमची सर्वसमावेशक संस्कृती Amazonians ला आमच्या ग्राहकांसाठी सर्वोत्तम परिणाम देण्यासाठी सक्षम करते. तुम्हाला अपंगत्व असल्यास आणि मुलाखतीसाठी किंवा ऑनबोर्डिंग प्रक्रियेसाठी सपोर्टसह अर्ज आणि नियुक्ती प्रक्रियेदरम्यान समायोजन आवश्यक असल्यास, कृपया अर्जदार-उमेदवार निवास संघाशी (ACAT), सोमवार ते शुक्रवार सकाळी 7:00 GMT - संध्याकाळी 4:00 GMT दरम्यान संपर्क साधा. युनायटेड किंगडममधून थेट कॉल करत असल्यास, कृपया +44 800 086 9884 डायल करा. आयर्लंडमधून कॉल करत असल्यास, कृपया +353 1800 851 489 डायल करा. तुम्‍हाला तुमच्‍या नवीन भूमिकेमध्‍ये समायोजनाची आवश्‍यकता असल्‍यास आणि तुमचा दिवस 1 सुरू करण्‍यापूर्वी विनंती सुरू करू इच्छित असल्यास तुम्‍ही आमच्याशी संपर्क साधू शकता.",
+      "note" : "Assessment condition number 3"
     }
   }
 }
