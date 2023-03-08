@@ -66,5 +66,7 @@ export const PagesControlledByWorkFlowService = [
 ];
 
 export const PagesNeedToUseWorkflowRedirection = [
-  PAGE_ROUTES.CONSENT
+  PAGE_ROUTES.CONSENT,
+  PAGE_ROUTES.WOTC_COMPLETE,
+  PAGE_ROUTES.ASSESSMENT_FINISHED
 ];

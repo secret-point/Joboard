@@ -117,6 +117,7 @@ export const sendHeartBeatWorkflow = () => {
 };
 
 export const ifShouldGoToStep = (targetStepName: string, currentStepName: string): boolean => {
+
   if (targetStepName === currentStepName) {
     // Do not redirect if the current step is the same as the target step
 
@@ -154,6 +155,7 @@ export const ifShouldGoToStep = (targetStepName: string, currentStepName: string
     // If a page is invalid route, or is managed by workflow service, we rely on it
     // we should exclude consent page to ensure that redirection to job opportunity or assessment works.
     // check if it has targetStep to ensure that when we are on error page and try to go to workflow service managed page, this case we can rely on workflow service nextStep from response
+
     return false;
   }
   // reset hasTarget to ensure next page will be redirected correctly by relying on workflow service nextStep if it's on a UI controlled page
