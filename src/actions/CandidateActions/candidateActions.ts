@@ -4,14 +4,10 @@ import {
   GetCandidateInfoFailedAction,
   GetCandidateInfoSuccessAction,
   SetCandidatePatchRequestAction,
-  UpdateCandidateInfoErrorAction,
-  UpdateCandidateShiftPreferencesAction,
-  UpdateCandidateShiftPreferencesErrorAction,
-  UpdateCandidateShiftPreferencesSuccessAction
+  UpdateCandidateInfoErrorAction
 } from "./candidateActionTypes";
 import { Candidate, CandidateInfoErrorState, CandidatePatchRequest } from "../../utils/types/common";
 import { loadingStatusHelper } from "../../utils/helper";
-import { ShiftPreferences } from "../../@types/shift-preferences";
 
 export const actionGetCandidateInfo = (): GetCandidateInfoAction => {
   return {
@@ -45,24 +41,5 @@ export const actionUpdateCandidateInfoError = (payload: CandidateInfoErrorState)
   return {
     type: CANDIDATE_ACTION_TYPES.UPDATE_CANDIDATE_INFO_ERROR,
     payload
-  };
-};
-
-export const actionUpdateCandidateShiftPreferencesRequest =
-    ( payload: ShiftPreferences, onSuccess?: Function, onError?: Function ): UpdateCandidateShiftPreferencesAction => {
-      return { type: CANDIDATE_ACTION_TYPES.UPDATE_CANDIDATE_SHIFT_PREFERENCES, payload, onSuccess, onError };
-    };
-
-export const actionUpdateCandidateShiftPreferencesSuccess = (payload: ShiftPreferences): UpdateCandidateShiftPreferencesSuccessAction => {
-  return {
-    type: CANDIDATE_ACTION_TYPES.UPDATE_CANDIDATE_SHIFT_PREFERENCES_SUCCESS,
-    payload,
-  };
-};
-
-export const actionUpdateCandidateShiftPreferencesError = (payload: any): UpdateCandidateShiftPreferencesErrorAction => {
-  return {
-    type: CANDIDATE_ACTION_TYPES.UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR,
-    payload,
   };
 };

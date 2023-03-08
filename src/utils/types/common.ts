@@ -18,7 +18,6 @@ import {
   WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
-import { ShiftPreferences } from "../../@types/shift-preferences";
 
 export interface QueryParamItem {
   paramName?: QUERY_PARAMETER_NAME;
@@ -907,7 +906,6 @@ export interface Candidate {
   socialSecurityNumber: string;
   numSSNEdits: number;
   assessmentsTaken: Record<string, Assessment>;
-  shiftPreferences: ShiftPreferences;
 };
 
 export interface Address {

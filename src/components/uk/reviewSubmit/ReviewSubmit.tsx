@@ -8,7 +8,6 @@ import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import {
-  boundCalculateInclinedValue,
   boundGetApplicationList,
   boundUpdateApplicationDS
 } from "../../../actions/ApplicationActions/boundApplicationActions";
@@ -142,26 +141,12 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
     const isFeatureEnabled = getFeatureFlagValue(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
     if (isFeatureEnabled) {
-      if (!scheduleId) {
-        boundCalculateInclinedValue(applicationId, () => {
-          onCompleteTaskHelper(applicationData);
-        });
-      } else {
-        onCompleteTaskHelper(applicationData);
-      }
+      onCompleteTaskHelper(applicationData);
     } else {
       const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
-      if (!scheduleId) {
-        boundCalculateInclinedValue(applicationId, () => {
-          boundUpdateApplicationDS(request, (applicationData: Application) => {
-            onCompleteTaskHelper(applicationData);
-          });
-        });
-      } else {
-        boundUpdateApplicationDS(request, (applicationData: Application) => {
-          onCompleteTaskHelper(applicationData);
-        });
-      }
+      boundUpdateApplicationDS(request, (applicationData: Application) => {
+        onCompleteTaskHelper(applicationData);
+      });
     }
   };
   const handleSubmitApplication = () => {

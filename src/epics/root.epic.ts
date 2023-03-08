@@ -1,6 +1,5 @@
 import { combineEpics } from "redux-observable";
 import {
-  CalculateInclinedValueEpic,
   CreateApplicationAndSkipScheduleDSEpic,
   CreateApplicationDSEpic,
   GetApplicationEpic,
@@ -10,7 +9,7 @@ import {
   UpdateWorkflowStepNameEpic,
   WithdrawMultipleApplicationEpic
 } from "./application.epic";
-import { GetCandidateInfoEpic, UpdateCandidateShiftPreferencesEpic } from "./candidate.epic";
+import { GetCandidateInfoEpic } from "./candidate.epic";
 import { JobEpic } from "./job.epic";
 import { GetNheTimeSlotsDs, GetNheTimeSlotsThroughNheDs, GetPossibleNhePreferences } from "./nhe.epic";
 import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
@@ -29,7 +28,6 @@ const rootEpic = combineEpics(
   GetApplicationSuccessEpic,
   UpdateWorkflowStepNameEpic,
   GetCandidateInfoEpic,
-  UpdateCandidateShiftPreferencesEpic,
   GetNheTimeSlotsDs,
   GetNheTimeSlotsThroughNheDs,
   UpdateWotcStatusEpic,
@@ -37,8 +35,7 @@ const rootEpic = combineEpics(
   GetPossibleNhePreferences,
   GetApplicationListEpic,
   WithdrawMultipleApplicationEpic,
-  GetAsssessmentElegibilityEpic,
-  CalculateInclinedValueEpic
+  GetAsssessmentElegibilityEpic
 );
 
 export default rootEpic;
