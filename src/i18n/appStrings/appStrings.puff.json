@@ -1018,6 +1018,10 @@
             "note": "Text for existing application",
             "value": "Existing application:"
         },
+        "BB-job-id": {
+            "note": "Text to display job id",
+            "value": "Job Id: "
+        },
         "BB-SelfId-disability-form-name-text": {
             "note": "Text for Self Identification form name",
             "value": "Form CC-305"

@@ -12,12 +12,13 @@ import {
   actionCreateApplicationDS,
   actionGetApplication,
   actionGetApplicationList,
+  actionSetApplicationErrorCode,
   actionUpdateApplicationDS,
   actionUpdateWorkflowName,
   actionWithdrawMultipleApplication,
   actionCalculateInclinedValue,
 } from "./applicationActions";
-import { Application } from "../../utils/types/common";
+import { Application, ErrorMetadata } from "../../utils/types/common";
 
 export const boundGetApplication = (payload: GetApplicationRequest, onSuccess?: Function,) =>
   store.dispatch(actionGetApplication(payload, onSuccess));
@@ -39,6 +40,9 @@ export const boundGetApplicationList = (payload: GetApplicationListRequest, onSu
 
 export const boundWithdrawMultipleApplication = (payload: Application[], onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionWithdrawMultipleApplication(payload, onSuccess, onError));
+
+export const boundSetApplicationErrorCode= (errorCode: string, errorMetadata?: ErrorMetadata) =>
+  store.dispatch(actionSetApplicationErrorCode(errorCode, errorMetadata));
 
 export const boundCalculateInclinedValue = (applicationId: string, onResult?: Function) =>
   store.dispatch(actionCalculateInclinedValue(applicationId, onResult));

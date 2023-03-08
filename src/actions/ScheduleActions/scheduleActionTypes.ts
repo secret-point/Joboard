@@ -9,7 +9,8 @@ export enum SCHEDULE_ACTION_TYPE {
   GET_DETAIL = "GET_SCHEDULE_DETAIL",
   GET_DETAIL_SUCCESS = "GET_SCHEDULE_DETAIL_SUCCESS",
   GET_DETAIL_FAILED = "GET_SCHEDULE_DETAIL_FAILED",
-  UPDATE_FILTERS = "UPDATE_SCHEDULE_FILTERS"
+  UPDATE_FILTERS = "UPDATE_SCHEDULE_FILTERS",
+  GET_OLD_DETAIL_SUCCESS = "GET_OLD_SCHEDULE_DETAIL_SUCCESS"
 }
 
 export interface GetScheduleListByJobIdAction extends Action {
@@ -41,6 +42,12 @@ export interface GetScheduleDetailSuccessAction extends Action {
   loadingStatus: boolean;
 }
 
+export interface GetOldScheduleDetailSuccessAction extends Action {
+  type: SCHEDULE_ACTION_TYPE.GET_OLD_DETAIL_SUCCESS;
+  payload: Schedule;
+  loadingStatus: boolean;
+}
+
 export interface GetScheduleDetailFailedAction extends Action {
   type: SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED;
   payload: any;
@@ -58,4 +65,5 @@ export type ScheduleActions =
     GetScheduleDetailAction |
     GetScheduleDetailSuccessAction |
     GetScheduleDetailFailedAction |
+    GetOldScheduleDetailSuccessAction |
     UpdateScheduleFiltersAction;

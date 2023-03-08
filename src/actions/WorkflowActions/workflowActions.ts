@@ -39,7 +39,6 @@ export const loadWorkflow =
 export const loadWorkflowDS =
     ( jobId: string, scheduleId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
       if (!window?.stepFunctionService?.websocket) {
-
         if (isCompleteTaskOnLoad) {
           window.isCompleteTaskOnLoad = isCompleteTaskOnLoad;
           window.applicationData = applicationData;

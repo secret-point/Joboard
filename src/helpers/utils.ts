@@ -359,7 +359,7 @@ export const redirectToLoginCSDS = () => {
   window.location.assign(url);
 };
 
-export const redirectToDashboard = () => {
+export const redirectToDashboard = (jobId?: string) => {
   const state = store.getState();
   const envConfig = state.appConfig?.results?.envConfig;
   const isCandidateDashboardEnabled = envConfig?.featureList?.CANDIDATE_DASHBOARD?.isAvailable;
@@ -368,7 +368,10 @@ export const redirectToDashboard = () => {
     ? JSON.parse(queryParamsInSession)
     : {};
   const queryStringFor3rdParty = get3rdPartyFromQueryParams(queryParams, "?");
-  const candidateDashboardUrl = `${envConfig?.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+  let candidateDashboardUrl = `${envConfig?.CSDomain}/app${queryStringFor3rdParty}#/myApplications`;
+  if (jobId) {
+    candidateDashboardUrl = candidateDashboardUrl + `?jobId=${jobId}`;
+  }
 
   if (isCandidateDashboardEnabled) {
     window.location.assign(candidateDashboardUrl);

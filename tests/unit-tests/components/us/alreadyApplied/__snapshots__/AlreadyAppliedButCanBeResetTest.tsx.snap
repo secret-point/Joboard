@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    fontWeight="bold"
+    hyphens="none"
+  >
+    You already have an active application for the role:
+    <br />
+  </Text>
+  <Flex
+    flexDirection="column"
+    gridGap="S300"
+  >
+    <Col
+      gridGap="S300"
+      width="100%"
+    >
+      <div>
+        Existing application:
+      </div>
+    </Col>
+    <Col
+      gridGap="S300"
+      width="100%"
+    >
+      <div>
+        New application:
+      </div>
+      <AlreadyAppliedScheduleDetails
+        scheduleDetail={
+          Object {
+            "address": "38811 Cherry Street",
+            "basePay": 6,
+            "basePayL10N": "",
+            "bgcVendorName": "FADV",
+            "briefJobDescription": "briefJobDescription briefJobDescription",
+            "city": "Newark",
+            "contingencyTat": 0,
+            "currencyCode": "USD",
+            "dataSource": "Dragonstone",
+            "distanceL10N": "",
+            "employmentType": "Regular",
+            "employmentTypeL10N": "Regular",
+            "externalJobTitle": "Amazon Grocery Shopper",
+            "financeWeekStartDate": "",
+            "financeWeekStartDateL10N": "",
+            "firstDayOnSite": "2022-10-29",
+            "firstDayOnSiteL10N": "2022-10-29",
+            "geoClusterId": "",
+            "geoClusterName": "",
+            "hireEndDate": "",
+            "hireStartDate": "2022-11-04",
+            "hoursPerWeek": 16,
+            "iconUrl": "https://m.media-amazon.com/images/G/01/HVH-CandidateApplication/jobs/IconLogo.png",
+            "image": "https://m.media-amazon.com/images/G/01/HVHJobDetails/I_Grocery_Shopper._CB1198675309_.svg",
+            "jobDescription": "jobDescription jobDescription",
+            "jobId": "JOB-US-0000001234",
+            "jobPreviewVideo": "https://m.media-amazon.com/images/G/01/HVHJobDetails/V_Grocery_Shopper._CB1198675309_.mp4",
+            "laborDemandAvailableCount": 0,
+            "language": "English",
+            "monthlyBasePay": 1000,
+            "monthlyBasePayL10N": null,
+            "parsedTrainingDate": "01-01-2023",
+            "postalCode": "94560",
+            "priorityRank": 0,
+            "requiredLanguage": Array [
+              "en-US",
+              "es-US",
+            ],
+            "scheduleBannerText": "Additional 5$ bonus schedule and 9$ Surge pay",
+            "scheduleId": "test-schedule-id",
+            "scheduleText": "Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM",
+            "scheduleType": "PART_TIME",
+            "scheduleTypeL10N": "",
+            "signOnBonus": 5,
+            "signOnBonusL10N": "$5.00",
+            "siteId": "SITE-OAK5",
+            "state": "CA",
+            "surgePay": 0,
+            "tagLine": "In-store shopping for customer grocery orders.",
+            "totalPayRate": 8.9,
+            "totalPayRateL10N": "$8.90",
+          }
+        }
+      />
+    </Col>
+  </Flex>
+  <Row>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      If you proceed with this new application, your existing one will be withdrawn. To view or resume your existing application, click 'Go to dashboard'.
+    </Text>
+  </Row>
+  <Row>
+    <Text
+      font="primary"
+      fontSize="T100"
+      hyphens="none"
+    >
+      To proceed with new application, click 'Continue with application'.
+    </Text>
+  </Row>
+  <Flex
+    className="alreadyAppliedButtonStickyAtBottom"
+    flexDirection="column"
+    gridGap={20}
+    justifyContent="flex-end"
+    width="100%"
+  >
+    <Button
+      colorScheme="default"
+      dataTestId="button-dashboard"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="secondary"
+    >
+      Go to dashboard
+    </Button>
+    <Button
+      colorScheme="default"
+      dataTestId="button-continue"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Continue with new application
+    </Button>
+  </Flex>
+</Col>
+`;

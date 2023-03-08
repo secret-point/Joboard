@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleDetails should match snapshot 1`] = `
+<Card
+  backgroundColor="neutral0"
+  display="flex"
+  flexDirection="column"
+  padding="S300"
+  status="default"
+>
+  <Col
+    gridGap="S200"
+  >
+    <Row
+      alignItems="center"
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Hours
+        : 
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        16
+         
+        hours/week
+      </Text>
+    </Row>
+    <Row
+      alignItems="center"
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Thu, Fri, Sat, Sun 9:00 AM - 1:00 PM
+      </Text>
+    </Row>
+    <Row
+      alignItems="center"
+      gridGap="S300"
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        fontWeight="bold"
+        hyphens="none"
+      >
+        Languages Supported
+        :
+      </Text>
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        English, Spanish
+      </Text>
+    </Row>
+    <Row
+      alignItems="center"
+      gridGap="S300"
+    >
+      <Row
+        gridGap="S300"
+        width="65%"
+      >
+        <Text
+          font="primary"
+          fontSize="T100"
+          fontWeight="bold"
+          hyphens="none"
+        >
+          Start Date
+          : 
+        </Text>
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Oct 29, 2022
+        </Text>
+      </Row>
+      <Row
+        width="%35"
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          fontWeight="bold"
+          hyphens="none"
+        >
+          $8.90
+        </Text>
+        <Row
+          alignSelf="end"
+        >
+          <Text
+            font="primary"
+            fontSize="T100"
+            hyphens="none"
+          >
+            /hour
+          </Text>
+        </Row>
+      </Row>
+    </Row>
+    <Row
+      className="scheduleBannerText"
+      padding={
+        Object {
+          "top": "S300",
+        }
+      }
+    >
+      <Text
+        font="primary"
+        fontSize="T100"
+        hyphens="none"
+      >
+        Additional 5$ bonus schedule and 9$ Surge pay
+      </Text>
+    </Row>
+  </Col>
+</Card>
+`;

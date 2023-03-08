@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    fontWeight="bold"
+    hyphens="none"
+  >
+    You have already submitted an application for the role:  
+    <br />
+  </Text>
+  <Text
+    color="neutral70"
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Job Id: 
+     
+    JOB-US-0000001234
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.
+  </Text>
+  <Row
+    gridGap={20}
+    justifyContent="flex-end"
+    width="100%"
+  >
+    <Button
+      colorScheme="default"
+      dataTestId="button-go-to-dashboard"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Go to dashboard
+    </Button>
+  </Row>
+</Col>
+`;

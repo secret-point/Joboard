@@ -7,6 +7,7 @@ export interface ScheduleState {
   results: {
     scheduleList?: Schedule[];
     scheduleDetail?: Schedule;
+    oldScheduleDetail?: Schedule;
   };
   failed?: boolean;
   filters: ScheduleStateFilters;
@@ -57,6 +58,14 @@ export default function scheduleReducer( state: ScheduleState = initScheduleStat
         loading: false,
         failed: false,
         results: { ...state.results, scheduleDetail: action.payload }
+      };
+
+    case SCHEDULE_ACTION_TYPE.GET_OLD_DETAIL_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        failed: false,
+        results: { ...state.results, oldScheduleDetail: action.payload }
       };
 
     case SCHEDULE_ACTION_TYPE.GET_DETAIL_FAILED:

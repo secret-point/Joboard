@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { Application } from "../../utils/types/common";
+import { Application, ErrorMetadata } from "../../utils/types/common";
 import {
   CreateApplicationAndSkipScheduleRequestDS,
   CreateApplicationRequestDS,
@@ -33,6 +33,7 @@ export enum APPLICATION_ACTION_TYPES {
   WITHDRAW_MULTIPLE_APPLICATION = "WITHDRAW_MULTIPLE_APPLICATION",
   WITHDRAW_MULTIPLE_APPLICATION_SUCCESS = "WITHDRAW_MULTIPLE_APPLICATION_SUCCESS",
   WITHDRAW_MULTIPLE_APPLICATION_FAILED = "WITHDRAW_MULTIPLE_APPLICATION_FAILED",
+  SET_ERROR_CODE_AND_ERROR_METADATA = "SET_ERROR_CODE_AND_ERROR_METADATA",
   CALCULATE_INCLINED_VALUE = "CALCULATE_INCLINED_VALUE",
   CALCULATE_INCLINED_VALUE_RESULT = "CALCULATE_INCLINED_VALUE_RESULT",
 }
@@ -167,6 +168,12 @@ export interface WithdrawMultipleApplicationFailedAction extends Action {
   payload: ApiError;
 }
 
+export interface SetApplicationErrorCodeAction extends Action {
+  type: APPLICATION_ACTION_TYPES.SET_ERROR_CODE_AND_ERROR_METADATA;
+  errorCode?: string;
+  errorMetadata?: ErrorMetadata;
+}
+
 export interface CalculateInclinedValueAction extends Action {
   type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE;
   applicationId: string;
@@ -201,6 +208,8 @@ export type ApplicationActionTypes =
     GetApplicationListFailedAction |
     WithdrawMultipleApplicationSuccessAction |
     WithdrawMultipleApplicationFailedAction |
+    WithdrawMultipleApplicationAction |
+    SetApplicationErrorCodeAction |
     WithdrawMultipleApplicationAction |
     CalculateInclinedValueAction |
     CalculateInclinedValueResultAction;

@@ -1,4 +1,4 @@
-import { Application } from "../../utils/types/common";
+import { Application, ErrorMetadata } from "../../utils/types/common";
 import {
   CreateApplicationAndSkipScheduleRequestDS,
   CreateApplicationRequestDS,
@@ -20,6 +20,7 @@ import {
   GetApplicationListFailedAction,
   GetApplicationListSuccessAction,
   GetApplicationSuccessAction,
+  SetApplicationErrorCodeAction,
   UpdateApplicationActionDS,
   UpdateApplicationFailedActionDS,
   UpdateApplicationSuccessActionDS,
@@ -116,6 +117,14 @@ export const actionWithdrawMultipleApplicationSuccess = (payload: Application[])
 
 export const actionWithdrawMultipleApplicationFailed = (payload: ApiError): WithdrawMultipleApplicationFailedAction => {
   return { type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_FAILED, payload };
+};
+
+export const actionSetApplicationErrorCode = (errorCode: string, errorMetadata?: ErrorMetadata): SetApplicationErrorCodeAction => {
+  return {
+    type: APPLICATION_ACTION_TYPES.SET_ERROR_CODE_AND_ERROR_METADATA,
+    errorCode,
+    errorMetadata
+  };
 };
 
 export const actionCalculateInclinedValue = ( applicationId: string, onResult?: Function): CalculateInclinedValueAction => {

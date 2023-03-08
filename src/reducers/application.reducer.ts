@@ -1,12 +1,14 @@
 import { APPLICATION_ACTION_TYPES, ApplicationActionTypes } from "../actions/ApplicationActions/applicationActionTypes";
 import { sanitizeApplicationData } from "../utils/helper";
-import { Application } from "../utils/types/common";
+import { Application, ErrorMetadata } from "../utils/types/common";
 
 export interface ApplicationState {
   loading: boolean;
   results?: Application;
   applicationList?: Application[];
   failed?: boolean;
+  errorCode?: string;
+  errorMetadata?: ErrorMetadata;
 }
 
 export const initApplicationState: ApplicationState = {
@@ -73,6 +75,14 @@ export default function applicationReducer( state: ApplicationState = initApplic
         loading: false,
         failed: true,
         applicationList: undefined
+      };
+    case APPLICATION_ACTION_TYPES.SET_ERROR_CODE_AND_ERROR_METADATA:
+      return {
+        ...state,
+        loading: false,
+        failed: true,
+        errorCode: action.errorCode,
+        errorMetadata: action.errorMetadata
       };
     default:
       return state;

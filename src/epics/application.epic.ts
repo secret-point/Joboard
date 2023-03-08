@@ -28,7 +28,10 @@ import {
   UpdateWorkflowStepNameAction,
   WithdrawMultipleApplicationAction
 } from "../actions/ApplicationActions/applicationActionTypes";
-import { boundUpdateApplicationDS } from "../actions/ApplicationActions/boundApplicationActions";
+import {
+  boundSetApplicationErrorCode,
+  boundUpdateApplicationDS
+} from "../actions/ApplicationActions/boundApplicationActions";
 import { boundWorkflowRequestStart } from "../actions/WorkflowActions/boundWorkflowActions";
 import {
   actionWorkflowRequestEnd,
@@ -182,7 +185,9 @@ export const CreateApplicationDSEpic = ( action$: Observable<any> ) => {
 
             const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
 
-            if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
+            if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST
+                || error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST_CAN_BE_RESET) {
+              boundSetApplicationErrorCode(error.errorCode, error.errorMetadata || undefined);
               routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
             } else {
               setEpicApiCallErrorMessage(errorMessage);
@@ -294,7 +299,9 @@ export const CreateApplicationAndSkipScheduleDSEpic = (action$: Observable<any>)
 
           const errorMessage = CreateApplicationErrorMessage[error.errorCode] || CreateApplicationErrorMessage["DEFAULT"];
 
-          if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST) {
+          if (error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST
+              || error.errorCode === CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST_CAN_BE_RESET) {
+            boundSetApplicationErrorCode(error.errorCode, error.errorMetadata || undefined);
             routeToAppPageWithPath(PAGE_ROUTES.ALREADY_APPLIED);
           } else {
             setEpicApiCallErrorMessage(errorMessage);

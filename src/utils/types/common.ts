@@ -653,6 +653,12 @@ export interface Application {
   hideRehireQuestions?: HIDE_REHIRE_QUESTION_VALUE;
 }
 
+export interface ErrorMetadata {
+  applicationId?: string;
+  candidateId?: string;
+  scheduleId?: string;
+}
+
 export interface JobScheduleSelected {
   jobId: string;
   scheduleId: string;

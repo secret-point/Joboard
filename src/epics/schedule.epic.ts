@@ -2,6 +2,7 @@ import { ofType } from "redux-observable";
 import { from, Observable, of } from "rxjs";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import {
+  actionGetOldScheduleDetailSuccess,
   actionGetScheduleDetailFailed,
   actionGetScheduleDetailSuccess,
   actionGetScheduleListByJobIdFailed,
@@ -82,7 +83,9 @@ export const GetScheduleDetailEpic = (action$: Observable<any>) => {
             if (action.onSuccess) {
               action.onSuccess();
             }
-
+            if (action.payload.isOldSchedule) {
+              return actionGetOldScheduleDetailSuccess(data);
+            }
             return actionGetScheduleDetailSuccess(data);
           }),
           catchError((error: ApiError) => {

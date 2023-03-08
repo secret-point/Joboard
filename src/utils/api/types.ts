@@ -13,13 +13,22 @@ import {
   WITHDRAW_APPLICATION_ERROR_CODE,
   UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE,
 } from "../enums/common";
-import { Application, Candidate, Job, NHETimeSlot, PossibleNhePreferenceConfig, Schedule } from "../types/common";
+import {
+  Application,
+  Candidate,
+  ErrorMetadata,
+  Job,
+  NHETimeSlot,
+  PossibleNhePreferenceConfig,
+  Schedule
+} from "../types/common";
 import { CandidateShiftPreferences } from "../../@types/shift-preferences";
 
 export interface CreateApplicationResponse {
   data: Application;
   error: string;
   errorCode: CREATE_APPLICATION_ERROR_CODE;
+  errorMetadata: ErrorMetadata;
 }
 
 export interface GetAssessmentElegibilityResponse {
@@ -60,7 +69,7 @@ export interface UpdateWorkflowNameResponse {
 export interface ProxyApiError {
   errorCode: string;
   errorMessage?: string;
-  
+  errorMetadata?: ErrorMetadata;
 }
 export interface ApiError extends ProxyApiError, AxiosError {}
 
