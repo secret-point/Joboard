@@ -17,7 +17,8 @@ import {
   INFO_CARD_STEP_STATUS,
   JOB_REFERRAL_VALUE,
   SELF_IDENTIFICATION_STEPS,
-  WITHDRAW_REASON_CASE
+  WITHDRAW_REASON_CASE,
+  WORKFLOW_ERROR_CODE
 } from "../../../src/utils/enums/common";
 import {
   NHE_TIMESLOT,
@@ -53,6 +54,7 @@ import {
   getNonFcraSignatureErrorMessages,
   getPageName,
   getQueryFromSearchAndHash,
+  getRehireNotEligibleStatusAdobePageName,
   GetSelfIdentificationConfigStep,
   getSupportedCitiesFromScheduleList,
   getUKNHEAppointmentTimeMap,
@@ -1750,4 +1752,12 @@ test("isJobReferralValid", () => {
   expect(isJobReferralValid(null as unknown as JobReferral )).toBeTruthy();
   expect(isJobReferralValid({ hasReferral: false, referralInfo: undefined })).toBeTruthy();
   expect(isJobReferralValid({ hasReferral: JOB_REFERRAL_VALUE.NO, referralInfo: undefined })).toBeTruthy();
+});
+
+test("getRehireNotEligibleStatusAdobePageName", () => {
+  expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE);
+  expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE_365_DAYS)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE_365_DAYS);
+  expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.ACTIVE)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE_ACTIVE);
+  expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.SEASONAL_ONLY)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE_SEASONAL_ONLY);
+  expect(getRehireNotEligibleStatusAdobePageName("Invalid" as WORKFLOW_ERROR_CODE)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE);
 });

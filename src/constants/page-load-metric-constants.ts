@@ -1,4 +1,4 @@
-import { EVENT, PAGE_TYPE, PAGE_NAME, METRIC_NAME } from "./adobe-analytics";
+import { EVENT, METRIC_NAME, PAGE_NAME, PAGE_TYPE } from "./adobe-analytics";
 
 const candidatePayloadDefault = {
   key: "candidate",
@@ -1140,6 +1140,44 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       candidatePayloadDefault,
     ]
   },
+  [METRIC_NAME.REHIRE_NOT_ELIGIBLE_365_DAYS]: {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["rehire-not-eligible-365-days"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
+  [METRIC_NAME.REHIRE_NOT_ELIGIBLE_ACTIVE]: {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["rehire-not-eligible-active"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationIneligibleDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
   [METRIC_NAME.CAN_NOT_OFFER_JOB]: {
     eventPayload: {
       event: EVENT.PAGE_LOAD,
@@ -1880,6 +1918,25 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       event: EVENT.PAGE_LOAD,
       page: {
         name: PAGE_NAME["no-nhe-appointments"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
+  },
+  [METRIC_NAME.ALREADY_APPLIED]: {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["already-applied"],
         type: PAGE_TYPE.APPLICATION
       }
     },

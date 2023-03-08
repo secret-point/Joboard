@@ -82,6 +82,7 @@ import {
   SELF_IDENTIFICATION_STEPS,
   UPDATE_APPLICATION_API_TYPE,
   WITHDRAW_REASON_CASE,
+  WORKFLOW_ERROR_CODE,
   WORKFLOW_STEP_NAME
 } from "./enums/common";
 import { translate, translate as t } from "./translator";
@@ -2161,6 +2162,22 @@ export const initiateScheduleDetailOnPageLoad = (application: Application, targe
     };
 
     routeToAppPageWithPath(targetPage, [customParams]);
+  }
+};
+
+export const getRehireNotEligibleStatusAdobePageName = (workflowErrorCode: WORKFLOW_ERROR_CODE) => {
+  switch (workflowErrorCode) {
+    case WORKFLOW_ERROR_CODE.ACTIVE:
+      return METRIC_NAME.REHIRE_NOT_ELIGIBLE_ACTIVE;
+    case WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE:
+      return METRIC_NAME.REHIRE_NOT_ELIGIBLE;
+    case WORKFLOW_ERROR_CODE.NOT_REHIRE_ELIGIBLE_365_DAYS:
+      return METRIC_NAME.REHIRE_NOT_ELIGIBLE_365_DAYS;
+    case WORKFLOW_ERROR_CODE.SEASONAL_ONLY:
+      return METRIC_NAME.REHIRE_NOT_ELIGIBLE_SEASONAL_ONLY;
+
+    default:
+      return METRIC_NAME.REHIRE_NOT_ELIGIBLE;
   }
 };
 

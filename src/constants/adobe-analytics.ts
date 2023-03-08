@@ -64,7 +64,8 @@ export const PAGE_NAME: any = {
   "candidate-withdraws": "candidate-withdraws",
   "rehire-not-eligible-seasonal-only": "rehire-not-eligible-seasonal-only",
   "rehire-not-eligible": "rehire-not-eligible",
-
+  "rehire-not-eligible-365-days": "rehire-not-eligible-365-days",
+  "rehire-not-eligible-active": "rehire-not-eligible-active",
   "no-available-shift": "no-shifts-available",
   "session-timeout": "session-timeout",
 
@@ -85,7 +86,7 @@ export const PAGE_NAME: any = {
   "cancel-shift-confirmation": "cancel-shift-confirmation",
   "update-shift": "update-shift",
   "view-shift": "view-shift",
-
+  "already-applied": "already-applied",
   "no-nhe-appointments": "NHE Unavailable"
 };
 
@@ -164,6 +165,8 @@ export enum METRIC_NAME {
   CANDIDATE_WITHDRAWS = "candidate-withdraws",
   REHIRE_NOT_ELIGIBLE_SEASONAL_ONLY = "rehire-not-eligible-seasonal-only",
   REHIRE_NOT_ELIGIBLE = "rehire-not-eligible",
+  REHIRE_NOT_ELIGIBLE_ACTIVE = "rehire-not-eligible-active",
+  REHIRE_NOT_ELIGIBLE_365_DAYS = "rehire-not-eligible-365-days",
   CAN_NOT_OFFER_JOB = "can-not-offer-job",
   NO_AVAILABLE_SHIFT = "no-available-shift",
   NO_AVAILABLE_SHIFT_SELF_SERVICE = "no-available-shift-self-service",
@@ -208,4 +211,5 @@ export enum METRIC_NAME {
   SKIP_SCHEDULE = "skip-schedule",
   THANK_YOU_SUBMIT = "thank-you-submit",
   NO_AVAILABLE_TIME_SLOTS = "no-available-time-slots",
+  ALREADY_APPLIED = "already-applied"
 }
