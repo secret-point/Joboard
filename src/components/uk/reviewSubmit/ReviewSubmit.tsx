@@ -158,40 +158,42 @@ export const ReviewSubmit = (props: MapStateToProps) => {
           return application.applicationId !== applicationData?.applicationId && application.submitted && application.active;
         }) : [];
 
-      log(`[review-submit][Submit-application]  starting submit application of id: ${applicationData.applicationId} - active application"`, activeApplicationsToWithdraw);
-
-      setActiveApplicationToBeWithdrawn(activeApplicationsToWithdraw);
+      log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - starting submit application, active application"`, activeApplicationsToWithdraw);
 
       if (activeApplicationsToWithdraw.length=== 0) {
-        log("[review-submit][Submit-application] no withdraw reasons", activeApplicationsToWithdraw);
+        log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - no withdraw reasons, no withdraw modal`, activeApplicationsToWithdraw);
         submitApplication(applicationData);
       } else {
         const applicationWithWithdrawReason: Application[] = [];
         const withdrawReasons = activeApplicationsToWithdraw.map(app => {
           const withdrawReason = getApplicationWithdrawalReason(applicationData, app);
-          // only widthdraw application with withdraw reason
+          // set the list to make sure we withdraw application with withdraw reasons only
           if (!!withdrawReason) {
             applicationWithWithdrawReason.push(app);
           }
           return withdrawReason;
         });
+
+        setActiveApplicationToBeWithdrawn(applicationWithWithdrawReason);
+
         const shouldWarningShowModal = withdrawReasons.some(reason => Boolean(reason));
         const shouldWidthdrawWithoutWarning = withdrawReasons.some(reason => {
           return reason === WITHDRAW_REASON_CASE.CASE_2;
         });
 
         if (!shouldWarningShowModal) {
-          log("[review-submit][Submit-application] not showing withdraw warning modal -- no withdraw at all -- withdraw reasons", withdrawReasons);
+          log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - not showing withdraw warning modal -- no withdraw at all -- withdraw reasons`, withdrawReasons);
           submitApplication(applicationData);
         } else if (shouldWidthdrawWithoutWarning) {
-          log("[review-submit][Submit-application]  not showing withdraw warning modal -- withdraw without warning -- withdraw reasons", withdrawReasons);
-          log("[review-submit][Submit-application]  not showing withdraw warning modal -- withdraw without warning -- application to withdraw reasons", applicationWithWithdrawReason);
+          log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - not showing withdraw warning modal -- withdraw without warning -- withdraw reasons`, withdrawReasons);
+          log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - not showing withdraw warning modal -- withdraw without warning -- application to withdraw reasons`, applicationWithWithdrawReason);
 
           bulkWithdrawAndSubmitApplication(applicationWithWithdrawReason, () => {
             submitApplication(applicationData);
           });
         } else {
-          log("[review-submit][Submit-application]  showing withdraw warning modal -- withdraw reasons", withdrawReasons);
+          log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - showing withdraw warning modal -- withdraw reasons`, withdrawReasons);
+          log(`[review-submit][Submit-application] Id: ${applicationData.applicationId} - showing withdraw warning modal -- application to be withdrawn`, applicationWithWithdrawReason);
           setShowWithdrawModal(true);
         }
       }
@@ -483,6 +485,8 @@ export const ReviewSubmit = (props: MapStateToProps) => {
               <Button
                 variant={ButtonVariant.Primary}
                 onClick={() => {
+                  log(`[review-submit][Submit-application] Id: ${applicationData?.applicationId} - bulk withdrawing active application in the withdraw warning modal`, activeApplicationsTobeWithdrawn);
+
                   bulkWithdrawAndSubmitApplication(activeApplicationsTobeWithdrawn, () => {
                     applicationData && submitApplication(applicationData);
                   });
