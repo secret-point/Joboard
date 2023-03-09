@@ -43,11 +43,7 @@ interface MapStateToProps {
   nhe: NheState;
 }
 
-interface JobOpportunityProps {
-
-}
-
-type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
+type JobOpportunityMergedProps = MapStateToProps;
 
 export const Nhe = ( props: JobOpportunityMergedProps ) => {
   const { job, application, schedule, candidate, nhe } = props;

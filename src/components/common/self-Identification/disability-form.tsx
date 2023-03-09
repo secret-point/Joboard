@@ -29,11 +29,7 @@ interface MapStateToProps {
   selfIdentification: SelfIdentificationState;
 }
 
-interface DisabilityFormProps {
-
-}
-
-type DisabilityFormMergedProps = MapStateToProps & DisabilityFormProps;
+type DisabilityFormMergedProps = MapStateToProps;
 
 const DisabilityForm = (props: DisabilityFormMergedProps) => {
 

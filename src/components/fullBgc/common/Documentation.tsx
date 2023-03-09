@@ -17,10 +17,7 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-interface DocumentationProps {
-}
-
-type DocumentationMergedProps = MapStateToProps & DocumentationProps;
+type DocumentationMergedProps = MapStateToProps;
 
 export const Documentation = ( props: DocumentationMergedProps ) => {
   const { fullBgc } = props;

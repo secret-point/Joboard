@@ -27,11 +27,7 @@ interface MapStateToProps {
   schedule: ScheduleState;
 }
 
-interface AssessmentNotEligibleProps {
-
-}
-
-type AssessmentNotEligibleMergedProps = MapStateToProps & AssessmentNotEligibleProps;
+type AssessmentNotEligibleMergedProps = MapStateToProps;
 
 export const AssessmentNotEligible = (props: AssessmentNotEligibleMergedProps) => {
 

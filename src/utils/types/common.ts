@@ -66,8 +66,8 @@ export interface AvailableFilter {
 export interface Filter {
   range: Range;
   schedulePreferences: SchedulePreference;
-  in: In;
-  eq: Eq;
+  in: any;
+  eq: any;
   startDateBegin?: string;
   startDateEnd?: string;
   city?: string[];
@@ -96,10 +96,6 @@ export interface HOURS_PER_WEEK {
   maximumValue: number;
   minimumValue: number;
 }
-
-export interface In {}
-
-export interface Eq {}
 
 export type CountryStateConfig = State[]
 

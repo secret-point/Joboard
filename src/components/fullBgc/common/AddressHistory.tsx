@@ -19,10 +19,7 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-interface AddressHistoryProps {
-}
-
-type AddressHistoryMergedProps = MapStateToProps & AddressHistoryProps;
+type AddressHistoryMergedProps = MapStateToProps;
 
 export const AddressHistory = ( props: AddressHistoryMergedProps ) => {
   const { fullBgc } = props;

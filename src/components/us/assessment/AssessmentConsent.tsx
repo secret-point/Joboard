@@ -26,11 +26,7 @@ interface MapStateToProps {
   job: JobState;
 }
 
-interface AssessmentConsentProps {
-
-}
-
-type AssessmentConsentMergedProps = MapStateToProps & AssessmentConsentProps;
+type AssessmentConsentMergedProps = MapStateToProps;
 
 export const AssessmentConsent = (props: AssessmentConsentMergedProps) => {
 

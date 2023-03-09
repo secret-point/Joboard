@@ -36,11 +36,7 @@ interface MapStateToProps {
   bgc: BGCState;
 }
 
-interface FcraDisclosureProps {
-
-}
-
-type FcraDisclosureMergedProps = MapStateToProps & FcraDisclosureProps;
+type FcraDisclosureMergedProps = MapStateToProps;
 
 export const FcraDisclosure = ( props: FcraDisclosureMergedProps ) => {
   const { job, application, schedule, bgc } = props;

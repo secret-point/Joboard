@@ -5,7 +5,6 @@ import {
   GET_APPLICATION_ERROR_CODE,
   GET_JOB_INFO_ERROR_CODE,
   GET_NHE_TIME_SLOT_LIST_ERROR_CODE,
-  GET_POSSIBLE_NHE_PREFERENCES,
   GET_SCHEDULE_DETAIL_ERROR_CODE,
   GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE,
   UPDATE_APPLICATION_ERROR_CODE,
@@ -117,5 +116,5 @@ export interface ValidateamazonLoginIDResponse {
 export interface GetPossibleNhePreferenceResponse {
   data: PossibleNhePreferenceConfig;
   error: string;
-  errorCode: GET_POSSIBLE_NHE_PREFERENCES;
+  errorCode: any;
 }

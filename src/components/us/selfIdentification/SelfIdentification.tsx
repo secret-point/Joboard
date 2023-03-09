@@ -56,11 +56,7 @@ interface MapStateToProps {
   job: JobState;
 }
 
-interface SelfIdentificationProps {
-
-}
-
-type SelfIdentificationMergeProps = MapStateToProps & SelfIdentificationProps;
+type SelfIdentificationMergeProps = MapStateToProps;
 
 export const SelfIdentification = (props: SelfIdentificationMergeProps) => {
   const { selfIdentification, application, candidate, schedule, job } = props;

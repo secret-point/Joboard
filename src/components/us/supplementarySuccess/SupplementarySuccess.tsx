@@ -7,9 +7,6 @@ import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem } from "../../../helpers/utils";
 import { redirectToASHChecklist } from "../../../utils/helper";
 
-interface MapStateToProps {
-}
-
 export const SupplementarySuccess = () => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
@@ -31,7 +28,7 @@ export const SupplementarySuccess = () => {
   );
 };
 
-const mapStateToProps = (state: MapStateToProps) => {
+const mapStateToProps = (state: any) => {
   return state;
 };
 

@@ -19,10 +19,7 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-interface BackgroundInformationProps {
-}
-
-type BackgroundInformationMergedProps = MapStateToProps & BackgroundInformationProps;
+type BackgroundInformationMergedProps = MapStateToProps;
 
 export const BackgroundInformation = ( props: BackgroundInformationMergedProps ) => {
   const { fullBgc } = props;

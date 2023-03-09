@@ -310,7 +310,10 @@ export const injectCsNavAndFooter = (CSDomain: string) => {
   fetch(footerUrl)
     .then((res) => res.json())
     .then((body) => {
-      document.getElementById("hvh-bb-footer")!.innerHTML = body.contentMap.footer.bodyContent;
+      const footerElement = document.getElementById("hvh-bb-footer");
+      if (footerElement) {
+        footerElement.innerHTML = body.contentMap.footer.bodyContent;
+      }
     });
 };
 

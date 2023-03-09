@@ -1244,11 +1244,11 @@ export const handleMXUpdateAdditionalBGCStep = (stepConfig: BgcMXStepConfig) => 
 export const loadingStatusHelper = () => {
   const states = store.getState();
   const loadingStates = states ? [states.candidate, states.job, states.appConfig, states.application, states.schedule, states.workflow, states.nhe] : [];
-  let loadingCount = 0;
+  const loadingCount = 0;
 
   loadingStates.forEach(loading => {
     if (loading.loading === true) {
-      loadingCount++;
+      loadingCount + 1;
     }
   });
   return loadingCount > 1;

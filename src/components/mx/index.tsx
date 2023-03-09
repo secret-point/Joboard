@@ -119,16 +119,16 @@ getInitialData()
     };
     /** ***************************************************************/
 
-    const requisitionId = queryParams["requisitionId"];
+    const { requisitionId } = queryParams;
     // TODO know how to deal with requisitionId without JOB as prefix ( Legacy system )
     if (requisitionId?.indexOf("JOB") === 0) {
       /* jobId passed as requisitionId; forward */
       delete queryParams["requisitionId"];
       queryParams["jobId"] = requisitionId;
     }
-    const agency: any = queryParams["agency"];
-    const page = queryParams["page"];
-    const applicationId = queryParams["applicationId"];
+    const { agency } = queryParams;
+    const { page } = queryParams;
+    const { applicationId } = queryParams;
     const token = queryParams["token"] as any;
     const newUrlParams = { ...queryParams };
 

@@ -23,11 +23,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-interface PreviousLegalNameFormProps {
-
-}
-
-type PreviousLegalNameFormMergedProps = MapStateToProps & PreviousLegalNameFormProps;
+type PreviousLegalNameFormMergedProps = MapStateToProps;
 
 export const PreviousLegalNameForm = (props: PreviousLegalNameFormMergedProps) => {
 

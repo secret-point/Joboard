@@ -50,11 +50,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-interface AdditionalBGCInfoProps {
-
-}
-
-type AdditionalBGCInfoMergedProps = MapStateToProps & AdditionalBGCInfoProps;
+type AdditionalBGCInfoMergedProps = MapStateToProps;
 
 export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
   const { candidate, application, bgc, schedule } = props;

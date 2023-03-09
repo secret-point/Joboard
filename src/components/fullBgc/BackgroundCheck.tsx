@@ -42,10 +42,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-interface BackgroundCheckProps {
-}
-
-type BackgroundCheckMergedProps = MapStateToProps & BackgroundCheckProps;
+type BackgroundCheckMergedProps = MapStateToProps;
 
 export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const { job, application, schedule, fullBgc, candidate } = props;

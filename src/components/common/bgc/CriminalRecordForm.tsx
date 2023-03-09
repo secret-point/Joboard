@@ -32,11 +32,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-interface CriminalRecordFormProps {
-
-}
-
-type CriminalRecordFormMergedProps = MapStateToProps & CriminalRecordFormProps;
+type CriminalRecordFormMergedProps = MapStateToProps;
 
 export const CriminalRecordForm = ( props: CriminalRecordFormMergedProps ) => {
 

@@ -49,11 +49,7 @@ interface MapStateToProps {
   candidate: CandidateState;
 }
 
-interface JobOpportunityProps {
-
-}
-
-type JobOpportunityMergedProps = MapStateToProps & JobOpportunityProps;
+type JobOpportunityMergedProps = MapStateToProps;
 
 export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const { job, application, schedule, candidate } = props;

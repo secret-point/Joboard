@@ -50,10 +50,7 @@ interface MapStateToProps {
   assessment: AssessmentState;
 }
 
-interface ContingentOfferProps {
-}
-
-type ContingentOfferMergedProps = MapStateToProps & ContingentOfferProps;
+type ContingentOfferMergedProps = MapStateToProps;
 
 export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
   const { job, application, schedule, ui, candidate, assessment } = props;

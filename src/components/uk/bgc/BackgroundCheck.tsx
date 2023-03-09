@@ -37,10 +37,7 @@ interface MapStateToProps {
   assessment: AssessmentState;
 }
 
-interface BackgroundCheckProps {
-}
-
-type BackgroundCheckMergedProps = MapStateToProps & BackgroundCheckProps;
+type BackgroundCheckMergedProps = MapStateToProps;
 
 export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 

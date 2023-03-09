@@ -31,11 +31,7 @@ interface MapStateToProps {
   selfIdentification: SelfIdentificationState;
 }
 
-interface VeteranStatusFormProps {
-
-}
-
-type VeteranStatusFormMergedProps = MapStateToProps & VeteranStatusFormProps;
+type VeteranStatusFormMergedProps = MapStateToProps;
 
 const VeteranStatusForm = (props: VeteranStatusFormMergedProps) => {
 

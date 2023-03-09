@@ -19,10 +19,7 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-interface BirthHistoryProps {
-}
-
-type BirthHistoryMergedProps = MapStateToProps & BirthHistoryProps;
+type BirthHistoryMergedProps = MapStateToProps;
 
 export const BirthHistory = ( props: BirthHistoryMergedProps ) => {
   const { fullBgc } = props;

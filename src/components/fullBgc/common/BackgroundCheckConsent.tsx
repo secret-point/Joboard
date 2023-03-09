@@ -19,10 +19,7 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-interface BackgroundCheckConsentProps {
-}
-
-type BackgroundCheckConsentMergedProps = MapStateToProps & BackgroundCheckConsentProps;
+type BackgroundCheckConsentMergedProps = MapStateToProps;
 
 export const BackgroundCheckConsent = ( props: BackgroundCheckConsentMergedProps ) => {
   const { fullBgc } = props;

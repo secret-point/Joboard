@@ -31,11 +31,7 @@ interface MapStateToProps {
   selfIdentification: SelfIdentificationState;
 }
 
-interface EqualOpportunityFormProps {
-
-}
-
-type EqualOpportunityFormMergedProps = MapStateToProps & EqualOpportunityFormProps;
+type EqualOpportunityFormMergedProps = MapStateToProps;
 
 export const EqualOpportunityForm = (props: EqualOpportunityFormMergedProps) => {
 

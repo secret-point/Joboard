@@ -33,11 +33,7 @@ interface MapStateToProps {
   bgc: BGCState;
 }
 
-interface NonFcraDisclosureProps {
-
-}
-
-type NonFcraDisclosureMergedProps = MapStateToProps & NonFcraDisclosureProps;
+type NonFcraDisclosureMergedProps = MapStateToProps;
 
 export const NonFcraDisclosure = ( props: NonFcraDisclosureMergedProps ) => {
   const { application, schedule, bgc } = props;
