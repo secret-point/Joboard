@@ -23,7 +23,7 @@ import {
   FULL_BGC_STEPS
 } from "../../utils/enums/common";
 import {
-  ashBgcShouldDisplayContinue, checkAndBoundGetApplication, getLocale
+  fullBgcShouldDisplayContinue, getLocale
 } from "../../utils/helper";
 import { translate as t } from "../../utils/translator";
 import { FullBgcStepConfig } from "../../utils/types/common";
@@ -49,7 +49,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { applicationId, jobId, scheduleId } = queryParams;
+  const { jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
   const stepConfig = fullBgc.stepConfig as FullBgcStepConfig;
@@ -71,10 +71,6 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
   useEffect(() => {
     jobId && jobId !== jobDetail?.jobId && boundGetJobDetail({ jobId: jobId, locale: getLocale() });
   }, [jobDetail, jobId]);
-
-  useEffect(() => {
-    checkAndBoundGetApplication(applicationId);
-  }, [applicationId]);
 
   useEffect(() => {
     // Page will emit page load event once both pros are available but
@@ -151,7 +147,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
 
       <Col padding={{ top: "S300" }}>
         {
-          ashBgcShouldDisplayContinue(stepConfig) && (
+          fullBgcShouldDisplayContinue(stepConfig) && (
             <Button
               variant={ButtonVariant.Primary}
               onClick={handleContinue}

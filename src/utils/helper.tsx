@@ -1038,7 +1038,7 @@ export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => 
         addBgcStatus.status === COMPLETED && !addBgcStatus.editMode;
 };
 
-export const ashBgcShouldDisplayContinue = (stepConfig: FullBgcStepConfig): boolean => {
+export const fullBgcShouldDisplayContinue = (stepConfig: FullBgcStepConfig): boolean => {
   const { CONSENT, BACKGROUND_INFO, ADDRESS_HISTORY, BIRTH_HISTORY, DOCUMENTATION } = FULL_BGC_STEPS;
   const { COMPLETED } = INFO_CARD_STEP_STATUS;
   const consentStatus = stepConfig[CONSENT];
