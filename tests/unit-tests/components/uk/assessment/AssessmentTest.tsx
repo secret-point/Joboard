@@ -4,6 +4,7 @@ import { Assessment } from "../../../../../src/components/uk/assessment/Assessme
 import {
   TEST_APPLICATION_ID,
   TEST_APPLICATION_STATE,
+  TEST_ASSESSMENT_STATE,
   TEST_CANDIDATE_STATE,
   TEST_JOB_ID,
   TEST_JOB_STATE,
@@ -30,6 +31,7 @@ describe("Assessment", () => {
         application={TEST_APPLICATION_STATE}
         schedule={TEST_SCHEDULE_STATE}
         candidate={TEST_CANDIDATE_STATE}
+        assessment={TEST_ASSESSMENT_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

@@ -28,11 +28,16 @@ import { onCompleteTaskHelper } from "../../../actions/WorkflowActions/workflowA
 import { ApplicationState } from "../../../reducers/application.reducer";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { boundGetAssessmentElegibilitySuccess } from "../../../actions/AssessmentActions/boundAssessmentActions";
+import { CandidateState } from "../../../reducers/candidate.reducer";
 
 interface MapStateToProps {
   job: JobState;
   schedule: ScheduleState;
   application: ApplicationState;
+  assessment: AssessmentState;
+  candidate: CandidateState;
 }
 
 interface RenderFlyoutFunctionParams {
@@ -40,16 +45,16 @@ interface RenderFlyoutFunctionParams {
 }
 
 export const AssessmentConsent = (props: MapStateToProps) => {
-  const { job, schedule, application } = props;
+  const { job, schedule, application, assessment } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
-  const { jobId } = queryParams;
+  const { jobId, scheduleId } = queryParams;
   const jobDetail = job.results;
-  const { scheduleId } = queryParams;
   const { scheduleDetail } = schedule.results;
   const pageName = getPageNameFromPath(pathname);
   const applicationData = application.results;
   const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0]; 
+  const { assessmentElegibility } = assessment.results;
 
   // Don't refetch data if id is not changing
   useEffect(() => {
@@ -69,6 +74,12 @@ export const AssessmentConsent = (props: MapStateToProps) => {
     }
 
   }, [jobDetail, scheduleDetail]);
+
+  useEffect(() => {
+    // Setting the assessmentElegibility to true to prevent subsequent request during this session
+    assessmentElegibility === null && boundGetAssessmentElegibilitySuccess({
+      assessmentElegibility: true });
+  }, []);
 
   useEffect(() => {
     return () => {

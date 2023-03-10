@@ -22,16 +22,19 @@ import { getStepsByTitle } from "../../../helpers/steps-helper";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { boundGetCandidateInfo } from "../../../actions/CandidateActions/boundCandidateActions";
 import { CandidateState } from "../../../reducers/candidate.reducer";
+import { AssessmentState } from "../../../reducers/assessment.reducer";
+import { boundGetAssessmentElegibilitySuccess } from "../../../actions/AssessmentActions/boundAssessmentActions";
 
 interface MapStateToProps {
   job: JobState;
   schedule: ScheduleState;
   application: ApplicationState;
   candidate: CandidateState;
+  assessment: AssessmentState;
 }
 
 export const Assessment = (props: MapStateToProps) => {
-  const { job, schedule, application, candidate } = props;
+  const { job, schedule, application, candidate, assessment } = props;
   const { search, pathname } = useLocation();
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
   const { jobId, applicationId } = queryParams;
@@ -43,6 +46,7 @@ export const Assessment = (props: MapStateToProps) => {
   const pageName = getPageNameFromPath(pathname);
   const headerStep = getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT)[0];
   const [assessmentUrl, setAssessmentUrl] = useState<string>("");
+  const { assessmentElegibility } = assessment.results;
 
   // Load candidate so that we can log candidateId if application already exists error happens
   useEffect(() => {
@@ -85,6 +89,12 @@ export const Assessment = (props: MapStateToProps) => {
       // reset this so as it can emit new pageload event after being unmounted.
       resetIsPageMetricsUpdated(pageName);
     };
+  }, []);
+
+  useEffect(() => {
+    // Setting the assessmentElegibility to true to prevent subsequent request during this session
+    assessmentElegibility === null && boundGetAssessmentElegibilitySuccess({
+      assessmentElegibility: true });
   }, []);
 
   return (
