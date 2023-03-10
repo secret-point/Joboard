@@ -1,17 +1,26 @@
+import { SCHEDULE_DURATION_STRINGS } from "../utils/constants/common";
+import { translate as t } from "../../src/utils/translator";
 import { Schedule } from "../utils/types/common";
 import { getLocalizedDate, get12hrTimeStringLocalized } from "./localization-helpers";
 import { log } from "./log-helper";
-import { translate as t } from "../utils/translator";
 
-export const PERMANENT_CONTRACT_STRING = t(
-  "BB-schedule-card-duration-permanent", "Permanent"
-);
-export const FIXED_TERM_CONTRACT_STRING = t(
-  "BB-schedule-card-duration-fixed-term-contract", "Fixed term contract"
-);
-export const FIXED_TERM_CONTRACT_WITH_END_DATE_STRING = t(
-  "BB-schedule-card-duration-fixed-term-contract-with-end-date", "Fixed term contract until"
-);
+const {
+  PERMANENT_CONTRACT,
+  FIXED_TERM_CONTRACT,
+  FIXED_TERM_CONTRACT_WITH_END_DATE
+} = SCHEDULE_DURATION_STRINGS;
+
+const STRINGS = {
+  permanentContract: t(
+    PERMANENT_CONTRACT.translationKey, PERMANENT_CONTRACT.defaultString
+  ),
+  fixedTermContract: t(
+    FIXED_TERM_CONTRACT.translationKey, FIXED_TERM_CONTRACT.defaultString
+  ),
+  fixedTermContractWithEndDateString: t(
+    FIXED_TERM_CONTRACT_WITH_END_DATE.translationKey, FIXED_TERM_CONTRACT_WITH_END_DATE.defaultString
+  )
+};
 
 interface iScheduleDurationFn {
   employmentType: string;
@@ -30,10 +39,10 @@ export const getScheduleDuration = ({
 
   if (employmentType === "Regular") {
     duration = !hireEndDate
-      ? PERMANENT_CONTRACT_STRING
-      : `${FIXED_TERM_CONTRACT_WITH_END_DATE_STRING} ${hireEndDate}`;
+      ? STRINGS.permanentContract
+      : `${STRINGS.fixedTermContractWithEndDateString} ${hireEndDate}`;
   } else if (employmentType === "Seasonal") {
-    duration = hireEndDate ? null : FIXED_TERM_CONTRACT_STRING;
+    duration = hireEndDate ? null : STRINGS.fixedTermContract;
   }
   log(
     `The duration for schedule ${scheduleId}  ${
@@ -47,8 +56,8 @@ export const getScheduleDuration = ({
 export const getScheduleInUKFormat = (schedule: Schedule) => {
 
   const duration = getScheduleDuration(schedule);
-  const hireEndDate= schedule?.hireEndDate && getLocalizedDate(schedule.hireEndDate);
-  const scheduleText= schedule?.scheduleText && get12hrTimeStringLocalized(schedule.scheduleText);
+  const hireEndDate = schedule?.hireEndDate && getLocalizedDate(schedule.hireEndDate);
+  const scheduleText = schedule?.scheduleText && get12hrTimeStringLocalized(schedule.scheduleText);
 
   return { ...schedule,
     // if hireStartDate is present this is considered the firstDayOnSite in the UK
@@ -59,7 +68,8 @@ export const getScheduleInUKFormat = (schedule: Schedule) => {
     // The hire end date shoud be displayed only if duration is falsy
     displayHireEndDate: !duration,
     // The employment type is included in the duration for the UK 
-    displayEmploymentType: false
+    displayEmploymentType: false,
+    displayHoursPerWeekDecimal: true
   };
 };
   
