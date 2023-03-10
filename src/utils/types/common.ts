@@ -1216,3 +1216,10 @@ export interface GetAssessmentElegibilityRequest {
 export interface GetAssessmentElegibilitySucccessResponse {
   assessmentElegibility: boolean;
 }
+
+export interface iScheduleDurationFn {
+  employmentType: string;
+  hireEndDate: string | null;
+  scheduleId: string;
+  applicationId?: string;
+}

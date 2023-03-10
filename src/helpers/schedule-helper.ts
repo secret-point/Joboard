@@ -1,6 +1,6 @@
-import { SCHEDULE_DURATION_STRINGS } from "../utils/constants/common";
+import { SCHEDULE_DURATION_TRANSLATION_STRINGS } from "../utils/constants/common";
 import { translate as t } from "../../src/utils/translator";
-import { Schedule } from "../utils/types/common";
+import { iScheduleDurationFn, Schedule } from "../utils/types/common";
 import { getLocalizedDate, get12hrTimeStringLocalized } from "./localization-helpers";
 import { log } from "./log-helper";
 
@@ -8,9 +8,9 @@ const {
   PERMANENT_CONTRACT,
   FIXED_TERM_CONTRACT,
   FIXED_TERM_CONTRACT_WITH_END_DATE
-} = SCHEDULE_DURATION_STRINGS;
+} = SCHEDULE_DURATION_TRANSLATION_STRINGS;
 
-const STRINGS = {
+const SCHEDULE_DURATION_STRINGS = {
   permanentContract: t(
     PERMANENT_CONTRACT.translationKey, PERMANENT_CONTRACT.defaultString
   ),
@@ -22,13 +22,6 @@ const STRINGS = {
   )
 };
 
-interface iScheduleDurationFn {
-  employmentType: string;
-  hireEndDate: string | null;
-  scheduleId: string;
-  applicationId?: string;
-}
-
 export const getScheduleDuration = ({
   employmentType,
   hireEndDate,
@@ -39,10 +32,10 @@ export const getScheduleDuration = ({
 
   if (employmentType === "Regular") {
     duration = !hireEndDate
-      ? STRINGS.permanentContract
-      : `${STRINGS.fixedTermContractWithEndDateString} ${hireEndDate}`;
+      ? SCHEDULE_DURATION_STRINGS.permanentContract
+      : `${SCHEDULE_DURATION_STRINGS.fixedTermContractWithEndDateString} ${hireEndDate}`;
   } else if (employmentType === "Seasonal") {
-    duration = hireEndDate ? null : STRINGS.fixedTermContract;
+    duration = hireEndDate ? null : SCHEDULE_DURATION_STRINGS.fixedTermContract;
   }
   log(
     `The duration for schedule ${scheduleId}  ${

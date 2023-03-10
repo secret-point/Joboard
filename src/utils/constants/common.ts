@@ -1235,7 +1235,7 @@ export const LOCALE_CONFIG = {
   }
 };
 
-export const SCHEDULE_DURATION_STRINGS = {
+export const SCHEDULE_DURATION_TRANSLATION_STRINGS = {
   PERMANENT_CONTRACT: {
     translationKey: "BB-schedule-card-duration-permanent",
     defaultString: "Permanent",
@@ -1251,7 +1251,7 @@ export const SCHEDULE_DURATION_STRINGS = {
   },
 };
 
-export const TIME_UNITS = {
+export const TIME_UNITS_TRANSLATION_STRINGS = {
   HOURS: {
     ABBREVIATION: {
       SINGULAR: {

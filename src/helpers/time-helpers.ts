@@ -1,23 +1,23 @@
 // import { TIME_UNITS } from "../utils/constants/common";
 import { translate as t } from "../../src/utils/translator"; 
-import { CONNECTIVE_TEXT, TIME_UNITS } from "../utils/constants/common";
+import { CONNECTIVE_TEXT, TIME_UNITS_TRANSLATION_STRINGS } from "../utils/constants/common";
 
-const STRINGS = {
+const TIME_UNITS_STRINGS = {
   min: t(
-    TIME_UNITS.MINUTES.ABBREVIATION.SINGULAR.translationKey,
-    TIME_UNITS.MINUTES.ABBREVIATION.SINGULAR.defaultString
+    TIME_UNITS_TRANSLATION_STRINGS.MINUTES.ABBREVIATION.SINGULAR.translationKey,
+    TIME_UNITS_TRANSLATION_STRINGS.MINUTES.ABBREVIATION.SINGULAR.defaultString
   ),
   mins: t(
-    TIME_UNITS.MINUTES.ABBREVIATION.PLURAL.translationKey,
-    TIME_UNITS.MINUTES.ABBREVIATION.PLURAL.defaultString
+    TIME_UNITS_TRANSLATION_STRINGS.MINUTES.ABBREVIATION.PLURAL.translationKey,
+    TIME_UNITS_TRANSLATION_STRINGS.MINUTES.ABBREVIATION.PLURAL.defaultString
   ),
   hr: t(
-    TIME_UNITS.HOURS.ABBREVIATION.SINGULAR.translationKey,
-    TIME_UNITS.HOURS.ABBREVIATION.SINGULAR.defaultString
+    TIME_UNITS_TRANSLATION_STRINGS.HOURS.ABBREVIATION.SINGULAR.translationKey,
+    TIME_UNITS_TRANSLATION_STRINGS.HOURS.ABBREVIATION.SINGULAR.defaultString
   ),
   hrs: t(
-    TIME_UNITS.HOURS.ABBREVIATION.PLURAL.translationKey,
-    TIME_UNITS.HOURS.ABBREVIATION.PLURAL.defaultString
+    TIME_UNITS_TRANSLATION_STRINGS.HOURS.ABBREVIATION.PLURAL.translationKey,
+    TIME_UNITS_TRANSLATION_STRINGS.HOURS.ABBREVIATION.PLURAL.defaultString
   ),
   and: t(CONNECTIVE_TEXT.translationKey, CONNECTIVE_TEXT.defaultString, )
 };
@@ -31,7 +31,7 @@ export const getDecimalHoursInHourAndMinutes = (decimalHours: number): string =>
   minutes = is60Mins ? 0 : minutes;
 
   const hours = Math.floor(decimalHours) + (is60Mins ? 1 : 0) ;
-  const { min, mins, hrs, hr, and } = STRINGS;
+  const { min, mins, hrs, hr, and } = TIME_UNITS_STRINGS;
 
   const hoursString = hours > 0 ? hours + (hours === 1 ? hr : hrs) : "";
   const prefix = hours > 0 ? ` ${and} ` : "";
