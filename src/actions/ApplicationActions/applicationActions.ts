@@ -13,7 +13,6 @@ import {
   CreateApplicationAndSkipScheduleActionDS,
   CreateApplicationAndSkipScheduleFailedActionDS,
   CreateApplicationAndSkipScheduleSuccessActionDS,
-  CreateApplicationFailedActionDS,
   CreateApplicationSuccessActionDS,
   GetApplicationAction,
   GetApplicationFailedAction,
@@ -29,7 +28,9 @@ import {
   UpdateWorkflowStepNameSuccessAction,
   WithdrawMultipleApplicationAction,
   WithdrawMultipleApplicationFailedAction,
-  WithdrawMultipleApplicationSuccessAction
+  WithdrawMultipleApplicationSuccessAction,
+  CalculateInclinedValueAction,
+  CalculateInclinedValueResultAction,
 } from "./applicationActionTypes";
 import { loadingStatusHelper } from "../../utils/helper";
 import { ApiError } from "../../utils/api/types";
@@ -53,10 +54,6 @@ export const actionCreateApplicationDS =
 
 export const actionCreateApplicationDSSuccess = ( payload: Application, ): CreateApplicationSuccessActionDS => {
   return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS, payload, loadingStatus: loadingStatusHelper() };
-};
-
-export const actionCreateApplicationDSFailed = ( payload: ApiError ): CreateApplicationFailedActionDS => {
-  return { type: APPLICATION_ACTION_TYPES.CREATE_APPLICATION_FAILED, payload };
 };
 
 export const actionUpdateApplicationDS =
@@ -119,4 +116,20 @@ export const actionWithdrawMultipleApplicationSuccess = (payload: Application[])
 
 export const actionWithdrawMultipleApplicationFailed = (payload: ApiError): WithdrawMultipleApplicationFailedAction => {
   return { type: APPLICATION_ACTION_TYPES.WITHDRAW_MULTIPLE_APPLICATION_FAILED, payload };
+};
+
+export const actionCalculateInclinedValue = ( applicationId: string, onResult?: Function): CalculateInclinedValueAction => {
+  return {
+    type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE,
+    onResult,
+    applicationId,
+  };
+};
+
+export const actionCalculateInclinedValueResult = ( onResult?: Function): CalculateInclinedValueResultAction => {
+  return {
+    type: APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE_RESULT,
+    onResult,
+    loadingStatus: loadingStatusHelper()
+  };
 };

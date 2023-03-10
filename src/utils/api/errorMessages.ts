@@ -11,7 +11,8 @@ import {
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
   VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
-  WITHDRAW_APPLICATION_ERROR_CODE
+  WITHDRAW_APPLICATION_ERROR_CODE,
+  UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE,
 } from "../enums/common";
 import { ApiErrorMessage, ErrorMessage } from "../types/common";
 
@@ -385,4 +386,15 @@ export const ValidateAmazonLoginIDErrorMessages: { [key: string]: ErrorMessage }
     translationKey: "BB-ThankYou-referral-login-error-message-internal-server-error",
     value: "We couldn't validate your referrer's login ID, please try again or refresh the page."
   },
+};
+
+export const UpdateCandidateShiftPreferencesErrorMessages: {[key: string]: ApiErrorMessage} = {
+  [UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE.FAILED_UPDATE_SHIFT_PREFERENCES]: {
+    translationKey: "BB-update-candidate-shift-preferences-error-message-unable-to-update-shift-preferences",
+    value: "Unable to update candidate shift preferences",
+  },
+  [UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE.INVALID_REQUEST]: {
+    translationKey: "BB-update-candidate-shift-preferences-error-message-invalid-request",
+    value: "Invalid request to update candidate shift preferences",
+  }
 };

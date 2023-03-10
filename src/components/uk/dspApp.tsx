@@ -21,7 +21,6 @@ import NoAvailableTimeSlots from "../us/noAvailableTimeSlots/NoAvailableTimeSlot
 import ResumeApplication from "../us/resumeApplication/ResumeApplication";
 import SessionTimeout from "../us/sessionTimeout/SessionTimeout";
 import WorkflowFailed from "../us/workflowFailed/WorkflowFailed";
-import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
 import NhePreferences from "../common/nhe/NhePreferences";
 
 // Pages that have been migrated to UK
@@ -37,6 +36,7 @@ import ThankYou from "./thankYou/ThankYou";
 import GenericError from "./genericError/GenericError";
 import TimeoutPage from "../us/timeout/Timeout";
 import AccessDenied from "../us/AccessDenied/AccessDenied";
+import ShiftPreferences from "../common/jobOpportunity/ShiftPreferences";
 
 interface MapStateToProps {
   appConfig: AppConfig;

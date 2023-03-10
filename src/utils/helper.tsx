@@ -23,10 +23,7 @@ import {
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
-import {
-  boundGetScheduleListByJobId,
-  boundUpdateScheduleFilters
-} from "../actions/ScheduleActions/boundScheduleActions";
+import { boundGetScheduleListByJobId, boundUpdateScheduleFilters } from "../actions/ScheduleActions/boundScheduleActions";
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
@@ -75,6 +72,7 @@ import {
   BGC_VENDOR_TYPE,
   CountryCode,
   DAYS_OF_WEEK,
+  SHORTENED_DAYS_OF_WEEK,
   FCRA_DISCLOSURE_TYPE,
   FEATURE_FLAG,
   INFO_CARD_STEP_STATUS,
@@ -126,11 +124,12 @@ import {
   SelfIdentificationDisabilityStatus,
   SelfIdentificationInfo,
   SelfIdentificationVeteranStatus,
-  SelfIdEqualOpportunityStatus,
+  SelfIdEqualOpportunityStatus, ApplicationShiftPreferences,
   ShiftPreferenceWorkHour,
   TimeRangeHoursData
 } from "./types/common";
 import { boundUpdateFullBgcStepConfigAction } from "../actions/FullBgcActions/boundFullBgcActions";
+import { CandidateShiftPreferences } from "../@types/shift-preferences";
 
 const {
   BACKGROUND_CHECK,
@@ -2217,4 +2216,34 @@ export const getRehireNotEligibleStatusAdobePageName = (workflowErrorCode: WORKF
   }
 };
 
+export const getShiftPreferences = (application: Application|undefined, candidateShiftPreferences: CandidateShiftPreferences|undefined) => {
+  const enableCandidateShiftPreferences = getFeatureFlagValue(FEATURE_FLAG.ENABLE_CANDIDATE_SHIFT_PREFERENCES);
+  return enableCandidateShiftPreferences ? candidateShiftPreferences : application?.shiftPreference;
+};
+
+export const getShiftPreferencesDaysOfWeek = (shiftPreferences?: CandidateShiftPreferences|ApplicationShiftPreferences): DAYS_OF_WEEK[]|undefined => {
+  if ((shiftPreferences as CandidateShiftPreferences)?.preferredDaysToWork) {
+    const daysOfWeekMap: Record<SHORTENED_DAYS_OF_WEEK, DAYS_OF_WEEK> = {
+      [SHORTENED_DAYS_OF_WEEK.Sun]: DAYS_OF_WEEK.SUNDAY,
+      [SHORTENED_DAYS_OF_WEEK.Mon]: DAYS_OF_WEEK.MONDAY,
+      [SHORTENED_DAYS_OF_WEEK.Tue]: DAYS_OF_WEEK.TUESDAY,
+      [SHORTENED_DAYS_OF_WEEK.Wed]: DAYS_OF_WEEK.WEDNESDAY,
+      [SHORTENED_DAYS_OF_WEEK.Thu]: DAYS_OF_WEEK.THURSDAY,
+      [SHORTENED_DAYS_OF_WEEK.Fri]: DAYS_OF_WEEK.FRIDAY,
+      [SHORTENED_DAYS_OF_WEEK.Sat]: DAYS_OF_WEEK.SATURDAY,
+    };
+    return (shiftPreferences as CandidateShiftPreferences).preferredDaysToWork.map(x => daysOfWeekMap[x]);
+  }
+  if ((shiftPreferences as ApplicationShiftPreferences)?.daysOfWeek) {
+    return (shiftPreferences as ApplicationShiftPreferences).daysOfWeek as DAYS_OF_WEEK[];
+  }
+};
+
+export const getShiftPreferencesHoursPerWeekStrList = (shiftPreferences?: CandidateShiftPreferences|ApplicationShiftPreferences) => {
+  return shiftPreferences?.hoursPerWeek?.map(
+    (hpw) => {
+      return `${hpw.minimumValue} - ${hpw.maximumValue}`;
+    },
+  );
+};
 // TODO: should we break this file into multiple helper files by purpose? it's currentlu over 2k lines long which will make it harder to test

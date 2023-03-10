@@ -30,6 +30,7 @@ export interface DESIRED_WORK_HOURS {
   RANGE4: string;
 }
 
+// application days of week
 export enum DAYS_OF_WEEK {
   MONDAY= "MONDAY",
   TUESDAY = "TUESDAY",
@@ -40,6 +41,16 @@ export enum DAYS_OF_WEEK {
   SUNDAY = "SUNDAY"
 }
 
+// candidate days of week
+export enum SHORTENED_DAYS_OF_WEEK {
+  Mon= "Mon",
+  Tue = "Tue",
+  Wed = "Wed",
+  Thu = "Thu",
+  Fri = "Fri",
+  Sat = "Sat",
+  Sun = "Sun",
+}
 export enum FCRA_DISCLOSURE_TYPE {
   ACCEPT = "Accept",
   DECLINE = "Decline"
@@ -362,6 +373,7 @@ export enum FEATURE_FLAG {
   REFERRAL_VALIDATION = "REFERRAL_VALIDATION",
   BROKEN_APPLICATIONS_V2 = "BROKEN_APPLICATIONS_V2",
   VALIDATE_SSN_EXTRA = "VALIDATE_SSN_EXTRA",
+  ENABLE_CANDIDATE_SHIFT_PREFERENCES = "ENABLE_CANDIDATE_SHIFT_PREFERENCES",
 }
 
 export enum BB_UI_VERSION {
@@ -421,3 +433,8 @@ export enum HIDE_REHIRE_QUESTION_VALUE {
   NO = "no"
 }
 export const NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES = 3;
+
+export enum UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE {
+  INVALID_REQUEST = "INVALID_REQUEST",
+  FAILED_UPDATE_SHIFT_PREFERENCES = "FAILED_UPDATE_SHIFT_PREFERENCES",
+}

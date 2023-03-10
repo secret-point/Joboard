@@ -3,8 +3,8 @@ import * as boundUi from "../../../src/actions//UiActions/boundUi";
 import * as adobeActions from "../../../src/actions/AdobeActions/adobeActions";
 import * as boundSelfIdentificationActions
   from "../../../src/actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
-import { METRIC_NAME } from "../../../src/constants/adobe-analytics";
-import { initSelfIdentificationState } from "../../../src/reducers//selfIdentification.reducer";
+import {METRIC_NAME} from "../../../src/constants/adobe-analytics";
+import {initSelfIdentificationState} from "../../../src/reducers//selfIdentification.reducer";
 import {
   MX_SelfIdentificationConfigSteps,
   MX_SelfIdPronounsItems,
@@ -13,7 +13,8 @@ import {
   US_SelfIdentificationConfigSteps
 } from "../../../src/utils/constants/common";
 import {
-  CountryCode,
+  CountryCode, DAYS_OF_WEEK,
+  SHORTENED_DAYS_OF_WEEK,
   INFO_CARD_STEP_STATUS,
   JOB_REFERRAL_VALUE,
   SELF_IDENTIFICATION_STEPS,
@@ -56,6 +57,8 @@ import {
   getQueryFromSearchAndHash,
   getRehireNotEligibleStatusAdobePageName,
   GetSelfIdentificationConfigStep,
+  getShiftPreferences,
+  getShiftPreferencesDaysOfWeek, getShiftPreferencesHoursPerWeekStrList,
   getSupportedCitiesFromScheduleList,
   getUKNHEAppointmentTimeMap,
   getUKNHEAppointmentTitleList,
@@ -106,10 +109,11 @@ import {
   CandidateInfoErrorState,
   CandidatePatchRequest,
   FormInputItem,
-  JobReferral
+  JobReferral, ApplicationShiftPreferences
 } from "../../../src/utils/types/common";
-import { PAGE_ROUTES } from "../../../src/components/pageRoutes";
+import {PAGE_ROUTES} from "../../../src/components/pageRoutes";
 import SpyInstance = jest.SpyInstance;
+import {CandidateShiftPreferences} from "../../../src/@types/shift-preferences";
 
 jest.mock("../../../src/helpers/log-helper");
 
@@ -1760,4 +1764,88 @@ test("getRehireNotEligibleStatusAdobePageName", () => {
   expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.ACTIVE)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE_ACTIVE);
   expect(getRehireNotEligibleStatusAdobePageName(WORKFLOW_ERROR_CODE.SEASONAL_ONLY)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE_SEASONAL_ONLY);
   expect(getRehireNotEligibleStatusAdobePageName("Invalid" as WORKFLOW_ERROR_CODE)).toEqual(METRIC_NAME.REHIRE_NOT_ELIGIBLE);
+});
+
+describe("getShiftPreferences()",()=>{
+  let storeGetStateSpy: SpyInstance;
+
+  beforeEach(() => {
+    storeGetStateSpy = jest.spyOn(store, "getState");
+  });
+
+  afterEach(() => {
+    storeGetStateSpy.mockReset();
+  });
+  it("returns application shift preferences",()=>{
+    storeGetStateSpy
+      .mockReturnValueOnce({
+        appConfig: {
+          results: {
+            envConfig: {
+              featureList: {
+                // feature flag doesn't even exist yet
+              }
+            }
+          }
+        }
+      });
+      expect(getShiftPreferences({shiftPreference:"application-shift-preferences"} as any,"candidate-shift-preferences"as any)).toEqual("application-shift-preferences");
+  });
+  it("returns candidate shift preferences",()=>{
+    storeGetStateSpy
+      .mockReturnValueOnce({
+        appConfig: {
+          results: {
+            envConfig: {
+              featureList: {
+                "ENABLE_CANDIDATE_SHIFT_PREFERENCES":{
+                  isAvailable:true,
+                }
+              }
+            }
+          }
+        }
+      });
+    expect(getShiftPreferences({shiftPreference:"application-shift-preferences"} as any,"candidate-shift-preferences"as any)).toEqual("candidate-shift-preferences");
+  });
+});
+
+describe("getShiftPreferencesDaysOfWeek()",()=>{
+  it("maps v2 days of week to v1 days of week",()=>{
+    const shiftPreferences:Partial<CandidateShiftPreferences> = {
+      preferredDaysToWork:[
+        SHORTENED_DAYS_OF_WEEK.Sun,SHORTENED_DAYS_OF_WEEK.Mon,SHORTENED_DAYS_OF_WEEK.Tue,SHORTENED_DAYS_OF_WEEK.Wed,SHORTENED_DAYS_OF_WEEK.Thu,SHORTENED_DAYS_OF_WEEK.Fri,SHORTENED_DAYS_OF_WEEK.Sat]
+    }
+    expect(getShiftPreferencesDaysOfWeek(shiftPreferences as CandidateShiftPreferences)).toEqual([
+      DAYS_OF_WEEK.SUNDAY,DAYS_OF_WEEK.MONDAY,DAYS_OF_WEEK.TUESDAY,DAYS_OF_WEEK.WEDNESDAY,
+      DAYS_OF_WEEK.THURSDAY,DAYS_OF_WEEK.FRIDAY,DAYS_OF_WEEK.SATURDAY,
+    ]);
+  });
+  it("maps v1 days of week directly over",()=>{
+    const shiftPreferences:Partial<ApplicationShiftPreferences> = {
+      daysOfWeek:[
+        DAYS_OF_WEEK.SUNDAY,DAYS_OF_WEEK.MONDAY,DAYS_OF_WEEK.TUESDAY,DAYS_OF_WEEK.WEDNESDAY,
+        DAYS_OF_WEEK.THURSDAY,DAYS_OF_WEEK.FRIDAY,DAYS_OF_WEEK.SATURDAY,
+      ]
+    };
+    expect(getShiftPreferencesDaysOfWeek(shiftPreferences as ApplicationShiftPreferences)).toEqual([
+      DAYS_OF_WEEK.SUNDAY,DAYS_OF_WEEK.MONDAY,DAYS_OF_WEEK.TUESDAY,DAYS_OF_WEEK.WEDNESDAY,
+      DAYS_OF_WEEK.THURSDAY,DAYS_OF_WEEK.FRIDAY,DAYS_OF_WEEK.SATURDAY,
+    ]);
+  })
+  it("maps undefined to undefined",()=>{
+    expect(getShiftPreferencesDaysOfWeek(undefined)).toEqual(undefined);
+  })
+});
+
+describe("getShiftPreferencesHoursPerWeekStrList",()=>{
+  it("maps hours per week to a list of range strings",()=>{
+    const shiftPreferences:Partial<CandidateShiftPreferences> = {
+      hoursPerWeek:[{minimumValue:25,maximumValue:35},{minimumValue:36,maximumValue:52}],
+    }
+    expect(getShiftPreferencesHoursPerWeekStrList(shiftPreferences as CandidateShiftPreferences)).toEqual([
+      "25 - 35",
+      "36 - 52",
+    ])
+  });
 });

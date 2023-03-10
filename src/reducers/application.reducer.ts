@@ -22,10 +22,17 @@ export default function applicationReducer( state: ApplicationState = initApplic
     case APPLICATION_ACTION_TYPES.UPDATE_APPLICATION:
     case APPLICATION_ACTION_TYPES.UPDATE_WORKFLOW_NAME:
     case APPLICATION_ACTION_TYPES.GET_APPLICATION_LIST:
+    case APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE:
       return {
         ...state,
         loading: true,
         failed: false
+      };
+    case APPLICATION_ACTION_TYPES.CALCULATE_INCLINED_VALUE_RESULT:
+      return {
+        ...state,
+        loading: false,
+        failed: false,
       };
     case APPLICATION_ACTION_TYPES.GET_APPLICATION_SUCCESS:
     case APPLICATION_ACTION_TYPES.CREATE_APPLICATION_SUCCESS:

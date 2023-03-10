@@ -27,7 +27,7 @@ import { CommonColors } from "../../../utils/colors";
 import {
   checkAndBoundGetApplication,
   formatDate,
-  getLocale,
+  getLocale, getShiftPreferences,
   initiateScheduleDetailOnPageLoad
 } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
@@ -50,7 +50,7 @@ export const ThankYou = (props: MapStateToProps) => {
   const { applicationId, jobId, scheduleId } = queryParams;
   const applicationData = application.results;
   const { scheduleDetail } = schedule.results;
-  const { candidateData } = candidate.results;
+  const { candidateData, shiftPreferencesData: candidateShiftPreferences } = candidate.results;
   const jobDetail = job.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
@@ -162,11 +162,12 @@ export const ThankYou = (props: MapStateToProps) => {
     </FlyoutContent>
   );
 
+  const shiftPreferences = getShiftPreferences(applicationData, candidateShiftPreferences);
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
 
       {/* when shift preference selected and no shift selected, https://sim.amazon.com/issues/Kondo_QA_Issue-51 */}
-      { !applicationData?.jobScheduleSelected.scheduleId && applicationData?.shiftPreference && (
+      { !applicationData?.jobScheduleSelected.scheduleId && shiftPreferences && (
         <Col gridGap="S300">
           <Text fontSize="T400">
             {t("BB-Kondo-ThankYou-with-shift-preference-title-text", "Thank you for submitting your shift preferences!")}

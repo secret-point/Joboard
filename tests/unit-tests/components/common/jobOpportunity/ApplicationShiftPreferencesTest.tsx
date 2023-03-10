@@ -1,8 +1,8 @@
 import { shallow } from "enzyme";
 import React from "react";
 import ShiftPreferenceWithStore, {
-  ShiftPreferences
-} from "../../../../../src/components/common/jobOpportunity/ShiftPreferences";
+  ApplicationShiftPreferences
+} from "../../../../../src/components/common/jobOpportunity/ApplicationShiftPreferences";
 import { mountWithStencil } from "@amzn/stencil-react-components/tests";
 import { PAGE_ROUTES } from "../../../../../src/components/pageRoutes";
 import {
@@ -41,7 +41,7 @@ describe("ShiftPreference Component", () => {
 
   it("should match snapshot", () => {
     const shallowWrapper = shallow(
-      <ShiftPreferences job={TEST_JOB} application={TEST_APPLICATION_DATA} candidate={TEST_CANDIDATE_STATE} />);
+      <ApplicationShiftPreferences job={TEST_JOB} application={TEST_APPLICATION_DATA} candidate={TEST_CANDIDATE_STATE} />);
 
     expect(shallowWrapper).toMatchSnapshot();
   });

@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
 import {
+  boundCalculateInclinedValue,
   boundGetApplicationList,
   boundUpdateApplicationDS
 } from "../../../actions/ApplicationActions/boundApplicationActions";
@@ -40,7 +41,7 @@ import {
   formatDate,
   getApplicationWithdrawalReason,
   getFeatureFlagValue,
-  getLocale,
+  getLocale, getShiftPreferences, getShiftPreferencesDaysOfWeek, getShiftPreferencesHoursPerWeekStrList,
   goToCandidateDashboard,
   initiateScheduleDetailOnPageLoad
 } from "../../../utils/helper";
@@ -72,7 +73,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
   const [activeApplicationsTobeWithdrawn, setActiveApplicationToBeWithdrawn] = useState<Application[]>([]);
 
   const jobDetail = job.results;
-  const { candidateData } = candidate.results;
+  const { candidateData, shiftPreferencesData: candidateShiftPreferences } = candidate.results;
   let { scheduleDetail } = schedule.results;
   scheduleDetail = scheduleDetail && getScheduleInUKFormat(scheduleDetail);
   const applicationData = application.results;
@@ -139,16 +140,32 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       scheduleDetails: JSON.stringify(scheduleDetail)
     };
 
-    const isFeatureEnabled = getFeatureFlagValue(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
-    if (isFeatureEnabled) {
-      onCompleteTaskHelper(applicationData);
+    const enableBrokenApplicationFix = getFeatureFlagValue(FEATURE_FLAG.BROKEN_APPLICATIONS_V2);
+    const calculateInclinedValue = getFeatureFlagValue(FEATURE_FLAG.ENABLE_CANDIDATE_SHIFT_PREFERENCES);
+    if (enableBrokenApplicationFix) {
+      if (calculateInclinedValue) {
+        boundCalculateInclinedValue(applicationId, () => {
+          onCompleteTaskHelper(applicationData);
+        });
+      } else {
+        onCompleteTaskHelper(applicationData);
+      }
     } else {
       const request: UpdateApplicationRequestDS = createUpdateApplicationRequest(applicationData, REVIEW_SUBMIT, payload);
-      boundUpdateApplicationDS(request, (applicationData: Application) => {
-        onCompleteTaskHelper(applicationData);
-      });
+      if (calculateInclinedValue) {
+        boundCalculateInclinedValue(applicationId, () => {
+          boundUpdateApplicationDS(request, (applicationData: Application) => {
+            onCompleteTaskHelper(applicationData);
+          });
+        });
+      } else {
+        boundUpdateApplicationDS(request, (applicationData: Application) => {
+          onCompleteTaskHelper(applicationData);
+        });
+      }
     }
   };
+
   const handleSubmitApplication = () => {
     boundResetBannerMessage();
 
@@ -199,6 +216,9 @@ export const ReviewSubmit = (props: MapStateToProps) => {
       }
     }
   };
+  const shiftPreferences = getShiftPreferences(applicationData, candidateShiftPreferences);
+  const daysOfWeek = getShiftPreferencesDaysOfWeek(shiftPreferences);
+  const hoursPerWeekStrList = getShiftPreferencesHoursPerWeekStrList(shiftPreferences);
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
       <Row gridGap="S300" padding="S500" style={{ background: `${CommonColors.Blue05}` }}>
@@ -223,7 +243,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
         {
           // do not show shift preference if there is shift details
-          applicationData?.shiftPreference && !applicationData?.jobScheduleSelected?.scheduleId && (
+          shiftPreferences && !applicationData?.jobScheduleSelected?.scheduleId && (
             <Col id="shiftPreferenceSection" gridGap="S300">
               <Row alignItems="center" justifyContent="space-between">
                 <Text fontSize="T300">
@@ -241,7 +261,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                       {t("BB-rev-ew-submit-shift-preference-earliest-start-date-label", "Earliest start date")}:
                     </Text>
                     <Text fontSize="T100">
-                      {moment(applicationData.shiftPreference.earliestStartDate, "DD/MM/YYYY").locale(getLocale()).format("DD MMM YYYY")}
+                      {moment(shiftPreferences.earliestStartDate, "DD/MM/YYYY").locale(getLocale()).format("DD MMM YYYY")}
                     </Text>
                   </Row>
                   <Col>
@@ -250,7 +270,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </Text>
                     <ul>
                       {
-                        applicationData.shiftPreference?.hoursPerWeekStrList.map(hourPerWeek => (
+                        hoursPerWeekStrList?.map(hourPerWeek => (
                           <li key={hourPerWeek} className="review-submit-list-item">
                             <Text fontSize="T100">{hourPerWeek}</Text>
                           </li>
@@ -264,7 +284,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     </Text>
                     <ul>
                       {
-                        applicationData.shiftPreference?.daysOfWeek.map(day => (
+                        daysOfWeek?.map((day: string) => (
                           <li key={day} className="review-submit-list-item">
                             <Text fontSize="T100">{day}</Text>
                           </li>
@@ -277,7 +297,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                       {t("BB-rev-ew-submit-shift-preference-time-pattern-label", "Time pattern")}:
                     </Text>
                     <Text fontSize="T100">
-                      {applicationData.shiftPreference.shiftTimePattern}
+                      {shiftPreferences.shiftTimePattern}
                     </Text>
                   </Row>
                 </Col>

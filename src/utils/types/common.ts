@@ -19,6 +19,7 @@ import {
   WORKFLOW_STEP_NAME
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
+import { CandidateShiftPreferences } from "../../@types/shift-preferences";
 
 export interface QueryParamItem {
   paramName?: QUERY_PARAMETER_NAME;
@@ -648,7 +649,7 @@ export interface Application {
   dspEnabled?: boolean;
   applicationSignature: ElectronicSignature;
   additionalBackgroundInfo: AdditionalBackgroundInfoRequest;
-  shiftPreference?: ShiftPreferenceData;
+  shiftPreference?: ApplicationShiftPreferences;
   hideRehireQuestions?: HIDE_REHIRE_QUESTION_VALUE;
 }
 
@@ -915,6 +916,7 @@ export interface Candidate {
   socialSecurityNumber: string;
   numSSNEdits: number;
   assessmentsTaken: Record<string, Assessment>;
+  shiftPreferences: CandidateShiftPreferences;
 };
 
 export interface Address {
@@ -1156,7 +1158,7 @@ export interface ShiftPreferenceShiftPatternConfig {
   value: string;
 }
 
-export interface ShiftPreferenceData {
+export interface ApplicationShiftPreferences {
   candidateTimezone: string;
   daysOfWeek: DAYS_OF_WEEK[];
   hoursPerWeek: ShiftPreferenceWorkHour[];

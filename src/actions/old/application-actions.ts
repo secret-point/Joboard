@@ -28,7 +28,7 @@ import { log, logError } from "./../../helpers/log-helper";
 import { NO_APPLICATION_ID, DUPLICATE_SSN } from "./../../constants/error-messages";
 import {
   HoursPerWeekValue,
-  ShiftPreference,
+  DeprecatedShiftPreferences,
   ShiftTimeInterval
 } from "./../../@types/shift-preferences";
 import { MetricData } from "./../../@types/adobe-metrics";
@@ -942,7 +942,7 @@ export const onSaveShiftPreferences = (payload: IPayload) => async (dispatch: Fu
       },
       [] as string[]
     );
-    const shiftPreference: ShiftPreference = {};
+    const shiftPreference: DeprecatedShiftPreferences = {};
     if (!isEmpty(selectedRequisitions)) {
       shiftPreference.jobRoles = selectedRequisitions;
 

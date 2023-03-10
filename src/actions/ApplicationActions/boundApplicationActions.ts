@@ -14,7 +14,8 @@ import {
   actionGetApplicationList,
   actionUpdateApplicationDS,
   actionUpdateWorkflowName,
-  actionWithdrawMultipleApplication
+  actionWithdrawMultipleApplication,
+  actionCalculateInclinedValue,
 } from "./applicationActions";
 import { Application } from "../../utils/types/common";
 
@@ -38,3 +39,6 @@ export const boundGetApplicationList = (payload: GetApplicationListRequest, onSu
 
 export const boundWithdrawMultipleApplication = (payload: Application[], onSuccess?: Function, onError?: Function) =>
   store.dispatch(actionWithdrawMultipleApplication(payload, onSuccess, onError));
+
+export const boundCalculateInclinedValue = (applicationId: string, onResult?: Function) =>
+  store.dispatch(actionCalculateInclinedValue(applicationId, onResult));

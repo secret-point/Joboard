@@ -8,6 +8,7 @@ import {
 import { CreateApplicationResponse } from "../utils/api/types";
 import { GetApplicationListRequest } from "../utils/apiTypes";
 import { Application, GetAssessmentElegibilityRequest } from "../utils/types/common";
+import { CandidateShiftPreferences } from "../@types/shift-preferences";
 
 export default class CandidateApplicationService {
   private readonly axiosInstance: AxiosInstance;
@@ -144,5 +145,18 @@ export default class CandidateApplicationService {
     return {
       data: withdrawnApps
     };
+  }
+
+  async calculateInclinedValue(applicationId: string) {
+    const response = await this.axiosInstance.put("/update-application", {
+      applicationId,
+      type: "calculate-inclined-value",
+    });
+    return response.data;
+  }
+
+  async updateCandidateShiftPreferences(payload: CandidateShiftPreferences) {
+    const response = await this.axiosInstance.put("/candidate/shiftPreferences", payload);
+    return response.data;
   }
 }

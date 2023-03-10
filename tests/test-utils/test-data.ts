@@ -38,7 +38,7 @@ import {
   SavePossibleNhePreferenceRequest,
   Schedule,
   SelfIdentificationInfo,
-  ShiftPreferenceData
+  ApplicationShiftPreferences
 } from "../../src/utils/types/common";
 
 export const TEST_REQUISITION_ID = "test-req-id";
@@ -318,7 +318,7 @@ export const TEST_APPLICATION: any = {
   nheAppointment: NHE_TIMESLOT
 };
 
-export const TEST_SHIFT_PREFERENCE: ShiftPreferenceData = {
+export const TEST_SHIFT_PREFERENCE: ApplicationShiftPreferences = {
   jobRoles: [
   ],
   locations: undefined,

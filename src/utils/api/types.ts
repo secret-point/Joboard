@@ -10,10 +10,11 @@ import {
   UPDATE_APPLICATION_ERROR_CODE,
   UPDATE_WORKFLOW_NAME_ERROR_CODE,
   UPDATE_WOTC_STATUS_ERROR_CODE,
-  VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE,
-  WITHDRAW_APPLICATION_ERROR_CODE
+  WITHDRAW_APPLICATION_ERROR_CODE,
+  UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE,
 } from "../enums/common";
 import { Application, Candidate, Job, NHETimeSlot, PossibleNhePreferenceConfig, Schedule } from "../types/common";
+import { CandidateShiftPreferences } from "../../@types/shift-preferences";
 
 export interface CreateApplicationResponse {
   data: Application;
@@ -107,14 +108,14 @@ export interface UpdateWotcStatusResponse {
   errorCode: UPDATE_WOTC_STATUS_ERROR_CODE;
 }
 
-export interface ValidateamazonLoginIDResponse {
-  data: any;
-  error: string;
-  errorCode: VALIDATE_AMAZON_LOGIN_ID_ERROR_CODE;
-}
-
 export interface GetPossibleNhePreferenceResponse {
   data: PossibleNhePreferenceConfig;
   error: string;
   errorCode: any;
+}
+
+export interface UpdateCandidateShiftPreferencesResponse {
+  data: CandidateShiftPreferences;
+  error: string;
+  errorCode: UPDATE_CANDIDATE_SHIFT_PREFERENCES_ERROR_CODE;
 }

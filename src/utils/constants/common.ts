@@ -11,7 +11,7 @@ import {
   APPLICATION_STEPS,
   BACKGROUND_AGENT,
   CountryCode,
-  DAYS_OF_WEEK,
+  DAYS_OF_WEEK, SHORTENED_DAYS_OF_WEEK,
   FCRA_DISCLOSURE_TYPE,
   INFO_CARD_STEP_STATUS,
   SCHEDULE_FILTER_TYPE,
@@ -1113,17 +1113,32 @@ export const shiftPreferenceWorkHour: ShiftPreferenceWorkHourConfig[] = [
   { displayValue: "15 or less", value: { minimumValue: 0, maximumValue: 15 }, translationKey: "BB-kondo-shift-work-hour-15-or-less" }
 ];
 
-export const shiftPreferenceWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
+// application
+export const shiftPreferenceApplicationWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
   { displayValue: "Saturday", value: DAYS_OF_WEEK.SATURDAY, translationKey: "BB-weekend-days-Saturday" },
   { displayValue: "Sunday", value: DAYS_OF_WEEK.SUNDAY, translationKey: "BB-weekend-days-Sunday" }
 ];
 
-export const shiftPreferenceWeekDays: ShiftPreferenceWeekDaysConfig[] = [
+export const shiftPreferenceApplicationWeekDays: ShiftPreferenceWeekDaysConfig[] = [
   { displayValue: "Monday", value: DAYS_OF_WEEK.MONDAY, translationKey: "BB-weekend-days-Monday" },
   { displayValue: "Tuesday", value: DAYS_OF_WEEK.TUESDAY, translationKey: "BB-weekend-days-Tuesday" },
   { displayValue: "Wednesday", value: DAYS_OF_WEEK.WEDNESDAY, translationKey: "BB-weekend-days-Wednesday" },
   { displayValue: "Thursday", value: DAYS_OF_WEEK.THURSDAY, translationKey: "BB-weekend-days-Thursday" },
   { displayValue: "Friday", value: DAYS_OF_WEEK.FRIDAY, translationKey: "BB-weekend-days-Friday" }
+];
+
+// candidate
+export const shiftPreferencesCandidateWeekendDays: ShiftPreferenceWeekDaysConfig[] = [
+  { displayValue: "Saturday", value: SHORTENED_DAYS_OF_WEEK.Sat, translationKey: "BB-weekend-days-Saturday" },
+  { displayValue: "Sunday", value: SHORTENED_DAYS_OF_WEEK.Sun, translationKey: "BB-weekend-days-Sunday" }
+];
+
+export const shiftPreferencesCandidateWeekDays: ShiftPreferenceWeekDaysConfig[] = [
+  { displayValue: "Monday", value: SHORTENED_DAYS_OF_WEEK.Mon, translationKey: "BB-weekend-days-Monday" },
+  { displayValue: "Tuesday", value: SHORTENED_DAYS_OF_WEEK.Tue, translationKey: "BB-weekend-days-Tuesday" },
+  { displayValue: "Wednesday", value: SHORTENED_DAYS_OF_WEEK.Wed, translationKey: "BB-weekend-days-Wednesday" },
+  { displayValue: "Thursday", value: SHORTENED_DAYS_OF_WEEK.Thu, translationKey: "BB-weekend-days-Thursday" },
+  { displayValue: "Friday", value: SHORTENED_DAYS_OF_WEEK.Fri, translationKey: "BB-weekend-days-Friday" }
 ];
 
 export const shiftPreferenceShiftPattern: ShiftPreferenceShiftPatternConfig[] = [

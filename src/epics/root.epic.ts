@@ -7,9 +7,10 @@ import {
   GetApplicationSuccessEpic,
   UpdateApplicationDSEpic,
   UpdateWorkflowStepNameEpic,
-  WithdrawMultipleApplicationEpic
+  WithdrawMultipleApplicationEpic,
+  CalculateInclinedValueEpic,
 } from "./application.epic";
-import { GetCandidateInfoEpic } from "./candidate.epic";
+import { GetCandidateInfoEpic, UpdateCandidateShiftPreferencesEpic } from "./candidate.epic";
 import { JobEpic } from "./job.epic";
 import { GetNheTimeSlotsDs, GetNheTimeSlotsThroughNheDs, GetPossibleNhePreferences } from "./nhe.epic";
 import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.epic";
@@ -35,7 +36,9 @@ const rootEpic = combineEpics(
   GetPossibleNhePreferences,
   GetApplicationListEpic,
   WithdrawMultipleApplicationEpic,
-  GetAsssessmentElegibilityEpic
+  GetAsssessmentElegibilityEpic,
+  UpdateCandidateShiftPreferencesEpic,
+  CalculateInclinedValueEpic,
 );
 
 export default rootEpic;
