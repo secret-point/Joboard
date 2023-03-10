@@ -493,6 +493,7 @@ interface ScheduleExtraProps {
   displayHireEndDate?: boolean;
   displayEmploymentType?: boolean;
   useScheduleCardDetails?: boolean;
+  displayHoursPerWeekDecimal?: boolean;
 };
 
 export interface HoursPerWeek {

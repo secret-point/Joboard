@@ -1234,3 +1234,52 @@ export const LOCALE_CONFIG = {
     TIME_ZONE: DEFAULT_TIME_ZONE
   }
 };
+
+export const SCHEDULE_DURATION_STRINGS = {
+  PERMANENT_CONTRACT: {
+    translationKey: "BB-schedule-card-duration-permanent",
+    defaultString: "Permanent",
+  },
+  FIXED_TERM_CONTRACT: {
+    translationKey: "BB-schedule-card-duration-fixed-term-contract",
+    defaultString: "Fixed term contract",
+  },
+  FIXED_TERM_CONTRACT_WITH_END_DATE: {
+    translationKey:
+      "BB-schedule-card-duration-fixed-term-contract-with-end-date",
+    defaultString: "Fixed term contract until",
+  },
+};
+
+export const TIME_UNITS = {
+  HOURS: {
+    ABBREVIATION: {
+      SINGULAR: {
+        translationKey: "BB-time-units-abbreviation-hours-singular", 
+        defaultString: "hr" 
+      },
+      PLURAL: {
+        translationKey: "BB-time-units-abbreviation-hours-plural", 
+        defaultString: "hrs" 
+      }
+    }
+  },
+  MINUTES: {
+    ABBREVIATION: {
+      SINGULAR: 
+      {
+        translationKey: "BB-time-units-abbreviation-minutes-singular", 
+        defaultString: "min" 
+      }, 
+      PLURAL: {
+        translationKey: "BB-time-units-abbreviation-minutes-plural", 
+        defaultString: "mins" 
+      }, 
+    }
+  }
+};
+
+export const CONNECTIVE_TEXT = {
+  translationKey: "BB-connective-text-between-hours-and-minutes", 
+  defaultString: "and" 
+};

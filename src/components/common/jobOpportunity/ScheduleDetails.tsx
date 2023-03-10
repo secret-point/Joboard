@@ -28,6 +28,7 @@ import {
 import { translate as t } from "../../../utils/translator";
 import { Schedule } from "../../../utils/types/common";
 import { getLocalizedDate } from "../../../helpers/localization-helpers";
+import { getDecimalHoursInHourAndMinutes } from "../../../helpers/time-helpers";
 
 interface ScheduleDetailsProps {
   scheduleDetail: Schedule;
@@ -40,7 +41,8 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
   const showRequiredLanguages = getFeatureFlagValue(FEATURE_FLAG.MLS) && requiredLanguages?.length > 0;
 
   const {
-    hoursPerWeek,
+    hoursPerWeek, 
+    hoursPerWeekDecimal,
     firstDayOnSite,
     currencyCode,
     employmentType,
@@ -55,8 +57,11 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
     hireEndDate,
     displayHireEndDate = false, 
     displayEmploymentType = true,
+    displayHoursPerWeekDecimal = false,
     duration = null
   } = scheduleDetail;
+ 
+  const hoursPerWeekString = !displayHoursPerWeekDecimal ? `${hoursPerWeek} ${t("BB-Schedule-card-hours-per-week-text", "hours/week")}`: `${getDecimalHoursInHourAndMinutes(hoursPerWeekDecimal ?? hoursPerWeek)} ${t("BB-schedule-card-details-per-week", "per week")}`; 
  
   const renderStartDate = () => {
     const localizedDate = getLocalizedDate(firstDayOnSite);
@@ -164,7 +169,7 @@ export const ScheduleDetails = (props: ScheduleDetailsProps) => {
         </div>
         <Row gridGap={3} alignItems="center">
           <Text fontSize="T200" fontWeight="bold">{t("BB-Schedule-card-hours", "Hours")}: </Text>
-          <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
+          <Text fontSize="T100">{hoursPerWeekString} </Text>
         </Row>
       </Row>
 
