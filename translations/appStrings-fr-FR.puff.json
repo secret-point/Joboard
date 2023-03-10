@@ -188,6 +188,10 @@
       "value" : "Trier par",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "En vedette",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Taux de rémunération - Du plus élevé au plus bas",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -1704,6 +1708,22 @@
       "value" : "Nous n'avons pas pu valider l'identifiant de connexion de votre parrain. Contactez-nous sur www.amazon.com/applicationhelp pour obtenir de l'aide.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Détails du rendez-vous préalable à l'embauche",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Date",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Heure",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Détails de la réunion",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Fournissez votre identifiant de connexion référent (lettres minuscules uniquement)",
       "note" : "Text for the thank you page referral login input label text"
@@ -3107,6 +3127,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "Préférences de quart de travail",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Détails de la recommandation",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Avez-vous été recommandé par un employé actuel d’Amazon ?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "ID de connexion de la recommandation",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Impossible de retirer la candidature.",

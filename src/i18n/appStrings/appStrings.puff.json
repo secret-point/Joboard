@@ -3200,7 +3200,30 @@
         "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3": {
             "note": "Assessment condition number 3",
             "value": "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday through Friday from 7:00 am GMT - 4:00 pm GMT . If calling directly from the United Kingdom, please dial +44 800 086 9884. If calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1."
+        },
+        "BB-time-units-abbreviation-minutes-singular": {
+            "note": "Abbreviation of minute in singular form",
+            "value": "min"
+        },
+        "BB-time-units-abbreviation-minutes-plural": {
+            "note": "Abbreviation of minute in plural form",
+            "value": "mins"
+        },
+        "BB-time-units-abbreviation-hours-singular": {
+            "note": "Abbreviation of hour in plural form",
+            "value": "hr"
+        },
+        "BB-time-units-abbreviation-hours-plural": {
+            "note": "Abbreviation of hour in plural form",
+            "value": "hrs"
+        },
+        "BB-schedule-card-details-per-week": {
+            "note": "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week",
+            "value": "per week"
+        },
+        "BB-schedule-card-details-connective-text-between-hours-and-minutes": {
+            "note": "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins",
+            "value": "and"
         }
-
     }
 }

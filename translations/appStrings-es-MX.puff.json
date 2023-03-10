@@ -188,6 +188,10 @@
       "value" : "Ordenar por",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "Destacados",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Tarifa de pago: de mayor a menor",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -960,6 +964,14 @@
       "value" : "Volver al panel",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "¡Gracias por presentar tu solicitud en Amazon!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Ya postulaste a este empleo. Vuelve al panel de control para ver tu solicitud.",
+      "note" : "Text for already applied job description text"
+    },
     "BB-already-applied-button-text-UK" : {
       "value" : "Ir al panel de control",
       "note" : "Text for already applied job return to dashboard button text"
@@ -1695,6 +1707,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "No pudimos validar el ID de inicio de sesión de tu referencia, inicia un chat con nosotros en www.amazon.com/applicationhelp para obtener ayuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Detalles de la cita previa a la contratación",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Fecha",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Hora",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Detalles de la reunión",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Proporciona el ID de inicio de sesión de quien te refirió (solo letras minúsculas)",

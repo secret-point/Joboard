@@ -108,6 +108,10 @@
       "value" : "Acepto que toda la información recopilada pueda comunicarse o transferirse de conformidad con la Ley Federal sobre Protección de Datos Personales en Posesión de Entidades Privadas y sus reglamentos, directrices y disposiciones pertinentes de otra naturaleza en materia de protección de datos, además de en las disposiciones pertinentes del Aviso de privacidad relativas a trabajadores y postulantes.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon se compromete a crear un lugar de trabajo diverso e inclusivo. Amazon es una empresa que ofrece igualdad de oportunidades y no discrimina por motivos de raza, nacionalidad, género, identidad de género, orientación sexual, condición de veterano protegido, discapacidad, edad u otra condición de protección legal. Para obtener información sobre las personas con discapacidades que quieran solicitar una adaptación, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon se toma muy en serio la protección de tus datos personales y solo los tratará de conformidad con la ley. No compartimos tus datos personales con ningún tercero sin tu consentimiento previo, a menos que la ley nos obligue a hacerlo. A menos que indiques lo contrario, la empresa contratante de Amazon almacenará tus datos personales en la base de datos electrónica conservada por Amazon.com en EE. UU. o en una de sus filiales. Para obtener información completa sobre cómo Amazon almacena y trata tus datos personales, haz clic aquí <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Accesibilidad",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "En Amazon, celebramos la diversidad que existe entre nuestro personal y las diferentes formas de trabajar. Si tienes una discapacidad y necesitas que tomemos alguna medida de accesibilidad durante el proceso de contratación, incluida la evaluación, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>Accesibilidad de Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Todas las secciones de esta evaluación:",

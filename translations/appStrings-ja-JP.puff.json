@@ -108,6 +108,10 @@
       "value" : "収集されたすべての情報は、私的当事者が所有する個人データの保護に関する連邦法、データプライバシーに関する規制、ガイドライン、その他の該当する規定、および会社の従業員や、または候補者向けプライバシー通知の観点から転送される可能性があることを認識しています。",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazonは、多様で包括的な職場づくりを目指しています。Amazonは機会の均等雇用者であり、人種、国籍、性別、性自認、性的指向、退役軍人としてのステータス、障害、年齢、またはその他法的に保護された地位に基づいて差別することはありません。障がい者で支援のリクエストをご希望の方は、<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/ </a>をご覧ください",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazonは個人データ保護を真剣に受け止め、法律に従ってのみ個人データを処理します。特に、法律によって強制されない限り、お客様の事前の同意なしに、個人データを第三者と共有することはありません。別段の表明をしない限り、雇用しているAmazon会社は、米国のAmazon.comまたはその関連会社の1つが管理する電子データベースにお客様の個人データを保存します。Amazonが個人データをどのように保存および処理するかについての完全な情報については、こちらをクリックしてください<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "宿泊施設",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazonでは、従業員の多様性とさまざまな働き方を尊重しています。障がいがあり、アセスメントを含む採用プロセス中に支援が必要な場合は、<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>Amazon Accommodationにアクセスしてください。</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "このアセスメントのすべてのセクション:",

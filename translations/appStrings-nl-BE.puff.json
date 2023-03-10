@@ -1704,6 +1704,22 @@
       "value" : "We konden de inlog-ID van je verwijzer niet valideren. Neem contact met ons op via www.amazon.com/applicationhelp voor hulp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Gegevens van de afspraak vóór indiensttreding",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Datum",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Tijd",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Gegevens van het gesprek",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Geef het inlog-ID van de aanbeveler op (alleen kleine letters)",
       "note" : "Text for the thank you page referral login input label text"
@@ -3107,6 +3123,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "Dienstvoorkeuren",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Gegevens aanbeveling",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Ben je aanbevolen door een bestaande Amazon-medewerker?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "Aanmeldings-ID voor aanbeveling",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Intrekken van de sollicitatie is mislukt.",

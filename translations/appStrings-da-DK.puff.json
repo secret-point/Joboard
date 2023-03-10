@@ -108,6 +108,10 @@
       "value" : "Jeg er opmærksom på, at alle indsamlede oplysninger kan overføres i henhold til den føderale lov om beskyttelse af personoplysninger i besiddelse af private parter og dens regler, retningslinjer og andre gældende bestemmelser om databeskyttelse, samt i form af fortrolighedserklæring for virksomheden for medarbejdere og/eller kandidater.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon forpligter sig til at være en mangfoldig og inkluderende arbejdsplads. Amazon er en arbejdsgiver der giver lige muligheder og diskriminerer ikke på grund af race, national oprindelse, køn, kønsidentitet, seksuel orientering, beskyttet veteranstatus, handicap, alder eller anden lovmæssigt beskyttet status. Personer med handicap, der ønsker at anmode om en særlig indretning, kan besøge<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon tager din personlige databeskyttelse alvorligt og behandler kun dine personlige data i overensstemmelse med loven. Vi deler især ikke dine personlige data med nogen tredjepart uden dit forudgående samtykke, medmindre vi ved lov er tvunget til at gøre det. Medmindre du udtrykker andet, vil det ansættende Amazon-firma gemme dine personlige data i den elektroniske database, der vedligeholdes af Amazon.com i USA eller et af dets datterselskaber. Du kan finde de fulde oplysninger om, hvordan Amazon gemmer og behandler dine personlige data, ved at klikke her <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -187,6 +191,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "Sorter efter",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "Udvalgt",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Lønsats - højeste til laveste",
@@ -1703,6 +1711,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "Vi kunne ikke validere dit henvisnings login-ID. Chat venligst med os på www.amazon.com/applicationhelp, for at få hjælp.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Oplysninger forud for aftale om ansættelse",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Dato",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Tid",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Mødedetaljer",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Angiv dit henvisnings-login-id (kun små bogstaver)",

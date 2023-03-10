@@ -108,6 +108,10 @@
       "value" : "본인은 수집된 모든 정보가 개인 소유의 개인 데이터 보호에 관한 연방법 및 해당 규정, 데이터 개인정보 보호에 관한 지침 및 기타 적용 가능한 조항, 그리고 직원 및/또는 입사 후보자에 대한 회사의 개인정보보호방침에 따라 전송될 수 있음을 알고 있습니다.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "아마존은 다양하고 포용적인 업무 환경을 위해 최선을 다하고 있습니다. 아마존은 기회 균등 고용주이며 인종, 출신 국가, 성별, 성 정체성, 성적 지향, 보호 대상 재향 군인 신분, 장애, 나이 또는 기타 법적 보호 대상 신분을 이유로 차별하지 않습니다. 편의를 요청하려는 장애인의 경우 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>을 방문하세요.",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "아마존은 개인 데이터 보호를 중요하게 생각하며 법에 따라서만 개인 데이터를 처리합니다. 특히 당사는 법률에 의해 강제되지 않는 한 귀하의 사전 동의 없이 제3자와 귀하의 개인 데이터를 공유하지 않습니다. 달리 명시하지 않는 한, 고용하는 아마존 회사는 미국의 Amazon.com 또는 그 계열사 중 한 곳에서 유지하는 전자 데이터베이스에 귀하의 개인 데이터를 저장합니다. 아마존이 귀하의 개인 데이터를 저장하고 처리하는 방법에 대한 자세한 내용을 보려면 여기 <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>를 클릭하세요.",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "편의 지원",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "아마존은 당사 직원의 다양성과 다양한 업무 방식을 중요하게 생각합니다. 장애가 있어 평가를 포함한 채용 절차에서 편의 지원이 필요한 경우, <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> 아마존 편의 지원을 방문하세요.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "이 평가의 모든 섹션:",

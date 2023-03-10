@@ -3128,6 +3128,18 @@
       "value" : "షిఫ్ట్ ప్రాధాన్యతలు",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "రెఫరల్ వివరాలు",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "ఇప్పటికే ఉన్న Amazon ఉద్యోగి మిమ్మల్ని సూచించారా?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "రెఫరల్ లాగిన్ ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "అప్లికేషన్‌ను ఉపసంహరించుకోవడంలో విఫలమైంది.",
       "note" : "Text for withdraw multiple application failure error message"

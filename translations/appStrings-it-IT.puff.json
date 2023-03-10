@@ -188,6 +188,10 @@
       "value" : "Ordina per",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "In evidenza",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "Retribuzione: dalla più alta alla più bassa",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -1511,6 +1515,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Alloggi",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "In Amazon valorizziamo la diversità della nostra forza lavoro e i diversi modi in cui lavoriamo. Se hai una disabilità e hai bisogno di un alloggio durante il processo di assunzione, valutazione compresa, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Tutte le sezioni di questa valutazione:",

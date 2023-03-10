@@ -108,6 +108,10 @@
       "value" : "ידוע לי שכל המידע שנאסף עשוי להיות מועבר בהתאם לחוק הפדרלי להגנה על נתונים אישיים ברשותם של צדדים פרטיים והתקנות, ההנחיות והוראות רלוונטיות אחרות בנושא פרטיות נתונים, כמו גם במונחים של הודעה בנושא פרטיות של החברה לעובדים ו/או מועמדים.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon מחויבת למקום עבודה מגוון וכוללני. Amazon פועלת על פיחוק שוויון הזדמנויות ואינה מפלה על בסיס גזע, מוצא לאומי, מין, זהות מגדרית, נטייה מינית, סטטוס מוגן של יוצאי צבא, מוגבלות, גיל או מעמד אחר המוגן מבחינה משפטית. עובדים עם מוגבלות המעוניינים לבקש התאמה במקום העבודה יכולים לבקר בכתובת <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon מתייחסת ברצינות להגנה על הנתונים האישיים שלך ותעבד את הנתונים האישיים שלך רק בהתאם לחוק. בפרט, איננו משתפים את הנתונים האישיים שלך עם צד שלישי כלשהו ללא הסכמתך מראש, אלא אם כן נאלצנו לעשות זאת על פי חוק. אלא אם תביע רצון אחר, חברת Amazon המעסיקה תשמור את הנתונים האישיים שלך במאגר הנתונים האלקטרוני המנוהל על ידי Amazon.com בארה\"ב או באחת החברות השותפות שלה. לקבלת מידע מלא על האופן שבו Amazon שומרת ומעבדת את הנתונים האישיים שלך, יש ללחוץ כאן <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "התאמות",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "ב-Amazon, אנחנו חוגגים את הגיוון של כוח העבודה שלנו ואת הדרכים המגוונות בהן אנחנו עובדים. אם יש לך מוגבלות כלשהי ויש לך צורך בהתאמה במהלך תהליך ההעסקה, כולל בזמן תהליך ההערכה עצמו, יש לבקר <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> באתר התאמת זכויות העבודה של Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "כל סעיפי הערכה זו:",

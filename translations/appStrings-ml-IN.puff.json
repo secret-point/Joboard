@@ -108,6 +108,10 @@
       "value" : "ശേഖരിക്കുന്ന എല്ലാ വിവരങ്ങളും സ്വകാര്യ കക്ഷികളുടെ കൈവശമുള്ള വ്യക്തിഗത ഡാറ്റയുടെ പരിരക്ഷ സംബന്ധിച്ച ഫെഡറൽ നിയമത്തിനും ഡാറ്റാ സ്വകാര്യതയെക്കുറിച്ചുള്ള അതിന്റെ നിയന്ത്രണങ്ങൾ, മാർഗ്ഗനിർദ്ദേശങ്ങൾ, മറ്റ് ബാധകമായ വ്യവസ്ഥകൾ, അതുപോലെ ജീവനക്കാർക്കും കൂടാതെ/അല്ലെങ്കിൽ ഉദ്യോഗാർത്ഥികൾക്കും വേണ്ടിയുള്ള കമ്പനിയുടെ സ്വകാര്യതാ അറിയിപ്പ് എന്നിവ അനുസരിച്ച് കൈമാറ്റം ചെയ്യപ്പെട്ടേക്കാമെന്ന് എനിക്കറിയാം.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "വൈവിധ്യമാർന്നതും എല്ലാവരെയും ഉൾക്കൊള്ളുന്നതുമായ തൊഴിലിടം പ്രദാനം ചെയ്യാന്‍ Amazon പ്രതിജ്ഞാബദ്ധമാണ്. Amazon ഒരു തുല്യ അവസര തൊഴിലുടമയാണ്, മാത്രമല്ല വംശം, ദേശീയ ഉത്ഭവം, ലിംഗഭേദം, ലിംഗ വ്യക്തിത്വം, ലൈംഗിക ആഭിമുഖ്യം, പരിരക്ഷിത വെറ്ററൻ സ്റ്റാറ്റസ്, വൈകല്യം, പ്രായം അല്ലെങ്കിൽ മറ്റ് നിയമപരമായ പരിരക്ഷിത നില എന്നിവയുടെ അടിസ്ഥാനത്തിൽ വിവേചനം കാണിക്കുന്നില്ല. ഒരു താമസ സൗകര്യം അഭ്യർത്ഥിക്കാൻ ആഗ്രഹിക്കുന്ന ഭിന്നശേഷിക്കാരായ വ്യക്തികൾക്ക് <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> സന്ദർശിക്കാം",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റയുടെ പരിരക്ഷ ഗൗരവമായി എടുക്കുന്നു, നിയമാനുസൃതമായി മാത്രമേ നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റ പ്രോസസ് ചെയ്യുകയുള്ളൂ. പ്രത്യേകിച്ചും, നിങ്ങളുടെ മുൻകൂർ സമ്മതമില്ലാതെ, നിയമം അനുശാസിക്കാത്തപക്ഷം, ഏതെങ്കിലും മൂന്നാം കക്ഷിയുമായി ഞങ്ങൾ നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റ പങ്കിടില്ല. നിങ്ങൾ മറ്റൊരു തരത്തിൽ പരാമര്‍ശിക്കുന്നില്ലെങ്കിൽ, നിയമിക്കുന്ന Amazon കമ്പനി നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റ USA-യിലെ Amazon.com അല്ലെങ്കിൽ അതിന്‍റെ അഫിലിയേറ്റുകളിൽ ഒന്ന് സംരക്ഷിക്കുന്ന ഇലക്ട്രോണിക് ഡാറ്റാബേസിൽ സംഭരിക്കും. Amazon നിങ്ങളുടെ സ്വകാര്യ ഡാറ്റ സംഭരിക്കുന്നതും പ്രോസസ്സ് ചെയ്യുന്നതും എങ്ങനെയെന്നതിനെക്കുറിച്ചുള്ള പൂർണ്ണ വിവരങ്ങൾക്ക്, ദയവായി ഇവിടെ ക്ലിക്ക് ചെയ്യുക <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "താമസസൗകര്യങ്ങൾ",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazon-ൽ, ഞങ്ങളുടെ തൊഴിലാളികളുടെ വൈവിധ്യവും ഞങ്ങളുടെ വൈവിധ്യമാർന്ന പ്രവർത്തന രീതികളും ഞങ്ങൾ ആഘോഷിക്കുന്നു. നിങ്ങൾ ഭിന്നശേഷിയുള്ള ആളായിരിക്കുകയും വിലയിരുത്തൽ ഉൾപ്പെടെയുള്ള നിയമന പ്രക്രിയയുടെ വേളയിൽ താമസസൗകര്യം ആവശ്യമായിവരുകയും ചെയ്യുന്നെങ്കിൽ, ദയവായി സന്ദർശിക്കുക, <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "ഈ വിലയിരുത്തലിന്‍റെ എല്ലാ വിഭാഗങ്ങളും:",

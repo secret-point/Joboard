@@ -156,6 +156,10 @@
       "value" : "आवश्यक कागदपत्रे पूर्ण करा",
       "note" : "Text for complete required documents application step"
     },
+    "BB-ApplicationSteps-enter-required-information-text" : {
+      "value" : "आवश्यक माहिती प्रविष्ट करा",
+      "note" : "Text for complete the required information form step"
+    },
     "BB-ApplicationSteps-schedule-preHire-appt-text" : {
       "value" : "प्री-हायर अपॉइंटमेंट शेड्यूल करा",
       "note" : "Text for Schedule pre-hire appointment application step"
@@ -3091,6 +3095,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "शिफ्ट प्राधान्ये",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "रेफरल तपशील",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "तुम्हाला विद्यमान Amazon कर्मचाऱ्याने रेफर केले होते का?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "रेफरल लॉगिन ID",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "अर्ज मागे घेण्यात अयशस्वी.",

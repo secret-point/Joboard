@@ -1516,6 +1516,10 @@
       "value" : "便利",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "在亚马逊，我们不仅倡导员工队伍的多样性，还倡导我们工作方式的多样性。如果您是残障人士且在招聘过程中（包括评估过程中）需要提供住宿，请访问<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>亚马逊便利。</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "此评估的所有部分：",
       "note" : "Text for the assessment pace and sections of the assessments list header text"

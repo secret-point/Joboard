@@ -188,6 +188,10 @@
       "value" : "ಹೀಗೆ ವಿಂಗಡಿಸಿ",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "ವೈಶಿಷ್ಟ್ಯಗೊಳಿಸಿದ",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "ಪಾವತಿ ದರ - ಗರಿಷ್ಠದಿಂದ ಕನಿಷ್ಠ",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -1704,6 +1708,22 @@
       "value" : "ನಿಮ್ಮ ರೆಫರ‌‌‌‌‌‌ರ್‌ನ ಲಾಗಿನ್ ID ಯನ್ನು ನಾವು ಮೌಲ್ಯೀಕರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಸಹಾಯಕ್ಕಾಗಿ www.amazon.com/applicationhelp ನಲ್ಲಿ ದಯವಿಟ್ಟು ನಮ್ಮೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "ಉದ್ಯೋಗದ ನೇಮಕಾತಿ ಪೂರ್ವ ವಿವರಗಳು",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "ದಿನಾಂಕ",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "ಸಮಯ",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "ಸಭೆಯ ವಿವರಗಳು",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೆಫರರ್ ಲಾಗಿನ್ ID (ಲೋವರ್ ಕೇಸ್ ಅಕ್ಷರಗಳು ಮಾತ್ರ) ಅನ್ನು ಒದಗಿಸಿ",
       "note" : "Text for the thank you page referral login input label text"
@@ -3107,6 +3127,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "ಶಿಫ್ಟ್ ಆದ್ಯತೆಗಳು",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "ರೆಫರಲ್ ವಿವರಗಳು",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ Amazon ಉದ್ಯೋಗಿಯಿಂದ ನಿಮ್ಮನ್ನು ರೆಫರ್ ಮಾಡಲಾಗಿದೆಯೇ?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "ರೆಫರಲ್ ಲಾಗಿನ್ ID",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹಿಂಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ.",

@@ -188,6 +188,10 @@
       "value" : "इसके अनुसार सॉर्ट करें",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "फ़ीचर्ड",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "वेतन दर - उच्चतम से निम्नतम",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -960,6 +964,14 @@
       "value" : "डैशबोर्ड पर वापस जाएं",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Amazon में आवेदन करने के लिए धन्यवाद!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "आपने पहले ही इस नौकरी के लिए आवेदन कर दिया है. अपना आवेदन देखने के लिए डैशबोर्ड पर लौटें.",
+      "note" : "Text for already applied job description text"
+    },
     "BB-already-applied-button-text-UK" : {
       "value" : "डैशबोर्ड पर जाएं",
       "note" : "Text for already applied job return to dashboard button text"
@@ -1563,6 +1575,10 @@
     "BB-ReviewSubmit-pre-hire-appointment-section-hours-text" : {
       "value" : "घंटे:",
       "note" : "Text for the pre-hire appointment section hours text"
+    },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "समय:",
+      "note" : "Text for the pre-hire appointment section time text"
     },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "हम आपको ऊपर दिए गए समय पर मिलने के लिए उत्सुक हैं.",
@@ -3096,6 +3112,18 @@
       "value" : "शिफ़्ट प्राथमिकताएं",
       "note" : "Text for review-submit shift preference section title"
     },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "रेफ़रल डिटेल्स",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "क्या आपको किसी मौजूदा Amazon कर्मचारी द्वारा रेफ़र किया गया था?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "रेफ़रल लॉगिन ID",
+      "note" : "Text for review-submit referral login ID label"
+    },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "आवेदन वापस लेने में असफल रहे.",
       "note" : "Text for withdraw multiple application failure error message"
@@ -3120,6 +3148,10 @@
       "value" : "हम फ़िलहाल आपके आवेदन का आकलन कर रहे हैं और आपके द्वारा दिए गए ईमेल एड्रेस का इस्तेमाल करके आपसे ज़ल्द ही संपर्क करेंगे.",
       "note" : "Content for the Generic error page in the UK application"
     },
+    "BB-uk-generic-error-return-to-dashboard-button-label" : {
+      "value" : "डैशबोर्ड पर वापस जाएं",
+      "note" : "return to dashboard button label in the Generic error page"
+    },
     "BB-schedule-card-duration-permanent" : {
       "value" : "स्थायी",
       "note" : ""
@@ -3131,6 +3163,18 @@
     "BB-schedule-card-duration-fixed-term-contract-with-end-date" : {
       "value" : "तब तक के लिए फ़िक्स्ड टर्म कॉन्ट्रैक्ट",
       "note" : ""
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-1" : {
+      "value" : "हमारा सुझाव है कि ध्यान भटकाने से बचने के लिए आपको एक शांत जगह मिल जाए.",
+      "note" : "Assessment condition number 1"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-2" : {
+      "value" : "मूल्यांकन पूरा करने के बाद, आपको अपनी आवेदन प्रक्रिया में वापस कर दिया जाएगा.",
+      "note" : "rAssessment condition number 2"
+    },
+    "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
+      "value" : "हमारी समावेशी संस्कृति Amazonians को हमारे ग्राहकों के लिए सर्वोत्तम परिणाम देने में सक्षम बनाती है. अगर आप विकलांग हैं और साक्षात्कार या ऑनबोर्डिंग प्रक्रिया के लिए समर्थन सहित आवेदन और भर्ती प्रक्रिया के दौरान समायोजन की ज़रूरत है, तो कृपया आवेदक-उम्मीदवार आवास टीम (ACAT) से संपर्क करें, सोमवार से शुक्रवार 7:00 am GMT - 4:00 pm GMT. अगर यूनाइटेड किंगडम से सीधे कॉल कर रहे हैं तो, कृपया +44 800 086 9884 डायल करें. अगर आयरलैंड से कॉल कर रहे हैं तो, कृपया +353 1800 851 489 डायल करें. अगर आपको अपनी नई भूमिका में समायोजन की ज़रूरत होती है और आप अपना पहला दिन शुरू करने से पहले अनुरोध करना चाहते हैं, तो आप हमसे संपर्क भी कर सकते हैं.",
+      "note" : "Assessment condition number 3"
     }
   }
 }
