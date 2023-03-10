@@ -3220,7 +3220,7 @@
       "value" : "per week",
       "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
     },
-    "BB-schedule-card-details-connective-text-between-hours-and-minutes" : {
+    "BB-connective-text-between-hours-and-minutes" : {
       "value" : "and",
       "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }

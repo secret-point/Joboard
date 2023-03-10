@@ -3199,6 +3199,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "아마존은 포괄적인 문화를 통해 고객에게 최상의 결과를 제공할 수 있도록 Amazonian에게 자신감을 부여합니다. 장애가 있어 지원 및 채용 과정에서 인터뷰 또는 온보딩 과정에 대한 지원을 포함하여 조정이 필요한 경우 월~금 오전 7시~오후 4시(그리니치 표준시)에 신청자-지원자 편의 팀(ACAT)에 문의하시기 바랍니다. 영국에서 직통으로 전화를 거는 경우 +44 800 086 9884로 전화하세요. 아일랜드에서 전화하는 경우 +353 1800 851 489로 전화하세요. 새로운 역할에 대한 조정이 필요하고 첫날 근무를 시작하기 전에 요청을 시작하려는 경우 저희에게 문의해 주세요.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "분",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "분",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "시간",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "시간",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "주당",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "및",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

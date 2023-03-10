@@ -1660,6 +1660,22 @@
       "value" : "Não foi possível validar a ID de login do seu referenciador. Fale conosco em www.amazon.com/applicationhelp para obter ajuda.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
     },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "Detalhes da reunião de pré-contratação",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "Data",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "Hora",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "Detalhes da reunião",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
+    },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "Insira sua ID de login de referência (somente letras minúsculas)",
       "note" : "Text for the thank you page referral login input label text"
@@ -3063,6 +3079,18 @@
     "BB-ReviewSubmit-shift-preference-section-title-text" : {
       "value" : "Preferências de turno",
       "note" : "Text for review-submit shift preference section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-details-title-text" : {
+      "value" : "Detalhes da indicação",
+      "note" : "Text for review-submit referral details section title"
+    },
+    "BB-Kondo-ReviewSubmit-referral-were-you-referred-label" : {
+      "value" : "Você foi indicado por um funcionário atual da Amazon?",
+      "note" : "Text for review-submit were you referred label"
+    },
+    "BB-Kondo-ReviewSubmit-referral-login-id-label" : {
+      "value" : "ID de login de indicação",
+      "note" : "Text for review-submit referral login ID label"
     },
     "BB-withdraw-application-error-message-failed-withdraw-application-error" : {
       "value" : "Falha ao remover a inscrição.",

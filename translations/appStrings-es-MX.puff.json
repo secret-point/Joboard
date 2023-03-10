@@ -853,7 +853,7 @@
       "note" : "Text for the most recent Amazon building input error text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-label-text" : {
-      "value" : "Fechas de ingreso: Desde/Hasta A (MM/AA a MM/AA)",
+      "value" : "Fechas de ingreso: Desde/Hasta A (MM/AA - MM/AA)",
       "note" : "Text for the dates of employment at Amazon input label text"
     },
     "BB-BGC-additional-bgc-date-of-employment-at-Amazon-error-text-fix" : {
@@ -2637,7 +2637,7 @@
       "note" : "Text for Self Identification Pronouns: She"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-they-title-text" : {
-      "value" : "Ellos",
+      "value" : "Elle",
       "note" : "Text for Self Identification Pronouns: They"
     },
     "BB-SelfId-equal-opportunity-form-pronoun-mx-other-title-text" : {
