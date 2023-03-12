@@ -108,6 +108,10 @@
       "value" : "我了解，收集的所有信息均可根据《保护私人持有个人数据的联邦法律（Federal Law on the Protection of Personal Data in the Possession of Private Parties）》及其规章、准则和其他有关数据隐私的适用条款，以及按照公司员工和/或候选人隐私声明进行转移。",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "亚马逊致力于打造多元化和包容性的工作场所。亚马逊是一家提供公平就业机会的雇主，不会基于种族、国籍、性别、性别认同、性取向、受保护的退伍军人身份、残疾、年龄、或其他受法律保护的身份进行歧视。想要申请住宿的残障人士，请访问<a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "亚马逊非常重视您的个人数据保护，只会依法处理您的个人数据。特别是，除非法律强制，否则未经您事先同意，我们不会与任何第三方共享您的个人数据。除非您另有说明，否则招聘的亚马逊公司会将您的个人数据存储在由 Amazon.com 在美国或其附属公司之一维护的电子数据库中。有关亚马逊如何存储和处理您的个人数据的完整信息，请点击此处<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'> http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -3195,6 +3199,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "我们的包容文化使得亚马逊员工能够为客户提供最好的成果。如果您患有残疾，并且在应聘和聘用流程中需要调整，包括在面试或入职流程中需要帮助，请在格林尼治标准时间周一至周五上午 7:00 至下午 4:00 联系残障应聘者帮助团队 (ACAT)。如果您在英国，请拨打 +44 800 086 9884。如果您在爱尔兰，请拨打 +353 1800 851 489。如果您需要调整新职务，并且想在入职第一天前提出申请，您也可以联系我们。",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "分钟",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "分钟",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "小时",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "小时",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "每周",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "和",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

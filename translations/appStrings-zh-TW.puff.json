@@ -188,6 +188,10 @@
       "value" : "排序依據",
       "note" : "Text for sorting schedule flyout title"
     },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "精選",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
+    },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "薪資費率 - 最高至最低",
       "note" : "Text for sort schedule by payRate from highest to lowest"
@@ -1703,6 +1707,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "我們無法驗證推薦人的登入 ID，請透過 www.amazon.com/applicationhelp 聯絡我們以尋求協助。",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "聘前約見詳細內容",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "日期",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "時間",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "會面詳細內容",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "請提供您的推薦人登入 ID (僅限小寫字母)",

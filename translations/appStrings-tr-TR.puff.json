@@ -1516,6 +1516,10 @@
       "value" : "Konaklamalar",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazon’da, iş gücümüzün ve çalışma yollarımızın çeşitliliğinden gurur duyarız. Bir engeliniz varsa ve değerlendirme de dahil olmak üzere işe alım sürecinde bir düzenlemeye ihtiyacınız varsa lütfen <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>Amazon Konaklama sayfasını ziyaret edin.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Bu değerlendirmenin tüm bölümleri:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -3191,6 +3195,14 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Kapsayıcı kültürümüz, Amazonian’lara müşterilerimiz için en iyi sonuçları sunma konusunda yetki verir. Bir engeliniz var ve başvuru ve işe alım sürecinde mülakat veya işe alım süreci için destek de dahil olmak üzere bir ayarlamaya ihtiyaç duyuyorsanız lütfen pazartesi-cuma günleri 07.00-16.00 GMT saatleri arasında Başvuru Sahibi-Aday Destekleme Ekibi (ACAT) ile iletişime geçin. Doğrudan Birleşik Krallık'tan arıyorsanız lütfen +44 800 086 9884 numaralı telefonu arayın. İrlanda'dan arıyorsanız lütfen +353 1800 851 489 numaralı telefonu arayın. Yeni iş rolünüzde bir ayarlamaya ihtiyacınız var ve ilk gününüze başlamadan önce bir istek başlatmak istiyorsanız bizimle iletişime de geçebilirsiniz.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "hafta başına",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "ve",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

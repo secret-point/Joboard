@@ -3195,6 +3195,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "La nostra cultura inclusiva consente agli Amazonian di fornire ai nostri clienti i risultati migliori. Se hai una disabilità e hai bisogno di un trattamento speciale durante il processo di candidatura e assunzione, incluso il supporto per il colloquio o il processo di onboarding, contatta l’Applicant-Candidate Accommodation Team (ACAT), dal lunedì al venerdì, dalle 7:00 GMT alle 16:00 GMT. Se chiami direttamente dal Regno Unito, componi il numero +44 800 086 9884. Se chiami dall'Irlanda, componi il numero +353 1800 851 489. Puoi anche contattarci se hai bisogno di un adeguamento nel tuo nuovo ruolo e vuoi avviare una richiesta prima di iniziare il tuo primo giorno di lavoro.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }

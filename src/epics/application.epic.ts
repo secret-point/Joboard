@@ -333,13 +333,15 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
     const state = store.getState();
 
     if (scheduleId && state.appConfig.results?.envConfig) {
-      window.hasCompleteTaskOnSkipSchedule = () => {
-        // no page redirect, candidate is still on consent page, just add applicationId and scheduleId to url
-        routeToAppPageWithPath(CONSENT, [
-          { paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId },
-          { paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId }]);
-        completeTask(applicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
-      };
+      // no page redirect, candidate is still on consent page, just add applicationId and scheduleId to url
+      routeToAppPageWithPath(CONSENT, [
+        { paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId },
+        { paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId }]);
+      if (scheduleId !== createApplicationResponse?.jobScheduleSelected?.scheduleId) {
+        window.hasCompleteTaskOnSkipSchedule = () => {
+          completeTask(applicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
+        };
+      }
       boundWorkflowRequestStart();
       loadWorkflowDS(
         jobId || "",

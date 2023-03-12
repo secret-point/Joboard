@@ -3191,6 +3191,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Notre culture inclusive confère aux employés d’Amazon les moyens nécessaires pour fournir les meilleurs résultats à nos clients. Si vous avez un handicap et avez besoin d’une mesure d’adaptation lors du processus de candidature et d’embauche, y compris d’une assistance pour le processus d’entrevue ou d’accueil, veuillez contacter l’Équipe d’adaptation du postulant-candidat (ACAT), du lundi au vendredi, de 7 h à 16 h GMT. Si vous appelez directement du Royaume-Uni, veuillez composer le +44 800 086 9884. Si vous appelez depuis l’Irlande, veuillez composer le +353 1800 851 489. Vous pouvez également nous contacter si vous avez besoin d’une mesure d’adaptation dans votre nouvelle fonction et si vous souhaitez initier une demande avant de commencer votre Jour 1.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "mn",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "mn",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }

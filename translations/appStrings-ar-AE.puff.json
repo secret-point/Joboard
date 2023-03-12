@@ -108,6 +108,10 @@
       "value" : "أدرك أن جميع المعلومات التي تم جمعها قد يتم نقلها وفقًا للقانون الاتحادي بشأن حماية البيانات الشخصية في حوزة الأطراف الخاصة ولوائحه وإرشاداته العامة وأحكامه الأخرى المعمول بها بشأن خصوصية البيانات، وكذلك وفقًا لإشعار الخصوصية الخاص بالشركة للموظفين و/أو المرشحين.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "تلتزم أمازون بتوفير مكان عمل متنوع ويشمل الجميع. أمازون هي جهة عمل توفّر فرص متكافئة، ولا تمارس أي تمييز على أساس العرق أو الأصل القومي أو الجنس أو الهوية الجنسية أو الميل الجنسي أو حالة المحاربين القدامى الذين يتمتعون بحماية أو الإعاقة أو العمر، أو أي حالة أخرى تتمتع بحماية قانونية. بالنسبة للأفراد ذوي الإعاقة الذين يرغبون في طلب تجهيزات ومرافق، يُرجى زيارة <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "تأخذ أمازون حماية بياناتك الشخصية على محمل الجد ولن تعالج بياناتك الشخصية إلا وفقًا للقانون. على وجه الخصوص، نحن لا نشارك بياناتك الشخصية مع أيّ طرف ثالث بدون موافقتك المسبقة، ما لم يُلزمنا القانون بفعل ذلك. ما لم تصرِّح بخلاف ذلك، ستقوم شركة التوظيف التابعة لأمازون بتخزين بياناتك الشخصية في قاعدة البيانات الإلكترونية التي تحتفظ بها Amazon.com في الولايات المتحدة الأمريكية أو إحدى الشركات التابعة لها. للحصول على معلومات كاملة حول كيفية قيام أمازون بحفظ ومعالجة بياناتك الشخصية، يرجى النقر على هذا الرابط <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "أماكن الإقامة",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "في أمازون، نحتفي بتنوع القوى العاملة لدينا والطرق المتنوعة التي نعمل بها. إذا كنت تعاني من إعاقة وتحتاج إلى تجهيزات ومرافق أثناء عملية التوظيف، بما في ذلك التقييم، يُرجى زيارة <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>تجهيزات أمازون.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "جميع أقسام هذا التقييم:",
@@ -3191,6 +3199,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "إن ثقافتنا القائمة على استيعاب وتقبل الجميع تُمكِّن موظفي أمازون من تقديم أفضل الخدمات لعملائنا. فإذا كنت تعاني من إعاقة وتحتاج إلى تعديل أثناء عملية تقديم الطلب والتوظيف، بما في ذلك الدعم أثناء إجراء المقابلة أو عملية التأهيل لبدء العمل، فيُرجى الاتصال بفريق خدمات المتقدمين والمرشحين للوظائف (ACAT)، من الإثنين إلى الجمعة من الساعة 7:00 صباحًا بتوقيت غرينتش إلى 4:00 مساءً بتوقيت غرينتش. في حالة الاتصال مباشرةً من المملكة المتحدة، فيُرجى الاتصال بالرقم +44 800 086 9884. في حالة الاتصال من أيرلندا، فيُرجى الاتصال بالرقم +353 1800 851 489. ويمكنك أيضًا الاتصال بنا إذا كنت بحاجة إلى إجراء تعديل في دورك الجديد وترغب في بدء تقديم طلب قبل بداية يومك الأول في العمل.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "د",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "د",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "س",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "س",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }

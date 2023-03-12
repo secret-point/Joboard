@@ -1520,6 +1520,10 @@
       "value" : "Hjælpemidler",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Hos Amazon fejrer vi mangfoldigheden af vores arbejdsstyrke og de forskellige måder, vi arbejder på. Hvis du har et handicap og har brug for hjælpemidler under ansættelsesprocessen, inklusive vurderingen, så skal du gå til <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Alle afsnit af denne evaluering:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -3195,6 +3199,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Vores inkluderende kultur sætter medarbejderne hos Amazon i stand til at levere de bedste resultater til vores kunder. Hvis du har et handicap og har brug for en særlig indretning under ansøgnings- og ansættelsesprocessen, herunder support til interviewet eller onboarding-processen, bedes du kontakte ACAT-teamet (Applicant-Candidate Accomodation Team) mandag til fredag mellem kl. 7:00 og 16:00 GMT. Hvis du ringer direkte fra Storbritannien, skal du ringe på +44 800 086 9884. Hvis du ringer fra Irland, skal du ringe på +353 1800 851 489. Du kan også kontakte os, hvis du muligvis har brug for en særlig indretning i din nye rolle, og gerne vil starte en anmodning inden din 1. dag.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min.",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "minutter",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "t",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "timer",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "pr. uge",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "og",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

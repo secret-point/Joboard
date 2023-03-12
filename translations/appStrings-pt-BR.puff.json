@@ -964,6 +964,54 @@
       "value" : "Voltar ao painel",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Agradecemos por se candidatar para a Amazon.",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "Você já se candidatou a esta vaga. Volte ao painel para ver sua candidatura.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-UK" : {
+      "value" : "Ir para o painel",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-v2" : {
+      "value" : "Você já enviou uma inscrição para a função:",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-v2" : {
+      "value" : "Você só pode ter uma inscrição ativa para esse ID de trabalho. Para ver sua inscrição atual e ver mais opções, clique em “Ir para o painel”.",
+      "note" : "Text for already applied job description text"
+    },
+    "BB-already-applied-button-text-v2" : {
+      "value" : "Ir para o painel",
+      "note" : "Text for already applied job return to dashboard button text"
+    },
+    "BB-already-applied-but-can-be-reset" : {
+      "value" : "Você já tem uma inscrição ativa para a função:",
+      "note" : "Text for already applied job but can be reset"
+    },
+    "BB-already-applied-but-can-be-reset-dashboard-description" : {
+      "value" : "Se você continuar com esta nova inscrição, a existente será retirada. Para visualizar ou retomar sua inscrição existente, clique em “Ir para o painel”.",
+      "note" : "Text for already applied job but can be reset description to go back to dashboard"
+    },
+    "BB-already-applied-but-can-be-reset-continue-description" : {
+      "value" : "Para continuar com a nova inscrição, clique em “Continuar com a inscrição”.",
+      "note" : "Text for already applied job but can be reset description to continue new application"
+    },
+    "BB-already-applied-but-continue-button-text" : {
+      "value" : "Continue com a nova inscrição",
+      "note" : "Text for already applied job but can continue with new application button"
+    },
+    "BB-new-application" : {
+      "value" : "Nova inscrição:",
+      "note" : "Text for new application"
+    },
+    "BB-existing-application" : {
+      "value" : "Inscrição existente:",
+      "note" : "Text for existing application"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulário CC-305",
       "note" : "Text for Self Identification form name"

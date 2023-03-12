@@ -108,6 +108,10 @@
       "value" : "मला माहीत आहे की, एकत्रित केलेली सर्व माहिती खाजगी पक्षांच्या ताब्यात असलेल्या वैयक्तिक डेटाच्या संरक्षणासंबंधी फेडरल कायद्यानुसार आणि डेटा गोपनीयतेविषयीचे त्यांचे नियम, मार्गदर्शक तत्त्वे आणि इतर लागू तरतुदी तसेच कंपनीच्या कर्मचाऱ्यांसाठी आणि/किंवा उमेदवारासाठी कंपनीच्या गोपनीयता नोटीस नुसार हस्तांतरित केली जाऊ शकते.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon वैविध्यपूर्ण आणि सर्वसमावेशक कार्यस्थळासाठी वचनबद्ध आहे. Amazon एक समान संधी देणारा नियोक्ता आहे आणि वंश, मूळ राष्ट्रीयता, लिंग, लिंग ओळख, लैंगिक अभिमुखता, संरक्षित सैनिक स्थिती, अपंगत्व, वय किंवा इतर कायदेशीररित्या संरक्षित स्थितीच्या आधारावर भेदभाव करत नाही. अपंग व्यक्तींसाठी जे निवासस्थानाची विनंती करू इच्छितात, त्यांनी कृपया <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> ला भेट द्या",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon तुमचे वैयक्तिक डेटा संरक्षण गांभीर्याने घेते आणि केवळ कायद्यानुसारच तुमच्या वैयक्तिक डेटावर प्रक्रिया करेल. विशेषतः, कायद्याने असे करण्यास भाग पाडल्याशिवाय आम्ही तुमचा वैयक्तिक डेटा तुमच्या पूर्व संमतीशिवाय कोणत्याही तृतीय पक्षासह शेअर करत नाही. तुम्ही अन्यथा व्यक्त केल्याशिवाय, नियुक्ती करणारी Amazon कंपनी तुमचा वैयक्तिक डेटा USA मधील Amazon.com द्वारे राखलेल्या इलेक्ट्रॉनिक डेटाबेसमध्ये किंवा तिच्या संलग्नांपैकी एकामध्ये साठवेल. Amazon तुमचा वैयक्तिक डेटा कसा साठवतो आणि त्यावर प्रक्रिया करतो याबद्दल संपूर्ण माहितीसाठी, कृपया येथे क्लिक करा <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -187,6 +191,10 @@
     "BB-JobOpportunity-sort-schedule-flyout-title" : {
       "value" : "यानुसार क्रमवारी लावा",
       "note" : "Text for sorting schedule flyout title"
+    },
+    "BB-JobOpportunity-sort-schedule-by-featured" : {
+      "value" : "वैशिष्ट्यीकृत",
+      "note" : "Text for sort schedule by payRate from highest to lowest"
     },
     "BB-JobOpportunity-sort-schedule-by-pay-rate-high-to-least" : {
       "value" : "वेतन दर - सर्वात जास्त ते सर्वात कमी",
@@ -960,6 +968,14 @@
       "value" : "डॅशबोर्डवर परत जा",
       "note" : "Text for aleady applied job return to dashboard button text"
     },
+    "BB-already-applied-UK" : {
+      "value" : "Amazon वर अर्ज केल्याबद्दल धन्यवाद!",
+      "note" : "Text for already applied job text"
+    },
+    "BB-already-applied-description-UK" : {
+      "value" : "आपण आधीच या नोकरीसाठी अर्ज केला आहे. आपला अर्ज पाहण्यासाठी डॅशबोर्डवर परत जा.",
+      "note" : "Text for already applied job description text"
+    },
     "BB-already-applied-button-text-UK" : {
       "value" : "डॅशबोर्डवर जा",
       "note" : "Text for already applied job return to dashboard button text"
@@ -1564,6 +1580,10 @@
       "value" : "तास:",
       "note" : "Text for the pre-hire appointment section hours text"
     },
+    "BB-ReviewSubmit-pre-hire-appointment-section-time-label" : {
+      "value" : "वेळ:",
+      "note" : "Text for the pre-hire appointment section time text"
+    },
     "BB-ReviewSubmit-pre-hire-appointment-section-look-forward-text" : {
       "value" : "आम्ही तुम्हाला वरील वेळी भेटण्यास उत्सुक आहोत.",
       "note" : "Text for the pre-hire appointment section look forward text"
@@ -1691,6 +1711,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "आम्ही तुमच्या रेफररचा लॉगिन ID प्रमाणित करू शकलो नाही, कृपया आमच्याशी www.amazon.com/applicationhelp येथे सहाय्यासाठी चॅट करा.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "प्री-हायर अपॉइंटमेंटचे तपशील",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "तारीख",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "वेळ",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "मीटिंगचे तपशील",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "कृपया तुमचा रेफरर लॉगिन ID प्रदान करा (फक्त लोअर केस अक्षरे)",

@@ -3199,6 +3199,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Amazonの包括的な文化は、Amazonで働く従業員がお客様のために最高の成果をもたらせるよう支援するものです。障がいをお持ちで、面接やオンボーディングプロセスのサポートを含め、応募およびアプリケーションプロセス中に調整が必要な場合は、月曜日〜金曜日の午前7時（GMT）〜午後4時（GMT）まで、応募者・候補者対応チーム（ACAT）までご連絡ください。イギリスから直接お電話される場合は、+44 800 086 9884にダイヤルしてください。アイルランドからお電話される場合は、+353 1800 851 489にダイヤルしてください。また、新しい役割で調整が必要な場合、もしくは初日の開始前にリクエストしたいことがある場合は、お問い合わせください。",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "分",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "分",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "時間",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "時間",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }

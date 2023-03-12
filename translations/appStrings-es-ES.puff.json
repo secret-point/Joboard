@@ -3199,6 +3199,14 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Nuestra cultura empresarial inclusiva permite a los Amazonians ofrecer los mejores resultados a nuestros clientes. Si tienes una discapacidad y necesitas una adaptación durante el proceso de solicitud de empleo y contratación, incluido el apoyo para la entrevista o la incorporación, ponte en contacto con el equipo de adaptación de postulantes y candidatos (ACAT) de lunes a viernes, de 7:00 a 16:00 h GMT. Si llamas directamente desde el Reino Unido, marca el +44 800 086 9884. Si llamas desde Irlanda, marca el +353 1800 851 489. También puedes contactarnos si necesitas una adaptación en tu nueva función y deseas iniciar una solicitud antes de empezar el primer día.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "por semana",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "y",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }
