@@ -279,7 +279,7 @@ export const AdditionalBGCInfo = (props: AdditionalBGCInfoMergedProps) => {
 
   const handleClickNext = () => {
     boundResetBannerMessage();
-    if (candidatePatchRequest && candidateData && applicationData) {
+    if (candidatePatchRequest && candidateData && applicationData && scheduleDetail) {
       handleSubmitAdditionalBgc(candidateData, applicationData, candidatePatchRequest, formError, stepConfig);
     }
   };
