@@ -2,6 +2,7 @@ import { ofType } from "redux-observable";
 import { from, Observable, of } from "rxjs";
 import { catchError, map, switchMap } from "rxjs/internal/operators";
 import {
+  actionCalculateInclinedValueResult,
   actionCreateApplicationAndSkipScheduleDSFailed,
   actionCreateApplicationAndSkipScheduleDSSuccess,
   actionCreateApplicationDSSuccess,
@@ -14,8 +15,7 @@ import {
   actionUpdateWorkflowNameFailed,
   actionUpdateWorkflowNameSuccess,
   actionWithdrawMultipleApplicationFailed,
-  actionWithdrawMultipleApplicationSuccess,
-  actionCalculateInclinedValueResult,
+  actionWithdrawMultipleApplicationSuccess
 } from "../actions/ApplicationActions/applicationActions";
 import {
   APPLICATION_ACTION_TYPES,
@@ -113,6 +113,11 @@ export const GetApplicationEpic = ( action$: Observable<any> ) => {
 
             if (action.onError) {
               action.onError(error);
+            }
+
+            // Route to access denied page if candidate try to login another candidate's application
+            if (error.errorCode === GET_APPLICATION_ERROR_CODE.CANDIDATE_NOT_AUTHORIZED) {
+              routeToAppPageWithPath(PAGE_ROUTES.ACCESS_DENIED);
             }
 
             const errorMessage = GetApplicationErrorMessage[error.errorCode] || GetApplicationErrorMessage[GET_APPLICATION_ERROR_CODE.INTERNAL_SERVER_ERROR];

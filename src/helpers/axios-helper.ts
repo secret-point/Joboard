@@ -4,6 +4,8 @@ import { ApiError } from "../utils/api/types";
 import { BB_UI_VERSION, PROXY_ERROR_MESSAGE } from "../utils/enums/common";
 import { log, LoggerType } from "./log-helper";
 import { pathByDomain, redirectToLoginCSDS } from "./utils";
+import { routeToAppPageWithPath } from "../utils/helper";
+import { PAGE_ROUTES } from "../components/pageRoutes";
 
 export const getAccessToken = () => {
   const accessToken = window.localStorage.getItem("accessToken");
@@ -59,9 +61,11 @@ export const errorHandler = (error: AxiosError) => {
     log(`[Axios] Response Error: ${error.response.statusText} ${error.response.status}`, error.response, LoggerType.ERROR);
 
     if (error.response.status === 401) {
+      log("[Axios] - Candidate not authorized, redirecting to login", error.response, LoggerType.ERROR);
       redirectToLoginCSDS();
     } else if (error.response.status === 403) {
-      window.location.assign(`${pathByDomain()}/#/403`);
+      log("[Axios] - Access denied, redirecting to access denied page", error.response, LoggerType.ERROR);
+      routeToAppPageWithPath(PAGE_ROUTES.ACCESS_DENIED);
     }
   } else if (error.request) {
     // The request was made but no response was received
