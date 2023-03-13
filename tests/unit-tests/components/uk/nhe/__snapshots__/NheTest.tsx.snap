@@ -357,7 +357,6 @@ exports[`Nhe should match snapshot without NHE Preference Card 1`] = `
         </DebouncedButton>
       </Col>
     </Col>
-    <NhePreferenceCard />
   </Col>
 </Col>
 `;

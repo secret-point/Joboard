@@ -108,6 +108,10 @@
       "value" : "சேகரிக்கப்பட்ட அனைத்து தகவல்களும், ‘தனிப்பட்ட தரவைப் பாதுகாப்பதற்கான கூட்டாட்சி சட்டத்தின்படி’ தனிப்பட்ட தரப்புகள் மற்றும் அதன் ஒழுங்குமுறைகள், வழிகாட்டுதல்கள் மற்றும் தரவு தனியுரிமை தொடர்பான பிற பொருந்தக்கூடிய விதிகள் மற்றும் பணியாளர்கள் மற்றும்/அல்லது விண்ணப்பதாரர்களுக்கான நிறுவனத்தின் தனியுரிமை அறிக்கைக்கு இணங்க மாற்றப்படலாம் என்பதை நான் அறிவேன்.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon ஒரு பன்முகத்தன்மையுள்ள மற்றும் அனைவருக்கும் ஏற்ற பணியிடத்தைத் தருவதற்கு உறுதிபூண்டுள்ளது. Amazon ஒரு சம வாய்ப்பளிக்கும் நிறுவனமாகும். இனம், தேசியத் தோற்றம், பாலினம், பாலின அடையாளம், பாலியல் நோக்குநிலை, பாதுகாக்கப்பட்ட படைவீரர் நிலை, மாற்றுத்திறன், வயது அல்லது பிற சட்டப்பூர்வமாகப் பாதுகாக்கப்பட்ட நிலை ஆகியவற்றின் அடிப்படையில் இங்கே பாகுபாடு இருக்காது. தங்குமிடத்தைக் கோர விரும்பும் மாற்றுத்திறனைக் கொண்ட நபர்கள், <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> தளத்திற்குச் செல்லவும்",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon உங்கள் தனிப்பட்ட தரவுப் பாதுகாப்பை தீவிரமாக எடுத்துக்கொள்கிறது மற்றும் சட்டப்படி மட்டுமே உங்கள் தனிப்பட்ட தரவைப் பயண்படுத்தும். குறிப்பாக, சட்டத்தின் நிர்பந்தமின்றி அல்லது உங்களின் முன் அனுமதியின்றி உங்கள் தனிப்பட்ட தரவை எந்தவொரு மூன்றாம் தரப்பினருடனும் நாங்கள் பகிர மாட்டோம். நீங்கள் இதைக் குறிப்பிட்டு வெளிப்படுத்தாவிட்டால், பணியமர்த்தப்படும் Amazon நிறுவனம் உங்கள் தனிப்பட்ட தரவை அமெரிக்காவில் Amazon.com அல்லது அதன் துணை நிறுவனங்களில் பராமரிக்கும் மின்னணு தரவுத்தளத்தில் சேமிக்கும். உங்கள் தனிப்பட்ட தரவை Amazon எவ்வாறு சேமித்து செயலாக்குகிறது என்பது பற்றிய முழுத் தகவல்களுக்கு, இங்கே கிளிக் செய்யவும்: <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1012,6 +1016,10 @@
       "value" : "ஏற்கெனவே உள்ள விண்ணப்பம்:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "வேலை ஐடி: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "படிவம் CC-305",
       "note" : "Text for Self Identification form name"
@@ -1515,6 +1523,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "தங்குமிடங்கள்",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazon இல், எங்கள் பணியாளர்களின் பன்முகத்தன்மையையும் நாங்கள் வேலை செய்யும் பல்வேறு வழிகளையும் கொண்டாடுகிறோம். நீங்கள் மாற்றுத்திறனாளியாக இருந்து, மதிப்பீட்டுத் தேர்வு உட்பட பணியமர்த்தல் செயல்முறையின்போது உங்களுக்குத் தங்குமிடம் தேவைப்பட்டால், <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation</a> என்பதற்குச் செல்லவும்",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "இந்த மதிப்பீட்டின் அனைத்துப் பிரிவுகளும்:",

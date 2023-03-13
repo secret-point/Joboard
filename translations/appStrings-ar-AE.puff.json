@@ -1016,6 +1016,10 @@
       "value" : "طلب موجود:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "معرف الوظيفة: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "نموذج CC-305",
       "note" : "Text for Self Identification form name"
@@ -3215,6 +3219,14 @@
     "BB-time-units-abbreviation-hours-plural" : {
       "value" : "س",
       "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "كل أسبوع",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "و",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

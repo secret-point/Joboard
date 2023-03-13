@@ -108,6 +108,10 @@
       "value" : "Je suis conscient que toutes les informations collectées peuvent être transférées conformément à la loi fédérale sur la protection des données personnelles détenues par des parties privées et à ses règlements, directives et autres dispositions applicables en matière de confidentialité des données, ainsi qu'en vertu des conditions de la déclaration de confidentialité de la société pour les employés et/ou candidats.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon s’engage à créer un environnement de travail inclusif et respectueux de la diversité. Amazon est un employeur garantissant l’égalité des chances et qui ne fait aucune discrimination fondée sur la race, l’origine nationale, le sexe, l’identité de genre, l’orientation sexuelle, le statut d’ancien combattant protégé, le handicap, l’âge ou tout autre statut légalement protégé. Pour les personnes handicapées qui souhaitent demander des mesures d’aménagement, consultez <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon prend au sérieux la protection de vos données personnelles et les traitera uniquement au regard de la loi. Plus particulièrement, nous ne partageons pas vos données personnelles avec des tiers sans votre consentement préalable, sauf si la loi nous y oblige. Sauf indication contraire de votre part, l’entreprise Amazon qui recrute stockera vos données personnelles dans la base de données électronique gérée par Amazon.com aux États-Unis ou l'une de ses filiales. Pour plus d'informations sur la manière dont Amazon stocke et traite vos données personnelles, cliquez ici <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"

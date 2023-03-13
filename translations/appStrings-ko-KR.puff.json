@@ -1016,6 +1016,10 @@
       "value" : "기존 지원서:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "작업 ID: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "양식 CC-305",
       "note" : "Text for Self Identification form name"

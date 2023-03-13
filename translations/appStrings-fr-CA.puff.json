@@ -108,6 +108,10 @@
       "value" : "Je suis conscient que tous les informations recueillies peuvent être transférées conformément à la Loi fédérale sur la protection des données personnelles en la possession de parties privées et à ses règlements, lignes directrices et autres dispositions applicables en matière de confidentialité des données, ainsi qu'aux termes de la Déclaration de confidentialité de la Société pour les employés et/ou les candidats.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon s’engage à offrir un environnement de travail diversifié et inclusif. Amazon est un employeur qui offre l’égalité des chances à tous et ne fait aucune discrimination basée sur la race, l’origine nationale, le genre, l’identité de genre, l’orientation sexuelle, le statut d’ancien combattant protégé, le handicap, l’âge ou tout autre statut protégé par la loi. Les personnes vivant avec un handicap et souhaitant demander une mesure d’adaptation sont priés de se rendre sur le site <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon prend la protection de vos données personnelles au sérieux et les traite uniquement en conformité avec la loi. En effet, nous ne partageons pas vos données personnelles avec des tiers sans votre consentement préalable, sauf si la loi nous y oblige. Sauf indication contraire de votre part, la société Amazon qui vous embauche stockera vos données personnelles dans la base de données électronique gérée par Amazon.com aux États-Unis ou par l’une de ses affiliées. Pour des informations complètes sur le stockage et le traitement de vos données personnelles par Amazon, veuillez cliquer sur <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Mesures d’adaptation",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Chez Amazon, nous valorisons non seulement la diversité de notre personnel, mais aussi celle de nos méthodes de travail. Si vous souffrez d’un handicap et souhaitez bénéficier de mesures d’adaptation pendant le processus d’embauche, y compris au cours de l’évaluation, veuillez vous rendre sur la page <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Mesure d’adaptation Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Toutes les parties de la présente évaluation :",

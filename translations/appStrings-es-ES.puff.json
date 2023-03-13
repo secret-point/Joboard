@@ -1016,6 +1016,10 @@
       "value" : "Solicitud existente:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "ID de trabajo: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulario CC-305",
       "note" : "Text for Self Identification form name"

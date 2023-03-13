@@ -1012,6 +1012,10 @@
       "value" : "Candidatura esistente:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "ID lavoro: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Modulo CC-305",
       "note" : "Text for Self Identification form name"

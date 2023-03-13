@@ -67,7 +67,7 @@ export const Nhe = ( props: MapStateToProps ) => {
   const scheduleDetail = schedule.results.scheduleDetail as ScheduleUK;
   const candidateData = candidate.results?.candidateData;
   const nheData = nhe.results.nheData as NHETimeSlotUK[];
-  const showNhePreferenceCard = nheData.length <= NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES;
+  const [showNhePreferenceCard, setShowNhePreferenceCard] = useState(false);
   const appointmentDateList = getUKNHEAppointmentTitleList(nheData);
   const appointmentTimeMap = getUKNHEAppointmentTimeMap(nheData);
   const { assessmentElegibility } = assessment.results ;
@@ -150,6 +150,10 @@ export const Nhe = ( props: MapStateToProps ) => {
     };
   }, [pageName]);
 
+  useEffect(() => {
+    setShowNhePreferenceCard(nheData?.length <= NHE_SLOTS_TO_DISPLAY_NHE_PREFERENCES);
+  }, [nheData]);
+
   const handleConfirmSelection = () => {
     boundResetBannerMessage();
     const selectedNhe: NHETimeSlotUK = nheData.filter(nhe => nhe.title === selectedNheDate && nhe.startTime === selectedNheTime)[0];
@@ -175,78 +179,80 @@ export const Nhe = ( props: MapStateToProps ) => {
             {t("BB-kondo-nhe-page-title-text", `You are almost there, ${displayFirstName} ${displayLastName}! Select your preferred date and time to schedule a pre-hire appointment where we check your work authorisation documents.`)}
           </Text>
         </Col>
-        <Row>
-          <Popover
-            triggerText={t("BB-Kondo-pre-hire-appointment-description-popover-title", "Pre-hire appointment is a virtual event")}
-            shouldCloseOnFocusLeave={false}
-          >
-            {({ close }) => (
-              <Col gridGap="S500" alignItems="flex-start">
-                <Text>
-                  {t("BB-Kondo-pre-hire-appointment-description-popover-content", "Pre - hire appointment will be held over video conference. Once you choose a date and time to connect with us, we will email you appointment details and link. If you have any questions or technical issues, please contact us.")}
-                </Text>
-                <Button onClick={close} variant={ButtonVariant.Tertiary}>
-                  {t("BB-Kondo-pre-hire-appointment-description-popover-close-button", "Close")}
-                </Button>
-              </Col>
-            )}
-          </Popover>
-        </Row>
         {nheData?.length > 0 && (
-          <Col>
-            <Col gridGap="S400">
-              <Col gridGap={12}>
-                <Label htmlFor="nheDateSelect" id="nheDateLabel">
-                  {t("BB-Kondo-nhe-appointment-input-date-label", "Choose appointment date")} *
-                </Label>
-                <Select
-                  id="nheDateSelect"
-                  onChange={(option) => {
-                    setSelectedNheDate(option);
-                    setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
-                  }}
-                  options={appointmentDateList}
-                  defaultValue={appointmentDateList[0]}
-                  value={selectedNheDate}
-                />
-              </Col>
-
-              <Col gridGap={12}>
-                <Label htmlFor="nheTimeSelect" id="nheTimeLabel">
-                  {t("BB-Kondo-nhe-appointment-time-input-label", "Choose appointment time")} *
-                </Label>
-                <Select
-                  id="nheTimeSelect"
-                  onChange={(option) => {
-                    setSelectedNheTime(option);
-                  }}
-                  options={appointmentTimeMap.get(selectedNheDate) || []}
-                  defaultValue={getDefaultUkNheApptTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
-                  value={selectedNheTime}
-                />
-              </Col>
-
-              {
-                !!maxNheSlotLength && (
-                  <Text fontSize="T100">
-                    {t("BB-kondo-nhe-nhe-slot-duration-notice", `All appointments slots are displayed in UK local time. Each appointment is up to ${maxNheSlotLength} minutes long.`, { maxNheSlotLength })}
-                  </Text>
-                )
-              }
-
-            </Col>
-            <Col className="nhe-sticky-button" padding={{ top: "S300" }}>
-              <DebouncedButton
-                variant={ButtonVariant.Primary}
-                onClick={() => {
-                  handleConfirmSelection();
-                }}
-                debounceTime={1000}
+          <>
+            <Row>
+              <Popover
+                triggerText={t("BB-Kondo-pre-hire-appointment-description-popover-title", "Pre-hire appointment is a virtual event")}
+                shouldCloseOnFocusLeave={false}
               >
-                {t("BB-kondo-nhe-page-confirm-selection-button-text", "Confirm Selection")}
-              </DebouncedButton>
+                {({ close }) => (
+                  <Col gridGap="S500" alignItems="flex-start">
+                    <Text>
+                      {t("BB-Kondo-pre-hire-appointment-description-popover-content", "Pre - hire appointment will be held over video conference. Once you choose a date and time to connect with us, we will email you appointment details and link. If you have any questions or technical issues, please contact us.")}
+                    </Text>
+                    <Button onClick={close} variant={ButtonVariant.Tertiary}>
+                      {t("BB-Kondo-pre-hire-appointment-description-popover-close-button", "Close")}
+                    </Button>
+                  </Col>
+                )}
+              </Popover>
+            </Row>
+            <Col>
+              <Col gridGap="S400">
+                <Col gridGap={12}>
+                  <Label htmlFor="nheDateSelect" id="nheDateLabel">
+                    {t("BB-Kondo-nhe-appointment-input-date-label", "Choose appointment date")} *
+                  </Label>
+                  <Select
+                    id="nheDateSelect"
+                    onChange={(option) => {
+                      setSelectedNheDate(option);
+                      setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
+                    }}
+                    options={appointmentDateList}
+                    defaultValue={appointmentDateList[0]}
+                    value={selectedNheDate}
+                  />
+                </Col>
+
+                <Col gridGap={12}>
+                  <Label htmlFor="nheTimeSelect" id="nheTimeLabel">
+                    {t("BB-Kondo-nhe-appointment-time-input-label", "Choose appointment time")} *
+                  </Label>
+                  <Select
+                    id="nheTimeSelect"
+                    onChange={(option) => {
+                      setSelectedNheTime(option);
+                    }}
+                    options={appointmentTimeMap.get(selectedNheDate) || []}
+                    defaultValue={getDefaultUkNheApptTimeFromMap(appointmentTimeMap, selectedNheDate)[0]}
+                    value={selectedNheTime}
+                  />
+                </Col>
+
+                {
+                  !!maxNheSlotLength && (
+                    <Text fontSize="T100">
+                      {t("BB-kondo-nhe-nhe-slot-duration-notice", `All appointments slots are displayed in UK local time. Each appointment is up to ${maxNheSlotLength} minutes long.`, { maxNheSlotLength })}
+                    </Text>
+                  )
+                }
+
+              </Col>
+              <Col className="nhe-sticky-button" padding={{ top: "S300" }}>
+                <DebouncedButton
+                  variant={ButtonVariant.Primary}
+                  onClick={() => {
+                    handleConfirmSelection();
+                  }}
+                  debounceTime={1000}
+                >
+                  {t("BB-kondo-nhe-page-confirm-selection-button-text", "Confirm Selection")}
+                </DebouncedButton>
+              </Col>
             </Col>
-          </Col>
+          </>
         )}
         {
           showNhePreferenceCard && <NhePreferenceCard />
