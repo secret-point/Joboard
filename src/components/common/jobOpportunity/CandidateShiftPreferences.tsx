@@ -96,17 +96,26 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
   const [hoursPerWeek, setHoursPerWeek] = useState<ShiftPreferenceWorkHour[]>(shiftPreferencesData?.hoursPerWeek ?? []);
   const [shiftTimePattern, setShiftTimePattern] = useState(shiftPreferencesData?.shiftTimePattern);
 
+  useEffect(() => {
+    if (shiftPreferencesData) {
+      setEarliestStartDate(shiftPreferencesData.earliestStartDate);
+      setPreferredDaysToWork(shiftPreferencesData.preferredDaysToWork ?? []);
+      setHoursPerWeek(shiftPreferencesData.hoursPerWeek ?? []);
+      setShiftTimePattern(shiftPreferencesData.shiftTimePattern);
+    }
+  }, [shiftPreferencesData]);
+
   const [startDateValid, setStartDateValid] = useState(true);
   const [shiftPatternValid, setShiftPatternValid] = useState(true);
   const [hourPerWeekValid, setHourPerWeekValid] = useState(true);
   const [workDaysValid, setWorkDaysValid] = useState(true);
 
   const updateHoursPerWeek = (value: ShiftPreferenceWorkHour) => {
-    setHoursPerWeek(UpdateHoursPerWeekHelper(hoursPerWeek || [], value));
+    setHoursPerWeek(UpdateHoursPerWeekHelper([...(hoursPerWeek || [])], value));
   };
 
   const updateWorkDays = (value: SHORTENED_DAYS_OF_WEEK) => {
-    const newWorkDays = preferredDaysToWork ?? [];
+    const newWorkDays = [...(preferredDaysToWork ?? [])];
 
     if (newWorkDays.indexOf(value) > -1) {
       newWorkDays.splice(newWorkDays.indexOf(value), 1);
@@ -114,12 +123,12 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
       newWorkDays.push(value);
     }
 
-    setPreferredDaysToWork(preferredDaysToWork);
+    setPreferredDaysToWork([...newWorkDays]);
   };
 
   const handleSavePreference = () => {
     // Validate start date and shift pattern as they are required
-    const isStartDateValid = isDateGreaterThanToday(earliestStartDate as any);
+    const isStartDateValid = isDateGreaterThanToday(earliestStartDate as any, "DD/MM/YYYY");
     const isShiftPatternValid = !!shiftTimePattern;
     const isHourPerWeekValid = hoursPerWeek.length > 0;
     const isWorkDaysValid = preferredDaysToWork.length > 0;
@@ -132,7 +141,7 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
 
     if (formIsValid) {
       const request: ShiftPreferencesType = {
-        earliestStartDate: moment(earliestStartDate).format("DD/MM/YYYY"),
+        earliestStartDate: earliestStartDate as string,
         preferredDaysToWork,
         hoursPerWeek,
         shiftTimePattern: shiftTimePattern as any as SHIFT_PATTERN,
@@ -178,7 +187,9 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
               <PopupDatePicker
                 inputProps={{ ...inputProps, width: "100%" }}
                 isDateDisabled={value => !isDateGreaterThanToday(value)}
-                onChange={setEarliestStartDate}
+                onChange={(x) => setEarliestStartDate(moment(x, "YYYY-MM-DD").format("DD/MM/YYYY"))}
+                value={earliestStartDate}
+                locale="en-GB"
               />
             )}
           </InputWrapper>
@@ -205,6 +216,7 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
                     name={workHour.displayValue}
                     {...inputProps}
                     onChange={() => updateHoursPerWeek(workHour.value)}
+                    checked={!!hoursPerWeek.find(x => x.maximumValue === workHour.value.maximumValue && x.minimumValue === workHour.value.minimumValue)}
                   />
                 )}
               </InputWrapper>
@@ -242,6 +254,7 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
                       name={day.displayValue}
                       {...inputProps}
                       onChange={() => updateWorkDays(day.value as SHORTENED_DAYS_OF_WEEK)}
+                      checked={preferredDaysToWork.includes(day.value as SHORTENED_DAYS_OF_WEEK)}
                     />
                   )}
                 </InputWrapper>
@@ -267,6 +280,7 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
                       name={day.displayValue}
                       {...inputProps}
                       onChange={() => updateWorkDays(day.value as SHORTENED_DAYS_OF_WEEK)}
+                      checked={preferredDaysToWork.includes(day.value as SHORTENED_DAYS_OF_WEEK)}
                     />
                   )}
                 </InputWrapper>
@@ -298,6 +312,7 @@ export const CandidateShiftPreferences = (props: MapStateToProps) => {
                     name="shift-pattern"
                     {...inputProps}
                     onChange={() => setShiftTimePattern(shiftPattern.value as SHIFT_PATTERN)}
+                    checked={shiftTimePattern === shiftPattern.value}
                   />
                 )}
               </InputWrapper>

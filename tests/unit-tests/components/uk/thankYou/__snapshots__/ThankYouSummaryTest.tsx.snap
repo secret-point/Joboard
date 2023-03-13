@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThankYouSummary should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Col
+    gridGap="S300"
+  >
+    <Text
+      font="primary"
+      fontSize="T400"
+      hyphens="none"
+    >
+      Thank you for applying to Amazon!
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      You will receive an email from us providing further information on the next steps in your application. We look forward to seeing you at your pre-hire appointment.
+    </Text>
+    <Card
+      backgroundColor="neutral0"
+      display="flex"
+      isElevated={true}
+      padding="S300"
+      status="default"
+      width="100%"
+    >
+      <Col
+        gridGap={15}
+        padding="S300"
+        width="100%"
+      >
+        <Text
+          font="primary"
+          fontSize="T300"
+          fontWeight="bold"
+          hyphens="none"
+        >
+          Pre-hire appointment details
+        </Text>
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Date
+          : 
+          Thursday, 4 Aug
+        </Text>
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Time
+          : 
+          13:30 - 14:00
+        </Text>
+        <Text
+          font="primary"
+          fontSize="T100"
+          hyphens="none"
+        >
+          Meeting details
+          : 
+          Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont 98327, United Kingdom
+        </Text>
+        <Row
+          className="border-top-row"
+        >
+          <WithFlyout
+            flyoutPosition="trailing"
+            renderFlyout={[Function]}
+          >
+            <Component />
+          </WithFlyout>
+        </Row>
+      </Col>
+    </Card>
+  </Col>
+  <DebouncedButton
+    onClick={[Function]}
+    variant="primary"
+  >
+    Return to dashboard
+  </DebouncedButton>
+</Col>
+`;

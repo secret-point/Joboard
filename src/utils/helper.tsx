@@ -784,13 +784,13 @@ export const isDOBLessThan100 = (dateOfBirth: string): boolean => {
   return diff <= 100;
 };
 
-export const isDateGreaterThanToday = (date: string): boolean => {
-  if (!date || !moment(date).isValid()) {
+export const isDateGreaterThanToday = (date: string, format?: string): boolean => {
+  if (!date || !moment(date, format).isValid()) {
     return false;
   }
 
   const today = moment();
-  const diff = today.diff(moment(date), "days");
+  const diff = today.diff(moment(date, format), "days");
 
   return diff < 0;
 };
