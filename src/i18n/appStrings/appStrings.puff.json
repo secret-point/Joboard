@@ -942,6 +942,46 @@
             "note": "Text for the MX eSignature authorization input error text",
             "value": "Please enter a valid full name following format: First Last"
         },
+        "BB-Full-BGC-consent-full-name-esignature": {
+            "note": "Text for background check required signature authorization",
+            "value": "Type full name as eSignature"
+        },
+        "BB-Full-BGC-authorization-esignature-input-error-text": {
+            "note": "Text for the US eSignature authorization input error text",
+            "value": "Please enter a valid full name following format: First Last"
+        },
+        "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text": {
+            "note": "Text for the label for US eSignature authorization for consent to background check",
+            "value": "I consent"
+        },
+        "BB-Full-BGC-decline-application-consent-checkbox": {
+            "note": "Text for the decline that Amazon to conduct bgc radio button",
+            "value": "I decline, and withdraw my application"
+        },
+        "BB-Full-BGC-consent-bgc-label": {
+            "note": "Text for the directions regarding consenting to background check",
+            "value": "Consent to background check"
+        },
+        "BB-Full-BGC-next-btn-label": {
+            "note": "Text for the button label on going to next step in background check",
+            "value": "Next"
+        },
+        "BB-Full-BGC-withdraw-application-title": {
+            "note": "Text for the modal for withdrawing application after declining consent to background check",
+            "value": "Are you sure you want to withdraw your application?"
+        },
+        "BB-Full-BGC-decline-bgc-explanation": {
+            "note": "Text for the modal for explanation after withdrawing application after declining consent to background check",
+            "value": "If you decline a background check you are no longer eligible for this position."
+        },
+        "BB-Full-BGC-decline-bgc-modal-btn-label": {
+            "note": "Text for the button label on the modal for confirming on declining background check",
+            "value": "Decline and withdraw application"
+        },
+        "BB-Full-BGC-cancel-bgc-modal-btn-label": {
+            "note": "Text for the button label on the modal for canceling declining the background check",
+            "value": "Cancel"
+        },
         "BB-BGC-non-fcra-form-page-next-button-text": {
             "note": "Text for the non fcra form page next button text",
             "value": "Next"

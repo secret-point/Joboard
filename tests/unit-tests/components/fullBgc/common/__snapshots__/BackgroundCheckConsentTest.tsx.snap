@@ -6,13 +6,36 @@ exports[`BackgroundCheckConsent should match snapshot 1`] = `
   gridGap={15}
 >
   <Text
+    className="required-asterisk"
     font="primary"
     fontSize="T200"
     hyphens="none"
   >
-    Background Check Consent Component
+    Consent to background check
   </Text>
-  ...
+  <InputWrapper
+    error={false}
+    id="bgc-consent-esignature"
+    labelPosition="top"
+    labelText="Type full name as eSignature"
+    renderLabel={[Function]}
+    required={true}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <Row
+    alignItems="center"
+    gridGap="S200"
+  >
+    <WithModal
+      renderModal={[Function]}
+      shouldCloseOnClickOutside={false}
+    >
+      <Component />
+    </WithModal>
+  </Row>
   <DebouncedButton
     onClick={[Function]}
     variant="secondary"

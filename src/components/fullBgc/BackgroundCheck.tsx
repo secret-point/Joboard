@@ -33,6 +33,7 @@ import BackgroundInformation from "./common/BackgroundInformation";
 import BirthHistory from "./common/BirthHistory";
 import Documentation from "./common/Documentation";
 import InfoStepCard from "../common/InfoStepCard";
+import "../../styles/index.scss";
 
 interface MapStateToProps {
   job: JobState;

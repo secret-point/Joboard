@@ -444,3 +444,8 @@ div[data-test-component="StencilPopupDatePicker"] {
   transform: scale(.96);
   margin-left: -5px;
 }
+
+.required-asterisk::after {
+  content: " *";
+  color: #bb2929;
+}
