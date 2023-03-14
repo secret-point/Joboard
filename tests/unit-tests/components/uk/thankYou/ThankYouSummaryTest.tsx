@@ -12,7 +12,10 @@ import {
   TEST_JOB_STATE,
   TEST_SCHEDULE_ID,
   TEST_SCHEDULE_STATE,
+  TEST_SHIFT_PREFERENCE,
+  TestNhePreference
 } from "../../../../test-utils/test-data";
+import { Application } from "../../../../../src/utils/types/common";
 
 describe("ThankYouSummary", () => {
   const mockLocation = {
@@ -28,12 +31,68 @@ describe("ThankYouSummary", () => {
   const mockGetCountryCode = jest.spyOn(helper, "getCountryCode");
   mockGetCountryCode.mockReturnValue(CountryCode.US);
 
-  it("should match snapshot", () => {
+  it("should match snapshot - with nhe appointment", () => {
     const shallowWrapper = shallow(
       <ThankYouSummary
         candidate={TEST_CANDIDATE_STATE}
         job={TEST_JOB_STATE}
         application={TEST_APPLICATION_STATE}
+        schedule={TEST_SCHEDULE_STATE}
+      />);
+
+    expect(shallowWrapper).toMatchSnapshot();
+  });
+
+  it("should match snapshot - with nhe Preferences", () => {
+    const shallowWrapper = shallow(
+      <ThankYouSummary
+        candidate={TEST_CANDIDATE_STATE}
+        job={TEST_JOB_STATE}
+        application={{
+          ...TEST_APPLICATION_STATE,
+          results: {
+            ...TEST_APPLICATION_STATE.results as Application,
+            nheAppointment: undefined,
+            nhePreference: TestNhePreference
+          }
+        }}
+        schedule={TEST_SCHEDULE_STATE}
+      />);
+
+    expect(shallowWrapper).toMatchSnapshot();
+  });
+
+  it("should match snapshot - with shift Preferences when application has shift preference", () => {
+    const shallowWrapper = shallow(
+      <ThankYouSummary
+        candidate={TEST_CANDIDATE_STATE}
+        job={TEST_JOB_STATE}
+        application={{
+          ...TEST_APPLICATION_STATE,
+          results: {
+            ...TEST_APPLICATION_STATE.results as Application,
+            nheAppointment: undefined,
+            shiftPreference: TEST_SHIFT_PREFERENCE
+          }
+        }}
+        schedule={TEST_SCHEDULE_STATE}
+      />);
+
+    expect(shallowWrapper).toMatchSnapshot();
+  });
+
+  it("should match snapshot - with shift Preferences when application has no shift, nhe preference and nhe appointment", () => {
+    const shallowWrapper = shallow(
+      <ThankYouSummary
+        candidate={TEST_CANDIDATE_STATE}
+        job={TEST_JOB_STATE}
+        application={{
+          ...TEST_APPLICATION_STATE,
+          results: {
+            ...TEST_APPLICATION_STATE.results as Application,
+            nheAppointment: undefined,
+          }
+        }}
         schedule={TEST_SCHEDULE_STATE}
       />);
 

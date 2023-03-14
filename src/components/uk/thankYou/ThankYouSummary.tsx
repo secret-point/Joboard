@@ -167,11 +167,14 @@ export const ThankYouSummary = (props: MapStateToProps) => {
   // who may have submitted with application shift preferences but loaded when candidate shift preferences is toggled
   // on still get the correct experience
   const hasShiftPreferences = applicationData?.shiftPreference ?? candidateShiftPreferences;
+  const showNhePreferenceContent = scheduleDetail && applicationData?.nhePreference && !applicationData?.nheAppointment;
+  const showNheAppointmentContent = scheduleDetail && applicationData?.nheAppointment;
+  const showShiftPreferenceContent = (!applicationData?.jobScheduleSelected.scheduleId && hasShiftPreferences) || (!showNhePreferenceContent && !showNheAppointmentContent);
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
 
       {/* when shift preference selected and no shift selected, https://sim.amazon.com/issues/Kondo_QA_Issue-51 */}
-      { !applicationData?.jobScheduleSelected.scheduleId && hasShiftPreferences && (
+      { showShiftPreferenceContent && (
         <Col gridGap="S300">
           <Text fontSize="T400">
             {t("BB-Kondo-ThankYou-with-shift-preference-title-text", "Thank you for submitting your shift preferences!")}
@@ -183,7 +186,7 @@ export const ThankYouSummary = (props: MapStateToProps) => {
       )}
 
       {/* when shift is selected and nhePreference selected */}
-      { scheduleDetail && applicationData?.nhePreference && !applicationData?.nheAppointment && (
+      { showNhePreferenceContent && applicationData?.nhePreference && (
         <Col gridGap="S300">
           <Text fontSize="T400">
             {t("BB-Kondo-ThankYou-with-nhe-preference-title-text", "Thank you for submitting your pre-hire appointment preferences!")}
@@ -191,12 +194,12 @@ export const ThankYouSummary = (props: MapStateToProps) => {
           <Text fontSize="T200">
             {t("BB-Kondo-ThankYou-with-nhe-preference-content-text", "We'll contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences.")}
           </Text>
-          <NhePreferenceReview nhePreference={applicationData?.nhePreference} />
+          <NhePreferenceReview nhePreference={applicationData.nhePreference} />
         </Col>
       )}
 
       {/* when shift is selected and nhe appointment is selected */}
-      { scheduleDetail && applicationData?.nheAppointment && (
+      { showNheAppointmentContent && (
         <Col gridGap="S300">
           <Text fontSize="T400">
             {t("BB-ThankYou-thank-you-title-text", "Thank you for applying to Amazon!")}

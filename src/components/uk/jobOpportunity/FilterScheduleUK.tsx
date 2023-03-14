@@ -39,6 +39,7 @@ const FilterScheduleUK = ( props: FilterScheduleProps ) => {
 
     isEndDateValid && boundUpdateScheduleFilters(newFilters);
   };
+
   const updateCityCheckbox = (city: string) => {
     const newFilters = { ...filters };
     const currentCity = newFilters.city || [];

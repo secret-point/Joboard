@@ -1,6 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThankYouSummary should match snapshot 1`] = `
+exports[`ThankYouSummary should match snapshot - with nhe Preferences 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Col
+    gridGap="S300"
+  >
+    <Text
+      font="primary"
+      fontSize="T400"
+      hyphens="none"
+    >
+      Thank you for submitting your pre-hire appointment preferences!
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      We'll contact you as soon as we find a pre-hire appointment that works for you with your chosen preferences.
+    </Text>
+    <NhePreferenceReview
+      nhePreference={
+        Object {
+          "locations": Array [
+            "Virtual",
+          ],
+          "preferenceSelectedOn": "2023-02-22T04:02:02.902Z",
+          "preferredNHEDates": Array [
+            "Thursday, Mar 9th 2023",
+            "Thursday, Mar 23rd 2023",
+          ],
+          "preferredNHETimeIntervals": Array [
+            "6:00 AM - 10:00 AM",
+            "10:00 AM - 2:00 PM",
+            "2:00 PM - 6:00 PM",
+            "6:00 PM - 10:00 PM",
+          ],
+        }
+      }
+    />
+  </Col>
+  <DebouncedButton
+    onClick={[Function]}
+    variant="primary"
+  >
+    Return to dashboard
+  </DebouncedButton>
+</Col>
+`;
+
+exports[`ThankYouSummary should match snapshot - with nhe appointment 1`] = `
 <Col
   gridGap="S300"
   padding={
@@ -88,6 +144,78 @@ exports[`ThankYouSummary should match snapshot 1`] = `
         </Row>
       </Col>
     </Card>
+  </Col>
+  <DebouncedButton
+    onClick={[Function]}
+    variant="primary"
+  >
+    Return to dashboard
+  </DebouncedButton>
+</Col>
+`;
+
+exports[`ThankYouSummary should match snapshot - with shift Preferences when application has no shift, nhe preference and nhe appointment 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Col
+    gridGap="S300"
+  >
+    <Text
+      font="primary"
+      fontSize="T400"
+      hyphens="none"
+    >
+      Thank you for submitting your shift preferences!
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+      We'll contact you as soon as we find a shift that works for you with your chosen preferences.
+    </Text>
+  </Col>
+  <DebouncedButton
+    onClick={[Function]}
+    variant="primary"
+  >
+    Return to dashboard
+  </DebouncedButton>
+</Col>
+`;
+
+exports[`ThankYouSummary should match snapshot - with shift Preferences when application has shift preference 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Col
+    gridGap="S300"
+  >
+    <Text
+      font="primary"
+      fontSize="T400"
+      hyphens="none"
+    >
+      Thank you for submitting your shift preferences!
+    </Text>
+    <Text
+      font="primary"
+      fontSize="T300"
+      hyphens="none"
+    >
+      We'll contact you as soon as we find a shift that works for you with your chosen preferences.
+    </Text>
   </Col>
   <DebouncedButton
     onClick={[Function]}
