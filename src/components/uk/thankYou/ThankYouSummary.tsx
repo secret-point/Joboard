@@ -34,6 +34,7 @@ import { translate as t } from "../../../utils/translator";
 import DebouncedButton from "../../common/DebouncedButton";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import NhePreferenceReview from "../../common/nhe/NhePreferenceReview";
+import moment from "moment";
 
 interface MapStateToProps {
   application: ApplicationState;
@@ -115,7 +116,7 @@ export const ThankYouSummary = (props: MapStateToProps) => {
           })}
         </Text>
         <Text fontSize="T100">
-          {t("BB-Kondo-ThankYou-nhe-appointment-details-time-label", "Time")}: {`${startTime} - ${endTime}`}
+          {t("BB-Kondo-ThankYou-nhe-appointment-details-time-label", "Time")}: {moment(startTime, "hh:mm A").locale(getLocale()).format("HH:mm")} - {moment(endTime, "hh:mm A").locale(getLocale()).format("HH:mm")}
         </Text>
         <Text fontSize="T100">
           {t("BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label", "Meeting details")}: {location && `${location.streetAddress} ${location.city} ${location.postalCode}, United Kingdom`}

@@ -63,7 +63,9 @@ exports[`ThankYouSummary should match snapshot 1`] = `
         >
           Time
           : 
-          13:30 - 14:00
+          13:30
+           - 
+          14:00
         </Text>
         <Text
           font="primary"
