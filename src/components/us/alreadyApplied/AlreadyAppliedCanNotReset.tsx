@@ -11,7 +11,7 @@ import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToDashb
 import { JobState } from "../../../reducers/job.reducer";
 import { getLocale } from "../../../utils/helper";
 import { translate as t } from "../../../utils/translator";
-import { DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY } from "../../../utils/constants/common";
+import { DuplicateJobId } from "../../../utils/constants/common";
 import { useBreakpoints } from "@amzn/stencil-react-components/responsive";
 
 interface MapStateToProps {
@@ -36,7 +36,7 @@ export const AlreadyAppliedCanNotReset = (props: MapStateToProps) => {
   }, [jobDetail, pageName]);
 
   const handleGoToDashboard = () => {
-    localStorage.setItem(DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY, jobId);
+    sessionStorage.setItem(DuplicateJobId, jobId);
     redirectToDashboard();
   };
 

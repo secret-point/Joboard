@@ -39,7 +39,7 @@ import {
 } from "../types/common";
 
 export const HVH_LOCALE = "hvh-locale";
-export const DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY = "DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY";
+export const DuplicateJobId = "duplicateJobId";
 
 export const ApplicationStepListDefault: ApplicationStep[] = [
   {

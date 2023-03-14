@@ -29,7 +29,7 @@ import {
   boundUpdateApplicationDS
 } from "../../../actions/ApplicationActions/boundApplicationActions";
 import { SelectedScheduleForUpdateApplication } from "../../../utils/apiTypes";
-import { DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY } from "../../../utils/constants/common";
+import { DuplicateJobId } from "../../../utils/constants/common";
 import { log, LoggerType } from "../../../helpers/log-helper";
 import { AppConfigState } from "../../../reducers/appConfig.reducer";
 
@@ -76,7 +76,7 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
   }, [jobDetail, pageName]);
 
   const handleGoToDashboard = () => {
-    localStorage.setItem(DUPLICATE_JOB_ID_LOCAL_STORAGE_KEY, jobId);
+    sessionStorage.setItem(DuplicateJobId, jobId);
     redirectToDashboard(jobDetail?.jobId);
   };
 
