@@ -331,7 +331,7 @@ export const GetTimeSlotsErrorMessages: { [key: string]: ApiErrorMessage } = {
   },
   [GET_NHE_TIME_SLOT_LIST_ERROR_CODE.VENUE_NOT_EXIST]: {
     translationKey: "BB-get-time-slots-error-message-venue-not-exist-error",
-    value: "Venue doesn't exist for the selected site"
+    value: "Unable to get NHE time slots, venue doesn't exist for the selected site."
   },
   [GET_NHE_TIME_SLOT_LIST_ERROR_CODE.FETCH_SHIFTS_ERROR]: {
     translationKey: "BB-get-time-slots-error-message-fetch_shifts_error",

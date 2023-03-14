@@ -108,6 +108,10 @@
       "value" : "Toplanan tüm bilgilerin, hem Özel Tarafların Mülkiyetindeki Kişisel Verilerin Korunması Hakkında Federal Kanun ve onun düzenlemeleri, yönergeleri ve veri gizliliğine ilişkin diğer geçerli hükümlerine uygun olarak hem de Şirketin Çalışanlar ve/veya Adaylar için Gizlilik Bildirimi doğrultusunda aktarılabileceğinin farkındayım.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon, çeşitlilik içeren ve kapsayıcı bir çalışma ortamına kendini adamıştır. Amazon, fırsat eşitliği sağlayan bir işverendir ve ırk, ulusal köken, cinsiyet, cinsel kimlik, cinsel yönelim, gazilik durumu, engellilik, yaş veya yasal olarak korunan diğer durumlar temelinde ayrımcılık yapmaz. Konaklama talebinde bulunmak isteyen engelli bireyler için lütfen <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a> adresini ziyaret edin.",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon, kişisel veri korumanızı ciddiye alır ve kişisel verilerinizi yalnızca yasalara uygun olarak işleyecektir. Özellikle, kanunen zorunlu olmadıkça, kişisel verilerinizi önceden onayınız olmadan herhangi bir üçüncü şahısla paylaşmayız. Aksi belirtmediğiniz sürece, işe alınan Amazon şirketi, kişisel verilerinizi Amazon.com'un ABD'de veya bağlı kuruluşlarından birinde muhafaza ettiği elektronik veri tabanında saklayacaktır. Amazon'un kişisel verilerinizi nasıl depoladığı ve işlediğine dair tam bilgi için lütfen buraya tıklayın <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1011,6 +1015,10 @@
     "BB-existing-application" : {
       "value" : "Mevcut başvuru:",
       "note" : "Text for existing application"
+    },
+    "BB-job-id" : {
+      "value" : "İş No.: ",
+      "note" : "Text to display job id"
     },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "CC-305 Formu",

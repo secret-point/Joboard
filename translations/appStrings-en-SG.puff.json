@@ -3199,6 +3199,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need an adjustment during the application and hiring process, including support for the interview or onboarding process, please contact the Applicant-Candidate Accommodation Team (ACAT), Monday to Friday from 7:00 to 16:00 GMT. When calling directly from the United Kingdom, please dial +44 800 086 9884. When calling from Ireland, please dial +353 1800 851 489. You may also contact us if you might need an adjustment in your new role and would like to initiate a request prior to starting your Day 1.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "mins",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "hr",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "hrs",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }

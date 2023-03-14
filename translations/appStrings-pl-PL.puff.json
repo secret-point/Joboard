@@ -108,6 +108,10 @@
       "value" : "Mam świadomość, że wszystkie pozyskane informacje mogą być przekazywane zgodnie z Federalną ustawą o ochronie danych osobowych będących w posiadaniu podmiotów prywatnych oraz jej postanowieniami uzupełniającymi, wytycznymi i innymi obowiązującymi zapisami dotyczącymi ochrony danych, a także w zakresie Informacji Spółki o prywatności w odniesieniu do Pracowników i/lub Kandydatów.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon prowadzi działania na rzecz zróżnicowanego i integracyjnego miejsca pracy. Amazon jest pracodawcą, który zapewnia równe szanse i nie dyskryminuje nikogo ze względu na rasę, narodowość, płeć, tożsamość płciową, orientację seksualną, chroniony status weterana, niepełnosprawność, wiek ani inny prawnie chroniony status. Osoby z niepełnosprawnościami, które chciałyby poprosić o udogodnienia, zachęca się do odwiedzenia strony <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon poważnie traktuje ochronę danych osobowych i będzie przetwarzać Twoje dane osobowe wyłącznie zgodnie z prawem. W szczególności nie udostępniamy Twoich danych osobowych żadnym stronom trzecim bez Twojej uprzedniej zgody, chyba że jest to wymagane przez prawo. O ile nie wyrazisz sprzeciwu, oddział przeprowadzający rekrutację w Amazon będzie przechowywać Twoje dane osobowe w elektronicznej bazie danych prowadzonej przez Amazon.com w USA lub w jednym z jej podmiotów stowarzyszonych. Aby uzyskać pełne informacje na temat sposobu, w jaki Amazon przechowuje i przetwarza Twoje dane osobowe, kliknij tutaj <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Udogodnienia",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "W Amazon doceniamy różnorodność naszych pracowników i różnorodne sposoby pracy. Jeśli jesteś osobą z niepełnosprawnością i potrzebujesz pewnych udogodnień podczas procesu rekrutacji, w tym oceny, odwiedź stronę <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Udogodnienia Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Wszystkie sekcje tej oceny:",
@@ -3191,6 +3199,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Nasza kultura sprzyjająca włączeniu społecznemu umożliwia Amazończykom osiąganie najlepszych wyników z korzyścią dla klientów. Jeśli jesteś osobą z niepełnosprawnością i potrzebujesz dostosowań podczas procesu składania wniosku i zatrudniania, w tym pomocy podczas rozmowy kwalifikacyjnej lub procesu wdrażania, skontaktuj się z Zespołem ds. dostosowań dla kandydatów, od poniedziałku do piątku w godzinach 7:00–16:00 czasu GMT. Jeśli dzwonisz bezpośrednio z Wielkiej Brytanii, wybierz numer +44 800 086 9884. Jeśli dzwonisz z Irlandii, wybierz numer +353 1800 851 489. Możesz również skontaktować się z nami, jeśli możesz potrzebować dostosowania w swojej nowej roli i chcesz zainicjować prośbę przed rozpoczęciem swojego pierwszego dnia.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "godz.",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "godz.",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "na tydzień",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "i",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

@@ -1016,6 +1016,10 @@
       "value" : "מועמדות קיימת:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "מזהה עבודה: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "טופס CC-305",
       "note" : "Text for Self Identification form name"

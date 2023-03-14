@@ -108,6 +108,10 @@
       "value" : "我知道，索取的所有資訊都可能根據《關於保護私人擁有之個人資料的聯邦法》(Federal Law on the Protection of Personal Data in the Possession of Private Parties) 及其條例、準則和其他適用的資料隱私規定，以及公司對員工和/或應聘者的隱私聲明轉移。",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Amazon 致力於建立多元化且具包容性的工作場所。Amazon 是倡導機會平等的雇主，不會基於種族、國籍、性別、性別認同、性取向、受保護的退伍軍人身份、身障、年齡或其他受法律保護的身份進行歧視。對於想要申請住宿的身障人士，請造訪 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Amazon 非常重視您的個人資料保護，只會依法處理您的個人資料。特別是，我們不會在未經您事先同意的情況下與任何第三方分享您的個人資料，除非法律強制要求這樣做。除非您另有說明，否則進行招聘的 Amazon 公司會將您的個人資料存儲於電子資料庫，該庫由美國 Amazon.com 或其旗下一家附屬公司維護。有關 Amazon 如何儲存和處理您的個人資料的完整資訊，請點擊此處：<a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1515,6 +1519,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "住宿",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "在 Amazon，我們重視員工的多樣性和我們多樣化的工作方式。如果您是身障人士，且在雇用流程 (包括評估環節) 期間需要住宿，請造訪 <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon 住宿。</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "此評估的所有部分：",

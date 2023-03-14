@@ -1520,6 +1520,10 @@
       "value" : "आवास",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Amazon में, हम अपने कार्यबल की विविधता और हमारे द्वारा काम करने के विभिन्न तरीकों का जश्न मनाते हैं. अगर आपको विकलांगता है और असेसमेंट सहित हायरिंग प्रक्रिया के दौरान आवास की ज़रूरत है, तो कृपया <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon आवास पर विज़िट करें.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "इस असेसमेंट के सभी सेक्शन:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"
@@ -1711,6 +1715,22 @@
     "BB-ThankYou-referral-login-error-message-candidate-blocked" : {
       "value" : "हम आपके रेफ़रर की लॉगिन ID को सत्यापित नहीं कर सके, कृपया सहायता के लिए www.amazon.com/applicationhelp पर हमसे चैट करें.",
       "note" : "Text for the thank you page referral login validation error - candidate is blocked."
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-title-text" : {
+      "value" : "प्री-हायर अपॉइंटमेंट विवरण",
+      "note" : "Text for the thank you page nhe appointment details title text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-date-label" : {
+      "value" : "तारीख़",
+      "note" : "Text for the thank you page nhe appointment details date label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-time-label" : {
+      "value" : "समय",
+      "note" : "Text for the thank you page nhe appointment details time label text"
+    },
+    "BB-Kondo-ThankYou-nhe-appointment-details-meeting-details-label" : {
+      "value" : "मीटिंग की डिटेल्स",
+      "note" : "Text for the thank you page nhe appointment details meeting details label text"
     },
     "BB-Kondo-referral-login-label-text" : {
       "value" : "कृपया अपनी रेफ़रर लॉगिन ID (केवल लोअर केस अक्षर) प्रदान करें",

@@ -1016,6 +1016,10 @@
       "value" : "Eksisterende ansøgning:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "Job-id: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formular CC-305",
       "note" : "Text for Self Identification form name"

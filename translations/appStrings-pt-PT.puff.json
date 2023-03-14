@@ -1016,6 +1016,10 @@
       "value" : "Candidatura existente:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "ID do emprego: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formulário CC-305",
       "note" : "Text for Self Identification form name"
@@ -3199,6 +3203,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "A nossa cultura inclusiva incentiva todos os Amazonianos a conseguirem os melhores resultados para os nossos clientes. Caso tenha alguma incapacidade e necessite de adaptação durante o processo de candidatura e de contratação, incluindo apoio para a entrevista ou no processo de integração, contacte a equipa de adaptação para candidatos (ACAT), de segunda a sexta-feira das 7h00 GMT às 16h00 GMT. Se telefonar diretamente do Reino Unido, ligue para +44 800 086 9884. Se telefonar da Irlanda, ligue para +353 1800 851 489. Também poderá contactar-nos caso precise de uma adaptação para a sua nova função e se pretender iniciar um pedido antes do seu primeiro dia de trabalho.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "minutos",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "horas",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }
