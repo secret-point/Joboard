@@ -1737,6 +1737,11 @@ export const getFeatureFlagValue = (featureFlag: FEATURE_FLAG): boolean => {
   const state = store.getState();
   const envConfig = state.appConfig.results?.envConfig;
   const featureFlagList: FeatureFlagList | undefined = envConfig?.featureList;
+  const sessionStorageOverride = sessionStorage.getItem(`featureFlag.${featureFlag}`);
+
+  if (sessionStorageOverride) {
+    return sessionStorageOverride === "true";
+  }
 
   if (featureFlagList) {
     const featureResult = (featureFlagList[featureFlag] as FeatureFlag)?.isAvailable || false;

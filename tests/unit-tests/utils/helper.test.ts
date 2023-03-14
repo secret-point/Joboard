@@ -19,7 +19,7 @@ import {
   JOB_REFERRAL_VALUE,
   SELF_IDENTIFICATION_STEPS,
   WITHDRAW_REASON_CASE,
-  WORKFLOW_ERROR_CODE
+  WORKFLOW_ERROR_CODE, FEATURE_FLAG
 } from "../../../src/utils/enums/common";
 import {
   NHE_TIMESLOT,
@@ -49,7 +49,7 @@ import {
   getApplicationWithdrawalReason,
   getCountryCodeByCountryName,
   getDefaultUkNheApptTimeFromMap,
-  getDetailedRadioErrorMap,
+  getDetailedRadioErrorMap, getFeatureFlagValue,
   getKeyMapFromDetailedRadioItemList,
   getMXCountryCodeByCountryName,
   getNonFcraSignatureErrorMessages,
@@ -1848,4 +1848,52 @@ describe("getShiftPreferencesHoursPerWeekStrList",()=>{
       "36 - 52",
     ])
   });
+});
+
+describe("getFeatureFlagValue",()=>{
+  let storeGetStateSpy: SpyInstance;
+
+  beforeEach(() => {
+    storeGetStateSpy = jest.spyOn(store, "getState");
+
+  });
+  afterEach(()=>{
+    sessionStorage.clear();
+    storeGetStateSpy.mockReset();
+  });
+  it("returns a feature flag from session storage",()=>{
+    storeGetStateSpy
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  "ENABLE_CANDIDATE_SHIFT_PREFERENCES":{
+                    isAvailable:false,
+                  }
+                }
+              }
+            }
+          }
+        });
+    sessionStorage.setItem("featureFlag.ENABLE_CANDIDATE_SHIFT_PREFERENCES","true");
+    expect(getFeatureFlagValue(FEATURE_FLAG.ENABLE_CANDIDATE_SHIFT_PREFERENCES)).toEqual(true);
+  });
+  it("returns a feature flag from the list provided by the ui proxy",()=>{
+    storeGetStateSpy
+        .mockReturnValueOnce({
+          appConfig: {
+            results: {
+              envConfig: {
+                featureList: {
+                  "ENABLE_CANDIDATE_SHIFT_PREFERENCES":{
+                    isAvailable:true,
+                  }
+                }
+              }
+            }
+          }
+        });
+    expect(getFeatureFlagValue(FEATURE_FLAG.ENABLE_CANDIDATE_SHIFT_PREFERENCES)).toEqual(true);
+  })
 });
