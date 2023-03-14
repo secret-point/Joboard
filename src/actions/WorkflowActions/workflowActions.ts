@@ -21,6 +21,7 @@ import {
   WorkflowRequestInitAction,
   WorkflowRequestStartAction
 } from "./workflowActionTypes";
+import { boundHidePageLoader } from "../UiActions/boundUi";
 
 export const loadWorkflow =
     ( requisitionId: string, applicationId: string, candidateId: string, envConfig: EnvConfig, isCompleteTaskOnLoad?: boolean, applicationData?: Application ) => {
@@ -185,6 +186,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
     }, ( ex: any ) => {
       logError("Unable to update workflow step in application", ex, applicationData);
       boundWorkflowRequestEnd();
+      boundHidePageLoader();
     }
     );
 
@@ -196,6 +198,7 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
   } else {
     log(`Received target step name: ${stepName}, current step name ${currentStepName}. Stay on current step.`);
     boundWorkflowRequestEnd();
+    boundHidePageLoader();
   }
 };
 

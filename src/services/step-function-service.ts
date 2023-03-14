@@ -19,6 +19,7 @@ import {
   startOrResumeWorkflowDS
 } from "./../actions/WorkflowActions/workflowActions";
 import { getAccessToken } from "./../helpers/axios-helper";
+import { boundHidePageLoader } from "../actions/UiActions/boundUi";
 
 export default class StepFunctionService {
   websocket: WebSocket | undefined;
@@ -159,6 +160,7 @@ export default class StepFunctionService {
   error( event: any ) {
     log("Error on received from Websocket", event, LoggerType.ERROR);
     boundWorkflowRequestEnd();
+    boundHidePageLoader();
   }
 
   // Wait for socket to be in open state
