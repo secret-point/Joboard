@@ -301,7 +301,7 @@ export const Consent = (props: MapStateToProps) => {
       <CustomModal shouldOpen={showExistingAppModal} setShouldOpen={setShowExistingAppModal}>
         <Col gridGap="S300" width="100%" alignSelf="center">
           <H4 fontWeight="bold" textAlign="center">
-            {t("BB-consent-existing-application-notice-title", "You Have an active job application")}
+            {t("BB-consent-existing-application-notice-title", "You have an active job application")}
           </H4>
           <Col gridGap="S300" padding={{ top: "S300" }}>
             <Text>

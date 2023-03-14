@@ -1107,7 +1107,7 @@ export const localeToLanguageMap: { [key in Locale]: [string, string] } = {
 };
 
 export const shiftPreferenceWorkHour: ShiftPreferenceWorkHourConfig[] = [
-  { displayValue: "36 - 40hrs/wk", value: { minimumValue: 35, maximumValue: 40 }, translationKey: "BB-kondo-shift-work-hour-36-to-40" },
+  { displayValue: "36 - 40hrs/wk", value: { minimumValue: 36, maximumValue: 40 }, translationKey: "BB-kondo-shift-work-hour-36-to-40" },
   { displayValue: "25 - 35hrs/wk", value: { minimumValue: 25, maximumValue: 35 }, translationKey: "BB-kondo-shift-work-hour-25-to-35" },
   { displayValue: "15 - 24hrs/wk", value: { minimumValue: 15, maximumValue: 24 }, translationKey: "BB-kondo-shift-work-hour-15-to-24" },
   { displayValue: "15 or less", value: { minimumValue: 0, maximumValue: 15 }, translationKey: "BB-kondo-shift-work-hour-15-or-less" }
