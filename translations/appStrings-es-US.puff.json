@@ -936,6 +936,34 @@
       "value" : "Ingresa un nombre completo válido con el siguiente formato: Nombre Apellido",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Declino y retiro mi solicitud",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Consentimiento para la verificación de antecedentes",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "Siguiente",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "¿Estás seguro de que deseas retirar tu solicitud?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Si declinas una verificación de antecedentes ya no serás elegible para este puesto.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Declinar y retirar solicitud",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "Cancelar",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Siguiente",
       "note" : "Text for the non fcra form page next button text"

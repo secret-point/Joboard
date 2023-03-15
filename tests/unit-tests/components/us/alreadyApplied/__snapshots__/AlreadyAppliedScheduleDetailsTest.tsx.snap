@@ -10,11 +10,11 @@ exports[`ScheduleDetails should match snapshot 1`] = `
   status="default"
 >
   <Col
-    gridGap="S200"
+    gridGap="S100"
   >
     <Row
       alignItems="center"
-      gridGap="S300"
+      gridGap="S200"
     >
       <Text
         font="primary"
@@ -37,7 +37,7 @@ exports[`ScheduleDetails should match snapshot 1`] = `
     </Row>
     <Row
       alignItems="center"
-      gridGap="S300"
+      gridGap="S200"
     >
       <Text
         font="primary"
@@ -49,7 +49,7 @@ exports[`ScheduleDetails should match snapshot 1`] = `
     </Row>
     <Row
       alignItems="center"
-      gridGap="S300"
+      gridGap="S200"
     >
       <Text
         font="primary"
@@ -70,10 +70,14 @@ exports[`ScheduleDetails should match snapshot 1`] = `
     </Row>
     <Row
       alignItems="center"
-      gridGap="S300"
     >
       <Row
-        gridGap="S300"
+        gridGap="S100"
+        padding={
+          Object {
+            "top": "10px",
+          }
+        }
         width="75%"
       >
         <Text
@@ -112,7 +116,7 @@ exports[`ScheduleDetails should match snapshot 1`] = `
             fontSize="T100"
             hyphens="none"
           >
-            /hour
+            /hr
           </Text>
         </Row>
       </Row>

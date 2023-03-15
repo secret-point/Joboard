@@ -3,11 +3,7 @@
 exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
 <Col
   gridGap="S300"
-  padding={
-    Object {
-      "top": "S300",
-    }
-  }
+  padding={Object {}}
 >
   <Text
     font="primary"
@@ -114,7 +110,9 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
       />
     </Col>
   </Flex>
-  <Row>
+  <Row
+    width="100%"
+  >
     <Text
       font="primary"
       fontSize="T200"
@@ -133,24 +131,10 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
     </Text>
   </Row>
   <Flex
-    className="alreadyAppliedButtonStickyAtBottom"
+    className="alreadyAppliedButton"
     flexDirection="column"
     gridGap={20}
-    justifyContent="flex-end"
-    width="100%"
   >
-    <Button
-      colorScheme="default"
-      dataTestId="button-dashboard"
-      iconPosition="leading"
-      onClick={[Function]}
-      shouldUseResponsiveContent={true}
-      size="default"
-      type="button"
-      variant="secondary"
-    >
-      Go to dashboard
-    </Button>
     <Button
       colorScheme="default"
       dataTestId="button-continue"
@@ -162,6 +146,18 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
       variant="primary"
     >
       Continue with new application
+    </Button>
+    <Button
+      colorScheme="default"
+      dataTestId="button-dashboard"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="secondary"
+    >
+      Go to dashboard
     </Button>
   </Flex>
 </Col>

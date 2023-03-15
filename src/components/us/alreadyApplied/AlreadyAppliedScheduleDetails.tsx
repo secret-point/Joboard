@@ -67,32 +67,32 @@ export const AlreadyAppliedScheduleDetails = (props: ScheduleDetailsProps) => {
 
   return (
     <Card padding="S300" flexDirection="column" className="alreadyAppliedCard">
-      <Col gridGap="S200">
-        <Row gridGap="S300" alignItems="center">
+      <Col gridGap="S100">
+        <Row gridGap="S200" alignItems="center">
           <Text fontSize="T100" fontWeight="bold">{t("BB-Schedule-card-hours", "Hours")}: </Text>
           <Text fontSize="T100">{hoursPerWeek} {t("BB-Schedule-card-hours-per-week-text", "hours/week")}</Text>
         </Row>
 
-        <Row gridGap="S300" alignItems="center">
+        <Row gridGap="S200" alignItems="center">
           <Text fontSize="T100">{scheduleText}</Text>
         </Row>
 
         {showRequiredLanguages && showRequiredLanguageByCountry(getCountryCode()) && (
-          <Row gridGap="S300" alignItems="center">
+          <Row gridGap="S200" alignItems="center">
             <Text fontSize="T100" fontWeight="bold">
               {t("BB-Schedule-card-languages-supported", "Languages Supported")}:
             </Text>
             <Text fontSize="T100">{renderRequiredLanguages()}</Text>
           </Row>
         )}
-        <Row gridGap="S300" alignItems="center">
-          <Row width="75%" gridGap="S300">
+        <Row alignItems="center">
+          <Row width="75%" gridGap="S100" padding={{ top: "10px" }}>
             <Text fontSize="T100" fontWeight="bold">{t("BB-Schedule-card-start-date", "Start Date")}: </Text>
             <Text fontSize="T100">{renderStartDate()}</Text>
           </Row>
           <Row width="%25">
             <Text fontSize="T400" fontWeight="bold">{renderPayRateByLocale()}</Text>
-            <Row alignSelf="end"><Text fontSize="T100">{t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text></Row>
+            <Row alignSelf="end"><Text fontSize="T100">{t("BB-Schedule-card-per-hour-text", "/hr")}</Text></Row>
           </Row>
         </Row>
         { scheduleBannerText && (

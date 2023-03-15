@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Button, ButtonVariant } from "@amzn/stencil-react-components/button";
-import { Col, Row } from "@amzn/stencil-react-components/layout";
+import { Col, Flex, Row } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
@@ -41,7 +41,7 @@ export const AlreadyAppliedCanNotReset = (props: MapStateToProps) => {
   };
 
   return (
-    <Col gridGap="S300" padding={{ top: "S300" }}>
+    <Col gridGap="S300" padding={matches.l || matches.xl ? { top: "S300", left: "450px" } : {}}>
       <Text fontSize="T400" fontWeight="bold">
         {t("BB-already-applied-v2", `You have already submitted an application for the role:  ${jobDetail?.jobTitle || ""}`, { jobTitle: jobDetail?.jobTitle || "" })}
         <br />
@@ -50,14 +50,16 @@ export const AlreadyAppliedCanNotReset = (props: MapStateToProps) => {
       <Text fontSize="T300" color="neutral70">
         {t("BB-job-id", "Job Id: ")} {jobDetail?.jobId || "" }
       </Text>
-      <Text fontSize="T200">
-        {t("BB-already-applied-description-v2", "You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.")}
-      </Text>
-      <Row width={matches.s || matches.m ? "100%": "70%"} gridGap={20} justifyContent="flex-end">
+      <Row width={matches.s || matches.m ? "100%": "60%"}>
+        <Text fontSize="T200">
+          {t("BB-already-applied-description-v2", "You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.")}
+        </Text>
+      </Row>
+      <Flex className="alreadyAppliedButton" flexDirection={matches.s || matches.m ? "column": "row"}>
         <Button dataTestId="button-go-to-dashboard" variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
           {t("BB-already-applied-button-text-v2", "Go to dashboard")}
         </Button>
-      </Row>
+      </Flex>
     </Col>
   );
 };

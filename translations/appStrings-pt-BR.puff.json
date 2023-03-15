@@ -108,6 +108,10 @@
       "value" : "Estou ciente de que todas as informações coletadas podem ser transferidas de acordo com a Lei federal sobre a Proteção de dados pessoais na posse de partes privadas e seus regulamentos, diretrizes e outras disposições aplicáveis sobre privacidade de dados, bem como nos termos da Notificação de privacidade da empresa para funcionários e/ou candidatos.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "A Amazon está comprometida com um local de trabalho diversificado e inclusivo. A Amazon é um empregador que oferece oportunidades iguais e não discrimina com base em raça, nacionalidade, gênero, identidade de gênero, orientação sexual, condição de veterano protegido, deficiência, idade ou outra condição legalmente protegida. Para pessoas com deficiência que queiram solicitar um atendimento especial, acesse <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "A Amazon leva a sério a proteção de seus dados pessoais e só os processará de acordo com a lei. Em particular, não compartilhamos seus dados pessoais com terceiros sem o seu consentimento prévio, a menos que sejamos obrigados por lei a fazê-lo. A menos que você expresse o contrário, a empresa contratante da Amazon armazenará seus dados pessoais no banco de dados eletrônico mantido pela Amazon.com nos EUA ou em uma de suas afiliadas. Para obter informações completas sobre como a Amazon armazena e processa seus dados pessoais, clique aqui <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -936,6 +940,46 @@
       "value" : "Insira um nome completo válido no seguinte formato: Primeiro Último",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "Digite o nome completo como assinatura eletrônica",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "Insira um nome completo válido no seguinte formato: Primeiro Último",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "Concordo",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Recuso e retiro minha candidatura",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Consentimento para verificação de antecedentes",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "Próximo",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "Tem certeza de que deseja cancelar sua candidatura?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Se você recusar uma verificação de antecedentes, não estará mais qualificado para esta posição.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Recusar e retirar a candidatura",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "Cancelar",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Próximo",
       "note" : "Text for the non fcra form page next button text"
@@ -1515,6 +1559,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Atendimentos especiais",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Na Amazon, celebramos a diversidade da nossa força de trabalho e as formas diversas como trabalhamos. Se você for uma pessoa com deficiência e precisar de atendimento especial durante o processo de contratação, inclusive na avaliação, acesse o <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Atendimento especial da Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Todas as seções desta avaliação:",

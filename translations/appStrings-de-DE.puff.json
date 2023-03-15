@@ -940,6 +940,46 @@
       "value" : "Bitte gib einen gültigen vollständigen Namen im folgenden Format ein: Vorname Nachname",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "Vollständigen Namen als eSignature eingeben",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "Bitte gib einen gültigen vollständigen Namen im folgenden Format ein: Vorname Nachname",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "Ich stimme zu",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Ich lehne ab und ziehe meine Bewerbung zurück",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Hintergrundprüfung zustimmen",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "Weiter",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "Bist du sicher, dass du deine Bewerbung zurückziehen möchtest?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Wenn du eine Hintergrundprüfung ablehnst, bist du für diese Position nicht mehr geeignet.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Ablehnen und Bewerbung zurückziehen",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "Abbrechen",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Weiter",
       "note" : "Text for the non fcra form page next button text"
@@ -1015,6 +1055,10 @@
     "BB-existing-application" : {
       "value" : "Bestehende Bewerbung:",
       "note" : "Text for existing application"
+    },
+    "BB-job-id" : {
+      "value" : "Job-ID: ",
+      "note" : "Text to display job id"
     },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Formular CC-305",
@@ -3199,6 +3243,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Unsere integrative Kultur befähigt Amazonier dazu, die besten Ergebnisse für unsere Kunden zu erzielen. Wenn du eine Behinderung hast und während des Bewerbungs- und Einstellungsprozesses Unterstützung benötigst, einschließlich Unterstützung beim Vorstellungsgespräch oder beim Onboarding-Prozess, wende dich bitte montags bis freitags von 7:00 Uhr GMT bis 16:00 Uhr GMT an das Applicant Candidate Accommodation Team (ACAT). Wenn du direkt aus Großbritannien anrufst, wähle bitte +44 800 086 9884. Wenn du aus Irland anrufst, wähle bitte +353 1800 851 489. Du kannst uns auch kontaktieren, wenn du möglicherweise eine Anpassung in deiner neuen Rolle benötigst und vor Beginn deines ersten Tages eine Anfrage stellen möchtest.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "Min.",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "Min.",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "Std.",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "Std.",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "pro Woche",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "und",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

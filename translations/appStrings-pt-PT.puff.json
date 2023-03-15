@@ -940,6 +940,46 @@
       "value" : "Insira um nome completo válido com o seguinte formato: Nome próprio Apelido",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "Escreva o nome completo como assinatura eletrónica",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "Insira um nome completo válido com o seguinte formato: nome e apelido",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "Concordo",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Recuso e retiro a minha candidatura",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Consentimento para verificação de antecedentes",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "Seguinte",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "Tem a certeza de que pretende cancelar a sua candidatura?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Se recusar uma verificação de antecedentes, deixará de ser elegível para este cargo.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Recusar e retirar a candidatura",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "Cancelar",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Seguinte",
       "note" : "Text for the non fcra form page next button text"

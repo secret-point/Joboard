@@ -940,6 +940,46 @@
       "value" : "Lütfen aşağıdaki formatta geçerli bir tam ad girin: Adı Soyadı",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "Tam adı elektronik imza olarak yazın.",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "Lütfen aşağıdaki formatta geçerli bir ad ve soyadı girin: Ad Soyadı",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "Onaylıyorum",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Reddediyorum ve başvurumu geri çekiyorum",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Geçmiş kontrolüne onay verin",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "İleri",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "Başvurunuzu geri çekmek istediğinizden emin misiniz?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Geçmiş kontrolünü reddederseniz artık bu pozisyon için uygun olmazsınız.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Reddedin ve başvuruyu geri çekin",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "İptal et",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "İleri",
       "note" : "Text for the non fcra form page next button text"

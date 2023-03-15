@@ -940,6 +940,46 @@
       "value" : "유효한 전체 이름을 다음 형식으로 입력: 이름 성",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "전체 이름을 전자 서명으로 입력",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "유효한 전체 이름을 다음 형식으로 입력: 이름 성",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "동의함",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "거부하고 신청을 철회합니다.",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "신원 조회에 대한 동의",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "다음",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "신청을 철회하시겠습니까?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "신원 조사를 거부하면 더 이상 이 직책에 적합하지 않습니다.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "거부하고 신청 철회",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "취소",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "다음",
       "note" : "Text for the non fcra form page next button text"

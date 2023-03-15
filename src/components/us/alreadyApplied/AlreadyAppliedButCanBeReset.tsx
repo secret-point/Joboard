@@ -124,7 +124,7 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
   };
 
   return (
-    <Col gridGap="S300" padding={{ top: "S300" }}>
+    <Col gridGap="S300" padding={matches.l || matches.xl ? { top: "S300", left: "300px" } : {}}>
       <Text fontSize="T400" fontWeight="bold">
         {t("BB-already-applied-but-can-be-reset", "You already have an active application for the role:",)}
         <br />
@@ -144,7 +144,7 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
           {scheduleDetail && <AlreadyAppliedScheduleDetails scheduleDetail={ scheduleDetail } />}
         </Col>
       </Flex>
-      <Row>
+      <Row width={matches.s || matches.m ? "100%": "75%"}>
         <Text fontSize="T200">
           {t("BB-already-applied-but-can-be-reset-dashboard-description", "If you proceed with this new application, your existing one will be withdrawn. To view or resume your existing application, click 'Go to dashboard'.")}
         </Text>
@@ -154,14 +154,26 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
           {t(" BB-already-applied-but-can-be-reset-continue-description", "To proceed with new application, click 'Continue with application'.")}
         </Text>
       </Row>
-      <Flex className="alreadyAppliedButtonStickyAtBottom" width={matches.s || matches.m ? "100%": "70%"} gridGap={20} justifyContent="flex-end" flexDirection={matches.s || matches.m ? "column": "row"}>
-        <Button dataTestId="button-dashboard" variant={ButtonVariant.Secondary} onClick={handleGoToDashboard}>
-          {t("BB-already-applied-button-text-v2", "Go to dashboard")}
-        </Button>
-        <Button dataTestId="button-continue" variant={ButtonVariant.Primary} onClick={handleContinueToApplication}>
-          {t("BB-already-applied-but-continue-button-text", "Continue with new application")}
-        </Button>
-      </Flex>
+      {(matches.s || matches.m) && (
+        <Flex className="alreadyAppliedButton" gridGap={20} flexDirection="column">
+          <Button dataTestId="button-continue" variant={ButtonVariant.Primary} onClick={handleContinueToApplication}>
+            {t("BB-already-applied-but-continue-button-text", "Continue with new application")}
+          </Button>
+          <Button dataTestId="button-dashboard" variant={ButtonVariant.Secondary} onClick={handleGoToDashboard}>
+            {t("BB-already-applied-button-text-v2", "Go to dashboard")}
+          </Button>
+        </Flex>
+      )}
+      {(matches.l || matches.xl) && (
+        <Flex className="alreadyAppliedButton" gridGap={20} flexDirection="row">
+          <Button dataTestId="button-dashboard" variant={ButtonVariant.Secondary} onClick={handleGoToDashboard}>
+            {t("BB-already-applied-button-text-v2", "Go to dashboard")}
+          </Button>
+          <Button dataTestId="button-continue" variant={ButtonVariant.Primary} onClick={handleContinueToApplication}>
+            {t("BB-already-applied-but-continue-button-text", "Continue with new application")}
+          </Button>
+        </Flex>
+      )}
     </Col>
   );
 };

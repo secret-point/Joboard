@@ -940,6 +940,46 @@
       "value" : "Introduce un nombre completo válido con el siguiente formato: Nombre Apellidos",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "Introduce el nombre completo como firma electrónica",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "Introduce un nombre completo válido con el siguiente formato: Nombre Apellidos",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "Doy mi consentimiento",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "Lo rechazo y retiro mi solicitud",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "Doy mi consentimiento para la verificación de antecedentes",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "Siguiente",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "¿Seguro que quieres retirar tu solicitud?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "Si rechazas una verificación de antecedentes, ya no podrás postularte para este puesto.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "Rechazar y retirar la solicitud",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "Cancelar",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "Siguiente",
       "note" : "Text for the non fcra form page next button text"
@@ -3203,6 +3243,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Nuestra cultura empresarial inclusiva permite a los Amazonians ofrecer los mejores resultados a nuestros clientes. Si tienes una discapacidad y necesitas una adaptación durante el proceso de solicitud de empleo y contratación, incluido el apoyo para la entrevista o la incorporación, ponte en contacto con el equipo de adaptación de postulantes y candidatos (ACAT) de lunes a viernes, de 7:00 a 16:00 h GMT. Si llamas directamente desde el Reino Unido, marca el +44 800 086 9884. Si llamas desde Irlanda, marca el +353 1800 851 489. También puedes contactarnos si necesitas una adaptación en tu nueva función y deseas iniciar una solicitud antes de empezar el primer día.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "h",
+      "note" : "Abbreviation of hour in plural form"
     },
     "BB-schedule-card-details-per-week" : {
       "value" : "por semana",

@@ -940,6 +940,46 @@
       "value" : "कृपया खालील स्वरूपात वैध पूर्ण नाव एंटर करा: नाव आडनाव",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "eSignature म्हणून पूर्ण नाव टाइप करा",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "कृपया खालील स्वरूपात वैध पूर्ण नाव प्रविष्ट करा: नाव आडनाव",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "माझी संमती आहे",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "मी नकार देतो, आणि माझा अर्ज मागे घेतो",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "पार्श्वभूमी तपासणीची संमती",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "पुढे",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "तुम्हाला खात्री आहे का की तुम्ही तुमचा अर्ज मागे घेऊ इच्छिता?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "तुम्ही पार्श्वभूमी तपासणी नाकारली तर तुम्ही यापुढे या पदासाठी पात्र असणार नाही.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "अर्ज नाकारा आणि मागे घ्या",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "रद्द करा",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "पुढील",
       "note" : "Text for the non fcra form page next button text"

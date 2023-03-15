@@ -1862,6 +1862,10 @@
             "note": "Text for the schedule card total pay per hour text",
             "value": "/hour"
         },
+        "BB-Schedule-card-per-hour-text": {
+          "note": "per hour test",
+          "value": "/hr"
+        },
         "BB-Schedule-card-total-pay-per-month-text": {
             "note": "Text for the schedule card total pay per month text",
             "value": "Up to {formattedMonthlyRate}/month"

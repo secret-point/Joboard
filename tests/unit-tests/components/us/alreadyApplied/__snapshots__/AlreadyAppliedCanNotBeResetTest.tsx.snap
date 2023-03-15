@@ -3,11 +3,7 @@
 exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
 <Col
   gridGap="S300"
-  padding={
-    Object {
-      "top": "S300",
-    }
-  }
+  padding={Object {}}
 >
   <Text
     font="primary"
@@ -28,17 +24,20 @@ exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
      
     JOB-US-0000001234
   </Text>
-  <Text
-    font="primary"
-    fontSize="T200"
-    hyphens="none"
-  >
-    You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.
-  </Text>
   <Row
-    gridGap={20}
-    justifyContent="flex-end"
     width="100%"
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+    >
+      You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.
+    </Text>
+  </Row>
+  <Flex
+    className="alreadyAppliedButton"
+    flexDirection="column"
   >
     <Button
       colorScheme="default"
@@ -52,6 +51,6 @@ exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
     >
       Go to dashboard
     </Button>
-  </Row>
+  </Flex>
 </Col>
 `;

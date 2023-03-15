@@ -125,9 +125,8 @@ a {
     }
   }
 }
-.alreadyAppliedButtonStickyAtBottom {
-  position: sticky;
-  bottom: 10px;
+.alreadyAppliedButton {
+  margin-top: 20px !important;
 }
 
 .alreadyAppliedCard {

@@ -940,6 +940,46 @@
       "value" : "請按以下格式輸入有效的全名：名字 姓氏",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-consent-full-name-esignature" : {
+      "value" : "請輸入全名作為電子簽章",
+      "note" : "Text for background check required signature authorization"
+    },
+    "BB-Full-BGC-authorization-esignature-input-error-text" : {
+      "value" : "請按以下格式輸入有效的全名：名字 姓氏",
+      "note" : "Text for the US eSignature authorization input error text"
+    },
+    "BB-Full-BGC-acknowledgement-and-authorization-esignature-input-label-text" : {
+      "value" : "我同意",
+      "note" : "Text for the label for US eSignature authorization for consent to background check"
+    },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "我拒絕，並撤回我的申請",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "同意背景調查",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "下一步",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "您確定要撤回申請嗎？",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "如果您拒絕背景調查，您將不再符合此職位的要求。",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "拒絕並撤回申請",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "取消",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "下一頁",
       "note" : "Text for the non fcra form page next button text"
@@ -3199,6 +3239,22 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "我們的包容性文化使 Amazonian 能夠為客戶提供最好的成果。如果您是有障礙人士並且在申請和招聘流程中需要進行調整，包括面試或入職過程的支援，請聯絡候選求職者調解團隊 (ACAT)，時間為格林威治標準時間星期一至星期五上午 7:00 至下午 4:00。如果直接從英國致電，請撥打 +44 800 086 9884。如果是從愛爾蘭致電，請撥打 +353 1800 851 489。如果您有需要在新職位上作出調整並希望在第 1 天工作前提出請求，也可以聯絡我們。",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "分鐘",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "分鐘",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "小時",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "小時",
+      "note" : "Abbreviation of hour in plural form"
     }
   }
 }
