@@ -775,6 +775,7 @@ export interface DesiredHoursPerWeek {
 export interface WorkflowData {
   stepName: WORKFLOW_STEP_NAME;
   errorMessageCode: string;
+  executionId?: string;
 }
 
 export interface FcraDisclosureConfig {

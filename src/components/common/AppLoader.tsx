@@ -20,7 +20,7 @@ export const AppLoader = ( props: AppLoaderMergedProps) => {
   const { ui, loaderText } = props;
 
   return (
-    ui.isLoading || ui.wotcLoading || ui.referralLoading ? (
+    ui.isLoading || ui.wotcLoading || ui.referralLoading || ui.wfsLoading ? (
       <Col
         className="AppLoader"
       >

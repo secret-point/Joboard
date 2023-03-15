@@ -23,6 +23,7 @@ export interface uiState {
   bannerMessage?: AlertMessage;
   wotcLoading?: boolean;
   referralLoading?: boolean;
+  wfsLoading?: boolean;
 }
 
 export const initUiState: uiState = {
@@ -110,6 +111,18 @@ export default function uiReducer( state: uiState = initUiState, action: UI_ACTI
       return {
         ...state,
         wotcLoading: false
+      };
+
+    case WORKFLOW_REQUEST.START:
+      return {
+        ...state,
+        wfsLoading: true
+      };
+
+    case WORKFLOW_REQUEST.END:
+      return {
+        ...state,
+        wfsLoading: false
       };
 
     case THANK_YOU_ACTION_TYPES.VALIDATE_AMAZON_LOGIN_ID_SUCCESS:

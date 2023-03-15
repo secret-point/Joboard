@@ -195,6 +195,9 @@ export const goToStep = async ( workflowData: WorkflowData ) => {
       const metricName = workflowData.stepName === WORKFLOW_STEP_NAME.SUPPLEMENTARY_SUCCESS ? "Completed" : "PreHireStepsCompleted";
       metric.publishTimerMonitor(metricName, Date.now() - window.applicationStartTime);
     }
+  } else if (!stepName && workflowData?.executionId) {
+    // do nothing, workflow service just returned the execution Id which makes the loader disappears prematurely
+    log(`Received executionId: ${workflowData?.executionId}, current step name ${currentStepName}. Stay on current step and keep the loader on`);
   } else {
     log(`Received target step name: ${stepName}, current step name ${currentStepName}. Stay on current step.`);
     boundWorkflowRequestEnd();
