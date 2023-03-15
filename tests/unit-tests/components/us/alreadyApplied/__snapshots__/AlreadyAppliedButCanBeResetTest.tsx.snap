@@ -11,12 +11,22 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
 >
   <Text
     font="primary"
-    fontSize="T300"
+    fontSize="T400"
     fontWeight="bold"
     hyphens="none"
   >
     You already have an active application for the role:
     <br />
+  </Text>
+  <Text
+    color="neutral70"
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    Job Id: 
+     
+    JOB-US-0000001234
   </Text>
   <Flex
     flexDirection="column"
@@ -26,17 +36,25 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
       gridGap="S300"
       width="100%"
     >
-      <div>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
         Existing application:
-      </div>
+      </Text>
     </Col>
     <Col
       gridGap="S300"
       width="100%"
     >
-      <div>
+      <Text
+        font="primary"
+        fontSize="T300"
+        hyphens="none"
+      >
         New application:
-      </div>
+      </Text>
       <AlreadyAppliedScheduleDetails
         scheduleDetail={
           Object {
@@ -99,7 +117,7 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
   <Row>
     <Text
       font="primary"
-      fontSize="T100"
+      fontSize="T200"
       hyphens="none"
     >
       If you proceed with this new application, your existing one will be withdrawn. To view or resume your existing application, click 'Go to dashboard'.
@@ -108,7 +126,7 @@ exports[`AlreadyAppliedButCanBeReset should match snapshot 1`] = `
   <Row>
     <Text
       font="primary"
-      fontSize="T100"
+      fontSize="T200"
       hyphens="none"
     >
       To proceed with new application, click 'Continue with application'.

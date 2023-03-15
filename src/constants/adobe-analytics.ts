@@ -87,6 +87,7 @@ export const PAGE_NAME: any = {
   "update-shift": "update-shift",
   "view-shift": "view-shift",
   "already-applied": "already-applied",
+  "already-applied-but-can-be-reset": "already-applied-but-can-be-reset",
   "no-nhe-appointments": "NHE Unavailable"
 };
 
@@ -211,5 +212,8 @@ export enum METRIC_NAME {
   SKIP_SCHEDULE = "skip-schedule",
   THANK_YOU_SUBMIT = "thank-you-submit",
   NO_AVAILABLE_TIME_SLOTS = "no-available-time-slots",
-  ALREADY_APPLIED = "already-applied"
+  ALREADY_APPLIED = "already-applied",
+  ALREADY_APPLIED_BUT_CAN_BE_RESET = "already-applied-but-can-be-reset",
+  ALREADY_APPLIED_RESETTING_APPLICATION = "already-applied-resetting-application",
+  ALREADY_APPLIED_GO_BACK_TO_DASHBOARD = "already-applied-go-back-to-dashboard"
 }

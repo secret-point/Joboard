@@ -3,6 +3,7 @@
 exports[`ScheduleDetails should match snapshot 1`] = `
 <Card
   backgroundColor="neutral0"
+  className="alreadyAppliedCard"
   display="flex"
   flexDirection="column"
   padding="S300"
@@ -73,7 +74,7 @@ exports[`ScheduleDetails should match snapshot 1`] = `
     >
       <Row
         gridGap="S300"
-        width="65%"
+        width="75%"
       >
         <Text
           font="primary"
@@ -93,11 +94,11 @@ exports[`ScheduleDetails should match snapshot 1`] = `
         </Text>
       </Row>
       <Row
-        width="%35"
+        width="%25"
       >
         <Text
           font="primary"
-          fontSize="T300"
+          fontSize="T400"
           fontWeight="bold"
           hyphens="none"
         >

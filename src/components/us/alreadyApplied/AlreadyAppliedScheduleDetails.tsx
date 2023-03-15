@@ -66,7 +66,7 @@ export const AlreadyAppliedScheduleDetails = (props: ScheduleDetailsProps) => {
   };
 
   return (
-    <Card padding="S300" flexDirection="column">
+    <Card padding="S300" flexDirection="column" className="alreadyAppliedCard">
       <Col gridGap="S200">
         <Row gridGap="S300" alignItems="center">
           <Text fontSize="T100" fontWeight="bold">{t("BB-Schedule-card-hours", "Hours")}: </Text>
@@ -86,12 +86,12 @@ export const AlreadyAppliedScheduleDetails = (props: ScheduleDetailsProps) => {
           </Row>
         )}
         <Row gridGap="S300" alignItems="center">
-          <Row width="65%" gridGap="S300">
+          <Row width="75%" gridGap="S300">
             <Text fontSize="T100" fontWeight="bold">{t("BB-Schedule-card-start-date", "Start Date")}: </Text>
             <Text fontSize="T100">{renderStartDate()}</Text>
           </Row>
-          <Row width="%35">
-            <Text fontSize="T300" fontWeight="bold">{renderPayRateByLocale()}</Text>
+          <Row width="%25">
+            <Text fontSize="T400" fontWeight="bold">{renderPayRateByLocale()}</Text>
             <Row alignSelf="end"><Text fontSize="T100">{t("BB-Schedule-card-total-pay-per-hour-text", "/hour")}</Text></Row>
           </Row>
         </Row>

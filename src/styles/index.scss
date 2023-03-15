@@ -129,6 +129,11 @@ a {
   position: sticky;
   bottom: 10px;
 }
+
+.alreadyAppliedCard {
+  border: 1px solid $Neutral_20 !important;
+}
+
 .schedulePreferenceCard, .nhePreferenceCard {
     width: 100%;
     margin-top: 1em !important;

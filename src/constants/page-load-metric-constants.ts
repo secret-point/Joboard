@@ -1950,5 +1950,24 @@ export const ADOBE_PAGE_LOAD_METRICS: any = {
       sitePayloadDefault,
       candidatePayloadDefault,
     ]
+  },
+  [METRIC_NAME.ALREADY_APPLIED_BUT_CAN_BE_RESET]: {
+    eventPayload: {
+      event: EVENT.PAGE_LOAD,
+      page: {
+        name: PAGE_NAME["already-applied-but-can-be-reset"],
+        type: PAGE_TYPE.APPLICATION
+      }
+    },
+    dataPayload: [
+      jobPayloadDefault,
+      applicationPayloadDefault,
+      shiftPayloadDefault,
+      dragonstoneSchedulePayloadDefault,
+      dragonstoneJobPayloadDefault,
+      geoclusterPayloadDefault,
+      sitePayloadDefault,
+      candidatePayloadDefault,
+    ]
   }
 };

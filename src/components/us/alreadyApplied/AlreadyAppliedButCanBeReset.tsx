@@ -5,7 +5,7 @@ import { Text } from "@amzn/stencil-react-components/text";
 import queryString from "query-string";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
+import { addMetricForPageLoad, postAdobeMetrics } from "../../../actions/AdobeActions/adobeActions";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
 import { getPageNameFromPath, parseQueryParamsArrayToSingleItem, redirectToDashboard } from "../../../helpers/utils";
 import { JobState } from "../../../reducers/job.reducer";
@@ -32,6 +32,7 @@ import { SelectedScheduleForUpdateApplication } from "../../../utils/apiTypes";
 import { DuplicateJobId } from "../../../utils/constants/common";
 import { log, LoggerType } from "../../../helpers/log-helper";
 import { AppConfigState } from "../../../reducers/appConfig.reducer";
+import { METRIC_NAME } from "../../../constants/adobe-analytics";
 
 interface MapStateToProps {
   job: JobState;
@@ -72,15 +73,25 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
   }, [errorMetadata]);
 
   useEffect(() => {
-    jobDetail && addMetricForPageLoad(pageName);
+    jobDetail && addMetricForPageLoad(METRIC_NAME.ALREADY_APPLIED_BUT_CAN_BE_RESET);
   }, [jobDetail, pageName]);
 
   const handleGoToDashboard = () => {
+    postAdobeMetrics({ name: METRIC_NAME.ALREADY_APPLIED_GO_BACK_TO_DASHBOARD, values: {
+      APPLICATION: {
+        applicationId: errorMetadata?.applicationId || "",
+      }
+    } });
     sessionStorage.setItem(DuplicateJobId, jobId);
     redirectToDashboard(jobDetail?.jobId);
   };
 
   const handleContinueToApplication = () => {
+    postAdobeMetrics({ name: METRIC_NAME.ALREADY_APPLIED_RESETTING_APPLICATION, values: {
+      APPLICATION: {
+        applicationId: errorMetadata?.applicationId || "",
+      }
+    } });
     if (errorMetadata?.applicationId && errorMetadata?.candidateId) {
       const application = {
         applicationId: errorMetadata.applicationId,
@@ -114,35 +125,38 @@ export const AlreadyAppliedButCanBeReset = (props: MapStateToProps) => {
 
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
-      <Text fontSize="T300" fontWeight="bold">
+      <Text fontSize="T400" fontWeight="bold">
         {t("BB-already-applied-but-can-be-reset", "You already have an active application for the role:",)}
         <br />
         {jobDetail?.jobTitle || ""}
       </Text>
+      <Text fontSize="T300" color="neutral70">
+        {t("BB-job-id", "Job Id: ")} {jobDetail?.jobId || "" }
+      </Text>
       <Flex flexDirection={matches.s || matches.m ? "column": "row"} gridGap="S300">
         <Col width={matches.s || matches.m ? "100%": "35%"} gridGap="S300">
-          <div>{t("BB-existing-application", "Existing application:")}</div>
+          <Text fontSize="T300">{t("BB-existing-application", "Existing application:")}</Text>
           {oldScheduleDetail && <AlreadyAppliedScheduleDetails scheduleDetail={ oldScheduleDetail } />}
         </Col>
 
         <Col width={matches.s || matches.m ? "100%": "35%"} gridGap="S300">
-          <div>{t("BB-new-application", "New application:")}</div>
+          <Text fontSize="T300">{t("BB-new-application", "New application:")}</Text>
           {scheduleDetail && <AlreadyAppliedScheduleDetails scheduleDetail={ scheduleDetail } />}
         </Col>
       </Flex>
       <Row>
-        <Text fontSize="T100">
+        <Text fontSize="T200">
           {t("BB-already-applied-but-can-be-reset-dashboard-description", "If you proceed with this new application, your existing one will be withdrawn. To view or resume your existing application, click 'Go to dashboard'.")}
         </Text>
       </Row>
       <Row>
-        <Text fontSize="T100">
+        <Text fontSize="T200">
           {t(" BB-already-applied-but-can-be-reset-continue-description", "To proceed with new application, click 'Continue with application'.")}
         </Text>
       </Row>
       <Flex className="alreadyAppliedButtonStickyAtBottom" width={matches.s || matches.m ? "100%": "70%"} gridGap={20} justifyContent="flex-end" flexDirection={matches.s || matches.m ? "column": "row"}>
         <Button dataTestId="button-dashboard" variant={ButtonVariant.Secondary} onClick={handleGoToDashboard}>
-          {t("BB-already-applied-button-text", "Go to dashboard")}
+          {t("BB-already-applied-button-text-v2", "Go to dashboard")}
         </Button>
         <Button dataTestId="button-continue" variant={ButtonVariant.Primary} onClick={handleContinueToApplication}>
           {t("BB-already-applied-but-continue-button-text", "Continue with new application")}

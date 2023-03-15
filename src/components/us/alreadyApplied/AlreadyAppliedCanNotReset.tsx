@@ -42,20 +42,20 @@ export const AlreadyAppliedCanNotReset = (props: MapStateToProps) => {
 
   return (
     <Col gridGap="S300" padding={{ top: "S300" }}>
-      <Text fontSize="T300" fontWeight="bold">
-        {t("BB-already-applied", `You have already submitted an application for the role:  ${jobDetail?.jobTitle || ""}`, { jobTitle: jobDetail?.jobTitle || "" })}
+      <Text fontSize="T400" fontWeight="bold">
+        {t("BB-already-applied-v2", `You have already submitted an application for the role:  ${jobDetail?.jobTitle || ""}`, { jobTitle: jobDetail?.jobTitle || "" })}
         <br />
         {jobDetail?.jobTitle || ""}
       </Text>
       <Text fontSize="T300" color="neutral70">
         {t("BB-job-id", "Job Id: ")} {jobDetail?.jobId || "" }
       </Text>
-      <Text fontSize="T100">
-        {t("BB-already-applied-description", "You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.")}
+      <Text fontSize="T200">
+        {t("BB-already-applied-description-v2", "You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.")}
       </Text>
-      <Row width={matches.s || matches.m ? "100%": "63%"} gridGap={20} justifyContent="flex-end">
+      <Row width={matches.s || matches.m ? "100%": "70%"} gridGap={20} justifyContent="flex-end">
         <Button dataTestId="button-go-to-dashboard" variant={ButtonVariant.Primary} onClick={handleGoToDashboard}>
-          {t("BB-already-applied-button-text", "Go to dashboard")}
+          {t("BB-already-applied-button-text-v2", "Go to dashboard")}
         </Button>
       </Row>
     </Col>

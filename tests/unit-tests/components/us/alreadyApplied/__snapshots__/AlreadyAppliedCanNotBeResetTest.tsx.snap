@@ -11,7 +11,7 @@ exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
 >
   <Text
     font="primary"
-    fontSize="T300"
+    fontSize="T400"
     fontWeight="bold"
     hyphens="none"
   >
@@ -30,7 +30,7 @@ exports[`AlreadyAppliedCanNotReset should match snapshot 1`] = `
   </Text>
   <Text
     font="primary"
-    fontSize="T100"
+    fontSize="T200"
     hyphens="none"
   >
     You can only have one active application for this Job Id. To view your current application and see more options, click 'Go to dashboard'.
