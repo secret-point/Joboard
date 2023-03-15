@@ -55,8 +55,8 @@ export const ThankYouSummary = (props: MapStateToProps) => {
   const jobDetail = job.results;
   const nheAppointment = applicationData?.nheAppointment;
   const location = applicationData?.nheAppointment?.location;
-  const startTime = nheAppointment?.startTime;
-  const endTime = nheAppointment?.endTime;
+  const startTime = moment(nheAppointment?.startTime, "hh:mm A").locale(getLocale()).format("HH:mm");
+  const endTime = moment(nheAppointment?.endTime, "hh:mm A").locale(getLocale()).format("HH:mm");
 
   useEffect(() => {
     // Refresh and add scheduleId in the url from the jobSelected if it doesn't exist from the query param
@@ -115,7 +115,7 @@ export const ThankYouSummary = (props: MapStateToProps) => {
             displayFormat: "dddd, D MMM"
           })}
         </Text>
-        <Text fontSize="T100">
+        <Text fontSize="T100" dataTestId="nheDetailsTime">
           {t("BB-Kondo-ThankYou-nhe-appointment-details-time-label", "Time")}: {moment(startTime, "hh:mm A").locale(getLocale()).format("HH:mm")} - {moment(endTime, "hh:mm A").locale(getLocale()).format("HH:mm")}
         </Text>
         <Text fontSize="T100">

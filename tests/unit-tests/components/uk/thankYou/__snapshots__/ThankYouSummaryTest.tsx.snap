@@ -113,6 +113,7 @@ exports[`ThankYouSummary should match snapshot - with nhe appointment 1`] = `
           Thursday, 4 Aug
         </Text>
         <Text
+          dataTestId="nheDetailsTime"
           font="primary"
           fontSize="T100"
           hyphens="none"

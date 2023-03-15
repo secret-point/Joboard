@@ -5,6 +5,8 @@ import { ThankYouSummary } from "../../../../../src/components/uk/thankYou/Thank
 import { CountryCode } from "../../../../../src/utils/enums/common";
 import * as helper from "../../../../../src/utils/helper";
 import {
+  NHE_TIMESLOT,
+  TEST_APPLICATION,
   TEST_APPLICATION_ID,
   TEST_APPLICATION_STATE,
   TEST_CANDIDATE_STATE,
@@ -16,6 +18,7 @@ import {
   TestNhePreference
 } from "../../../../test-utils/test-data";
 import { Application } from "../../../../../src/utils/types/common";
+import { mountWithStencil } from "@amzn/stencil-react-components/tests";
 
 describe("ThankYouSummary", () => {
   const mockLocation = {
@@ -29,7 +32,9 @@ describe("ThankYouSummary", () => {
 
   // Unit test can't get Katal {{Country}} development value.
   const mockGetCountryCode = jest.spyOn(helper, "getCountryCode");
-  mockGetCountryCode.mockReturnValue(CountryCode.US);
+  beforeEach(() => {
+    mockGetCountryCode.mockReturnValue(CountryCode.US);
+  });
 
   it("should match snapshot - with nhe appointment", () => {
     const shallowWrapper = shallow(
@@ -41,6 +46,7 @@ describe("ThankYouSummary", () => {
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
+    shallowWrapper.unmount();
   });
 
   it("should match snapshot - with nhe Preferences", () => {
@@ -60,6 +66,7 @@ describe("ThankYouSummary", () => {
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
+    shallowWrapper.unmount();
   });
 
   it("should match snapshot - with shift Preferences when application has shift preference", () => {
@@ -79,6 +86,7 @@ describe("ThankYouSummary", () => {
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
+    shallowWrapper.unmount();
   });
 
   it("should match snapshot - with shift Preferences when application has no shift, nhe preference and nhe appointment", () => {
@@ -97,5 +105,23 @@ describe("ThankYouSummary", () => {
       />);
 
     expect(shallowWrapper).toMatchSnapshot();
+    shallowWrapper.unmount();
+  });
+
+  it("should render date in UK format for NHE appointment", () => {
+    const testApplication = {...TEST_APPLICATION_STATE, results: {...TEST_APPLICATION, nheAppointment: {...NHE_TIMESLOT, startTime: "12:30 PM",
+    endTime: "01:30 PM",}}}
+    const wrapper = mountWithStencil(<ThankYouSummary
+      candidate={TEST_CANDIDATE_STATE}
+      job={TEST_JOB_STATE}
+      application={testApplication}
+      schedule={TEST_SCHEDULE_STATE}
+    />);
+
+    expect(wrapper.find('div[data-test-id="nheDetailsTime"]').text()).toBe(`Time: 12:30 - 13:30`);
+  });
+
+  afterEach(() => {
+    mockGetCountryCode.mockReset();
   });
 });
