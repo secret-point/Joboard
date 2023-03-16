@@ -19,6 +19,7 @@ import { NheState } from "../../../reducers/nhe.reducer";
 import { ScheduleState } from "../../../reducers/schedule.reducer";
 import {
   checkAndBoundGetApplication,
+  getDefaultNHEAppointmentDate,
   getDefaultUkNheApptTimeFromMap,
   getLocale,
   getUKNHEAppointmentTimeMap,
@@ -216,7 +217,7 @@ export const Nhe = ( props: MapStateToProps ) => {
                       setSelectedNheTime(getDefaultUkNheApptTimeFromMap(appointmentTimeMap, option)[0]);
                     }}
                     options={appointmentDateList}
-                    defaultValue={appointmentDateList[0]}
+                    defaultValue={getDefaultNHEAppointmentDate(appointmentDateList)}
                     value={selectedNheDate}
                   />
                 </Col>

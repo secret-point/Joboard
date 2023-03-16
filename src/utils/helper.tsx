@@ -2251,4 +2251,11 @@ export const getShiftPreferencesHoursPerWeekStrList = (shiftPreferences?: Candid
     },
   );
 };
+
+export const getDefaultNHEAppointmentDate = (dateList: string[]) => {
+  if (dateList.length === 0) return undefined;
+  const index = Math.floor(dateList.length / 2);
+  return dateList[index];
+};
+
 // TODO: should we break this file into multiple helper files by purpose? it's currentlu over 2k lines long which will make it harder to test

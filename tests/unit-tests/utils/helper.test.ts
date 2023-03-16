@@ -101,7 +101,8 @@ import {
   validateInput,
   validateNonFcraSignatures,
   validateUKNationalInsuranceNumber,
-  verifyBasicInfo
+  verifyBasicInfo,
+  getDefaultNHEAppointmentDate
 } from "../../../src/utils/helper";
 import store from "../../../src/store/store";
 import * as boundApplicationActions from "../../../src/actions/ApplicationActions/boundApplicationActions";
@@ -1896,4 +1897,31 @@ describe("getFeatureFlagValue",()=>{
         });
     expect(getFeatureFlagValue(FEATURE_FLAG.ENABLE_CANDIDATE_SHIFT_PREFERENCES)).toEqual(true);
   })
+});
+
+describe("getDefaultNHEAppointmentDate", () => {
+  it("no date item", () => {
+    const dateList = [];
+    expect(getDefaultNHEAppointmentDate(dateList)).toEqual(undefined);
+  });
+
+  it("one date item", () => {
+    const dateList = ["Thursday March 16 2023"];
+    expect(getDefaultNHEAppointmentDate(dateList)).toEqual(dateList[0]);
+  });
+
+  it("two date items", () => {
+    const dateList = ["Thursday March 16 2023", "Friday March 17 2023"];
+    expect(getDefaultNHEAppointmentDate(dateList)).toEqual(dateList[1]);
+  });
+
+  it("odd number of date items", () => {
+    const dateList = ["Thursday March 16 2023", "Friday March 17 2023", "Saturday March 18 2023", "Sunday March 19 2023", "Monday March 20 2023"];
+    expect(getDefaultNHEAppointmentDate(dateList)).toEqual(dateList[2]);
+  });
+
+  it("even number of date items", () => {
+    const dateList = ["Thursday March 16 2023", "Friday March 17 2023", "Saturday March 18 2023", "Sunday March 19 2023", "Monday March 20 2023", "Tuesday March 21 2023"];
+    expect(getDefaultNHEAppointmentDate(dateList)).toEqual(dateList[3]);
+  });
 });
