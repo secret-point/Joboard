@@ -1,16 +1,16 @@
 import React from "react";
-import { shallow } from "enzyme";
-import { useLocation } from "react-router-dom";
+import { mountWithStencil } from "@amzn/stencil-react-components/tests";
+import { ReactWrapper, shallow } from "enzyme";
+import { createMemoryHistory } from "history";
+import { Provider } from "react-redux";
+import { Router, useLocation } from "react-router-dom";
 import { AlreadyApplied } from "../../../../../src/components/us/alreadyApplied/AlreadyApplied";
 import store from "../../../../../src/store/store";
-import {
-  TEST_APPLICATION_STATE,
-  TEST_JOB2_ID,
-  TEST_JOB_STATE
-} from "../../../../test-utils/test-data";
-import { CREATE_APPLICATION_ERROR_CODE } from "../../../../../src/utils/enums/common";
+import { TEST_APP_CONFIG, TEST_CANDIDATE_STATE, TEST_JOB2_ID, TEST_JOB_STATE } from "../../../../test-utils/test-data";
 
 describe("AlreadyApplied", () => {
+  const initStoreState = store.getState();
+  let wrapper: ReactWrapper;
   let state: any;
   store.getState = () => state;
 
@@ -23,19 +23,47 @@ describe("AlreadyApplied", () => {
   const mockUseLocation = useLocation as jest.Mock;
   mockUseLocation.mockReturnValue(mockLocation);
 
-  it("should match snapshot for APPLICATION_ALREADY_EXIST_CAN_BE_RESET", () => {
-    const application = TEST_APPLICATION_STATE;
-    application.errorCode = CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST_CAN_BE_RESET
-    const shallowWrapper = shallow(<AlreadyApplied application={application} job={TEST_JOB_STATE} />);
+  beforeEach(() => {
+    window.location.assign = jest.fn();
+
+    state = {
+      ...initStoreState,
+      appConfig: {
+        ...initStoreState.appConfig,
+        results: {
+          ...initStoreState.appConfig.results,
+          envConfig: TEST_APP_CONFIG
+        }
+      }
+    };
+
+    const history = createMemoryHistory();
+    history.location = {
+      ...history.location,
+      ...mockLocation
+    };
+
+    wrapper = mountWithStencil(
+      <Provider store={store}>
+        <Router history={history}>
+          <AlreadyApplied candidate={TEST_CANDIDATE_STATE} job={TEST_JOB_STATE} />
+        </Router>
+      </Provider>
+    );
+  });
+
+  it("should match snapshot", () => {
+    const shallowWrapper = shallow(<AlreadyApplied candidate={TEST_CANDIDATE_STATE} job={TEST_JOB_STATE} />);
 
     expect(shallowWrapper).toMatchSnapshot();
   });
 
-  it("should match snapshot for APPLICATION_ALREADY_EXIST", () => {
-    const application = TEST_APPLICATION_STATE;
-    application.errorCode = CREATE_APPLICATION_ERROR_CODE.APPLICATION_ALREADY_EXIST
-    const shallowWrapper = shallow(<AlreadyApplied application={application} job={TEST_JOB_STATE} />);
+  it("should redirect to dashboard if click on the return to dashboard button", () => {
+    const button = wrapper.find('button[data-test-id="button-dashboard"]');
+    button.simulate('click');
 
-    expect(shallowWrapper).toMatchSnapshot();
+    expect(window.location.assign).toBeCalledWith(
+      expect.stringContaining("/myApplications")
+    );
   });
 });

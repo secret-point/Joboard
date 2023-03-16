@@ -1,13 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AlreadyApplied should match snapshot for APPLICATION_ALREADY_EXIST 1`] = `
-<Col>
-  <Connect(AlreadyAppliedCanNotReset) />
-</Col>
-`;
-
-exports[`AlreadyApplied should match snapshot for APPLICATION_ALREADY_EXIST_CAN_BE_RESET 1`] = `
-<Col>
-  <Connect(AlreadyAppliedButCanBeReset) />
+exports[`AlreadyApplied should match snapshot 1`] = `
+<Col
+  gridGap="S300"
+  padding={
+    Object {
+      "top": "S300",
+    }
+  }
+>
+  <Text
+    font="primary"
+    fontSize="T300"
+    hyphens="none"
+  >
+    test-firstname, 
+    You have already started and / or completed an application for this job.
+  </Text>
+  <Text
+    font="primary"
+    fontSize="T100"
+    hyphens="none"
+  >
+    Return to the dashboard resume your application or view application and new hire appointment details, and your next steps.
+  </Text>
+  <Col
+    padding={
+      Object {
+        "top": "S300",
+      }
+    }
+  >
+    <Button
+      colorScheme="default"
+      dataTestId="button-dashboard"
+      iconPosition="leading"
+      onClick={[Function]}
+      shouldUseResponsiveContent={true}
+      size="default"
+      type="button"
+      variant="primary"
+    >
+      Return to dashboard
+    </Button>
+  </Col>
 </Col>
 `;

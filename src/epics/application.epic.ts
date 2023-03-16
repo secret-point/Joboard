@@ -342,11 +342,9 @@ const createApplicationAndSkipScheduleHelper = (createApplicationResponse: Appli
       routeToAppPageWithPath(CONSENT, [
         { paramName: QUERY_PARAMETER_NAME.APPLICATION_ID, paramValue: applicationId },
         { paramName: QUERY_PARAMETER_NAME.SCHEDULE_ID, paramValue: scheduleId }]);
-      if (scheduleId !== createApplicationResponse?.jobScheduleSelected?.scheduleId) {
-        window.hasCompleteTaskOnSkipSchedule = () => {
-          completeTask(applicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
-        };
-      }
+      window.hasCompleteTaskOnSkipSchedule = () => {
+        completeTask(applicationResponse, WORKFLOW_STEP_NAME.JOB_OPPORTUNITIES, undefined, undefined, jobId, scheduleDetail);
+      };
       boundWorkflowRequestStart();
       loadWorkflowDS(
         jobId || "",

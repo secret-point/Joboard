@@ -92,9 +92,6 @@ export default class StepFunctionService {
       // This is from old BB and it is not working, may remove it later
       // Using hasCompleteTaskOnWorkflowConnect below instead
       completeTask(window.applicationData, "Complete Task On Load");
-    } else if (window.hasCompleteTaskOnWorkflowConnect) {
-      window.hasCompleteTaskOnWorkflowConnect();
-      window.hasCompleteTaskOnWorkflowConnect = undefined;
     } else {
       this.jobId ? startOrResumeWorkflowDS() : startOrResumeWorkflow();
     }
