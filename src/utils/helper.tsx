@@ -789,8 +789,8 @@ export const isDateGreaterThanToday = (date: string, format?: string): boolean =
     return false;
   }
 
-  const today = moment();
-  const diff = today.diff(moment(date, format), "days");
+  const today = moment().format(format);
+  const diff = moment(today).diff(moment(date, format), "days");
 
   return diff < 0;
 };

@@ -179,7 +179,7 @@ export const ApplicationShiftPreferences = (props: MapStateToProps) => {
             {inputProps => (
               <PopupDatePicker
                 inputProps={{ ...inputProps, width: "100%" }}
-                isDateDisabled={value => !isDateGreaterThanToday(value)}
+                isDateDisabled={value => !isDateGreaterThanToday(value, "DD/MM/YYYY")}
                 onChange={setStartDate}
               />
             )}
