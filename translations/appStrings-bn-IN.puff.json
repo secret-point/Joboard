@@ -1860,6 +1860,10 @@
       "value" : "/ঘন্টা",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "/ঘণ্টা",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "{formattedMonthlyRate}/মাস পর্যন্ত",
       "note" : "Text for the schedule card total pay per month text"
@@ -3259,6 +3263,14 @@
     "BB-time-units-abbreviation-hours-plural" : {
       "value" : "ঘন্টা",
       "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "প্রতি সপ্তাহে",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "এবং",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

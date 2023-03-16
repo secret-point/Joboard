@@ -1860,6 +1860,10 @@
       "value" : "/saat",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "/sa.",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "Aylık {formattedMonthlyRate} tutarına kadar",
       "note" : "Text for the schedule card total pay per month text"

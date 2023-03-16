@@ -1860,6 +1860,10 @@
       "value" : "/ ساعة",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "/ساعة",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "ما يصل إلى {formattedMonthlyRate}/الشهر",
       "note" : "Text for the schedule card total pay per month text"

@@ -3239,6 +3239,30 @@
     "BB-AssessmentConsentPage-conditions-title-text-expanderContent-list-item-3" : {
       "value" : "Vår inkluderande kultur ger Amazonians möjligheten att leverera bästa möjliga resultat till våra kunder. Om du har en funktionsnedsättning och har behov av en individanpassad ansöknings- och anställningsprocess, till exempel med stöd under intervjun eller introduktionen, kan du kontakta ACAT (Applicant-Candidate Accommodation Team), som har öppet måndag till fredag, kl. 07.00–16.00 GMT. Inom Storbritannien ringer du +44 800 086 9884. Från Irland ringer du +353 1800 851 489. Du kan också kontakta oss om du behöver anpassa din nya roll och vill begära detta innan din första arbetsdag.",
       "note" : "Assessment condition number 3"
+    },
+    "BB-time-units-abbreviation-minutes-singular" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in singular form"
+    },
+    "BB-time-units-abbreviation-minutes-plural" : {
+      "value" : "min",
+      "note" : "Abbreviation of minute in plural form"
+    },
+    "BB-time-units-abbreviation-hours-singular" : {
+      "value" : "tim",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-time-units-abbreviation-hours-plural" : {
+      "value" : "tim",
+      "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "per vecka",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "och",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

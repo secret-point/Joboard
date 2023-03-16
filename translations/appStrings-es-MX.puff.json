@@ -1520,6 +1520,10 @@
       "value" : "Ajustes",
       "note" : "Text for the assessment consent page accommodation heading text"
     },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "En Amazon, honramos la diversidad de nuestra fuerza laboral y las distintas formas en que trabajamos. Si tienes una discapacidad y requieres alguna adaptación durante el proceso de contratación, incluida la evaluación, visita <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> Amazon Accommodation.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
+    },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Todas las secciones de esta evaluación:",
       "note" : "Text for the assessment pace and sections of the assessments list header text"

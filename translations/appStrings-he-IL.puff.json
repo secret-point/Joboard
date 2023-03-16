@@ -1860,6 +1860,10 @@
       "value" : "/שעה",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "לשעה",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "עד {formattedMonthlyRate} לחודש",
       "note" : "Text for the schedule card total pay per month text"

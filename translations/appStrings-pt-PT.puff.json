@@ -3259,6 +3259,14 @@
     "BB-time-units-abbreviation-hours-plural" : {
       "value" : "horas",
       "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "por semana",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "e",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

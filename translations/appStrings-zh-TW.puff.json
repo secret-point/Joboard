@@ -1056,6 +1056,10 @@
       "value" : "現有申請：",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "工作 ID： ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "表單 CC-305",
       "note" : "Text for Self Identification form name"
@@ -3255,6 +3259,14 @@
     "BB-time-units-abbreviation-hours-plural" : {
       "value" : "小時",
       "note" : "Abbreviation of hour in plural form"
+    },
+    "BB-schedule-card-details-per-week" : {
+      "value" : "/ 週",
+      "note" : "a sufix that follows a time string, e.g.: [2hrs and 2 mins] per week"
+    },
+    "BB-connective-text-between-hours-and-minutes" : {
+      "value" : "和",
+      "note" : "connective word between hours and minutes, e.g.: 2hrs 'and' 2 mins"
     }
   }
 }

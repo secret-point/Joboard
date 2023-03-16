@@ -108,6 +108,10 @@
       "value" : "Jsem si vědom toho, že veškeré získané informace mohou být převáděny v souladu s Federálním zákonem o ochraně osobních údajů v držení soukromých stran a jeho předpisy, směrnicemi a dalšími platnými ustanovení o ochraně osobních údajů, jakož i ve smyslu Oznámení o ochraně osobních údajů společnosti pro zaměstnance a/nebo uchazeče.",
       "note" : "Text for the flyout MX user data policy body text"
     },
+    "BB-ConsentPage-flyout-user-data-policy-paragraph1-text" : {
+      "value" : "Společnost Amazon se zavázala k rozmanitému a inkluzivnímu pracovnímu prostředí. Společnost Amazon je zaměstnavatelem s rovnými příležitostmi a nediskriminuje na základě rasy, národnosti, pohlaví, genderové identity, sexuální orientace, statusu chráněného veterána, zdravotního postižení, věku nebo jiného zákonem chráněného statusu. Osoby se zdravotním postižením, které chtějí požádat o přizpůsobení, mohou navštívit stránky <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'>https://hiring.amazon.com/people-with-disabilities#/</a>",
+      "note" : "Text for the flyout user data policy paragraph 1 text"
+    },
     "BB-ConsentPage-flyout-user-data-policy-paragraph2-text" : {
       "value" : "Společnost Amazon bere ochranu Vašich osobních údajů vážně a zpracovává Vaše osobní údaje pouze v souladu se zákonem. Zejména nesdílíme Vaše osobní údaje s žádnou třetí stranou bez Vašeho předchozího souhlasu, pokud k tomu nejsme nuceni ze zákona. Pokud se nevyjádříte jinak, bude najímající společnost Amazon ukládat Vaše osobní údaje do elektronické databáze vedené společností Amazon.com v USA nebo některou z jejích poboček. Úplné informace o tom, jak společnost Amazon ukládá a zpracovává Vaše osobní údaje, naleznete zde <a href='http://www.amazon.jobs/' target='_blank' rel='noopener noreferrer'>http://www.amazon.jobs/</a>",
       "note" : "Text for the flyout user data policy paragraph 2 text"
@@ -1555,6 +1559,10 @@
     "BB-assessment-consent-accommodation-heading-text" : {
       "value" : "Přizpůsobení",
       "note" : "Text for the assessment consent page accommodation heading text"
+    },
+    "BB-assessment-consent-diversity-and-disability-accommodation-notice-text" : {
+      "value" : "Ve společnosti Amazon oslavujeme rozmanitost našich zaměstnanců a různé způsoby práce. Pokud máte zdravotní postižení a potřebujete během přijímacího procesu (včetně fáze posouzení) přizpůsobení, navštivte prosím stránku <a href='https://hiring.amazon.com/people-with-disabilities#/' target='_blank' rel='noopener noreferrer'> přizpůsobení Amazon.</a>",
+      "note" : "Text for the assessment consent page diversity and disability accommodation"
     },
     "BB-assessment-consent-accommodation-assessment-pace-and-sections-info-list-header-text" : {
       "value" : "Všechny části tohoto posouzení:",
