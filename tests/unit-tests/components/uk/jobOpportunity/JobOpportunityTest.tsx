@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 import { useLocation } from "react-router-dom";
 import { JobOpportunity } from "../../../../../src/components/uk/jobOpportunity/JobOpportunity";
 import {
+  TEST_APP_CONFIG_STATE,
   TEST_APPLICATION_ID,
   TEST_APPLICATION_STATE,
   TEST_ASSESSMENT_STATE,
@@ -31,6 +32,7 @@ describe("JobOpportunity", () => {
         application={TEST_APPLICATION_STATE}
         schedule={TEST_SCHEDULE_STATE}
         assessment={TEST_ASSESSMENT_STATE}
+        appConfig={TEST_APP_CONFIG_STATE}
       />);
 
     expect(shallowWrapper).toMatchSnapshot();

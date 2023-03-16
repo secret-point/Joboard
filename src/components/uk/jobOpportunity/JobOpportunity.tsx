@@ -51,7 +51,8 @@ import { AssessmentState } from "../../../reducers/assessment.reducer";
 import { APPLICATION_STEPS as STEPS } from "../../../utils/enums/common";
 import { getStepsByTitle } from "../../../helpers/steps-helper";
 import { getScheduleInUKFormat } from "../../../helpers/schedule-helper";
-import { Schedule } from "../../../utils/types/common";
+import { AvailableFilter, Schedule } from "../../../utils/types/common";
+import { AppConfigState } from "../../../reducers/appConfig.reducer";
 
 interface MapStateToProps {
   job: JobState;
@@ -59,12 +60,13 @@ interface MapStateToProps {
   schedule: ScheduleState;
   candidate: CandidateState;
   assessment: AssessmentState;
+  appConfig: AppConfigState;
 }
 
 type JobOpportunityMergedProps = MapStateToProps ;
 
 export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
-  const { job, application, schedule, candidate, assessment } = props;
+  const { job, application, schedule, candidate, assessment, appConfig } = props;
   const { search, pathname } = useLocation();
   const pageName = getPageNameFromPath(pathname);
   const queryParams = parseQueryParamsArrayToSingleItem(queryString.parse(search));
@@ -72,6 +74,7 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const jobDetail = job.results;
   const applicationData = application.results;
   const scheduleData = schedule.results.scheduleList;
+  const envConfig = appConfig.results?.envConfig;
   const scheduleDataUK = scheduleData && scheduleData.map(schedule => getScheduleInUKFormat(schedule)) ;
   const scheduleFilters = schedule.filters;
   const { matches } = useBreakpoints();
@@ -79,7 +82,8 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   const [showInactiveModal, setShowInactiveModal] = useState(false);
   const { assessmentElegibility } = assessment.results ;
   const applicationSteps = assessmentElegibility ? ApplicationStepListUK : getStepsByTitle(ApplicationStepListUK, STEPS.COMPLETE_AN_ASSESSMENT, false );
-  const headerStep = getStepsByTitle(applicationSteps, STEPS.SELECT_JOB)[0]; 
+  const headerStep = getStepsByTitle(applicationSteps, STEPS.SELECT_JOB)[0];
+  const SHIFT_SCHEDULES_SORT = "SHIFT_SCHEDULES_SORT";
 
   // TODO: move this to a constants file so we can reuse this values consistently accross the UI
   const width = matches.s ? "100VW" : "420px";
@@ -89,11 +93,22 @@ export const JobOpportunity = ( props: JobOpportunityMergedProps ) => {
   }, []);
 
   useEffect(() => {
+    const locale = getLocale();
+    const defaultFilters = envConfig?.defaultAvailableFilter;
+    const filter: AvailableFilter | undefined = defaultFilters ?
+      {
+        ...defaultFilters,
+        locale,
+        sortBy: SHIFT_SCHEDULES_SORT
+      } : undefined;
+
     const request: GetScheduleListByJobIdRequest = {
       jobId,
       applicationId,
-      locale: getLocale()
+      locale,
+      filter
     };
+
     boundGetScheduleListByJobId(request);
   }, [applicationId, jobId]);
 
