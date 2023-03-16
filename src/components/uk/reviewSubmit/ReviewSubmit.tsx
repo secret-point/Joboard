@@ -392,7 +392,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
                     <Text fontSize="T100">
                       {formatDate(nheAppointment?.dateWithoutFormat, {
                         defaultDateFormat: "DD/MM/yyyy",
-                        displayFormat: "dddd, MMM Do YYYY"
+                        displayFormat: "dddd, D MMM"
                       })}
                     </Text>
                   </Row>
