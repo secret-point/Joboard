@@ -1018,13 +1018,7 @@ exports[`ReviewSubmit should match snapshot 1`] = `
               hyphens="none"
             >
               Meeting details
-              :
-            </Text>
-            <Text
-              font="primary"
-              fontSize="T100"
-              hyphens="none"
-            >
+              : 
               Onsite - Recruiting Office at Amazon Distribution Center, 3230 International Place Dupont WA 98327, US
             </Text>
           </Row>

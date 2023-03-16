@@ -404,10 +404,7 @@ export const ReviewSubmit = (props: MapStateToProps) => {
 
                   <Row gridGap={5}>
                     <Text fontSize="T100">
-                      {t("BB-ReviewSubmit-pre-hire-appointment-meeting-details-label", "Meeting details")}:
-                    </Text>
-                    <Text fontSize="T100">
-                      {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
+                      {t("BB-ReviewSubmit-pre-hire-appointment-meeting-details-label", "Meeting details")}: {location && `${location.streetAddress} ${location.city} ${location.state} ${location.postalCode}, ${location.country}`}
                     </Text>
                   </Row>
                   <Row padding={{ top: "S100" }}>
