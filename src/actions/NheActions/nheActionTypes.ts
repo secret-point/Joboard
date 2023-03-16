@@ -21,12 +21,16 @@ export enum NHE_ACTION_TYPES {
 export interface GetNheTimeSlotsDsAction extends Action {
   type: NHE_ACTION_TYPES.GET_SLOTS_DS;
   payload: GetNheTimeSlotRequestDs;
+  onSuccess?: Function;
+  onError?: Function;
 }
 
 export interface GetNheTimeSlotsThroughNheDsAction extends Action {
   type: NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS;
   redirectWhenNoData: boolean;
   payload: GetNheTimeSlotRequestThroughNheDS;
+  onSuccess?: Function;
+  onError?: Function;
 }
 
 export interface GetNheTimeSlotsDsSuccessAction extends Action {

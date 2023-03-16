@@ -18,18 +18,22 @@ import {
   SetPossibleNhePreferenceRequestAction
 } from "./nheActionTypes";
 
-export const actionGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData: boolean): GetNheTimeSlotsThroughNheDsAction => {
+export const actionGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData: boolean, onSuccess?: Function, onError?: Function): GetNheTimeSlotsThroughNheDsAction => {
   return {
     type: NHE_ACTION_TYPES.GET_SLOTS_THROUGH_NHE_DS,
     redirectWhenNoData,
-    payload
+    payload,
+    onSuccess,
+    onError
   };
 };
 
-export const actionGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs): GetNheTimeSlotsDsAction => {
+export const actionGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs, onSuccess?: Function, onError?: Function): GetNheTimeSlotsDsAction => {
   return {
     type: NHE_ACTION_TYPES.GET_SLOTS_DS,
-    payload
+    payload,
+    onSuccess,
+    onError
   };
 };
 

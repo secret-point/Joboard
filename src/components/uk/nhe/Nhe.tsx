@@ -76,6 +76,7 @@ export const Nhe = ( props: MapStateToProps ) => {
 
   const [selectedNheDate, setSelectedNheDate] = useState<string>("");
   const [selectedNheTime, setSelectedNheTime] = useState<string>("");
+  const [hasVenue, setHasVenue] = useState(false);
   const maxNheSlotLength = nheData.length > 0 ? getUKNHEMaxSlotLength(nheData, scheduleId) : 0;
 
   const displayFirstName = candidateData?.preferredFirstName || candidateData?.firstName || "";
@@ -139,7 +140,11 @@ export const Nhe = ( props: MapStateToProps ) => {
       };
 
       // We don't redirect to no Nhe found when there is no NHE
-      boundGetNheTimeSlotsThroughNheDs(request, false);
+      boundGetNheTimeSlotsThroughNheDs(request, false, () => {
+        setHasVenue(true);
+      }, () => {
+        setHasVenue(false);
+      });
     }
   }, [scheduleDetail]);
 
@@ -255,7 +260,7 @@ export const Nhe = ( props: MapStateToProps ) => {
           </>
         )}
         {
-          showNhePreferenceCard && <NhePreferenceCard />
+          showNhePreferenceCard && hasVenue && <NhePreferenceCard />
         }
       </Col>
     </Col>

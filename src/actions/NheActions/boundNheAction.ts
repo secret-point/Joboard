@@ -12,11 +12,11 @@ import {
   actionSetPossibleNhePreferenceRequest
 } from "./nheActions";
 
-export const boundGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs) =>
-  store.dispatch(actionGetNheTimeSlotsDs(payload));
+export const boundGetNheTimeSlotsDs = (payload: GetNheTimeSlotRequestDs, onSuccess?: Function, onError?: Function) =>
+  store.dispatch(actionGetNheTimeSlotsDs(payload, onSuccess, onError));
 
-export const boundGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData = true) =>
-  store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload, redirectWhenNoData));
+export const boundGetNheTimeSlotsThroughNheDs = (payload: GetNheTimeSlotRequestThroughNheDS, redirectWhenNoData = true, onSuccess?: Function, onError?: Function) =>
+  store.dispatch(actionGetNheTimeSlotsThroughNheDs(payload, redirectWhenNoData, onSuccess, onError));
 
 export const boundGetPossibleNhePreference = (payload: GetPossibleNhePreferenceRequest) =>
   store.dispatch(actionGetPossibleNhePreference(payload));
