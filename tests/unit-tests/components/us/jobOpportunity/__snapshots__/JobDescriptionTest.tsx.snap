@@ -36,9 +36,5 @@ exports[`JobDescription should match snapshot 1`] = `
   >
     <img />
   </Row>
-  <DangerouslySetHtmlContent
-    className="jobDescription"
-    html=""
-  />
 </Col>
 `;

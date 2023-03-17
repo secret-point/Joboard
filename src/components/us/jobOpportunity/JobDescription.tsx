@@ -89,7 +89,7 @@ export const JobDescription = (props: MapStateToProps) => {
       <Row id="jobImageContainer" width="100%" padding="S300">
         <img src={jobDetail?.image} />
       </Row>
-      <InnerHTML className="jobDescription" html={jobDetail?.jobDescription || ""} />
+      {jobDetail?.jobDescription && <InnerHTML className="jobDescription" html={jobDetail?.jobDescription || ""} />}
     </Col>
   );
 };
