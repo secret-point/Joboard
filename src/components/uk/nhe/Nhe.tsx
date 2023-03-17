@@ -92,7 +92,7 @@ export const Nhe = ( props: MapStateToProps ) => {
 
   useEffect(() => {
     const defaultAptTime = getDefaultUkNheApptTimeFromMap(appointmentTimeMap, appointmentDateList[0]);
-    setSelectedNheDate(appointmentDateList[0]);
+    setSelectedNheDate(getDefaultNHEAppointmentDate(appointmentDateList) || "");
     setSelectedNheTime(defaultAptTime[0]);
   }, [nheData]);
 
