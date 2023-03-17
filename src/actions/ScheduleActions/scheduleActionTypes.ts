@@ -16,6 +16,7 @@ export enum SCHEDULE_ACTION_TYPE {
 export interface GetScheduleListByJobIdAction extends Action {
   type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB;
   payload: GetScheduleListByJobIdRequest;
+  routeWhenEmpty: boolean;
 }
 
 export interface GetScheduleListByJobIdSuccessAction extends Action {

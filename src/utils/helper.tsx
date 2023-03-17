@@ -365,7 +365,7 @@ export const handleApplyScheduleFilters = ( scheduleFilters: ScheduleStateFilter
       sortBy: scheduleFilters.sortKey.toString()
     }
   };
-  boundGetScheduleListByJobId(request);
+  boundGetScheduleListByJobId(request, false);
 };
 
 export const handleResetScheduleFilters = () => {

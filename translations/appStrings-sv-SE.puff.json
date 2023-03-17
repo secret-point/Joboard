@@ -1056,6 +1056,10 @@
       "value" : "Befintlig ansökan:",
       "note" : "Text for existing application"
     },
+    "BB-job-id" : {
+      "value" : "Jobb-ID: ",
+      "note" : "Text to display job id"
+    },
     "BB-SelfId-disability-form-name-text" : {
       "value" : "Blankett CC-305",
       "note" : "Text for Self Identification form name"

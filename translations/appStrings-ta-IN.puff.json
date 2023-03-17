@@ -1860,6 +1860,10 @@
       "value" : "/மணிநேரம்",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "/ம.நே",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "மாதக் கட்டணம் {formattedMonthlyRate} வரை",
       "note" : "Text for the schedule card total pay per month text"

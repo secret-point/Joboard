@@ -307,6 +307,10 @@ export const GetScheduleListErrorMessages: { [key: string]: ApiErrorMessage } = 
     translationKey: "BB-get-schedule-list-error-message-all-shift-filled",
     value: "All Shifts Filled."
   },
+  [GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND_ADJUST_FILTERS]: {
+    translationKey: "BB-get-schedule-list-error-message-no-schedule-found-adjust-filters",
+    value: "We could not find jobs that match your filter criteria. Please adjust the filter and search again."
+  }
 };
 
 export const GetScheduleDetailErrorMessage: { [key: string]: ApiErrorMessage } = {

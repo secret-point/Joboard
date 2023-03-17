@@ -41,8 +41,12 @@ export const GetScheduleListByJobIdEpic = (action$: Observable<any>) => {
               throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.FETCH_SHIFTS_ERROR);
             }
 
-            if (data.availableSchedules.total <= 0 || data.availableSchedules.schedules.length === 0) {
-              throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND);
+            if ((data.availableSchedules.total <= 0 || data.availableSchedules.schedules.length === 0)) {
+              if (action.routeWhenEmpty) {
+                throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND);
+              } else {
+                throw createProxyApiEpicError(GET_SCHEDULE_LIST_BY_JOB_ID_ERROR_CODE.NO_SCHEDULE_FOUND_ADJUST_FILTERS);
+              }
             }
 
             return data.availableSchedules.schedules;

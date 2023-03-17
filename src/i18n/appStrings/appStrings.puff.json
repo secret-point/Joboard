@@ -2153,6 +2153,10 @@
             "note": "error message when fetch shifts but no shift found",
             "value": "All Shifts Filled."
         },
+        "BB-get-schedule-list-error-message-no-schedule-found-adjust-filter": {
+            "note": "error message when fetch shifts but no shift found and candidate manually selected schedule filters",
+            "value": "We could not find jobs that match your filter criteria. Please adjust the filter and search again."
+        },
         "BB-get-schedule-detail-error-message-fetch-hch-error": {
             "note": "error message when fetch head count request failed",
             "value": "Unable to fetch head count request."

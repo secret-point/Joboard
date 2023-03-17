@@ -13,8 +13,8 @@ import {
 import { Schedule, ScheduleStateFilters } from "../../utils/types/common";
 import { loadingStatusHelper } from "../../utils/helper";
 
-export const actionGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest ): GetScheduleListByJobIdAction => {
-  return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB, payload };
+export const actionGetScheduleListByJobId = ( payload: GetScheduleListByJobIdRequest, routeWhenEmpty: boolean ): GetScheduleListByJobIdAction => {
+  return { type: SCHEDULE_ACTION_TYPE.GET_LIST_BY_JOB, payload, routeWhenEmpty };
 };
 
 export const actionGetScheduleListByJobIdSuccess = ( payload: Schedule[] ): GetScheduleListByJobIdSuccessAction => {

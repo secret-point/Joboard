@@ -1860,6 +1860,10 @@
       "value" : "/時間",
       "note" : "Text for the schedule card total pay per hour text"
     },
+    "BB-Schedule-card-per-hour-text" : {
+      "value" : "毎時",
+      "note" : "per hour test"
+    },
     "BB-Schedule-card-total-pay-per-month-text" : {
       "value" : "最大{formattedMonthlyRate} /月",
       "note" : "Text for the schedule card total pay per month text"

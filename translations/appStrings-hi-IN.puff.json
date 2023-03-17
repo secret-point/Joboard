@@ -940,6 +940,34 @@
       "value" : "कृपया एक मान्य पूरा नाम निम्नलिखित फॉरमेट में एंटर करें: पहला अंतिम",
       "note" : "Text for the MX eSignature authorization input error text"
     },
+    "BB-Full-BGC-decline-application-consent-checkbox" : {
+      "value" : "मैं अपने आवेदन को अस्वीकार करता/करती हूं और वापस लेता/लेती हूं",
+      "note" : "Text for the decline that Amazon to conduct bgc radio button"
+    },
+    "BB-Full-BGC-consent-bgc-label" : {
+      "value" : "बैकग्राउंड की जांच के लिए सहमति",
+      "note" : "Text for the directions regarding consenting to background check"
+    },
+    "BB-Full-BGC-next-btn-label" : {
+      "value" : "अगला",
+      "note" : "Text for the button label on going to next step in background check"
+    },
+    "BB-Full-BGC-withdraw-application-title" : {
+      "value" : "क्या आप वाकई अपने आवेदन को वापस लेना चाहते हैं?",
+      "note" : "Text for the modal for withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-explanation" : {
+      "value" : "अगर आप बैकग्राउंड की जांच को अस्वीकार करते हैं तो आप इस पोजीशन के लिए योग्य नहीं होंगे.",
+      "note" : "Text for the modal for explanation after withdrawing application after declining consent to background check"
+    },
+    "BB-Full-BGC-decline-bgc-modal-btn-label" : {
+      "value" : "आवेदन को अस्वीकार करें और वापस लें",
+      "note" : "Text for the button label on the modal for confirming on declining background check"
+    },
+    "BB-Full-BGC-cancel-bgc-modal-btn-label" : {
+      "value" : "कैंसल करें",
+      "note" : "Text for the button label on the modal for canceling declining the background check"
+    },
     "BB-BGC-non-fcra-form-page-next-button-text" : {
       "value" : "अगला",
       "note" : "Text for the non fcra form page next button text"

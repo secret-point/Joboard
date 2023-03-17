@@ -50,6 +50,7 @@ export default function scheduleReducer( state: ScheduleState = initScheduleStat
         ...state,
         failed: true,
         loading: false,
+        results: { ...state.results, scheduleList: [] }
       };
 
     case SCHEDULE_ACTION_TYPE.GET_DETAIL_SUCCESS:
