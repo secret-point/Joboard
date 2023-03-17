@@ -113,7 +113,7 @@ export const ApplicationShiftPreferences = (props: MapStateToProps) => {
 
   const handleSavePreference = () => {
     // Validate start date and shift pattern as they are required
-    const isStartDateValid = isDateGreaterThanToday(startDate);
+    const isStartDateValid = isDateGreaterThanToday(startDate, "YYYY-MM-DD");
     const isShiftPatternValid = !!shiftPattern;
     const isHourPerWeekValid = hoursPerWeek.length > 0;
     const isWorkDaysValid = workDays.length > 0;
