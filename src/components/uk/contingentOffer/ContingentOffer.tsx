@@ -177,7 +177,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
       onCloseButtonClick={close}
     >
       <Col>
-        <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription || ""} />
+        <InnerHTML className="jobDescription" html={jobDetail?.jobDescription || ""} />
       </Col>
     </FlyoutContent>
   );
@@ -212,6 +212,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
               <Button
                 variant={ButtonVariant.Tertiary}
                 className="contingent-offer-flyout-btn"
+                dataTestId="contingentOfferFlyoutBtn"
                 onClick={() => open()}
               >
                 {t("BB-Kondo-ContingencyOffer-view-job-description-text", "View Job description")}
