@@ -1322,3 +1322,19 @@ export interface iScheduleDurationFn {
   scheduleId: string;
   applicationId?: string;
 }
+
+export interface BirthHistoryOtherName {
+  id: string;
+  firstName: string;
+  lastName: string;
+  startedDate: string;
+  stoppedDate: string;
+}
+
+export interface BirthHistoryPersonalInfo {
+  birthCountry?: string | undefined;
+  birthCity?: string | undefined;
+  birthNationality?: string | undefined;
+  motherSurname?: string | undefined;
+  motherForename?: string | undefined;
+}

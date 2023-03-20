@@ -982,6 +982,51 @@
             "note": "Text for the button label on the modal for canceling declining the background check",
             "value": "Cancel"
         },
+        "BB-Full-BGC-birth-history-first-name-label" : {
+            "note": "Text for candidate's first name in birth history",
+            "value": "First name"
+        },
+        "BB-Full-BGC-birth-history-last-name-label" : {
+            "note": "Text for candidate's last name in birth history",
+            "value": "Last name"
+        },
+        "BB-Full-BGC-birth-history-started-date-with-name-label" : {
+            "note": "Text for started dated using name in birth history",
+            "value": "From - date you started using this name"
+        },
+        "BB-Full-BGC-birth-history-stopped-date-with-name-label" : {
+            "note": "Text for stopped dated using name in birth history",
+            "value": "To - date you stopped using this name"
+        },
+        "BB-Full-BGC-birth-history-other-names-label": {
+            "note": "Text for confirming if the candidate has other names in birth history",
+            "value": "Have you gone by other names?"
+        },
+        "BB-Full-BGC-birth-history-gender-label": {
+            "note": "Text for confirming candidate's gender in birth history",
+            "value": "What is your gender?"
+        },
+       
+        "BB-Full-BGC-birth-history-birth-country-label" : {
+            "note": "Text for candidate's birth country",
+            "value": "Birth Country/Region"
+        },
+        "BB-Full-BGC-birth-history-birth-city-label" : {
+            "note": "Text for candidate's birth city",
+            "value": "Birth Town/City"
+        },
+        "BB-Full-BGC-birth-history-birth-nationality-label" : {
+            "note": "Text for candidate's birth nationality",
+            "value": "Birth Nationality"
+        },
+        "BB-Full-BGC-birth-history-mother-surname-label" : {
+            "note": "Text for candidate's birth surname",
+            "value": "Mother's Surname"
+        },
+        "BB-Full-BGC-birth-history-mother-forename-label" : {
+            "note": "Text for candidate's birth forename",
+            "value": "Mother's Surname"
+        },
         "BB-BGC-non-fcra-form-page-next-button-text": {
             "note": "Text for the non fcra form page next button text",
             "value": "Next"

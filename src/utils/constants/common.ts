@@ -21,6 +21,7 @@ import {
 import {
   AdditionalBgcConfig,
   ApplicationStep,
+  BirthHistoryOtherName,
   DayHoursFilter,
   DetailedRadioButtonItem,
   DisabilityItem,
@@ -1298,3 +1299,115 @@ export const CONNECTIVE_TEXT = {
   translationKey: "BB-connective-text-between-hours-and-minutes", 
   defaultString: "and" 
 };
+
+export const BirthHistoryOtherNamesConfigList: AdditionalBgcConfig[] = [
+  {
+    title: "No",
+    value: false,
+    dataKey: "birthHistory.haveYouGoneByOtherNames",
+    titleTranslationKey: "BB-Full-BGC-birth-history-gone-by-other-names-answer-no-text"
+  },
+  {
+    title: "Yes",
+    value: true,
+    dataKey: "birthHistory.haveYouGoneByOtherNames",
+    titleTranslationKey: "BB-Full-BGC-birth-history-gone-by-other-names-answer-yes-text"
+  }
+];
+
+export const BirthHistoryOtherInitialName: BirthHistoryOtherName = {
+  id: "Name 1",
+  firstName: "",
+  lastName: "",
+  startedDate: "",
+  stoppedDate: ""
+};
+
+export const BirthHistoryStartedDateWithName: FormInputItem = 
+  {
+    hasError: false,
+    labelText: "From - date you started using this name",
+    errorMessage: "Please enter a valid from-date.",
+    required: true,
+    name: "From - Date",
+    dataKey: "additionalName.dateFrom",
+    id: "additionalNameBGCDateFrom",
+    type: "datePicker",
+    labelTranslationKey: "BB-BGC-Additional-bgc-form-date-label-text",
+    errorMessageTranslationKey: "BB-BGC-Additional-bgc-form-date-error-text",
+    regex: "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+  };
+
+export const BirthHistoryInfoItems: FormInputItem[] = [
+  {
+    id: "bgc-birth-history-birth-country",
+    type: "text",
+    name: "birthCountry",
+    dataKey: "birthHistoryInfo.birthCountry",
+    labelText: "Birth Country/Region",
+    labelTranslationKey: "BB-Full-BGC-birth-history-birth-country-label-text",
+    errorMessage: "Please enter a valid country name",
+    errorMessageTranslationKey: "BB-Full-BGC-birth-history-birth-country-error-text"
+  },
+  {
+    id: "bgc-birth-history-birth-city",
+    type: "text",
+    name: "birthCity",
+    dataKey: "birthHistoryInfo.birthCity",
+    labelText: "Birth Town/City",
+    labelTranslationKey: "BB-Full-BGC-birth-history-birth-city-label-text",
+    errorMessage: "Please enter a valid city name",
+    errorMessageTranslationKey: "BB-Full-BGC-birth-history-birth-city-error-text"
+  },
+  {
+    id: "bgc-birth-history-birth-nationality",
+    type: "text",
+    name: "birthNationality",
+    dataKey: "birthHistoryInfo.birthNationality",
+    labelText: "Birth Nationality",
+    labelTranslationKey: "BB-Full-BGC-birth-history-birth-nationality-label-text",
+    errorMessage: "Please enter a valid nationality",
+    errorMessageTranslationKey: "BB-Full-BGC-birth-history-birth-nationality-error-text"
+  },
+  {
+    id: "bgc-birth-history-mother-surname",
+    type: "text",
+    name: "motherSurname",
+    dataKey: "birthHistoryInfo.motherSurname",
+    labelText: "Mother's Surname",
+    labelTranslationKey: "BB-Full-BGC-birth-history-mother-surname-label-text",
+    errorMessage: "Please enter a valid name",
+    errorMessageTranslationKey: "BB-Full-BGC-birth-history-mother-surname-error-text"
+  },
+  {
+    id: "bgc-birth-history-mother-forename",
+    type: "text",
+    name: "motherForename",
+    dataKey: "birthHistoryInfo.motherForename",
+    labelText: "Mother's Forename",
+    labelTranslationKey: "BB-Full-BGC-birth-history-mother-forename-label-text",
+    errorMessage: "Please enter a valid name",
+    errorMessageTranslationKey: "BB-Full-BGC-birth-history-mother-forename-error-text"
+  }
+];
+
+export const BirthHistoryGenders: AdditionalBgcConfig[] = [
+  {
+    title: "Female",
+    value: false,
+    dataKey: "birthHistory.genders",
+    titleTranslationKey: "BB-Full-BGC-birth-history-genders-female"
+  },
+  {
+    title: "Male",
+    value: false,
+    dataKey: "birthHistory.genders",
+    titleTranslationKey: "BB-Full-BGC-birth-history-genders-male"
+  },
+  {
+    title: "Other",
+    value: false,
+    dataKey: "birthHistory.genders",
+    titleTranslationKey: "BB-Full-BGC-birth-history-genders-other"
+  }
+];

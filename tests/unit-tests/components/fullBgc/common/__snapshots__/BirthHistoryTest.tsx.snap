@@ -6,13 +6,202 @@ exports[`BirthHistory should match snapshot 1`] = `
   gridGap={15}
 >
   <Text
+    className="required-asterisk"
     font="primary"
     fontSize="T200"
     hyphens="none"
   >
-    Background information Component
+    Have you gone by other names?
   </Text>
-  ...
+  <DetailedRadio
+    defaultChecked={false}
+    key="No"
+    name="other-name-radio-col"
+    titleText="No"
+    value="false"
+  />
+  <DetailedRadio
+    defaultChecked={true}
+    key="Yes"
+    name="other-name-radio-col"
+    titleText="Yes"
+    value="true"
+  />
+  <Col
+    gridGap={15}
+    key="Name 1"
+  >
+    <Text
+      font="primary"
+      fontSize="T200"
+      hyphens="none"
+      style={
+        Object {
+          "fontStyle": "italic",
+        }
+      }
+    >
+      Name 1
+    </Text>
+    <InputWrapper
+      error={false}
+      id="bgc-birth-history-first-name-0"
+      labelPosition="top"
+      labelText="First name"
+      renderLabel={[Function]}
+      required={true}
+      shouldValidateNonInclusiveTerms={false}
+      warning={false}
+    >
+      <Component />
+    </InputWrapper>
+    <InputWrapper
+      error={false}
+      id="bgc-birth-history-last-name"
+      labelPosition="top"
+      labelText="Last name"
+      renderLabel={[Function]}
+      required={true}
+      shouldValidateNonInclusiveTerms={false}
+      warning={false}
+    >
+      <Component />
+    </InputWrapper>
+    <InputWrapper
+      error={false}
+      id="bgc-birth-history-started-date"
+      labelPosition="top"
+      labelText="From - date you started using this name"
+      renderLabel={[Function]}
+      required={true}
+      shouldValidateNonInclusiveTerms={false}
+      warning={false}
+    >
+      <Component />
+    </InputWrapper>
+    <InputWrapper
+      error={false}
+      id="bgc-birth-history-stopped-date"
+      labelPosition="top"
+      labelText="To - date you stopped using this name"
+      renderLabel={[Function]}
+      required={true}
+      shouldValidateNonInclusiveTerms={false}
+      warning={false}
+    >
+      <Component />
+    </InputWrapper>
+  </Col>
+  <Button
+    colorScheme="default"
+    icon={
+      <IconPlus
+        display="block"
+      />
+    }
+    iconPosition="trailing"
+    onClick={[Function]}
+    shouldUseResponsiveContent={true}
+    size="default"
+    type="button"
+    variant="tertiary"
+  >
+    Add other name
+  </Button>
+  <Text
+    className="required-asterisk"
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    What is your gender?
+  </Text>
+  <DetailedRadio
+    defaultChecked={false}
+    key="Female"
+    name="gender-radio-col"
+    titleText="Female"
+    value="false"
+  />
+  <DetailedRadio
+    defaultChecked={false}
+    key="Male"
+    name="gender-radio-col"
+    titleText="Male"
+    value="false"
+  />
+  <DetailedRadio
+    defaultChecked={false}
+    key="Other"
+    name="gender-radio-col"
+    titleText="Other"
+    value="false"
+  />
+  <InputWrapper
+    error={false}
+    id="bgc-birth-history-birth-country"
+    key="bgc-birth-history-birth-country"
+    labelPosition="top"
+    labelText="Birth Country/Region"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <InputWrapper
+    error={false}
+    id="bgc-birth-history-birth-city"
+    key="bgc-birth-history-birth-city"
+    labelPosition="top"
+    labelText="Birth Town/City"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <InputWrapper
+    error={false}
+    id="bgc-birth-history-birth-nationality"
+    key="bgc-birth-history-birth-nationality"
+    labelPosition="top"
+    labelText="Birth Nationality"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <InputWrapper
+    error={false}
+    id="bgc-birth-history-mother-surname"
+    key="bgc-birth-history-mother-surname"
+    labelPosition="top"
+    labelText="Mother's Surname"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
+  <InputWrapper
+    error={false}
+    id="bgc-birth-history-mother-forename"
+    key="bgc-birth-history-mother-forename"
+    labelPosition="top"
+    labelText="Mother's Forename"
+    renderLabel={[Function]}
+    required={false}
+    shouldValidateNonInclusiveTerms={false}
+    warning={false}
+  >
+    <Component />
+  </InputWrapper>
   <DebouncedButton
     onClick={[Function]}
     variant="secondary"
