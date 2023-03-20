@@ -17,6 +17,7 @@ import { GetScheduleDetailEpic, GetScheduleListByJobIdEpic } from "./schedule.ep
 import { UpdateWotcStatusEpic } from "./wotc.epic";
 import { ValidateAmazonLoginIDEpic } from "./thank-you.epic";
 import { GetAsssessmentElegibilityEpic } from "./assessment.epic";
+import { InitiateEditBgcPageEpic, SubmitBgcPageEpic, UpdateCandidateAddressHistoryEpic, UpdateCandidateBackgroundInformationEpic, UpdateCandidateBgcDisclosureEpic, UpdateCandidateBirthHistoryEpic, WithdrawApplicationBgcEpic } from "./fullBgc.epic";
 
 const rootEpic = combineEpics(
   JobEpic,
@@ -39,6 +40,13 @@ const rootEpic = combineEpics(
   GetAsssessmentElegibilityEpic,
   UpdateCandidateShiftPreferencesEpic,
   CalculateInclinedValueEpic,
+  InitiateEditBgcPageEpic,
+  UpdateCandidateBgcDisclosureEpic,
+  WithdrawApplicationBgcEpic,
+  UpdateCandidateBackgroundInformationEpic,
+  UpdateCandidateAddressHistoryEpic,
+  UpdateCandidateBirthHistoryEpic,
+  SubmitBgcPageEpic
 );
 
 export default rootEpic;

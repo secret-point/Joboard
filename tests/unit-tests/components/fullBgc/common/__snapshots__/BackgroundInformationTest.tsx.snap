@@ -5,14 +5,181 @@ exports[`BackgroundInformation should match snapshot 1`] = `
   className="background-information-container"
   gridGap={15}
 >
-  <Text
-    font="primary"
-    fontSize="T200"
-    hyphens="none"
+  <Col
+    gridGap="S200"
+    margin={
+      Object {
+        "top": 10,
+      }
+    }
   >
-    Background information Component
-  </Text>
-  ...
+    <Col
+      gridGap={15}
+      key="Legal first name"
+    >
+      <FormInputTextBGC
+        defaultValue=""
+        handleChange={[Function]}
+        inputItem={
+          Object {
+            "dataKey": "bgInformationLegalFirstName",
+            "defaultValue": "",
+            "errorMessage": "Please enter your first name",
+            "errorMessageTranslationKey": "",
+            "hasError": false,
+            "id": "bgInformationLegalFirstName",
+            "labelText": "Legal first name",
+            "labelTranslationKey": "",
+            "name": "bgInformationLegalFirstName",
+            "placeholder": "This is what appears on your ID",
+            "placeholderTranslationKey": "",
+            "required": true,
+            "type": "text",
+          }
+        }
+      />
+    </Col>
+    <Col
+      gridGap={15}
+      key="Legal middle name"
+    >
+      <FormInputTextBGC
+        defaultValue=""
+        disabled={false}
+        handleChange={[Function]}
+        inputItem={
+          Object {
+            "dataKey": "bgInformationLegalMiddleName",
+            "defaultValue": "",
+            "errorMessage": "Please enter your middle name",
+            "errorMessageTranslationKey": "",
+            "hasError": false,
+            "id": "bgInformationLegalMiddleName",
+            "labelText": "Legal middle name",
+            "labelTranslationKey": "",
+            "name": "bgInformationLegalMiddleName",
+            "placeholder": "This is what appears on your ID",
+            "placeholderTranslationKey": "",
+            "required": true,
+            "type": "text",
+          }
+        }
+        noMarginBottom={true}
+      />
+    </Col>
+    <Col
+      gridGap={15}
+      key="I do not have a middle name"
+    >
+      <Row
+        alignItems="center"
+        gridGap="S200"
+        margin={
+          Object {
+            "bottom": 10,
+          }
+        }
+      >
+        <Checkbox
+          checked={false}
+          id="bgInformationNoMiddleName"
+          onChange={[Function]}
+        />
+        <Label
+          color="neutral90"
+          font="primary"
+          fontSize="T200"
+          fontWeight="regular"
+          htmlFor="bgInformationNoMiddleName"
+          hyphens="none"
+        >
+          I do not have a middle name
+        </Label>
+      </Row>
+    </Col>
+    <Col
+      gridGap={15}
+      key="Legal last name"
+    >
+      <FormInputTextBGC
+        defaultValue=""
+        handleChange={[Function]}
+        inputItem={
+          Object {
+            "dataKey": "bgInformationLegalLastName",
+            "defaultValue": "",
+            "errorMessage": "Please enter your last name",
+            "errorMessageTranslationKey": "",
+            "hasError": false,
+            "id": "bgInformationLegalLastName",
+            "labelText": "Legal last name",
+            "labelTranslationKey": "",
+            "name": "bgInformationLegalLastName",
+            "placeholder": "This is what appears on your ID",
+            "placeholderTranslationKey": "",
+            "required": true,
+            "type": "text",
+          }
+        }
+      />
+    </Col>
+    <Col
+      gridGap={15}
+      key="Date of birth"
+    >
+      <FormDatePickerBgc
+        defaultValue=""
+        handleChange={[Function]}
+        inputItem={
+          Object {
+            "dataKey": "bgInformationDob",
+            "defaultValue": "",
+            "errorMessage": "Please enter your date of birth",
+            "errorMessageTranslationKey": "",
+            "hasError": false,
+            "id": "bgInformationDob",
+            "labelText": "Date of birth",
+            "labelTranslationKey": "",
+            "name": "bgInformationDob",
+            "required": true,
+            "type": "datePicker",
+          }
+        }
+      />
+    </Col>
+    <Col
+      gridGap={15}
+      key="Mobile number"
+    >
+      <FormPhoneNumberBgc
+        changePhoneNumber={[Function]}
+        countryCode="{{Country}}"
+        countryPhoneCodes={
+          Array [
+            Object {
+              "code": "US",
+              "dial_code": "+1",
+            },
+          ]
+        }
+        formItem={
+          Object {
+            "dataKey": "bgInformationPhoneNumber",
+            "defaultValue": "",
+            "errorMessage": "Please enter valid phone number",
+            "errorMessageTranslationKey": "",
+            "hasError": false,
+            "id": "bgInformationPhoneNumber",
+            "labelText": "Mobile number",
+            "labelTranslationKey": "",
+            "name": "bgInformationPhoneNumber",
+            "required": true,
+            "type": "phoneNumber",
+          }
+        }
+      />
+    </Col>
+  </Col>
   <DebouncedButton
     onClick={[Function]}
     variant="secondary"

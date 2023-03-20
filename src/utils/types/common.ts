@@ -16,7 +16,8 @@ import {
   SELF_IDENTIFICATION_STEPS,
   SHIFT_PATTERN,
   UPDATE_APPLICATION_API_TYPE,
-  WORKFLOW_STEP_NAME
+  WORKFLOW_STEP_NAME,
+  CountryCode
 } from "../enums/common";
 import { MessageBannerType } from "@amzn/stencil-react-components/message-banner";
 import { CandidateShiftPreferences } from "../../@types/shift-preferences";
@@ -924,7 +925,93 @@ export interface Candidate {
   numSSNEdits: number;
   assessmentsTaken: Record<string, Assessment>;
   shiftPreferences: CandidateShiftPreferences;
+  bgcDisclosure?: BgcDisclosure;
 };
+
+interface BgcDisclosure {
+  isAccepted: boolean;
+  electronicSignature: {
+    signature: string;
+    timestamp: string; // to confirm
+  };
+};
+
+export interface CandidateBgcDisclosure {
+  bgcDisclosure: BgcDisclosure;
+};
+
+export interface CandidateBgcBackgroundInfo {
+  firstName: string;
+  middleName: string | null;
+  lastName: string;
+  phoneNumber: string;
+  additionalBackgroundInfo: {
+    dateOfBirth: string;
+  };
+};
+
+export interface CandidateBgcAddressHistory {
+  additionalBackgroundInfo: {
+    addressHistory: AddressHistory[];
+  };
+}
+
+export interface AddressHistory {
+  country: CountryCode;
+  addressLine1: string;
+  fromDate: string;
+  toDate: string;
+}
+
+export interface CandidateBgcBirthInformation {
+  selfIdentificationInfo: {
+    gender: "Male" | "Female" | "Other";
+  };
+  additionalBackgroundInfo: {
+    birthCountry: string;
+    birthTown: string;
+    birthNationality: string;
+    motherMaidenName: string;
+    // we don't have mother's forename in CDS
+  };
+}
+
+interface CandidateBgcAttachmentBase {
+  attachmentType: string;
+  attachmentSubType: string;
+}
+
+export interface CandidateBgcInitiateUploadAttachment extends CandidateBgcAttachmentBase {
+  fileName: string;
+  contentType: string;
+  returnPresignedUrl: boolean;
+}
+
+export interface CandidateBgcAttachmentMetadata extends CandidateBgcAttachmentBase {
+  uploadStatus: string;
+}
+export interface CandidateBgcAttachmentExpirationDate extends CandidateBgcAttachmentBase {
+  attachmentExpirationDateTime: string;
+}
+
+interface CandidateBgcDocumentId {
+  idNumber: string;
+  dateOfIssuance: string;
+  expirationDate: string;
+}
+
+interface AdditionalNationalIdRecord {
+  [key: string]: CandidateBgcDocumentId;
+};
+
+export interface CandidateBgcAdditionalDocumentation {
+  additionalNationalIds: AdditionalNationalIdRecord;
+}
+
+export interface CaaSBgcPageStatusUpdate {
+  candidateId: string;
+  eventType: string;
+}
 
 export interface Address {
   addressLine1: string;
@@ -961,6 +1048,7 @@ export interface AdditionalBackgroundInfoRequest {
   address: Address;
   convictionDetails: string;
   isWithoutSSN: boolean;
+  addressHistory: AddressHistory[];
 }
 
 export interface SelfIdentificationInfo {
