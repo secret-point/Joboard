@@ -215,7 +215,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
           </Text>
         </Col>
         <Col>
-          <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription || ""} />
+          { scheduleDetail?.jobDescription && <InnerHTML className="jobDescription" html={scheduleDetail?.jobDescription} />}
         </Col>
       </Col>
       <Col

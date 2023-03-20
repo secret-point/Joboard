@@ -177,7 +177,7 @@ export const ContingentOffer = ( props: ContingentOfferMergedProps) => {
       onCloseButtonClick={close}
     >
       <Col>
-        <InnerHTML className="jobDescription" html={jobDetail?.jobDescription || ""} />
+        { jobDetail?.jobDescription && <InnerHTML className="jobDescription" html={jobDetail?.jobDescription} />}
       </Col>
     </FlyoutContent>
   );
