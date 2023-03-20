@@ -23,7 +23,10 @@ import {
 import { boundUpdateStepConfigAction } from "../actions/BGC_Actions/boundBGCActions";
 import { boundUpdateCandidateInfoError } from "../actions/CandidateActions/boundCandidateActions";
 import { boundGetNheTimeSlotsDs, boundGetNheTimeSlotsThroughNheDs } from "../actions/NheActions/boundNheAction";
-import { boundGetScheduleListByJobId, boundUpdateScheduleFilters } from "../actions/ScheduleActions/boundScheduleActions";
+import {
+  boundGetScheduleListByJobId,
+  boundUpdateScheduleFilters
+} from "../actions/ScheduleActions/boundScheduleActions";
 import { boundUpdateSelfIdStepConfig } from "../actions/SelfIdentitifactionActions/boundSelfIdentificationActions";
 import { boundResetBannerMessage, boundSetBannerMessage } from "../actions/UiActions/boundUi";
 import { onCompleteTaskHelper } from "../actions/WorkflowActions/workflowActions";
@@ -67,18 +70,18 @@ import {
   ValueToI18nKeyMap
 } from "./constants/common";
 import {
-  FULL_BGC_STEPS,
   BGC_STEPS,
   BGC_VENDOR_TYPE,
   CountryCode,
   DAYS_OF_WEEK,
-  SHORTENED_DAYS_OF_WEEK,
   FCRA_DISCLOSURE_TYPE,
   FEATURE_FLAG,
+  FULL_BGC_STEPS,
   INFO_CARD_STEP_STATUS,
   JOB_REFERRAL_VALUE,
   QUERY_PARAMETER_NAME,
   SELF_IDENTIFICATION_STEPS,
+  SHORTENED_DAYS_OF_WEEK,
   UPDATE_APPLICATION_API_TYPE,
   WITHDRAW_REASON_CASE,
   WORKFLOW_ERROR_CODE,
@@ -91,7 +94,7 @@ import {
   AlertMessage,
   ApiErrorMessage,
   Application,
-  FullBgcStepConfig,
+  ApplicationShiftPreferences,
   BgcMXStepConfig,
   BgcStepConfig,
   Candidate,
@@ -106,6 +109,7 @@ import {
   FeatureFlagList,
   FeatureFlagsMapByCountry,
   FormInputItem,
+  FullBgcStepConfig,
   GetNheTimeSlotRequestDs,
   GetNheTimeSlotRequestThroughNheDS,
   Job,
@@ -124,7 +128,7 @@ import {
   SelfIdentificationDisabilityStatus,
   SelfIdentificationInfo,
   SelfIdentificationVeteranStatus,
-  SelfIdEqualOpportunityStatus, ApplicationShiftPreferences,
+  SelfIdEqualOpportunityStatus,
   ShiftPreferenceWorkHour,
   TimeRangeHoursData
 } from "./types/common";
@@ -1729,9 +1733,9 @@ export const isSelfIdentificationInfoValidBeforeDisability = (selfIdInfo?: SelfI
   return !!ethnicity && !!gender && !!militarySpouse && !!protectedVeteran && !!veteran;
 };
 
-export const checkAndBoundGetApplication = (applicationId: string) => {
+export const checkAndBoundGetApplication = (applicationId: string, onSuccess?: Function, onError?: Function) => {
   if (applicationId) {
-    boundGetApplication({ applicationId: applicationId, locale: getLocale() });
+    boundGetApplication({ applicationId: applicationId, locale: getLocale() }, onSuccess, onError);
   } else {
     routeToAppPageWithPath(PAGE_ROUTES.APPLICATIONID_NULL);
   }

@@ -8,6 +8,7 @@ import {
   UpdateWorkflowNameRequest
 } from "../../utils/apiTypes";
 import {
+  actionCalculateInclinedValue,
   actionCreateApplicationAndSkipScheduleDS,
   actionCreateApplicationDS,
   actionGetApplication,
@@ -16,12 +17,11 @@ import {
   actionUpdateApplicationDS,
   actionUpdateWorkflowName,
   actionWithdrawMultipleApplication,
-  actionCalculateInclinedValue,
 } from "./applicationActions";
 import { Application, ErrorMetadata } from "../../utils/types/common";
 
-export const boundGetApplication = (payload: GetApplicationRequest, onSuccess?: Function,) =>
-  store.dispatch(actionGetApplication(payload, onSuccess));
+export const boundGetApplication = (payload: GetApplicationRequest, onSuccess?: Function, onError?: Function) =>
+  store.dispatch(actionGetApplication(payload, onSuccess, onError));
 
 export const boundCreateApplicationDS = (payload: CreateApplicationRequestDS, onSuccess?: Function) =>
   store.dispatch(actionCreateApplicationDS(payload, onSuccess));

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { boundGetJobDetail } from "../../../actions/JobActions/boundJobDetailActions";
@@ -13,7 +13,7 @@ import { ScheduleState } from "../../../reducers/schedule.reducer";
 import { checkAndBoundGetApplication, getLocale, routeToAppPageWithPath } from "../../../utils/helper";
 import queryString from "query-string";
 import { addMetricForPageLoad } from "../../../actions/AdobeActions/adobeActions";
-import { QueryParamItem } from "../../../utils/types/common";
+import { Application, QueryParamItem } from "../../../utils/types/common";
 import { QUERY_PARAMETER_NAME } from "../../../utils/enums/common";
 import { PAGE_ROUTES } from "../../pageRoutes";
 import { loadWorkflowDS } from "../../../actions/WorkflowActions/workflowActions";
@@ -38,8 +38,8 @@ export const ResumeApplication = (props: MapStateToProps) => {
   const { applicationId } = queryParams;
   const jobDetail = job.results;
   const applicationData = application.results;
-  const jobId = applicationData?.jobScheduleSelected.jobId;
-  const scheduleId = applicationData?.jobScheduleSelected.scheduleId;
+  const [jobId, setJobId] = useState(applicationData?.jobScheduleSelected.jobId);
+  const [scheduleId, setScheduleId] = useState(applicationData?.jobScheduleSelected.scheduleId);
   const { candidateData } = candidate.results;
   const envConfig = appConfig.results?.envConfig;
 
@@ -48,7 +48,10 @@ export const ResumeApplication = (props: MapStateToProps) => {
   }, []);
 
   useEffect(() => {
-    checkAndBoundGetApplication(applicationId);
+    checkAndBoundGetApplication(applicationId, (application: Application) => {
+      setJobId(application?.jobScheduleSelected?.jobId);
+      setScheduleId(application?.jobScheduleSelected?.scheduleId);
+    });
   }, [applicationId]);
 
   useEffect(() => {
