@@ -3,12 +3,14 @@ import { ButtonVariant } from "@amzn/stencil-react-components/button";
 import { Col } from "@amzn/stencil-react-components/layout";
 import { Text } from "@amzn/stencil-react-components/text";
 import { connect } from "react-redux";
-import { ApplicationState } from "../../../reducers/application.reducer";
-import { FullBgcState } from "../../../reducers/fullBgc.reducer";
-import { JobState } from "../../../reducers/job.reducer";
-import { ScheduleState } from "../../../reducers/schedule.reducer";
-import { FullBgcStepConfig } from "../../../utils/types/common";
-import DebouncedButton from "../../common/DebouncedButton";
+import { ApplicationState } from "../../../../reducers/application.reducer";
+import { FullBgcState } from "../../../../reducers/fullBgc.reducer";
+import { JobState } from "../../../../reducers/job.reducer";
+import { ScheduleState } from "../../../../reducers/schedule.reducer";
+import { FullBgcStepConfig } from "../../../../utils/types/common";
+import DebouncedButton from "../../../common/DebouncedButton";
+import { goToNextFullBgcStep } from "../../../../utils/helper";
+import { FULL_BGC_STEPS } from "../../../../utils/enums/common";
 
 interface MapStateToProps {
   job: JobState;
@@ -17,21 +19,20 @@ interface MapStateToProps {
   fullBgc: FullBgcState;
 }
 
-type DocumentationMergedProps = MapStateToProps;
+type ProofOfId2MergedProps = MapStateToProps;
 
-export const Documentation = ( props: DocumentationMergedProps ) => {
+export const ProofOfId2 = ( props: ProofOfId2MergedProps ) => {
   const { fullBgc } = props;
   const stepConfig = fullBgc.stepConfig as FullBgcStepConfig;
 
   const handleClickNext = () => {
-    // TODO: API integration
-    console.info(stepConfig);
+    goToNextFullBgcStep(stepConfig, FULL_BGC_STEPS.PROOF_OF_ID2, FULL_BGC_STEPS.PROOF_OF_ADDRESS);
   };
 
   return (
     <Col className="documentation-container" gridGap={15}>
       <Text fontSize="T200">
-        Documentation Component
+        ProofOfId2 Component
       </Text>
       ...
       <DebouncedButton variant={ButtonVariant.Secondary} onClick={handleClickNext}>
@@ -45,4 +46,4 @@ const mapStateToProps = ( state: MapStateToProps ) => {
   return state;
 };
 
-export default connect(mapStateToProps)(Documentation);
+export default connect(mapStateToProps)(ProofOfId2);

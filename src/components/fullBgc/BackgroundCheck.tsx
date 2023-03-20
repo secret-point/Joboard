@@ -31,7 +31,9 @@ import AddressHistory from "./common/AddressHistory";
 import BackgroundCheckConsent from "./common/BackgroundCheckConsent";
 import BackgroundInformation from "./common/BackgroundInformation";
 import BirthHistory from "./common/BirthHistory";
-import Documentation from "./common/Documentation";
+import ProofOfId1 from "./common/documentation/ProofOfId1";
+import ProofOfId2 from "./common/documentation/ProofOfId2";
+import ProofOfAddress from "./common/documentation/ProofOfAddress";
 import InfoStepCard from "../common/InfoStepCard";
 import "../../styles/index.scss";
 
@@ -107,7 +109,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         stepName={FULL_BGC_STEPS.CONSENT}
         infoCardStepStatus={stepConfig[FULL_BGC_STEPS.CONSENT]}
         stepIndex={1}
-        maxStepNumber={5}
+        maxStepNumber={7}
       />
 
       <InfoStepCard
@@ -116,7 +118,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         stepName={FULL_BGC_STEPS.BACKGROUND_INFO}
         infoCardStepStatus={stepConfig[FULL_BGC_STEPS.BACKGROUND_INFO]}
         stepIndex={2}
-        maxStepNumber={5}
+        maxStepNumber={7}
       />
 
       <InfoStepCard
@@ -125,7 +127,7 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         stepName={FULL_BGC_STEPS.ADDRESS_HISTORY}
         infoCardStepStatus={stepConfig[FULL_BGC_STEPS.ADDRESS_HISTORY]}
         stepIndex={3}
-        maxStepNumber={5}
+        maxStepNumber={7}
       />
 
       <InfoStepCard
@@ -134,16 +136,34 @@ export const BackgroundCheck = ( props: BackgroundCheckMergedProps ) => {
         stepName={FULL_BGC_STEPS.BIRTH_HISTORY}
         infoCardStepStatus={stepConfig[FULL_BGC_STEPS.BIRTH_HISTORY]}
         stepIndex={4}
-        maxStepNumber={5}
+        maxStepNumber={7}
       />
 
       <InfoStepCard
-        title="Documentation"
-        expandedContent={<Documentation />}
-        stepName={FULL_BGC_STEPS.DOCUMENTATION}
-        infoCardStepStatus={stepConfig[FULL_BGC_STEPS.DOCUMENTATION]}
+        title="Documentation - Proof of ID 1"
+        expandedContent={<ProofOfId1 />}
+        stepName={FULL_BGC_STEPS.PROOF_OF_ID1}
+        infoCardStepStatus={stepConfig[FULL_BGC_STEPS.PROOF_OF_ID1]}
         stepIndex={5}
-        maxStepNumber={5}
+        maxStepNumber={7}
+      />
+
+      <InfoStepCard
+        title="Documentation - Proof of ID 2"
+        expandedContent={<ProofOfId2 />}
+        stepName={FULL_BGC_STEPS.PROOF_OF_ID2}
+        infoCardStepStatus={stepConfig[FULL_BGC_STEPS.PROOF_OF_ID2]}
+        stepIndex={5}
+        maxStepNumber={7}
+      />
+
+      <InfoStepCard
+        title="Documentation - Proof of Address"
+        expandedContent={<ProofOfAddress />}
+        stepName={FULL_BGC_STEPS.PROOF_OF_ADDRESS}
+        infoCardStepStatus={stepConfig[FULL_BGC_STEPS.PROOF_OF_ADDRESS]}
+        stepIndex={5}
+        maxStepNumber={7}
       />
 
       <Col padding={{ top: "S300" }}>

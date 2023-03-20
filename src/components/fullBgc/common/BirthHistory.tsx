@@ -26,7 +26,7 @@ export const BirthHistory = ( props: BirthHistoryMergedProps ) => {
   const stepConfig = fullBgc.stepConfig as FullBgcStepConfig;
 
   const handleClickNext = () => {
-    goToNextFullBgcStep(stepConfig, FULL_BGC_STEPS.BIRTH_HISTORY, FULL_BGC_STEPS.DOCUMENTATION);
+    goToNextFullBgcStep(stepConfig, FULL_BGC_STEPS.BIRTH_HISTORY, FULL_BGC_STEPS.PROOF_OF_ID1);
   };
 
   return (

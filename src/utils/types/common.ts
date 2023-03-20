@@ -853,7 +853,9 @@ export interface FullBgcStepConfig {
   [FULL_BGC_STEPS.BACKGROUND_INFO]: InfoCardStepStatus;
   [FULL_BGC_STEPS.ADDRESS_HISTORY]: InfoCardStepStatus;
   [FULL_BGC_STEPS.BIRTH_HISTORY]: InfoCardStepStatus;
-  [FULL_BGC_STEPS.DOCUMENTATION]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.PROOF_OF_ID1]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.PROOF_OF_ID2]: InfoCardStepStatus;
+  [FULL_BGC_STEPS.PROOF_OF_ADDRESS]: InfoCardStepStatus;
 }
 
 export type BgcStepConfigType = BgcStepConfig | BgcMXStepConfig;

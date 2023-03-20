@@ -34,7 +34,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
         "status": "ACTIVE",
       }
     }
-    maxStepNumber={5}
+    maxStepNumber={7}
     stepIndex={1}
     stepName="CONSENT"
     title="Background check consent"
@@ -47,7 +47,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
         "status": "LOCKED",
       }
     }
-    maxStepNumber={5}
+    maxStepNumber={7}
     stepIndex={2}
     stepName="BACKGROUND_INFO"
     title="Background information"
@@ -60,7 +60,7 @@ exports[`BackgroundCheck should match snapshot 1`] = `
         "status": "LOCKED",
       }
     }
-    maxStepNumber={5}
+    maxStepNumber={7}
     stepIndex={3}
     stepName="ADDRESS_HISTORY"
     title="Address history"
@@ -73,23 +73,49 @@ exports[`BackgroundCheck should match snapshot 1`] = `
         "status": "LOCKED",
       }
     }
-    maxStepNumber={5}
+    maxStepNumber={7}
     stepIndex={4}
     stepName="BIRTH_HISTORY"
     title="Birth history"
   />
   <Connect(InfoStepCard)
-    expandedContent={<Memo(Connect(Documentation)) />}
+    expandedContent={<Memo(Connect(ProofOfId1)) />}
     infoCardStepStatus={
       Object {
         "editMode": false,
         "status": "LOCKED",
       }
     }
-    maxStepNumber={5}
+    maxStepNumber={7}
     stepIndex={5}
-    stepName="DOCUMENTATION"
-    title="Documentation"
+    stepName="PROOF_OF_ID1"
+    title="Documentation - Proof of ID 1"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(ProofOfId2)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={7}
+    stepIndex={5}
+    stepName="PROOF_OF_ID2"
+    title="Documentation - Proof of ID 2"
+  />
+  <Connect(InfoStepCard)
+    expandedContent={<Memo(Connect(ProofOfAddress)) />}
+    infoCardStepStatus={
+      Object {
+        "editMode": false,
+        "status": "LOCKED",
+      }
+    }
+    maxStepNumber={7}
+    stepIndex={5}
+    stepName="PROOF_OF_ADDRESS"
+    title="Documentation - Proof of Address"
   />
   <Col
     padding={

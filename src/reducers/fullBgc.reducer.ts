@@ -25,7 +25,15 @@ export const initFullBgcState: FullBgcState = {
       status: INFO_CARD_STEP_STATUS.LOCKED,
       editMode: false
     },
-    [FULL_BGC_STEPS.DOCUMENTATION]: {
+    [FULL_BGC_STEPS.PROOF_OF_ID1]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.PROOF_OF_ID2]: {
+      status: INFO_CARD_STEP_STATUS.LOCKED,
+      editMode: false
+    },
+    [FULL_BGC_STEPS.PROOF_OF_ADDRESS]: {
       status: INFO_CARD_STEP_STATUS.LOCKED,
       editMode: false
     },

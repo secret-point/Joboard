@@ -1038,19 +1038,23 @@ export const bgcShouldDisplayContinue = (stepConfig: BgcStepConfig): boolean => 
 };
 
 export const fullBgcShouldDisplayContinue = (stepConfig: FullBgcStepConfig): boolean => {
-  const { CONSENT, BACKGROUND_INFO, ADDRESS_HISTORY, BIRTH_HISTORY, DOCUMENTATION } = FULL_BGC_STEPS;
+  const { CONSENT, BACKGROUND_INFO, ADDRESS_HISTORY, BIRTH_HISTORY, PROOF_OF_ID1, PROOF_OF_ID2, PROOF_OF_ADDRESS } = FULL_BGC_STEPS;
   const { COMPLETED } = INFO_CARD_STEP_STATUS;
   const consentStatus = stepConfig[CONSENT];
   const bgInfoStatus = stepConfig[BACKGROUND_INFO];
   const addressHistoryStatus = stepConfig[ADDRESS_HISTORY];
   const birthHistoryStatus = stepConfig[BIRTH_HISTORY];
-  const documentationStatus = stepConfig[DOCUMENTATION];
+  const proofOfId1Status = stepConfig[PROOF_OF_ID1];
+  const proofOfId2Status = stepConfig[PROOF_OF_ID2];
+  const proofOfAddressStatus = stepConfig[PROOF_OF_ADDRESS];
 
   return consentStatus.status === COMPLETED && !consentStatus.editMode &&
         bgInfoStatus.status === COMPLETED && !bgInfoStatus.editMode &&
         addressHistoryStatus.status === COMPLETED && !addressHistoryStatus.editMode &&
         birthHistoryStatus.status === COMPLETED && !birthHistoryStatus.editMode &&
-        documentationStatus.status === COMPLETED && !documentationStatus.editMode;
+        proofOfId1Status.status === COMPLETED && !proofOfId1Status.editMode &&
+        proofOfId2Status.status === COMPLETED && !proofOfId2Status.editMode &&
+        proofOfAddressStatus.status === COMPLETED && !proofOfAddressStatus.editMode;
 };
 
 export const bgcMXShouldDisplayContinue = (stepConfig: BgcMXStepConfig): boolean => {

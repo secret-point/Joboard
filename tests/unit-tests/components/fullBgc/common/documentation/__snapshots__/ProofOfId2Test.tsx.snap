@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProofOfId2 should match snapshot 1`] = `
+<Col
+  className="documentation-container"
+  gridGap={15}
+>
+  <Text
+    font="primary"
+    fontSize="T200"
+    hyphens="none"
+  >
+    ProofOfId2 Component
+  </Text>
+  ...
+  <DebouncedButton
+    onClick={[Function]}
+    variant="secondary"
+  >
+    Next
+  </DebouncedButton>
+</Col>
+`;
